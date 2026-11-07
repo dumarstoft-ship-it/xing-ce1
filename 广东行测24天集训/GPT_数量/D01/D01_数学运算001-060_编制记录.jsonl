@@ -1,0 +1,60 @@
+{"id":"D01-M001","group":1,"kind":"原题选编","paper":"GD2019X","qno":24,"pdf_page":3,"answer":"C","source_answer":null,"check":"(15-8)*2 == 14 and (8+12+15)*2 == 70"}
+{"id":"D01-M002","group":1,"kind":"原题选编","paper":"GD2021Z","qno":44,"pdf_page":4,"answer":"A","source_answer":null,"check":"F(5*8-8,6*8-24)==F(4,3)"}
+{"id":"D01-M003","group":1,"kind":"原题选编","paper":"GD2023X","qno":33,"pdf_page":8,"answer":"A","source_answer":"A","check":"F(6,1)/(F(2,5)-F(1,4))*F(2,5)==16"}
+{"id":"D01-M004","group":1,"kind":"原题选编","paper":"GK2021D","qno":63,"pdf_page":9,"answer":"D","source_answer":"D","check":"F(3,5)*75+3==F(3,4)*64 and F(2,5)*F(2,5)*75+F(1,4)*F(3,4)*64==24"}
+{"id":"D01-M005","group":1,"kind":"原题选编","paper":"GK2024F","qno":63,"pdf_page":11,"answer":"C","source_answer":"C","check":"30*2400==2*60*600 and 20*2400-30*600==30000"}
+{"id":"D01-M006","group":1,"kind":"原题选编","paper":"GK2022F","qno":71,"pdf_page":11,"answer":"B","source_answer":"B","check":"12*9+4*(8+9+4)==192 and 14<F(192,13)<15"}
+{"id":"D01-M007","group":1,"kind":"原题选编","paper":"GK2023F","qno":73,"pdf_page":"16—17","answer":"B","source_answer":"B","check":"600==2*300 and 600-300==300 and F(20,100)*F(5,2)==F(1,2)"}
+{"id":"D01-M008","group":1,"kind":"原题选编","paper":"GK2022F","qno":72,"pdf_page":11,"answer":"B","source_answer":"B","check":"F(4,9)/F(14,9)==F(2,7) and F(1,4)<F(2,7)<F(1,3)"}
+{"id":"D01-M009","group":1,"kind":"原题选编","paper":"GK2022F","qno":63,"pdf_page":11,"answer":"C","source_answer":"C","check":"(495-F(3,4)*480)/3==45"}
+{"id":"D01-M010","group":1,"kind":"原题选编","paper":"GK2022F","qno":67,"pdf_page":11,"answer":"C","source_answer":"C","check":"F(165,100)*1650-F(3,2)*F(1650,1)/F(6,5)==660"}
+{"id":"D01-M011","group":1,"kind":"原题选编","paper":"GK2023F","qno":74,"pdf_page":17,"answer":"D","source_answer":"D","check":"1800+1200==3000 and 2200==2*1100 and 2200+1100+3900==F(6,5)*6000"}
+{"id":"D01-M012","group":1,"kind":"改编","paper":"GK2021D","qno":65,"pdf_page":9,"answer":"C","source_answer":"C","check":"F(240,11)*F(44,5)==192 and 192-8*F(44,5)==F(608,5)"}
+{"id":"D01-M013","group":1,"kind":"改编","paper":"GD2023X","qno":35,"pdf_page":"8—9","answer":"A","source_answer":"B","check":"[200-72*k for k in range(1,4) if 0<=200-72*k<100]==[56]"}
+{"id":"D01-M014","group":1,"kind":"原题选编","paper":"GK2023F","qno":70,"pdf_page":16,"answer":"A","source_answer":"A","check":"[(k,287-(342*k-76)) for k in range(1,5) if 121*k-76>=0 and 342*k-76<=287]==[(1,21)]"}
+{"id":"D01-M015","group":1,"kind":"改编","paper":"GK2022F","qno":66,"pdf_page":11,"answer":"A","source_answer":"C","check":"[n for n in range(71,80) if (96*n)%100==0]==[75] and 72-15-17-14==26"}
+{"id":"D01-M016","group":1,"kind":"原题选编","paper":"GK2021D","qno":67,"pdf_page":9,"answer":"A","source_answer":"A","check":"F(23,34)>max(F(16,25),F(13,20),F(10,17)) and 96-25-20-17==34"}
+{"id":"D01-M017","group":1,"kind":"改编","paper":"GK2024F","qno":62,"pdf_page":11,"answer":"D","source_answer":"D","check":"F(3*34-6,2*34+4)==F(4,3)"}
+{"id":"D01-M018","group":1,"kind":"改编","paper":"GD2023X","qno":33,"pdf_page":8,"answer":"C","source_answer":"A","check":"(F(24,5)-F(8,5)-3)/3==F(1,15)"}
+{"id":"D01-M019","group":1,"kind":"改编","paper":"GK2021D","qno":63,"pdf_page":9,"answer":"D","source_answer":"D","check":"F(2*60)*F(3,4)*F(1,3)==30 and F(3*60)*F(3,5)*F(1,3)==36"}
+{"id":"D01-M020","group":1,"kind":"改编","paper":"GK2024F","qno":61,"pdf_page":11,"answer":"C","source_answer":"C","check":"7*8+16==F(3,2)*(5*8+8) and sum(a>60 for a in [47,55,63,67])==2"}
+{"id":"D01-M021","group":2,"kind":"改编","paper":"GD2017","qno":28,"pdf_page":3,"answer":"A","source_answer":null,"check":"120-40==2*(120-2*40)"}
+{"id":"D01-M022","group":2,"kind":"原题选编","paper":"GD2018","qno":21,"pdf_page":3,"answer":"A","source_answer":null,"check":"8*630+3*420==6300 and 6*(630+420)==6300"}
+{"id":"D01-M023","group":2,"kind":"原题选编","paper":"GD2020X","qno":33,"pdf_page":4,"answer":"B","source_answer":null,"check":"5*(6+1)+7==6*6+6==42"}
+{"id":"D01-M024","group":2,"kind":"原题选编","paper":"GD2020X","qno":34,"pdf_page":4,"answer":"C","source_answer":null,"check":"60*(5-3)==40*(6-3)==120 and (9-3)*20==120"}
+{"id":"D01-M025","group":2,"kind":"原题选编","paper":"GD2022X","qno":32,"pdf_page":4,"answer":"C","source_answer":"C","check":"50*(25-2)+2*85==55*(25-1)==1320"}
+{"id":"D01-M026","group":2,"kind":"原题选编","paper":"GD2022X","qno":37,"pdf_page":"4—5","answer":"D","source_answer":"D","check":"4*3+15==F(3,2)*(3+15) and 4*3-3==9"}
+{"id":"D01-M027","group":2,"kind":"原题选编","paper":"GK2022F","qno":74,"pdf_page":12,"answer":"D","source_answer":"D","check":"90-72==72-54==F(3,2)*72-90 and F(500-162,60)*60==338"}
+{"id":"D01-M028","group":2,"kind":"原题选编","paper":"GK2024F","qno":62,"pdf_page":11,"answer":"D","source_answer":"D","check":"2*17-1==F(3,5)*(3*17+4) and (5*17-4)-(4*17+1)==12"}
+{"id":"D01-M029","group":2,"kind":"原题选编","paper":"GD2020Z","qno":43,"pdf_page":6,"answer":"D","source_answer":null,"check":"F(360,9-3)-F(360,9)==20"}
+{"id":"D01-M030","group":2,"kind":"原题选编","paper":"GK2022F","qno":61,"pdf_page":10,"answer":"B","source_answer":"B","check":"100*59+550==120*59-630 and (100*59+550+2510)//80-59==53"}
+{"id":"D01-M031","group":2,"kind":"改编","paper":"GD2020X","qno":31,"pdf_page":"3—4","answer":"A","source_answer":null,"check":"((F(144)*F(2,3)-8)/2-6+10)*F(3,4)==36"}
+{"id":"D01-M032","group":2,"kind":"原题选编","paper":"GD2023X","qno":37,"pdf_page":9,"answer":"C","source_answer":"C","check":"F(300,240)-F(300,1200)==1 and 1200*4==4800"}
+{"id":"D01-M033","group":2,"kind":"改编","paper":"GD2021Z","qno":37,"pdf_page":4,"answer":"D","source_answer":null,"check":"20*4*5-20*4-20*10-8*5==8*10"}
+{"id":"D01-M034","group":2,"kind":"改编","paper":"GD2021Z","qno":42,"pdf_page":4,"answer":"C","source_answer":null,"check":"6*15+10==8*(15-2)-4==100"}
+{"id":"D01-M035","group":2,"kind":"原题选编","paper":"GK2024F","qno":65,"pdf_page":11,"answer":"C","source_answer":"C","check":"8+4==2*(8-2) and F(8+8,8-4)==4"}
+{"id":"D01-M036","group":2,"kind":"原题选编","paper":"GK2022F","qno":70,"pdf_page":11,"answer":"B","source_answer":"B","check":"sum(F(-18,10)+F(3,10)*i for i in range(12))==F(-18,10)"}
+{"id":"D01-M037","group":2,"kind":"改编","paper":"GK2021D","qno":70,"pdf_page":9,"answer":"B","source_answer":"B","check":"sum(11400+1000*(d//4) for d in range(55))==978000 and sum(11400+1000*(d//4) for d in range(56))==1002400"}
+{"id":"D01-M038","group":2,"kind":"改编","paper":"GD2020Z","qno":42,"pdf_page":6,"answer":"B","source_answer":null,"check":"F(500)*F(4,5)+(700+F(500,5))*F(1,4)==600 and (700+F(500,5))*F(3,4)==600"}
+{"id":"D01-M039","group":2,"kind":"改编","paper":"GD2019X","qno":28,"pdf_page":3,"answer":"A","source_answer":null,"check":"30-2*13==4*(40-3*13) and 40-3*13>0"}
+{"id":"D01-M040","group":2,"kind":"原题选编","paper":"GK2023F","qno":62,"pdf_page":14,"answer":"B","source_answer":"B","check":"6-F(3*6,6+3)==4 and F(1,4)-F(1,6)==F(1,12)"}
+{"id":"D01-M041","group":3,"kind":"原题选编","paper":"GD2021Z","qno":38,"pdf_page":4,"answer":"B","source_answer":null,"check":"(F(12)*F(4,5)+F(10)*F(1,5)-9-F(1,10))*10000==25000"}
+{"id":"D01-M042","group":3,"kind":"原题选编","paper":"GD2021Z","qno":41,"pdf_page":4,"answer":"A","source_answer":null,"check":"936*20-64*30==16800 and F(64,1000)==F(8,125)"}
+{"id":"D01-M043","group":3,"kind":"原题选编","paper":"GK2024F","qno":64,"pdf_page":11,"answer":"D","source_answer":"D","check":"F(1,5)*560+F(3,20)*400==172 and F(4,5)*560-F(17,20)*400==108"}
+{"id":"D01-M044","group":3,"kind":"原题选编","paper":"GK2024F","qno":67,"pdf_page":"11—12","answer":"A","source_answer":"A","check":"100*30+50*24+90*20==6000 and 100+50+90==240"}
+{"id":"D01-M045","group":3,"kind":"原题选编","paper":"GK2022F","qno":62,"pdf_page":"10—11","answer":"D","source_answer":"D","check":"F(167,2)-F(147,2)==10 and (80+F(147,2)+F(167,2))/3==79"}
+{"id":"D01-M046","group":3,"kind":"原题选编","paper":"GD2023X","qno":38,"pdf_page":9,"answer":"B","source_answer":"B","check":"F(2,1)/(F(1,2)+F(1,6))==3 and 3*2==6"}
+{"id":"D01-M047","group":3,"kind":"改编","paper":"GD2019X","qno":25,"pdf_page":3,"answer":"D","source_answer":null,"check":"850*6-800*3==2700 and (1800+120)//2-800==160"}
+{"id":"D01-M048","group":3,"kind":"原题选编","paper":"GK2023F","qno":61,"pdf_page":14,"answer":"B","source_answer":null,"check":"2*(F(4,5)*450-270)==450-270==3*(450-120-270)"}
+{"id":"D01-M049","group":3,"kind":"原题选编","paper":"GK2022F","qno":75,"pdf_page":12,"answer":"B","source_answer":"B","check":"5*((750-30)*F(4,5)-500)-(750-500)==130 and 15000/(750*F(9,10)-50)==24"}
+{"id":"D01-M050","group":3,"kind":"原题选编","paper":"GK2023F","qno":66,"pdf_page":15,"answer":"D","source_answer":"D","check":"600*(200-100)==60000 and F(7000,500)<=15 and F(6400,500)<=18"}
+{"id":"D01-M051","group":3,"kind":"改编","paper":"GD2020Z","qno":38,"pdf_page":6,"answer":"C","source_answer":null,"check":"(F(250)*F(1,25)+10)/2/(F(250+10)/2-80)==F(1,5)"}
+{"id":"D01-M052","group":3,"kind":"改编","paper":"GD2020Z","qno":38,"pdf_page":6,"answer":"B","source_answer":null,"check":"(F(200)*F(1,25)+10)/(210-120)==F(1,5)"}
+{"id":"D01-M053","group":3,"kind":"改编","paper":"GK2023F","qno":61,"pdf_page":14,"answer":"A","source_answer":null,"check":"2*(150-100)==4*150-5*100 and (150*F(9,10)-100)/100==F(7,20)"}
+{"id":"D01-M054","group":3,"kind":"改编","paper":"GD2022X","qno":38,"pdf_page":5,"answer":"C","source_answer":"D","check":"5*(F(7,10)*170-5)==3*F(4,5)*170+2*F(1,2)*170-8"}
+{"id":"D01-M055","group":3,"kind":"原题选编","paper":"GK2024F","qno":66,"pdf_page":11,"answer":"A","source_answer":"A","check":"4*F(6,5)*F(225,2)==F(225,2)+3*(F(225,2)+30)==540"}
+{"id":"D01-M056","group":3,"kind":"改编","paper":"GK2024F","qno":64,"pdf_page":11,"answer":"D","source_answer":"D","check":"F(11,5)/(F(12,5)+F(11,5))==F(11,23)"}
+{"id":"D01-M057","group":3,"kind":"改编","paper":"GK2022F","qno":62,"pdf_page":"10—11","answer":"D","source_answer":"D","check":"F(84+2*78,3)==80 and F(1,5)*78+F(4,5)*F(161,2)==80"}
+{"id":"D01-M058","group":3,"kind":"改编","paper":"GK2024F","qno":67,"pdf_page":"11—12","answer":"C","source_answer":"A","check":"5*118+2*5==600 and 118+5+117==240 and max(x for x in range(1,240) for y in range(1,240-x) if 30*x+24*y+20*(240-x-y)==6000)==118"}
+{"id":"D01-M059","group":3,"kind":"改编","paper":"GD2020Z","qno":38,"pdf_page":6,"answer":"B","source_answer":null,"check":"(60+F(80,7))/400==F(5,28)"}
+{"id":"D01-M060","group":3,"kind":"改编","paper":"GK2023F","qno":66,"pdf_page":15,"answer":"A","source_answer":"D","check":"(2800*100+200*200+10000)-3000*100==30000 and F(200,500)<=14"}
