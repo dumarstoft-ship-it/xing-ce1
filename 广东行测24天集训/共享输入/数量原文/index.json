@@ -1,0 +1,1328 @@
+[
+ {
+  "tag": "GD2017",
+  "pid": "GD2017",
+  "label": "广东省考 2017年度",
+  "q_file": "xing-ce1/真题/2017年广东公务员考试《行测》真题.pdf",
+  "ans_file": null,
+  "n": 15,
+  "range": [
+   16,
+   30
+  ],
+  "n_flag": 6,
+  "n_ans": 0,
+  "n_analysis": 0,
+  "note": "对应解析 PDF 为扫描件（无文字层），本文件只含题本文字；答案与解析的 OCR 文本另见同目录 OCR 文件（如已生成）。",
+  "md": "GD2017.md"
+ },
+ {
+  "tag": "GD2018",
+  "pid": "GD2018",
+  "label": "广东省考 2018年度",
+  "q_file": "xing-ce1/真题/2018年广东省公务员录用考试《行测》真题（县级、乡镇统一卷）.pdf",
+  "ans_file": null,
+  "n": 15,
+  "range": [
+   16,
+   30
+  ],
+  "n_flag": 6,
+  "n_ans": 0,
+  "n_analysis": 0,
+  "note": "对应解析 PDF 为扫描件（无文字层），本文件只含题本文字；答案与解析的 OCR 文本另见同目录 OCR 文件（如已生成）。",
+  "md": "GD2018.md"
+ },
+ {
+  "tag": "GD2019X",
+  "pid": "GD2019X",
+  "label": "广东省考 2019年度 县级",
+  "q_file": "xing-ce1/真题/2019年广东公务员考试《行测》真题（县级）.pdf",
+  "ans_file": null,
+  "n": 15,
+  "range": [
+   16,
+   30
+  ],
+  "n_flag": 3,
+  "n_ans": 0,
+  "n_analysis": 0,
+  "note": "对应解析 PDF 为扫描件（无文字层），本文件只含题本文字；答案与解析的 OCR 文本另见同目录 OCR 文件（如已生成）。",
+  "md": "GD2019X.md"
+ },
+ {
+  "tag": "GD2019Z",
+  "pid": "GD2019Z",
+  "label": "广东省考 2019年度 乡镇",
+  "q_file": "xing-ce1/真题/2019年广东公务员考试《行测》真题（乡镇级）.pdf",
+  "ans_file": null,
+  "n": 15,
+  "range": [
+   11,
+   25
+  ],
+  "n_flag": 7,
+  "n_ans": 0,
+  "n_analysis": 0,
+  "note": "对应解析 PDF 为扫描件（无文字层），本文件只含题本文字；答案与解析的 OCR 文本另见同目录 OCR 文件（如已生成）。",
+  "md": "GD2019Z.md"
+ },
+ {
+  "tag": "GD2020X",
+  "pid": "GD2020X",
+  "label": "广东省考 2020年度 县级",
+  "q_file": "xing-ce1/真题/2020年0809广东公务员考试《行测》真题（县级以上）（7道题暂缺）.pdf",
+  "ans_file": null,
+  "n": 15,
+  "range": [
+   26,
+   40
+  ],
+  "n_flag": 5,
+  "n_ans": 0,
+  "n_analysis": 0,
+  "note": "对应解析 PDF 为扫描件（无文字层），本文件只含题本文字；答案与解析的 OCR 文本另见同目录 OCR 文件（如已生成）。题本文件名注明“7道题暂缺”（缺题在资料分析部分，数量部分完整与否以下列题号为准）。",
+  "md": "GD2020X.md"
+ },
+ {
+  "tag": "GD2020Z",
+  "pid": "GD2020Z",
+  "label": "广东省考 2020年度 乡镇",
+  "q_file": "xing-ce1/真题/2020年0809广东公务员考试《行测》真题（乡镇）.pdf",
+  "ans_file": null,
+  "n": 15,
+  "range": [
+   31,
+   45
+  ],
+  "n_flag": 6,
+  "n_ans": 0,
+  "n_analysis": 0,
+  "note": "对应解析 PDF 为扫描件（无文字层），本文件只含题本文字；答案与解析的 OCR 文本另见同目录 OCR 文件（如已生成）。",
+  "md": "GD2020Z.md"
+ },
+ {
+  "tag": "GD2021Z",
+  "pid": "GD2021Z",
+  "label": "广东省考 2021年度 乡镇",
+  "q_file": "xing-ce1/真题/2021年0314广东公务员考试《行测》真题（乡镇）.pdf",
+  "ans_file": null,
+  "n": 15,
+  "range": [
+   31,
+   45
+  ],
+  "n_flag": 3,
+  "n_ans": 0,
+  "n_analysis": 0,
+  "note": "对应解析 PDF 为扫描件（无文字层），本文件只含题本文字；答案与解析的 OCR 文本另见同目录 OCR 文件（如已生成）。",
+  "md": "GD2021Z.md"
+ },
+ {
+  "tag": "GD2022X",
+  "pid": "GD2022X",
+  "label": "广东省考 2022年度 县级",
+  "q_file": "xing-ce1/真题/2022年广东公务员考试行测试题（县级).pdf",
+  "ans_file": "xing-ce1/答案解析/2022年广东公务员考试行测试题（县级）答案解析.pdf",
+  "n": 15,
+  "range": [
+   26,
+   40
+  ],
+  "n_flag": 6,
+  "n_ans": 15,
+  "n_analysis": 15,
+  "note": "",
+  "md": "GD2022X.md"
+ },
+ {
+  "tag": "GD2022Z",
+  "pid": "GD2022Z",
+  "label": "广东省考 2022年度 乡镇",
+  "q_file": "xing-ce1/真题/2022年广东公务员考试行测试题（乡镇）.pdf",
+  "ans_file": "xing-ce1/答案解析/2022年广东公务员考试行测试题（乡镇）答案解析.pdf",
+  "n": 15,
+  "range": [
+   31,
+   45
+  ],
+  "n_flag": 6,
+  "n_ans": 15,
+  "n_analysis": 15,
+  "note": "",
+  "md": "GD2022Z.md"
+ },
+ {
+  "tag": "GD2023X",
+  "pid": "GD2023X",
+  "label": "广东省考 2023年度 县级",
+  "q_file": "xing-ce1/真题/2023年广东省公务员录用考试《行测》题（县级卷）.pdf",
+  "ans_file": "xing-ce1/答案解析/2023年广东省公务员录用考试《行测》题（县级卷）答案解析.pdf",
+  "n": 15,
+  "range": [
+   26,
+   40
+  ],
+  "n_flag": 7,
+  "n_ans": 15,
+  "n_analysis": 15,
+  "note": "",
+  "md": "GD2023X.md"
+ },
+ {
+  "tag": "GD2023Z",
+  "pid": "GD2023Z",
+  "label": "广东省考 2023年度 乡镇",
+  "q_file": "xing-ce1/真题/2023年广东省公务员录用考试《行测》题（乡镇卷）.pdf",
+  "ans_file": "xing-ce1/答案解析/2023年广东省公务员录用考试《行测》题（乡镇卷）答案解析.pdf",
+  "n": 15,
+  "range": [
+   31,
+   45
+  ],
+  "n_flag": 4,
+  "n_ans": 15,
+  "n_analysis": 15,
+  "note": "",
+  "md": "GD2023Z.md"
+ },
+ {
+  "tag": "GD2024",
+  "pid": "GD2024",
+  "label": "广东省考 2024年度",
+  "q_file": "xing-ce1/真题/2024年广东省公务员录用考试《行测》题（网友回忆版）.pdf",
+  "ans_file": "xing-ce1/答案解析/2024年广东省公务员录用考试《行测》答案及解析.pdf",
+  "n": 15,
+  "range": [
+   31,
+   45
+  ],
+  "n_flag": 3,
+  "n_ans": 15,
+  "n_analysis": 15,
+  "note": "题本为网友回忆版。",
+  "md": "GD2024.md"
+ },
+ {
+  "tag": "GD2025",
+  "pid": "GD2025",
+  "label": "广东省考 2025年度",
+  "q_file": "xing-ce1/真题/2025年广东省公务员录用考试《行测》题.pdf",
+  "ans_file": "xing-ce1/答案解析/2025年广东省公务员录用考试《行测》答案及解析.pdf",
+  "n": 15,
+  "range": [
+   31,
+   45
+  ],
+  "n_flag": 10,
+  "n_ans": 9,
+  "n_analysis": 15,
+  "note": "",
+  "md": "GD2025.md"
+ },
+ {
+  "tag": "GD2026",
+  "pid": "GD2026",
+  "label": "广东省考 2026年度",
+  "q_file": "xing-ce1/真题/2026年广东省公务员录用考试《行测》题（网友回忆版）(1).pdf",
+  "ans_file": null,
+  "n": 15,
+  "range": [
+   31,
+   45
+  ],
+  "n_flag": 3,
+  "n_ans": 0,
+  "n_analysis": 0,
+  "note": "题本为网友回忆版。2026年度广东卷仓库内无对应解析。",
+  "md": "GD2026.md"
+ },
+ {
+  "tag": "GD2022X_xc",
+  "pid": "GD2022X",
+  "label": "广东省考 2022年度 县级",
+  "q_file": "xingce/2022年广东省公务员录用考试《行测》题（县级卷）（网友回忆版）.pdf",
+  "ans_file": "xingce/2022年广东公务员考试行测试题（县级）答案解析.pdf",
+  "n": 15,
+  "range": [
+   26,
+   40
+  ],
+  "n_flag": 7,
+  "n_ans": 15,
+  "n_analysis": 15,
+  "note": "xingce 仓库中的另一版本题本（与 xing-ce1 版本可能有文字差异，可互相校对）。题本为网友回忆版。",
+  "md": "GD2022X_xc.md"
+ },
+ {
+  "tag": "GD2023X_xc",
+  "pid": "GD2023X",
+  "label": "广东省考 2023年度 县级",
+  "q_file": "xingce/2023年广东省公务员录用考试《行测》题（县级卷）（网友回忆版）.pdf",
+  "ans_file": "xingce/2023年广东省公务员录用考试《行测》题（县级卷）答案解析.pdf",
+  "n": 15,
+  "range": [
+   26,
+   40
+  ],
+  "n_flag": 8,
+  "n_ans": 15,
+  "n_analysis": 15,
+  "note": "xingce 仓库中的另一版本题本（与 xing-ce1 版本可能有文字差异，可互相校对）。题本为网友回忆版。",
+  "md": "GD2023X_xc.md"
+ },
+ {
+  "tag": "GD2024_xc",
+  "pid": "GD2024",
+  "label": "广东省考 2024年度",
+  "q_file": "xingce/2024年广东省公务员录用考试《行测》题（网友回忆版）.pdf",
+  "ans_file": "xingce/2024年广东省公务员录用考试《行测》答案及解析.pdf",
+  "n": 15,
+  "range": [
+   31,
+   45
+  ],
+  "n_flag": 4,
+  "n_ans": 15,
+  "n_analysis": 15,
+  "note": "xingce 仓库中的另一版本题本（与 xing-ce1 版本可能有文字差异，可互相校对）。题本为网友回忆版。",
+  "md": "GD2024_xc.md"
+ },
+ {
+  "tag": "GD2025_xc",
+  "pid": "GD2025",
+  "label": "广东省考 2025年度",
+  "q_file": "xingce/2025年广东省公务员录用考试《行测》题（网友回忆版）.pdf",
+  "ans_file": "xingce/2025年广东省公务员录用考试《行测》答案及解析.pdf",
+  "n": 15,
+  "range": [
+   31,
+   45
+  ],
+  "n_flag": 10,
+  "n_ans": 9,
+  "n_analysis": 15,
+  "note": "xingce 仓库中的另一版本题本（与 xing-ce1 版本可能有文字差异，可互相校对）。题本为网友回忆版。",
+  "md": "GD2025_xc.md"
+ },
+ {
+  "tag": "GK2017F",
+  "pid": "GK2017F",
+  "label": "国考 2017年度 副省级",
+  "q_file": "xing-ce1/国考/真题/2017年国家公务员考试《行测》真题卷（副省级）.pdf",
+  "ans_file": "xing-ce1/国考/答案解析/2017年国家公务员考试《行测》真题卷（副省级）答案及解析...pdf",
+  "n": 15,
+  "range": [
+   61,
+   75
+  ],
+  "n_flag": 10,
+  "n_ans": 13,
+  "n_analysis": 13,
+  "note": "",
+  "md": "GK2017F.md"
+ },
+ {
+  "tag": "GK2017D",
+  "pid": "GK2017D",
+  "label": "国考 2017年度 地市级",
+  "q_file": "xing-ce1/国考/真题/2017年国家录用公务员考试《行测》真题卷（地市级）.pdf",
+  "ans_file": "xing-ce1/国考/答案解析/2017年国家录用公务员考试《行测》真题卷（地市级）答案及解析...pdf",
+  "n": 10,
+  "range": [
+   61,
+   70
+  ],
+  "n_flag": 7,
+  "n_ans": 10,
+  "n_analysis": 10,
+  "note": "",
+  "md": "GK2017D.md"
+ },
+ {
+  "tag": "GK2018F",
+  "pid": "GK2018F",
+  "label": "国考 2018年度 副省级",
+  "q_file": "xing-ce1/国考/真题/2018年国家公务员考试《行测》真题卷（副省级）.pdf",
+  "ans_file": "xing-ce1/国考/答案解析/2018年国家公务员考试《行测》真题卷（副省级）答案及解析...pdf",
+  "n": 15,
+  "range": [
+   61,
+   75
+  ],
+  "n_flag": 13,
+  "n_ans": 15,
+  "n_analysis": 15,
+  "note": "",
+  "md": "GK2018F.md"
+ },
+ {
+  "tag": "GK2018D",
+  "pid": "GK2018D",
+  "label": "国考 2018年度 地市级",
+  "q_file": "xing-ce1/国考/真题/2018年国家录用公务员考试《行测》真题卷（地市级）.pdf",
+  "ans_file": "xing-ce1/国考/答案解析/2018年国家录用公务员考试《行测》真题卷（地市级）答案及解析...pdf",
+  "n": 10,
+  "range": [
+   61,
+   70
+  ],
+  "n_flag": 8,
+  "n_ans": 10,
+  "n_analysis": 10,
+  "note": "",
+  "md": "GK2018D.md"
+ },
+ {
+  "tag": "GK2019F",
+  "pid": "GK2019F",
+  "label": "国考 2019年度 副省级",
+  "q_file": "xing-ce1/国考/真题/2019年国家公务员考试行测真题（省级）.pdf",
+  "ans_file": "xing-ce1/国考/答案解析/2019年国家公务员考试行测真题（省级）答案及解析...pdf",
+  "n": 15,
+  "range": [
+   61,
+   75
+  ],
+  "n_flag": 12,
+  "n_ans": 14,
+  "n_analysis": 14,
+  "note": "",
+  "md": "GK2019F.md"
+ },
+ {
+  "tag": "GK2019D",
+  "pid": "GK2019D",
+  "label": "国考 2019年度 地市级",
+  "q_file": "xing-ce1/国考/真题/2019年国家公务员考试行测真题（地市级）.pdf",
+  "ans_file": "xing-ce1/国考/答案解析/2019年国家公务员考试行测真题（地市级）答案及解析...pdf",
+  "n": 10,
+  "range": [
+   61,
+   70
+  ],
+  "n_flag": 8,
+  "n_ans": 9,
+  "n_analysis": 9,
+  "note": "",
+  "md": "GK2019D.md"
+ },
+ {
+  "tag": "GK2020F",
+  "pid": "GK2020F",
+  "label": "国考 2020年度 副省级",
+  "q_file": "xing-ce1/国考/真题/2020年国家公务员考试《行测》真题（副省级）.pdf",
+  "ans_file": "xing-ce1/国考/答案解析/2020年国家公务员考试《行测》真题（省级）答案及解析...pdf",
+  "n": 15,
+  "range": [
+   61,
+   75
+  ],
+  "n_flag": 13,
+  "n_ans": 15,
+  "n_analysis": 15,
+  "note": "",
+  "md": "GK2020F.md"
+ },
+ {
+  "tag": "GK2020D",
+  "pid": "GK2020D",
+  "label": "国考 2020年度 地市级",
+  "q_file": "xing-ce1/国考/真题/2020年国家公务员考试《行测》真题（地市级）.pdf",
+  "ans_file": "xing-ce1/国考/答案解析/2020年国家公务员考试《行测》真题（地市级）答案及解析...pdf",
+  "n": 10,
+  "range": [
+   61,
+   70
+  ],
+  "n_flag": 8,
+  "n_ans": 10,
+  "n_analysis": 10,
+  "note": "",
+  "md": "GK2020D.md"
+ },
+ {
+  "tag": "GK2021F",
+  "pid": "GK2021F",
+  "label": "国考 2021年度 副省级",
+  "q_file": "xing-ce1/国考/真题/2021年国家公务员考试《行测》真题（副省级）.pdf",
+  "ans_file": null,
+  "n": 15,
+  "range": [
+   61,
+   75
+  ],
+  "n_flag": 1,
+  "n_ans": 0,
+  "n_analysis": 0,
+  "note": "",
+  "md": "GK2021F.md"
+ },
+ {
+  "tag": "GK2021D",
+  "pid": "GK2021D",
+  "label": "国考 2021年度 地市级",
+  "q_file": "xing-ce1/国考/真题/2021年国家公务员考试《行测》真题（市地级）.pdf",
+  "ans_file": "xing-ce1/国考/答案解析/2021年国家公务员考试《行测》真题（市地级）参考答案及解析...pdf",
+  "n": 10,
+  "range": [
+   61,
+   70
+  ],
+  "n_flag": 4,
+  "n_ans": 10,
+  "n_analysis": 10,
+  "note": "",
+  "md": "GK2021D.md"
+ },
+ {
+  "tag": "GK2022F",
+  "pid": "GK2022F",
+  "label": "国考 2022年度 副省级",
+  "q_file": "xing-ce1/国考/真题/2022年国家公务员考试《行测》真题（副省级).pdf",
+  "ans_file": "xing-ce1/国考/答案解析/2022年国家公务员考试《行测》真题（副省级）【答案+解析】...pdf",
+  "n": 15,
+  "range": [
+   61,
+   75
+  ],
+  "n_flag": 2,
+  "n_ans": 15,
+  "n_analysis": 15,
+  "note": "",
+  "md": "GK2022F.md"
+ },
+ {
+  "tag": "GK2022D",
+  "pid": "GK2022D",
+  "label": "国考 2022年度 地市级",
+  "q_file": "xing-ce1/国考/真题/2022 年国家公务员考试行测真题（地市级）.pdf",
+  "ans_file": "xing-ce1/国考/答案解析/2022年国家公务员考试《行测》真题（市地级）【答案+解析】...pdf",
+  "n": 10,
+  "range": [
+   61,
+   70
+  ],
+  "n_flag": 4,
+  "n_ans": 10,
+  "n_analysis": 10,
+  "note": "",
+  "md": "GK2022D.md"
+ },
+ {
+  "tag": "GK2022X",
+  "pid": "GK2022X",
+  "label": "国考 2022年度 县级",
+  "q_file": "xing-ce1/国考/真题/2022年国家公务员考试《行测》真题（行政执法）...pdf",
+  "ans_file": "xing-ce1/国考/答案解析/2022年国家公务员考试《行测》真题（行政执法）【答案+解析】...pdf",
+  "n": 10,
+  "range": [
+   61,
+   70
+  ],
+  "n_flag": 4,
+  "n_ans": 10,
+  "n_analysis": 10,
+  "note": "",
+  "md": "GK2022X.md"
+ },
+ {
+  "tag": "GK2023F",
+  "pid": "GK2023F",
+  "label": "国考 2023年度 副省级",
+  "q_file": "xing-ce1/国考/真题/2023年国家公务员录用考试《行测》真题（副省级）.pdf",
+  "ans_file": "xing-ce1/国考/答案解析/2023年国家公务员录用考试《行测》真题（副省级）（解析）.pdf",
+  "n": 15,
+  "range": [
+   61,
+   75
+  ],
+  "n_flag": 9,
+  "n_ans": 13,
+  "n_analysis": 13,
+  "note": "",
+  "md": "GK2023F.md"
+ },
+ {
+  "tag": "GK2023D",
+  "pid": "GK2023D",
+  "label": "国考 2023年度 地市级",
+  "q_file": "xing-ce1/国考/真题/2023年国家公务员录用考试《行测》真题（地市级）.pdf",
+  "ans_file": "xing-ce1/国考/答案解析/2023年国家公务员录用考试《行测》真题（地市级）（解析）.pdf",
+  "n": 10,
+  "range": [
+   61,
+   70
+  ],
+  "n_flag": 5,
+  "n_ans": 9,
+  "n_analysis": 9,
+  "note": "",
+  "md": "GK2023D.md"
+ },
+ {
+  "tag": "GK2023X",
+  "pid": "GK2023X",
+  "label": "国考 2023年度 县级",
+  "q_file": "xing-ce1/国考/真题/2023年国家公务员录用考试《行测》真题（行政执法卷）.pdf",
+  "ans_file": "xing-ce1/国考/答案解析/2023年国家公务员录用考试《行测》真题（行政执法卷）（解析）.pdf",
+  "n": 10,
+  "range": [
+   61,
+   70
+  ],
+  "n_flag": 6,
+  "n_ans": 9,
+  "n_analysis": 9,
+  "note": "",
+  "md": "GK2023X.md"
+ },
+ {
+  "tag": "GK2024F",
+  "pid": "GK2024F",
+  "label": "国考 2024年度 副省级",
+  "q_file": "xing-ce1/国考/真题/2024年国家公务员录用考试《行测》题（副省级）.pdf",
+  "ans_file": "xing-ce1/国考/答案解析/2024年国考《行测》（副省级）答案+解析.pdf",
+  "n": 15,
+  "range": [
+   61,
+   75
+  ],
+  "n_flag": 8,
+  "n_ans": 15,
+  "n_analysis": 15,
+  "note": "",
+  "md": "GK2024F.md"
+ },
+ {
+  "tag": "GK2024D",
+  "pid": "GK2024D",
+  "label": "国考 2024年度 地市级",
+  "q_file": "xing-ce1/国考/真题/2024年国家公务员录用考试《行测》题（地市级）.pdf",
+  "ans_file": "xing-ce1/国考/答案解析/2024年国考《行测》（地市级）答案+解析.pdf",
+  "n": 10,
+  "range": [
+   61,
+   70
+  ],
+  "n_flag": 4,
+  "n_ans": 10,
+  "n_analysis": 10,
+  "note": "",
+  "md": "GK2024D.md"
+ },
+ {
+  "tag": "GK2024X",
+  "pid": "GK2024X",
+  "label": "国考 2024年度 县级",
+  "q_file": "xing-ce1/国考/真题/2024年国家公务员录用考试《行测》题（行政执法卷）.pdf",
+  "ans_file": "xing-ce1/国考/答案解析/2024年国考《行测》（行政执法）答案+解析.pdf",
+  "n": 10,
+  "range": [
+   61,
+   70
+  ],
+  "n_flag": 4,
+  "n_ans": 10,
+  "n_analysis": 10,
+  "note": "",
+  "md": "GK2024X.md"
+ },
+ {
+  "tag": "GK2025F",
+  "pid": "GK2025F",
+  "label": "国考 2025年度 副省级",
+  "q_file": "xing-ce1/国考/真题/2025年国家公务员录用考试《行测》题（副省级）.pdf",
+  "ans_file": "xing-ce1/国考/答案解析/2025年国考《行测》（副省级）答案+解析.pdf",
+  "n": 15,
+  "range": [
+   66,
+   80
+  ],
+  "n_flag": 6,
+  "n_ans": 15,
+  "n_analysis": 15,
+  "note": "",
+  "md": "GK2025F.md"
+ },
+ {
+  "tag": "GK2025D",
+  "pid": "GK2025D",
+  "label": "国考 2025年度 地市级",
+  "q_file": "xing-ce1/国考/真题/2025年国家公务员录用考试《行测》题（地市级）.pdf",
+  "ans_file": "xing-ce1/国考/答案解析/2025年国考《行测》（地市级）答案+解析.pdf",
+  "n": 10,
+  "range": [
+   66,
+   75
+  ],
+  "n_flag": 5,
+  "n_ans": 10,
+  "n_analysis": 10,
+  "note": "",
+  "md": "GK2025D.md"
+ },
+ {
+  "tag": "GK2025X",
+  "pid": "GK2025X",
+  "label": "国考 2025年度 县级",
+  "q_file": "xing-ce1/国考/真题/2025年国家公务员录用考试《行测》题（行政执法卷）.pdf",
+  "ans_file": "xing-ce1/国考/答案解析/2025年国考《行测》（行政执法卷）答案+解析.pdf",
+  "n": 10,
+  "range": [
+   66,
+   75
+  ],
+  "n_flag": 4,
+  "n_ans": 10,
+  "n_analysis": 10,
+  "note": "",
+  "md": "GK2025X.md"
+ },
+ {
+  "tag": "GK2026F_xc",
+  "pid": "GK2026F",
+  "label": "国考 2026年度 副省级",
+  "q_file": "xingce/2026年国家公务员录用考试《行测》题（副省级网友回忆版）.pdf",
+  "ans_file": null,
+  "n": 15,
+  "range": [
+   66,
+   80
+  ],
+  "n_flag": 4,
+  "n_ans": 0,
+  "n_analysis": 0,
+  "note": "xingce 仓库中的 2026 年度国考副省级网友回忆版；仓库内未见对应解析。",
+  "md": "GK2026F_xc.md"
+ },
+ {
+  "tag": "HB2020_xc",
+  "pid": "HB2020",
+  "label": "河北省考 2020年度",
+  "q_file": "xingce/2020年0822河北公务员考试《行测》真题.pdf",
+  "ans_file": "xingce/2020年0822河北公务员考试《行测》真题参考答案及解析.pdf",
+  "n": 15,
+  "range": [
+   61,
+   75
+  ],
+  "n_flag": 6,
+  "n_ans": 15,
+  "n_analysis": 15,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "HB2020_xc.md"
+ },
+ {
+  "tag": "HB2022_xc",
+  "pid": "HB2022",
+  "label": "河北省考 2022年度",
+  "q_file": "xingce/2022年河北省公务员录用考试《行测》题.pdf",
+  "ans_file": "xingce/2022年河北省公务员录用考试《行测》解析.pdf",
+  "n": 15,
+  "range": [
+   61,
+   75
+  ],
+  "n_flag": 8,
+  "n_ans": 15,
+  "n_analysis": 15,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "HB2022_xc.md"
+ },
+ {
+  "tag": "HB2023_xc",
+  "pid": "HB2023",
+  "label": "河北省考 2023年度",
+  "q_file": "xingce/2023年河北省公务员录用考试《行测》题.pdf",
+  "ans_file": "xingce/2023年河北省公务员录用考试《行测》答案解析.pdf",
+  "n": 15,
+  "range": [
+   61,
+   75
+  ],
+  "n_flag": 5,
+  "n_ans": 15,
+  "n_analysis": 15,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "HB2023_xc.md"
+ },
+ {
+  "tag": "HB2024_xc",
+  "pid": "HB2024",
+  "label": "河北省考 2024年度",
+  "q_file": "xingce/2024年河北省公务员录用考试《行测》试题.pdf",
+  "ans_file": "xingce/2024年河北省公务员录用考试《行测》答案+解析.pdf",
+  "n": 15,
+  "range": [
+   61,
+   75
+  ],
+  "n_flag": 9,
+  "n_ans": 15,
+  "n_analysis": 15,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "HB2024_xc.md"
+ },
+ {
+  "tag": "HB2025_xc",
+  "pid": "HB2025",
+  "label": "河北省考 2025年度",
+  "q_file": "xingce/2025年河北省公务员录用考试《行测》题.pdf",
+  "ans_file": "xingce/2025年河北省公务员录用考试《行测》答案及解析.pdf",
+  "n": 15,
+  "range": [
+   66,
+   80
+  ],
+  "n_flag": 9,
+  "n_ans": 7,
+  "n_analysis": 15,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "HB2025_xc.md"
+ },
+ {
+  "tag": "JS2020A_xc",
+  "pid": "JS2020A",
+  "label": "江苏省考 2020年度 A类",
+  "q_file": "xingce/2020年江苏公务员考试《行测》真题（A类）.pdf",
+  "ans_file": "xingce/2020年江苏公务员考试《行测》真题（A类）参考答案及解析.pdf",
+  "n": 20,
+  "range": [
+   46,
+   65
+  ],
+  "n_flag": 16,
+  "n_ans": 20,
+  "n_analysis": 20,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "JS2020A_xc.md"
+ },
+ {
+  "tag": "JS2021A_xc",
+  "pid": "JS2021A",
+  "label": "江苏省考 2021年度 A类",
+  "q_file": "xingce/2021年江苏公务员考试《行测》真题（A卷）.pdf",
+  "ans_file": "xingce/2021年江苏公务员考试《行测》真题（A卷）参考答案及解析.pdf",
+  "n": 20,
+  "range": [
+   46,
+   65
+  ],
+  "n_flag": 5,
+  "n_ans": 20,
+  "n_analysis": 20,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "JS2021A_xc.md"
+ },
+ {
+  "tag": "JS2022A_xc",
+  "pid": "JS2022A",
+  "label": "江苏省考 2022年度 A类",
+  "q_file": "xingce/2022年江苏公务员考试《行测》真题（A类）....pdf",
+  "ans_file": "xingce/2022年江苏公务员考试《行测》（A类）及解析.pdf",
+  "n": 20,
+  "range": [
+   48,
+   67
+  ],
+  "n_flag": 6,
+  "n_ans": 20,
+  "n_analysis": 20,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "JS2022A_xc.md"
+ },
+ {
+  "tag": "JS2023A_xc",
+  "pid": "JS2023A",
+  "label": "江苏省考 2023年度 A类",
+  "q_file": "xingce/2023年江苏公务员考试《行测》真题（A类）.pdf",
+  "ans_file": "xingce/2023年江苏公务员考试《行测》真题（A类）解析.pdf",
+  "n": 20,
+  "range": [
+   46,
+   65
+  ],
+  "n_flag": 9,
+  "n_ans": 18,
+  "n_analysis": 18,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "JS2023A_xc.md"
+ },
+ {
+  "tag": "JS2024A_xc",
+  "pid": "JS2024A",
+  "label": "江苏省考 2024年度 A类",
+  "q_file": "xingce/2024年江苏省公务员录用考试《行测》题（A类）.pdf",
+  "ans_file": "xingce/2024年江苏省公务员录用考试《行测》（A类）答案+解析.pdf",
+  "n": 20,
+  "range": [
+   46,
+   65
+  ],
+  "n_flag": 11,
+  "n_ans": 20,
+  "n_analysis": 20,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "JS2024A_xc.md"
+ },
+ {
+  "tag": "JS2025A_xc",
+  "pid": "JS2025A",
+  "label": "江苏省考 2025年度 A类",
+  "q_file": "xingce/2025年江苏省公务员录用考试《行测》题（A类）.pdf",
+  "ans_file": "xingce/2025年江苏省公务员录用考试《行测》题（A类）答案及解析（121后暂缺）.pdf",
+  "n": 20,
+  "range": [
+   51,
+   70
+  ],
+  "n_flag": 9,
+  "n_ans": 12,
+  "n_analysis": 20,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "JS2025A_xc.md"
+ },
+ {
+  "tag": "SC2020H_xc",
+  "pid": "SC2020H",
+  "label": "四川省考 2020年度 下半年",
+  "q_file": "xingce/2020年1206四川公务员考试《行测》真题.pdf",
+  "ans_file": "xingce/2020年1206四川公务员考试《行测》真题参考答案及解析_decrypted.pdf",
+  "n": 10,
+  "range": [
+   41,
+   50
+  ],
+  "n_flag": 4,
+  "n_ans": 10,
+  "n_analysis": 10,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "SC2020H_xc.md"
+ },
+ {
+  "tag": "SC2020S_xc",
+  "pid": "SC2020S",
+  "label": "四川省考 2020年度 上半年",
+  "q_file": "xingce/2020年0725四川公务员考试《行测》真题.pdf",
+  "ans_file": "xingce/2020年0725四川公务员考试《行测》真题参考答案及解析_decrypted.pdf",
+  "n": 10,
+  "range": [
+   46,
+   55
+  ],
+  "n_flag": 5,
+  "n_ans": 10,
+  "n_analysis": 10,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "SC2020S_xc.md"
+ },
+ {
+  "tag": "SC2021H_xc",
+  "pid": "SC2021H",
+  "label": "四川省考 2021年度 下半年",
+  "q_file": "xingce/2021年四川下半年公务员录用考试《行测》试题.pdf",
+  "ans_file": "xingce/2021年四川下半年公务员录用考试《行测》试题解析.pdf",
+  "n": 10,
+  "range": [
+   46,
+   55
+  ],
+  "n_flag": 4,
+  "n_ans": 10,
+  "n_analysis": 10,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "SC2021H_xc.md"
+ },
+ {
+  "tag": "SC2022H_xc",
+  "pid": "SC2022H",
+  "label": "四川省考 2022年度 下半年",
+  "q_file": "xingce/2022年四川下半年公务员录用考试《行测》 试题_decrypted.pdf",
+  "ans_file": "xingce/2022年四川下半年公务员录用考试《行测》 答案解析_decrypted.pdf",
+  "n": 10,
+  "range": [
+   41,
+   50
+  ],
+  "n_flag": 2,
+  "n_ans": 0,
+  "n_analysis": 0,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "SC2022H_xc.md"
+ },
+ {
+  "tag": "SC2022S_xc",
+  "pid": "SC2022S",
+  "label": "四川省考 2022年度 上半年",
+  "q_file": "xingce/2022 上半年四川公务员考试行测真题.pdf",
+  "ans_file": null,
+  "n": 10,
+  "range": [
+   46,
+   55
+  ],
+  "n_flag": 10,
+  "n_ans": 0,
+  "n_analysis": 0,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "SC2022S_xc.md"
+ },
+ {
+  "tag": "SC2023_xc",
+  "pid": "SC2023",
+  "label": "四川省考 2023年度",
+  "q_file": "xingce/2023年四川省公务员录用考试《行测》试题.pdf",
+  "ans_file": "xingce/2023年四川省公务员录用考试《行测》答案解析.pdf",
+  "n": 10,
+  "range": [
+   46,
+   55
+  ],
+  "n_flag": 6,
+  "n_ans": 10,
+  "n_analysis": 10,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "SC2023_xc.md"
+ },
+ {
+  "tag": "SC2024_xc",
+  "pid": "SC2024",
+  "label": "四川省考 2024年度",
+  "q_file": "xingce/2024年四川省公务员录用考试《行测》试题（网友回忆版）.pdf",
+  "ans_file": "xingce/2024年四川省公务员录用考试《行测》答案解析.pdf",
+  "n": 10,
+  "range": [
+   46,
+   55
+  ],
+  "n_flag": 2,
+  "n_ans": 0,
+  "n_analysis": 0,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "SC2024_xc.md"
+ },
+ {
+  "tag": "SC2025_xc",
+  "pid": "SC2025",
+  "label": "四川省考 2025年度",
+  "q_file": "xingce/2025年四川省考公务员&选调公务员录用考试《行测》试题.pdf",
+  "ans_file": "xingce/2025年四川省考_选调公务员录用考试《行测》答案及解析.pdf",
+  "n": 10,
+  "range": [
+   46,
+   55
+  ],
+  "n_flag": 5,
+  "n_ans": 7,
+  "n_analysis": 10,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "SC2025_xc.md"
+ },
+ {
+  "tag": "SD2020_xc",
+  "pid": "SD2020",
+  "label": "山东省考 2020年度",
+  "q_file": "xingce/2020年0719山东公务员考试《行测》真题.pdf",
+  "ans_file": "xingce/2020年0719山东公务员考试《行测》真题参考答案及解析_decrypted.pdf",
+  "n": 10,
+  "range": [
+   36,
+   45
+  ],
+  "n_flag": 2,
+  "n_ans": 10,
+  "n_analysis": 10,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "SD2020_xc.md"
+ },
+ {
+  "tag": "SD2021_xc",
+  "pid": "SD2021",
+  "label": "山东省考 2021年度",
+  "q_file": "xingce/2021年山东公务员考试《行测》真题.pdf",
+  "ans_file": null,
+  "n": 10,
+  "range": [
+   36,
+   45
+  ],
+  "n_flag": 6,
+  "n_ans": 0,
+  "n_analysis": 0,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "SD2021_xc.md"
+ },
+ {
+  "tag": "SD2022_xc",
+  "pid": "SD2022",
+  "label": "山东省考 2022年度",
+  "q_file": "xingce/2022年山东省公务员录用考试《行测》试题.pdf",
+  "ans_file": "xingce/2022年山东省公务员录用考试《行测》答案+解析_decrypted.pdf",
+  "n": 10,
+  "range": [
+   36,
+   45
+  ],
+  "n_flag": 3,
+  "n_ans": 10,
+  "n_analysis": 10,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "SD2022_xc.md"
+ },
+ {
+  "tag": "SD2023_xc",
+  "pid": "SD2023",
+  "label": "山东省考 2023年度",
+  "q_file": "xingce/2023年山东省公务员录用考试《行测》试题.pdf",
+  "ans_file": "xingce/2023年山东省公务员录用考试《行测》答案+解析_decrypted.pdf",
+  "n": 10,
+  "range": [
+   36,
+   45
+  ],
+  "n_flag": 1,
+  "n_ans": 10,
+  "n_analysis": 10,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "SD2023_xc.md"
+ },
+ {
+  "tag": "SD2024_xc",
+  "pid": "SD2024",
+  "label": "山东省考 2024年度",
+  "q_file": "xingce/2024年山东省公务员录用考试《行测》试题 .pdf",
+  "ans_file": "xingce/2024年山东省公务员录用考试《行测》答案+解析_decrypted.pdf",
+  "n": 10,
+  "range": [
+   51,
+   60
+  ],
+  "n_flag": 6,
+  "n_ans": 10,
+  "n_analysis": 10,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "SD2024_xc.md"
+ },
+ {
+  "tag": "SD2025_xc",
+  "pid": "SD2025",
+  "label": "山东省考 2025年度",
+  "q_file": "xingce/2025年山东省公务员录用考试《行测》试题（网友回忆版）.pdf",
+  "ans_file": "xingce/2025年山东省公务员录用考试《行测》试题（网友回忆版）（解析）.pdf",
+  "n": 9,
+  "range": [
+   51,
+   59
+  ],
+  "n_flag": 2,
+  "n_ans": 9,
+  "n_analysis": 9,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "SD2025_xc.md"
+ },
+ {
+  "tag": "SZ20201_xc",
+  "pid": "SZ20201",
+  "label": "深圳市考 2020年度 行测1",
+  "q_file": "xingce/2020年1213深圳公务员考试《行测1》真题.pdf",
+  "ans_file": "xingce/2020年1213深圳公务员考试《行测1》真题参考答案及解析.pdf",
+  "n": 15,
+  "range": [
+   41,
+   55
+  ],
+  "n_flag": 4,
+  "n_ans": 15,
+  "n_analysis": 15,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "SZ20201_xc.md"
+ },
+ {
+  "tag": "SZ20202_xc",
+  "pid": "SZ20202",
+  "label": "深圳市考 2020年度 行测2",
+  "q_file": "xingce/2020年1213深圳公务员考试《行测2》真题.pdf",
+  "ans_file": "xingce/2020年1213深圳公务员考试《行测2》真题参考答案及解析.pdf",
+  "n": 0,
+  "range": [
+   0,
+   -1
+  ],
+  "n_flag": 0,
+  "n_ans": 0,
+  "n_analysis": 0,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "SZ20202_xc.md"
+ },
+ {
+  "tag": "SZ2020SW_xc",
+  "pid": "SZ2020SW",
+  "label": "深圳市考 2020年度 思维能力测验",
+  "q_file": "xingce/2020年1213深圳公务员考试《思维能力测验》真题.pdf",
+  "ans_file": "xingce/2020年1213深圳公务员考试《思维能力测验》真题参考答案及解析.pdf",
+  "n": 30,
+  "range": [
+   1,
+   30
+  ],
+  "n_flag": 9,
+  "n_ans": 30,
+  "n_analysis": 30,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "SZ2020SW_xc.md"
+ },
+ {
+  "tag": "SZ2023_xc",
+  "pid": "SZ2023",
+  "label": "深圳市考 2023年度",
+  "q_file": "xingce/2023年深圳市考公务员录用考试《行测》真题.pdf",
+  "ans_file": null,
+  "n": 15,
+  "range": [
+   46,
+   60
+  ],
+  "n_flag": 1,
+  "n_ans": 0,
+  "n_analysis": 0,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "SZ2023_xc.md"
+ },
+ {
+  "tag": "SZ2024_xc",
+  "pid": "SZ2024",
+  "label": "深圳市考 2024年度",
+  "q_file": "xingce/2024年深圳市考公务员录用考试《行测》真题.pdf",
+  "ans_file": "xingce/2024年深圳市考公务员录用考试《行测》真题（解析）.pdf",
+  "n": 15,
+  "range": [
+   46,
+   60
+  ],
+  "n_flag": 6,
+  "n_ans": 15,
+  "n_analysis": 15,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "SZ2024_xc.md"
+ },
+ {
+  "tag": "ZJ2020B_xc",
+  "pid": "ZJ2020B",
+  "label": "浙江省考 2020年度 B卷",
+  "q_file": "xingce/2020年0726浙江公务员考试《行测》真题（B卷）.pdf",
+  "ans_file": "xingce/2020年0726浙江公务员考试《行测》真题（B卷）参考答案及解析.pdf",
+  "n": 20,
+  "range": [
+   1,
+   20
+  ],
+  "n_flag": 10,
+  "n_ans": 20,
+  "n_analysis": 20,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "ZJ2020B_xc.md"
+ },
+ {
+  "tag": "ZJ2021A_xc",
+  "pid": "ZJ2021A",
+  "label": "浙江省考 2021年度 A类",
+  "q_file": "xingce/2021年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+  "ans_file": "xingce/2021年浙江省公务员录用考试《行测》题（A类）参考答案及解析.pdf",
+  "n": 25,
+  "range": [
+   51,
+   75
+  ],
+  "n_flag": 22,
+  "n_ans": 25,
+  "n_analysis": 25,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "ZJ2021A_xc.md"
+ },
+ {
+  "tag": "ZJ2022A_xc",
+  "pid": "ZJ2022A",
+  "label": "浙江省考 2022年度 A类",
+  "q_file": "xingce/2022年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+  "ans_file": "xingce/2022年浙江省公务员录用考试（A）答案解析.pdf",
+  "n": 20,
+  "range": [
+   51,
+   70
+  ],
+  "n_flag": 15,
+  "n_ans": 20,
+  "n_analysis": 20,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "ZJ2022A_xc.md"
+ },
+ {
+  "tag": "ZJ2023A_xc",
+  "pid": "ZJ2023A",
+  "label": "浙江省考 2023年度 A类",
+  "q_file": "xingce/2023年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+  "ans_file": "xingce/2023年浙江省公务员录用考试《行测》真题（A类）（解析）.pdf",
+  "n": 20,
+  "range": [
+   51,
+   70
+  ],
+  "n_flag": 13,
+  "n_ans": 18,
+  "n_analysis": 18,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "ZJ2023A_xc.md"
+ },
+ {
+  "tag": "ZJ2024A_xc",
+  "pid": "ZJ2024A",
+  "label": "浙江省考 2024年度 A类",
+  "q_file": "xingce/2024年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+  "ans_file": "xingce/2024年浙江省公务员录用考试《行测》（A卷）参考答案及解析.pdf",
+  "n": 20,
+  "range": [
+   51,
+   70
+  ],
+  "n_flag": 14,
+  "n_ans": 20,
+  "n_analysis": 20,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "ZJ2024A_xc.md"
+ },
+ {
+  "tag": "ZJ2025A_xc",
+  "pid": "ZJ2025A",
+  "label": "浙江省考 2025年度 A类",
+  "q_file": "xingce/2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+  "ans_file": "xingce/2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）解析.pdf",
+  "n": 20,
+  "range": [
+   51,
+   70
+  ],
+  "n_flag": 15,
+  "n_ans": 20,
+  "n_analysis": 20,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "ZJ2025A_xc.md"
+ },
+ {
+  "tag": "ZJ2026A_xc",
+  "pid": "ZJ2026A",
+  "label": "浙江省考 2026年度 A类",
+  "q_file": "xingce/2026年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+  "ans_file": null,
+  "n": 20,
+  "range": [
+   46,
+   65
+  ],
+  "n_flag": 5,
+  "n_ans": 0,
+  "n_analysis": 0,
+  "note": "外省卷（xingce），顺带共享。",
+  "md": "ZJ2026A_xc.md"
+ }
+]
