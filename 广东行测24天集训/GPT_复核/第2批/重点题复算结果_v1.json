@@ -1,0 +1,36 @@
+{
+  "version": "2026-11-08-round2-audit-v1",
+  "source_commit": "bdd4a34ec657aa1c3e5bba1c43f2a41827c6c1f7",
+  "scope": "19道指定重点题，依据交付题干、选项、材料转录和明确引用的原句独立复算或推理。没有逐图/逐PDF核验，不是390题全量复核。文字判定含人工审核，不把程序存下的答案冒称自动证明。",
+  "consistent_answers": 19,
+  "results": [
+    {"id":"D05-ZL-002","answer":"C","value":20.26315066037172,"method":"80.1-80.1/(1.154*1.16)"},
+    {"id":"D05-ZL-077","answer":"C","value":791.519,"method":"30002*0.192-26015*0.191"},
+    {"id":"D05-ZL-080","answer":"D","value":8.554678194224003,"method":"两个环比增长量相除"},
+    {"id":"D05-ZL-086","answer":"A","end_dates":["2021-11-08","2021-11-07"],"method":"跨月天数，兼查首尾含不含；B/C/D分别与原文程度、范围、日期推算矛盾"},
+    {"id":"D05-ZL-087","answer":"A","value":52.05622071837585,"method":"10/0.1921，单位万人"},
+    {"id":"D05-ZL-088","answer":"D","value":4.49,"method":"占比差，单位百分点；其他选项的基数或范围不受材料支持"},
+    {"id":"D05-ZL-089","answer":"A","bachelor_plus_share":0.5472,"jobs_per_company":29.761904761904763,"C_counterexample":{"over_20w":70000,"over_50w":20000,"between":50000}},
+    {"id":"D05-ZL-098","answer":"B","value":12105.416991426344,"method":"12425/1.0264"},
+    {"id":"D05-ZL-099","answer":"A","value":-4.58,"method":"(6.14-8.08)-(4.35-1.71)，单位百分点"},
+    {"id":"D05-ZL-100","answer":"A","national":4.35,"regions":[5.44,2.51,1.43]},
+    {"id":"D05-ZL-101","answer":"C","value":2.5520833333333335,"method":"68.2/19.2-1"},
+    {"id":"D05-ZL-102","answer":"D","revenue_profit_ratio":29.810408921933085,"per_capita_2022":87.83631232361242,"east_middle_total":11331.41,"eighteen_provinces_total":12597},
+    {"id":"D05-ZL-111","answer":"C","value":1.24161137129071,"method":"(1728.7/0.0159)/(2180.4/0.0249)"},
+    {"id":"D05-ZL-135","answer":"D","BRI_share":0.40222282608695653,"private_share":0.5869565217391305},
+    {"id":"D06-PD-103","answer":"D","base_permutation_count":32,"conditioned_count":4,"option_true_counts":[0,0,0,2],"quantifier":"possible"},
+    {"id":"D06-PD-104","answer":"B","conditioned_count":4,"option_true_counts":[2,4,2,0],"quantifier":"necessary"},
+    {"id":"D06-PD-116","answer":"B","method":"人工检查结构：获奖->练习；获奖；所以练习。C/D程度范围需在解析中保留，不笼统称有效否后。"},
+    {"id":"D06-PD-123","answer":"D","model_assumption":"按左右对称解释为两侧向上摩擦力相等","weight_per_block":1,"outer_friction_per_side":2,"interface_12":1,"interface_23":0},
+    {"id":"D06-PD-129","answer":"B","leave_bottom_depth_m":0.03,"model_assumption":"平放不倾覆、底面可进水、准静态","pressures_at_cm":{"0":12,"1":8,"2":4,"3":0,"4":0,"5":0,"20":0}}
+  ],
+  "supplementary_checks": {
+    "D05-ZL-003":{"signed_changes":[0.4772258669165886,0.36666666666666664,-0.10403225806451613,0.08867562380038388],"absolute_order":"A","signed_order":"B","decision":"题干明确绝对值后才按A计分"},
+    "D05-ZL-103":{"decision":"选项%的单位需改为百分点，按原题整理记录"},
+    "D05-ZL-108":{"computed_decline_percent":3.5492103053124917,"nearest_option":"B","decision":"题干有约，可保留最近选项；不能写计算等于3.9%"},
+    "D04-M018":{"no_transfer":"35/3","transfer_after_first_project":11.5},
+    "D04-M092":{"integer_day_exact_completion_min":6,"allow_fractional_final_day_min":4},
+    "D04-N007":{"second_difference_next":33,"recurrence_next":36,"C_sum":192,"D_sum":192,"decision":"竞争规律，建议替换"}
+  },
+  "unverified": ["其余371题未重解","390题未重新全量去重","图像未重新逐图核验","源PDF未逐页核验","19题中自然语言真假不能仅由数值脚本证明","本轮未修改题本、答案或Claude原分支"]
+}
