@@ -1,0 +1,1073 @@
+{
+  "version": "2026-11-08-v2",
+  "source_commit": "dc3056ce7ad1c856be89bb031f0778226ef1a7da",
+  "total_questions": 390,
+  "counts": {
+    "D01-言语": 40,
+    "D02-资料": 135,
+    "D02-言语": 40,
+    "D03-判断": 135,
+    "D03-言语": 40
+  },
+  "priority_11": [
+    {
+      "id": "D02-ZL-018",
+      "answer": "C",
+      "passed": true,
+      "method": "独立计算",
+      "evidence": {
+        "expression": "9635.6/1.061/6/10000",
+        "value": 0.1513603518693057,
+        "unit": "亿千伏安时",
+        "source_material": "ZLM-GK2022F_xc-3"
+      }
+    },
+    {
+      "id": "D02-ZL-075",
+      "answer": "B",
+      "passed": true,
+      "method": "独立计算",
+      "evidence": {
+        "A": {
+          "further_whole_years": 43,
+          "growth_rate": 0.014778325123152709,
+          "preceding_year_value": 381.4669206049429,
+          "first_reaching_value": 387.10436278137064,
+          "target": 382.0
+        },
+        "B": {
+          "further_whole_years": 5,
+          "growth_rate": 0.10152969079791979,
+          "preceding_year_value": 74530.27253279116,
+          "first_reaching_value": 82097.30805813013,
+          "target": 80100.0
+        },
+        "C": {
+          "further_whole_years": 30,
+          "growth_rate": 0.022879060612687786,
+          "preceding_year_value": 117173.49035271787,
+          "first_reaching_value": 119854.30974069789,
+          "target": 118100.0
+        },
+        "D": {
+          "further_whole_years": 10,
+          "growth_rate": 0.03893662728249194,
+          "preceding_year_value": 545.6325197707769,
+          "first_reaching_value": 566.8776098262986,
+          "target": 559.8
+        }
+      }
+    },
+    {
+      "id": "D02-ZL-083",
+      "answer": "A",
+      "passed": true,
+      "method": "独立计算",
+      "evidence": {
+        "Q2_excluding_wind": 196.2,
+        "unit": "亿千瓦时"
+      }
+    },
+    {
+      "id": "D02-ZL-084",
+      "answer": "D",
+      "passed": true,
+      "method": "独立计算",
+      "evidence": {
+        "total_minus_wind_growth_pp": -22.386138804049253
+      }
+    },
+    {
+      "id": "D02-ZL-085",
+      "answer": "C",
+      "passed": true,
+      "method": "独立计算",
+      "evidence": {
+        "months": [
+          4,
+          5,
+          6,
+          7,
+          9,
+          10,
+          11
+        ],
+        "count": 7,
+        "reason": "累计增速是前期累计与本月增速按基期量加权；本月快于当期累计等价于累计增速较上月上升。"
+      }
+    },
+    {
+      "id": "D02-ZL-101",
+      "answer": "D",
+      "passed": true,
+      "method": "逐项对照完整材料",
+      "evidence": {
+        "A": "500米对应社区公园，不是城市公园",
+        "B": "达标列举为绿化覆盖率等，不是绿地率",
+        "C": "材料只称广东省首位",
+        "D": "4+4+14=22>20"
+      }
+    },
+    {
+      "id": "D02-ZL-114",
+      "answer": "D",
+      "passed": true,
+      "method": "逐项对照完整材料",
+      "evidence": {
+        "A": "同比首次转正不等于月度产量最高",
+        "B": "给的是比7月底，不是同比",
+        "C": "风电增速回落24.1个百分点",
+        "D": "原煤日均产量环比增加49万吨"
+      }
+    },
+    {
+      "id": "D03-PD-102",
+      "answer": "A",
+      "passed": true,
+      "method": "C(7,4)全部枚举",
+      "evidence": {
+        "all_feasible_selections": [
+          [
+            "乙",
+            "丁",
+            "己",
+            "庚"
+          ]
+        ],
+        "examined": 35
+      }
+    },
+    {
+      "id": "D03-PD-103",
+      "answer": "A",
+      "passed": true,
+      "method": "6!排列全枚举；明确按题面左到右定方向",
+      "evidence": {
+        "feasible_count": 3,
+        "option_true_counts": {
+          "A": 3,
+          "B": 1,
+          "C": 2,
+          "D": 2
+        },
+        "all_feasible_orders": [
+          [
+            "农业",
+            "人社",
+            "财政",
+            "教育",
+            "住建",
+            "交通"
+          ],
+          [
+            "人社",
+            "财政",
+            "教育",
+            "住建",
+            "交通",
+            "农业"
+          ],
+          [
+            "人社",
+            "财政",
+            "教育",
+            "农业",
+            "交通",
+            "住建"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "D03-PD-104",
+      "answer": "C",
+      "passed": true,
+      "method": "6!排列全枚举；明确按题面左到右定方向",
+      "evidence": {
+        "feasible_count": 2,
+        "option_true_counts": {
+          "A": 1,
+          "B": 1,
+          "C": 2,
+          "D": 0
+        },
+        "all_feasible_orders": [
+          [
+            "人社",
+            "财政",
+            "教育",
+            "农业",
+            "交通",
+            "住建"
+          ],
+          [
+            "人社",
+            "财政",
+            "交通",
+            "农业",
+            "教育",
+            "住建"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "D03-PD-105",
+      "answer": "B",
+      "passed": true,
+      "method": "6!排列全枚举；明确按题面左到右定方向",
+      "evidence": {
+        "feasible_count": 2,
+        "option_true_counts": {
+          "A": 0,
+          "B": 1,
+          "C": 0,
+          "D": 0
+        },
+        "all_feasible_orders": [
+          [
+            "人社",
+            "财政",
+            "交通",
+            "住建",
+            "教育",
+            "农业"
+          ],
+          [
+            "人社",
+            "财政",
+            "交通",
+            "农业",
+            "教育",
+            "住建"
+          ]
+        ]
+      }
+    }
+  ],
+  "additional_enumerated_5": [
+    {
+      "id": "D03-PD-106",
+      "answer": "A",
+      "passed": true,
+      "method": "6!排列全枚举",
+      "evidence": {
+        "base_feasible_count": 32,
+        "conditional_feasible_count": 32,
+        "option_true_counts": {
+          "A": 1,
+          "B": 0,
+          "C": 0,
+          "D": 0
+        },
+        "reading": "条件(3)陈述法务后紧接的部门确实存在，因此法务不能排最后；不是另加任意限制。"
+      }
+    },
+    {
+      "id": "D03-PD-107",
+      "answer": "B",
+      "passed": true,
+      "method": "6!排列全枚举",
+      "evidence": {
+        "base_feasible_count": 32,
+        "conditional_feasible_count": 4,
+        "option_true_counts": {
+          "A": 0,
+          "B": 1,
+          "C": 0,
+          "D": 0
+        },
+        "reading": "条件(3)陈述法务后紧接的部门确实存在，因此法务不能排最后；不是另加任意限制。"
+      }
+    },
+    {
+      "id": "D03-PD-108",
+      "answer": "C",
+      "passed": true,
+      "method": "6!排列全枚举",
+      "evidence": {
+        "base_feasible_count": 32,
+        "conditional_feasible_count": 2,
+        "option_true_counts": {
+          "A": 0,
+          "B": 0,
+          "C": 2,
+          "D": 0
+        },
+        "reading": "条件(3)陈述法务后紧接的部门确实存在，因此法务不能排最后；不是另加任意限制。"
+      }
+    },
+    {
+      "id": "D03-PD-109",
+      "answer": "B",
+      "passed": true,
+      "method": "6!排列全枚举",
+      "evidence": {
+        "base_feasible_count": 32,
+        "conditional_feasible_count": 12,
+        "option_true_counts": {
+          "A": 4,
+          "B": 0,
+          "C": 3,
+          "D": 2
+        },
+        "reading": "条件(3)陈述法务后紧接的部门确实存在，因此法务不能排最后；不是另加任意限制。"
+      }
+    },
+    {
+      "id": "D03-PD-110",
+      "answer": "C",
+      "passed": true,
+      "method": "6!排列全枚举",
+      "evidence": {
+        "base_feasible_count": 32,
+        "conditional_feasible_count": 32,
+        "option_true_counts": {
+          "A": 2,
+          "B": 2,
+          "C": 0,
+          "D": 1
+        },
+        "reading": "条件(3)陈述法务后紧接的部门确实存在，因此法务不能排最后；不是另加任意限制。"
+      }
+    }
+  ],
+  "data_grouping": {
+    "questions": 135,
+    "unique_materials": 76,
+    "old_rendered_material_blocks": 100,
+    "new_rendered_material_blocks": 76,
+    "removed_duplicate_blocks": 24,
+    "questions_per_material_histogram": {
+      "1": 40,
+      "2": 23,
+      "5": 4,
+      "3": 7,
+      "4": 2
+    }
+  },
+  "verbal": {
+    "questions": 120,
+    "answer_keys_unchanged": 120,
+    "all_article_ids_resolve": true,
+    "original_blank_article_texts": 54,
+    "filled_with_exact_exam_passage": [
+      "D01-YY-007",
+      "D01-YY-008",
+      "D01-YY-009",
+      "D01-YY-010",
+      "D01-YY-011",
+      "D01-YY-012",
+      "D01-YY-013",
+      "D01-YY-014",
+      "D01-YY-015",
+      "D01-YY-016",
+      "D01-YY-017",
+      "D01-YY-018",
+      "D01-YY-019",
+      "D01-YY-020",
+      "D01-YY-021",
+      "D01-YY-022",
+      "D01-YY-023",
+      "D01-YY-024",
+      "D02-YY-008",
+      "D02-YY-009",
+      "D02-YY-010",
+      "D02-YY-011",
+      "D02-YY-012",
+      "D02-YY-013",
+      "D02-YY-014",
+      "D02-YY-015",
+      "D02-YY-016",
+      "D02-YY-017",
+      "D02-YY-018",
+      "D02-YY-019",
+      "D02-YY-020",
+      "D02-YY-021",
+      "D02-YY-022",
+      "D02-YY-023",
+      "D02-YY-024",
+      "D02-YY-025",
+      "D03-YY-008",
+      "D03-YY-009",
+      "D03-YY-010",
+      "D03-YY-011",
+      "D03-YY-012",
+      "D03-YY-013",
+      "D03-YY-014",
+      "D03-YY-015",
+      "D03-YY-016",
+      "D03-YY-017",
+      "D03-YY-018",
+      "D03-YY-019",
+      "D03-YY-020",
+      "D03-YY-021",
+      "D03-YY-022",
+      "D03-YY-023",
+      "D03-YY-024",
+      "D03-YY-025"
+    ],
+    "external_full_articles_still_unverified": 54,
+    "html_blank_matches": [
+      {
+        "id": "D01-YY-030",
+        "blank_texts": [
+          "无处遁形"
+        ],
+        "answer": "C",
+        "checked_against": "交付articles.jsonl中的HTML原文段落与字符区间，不冒称访问报刊原站"
+      },
+      {
+        "id": "D01-YY-031",
+        "blank_texts": [
+          "学风和文风也都是党的作风，都是党风"
+        ],
+        "answer": "B",
+        "checked_against": "交付articles.jsonl中的HTML原文段落与字符区间，不冒称访问报刊原站"
+      },
+      {
+        "id": "D01-YY-032",
+        "blank_texts": [
+          "庸政懒政"
+        ],
+        "answer": "D",
+        "checked_against": "交付articles.jsonl中的HTML原文段落与字符区间，不冒称访问报刊原站"
+      },
+      {
+        "id": "D01-YY-033",
+        "blank_texts": [
+          "无奈之下只得机械照搬照抄"
+        ],
+        "answer": "A",
+        "checked_against": "交付articles.jsonl中的HTML原文段落与字符区间，不冒称访问报刊原站"
+      },
+      {
+        "id": "D01-YY-034",
+        "blank_texts": [
+          "公文为了谁写、写给谁看"
+        ],
+        "answer": "D",
+        "checked_against": "交付articles.jsonl中的HTML原文段落与字符区间，不冒称访问报刊原站"
+      },
+      {
+        "id": "D01-YY-035",
+        "blank_texts": [
+          "表面看，这确实起到了把书读薄的效果"
+        ],
+        "answer": "B",
+        "checked_against": "交付articles.jsonl中的HTML原文段落与字符区间，不冒称访问报刊原站"
+      },
+      {
+        "id": "D01-YY-036",
+        "blank_texts": [
+          "涵泳咀嚼"
+        ],
+        "answer": "A",
+        "checked_against": "交付articles.jsonl中的HTML原文段落与字符区间，不冒称访问报刊原站"
+      },
+      {
+        "id": "D01-YY-037",
+        "blank_texts": [
+          "记住"
+        ],
+        "answer": "D",
+        "checked_against": "交付articles.jsonl中的HTML原文段落与字符区间，不冒称访问报刊原站"
+      },
+      {
+        "id": "D01-YY-038",
+        "blank_texts": [
+          "读过了就以为读懂了，了解了就认为理解了"
+        ],
+        "answer": "C",
+        "checked_against": "交付articles.jsonl中的HTML原文段落与字符区间，不冒称访问报刊原站"
+      },
+      {
+        "id": "D01-YY-039",
+        "blank_texts": [
+          "娓娓道来"
+        ],
+        "answer": "B",
+        "checked_against": "交付articles.jsonl中的HTML原文段落与字符区间，不冒称访问报刊原站"
+      },
+      {
+        "id": "D01-YY-040",
+        "blank_texts": [
+          "钝化"
+        ],
+        "answer": "C",
+        "checked_against": "交付articles.jsonl中的HTML原文段落与字符区间，不冒称访问报刊原站"
+      },
+      {
+        "id": "D02-YY-031",
+        "blank_texts": [
+          "织密成网",
+          "持续深化",
+          "愈发紧密"
+        ],
+        "answer": "C",
+        "checked_against": "交付articles.jsonl中的HTML原文段落与字符区间，不冒称访问报刊原站"
+      },
+      {
+        "id": "D02-YY-032",
+        "blank_texts": [
+          "双向"
+        ],
+        "answer": "B",
+        "checked_against": "交付articles.jsonl中的HTML原文段落与字符区间，不冒称访问报刊原站"
+      },
+      {
+        "id": "D02-YY-033",
+        "blank_texts": [
+          "彰显出大湾区国际科技创新中心建设扎实推进、创新动能加速汇聚"
+        ],
+        "answer": "A",
+        "checked_against": "交付articles.jsonl中的HTML原文段落与字符区间，不冒称访问报刊原站"
+      },
+      {
+        "id": "D02-YY-034",
+        "blank_texts": [
+          "可感可知"
+        ],
+        "answer": "D",
+        "checked_against": "交付articles.jsonl中的HTML原文段落与字符区间，不冒称访问报刊原站"
+      },
+      {
+        "id": "D02-YY-035",
+        "blank_texts": [
+          "扬帆正当时"
+        ],
+        "answer": "B",
+        "checked_against": "交付articles.jsonl中的HTML原文段落与字符区间，不冒称访问报刊原站"
+      },
+      {
+        "id": "D02-YY-036",
+        "blank_texts": [
+          "古长安与今西安，就这样在诗句中相遇"
+        ],
+        "answer": "C",
+        "checked_against": "交付articles.jsonl中的HTML原文段落与字符区间，不冒称访问报刊原站"
+      },
+      {
+        "id": "D02-YY-037",
+        "blank_texts": [
+          "星罗棋布"
+        ],
+        "answer": "B",
+        "checked_against": "交付articles.jsonl中的HTML原文段落与字符区间，不冒称访问报刊原站"
+      },
+      {
+        "id": "D02-YY-038",
+        "blank_texts": [
+          "长安一片月，万户捣衣声"
+        ],
+        "answer": "D",
+        "checked_against": "交付articles.jsonl中的HTML原文段落与字符区间，不冒称访问报刊原站"
+      },
+      {
+        "id": "D02-YY-039",
+        "blank_texts": [
+          "内涵式",
+          "活水"
+        ],
+        "answer": "B",
+        "checked_against": "交付articles.jsonl中的HTML原文段落与字符区间，不冒称访问报刊原站"
+      },
+      {
+        "id": "D02-YY-040",
+        "blank_texts": [
+          "诗心，终要扎根人心"
+        ],
+        "answer": "A",
+        "checked_against": "交付articles.jsonl中的HTML原文段落与字符区间，不冒称访问报刊原站"
+      },
+      {
+        "id": "D03-YY-031",
+        "blank_texts": [
+          "有目共睹"
+        ],
+        "answer": "B",
+        "checked_against": "交付articles.jsonl中的HTML原文段落与字符区间，不冒称访问报刊原站"
+      },
+      {
+        "id": "D03-YY-032",
+        "blank_texts": [
+          "是易地扶贫搬迁、东西部协作、产业扶贫等综合施策的结果"
+        ],
+        "answer": "C",
+        "checked_against": "交付articles.jsonl中的HTML原文段落与字符区间，不冒称访问报刊原站"
+      },
+      {
+        "id": "D03-YY-033",
+        "blank_texts": [
+          "无数党员干部扎根乡土、倾情奉献的动人见证"
+        ],
+        "answer": "A",
+        "checked_against": "交付articles.jsonl中的HTML原文段落与字符区间，不冒称访问报刊原站"
+      },
+      {
+        "id": "D03-YY-034",
+        "blank_texts": [
+          "一锤接着一锤敲"
+        ],
+        "answer": "D",
+        "checked_against": "交付articles.jsonl中的HTML原文段落与字符区间，不冒称访问报刊原站"
+      },
+      {
+        "id": "D03-YY-035",
+        "blank_texts": [
+          "致广大而尽精微"
+        ],
+        "answer": "C",
+        "checked_against": "交付articles.jsonl中的HTML原文段落与字符区间，不冒称访问报刊原站"
+      },
+      {
+        "id": "D03-YY-036",
+        "blank_texts": [
+          "立于潮头"
+        ],
+        "answer": "C",
+        "checked_against": "交付articles.jsonl中的HTML原文段落与字符区间，不冒称访问报刊原站"
+      },
+      {
+        "id": "D03-YY-037",
+        "blank_texts": [
+          "站在未来看现在，站在后天看今天"
+        ],
+        "answer": "D",
+        "checked_against": "交付articles.jsonl中的HTML原文段落与字符区间，不冒称访问报刊原站"
+      },
+      {
+        "id": "D03-YY-038",
+        "blank_texts": [
+          "当务之急",
+          "长远之策"
+        ],
+        "answer": "B",
+        "checked_against": "交付articles.jsonl中的HTML原文段落与字符区间，不冒称访问报刊原站"
+      },
+      {
+        "id": "D03-YY-039",
+        "blank_texts": [
+          "另辟蹊径"
+        ],
+        "answer": "A",
+        "checked_against": "交付articles.jsonl中的HTML原文段落与字符区间，不冒称访问报刊原站"
+      },
+      {
+        "id": "D03-YY-040",
+        "blank_texts": [
+          "借脑发展、借智创新"
+        ],
+        "answer": "D",
+        "checked_against": "交付articles.jsonl中的HTML原文段落与字符区间，不冒称访问报刊原站"
+      }
+    ],
+    "answer_restored_passages": [
+      {
+        "id": "D01-YY-001",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "逐空填入原参考答案后，与交付恢复文段逐字相符（仅忽略空白）"
+      },
+      {
+        "id": "D01-YY-002",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "逐空填入原参考答案后，与交付恢复文段逐字相符（仅忽略空白）"
+      },
+      {
+        "id": "D01-YY-003",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "逐空填入原参考答案后，与交付恢复文段逐字相符（仅忽略空白）"
+      },
+      {
+        "id": "D01-YY-004",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "逐空填入原参考答案后，与交付恢复文段逐字相符（仅忽略空白）"
+      },
+      {
+        "id": "D01-YY-005",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "逐空填入原参考答案后，与交付恢复文段逐字相符（仅忽略空白）"
+      },
+      {
+        "id": "D01-YY-006",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "逐空填入原参考答案后，与交付恢复文段逐字相符（仅忽略空白）"
+      },
+      {
+        "id": "D01-YY-025",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "逐空填入原参考答案后，与交付恢复文段逐字相符（仅忽略空白）"
+      },
+      {
+        "id": "D01-YY-026",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "6句全部出现且各一次，按原参考答案重排，句段文字逐字保留"
+      },
+      {
+        "id": "D01-YY-027",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "6句全部出现且各一次，按原参考答案重排，句段文字逐字保留"
+      },
+      {
+        "id": "D01-YY-028",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "6句全部出现且各一次，按原参考答案重排，句段文字逐字保留"
+      },
+      {
+        "id": "D01-YY-029",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "6句全部出现且各一次，按原参考答案重排，句段文字逐字保留"
+      },
+      {
+        "id": "D02-YY-001",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "逐空填入原参考答案后，与交付恢复文段逐字相符（仅忽略空白）"
+      },
+      {
+        "id": "D02-YY-002",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "逐空填入原参考答案后，与交付恢复文段逐字相符（仅忽略空白）"
+      },
+      {
+        "id": "D02-YY-003",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "逐空填入原参考答案后，与交付恢复文段逐字相符（仅忽略空白）"
+      },
+      {
+        "id": "D02-YY-004",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "逐空填入原参考答案后，与交付恢复文段逐字相符（仅忽略空白）"
+      },
+      {
+        "id": "D02-YY-005",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "逐空填入原参考答案后，与交付恢复文段逐字相符（仅忽略空白）"
+      },
+      {
+        "id": "D02-YY-006",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "逐空填入原参考答案后，与交付恢复文段逐字相符（仅忽略空白）"
+      },
+      {
+        "id": "D02-YY-007",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "逐空填入原参考答案后，与交付恢复文段逐字相符（仅忽略空白）"
+      },
+      {
+        "id": "D02-YY-026",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "逐空填入原参考答案后，与交付恢复文段逐字相符（仅忽略空白）"
+      },
+      {
+        "id": "D02-YY-027",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "6句全部出现且各一次，按原参考答案重排，句段文字逐字保留"
+      },
+      {
+        "id": "D02-YY-028",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "6句全部出现且各一次，按原参考答案重排，句段文字逐字保留"
+      },
+      {
+        "id": "D02-YY-029",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "6句全部出现且各一次，按原参考答案重排，句段文字逐字保留"
+      },
+      {
+        "id": "D02-YY-030",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "6句全部出现且各一次，按原参考答案重排，句段文字逐字保留"
+      },
+      {
+        "id": "D03-YY-001",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "逐空填入原参考答案后，与交付恢复文段逐字相符（仅忽略空白）"
+      },
+      {
+        "id": "D03-YY-002",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "逐空填入原参考答案后，与交付恢复文段逐字相符（仅忽略空白）"
+      },
+      {
+        "id": "D03-YY-003",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "逐空填入原参考答案后，与交付恢复文段逐字相符（仅忽略空白）"
+      },
+      {
+        "id": "D03-YY-004",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "逐空填入原参考答案后，与交付恢复文段逐字相符（仅忽略空白）"
+      },
+      {
+        "id": "D03-YY-005",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "逐空填入原参考答案后，与交付恢复文段逐字相符（仅忽略空白）"
+      },
+      {
+        "id": "D03-YY-006",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "逐空填入原参考答案后，与交付恢复文段逐字相符（仅忽略空白）"
+      },
+      {
+        "id": "D03-YY-007",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "逐空填入原参考答案后，与交付恢复文段逐字相符（仅忽略空白）"
+      },
+      {
+        "id": "D03-YY-026",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "逐空填入原参考答案后，与交付恢复文段逐字相符（仅忽略空白）"
+      },
+      {
+        "id": "D03-YY-027",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "6句全部出现且各一次，按原参考答案重排，句段文字逐字保留"
+      },
+      {
+        "id": "D03-YY-028",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "6句全部出现且各一次，按原参考答案重排，句段文字逐字保留"
+      },
+      {
+        "id": "D03-YY-029",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "6句全部出现且各一次，按原参考答案重排，句段文字逐字保留"
+      },
+      {
+        "id": "D03-YY-030",
+        "kind": "原参考答案回填/排序文段",
+        "text_present": true,
+        "evidence": "6句全部出现且各一次，按原参考答案重排，句段文字逐字保留"
+      }
+    ],
+    "new_explanations_added": 0
+  },
+  "structural": {
+    "unique_ids": 390,
+    "no_missing_declared_assets": true,
+    "prohibited_originals_present": [],
+    "original_answer_options_unchanged": true
+  },
+  "old_verbal_source_years": [
+    {
+      "id": "D01-YY-005",
+      "source": "GD2016X",
+      "topic": "选词填空"
+    },
+    {
+      "id": "D01-YY-006",
+      "source": "GD2014X",
+      "topic": "选词填空"
+    },
+    {
+      "id": "D01-YY-008",
+      "source": "GD20131",
+      "topic": "意图判断"
+    },
+    {
+      "id": "D01-YY-010",
+      "source": "GD2014X",
+      "topic": "细节判断"
+    },
+    {
+      "id": "D01-YY-012",
+      "source": "GD20133",
+      "topic": "意图判断"
+    },
+    {
+      "id": "D01-YY-014",
+      "source": "GD2014Z",
+      "topic": "意图判断"
+    },
+    {
+      "id": "D01-YY-016",
+      "source": "GD20131",
+      "topic": "词句理解"
+    },
+    {
+      "id": "D01-YY-018",
+      "source": "GD2015X",
+      "topic": "意图判断"
+    },
+    {
+      "id": "D01-YY-020",
+      "source": "GD2016X",
+      "topic": "意图判断"
+    },
+    {
+      "id": "D01-YY-021",
+      "source": "GD20131",
+      "topic": "意图判断"
+    },
+    {
+      "id": "D01-YY-022",
+      "source": "GD2014Z",
+      "topic": "主旨概括"
+    },
+    {
+      "id": "D02-YY-006",
+      "source": "GD2014X",
+      "topic": "选词填空"
+    },
+    {
+      "id": "D02-YY-007",
+      "source": "GD2014Z",
+      "topic": "选词填空"
+    },
+    {
+      "id": "D02-YY-009",
+      "source": "GD20131",
+      "topic": "主旨概括"
+    },
+    {
+      "id": "D02-YY-011",
+      "source": "GD2014X",
+      "topic": "意图判断"
+    },
+    {
+      "id": "D02-YY-013",
+      "source": "GD20133",
+      "topic": "主旨概括"
+    },
+    {
+      "id": "D02-YY-015",
+      "source": "GD2014Z",
+      "topic": "主旨概括"
+    },
+    {
+      "id": "D02-YY-017",
+      "source": "GD2016Z",
+      "topic": "细节判断"
+    },
+    {
+      "id": "D02-YY-019",
+      "source": "GD2015X",
+      "topic": "意图判断"
+    },
+    {
+      "id": "D02-YY-021",
+      "source": "GD20131",
+      "topic": "主旨概括"
+    },
+    {
+      "id": "D02-YY-022",
+      "source": "GD2014Z",
+      "topic": "细节判断"
+    },
+    {
+      "id": "D02-YY-023",
+      "source": "GD2016X",
+      "topic": "意图判断"
+    },
+    {
+      "id": "D02-YY-024",
+      "source": "GD2014X",
+      "topic": "下文推断"
+    },
+    {
+      "id": "D03-YY-005",
+      "source": "GD2015X",
+      "topic": "选词填空"
+    },
+    {
+      "id": "D03-YY-006",
+      "source": "GD2014X",
+      "topic": "选词填空"
+    },
+    {
+      "id": "D03-YY-007",
+      "source": "GD2014Z",
+      "topic": "选词填空"
+    },
+    {
+      "id": "D03-YY-009",
+      "source": "GD20131",
+      "topic": "意图判断"
+    },
+    {
+      "id": "D03-YY-011",
+      "source": "GD2014X",
+      "topic": "主旨概括"
+    },
+    {
+      "id": "D03-YY-013",
+      "source": "GD20133",
+      "topic": "主旨概括"
+    },
+    {
+      "id": "D03-YY-015",
+      "source": "GD2015Z",
+      "topic": "词句理解"
+    },
+    {
+      "id": "D03-YY-017",
+      "source": "GD2014X",
+      "topic": "意图判断"
+    },
+    {
+      "id": "D03-YY-019",
+      "source": "GD20131",
+      "topic": "主旨概括"
+    },
+    {
+      "id": "D03-YY-021",
+      "source": "GD2015X",
+      "topic": "意图判断"
+    },
+    {
+      "id": "D03-YY-022",
+      "source": "GD20133",
+      "topic": "下文推断"
+    },
+    {
+      "id": "D03-YY-023",
+      "source": "GD2016X",
+      "topic": "主旨概括"
+    },
+    {
+      "id": "D03-YY-024",
+      "source": "GD2014Z",
+      "topic": "标题填入"
+    }
+  ],
+  "limits": [
+    "这不是390题逐题重解：实体复核为11道重点题、5道组合题及定点图像/口径审阅。",
+    "原题片段、参考答案回填段落与用户HTML原文分别标示；未获得的外部文章全文不假称已补齐。",
+    "10道原解析争议逻辑题仍隔离；图像作图约定风险保留。",
+    "36道言语原题来自2013—2016，沿用原交付但明列，不计入近十年原题统计，不据此自动扩展后续范围。"
+  ]
+}

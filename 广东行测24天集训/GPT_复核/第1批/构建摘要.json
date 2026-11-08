@@ -1,0 +1,29 @@
+{
+  "version": "2026-11-08-v2",
+  "quantity": 135,
+  "claude_batch": 390,
+  "total": 525,
+  "d01_changed_ids": [
+    "D01-M017",
+    "D01-M019",
+    "D01-M051",
+    "D01-M056",
+    "D01-M012",
+    "D01-M031",
+    "D01-M033",
+    "D01-M054",
+    "D01-M094",
+    "D01-M089",
+    "D01-N005",
+    "D01-N014",
+    "D01-N020",
+    "D01-N028"
+  ],
+  "quantity_checks": 39,
+  "claude_priority": 11,
+  "claude_additional_enumerated": 5,
+  "source_refs": {
+    "main": "5882576d04abd39d80e32fdb2ec5de181d866682",
+    "claude": "dc3056ce7ad1c856be89bb031f0778226ef1a7da"
+  }
+}
