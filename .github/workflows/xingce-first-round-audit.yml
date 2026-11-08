@@ -1,54 +1,81 @@
-name: Xingce one-time audit source bundle
+name: Xingce one-time verified v2 build
 on:
   push:
     branches: [gpt/first-round-audit-20261108]
     paths: [.github/workflows/xingce-first-round-audit.yml]
 permissions:
-  contents: read
+  contents: write
 jobs:
-  bundle:
+  build:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main
-          path: main_snapshot
-          sparse-checkout: 广东行测24天集训
+          ref: gpt/first-round-audit-20261108
+          path: work
       - uses: actions/checkout@v4
         with:
-          ref: claude/optimistic-bardeen-qkrbx0
+          ref: 5882576d04abd39d80e32fdb2ec5de181d866682
+          path: main_snapshot
+          sparse-checkout: 广东行测24天集训
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          ref: dc3056ce7ad1c856be89bb031f0778226ef1a7da
           path: claude_snapshot
           sparse-checkout: 广东行测24天集训
-      - name: Prepare scoped source bundle
+          persist-credentials: false
+      - name: Install parser
+        run: python -m pip install beautifulsoup4==4.14.3
+      - name: Verify and decode reviewed builder
+        shell: python
+        run: |
+          import pathlib, hashlib, base64, lzma
+          p=pathlib.Path('work/广东行测24天集训/构建')
+          expected=['edbe3042cda5a02e710582d275d1ff9615d12e6fdf5ff39f540ee294d249188f','b10846bcd6d0cbb7bb8a8081df67c11ed120fec8cce2668072d40924ddf040c6','d1ba6b645b35f878d0d8e84523ca7eeb270db26a78cf6a93f2f4da6de6ace8aa','a8186b59f3aad00f8e1f27ac8309e548594ab342ba739c2fd6589d993d9bee6a']
+          chunks=[]
+          for i,digest in enumerate(expected):
+              b=(p/'临时传输'/f'payload{i}.b64').read_bytes()
+              assert hashlib.sha256(b).hexdigest()==digest, f'Chunk {i} mismatch'
+              chunks.append(b)
+          raw=lzma.decompress(base64.b64decode(b''.join(chunks),validate=True))
+          assert hashlib.sha256(raw).hexdigest()=='32a5b5c771e985cc9b9b00c32956c108e10a356ac1c1d2e74fb724edfc5fc7fe'
+          (p/'第一轮修订_v2.py').write_bytes(raw)
+          print('Reviewed builder SHA256 and all four chunks match.')
+      - name: Build and test
+        run: python work/广东行测24天集训/构建/第一轮修订_v2.py --main main_snapshot --claude claude_snapshot --out release
+      - name: Commit output to audit branch only
         shell: python
         run: |
           import pathlib, shutil, subprocess, json
-          out=pathlib.Path('audit_bundle'); out.mkdir()
           project='广东行测24天集训'
-          refs={}
-          for label in ('main','claude'):
-              root=pathlib.Path(label+'_snapshot')
-              refs[label]=subprocess.check_output(['git','-C',str(root),'rev-parse','HEAD'],text=True).strip()
-              src=root/project
-              dst=out/label/project
-              dst.mkdir(parents=True)
-              if label=='main':
-                  shutil.copytree(src/'GPT_数量',dst/'GPT_数量')
-              else:
-                  for name in ('Claude_资料判断言语','交接'):
-                      if (src/name).exists(): shutil.copytree(src/name,dst/name)
-                  q=src/'共享输入'/'数量原文'
-                  target=dst/'共享输入'/'数量原文'; target.mkdir(parents=True)
-                  for p in q.iterdir():
-                      if p.is_file(): shutil.copy2(p,target/p.name)
-                  for name in ('已做情况记录.md','用户决定记录.md'):
-                      if (src/name).exists(): shutil.copy2(src/name,dst/name)
-          (out/'source_refs.json').write_text(json.dumps(refs,ensure_ascii=False,indent=2),encoding='utf-8')
-          print(json.dumps(refs))
+          work=pathlib.Path('work')
+          shutil.copytree(pathlib.Path('release')/project,work/project,dirs_exist_ok=True)
+          shutil.copy2('release/release_manifest.json',work/project/'构建/第一轮v2_manifest.json')
+          entries={
+            project+'/GPT_数量/D01':'tree',
+            project+'/GPT_复核/第1批':'tree',
+            project+'/第1轮_使用入口.md':'blob',
+            project+'/交接/GPT给Claude_第1轮修订与审核完成_v2.md':'blob',
+            project+'/构建/第一轮修订_v2.py':'blob',
+            project+'/构建/第一轮v2_manifest.json':'blob'}
+          def git(*a):return subprocess.check_output(['git','-C',str(work),*a],text=True).strip()
+          git('config','user.name','github-actions[bot]')
+          git('config','user.email','41898282+github-actions[bot]@users.noreply.github.com')
+          git('add','--',*entries)
+          git('commit','-m','Build first-round v2: revise D01, audit priority items, regroup data, restore verbal passages')
+          git('push','origin','HEAD:gpt/first-round-audit-20261108')
+          status={'commit':git('rev-parse','HEAD'),'root_tree':git('rev-parse','HEAD^{tree}'),'entries':[]}
+          for path,typ in entries.items():
+              status['entries'].append({'path':path,'type':typ,'mode':'040000' if typ=='tree' else '100644','sha':git('rev-parse','HEAD:'+path)})
+          dest=pathlib.Path('build_verification');dest.mkdir()
+          (dest/'release_status.json').write_text(json.dumps(status,ensure_ascii=False,indent=2),encoding='utf-8')
+          shutil.copy2('release/release_manifest.json',dest/'release_manifest.json')
+          print(json.dumps(status,ensure_ascii=False,indent=2))
       - uses: actions/upload-artifact@v4
         with:
-          name: xingce-first-round-audit-source
-          path: audit_bundle
+          name: xingce-first-round-audit-built-v2
+          path: build_verification
           retention-days: 2
           if-no-files-found: error
