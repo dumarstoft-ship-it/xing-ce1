@@ -1,0 +1,442 @@
+{
+  "version": "2026-11-08-v2",
+  "question_count": 135,
+  "structural_checks": "135 IDs unique; 105M+30N; booklet/index/answer-heading aligned; four prohibited original sources absent; 30 number-series source IDs unique",
+  "new_math_check_count": 9,
+  "series_option_check_count": 30,
+  "checks": [
+    {
+      "id": "D01-M017",
+      "passed": true,
+      "evidence": {
+        "feasible": [
+          [
+            42,
+            3,
+            1,
+            2
+          ],
+          [
+            84,
+            6,
+            2,
+            4
+          ],
+          [
+            126,
+            9,
+            3,
+            6
+          ],
+          [
+            168,
+            12,
+            4,
+            8
+          ],
+          [
+            210,
+            15,
+            5,
+            10
+          ],
+          [
+            252,
+            18,
+            6,
+            12
+          ]
+        ],
+        "max_total": 252
+      }
+    },
+    {
+      "id": "D01-M019",
+      "passed": true,
+      "evidence": {
+        "all_feasible_totals": [
+          [
+            125,
+            60,
+            120
+          ],
+          [
+            130,
+            48,
+            114
+          ],
+          [
+            135,
+            36,
+            108
+          ],
+          [
+            140,
+            24,
+            102
+          ]
+        ]
+      }
+    },
+    {
+      "id": "D01-M051",
+      "passed": true,
+      "evidence": {
+        "salt": "10",
+        "solution_mass": "40",
+        "concentration": "1/4"
+      }
+    },
+    {
+      "id": "D01-M056",
+      "passed": true,
+      "evidence": {
+        "witness_quarter_volumes": {
+          "甲": [
+            1,
+            1
+          ],
+          "乙": [
+            3,
+            2
+          ]
+        },
+        "second_average": 80
+      }
+    },
+    {
+      "id": "D01-M089",
+      "passed": true,
+      "evidence": {
+        "all_dumbbell_counts_meeting_cost": [
+          25
+        ]
+      }
+    },
+    {
+      "id": "D01-M094",
+      "passed": true,
+      "evidence": {
+        "target": 36000,
+        "profit_day17": 35750,
+        "profit_day18": 38000
+      }
+    },
+    {
+      "id": "D01-M031",
+      "passed": true,
+      "evidence": "144满足题干；174对应漏掉收回10份"
+    },
+    {
+      "id": "D01-M033",
+      "passed": true,
+      "evidence": "8为正确增员；4为把临时工按10天计的干扰"
+    },
+    {
+      "id": "D01-M054",
+      "passed": true,
+      "evidence": "170正确；95对应先减5元再打七折"
+    },
+    {
+      "id": "D01-N001",
+      "passed": true,
+      "evidence": {
+        "options_matching_stated_rule": [
+          "D"
+        ],
+        "all_known_terms_checked": true
+      }
+    },
+    {
+      "id": "D01-N002",
+      "passed": true,
+      "evidence": {
+        "options_matching_stated_rule": [
+          "A"
+        ],
+        "all_known_terms_checked": true
+      }
+    },
+    {
+      "id": "D01-N003",
+      "passed": true,
+      "evidence": {
+        "options_matching_stated_rule": [
+          "B"
+        ],
+        "all_known_terms_checked": true
+      }
+    },
+    {
+      "id": "D01-N004",
+      "passed": true,
+      "evidence": {
+        "options_matching_stated_rule": [
+          "A"
+        ],
+        "all_known_terms_checked": true
+      }
+    },
+    {
+      "id": "D01-N005",
+      "passed": true,
+      "evidence": {
+        "options_matching_stated_rule": [
+          "B"
+        ],
+        "all_known_terms_checked": true
+      }
+    },
+    {
+      "id": "D01-N006",
+      "passed": true,
+      "evidence": {
+        "options_matching_stated_rule": [
+          "A"
+        ],
+        "all_known_terms_checked": true
+      }
+    },
+    {
+      "id": "D01-N007",
+      "passed": true,
+      "evidence": {
+        "options_matching_stated_rule": [
+          "C"
+        ],
+        "all_known_terms_checked": true
+      }
+    },
+    {
+      "id": "D01-N008",
+      "passed": true,
+      "evidence": {
+        "options_matching_stated_rule": [
+          "C"
+        ],
+        "all_known_terms_checked": true
+      }
+    },
+    {
+      "id": "D01-N009",
+      "passed": true,
+      "evidence": {
+        "options_matching_stated_rule": [
+          "C"
+        ],
+        "all_known_terms_checked": true
+      }
+    },
+    {
+      "id": "D01-N010",
+      "passed": true,
+      "evidence": {
+        "options_matching_stated_rule": [
+          "B"
+        ],
+        "all_known_terms_checked": true
+      }
+    },
+    {
+      "id": "D01-N011",
+      "passed": true,
+      "evidence": {
+        "options_matching_stated_rule": [
+          "C"
+        ],
+        "all_known_terms_checked": true
+      }
+    },
+    {
+      "id": "D01-N012",
+      "passed": true,
+      "evidence": {
+        "options_matching_stated_rule": [
+          "C"
+        ],
+        "all_known_terms_checked": true
+      }
+    },
+    {
+      "id": "D01-N013",
+      "passed": true,
+      "evidence": {
+        "options_matching_stated_rule": [
+          "B"
+        ],
+        "all_known_terms_checked": true
+      }
+    },
+    {
+      "id": "D01-N014",
+      "passed": true,
+      "evidence": {
+        "options_matching_stated_rule": [
+          "A"
+        ],
+        "all_known_terms_checked": true
+      }
+    },
+    {
+      "id": "D01-N015",
+      "passed": true,
+      "evidence": {
+        "options_matching_stated_rule": [
+          "B"
+        ],
+        "all_known_terms_checked": true
+      }
+    },
+    {
+      "id": "D01-N016",
+      "passed": true,
+      "evidence": {
+        "options_matching_stated_rule": [
+          "A"
+        ],
+        "all_known_terms_checked": true
+      }
+    },
+    {
+      "id": "D01-N017",
+      "passed": true,
+      "evidence": {
+        "options_matching_stated_rule": [
+          "B"
+        ],
+        "all_known_terms_checked": true
+      }
+    },
+    {
+      "id": "D01-N018",
+      "passed": true,
+      "evidence": {
+        "options_matching_stated_rule": [
+          "B"
+        ],
+        "all_known_terms_checked": true
+      }
+    },
+    {
+      "id": "D01-N019",
+      "passed": true,
+      "evidence": {
+        "options_matching_stated_rule": [
+          "D"
+        ],
+        "all_known_terms_checked": true
+      }
+    },
+    {
+      "id": "D01-N020",
+      "passed": true,
+      "evidence": {
+        "options_matching_stated_rule": [
+          "D"
+        ],
+        "all_known_terms_checked": true
+      }
+    },
+    {
+      "id": "D01-N021",
+      "passed": true,
+      "evidence": {
+        "options_matching_stated_rule": [
+          "D"
+        ],
+        "all_known_terms_checked": true
+      }
+    },
+    {
+      "id": "D01-N022",
+      "passed": true,
+      "evidence": {
+        "options_matching_stated_rule": [
+          "B"
+        ],
+        "all_known_terms_checked": true
+      }
+    },
+    {
+      "id": "D01-N023",
+      "passed": true,
+      "evidence": {
+        "options_matching_stated_rule": [
+          "B"
+        ],
+        "all_known_terms_checked": true
+      }
+    },
+    {
+      "id": "D01-N024",
+      "passed": true,
+      "evidence": {
+        "options_matching_stated_rule": [
+          "A"
+        ],
+        "all_known_terms_checked": true
+      }
+    },
+    {
+      "id": "D01-N025",
+      "passed": true,
+      "evidence": {
+        "options_matching_stated_rule": [
+          "B"
+        ],
+        "all_known_terms_checked": true
+      }
+    },
+    {
+      "id": "D01-N026",
+      "passed": true,
+      "evidence": {
+        "options_matching_stated_rule": [
+          "B"
+        ],
+        "all_known_terms_checked": true
+      }
+    },
+    {
+      "id": "D01-N027",
+      "passed": true,
+      "evidence": {
+        "options_matching_stated_rule": [
+          "B"
+        ],
+        "all_known_terms_checked": true
+      }
+    },
+    {
+      "id": "D01-N028",
+      "passed": true,
+      "evidence": {
+        "options_matching_stated_rule": [
+          "C"
+        ],
+        "all_known_terms_checked": true
+      }
+    },
+    {
+      "id": "D01-N029",
+      "passed": true,
+      "evidence": {
+        "options_matching_stated_rule": [
+          "D"
+        ],
+        "all_known_terms_checked": true
+      }
+    },
+    {
+      "id": "D01-N030",
+      "passed": true,
+      "evidence": {
+        "options_matching_stated_rule": [
+          "B"
+        ],
+        "all_known_terms_checked": true
+      }
+    }
+  ],
+  "limits": "本轮对新改运算及全部数推作上述独立检查；未重做全部105道运算，不将旧版Claude复核套用于新题。"
+}
