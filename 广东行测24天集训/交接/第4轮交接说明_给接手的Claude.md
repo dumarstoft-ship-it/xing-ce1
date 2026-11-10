@@ -11,7 +11,7 @@
 | 言语 D10—D12 选词 36＋语句 18 | YY4A | **已交稿**，54 题，校验 0 问题，报告已存 | `questions.jsonl`、`articles.jsonl`、`report.md` |
 | 言语 D10—D12 片段 54＋排序 12 | YY4B | **已交稿**，66 题，校验 0 问题，与 YY4A 合查同日泄题 0 处，报告已存 | 同上。它自己追加的一项 OCR 复核没做完，不影响结论 |
 | 资料 D11 保留块 | ZL4B | **已交稿**，36 问、8 份材料（合并时删到 35），校验 0 问题，报告已存 | `questions.jsonl`、`materials.jsonl`、`report.md` |
-| 资料 D11 主轴“比重” | ZL4A | 暂停时刚写出 `questions.jsonl`，**是否写完、是否自查，以该目录里的 `progress.txt` 为准**；没有它就按“未完成”处理 | `questions.jsonl`、`materials.jsonl`、`progress.*`、`bin_wip/` |
+| 资料 D11 主轴“比重” | ZL4A | **题已写完，差收尾**：103 问、21 份材料、5 组已排号，校验 0 问题；强度为一步 2、两步 28、多步或多口径 73。还差：39 道改编的第二遍独立复算；完整报告；3 道 GK2026F 原题没有原解析，只有编者自己的计算（已标“无原解析”，盲审必须覆盖） | `questions.jsonl`（与 `questions.partial.jsonl` 相同）、`materials.jsonl`、`progress.json`、`progress.txt`、`bin_wip/` |
 | 判断 D12 图推 45 | PD4A | **中途停下**：只写完 12 道平面题；平面还差约 19 道，空间 14 道一题未做 | `progress.json`（99 条候选的状态）、`progress.txt`、`questions.partial.jsonl`、`tools_wip/` |
 | 判断 D12 论证＋结构归纳 45 | PD4B | **中途停下**：45 题都已选定、独立判断并对过解析；写成记录的 35 条（B1 17、B2 18），B3 的 10 条、备选 5 条、冲突 8 条只在 `progress.json` 里 | `progress.json`、`progress.txt`、`questions.partial.jsonl` |
 | 判断 D12 条件组合科推 45 | PD4C | **中途停下**：45 条记录都写了但没逐字复核；核验脚本 41 项通过；4 道照扫描件录入的题要再对原图（GD2021X-67、70、80，GD2020X-84） | `progress.json`、`progress.txt`、`questions.partial.jsonl`、`verify/verify_d12.py` |
@@ -21,7 +21,7 @@
 
 ## 二、接手后按这个顺序做
 1. **恢复工作区**（换了会话才需要，见第三节）。
-2. **资料**：看 ZL4A 的 `progress.txt`。没写完就按任务书 `out4/briefs/ZL4A.md` 接着做完；写完了就跑校验。然后 ZL4A、ZL4B 合起来 135 问：多出的按强度从低到高删，每份材料至少留 4 问。
+2. **资料**：先看 ZL4A 的 `progress.txt`，把 39 道改编的第二遍独立复算做完（脚本在 `out4/ZL4A/bin_wip/`），补一份报告。然后 ZL4A 103 问＋ZL4B 36 问合成 135 问：多出的 4 问按强度从低到高删，每份材料至少留 4 问；两位登记的材料有同卷的（ZL4B 报告第 8 节第 11 条），排版时同卷材料不相邻。
 3. **判断**：三位编者各自从 `progress.*` 和 `questions.partial.jsonl` 接着做，不要从头重选。任务书在 `out4/briefs/PD4A.md`、`PD4B.md`、`PD4C.md`。最省的办法是每位开一个编者，让它先读任务书和现场文件。
 4. **合并**：照 `build/assemble_cfg_r3.json` 写 `assemble_cfg_r4.json`（D10 只有言语；D11 资料＋言语；D12 判断＋言语），跑  
    `OUT_DIR=/home/user/work/out4 CFG_PATH=/home/user/work/build/assemble_cfg_r4.json python3 tools/assemble.py /home/user/work/build/pkg_r4`。  

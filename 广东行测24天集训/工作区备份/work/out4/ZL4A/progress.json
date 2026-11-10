@@ -1,0 +1,1235 @@
+[
+ {
+  "key": "GK2018D-111",
+  "mid": "ZLM-GK2018D-1",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "B",
+  "intensity": "一步",
+  "note": "ZL4A-001；D11-ZA1第1题；现期比重：部分求整体"
+ },
+ {
+  "key": "GK2018D-112",
+  "mid": "ZLM-GK2018D-1",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "A",
+  "intensity": "两步",
+  "note": "ZL4A-002；D11-ZA1第2题；平均数的倍数（人均GDP）"
+ },
+ {
+  "key": "GK2018D-113（改编母题）",
+  "mid": "ZLM-GK2018D-1",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "D",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-003；D11-ZA1第3题；比重与平均数：由两个比重求“其余部分”的人均之比"
+ },
+ {
+  "key": "GK2018D-114",
+  "mid": "ZLM-GK2018D-1",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "D",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-004；D11-ZA1第4题；比重的链式换算：部分占部分再乘上级比重"
+ },
+ {
+  "key": "GK2018D-115",
+  "mid": "ZLM-GK2018D-1",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "C",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-005；D11-ZA1第5题；综合判断：比重链、平均数与过线"
+ },
+ {
+  "key": "HB2022-126",
+  "mid": "ZLM-HB2022-4",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "B",
+  "intensity": "两步",
+  "note": "ZL4A-006；D11-ZA1第6题；“其中”的层级：部分占上上级的比重"
+ },
+ {
+  "key": "HB2022-126（改编母题）",
+  "mid": "ZLM-HB2022-4",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "A",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-007；D11-ZA1第7题；“其中”的层级：上级减去两个“其中”后占全行业的比重"
+ },
+ {
+  "key": "HB2022-127",
+  "mid": "ZLM-HB2022-4",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "B",
+  "intensity": "两步",
+  "note": "ZL4A-008；D11-ZA1第8题；两期比重升降：部分增速对整体增速"
+ },
+ {
+  "key": "HB2022-127（改编母题）",
+  "mid": "ZLM-HB2022-4",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "B",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-009；D11-ZA1第9题；基期比重：先由“高出几个百分点”求整体增速"
+ },
+ {
+  "key": "HB2022-130",
+  "mid": "ZLM-HB2022-4",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "C",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-010；D11-ZA1第10题；综合判断（选不能推出）：剩余比重、基期量与比重升降"
+ },
+ {
+  "key": "GK2019D-121",
+  "mid": "ZLM-GK2019D-3",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "B",
+  "intensity": "两步",
+  "note": "ZL4A-011；D11-ZA1第11题；同一整体下两个比重之比：逐月判断计数"
+ },
+ {
+  "key": "GK2019D-122（改编母题）",
+  "mid": "ZLM-GK2019D-3",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "B",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-012；D11-ZA1第12题；混合比重：季度比重是各月比重按总数加权"
+ },
+ {
+  "key": "GK2019D-123（改编母题）",
+  "mid": "ZLM-GK2019D-3",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "C",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-013；D11-ZA1第13题；整体求部分的多对象比较：占比高≠数量多"
+ },
+ {
+  "key": "GK2019D-124",
+  "mid": "ZLM-GK2019D-3",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "B",
+  "intensity": "两步",
+  "note": "ZL4A-014；D11-ZA1第14题；同比增速的走势图"
+ },
+ {
+  "key": "GK2019D-125",
+  "mid": "ZLM-GK2019D-3",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "A",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-015；D11-ZA1第15题；综合判断：整体求部分、比重与环比"
+ },
+ {
+  "key": "GK2021F-116",
+  "mid": "ZLM-GK2021F-1",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "C",
+  "intensity": "两步",
+  "note": "ZL4A-016；D11-ZA1第16题；平均数的倍数（每个排口的污水量）"
+ },
+ {
+  "key": "GK2021F-117（改编母题）",
+  "mid": "ZLM-GK2021F-1",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "A",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-017；D11-ZA1第17题；隐含数据＋两个比重之差"
+ },
+ {
+  "key": "GK2021F-118（改编母题）",
+  "mid": "ZLM-GK2021F-1",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "A",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-018；D11-ZA1第18题；比重与平均数：两个占比的大小⇔平均数与总体平均的大小"
+ },
+ {
+  "key": "GK2021F-119",
+  "mid": "ZLM-GK2021F-1",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "D",
+  "intensity": "两步",
+  "note": "ZL4A-019；D11-ZA1第19题；两个不同整体下的比重之差（部分占部分）"
+ },
+ {
+  "key": "GK2021F-120",
+  "mid": "ZLM-GK2021F-1",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "C",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-020；D11-ZA1第20题；综合判断（选不能推出）：比重过线、平均数与单位换算"
+ },
+ {
+  "key": "GDXD2020ZH-96",
+  "mid": "ZLM-GDXD2020ZH-3",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "C",
+  "intensity": "两步",
+  "note": "ZL4A-021；D11-ZA2第1题；基期比重（部分与整体增速接近）"
+ },
+ {
+  "key": "GDXD2020ZH-100（改编母题）",
+  "mid": "ZLM-GDXD2020ZH-3",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "B",
+  "intensity": "两步",
+  "note": "ZL4A-022；D11-ZA2第2题；两期比重升降：多项指标逐一比较增速并计数"
+ },
+ {
+  "key": "GDXD2020ZH-97（改编母题）",
+  "mid": "ZLM-GDXD2020ZH-3",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "A",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-023；D11-ZA2第3题；两期比重差：部分增速低于整体，比重下降"
+ },
+ {
+  "key": "GDXD2020ZH-99",
+  "mid": "ZLM-GDXD2020ZH-3",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "A",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-024；D11-ZA2第4题；间隔基期的结构（三次产业比重）；题干口径明示，原题干存original_stem"
+ },
+ {
+  "key": "GDXD2020ZH-100（改编母题）",
+  "mid": "ZLM-GDXD2020ZH-3",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "D",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-025；D11-ZA2第5题；比重与平均数：GDP比重÷人均之比=人口比重"
+ },
+ {
+  "key": "JS2021A-116（改编母题）",
+  "mid": "ZLM-JS2021A-1",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "D",
+  "intensity": "两步",
+  "note": "ZL4A-026；D11-ZA2第6题；基期比重（用百分点加回）及其差值"
+ },
+ {
+  "key": "JS2021A-117",
+  "mid": "ZLM-JS2021A-1",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "A",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-027；D11-ZA2第7题；基期比重（多个部分，用百分点还原）与饼图"
+ },
+ {
+  "key": "JS2021A-119",
+  "mid": "ZLM-JS2021A-1",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "D",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-028；D11-ZA2第8题；混合平均数求比重（十字交叉）"
+ },
+ {
+  "key": "JS2021A-119（改编母题）",
+  "mid": "ZLM-JS2021A-1",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "B",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-029；D11-ZA2第9题；整体求部分后求倍数：部分之比=整体之比×比重之比"
+ },
+ {
+  "key": "JS2021A-120",
+  "mid": "ZLM-JS2021A-1",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "C",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-030；D11-ZA2第10题；综合判断：增长几倍、年均增速与差值"
+ },
+ {
+  "key": "GK2013-132",
+  "mid": "ZLM-GK2013-4",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "C",
+  "intensity": "两步",
+  "note": "ZL4A-031；D11-ZA2第11题；同一整体下比重之和的比较与计数"
+ },
+ {
+  "key": "GK2013-134",
+  "mid": "ZLM-GK2013-4",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "A",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-032；D11-ZA2第12题；两期比重差（由增量还原基期）；选项单位更正，原选项存original_options"
+ },
+ {
+  "key": "GK2013-133（改编母题）",
+  "mid": "ZLM-GK2013-4",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "C",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-033；D11-ZA2第13题；比重下降≠数量减少：两期“整体×比重”相减"
+ },
+ {
+  "key": "GK2013-135（改编母题）",
+  "mid": "ZLM-GK2013-4",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "D",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-034；D11-ZA2第14题；“其中”的层级：条件比重换向（A中B的比重→B中A的比重）"
+ },
+ {
+  "key": "GK2013-135",
+  "mid": "ZLM-GK2013-4",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "B",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-035；D11-ZA2第15题；综合判断：基期量、比重读数与倍数"
+ },
+ {
+  "key": "ZJ2023A-111（改编母题）",
+  "mid": "ZLM-ZJ2023A-1",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "B",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-036；D11-ZA2第16题；隔年两期比重升降：多对象比较计数"
+ },
+ {
+  "key": "ZJ2023A-112",
+  "mid": "ZLM-ZJ2023A-1",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "D",
+  "intensity": "两步",
+  "note": "ZL4A-037；D11-ZA2第17题；两期比重差（给出两年绝对量）"
+ },
+ {
+  "key": "ZJ2023A-113（改编母题）",
+  "mid": "ZLM-ZJ2023A-1",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "C",
+  "intensity": "两步",
+  "note": "ZL4A-038；D11-ZA2第18题；增量里的比重：部分增量可以超过整体增量"
+ },
+ {
+  "key": "ZJ2023A-114",
+  "mid": "ZLM-ZJ2023A-1",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "C",
+  "intensity": "两步",
+  "note": "ZL4A-039；D11-ZA2第19题；假设比重相同：整体求部分"
+ },
+ {
+  "key": "ZJ2023A-115",
+  "mid": "ZLM-ZJ2023A-1",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "C",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-040；D11-ZA2第20题；综合判断：比重逐年变化、累计比较与增速"
+ },
+ {
+  "key": "GK2016F-131（改编母题）",
+  "mid": "ZLM-GK2016F-5",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "A",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-041；D11-ZA3第1题；两期比重差：比重差小于增速差"
+ },
+ {
+  "key": "GK2016F-132",
+  "mid": "ZLM-GK2016F-5",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "B",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-042；D11-ZA3第2题；两期比重升降：连续两年与整体增速比较"
+ },
+ {
+  "key": "GK2016F-132（改编母题）",
+  "mid": "ZLM-GK2016F-5",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "A",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-043；D11-ZA3第3题；隔年两期比重差：先合成两年的间隔增速"
+ },
+ {
+  "key": "GK2016F-134",
+  "mid": "ZLM-GK2016F-5",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "B",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-044；D11-ZA3第4题；间隔基期量（从图中取两年同期的累计增速）"
+ },
+ {
+  "key": "GK2016F-135",
+  "mid": "ZLM-GK2016F-5",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "A",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-045；D11-ZA3第5题；综合判断：混合增速、比率升降与比重"
+ },
+ {
+  "key": "GD2023X-91",
+  "mid": "ZLM-GD2023X-2",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "B",
+  "intensity": "两步",
+  "note": "ZL4A-046；D11-ZA3第6题；两个整体的内部比重比较"
+ },
+ {
+  "key": "GD2023X-92（改编母题）",
+  "mid": "ZLM-GD2023X-2",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "B",
+  "intensity": "两步",
+  "note": "ZL4A-047；D11-ZA3第7题；两期比重升降：选对整体的增速再逐项比较"
+ },
+ {
+  "key": "GD2023X-94",
+  "mid": "ZLM-GD2023X-2",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "D",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-048；D11-ZA3第8题；混合平均数求数量之比（十字交叉）"
+ },
+ {
+  "key": "GD2023X-94（改编母题）",
+  "mid": "ZLM-GD2023X-2",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "B",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-049；D11-ZA3第9题；混合比重：两个比重混合，权重是各自的整体量"
+ },
+ {
+  "key": "GD2023X-95",
+  "mid": "ZLM-GD2023X-2",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "B",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-050；D11-ZA3第10题；综合判断：基期比重比较、增量比较与结构"
+ },
+ {
+  "key": "GK2024F-126",
+  "mid": "ZLM-GK2024F-3",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "C",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-051；D11-ZA3第11题；基期比重：整体减部分，再减去新增"
+ },
+ {
+  "key": "GK2024F-128",
+  "mid": "ZLM-GK2024F-3",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "D",
+  "intensity": "两步",
+  "note": "ZL4A-052；D11-ZA3第12题；平均数的倍数（新增口径）"
+ },
+ {
+  "key": "GK2024F-129",
+  "mid": "ZLM-GK2024F-3",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "B",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-053；D11-ZA3第13题；混合比重：新增占比对累计占比"
+ },
+ {
+  "key": "GK2024F-129（改编母题）",
+  "mid": "ZLM-GK2024F-3",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "C",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-054；D11-ZA3第14题；混合比重的逆用：由累计占比和新增占比反推上年末占比"
+ },
+ {
+  "key": "GK2024F-130",
+  "mid": "ZLM-GK2024F-3",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "A",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-055；D11-ZA3第15题；综合判断：累计平均与新增平均、比重与平均数、剩余比重"
+ },
+ {
+  "key": "ZJ2018A-126（改编母题）",
+  "mid": "ZLM-ZJ2018A-2",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "B",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-056；D11-ZA3第16题；两期比重升降：由增量判断（增量占比对现期占比）"
+ },
+ {
+  "key": "ZJ2018A-128",
+  "mid": "ZLM-ZJ2018A-2",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "D",
+  "intensity": "两步",
+  "note": "ZL4A-057；D11-ZA3第17题；两期比重升降：与整体增速比较并计数"
+ },
+ {
+  "key": "ZJ2018A-129",
+  "mid": "ZLM-ZJ2018A-2",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "B",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-058；D11-ZA3第18题；增长量的倍数（现期量与增速求增量）"
+ },
+ {
+  "key": "ZJ2018A-128（改编母题）",
+  "mid": "ZLM-ZJ2018A-2",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "C",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-059；D11-ZA3第19题；增量里的比重：由增速还原增量再求占比"
+ },
+ {
+  "key": "ZJ2018A-130",
+  "mid": "ZLM-ZJ2018A-2",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "C",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-060；D11-ZA3第20题；综合判断：预算完成率倒推、增量与增速读数"
+ },
+ {
+  "key": "GD2017-92",
+  "mid": "ZLM-GD2017-2",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "B",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-061；D11-ZA4第1题；两期比重差：小幅下降"
+ },
+ {
+  "key": "GD2017-93",
+  "mid": "ZLM-GD2017-2",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "B",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-062；D11-ZA4第2题；基期比重：先由比重求整体，再回到上年"
+ },
+ {
+  "key": "GD2017-91（改编母题）",
+  "mid": "ZLM-GD2017-2",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "B",
+  "intensity": "两步",
+  "note": "ZL4A-063；D11-ZA4第3题；拉动增长：贡献率×整体增速"
+ },
+ {
+  "key": "GD2017-95（改编母题）",
+  "mid": "ZLM-GD2017-2",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "B",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-064；D11-ZA4第4题；混合增速的逆用：由整体与一部分的增速求另一部分"
+ },
+ {
+  "key": "GD2017-95",
+  "mid": "ZLM-GD2017-2",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "A",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-065；D11-ZA4第5题；综合判断：两期比重差过线、排序对应与基期倍数"
+ },
+ {
+  "key": "ZJ2015A-111（改编母题）",
+  "mid": "ZLM-ZJ2015A-1",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "D",
+  "intensity": "两步",
+  "note": "ZL4A-066；D11-ZA4第6题；拉动增长：部分增量÷整体基期量"
+ },
+ {
+  "key": "ZJ2015A-114（改编母题）",
+  "mid": "ZLM-ZJ2015A-1",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "A",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-067；D11-ZA4第7题；两期比重差：与“拉动”“增速差”区分"
+ },
+ {
+  "key": "ZJ2015A-112",
+  "mid": "ZLM-ZJ2015A-1",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "D",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-068；D11-ZA4第8题；增量里的比重：部分增收之和÷整体增收"
+ },
+ {
+  "key": "ZJ2015A-113",
+  "mid": "ZLM-ZJ2015A-1",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "B",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-069；D11-ZA4第9题；间隔基期量：负增长与“回落”还原"
+ },
+ {
+  "key": "ZJ2015A-115",
+  "mid": "ZLM-ZJ2015A-1",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "B",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-070；D11-ZA4第10题；综合判断（数个数）：混合增速、假设条件下的拉动与比重过线"
+ },
+ {
+  "key": "GD2023X-97",
+  "mid": "ZLM-GD2023X-3",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "B",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-071；D11-ZA4第11题；两期比重差：部分几乎不增长、整体增长较快"
+ },
+ {
+  "key": "GD2023X-97（改编母题）",
+  "mid": "ZLM-GD2023X-3",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "C",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-072；D11-ZA4第12题；拉动增长：与比重提高幅度、自身增速区分"
+ },
+ {
+  "key": "GD2023X-96（改编母题）",
+  "mid": "ZLM-GD2023X-3",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "C",
+  "intensity": "两步",
+  "note": "ZL4A-073；D11-ZA4第13题；假设外推下的比重比较：同一整体下比占比即比绝对量"
+ },
+ {
+  "key": "GD2023X-99",
+  "mid": "ZLM-GD2023X-3",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "A",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-074；D11-ZA4第14题；综合判断：年均增速过线、年均增量与合计增速"
+ },
+ {
+  "key": "GD2023X-100",
+  "mid": "ZLM-GD2023X-3",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "C",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-075；D11-ZA4第15题；多年份结构与饼图：逐年核对占比"
+ },
+ {
+  "key": "JS2021A-121",
+  "mid": "ZLM-JS2021A-2",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "C",
+  "intensity": "一步",
+  "note": "ZL4A-076；D11-ZA4第16题；两期比重升降：部分增速对整体增速"
+ },
+ {
+  "key": "JS2021A-121（改编母题）",
+  "mid": "ZLM-JS2021A-2",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "C",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-077；D11-ZA4第17题；增量里的比重（贡献率）：两个增量各自还原"
+ },
+ {
+  "key": "JS2021A-122（改编母题）",
+  "mid": "ZLM-JS2021A-2",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "A",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-078；D11-ZA4第18题；两期比重差：由“比上年末增加”还原基期"
+ },
+ {
+  "key": "JS2021A-125",
+  "mid": "ZLM-JS2021A-2",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "D",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-079；D11-ZA4第19题；综合判断：基期量比较、比重过线与差值的增速"
+ },
+ {
+  "key": "SZ2023-93",
+  "mid": "ZLM-SZ2023-2",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "B",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-080；D11-ZA4第20题；多年份比重比较：先用增减方向排除"
+ },
+ {
+  "key": "SZ2023-91（改编母题）",
+  "mid": "ZLM-SZ2023-2",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "C",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-081；D11-ZA4第21题；增量里的比重：增量占比与期初、期末存量占比的关系"
+ },
+ {
+  "key": "SZ2023-94（改编母题）",
+  "mid": "ZLM-SZ2023-2",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "C",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-082；D11-ZA4第22题；拉动增长：部分增量÷整体上年值"
+ },
+ {
+  "key": "SZ2023-95",
+  "mid": "ZLM-SZ2023-2",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "A",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-083；D11-ZA4第23题；综合判断（选不正确）：比重走势、倍数、增量与增速"
+ },
+ {
+  "key": "SD2024-106",
+  "mid": "ZLM-SD2024-2",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "A",
+  "intensity": "两步",
+  "note": "ZL4A-084；D11-ZA5第1题；逐年增速比较：找最快年份"
+ },
+ {
+  "key": "SD2024-107",
+  "mid": "ZLM-SD2024-2",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "D",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-085；D11-ZA5第2题；平均数过线计数（含单位换算）"
+ },
+ {
+  "key": "SD2024-108",
+  "mid": "ZLM-SD2024-2",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "A",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-086；D11-ZA5第3题；多年份比率的极差：先求各年整体，再求比率"
+ },
+ {
+  "key": "SD2024-109",
+  "mid": "ZLM-SD2024-2",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "B",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-087；D11-ZA5第4题；多对象比重的变动幅度比较"
+ },
+ {
+  "key": "SD2024-110",
+  "mid": "ZLM-SD2024-2",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "D",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-088；D11-ZA5第5题；综合判断：倍数口径、趋势对应与比重最值"
+ },
+ {
+  "key": "GK2025D-111",
+  "mid": "ZLM-GK2025D-1",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "C",
+  "intensity": "两步",
+  "note": "ZL4A-089；D11-ZA5第6题；比重过线计数：先求整体再定门槛"
+ },
+ {
+  "key": "GK2025D-114",
+  "mid": "ZLM-GK2025D-1",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "D",
+  "intensity": "两步",
+  "note": "ZL4A-090；D11-ZA5第7题；现期比重：部分与整体都要先求和"
+ },
+ {
+  "key": "GK2025D-112（改编母题）",
+  "mid": "ZLM-GK2025D-1",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "D",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-091；D11-ZA5第8题；比重之比：分子之比×分母之比的倒数"
+ },
+ {
+  "key": "GK2025D-113（改编母题）",
+  "mid": "ZLM-GK2025D-1",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "C",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-092；D11-ZA5第9题；假设比重相同：整体求部分后求差"
+ },
+ {
+  "key": "GK2025D-115",
+  "mid": "ZLM-GK2025D-1",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "B",
+  "intensity": "两步",
+  "note": "ZL4A-093；D11-ZA5第10题；构成的饼图：先定最大与最小的两三块"
+ },
+ {
+  "key": "GK2023D-122",
+  "mid": "ZLM-GK2023D-4",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "B",
+  "intensity": "两步",
+  "note": "ZL4A-094；D11-ZA5第11题；平均数过线计数（含单位换算）"
+ },
+ {
+  "key": "GK2023D-123",
+  "mid": "ZLM-GK2023D-4",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "B",
+  "intensity": "两步",
+  "note": "ZL4A-095；D11-ZA5第12题；现期比重的区间判断（贴近边界）"
+ },
+ {
+  "key": "GK2023D-124",
+  "mid": "ZLM-GK2023D-4",
+  "kind": "原题",
+  "status": "已复算并与原参考答案一致",
+  "answer": "A",
+  "intensity": "两步",
+  "note": "ZL4A-096；D11-ZA5第13题；同一整体下两个比重之差：先减后除"
+ },
+ {
+  "key": "GK2023D-124（改编母题）",
+  "mid": "ZLM-GK2023D-4",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "B",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-097；D11-ZA5第14题；比重与平均数：额的占比对量的占比"
+ },
+ {
+  "key": "GK2023D-123（改编母题）",
+  "mid": "ZLM-GK2023D-4",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "D",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-098；D11-ZA5第15题；整体减部分后的平均数：其余部分的单价"
+ },
+ {
+  "key": "GK2026F-132",
+  "mid": "ZLM-GK2026F-4",
+  "kind": "原题",
+  "status": "已复算，无原参考答案（本卷无原解析，网友回忆版）",
+  "answer": "C",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-099；D11-ZA5第16题；混合增速：由两个部分的增速合成整体增速"
+ },
+ {
+  "key": "GK2026F-132（改编母题）",
+  "mid": "ZLM-GK2026F-4",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "A",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-100；D11-ZA5第17题；两期比重差：整体增速要先由两个部分合成"
+ },
+ {
+  "key": "GK2026F-134",
+  "mid": "ZLM-GK2026F-4",
+  "kind": "原题",
+  "status": "已复算，无原参考答案（本卷无原解析，网友回忆版）",
+  "answer": "B",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-101；D11-ZA5第18题；基期的“累计减当月”再求月均"
+ },
+ {
+  "key": "GK2026F-135（改编母题）",
+  "mid": "ZLM-GK2026F-4",
+  "kind": "改编",
+  "status": "改编已验唯一",
+  "answer": "A",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-102；D11-ZA5第19题；两期比重差：部分增速很大时公式的分母"
+ },
+ {
+  "key": "GK2026F-135",
+  "mid": "ZLM-GK2026F-4",
+  "kind": "原题",
+  "status": "已复算，无原参考答案（本卷无原解析，网友回忆版）",
+  "answer": "D",
+  "intensity": "多步或多口径",
+  "note": "ZL4A-103；D11-ZA5第20题；综合判断：部分求整体、增量比较、比重升降与过半"
+ },
+ {
+  "key": "GDXD2020ZH-100",
+  "mid": "ZLM-GDXD2020ZH-3",
+  "kind": "原题",
+  "status": "放弃",
+  "answer": null,
+  "intensity": null,
+  "note": "未入包（登记仍在ZL4A名下）：隔离：②“人民币兑美元平均汇率约为6.6”按通行说法成立（得C），原解析按“1元人民币兑0.15美元”判错（得B），两可；只作ZL4A-022、025两道改编的母题"
+ },
+ {
+  "key": "GDXD2020ZH-97",
+  "mid": "ZLM-GDXD2020ZH-3",
+  "kind": "原题",
+  "status": "放弃",
+  "answer": null,
+  "intensity": null,
+  "note": "未入包（登记仍在ZL4A名下）：一步题（8.8%−9.0%），不入包，作改编ZL4A-023的母题"
+ },
+ {
+  "key": "HB2022-129",
+  "mid": "ZLM-HB2022-4",
+  "kind": "原题",
+  "status": "放弃",
+  "answer": null,
+  "intensity": null,
+  "note": "未入包（登记仍在ZL4A名下）：未用：非比重两步题，原选项“%”实为百分点；未作母题"
+ },
+ {
+  "key": "GK2018D-113",
+  "mid": "ZLM-GK2018D-1",
+  "kind": "原题",
+  "status": "放弃",
+  "answer": null,
+  "intensity": null,
+  "note": "未入包（登记仍在ZL4A名下）：一步题，作改编母题"
+ },
+ {
+  "key": "GK2019D-122",
+  "mid": "ZLM-GK2019D-3",
+  "kind": "原题",
+  "status": "放弃",
+  "answer": null,
+  "intensity": null,
+  "note": "未入包（登记仍在ZL4A名下）：一步题，作改编母题"
+ },
+ {
+  "key": "GK2019D-123",
+  "mid": "ZLM-GK2019D-3",
+  "kind": "原题",
+  "status": "放弃",
+  "answer": null,
+  "intensity": null,
+  "note": "未入包（登记仍在ZL4A名下）：一步题，作改编母题"
+ },
+ {
+  "key": "GK2021F-117",
+  "mid": "ZLM-GK2021F-1",
+  "kind": "原题",
+  "status": "放弃",
+  "answer": null,
+  "intensity": null,
+  "note": "未入包（登记仍在ZL4A名下）：一步题，作改编母题"
+ },
+ {
+  "key": "GK2021F-118",
+  "mid": "ZLM-GK2021F-1",
+  "kind": "原题",
+  "status": "放弃",
+  "answer": null,
+  "intensity": null,
+  "note": "未入包（登记仍在ZL4A名下）：作改编母题"
+ },
+ {
+  "key": "JS2021A-116",
+  "mid": "ZLM-JS2021A-1",
+  "kind": "原题",
+  "status": "放弃",
+  "answer": null,
+  "intensity": null,
+  "note": "未入包（登记仍在ZL4A名下）：一步题，作改编母题"
+ },
+ {
+  "key": "GK2013-131",
+  "mid": "ZLM-GK2013-4",
+  "kind": "原题",
+  "status": "放弃",
+  "answer": null,
+  "intensity": null,
+  "note": "未入包（登记仍在ZL4A名下）：未用：增长率两步题，非比重；未作母题"
+ },
+ {
+  "key": "GK2013-133",
+  "mid": "ZLM-GK2013-4",
+  "kind": "原题",
+  "status": "放弃",
+  "answer": null,
+  "intensity": null,
+  "note": "未入包（登记仍在ZL4A名下）：读数题，作改编母题"
+ },
+ {
+  "key": "ZJ2023A-111",
+  "mid": "ZLM-ZJ2023A-1",
+  "kind": "原题",
+  "status": "放弃",
+  "answer": null,
+  "intensity": null,
+  "note": "未入包（登记仍在ZL4A名下）：读数题，作改编母题"
+ },
+ {
+  "key": "ZJ2023A-113",
+  "mid": "ZLM-ZJ2023A-1",
+  "kind": "原题",
+  "status": "放弃",
+  "answer": null,
+  "intensity": null,
+  "note": "未入包（登记仍在ZL4A名下）：加总相减，作改编母题"
+ },
+ {
+  "key": "GK2016F-131",
+  "mid": "ZLM-GK2016F-5",
+  "kind": "原题",
+  "status": "放弃",
+  "answer": null,
+  "intensity": null,
+  "note": "未入包（登记仍在ZL4A名下）：一步题，作改编母题"
+ },
+ {
+  "key": "GK2016F-133",
+  "mid": "ZLM-GK2016F-5",
+  "kind": "原题",
+  "status": "放弃",
+  "answer": null,
+  "intensity": null,
+  "note": "未入包（登记仍在ZL4A名下）：未用：季度拆分两步题，非比重；未作母题"
+ },
+ {
+  "key": "GD2023X-92",
+  "mid": "ZLM-GD2023X-2",
+  "kind": "原题",
+  "status": "放弃",
+  "answer": null,
+  "intensity": null,
+  "note": "未入包（登记仍在ZL4A名下）：读数题，作改编母题"
+ },
+ {
+  "key": "GK2024F-127",
+  "mid": "ZLM-GK2024F-3",
+  "kind": "原题",
+  "status": "放弃",
+  "answer": null,
+  "intensity": null,
+  "note": "未入包（登记仍在ZL4A名下）：未用：增速过线计数，非比重；未作母题"
+ },
+ {
+  "key": "ZJ2018A-126",
+  "mid": "ZLM-ZJ2018A-2",
+  "kind": "原题",
+  "status": "放弃",
+  "answer": null,
+  "intensity": null,
+  "note": "未入包（登记仍在ZL4A名下）：一步题，作改编母题"
+ },
+ {
+  "key": "ZJ2018A-127",
+  "mid": "ZLM-ZJ2018A-2",
+  "kind": "原题",
+  "status": "放弃",
+  "answer": null,
+  "intensity": null,
+  "note": "未入包（登记仍在ZL4A名下）：未用：由增收求增速；未作母题"
+ },
+ {
+  "key": "GD2017-91",
+  "mid": "ZLM-GD2017-2",
+  "kind": "原题",
+  "status": "放弃",
+  "answer": null,
+  "intensity": null,
+  "note": "未入包（登记仍在ZL4A名下）：一步题，作改编母题"
+ },
+ {
+  "key": "ZJ2015A-111",
+  "mid": "ZLM-ZJ2015A-1",
+  "kind": "原题",
+  "status": "放弃",
+  "answer": null,
+  "intensity": null,
+  "note": "未入包（登记仍在ZL4A名下）：一步题，作改编母题"
+ },
+ {
+  "key": "ZJ2015A-114",
+  "mid": "ZLM-ZJ2015A-1",
+  "kind": "原题",
+  "status": "放弃",
+  "answer": null,
+  "intensity": null,
+  "note": "未入包（登记仍在ZL4A名下）：作改编母题"
+ },
+ {
+  "key": "GD2023X-96",
+  "mid": "ZLM-GD2023X-3",
+  "kind": "原题",
+  "status": "放弃",
+  "answer": null,
+  "intensity": null,
+  "note": "未入包（登记仍在ZL4A名下）：作改编母题"
+ },
+ {
+  "key": "JS2021A-122",
+  "mid": "ZLM-JS2021A-2",
+  "kind": "原题",
+  "status": "放弃",
+  "answer": null,
+  "intensity": null,
+  "note": "未入包（登记仍在ZL4A名下）：作改编母题"
+ },
+ {
+  "key": "JS2021A-123",
+  "mid": "ZLM-JS2021A-2",
+  "kind": "原题",
+  "status": "放弃",
+  "answer": null,
+  "intensity": null,
+  "note": "未入包（登记仍在ZL4A名下）：未用：贷款增速比较，非比重；未作母题"
+ },
+ {
+  "key": "SZ2023-91",
+  "mid": "ZLM-SZ2023-2",
+  "kind": "原题",
+  "status": "放弃",
+  "answer": null,
+  "intensity": null,
+  "note": "未入包（登记仍在ZL4A名下）：作改编母题"
+ },
+ {
+  "key": "SZ2023-92",
+  "mid": "ZLM-SZ2023-2",
+  "kind": "原题",
+  "status": "放弃",
+  "answer": null,
+  "intensity": null,
+  "note": "未入包（登记仍在ZL4A名下）：未用：增速走势图；未作母题"
+ },
+ {
+  "key": "SZ2023-94",
+  "mid": "ZLM-SZ2023-2",
+  "kind": "原题",
+  "status": "放弃",
+  "answer": null,
+  "intensity": null,
+  "note": "未入包（登记仍在ZL4A名下）：作改编母题"
+ },
+ {
+  "key": "GK2025D-112",
+  "mid": "ZLM-GK2025D-1",
+  "kind": "原题",
+  "status": "放弃",
+  "answer": null,
+  "intensity": null,
+  "note": "未入包（登记仍在ZL4A名下）：作改编母题"
+ },
+ {
+  "key": "GK2025D-113",
+  "mid": "ZLM-GK2025D-1",
+  "kind": "原题",
+  "status": "放弃",
+  "answer": null,
+  "intensity": null,
+  "note": "未入包（登记仍在ZL4A名下）：作改编母题"
+ },
+ {
+  "key": "GK2023D-121",
+  "mid": "ZLM-GK2023D-4",
+  "kind": "原题",
+  "status": "放弃",
+  "answer": null,
+  "intensity": null,
+  "note": "未入包（登记仍在ZL4A名下）：未用：五数相加，一步；未作母题"
+ },
+ {
+  "key": "GK2023D-125",
+  "mid": "ZLM-GK2023D-4",
+  "kind": "原题",
+  "status": "放弃",
+  "answer": null,
+  "intensity": null,
+  "note": "未入包（登记仍在ZL4A名下）：未用：增量走势图，非比重；未作母题"
+ },
+ {
+  "key": "GK2026F-131",
+  "mid": "ZLM-GK2026F-4",
+  "kind": "原题",
+  "status": "放弃",
+  "answer": null,
+  "intensity": null,
+  "note": "未入包（登记仍在ZL4A名下）：隔离：14230.2÷3.2%≈44.5万亿（B），但3.2%四舍五入范围内可落到A/B/C，且本卷无原解析；未作母题"
+ },
+ {
+  "key": "GK2026F-133",
+  "mid": "ZLM-GK2026F-4",
+  "kind": "原题",
+  "status": "放弃",
+  "answer": null,
+  "intensity": null,
+  "note": "未入包（登记仍在ZL4A名下）：未用：饼图题，本卷无原解析，A、B两图差别很小；未作母题"
+ }
+]
