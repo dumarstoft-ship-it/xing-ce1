@@ -1,0 +1,9 @@
+YY4A: /home/user/work/out4/YY4A/questions.jsonl (54 questions, file time 11-10 00:00); YY4B: /home/user/work/out4/YY4B/questions.jsonl (66 questions, file time 11-10 00:00)
+[info: answer reappears in a YY4B stem of the same day] D10 YY4A-003 (D10-GX) “图景” in YY4B-021
+D10: YY4A 18, YY4B 22 (排序 4); merged orders R2 and R1 checked
+[info: answer reappears in a YY4B stem of the same day] D11 YY4A-020 (D11-GX) “固然” in YY4B-037
+D11: YY4A 18, YY4B 22 (排序 4); merged orders R2 and R1 checked
+[info: answer reappears in a YY4B stem of the same day] D12 YY4A-038 (D12-GX) “反映” in YY4B-056, YY4B-061
+[info: answer reappears in a YY4B stem of the same day] D12 YY4A-039 (D12-GX) “效率” in YY4B-048, YY4B-059
+D12: YY4A 18, YY4B 22 (排序 4); merged orders R2 and R1 checked
+problems: 0  info: 4

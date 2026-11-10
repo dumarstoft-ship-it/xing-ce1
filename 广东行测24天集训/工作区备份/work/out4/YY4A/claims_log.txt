@@ -1,0 +1,114 @@
+GD2023X-16	check: FREE	take: OK	D10选词-YY4A-001
+GD2019X-6	check: FREE	take: OK (dups: GD2019Z-5)	D10选词-YY4A-002
+GD2019Z-5	check: TAKEN by YY4A (GD2019X-6)	take: OK (dups: GD2019X-6)	D10选词-YY4A-002（同题他卷，随 GD2019X-6 一并登记）
+GD2017-2	check: FREE	take: OK	D10选词-YY4A-003
+HTML:nf20260212_10163099:q1	check: FREE	take: OK	D10选词-YY4A-004（HTML一文多题）
+HTML:nf20260212_10163099:q2	check: FREE	take: OK	D10选词-YY4A-005（HTML一文多题）
+HTML:nf20260212_10163099:q3	check: FREE	take: OK	D10语句-YY4A-006（HTML一文多题）
+HTML:nf20260212_10163099:q4	check: FREE	take: OK	D10选词-YY4A-007（HTML一文多题）
+HTML:nf20260212_10163099:q5	check: FREE	take: OK	D10选词-YY4A-008（HTML一文多题）
+HTML:20260814_30174907:q1	check: FREE	take: OK	D10语句-YY4A-009（HTML一文多题）
+HTML:20260814_30174907:q2	check: FREE	take: OK	D10选词-YY4A-010（HTML一文多题）
+HTML:20260814_30174907:q3	check: FREE	take: OK	D10语句-YY4A-011（HTML一文多题）
+HTML:20260814_30174907:q4	check: FREE	take: OK	D10选词-YY4A-012（HTML一文多题）
+HTML:20260814_30174907:q5	check: FREE	take: OK	D10语句-YY4A-013（HTML一文多题）
+HTML:20251222_30126193:q1	check: FREE	take: OK	D10选词-YY4A-014（HTML一文多题）
+HTML:20251222_30126193:q2	check: FREE	take: OK	D10语句-YY4A-015（HTML一文多题）
+HTML:20251222_30126193:q3	check: FREE	take: OK	D10选词-YY4A-016（HTML一文多题）
+HTML:20251222_30126193:q4	check: FREE	take: OK	D10选词-YY4A-017（HTML一文多题）
+HTML:20251222_30126193:q5	check: FREE	take: OK	D10语句-YY4A-018（HTML一文多题）
+GD2020X-4	check: FREE	take: OK	D11选词-YY4A-019
+GD2018-9	check: FREE	take: OK	D11选词-YY4A-020
+HTML:nf20261008_10182982:q1	check: FREE	take: OK	D11语句-YY4A-021（HTML一文多题）
+HTML:nf20261008_10182982:q2	check: FREE	take: OK	D11语句-YY4A-022（HTML一文多题）
+HTML:nf20261008_10182982:q3	check: FREE	take: OK	D11选词-YY4A-023（HTML一文多题）
+HTML:nf20261008_10182982:q4	check: FREE	take: OK	D11选词-YY4A-024（HTML一文多题）
+HTML:nf20261008_10182982:q5	check: FREE	take: OK	D11语句-YY4A-025（HTML一文多题）
+HTML:nf20261008_10182982:q6	check: FREE	take: OK	D11选词-YY4A-026（HTML一文多题）
+HTML:20260508_30155603:q1	check: FREE	take: OK	D11选词-YY4A-027（HTML一文多题）
+HTML:20260508_30155603:q2	check: FREE	take: OK	D11语句-YY4A-028（HTML一文多题）
+HTML:20260508_30155603:q3	check: FREE	take: OK	D11选词-YY4A-029（HTML一文多题）
+HTML:20260508_30155603:q4	check: FREE	take: OK	D11语句-YY4A-030（HTML一文多题）
+HTML:20260508_30155603:q5	check: FREE	take: OK	D11选词-YY4A-031（HTML一文多题）
+HTML:20260903_30178833:q1	check: FREE	take: OK	D11选词-YY4A-032（HTML一文多题）
+HTML:20260903_30178833:q2	check: FREE	take: OK	D11选词-YY4A-033（HTML一文多题）
+HTML:20260903_30178833:q3	check: FREE	take: OK	D11选词-YY4A-034（HTML一文多题）
+HTML:20260903_30178833:q4	check: FREE	take: OK	D11选词-YY4A-035（HTML一文多题）
+HTML:20260903_30178833:q5	check: FREE	take: OK	D11语句-YY4A-036（HTML一文多题）
+GD2020Z-1	check: FREE	take: OK	D12选词-YY4A-037
+GD2018-5	check: FREE	take: OK	D12选词-YY4A-038
+GD2017-5	check: FREE	take: OK	D12选词-YY4A-039
+HTML:20260817_30175302:q1	check: FREE	take: OK	D12选词-YY4A-040（HTML一文多题）
+HTML:20260817_30175302:q2	check: FREE	take: OK	D12语句-YY4A-041（HTML一文多题）
+HTML:20260817_30175302:q3	check: FREE	take: OK	D12语句-YY4A-042（HTML一文多题）
+HTML:20260817_30175302:q4	check: FREE	take: OK	D12语句-YY4A-043（HTML一文多题）
+HTML:20260817_30175302:q5	check: FREE	take: OK	D12选词-YY4A-044（HTML一文多题）
+HTML:nf20260911_10181143:q1	check: FREE	take: OK	D12选词-YY4A-045（HTML一文多题）
+HTML:nf20260911_10181143:q2	check: FREE	take: OK	D12选词-YY4A-046（HTML一文多题）
+HTML:nf20260911_10181143:q3	check: FREE	take: OK	D12选词-YY4A-047（HTML一文多题）
+HTML:nf20260911_10181143:q4	check: FREE	take: OK	D12语句-YY4A-048（HTML一文多题）
+HTML:20260126_30135630:q1	check: FREE	take: OK	D12选词-YY4A-049（HTML一文多题）
+HTML:20260126_30135630:q2	check: FREE	take: OK	D12选词-YY4A-050（HTML一文多题）
+HTML:20260126_30135630:q3	check: FREE	take: OK	D12选词-YY4A-051（HTML一文多题）
+HTML:20260126_30135630:q4	check: FREE	take: OK	D12选词-YY4A-052（HTML一文多题）
+HTML:20260126_30135630:q5	check: FREE	take: OK	D12语句-YY4A-053（HTML一文多题）
+HTML:20260126_30135630:q6	check: FREE	take: OK	D12语句-YY4A-054（HTML一文多题）
+conflicts: 0
+released 5 keys of HTML:20260817_30175302 (article swapped out of D12, see report)
+released 4 keys of HTML:nf20260911_10181143 only to re-register them with the final local ids (group moved from H2 back to H1)
+GD2023X-16	check: TAKEN by YY4A (GD2023X-16)	already held by YY4A, not taken again
+GD2019X-6	check: TAKEN by YY4A (GD2019X-6)	already held by YY4A, not taken again
+GD2019Z-5	check: TAKEN by YY4A (GD2019X-6)	already held by YY4A, not taken again
+GD2017-2	check: TAKEN by YY4A (GD2017-2)	already held by YY4A, not taken again
+HTML:nf20260212_10163099:q1	check: TAKEN by YY4A (HTML:nf20260212_10163099:q1)	already held by YY4A, not taken again
+HTML:nf20260212_10163099:q2	check: TAKEN by YY4A (HTML:nf20260212_10163099:q2)	already held by YY4A, not taken again
+HTML:nf20260212_10163099:q3	check: TAKEN by YY4A (HTML:nf20260212_10163099:q3)	already held by YY4A, not taken again
+HTML:nf20260212_10163099:q4	check: TAKEN by YY4A (HTML:nf20260212_10163099:q4)	already held by YY4A, not taken again
+HTML:nf20260212_10163099:q5	check: TAKEN by YY4A (HTML:nf20260212_10163099:q5)	already held by YY4A, not taken again
+HTML:20260814_30174907:q1	check: TAKEN by YY4A (HTML:20260814_30174907:q1)	already held by YY4A, not taken again
+HTML:20260814_30174907:q2	check: TAKEN by YY4A (HTML:20260814_30174907:q2)	already held by YY4A, not taken again
+HTML:20260814_30174907:q3	check: TAKEN by YY4A (HTML:20260814_30174907:q3)	already held by YY4A, not taken again
+HTML:20260814_30174907:q4	check: TAKEN by YY4A (HTML:20260814_30174907:q4)	already held by YY4A, not taken again
+HTML:20260814_30174907:q5	check: TAKEN by YY4A (HTML:20260814_30174907:q5)	already held by YY4A, not taken again
+HTML:20251222_30126193:q1	check: TAKEN by YY4A (HTML:20251222_30126193:q1)	already held by YY4A, not taken again
+HTML:20251222_30126193:q2	check: TAKEN by YY4A (HTML:20251222_30126193:q2)	already held by YY4A, not taken again
+HTML:20251222_30126193:q3	check: TAKEN by YY4A (HTML:20251222_30126193:q3)	already held by YY4A, not taken again
+HTML:20251222_30126193:q4	check: TAKEN by YY4A (HTML:20251222_30126193:q4)	already held by YY4A, not taken again
+HTML:20251222_30126193:q5	check: TAKEN by YY4A (HTML:20251222_30126193:q5)	already held by YY4A, not taken again
+GD2020X-4	check: TAKEN by YY4A (GD2020X-4)	already held by YY4A, not taken again
+GD2018-9	check: TAKEN by YY4A (GD2018-9)	already held by YY4A, not taken again
+HTML:nf20261008_10182982:q1	check: TAKEN by YY4A (HTML:nf20261008_10182982:q1)	already held by YY4A, not taken again
+HTML:nf20261008_10182982:q2	check: TAKEN by YY4A (HTML:nf20261008_10182982:q2)	already held by YY4A, not taken again
+HTML:nf20261008_10182982:q3	check: TAKEN by YY4A (HTML:nf20261008_10182982:q3)	already held by YY4A, not taken again
+HTML:nf20261008_10182982:q4	check: TAKEN by YY4A (HTML:nf20261008_10182982:q4)	already held by YY4A, not taken again
+HTML:nf20261008_10182982:q5	check: TAKEN by YY4A (HTML:nf20261008_10182982:q5)	already held by YY4A, not taken again
+HTML:nf20261008_10182982:q6	check: TAKEN by YY4A (HTML:nf20261008_10182982:q6)	already held by YY4A, not taken again
+HTML:20260508_30155603:q1	check: TAKEN by YY4A (HTML:20260508_30155603:q1)	already held by YY4A, not taken again
+HTML:20260508_30155603:q2	check: TAKEN by YY4A (HTML:20260508_30155603:q2)	already held by YY4A, not taken again
+HTML:20260508_30155603:q3	check: TAKEN by YY4A (HTML:20260508_30155603:q3)	already held by YY4A, not taken again
+HTML:20260508_30155603:q4	check: TAKEN by YY4A (HTML:20260508_30155603:q4)	already held by YY4A, not taken again
+HTML:20260508_30155603:q5	check: TAKEN by YY4A (HTML:20260508_30155603:q5)	already held by YY4A, not taken again
+HTML:20260903_30178833:q1	check: TAKEN by YY4A (HTML:20260903_30178833:q1)	already held by YY4A, not taken again
+HTML:20260903_30178833:q2	check: TAKEN by YY4A (HTML:20260903_30178833:q2)	already held by YY4A, not taken again
+HTML:20260903_30178833:q3	check: TAKEN by YY4A (HTML:20260903_30178833:q3)	already held by YY4A, not taken again
+HTML:20260903_30178833:q4	check: TAKEN by YY4A (HTML:20260903_30178833:q4)	already held by YY4A, not taken again
+HTML:20260903_30178833:q5	check: TAKEN by YY4A (HTML:20260903_30178833:q5)	already held by YY4A, not taken again
+GD2020Z-1	check: TAKEN by YY4A (GD2020Z-1)	already held by YY4A, not taken again
+GD2018-5	check: TAKEN by YY4A (GD2018-5)	already held by YY4A, not taken again
+GD2017-5	check: TAKEN by YY4A (GD2017-5)	already held by YY4A, not taken again
+HTML:nf20260911_10181143:q1	check: FREE	take: OK	D12选词-YY4A-040（HTML一文多题）
+HTML:nf20260911_10181143:q2	check: FREE	take: OK	D12选词-YY4A-041（HTML一文多题）
+HTML:nf20260911_10181143:q3	check: FREE	take: OK	D12选词-YY4A-042（HTML一文多题）
+HTML:nf20260911_10181143:q4	check: FREE	take: OK	D12语句-YY4A-043（HTML一文多题）
+HTML:20260422_30152558:q1	check: FREE	take: OK	D12选词-YY4A-044（HTML一文多题）
+HTML:20260422_30152558:q2	check: FREE	take: OK	D12语句-YY4A-045（HTML一文多题）
+HTML:20260422_30152558:q3	check: FREE	take: OK	D12选词-YY4A-046（HTML一文多题）
+HTML:20260422_30152558:q4	check: FREE	take: OK	D12语句-YY4A-047（HTML一文多题）
+HTML:20260422_30152558:q5	check: FREE	take: OK	D12语句-YY4A-048（HTML一文多题）
+HTML:20260126_30135630:q1	check: TAKEN by YY4A (HTML:20260126_30135630:q1)	already held by YY4A, not taken again
+HTML:20260126_30135630:q2	check: TAKEN by YY4A (HTML:20260126_30135630:q2)	already held by YY4A, not taken again
+HTML:20260126_30135630:q3	check: TAKEN by YY4A (HTML:20260126_30135630:q3)	already held by YY4A, not taken again
+HTML:20260126_30135630:q4	check: TAKEN by YY4A (HTML:20260126_30135630:q4)	already held by YY4A, not taken again
+HTML:20260126_30135630:q5	check: TAKEN by YY4A (HTML:20260126_30135630:q5)	already held by YY4A, not taken again
+HTML:20260126_30135630:q6	check: TAKEN by YY4A (HTML:20260126_30135630:q6)	already held by YY4A, not taken again
+conflicts: 0

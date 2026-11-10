@@ -1,0 +1,27 @@
+[leak] answers found in earlier stems of the same day: 0
+[info] earlier answers that reappear in LATER stems (not a leak): 1
+   ('D08', 'YY3A-020', '谱写', 'appears later in', 'YY3A-027')
+[info] answer text also visible elsewhere in its own stem: 0
+[info] answer text that appeared earlier the same day as an option of another question: 1
+   ('D08', 'YY3A-035', '立体', 'is an option of earlier', 'YY3A-023')
+[info] zero-width characters (copied verbatim from the source text) in stems/options: 1
+   ('YY3A-008', 'stem')
+[info] answers identical to a round-1/2 (D01-D06) answer: 0
+[dist] D07: A=3 B=6 C=5 D=4
+[dist] D08: A=4 B=4 C=5 D=5
+[dist] D09: A=4 B=8 C=3 D=3
+[dist] all: A=11 B=18 C=13 D=12
+[count] ('D07', '语句填空', 'HTML') 6
+[count] ('D07', '选词填空', 'GD') 3
+[count] ('D07', '选词填空', 'HTML') 9
+[count] ('D08', '语句填空', 'HTML') 6
+[count] ('D08', '选词填空', 'GD') 2
+[count] ('D08', '选词填空', 'HTML') 10
+[count] ('D09', '语句填空', 'GD') 1
+[count] ('D09', '语句填空', 'HTML') 5
+[count] ('D09', '选词填空', 'GD') 3
+[count] ('D09', '选词填空', 'HTML') 9
+[count] D07: 选词 12 语句 6
+[count] D08: 选词 12 语句 6
+[count] D09: 选词 12 语句 6
+[count] questions 54 articles 18

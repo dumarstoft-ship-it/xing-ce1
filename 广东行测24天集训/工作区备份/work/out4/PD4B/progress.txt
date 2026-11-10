@@ -1,0 +1,34 @@
+PD4B（D12 逻辑：论证＋结构与归纳）交接现场　2026-11-10 暂停时写
+
+一、做到哪里
+- 选题、独立判断、对照解析原文：已完成。58 题全部登记在 PD4B 名下（正式 45＋备选 BR 5＋冲突 BX 8），登记不要释放。GD2018-55 是从 PD3B release 后改登的。
+- 记录已写 35 条（B1 17、B2 18，字段齐全），存 questions.partial.jsonl。
+- 没写的记录：B3 10 条、BR 5 条、BX 8 条。答案、解析页码、论证要点、题面要补的地方都在 progress.json 的 note 里。
+- questions.jsonl 没生成；validate 没跑；报告没写。
+
+二、计划配比（45 题）
+- D12-B1 质疑与支持 17：削弱 11（其中选非 2、缓解担忧 1）＋加强 4（其中选非 1、找论据 1）＋论证缺陷 1＋评价 1。
+- D12-B2 前提与解释 18：解释 6（其中选非 4）＋前提 10＋削弱 2。
+- D12-B3 结构与归纳 10：结构 4（肯后、否前、论证链、连锁各 1）＋归纳 6。
+- 答案分布 A12 B10 C9 D14；难度 易 3、中 34、难 8。组内顺序见各记录 order，B3 的计划顺序写在 progress.json 的 note 开头。
+- 老卷 4 题（GD2014X-80、81，GK2016D-104、105），理由已写在 notes。18 题见于 42 天习题本第 4 天以后，名单在草稿目录 in42.json。
+
+三、还没做的事
+1. 写 B3、BR、BX 的记录（BX 要写“解析方／编者方／建议”，checked_answer 留 null，check_status 写“冲突待复核”，加 editor_lean）。
+2. 合成 questions.jsonl，跑 OUT_DIR=/home/user/work/out4 python3 /home/user/work/tools/validate.py PD4B。
+3. 跑 verify_d12.py（已通过；它会按 source_key 与 questions.jsonl 的 checked_answer 对照 6 题）。
+4. 写报告：各小类实数、来源构成、干扰项定性与解析不同的题、8 道冲突题、剩余供给、不同意见。
+
+四、文件在哪
+- 成品目录 /home/user/work/out4/PD4B/：questions.partial.jsonl、progress.json、verify_d12.py、assets/JS2024A-102_formula.png、assets/src/*.png（文字层有问题的原题截图，只供核对）。
+- 草稿目录 /tmp/claude-0/-home-user/1da31e5f-c9a0-5fe9-aa65-8db5d3863581/scratchpad/pd4b/：
+  build/g1.py、build/g2.py（B1、B2 的解法原稿）、build/build_partial.py（合成脚本，改一下就能出正式文件）；meta.json（每题的文件、页码、自动切出的题干选项）；blind.txt（看解析前写下的答案）；keys_main.txt、keys_br.txt、keys_bx.txt；in42.json；show.py（只出题面不出答案）、ans.py（打印解析原文）、loc.py（在 OCR 里定位扫描件页码）、ocr/（山东 2021、四川 2022 上、深圳 2023、国考 2021 副省、江苏 2017 解析的 OCR，只用来定位，读答案要看图）。
+
+五、坑
+1. 自动切出的题面不能直接用的题：JS2023A-94（圈码、下划线丢失）、SC2022S-76（选项并进题干）、JS2024A-102（公式是图）、HB2022-108 和 HB2025-107（β 丢失）、GD2022X-75（xing-ce1 版“看特”应为“看待”）、SD2022-72（对话要分行）。SD2021-72、JS2019A-98、JS2017A-95、GDXD2020SW-27 已在 g2.py 里改好。
+2. 扫描件解析（广东 2014—2019、山东 2021、四川 2022 上、国考 2021 副省、江苏 2017）没有文字层，页码是我出图读到的，记在 progress.json；answers/ 目录下没有这些卷的自动答案。
+3. 结构题按“条件句类型＋肯定否定落在哪一端＋确定还是或然”说明，不用前提先后顺序；verify_d12.py 的同形判定只允许变元改名、前提不计顺序。
+4. 浙江 2026 卷库内没有解析，不能进正式组。
+5. 不是盲解的题：GD2014X-81（先看到了答案）；blind.txt 里标 seen-in-PD2B-report 的十几题，字母在前几轮报告里出现过。
+6. 解释题的真题供给见底：本日用掉 6 道后，没争议的只剩 GD2021Z-61（＝GD2021X-56，两个题号要一起登记）、JS2018A-97、ZJ2023A-108（都偏易）和 GDXD2020SW-17（与 GD2018-60 同模板）。后面 4 个判断日按每天 6—8 道是排不出来的，要请主编和用户定：降配额还是少量改编。
+7. 结构题本日用 4 道。已读过解析、没用的：GD2022X-75（在 BR）、SC2024-77（D）、GDXD2019SW-1（A）、GDXD2019SW-48（C）、SZ2023-37（C，论证方法）、GD2022X-69（C，偏易）。

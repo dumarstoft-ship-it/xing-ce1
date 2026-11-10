@@ -1,0 +1,67 @@
+YY4B-001 GD2016X-27: claim=YY4B | GD2016Z-15[言语] c=1.0 n=175 claim=YY4B
+YY4B-002 GK2017F-37: claim=YY4B | GK2017D-44[言语] c=1.0 n=148 claim=YY4B
+YY4B-003 GK2014-44: claim=YY4B | no similar
+YY4B-004 GK2019D-59: claim=YY4B | no similar
+YY4B-005 GK2022X-54: claim=YY4B | no similar
+YY4B-006 GK2013-58: claim=YY4B | no similar
+YY4B-007 GD2015X-20: claim=YY4B | GD2015Z-20[言语] c=1.0 n=130 claim=YY4B
+YY4B-008 GK2018F-39: claim=YY4B | GK2018D-48[言语] c=1.0 n=192 claim=YY4B
+YY4B-009 GK2023D-55: claim=YY4B | GK2023X-55[言语] c=1.0 n=205 claim=YY4B
+YY4B-010 GK2015F-55: claim=YY4B | GK2015D-56[言语] c=1.0 n=157 claim=YY4B
+YY4B-011 GK2015F-43: claim=YY4B | GK2015D-42[言语] c=1.0 n=147 claim=YY4B
+YY4B-012 GK2018F-41: claim=YY4B | GK2018D-49[言语] c=1.0 n=176 claim=YY4B
+YY4B-013 GDXD2019XC-55: claim=YY4B | no similar
+YY4B-014 GK2021D-46: claim=YY4B | no similar
+YY4B-015 GK2014-59: claim=YY4B | no similar
+YY4B-016 GK2023F-39: claim=YY4B | GK2023F_xc-39[言语] c=1.0 n=178 claim=YY4B (同卷另一版本); GK2023X-43[言语] c=0.99 n=178 claim=YY4B
+YY4B-017 GK2016F-48: claim=YY4B | GK2016D-46[言语] c=1.0 n=150 claim=YY4B
+YY4B-018 GK2024F-41: claim=YY4B | GK2024D-54[言语] c=0.99 n=203 claim=YY4B; GK2024F_xc-41[言语] c=0.97 n=219 claim=YY4B (同卷另一版本)
+YY4B-019 GK2017D-50: claim=YY4B | GK2017F-42[言语] c=1.0 n=182 claim=YY4B
+YY4B-020 GK2015D-52: claim=YY4B | GK2015F-52[言语] c=1.0 n=141 claim=YY4B
+YY4B-021 SC2023-45: claim=YY4B | no similar
+YY4B-022 ZJ2021A-39: claim=YY4B | no similar
+YY4B-023 GD2016X-31: claim=YY4B | no similar
+YY4B-024 GK2017F-38: claim=YY4B | GK2017D-45[言语] c=1.0 n=208 claim=YY4B
+YY4B-025 GK2016F-60: claim=YY4B | GK2016D-60[言语] c=1.0 n=178 claim=YY4B
+YY4B-026 GK2018F-36: claim=YY4B | GK2018D-43[言语] c=1.0 n=167 claim=YY4B
+YY4B-027 GK2013-42: claim=YY4B | no similar
+YY4B-028 GK2020D-54: claim=YY4B | no similar
+YY4B-029 GD2014X-23: claim=YY4B | no similar
+YY4B-030 GK2021D-57: claim=YY4B | no similar
+YY4B-031 GK2015F-44: claim=YY4B | GK2015D-44[言语] c=1.0 n=185 claim=YY4B
+YY4B-032 GK2025X-65: claim=YY4B | no similar
+YY4B-033 GK2017F-46: claim=YY4B | GK2017D-55[言语] c=1.0 n=211 claim=YY4B
+YY4B-034 GK2014-42: claim=YY4B | no similar
+YY4B-035 GDXD2019XC-45: claim=YY4B | no similar
+YY4B-036 GK2021D-48: claim=YY4B | no similar
+YY4B-037 GK2023F-44: claim=YY4B | GK2023F_xc-44[言语] c=1.0 n=212 claim=YY4B (同卷另一版本)
+YY4B-038 GK2014-60: claim=YY4B | no similar
+YY4B-039 GK2018D-41: claim=YY4B | no similar
+YY4B-040 GK2013-60: claim=YY4B | no similar
+YY4B-041 GK2021F-43: claim=YY4B | GK2021F_xc-43[言语] c=1.0 n=276 claim=YY4B (同卷另一版本)
+YY4B-042 GK2014-50: claim=YY4B | no similar
+YY4B-043 HB2020-40: claim=YY4B | no similar
+YY4B-044 JS2020A-23: claim=YY4B | no similar
+YY4B-045 GD2016X-30: claim=YY4B | no similar
+YY4B-046 GK2018F-40: claim=YY4B | GK2018D-46[言语] c=1.0 n=222 claim=YY4B
+YY4B-047 GK2014-56: claim=YY4B | no similar
+YY4B-048 GK2016F-47: claim=YY4B | GK2016D-45[言语] c=1.0 n=206 claim=YY4B
+YY4B-049 GK2013-43: claim=YY4B | no similar
+YY4B-050 GK2024X-60: claim=YY4B | no similar
+YY4B-051 GD2014X-32: claim=YY4B | no similar
+YY4B-052 GK2015F-59: claim=YY4B | GK2015D-59[言语] c=1.0 n=146 claim=YY4B
+YY4B-053 GK2025D-52: claim=YY4B | no similar
+YY4B-054 GK2015F-46: claim=YY4B | GK2015D-46[言语] c=1.0 n=189 claim=YY4B
+YY4B-055 GK2018F-42: claim=YY4B | GK2018D-51[言语] c=1.0 n=172 claim=YY4B
+YY4B-056 GK2017F-49: claim=YY4B | GK2017D-59[言语] c=0.97 n=188 claim=YY4B
+YY4B-057 GDXD2020ZH-69: claim=YY4B | no similar
+YY4B-058 GK2018D-50: claim=YY4B | no similar
+YY4B-059 GK2018F-49: claim=YY4B | GK2018D-60[言语] c=1.0 n=211 claim=YY4B
+YY4B-060 GK2015F-48: claim=YY4B | GK2015D-48[言语] c=1.0 n=154 claim=YY4B
+YY4B-061 GK2016F-52: claim=YY4B | GK2016D-50[言语] c=1.0 n=210 claim=YY4B
+YY4B-062 GK2019D-55: claim=YY4B | no similar
+YY4B-063 GK2019D-50: claim=YY4B | GK2019F-43[言语] c=1.0 n=276 claim=YY4B
+YY4B-064 GK2015D-53: claim=YY4B | GK2015F-53[言语] c=1.0 n=203 claim=YY4B
+YY4B-065 SD2020-34: claim=YY4B | no similar
+YY4B-066 ZJ2018A-105: claim=YY4B | no similar
+items 66 problems 0

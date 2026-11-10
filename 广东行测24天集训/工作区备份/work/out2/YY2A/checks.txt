@@ -1,0 +1,29 @@
+[leak] answers found in earlier stems of the same day: 0
+[info] earlier answers that reappear in LATER stems (not a leak): 8
+   ('D04', 'YY2A-001', '深层', 'appears later in', 'YY2A-011')
+   ('D05', 'YY2A-021', '营造', 'appears later in', 'YY2A-025')
+   ('D05', 'YY2A-031', '支撑', 'appears later in', 'YY2A-032')
+   ('D05', 'YY2A-031', '支撑', 'appears later in', 'YY2A-033')
+   ('D05', 'YY2A-031', '倒逼', 'appears later in', 'YY2A-036')
+   ('D06', 'YY2A-037', '引领', 'appears later in', 'YY2A-042')
+   ('D06', 'YY2A-039', '担当', 'appears later in', 'YY2A-043')
+   ('D06', 'YY2A-039', '担当', 'appears later in', 'YY2A-045')
+[info] answer text also visible elsewhere in its own stem: 0
+[info] answers identical to a round-1 (D01-D03) answer: 2
+   ('YY2A-004', '致广大而尽精微', ['HTML:20251202_30117958:q5'])
+   ('YY2A-026', '脱颖而出', ['GD:GD2023Z-2'])
+[dist] D04: A=4 B=3 C=5 D=6
+[dist] D05: A=5 B=7 C=4 D=2
+[dist] D06: A=3 B=4 C=7 D=4
+[dist] all: A=12 B=14 C=16 D=12
+[count] ('D04', '语句填空', 'HTML') 6
+[count] ('D04', '选词填空', 'GD') 2
+[count] ('D04', '选词填空', 'HTML') 10
+[count] ('D05', '语句填空', 'GD') 1
+[count] ('D05', '语句填空', 'HTML') 5
+[count] ('D05', '选词填空', 'GD') 3
+[count] ('D05', '选词填空', 'HTML') 9
+[count] ('D06', '语句填空', 'HTML') 6
+[count] ('D06', '选词填空', 'GD') 3
+[count] ('D06', '选词填空', 'HTML') 9
+[count] questions 54 articles 18

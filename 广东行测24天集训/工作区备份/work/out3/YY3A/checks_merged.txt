@@ -1,0 +1,6 @@
+D07: YY3A 18, YY3B 22 (排序 4); merged orders R2 and R1 checked
+D08: YY3A 18, YY3B 22 (排序 4); merged orders R2 and R1 checked
+D09: YY3A 18, YY3B 22 (排序 4); merged orders R2 and R1 checked
+[info: same material, other day] YY3B YY3B-023 (D08) ~ ART-GD-GD2020X-2 (D07)
+[pair] GD2020Z-9 (passage contains the answer of YY3A GD2020X-2, D07): YY3B-023 D08
+problems: 0  info(other-day shared material): 1

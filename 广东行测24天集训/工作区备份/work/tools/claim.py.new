@@ -1,0 +1,82 @@
+"""Shared claim registry so parallel editors never use the same source question twice.
+  python3 claim.py check GK2024F-118            -> FREE / TAKEN by X
+  python3 claim.py take  GK2024F-118 ZL-A [note] -> OK / TAKEN by X
+  python3 claim.py list [owner]
+  python3 claim.py release <key> <owner>      -> removes that owner's claim of key (and its dup locks)
+Not-same overrides: /home/user/work/out/claims_notsame.jsonl lists pairs confirmed to be different items (figure questions with identical stems); they are excluded from dup locking.
+Keys: '<paper>-<qno>' for questions (paper = pid without _xc), 'MAT:<material id>' for materials (materials may be shared; claim is informational),
+'HTML:<article id>:<qid>' for HTML questions.
+Duplicate groups: taking a question also blocks every question in the same dup_group (same item printed in another paper).
+"""
+import sys, json, fcntl, os, time
+F = '/home/user/work/out/claims.jsonl'
+QI = '/home/user/work/qindex.jsonl'
+NS = '/home/user/work/out/claims_notsame.jsonl'
+def _nsmap():
+    m = {}
+    if os.path.exists(NS):
+        for l in open(NS):
+            if not l.strip(): continue
+            x = json.loads(l)
+            m.setdefault(x['a'], set()).add(x['b']); m.setdefault(x['b'], set()).add(x['a'])
+    return m
+NSMAP = _nsmap()
+def _pid(k):
+    return k.rsplit('-', 1)[0].replace('_xc', '') if '-' in k else k
+def not_same(k1, k2):
+    """True when k1 and k2 are known to be different items: declared in claims_notsame.jsonl,
+    or two different question numbers of the same paper (a paper never repeats a question)."""
+    if k1 == k2: return False
+    if k2 in NSMAP.get(k1, ()): return True
+    if not k1.startswith(('MAT:', 'HTML:')) and _pid(k1) == _pid(k2): return True
+    return False
+def dup_keys(key):
+    if key.startswith(('MAT:', 'HTML:')): return {key}
+    try:
+        pid, q = key.rsplit('-', 1); q = int(q)
+    except Exception: return {key}
+    g = None; rows = []
+    for l in open(QI):
+        r = json.loads(l); rows.append(r)
+        if r['pid'] == pid and r['qno'] == q: g = r.get('dup_group')
+    ks = {key}
+    if g:
+        for r in rows:
+            if r.get('dup_group') == g: ks.add(f"{r['pid']}-{r['qno']}")
+    # drop keys confirmed NOT to be the same item (figure questions with identical generic stems)
+    return {k for k in ks if not not_same(key, k)}
+def eff_dups(c):
+    """A stored claim's lock set, minus keys now known to be different items from that claim's own key."""
+    return {k for k in set(c.get('dups', [])) | {c['key']} if not not_same(c['key'], k)}
+def load():
+    if not os.path.exists(F): return []
+    return [json.loads(l) for l in open(F) if l.strip()]
+def main():
+    cmd = sys.argv[1]
+    if cmd == 'list':
+        own = sys.argv[2] if len(sys.argv) > 2 else None
+        for c in load():
+            if not own or c['owner'] == own: print(c)
+        return
+    key = sys.argv[2]
+    with open(F + '.lock', 'w') as lk:
+        fcntl.flock(lk, fcntl.LOCK_EX)
+        cl = load(); ks = dup_keys(key)
+        hit = [c for c in cl if c['key'] in ks or ks & eff_dups(c)]
+        if cmd == 'check':
+            print('TAKEN by ' + hit[0]['owner'] + ' (' + hit[0]['key'] + ')' if hit else 'FREE'); return
+        if cmd == 'release':
+            owner = sys.argv[3]
+            keep = [c for c in cl if not (c['owner'] == owner and c['key'] == key)]
+            n = len(cl) - len(keep)
+            with open(F, 'w') as fo:
+                for c in keep: fo.write(json.dumps(c, ensure_ascii=False) + '\n')
+            print(f'released {n}'); return
+        if cmd == 'take':
+            owner = sys.argv[3]; note = ' '.join(sys.argv[4:])
+            if hit and not key.startswith('MAT:') and not all(h['owner'] == owner for h in hit):
+                print('TAKEN by ' + hit[0]['owner'] + ' (' + hit[0]['key'] + ')'); return
+            with open(F, 'a') as fo:
+                fo.write(json.dumps(dict(key=key, owner=owner, note=note, dups=sorted(ks), t=time.time()), ensure_ascii=False) + '\n')
+            print('OK' + (' (dups: ' + ','.join(sorted(ks - {key})) + ')' if len(ks) > 1 else ''))
+main()

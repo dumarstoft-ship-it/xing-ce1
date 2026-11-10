@@ -1,0 +1,36 @@
+{
+ "GD2023X-16": [
+  "assets/src/GD2023X_q16.png",
+  "assets/src/GD2023X_xc_q16.png",
+  "assets/src/GD2023X_q16_ans.png"
+ ],
+ "GD2019X-6": [
+  "assets/src/GD2019X_q6.png",
+  "assets/src/GD2019Z_q5.png",
+  "assets/src/GD2019X_q6_ans.png"
+ ],
+ "GD2017-2": [
+  "assets/src/GD2017_q2.png",
+  "assets/src/GD2017_q2_ans.png"
+ ],
+ "GD2020X-4": [
+  "assets/src/GD2020X_q4.png",
+  "assets/src/GD2020X_q4_ans.png"
+ ],
+ "GD2018-9": [
+  "assets/src/GD2018_q9.png",
+  "assets/src/GD2018_q9_ans.png"
+ ],
+ "GD2020Z-1": [
+  "assets/src/GD2020Z_q1.png",
+  "assets/src/GD2020Z_q1_ans.png"
+ ],
+ "GD2018-5": [
+  "assets/src/GD2018_q5.png",
+  "assets/src/GD2018_q5_ans.png"
+ ],
+ "GD2017-5": [
+  "assets/src/GD2017_q5.png",
+  "assets/src/GD2017_q5_ans.png"
+ ]
+}

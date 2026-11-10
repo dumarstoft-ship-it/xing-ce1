@@ -1,0 +1,69 @@
+GD2016X-27 check: FREE; take: OK (dups: GD2016Z-15)
+GK2018F-39 check: FREE; take: OK (dups: GK2018D-48)
+GK2015F-44 check: FREE; take: OK (dups: GK2015D-44)
+GK2021D-48 check: FREE; take: OK
+GK2022X-54 check: FREE; take: OK
+GK2013-58 check: FREE; take: OK
+GD2015X-20 check: FREE; take: OK (dups: GD2015Z-20)
+GK2017F-38 check: FREE; take: OK (dups: GK2017D-45)
+GK2025X-65 check: FREE; take: OK
+GK2016F-47 check: FREE; take: OK (dups: GK2016D-45)
+GK2015F-43 check: FREE; take: OK (dups: GK2015D-42)
+GK2023F-44 check: FREE; take: OK
+GDXD2019XC-55 check: FREE; take: OK
+GK2018D-41 check: FREE; take: OK
+GK2017F-49 check: FREE; take: OK (dups: GK2017D-59)
+GK2024F-41 check: FREE; take: OK (dups: GK2024D-54)
+GK2013-60 check: FREE; take: OK
+GK2015F-59 check: FREE; take: OK (dups: GK2015D-59)
+GD2016X-31 check: FREE; take: OK
+GK2018F-40 check: FREE; take: OK (dups: GK2018D-46)
+GK2014-56 check: FREE; take: OK
+GK2017F-37 check: FREE; take: OK (dups: GK2017D-44)
+GK2023D-55 check: FREE; take: OK (dups: GK2023X-55)
+GK2019D-59 check: FREE; take: OK
+GD2014X-23 check: FREE; take: OK
+GK2024X-60 check: FREE; take: OK
+GK2014-44 check: FREE; take: OK
+GK2018F-36 check: FREE; take: OK (dups: GK2018D-43)
+GK2014-59 check: FREE; take: OK
+GK2018F-49 check: FREE; take: OK (dups: GK2018D-60)
+GDXD2020ZH-69 check: FREE; take: OK
+GK2013-43 check: FREE; take: OK
+GK2021D-46 check: FREE; take: OK
+GK2016F-48 check: FREE; take: OK (dups: GK2016D-46)
+GK2019D-55 check: FREE; take: OK
+GK2016F-52 check: FREE; take: OK (dups: GK2016D-50)
+GD2016X-30 check: FREE; take: OK
+GK2023F-39 check: FREE; take: OK (dups: GK2023X-43)
+GK2015F-48 check: FREE; take: OK (dups: GK2015D-48)
+GK2018F-42 check: FREE; take: OK (dups: GK2018D-51)
+GK2013-42 check: FREE; take: OK
+GK2020D-54 check: FREE; take: OK
+GD2014Z-49 check: FREE; take: OK
+GK2021D-57 check: FREE; take: OK
+GK2025D-52 check: FREE; take: OK
+GK2015F-46 check: FREE; take: OK (dups: GK2015D-46)
+GK2017F-46 check: FREE; take: OK (dups: GK2017D-55)
+GK2014-42 check: FREE; take: OK
+GDXD2019XC-45 check: FREE; take: OK
+GK2018D-50 check: FREE; take: OK
+GK2016F-60 check: FREE; take: OK (dups: GK2016D-60)
+GK2018F-41 check: FREE; take: OK (dups: GK2018D-49)
+GK2014-60 check: FREE; take: OK
+GK2015F-55 check: FREE; take: OK (dups: GK2015D-56)
+GK2017D-50 check: FREE; take: OK (dups: GK2017F-42)
+GK2015D-52 check: FREE; take: OK (dups: GK2015F-52)
+SC2023-45 check: FREE; take: OK
+ZJ2021A-39 check: FREE; take: OK
+GK2021F-43 check: FREE; take: OK
+GK2014-50 check: FREE; take: OK
+HB2020-40 check: FREE; take: OK
+JS2020A-23 check: FREE; take: OK
+GK2019D-50 check: FREE; take: OK (dups: GK2019F-43)
+GK2015D-53 check: FREE; take: OK (dups: GK2015F-53)
+SD2020-34 check: FREE; take: OK
+ZJ2018A-105 check: FREE; take: OK
+GD2014Z-49 release (改选更有区分度的 GD2014X-32；原解析正确率90%): released 1; check after release: FREE
+GD2014X-32 check: FREE; take: OK
+[final 11-10 00:01] claim.py list YY4B: 66 条；与 questions.jsonl 的 claim_key 一一对应；同题他卷 29 个键均在本人登记的 dups 内；无他人登记触及这些键

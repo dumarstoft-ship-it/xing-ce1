@@ -1,0 +1,48 @@
+PD4C（D12 判断：条件与必然性10＋组合单题10＋一拖n 10＋科推15）交接说明　　存档时间：2026-11-10，主编通知暂停、换人接手
+
+一、做到哪了
+1. 45 题已全部选定并登记：claim.py list PD4C 共 55 个键（含县级/乡镇、副省/地市、行政执法卷同题的联锁和手工补登），登记保持不动。
+   编号与顺序见 questions.partial.jsonl（PD4C-001～045）和 progress.json。
+   - D12-C1 条件与必然性 10：GK2016F-111 A、GD2021X-67 B、JS2021A-97 D、GK2017F-113 A、SD2023-68 D、HB2022-110 D、GD2021X-70 B、SD2021-71 D、JS2023A-103 D、SZ2020SW-80 A
+   - D12-C2 组合单题 10：GDXD2020SW-6 B、ZJ2021A-106 B、JS2019A-95 A、GD2014Z-85 D、GK2014-115 D、SC2025-84 C、ZJ2025A-104 D、SZ2024-43 C、SZ20201-33 C、SZ20201-38 D
+   - D12-C3 一拖n 10：GK2023D-106～110（B A C B C）、JS2017A-98～100（A A C）、JS2015A-69/70（B D）
+   - D12-S1 力电光 9：GD2016Z-68 C、GD2016Z-63 A、GD2020X-84 C、GD2018-64 D、GD2021Z-74 B、改编（母题GD2024-68）C、GD2021X-80 B、GD2019X-62 C、GD2022X-77 D
+   - D12-S2 化生地 6：GD2023Z-72 B、GD2020Z-70 A、GD2018-62 C、GD2023Z-84 B、GD2020Z-75 A（地理）、GD2020Z-67 D（地理）
+   答案分布 A10 B11 C11 D13；难度 易1、易-中3、中21、中-难10、难10（由 questions.partial.jsonl 统计）。
+2. 核验：/home/user/work/out4/PD4C/verify/verify_d12.py 已写完，python3 -I verify_d12.py 41 项全部通过（逻辑 30 题全部穷举、读法敏感的两种读法并排打印；科推 11 题复算，另 4 道知识题逐项说理无程序）。
+   脚本末尾的 crosscheck() 读 ../questions.jsonl——该文件还没生成，所以目前打印 “questions.jsonl not found, crosscheck skipped”。加 --reserve 可复跑 7 组没用上的备选。
+3. 原解析：44 道原题都已对过原解析且一致；扫描件解析（GD2014Z、GD2016Z、GD2018、GD2019X、GD2020X、GD2020Z、GD2021X、GD2021Z、JS2017A、SD2021）都出图读过，页码写在 partial 的 source.ans_page 和 notes 里。
+4. 题图：/home/user/work/out4/PD4C/assets/ 下 11 张（200dpi）：逻辑 2 张只截图形（015、018），科推 9 张（031、032、033、034、035、037、038、039、044）；其中 037（GD2021X-80）只截图形，因题干有订正。全部用 Read 看过。
+
+二、还没做的事（按顺序）
+1. questions.jsonl 没有生成。questions.partial.jsonl 里 45 条记录的字段基本齐全（含 brief_solution、selection_value、notes、difficulty、verify、set、original_stem/original_options），但：
+   a) 题干、选项是编者照原卷整理的，没有再跑“与文字层逐字比对”；扫描件录入的 3 题（GD2021X-67/70/80）和无索引的 GD2020X-84 请再对一次原图；
+   b) source.version_note 多数留空（改编题已填）；
+   c) partial_note 字段要删掉，verify 为 'qualitative' 的 4 题（040—043）按上一轮体例处理；
+   d) 改过措辞且有图的 2 题（018 SZ2024-43、037 GD2021X-80）还没生成 source_image（原卷整题截图），GPT 第 3 轮第 7 条要求存一份。
+2. 把 partial 复核后另存为 questions.jsonl，跑 python3 -I verify/verify_d12.py（crosscheck 会逐题对答案），再跑 OUT_DIR=/home/user/work/out4 python3 /home/user/work/tools/validate.py PD4C。
+3. 报告没写（任务书“报告要写”一节）。素材都在 progress.json 的 note 和 partial 的 notes 里。
+
+三、题面口径明示/订正的题（都已写进 partial，flags 已标）
+- 009 JS2023A-103：括注“真话＝两个分句都属实，假话＝至少一个分句不属实”（另一种粒度无解）；
+- 029/030 JS2015A-69/70：加“恰”（恰有两人）和“都”（两人都是…则两人都…）；四种读法组合里只有这一种两问都唯一且同原解析；
+- 010 SZ2020SW-80：“没说谁指控他”订正为“没说谁指控谁”（原解析的转述）；
+- 003 JS2021A-97：选项C“书法业”订正为“书法社”；018 SZ2024-43：补右括号；037 GD2021X-80：“电流变”订正为“电流表”；
+- 未改题面、只在解法首句写读法的：007 GD2021X-70（①按“恰买一种”）、020 SZ20201-38（“得分相同”按分值相同，同一次的读法无解）、016 SC2025-84（“留学的同学有”两种理解答案相同）。
+
+四、坑
+- GD2021X（县级2021，题本和解析都是扫描件）、GD2020X 第69题以后都不在 index/qindex 里：claim 不会自动联锁，validate 也查不到重复，靠手工。OCR 文本和 250dpi 页图在 /home/user/work/ocr/GD2021X_q、GD2021X_ans、GD2020X_ans 等目录。
+- 本轮新发现两道县级卷独有的科推（GD2021X-80、GD2020X-84）和两道逻辑（GD2021X-67、GD2021X-70），都已用在本日。
+- 改编题 036 的母题 GD2024-68 在 claims 里属于第1轮 PD-C（当时登记后被替换），没法再 take，只在 notes 里说明。
+- 易题数量卡在上限：易1＋易-中3。再换题时注意别超过 4 道。
+- 同模板提示：ZJ2025A-102 是 ZJ2021A-106 的换皮；SC2020S-85 与 GD2021X-70 同构；HB2024-102、SD2020-66 与 HB2022-110 同为“矛盾对＋包含对”的两真两假；GD2014X-84 与 JS2015A-69/70 同为属性计数。
+- 老卷：GK2016F-111、GD2014Z-85、GK2014-115 不在 2017—2026 范围，理由写在各自 notes。
+- 见于 42 天习题本第 4 天以后的题（用户只做过前三天）已在 notes 注明：001、004、006、010、012、013、016、017、020、021、022。
+- 没收/慎用清单在 progress.json 末尾（SZ2020SW-73 两项成立、SZ20201-39 读法敏感、GK2018D 一拖五两处读法、JS2025A-94、GD2017-69、GD2023Z-70、GD2020Z-66）。
+
+五、脚本和草稿在哪
+- 成品目录：/home/user/work/out4/PD4C/（assets/、verify/verify_d12.py、questions.partial.jsonl、progress.json、progress.txt）
+- 草稿目录：/tmp/claude-0/-home-user/1da31e5f-c9a0-5fe9-aa65-8db5d3863581/scratchpad/pd4c/
+  archive.py（本存档的生成脚本，45 题的题干/解法/notes 都在里面，可改成正式 build 脚本）、mk_assets.py（题图）、qa.py（看题＋解析原文）、extract.py/pool.py/show.py（上一轮工具）、
+  other_free.txt / sci_free.txt（存档时的候选池，未扣除本轮登记）、work/（gk2018d.py、gk2023d.py、sz38.py、sz33.py、js2015_models.py）、
+  ocr/（SD2021ans、SC2022Sans、SZ2023ans 三份扫描解析的整本 OCR＋200dpi 页图，后面几天可直接用）、r/ 和 a200/（看图用的临时截图）。
