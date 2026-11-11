@@ -1,0 +1,52 @@
+name: Planar source export 20261111
+on:
+  push:
+    branches: ['chatgpt/planar-200-20261111']
+    paths: ['.github/workflows/planar-source-export-20261111.yml']
+permissions:
+  contents: read
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Collect public source PDFs and inventory
+        run: |
+          python - <<'PY'
+          import concurrent.futures, hashlib, json, pathlib, re, time, urllib.request, urllib.parse
+          root=pathlib.Path('exam-source-export'); root.mkdir()
+          items=[]; seen=set()
+          def get(url):
+              req=urllib.request.Request(url,headers={'User-Agent':'exam-source-export'})
+              for attempt in range(4):
+                  try:
+                      with urllib.request.urlopen(req,timeout=90) as r:return r.read()
+                  except Exception:
+                      if attempt==3:raise
+                      time.sleep(2**attempt)
+          for repo in ['xing-ce1','xingce']:
+              data=json.loads(get('https://api.github.com/repos/dumarstoft-ship-it/'+repo+'/git/trees/main?recursive=1'))
+              (root/(repo+'-tree.json')).write_text(json.dumps(data,ensure_ascii=False),encoding='utf-8')
+              for e in data['tree']:
+                  path=e['path']; name=path.rsplit('/',1)[-1]
+                  if e['type']!='blob' or not name.lower().endswith('.pdf') or not re.match(r'202[3-6]',name):continue
+                  if not any(s in name for s in ['行测','思维能力']):continue
+                  if e['sha'] in seen:continue
+                  seen.add(e['sha']);items.append({'repo':repo,'path':path,'sha':e['sha'],'size':e.get('size',0)})
+          def download(x):
+              url='https://raw.githubusercontent.com/dumarstoft-ship-it/'+x['repo']+'/main/'+urllib.parse.quote(x['path'],safe='/')
+              data=get(url)
+              if not data.startswith(b'%PDF-'):raise ValueError('Not PDF: '+url)
+              local='pdf/'+x['repo']+'/'+x['path']; target=root/local;target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(data)
+              return dict(x,local=local,sha256=hashlib.sha256(data).hexdigest(),bytes=len(data))
+          with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
+              result=list(pool.map(download,items))
+          (root/'manifest.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
+          print('Exported',len(result),'source PDFs; bytes',sum(x['bytes'] for x in result))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: planar-exam-sources-2023-2026
+          path: exam-source-export/
+          compression-level: 1
+          retention-days: 3
