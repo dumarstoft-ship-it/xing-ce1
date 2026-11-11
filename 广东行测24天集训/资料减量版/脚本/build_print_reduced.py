@@ -18,7 +18,7 @@ def build(day, cfg, pass_label):
         parts.append(f'<h1 class="part{" first" if i == 0 else ""}">{H.escape(title)}</h1>' + B.md_to_html(p))
     cover = (f'<div class="cover"><div class="big">{H.escape(cfg["title"])}</div><div class="pass">题本 · {pass_label}</div>'
              f'<div class="meta">{VERSION}<br>只含题目，不含答案；答案见打包目录 README<br>'
-             f'{"第一遍做完后，第二遍在后面的“第二遍”题本上作答，两遍都做完再核对答案" if pass_label == "第一遍" else "第二遍在本册作答；两遍都做完再核对答案"}</div>'
+             f'{"资料第一遍做完即可核对答案。后面的“第二遍”是同一套题的空白副本，留给错题和没把握的题回做；要不要整本再做一遍，按你的时间定。言语只做一遍" if pass_label == "第一遍" else "同一套题的空白副本：回做错题和没把握的题，已掌握的不必重做；言语不用再做"}</div>'
              f'<div class="note">{H.escape(cfg["note"])}</div></div>')
     return f'<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><title>{day} 资料减量版 {pass_label}</title><style>{B.CSS}</style></head><body>{cover}{"".join(parts)}</body></html>'
 if __name__ == '__main__':
