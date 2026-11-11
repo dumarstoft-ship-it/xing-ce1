@@ -21,7 +21,7 @@
 
 ## 二、接手后按这个顺序做
 1. **恢复工作区**（换了会话才需要，见第三节）。
-2. **资料**：先看 ZL4A 的 `progress.txt`，把 39 道改编的第二遍独立复算做完（脚本在 `out4/ZL4A/bin_wip/`），补一份报告。然后 ZL4A 103 问＋ZL4B 36 问合成 135 问：多出的 4 问按强度从低到高删，每份材料至少留 4 问；两位登记的材料有同卷的（ZL4B 报告第 8 节第 11 条），排版时同卷材料不相邻。
+2. **资料**：先看 ZL4A 的 `progress.txt`，把 39 道改编的第二遍独立复算做完（脚本在 `out4/ZL4A/bin_wip/`），补一份报告。然后 ZL4A 103 问＋ZL4B 36 问合成**约 90 问**（用户 11-11 定：资料日每天约 90、最多 100，删减原则见 `资料减量版/README.md`）；优先整份材料删，改编题只需对保留的做第二遍复算；两位登记的材料有同卷的（ZL4B 报告第 8 节第 11 条），排版时同卷材料不相邻。
 3. **判断**：三位编者各自从 `progress.*` 和 `questions.partial.jsonl` 接着做，不要从头重选。任务书在 `out4/briefs/PD4A.md`、`PD4B.md`、`PD4C.md`。最省的办法是每位开一个编者，让它先读任务书和现场文件。
 4. **合并**：照 `build/assemble_cfg_r3.json` 写 `assemble_cfg_r4.json`（D10 只有言语；D11 资料＋言语；D12 判断＋言语），跑  
    `OUT_DIR=/home/user/work/out4 CFG_PATH=/home/user/work/build/assemble_cfg_r4.json python3 tools/assemble.py /home/user/work/build/pkg_r4`。  
