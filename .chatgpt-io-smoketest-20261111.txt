@@ -1,5 +1,0 @@
-ChatGPT GitHub connector I/O test
-Repository: dumarstoft-ship-it/xing-ce1
-Date: 2026-11-11
-UTF-8 check: 上传 / 下载 / 校验
-Update verification: version 2
