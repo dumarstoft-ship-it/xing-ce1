@@ -1,0 +1,37 @@
+[
+  {
+    "file": "先读我_范围与核对说明.md",
+    "bytes": 1798,
+    "sha256": "409d94c620bb863a32a619aeecb3fda5eb1e42613059e7a61fefe834c34954fb"
+  },
+  {
+    "file": "固定题型178题_题后即看答案.pdf",
+    "bytes": 4102033,
+    "sha256": "bedcca7f4197f6f83ab6069ea657d22b514fbe3afeabed72b2dc4714023ab150"
+  },
+  {
+    "file": "平面图推200题_答案数据.json",
+    "bytes": 275520,
+    "sha256": "dad95a5a71b96030b94f2f49a58a4a816ba5932cc39fe2eb57c73969232d0a25"
+  },
+  {
+    "file": "平面图推200题_题后即看答案.pdf",
+    "bytes": 24159870,
+    "sha256": "1dd71de3da199fd7e2ce215d533de3bc03171e2a3b16ab8387163aa14a460c91"
+  },
+  {
+    "file": "平面图推200题_题源索引.md",
+    "bytes": 184048,
+    "sha256": "d46dab7202f86e535af4189697bb8e22b608c9e2dbbd1fa1a692f5dd05318a6f"
+  },
+  {
+    "file": "平面图推规律手册_文字版.md",
+    "bytes": 20140,
+    "sha256": "876f89bd31a7dad7f1b8e61aced14d03a81b4cd8d4aa3c44ccadc0a9bc016f52"
+  },
+  {
+    "file": "平面图推规律手册_特征到推理.pdf",
+    "bytes": 272173,
+    "sha256": "c60ead6503b2f7a6085eabaa72a3125691fd3bada5d0f6a80cd08280fa7b1f0b"
+  }
+]
