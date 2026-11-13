@@ -1,0 +1,54 @@
+name: Collect planar 201-400 source PDFs
+on:
+  push:
+    branches: ['chatgpt/planar201-400-sources-20261113']
+    paths: ['.github/workflows/planar201-400-sources-20261113.yml']
+permissions:
+  contents: read
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Export original exam sources with hashes
+        run: |
+          python - <<'PY'
+          import concurrent.futures, hashlib, json, pathlib, re, time, urllib.request, urllib.parse
+          root=pathlib.Path('source-export');root.mkdir()
+          items=[];seen=set()
+          def get(url):
+              req=urllib.request.Request(url,headers={'User-Agent':'planar-source-export'})
+              for attempt in range(4):
+                  try:
+                      with urllib.request.urlopen(req,timeout=90) as r:return r.read()
+                  except Exception:
+                      if attempt==3:raise
+                      time.sleep(2**attempt)
+          for repo in ['xing-ce1','xingce']:
+              tree=json.loads(get('https://api.github.com/repos/dumarstoft-ship-it/'+repo+'/git/trees/main?recursive=1'))
+              (root/(repo+'-tree.json')).write_text(json.dumps(tree,ensure_ascii=False),encoding='utf-8')
+              assert not tree.get('truncated'), 'Truncated source inventory'
+              for e in tree['tree']:
+                  p=e['path'];n=p.rsplit('/',1)[-1]
+                  if e['type']!='blob' or not n.lower().endswith('.pdf') or not re.match(r'(201[7-9]|202[01])',n):continue
+                  if not any(s in n for s in ['行测','思维能力','综合行政']):continue
+                  if any(s in p for s in ['习题本','集训','模考']):continue
+                  if e['sha'] in seen:continue
+                  seen.add(e['sha']);items.append({'repo':repo,'path':p,'sha':e['sha'],'size':e.get('size',0),'source_commit':tree['sha']})
+          def download(x):
+              url='https://raw.githubusercontent.com/dumarstoft-ship-it/'+x['repo']+'/'+x['source_commit']+'/'+urllib.parse.quote(x['path'],safe='/')
+              b=get(url)
+              assert b.startswith(b'%PDF-'), x['path']
+              assert hashlib.sha1(b'blob '+str(len(b)).encode()+b'\0'+b).hexdigest()==x['sha'], x['path']
+              local='pdf/'+x['repo']+'/'+x['path'];dst=root/local;dst.parent.mkdir(parents=True,exist_ok=True);dst.write_bytes(b)
+              return dict(x,local=local,sha256=hashlib.sha256(b).hexdigest(),bytes=len(b))
+          with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:out=list(pool.map(download,items))
+          (root/'manifest.json').write_text(json.dumps(out,ensure_ascii=False,indent=2),encoding='utf-8')
+          print('Exported source PDFs:',len(out),'bytes:',sum(x['bytes'] for x in out))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: planar201-400-source-pdfs
+          path: source-export/
+          compression-level: 1
+          retention-days: 3
