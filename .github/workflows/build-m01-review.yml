@@ -1,0 +1,50 @@
+name: Build M01 review draft
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '广东行测18套模拟/M01/build_m01.py'
+permissions:
+  contents: write
+concurrency:
+  group: m01-review-build
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /README.md
+            /广东行测18套模拟/
+            /江浙行测_AI题库/
+            /模考/2026下半年广东卷_16-33季_AI可读/
+            /国考/言语理解/2016-2025/
+            /广东/行测/2022-2026/
+            /学习资料/政治理论常识/
+            /广东行测24天集训/
+            /习题本/图推/
+            !*.pdf
+            !*.zip
+      - name: Build and verify the selected paper
+        run: python3 '广东行测18套模拟/M01/build_m01.py'
+      - name: Commit generated draft without overwriting source banks
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- '广东行测18套模拟/M01'
+          if ! git diff --cached --quiet; then
+            git commit -m '生成M01选编题本、答案、来源登记与核验报告'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: M01-review-draft
+          path: 广东行测18套模拟/M01/
+          retention-days: 7
