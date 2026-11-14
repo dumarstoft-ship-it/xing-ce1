@@ -5,6 +5,10 @@ on:
     branches: [main]
     paths:
       - '广东行测18套模拟/M01/build_m01.py'
+      - '广东行测18套模拟/M01/build_m01_core.py'
+      - '广东行测18套模拟/M01/complete_science.py'
+      - '广东行测18套模拟/M01/science_selection_v2.json'
+      - '广东行测18套模拟/M01/核验记录/check_science.py'
 permissions:
   contents: write
 concurrency:
@@ -33,13 +37,13 @@ jobs:
             !*.zip
       - name: Build and verify the selected paper
         run: python3 '广东行测18套模拟/M01/build_m01.py'
-      - name: Commit generated draft without overwriting source banks
+      - name: Commit generated draft and complete use ledger
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- '广东行测18套模拟/M01'
+          git add -- '广东行测18套模拟'
           if ! git diff --cached --quiet; then
-            git commit -m '生成M01选编题本、答案、来源登记与核验报告'
+            git commit -m '补齐M01科学推理并生成90题待审稿，核验原85题未改动'
             git pull --rebase origin main
             git push origin HEAD:main
           fi
