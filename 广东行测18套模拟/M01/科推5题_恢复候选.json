@@ -1,0 +1,74 @@
+{
+  "paper_id": "M01",
+  "status": "RECONSTRUCTED_CANDIDATES_NOT_PRIOR_EXACT_SELECTION",
+  "prior_selection_recovered": false,
+  "not_applied_to_official_M01_selection": true,
+  "checked_on": "2026-11-15",
+  "reason": "上一条对话中曾确认已选并已核验5道，但未提交GitHub且历史记录未提供源ID。这五道是根据当时已知覆盖领域与遗传系谱图线索重新独立核对的替代候选，不应声称与原选题完全相同。",
+  "source_file": "模考/2026下半年广东卷_16-33季_AI可读/科学推理_90题.jsonl",
+  "source_answers_available": false,
+  "external_review": "pending",
+  "print_artwork": "遗传系谱图与微观反应图需由源库关系表还原为原貌",
+  "rows": [
+    {
+      "number": 66,
+      "source_id": "gd-mock-2026h2-s25-q67",
+      "season": 25,
+      "original_number": 67,
+      "answer": "D",
+      "topic": "物理·叠放物体的受力与摩擦",
+      "analysis": "物块A匀速向左，相对B滑动，A水平方向受向左5N拉力和向右5N摩擦力，并受重力与支持力，共4力。B受重力、地面支持力、A对B的压力、A对B的向左摩擦力5N、F1向右10N和地面向左摩擦力5N，共6力。故C的地面摩擦力5N小于10N正确，而D称A对B的摩擦力小于5N错误；选D。",
+      "selection_reason": "两个物体、两层接触面与静/动摩擦的联合判定；用受力平衡和作用反作用排除靠感觉数力的误判。",
+      "image": "assets/s25_p17_i00.png",
+      "check": "已实际查看受力图、方向并独立列出A/B受力"
+    },
+    {
+      "number": 67,
+      "source_id": "gd-mock-2026h2-s20-q67",
+      "season": 20,
+      "original_number": 67,
+      "answer": "B",
+      "topic": "物理·光敏与温敏混联电路",
+      "analysis": "R1与R2串联构成上支路，与R3、R4并联构成的下支路并联；V跨接上支路，测电源电压，不随温度改变。降温使R2减小，上支路电流变大，A1读总电流因此增大，故B正确。增强光照使R3减小，下支路电流和A2增大，不能选C；减弱光照则A1、A2减小，D亦错。",
+      "selection_reason": "必须先还原支路结构，再分别判断敏感元件变化对电表的影响；兼具科学推理与电路读图价值。",
+      "image": "assets/s20_p18_i08.png",
+      "check": "已实际查看原电路图，核对电压表和两个电流表接线位置"
+    },
+    {
+      "number": 68,
+      "source_id": "gd-mock-2026h2-s26-q68",
+      "season": 26,
+      "original_number": 68,
+      "answer": "C",
+      "topic": "化学·微观粒子守恒与反应物计数",
+      "analysis": "图示为1个甲烷分子与3个氧气分子置于反应前，反应后为1个二氧化碳、2个水、1个未反应的氧气。真正参与反应的是1份甲烷和2份氧气，故B的1:3不成立；分子种类、数目改变，A错误；未反应氧气不是生成物，D错误。碳的氧化态由-4升至+4、氧由0降至-2，属于氧化还原，选C。",
+      "selection_reason": "区分图中出现的粒子和真正参与反应的粒子，避免把反应前过量氧气误计成化学计量数；检验守恒与氧化还原本质。",
+      "image": null,
+      "check": "已核对源库保留的完整反应前后粒子关系表；重建图形仍待打印前完成"
+    },
+    {
+      "number": 69,
+      "source_id": "gd-mock-2026h2-s25-q70",
+      "season": 25,
+      "original_number": 70,
+      "answer": "C",
+      "topic": "生物·伴X隐性遗传系谱",
+      "analysis": "4号是患病女儿，因此父亲1号必患病、正常母亲2号必为携带者；3号可能患病也可能为携带者，A、B均错。正常男性5号与患病女性6号所生女儿7号一定从父亲得到正常X、从母亲得到致病X，故7号一定不患病但为携带者；C正确。3号的基因型不一定与7号相同，D错误。",
+      "selection_reason": "需要把表现型、基因型与父母到子女的X染色体传递结合分析，而非背诵某个典型比率；题源原图转关系表，须重绘系谱图。",
+      "image": null,
+      "check": "已核对系谱表中1—7号的性别、患病情况和亲子关系；原始图尚未重绘，打印前必须处理"
+    },
+    {
+      "number": 70,
+      "source_id": "gd-mock-2026h2-s21-q70",
+      "season": 21,
+      "original_number": 70,
+      "answer": "D",
+      "topic": "地理·南极点经纬网投影与东西半球",
+      "analysis": "图为以南极为中心的经纬网，四点都位于南半球，①正确。A在50°S、90°W，D在70°S、135°E，④正确。A、B在西半球，C、D在东半球，⑥正确。D处纬度70°S属于高纬/极地区，不是全为中纬或温带，②③错；⑤错置B与C的经纬度。故①④⑥为真，选D。",
+      "selection_reason": "读极地投影并同时检查纬度带、东西半球、经度方向和多命题逻辑；不是只背地理概念。",
+      "image": "assets/s21_p18_i12.png",
+      "check": "已实际查看极地图，核对圆环纬线、经度基准及箭头方向"
+    }
+  ]
+}
