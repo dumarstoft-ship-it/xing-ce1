@@ -7564,5 +7564,1217 @@
     "pdf_page": 23,
     "season": 33,
     "source_image_sha256": "49a03a1845b7bda61db354efdbe991a517967344d888a49acf75f142e9171e6e"
+  },
+  {
+    "asset_id": "s16_p17_i00",
+    "type": "formula_text",
+    "text": "$\\frac{1}{20000}$",
+    "pdf_page": 17,
+    "season": 16,
+    "source_image_sha256": "ac1f1d7a9f0d0f0749a8b116b5f9206262733ec2927923a97a27f1cb68f3a376"
+  },
+  {
+    "asset_id": "s16_p17_i01",
+    "type": "formula_text",
+    "text": "$\\frac{1}{2}$",
+    "pdf_page": 17,
+    "season": 16,
+    "source_image_sha256": "4e7eea631c7ef17882cddd1f98c92ddc75da56e946a4e79a65c2006c1abdf74a"
+  },
+  {
+    "asset_id": "s16_p17_i02",
+    "type": "formula_text",
+    "text": "$\\frac{1}{4}$",
+    "pdf_page": 17,
+    "season": 16,
+    "source_image_sha256": "cae670cf6ff0a3c7eb34091efcc33533d5104c5e23ab8c2b2b5c10f973856d6c"
+  },
+  {
+    "asset_id": "s16_p17_i03",
+    "type": "formula_text",
+    "text": "$\\frac{1}{20000}$",
+    "pdf_page": 17,
+    "season": 16,
+    "source_image_sha256": "ac1f1d7a9f0d0f0749a8b116b5f9206262733ec2927923a97a27f1cb68f3a376"
+  },
+  {
+    "asset_id": "s16_p17_i04",
+    "type": "formula_text",
+    "text": "$\\frac{1}{40000}$",
+    "pdf_page": 17,
+    "season": 16,
+    "source_image_sha256": "4bfbc86010caea17a336c275164075d76638f5381f314a7fdc07b4aee7084f84"
+  },
+  {
+    "asset_id": "s17_p17_i00",
+    "type": "formula_text",
+    "text": "$L_1$",
+    "pdf_page": 17,
+    "season": 17,
+    "source_image_sha256": "bc4d01de2ff19da88537b39d88738a319a8064adc48b92e9fac567ed6ee250d5"
+  },
+  {
+    "asset_id": "s17_p17_i01",
+    "type": "formula_text",
+    "text": "$L_2$",
+    "pdf_page": 17,
+    "season": 17,
+    "source_image_sha256": "a624bce120933da97939b6fd3ca73be521a19c63fdfe5a3e6b4b50fcf096c327"
+  },
+  {
+    "asset_id": "s17_p17_i02",
+    "type": "formula_text",
+    "text": "$L_3$",
+    "pdf_page": 17,
+    "season": 17,
+    "source_image_sha256": "4aedf4bc0a8e49943116159e027c6ca92967c560663be7f8a40ffd910c878627"
+  },
+  {
+    "asset_id": "s17_p17_i03",
+    "type": "formula_text",
+    "text": "$A_1$",
+    "pdf_page": 17,
+    "season": 17,
+    "source_image_sha256": "50dd2666d6a10a10f83e7cb115326e16a47add149304f38380e00a1bb0f40544"
+  },
+  {
+    "asset_id": "s17_p17_i04",
+    "type": "formula_text",
+    "text": "$A_2$",
+    "pdf_page": 17,
+    "season": 17,
+    "source_image_sha256": "e4eda605897f8bf61cae718c86ddbf8e3186a5b0a0c5574d06308cfd3be40ca5"
+  },
+  {
+    "asset_id": "s17_p17_i05",
+    "type": "formula_text",
+    "text": "$A_3$",
+    "pdf_page": 17,
+    "season": 17,
+    "source_image_sha256": "5db6d4aaba12c0676695c65307df9f8272875661dfd4844125d614bb38aead07"
+  },
+  {
+    "asset_id": "s17_p17_i06",
+    "type": "formula_text",
+    "text": "$V_1$",
+    "pdf_page": 17,
+    "season": 17,
+    "source_image_sha256": "07f4a2151ed4a35cfad85d68128a930afd0986f6b60079c45fc20b66cd50f633"
+  },
+  {
+    "asset_id": "s17_p17_i07",
+    "type": "formula_text",
+    "text": "$V_2$",
+    "pdf_page": 17,
+    "season": 17,
+    "source_image_sha256": "6d2d302275017fa4860f78c3d3005fda5b5bb846862336b9d86a4735e6d27028"
+  },
+  {
+    "asset_id": "s17_p17_i08",
+    "type": "formula_text",
+    "text": "$V_3$",
+    "pdf_page": 17,
+    "season": 17,
+    "source_image_sha256": "4f806a93c762d884131909db5b163a693f7ebba0100a042931822efc360d2bd3"
+  },
+  {
+    "asset_id": "s17_p18_i01",
+    "type": "formula_text",
+    "text": "$V_3$",
+    "pdf_page": 18,
+    "season": 17,
+    "source_image_sha256": "4f806a93c762d884131909db5b163a693f7ebba0100a042931822efc360d2bd3"
+  },
+  {
+    "asset_id": "s17_p18_i02",
+    "type": "formula_text",
+    "text": "$A_3$",
+    "pdf_page": 18,
+    "season": 17,
+    "source_image_sha256": "5db6d4aaba12c0676695c65307df9f8272875661dfd4844125d614bb38aead07"
+  },
+  {
+    "asset_id": "s17_p18_i03",
+    "type": "formula_text",
+    "text": "$A_1$",
+    "pdf_page": 18,
+    "season": 17,
+    "source_image_sha256": "50dd2666d6a10a10f83e7cb115326e16a47add149304f38380e00a1bb0f40544"
+  },
+  {
+    "asset_id": "s17_p18_i04",
+    "type": "formula_text",
+    "text": "$A_2$",
+    "pdf_page": 18,
+    "season": 17,
+    "source_image_sha256": "e4eda605897f8bf61cae718c86ddbf8e3186a5b0a0c5574d06308cfd3be40ca5"
+  },
+  {
+    "asset_id": "s17_p18_i05",
+    "type": "formula_text",
+    "text": "$V_1$",
+    "pdf_page": 18,
+    "season": 17,
+    "source_image_sha256": "07f4a2151ed4a35cfad85d68128a930afd0986f6b60079c45fc20b66cd50f633"
+  },
+  {
+    "asset_id": "s17_p18_i06",
+    "type": "formula_text",
+    "text": "$V_2$",
+    "pdf_page": 18,
+    "season": 17,
+    "source_image_sha256": "6d2d302275017fa4860f78c3d3005fda5b5bb846862336b9d86a4735e6d27028"
+  },
+  {
+    "asset_id": "s17_p19_i00",
+    "type": "table",
+    "title": "夏至日白昼时长与黑夜时长的差值",
+    "headers": [
+      "地方",
+      "甲",
+      "乙",
+      "丙",
+      "丁"
+    ],
+    "rows": [
+      [
+        "差值/h",
+        "1.5",
+        "0",
+        "3",
+        "−2"
+      ]
+    ],
+    "notes": "差值方向依题干：白昼时长减黑夜时长。",
+    "pdf_page": 19,
+    "season": 17,
+    "source_image_sha256": "fc50b5aa9b0d7a5564449687966147b78abd7e7ae662beb118af6e9bee157d46"
+  },
+  {
+    "asset_id": "s20_p18_i00",
+    "type": "formula_text",
+    "text": "$R_1$",
+    "pdf_page": 18,
+    "season": 20,
+    "source_image_sha256": "169609b9ad1f13dd5c155ed6cfdf10fb7ad583bffca7763243afc15e7126c61b"
+  },
+  {
+    "asset_id": "s20_p18_i01",
+    "type": "formula_text",
+    "text": "$R_4$",
+    "pdf_page": 18,
+    "season": 20,
+    "source_image_sha256": "e03234e6fbab43946208b584c1b55f487b218cb727b83c1408b33f6cf0a2f2bb"
+  },
+  {
+    "asset_id": "s20_p18_i02",
+    "type": "formula_text",
+    "text": "$R_2$",
+    "pdf_page": 18,
+    "season": 20,
+    "source_image_sha256": "9b9046af31ea287ba9c1a4d90741d490d27d895988bc5f34c99d972b31fecd01"
+  },
+  {
+    "asset_id": "s20_p18_i03",
+    "type": "formula_text",
+    "text": "$R_2$",
+    "pdf_page": 18,
+    "season": 20,
+    "source_image_sha256": "9b9046af31ea287ba9c1a4d90741d490d27d895988bc5f34c99d972b31fecd01"
+  },
+  {
+    "asset_id": "s20_p18_i04",
+    "type": "formula_text",
+    "text": "$R_3$",
+    "pdf_page": 18,
+    "season": 20,
+    "source_image_sha256": "13a54ab14e54c4360a6cbd7bc1a60c5851ebd9eccc7d62a1968fa57b4972e52b"
+  },
+  {
+    "asset_id": "s20_p18_i05",
+    "type": "formula_text",
+    "text": "$R_3$",
+    "pdf_page": 18,
+    "season": 20,
+    "source_image_sha256": "13a54ab14e54c4360a6cbd7bc1a60c5851ebd9eccc7d62a1968fa57b4972e52b"
+  },
+  {
+    "asset_id": "s20_p18_i06",
+    "type": "formula_text",
+    "text": "$A_1$",
+    "pdf_page": 18,
+    "season": 20,
+    "source_image_sha256": "50dd2666d6a10a10f83e7cb115326e16a47add149304f38380e00a1bb0f40544"
+  },
+  {
+    "asset_id": "s20_p18_i07",
+    "type": "formula_text",
+    "text": "$A_2$",
+    "pdf_page": 18,
+    "season": 20,
+    "source_image_sha256": "2448a5df056924055e3f71c0ff8db7aaccf7ebda4a8f649c54baa188c2c64db8"
+  },
+  {
+    "asset_id": "s20_p18_i09",
+    "type": "formula_text",
+    "text": "$A_1$",
+    "pdf_page": 18,
+    "season": 20,
+    "source_image_sha256": "50dd2666d6a10a10f83e7cb115326e16a47add149304f38380e00a1bb0f40544"
+  },
+  {
+    "asset_id": "s20_p18_i10",
+    "type": "formula_text",
+    "text": "$A_1$",
+    "pdf_page": 18,
+    "season": 20,
+    "source_image_sha256": "50dd2666d6a10a10f83e7cb115326e16a47add149304f38380e00a1bb0f40544"
+  },
+  {
+    "asset_id": "s20_p18_i11",
+    "type": "formula_text",
+    "text": "$A_1$",
+    "pdf_page": 18,
+    "season": 20,
+    "source_image_sha256": "50dd2666d6a10a10f83e7cb115326e16a47add149304f38380e00a1bb0f40544"
+  },
+  {
+    "asset_id": "s20_p18_i12",
+    "type": "formula_text",
+    "text": "$A_2$",
+    "pdf_page": 18,
+    "season": 20,
+    "source_image_sha256": "2448a5df056924055e3f71c0ff8db7aaccf7ebda4a8f649c54baa188c2c64db8"
+  },
+  {
+    "asset_id": "s20_p18_i13",
+    "type": "formula_text",
+    "text": "$A_1$",
+    "pdf_page": 18,
+    "season": 20,
+    "source_image_sha256": "50dd2666d6a10a10f83e7cb115326e16a47add149304f38380e00a1bb0f40544"
+  },
+  {
+    "asset_id": "s20_p18_i14",
+    "type": "formula_text",
+    "text": "$A_2$",
+    "pdf_page": 18,
+    "season": 20,
+    "source_image_sha256": "2448a5df056924055e3f71c0ff8db7aaccf7ebda4a8f649c54baa188c2c64db8"
+  },
+  {
+    "asset_id": "s20_p18_i15",
+    "type": "formula_text",
+    "text": "$\\mathrm{CuSO_4}$",
+    "pdf_page": 18,
+    "season": 20,
+    "source_image_sha256": "23edd0a8075bfe13f9fa23b0f9d2163a7dcdba52e351725e9260dcb703d19ba3"
+  },
+  {
+    "asset_id": "s20_p18_i16",
+    "type": "formula_text",
+    "text": "$\\mathrm{AgNO_3}$",
+    "pdf_page": 18,
+    "season": 20,
+    "source_image_sha256": "5256568ae8d7038f4f41e6a043714cb7b5a08b4def57ca1ef24be8f37566987b"
+  },
+  {
+    "asset_id": "s20_p18_i17",
+    "type": "formula_text",
+    "text": "$\\mathrm{CuSO_4}$",
+    "pdf_page": 18,
+    "season": 20,
+    "source_image_sha256": "23edd0a8075bfe13f9fa23b0f9d2163a7dcdba52e351725e9260dcb703d19ba3"
+  },
+  {
+    "asset_id": "s21_p17_i00",
+    "type": "formula_text",
+    "text": "$t_A$",
+    "pdf_page": 17,
+    "season": 21,
+    "source_image_sha256": "2aa8b8d9898fea6d569d670ebdf61e832bb7d6cd5719afc4ce9d9b16cf78eac6"
+  },
+  {
+    "asset_id": "s21_p17_i01",
+    "type": "formula_text",
+    "text": "$t_B$",
+    "pdf_page": 17,
+    "season": 21,
+    "source_image_sha256": "a8acf8e619049054b2e20b2a3a68977848b06bd0dec46b0684d093aed96abd57"
+  },
+  {
+    "asset_id": "s21_p17_i02",
+    "type": "formula_text",
+    "text": "$v_A$",
+    "pdf_page": 17,
+    "season": 21,
+    "source_image_sha256": "2e9aa37c9cc0d11215041e829d6b3a2ebc4dc15c53a2d704c06f5a290d16f233"
+  },
+  {
+    "asset_id": "s21_p17_i03",
+    "type": "formula_text",
+    "text": "$v_B$",
+    "pdf_page": 17,
+    "season": 21,
+    "source_image_sha256": "52b5be41baa505be8bf97378f878e2c5b9ec3ec0a86855e9aa164dce84b37aec"
+  },
+  {
+    "asset_id": "s21_p17_i05",
+    "type": "formula_text",
+    "text": "$t_A > t_B$",
+    "pdf_page": 17,
+    "season": 21,
+    "source_image_sha256": "7512bb1d76dd0316d39fbc7d1980a5b867948d0278ed77fee4bffa07bbca4f6c"
+  },
+  {
+    "asset_id": "s21_p17_i06",
+    "type": "formula_text",
+    "text": "$t_A < t_B$",
+    "pdf_page": 17,
+    "season": 21,
+    "source_image_sha256": "85b39d49106c7e99c84e498f4916effaebadd6ce57cb6b066e4b4845baef8042"
+  },
+  {
+    "asset_id": "s21_p17_i07",
+    "type": "formula_text",
+    "text": "$v_A > v_B$",
+    "pdf_page": 17,
+    "season": 21,
+    "source_image_sha256": "5a7f00006f6b4c6c2e4b351ee73792ec2756b0ff9af7aa91bde7221c14768fcb"
+  },
+  {
+    "asset_id": "s21_p17_i08",
+    "type": "formula_text",
+    "text": "$v_A < v_B$",
+    "pdf_page": 17,
+    "season": 21,
+    "source_image_sha256": "449482b579418cc7188e107f4b0d1d51d6f0567b1a4fd5be0ae101b4464d220c"
+  },
+  {
+    "asset_id": "s21_p17_i09",
+    "type": "formula_text",
+    "text": "$l_1$",
+    "pdf_page": 17,
+    "season": 21,
+    "source_image_sha256": "dea017c4938c0c0c314fb2cc20a3492706eba07af5532d028eb1f827fcdffa1f"
+  },
+  {
+    "asset_id": "s21_p17_i10",
+    "type": "formula_text",
+    "text": "$l_2$",
+    "pdf_page": 17,
+    "season": 21,
+    "source_image_sha256": "5f3d48c459176a01cc6cb5960267d5d6dc428b189205e2194c87d43fb20238ad"
+  },
+  {
+    "asset_id": "s21_p18_i01",
+    "type": "formula_text",
+    "text": "$\\frac{mg}{l_1-l_2}$",
+    "pdf_page": 18,
+    "season": 21,
+    "source_image_sha256": "75a0e2f197202d70531cb872b1cf78339ab5833a0574f5add6fdf8295f43c0f7"
+  },
+  {
+    "asset_id": "s21_p18_i02",
+    "type": "formula_text",
+    "text": "$3l_1-2l_2$",
+    "pdf_page": 18,
+    "season": 21,
+    "source_image_sha256": "cce68a9b585fa49853d290b2d67af1749820487016ada9168f2a21b32d9f992d"
+  },
+  {
+    "asset_id": "s21_p18_i03",
+    "type": "formula_text",
+    "text": "$\\frac{mg}{l_1-l_2}$",
+    "pdf_page": 18,
+    "season": 21,
+    "source_image_sha256": "75a0e2f197202d70531cb872b1cf78339ab5833a0574f5add6fdf8295f43c0f7"
+  },
+  {
+    "asset_id": "s21_p18_i04",
+    "type": "formula_text",
+    "text": "$3l_2-2l_1$",
+    "pdf_page": 18,
+    "season": 21,
+    "source_image_sha256": "220563c339fe4203e4cea2daa80eb1dd1346f6a13ade93ff76fcb851e6879fa0"
+  },
+  {
+    "asset_id": "s21_p18_i05",
+    "type": "formula_text",
+    "text": "$\\frac{2mg}{l_1-l_2}$",
+    "pdf_page": 18,
+    "season": 21,
+    "source_image_sha256": "3cf43426a8e2bfb2918b3d3b2c00ea894ac157681e50afef4df1fb04d81671e8"
+  },
+  {
+    "asset_id": "s21_p18_i06",
+    "type": "formula_text",
+    "text": "$3l_1-2l_2$",
+    "pdf_page": 18,
+    "season": 21,
+    "source_image_sha256": "cce68a9b585fa49853d290b2d67af1749820487016ada9168f2a21b32d9f992d"
+  },
+  {
+    "asset_id": "s21_p18_i07",
+    "type": "formula_text",
+    "text": "$\\frac{2mg}{l_1-l_2}$",
+    "pdf_page": 18,
+    "season": 21,
+    "source_image_sha256": "3cf43426a8e2bfb2918b3d3b2c00ea894ac157681e50afef4df1fb04d81671e8"
+  },
+  {
+    "asset_id": "s21_p18_i08",
+    "type": "formula_text",
+    "text": "$3l_2-2l_1$",
+    "pdf_page": 18,
+    "season": 21,
+    "source_image_sha256": "220563c339fe4203e4cea2daa80eb1dd1346f6a13ade93ff76fcb851e6879fa0"
+  },
+  {
+    "asset_id": "s21_p18_i09",
+    "type": "formula_text",
+    "text": "$\\mathrm{Co_3O_4}$",
+    "pdf_page": 18,
+    "season": 21,
+    "source_image_sha256": "816655c6d16064df46be98de748119b0a971aa57c552a6350ed7b61fe35dcbfa"
+  },
+  {
+    "asset_id": "s21_p18_i10",
+    "type": "formula_text",
+    "text": "$\\mathrm{Co_3O_4}$",
+    "pdf_page": 18,
+    "season": 21,
+    "source_image_sha256": "816655c6d16064df46be98de748119b0a971aa57c552a6350ed7b61fe35dcbfa"
+  },
+  {
+    "asset_id": "s21_p18_i11",
+    "type": "formula_text",
+    "text": "$\\mathrm{Co_3O_4}$",
+    "pdf_page": 18,
+    "season": 21,
+    "source_image_sha256": "816655c6d16064df46be98de748119b0a971aa57c552a6350ed7b61fe35dcbfa"
+  },
+  {
+    "asset_id": "s21_p19_i00",
+    "type": "formula_text",
+    "text": "$50^{\\circ}\\mathrm{S}$",
+    "pdf_page": 19,
+    "season": 21,
+    "source_image_sha256": "1b1cdc54ba8588cf3f35fa029d10b7ae279515fcca346eb7d3210734a959d6e9"
+  },
+  {
+    "asset_id": "s21_p19_i01",
+    "type": "formula_text",
+    "text": "$90^{\\circ}\\mathrm{W}$",
+    "pdf_page": 19,
+    "season": 21,
+    "source_image_sha256": "f390d598ecf329dbb671f11ea6461ae46e04c7d31fa9fa68ad995f26918378a0"
+  },
+  {
+    "asset_id": "s21_p19_i02",
+    "type": "formula_text",
+    "text": "$70^{\\circ}\\mathrm{S}$",
+    "pdf_page": 19,
+    "season": 21,
+    "source_image_sha256": "6bc0fc7fde004476141afabb6c64777533d1484e83a887fc1ebea19007fdb618"
+  },
+  {
+    "asset_id": "s21_p19_i03",
+    "type": "formula_text",
+    "text": "$135^{\\circ}\\mathrm{E}$",
+    "pdf_page": 19,
+    "season": 21,
+    "source_image_sha256": "2fd741ec30359a5c047580967147d7de54276d2994d7c52a75e1f2d30bbec98d"
+  },
+  {
+    "asset_id": "s21_p19_i04",
+    "type": "formula_text",
+    "text": "$60^{\\circ}\\mathrm{S}$",
+    "pdf_page": 19,
+    "season": 21,
+    "source_image_sha256": "582075ea502c4f87b2b22130b98470d23e861700946a78e7fc7edf28810e9a0a"
+  },
+  {
+    "asset_id": "s21_p19_i05",
+    "type": "formula_text",
+    "text": "$45^{\\circ}\\mathrm{E}$",
+    "pdf_page": 19,
+    "season": 21,
+    "source_image_sha256": "8a40ae6b36eb3e918694b68e7728f75f469429d4acf91fb49aee2c5a4ac553a1"
+  },
+  {
+    "asset_id": "s21_p19_i06",
+    "type": "formula_text",
+    "text": "$70^{\\circ}\\mathrm{S}$",
+    "pdf_page": 19,
+    "season": 21,
+    "source_image_sha256": "6bc0fc7fde004476141afabb6c64777533d1484e83a887fc1ebea19007fdb618"
+  },
+  {
+    "asset_id": "s21_p19_i07",
+    "type": "formula_text",
+    "text": "$45^{\\circ}\\mathrm{W}$",
+    "pdf_page": 19,
+    "season": 21,
+    "source_image_sha256": "f3ba6abf48693514e3c8096e1ad60f374b004324b3a6faaa4925f781b94ac645"
+  },
+  {
+    "asset_id": "s22_p18_i00",
+    "type": "formula_text",
+    "text": "$2\\mathrm{H_2O_2}=2\\mathrm{H_2O}+\\mathrm{O_2}\\uparrow$",
+    "pdf_page": 18,
+    "season": 22,
+    "source_image_sha256": "2a820696d5b4f8b66cec6df3418188777aec38ae19916f9def8cc100ae58a4e8"
+  },
+  {
+    "asset_id": "s22_p18_i01",
+    "type": "formula_text",
+    "text": "$\\mathrm{MnO_2}$",
+    "pdf_page": 18,
+    "season": 22,
+    "source_image_sha256": "d2785ff7751fc83a548d626131c16094b6580fb543f19e72f4275469ad28e9ce"
+  },
+  {
+    "asset_id": "s22_p18_i02",
+    "type": "formula_text",
+    "text": "$66.5^{\\circ}$",
+    "pdf_page": 18,
+    "season": 22,
+    "source_image_sha256": "8b018f9b96354803f81193826e72cb8d37bebfd46d21d0967526355d682cf638"
+  },
+  {
+    "asset_id": "s22_p18_i03",
+    "type": "formula_text",
+    "text": "$90^{\\circ}$",
+    "pdf_page": 18,
+    "season": 22,
+    "source_image_sha256": "fb4881260f0da975ff253dc20c2ef0ee6868e2ccf57ccbb5e88829b13fd75b7d"
+  },
+  {
+    "asset_id": "s23_p18_i01",
+    "type": "formula_text",
+    "text": "$R_1$",
+    "pdf_page": 18,
+    "season": 23,
+    "source_image_sha256": "169609b9ad1f13dd5c155ed6cfdf10fb7ad583bffca7763243afc15e7126c61b"
+  },
+  {
+    "asset_id": "s23_p18_i02",
+    "type": "formula_text",
+    "text": "$R_2$",
+    "pdf_page": 18,
+    "season": 23,
+    "source_image_sha256": "9b9046af31ea287ba9c1a4d90741d490d27d895988bc5f34c99d972b31fecd01"
+  },
+  {
+    "asset_id": "s23_p19_i01",
+    "type": "formula_text",
+    "text": "$S_1$",
+    "pdf_page": 19,
+    "season": 23,
+    "source_image_sha256": "e328cf8645ecb2cefa4bcbc42a27f9b77cfa1b4c3d707675d883df3555ee9605"
+  },
+  {
+    "asset_id": "s23_p19_i02",
+    "type": "formula_text",
+    "text": "$R_2$",
+    "pdf_page": 19,
+    "season": 23,
+    "source_image_sha256": "9b9046af31ea287ba9c1a4d90741d490d27d895988bc5f34c99d972b31fecd01"
+  },
+  {
+    "asset_id": "s23_p19_i03",
+    "type": "formula_text",
+    "text": "$S_2$",
+    "pdf_page": 19,
+    "season": 23,
+    "source_image_sha256": "81368b598fd6d395f0a7d1dac7959584512592863bd007cd64caec19d26e1faf"
+  },
+  {
+    "asset_id": "s23_p19_i04",
+    "type": "formula_text",
+    "text": "$R_2$",
+    "pdf_page": 19,
+    "season": 23,
+    "source_image_sha256": "9b9046af31ea287ba9c1a4d90741d490d27d895988bc5f34c99d972b31fecd01"
+  },
+  {
+    "asset_id": "s23_p19_i05",
+    "type": "formula_text",
+    "text": "$S_1$",
+    "pdf_page": 19,
+    "season": 23,
+    "source_image_sha256": "e328cf8645ecb2cefa4bcbc42a27f9b77cfa1b4c3d707675d883df3555ee9605"
+  },
+  {
+    "asset_id": "s23_p19_i06",
+    "type": "formula_text",
+    "text": "$S_3$",
+    "pdf_page": 19,
+    "season": 23,
+    "source_image_sha256": "43144713934d312b1316825c70054b61400c7e7b6a3821cb870213aec0e9c4bd"
+  },
+  {
+    "asset_id": "s23_p19_i07",
+    "type": "formula_text",
+    "text": "$R_2$",
+    "pdf_page": 19,
+    "season": 23,
+    "source_image_sha256": "9b9046af31ea287ba9c1a4d90741d490d27d895988bc5f34c99d972b31fecd01"
+  },
+  {
+    "asset_id": "s23_p19_i08",
+    "type": "formula_text",
+    "text": "$S_2$",
+    "pdf_page": 19,
+    "season": 23,
+    "source_image_sha256": "81368b598fd6d395f0a7d1dac7959584512592863bd007cd64caec19d26e1faf"
+  },
+  {
+    "asset_id": "s23_p19_i09",
+    "type": "formula_text",
+    "text": "$S_3$",
+    "pdf_page": 19,
+    "season": 23,
+    "source_image_sha256": "43144713934d312b1316825c70054b61400c7e7b6a3821cb870213aec0e9c4bd"
+  },
+  {
+    "asset_id": "s23_p19_i10",
+    "type": "formula_text",
+    "text": "$R_2$",
+    "pdf_page": 19,
+    "season": 23,
+    "source_image_sha256": "9b9046af31ea287ba9c1a4d90741d490d27d895988bc5f34c99d972b31fecd01"
+  },
+  {
+    "asset_id": "s24_p17_i00",
+    "type": "formula_text",
+    "text": "$R_1$",
+    "pdf_page": 17,
+    "season": 24,
+    "source_image_sha256": "169609b9ad1f13dd5c155ed6cfdf10fb7ad583bffca7763243afc15e7126c61b"
+  },
+  {
+    "asset_id": "s24_p17_i01",
+    "type": "formula_text",
+    "text": "$R_2$",
+    "pdf_page": 17,
+    "season": 24,
+    "source_image_sha256": "9b9046af31ea287ba9c1a4d90741d490d27d895988bc5f34c99d972b31fecd01"
+  },
+  {
+    "asset_id": "s24_p17_i02",
+    "type": "formula_text",
+    "text": "$S_1$",
+    "pdf_page": 17,
+    "season": 24,
+    "source_image_sha256": "e328cf8645ecb2cefa4bcbc42a27f9b77cfa1b4c3d707675d883df3555ee9605"
+  },
+  {
+    "asset_id": "s24_p17_i03",
+    "type": "formula_text",
+    "text": "$S_2$",
+    "pdf_page": 17,
+    "season": 24,
+    "source_image_sha256": "81368b598fd6d395f0a7d1dac7959584512592863bd007cd64caec19d26e1faf"
+  },
+  {
+    "asset_id": "s24_p17_i04",
+    "type": "formula_text",
+    "text": "$S_3$",
+    "pdf_page": 17,
+    "season": 24,
+    "source_image_sha256": "43144713934d312b1316825c70054b61400c7e7b6a3821cb870213aec0e9c4bd"
+  },
+  {
+    "asset_id": "s24_p17_i06",
+    "type": "formula_text",
+    "text": "$S_2$",
+    "pdf_page": 17,
+    "season": 24,
+    "source_image_sha256": "81368b598fd6d395f0a7d1dac7959584512592863bd007cd64caec19d26e1faf"
+  },
+  {
+    "asset_id": "s24_p17_i07",
+    "type": "formula_text",
+    "text": "$S_3$",
+    "pdf_page": 17,
+    "season": 24,
+    "source_image_sha256": "43144713934d312b1316825c70054b61400c7e7b6a3821cb870213aec0e9c4bd"
+  },
+  {
+    "asset_id": "s24_p17_i08",
+    "type": "formula_text",
+    "text": "$S_2$",
+    "pdf_page": 17,
+    "season": 24,
+    "source_image_sha256": "81368b598fd6d395f0a7d1dac7959584512592863bd007cd64caec19d26e1faf"
+  },
+  {
+    "asset_id": "s24_p17_i09",
+    "type": "formula_text",
+    "text": "$S_3$",
+    "pdf_page": 17,
+    "season": 24,
+    "source_image_sha256": "43144713934d312b1316825c70054b61400c7e7b6a3821cb870213aec0e9c4bd"
+  },
+  {
+    "asset_id": "s24_p17_i10",
+    "type": "table",
+    "title": "物质的 pH 值",
+    "headers": [
+      "物质",
+      "洁厕剂",
+      "柠檬汁",
+      "西瓜汁",
+      "鸡蛋清",
+      "草木灰水",
+      "84消毒液"
+    ],
+    "rows": [
+      [
+        "pH值",
+        "2",
+        "3",
+        "6",
+        "8",
+        "11",
+        "12"
+      ]
+    ],
+    "notes": "保持原图物质顺序和给定数值。",
+    "pdf_page": 17,
+    "season": 24,
+    "source_image_sha256": "733a6ad52e980b80f882f36dd5ba43d4be123cc8ad44bc14629b4b99b7633892"
+  },
+  {
+    "asset_id": "s24_p17_i11",
+    "type": "table",
+    "title": "食物网的全部箭头关系",
+    "headers": [
+      "箭头起点",
+      "箭头终点"
+    ],
+    "rows": [
+      [
+        "茶树",
+        "茶毛虫"
+      ],
+      [
+        "茶树",
+        "茶尺蠖"
+      ],
+      [
+        "草",
+        "茶毛虫"
+      ],
+      [
+        "草",
+        "茶尺蠖"
+      ],
+      [
+        "茶毛虫",
+        "蛙"
+      ],
+      [
+        "茶毛虫",
+        "蜘蛛"
+      ],
+      [
+        "茶尺蠖",
+        "蜘蛛"
+      ],
+      [
+        "茶尺蠖",
+        "鸟"
+      ],
+      [
+        "蜘蛛",
+        "蛙"
+      ],
+      [
+        "蛙",
+        "蛇"
+      ],
+      [
+        "鸟",
+        "蛇"
+      ]
+    ],
+    "notes": "每行表示原图的一条有向箭头（起点 → 终点），完整保留 8 个节点及 11 条连接；行的先后顺序不代表食物链顺序。",
+    "pdf_page": 17,
+    "season": 24,
+    "source_image_sha256": "213fc6917f946224e1db9865b4b82fbecd70a9a442b5ed1b7823ece4801f3302"
+  },
+  {
+    "asset_id": "s25_p16_i00",
+    "type": "formula_text",
+    "text": "$F_1$",
+    "pdf_page": 16,
+    "season": 25,
+    "source_image_sha256": "d1c530fd8f394dc7aae0bf0695b1ea79374b142653bad16e6274b60c00ac2a5d"
+  },
+  {
+    "asset_id": "s25_p16_i01",
+    "type": "formula_text",
+    "text": "$F_2$",
+    "pdf_page": 16,
+    "season": 25,
+    "source_image_sha256": "6c052cc2e5e1c9c81441bbe0f1eb4f6dbbd0642a650318fd3ea885631d6f9130"
+  },
+  {
+    "asset_id": "s25_p17_i01",
+    "type": "table",
+    "title": "遗传系谱图的人物和亲属关系",
+    "headers": [
+      "编号",
+      "性别",
+      "患病情况",
+      "父亲编号",
+      "母亲编号",
+      "图示配偶编号"
+    ],
+    "rows": [
+      [
+        "1",
+        "男",
+        "未知",
+        "未给出",
+        "未给出",
+        "2"
+      ],
+      [
+        "2",
+        "女",
+        "正常",
+        "未给出",
+        "未给出",
+        "1"
+      ],
+      [
+        "3",
+        "女",
+        "未知",
+        "1",
+        "2",
+        "未给出"
+      ],
+      [
+        "4",
+        "女",
+        "患病",
+        "1",
+        "2",
+        "未给出"
+      ],
+      [
+        "5",
+        "男",
+        "正常",
+        "1",
+        "2",
+        "6"
+      ],
+      [
+        "6",
+        "女",
+        "患病",
+        "未给出",
+        "未给出",
+        "5"
+      ],
+      [
+        "7",
+        "女",
+        "未知",
+        "5",
+        "6",
+        "未给出"
+      ]
+    ],
+    "notes": "原图方形代表男、圆形代表女；空白代表正常、实心代表患病、问号代表患病情况未知。“未给出”表示原图没有该项亲属信息。1、2 的子女按图从左至右为 3、4、5；5、6 的子女为 7。",
+    "pdf_page": 17,
+    "season": 25,
+    "source_image_sha256": "1311fd4271482466550f44fe10d865c3efba9133e4f96ada1520758a0595a52b"
+  },
+  {
+    "asset_id": "s26_p18_i01",
+    "type": "formula_text",
+    "text": "$F=\\frac{1}{3}(G-F_{\\text{浮}})$",
+    "pdf_page": 18,
+    "season": 26,
+    "source_image_sha256": "4f979d51549c5bae495c69f6597ba87062761ad8032939552e83c5fdaecc18db"
+  },
+  {
+    "asset_id": "s26_p18_i02",
+    "type": "table",
+    "title": "电梯上升时的 v–t 图像",
+    "headers": [
+      "时间 t（s）",
+      "速度 v（m/s）"
+    ],
+    "rows": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "2",
+        "6"
+      ],
+      [
+        "6",
+        "6"
+      ],
+      [
+        "9",
+        "0"
+      ]
+    ],
+    "notes": "横轴为 t/s，纵轴为 v(m/s)。按表中时间顺序，相邻点均以直线连接；t=2 s 和 t=6 s 处画有竖向虚线，v=6 m/s 处有横向标注线。表中没有添加加速度或受力结论。",
+    "pdf_page": 18,
+    "season": 26,
+    "source_image_sha256": "4c94cef49081c3c1223861994cf36b9a4ed1c47d63099aba12876de025ac1f71"
+  },
+  {
+    "asset_id": "s26_p19_i00",
+    "type": "table",
+    "title": "反应前后的微观粒子示意图",
+    "headers": [
+      "阶段",
+      "每个图示粒子的原子组成",
+      "图示粒子个数"
+    ],
+    "rows": [
+      [
+        "反应前",
+        "1 个碳原子、4 个氢原子",
+        "1"
+      ],
+      [
+        "反应前",
+        "2 个氧原子",
+        "3"
+      ],
+      [
+        "反应后",
+        "1 个碳原子、2 个氧原子",
+        "1"
+      ],
+      [
+        "反应后",
+        "2 个氧原子",
+        "1"
+      ],
+      [
+        "反应后",
+        "1 个氧原子、2 个氢原子",
+        "2"
+      ]
+    ],
+    "notes": "原图箭头：反应前 → 反应后；箭头上标“点燃”。图例：大空心圆为碳原子、斜线圆为氧原子、小空心圆为氢原子。按图示粒子逐个计数，保留反应后仍存在的氧粒子；未将原图改写为配平反应方程式。",
+    "pdf_page": 19,
+    "season": 26,
+    "source_image_sha256": "898ee2415035ffa64dfb9711fed78b3f82d8ec5dbe0c259e9572cb8f95c8899a"
+  },
+  {
+    "asset_id": "s27_p18_i02",
+    "type": "formula_text",
+    "text": "$A_1$",
+    "pdf_page": 18,
+    "season": 27,
+    "source_image_sha256": "50dd2666d6a10a10f83e7cb115326e16a47add149304f38380e00a1bb0f40544"
+  },
+  {
+    "asset_id": "s27_p18_i03",
+    "type": "formula_text",
+    "text": "$A_2$",
+    "pdf_page": 18,
+    "season": 27,
+    "source_image_sha256": "2448a5df056924055e3f71c0ff8db7aaccf7ebda4a8f649c54baa188c2c64db8"
+  },
+  {
+    "asset_id": "s27_p18_i04",
+    "type": "formula_text",
+    "text": "$L_2$",
+    "pdf_page": 18,
+    "season": 27,
+    "source_image_sha256": "a624bce120933da97939b6fd3ca73be521a19c63fdfe5a3e6b4b50fcf096c327"
+  },
+  {
+    "asset_id": "s27_p18_i05",
+    "type": "formula_text",
+    "text": "$L_1$",
+    "pdf_page": 18,
+    "season": 27,
+    "source_image_sha256": "bc4d01de2ff19da88537b39d88738a319a8064adc48b92e9fac567ed6ee250d5"
+  },
+  {
+    "asset_id": "s28_p17_i00",
+    "type": "formula_text",
+    "text": "$F_1$",
+    "pdf_page": 17,
+    "season": 28,
+    "source_image_sha256": "d1c530fd8f394dc7aae0bf0695b1ea79374b142653bad16e6274b60c00ac2a5d"
+  },
+  {
+    "asset_id": "s28_p17_i01",
+    "type": "formula_text",
+    "text": "$F_2$",
+    "pdf_page": 17,
+    "season": 28,
+    "source_image_sha256": "6c052cc2e5e1c9c81441bbe0f1eb4f6dbbd0642a650318fd3ea885631d6f9130"
+  },
+  {
+    "asset_id": "s28_p17_i02",
+    "type": "formula_text",
+    "text": "$F_1$",
+    "pdf_page": 17,
+    "season": 28,
+    "source_image_sha256": "d1c530fd8f394dc7aae0bf0695b1ea79374b142653bad16e6274b60c00ac2a5d"
+  },
+  {
+    "asset_id": "s28_p17_i03",
+    "type": "formula_text",
+    "text": "$F_2$",
+    "pdf_page": 17,
+    "season": 28,
+    "source_image_sha256": "6c052cc2e5e1c9c81441bbe0f1eb4f6dbbd0642a650318fd3ea885631d6f9130"
+  },
+  {
+    "asset_id": "s28_p17_i04",
+    "type": "formula_text",
+    "text": "$W_1$",
+    "pdf_page": 17,
+    "season": 28,
+    "source_image_sha256": "70d92c712986db18f92c56f300618fe47dfff9b320d65a7c915fd239e0f16062"
+  },
+  {
+    "asset_id": "s28_p17_i05",
+    "type": "formula_text",
+    "text": "$W_2$",
+    "pdf_page": 17,
+    "season": 28,
+    "source_image_sha256": "5a820e04d770a0a1077391b9d2b20b9c0ee0911daf078718dfd7d8e5233074e6"
+  },
+  {
+    "asset_id": "s28_p17_i06",
+    "type": "formula_text",
+    "text": "$f_1$",
+    "pdf_page": 17,
+    "season": 28,
+    "source_image_sha256": "9041d4df7e26484b548941ba8c3d236b6b2b8cf9ef53a8c8c10b27e370ab953a"
+  },
+  {
+    "asset_id": "s28_p17_i07",
+    "type": "formula_text",
+    "text": "$f_2$",
+    "pdf_page": 17,
+    "season": 28,
+    "source_image_sha256": "2b022bfc629d2e3d39d528fd54a2fd3be5640812bc8ca235b6be7cadf882e320"
+  },
+  {
+    "asset_id": "s28_p17_i09",
+    "type": "formula_text",
+    "text": "$W_1 > W_2$",
+    "pdf_page": 17,
+    "season": 28,
+    "source_image_sha256": "dbf3561d56bbcfb04f72c88bcc6dfa2d6376c3d585bd3b7a6a5a80f0ca00bd4a"
+  },
+  {
+    "asset_id": "s28_p17_i10",
+    "type": "formula_text",
+    "text": "$W_1 = W_2$",
+    "pdf_page": 17,
+    "season": 28,
+    "source_image_sha256": "7eceed2519becffd3ebb1b9331538a9946203ab007e57862136d2eab742ed36b"
+  },
+  {
+    "asset_id": "s28_p17_i11",
+    "type": "formula_text",
+    "text": "$f_1 > f_2$",
+    "pdf_page": 17,
+    "season": 28,
+    "source_image_sha256": "b1a9513d831756a21ed50df0fa6d1732b2c2463bbbf383a0f0c0bff6a54cd87b"
+  },
+  {
+    "asset_id": "s28_p17_i12",
+    "type": "formula_text",
+    "text": "$f_1 < f_2$",
+    "pdf_page": 17,
+    "season": 28,
+    "source_image_sha256": "54476129bceb6935d2d556a2a193f67fcd0542763aa497ace80456743bb7f838"
+  },
+  {
+    "asset_id": "s29_p18_i03",
+    "type": "formula_text",
+    "text": "$\\mathrm{CH_2O}+\\mathrm{O_2}\\xrightarrow{\\text{HAP催化}}\\mathrm{CO_2}+\\mathrm{H_2O}$",
+    "pdf_page": 18,
+    "season": 29,
+    "source_image_sha256": "bcf839d1e4d6aacbc011a760ce2d0523b5c7b7828a83d8f4cc2119956734dc36"
+  },
+  {
+    "asset_id": "s30_p17_i00",
+    "type": "formula_text",
+    "text": "$35^{\\circ}\\mathrm{C}$",
+    "pdf_page": 17,
+    "season": 30,
+    "source_image_sha256": "e5b6df6fdfd1e46d4d2c37b933d14a8680824ac97af9d5394c932c977b66dc68"
+  },
+  {
+    "asset_id": "s30_p17_i01",
+    "type": "formula_text",
+    "text": "$15^{\\circ}\\mathrm{C}$",
+    "pdf_page": 17,
+    "season": 30,
+    "source_image_sha256": "5b59c81138665857a0520c12b7e4d234f0602107e449f8a4bda815a0f387b138"
+  },
+  {
+    "asset_id": "s30_p17_i02",
+    "type": "formula_text",
+    "text": "$30^{\\circ}\\mathrm{C}$",
+    "pdf_page": 17,
+    "season": 30,
+    "source_image_sha256": "1130adf6a88318c40a9abd489f94fb2dd1ea105733d82d9b288f228fcaa65223"
+  },
+  {
+    "asset_id": "s30_p17_i03",
+    "type": "formula_text",
+    "text": "$26^{\\circ}\\mathrm{C}$",
+    "pdf_page": 17,
+    "season": 30,
+    "source_image_sha256": "4f974e821cd9545727307440cab926987ff10924a68d30852f1b43c8a8cc411d"
+  },
+  {
+    "asset_id": "s32_p17_i00",
+    "type": "formula_text",
+    "text": "$f_{\\text{静}max}$",
+    "pdf_page": 17,
+    "season": 32,
+    "source_image_sha256": "a5d7a45a73ba589b8af0b6bc329e830a2980e9185f8e0bcad29b06bb7bda292f"
+  },
+  {
+    "asset_id": "s32_p17_i02",
+    "type": "formula_text",
+    "text": "$t_1$",
+    "pdf_page": 17,
+    "season": 32,
+    "source_image_sha256": "33c4b0e1326da7e5a269de81fba450e32d9ed24a7a2c5e6aa727ef1e46cdbd2c"
+  },
+  {
+    "asset_id": "s32_p17_i03",
+    "type": "formula_text",
+    "text": "$t_2$",
+    "pdf_page": 17,
+    "season": 32,
+    "source_image_sha256": "49628537f3fc7db7e7b780292edfb0847b8424e7de492a4fd519cf0cda2541c2"
+  },
+  {
+    "asset_id": "s32_p17_i04",
+    "type": "formula_text",
+    "text": "$t_1-t_3$",
+    "pdf_page": 17,
+    "season": 32,
+    "source_image_sha256": "c484039f459acc6849078679192631b4fabcabbf67f78f8963c0f7ac8bd3b7df"
   }
 ]

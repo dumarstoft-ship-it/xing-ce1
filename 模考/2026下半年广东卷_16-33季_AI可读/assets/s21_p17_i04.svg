@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216 170" width="1296" height="1020">
+<title>第21季第66题平抛轨迹示意图，依据原图重绘</title>
+<desc>共同起点 O 在墙角的右上方；虚线轨迹 A 结束于墙的水平上表面，轨迹 B 结束于墙的竖直右侧表面。保留原图几何布局，不添加数值或物理结论。</desc>
+<rect width="216" height="170" fill="white"/>
+<path d="M11 69 H137 V165 H129 V78 H11 Z" fill="black"/>
+<g fill="none" stroke="black" stroke-width="1.1" stroke-dasharray="3.2 1.8">
+<path d="M195 13 C163 13,123 28,117 69"/>
+<path d="M195 13 C170 17,149 39,137 84"/>
+</g>
+<circle cx="195" cy="13" r="2.1" fill="black"/>
+<g fill="black" font-family="Arial, sans-serif" font-size="9.5">
+<text x="201" y="17">O</text><text x="127" y="27">A</text><text x="154" y="60">B</text>
+</g></svg>

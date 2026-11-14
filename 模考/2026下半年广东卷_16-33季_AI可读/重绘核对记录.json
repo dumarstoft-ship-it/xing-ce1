@@ -1,0 +1,12 @@
+[
+  {
+    "asset_id": "s21_p17_i04",
+    "source_image_sha256": "5a06c262885f06a95a9904400b684f30664f7733c059d01bc774df78087591e4",
+    "original_reference_path": "原图核对/s21_p17_i04.png",
+    "svg_path": "assets/s21_p17_i04.svg",
+    "png_path": "assets/s21_p17_i04.png",
+    "png_sha256": "cdcbf796d0353544cd8028fdac57e4f53577550858680fd677a3d38ae2733eb3",
+    "method": "按原图坐标用 SVG 代码重绘墙角、共同起点、A/B 虚线轨迹和标签，同时提供 1296×1020 PNG；没有用像素放大替代重绘。",
+    "visual_check": "与 PDF 内嵌原图比对起点、墙角轮廓、两条轨迹终点、虚线及标签位置；保留原图定性几何关系，未新增题设。"
+  }
+]

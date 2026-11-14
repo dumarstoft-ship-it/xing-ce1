@@ -200,6 +200,46 @@
     "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
   },
   {
+    "id": "s17_p18_i00",
+    "path": "assets/s17_p18_i00.png",
+    "season": 17,
+    "section": "科学推理",
+    "question_number": 67,
+    "material_number": null,
+    "pdf_page": 18,
+    "bbox_pt": [
+      67.951,
+      90.0,
+      234.741,
+      265.438
+    ],
+    "width_px": 300,
+    "height_px": 316,
+    "sha256": "df454a8aa58e57f259aa8650a083943a389303da8eaf6e67fec75be4318c3a79",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s17_p18_i07",
+    "path": "assets/s17_p18_i07.png",
+    "season": 17,
+    "section": "科学推理",
+    "question_number": 69,
+    "material_number": null,
+    "pdf_page": 18,
+    "bbox_pt": [
+      67.951,
+      584.191,
+      234.741,
+      754.069
+    ],
+    "width_px": 300,
+    "height_px": 305,
+    "sha256": "7754b06d49c1326def926fbca34451f8b3eba7e093a832cdf6e3037b7ab1d918",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
     "id": "s18_p11_i00",
     "path": "assets/s18_p11_i00.png",
     "season": 18,
@@ -296,6 +336,46 @@
     "width_px": 600,
     "height_px": 158,
     "sha256": "6600483ef0de6f71d1a1c25b2cfcfa506a2f4cfabda5a8e16009ec320ab5d676",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s18_p17_i00",
+    "path": "assets/s18_p17_i00.png",
+    "season": 18,
+    "section": "科学推理",
+    "question_number": 66,
+    "material_number": null,
+    "pdf_page": 17,
+    "bbox_pt": [
+      67.951,
+      231.463,
+      345.934,
+      350.687
+    ],
+    "width_px": 500,
+    "height_px": 215,
+    "sha256": "2972f873953cd3e2d1cf9bf676feb03c93119c8050391e42d2ccbc36025c69e5",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s18_p17_i01",
+    "path": "assets/s18_p17_i01.png",
+    "season": 18,
+    "section": "科学推理",
+    "question_number": 67,
+    "material_number": null,
+    "pdf_page": 17,
+    "bbox_pt": [
+      67.951,
+      483.5,
+      345.934,
+      545.891
+    ],
+    "width_px": 500,
+    "height_px": 112,
+    "sha256": "875f7be3d95d9dbc91f1b6e601625f5ccdd22d20e790f352c3d9661d5196f985",
     "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
     "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
   },
@@ -416,6 +496,46 @@
     "width_px": 600,
     "height_px": 150,
     "sha256": "169c27071fa2a57176f5e3ad8eb2e29ab36dcbc9a45ba4d132efc1802a2f0025",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s19_p18_i00",
+    "path": "assets/s19_p18_i00.png",
+    "season": 19,
+    "section": "科学推理",
+    "question_number": 69,
+    "material_number": null,
+    "pdf_page": 18,
+    "bbox_pt": [
+      67.951,
+      403.811,
+      418.827,
+      547.127
+    ],
+    "width_px": 631,
+    "height_px": 258,
+    "sha256": "b0c393afb130df51e88f0907b8d0818807ca5c559ef107f4cad620eb76bb17d1",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s19_p19_i00",
+    "path": "assets/s19_p19_i00.png",
+    "season": 19,
+    "section": "科学推理",
+    "question_number": 70,
+    "material_number": null,
+    "pdf_page": 19,
+    "bbox_pt": [
+      67.951,
+      90.0,
+      401.53,
+      307.444
+    ],
+    "width_px": 600,
+    "height_px": 391,
+    "sha256": "f63f33ecdff3f03d9bd33a85fd2c7075a760d7393ba85cef8e50c9b7210b0332",
     "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
     "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
   },
@@ -620,6 +740,46 @@
     "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
   },
   {
+    "id": "s20_p18_i08",
+    "path": "assets/s20_p18_i08.png",
+    "season": 20,
+    "section": "科学推理",
+    "question_number": 67,
+    "material_number": null,
+    "pdf_page": 18,
+    "bbox_pt": [
+      67.951,
+      149.921,
+      261.303,
+      348.833
+    ],
+    "width_px": 348,
+    "height_px": 358,
+    "sha256": "7c090d966b13472ba66d45b228104cf3ce6d8b2ac613d5b789f84853d6f4b0e5",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s20_p19_i00",
+    "path": "assets/s20_p19_i00.png",
+    "season": 20,
+    "section": "科学推理",
+    "question_number": 70,
+    "material_number": null,
+    "pdf_page": 19,
+    "bbox_pt": [
+      67.951,
+      90.0,
+      379.291,
+      270.997
+    ],
+    "width_px": 560,
+    "height_px": 326,
+    "sha256": "c1ee486c9f71d36510bce82372a631288363968f185f836d33a59ef906a9f021",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
     "id": "s20_p22_i01",
     "path": "assets/s20_p22_i01.png",
     "season": 20,
@@ -816,6 +976,69 @@
     "width_px": 500,
     "height_px": 277,
     "sha256": "11aa40132ecf4fa6c63c75c33290db3d222a69c07be0ac102a3d0d483d1d51ef",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s21_p17_i04",
+    "path": "assets/s21_p17_i04.png",
+    "season": 21,
+    "section": "科学推理",
+    "question_number": 66,
+    "material_number": null,
+    "pdf_page": 17,
+    "bbox_pt": [
+      67.951,
+      414.313,
+      188.41,
+      508.827
+    ],
+    "width_px": 1296,
+    "height_px": 1020,
+    "sha256": "cdcbf796d0353544cd8028fdac57e4f53577550858680fd677a3d38ae2733eb3",
+    "method": "按原图坐标用 SVG 代码重绘墙角、共同起点、A/B 虚线轨迹和标签，同时提供 1296×1020 PNG；没有用像素放大替代重绘。",
+    "visual_check": "与 PDF 内嵌原图比对起点、墙角轮廓、两条轨迹终点、虚线及标签位置；保留原图定性几何关系，未新增题设。",
+    "svg_path": "assets/s21_p17_i04.svg",
+    "original_reference_path": "原图核对/s21_p17_i04.png",
+    "source_image_sha256": "5a06c262885f06a95a9904400b684f30664f7733c059d01bc774df78087591e4"
+  },
+  {
+    "id": "s21_p18_i00",
+    "path": "assets/s21_p18_i00.png",
+    "season": 21,
+    "section": "科学推理",
+    "question_number": 67,
+    "material_number": null,
+    "pdf_page": 18,
+    "bbox_pt": [
+      67.951,
+      90.0,
+      234.741,
+      219.725
+    ],
+    "width_px": 300,
+    "height_px": 233,
+    "sha256": "2ec7ce5c7ce8c03ba5c89d24680b70a85b035dcd8fb374d7e7838d2061812c84",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s21_p18_i12",
+    "path": "assets/s21_p18_i12.png",
+    "season": 21,
+    "section": "科学推理",
+    "question_number": 70,
+    "material_number": null,
+    "pdf_page": 18,
+    "bbox_pt": [
+      67.951,
+      635.464,
+      218.679,
+      757.776
+    ],
+    "width_px": 271,
+    "height_px": 220,
+    "sha256": "58298a24bc9705ddece45ce4254e859ab2f567e01975321a7af267035cbaa748",
     "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
     "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
   },
@@ -1240,6 +1463,66 @@
     "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
   },
   {
+    "id": "s23_p18_i00",
+    "path": "assets/s23_p18_i00.png",
+    "season": 23,
+    "section": "科学推理",
+    "question_number": 68,
+    "material_number": null,
+    "pdf_page": 18,
+    "bbox_pt": [
+      67.951,
+      437.787,
+      258.832,
+      524.888
+    ],
+    "width_px": 343,
+    "height_px": 157,
+    "sha256": "3f66bb59d818b45deed0d9c113884d6bb84761e5571d0782863a47649b136294",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s23_p19_i00",
+    "path": "assets/s23_p19_i00.png",
+    "season": 23,
+    "section": "科学推理",
+    "question_number": 69,
+    "material_number": null,
+    "pdf_page": 19,
+    "bbox_pt": [
+      67.951,
+      90.0,
+      251.42,
+      283.97
+    ],
+    "width_px": 330,
+    "height_px": 349,
+    "sha256": "a3410e5cf7f9ab38584a2d442632fcb7d9b96add7ed08a4e7553824f3bfe0c4f",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s23_p19_i11",
+    "path": "assets/s23_p19_i11.png",
+    "season": 23,
+    "section": "科学推理",
+    "question_number": 70,
+    "material_number": null,
+    "pdf_page": 19,
+    "bbox_pt": [
+      67.951,
+      396.398,
+      425.622,
+      646.582
+    ],
+    "width_px": 643,
+    "height_px": 450,
+    "sha256": "8c5b4c81c3b7bcda778a5276f83a934f7c59dd3673b0e566a767804a4d3f0fac",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
     "id": "s23_p24_i00",
     "path": "assets/s23_p24_i00.png",
     "season": 23,
@@ -1416,6 +1699,46 @@
     "width_px": 500,
     "height_px": 239,
     "sha256": "20ae3ece5283ba832d7ac488013c0665ad99e957f970eed58be0b181dc6a054a",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s24_p16_i00",
+    "path": "assets/s24_p16_i00.png",
+    "season": 24,
+    "section": "科学推理",
+    "question_number": 66,
+    "material_number": null,
+    "pdf_page": 16,
+    "bbox_pt": [
+      67.951,
+      620.637,
+      413.885,
+      666.35
+    ],
+    "width_px": 622,
+    "height_px": 82,
+    "sha256": "2f7993f4b4e3c717b5680887bddacb1499cd5fd8a34cec060913a37772dd4e59",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s24_p17_i05",
+    "path": "assets/s24_p17_i05.png",
+    "season": 24,
+    "section": "科学推理",
+    "question_number": 67,
+    "material_number": null,
+    "pdf_page": 17,
+    "bbox_pt": [
+      67.951,
+      130.153,
+      310.722,
+      311.151
+    ],
+    "width_px": 437,
+    "height_px": 326,
+    "sha256": "429f6161e6165ba115b4d74a2633b6913f447d57a98112c35cf29f44aed7a2f1",
     "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
     "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
   },
@@ -1700,6 +2023,26 @@
     "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
   },
   {
+    "id": "s25_p17_i00",
+    "path": "assets/s25_p17_i00.png",
+    "season": 25,
+    "section": "科学推理",
+    "question_number": 67,
+    "material_number": null,
+    "pdf_page": 17,
+    "bbox_pt": [
+      67.951,
+      90.001,
+      294.044,
+      166.601
+    ],
+    "width_px": 406,
+    "height_px": 138,
+    "sha256": "89bcdf169427f1dbb871cc5ef59c2bcea5aa33595fa512f2b3e739deee20e2c1",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
     "id": "s25_p18_i02",
     "path": "assets/s25_p18_i02.png",
     "season": 25,
@@ -1920,6 +2263,46 @@
     "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
   },
   {
+    "id": "s26_p18_i00",
+    "path": "assets/s26_p18_i00.png",
+    "season": 26,
+    "section": "科学推理",
+    "question_number": 66,
+    "material_number": null,
+    "pdf_page": 18,
+    "bbox_pt": [
+      67.951,
+      165.365,
+      284.16,
+      435.316
+    ],
+    "width_px": 389,
+    "height_px": 486,
+    "sha256": "c35ee405bc2ece10be3ab5b67fa117d5f01621c0e129a105979ccfe251d2826d",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s26_p19_i01",
+    "path": "assets/s26_p19_i01.png",
+    "season": 26,
+    "section": "科学推理",
+    "question_number": 70,
+    "material_number": null,
+    "pdf_page": 19,
+    "bbox_pt": [
+      67.951,
+      518.093,
+      345.934,
+      699.708
+    ],
+    "width_px": 500,
+    "height_px": 327,
+    "sha256": "568a06245ed291afcf1813dcf3d9340c706f0fc37e31855ea3975543f4eaa05c",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
     "id": "s26_p22_i00",
     "path": "assets/s26_p22_i00.png",
     "season": 26,
@@ -2040,6 +2423,46 @@
     "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
   },
   {
+    "id": "s27_p18_i00",
+    "path": "assets/s27_p18_i00.png",
+    "season": 27,
+    "section": "科学推理",
+    "question_number": 66,
+    "material_number": null,
+    "pdf_page": 18,
+    "bbox_pt": [
+      67.951,
+      130.153,
+      255.744,
+      244.435
+    ],
+    "width_px": 338,
+    "height_px": 206,
+    "sha256": "b6869f109925f065896103952f7f3f2c96990c09cfc37fd0f9a6b823339c9a30",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s27_p18_i01",
+    "path": "assets/s27_p18_i01.png",
+    "season": 27,
+    "section": "科学推理",
+    "question_number": 67,
+    "material_number": null,
+    "pdf_page": 18,
+    "bbox_pt": [
+      67.951,
+      337.096,
+      329.255,
+      615.078
+    ],
+    "width_px": 574,
+    "height_px": 599,
+    "sha256": "9404b73aa5100b86a22081af5731299903bb855bc0f1bf9fecc1f012ee5d4ca5",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
     "id": "s28_p10_i01",
     "path": "assets/s28_p10_i01.png",
     "season": 28,
@@ -2136,6 +2559,46 @@
     "width_px": 600,
     "height_px": 151,
     "sha256": "03036b3e445499f8b710611342f520ed5c5ca0f6aa2c97a51e2c6ccbbb91951d",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s28_p17_i08",
+    "path": "assets/s28_p17_i08.png",
+    "season": 28,
+    "section": "科学推理",
+    "question_number": 66,
+    "material_number": null,
+    "pdf_page": 17,
+    "bbox_pt": [
+      67.951,
+      208.606,
+      415.12,
+      303.12
+    ],
+    "width_px": 624,
+    "height_px": 171,
+    "sha256": "a970b7cca1aaa5ab31e278d89609a48e67fdc6c6003e0da78bba30818ef6db38",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s28_p17_i13",
+    "path": "assets/s28_p17_i13.png",
+    "season": 28,
+    "section": "科学推理",
+    "question_number": 67,
+    "material_number": null,
+    "pdf_page": 17,
+    "bbox_pt": [
+      67.951,
+      435.934,
+      223.004,
+      590.986
+    ],
+    "width_px": 279,
+    "height_px": 279,
+    "sha256": "7a4baf3371a83c57dcdb36532e786e58ab0b73cc0b8eb5db1f59ce773995078e",
     "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
     "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
   },
@@ -2256,6 +2719,126 @@
     "width_px": 500,
     "height_px": 328,
     "sha256": "93d9b53e88dd81125dcfce6c4e22c921d0c398be7c2b7cc3b941a7864e350922",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s29_p17_i00",
+    "path": "assets/s29_p17_i00.png",
+    "season": 29,
+    "section": "科学推理",
+    "question_number": 66,
+    "material_number": null,
+    "pdf_page": 17,
+    "bbox_pt": [
+      79.071,
+      211.695,
+      301.456,
+      365.512
+    ],
+    "width_px": 410,
+    "height_px": 283,
+    "sha256": "820da47d1c3d2b64316e0927cc544a03834a9c0735f76367e6122de462d98a6b",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s29_p17_i01",
+    "path": "assets/s29_p17_i01.png",
+    "season": 29,
+    "section": "科学推理",
+    "question_number": 66,
+    "material_number": null,
+    "pdf_page": 17,
+    "bbox_pt": [
+      78.453,
+      371.69,
+      300.839,
+      536.626
+    ],
+    "width_px": 367,
+    "height_px": 272,
+    "sha256": "ee3be87adf6b84bfb0eb6b4cb1074226cab596697076d2812c170d402a439689",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s29_p17_i02",
+    "path": "assets/s29_p17_i02.png",
+    "season": 29,
+    "section": "科学推理",
+    "question_number": 66,
+    "material_number": null,
+    "pdf_page": 17,
+    "bbox_pt": [
+      78.453,
+      543.421,
+      300.839,
+      708.975
+    ],
+    "width_px": 400,
+    "height_px": 298,
+    "sha256": "fe8efae46470cbe22f9b27e0081e67dbb135bda6802826f1f60cd339f40f9f83",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s29_p18_i00",
+    "path": "assets/s29_p18_i00.png",
+    "season": 29,
+    "section": "科学推理",
+    "question_number": 66,
+    "material_number": null,
+    "pdf_page": 18,
+    "bbox_pt": [
+      79.071,
+      90.0,
+      301.456,
+      256.789
+    ],
+    "width_px": 375,
+    "height_px": 281,
+    "sha256": "a6145eb8ad53dafef70fcbdcb921a062a6b2f49ec4104a26024db01c89c2a529",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s29_p18_i01",
+    "path": "assets/s29_p18_i01.png",
+    "season": 29,
+    "section": "科学推理",
+    "question_number": 67,
+    "material_number": null,
+    "pdf_page": 18,
+    "bbox_pt": [
+      67.951,
+      306.209,
+      278.6,
+      439.023
+    ],
+    "width_px": 379,
+    "height_px": 239,
+    "sha256": "68ff864aa0b78c0bc1fe23d61ada43d410a21b52de616da35f9842b5a76d8e54",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s29_p18_i02",
+    "path": "assets/s29_p18_i02.png",
+    "season": 29,
+    "section": "科学推理",
+    "question_number": 68,
+    "material_number": null,
+    "pdf_page": 18,
+    "bbox_pt": [
+      67.951,
+      571.837,
+      392.882,
+      740.479
+    ],
+    "width_px": 584,
+    "height_px": 304,
+    "sha256": "16892a188aae50470050c8fd12632541f4f9820c173bac694adac1a5e109b545",
     "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
     "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
   },
@@ -2600,6 +3183,46 @@
     "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
   },
   {
+    "id": "s30_p16_i00",
+    "path": "assets/s30_p16_i00.png",
+    "season": 30,
+    "section": "科学推理",
+    "question_number": 66,
+    "material_number": null,
+    "pdf_page": 16,
+    "bbox_pt": [
+      67.951,
+      620.637,
+      218.062,
+      757.775
+    ],
+    "width_px": 270,
+    "height_px": 247,
+    "sha256": "2041d563f70039ffb644117d66138821c9367c421c26c9ee0e042c589d00b8e4",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s30_p17_i04",
+    "path": "assets/s30_p17_i04.png",
+    "season": 30,
+    "section": "科学推理",
+    "question_number": 70,
+    "material_number": null,
+    "pdf_page": 17,
+    "bbox_pt": [
+      67.951,
+      491.53,
+      360.142,
+      707.739
+    ],
+    "width_px": 525,
+    "height_px": 389,
+    "sha256": "51b538f446f0bf902760f0ad7fb764f28f128c74a6338878d4fe9570a31753ca",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
     "id": "s31_p10_i03",
     "path": "assets/s31_p10_i03.png",
     "season": 31,
@@ -2720,6 +3343,26 @@
     "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
   },
   {
+    "id": "s31_p17_i02",
+    "path": "assets/s31_p17_i02.png",
+    "season": 31,
+    "section": "科学推理",
+    "question_number": 66,
+    "material_number": null,
+    "pdf_page": 17,
+    "bbox_pt": [
+      67.951,
+      508.827,
+      223.004,
+      638.552
+    ],
+    "width_px": 279,
+    "height_px": 233,
+    "sha256": "66b28d43c9c53c0a0752ad283debb65c47702ccf8d488071f51d26d31c9286d5",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
     "id": "s31_p20_i00",
     "path": "assets/s31_p20_i00.png",
     "season": 31,
@@ -2836,6 +3479,66 @@
     "width_px": 600,
     "height_px": 194,
     "sha256": "364f9c90935afb52a5a195d01420ae988ad2d262f6a36cf08f9647c7318e86f6",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s32_p17_i01",
+    "path": "assets/s32_p17_i01.png",
+    "season": 32,
+    "section": "科学推理",
+    "question_number": 66,
+    "material_number": null,
+    "pdf_page": 17,
+    "bbox_pt": [
+      67.951,
+      185.132,
+      401.53,
+      274.704
+    ],
+    "width_px": 600,
+    "height_px": 161,
+    "sha256": "40f79439d78a96e79c3b33f8f684ecb704b7c5e13c0cba6270afee3a1a007bf2",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s32_p17_i05",
+    "path": "assets/s32_p17_i05.png",
+    "season": 32,
+    "section": "科学推理",
+    "question_number": 67,
+    "material_number": null,
+    "pdf_page": 17,
+    "bbox_pt": [
+      67.951,
+      407.518,
+      234.741,
+      527.977
+    ],
+    "width_px": 300,
+    "height_px": 217,
+    "sha256": "5b9a7ff2c60e9addb532a414dcfd421e4cde6ce10be7bf9cf8e3f034934356a9",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s32_p18_i00",
+    "path": "assets/s32_p18_i00.png",
+    "season": 32,
+    "section": "科学推理",
+    "question_number": 68,
+    "material_number": null,
+    "pdf_page": 18,
+    "bbox_pt": [
+      67.951,
+      90.0,
+      457.126,
+      309.297
+    ],
+    "width_px": 700,
+    "height_px": 395,
+    "sha256": "0afc0e686b3cd8f53f19f51459a52022645c77411215a014c19d7ddf680b8674",
     "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
     "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
   },
@@ -3056,6 +3759,46 @@
     "width_px": 500,
     "height_px": 298,
     "sha256": "4eacae6711eb077b3d587bb5757adaa25c7820845b3168dad822f333cb067936",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s33_p18_i00",
+    "path": "assets/s33_p18_i00.png",
+    "season": 33,
+    "section": "科学推理",
+    "question_number": 68,
+    "material_number": null,
+    "pdf_page": 18,
+    "bbox_pt": [
+      67.951,
+      319.181,
+      270.569,
+      394.545
+    ],
+    "width_px": 364,
+    "height_px": 135,
+    "sha256": "9d222bce2445632391b0f22b56c70a62ce4426d15f4b57cbdc95bac7462fd4c6",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s33_p18_i01",
+    "path": "assets/s33_p18_i01.png",
+    "season": 33,
+    "section": "科学推理",
+    "question_number": 69,
+    "material_number": null,
+    "pdf_page": 18,
+    "bbox_pt": [
+      67.951,
+      487.207,
+      300.221,
+      692.914
+    ],
+    "width_px": 418,
+    "height_px": 370,
+    "sha256": "7195a22ecbe29a57433b43c3464b0707d0475f13c167b09550daa0b01cdd0a14",
     "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
     "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
   },
