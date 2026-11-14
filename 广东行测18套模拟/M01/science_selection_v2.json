@@ -1,0 +1,109 @@
+{
+  "paper_id": "M01",
+  "revision": "science-reselection-v2",
+  "date": "2026-11-15",
+  "status": "editor_verified_pending_integration_and_claude_review",
+  "prior_lost_selection_recovered": false,
+  "source_snapshot": "ae6e51eff6cbd685de0a8db61ea02b84e7d478c5",
+  "source_file": "模考/2026下半年广东卷_16-33季_AI可读/科学推理_90题.jsonl",
+  "scope": "仅补第66—70题；其余85题的题面、选择、答案和解析不变。此清单为用户同意后重新选编，不冒称找回此前丢失清单。",
+  "source_answer_available": false,
+  "external_review": "pending_claude",
+  "rows": [
+    {
+      "number": 66,
+      "source_id": "gd-mock-2026h2-s25-q67",
+      "subsection": "力学",
+      "answer": "D",
+      "analysis": "先只看A。A向左匀速，水平方向合力为零，所以B对A的滑动摩擦力向右，大小恰为5 N；另有重力和支持力，A共受4个力，A项正确。再看B：A对B的摩擦力向左、大小5 N；B在10 N向右拉力下保持静止，因此地面对B的静摩擦力向左、大小也是5 N。B还受自身重力、A的压力、地面支持力，连同上述三个水平力共6个力，B、C项正确。A对B的摩擦力是5 N而非小于5 N，故应选D。也可把A、B作为整体，外部向右10 N、向左5 N，立即得到地面向左摩擦力5 N。切勿把作用在不同物体上的一对作用力、反作用力列在同一个受力图中。",
+      "selection_reason": "同时处理两个物体、两层接触面、静摩擦与滑动摩擦；既能分体受力，也能用整体法交叉核验，不是只认一句定义。",
+      "verification": {
+        "status": "editor_verified_awaiting_independent_review",
+        "method": "实际查看源图，逐项受力分析；整体法与分体法交叉核验；程序检查水平合力。",
+        "figure_paths": ["assets/s25_p17_i00.png"],
+        "figure_observation": "F1=10 N作用于下方B且向右；F2=5 N作用于上方A且向左。",
+        "option_truth": {"A": true, "B": true, "C": true, "D": false},
+        "select_false_statement": true,
+        "independent_check": {"A水平合力_N": 0, "B水平合力_N": 0, "A对B摩擦力大小_N": 5, "地面对B摩擦力大小_N": 5}
+      },
+      "edits": []
+    },
+    {
+      "number": 67,
+      "source_id": "gd-mock-2026h2-s20-q67",
+      "subsection": "电学",
+      "answer": "B",
+      "analysis": "先认清接线：电源两端之间有R1、R2串联的支路，以及R3支路、R4支路；A1测总电流，A2测R3、R4两支路的电流之和，V跨接电源两端，不只测R2。设电源电压为U，则V=U，I_A1=U/(R1+R2)+U/R3+U/R4，I_A2=U/R3+U/R4。温度下降使R2减小，上方支路电流增大，总电流随之增大，而电压表不变，B正确、A错误。光照增强使R3减小，A1、A2都增大，C错误；光照减弱使R3增大，A1、A2都减小，D错误。此处按中学理想电表模型，分别讨论温度或光照变化，其他条件不变。",
+      "selection_reason": "电路外观复杂，但关键是节点与支路还原，再把局部电阻变化传到不同电表；能训练避免看到变阻就笼统判断所有电表示数。",
+      "verification": {
+        "status": "editor_verified_awaiting_independent_review",
+        "method": "实际查看原电路图，逐线确认电压表两端及电流表位置；正电阻条件下作单调性推导，并用32组参数补充数值检查。",
+        "figure_paths": ["assets/s20_p18_i08.png"],
+        "option_truth": {"A": false, "B": true, "C": false, "D": false},
+        "independent_check": {"V": "U", "A1": "U/(R1+R2)+U/R3+U/R4", "A2": "U/R3+U/R4", "positive_parameter_cases": 32},
+        "limits": "数值抽查不是普遍性证明；普遍性来自上述表达式的单调性。"
+      },
+      "edits": []
+    },
+    {
+      "number": 68,
+      "source_id": "gd-mock-2026h2-s20-q69",
+      "subsection": "化学",
+      "answer": "B",
+      "analysis": "题目问哪组实验不能确定三种金属的活动性顺序，不是问反应能否发生。①铁能置换硫酸铜中的铜，给出Fe>Cu；②铜能置换硝酸银中的银，给出Cu>Ag；③银不能置换硫酸铜中的铜，也给出Cu>Ag；④铁与稀盐酸反应而铜不反应，给出Fe>H>Cu，因此Fe>Cu。于是A的①③、C的②④、D的③④都能连成Fe>Cu>Ag。B的①④反复验证的只是Fe与Cu的关系，完全没有把Ag与其他金属联系起来，无法单凭这组实验排定三者顺序，故选B。不要把事先背过的顺序，当成所选实验已经提供的证据。",
+      "selection_reason": "将科学知识转化为实验所提供的比较关系，检查证据是否连通；区别‘事实已知’和‘方案能验证’，有明确推理价值。",
+      "verification": {
+        "status": "editor_verified_awaiting_independent_review",
+        "method": "逐项写出置换反应提供的不等关系；枚举Fe、Cu、Ag、H的24种严格顺序，检查每个组合是否唯一确定三金属顺序。",
+        "option_can_determine_order": {"A": true, "B": false, "C": true, "D": true},
+        "independent_check": {"compatible_metal_orders": {"A": ["Fe>Cu>Ag"], "B": ["Ag>Fe>Cu", "Fe>Ag>Cu", "Fe>Cu>Ag"], "C": ["Fe>Cu>Ag"], "D": ["Fe>Cu>Ag"]}},
+        "model_boundary": "枚举中的其他顺序是用于说明所选观测的信息不足，不是在声称实际金属顺序可随意改变；按常规实验条件，不讨论钝化等旁支。",
+        "supporting_reference": "https://edu.rsc.org/experiments/the-reactivity-of-iron/1779.article"
+      },
+      "edits": []
+    },
+    {
+      "number": 69,
+      "source_id": "gd-mock-2026h2-s26-q69",
+      "subsection": "生物",
+      "answer": "C",
+      "analysis": "按通常的ABO三等位基因遗传模型，A型可为I^A I^A或I^A i，B型可为I^B I^B或I^B i，AB型为I^A I^B，O型为ii。C项中，AB型亲本只能给出I^A或I^B，O型亲本只能给出i，子女只能为I^A i或I^B i，即A型或B型，不可能为O型，正确。A项可用I^A i×I^B i反驳：A、B、AB、O四种血型均可能出现。B项同样可由这组父母反驳：两人均非O型，仍可生育O型子女。D项可用AB型×AB型反驳：子女可能为AB型，并不要求父母表现型必须分别为A型和B型。核心是把父母表现型展开为可能基因型，再讨论‘可能’与‘必定’，不能只按血型名称拼接。这里是考试所用的常规遗传模型，不把结论外推为涵盖孟买型、cis-AB等罕见情况的临床绝对断言。",
+      "selection_reason": "用六种常规基因型拆解‘只可能、至少一人一定、必定’等全称判断；三项均有明确反例，训练表现型与基因型的区别。",
+      "verification": {
+        "status": "editor_verified_awaiting_independent_review",
+        "method": "枚举6种常规基因型的36组有序亲本组合及全部配子组合；对四项分别验证全称命题或给出反例。",
+        "option_truth": {"A": false, "B": false, "C": true, "D": false},
+        "independent_check": {"parent_genotype_pairs": 36, "AB_x_O_children": ["A", "B"], "A_heterozygote_x_B_heterozygote_children": ["A", "AB", "B", "O"], "AB_x_AB_children": ["A", "AB", "B"]},
+        "model_boundary": "通常三等位基因遗传模型；不讨论罕见变异、基因互作或血型鉴定异常。",
+        "supporting_reference": "https://www.ncbi.nlm.nih.gov/books/NBK2267/"
+      },
+      "edits": []
+    },
+    {
+      "number": 70,
+      "source_id": "gd-mock-2026h2-s21-q70",
+      "subsection": "地理",
+      "answer": "D",
+      "analysis": "图中自转箭头呈顺时针，因此是从南极上空俯视；同心纬线从外向内依次为50°S、60°S、70°S。由左侧0°经线、右侧180°经线及自转方向可读出：A=(50°S,90°W)，B=(60°S,45°W)，C=(70°S,45°E)，D=(70°S,135°E)。①四点均在南半球，正确；②C、D已达70°S，不是全在中纬度，错误；③C、D位于南极圈以内，不是全在温带，错误；④A、D坐标正确；⑤把B、C经度的东西方向弄反，错误。东西半球通常以20°W和160°E组成的经线圈划分，A、B在西半球，C、D在东半球，⑥正确。故①④⑥成立，选D。不能把‘西经就是西半球’当成普遍规则，本题只是恰好二者对应。",
+      "selection_reason": "同一极地投影联合检查自转方向、经纬度、纬度带和东西半球；有明确读图负荷，且能纠正按平面方位或东西经机械判断的习惯。",
+      "verification": {
+        "status": "editor_verified_awaiting_independent_review",
+        "method": "实际查看原图，核对箭头方向、三条纬线、0°与180°基准、A—D点位；分别计算六个命题真值。",
+        "figure_paths": ["assets/s21_p18_i12.png"],
+        "independent_check": {"coordinates_lat_lon": {"A": [-50, -90], "B": [-60, -45], "C": [-70, 45], "D": [-70, 135]}, "statements_1_to_6": [true, false, false, true, false, true]},
+        "option_truth": {"A": false, "B": false, "C": false, "D": true}
+      },
+      "edits": []
+    }
+  ],
+  "rejected_recovery_candidates": [
+    {"source_id": "gd-mock-2026h2-s26-q68", "reason": "微观粒子原图目前仅剩结构化关系表；不把转写表直接当原图用于整卷。另有‘反应物分子个数比’措辞需核清。"},
+    {"source_id": "gd-mock-2026h2-s25-q70", "reason": "遗传系谱原图目前仅剩关系表，未获得可核对的原图。本次不凭转写内容声称原图已恢复，也不临时重画后冒称原题保真。"}
+  ],
+  "verification_limits": [
+    "源库未附参考答案；答案为本轮编辑独立推导，不称官方或粉笔原答案。",
+    "程序枚举和不同解法属于本轮交叉检查，不等于另一模型独立审核；Claude审核仍待进行。",
+    "已查看三幅实际保留题图；未逐页获得原始PDF，源PDF对照仍不能声称完成。",
+    "当前仅完成选编核验；整卷生成、状态同步和打印排版另验。"
+  ]
+}
