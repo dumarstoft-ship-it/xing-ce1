@@ -1,0 +1,37 @@
+{
+  "GD2022-XZ-p13-i02": {
+    "script": "redraw.py",
+    "description": "按原图重绘s-t图；共同原点、共同终点高度及两条直线斜率顺序保持一致。",
+    "verification": "人工对照原图核对线段、连接关系、标签和相对位置"
+  },
+  "GD2023-XZ-p09-i01": {
+    "script": "redraw.py",
+    "description": "按原图重绘正方体水平切面，保留底部灰色区域及背面虚线。",
+    "verification": "人工对照原图核对线段、连接关系、标签和相对位置"
+  },
+  "GD2023-XJ-p08-i01": {
+    "script": "redraw.py",
+    "description": "按原图重绘正方体水平切面，保留底部灰色区域及背面虚线。",
+    "verification": "人工对照原图核对线段、连接关系、标签和相对位置"
+  },
+  "GD2023-XZ-p18-i01": {
+    "script": "redraw.py",
+    "description": "按原图重绘斜面、M物体及沿斜面向上的F箭头。",
+    "verification": "人工对照原图核对线段、连接关系、标签和相对位置"
+  },
+  "GD2023-XZ-p21-i01": {
+    "script": "redraw.py",
+    "description": "按原图重绘v-t折线及t₁—t₄、v₁/v₂标记；零点交叉、虚线和正负区域保持一致。",
+    "verification": "人工对照原图核对线段、连接关系、标签和相对位置"
+  },
+  "GD2023-XJ-p22-i01": {
+    "script": "redraw.py",
+    "description": "按原图重绘v-t折线及t₁—t₄、v₁/v₂标记；零点交叉、虚线和正负区域保持一致。",
+    "verification": "人工对照原图核对线段、连接关系、标签和相对位置"
+  },
+  "GD2024-p11-i01": {
+    "script": "redraw.py",
+    "description": "按原图重绘冷碟子与蜡烛示意图；保留相对位置和原文字标签。",
+    "verification": "人工对照原图核对线段、连接关系、标签和相对位置"
+  }
+}

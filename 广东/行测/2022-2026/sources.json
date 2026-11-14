@@ -1,0 +1,109 @@
+{
+  "commit": "4cb13da865dcef6bb6d3731f8ae2981186a1a314",
+  "sources": [
+    {
+      "path": "真题/2022年广东公务员考试行测试题（乡镇）.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07dac0f4d5745cf721f0e24bc20e01d8c40634db",
+      "size": 931595,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/07dac0f4d5745cf721f0e24bc20e01d8c40634db"
+    },
+    {
+      "path": "真题/2022年广东公务员考试行测试题（县级).pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "134c1ce0809ade748ee3c97d51ca223f2ca79e4e",
+      "size": 949960,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/134c1ce0809ade748ee3c97d51ca223f2ca79e4e"
+    },
+    {
+      "path": "真题/2023年广东省公务员录用考试《行测》题（乡镇卷）.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e015b7b4346165b0f4bade09911e0f05789b538",
+      "size": 896099,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/6e015b7b4346165b0f4bade09911e0f05789b538"
+    },
+    {
+      "path": "真题/2023年广东省公务员录用考试《行测》题（县级卷）.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a583697457f709026434cdeb47417db77695c52d",
+      "size": 1006603,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/a583697457f709026434cdeb47417db77695c52d"
+    },
+    {
+      "path": "真题/2024年广东省公务员录用考试《行测》题（网友回忆版）.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5530a1e096dfdd0c07788a88b40b8a62df9649e",
+      "size": 1032334,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/f5530a1e096dfdd0c07788a88b40b8a62df9649e"
+    },
+    {
+      "path": "真题/2025年广东省公务员录用考试《行测》题.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3831aaa5dd98f23b97ef7225b4aadd963f006f5",
+      "size": 971527,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/e3831aaa5dd98f23b97ef7225b4aadd963f006f5"
+    },
+    {
+      "path": "真题/2026年广东省公务员录用考试《行测》题（网友回忆版）(1).pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf4bad4c94cb194ac204e6760fbd4d8598f4e7ed",
+      "size": 1352627,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/cf4bad4c94cb194ac204e6760fbd4d8598f4e7ed"
+    },
+    {
+      "path": "答案解析/2022年广东公务员考试行测试题（乡镇）答案解析.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed6a09469bdcd9603dbab5b50eb821e5fb2bdcb6",
+      "size": 1132992,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/ed6a09469bdcd9603dbab5b50eb821e5fb2bdcb6"
+    },
+    {
+      "path": "答案解析/2022年广东公务员考试行测试题（县级）答案解析.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2561f541280d889fd9e43069630132f0ab327e93",
+      "size": 1294748,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/2561f541280d889fd9e43069630132f0ab327e93"
+    },
+    {
+      "path": "答案解析/2023年广东省公务员录用考试《行测》题（乡镇卷）答案解析.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e79ae4c0cd975538d443bba6882ac81ed4e7169f",
+      "size": 787630,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/e79ae4c0cd975538d443bba6882ac81ed4e7169f"
+    },
+    {
+      "path": "答案解析/2023年广东省公务员录用考试《行测》题（县级卷）答案解析.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f51d7e9be693823b6e1fcdbcac1bf0356077fe4",
+      "size": 993680,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/8f51d7e9be693823b6e1fcdbcac1bf0356077fe4"
+    },
+    {
+      "path": "答案解析/2024年广东省公务员录用考试《行测》答案及解析.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fdd6372007785a32a45876ef513ed4af30ea693d",
+      "size": 1319491,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/fdd6372007785a32a45876ef513ed4af30ea693d"
+    },
+    {
+      "path": "答案解析/2025年广东省公务员录用考试《行测》答案及解析.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81c12ee591aedc6f4065a54f0d21e290fcfde1fd",
+      "size": 2084997,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/81c12ee591aedc6f4065a54f0d21e290fcfde1fd"
+    }
+  ]
+}

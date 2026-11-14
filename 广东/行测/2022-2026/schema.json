@@ -1,0 +1,385 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "广东行测2022—2026 每行题目结构",
+  "type": "object",
+  "required": [
+    "id",
+    "province",
+    "exam",
+    "subject",
+    "paper_id",
+    "paper_variant",
+    "source_edition",
+    "stem",
+    "year",
+    "question_number",
+    "section",
+    "question_type",
+    "options",
+    "figures",
+    "material",
+    "answer",
+    "source",
+    "notes"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "province": {
+      "type": "string"
+    },
+    "exam": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "paper_id": {
+      "type": "string"
+    },
+    "paper_variant": {
+      "type": "string"
+    },
+    "source_edition": {
+      "type": "string"
+    },
+    "stem": {
+      "type": "string"
+    },
+    "year": {
+      "type": "integer",
+      "minimum": 2022,
+      "maximum": 2026
+    },
+    "question_number": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 100
+    },
+    "section": {
+      "enum": [
+        "政治理论",
+        "常识判断",
+        "言语理解与表达",
+        "数量关系",
+        "判断推理",
+        "科学推理",
+        "资料分析"
+      ]
+    },
+    "question_type": {
+      "enum": [
+        "true_false",
+        "single_choice",
+        "multiple_choice"
+      ]
+    },
+    "options": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "label",
+          "text",
+          "image_refs"
+        ],
+        "properties": {
+          "label": {
+            "enum": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          "text": {
+            "type": "string"
+          },
+          "image_refs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "image_id",
+                "label_in_image"
+              ],
+              "properties": {
+                "image_id": {
+                  "type": "string"
+                },
+                "label_in_image": {
+                  "enum": [
+                    "A",
+                    "B",
+                    "C",
+                    "D",
+                    null
+                  ]
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "figures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "type",
+          "image_id",
+          "path",
+          "role",
+          "option_label",
+          "method",
+          "alt",
+          "transcription"
+        ],
+        "properties": {
+          "type": {
+            "const": "image"
+          },
+          "image_id": {
+            "type": "string"
+          },
+          "path": {
+            "type": "string"
+          },
+          "role": {
+            "enum": [
+              "question",
+              "question_and_options",
+              "option",
+              "material"
+            ]
+          },
+          "option_label": {
+            "enum": [
+              "A",
+              "B",
+              "C",
+              "D",
+              null
+            ]
+          },
+          "method": {
+            "enum": [
+              "pdf_render_crop",
+              "code_redraw"
+            ]
+          },
+          "alt": {
+            "type": "string"
+          },
+          "transcription": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "material": {
+      "anyOf": [
+        {
+          "type": "object",
+          "required": [
+            "id",
+            "question_numbers",
+            "source_pages",
+            "content"
+          ],
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "question_numbers": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 1
+              }
+            },
+            "source_pages": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 1
+              }
+            },
+            "content": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "oneOf": [
+                  {
+                    "type": "object",
+                    "required": [
+                      "type",
+                      "image_id",
+                      "path",
+                      "role",
+                      "option_label",
+                      "method",
+                      "alt",
+                      "transcription"
+                    ],
+                    "properties": {
+                      "type": {
+                        "const": "image"
+                      },
+                      "image_id": {
+                        "type": "string"
+                      },
+                      "path": {
+                        "type": "string"
+                      },
+                      "role": {
+                        "enum": [
+                          "question",
+                          "question_and_options",
+                          "option",
+                          "material"
+                        ]
+                      },
+                      "option_label": {
+                        "enum": [
+                          "A",
+                          "B",
+                          "C",
+                          "D",
+                          null
+                        ]
+                      },
+                      "method": {
+                        "enum": [
+                          "pdf_render_crop",
+                          "code_redraw"
+                        ]
+                      },
+                      "alt": {
+                        "type": "string"
+                      },
+                      "transcription": {
+                        "type": "string"
+                      }
+                    },
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "required": [
+                      "type",
+                      "text"
+                    ],
+                    "properties": {
+                      "type": {
+                        "const": "text"
+                      },
+                      "text": {
+                        "type": "string"
+                      }
+                    },
+                    "additionalProperties": false
+                  }
+                ]
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "answer": {
+      "type": "object",
+      "required": [
+        "status",
+        "values",
+        "source_pages",
+        "note"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "known",
+            "disputed",
+            "missing"
+          ]
+        },
+        "values": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "正确",
+                "错误"
+              ]
+            }
+          }
+        },
+        "source_pages": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "question_pdf",
+        "question_pages",
+        "answer_pdf",
+        "repository_commit"
+      ],
+      "properties": {
+        "question_pdf": {
+          "type": "string"
+        },
+        "question_pages": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "answer_pdf": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "repository_commit": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}
