@@ -1,27 +1,23 @@
 {
   "paper_id": "M01",
-  "version": "0.1.0",
-  "source_snapshot": "bf3c5e34e8c3db6af71e427aabe9b438978c9935",
+  "version": "0.2.0",
+  "source_snapshot": "ae6e51eff6cbd685de0a8db61ea02b84e7d478c5",
   "target_question_count": 90,
-  "missing_numbers": [
-    66,
-    67,
-    68,
-    69,
-    70
-  ],
+  "missing_numbers": [],
   "completed_section_counts": {
     "政治理论": 10,
     "常识应用": 5,
     "言语理解与表达": 15,
     "数量关系": 15,
     "判断推理": 20,
-    "资料分析": 20
+    "资料分析": 20,
+    "科学推理": 5
   },
   "date": "2026-11-15",
   "date_timezone": "Asia/Shanghai",
-  "status": "review_draft_incomplete",
+  "status": "review_draft_complete",
   "external_review": "pending_claude",
   "printing_status": "not_started",
-  "structure_basis": "2025、2026广东原题本顺序及题量；不将其表述为未来考试的固定承诺"
+  "structure_basis": "2025、2026广东原题本顺序及题量；不将其表述为未来考试的固定承诺",
+  "prior_source_snapshot": "bf3c5e34e8c3db6af71e427aabe9b438978c9935"
 }

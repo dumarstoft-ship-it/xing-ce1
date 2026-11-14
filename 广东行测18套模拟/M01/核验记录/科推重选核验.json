@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "date": "2026-11-15",
+  "scope": "Only M01-Q066 through M01-Q070",
+  "added_science_count": 5,
+  "total_count": 90,
+  "unchanged_existing_question_records": 85,
+  "unchanged_existing_question_bodies": 85,
+  "existing_85_canonical_sha256": "d305f7da1436705eda4dfb6a72ee146acc9b65f35329ffcbfff446212adb9c8e",
+  "initial_85_selection_blob": "bc3efa6f62abf94540606c369a52d0cc0a794a2a",
+  "science_source_sha256": "9a01a34c6d775e7f6c6b15b6822aaf84e72e0167e929b7128c47f49dbd1bf99a",
+  "new_source_ids": [
+    "gd-mock-2026h2-s25-q67",
+    "gd-mock-2026h2-s20-q67",
+    "gd-mock-2026h2-s20-q69",
+    "gd-mock-2026h2-s26-q69",
+    "gd-mock-2026h2-s21-q70"
+  ],
+  "unique_science_figures": [
+    "模考/2026下半年广东卷_16-33季_AI可读/assets/s20_p18_i08.png",
+    "模考/2026下半年广东卷_16-33季_AI可读/assets/s21_p18_i12.png",
+    "模考/2026下半年广东卷_16-33季_AI可读/assets/s25_p17_i00.png"
+  ],
+  "all_90_ledger_entries_present": true,
+  "structure_validation": "PASS",
+  "source_answers_available": false,
+  "external_review": "pending_claude",
+  "print_ready": false,
+  "limits": [
+    "Original PDF pages were not available for a full transcription comparison.",
+    "Model checks and manual derivation are not a separate-model review."
+  ]
+}

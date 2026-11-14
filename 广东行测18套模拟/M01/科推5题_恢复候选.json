@@ -1,6 +1,6 @@
 {
   "paper_id": "M01",
-  "status": "RECONSTRUCTED_CANDIDATES_NOT_PRIOR_EXACT_SELECTION",
+  "status": "SUPERSEDED_NOT_FOR_USE",
   "prior_selection_recovered": false,
   "not_applied_to_official_M01_selection": true,
   "checked_on": "2026-11-15",
@@ -70,5 +70,7 @@
       "image": "assets/s21_p18_i12.png",
       "check": "已实际查看极地图，核对圆环纬线、经度基准及箭头方向"
     }
-  ]
+  ],
+  "superseded_by": "science_selection_v2.json",
+  "note": "保留为历史恢复候选；本轮正式重选替换其中两题。不得据此覆盖selection.json。"
 }

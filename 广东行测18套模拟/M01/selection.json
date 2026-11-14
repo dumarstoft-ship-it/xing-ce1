@@ -7490,6 +7490,899 @@
     }
   },
   {
+    "number": 66,
+    "source_id": "gd-mock-2026h2-s25-q67",
+    "subsection": "力学",
+    "answer": "D",
+    "analysis": "先只看A。A向左匀速，水平方向合力为零，所以B对A的滑动摩擦力向右，大小恰为5 N；另有重力和支持力，A共受4个力，A项正确。再看B：A对B的摩擦力向左、大小5 N；B在10 N向右拉力下保持静止，因此地面对B的静摩擦力向左、大小也是5 N。B还受自身重力、A的压力、地面支持力，连同上述三个水平力共6个力，B、C项正确。A对B的摩擦力是5 N而非小于5 N，故应选D。也可把A、B作为整体，外部向右10 N、向左5 N，立即得到地面向左摩擦力5 N。切勿把作用在不同物体上的一对作用力、反作用力列在同一个受力图中。",
+    "selection_reason": "同时处理两个物体、两层接触面、静摩擦与滑动摩擦；既能分体受力，也能用整体法交叉核验，不是只认一句定义。",
+    "verification": {
+      "status": "editor_verified_awaiting_independent_review",
+      "method": "实际查看源图，逐项受力分析；整体法与分体法交叉核验；程序检查水平合力。",
+      "figure_paths": [
+        "assets/s25_p17_i00.png"
+      ],
+      "figure_observation": "F1=10 N作用于下方B且向右；F2=5 N作用于上方A且向左。",
+      "option_truth": {
+        "A": true,
+        "B": true,
+        "C": true,
+        "D": false
+      },
+      "select_false_statement": true,
+      "independent_check": {
+        "A水平合力_N": 0,
+        "B水平合力_N": 0,
+        "A对B摩擦力大小_N": 5,
+        "地面对B摩擦力大小_N": 5
+      },
+      "checked_on": "2026-11-15"
+    },
+    "edits": [],
+    "section": "科学推理",
+    "question_type": "single_choice",
+    "source_bank": "guangdong_mock",
+    "source_file": "模考/2026下半年广东卷_16-33季_AI可读/科学推理_90题.jsonl",
+    "source_question": {
+      "id": "gd-mock-2026h2-s25-q67",
+      "season": 25,
+      "section": "科学推理",
+      "number": 67,
+      "material_id": null,
+      "stem": [
+        {
+          "type": "text",
+          "text": "如图所示，外力 $F_1$ 大小为10N，作用于物块B上，外力 $F_2$ 大小为5N，作用于物块A上。物块B静止于粗糙程度均匀的水平地面上，物块A在物块B上向左做匀速直线运动，假设物块B足够长，下列说法不正确的是（    ）。"
+        },
+        {
+          "type": "figure",
+          "asset_id": "s25_p17_i00",
+          "path": "assets/s25_p17_i00.png",
+          "width_px": 406,
+          "height_px": 138,
+          "caption": "原卷第17页，第67题图"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "text": "物块A共受到4个力的作用"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "text": "物块B共受到6个力的作用"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "text": "地面对物块B的摩擦力一定小于10N"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "text": "物块A对物块B的摩擦力一定小于5N"
+          }
+        ]
+      },
+      "source_pages": [
+        16,
+        17
+      ],
+      "source_spans": [
+        {
+          "pdf_page": 16,
+          "bbox_pt": [
+            52.402,
+            704.736,
+            523.043,
+            717.154
+          ]
+        },
+        {
+          "pdf_page": 16,
+          "bbox_pt": [
+            68.048,
+            724.503,
+            517.221,
+            736.922
+          ]
+        },
+        {
+          "pdf_page": 16,
+          "bbox_pt": [
+            68.048,
+            744.271,
+            236.697,
+            756.689
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            67.951,
+            90.001,
+            294.044,
+            166.601
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            68.048,
+            180.276,
+            433.471,
+            192.694
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            68.048,
+            200.043,
+            484.027,
+            212.462
+          ]
+        }
+      ],
+      "source_asset_ids": [
+        "s25_p16_i00",
+        "s25_p16_i01",
+        "s25_p17_i00"
+      ],
+      "answer": null,
+      "source": {
+        "source_name": "2026下半年省考第二十五季行测模考大赛（广东卷）.pdf",
+        "source_sha256": "17838db5023427dbdf9f18afbcb27ff8d57750e4bfe7da7700db253f5ff55b18",
+        "pages": 23
+      },
+      "material": null
+    },
+    "source_answer": null,
+    "source_locators": {
+      "source_name": "2026下半年省考第二十五季行测模考大赛（广东卷）.pdf",
+      "source_pages": [
+        16,
+        17
+      ],
+      "source_sha256": "17838db5023427dbdf9f18afbcb27ff8d57750e4bfe7da7700db253f5ff55b18"
+    }
+  },
+  {
+    "number": 67,
+    "source_id": "gd-mock-2026h2-s20-q67",
+    "subsection": "电学",
+    "answer": "B",
+    "analysis": "先认清接线：电源两端之间有R1、R2串联的支路，以及R3支路、R4支路；A1测总电流，A2测R3、R4两支路的电流之和，V跨接电源两端，不只测R2。设电源电压为U，则V=U，I_A1=U/(R1+R2)+U/R3+U/R4，I_A2=U/R3+U/R4。温度下降使R2减小，上方支路电流增大，总电流随之增大，而电压表不变，B正确、A错误。光照增强使R3减小，A1、A2都增大，C错误；光照减弱使R3增大，A1、A2都减小，D错误。此处按中学理想电表模型，分别讨论温度或光照变化，其他条件不变。",
+    "selection_reason": "电路外观复杂，但关键是节点与支路还原，再把局部电阻变化传到不同电表；能训练避免看到变阻就笼统判断所有电表示数。",
+    "verification": {
+      "status": "editor_verified_awaiting_independent_review",
+      "method": "实际查看原电路图，逐线确认电压表两端及电流表位置；正电阻条件下作单调性推导，并用32组参数补充数值检查。",
+      "figure_paths": [
+        "assets/s20_p18_i08.png"
+      ],
+      "option_truth": {
+        "A": false,
+        "B": true,
+        "C": false,
+        "D": false
+      },
+      "independent_check": {
+        "V": "U",
+        "A1": "U/(R1+R2)+U/R3+U/R4",
+        "A2": "U/R3+U/R4",
+        "positive_parameter_cases": 32
+      },
+      "limits": "数值抽查不是普遍性证明；普遍性来自上述表达式的单调性。",
+      "checked_on": "2026-11-15"
+    },
+    "edits": [],
+    "section": "科学推理",
+    "question_type": "single_choice",
+    "source_bank": "guangdong_mock",
+    "source_file": "模考/2026下半年广东卷_16-33季_AI可读/科学推理_90题.jsonl",
+    "source_question": {
+      "id": "gd-mock-2026h2-s20-q67",
+      "season": 20,
+      "section": "科学推理",
+      "number": 67,
+      "material_id": null,
+      "stem": [
+        {
+          "type": "text",
+          "text": "如图为某用电器的电路图， $R_1$ 、 $R_4$ 是定值电阻， $R_2$ 是温敏电阻，随着环境温度的升高， $R_2$的阻值会变大； $R_3$ 是光敏电阻，随着环境光照强度的增大， $R_3$ 的阻值会变小；V表示电压表， $A_1$ 、 $A_2$ 均表示电流表，电源电压保持不变，闭合开关S后，下列说法正确的是（    ）。"
+        },
+        {
+          "type": "figure",
+          "asset_id": "s20_p18_i08",
+          "path": "assets/s20_p18_i08.png",
+          "width_px": 348,
+          "height_px": 358,
+          "caption": "原卷第18页，第67题图"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "text": "若环境温度下降，则V的示数变小， $A_1$ 的示数变大"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "text": "若环境温度下降，则V的示数不变， $A_1$ 的示数变大"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "text": "若环境光照强度增大，则 $A_1$ 的示数变大， $A_2$ 的示数变小"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "text": "若环境光照强度减弱，则 $A_1$ 的示数不变， $A_2$ 的示数变大"
+          }
+        ]
+      },
+      "source_pages": [
+        18
+      ],
+      "source_spans": [
+        {
+          "pdf_page": 18,
+          "bbox_pt": [
+            52.402,
+            93.792,
+            506.653,
+            106.211
+          ]
+        },
+        {
+          "pdf_page": 18,
+          "bbox_pt": [
+            68.048,
+            113.56,
+            510.585,
+            125.978
+          ]
+        },
+        {
+          "pdf_page": 18,
+          "bbox_pt": [
+            68.048,
+            133.945,
+            520.629,
+            146.363
+          ]
+        },
+        {
+          "pdf_page": 18,
+          "bbox_pt": [
+            67.951,
+            149.921,
+            261.303,
+            348.833
+          ]
+        },
+        {
+          "pdf_page": 18,
+          "bbox_pt": [
+            68.048,
+            362.508,
+            326.845,
+            374.927
+          ]
+        },
+        {
+          "pdf_page": 18,
+          "bbox_pt": [
+            68.048,
+            382.276,
+            326.247,
+            394.694
+          ]
+        },
+        {
+          "pdf_page": 18,
+          "bbox_pt": [
+            68.048,
+            402.043,
+            355.956,
+            414.462
+          ]
+        },
+        {
+          "pdf_page": 18,
+          "bbox_pt": [
+            68.048,
+            422.429,
+            356.555,
+            434.848
+          ]
+        }
+      ],
+      "source_asset_ids": [
+        "s20_p18_i00",
+        "s20_p18_i01",
+        "s20_p18_i02",
+        "s20_p18_i03",
+        "s20_p18_i04",
+        "s20_p18_i05",
+        "s20_p18_i06",
+        "s20_p18_i07",
+        "s20_p18_i08",
+        "s20_p18_i09",
+        "s20_p18_i10",
+        "s20_p18_i11",
+        "s20_p18_i12",
+        "s20_p18_i13",
+        "s20_p18_i14"
+      ],
+      "answer": null,
+      "source": {
+        "source_name": "2026下半年省考第二十季行测模考大赛（广东卷）.pdf",
+        "source_sha256": "67acf246cdf2bde38839a2b0e056f6f535ba1146600404847fbaeed8ab6a5025",
+        "pages": 25
+      },
+      "material": null
+    },
+    "source_answer": null,
+    "source_locators": {
+      "source_name": "2026下半年省考第二十季行测模考大赛（广东卷）.pdf",
+      "source_pages": [
+        18
+      ],
+      "source_sha256": "67acf246cdf2bde38839a2b0e056f6f535ba1146600404847fbaeed8ab6a5025"
+    }
+  },
+  {
+    "number": 68,
+    "source_id": "gd-mock-2026h2-s20-q69",
+    "subsection": "化学",
+    "answer": "B",
+    "analysis": "题目问哪组实验不能确定三种金属的活动性顺序，不是问反应能否发生。①铁能置换硫酸铜中的铜，给出Fe>Cu；②铜能置换硝酸银中的银，给出Cu>Ag；③银不能置换硫酸铜中的铜，也给出Cu>Ag；④铁与稀盐酸反应而铜不反应，给出Fe>H>Cu，因此Fe>Cu。于是A的①③、C的②④、D的③④都能连成Fe>Cu>Ag。B的①④反复验证的只是Fe与Cu的关系，完全没有把Ag与其他金属联系起来，无法单凭这组实验排定三者顺序，故选B。不要把事先背过的顺序，当成所选实验已经提供的证据。",
+    "selection_reason": "将科学知识转化为实验所提供的比较关系，检查证据是否连通；区别‘事实已知’和‘方案能验证’，有明确推理价值。",
+    "verification": {
+      "status": "editor_verified_awaiting_independent_review",
+      "method": "逐项写出置换反应提供的不等关系；枚举Fe、Cu、Ag、H的24种严格顺序，检查每个组合是否唯一确定三金属顺序。",
+      "option_can_determine_order": {
+        "A": true,
+        "B": false,
+        "C": true,
+        "D": true
+      },
+      "independent_check": {
+        "compatible_metal_orders": {
+          "A": [
+            "Fe>Cu>Ag"
+          ],
+          "B": [
+            "Ag>Fe>Cu",
+            "Fe>Ag>Cu",
+            "Fe>Cu>Ag"
+          ],
+          "C": [
+            "Fe>Cu>Ag"
+          ],
+          "D": [
+            "Fe>Cu>Ag"
+          ]
+        }
+      },
+      "model_boundary": "枚举中的其他顺序是用于说明所选观测的信息不足，不是在声称实际金属顺序可随意改变；按常规实验条件，不讨论钝化等旁支。",
+      "supporting_reference": "https://edu.rsc.org/experiments/the-reactivity-of-iron/1779.article",
+      "checked_on": "2026-11-15"
+    },
+    "edits": [],
+    "section": "科学推理",
+    "question_type": "single_choice",
+    "source_bank": "guangdong_mock",
+    "source_file": "模考/2026下半年广东卷_16-33季_AI可读/科学推理_90题.jsonl",
+    "source_question": {
+      "id": "gd-mock-2026h2-s20-q69",
+      "season": 20,
+      "section": "科学推理",
+      "number": 69,
+      "material_id": null,
+      "stem": [
+        {
+          "type": "text",
+          "text": "小明在学习完与金属活动性相关的知识后，想自己动手验证Fe、Cu、Ag三种金属活动性的强弱，下列实验方案的组合不能达到其目的的是（    ）。\n①将Fe放入 $\\mathrm{CuSO_4}$ 溶液\n②将Cu放入 $\\mathrm{AgNO_3}$ 溶液\n③将Ag放入 $\\mathrm{CuSO_4}$ 溶液\n④将Fe、Cu分别放入稀盐酸"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "text": "①③"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "text": "①④"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "text": "②④"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "text": "③④"
+          }
+        ]
+      },
+      "source_pages": [
+        18
+      ],
+      "source_spans": [
+        {
+          "pdf_page": 18,
+          "bbox_pt": [
+            52.402,
+            531.769,
+            521.322,
+            544.187
+          ]
+        },
+        {
+          "pdf_page": 18,
+          "bbox_pt": [
+            68.048,
+            551.536,
+            337.622,
+            563.955
+          ]
+        },
+        {
+          "pdf_page": 18,
+          "bbox_pt": [
+            68.048,
+            571.304,
+            183.613,
+            583.723
+          ]
+        },
+        {
+          "pdf_page": 18,
+          "bbox_pt": [
+            68.048,
+            591.69,
+            186.682,
+            604.108
+          ]
+        },
+        {
+          "pdf_page": 18,
+          "bbox_pt": [
+            68.048,
+            611.457,
+            186.055,
+            623.876
+          ]
+        },
+        {
+          "pdf_page": 18,
+          "bbox_pt": [
+            68.048,
+            631.842,
+            204.672,
+            644.261
+          ]
+        },
+        {
+          "pdf_page": 18,
+          "bbox_pt": [
+            68.048,
+            654.699,
+            445.94,
+            667.117
+          ]
+        }
+      ],
+      "source_asset_ids": [
+        "s20_p18_i15",
+        "s20_p18_i16",
+        "s20_p18_i17"
+      ],
+      "answer": null,
+      "source": {
+        "source_name": "2026下半年省考第二十季行测模考大赛（广东卷）.pdf",
+        "source_sha256": "67acf246cdf2bde38839a2b0e056f6f535ba1146600404847fbaeed8ab6a5025",
+        "pages": 25
+      },
+      "material": null
+    },
+    "source_answer": null,
+    "source_locators": {
+      "source_name": "2026下半年省考第二十季行测模考大赛（广东卷）.pdf",
+      "source_pages": [
+        18
+      ],
+      "source_sha256": "67acf246cdf2bde38839a2b0e056f6f535ba1146600404847fbaeed8ab6a5025"
+    }
+  },
+  {
+    "number": 69,
+    "source_id": "gd-mock-2026h2-s26-q69",
+    "subsection": "生物",
+    "answer": "C",
+    "analysis": "按通常的ABO三等位基因遗传模型，A型可为I^A I^A或I^A i，B型可为I^B I^B或I^B i，AB型为I^A I^B，O型为ii。C项中，AB型亲本只能给出I^A或I^B，O型亲本只能给出i，子女只能为I^A i或I^B i，即A型或B型，不可能为O型，正确。A项可用I^A i×I^B i反驳：A、B、AB、O四种血型均可能出现。B项同样可由这组父母反驳：两人均非O型，仍可生育O型子女。D项可用AB型×AB型反驳：子女可能为AB型，并不要求父母表现型必须分别为A型和B型。核心是把父母表现型展开为可能基因型，再讨论‘可能’与‘必定’，不能只按血型名称拼接。这里是考试所用的常规遗传模型，不把结论外推为涵盖孟买型、cis-AB等罕见情况的临床绝对断言。",
+    "selection_reason": "用六种常规基因型拆解‘只可能、至少一人一定、必定’等全称判断；三项均有明确反例，训练表现型与基因型的区别。",
+    "verification": {
+      "status": "editor_verified_awaiting_independent_review",
+      "method": "枚举6种常规基因型的36组有序亲本组合及全部配子组合；对四项分别验证全称命题或给出反例。",
+      "option_truth": {
+        "A": false,
+        "B": false,
+        "C": true,
+        "D": false
+      },
+      "independent_check": {
+        "parent_genotype_pairs": 36,
+        "AB_x_O_children": [
+          "A",
+          "B"
+        ],
+        "A_heterozygote_x_B_heterozygote_children": [
+          "A",
+          "AB",
+          "B",
+          "O"
+        ],
+        "AB_x_AB_children": [
+          "A",
+          "AB",
+          "B"
+        ]
+      },
+      "model_boundary": "通常三等位基因遗传模型；不讨论罕见变异、基因互作或血型鉴定异常。",
+      "supporting_reference": "https://www.ncbi.nlm.nih.gov/books/NBK2267/",
+      "checked_on": "2026-11-15"
+    },
+    "edits": [],
+    "section": "科学推理",
+    "question_type": "single_choice",
+    "source_bank": "guangdong_mock",
+    "source_file": "模考/2026下半年广东卷_16-33季_AI可读/科学推理_90题.jsonl",
+    "source_question": {
+      "id": "gd-mock-2026h2-s26-q69",
+      "season": 26,
+      "section": "科学推理",
+      "number": 69,
+      "material_id": null,
+      "stem": [
+        {
+          "type": "text",
+          "text": "在ABO血型系统中，下列关于血型遗传的说法正确的是（    ）。"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "text": "若父母一方为A型血，另一方为B型血，则子女只可能是A型血或者B型血"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "text": "若子女出现O型血，则父母双方至少有一人一定是O型血"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "text": "若父母分别为AB型血与O型血，则子女不可能是O型血"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "text": "若子女为AB型血，则父母一方必定是A型血，另一方必定是B型血"
+          }
+        ]
+      },
+      "source_pages": [
+        19
+      ],
+      "source_spans": [
+        {
+          "pdf_page": 19,
+          "bbox_pt": [
+            52.402,
+            395.866,
+            383.921,
+            408.284
+          ]
+        },
+        {
+          "pdf_page": 19,
+          "bbox_pt": [
+            68.048,
+            418.722,
+            435.585,
+            431.141
+          ]
+        },
+        {
+          "pdf_page": 19,
+          "bbox_pt": [
+            68.048,
+            438.49,
+            352.597,
+            450.908
+          ]
+        },
+        {
+          "pdf_page": 19,
+          "bbox_pt": [
+            68.048,
+            458.875,
+            345.882,
+            471.294
+          ]
+        },
+        {
+          "pdf_page": 19,
+          "bbox_pt": [
+            68.048,
+            478.643,
+            401.943,
+            491.061
+          ]
+        }
+      ],
+      "source_asset_ids": [],
+      "answer": null,
+      "source": {
+        "source_name": "2026下半年省考第二十六季行测模考大赛（广东卷）.pdf",
+        "source_sha256": "cd5035fbb9936c5d304aeadfb5f4912624cef4dcf6b9d527ba0dd811cd025c92",
+        "pages": 25
+      },
+      "material": null
+    },
+    "source_answer": null,
+    "source_locators": {
+      "source_name": "2026下半年省考第二十六季行测模考大赛（广东卷）.pdf",
+      "source_pages": [
+        19
+      ],
+      "source_sha256": "cd5035fbb9936c5d304aeadfb5f4912624cef4dcf6b9d527ba0dd811cd025c92"
+    }
+  },
+  {
+    "number": 70,
+    "source_id": "gd-mock-2026h2-s21-q70",
+    "subsection": "地理",
+    "answer": "D",
+    "analysis": "图中自转箭头呈顺时针，因此是从南极上空俯视；同心纬线从外向内依次为50°S、60°S、70°S。由左侧0°经线、右侧180°经线及自转方向可读出：A=(50°S,90°W)，B=(60°S,45°W)，C=(70°S,45°E)，D=(70°S,135°E)。①四点均在南半球，正确；②C、D已达70°S，不是全在中纬度，错误；③C、D位于南极圈以内，不是全在温带，错误；④A、D坐标正确；⑤把B、C经度的东西方向弄反，错误。东西半球通常以20°W和160°E组成的经线圈划分，A、B在西半球，C、D在东半球，⑥正确。故①④⑥成立，选D。不能把‘西经就是西半球’当成普遍规则，本题只是恰好二者对应。",
+    "selection_reason": "同一极地投影联合检查自转方向、经纬度、纬度带和东西半球；有明确读图负荷，且能纠正按平面方位或东西经机械判断的习惯。",
+    "verification": {
+      "status": "editor_verified_awaiting_independent_review",
+      "method": "实际查看原图，核对箭头方向、三条纬线、0°与180°基准、A—D点位；分别计算六个命题真值。",
+      "figure_paths": [
+        "assets/s21_p18_i12.png"
+      ],
+      "independent_check": {
+        "coordinates_lat_lon": {
+          "A": [
+            -50,
+            -90
+          ],
+          "B": [
+            -60,
+            -45
+          ],
+          "C": [
+            -70,
+            45
+          ],
+          "D": [
+            -70,
+            135
+          ]
+        },
+        "statements_1_to_6": [
+          true,
+          false,
+          false,
+          true,
+          false,
+          true
+        ]
+      },
+      "option_truth": {
+        "A": false,
+        "B": false,
+        "C": false,
+        "D": true
+      },
+      "checked_on": "2026-11-15"
+    },
+    "edits": [],
+    "section": "科学推理",
+    "question_type": "single_choice",
+    "source_bank": "guangdong_mock",
+    "source_file": "模考/2026下半年广东卷_16-33季_AI可读/科学推理_90题.jsonl",
+    "source_question": {
+      "id": "gd-mock-2026h2-s21-q70",
+      "season": 21,
+      "section": "科学推理",
+      "number": 70,
+      "material_id": null,
+      "stem": [
+        {
+          "type": "text",
+          "text": "根据下图所示的经纬网，说法正确的是（    ）。"
+        },
+        {
+          "type": "figure",
+          "asset_id": "s21_p18_i12",
+          "path": "assets/s21_p18_i12.png",
+          "width_px": 271,
+          "height_px": 220,
+          "caption": "原卷第18页，第70题图"
+        },
+        {
+          "type": "text",
+          "text": "①A、B、C、D四个地区全部位于南半球\n②A、B、C、D四个地区全部位于中纬度地区\n③A、B、C、D四个地区全部位于温带\n④A、D两个地区的经纬度分别是（ $50^{\\circ}\\mathrm{S}$ ， $90^{\\circ}\\mathrm{W}$ ）、（ $70^{\\circ}\\mathrm{S}$ ， $135^{\\circ}\\mathrm{E}$ ）\n⑤B、C两个地区的经纬度分别是（ $60^{\\circ}\\mathrm{S}$ ， $45^{\\circ}\\mathrm{E}$ ）、（ $70^{\\circ}\\mathrm{S}$ ， $45^{\\circ}\\mathrm{W}$ ）\n⑥A、B两个地区位于西半球，C、D两个地区位于东半球"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "text": "①③⑤"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "text": "①⑤⑥"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "text": "②④⑥"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "text": "①④⑥"
+          }
+        ]
+      },
+      "source_pages": [
+        18,
+        19
+      ],
+      "source_spans": [
+        {
+          "pdf_page": 18,
+          "bbox_pt": [
+            52.402,
+            619.488,
+            303.98,
+            631.906
+          ]
+        },
+        {
+          "pdf_page": 18,
+          "bbox_pt": [
+            67.951,
+            635.464,
+            218.679,
+            757.776
+          ]
+        },
+        {
+          "pdf_page": 19,
+          "bbox_pt": [
+            68.048,
+            93.791,
+            267.462,
+            106.21
+          ]
+        },
+        {
+          "pdf_page": 19,
+          "bbox_pt": [
+            68.048,
+            113.559,
+            289.89,
+            125.978
+          ]
+        },
+        {
+          "pdf_page": 19,
+          "bbox_pt": [
+            68.048,
+            133.945,
+            256.248,
+            146.363
+          ]
+        },
+        {
+          "pdf_page": 19,
+          "bbox_pt": [
+            68.048,
+            153.712,
+            420.865,
+            166.131
+          ]
+        },
+        {
+          "pdf_page": 19,
+          "bbox_pt": [
+            68.048,
+            174.098,
+            414.099,
+            186.517
+          ]
+        },
+        {
+          "pdf_page": 19,
+          "bbox_pt": [
+            68.048,
+            193.866,
+            345.959,
+            206.284
+          ]
+        },
+        {
+          "pdf_page": 19,
+          "bbox_pt": [
+            68.048,
+            216.722,
+            457.154,
+            229.141
+          ]
+        }
+      ],
+      "source_asset_ids": [
+        "s21_p18_i12",
+        "s21_p19_i00",
+        "s21_p19_i01",
+        "s21_p19_i02",
+        "s21_p19_i03",
+        "s21_p19_i04",
+        "s21_p19_i05",
+        "s21_p19_i06",
+        "s21_p19_i07"
+      ],
+      "answer": null,
+      "source": {
+        "source_name": "2026下半年省考第二十一季行测模考大赛（广东卷）.pdf",
+        "source_sha256": "b17d5b3baa812dc95bc5a6f7dd4d8bd2c5e0bacb4b5e74fb9f1ca227cd61b1d9",
+        "pages": 24
+      },
+      "material": null
+    },
+    "source_answer": null,
+    "source_locators": {
+      "source_name": "2026下半年省考第二十一季行测模考大赛（广东卷）.pdf",
+      "source_pages": [
+        18,
+        19
+      ],
+      "source_sha256": "b17d5b3baa812dc95bc5a6f7dd4d8bd2c5e0bacb4b5e74fb9f1ca227cd61b1d9"
+    }
+  },
+  {
     "number": 71,
     "section": "资料分析",
     "subsection": null,

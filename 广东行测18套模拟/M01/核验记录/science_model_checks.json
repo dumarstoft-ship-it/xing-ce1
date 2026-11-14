@@ -1,0 +1,172 @@
+{
+  "status": "PASS",
+  "answers": {
+    "66": "D",
+    "67": "B",
+    "68": "B",
+    "69": "C",
+    "70": "D"
+  },
+  "Q66": {
+    "A_net_horizontal_N": 0,
+    "B_net_horizontal_N": 0,
+    "friction_A_on_B_N": -5,
+    "friction_ground_on_B_N": -5,
+    "option_truth": {
+      "A": true,
+      "B": true,
+      "C": true,
+      "D": false
+    }
+  },
+  "Q67": {
+    "analytic_formulas": {
+      "V": "U",
+      "A1": "U/(R1+R2)+U/R3+U/R4",
+      "A2": "U/R3+U/R4"
+    },
+    "positive_parameter_cases": 32,
+    "option_truth": {
+      "A": false,
+      "B": true,
+      "C": false,
+      "D": false
+    },
+    "note": "Numerical checks supplement, not replace, the monotonic symbolic proof."
+  },
+  "Q68": {
+    "compatible_metal_orders_by_option": {
+      "A": [
+        "Fe>Cu>Ag"
+      ],
+      "B": [
+        "Ag>Fe>Cu",
+        "Fe>Ag>Cu",
+        "Fe>Cu>Ag"
+      ],
+      "C": [
+        "Fe>Cu>Ag"
+      ],
+      "D": [
+        "Fe>Cu>Ag"
+      ]
+    }
+  },
+  "Q69": {
+    "model": "ordinary three-allele Mendelian ABO; rare variants excluded",
+    "parental_genotype_pairs_checked": 36,
+    "option_truth": {
+      "A": false,
+      "B": false,
+      "C": true,
+      "D": false
+    },
+    "possible_child_phenotypes_by_parent_phenotype": {
+      "A x A": [
+        "A",
+        "O"
+      ],
+      "A x B": [
+        "A",
+        "AB",
+        "B",
+        "O"
+      ],
+      "A x AB": [
+        "A",
+        "AB",
+        "B"
+      ],
+      "A x O": [
+        "A",
+        "O"
+      ],
+      "B x A": [
+        "A",
+        "AB",
+        "B",
+        "O"
+      ],
+      "B x B": [
+        "B",
+        "O"
+      ],
+      "B x AB": [
+        "A",
+        "AB",
+        "B"
+      ],
+      "B x O": [
+        "B",
+        "O"
+      ],
+      "AB x A": [
+        "A",
+        "AB",
+        "B"
+      ],
+      "AB x B": [
+        "A",
+        "AB",
+        "B"
+      ],
+      "AB x AB": [
+        "A",
+        "AB",
+        "B"
+      ],
+      "AB x O": [
+        "A",
+        "B"
+      ],
+      "O x A": [
+        "A",
+        "O"
+      ],
+      "O x B": [
+        "B",
+        "O"
+      ],
+      "O x AB": [
+        "A",
+        "B"
+      ],
+      "O x O": [
+        "O"
+      ]
+    }
+  },
+  "Q70": {
+    "coordinates_lat_lon_degrees": {
+      "A": [
+        -50,
+        -90
+      ],
+      "B": [
+        -60,
+        -45
+      ],
+      "C": [
+        -70,
+        45
+      ],
+      "D": [
+        -70,
+        135
+      ]
+    },
+    "statements_1_to_6": [
+      true,
+      false,
+      false,
+      true,
+      false,
+      true
+    ]
+  },
+  "limits": [
+    "These checks verify models and option logic, not source-PDF transcription.",
+    "Images were inspected separately; coordinates and circuit topology are manual inputs.",
+    "Not a second model or Claude review."
+  ]
+}

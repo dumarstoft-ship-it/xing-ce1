@@ -1,22 +1,17 @@
 {
   "paper_id": "M01",
-  "checked_version": "0.1.0",
+  "checked_version": "0.2.0",
   "content_validation": "PASS",
   "target_count": 90,
-  "actual_count": 85,
-  "missing_numbers": [
-    66,
-    67,
-    68,
-    69,
-    70
-  ],
+  "actual_count": 90,
+  "missing_numbers": [],
   "completed_section_counts": {
     "政治理论": 10,
     "常识应用": 5,
     "言语理解与表达": 15,
     "数量关系": 15,
     "判断推理": 20,
+    "科学推理": 5,
     "资料分析": 20
   },
   "material_groups": {
@@ -49,15 +44,16 @@
       90
     ]
   },
-  "unique_figure_files": 5,
+  "unique_figure_files": 8,
   "errors": [],
-  "is_complete_paper": false,
+  "is_complete_paper": true,
   "print_ready": false,
   "external_review": "pending_claude",
   "source_file_sha256": {
     "江浙行测_AI题库/questions.jsonl": "07b748dd27d44132d7734279306f724981a89de028d19d229c989f00fd9b7c93",
     "国考/言语理解/2016-2025/all.jsonl": "f3e468935dadeaa7dcdd778bd59da40f2100c53012ab161c251818f3e3313ba9",
-    "模考/2026下半年广东卷_16-33季_AI可读/全部题目.jsonl": "172a2b7dbe49b2e321fed272499a2c23fbfaca584bd38c01ec53f08f3c284c35"
+    "模考/2026下半年广东卷_16-33季_AI可读/全部题目.jsonl": "12fb48ab01e38b88ff19d85e59e463730f290407350207e00afe318f597fa3b9",
+    "模考/2026下半年广东卷_16-33季_AI可读/科学推理_90题.jsonl": "9a01a34c6d775e7f6c6b15b6822aaf84e72e0167e929b7128c47f49dbd1bf99a"
   },
   "limits": [
     "结构检查不是答案正确性证明；逐题推导与内部复核记录另存。",
