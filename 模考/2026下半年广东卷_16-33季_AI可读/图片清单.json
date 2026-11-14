@@ -1,0 +1,3142 @@
+[
+  {
+    "id": "s16_p11_i00",
+    "path": "assets/s16_p11_i00.png",
+    "season": 16,
+    "section": "判断推理",
+    "question_number": 46,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      90.0,
+      401.53,
+      248.141
+    ],
+    "width_px": 600,
+    "height_px": 284,
+    "sha256": "1e60b33b644ffe245f0ea6d35009688668d643a8907e8b56515638a6157a2b2e",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s16_p11_i01",
+    "path": "assets/s16_p11_i01.png",
+    "season": 16,
+    "section": "判断推理",
+    "question_number": 47,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      300.649,
+      290.337,
+      558.863
+    ],
+    "width_px": 400,
+    "height_px": 465,
+    "sha256": "7a1b4bf9671d141f0c2f686bb18c9add96b0e52a126d12a01a113e895849d809",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s16_p11_i02",
+    "path": "assets/s16_p11_i02.png",
+    "season": 16,
+    "section": "判断推理",
+    "question_number": 48,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      611.371,
+      401.53,
+      704.032
+    ],
+    "width_px": 600,
+    "height_px": 166,
+    "sha256": "c2be1100e5762be1599166931d196742a44d14d05903468689bbb1623616c6d2",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s16_p12_i00",
+    "path": "assets/s16_p12_i00.png",
+    "season": 16,
+    "section": "判断推理",
+    "question_number": 49,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      90.0,
+      401.53,
+      154.862
+    ],
+    "width_px": 600,
+    "height_px": 117,
+    "sha256": "bb06714f7c322efd28ab61b522b7ca7b063921e6237720effab16984a3f7a02a",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s16_p12_i01",
+    "path": "assets/s16_p12_i01.png",
+    "season": 16,
+    "section": "判断推理",
+    "question_number": 50,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      207.37,
+      401.53,
+      287.676
+    ],
+    "width_px": 600,
+    "height_px": 144,
+    "sha256": "d1be76efc332f586bd9ce126841f6087e20da8b276110d00ef95701bbeb5f156",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s17_p11_i00",
+    "path": "assets/s17_p11_i00.png",
+    "season": 17,
+    "section": "判断推理",
+    "question_number": 46,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      510.062,
+      401.53,
+      660.173
+    ],
+    "width_px": 600,
+    "height_px": 270,
+    "sha256": "13d1aa590f450adc6cabd97ab508966720c4393735042c213cc335397c8e41b8",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s17_p12_i00",
+    "path": "assets/s17_p12_i00.png",
+    "season": 17,
+    "section": "判断推理",
+    "question_number": 47,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      90.0,
+      290.337,
+      354.392
+    ],
+    "width_px": 400,
+    "height_px": 476,
+    "sha256": "1c3f8d47f59f958e5530ff6f315f4a4c506f8f6cc3cc5d21101b45e0f5ba5688",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s17_p12_i01",
+    "path": "assets/s17_p12_i01.png",
+    "season": 17,
+    "section": "判断推理",
+    "question_number": 48,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      407.517,
+      290.337,
+      641.64
+    ],
+    "width_px": 400,
+    "height_px": 422,
+    "sha256": "d4a7b66eee2a8e99a309b9c0d8ef8a16e7ce40b8ee5154facbd6972db0d41ab8",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s17_p12_i02",
+    "path": "assets/s17_p12_i02.png",
+    "season": 17,
+    "section": "判断推理",
+    "question_number": 49,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      694.147,
+      345.934,
+      770.747
+    ],
+    "width_px": 500,
+    "height_px": 137,
+    "sha256": "824618274fc21ff638133a4d45fdbcedac8bfec10675afe98efe943b4c81bc18",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s17_p13_i00",
+    "path": "assets/s17_p13_i00.png",
+    "season": 17,
+    "section": "判断推理",
+    "question_number": 50,
+    "material_number": null,
+    "pdf_page": 13,
+    "bbox_pt": [
+      67.951,
+      153.009,
+      345.934,
+      304.355
+    ],
+    "width_px": 500,
+    "height_px": 272,
+    "sha256": "5bba915e070b48368bfcdaaeffa57d24cb823dce9c189fc99b435d077bd1e12d",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s18_p11_i00",
+    "path": "assets/s18_p11_i00.png",
+    "season": 18,
+    "section": "判断推理",
+    "question_number": 46,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      90.0,
+      401.53,
+      240.728
+    ],
+    "width_px": 600,
+    "height_px": 271,
+    "sha256": "7e4a3dfc6dfa0d232cd8250ac765db9b2c64dca571f067bb8d2436de743989ec",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s18_p11_i01",
+    "path": "assets/s18_p11_i01.png",
+    "season": 18,
+    "section": "判断推理",
+    "question_number": 47,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      293.236,
+      290.337,
+      553.304
+    ],
+    "width_px": 400,
+    "height_px": 468,
+    "sha256": "0af3d32922df1b6f208cbd593977c715cc8e5a274d057b008d7741e0bc71ebd1",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s18_p11_i02",
+    "path": "assets/s18_p11_i02.png",
+    "season": 18,
+    "section": "判断推理",
+    "question_number": 48,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      605.812,
+      401.53,
+      694.148
+    ],
+    "width_px": 600,
+    "height_px": 159,
+    "sha256": "99a71321ca3b80fce70039dbddd12b4e91ed098861b9c2f971557f18d99612b6",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s18_p12_i00",
+    "path": "assets/s18_p12_i00.png",
+    "season": 18,
+    "section": "判断推理",
+    "question_number": 49,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      90.0,
+      401.53,
+      177.101
+    ],
+    "width_px": 600,
+    "height_px": 157,
+    "sha256": "990888f5b97be54dda25d987629a453a4746b02609fb6030c3d4077addf69f49",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s18_p12_i01",
+    "path": "assets/s18_p12_i01.png",
+    "season": 18,
+    "section": "判断推理",
+    "question_number": 50,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      229.609,
+      401.53,
+      317.945
+    ],
+    "width_px": 600,
+    "height_px": 158,
+    "sha256": "6600483ef0de6f71d1a1c25b2cfcfa506a2f4cfabda5a8e16009ec320ab5d676",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s19_p10_i06",
+    "path": "assets/s19_p10_i06.png",
+    "season": 19,
+    "section": "数量关系",
+    "question_number": 37,
+    "material_number": null,
+    "pdf_page": 10,
+    "bbox_pt": [
+      67.951,
+      488.441,
+      228.563,
+      669.439
+    ],
+    "width_px": 289,
+    "height_px": 325,
+    "sha256": "429e501c963c400e61f7de93e38c69e82a7218d11449c92708f32f2f526495d5",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s19_p12_i00",
+    "path": "assets/s19_p12_i00.png",
+    "season": 19,
+    "section": "判断推理",
+    "question_number": 46,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      144.978,
+      401.53,
+      297.56
+    ],
+    "width_px": 600,
+    "height_px": 274,
+    "sha256": "68ed5342c7833693da17eda7957cede101ce839cb70c9c5cf838cfd29370fe48",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s19_p12_i01",
+    "path": "assets/s19_p12_i01.png",
+    "season": 19,
+    "section": "判断推理",
+    "question_number": 47,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      350.067,
+      290.337,
+      587.896
+    ],
+    "width_px": 400,
+    "height_px": 428,
+    "sha256": "9155e5975081f1566525d0f235dafc68f6fcdd4bb03addfce41a060557b86169",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s19_p12_i02",
+    "path": "assets/s19_p12_i02.png",
+    "season": 19,
+    "section": "判断推理",
+    "question_number": 48,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      640.404,
+      345.934,
+      773.836
+    ],
+    "width_px": 500,
+    "height_px": 240,
+    "sha256": "c3fe50312aed2dfcd026b5ff1650c7c8673a98c834a0d62e60607a5f5e77b418",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s19_p13_i00",
+    "path": "assets/s19_p13_i00.png",
+    "season": 19,
+    "section": "判断推理",
+    "question_number": 49,
+    "material_number": null,
+    "pdf_page": 13,
+    "bbox_pt": [
+      67.951,
+      153.009,
+      345.934,
+      329.683
+    ],
+    "width_px": 500,
+    "height_px": 318,
+    "sha256": "25fb2a79f85478e6beb48ee55246668d11c5e71ceaab5f7aaf3291fdacb0aa36",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s19_p13_i01",
+    "path": "assets/s19_p13_i01.png",
+    "season": 19,
+    "section": "判断推理",
+    "question_number": 50,
+    "material_number": null,
+    "pdf_page": 13,
+    "bbox_pt": [
+      67.951,
+      382.191,
+      401.53,
+      465.585
+    ],
+    "width_px": 600,
+    "height_px": 150,
+    "sha256": "169c27071fa2a57176f5e3ad8eb2e29ab36dcbc9a45ba4d132efc1802a2f0025",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s19_p21_i01",
+    "path": "assets/s19_p21_i01.png",
+    "season": 19,
+    "section": "资料分析",
+    "question_number": 80,
+    "material_number": 2,
+    "pdf_page": 21,
+    "bbox_pt": [
+      67.951,
+      516.24,
+      227.946,
+      591.604
+    ],
+    "width_px": 288,
+    "height_px": 136,
+    "sha256": "9905c6c1fe6e95e34c216dd91f78f505329e286785c5277fe0bcdd448ca05c46",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s19_p22_i01",
+    "path": "assets/s19_p22_i01.png",
+    "season": 19,
+    "section": "资料分析",
+    "question_number": 85,
+    "material_number": 3,
+    "pdf_page": 22,
+    "bbox_pt": [
+      79.071,
+      507.592,
+      201.383,
+      597.164
+    ],
+    "width_px": 220,
+    "height_px": 161,
+    "sha256": "77c09b447a071af06b25106e56b8feee9ade49cebc4f44c2117b00dd3527059e",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s19_p22_i02",
+    "path": "assets/s19_p22_i02.png",
+    "season": 19,
+    "section": "资料分析",
+    "question_number": 85,
+    "material_number": 3,
+    "pdf_page": 22,
+    "bbox_pt": [
+      78.453,
+      603.341,
+      200.765,
+      726.889
+    ],
+    "width_px": 220,
+    "height_px": 222,
+    "sha256": "336750ed6855b91abc18829aec4044f301a604e9d742cd14a35505f0712e0913",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s19_p23_i00",
+    "path": "assets/s19_p23_i00.png",
+    "season": 19,
+    "section": "资料分析",
+    "question_number": 85,
+    "material_number": 3,
+    "pdf_page": 23,
+    "bbox_pt": [
+      78.453,
+      89.999,
+      200.765,
+      213.547
+    ],
+    "width_px": 220,
+    "height_px": 222,
+    "sha256": "6d268cb41d7420a5f848178bfbec433aa9e077461a7da6683bf461cae68b2738",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s19_p23_i01",
+    "path": "assets/s19_p23_i01.png",
+    "season": 19,
+    "section": "资料分析",
+    "question_number": 85,
+    "material_number": 3,
+    "pdf_page": 23,
+    "bbox_pt": [
+      79.071,
+      219.725,
+      201.383,
+      293.853
+    ],
+    "width_px": 220,
+    "height_px": 133,
+    "sha256": "f536aab319eec8bdefbc16aec545ea6767c8dcb066cd9cf36649efea669230f7",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s20_p11_i00",
+    "path": "assets/s20_p11_i00.png",
+    "season": 20,
+    "section": "判断推理",
+    "question_number": 46,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      576.16,
+      401.53,
+      732.448
+    ],
+    "width_px": 600,
+    "height_px": 281,
+    "sha256": "31bae07f0371f4b3fcf604501479c23595eaebb08941955c3593f7b18a184f2f",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s20_p12_i00",
+    "path": "assets/s20_p12_i00.png",
+    "season": 20,
+    "section": "判断推理",
+    "question_number": 47,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      109.767,
+      290.337,
+      367.982
+    ],
+    "width_px": 400,
+    "height_px": 464,
+    "sha256": "a5bf24caab9dc2609b01086ebfa3e3d9c64fb837e6a4706edbb0af1218bd657c",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s20_p12_i01",
+    "path": "assets/s20_p12_i01.png",
+    "season": 20,
+    "section": "判断推理",
+    "question_number": 48,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      420.489,
+      401.53,
+      557.01
+    ],
+    "width_px": 600,
+    "height_px": 245,
+    "sha256": "c7e4de16bd5f190d60276c1279574ae08bce36ded45d81a2f9ae658ff1b52431",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s20_p12_i02",
+    "path": "assets/s20_p12_i02.png",
+    "season": 20,
+    "section": "判断推理",
+    "question_number": 49,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      629.286,
+      401.53,
+      744.185
+    ],
+    "width_px": 600,
+    "height_px": 207,
+    "sha256": "ac10dab878aef08391f9f814972e4914f6c72a0bf1b6dd3431f325ed347afb19",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s20_p13_i00",
+    "path": "assets/s20_p13_i00.png",
+    "season": 20,
+    "section": "判断推理",
+    "question_number": 50,
+    "material_number": null,
+    "pdf_page": 13,
+    "bbox_pt": [
+      67.951,
+      130.153,
+      345.934,
+      240.728
+    ],
+    "width_px": 500,
+    "height_px": 199,
+    "sha256": "a008e42f2a99e93b6d66f6e0e937860c9c9fe416ea28a7172631b328af4792e6",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s20_p22_i01",
+    "path": "assets/s20_p22_i01.png",
+    "season": 20,
+    "section": "资料分析",
+    "question_number": 82,
+    "material_number": 3,
+    "pdf_page": 22,
+    "bbox_pt": [
+      79.071,
+      357.481,
+      195.823,
+      474.234
+    ],
+    "width_px": 210,
+    "height_px": 210,
+    "sha256": "d4d5deb567cc080ccddad75f2e889f0dd904062d67fbbcbd81b87cb6f9b4a51a",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s20_p22_i02",
+    "path": "assets/s20_p22_i02.png",
+    "season": 20,
+    "section": "资料分析",
+    "question_number": 82,
+    "material_number": 3,
+    "pdf_page": 22,
+    "bbox_pt": [
+      78.453,
+      480.412,
+      195.205,
+      597.164
+    ],
+    "width_px": 210,
+    "height_px": 210,
+    "sha256": "41bfb3220ff35b0896ce9e8ae740b52f49fadd70e9fcfe4f43c8e2b8a4aeaaf8",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s20_p22_i03",
+    "path": "assets/s20_p22_i03.png",
+    "season": 20,
+    "section": "资料分析",
+    "question_number": 82,
+    "material_number": 3,
+    "pdf_page": 22,
+    "bbox_pt": [
+      78.453,
+      603.341,
+      195.205,
+      720.094
+    ],
+    "width_px": 210,
+    "height_px": 210,
+    "sha256": "b2404ba565e398ab52753f4057e1563df844cb259730875bbb74428e47196659",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s20_p23_i00",
+    "path": "assets/s20_p23_i00.png",
+    "season": 20,
+    "section": "资料分析",
+    "question_number": 82,
+    "material_number": 3,
+    "pdf_page": 23,
+    "bbox_pt": [
+      79.071,
+      89.999,
+      195.823,
+      206.752
+    ],
+    "width_px": 210,
+    "height_px": 210,
+    "sha256": "56f9bb5a50f66edddfe6e795f0a96231bf71717a5eaa18a085b813c5727af69c",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s20_p24_i00",
+    "path": "assets/s20_p24_i00.png",
+    "season": 20,
+    "section": "资料分析",
+    "question_number": 90,
+    "material_number": 4,
+    "pdf_page": 24,
+    "bbox_pt": [
+      67.951,
+      271.614,
+      236.594,
+      364.893
+    ],
+    "width_px": 303,
+    "height_px": 168,
+    "sha256": "2b55dcbafa80180458a918f53b398777ea0a3a90a17e21d06e30f0b71dc76224",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s21_p11_i00",
+    "path": "assets/s21_p11_i00.png",
+    "season": 21,
+    "section": "判断推理",
+    "question_number": 46,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      90.0,
+      401.53,
+      245.052
+    ],
+    "width_px": 600,
+    "height_px": 279,
+    "sha256": "d310858a6815fabf5432c833c709603911f8a7d0f409eb5687e085236cbe2aaf",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s21_p11_i01",
+    "path": "assets/s21_p11_i01.png",
+    "season": 21,
+    "section": "判断推理",
+    "question_number": 47,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      297.56,
+      290.337,
+      558.864
+    ],
+    "width_px": 400,
+    "height_px": 470,
+    "sha256": "07db6b2196919e793630e0e19fa56e324a93011753c84d9f9a5365fdc61ee2a8",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s21_p11_i02",
+    "path": "assets/s21_p11_i02.png",
+    "season": 21,
+    "section": "判断推理",
+    "question_number": 48,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      611.371,
+      401.53,
+      751.598
+    ],
+    "width_px": 600,
+    "height_px": 252,
+    "sha256": "e31b8cb8b057699813aee769d75c3d4de06caedc68351b1c21855f6dd234568b",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s21_p12_i00",
+    "path": "assets/s21_p12_i00.png",
+    "season": 21,
+    "section": "判断推理",
+    "question_number": 49,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      109.767,
+      401.53,
+      197.486
+    ],
+    "width_px": 600,
+    "height_px": 157,
+    "sha256": "0c97c7e2b823782fbbd0fcc73a6b278bc63c04d4935b1dbf8f3b6eca3c7d6504",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s21_p12_i01",
+    "path": "assets/s21_p12_i01.png",
+    "season": 21,
+    "section": "判断推理",
+    "question_number": 50,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      269.761,
+      345.934,
+      423.578
+    ],
+    "width_px": 500,
+    "height_px": 277,
+    "sha256": "11aa40132ecf4fa6c63c75c33290db3d222a69c07be0ac102a3d0d483d1d51ef",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s21_p22_i01",
+    "path": "assets/s21_p22_i01.png",
+    "season": 21,
+    "section": "资料分析",
+    "question_number": 90,
+    "material_number": 4,
+    "pdf_page": 22,
+    "bbox_pt": [
+      79.071,
+      599.635,
+      218.062,
+      666.351
+    ],
+    "width_px": 250,
+    "height_px": 120,
+    "sha256": "716cf6830d223603075576d6e4562ba6e1009596339091eb2771d09f048d5b7f",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s21_p22_i02",
+    "path": "assets/s21_p22_i02.png",
+    "season": 21,
+    "section": "资料分析",
+    "question_number": 90,
+    "material_number": 4,
+    "pdf_page": 22,
+    "bbox_pt": [
+      78.453,
+      672.528,
+      217.444,
+      739.244
+    ],
+    "width_px": 250,
+    "height_px": 120,
+    "sha256": "a137f76bff316dbfd5e91207241f66bc2b2ead9e6eaed035a4f535c67405a61f",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s21_p23_i00",
+    "path": "assets/s21_p23_i00.png",
+    "season": 21,
+    "section": "资料分析",
+    "question_number": 90,
+    "material_number": 4,
+    "pdf_page": 23,
+    "bbox_pt": [
+      78.453,
+      89.999,
+      217.444,
+      156.715
+    ],
+    "width_px": 250,
+    "height_px": 120,
+    "sha256": "5f1d00f8124b4e48217ee3b511049c33cc9e32b9c958d5179fc8e4610cc2e086",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s21_p23_i01",
+    "path": "assets/s21_p23_i01.png",
+    "season": 21,
+    "section": "资料分析",
+    "question_number": 90,
+    "material_number": 4,
+    "pdf_page": 23,
+    "bbox_pt": [
+      79.071,
+      162.892,
+      218.062,
+      229.608
+    ],
+    "width_px": 250,
+    "height_px": 120,
+    "sha256": "3c36ef8c543079d45ef084d48a89ec8d04fb23e9b23591d7bf235d9781898402",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s22_p11_i02",
+    "path": "assets/s22_p11_i02.png",
+    "season": 22,
+    "section": "数量关系",
+    "question_number": 45,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      216.019,
+      258.832,
+      344.508
+    ],
+    "width_px": 343,
+    "height_px": 231,
+    "sha256": "977c9d8970a73e788c0f613e51affb69ec4dabd0cd8974addd9f83b9a5cc58e9",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s22_p11_i07",
+    "path": "assets/s22_p11_i07.png",
+    "season": 22,
+    "section": "判断推理",
+    "question_number": 46,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      492.148,
+      401.53,
+      646.582
+    ],
+    "width_px": 600,
+    "height_px": 277,
+    "sha256": "a8de1f3cd389ff88014edc7f22c40fd86d2a69570ce365bcf49f46ca92e66fd4",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s22_p12_i00",
+    "path": "assets/s22_p12_i00.png",
+    "season": 22,
+    "section": "判断推理",
+    "question_number": 47,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      90.0,
+      290.337,
+      351.921
+    ],
+    "width_px": 400,
+    "height_px": 471,
+    "sha256": "b9f8dbec35fdc7a05b73c7cb9852afe4f65907f7ca7549a7e3c69025a7925405",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s22_p12_i01",
+    "path": "assets/s22_p12_i01.png",
+    "season": 22,
+    "section": "判断推理",
+    "question_number": 48,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      404.428,
+      345.316,
+      610.753
+    ],
+    "width_px": 499,
+    "height_px": 371,
+    "sha256": "a516e7dbc4de0b4dd26dcea83d1c300092fedc6d53610cda2a6c75c6dafb0fdc",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s22_p13_i00",
+    "path": "assets/s22_p13_i00.png",
+    "season": 22,
+    "section": "判断推理",
+    "question_number": 49,
+    "material_number": null,
+    "pdf_page": 13,
+    "bbox_pt": [
+      67.951,
+      90.0,
+      401.53,
+      274.704
+    ],
+    "width_px": 600,
+    "height_px": 332,
+    "sha256": "48173fd6e35ef8cad26bfe5ea03e3a4329ac59e4d9b1e1b75461fbf71be0b73c",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s22_p13_i01",
+    "path": "assets/s22_p13_i01.png",
+    "season": 22,
+    "section": "判断推理",
+    "question_number": 50,
+    "material_number": null,
+    "pdf_page": 13,
+    "bbox_pt": [
+      67.951,
+      327.212,
+      401.53,
+      397.016
+    ],
+    "width_px": 600,
+    "height_px": 126,
+    "sha256": "bc2e7ac56e77edf8fbcd5dab491542e4bf66921de82463d5ba319a04da77035e",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s22_p19_i01",
+    "path": "assets/s22_p19_i01.png",
+    "season": 22,
+    "section": "资料分析",
+    "question_number": 75,
+    "material_number": 1,
+    "pdf_page": 19,
+    "bbox_pt": [
+      79.071,
+      583.573,
+      151.346,
+      644.729
+    ],
+    "width_px": 130,
+    "height_px": 110,
+    "sha256": "5658d79a2e1a3b3d7d648c452a5e84a431d269e412fa33efbdfaf0917b4f4962",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s22_p19_i02",
+    "path": "assets/s22_p19_i02.png",
+    "season": 22,
+    "section": "资料分析",
+    "question_number": 75,
+    "material_number": 1,
+    "pdf_page": 19,
+    "bbox_pt": [
+      78.453,
+      650.906,
+      150.728,
+      712.062
+    ],
+    "width_px": 130,
+    "height_px": 110,
+    "sha256": "433ce4c70ee7afc1fc636419c8d382723fac5f28a987aa3a23921c0869c37590",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s22_p20_i00",
+    "path": "assets/s22_p20_i00.png",
+    "season": 22,
+    "section": "资料分析",
+    "question_number": 75,
+    "material_number": 1,
+    "pdf_page": 20,
+    "bbox_pt": [
+      78.453,
+      90.0,
+      150.728,
+      151.156
+    ],
+    "width_px": 130,
+    "height_px": 110,
+    "sha256": "2c32414c212c4468573fdcd395f39a6f37021f927dd1d099b3fa61ad6290b2d6",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s22_p20_i01",
+    "path": "assets/s22_p20_i01.png",
+    "season": 22,
+    "section": "资料分析",
+    "question_number": 75,
+    "material_number": 1,
+    "pdf_page": 20,
+    "bbox_pt": [
+      79.071,
+      157.334,
+      151.346,
+      218.49
+    ],
+    "width_px": 130,
+    "height_px": 110,
+    "sha256": "a493c10281ec4fef72c759bf5b3978588e7f9ab4a443a5141ea8a2e5e17aadee",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s23_p10_i02",
+    "path": "assets/s23_p10_i02.png",
+    "season": 23,
+    "section": "数量关系",
+    "question_number": 38,
+    "material_number": null,
+    "pdf_page": 10,
+    "bbox_pt": [
+      67.951,
+      289.53,
+      173.585,
+      383.426
+    ],
+    "width_px": 190,
+    "height_px": 169,
+    "sha256": "a2c36a0f6809bfa02daae6936bb1e76caabeccd745beff51edc12363c320d424",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s23_p11_i01",
+    "path": "assets/s23_p11_i01.png",
+    "season": 23,
+    "section": "数量关系",
+    "question_number": 45,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      455.701,
+      276.747,
+      568.13
+    ],
+    "width_px": 375,
+    "height_px": 202,
+    "sha256": "f5cf016936145e76ab686d0e5558f36bdd844d0c3248f2fcc7594d08de454245",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s23_p12_i00",
+    "path": "assets/s23_p12_i00.png",
+    "season": 23,
+    "section": "判断推理",
+    "question_number": 46,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      90.0,
+      401.53,
+      243.199
+    ],
+    "width_px": 600,
+    "height_px": 276,
+    "sha256": "e4858127484bd334ef176714c3797c2c391518a17f23f1d2057c906364d23f87",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s23_p12_i01",
+    "path": "assets/s23_p12_i01.png",
+    "season": 23,
+    "section": "判断推理",
+    "question_number": 47,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      296.325,
+      290.337,
+      550.833
+    ],
+    "width_px": 400,
+    "height_px": 458,
+    "sha256": "5e464b46b3718680be157deb353c5bf4a6b36766408aa86385bae64295d4132f",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s23_p12_i02",
+    "path": "assets/s23_p12_i02.png",
+    "season": 23,
+    "section": "判断推理",
+    "question_number": 48,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      603.34,
+      290.337,
+      767.041
+    ],
+    "width_px": 400,
+    "height_px": 295,
+    "sha256": "109c31b0b3abefa256c4977470e8db6e14e96eba4108f0a260996d6f223f176d",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s23_p13_i00",
+    "path": "assets/s23_p13_i00.png",
+    "season": 23,
+    "section": "判断推理",
+    "question_number": 49,
+    "material_number": null,
+    "pdf_page": 13,
+    "bbox_pt": [
+      67.951,
+      133.242,
+      401.53,
+      218.49
+    ],
+    "width_px": 600,
+    "height_px": 154,
+    "sha256": "f54c5ad7717100b7dca69fac33a573d1c9018c42feb4fce0ee4fe0d16968b4a0",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s23_p13_i01",
+    "path": "assets/s23_p13_i01.png",
+    "season": 23,
+    "section": "判断推理",
+    "question_number": 50,
+    "material_number": null,
+    "pdf_page": 13,
+    "bbox_pt": [
+      67.951,
+      291.383,
+      401.53,
+      450.76
+    ],
+    "width_px": 600,
+    "height_px": 287,
+    "sha256": "dc29776320b2e6c6f380ce02b2c9cf0c08162ed1cf1800d65f98ef3a5ff3bb97",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s23_p24_i00",
+    "path": "assets/s23_p24_i00.png",
+    "season": 23,
+    "section": "资料分析",
+    "question_number": 90,
+    "material_number": 4,
+    "pdf_page": 24,
+    "bbox_pt": [
+      79.071,
+      90.0,
+      195.823,
+      154.245
+    ],
+    "width_px": 210,
+    "height_px": 115,
+    "sha256": "b18ad67868266c2f89fa917988152d3cb7c7ec214a0acfa7e2e0764b2cd0dbd3",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s23_p24_i01",
+    "path": "assets/s23_p24_i01.png",
+    "season": 23,
+    "section": "资料分析",
+    "question_number": 90,
+    "material_number": 4,
+    "pdf_page": 24,
+    "bbox_pt": [
+      78.453,
+      160.421,
+      195.205,
+      224.048
+    ],
+    "width_px": 210,
+    "height_px": 115,
+    "sha256": "2ab9ec84dec8604c2ef696b2ad10cfd5ba61edb8a3987cab6c2e13bf8232bc96",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s23_p24_i02",
+    "path": "assets/s23_p24_i02.png",
+    "season": 23,
+    "section": "资料分析",
+    "question_number": 90,
+    "material_number": 4,
+    "pdf_page": 24,
+    "bbox_pt": [
+      78.453,
+      230.844,
+      195.205,
+      294.471
+    ],
+    "width_px": 210,
+    "height_px": 115,
+    "sha256": "936dd5dad4333e8c16937bbecc1c75cc0b69de3465392695dbbc4956a05741c8",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s23_p24_i03",
+    "path": "assets/s23_p24_i03.png",
+    "season": 23,
+    "section": "资料分析",
+    "question_number": 90,
+    "material_number": 4,
+    "pdf_page": 24,
+    "bbox_pt": [
+      79.071,
+      301.266,
+      195.823,
+      364.893
+    ],
+    "width_px": 210,
+    "height_px": 115,
+    "sha256": "33a1f41406eb51ebef302efc3e4c1068f64bf2acac2a8c2001c5850eb2411fc5",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s24_p10_i00",
+    "path": "assets/s24_p10_i00.png",
+    "season": 24,
+    "section": "判断推理",
+    "question_number": 46,
+    "material_number": null,
+    "pdf_page": 10,
+    "bbox_pt": [
+      67.951,
+      556.393,
+      457.126,
+      731.83
+    ],
+    "width_px": 700,
+    "height_px": 316,
+    "sha256": "c1c33f4bb6afffb2b9df72fe414c871388da6e894fd14b947560579333c719fd",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s24_p11_i00",
+    "path": "assets/s24_p11_i00.png",
+    "season": 24,
+    "section": "判断推理",
+    "question_number": 47,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      109.768,
+      290.337,
+      371.071
+    ],
+    "width_px": 400,
+    "height_px": 470,
+    "sha256": "e8f42da63f81b84c792e1e0bdc5e007f7a378e23e637bb231d8951badfb57e98",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s24_p11_i01",
+    "path": "assets/s24_p11_i01.png",
+    "season": 24,
+    "section": "判断推理",
+    "question_number": 48,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      443.964,
+      345.934,
+      578.631
+    ],
+    "width_px": 500,
+    "height_px": 242,
+    "sha256": "0159d8493e9d1d983271f9c40ec6e5bee491aa0ebc6562d7a4141b31fa81249a",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s24_p11_i02",
+    "path": "assets/s24_p11_i02.png",
+    "season": 24,
+    "section": "判断推理",
+    "question_number": 49,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      650.907,
+      401.53,
+      711.445
+    ],
+    "width_px": 600,
+    "height_px": 109,
+    "sha256": "62fdc65793c57189e54e34498002e47f77ddef7f5b2b0d46d6317c9cc50dcc60",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s24_p12_i00",
+    "path": "assets/s24_p12_i00.png",
+    "season": 24,
+    "section": "判断推理",
+    "question_number": 50,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      90.0,
+      345.934,
+      222.813
+    ],
+    "width_px": 500,
+    "height_px": 239,
+    "sha256": "20ae3ece5283ba832d7ac488013c0665ad99e957f970eed58be0b181dc6a054a",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s24_p19_i01",
+    "path": "assets/s24_p19_i01.png",
+    "season": 24,
+    "section": "资料分析",
+    "question_number": 80,
+    "material_number": 2,
+    "pdf_page": 19,
+    "bbox_pt": [
+      79.071,
+      647.818,
+      197.059,
+      765.806
+    ],
+    "width_px": 212,
+    "height_px": 212,
+    "sha256": "5817e46453e24a2af227b28a3feedb1ba14b91842d6bbc5341468da761d957b6",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s24_p20_i00",
+    "path": "assets/s24_p20_i00.png",
+    "season": 24,
+    "section": "资料分析",
+    "question_number": 80,
+    "material_number": 2,
+    "pdf_page": 20,
+    "bbox_pt": [
+      78.453,
+      90.0,
+      196.441,
+      207.988
+    ],
+    "width_px": 212,
+    "height_px": 212,
+    "sha256": "1583b55291631005da851929e4575e4b8e5bfc8a701c594fa2d68d5628241cdc",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s24_p20_i01",
+    "path": "assets/s24_p20_i01.png",
+    "season": 24,
+    "section": "资料分析",
+    "question_number": 80,
+    "material_number": 2,
+    "pdf_page": 20,
+    "bbox_pt": [
+      78.453,
+      214.166,
+      196.441,
+      332.154
+    ],
+    "width_px": 212,
+    "height_px": 212,
+    "sha256": "75783aedec30c4e301371163c1392eb6b4d1e45969e9cde39f9eaa74add8eeb0",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s24_p20_i02",
+    "path": "assets/s24_p20_i02.png",
+    "season": 24,
+    "section": "资料分析",
+    "question_number": 80,
+    "material_number": 2,
+    "pdf_page": 20,
+    "bbox_pt": [
+      79.071,
+      338.332,
+      197.059,
+      456.32
+    ],
+    "width_px": 212,
+    "height_px": 212,
+    "sha256": "b6f6c48c082639c299ef57ee54695dbaba0d9a9661b1f9dd1126b2515aa1141f",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s24_p22_i01",
+    "path": "assets/s24_p22_i01.png",
+    "season": 24,
+    "section": "资料分析",
+    "question_number": 90,
+    "material_number": 4,
+    "pdf_page": 22,
+    "bbox_pt": [
+      79.071,
+      499.561,
+      190.263,
+      563.806
+    ],
+    "width_px": 200,
+    "height_px": 115,
+    "sha256": "1ccbce09d016b42e1cf26b051533493596d78ee81959a63ed46eaf1b99262c36",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s24_p22_i02",
+    "path": "assets/s24_p22_i02.png",
+    "season": 24,
+    "section": "资料分析",
+    "question_number": 90,
+    "material_number": 4,
+    "pdf_page": 22,
+    "bbox_pt": [
+      78.453,
+      569.983,
+      189.646,
+      634.228
+    ],
+    "width_px": 200,
+    "height_px": 115,
+    "sha256": "feb21e5ab469710184dc3c4a688433e12cce4b47fa7a39afecf45ac6438f0f77",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s24_p22_i03",
+    "path": "assets/s24_p22_i03.png",
+    "season": 24,
+    "section": "资料分析",
+    "question_number": 90,
+    "material_number": 4,
+    "pdf_page": 22,
+    "bbox_pt": [
+      78.453,
+      640.405,
+      189.646,
+      704.032
+    ],
+    "width_px": 200,
+    "height_px": 115,
+    "sha256": "e69a003b3c5de817be0e167ed2f0d101a7611c7950d1839639fb16db8e640c34",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s24_p22_i04",
+    "path": "assets/s24_p22_i04.png",
+    "season": 24,
+    "section": "资料分析",
+    "question_number": 90,
+    "material_number": 4,
+    "pdf_page": 22,
+    "bbox_pt": [
+      79.071,
+      710.827,
+      190.263,
+      774.455
+    ],
+    "width_px": 200,
+    "height_px": 115,
+    "sha256": "e43bdc3c9f597bc81f7f704392190fc840b34eab7c3d22c2c8e06fd538fd26d7",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s25_p10_i01",
+    "path": "assets/s25_p10_i01.png",
+    "season": 25,
+    "section": "数量关系",
+    "question_number": 41,
+    "material_number": null,
+    "pdf_page": 10,
+    "bbox_pt": [
+      67.951,
+      149.921,
+      260.068,
+      285.823
+    ],
+    "width_px": 345,
+    "height_px": 244,
+    "sha256": "623589d7d537b04fc42b95b023eb48842de22f4cb94b7fc875efa3e9fbc14106",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s25_p11_i00",
+    "path": "assets/s25_p11_i00.png",
+    "season": 25,
+    "section": "判断推理",
+    "question_number": 46,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      90.0,
+      401.53,
+      243.817
+    ],
+    "width_px": 600,
+    "height_px": 277,
+    "sha256": "5a86c2d0b7dbc85b9d331e2a849143884359f6d9555a06058615132f755666d3",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s25_p11_i01",
+    "path": "assets/s25_p11_i01.png",
+    "season": 25,
+    "section": "判断推理",
+    "question_number": 47,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      296.325,
+      290.337,
+      561.952
+    ],
+    "width_px": 400,
+    "height_px": 477,
+    "sha256": "5a0b8461c261d90d5c453f0ad943fb825ec46dc423d3074aaba8332748c3bdb6",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s25_p11_i02",
+    "path": "assets/s25_p11_i02.png",
+    "season": 25,
+    "section": "判断推理",
+    "question_number": 48,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      614.46,
+      401.53,
+      700.326
+    ],
+    "width_px": 600,
+    "height_px": 155,
+    "sha256": "b3e7b298b96ac7d61167c3edb1bc16fb6cb5c5babd4f40e11ae6b9453d28cd96",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s25_p12_i00",
+    "path": "assets/s25_p12_i00.png",
+    "season": 25,
+    "section": "判断推理",
+    "question_number": 49,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      90.0,
+      345.934,
+      185.131
+    ],
+    "width_px": 500,
+    "height_px": 171,
+    "sha256": "de03716f566b7838dcca76722b7a09332698c7cf2d1fe3ac8610179c8a506df2",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s25_p12_i01",
+    "path": "assets/s25_p12_i01.png",
+    "season": 25,
+    "section": "判断推理",
+    "question_number": 50,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      237.639,
+      401.53,
+      323.505
+    ],
+    "width_px": 600,
+    "height_px": 154,
+    "sha256": "b59eff7f8aa1c0695c4657354e16ccadf0788cc5bfe3544e0d6af298185d1bbe",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s25_p18_i02",
+    "path": "assets/s25_p18_i02.png",
+    "season": 25,
+    "section": "资料分析",
+    "question_number": 75,
+    "material_number": 1,
+    "pdf_page": 18,
+    "bbox_pt": [
+      67.951,
+      554.54,
+      278.6,
+      655.231
+    ],
+    "width_px": 379,
+    "height_px": 181,
+    "sha256": "5baaf88b6d427255750a5b84ca42c6932821b1a37ebd4f616923c57a27b4e313",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s25_p19_i02",
+    "path": "assets/s25_p19_i02.png",
+    "season": 25,
+    "section": "资料分析",
+    "question_number": 78,
+    "material_number": 2,
+    "pdf_page": 19,
+    "bbox_pt": [
+      79.071,
+      469.909,
+      197.059,
+      587.897
+    ],
+    "width_px": 212,
+    "height_px": 212,
+    "sha256": "049216362d4e729e1c5fd7064711085565ff0688c37d5ae2afe9270ccede47fb",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s25_p19_i03",
+    "path": "assets/s25_p19_i03.png",
+    "season": 25,
+    "section": "资料分析",
+    "question_number": 78,
+    "material_number": 2,
+    "pdf_page": 19,
+    "bbox_pt": [
+      78.453,
+      594.074,
+      196.441,
+      712.062
+    ],
+    "width_px": 212,
+    "height_px": 212,
+    "sha256": "56e0bbebdf1b892c70803bb404987a23927c630030c5261c90d8122a4481161f",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s25_p20_i00",
+    "path": "assets/s25_p20_i00.png",
+    "season": 25,
+    "section": "资料分析",
+    "question_number": 78,
+    "material_number": 2,
+    "pdf_page": 20,
+    "bbox_pt": [
+      78.453,
+      90.0,
+      196.441,
+      207.988
+    ],
+    "width_px": 212,
+    "height_px": 212,
+    "sha256": "7f23f18bc6c8b79999581bd9fa6b44bef490ecbfc1f79fb234aff2c73204ab86",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s25_p20_i01",
+    "path": "assets/s25_p20_i01.png",
+    "season": 25,
+    "section": "资料分析",
+    "question_number": 78,
+    "material_number": 2,
+    "pdf_page": 20,
+    "bbox_pt": [
+      79.071,
+      214.166,
+      197.059,
+      332.154
+    ],
+    "width_px": 212,
+    "height_px": 212,
+    "sha256": "b1794a3e6267f63193d55a3415fb5fd0bf4edb441fc8ed300ff6dd7548ff4d8b",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s26_p11_i06",
+    "path": "assets/s26_p11_i06.png",
+    "season": 26,
+    "section": "数量关系",
+    "question_number": 43,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      461.261,
+      270.569,
+      572.454
+    ],
+    "width_px": 364,
+    "height_px": 200,
+    "sha256": "a7baaa3444c66436481d90a18be9d5486fefd33ba6438f8a36d9d5a9de9db07c",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s26_p12_i00",
+    "path": "assets/s26_p12_i00.png",
+    "season": 26,
+    "section": "判断推理",
+    "question_number": 46,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      251.229,
+      401.53,
+      405.046
+    ],
+    "width_px": 600,
+    "height_px": 276,
+    "sha256": "1ca4521e2c00154fdb633ce2e7d42ba7e3e8ca523c87fb6382adfe5102c87634",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s26_p12_i01",
+    "path": "assets/s26_p12_i01.png",
+    "season": 26,
+    "section": "判断推理",
+    "question_number": 47,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      457.554,
+      290.337,
+      720.093
+    ],
+    "width_px": 400,
+    "height_px": 472,
+    "sha256": "d2ddc96559958560b05a6ed91645fbd438df20b9a296048d0461659977af89d5",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s26_p13_i00",
+    "path": "assets/s26_p13_i00.png",
+    "season": 26,
+    "section": "判断推理",
+    "question_number": 48,
+    "material_number": null,
+    "pdf_page": 13,
+    "bbox_pt": [
+      67.951,
+      90.0,
+      345.934,
+      256.789
+    ],
+    "width_px": 500,
+    "height_px": 300,
+    "sha256": "f2c334f5f2e4ea0d815f465322dfc17df21219947dbdee4ce99b8bf027ccc906",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s26_p13_i01",
+    "path": "assets/s26_p13_i01.png",
+    "season": 26,
+    "section": "判断推理",
+    "question_number": 49,
+    "material_number": null,
+    "pdf_page": 13,
+    "bbox_pt": [
+      67.951,
+      329.683,
+      345.934,
+      490.913
+    ],
+    "width_px": 500,
+    "height_px": 291,
+    "sha256": "7aa6aab732f58a9d71eca7b4280229c53e12efe0e816d9a68119ccf60a302c3d",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s26_p13_i02",
+    "path": "assets/s26_p13_i02.png",
+    "season": 26,
+    "section": "判断推理",
+    "question_number": 50,
+    "material_number": null,
+    "pdf_page": 13,
+    "bbox_pt": [
+      67.951,
+      563.806,
+      401.53,
+      650.289
+    ],
+    "width_px": 600,
+    "height_px": 156,
+    "sha256": "fcba01f306d29d4b2dca7f0802831c37db9e96b09903a7ba7020a448ccdc0e1a",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s26_p22_i00",
+    "path": "assets/s26_p22_i00.png",
+    "season": 26,
+    "section": "资料分析",
+    "question_number": 80,
+    "material_number": 2,
+    "pdf_page": 22,
+    "bbox_pt": [
+      67.951,
+      90.001,
+      219.915,
+      198.723
+    ],
+    "width_px": 273,
+    "height_px": 195,
+    "sha256": "19c2756d1d526cacc8e0bbce69f80fae3c46fc0ae30a9d13eb47b5ee5c88cac3",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s27_p11_i04",
+    "path": "assets/s27_p11_i04.png",
+    "season": 27,
+    "section": "判断推理",
+    "question_number": 46,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      475.469,
+      401.53,
+      623.726
+    ],
+    "width_px": 600,
+    "height_px": 267,
+    "sha256": "1057bb07bc1f9457f4bf42a5ebe5ddfb122896bf76fbd17748a8a2727079c0dd",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s27_p12_i00",
+    "path": "assets/s27_p12_i00.png",
+    "season": 27,
+    "section": "判断推理",
+    "question_number": 47,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      90.0,
+      290.337,
+      350.685
+    ],
+    "width_px": 400,
+    "height_px": 469,
+    "sha256": "2bf1b873431e4a379425b452591e722ce65f15292fbe0975087b843ce9219015",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s27_p12_i01",
+    "path": "assets/s27_p12_i01.png",
+    "season": 27,
+    "section": "判断推理",
+    "question_number": 48,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      403.193,
+      290.337,
+      659.555
+    ],
+    "width_px": 400,
+    "height_px": 461,
+    "sha256": "dbc872a9db4d58fa8d72952d1bc4f6f3c419f763063528c7d3dc368d3d7eed86",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s27_p13_i00",
+    "path": "assets/s27_p13_i00.png",
+    "season": 27,
+    "section": "判断推理",
+    "question_number": 49,
+    "material_number": null,
+    "pdf_page": 13,
+    "bbox_pt": [
+      67.951,
+      90.0,
+      401.53,
+      270.997
+    ],
+    "width_px": 600,
+    "height_px": 325,
+    "sha256": "40adf0a5c3330a89d7e5bf2d45e33be12c5ccef52990bfebda0656370fdce2df",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s27_p13_i01",
+    "path": "assets/s27_p13_i01.png",
+    "season": 27,
+    "section": "判断推理",
+    "question_number": 50,
+    "material_number": null,
+    "pdf_page": 13,
+    "bbox_pt": [
+      67.951,
+      323.505,
+      401.53,
+      407.517
+    ],
+    "width_px": 600,
+    "height_px": 152,
+    "sha256": "943d2cc46f4d9e19c796ef8ef9a102d0100d16502524dc391b624246808428f2",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s28_p10_i01",
+    "path": "assets/s28_p10_i01.png",
+    "season": 28,
+    "section": "判断推理",
+    "question_number": 46,
+    "material_number": null,
+    "pdf_page": 10,
+    "bbox_pt": [
+      67.951,
+      606.429,
+      401.53,
+      756.54
+    ],
+    "width_px": 600,
+    "height_px": 270,
+    "sha256": "7e2d86d2160743554932389cde75171578fd0e85079d67ff9af29043fb98e7a8",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s28_p11_i00",
+    "path": "assets/s28_p11_i00.png",
+    "season": 28,
+    "section": "判断推理",
+    "question_number": 47,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      133.242,
+      290.337,
+      390.221
+    ],
+    "width_px": 400,
+    "height_px": 462,
+    "sha256": "447f064076858aeab2e74a5e7dea35360ab23ccfde8802a1391e408ab0733d9d",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s28_p11_i02",
+    "path": "assets/s28_p11_i02.png",
+    "season": 28,
+    "section": "判断推理",
+    "question_number": 48,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      442.729,
+      401.53,
+      529.83
+    ],
+    "width_px": 600,
+    "height_px": 157,
+    "sha256": "d71712f018e2fff8966412ccec41309da190fe972714f1ec51a722dcd63ad6d6",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s28_p11_i03",
+    "path": "assets/s28_p11_i03.png",
+    "season": 28,
+    "section": "判断推理",
+    "question_number": 49,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      602.105,
+      401.53,
+      687.971
+    ],
+    "width_px": 600,
+    "height_px": 154,
+    "sha256": "0364ba851bf20ce8879179d8d20312d77d6f538c4e6bb23451d272c7a966a56e",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s28_p12_i00",
+    "path": "assets/s28_p12_i00.png",
+    "season": 28,
+    "section": "判断推理",
+    "question_number": 50,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      90.0,
+      401.53,
+      174.012
+    ],
+    "width_px": 600,
+    "height_px": 151,
+    "sha256": "03036b3e445499f8b710611342f520ed5c5ca0f6aa2c97a51e2c6ccbbb91951d",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s28_p22_i00",
+    "path": "assets/s28_p22_i00.png",
+    "season": 28,
+    "section": "资料分析",
+    "question_number": 90,
+    "material_number": 4,
+    "pdf_page": 22,
+    "bbox_pt": [
+      67.951,
+      242.582,
+      283.542,
+      361.188
+    ],
+    "width_px": 388,
+    "height_px": 214,
+    "sha256": "f3a4b7c9b8cf69f9ef3d99d706c458c848de8ee60a694f0e93f5a35fc0069cb9",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s29_p11_i00",
+    "path": "assets/s29_p11_i00.png",
+    "season": 29,
+    "section": "判断推理",
+    "question_number": 46,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      191.309,
+      401.53,
+      342.655
+    ],
+    "width_px": 600,
+    "height_px": 272,
+    "sha256": "f88dade488ee0bae4d7ddeede70ddf70b68a45152b0d0819d61b852b5de0407a",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s29_p11_i01",
+    "path": "assets/s29_p11_i01.png",
+    "season": 29,
+    "section": "判断推理",
+    "question_number": 47,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      395.163,
+      290.337,
+      654.613
+    ],
+    "width_px": 400,
+    "height_px": 467,
+    "sha256": "745710d050e47a662e6504098569f765ef84dfedaa6b37736df8483e61d96d0b",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s29_p12_i00",
+    "path": "assets/s29_p12_i00.png",
+    "season": 29,
+    "section": "判断推理",
+    "question_number": 48,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      90.0,
+      290.337,
+      304.973
+    ],
+    "width_px": 400,
+    "height_px": 387,
+    "sha256": "c6cfd66eb2866088e94e1795af15b97ef440ab317e4492e1fb91846280044ef8",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s29_p12_i01",
+    "path": "assets/s29_p12_i01.png",
+    "season": 29,
+    "section": "判断推理",
+    "question_number": 49,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      357.48,
+      401.53,
+      503.884
+    ],
+    "width_px": 600,
+    "height_px": 263,
+    "sha256": "28b8c79146b7d5f9e95a373796688c12f2eca4e9973fa86aefa993b9c7a6c6bc",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s29_p12_i02",
+    "path": "assets/s29_p12_i02.png",
+    "season": 29,
+    "section": "判断推理",
+    "question_number": 50,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      556.392,
+      345.934,
+      738.625
+    ],
+    "width_px": 500,
+    "height_px": 328,
+    "sha256": "93d9b53e88dd81125dcfce6c4e22c921d0c398be7c2b7cc3b941a7864e350922",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s29_p21_i00",
+    "path": "assets/s29_p21_i00.png",
+    "season": 29,
+    "section": "资料分析",
+    "question_number": 80,
+    "material_number": 2,
+    "pdf_page": 21,
+    "bbox_pt": [
+      79.071,
+      394.545,
+      190.263,
+      505.738
+    ],
+    "width_px": 200,
+    "height_px": 200,
+    "sha256": "5e9be965a7554ac274016dfa2a02882d503ec7d0ed0a2662ade504209b18ab9a",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s29_p21_i01",
+    "path": "assets/s29_p21_i01.png",
+    "season": 29,
+    "section": "资料分析",
+    "question_number": 80,
+    "material_number": 2,
+    "pdf_page": 21,
+    "bbox_pt": [
+      78.453,
+      512.533,
+      189.646,
+      623.726
+    ],
+    "width_px": 200,
+    "height_px": 200,
+    "sha256": "192896c536af8c7236a2311a25e521655bb31206e73a75b0e5ba82915e05e3f1",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s29_p21_i02",
+    "path": "assets/s29_p21_i02.png",
+    "season": 29,
+    "section": "资料分析",
+    "question_number": 80,
+    "material_number": 2,
+    "pdf_page": 21,
+    "bbox_pt": [
+      78.453,
+      629.903,
+      189.646,
+      741.096
+    ],
+    "width_px": 200,
+    "height_px": 200,
+    "sha256": "71317e681f11ddf19454658987693970a8a9ea5808df911ef2b5cfbca5cab2de",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s29_p22_i00",
+    "path": "assets/s29_p22_i00.png",
+    "season": 29,
+    "section": "资料分析",
+    "question_number": 80,
+    "material_number": 2,
+    "pdf_page": 22,
+    "bbox_pt": [
+      79.071,
+      90.001,
+      190.263,
+      201.194
+    ],
+    "width_px": 200,
+    "height_px": 200,
+    "sha256": "5f205244af7037a3cc7598b8f4688fc030413424fd03bd50108cd6119ee08d87",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s29_p23_i00",
+    "path": "assets/s29_p23_i00.png",
+    "season": 29,
+    "section": "资料分析",
+    "question_number": 85,
+    "material_number": 3,
+    "pdf_page": 23,
+    "bbox_pt": [
+      79.071,
+      89.999,
+      345.934,
+      249.993
+    ],
+    "width_px": 480,
+    "height_px": 288,
+    "sha256": "5dd21024300a0f4f7afafb65085c3cd0f83df47faf37f13d523c2c0721fc8dcb",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s29_p23_i01",
+    "path": "assets/s29_p23_i01.png",
+    "season": 29,
+    "section": "资料分析",
+    "question_number": 85,
+    "material_number": 3,
+    "pdf_page": 23,
+    "bbox_pt": [
+      78.453,
+      256.789,
+      345.316,
+      416.783
+    ],
+    "width_px": 480,
+    "height_px": 288,
+    "sha256": "884b0e47bfd435b193630311c430651271da476ea2da3f0dbf4ab9026562628f",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s29_p23_i02",
+    "path": "assets/s29_p23_i02.png",
+    "season": 29,
+    "section": "资料分析",
+    "question_number": 85,
+    "material_number": 3,
+    "pdf_page": 23,
+    "bbox_pt": [
+      78.453,
+      422.961,
+      345.316,
+      582.955
+    ],
+    "width_px": 480,
+    "height_px": 288,
+    "sha256": "71534c8110b7d6387ad5e0b7ac739c30e14d4ed7f96c8ead9aaf5837b67a9228",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s29_p23_i03",
+    "path": "assets/s29_p23_i03.png",
+    "season": 29,
+    "section": "资料分析",
+    "question_number": 85,
+    "material_number": 3,
+    "pdf_page": 23,
+    "bbox_pt": [
+      79.071,
+      589.749,
+      345.934,
+      749.744
+    ],
+    "width_px": 480,
+    "height_px": 288,
+    "sha256": "06144727b73907a5be037bd9bdc249359c2da866d0c924f8e26fc2336379d292",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s29_p24_i01",
+    "path": "assets/s29_p24_i01.png",
+    "season": 29,
+    "section": "资料分析",
+    "question_number": 90,
+    "material_number": 4,
+    "pdf_page": 24,
+    "bbox_pt": [
+      79.071,
+      521.181,
+      206.942,
+      571.217
+    ],
+    "width_px": 230,
+    "height_px": 90,
+    "sha256": "5ecc0161fea75df439b8a14d7f67859876fe9ed84cf26b1e8b707c46e524a730",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s29_p24_i02",
+    "path": "assets/s29_p24_i02.png",
+    "season": 29,
+    "section": "资料分析",
+    "question_number": 90,
+    "material_number": 4,
+    "pdf_page": 24,
+    "bbox_pt": [
+      78.453,
+      578.014,
+      206.325,
+      628.051
+    ],
+    "width_px": 230,
+    "height_px": 90,
+    "sha256": "0c17fc788e3ab43896e7ec40ecf4fb839a6df85a624612ea03f4299c3bb70291",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s29_p24_i03",
+    "path": "assets/s29_p24_i03.png",
+    "season": 29,
+    "section": "资料分析",
+    "question_number": 90,
+    "material_number": 4,
+    "pdf_page": 24,
+    "bbox_pt": [
+      78.453,
+      634.228,
+      206.325,
+      684.265
+    ],
+    "width_px": 230,
+    "height_px": 90,
+    "sha256": "9fa29ee2525f8544046b9892e46bac99f861cb8d1a946e78797d0147f71d97db",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s29_p24_i04",
+    "path": "assets/s29_p24_i04.png",
+    "season": 29,
+    "section": "资料分析",
+    "question_number": 90,
+    "material_number": 4,
+    "pdf_page": 24,
+    "bbox_pt": [
+      79.071,
+      690.443,
+      206.942,
+      740.479
+    ],
+    "width_px": 230,
+    "height_px": 90,
+    "sha256": "c618188c01510d8f83bd45037d80ebe709a48798a7c4ea81dbb181ca50f39a0b",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s30_p11_i00",
+    "path": "assets/s30_p11_i00.png",
+    "season": 30,
+    "section": "判断推理",
+    "question_number": 46,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      231.462,
+      401.53,
+      378.484
+    ],
+    "width_px": 600,
+    "height_px": 265,
+    "sha256": "dfcc0d135a4d357572297b0303e3f8fc3f9dd2433c82357f981cdc82ca417217",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s30_p11_i01",
+    "path": "assets/s30_p11_i01.png",
+    "season": 30,
+    "section": "判断推理",
+    "question_number": 47,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      431.61,
+      290.337,
+      686.118
+    ],
+    "width_px": 400,
+    "height_px": 458,
+    "sha256": "404814b566f9842c17dccef3b2f1b74cf2ca6a2dffca0fdebef0477a5173d381",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s30_p12_i00",
+    "path": "assets/s30_p12_i00.png",
+    "season": 30,
+    "section": "判断推理",
+    "question_number": 48,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      90.0,
+      401.53,
+      183.278
+    ],
+    "width_px": 600,
+    "height_px": 168,
+    "sha256": "06bf046f3bda24c402c5829eecafec30341cdce988b8ce203d00a497041e660f",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s30_p12_i01",
+    "path": "assets/s30_p12_i01.png",
+    "season": 30,
+    "section": "判断推理",
+    "question_number": 49,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      256.171,
+      401.53,
+      415.548
+    ],
+    "width_px": 600,
+    "height_px": 287,
+    "sha256": "2c39a78071285c36a45cce3665aa8b2a09b74b6af31544539b7eab7fa54bef64",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s30_p12_i02",
+    "path": "assets/s30_p12_i02.png",
+    "season": 30,
+    "section": "判断推理",
+    "question_number": 50,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      468.055,
+      401.53,
+      552.685
+    ],
+    "width_px": 600,
+    "height_px": 152,
+    "sha256": "dfcfe2ae164b011849f25746162a13751dfbe3e5840783c37f982f629b140db1",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s31_p10_i03",
+    "path": "assets/s31_p10_i03.png",
+    "season": 31,
+    "section": "数量关系",
+    "question_number": 43,
+    "material_number": null,
+    "pdf_page": 10,
+    "bbox_pt": [
+      67.951,
+      279.028,
+      279.836,
+      388.986
+    ],
+    "width_px": 381,
+    "height_px": 197,
+    "sha256": "2b458f911d8416633d7ea2f37855ce805c8de0eff470217d523b0b50be9a24b3",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s31_p11_i00",
+    "path": "assets/s31_p11_i00.png",
+    "season": 31,
+    "section": "判断推理",
+    "question_number": 46,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      90.0,
+      401.53,
+      243.199
+    ],
+    "width_px": 600,
+    "height_px": 276,
+    "sha256": "252b69b22612121f4508a5c6d1512b8c305a7acd43a0b1107d043919b7572c6d",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s31_p11_i01",
+    "path": "assets/s31_p11_i01.png",
+    "season": 31,
+    "section": "判断推理",
+    "question_number": 47,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      296.325,
+      290.337,
+      552.068
+    ],
+    "width_px": 400,
+    "height_px": 460,
+    "sha256": "6fdcc8d34ba52dffcf1bbe1ce82d0a053fd4e6ffaeea54a8e30a1ac831427b5c",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s31_p12_i00",
+    "path": "assets/s31_p12_i00.png",
+    "season": 31,
+    "section": "判断推理",
+    "question_number": 48,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      90.0,
+      345.934,
+      270.379
+    ],
+    "width_px": 500,
+    "height_px": 324,
+    "sha256": "96fdf8ebe3a30886c5332ec546dd87fb950377776c5e8325fa941b7e2326d188",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s31_p12_i01",
+    "path": "assets/s31_p12_i01.png",
+    "season": 31,
+    "section": "判断推理",
+    "question_number": 49,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      322.887,
+      401.53,
+      407.517
+    ],
+    "width_px": 600,
+    "height_px": 152,
+    "sha256": "c1b7c04bf3b6804bbbfbce331fbf3360643c95a256302249d328e28776ff5c0e",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s31_p12_i02",
+    "path": "assets/s31_p12_i02.png",
+    "season": 31,
+    "section": "判断推理",
+    "question_number": 50,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      460.025,
+      401.53,
+      544.655
+    ],
+    "width_px": 600,
+    "height_px": 153,
+    "sha256": "030dcee539ad811a6543f98284d62460f73713fabacb949e25ecf5f3b5d14679",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s31_p20_i00",
+    "path": "assets/s31_p20_i00.png",
+    "season": 31,
+    "section": "资料分析",
+    "question_number": 75,
+    "material_number": 1,
+    "pdf_page": 20,
+    "bbox_pt": [
+      67.951,
+      199.34,
+      237.829,
+      256.172
+    ],
+    "width_px": 305,
+    "height_px": 102,
+    "sha256": "e69614d53788ddf8967b71c5f25b0647ec49e0983d84e0fb18a3ed6f069e65bd",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s32_p11_i00",
+    "path": "assets/s32_p11_i00.png",
+    "season": 32,
+    "section": "判断推理",
+    "question_number": 46,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      254.318,
+      401.53,
+      408.135
+    ],
+    "width_px": 600,
+    "height_px": 276,
+    "sha256": "31b45c494df9e2c07335abe27b0b833943299352e8cfa10145fa2cdc58c1666c",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s32_p11_i01",
+    "path": "assets/s32_p11_i01.png",
+    "season": 32,
+    "section": "判断推理",
+    "question_number": 47,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      460.643,
+      290.337,
+      723.8
+    ],
+    "width_px": 400,
+    "height_px": 474,
+    "sha256": "772371de59f32094e65ffd1054ec8b52e6b12064f59b1340ab6f44fe4bc1f67d",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s32_p12_i00",
+    "path": "assets/s32_p12_i00.png",
+    "season": 32,
+    "section": "判断推理",
+    "question_number": 48,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      90.0,
+      345.934,
+      295.706
+    ],
+    "width_px": 500,
+    "height_px": 370,
+    "sha256": "f07d72c824898f41cf745d5c19db3c5025c5e68d8a57c661d4b4993bdef1e8a6",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s32_p12_i01",
+    "path": "assets/s32_p12_i01.png",
+    "season": 32,
+    "section": "判断推理",
+    "question_number": 49,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      348.215,
+      401.53,
+      432.845
+    ],
+    "width_px": 600,
+    "height_px": 152,
+    "sha256": "2f5162fd56e02431fc95211e0711d5c367951ebc1857b72fdfb05f23329af9b1",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s32_p12_i02",
+    "path": "assets/s32_p12_i02.png",
+    "season": 32,
+    "section": "判断推理",
+    "question_number": 50,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      485.352,
+      401.53,
+      593.456
+    ],
+    "width_px": 600,
+    "height_px": 194,
+    "sha256": "364f9c90935afb52a5a195d01420ae988ad2d262f6a36cf08f9647c7318e86f6",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s32_p23_i00",
+    "path": "assets/s32_p23_i00.png",
+    "season": 32,
+    "section": "资料分析",
+    "question_number": 90,
+    "material_number": 4,
+    "pdf_page": 23,
+    "bbox_pt": [
+      79.071,
+      380.954,
+      190.263,
+      444.581
+    ],
+    "width_px": 200,
+    "height_px": 115,
+    "sha256": "93433d2092190b88bc215051c99038f4cf1c8b090e924bda38363e0b8f9fa0e3",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s32_p23_i01",
+    "path": "assets/s32_p23_i01.png",
+    "season": 32,
+    "section": "资料分析",
+    "question_number": 90,
+    "material_number": 4,
+    "pdf_page": 23,
+    "bbox_pt": [
+      78.453,
+      451.376,
+      189.646,
+      515.003
+    ],
+    "width_px": 200,
+    "height_px": 115,
+    "sha256": "2286991cf207250673516569701088d3945b2cc3bbde3371c32fa4424307d9e7",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s32_p23_i02",
+    "path": "assets/s32_p23_i02.png",
+    "season": 32,
+    "section": "资料分析",
+    "question_number": 90,
+    "material_number": 4,
+    "pdf_page": 23,
+    "bbox_pt": [
+      78.453,
+      521.798,
+      189.646,
+      585.425
+    ],
+    "width_px": 200,
+    "height_px": 115,
+    "sha256": "8c3e0f0dd29b213974539d674aeacd38f8201f9405fc50997b332c103c4cde0a",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s32_p23_i03",
+    "path": "assets/s32_p23_i03.png",
+    "season": 32,
+    "section": "资料分析",
+    "question_number": 90,
+    "material_number": 4,
+    "pdf_page": 23,
+    "bbox_pt": [
+      79.071,
+      592.221,
+      190.263,
+      655.848
+    ],
+    "width_px": 200,
+    "height_px": 115,
+    "sha256": "043cf0b4d922b3206f3d5666efbf6658c635c873ba7dd7c919000661fc3bfafb",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s33_p10_i00",
+    "path": "assets/s33_p10_i00.png",
+    "season": 33,
+    "section": "数量关系",
+    "question_number": 38,
+    "material_number": null,
+    "pdf_page": 10,
+    "bbox_pt": [
+      67.951,
+      149.921,
+      151.346,
+      324.741
+    ],
+    "width_px": 150,
+    "height_px": 314,
+    "sha256": "b31c30454794ce229231df5c56a33dabb653a717f48660c3892501b63077e12f",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s33_p11_i00",
+    "path": "assets/s33_p11_i00.png",
+    "season": 33,
+    "section": "数量关系",
+    "question_number": 45,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      299.414,
+      184.086,
+      473.616
+    ],
+    "width_px": 209,
+    "height_px": 314,
+    "sha256": "7ec4c1b5e790f8b3b3c281135e39f1e7ac1a5dd45cb9575e15343905b97fea7a",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s33_p11_i01",
+    "path": "assets/s33_p11_i01.png",
+    "season": 33,
+    "section": "判断推理",
+    "question_number": 46,
+    "material_number": null,
+    "pdf_page": 11,
+    "bbox_pt": [
+      67.951,
+      561.335,
+      401.53,
+      717.005
+    ],
+    "width_px": 600,
+    "height_px": 279,
+    "sha256": "2ed805f75b89616143b1b48db5a473210962dc41811187e2f9b0dd0b4b8bec85",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s33_p12_i00",
+    "path": "assets/s33_p12_i00.png",
+    "season": 33,
+    "section": "判断推理",
+    "question_number": 47,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      90.0,
+      290.337,
+      354.392
+    ],
+    "width_px": 400,
+    "height_px": 475,
+    "sha256": "fb3dca38923a73b6b036dac331a5acb5c98112c11645bf225c12490d7b6f2fc3",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s33_p12_i01",
+    "path": "assets/s33_p12_i01.png",
+    "season": 33,
+    "section": "判断推理",
+    "question_number": 48,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      406.899,
+      401.53,
+      495.854
+    ],
+    "width_px": 600,
+    "height_px": 160,
+    "sha256": "c007ff054a4546deab026194028da636b5be42b1d8cdf9f72773b1a2d479cea1",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s33_p12_i02",
+    "path": "assets/s33_p12_i02.png",
+    "season": 33,
+    "section": "判断推理",
+    "question_number": 49,
+    "material_number": null,
+    "pdf_page": 12,
+    "bbox_pt": [
+      67.951,
+      548.362,
+      401.53,
+      633.609
+    ],
+    "width_px": 600,
+    "height_px": 154,
+    "sha256": "def5a73fcf6b26159dbc004cec39577d5a7f5a25e19f56e35ad7dea8eb9b8d7b",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s33_p13_i00",
+    "path": "assets/s33_p13_i00.png",
+    "season": 33,
+    "section": "判断推理",
+    "question_number": 50,
+    "material_number": null,
+    "pdf_page": 13,
+    "bbox_pt": [
+      67.951,
+      90.0,
+      345.934,
+      255.554
+    ],
+    "width_px": 500,
+    "height_px": 298,
+    "sha256": "4eacae6711eb077b3d587bb5757adaa25c7820845b3168dad822f333cb067936",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s33_p23_i01",
+    "path": "assets/s33_p23_i01.png",
+    "season": 33,
+    "section": "资料分析",
+    "question_number": 87,
+    "material_number": 4,
+    "pdf_page": 23,
+    "bbox_pt": [
+      79.071,
+      517.475,
+      190.263,
+      628.668
+    ],
+    "width_px": 200,
+    "height_px": 200,
+    "sha256": "9cd66f412bd6d2d4790ab9f265a36d60f33fb68c3b71869bb8a9e28219861b54",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s33_p23_i02",
+    "path": "assets/s33_p23_i02.png",
+    "season": 33,
+    "section": "资料分析",
+    "question_number": 87,
+    "material_number": 4,
+    "pdf_page": 23,
+    "bbox_pt": [
+      78.453,
+      634.845,
+      189.646,
+      746.038
+    ],
+    "width_px": 200,
+    "height_px": 200,
+    "sha256": "ef4fc570a4b3fcf67cf914e06c856fecdd5b5fbfbf59a1f8cebbe19220e93357",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s33_p24_i00",
+    "path": "assets/s33_p24_i00.png",
+    "season": 33,
+    "section": "资料分析",
+    "question_number": 87,
+    "material_number": 4,
+    "pdf_page": 24,
+    "bbox_pt": [
+      78.453,
+      90.0,
+      189.646,
+      201.193
+    ],
+    "width_px": 200,
+    "height_px": 200,
+    "sha256": "d5259bdb2b2826ec213764a22c07f4808c7058d3bc439456e7d3ce449336dd53",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  },
+  {
+    "id": "s33_p24_i01",
+    "path": "assets/s33_p24_i01.png",
+    "season": 33,
+    "section": "资料分析",
+    "question_number": 87,
+    "material_number": 4,
+    "pdf_page": 24,
+    "bbox_pt": [
+      79.071,
+      207.369,
+      190.263,
+      318.562
+    ],
+    "width_px": 200,
+    "height_px": 200,
+    "sha256": "9340af1e6711cdc376038ca18252b7249c06a9e9d162435e7260c721595244ed",
+    "method": "PDF内嵌图像直接提取，透明部分合成白底，PNG无损保存；未截取整页、未缩放或有损压缩",
+    "visual_check": "已检查题图边界、线条、阴影及标签可辨认"
+  }
+]
