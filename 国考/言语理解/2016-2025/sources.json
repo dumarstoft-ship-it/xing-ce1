@@ -1,0 +1,295 @@
+{
+  "repository": "dumarstoft-ship-it/xing-ce1",
+  "commit": "0067a1a7723584d34ff564b4356af358b9c9027c",
+  "source_count": 48,
+  "sources": [
+    {
+      "path": "国考/真题/2016年国家公务员考试《行测》真题卷（副省级).pdf",
+      "git_blob_sha": "871673b0835c3ee1474c67d48945e9489c703dd4",
+      "sha256": "be429dee5eb8c2ce4e6801fb3302b3ef4730132fc600efd59f66070e83cbb83c",
+      "bytes": 1334325
+    },
+    {
+      "path": "国考/真题/2016年国家公务员考试《行测》真题卷（地市级）.pdf",
+      "git_blob_sha": "055ce70e65c0d0a356c00cd95aaf4d4cfbed21b6",
+      "sha256": "8987cff8d62c4e4f5e078f063cdf14f360b23fd6d535651fa33736e6385f1fc8",
+      "bytes": 1318749
+    },
+    {
+      "path": "国考/真题/2017年国家公务员考试《行测》真题卷（副省级）.pdf",
+      "git_blob_sha": "05255f10afd882613e5d4879b3251456877ba214",
+      "sha256": "3859da396b18de91f78af0657694201290e7c0015b4e2ef7724e5f80d7efd32a",
+      "bytes": 1206898
+    },
+    {
+      "path": "国考/真题/2017年国家录用公务员考试《行测》真题卷（地市级）.pdf",
+      "git_blob_sha": "1b1ba550dbe9848e33e6f1f6cfc05245aba587a3",
+      "sha256": "5f442e5d30a3096d355ce2c9f7cdaf94311e15d60d4620448465ceb71b4af184",
+      "bytes": 1080293
+    },
+    {
+      "path": "国考/真题/2018年国家公务员考试《行测》真题卷（副省级）.pdf",
+      "git_blob_sha": "17179588d554e555700a570b3da5bbbbe028f3d8",
+      "sha256": "2e2c7934282319178d464dc2601d10caa7255084e852bf86ceea6ad2eb616a9c",
+      "bytes": 1314666
+    },
+    {
+      "path": "国考/真题/2018年国家录用公务员考试《行测》真题卷（地市级）.pdf",
+      "git_blob_sha": "08983936a5b67a5db872a1eeccfdb901d1cca347",
+      "sha256": "96639e2c653106c3a0e3fafd84e646fedf9d0a41d560755bc2612b3e6a9ec564",
+      "bytes": 1186126
+    },
+    {
+      "path": "国考/真题/2019年国家公务员考试行测真题（地市级）.pdf",
+      "git_blob_sha": "666fd840a4e64771e8f6efc068a5d2f98738fafe",
+      "sha256": "c41d7276f370b2d825c8627d6b7b7e1ed6af4ab7f1da19145be725374a501469",
+      "bytes": 1272656
+    },
+    {
+      "path": "国考/真题/2019年国家公务员考试行测真题（省级）.pdf",
+      "git_blob_sha": "3806c543a353e1031fb2e081a04905316034ea6d",
+      "sha256": "bb02b61c5c9672ead933aabc85c54be8b7630c9df93df6f325e9a8fcfb9aa82f",
+      "bytes": 1292524
+    },
+    {
+      "path": "国考/真题/2020年国家公务员考试《行测》真题（副省级）.pdf",
+      "git_blob_sha": "b3879a3e4fb9fccb91b5ac0dc20b6f03d40048b1",
+      "sha256": "a2e7028c30aebdaf49af2284384d130de3e4c6220edc0a4c62b3d0684fc5af8c",
+      "bytes": 1453159
+    },
+    {
+      "path": "国考/真题/2020年国家公务员考试《行测》真题（地市级）.pdf",
+      "git_blob_sha": "00fcfc4ebf4aca309de8544422716ba33841fa8d",
+      "sha256": "d072f0e1b7d10101a1e3b7013025707da6613f7141487dc1ec9d2d8fccc43707",
+      "bytes": 1310512
+    },
+    {
+      "path": "国考/真题/2021年国家公务员考试《行测》真题（副省级）.pdf",
+      "git_blob_sha": "d55fa38a87f395544ab353448c6401cb9807044c",
+      "sha256": "b4ab441e146d732ee827625a8bfca8086f2fa57599e9dfe639b0627f78d12c4f",
+      "bytes": 1418611
+    },
+    {
+      "path": "国考/真题/2021年国家公务员考试《行测》真题（市地级）.pdf",
+      "git_blob_sha": "719d32299da9a8a319b201a587190bb06e866cf6",
+      "sha256": "a8c5cf5d5f8f5e1d6d2419f50b3291a7b01f9f7607de4316eeb984da856a84c4",
+      "bytes": 1311405
+    },
+    {
+      "path": "国考/真题/2022 年国家公务员考试行测真题（地市级）.pdf",
+      "git_blob_sha": "d9be8b583d20127b4a8fad3339f1522da9187e85",
+      "sha256": "18319a34efdc78274a83273bf4e0128e9b77b09a058f0b0f33c0fe948a70f388",
+      "bytes": 858952
+    },
+    {
+      "path": "国考/真题/2022年国家公务员考试《行测》真题（副省级).pdf",
+      "git_blob_sha": "091177fca5db710ae00cca77445f07b0647c9c55",
+      "sha256": "728c1d38a84c90a5a621c902061052bdd136c434052354b383116a3a5ae3ecef",
+      "bytes": 1091272
+    },
+    {
+      "path": "国考/真题/2022年国家公务员考试《行测》真题（行政执法）...pdf",
+      "git_blob_sha": "c597b4749712de7d6af7071235f683f46b041de0",
+      "sha256": "df434a56d40c6aacf794d3e68afcd246eacfa17ead8d5eaf3dba8ad15a17d998",
+      "bytes": 3430885
+    },
+    {
+      "path": "国考/真题/2023年国家公务员录用考试《行测》真题（副省级）.pdf",
+      "git_blob_sha": "7ed831af0cd9b53fd515cb56f08e46f7930694e4",
+      "sha256": "844aa510f5e3cec10cdd836f9df9e209c794442e23379c306b38a84ec28e08f1",
+      "bytes": 1006850
+    },
+    {
+      "path": "国考/真题/2023年国家公务员录用考试《行测》真题（地市级）.pdf",
+      "git_blob_sha": "d10cb562c331f55be6f4005ac17b1117bafee16f",
+      "sha256": "3dd12d328212839420c701f7cd240a17cd642c6931736f928261608cb0add629",
+      "bytes": 1034757
+    },
+    {
+      "path": "国考/真题/2023年国家公务员录用考试《行测》真题（行政执法卷）.pdf",
+      "git_blob_sha": "db2e23617eed3b5b995ea93d906fa50b90326ae2",
+      "sha256": "1102746ac648f41a624d49f852363235c62570b435037980c342428a4d301c25",
+      "bytes": 984679
+    },
+    {
+      "path": "国考/真题/2024年国家公务员录用考试《行测》题（副省级）.pdf",
+      "git_blob_sha": "bda5d7032fb0e6ae1534a419a5fa285480bf69ae",
+      "sha256": "cd29b9712ed37d1b2118578105765b0a2f2258ebd9f7fd5cda8fd9d462434ed7",
+      "bytes": 2267508
+    },
+    {
+      "path": "国考/真题/2024年国家公务员录用考试《行测》题（地市级）.pdf",
+      "git_blob_sha": "757785f7c0e1aa0fcd7b65f0a9f64efa3dfdc32d",
+      "sha256": "25f9d5314ce39eb014e41df888036ba3a0827981bfba842376684ffe87912a32",
+      "bytes": 1875609
+    },
+    {
+      "path": "国考/真题/2024年国家公务员录用考试《行测》题（行政执法卷）.pdf",
+      "git_blob_sha": "7cd789324af3a86def936b898ebb8da47e53bfe3",
+      "sha256": "cc2066d343b863916344b742f0ebf805fbbfc90536dc98532755c3da3d1db631",
+      "bytes": 1426740
+    },
+    {
+      "path": "国考/真题/2025年国家公务员录用考试《行测》题（副省级）.pdf",
+      "git_blob_sha": "a229e81581469ca79d7df55239185a0285de0d30",
+      "sha256": "ace5b34c9f88f9cb68cc2a5cdb3586240e28a2f965d6f23271b4045f785ffe09",
+      "bytes": 1851429
+    },
+    {
+      "path": "国考/真题/2025年国家公务员录用考试《行测》题（地市级）.pdf",
+      "git_blob_sha": "dcc592d8ec92c9b10c4d9dc794aeba1ef090ace7",
+      "sha256": "cec0f079a340b50e42fe4c2ed20b878411946138d5cb8bb520eac29224e5d1f6",
+      "bytes": 1960098
+    },
+    {
+      "path": "国考/真题/2025年国家公务员录用考试《行测》题（行政执法卷）.pdf",
+      "git_blob_sha": "b4413b040efd102fea703f718c8f167d6db094aa",
+      "sha256": "b5d3d76c56ff792280fa93e26da59a3ff8aa38f7d5e034038d142ae1aa1ef2e1",
+      "bytes": 1990255
+    },
+    {
+      "path": "国考/答案解析/2016年国家公务员考试《行测》真题卷（副省级）答案及解析...pdf",
+      "git_blob_sha": "f89c97f7c382c801d0b74a608ed88420401b2c84",
+      "sha256": "50195c156b9c46e9041e79cea04bdbd334c5033fb976e995c67e4f97e29f60a9",
+      "bytes": 948544
+    },
+    {
+      "path": "国考/答案解析/2016年国家公务员考试《行测》真题卷（地市级）答案及解析...pdf",
+      "git_blob_sha": "428fa6d3c0a20868588c67557697240f82309f26",
+      "sha256": "afdaef28451a65a0ab1ae792c04fad14962b71995cd926455697f298025a3215",
+      "bytes": 927622
+    },
+    {
+      "path": "国考/答案解析/2017年国家公务员考试《行测》真题卷（副省级）答案及解析...pdf",
+      "git_blob_sha": "5eab39468dde812b41b23ba73c666f3ee2c4b1ad",
+      "sha256": "da4bad895358ae2e2a1f7af1f937619a4ecd37043514d60bbedffa16b8c2b7eb",
+      "bytes": 1282688
+    },
+    {
+      "path": "国考/答案解析/2017年国家录用公务员考试《行测》真题卷（地市级）答案及解析...pdf",
+      "git_blob_sha": "645bfe6ebc2a51e2e6252a4a3d149fc81fca6003",
+      "sha256": "619b9fa67547bfedcba410b7ce9d72de217d50d5d653f182d10ea6f47b4263d6",
+      "bytes": 1182152
+    },
+    {
+      "path": "国考/答案解析/2018年国家公务员考试《行测》真题卷（副省级）答案及解析...pdf",
+      "git_blob_sha": "f6d99c2fe7a0d5290913aac305684734e10aa8fc",
+      "sha256": "d89af88bf41e159e22f721cdcabbc94f3526777378f61e48568beedf23116990",
+      "bytes": 1405828
+    },
+    {
+      "path": "国考/答案解析/2018年国家录用公务员考试《行测》真题卷（地市级）答案及解析...pdf",
+      "git_blob_sha": "b96ca678f8a99201a672ac7dac3dbbac456c406e",
+      "sha256": "e83b2d2ec73f78f33334cefe08db7d59dea80b8635798c8a392cdeeb5bfef8b0",
+      "bytes": 1282975
+    },
+    {
+      "path": "国考/答案解析/2019年国家公务员考试行测真题（地市级）答案及解析...pdf",
+      "git_blob_sha": "b632f8a38113e127af43fdc4270f510f63bf4646",
+      "sha256": "1fcfbc921bfb771f76109ae5dc4c4ede1f3524a40c763c5cfe102aed034feefc",
+      "bytes": 1716203
+    },
+    {
+      "path": "国考/答案解析/2019年国家公务员考试行测真题（省级）答案及解析...pdf",
+      "git_blob_sha": "60d0f166ec9c84639437e64e47283a9797d973d2",
+      "sha256": "e629e3e5fb19c64822cbf32a2466aaae1ce21d686dc7605703e0853493916405",
+      "bytes": 1931622
+    },
+    {
+      "path": "国考/答案解析/2020年国家公务员考试《行测》真题（地市级）答案及解析...pdf",
+      "git_blob_sha": "e0800378a1c0e16b057350e12fc1ff34ebd1969b",
+      "sha256": "877f6c5638e2a75b55a36db10cdf72a1ed2783ff7bc6161169e7ccf97024642a",
+      "bytes": 1651824
+    },
+    {
+      "path": "国考/答案解析/2020年国家公务员考试《行测》真题（省级）答案及解析...pdf",
+      "git_blob_sha": "fb21be74c8a34c816336c12c142555a58e0affe0",
+      "sha256": "9930bb34a2099777de17d88ef18232d15bdfdc5c2f7d152de8c4808ee89d8323",
+      "bytes": 1639417
+    },
+    {
+      "path": "国考/答案解析/2021年国家公务员考试《行测》真题（副省级）参考答案及解析...pdf",
+      "git_blob_sha": "dedfde7280ab80bd40da356526b8edc17200d3b1",
+      "sha256": "618e47475633fef4004f68aa9da4bb350e18815d2963d6a1822e9f203f0fef03",
+      "bytes": 8779852
+    },
+    {
+      "path": "国考/答案解析/2021年国家公务员考试《行测》真题（市地级）参考答案及解析...pdf",
+      "git_blob_sha": "b3527eeaefa54ce8992f51aebca86e563edfca2a",
+      "sha256": "de188ac120aa5e104c033789f7807b3341aa9a2aed2786817b7856e5589036df",
+      "bytes": 1328892
+    },
+    {
+      "path": "国考/答案解析/2022年国家公务员考试《行测》真题（副省级）【答案+解析】...pdf",
+      "git_blob_sha": "f7b2f027efe2d5c35f24218c236c5c5dcf9d55a0",
+      "sha256": "7e2ebb553ac060e606a207607f080d2b55b1ccc358fadad193a864214146eb50",
+      "bytes": 1843362
+    },
+    {
+      "path": "国考/答案解析/2022年国家公务员考试《行测》真题（市地级）【答案+解析】...pdf",
+      "git_blob_sha": "49b7ce29e2ee7f86041c8baaf9acd9eca207ebd5",
+      "sha256": "48174fa2f65569a445191cb77d45df86fa6104a3622d8d293bf308050287bec9",
+      "bytes": 2367429
+    },
+    {
+      "path": "国考/答案解析/2022年国家公务员考试《行测》真题（行政执法）【答案+解析】...pdf",
+      "git_blob_sha": "bba2f47ab56538bdbd3e705c1850e3d1f5c00b7d",
+      "sha256": "a6e6931de5c19f830c46b993d5a9c341dfb3c87509c55eb5111e2782a575ac4d",
+      "bytes": 1926071
+    },
+    {
+      "path": "国考/答案解析/2023年国家公务员录用考试《行测》真题（副省级）（解析）.pdf",
+      "git_blob_sha": "fd1f21d850fbd9e9907d54da4ccc1cf9113b3337",
+      "sha256": "a7f12c971bd58b4398ba256dd9f5b6bad62f833afc853635b17b807ac6b6ebfd",
+      "bytes": 1429260
+    },
+    {
+      "path": "国考/答案解析/2023年国家公务员录用考试《行测》真题（地市级）（解析）.pdf",
+      "git_blob_sha": "30cea3ffc660b9233eab52b632f6f35fec42bcf8",
+      "sha256": "f4ee61619623eb2779d4393911479655a9e9b8415ada95b61627fdb7bedb1f35",
+      "bytes": 1273356
+    },
+    {
+      "path": "国考/答案解析/2023年国家公务员录用考试《行测》真题（行政执法卷）（解析）.pdf",
+      "git_blob_sha": "a8e93c9abfb60855a870617300b0987d48a56bb2",
+      "sha256": "7ce405093bc35266ab36077e26adee193414eb99248d5f3a8cd822b15c462d18",
+      "bytes": 1393726
+    },
+    {
+      "path": "国考/答案解析/2024年国考《行测》（副省级）答案+解析.pdf",
+      "git_blob_sha": "4e53827d01635673cb6f0e369da9a097b40ea161",
+      "sha256": "aada05549cd8b4db7bca6f43c7666e651d829e91deb2d5aa739814292958b2e4",
+      "bytes": 2178945
+    },
+    {
+      "path": "国考/答案解析/2024年国考《行测》（地市级）答案+解析.pdf",
+      "git_blob_sha": "2fa72eef5513f629d955cdb6527fa7a2121fa5b9",
+      "sha256": "db73a2a8ac0f7cd538035afe9ad06e1a038eb11c2d421f1096452c3a5b406454",
+      "bytes": 2670449
+    },
+    {
+      "path": "国考/答案解析/2024年国考《行测》（行政执法）答案+解析.pdf",
+      "git_blob_sha": "eb714f05f8b261d53aaa0630a9950f6de1781c6b",
+      "sha256": "a91c0ab25a2246bafd75d70dbcb6c3a47bd8b441e6276750a5b90e97e4e42459",
+      "bytes": 2209301
+    },
+    {
+      "path": "国考/答案解析/2025年国考《行测》（副省级）答案+解析.pdf",
+      "git_blob_sha": "fe8a4ba5c9ba3c389789f135c25d7e4277d0a3fd",
+      "sha256": "066af0808c67bbbe0e9b506e2c2138bdd8213e67c28f64bc0dd361cf3b57c5f9",
+      "bytes": 2620484
+    },
+    {
+      "path": "国考/答案解析/2025年国考《行测》（地市级）答案+解析.pdf",
+      "git_blob_sha": "9e142597722da523d163877c2122f0c2458b50b2",
+      "sha256": "df3834ad1ebeb0a5e451a544d9108bcb6e1ebde40a46da07137f596051743310",
+      "bytes": 2288519
+    },
+    {
+      "path": "国考/答案解析/2025年国考《行测》（行政执法卷）答案+解析.pdf",
+      "git_blob_sha": "90ac0c86df4553563679d739eecf2bd9f300b89d",
+      "sha256": "4d0bd30b442a22230752842ca07488472baa1092dffc9c7be9aefd785ddd358e",
+      "bytes": 2040636
+    }
+  ]
+}

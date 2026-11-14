@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "国考言语理解逐题记录",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "year",
+    "section",
+    "passage",
+    "stem",
+    "options",
+    "answer",
+    "answer_candidates",
+    "answer_status",
+    "notes"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^GKYY-20(1[6-9]|2[0-5])-[0-9]{3}$"
+    },
+    "year": {
+      "type": "integer",
+      "minimum": 2016,
+      "maximum": 2025
+    },
+    "section": {
+      "const": "言语理解与表达"
+    },
+    "passage": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "完整共用阅读材料；每条相关题目独立包含材料。"
+    },
+    "stem": {
+      "type": "string",
+      "minLength": 1
+    },
+    "options": {
+      "type": "object",
+      "required": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "A": {
+          "type": "string",
+          "minLength": 1
+        },
+        "B": {
+          "type": "string",
+          "minLength": 1
+        },
+        "C": {
+          "type": "string",
+          "minLength": 1
+        },
+        "D": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "answer": {
+      "enum": [
+        null,
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "唯一原参考答案；原资料存在分歧时为 null。"
+    },
+    "answer_candidates": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 4,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      }
+    },
+    "answer_status": {
+      "enum": [
+        "single",
+        "disputed"
+      ]
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "answer_status": {
+            "const": "single"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "answer": {
+            "enum": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          "answer_candidates": {
+            "maxItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "answer_status": {
+            "const": "disputed"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "answer": {
+            "const": null
+          },
+          "answer_candidates": {
+            "minItems": 2
+          }
+        }
+      }
+    }
+  ]
+}

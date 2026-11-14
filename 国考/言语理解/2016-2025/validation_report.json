@@ -1,0 +1,102 @@
+{
+  "scope": {
+    "years": [
+      2016,
+      2025
+    ],
+    "papers": 24,
+    "source_pdfs": 48,
+    "raw_question_occurrences": 930
+  },
+  "excluded": [
+    {
+      "year": 2017,
+      "paper": "副省级",
+      "question_numbers": [
+        51,
+        52,
+        53,
+        54,
+        55
+      ],
+      "reason": "共用阅读材料原PDF缺少两个比例数字，按用户要求排除。"
+    },
+    {
+      "year": 2020,
+      "paper": "副省级",
+      "question_numbers": [
+        53
+      ],
+      "reason": "选项为冕的示意图，按用户要求排除含图示题。"
+    }
+  ],
+  "excluded_occurrences": 6,
+  "eligible_occurrences": 924,
+  "merged_duplicate_occurrences": 337,
+  "final_questions": 587,
+  "questions_by_year": {
+    "2016": 40,
+    "2017": 45,
+    "2018": 50,
+    "2019": 50,
+    "2020": 57,
+    "2021": 55,
+    "2022": 76,
+    "2023": 81,
+    "2024": 69,
+    "2025": 64
+  },
+  "reading_material_questions": 84,
+  "disputed_answers": [
+    {
+      "id": "GKYY-2017-030",
+      "answer_candidates": [
+        "B",
+        "C"
+      ],
+      "stem_prefix": "高校专业的设置应该是高校、政府、市场以及社会等多种力量多重考量的结果，过于强调某一方面必然会导致失衡。要实现相对合理和均衡，就要在制度上提供平台，比如确保大学在"
+    },
+    {
+      "id": "GKYY-2021-018",
+      "answer_candidates": [
+        "A",
+        "D"
+      ],
+      "stem_prefix": "一般而言，城市群之间的交通干线分布着许多城市，聚集着大量产业和人口，从而构成经济带。加强经济带规划和经济带上城市建设，是建设现代化区域发展体系和促进区域协调发展"
+    },
+    {
+      "id": "GKYY-2021-027",
+      "answer_candidates": [
+        "B",
+        "D"
+      ],
+      "stem_prefix": "水田不单单是水稻的种植区，也可以是稻香水美、鱼肥虾壮的养殖场。传统矮秆水稻因为追求最大产量，都采用密植栽种，加上植株株秆矮小，水田中空间狭窄，导致空气流通不好，"
+    }
+  ],
+  "verification": {
+    "source_bytes_match_github_blobs": true,
+    "all_24_paper_question_ranges_checked": true,
+    "all_930_occurrences_have_source_answer_candidates": true,
+    "scanned_2021_provincial_answer_headers_visually_checked": 40,
+    "2024_2025_answer_summary_matches_detailed_conclusions": true,
+    "inline_numeric_images_transcribed_as_text": [
+      "3%",
+      "64.2%",
+      "26.9%",
+      "−40℃",
+      "−15℃",
+      "−2℃",
+      "70℃",
+      "−180℃",
+      "−250℃"
+    ],
+    "question_images_in_deliverables": 0,
+    "answers_independently_solved_by_ai": false,
+    "notes": [
+      "填空线依据PDF文字及画线位置恢复；跨页断行和页眉页脚已清理。",
+      "2016年两道合并后的题目未单列答案字母，依据原解析明确认可的选项整理。",
+      "两组同年题仅有明显字形错误或“多种”等细小措辞差异，核对后合并，采用副省级原文。",
+      "保留原题语言，不对原参考答案作权威性背书；已知分歧全部标注。"
+    ]
+  }
+}
