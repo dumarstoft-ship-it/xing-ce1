@@ -1,0 +1,20 @@
+{
+  "method": "删除空白后对题干前55字精确查找；扫描旧专项Markdown，不等同语义去重，也不推定用户已做",
+  "files": 132,
+  "hits": [],
+  "replaced_prior_candidates": [
+    {
+      "number": 31,
+      "discarded": "JS2024-A类-047",
+      "replacement": "ZJ2025-A类-052",
+      "reason": "旧D01数推题本出现过原题"
+    },
+    {
+      "number": 33,
+      "discarded": "JS2025-A类-052",
+      "replacement": "JS2023-A类-050",
+      "reason": "旧D01数推题本出现过原题"
+    }
+  ],
+  "replacement_material_checked": "服务贸易，第25季86—90，零精确命中"
+}

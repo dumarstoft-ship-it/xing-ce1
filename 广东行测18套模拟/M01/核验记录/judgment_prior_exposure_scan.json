@@ -1,0 +1,187 @@
+{
+  "scope": [
+    "习题本",
+    "广东行测24天集训",
+    "两册PDF通过old_graphic_source_ids.json题源识别"
+  ],
+  "method": [
+    "两册源ID含另见引用",
+    "旧文本与文件名源ID归一化检索",
+    "逻辑题归一化题干前45字",
+    "最终5张原图与旧目录松散图片的解码像素SHA256"
+  ],
+  "old_loose_image_count": 139,
+  "limitations": "像素散列不能识别缩放、重裁或PDF内图像；两册PDF主要以已完整提取的401个题源引用判断；未命中不保证用户未见。",
+  "selected": [
+    {
+      "number": 46,
+      "source_id": "JS2021-A类-076",
+      "matched_old_pdf_id": false,
+      "matches": [],
+      "figure_checks": [
+        {
+          "path": "江浙行测_AI题库/images/original/675.png",
+          "decoded_pixel_sha256": "8a425ec5d434e5cea006191294c67b851aa4f8907c5ff0c26bd2044adfeab880",
+          "exact_matches": []
+        }
+      ]
+    },
+    {
+      "number": 47,
+      "source_id": "JS2021-A类-077",
+      "matched_old_pdf_id": false,
+      "matches": [],
+      "figure_checks": [
+        {
+          "path": "江浙行测_AI题库/images/original/867.png",
+          "decoded_pixel_sha256": "50f26d4bacd641286c014314aa1bee27522a794f17dec296e17cdc840283dacb",
+          "exact_matches": []
+        }
+      ]
+    },
+    {
+      "number": 48,
+      "source_id": "JS2021-A类-082",
+      "matched_old_pdf_id": false,
+      "matches": [],
+      "figure_checks": [
+        {
+          "path": "江浙行测_AI题库/images/original/73.png",
+          "decoded_pixel_sha256": "cf47d4dccc0a3d9deb36c7071812d83d7a3d068a7e770e25c6b43d9d29fae4c3",
+          "exact_matches": []
+        }
+      ]
+    },
+    {
+      "number": 49,
+      "source_id": "ZJ2021-A类-077",
+      "matched_old_pdf_id": false,
+      "matches": [],
+      "figure_checks": [
+        {
+          "path": "江浙行测_AI题库/images/original/819.png",
+          "decoded_pixel_sha256": "d48e406f46fb1e6b039bcd6301a6d52c84fb2d555bd553f72293925c4e698117",
+          "exact_matches": []
+        }
+      ]
+    },
+    {
+      "number": 50,
+      "source_id": "ZJ2021-A类-080",
+      "matched_old_pdf_id": false,
+      "matches": [],
+      "figure_checks": [
+        {
+          "path": "江浙行测_AI题库/images/original/1265.png",
+          "decoded_pixel_sha256": "96acb237c32f431798d57439285807a1e4c4a0b78be91ed0424fe43227654427",
+          "exact_matches": []
+        }
+      ]
+    },
+    {
+      "number": 51,
+      "source_id": "JS2025-A类-103",
+      "matched_old_pdf_id": false,
+      "matches": [],
+      "figure_checks": []
+    },
+    {
+      "number": 52,
+      "source_id": "ZJ2024-A类-102",
+      "matched_old_pdf_id": false,
+      "matches": [],
+      "figure_checks": []
+    },
+    {
+      "number": 53,
+      "source_id": "JS2025-A类-099",
+      "matched_old_pdf_id": false,
+      "matches": [],
+      "figure_checks": []
+    },
+    {
+      "number": 54,
+      "source_id": "ZJ2025-A类-103",
+      "matched_old_pdf_id": false,
+      "matches": [],
+      "figure_checks": []
+    },
+    {
+      "number": 55,
+      "source_id": "ZJ2025-A类-104",
+      "matched_old_pdf_id": false,
+      "matches": [],
+      "figure_checks": []
+    },
+    {
+      "number": 56,
+      "source_id": "JS2024-A类-100",
+      "matched_old_pdf_id": false,
+      "matches": [],
+      "figure_checks": []
+    },
+    {
+      "number": 57,
+      "source_id": "ZJ2025-A类-106",
+      "matched_old_pdf_id": false,
+      "matches": [],
+      "figure_checks": []
+    },
+    {
+      "number": 58,
+      "source_id": "JS2025-A类-100",
+      "matched_old_pdf_id": false,
+      "matches": [],
+      "figure_checks": []
+    },
+    {
+      "number": 59,
+      "source_id": "JS2024-A类-103",
+      "matched_old_pdf_id": false,
+      "matches": [],
+      "figure_checks": []
+    },
+    {
+      "number": 60,
+      "source_id": "JS2025-A类-102",
+      "matched_old_pdf_id": false,
+      "matches": [],
+      "figure_checks": []
+    },
+    {
+      "number": 61,
+      "source_id": "gd-mock-2026h2-s20-q61",
+      "matched_old_pdf_id": false,
+      "matches": [],
+      "figure_checks": []
+    },
+    {
+      "number": 62,
+      "source_id": "ZJ2025-A类-108",
+      "matched_old_pdf_id": false,
+      "matches": [],
+      "figure_checks": []
+    },
+    {
+      "number": 63,
+      "source_id": "JS2025-A类-092",
+      "matched_old_pdf_id": false,
+      "matches": [],
+      "figure_checks": []
+    },
+    {
+      "number": 64,
+      "source_id": "gd-mock-2026h2-s20-q64",
+      "matched_old_pdf_id": false,
+      "matches": [],
+      "figure_checks": []
+    },
+    {
+      "number": 65,
+      "source_id": "ZJ2024-A类-110",
+      "matched_old_pdf_id": false,
+      "matches": [],
+      "figure_checks": []
+    }
+  ]
+}

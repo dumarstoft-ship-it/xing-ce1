@@ -1,0 +1,423 @@
+{
+  "reviewer": "independent_subagent_verbal",
+  "review_date": "2026-11-15",
+  "reviewed_file": "work/politics_selection.json",
+  "reviewed_version_note": "本报告针对首读时Q4仍写“整个行业”、Q6解析仍写“排斥外部经验”、Q12来源未标“征求意见稿”的版本；原题文件未由审核者修改。",
+  "method": "第一次仅输出stem/options/question_type，独立写入politics_independent_answers.json，再读取答案、解析与来源；核对讲义指定页与官方/一手资料。",
+  "answer_error_count": 0,
+  "answer_agreement_count": 15,
+  "required_minor_change_count": 4,
+  "conclusion": "15题答案均可接受；4项措辞/解析/来源小修后可供Claude继续独立审核，无需因题面清楚而人为加难。",
+  "required_changes": [
+    {
+      "id": "POL-01",
+      "number": 4,
+      "severity": "wording",
+      "required": true,
+      "field": "stem",
+      "original": "在整个行业的生产条件和劳动生产率不变时",
+      "suggested": "在社会平均生产条件和社会劳动生产率不变时",
+      "reason": "用社会平均口径固定社会必要劳动时间；不把整个行业理解为行业每一家企业的生产条件全不变。",
+      "answer_change": false
+    },
+    {
+      "id": "POL-02",
+      "number": 6,
+      "severity": "analysis_precision",
+      "required": true,
+      "field": "analysis",
+      "original": "A把自信自立等同于排斥外部经验",
+      "suggested": "A把自信自立简化为主要靠本地经验解决所有问题，夸大了本地经验的适用范围",
+      "reason": "A的主要依靠不逻辑等同于排斥；应针对所有问题这一实际表述说明。",
+      "answer_change": false
+    },
+    {
+      "id": "POL-03",
+      "number": 12,
+      "severity": "source_identity",
+      "required": true,
+      "field": "provenance.references[1].title",
+      "original": "韩江“一河一策”实施方案（2022年修订）",
+      "suggested": "梅州市韩江“一河一策”实施方案（2022年修订）（征求意见稿）",
+      "reason": "PDF封面明示征求意见稿，日期2023年5月。可作河流基础信息参考，但不能把它写成已生效规划。",
+      "answer_change": false
+    },
+    {
+      "id": "POL-04",
+      "number": 13,
+      "severity": "evidence_coverage",
+      "required": true,
+      "field": "provenance.references",
+      "action": "add_reference",
+      "reference": {
+        "title": "中国共产党一百年大事记（1921年7月－2021年6月）",
+        "url": "https://www.12371.cn/2021/06/28/ARTI1624828749818652.shtml",
+        "locator": "1927年条目：8月1日南昌；9月9日湘赣边界秋收，29日三湾改编；12月11日广州",
+        "checked_on": "2026-11-15"
+      },
+      "reason": "新来源的1927年条目直接覆盖四个事件及先后，原三湾文章不宜单独承担全部日期的支持。",
+      "answer_change": false
+    }
+  ],
+  "optional_suggestions": [
+    {
+      "number": 2,
+      "action": "把讲义页码收窄到27页，或明确21、25、26页为相关背景，不是全国与地方口径的直接依据。"
+    },
+    {
+      "number": 8,
+      "action": "可补充林龄和林下层次的森林经营出处。",
+      "reference": {
+        "title": "新修订森林法，森林经营的重要保障",
+        "url": "https://www.forestry.gov.cn/c/www/gkzcjd/108267.jhtml",
+        "locator": "森林经营原理及结构，涉及年龄结构、树种组成、下木和草本层；国家林草局发布",
+        "checked_on": "2026-11-15"
+      }
+    },
+    {
+      "number": 10,
+      "action": "可补充直接经验与间接经验的经典原文。",
+      "reference": {
+        "title": "实践论",
+        "url": "https://news.12371.cn/2017/08/29/ARTI1504001411770206.shtml",
+        "locator": "直接经验与间接经验；社会实践对认识真理性的检验",
+        "checked_on": "2026-11-15"
+      }
+    },
+    {
+      "number": 11,
+      "action": "原司法部链接在本次浏览工具中重定向循环，可加总局全文作为备用来源；不能因此断言原网站永久失效。",
+      "reference": {
+        "title": "中华人民共和国民法典（国家市场监督管理总局全文）",
+        "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_60fb3863b7364b759123a42d1df568ca.html",
+        "locator": "第18—21条，第144—145条",
+        "checked_on": "2026-11-15"
+      }
+    },
+    {
+      "number": 13,
+      "action": "可将题干写为“下列1927年的历史事件按发生时间先后排列，正确的是（）”，避免广州起义名称在脱离上下文时的歧义。"
+    }
+  ],
+  "items": [
+    {
+      "number": 1,
+      "independent_answer": "正确",
+      "editor_answer": "正确",
+      "answer_agrees": true,
+      "verdict": "accept",
+      "reason": "可接受。原创创新与成果转化都是所列论述明确提出的任务。讲义28页直接支持创新部分，29页是科技教育人才相关主题；具体产业和产业链表述来自补充一手论述，不应说整句皆为讲义原话。",
+      "book_pages": [
+        28,
+        29
+      ],
+      "book_support": "partial_topic_plus_primary",
+      "checked_references": [
+        {
+          "title": "习近平总书记关于发展新质生产力的重要论述",
+          "url": "https://www.ndrc.gov.cn/xwdt/ztzl/NEW_srxxgcjjpjjsx/jjsxyjqk/qkzk/qkzk2025/4/zyjh/202601/t20260106_1403075.html",
+          "locator": "开头第一、第二点；2024年3月5日讲话节录",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "independent_answer": "错误",
+      "editor_answer": "错误",
+      "answer_agrees": true,
+      "verdict": "accept",
+      "reason": "可接受。错误确在把全国总体条件扩大到每个地区、每个行业。讲义27页最贴近公有制主体主题，21、25、26页只是宽泛背景；全国与地方产业差别由发改委全文直接支持。",
+      "book_pages": [
+        21,
+        25,
+        26,
+        27
+      ],
+      "book_support": "topic_plus_primary",
+      "checked_references": [
+        {
+          "title": "基本经济制度：从单一公有制到公有制为主体的混合所有制",
+          "url": "https://www.ndrc.gov.cn/fggz/tzgg/byggdt/200812/t20081231_1021834.html",
+          "locator": "第一部分：全国总体与地方、产业可以有所差别",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "independent_answer": "正确",
+      "editor_answer": "正确",
+      "answer_agrees": true,
+      "verdict": "accept",
+      "reason": "可接受。2022年12月8日通过的决定在指导思想中明列所考的主要途径与目标。讲义60、65页只提供百千万工程主题入口，不含这两项完整表述。",
+      "book_pages": [
+        60,
+        65
+      ],
+      "book_support": "topic_plus_primary",
+      "checked_references": [
+        {
+          "title": "中共广东省委关于实施“百县千镇万村高质量发展工程”促进城乡区域协调发展的决定",
+          "url": "https://www.by.gov.cn/zwgk/zdlyxxgkzl/xczxxxgkzl/zcfg/content/post_8927094.html",
+          "locator": "一、总体要求（二）指导思想；2022年12月8日通过",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "independent_answer": "错误",
+      "editor_answer": "错误",
+      "answer_agrees": true,
+      "verdict": "accept_after_minor_revision",
+      "reason": "答案错误正确。讲义45页明确区分社会必要劳动时间与个别劳动时间。需将行业条件限定写得更准确，避免“整个行业条件不变”被读为行业中每家企业条件均不变，与技术改进前提相撞。",
+      "book_pages": [
+        45
+      ],
+      "book_support": "direct_principle",
+      "checked_references": []
+    },
+    {
+      "number": 5,
+      "independent_answer": "B",
+      "editor_answer": "B",
+      "answer_agrees": true,
+      "verdict": "accept",
+      "reason": "可接受。所列2024年3月5日讲话支持依本地资源、产业与科研条件选择路线、改造传统产业；B唯一恰当。其余选项错误点具体，无需额外人为增难。",
+      "book_pages": [
+        28
+      ],
+      "book_support": "topic_plus_primary",
+      "checked_references": [
+        {
+          "title": "习近平总书记关于发展新质生产力的重要论述",
+          "url": "https://www.ndrc.gov.cn/xwdt/ztzl/NEW_srxxgcjjpjjsx/jjsxyjqk/qkzk/qkzk2025/4/zyjh/202601/t20260106_1403075.html",
+          "locator": "开头第一、第二点；2024年3月5日讲话节录",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "independent_answer": "C",
+      "editor_answer": "C",
+      "answer_agrees": true,
+      "verdict": "accept_after_minor_revision",
+      "reason": "题面及C答案可接受。上下游、产业和生态、建设和管护是多个联系的统筹。需小改A项的排除解释：选项称“主要依靠”，不应概括成已明确排斥外部经验。",
+      "book_pages": [
+        22,
+        66
+      ],
+      "book_support": "direct_principle_plus_topic",
+      "checked_references": [
+        {
+          "title": "中共广东省委关于深入推进绿美广东生态建设的决定",
+          "url": "https://www.jiangmen.gov.cn/bmpd/jmsmzzjswj/zcwj/zcfg/content/post_2867640.html",
+          "locator": "指导思想、基本原则、森林结构和生态空间布局",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "independent_answer": "A",
+      "editor_answer": "A",
+      "answer_agrees": true,
+      "verdict": "accept",
+      "reason": "可接受。所做的是多项制约之间分主次并兼顾，非在同一矛盾内部辨别主要方面来判断经济性质。A唯一。讲义40—41页覆盖理论主题，但两点论重点论的情境解释是编者推论。",
+      "book_pages": [
+        40,
+        41
+      ],
+      "book_support": "direct_principle_with_inference",
+      "checked_references": []
+    },
+    {
+      "number": 8,
+      "independent_answer": "D",
+      "editor_answer": "D",
+      "answer_agrees": true,
+      "verdict": "accept",
+      "reason": "可接受。D将天然林按短期外观统一改成速生纯林，违背科学绿化与森林质量目标；A—C均成立。讲义66页只是绿美主题。B中的林龄、林下植被不直接出自所引决定，可补国家林草局森林经营说明，防止误标逐字依据。",
+      "book_pages": [
+        66
+      ],
+      "book_support": "topic_plus_primary",
+      "checked_references": [
+        {
+          "title": "中共广东省委关于深入推进绿美广东生态建设的决定",
+          "url": "https://www.jiangmen.gov.cn/bmpd/jmsmzzjswj/zcwj/zcfg/content/post_2867640.html",
+          "locator": "指导思想、基本原则、森林结构和生态空间布局",
+          "checked_on": "2026-11-15"
+        },
+        {
+          "title": "新修订森林法，森林经营的重要保障",
+          "url": "https://www.forestry.gov.cn/c/www/gkzcjd/108267.jhtml",
+          "locator": "森林经营原理及结构，涉及年龄结构、树种组成、下木和草本层；国家林草局发布",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "independent_answer": "ACD",
+      "editor_answer": "ACD",
+      "answer_agrees": true,
+      "verdict": "accept",
+      "reason": "可接受。ACD与所列原文对应；D没有列出全部统一关系，不等于其列出的三个关系错误。B把民主参与缩为选举后终止，错误明确。",
+      "book_pages": [
+        29,
+        30
+      ],
+      "book_support": "direct",
+      "checked_references": [
+        {
+          "title": "《党的二十大报告学习辅导百问》（52）",
+          "url": "https://www.ndrc.gov.cn/fggz/gbzj/xxyd/202304/t20230428_1355381.html",
+          "locator": "过程与成果、程序与实质、直接与间接相统一；完整制度程序与参与实践",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "independent_answer": "AD",
+      "editor_answer": "AD",
+      "answer_agrees": true,
+      "verdict": "accept",
+      "reason": "可接受。AD成立。B把间接经验与实践彻底割裂；C把一次成功当作永久免检。讲义42—43页支持认识回到实践和认识发展，直接/间接经验关系可用《实践论》补强。",
+      "book_pages": [
+        42,
+        43
+      ],
+      "book_support": "partial_principle_with_inference",
+      "checked_references": [
+        {
+          "title": "实践论",
+          "url": "https://news.12371.cn/2017/08/29/ARTI1504001411770206.shtml",
+          "locator": "直接经验与间接经验；社会实践对认识真理性的检验",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "independent_answer": "A",
+      "editor_answer": "A",
+      "answer_agrees": true,
+      "verdict": "accept",
+      "reason": "可接受。民法典18—21、144—145条逐项支持答案A。纯获利益可独立实施的例外适用于限制民事行为能力人；不满8岁无行为能力人独立订立赠与合同不因纯获益自动有效。题面限定“订立合同”而非仅收取赠与物，边界清楚。",
+      "book_pages": [
+        93
+      ],
+      "book_support": "topic_plus_statute",
+      "checked_references": [
+        {
+          "title": "中华人民共和国民法典（国家市场监督管理总局全文）",
+          "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_60fb3863b7364b759123a42d1df568ca.html",
+          "locator": "第18—21条，第144—145条",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "independent_answer": "C",
+      "editor_answer": "C",
+      "answer_agrees": true,
+      "verdict": "accept_after_minor_revision",
+      "reason": "题面与C答案可接受。河道名录直接支持A、B、D的错配识别。须修正第二个来源的标题：它是2023年5月的征求意见稿，不能省去稿件状态；题目只用自然地理事实，答案不因此改变。",
+      "book_pages": [
+        70
+      ],
+      "book_support": "topic_plus_primary",
+      "checked_references": [
+        {
+          "title": "广东省主要河道名录",
+          "url": "https://www.shanwei.gov.cn/swswj/zmhd/ywzsk/content/post_804299.html",
+          "locator": "第一至四项：东江、西江、北江、韩江干流范围；来源广东省水利厅",
+          "checked_on": "2026-11-15"
+        },
+        {
+          "title": "梅州市韩江“一河一策”实施方案（2022年修订）（征求意见稿）",
+          "url": "https://www.meizhou.gov.cn/attachment/0/157/157084/2504228.pdf",
+          "locator": "封面明确为征求意见稿，2023年5月；用于河流基本情况，不能作为已生效规划的证明",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "independent_answer": "B",
+      "editor_answer": "B",
+      "answer_agrees": true,
+      "verdict": "accept_after_minor_revision",
+      "reason": "B正确，顺序为南昌—湘赣边界秋收—三湾—广州。需补一份能同时覆盖四事件日期的来源，现有三湾文章定位范围不足。正文可选加“1927年的”消除广州起义同名历史事件的潜在歧义，此项不是答案错误。",
+      "book_pages": [
+        49,
+        50
+      ],
+      "book_support": "dates_direct",
+      "checked_references": [
+        {
+          "title": "中国共产党一百年大事记（1921年7月－2021年6月）",
+          "url": "https://www.12371.cn/2021/06/28/ARTI1624828749818652.shtml",
+          "locator": "1927年条目：8月1日南昌；9月9日湘赣边界秋收，29日三湾改编；12月11日广州",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "independent_answer": "D",
+      "editor_answer": "D",
+      "answer_agrees": true,
+      "verdict": "accept",
+      "reason": "可接受。航天局两篇任务报道直接支持A、B、C及D的错误；我国首次的主体限定准确。D前半句已经错误，其“同在背面就区域相同”的推论也不成立，但不影响唯一选非。",
+      "book_pages": [
+        106
+      ],
+      "book_support": "partial_topic_plus_primary",
+      "checked_references": [
+        {
+          "title": "嫦娥四号任务圆满成功",
+          "url": "https://www.cnsa.gov.cn/n6758823/n6758838/c6805166/content.html",
+          "locator": "2019年1月11日；玉兔二号、鹊桥、月球背面着陆",
+          "checked_on": "2026-11-15"
+        },
+        {
+          "title": "嫦娥五号探测器圆满完成我国首次地外天体采样返回任务",
+          "url": "https://www.cnsa.gov.cn/n6758823/n6758838/c6810872/content.html",
+          "locator": "2020年12月17日；12月1日月球正面着陆，首次地外天体采样返回",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "independent_answer": "C",
+      "editor_answer": "C",
+      "answer_agrees": true,
+      "verdict": "accept",
+      "reason": "可接受。省社科联文章直接解释封弥与誊录的不同作用；讲义98页只列制度名称，未完整解释机制，题目解析用补充来源是必要的。",
+      "book_pages": [
+        98
+      ],
+      "book_support": "names_only_plus_primary",
+      "checked_references": [
+        {
+          "title": "宋朝的科举制度",
+          "url": "https://www.zjskw.gov.cn/art/2023/6/11/art_1229501970_52717.html",
+          "locator": "封弥隐藏身份；誊录由专人抄副本以避免辨认字迹",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "不是Claude审核，也不代表整卷最终定稿。",
+    "原司法部及中纪委链接本次工具打开出现重定向循环；法律与日期已分别用其他官方全文核实。",
+    "所列讲义页有的只是主题入口，不能声称题中每句话均为讲义原文。"
+  ]
+}

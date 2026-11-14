@@ -1,0 +1,102 @@
+{
+  "GKYY-2025-034": [
+    {
+      "question_pdf": "国考/真题/2025年国家公务员录用考试《行测》题（行政执法卷）.pdf",
+      "question_pages": [
+        7
+      ],
+      "original_number": 44,
+      "page_numbering": "PDF physical page, 1-based",
+      "git_blob_sha": "b4413b040efd102fea703f718c8f167d6db094aa",
+      "sha256": "b5d3d76c56ff792280fa93e26da59a3ff8aa38f7d5e034038d142ae1aa1ef2e1",
+      "verification": "原PDF文本定位；入选题面另经页面渲染核对（重复卷别仅核对一份完整题面）。"
+    },
+    {
+      "question_pdf": "国考/真题/2025年国家公务员录用考试《行测》题（地市级）.pdf",
+      "question_pages": [
+        6
+      ],
+      "original_number": 41,
+      "page_numbering": "PDF physical page, 1-based",
+      "git_blob_sha": "dcc592d8ec92c9b10c4d9dc794aeba1ef090ace7",
+      "sha256": "cec0f079a340b50e42fe4c2ed20b878411946138d5cb8bb520eac29224e5d1f6",
+      "verification": "原PDF文本定位；入选题面另经页面渲染核对（重复卷别仅核对一份完整题面）。"
+    }
+  ],
+  "GKYY-2025-057": [
+    {
+      "question_pdf": "国考/真题/2025年国家公务员录用考试《行测》题（行政执法卷）.pdf",
+      "question_pages": [
+        9
+      ],
+      "original_number": 56,
+      "page_numbering": "PDF physical page, 1-based",
+      "git_blob_sha": "b4413b040efd102fea703f718c8f167d6db094aa",
+      "sha256": "b5d3d76c56ff792280fa93e26da59a3ff8aa38f7d5e034038d142ae1aa1ef2e1",
+      "verification": "原PDF文本定位；入选题面另经页面渲染核对（重复卷别仅核对一份完整题面）。"
+    }
+  ],
+  "GKYY-2025-058": [
+    {
+      "question_pdf": "国考/真题/2025年国家公务员录用考试《行测》题（行政执法卷）.pdf",
+      "question_pages": [
+        9
+      ],
+      "original_number": 57,
+      "page_numbering": "PDF physical page, 1-based",
+      "git_blob_sha": "b4413b040efd102fea703f718c8f167d6db094aa",
+      "sha256": "b5d3d76c56ff792280fa93e26da59a3ff8aa38f7d5e034038d142ae1aa1ef2e1",
+      "verification": "原PDF文本定位；入选题面另经页面渲染核对（重复卷别仅核对一份完整题面）。"
+    }
+  ],
+  "GKYY-2025-061": [
+    {
+      "question_pdf": "国考/真题/2025年国家公务员录用考试《行测》题（行政执法卷）.pdf",
+      "question_pages": [
+        10
+      ],
+      "original_number": 60,
+      "page_numbering": "PDF physical page, 1-based",
+      "git_blob_sha": "b4413b040efd102fea703f718c8f167d6db094aa",
+      "sha256": "b5d3d76c56ff792280fa93e26da59a3ff8aa38f7d5e034038d142ae1aa1ef2e1",
+      "verification": "原PDF文本定位；入选题面另经页面渲染核对（重复卷别仅核对一份完整题面）。"
+    }
+  ],
+  "GKYY-2025-017": [
+    {
+      "question_pdf": "国考/真题/2025年国家公务员录用考试《行测》题（地市级）.pdf",
+      "question_pages": [
+        8
+      ],
+      "original_number": 54,
+      "page_numbering": "PDF physical page, 1-based",
+      "git_blob_sha": "dcc592d8ec92c9b10c4d9dc794aeba1ef090ace7",
+      "sha256": "cec0f079a340b50e42fe4c2ed20b878411946138d5cb8bb520eac29224e5d1f6",
+      "verification": "原PDF文本定位；入选题面另经页面渲染核对（重复卷别仅核对一份完整题面）。"
+    },
+    {
+      "question_pdf": "国考/真题/2025年国家公务员录用考试《行测》题（副省级）.pdf",
+      "question_pages": [
+        8
+      ],
+      "original_number": 52,
+      "page_numbering": "PDF physical page, 1-based",
+      "git_blob_sha": "a229e81581469ca79d7df55239185a0285de0d30",
+      "sha256": "ace5b34c9f88f9cb68cc2a5cdb3586240e28a2f965d6f23271b4045f785ffe09",
+      "verification": "原PDF文本定位；入选题面另经页面渲染核对（重复卷别仅核对一份完整题面）。"
+    }
+  ],
+  "GKYY-2025-046": [
+    {
+      "question_pdf": "国考/真题/2025年国家公务员录用考试《行测》题（地市级）.pdf",
+      "question_pages": [
+        10
+      ],
+      "original_number": 60,
+      "page_numbering": "PDF physical page, 1-based",
+      "git_blob_sha": "dcc592d8ec92c9b10c4d9dc794aeba1ef090ace7",
+      "sha256": "cec0f079a340b50e42fe4c2ed20b878411946138d5cb8bb520eac29224e5d1f6",
+      "verification": "原PDF文本定位；入选题面另经页面渲染核对（重复卷别仅核对一份完整题面）。"
+    }
+  ]
+}

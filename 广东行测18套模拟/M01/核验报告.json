@@ -1,0 +1,68 @@
+{
+  "paper_id": "M01",
+  "checked_version": "0.1.0",
+  "content_validation": "PASS",
+  "target_count": 90,
+  "actual_count": 85,
+  "missing_numbers": [
+    66,
+    67,
+    68,
+    69,
+    70
+  ],
+  "completed_section_counts": {
+    "政治理论": 10,
+    "常识应用": 5,
+    "言语理解与表达": 15,
+    "数量关系": 15,
+    "判断推理": 20,
+    "资料分析": 20
+  },
+  "material_groups": {
+    "gd-mock-2026h2-s17-m1": [
+      71,
+      72,
+      73,
+      74,
+      75
+    ],
+    "gd-mock-2026h2-s21-m3": [
+      76,
+      77,
+      78,
+      79,
+      80
+    ],
+    "gd-mock-2026h2-s25-m4": [
+      81,
+      82,
+      83,
+      84,
+      85
+    ],
+    "gd-mock-2026h2-s33-m1": [
+      86,
+      87,
+      88,
+      89,
+      90
+    ]
+  },
+  "unique_figure_files": 5,
+  "errors": [],
+  "is_complete_paper": false,
+  "print_ready": false,
+  "external_review": "pending_claude",
+  "source_file_sha256": {
+    "江浙行测_AI题库/questions.jsonl": "07b748dd27d44132d7734279306f724981a89de028d19d229c989f00fd9b7c93",
+    "国考/言语理解/2016-2025/all.jsonl": "f3e468935dadeaa7dcdd778bd59da40f2100c53012ab161c251818f3e3313ba9",
+    "模考/2026下半年广东卷_16-33季_AI可读/全部题目.jsonl": "172a2b7dbe49b2e321fed272499a2c23fbfaca584bd38c01ec53f08f3c284c35"
+  },
+  "limits": [
+    "结构检查不是答案正确性证明；逐题推导与内部复核记录另存。",
+    "粉笔原始PDF未在当前仓库找到，转写题面与原PDF尚未逐页复核。",
+    "所有原始资料答案只称参考答案；编辑答案不冒称官方答案。",
+    "已交付与用户已做不同，旧专项匹配只用于减少已曝光重复。"
+  ]
+}

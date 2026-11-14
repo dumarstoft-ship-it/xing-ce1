@@ -1,0 +1,529 @@
+{
+  "scope": "现有源库的题目记录与资产盘点；不将记录数等同跨库去重后独立题，更不等同用户未做过的陌生题",
+  "baseline_commit": "bf3c5e34e8c3db6af71e427aabe9b438978c9935",
+  "date_local": "2026-11-15",
+  "checks_this_turn": {
+    "source_jsonl_read": "完成",
+    "id_uniqueness_and_pairing": "完成",
+    "asset_path_presence": "完成",
+    "mock_numbers_materials_answers": "完成",
+    "mock_source_pdf_sha256_search": "扫描全部受git跟踪PDF并比较18个来源哈希；同时检查模考ZIP内PDF条目"
+  },
+  "existing_validators": {
+    "status": "PASS",
+    "scope": [
+      "江浙题库tools/validate.py",
+      "广东题库verify.py",
+      "国考言语verify.py"
+    ],
+    "execution_evidence": "主任务在本轮实际执行并向盘点任务提供PASS结果；本盘点不重复运行，也不把结构校验等同答案学术核验"
+  },
+  "banks": {
+    "guangdong_reference": {
+      "root": "广东/行测/2022-2026",
+      "entry": "all.jsonl",
+      "record_count": 670,
+      "paper_count": 7,
+      "section_counts": {
+        "言语理解与表达": 85,
+        "常识判断": 95,
+        "数量关系": 105,
+        "判断推理": 170,
+        "科学推理": 75,
+        "资料分析": 120,
+        "政治理论": 20
+      },
+      "records_by_paper": {
+        "GD2022-XZ": 100,
+        "GD2022-XJ": 100,
+        "GD2023-XZ": 100,
+        "GD2023-XJ": 100,
+        "GD2024": 90,
+        "GD2025": 90,
+        "GD2026": 90
+      },
+      "unique_ids": 670,
+      "question_numbers_valid": true,
+      "answer_status_counts": {
+        "known": 578,
+        "disputed": 2,
+        "missing": 90
+      },
+      "material_groups": 24,
+      "image_assets": {
+        "declared_unique_file_paths": 154,
+        "present_count": 154,
+        "missing_paths": []
+      },
+      "role": "2022—2026共7卷的结构与设问参考；按卷保留重复题，不自动编入陌生题池"
+    },
+    "jiangzhe": {
+      "root": "江浙行测_AI题库",
+      "entry": "questions.jsonl",
+      "answer_entry": "answers.jsonl",
+      "record_count": 1215,
+      "paper_count": 14,
+      "section_counts": {
+        "言语理解与表达": 377,
+        "数量关系": 285,
+        "判断推理": 553
+      },
+      "unique_ids": 1215,
+      "question_answer_ids_match": true,
+      "duplicate_original_numbers_per_paper": 0,
+      "source_missing_placeholders": 11,
+      "source_omission_records": 14,
+      "records_without_missing_or_omission_flags": 1190,
+      "question_quality_flags": {
+        "source_missing": 11,
+        "source_omission": 14,
+        "source_typo": 3,
+        "source_diagram_damage": 1,
+        "source_text_diagram_inconsistency": 1
+      },
+      "source_answers_available": 1118,
+      "answer_quality_flags": {
+        "source_answer_conflict": 2,
+        "source_calculation_issue": 2,
+        "answer_not_in_source": 95,
+        "analysis_not_in_source": 20,
+        "alternative_solution_in_source": 1
+      },
+      "original_image_asset_count": 329,
+      "code_hd_asset_pairs": 27,
+      "image_asset_files": {
+        "declared_unique_file_paths": 383,
+        "present_count": 383,
+        "missing_paths": []
+      },
+      "notes": [
+        "2026浙江84条无配套答案；2026江苏20条仅原高亮答案无解析，其中14条省略题意或条件。",
+        "2023江苏33、2024江苏46来源答案冲突；源库保留冲突证据，correct_answer=null。",
+        "完整记录1190仍可能含有受损图、来源错字或待判断的答案问题，不等同1190题全部可直接选用。",
+        "原PDF来源为另一个仓库dumarstoft-ship-it/xingce的固定提交，逐题source保留URL、页码、blob。"
+      ]
+    },
+    "national_verbal": {
+      "root": "国考/言语理解/2016-2025",
+      "entry": "all.jsonl",
+      "record_count": 587,
+      "source_paper_count": 24,
+      "unique_ids": 587,
+      "year_counts": {
+        "2016": 40,
+        "2017": 45,
+        "2018": 50,
+        "2019": 50,
+        "2020": 57,
+        "2021": 55,
+        "2022": 76,
+        "2023": 81,
+        "2024": 69,
+        "2025": 64
+      },
+      "answer_status_counts": {
+        "single": 584,
+        "disputed": 3
+      },
+      "image_asset_count": 0,
+      "notes": [
+        "同年跨卷已合并重复，跨年份及跨库重复未承诺消除。",
+        "稳定ID是整理库编号，不是原卷题号；合并题未逐题保留单一原卷映射。"
+      ]
+    },
+    "guangdong_mock": {
+      "root": "模考/2026下半年广东卷_16-33季_AI可读",
+      "entry": "全部题目.jsonl",
+      "record_count": 990,
+      "season_count": 18,
+      "section_counts": {
+        "数量关系": 270,
+        "判断推理": 360,
+        "资料分析": 360
+      },
+      "unique_ids": 990,
+      "null_answer_records": 990,
+      "material_groups": 72,
+      "all_material_groups_have_five_questions": true,
+      "season_number_checks": [
+        {
+          "season": 16,
+          "records": 55,
+          "section_counts": {
+            "数量关系": 15,
+            "判断推理": 20,
+            "资料分析": 20
+          },
+          "matches_expected_number_set": true
+        },
+        {
+          "season": 17,
+          "records": 55,
+          "section_counts": {
+            "数量关系": 15,
+            "判断推理": 20,
+            "资料分析": 20
+          },
+          "matches_expected_number_set": true
+        },
+        {
+          "season": 18,
+          "records": 55,
+          "section_counts": {
+            "数量关系": 15,
+            "判断推理": 20,
+            "资料分析": 20
+          },
+          "matches_expected_number_set": true
+        },
+        {
+          "season": 19,
+          "records": 55,
+          "section_counts": {
+            "数量关系": 15,
+            "判断推理": 20,
+            "资料分析": 20
+          },
+          "matches_expected_number_set": true
+        },
+        {
+          "season": 20,
+          "records": 55,
+          "section_counts": {
+            "数量关系": 15,
+            "判断推理": 20,
+            "资料分析": 20
+          },
+          "matches_expected_number_set": true
+        },
+        {
+          "season": 21,
+          "records": 55,
+          "section_counts": {
+            "数量关系": 15,
+            "判断推理": 20,
+            "资料分析": 20
+          },
+          "matches_expected_number_set": true
+        },
+        {
+          "season": 22,
+          "records": 55,
+          "section_counts": {
+            "数量关系": 15,
+            "判断推理": 20,
+            "资料分析": 20
+          },
+          "matches_expected_number_set": true
+        },
+        {
+          "season": 23,
+          "records": 55,
+          "section_counts": {
+            "数量关系": 15,
+            "判断推理": 20,
+            "资料分析": 20
+          },
+          "matches_expected_number_set": true
+        },
+        {
+          "season": 24,
+          "records": 55,
+          "section_counts": {
+            "数量关系": 15,
+            "判断推理": 20,
+            "资料分析": 20
+          },
+          "matches_expected_number_set": true
+        },
+        {
+          "season": 25,
+          "records": 55,
+          "section_counts": {
+            "数量关系": 15,
+            "判断推理": 20,
+            "资料分析": 20
+          },
+          "matches_expected_number_set": true
+        },
+        {
+          "season": 26,
+          "records": 55,
+          "section_counts": {
+            "数量关系": 15,
+            "判断推理": 20,
+            "资料分析": 20
+          },
+          "matches_expected_number_set": true
+        },
+        {
+          "season": 27,
+          "records": 55,
+          "section_counts": {
+            "数量关系": 15,
+            "判断推理": 20,
+            "资料分析": 20
+          },
+          "matches_expected_number_set": true
+        },
+        {
+          "season": 28,
+          "records": 55,
+          "section_counts": {
+            "数量关系": 15,
+            "判断推理": 20,
+            "资料分析": 20
+          },
+          "matches_expected_number_set": true
+        },
+        {
+          "season": 29,
+          "records": 55,
+          "section_counts": {
+            "数量关系": 15,
+            "判断推理": 20,
+            "资料分析": 20
+          },
+          "matches_expected_number_set": true
+        },
+        {
+          "season": 30,
+          "records": 55,
+          "section_counts": {
+            "数量关系": 15,
+            "判断推理": 20,
+            "资料分析": 20
+          },
+          "matches_expected_number_set": true
+        },
+        {
+          "season": 31,
+          "records": 55,
+          "section_counts": {
+            "数量关系": 15,
+            "判断推理": 20,
+            "资料分析": 20
+          },
+          "matches_expected_number_set": true
+        },
+        {
+          "season": 32,
+          "records": 55,
+          "section_counts": {
+            "数量关系": 15,
+            "判断推理": 20,
+            "资料分析": 20
+          },
+          "matches_expected_number_set": true
+        },
+        {
+          "season": 33,
+          "records": 55,
+          "section_counts": {
+            "数量关系": 15,
+            "判断推理": 20,
+            "资料分析": 20
+          },
+          "matches_expected_number_set": true
+        }
+      ],
+      "science_section_records": 0,
+      "numbers_66_to_70_records": 0,
+      "manifest_images": {
+        "declared_unique_file_paths": 157,
+        "present_count": 157,
+        "missing_paths": []
+      },
+      "question_figure_paths": {
+        "declared_unique_file_paths": 157,
+        "present_count": 157,
+        "missing_paths": []
+      },
+      "original_pdf_presence": [
+        {
+          "season": 16,
+          "source_name": "2026下半年省考第十六季行测模考大赛（广东卷）.pdf",
+          "source_sha256": "b2303d9f86b08f332ab561cc9ef677f05550838f83570affa0d5050fb10c8d01",
+          "matching_tracked_pdf_paths": []
+        },
+        {
+          "season": 17,
+          "source_name": "2026下半年省考第十七季行测模考大赛（广东卷）.pdf",
+          "source_sha256": "822bd71d69b9d482e6639514477584b21397c3e930705142a5f2b6089dd6b885",
+          "matching_tracked_pdf_paths": []
+        },
+        {
+          "season": 18,
+          "source_name": "2026下半年省考第十八季行测模考大赛（广东卷）.pdf",
+          "source_sha256": "2886bc82e8b3f9ca9694b565170253d436599452c81bf17a2a0e46600a69caec",
+          "matching_tracked_pdf_paths": []
+        },
+        {
+          "season": 19,
+          "source_name": "2026下半年省考第十九季行测模考大赛（广东卷）.pdf",
+          "source_sha256": "f101b84dd197ecd9df9f17c31ec074440855732d5de5267664437c1d44ae5762",
+          "matching_tracked_pdf_paths": []
+        },
+        {
+          "season": 20,
+          "source_name": "2026下半年省考第二十季行测模考大赛（广东卷）.pdf",
+          "source_sha256": "67acf246cdf2bde38839a2b0e056f6f535ba1146600404847fbaeed8ab6a5025",
+          "matching_tracked_pdf_paths": []
+        },
+        {
+          "season": 21,
+          "source_name": "2026下半年省考第二十一季行测模考大赛（广东卷）.pdf",
+          "source_sha256": "b17d5b3baa812dc95bc5a6f7dd4d8bd2c5e0bacb4b5e74fb9f1ca227cd61b1d9",
+          "matching_tracked_pdf_paths": []
+        },
+        {
+          "season": 22,
+          "source_name": "2026下半年省考第二十二季行测模考大赛（广东卷）.pdf",
+          "source_sha256": "78178690b536a55771abf74c5ddbe76f2cbf37f172328b48f497057f8b263f7f",
+          "matching_tracked_pdf_paths": []
+        },
+        {
+          "season": 23,
+          "source_name": "2026下半年省考第二十三季行测模考大赛（广东卷）.pdf",
+          "source_sha256": "84756de0a579cf7d6e40be45401796e46070fd50231368e97d844143ee10f57f",
+          "matching_tracked_pdf_paths": []
+        },
+        {
+          "season": 24,
+          "source_name": "2026下半年省考第二十四季行测模考大赛（广东卷）.pdf",
+          "source_sha256": "417f1d633f78531135c56c90edc2c198d67c4ac0d6283bbc5ff645b67fe66511",
+          "matching_tracked_pdf_paths": []
+        },
+        {
+          "season": 25,
+          "source_name": "2026下半年省考第二十五季行测模考大赛（广东卷）.pdf",
+          "source_sha256": "17838db5023427dbdf9f18afbcb27ff8d57750e4bfe7da7700db253f5ff55b18",
+          "matching_tracked_pdf_paths": []
+        },
+        {
+          "season": 26,
+          "source_name": "2026下半年省考第二十六季行测模考大赛（广东卷）.pdf",
+          "source_sha256": "cd5035fbb9936c5d304aeadfb5f4912624cef4dcf6b9d527ba0dd811cd025c92",
+          "matching_tracked_pdf_paths": []
+        },
+        {
+          "season": 27,
+          "source_name": "2026下半年省考第二十七季行测模考大赛（广东卷）.pdf",
+          "source_sha256": "10f074039c1223505bc696a613d6e0df07eb360e3ebcebd37abbaca945139425",
+          "matching_tracked_pdf_paths": []
+        },
+        {
+          "season": 28,
+          "source_name": "2026下半年省考第二十八季行测模考大赛（广东卷）.pdf",
+          "source_sha256": "51e528f0f9e5bae30bc456d9ccbe4028426fb9797ff9187a737552c20af1f356",
+          "matching_tracked_pdf_paths": []
+        },
+        {
+          "season": 29,
+          "source_name": "2026下半年省考第二十九季行测模考大赛（广东卷）.pdf",
+          "source_sha256": "22ae9694e0bf877ba1ef52c4057b9b6b2a13296356e31da42bfd1e92925253d4",
+          "matching_tracked_pdf_paths": []
+        },
+        {
+          "season": 30,
+          "source_name": "2026下半年省考第三十季行测模考大赛（广东卷）.pdf",
+          "source_sha256": "653b9451814031cedb5a530f2029b7eb3554f1f203bc0fdbe289a0c6bcfe856b",
+          "matching_tracked_pdf_paths": []
+        },
+        {
+          "season": 31,
+          "source_name": "2026下半年省考第三十一季行测模考大赛（广东卷）.pdf",
+          "source_sha256": "06193364ca96e42b186a34b27935e9f19ba4e02ee594840149ba2df191b987fb",
+          "matching_tracked_pdf_paths": []
+        },
+        {
+          "season": 32,
+          "source_name": "2026下半年省考第三十二季行测模考大赛（广东卷）.pdf",
+          "source_sha256": "6ac9b640512affbeb40b329234d539706b7c104b07a7e171c67ab1117815f4ba",
+          "matching_tracked_pdf_paths": []
+        },
+        {
+          "season": 33,
+          "source_name": "2026下半年省考第三十三季行测模考大赛（广东卷）.pdf",
+          "source_sha256": "405ae735da596fd06597e990ad036af7c37a8682b99333c67a18586d28431ae5",
+          "matching_tracked_pdf_paths": []
+        }
+      ],
+      "tracked_pdf_files_scanned": 158,
+      "mock_zip_pdf_entries": [],
+      "notes": [
+        "每季仅收31—45数量、46—65判断、71—90资料；66—70科学推理未纳入。",
+        "来源为题本；990条answer全部null，需要编辑独立求解并另核验。"
+      ]
+    },
+    "politics_reference": {
+      "root": "学习资料/政治理论常识",
+      "entry": "颜培天广东政治理论常识.pages.jsonl",
+      "reading_file": "颜培天广东政治理论常识.txt",
+      "page_records": 107,
+      "page_numbers_complete": true,
+      "nonempty_pages": 107,
+      "source_file_names": [
+        "颜培天广东政治理论常识.pdf"
+      ],
+      "sections": [
+        "目录与写在前面",
+        "第一节五中全会",
+        "第七节法律常识",
+        "第三节马哲马政经考点汇总",
+        "第二节思想理论大盘点",
+        "第五节广东省情27版",
+        "第八节人文科技常识串讲",
+        "第六节重要时政大盘点",
+        "第四节党史"
+      ],
+      "matching_tracked_source_pdf_paths": [],
+      "role": "107页参考讲义，供政治与常识原创选取依据；不是107道题，也不是经过逐条权威核验的事实库"
+    }
+  },
+  "capacity_for_18_papers": {
+    "per_paper_structure_reference": "按本项目当前90题结构核算：政治10、常识5、言语15、数量15、判断20、科学5、资料20；不是对未来实际考试题量的保证",
+    "data_analysis": {
+      "required_questions": 360,
+      "required_material_groups": 72,
+      "available_mock_records": 360,
+      "available_mock_material_groups": 72,
+      "numerical_spare_records": 0,
+      "implication": "若18套都用不重复的原有完整材料组，则72组全部用尽；出现任何整组淘汰、跨库重题或不可用记录，就需要补源或明确改编，不能视为自动具有质量余量。"
+    },
+    "quantitative": {
+      "required_records": 270,
+      "mock_records": 270,
+      "jiangzhe_supplement_records": 285,
+      "note": "江浙记录含数推与运算及14条省略记录，需逐题筛选；不是285题全部可替补。"
+    },
+    "verbal": {
+      "required_records": 270,
+      "national_records": 587,
+      "jiangzhe_records": 377,
+      "combined_raw_records": 964,
+      "note": "跨库重复、来源争议、已交付暴露及个人已做状态均需另看，964不等同964道独立陌生题。"
+    },
+    "judgment": {
+      "required_records": 360,
+      "jiangzhe_records": 553,
+      "mock_supplement_records": 360,
+      "note": "以用户既定江浙主源、广东补差口径使用；源模块记录数不代表广东题型适配数。"
+    },
+    "science": {
+      "required_records": 90,
+      "mock_source_records": 0,
+      "guangdong_reference_records": 75,
+      "note": "原指定模考源库缺该模块。广东75条是历年校准记录，含按卷保留重复与用户已做近年题，不能直接当90题陌生补库。首卷编辑产出不计进原始源库容量。"
+    },
+    "politics_and_general_knowledge": {
+      "required_original_records": 270,
+      "reference_pages": 107,
+      "note": "原创建题量需逐题形成，讲义页数不能直接折算题数。"
+    }
+  },
+  "project_separation": {
+    "old_special_training": "广东行测24天集训/及习题本/为旧专项与已交付记录，不视为本新18套进度，也不推定用户全部已做。",
+    "new_project": "广东行测18套模拟/是当前整卷协作入口；M01及用题记录由主任务维护。本次盘点不移动原库、不修改工作流。"
+  }
+}

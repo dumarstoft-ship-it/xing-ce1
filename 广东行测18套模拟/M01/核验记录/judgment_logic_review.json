@@ -1,0 +1,166 @@
+{
+  "scope": "M01第51—65题；不含图形推理",
+  "method": "仅输出source_question内题干、选项与共同材料，独立作答并保存judgment_logic_review_blind.json，之后再读取编者答案和解析比较。",
+  "result": "15题答案全部一致；未发现必要充分关系逆推、加强削弱方向或否定设问错误。",
+  "specific_issues": [],
+  "focus_questions": [
+    51,
+    52,
+    54,
+    61,
+    64
+  ],
+  "items": [
+    {
+      "number": 51,
+      "independent_answer": "A",
+      "reason": "记全游为S、吴游为W、陈跳为D、刘水为L、全艇为R。前提给S→¬D、L→D、W与S恰一真，以及¬R与L恰一真（即R↔L）。补R可推L、D、¬S，进而W；补¬D或¬L都不能否定S。",
+      "source_id": "JS2025-A类-103",
+      "editor_answer": "A",
+      "agreement": true,
+      "editor_analysis_checked": true,
+      "specific_issue": null
+    },
+    {
+      "number": 52,
+      "independent_answer": "D",
+      "reason": "每种1—2人且乙多于甲、丁多于丙，故甲1乙2丙1丁2。丁人数为2，所以条件4的“只有钱申报丁”不可能，反推张李赵都不申报乙；孙已丙，因此王钱占乙。王不申报丁，依条件3反推李赵都不申报甲。丙已被孙占，李赵只能丁。",
+      "source_id": "ZJ2024-A类-102",
+      "editor_answer": "D",
+      "agreement": true,
+      "editor_analysis_checked": true,
+      "specific_issue": null
+    },
+    {
+      "number": 53,
+      "independent_answer": "B",
+      "reason": "9472+17=9480+9=9502−13=9489，对应甲少17、丙少9、丁多13，余下乙9496是粗估。",
+      "source_id": "JS2025-A类-099",
+      "editor_answer": "B",
+      "agreement": true,
+      "editor_analysis_checked": true,
+      "specific_issue": null
+    },
+    {
+      "number": 54,
+      "independent_answer": "A",
+      "reason": "若甲第三，则观众1真、3假；要其余都假，须丙非冠军、丁第四、丙非亚军，但剩余名次迫使丙亚军，矛盾。故甲非第三，观众3为唯一真；1假迫使乙第二，2假迫使丙非第一且丁第四，4假迫使丙非第二，于是丙第三、甲第一。",
+      "source_id": "ZJ2025-A类-103",
+      "editor_answer": "A",
+      "agreement": true,
+      "editor_analysis_checked": true,
+      "specific_issue": null
+    },
+    {
+      "number": 55,
+      "independent_answer": "D",
+      "reason": "李9指只能由一次布5和两次剪刀2构成（另可任意石头0）；王5指只能一次布、其余石头。若李先用布胜王石头，则王的布不能给李第二胜，只能配李石头成王一胜；两次李剪刀都会败给王石头，但王第二胜即终局，无法消耗齐两次剪刀。若李先用剪刀胜王唯一布，则王只能用石头胜剩余一次剪刀，无法取得两胜。因此王落后逆转不可能。李先剪刀败、再剪刀胜布、最后布胜石头可实现A与C；插入三次石头平局可实现B。",
+      "source_id": "ZJ2025-A类-104",
+      "editor_answer": "D",
+      "agreement": true,
+      "editor_analysis_checked": true,
+      "specific_issue": null
+    },
+    {
+      "number": 56,
+      "independent_answer": "B",
+      "reason": "专家担心社区服务替代快递需求；B指出主要是本地服务而非购物、购物占比小，直接削弱替代前提。驿站存在本身不能证明快递需求不会萎缩。",
+      "source_id": "JS2024-A类-100",
+      "editor_answer": "B",
+      "agreement": true,
+      "editor_analysis_checked": true,
+      "specific_issue": null
+    },
+    {
+      "number": 57,
+      "independent_answer": "B",
+      "reason": "B中的“只能形成于”给稀有矿物来源与地幔建立排他联系；A仅是主要矿物、D仅共含元素，均弱于来源排他性。",
+      "source_id": "ZJ2025-A类-106",
+      "editor_answer": "B",
+      "agreement": true,
+      "editor_analysis_checked": true,
+      "specific_issue": null
+    },
+    {
+      "number": 58,
+      "independent_answer": "C",
+      "reason": "A创新风格低分、B即时评分压缩新作成长、D迎合评分重复成功模式，均直连创新受阻；C只讲粉丝评分偏差，没有明确接到创新发展。注意题目选“除外”。",
+      "source_id": "JS2025-A类-100",
+      "editor_answer": "C",
+      "agreement": true,
+      "editor_analysis_checked": true,
+      "specific_issue": null
+    },
+    {
+      "number": 59,
+      "independent_answer": "C",
+      "reason": "从寿命与心血管两个指标推整体健康，关键是二者是否能代表整体健康；正反答案都会实质改变推断强度。",
+      "source_id": "JS2024-A类-103",
+      "editor_answer": "C",
+      "agreement": true,
+      "editor_analysis_checked": true,
+      "specific_issue": null
+    },
+    {
+      "number": 60,
+      "independent_answer": "D",
+      "reason": "D以普及及多版本再次描述其流行地位，并未给儿童教育中的功能或价值，解释近于重复现象。A、B、C分别提供社会传承、结构认知和文化信息等可解释启蒙价值的内容。注意题目选“除外”。",
+      "source_id": "JS2025-A类-102",
+      "editor_answer": "D",
+      "agreement": true,
+      "editor_analysis_checked": true,
+      "specific_issue": null
+    },
+    {
+      "number": 61,
+      "independent_answer": "D",
+      "reason": "把强化监管提升执法合记P、造福人类记Q。¬P→¬Q等价于Q→P；题干由P推出Q，是肯定必要条件而误作充分条件。D由P→Q及Q推出P，同属肯后推前的错误结构（对变量重命名后同型）。A、B是有效推出，C由必要条件成立推出结果不成立，形式不同。",
+      "source_id": "gd-mock-2026h2-s20-q61",
+      "editor_answer": "D",
+      "agreement": true,
+      "editor_analysis_checked": true,
+      "specific_issue": null
+    },
+    {
+      "number": 62,
+      "independent_answer": "D",
+      "reason": "研究对象均患焦虑症且同时用药，睡眠改善可能由用药或特定疾病情境引起，不能直接归于饮料茶氨酸并推广到一般失眠。A的剂量差只表示要喝多瓶，未排除产品的可能效用。",
+      "source_id": "ZJ2025-A类-108",
+      "editor_answer": "D",
+      "agreement": true,
+      "editor_analysis_checked": true,
+      "specific_issue": null
+    },
+    {
+      "number": 63,
+      "independent_answer": "C",
+      "reason": "题干甲凭增长趋势主张投入，乙凭整体占比仍低反对投入；C同样由数量增加主张增员、由相对比率仍低否定增员。B关注成绩变化与全班基准差异，非总量与占比结构。",
+      "source_id": "JS2025-A类-092",
+      "editor_answer": "C",
+      "agreement": true,
+      "editor_analysis_checked": true,
+      "specific_issue": null
+    },
+    {
+      "number": 64,
+      "independent_answer": "B",
+      "reason": "题干P→Q、Q→R，所以P→R。B把结论先说，再用P→Q、Q→R解释，逻辑链完全同型。A与D把链的结论倒置，C否定前件后推出否定后件。",
+      "source_id": "gd-mock-2026h2-s20-q64",
+      "editor_answer": "B",
+      "agreement": true,
+      "editor_analysis_checked": true,
+      "specific_issue": null
+    },
+    {
+      "number": 65,
+      "independent_answer": "B",
+      "reason": "身份验证需要同一人的特征有稳定性；饮食环境情绪就可使呼吸大幅波动，直接挑战呼吸作为可靠信号的基础。A是样本量不足，C是现有仪器不足，都弱于信号自身不稳定。",
+      "source_id": "ZJ2024-A类-110",
+      "editor_answer": "B",
+      "agreement": true,
+      "editor_analysis_checked": true,
+      "specific_issue": null
+    }
+  ],
+  "review_boundary": "这是有限范围内部独立复核，不代替Claude的后续外部整卷审核。"
+}

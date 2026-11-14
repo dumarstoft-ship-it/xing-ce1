@@ -1,0 +1,27 @@
+{
+  "paper_id": "M01",
+  "version": "0.1.0",
+  "source_snapshot": "bf3c5e34e8c3db6af71e427aabe9b438978c9935",
+  "target_question_count": 90,
+  "missing_numbers": [
+    66,
+    67,
+    68,
+    69,
+    70
+  ],
+  "completed_section_counts": {
+    "政治理论": 10,
+    "常识应用": 5,
+    "言语理解与表达": 15,
+    "数量关系": 15,
+    "判断推理": 20,
+    "资料分析": 20
+  },
+  "date": "2026-11-15",
+  "date_timezone": "Asia/Shanghai",
+  "status": "review_draft_incomplete",
+  "external_review": "pending_claude",
+  "printing_status": "not_started",
+  "structure_basis": "2025、2026广东原题本顺序及题量；不将其表述为未来考试的固定承诺"
+}

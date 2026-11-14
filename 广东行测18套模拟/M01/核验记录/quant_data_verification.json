@@ -1,0 +1,247 @@
+{
+  "sequence_31": [
+    "1/2",
+    "1",
+    "3/2",
+    "2",
+    "5/2",
+    "3"
+  ],
+  "sequence_32": {
+    "first_differences": [
+      4,
+      11,
+      21,
+      34,
+      50
+    ],
+    "second_differences": [
+      7,
+      10,
+      13,
+      16
+    ],
+    "answer": 128
+  },
+  "sequence_33": {
+    "given_piece_sums": [
+      2,
+      4,
+      8,
+      16,
+      32
+    ],
+    "option_piece_sums": {
+      "A": 25,
+      "B": 64,
+      "C": 126,
+      "D": 128
+    },
+    "required": 64
+  },
+  "sequence_34": {
+    "given": [
+      180,
+      56,
+      146,
+      174,
+      247
+    ],
+    "checks": [
+      "146",
+      "174",
+      "247"
+    ],
+    "next": 334
+  },
+  "sequence_35": [
+    "1/2",
+    "2/3",
+    "23/28",
+    "58/65",
+    "13/14",
+    "206/217"
+  ],
+  "q36_profit": {
+    "cost_B": 80,
+    "cost_A": 50,
+    "retail_B": 120,
+    "profit": "80"
+  },
+  "q37_rate": {
+    "original_rates": [
+      8,
+      12
+    ],
+    "enhanced_sum": "25"
+  },
+  "q38_concentration": {
+    "initial_mass": 100,
+    "initial_rate": "3/5",
+    "after_A": "1/2",
+    "after_B": "1/2",
+    "restored": "3/5"
+  },
+  "q39_geometry": {
+    "B": [
+      10.392304845413264,
+      6
+    ],
+    "C": [
+      -5.196152422706632,
+      9
+    ],
+    "distance_squared": 252
+  },
+  "q40_calendar": [
+    {
+      "weekday_31_0mon": 3,
+      "days2": [
+        2,
+        7,
+        12,
+        17,
+        22,
+        27
+      ],
+      "weekdays2": [
+        2,
+        0,
+        5,
+        3,
+        1,
+        6
+      ],
+      "days3": [
+        3,
+        8,
+        13,
+        18,
+        23,
+        28
+      ],
+      "weekdays3": [
+        3,
+        1,
+        6,
+        4,
+        2,
+        0
+      ]
+    }
+  ],
+  "q41_lights": {
+    "length": 960,
+    "lights_8m": 121,
+    "lights_6m": 161,
+    "team_A_per_day": 7,
+    "team_B_per_day": 4
+  },
+  "q42_probability": {
+    "favorable": 44,
+    "total": 125
+  },
+  "q43_rank": {
+    "max_largest": 12,
+    "maximizers": [
+      [
+        1,
+        2,
+        3,
+        6,
+        12
+      ]
+    ]
+  },
+  "q44_work": {
+    "total_hours": "1",
+    "helper_B_minutes": "15"
+  },
+  "q45_exercise": {
+    "1": 0,
+    "2": 0,
+    "3": 1,
+    "4": 31
+  },
+  "q71_income": 39232.796486090774,
+  "q72_traffic": 15975.503062117234,
+  "q73_income_growth": 6.322108345534416,
+  "q74_shanghai_growth": [
+    4.903509078845891,
+    -7.110292870109669,
+    14.39647166816982,
+    -6.207378554467713,
+    14.15119968489238
+  ],
+  "q75": {
+    "rural_monthly": 1514.5833333333333,
+    "decline_years": [
+      2019,
+      2020,
+      2022
+    ],
+    "shanghai_guangdong_increment_ratio": 2.84009544548178
+  },
+  "q76_goods_base_billion_tons": 16.61178739416745,
+  "q77_share_rise_count": 2,
+  "q78_Q1_export": 39476.62068508581,
+  "q79_compare": {
+    "car": 367683,
+    "train": 36836,
+    "ship": 10898,
+    "plane": 13074
+  },
+  "q80": {
+    "daily_plane_average": 2315.3333333333335,
+    "plane_vs_ship_increase_multiple": 1.0763029533085526,
+    "import_increment": 7503.647191011236,
+    "export_minus_import": -12907.600000000002
+  },
+  "q86_compound_growth": 0.21124200000000015,
+  "q87_2024janfeb_share": 0.14180013549201734,
+  "q88_unitprice_growth": -0.14108352144469527,
+  "q89_weighted_price": 512.4153061882945,
+  "q90": {
+    "2024_vs2020_amount_growth": 0.32558878662282,
+    "2020_decrease_million": 1358.8697497279645,
+    "2019_quantity": 3684.430512016719
+  },
+  "retired_candidate_checks": {
+    "source_group": "gd-mock-2026h2-s25-m3",
+    "reason": "首卷改用统计口径推导更集中的完整服务贸易材料组，避免连续文字细节题与段落指向编辑；旧结果不再对应首卷题号。",
+    "checks": {
+      "q81_machine_monthly_base": 765.137614678899,
+      "q82_machine_export": 58.45,
+      "q85_machine": {
+        "trade_increment": 7.06007326007326,
+        "profit_growth_multiple": 1.3103448275862069,
+        "cutting_tool_profit_share": 0.5671641791044776,
+        "profit_margin": 0.026778577138289367
+      }
+    }
+  },
+  "q81_insurance_import_increment": {
+    "base_total": 1370.4180064308682,
+    "base_export": 335.3072625698324,
+    "base_import": 1035.1107438610359,
+    "current_import": 1404.6,
+    "increment": 369.48925613896404
+  },
+  "q82_share_difference_pp": -0.3463100670714451,
+  "q83_base_import_export_ratio": 0.4915254237288136,
+  "q84_surplus": {
+    "A_processing": 1347.9,
+    "B_finance": 89.60000000000002,
+    "C_construction": 1388.1,
+    "D_intellectual_property": -2095.6000000000004
+  },
+  "q85_comprehensive": {
+    "culture_base_export": 122.49488752556238,
+    "transport_deficit": 1610.4000000000015,
+    "insurance_deficit": 1104.5,
+    "government_export_growth": 13,
+    "national_export_growth": 12.1,
+    "government_import_growth": 16.2,
+    "national_import_growth": 13.5
+  }
+}

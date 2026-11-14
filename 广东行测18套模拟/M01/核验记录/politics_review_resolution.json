@@ -1,0 +1,35 @@
+{
+  "status": "all_required_changes_applied",
+  "required_changes": [
+    {
+      "review_id": "POL-01",
+      "number": 4,
+      "status": "applied",
+      "answer_changed": false
+    },
+    {
+      "review_id": "POL-02",
+      "number": 6,
+      "status": "applied",
+      "answer_changed": false
+    },
+    {
+      "review_id": "POL-03",
+      "number": 12,
+      "status": "applied",
+      "answer_changed": false
+    },
+    {
+      "review_id": "POL-04",
+      "number": 13,
+      "status": "applied",
+      "answer_changed": false
+    }
+  ],
+  "additional_improvements": [
+    "Q2讲义页码收窄至27页",
+    "Q8、Q10、Q11补充一手来源",
+    "Q13题干明确1927年并给出四事件完整日期"
+  ],
+  "answer_changes": 0
+}
