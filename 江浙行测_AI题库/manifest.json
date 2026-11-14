@@ -1,0 +1,350 @@
+{
+  "schema_version": "1.0",
+  "source_repository": "https://github.com/dumarstoft-ship-it/xingce",
+  "source_commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+  "question_slots": 1215,
+  "papers": [
+    {
+      "paper_id": "JS2020",
+      "province": "江苏",
+      "year": 2020,
+      "paper_type": "A类",
+      "question_slots": 100,
+      "section_counts": {
+        "言语理解与表达": 30,
+        "数量关系": 20,
+        "判断推理": 50
+      },
+      "source_missing_questions": [],
+      "answer_missing_numbers": [],
+      "answer_conflicts": []
+    },
+    {
+      "paper_id": "JS2021",
+      "province": "江苏",
+      "year": 2021,
+      "paper_type": "A类",
+      "question_slots": 100,
+      "section_counts": {
+        "言语理解与表达": 30,
+        "数量关系": 20,
+        "判断推理": 50
+      },
+      "source_missing_questions": [],
+      "answer_missing_numbers": [],
+      "answer_conflicts": []
+    },
+    {
+      "paper_id": "JS2022",
+      "province": "江苏",
+      "year": 2022,
+      "paper_type": "A类",
+      "question_slots": 98,
+      "section_counts": {
+        "言语理解与表达": 30,
+        "数量关系": 20,
+        "判断推理": 48
+      },
+      "source_missing_questions": [],
+      "answer_missing_numbers": [],
+      "answer_conflicts": []
+    },
+    {
+      "paper_id": "JS2023",
+      "province": "江苏",
+      "year": 2023,
+      "paper_type": "A类",
+      "question_slots": 100,
+      "section_counts": {
+        "言语理解与表达": 30,
+        "数量关系": 20,
+        "判断推理": 50
+      },
+      "source_missing_questions": [],
+      "answer_missing_numbers": [],
+      "answer_conflicts": [
+        33
+      ]
+    },
+    {
+      "paper_id": "JS2024",
+      "province": "江苏",
+      "year": 2024,
+      "paper_type": "A类",
+      "question_slots": 100,
+      "section_counts": {
+        "言语理解与表达": 30,
+        "数量关系": 20,
+        "判断推理": 50
+      },
+      "source_missing_questions": [
+        25,
+        40,
+        76,
+        77,
+        78,
+        93,
+        94,
+        95,
+        96,
+        110,
+        111
+      ],
+      "answer_missing_numbers": [
+        25,
+        40,
+        76,
+        77,
+        78,
+        93,
+        94,
+        95,
+        96,
+        110,
+        111
+      ],
+      "answer_conflicts": [
+        46
+      ]
+    },
+    {
+      "paper_id": "JS2025",
+      "province": "江苏",
+      "year": 2025,
+      "paper_type": "A类",
+      "question_slots": 95,
+      "section_counts": {
+        "言语理解与表达": 30,
+        "数量关系": 20,
+        "判断推理": 45
+      },
+      "source_missing_questions": [],
+      "answer_missing_numbers": [],
+      "answer_conflicts": []
+    },
+    {
+      "paper_id": "JS2026",
+      "province": "江苏",
+      "year": 2026,
+      "paper_type": "卷别未注明",
+      "question_slots": 20,
+      "section_counts": {
+        "数量关系": 20
+      },
+      "source_missing_questions": [],
+      "answer_missing_numbers": [],
+      "answer_conflicts": []
+    },
+    {
+      "paper_id": "ZJ2020",
+      "province": "浙江",
+      "year": 2020,
+      "paper_type": "B卷",
+      "question_slots": 70,
+      "section_counts": {
+        "数量关系": 20,
+        "言语理解与表达": 25,
+        "判断推理": 25
+      },
+      "source_missing_questions": [],
+      "answer_missing_numbers": [],
+      "answer_conflicts": []
+    },
+    {
+      "paper_id": "ZJ2021",
+      "province": "浙江",
+      "year": 2021,
+      "paper_type": "A类",
+      "question_slots": 90,
+      "section_counts": {
+        "言语理解与表达": 30,
+        "数量关系": 25,
+        "判断推理": 35
+      },
+      "source_missing_questions": [],
+      "answer_missing_numbers": [],
+      "answer_conflicts": []
+    },
+    {
+      "paper_id": "ZJ2022",
+      "province": "浙江",
+      "year": 2022,
+      "paper_type": "A类",
+      "question_slots": 90,
+      "section_counts": {
+        "言语理解与表达": 30,
+        "数量关系": 20,
+        "判断推理": 40
+      },
+      "source_missing_questions": [],
+      "answer_missing_numbers": [],
+      "answer_conflicts": []
+    },
+    {
+      "paper_id": "ZJ2023",
+      "province": "浙江",
+      "year": 2023,
+      "paper_type": "A类",
+      "question_slots": 90,
+      "section_counts": {
+        "言语理解与表达": 30,
+        "数量关系": 20,
+        "判断推理": 40
+      },
+      "source_missing_questions": [],
+      "answer_missing_numbers": [],
+      "answer_conflicts": []
+    },
+    {
+      "paper_id": "ZJ2024",
+      "province": "浙江",
+      "year": 2024,
+      "paper_type": "A类",
+      "question_slots": 89,
+      "section_counts": {
+        "言语理解与表达": 29,
+        "数量关系": 20,
+        "判断推理": 40
+      },
+      "source_missing_questions": [],
+      "answer_missing_numbers": [],
+      "answer_conflicts": []
+    },
+    {
+      "paper_id": "ZJ2025",
+      "province": "浙江",
+      "year": 2025,
+      "paper_type": "A类",
+      "question_slots": 89,
+      "section_counts": {
+        "言语理解与表达": 29,
+        "数量关系": 20,
+        "判断推理": 40
+      },
+      "source_missing_questions": [],
+      "answer_missing_numbers": [],
+      "answer_conflicts": []
+    },
+    {
+      "paper_id": "ZJ2026",
+      "province": "浙江",
+      "year": 2026,
+      "paper_type": "A类",
+      "question_slots": 84,
+      "section_counts": {
+        "言语理解与表达": 24,
+        "数量关系": 20,
+        "判断推理": 40
+      },
+      "source_missing_questions": [],
+      "answer_missing_numbers": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105
+      ],
+      "answer_conflicts": []
+    }
+  ],
+  "excluded_questions": [
+    {
+      "paper_id": "ZJ2024",
+      "original_number": 41,
+      "reason": "按用户要求不收录题干或选项含图片的言语题"
+    },
+    {
+      "paper_id": "ZJ2025",
+      "original_number": 38,
+      "reason": "按用户要求不收录题干或选项含图片的言语题"
+    },
+    {
+      "paper_id": "ZJ2026",
+      "original_number": 40,
+      "reason": "按用户要求不收录题干或选项含图片的言语题"
+    }
+  ],
+  "answer_records": 1215,
+  "answers_with_choice": 1118,
+  "shared_materials": 18,
+  "figure_assets": 329
+}

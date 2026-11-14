@@ -1,0 +1,8655 @@
+{
+  "591": {
+    "id": "591",
+    "path": "images/original/591.png",
+    "original_path": "images/original/591.png",
+    "size": [
+      132,
+      76
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 591,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2020-Q",
+        "page": 2,
+        "bbox": [
+          42.0,
+          402.6000061035156,
+          141.0,
+          459.6000061035156
+        ],
+        "record": "ZJ2020-Q18"
+      }
+    ],
+    "code_hd": {
+      "path": "images/code_hd/591.png",
+      "svg_path": "images/code_hd/591.svg",
+      "pixel_size": [
+        1200,
+        691
+      ],
+      "method": "deterministic_multilevel_contour_trace",
+      "comparison_mean_absolute_gray_error": 3.043,
+      "notice": "代码按原图轮廓和灰度描摹；不恢复原图未提供的细节。原图保留并作为依据。"
+    }
+  },
+  "507": {
+    "id": "507",
+    "path": "images/original/507.png",
+    "original_path": "images/original/507.png",
+    "size": [
+      1447,
+      628
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 507,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2020-Q",
+        "page": 6,
+        "bbox": [
+          141.83999633789062,
+          99.0,
+          453.6000061035156,
+          233.75999450683594
+        ],
+        "record": "ZJ2020-Q46"
+      }
+    ]
+  },
+  "942": {
+    "id": "942",
+    "path": "images/original/942.png",
+    "original_path": "images/original/942.png",
+    "size": [
+      1299,
+      555
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 942,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2020-Q",
+        "page": 6,
+        "bbox": [
+          141.83999633789062,
+          256.55999755859375,
+          453.6000061035156,
+          388.55999755859375
+        ],
+        "record": "ZJ2020-Q47"
+      }
+    ]
+  },
+  "258": {
+    "id": "258",
+    "path": "images/original/258.png",
+    "original_path": "images/original/258.png",
+    "size": [
+      1328,
+      609
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 258,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2020-Q",
+        "page": 6,
+        "bbox": [
+          141.83999633789062,
+          412.55999755859375,
+          453.6000061035156,
+          554.760009765625
+        ],
+        "record": "ZJ2020-Q48"
+      }
+    ]
+  },
+  "466": {
+    "id": "466",
+    "path": "images/original/466.png",
+    "original_path": "images/original/466.png",
+    "size": [
+      1367,
+      246
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 466,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2020-Q",
+        "page": 6,
+        "bbox": [
+          141.83999633789062,
+          577.5599975585938,
+          453.6000061035156,
+          633.47998046875
+        ],
+        "record": "ZJ2020-Q49"
+      }
+    ]
+  },
+  "809": {
+    "id": "809",
+    "path": "images/original/809.png",
+    "original_path": "images/original/809.png",
+    "size": [
+      1278,
+      250
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 809,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2020-Q",
+        "page": 6,
+        "bbox": [
+          141.83999633789062,
+          675.2400512695312,
+          453.6000061035156,
+          735.8400268554688
+        ],
+        "record": "ZJ2020-Q50"
+      }
+    ]
+  },
+  "1065": {
+    "id": "1065",
+    "path": "images/original/1065.png",
+    "original_path": "images/original/1065.png",
+    "size": [
+      866,
+      319
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1065,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2020-A",
+        "page": 10,
+        "bbox": [
+          42.0,
+          236.8800048828125,
+          365.2799987792969,
+          359.1600036621094
+        ],
+        "record": "ZJ2020-A46"
+      }
+    ]
+  },
+  "465": {
+    "id": "465",
+    "path": "images/original/465.png",
+    "original_path": "images/original/465.png",
+    "size": [
+      107,
+      18
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 465,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-Q",
+        "page": 7,
+        "bbox": [
+          60.119998931884766,
+          353.3999938964844,
+          140.39999389648438,
+          366.9599914550781
+        ],
+        "record": "JS2020-Q74"
+      }
+    ],
+    "code_hd": {
+      "path": "images/code_hd/465.png",
+      "svg_path": "images/code_hd/465.svg",
+      "pixel_size": [
+        1200,
+        202
+      ],
+      "method": "deterministic_multilevel_contour_trace",
+      "comparison_mean_absolute_gray_error": 9.3676,
+      "notice": "代码按原图轮廓和灰度描摹；不恢复原图未提供的细节。原图保留并作为依据。"
+    }
+  },
+  "1262": {
+    "id": "1262",
+    "path": "images/original/1262.png",
+    "original_path": "images/original/1262.png",
+    "size": [
+      102,
+      18
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1262,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-Q",
+        "page": 7,
+        "bbox": [
+          75.83999633789062,
+          367.44000244140625,
+          152.39999389648438,
+          381.0
+        ],
+        "record": "JS2020-Q74"
+      }
+    ],
+    "code_hd": {
+      "path": "images/code_hd/1262.png",
+      "svg_path": "images/code_hd/1262.svg",
+      "pixel_size": [
+        1200,
+        212
+      ],
+      "method": "deterministic_multilevel_contour_trace",
+      "comparison_mean_absolute_gray_error": 8.2707,
+      "notice": "代码按原图轮廓和灰度描摹；不恢复原图未提供的细节。原图保留并作为依据。"
+    }
+  },
+  "829": {
+    "id": "829",
+    "path": "images/original/829.png",
+    "original_path": "images/original/829.png",
+    "size": [
+      99,
+      18
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 829,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-Q",
+        "page": 7,
+        "bbox": [
+          189.72000122070312,
+          367.44000244140625,
+          264.0,
+          381.0
+        ],
+        "record": "JS2020-Q74"
+      }
+    ],
+    "code_hd": {
+      "path": "images/code_hd/829.png",
+      "svg_path": "images/code_hd/829.svg",
+      "pixel_size": [
+        1200,
+        219
+      ],
+      "method": "deterministic_multilevel_contour_trace",
+      "comparison_mean_absolute_gray_error": 7.2503,
+      "notice": "代码按原图轮廓和灰度描摹；不恢复原图未提供的细节。原图保留并作为依据。"
+    }
+  },
+  "962": {
+    "id": "962",
+    "path": "images/original/962.png",
+    "original_path": "images/original/962.png",
+    "size": [
+      103,
+      18
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 962,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-Q",
+        "page": 7,
+        "bbox": [
+          301.55999755859375,
+          367.44000244140625,
+          378.8399963378906,
+          381.0
+        ],
+        "record": "JS2020-Q74"
+      }
+    ],
+    "code_hd": {
+      "path": "images/code_hd/962.png",
+      "svg_path": "images/code_hd/962.svg",
+      "pixel_size": [
+        1200,
+        210
+      ],
+      "method": "deterministic_multilevel_contour_trace",
+      "comparison_mean_absolute_gray_error": 7.1564,
+      "notice": "代码按原图轮廓和灰度描摹；不恢复原图未提供的细节。原图保留并作为依据。"
+    }
+  },
+  "972": {
+    "id": "972",
+    "path": "images/original/972.png",
+    "original_path": "images/original/972.png",
+    "size": [
+      105,
+      18
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 972,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-Q",
+        "page": 7,
+        "bbox": [
+          416.3999938964844,
+          367.44000244140625,
+          495.1199951171875,
+          381.0
+        ],
+        "record": "JS2020-Q74"
+      }
+    ],
+    "code_hd": {
+      "path": "images/code_hd/972.png",
+      "svg_path": "images/code_hd/972.svg",
+      "pixel_size": [
+        1200,
+        206
+      ],
+      "method": "deterministic_multilevel_contour_trace",
+      "comparison_mean_absolute_gray_error": 5.7349,
+      "notice": "代码按原图轮廓和灰度描摹；不恢复原图未提供的细节。原图保留并作为依据。"
+    }
+  },
+  "413": {
+    "id": "413",
+    "path": "images/original/413.png",
+    "original_path": "images/original/413.png",
+    "size": [
+      435,
+      198
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 413,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-Q",
+        "page": 7,
+        "bbox": [
+          60.119998931884766,
+          452.4000244140625,
+          303.9599914550781,
+          563.4000244140625
+        ],
+        "record": "JS2020-Q76"
+      }
+    ]
+  },
+  "338": {
+    "id": "338",
+    "path": "images/original/338.png",
+    "original_path": "images/original/338.png",
+    "size": [
+      435,
+      204
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 338,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-Q",
+        "page": 7,
+        "bbox": [
+          60.119998931884766,
+          577.0800170898438,
+          301.08001708984375,
+          690.1199951171875
+        ],
+        "record": "JS2020-Q77"
+      }
+    ]
+  },
+  "1310": {
+    "id": "1310",
+    "path": "images/original/1310.png",
+    "original_path": "images/original/1310.png",
+    "size": [
+      595,
+      275
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1310,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-Q",
+        "page": 7,
+        "bbox": [
+          60.119998931884766,
+          703.6799926757812,
+          295.44000244140625,
+          812.6400146484375
+        ],
+        "record": "JS2020-Q78"
+      }
+    ]
+  },
+  "94": {
+    "id": "94",
+    "path": "images/original/94.png",
+    "original_path": "images/original/94.png",
+    "size": [
+      535,
+      331
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 94,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-Q",
+        "page": 8,
+        "bbox": [
+          60.119998931884766,
+          53.8800048828125,
+          286.9200134277344,
+          194.16000366210938
+        ],
+        "record": "JS2020-Q79"
+      }
+    ]
+  },
+  "1037": {
+    "id": "1037",
+    "path": "images/original/1037.png",
+    "original_path": "images/original/1037.png",
+    "size": [
+      540,
+      323
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1037,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-Q",
+        "page": 8,
+        "bbox": [
+          60.119998931884766,
+          222.1199951171875,
+          258.6000061035156,
+          340.79998779296875
+        ],
+        "record": "JS2020-Q80"
+      }
+    ]
+  },
+  "496": {
+    "id": "496",
+    "path": "images/original/496.png",
+    "original_path": "images/original/496.png",
+    "size": [
+      532,
+      328
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 496,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-Q",
+        "page": 8,
+        "bbox": [
+          60.119998931884766,
+          368.3999938964844,
+          258.6000061035156,
+          490.79998779296875
+        ],
+        "record": "JS2020-Q81"
+      }
+    ]
+  },
+  "936": {
+    "id": "936",
+    "path": "images/original/936.png",
+    "original_path": "images/original/936.png",
+    "size": [
+      604,
+      377
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 936,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-Q",
+        "page": 8,
+        "bbox": [
+          60.119998931884766,
+          518.5199584960938,
+          264.239990234375,
+          645.719970703125
+        ],
+        "record": "JS2020-Q82"
+      }
+    ]
+  },
+  "670": {
+    "id": "670",
+    "path": "images/original/670.png",
+    "original_path": "images/original/670.png",
+    "size": [
+      689,
+      418
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 670,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-Q",
+        "page": 8,
+        "bbox": [
+          60.119998931884766,
+          673.7999877929688,
+          286.9200134277344,
+          811.3200073242188
+        ],
+        "record": "JS2020-Q83"
+      }
+    ]
+  },
+  "554": {
+    "id": "554",
+    "path": "images/original/554.png",
+    "original_path": "images/original/554.png",
+    "size": [
+      825,
+      221
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 554,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-Q",
+        "page": 9,
+        "bbox": [
+          60.119998931884766,
+          40.20000457763672,
+          343.55999755859375,
+          116.16000366210938
+        ],
+        "record": "JS2020-Q84"
+      }
+    ]
+  },
+  "961": {
+    "id": "961",
+    "path": "images/original/961.png",
+    "original_path": "images/original/961.png",
+    "size": [
+      808,
+      229
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 961,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-Q",
+        "page": 9,
+        "bbox": [
+          60.119998931884766,
+          129.83999633789062,
+          343.55999755859375,
+          210.239990234375
+        ],
+        "record": "JS2020-Q85"
+      }
+    ]
+  },
+  "982": {
+    "id": "982",
+    "path": "images/original/982.png",
+    "original_path": "images/original/982.png",
+    "size": [
+      688,
+      187
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 982,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-Q",
+        "page": 9,
+        "bbox": [
+          60.119998931884766,
+          224.51998901367188,
+          343.55999755859375,
+          301.55999755859375
+        ],
+        "record": "JS2020-Q86"
+      }
+    ]
+  },
+  "163": {
+    "id": "163",
+    "path": "images/original/163.png",
+    "original_path": "images/original/163.png",
+    "size": [
+      866,
+      233
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 163,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-Q",
+        "page": 9,
+        "bbox": [
+          60.119998931884766,
+          316.0799865722656,
+          343.55999755859375,
+          392.3999938964844
+        ],
+        "record": "JS2020-Q87"
+      }
+    ]
+  },
+  "422": {
+    "id": "422",
+    "path": "images/original/422.png",
+    "original_path": "images/original/422.png",
+    "size": [
+      520,
+      609
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 422,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-Q",
+        "page": 9,
+        "bbox": [
+          60.119998931884766,
+          406.67999267578125,
+          230.27999877929688,
+          605.8800048828125
+        ],
+        "record": "JS2020-Q88"
+      }
+    ]
+  },
+  "938": {
+    "id": "938",
+    "path": "images/original/938.png",
+    "original_path": "images/original/938.png",
+    "size": [
+      485,
+      572
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 938,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-Q",
+        "page": 9,
+        "bbox": [
+          60.119998931884766,
+          620.3999633789062,
+          218.87998962402344,
+          807.5999755859375
+        ],
+        "record": "JS2020-Q89"
+      }
+    ]
+  },
+  "1190": {
+    "id": "1190",
+    "path": "images/original/1190.png",
+    "original_path": "images/original/1190.png",
+    "size": [
+      901,
+      248
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1190,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-Q",
+        "page": 10,
+        "bbox": [
+          60.119998931884766,
+          40.20000457763672,
+          428.6399841308594,
+          141.60000610351562
+        ],
+        "record": "JS2020-Q90"
+      }
+    ]
+  },
+  "1004": {
+    "id": "1004",
+    "path": "images/original/1004.png",
+    "original_path": "images/original/1004.png",
+    "size": [
+      500,
+      371
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1004,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-A",
+        "page": 9,
+        "bbox": [
+          60.119998931884766,
+          585.8400268554688,
+          357.7200012207031,
+          806.760009765625
+        ],
+        "record": "JS2020-A55"
+      }
+    ]
+  },
+  "940": {
+    "id": "940",
+    "path": "images/original/940.png",
+    "original_path": "images/original/940.png",
+    "size": [
+      99,
+      103
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 940,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-A",
+        "page": 13,
+        "bbox": [
+          60.119998931884766,
+          271.8000183105469,
+          134.39999389648438,
+          349.08001708984375
+        ],
+        "record": "JS2020-A79"
+      }
+    ]
+  },
+  "699": {
+    "id": "699",
+    "path": "images/original/699.png",
+    "original_path": "images/original/699.png",
+    "size": [
+      113,
+      101
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 699,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-A",
+        "page": 13,
+        "bbox": [
+          60.119998931884766,
+          390.60003662109375,
+          144.83999633789062,
+          466.3200378417969
+        ],
+        "record": "JS2020-A80"
+      }
+    ]
+  },
+  "950": {
+    "id": "950",
+    "path": "images/original/950.png",
+    "original_path": "images/original/950.png",
+    "size": [
+      111,
+      99
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 950,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-A",
+        "page": 13,
+        "bbox": [
+          60.119998931884766,
+          507.4800109863281,
+          143.39999389648438,
+          581.760009765625
+        ],
+        "record": "JS2020-A81"
+      }
+    ]
+  },
+  "525": {
+    "id": "525",
+    "path": "images/original/525.png",
+    "original_path": "images/original/525.png",
+    "size": [
+      223,
+      221
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 525,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-A",
+        "page": 13,
+        "bbox": [
+          60.119998931884766,
+          623.280029296875,
+          227.39999389648438,
+          789.0
+        ],
+        "record": "JS2020-A82"
+      }
+    ]
+  },
+  "1256": {
+    "id": "1256",
+    "path": "images/original/1256.png",
+    "original_path": "images/original/1256.png",
+    "size": [
+      135,
+      122
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1256,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-A",
+        "page": 14,
+        "bbox": [
+          60.119998931884766,
+          53.8800048828125,
+          161.39999389648438,
+          145.44000244140625
+        ],
+        "record": "JS2020-A83"
+      }
+    ]
+  },
+  "141": {
+    "id": "141",
+    "path": "images/original/141.png",
+    "original_path": "images/original/141.png",
+    "size": [
+      826,
+      234
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 141,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-A",
+        "page": 14,
+        "bbox": [
+          60.119998931884766,
+          173.16001892089844,
+          400.32000732421875,
+          269.52001953125
+        ],
+        "record": "JS2020-A84"
+      }
+    ]
+  },
+  "1041": {
+    "id": "1041",
+    "path": "images/original/1041.png",
+    "original_path": "images/original/1041.png",
+    "size": [
+      825,
+      227
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1041,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-A",
+        "page": 14,
+        "bbox": [
+          60.119998931884766,
+          297.3600158691406,
+          400.32000732421875,
+          390.96002197265625
+        ],
+        "record": "JS2020-A84"
+      }
+    ]
+  },
+  "997": {
+    "id": "997",
+    "path": "images/original/997.png",
+    "original_path": "images/original/997.png",
+    "size": [
+      820,
+      229
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 997,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-A",
+        "page": 14,
+        "bbox": [
+          60.119998931884766,
+          418.5600280761719,
+          400.32000732421875,
+          513.6000366210938
+        ],
+        "record": "JS2020-A84"
+      }
+    ]
+  },
+  "1055": {
+    "id": "1055",
+    "path": "images/original/1055.png",
+    "original_path": "images/original/1055.png",
+    "size": [
+      820,
+      225
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1055,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-A",
+        "page": 14,
+        "bbox": [
+          60.119998931884766,
+          554.4000244140625,
+          400.32000732421875,
+          647.760009765625
+        ],
+        "record": "JS2020-A84"
+      }
+    ]
+  },
+  "72": {
+    "id": "72",
+    "path": "images/original/72.png",
+    "original_path": "images/original/72.png",
+    "size": [
+      827,
+      225
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 72,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-A",
+        "page": 14,
+        "bbox": [
+          60.119998931884766,
+          702.9600219726562,
+          400.32000732421875,
+          795.4800415039062
+        ],
+        "record": "JS2020-A85"
+      }
+    ]
+  },
+  "348": {
+    "id": "348",
+    "path": "images/original/348.png",
+    "original_path": "images/original/348.png",
+    "size": [
+      826,
+      221
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 348,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-A",
+        "page": 15,
+        "bbox": [
+          60.119998931884766,
+          40.200035095214844,
+          400.32000732421875,
+          131.1600341796875
+        ],
+        "record": "JS2020-A85"
+      }
+    ]
+  },
+  "762": {
+    "id": "762",
+    "path": "images/original/762.png",
+    "original_path": "images/original/762.png",
+    "size": [
+      824,
+      223
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 762,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-A",
+        "page": 15,
+        "bbox": [
+          60.119998931884766,
+          144.83999633789062,
+          400.32000732421875,
+          236.8800048828125
+        ],
+        "record": "JS2020-A85"
+      }
+    ]
+  },
+  "802": {
+    "id": "802",
+    "path": "images/original/802.png",
+    "original_path": "images/original/802.png",
+    "size": [
+      692,
+      173
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 802,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-A",
+        "page": 15,
+        "bbox": [
+          60.119998931884766,
+          265.08001708984375,
+          400.32000732421875,
+          350.1600341796875
+        ],
+        "record": "JS2020-A86"
+      }
+    ]
+  },
+  "383": {
+    "id": "383",
+    "path": "images/original/383.png",
+    "original_path": "images/original/383.png",
+    "size": [
+      699,
+      182
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 383,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-A",
+        "page": 15,
+        "bbox": [
+          60.119998931884766,
+          391.9200134277344,
+          400.32000732421875,
+          480.4800109863281
+        ],
+        "record": "JS2020-A86"
+      }
+    ]
+  },
+  "596": {
+    "id": "596",
+    "path": "images/original/596.png",
+    "original_path": "images/original/596.png",
+    "size": [
+      689,
+      174
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 596,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-A",
+        "page": 15,
+        "bbox": [
+          60.119998931884766,
+          508.20001220703125,
+          400.32000732421875,
+          594.1199951171875
+        ],
+        "record": "JS2020-A86"
+      }
+    ]
+  },
+  "793": {
+    "id": "793",
+    "path": "images/original/793.png",
+    "original_path": "images/original/793.png",
+    "size": [
+      688,
+      178
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 793,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-A",
+        "page": 15,
+        "bbox": [
+          60.119998931884766,
+          648.6000366210938,
+          400.32000732421875,
+          736.56005859375
+        ],
+        "record": "JS2020-A86"
+      }
+    ]
+  },
+  "275": {
+    "id": "275",
+    "path": "images/original/275.png",
+    "original_path": "images/original/275.png",
+    "size": [
+      818,
+      223
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 275,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-A",
+        "page": 16,
+        "bbox": [
+          60.119998931884766,
+          26.64002227783203,
+          400.32000732421875,
+          119.4000244140625
+        ],
+        "record": "JS2020-A87"
+      }
+    ]
+  },
+  "620": {
+    "id": "620",
+    "path": "images/original/620.png",
+    "original_path": "images/original/620.png",
+    "size": [
+      821,
+      222
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 620,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-A",
+        "page": 16,
+        "bbox": [
+          60.119998931884766,
+          146.88003540039062,
+          400.32000732421875,
+          238.9200439453125
+        ],
+        "record": "JS2020-A87"
+      }
+    ]
+  },
+  "702": {
+    "id": "702",
+    "path": "images/original/702.png",
+    "original_path": "images/original/702.png",
+    "size": [
+      400,
+      111
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 702,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2020-A",
+        "page": 16,
+        "bbox": [
+          60.119998931884766,
+          402.2400207519531,
+          360.1199951171875,
+          485.52001953125
+        ],
+        "record": "JS2020-A90"
+      }
+    ]
+  },
+  "88": {
+    "id": "88",
+    "path": "images/original/88.png",
+    "original_path": "images/original/88.png",
+    "size": [
+      400,
+      450
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 88,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-Q",
+        "page": 8,
+        "bbox": [
+          226.55999755859375,
+          563.760009765625,
+          368.2799987792969,
+          723.239990234375
+        ],
+        "record": "JS2021-Q65"
+      }
+    ]
+  },
+  "675": {
+    "id": "675",
+    "path": "images/original/675.png",
+    "original_path": "images/original/675.png",
+    "size": [
+      787,
+      330
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 675,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-Q",
+        "page": 9,
+        "bbox": [
+          42.0,
+          357.239990234375,
+          325.44000244140625,
+          476.03997802734375
+        ],
+        "record": "JS2021-Q76"
+      }
+    ]
+  },
+  "867": {
+    "id": "867",
+    "path": "images/original/867.png",
+    "original_path": "images/original/867.png",
+    "size": [
+      787,
+      366
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 867,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-Q",
+        "page": 9,
+        "bbox": [
+          42.0,
+          496.67999267578125,
+          325.44000244140625,
+          628.4400024414062
+        ],
+        "record": "JS2021-Q77"
+      }
+    ]
+  },
+  "925": {
+    "id": "925",
+    "path": "images/original/925.png",
+    "original_path": "images/original/925.png",
+    "size": [
+      997,
+      457
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 925,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-Q",
+        "page": 9,
+        "bbox": [
+          42.0,
+          648.1199951171875,
+          325.44000244140625,
+          777.3599853515625
+        ],
+        "record": "JS2021-Q78"
+      }
+    ]
+  },
+  "1312": {
+    "id": "1312",
+    "path": "images/original/1312.png",
+    "original_path": "images/original/1312.png",
+    "size": [
+      997,
+      457
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1312,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-Q",
+        "page": 10,
+        "bbox": [
+          42.0,
+          26.639999389648438,
+          325.44000244140625,
+          155.8800048828125
+        ],
+        "record": "JS2021-Q79"
+      }
+    ]
+  },
+  "649": {
+    "id": "649",
+    "path": "images/original/649.png",
+    "original_path": "images/original/649.png",
+    "size": [
+      787,
+      330
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 649,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-Q",
+        "page": 10,
+        "bbox": [
+          42.0,
+          176.52000427246094,
+          325.44000244140625,
+          295.32000732421875
+        ],
+        "record": "JS2021-Q80"
+      }
+    ]
+  },
+  "212": {
+    "id": "212",
+    "path": "images/original/212.png",
+    "original_path": "images/original/212.png",
+    "size": [
+      534,
+      638
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 212,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-Q",
+        "page": 10,
+        "bbox": [
+          42.0,
+          315.96002197265625,
+          240.47999572753906,
+          553.0800170898438
+        ],
+        "record": "JS2021-Q81"
+      }
+    ]
+  },
+  "73": {
+    "id": "73",
+    "path": "images/original/73.png",
+    "original_path": "images/original/73.png",
+    "size": [
+      551,
+      627
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 73,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-Q",
+        "page": 10,
+        "bbox": [
+          42.0,
+          573.9599609375,
+          240.47999572753906,
+          799.5599365234375
+        ],
+        "record": "JS2021-Q82"
+      }
+    ]
+  },
+  "708": {
+    "id": "708",
+    "path": "images/original/708.png",
+    "original_path": "images/original/708.png",
+    "size": [
+      663,
+      406
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 708,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-Q",
+        "page": 11,
+        "bbox": [
+          42.0,
+          58.19999694824219,
+          325.44000244140625,
+          231.83999633789062
+        ],
+        "record": "JS2021-Q83"
+      }
+    ]
+  },
+  "1056": {
+    "id": "1056",
+    "path": "images/original/1056.png",
+    "original_path": "images/original/1056.png",
+    "size": [
+      667,
+      455
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1056,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-Q",
+        "page": 11,
+        "bbox": [
+          42.0,
+          266.52001953125,
+          268.79998779296875,
+          421.20001220703125
+        ],
+        "record": "JS2021-Q84"
+      }
+    ]
+  },
+  "846": {
+    "id": "846",
+    "path": "images/original/846.png",
+    "original_path": "images/original/846.png",
+    "size": [
+      630,
+      408
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 846,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-Q",
+        "page": 11,
+        "bbox": [
+          42.0,
+          456.96002197265625,
+          268.79998779296875,
+          603.9600219726562
+        ],
+        "record": "JS2021-Q85"
+      }
+    ]
+  },
+  "1216": {
+    "id": "1216",
+    "path": "images/original/1216.png",
+    "original_path": "images/original/1216.png",
+    "size": [
+      663,
+      406
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1216,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-Q",
+        "page": 11,
+        "bbox": [
+          42.0,
+          639.9599609375,
+          325.44000244140625,
+          813.5999755859375
+        ],
+        "record": "JS2021-Q86"
+      }
+    ]
+  },
+  "1126": {
+    "id": "1126",
+    "path": "images/original/1126.png",
+    "original_path": "images/original/1126.png",
+    "size": [
+      1126,
+      321
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1126,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-Q",
+        "page": 12,
+        "bbox": [
+          42.0,
+          43.20000457763672,
+          410.5199890136719,
+          148.32000732421875
+        ],
+        "record": "JS2021-Q87"
+      }
+    ]
+  },
+  "673": {
+    "id": "673",
+    "path": "images/original/673.png",
+    "original_path": "images/original/673.png",
+    "size": [
+      1248,
+      414
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 673,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-Q",
+        "page": 12,
+        "bbox": [
+          42.0,
+          169.08001708984375,
+          410.5199890136719,
+          289.9200134277344
+        ],
+        "record": "JS2021-Q88"
+      }
+    ]
+  },
+  "567": {
+    "id": "567",
+    "path": "images/original/567.png",
+    "original_path": "images/original/567.png",
+    "size": [
+      913,
+      255
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 567,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-Q",
+        "page": 12,
+        "bbox": [
+          42.0,
+          310.0799865722656,
+          410.5199890136719,
+          411.9599914550781
+        ],
+        "record": "JS2021-Q89"
+      }
+    ]
+  },
+  "23": {
+    "id": "23",
+    "path": "images/original/23.png",
+    "original_path": "images/original/23.png",
+    "size": [
+      1250,
+      402
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 23,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-Q",
+        "page": 12,
+        "bbox": [
+          42.0,
+          431.5199890136719,
+          410.5199890136719,
+          549.1199951171875
+        ],
+        "record": "JS2021-Q90"
+      }
+    ]
+  },
+  "459": {
+    "id": "459",
+    "path": "images/original/459.png",
+    "original_path": "images/original/459.png",
+    "size": [
+      400,
+      450
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 459,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-A",
+        "page": 15,
+        "bbox": [
+          42.0,
+          329.760009765625,
+          240.47999572753906,
+          552.9600219726562
+        ],
+        "record": "JS2021-A65"
+      }
+    ]
+  },
+  "489": {
+    "id": "489",
+    "path": "images/original/489.png",
+    "original_path": "images/original/489.png",
+    "size": [
+      583,
+      154
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 489,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-A",
+        "page": 19,
+        "bbox": [
+          42.0,
+          399.0000305175781,
+          325.44000244140625,
+          475.6800231933594
+        ],
+        "record": "JS2021-A83"
+      }
+    ]
+  },
+  "479": {
+    "id": "479",
+    "path": "images/original/479.png",
+    "original_path": "images/original/479.png",
+    "size": [
+      109,
+      87
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 479,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-A",
+        "page": 19,
+        "bbox": [
+          42.0,
+          478.4400329589844,
+          123.72000122070312,
+          543.7200317382812
+        ],
+        "record": "JS2021-A83"
+      }
+    ]
+  },
+  "1027": {
+    "id": "1027",
+    "path": "images/original/1027.png",
+    "original_path": "images/original/1027.png",
+    "size": [
+      412,
+      107
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1027,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-A",
+        "page": 19,
+        "bbox": [
+          42.0,
+          645.0,
+          351.0,
+          725.280029296875
+        ],
+        "record": "JS2021-A84"
+      }
+    ]
+  },
+  "519": {
+    "id": "519",
+    "path": "images/original/519.png",
+    "original_path": "images/original/519.png",
+    "size": [
+      132,
+      123
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 519,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-A",
+        "page": 20,
+        "bbox": [
+          42.0,
+          26.640045166015625,
+          141.0,
+          118.9200439453125
+        ],
+        "record": "JS2021-A84"
+      }
+    ]
+  },
+  "450": {
+    "id": "450",
+    "path": "images/original/450.png",
+    "original_path": "images/original/450.png",
+    "size": [
+      627,
+      165
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 450,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-A",
+        "page": 20,
+        "bbox": [
+          42.0,
+          220.20004272460938,
+          438.8399963378906,
+          324.60003662109375
+        ],
+        "record": "JS2021-A85"
+      }
+    ]
+  },
+  "1106": {
+    "id": "1106",
+    "path": "images/original/1106.png",
+    "original_path": "images/original/1106.png",
+    "size": [
+      150,
+      144
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1106,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-A",
+        "page": 20,
+        "bbox": [
+          42.0,
+          326.52001953125,
+          154.55999755859375,
+          434.52001953125
+        ],
+        "record": "JS2021-A85"
+      }
+    ]
+  },
+  "726": {
+    "id": "726",
+    "path": "images/original/726.png",
+    "original_path": "images/original/726.png",
+    "size": [
+      171,
+      208
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 726,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-A",
+        "page": 20,
+        "bbox": [
+          42.0,
+          535.0800170898438,
+          170.27999877929688,
+          691.0800170898438
+        ],
+        "record": "JS2021-A86"
+      }
+    ]
+  },
+  "1267": {
+    "id": "1267",
+    "path": "images/original/1267.png",
+    "original_path": "images/original/1267.png",
+    "size": [
+      520,
+      476
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1267,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-A",
+        "page": 21,
+        "bbox": [
+          42.0,
+          26.640045166015625,
+          228.72000122070312,
+          198.36004638671875
+        ],
+        "record": "JS2021-A87"
+      }
+    ]
+  },
+  "1017": {
+    "id": "1017",
+    "path": "images/original/1017.png",
+    "original_path": "images/original/1017.png",
+    "size": [
+      225,
+      225
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1017,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-A",
+        "page": 21,
+        "bbox": [
+          42.0,
+          389.5199890136719,
+          210.72000122070312,
+          558.239990234375
+        ],
+        "record": "JS2021-A88"
+      }
+    ]
+  },
+  "18": {
+    "id": "18",
+    "path": "images/original/18.png",
+    "original_path": "images/original/18.png",
+    "size": [
+      290,
+      280
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 18,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-A",
+        "page": 22,
+        "bbox": [
+          42.0,
+          26.6400146484375,
+          259.55999755859375,
+          236.6400146484375
+        ],
+        "record": "JS2021-A89"
+      }
+    ]
+  },
+  "686": {
+    "id": "686",
+    "path": "images/original/686.png",
+    "original_path": "images/original/686.png",
+    "size": [
+      579,
+      227
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 686,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-A",
+        "page": 22,
+        "bbox": [
+          42.0,
+          237.9600372314453,
+          438.8399963378906,
+          393.60003662109375
+        ],
+        "record": "JS2021-A89"
+      }
+    ]
+  },
+  "884": {
+    "id": "884",
+    "path": "images/original/884.png",
+    "original_path": "images/original/884.png",
+    "size": [
+      165,
+      172
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 884,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-A",
+        "page": 22,
+        "bbox": [
+          42.0,
+          569.4000244140625,
+          165.72000122070312,
+          698.4000244140625
+        ],
+        "record": "JS2021-A90"
+      }
+    ]
+  },
+  "16": {
+    "id": "16",
+    "path": "images/original/16.png",
+    "original_path": "images/original/16.png",
+    "size": [
+      150,
+      193
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 16,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-A",
+        "page": 23,
+        "bbox": [
+          165.36000061035156,
+          26.640045166015625,
+          277.91998291015625,
+          171.36004638671875
+        ],
+        "record": "JS2021-A90"
+      }
+    ]
+  },
+  "580": {
+    "id": "580",
+    "path": "images/original/580.png",
+    "original_path": "images/original/580.png",
+    "size": [
+      148,
+      205
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 580,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-A",
+        "page": 23,
+        "bbox": [
+          42.0,
+          176.52001953125,
+          153.0,
+          330.2400207519531
+        ],
+        "record": "JS2021-A90"
+      }
+    ]
+  },
+  "946": {
+    "id": "946",
+    "path": "images/original/946.png",
+    "original_path": "images/original/946.png",
+    "size": [
+      145,
+      188
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 946,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-A",
+        "page": 23,
+        "bbox": [
+          154.8000030517578,
+          335.4000244140625,
+          263.52001953125,
+          476.4000244140625
+        ],
+        "record": "JS2021-A90"
+      }
+    ]
+  },
+  "300": {
+    "id": "300",
+    "path": "images/original/300.png",
+    "original_path": "images/original/300.png",
+    "size": [
+      145,
+      181
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 300,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-A",
+        "page": 23,
+        "bbox": [
+          42.0,
+          480.8400573730469,
+          150.72000122070312,
+          616.56005859375
+        ],
+        "record": "JS2021-A90"
+      }
+    ]
+  },
+  "157": {
+    "id": "157",
+    "path": "images/original/157.png",
+    "original_path": "images/original/157.png",
+    "size": [
+      149,
+      191
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 157,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-A",
+        "page": 23,
+        "bbox": [
+          154.8000030517578,
+          621.719970703125,
+          266.52001953125,
+          765.0
+        ],
+        "record": "JS2021-A90"
+      }
+    ]
+  },
+  "955": {
+    "id": "955",
+    "path": "images/original/955.png",
+    "original_path": "images/original/955.png",
+    "size": [
+      145,
+      178
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 955,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-A",
+        "page": 24,
+        "bbox": [
+          154.8000030517578,
+          26.6400146484375,
+          263.52001953125,
+          160.20001220703125
+        ],
+        "record": "JS2021-A90"
+      }
+    ]
+  },
+  "920": {
+    "id": "920",
+    "path": "images/original/920.png",
+    "original_path": "images/original/920.png",
+    "size": [
+      141,
+      181
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 920,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2021-A",
+        "page": 24,
+        "bbox": [
+          42.0,
+          164.52005004882812,
+          147.72000122070312,
+          300.24005126953125
+        ],
+        "record": "JS2021-A90"
+      }
+    ]
+  },
+  "184": {
+    "id": "184",
+    "path": "images/original/184.png",
+    "original_path": "images/original/184.png",
+    "size": [
+      341,
+      383
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 184,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2021-A",
+        "page": 18,
+        "bbox": [
+          42.0,
+          641.52001953125,
+          179.75999450683594,
+          796.3200073242188
+        ],
+        "record": "ZJ2021-A71"
+      }
+    ]
+  },
+  "139": {
+    "id": "139",
+    "path": "images/original/139.png",
+    "original_path": "images/original/139.png",
+    "size": [
+      405,
+      276
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 139,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2021-A",
+        "page": 19,
+        "bbox": [
+          42.0,
+          245.39999389648438,
+          268.79998779296875,
+          399.9599914550781
+        ],
+        "record": "ZJ2021-A72"
+      }
+    ]
+  },
+  "1030": {
+    "id": "1030",
+    "path": "images/original/1030.png",
+    "original_path": "images/original/1030.png",
+    "size": [
+      700,
+      324
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1030,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2021-A",
+        "page": 20,
+        "bbox": [
+          42.0,
+          513.1199951171875,
+          382.20001220703125,
+          670.5599975585938
+        ],
+        "record": "ZJ2021-A77"
+      }
+    ]
+  },
+  "379": {
+    "id": "379",
+    "path": "images/original/379.png",
+    "original_path": "images/original/379.png",
+    "size": [
+      700,
+      329
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 379,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2021-A",
+        "page": 21,
+        "bbox": [
+          42.0,
+          26.639999389648438,
+          382.20001220703125,
+          186.47999572753906
+        ],
+        "record": "ZJ2021-A78"
+      }
+    ]
+  },
+  "62": {
+    "id": "62",
+    "path": "images/original/62.png",
+    "original_path": "images/original/62.png",
+    "size": [
+      700,
+      174
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 62,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2021-A",
+        "page": 21,
+        "bbox": [
+          42.0,
+          690.9600219726562,
+          382.20001220703125,
+          775.5599975585938
+        ],
+        "record": "ZJ2021-A83"
+      }
+    ]
+  },
+  "555": {
+    "id": "555",
+    "path": "images/original/555.png",
+    "original_path": "images/original/555.png",
+    "size": [
+      529,
+      216
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 555,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2021-A",
+        "page": 22,
+        "bbox": [
+          42.0,
+          62.75999450683594,
+          438.7200012207031,
+          224.75999450683594
+        ],
+        "record": "ZJ2021-A84"
+      }
+    ]
+  },
+  "418": {
+    "id": "418",
+    "path": "images/original/418.png",
+    "original_path": "images/original/418.png",
+    "size": [
+      700,
+      322
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 418,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2021-A",
+        "page": 22,
+        "bbox": [
+          63.0,
+          247.32000732421875,
+          488.1600036621094,
+          442.9200134277344
+        ],
+        "record": "ZJ2021-A84"
+      }
+    ]
+  },
+  "1084": {
+    "id": "1084",
+    "path": "images/original/1084.png",
+    "original_path": "images/original/1084.png",
+    "size": [
+      471,
+      222
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1084,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2021-A",
+        "page": 22,
+        "bbox": [
+          42.0,
+          571.5599975585938,
+          395.2799987792969,
+          738.1199951171875
+        ],
+        "record": "ZJ2021-A85"
+      }
+    ]
+  },
+  "695": {
+    "id": "695",
+    "path": "images/original/695.png",
+    "original_path": "images/original/695.png",
+    "size": [
+      700,
+      198
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 695,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2021-Q",
+        "page": 11,
+        "bbox": [
+          43.24169921875,
+          464.349365234375,
+          432.4169616699219,
+          573.6890869140625
+        ],
+        "record": "ZJ2021-Q76"
+      }
+    ]
+  },
+  "819": {
+    "id": "819",
+    "path": "images/original/819.png",
+    "original_path": "images/original/819.png",
+    "size": [
+      700,
+      353
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 819,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2021-Q",
+        "page": 12,
+        "bbox": [
+          43.24169921875,
+          89.99952697753906,
+          432.4169616699219,
+          286.4403991699219
+        ],
+        "record": "ZJ2021-Q77"
+      }
+    ]
+  },
+  "893": {
+    "id": "893",
+    "path": "images/original/893.png",
+    "original_path": "images/original/893.png",
+    "size": [
+      565,
+      259
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 893,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2021-Q",
+        "page": 12,
+        "bbox": [
+          43.24169921875,
+          329.68218994140625,
+          357.67059326171875,
+          473.61529541015625
+        ],
+        "record": "ZJ2021-Q78"
+      }
+    ]
+  },
+  "505": {
+    "id": "505",
+    "path": "images/original/505.png",
+    "original_path": "images/original/505.png",
+    "size": [
+      594,
+      256
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 505,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2021-Q",
+        "page": 12,
+        "bbox": [
+          43.24169921875,
+          516.85693359375,
+          373.7318115234375,
+          658.936767578125
+        ],
+        "record": "ZJ2021-Q79"
+      }
+    ]
+  },
+  "1265": {
+    "id": "1265",
+    "path": "images/original/1265.png",
+    "original_path": "images/original/1265.png",
+    "size": [
+      700,
+      771
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1265,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2021-Q",
+        "page": 13,
+        "bbox": [
+          43.24169921875,
+          90.0,
+          432.4169616699219,
+          518.0927734375
+        ],
+        "record": "ZJ2021-Q80"
+      }
+    ]
+  },
+  "1163": {
+    "id": "1163",
+    "path": "images/original/1163.png",
+    "original_path": "images/original/1163.png",
+    "size": [
+      700,
+      168
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1163,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2021-Q",
+        "page": 13,
+        "bbox": [
+          43.24169921875,
+          561.334716796875,
+          432.4169616699219,
+          654.6132202148438
+        ],
+        "record": "ZJ2021-Q81"
+      }
+    ]
+  },
+  "560": {
+    "id": "560",
+    "path": "images/original/560.png",
+    "original_path": "images/original/560.png",
+    "size": [
+      483,
+      126
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 560,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2021-Q",
+        "page": 13,
+        "bbox": [
+          43.24169921875,
+          697.8552856445312,
+          311.9579772949219,
+          768.2774658203125
+        ],
+        "record": "ZJ2021-Q82"
+      }
+    ]
+  },
+  "1141": {
+    "id": "1141",
+    "path": "images/original/1141.png",
+    "original_path": "images/original/1141.png",
+    "size": [
+      700,
+      196
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1141,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2021-Q",
+        "page": 14,
+        "bbox": [
+          43.24169921875,
+          125.21063232421875,
+          432.4169616699219,
+          233.9326171875
+        ],
+        "record": "ZJ2021-Q83"
+      }
+    ]
+  },
+  "483": {
+    "id": "483",
+    "path": "images/original/483.png",
+    "original_path": "images/original/483.png",
+    "size": [
+      653,
+      426
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 483,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2021-Q",
+        "page": 14,
+        "bbox": [
+          43.24169921875,
+          277.1746826171875,
+          406.4719543457031,
+          514.3862915039062
+        ],
+        "record": "ZJ2021-Q84"
+      }
+    ]
+  },
+  "352": {
+    "id": "352",
+    "path": "images/original/352.png",
+    "original_path": "images/original/352.png",
+    "size": [
+      488,
+      377
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 352,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2021-Q",
+        "page": 14,
+        "bbox": [
+          43.24169921875,
+          557.6277465820312,
+          314.4289245605469,
+          767.0411376953125
+        ],
+        "record": "ZJ2021-Q85"
+      }
+    ]
+  },
+  "322": {
+    "id": "322",
+    "path": "images/original/322.png",
+    "original_path": "images/original/322.png",
+    "size": [
+      410,
+      294
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 322,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-Q",
+        "page": 10,
+        "bbox": [
+          117.36000061035156,
+          36.0,
+          424.91998291015625,
+          256.55999755859375
+        ],
+        "record": "JS2022-Q55"
+      }
+    ]
+  },
+  "828": {
+    "id": "828",
+    "path": "images/original/828.png",
+    "original_path": "images/original/828.png",
+    "size": [
+      309,
+      208
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 828,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-Q",
+        "page": 10,
+        "bbox": [
+          79.08000183105469,
+          259.9200134277344,
+          310.79998779296875,
+          415.9200134277344
+        ],
+        "record": "JS2022-Q55"
+      }
+    ],
+    "code_hd": {
+      "path": "images/code_hd/828.png",
+      "svg_path": "images/code_hd/828.svg",
+      "pixel_size": [
+        1200,
+        808
+      ],
+      "method": "deterministic_multilevel_contour_trace",
+      "comparison_mean_absolute_gray_error": 1.3164,
+      "notice": "代码按原图轮廓和灰度描摹；不恢复原图未提供的细节。原图保留并作为依据。"
+    }
+  },
+  "770": {
+    "id": "770",
+    "path": "images/original/770.png",
+    "original_path": "images/original/770.png",
+    "size": [
+      312,
+      206
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 770,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-Q",
+        "page": 10,
+        "bbox": [
+          79.19999694824219,
+          419.4000244140625,
+          313.20001220703125,
+          573.9600219726562
+        ],
+        "record": "JS2022-Q55"
+      }
+    ],
+    "code_hd": {
+      "path": "images/code_hd/770.png",
+      "svg_path": "images/code_hd/770.svg",
+      "pixel_size": [
+        1200,
+        793
+      ],
+      "method": "deterministic_multilevel_contour_trace",
+      "comparison_mean_absolute_gray_error": 1.3235,
+      "notice": "代码按原图轮廓和灰度描摹；不恢复原图未提供的细节。原图保留并作为依据。"
+    }
+  },
+  "510": {
+    "id": "510",
+    "path": "images/original/510.png",
+    "original_path": "images/original/510.png",
+    "size": [
+      390,
+      275
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 510,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-Q",
+        "page": 11,
+        "bbox": [
+          80.16000366210938,
+          36.0,
+          372.7200012207031,
+          242.27999877929688
+        ],
+        "record": "JS2022-Q55"
+      }
+    ]
+  },
+  "894": {
+    "id": "894",
+    "path": "images/original/894.png",
+    "original_path": "images/original/894.png",
+    "size": [
+      220,
+      142
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 894,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-Q",
+        "page": 11,
+        "bbox": [
+          36.0,
+          494.760009765625,
+          201.0,
+          601.3200073242188
+        ],
+        "record": "JS2022-Q59"
+      }
+    ],
+    "code_hd": {
+      "path": "images/code_hd/894.png",
+      "svg_path": "images/code_hd/894.svg",
+      "pixel_size": [
+        1200,
+        775
+      ],
+      "method": "deterministic_multilevel_contour_trace",
+      "comparison_mean_absolute_gray_error": 2.7348,
+      "notice": "代码按原图轮廓和灰度描摹；不恢复原图未提供的细节。原图保留并作为依据。"
+    }
+  },
+  "990": {
+    "id": "990",
+    "path": "images/original/990.png",
+    "original_path": "images/original/990.png",
+    "size": [
+      207,
+      176
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 990,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-Q",
+        "page": 12,
+        "bbox": [
+          36.0,
+          269.3999938964844,
+          191.27999877929688,
+          401.3999938964844
+        ],
+        "record": "JS2022-Q67"
+      }
+    ],
+    "code_hd": {
+      "path": "images/code_hd/990.png",
+      "svg_path": "images/code_hd/990.svg",
+      "pixel_size": [
+        1200,
+        1021
+      ],
+      "method": "deterministic_multilevel_contour_trace",
+      "comparison_mean_absolute_gray_error": 0.9464,
+      "notice": "代码按原图轮廓和灰度描摹；不恢复原图未提供的细节。原图保留并作为依据。"
+    }
+  },
+  "1292": {
+    "id": "1292",
+    "path": "images/original/1292.png",
+    "original_path": "images/original/1292.png",
+    "size": [
+      627,
+      82
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1292,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-Q",
+        "page": 13,
+        "bbox": [
+          62.279998779296875,
+          51.60000228881836,
+          532.5599975585938,
+          113.16000366210938
+        ],
+        "record": "JS2022-Q78"
+      }
+    ]
+  },
+  "170": {
+    "id": "170",
+    "path": "images/original/170.png",
+    "original_path": "images/original/170.png",
+    "size": [
+      518,
+      227
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 170,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-Q",
+        "page": 13,
+        "bbox": [
+          58.560001373291016,
+          131.16000366210938,
+          447.1199951171875,
+          301.44000244140625
+        ],
+        "record": "JS2022-Q79"
+      }
+    ]
+  },
+  "273": {
+    "id": "273",
+    "path": "images/original/273.png",
+    "original_path": "images/original/273.png",
+    "size": [
+      492,
+      212
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 273,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-Q",
+        "page": 13,
+        "bbox": [
+          58.560001373291016,
+          319.32000732421875,
+          427.55999755859375,
+          478.32000732421875
+        ],
+        "record": "JS2022-Q80"
+      }
+    ]
+  },
+  "514": {
+    "id": "514",
+    "path": "images/original/514.png",
+    "original_path": "images/original/514.png",
+    "size": [
+      1050,
+      137
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 514,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-Q",
+        "page": 13,
+        "bbox": [
+          62.279998779296875,
+          496.4399719238281,
+          537.239990234375,
+          599.1599731445312
+        ],
+        "record": "JS2022-Q81"
+      }
+    ]
+  },
+  "19": {
+    "id": "19",
+    "path": "images/original/19.png",
+    "original_path": "images/original/19.png",
+    "size": [
+      557,
+      241
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 19,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-Q",
+        "page": 14,
+        "bbox": [
+          62.279998779296875,
+          36.0,
+          480.0,
+          216.72000122070312
+        ],
+        "record": "JS2022-Q82"
+      }
+    ]
+  },
+  "504": {
+    "id": "504",
+    "path": "images/original/504.png",
+    "original_path": "images/original/504.png",
+    "size": [
+      354,
+      380
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 504,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-Q",
+        "page": 14,
+        "bbox": [
+          62.279998779296875,
+          234.719970703125,
+          327.8399963378906,
+          519.719970703125
+        ],
+        "record": "JS2022-Q83"
+      }
+    ]
+  },
+  "812": {
+    "id": "812",
+    "path": "images/original/812.png",
+    "original_path": "images/original/812.png",
+    "size": [
+      529,
+      67
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 812,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-Q",
+        "page": 14,
+        "bbox": [
+          58.560001373291016,
+          567.8399658203125,
+          455.2799987792969,
+          618.1199951171875
+        ],
+        "record": "JS2022-Q84"
+      }
+    ]
+  },
+  "766": {
+    "id": "766",
+    "path": "images/original/766.png",
+    "original_path": "images/original/766.png",
+    "size": [
+      519,
+      92
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 766,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-Q",
+        "page": 14,
+        "bbox": [
+          62.279998779296875,
+          651.719970703125,
+          451.55999755859375,
+          720.719970703125
+        ],
+        "record": "JS2022-Q85"
+      }
+    ]
+  },
+  "432": {
+    "id": "432",
+    "path": "images/original/432.png",
+    "original_path": "images/original/432.png",
+    "size": [
+      516,
+      94
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 432,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-Q",
+        "page": 15,
+        "bbox": [
+          62.279998779296875,
+          36.0,
+          449.2799987792969,
+          106.55999755859375
+        ],
+        "record": "JS2022-Q86"
+      }
+    ]
+  },
+  "364": {
+    "id": "364",
+    "path": "images/original/364.png",
+    "original_path": "images/original/364.png",
+    "size": [
+      525,
+      88
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 364,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-Q",
+        "page": 15,
+        "bbox": [
+          62.279998779296875,
+          140.16000366210938,
+          456.0,
+          206.16000366210938
+        ],
+        "record": "JS2022-Q87"
+      }
+    ]
+  },
+  "444": {
+    "id": "444",
+    "path": "images/original/444.png",
+    "original_path": "images/original/444.png",
+    "size": [
+      523,
+      91
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 444,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-Q",
+        "page": 15,
+        "bbox": [
+          62.279998779296875,
+          239.760009765625,
+          454.55999755859375,
+          308.0400085449219
+        ],
+        "record": "JS2022-Q88"
+      }
+    ]
+  },
+  "1082": {
+    "id": "1082",
+    "path": "images/original/1082.png",
+    "original_path": "images/original/1082.png",
+    "size": [
+      525,
+      163
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1082,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-Q",
+        "page": 15,
+        "bbox": [
+          58.560001373291016,
+          340.44000244140625,
+          452.2799987792969,
+          462.7200012207031
+        ],
+        "record": "JS2022-Q89"
+      }
+    ]
+  },
+  "426": {
+    "id": "426",
+    "path": "images/original/426.png",
+    "original_path": "images/original/426.png",
+    "size": [
+      522,
+      146
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 426,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-Q",
+        "page": 15,
+        "bbox": [
+          58.560001373291016,
+          480.72003173828125,
+          450.1199951171875,
+          590.280029296875
+        ],
+        "record": "JS2022-Q90"
+      }
+    ]
+  },
+  "1074": {
+    "id": "1074",
+    "path": "images/original/1074.png",
+    "original_path": "images/original/1074.png",
+    "size": [
+      514,
+      130
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1074,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-Q",
+        "page": 15,
+        "bbox": [
+          62.279998779296875,
+          608.280029296875,
+          447.8399963378906,
+          705.8400268554688
+        ],
+        "record": "JS2022-Q91"
+      }
+    ]
+  },
+  "93": {
+    "id": "93",
+    "path": "images/original/93.png",
+    "original_path": "images/original/93.png",
+    "size": [
+      526,
+      143
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 93,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-Q",
+        "page": 16,
+        "bbox": [
+          58.560001373291016,
+          36.000030517578125,
+          453.1199951171875,
+          143.280029296875
+        ],
+        "record": "JS2022-Q92"
+      }
+    ]
+  },
+  "604": {
+    "id": "604",
+    "path": "images/original/604.png",
+    "original_path": "images/original/604.png",
+    "size": [
+      442,
+      352
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 604,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-A",
+        "page": 18,
+        "bbox": [
+          36.0,
+          127.55999755859375,
+          228.0,
+          281.2799987792969
+        ],
+        "record": "JS2022-A58"
+      }
+    ]
+  },
+  "529": {
+    "id": "529",
+    "path": "images/original/529.png",
+    "original_path": "images/original/529.png",
+    "size": [
+      189,
+      191
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 529,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-A",
+        "page": 19,
+        "bbox": [
+          36.0,
+          636.3599853515625,
+          177.72000122070312,
+          779.6400146484375
+        ],
+        "record": "JS2022-A67"
+      }
+    ],
+    "code_hd": {
+      "path": "images/code_hd/529.png",
+      "svg_path": "images/code_hd/529.svg",
+      "pixel_size": [
+        1188,
+        1200
+      ],
+      "method": "deterministic_multilevel_contour_trace",
+      "comparison_mean_absolute_gray_error": 1.1607,
+      "notice": "代码按原图轮廓和灰度描摹；不恢复原图未提供的细节。原图保留并作为依据。"
+    }
+  },
+  "998": {
+    "id": "998",
+    "path": "images/original/998.png",
+    "original_path": "images/original/998.png",
+    "size": [
+      269,
+      230
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 998,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-A",
+        "page": 20,
+        "bbox": [
+          36.0,
+          72.0,
+          237.72000122070312,
+          244.44000244140625
+        ],
+        "record": "JS2022-A67"
+      }
+    ],
+    "code_hd": {
+      "path": "images/code_hd/998.png",
+      "svg_path": "images/code_hd/998.svg",
+      "pixel_size": [
+        1200,
+        1027
+      ],
+      "method": "deterministic_multilevel_contour_trace",
+      "comparison_mean_absolute_gray_error": 1.074,
+      "notice": "代码按原图轮廓和灰度描摹；不恢复原图未提供的细节。原图保留并作为依据。"
+    }
+  },
+  "765": {
+    "id": "765",
+    "path": "images/original/765.png",
+    "original_path": "images/original/765.png",
+    "size": [
+      984,
+      426
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 765,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-A",
+        "page": 24,
+        "bbox": [
+          36.0,
+          180.0,
+          586.5599975585938,
+          420.0
+        ],
+        "record": "JS2022-A80"
+      }
+    ]
+  },
+  "1165": {
+    "id": "1165",
+    "path": "images/original/1165.png",
+    "original_path": "images/original/1165.png",
+    "size": [
+      1658,
+      734
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1165,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-A",
+        "page": 25,
+        "bbox": [
+          36.0,
+          36.0,
+          546.0,
+          261.0
+        ],
+        "record": "JS2022-A82"
+      }
+    ]
+  },
+  "607": {
+    "id": "607",
+    "path": "images/original/607.png",
+    "original_path": "images/original/607.png",
+    "size": [
+      246,
+      239
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 607,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-A",
+        "page": 25,
+        "bbox": [
+          36.0,
+          480.1199951171875,
+          149.27999877929688,
+          589.6799926757812
+        ],
+        "record": "JS2022-A84"
+      }
+    ]
+  },
+  "1261": {
+    "id": "1261",
+    "path": "images/original/1261.png",
+    "original_path": "images/original/1261.png",
+    "size": [
+      362,
+      298
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1261,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-A",
+        "page": 26,
+        "bbox": [
+          36.0,
+          36.0,
+          307.55999755859375,
+          259.55999755859375
+        ],
+        "record": "JS2022-A85"
+      }
+    ]
+  },
+  "85": {
+    "id": "85",
+    "path": "images/original/85.png",
+    "original_path": "images/original/85.png",
+    "size": [
+      143,
+      131
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 85,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-A",
+        "page": 26,
+        "bbox": [
+          36.0,
+          351.0,
+          143.16000366210938,
+          449.3999938964844
+        ],
+        "record": "JS2022-A86"
+      }
+    ],
+    "code_hd": {
+      "path": "images/code_hd/85.png",
+      "svg_path": "images/code_hd/85.svg",
+      "pixel_size": [
+        1200,
+        1100
+      ],
+      "method": "deterministic_multilevel_contour_trace",
+      "comparison_mean_absolute_gray_error": 5.4473,
+      "notice": "代码按原图轮廓和灰度描摹；不恢复原图未提供的细节。原图保留并作为依据。"
+    }
+  },
+  "409": {
+    "id": "409",
+    "path": "images/original/409.png",
+    "original_path": "images/original/409.png",
+    "size": [
+      460,
+      111
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 409,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-A",
+        "page": 26,
+        "bbox": [
+          36.0,
+          540.9599609375,
+          381.0,
+          624.239990234375
+        ],
+        "record": "JS2022-A87"
+      }
+    ]
+  },
+  "786": {
+    "id": "786",
+    "path": "images/original/786.png",
+    "original_path": "images/original/786.png",
+    "size": [
+      541,
+      133
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 786,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-A",
+        "page": 27,
+        "bbox": [
+          36.0,
+          36.0,
+          441.7200012207031,
+          135.72000122070312
+        ],
+        "record": "JS2022-A88"
+      }
+    ]
+  },
+  "996": {
+    "id": "996",
+    "path": "images/original/996.png",
+    "original_path": "images/original/996.png",
+    "size": [
+      310,
+      152
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 996,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-A",
+        "page": 27,
+        "bbox": [
+          277.55999755859375,
+          191.27999877929688,
+          510.1199951171875,
+          305.2799987792969
+        ],
+        "record": "JS2022-A89"
+      }
+    ]
+  },
+  "256": {
+    "id": "256",
+    "path": "images/original/256.png",
+    "original_path": "images/original/256.png",
+    "size": [
+      96,
+      113
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 256,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-A",
+        "page": 27,
+        "bbox": [
+          66.95999908447266,
+          328.0799865722656,
+          138.95999145507812,
+          412.79998779296875
+        ],
+        "record": "JS2022-A89"
+      }
+    ]
+  },
+  "215": {
+    "id": "215",
+    "path": "images/original/215.png",
+    "original_path": "images/original/215.png",
+    "size": [
+      93,
+      112
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 215,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-A",
+        "page": 27,
+        "bbox": [
+          66.12000274658203,
+          417.6000061035156,
+          135.83999633789062,
+          501.6000061035156
+        ],
+        "record": "JS2022-A89"
+      }
+    ]
+  },
+  "369": {
+    "id": "369",
+    "path": "images/original/369.png",
+    "original_path": "images/original/369.png",
+    "size": [
+      98,
+      113
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 369,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-A",
+        "page": 27,
+        "bbox": [
+          66.5999984741211,
+          506.5199890136719,
+          140.04000854492188,
+          591.239990234375
+        ],
+        "record": "JS2022-A89"
+      }
+    ]
+  },
+  "612": {
+    "id": "612",
+    "path": "images/original/612.png",
+    "original_path": "images/original/612.png",
+    "size": [
+      212,
+      199
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 612,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-A",
+        "page": 27,
+        "bbox": [
+          67.55999755859375,
+          596.0400390625,
+          226.55999755859375,
+          745.320068359375
+        ],
+        "record": "JS2022-A89"
+      }
+    ]
+  },
+  "577": {
+    "id": "577",
+    "path": "images/original/577.png",
+    "original_path": "images/original/577.png",
+    "size": [
+      1268,
+      329
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 577,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-A",
+        "page": 28,
+        "bbox": [
+          36.0,
+          91.55999755859375,
+          546.0,
+          224.27999877929688
+        ],
+        "record": "JS2022-A90"
+      }
+    ]
+  },
+  "983": {
+    "id": "983",
+    "path": "images/original/983.png",
+    "original_path": "images/original/983.png",
+    "size": [
+      262,
+      252
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 983,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-A",
+        "page": 28,
+        "bbox": [
+          36.0,
+          446.760009765625,
+          231.83999633789062,
+          635.760009765625
+        ],
+        "record": "JS2022-A91"
+      }
+    ]
+  },
+  "1104": {
+    "id": "1104",
+    "path": "images/original/1104.png",
+    "original_path": "images/original/1104.png",
+    "size": [
+      204,
+      196
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1104,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-A",
+        "page": 29,
+        "bbox": [
+          36.0,
+          36.0,
+          189.0,
+          182.27999877929688
+        ],
+        "record": "JS2022-A91"
+      }
+    ]
+  },
+  "110": {
+    "id": "110",
+    "path": "images/original/110.png",
+    "original_path": "images/original/110.png",
+    "size": [
+      199,
+      197
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 110,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-A",
+        "page": 29,
+        "bbox": [
+          36.0,
+          218.27999877929688,
+          185.27999877929688,
+          365.2799987792969
+        ],
+        "record": "JS2022-A91"
+      }
+    ]
+  },
+  "1001": {
+    "id": "1001",
+    "path": "images/original/1001.png",
+    "original_path": "images/original/1001.png",
+    "size": [
+      191,
+      204
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1001,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-A",
+        "page": 29,
+        "bbox": [
+          36.0,
+          383.280029296875,
+          178.55999755859375,
+          536.280029296875
+        ],
+        "record": "JS2022-A91"
+      }
+    ]
+  },
+  "678": {
+    "id": "678",
+    "path": "images/original/678.png",
+    "original_path": "images/original/678.png",
+    "size": [
+      954,
+      259
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 678,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2022-A",
+        "page": 29,
+        "bbox": [
+          36.0,
+          609.8399658203125,
+          546.0,
+          747.1199951171875
+        ],
+        "record": "JS2022-A92"
+      }
+    ]
+  },
+  "136": {
+    "id": "136",
+    "path": "images/original/136.png",
+    "original_path": "images/original/136.png",
+    "size": [
+      412,
+      253
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 136,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2022-Q",
+        "page": 12,
+        "bbox": [
+          43.24169921875,
+          89.99952697753906,
+          272.4226989746094,
+          230.8439178466797
+        ],
+        "record": "ZJ2022-Q65"
+      }
+    ]
+  },
+  "292": {
+    "id": "292",
+    "path": "images/original/292.png",
+    "original_path": "images/original/292.png",
+    "size": [
+      600,
+      312
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 292,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2022-Q",
+        "page": 12,
+        "bbox": [
+          43.24169921875,
+          376.63031005859375,
+          376.82049560546875,
+          549.5971069335938
+        ],
+        "record": "ZJ2022-Q67"
+      }
+    ]
+  },
+  "503": {
+    "id": "503",
+    "path": "images/original/503.png",
+    "original_path": "images/original/503.png",
+    "size": [
+      600,
+      239
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 503,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2022-Q",
+        "page": 12,
+        "bbox": [
+          43.24169921875,
+          624.9609375,
+          376.82049560546875,
+          758.3924560546875
+        ],
+        "record": "ZJ2022-Q68"
+      }
+    ]
+  },
+  "1244": {
+    "id": "1244",
+    "path": "images/original/1244.png",
+    "original_path": "images/original/1244.png",
+    "size": [
+      570,
+      311
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1244,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2022-Q",
+        "page": 13,
+        "bbox": [
+          43.24169921875,
+          324.1228332519531,
+          360.1415710449219,
+          497.0896301269531
+        ],
+        "record": "ZJ2022-Q71"
+      }
+    ]
+  },
+  "1283": {
+    "id": "1283",
+    "path": "images/original/1283.png",
+    "original_path": "images/original/1283.png",
+    "size": [
+      650,
+      276
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1283,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2022-Q",
+        "page": 13,
+        "bbox": [
+          43.24169921875,
+          540.3318481445312,
+          404.6187438964844,
+          693.531005859375
+        ],
+        "record": "ZJ2022-Q72"
+      }
+    ]
+  },
+  "197": {
+    "id": "197",
+    "path": "images/original/197.png",
+    "original_path": "images/original/197.png",
+    "size": [
+      500,
+      318
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 197,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2022-Q",
+        "page": 14,
+        "bbox": [
+          43.24169921875,
+          89.99998474121094,
+          321.2240295410156,
+          266.6732177734375
+        ],
+        "record": "ZJ2022-Q73"
+      }
+    ]
+  },
+  "1171": {
+    "id": "1171",
+    "path": "images/original/1171.png",
+    "original_path": "images/original/1171.png",
+    "size": [
+      570,
+      451
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1171,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2022-Q",
+        "page": 14,
+        "bbox": [
+          43.24169921875,
+          309.9150390625,
+          360.1415710449219,
+          560.7168579101562
+        ],
+        "record": "ZJ2022-Q74"
+      }
+    ]
+  },
+  "41": {
+    "id": "41",
+    "path": "images/original/41.png",
+    "original_path": "images/original/41.png",
+    "size": [
+      560,
+      450
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 41,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2022-Q",
+        "page": 15,
+        "bbox": [
+          43.24169921875,
+          89.99905395507812,
+          354.5819396972656,
+          340.1831359863281
+        ],
+        "record": "ZJ2022-Q75"
+      }
+    ]
+  },
+  "1040": {
+    "id": "1040",
+    "path": "images/original/1040.png",
+    "original_path": "images/original/1040.png",
+    "size": [
+      558,
+      457
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1040,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2022-Q",
+        "page": 15,
+        "bbox": [
+          43.24169921875,
+          383.42529296875,
+          353.346435546875,
+          637.3158569335938
+        ],
+        "record": "ZJ2022-Q76"
+      }
+    ]
+  },
+  "734": {
+    "id": "734",
+    "path": "images/original/734.png",
+    "original_path": "images/original/734.png",
+    "size": [
+      620,
+      330
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 734,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2022-Q",
+        "page": 16,
+        "bbox": [
+          43.24169921875,
+          89.99998474121094,
+          387.9397888183594,
+          273.46832275390625
+        ],
+        "record": "ZJ2022-Q77"
+      }
+    ]
+  },
+  "229": {
+    "id": "229",
+    "path": "images/original/229.png",
+    "original_path": "images/original/229.png",
+    "size": [
+      700,
+      327
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 229,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2022-Q",
+        "page": 16,
+        "bbox": [
+          43.24169921875,
+          316.71002197265625,
+          432.4169616699219,
+          498.32513427734375
+        ],
+        "record": "ZJ2022-Q78"
+      }
+    ]
+  },
+  "788": {
+    "id": "788",
+    "path": "images/original/788.png",
+    "original_path": "images/original/788.png",
+    "size": [
+      607,
+      159
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 788,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2022-Q",
+        "page": 16,
+        "bbox": [
+          43.24169921875,
+          541.5665893554688,
+          380.5269470214844,
+          629.9031982421875
+        ],
+        "record": "ZJ2022-Q79"
+      }
+    ]
+  },
+  "616": {
+    "id": "616",
+    "path": "images/original/616.png",
+    "original_path": "images/original/616.png",
+    "size": [
+      600,
+      185
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 616,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2022-Q",
+        "page": 16,
+        "bbox": [
+          43.24169921875,
+          673.1455688476562,
+          376.82049560546875,
+          776.3079223632812
+        ],
+        "record": "ZJ2022-Q80"
+      }
+    ]
+  },
+  "124-1": {
+    "id": "124-1",
+    "path": "images/original/124-1.png",
+    "original_path": "images/original/124-1.png",
+    "size": [
+      385,
+      236
+    ],
+    "method": "source_image_crop",
+    "source_image_id": 124,
+    "crop": [
+      0.07,
+      0.14,
+      0.49,
+      0.59
+    ],
+    "sources": [
+      {
+        "doc": "ZJ2022-A",
+        "page": 21,
+        "bbox": [
+          113.5199966430664,
+          358.55999755859375,
+          528.47998046875,
+          595.9199829101562
+        ],
+        "record": "ZJ2022-A65"
+      }
+    ]
+  },
+  "417-1": {
+    "id": "417-1",
+    "path": "images/original/417-1.png",
+    "original_path": "images/original/417-1.png",
+    "size": [
+      610,
+      262
+    ],
+    "method": "source_image_crop",
+    "source_image_id": 417,
+    "crop": [
+      0.07,
+      0.18,
+      0.79,
+      0.83
+    ],
+    "sources": [
+      {
+        "doc": "ZJ2022-A",
+        "page": 22,
+        "bbox": [
+          90.0,
+          90.00001525878906,
+          504.8399963378906,
+          286.9200134277344
+        ],
+        "record": "ZJ2022-A67"
+      }
+    ]
+  },
+  "11-1": {
+    "id": "11-1",
+    "path": "images/original/11-1.png",
+    "original_path": "images/original/11-1.png",
+    "size": [
+      634,
+      241
+    ],
+    "method": "source_image_crop",
+    "source_image_id": 11,
+    "crop": [
+      0.07,
+      0.43,
+      0.79,
+      0.943
+    ],
+    "sources": [
+      {
+        "doc": "ZJ2022-A",
+        "page": 22,
+        "bbox": [
+          90.0,
+          327.5999755859375,
+          504.9599914550781,
+          549.47998046875
+        ],
+        "record": "ZJ2022-A68"
+      }
+    ]
+  },
+  "587-1": {
+    "id": "587-1",
+    "path": "images/original/587-1.png",
+    "original_path": "images/original/587-1.png",
+    "size": [
+      272,
+      532
+    ],
+    "method": "source_image_crop",
+    "source_image_id": 587,
+    "crop": [
+      0.08,
+      0.21,
+      0.39,
+      1
+    ],
+    "sources": [
+      {
+        "doc": "ZJ2022-A",
+        "page": 23,
+        "bbox": [
+          90.0,
+          78.95999145507812,
+          475.20001220703125,
+          375.3599853515625
+        ],
+        "record": "ZJ2022-A69"
+      }
+    ]
+  },
+  "1129-1": {
+    "id": "1129-1",
+    "path": "images/original/1129-1.png",
+    "original_path": "images/original/1129-1.png",
+    "size": [
+      567,
+      338
+    ],
+    "method": "source_image_crop",
+    "source_image_id": 1129,
+    "crop": [
+      0.08,
+      0,
+      0.72,
+      0.73
+    ],
+    "sources": [
+      {
+        "doc": "ZJ2022-A",
+        "page": 24,
+        "bbox": [
+          90.0,
+          91.44000244140625,
+          401.8800048828125,
+          254.52000427246094
+        ],
+        "record": "ZJ2022-A71"
+      }
+    ]
+  },
+  "967-1": {
+    "id": "967-1",
+    "path": "images/original/967-1.png",
+    "original_path": "images/original/967-1.png",
+    "size": [
+      501,
+      321
+    ],
+    "method": "source_image_crop",
+    "source_image_id": 967,
+    "crop": [
+      0.08,
+      0.01,
+      0.66,
+      0.57
+    ],
+    "sources": [
+      {
+        "doc": "ZJ2022-A",
+        "page": 24,
+        "bbox": [
+          90.0,
+          402.0000305175781,
+          504.7200012207031,
+          677.52001953125
+        ],
+        "record": "ZJ2022-A73"
+      }
+    ]
+  },
+  "967-2": {
+    "id": "967-2",
+    "path": "images/original/967-2.png",
+    "original_path": "images/original/967-2.png",
+    "size": [
+      354,
+      144
+    ],
+    "method": "source_image_crop",
+    "source_image_id": 967,
+    "crop": [
+      0.08,
+      0.75,
+      0.49,
+      1
+    ],
+    "sources": [
+      {
+        "doc": "ZJ2022-A",
+        "page": 24,
+        "bbox": [
+          90.0,
+          402.0000305175781,
+          504.7200012207031,
+          677.52001953125
+        ],
+        "record": "ZJ2022-A73"
+      }
+    ]
+  },
+  "895-1": {
+    "id": "895-1",
+    "path": "images/original/895-1.png",
+    "original_path": "images/original/895-1.png",
+    "size": [
+      566,
+      149
+    ],
+    "method": "source_image_crop",
+    "source_image_id": 895,
+    "crop": [
+      0.08,
+      0.43,
+      0.73,
+      0.89
+    ],
+    "sources": [
+      {
+        "doc": "ZJ2022-A",
+        "page": 25,
+        "bbox": [
+          90.0,
+          571.2000122070312,
+          504.8399963378906,
+          725.52001953125
+        ],
+        "record": "ZJ2022-A79"
+      }
+    ]
+  },
+  "380-1": {
+    "id": "380-1",
+    "path": "images/original/380-1.png",
+    "original_path": "images/original/380-1.png",
+    "size": [
+      617,
+      222
+    ],
+    "method": "source_image_crop",
+    "source_image_id": 380,
+    "crop": [
+      0.09,
+      0.14,
+      0.92,
+      0.9
+    ],
+    "sources": [
+      {
+        "doc": "ZJ2022-A",
+        "page": 26,
+        "bbox": [
+          90.0,
+          91.44000244140625,
+          505.20001220703125,
+          254.63999938964844
+        ],
+        "record": "ZJ2022-A80"
+      }
+    ]
+  },
+  "27": {
+    "id": "27",
+    "path": "images/original/27.png",
+    "original_path": "images/original/27.png",
+    "size": [
+      252,
+      178
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 27,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2023-A",
+        "page": 32,
+        "bbox": [
+          75.0,
+          232.89999389648438,
+          232.0,
+          347.29998779296875
+        ],
+        "record": "JS2023-Q59"
+      }
+    ],
+    "code_hd": {
+      "path": "images/code_hd/27.png",
+      "svg_path": "images/code_hd/27.svg",
+      "pixel_size": [
+        1200,
+        848
+      ],
+      "method": "deterministic_multilevel_contour_trace",
+      "comparison_mean_absolute_gray_error": 2.0414,
+      "notice": "代码按原图轮廓和灰度描摹；不恢复原图未提供的细节。原图保留并作为依据。"
+    }
+  },
+  "651": {
+    "id": "651",
+    "path": "images/original/651.png",
+    "original_path": "images/original/651.png",
+    "size": [
+      593,
+      227
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 651,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2023-A",
+        "page": 40,
+        "bbox": [
+          75.0,
+          426.1199951171875,
+          500.1499938964844,
+          588.8699951171875
+        ],
+        "record": "JS2023-Q76"
+      }
+    ]
+  },
+  "175": {
+    "id": "175",
+    "path": "images/original/175.png",
+    "original_path": "images/original/175.png",
+    "size": [
+      551,
+      243
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 175,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2023-A",
+        "page": 41,
+        "bbox": [
+          75.0,
+          79.64996337890625,
+          500.1499938964844,
+          267.14996337890625
+        ],
+        "record": "JS2023-Q77"
+      }
+    ]
+  },
+  "1114": {
+    "id": "1114",
+    "path": "images/original/1114.png",
+    "original_path": "images/original/1114.png",
+    "size": [
+      1275,
+      207
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1114,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2023-A",
+        "page": 41,
+        "bbox": [
+          75.0,
+          415.76995849609375,
+          500.1499938964844,
+          484.8199462890625
+        ],
+        "record": "JS2023-Q78"
+      }
+    ]
+  },
+  "910": {
+    "id": "910",
+    "path": "images/original/910.png",
+    "original_path": "images/original/910.png",
+    "size": [
+      912,
+      414
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 910,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2023-A",
+        "page": 42,
+        "bbox": [
+          75.0,
+          76.64999389648438,
+          500.1400146484375,
+          269.5
+        ],
+        "record": "JS2023-Q79"
+      }
+    ]
+  },
+  "405": {
+    "id": "405",
+    "path": "images/original/405.png",
+    "original_path": "images/original/405.png",
+    "size": [
+      345,
+      389
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 405,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2023-A",
+        "page": 42,
+        "bbox": [
+          194.77000427246094,
+          434.0400085449219,
+          421.52001953125,
+          677.1400146484375
+        ],
+        "record": "JS2023-Q80"
+      }
+    ]
+  },
+  "350": {
+    "id": "350",
+    "path": "images/original/350.png",
+    "original_path": "images/original/350.png",
+    "size": [
+      402,
+      404
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 350,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2023-A",
+        "page": 43,
+        "bbox": [
+          194.77000427246094,
+          94.49996948242188,
+          421.489990234375,
+          322.3499755859375
+        ],
+        "record": "JS2023-Q81"
+      }
+    ]
+  },
+  "1008": {
+    "id": "1008",
+    "path": "images/original/1008.png",
+    "original_path": "images/original/1008.png",
+    "size": [
+      411,
+      254
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1008,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2023-A",
+        "page": 43,
+        "bbox": [
+          75.0,
+          482.7149658203125,
+          500.1499938964844,
+          745.4649658203125
+        ],
+        "record": "JS2023-Q82"
+      }
+    ]
+  },
+  "1108": {
+    "id": "1108",
+    "path": "images/original/1108.png",
+    "original_path": "images/original/1108.png",
+    "size": [
+      413,
+      254
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1108,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2023-A",
+        "page": 44,
+        "bbox": [
+          75.0,
+          311.7499694824219,
+          500.1499938964844,
+          573.219970703125
+        ],
+        "record": "JS2023-Q83"
+      }
+    ]
+  },
+  "947": {
+    "id": "947",
+    "path": "images/original/947.png",
+    "original_path": "images/original/947.png",
+    "size": [
+      1269,
+      207
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 947,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2023-A",
+        "page": 45,
+        "bbox": [
+          75.0,
+          134.75,
+          500.0899963378906,
+          204.25
+        ],
+        "record": "JS2023-Q84"
+      }
+    ]
+  },
+  "284": {
+    "id": "284",
+    "path": "images/original/284.png",
+    "original_path": "images/original/284.png",
+    "size": [
+      528,
+      269
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 284,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2023-A",
+        "page": 45,
+        "bbox": [
+          75.0,
+          466.7900085449219,
+          500.1499938964844,
+          683.3900146484375
+        ],
+        "record": "JS2023-Q85"
+      }
+    ]
+  },
+  "1169": {
+    "id": "1169",
+    "path": "images/original/1169.png",
+    "original_path": "images/original/1169.png",
+    "size": [
+      930,
+      606
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1169,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2023-A",
+        "page": 46,
+        "bbox": [
+          75.0,
+          292.0500183105469,
+          500.1499938964844,
+          569.1300048828125
+        ],
+        "record": "JS2023-Q86"
+      }
+    ]
+  },
+  "1243": {
+    "id": "1243",
+    "path": "images/original/1243.png",
+    "original_path": "images/original/1243.png",
+    "size": [
+      814,
+      232
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1243,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2023-A",
+        "page": 47,
+        "bbox": [
+          75.0,
+          463.6399841308594,
+          500.1499938964844,
+          584.739990234375
+        ],
+        "record": "JS2023-Q87"
+      }
+    ]
+  },
+  "1044": {
+    "id": "1044",
+    "path": "images/original/1044.png",
+    "original_path": "images/original/1044.png",
+    "size": [
+      818,
+      226
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1044,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2023-A",
+        "page": 48,
+        "bbox": [
+          74.99999237060547,
+          391.80133056640625,
+          499.0289611816406,
+          508.4437561035156
+        ],
+        "record": "JS2023-Q88"
+      }
+    ]
+  },
+  "457": {
+    "id": "457",
+    "path": "images/original/457.png",
+    "original_path": "images/original/457.png",
+    "size": [
+      506,
+      168
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 457,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2023-A",
+        "page": 49,
+        "bbox": [
+          75.0,
+          196.41998291015625,
+          500.1300048828125,
+          337.5699768066406
+        ],
+        "record": "JS2023-Q89"
+      }
+    ]
+  },
+  "JS2023-90-cube": {
+    "id": "JS2023-90-cube",
+    "path": "images/original/JS2023-90-cube.png",
+    "original_path": "images/original/JS2023-90-cube.png",
+    "size": [
+      342,
+      320
+    ],
+    "method": "native_pdf_vector_render",
+    "source_image_id": null,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2023-Q",
+        "page": 21,
+        "bbox": [
+          187.7,
+          560.3,
+          204.8,
+          576.3
+        ],
+        "record": "JS2023-Q90"
+      }
+    ]
+  },
+  "916": {
+    "id": "916",
+    "path": "images/original/916.png",
+    "original_path": "images/original/916.png",
+    "size": [
+      504,
+      175
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 916,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2023-A",
+        "page": 50,
+        "bbox": [
+          75.0,
+          76.19998168945312,
+          500.0899963378906,
+          223.79998779296875
+        ],
+        "record": "JS2023-Q90"
+      }
+    ]
+  },
+  "851": {
+    "id": "851",
+    "path": "images/original/851.png",
+    "original_path": "images/original/851.png",
+    "size": [
+      638,
+      450
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 851,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2023-A",
+        "page": 66,
+        "bbox": [
+          106.5,
+          193.49996948242188,
+          425.5,
+          418.4999694824219
+        ],
+        "record": "JS2023-Q115"
+      }
+    ]
+  },
+  "903": {
+    "id": "903",
+    "path": "images/original/903.png",
+    "original_path": "images/original/903.png",
+    "size": [
+      245,
+      222
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 903,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2023-A",
+        "page": 44,
+        "bbox": [
+          75.0,
+          116.69998168945312,
+          216.6999969482422,
+          245.0999755859375
+        ],
+        "record": "JS2023-A82"
+      }
+    ]
+  },
+  "588": {
+    "id": "588",
+    "path": "images/original/588.png",
+    "original_path": "images/original/588.png",
+    "size": [
+      230,
+      218
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 588,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2023-A",
+        "page": 44,
+        "bbox": [
+          75.0,
+          616.7940063476562,
+          216.69000244140625,
+          751.093994140625
+        ],
+        "record": "JS2023-A83"
+      }
+    ]
+  },
+  "768": {
+    "id": "768",
+    "path": "images/original/768.png",
+    "original_path": "images/original/768.png",
+    "size": [
+      286,
+      281
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 768,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2023-A",
+        "page": 45,
+        "bbox": [
+          75.0,
+          247.94998168945312,
+          216.6999969482422,
+          387.16998291015625
+        ],
+        "record": "JS2023-A84"
+      }
+    ]
+  },
+  "272": {
+    "id": "272",
+    "path": "images/original/272.png",
+    "original_path": "images/original/272.png",
+    "size": [
+      235,
+      227
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 272,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2023-A",
+        "page": 46,
+        "bbox": [
+          75.0,
+          73.75,
+          216.6999969482422,
+          210.6300048828125
+        ],
+        "record": "JS2023-A85"
+      }
+    ]
+  },
+  "132": {
+    "id": "132",
+    "path": "images/original/132.png",
+    "original_path": "images/original/132.png",
+    "size": [
+      266,
+      391
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 132,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2023-A",
+        "page": 46,
+        "bbox": [
+          103.87999725341797,
+          615.8259887695312,
+          200.27899169921875,
+          757.5260009765625
+        ],
+        "record": "JS2023-A86"
+      }
+    ]
+  },
+  "816": {
+    "id": "816",
+    "path": "images/original/816.png",
+    "original_path": "images/original/816.png",
+    "size": [
+      285,
+      320
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 816,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2023-A",
+        "page": 47,
+        "bbox": [
+          103.87999725341797,
+          97.12995910644531,
+          230.07998657226562,
+          238.8299560546875
+        ],
+        "record": "JS2023-A86"
+      }
+    ]
+  },
+  "67": {
+    "id": "67",
+    "path": "images/original/67.png",
+    "original_path": "images/original/67.png",
+    "size": [
+      284,
+      343
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 67,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2023-A",
+        "page": 47,
+        "bbox": [
+          103.87999725341797,
+          253.12998962402344,
+          221.20999145507812,
+          394.8299865722656
+        ],
+        "record": "JS2023-A86"
+      }
+    ]
+  },
+  "296": {
+    "id": "296",
+    "path": "images/original/296.png",
+    "original_path": "images/original/296.png",
+    "size": [
+      681,
+      206
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 296,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2023-A",
+        "page": 48,
+        "bbox": [
+          75.0,
+          75.5,
+          516.25,
+          209.0
+        ],
+        "record": "JS2023-A87"
+      }
+    ]
+  },
+  "603": {
+    "id": "603",
+    "path": "images/original/603.png",
+    "original_path": "images/original/603.png",
+    "size": [
+      1111,
+      320
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 603,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2023-A",
+        "page": 48,
+        "bbox": [
+          77.4000015258789,
+          556.449951171875,
+          520.6000366210938,
+          684.5999755859375
+        ],
+        "record": "JS2023-A88"
+      }
+    ]
+  },
+  "1105": {
+    "id": "1105",
+    "path": "images/original/1105.png",
+    "original_path": "images/original/1105.png",
+    "size": [
+      536,
+      224
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1105,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2023-A",
+        "page": 49,
+        "bbox": [
+          75.0,
+          388.74993896484375,
+          500.29998779296875,
+          566.449951171875
+        ],
+        "record": "JS2023-A89"
+      }
+    ]
+  },
+  "116": {
+    "id": "116",
+    "path": "images/original/116.png",
+    "original_path": "images/original/116.png",
+    "size": [
+      966,
+      340
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 116,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2023-A",
+        "page": 50,
+        "bbox": [
+          95.5,
+          270.04998779296875,
+          520.75,
+          420.0
+        ],
+        "record": "JS2023-A90"
+      }
+    ]
+  },
+  "92": {
+    "id": "92",
+    "path": "images/original/92.png",
+    "original_path": "images/original/92.png",
+    "size": [
+      616,
+      205
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 92,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2023-A",
+        "page": 65,
+        "bbox": [
+          75.0,
+          79.24998474121094,
+          500.1499938964844,
+          220.739990234375
+        ],
+        "record": "JS2023-A113"
+      }
+    ]
+  },
+  "1016": {
+    "id": "1016",
+    "path": "images/original/1016.png",
+    "original_path": "images/original/1016.png",
+    "size": [
+      426,
+      363
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1016,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2023-A",
+        "page": 17,
+        "bbox": [
+          75.0,
+          447.96002197265625,
+          290.1600036621094,
+          631.3200073242188
+        ],
+        "record": "ZJ2023-A62"
+      }
+    ]
+  },
+  "403": {
+    "id": "403",
+    "path": "images/original/403.png",
+    "original_path": "images/original/403.png",
+    "size": [
+      417,
+      87
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 403,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2023-A",
+        "page": 18,
+        "bbox": [
+          75.0,
+          512.52001953125,
+          336.1199951171875,
+          567.0
+        ],
+        "record": "ZJ2023-A67"
+      }
+    ]
+  },
+  "638": {
+    "id": "638",
+    "path": "images/original/638.png",
+    "original_path": "images/original/638.png",
+    "size": [
+      500,
+      185
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 638,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2023-A",
+        "page": 20,
+        "bbox": [
+          75.0,
+          73.55997467041016,
+          360.0,
+          179.03997802734375
+        ],
+        "record": "ZJ2023-A71"
+      }
+    ]
+  },
+  "551": {
+    "id": "551",
+    "path": "images/original/551.png",
+    "original_path": "images/original/551.png",
+    "size": [
+      695,
+      326
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 551,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2023-A",
+        "page": 20,
+        "bbox": [
+          75.0,
+          339.239990234375,
+          397.9200134277344,
+          490.67999267578125
+        ],
+        "record": "ZJ2023-A73"
+      }
+    ]
+  },
+  "1231": {
+    "id": "1231",
+    "path": "images/original/1231.png",
+    "original_path": "images/original/1231.png",
+    "size": [
+      600,
+      167
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1231,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2023-A",
+        "page": 21,
+        "bbox": [
+          75.0,
+          260.5199890136719,
+          401.1600036621094,
+          351.239990234375
+        ],
+        "record": "ZJ2023-A79"
+      }
+    ]
+  },
+  "1274": {
+    "id": "1274",
+    "path": "images/original/1274.png",
+    "original_path": "images/original/1274.png",
+    "size": [
+      600,
+      160
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1274,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2023-A",
+        "page": 21,
+        "bbox": [
+          75.0,
+          387.3600158691406,
+          399.4800109863281,
+          473.8800048828125
+        ],
+        "record": "ZJ2023-A79"
+      }
+    ]
+  },
+  "162": {
+    "id": "162",
+    "path": "images/original/162.png",
+    "original_path": "images/original/162.png",
+    "size": [
+      600,
+      163
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 162,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2023-A",
+        "page": 21,
+        "bbox": [
+          75.0,
+          510.6000061035156,
+          403.9200134277344,
+          600.0
+        ],
+        "record": "ZJ2023-A79"
+      }
+    ]
+  },
+  "1119": {
+    "id": "1119",
+    "path": "images/original/1119.png",
+    "original_path": "images/original/1119.png",
+    "size": [
+      600,
+      168
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1119,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2023-A",
+        "page": 21,
+        "bbox": [
+          75.0,
+          656.760009765625,
+          408.9599914550781,
+          750.239990234375
+        ],
+        "record": "ZJ2023-A79"
+      }
+    ]
+  },
+  "66": {
+    "id": "66",
+    "path": "images/original/66.png",
+    "original_path": "images/original/66.png",
+    "size": [
+      173,
+      154
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 66,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2023-A",
+        "page": 22,
+        "bbox": [
+          75.0,
+          138.84002685546875,
+          204.72000122070312,
+          254.4000244140625
+        ],
+        "record": "ZJ2023-A80"
+      }
+    ]
+  },
+  "1172": {
+    "id": "1172",
+    "path": "images/original/1172.png",
+    "original_path": "images/original/1172.png",
+    "size": [
+      173,
+      142
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1172,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2023-A",
+        "page": 22,
+        "bbox": [
+          75.0,
+          275.8800048828125,
+          204.72000122070312,
+          382.44000244140625
+        ],
+        "record": "ZJ2023-A80"
+      }
+    ]
+  },
+  "30": {
+    "id": "30",
+    "path": "images/original/30.png",
+    "original_path": "images/original/30.png",
+    "size": [
+      173,
+      141
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 30,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2023-A",
+        "page": 22,
+        "bbox": [
+          75.0,
+          401.1600036621094,
+          204.72000122070312,
+          506.8800048828125
+        ],
+        "record": "ZJ2023-A80"
+      }
+    ]
+  },
+  "224": {
+    "id": "224",
+    "path": "images/original/224.png",
+    "original_path": "images/original/224.png",
+    "size": [
+      343,
+      292
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 224,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2023-Q",
+        "page": 12,
+        "bbox": [
+          43.24169921875,
+          374.7768859863281,
+          234.1229248046875,
+          537.2421264648438
+        ],
+        "record": "ZJ2023-Q62"
+      }
+    ],
+    "code_hd": {
+      "path": "images/code_hd/224.png",
+      "svg_path": "images/code_hd/224.svg",
+      "pixel_size": [
+        1200,
+        1022
+      ],
+      "method": "deterministic_multilevel_contour_trace",
+      "comparison_mean_absolute_gray_error": 1.8611,
+      "notice": "代码按原图轮廓和灰度描摹；不恢复原图未提供的细节。原图保留并作为依据。"
+    }
+  },
+  "1214": {
+    "id": "1214",
+    "path": "images/original/1214.png",
+    "original_path": "images/original/1214.png",
+    "size": [
+      600,
+      277
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1214,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2023-Q",
+        "page": 13,
+        "bbox": [
+          43.24169921875,
+          515.6221923828125,
+          376.82049560546875,
+          669.4390869140625
+        ],
+        "record": "ZJ2023-Q71"
+      }
+    ]
+  },
+  "644": {
+    "id": "644",
+    "path": "images/original/644.png",
+    "original_path": "images/original/644.png",
+    "size": [
+      600,
+      283
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 644,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2023-Q",
+        "page": 14,
+        "bbox": [
+          43.24169921875,
+          89.99998474121094,
+          376.82049560546875,
+          247.5233154296875
+        ],
+        "record": "ZJ2023-Q72"
+      }
+    ]
+  },
+  "486": {
+    "id": "486",
+    "path": "images/original/486.png",
+    "original_path": "images/original/486.png",
+    "size": [
+      560,
+      265
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 486,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2023-Q",
+        "page": 14,
+        "bbox": [
+          43.24169921875,
+          290.76470947265625,
+          354.5819396972656,
+          437.7864990234375
+        ],
+        "record": "ZJ2023-Q73"
+      }
+    ]
+  },
+  "709": {
+    "id": "709",
+    "path": "images/original/709.png",
+    "original_path": "images/original/709.png",
+    "size": [
+      700,
+      297
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 709,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2023-Q",
+        "page": 14,
+        "bbox": [
+          43.24169921875,
+          481.02838134765625,
+          432.4169616699219,
+          645.964599609375
+        ],
+        "record": "ZJ2023-Q74"
+      }
+    ]
+  },
+  "1036": {
+    "id": "1036",
+    "path": "images/original/1036.png",
+    "original_path": "images/original/1036.png",
+    "size": [
+      700,
+      308
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1036,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2023-Q",
+        "page": 15,
+        "bbox": [
+          43.24169921875,
+          89.99905395507812,
+          432.4169616699219,
+          261.1126403808594
+        ],
+        "record": "ZJ2023-Q75"
+      }
+    ]
+  },
+  "960": {
+    "id": "960",
+    "path": "images/original/960.png",
+    "original_path": "images/original/960.png",
+    "size": [
+      650,
+      175
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 960,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2023-Q",
+        "page": 15,
+        "bbox": [
+          43.24169921875,
+          304.35467529296875,
+          404.6187438964844,
+          401.9573669433594
+        ],
+        "record": "ZJ2023-Q76"
+      }
+    ]
+  },
+  "663": {
+    "id": "663",
+    "path": "images/original/663.png",
+    "original_path": "images/original/663.png",
+    "size": [
+      700,
+      171
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 663,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2023-Q",
+        "page": 15,
+        "bbox": [
+          43.24169921875,
+          445.1990661621094,
+          432.4169616699219,
+          540.330810546875
+        ],
+        "record": "ZJ2023-Q77"
+      }
+    ]
+  },
+  "115": {
+    "id": "115",
+    "path": "images/original/115.png",
+    "original_path": "images/original/115.png",
+    "size": [
+      503,
+      600
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 115,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2023-Q",
+        "page": 16,
+        "bbox": [
+          43.24169921875,
+          90.0,
+          323.0772705078125,
+          423.57879638671875
+        ],
+        "record": "ZJ2023-Q78"
+      }
+    ]
+  },
+  "354": {
+    "id": "354",
+    "path": "images/original/354.png",
+    "original_path": "images/original/354.png",
+    "size": [
+      600,
+      169
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 354,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2023-Q",
+        "page": 16,
+        "bbox": [
+          43.24169921875,
+          466.8205871582031,
+          376.82049560546875,
+          560.7168579101562
+        ],
+        "record": "ZJ2023-Q79"
+      }
+    ]
+  },
+  "1158": {
+    "id": "1158",
+    "path": "images/original/1158.png",
+    "original_path": "images/original/1158.png",
+    "size": [
+      626,
+      184
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1158,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2023-Q",
+        "page": 16,
+        "bbox": [
+          43.24169921875,
+          603.9581298828125,
+          391.02850341796875,
+          706.5027465820312
+        ],
+        "record": "ZJ2023-Q80"
+      }
+    ]
+  },
+  "763": {
+    "id": "763",
+    "path": "images/original/763.png",
+    "original_path": "images/original/763.png",
+    "size": [
+      246,
+      212
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 763,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2024-Q",
+        "page": 10,
+        "bbox": [
+          43.20539474487305,
+          125.18204498291016,
+          179.61099243164062,
+          243.071044921875
+        ],
+        "record": "JS2024-Q65"
+      }
+    ],
+    "code_hd": {
+      "path": "images/code_hd/763.png",
+      "svg_path": "images/code_hd/763.svg",
+      "pixel_size": [
+        1200,
+        1035
+      ],
+      "method": "deterministic_multilevel_contour_trace",
+      "comparison_mean_absolute_gray_error": 2.4851,
+      "notice": "代码按原图轮廓和灰度描摹；不恢复原图未提供的细节。原图保留并作为依据。"
+    }
+  },
+  "329": {
+    "id": "329",
+    "path": "images/original/329.png",
+    "original_path": "images/original/329.png",
+    "size": [
+      634,
+      696
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 329,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2024-Q",
+        "page": 11,
+        "bbox": [
+          43.20539474487305,
+          239.98455810546875,
+          395.637939453125,
+          626.3642578125
+        ],
+        "record": "JS2024-Q79"
+      }
+    ]
+  },
+  "89": {
+    "id": "89",
+    "path": "images/original/89.png",
+    "original_path": "images/original/89.png",
+    "size": [
+      400,
+      481
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 89,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2024-Q",
+        "page": 12,
+        "bbox": [
+          43.20539474487305,
+          90.0,
+          265.4045715332031,
+          357.2561950683594
+        ],
+        "record": "JS2024-Q80"
+      }
+    ]
+  },
+  "1329": {
+    "id": "1329",
+    "path": "images/original/1329.png",
+    "original_path": "images/original/1329.png",
+    "size": [
+      600,
+      274
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1329,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2024-Q",
+        "page": 12,
+        "bbox": [
+          43.20539474487305,
+          400.46148681640625,
+          376.504150390625,
+          552.297607421875
+        ],
+        "record": "JS2024-Q81"
+      }
+    ]
+  },
+  "149": {
+    "id": "149",
+    "path": "images/original/149.png",
+    "original_path": "images/original/149.png",
+    "size": [
+      500,
+      316
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 149,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2024-Q",
+        "page": 13,
+        "bbox": [
+          43.20539474487305,
+          90.00093078613281,
+          320.954345703125,
+          265.2913818359375
+        ],
+        "record": "JS2024-Q82"
+      }
+    ]
+  },
+  "211": {
+    "id": "211",
+    "path": "images/original/211.png",
+    "original_path": "images/original/211.png",
+    "size": [
+      500,
+      306
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 211,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2024-Q",
+        "page": 13,
+        "bbox": [
+          43.20539474487305,
+          324.544677734375,
+          320.954345703125,
+          494.8973388671875
+        ],
+        "record": "JS2024-Q83"
+      }
+    ]
+  },
+  "125": {
+    "id": "125",
+    "path": "images/original/125.png",
+    "original_path": "images/original/125.png",
+    "size": [
+      500,
+      326
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 125,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2024-Q",
+        "page": 13,
+        "bbox": [
+          43.20539474487305,
+          554.149658203125,
+          320.954345703125,
+          734.9951171875
+        ],
+        "record": "JS2024-Q84"
+      }
+    ]
+  },
+  "664": {
+    "id": "664",
+    "path": "images/original/664.png",
+    "original_path": "images/original/664.png",
+    "size": [
+      500,
+      316
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 664,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2024-Q",
+        "page": 14,
+        "bbox": [
+          43.20539474487305,
+          122.09535217285156,
+          320.954345703125,
+          297.38580322265625
+        ],
+        "record": "JS2024-Q85"
+      }
+    ]
+  },
+  "251": {
+    "id": "251",
+    "path": "images/original/251.png",
+    "original_path": "images/original/251.png",
+    "size": [
+      600,
+      143
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 251,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2024-Q",
+        "page": 14,
+        "bbox": [
+          43.20539474487305,
+          356.6390686035156,
+          376.504150390625,
+          436.26043701171875
+        ],
+        "record": "JS2024-Q86"
+      }
+    ]
+  },
+  "246": {
+    "id": "246",
+    "path": "images/original/246.png",
+    "original_path": "images/original/246.png",
+    "size": [
+      600,
+      158
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 246,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2024-Q",
+        "page": 14,
+        "bbox": [
+          43.20539474487305,
+          479.4656066894531,
+          376.504150390625,
+          567.11083984375
+        ],
+        "record": "JS2024-Q87"
+      }
+    ]
+  },
+  "280": {
+    "id": "280",
+    "path": "images/original/280.png",
+    "original_path": "images/original/280.png",
+    "size": [
+      500,
+      161
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 280,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2024-Q",
+        "page": 14,
+        "bbox": [
+          43.20539474487305,
+          626.3643798828125,
+          320.954345703125,
+          715.8612670898438
+        ],
+        "record": "JS2024-Q88"
+      }
+    ]
+  },
+  "852": {
+    "id": "852",
+    "path": "images/original/852.png",
+    "original_path": "images/original/852.png",
+    "size": [
+      600,
+      201
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 852,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2024-Q",
+        "page": 15,
+        "bbox": [
+          43.20539474487305,
+          90.00091552734375,
+          376.504150390625,
+          201.71771240234375
+        ],
+        "record": "JS2024-Q89"
+      }
+    ]
+  },
+  "190": {
+    "id": "190",
+    "path": "images/original/190.png",
+    "original_path": "images/original/190.png",
+    "size": [
+      600,
+      154
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 190,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2024-Q",
+        "page": 15,
+        "bbox": [
+          43.20539474487305,
+          244.9228057861328,
+          376.504150390625,
+          330.0991516113281
+        ],
+        "record": "JS2024-Q90"
+      }
+    ]
+  },
+  "436": {
+    "id": "436",
+    "path": "images/original/436.png",
+    "original_path": "images/original/436.png",
+    "size": [
+      466,
+      135
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 436,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2024-A",
+        "page": 16,
+        "bbox": [
+          70.89990997314453,
+          374.5466003417969,
+          405.7657775878906,
+          471.7966003417969
+        ],
+        "record": "JS2024-A52"
+      }
+    ]
+  },
+  "435": {
+    "id": "435",
+    "path": "images/original/435.png",
+    "original_path": "images/original/435.png",
+    "size": [
+      313,
+      348
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 435,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2024-A",
+        "page": 18,
+        "bbox": [
+          70.89991760253906,
+          295.37200927734375,
+          188.89517211914062,
+          426.4219970703125
+        ],
+        "record": "JS2024-A58"
+      }
+    ],
+    "code_hd": {
+      "path": "images/code_hd/435.png",
+      "svg_path": "images/code_hd/435.svg",
+      "pixel_size": [
+        1080,
+        1200
+      ],
+      "method": "deterministic_multilevel_contour_trace",
+      "comparison_mean_absolute_gray_error": 2.5347,
+      "notice": "代码按原图轮廓和灰度描摹；不恢复原图未提供的细节。原图保留并作为依据。"
+    }
+  },
+  "1085": {
+    "id": "1085",
+    "path": "images/original/1085.png",
+    "original_path": "images/original/1085.png",
+    "size": [
+      257,
+      241
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1085,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2024-A",
+        "page": 20,
+        "bbox": [
+          70.89991760253906,
+          578.994384765625,
+          220.85848999023438,
+          719.994384765625
+        ],
+        "record": "JS2024-A65"
+      }
+    ],
+    "code_hd": {
+      "path": "images/code_hd/1085.png",
+      "svg_path": "images/code_hd/1085.svg",
+      "pixel_size": [
+        1200,
+        1126
+      ],
+      "method": "deterministic_multilevel_contour_trace",
+      "comparison_mean_absolute_gray_error": 2.5806,
+      "notice": "代码按原图轮廓和灰度描摹；不恢复原图未提供的细节。原图保留并作为依据。"
+    }
+  },
+  "677": {
+    "id": "677",
+    "path": "images/original/677.png",
+    "original_path": "images/original/677.png",
+    "size": [
+      245,
+      234
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 677,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2024-A",
+        "page": 21,
+        "bbox": [
+          70.89991760253906,
+          280.8470458984375,
+          222.39849853515625,
+          425.3470458984375
+        ],
+        "record": "JS2024-A65"
+      }
+    ],
+    "code_hd": {
+      "path": "images/code_hd/677.png",
+      "svg_path": "images/code_hd/677.svg",
+      "pixel_size": [
+        1200,
+        1147
+      ],
+      "method": "deterministic_multilevel_contour_trace",
+      "comparison_mean_absolute_gray_error": 2.8467,
+      "notice": "代码按原图轮廓和灰度描摹；不恢复原图未提供的细节。原图保留并作为依据。"
+    }
+  },
+  "81": {
+    "id": "81",
+    "path": "images/original/81.png",
+    "original_path": "images/original/81.png",
+    "size": [
+      38,
+      38
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 81,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2024-A",
+        "page": 25,
+        "bbox": [
+          238.8166046142578,
+          360.72955322265625,
+          267.31658935546875,
+          389.22955322265625
+        ],
+        "record": "JS2024-A81"
+      },
+      {
+        "doc": "JS2024-A",
+        "page": 25,
+        "bbox": [
+          133.89991760253906,
+          407.5290222167969,
+          162.39991760253906,
+          436.0290222167969
+        ],
+        "record": "JS2024-A81"
+      },
+      {
+        "doc": "JS2024-A",
+        "page": 25,
+        "bbox": [
+          367.2497253417969,
+          407.5290222167969,
+          395.7497253417969,
+          436.0290222167969
+        ],
+        "record": "JS2024-A81"
+      }
+    ],
+    "code_hd": {
+      "path": "images/code_hd/81.png",
+      "svg_path": "images/code_hd/81.svg",
+      "pixel_size": [
+        1200,
+        1200
+      ],
+      "method": "deterministic_multilevel_contour_trace",
+      "comparison_mean_absolute_gray_error": 9.6503,
+      "notice": "代码按原图轮廓和灰度描摹；不恢复原图未提供的细节。原图保留并作为依据。"
+    }
+  },
+  "443": {
+    "id": "443",
+    "path": "images/original/443.png",
+    "original_path": "images/original/443.png",
+    "size": [
+      500,
+      315
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 443,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2024-A",
+        "page": 25,
+        "bbox": [
+          70.89991760253906,
+          544.3444213867188,
+          354.8851318359375,
+          723.4443969726562
+        ],
+        "record": "JS2024-A82"
+      }
+    ]
+  },
+  "1121": {
+    "id": "1121",
+    "path": "images/original/1121.png",
+    "original_path": "images/original/1121.png",
+    "size": [
+      500,
+      306
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1121,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2024-A",
+        "page": 26,
+        "bbox": [
+          70.89991760253906,
+          110.8236083984375,
+          352.84442138671875,
+          283.37359619140625
+        ],
+        "record": "JS2024-A83"
+      }
+    ]
+  },
+  "310": {
+    "id": "310",
+    "path": "images/original/310.png",
+    "original_path": "images/original/310.png",
+    "size": [
+      527,
+      337
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 310,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2024-A",
+        "page": 26,
+        "bbox": [
+          70.89991760253906,
+          372.2961120605469,
+          352.37054443359375,
+          551.99609375
+        ],
+        "record": "JS2024-A84"
+      }
+    ]
+  },
+  "492": {
+    "id": "492",
+    "path": "images/original/492.png",
+    "original_path": "images/original/492.png",
+    "size": [
+      500,
+      320
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 492,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2024-A",
+        "page": 27,
+        "bbox": [
+          70.89991760253906,
+          63.02400207519531,
+          392.38427734375,
+          268.77398681640625
+        ],
+        "record": "JS2024-A85"
+      }
+    ]
+  },
+  "650": {
+    "id": "650",
+    "path": "images/original/650.png",
+    "original_path": "images/original/650.png",
+    "size": [
+      600,
+      153
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 650,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2024-A",
+        "page": 27,
+        "bbox": [
+          70.89991760253906,
+          358.39666748046875,
+          397.099853515625,
+          441.39642333984375
+        ],
+        "record": "JS2024-A86"
+      }
+    ]
+  },
+  "1239": {
+    "id": "1239",
+    "path": "images/original/1239.png",
+    "original_path": "images/original/1239.png",
+    "size": [
+      600,
+      153
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1239,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2024-A",
+        "page": 27,
+        "bbox": [
+          70.89991760253906,
+          513.895263671875,
+          400.2447509765625,
+          597.6952514648438
+        ],
+        "record": "JS2024-A87"
+      }
+    ]
+  },
+  "1285": {
+    "id": "1285",
+    "path": "images/original/1285.png",
+    "original_path": "images/original/1285.png",
+    "size": [
+      600,
+      158
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1285,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2024-A",
+        "page": 28,
+        "bbox": [
+          70.89991760253906,
+          63.749427795410156,
+          371.27984619140625,
+          142.84942626953125
+        ],
+        "record": "JS2024-A87"
+      }
+    ]
+  },
+  "994": {
+    "id": "994",
+    "path": "images/original/994.png",
+    "original_path": "images/original/994.png",
+    "size": [
+      600,
+      202
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 994,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2024-A",
+        "page": 28,
+        "bbox": [
+          70.8999252319336,
+          420.2712097167969,
+          366.88983154296875,
+          519.9212036132812
+        ],
+        "record": "JS2024-A89"
+      }
+    ]
+  },
+  "601": {
+    "id": "601",
+    "path": "images/original/601.png",
+    "original_path": "images/original/601.png",
+    "size": [
+      450,
+      207
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 601,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2024-A",
+        "page": 29,
+        "bbox": [
+          70.89991760253906,
+          58.07445526123047,
+          335.7994384765625,
+          180.12445068359375
+        ],
+        "record": "JS2024-A90"
+      }
+    ]
+  },
+  "944": {
+    "id": "944",
+    "path": "images/original/944.png",
+    "original_path": "images/original/944.png",
+    "size": [
+      300,
+      192
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 944,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2024-A",
+        "page": 29,
+        "bbox": [
+          70.89991760253906,
+          218.6977081298828,
+          295.89990234375,
+          362.69769287109375
+        ],
+        "record": "JS2024-A90"
+      }
+    ]
+  },
+  "1142": {
+    "id": "1142",
+    "path": "images/original/1142.png",
+    "original_path": "images/original/1142.png",
+    "size": [
+      201,
+      223
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1142,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2024-Q",
+        "page": 12,
+        "bbox": [
+          43.24169921875,
+          89.99951934814453,
+          155.0523681640625,
+          214.16497802734375
+        ],
+        "record": "ZJ2024-Q65"
+      }
+    ],
+    "code_hd": {
+      "path": "images/code_hd/1142.png",
+      "svg_path": "images/code_hd/1142.svg",
+      "pixel_size": [
+        1082,
+        1200
+      ],
+      "method": "deterministic_multilevel_contour_trace",
+      "comparison_mean_absolute_gray_error": 1.7009,
+      "notice": "代码按原图轮廓和灰度描摹；不恢复原图未提供的细节。原图保留并作为依据。"
+    }
+  },
+  "289": {
+    "id": "289",
+    "path": "images/original/289.png",
+    "original_path": "images/original/289.png",
+    "size": [
+      239,
+      205
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 289,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2024-Q",
+        "page": 12,
+        "bbox": [
+          43.24169921875,
+          327.8287658691406,
+          176.0554962158203,
+          441.4926452636719
+        ],
+        "record": "ZJ2024-Q67"
+      }
+    ],
+    "code_hd": {
+      "path": "images/code_hd/289.png",
+      "svg_path": "images/code_hd/289.svg",
+      "pixel_size": [
+        1200,
+        1030
+      ],
+      "method": "deterministic_multilevel_contour_trace",
+      "comparison_mean_absolute_gray_error": 0.9527,
+      "notice": "代码按原图轮廓和灰度描摹；不恢复原图未提供的细节。原图保留并作为依据。"
+    }
+  },
+  "429": {
+    "id": "429",
+    "path": "images/original/429.png",
+    "original_path": "images/original/429.png",
+    "size": [
+      600,
+      266
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 429,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2024-Q",
+        "page": 13,
+        "bbox": [
+          43.24169921875,
+          90.0,
+          376.82049560546875,
+          237.63951110839844
+        ],
+        "record": "ZJ2024-Q71"
+      }
+    ]
+  },
+  "306": {
+    "id": "306",
+    "path": "images/original/306.png",
+    "original_path": "images/original/306.png",
+    "size": [
+      600,
+      276
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 306,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2024-Q",
+        "page": 13,
+        "bbox": [
+          43.24169921875,
+          280.88153076171875,
+          376.82049560546875,
+          434.69842529296875
+        ],
+        "record": "ZJ2024-Q72"
+      }
+    ]
+  },
+  "291": {
+    "id": "291",
+    "path": "images/original/291.png",
+    "original_path": "images/original/291.png",
+    "size": [
+      600,
+      280
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 291,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2024-Q",
+        "page": 13,
+        "bbox": [
+          43.24169921875,
+          477.9403076171875,
+          376.82049560546875,
+          633.6104125976562
+        ],
+        "record": "ZJ2024-Q73"
+      }
+    ]
+  },
+  "880": {
+    "id": "880",
+    "path": "images/original/880.png",
+    "original_path": "images/original/880.png",
+    "size": [
+      648,
+      127
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 880,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2024-Q",
+        "page": 13,
+        "bbox": [
+          43.24169921875,
+          676.8515625,
+          403.38323974609375,
+          747.2737426757812
+        ],
+        "record": "ZJ2024-Q74"
+      }
+    ]
+  },
+  "745": {
+    "id": "745",
+    "path": "images/original/745.png",
+    "original_path": "images/original/745.png",
+    "size": [
+      600,
+      122
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 745,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2024-Q",
+        "page": 14,
+        "bbox": [
+          43.24169921875,
+          106.0612564086914,
+          376.82049560546875,
+          174.0124969482422
+        ],
+        "record": "ZJ2024-Q75"
+      }
+    ]
+  },
+  "1031": {
+    "id": "1031",
+    "path": "images/original/1031.png",
+    "original_path": "images/original/1031.png",
+    "size": [
+      600,
+      130
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1031,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2024-Q",
+        "page": 14,
+        "bbox": [
+          43.24169921875,
+          217.2543487548828,
+          376.82049560546875,
+          289.5297546386719
+        ],
+        "record": "ZJ2024-Q76"
+      }
+    ]
+  },
+  "35": {
+    "id": "35",
+    "path": "images/original/35.png",
+    "original_path": "images/original/35.png",
+    "size": [
+      600,
+      132
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 35,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2024-Q",
+        "page": 14,
+        "bbox": [
+          43.24169921875,
+          332.771240234375,
+          376.82049560546875,
+          406.2821350097656
+        ],
+        "record": "ZJ2024-Q77"
+      }
+    ]
+  },
+  "581": {
+    "id": "581",
+    "path": "images/original/581.png",
+    "original_path": "images/original/581.png",
+    "size": [
+      600,
+      138
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 581,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2024-Q",
+        "page": 14,
+        "bbox": [
+          43.24169921875,
+          449.5237731933594,
+          376.82049560546875,
+          526.1233520507812
+        ],
+        "record": "ZJ2024-Q78"
+      }
+    ]
+  },
+  "1260": {
+    "id": "1260",
+    "path": "images/original/1260.png",
+    "original_path": "images/original/1260.png",
+    "size": [
+      600,
+      164
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1260,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2024-Q",
+        "page": 14,
+        "bbox": [
+          43.24169921875,
+          569.3652954101562,
+          376.82049560546875,
+          660.1728515625
+        ],
+        "record": "ZJ2024-Q79"
+      }
+    ]
+  },
+  "217": {
+    "id": "217",
+    "path": "images/original/217.png",
+    "original_path": "images/original/217.png",
+    "size": [
+      600,
+      368
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 217,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2024-Q",
+        "page": 15,
+        "bbox": [
+          43.24169921875,
+          89.99903869628906,
+          376.82049560546875,
+          294.4704895019531
+        ],
+        "record": "ZJ2024-Q80"
+      }
+    ]
+  },
+  "90-1": {
+    "id": "90-1",
+    "path": "images/original/90-1.png",
+    "original_path": "images/original/90-1.png",
+    "size": [
+      389,
+      178
+    ],
+    "method": "source_image_crop",
+    "source_image_id": 90,
+    "crop": [
+      0.07,
+      0.195,
+      0.52,
+      0.53
+    ],
+    "sources": [
+      {
+        "doc": "ZJ2024-A",
+        "page": 21,
+        "bbox": [
+          90.0,
+          368.760009765625,
+          417.4800109863281,
+          569.8800048828125
+        ],
+        "record": "ZJ2024-A67"
+      }
+    ]
+  },
+  "90-2": {
+    "id": "90-2",
+    "path": "images/original/90-2.png",
+    "original_path": "images/original/90-2.png",
+    "size": [
+      579,
+      186
+    ],
+    "method": "source_image_crop",
+    "source_image_id": 90,
+    "crop": [
+      0.07,
+      0.65,
+      0.74,
+      1
+    ],
+    "sources": [
+      {
+        "doc": "ZJ2024-A",
+        "page": 21,
+        "bbox": [
+          90.0,
+          368.760009765625,
+          417.4800109863281,
+          569.8800048828125
+        ],
+        "record": "ZJ2024-A67"
+      }
+    ]
+  },
+  "755-1": {
+    "id": "755-1",
+    "path": "images/original/755-1.png",
+    "original_path": "images/original/755-1.png",
+    "size": [
+      364,
+      183
+    ],
+    "method": "source_image_crop",
+    "source_image_id": 755,
+    "crop": [
+      0.09,
+      0.22,
+      0.51,
+      0.79
+    ],
+    "sources": [
+      {
+        "doc": "ZJ2024-A",
+        "page": 21,
+        "bbox": [
+          90.0,
+          578.0399780273438,
+          515.1600341796875,
+          735.5999755859375
+        ],
+        "record": "ZJ2024-A67"
+      }
+    ]
+  },
+  "737-1": {
+    "id": "737-1",
+    "path": "images/original/737-1.png",
+    "original_path": "images/original/737-1.png",
+    "size": [
+      304,
+      308
+    ],
+    "method": "source_image_crop",
+    "source_image_id": 737,
+    "crop": [
+      0.08,
+      0.39,
+      0.42,
+      0.93
+    ],
+    "sources": [
+      {
+        "doc": "ZJ2024-A",
+        "page": 22,
+        "bbox": [
+          90.0,
+          79.44000244140625,
+          504.8399963378906,
+          345.0
+        ],
+        "record": "ZJ2024-A68"
+      }
+    ]
+  },
+  "195-1": {
+    "id": "195-1",
+    "path": "images/original/195-1.png",
+    "original_path": "images/original/195-1.png",
+    "size": [
+      684,
+      136
+    ],
+    "method": "source_image_crop",
+    "source_image_id": 195,
+    "crop": [
+      0.07,
+      0.45,
+      0.86,
+      0.9
+    ],
+    "sources": [
+      {
+        "doc": "ZJ2024-A",
+        "page": 24,
+        "bbox": [
+          90.0,
+          326.6400146484375,
+          505.0799865722656,
+          470.8800048828125
+        ],
+        "record": "ZJ2024-A74"
+      }
+    ]
+  },
+  "226-1": {
+    "id": "226-1",
+    "path": "images/original/226-1.png",
+    "original_path": "images/original/226-1.png",
+    "size": [
+      628,
+      150
+    ],
+    "method": "source_image_crop",
+    "source_image_id": 226,
+    "crop": [
+      0.08,
+      0.08,
+      0.8,
+      0.39
+    ],
+    "sources": [
+      {
+        "doc": "ZJ2024-A",
+        "page": 25,
+        "bbox": [
+          90.0,
+          150.95999145507812,
+          505.32000732421875,
+          381.9599914550781
+        ],
+        "record": "ZJ2024-A79"
+      }
+    ]
+  },
+  "226-2": {
+    "id": "226-2",
+    "path": "images/original/226-2.png",
+    "original_path": "images/original/226-2.png",
+    "size": [
+      637,
+      160
+    ],
+    "method": "source_image_crop",
+    "source_image_id": 226,
+    "crop": [
+      0.07,
+      0.67,
+      0.8,
+      1
+    ],
+    "sources": [
+      {
+        "doc": "ZJ2024-A",
+        "page": 25,
+        "bbox": [
+          90.0,
+          150.95999145507812,
+          505.32000732421875,
+          381.9599914550781
+        ],
+        "record": "ZJ2024-A79"
+      }
+    ]
+  },
+  "1066-1": {
+    "id": "1066-1",
+    "path": "images/original/1066-1.png",
+    "original_path": "images/original/1066-1.png",
+    "size": [
+      597,
+      149
+    ],
+    "method": "source_image_crop",
+    "source_image_id": 1066,
+    "crop": [
+      0.09,
+      0.48,
+      0.79,
+      0.9
+    ],
+    "sources": [
+      {
+        "doc": "ZJ2024-A",
+        "page": 25,
+        "bbox": [
+          90.0,
+          391.5600280761719,
+          505.20001220703125,
+          563.4000244140625
+        ],
+        "record": "ZJ2024-A79"
+      }
+    ]
+  },
+  "355-1": {
+    "id": "355-1",
+    "path": "images/original/355-1.png",
+    "original_path": "images/original/355-1.png",
+    "size": [
+      573,
+      348
+    ],
+    "method": "source_image_crop",
+    "source_image_id": 355,
+    "crop": [
+      0.11,
+      0.08,
+      0.83,
+      0.9
+    ],
+    "sources": [
+      {
+        "doc": "ZJ2024-A",
+        "page": 25,
+        "bbox": [
+          102.0,
+          592.4400024414062,
+          429.3599853515625,
+          766.7999877929688
+        ],
+        "record": "ZJ2024-A80"
+      }
+    ]
+  },
+  "252": {
+    "id": "252",
+    "path": "images/original/252.png",
+    "original_path": "images/original/252.png",
+    "size": [
+      700,
+      236
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 252,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2025-Q",
+        "page": 12,
+        "bbox": [
+          43.20540237426758,
+          388.11798095703125,
+          432.0544128417969,
+          518.968994140625
+        ],
+        "record": "JS2025-Q59"
+      }
+    ]
+  },
+  "798": {
+    "id": "798",
+    "path": "images/original/798.png",
+    "original_path": "images/original/798.png",
+    "size": [
+      278,
+      234
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 798,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2025-Q",
+        "page": 13,
+        "bbox": [
+          43.20540237426758,
+          576.9879150390625,
+          197.51040649414062,
+          707.220947265625
+        ],
+        "record": "JS2025-Q70"
+      }
+    ],
+    "code_hd": {
+      "path": "images/code_hd/798.png",
+      "svg_path": "images/code_hd/798.svg",
+      "pixel_size": [
+        1200,
+        1011
+      ],
+      "method": "deterministic_multilevel_contour_trace",
+      "comparison_mean_absolute_gray_error": 2.6412,
+      "notice": "代码按原图轮廓和灰度描摹；不恢复原图未提供的细节。原图保留并作为依据。"
+    }
+  },
+  "470": {
+    "id": "470",
+    "path": "images/original/470.png",
+    "original_path": "images/original/470.png",
+    "size": [
+      600,
+      274
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 470,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2025-Q",
+        "page": 14,
+        "bbox": [
+          43.20540237426758,
+          506.00799560546875,
+          376.5044250488281,
+          658.4609985351562
+        ],
+        "record": "JS2025-Q81"
+      }
+    ]
+  },
+  "923": {
+    "id": "923",
+    "path": "images/original/923.png",
+    "original_path": "images/original/923.png",
+    "size": [
+      600,
+      274
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 923,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2025-Q",
+        "page": 15,
+        "bbox": [
+          43.20540237426758,
+          89.99993896484375,
+          376.5044250488281,
+          242.45294189453125
+        ],
+        "record": "JS2025-Q82"
+      }
+    ]
+  },
+  "937": {
+    "id": "937",
+    "path": "images/original/937.png",
+    "original_path": "images/original/937.png",
+    "size": [
+      600,
+      277
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 937,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2025-Q",
+        "page": 15,
+        "bbox": [
+          43.20540237426758,
+          280.10296630859375,
+          376.5044250488281,
+          433.79095458984375
+        ],
+        "record": "JS2025-Q83"
+      }
+    ]
+  },
+  "361": {
+    "id": "361",
+    "path": "images/original/361.png",
+    "original_path": "images/original/361.png",
+    "size": [
+      600,
+      275
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 361,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2025-Q",
+        "page": 15,
+        "bbox": [
+          43.20540237426758,
+          471.4429931640625,
+          376.5044250488281,
+          623.89599609375
+        ],
+        "record": "JS2025-Q84"
+      }
+    ]
+  },
+  "1012": {
+    "id": "1012",
+    "path": "images/original/1012.png",
+    "original_path": "images/original/1012.png",
+    "size": [
+      400,
+      459
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1012,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2025-Q",
+        "page": 16,
+        "bbox": [
+          43.20540237426758,
+          90.00100708007812,
+          265.4044189453125,
+          344.9129943847656
+        ],
+        "record": "JS2025-Q85"
+      }
+    ]
+  },
+  "288": {
+    "id": "288",
+    "path": "images/original/288.png",
+    "original_path": "images/original/288.png",
+    "size": [
+      600,
+      132
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 288,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2025-Q",
+        "page": 16,
+        "bbox": [
+          43.20540237426758,
+          382.56280517578125,
+          376.5044250488281,
+          456.01202392578125
+        ],
+        "record": "JS2025-Q86"
+      }
+    ]
+  },
+  "221": {
+    "id": "221",
+    "path": "images/original/221.png",
+    "original_path": "images/original/221.png",
+    "size": [
+      500,
+      317
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 221,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2025-Q",
+        "page": 16,
+        "bbox": [
+          43.20540237426758,
+          509.7099914550781,
+          320.9544372558594,
+          685.6179809570312
+        ],
+        "record": "JS2025-Q87"
+      }
+    ]
+  },
+  "1313": {
+    "id": "1313",
+    "path": "images/original/1313.png",
+    "original_path": "images/original/1313.png",
+    "size": [
+      600,
+      154
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1313,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2025-Q",
+        "page": 17,
+        "bbox": [
+          43.20540237426758,
+          90.00041198730469,
+          376.5044250488281,
+          175.79400634765625
+        ],
+        "record": "JS2025-Q88"
+      }
+    ]
+  },
+  "1325": {
+    "id": "1325",
+    "path": "images/original/1325.png",
+    "original_path": "images/original/1325.png",
+    "size": [
+      600,
+      146
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1325,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2025-Q",
+        "page": 17,
+        "bbox": [
+          43.20540237426758,
+          213.44418334960938,
+          376.5044250488281,
+          294.29998779296875
+        ],
+        "record": "JS2025-Q89"
+      }
+    ]
+  },
+  "259": {
+    "id": "259",
+    "path": "images/original/259.png",
+    "original_path": "images/original/259.png",
+    "size": [
+      501,
+      166
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 259,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2025-Q",
+        "page": 17,
+        "bbox": [
+          43.20540237426758,
+          347.9981994628906,
+          321.5714111328125,
+          439.9639892578125
+        ],
+        "record": "JS2025-Q90"
+      }
+    ]
+  },
+  "579": {
+    "id": "579",
+    "path": "images/original/579.png",
+    "original_path": "images/original/579.png",
+    "size": [
+      430,
+      378
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 579,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2025-Q",
+        "page": 19,
+        "bbox": [
+          43.20540237426758,
+          90.00094604492188,
+          282.06939697265625,
+          299.85595703125
+        ],
+        "record": "JS2025-Q96"
+      }
+    ]
+  },
+  "1059-1": {
+    "id": "1059-1",
+    "path": "images/original/1059-1.png",
+    "original_path": "images/original/1059-1.png",
+    "size": [
+      436,
+      351
+    ],
+    "method": "source_image_crop",
+    "source_image_id": 1059,
+    "crop": [
+      0.01,
+      0.06,
+      0.32,
+      0.65
+    ],
+    "sources": [
+      {
+        "doc": "JS2025-A",
+        "page": 29,
+        "bbox": [
+          36.0,
+          381.96002197265625,
+          593.760009765625,
+          625.2000122070312
+        ],
+        "record": "JS2025-A57"
+      }
+    ]
+  },
+  "1322-1": {
+    "id": "1322-1",
+    "path": "images/original/1322-1.png",
+    "original_path": "images/original/1322-1.png",
+    "size": [
+      624,
+      269
+    ],
+    "method": "source_image_crop",
+    "source_image_id": 1322,
+    "crop": [
+      0.01,
+      0.28,
+      0.44,
+      0.88
+    ],
+    "sources": [
+      {
+        "doc": "JS2025-A",
+        "page": 30,
+        "bbox": [
+          36.0,
+          116.63999938964844,
+          589.6799926757812,
+          297.8399963378906
+        ],
+        "record": "JS2025-A59"
+      }
+    ]
+  },
+  "1222-1": {
+    "id": "1222-1",
+    "path": "images/original/1222-1.png",
+    "original_path": "images/original/1222-1.png",
+    "size": [
+      426,
+      256
+    ],
+    "method": "source_image_crop",
+    "source_image_id": 1222,
+    "crop": [
+      0.01,
+      0.02,
+      0.3,
+      0.52
+    ],
+    "sources": [
+      {
+        "doc": "JS2025-A",
+        "page": 31,
+        "bbox": [
+          36.0,
+          275.760009765625,
+          591.9600219726562,
+          481.9200134277344
+        ],
+        "record": "JS2025-A65"
+      }
+    ]
+  },
+  "906-1": {
+    "id": "906-1",
+    "path": "images/original/906-1.png",
+    "original_path": "images/original/906-1.png",
+    "size": [
+      161,
+      101
+    ],
+    "method": "source_image_crop",
+    "source_image_id": 906,
+    "crop": [
+      0.01,
+      0.18,
+      0.17,
+      0.74
+    ],
+    "sources": [
+      {
+        "doc": "JS2025-A",
+        "page": 41,
+        "bbox": [
+          36.0,
+          305.2799987792969,
+          539.0400390625,
+          395.760009765625
+        ],
+        "record": "JS2025-A86"
+      }
+    ],
+    "code_hd": {
+      "path": "images/code_hd/906-1.png",
+      "svg_path": "images/code_hd/906-1.svg",
+      "pixel_size": [
+        1200,
+        753
+      ],
+      "method": "deterministic_multilevel_contour_trace",
+      "comparison_mean_absolute_gray_error": 7.2655,
+      "notice": "代码按原图轮廓和灰度描摹；不恢复原图未提供的细节。原图保留并作为依据。"
+    }
+  },
+  "522": {
+    "id": "522",
+    "path": "images/original/522.png",
+    "original_path": "images/original/522.png",
+    "size": [
+      500,
+      320
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 522,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2025-A",
+        "page": 41,
+        "bbox": [
+          36.0,
+          461.8799743652344,
+          224.39999389648438,
+          582.47998046875
+        ],
+        "record": "JS2025-A87"
+      }
+    ]
+  },
+  "14": {
+    "id": "14",
+    "path": "images/original/14.png",
+    "original_path": "images/original/14.png",
+    "size": [
+      600,
+      148
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 14,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2025-A",
+        "page": 42,
+        "bbox": [
+          36.0,
+          91.08000183105469,
+          486.0,
+          202.0800018310547
+        ],
+        "record": "JS2025-A88"
+      }
+    ]
+  },
+  "82": {
+    "id": "82",
+    "path": "images/original/82.png",
+    "original_path": "images/original/82.png",
+    "size": [
+      600,
+      152
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 82,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2025-A",
+        "page": 42,
+        "bbox": [
+          36.0,
+          276.8399963378906,
+          486.0,
+          390.8399963378906
+        ],
+        "record": "JS2025-A88"
+      }
+    ]
+  },
+  "810": {
+    "id": "810",
+    "path": "images/original/810.png",
+    "original_path": "images/original/810.png",
+    "size": [
+      600,
+      153
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 810,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2025-A",
+        "page": 42,
+        "bbox": [
+          36.0,
+          463.5600280761719,
+          486.0,
+          578.280029296875
+        ],
+        "record": "JS2025-A88"
+      }
+    ]
+  },
+  "167": {
+    "id": "167",
+    "path": "images/original/167.png",
+    "original_path": "images/original/167.png",
+    "size": [
+      600,
+      153
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 167,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2025-A",
+        "page": 43,
+        "bbox": [
+          36.0,
+          40.91999816894531,
+          486.0,
+          155.63999938964844
+        ],
+        "record": "JS2025-A88"
+      }
+    ]
+  },
+  "1080": {
+    "id": "1080",
+    "path": "images/original/1080.png",
+    "original_path": "images/original/1080.png",
+    "size": [
+      600,
+      147
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1080,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2025-A",
+        "page": 43,
+        "bbox": [
+          36.0,
+          310.9200134277344,
+          486.0,
+          421.20001220703125
+        ],
+        "record": "JS2025-A89"
+      }
+    ]
+  },
+  "532-1": {
+    "id": "532-1",
+    "path": "images/original/532-1.png",
+    "original_path": "images/original/532-1.png",
+    "size": [
+      444,
+      149
+    ],
+    "method": "source_image_crop",
+    "source_image_id": 532,
+    "crop": [
+      0,
+      0,
+      1,
+      0.84
+    ],
+    "sources": [
+      {
+        "doc": "JS2025-A",
+        "page": 44,
+        "bbox": [
+          36.0,
+          87.3600082397461,
+          274.20001220703125,
+          187.32000732421875
+        ],
+        "record": "JS2025-A90"
+      }
+    ]
+  },
+  "978": {
+    "id": "978",
+    "path": "images/original/978.png",
+    "original_path": "images/original/978.png",
+    "size": [
+      430,
+      376
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 978,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2025-A",
+        "page": 48,
+        "bbox": [
+          36.0,
+          43.20001220703125,
+          358.55999755859375,
+          325.20001220703125
+        ],
+        "record": "JS2025-A96"
+      }
+    ]
+  },
+  "672": {
+    "id": "672",
+    "path": "images/original/672.png",
+    "original_path": "images/original/672.png",
+    "size": [
+      235,
+      193
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 672,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2025-Q",
+        "page": 12,
+        "bbox": [
+          53.12551498413086,
+          473.6156005859375,
+          183.46835327148438,
+          581.1021118164062
+        ],
+        "record": "ZJ2025-Q58"
+      }
+    ]
+  },
+  "83": {
+    "id": "83",
+    "path": "images/original/83.png",
+    "original_path": "images/original/83.png",
+    "size": [
+      231,
+      190
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 83,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2025-Q",
+        "page": 12,
+        "bbox": [
+          52.50777816772461,
+          586.0433959960938,
+          180.9973907470703,
+          691.6766967773438
+        ],
+        "record": "ZJ2025-Q58"
+      }
+    ]
+  },
+  "573": {
+    "id": "573",
+    "path": "images/original/573.png",
+    "original_path": "images/original/573.png",
+    "size": [
+      230,
+      189
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 573,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2025-Q",
+        "page": 13,
+        "bbox": [
+          52.50777816772461,
+          89.99998474121094,
+          180.37965393066406,
+          195.0155487060547
+        ],
+        "record": "ZJ2025-Q58"
+      }
+    ]
+  },
+  "654": {
+    "id": "654",
+    "path": "images/original/654.png",
+    "original_path": "images/original/654.png",
+    "size": [
+      234,
+      192
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 654,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2025-Q",
+        "page": 13,
+        "bbox": [
+          53.12551498413086,
+          199.95751953125,
+          182.85061645507812,
+          306.8262939453125
+        ],
+        "record": "ZJ2025-Q58"
+      }
+    ]
+  },
+  "233": {
+    "id": "233",
+    "path": "images/original/233.png",
+    "original_path": "images/original/233.png",
+    "size": [
+      232,
+      197
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 233,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2025-Q",
+        "page": 14,
+        "bbox": [
+          43.24169921875,
+          179.57156372070312,
+          172.3490753173828,
+          288.9112854003906
+        ],
+        "record": "ZJ2025-Q66"
+      }
+    ],
+    "code_hd": {
+      "path": "images/code_hd/233.png",
+      "svg_path": "images/code_hd/233.svg",
+      "pixel_size": [
+        1200,
+        1019
+      ],
+      "method": "deterministic_multilevel_contour_trace",
+      "comparison_mean_absolute_gray_error": 1.7577,
+      "notice": "代码按原图轮廓和灰度描摹；不恢复原图未提供的细节。原图保留并作为依据。"
+    }
+  },
+  "455": {
+    "id": "455",
+    "path": "images/original/455.png",
+    "original_path": "images/original/455.png",
+    "size": [
+      298,
+      258
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 455,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2025-Q",
+        "page": 14,
+        "bbox": [
+          43.24169921875,
+          549.59716796875,
+          208.79562377929688,
+          692.9124755859375
+        ],
+        "record": "ZJ2025-Q69"
+      }
+    ]
+  },
+  "1184": {
+    "id": "1184",
+    "path": "images/original/1184.png",
+    "original_path": "images/original/1184.png",
+    "size": [
+      600,
+      277
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1184,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2025-Q",
+        "page": 15,
+        "bbox": [
+          43.24169921875,
+          253.08282470703125,
+          376.82049560546875,
+          406.89971923828125
+        ],
+        "record": "ZJ2025-Q71"
+      }
+    ]
+  },
+  "425": {
+    "id": "425",
+    "path": "images/original/425.png",
+    "original_path": "images/original/425.png",
+    "size": [
+      600,
+      289
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 425,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2025-Q",
+        "page": 15,
+        "bbox": [
+          43.24169921875,
+          450.1405944824219,
+          376.82049560546875,
+          610.7526245117188
+        ],
+        "record": "ZJ2025-Q72"
+      }
+    ]
+  },
+  "152": {
+    "id": "152",
+    "path": "images/original/152.png",
+    "original_path": "images/original/152.png",
+    "size": [
+      600,
+      267
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 152,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2025-Q",
+        "page": 16,
+        "bbox": [
+          43.24169921875,
+          89.99998474121094,
+          376.82049560546875,
+          238.2572479248047
+        ],
+        "record": "ZJ2025-Q73"
+      }
+    ]
+  },
+  "1194": {
+    "id": "1194",
+    "path": "images/original/1194.png",
+    "original_path": "images/original/1194.png",
+    "size": [
+      400,
+      475
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1194,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2025-Q",
+        "page": 16,
+        "bbox": [
+          43.24169921875,
+          281.4993896484375,
+          265.6275634765625,
+          545.8914794921875
+        ],
+        "record": "ZJ2025-Q74"
+      }
+    ]
+  },
+  "38": {
+    "id": "38",
+    "path": "images/original/38.png",
+    "original_path": "images/original/38.png",
+    "size": [
+      428,
+      510
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 38,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2025-Q",
+        "page": 17,
+        "bbox": [
+          43.24169921875,
+          90.00094604492188,
+          281.071044921875,
+          373.54290771484375
+        ],
+        "record": "ZJ2025-Q75"
+      }
+    ]
+  },
+  "279": {
+    "id": "279",
+    "path": "images/original/279.png",
+    "original_path": "images/original/279.png",
+    "size": [
+      600,
+      144
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 279,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2025-Q",
+        "page": 17,
+        "bbox": [
+          43.24169921875,
+          416.78436279296875,
+          376.82049560546875,
+          497.09039306640625
+        ],
+        "record": "ZJ2025-Q76"
+      }
+    ]
+  },
+  "1213": {
+    "id": "1213",
+    "path": "images/original/1213.png",
+    "original_path": "images/original/1213.png",
+    "size": [
+      500,
+      389
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1213,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2025-Q",
+        "page": 17,
+        "bbox": [
+          43.24169921875,
+          540.3318481445312,
+          321.2240295410156,
+          756.5403442382812
+        ],
+        "record": "ZJ2025-Q77"
+      }
+    ]
+  },
+  "739": {
+    "id": "739",
+    "path": "images/original/739.png",
+    "original_path": "images/original/739.png",
+    "size": [
+      500,
+      236
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 739,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2025-Q",
+        "page": 18,
+        "bbox": [
+          43.24169921875,
+          106.06124877929688,
+          321.2240295410156,
+          237.0218048095703
+        ],
+        "record": "ZJ2025-Q78"
+      }
+    ]
+  },
+  "1025": {
+    "id": "1025",
+    "path": "images/original/1025.png",
+    "original_path": "images/original/1025.png",
+    "size": [
+      600,
+      166
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1025,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2025-Q",
+        "page": 18,
+        "bbox": [
+          43.24169921875,
+          280.26373291015625,
+          376.82049560546875,
+          372.92449951171875
+        ],
+        "record": "ZJ2025-Q79"
+      }
+    ]
+  },
+  "1269": {
+    "id": "1269",
+    "path": "images/original/1269.png",
+    "original_path": "images/original/1269.png",
+    "size": [
+      600,
+      163
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1269,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2025-Q",
+        "page": 18,
+        "bbox": [
+          43.24169921875,
+          416.16656494140625,
+          376.82049560546875,
+          506.35638427734375
+        ],
+        "record": "ZJ2025-Q80"
+      }
+    ]
+  },
+  "864": {
+    "id": "864",
+    "path": "images/original/864.png",
+    "original_path": "images/original/864.png",
+    "size": [
+      305,
+      262
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 864,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2025-A",
+        "page": 29,
+        "bbox": [
+          90.0,
+          514.9199829101562,
+          318.7200012207031,
+          711.47998046875
+        ],
+        "record": "ZJ2025-A69"
+      }
+    ]
+  },
+  "723": {
+    "id": "723",
+    "path": "images/original/723.png",
+    "original_path": "images/original/723.png",
+    "size": [
+      500,
+      144
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 723,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2025-A",
+        "page": 32,
+        "bbox": [
+          90.0,
+          72.60000610351562,
+          465.0,
+          180.60000610351562
+        ],
+        "record": "ZJ2025-A78"
+      }
+    ]
+  },
+  "1149": {
+    "id": "1149",
+    "path": "images/original/1149.png",
+    "original_path": "images/original/1149.png",
+    "size": [
+      500,
+      162
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1149,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2025-A",
+        "page": 32,
+        "bbox": [
+          90.0,
+          310.55999755859375,
+          465.0,
+          432.1199951171875
+        ],
+        "record": "ZJ2025-A78"
+      }
+    ]
+  },
+  "1238": {
+    "id": "1238",
+    "path": "images/original/1238.png",
+    "original_path": "images/original/1238.png",
+    "size": [
+      500,
+      178
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1238,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2025-A",
+        "page": 32,
+        "bbox": [
+          90.0,
+          485.15997314453125,
+          465.0,
+          618.719970703125
+        ],
+        "record": "ZJ2025-A78"
+      }
+    ]
+  },
+  "182": {
+    "id": "182",
+    "path": "images/original/182.png",
+    "original_path": "images/original/182.png",
+    "size": [
+      249,
+      190
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 182,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2025-A",
+        "page": 33,
+        "bbox": [
+          90.0,
+          78.47999572753906,
+          276.7200012207031,
+          221.0399932861328
+        ],
+        "record": "ZJ2025-A79"
+      }
+    ]
+  },
+  "1134": {
+    "id": "1134",
+    "path": "images/original/1134.png",
+    "original_path": "images/original/1134.png",
+    "size": [
+      263,
+      203
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1134,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2025-A",
+        "page": 33,
+        "bbox": [
+          90.0,
+          245.51998901367188,
+          287.2799987792969,
+          397.79998779296875
+        ],
+        "record": "ZJ2025-A79"
+      }
+    ]
+  },
+  "941": {
+    "id": "941",
+    "path": "images/original/941.png",
+    "original_path": "images/original/941.png",
+    "size": [
+      289,
+      152
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 941,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2025-A",
+        "page": 33,
+        "bbox": [
+          90.0,
+          421.44000244140625,
+          306.7200012207031,
+          535.4400024414062
+        ],
+        "record": "ZJ2025-A79"
+      }
+    ]
+  },
+  "528": {
+    "id": "528",
+    "path": "images/original/528.png",
+    "original_path": "images/original/528.png",
+    "size": [
+      324,
+      163
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 528,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2025-A",
+        "page": 33,
+        "bbox": [
+          90.0,
+          573.719970703125,
+          333.0,
+          696.0
+        ],
+        "record": "ZJ2025-A79"
+      }
+    ]
+  },
+  "1054": {
+    "id": "1054",
+    "path": "images/original/1054.png",
+    "original_path": "images/original/1054.png",
+    "size": [
+      600,
+      169
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1054,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2025-A",
+        "page": 34,
+        "bbox": [
+          90.0,
+          315.4800109863281,
+          540.0,
+          442.20001220703125
+        ],
+        "record": "ZJ2025-A80"
+      }
+    ]
+  },
+  "439": {
+    "id": "439",
+    "path": "images/original/439.png",
+    "original_path": "images/original/439.png",
+    "size": [
+      260,
+      153
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 439,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2026-Q",
+        "page": 12,
+        "bbox": [
+          43.24169921875,
+          434.6981201171875,
+          187.79251098632812,
+          519.946044921875
+        ],
+        "record": "ZJ2026-Q59"
+      }
+    ],
+    "code_hd": {
+      "path": "images/code_hd/439.png",
+      "svg_path": "images/code_hd/439.svg",
+      "pixel_size": [
+        1200,
+        707
+      ],
+      "method": "deterministic_multilevel_contour_trace",
+      "comparison_mean_absolute_gray_error": 1.5754,
+      "notice": "代码按原图轮廓和灰度描摹；不恢复原图未提供的细节。原图保留并作为依据。"
+    }
+  },
+  "541": {
+    "id": "541",
+    "path": "images/original/541.png",
+    "original_path": "images/original/541.png",
+    "size": [
+      600,
+      273
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 541,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2026-Q",
+        "page": 13,
+        "bbox": [
+          43.24169921875,
+          544.6556396484375,
+          376.82049560546875,
+          696.6193237304688
+        ],
+        "record": "ZJ2026-Q66"
+      }
+    ]
+  },
+  "487": {
+    "id": "487",
+    "path": "images/original/487.png",
+    "original_path": "images/original/487.png",
+    "size": [
+      600,
+      279
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 487,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2026-Q",
+        "page": 14,
+        "bbox": [
+          43.24169921875,
+          90.0,
+          376.82049560546875,
+          245.0523681640625
+        ],
+        "record": "ZJ2026-Q67"
+      }
+    ]
+  },
+  "203": {
+    "id": "203",
+    "path": "images/original/203.png",
+    "original_path": "images/original/203.png",
+    "size": [
+      600,
+      275
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 203,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2026-Q",
+        "page": 14,
+        "bbox": [
+          43.24169921875,
+          288.2934265136719,
+          376.82049560546875,
+          441.4925842285156
+        ],
+        "record": "ZJ2026-Q68"
+      }
+    ]
+  },
+  "512": {
+    "id": "512",
+    "path": "images/original/512.png",
+    "original_path": "images/original/512.png",
+    "size": [
+      600,
+      247
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 512,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2026-Q",
+        "page": 14,
+        "bbox": [
+          43.24169921875,
+          484.734375,
+          376.82049560546875,
+          621.872314453125
+        ],
+        "record": "ZJ2026-Q69"
+      }
+    ]
+  },
+  "868": {
+    "id": "868",
+    "path": "images/original/868.png",
+    "original_path": "images/original/868.png",
+    "size": [
+      400,
+      466
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 868,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2026-Q",
+        "page": 15,
+        "bbox": [
+          43.24169921875,
+          89.99905395507812,
+          265.6275634765625,
+          348.8315124511719
+        ],
+        "record": "ZJ2026-Q70"
+      }
+    ]
+  },
+  "471": {
+    "id": "471",
+    "path": "images/original/471.png",
+    "original_path": "images/original/471.png",
+    "size": [
+      481,
+      384
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 471,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2026-Q",
+        "page": 15,
+        "bbox": [
+          43.24169921875,
+          392.07379150390625,
+          310.72247314453125,
+          605.8113403320312
+        ],
+        "record": "ZJ2026-Q71"
+      }
+    ]
+  },
+  "266": {
+    "id": "266",
+    "path": "images/original/266.png",
+    "original_path": "images/original/266.png",
+    "size": [
+      610,
+      290
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 266,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2026-Q",
+        "page": 16,
+        "bbox": [
+          43.24169921875,
+          90.0,
+          382.3801574707031,
+          251.22975158691406
+        ],
+        "record": "ZJ2026-Q72"
+      }
+    ]
+  },
+  "1162": {
+    "id": "1162",
+    "path": "images/original/1162.png",
+    "original_path": "images/original/1162.png",
+    "size": [
+      500,
+      393
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1162,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2026-Q",
+        "page": 16,
+        "bbox": [
+          43.24169921875,
+          294.4715576171875,
+          321.2240295410156,
+          513.1510009765625
+        ],
+        "record": "ZJ2026-Q73"
+      }
+    ]
+  },
+  "835": {
+    "id": "835",
+    "path": "images/original/835.png",
+    "original_path": "images/original/835.png",
+    "size": [
+      600,
+      150
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 835,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2026-Q",
+        "page": 16,
+        "bbox": [
+          43.24169921875,
+          556.3922119140625,
+          376.82049560546875,
+          639.7869262695312
+        ],
+        "record": "ZJ2026-Q74"
+      }
+    ]
+  },
+  "1101": {
+    "id": "1101",
+    "path": "images/original/1101.png",
+    "original_path": "images/original/1101.png",
+    "size": [
+      500,
+      290
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 1101,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "ZJ2026-Q",
+        "page": 17,
+        "bbox": [
+          43.24169921875,
+          90.00093078613281,
+          321.2240295410156,
+          251.23068237304688
+        ],
+        "record": "ZJ2026-Q75"
+      }
+    ]
+  },
+  "318": {
+    "id": "318",
+    "path": "images/original/318.png",
+    "original_path": "images/original/318.png",
+    "size": [
+      300,
+      309
+    ],
+    "method": "source_image_extract",
+    "source_image_id": 318,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2025-Q",
+        "page": 21,
+        "bbox": [
+          64.1908950805664,
+          90.00094604492188,
+          230.83990478515625,
+          261.58795166015625
+        ],
+        "record": "JS2025-M2"
+      }
+    ],
+    "code_hd": {
+      "path": "images/code_hd/318.png",
+      "svg_path": "images/code_hd/318.svg",
+      "pixel_size": [
+        1166,
+        1200
+      ],
+      "method": "deterministic_multilevel_contour_trace",
+      "comparison_mean_absolute_gray_error": 2.0048,
+      "notice": "代码按原图轮廓和灰度描摹；不恢复原图未提供的细节。原图保留并作为依据。"
+    }
+  },
+  "JS2026-70-original": {
+    "id": "JS2026-70-original",
+    "path": "images/original/JS2026-70-original.png",
+    "original_path": "images/original/JS2026-70-original.png",
+    "size": [
+      648,
+      418
+    ],
+    "method": "source_image_extract",
+    "source_image_id": null,
+    "crop": null,
+    "sources": [
+      {
+        "doc": "JS2026-A",
+        "page": 3,
+        "record": "JS2026-Q70"
+      }
+    ]
+  }
+}

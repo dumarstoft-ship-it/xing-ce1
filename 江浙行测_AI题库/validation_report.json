@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "questions": 1215,
+  "answers": 1215,
+  "materials": 18,
+  "papers": 14,
+  "excluded_verbal_image_questions": 3,
+  "missing_question_placeholders": 11,
+  "source_answer_conflicts": 2,
+  "answers_with_choice": 1118
+}
