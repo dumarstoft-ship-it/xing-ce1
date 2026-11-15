@@ -136,7 +136,8 @@
  "detail_doc": "../../../Claude增量复核_v020.md",
  "print": {
   "pdf": "../../../打印版/M03_题本_打印版.pdf",
-  "pages": 29,
-  "body_pages": 27
+  "pages": 28,
+  "body_pages": 26,
+  "layout": "按实考样子顺排，题图按原卷印刷尺寸"
  }
 }

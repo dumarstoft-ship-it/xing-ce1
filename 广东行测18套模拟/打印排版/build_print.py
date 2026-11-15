@@ -328,7 +328,7 @@ class FigureSizer:
             from PIL import Image  # type: ignore
             wpx, hpx = Image.open(REPO / block["path"]).size
             w2 = min(float(adj["print_width_mm"]), self.MAT_W)
-            return w2, w2 * hpx / wpx, f"按可读性调整，原定{w:.1f}mm（{how}）；{adj['reason']}"
+            return w2, w2 * hpx / wpx, f"登记印宽，默认规则为{w:.1f}mm（{how}）；{adj['reason']}"
         return w, h, how
 
     def _size_mm(self, block: dict, in_material: bool = False) -> tuple[float, float, str]:
@@ -360,8 +360,8 @@ class FigureSizer:
 
 
 class SizeAdjust:
-    """题图尺寸调整.json：原印刷尺寸下看不清的题图按可读性另定宽度（只缩放，不改像素）；
-    每条写明理由，只在源图哈希未变时启用。"""
+    """题图尺寸调整.json：没有源印刷尺寸的重建图等，另行登记印宽（只缩放，不改像素）；
+    每条写明依据，只在源图哈希未变时启用。"""
 
     def __init__(self) -> None:
         self.by_id = {}
@@ -1219,6 +1219,10 @@ def main() -> None:
     ap.add_argument("--no-notice", action="store_true", help="不印封面背面的注意事项")
     ap.add_argument("--out", type=Path, default=None, help="输出目录，默认 <套卷>/打印版/")
     ap.add_argument("--keep-html", action="store_true")
+    ap.add_argument("--avoid-page-turns", action="store_true",
+                    help="为阅读方便挪动版面：资料组另起左页、跨过翻页的题整题移页。默认不挪，按实考样子顺排")
+    ap.add_argument("--spread-data-groups", action="store_true",
+                    help="只做资料组另起左页（M01、M02打印版按此生成，用于原样重建）")
     args = ap.parse_args()
 
     paper_dir = PROJECT / args.paper_id
@@ -1251,8 +1255,10 @@ def main() -> None:
         (tdp / "front.html").write_text(front, encoding="utf-8")
 
         layout = render(tdp / "body.html", tdp / "body.pdf")
+        # 默认按实考样子顺排：资料组跨翻页、题目跨页都照常发生，不为阅读方便另行挪动。
+        # --avoid-page-turns 时才做下面两遍（M01、M02打印版生成时用过第二遍）。
         # 第二遍：资料组若跨过翻页（从右页开始、延续到背面），改从下一个左页开始，使材料与题目同在一个对开页
-        for _ in range(3):
+        for _ in range(3 if (args.avoid_page_turns or args.spread_data_groups) else 0):
             moved = spread_pass(tdp / "body.pdf", questions)
             if not moved:
                 break
@@ -1266,7 +1272,7 @@ def main() -> None:
         # 只接受不改变其后各部分起始页的移动，即只用本部分末尾的空白，不连锁推后资料分析等后面的版面。
         base_starts = _part_starts(tdp / "body.pdf", questions)
         tried: set[int] = set()
-        for _ in range(12):
+        for _ in range(12 if args.avoid_page_turns else 0):
             cand = {n: v for n, v in turn_pass(tdp / "body.pdf", questions).items() if n not in tried}
             if not cand:
                 break

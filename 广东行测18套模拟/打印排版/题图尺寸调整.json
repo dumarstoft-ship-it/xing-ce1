@@ -1,23 +1,23 @@
 [
  {
-  "path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s21_p17_i04.png",
-  "source_image_sha256": "cdcbf796d0353544cd8028fdac57e4f53577550858680fd677a3d38ae2733eb3",
-  "used_in": "M03 0.1.0第67题（0.2.0已换用重绘新图，见下条）",
-  "print_width_mm": 70,
-  "reason": "源PDF印刷宽42.5mm时标注A、B、O字高约1.3mm；原图1296像素，印70mm宽仍约470dpi，标注字高约2.1mm"
- },
- {
   "path": "广东行测18套模拟/M03/assets/q67_projectile_v020.png",
   "source_image_sha256": "407663d601a2830702d5cf4a1e86be9be75bba3794ea13c4d64a5fad9c308fac",
   "used_in": "M03 0.2.0第67题",
-  "print_width_mm": 70,
-  "reason": "编辑重绘图，无源PDF印刷尺寸，按200dpi换算会被放到120mm宽、约94mm高；按原卷平抛图的版面印70mm宽，A、B字高约2.1mm、O约2.2mm"
+  "print_width_mm": 42.5,
+  "reason": "编辑按源图坐标重绘，图形范围与源图相同；按源PDF原图的印刷宽度42.5mm印（无源尺寸时默认规则会放到120mm宽）"
  },
  {
   "path": "广东行测18套模拟/M03/assets/q68_particles_v020.png",
   "source_image_sha256": "7bf45f7c4dcb7bb9764ca8353b91c4940a3eeb6ed19ca1b69d325047aee341ae",
   "used_in": "M03 0.2.0第68题",
   "print_width_mm": 130,
-  "reason": "编辑重绘的粒子示意图，无源PDF印刷尺寸；默认上限120mm时氢原子直径约2.4mm，印130mm宽约2.6mm，图例文字约2.6mm高"
+  "reason": "编辑据源表重建，原图未入库、无原印刷尺寸。广东2023县级、乡镇卷微观示意图印宽约147mm，同题库模考同类图约82—115mm，取130mm"
+ },
+ {
+  "path": "广东行测18套模拟/M03/assets/q69_foodweb.png",
+  "source_image_sha256": "b8ec691067ffccac315a50f31d3a0cd187d9ade2a5cae5f9b5464618ab212edd",
+  "used_in": "M03第69题",
+  "print_width_mm": 105,
+  "reason": "编辑据源表重建，原图未入库、无原印刷尺寸。按广东2023县级卷食物网图的印宽（约106mm）印，不用默认规则的120mm"
  }
 ]

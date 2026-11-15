@@ -29,7 +29,7 @@
 重新生成：
 
 ```bash
-python3 广东行测18套模拟/打印排版/build_print.py M02 --font-dir <字体目录>
+python3 广东行测18套模拟/打印排版/build_print.py M02 --font-dir <字体目录> --spread-data-groups
 ```
 
 字体文件不入库、不对外提供。

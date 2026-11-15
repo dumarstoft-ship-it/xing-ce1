@@ -128,37 +128,6 @@ FIGURES = {
         "print_width_mm": 150.0,
         "note": "M02第50题。原图600×194像素，原尺寸印刷时每个面约5.9mm。线稿按原像素做4倍放大后二值化（不手工转录、不改动任何线条），印到150mm宽，每个面约7.5mm。",
     },
-    # ---- M03：原尺寸印刷时细节偏小的低分辨率题图。按原像素4倍放大后印到可读宽度，不手工改动任何线条 ----
-    "1310": {
-        "source": "江浙行测_AI题库/images/original/1310.png",
-        "kind": "upscale", "scale": 4, "print_width_mm": 88.0,
-        "note": "M03第46题。原图595×275像素，源PDF印宽83mm时小圆直径约2.7mm。纯黑白点阵，4倍放大后二值化，印88mm宽。",
-    },
-    "1244": {
-        "source": "江浙行测_AI题库/images/original/1244.png",
-        "kind": "upscale", "scale": 4, "print_width_mm": 112.0,
-        "note": "M03第47题。原图570×311像素，源PDF印宽112mm时蜂窝格距约2.2mm、描边发虚。纯黑白蜂窝，4倍放大后二值化，按原宽112mm印，描边清晰。",
-    },
-    "938": {
-        "source": "江浙行测_AI题库/images/original/938.png",
-        "kind": "upscale", "scale": 4, "print_width_mm": 60.0,
-        "note": "M03第48题。原图485×572像素，源PDF印宽56mm时小圆直径约2.4mm、连接短线约1.2mm。黑白线稿，4倍放大后二值化，印60mm宽。",
-    },
-    "212": {
-        "source": "江浙行测_AI题库/images/original/212.png",
-        "kind": "upscale", "scale": 4, "print_width_mm": 92.0,
-        "note": "M03第49题。原图534×638像素，源PDF印宽70mm时方块棱长约3.2mm，三层柱与后排缺口不易分辨。线稿（浅灰只是线边压缩噪点），4倍放大后二值化，印92mm宽，棱长约4.2mm。",
-    },
-    "352": {
-        "source": "江浙行测_AI题库/images/original/352.png",
-        "kind": "upscale", "scale": 4, "binarize": False, "print_width_mm": 110.0,
-        "note": "M03第50题。原图488×377像素，源PDF印宽96mm。侧面为浅灰（灰度约200），区分前后层要靠它，故只做4倍平滑放大、不二值化，印110mm宽，棱长约6.2mm。",
-    },
-    "s26_p19_i01": {
-        "source": "模考/2026下半年广东卷_16-33季_AI可读/assets/s26_p19_i01.png",
-        "kind": "upscale", "scale": 4, "binarize": False, "print_width_mm": 115.0,
-        "note": "M03第70题。原图500×327像素，源PDF印宽98mm时等高线数字约2.7mm、区域界虚线段约0.6mm。细线和小字较多，二值化会断线，故只做4倍平滑放大、不二值化，印115mm宽。",
-    },
     "s21_p18_i12": {
         "source": "模考/2026下半年广东卷_16-33季_AI可读/assets/s21_p18_i12.png",
         "draw": s21_p18_i12,
