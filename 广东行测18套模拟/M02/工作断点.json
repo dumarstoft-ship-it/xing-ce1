@@ -1,0 +1,11 @@
+{
+  "paper_id":"M02","status":"working_checkpoint_not_complete","source_snapshot":"5800414d9cb40bfcfe66888eb87bb44631eac38f","date":"2026-11-15",
+  "target_count":90,"preserve_M01":true,"external_review":"not_started","printing":"not_started",
+  "data_groups":[
+    {"numbers":[71,72,73,74,75],"material":"gd-mock-2026h2-s16-m3","source_numbers":[81,82,83,84,85],"answers":["B","A","B","B","D"],"edits":"前两问改为网络购物与新型离岸贸易增长量之差、网络购物占跨境资金规模的两期比重差。完整材料保留；按源行缩进恢复概述、稳外贸、稳外资三段。","checks":{"growth_difference_usd100m":230.05347084,"share_delta_percentage_points":0.43046574,"national_trade_increment_rmb_trillion":2.09871837,"offshore_prior_usd100m":130.28764805},"adapted_q71":{"stem":"2024年，广东省网络购物跨境收支的同比增长量，约比新型离岸国际贸易跨境收支的同比增长量多多少亿美元？","options":[180,230,270,310]},"adapted_q72":{"stem":"2024年，广东省网络购物跨境收支占全省跨境资金流动规模的比重，与上年相比约：","options":["上升0.4个百分点","下降0.4个百分点","上升1.0个百分点","上升10.3个百分点"]}},
+    {"numbers":[76,77,78,79,80],"material":"gd-mock-2026h2-s20-m3","source_numbers":[81,82,83,84,85],"answers":["A","C","D","A","B"],"checks":{"six_year_average":10.59289169,"cargo_more_times":1.43461960,"both_share_rise_regions":0},"images_viewed":["s20_p22_i01.png","s20_p22_i02.png","s20_p22_i03.png","s20_p23_i00.png"]},
+    {"numbers":[81,82,83,84,85],"material":"gd-mock-2026h2-s26-m2","source_numbers":[76,77,78,79,80],"answers":["D","C","B","D","A"],"checks":{"five_year_total":57061.5767405,"regions_ratio":45.21043446,"Yunnan_growth_contribution_percent":123.44569876},"images_viewed":["s26_p22_i00.png"]},
+    {"numbers":[86,87,88,89,90],"material":"gd-mock-2026h2-s30-m2","source_numbers":[76,77,78,79,80],"answers":["D","B","A","C","D"],"checks":{"monthly_sales":[373.8,312.6,314.3,390.5],"monthly_finance":[1.5,0.8,8.3,-2.4],"monthly_management":[147.8,127.5,128.1,145.1]},"notes":"财务费用按净额可为负，不把负值擅自改成0。"}
+  ],
+  "limits":["工作断点不是最终题本；逐题解析和可重复构建尚未提交。","模考源库无参考答案，均为编辑独立推导；Claude外部审核未发生。","未将练习材料当成核实后的经济统计报告；按材料给定口径作答。"]
+}
