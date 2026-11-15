@@ -85,6 +85,7 @@ p { margin: 0; }
   font-family: "ZG Latin", "ZG Song";
 }
 .q p { orphans: 2; widows: 2; }
+.q.keep { break-inside: avoid; }
 /* 题干与选项之间允许跨页（同粉笔样卷第15题），但四个选项不拆开、题图不与上一行分开 */
 
 /* 选项：粉笔样卷为9字网格，4列在 0/9/18/27 字处，2列在 0/18 字处 */
@@ -101,7 +102,8 @@ p { margin: 0; }
 .optfig img { display: block; margin-top: 2mm; }
 .opt p + p { margin: 0; }
 
-/* 资料：首行缩进两字 */
+/* 资料：首行缩进两字；第二遍排版可令资料组另起左页 */
+.material.newpage { break-before: page; }
 .material p.mtext { text-indent: 2em; text-align: justify; }
 
 /* ---------- 图 ---------- */
@@ -140,6 +142,7 @@ p { margin: 0; }
 .tbl td { white-space: nowrap; }
 .tbl td.rowhead { text-align: left; white-space: normal; }
 .tbl th { font-family: "ZG LatinB", "ZG Hei"; font-weight: normal; line-height: 13pt; }
+.nobr { white-space: nowrap; }
 .tbl-pair { display: flex; justify-content: space-around; align-items: flex-start; break-inside: avoid; }
 .tbl-pair .tbl { margin: 6pt 0; }
 .tbl-note { font-size: 10.5pt; line-height: 16pt; margin-top: 3pt; text-align: justify; }

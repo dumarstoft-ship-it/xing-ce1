@@ -537,7 +537,7 @@ def table_html(block: dict, number, log: Log, avail: float = TEXT_WIDTH_EM) -> s
     if widths:
         out.append("<colgroup>" + "".join(f'<col style="width:{w:.2f}em">' for w in widths) + "</colgroup>")
     if heads:
-        out.append("<tr>" + "".join(f"<th>{inline_html(h)}</th>" for h in heads) + "</tr>")
+        out.append("<tr>" + "".join(f"<th>{_head_html(h)}</th>" for h in heads) + "</tr>")
     for row in rows:
         cells = []
         for i, c in enumerate(row):
@@ -561,6 +561,13 @@ def table_html(block: dict, number, log: Log, avail: float = TEXT_WIDTH_EM) -> s
             out.append(f'<div class="tbl-note">{inline_html(shown)}</div>')
     out.append("</div>")
     return "".join(out)
+
+
+def _head_html(h: str) -> str:
+    """表头里的单位括号整体不拆行，只在括号前折行（避免“（亿人/次）”）。"""
+    parts = re.split(r"([（(][^）)]*[）)])", h)
+    return "".join(f'<span class="nobr">{inline_html(x)}</span>' if x[:1] in "（(" else inline_html(x)
+                   for x in parts if x)
 
 
 def table_width_em(block: dict, avail: float = TEXT_WIDTH_EM) -> float | None:
@@ -641,14 +648,41 @@ def question_html(q: dict, sizer: FigureSizer, log: Log) -> str:
             idx = max(i for i, s in enumerate(stem_parts) if s.startswith("<p"))
             stem_parts[idx] = stem_parts[idx][:-4] + BRACKET + "</p>"
             log.add(n, "题干", "判断题题末加答题括号", last[-10:], last[-10:] + BRACKET)
-    # 题号挂在第一段左侧
+    # 题号挂在第一段左侧；约6行以内的短题整题不跨页（长题仍可在题干与选项间分页，同粉笔样卷）
     num = f'<span class="num">{n}.</span>'
-    return (f'<div class="q" id="q{n}" data-n="{n}">{num}<div class="stem">' + "".join(stem_parts)
+    keep = " keep" if _estimated_lines(q) <= 6 else ""
+    return (f'<div class="q{keep}" id="q{n}" data-n="{n}">{num}<div class="stem">' + "".join(stem_parts)
             + "</div>" + options_html(q, log, sizer) + "</div>")
 
 
+def _estimated_lines(q: dict) -> float:
+    """估算题目所占行数（每行36字）。含图或表的题不算短题。"""
+    import math
+    if any(b["type"] != "text" for b in q["stem"]):
+        return 99
+    lines = sum(math.ceil(max(1.0, _width(p)) / 36) for b in q["stem"] for p in b["text"].split("\n") if p.strip())
+    if q["question_type"] == "true_false":
+        return lines + 1
+    if q.get("options_mode") == "in_figure" or any(b["type"] != "text" for o in q["options"].values() for b in o):
+        return 99
+    widths = [_width("A." + "".join(b["text"] for b in o)) for o in q["options"].values()]
+    w = max(widths or [0])
+    if w <= 8:
+        lines += 1
+    elif w <= 17:
+        lines += 2
+    else:
+        lines += sum(math.ceil(x / 36) for x in widths)
+    return lines
+
+
+# 第二遍排版时需要另起左页的资料组（见 spread_pass）
+SPREAD_BREAKS: set[str] = set()
+
+
 def material_html(m: dict, log: Log, first_q: int) -> str:
-    out = ['<div class="material">']
+    cls = "material newpage" if m["id"] in SPREAD_BREAKS else "material"
+    out = [f'<div class="{cls}" data-mid="{html.escape(m["id"])}">']
     blocks = m["blocks"]
     i = 0
     while i < len(blocks):
@@ -660,8 +694,9 @@ def material_html(m: dict, log: Log, first_q: int) -> str:
             half = TEXT_WIDTH_EM / 2 - 1.5
             w1 = table_width_em(b, half)
             w2 = table_width_em(nxt, half) if nxt and nxt["type"] == "table" else None
-            # 相邻两张窄表并排（正文格不折行时各能放进半个版心，表头可折行）
-            if w1 and w2:
+            # 相邻两张窄表并排（正文格不折行时各能放进半个版心，表头可折行）；带备注的表需要整行宽，不并排
+            noted = bool((b.get("notes") or "").strip() or (nxt and (nxt.get("notes") or "").strip()))
+            if w1 and w2 and not noted:
                 out.append('<div class="tbl-pair">' + table_html(b, first_q, log, half)
                            + table_html(nxt, first_q, log, half) + "</div>")
                 log.add(first_q, "资料表格", "两张窄表并排", f"{b.get('title')} / {nxt.get('title')}", "")
@@ -927,6 +962,45 @@ def check_pdf(pdf: Path, n_questions: int, front_pages: int) -> dict:
     return {"字体": fonts, "正文页数": total_body, "题号所在PDF页": page_of}
 
 
+def spread_pass(body_pdf: Path, questions: list[dict]) -> dict:
+    """找出跨过翻页的资料组。正文第1页印在纸张正面（右页），奇数页为右页、偶数页为左页；
+    对开页为（偶，奇）。资料从奇数页开始、最后一题落在下一页，即需翻页才能看到题目。"""
+    import pdfplumber  # type: ignore
+    groups: dict[str, dict] = {}
+    prev_section = None
+    for q in questions:
+        for m in q.get("materials") or []:
+            # 部分内第一组资料紧跟部分标题，不能挪走，否则标题页只剩说明
+            first_in_part = q["section"] != prev_section and m["id"] not in groups
+            g = groups.setdefault(m["id"], {"m": m, "last": q["number"], "lead": first_in_part})
+            g["last"] = q["number"]
+        prev_section = q["section"]
+    if not groups:
+        return {}
+    with pdfplumber.open(str(body_pdf)) as doc:
+        pages = [re.sub(r"\s+", "", p.extract_text() or "") for p in doc.pages]
+        qpage = {}
+        for i, page in enumerate(doc.pages, 1):
+            for w in page.extract_words():
+                if w["x0"] < 30 * 72 / 25.4 and re.fullmatch(r"\d{1,3}\.", w["text"]):
+                    qpage.setdefault(int(w["text"][:-1]), i)
+    moved = {}
+    for mid, g in groups.items():
+        if mid in SPREAD_BREAKS or g["lead"]:
+            continue
+        first = next((b for b in g["m"]["blocks"] if b["type"] in ("text", "table")), None)
+        if not first:
+            continue
+        key = re.sub(r"\s+", "", (first.get("text") or first.get("title") or ""))[:14]
+        start = next((i for i, t in enumerate(pages, 1) if key and key in t), None)
+        end = qpage.get(g["last"])
+        # 已在页首的资料组再加分页也挪不动（除非插空白页），不处理
+        at_top = start is not None and pages[start - 1].find(key) < 20
+        if start and end and start % 2 == 1 and end == start + 1 and not at_top:
+            moved[mid] = (start, end)
+    return moved
+
+
 def _expected_segments(q: dict) -> list[str]:
     """按排版时同样的规范化，取出该题应出现在PDF里的文字片段（数学式、填空线处切开）。"""
     quiet = Log()
@@ -1028,6 +1102,17 @@ def main() -> None:
         (tdp / "front.html").write_text(front, encoding="utf-8")
 
         layout = render(tdp / "body.html", tdp / "body.pdf")
+        # 第二遍：资料组若跨过翻页（从右页开始、延续到背面），改从下一个左页开始，使材料与题目同在一个对开页
+        for _ in range(3):
+            moved = spread_pass(tdp / "body.pdf", questions)
+            if not moved:
+                break
+            for mid, (a, b) in moved.items():
+                log.add(None, "资料组", "资料组另起左页，与题目同在一个对开页", f"{mid}：原在正文第{a}—{b}页", "")
+            SPREAD_BREAKS.update(moved)
+            body = body_html(args.paper_id, questions, "exam.css", "fonts.css", Log())
+            (tdp / "body.html").write_text(body, encoding="utf-8")
+            layout = render(tdp / "body.html", tdp / "body.pdf")
         render(tdp / "front.html", tdp / "front.pdf")
 
         from pypdf import PdfWriter  # type: ignore
