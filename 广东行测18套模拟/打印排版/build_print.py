@@ -130,7 +130,7 @@ class Log:
 
 MARKER = re.compile(r"^(（\d+）|\(\d+\)|[①-⑳]|[甲乙丙丁戊己庚辛]：|观众\d+：|[A-D][.．、]|第[一二三四五六七八九十]+[，、：])")
 PROMPT = re.compile(
-    r"^(以下|下列|由此|根据|据此|回答|增加|这段文字|这段话|依次填入|填入|最适合|将以上|上述|结果发现|问：|问:|那么)"
+    r"^(以下|下列|由此|根据|据此|回答|增加|这段文字|这段话|依次填入|填入|最适合|将以上|上述|结果发现|问以下|问下列|问：|问:|那么)"
 )
 SENT_END = tuple("。！？；…”")
 
@@ -140,36 +140,29 @@ def _width(s: str) -> float:
 
 
 def reflow(text: str, number, where: str, log: Log) -> list[str]:
-    """合并源PDF的行末硬换行，保留真实分段（列表、对话、设问行）。"""
-    raw = [ln for ln in text.split("\n")]
-    lines = [ln for ln in raw if ln.strip()]
+    """合并源PDF的行末硬换行，保留真实分段（列表、对话、设问行）。
+
+    只合并“上一行在句中断开”的换行。句末标点后的换行一律保留：误合并会把设问行、
+    分段并进上文，误保留至多多一个短行，所以取保守一侧。底稿已规范化时本函数不改动分段。
+    """
+    lines = [ln for ln in text.split("\n") if ln.strip()]
     if not lines:
         return []
-    wmax = max(_width(ln) for ln in lines)
     paras = [lines[0]]
-    last_raw = lines[0]
     for ln in lines[1:]:
         prev = paras[-1].rstrip()
-        keep = False
-        reason = ""
-        if MARKER.match(ln):
-            keep = True                      # 下一行以列表/对话标记开头
-        elif prev.endswith(("：", ":")):
-            keep = True                      # 上一行以冒号引出下文
-        elif PROMPT.match(ln) and (prev.endswith(SENT_END) or MARKER.match(paras[-1])):
-            keep = True                      # 设问行：接在完整句或列表/对话项之后
-        elif prev.endswith(SENT_END):
-            if MARKER.match(paras[-1]):
-                keep = True                  # 列表项已完结
-            elif wmax >= 20 and _width(last_raw) < 0.8 * wmax:
-                keep = True                  # 上一行为短行，原为段末
+        keep = (
+            bool(MARKER.match(ln))                                  # 下一行以列表/对话标记开头
+            or prev.endswith(("：", ":"))                           # 上一行以冒号引出下文
+            or prev.endswith(SENT_END)                              # 上一句已完结
+            or bool(PROMPT.match(ln) and MARKER.match(paras[-1]))   # 列表/对话项之后的设问行
+        )
         if keep:
             paras.append(ln)
         else:
             joiner = " " if (prev[-1:].isascii() and prev[-1:].isalpha() and ln[:1].isascii() and ln[:1].isalpha()) else ""
             paras[-1] = prev + joiner + ln
             log.add(number, where, "合并源PDF行末硬换行", prev[-12:] + "⏎" + ln[:12], prev[-12:] + joiner + ln[:12])
-        last_raw = ln
     # 设问行末尾补冒号（原卷设问行均以冒号或问号结束）
     last = paras[-1]
     if len(paras) > 1 and PROMPT.match(last) and _width(last) <= 40 and not re.search(r"[：:？?。！）)]$", last):
@@ -899,6 +892,66 @@ def check_pdf(pdf: Path, n_questions: int, front_pages: int) -> dict:
     return {"字体": fonts, "正文页数": total_body, "题号所在PDF页": page_of}
 
 
+def _expected_segments(q: dict) -> list[str]:
+    """按排版时同样的规范化，取出该题应出现在PDF里的文字片段（数学式、填空线处切开）。"""
+    quiet = Log()
+    texts = []
+    for m in q.get("materials") or []:          # 资料印在题目之前
+        texts += [b["text"] for b in m["blocks"] if b["type"] == "text"]
+    texts += [b["text"] for b in q["stem"] if b["type"] == "text"]
+    if q.get("options_mode") != "in_figure":
+        texts += [b["text"] for k in sorted(q["options"]) for b in q["options"][k] if b["type"] == "text"]
+    segs = []
+    for t in texts:
+        for para in reflow(norm_text(t, q["number"], "核对", quiet), q["number"], "核对", quiet):
+            for piece in re.split(r"\$[^$]+\$|_{3,}", para):
+                piece = re.sub(r"\s+", "", piece)
+                if len(piece) >= 2:
+                    segs.append(piece)
+    return segs
+
+
+def verify_content(pdf: Path, questions: list[dict], front_pages: int) -> dict:
+    """逐题核对：题干、选项、资料文字按顺序出现在PDF文字层中；表格数值逐格出现。"""
+    import pdfplumber  # type: ignore
+
+    def normal_size(obj) -> bool:
+        # 上下标、分数（约8—9pt）和题图标注会被抽到别的行，核对时去掉；正文12pt、表格10.5pt保留
+        return obj.get("object_type") != "char" or obj.get("size", 12) >= 9.8
+    with pdfplumber.open(str(pdf)) as doc:
+        text = "".join((p.filter(normal_size).extract_text() or "") for p in doc.pages[front_pages:])
+    text = re.sub(r"第\d+页\s*共\d+页", "", text)
+    flat = re.sub(r"\s+", "", text)
+    pos = 0
+    missing = []
+    seen_mat = set()
+    checked = 0
+    for q in questions:
+        mats = [m for m in q.get("materials") or [] if m["id"] not in seen_mat]
+        q2 = dict(q, materials=mats)
+        for seg in _expected_segments(q2):
+            j = flat.find(seg, pos)
+            if j < 0:
+                missing.append((q["number"], seg[:30]))
+            else:
+                pos = j + len(seg)
+                checked += 1
+        for m in mats:
+            seen_mat.add(m["id"])
+            for b in m["blocks"]:
+                if b["type"] == "table":
+                    for row in b.get("rows") or []:
+                        for c in row:
+                            c2 = re.sub(r"\s+", "", c)
+                            if len(c2) >= 2 and c2 not in EDITORIAL_CELL and c2 not in flat:
+                                missing.append((q["number"], "表格：" + c2))
+                            elif len(c2) >= 2:
+                                checked += 1
+    if missing:
+        raise SystemExit(f"PDF文字与题目.jsonl不一致（按序未找到）：{missing[:12]}")
+    return {"已核对片段数": checked}
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("paper_id", help="如 M01")
@@ -957,10 +1010,14 @@ def main() -> None:
 
     front_pages = 1 if args.no_notice else 2
     report = check_pdf(pdf_path, len(questions), front_pages)
+    content = verify_content(pdf_path, questions, front_pages)
+    import hashlib
     summary = {
         "套卷": args.paper_id,
         "底稿版本": meta.get("version"),
         "底稿状态": meta.get("status"),
+        "题目.jsonl_SHA256": hashlib.sha256(qfile.read_bytes()).hexdigest(),
+        "PDF内容核对": f"题干、选项、资料文字按序与题目.jsonl一致，表格数值逐格出现；共{content['已核对片段数']}个片段",
         "生成时间": _dt.datetime.now(_dt.timezone(_dt.timedelta(hours=8))).isoformat(timespec="seconds"),
         "版式": "粉笔样卷：A4；小四正文36字/行，行距22.9pt；题号悬挂；选项9字网格；每部分另起一页",
         "字体": {k: v.name for k, v in fonts.items()},
