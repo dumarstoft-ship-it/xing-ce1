@@ -1,0 +1,75 @@
+name: M02 selective review revision
+on:
+  push:
+    branches: ['gpt/m02-review-v020-20261115']
+    paths:
+      - '.github/workflows/m02-review-v020.yml'
+      - '广东行测18套模拟/M02/apply_review_v020.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: m02-review-v020
+  cancel-in-progress: false
+jobs:
+  revise:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /.github/
+            /README.md
+            /广东行测18套模拟/
+            /江浙行测_AI题库/questions.jsonl
+            /江浙行测_AI题库/images/
+            /模考/2026下半年广东卷_16-33季_AI可读/
+            /国考/言语理解/2016-2025/all.jsonl
+            /学习资料/政治理论常识/
+            !*.pdf
+            !*.zip
+      - name: Preserve other-paper ledger and apply revision
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,subprocess,sys,hashlib
+          p=Path('广东行测18套模拟');h=p/'M02'
+          ledger=lambda:[json.loads(s) for s in (p/'用题登记.jsonl').read_text().splitlines() if s.strip()]
+          before=[r for r in ledger() if r['paper_id']!='M02']
+          subprocess.run([sys.executable,str(h/'apply_review_v020.py')],check=True)
+          assert before==[r for r in ledger() if r['paper_id']!='M02'], 'Other paper ledger altered'
+          names=['selection.json','paper.json','题目.jsonl','题本_待审.md','答案与解析_待审.md','来源登记.jsonl','核验报告.json']
+          hashes=lambda:{n:hashlib.sha256((h/n).read_bytes()).hexdigest() for n in names}
+          state=hashes()
+          subprocess.run([sys.executable,str(h/'apply_review_v020.py')],check=True)
+          subprocess.run([sys.executable,str(h/'核验记录/verify_delivery.py')],check=True)
+          assert state==hashes(), 'Repeat revision or build changed outputs'
+          cfg=json.loads((h/'paper.json').read_text())
+          report=json.loads((h/'核验记录/交付核验.json').read_text())
+          assert cfg['version']=='0.2.0' and report['status']=='PASS' and report['question_count']==90
+          assert report['reference_answers_matched']==27 and report['print_ready'] is False
+          assert not (h/'打印版/M02_题本_打印版.pdf').exists()
+          report['other_papers_ledger_preserved_from_pre_revision']=True
+          report['claude_M01_and_print_tools_preserved']='verified by git diff in following step'
+          (h/'核验记录/交付核验.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+          PY
+      - name: Verify protected trees and commit all current-version outputs
+        run: |
+          git diff --exit-code -- '广东行测18套模拟/M01' '广东行测18套模拟/打印排版' '江浙行测_AI题库' '模考' '国考' '学习资料'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git rm -- '.github/workflows/m02-review-v020.yml'
+          git add -- README.md '广东行测18套模拟/README.md' '广东行测18套模拟/用题登记.jsonl' '广东行测18套模拟/M02'
+          git diff --cached --stat
+          git commit -m 'M02 v0.2.0: 落实有价值的审核意见，替换争议题并保留完整修订证据'
+          git push origin HEAD:gpt/m02-review-v020-20261115
+      - uses: actions/upload-artifact@v4
+        with:
+          name: M02-v0.2.0-selective-review-revision
+          path: 广东行测18套模拟/M02/
+          retention-days: 7
