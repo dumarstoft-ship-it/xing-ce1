@@ -1,0 +1,42 @@
+{
+  "paper_id": "M04",
+  "version": "0.1.0",
+  "result": "PASS",
+  "question_count": 90,
+  "source_objects_preserved": 75,
+  "original_questions": 15,
+  "source_keys_available_and_matching": 24,
+  "second_reader_answers_matching": 85,
+  "graphic_review_count": 5,
+  "source_exposure_hits": 0,
+  "exposure_corpus_files": 394,
+  "prior_ledger_rows_unchanged": 270,
+  "source_snapshot": "6aecdb088169c4c8b0c393046a77e483910aaf7d",
+  "old_papers_and_source_banks_modified": false,
+  "deterministic_build": true,
+  "print_pages": 32,
+  "print_pdf_sha256": "d3029686c89f878cc839edb486cd85758aee7cb5bc263a9c91e1a76f5334999f",
+  "student_data_sha256": "1ac5d186100f2a071a193aafba0562d026aa2b263b76edee701647fde00390c7",
+  "external_review": "not_started",
+  "formal_finalized": false,
+  "editorial_followups": [
+    "第11题A按独立审阅建议去掉可机械排除的绝对化表述；不改变法条适用和C答案。",
+    "第43题B明确改编为2/5；原始对象及改前独立核验保留，当前样本空间枚举已重新通过。",
+    "第60、64题分段和第67题图注位置只改善呈现，独立推理结论不变。",
+    "资料第二读者80、86初始理由的对象/单位误记另有勘误，源编辑解析及答案原本正确。"
+  ],
+  "limitations": [
+    "内部答案一致不是外部审核",
+    "广东模考原始PDF本轮未取得",
+    "曝光检查不覆盖仓库外所有做题历史"
+  ],
+  "output_sha256": {
+    "selection.json": "fd433e5fc337fa3027e8cc64e47255c0a577050f4e82799414f569fa8f1ea1e9",
+    "题目.jsonl": "1ac5d186100f2a071a193aafba0562d026aa2b263b76edee701647fde00390c7",
+    "题本_待审.md": "c3031812f429b4cc0efbe8c9ce6b27c653614956d0ba8218c1aaffc91a67329d",
+    "答案与解析_待审.md": "f2a7c4afbb59b32f8affb9ba6f0e080accb680f7e73e5d84aac81669d9fd1343",
+    "来源登记.jsonl": "140343671d6faa551431e19d12534bef62b88ac947dca6d7e214a2962639b6b2",
+    "选题记录.md": "3918874094b669578bc53776a2e745d0f2be318a0792e6b4ae7da69bebe6dec0",
+    "核验报告.json": "0839e5e201214636d658039b0b07820f5acd7f0880b40d1d250f832db900cbb4"
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "reviewer": "GPT第二审阅者（言语编者）",
+  "date": "2026-11-15",
+  "scope": "政治常识1—15先独立作答再比；重点5、7、9、11、12、14另行联网核对。其余按稳定理论、历史常识及编者解析做独立审阅，未冒称全量重开所有引用。",
+  "all_15_agree": true,
+  "comparisons": [
+    {
+      "number": 1,
+      "independent_answer": "正确",
+      "editor_answer": "正确",
+      "agrees": true,
+      "rationale": "平等市场地位与所有制结构中的公有制主体地位属于不同层面。"
+    },
+    {
+      "number": 2,
+      "independent_answer": "错误",
+      "editor_answer": "错误",
+      "agrees": true,
+      "rationale": "总体性质评价看矛盾的主要方面，不是抓主要矛盾。"
+    },
+    {
+      "number": 3,
+      "independent_answer": "正确",
+      "editor_answer": "正确",
+      "agrees": true,
+      "rationale": "在工作日不变条件下缩短必要劳动、延长剩余劳动，属于相对剩余价值。"
+    },
+    {
+      "number": 4,
+      "independent_answer": "错误",
+      "editor_answer": "错误",
+      "agrees": true,
+      "rationale": "政协民主监督不因全会通过而变成国家法律强制执行命令。"
+    },
+    {
+      "number": 5,
+      "independent_answer": "D",
+      "editor_answer": "D",
+      "agrees": true,
+      "rationale": "三中全会《决定》明确维护进城落户农民三项权益，探索自愿有偿退出。"
+    },
+    {
+      "number": 6,
+      "independent_answer": "C",
+      "editor_answer": "C",
+      "agrees": true,
+      "rationale": "对接国际经贸规则并完善制度安排直接体现制度型开放。"
+    },
+    {
+      "number": 7,
+      "independent_answer": "B",
+      "editor_answer": "B",
+      "agrees": true,
+      "rationale": "改造仍有价值的内涵和陈旧形式、赋新表达属创造性转化；补充拓展完善内涵属创新性发展。"
+    },
+    {
+      "number": 8,
+      "independent_answer": "C",
+      "editor_answer": "C",
+      "agrees": true,
+      "rationale": "由感性到理性，再由认识指导实践并检验。"
+    },
+    {
+      "number": 9,
+      "independent_answer": "AD",
+      "editor_answer": "AD",
+      "agrees": true,
+      "rationale": "四大考验为执政、改革开放、市场经济、外部环境；四种危险为精神懈怠、能力不足、脱离群众、消极腐败。分类选AD；“二十届五中全会”时点来源另核。"
+    },
+    {
+      "number": 10,
+      "independent_answer": "BCD",
+      "editor_answer": "BCD",
+      "agrees": true,
+      "rationale": "强度下降不蕴含总量下降；碳中和允许仍有排放并核抵消，生态修复可支持碳汇，不能由中和宣称推无排放。"
+    },
+    {
+      "number": 11,
+      "independent_answer": "C",
+      "editor_answer": "C",
+      "agrees": true,
+      "rationale": "民法典近亲属出售例外排除本次承租人优先购买权，买卖不破租赁；亲姐姐属于近亲属。"
+    },
+    {
+      "number": 12,
+      "independent_answer": "A",
+      "editor_answer": "A",
+      "agrees": true,
+      "rationale": "丹霞山红色砂砾岩侵蚀；七星岩喀斯特石灰岩溶蚀；湖光岩玛珥火山口湖。"
+    },
+    {
+      "number": 13,
+      "independent_answer": "D",
+      "editor_answer": "D",
+      "agrees": true,
+      "rationale": "1935年四渡赤水1—3月、巧渡金沙江5月上旬、飞夺泸定桥5月29日、吴起镇会师10月。"
+    },
+    {
+      "number": 14,
+      "independent_answer": "C",
+      "editor_answer": "C",
+      "agrees": true,
+      "rationale": "无源卫星定位是接收卫星广播计算位置，不依赖地面移动网；短报文需要专门发送能力/支持服务。"
+    },
+    {
+      "number": 15,
+      "independent_answer": "C",
+      "editor_answer": "C",
+      "agrees": true,
+      "rationale": "两税法以土地财产为税基、夏秋征收；一条鞭法合并赋役征银；摊丁入亩把丁银并入田赋。"
+    }
+  ],
+  "issues": [
+    {
+      "number": 11,
+      "severity": "optional_distractor_improvement",
+      "finding": "A使用“对甲与任何人之间”形成过强全称项，容易无需识别近亲属例外就排除。",
+      "suggestion": "把A改为“乙已依合同入住且愿意接受同等条件，依法享有本次交易的优先购买权”；法律结论仍错误，理由明确落到近亲属例外。",
+      "answer_unchanged": "C"
+    }
+  ],
+  "evidence": [
+    {
+      "questions": [
+        5
+      ],
+      "url": "https://www.miit.gov.cn/ztzl/rdzt/qhjs/art/2024/art_481a376a25b940afa47d24de0343a77e.html",
+      "title": "中共中央关于进一步全面深化改革、推进中国式现代化的决定",
+      "method": "检索返回原文第20条",
+      "supports": "依法维护进城落户农民三项权益；退出制度强调自愿有偿。",
+      "access_note": "编者铁路局镜像直开403，本次以工信部刊载同一决定核对。"
+    },
+    {
+      "questions": [
+        7
+      ],
+      "url": "https://www.moj.gov.cn/pub/sfbgwapp/jryw/202306/t20230601_479985.html",
+      "title": "司法部刊载文化传承发展相关论述",
+      "method": "精准检索返回两段定义；另查2014年2月24日讲话摘编",
+      "supports": "①为创造性转化，②为创新性发展，定义内容与题面一致。",
+      "access_note": "直接打开遇跳转循环，精准检索内容可读取；另有江苏省委宣传部讲话摘编直接对应。",
+      "corroborating_url": "https://www.jsxc.gov.cn/llsk/zbdk/zxzxx/d6/202308/t20230811_68780.shtml"
+    },
+    {
+      "questions": [
+        9
+      ],
+      "url": "https://www.moe.gov.cn/jyb_xwfb/s6052/moe_838/202611/t20261102_1456737.html",
+      "title": "中共中央关于持之以恒推进全面从严治党若干重大问题的决定",
+      "method": "近30日限定检索并交叉中央纪委刊载",
+      "supports": "决定注明2026年10月29日二十届五中全会通过；四大考验、四种危险的八项分类与题面判定相符。",
+      "access_note": "直开超时，检索返回日期与原文；中纪委页面直开也超时，但检索返回完整分类段落。",
+      "corroborating_url": "https://m.ccdi.gov.cn/content/dd/e9/133368.html"
+    },
+    {
+      "questions": [
+        11
+      ],
+      "url": "https://www.12371.cn/2020/06/01/ARTI1591021670041266.shtml",
+      "title": "中华人民共和国民法典",
+      "method": "打开全文并分别定位第725、726、1045条",
+      "supports": "占有期限内所有权变动不影响租赁效力；出租给近亲属是承租人优先购买例外；兄弟姐妹属于近亲属。"
+    },
+    {
+      "questions": [
+        12
+      ],
+      "url": "https://dxs.sg.gov.cn/lyfw/jqjs/dxfg/content/post_2651370.html",
+      "title": "世界地质公园、世界自然遗产——广东丹霞山",
+      "method": "打开管理部门介绍",
+      "supports": "红色砂砾岩、流水侵蚀与重力崩塌、赤壁丹崖。"
+    },
+    {
+      "questions": [
+        12
+      ],
+      "url": "https://gw.xhglj.com.cn/doc/2019/11/04/880.shtml",
+      "title": "七星岩简介",
+      "method": "打开肇庆星湖管理局介绍",
+      "supports": "七座石灰岩峰，主体景观包括峰林、溶洞。"
+    },
+    {
+      "questions": [
+        12
+      ],
+      "url": "https://www.zhanjiang.gov.cn/zjwl/content/post_1371640.html",
+      "title": "湖光岩世界地质公园",
+      "method": "打开湛江市政府介绍",
+      "supports": "玛珥火山地貌、典型火山口湖。"
+    },
+    {
+      "questions": [
+        14
+      ],
+      "url": "https://www.xinhuanet.com/politics/2016-07/28/c_129184290.htm",
+      "title": "北斗导航总设计师：精度媲美GPS，4年可服务全球",
+      "method": "打开总设计师采访，读取其无源定位与双向短报文的直接说明",
+      "supports": "无源定位用户不必发射信号；短报文是另一项双向信息传递能力。仅援引稳定技术定义，不沿用2016年的未来建设进度预测。"
+    },
+    {
+      "questions": [
+        14
+      ],
+      "url": "https://lnca.miit.gov.cn/xwdt/gzdt/art/2026/art_4037b26c3f8b48e79badb66c7eedc0c9.html",
+      "title": "北斗卫星短信（北斗短报文）——汛期应急通信新手段",
+      "method": "打开2026年7月16日通信管理部门说明",
+      "supports": "发送功能需适配终端并核验支持能力，不能由“支持定位”直接推出“支持发送”。只取终端适配条件，不把文中某一手机业务入口等同所有北斗短报文服务。"
+    }
+  ],
+  "scope_boundaries": [
+    "讲义页码提供主题范围，不要求每项外延细节都必须逐字出现于讲义；现provenance已有清楚说明。",
+    "不同卷复用政治或常识主题不等于复用同一道题，未仅因讲义页码重合判重。",
+    "5题依法维护三权不等于宣称任何情形下权利永远不变；题面依法限定及三中全会依据足够。",
+    "7题创造性转化也可改造有借鉴价值的内涵，不宜简化成“转化只变形式”。",
+    "12题问主要形成特征，不要求穷举构造运动等全部地质过程。",
+    "14题已经给出正常收星条件，C用“可以”表述能力；无需额外增加卫星几何配置等技术条件。"
+  ]
+}

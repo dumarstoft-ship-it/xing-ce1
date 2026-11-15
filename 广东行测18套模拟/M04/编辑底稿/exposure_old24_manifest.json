@@ -1,0 +1,797 @@
+[
+  {
+    "path": "广东行测24天集训/00_协作状态与题源核对.md",
+    "sha": "35bbd00e62967207c38dd6761cea87306c5fed27",
+    "local": true
+  },
+  {
+    "path": "广东行测24天集训/Claude协作任务书_v1.md",
+    "sha": "2ee322eb1ba38a20209b0cced73d17e34d8f4654",
+    "local": true
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/D01_言语_答案原文册.html",
+    "sha": "f1099cf6dce780266b82ec5587185aca520a720a",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/D01_言语_答案原文册.md",
+    "sha": "d81305bcfc06575647ca9828410b3caebf0c3266",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/D01_言语_题目册.html",
+    "sha": "f4addc7c363a27462b69a8e702bc7c584be6645e",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/D01_言语_题目册.md",
+    "sha": "5a0fd31c9042f6f2c95100d81d2b8a41ce04d5a4",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/D02_言语_答案原文册.html",
+    "sha": "66bab0f270a370ec704f61cb1439f4253f624bf9",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/D02_言语_答案原文册.md",
+    "sha": "3a39d504192c15d040cfe5d20f30c40adaeb391d",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/D02_言语_题目册.html",
+    "sha": "4aba14feed1a7d40867bb7724e2926a4b9578e5d",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/D02_言语_题目册.md",
+    "sha": "77193f2aa7be3e19597524f520259f801d3a8431",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/D02_资料_答案册.html",
+    "sha": "8893037e064f78ecc117bc02051119f6cf1c4c2d",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/D02_资料_答案册.md",
+    "sha": "1df610632ba0084f1526309e13e6423c0999c84c",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/D02_资料_题目册.html",
+    "sha": "ff82168aeb70a9e67a0386abbcfd61da8dd67d58",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/D02_资料_题目册.md",
+    "sha": "ecec47a72349df6dd7e79131b13a57fa55cc0234",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/D03_判断_答案册.html",
+    "sha": "61361f04e6ed9c33e2c3319c6279f77da283ed45",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/D03_判断_答案册.md",
+    "sha": "832a9127b1d6994a1f3781789e89b8541260b7d0",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/D03_判断_题目册.html",
+    "sha": "6a6af4ff4f2d8618e33bf6dab93bbe85ad5acf55",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/D03_判断_题目册.md",
+    "sha": "c4fc206084dd927901a1001e8e19d5824104d14f",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/D03_言语_答案原文册.html",
+    "sha": "a04856169a220f96e8c0214d1274a4a75dce4a02",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/D03_言语_答案原文册.md",
+    "sha": "ef94d57fc77109957fbc3ff8b18f97cc4a16329c",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/D03_言语_题目册.html",
+    "sha": "ea6db47a24539a266e5790dec2481d76b179b823",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/D03_言语_题目册.md",
+    "sha": "d8c46e70ce42e4ca4ed6c4b735b7dfacff792639",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/GPT_复核结果_v2.json",
+    "sha": "e8db30914daf8d80815d9d41a7da88dde25ededc",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/GPT_审核报告_v2.md",
+    "sha": "cc6633a80548c92d1a98cae74c324470fccf6541",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/README.md",
+    "sha": "3ee673eb35f754f5786fe889d0c6e62477c5e278",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/articles.jsonl",
+    "sha": "2b6a31330763670857314a53b2bca5215296a354",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/materials.jsonl",
+    "sha": "86024072ecd26a7cd7b12cfe557410f524e5c4c5",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/questions.jsonl",
+    "sha": "24e683b0d0b32497f8110cdf017db0bbeb13a462",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/原交付记录/handoff.md",
+    "sha": "ba5b8f469d32f1ab6ddeca5656548a945f18d038",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/原交付记录/复核清单.md",
+    "sha": "94877154fe4dac65ad871edb2bdd81ad199c6f86",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/原交付记录/给用户的交付说明.md",
+    "sha": "9592ad9e80f4113e7ed0764cd5c249ee76d7dda9",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/备选与冲突待复核.jsonl",
+    "sha": "c5b5ce0201868b10c33265ebeb7cfaf2a5af4e26",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/构建摘要.json",
+    "sha": "8d738bc3e3f68405df8fa3786f86baa485e658c8",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/编者报告/00_共同工作说明.md",
+    "sha": "e022b23fac510dcc6f3a7792e9ad097ed3b2d6c4",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/编者报告/PD-A_报告.md",
+    "sha": "5e48ce001939a79e824274bcc7bb572e5b795a00",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/编者报告/PD-B_报告.md",
+    "sha": "07afccc64190acf06e6073bed9fd4f1ad6531616",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/编者报告/PD-C_报告.md",
+    "sha": "eb076c71bd340e0c9dc74c19b5fa4b4a851c1545",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/编者报告/YY-A_报告.md",
+    "sha": "6ad2764c38acc0aa91af0d73e66dca4dbe5e7bdf",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/编者报告/YY-B_报告.md",
+    "sha": "5e8f937d636240ee9b0a33cb16625a4eae879ebf",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/编者报告/ZL-A_报告.md",
+    "sha": "213e06e2e93c10f0dca927b6d956d5ad9a4b87ba",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第1批/编者报告/ZL-B_报告.md",
+    "sha": "17388df84d3b9fc509d783aae4bc176409f0f7bf",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第2批/GPT_第二轮审核意见_v1.md",
+    "sha": "b5efd9d5c14223dea60bba568e55ff4090d4c3c4",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第2批/重点题复算_v1.py",
+    "sha": "66a9ab21e9217642047877f2a38f1af806f5c2b7",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第2批/重点题复算结果_v1.json",
+    "sha": "0d4d6818676166144a7cf55eed96571b2276236d",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第3批/GPT_第三轮审核意见_v1.md",
+    "sha": "39c0206d0ba439f22d54c0f6a88c313315ced7c6",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第3批/verify_reasoning_extra.py",
+    "sha": "504bfb29960308d4202eb4b597a81ef4b0aad9ee",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第3批/verify_round3_independent.py",
+    "sha": "65b2d5c49734979ae61541ffae4e4df907a6b596",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_复核/第3批/复算结果摘要_v1.json",
+    "sha": "0c7ac7e5b405afbe741709f5d19d512b6c562824",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D01/D01_v2_修订记录.md",
+    "sha": "9f12f937549e3b416129fcc29f9eddc2f1944c43",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D01/D01_v2_核验结果.json",
+    "sha": "fbd2827ea149f0fba9a50e4d5b7a4b7ad97ea657",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D01/D01_完整135题_v2.jsonl",
+    "sha": "8063b00a1b7c71aafd51dcd45a9cfa5582298ad6",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D01/D01_数字推理001-030_答案与核验.md",
+    "sha": "1ee13135754cc4ffec6b0e77b96f661c8f2f9502",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D01/D01_数字推理001-030_题本.md",
+    "sha": "879ec8cac7a3c610e24d25b7b8cb823f1573324d",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D01/D01_数学运算001-060_答案与核验.md",
+    "sha": "298678fad2bf25bb84f59204480746016a493c94",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D01/D01_数学运算001-060_编制记录.jsonl",
+    "sha": "5560c6d70869af16022467b9f3d4f17aa1170a4a",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D01/D01_数学运算001-060_题本.md",
+    "sha": "1854d44f871f31a9c4ce307924e3f1a079c4d015",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D01/D01_数学运算061-105_答案与核验.md",
+    "sha": "2e41aa8e8c9e1a67af11dab93894f1bfac9398c1",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D01/D01_数学运算061-105_题本.md",
+    "sha": "e13060f4635b25fccaeaf96beb7108bc731f26ef",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D01/D01_补充075题_编制记录.jsonl",
+    "sha": "7b5ecd8cacf4549d80e53ca2508c84441b14bddd",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D01/README.md",
+    "sha": "926d458ad12470f36d54f63d256a876636f8812e",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/D04_数学运算001-020_题本.md",
+    "sha": "5e3f6f13e451af8626acab8171b24f368d00700f",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/D04_逐题删减建议_20261111.md",
+    "sha": "1bf249f1801be3f239cbcfdcc8ff4aefe07c324c",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/README.md",
+    "sha": "67c7af15b76c596329377cad6e9f0b3a32dbe54d",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/专题集中版_v2/D04_数字推理_专题集中_答案.md",
+    "sha": "e8b715f5648499b2aa17d898453bd7695947f13e",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/专题集中版_v2/D04_数字推理_专题集中_题本.md",
+    "sha": "b07940d8c2354cde850ff5f38f16c7d79506cc18",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/专题集中版_v2/D04_数学运算_第1册_效率与分段_答案.md",
+    "sha": "bd59c1e56b20e74a4f0276a01ebfe289457b5d69",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/专题集中版_v2/D04_数学运算_第1册_效率与分段_题本.md",
+    "sha": "6f3e209997349790c3cee337a67ed304f49ca666",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/专题集中版_v2/D04_数学运算_第2册_产出库存与周期_答案.md",
+    "sha": "3b0739cbd84720740b1a7e9e64ea3c174438604a",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/专题集中版_v2/D04_数学运算_第2册_产出库存与周期_题本.md",
+    "sha": "0ddeb5238c1b960fc5941b20a9b68166a8fa0e43",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/专题集中版_v2/D04_数学运算_第3册_累计分配与统筹_答案.md",
+    "sha": "6059835b308941b26f210a259dcd33fa6e555f07",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/专题集中版_v2/D04_数学运算_第3册_累计分配与统筹_题本.md",
+    "sha": "102b6e9b173bdf888d742d8146b498a85e04f0d2",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/专题集中版_v2/D04_数学运算_第4册_流水成本与人数_答案.md",
+    "sha": "d64183476d5181f13533a6bfee15955b4a39dd4b",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/专题集中版_v2/D04_数学运算_第4册_流水成本与人数_题本.md",
+    "sha": "1176d2e5b030d4837e9ba2d1f00fd6f16ab0c810",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/专题集中版_v2/README.md",
+    "sha": "12c0840e71a2e1c3ce82bee478315ad02c8dd0e9",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/专题集中版_v2/顺序映射与说明.md",
+    "sha": "9270bbec796c42643919c5024915949eef927e36",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/减量73题版_v3/D04_数字推理_答案.md",
+    "sha": "f21b50d309e4f90fb57edac58432fe4526a61c00",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/减量73题版_v3/D04_数字推理_题本.md",
+    "sha": "dc89edb8d7374bd578bc9b8d1120bce71b24b01d",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/减量73题版_v3/D04_第1册_效率与分段_答案.md",
+    "sha": "967822607d5d5e16d6a6b6eda3740f51cb75066f",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/减量73题版_v3/D04_第1册_效率与分段_题本.md",
+    "sha": "bcfb019650503fa110a963ef41b7c8dc95f63b52",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/减量73题版_v3/D04_第2册_产出库存与周期_答案.md",
+    "sha": "3437130c61fdc565254c41c5718a6c27b4f1eedc",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/减量73题版_v3/D04_第2册_产出库存与周期_题本.md",
+    "sha": "2e593132e1c1401e22b71669c477f95ca75d8410",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/减量73题版_v3/D04_第3册_累计分配与统筹_答案.md",
+    "sha": "64d6115fa9a67443efa7db23ca149393c6217c67",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/减量73题版_v3/D04_第3册_累计分配与统筹_题本.md",
+    "sha": "e788844ab5260e1f6703148ebc6f213bef764de2",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/减量73题版_v3/D04_第4册_流水成本与人数_答案.md",
+    "sha": "c294ff4cc3cb036264a4b5479b791d927a0eb204",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/减量73题版_v3/D04_第4册_流水成本与人数_题本.md",
+    "sha": "bf8a4a8b2162c5b2db66f7fccec9b19c6e499d82",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/减量73题版_v3/README.md",
+    "sha": "70b871aa968d1c227b07c0e9296b6847d89bae67",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/减量73题版_v3/保留与移出清单.md",
+    "sha": "a9721d299c3d9c787cb202989818d551245b0ae7",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/减量73题版_v3/编排核验记录.md",
+    "sha": "9defbe160e62ac5a15ad43c0a46d6979c3028dc7",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/完整135题_v1/D04_数字推理001-030_答案.md",
+    "sha": "8deb84a43158fbbbbe26b89c34a1a7a0a2c7a283",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/完整135题_v1/D04_数字推理001-030_题本.md",
+    "sha": "032b5e400943d9569fb0e7cf82bcf0e776bdfbde",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/完整135题_v1/D04_数学运算001-040_答案.md",
+    "sha": "336663136946b983281d15e5931408b07c1617c6",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/完整135题_v1/D04_数学运算001-040_题本.md",
+    "sha": "c9ecfc24eb86e5e9195dcaa8f5f3a08a6ef14059",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/完整135题_v1/D04_数学运算041-080_答案.md",
+    "sha": "71953bed95fb97571254c73cf0d438b819b01382",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/完整135题_v1/D04_数学运算041-080_题本.md",
+    "sha": "bcd0e640b4416945d0ef9c35fb30bc9550c93b5e",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/完整135题_v1/D04_数学运算081-105_答案.md",
+    "sha": "12fcd409fcadf1cec8e75cd882f7eff9e97d4ba5",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/完整135题_v1/D04_数学运算081-105_题本.md",
+    "sha": "06647423d6e32b7ebb744dee6a0200dcec4d3fe9",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/完整135题_v1/D04_核验记录.json",
+    "sha": "118deff513d98e6b7b72bd91d6683929efe03045",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/完整135题_v1/README.md",
+    "sha": "597db785523774288c651753b93d367c3ae6b0a4",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/完整135题_v1/重建结构化数据.py",
+    "sha": "5600f33558fc54687da956b8a0002a4163266cf6",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/局部重排版_v1/01_效率关系与分段工作_题本.md",
+    "sha": "065e3339045b8241db28b47de86600e63b030156",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/局部重排版_v1/02_动态存量与周期边界_题本.md",
+    "sha": "220693000cd41cf000a2de9be95726bec1d65d06",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/局部重排版_v1/03_工序衔接与任务分配_题本.md",
+    "sha": "7b7cf4e307dea14e8df41f36a2595b1b5b331420",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/局部重排版_v1/04_有效产出与资源费用_题本.md",
+    "sha": "24a824fdecd22d7cc69c4635e75a40195dd0b4cd",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/局部重排版_v1/05_高成本综合强化_题本.md",
+    "sha": "81f6e80969820c2da339445e1802d5b356674ff9",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D04/局部重排版_v1/06_数字推理_题本.md",
+    "sha": "44520cd2875c9e00e35e0a00f7b6737f2caf6af2",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D07/完整135题_v1/D07_数字推理001-030_答案.md",
+    "sha": "1602a196d0c16fcc4cda89fa7d0e8cc9bee53f79",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D07/完整135题_v1/D07_数字推理001-030_题本.md",
+    "sha": "0d24be6939e50664df4ed31b3fa4c5b2e0b1f49b",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D07/完整135题_v1/D07_数学运算001-040_答案.md",
+    "sha": "6cb349a497e95e04dcf309fb5db1f792f406ebbe",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D07/完整135题_v1/D07_数学运算001-040_题本.md",
+    "sha": "5e1d8dcd6db4ddb838e8cbd9b8c839ad9278c3ee",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D07/完整135题_v1/D07_数学运算041-080_答案.md",
+    "sha": "f0efe4a5c9203ca18ff873f1869c15ff605f02a4",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D07/完整135题_v1/D07_数学运算041-080_题本.md",
+    "sha": "ff34144d660b0bd9160529e9e8fb706163008969",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D07/完整135题_v1/D07_数学运算081-105_答案.md",
+    "sha": "1915431ed2d2147cf1d0bffc1731906ada0794a3",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D07/完整135题_v1/D07_数学运算081-105_题本.md",
+    "sha": "b168862dfbab6148762627b31edc074c0eb2bcea",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D07/完整135题_v1/README.md",
+    "sha": "6329f2e091fc6d150af8f59a95673345468f08c4",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D07/完整135题_v1/verify_d07.py",
+    "sha": "3ccbf11fa9faf61f164c672f640f3b24b074ae46",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D07/完整135题_v1/来源与核验说明.md",
+    "sha": "d60dae729b3d7d0ec034b20975eb5625500a6191",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D07/完整135题_v1/核验记录.md",
+    "sha": "ff28c6caa6acbfe772d65104d8de812158ebb395",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D07/强化版_v2/D07_数字推理001-030_答案.md",
+    "sha": "895e7b7551e380bf0287c120ad76efaf11da51b0",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D07/强化版_v2/D07_数字推理001-030_题本.md",
+    "sha": "dbb5fee5911014bbb536083a7b3427c17895fe41",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D07/强化版_v2/D07_数学运算001-040_答案.md",
+    "sha": "56392ede055d8b8081f05e9fc5fe9fe6df7e4339",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D07/强化版_v2/D07_数学运算001-040_题本.md",
+    "sha": "69d8b37147bd931fe93224477bb86a233d9e0943",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D07/强化版_v2/D07_数学运算041-080_答案.md",
+    "sha": "982e482b2db0a25ad0187c321a304716635484ca",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D07/强化版_v2/D07_数学运算041-080_题本.md",
+    "sha": "eb8e94056002412f0a6365478bcbc99b7b2a5032",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D07/强化版_v2/D07_数学运算081-105_答案.md",
+    "sha": "3c81aab5b7fb9022a661d4e98bc9958d6b7fe2c8",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D07/强化版_v2/D07_数学运算081-105_题本.md",
+    "sha": "c1edde944e3dc5b5475bd5b566ec371b4ed40b9d",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D07/强化版_v2/README.md",
+    "sha": "b3f6dd97792fc5e84b171c38cd6ea6ad005abfb8",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D07/强化版_v2/verify_upgrade.py",
+    "sha": "6c79309061490d5a06afd8f6e2d0c6eee288aa6a",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D07/强化版_v2/升级题复算结果.json",
+    "sha": "b14046c8f4981dafeca14a0a65473d87375db492",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D10/完整135题_v1/D10_数字推理001-030_答案.md",
+    "sha": "da523e412dd5f574e10f863d229f637d332cacf3",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D10/完整135题_v1/D10_数字推理001-030_题本.md",
+    "sha": "df65e527754ed075b97cdf12a96d53d6f953289a",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D10/完整135题_v1/D10_数学运算001-040_答案.md",
+    "sha": "57053f1c003794ba264af7045f92c4a5d3dbf37c",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D10/完整135题_v1/D10_数学运算001-040_题本.md",
+    "sha": "43484e851e5f0d46830379e5380793fbfb583d99",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D10/完整135题_v1/D10_数学运算041-080_答案.md",
+    "sha": "88e27f9b5df11e95d3d482d53b689213b8d40680",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D10/完整135题_v1/D10_数学运算041-080_题本.md",
+    "sha": "8e1d2543b2b55095cdad1940239f6d3c567cdfbc",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D10/完整135题_v1/D10_数学运算081-105_答案.md",
+    "sha": "ad9c662decab72a95c0871b1d37110921d57aff7",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D10/完整135题_v1/D10_数学运算081-105_题本.md",
+    "sha": "ccb11f9f5840c19ef53f5cdc769991090a27b65c",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D10/完整135题_v1/README.md",
+    "sha": "694433e435848c1d9a51bba8587fad994f729586",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D10/完整135题_v1/verify_d10.py",
+    "sha": "8f92a010868603041706efe91a5aea9d53cfe052",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D10/完整135题_v1/来源与核验说明.md",
+    "sha": "2ee0fd32b6a8cc291c0fcacbc63e903b91495777",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D10/完整135题_v1/核验记录.md",
+    "sha": "eb67898ece97048d68459a3cc203bb6c1c6c8d10",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/GPT_数量/D10/完整135题_v1/编制索引.md",
+    "sha": "67ed4946d59eb65b027b53cb31a993e82a102c5c",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/交接/GPT给Claude_D01补齐135题_交接.md",
+    "sha": "19779e227015e20e807cd2b9199584c503919f1d",
+    "local": true
+  },
+  {
+    "path": "广东行测24天集训/交接/GPT给Claude_D04减量73题已发布_20261111.md",
+    "sha": "5ce87c336e08e785dc83b12f537057db8083f69c",
+    "local": true
+  },
+  {
+    "path": "广东行测24天集训/交接/GPT给Claude_D04完整135题交接_v1.md",
+    "sha": "ed6d722a9aa909b4b055aaf1e258c2c712059179",
+    "local": true
+  },
+  {
+    "path": "广东行测24天集训/交接/GPT给Claude_D07强化版_v2_复核交接.md",
+    "sha": "cd758e05a6e4d6e867ea9d5aeb73c76435ab925c",
+    "local": true
+  },
+  {
+    "path": "广东行测24天集训/交接/GPT给Claude_D07数量135题交接_v1.1.md",
+    "sha": "e17028fd93aaf6e224baa55ecf9895f9c869e739",
+    "local": true
+  },
+  {
+    "path": "广东行测24天集训/交接/GPT给Claude_D10数量135题交接_v1.md",
+    "sha": "1ccca21aace98c87833de1b22d3ee634495a9948",
+    "local": true
+  },
+  {
+    "path": "广东行测24天集训/交接/GPT给Claude_数量原文提取请求_v1.md",
+    "sha": "d88b08e4a0345883fdc85e1f6b845a428dd2b764",
+    "local": true
+  },
+  {
+    "path": "广东行测24天集训/交接/GPT给Claude_数量首批60题回执.md",
+    "sha": "b3b9b78ad3fb6c1c7f5acc77f3e72bac2a6f0d64",
+    "local": true
+  },
+  {
+    "path": "广东行测24天集训/交接/GPT给Claude_第1批与D01复核回执_2026-11-08.md",
+    "sha": "9dd6b4ff30752c9387a03f86c8fcaab217383e34",
+    "local": true
+  },
+  {
+    "path": "广东行测24天集训/交接/GPT给Claude_第1轮修订与审核完成_v2.md",
+    "sha": "ef420f734d8de3a7c80425a4d7c9943a69fcd9e6",
+    "local": true
+  },
+  {
+    "path": "广东行测24天集训/交接/GPT给Claude_第2批审核与新增题源回执_v1.md",
+    "sha": "6290c839c230702e1e762196dee28cee571ddd49",
+    "local": true
+  },
+  {
+    "path": "广东行测24天集训/交接/GPT给Claude_第3批复核回执_v1.md",
+    "sha": "2947764d7db50a3a7af1e9d682ef141a01d6f04f",
+    "local": true
+  },
+  {
+    "path": "广东行测24天集训/交接/GPT给Claude_资料减量保留口径难度_20261111.md",
+    "sha": "d1116145459f11b0e0cceee5d494c50cb5b3e344",
+    "local": true
+  },
+  {
+    "path": "广东行测24天集训/交接/GPT给Claude_资料减量版复核_20261111.md",
+    "sha": "d37b996d282ef668289f20592d53e9dbddbb89a6",
+    "local": true
+  },
+  {
+    "path": "广东行测24天集训/构建/第一轮v2_manifest.json",
+    "sha": "b5deea528b9000298c42f1b73279b976ee304efb",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/构建/第一轮修订_v2.py",
+    "sha": "d143205816c677bf8721ebc873a664ebf32418fa",
+    "local": false
+  },
+  {
+    "path": "广东行测24天集训/第1轮_使用入口.md",
+    "sha": "e00372f3743890003eebebcde52406bbbd215134",
+    "local": true
+  },
+  {
+    "path": "广东行测24天集训/资料分析个人知识与方法审校/01_已定算法与做法_20261112.md",
+    "sha": "d32fa40922ceb5f9b20f7a0eb14d6fe2a663695e",
+    "local": false
+  }
+]

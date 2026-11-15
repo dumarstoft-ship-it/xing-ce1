@@ -1,0 +1,3157 @@
+{
+  "baseline_commit": "6aecdb088169c4c8b0c393046a77e483910aaf7d",
+  "files": [
+    {
+      "path": "广东行测24天集训/00_协作状态与题源核对.md",
+      "git_blob_sha": "35bbd00e62967207c38dd6761cea87306c5fed27",
+      "prefix": "广东行测24天集训",
+      "bytes": 3931,
+      "sha256": "607ef387850601a33a1eb1a65138095cb4c142208106053fafd93c248e2dc37f",
+      "lines": 61
+    },
+    {
+      "path": "广东行测24天集训/Claude协作任务书_v1.md",
+      "git_blob_sha": "2ee322eb1ba38a20209b0cced73d17e34d8f4654",
+      "prefix": "广东行测24天集训",
+      "bytes": 10029,
+      "sha256": "207c48ab66f0bc80f1b4fb828bb0f757ff39f54e907ff28c6c54881427bcd877",
+      "lines": 109
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/D01_言语_答案原文册.html",
+      "git_blob_sha": "f1099cf6dce780266b82ec5587185aca520a720a",
+      "prefix": "广东行测24天集训",
+      "bytes": 29415,
+      "sha256": "9fde066f38d49f62332c77a49fa9ed17c102897634dce2efa4d5c35e8903ed89",
+      "lines": 43
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/D01_言语_答案原文册.md",
+      "git_blob_sha": "d81305bcfc06575647ca9828410b3caebf0c3266",
+      "prefix": "广东行测24天集训",
+      "bytes": 29515,
+      "sha256": "9d035c853de3b90ddf8cf881c875f0da711987ed042abded635c41118dc87176",
+      "lines": 470
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/D01_言语_题目册.html",
+      "git_blob_sha": "f4addc7c363a27462b69a8e702bc7c584be6645e",
+      "prefix": "广东行测24天集训",
+      "bytes": 38594,
+      "sha256": "7bcf66f5d573252e2993ca141b9e595899557d9ca2685fdbc5f14b643986f223",
+      "lines": 102
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/D01_言语_题目册.md",
+      "git_blob_sha": "5a0fd31c9042f6f2c95100d81d2b8a41ce04d5a4",
+      "prefix": "广东行测24天集训",
+      "bytes": 28699,
+      "sha256": "3461a9fbc8eac26af65c40875195037dc0fe33a97cff3c7d0520016a0776c76b",
+      "lines": 423
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/D02_言语_答案原文册.html",
+      "git_blob_sha": "66bab0f270a370ec704f61cb1439f4253f624bf9",
+      "prefix": "广东行测24天集训",
+      "bytes": 29222,
+      "sha256": "81aa6c1ff75758c3d6daaac3589f8c1ec08284d17af142782b6737f749b67902",
+      "lines": 42
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/D02_言语_答案原文册.md",
+      "git_blob_sha": "3a39d504192c15d040cfe5d20f30c40adaeb391d",
+      "prefix": "广东行测24天集训",
+      "bytes": 29211,
+      "sha256": "81b1cc4fb4033d1f00268a3b7ff21c4cdba503b4578a8a1023e666bb702506dd",
+      "lines": 467
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/D02_言语_题目册.html",
+      "git_blob_sha": "4aba14feed1a7d40867bb7724e2926a4b9578e5d",
+      "prefix": "广东行测24天集训",
+      "bytes": 39778,
+      "sha256": "9ffed5f8c0fe75f7d2d37a4b6377e28ae37127755695ef47f74726698c97fd09",
+      "lines": 102
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/D02_言语_题目册.md",
+      "git_blob_sha": "77193f2aa7be3e19597524f520259f801d3a8431",
+      "prefix": "广东行测24天集训",
+      "bytes": 29908,
+      "sha256": "175021d513dfa187bdd2c5fc1c6d6959f2342851425f236d5a88d3001e0e8a3f",
+      "lines": 425
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/D02_资料_答案册.html",
+      "git_blob_sha": "8893037e064f78ecc117bc02051119f6cf1c4c2d",
+      "prefix": "广东行测24天集训",
+      "bytes": 55217,
+      "sha256": "08241a4de29b82dd508e17b315b303aebf29f2176cf19c32bd6fe79116663822",
+      "lines": 17
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/D02_资料_答案册.md",
+      "git_blob_sha": "1df610632ba0084f1526309e13e6423c0999c84c",
+      "prefix": "广东行测24天集训",
+      "bytes": 40932,
+      "sha256": "ffc1f3466583cf5185dbe37b4fe31c9ac75b99d7ded4b9363db849ec791b7bbc",
+      "lines": 1248
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/D02_资料_题目册.html",
+      "git_blob_sha": "ff82168aeb70a9e67a0386abbcfd61da8dd67d58",
+      "prefix": "广东行测24天集训",
+      "bytes": 4332580,
+      "sha256": "021ad491d966122bec2f050b7c53508235b15a619e984c91c06f23d56c023133",
+      "lines": 158
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/D02_资料_题目册.md",
+      "git_blob_sha": "ecec47a72349df6dd7e79131b13a57fa55cc0234",
+      "prefix": "广东行测24天集训",
+      "bytes": 110982,
+      "sha256": "e8898e66c62bcaa3e2eb9d18ce2f58196385297eaab430ffdbedce99f45edd99",
+      "lines": 2427
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/D03_判断_答案册.html",
+      "git_blob_sha": "61361f04e6ed9c33e2c3319c6279f77da283ed45",
+      "prefix": "广东行测24天集训",
+      "bytes": 81388,
+      "sha256": "c5fd4ac92f02d0a07b8e3a0d7ea9454b18098a93a67f650e47828fd11740987b",
+      "lines": 163
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/D03_判断_答案册.md",
+      "git_blob_sha": "832a9127b1d6994a1f3781789e89b8541260b7d0",
+      "prefix": "广东行测24天集训",
+      "bytes": 69327,
+      "sha256": "fbbd69b8b5b021526ce88a2b517d11f74bd546668d61d6672d412954857086d6",
+      "lines": 1253
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/D03_判断_题目册.html",
+      "git_blob_sha": "6a6af4ff4f2d8618e33bf6dab93bbe85ad5acf55",
+      "prefix": "广东行测24天集训",
+      "bytes": 2327131,
+      "sha256": "ae5a2a076448f4d48e637ec18f2859218b0436466f5e9dd30c40746d24e9525c",
+      "lines": 355
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/D03_判断_题目册.md",
+      "git_blob_sha": "c4fc206084dd927901a1001e8e19d5824104d14f",
+      "prefix": "广东行测24天集训",
+      "bytes": 67657,
+      "sha256": "4b6426220160185e5f907e6cde835a4055e0bd6356082125436e8bdcb5f3d995",
+      "lines": 1236
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/D03_言语_答案原文册.html",
+      "git_blob_sha": "a04856169a220f96e8c0214d1274a4a75dce4a02",
+      "prefix": "广东行测24天集训",
+      "bytes": 29777,
+      "sha256": "e5fcf01729d13ac5d87cb33e5d0a2ff0367178660ea74b60a86434286569d11d",
+      "lines": 59
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/D03_言语_答案原文册.md",
+      "git_blob_sha": "ef94d57fc77109957fbc3ff8b18f97cc4a16329c",
+      "prefix": "广东行测24天集训",
+      "bytes": 29733,
+      "sha256": "e5bec5bc21d41e1c99383914d0e5e35013cdb5ac132b1944f04dea125ee405f1",
+      "lines": 486
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/D03_言语_题目册.html",
+      "git_blob_sha": "ea6db47a24539a266e5790dec2481d76b179b823",
+      "prefix": "广东行测24天集训",
+      "bytes": 37173,
+      "sha256": "083b6e3487c42b18a4e08d38224485dfc79498393e1e3c1ab4405793ce7031ca",
+      "lines": 102
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/D03_言语_题目册.md",
+      "git_blob_sha": "d8c46e70ce42e4ca4ed6c4b735b7dfacff792639",
+      "prefix": "广东行测24天集训",
+      "bytes": 27289,
+      "sha256": "6c004d2f647685348b8bcd41f94e053d92a924653280ce15bb22d8809fcd1557",
+      "lines": 431
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/GPT_复核结果_v2.json",
+      "git_blob_sha": "e8db30914daf8d80815d9d41a7da88dde25ededc",
+      "prefix": "广东行测24天集训",
+      "bytes": 30571,
+      "sha256": "5b3b7a8d270144cb0315be262baf440182d462494ae9f750eb0da45fb58ca622",
+      "lines": 1073
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/GPT_审核报告_v2.md",
+      "git_blob_sha": "cc6633a80548c92d1a98cae74c324470fccf6541",
+      "prefix": "广东行测24天集训",
+      "bytes": 5075,
+      "sha256": "31f6886e6021c282b33ec0771bd42778b7ac8dab10402a51133222861b9c541b",
+      "lines": 80
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/README.md",
+      "git_blob_sha": "3ee673eb35f754f5786fe889d0c6e62477c5e278",
+      "prefix": "广东行测24天集训",
+      "bytes": 1359,
+      "sha256": "669d2452658b558940838175c499ba6b510dc6e64a5d321596562972bc521e5f",
+      "lines": 17
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/articles.jsonl",
+      "git_blob_sha": "2b6a31330763670857314a53b2bca5215296a354",
+      "prefix": "广东行测24天集训",
+      "bytes": 149589,
+      "sha256": "21508f59372d49a8e64f0e7809c5b578c9b99ba383bcd5984a38950db0d5675f",
+      "lines": 95
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/materials.jsonl",
+      "git_blob_sha": "86024072ecd26a7cd7b12cfe557410f524e5c4c5",
+      "prefix": "广东行测24天集训",
+      "bytes": 136125,
+      "sha256": "ebbc3c0b91cc3070e470898c1fc6f7b882e7f62735daa86bb381af97a7ec6a7c",
+      "lines": 76
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/questions.jsonl",
+      "git_blob_sha": "24e683b0d0b32497f8110cdf017db0bbeb13a462",
+      "prefix": "广东行测24天集训",
+      "bytes": 832490,
+      "sha256": "64e2d988500d7c7802e1d4566d12ea7e72faeecaf3f2ee0aa5edfa05240abf92",
+      "lines": 390
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/原交付记录/handoff.md",
+      "git_blob_sha": "ba5b8f469d32f1ab6ddeca5656548a945f18d038",
+      "prefix": "广东行测24天集训",
+      "bytes": 7585,
+      "sha256": "fa6b24070b2b52d1c4343581efe9be4243e033c55923240a5688428981d383a5",
+      "lines": 97
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/原交付记录/复核清单.md",
+      "git_blob_sha": "94877154fe4dac65ad871edb2bdd81ad199c6f86",
+      "prefix": "广东行测24天集训",
+      "bytes": 18094,
+      "sha256": "976627b6f486d76994ac637e2522157f5b8f127a061b14c1c6f16369fe44124c",
+      "lines": 141
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/原交付记录/给用户的交付说明.md",
+      "git_blob_sha": "9592ad9e80f4113e7ed0764cd5c249ee76d7dda9",
+      "prefix": "广东行测24天集训",
+      "bytes": 2738,
+      "sha256": "b93eded0c61d1d34a47dad9b8f043b826c7fbc4dac6a576341ccf689882e9a73",
+      "lines": 39
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/备选与冲突待复核.jsonl",
+      "git_blob_sha": "c5b5ce0201868b10c33265ebeb7cfaf2a5af4e26",
+      "prefix": "广东行测24天集训",
+      "bytes": 35244,
+      "sha256": "9bdcba3aab57618f6400bd7638b1544734dabfaf7240bad9fc4825f04c33c39e",
+      "lines": 13
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/构建摘要.json",
+      "git_blob_sha": "8d738bc3e3f68405df8fa3786f86baa485e658c8",
+      "prefix": "广东行测24天集训",
+      "bytes": 565,
+      "sha256": "db56b701b09c207d869acc0696543b0aba49a792a0e36a984b9ec4f2455405dd",
+      "lines": 29
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/编者报告/00_共同工作说明.md",
+      "git_blob_sha": "e022b23fac510dcc6f3a7792e9ad097ed3b2d6c4",
+      "prefix": "广东行测24天集训",
+      "bytes": 8862,
+      "sha256": "88b19a7474ff0c3f236a2f1c7d8e7514d3a2be34ba02eb4edd05b167cb2acf55",
+      "lines": 77
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/编者报告/PD-A_报告.md",
+      "git_blob_sha": "5e48ce001939a79e824274bcc7bb572e5b795a00",
+      "prefix": "广东行测24天集训",
+      "bytes": 8407,
+      "sha256": "e2eb205c5e0fe53cd59485f43597bec327bf8d230d2e2c3d2d02da8310c97c4c",
+      "lines": 60
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/编者报告/PD-B_报告.md",
+      "git_blob_sha": "07afccc64190acf06e6073bed9fd4f1ad6531616",
+      "prefix": "广东行测24天集训",
+      "bytes": 9654,
+      "sha256": "ff9485b627ac0f72df56c07acffea1637cee32f627a8318254f88d1394a1a040",
+      "lines": 69
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/编者报告/PD-C_报告.md",
+      "git_blob_sha": "eb076c71bd340e0c9dc74c19b5fa4b4a851c1545",
+      "prefix": "广东行测24天集训",
+      "bytes": 10666,
+      "sha256": "8566eb16578968ba4303a08af1c1a0fb7427c8ba0150a2fdb1b5663632266173",
+      "lines": 74
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/编者报告/YY-A_报告.md",
+      "git_blob_sha": "6ad2764c38acc0aa91af0d73e66dca4dbe5e7bdf",
+      "prefix": "广东行测24天集训",
+      "bytes": 8093,
+      "sha256": "22df07e74add8fb687a858e8261c758afa1eb4d47c28b3a15c3e57f25e39c603",
+      "lines": 64
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/编者报告/YY-B_报告.md",
+      "git_blob_sha": "5e8f937d636240ee9b0a33cb16625a4eae879ebf",
+      "prefix": "广东行测24天集训",
+      "bytes": 8896,
+      "sha256": "0d2ed3429bf17425c3067f655c0087345bf6e061b300957202f0daf1f2f3b8e0",
+      "lines": 67
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/编者报告/ZL-A_报告.md",
+      "git_blob_sha": "213e06e2e93c10f0dca927b6d956d5ad9a4b87ba",
+      "prefix": "广东行测24天集训",
+      "bytes": 9683,
+      "sha256": "6f86f2abd85f211fa480e566b26468bed6947e34c1bba8cc657bb03416f7a592",
+      "lines": 57
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第1批/编者报告/ZL-B_报告.md",
+      "git_blob_sha": "17388df84d3b9fc509d783aae4bc176409f0f7bf",
+      "prefix": "广东行测24天集训",
+      "bytes": 9079,
+      "sha256": "88cd8ae01cbdaa4db7d2f17124257fd4346e8baaffaaecb87c566ec7941beb3a",
+      "lines": 62
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第2批/GPT_第二轮审核意见_v1.md",
+      "git_blob_sha": "b5efd9d5c14223dea60bba568e55ff4090d4c3c4",
+      "prefix": "广东行测24天集训",
+      "bytes": 14718,
+      "sha256": "edf9180123313cf84362eea0d36be9ba5cdc01f8a5ffeba5a674975ba33f23b9",
+      "lines": 134
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第2批/重点题复算_v1.py",
+      "git_blob_sha": "66a9ab21e9217642047877f2a38f1af806f5c2b7",
+      "prefix": "广东行测24天集训",
+      "bytes": 3901,
+      "sha256": "247aa0814dd4a18627cbd5d74f48ab31c2a508fe919041e27a5becdb7148de3d",
+      "lines": 76
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第2批/重点题复算结果_v1.json",
+      "git_blob_sha": "0d4d6818676166144a7cf55eed96571b2276236d",
+      "prefix": "广东行测24天集训",
+      "bytes": 3922,
+      "sha256": "8661ba250b6705b054d4ec88ce64cc2b156663e840ca7512cb6bc49738a4d853",
+      "lines": 36
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第3批/GPT_第三轮审核意见_v1.md",
+      "git_blob_sha": "39c0206d0ba439f22d54c0f6a88c313315ced7c6",
+      "prefix": "广东行测24天集训",
+      "bytes": 13604,
+      "sha256": "d77d729e1466109f147754ec4af2ce0c017cd051d775939e9137832e2f665d11",
+      "lines": 153
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第3批/verify_reasoning_extra.py",
+      "git_blob_sha": "504bfb29960308d4202eb4b597a81ef4b0aad9ee",
+      "prefix": "广东行测24天集训",
+      "bytes": 3197,
+      "sha256": "8d91d994fb4a867fff31cc2fd5fca0b75f2a68aca4ca40feb56e9843d9463e6c",
+      "lines": 47
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第3批/verify_round3_independent.py",
+      "git_blob_sha": "65b2d5c49734979ae61541ffae4e4df907a6b596",
+      "prefix": "广东行测24天集训",
+      "bytes": 12525,
+      "sha256": "8ed22bdbd29951b0a5410d78f882be76059282abd8054759ffb9ddfd4bf5c20f",
+      "lines": 147
+    },
+    {
+      "path": "广东行测24天集训/GPT_复核/第3批/复算结果摘要_v1.json",
+      "git_blob_sha": "0c7ac7e5b405afbe741709f5d19d512b6c562824",
+      "prefix": "广东行测24天集训",
+      "bytes": 5210,
+      "sha256": "55ad5a03dbf7c39851c85545036d756298139fb168072afa8c4e6dfb564caf48",
+      "lines": 68
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D01/D01_v2_修订记录.md",
+      "git_blob_sha": "9f12f937549e3b416129fcc29f9eddc2f1944c43",
+      "prefix": "广东行测24天集训",
+      "bytes": 2382,
+      "sha256": "a38e7fdaa4970c025c18f73713582633c496151a69c7643fc50d2cbcfbab5cc2",
+      "lines": 32
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D01/D01_v2_核验结果.json",
+      "git_blob_sha": "fbd2827ea149f0fba9a50e4d5b7a4b7ad97ea657",
+      "prefix": "广东行测24天集训",
+      "bytes": 8527,
+      "sha256": "dbf6ef7203c4b3188ac6baf15b71cf98a81d0e3b2107eba095eba62aaa191c15",
+      "lines": 442
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D01/D01_完整135题_v2.jsonl",
+      "git_blob_sha": "8063b00a1b7c71aafd51dcd45a9cfa5582298ad6",
+      "prefix": "广东行测24天集训",
+      "bytes": 136865,
+      "sha256": "e2f9edb0b5c2b51adb38699ce8e7a3b1c7be80b43ef79e6fc6cac033e41cd61f",
+      "lines": 135
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D01/D01_数字推理001-030_答案与核验.md",
+      "git_blob_sha": "1ee13135754cc4ffec6b0e77b96f661c8f2f9502",
+      "prefix": "广东行测24天集训",
+      "bytes": 11442,
+      "sha256": "2e02105135fddf81924d0667d248ab441d4a9a9537fe9618055150430a26893b",
+      "lines": 232
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D01/D01_数字推理001-030_题本.md",
+      "git_blob_sha": "879ec8cac7a3c610e24d25b7b8cb823f1573324d",
+      "prefix": "广东行测24天集训",
+      "bytes": 3078,
+      "sha256": "84023dcb25e1638bafa0f52306542a4ee9e83115698ecaea2ee7a631a22c1c4c",
+      "lines": 278
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D01/D01_数学运算001-060_答案与核验.md",
+      "git_blob_sha": "298678fad2bf25bb84f59204480746016a493c94",
+      "prefix": "广东行测24天集训",
+      "bytes": 32605,
+      "sha256": "cb0a2c79c9f7d7f6a622d0c59cb1a03df18ef85781ca7bda4ec52892b5335700",
+      "lines": 603
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D01/D01_数学运算001-060_编制记录.jsonl",
+      "git_blob_sha": "5560c6d70869af16022467b9f3d4f17aa1170a4a",
+      "prefix": "广东行测24天集训",
+      "bytes": 15255,
+      "sha256": "150c7e768cfe39c2cd358910716455e273242e9bcb2fe78b310818e4c98c2cf3",
+      "lines": 60
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D01/D01_数学运算001-060_题本.md",
+      "git_blob_sha": "1854d44f871f31a9c4ce307924e3f1a079c4d015",
+      "prefix": "广东行测24天集训",
+      "bytes": 22557,
+      "sha256": "722577648819d60cf49702e88a2f4cc4786111c5b72641725a30297bc11262ec",
+      "lines": 561
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D01/D01_数学运算061-105_答案与核验.md",
+      "git_blob_sha": "2e41aa8e8c9e1a67af11dab93894f1bfac9398c1",
+      "prefix": "广东行测24天集训",
+      "bytes": 19719,
+      "sha256": "2847d6e00b0205edabee9c3a0e66ca01029534fec52fad169107bae9179952ab",
+      "lines": 377
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D01/D01_数学运算061-105_题本.md",
+      "git_blob_sha": "e13060f4635b25fccaeaf96beb7108bc731f26ef",
+      "prefix": "广东行测24天集训",
+      "bytes": 15122,
+      "sha256": "aed5549e7ad41beb159ef84fd78c512b5ff7f18ca2c57c958b14addcd5676a88",
+      "lines": 419
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D01/D01_补充075题_编制记录.jsonl",
+      "git_blob_sha": "7b5ecd8cacf4549d80e53ca2508c84441b14bddd",
+      "prefix": "广东行测24天集训",
+      "bytes": 20825,
+      "sha256": "105f390568a75b410844bc1d07d201f23735423e993bbdaa35709ac8ec7e039a",
+      "lines": 75
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D01/README.md",
+      "git_blob_sha": "926d458ad12470f36d54f63d256a876636f8812e",
+      "prefix": "广东行测24天集训",
+      "bytes": 1459,
+      "sha256": "42af9c7cac33434f032f57f6f4e042a41d3b5ce733c4bd194146c54b3fe65db2",
+      "lines": 17
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/D04_数学运算001-020_题本.md",
+      "git_blob_sha": "5e3f6f13e451af8626acab8171b24f368d00700f",
+      "prefix": "广东行测24天集训",
+      "bytes": 5859,
+      "sha256": "1d5e8245b987d5d88100562deecbeb0e33ae5996b2754c37e90d7844cee985d3",
+      "lines": 105
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/D04_逐题删减建议_20261111.md",
+      "git_blob_sha": "1bf249f1801be3f239cbcfdcc8ff4aefe07c324c",
+      "prefix": "广东行测24天集训",
+      "bytes": 25474,
+      "sha256": "aa814c64692f17e79efb223852524554540de366440c27f57323775aba83ba46",
+      "lines": 284
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/README.md",
+      "git_blob_sha": "67c7af15b76c596329377cad6e9f0b3a32dbe54d",
+      "prefix": "广东行测24天集训",
+      "bytes": 1112,
+      "sha256": "ef172784ab1981f4bbce3abdd2e3dca89dd0c57f4fe050f5188da084522d0e83",
+      "lines": 15
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/专题集中版_v2/D04_数字推理_专题集中_答案.md",
+      "git_blob_sha": "e8b715f5648499b2aa17d898453bd7695947f13e",
+      "prefix": "广东行测24天集训",
+      "bytes": 16575,
+      "sha256": "9c99a075d8c912a334b490d83f0241015ff2aec175438e24d1fce8f61806589f",
+      "lines": 290
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/专题集中版_v2/D04_数字推理_专题集中_题本.md",
+      "git_blob_sha": "b07940d8c2354cde850ff5f38f16c7d79506cc18",
+      "prefix": "广东行测24天集训",
+      "bytes": 3254,
+      "sha256": "7c5980a75a74e5ee62a256a7198e7ad272330d21c9122c0241dcabe4e399b678",
+      "lines": 288
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/专题集中版_v2/D04_数学运算_第1册_效率与分段_答案.md",
+      "git_blob_sha": "bd59c1e56b20e74a4f0276a01ebfe289457b5d69",
+      "prefix": "广东行测24天集训",
+      "bytes": 21340,
+      "sha256": "ea9b3ffb4b2f36a1b45f7dc91d525377980169fcdda67ca89b672da16dcb363f",
+      "lines": 309
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/专题集中版_v2/D04_数学运算_第1册_效率与分段_题本.md",
+      "git_blob_sha": "6f3e209997349790c3cee337a67ed304f49ca666",
+      "prefix": "广东行测24天集训",
+      "bytes": 10928,
+      "sha256": "539045223caad05e39b1fec32fe93a82912ce5d1088e43180cdbdfa077c2bd7b",
+      "lines": 307
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/专题集中版_v2/D04_数学运算_第2册_产出库存与周期_答案.md",
+      "git_blob_sha": "3b0739cbd84720740b1a7e9e64ea3c174438604a",
+      "prefix": "广东行测24天集训",
+      "bytes": 16204,
+      "sha256": "d51c3e96a30f25661310ebab9741fc23b61b28edce9eb602137dbfb0e1d104c4",
+      "lines": 230
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/专题集中版_v2/D04_数学运算_第2册_产出库存与周期_题本.md",
+      "git_blob_sha": "0ddeb5238c1b960fc5941b20a9b68166a8fa0e43",
+      "prefix": "广东行测24天集训",
+      "bytes": 8728,
+      "sha256": "17d3eef361d9ef4b073bbf1b776cb749ae02932433273cad9bf0ea09ef5d9241",
+      "lines": 228
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/专题集中版_v2/D04_数学运算_第3册_累计分配与统筹_答案.md",
+      "git_blob_sha": "6059835b308941b26f210a259dcd33fa6e555f07",
+      "prefix": "广东行测24天集训",
+      "bytes": 18911,
+      "sha256": "af2932465eba7d33800892267ea4563d6612f753fabde165eeb58130655097cd",
+      "lines": 248
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/专题集中版_v2/D04_数学运算_第3册_累计分配与统筹_题本.md",
+      "git_blob_sha": "102b6e9b173bdf888d742d8146b498a85e04f0d2",
+      "prefix": "广东行测24天集训",
+      "bytes": 8896,
+      "sha256": "6f7ea0dd585815bb297ced3eb23afcd2ecf5ce02e4437a5db5ec03ff9f00123a",
+      "lines": 246
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/专题集中版_v2/D04_数学运算_第4册_流水成本与人数_答案.md",
+      "git_blob_sha": "d64183476d5181f13533a6bfee15955b4a39dd4b",
+      "prefix": "广东行测24天集训",
+      "bytes": 15724,
+      "sha256": "95a811a486135078126e5a212eed0ea2991b8bb2ac8de1bbcf96c5be9519a99d",
+      "lines": 212
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/专题集中版_v2/D04_数学运算_第4册_流水成本与人数_题本.md",
+      "git_blob_sha": "1176d2e5b030d4837e9ba2d1f00fd6f16ab0c810",
+      "prefix": "广东行测24天集训",
+      "bytes": 7763,
+      "sha256": "55364da7a5a8b9755358c0d964b6834c0bfc88076ae47742040c058c1e011d49",
+      "lines": 210
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/专题集中版_v2/README.md",
+      "git_blob_sha": "12c0840e71a2e1c3ce82bee478315ad02c8dd0e9",
+      "prefix": "广东行测24天集训",
+      "bytes": 1541,
+      "sha256": "1fce1ae539b9a6f8770ba4847a2f59dce4e076acda734bd1ec2f8b4b679ad199",
+      "lines": 23
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/专题集中版_v2/顺序映射与说明.md",
+      "git_blob_sha": "9270bbec796c42643919c5024915949eef927e36",
+      "prefix": "广东行测24天集训",
+      "bytes": 7173,
+      "sha256": "0bf55724de34a9ee84c670a6fecca9ff5e0ddd594b0f70e84b43bf054ef17be0",
+      "lines": 148
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/减量73题版_v3/D04_数字推理_答案.md",
+      "git_blob_sha": "f21b50d309e4f90fb57edac58432fe4526a61c00",
+      "prefix": "广东行测24天集训",
+      "bytes": 5109,
+      "sha256": "1677fb6fa64fa75e265cce917781af7591a8680f28c2b6a672bf66794dd6bf2d",
+      "lines": 133
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/减量73题版_v3/D04_数字推理_题本.md",
+      "git_blob_sha": "dc89edb8d7374bd578bc9b8d1120bce71b24b01d",
+      "prefix": "广东行测24天集训",
+      "bytes": 2344,
+      "sha256": "f58b737fb9614f7fdfeeff069bf1824cd1de14ff659655b3392e0b7e81b64dcb",
+      "lines": 181
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/减量73题版_v3/D04_第1册_效率与分段_答案.md",
+      "git_blob_sha": "967822607d5d5e16d6a6b6eda3740f51cb75066f",
+      "prefix": "广东行测24天集训",
+      "bytes": 5700,
+      "sha256": "c3807adb1eafb9b1edd267cc8f4b466470038b93e4dd63a944d6b3f6bec68796",
+      "lines": 119
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/减量73题版_v3/D04_第1册_效率与分段_题本.md",
+      "git_blob_sha": "bcfb019650503fa110a963ef41b7c8dc95f63b52",
+      "prefix": "广东行测24天集训",
+      "bytes": 5962,
+      "sha256": "ab098376c4cf55b4c19db1f2ca7f4111e3978700eb555400fe17529e86d15cb7",
+      "lines": 164
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/减量73题版_v3/D04_第2册_产出库存与周期_答案.md",
+      "git_blob_sha": "3437130c61fdc565254c41c5718a6c27b4f1eedc",
+      "prefix": "广东行测24天集训",
+      "bytes": 4907,
+      "sha256": "6de6ff8845cc4e5c0af2d10c33bf22faaeb90d833c5346e8df6c8c3f6ff16d0c",
+      "lines": 96
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/减量73题版_v3/D04_第2册_产出库存与周期_题本.md",
+      "git_blob_sha": "2e593132e1c1401e22b71669c477f95ca75d8410",
+      "prefix": "广东行测24天集训",
+      "bytes": 5254,
+      "sha256": "e15aeb4ba442184396c1b748fdb4b9de13f35eb2e13612ccaa32a6091731bcde",
+      "lines": 130
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/减量73题版_v3/D04_第3册_累计分配与统筹_答案.md",
+      "git_blob_sha": "64d6115fa9a67443efa7db23ca149393c6217c67",
+      "prefix": "广东行测24天集训",
+      "bytes": 4878,
+      "sha256": "2ef3d16704579151a77a2d8e0d55028059100425a2c39ddae5bbdf6b20e55186",
+      "lines": 90
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/减量73题版_v3/D04_第3册_累计分配与统筹_题本.md",
+      "git_blob_sha": "e788844ab5260e1f6703148ebc6f213bef764de2",
+      "prefix": "广东行测24天集训",
+      "bytes": 4491,
+      "sha256": "a4774bb373b6d13d982903e511795060ccb0f675e6359407b6f494cffce05c96",
+      "lines": 121
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/减量73题版_v3/D04_第4册_流水成本与人数_答案.md",
+      "git_blob_sha": "c294ff4cc3cb036264a4b5479b791d927a0eb204",
+      "prefix": "广东行测24天集训",
+      "bytes": 5382,
+      "sha256": "c34b327a265d3a43afa24b2e604c436fb0e1c290db4aa28002990753ffcfcf52",
+      "lines": 96
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/减量73题版_v3/D04_第4册_流水成本与人数_题本.md",
+      "git_blob_sha": "bf8a4a8b2162c5b2db66f7fccec9b19c6e499d82",
+      "prefix": "广东行测24天集训",
+      "bytes": 4955,
+      "sha256": "4d090ee696820ffbb8157bedc1154f6675bf58eabc8c471e815e24f08df1bb46",
+      "lines": 130
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/减量73题版_v3/README.md",
+      "git_blob_sha": "70b871aa968d1c227b07c0e9296b6847d89bae67",
+      "prefix": "广东行测24天集训",
+      "bytes": 3305,
+      "sha256": "a86b92e11a1e8d613e1570f9da91eeb650957f4a86744e9a66b97145b32a1c73",
+      "lines": 38
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/减量73题版_v3/保留与移出清单.md",
+      "git_blob_sha": "a9721d299c3d9c787cb202989818d551245b0ae7",
+      "prefix": "广东行测24天集训",
+      "bytes": 1869,
+      "sha256": "a13768490ac23fc7dca43571d6b05a19eb6a44aef98cddac384bfdb03b0fca32",
+      "lines": 43
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/减量73题版_v3/编排核验记录.md",
+      "git_blob_sha": "9defbe160e62ac5a15ad43c0a46d6979c3028dc7",
+      "prefix": "广东行测24天集训",
+      "bytes": 2159,
+      "sha256": "24ed0186c6323f60c7f3a4f3f1a77307e01471d268b60e1e57b84d901027d716",
+      "lines": 32
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/完整135题_v1/D04_数字推理001-030_答案.md",
+      "git_blob_sha": "8deb84a43158fbbbbe26b89c34a1a7a0a2c7a283",
+      "prefix": "广东行测24天集训",
+      "bytes": 16190,
+      "sha256": "a95729e5668c8b523856eb6a06958a585f0d873693af096f5956497704c6fc9c",
+      "lines": 274
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/完整135题_v1/D04_数字推理001-030_题本.md",
+      "git_blob_sha": "032b5e400943d9569fb0e7cf82bcf0e776bdfbde",
+      "prefix": "广东行测24天集训",
+      "bytes": 3215,
+      "sha256": "239f43c941a873ca0f32bfab5ff796c146f523e2beaffaf984eb9215dd48b916",
+      "lines": 277
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/完整135题_v1/D04_数学运算001-040_答案.md",
+      "git_blob_sha": "336663136946b983281d15e5931408b07c1617c6",
+      "prefix": "广东行测24天集训",
+      "bytes": 26810,
+      "sha256": "49d7b2eaa500fed6259d230df735473f1ed0c965461ac70168add8d4336be892",
+      "lines": 364
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/完整135题_v1/D04_数学运算001-040_题本.md",
+      "git_blob_sha": "c9ecfc24eb86e5e9195dcaa8f5f3a08a6ef14059",
+      "prefix": "广东行测24天集训",
+      "bytes": 14371,
+      "sha256": "c0c552a09b6f54abfb800be57f55a205a1f7152c7d7c13943cf3a13f933b8f43",
+      "lines": 367
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/完整135题_v1/D04_数学运算041-080_答案.md",
+      "git_blob_sha": "71953bed95fb97571254c73cf0d438b819b01382",
+      "prefix": "广东行测24天集训",
+      "bytes": 26175,
+      "sha256": "c1a93987247f75c61cea934aecebff7f36b3ff5b2efd39161044a836ee8f4f52",
+      "lines": 364
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/完整135题_v1/D04_数学运算041-080_题本.md",
+      "git_blob_sha": "bcd0e640b4416945d0ef9c35fb30bc9550c93b5e",
+      "prefix": "广东行测24天集训",
+      "bytes": 13184,
+      "sha256": "add55f62debdb55f9fdda5cb967a815145adb7b4ea1ea41b0ef5573d110b17f1",
+      "lines": 367
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/完整135题_v1/D04_数学运算081-105_答案.md",
+      "git_blob_sha": "12fcd409fcadf1cec8e75cd882f7eff9e97d4ba5",
+      "prefix": "广东行测24天集训",
+      "bytes": 17631,
+      "sha256": "c7437139c83f147fcf5e9f7b701fbba21fa892c1ec22f8792c1f3bc133a4191b",
+      "lines": 229
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/完整135题_v1/D04_数学运算081-105_题本.md",
+      "git_blob_sha": "06647423d6e32b7ebb744dee6a0200dcec4d3fe9",
+      "prefix": "广东行测24天集训",
+      "bytes": 8617,
+      "sha256": "a06769f02fff857faed7a5c2641179f9e97756ee66716b0819dfc2b66d04fad5",
+      "lines": 232
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/完整135题_v1/D04_核验记录.json",
+      "git_blob_sha": "118deff513d98e6b7b72bd91d6683929efe03045",
+      "prefix": "广东行测24天集训",
+      "bytes": 13151,
+      "sha256": "404ae5e097a67a36927f1dd1b4f6aabe108ffad4ffcfa1ca34e93c728424d866",
+      "lines": 1
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/完整135题_v1/README.md",
+      "git_blob_sha": "597db785523774288c651753b93d367c3ae6b0a4",
+      "prefix": "广东行测24天集训",
+      "bytes": 4028,
+      "sha256": "0e7427dc9a0f6160f32533ac899d1a1b2face5965a8c46ea1ffcbe96285689fa",
+      "lines": 51
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/完整135题_v1/重建结构化数据.py",
+      "git_blob_sha": "5600f33558fc54687da956b8a0002a4163266cf6",
+      "prefix": "广东行测24天集训",
+      "bytes": 4130,
+      "sha256": "694dc26f4dd203d8148659189658e9456677ed627ed5508156083128abaa5009",
+      "lines": 78
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/局部重排版_v1/01_效率关系与分段工作_题本.md",
+      "git_blob_sha": "065e3339045b8241db28b47de86600e63b030156",
+      "prefix": "广东行测24天集训",
+      "bytes": 12696,
+      "sha256": "84de1739d7306fd12f90febaaf7c1a5c3373b29a6d604b50f3ab726306d06541",
+      "lines": 404
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/局部重排版_v1/02_动态存量与周期边界_题本.md",
+      "git_blob_sha": "220693000cd41cf000a2de9be95726bec1d65d06",
+      "prefix": "广东行测24天集训",
+      "bytes": 8569,
+      "sha256": "382ea89a73278cce975203dec828f15e6ffa7cfa84e6f58457c967424b7dec8e",
+      "lines": 268
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/局部重排版_v1/03_工序衔接与任务分配_题本.md",
+      "git_blob_sha": "7b7cf4e307dea14e8df41f36a2595b1b5b331420",
+      "prefix": "广东行测24天集训",
+      "bytes": 8041,
+      "sha256": "ea7440f46b5bef665fd2d80b254fcf81832cde7c75608308b3d882da7fd24b62",
+      "lines": 239
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/局部重排版_v1/04_有效产出与资源费用_题本.md",
+      "git_blob_sha": "24a824fdecd22d7cc69c4635e75a40195dd0b4cd",
+      "prefix": "广东行测24天集训",
+      "bytes": 7348,
+      "sha256": "c9ff8a3facf8647e5ed6d890caed3c7fd8b41b9f8e60722fafefda72765026df",
+      "lines": 219
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/局部重排版_v1/05_高成本综合强化_题本.md",
+      "git_blob_sha": "81f6e80969820c2da339445e1802d5b356674ff9",
+      "prefix": "广东行测24天集训",
+      "bytes": 4381,
+      "sha256": "a705da599ff6b7b59bbcff407b35738df18a789269907b73213ca2c9311c0cc0",
+      "lines": 116
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D04/局部重排版_v1/06_数字推理_题本.md",
+      "git_blob_sha": "44520cd2875c9e00e35e0a00f7b6737f2caf6af2",
+      "prefix": "广东行测24天集训",
+      "bytes": 4872,
+      "sha256": "ac1bd22ab947c55b870d8389a5c886d1257d09803192feca6d96d84f766936a1",
+      "lines": 361
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D07/完整135题_v1/D07_数字推理001-030_答案.md",
+      "git_blob_sha": "1602a196d0c16fcc4cda89fa7d0e8cc9bee53f79",
+      "prefix": "广东行测24天集训",
+      "bytes": 5934,
+      "sha256": "2d24837fca754057e022b62758324754e6bf341ac8ede6d26f75dabaec5671d3",
+      "lines": 109
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D07/完整135题_v1/D07_数字推理001-030_题本.md",
+      "git_blob_sha": "0d24be6939e50664df4ed31b3fa4c5b2e0b1f49b",
+      "prefix": "广东行测24天集训",
+      "bytes": 3212,
+      "sha256": "5ef085924c4e92412ca1c29e6f95d68f3c9b54584df82fbdd560e4dfce869433",
+      "lines": 247
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D07/完整135题_v1/D07_数学运算001-040_答案.md",
+      "git_blob_sha": "6cb349a497e95e04dcf309fb5db1f792f406ebbe",
+      "prefix": "广东行测24天集训",
+      "bytes": 9452,
+      "sha256": "5f9cac552a2877124c5dff33dcbae6f010bbb611608b61aa7d55c8ba7448395b",
+      "lines": 146
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D07/完整135题_v1/D07_数学运算001-040_题本.md",
+      "git_blob_sha": "5e1d8dcd6db4ddb838e8cbd9b8c839ad9278c3ee",
+      "prefix": "广东行测24天集训",
+      "bytes": 10876,
+      "sha256": "749106246e5f9b45cc3d1dafbff0b47c8e250d5a46b57d67c56db8a223a7c1a9",
+      "lines": 327
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D07/完整135题_v1/D07_数学运算041-080_答案.md",
+      "git_blob_sha": "f0efe4a5c9203ca18ff873f1869c15ff605f02a4",
+      "prefix": "广东行测24天集训",
+      "bytes": 9080,
+      "sha256": "85e1632ce79f7bc0c547363cd57d95211a416fb221b6050a07996f33a71fef2f",
+      "lines": 138
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D07/完整135题_v1/D07_数学运算041-080_题本.md",
+      "git_blob_sha": "ff34144d660b0bd9160529e9e8fb706163008969",
+      "prefix": "广东行测24天集训",
+      "bytes": 10765,
+      "sha256": "38f87bb8b07533abb44c55b7e8db0474a189b7daa632f2fad74d9b9e07e531b3",
+      "lines": 327
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D07/完整135题_v1/D07_数学运算081-105_答案.md",
+      "git_blob_sha": "1915431ed2d2147cf1d0bffc1731906ada0794a3",
+      "prefix": "广东行测24天集训",
+      "bytes": 7858,
+      "sha256": "e314478c12ccc6d4c625573cffcaef194dc5e25566fbd7964fe5e73de4d68c1b",
+      "lines": 108
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D07/完整135题_v1/D07_数学运算081-105_题本.md",
+      "git_blob_sha": "b168862dfbab6148762627b31edc074c0eb2bcea",
+      "prefix": "广东行测24天集训",
+      "bytes": 7960,
+      "sha256": "0d2df36a90a2979b53af86cbc556809cebc39224999cef31e51e37714a4d735c",
+      "lines": 207
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D07/完整135题_v1/README.md",
+      "git_blob_sha": "6329f2e091fc6d150af8f59a95673345468f08c4",
+      "prefix": "广东行测24天集训",
+      "bytes": 4599,
+      "sha256": "4bbbcab9eab37c1fa1d79c74b70628c77eefaaccdf14608377eedd1d616a2c9d",
+      "lines": 62
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D07/完整135题_v1/verify_d07.py",
+      "git_blob_sha": "3ccbf11fa9faf61f164c672f640f3b24b074ae46",
+      "prefix": "广东行测24天集训",
+      "bytes": 17938,
+      "sha256": "f2ee989ff30acb2f5cfc69758faa8e8dde00ea1ae957edaed20d480669f9a972",
+      "lines": 296
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D07/完整135题_v1/来源与核验说明.md",
+      "git_blob_sha": "d60dae729b3d7d0ec034b20975eb5625500a6191",
+      "prefix": "广东行测24天集训",
+      "bytes": 9363,
+      "sha256": "5d266a50f725320bcc246afa48f2eb6688e60f79e2feacfd375ded3ded693497",
+      "lines": 108
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D07/完整135题_v1/核验记录.md",
+      "git_blob_sha": "ff28c6caa6acbfe772d65104d8de812158ebb395",
+      "prefix": "广东行测24天集训",
+      "bytes": 6428,
+      "sha256": "b773322a8be2b15fd5864a4cf3e2012e96d05f7fc3fbdc89018a0a5ce823aa09",
+      "lines": 84
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D07/强化版_v2/D07_数字推理001-030_答案.md",
+      "git_blob_sha": "895e7b7551e380bf0287c120ad76efaf11da51b0",
+      "prefix": "广东行测24天集训",
+      "bytes": 3657,
+      "sha256": "5b045234cac78397b0b8e4168bb733f5667bd981cb9aca025843439e02bc210b",
+      "lines": 134
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D07/强化版_v2/D07_数字推理001-030_题本.md",
+      "git_blob_sha": "dbb5fee5911014bbb536083a7b3427c17895fe41",
+      "prefix": "广东行测24天集训",
+      "bytes": 3181,
+      "sha256": "baaecd0ff3aee5da8788caea5828d18b75344070deeedf388105c7532cd66395",
+      "lines": 275
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D07/强化版_v2/D07_数学运算001-040_答案.md",
+      "git_blob_sha": "56392ede055d8b8081f05e9fc5fe9fe6df7e4339",
+      "prefix": "广东行测24天集训",
+      "bytes": 8860,
+      "sha256": "a41b26a753ab2353944a05bc95820ead7d2240ea2cd84d80b9db800280632aab",
+      "lines": 204
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D07/强化版_v2/D07_数学运算001-040_题本.md",
+      "git_blob_sha": "69d8b37147bd931fe93224477bb86a233d9e0943",
+      "prefix": "广东行测24天集训",
+      "bytes": 13127,
+      "sha256": "65307ff164a96006831dd6880d7a5436102807fad676965e3cfb42323f5fd1ab",
+      "lines": 367
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D07/强化版_v2/D07_数学运算041-080_答案.md",
+      "git_blob_sha": "982e482b2db0a25ad0187c321a304716635484ca",
+      "prefix": "广东行测24天集训",
+      "bytes": 10002,
+      "sha256": "2af3ef2c054f43461188bef0ec8864ae3548efb8fe1deba614685f9d8ce891e7",
+      "lines": 208
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D07/强化版_v2/D07_数学运算041-080_题本.md",
+      "git_blob_sha": "eb8e94056002412f0a6365478bcbc99b7b2a5032",
+      "prefix": "广东行测24天集训",
+      "bytes": 13722,
+      "sha256": "ada65d32f820dcd1fa899894fb447120c7f31984fe7f05150001a505b15d9bd2",
+      "lines": 367
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D07/强化版_v2/D07_数学运算081-105_答案.md",
+      "git_blob_sha": "3c81aab5b7fb9022a661d4e98bc9958d6b7fe2c8",
+      "prefix": "广东行测24天集训",
+      "bytes": 6660,
+      "sha256": "b69d338af714c2a42dc073b80c15574935d9810de0946d3a0b27943b334f6a40",
+      "lines": 133
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D07/强化版_v2/D07_数学运算081-105_题本.md",
+      "git_blob_sha": "c1edde944e3dc5b5475bd5b566ec371b4ed40b9d",
+      "prefix": "广东行测24天集训",
+      "bytes": 9094,
+      "sha256": "ad0f3cf82e9d4b3144416d37b4a3f30332dd326190e28629414a15434fc03fa9",
+      "lines": 232
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D07/强化版_v2/README.md",
+      "git_blob_sha": "b3f6dd97792fc5e84b171c38cd6ea6ad005abfb8",
+      "prefix": "广东行测24天集训",
+      "bytes": 6666,
+      "sha256": "f220dc49fcc2851ccd127899b710a64488d2908f6a66df4a68f252f172b9a541",
+      "lines": 77
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D07/强化版_v2/verify_upgrade.py",
+      "git_blob_sha": "6c79309061490d5a06afd8f6e2d0c6eee288aa6a",
+      "prefix": "广东行测24天集训",
+      "bytes": 10020,
+      "sha256": "1694b75b1c731d171175aa5054d3ea9fdb99b6473b9383d3be9635b755969f97",
+      "lines": 188
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D07/强化版_v2/升级题复算结果.json",
+      "git_blob_sha": "b14046c8f4981dafeca14a0a65473d87375db492",
+      "prefix": "广东行测24天集训",
+      "bytes": 4202,
+      "sha256": "374f0bf56cdfe238ccd16e3b69a24c5b3a8e16bde37a0e78012f47cfbe8786ad",
+      "lines": 43
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D10/完整135题_v1/D10_数字推理001-030_答案.md",
+      "git_blob_sha": "da523e412dd5f574e10f863d229f637d332cacf3",
+      "prefix": "广东行测24天集训",
+      "bytes": 7830,
+      "sha256": "48aa3e9c5c1e7a3503695f5af16243b647ed1fbeb5679abfeaaa57e4346fcc37",
+      "lines": 197
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D10/完整135题_v1/D10_数字推理001-030_题本.md",
+      "git_blob_sha": "df65e527754ed075b97cdf12a96d53d6f953289a",
+      "prefix": "广东行测24天集训",
+      "bytes": 3336,
+      "sha256": "94069ccd29912cf6fd057c648639c8d1992e2dda11906a10c47e7f877bef3721",
+      "lines": 278
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D10/完整135题_v1/D10_数学运算001-040_答案.md",
+      "git_blob_sha": "57053f1c003794ba264af7045f92c4a5d3dbf37c",
+      "prefix": "广东行测24天集训",
+      "bytes": 12815,
+      "sha256": "d7ce45f54857b47cdce076f3aa84c46f36f8d05d5b352a2dc579bbe01d974264",
+      "lines": 336
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D10/完整135题_v1/D10_数学运算001-040_题本.md",
+      "git_blob_sha": "43484e851e5f0d46830379e5380793fbfb583d99",
+      "prefix": "广东行测24天集训",
+      "bytes": 15209,
+      "sha256": "5940d0c01d152a71f94ce17cfdeeec3c85cca9dcd32fdeb0eac6d7ac8cb0cbfa",
+      "lines": 368
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D10/完整135题_v1/D10_数学运算041-080_答案.md",
+      "git_blob_sha": "88e27f9b5df11e95d3d482d53b689213b8d40680",
+      "prefix": "广东行测24天集训",
+      "bytes": 12338,
+      "sha256": "2e6c48dd11a16864e0352c9d7d41dd5fc1149bb8b5d9042b6bc69de8c3097511",
+      "lines": 336
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D10/完整135题_v1/D10_数学运算041-080_题本.md",
+      "git_blob_sha": "8e1d2543b2b55095cdad1940239f6d3c567cdfbc",
+      "prefix": "广东行测24天集训",
+      "bytes": 13308,
+      "sha256": "4e7273e795a6dd6185f9fcda2b3a20d17f492b7360b82f6e7daf9a6c913efe88",
+      "lines": 368
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D10/完整135题_v1/D10_数学运算081-105_答案.md",
+      "git_blob_sha": "ad9c662decab72a95c0871b1d37110921d57aff7",
+      "prefix": "广东行测24天集训",
+      "bytes": 10245,
+      "sha256": "04bae30913667ba152bf7e469f4d0ec737d2129ea5a441fa9890d69fecf50e40",
+      "lines": 215
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D10/完整135题_v1/D10_数学运算081-105_题本.md",
+      "git_blob_sha": "ccb11f9f5840c19ef53f5cdc769991090a27b65c",
+      "prefix": "广东行测24天集训",
+      "bytes": 10216,
+      "sha256": "5f3333878fd0098c89e910b3b0e6e258ac4fc0f835f58344b84b93692f366202",
+      "lines": 233
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D10/完整135题_v1/README.md",
+      "git_blob_sha": "694433e435848c1d9a51bba8587fad994f729586",
+      "prefix": "广东行测24天集训",
+      "bytes": 3326,
+      "sha256": "066a5b0a53b6e1ea205d99931d4a45a99df475b03c533daa0efc7dc10d735a2c",
+      "lines": 44
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D10/完整135题_v1/verify_d10.py",
+      "git_blob_sha": "8f92a010868603041706efe91a5aea9d53cfe052",
+      "prefix": "广东行测24天集训",
+      "bytes": 25522,
+      "sha256": "27f7472de5fc87ec4edfa442a47ef6560360bd67a5556698cdb82c3b749a0331",
+      "lines": 279
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D10/完整135题_v1/来源与核验说明.md",
+      "git_blob_sha": "2ee0fd32b6a8cc291c0fcacbc63e903b91495777",
+      "prefix": "广东行测24天集训",
+      "bytes": 7022,
+      "sha256": "d9ee73b2c0ad2352ae689bfe7d9387b38b906000f88ca34468f0492980ce7e0b",
+      "lines": 57
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D10/完整135题_v1/核验记录.md",
+      "git_blob_sha": "eb67898ece97048d68459a3cc203bb6c1c6c8d10",
+      "prefix": "广东行测24天集训",
+      "bytes": 3026,
+      "sha256": "305e7224e9a00a0cc10ac4d5eca1e6df756df22ee2a9237bc706ba9b34ad49d6",
+      "lines": 41
+    },
+    {
+      "path": "广东行测24天集训/GPT_数量/D10/完整135题_v1/编制索引.md",
+      "git_blob_sha": "67ed4946d59eb65b027b53cb31a993e82a102c5c",
+      "prefix": "广东行测24天集训",
+      "bytes": 6217,
+      "sha256": "868cac7c76da1ded6ce578d1a68b54b0fb4a0a61504dd00afdd22fac885920db",
+      "lines": 143
+    },
+    {
+      "path": "广东行测24天集训/交接/GPT给Claude_D01补齐135题_交接.md",
+      "git_blob_sha": "19779e227015e20e807cd2b9199584c503919f1d",
+      "prefix": "广东行测24天集训",
+      "bytes": 4605,
+      "sha256": "8f58772c97f6cdf789051873ff7652b376d6009e6c68dbf9ef21220c7fd57c77",
+      "lines": 58
+    },
+    {
+      "path": "广东行测24天集训/交接/GPT给Claude_D04减量73题已发布_20261111.md",
+      "git_blob_sha": "5ce87c336e08e785dc83b12f537057db8083f69c",
+      "prefix": "广东行测24天集训",
+      "bytes": 1550,
+      "sha256": "421e5813819a15f8324fd50606f3c6061452ddee8c1b9aaeadf2d9399d6120ce",
+      "lines": 21
+    },
+    {
+      "path": "广东行测24天集训/交接/GPT给Claude_D04完整135题交接_v1.md",
+      "git_blob_sha": "ed6d722a9aa909b4b055aaf1e258c2c712059179",
+      "prefix": "广东行测24天集训",
+      "bytes": 4229,
+      "sha256": "c3e94f40187493c77698d105c26f90704d5fe2a0a404c65658296fc389971ded",
+      "lines": 50
+    },
+    {
+      "path": "广东行测24天集训/交接/GPT给Claude_D07强化版_v2_复核交接.md",
+      "git_blob_sha": "cd758e05a6e4d6e867ea9d5aeb73c76435ab925c",
+      "prefix": "广东行测24天集训",
+      "bytes": 6062,
+      "sha256": "359af1c1e60de123e8cd9e5293a36f21ddf3b72df776bed3123041573f32dda0",
+      "lines": 74
+    },
+    {
+      "path": "广东行测24天集训/交接/GPT给Claude_D07数量135题交接_v1.1.md",
+      "git_blob_sha": "e17028fd93aaf6e224baa55ecf9895f9c869e739",
+      "prefix": "广东行测24天集训",
+      "bytes": 4590,
+      "sha256": "95704f11d004dff2e818d44f837db812075af613dcd6d480d5a4d14c553073f7",
+      "lines": 57
+    },
+    {
+      "path": "广东行测24天集训/交接/GPT给Claude_D10数量135题交接_v1.md",
+      "git_blob_sha": "1ccca21aace98c87833de1b22d3ee634495a9948",
+      "prefix": "广东行测24天集训",
+      "bytes": 4359,
+      "sha256": "dc82595787dc8f3adeb43894f4550ace3b5b4b6d97f080fd98ec44760686bb6b",
+      "lines": 44
+    },
+    {
+      "path": "广东行测24天集训/交接/GPT给Claude_数量原文提取请求_v1.md",
+      "git_blob_sha": "d88b08e4a0345883fdc85e1f6b845a428dd2b764",
+      "prefix": "广东行测24天集训",
+      "bytes": 3916,
+      "sha256": "8de97e6b8a82a4411cca5bbd49514511cadce8adbd86b40dc11dac12fe295b25",
+      "lines": 51
+    },
+    {
+      "path": "广东行测24天集训/交接/GPT给Claude_数量首批60题回执.md",
+      "git_blob_sha": "b3b9b78ad3fb6c1c7f5acc77f3e72bac2a6f0d64",
+      "prefix": "广东行测24天集训",
+      "bytes": 3369,
+      "sha256": "9fb1b059863eb53816c44053bb3e335f7e8b183fb375b4e45f7cf8121dadb44d",
+      "lines": 44
+    },
+    {
+      "path": "广东行测24天集训/交接/GPT给Claude_第1批与D01复核回执_2026-11-08.md",
+      "git_blob_sha": "9dd6b4ff30752c9387a03f86c8fcaab217383e34",
+      "prefix": "广东行测24天集训",
+      "bytes": 7166,
+      "sha256": "e8f8e4e91830b17a7652e56f988dcbb201d5f157bfac7b60d18ac24202684307",
+      "lines": 83
+    },
+    {
+      "path": "广东行测24天集训/交接/GPT给Claude_第1轮修订与审核完成_v2.md",
+      "git_blob_sha": "ef420f734d8de3a7c80425a4d7c9943a69fcd9e6",
+      "prefix": "广东行测24天集训",
+      "bytes": 2289,
+      "sha256": "f4488e20e0e1d731d5349bbbbd0feab9ef531936e7b4b7910d7b36d1a5743fe6",
+      "lines": 20
+    },
+    {
+      "path": "广东行测24天集训/交接/GPT给Claude_第2批审核与新增题源回执_v1.md",
+      "git_blob_sha": "6290c839c230702e1e762196dee28cee571ddd49",
+      "prefix": "广东行测24天集训",
+      "bytes": 5320,
+      "sha256": "82c85cd454c29b50d74e4dbc1e401368319a2702a76c35ff680a839267dc2df8",
+      "lines": 44
+    },
+    {
+      "path": "广东行测24天集训/交接/GPT给Claude_第3批复核回执_v1.md",
+      "git_blob_sha": "2947764d7db50a3a7af1e9d682ef141a01d6f04f",
+      "prefix": "广东行测24天集训",
+      "bytes": 4311,
+      "sha256": "47813866b458d244d68468d3080e77c0d1468d1272d52eafdf0f8b747a3b5322",
+      "lines": 52
+    },
+    {
+      "path": "广东行测24天集训/交接/GPT给Claude_资料减量保留口径难度_20261111.md",
+      "git_blob_sha": "d1116145459f11b0e0cceee5d494c50cb5b3e344",
+      "prefix": "广东行测24天集训",
+      "bytes": 6151,
+      "sha256": "95bafae8fb00bcde509b65790c2871f841f76cca7d0ec7f20ddd5eeadaf662d6",
+      "lines": 70
+    },
+    {
+      "path": "广东行测24天集训/交接/GPT给Claude_资料减量版复核_20261111.md",
+      "git_blob_sha": "d37b996d282ef668289f20592d53e9dbddbb89a6",
+      "prefix": "广东行测24天集训",
+      "bytes": 10731,
+      "sha256": "ef871aa4e5fef8afb7b4bb34cc8cf07a093644d39b19050cd9cf76d0e1750a68",
+      "lines": 142
+    },
+    {
+      "path": "广东行测24天集训/构建/第一轮v2_manifest.json",
+      "git_blob_sha": "b5deea528b9000298c42f1b73279b976ee304efb",
+      "prefix": "广东行测24天集训",
+      "bytes": 29781,
+      "sha256": "81365efa6f31f94026f980c24d9b2151461c71113cd46674d2fdca4dc2a79d8f",
+      "lines": 198
+    },
+    {
+      "path": "广东行测24天集训/构建/第一轮修订_v2.py",
+      "git_blob_sha": "d143205816c677bf8721ebc873a664ebf32418fa",
+      "prefix": "广东行测24天集训",
+      "bytes": 70008,
+      "sha256": "32a5b5c771e985cc9b9b00c32956c108e10a356ac1c1d2e74fb724edfc5fc7fe",
+      "lines": 776
+    },
+    {
+      "path": "广东行测24天集训/第1轮_使用入口.md",
+      "git_blob_sha": "e00372f3743890003eebebcde52406bbbd215134",
+      "prefix": "广东行测24天集训",
+      "bytes": 1983,
+      "sha256": "97ecdc675c677034fc3f0503a7593c46d0405032bb02f8a5570c433d3790d325",
+      "lines": 21
+    },
+    {
+      "path": "广东行测24天集训/资料分析个人知识与方法审校/01_已定算法与做法_20261112.md",
+      "git_blob_sha": "d32fa40922ceb5f9b20f7a0eb14d6fe2a663695e",
+      "prefix": "广东行测24天集训",
+      "bytes": 11536,
+      "sha256": "39b1ad310ec2100018224f04b9c3b5509e47277aa9f691f671d579172da0c6ea",
+      "lines": 295
+    },
+    {
+      "path": "广东行测18套模拟/M01/Claude审核意见.md",
+      "git_blob_sha": "ca882f79ea679db762694d14e0adb0cc956d27b2",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 12815,
+      "sha256": "f6096cb03f6631702abc5dc55bd06dda38618a137aac452803e6f23fcae59a10",
+      "lines": 145
+    },
+    {
+      "path": "广东行测18套模拟/M01/GPT审核意见处理.md",
+      "git_blob_sha": "b0f97a2b10889dd68e0d078a4970471ce292e010",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 4438,
+      "sha256": "287ab12dbddddf3e7a6be30953a648a3837cdd2a10a7cd245e48bffaa0a142d9",
+      "lines": 69
+    },
+    {
+      "path": "广东行测18套模拟/M01/README.md",
+      "git_blob_sha": "f78c5f5d87050d5425518b511e1564d38166a3e5",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 1668,
+      "sha256": "b28eb74a1dcb1e0f120ca7b119e558442d4d726975dd3b032fe8498d33fc8a97",
+      "lines": 22
+    },
+    {
+      "path": "广东行测18套模拟/M01/apply_claude_review_v3.py",
+      "git_blob_sha": "4eb5fb6b5a12cf6c0dd8293576cddc0b9a0e98dd",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 19972,
+      "sha256": "18a8d22d13f74afb8bfc50230628840ab206545619c1d03d9ea7cb10ef5a0794",
+      "lines": 263
+    },
+    {
+      "path": "广东行测18套模拟/M01/build_m01.py",
+      "git_blob_sha": "d7b16ce8ef3cd0cc9cf17318e3115d12f9f1084d",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 365,
+      "sha256": "ee888bd553afb85eecaffd23fae2ed07a93aa90b7a211e4c83e9c7eb19daf436",
+      "lines": 11
+    },
+    {
+      "path": "广东行测18套模拟/M01/build_m01_core.py",
+      "git_blob_sha": "cadafd5bdd7ada820ac629084d43aa9105f2b61e",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 17605,
+      "sha256": "b6ec377044f9f48f8cd14e3248e645b52309ce4d50d2c88ac77ee3083f7f6b4a",
+      "lines": 347
+    },
+    {
+      "path": "广东行测18套模拟/M01/complete_science.py",
+      "git_blob_sha": "2e08df8e930f632e64ba8a04ab0b96aad86b5c4c",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 8274,
+      "sha256": "dde86f8c3cf5d2eeca12fdddb17af79bcaf465513ad785d9aebf5cc1127d73ec",
+      "lines": 145
+    },
+    {
+      "path": "广东行测18套模拟/M01/paper.json",
+      "git_blob_sha": "4e5f130a7aafe33024740d0b780f5143ba26032f",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 1237,
+      "sha256": "16c3cce86ad2705fc2ea4eb9fc016272d42a52c58bb6b65ac9f46e6e52829647",
+      "lines": 47
+    },
+    {
+      "path": "广东行测18套模拟/M01/review_v3_changes.json",
+      "git_blob_sha": "f67b16bd5c84e2a6ace720d607e54d0f52d03ab1",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 17755,
+      "sha256": "b796ec9aa8460734f4b50ad5e57f67a8edd8f3d0f7c9b9e3b268a7159652058a",
+      "lines": 23
+    },
+    {
+      "path": "广东行测18套模拟/M01/science_selection_v2.json",
+      "git_blob_sha": "d1d04e8152cca782bb5463b545ae2c9ad1477d34",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 11268,
+      "sha256": "8741502c95b7aa54eb47abbeb6881a6913a88d5767ceacc3ae73ee68294242b3",
+      "lines": 217
+    },
+    {
+      "path": "广东行测18套模拟/M01/selection.json",
+      "git_blob_sha": "c7d6322a30f6c0b3b9a9f0e8715fbcf1559124c0",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 580595,
+      "sha256": "ef2562eec9370361dfcd3c3c030b84c43eee5618e3437b2c8ff7a5f907cb7ab1",
+      "lines": 14892
+    },
+    {
+      "path": "广东行测18套模拟/M01/交接_Claude_修订复核.md",
+      "git_blob_sha": "91644c4c7f7d8fd70b67593547427bf73e3d88c5",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 954,
+      "sha256": "fff94f31aa2c6c6e62c0bbe44a6bab2e8061dbbfe8b03f2af6fbbd77df341b03",
+      "lines": 11
+    },
+    {
+      "path": "广东行测18套模拟/M01/交接_Claude_科推重选.md",
+      "git_blob_sha": "168e3ba2e2e4c8b6137c86f0841cde6aa7d136a7",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 3030,
+      "sha256": "d9897dce38ee2dce88cd28aba3b0354f7267d4da3b20c0c05b2e309b6bbb3565",
+      "lines": 47
+    },
+    {
+      "path": "广东行测18套模拟/M01/打印版/README.md",
+      "git_blob_sha": "7866daa1a6b9ec439e92adb3e38453bde21c21fe",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 1895,
+      "sha256": "de90ef4c933fe232fb8ff572269ab77241a07d282bdfa9c19d25521ba9e7e2d4",
+      "lines": 31
+    },
+    {
+      "path": "广东行测18套模拟/M01/打印版/历史版本/排版日志_v0.2.0.json",
+      "git_blob_sha": "c48929ab490dd920c45b9ce92d72f36fb12a4a16",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 27691,
+      "sha256": "603d6bdde370ed3b18935b488958e523ca74be8421f1625d0ef7274a9f2131cb",
+      "lines": 1063
+    },
+    {
+      "path": "广东行测18套模拟/M01/打印版/排版日志.json",
+      "git_blob_sha": "3aa5cf16e516333a21a643a3a36a8a9ffac69704",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 10961,
+      "sha256": "2b22326c844ef8dd965c4b58b25330a5c1aaadaf9ed0f7817eea9a07e2a09275",
+      "lines": 638
+    },
+    {
+      "path": "广东行测18套模拟/M01/来源登记.jsonl",
+      "git_blob_sha": "0e4fdfea133fa83964748572247df9f17db46678",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 255602,
+      "sha256": "052e4ea9274467c40b8bf5c5941b8ce26b859833d7f92cbd77cfdf6cec547061",
+      "lines": 90
+    },
+    {
+      "path": "广东行测18套模拟/M01/核验报告.json",
+      "git_blob_sha": "3f9d042abe92336cbc012f07419bee4f2267e58d",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 1898,
+      "sha256": "d7459ed2eb1e8671eb7eb7612a2a122c63fa3393a3dd4caacf373aa668fafd6f",
+      "lines": 65
+    },
+    {
+      "path": "广东行测18套模拟/M01/核验记录/Claude意见处理核验.json",
+      "git_blob_sha": "770f4ace23c0af4df5ee8f788ad231df55ddd11b",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 3306,
+      "sha256": "dc16c72abf25791d92ecccca032d6b6478564d0c36e0b3881b82683c7f793d07",
+      "lines": 168
+    },
+    {
+      "path": "广东行测18套模拟/M01/核验记录/README.md",
+      "git_blob_sha": "27e1427a685ca40e13e082085f9ad4d2a7ef79b3",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 1884,
+      "sha256": "c70350b17d87c0e89107f714785b56c0245bc59160e88fc82328fd4185c805be",
+      "lines": 20
+    },
+    {
+      "path": "广东行测18套模拟/M01/核验记录/assembly_review.json",
+      "git_blob_sha": "ae8275e551e049d4d7aa1158efbd6a9da5a4be88",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 1833,
+      "sha256": "3292b2e4ff3f25faaf361d55e71b2bd8a67e8a0a82756e2cb197ecbb7f949256",
+      "lines": 33
+    },
+    {
+      "path": "广东行测18套模拟/M01/核验记录/check_science.py",
+      "git_blob_sha": "282cdc456df65a517de96c0707c46b102470085c",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 4643,
+      "sha256": "6a35a064e080a7546c2020f73093c0442c8d2551b36b374255cb45578b4002c7",
+      "lines": 64
+    },
+    {
+      "path": "广东行测18套模拟/M01/核验记录/claude_review/brute_51_55.py",
+      "git_blob_sha": "69351356245dcb2ce4799eb24a925353d716ac49",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 3340,
+      "sha256": "9125de07c2999f2a787e39f2ca39b2a809ab77b066d57d4173c497d0b68090a4",
+      "lines": 68
+    },
+    {
+      "path": "广东行测18套模拟/M01/核验记录/claude_review/claude_review.json",
+      "git_blob_sha": "3547a99f0a3b41473a395610cc63b40b8f31f3fb",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 15581,
+      "sha256": "eb8f2fa6a715b224736a60124ee2cc330c678489aba99a8c95e6ab019feeb757",
+      "lines": 828
+    },
+    {
+      "path": "广东行测18套模拟/M01/核验记录/claude_review/data_solve_blind.py",
+      "git_blob_sha": "a6a464b70966017e38028f7ae77816dd85a85920",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 10958,
+      "sha256": "fe3ebb74997f4371d234c6fb243441dda4708bffd5184107ad9a9b6c592007c0",
+      "lines": 134
+    },
+    {
+      "path": "广东行测18套模拟/M01/核验记录/claude_review/quant_verify.py",
+      "git_blob_sha": "1a0d8e2fcf8f1d8441744165981acafcd353aaaf",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 4743,
+      "sha256": "c1613a3c46bb1f5c52cfca3963bada570c29dadb56cac1b4437b7e143dd9323b",
+      "lines": 123
+    },
+    {
+      "path": "广东行测18套模拟/M01/核验记录/claude_review/science_verify.py",
+      "git_blob_sha": "b794e16269578117801a68c8dd891772b56e27d8",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 2828,
+      "sha256": "53a836d40f98265407eab3c191c1bf12f5fa871901e6abfdb3f839a41a260f82",
+      "lines": 59
+    },
+    {
+      "path": "广东行测18套模拟/M01/核验记录/judgment_logic_review.json",
+      "git_blob_sha": "ff1c6e5ad54223d733721eada2b17b0aa86b4ce9",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 7830,
+      "sha256": "43c7864b75950a09b3ccc9cbfdde974d590ec041ddf0367adb6a039d5d492f29",
+      "lines": 166
+    },
+    {
+      "path": "广东行测18套模拟/M01/核验记录/judgment_logic_review.md",
+      "git_blob_sha": "eab0fe9a072c8ad0369b915e11676011fe00f09c",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 2159,
+      "sha256": "04f91cd5b38bb4bf8b6a6afc79c1a923e60bf81445c99d2aba2ba8bb17feda2b",
+      "lines": 22
+    },
+    {
+      "path": "广东行测18套模拟/M01/核验记录/judgment_logic_review_blind.json",
+      "git_blob_sha": "15c7c97165c3d499ce2c07d8ce98643d4feb60a3",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 4699,
+      "sha256": "2439444dc6d02b2da346e30e38582f7f174b99b35d79943f882e2fd09a0bf3bb",
+      "lines": 77
+    },
+    {
+      "path": "广东行测18套模拟/M01/核验记录/judgment_notes.md",
+      "git_blob_sha": "61f275ddb273ce2dc619fab9802ee8cd65cab9d5",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 5205,
+      "sha256": "7ed9c554d7118b446e0841aabb9dc66f92fe96093aa72602e7d72d1d721b11a8",
+      "lines": 69
+    },
+    {
+      "path": "广东行测18套模拟/M01/核验记录/judgment_prior_exposure_scan.json",
+      "git_blob_sha": "76524c25a70ce442293bc37f258619609c5e6c3f",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 4769,
+      "sha256": "8e31c802d2d8011c9dfc76d130264365a07cc7c90c93d057f174da31dbbaab51",
+      "lines": 187
+    },
+    {
+      "path": "广东行测18套模拟/M01/核验记录/judgment_verification.json",
+      "git_blob_sha": "edb3b1431e0e7798cb871d1ea4c700839bab6a91",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 3797,
+      "sha256": "720af3bb41dcfe99b20951bced19e05d67086b4070de6e3804dde06b66c13c7a",
+      "lines": 231
+    },
+    {
+      "path": "广东行测18套模拟/M01/核验记录/old_graphic_source_ids.json",
+      "git_blob_sha": "a614042760e84244b317f3fb8630e7e13735f191",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 438747,
+      "sha256": "a72e2711f1e6d0db760a4576e34bbb2ea003c179d818588096d0b29b372853be",
+      "lines": 12679
+    },
+    {
+      "path": "广东行测18套模拟/M01/核验记录/politics_independent_answers.json",
+      "git_blob_sha": "f1b7d23d2252b746151385356b0a5b71f15e6d2a",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 211,
+      "sha256": "2ba765883cd5df9c0e5945239037cf07392cb1e8b19301d5bece9fe095023f6a",
+      "lines": 17
+    },
+    {
+      "path": "广东行测18套模拟/M01/核验记录/politics_review.json",
+      "git_blob_sha": "0db86dbc147f0eab37e158b2d47b79a1323ee174",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 18453,
+      "sha256": "80677741fcbbfcf0a271fd8c15118c04332fc5a6aa3f337f5ae816ca89cf4431",
+      "lines": 423
+    },
+    {
+      "path": "广东行测18套模拟/M01/核验记录/politics_review.md",
+      "git_blob_sha": "6445946ffbffc307480d509e91e2196d8acfd8fc",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 9897,
+      "sha256": "24f72aa48a1b6b7e69f1e4a424404cb0cfaedb2b38c01a7f61651d963b5e84df",
+      "lines": 107
+    },
+    {
+      "path": "广东行测18套模拟/M01/核验记录/politics_review_resolution.json",
+      "git_blob_sha": "2595c21f209f862d513e7a464d933d62d4111fcf",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 743,
+      "sha256": "ae6e28717f0ab117be44a7efc86383f2d772c844621b391cb1bd562f44648d31",
+      "lines": 35
+    },
+    {
+      "path": "广东行测18套模拟/M01/核验记录/quant_data_notes.md",
+      "git_blob_sha": "3f989b98421938c906f3b1900a6a4b99fe37bdd6",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 5590,
+      "sha256": "5a97a59acc386ef58c0eeffb8703b3c4f02bd8dfd698b5e8c13b4ca33b180129",
+      "lines": 57
+    },
+    {
+      "path": "广东行测18套模拟/M01/核验记录/quant_data_prior_exposure_scan.json",
+      "git_blob_sha": "71ab9c258819d3fb98300fa5151daf35662a829b",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 619,
+      "sha256": "79b09e64425e14419b6230b3d71b33bc848889a04cbf394b4687419faa47d958",
+      "lines": 20
+    },
+    {
+      "path": "广东行测18套模拟/M01/核验记录/quant_data_verification.json",
+      "git_blob_sha": "8c90b5059454bc00a9893b39d82e29e7cb482319",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 4820,
+      "sha256": "1e53a8b10fd47fb3116a0c7cfc13f701e6bb2a92425211133df62e11f7a716ad",
+      "lines": 247
+    },
+    {
+      "path": "广东行测18套模拟/M01/核验记录/science_model_checks.json",
+      "git_blob_sha": "3273680c51c17f18c4b5c7424878300fc773f919",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 2783,
+      "sha256": "50244345ca31bd079383d5cc8880c4618554f3bd00f0de067d7de069bab3b409",
+      "lines": 172
+    },
+    {
+      "path": "广东行测18套模拟/M01/核验记录/verbal_independent_answers.json",
+      "git_blob_sha": "6d58e4ce6ca2544fab338546a5c0523f05ed853e",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 710,
+      "sha256": "1351242d14afca24d0ac47719353d95ce3df27955965407077d0177e105b26d8",
+      "lines": 77
+    },
+    {
+      "path": "广东行测18套模拟/M01/核验记录/verbal_national_provenance.json",
+      "git_blob_sha": "9b83980feeb50bad21e20050428cffdc74322365",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 4411,
+      "sha256": "09dd76667d2fb02e21efb9867b1c1bbc5ecfcbc7cf671b4ed76d9fe8f6d3a4a8",
+      "lines": 102
+    },
+    {
+      "path": "广东行测18套模拟/M01/核验记录/verbal_notes.md",
+      "git_blob_sha": "eb3128dabee35c42af09d3152b4663a19f720852",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 5855,
+      "sha256": "6e0958a58d0cb96efba36a0f328d5c550d18d76592ac65009f9bb7c6adecc640",
+      "lines": 73
+    },
+    {
+      "path": "广东行测18套模拟/M01/核验记录/verbal_review.json",
+      "git_blob_sha": "56662ae7d2f4a5d3bdc2519de23f5368f812d9f1",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 5179,
+      "sha256": "4fa0001db4c7e2358a7f71503f7f48d11df4a1223780f5772f252a0f027c9d2f",
+      "lines": 127
+    },
+    {
+      "path": "广东行测18套模拟/M01/核验记录/verbal_review.md",
+      "git_blob_sha": "03a9d523681ae1fbd91cf30b922a7802ff25c5ae",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 963,
+      "sha256": "40acbf0ea925ccedcfb4c46f7f0fa33b4c0c095b3009b3ca0f1fd93bcd653d2b",
+      "lines": 12
+    },
+    {
+      "path": "广东行测18套模拟/M01/核验记录/verbal_review_blind.json",
+      "git_blob_sha": "ad506bbe95e5999fa81dca48e19578b7430a463d",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 3420,
+      "sha256": "ff7ecc16503dc49162385682c0d79346213a00b1fd2c22d4ac88ebbc81912f90",
+      "lines": 77
+    },
+    {
+      "path": "广东行测18套模拟/M01/核验记录/修订构建复检.json",
+      "git_blob_sha": "ac728bdd2cbb64a2630b8799148e4c4cc3070484",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 12434,
+      "sha256": "f54ff9bdbc89a6caccba3ca097b50dcd1a9e8fae5310822b2faa9b90193ed59e",
+      "lines": 40
+    },
+    {
+      "path": "广东行测18套模拟/M01/核验记录/格式修订日志_v0.3.0.json",
+      "git_blob_sha": "678ca63328b82824d37cf65e69ee0adc84cc7885",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 18967,
+      "sha256": "4a10957597aaaa834c0cfe4d0c0122cdd90dab3a1b643832e9cf0340cb645d54",
+      "lines": 408
+    },
+    {
+      "path": "广东行测18套模拟/M01/核验记录/科推重选核验.json",
+      "git_blob_sha": "077d12bcb0b0f7a44096852c8f399c66af7da6fa",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 1296,
+      "sha256": "d70c79387164fef162c89049b1adcfb0def19fbf5c096caf57e372990c02e251",
+      "lines": 33
+    },
+    {
+      "path": "广东行测18套模拟/M01/科推5题_恢复候选.json",
+      "git_blob_sha": "026ee2db241cae9917dbd22648dac450295406c0",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 5222,
+      "sha256": "59d311b2d6bd588d1c8f9b556d6aca32f15e65d9b21022fb22e09d7530b7a6c6",
+      "lines": 76
+    },
+    {
+      "path": "广东行测18套模拟/M01/科推5题_解析与来源.md",
+      "git_blob_sha": "9d817901de51783ce63ddfcbf7b55b09d7f0a88e",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 5430,
+      "sha256": "a116a778d143fa6a2860f4c681852ad51acd14cb54518e76b650db133f33ca9d",
+      "lines": 47
+    },
+    {
+      "path": "广东行测18套模拟/M01/科推5题_题本.md",
+      "git_blob_sha": "39bbfd77d1dac54276dae63762bed6a70e1e1355",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 3158,
+      "sha256": "490218c8791dc6b0d477529b17867ea41f6a990219c716a38dba32baad61afec",
+      "lines": 80
+    },
+    {
+      "path": "广东行测18套模拟/M01/答案与解析_待审.md",
+      "git_blob_sha": "532b6de11177c8015f2fedaae2511c624ae2291f",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 65248,
+      "sha256": "7766d8acd8f9cd58c7f5c866db1a134f9749ca7be8057c95d918f90e66226c70",
+      "lines": 731
+    },
+    {
+      "path": "广东行测18套模拟/M01/选题记录.md",
+      "git_blob_sha": "e9746c7bd0feeec2970099a33775215f464611f6",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 12014,
+      "sha256": "adfde6a4f9f9335177d3032d61094dd96ec5e0a9d9a56c8b973aa3017fb05e7e",
+      "lines": 94
+    },
+    {
+      "path": "广东行测18套模拟/M01/题本_待审.md",
+      "git_blob_sha": "55542285c392c6a8b2d5d202797bcaa80f87bb60",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 48116,
+      "sha256": "c33d669b9665316ca7d6a45705a46c1f24083182baa8752fb5e20e8e48c0b2d2",
+      "lines": 1224
+    },
+    {
+      "path": "广东行测18套模拟/M01/题目.jsonl",
+      "git_blob_sha": "52bc137e9664a2804cb7e7f2f47350e74dc80cb8",
+      "prefix": "广东行测18套模拟/M01",
+      "bytes": 92875,
+      "sha256": "781d26bbfd55d6693297bb0c6bdd243363a8cda168e5ae3e98433f0e67306121",
+      "lines": 90
+    },
+    {
+      "path": "广东行测18套模拟/M02/Claude审核意见.md",
+      "git_blob_sha": "5acc9837c6596e23c69f916c70157b8457951163",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 16261,
+      "sha256": "bdd496b4d08f43c11ebd8bf83466ed7ef1bfd37c17b4dc578ea2110719856a2c",
+      "lines": 213
+    },
+    {
+      "path": "广东行测18套模拟/M02/GPT审核意见处理.md",
+      "git_blob_sha": "cb459706d459b110edc7a112c2ef72f4015f32f0",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 5711,
+      "sha256": "790cea2a83053f6e47bc513c7f012c840a160eb9c10125e6ff119c97c3d20b32",
+      "lines": 68
+    },
+    {
+      "path": "广东行测18套模拟/M02/README.md",
+      "git_blob_sha": "443691e2d138c1ddfcffdfb5a1874d436709de3e",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 1607,
+      "sha256": "0120a5aaff5c545df4e92eb982999092bf16cb60ac50bcaadf97d417a3b0035f",
+      "lines": 25
+    },
+    {
+      "path": "广东行测18套模拟/M02/apply_review_v020.py",
+      "git_blob_sha": "e1332cc26905df7e67f5981d6b6f355ba26c9d6b",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 37675,
+      "sha256": "9b4750607de357e37565de9423fd65f462d5b84c2df0c97d9ea8007c36073711",
+      "lines": 267
+    },
+    {
+      "path": "广东行测18套模拟/M02/assemble_m02.py",
+      "git_blob_sha": "34080f2b7ebb9c8e74824352a225e35fc23d78b0",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 7559,
+      "sha256": "6102aa07968964acfc11409a13d761343f85806ee20de35650bedc870cb4ea56",
+      "lines": 97
+    },
+    {
+      "path": "广东行测18套模拟/M02/build_m02.py",
+      "git_blob_sha": "3b3887cf63abce737e9add96cb28a8b0e5faeac8",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 17879,
+      "sha256": "06cc9ff9bc4698ed7fb4ce706f84e9774a77447136f871d37fd499962d9e4ce3",
+      "lines": 351
+    },
+    {
+      "path": "广东行测18套模拟/M02/editorial.json",
+      "git_blob_sha": "7a4de7800444e030ef75dcea1a773547dc090b51",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 40821,
+      "sha256": "355fe3a37c786d1f4ded4e40e7e9b6e81e9c1ccbac97541922ceb5cfc507a07e",
+      "lines": 403
+    },
+    {
+      "path": "广东行测18套模拟/M02/paper.json",
+      "git_blob_sha": "6742ab586c2e72af994279d3bf9a9baa42bdb1fd",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 1388,
+      "sha256": "03409341e68a74b22a7ff21e45c069b05fc181e9cb62a78ce2b885c31d188541",
+      "lines": 68
+    },
+    {
+      "path": "广东行测18套模拟/M02/politics_original.json",
+      "git_blob_sha": "0be0c487dd7548abfeef90d445df534a13f35b7a",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 29634,
+      "sha256": "d8a43acec958a97b1549d7b96e5344b76c1c215f49ad9be7b3d14c690f0d360f",
+      "lines": 632
+    },
+    {
+      "path": "广东行测18套模拟/M02/selection.json",
+      "git_blob_sha": "86fdb19531fdb3114f5922667525d9ab87b055ac",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 572819,
+      "sha256": "212ece9b168185e97162f1e049e737738770b329e427bd56ab7009e9aca17038",
+      "lines": 16562
+    },
+    {
+      "path": "广东行测18套模拟/M02/交接_Claude.md",
+      "git_blob_sha": "f8efb031745d2078ec938f302eea5c7a630e5646",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 4082,
+      "sha256": "28c4deb2f6be6760a3061ec09fecaba604bd7931a28a3b813dd6dbf6baede5c2",
+      "lines": 36
+    },
+    {
+      "path": "广东行测18套模拟/M02/交接_Claude_修订复核.md",
+      "git_blob_sha": "cc8bf845bfbd57552a65c880fdb8eeaaabd0c1fa",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 874,
+      "sha256": "b79c53bf6e8db6902e0b6eab7d35bc6619ab15f438d6496ba82dd2538baf902f",
+      "lines": 9
+    },
+    {
+      "path": "广东行测18套模拟/M02/工作断点.json",
+      "git_blob_sha": "35e8c0e06b99259690087683e2121df6d64ee683",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 2477,
+      "sha256": "24fcbb8a087bc478f265972b44cc47ad72a4e989d4dc68e121ef07b2fd5e8d6d",
+      "lines": 11
+    },
+    {
+      "path": "广东行测18套模拟/M02/撤题记录.json",
+      "git_blob_sha": "366427a6e861b08930ad915d14cdac7ddb3134d6",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 20309,
+      "sha256": "9b839db8b606e1268646bc5d72449521d1f3b6e8f0a547217ef0966917d0b7fb",
+      "lines": 406
+    },
+    {
+      "path": "广东行测18套模拟/M02/来源登记.jsonl",
+      "git_blob_sha": "09b3bf1dc6ae7e1e8bbbc7accece1fc0cd541fd1",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 181412,
+      "sha256": "530f79b9d785dbd54b2cde9bb160c1260607c5eb63dce724939791085dee7afb",
+      "lines": 90
+    },
+    {
+      "path": "广东行测18套模拟/M02/核验报告.json",
+      "git_blob_sha": "d203d0ac4907f7682c0f8a312a9ec8da5a7d4864",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 1728,
+      "sha256": "edb47ee0abd1ab145d11a9b2f559aee589a07afc3a357ab84aa6ab6b6cce1a7e",
+      "lines": 64
+    },
+    {
+      "path": "广东行测18套模拟/M02/核验记录/check_diagrams.py",
+      "git_blob_sha": "9ef3e7e1fb6be25f5332bdc59624dafcf88d4425",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 3387,
+      "sha256": "25fd52fb1b9dcd8cd43edf067be280047dbfc427b7e943b6634ece79a550988f",
+      "lines": 62
+    },
+    {
+      "path": "广东行测18套模拟/M02/核验记录/check_numeric.py",
+      "git_blob_sha": "5bab6c711cf4b4d93dce5433ad2d575e4a296b5a",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 9781,
+      "sha256": "4cdb4c9d180687c81813b92fd6d5ea9dbff7d24fd23478578270bcbecf3c1ede",
+      "lines": 126
+    },
+    {
+      "path": "广东行测18套模拟/M02/核验记录/claude_review/claude_review.json",
+      "git_blob_sha": "a76836cc22dd3657506ae8497745acff98f33fb0",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 17401,
+      "sha256": "ee11b98068a77f6cb87ef7d4b8b12a8d1437e4e133e1f765713b909f99e02b33",
+      "lines": 839
+    },
+    {
+      "path": "广东行测18套模拟/M02/核验记录/claude_review/fig_q50_cube.py",
+      "git_blob_sha": "582006f40e0eb9a97f8ced65734dd7ef46fdfee2",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 4633,
+      "sha256": "ed925ee0e157add87f70fd91be77d2b6032bf7ac49ba387137973e4c6e58208e",
+      "lines": 105
+    },
+    {
+      "path": "广东行测18套模拟/M02/核验记录/claude_review/logic_bruteforce.py",
+      "git_blob_sha": "9d4797a040ea082091d05f50ec01157fc4ee4bee",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 6525,
+      "sha256": "202489ce0c2f9eaa98ff04dccf5ad82919d206b1fd56a8eb8ceca4ea4680d220",
+      "lines": 130
+    },
+    {
+      "path": "广东行测18套模拟/M02/核验记录/claude_review/quant_q44_search.py",
+      "git_blob_sha": "b44184eec8ee83a484f81c73727f7fab7fae67e4",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 2976,
+      "sha256": "3b35cf7e4634ac0a056672fbb1aef645f868faa0c2e7b856fcb920a904414f17",
+      "lines": 78
+    },
+    {
+      "path": "广东行测18套模拟/M02/核验记录/claude_review/quant_verify.py",
+      "git_blob_sha": "f500fbb9b07374b12384d06c20ce6b942c707e3e",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 6291,
+      "sha256": "302a0ded7276d9bb21715b3c3a8e54640b4f09505d5c2b96455917fbe6cb610f",
+      "lines": 186
+    },
+    {
+      "path": "广东行测18套模拟/M02/核验记录/claude_review/sci_q67_nodal.py",
+      "git_blob_sha": "8cdceccbc1b66e7e17cd4a9ca7d1eb0a2504e7eb",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 2873,
+      "sha256": "e6db9623f79ed3b47d3750375eff6215bebe3b8083cb64b1131de984786ae07d",
+      "lines": 50
+    },
+    {
+      "path": "广东行测18套模拟/M02/核验记录/diagram_checks.json",
+      "git_blob_sha": "0284ccb2c486f0d27ce525d36d5a7345c8774980",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 3837,
+      "sha256": "46312d26e3c8c8326bf6b404435a1c4fd2e2c46de92f0ef15484ca1b4aff7e59",
+      "lines": 270
+    },
+    {
+      "path": "广东行测18套模拟/M02/核验记录/layout_log.json",
+      "git_blob_sha": "01a9988e6798bc8448b58182bdb7159af63fb462",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 16168,
+      "sha256": "9ff0558441aeb51531715b0be8dd3d66a4d3b3dad05cedb2bc3248cf1b2d68d0",
+      "lines": 424
+    },
+    {
+      "path": "广东行测18套模拟/M02/核验记录/numeric_checks.json",
+      "git_blob_sha": "4f2d6a95f98b86725aba8867671d67967d4a023a",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 8575,
+      "sha256": "4b7814a41d48ace73ff6d313e9d97021ae84b9a84cea4cd967fcfc9794f31e57",
+      "lines": 451
+    },
+    {
+      "path": "广东行测18套模拟/M02/核验记录/politics_references.json",
+      "git_blob_sha": "9e35dd4800b08aecd0b12574846a4bb0cf7ea5fc",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 8638,
+      "sha256": "0d5113bd540773afcef771e5d8894ad5065d0d6e49fc31a370d333039d366155",
+      "lines": 248
+    },
+    {
+      "path": "广东行测18套模拟/M02/核验记录/source_answer_comparison.json",
+      "git_blob_sha": "1fb3c49dd8a50b1988d5e7ac34de689b5ac63973",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 4144,
+      "sha256": "8118dda901cc39f2c96845d56f51851910e710a46433ab5c4a733882b9b2815b",
+      "lines": 196
+    },
+    {
+      "path": "广东行测18套模拟/M02/核验记录/verify_delivery.py",
+      "git_blob_sha": "f42e13b1d3edbf770ea20cf29bbf93fb05c45c98",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 3914,
+      "sha256": "a7721a8694d87c5666241cec83eb626a79f1263c14c09d6737309e606389916c",
+      "lines": 49
+    },
+    {
+      "path": "广东行测18套模拟/M02/核验记录/交付核验.json",
+      "git_blob_sha": "86c8e0017f1a0bb7c87cf7a79b6af22a59bf66ee",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 2180,
+      "sha256": "6eb23ad0af49d8fcdf51590b0945e1b7d375bf6cc12ed68052c0018abf668662",
+      "lines": 92
+    },
+    {
+      "path": "广东行测18套模拟/M02/核验记录/修订基线.json",
+      "git_blob_sha": "dc8619c2fb05f48ca2d9ef07b7a734e578fc2f84",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 1715,
+      "sha256": "525e625d856314e7b13239cee8bf8113771758ea3f483be920589d28e57cf7d1",
+      "lines": 91
+    },
+    {
+      "path": "广东行测18套模拟/M02/核验记录/历史_v0.1.0/check_numeric.py",
+      "git_blob_sha": "4c356172f1bb9b246ebe49517e09bbdfa3d98180",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 8813,
+      "sha256": "73696738cf99979ca6c5c10c9fffa83e6995dfe91c5f0a9d98bb3b17081b6d90",
+      "lines": 114
+    },
+    {
+      "path": "广东行测18套模拟/M02/核验记录/历史_v0.1.0/layout_log.json",
+      "git_blob_sha": "f648ac79b034184d5edd6a8f96f78ecfb2ce0fee",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 16040,
+      "sha256": "2bde4526557d88235bca1051de007d0b049941f9558ca394cd7552398d4e21b6",
+      "lines": 422
+    },
+    {
+      "path": "广东行测18套模拟/M02/核验记录/历史_v0.1.0/numeric_checks.json",
+      "git_blob_sha": "8f76afe5052f33b99d9768ea340810e0eb2e880e",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 7829,
+      "sha256": "d20302f60e6150ffc229c7f1a26ba806585e0e6bd03a5debd4298cd83b0abec4",
+      "lines": 418
+    },
+    {
+      "path": "广东行测18套模拟/M02/核验记录/历史_v0.1.0/politics_references.json",
+      "git_blob_sha": "2a271e7703f0497796f9e754fd5d1695b7face30",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 3606,
+      "sha256": "818c0db8acd489b58ad440f81623ed221a9a925f64dd5e973cfeae4388afbc9b",
+      "lines": 74
+    },
+    {
+      "path": "广东行测18套模拟/M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "git_blob_sha": "702fa9bb1bb0db7769019da33e5c01805eb0e6d2",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 539390,
+      "sha256": "74576854958fe537ca04ebe41c171262fbf4c3e5d7166532bd974f4d9d2254bb",
+      "lines": 15578
+    },
+    {
+      "path": "广东行测18套模拟/M02/核验记录/历史_v0.1.0/source_answer_comparison.json",
+      "git_blob_sha": "bd069bdd4a20acadb5a9584a0ff6e0f7d6933bf7",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 4287,
+      "sha256": "3d2658ecff06c3c4ba5fc978673bbf30adf12c220e6cf6332c16728f0b1ae9f2",
+      "lines": 202
+    },
+    {
+      "path": "广东行测18套模拟/M02/核验记录/历史_v0.1.0/verify_delivery.py",
+      "git_blob_sha": "4bcd1f5b655ba4ca7552000ef7ebcf2003dea69f",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 6012,
+      "sha256": "ff15d5ebad930c99df73e5d628ffc0c2c27d2cbd93bb783c2901beca0c2223a3",
+      "lines": 55
+    },
+    {
+      "path": "广东行测18套模拟/M02/核验记录/历史_v0.1.0/交付核验.json",
+      "git_blob_sha": "ac1d0349cd718a6d5a588d3dffe48605c551553a",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 4282,
+      "sha256": "c57e1a5c8202c05357aed7a244c2b529c591d629d2d8ef760477cb1cd3fbc4a4",
+      "lines": 67
+    },
+    {
+      "path": "广东行测18套模拟/M02/核验记录/审核处理变更.json",
+      "git_blob_sha": "e73f90d1b9fcca3d3f1d28abf5ed33a28e9a4ce7",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 5802,
+      "sha256": "89a4039e79b5899c589d05903ced88b59d6671323197692dd911b6a892941fac",
+      "lines": 172
+    },
+    {
+      "path": "广东行测18套模拟/M02/答案与解析_待审.md",
+      "git_blob_sha": "3f80e60eada61429bacbc4df6d07b39aaf345652",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 62149,
+      "sha256": "ca011a98709258f72bd6eaa3bc210a16753dc0f4295b19587fc45f4e6e2b73d5",
+      "lines": 733
+    },
+    {
+      "path": "广东行测18套模拟/M02/编辑底稿/16-45.jsonl",
+      "git_blob_sha": "b779258e397c1941baa265f1eae70aa01bb62bf8",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 15320,
+      "sha256": "1807a69253c2715c4b7c27b905147d20222dd512104c7d4f5770e2b81296801e",
+      "lines": 30
+    },
+    {
+      "path": "广东行测18套模拟/M02/编辑底稿/46-90.jsonl",
+      "git_blob_sha": "ceb7a3c13c8df2bab4a1307e31eb8abc1fcbb939",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 23603,
+      "sha256": "eb238537361a5f18c81beddaad6b56faa62d9211ea7cf163de1fdff437da5c39",
+      "lines": 45
+    },
+    {
+      "path": "广东行测18套模拟/M02/编辑底稿/politics_original.py",
+      "git_blob_sha": "7da144dffdb6d19bca6b2e7b99b58556a896fdd5",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 16059,
+      "sha256": "3a8c05263089e92c9ee4de1d5bbcf35d7215561ad826c7cb6a6e8abd98a5413b",
+      "lines": 42
+    },
+    {
+      "path": "广东行测18套模拟/M02/选编断点_75题.json",
+      "git_blob_sha": "0c646c2600d97888fc20a4b6ec13d48f021807b0",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 2918,
+      "sha256": "de46e340199811ba60f592084e69925b0dab0de397bf5858d7ef17de12d7ee12",
+      "lines": 1
+    },
+    {
+      "path": "广东行测18套模拟/M02/选题记录.md",
+      "git_blob_sha": "c63345135d84792cb698eed50d3ee95e23b35634",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 9898,
+      "sha256": "c14d6f7ef71f01505a8f5a3713738ce5576449e30589f9c9ddfa346eb0f1ca6a",
+      "lines": 94
+    },
+    {
+      "path": "广东行测18套模拟/M02/题本_待审.md",
+      "git_blob_sha": "6a0a27f0d551bcfbaba3fa94c8f5fb90eeb62370",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 48076,
+      "sha256": "55d4e500f3fce97d497155d4f02b3ab1a19d06afcb982cafec625ac9ed8b4e6c",
+      "lines": 1227
+    },
+    {
+      "path": "广东行测18套模拟/M02/题目.jsonl",
+      "git_blob_sha": "2932e40a286eaf23b5ba8ef975cc465d43950e6f",
+      "prefix": "广东行测18套模拟/M02",
+      "bytes": 94854,
+      "sha256": "85def13f7422340bdbea8aa102ed4322d533950d3089191e02810e6d50e484fc",
+      "lines": 90
+    },
+    {
+      "path": "广东行测18套模拟/M03/Claude审核意见.md",
+      "git_blob_sha": "0709e70540bea83cc1a477974f3d3888670d51ba",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 28163,
+      "sha256": "d8d81ba0e92fea612d67463389ad9633a5ddd270653de902c2ecf5a33a0698c2",
+      "lines": 323
+    },
+    {
+      "path": "广东行测18套模拟/M03/GPT审核意见处理.md",
+      "git_blob_sha": "b38bb1118d19d811ebb9f565b12cf2fde194c57c",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 9421,
+      "sha256": "2aed1fe5d0131cfed2f35bb7d0aff6040aaaa0624c32d295f4a0ba871b6ece86",
+      "lines": 76
+    },
+    {
+      "path": "广东行测18套模拟/M03/README.md",
+      "git_blob_sha": "a9f862a2b623a39ceea76e6903877e20b02e3288",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 5092,
+      "sha256": "1b4d69269fdeef5a60fe31d73e8bfcdee307adf5eee4ed9960d24096c925165d",
+      "lines": 65
+    },
+    {
+      "path": "广东行测18套模拟/M03/build_m03.py",
+      "git_blob_sha": "7f82d8a0bdf6eeb10e6eeaf6920efc422dbf319d",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 18966,
+      "sha256": "a8bfe3354319dc0848577d5af8c265e2a81676c71e36c27aabc5a1aabad28a69",
+      "lines": 369
+    },
+    {
+      "path": "广东行测18套模拟/M03/paper.json",
+      "git_blob_sha": "f0e6d5a8eb59bf698c7b304139d3c156433003e0",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 1627,
+      "sha256": "e6f9b1c8ff4b595629a842f4d61501008e4a8171a6d96e3abbabd8b731a26fc3",
+      "lines": 82
+    },
+    {
+      "path": "广东行测18套模拟/M03/selection.json",
+      "git_blob_sha": "f583b9280160bb4229455da54f0de95d0da0f2b8",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 729767,
+      "sha256": "7b7a951aa2cc279c8eb9e146717e3222218cfcfe219b53e0f6a6ed86af742d0b",
+      "lines": 20058
+    },
+    {
+      "path": "广东行测18套模拟/M03/交接_Claude.md",
+      "git_blob_sha": "f647e9f3cef6004b48e9f52bb55aec7ec628b902",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 11979,
+      "sha256": "b02f9a061efee1d43eec8c93f4b3f98eec4963ae9825e23b22256c49ebe0679e",
+      "lines": 104
+    },
+    {
+      "path": "广东行测18套模拟/M03/交接_Claude_修订复核.md",
+      "git_blob_sha": "9dc15a079823eb9b6c696d247f64b5bab52de140",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 5371,
+      "sha256": "116ed3857bbcdb5a990a453fe8767ede848c8dda0509ba2c6cec1bb7a73a6097",
+      "lines": 62
+    },
+    {
+      "path": "广东行测18套模拟/M03/修订底稿/apply_v020_revision.py",
+      "git_blob_sha": "7bd6fbb3690f0eb1665a91f7b140e42afcc93dd3",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 5862,
+      "sha256": "9e0837960e535059ed55969acdf9ba6ff76d9b0db60b73878b30386be93cb7b5",
+      "lines": 92
+    },
+    {
+      "path": "广东行测18套模拟/M03/修订底稿/render_v020_science.py",
+      "git_blob_sha": "77f92f9a1772052aabdc470d04e602c48910fd36",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 8346,
+      "sha256": "14c73fb2980897b20c380d6477280a383bb612ed45ce0a76ff14f8956e7b4668",
+      "lines": 133
+    },
+    {
+      "path": "广东行测18套模拟/M03/修订底稿/v020_quant_data_patch.json",
+      "git_blob_sha": "5b8a56603c1eb700e04a3b239b988f559722596d",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 35106,
+      "sha256": "9f8393284e0df37871c76b6d9fd351652beaf7798286100308c864fc984e4d38",
+      "lines": 1034
+    },
+    {
+      "path": "广东行测18套模拟/M03/修订底稿/v020_reasoning_patch.json",
+      "git_blob_sha": "1bf284ba108c33ac27fb21e3432e62ca682d8a28",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 16594,
+      "sha256": "73b127addb6b010e5b7016f41e8299a81ec5ea27d3b6ad4a1de79642f32dd2b2",
+      "lines": 214
+    },
+    {
+      "path": "广东行测18套模拟/M03/修订底稿/v020_science_patch.json",
+      "git_blob_sha": "a59b8b31724b5df8dfb8ba5b3e744e2e7e6a1f08",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 5938,
+      "sha256": "bace8873098836fee4167c789ebbff7f029dc3dd7596dfb66363addee0c79bb0",
+      "lines": 134
+    },
+    {
+      "path": "广东行测18套模拟/M03/修订底稿/v020_verbal_politics_patch.json",
+      "git_blob_sha": "1bdd6c6c19b78a4b00063bdec6b8d2b8e96ee57d",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 61287,
+      "sha256": "fd748335903c813f3a8c75b16e3f328841d00937a70af3b6cc890168cb06994f",
+      "lines": 974
+    },
+    {
+      "path": "广东行测18套模拟/M03/历史版本/0.1.0/README.md",
+      "git_blob_sha": "c9b333bb08abae1a19ad3c09bba0652695f5d467",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 677,
+      "sha256": "ebab7093319b0c1b1008da763276104be4707b7b0d2165570e893d2f3b2826ed",
+      "lines": 7
+    },
+    {
+      "path": "广东行测18套模拟/M03/历史版本/0.1.0/paper.json",
+      "git_blob_sha": "6b6fbe62fc204b5935bbb29595d106e8de2ae458",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 867,
+      "sha256": "d543453b7da66b41e6d34823c57fa35e05c4a611afb0a3cb99a02b693f45f3a2",
+      "lines": 24
+    },
+    {
+      "path": "广东行测18套模拟/M03/历史版本/0.1.0/selection.json",
+      "git_blob_sha": "bd67a854bde8455f872ee8968c4497c3408fed7c",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 644727,
+      "sha256": "5a265f7c6278eaa3c7ec5eb9c26e2964593182c3a6bcc1d60d28dfb5c3af05a7",
+      "lines": 18179
+    },
+    {
+      "path": "广东行测18套模拟/M03/历史版本/0.1.0/核验报告.json",
+      "git_blob_sha": "6bda47ffd6ff243cae7c781b69740e850aaa2e02",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 1649,
+      "sha256": "0b98f4206a8b277c31f9ae2004f51022413477acb9e4e8672ee79a342b578505",
+      "lines": 64
+    },
+    {
+      "path": "广东行测18套模拟/M03/历史版本/0.1.0/核验记录/交付核验.json",
+      "git_blob_sha": "2cd72882c3120000aa2dbbca33a3f3642794010d",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 23258,
+      "sha256": "04495bda86a6a1e06ef9c065543aec111c764c9abea1d244e033e4c1d9526214",
+      "lines": 765
+    },
+    {
+      "path": "广东行测18套模拟/M03/历史版本/0.1.0/编辑底稿/quant_data_check.json",
+      "git_blob_sha": "471d5bf78614c8f1522a01529fbc3eb3ff758da3",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 18639,
+      "sha256": "b7fd9ecb3bb97a351a7b255d9eaeb797768bdc995a4268075bad2403007ab4b8",
+      "lines": 794
+    },
+    {
+      "path": "广东行测18套模拟/M03/历史版本/0.1.0/编辑底稿/reasoning_verification.json",
+      "git_blob_sha": "80adfa3ea39a7b4de957c29a45584c6c226ecc7b",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 6616,
+      "sha256": "232353d1855c3e2ba25b4c5fdd7711828b8bae10de74e89b3c7125e79ff8f84e",
+      "lines": 370
+    },
+    {
+      "path": "广东行测18套模拟/M03/来源登记.jsonl",
+      "git_blob_sha": "dfc2f38ef7463d33c04fd95b06be3f2172aa14ff",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 249630,
+      "sha256": "9bcde4913c9a33ca2f8d261e92dc60e9365b5ccbf1de8b6a6d185f44d8c79988",
+      "lines": 90
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验报告.json",
+      "git_blob_sha": "2a11cad621c91fefeca56110b72937bb646c64b6",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 1685,
+      "sha256": "ff20b3defd7d222eca348d72a2a892c52ff12d92ba7246425d77d7e4bc72feed",
+      "lines": 64
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/README.md",
+      "git_blob_sha": "349db56a39db71db5ade1b42e78acb8c2c4213b0",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 3420,
+      "sha256": "34ddb36dab9f626baf2418197f1152307f2ef99512c862131f8e93a690db17e4",
+      "lines": 52
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/blind/data.json",
+      "git_blob_sha": "5213cab9badbd4d3178e525ba7d80acdc2e1ccd7",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 4722,
+      "sha256": "72b962ef7f4b664fdea44dc00a33c19490f32691489e6ad47f76b376602e7e4a",
+      "lines": 35
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/blind/fig.json",
+      "git_blob_sha": "38e363ff539d9b52a1f1dbd909aa7dc3da1dea3a",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 7512,
+      "sha256": "1047986f286869a704072eec5bcf384cb384d484ab493d549ff2a85c797ddcae",
+      "lines": 60
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/blind/logic.json",
+      "git_blob_sha": "3dddac77c0338b1df2e669d3639d0dc19efafbce",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 11174,
+      "sha256": "a76c4f3b109fb433b05924bd41172a59e919cac8ad66733cfc9b253fd6106695",
+      "lines": 98
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/blind/pol.json",
+      "git_blob_sha": "67a8c03a86c8e4cc69d090d05dc5a68b562ec8fd",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 7632,
+      "sha256": "c3d6b235c18ce38337c8b53e0d0d0343c18dd64e702e19b843388ecd89d341c9",
+      "lines": 59
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/blind/quant.json",
+      "git_blob_sha": "15151a29e93addb93489173b37b80da2fd580dc3",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 4575,
+      "sha256": "943c2c404244f5c5a70887e484595d43eb9edecadd0599693ef605558f7c8726",
+      "lines": 20
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/blind/sci.json",
+      "git_blob_sha": "54b462f0cc1a5ff21add98a88bd30e400d013f39",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 5639,
+      "sha256": "53b1d1562ebd8114d78a815e7c8f5fc310d420e2c6a01339b98924930c374dd5",
+      "lines": 48
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/blind/verbal.json",
+      "git_blob_sha": "8a8b66b0a8ec1b9f34a110598d5cbe5e0240f0a2",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 11516,
+      "sha256": "913fb7b66f86e489ef61f55fae6a9bbddf7556dd1bb25d8338d04dfc230324f4",
+      "lines": 55
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/claude_review.json",
+      "git_blob_sha": "1fd5bfc803586b65a5aa27ed7ea264114e98de63",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 25518,
+      "sha256": "fb1fd9283c2823723435903ede78cee1148ecca33ec4553cf7d9c74e81fb9b97",
+      "lines": 1036
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/data/blind_calc_71_90.out.txt",
+      "git_blob_sha": "1fc03613a8a5f9fda7fb4c28e9498e60e88c4e5b",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 9315,
+      "sha256": "dd064e59f2232c1013850778b1ad735109b0d081c14b3b9895ae8f21fdf21e37",
+      "lines": 193
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/data/blind_calc_71_90.py",
+      "git_blob_sha": "67c9a83bd71fd97490d406707547883944d83ddb",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 11588,
+      "sha256": "369c0106716b8af93091c7433bd2d6b130d9dbce8619f421e93fe131e26c1bdd",
+      "lines": 233
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/data/q88_pie_measure.out.txt",
+      "git_blob_sha": "75f983ff58c166468ac77ae796ae8169a2e4c323",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 3191,
+      "sha256": "41c069a43ba5d41a6b11411a77c9bf9f1096e3cd199a103aa210ddaf5b83c0cd",
+      "lines": 32
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/data/q88_pie_measure.py",
+      "git_blob_sha": "07b26a25800cf070e63abd88a844c59d55da0b27",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 4369,
+      "sha256": "1af3e1ca8f665531d74dd8c432ddc87899a428a7fab155e3edf50a99bc348015",
+      "lines": 91
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/data/sensitivity_and_provenance.out.txt",
+      "git_blob_sha": "da6a4cf0954d795908af469e643ee715fa5bfe2b",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 2711,
+      "sha256": "1116e05bc059a6f9270476f74e0588fa8527c8e2fc146c1fa541a4b06670d160",
+      "lines": 27
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/data/sensitivity_and_provenance.py",
+      "git_blob_sha": "54631340c68794bfaeaf506a37e9c7f0ee9c963e",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 4421,
+      "sha256": "2c5bf95a10481694826677af585839a1e48766e4c16963bbf8430358016c66ca",
+      "lines": 78
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/data/source_diff_71_90.out.txt",
+      "git_blob_sha": "1ce50919b992dbb932bf4f1770095fdd1b3078a5",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 14673,
+      "sha256": "18808664e7a9f3a75ff4b54f131c255ccc6a14f061dd300772f9c3bc926e29e8",
+      "lines": 178
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/data/source_diff_71_90.py",
+      "git_blob_sha": "7a455a3f80340793ef87789fa167a05a8acb8778",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 5762,
+      "sha256": "af4001ffc932789bdb228d86c3674748f565ef393de1ac4ed142beaf63774783",
+      "lines": 127
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/fig/q46_symmetry.py",
+      "git_blob_sha": "644f1272fa2acc28d22747673babaad8af4e8c7d",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 1475,
+      "sha256": "5c69df53ac9e0320014be10f1e18497fbe32f5b2c9dd249829b51905d1305a3b",
+      "lines": 24
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/fig/q47_grids.json",
+      "git_blob_sha": "b59ffc43ccc8ab09249bf4932b19bc64c467c106",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 4532,
+      "sha256": "0d37b7666a58faf8eef36781f40497ff6566ddead3f2ed622107fa60ba891d1b",
+      "lines": 638
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/fig/q47_rule_check.py",
+      "git_blob_sha": "fbacf923453dcfbd4a299af53200a7261814f468",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 1375,
+      "sha256": "0e568b386aec8e8d9de26be8c4260ce8aa409b91807142696ccb1d01e2b36162",
+      "lines": 24
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/fig/q49_fit_results.json",
+      "git_blob_sha": "eef738dfda35d483cc27fe1e8d408dd1c6282ab2",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 5872,
+      "sha256": "7346f085771057c538a4679f04bba6f6139d29cba42da59769a8753fe99957c3",
+      "lines": 767
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/fig/q49_rule_check.py",
+      "git_blob_sha": "c5ddb310bdcbdaa871b832be65b1d48430d56c16",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 2672,
+      "sha256": "d7eb71aa2011cc4df110d33d91550e5a26ebd75741cbccdeb0aaba15e30dff0d",
+      "lines": 38
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/fig/q49_views.py",
+      "git_blob_sha": "a4e3d98ce0671d5051151488c66611572677f4f9",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 4774,
+      "sha256": "c33c50ab5938b557a545407fb7e6b95c7c10deacab2f75a65775318fd3be0a6d",
+      "lines": 93
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/fig/q50_enumerate.py",
+      "git_blob_sha": "677bd0b041f0dac973bdc30342866e960ddbd8ad",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 6123,
+      "sha256": "e7232882a5f7a25e20f5bcea9062786e67416dfb498880f4f8dd775937c6a016",
+      "lines": 118
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/fig/q50_hidden.json",
+      "git_blob_sha": "9cda500612b85ba3b4ea0b1a37f6e40f93f95efa",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 6112,
+      "sha256": "04a5861b88917d804d8065c36381f5a7f3eb0270182991dd94e770a8af252f6e",
+      "lines": 924
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/fig/q50_readings.json",
+      "git_blob_sha": "ce85c1c679dba0847e261294526134578b0fb8a5",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 3413,
+      "sha256": "6ab70ebd5018bcc888e1f955fa05fd72dd06be46a18e4e5612535f93b2a9902d",
+      "lines": 447
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/logic/check_print_blank_q55.out.txt",
+      "git_blob_sha": "073cb19aec9aefa38abd71e66d557c8549a38104",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 995,
+      "sha256": "3f2fbc8bdfe6cd7ffe6080c7b1d19b69350b558a91dbc0cd627f71ede10cc8a1",
+      "lines": 11
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/logic/check_print_blank_q55.py",
+      "git_blob_sha": "952b64f985f76925c08b926b6507bed6d8eb55de",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 2898,
+      "sha256": "e0b489a791d94ec0641e68b675c7482fb01faadf417ca5c4ca7f180bdcf499e8",
+      "lines": 52
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/logic/compare_51_65.json",
+      "git_blob_sha": "af6c5f9d5d899e92d3b19b118029d278ac3ceaf0",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 8054,
+      "sha256": "63146c3d0a8c1edac47e4bb68bd7c465a29e618374825f14c5ab9ec10f32866e",
+      "lines": 65
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/logic/diff_stems_51_65.out.txt",
+      "git_blob_sha": "ee5be00854e3295562f208e71cc9b01d33096cad",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 25383,
+      "sha256": "2f885859564877dcaab7faaeaeb180a3a11e11a8d9244619193178ee37a31be4",
+      "lines": 206
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/logic/diff_stems_51_65.py",
+      "git_blob_sha": "6505a26edd1867115c5368a8c63e530a5029b995",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 7413,
+      "sha256": "4f4a977b4f492b895302c6b87c4221e30c7725328d9b63effb410cae281b9ab1",
+      "lines": 163
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/logic/verify_logic_51_65.out.txt",
+      "git_blob_sha": "b4981403c2069b19423ed02a09aec991c73f68b2",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 6034,
+      "sha256": "d73ec7ae1255a67aced1661c5728b67605cfac3439225d9c46a2350f3aaafa18",
+      "lines": 96
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/logic/verify_logic_51_65.py",
+      "git_blob_sha": "54da4366a9ea45e6896f846bb99495b7a3374443",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 18245,
+      "sha256": "d946a126d3b71b1ebb0771712ec6ef6db8eb430fdb79cff8fa6c10c4cc840d16",
+      "lines": 381
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/politics/option_discrimination.out.json",
+      "git_blob_sha": "4c3453dbe57fdcea60801fd6066125b7bf1213a0",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 7246,
+      "sha256": "49298314fbd81e16e7bc546bee95abd5912a5f7a0543d04928cf2986fef8a03a",
+      "lines": 545
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/politics/option_discrimination.py",
+      "git_blob_sha": "511d130e8efb9a3a7b4a81c0197760b4557efdae",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 6175,
+      "sha256": "9abef62537d0d6d36a984a19a0e785c9296669b0a0b92a80e9bbbbfa128398b7",
+      "lines": 122
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/politics/provenance_page_check.out.json",
+      "git_blob_sha": "9a88bee649f910ca336f8b6811b46556aced0906",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 13042,
+      "sha256": "b91df4bfaaccc939c30c30210b22482a8ad7c30e87ab7466917d505542e4d60c",
+      "lines": 710
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/politics/provenance_page_check.py",
+      "git_blob_sha": "5f6b0514726046aea284472d1bf172edbf59a7e8",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 8211,
+      "sha256": "9bb48883d0ab98d9dc3ef909940d7afc950dd3fb4e391c77d37df1eed2d4d6ae",
+      "lines": 127
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/politics/web_evidence.json",
+      "git_blob_sha": "be33f8d1d5556a5d92b10040ba5b4266d4f748b5",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 7572,
+      "sha256": "8f60279eb401915d47b94f51fad7d6d98b6755e81b05b73d693d98674677c1b6",
+      "lines": 95
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/quant/q35_fix_prototype.json",
+      "git_blob_sha": "fa04327762f229af77068430cded52a4befd09d9",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 3440,
+      "sha256": "b67f9dc98a2ab562c0fdc3cb0f5a6b475a374f9813b23a2fb463086a99b705a2",
+      "lines": 199
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/quant/q35_fix_prototype.py",
+      "git_blob_sha": "b39585e97599793e9876372a744ef61d7342ba73",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 4300,
+      "sha256": "83a3e055a40ae88a9378b767efd117f1cf6a074679855bbe262a07cdf9080763",
+      "lines": 90
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/quant/q35_legibility.json",
+      "git_blob_sha": "149fe3fe3783c6d6c8f607261e17e410b2d30efb",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 3338,
+      "sha256": "f036331a71af99937000d23a16c9a808691367a199a697f46ebed96899bfa49c",
+      "lines": 153
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/quant/q35_legibility.py",
+      "git_blob_sha": "7948ce172fd3f4e1f158139b11547bc2cea73194",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 2592,
+      "sha256": "e6f7b0d320aa9ac2d33b958e78c24fe10112621660a9165ff4495e5cfa0276d8",
+      "lines": 48
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/quant/source_fidelity_check.py",
+      "git_blob_sha": "892ab3819b2a82cbc29fb5aa6e4f617479ea1a92",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 2373,
+      "sha256": "e80f78575bb6c1a5ee703d6b9e21e912b4f4b2be24f010352ba00a7636c51333",
+      "lines": 37
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/quant/source_fidelity_check_output.txt",
+      "git_blob_sha": "7bab272504516b83222105df53b8e284a6961330",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 3097,
+      "sha256": "378e246b0d5e1b52599a04aa262282d8cbdf7f40e5966715158b69e36867913d",
+      "lines": 34
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/quant/verify_q31_45.py",
+      "git_blob_sha": "fbe07c73902fe52c0f56e1b03089008876b86a50",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 29917,
+      "sha256": "aab686099b8549fd5c8edd6fba01e70aad29150b0fa0390d703e22578e536b9e",
+      "lines": 656
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/quant/verify_q31_45_report.txt",
+      "git_blob_sha": "96d70ac674c88101db408d23f2f80cd665f68997",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 12990,
+      "sha256": "2499ef1844a4b47802a2e1bcabb835cf0245d03da277fd0bb89dd39578624bc0",
+      "lines": 142
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/quant/verify_q31_45_result.json",
+      "git_blob_sha": "e0472595511fc7f650ce9abee674b7243f3eed60",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 7106,
+      "sha256": "ced73ca56a63921bee8fb0b51a8bddabe4394dc10053190d81f4614ab0a57653",
+      "lines": 285
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/sci/compare_after_blind.json",
+      "git_blob_sha": "83852e05345af7b4ee9b6f471bbcf33d0c84ae8d",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 2912,
+      "sha256": "4f1ba3470fdd55dd82e839fa4383cc05361cf53f9027a705b8f91159204501a4",
+      "lines": 28
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/sci/print_sizes.py",
+      "git_blob_sha": "bcbeb2b581aa0c43384c89c3cc65326d06e10da3",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 7080,
+      "sha256": "b9e64a8097958c241508b236fa6f920ce176d381422cde5c14fb08e64c9c19ea",
+      "lines": 168
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/sci/print_sizes_output.txt",
+      "git_blob_sha": "d60dd7e231a4c3e4e66222718c54814cc10b200a",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 3077,
+      "sha256": "53518d900dfc9c4a46b947fba1f82c9603c961557844db69dc5deb7e12179fc0",
+      "lines": 34
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/sci/q66_68_checks.py",
+      "git_blob_sha": "cf4c98f51ef9996f917d30cfa61a134e8de4c922",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 5907,
+      "sha256": "0cab5f4bad89afd261b94ff2f50a6feb6f3ab3295d9e95536fe21da66a1f06a1",
+      "lines": 102
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/sci/q66_68_checks_output.txt",
+      "git_blob_sha": "7fa8567388b62b85fa2bd13f9ba4053b7dbf6d8c",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 1557,
+      "sha256": "be4a0181c67896937f22fef748194f1f5da7c349badf8063327e29c51dfd4605",
+      "lines": 22
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/sci/q69_foodchains.py",
+      "git_blob_sha": "358e491e3b3890a47c3cbc84607f361cb93f589f",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 5499,
+      "sha256": "66ac65717615e72d26686c1e48f488d548098e6041d9944cf42d8fae9bee552b",
+      "lines": 124
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/sci/q69_foodchains_output.txt",
+      "git_blob_sha": "3a34b3deea4f5bd3c2e517daf534dc52961c5c31",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 3656,
+      "sha256": "8de0f0f6bf72e5f6a4879ffb4cf115d830ed5633d57b613b0f85250593a0980e",
+      "lines": 46
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/verbal/diff_stems.py",
+      "git_blob_sha": "718a336af82a6f45d7dfe310245c4f62b6fe9783",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 2300,
+      "sha256": "0f82882f117078a44fed428ff4d1670255619a7c826a93665a441e3db1210018",
+      "lines": 51
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/verbal/gk_pdf_compare.json",
+      "git_blob_sha": "e6871890d00c2a51a83f69702e70afe8384bf265",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 4672,
+      "sha256": "65963761e6baa5a002a2166f28636a0017bb1ec534b624c21ad602d0e1b9355a",
+      "lines": 43
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/verbal/jz_pdf_compare.json",
+      "git_blob_sha": "b77788a44a0039c8c1dcedf032965a6fbe82a495",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 7281,
+      "sha256": "f3ebec78f590dca21ffcf93beeded4ad4f36191cf30de0cf1e282dd658e16ab2",
+      "lines": 180
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/verbal/pdf_sources_verified.json",
+      "git_blob_sha": "c4e166f314a48dedf1ea8403819bc452eb0608ae",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 2907,
+      "sha256": "9229de21037cd3dc1e9615047c344c249d2532753d8f669bf7e2146613a3860d",
+      "lines": 66
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/verbal/review_comparison.json",
+      "git_blob_sha": "4e1e0bec700ee521afc015c624d8afc518ea254c",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 8357,
+      "sha256": "407aeec9e7b9a8c8a540fba99471aba23300b4d8414feb4204f93b8d23c83991",
+      "lines": 177
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/claude_review/verbal/stem_diff.json",
+      "git_blob_sha": "fb754049e60f86ee4f5e7908d037170da4f4fe60",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 5060,
+      "sha256": "a218a23729082567b6da1fd03b9b7d8b1b3e87834312093e16acd1e273903dd1",
+      "lines": 237
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/politics_independent_review.md",
+      "git_blob_sha": "cbdfc5c26ad13b58954e03e668dd595452d837d0",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 8484,
+      "sha256": "10a63b757044a21139c29fa98a7bc4e6227b02a603ff60d7c9cdedad7393ee9b",
+      "lines": 83
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/q50_spatial_review.json",
+      "git_blob_sha": "463e67f23438750d053dddbcc187402f2baa4150",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 32869,
+      "sha256": "297ba871547fe1c4a1d1b1f37b0ac3da073cfe94f8d6ea4f12e9164405276652",
+      "lines": 2176
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/q50_spatial_review.md",
+      "git_blob_sha": "170c4af8fd8efb4bfc2e22b03bc2a254b6181ef0",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 5826,
+      "sha256": "39f30d015ecbc25c5bd6110c146306e671aed607c072ef8f854487180df56478",
+      "lines": 78
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/q50_spatial_review.py",
+      "git_blob_sha": "d59680e60b7bf80e685476b70ed00bca4224337c",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 6081,
+      "sha256": "6c9c3abdc1928e7e95e5bf0f573e21d0a8fbd0741a0b77eec77d545ca3c219cc",
+      "lines": 136
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/q69_foodweb_edges.json",
+      "git_blob_sha": "14536323b1cf0b6059b97d0cff7c93fbfe8c577e",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 636,
+      "sha256": "6b7aad76eedba31048977169261e60dcf369eedb1b6746b21032f83d5fbce77d",
+      "lines": 52
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/science_independent_answers_before_compare.json",
+      "git_blob_sha": "351f89a183f579ebe972bcc4ad3559d723610dc8",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 612,
+      "sha256": "a9d641fc7b39124dabdab7c1a9a8aa711cdf845a7d3c178c01ba689d5dec5dcb",
+      "lines": 14
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/science_independent_check.json",
+      "git_blob_sha": "08b45f6b106e9ff1f746ee6563ab6e6fac2e1a29",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 4094,
+      "sha256": "4afe42ec86c28e96b0b5955b40d00dd979330827da3ee24c3f87d7ab7de1ebf8",
+      "lines": 261
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/science_independent_review.md",
+      "git_blob_sha": "65e3edbf063c233df2055cf063a728665ced643c",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 6483,
+      "sha256": "12a55859a686a1f53b71dad012dc3657b7b4c3713e1ed2eda8577a858c59b509",
+      "lines": 109
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/v020_q35_layout_check.json",
+      "git_blob_sha": "2d52b7cd55598bee20f40b8395295ff870bebe58",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 8281,
+      "sha256": "d9884310a9a6c2dadc88b536b718d5cbe8c205ed37d908298d620e44b9dc62ad",
+      "lines": 433
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/v020_q35_redraw.py",
+      "git_blob_sha": "28cadf5b8723a4c8b721e0fa1ddf1139f025fd8c",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 7669,
+      "sha256": "56ab4f43a9f999358af6de9eb7f229754bad4c113c3e23de0d1eba7c4f1fcb3d",
+      "lines": 155
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/v020_quant_data_check.json",
+      "git_blob_sha": "3e726d2ec42c96979b732d5923b53460a2ff9674",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 11557,
+      "sha256": "5418355cc55b79cd5697a8f5e85a34fd8f38ece3d6c92901138d6276f1837b14",
+      "lines": 469
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/v020_quant_data_check.py",
+      "git_blob_sha": "a78651d15d37198ab91a6517c2c7725d6ca54a2d",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 14594,
+      "sha256": "eac466841562c4145531d523b3bcdd0889e4fa760d99c142b1eb0ed2b17b2d8e",
+      "lines": 258
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/v020_quant_data_decisions.md",
+      "git_blob_sha": "abd56db71fcd204341f19913b5c2dfdd74fce36f",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 9451,
+      "sha256": "cf591a8ebb9fafcf577854748fc1f0077f289ed0e51bcfb470dca336939ff4cc",
+      "lines": 85
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/v020_reasoning_decisions.md",
+      "git_blob_sha": "a050fb61670357f04828b24d0f92028cab81201f",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 12179,
+      "sha256": "a92cd39c5602f3cd76e16c525f2c580b3f4732d4eefe846249e8d18fb20582fb",
+      "lines": 101
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/v020_revision_check.json",
+      "git_blob_sha": "9fb57325af96d41ddeb58eb015cbd1dc2b3e023f",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 1467,
+      "sha256": "a12dd72acd654e44394d02ce25b508c2ba89ce17d214563387884d86cf72c69b",
+      "lines": 64
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/v020_revision_manifest.json",
+      "git_blob_sha": "a6b319e1688dd350dcd2e4bc0e9f6ea0c5bee563",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 47312,
+      "sha256": "eeea1af26cf4520948ad63e07db6f9da54a9ca2dfee618147f27483868ba2108",
+      "lines": 1114
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/v020_science_decisions.md",
+      "git_blob_sha": "b7b7b1122fb11ce18fa249b81988be9e6a9b9f70",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 3491,
+      "sha256": "0aeb80deb8f2d1f9620e0000cb7555dc5571f00d3bed477458ea50b2cc0e5c68",
+      "lines": 41
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/v020_science_diagrams.json",
+      "git_blob_sha": "6a5a0ce687dc1d995363a6330939dc061afe1b90",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 5819,
+      "sha256": "92e594f85af4ab12f6fe86f519ef0f04945f05c330174ee63ac9b6a6341e607b",
+      "lines": 258
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/v020_verbal_politics_decisions.md",
+      "git_blob_sha": "e17398e6a2ac95fd11cda4920bd6b48bafc5e851",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 11743,
+      "sha256": "ac2ced315518543265cdb5f13fc74debd5b28dfdf25f6aa6c3bf03b3f0024e8c",
+      "lines": 90
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/verbal_independent_review.md",
+      "git_blob_sha": "d86949dbbb5c6f4a7b17ac7e23bba4ed2b9ca17a",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 7125,
+      "sha256": "65734d0eaf161e8bba16f7c87f94bbe947b52077a75c5f5b649d432fec51e9ab",
+      "lines": 73
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/verify_delivery.py",
+      "git_blob_sha": "3fb032dd5c48f3e2498222d47227f11dc3476227",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 20905,
+      "sha256": "a838e017f51cd4571f6409aeaed4a31113e6e35b12b7a31b9489ad2e7dd60ea8",
+      "lines": 247
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/verify_v020_revision.py",
+      "git_blob_sha": "501a6e32cac2d2e4ebab1a39e672376a23aca2a7",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 9219,
+      "sha256": "bbfc4a2db2b6ba23cb95530c0b19ab3de15e74584c4b03b5af6babf60bb6abe9",
+      "lines": 147
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/主编复核与修订.md",
+      "git_blob_sha": "523314b3414d49a4cacdc6cc8a2bf9ab21a5c8f8",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 5493,
+      "sha256": "49dc79899f499f7f4e65fd87369f0a6095937c7b6bdb9b701e802671069575c6",
+      "lines": 39
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/交付核验.json",
+      "git_blob_sha": "82ecaf0de0f47d8b1af8d254b2dbb2f1c86dbfac",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 25869,
+      "sha256": "7ea541b26c6f6e4188c79a6f060a7041b86e1c959b78173ea4d90ff026927607",
+      "lines": 841
+    },
+    {
+      "path": "广东行测18套模拟/M03/核验记录/政治常识依据.json",
+      "git_blob_sha": "fe041f0461be065c96378c038f2326eb000c35db",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 5562,
+      "sha256": "5cef5ce250f4bffeaf13b7bfafd0c22e1e084407cc9770a9f02468294cb10a3c",
+      "lines": 108
+    },
+    {
+      "path": "广东行测18套模拟/M03/答案与解析_待审.md",
+      "git_blob_sha": "9ea9826dbbdedee3b5d72a0efeac266bc947cc82",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 88886,
+      "sha256": "3ae4ab0c9ce962505a9702a06cd77b8cd1527f26080c02e7b11d8d0a402c148f",
+      "lines": 781
+    },
+    {
+      "path": "广东行测18套模拟/M03/编辑底稿/build_originals_science.py",
+      "git_blob_sha": "ec986f117538e2702da211b19c81327a2d0a9a22",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 26302,
+      "sha256": "2736d0a443e4b4070494c69bcee9d56ce54112e453b044f4acdc84ab41e200d1",
+      "lines": 246
+    },
+    {
+      "path": "广东行测18套模拟/M03/编辑底稿/originals_science.json",
+      "git_blob_sha": "5f7917ad078a53d9b54f036ae45d9e71ea5aeb85",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 56700,
+      "sha256": "80cd6c689f0119cbee7d6312364161d32ac7f6b39c2f1009bd7d0471b4acdc0a",
+      "lines": 1505
+    },
+    {
+      "path": "广东行测18套模拟/M03/编辑底稿/quant_data.json",
+      "git_blob_sha": "01514c20f884c25d032841babe9e6b7a43c44060",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 314323,
+      "sha256": "58e648cd1c4df404b2b15301f6ce9bf5c070ba62d9efa5cbd82d48dd9fc5d352",
+      "lines": 11438
+    },
+    {
+      "path": "广东行测18套模拟/M03/编辑底稿/quant_data_check.json",
+      "git_blob_sha": "f56aefab1ab940b611d4163ed7b720e919ed6cf3",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 20116,
+      "sha256": "0fde2180a7d1a417dfa632378b2445b78b8c13438ac23c550f0671f1753f8d64",
+      "lines": 852
+    },
+    {
+      "path": "广东行测18套模拟/M03/编辑底稿/quant_data_check.py",
+      "git_blob_sha": "d3c8ba5262788a88fdea418e61c35f0926b819e2",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 19553,
+      "sha256": "549854c33f77a1872c6b547ebeaf079c4dace2828e53f799a0fbec8ece9cd72c",
+      "lines": 275
+    },
+    {
+      "path": "广东行测18套模拟/M03/编辑底稿/quant_data_exposure.json",
+      "git_blob_sha": "c3c7ec8dc577d978c6f5d0eef9a23323e0977c93",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 247,
+      "sha256": "ee6477a31a35d92971840e54a81378750989aaf392d7f8ae8359b021e988a947",
+      "lines": 9
+    },
+    {
+      "path": "广东行测18套模拟/M03/编辑底稿/quant_data_make.py",
+      "git_blob_sha": "bd43d0bcde10c4f096b08c330d53b9b4bd9fb27d",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 25481,
+      "sha256": "2daafc9155f03d31219d02a369e5da96de337607ec5cc475ab63194d27121220",
+      "lines": 212
+    },
+    {
+      "path": "广东行测18套模拟/M03/编辑底稿/quant_data_notes.md",
+      "git_blob_sha": "6d39edb1318ede381e1d7180e93317f8afe36c80",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 5969,
+      "sha256": "27634742a6a9ce6141635225633e095ce91dc336064550c4dd933918da5803af",
+      "lines": 60
+    },
+    {
+      "path": "广东行测18套模拟/M03/编辑底稿/reasoning.json",
+      "git_blob_sha": "5f3997980fd7707c1435207a9016503f68179168",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 149604,
+      "sha256": "e3a2372f1bc4fd9fa5b917315b1e8fb9550e2f7048c20de764f1e7bc80c2c9a6",
+      "lines": 3088
+    },
+    {
+      "path": "广东行测18套模拟/M03/编辑底稿/reasoning_build.py",
+      "git_blob_sha": "89e9614040d27d3b8c01ae8a1b91d9ca98c82f11",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 19054,
+      "sha256": "937d2531a3281eb3351b308e3be9c6b2b120764298ea5eb26005bef7f0e03c56",
+      "lines": 160
+    },
+    {
+      "path": "广东行测18套模拟/M03/编辑底稿/reasoning_notes.md",
+      "git_blob_sha": "2bbb57e7dd191e1636d4474b13e364447a2a0c56",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 6732,
+      "sha256": "4d8b98463bbcb860d725204000a8b4ed010e207f10d7210e15f27f34e80ac400",
+      "lines": 82
+    },
+    {
+      "path": "广东行测18套模拟/M03/编辑底稿/reasoning_verification.json",
+      "git_blob_sha": "80adfa3ea39a7b4de957c29a45584c6c226ecc7b",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 6616,
+      "sha256": "232353d1855c3e2ba25b4c5fdd7711828b8bae10de74e89b3c7125e79ff8f84e",
+      "lines": 370
+    },
+    {
+      "path": "广东行测18套模拟/M03/编辑底稿/reasoning_verify.py",
+      "git_blob_sha": "b9ec98430c4bcb7d53ee4d7a4a0ecd0bfa537f09",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 8894,
+      "sha256": "049ee9aaf965649a4bfce7646785fefc2ca1b4b24c2e5c7c6bac24dddf46a8c1",
+      "lines": 185
+    },
+    {
+      "path": "广东行测18套模拟/M03/编辑底稿/verbal.json",
+      "git_blob_sha": "aeec7c438d114eeb6a5fbb80d95fdb88b072f22b",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 113598,
+      "sha256": "1b8327f4eb581aa73f2c37351e351c2ecb09d5d29a4ce5469b5ae10a279663e0",
+      "lines": 1922
+    },
+    {
+      "path": "广东行测18套模拟/M03/编辑底稿/verbal_notes.md",
+      "git_blob_sha": "ff87b69b6f929d535d1fb7d24fea65f162bc2faf",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 6695,
+      "sha256": "4f7ffee087e7d76edee9e158541af60261c8914e761a0702113e54a83f2a8fe7",
+      "lines": 72
+    },
+    {
+      "path": "广东行测18套模拟/M03/选题记录.md",
+      "git_blob_sha": "14661bee864946bf207ec82102c16b6e9820e559",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 10983,
+      "sha256": "dc0a7cf1b66f479b53c91844670ae02a5963bb7ef1dfde049f8dccef90392b4a",
+      "lines": 94
+    },
+    {
+      "path": "广东行测18套模拟/M03/题本_待审.md",
+      "git_blob_sha": "153da77a9a533e23931188a75037711f41997fda",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 47441,
+      "sha256": "b84551c3396c603712b5fbea023d08f7acb4572e92b33dd53463db8235298a86",
+      "lines": 1218
+    },
+    {
+      "path": "广东行测18套模拟/M03/题目.jsonl",
+      "git_blob_sha": "db486e7149ad39a06cd4aac646abc48e3ef1d603",
+      "prefix": "广东行测18套模拟/M03",
+      "bytes": 92880,
+      "sha256": "70e42d42fd83de59fb724ab78d48baa8510955f7e2d78d53a2733eeb662c3c35",
+      "lines": 90
+    },
+    {
+      "path": "广东行测18套模拟/用题登记.jsonl",
+      "git_blob_sha": "b69413632df8397c2c877e64d0fd097459436c67",
+      "prefix": "project_registry",
+      "bytes": 70833,
+      "sha256": "240c40a7947e31daeb253741b51440b704a2d83ae4f485ed8286500287593137",
+      "lines": 270
+    }
+  ]
+}

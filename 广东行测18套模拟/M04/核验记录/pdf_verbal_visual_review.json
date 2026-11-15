@@ -1,0 +1,332 @@
+{
+  "reviewer": "verbal代理",
+  "review_date": "2026-11-15",
+  "artifact": "审阅排版/M04_题本_打印版.pdf",
+  "pdf_sha256": "d3029686c89f878cc839edb486cd85758aee7cb5bc263a9c91e1a76f5334999f",
+  "scope": "实际查看PDF物理第1–13页；其中言语16–30题在物理第8–13页。contact-1.png仅先作总览，不把第14页以后的缩略图视为完成逐页检查。",
+  "method": [
+    "先通过view_image查看contact-1.png，再通过view_image逐张查看page-01.png至page-13.png。",
+    "人工检查截字、缺字、乱码、题干与选项归属、页脚覆盖及关键特殊字。",
+    "辅助提取PDF文字，对15题当前verbal.json题干和全部60个选项逐项定位；仅规范空白、填空线、问号/冒号样式及负号字形。该文本比对不替代实际图像检查。"
+  ],
+  "summary": {
+    "result": "pass",
+    "pages_actually_viewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "visual_blockers_found": 0,
+    "verbal_stems_matched": 15,
+    "verbal_options_matched": 60,
+    "new_questions_confirmed": [
+      18,
+      21,
+      26,
+      30
+    ],
+    "rare_character": "第12物理页“罗岕茶”中的“岕”已目检显示正常；PDF文本层亦包含正确字符。",
+    "degree_and_minus_signs": "第11物理页两处负温度已目检，负号及℃显示完整。"
+  },
+  "pages": [
+    {
+      "physical_page": 1,
+      "image": "/workspace/scratch/5a47a69037f5/m04_final_qa/page-01.png",
+      "image_sha256": "e1ccf8b10387e870a14f79ae1562c9176c383146a00725abe80d2ea569d5bd0b",
+      "viewed_with": "tools.view_image；以1132×1600单页图实际查看",
+      "visual_result": "pass",
+      "notes": "封面、卷次（四）、待审阅练习用卷标识及竖排栏显示完整。"
+    },
+    {
+      "physical_page": 2,
+      "image": "/workspace/scratch/5a47a69037f5/m04_final_qa/page-02.png",
+      "image_sha256": "1e1f7a54eaf0891e2ade04afc0fe743f6f0bc0accc0ad6fd70b9971918f42b5e",
+      "viewed_with": "tools.view_image；以1132×1600单页图实际查看",
+      "visual_result": "pass",
+      "notes": "注意事项完整，90题/90分钟可读，文字和边饰未截断。"
+    },
+    {
+      "physical_page": 3,
+      "image": "/workspace/scratch/5a47a69037f5/m04_final_qa/page-03.png",
+      "image_sha256": "70147d27d6cebb1e130eee1a213317a5b2e4da854c22833f62308550dabef697",
+      "viewed_with": "tools.view_image；以1132×1600单页图实际查看",
+      "visual_result": "pass",
+      "notes": "政治理论1–5题及分题型说明显示完整，末题选项未被页脚截断。"
+    },
+    {
+      "physical_page": 4,
+      "image": "/workspace/scratch/5a47a69037f5/m04_final_qa/page-04.png",
+      "image_sha256": "54940e4c4af41038250d2b4c04b88f185fecc2879e4f9f402a7107e722d7fc7c",
+      "viewed_with": "tools.view_image；以1132×1600单页图实际查看",
+      "visual_result": "pass",
+      "notes": "6–9题及多选说明显示完整，圈号、选项和各段关系清楚。"
+    },
+    {
+      "physical_page": 5,
+      "image": "/workspace/scratch/5a47a69037f5/m04_final_qa/page-05.png",
+      "image_sha256": "f4718726ee389817cf95b7876ce807b555a0f9e339e61ff304af98f40ff6177f",
+      "viewed_with": "tools.view_image；以1132×1600单页图实际查看",
+      "visual_result": "pass",
+      "notes": "第10题四选项及第一部分结束提示完整；下半页留白未夹断题目。"
+    },
+    {
+      "physical_page": 6,
+      "image": "/workspace/scratch/5a47a69037f5/m04_final_qa/page-06.png",
+      "image_sha256": "6ec5c0385fe2ab728c3fcbc3e7b3eed2d9506e12f38432ab351c1fd1c7270f18",
+      "viewed_with": "tools.view_image；以1132×1600单页图实际查看",
+      "visual_result": "pass",
+      "notes": "常识判断11–14题显示完整；11题A项为已接受的新表述，14题末选项与页脚有间隔。"
+    },
+    {
+      "physical_page": 7,
+      "image": "/workspace/scratch/5a47a69037f5/m04_final_qa/page-07.png",
+      "image_sha256": "ee07ee5a5397cf8de2698f492d5f1a35ef5795a516cdea85dd9f658ec4c58d85",
+      "viewed_with": "tools.view_image；以1132×1600单页图实际查看",
+      "visual_result": "pass",
+      "notes": "第15题及第二部分结束提示完整，圈号与四选项显示正常。"
+    },
+    {
+      "physical_page": 8,
+      "image": "/workspace/scratch/5a47a69037f5/m04_final_qa/page-08.png",
+      "image_sha256": "912a969ade3a7001004dbd762ef980c52b34cee90941e78be40051b7f5d356f6",
+      "viewed_with": "tools.view_image；以1132×1600单页图实际查看",
+      "visual_result": "pass",
+      "notes": "言语16–18题完整。第18题为当前新质生产力三空题；三处横线及A–D选项清晰，未混入旧历史研究题。"
+    },
+    {
+      "physical_page": 9,
+      "image": "/workspace/scratch/5a47a69037f5/m04_final_qa/page-09.png",
+      "image_sha256": "881287983ce68d9a45dce1b1a40bc593f630de5c69b108182c73b3a3039e5da4",
+      "viewed_with": "tools.view_image；以1132×1600单页图实际查看",
+      "visual_result": "pass",
+      "notes": "言语19–21题完整。第21题为当前净息差/企业银行共赢题，四项独立清楚；19、20题填空线及选项正常。"
+    },
+    {
+      "physical_page": 10,
+      "image": "/workspace/scratch/5a47a69037f5/m04_final_qa/page-10.png",
+      "image_sha256": "36db10552bc02cd0326900d4fb272223cc048ce1bbd65988c91fdb5e3d7ecff8",
+      "viewed_with": "tools.view_image；以1132×1600单页图实际查看",
+      "visual_result": "pass",
+      "notes": "言语22–24题完整，三题的题干、设问、选项均与各自题号对应；底部24题D项完整。"
+    },
+    {
+      "physical_page": 11,
+      "image": "/workspace/scratch/5a47a69037f5/m04_final_qa/page-11.png",
+      "image_sha256": "d6d5321cb32b35b7ecc0606bf9037280ea9676b2aad01bbfcb046802d95cf714",
+      "viewed_with": "tools.view_image；以1132×1600单页图实际查看",
+      "visual_result": "pass",
+      "notes": "言语25–26题完整。25题−180℃、−250℃及氦-3字样可读；26题为当前绝缘材料排序题，①至⑥全部显示、四组选项无乱码。"
+    },
+    {
+      "physical_page": 12,
+      "image": "/workspace/scratch/5a47a69037f5/m04_final_qa/page-12.png",
+      "image_sha256": "6a05a1860381bc27c419828639098ed89dc619eeb219a78f53a4975d2ca7f1cd",
+      "viewed_with": "tools.view_image；以1132×1600单页图实际查看",
+      "visual_result": "pass",
+      "notes": "言语27–28题完整。28题“罗岕茶”的“岕”实际显示为完整汉字，无空白或方框；C、D均为当前消歧后的选项。"
+    },
+    {
+      "physical_page": 13,
+      "image": "/workspace/scratch/5a47a69037f5/m04_final_qa/page-13.png",
+      "image_sha256": "9f76cd6b23ffdcb4b7f6503b1c41ce428c017a643c94c76aa15e86b0890b4aaa",
+      "viewed_with": "tools.view_image；以1132×1600单页图实际查看",
+      "visual_result": "pass",
+      "notes": "言语29–30题完整。30题为当前量子雷达题，理论、提取机制及D项发射载体表述完整；第三部分结束提示没有覆盖正文。"
+    }
+  ],
+  "current_verbal_text_comparison": [
+    {
+      "number": 16,
+      "source_id": "GKYY-2025-040",
+      "physical_page": 8,
+      "stem_match_after_layout_normalization": true,
+      "option_matches": {
+        "A": true,
+        "B": true,
+        "C": true,
+        "D": true
+      }
+    },
+    {
+      "number": 17,
+      "source_id": "ZJ2025-A类-032",
+      "physical_page": 8,
+      "stem_match_after_layout_normalization": true,
+      "option_matches": {
+        "A": true,
+        "B": true,
+        "C": true,
+        "D": true
+      }
+    },
+    {
+      "number": 18,
+      "source_id": "GKYY-2025-055",
+      "physical_page": 8,
+      "stem_match_after_layout_normalization": true,
+      "option_matches": {
+        "A": true,
+        "B": true,
+        "C": true,
+        "D": true
+      }
+    },
+    {
+      "number": 19,
+      "source_id": "ZJ2026-A类-028",
+      "physical_page": 9,
+      "stem_match_after_layout_normalization": true,
+      "option_matches": {
+        "A": true,
+        "B": true,
+        "C": true,
+        "D": true
+      }
+    },
+    {
+      "number": 20,
+      "source_id": "GKYY-2025-036",
+      "physical_page": 9,
+      "stem_match_after_layout_normalization": true,
+      "option_matches": {
+        "A": true,
+        "B": true,
+        "C": true,
+        "D": true
+      }
+    },
+    {
+      "number": 21,
+      "source_id": "GKYY-2025-020",
+      "physical_page": 9,
+      "stem_match_after_layout_normalization": true,
+      "option_matches": {
+        "A": true,
+        "B": true,
+        "C": true,
+        "D": true
+      }
+    },
+    {
+      "number": 22,
+      "source_id": "GKYY-2024-052",
+      "physical_page": 10,
+      "stem_match_after_layout_normalization": true,
+      "option_matches": {
+        "A": true,
+        "B": true,
+        "C": true,
+        "D": true
+      }
+    },
+    {
+      "number": 23,
+      "source_id": "ZJ2025-A类-034",
+      "physical_page": 10,
+      "stem_match_after_layout_normalization": true,
+      "option_matches": {
+        "A": true,
+        "B": true,
+        "C": true,
+        "D": true
+      }
+    },
+    {
+      "number": 24,
+      "source_id": "ZJ2024-A类-045",
+      "physical_page": 10,
+      "stem_match_after_layout_normalization": true,
+      "option_matches": {
+        "A": true,
+        "B": true,
+        "C": true,
+        "D": true
+      }
+    },
+    {
+      "number": 25,
+      "source_id": "GKYY-2025-044",
+      "physical_page": 11,
+      "stem_match_after_layout_normalization": true,
+      "option_matches": {
+        "A": true,
+        "B": true,
+        "C": true,
+        "D": true
+      }
+    },
+    {
+      "number": 26,
+      "source_id": "GKYY-2025-062",
+      "physical_page": 11,
+      "stem_match_after_layout_normalization": true,
+      "option_matches": {
+        "A": true,
+        "B": true,
+        "C": true,
+        "D": true
+      }
+    },
+    {
+      "number": 27,
+      "source_id": "GKYY-2025-048",
+      "physical_page": 12,
+      "stem_match_after_layout_normalization": true,
+      "option_matches": {
+        "A": true,
+        "B": true,
+        "C": true,
+        "D": true
+      }
+    },
+    {
+      "number": 28,
+      "source_id": "ZJ2024-A类-046",
+      "physical_page": 12,
+      "stem_match_after_layout_normalization": true,
+      "option_matches": {
+        "A": true,
+        "B": true,
+        "C": true,
+        "D": true
+      }
+    },
+    {
+      "number": 29,
+      "source_id": "GKYY-2024-066",
+      "physical_page": 13,
+      "stem_match_after_layout_normalization": true,
+      "option_matches": {
+        "A": true,
+        "B": true,
+        "C": true,
+        "D": true
+      }
+    },
+    {
+      "number": 30,
+      "source_id": "GKYY-2025-059",
+      "physical_page": 13,
+      "stem_match_after_layout_normalization": true,
+      "option_matches": {
+        "A": true,
+        "B": true,
+        "C": true,
+        "D": true
+      }
+    }
+  ],
+  "issues": [],
+  "changes_made": "未改任何题面、选项、PDF或排版源，只写本核验记录。",
+  "limits": "只对列明页面作本次视觉检查；不将文字匹配等同于原始PDF逐标点一致，不将本记录当作Claude外审。"
+}

@@ -1,0 +1,153 @@
+{
+  "paper_id": "M04",
+  "total": 20,
+  "matching": 20,
+  "all_inputs_unchanged": true,
+  "results": [
+    {
+      "number": 71,
+      "independent_answer": "D",
+      "editor_answer": "D",
+      "match": true,
+      "input_unchanged": true
+    },
+    {
+      "number": 72,
+      "independent_answer": "C",
+      "editor_answer": "C",
+      "match": true,
+      "input_unchanged": true
+    },
+    {
+      "number": 73,
+      "independent_answer": "A",
+      "editor_answer": "A",
+      "match": true,
+      "input_unchanged": true
+    },
+    {
+      "number": 74,
+      "independent_answer": "B",
+      "editor_answer": "B",
+      "match": true,
+      "input_unchanged": true
+    },
+    {
+      "number": 75,
+      "independent_answer": "B",
+      "editor_answer": "B",
+      "match": true,
+      "input_unchanged": true
+    },
+    {
+      "number": 76,
+      "independent_answer": "A",
+      "editor_answer": "A",
+      "match": true,
+      "input_unchanged": true
+    },
+    {
+      "number": 77,
+      "independent_answer": "C",
+      "editor_answer": "C",
+      "match": true,
+      "input_unchanged": true
+    },
+    {
+      "number": 78,
+      "independent_answer": "B",
+      "editor_answer": "B",
+      "match": true,
+      "input_unchanged": true
+    },
+    {
+      "number": 79,
+      "independent_answer": "A",
+      "editor_answer": "A",
+      "match": true,
+      "input_unchanged": true
+    },
+    {
+      "number": 80,
+      "independent_answer": "C",
+      "editor_answer": "C",
+      "match": true,
+      "input_unchanged": true
+    },
+    {
+      "number": 81,
+      "independent_answer": "A",
+      "editor_answer": "A",
+      "match": true,
+      "input_unchanged": true
+    },
+    {
+      "number": 82,
+      "independent_answer": "D",
+      "editor_answer": "D",
+      "match": true,
+      "input_unchanged": true
+    },
+    {
+      "number": 83,
+      "independent_answer": "B",
+      "editor_answer": "B",
+      "match": true,
+      "input_unchanged": true
+    },
+    {
+      "number": 84,
+      "independent_answer": "C",
+      "editor_answer": "C",
+      "match": true,
+      "input_unchanged": true
+    },
+    {
+      "number": 85,
+      "independent_answer": "D",
+      "editor_answer": "D",
+      "match": true,
+      "input_unchanged": true
+    },
+    {
+      "number": 86,
+      "independent_answer": "C",
+      "editor_answer": "C",
+      "match": true,
+      "input_unchanged": true
+    },
+    {
+      "number": 87,
+      "independent_answer": "B",
+      "editor_answer": "B",
+      "match": true,
+      "input_unchanged": true
+    },
+    {
+      "number": 88,
+      "independent_answer": "C",
+      "editor_answer": "C",
+      "match": true,
+      "input_unchanged": true
+    },
+    {
+      "number": 89,
+      "independent_answer": "D",
+      "editor_answer": "D",
+      "match": true,
+      "input_unchanged": true
+    },
+    {
+      "number": 90,
+      "independent_answer": "A",
+      "editor_answer": "A",
+      "match": true,
+      "input_unchanged": true
+    }
+  ],
+  "reviewer_reason_corrections": "data_independent_reasoning_corrections.json",
+  "corrected_reason_numbers": [
+    80,
+    86
+  ]
+}

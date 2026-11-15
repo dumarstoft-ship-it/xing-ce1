@@ -1,0 +1,278 @@
+{
+  "scope": "Internal consistency of the current supplied material; not external verification of actual official statistics or original PDF transcription.",
+  "quant_data_module_sha256": "d22d1b32bca7dd12680aa5050eaa3688b5a8dfbd4c28410cdcd937502d341e8e",
+  "groups": [
+    {
+      "numbers": [
+        71,
+        72,
+        73,
+        74,
+        75
+      ],
+      "source_material_id": "gd-mock-2026h2-s26-m1",
+      "units": {
+        "forest_stock": "亿立方米",
+        "mixed_arbor_forest_share": "%",
+        "tree_planting": "株/万株/亿株",
+        "mangrove_area": "公顷",
+        "tree_planting_events": "万场",
+        "participation": "万人次"
+      },
+      "checks": {
+        "mangrove_activity_area_sum_hectares": 7613,
+        "repair_share_percent": {
+          "exact": "268200/7613",
+          "decimal": 35.22921318796795
+        },
+        "fourteenth_five_year_period_years": 5,
+        "events_annual_average_10000": {
+          "exact": "739/500",
+          "decimal": 1.478
+        },
+        "forest_mix_target_change_percentage_points": 6
+      },
+      "scope": "Different tree-planting and participation categories are not assumed mutually exclusive. No common total is asserted for those categories in the material.",
+      "material_internal_contradiction_found": false
+    },
+    {
+      "numbers": [
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "source_material_id": "gd-mock-2026h2-s24-m1",
+      "part_whole_pairs": [
+        {
+          "total": "房地产开发投资",
+          "part": "其中：住宅投资",
+          "unit": "亿元",
+          "current_other_component": {
+            "exact": "8637/25",
+            "decimal": 345.48
+          },
+          "base_other_component": {
+            "exact": "3951005/11928",
+            "decimal": 331.2378437290409
+          },
+          "current_and_base_part_within_total": true
+        },
+        {
+          "total": "房屋施工面积",
+          "part": "其中：住宅施工面积",
+          "unit": "万平方米",
+          "current_other_component": {
+            "exact": "490789/100",
+            "decimal": 4907.89
+          },
+          "base_other_component": {
+            "exact": "1176829630/228723",
+            "decimal": 5145.217708756881
+          },
+          "current_and_base_part_within_total": true
+        },
+        {
+          "total": "房屋竣工面积",
+          "part": "其中：住宅竣工面积",
+          "unit": "万平方米",
+          "current_other_component": {
+            "exact": "8697/25",
+            "decimal": 347.88
+          },
+          "base_other_component": {
+            "exact": "168187160/462759",
+            "decimal": 363.444384658105
+          },
+          "current_and_base_part_within_total": true
+        },
+        {
+          "total": "商品房销售面积",
+          "part": "其中：住宅销售面积",
+          "unit": "万平方米",
+          "current_other_component": {
+            "exact": "9597/50",
+            "decimal": 191.94
+          },
+          "base_other_component": {
+            "exact": "7204757/51957",
+            "decimal": 138.66768674095886
+          },
+          "current_and_base_part_within_total": true
+        },
+        {
+          "total": "商品房销售额",
+          "part": "其中：住宅销售额",
+          "unit": "亿元",
+          "current_other_component": {
+            "exact": "4444/25",
+            "decimal": 177.76
+          },
+          "base_other_component": {
+            "exact": "101649770/854687",
+            "decimal": 118.932158790294
+          },
+          "current_and_base_part_within_total": true
+        }
+      ],
+      "unit_conversion": "亿元 / 万平方米 × 10000 = 元/平方米",
+      "material_internal_contradiction_found": false
+    },
+    {
+      "numbers": [
+        81,
+        82,
+        83,
+        84,
+        85
+      ],
+      "source_material_id": "gd-mock-2026h2-s27-m4",
+      "units": {
+        "export_quantity": "万个",
+        "export_amount": "亿元",
+        "growth": "%",
+        "unit_price": "元/个"
+      },
+      "unit_conversion": "亿元 / 万个 × 10000 = 元/个",
+      "time_scope": "Table is monthly January-September flows; paragraph is October. No monthly value is a cumulative figure.",
+      "checks": {
+        "october_other_destinations_current": {
+          "exact": "157/5",
+          "decimal": 31.4
+        },
+        "october_other_destinations_base": {
+          "exact": "785731694300/45760117139",
+          "decimal": 17.17066614828099
+        },
+        "april_unit_price_from_displayed_values": {
+          "exact": "305000/2047",
+          "decimal": 148.99853444064485
+        },
+        "april_possible_range_if_cells_rounded_before_display": [
+          {
+            "exact": "1210000/8189",
+            "decimal": 147.75918915618513
+          },
+          {
+            "exact": "410000/2729",
+            "decimal": 150.23818248442652
+          }
+        ]
+      },
+      "rounding_resolution": "Question84 explicitly asks to calculate from displayed values. Without that scope, the underlying unrounded April price could cross 150 yuan.",
+      "material_internal_contradiction_found": false
+    },
+    {
+      "numbers": [
+        86,
+        87,
+        88,
+        89,
+        90
+      ],
+      "source_material_id": "gd-mock-2026h2-s23-m4",
+      "units": {
+        "body_total_quantity": "亿吨",
+        "table_and_commodity_quantity": "万吨",
+        "turnover": "亿吨公里",
+        "average_distance": "公里"
+      },
+      "unit_conversions": [
+        "10000万吨 = 1亿吨",
+        "亿吨公里 / 亿吨 = 公里"
+      ],
+      "checks": {
+        "table_2023_quantity_in_100m_tonnes": {
+          "exact": "100707/2000",
+          "decimal": 50.3535
+        },
+        "body_quantity": {
+          "exact": "1007/20",
+          "decimal": 50.35
+        },
+        "table_annual_growth_in_100m_tonnes": {
+          "exact": "5111/10000",
+          "decimal": 0.5111
+        },
+        "body_growth_amount": {
+          "exact": "51/100",
+          "decimal": 0.51
+        },
+        "table_total_growth_percent": {
+          "exact": "127775/124606",
+          "decimal": 1.025432162175176
+        },
+        "listed_four_commodities_100m_tonnes": {
+          "exact": "48623/1250",
+          "decimal": 38.8984
+        },
+        "turnover_components_exactly_sum_to_total": true
+      },
+      "rounding_feasibility_witnesses": {
+        "sending_quantity": {
+          "national_current": {
+            "exact": "3911/100",
+            "decimal": 39.11
+          },
+          "other_current": {
+            "exact": "22487/2000",
+            "decimal": 11.2435
+          },
+          "national_base": {
+            "exact": "25339221/649375",
+            "decimal": 39.02093705486044
+          },
+          "other_base": {
+            "exact": "22487/2078",
+            "decimal": 10.821462945139558
+          },
+          "national_growth_percent": {
+            "exact": "5783525/25339221",
+            "decimal": 0.22824399376760635
+          },
+          "national_displayed_growth_percent": "0.2",
+          "other_growth_percent": "3.9"
+        },
+        "turnover": {
+          "total_base": {
+            "exact": "3594569/100",
+            "decimal": 35945.69
+          },
+          "national_base": {
+            "exact": "1904539227/58300",
+            "decimal": 32667.91126929674
+          },
+          "other_base": {
+            "exact": "1910945/583",
+            "decimal": 3277.778730703259
+          },
+          "national_growth_percent": {
+            "exact": "-57155900/634846409",
+            "decimal": -0.09003106765623999
+          },
+          "national_displayed_growth_percent": "-0.1",
+          "other_growth_percent": "16.6"
+        }
+      },
+      "material_internal_contradiction_found": false
+    }
+  ],
+  "material_internal_contradiction_found": false,
+  "rejected_candidate_not_in_paper": {
+    "source_material_id": "gd-mock-2026h2-s32-m2",
+    "claimed_total": {
+      "exact": "263593/50",
+      "decimal": 5271.86
+    },
+    "sum_of_three_types": {
+      "exact": "15013/4",
+      "decimal": 3753.25
+    },
+    "unexplained_gap": {
+      "exact": "151861/100",
+      "decimal": 1518.61
+    },
+    "reason": "Difference is far too large to be explained by stated rounding."
+  }
+}

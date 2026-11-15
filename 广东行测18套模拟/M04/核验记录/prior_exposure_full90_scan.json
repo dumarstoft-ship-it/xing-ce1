@@ -1,0 +1,1076 @@
+{
+  "baseline_commit": "6aecdb088169c4c8b0c393046a77e483910aaf7d",
+  "module_file_sha256": {
+    "politics.json": "5ed3edc6aac864d26a362d8a18e227f67c906c71e1a81f894df8c5da9a9d4950",
+    "verbal.json": "ca73dd686348d92eca402f2fe39be05f8685a5038447cd0e3734588ef2b3cb46",
+    "quant_data.json": "d22d1b32bca7dd12680aa5050eaa3688b5a8dfbd4c28410cdcd937502d341e8e",
+    "reasoning_science.json": "229022e36b8de9eb17c542fe0c1ff2ea6fb0ab85bcdf9ef83f9af404185fcb2b"
+  },
+  "question_count": 90,
+  "corpus_files": 394,
+  "old24_text_files": 159,
+  "corpus_bytes": 17448142,
+  "corpus_lines": 199674,
+  "strong_source_record_paths": [
+    "广东行测18套模拟/M01/review_v3_changes.json",
+    "广东行测18套模拟/M01/science_selection_v2.json",
+    "广东行测18套模拟/M01/selection.json",
+    "广东行测18套模拟/M02/selection.json",
+    "广东行测18套模拟/M02/撤题记录.json",
+    "广东行测18套模拟/M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+    "广东行测18套模拟/M03/selection.json",
+    "广东行测18套模拟/M03/历史版本/0.1.0/selection.json",
+    "广东行测18套模拟/用题登记.jsonl"
+  ],
+  "old_graphic_reference_count": 147,
+  "methods": [
+    "literal source IDs",
+    "reserved/withdrawn/history source IDs",
+    "old delivered graphic source index",
+    "complete normalised stem text",
+    "48-character overlapping stem fragments",
+    "64-character material fragments"
+  ],
+  "limitations": [
+    "A common policy quotation, common topic or generic instruction is not by itself a duplicate question; text candidate hits require interpretation.",
+    "Normalisation removes whitespace and punctuation; short numeric-expression matches are candidates, not proof of complete identity.",
+    "No all-pairs perceptual image matching, no OCR of old PDFs lacking text-side artifacts, and no assertion that the user never encountered an unhit question elsewhere.",
+    "Source objects read from the fixed baseline Git commit; current temporary M04 registry rows are excluded by construction."
+  ],
+  "module_summary": {
+    "politics.json": {
+      "question_count": 15,
+      "reserved_source_hits": [],
+      "old_graphic_source_hits": [],
+      "old24_source_reference_hits": [],
+      "text_candidate_hits": []
+    },
+    "verbal.json": {
+      "question_count": 15,
+      "reserved_source_hits": [],
+      "old_graphic_source_hits": [],
+      "old24_source_reference_hits": [],
+      "text_candidate_hits": []
+    },
+    "quant_data.json": {
+      "question_count": 35,
+      "reserved_source_hits": [],
+      "old_graphic_source_hits": [],
+      "old24_source_reference_hits": [],
+      "text_candidate_hits": []
+    },
+    "reasoning_science.json": {
+      "question_count": 25,
+      "reserved_source_hits": [],
+      "old_graphic_source_hits": [],
+      "old24_source_reference_hits": [],
+      "text_candidate_hits": []
+    }
+  },
+  "results": [
+    {
+      "number": 1,
+      "module": "politics.json",
+      "source_id": "M04-ORIG-001",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 1,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 2,
+      "module": "politics.json",
+      "source_id": "M04-ORIG-002",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 1,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 3,
+      "module": "politics.json",
+      "source_id": "M04-ORIG-003",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 3,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 4,
+      "module": "politics.json",
+      "source_id": "M04-ORIG-004",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 1,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 5,
+      "module": "politics.json",
+      "source_id": "M04-ORIG-005",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 3,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 6,
+      "module": "politics.json",
+      "source_id": "M04-ORIG-006",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 1,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 7,
+      "module": "politics.json",
+      "source_id": "M04-ORIG-007",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 4,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 8,
+      "module": "politics.json",
+      "source_id": "M04-ORIG-008",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 4,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 9,
+      "module": "politics.json",
+      "source_id": "M04-ORIG-009",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 1,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 10,
+      "module": "politics.json",
+      "source_id": "M04-ORIG-010",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 0,
+      "input_kind_limitations": [
+        "no_distinctive_text_pattern; rely on source ID and graphic provenance"
+      ]
+    },
+    {
+      "number": 11,
+      "module": "politics.json",
+      "source_id": "M04-ORIG-011",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 4,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 12,
+      "module": "politics.json",
+      "source_id": "M04-ORIG-012",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 1,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 13,
+      "module": "politics.json",
+      "source_id": "M04-ORIG-013",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 1,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 14,
+      "module": "politics.json",
+      "source_id": "M04-ORIG-014",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 1,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 15,
+      "module": "politics.json",
+      "source_id": "M04-ORIG-015",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 3,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 16,
+      "module": "verbal.json",
+      "source_id": "GKYY-2025-040",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 5,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 17,
+      "module": "verbal.json",
+      "source_id": "ZJ2025-A类-032",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 10,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 18,
+      "module": "verbal.json",
+      "source_id": "GKYY-2025-055",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 7,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 19,
+      "module": "verbal.json",
+      "source_id": "ZJ2026-A类-028",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 12,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 20,
+      "module": "verbal.json",
+      "source_id": "GKYY-2025-036",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 6,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 21,
+      "module": "verbal.json",
+      "source_id": "GKYY-2025-020",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 8,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 22,
+      "module": "verbal.json",
+      "source_id": "GKYY-2024-052",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 10,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 23,
+      "module": "verbal.json",
+      "source_id": "ZJ2025-A类-034",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 18,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 24,
+      "module": "verbal.json",
+      "source_id": "ZJ2024-A类-045",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 18,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 25,
+      "module": "verbal.json",
+      "source_id": "GKYY-2025-044",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 9,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 26,
+      "module": "verbal.json",
+      "source_id": "GKYY-2025-062",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 13,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 27,
+      "module": "verbal.json",
+      "source_id": "GKYY-2025-048",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 9,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 28,
+      "module": "verbal.json",
+      "source_id": "ZJ2024-A类-046",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 18,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 29,
+      "module": "verbal.json",
+      "source_id": "GKYY-2024-066",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 10,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 30,
+      "module": "verbal.json",
+      "source_id": "GKYY-2025-059",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 10,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 31,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s20-q31",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 1,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 32,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s17-q34",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 1,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 33,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s23-q32",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 1,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 34,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s24-q35",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 0,
+      "input_kind_limitations": [
+        "no_distinctive_text_pattern; rely on source ID and graphic provenance"
+      ]
+    },
+    {
+      "number": 35,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s17-q32",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 0,
+      "input_kind_limitations": [
+        "no_distinctive_text_pattern; rely on source ID and graphic provenance"
+      ]
+    },
+    {
+      "number": 36,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s21-q40",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 3,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 37,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s16-q41",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 3,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 38,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s24-q36",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 5,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 39,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s33-q40",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 5,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 40,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s17-q43",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 13,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 41,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s28-q42",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 5,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 42,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s28-q44",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 6,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 43,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s27-q43",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 2,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 44,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s20-q44",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 5,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 45,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s16-q43",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 3,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 46,
+      "module": "reasoning_science.json",
+      "source_id": "gd-mock-2026h2-s21-q46",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 0,
+      "input_kind_limitations": [
+        "no_distinctive_text_pattern; rely on source ID and graphic provenance"
+      ]
+    },
+    {
+      "number": 47,
+      "module": "reasoning_science.json",
+      "source_id": "gd-mock-2026h2-s25-q46",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 0,
+      "input_kind_limitations": [
+        "no_distinctive_text_pattern; rely on source ID and graphic provenance"
+      ]
+    },
+    {
+      "number": 48,
+      "module": "reasoning_science.json",
+      "source_id": "gd-mock-2026h2-s23-q48",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 0,
+      "input_kind_limitations": [
+        "no_distinctive_text_pattern; rely on source ID and graphic provenance"
+      ]
+    },
+    {
+      "number": 49,
+      "module": "reasoning_science.json",
+      "source_id": "gd-mock-2026h2-s22-q50",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 1,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 50,
+      "module": "reasoning_science.json",
+      "source_id": "gd-mock-2026h2-s26-q48",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 0,
+      "input_kind_limitations": [
+        "no_distinctive_text_pattern; rely on source ID and graphic provenance"
+      ]
+    },
+    {
+      "number": 51,
+      "module": "reasoning_science.json",
+      "source_id": "JS2023-A类-091",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 8,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 52,
+      "module": "reasoning_science.json",
+      "source_id": "JS2022-A类-093",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 10,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 53,
+      "module": "reasoning_science.json",
+      "source_id": "ZJ2024-A类-104",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 14,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 54,
+      "module": "reasoning_science.json",
+      "source_id": "gd-mock-2026h2-s22-q52",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 10,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 55,
+      "module": "reasoning_science.json",
+      "source_id": "gd-mock-2026h2-s25-q55",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 5,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 56,
+      "module": "reasoning_science.json",
+      "source_id": "JS2022-A类-103",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 10,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 57,
+      "module": "reasoning_science.json",
+      "source_id": "gd-mock-2026h2-s24-q62",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 12,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 58,
+      "module": "reasoning_science.json",
+      "source_id": "JS2022-A类-094",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 14,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 59,
+      "module": "reasoning_science.json",
+      "source_id": "gd-mock-2026h2-s26-q59",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 5,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 60,
+      "module": "reasoning_science.json",
+      "source_id": "JS2023-A类-103",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 12,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 61,
+      "module": "reasoning_science.json",
+      "source_id": "JS2022-A类-102",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 1,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 62,
+      "module": "reasoning_science.json",
+      "source_id": "ZJ2024-A类-109",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 10,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 63,
+      "module": "reasoning_science.json",
+      "source_id": "gd-mock-2026h2-s26-q55",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 20,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 64,
+      "module": "reasoning_science.json",
+      "source_id": "JS2023-A类-101",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 1,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 65,
+      "module": "reasoning_science.json",
+      "source_id": "ZJ2024-A类-101",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 1,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 66,
+      "module": "reasoning_science.json",
+      "source_id": "gd-mock-2026h2-s33-q68",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 10,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 67,
+      "module": "reasoning_science.json",
+      "source_id": "gd-mock-2026h2-s17-q67",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 7,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 68,
+      "module": "reasoning_science.json",
+      "source_id": "gd-mock-2026h2-s31-q68",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 5,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 69,
+      "module": "reasoning_science.json",
+      "source_id": "gd-mock-2026h2-s22-q69",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 5,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 70,
+      "module": "reasoning_science.json",
+      "source_id": "gd-mock-2026h2-s32-q70",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 1,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 71,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s26-q71",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 7,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 72,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s26-q72",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 7,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 73,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s26-q73",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 8,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 74,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s26-q74",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 7,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 75,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s26-q75",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 7,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 76,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s24-q71",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 4,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 77,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s24-q72",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 4,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 78,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s24-q73",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 5,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 79,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s24-q74",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 4,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 80,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s24-q75",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 8,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 81,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s27-q86",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 5,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 82,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s27-q87",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 5,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 83,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s27-q88",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 5,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 84,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s27-q89",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 7,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 85,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s27-q90",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 5,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 86,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s23-q86",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 5,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 87,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s23-q87",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 6,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 88,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s23-q88",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 6,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 89,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s23-q89",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 6,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 90,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s23-q90",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 6,
+      "input_kind_limitations": []
+    }
+  ]
+}

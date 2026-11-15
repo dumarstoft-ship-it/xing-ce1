@@ -1,0 +1,107 @@
+{
+  "all_15_agree": true,
+  "comparisons": [
+    {
+      "number": 31,
+      "independent_answer": "A",
+      "editor_answer": "A",
+      "agrees": true
+    },
+    {
+      "number": 32,
+      "independent_answer": "B",
+      "editor_answer": "B",
+      "agrees": true
+    },
+    {
+      "number": 33,
+      "independent_answer": "A",
+      "editor_answer": "A",
+      "agrees": true
+    },
+    {
+      "number": 34,
+      "independent_answer": "C",
+      "editor_answer": "C",
+      "agrees": true
+    },
+    {
+      "number": 35,
+      "independent_answer": "B",
+      "editor_answer": "B",
+      "agrees": true
+    },
+    {
+      "number": 36,
+      "independent_answer": "A",
+      "editor_answer": "A",
+      "agrees": true
+    },
+    {
+      "number": 37,
+      "independent_answer": "A",
+      "editor_answer": "A",
+      "agrees": true
+    },
+    {
+      "number": 38,
+      "independent_answer": "D",
+      "editor_answer": "D",
+      "agrees": true
+    },
+    {
+      "number": 39,
+      "independent_answer": "D",
+      "editor_answer": "D",
+      "agrees": true
+    },
+    {
+      "number": 40,
+      "independent_answer": "B",
+      "editor_answer": "B",
+      "agrees": true
+    },
+    {
+      "number": 41,
+      "independent_answer": "D",
+      "editor_answer": "D",
+      "agrees": true
+    },
+    {
+      "number": 42,
+      "independent_answer": "A",
+      "editor_answer": "A",
+      "agrees": true
+    },
+    {
+      "number": 43,
+      "independent_answer": "D",
+      "editor_answer": "D",
+      "agrees": true
+    },
+    {
+      "number": 44,
+      "independent_answer": "B",
+      "editor_answer": "B",
+      "agrees": true
+    },
+    {
+      "number": 45,
+      "independent_answer": "C",
+      "editor_answer": "C",
+      "agrees": true
+    }
+  ],
+  "issues": [
+    {
+      "number": 43,
+      "severity": "distractor_quality",
+      "finding": "B为14/5，大于1，不可能是概率；不影响D唯一正确，但削弱干扰质量，建议核原图。若无原图，可明确作为编辑改编换成2/5，正好对应忘扣另一对夫妻的常见错误。"
+    },
+    {
+      "number": 40,
+      "severity": "analysis_precision",
+      "finding": "精确连续最优360/7小时会产生非整数零件数量；本题只问整小时取整，可用51小时不够、52小时给出整数零件可行方案证明，避免宣称分数零件是实体可行方案。"
+    }
+  ]
+}
