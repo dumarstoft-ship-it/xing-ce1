@@ -359,9 +359,18 @@ def inline_html(s: str) -> str:
     return "".join(out)
 
 
+# 填空线是行内块，浏览器会在它与后面的句号、逗号之间断行，标点落到下一行行首；
+# 这里把填空线与紧邻的前后标点粘成不可断开的一段
+BLANK_GLUE = re.compile(r'([“‘（「『]*)(<span class="blank"></span>)([，。、；：？！）”’」』]*)')
+
+
+def _glue(m: re.Match) -> str:
+    return f'<span class="nobr">{m.group(0)}</span>' if (m.group(1) or m.group(3)) else m.group(0)
+
+
 def _text_html(s: str) -> str:
     parts = UNDERS.split(s)
-    return '<span class="blank"></span>'.join(html.escape(p) for p in parts)
+    return BLANK_GLUE.sub(_glue, '<span class="blank"></span>'.join(html.escape(p) for p in parts))
 
 
 # --------------------------------------------------------------------------
@@ -445,6 +454,33 @@ class SizeAdjust:
 
 
 ADJUST: SizeAdjust | None = None
+
+
+def apply_whitespace_fixes(paper_id: str, questions: list[dict], log: Log) -> None:
+    """排版空白勘误.json：底稿丢了原卷的空格或多出分段时，按原卷恢复。
+    只许改空白（空格、换行），文字和标点一个不改；只在底稿该段文字未变时启用。"""
+    import hashlib
+    p = HERE / "排版空白勘误.json"
+    if not p.exists():
+        return
+    by_no = {q["number"]: q for q in questions}
+    for e in json.loads(p.read_text(encoding="utf-8")):
+        if e["套卷"] != paper_id:
+            continue
+        n, where = e["题号"], e["位置"]
+        q = by_no[n]
+        blocks = q["stem"] if where == "题干" else q["options"][where.removeprefix("选项")]
+        block = blocks[e.get("块", 0)]
+        cur, new = block["text"], e["改为"]
+        if cur == new:
+            log.add(n, where, "底稿已按原卷修正空白", "排版空白勘误.json此条可删除", new[:24])
+            continue
+        if hashlib.sha256(cur.encode("utf-8")).hexdigest() != e["底稿文字SHA256"]:
+            raise SystemExit(f"排版空白勘误.json：第{n}题{where}的底稿文字已变，请重新核对原卷后更新登记")
+        if re.sub(r"\s", "", cur) != re.sub(r"\s", "", new):
+            raise SystemExit(f"排版空白勘误.json：第{n}题{where}的登记不止改空白")
+        block["text"] = new
+        log.add(n, where, "依原卷恢复空白", cur, new)
 
 
 class Redraws:
@@ -1084,6 +1120,38 @@ def render(html_path: Path, pdf_path: Path) -> dict:
 ALLOWED_FONT = re.compile(r"(FZSSJW|FZHTJW|FZKTJW|LiberationSerif|TimesNewRoman|Times|LiberationSans|Arial|NotoSerif)", re.I)
 
 
+LINE_START_BAD = "，。、；：？！）”’」』"
+
+
+def line_start_punct(pdf: Path, front_pages: int) -> list[tuple[int, str]]:
+    """找出以句末标点开头的行。行首若是填空线（下划线不是文字），标点紧跟其后，不算。"""
+    import pdfplumber  # type: ignore
+    found = []
+    with pdfplumber.open(str(pdf)) as doc:
+        for i, page in enumerate(doc.pages):
+            if i < front_pages:
+                continue
+            # 按字的竖直中心聚成行：西文数字与汉字基线不同，不能按底边取整分组
+            rows: list[list] = []
+            for c in sorted((c for c in page.chars if c["text"].strip()), key=lambda c: (c["top"] + c["bottom"]) / 2):
+                mid = (c["top"] + c["bottom"]) / 2
+                if rows and abs(mid - rows[-1][0]) <= 5:
+                    rows[-1][1].append(c)
+                else:
+                    rows.append([mid, [c]])
+            rules = [e for e in page.edges if e["orientation"] == "h"]
+            for _, cs in rows:
+                first = min(cs, key=lambda c: c["x0"])
+                if first["text"] not in LINE_START_BAD:
+                    continue
+                blank_before = any(abs(e["top"] - first["bottom"]) < 4 and first["x0"] - 50 < e["x1"] <= first["x0"] + 1
+                                   for e in rules)
+                if not blank_before:
+                    line = "".join(c["text"] for c in sorted(cs, key=lambda c: c["x0"]))
+                    found.append((i + 1, line[:16]))
+    return found
+
+
 def check_pdf(pdf: Path, n_questions: int, front_pages: int) -> dict:
     r = subprocess.run(["pdffonts", str(pdf)], capture_output=True, text=True)
     fonts = [ln.split()[0] for ln in r.stdout.splitlines()[2:] if ln.strip()]
@@ -1107,6 +1175,9 @@ def check_pdf(pdf: Path, n_questions: int, front_pages: int) -> dict:
     expected = [(k, total_body) for k in range(1, total_body + 1)]
     if footers != expected:
         raise SystemExit(f"页脚页码不连续：{footers}")
+    bad_starts = line_start_punct(pdf, front_pages)
+    if bad_starts:
+        raise SystemExit(f"句末标点落在行首（避头尾失效）：{bad_starts}")
     missing = [k for k in range(1, n_questions + 1) if k not in page_of]
     if missing:
         raise SystemExit(f"PDF中找不到以下题号：{missing}")
@@ -1305,6 +1376,7 @@ def main() -> None:
     out_dir = args.out or (paper_dir / "打印版")
     out_dir.mkdir(parents=True, exist_ok=True)
     log = Log()
+    apply_whitespace_fixes(args.paper_id, questions, log)
     check_glyphs(questions, fonts, log)
 
     with tempfile.TemporaryDirectory(prefix="print_") as td:
