@@ -31,13 +31,17 @@ jobs:
             /国考/言语理解/2016-2025/all.jsonl
             /学习资料/政治理论常识/*.jsonl
             !*.zip
+      - name: Install numerical-check dependency
+        run: |
+          python -m venv /tmp/m01-review-env
+          /tmp/m01-review-env/bin/python -m pip install numpy
+          echo '/tmp/m01-review-env/bin' >> "$GITHUB_PATH"
       - name: Apply checked revision
         run: |
           python - <<'PY'
           from pathlib import Path
           p=Path('广东行测18套模拟/M01/apply_claude_review_v3.py')
           s=p.read_text()
-          # Repair a single transport quote in the generated-table code string.
           bad="+' |]))"
           good="+' |']))"
           assert s.count(bad) in (0,1)
