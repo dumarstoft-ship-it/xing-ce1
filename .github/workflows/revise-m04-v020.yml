@@ -60,7 +60,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          git add -A -- \
+          git add --sparse -A -- \
             'README.md' \
             '广东行测18套模拟/README.md' \
             '广东行测18套模拟/选编意图与改题边界.md' \
