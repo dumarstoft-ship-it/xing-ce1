@@ -315,6 +315,16 @@ class FigureSizer:
                 self.jz[k] = src.get("bbox")
 
     def size_mm(self, block: dict, in_material: bool = False) -> tuple[float, float, str]:
+        w, h, how = self._size_mm(block, in_material)
+        adj = ADJUST.lookup(block) if ADJUST else None
+        if adj:
+            from PIL import Image  # type: ignore
+            wpx, hpx = Image.open(REPO / block["path"]).size
+            w2 = min(float(adj["print_width_mm"]), self.MAT_W)
+            return w2, w2 * hpx / wpx, f"按可读性调整，原定{w:.1f}mm（{how}）；{adj['reason']}"
+        return w, h, how
+
+    def _size_mm(self, block: dict, in_material: bool = False) -> tuple[float, float, str]:
         from PIL import Image  # type: ignore
         path = REPO / block["path"]
         wpx, hpx = Image.open(path).size
@@ -340,6 +350,31 @@ class FigureSizer:
         return w * scale, h * scale, how
 
     MAT_W, MAT_H = 152.4, 110.0   # 资料图表可用满版心
+
+
+class SizeAdjust:
+    """题图尺寸调整.json：原印刷尺寸下看不清的题图按可读性另定宽度（只缩放，不改像素）；
+    每条写明理由，只在源图哈希未变时启用。"""
+
+    def __init__(self) -> None:
+        self.by_id = {}
+        p = HERE / "题图尺寸调整.json"
+        if p.exists():
+            for rec in json.loads(p.read_text(encoding="utf-8")):
+                self.by_id[Path(rec["path"]).stem] = rec
+
+    def lookup(self, block: dict):
+        import hashlib
+        rec = self.by_id.get(block.get("asset_id") or Path(block["path"]).stem)
+        if not rec or rec["path"] != block["path"]:
+            return None
+        digest = hashlib.sha256((REPO / block["path"]).read_bytes()).hexdigest()
+        if digest != rec["source_image_sha256"]:
+            raise SystemExit(f"题图尺寸调整.json 登记的 {block['path']} 已变动，请重新查看后更新哈希")
+        return rec
+
+
+ADJUST: SizeAdjust | None = None
 
 
 class Redraws:
@@ -483,6 +518,7 @@ def _png_part(rel: str, width_mm: float) -> tuple[str, float, float]:
 # 编辑转写时写进表格的说明不是考题内容：单元格注记改回原表空白，备注里的“原表”说明改成考生能读的说法
 EDITORIAL_NOTE = [
     (re.compile(r"“—”为原表缺省项。?"), "“—”表示该项数据缺省。"),
+    (re.compile(r"“—”表示原表未(?:给出|提供)(?:该项)?数据。?"), "“—”表示未给出数据。"),
 ]
 # 只描述转写过程、对考生没有信息量的备注句（如“差值方向依题干”“不补算”“原表未标百分号”），印刷时删去
 NOTE_META = re.compile(r"原表|依题干|转写|不补算|原图|单元格展开")
@@ -586,7 +622,9 @@ def table_html(block: dict, number, log: Log, avail: float = TEXT_WIDTH_EM) -> s
             shown = pat.sub(rep, shown)
         if shown != notes:
             log.add(number, "资料表格", "备注中的转写说明改为考生用语", notes, shown)
-        kept = [x for x in re.split(r"(?<=[。；])", shown) if x.strip() and not NOTE_META.search(x)]
+        # 说明“—”含义的句子对考生有用（不能把未给出的数据当0），无论措辞如何都保留
+        kept = [x for x in re.split(r"(?<=[。；])", shown)
+                if x.strip() and (not NOTE_META.search(x) or "—" in x)]
         if "".join(kept) != shown:
             log.add(number, "资料表格", "删去只说明转写过程的备注句", shown, "".join(kept))
         shown = "".join(kept)
@@ -684,12 +722,12 @@ def question_html(q: dict, sizer: FigureSizer, log: Log) -> str:
     # 题号挂在第一段左侧；约6行以内的短题整题不跨页（长题仍可在题干与选项间分页，同粉笔样卷）
     num = f'<span class="num">{n}.</span>'
     # 资料分析题不整题保护：资料组是否在同一对开页由 spread_pass 负责，组内跨左右页不影响作答
-    has_fig = any(b["type"] == "figure" for b in q["stem"]) or \
+    has_fig = any(b["type"] in ("figure", "table") for b in q["stem"]) or \
         any(b["type"] == "figure" for o in q["options"].values() for b in o)
     if q.get("materials"):
         keep = ""
     elif has_fig:
-        keep = " keep"      # 带图的题整题不跨页（题干、题图、选项在同一页），避免题干被图挤成两半
+        keep = " keep"      # 带图、带表的题整题不跨页（题干、图表、选项在同一页），避免题干与图表被翻页隔开
     else:
         keep = " keep" if _estimated_lines(q) <= 6 else ""
     return (f'<div class="q{keep}" id="q{n}" data-n="{n}">{num}<div class="stem">' + "".join(stem_parts)
@@ -1125,8 +1163,9 @@ def main() -> None:
     paper_no = int(m.group(1)) if m else 1
 
     fonts = find_fonts(args.font_dir)
-    global REDRAWS
+    global REDRAWS, ADJUST
     REDRAWS = Redraws()
+    ADJUST = SizeAdjust()
     out_dir = args.out or (paper_dir / "打印版")
     out_dir.mkdir(parents=True, exist_ok=True)
     log = Log()

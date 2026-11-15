@@ -1,0 +1,9 @@
+[
+ {
+  "path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s21_p17_i04.png",
+  "source_image_sha256": "cdcbf796d0353544cd8028fdac57e4f53577550858680fd677a3d38ae2733eb3",
+  "used_in": "M03第67题",
+  "print_width_mm": 70,
+  "reason": "源PDF印刷宽42.5mm时标注A、B、O字高约1.3mm；原图1296像素，印70mm宽仍约470dpi，标注字高约2.1mm"
+ }
+]
