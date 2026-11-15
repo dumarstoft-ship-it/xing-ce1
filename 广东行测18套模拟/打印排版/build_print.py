@@ -174,7 +174,7 @@ def reflow(text: str, number, where: str, log: Log) -> list[str]:
 DOTS = re.compile(r"·{3,}|•{3,}")
 EMPTY_PAREN = re.compile(r"（[ 　]*）|\([ 　]*\)")
 UNDERS = re.compile(r"_{3,}")
-EDITORIAL_CELL = {"原表未标注": ""}
+EDITORIAL_CELL = {"原表未标注": "", "原表空白": ""}
 
 
 # 答题括号：粉笔样卷括号内约留两字宽，这里用全角括号夹一个全角空格
@@ -225,6 +225,10 @@ def tex_to_html(src: str) -> str:
                 return f'√<span class="sqrt-arg">{a}</span>'
             if cmd == "circ":
                 return "°"
+            if cmd == "triangle":
+                return "△"
+            if cmd in ("angle",):
+                return "∠"
             if cmd in ("mathrm", "text", "rm"):
                 return group(True)
             if cmd in ("times",):
@@ -447,6 +451,8 @@ def figure_html(block: dict, sizer: FigureSizer, number, log: Log, in_material: 
 EDITORIAL_NOTE = [
     (re.compile(r"“—”为原表缺省项。?"), "“—”表示该项数据缺省。"),
 ]
+# 只描述转写过程、对考生没有信息量的备注句（如“差值方向依题干”“不补算”“原表未标百分号”），印刷时删去
+NOTE_META = re.compile(r"原表|依题干|转写|不补算|原图|单元格展开")
 TABLE_PT = 10.5          # 表格字号（五号）
 TABLE_PAD_EM = 0.9       # 单元格左右内边距合计（字宽）
 TEXT_WIDTH_EM = 432 / TABLE_PT
@@ -507,12 +513,12 @@ def table_html(block: dict, number, log: Log, avail: float = TEXT_WIDTH_EM) -> s
     heads, rows = _clean_cells(block, number, log)
     title = block.get("title") or ""
     # 两列长表（如逐年比例）在原卷中多为横排，转成两行以省版面
-    transposed = False
     if len(heads) == 2 and len(rows) >= 5 and all(len(r) == 2 for r in rows) \
             and max(_em(c) for r in rows for c in r) <= 6:
-        heads, rows = [heads[0]] + [r[0] for r in rows], [[heads[1]] + [r[1] for r in rows]]
-        transposed = True
-        log.add(number, "资料表格", "两列长表改为横排", title, "表头行为原第一列，第二行为原第二列，数据不变")
+        th, tr = [heads[0]] + [r[0] for r in rows], [[heads[1]] + [r[1] for r in rows]]
+        if _col_widths(th, tr, avail):          # 横排后仍放得下才转
+            heads, rows = th, tr
+            log.add(number, "资料表格", "两列长表改为横排", title, "表头行为原第一列，第二行为原第二列，数据不变")
     widths = _col_widths(heads, rows, avail)
     font = TABLE_PT
     if widths is None:
@@ -520,15 +526,16 @@ def table_html(block: dict, number, log: Log, avail: float = TEXT_WIDTH_EM) -> s
         widths = _col_widths(heads, rows, avail * TABLE_PT / font)
         log.add(number, "资料表格", "表格过宽，改用小五号", title, "")
     out = [f'<div class="tbl" data-cols="{len(widths or [])}">']
-    if title:
-        out.append(f'<div class="tbl-title">{inline_html(title)}</div>')
     css = [] if font == TABLE_PT else [f"font-size:{font}pt"]
     if widths:
         css.append(f"width:{sum(widths):.2f}em")
         out.append(f'<table class="fixed" style="{";".join(css)}">')
-        out.append("<colgroup>" + "".join(f'<col style="width:{w:.2f}em">' for w in widths) + "</colgroup>")
     else:
         out.append(f'<table style="{";".join(css)}">' if css else "<table>")
+    if title:   # 表题用 caption，宽度随表格，长表题在表宽内折行
+        out.append(f'<caption class="tbl-title">{inline_html(title)}</caption>')
+    if widths:
+        out.append("<colgroup>" + "".join(f'<col style="width:{w:.2f}em">' for w in widths) + "</colgroup>")
     if heads:
         out.append("<tr>" + "".join(f"<th>{inline_html(h)}</th>" for h in heads) + "</tr>")
     for row in rows:
@@ -546,7 +553,12 @@ def table_html(block: dict, number, log: Log, avail: float = TEXT_WIDTH_EM) -> s
             shown = pat.sub(rep, shown)
         if shown != notes:
             log.add(number, "资料表格", "备注中的转写说明改为考生用语", notes, shown)
-        out.append(f'<div class="tbl-note">{inline_html(shown)}</div>')
+        kept = [x for x in re.split(r"(?<=[。；])", shown) if x.strip() and not NOTE_META.search(x)]
+        if "".join(kept) != shown:
+            log.add(number, "资料表格", "删去只说明转写过程的备注句", shown, "".join(kept))
+        shown = "".join(kept)
+        if shown.strip() and shown.strip() not in ("备注：", "注："):
+            out.append(f'<div class="tbl-note">{inline_html(shown)}</div>')
     out.append("</div>")
     return "".join(out)
 
@@ -557,8 +569,31 @@ def table_width_em(block: dict, avail: float = TEXT_WIDTH_EM) -> float | None:
     return sum(w) if w else None
 
 
-def options_html(q: dict, log: Log) -> str:
+def figure_options_html(q: dict, sizer: "FigureSizer", log: Log) -> str:
+    """选项为图（如资料分析的饼图选项）：原印刷尺寸，四列放得下排一行，否则两列。"""
     n = q["number"]
+    cells, widths = [], []
+    for k in sorted(q["options"]):
+        figs = [b for b in q["options"][k] if b["type"] == "figure"]
+        texts = [b["text"] for b in q["options"][k] if b["type"] == "text"]
+        if len(figs) != 1:
+            raise SystemExit(f"第{n}题选项{k}应恰含一幅图，实际{len(figs)}幅")
+        w, h, how = sizer.size_mm(figs[0])
+        widths.append(w)
+        src = (REPO / figs[0]["path"]).as_uri()
+        log.add(n, f"选项{k}图", "题图尺寸", figs[0]["path"], f"{w:.1f}×{h:.1f}mm（{how}）")
+        cap = f'<span class="optfig-text">{inline_html("".join(texts))}</span>' if texts else ""
+        cells.append(f'<div class="optfig"><span class="lab">{k}.</span>'
+                     f'<img src="{src}" style="width:{w:.2f}mm;height:{h:.2f}mm" alt="">{cap}</div>')
+    cols = 4 if 4 * max(widths) + 3 * 8 <= 152.4 else 2
+    log.add(n, "选项", "图形选项排法", f"{len(cells)}幅", f"每行{cols}幅")
+    return f'<div class="opts figs" style="grid-template-columns:repeat({cols},1fr)">' + "".join(cells) + "</div>"
+
+
+def options_html(q: dict, log: Log, sizer: "FigureSizer | None" = None) -> str:
+    n = q["number"]
+    if any(b["type"] == "figure" for o in q["options"].values() for b in o):
+        return figure_options_html(q, sizer or FigureSizer(), log)
     if q["question_type"] == "true_false":
         items = [("A", "正确"), ("B", "错误")]
         return ('<div class="opts c2 fixed">'
@@ -609,7 +644,7 @@ def question_html(q: dict, sizer: FigureSizer, log: Log) -> str:
     # 题号挂在第一段左侧
     num = f'<span class="num">{n}.</span>'
     return (f'<div class="q" id="q{n}" data-n="{n}">{num}<div class="stem">' + "".join(stem_parts)
-            + "</div>" + options_html(q, log) + "</div>")
+            + "</div>" + options_html(q, log, sizer) + "</div>")
 
 
 def material_html(m: dict, log: Log, first_q: int) -> str:

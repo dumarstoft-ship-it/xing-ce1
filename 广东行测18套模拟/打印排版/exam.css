@@ -94,6 +94,11 @@ p { margin: 0; }
 .opts.c1 { grid-template-columns: 432pt; }
 .opt { text-align: justify; }
 .opt .lab { font-family: "ZG Latin"; }
+/* 图形选项：标号在左上，图在右 */
+.opts.figs { column-gap: 8mm; row-gap: 3mm; margin: 2pt 0 4pt; }
+.optfig { display: flex; align-items: flex-start; gap: 1.5mm; line-height: 1; }
+.optfig .lab { font-family: "ZG Latin"; line-height: 22.9pt; }
+.optfig img { display: block; margin-top: 2mm; }
 .opt p + p { margin: 0; }
 
 /* 资料：首行缩进两字 */
@@ -114,9 +119,10 @@ p { margin: 0; }
 .tbl-title {
   font-family: "ZG LatinB", "ZG Hei";
   font-size: 10.5pt;
-  line-height: 16pt;
+  line-height: 15pt;
   text-align: center;
-  margin-bottom: 3pt;
+  caption-side: top;
+  padding-bottom: 3pt;
 }
 .tbl table {
   border-collapse: collapse;
