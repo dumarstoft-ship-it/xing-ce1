@@ -127,7 +127,7 @@ def render_blocks(blocks):
     for b in blocks:
         typ = b['type']
         if typ == 'text':
-            out.append(b['text'].strip())
+            out.append(b['text'].strip().replace('\n', '  \n'))
         elif typ == 'figure':
             out.append(f'![题图]({rel_link(b["path"])})')
         elif typ == 'table':
@@ -228,7 +228,7 @@ def main():
         if actual_counts.get(section,0)!=count:
             errors.append(f'Section count mismatch: {section}')
 
-    missing_note = '第66—70题科学推理待补，本稿尚不能用于完整整卷计时。' if missing else '题面已补齐，仍待独立审核与打印排版。'
+    missing_note = ('第66—70题科学推理待补，本稿尚不能用于完整整卷计时。' if missing else cfg.get('display_status', '题面已补齐，仍待独立审核与打印排版。'))
     head=[f'# 广东行测模拟 M01｜选编待审稿',
           f'当前实有 **{len(rows)}题**；全卷目标{cfg["target_question_count"]}题。**{missing_note}**',
           '按近两年广东题本顺序编排。题目不标来源、难度或建议跳题位置；答案与解析另册。',
@@ -259,11 +259,11 @@ def main():
     write_jsonl(HERE/'题目.jsonl',questions)
 
     answer_lines=['# M01｜答案与解析（待审）',
-                  f'本文件含{len(rows)}题的编辑答案。{missing_note}原参考答案、编辑独立解答、内部复核和Claude外部审核是不同状态；本稿尚未经Claude审核。',
+                  f'本文件含{len(rows)}题的编辑答案。{missing_note}原参考答案、编辑独立解答、内部复核和Claude外部审核是不同状态；审核范围与本次修订状态见paper.json及审核意见处理说明。',
                   '## 答案速查']
     for start in range(1,91,10):
         ns=list(range(start,min(start+10,91)))
-        answer_lines.extend(['| '+' | '.join(map(str,ns))+' |','| '+' | '.join(['---']*len(ns))+' |','| '+' | '.join(by_number[n]['answer'] if n in by_number else '待补' for n in ns)+' |',''])
+        answer_lines.append('\n'.join(['| '+' | '.join(map(str,ns))+' |','| '+' | '.join(['---']*len(ns))+' |','| '+' | '.join(by_number[n]['answer'] if n in by_number else '待补' for n in ns)+' |']))
     answer_lines.append('## 逐题解析与来源')
     source_rows=[]
     file_hashes={}
@@ -283,7 +283,7 @@ def main():
             for ref in p.get('references',[]):
                 answer_lines.append(f'- [{ref["title"]}]({ref["url"]})：{ref["locator"]}。')
         if r.get('edits'):
-            answer_lines.append('编辑处理：'+json.dumps(r['edits'],ensure_ascii=False))
+            answer_lines.append('编辑处理：'+'；'.join(e.get('description', e.get('text', e.get('type',''))) if isinstance(e,dict) else str(e) for e in r['edits']))
         source_rows.append({
             'paper_id':'M01','number':r['number'],'source_id':r['source_id'],
             'source_bank':r['source_bank'],'source_file':sf,'source_file_sha256':file_hashes.get(sf),
@@ -327,7 +327,8 @@ def main():
         'target_count':cfg['target_question_count'],'actual_count':len(rows),'missing_numbers':missing,
         'completed_section_counts':actual_counts,'material_groups':dict(group_members),
         'unique_figure_files':len(assets),'errors':errors,'is_complete_paper':not missing,
-        'print_ready':False,'external_review':'pending_claude',
+        'print_ready':False,'external_review':cfg.get('external_review','pending_claude'),
+        'printing_status':cfg.get('printing_status','not_started'),
         'source_file_sha256':file_hashes,
         'limits':[
             '结构检查不是答案正确性证明；逐题推导与内部复核记录另存。',

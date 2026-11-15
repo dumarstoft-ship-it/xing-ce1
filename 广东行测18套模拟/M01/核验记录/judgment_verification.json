@@ -221,9 +221,11 @@
     "answer": "A"
   },
   "ZJ2021-A类-080": {
-    "method": "实际读图独立确定逐行黑色并集；在读源答案前用原图像素对齐比较OR/XOR/AND辅助核定第2行",
+    "method": "复核原图与Claude对比图；第二行的白条排除黑色并集，采用后图含白色部分的不透明覆盖。",
     "independent_answer": "C",
-    "operation": "black union",
-    "visual_caveat": "像素比较仅作辅助证据，栅格采样误差不改变逐位置黑色并集规则；已看全题及全部选项。"
+    "operation": "second_shape_opaque_overlay",
+    "visual_caveat": "核对轮廓及重叠区域，像素相似度仅为辅助证据；答案一致不等于旧解析成立。",
+    "corrected_on": "2026-11-15",
+    "supersedes": "此前black union记录错误，现撤回。"
   }
 }

@@ -1,0 +1,168 @@
+{
+  "status": "PASS",
+  "version": "0.3.0",
+  "reviewed_baseline": "0.2.0",
+  "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+  "date": "2026-11-15",
+  "question_count": 90,
+  "unchanged_answer_letters": 90,
+  "unchanged_source_objects": 90,
+  "unchanged_source_ids": 90,
+  "unchanged_source_answer_objects": 90,
+  "unchanged_shared_materials": true,
+  "source_bank_hashes_unchanged": {
+    "模考/2026下半年广东卷_16-33季_AI可读/全部题目.jsonl": "12fb48ab01e38b88ff19d85e59e463730f290407350207e00afe318f597fa3b9",
+    "模考/2026下半年广东卷_16-33季_AI可读/科学推理_90题.jsonl": "9a01a34c6d775e7f6c6b15b6822aaf84e72e0167e929b7128c47f49dbd1bf99a",
+    "江浙行测_AI题库/questions.jsonl": "07b748dd27d44132d7734279306f724981a89de028d19d229c989f00fd9b7c93"
+  },
+  "baseline_selection_canonical_sha256": "c44b828a5fda2a7449ed05b20f249d04eeb05e9ca5d873b8217284a808aca065",
+  "revised_selection_canonical_sha256": "7fba53d363ba98ebabfd34fd2ddaee367117c774e533bfe983649a84c0e12fe4",
+  "editorial_changes": {
+    "1": [
+      "stem",
+      "analysis",
+      "references"
+    ],
+    "5": [
+      "options",
+      "analysis"
+    ],
+    "6": [
+      "options",
+      "analysis"
+    ],
+    "8": [
+      "options",
+      "analysis",
+      "references"
+    ],
+    "9": [
+      "options",
+      "analysis",
+      "references"
+    ],
+    "10": [
+      "options",
+      "analysis",
+      "references"
+    ],
+    "12": [
+      "options",
+      "analysis"
+    ],
+    "13": [
+      "options",
+      "analysis"
+    ],
+    "14": [
+      "options",
+      "analysis",
+      "references"
+    ],
+    "15": [
+      "options",
+      "analysis"
+    ],
+    "19": [
+      "analysis"
+    ],
+    "40": [
+      "analysis"
+    ],
+    "45": [
+      "stem_override",
+      "options",
+      "analysis"
+    ],
+    "50": [
+      "analysis"
+    ],
+    "83": [
+      "analysis"
+    ],
+    "85": [
+      "analysis"
+    ]
+  },
+  "substantive_question_body_revision_numbers": [
+    1,
+    5,
+    6,
+    8,
+    9,
+    10,
+    12,
+    13,
+    14,
+    15,
+    45
+  ],
+  "format_change_count": 58,
+  "format_change_questions": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    31,
+    32,
+    33,
+    34,
+    35,
+    38,
+    40,
+    52,
+    53,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70
+  ],
+  "numerical_rechecks": {
+    "Q45": {
+      "unlimited": 32,
+      "three_sessions": 1,
+      "four_sessions": 31,
+      "at_most_two_identical_consecutive": 24
+    },
+    "Q40": {
+      "weekday31_mon0_step5": [
+        3
+      ],
+      "weekday31_mon0_step4": []
+    },
+    "Q85": {
+      "unreported_components_upper_bound": 847.1,
+      "transport_import": 11355.7,
+      "transport_export": 9745.3
+    }
+  },
+  "Q50_operation": "second_shape_opaque_overlay",
+  "answer_table_blocks": 9,
+  "external_review": "claude_reviewed_v0.2.0_revisions_pending_recheck",
+  "print_ready": false,
+  "limits": [
+    "Claude的90题一致结论属于0.2.0；本轮改动未冒称已通过Claude复核。",
+    "政策概念题按所列一手依据编辑核对；知识判断不能由程序或答案字母不变代替。",
+    "原PDF逐页复核边界仍按Claude审核意见保留。"
+  ]
+}

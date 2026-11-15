@@ -5,22 +5,36 @@
     "question_type": "true_false",
     "source_bank": "editor_original",
     "source_id": "M01-ORIG-001",
-    "stem": "推进高水平科技自立自强，既需要加强原创性、颠覆性科技创新，也需要推动科技创新成果应用于具体产业和产业链。",
+    "stem": "以科技创新推动产业创新，既要培育新产业，也要运用科技成果改造提升传统产业。",
     "options": {},
     "answer": "正确",
-    "analysis": "原创性科技创新与成果转化是相互衔接的任务：前者提供新技术，后者使技术形成现实生产能力。不能把“自立自强”缩减为实验室内取得成果。[依据：讲义第28—29页；新质生产力重要论述“第一、第二”部分。]",
+    "analysis": "正确。科技创新转化为现实生产力，既可以催生新产业，也可以推动已有产业转型升级。本题没有把发展新产业与改造传统产业对立起来。依据为2024年1月31日二十届中央政治局第十一次集体学习讲话中“以科技创新推动产业创新”部分；此前将这一段的日期写为3月5日不准确，现予更正。",
     "selection_reason": "以创新链与产业链的关系校准政策概念，避免只识别口号。",
     "verification": {
-      "status": "editor_checked_pending_external_review",
+      "status": "editor_revised_pending_delta_review",
       "method": "依讲义主题原创；逐选项检查，政策、法律及专门事实补查所列一手/政府来源。原始讲义并非官方命题依据。",
       "checked_on": "2026-11-15",
       "internal_peer_review": {
         "file": "核验记录/politics_review.json",
         "answer_agreement": true,
         "status": "minor_revisions_applied"
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "pending"
       }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "claude_review_revision",
+        "description": "接受主语与出处核对建议，使用产业创新表述，不将两个原文段落拼接为引语。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": null,
     "source_answer": null,
     "provenance": {
@@ -34,7 +48,7 @@
         {
           "title": "习近平总书记关于发展新质生产力的重要论述",
           "url": "https://www.ndrc.gov.cn/xwdt/ztzl/NEW_srxxgcjjpjjsx/jjsxyjqk/qkzk/qkzk2025/4/zyjh/202601/t20260106_1403075.html",
-          "locator": "科技创新、产业创新；2024年3月5日讲话节录",
+          "locator": "第一部分“第二，以科技创新推动产业创新”；文末注明讲话日期为2024年1月31日",
           "checked_on": "2026-11-15"
         }
       ]
@@ -54,13 +68,21 @@
     "analysis": "错误在把全国总体要求扩大到每个地区、每个行业。公有制主体地位的有关表述是就全国而言，地方和产业可以有所差别；同时还需关注国有经济对经济命脉的控制和公有资产的质量。[依据：讲义第27页相关主题；国家发展改革委所列“公有制主体地位内涵”部分。]",
     "selection_reason": "辨别总体与局部的适用范围，具有明确而非措辞性的错误点。",
     "verification": {
-      "status": "editor_checked_pending_external_review",
+      "status": "claude_reviewed_no_substantive_change",
       "method": "依讲义主题原创；逐选项检查，政策、法律及专门事实补查所列一手/政府来源。原始讲义并非官方命题依据。",
       "checked_on": "2026-11-15",
       "internal_peer_review": {
         "file": "核验记录/politics_review.json",
         "answer_agreement": true,
         "status": "minor_revisions_applied"
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
       }
     },
     "edits": [],
@@ -96,13 +118,21 @@
     "analysis": "两处关系均符合该决定的指导思想。工程不只针对单个村庄的环境建设，也同时处理县镇村发展以及城乡区域协调。[依据：讲义第60、65页“百千万工程”主题；2022年12月8日通过的决定第一部分（二）。]",
     "selection_reason": "保留广东政策对象和途径、目标之间的准确对应。",
     "verification": {
-      "status": "editor_checked_pending_external_review",
+      "status": "claude_reviewed_no_substantive_change",
       "method": "依讲义主题原创；逐选项检查，政策、法律及专门事实补查所列一手/政府来源。原始讲义并非官方命题依据。",
       "checked_on": "2026-11-15",
       "internal_peer_review": {
         "file": "核验记录/politics_review.json",
         "answer_agreement": true,
         "status": "minor_revisions_applied"
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
       }
     },
     "edits": [],
@@ -139,13 +169,21 @@
     "analysis": "题干只改变了个别企业的劳动生产率，未改变社会必要劳动时间。商品单位社会价值由社会必要劳动时间决定，不能由这一企业的个别劳动时间直接决定。不要把“个别价值降低”与“社会价值降低”混为一谈。[依据：讲义第45页“商品价值量与劳动生产率的关系”；题设固定社会条件。]",
     "selection_reason": "通过固定行业条件考查个别与社会劳动生产率的区别。",
     "verification": {
-      "status": "editor_checked_pending_external_review",
+      "status": "claude_reviewed_no_substantive_change",
       "method": "依讲义主题原创；逐选项检查，政策、法律及专门事实补查所列一手/政府来源。原始讲义并非官方命题依据。",
       "checked_on": "2026-11-15",
       "internal_peer_review": {
         "file": "核验记录/politics_review.json",
         "answer_agreement": true,
         "status": "minor_revisions_applied"
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
       }
     },
     "edits": [],
@@ -170,25 +208,44 @@
     "source_id": "M01-ORIG-005",
     "stem": "某地传统装备制造业基础较好，科研资源相对集中，准备培育新的发展动能。下列举措中，最符合因地制宜发展新质生产力要求的是（）。",
     "options": {
-      "A": "把战略性新兴产业产值占比作为衡量新质生产力发展的唯一标准",
+      "A": "以产业名称是否属于战略性新兴产业，作为区分新质生产力与传统生产力的依据",
       "B": "围绕本地产业所需关键技术组织攻关，将成果转化与传统企业工艺升级相衔接",
-      "C": "将传统产业整体迁出作为发展新兴产业的前置条件，腾出全部产业用地",
-      "D": "按照先进地区现有产业目录配置各县科技资金，尽快形成相同的产业结构"
+      "C": "按照先破后立的次序，先退出传统装备制造业，再集中资源培育新兴产业",
+      "D": "参照先进地区的主导产业目录确定本地重点，使各县形成相近的产业组合"
     },
     "answer": "B",
-    "analysis": "B把本地资源条件、科技创新和产业升级衔接起来。A以单一产值占比替代生产力质量，C把传统产业退出当作必要条件，D忽略各县资源禀赋，均不能体现因地制宜。新质生产力可以在传统产业改造提升中形成。[依据：讲义第28页；2024年3月5日有关因地制宜发展新质生产力的讲话节录。]",
+    "analysis": "B把本地产业基础、科研条件与技术攻关、成果转化衔接起来，符合因地制宜的要求。A按产业名称区分生产力质态，忽略同一传统产业也可通过创新形成新质生产力。C把先立后破颠倒为先破后立，并把发展新产业与改造传统产业割裂。D直接追求与先进地区相近的产业组合，缺少对各县资源禀赋、产业基础和科研条件的判断。依据为2024年3月5日江苏代表团审议讲话有关段落。",
     "selection_reason": "判断政策如何用于真实产业选择，保留传统产业升级这一关键辨析。",
     "verification": {
-      "status": "editor_checked_pending_external_review",
+      "status": "editor_revised_pending_delta_review",
       "method": "依讲义主题原创；逐选项检查，政策、法律及专门事实补查所列一手/政府来源。原始讲义并非官方命题依据。",
       "checked_on": "2026-11-15",
       "internal_peer_review": {
         "file": "核验记录/politics_review.json",
         "answer_agreement": true,
         "status": "minor_revisions_applied"
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "pending"
       }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "claude_review_revision",
+        "description": "以概念错置、政策次序颠倒和忽视地方条件替换夸张绝对词。",
+        "revision": "0.3.0"
+      },
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": null,
     "source_answer": null,
     "provenance": {
@@ -207,7 +264,13 @@
       ]
     },
     "figures": [],
-    "materials": []
+    "materials": [],
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "某地传统装备制造业基础较好，科研资源相对集中，准备培育新的发展动能。下列举措中，最符合因地制宜发展新质生产力要求的是（　）。"
+      }
+    ]
   },
   {
     "number": 6,
@@ -217,25 +280,44 @@
     "source_id": "M01-ORIG-006",
     "stem": "某地治理河流污染时，同时协调上游排污、下游取水、沿岸产业转型和生态修复，并把建设投入与后续维护一并纳入方案。这一做法最直接体现的思想和工作方法是（）。",
     "options": {
-      "A": "坚持自信自立，主要依靠本地经验解决所有问题",
-      "B": "坚持问题导向，将各个污染点作为彼此独立的任务处理",
-      "C": "坚持系统观念，统筹不同区域、不同领域以及当前和长远的关系",
-      "D": "坚持守正创新，以改变已有治理制度的数量衡量改革成效"
+      "A": "必须坚持自信自立",
+      "B": "必须坚持问题导向",
+      "C": "必须坚持系统观念",
+      "D": "必须坚持守正创新"
     },
     "answer": "C",
-    "analysis": "题干的关键是多个关联要素、区域和时间阶段之间的统筹，而不是只发现某一个问题。C完整对应。A把自信自立简化为主要靠本地经验解决所有问题，夸大了本地经验的适用范围，B割裂联系，D用制度改变的数量替代治理效果，都不成立。[依据：讲义第22页“六个必须坚持”；绿美广东决定的系统谋划、分类推进原则。]",
+    "analysis": "题干集中呈现上游与下游、产业转型与生态修复、建设与维护、当前与长远之间的统筹关系，最直接体现坚持系统观念，选C。发现污染问题也可以涉及问题导向，但本题突出的是关联要素的整体安排，而非发现和聚焦某一问题；题干没有突出独立自主或继承与创新的关系，A、D不如C贴切。其他原则本身不是错误观点，不能靠给它们附加错误解释来制造干扰。",
     "selection_reason": "把系统观念落实为具体关联，考查方法与情境的对应。",
     "verification": {
-      "status": "editor_checked_pending_external_review",
+      "status": "editor_revised_pending_delta_review",
       "method": "依讲义主题原创；逐选项检查，政策、法律及专门事实补查所列一手/政府来源。原始讲义并非官方命题依据。",
       "checked_on": "2026-11-15",
       "internal_peer_review": {
         "file": "核验记录/politics_review.json",
         "answer_agreement": true,
         "status": "minor_revisions_applied"
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "pending"
       }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "claude_review_revision",
+        "description": "保留情境题，不机械改成概念背诵；删除选项中额外附加、直接暴露错误的解释。",
+        "revision": "0.3.0"
+      },
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": null,
     "source_answer": null,
     "provenance": {
@@ -255,7 +337,13 @@
       ]
     },
     "figures": [],
-    "materials": []
+    "materials": [],
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "某地治理河流污染时，同时协调上游排污、下游取水、沿岸产业转型和生态修复，并把建设投入与后续维护一并纳入方案。这一做法最直接体现的思想和工作方法是（　）。"
+      }
+    ]
   },
   {
     "number": 7,
@@ -274,16 +362,30 @@
     "analysis": "题干是在多项制约之间分辨主次，属于主要矛盾与次要矛盾的关系；既集中资源突破主要瓶颈，又兼顾其他问题，符合A。B讨论同一矛盾内部的主要方面和事物性质，不能对应题干；C割裂矛盾联系，D把量变到质变说成无条件必然。[依据：讲义第40—41页。]",
     "selection_reason": "区分主要矛盾与矛盾主要方面，避免看到“主要”就选相似术语。",
     "verification": {
-      "status": "editor_checked_pending_external_review",
+      "status": "claude_reviewed_no_substantive_change",
       "method": "依讲义主题原创；逐选项检查，政策、法律及专门事实补查所列一手/政府来源。原始讲义并非官方命题依据。",
       "checked_on": "2026-11-15",
       "internal_peer_review": {
         "file": "核验记录/politics_review.json",
         "answer_agreement": true,
         "status": "minor_revisions_applied"
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
       }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": null,
     "source_answer": null,
     "provenance": {
@@ -296,7 +398,13 @@
       "references": []
     },
     "figures": [],
-    "materials": []
+    "materials": [],
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "某镇推进产业发展，排查出人才不足、物流不便、融资不畅等多项制约后，判断冷链物流缺失是当前最突出的瓶颈，因而集中资源先建冷链中心，同时持续推进人才培训和金融服务。这种工作安排主要体现了（　）。"
+      }
+    ]
   },
   {
     "number": 8,
@@ -309,22 +417,41 @@
       "A": "优先选择适合当地气候、土壤条件的乡土树种，并完善长期管护机制",
       "B": "综合考虑树种配置、林龄结构和林下植被，逐步提高森林生态系统稳定性",
       "C": "统筹城镇绿地、河流岸线和山地森林建设，注重不同生态空间之间的联系",
-      "D": "以短期景观整齐度为主要目标，将树种复杂的天然林统一改造为速生纯林"
+      "D": "将生态功能良好的天然混交林改造为同龄速生纯林，以更快增加木材蓄积量作为主要提质依据"
     },
     "answer": "D",
-    "analysis": "D把短期整齐的外观置于自然条件和生态系统质量之上，与科学绿化、优化森林结构的方向相悖。A关注适地适树和管护，B关注结构及稳定性，C体现生态空间的统筹，均符合要求。本题不主张任何人工林或纯林都没有用途，而是判断所述替换天然林的方案。[依据：讲义第66页；绿美广东决定的基本原则和森林质量要求。]",
+    "analysis": "D不恰当。提高林地生产力和森林蓄积量是森林经营可以追求的目标，但不能据此把生态功能良好的天然混交林改造成同龄速生纯林，更不能用单一增长速度替代多样性、稳定性等综合质量判断。绿美广东决定要求优化林分结构、发展高质高效乡土阔叶混交林并强化天然林保护。A、B、C分别体现适地适树和管护、结构优化、生态空间统筹。本题不等于断言任何速生林或人工纯林都没有用途。",
     "selection_reason": "把绿化面积、短期景观和生态质量区分开来。",
     "verification": {
-      "status": "editor_checked_pending_external_review",
+      "status": "editor_revised_pending_delta_review",
       "method": "依讲义主题原创；逐选项检查，政策、法律及专门事实补查所列一手/政府来源。原始讲义并非官方命题依据。",
       "checked_on": "2026-11-15",
       "internal_peer_review": {
         "file": "核验记录/politics_review.json",
         "answer_agreement": true,
         "status": "minor_revisions_applied"
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "pending"
       }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "claude_review_revision",
+        "description": "错误项改为把木材增长指标替代综合生态质量，避免依靠“短期景观整齐”等明显提示。",
+        "revision": "0.3.0"
+      },
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": null,
     "source_answer": null,
     "provenance": {
@@ -345,11 +472,23 @@
           "url": "https://www.forestry.gov.cn/c/www/gkzcjd/108267.jhtml",
           "locator": "森林经营原理及结构，涉及年龄结构、树种组成、下木和草本层；国家林草局发布",
           "checked_on": "2026-11-15"
+        },
+        {
+          "title": "中共广东省委关于深入推进绿美广东生态建设的决定",
+          "url": "https://www.gdjct.gd.gov.cn/zhyw/content/mpost_180227.html",
+          "locator": "第七项森林质量精准提升；第十九项天然林保护",
+          "checked_on": "2026-11-15"
         }
       ]
     },
     "figures": [],
-    "materials": []
+    "materials": [],
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "某地制定绿美生态建设方案。根据科学绿化和森林质量提升的要求，下列做法不恰当的是（　）。"
+      }
+    ]
   },
   {
     "number": 9,
@@ -360,24 +499,43 @@
     "stem": "关于全过程人民民主，下列表述正确的有（）。",
     "options": {
       "A": "既强调完整的制度程序，也强调完整的参与实践",
-      "B": "人民在依法参加选举后，民主参与即告完成，后续治理主要由有关机关独立负责",
+      "B": "基层民主是我国社会主义民主政治的特有形式和独特优势",
       "C": "把民主选举、民主协商、民主决策、民主管理、民主监督贯通起来",
       "D": "实现过程民主和成果民主、程序民主和实质民主、直接民主和间接民主相统一"
     },
     "answer": "ACD",
-    "analysis": "A、C、D均符合全过程人民民主的内涵。B把民主参与缩为选举时的一次性行为，割裂了参与、决策、管理和监督，因而错误。多选需逐项判定，不能因为部分关键词正确就整项接受。[依据：讲义第29—30页；《党的二十大报告学习辅导百问》（52）。]",
+    "analysis": "A、C、D正确。B把协商民主的特定政治定位换成了基层民主：我国社会主义民主政治的特有形式和独特优势，所指的是协商民主；基层民主是全过程人民民主的重要体现。基层协商属于协商民主体系，并不意味着“基层民主”与“协商民主”可以互换名称。应核对完整主语与判断，不只识别句中的政治词汇。",
     "selection_reason": "保留多选题逐项核验的真实作答负担。",
     "verification": {
-      "status": "editor_checked_pending_external_review",
+      "status": "editor_revised_pending_delta_review",
       "method": "依讲义主题原创；逐选项检查，政策、法律及专门事实补查所列一手/政府来源。原始讲义并非官方命题依据。",
       "checked_on": "2026-11-15",
       "internal_peer_review": {
         "file": "核验记录/politics_review.json",
         "answer_agreement": true,
         "status": "minor_revisions_applied"
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "pending"
       }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "claude_review_revision",
+        "description": "把一眼可排除的选举终结论替换为民主形式的主体错置。",
+        "revision": "0.3.0"
+      },
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": null,
     "source_answer": null,
     "provenance": {
@@ -393,11 +551,29 @@
           "url": "https://www.ndrc.gov.cn/fggz/gbzj/xxyd/202304/t20230428_1355381.html",
           "locator": "全过程人民民主的完整制度程序与完整参与实践",
           "checked_on": "2026-11-15"
+        },
+        {
+          "title": "在庆祝中国人民政治协商会议成立75周年大会上的讲话",
+          "url": "https://www.moe.gov.cn/jyb_xwfb/moe_176/202409/t20240920_1152158.html",
+          "locator": "协商民主的特有形式和独特优势；2024年9月20日",
+          "checked_on": "2026-11-15"
+        },
+        {
+          "title": "党的二十大报告",
+          "url": "https://app.www.gov.cn/govdata/gov/202210/25/493662/article.html",
+          "locator": "第六部分：协商民主与基层民主",
+          "checked_on": "2026-11-15"
         }
       ]
     },
     "figures": [],
-    "materials": []
+    "materials": [],
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "关于全过程人民民主，下列表述正确的有（　）。"
+      }
+    ]
   },
   {
     "number": 10,
@@ -408,24 +584,43 @@
     "stem": "某项基层治理措施先在少量社区试行，执行中根据群众反馈修正方案，随后扩大试点。关于这一过程中实践与认识的关系，下列说法正确的有（）。",
     "options": {
       "A": "实践能够提供新的认识材料，并推动人们修正和发展原有认识",
-      "B": "试点形成的经验属于直接经验，他人通过学习获得的间接经验与实践无关",
-      "C": "某项认识只要在第一次试点中取得成功，便不再需要接受后续实践检验",
+      "B": "直接经验来自亲身实践，间接经验来自书本，因此认识具有两种相互独立的根本来源",
+      "C": "从实践到认识的第一次飞跃，比从认识到实践的第二次飞跃更为重要",
       "D": "认识应当回到实践中发挥指导作用，其正确与否仍须接受实践检验"
     },
     "answer": "AD",
-    "analysis": "A体现实践是认识发展的动力，D体现认识的实践指向及检验标准。间接经验也是他人实践经验的传递，B割裂最终来源；实践和对象不断发展，某次成功不能免除后续检验，C错误。[依据：讲义第42—43页认识论部分。]",
+    "analysis": "A、D正确。B把获得知识的不同途径当成两个根本来源：书本或他人的间接经验，最终仍来自社会实践。C把两次飞跃的地位倒置：从认识回到实践，才能使认识指导客观活动并接受检验，《实践论》对此作了更重要的强调；这并不否认从实践形成认识的必要性。题干中的试行、反馈修正和扩大试点，体现实践与认识的反复发展。",
     "selection_reason": "以具体试点过程考查认识来源、反馈、检验，避免脱离情境背术语。",
     "verification": {
-      "status": "editor_checked_pending_external_review",
+      "status": "editor_revised_pending_delta_review",
       "method": "依讲义主题原创；逐选项检查，政策、法律及专门事实补查所列一手/政府来源。原始讲义并非官方命题依据。",
       "checked_on": "2026-11-15",
       "internal_peer_review": {
         "file": "核验记录/politics_review.json",
         "answer_agreement": true,
         "status": "minor_revisions_applied"
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "pending"
       }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "claude_review_revision",
+        "description": "改为获得认识的途径与根本来源之别、两次飞跃地位辨析。",
+        "revision": "0.3.0"
+      },
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": null,
     "source_answer": null,
     "provenance": {
@@ -441,11 +636,23 @@
           "url": "https://news.12371.cn/2017/08/29/ARTI1504001411770206.shtml",
           "locator": "直接经验与间接经验；社会实践对认识真理性的检验",
           "checked_on": "2026-11-15"
+        },
+        {
+          "title": "毛泽东《实践论》全文（华南理工大学转载）",
+          "url": "https://www2.scut.edu.cn/party_org/2012/1229/c3210a67040/page.psp",
+          "locator": "直接经验与间接经验；从理性认识到实践的飞跃",
+          "checked_on": "2026-11-15"
         }
       ]
     },
     "figures": [],
-    "materials": []
+    "materials": [],
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "某项基层治理措施先在少量社区试行，执行中根据群众反馈修正方案，随后扩大试点。关于这一过程中实践与认识的关系，下列说法正确的有（　）。"
+      }
+    ]
   },
   {
     "number": 11,
@@ -464,16 +671,30 @@
     "analysis": "不满8周岁的未成年人是无民事行为能力人，由法定代理人代理实施民事法律行为；其独立实施的民事法律行为依第144条无效。“纯获利益可以独立实施”的规则适用于限制民事行为能力人，不能直接移用于无民事行为能力人。B对应第19条，C对应第18条第2款，D对应第21条。[依据：讲义第93页主题；《民法典》第18—21条、第144—145条。]",
     "selection_reason": "辨析无行为能力与限制行为能力对纯获利益行为的不同处理。",
     "verification": {
-      "status": "editor_checked_pending_external_review",
+      "status": "claude_reviewed_no_substantive_change",
       "method": "依讲义主题原创；逐选项检查，政策、法律及专门事实补查所列一手/政府来源。原始讲义并非官方命题依据。",
       "checked_on": "2026-11-15",
       "internal_peer_review": {
         "file": "核验记录/politics_review.json",
         "answer_agreement": true,
         "status": "minor_revisions_applied"
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
       }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": null,
     "source_answer": null,
     "provenance": {
@@ -498,7 +719,13 @@
       ]
     },
     "figures": [],
-    "materials": []
+    "materials": [],
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "根据《中华人民共和国民法典》，在不存在其他影响效力因素的前提下，下列说法错误的是（　）。"
+      }
+    ]
   },
   {
     "number": 12,
@@ -510,23 +737,42 @@
     "options": {
       "A": "北江——以梅江、汀江汇合后的河段为干流起点",
       "B": "韩江——主要经河源、惠州、东莞进入珠江三角洲",
-      "C": "韩江——梅江与汀江在大埔三河坝汇合后形成的干流",
+      "C": "韩江——梅江与汀江在大埔三河坝汇合后称韩江",
       "D": "西江——以武江、浈江在韶关汇合后的河段为干流起点"
     },
     "answer": "C",
-    "analysis": "C正确。A将韩江的主要汇流关系错放到北江；B给出的是东江在广东的主要流经地区；D给出的武江、浈江汇流对应北江。依据采用政府河道名录与韩江实施方案，避免混用不同资料对“源头”“干流起点”的不同口径。[依据：讲义第70页河流主题；广东省主要河道名录、韩江“一河一策”方案。]",
+    "analysis": "C正确：梅江与汀江在大埔三河坝汇合后称韩江。这里说明沿程河名及汇流关系，不是在重新判定韩江水系的水文源头。A误将韩江汇流关系对应为北江；B主要描述东江在广东的流经地区；D所列武江、浈江汇流对应北江。",
     "selection_reason": "考查省情中的河流空间关系，清楚限定干流与汇流口径。",
     "verification": {
-      "status": "editor_checked_pending_external_review",
+      "status": "editor_revised_pending_delta_review",
       "method": "依讲义主题原创；逐选项检查，政策、法律及专门事实补查所列一手/政府来源。原始讲义并非官方命题依据。",
       "checked_on": "2026-11-15",
       "internal_peer_review": {
         "file": "核验记录/politics_review.json",
         "answer_agreement": true,
         "status": "minor_revisions_applied"
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "pending"
       }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "claude_review_revision",
+        "description": "以河名沿程变化表述避免与水文源头口径混淆。",
+        "revision": "0.3.0"
+      },
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": null,
     "source_answer": null,
     "provenance": {
@@ -551,7 +797,13 @@
       ]
     },
     "figures": [],
-    "materials": []
+    "materials": [],
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "关于广东河流及其水系，下列对应关系正确的是（　）。"
+      }
+    ]
   },
   {
     "number": 13,
@@ -563,23 +815,42 @@
     "options": {
       "A": "②③④①",
       "B": "②④③①",
-      "C": "④②③①",
-      "D": "③②④①"
+      "C": "②④①③",
+      "D": "④③①②"
     },
     "answer": "B",
-    "analysis": "南昌起义是1927年8月1日；湘赣边界秋收起义是同年9月9日；三湾改编在同年9月29日、秋收起义之后；广州起义为同年12月11日。因此为②④③①。本题只考可核实的时间顺序，不采用讲义中对历史意义的概括作为排序证据。[依据：讲义第49—50页；共产党员网《中国共产党一百年大事记》1927年条目及中央纪委国家监委三湾改编介绍。]",
+    "analysis": "南昌起义是1927年8月1日；湘赣边界秋收起义是同年9月9日；三湾改编在同年9月29日、秋收起义之后；广州起义为同年12月11日。因此为②④③①。本题只考可核实的时间顺序，不采用讲义中对历史意义的概括作为排序证据。[依据：讲义第49—50页；共产党员网《中国共产党一百年大事记》1927年条目及中央纪委国家监委三湾改编介绍。]修订后干扰项不再全部把广州起义置于末位；只知道秋收起义在三湾改编之前，还不足以排除C、D。",
     "selection_reason": "同一年相近事件排序，要求建立基本历史顺序。",
     "verification": {
-      "status": "editor_checked_pending_external_review",
+      "status": "editor_revised_pending_delta_review",
       "method": "依讲义主题原创；逐选项检查，政策、法律及专门事实补查所列一手/政府来源。原始讲义并非官方命题依据。",
       "checked_on": "2026-11-15",
       "internal_peer_review": {
         "file": "核验记录/politics_review.json",
         "answer_agreement": true,
         "status": "minor_revisions_applied"
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "pending"
       }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "claude_review_revision",
+        "description": "不新增事件或难记日期，只去掉末位固定、可用单一关系排尽的选项结构。",
+        "revision": "0.3.0"
+      },
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": null,
     "source_answer": null,
     "provenance": {
@@ -605,7 +876,13 @@
       ]
     },
     "figures": [],
-    "materials": []
+    "materials": [],
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "下列1927年的历史事件按发生时间先后排列，正确的是（　）。\n①广州起义　②南昌起义　③三湾改编　④湘赣边界秋收起义"
+      }
+    ]
   },
   {
     "number": 14,
@@ -618,22 +895,41 @@
       "A": "“玉兔二号”是嫦娥四号任务的月球巡视器",
       "B": "“鹊桥”中继星为嫦娥四号着陆器、巡视器与地球之间的通信提供支持",
       "C": "嫦娥五号任务实现了我国首次地外天体采样返回",
-      "D": "嫦娥五号与嫦娥四号均在月球背面着陆，因此二者任务的着陆区域相同"
+      "D": "嫦娥五号任务实现了世界首次月球背面采样返回"
     },
     "answer": "D",
-    "analysis": "嫦娥四号在月球背面着陆；嫦娥五号在月球正面预选区域着陆并完成采样返回，所以D错误。A、B对应嫦娥四号装备分工，C对应2020年嫦娥五号的既成任务。没有把“首次”不加主体地泛化为世界首次。[依据：讲义第106页；国家航天局2019年、2020年任务报道。]",
+    "analysis": "D错误。嫦娥五号于2020年完成我国首次地外天体采样返回，采样地点在月球正面；世界首次月球背面采样返回由嫦娥六号于2024年完成。A、B描述嫦娥四号的巡视器和中继通信安排，C描述嫦娥五号的既成任务，均正确。这里区分的是任务编号、着陆区域和首次成果的主体，而不是把中国首次等同于世界首次。",
     "selection_reason": "区分巡视、中继与采样返回的任务关系，避免只记工程名称。",
     "verification": {
-      "status": "editor_checked_pending_external_review",
+      "status": "editor_revised_pending_delta_review",
       "method": "依讲义主题原创；逐选项检查，政策、法律及专门事实补查所列一手/政府来源。原始讲义并非官方命题依据。",
       "checked_on": "2026-11-15",
       "internal_peer_review": {
         "file": "核验记录/politics_review.json",
         "answer_agreement": true,
         "status": "minor_revisions_applied"
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "pending"
       }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "claude_review_revision",
+        "description": "改为嫦娥五号与六号任务成果混淆，不再依赖错误的因果尾句排除。",
+        "revision": "0.3.0"
+      },
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": null,
     "source_answer": null,
     "provenance": {
@@ -654,11 +950,23 @@
           "url": "https://www.cnsa.gov.cn/n6758823/n6758838/c6810872/content.html",
           "locator": "2020-12-17；月球正面预选区域着陆及采样返回",
           "checked_on": "2026-11-15"
+        },
+        {
+          "title": "嫦娥六号任务圆满成功，实现世界首次月球背面采样返回",
+          "url": "https://www.cnsa.gov.cn/n6758823/n6758844/n10518102/n10518147/c10565180/content.html",
+          "locator": "2024年6月25日任务结果",
+          "checked_on": "2026-11-15"
         }
       ]
     },
     "figures": [],
-    "materials": []
+    "materials": [],
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "关于我国探月工程的任务与装备，下列说法错误的是（　）。"
+      }
+    ]
   },
   {
     "number": 15,
@@ -669,24 +977,43 @@
     "stem": "为减少科举阅卷中的身份干扰，宋代实行了“封弥”“誊录”等措施。下列对这两项措施的解释，正确的是（）。",
     "options": {
       "A": "封弥是把试卷统一抄写，誊录是把考生姓名等信息封闭",
-      "B": "封弥和誊录均只限制考官与外界联系，不涉及试卷的处理",
+      "B": "封弥是把录取结果封存至公布时启封，誊录是由专人重新抄写考生试卷",
       "C": "封弥隐藏考生身份信息，誊录通过重新抄写试卷减少笔迹识别考生的可能",
-      "D": "封弥在考试前公开考生家世，誊录在录取后核验家世是否真实"
+      "D": "封弥隐藏试卷上的考生身份信息，誊录记录考生的籍贯和履历供阅卷时参考"
     },
     "answer": "C",
-    "analysis": "封弥是封住试卷上的姓名、籍贯等身份信息；即使遮住姓名，考官仍可能识别字迹，因此誊录再由专人重抄试卷以减少这一通道。C对应两种措施各自针对的信息。A颠倒，B混淆考官管理与试卷管理，D与制度用途相反。[依据：讲义第98页选官制度；浙江省社会科学界联合会“宋朝的科举制度”。]",
+    "analysis": "C正确。封弥遮蔽试卷上的姓名等身份信息；誊录将考生作答重新抄成副本，减少考官通过笔迹识别考生或通过约定暗号作弊的可能。A颠倒两项制度。B对誊录的说明正确，但封弥处理的是试卷身份信息，不是录取结果。D对封弥的说明正确，但誊录不是给阅卷者提供考生履历。判断须把两项解释分别核清，不能因半项正确而接受整项。",
     "selection_reason": "以制度要解决的具体问题考查历史知识，便于核验且不靠冷僻人名。",
     "verification": {
-      "status": "editor_checked_pending_external_review",
+      "status": "editor_revised_pending_delta_review",
       "method": "依讲义主题原创；逐选项检查，政策、法律及专门事实补查所列一手/政府来源。原始讲义并非官方命题依据。",
       "checked_on": "2026-11-15",
       "internal_peer_review": {
         "file": "核验记录/politics_review.json",
         "answer_agreement": true,
         "status": "minor_revisions_applied"
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "pending"
       }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "claude_review_revision",
+        "description": "保留制度与机制辨析，不另换选官制度考点；干扰项均包含部分真实信息。",
+        "revision": "0.3.0"
+      },
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": null,
     "source_answer": null,
     "provenance": {
@@ -705,7 +1032,13 @@
       ]
     },
     "figures": [],
-    "materials": []
+    "materials": [],
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "为减少科举阅卷中的身份干扰，宋代实行了“封弥”“誊录”等措施。下列对这两项措施的解释，正确的是（　）。"
+      }
+    ]
   },
   {
     "number": 16,
@@ -738,12 +1071,26 @@
         "file": "核验记录/verbal_review.json",
         "answer_agreement": true,
         "status": "passed"
-      }
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      },
+      "status": "claude_reviewed_no_substantive_change"
     },
     "edits": [
       {
         "type": "layout_only",
         "description": "合并PDF行末硬换行；保留排序题各句及设问换行；去除填空线两侧排版空格。不改词语、标点、选项次序或答案。"
+      },
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
       }
     ],
     "source_locators": [
@@ -873,7 +1220,13 @@
       },
       "quality_flags": [],
       "notes": []
-    }
+    },
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "法制与法治是既有区别又有联系的两个概念。法制是法律制度的简称，属于制度的_________；法治是法律统治的简称，是一种治国原则和方法，是相对于“人治”而言的。二者的联系在于：法制是法治的基础和前提条件，要实行法治，必须具有_________的法制；法治是法制的立足点和归宿，法制的发展前途必然是最终_________法治。\n依次填入画横线处最恰当的一项是："
+      }
+    ]
   },
   {
     "number": 17,
@@ -906,7 +1259,16 @@
         "file": "核验记录/verbal_review.json",
         "answer_agreement": true,
         "status": "passed"
-      }
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      },
+      "status": "claude_reviewed_no_substantive_change"
     },
     "edits": [],
     "source_locators": [
@@ -992,7 +1354,16 @@
         "file": "核验记录/verbal_review.json",
         "answer_agreement": true,
         "status": "passed"
-      }
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      },
+      "status": "claude_reviewed_no_substantive_change"
     },
     "edits": [
       {
@@ -1136,7 +1507,7 @@
     "source_bank": "江浙行测_AI题库/questions.jsonl",
     "source_id": "ZJ2023-A类-025",
     "answer": "D",
-    "analysis": "文段讨论魏晋一个时期整体的文学创作风气，以及这种风气产生的双重影响，所以第一空用“风尚”。后一空与“过分追求形式美”相照应，说的是作品欠缺实质内容，填“空洞”最准确，选D。B的“手法”停留在具体创作方法，“单一”也不等于缺乏内容；C的“呆板”重在不灵活，与“形式僵化”意义接近，未说明内容不足；A的“导向”带有引导方向之意，不如“风尚”贴合时代风气。",
+    "analysis": "文段讨论魏晋一个时期整体的文学创作风气，以及这种风气产生的双重影响，所以第一空用“风尚”。后一空与“刻意追求文学形式美”相照应，说的是作品欠缺实质内容，填“空洞”最准确，选D。B的“手法”停留在具体创作方法，“单一”也不等于缺乏内容；C的“呆板”重在不灵活，与“形式僵化”意义接近，未说明内容不足；A的“导向”带有引导方向之意，不如“风尚”贴合时代风气。",
     "selection_reason": "文学题材的近义辨析，两个空相互约束；没有因广东原卷填空较短而降低题源难度。",
     "verification": {
       "independent_answer": "D",
@@ -1150,12 +1521,26 @@
         "file": "核验记录/verbal_review.json",
         "answer_agreement": true,
         "status": "passed"
-      }
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "pending"
+      },
+      "status": "editor_revised_pending_delta_review"
     },
     "edits": [
       {
         "type": "layout_only",
         "description": "合并PDF行末硬换行；保留排序题各句及设问换行；去除填空线两侧排版空格。不改词语、标点、选项次序或答案。"
+      },
+      {
+        "type": "claude_review_revision",
+        "description": "修正引号内文字，不将改写冒充原文。",
+        "revision": "0.3.0"
       }
     ],
     "source_locators": [
@@ -1303,7 +1688,16 @@
         "file": "核验记录/verbal_review.json",
         "answer_agreement": true,
         "status": "passed"
-      }
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      },
+      "status": "claude_reviewed_no_substantive_change"
     },
     "edits": [
       {
@@ -1461,7 +1855,16 @@
         "file": "核验记录/verbal_review.json",
         "answer_agreement": true,
         "status": "passed"
-      }
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      },
+      "status": "claude_reviewed_no_substantive_change"
     },
     "edits": [
       {
@@ -1639,7 +2042,16 @@
         "file": "核验记录/verbal_review.json",
         "answer_agreement": true,
         "status": "passed"
-      }
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      },
+      "status": "claude_reviewed_no_substantive_change"
     },
     "edits": [],
     "source_locators": [
@@ -1714,7 +2126,16 @@
         "file": "核验记录/verbal_review.json",
         "answer_agreement": true,
         "status": "passed"
-      }
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      },
+      "status": "claude_reviewed_no_substantive_change"
     },
     "edits": [
       {
@@ -1872,7 +2293,16 @@
         "file": "核验记录/verbal_review.json",
         "answer_agreement": true,
         "status": "passed"
-      }
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      },
+      "status": "claude_reviewed_no_substantive_change"
     },
     "edits": [
       {
@@ -2030,7 +2460,16 @@
         "file": "核验记录/verbal_review.json",
         "answer_agreement": true,
         "status": "passed"
-      }
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      },
+      "status": "claude_reviewed_no_substantive_change"
     },
     "edits": [],
     "source_locators": [
@@ -2105,7 +2544,16 @@
         "file": "核验记录/verbal_review.json",
         "answer_agreement": true,
         "status": "passed"
-      }
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      },
+      "status": "claude_reviewed_no_substantive_change"
     },
     "edits": [
       {
@@ -2268,7 +2716,16 @@
         "file": "核验记录/verbal_review.json",
         "answer_agreement": true,
         "status": "passed"
-      }
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      },
+      "status": "claude_reviewed_no_substantive_change"
     },
     "edits": [],
     "source_locators": [
@@ -2343,7 +2800,16 @@
         "file": "核验记录/verbal_review.json",
         "answer_agreement": true,
         "status": "passed"
-      }
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      },
+      "status": "claude_reviewed_no_substantive_change"
     },
     "edits": [],
     "source_locators": [
@@ -2418,7 +2884,16 @@
         "file": "核验记录/verbal_review.json",
         "answer_agreement": true,
         "status": "passed"
-      }
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      },
+      "status": "claude_reviewed_no_substantive_change"
     },
     "edits": [
       {
@@ -2571,7 +3046,16 @@
         "file": "核验记录/verbal_review.json",
         "answer_agreement": true,
         "status": "passed"
-      }
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      },
+      "status": "claude_reviewed_no_substantive_change"
     },
     "edits": [],
     "source_locators": [
@@ -2648,9 +3132,23 @@
         "5/2",
         "3"
       ],
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "claude_reviewed_no_substantive_change",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": {
       "question_id": "ZJ2025-A类-052",
       "paper_id": "ZJ2025",
@@ -2749,7 +3247,13 @@
       },
       "quality_flags": [],
       "notes": []
-    }
+    },
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "2，1，1，3/2，3，15/2，（　）"
+      }
+    ]
   },
   {
     "number": 32,
@@ -2781,9 +3285,23 @@
         ],
         "answer": 128
       },
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "claude_reviewed_no_substantive_change",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": {
       "id": "gd-mock-2026h2-s16-q32",
       "season": 16,
@@ -2855,7 +3373,13 @@
       },
       "material": null
     },
-    "source_answer": null
+    "source_answer": null,
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "8，12，23，44，78，（　）"
+      }
+    ]
   },
   {
     "number": 33,
@@ -2887,9 +3411,23 @@
         },
         "required": 64
       },
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "claude_reviewed_no_substantive_change",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": {
       "question_id": "JS2023-A类-050",
       "paper_id": "JS2023",
@@ -2983,7 +3521,13 @@
       },
       "quality_flags": [],
       "notes": []
-    }
+    },
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "1.1，3.1，6.2，5.11，30.2，（　）"
+      }
+    ]
   },
   {
     "number": 34,
@@ -3014,9 +3558,23 @@
         ],
         "next": 334
       },
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "claude_reviewed_no_substantive_change",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": {
       "id": "gd-mock-2026h2-s16-q33",
       "season": 16,
@@ -3087,7 +3645,13 @@
       },
       "material": null
     },
-    "source_answer": null
+    "source_answer": null,
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "180，56，146，174，247，（　）"
+      }
+    ]
   },
   {
     "number": 35,
@@ -3111,9 +3675,23 @@
         "13/14",
         "206/217"
       ],
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "claude_reviewed_no_substantive_change",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": {
       "question_id": "JS2025-A类-054",
       "paper_id": "JS2025",
@@ -3202,7 +3780,13 @@
       },
       "quality_flags": [],
       "notes": []
-    }
+    },
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "1/2，2/3，23/28，58/65，13/14，（　）"
+      }
+    ]
   },
   {
     "number": 36,
@@ -3224,7 +3808,15 @@
         "retail_B": 120,
         "profit": "80"
       },
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "claude_reviewed_no_substantive_change",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
     "edits": [],
     "source_question": {
@@ -3338,7 +3930,15 @@
         ],
         "enhanced_sum": "25"
       },
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "claude_reviewed_no_substantive_change",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
     "edits": [],
     "source_question": {
@@ -3464,9 +4064,23 @@
         "after_B": "1/2",
         "restored": "3/5"
       },
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "claude_reviewed_no_substantive_change",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": {
       "question_id": "JS2025-A类-063",
       "paper_id": "JS2025",
@@ -3565,7 +4179,13 @@
       },
       "quality_flags": [],
       "notes": []
-    }
+    },
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "甲、乙两瓶质量和浓度均相同的酒精溶液，在甲瓶中加入20克水、乙瓶中加入50克浓度为30%的酒精溶液后，浓度仍然相等。若继续在甲瓶中加入30克纯酒精，溶液又恢复到最初浓度，则乙瓶酒精溶液最初的质量是（　）。"
+      }
+    ]
   },
   {
     "number": 39,
@@ -3592,7 +4212,15 @@
         ],
         "distance_squared": 252
       },
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "claude_reviewed_no_substantive_change",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
     "edits": [],
     "source_question": {
@@ -3726,7 +4354,7 @@
     "source_file": "江浙行测_AI题库/questions.jsonl",
     "source_id": "JS2025-A类-069",
     "answer": "A",
-    "analysis": "“每隔4天”按原题及原解析口径是两次之间空4天，即每5天一次。两种日期分别为{2,7,12,17,22,27}和{3,8,13,18,23,28}。若7月31日为星期四，则第一组依次为周三、周一、周六、周四、周二、周日，恰有一六一日；第二组为周四、周二、周日、周五、周三、周一，恰有一次周日且无周六。穷举7种月末星期，只有星期四同时满足两条件。",
+    "analysis": "“每隔4天”按原题及原解析口径是两次之间空4天，即每5天一次。两种日期分别为{2,7,12,17,22,27}和{3,8,13,18,23,28}。若7月31日为星期四，则第一组依次为周三、周一、周六、周四、周二、周日，恰有一六一日；第二组为周四、周二、周日、周五、周三、周一，恰有一次周日且无周六。穷举7种月末星期，只有星期四同时满足两条件。另一读法若是每4天一次，则7月3日起为3、7、11、15、19、23、27、31日，共8次。前7次的星期每次推进4天，遍历全部7个星期，必有星期六，和第二个条件“其余都在工作日”矛盾。因此这里不是只靠口头约定选5天，而能由题内条件排除4天。",
     "selection_reason": "周期锚点和有限日历边界，同时需要稳住步长含义；原真题原文保留。",
     "verification": {
       "method": "先独立推导，再核对源参考答案",
@@ -3769,9 +4397,28 @@
           ]
         }
       ],
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "editor_revised_pending_delta_review",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "pending"
+      }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "claude_review_revision",
+        "description": "补上排除另一常见周期解释的题内证据。",
+        "revision": "0.3.0"
+      },
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": {
       "question_id": "JS2025-A类-069",
       "paper_id": "JS2025",
@@ -3861,7 +4508,13 @@
       "quality_flags": [],
       "notes": []
     },
-    "review_note": "保留原文“每隔4天”；原参考解析按每5天一次。答案册解释步长，不在题本提前提示。"
+    "review_note": "保留原文“每隔4天”；原参考解析按每5天一次。答案册解释步长，不在题本提前提示。",
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "小张打羽毛球膝盖受伤，需每隔4天去医院做一次理疗，如果他7月2日去，则7月的理疗有1次在星期六、1次在星期日，其余都在工作日；如果他7月3日去，则7月的理疗只有1次在星期日，其余都在工作日，那么7月31日是（　）。"
+      }
+    ]
   },
   {
     "number": 41,
@@ -3884,7 +4537,15 @@
         "team_A_per_day": 7,
         "team_B_per_day": 4
       },
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "claude_reviewed_no_substantive_change",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
     "edits": [],
     "source_question": {
@@ -3995,7 +4656,15 @@
         "favorable": 44,
         "total": 125
       },
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "claude_reviewed_no_substantive_change",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
     "edits": [],
     "source_question": {
@@ -4146,7 +4815,15 @@
           ]
         ]
       },
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "claude_reviewed_no_substantive_change",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
     "edits": [],
     "source_question": {
@@ -4257,7 +4934,15 @@
         "total_hours": "1",
         "helper_B_minutes": "15"
       },
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "claude_reviewed_no_substantive_change",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
     "edits": [],
     "source_question": {
@@ -4358,7 +5043,7 @@
     "source_file": "模考/2026下半年广东卷_16-33季_AI可读/全部题目.jsonl",
     "source_id": "gd-mock-2026h2-s28-q43",
     "answer": "D",
-    "analysis": "把每10分钟视为一个有序位置。少于3段最多消耗240大卡，不够；3段只有全游泳达到360，共1种。4段按游泳次数分类：1次游泳时其余必须全跳绳，4种；2次游泳时，另外两段为两次跳绳或一次跳绳一次慢跑，分别6、12种；3次游泳时，余段可慢跑或跳绳，8种；4次游泳1种。合计1+4+6+12+8+1=32种。逐一枚举3⁴种四段序列也得到31种，再加三段的1种。",
+    "analysis": "本题按有序序列计数，同一运动连续选择的次数不受限制；“不超过40分钟”包含30分钟方案。把每10分钟视为一个有序位置。少于3段最多消耗240大卡，不够；3段只有全游泳达到360，共1种。4段按游泳次数分类：1次游泳时其余必须全跳绳，4种；2次游泳时，另外两段为两次跳绳或一次跳绳一次慢跑，分别6、12种；3次游泳时，余段可慢跑或跳绳，8种；4次游泳1种。合计1+4+6+12+8+1=32种。逐一枚举3⁴种四段序列也得到31种，再加三段的1种。C项31对应只计算四段而漏掉三段全游泳的情况。",
     "selection_reason": "先界定有序安排、允许不同总时长，再分类；选项可检验忽略顺序或漏短方案的错误。",
     "verification": {
       "method": "编辑独立推导；数值题另用精确算式或枚举核验",
@@ -4370,9 +5055,23 @@
         "3": 1,
         "4": 31
       },
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "editor_revised_pending_delta_review",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "pending"
+      }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "claude_review_revision",
+        "description": "消除最多连选两次的歧义；C改31对应漏算三段全游泳的自然错因。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": {
       "id": "gd-mock-2026h2-s28-q43",
       "season": 28,
@@ -4470,7 +5169,39 @@
       },
       "material": null
     },
-    "source_answer": null
+    "source_answer": null,
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "健身教练为小王定制了一份健身计划，包括慢跑、跳绳、游泳三种运动，每次运动10分钟，分别消耗55大卡、80大卡、120大卡的热量。小王每天按先后顺序进行若干次运动，每次任选其中一种，同一项目可以重复选择，也可以连续选择，连续次数不限。要求每天运动时长不超过40分钟（休息时间不计入），至少消耗360大卡的热量，则共有多少种不同的安排方式？"
+      }
+    ],
+    "options": {
+      "A": [
+        {
+          "type": "text",
+          "text": "6"
+        }
+      ],
+      "B": [
+        {
+          "type": "text",
+          "text": "7"
+        }
+      ],
+      "C": [
+        {
+          "type": "text",
+          "text": "31"
+        }
+      ],
+      "D": [
+        {
+          "type": "text",
+          "text": "32"
+        }
+      ]
+    }
   },
   {
     "number": 46,
@@ -4487,13 +5218,21 @@
       "source_answer_available": true,
       "source_answer_agreement": true,
       "independent_answer": "A",
-      "status": "editor_verified_awaiting_independent_review",
+      "status": "claude_reviewed_no_substantive_change",
       "image_review": {
         "viewed_actual_image": true,
         "image_paths": [
           "江浙行测_AI题库/images/original/675.png"
         ],
         "scope": "题干与全部四选项，非仅检查路径或hash"
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
       }
     },
     "edits": [],
@@ -4641,7 +5380,7 @@
       "source_answer_available": true,
       "source_answer_agreement": true,
       "independent_answer": "A",
-      "status": "editor_verified_awaiting_independent_review",
+      "status": "claude_reviewed_no_substantive_change",
       "image_review": {
         "viewed_actual_image": true,
         "image_paths": [
@@ -4649,7 +5388,15 @@
         ],
         "scope": "题干与全部四选项，非仅检查路径或hash"
       },
-      "independent_check_note": "未读答案先选A；初始观察采用三角形数量，核源后改用更稳定的外轮廓边数与封闭区域数关系，并重新逐图计数。"
+      "independent_check_note": "未读答案先选A；初始观察采用三角形数量，核源后改用更稳定的外轮廓边数与封闭区域数关系，并重新逐图计数。",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
     "edits": [],
     "source_question": {
@@ -4796,13 +5543,21 @@
       "source_answer_available": true,
       "source_answer_agreement": true,
       "independent_answer": "D",
-      "status": "editor_verified_awaiting_independent_review",
+      "status": "claude_reviewed_no_substantive_change",
       "image_review": {
         "viewed_actual_image": true,
         "image_paths": [
           "江浙行测_AI题库/images/original/73.png"
         ],
         "scope": "题干与全部四选项，非仅检查路径或hash"
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
       }
     },
     "edits": [],
@@ -4950,7 +5705,7 @@
       "source_answer_available": true,
       "source_answer_agreement": true,
       "independent_answer": "A",
-      "status": "editor_verified_awaiting_independent_review",
+      "status": "claude_reviewed_no_substantive_change",
       "image_review": {
         "viewed_actual_image": true,
         "image_paths": [
@@ -5014,6 +5769,14 @@
           ]
         ],
         "answer": "A"
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
       }
     },
     "edits": [
@@ -5204,14 +5967,14 @@
     "source_file": "江浙行测_AI题库/questions.jsonl",
     "source_id": "ZJ2021-A类-080",
     "answer": "C",
-    "analysis": "逐行将前两图在对应位置叠加，保留两图中的全部黑色部分，即一个位置只要在任一图中为黑，结果就在该位置为黑。第一行十字的5块与四角的4块合成9块，第二行两组箭头叠加同样成立。第三行叠加后，上部两枚正三角形与中间倒三角形合成黑色梯形，同时保留下部黑色区域和两侧白色缺口，得到C。A保留了不应存在的上部白色缺口，B缺少中部黑色，D也没有形成应有的整块黑色上部。",
+    "analysis": "逐行看，第二幅图整体叠放在第一幅图上；重叠处显示第二幅图，包括其内部白色部分，不重叠处各自保留。第一行两图没有重叠，十字5块与四角4块合成9块，所以单看这一行还分不出覆盖与并集。关键在第二行：右向箭头覆盖左向箭头，结果内部保留右向白条；若取黑色并集，该白条的大部分会被涂黑，与原图不符。第三行按同一规则：第二幅图上方的倒三角填入前图两枚正三角之间，构成黑色梯形；大倒三角范围内保留第二幅图的白色上角与黑色中部，前图下方轮廓只在覆盖区域以外露出，对应C。不能因答案碰巧相同就保留错误的叠加方法。",
     "selection_reason": "从第一行可能的多种叠加方式转到第二行核定规则，再处理第三行重合轮廓；保留完整图形，不重绘简化。",
     "verification": {
       "method": "先独立作答，再核对源参考答案；图题另以实际图像检查",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "independent_answer": "C",
-      "status": "editor_verified_awaiting_independent_review",
+      "status": "editor_revised_pending_delta_review",
       "image_review": {
         "viewed_actual_image": true,
         "image_paths": [
@@ -5220,16 +5983,31 @@
         "scope": "题干与全部四选项，非仅检查路径或hash"
       },
       "independent_check": {
-        "method": "实际读图独立确定逐行黑色并集；在读源答案前用原图像素对齐比较OR/XOR/AND辅助核定第2行",
+        "method": "复核原图与Claude对比图；第二行的白条排除黑色并集，采用后图含白色部分的不透明覆盖。",
         "independent_answer": "C",
-        "operation": "black union",
-        "visual_caveat": "像素比较仅作辅助证据，栅格采样误差不改变逐位置黑色并集规则；已看全题及全部选项。"
+        "operation": "second_shape_opaque_overlay",
+        "visual_caveat": "核对轮廓及重叠区域，像素相似度仅为辅助证据；答案一致不等于旧解析成立。",
+        "corrected_on": "2026-11-15",
+        "supersedes": "此前black union记录错误，现撤回。"
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "pending"
       }
     },
     "edits": [
       {
         "type": "layout_deduplication",
         "text": "原 options_mode 为 text_or_mixed，但四选项文本仅为 A/B/C/D 占位。渲染改为 in_figure，去除重复空标号；原图、选项次序与完整源对象保留。"
+      },
+      {
+        "type": "claude_review_revision",
+        "description": "采纳并目视复核覆盖规则，纠正原错误并集解析。",
+        "revision": "0.3.0"
       }
     ],
     "source_question": {
@@ -5387,11 +6165,19 @@
       "source_answer_available": true,
       "source_answer_agreement": true,
       "independent_answer": "A",
-      "status": "editor_verified_awaiting_independent_review",
+      "status": "claude_reviewed_no_substantive_change",
       "internal_peer_review": {
         "file": "核验记录/judgment_logic_review.json",
         "answer_agreement": true,
         "status": "passed"
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
       }
     },
     "edits": [],
@@ -5510,7 +6296,7 @@
       "source_answer_available": true,
       "source_answer_agreement": true,
       "independent_answer": "D",
-      "status": "editor_verified_awaiting_independent_review",
+      "status": "claude_reviewed_no_substantive_change",
       "independent_check": {
         "method": "4^6种报名分配并逐条筛选",
         "solutions": [
@@ -5528,9 +6314,23 @@
         "file": "核验记录/judgment_logic_review.json",
         "answer_agreement": true,
         "status": "passed"
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
       }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": {
       "question_id": "ZJ2024-A类-102",
       "paper_id": "ZJ2024",
@@ -5624,7 +6424,13 @@
       },
       "quality_flags": [],
       "notes": []
-    }
+    },
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "张、王、李、赵、钱、孙6人是某单位的优秀员工，在全面深化改革方面取得了很大的成就，现有甲、乙、丙、丁四种奖项可以申报，每名员工只能申报一种奖项，且每种奖项都有1至2名员工申报，已知以下情况：\n（1）申报乙奖的员工比甲奖的多；\n（2）申报丁奖的员工比丙奖的多；\n（3）若李、赵中至少有1名申报甲奖，则王申报丁奖；\n（4）若张、李、赵中至少有1名申报乙奖，则只有钱申报丁奖；\n（5）孙申报丙奖。\n根据以上信息，可以得出以下哪项结论？"
+      }
+    ]
   },
   {
     "number": 53,
@@ -5641,7 +6447,7 @@
       "source_answer_available": true,
       "source_answer_agreement": true,
       "independent_answer": "B",
-      "status": "editor_verified_awaiting_independent_review",
+      "status": "claude_reviewed_no_substantive_change",
       "independent_check": {
         "method": "枚举粗估者与其余三误差的全部匹配",
         "solutions": [
@@ -5655,9 +6461,23 @@
         "file": "核验记录/judgment_logic_review.json",
         "answer_agreement": true,
         "status": "passed"
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
       }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": {
       "question_id": "JS2025-A类-099",
       "paper_id": "JS2025",
@@ -5756,7 +6576,13 @@
       },
       "quality_flags": [],
       "notes": []
-    }
+    },
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "对某项调查的“同意”票进行计数，甲、乙、丙、丁四人给出的结果分别是：9472、9496、9480、9502张。四人计数结果不一致后重新计数，发现有三人分别少计了17张、少计了9张、多计了13张，还有一人仅粗略估计出一个票数。\n根据上述信息，可以推出粗略估计票数的人是："
+      }
+    ]
   },
   {
     "number": 54,
@@ -5773,7 +6599,7 @@
       "source_answer_available": true,
       "source_answer_agreement": true,
       "independent_answer": "A",
-      "status": "editor_verified_awaiting_independent_review",
+      "status": "claude_reviewed_no_substantive_change",
       "independent_check": {
         "method": "全部24种名次排列",
         "solutions": [
@@ -5792,6 +6618,14 @@
         "file": "核验记录/judgment_logic_review.json",
         "answer_agreement": true,
         "status": "passed"
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
       }
     },
     "edits": [],
@@ -5910,7 +6744,7 @@
       "source_answer_available": true,
       "source_answer_agreement": true,
       "independent_answer": "D",
-      "status": "editor_verified_awaiting_independent_review",
+      "status": "claude_reviewed_no_substantive_change",
       "independent_check": {
         "method": "枚举非(0,0)对局；所有(0,0)平局可任意插入且不改指头总数、比分与终止条件",
         "terminal_sequence_count": 6,
@@ -6043,9 +6877,23 @@
         "file": "核验记录/judgment_logic_review.json",
         "answer_agreement": true,
         "status": "passed"
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
       }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": {
       "question_id": "ZJ2025-A类-104",
       "paper_id": "ZJ2025",
@@ -6144,7 +6992,13 @@
       },
       "quality_flags": [],
       "notes": []
-    }
+    },
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "小李和小王玩石头剪刀布，有人赢两次就获胜。已知他们分出了胜负，且到结束时小李一共出了9个手指，小王一共出了5个手指。\n问以下哪个选项不可能发生？"
+      }
+    ]
   },
   {
     "number": 56,
@@ -6161,14 +7015,28 @@
       "source_answer_available": true,
       "source_answer_agreement": true,
       "independent_answer": "B",
-      "status": "editor_verified_awaiting_independent_review",
+      "status": "claude_reviewed_no_substantive_change",
       "internal_peer_review": {
         "file": "核验记录/judgment_logic_review.json",
         "answer_agreement": true,
         "status": "passed"
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
       }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": {
       "question_id": "JS2024-A类-100",
       "paper_id": "JS2024",
@@ -6262,7 +7130,13 @@
       },
       "quality_flags": [],
       "notes": []
-    }
+    },
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "卖早点、修家电、配钥匙……老百姓家门口的社区商业，是以社区居民为服务对象、服务半径为步行15分钟左右范围内的商业形态。近年来，许多城市大力推进社区商业建设，以更好地满足居民的消费需求。不过，也有专家担忧，家门口商业服务的完善，在给居民生活带来便利的同时可能也会使快递业逐步萎缩。\n以下哪项如果为真，最能缓解上述专家的担忧？"
+      }
+    ]
   },
   {
     "number": 57,
@@ -6279,14 +7153,28 @@
       "source_answer_available": true,
       "source_answer_agreement": true,
       "independent_answer": "B",
-      "status": "editor_verified_awaiting_independent_review",
+      "status": "claude_reviewed_no_substantive_change",
       "internal_peer_review": {
         "file": "核验记录/judgment_logic_review.json",
         "answer_agreement": true,
         "status": "passed"
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
       }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": {
       "question_id": "ZJ2025-A类-106",
       "paper_id": "ZJ2025",
@@ -6385,7 +7273,13 @@
       },
       "quality_flags": [],
       "notes": []
-    }
+    },
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "金伯利岩是一种稀有的火山岩。从这些岩石上能看出火山曾猛烈喷发的痕迹，其化学和矿物成分也有别于地球上其他岩浆岩。尤其是有些金伯利岩包含厘米级大小的稀有矿物晶体，如铁尖晶橄榄石和布氏岩等。因此，人们推测这一类含有稀有矿物晶体的金伯利岩很可能来自地幔。\n以下哪项如果为真，最能支持上述结论？"
+      }
+    ]
   },
   {
     "number": 58,
@@ -6402,14 +7296,28 @@
       "source_answer_available": true,
       "source_answer_agreement": true,
       "independent_answer": "C",
-      "status": "editor_verified_awaiting_independent_review",
+      "status": "claude_reviewed_no_substantive_change",
       "internal_peer_review": {
         "file": "核验记录/judgment_logic_review.json",
         "answer_agreement": true,
         "status": "passed"
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
       }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": {
       "question_id": "JS2025-A类-100",
       "paper_id": "JS2025",
@@ -6508,6 +7416,38 @@
       },
       "quality_flags": [],
       "notes": []
+    },
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "买电影票前，去电影网站查看待映影片的评分；看电视剧前，要等到有评分后才决定是否观看……各种文化产品似乎都有了属于自己的分数。一个高分能为相关文化产品带来较高的关注度和较大的影响力，这反过来又影响文化产品的创作。然而，有专家表示，这样的评分很有可能影响文化产品的创新发展。\n以下除哪项外，均能支持上述专家的观点？"
+      }
+    ],
+    "options": {
+      "A": [
+        {
+          "type": "text",
+          "text": "那些试图突破常规、探索新风格或新形式的文化产品，往往会因为不符合评分者的偏好，而只得到较低的评分"
+        }
+      ],
+      "B": [
+        {
+          "type": "text",
+          "text": "新的文化产品往往需要一定的时间周期，才能培养出口碑和受众基础，而评分的即时性会抑制这种成长空间"
+        }
+      ],
+      "C": [
+        {
+          "type": "text",
+          "text": "在评分的过程中，粉丝群体会毫无理由地对自己喜爱的作品给出高分评价，从而影响评分的公正性和客观性"
+        }
+      ],
+      "D": [
+        {
+          "type": "text",
+          "text": "为获得更高的评分和更多的市场认可，许多文化产品的创作者会迎合评分标准和大众喜好，重复已成功的模式和题材"
+        }
+      ]
     }
   },
   {
@@ -6525,14 +7465,28 @@
       "source_answer_available": true,
       "source_answer_agreement": true,
       "independent_answer": "C",
-      "status": "editor_verified_awaiting_independent_review",
+      "status": "claude_reviewed_no_substantive_change",
       "internal_peer_review": {
         "file": "核验记录/judgment_logic_review.json",
         "answer_agreement": true,
         "status": "passed"
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
       }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": {
       "question_id": "JS2024-A类-103",
       "paper_id": "JS2024",
@@ -6636,7 +7590,13 @@
       },
       "quality_flags": [],
       "notes": []
-    }
+    },
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "一项研究发现，成年小白鼠去除一个关键生物钟基因后，昼夜节律完全消失，虽然生活质量有所下降，但寿命并未受到显著影响，心血管健康状况甚至有所改善。据此，研究人员推断昼夜节律缺失对健康的危害可能没有我们想象得那么大。\n回答以下哪个问题最有助于评价上述研究人员所做出的推断？"
+      }
+    ]
   },
   {
     "number": 60,
@@ -6653,14 +7613,28 @@
       "source_answer_available": true,
       "source_answer_agreement": true,
       "independent_answer": "D",
-      "status": "editor_verified_awaiting_independent_review",
+      "status": "claude_reviewed_no_substantive_change",
       "internal_peer_review": {
         "file": "核验记录/judgment_logic_review.json",
         "answer_agreement": true,
         "status": "passed"
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
       }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": {
       "question_id": "JS2025-A类-102",
       "paper_id": "JS2025",
@@ -6749,6 +7723,38 @@
       },
       "quality_flags": [],
       "notes": []
+    },
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "《百家姓》是一部关于汉字姓氏的作品，成文于北宋初期，原收集姓氏411个，后增补到504个，其中单姓444个，复姓60个。《百家姓》的内容没有文理，仅仅只是姓氏的合集，但却是古代中国儿童启蒙教育中不可或缺的经典作品，与《三字经》《千字文》并称为古代三大启蒙读物，在古代儿童教育中占据了重要地位。\n以下除哪项外，均能解释《百家姓》在古代儿童教育中的重要地位？"
+      }
+    ],
+    "options": {
+      "A": [
+        {
+          "type": "text",
+          "text": "姓氏可以反映出社会各阶层的权力传承和财产继承，《百家姓》中姓氏的逐步丰富反映了社会的发展和进步"
+        }
+      ],
+      "B": [
+        {
+          "type": "text",
+          "text": "姓氏的作用主要是区分血缘关系和婚姻关系，随着门阀政治的出现，《百家姓》中姓氏的排序反映了当时的政治和社会结构"
+        }
+      ],
+      "C": [
+        {
+          "type": "text",
+          "text": "姓氏文化不仅透露出家族的来源、迁徙历史和谱系，还包括了宗祠、名人和家训等方面的信息，承载着丰富的文化内涵"
+        }
+      ],
+      "D": [
+        {
+          "type": "text",
+          "text": "在南宋《百家姓》已经成为普及读物，历朝历代都编写了各种版本的《百家姓》，其中不乏名家编撰和御制的版本"
+        }
+      ]
     }
   },
   {
@@ -6766,15 +7772,29 @@
       "source_answer_available": false,
       "source_answer_agreement": null,
       "independent_answer": "D",
-      "status": "editor_verified_awaiting_independent_review",
+      "status": "claude_reviewed_no_substantive_change",
       "source_answer_caveat": "本答案为编排者独立推导，不能标成源答案已核对。",
       "internal_peer_review": {
         "file": "核验记录/judgment_logic_review.json",
         "answer_agreement": true,
         "status": "passed"
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
       }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": {
       "id": "gd-mock-2026h2-s20-q61",
       "season": 20,
@@ -6926,7 +7946,13 @@
       },
       "material": null
     },
-    "source_answer": null
+    "source_answer": null,
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "若做不到强化技术监管、提升执法效能，就不能让科技创新真正造福人类。目前监管部门已经强化了技术监管，提升了执法效能，因此科技创新已经能够真正造福人类。下列选项的逻辑结构与题干最为相似的是（　）。"
+      }
+    ]
   },
   {
     "number": 62,
@@ -6943,14 +7969,28 @@
       "source_answer_available": true,
       "source_answer_agreement": true,
       "independent_answer": "D",
-      "status": "editor_verified_awaiting_independent_review",
+      "status": "claude_reviewed_no_substantive_change",
       "internal_peer_review": {
         "file": "核验记录/judgment_logic_review.json",
         "answer_agreement": true,
         "status": "passed"
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
       }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": {
       "question_id": "ZJ2025-A类-108",
       "paper_id": "ZJ2025",
@@ -7049,7 +8089,13 @@
       },
       "quality_flags": [],
       "notes": []
-    }
+    },
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "某研究发现，连续8周每天服用450-900毫克茶氨酸后，被试的睡眠满意度显著提高。某厂商因此推出一款含有茶氨酸的饮料，并以该研究为主要内容拍摄广告，声称这款饮料有助于缓解失眠、促进睡眠。\n以下哪项如果为真，最能质疑该厂商的说法？"
+      }
+    ]
   },
   {
     "number": 63,
@@ -7066,14 +8112,28 @@
       "source_answer_available": true,
       "source_answer_agreement": true,
       "independent_answer": "C",
-      "status": "editor_verified_awaiting_independent_review",
+      "status": "claude_reviewed_no_substantive_change",
       "internal_peer_review": {
         "file": "核验记录/judgment_logic_review.json",
         "answer_agreement": true,
         "status": "passed"
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
       }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": {
       "question_id": "JS2025-A类-092",
       "paper_id": "JS2025",
@@ -7182,6 +8242,38 @@
       },
       "quality_flags": [],
       "notes": []
+    },
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "甲：在手机市场增长缓慢的大环境下，折叠屏手机销量连续多年保持两位数的增长，折叠屏手机将是手机研发的下一个风口\n乙：折叠屏手机经历多年发展仍只占手机整体销量的1.6%，由此来看，折叠屏手机不值得手机厂商投入太多精力\n以下哪项与上述对话方式最为相似？"
+      }
+    ],
+    "options": {
+      "A": [
+        {
+          "type": "text",
+          "text": "甲：2017年企业应用AI技术比例约为20%，到2023年提高至50%，AI技术将是国家经济发展的重点\n乙：AI技术经历多年发展已经在社会方方面面起着重要作用，但传统行业仍是经济中的重要部分，同样需要重视"
+        }
+      ],
+      "B": [
+        {
+          "type": "text",
+          "text": "甲：这次期末考试，张明的成绩平均每科提高了5分，这表明张明过去一年在学习上认真了许多\n乙：这次期末考试比较简单，全班同学各科平均分都提高了10分之多，由此看来，张明在过去一年没有认真学习"
+        }
+      ],
+      "C": [
+        {
+          "type": "text",
+          "text": "甲：过去三年某出版社的错别字检出量大大增加，必须增加相应的人手以避免错别字检出数量继续增加\n乙：过去三年该出版社出版总量大大增加，但错别字检出率维持在万分之一左右，远低于国家标准，无需增加人手"
+        }
+      ],
+      "D": [
+        {
+          "type": "text",
+          "text": "甲：一项调查显示，超过90%的大学生在不请假的情况下缺过课，这一现象说明课堂纪律没有得到很好的遵守\n乙：这项调查主要针对大四学生，如果是大一学生，则缺过课的比例不超过20%，可见大学课堂纪律得到了很好的遵守"
+        }
+      ]
     }
   },
   {
@@ -7199,15 +8291,29 @@
       "source_answer_available": false,
       "source_answer_agreement": null,
       "independent_answer": "B",
-      "status": "editor_verified_awaiting_independent_review",
+      "status": "claude_reviewed_no_substantive_change",
       "source_answer_caveat": "本答案为编排者独立推导，不能标成源答案已核对。",
       "internal_peer_review": {
         "file": "核验记录/judgment_logic_review.json",
         "answer_agreement": true,
         "status": "passed"
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
       }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": {
       "id": "gd-mock-2026h2-s20-q64",
       "season": 20,
@@ -7359,7 +8465,13 @@
       },
       "material": null
     },
-    "source_answer": null
+    "source_answer": null,
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "明厨亮灶的饭店，客流量大；而客流量大的饭店，饭菜都美味。因此，明厨亮灶的饭店，饭菜都美味。下列选项的逻辑结构与题干最为相似的是（　）。"
+      }
+    ]
   },
   {
     "number": 65,
@@ -7376,14 +8488,28 @@
       "source_answer_available": true,
       "source_answer_agreement": true,
       "independent_answer": "B",
-      "status": "editor_verified_awaiting_independent_review",
+      "status": "claude_reviewed_no_substantive_change",
       "internal_peer_review": {
         "file": "核验记录/judgment_logic_review.json",
         "answer_agreement": true,
         "status": "passed"
+      },
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
       }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": {
       "question_id": "ZJ2024-A类-110",
       "paper_id": "ZJ2024",
@@ -7487,7 +8613,13 @@
       },
       "quality_flags": [],
       "notes": []
-    }
+    },
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "研究人员从分析受试者的呼吸开始，筛选可用于生物识别认证的化合物，共发现了28种可行的化合物。在此基础上，他们开发了一个有16个通道的嗅觉传感器阵列，每个通道都可识别特定范围的化合物。传感器数据随后被传递到机器学习系统中，分析每个人的呼吸组成，并以此区分个人的特征。研究人员根据结果表示，呼吸可作为身份验证的识别信号。\n以下哪项如果为真，最能削弱上述观点？"
+      }
+    ]
   },
   {
     "number": 66,
@@ -7497,7 +8629,7 @@
     "analysis": "先只看A。A向左匀速，水平方向合力为零，所以B对A的滑动摩擦力向右，大小恰为5 N；另有重力和支持力，A共受4个力，A项正确。再看B：A对B的摩擦力向左、大小5 N；B在10 N向右拉力下保持静止，因此地面对B的静摩擦力向左、大小也是5 N。B还受自身重力、A的压力、地面支持力，连同上述三个水平力共6个力，B、C项正确。A对B的摩擦力是5 N而非小于5 N，故应选D。也可把A、B作为整体，外部向右10 N、向左5 N，立即得到地面向左摩擦力5 N。切勿把作用在不同物体上的一对作用力、反作用力列在同一个受力图中。",
     "selection_reason": "同时处理两个物体、两层接触面、静摩擦与滑动摩擦；既能分体受力，也能用整体法交叉核验，不是只认一句定义。",
     "verification": {
-      "status": "editor_verified_awaiting_independent_review",
+      "status": "claude_reviewed_no_substantive_change",
       "method": "实际查看源图，逐项受力分析；整体法与分体法交叉核验；程序检查水平合力。",
       "figure_paths": [
         "assets/s25_p17_i00.png"
@@ -7516,9 +8648,23 @@
         "A对B摩擦力大小_N": 5,
         "地面对B摩擦力大小_N": 5
       },
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "section": "科学推理",
     "question_type": "single_choice",
     "source_bank": "guangdong_mock",
@@ -7650,7 +8796,21 @@
         17
       ],
       "source_sha256": "17838db5023427dbdf9f18afbcb27ff8d57750e4bfe7da7700db253f5ff55b18"
-    }
+    },
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "如图所示，外力 $F_1$ 大小为10N，作用于物块B上，外力 $F_2$ 大小为5N，作用于物块A上。物块B静止于粗糙程度均匀的水平地面上，物块A在物块B上向左做匀速直线运动，假设物块B足够长，下列说法不正确的是（　）。"
+      },
+      {
+        "type": "figure",
+        "asset_id": "s25_p17_i00",
+        "path": "assets/s25_p17_i00.png",
+        "width_px": 406,
+        "height_px": 138,
+        "caption": "原卷第17页，第67题图"
+      }
+    ]
   },
   {
     "number": 67,
@@ -7660,7 +8820,7 @@
     "analysis": "先认清接线：电源两端之间有R1、R2串联的支路，以及R3支路、R4支路；A1测总电流，A2测R3、R4两支路的电流之和，V跨接电源两端，不只测R2。设电源电压为U，则V=U，I_A1=U/(R1+R2)+U/R3+U/R4，I_A2=U/R3+U/R4。温度下降使R2减小，上方支路电流增大，总电流随之增大，而电压表不变，B正确、A错误。光照增强使R3减小，A1、A2都增大，C错误；光照减弱使R3增大，A1、A2都减小，D错误。此处按中学理想电表模型，分别讨论温度或光照变化，其他条件不变。",
     "selection_reason": "电路外观复杂，但关键是节点与支路还原，再把局部电阻变化传到不同电表；能训练避免看到变阻就笼统判断所有电表示数。",
     "verification": {
-      "status": "editor_verified_awaiting_independent_review",
+      "status": "claude_reviewed_no_substantive_change",
       "method": "实际查看原电路图，逐线确认电压表两端及电流表位置；正电阻条件下作单调性推导，并用32组参数补充数值检查。",
       "figure_paths": [
         "assets/s20_p18_i08.png"
@@ -7678,9 +8838,23 @@
         "positive_parameter_cases": 32
       },
       "limits": "数值抽查不是普遍性证明；普遍性来自上述表达式的单调性。",
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "section": "科学推理",
     "question_type": "single_choice",
     "source_bank": "guangdong_mock",
@@ -7840,7 +9014,21 @@
         18
       ],
       "source_sha256": "67acf246cdf2bde38839a2b0e056f6f535ba1146600404847fbaeed8ab6a5025"
-    }
+    },
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "如图为某用电器的电路图， $R_1$ 、 $R_4$ 是定值电阻， $R_2$ 是温敏电阻，随着环境温度的升高， $R_2$的阻值会变大； $R_3$ 是光敏电阻，随着环境光照强度的增大， $R_3$ 的阻值会变小；V表示电压表， $A_1$ 、 $A_2$ 均表示电流表，电源电压保持不变，闭合开关S后，下列说法正确的是（　）。"
+      },
+      {
+        "type": "figure",
+        "asset_id": "s20_p18_i08",
+        "path": "assets/s20_p18_i08.png",
+        "width_px": 348,
+        "height_px": 358,
+        "caption": "原卷第18页，第67题图"
+      }
+    ]
   },
   {
     "number": 68,
@@ -7850,7 +9038,7 @@
     "analysis": "题目问哪组实验不能确定三种金属的活动性顺序，不是问反应能否发生。①铁能置换硫酸铜中的铜，给出Fe>Cu；②铜能置换硝酸银中的银，给出Cu>Ag；③银不能置换硫酸铜中的铜，也给出Cu>Ag；④铁与稀盐酸反应而铜不反应，给出Fe>H>Cu，因此Fe>Cu。于是A的①③、C的②④、D的③④都能连成Fe>Cu>Ag。B的①④反复验证的只是Fe与Cu的关系，完全没有把Ag与其他金属联系起来，无法单凭这组实验排定三者顺序，故选B。不要把事先背过的顺序，当成所选实验已经提供的证据。",
     "selection_reason": "将科学知识转化为实验所提供的比较关系，检查证据是否连通；区别‘事实已知’和‘方案能验证’，有明确推理价值。",
     "verification": {
-      "status": "editor_verified_awaiting_independent_review",
+      "status": "claude_reviewed_no_substantive_change",
       "method": "逐项写出置换反应提供的不等关系；枚举Fe、Cu、Ag、H的24种严格顺序，检查每个组合是否唯一确定三金属顺序。",
       "option_can_determine_order": {
         "A": true,
@@ -7878,9 +9066,23 @@
       },
       "model_boundary": "枚举中的其他顺序是用于说明所选观测的信息不足，不是在声称实际金属顺序可随意改变；按常规实验条件，不讨论钝化等旁支。",
       "supporting_reference": "https://edu.rsc.org/experiments/the-reactivity-of-iron/1779.article",
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "section": "科学推理",
     "question_type": "single_choice",
     "source_bank": "guangdong_mock",
@@ -8011,7 +9213,13 @@
         18
       ],
       "source_sha256": "67acf246cdf2bde38839a2b0e056f6f535ba1146600404847fbaeed8ab6a5025"
-    }
+    },
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "小明在学习完与金属活动性相关的知识后，想自己动手验证Fe、Cu、Ag三种金属活动性的强弱，下列实验方案的组合不能达到其目的的是（　）。\n①将Fe放入 $\\mathrm{CuSO_4}$ 溶液\n②将Cu放入 $\\mathrm{AgNO_3}$ 溶液\n③将Ag放入 $\\mathrm{CuSO_4}$ 溶液\n④将Fe、Cu分别放入稀盐酸"
+      }
+    ]
   },
   {
     "number": 69,
@@ -8021,7 +9229,7 @@
     "analysis": "按通常的ABO三等位基因遗传模型，A型可为I^A I^A或I^A i，B型可为I^B I^B或I^B i，AB型为I^A I^B，O型为ii。C项中，AB型亲本只能给出I^A或I^B，O型亲本只能给出i，子女只能为I^A i或I^B i，即A型或B型，不可能为O型，正确。A项可用I^A i×I^B i反驳：A、B、AB、O四种血型均可能出现。B项同样可由这组父母反驳：两人均非O型，仍可生育O型子女。D项可用AB型×AB型反驳：子女可能为AB型，并不要求父母表现型必须分别为A型和B型。核心是把父母表现型展开为可能基因型，再讨论‘可能’与‘必定’，不能只按血型名称拼接。这里是考试所用的常规遗传模型，不把结论外推为涵盖孟买型、cis-AB等罕见情况的临床绝对断言。",
     "selection_reason": "用六种常规基因型拆解‘只可能、至少一人一定、必定’等全称判断；三项均有明确反例，训练表现型与基因型的区别。",
     "verification": {
-      "status": "editor_verified_awaiting_independent_review",
+      "status": "claude_reviewed_no_substantive_change",
       "method": "枚举6种常规基因型的36组有序亲本组合及全部配子组合；对四项分别验证全称命题或给出反例。",
       "option_truth": {
         "A": false,
@@ -8049,9 +9257,23 @@
       },
       "model_boundary": "通常三等位基因遗传模型；不讨论罕见变异、基因互作或血型鉴定异常。",
       "supporting_reference": "https://www.ncbi.nlm.nih.gov/books/NBK2267/",
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "section": "科学推理",
     "question_type": "single_choice",
     "source_bank": "guangdong_mock",
@@ -8160,7 +9382,13 @@
         19
       ],
       "source_sha256": "cd5035fbb9936c5d304aeadfb5f4912624cef4dcf6b9d527ba0dd811cd025c92"
-    }
+    },
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "在ABO血型系统中，下列关于血型遗传的说法正确的是（　）。"
+      }
+    ]
   },
   {
     "number": 70,
@@ -8170,7 +9398,7 @@
     "analysis": "图中自转箭头呈顺时针，因此是从南极上空俯视；同心纬线从外向内依次为50°S、60°S、70°S。由左侧0°经线、右侧180°经线及自转方向可读出：A=(50°S,90°W)，B=(60°S,45°W)，C=(70°S,45°E)，D=(70°S,135°E)。①四点均在南半球，正确；②C、D已达70°S，不是全在中纬度，错误；③C、D位于南极圈以内，不是全在温带，错误；④A、D坐标正确；⑤把B、C经度的东西方向弄反，错误。东西半球通常以20°W和160°E组成的经线圈划分，A、B在西半球，C、D在东半球，⑥正确。故①④⑥成立，选D。不能把‘西经就是西半球’当成普遍规则，本题只是恰好二者对应。",
     "selection_reason": "同一极地投影联合检查自转方向、经纬度、纬度带和东西半球；有明确读图负荷，且能纠正按平面方位或东西经机械判断的习惯。",
     "verification": {
-      "status": "editor_verified_awaiting_independent_review",
+      "status": "claude_reviewed_no_substantive_change",
       "method": "实际查看原图，核对箭头方向、三条纬线、0°与180°基准、A—D点位；分别计算六个命题真值。",
       "figure_paths": [
         "assets/s21_p18_i12.png"
@@ -8209,9 +9437,23 @@
         "C": false,
         "D": true
       },
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并原PDF行末硬换行，保留列表、对话及设问分段；省略号和空括号规范化。详见本次格式修订日志。",
+        "revision": "0.3.0"
+      }
+    ],
     "section": "科学推理",
     "question_type": "single_choice",
     "source_bank": "guangdong_mock",
@@ -8380,7 +9622,25 @@
         19
       ],
       "source_sha256": "b17d5b3baa812dc95bc5a6f7dd4d8bd2c5e0bacb4b5e74fb9f1ca227cd61b1d9"
-    }
+    },
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "根据下图所示的经纬网，说法正确的是（　）。"
+      },
+      {
+        "type": "figure",
+        "asset_id": "s21_p18_i12",
+        "path": "assets/s21_p18_i12.png",
+        "width_px": 271,
+        "height_px": 220,
+        "caption": "原卷第18页，第70题图"
+      },
+      {
+        "type": "text",
+        "text": "①A、B、C、D四个地区全部位于南半球\n②A、B、C、D四个地区全部位于中纬度地区\n③A、B、C、D四个地区全部位于温带\n④A、D两个地区的经纬度分别是（ $50^{\\circ}\\mathrm{S}$ ， $90^{\\circ}\\mathrm{W}$ ）、（ $70^{\\circ}\\mathrm{S}$ ， $135^{\\circ}\\mathrm{E}$ ）\n⑤B、C两个地区的经纬度分别是（ $60^{\\circ}\\mathrm{S}$ ， $45^{\\circ}\\mathrm{E}$ ）、（ $70^{\\circ}\\mathrm{S}$ ， $45^{\\circ}\\mathrm{W}$ ）\n⑥A、B两个地区位于西半球，C、D两个地区位于东半球"
+      }
+    ]
   },
   {
     "number": 71,
@@ -8397,7 +9657,15 @@
       "source_answer_available": false,
       "source_answer_agreement": null,
       "independent_check": 39232.796486090774,
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "claude_reviewed_no_substantive_change",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
     "edits": [],
     "source_question": {
@@ -8666,7 +9934,15 @@
       "source_answer_available": false,
       "source_answer_agreement": null,
       "independent_check": 15975.503062117234,
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "claude_reviewed_no_substantive_change",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
     "edits": [],
     "source_question": {
@@ -8935,7 +10211,15 @@
       "source_answer_available": false,
       "source_answer_agreement": null,
       "independent_check": 6.322108345534416,
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "claude_reviewed_no_substantive_change",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
     "edits": [],
     "source_question": {
@@ -9210,7 +10494,15 @@
         -6.207378554467713,
         14.15119968489238
       ],
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "claude_reviewed_no_substantive_change",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
     "edits": [],
     "source_question": {
@@ -9487,7 +10779,15 @@
         ],
         "shanghai_guangdong_increment_ratio": 2.84009544548178
       },
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "claude_reviewed_no_substantive_change",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
     "edits": [],
     "source_question": {
@@ -9783,7 +11083,15 @@
       "source_answer_available": false,
       "source_answer_agreement": null,
       "independent_check": 16.61178739416745,
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "claude_reviewed_no_substantive_change",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
     "edits": [],
     "source_question": {
@@ -9992,7 +11300,15 @@
       "source_answer_available": false,
       "source_answer_agreement": null,
       "independent_check": 2,
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "claude_reviewed_no_substantive_change",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
     "edits": [],
     "source_question": {
@@ -10210,7 +11526,15 @@
       "source_answer_available": false,
       "source_answer_agreement": null,
       "independent_check": 39476.62068508581,
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "claude_reviewed_no_substantive_change",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
     "edits": [],
     "source_question": {
@@ -10424,7 +11748,15 @@
         "ship": 10898,
         "plane": 13074
       },
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "claude_reviewed_no_substantive_change",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
     "edits": [],
     "source_question": {
@@ -10638,7 +11970,15 @@
         "import_increment": 7503.647191011236,
         "export_minus_import": -12907.600000000002
       },
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "claude_reviewed_no_substantive_change",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
     "edits": [],
     "source_question": {
@@ -10881,7 +12221,15 @@
         "current_import": 1404.6,
         "increment": 369.48925613896404
       },
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "claude_reviewed_no_substantive_change",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
     "edits": [],
     "source_question": {
@@ -11158,7 +12506,15 @@
       "source_answer_available": false,
       "source_answer_agreement": null,
       "independent_check": -0.3463100670714451,
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "claude_reviewed_no_substantive_change",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
     "edits": [],
     "source_question": {
@@ -11437,16 +12793,30 @@
     "source_file": "模考/2026下半年广东卷_16-33季_AI可读/全部题目.jsonl",
     "source_id": "gd-mock-2026h2-s25-q88",
     "answer": "C",
-    "analysis": "设2021年维护和维修服务进口额、出口额为I、E。2022年总额增速12.4%是基期量加权的进口增速18.3%和出口增速9.5%：18.3%I+9.5%E=12.4%(I+E)。所以I/E=(12.4−9.5)/(18.3−12.4)=2.9/5.9≈0.492，约为1∶2。题目要的是基期比重，不能在求出这一比后再乘现期增长倍数。",
+    "analysis": "设2021年维护和维修服务进口额、出口额为I、E。2022年总额增速12.4%是基期量加权的进口增速18.3%和出口增速9.5%：18.3%I+9.5%E=12.4%(I+E)。所以I/E=(12.4−9.5)/(18.3−12.4)=2.9/5.9≈0.492，约为1∶2。题目要的是基期比值（进口额／出口额），不能在求出这一比后再乘现期增长倍数。",
     "selection_reason": "缺少具体分项金额但可用混合增长率反推基期结构，是有明确入口的关系题。",
     "verification": {
       "method": "编辑独立推导；数值题另用精确算式或枚举核验",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "independent_check": 0.4915254237288136,
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "editor_revised_pending_delta_review",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "pending"
+      }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "claude_review_revision",
+        "description": "进口与出口之比不是部分占总体的比重。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": {
       "id": "gd-mock-2026h2-s25-q88",
       "season": 25,
@@ -11726,7 +13096,15 @@
         "C_construction": 1388.1,
         "D_intellectual_property": -2095.6000000000004
       },
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "claude_reviewed_no_substantive_change",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
     "edits": [],
     "source_question": {
@@ -11996,7 +13374,7 @@
     "source_file": "模考/2026下半年广东卷_16-33季_AI可读/全部题目.jsonl",
     "source_id": "gd-mock-2026h2-s25-q90",
     "answer": "D",
-    "analysis": "本题选错误项。D：2021年个人、文化和娱乐服务出口额=119.8/(1−2.2%)≈122.49亿元，低于125，故D错误。A：运输服务进、出口额分别11355.7、9745.3，均为相应列最大；B：运输逆差1610.4亿元，大于保险逆差1104.5亿元；C：政府服务出口增速13.0%高于全国出口12.1%，进口增速16.2%高于全国进口13.5%，故两个占比均上升。",
+    "analysis": "本题选错误项。D：2021年个人、文化和娱乐服务出口额=119.8/(1−2.2%)≈122.49亿元，低于125，故D错误。A：运输服务进、出口额分别11355.7、9745.3，均为相应列最大；B：运输逆差1610.4亿元，大于保险逆差1104.5亿元；C：政府服务出口增速13.0%高于全国出口12.1%，进口增速16.2%高于全国进口13.5%，故两个占比均上升。A项还需处理维护和维修服务的缺省格：该类进出口合计847.1亿元，各分项金额非负，因此进口额、出口额分别都不超过847.1亿元，均小于运输服务相应金额。不能仅凭已显示的数值就声称整列最大。",
     "selection_reason": "综合判断包含最大项、净额比较、两种总体的比重方向及基期还原，明确否定设问。",
     "verification": {
       "method": "编辑独立推导；数值题另用精确算式或枚举核验",
@@ -12011,9 +13389,23 @@
         "government_import_growth": 16.2,
         "national_import_growth": 13.5
       },
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "editor_revised_pending_delta_review",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "pending"
+      }
     },
-    "edits": [],
+    "edits": [
+      {
+        "type": "claude_review_revision",
+        "description": "补全缺省格所需的总额上界论证。",
+        "revision": "0.3.0"
+      }
+    ],
     "source_question": {
       "id": "gd-mock-2026h2-s25-q90",
       "season": 25,
@@ -12315,7 +13707,15 @@
       "source_answer_available": false,
       "source_answer_agreement": null,
       "independent_check": 0.21124200000000015,
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "claude_reviewed_no_substantive_change",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
     "edits": [],
     "source_question": {
@@ -12540,7 +13940,15 @@
       "source_answer_available": false,
       "source_answer_agreement": null,
       "independent_check": 0.14180013549201734,
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "claude_reviewed_no_substantive_change",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
     "edits": [],
     "source_question": {
@@ -12765,7 +14173,15 @@
       "source_answer_available": false,
       "source_answer_agreement": null,
       "independent_check": -0.14108352144469527,
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "claude_reviewed_no_substantive_change",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
     "edits": [],
     "source_question": {
@@ -12990,7 +14406,15 @@
       "source_answer_available": false,
       "source_answer_agreement": null,
       "independent_check": 512.4153061882945,
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "claude_reviewed_no_substantive_change",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
     "edits": [],
     "source_question": {
@@ -13220,7 +14644,15 @@
         "2020_decrease_million": 1358.8697497279645,
         "2019_quantity": 3684.430512016719
       },
-      "status": "editor_verified_awaiting_independent_review"
+      "status": "claude_reviewed_no_substantive_change",
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.2.0",
+        "review_commit": "06c3d6887021faba1abd6ab1ee78441ef8a3a5dc",
+        "answer_agreement": true,
+        "current_revision": "0.3.0",
+        "revision_recheck": "no_substantive_change"
+      }
     },
     "edits": [],
     "source_question": {

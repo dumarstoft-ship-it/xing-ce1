@@ -49,7 +49,7 @@ def patch_builder():
         "missing_note = ('第66—70题科学推理待补，本稿尚不能用于完整整卷计时。' if missing else cfg.get('display_status', '题面已补齐，仍待独立审核与打印排版。'))")
     text=replace_once(text,'本稿尚未经Claude审核。',"审核范围与本次修订状态见paper.json及审核意见处理说明。")
     old="answer_lines.extend(['| '+' | '.join(map(str,ns))+' |','| '+' | '.join(['---']*len(ns))+' |','| '+' | '.join(by_number[n]['answer'] if n in by_number else '待补' for n in ns)+' |',''])"
-    new="answer_lines.append('\\n'.join(['| '+' | '.join(map(str,ns))+' |','| '+' | '.join(['---']*len(ns))+' |','| '+' | '.join(by_number[n]['answer'] if n in by_number else '待补' for n in ns)+' |]))"
+    new="answer_lines.append('\\n'.join(['| '+' | '.join(map(str,ns))+' |','| '+' | '.join(['---']*len(ns))+' |','| '+' | '.join(by_number[n]['answer'] if n in by_number else '待补' for n in ns)+' |']))"
     text=replace_once(text,old,new)
     text=replace_once(text,"answer_lines.append('编辑处理：'+json.dumps(r['edits'],ensure_ascii=False))",
         "answer_lines.append('编辑处理：'+'；'.join(e.get('description', e.get('text', e.get('type',''))) if isinstance(e,dict) else str(e) for e in r['edits']))")

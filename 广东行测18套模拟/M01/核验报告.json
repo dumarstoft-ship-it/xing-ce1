@@ -1,6 +1,6 @@
 {
   "paper_id": "M01",
-  "checked_version": "0.2.0",
+  "checked_version": "0.3.0",
   "content_validation": "PASS",
   "target_count": 90,
   "actual_count": 90,
@@ -48,7 +48,8 @@
   "errors": [],
   "is_complete_paper": true,
   "print_ready": false,
-  "external_review": "pending_claude",
+  "external_review": "claude_reviewed_v0.2.0_revisions_pending_recheck",
+  "printing_status": "v0.3.0_not_rebuilt_v0.2.0_archived",
   "source_file_sha256": {
     "江浙行测_AI题库/questions.jsonl": "07b748dd27d44132d7734279306f724981a89de028d19d229c989f00fd9b7c93",
     "国考/言语理解/2016-2025/all.jsonl": "f3e468935dadeaa7dcdd778bd59da40f2100c53012ab161c251818f3e3313ba9",
