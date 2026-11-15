@@ -59,6 +59,23 @@ LATIN_FALLBACK = {
 # 中公样卷只把 ASCII 字符排成 Times；“”—①等全角符号仍用方正书宋。
 # 方正书宋（GB2312版）缺 U+2212 减号，并入西文字体；度数符号随数字用西文字体。
 LATIN_RANGE = "U+0020-007E, U+00B0, U+2212"
+EXT_PREFIX = "补字"
+
+
+def _cmap(path: Path) -> set[int]:
+    from fontTools.ttLib import TTFont  # type: ignore
+    return set(TTFont(str(path), lazy=True).getBestCmap())
+
+
+def _ranges(cps: list[int]) -> str:
+    out, i = [], 0
+    while i < len(cps):
+        j = i
+        while j + 1 < len(cps) and cps[j + 1] == cps[j] + 1:
+            j += 1
+        out.append(f"U+{cps[i]:04X}" + (f"-{cps[j]:04X}" if j > i else ""))
+        i = j + 1
+    return ", ".join(out)
 
 
 def _ps_name(path: Path) -> str | None:
@@ -94,6 +111,13 @@ def find_fonts(font_dir: Path | None) -> dict[str, Path]:
     for role, fallback in LATIN_FALLBACK.items():
         if role not in found and fallback.exists():
             found[role] = fallback
+    # 补字：方正书宋简体是GB2312版，个别生僻字（如“岕”）不在其中。字体目录里以“补字”开头的
+    # 宋体字体（如思源宋体 Noto Serif SC 的子集）只用于书宋缺的字，见 fonts_css 与构建日志。
+    if font_dir and font_dir.is_dir():
+        ext = sorted(p for p in font_dir.rglob(EXT_PREFIX + "*")
+                     if p.suffix.lower() in (".ttf", ".otf", ".woff2", ".woff"))
+        if ext:
+            found["SongExt"] = ext[0]
     missing = [r for r in FONT_ROLES if r not in found]
     if missing:
         raise SystemExit(
@@ -112,9 +136,43 @@ def fonts_css(fonts: dict[str, Path]) -> str:
         face("ZG Latin", fonts["Latin"], LATIN_RANGE)
         + face("ZG LatinB", fonts["LatinB"], LATIN_RANGE)
         + face("ZG Song", fonts["Song"])
+        + (face("ZG Song", fonts["SongExt"], _ranges(sorted(_cmap(fonts["SongExt"]) - _cmap(fonts["Song"]))))
+           if "SongExt" in fonts else "")
         + face("ZG Hei", fonts["Hei"])
         + face("ZG Kai", fonts["Kai"])
     )
+
+
+def check_glyphs(questions: list[dict], fonts: dict[str, Path], log: "Log") -> None:
+    """正文用字逐一核对：书宋没有的字由补字字体排印并记入日志；两者都没有时直接报错。"""
+    song = _cmap(fonts["Song"])
+    ext = _cmap(fonts["SongExt"]) if "SongExt" in fonts else set()
+    latin = set(range(0x20, 0x7F)) | {0xB0, 0x2212}
+    used: dict[str, set[int]] = {}
+
+    def walk(v, n):
+        if isinstance(v, str):
+            for ch in v:
+                if not ch.isspace():
+                    used.setdefault(ch, set()).add(n)
+        elif isinstance(v, dict):
+            for k, x in v.items():
+                if k not in ("path", "type", "id", "width_px", "height_px", "asset_id"):
+                    walk(x, n)
+        elif isinstance(v, list):
+            for x in v:
+                walk(x, n)
+    for q in questions:
+        walk({"s": q["stem"], "o": q["options"], "m": q.get("materials") or []}, q["number"])
+    lacking = {ch: ns for ch, ns in used.items() if ord(ch) not in song and ord(ch) not in latin}
+    missing = {ch: ns for ch, ns in lacking.items() if ord(ch) not in ext}
+    if missing:
+        raise SystemExit("方正书宋缺字，且字体目录没有可补的字：" + "；".join(
+            f"“{ch}”（U+{ord(ch):04X}，第{'、'.join(map(str, sorted(ns)))}题）" for ch, ns in missing.items())
+            + "。可把含该字的宋体（如思源宋体）放入字体目录，文件名以“补字”开头")
+    for ch, ns in sorted(lacking.items()):
+        log.add(min(ns), "字体", "书宋缺字，由补字字体排印", ch,
+                f"{fonts['SongExt'].name}（U+{ord(ch):04X}，第{'、'.join(map(str, sorted(ns)))}题）")
 
 
 # --------------------------------------------------------------------------
@@ -129,6 +187,8 @@ class Log:
 
 
 MARKER = re.compile(r"^(（\d+）|\(\d+\)|[①-⑳]|[甲乙丙丁戊己庚辛]：|观众\d+：|[A-D][.．、]|第[一二三四五六七八九十]+[，、：])")
+# 对话行：两到四字的称呼加冒号开头（如“小朱：”“张老师：”）。误判只会多保留一个换行
+SPEAKER = re.compile(r"^[\u4e00-\u9fa5]{2,4}[：:]\S")
 PROMPT = re.compile(
     r"^(以下|下列|由此|根据|据此|回答|增加|这段文字|这段话|依次填入|填入|最适合|将以上|上述|结果发现|问以下|问下列|问：|问:|那么)"
 )
@@ -156,6 +216,9 @@ def reflow(text: str, number, where: str, log: Log) -> list[str]:
             or prev.endswith(("：", ":"))                           # 上一行以冒号引出下文
             or prev.endswith(SENT_END)                              # 上一句已完结
             or bool(PROMPT.match(ln) and MARKER.match(paras[-1]))   # 列表/对话项之后的设问行
+            or bool(SPEAKER.match(ln))                              # 下一行是另一人的话
+            or bool(PROMPT.match(ln) and SPEAKER.match(paras[-1]))  # 对话之后的设问行
+            or bool(PROMPT.match(ln) and re.search(r"[？?]$|（[ 　]*）。?$", ln))   # 独立的问句设问行
         )
         if keep:
             paras.append(ln)
@@ -1018,7 +1081,7 @@ def render(html_path: Path, pdf_path: Path) -> dict:
 
 
 # 题图重绘中的标注沿用原图的无衬线字（Liberation Sans/Arial）
-ALLOWED_FONT = re.compile(r"(FZSSJW|FZHTJW|FZKTJW|LiberationSerif|TimesNewRoman|Times|LiberationSans|Arial)", re.I)
+ALLOWED_FONT = re.compile(r"(FZSSJW|FZHTJW|FZKTJW|LiberationSerif|TimesNewRoman|Times|LiberationSans|Arial|NotoSerif)", re.I)
 
 
 def check_pdf(pdf: Path, n_questions: int, front_pages: int) -> dict:
@@ -1242,6 +1305,7 @@ def main() -> None:
     out_dir = args.out or (paper_dir / "打印版")
     out_dir.mkdir(parents=True, exist_ok=True)
     log = Log()
+    check_glyphs(questions, fonts, log)
 
     with tempfile.TemporaryDirectory(prefix="print_") as td:
         tdp = Path(td)
