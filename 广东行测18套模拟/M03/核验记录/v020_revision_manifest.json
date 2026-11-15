@@ -1,0 +1,1114 @@
+{
+  "paper_id": "M03",
+  "from_version": "0.1.0",
+  "to_version": "0.2.0",
+  "baseline_commit": "887670327a0706f75830dd05241900be48b747a2",
+  "claude_review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+  "baseline_selection_sha256": "5a265f7c6278eaa3c7ec5eb9c26e2964593182c3a6bcc1d60d28dfb5c3af05a7",
+  "current_selection_sha256": "7b7a951aa2cc279c8eb9e146717e3222218cfcfe219b53e0f6a6ed86af742d0b",
+  "patch_sha256": {
+    "v020_verbal_politics_patch.json": "fd748335903c813f3a8c75b16e3f328841d00937a70af3b6cc890168cb06994f",
+    "v020_quant_data_patch.json": "9f8393284e0df37871c76b6d9fd351652beaf7798286100308c864fc984e4d38",
+    "v020_reasoning_patch.json": "73b127addb6b010e5b7016f41e8299a81ec5ea27d3b6ad4a1de79642f32dd2b2",
+    "v020_science_patch.json": "bace8873098836fee4167c789ebbff7f029dc3dd7596dfb66363addee0c79bb0"
+  },
+  "revised_numbers": [
+    1,
+    4,
+    5,
+    6,
+    7,
+    10,
+    12,
+    13,
+    14,
+    16,
+    17,
+    19,
+    21,
+    22,
+    23,
+    24,
+    25,
+    27,
+    28,
+    29,
+    33,
+    35,
+    37,
+    38,
+    40,
+    42,
+    43,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    55,
+    56,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    67,
+    68,
+    69,
+    70,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    88
+  ],
+  "normalized_question_payload_changed_numbers": [
+    5,
+    6,
+    12,
+    13,
+    28,
+    35,
+    43,
+    51,
+    55,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    67,
+    68,
+    69,
+    81,
+    82,
+    83,
+    84,
+    85
+  ],
+  "answer_keys_changed": [],
+  "source_objects_changed": [],
+  "mandatory_numbers": [
+    35,
+    55,
+    60,
+    65,
+    69,
+    70
+  ],
+  "questions": [
+    {
+      "number": 1,
+      "source_id": "M03-ORIG-001",
+      "before_sha256": "1c0d43d3fc32151f757ac94c26814028d849b312f28ff8609004e961a2ae1588",
+      "after_sha256": "8638afe1371e1cd365f507bcb9fb75d6709e4bfaecd96aff2539156caee849a4",
+      "changed_fields_excluding_review_metadata": [
+        "analysis",
+        "edits",
+        "provenance"
+      ],
+      "normalized_question_payload_changed": false,
+      "patch_file": "v020_verbal_politics_patch.json",
+      "reason": "采纳依据补强：用实际核到的讲话原句及第65页主题补足依据，保留可信政府转载链接。"
+    },
+    {
+      "number": 2,
+      "source_id": "M03-ORIG-002",
+      "before_sha256": "4c43e99716a4e8020b7ef7223a2ef39f7e9af07bba79ec527160e72b44a57e8a",
+      "after_sha256": "fbc7956f03642306476f1051d9ab7cf8ae98401b2aba9c5292c98d9c3e08e328",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 3,
+      "source_id": "M03-ORIG-003",
+      "before_sha256": "7180b8e0de971fd8e7cee2443c02b18865e3c39806918f237062f23c9b411015",
+      "after_sha256": "5f1df16f682b34aed961527900df71cac70bf552e1a076b987ddfc1bb6490ed8",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 4,
+      "source_id": "M03-ORIG-004",
+      "before_sha256": "a35348d470f4895a57392059b61a0603ddc5312e155b6edc037bac4d126b3f33",
+      "after_sha256": "8e3b7ae274590319e427ab477fa74b79370d06cd884c2a752a3360553e352be0",
+      "changed_fields_excluding_review_metadata": [
+        "analysis",
+        "edits",
+        "provenance"
+      ],
+      "normalized_question_payload_changed": false,
+      "patch_file": "v020_verbal_politics_patch.json",
+      "reason": "采纳讲义支持范围的明确说明，不虚构教材书名、版本或页码。"
+    },
+    {
+      "number": 5,
+      "source_id": "M03-ORIG-005",
+      "before_sha256": "7878b1ff002c9f681fa089657c580dd5c8cbec3c58fd8ef2dec24f34e4e7459d",
+      "after_sha256": "6abdf3a83325776fae26ee80bbf7fdc91e52231477860b5775ff781ed68b0a09",
+      "changed_fields_excluding_review_metadata": [
+        "analysis",
+        "edits",
+        "options"
+      ],
+      "normalized_question_payload_changed": true,
+      "patch_file": "v020_verbal_politics_patch.json",
+      "reason": "采纳将B改为两类评价重点互换的建议，使辨析直接落在政策知识点上。"
+    },
+    {
+      "number": 6,
+      "source_id": "M03-ORIG-006",
+      "before_sha256": "13271de806b5e3a9895ffb635ebd23284afa45615f3acf9b5714a217ee229b8e",
+      "after_sha256": "0c5976bbba4bdb872a081bcdb54feaa0fd28ec4ec7841531d0483d9e058784f0",
+      "changed_fields_excluding_review_metadata": [
+        "analysis",
+        "edits",
+        "provenance",
+        "stem"
+      ],
+      "normalized_question_payload_changed": true,
+      "patch_file": "v020_verbal_politics_patch.json",
+      "reason": "采纳规范措辞；记录本次修订前题干和四组选项。初次内部调整前的选项未存档，不能凭记忆补造。"
+    },
+    {
+      "number": 7,
+      "source_id": "M03-ORIG-007",
+      "before_sha256": "e090d00b65675bde34577ab26ba782b2f59fd93a672e785622dbb51afe8c39fa",
+      "after_sha256": "7e39c4204408dad5e0b4f0f7195a9ccfad3d53520298df532fe8d233f8bbee73",
+      "changed_fields_excluding_review_metadata": [
+        "analysis",
+        "edits",
+        "provenance"
+      ],
+      "normalized_question_payload_changed": false,
+      "patch_file": "v020_verbal_politics_patch.json",
+      "reason": "采纳依据范围说明，区分讲义主题与实际用于判断的完整命题。"
+    },
+    {
+      "number": 8,
+      "source_id": "M03-ORIG-008",
+      "before_sha256": "26eae0ffbee212d5a071dddb90fc590be7de57b4776458f71484a79c5a4d2c2b",
+      "after_sha256": "24e188a99a9f958d6f40fc2c9a64459afd8c1ad5472a4eb57c5b494d96c62757",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 9,
+      "source_id": "M03-ORIG-009",
+      "before_sha256": "b1700ab3a14558353d358af33d3bb256bc8c7147dddc70ce4a45d3a1608ceebc",
+      "after_sha256": "51d0df31749bb15771519c7ac5de6c9614b7eff3d21aeaa8dc1df4263fab3440",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 10,
+      "source_id": "M03-ORIG-010",
+      "before_sha256": "a66c241787cb9a59a48507c7071c6c558649814184c6cc0110ab4b0f6d6e3ff0",
+      "after_sha256": "fb398cc1c0080aa4a9a3dda1410869de54e8ee9690caa7150100c19776709caf",
+      "changed_fields_excluding_review_metadata": [
+        "analysis",
+        "edits",
+        "provenance"
+      ],
+      "normalized_question_payload_changed": false,
+      "patch_file": "v020_verbal_politics_patch.json",
+      "reason": "采纳正式名称和页码精确化：写出三个合作区全称，南沙使用“广州南沙”，不杜撰新的合作区名称；删无直接平台内容的第77页。"
+    },
+    {
+      "number": 11,
+      "source_id": "M03-ORIG-011",
+      "before_sha256": "dc4214f05f7be6e1e88c5bc49de9484c51eeef09cd4cda0eb3ce0c727d61e2c8",
+      "after_sha256": "9c22a617e4eec9147ce4493c53554447ca1ca64e3f36d1e90ec8eb773bb301bb",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 12,
+      "source_id": "M03-ORIG-012",
+      "before_sha256": "7ab264d048b87cf27f59b524ea9dbb843542db769f7fbc4f90ed922ec5310418",
+      "after_sha256": "9d289b4a5bc7662b36a769fcd6891b2cd8dc5774c212f49aa01b3980ce9f34f9",
+      "changed_fields_excluding_review_metadata": [
+        "analysis",
+        "edits",
+        "provenance",
+        "stem"
+      ],
+      "normalized_question_payload_changed": true,
+      "patch_file": "v020_verbal_politics_patch.json",
+      "reason": "采纳“梅县话”避免题干直接泄露所属方言；统一当前依据链接并增补代表性的一手博物馆依据。"
+    },
+    {
+      "number": 13,
+      "source_id": "M03-ORIG-013",
+      "before_sha256": "01f34a8b026d8b68346fda46221190bb88ee3a8c72bcafea24ce3499a6a88339",
+      "after_sha256": "89d0e9163cc265fb12d9a7fe499b926f4d76bc20a0f74cffcb985e180fa2db9e",
+      "changed_fields_excluding_review_metadata": [
+        "analysis",
+        "edits",
+        "options"
+      ],
+      "normalized_question_payload_changed": true,
+      "patch_file": "v020_verbal_politics_patch.json",
+      "reason": "采纳干扰组合优化，要求同时掌握会议任务的两处对应，不用单个名称识别代替组合辨析。"
+    },
+    {
+      "number": 14,
+      "source_id": "M03-ORIG-014",
+      "before_sha256": "678e2999b7e8d8bc6dc653f69b5114763153cb8f9f0571ac24011b987996a7db",
+      "after_sha256": "3643528ce5be2a6b13b501e912ef6063ddfe88169b03fde399283d3e31a3d858",
+      "changed_fields_excluding_review_metadata": [
+        "analysis",
+        "edits",
+        "provenance"
+      ],
+      "normalized_question_payload_changed": false,
+      "patch_file": "v020_verbal_politics_patch.json",
+      "reason": "采纳有用的设备区分与依据边界；保留已可靠核对的原链接，仅为新增的雪龙号建造信息补入官方科研机构依据。"
+    },
+    {
+      "number": 15,
+      "source_id": "M03-ORIG-015",
+      "before_sha256": "32a7e230d4ef441b7248f79def1c6bc5f5a468f140c308c87e446d48d84a4209",
+      "after_sha256": "5f172c6cb09971309f2ca161081fb07b221c86ac2cad8be2718dc89a4884d3eb",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 16,
+      "source_id": "ZJ2022-A类-028",
+      "before_sha256": "e3035eed6ba7e560f3a059103befdd269cee0b0f13911076fde89af89e5e0bb4",
+      "after_sha256": "396b8c2c7f512ba471c51f09e05f688a59b2933620eb27fdd4e28c0238a0bafa",
+      "changed_fields_excluding_review_metadata": [
+        "analysis",
+        "edits",
+        "source_notice",
+        "verification"
+      ],
+      "normalized_question_payload_changed": false,
+      "patch_file": "v020_verbal_politics_patch.json",
+      "reason": "采纳第一空不宜强排的说明，补搭配差异；不把“臆断”词性绝对化。；据Claude留存的PDF、blob与逐字比较记录更新来源核对状态，并补浙江网友回忆版身份。"
+    },
+    {
+      "number": 17,
+      "source_id": "JS2023-A类-037",
+      "before_sha256": "3f7eb71171c5006fc86c9fc4c9d0d9cedd8afc3ff9ab057a3ffffa795eeeeb21",
+      "after_sha256": "855d0b512fb7af009dfcd3156f1291e2847bebdb343b823bd2be9152bddd7462",
+      "changed_fields_excluding_review_metadata": [
+        "edits",
+        "verification"
+      ],
+      "normalized_question_payload_changed": false,
+      "patch_file": "v020_verbal_politics_patch.json",
+      "reason": "据Claude留存的PDF、blob与逐字比较记录更新来源核对状态。；保留规范的“一株”；只把订正记录中的初编状态与后续Claude核对分阶段写清。"
+    },
+    {
+      "number": 18,
+      "source_id": "GKYY-2021-044",
+      "before_sha256": "95f20beaef5ff39f9ae5560377d58465cdcba5f044507e7542f667df515907fc",
+      "after_sha256": "088d563e5cbd43b7c2bb90c2f95b1e0f3f68fa9ab493075837ae0c8c904fdb8c",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 19,
+      "source_id": "ZJ2023-A类-031",
+      "before_sha256": "e6ad1022dd1e5ea8f20d29d9ac88d620caa05b4ac7e0311c7abb5ebf99380d45",
+      "after_sha256": "c6a4570ada74bb8764353aa84c0d660d0cbffcc8c8b97eccdeedc8e6e39ee335",
+      "changed_fields_excluding_review_metadata": [
+        "analysis",
+        "edits",
+        "source_notice",
+        "verification"
+      ],
+      "normalized_question_payload_changed": false,
+      "patch_file": "v020_verbal_politics_patch.json",
+      "reason": "采纳第三空不能独立定项的建议，呈现真实的前两空排除路径。；据Claude留存的PDF、blob与逐字比较记录更新来源核对状态，并补浙江网友回忆版身份。"
+    },
+    {
+      "number": 20,
+      "source_id": "GKYY-2020-004",
+      "before_sha256": "570b2d6cfc89faf14e56613a77d0540c9598abce7a5752d1c4a31a924f0d1a61",
+      "after_sha256": "8d5beeb0af885ee27718431fa839394e4f89b9db3cd078b052cc071c5c1fd4c6",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 21,
+      "source_id": "JS2020-A类-029",
+      "before_sha256": "8fe939c89023f204b18549facf792ed1cd94b75380de6e46e431f5e193be7b3d",
+      "after_sha256": "16bc501d2c007943b686b741aaa3209ac343b81d1ae9cefaa828e27d875ef6d2",
+      "changed_fields_excluding_review_metadata": [
+        "analysis",
+        "edits",
+        "verification"
+      ],
+      "normalized_question_payload_changed": false,
+      "patch_file": "v020_verbal_politics_patch.json",
+      "reason": "采纳对D略有拔高的批评，按选项实际文字说明尾句落点与前提的关系。；据Claude留存的PDF、blob与逐字比较记录更新来源核对状态。"
+    },
+    {
+      "number": 22,
+      "source_id": "ZJ2022-A类-040",
+      "before_sha256": "18cc9183ff8f45e6996baca2b31a43ee3c794b8d37c28a2b63245b39eb0ce390",
+      "after_sha256": "5556da202a8ce9e5a36b8c85e8d8fe9ac76a2b4a22a2b666b2a1d49fdfe236d5",
+      "changed_fields_excluding_review_metadata": [
+        "edits",
+        "source_notice",
+        "verification"
+      ],
+      "normalized_question_payload_changed": false,
+      "patch_file": "v020_verbal_politics_patch.json",
+      "reason": "据Claude留存的PDF、blob与逐字比较记录更新来源核对状态，并补浙江网友回忆版身份。"
+    },
+    {
+      "number": 23,
+      "source_id": "ZJ2021-A类-040",
+      "before_sha256": "2890e3e8ee6b47019f6b7243250e792485a9180978934f01c144aa6ee2f69d5a",
+      "after_sha256": "be4616713312df9ceaa3df63074912564a6579a1b18b2272ede8a8dfe8bd549f",
+      "changed_fields_excluding_review_metadata": [
+        "edits",
+        "source_notice",
+        "verification"
+      ],
+      "normalized_question_payload_changed": false,
+      "patch_file": "v020_verbal_politics_patch.json",
+      "reason": "据Claude留存的PDF、blob与逐字比较记录更新来源核对状态，并补浙江网友回忆版身份。"
+    },
+    {
+      "number": 24,
+      "source_id": "JS2022-A类-029",
+      "before_sha256": "6f378c9c996162c86de9c7fad616f1211d7431a34fcee97684caba553400f89d",
+      "after_sha256": "bb92906140fc8401847226e47f287d4fc9eb3429188c9658725bec6c3274733c",
+      "changed_fields_excluding_review_metadata": [
+        "edits",
+        "verification"
+      ],
+      "normalized_question_payload_changed": false,
+      "patch_file": "v020_verbal_politics_patch.json",
+      "reason": "据Claude留存的PDF、blob与逐字比较记录更新来源核对状态。"
+    },
+    {
+      "number": 25,
+      "source_id": "ZJ2021-A类-050",
+      "before_sha256": "bb899cfe1590934cb0f8a697d43ed7fd700cbd51e96605d94c74deee5622f174",
+      "after_sha256": "24c7fa97a31c3a96ad69df88f579dce929dc58f2c726153940cf168d075bc0b0",
+      "changed_fields_excluding_review_metadata": [
+        "edits",
+        "source_notice",
+        "verification"
+      ],
+      "normalized_question_payload_changed": false,
+      "patch_file": "v020_verbal_politics_patch.json",
+      "reason": "据Claude留存的PDF、blob与逐字比较记录更新来源核对状态，并补浙江网友回忆版身份。"
+    },
+    {
+      "number": 26,
+      "source_id": "GKYY-2023-060",
+      "before_sha256": "a35eaf3b99493f7c989043bc61a9c781e039b4327b37a66f8a52d28acfc791df",
+      "after_sha256": "18aefbcf3a9113383daa492a1c64b134796f654bbb0cb62e460204b18ce7b83e",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 27,
+      "source_id": "GKYY-2020-027",
+      "before_sha256": "4924d6511eb271dd91445b65ff0fb8d8e7ada934f4dd57b1b2598c9f08f58544",
+      "after_sha256": "7d4704f9e92a263f294f6e3606ea73e026b5cc0c422a8e0ff17760d7869d2edb",
+      "changed_fields_excluding_review_metadata": [
+        "analysis",
+        "edits"
+      ],
+      "normalized_question_payload_changed": false,
+      "patch_file": "v020_verbal_politics_patch.json",
+      "reason": "采纳合理分歧后的补强建议，以同句陈述对象与方式的概括为主理由，绝对化只作补充。"
+    },
+    {
+      "number": 28,
+      "source_id": "ZJ2023-A类-042",
+      "before_sha256": "1f4d038f1544373a572d673a766faca2bf0caf25cdfb0cc9346aa66f27966483",
+      "after_sha256": "59a3c9b6f4daf988135a57ba0c6ed47105aecc704d8268304c9421c1a71730c1",
+      "changed_fields_excluding_review_metadata": [
+        "edits",
+        "source_notice",
+        "stem_override",
+        "verification"
+      ],
+      "normalized_question_payload_changed": true,
+      "patch_file": "v020_verbal_politics_patch.json",
+      "reason": "采纳范围连接号规范，数字与条件不变。；据Claude留存的PDF、blob与逐字比较记录更新来源核对状态，并补浙江网友回忆版身份。"
+    },
+    {
+      "number": 29,
+      "source_id": "ZJ2023-A类-047",
+      "before_sha256": "7bcdd7fd796041d5bbe016290ba7191629318315d61bd6f363882b879adb9377",
+      "after_sha256": "b638f9473b9b0031a44387f9b796871cc60c92284d6f2851f25f6181edde420f",
+      "changed_fields_excluding_review_metadata": [
+        "edits",
+        "source_notice",
+        "verification"
+      ],
+      "normalized_question_payload_changed": false,
+      "patch_file": "v020_verbal_politics_patch.json",
+      "reason": "据Claude留存的PDF、blob与逐字比较记录更新来源核对状态，并补浙江网友回忆版身份。"
+    },
+    {
+      "number": 30,
+      "source_id": "GKYY-2021-025",
+      "before_sha256": "c1dea7d64e8d66ad8371f76a384b4a98ce77094c7002dbe8705b2b26cbd64070",
+      "after_sha256": "4904ce6964d1d25da8c1abd5d26c2159b31e8b2c364472407badc32a81e96357",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 31,
+      "source_id": "gd-mock-2026h2-s19-q31",
+      "before_sha256": "627c4483626d24e60627606ce518d32803d671626a9012955dae0f272d09b8e3",
+      "after_sha256": "c7cd98113fc4e1380904e9b3ee991123f3cc10d89198959629a2d8b2ab1ee96c",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 32,
+      "source_id": "gd-mock-2026h2-s29-q35",
+      "before_sha256": "e568fe7e636ee6dd787c0b1a68628dccab467e75bb854f5dd996abce36e48f24",
+      "after_sha256": "ead3392494421ad1f0d51be97026e9f006a4be30a091dd65fd94e2bcc4e84167",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 33,
+      "source_id": "gd-mock-2026h2-s27-q34",
+      "before_sha256": "39347aaa516209ba8f3714a793272c2b5651a00d8269b674f655e59cfaeb7a64",
+      "after_sha256": "74b1f853a6b7bee731a48baeb0a0b8a6652279522e6abd31fe7315882c31b014",
+      "changed_fields_excluding_review_metadata": [
+        "analysis",
+        "edits"
+      ],
+      "normalized_question_payload_changed": false,
+      "patch_file": "v020_quant_data_patch.json",
+      "reason": "采纳第33题解析建议：明确排除只符合前四项的等差规律。"
+    },
+    {
+      "number": 34,
+      "source_id": "gd-mock-2026h2-s25-q34",
+      "before_sha256": "2898def4cbfe43109d15df8cb6afc44ea7c140f61dc56435b6d1cff6a8c646c2",
+      "after_sha256": "9d51b52e74ad3555c3a0764c277e3bf03ca8f2065b9a3706625626cb0b98d2f8",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 35,
+      "source_id": "gd-mock-2026h2-s19-q35",
+      "before_sha256": "1f42e7d0b4556b94e69632fe860d6113c37ef5f570aeee01a05ea46e8cd7e66d",
+      "after_sha256": "c5984c7c7169b7472ae709a40ab3953021d238907b028315ec40b3c5dbeb5718",
+      "changed_fields_excluding_review_metadata": [
+        "edits",
+        "stem_override"
+      ],
+      "normalized_question_payload_changed": true,
+      "patch_file": "v020_quant_data_patch.json",
+      "reason": "采纳必须修改项：第三圆右下格的负号贴近直径；按审核推荐参数改善字形间距，保留原图和数值方位。"
+    },
+    {
+      "number": 36,
+      "source_id": "gd-mock-2026h2-s30-q37",
+      "before_sha256": "4f73179dbf53b4913036a581ef1d4f4b1266f312ae85372c4e38147747a44f05",
+      "after_sha256": "01197d419b023c6ebcabadb17e8e6aeb5776d3014fbf56fa3fab7ef709df055a",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 37,
+      "source_id": "gd-mock-2026h2-s32-q37",
+      "before_sha256": "764b3233f0848384f4941a118caf6257c784124ce7a2f2b2eada65c926c242b8",
+      "after_sha256": "e90f16c1392cdbadd623ca5b8b322c134e123966221a7209c4e70607b23360b6",
+      "changed_fields_excluding_review_metadata": [
+        "analysis",
+        "edits"
+      ],
+      "normalized_question_payload_changed": false,
+      "patch_file": "v020_quant_data_patch.json",
+      "reason": "采纳第37题解析建议：说明个位为0时交换后的数字读法，消除对036的疑惑。"
+    },
+    {
+      "number": 38,
+      "source_id": "gd-mock-2026h2-s27-q42",
+      "before_sha256": "4be1776efbbda96afc2e11ac0a155f073242b67ee7977b45769dc5634a7ebb98",
+      "after_sha256": "729d7b00ff752ae9373a8085ba426f063c4a09ff0f24b291219cfea7ede7e95b",
+      "changed_fields_excluding_review_metadata": [
+        "analysis",
+        "edits"
+      ],
+      "normalized_question_payload_changed": false,
+      "patch_file": "v020_quant_data_patch.json",
+      "reason": "采纳第38题解析建议：让30/20%的计算明确承接题干已有的进价不变条件。"
+    },
+    {
+      "number": 39,
+      "source_id": "gd-mock-2026h2-s25-q42",
+      "before_sha256": "ace315f09a34c155fe7b8c7868c423f4193db621303cf6ba9a94322a2b39adba",
+      "after_sha256": "4f56703256d24c73ab5eda144b7ae42f20eb697d1681e41013f5ec2ecdc80daf",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 40,
+      "source_id": "gd-mock-2026h2-s19-q40",
+      "before_sha256": "968bbc560ec283092ae7554c3200317347a7d6a027001c0b384223f40a2f1e65",
+      "after_sha256": "366f5e8b16386eef432a793d531c725241665e31b33cd8d804ea17b8a615246b",
+      "changed_fields_excluding_review_metadata": [
+        "analysis",
+        "edits"
+      ],
+      "normalized_question_payload_changed": false,
+      "patch_file": "v020_quant_data_patch.json",
+      "reason": "采纳第40题解析建议：区分达到阈值与达到阈值所需的最小降幅。"
+    },
+    {
+      "number": 41,
+      "source_id": "gd-mock-2026h2-s22-q40",
+      "before_sha256": "fa09073e788888c787d513e4d63a448dbea1afb4c0908019945750d339bf83b7",
+      "after_sha256": "a830d9078d240a50836f40e8e6a1ff73b0dfd533325923e6e2db079bdcb1ba37",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 42,
+      "source_id": "gd-mock-2026h2-s27-q39",
+      "before_sha256": "4403d48cf8180ecca3dea608d1541d722d65fe93dbfae06929fd58584c3d7eeb",
+      "after_sha256": "cefb91cc3773113046bb88d8f94bd7ed1c7aed0134ebada1d8581bec8a9b917b",
+      "changed_fields_excluding_review_metadata": [
+        "analysis",
+        "edits"
+      ],
+      "normalized_question_payload_changed": false,
+      "patch_file": "v020_quant_data_patch.json",
+      "reason": "采纳第42题解析建议：错因对应经排班天数独立核算，与A、D选项一致。"
+    },
+    {
+      "number": 43,
+      "source_id": "gd-mock-2026h2-s19-q41",
+      "before_sha256": "35f42d19e5b54330a1def68ea4487b73ac994e46120f7107273118e08d731f73",
+      "after_sha256": "77c2a3f14b7b5adf2d5f21a2925c923fa0fdce78fde977f78923218fad520a89",
+      "changed_fields_excluding_review_metadata": [
+        "analysis",
+        "edits",
+        "stem_override"
+      ],
+      "normalized_question_payload_changed": true,
+      "patch_file": "v020_quant_data_patch.json",
+      "reason": "采纳第43题两项建议：独立性表述更简明；解析说明门槛边界及组合数漏计的后果。"
+    },
+    {
+      "number": 44,
+      "source_id": "gd-mock-2026h2-s23-q43",
+      "before_sha256": "616d2a65a81ad83e75b7ae4e1587aa5869c90352907628162e08aaf1d53c5399",
+      "after_sha256": "c90afe266a2293bda90f5296de23de9382fadd2526fa442259c24c117dd118c0",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 45,
+      "source_id": "gd-mock-2026h2-s31-q45",
+      "before_sha256": "4026e6c5566f2702a94e5b6d6a0e40ebd4a310219d5ac982dc0899c05896f00f",
+      "after_sha256": "050856afefa7bf4a34041a5d7d7379def65631beb2e9f3d0a9c08833fb589942",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 46,
+      "source_id": "JS2020-A类-078",
+      "before_sha256": "543a70fb6eb4c7fc863af6d9108b9474ab21daee774cb94a97a2ab171aabdc18",
+      "after_sha256": "6a2e697f704eed23906addec2a8ce2a8b5d77c30078a8dac72766c5397775fef",
+      "changed_fields_excluding_review_metadata": [
+        "analysis",
+        "edits"
+      ],
+      "normalized_question_payload_changed": false,
+      "patch_file": "v020_reasoning_patch.json",
+      "reason": "采纳第46题建议；实际重看1310.png，避免原末句让读者误以为颜色可以忽略。"
+    },
+    {
+      "number": 47,
+      "source_id": "ZJ2022-A类-071",
+      "before_sha256": "3dbd10bcb88d4dfa32a4f5784c731e7a2544d8b50aa5def4d3a7720877daccc5",
+      "after_sha256": "6761f2b9d80fec5e34f45ae2d63bc9108a81714d20589edcd9c90f7a569fb9eb",
+      "changed_fields_excluding_review_metadata": [
+        "analysis",
+        "edits"
+      ],
+      "normalized_question_payload_changed": false,
+      "patch_file": "v020_reasoning_patch.json",
+      "reason": "采纳第47题建议；原图复看并复跑q47_rule_check.py，另核对D与第四幅的差集为第5列第4格。"
+    },
+    {
+      "number": 48,
+      "source_id": "JS2020-A类-089",
+      "before_sha256": "781908b5e9e301e6fd6e6a9c4e046cb91b2eb2a95da9a6c960f23ed25df38f65",
+      "after_sha256": "13d117c00fe8e7ae1e8f64caa5f857d9c1257c37f114aaaf96aa784dd601566b",
+      "changed_fields_excluding_review_metadata": [
+        "analysis",
+        "edits"
+      ],
+      "normalized_question_payload_changed": false,
+      "patch_file": "v020_reasoning_patch.json",
+      "reason": "第48题属于事实性方向表述修正；已重看938.png，逆时针90°后确为竖直连接。"
+    },
+    {
+      "number": 49,
+      "source_id": "JS2021-A类-081",
+      "before_sha256": "642e1b2e060cfc23528bc34fd322a9c7b7d84c2d5c8fc81ffb308d88a0042cba",
+      "after_sha256": "19345380286b651afabc48f7769bc00dfa20fe7a6a8a7a9f1962cf1e30f7704c",
+      "changed_fields_excluding_review_metadata": [
+        "analysis",
+        "edits"
+      ],
+      "normalized_question_payload_changed": false,
+      "patch_file": "v020_reasoning_patch.json",
+      "reason": "保留第49题的投影识别训练价值；实际重看212.png并核对12幅坐标，接受存在局部视图巧合和一处遮挡的限度，不将题源风格当作硬伤。"
+    },
+    {
+      "number": 50,
+      "source_id": "ZJ2021-A类-085",
+      "before_sha256": "5e38618892127541773e2e5393a204450da5c21c29a13bcbe0009449a652fa68",
+      "after_sha256": "81716f452a0bdbaa5c509cf5dc81c67cce6318e984267ad3b41f0776899a7a15",
+      "changed_fields_excluding_review_metadata": [
+        "analysis",
+        "edits"
+      ],
+      "normalized_question_payload_changed": false,
+      "patch_file": "v020_reasoning_patch.json",
+      "reason": "选择采纳第50题的可核查补充；不用“所有立柱均落地”概括，因为A最低层本来有缺格。遮挡坐标及C背后六格任取的复核范围另记内部决策。"
+    },
+    {
+      "number": 51,
+      "source_id": "ZJ2023-A类-102",
+      "before_sha256": "d1d025e898363ed33c41e8b26761475fee47055b9dd7488750b96d826dee0eb4",
+      "after_sha256": "8f9c19094853130b4fb39b6cb18a07e882772baae8b781ce1ce6e7a5fa4a0ee2",
+      "changed_fields_excluding_review_metadata": [
+        "edits",
+        "stem_override"
+      ],
+      "normalized_question_payload_changed": true,
+      "patch_file": "v020_reasoning_patch.json",
+      "reason": "采纳第51题建议，使真假总条件不再看似属于第（3）项，同时准确登记源题与编辑分段的区别。"
+    },
+    {
+      "number": 52,
+      "source_id": "ZJ2023-A类-104",
+      "before_sha256": "5f6bb539c0c2d3c2d3f54b16ea1079b9d3e79c3beaf2e1a320aae0e6f99642ec",
+      "after_sha256": "a4e2e7b929898b477232840c77080d46b963d3a7c604fa26a782e54c1fc485d1",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 53,
+      "source_id": "JS2025-A类-094",
+      "before_sha256": "f6e6ca78b59fee0acaf06f075fb724e6b2340e390ab2701b8d56ade56bf8aa04",
+      "after_sha256": "49316c6213769e593fe9f5a3da7ddf33d23b88e7c315515b4b2a431dc6e1c221",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 54,
+      "source_id": "JS2020-A类-096",
+      "before_sha256": "b309debbdb24ff0fe83c666d9c8f45d49316a7b4b02d7e661cd25850cd58980a",
+      "after_sha256": "177ba46550988934d200ee1ef4dd74d52638c59f5162e3d003759ba4de4a89b5",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 55,
+      "source_id": "ZJ2023-A类-103",
+      "before_sha256": "52d16b8139265359573b1172925fe939d208fabf64b49d1b33bf8408f1a2c4d4",
+      "after_sha256": "1b41916e781626e1aabefa8cf2e1734201016e6d5addeefb4542c1e5eb974ff8",
+      "changed_fields_excluding_review_metadata": [
+        "edits",
+        "stem_override"
+      ],
+      "normalized_question_payload_changed": true,
+      "patch_file": "v020_reasoning_patch.json",
+      "reason": "必须修改；题面明确要求画横线位置，连续空格在Markdown和网页中会折叠，不能充当真实填空线。"
+    },
+    {
+      "number": 56,
+      "source_id": "JS2024-A类-099",
+      "before_sha256": "85474b59dfc67d0e872bdb1b7e72e5e1067e865149368916b0777919e1b555eb",
+      "after_sha256": "fb3eeb53662822e62c8a7e1141a5f4109313325b6ea29ada02415546fe864d67",
+      "changed_fields_excluding_review_metadata": [
+        "analysis",
+        "edits"
+      ],
+      "normalized_question_payload_changed": false,
+      "patch_file": "v020_reasoning_patch.json",
+      "reason": "采纳第56题建议；按题干与四项重新比较后仍选A，不把所有语言相似都当作结构相同，也不因江苏题源形式而替换。"
+    },
+    {
+      "number": 57,
+      "source_id": "JS2021-A类-098",
+      "before_sha256": "8c9d6b55ef43b1ff9c29c54db206204cf454287f3aecd451cf1447fafd214621",
+      "after_sha256": "ae61629afad4edfc557e1cbfffd7e8153944e3b8ad9d9dabab14414c46527967",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 58,
+      "source_id": "JS2022-A类-095",
+      "before_sha256": "f190c6f186f172f45a66271444c37642be370182c0522429185cfd74fbbf6f71",
+      "after_sha256": "e1a82e2258fd2f06ca7cce1a5c0cd9851fb29e528c72454bf413b43036711170",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 59,
+      "source_id": "ZJ2023-A类-109",
+      "before_sha256": "3050aed01acc30055984b15a6cbd4b88c46e3299b753f1be39f123d79bfc5aeb",
+      "after_sha256": "e3f661d5b25ba7b74c4b8fab156897b712c49f168dc462b55fe5555c28694e31",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 60,
+      "source_id": "JS2021-A类-094",
+      "before_sha256": "feddd643198ccd8a9a3df486c304ceec41e0236e7ff76cee3ba34e9e574d903e",
+      "after_sha256": "566d5622647dcb48abe81ccc87a734215d77ae35d0fb07dbfc10e797c2a0f0e7",
+      "changed_fields_excluding_review_metadata": [
+        "analysis",
+        "edits",
+        "stem_override"
+      ],
+      "normalized_question_payload_changed": true,
+      "patch_file": "v020_reasoning_patch.json",
+      "reason": "必须修改真实分段与提取瑕疵；源题“现在看来”独立成行，旧clean_stem错误合并。附加核验有助于确认唯一真话对应会计师。"
+    },
+    {
+      "number": 61,
+      "source_id": "gd-mock-2026h2-s19-q64",
+      "before_sha256": "84ba32f7a9e3c34b658ee70a7397bf95d7ca64a445b0c9a4784dd9ba4b12e8a1",
+      "after_sha256": "647ab5ec21c45c542ac07831282f7f717f2eaef12c68ed6c413401821dc99d68",
+      "changed_fields_excluding_review_metadata": [
+        "edits",
+        "stem_override"
+      ],
+      "normalized_question_payload_changed": true,
+      "patch_file": "v020_reasoning_patch.json",
+      "reason": "选择采纳第61题可选建议；只区分论证材料和设问，不更改结构题的错误推理或选项。"
+    },
+    {
+      "number": 62,
+      "source_id": "ZJ2025-A类-105",
+      "before_sha256": "0aaf6aabcf550e8cc36c0af75bf01d4d974f5036b852c17cfb692de9c1bc8e47",
+      "after_sha256": "2fe18add1f5dd8256c318b00cc2f9a683a7cedc7485239758c62fe16d4ef06da",
+      "changed_fields_excluding_review_metadata": [
+        "edits",
+        "stem_override"
+      ],
+      "normalized_question_payload_changed": true,
+      "patch_file": "v020_reasoning_patch.json",
+      "reason": "采纳第62题可选排版建议；年代和研究事实均未改变。"
+    },
+    {
+      "number": 63,
+      "source_id": "JS2022-A类-097",
+      "before_sha256": "4f2ac4fbe0c4c9e3645dbc37dc59f77dbf44d8b3cac14f695223e17cd57ff0d6",
+      "after_sha256": "526b9c9958cecb4cb3128a512ed0d9b5973068088f327943c0e8ee1a9bacd5cd",
+      "changed_fields_excluding_review_metadata": [
+        "edits",
+        "stem_override"
+      ],
+      "normalized_question_payload_changed": true,
+      "patch_file": "v020_reasoning_patch.json",
+      "reason": "采纳第63题可选标点建议；“当且仅当”的双向条件、现解析与C答案不变。"
+    },
+    {
+      "number": 64,
+      "source_id": "gd-mock-2026h2-s26-q64",
+      "before_sha256": "736eaad3f647508a68bba89163573d6a13664029f50af5696fca7c864acacdef",
+      "after_sha256": "4166729859420e7f445718921b28aa45bd6de070d10fe19755c12af6cef3cc28",
+      "changed_fields_excluding_review_metadata": [
+        "analysis",
+        "edits",
+        "stem_override"
+      ],
+      "normalized_question_payload_changed": true,
+      "patch_file": "v020_reasoning_patch.json",
+      "reason": "第64题C项原解析事实判断过度，必须纠正；A的逆否等价链条有助于解释结构对应，所有选项文字与A答案不变。"
+    },
+    {
+      "number": 65,
+      "source_id": "ZJ2025-A类-107",
+      "before_sha256": "85ab96aaab41f4d3274858e3c5c9f36c4a4f4bcbd792b57505191b2bf6386897",
+      "after_sha256": "785a2675e709c2fcf00ec8991f0d3a9a6231a4e920c3176dd270a2a0124c0372",
+      "changed_fields_excluding_review_metadata": [
+        "edits",
+        "stem_override"
+      ],
+      "normalized_question_payload_changed": true,
+      "patch_file": "v020_reasoning_patch.json",
+      "reason": "必须修改；源题设问明确独立成行，句末右引号使旧清洗器的关键词回填规则漏配。"
+    },
+    {
+      "number": 66,
+      "source_id": "gd-mock-2026h2-s23-q68",
+      "before_sha256": "5a8f49ad8f8dfbc12b28276c7a93c60e692ca37b010acddcd0f8f4e5b24ba708",
+      "after_sha256": "ba5067b960a9509064c7c23863d8e9ebf17f5073fc3d438a8d852f1328107bdc",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 67,
+      "source_id": "gd-mock-2026h2-s21-q66",
+      "before_sha256": "8e7020eb83c7139d070a0d14113e5e907f6dbbffab97f660d3bcc598766d3ac4",
+      "after_sha256": "dcec007d0e10472cef9b1e4a997b26773b233fe43bde9a2793c302daeaef6b6e",
+      "changed_fields_excluding_review_metadata": [
+        "edits",
+        "stem_override"
+      ],
+      "normalized_question_payload_changed": true,
+      "patch_file": "v020_science_patch.json",
+      "reason": "采纳Claude对旧B初始切线非水平、旧A曲率不规范的建议，使示意轨迹与题干的水平抛出条件一致。"
+    },
+    {
+      "number": 68,
+      "source_id": "gd-mock-2026h2-s26-q68",
+      "before_sha256": "2754205642117e4343fc34431e47abd697e5610d4283933626acf661972ddb1d",
+      "after_sha256": "83845ca6c6d24927a377a082491cc136beccd730e4573dac6c0f61e059d1c01a",
+      "changed_fields_excluding_review_metadata": [
+        "edits",
+        "stem_override"
+      ],
+      "normalized_question_payload_changed": true,
+      "patch_file": "v020_science_patch.json",
+      "reason": "采纳Claude建议，恢复从图例识别粒子的作答步骤，并消除A项引用不存在的示意图的问题。"
+    },
+    {
+      "number": 69,
+      "source_id": "gd-mock-2026h2-s24-q69",
+      "before_sha256": "31ba35da5e3a53f6f868789ad663beb125d0f8318e5d686ac6ef2b9bbd4f1b92",
+      "after_sha256": "7633001f227490b556fe09af1e940821062a872667cac0f4c0c8242db7e50428",
+      "changed_fields_excluding_review_metadata": [
+        "edits",
+        "options",
+        "stem_override"
+      ],
+      "normalized_question_payload_changed": true,
+      "patch_file": "v020_science_patch.json",
+      "reason": "落实必须修改项中的来源透明度要求，并规范营养级术语。"
+    },
+    {
+      "number": 70,
+      "source_id": "gd-mock-2026h2-s26-q70",
+      "before_sha256": "4e011c4d091ba5cf8f8959af36ee76005cdff0b2a1992088128ff975dbaccfe0",
+      "after_sha256": "518af97c814803211f1395ca972f17f2319eb4a297b25a503d642c3281fb9740",
+      "changed_fields_excluding_review_metadata": [
+        "analysis",
+        "edits"
+      ],
+      "normalized_question_payload_changed": false,
+      "patch_file": "v020_science_patch.json",
+      "reason": "落实Claude必须修改项，避免把“右上方高”当作未经说明的前提。"
+    },
+    {
+      "number": 71,
+      "source_id": "gd-mock-2026h2-s19-q71",
+      "before_sha256": "e2cfeed044ba5fdb336d83997a18c7b84b6f4e7549eb172476bc39d81646c672",
+      "after_sha256": "6c30eee6d03368fa0e95c27086e6b2cc095691981548f66a8453f17480b2e7f0",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 72,
+      "source_id": "gd-mock-2026h2-s19-q72",
+      "before_sha256": "b304f3848c1e651addec7d58e6f23f19d5a22560dbf86a59321e8705f434145c",
+      "after_sha256": "3d122c5d14410ccb39c1669df666c4b3b71570c88d92133277b06c81dc69333d",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 73,
+      "source_id": "gd-mock-2026h2-s19-q73",
+      "before_sha256": "5e7664dc7eaa622291a51fda7c4030ae5b9808bd5367bf318e4c52f292c51b29",
+      "after_sha256": "5a0d8482c86771b09c7830533eb6be41038d977b64f7d56b96a341ffd430eafa",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 74,
+      "source_id": "gd-mock-2026h2-s19-q74",
+      "before_sha256": "7e193def07e98a7bcfe9d9466df980712643614ffebc53dadffaff1040ed4e49",
+      "after_sha256": "df297284aa2a543a0c9d1e12b1a2f531bea3f27519cfea48f194f24b22e554d5",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 75,
+      "source_id": "gd-mock-2026h2-s19-q75",
+      "before_sha256": "119c7f0804206d22d5269e42cf1001cc70417579d2e5221f4946e6bf456ab0b1",
+      "after_sha256": "db9994691a75da761a4d39dcb5a6058681725c677b15f99977a7e46abee8f158",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 76,
+      "source_id": "gd-mock-2026h2-s17-q81",
+      "before_sha256": "70e9a0f0c3fc24114538757cb57a375b4299039e72eec67be4f9a2995ff74ee2",
+      "after_sha256": "12bcdc76f142b7266113851c2b03a3c9c11f68d3adbb62b256e8d248f548a457",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 77,
+      "source_id": "gd-mock-2026h2-s17-q82",
+      "before_sha256": "b3c4848557675d031e7253612904acf7db3a173607ec3a5a1b3e21f11792f40e",
+      "after_sha256": "5d756edfdd18fab04257cfe2b86f94cf01b120265e174bbac59abf684c8d1f01",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 78,
+      "source_id": "gd-mock-2026h2-s17-q83",
+      "before_sha256": "ec86db2dde7c584736b09f2bb288607a723ba9afac32e5b8bea98242fd991876",
+      "after_sha256": "4b49d6b0689020e8679ebb528d167c4fc8f7c5b4eab68c29566943555d1d5cf5",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 79,
+      "source_id": "gd-mock-2026h2-s17-q84",
+      "before_sha256": "82665e2d6965029b29080b9405536c4a577c574873ac490d304c1c0d04f5f7d4",
+      "after_sha256": "fa69dea523b80cb98ef5b12a0bca4c1ab60bebdaecca17b076f0636c13b43cb9",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 80,
+      "source_id": "gd-mock-2026h2-s17-q85",
+      "before_sha256": "552c76f2b78d233bd99ef9a36793db698b329f2fdeade6698eb773918f0867b9",
+      "after_sha256": "3c611546ff79d2bd799770cacba57440eea87a21e44daa360ec3f7f6dcae8918",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 81,
+      "source_id": "gd-mock-2026h2-s22-q71",
+      "before_sha256": "8514b07942b91bcf641ca6a7dfc153f7957b3f00234fab69dfcfe05453c4f605",
+      "after_sha256": "7300561011edb859937ad4fa55075f59ae6b4828979a49eb9eea963dc87d3bc5",
+      "changed_fields_excluding_review_metadata": [
+        "edits",
+        "materials"
+      ],
+      "normalized_question_payload_changed": true,
+      "patch_file": "v020_quant_data_patch.json",
+      "reason": "采纳81—85题共用材料建议：删去存在内部矛盾且不参与设问的7月产量句，消除表头转写残留；五题材料同步。"
+    },
+    {
+      "number": 82,
+      "source_id": "gd-mock-2026h2-s22-q72",
+      "before_sha256": "9c07774bdf12d9404f33b32256e59d1e849a65c989909ed4dceeed8c5e51e21f",
+      "after_sha256": "099b1f879ee16b5f9c170f8ba91d5cbc8dd8c3f2a5324b8161f6e567608107ea",
+      "changed_fields_excluding_review_metadata": [
+        "edits",
+        "materials"
+      ],
+      "normalized_question_payload_changed": true,
+      "patch_file": "v020_quant_data_patch.json",
+      "reason": "采纳81—85题共用材料建议：删去存在内部矛盾且不参与设问的7月产量句，消除表头转写残留；五题材料同步。"
+    },
+    {
+      "number": 83,
+      "source_id": "gd-mock-2026h2-s22-q73",
+      "before_sha256": "28e3ae1912f968b0c2caa9b152d19e7c5e27453ed14d65052b7bc313543da2d4",
+      "after_sha256": "fb538d86c149c512ce3684261c980adcacc445a38984df7be244dc7457fc11ec",
+      "changed_fields_excluding_review_metadata": [
+        "edits",
+        "materials"
+      ],
+      "normalized_question_payload_changed": true,
+      "patch_file": "v020_quant_data_patch.json",
+      "reason": "采纳81—85题共用材料建议：删去存在内部矛盾且不参与设问的7月产量句，消除表头转写残留；五题材料同步。"
+    },
+    {
+      "number": 84,
+      "source_id": "gd-mock-2026h2-s22-q74",
+      "before_sha256": "91b81ad13b04831b4b26227ad5f5c4a6b33c588544712737e08b2d76a798fbb6",
+      "after_sha256": "9dd76bad777d36a324b8d59ed9ea925f9864c1b04ca45b87b5071352d824895d",
+      "changed_fields_excluding_review_metadata": [
+        "edits",
+        "materials"
+      ],
+      "normalized_question_payload_changed": true,
+      "patch_file": "v020_quant_data_patch.json",
+      "reason": "采纳81—85题共用材料建议：删去存在内部矛盾且不参与设问的7月产量句，消除表头转写残留；五题材料同步。"
+    },
+    {
+      "number": 85,
+      "source_id": "gd-mock-2026h2-s22-q75",
+      "before_sha256": "38682bc48a28e18e4de8a2a7c0a2ce3fe714bb869529625b13fc3f87729404c2",
+      "after_sha256": "c7445ea4ce8b7901b633a2525a4dbb7edf132ababc51a5bb6d08f52b6c99bb1f",
+      "changed_fields_excluding_review_metadata": [
+        "analysis",
+        "edits",
+        "materials"
+      ],
+      "normalized_question_payload_changed": true,
+      "patch_file": "v020_quant_data_patch.json",
+      "reason": "采纳81—85题共用材料建议：删去存在内部矛盾且不参与设问的7月产量句，消除表头转写残留；五题材料同步。同时补充C项误用累计增速的错因。"
+    },
+    {
+      "number": 86,
+      "source_id": "gd-mock-2026h2-s25-q76",
+      "before_sha256": "65050ad247507e413bfa0ce5d966e28341b5061b208a8f434dd2ef30b8cd1ff7",
+      "after_sha256": "1a7de40232de337faa6d791b625afb4ca7a55e8223396ffc95c0e74c76f2ae0e",
+      "changed_fields_excluding_review_metadata": [
+        "edits",
+        "source_notice"
+      ],
+      "normalized_question_payload_changed": false,
+      "patch_file": "v020_quant_data_patch.json",
+      "reason": "保留92872及答案D；明确题源核对边界，不把数据模式推测当成已确认勘误。"
+    },
+    {
+      "number": 87,
+      "source_id": "gd-mock-2026h2-s25-q77",
+      "before_sha256": "58a8eee304008fb87eb5e60e962b201301ae6414483aeab5ad90009874809f26",
+      "after_sha256": "3e040f797b2f21016ec462ff76dcf890b4932db45c180aed99d979638398d4b2",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 88,
+      "source_id": "gd-mock-2026h2-s25-q78",
+      "before_sha256": "5bd5868a3f9ef19bd1e27a61deca3c3bdff47f26bccf6dc9b765d82ee84fcebf",
+      "after_sha256": "0b45e52ae3eb4794c3e65b78bee35b4f765a82ef9b00d83156a538c0754a9d89",
+      "changed_fields_excluding_review_metadata": [
+        "analysis",
+        "edits"
+      ],
+      "normalized_question_payload_changed": false,
+      "patch_file": "v020_quant_data_patch.json",
+      "reason": "采纳第88题解析建议：已实际查看四张选项图，并计算生产表两年的构成，以“接近”表述A、C的错误数据对应关系。"
+    },
+    {
+      "number": 89,
+      "source_id": "gd-mock-2026h2-s25-q79",
+      "before_sha256": "958f3cafa58480a714039bb31e0524d7ebe98f174b08bf82a80bbadf25f51081",
+      "after_sha256": "1eb525d01be1869d106f813c12d33e61e9676af34de5fb2098f42c7058641a10",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    },
+    {
+      "number": 90,
+      "source_id": "gd-mock-2026h2-s25-q80",
+      "before_sha256": "4b59841b8e939b13624185dde78039cc5d909f9f73bf60259cd6d2cf669319a8",
+      "after_sha256": "fdceee29e6c3eb7a39b3fbe95ccedf00805526cebe2cd5e776e8ec4aeb4f06fa",
+      "changed_fields_excluding_review_metadata": [],
+      "normalized_question_payload_changed": false
+    }
+  ],
+  "status": "editor_changes_applied_not_claude_recheck_approval"
+}

@@ -1,0 +1,258 @@
+{
+  "paper_id": "M03",
+  "version": "0.2.0",
+  "rendering": "SVG → Inkscape PNG",
+  "question_67": {
+    "svg": "广东行测18套模拟/M03/assets/q67_projectile_v020.svg",
+    "png": "广东行测18套模拟/M03/assets/q67_projectile_v020.png",
+    "svg_sha256": "67ba4087e58891e623a577bfc44952421fd4f3b9a88c676ac3add9caf928c17d",
+    "png_sha256": "407663d601a2830702d5cf4a1e86be9be75bba3794ea13c4d64a5fad9c308fac",
+    "basis": "保留源库 SVG 的 O=(195,13)、A=(117,69)、B=(137,84) 及墙角=(137,69)，仅修正轨迹曲线并移开标签。",
+    "source_svg": "模考/2026下半年广东卷_16-33季_AI可读/assets/s21_p17_i04.svg",
+    "source_svg_sha256": "ce21b4d7ce0e616282224d6dbea2d5738bddf900bf8adbaf41bbf52e2ec47470",
+    "paths": {
+      "A": {
+        "origin": [
+          195,
+          13
+        ],
+        "control": [
+          156,
+          13
+        ],
+        "end": [
+          117,
+          69
+        ]
+      },
+      "B": {
+        "origin": [
+          195,
+          13
+        ],
+        "control": [
+          166,
+          13
+        ],
+        "end": [
+          137,
+          84
+        ]
+      }
+    },
+    "answer": "B",
+    "comparisons": {
+      "fall_A_lt_B": true,
+      "horizontal_A_gt_B": true
+    }
+  },
+  "question_68": {
+    "svg": "广东行测18套模拟/M03/assets/q68_particles_v020.svg",
+    "png": "广东行测18套模拟/M03/assets/q68_particles_v020.png",
+    "svg_sha256": "5e28dcdd4cef3ba67981f3a9ee42bf5266d98dda538ece7b31f58e8e235e5a0e",
+    "png_sha256": "7bf45f7c4dcb7bb9764ca8353b91c4940a3eeb6ed19ca1b69d325047aee341ae",
+    "basis": "gd-mock-2026h2-s26-q68 的 source_question.stem 粒子表及完整图例；原PDF/原粒子位图不可用。",
+    "source_asset_id": "s26_p19_i00",
+    "molecules": [
+      {
+        "id": 1,
+        "stage": "before",
+        "formula_for_audit_only": "CH4",
+        "atoms": [
+          {
+            "element": "C",
+            "cx": 150,
+            "cy": 135
+          },
+          {
+            "element": "H",
+            "cx": 150,
+            "cy": 101
+          },
+          {
+            "element": "H",
+            "cx": 184,
+            "cy": 135
+          },
+          {
+            "element": "H",
+            "cx": 150,
+            "cy": 169
+          },
+          {
+            "element": "H",
+            "cx": 116,
+            "cy": 135
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "stage": "before",
+        "formula_for_audit_only": "O2",
+        "atoms": [
+          {
+            "element": "O",
+            "cx": 333,
+            "cy": 135
+          },
+          {
+            "element": "O",
+            "cx": 377,
+            "cy": 135
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "stage": "before",
+        "formula_for_audit_only": "O2",
+        "atoms": [
+          {
+            "element": "O",
+            "cx": 128,
+            "cy": 265
+          },
+          {
+            "element": "O",
+            "cx": 172,
+            "cy": 265
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "stage": "before",
+        "formula_for_audit_only": "O2",
+        "atoms": [
+          {
+            "element": "O",
+            "cx": 333,
+            "cy": 265
+          },
+          {
+            "element": "O",
+            "cx": 377,
+            "cy": 265
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "stage": "after",
+        "formula_for_audit_only": "CO2",
+        "atoms": [
+          {
+            "element": "O",
+            "cx": 786,
+            "cy": 135
+          },
+          {
+            "element": "C",
+            "cx": 830,
+            "cy": 135
+          },
+          {
+            "element": "O",
+            "cx": 874,
+            "cy": 135
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "stage": "after",
+        "formula_for_audit_only": "H2O",
+        "atoms": [
+          {
+            "element": "O",
+            "cx": 1055,
+            "cy": 135
+          },
+          {
+            "element": "H",
+            "cx": 1031,
+            "cy": 159
+          },
+          {
+            "element": "H",
+            "cx": 1079,
+            "cy": 159
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "stage": "after",
+        "formula_for_audit_only": "H2O",
+        "atoms": [
+          {
+            "element": "O",
+            "cx": 830,
+            "cy": 265
+          },
+          {
+            "element": "H",
+            "cx": 806,
+            "cy": 289
+          },
+          {
+            "element": "H",
+            "cx": 854,
+            "cy": 289
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "stage": "after",
+        "formula_for_audit_only": "O2",
+        "atoms": [
+          {
+            "element": "O",
+            "cx": 1033,
+            "cy": 265
+          },
+          {
+            "element": "O",
+            "cx": 1077,
+            "cy": 265
+          }
+        ]
+      }
+    ],
+    "printed_formula_labels": false,
+    "original_image_restoration": false,
+    "checks": {
+      "source_rows_match": true,
+      "svg_molecules_each_stage": {
+        "before": 4,
+        "after": 4
+      },
+      "svg_atoms_each_stage": {
+        "before": {
+          "C": 1,
+          "H": 4,
+          "O": 6
+        },
+        "after": {
+          "O": 6,
+          "C": 1,
+          "H": 4
+        }
+      },
+      "actual_consumed_ratio_CH4_to_O2": "1:2",
+      "product_species": [
+        "CO2",
+        "H2O"
+      ],
+      "remaining_O2": 1,
+      "answer": "C"
+    }
+  },
+  "result": "PASS",
+  "limits": [
+    "Q67几何只表达水平距离、下落高度和接触表面；不以图量取具体速度。",
+    "Q68依据源库转写重建，无法证明不可用原PDF的粒子布局或转写本身完全无误。"
+  ]
+}

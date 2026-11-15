@@ -1,0 +1,974 @@
+[
+  {
+    "number": 1,
+    "updates": {
+      "analysis": "“国内大循环”针对全国。习近平相关讲话明确指出，构建新发展格局“不是各地都搞自我小循环”。各地区应在全国统一市场中确定自身分工和比较优势，打通商品、要素流动的堵点；有条件的地区可以先行探索有利于全国循环的路径，但不能把先建省域供需闭环作为普遍前提。因此题干错误。讲义第27、65页提供相关主题，反对地方自我小循环的直接依据为所列讲话。",
+      "provenance": {
+        "kind": "original",
+        "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+        "book_pages": [
+          27,
+          65
+        ],
+        "references": [
+          {
+            "title": "新发展阶段贯彻新发展理念必然要求构建新发展格局",
+            "url": "https://www.mem.gov.cn/jjz/ywgz/202209/t20220902_421700.shtml",
+            "locator": "第三部分“着力构建新发展格局”的第三点：全国统一大市场基础上的国内大循环、地方比较优势与反对地方自我小循环；本次已打开政府网站刊载的讲话正文核对。",
+            "checked_on": "2026-11-15"
+          }
+        ],
+        "book_scope": "第27页提供新发展格局主题，第65页提及全国统一大市场；反对地方自我小循环的直接依据为所列习近平讲话，非讲义原句。"
+      }
+    },
+    "added_edits": [
+      {
+        "type": "analysis_and_provenance",
+        "description": "补充讲话短引文、全国统一大市场的讲义主题页与各自证据边界；题干、答案不变。",
+        "revision": "0.2.0",
+        "before": {
+          "book_pages": [
+            27
+          ]
+        },
+        "after": {
+          "book_pages": [
+            27,
+            65
+          ]
+        }
+      }
+    ],
+    "reason": "采纳依据补强：用实际核到的讲话原句及第65页主题补足依据，保留可信政府转载链接。"
+  },
+  {
+    "number": 4,
+    "updates": {
+      "analysis": "社会存在决定社会意识的内容和发展根源，但二者的变化不必严格同步。旧观念具有惯性，也会通过习俗、制度和文化传承延续。承认这种相对独立性，不等于把观念看成脱离社会条件而独立产生的决定力量。讲义第43页只提供社会存在与社会意识的相关主题；本题关于相对独立性、变化不完全同步的判断依据教材通行表述，并非该页原文。",
+      "provenance": {
+        "kind": "original",
+        "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+        "book_pages": [
+          43
+        ],
+        "references": [],
+        "book_scope": "第43页列社会存在、社会意识及二者关系问题；未直接载明相对独立性或发展变化不完全同步。本题该论断按马克思主义哲学教材通行表述理解，不将其冒称为本讲义原文。"
+      }
+    },
+    "added_edits": [
+      {
+        "type": "provenance_clarification",
+        "description": "明确讲义主题支持与教材通行论断之间的界限，题面和答案不变。",
+        "revision": "0.2.0"
+      }
+    ],
+    "reason": "采纳讲义支持范围的明确说明，不虚构教材书名、版本或页码。"
+  },
+  {
+    "number": 5,
+    "updates": {
+      "options": {
+        "A": "自由探索类主要看短期转化收入，目标导向类主要看论文数量",
+        "B": "自由探索类主要看解决重大科学问题的效能，目标导向类主要看原创性和学术贡献",
+        "C": "自由探索类主要看原创性和学术贡献，目标导向类主要看解决重大科学问题的效能",
+        "D": "自由探索类主要看形成专利的数量，目标导向类主要看成果发表期刊的影响因子"
+      },
+      "analysis": "两类研究都属于基础研究，但评价重点不同。自由探索类主要评价原创性和学术贡献，可探索长周期评价与国际同行评价；目标导向类主要评价解决重大科学问题的效能。C按两类研究的目的作出对应，B将两组评价重点互换。A、D把短期转化收入、论文数量、专利数量或期刊影响因子当作主要尺度，不符合题目要求。这里比较的是主要评价标准，并非否认两类研究可能产生多种成果。"
+    },
+    "added_edits": [
+      {
+        "type": "distractor_revision",
+        "description": "B由工程指标/选题新奇程度改为自由探索类与目标导向类评价重点的互换项，解析同步改写，C仍唯一正确。",
+        "revision": "0.2.0",
+        "before": {
+          "B": "自由探索类主要看解决既定工程指标的进度，目标导向类主要看选题的新奇程度"
+        },
+        "after": {
+          "B": "自由探索类主要看解决重大科学问题的效能，目标导向类主要看原创性和学术贡献"
+        }
+      }
+    ],
+    "reason": "采纳将B改为两类评价重点互换的建议，使辨析直接落在政策知识点上。"
+  },
+  {
+    "number": 6,
+    "updates": {
+      "stem": "在认识中华文明的突出特性时，以下三项分别强调：①各民族文化融为一体，形成团结集中的格局；②对世界文明成果兼收并蓄；③面对新问题不断革新创造。它们依次突出体现的是（　）。",
+      "analysis": "①强调各民族文化融为一体、团结集中，对应统一性；②强调吸收、容纳不同文明成果，对应包容性；③强调应对新问题、不断创造，对应创新性，故选A。D虽与A的后两项相同，但连续性侧重文明传承不绝，不能替代①的多元一体与团结凝聚。和平性侧重和平、和睦、和谐，也不能与其他特性混用。",
+      "provenance": {
+        "kind": "original",
+        "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+        "book_pages": [
+          32
+        ],
+        "references": [
+          {
+            "title": "在文化传承发展座谈会上的讲话",
+            "url": "https://www.moe.gov.cn/jyb_xwfb/moe_176/202308/t20230831_1077496.html",
+            "locator": "中华文明五个突出特性，尤其统一性、包容性、创新性的对应阐述",
+            "checked_on": "2026-11-15"
+          }
+        ],
+        "book_scope": "第32页列中华文明五个突出特性；各民族文化融为一体、团结集中及兼收并蓄等具体含义依据所列讲话。本次由教育部页面的检索正文提取核对“多元一体、团结集中”，直接打开仍遇重定向。"
+      }
+    },
+    "added_edits": [
+      {
+        "type": "wording_and_history",
+        "description": "将①“共同维护国家团结”改为“形成团结集中的格局”，四组选项保持0.1.0现状。本条保存的是本次0.2.0修改前快照；初次内部调整前四项未存档，旧distractor_revision记录只能证明当时调整理由，不能据此重建原四项。",
+        "revision": "0.2.0",
+        "before": {
+          "stem": "在认识中华文明的突出特性时，以下三项分别强调：①各民族文化融为一体、共同维护国家团结；②对世界文明成果兼收并蓄；③面对新问题不断革新创造。它们依次突出体现的是（　）。",
+          "options": {
+            "A": "统一性、包容性、创新性",
+            "B": "包容性、统一性、连续性",
+            "C": "统一性、创新性、包容性",
+            "D": "连续性、包容性、创新性"
+          }
+        },
+        "after": {
+          "stem": "在认识中华文明的突出特性时，以下三项分别强调：①各民族文化融为一体，形成团结集中的格局；②对世界文明成果兼收并蓄；③面对新问题不断革新创造。它们依次突出体现的是（　）。",
+          "options": {
+            "A": "统一性、包容性、创新性",
+            "B": "包容性、统一性、连续性",
+            "C": "统一性、创新性、包容性",
+            "D": "连续性、包容性、创新性"
+          }
+        }
+      }
+    ],
+    "reason": "采纳规范措辞；记录本次修订前题干和四组选项。初次内部调整前的选项未存档，不能凭记忆补造。"
+  },
+  {
+    "number": 7,
+    "updates": {
+      "analysis": "桥隧改变了具体的交通条件，从而形成新的运输和协作关系；这种创造须服从地质、水文等客观条件。B同时保留了联系的客观性和实践的能动性。A、C把主观意愿置于客观基础之上；D则把客观性误解为任何具体联系都不能改变。讲义第40页列出联系的特点；依据固有联系建立新的具体联系的完整表述，属于本题采用的教材通行知识，不冒称为该页原文。",
+      "provenance": {
+        "kind": "original",
+        "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+        "book_pages": [
+          40
+        ],
+        "references": [],
+        "book_scope": "第40页列联系的普遍性、客观性、条件性、多样性；“依据固有联系改变条件、建立新的具体联系”的完整论断未直接载于该页，按马克思主义哲学教材通行表述作答。"
+      }
+    },
+    "added_edits": [
+      {
+        "type": "provenance_clarification",
+        "description": "补明讲义未直接载有完整关键论断，题干、选项、答案不变。",
+        "revision": "0.2.0"
+      }
+    ],
+    "reason": "采纳依据范围说明，区分讲义主题与实际用于判断的完整命题。"
+  },
+  {
+    "number": 10,
+    "updates": {
+      "analysis": "横琴粤澳深度合作区侧重服务澳门经济适度多元发展、推进琴澳一体化；前海深港现代服务业合作区侧重深港现代服务业合作；广州南沙突出面向世界的粤港澳全面合作；河套深港科技创新合作区突出深港科技创新协同与规则衔接。B、C对调了前海与南沙的主要定位，A、D正确。这些是国家方案明确的功能侧重，不意味着平台之间完全没有交叉业务。讲义第74—75页支持横琴主题，四个平台的完整比较另据所列发布会。",
+      "provenance": {
+        "kind": "original",
+        "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+        "book_pages": [
+          74,
+          75
+        ],
+        "references": [
+          {
+            "title": "《河套深港科技创新合作区深圳园区发展规划》新闻发布会",
+            "url": "https://www.ndrc.gov.cn/fzggw/wld/glf/zyhd/202309/t20230905_1360388.html",
+            "locator": "答记者问第一问，逐一说明横琴、前海、南沙、河套的功能侧重；已实际读取全文",
+            "checked_on": "2026-11-15"
+          }
+        ],
+        "book_scope": "第74—75页直接涉及横琴粤澳深度合作区与澳门经济适度多元、琴澳一体化；前海、南沙、河套的并列定位以国家发展改革委新闻发布会为依据。第77页没有这些平台的具体内容，已从本题主题页码中移除。"
+      }
+    },
+    "added_edits": [
+      {
+        "type": "analysis_and_provenance",
+        "description": "解析补全横琴、前海、河套正式名称，保留平台可有交叉业务的边界；讲义页码由74、75、77改为74、75。",
+        "revision": "0.2.0",
+        "before": {
+          "book_pages": [
+            74,
+            75,
+            77
+          ]
+        },
+        "after": {
+          "book_pages": [
+            74,
+            75
+          ]
+        }
+      }
+    ],
+    "reason": "采纳正式名称和页码精确化：写出三个合作区全称，南沙使用“广州南沙”，不杜撰新的合作区名称；删无直接平台内容的第77页。"
+  },
+  {
+    "number": 12,
+    "updates": {
+      "stem": "广州话、梅县话、潮州话、雷州话，依次主要归属于下列哪组汉语方言（　）？",
+      "analysis": "广州话是粤方言的代表，梅县话是客家方言的代表；广东闽方言包含潮汕片与雷州片，潮州话、雷州话均属闽方言，故B正确。A将潮州话错归粤方言；C将梅县话、潮州话的归属错置；D将雷州话错归粤方言。不能把“位于广东省”与“属于粤方言”等同，也不能按粤东、粤西的地理位置直接分类。本题只判断所列话种，不宣称各地居民只使用一种方言。",
+      "provenance": {
+        "kind": "original",
+        "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+        "book_pages": [
+          71,
+          72
+        ],
+        "references": [
+          {
+            "title": "人口语言（中共广东省委港澳工作办公室）",
+            "url": "https://www.gdhmo.gov.cn/gaikuang/content/post_70415.html",
+            "locator": "汉语方言段：广州话为粤方言代表，广东主要分布粤、客、闽方言，潮州话和雷州话同属闽方言；2026-11-15已打开正文，不使用动态人口数字。",
+            "checked_on": "2026-11-15"
+          },
+          {
+            "title": "客家方言篇（中国客家博物馆）",
+            "url": "https://www.kjbwg.cn/zwgk/jy/zskz/t20150504_321.htm",
+            "locator": "第7问“为何将梅县话作为客家方言的代表”，2026-11-15已打开正文核对。",
+            "checked_on": "2026-11-15"
+          }
+        ],
+        "book_scope": "第71—72页支持广东粤、客、闽三大方言及潮汕片、雷州片；“梅县话”的代表性另据中国客家博物馆。通用广东方言链接统一到本卷内部复核已用的post_70415，旧post_68514保留在修订记录，不无痕改历史报告。"
+      }
+    },
+    "added_edits": [
+      {
+        "type": "wording_and_provenance",
+        "description": "“梅州客家话”改为“梅县话”，四选项和答案B不变；广东方言通用引用统一为post_70415，新增中国客家博物馆第7问支撑梅县话。",
+        "revision": "0.2.0",
+        "before": {
+          "stem": "广州话、梅州客家话、潮州话、雷州话，依次主要归属于下列哪组汉语方言（　）？",
+          "reference_url": "https://www.gdhmo.gov.cn/gaikuang/content/post_68514.html"
+        },
+        "after": {
+          "stem": "广州话、梅县话、潮州话、雷州话，依次主要归属于下列哪组汉语方言（　）？",
+          "reference_url": "https://www.gdhmo.gov.cn/gaikuang/content/post_70415.html"
+        }
+      }
+    ],
+    "reason": "采纳“梅县话”避免题干直接泄露所属方言；统一当前依据链接并增补代表性的一手博物馆依据。"
+  },
+  {
+    "number": 13,
+    "updates": {
+      "options": {
+        "A": "遵义会议、洛川会议、瓦窑堡会议",
+        "B": "古田会议、洛川会议、瓦窑堡会议",
+        "C": "遵义会议、瓦窑堡会议、洛川会议",
+        "D": "古田会议、瓦窑堡会议、洛川会议"
+      },
+      "analysis": "1929年古田会议确立思想建党、政治建军原则。1935年瓦窑堡会议制定抗日民族统一战线的策略方针。1937年洛川会议在全国抗战开始后明确全面抗战路线。遵义会议重点解决当时具有决定意义的军事和组织问题，不能对应第一项。A、C第一项错配为遵义会议，B将第二、三项颠倒，只有D三项均正确。"
+    },
+    "added_edits": [
+      {
+        "type": "distractor_revision",
+        "description": "保留题干及D正确序列，调整A、C，使单独识别第一、第二或第三项均不足以锁定答案。",
+        "revision": "0.2.0",
+        "before": {
+          "options": {
+            "A": "遵义会议、古田会议、瓦窑堡会议",
+            "B": "古田会议、洛川会议、瓦窑堡会议",
+            "C": "瓦窑堡会议、遵义会议、古田会议",
+            "D": "古田会议、瓦窑堡会议、洛川会议"
+          }
+        },
+        "after": {
+          "options": {
+            "A": "遵义会议、洛川会议、瓦窑堡会议",
+            "B": "古田会议、洛川会议、瓦窑堡会议",
+            "C": "遵义会议、瓦窑堡会议、洛川会议",
+            "D": "古田会议、瓦窑堡会议、洛川会议"
+          }
+        }
+      }
+    ],
+    "reason": "采纳干扰组合优化，要求同时掌握会议任务的两处对应，不用单个名称识别代替组合辨析。"
+  },
+  {
+    "number": 14,
+    "updates": {
+      "analysis": "C919是单通道干线客机，不是双通道宽体机，故选C。“大型干线客机”不意味着采用双通道宽体布局。华龙一号属于自主三代压水堆核电技术，奋斗者号属于全海深载人潜水器，A、B正确。讲义提及的“雪龙”号由乌克兰建造，我国购入后改装；“雪龙2”号则是我国首艘自主建造的极地科考破冰船，不能混为同一艘船，D正确。讲义第107页未完整列出C919的单通道属性与雪龙2号的上述性质，具体依据另见所列官方资料。",
+      "provenance": {
+        "kind": "original",
+        "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+        "book_pages": [
+          107
+        ],
+        "references": [
+          {
+            "title": "我国自主三代核电技术华龙一号",
+            "url": "https://www.nea.gov.cn/2024-08/23/c_1212390764.htm",
+            "locator": "三代压水堆核电技术；不使用在运在建机组动态数量",
+            "checked_on": "2026-11-15"
+          },
+          {
+            "title": "奋斗者号载人潜水器（中国科学院）",
+            "url": "https://lssf.cas.cn/sszs/gykj/zrqsqyhszymc/sbzs/202504/t20250410_5062556.html",
+            "locator": "装备性质为全海深载人潜水器；不使用累计下潜次数",
+            "checked_on": "2026-11-15"
+          },
+          {
+            "title": "C919飞机机场规划手册（中国商飞）",
+            "url": "https://www.comac.cc/fujian/c919acap_cn.pdf",
+            "locator": "飞机概况：中短航程干线飞机、单通道客舱；检索提取已读取，未把PDF全页目检写为完成",
+            "checked_on": "2026-11-15"
+          },
+          {
+            "title": "我国自主建造的雪龙2号极地科学考察破冰船交付使用",
+            "url": "https://www.miit.gov.cn/jgsj/zbes/cbgy/art/2020/art_8580100d54eb4a61b105df8b455e4d75.html",
+            "locator": "2019年交付及我国首艘自主建造的极地科学考察破冰船属性；本次已打开工业和信息化部正文。自主建造不等于完全自主设计。",
+            "checked_on": "2026-11-15"
+          },
+          {
+            "title": "南极考察船（武汉大学中国南极测绘研究中心）",
+            "url": "https://pole.whu.edu.cn/cn/gb_article.php?modid=03005",
+            "locator": "“雪龙”号考察船段：由乌克兰赫尔松船厂建造，中国购进后改装；本次读取官方科研机构页面的检索正文提取，直接打开返回403，不记作网页全文读取。",
+            "checked_on": "2026-11-15"
+          }
+        ],
+        "book_scope": "第107页有华龙一号、奋斗者号和C919大型干线客机等主题，提到的是“雪龙号”而非“雪龙2”号；压水堆、C919单通道及雪龙2自主建造等具体属性据外部官方资料核对。"
+      }
+    },
+    "added_edits": [
+      {
+        "type": "analysis_and_provenance",
+        "description": "补清大型干线与单/双通道的不同维度，以及雪龙号、雪龙2号的建造来源区别；题面和答案C不变。",
+        "revision": "0.2.0"
+      }
+    ],
+    "reason": "采纳有用的设备区分与依据边界；保留已可靠核对的原链接，仅为新增的雪龙号建造信息补入官方科研机构依据。"
+  },
+  {
+    "number": 16,
+    "updates": {
+      "analysis": "第一空的“兼备、兼容、兼有、兼顾”都指向同时兼取两个方面，单凭这一空不足以稳健定项。第二空是在说明互镜对文化自觉的意义，“意味着”衔接最自然；“包含、象征、表达”没有准确呈现这里的关系。第三空需要与“狂妄”并列并修饰“自尊”，“武断”所表达的不顾事实、主观自信的态度最贴切；“臆断”侧重凭猜测作出判断，用作这里的定语不及“武断”自然。“决断”也没有题干所否定的自大意味。结合后两空，A最恰当。",
+      "verification": {
+        "status": "editor_verified_pending_independent_review",
+        "independent_answer": "A",
+        "source_answer_available": true,
+        "source_answer_agreement": true,
+        "method": "先读题干、选项形成判断，再比对题库参考答案，并逐项检查选项边界；这是编者自核，不冒称隔离盲审或Claude审核。",
+        "checked_on": "2026-11-15",
+        "completeness": "题干与四选项完整，无共用长文章、图像或缺题标记。",
+        "prior_output_check": {
+          "method": "源ID排除M01、M02现用及撤题；题干去空白标点后的前35字与中段35字检索广东2022—2026及旧24天集训、习题本的可读文本。",
+          "previous_project_source_id_match": false,
+          "guangdong_reference_text_match": false,
+          "old_output_files_checked": 156,
+          "old_output_matches": [],
+          "limit": "只说明本次可读语料检索未命中，不证明用户从未做过，也不等同对全部图片或扫描PDF作了去重。"
+        },
+        "source_check": "初编已核对江浙题库题面、来源定位及配套参考答案；后续Claude对0.1.0独立外审时从来源仓库取得对应PDF，git blob SHA与本题source_locators一致，并逐字比较题干与四选项。排除空白与排版分行后，0.1.0题干（含标点）与四选项核对一致。本次GPT依据留存核对记录更新状态，未冒称自己重新下载并逐页目检。",
+        "internal_cross_review": {
+          "status": "completed",
+          "report": "核验记录/verbal_independent_review.md",
+          "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
+          "final_answer": "A"
+        },
+        "source_pdf_review": {
+          "reviewer": "Claude",
+          "reviewed_version": "0.1.0",
+          "report_commit": "ec1e3e6",
+          "pdf_file": "2022年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+          "pdf_git_blob_sha": "e5f7736531d4616c23a3d51856695fb309bf27c8",
+          "blob_match": true,
+          "pdf_pages": [
+            6
+          ],
+          "comparison": "排除空白与排版分行后，0.1.0题干（含标点）与四选项核对一致。",
+          "subsequent_change": null,
+          "evidence": [
+            "核验记录/claude_review/verbal/pdf_sources_verified.json",
+            "核验记录/claude_review/verbal/jz_pdf_compare.json",
+            "核验记录/claude_review/verbal/review_comparison.json"
+          ]
+        }
+      },
+      "source_notice": "题面取自2022年浙江A类网友回忆版，原PDF页脚标注为粉笔用户生成；本卷保留源ID、源对象、PDF文件与git blob定位。源参考答案来自整理库配套解析，不冒称官方公布答案。Claude已对0.1.0对应源PDF作逐字核对；该核对证明转写与所列文件的关系，不改变回忆版身份。"
+    },
+    "added_edits": [
+      {
+        "type": "analysis_refinement",
+        "description": "按后两空共同约束重写解析，保留A；第一空不再被描述成单独定项依据。",
+        "revision": "0.2.0"
+      },
+      {
+        "type": "source_verification_update",
+        "description": "将初编阶段“未逐字复核江浙原PDF”的当前状态更新为Claude已核0.1.0；记录核对者、版本、物理页码、git blob与已知差异，保留初编过程及原始源对象。",
+        "revision": "0.2.0"
+      }
+    ],
+    "reason": "采纳第一空不宜强排的说明，补搭配差异；不把“臆断”词性绝对化。；据Claude留存的PDF、blob与逐字比较记录更新来源核对状态，并补浙江网友回忆版身份。"
+  },
+  {
+    "number": 17,
+    "updates": {
+      "verification": {
+        "status": "editor_verified_pending_independent_review",
+        "independent_answer": "D",
+        "source_answer_available": true,
+        "source_answer_agreement": true,
+        "method": "先读题干、选项形成判断，再比对题库参考答案，并逐项检查选项边界；这是编者自核，不冒称隔离盲审或Claude审核。",
+        "checked_on": "2026-11-15",
+        "completeness": "题干与四选项完整，无共用长文章、图像或缺题标记。",
+        "prior_output_check": {
+          "method": "源ID排除M01、M02现用及撤题；题干去空白标点后的前35字与中段35字检索广东2022—2026及旧24天集训、习题本的可读文本。",
+          "previous_project_source_id_match": false,
+          "guangdong_reference_text_match": false,
+          "old_output_files_checked": 156,
+          "old_output_matches": [],
+          "limit": "只说明本次可读语料检索未命中，不证明用户从未做过，也不等同对全部图片或扫描PDF作了去重。"
+        },
+        "source_check": "初编已核对江浙题库题面、来源定位及配套参考答案；后续Claude对0.1.0独立外审时从来源仓库取得对应PDF，git blob SHA与本题source_locators一致，并逐字比较题干与四选项。仅第17题“颗→株”“嵩→蒿”为已记录的有意订正；原PDF第11页本就写作“一颗绿绒嵩”。本次GPT依据留存核对记录更新状态，未冒称自己重新下载并逐页目检。",
+        "internal_cross_review": {
+          "status": "completed",
+          "report": "核验记录/verbal_independent_review.md",
+          "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
+          "final_answer": "D"
+        },
+        "source_pdf_review": {
+          "reviewer": "Claude",
+          "reviewed_version": "0.1.0",
+          "report_commit": "ec1e3e6",
+          "pdf_file": "2023年江苏公务员考试《行测》真题（A类）.pdf",
+          "pdf_git_blob_sha": "07c8f03595cce0f2acb456b5c5573f24715f4516",
+          "blob_match": true,
+          "pdf_pages": [
+            11
+          ],
+          "comparison": "仅第17题“颗→株”“嵩→蒿”为已记录的有意订正；原PDF第11页本就写作“一颗绿绒嵩”。",
+          "subsequent_change": null,
+          "evidence": [
+            "核验记录/claude_review/verbal/pdf_sources_verified.json",
+            "核验记录/claude_review/verbal/jz_pdf_compare.json",
+            "核验记录/claude_review/verbal/review_comparison.json"
+          ]
+        }
+      },
+      "edits": [
+        {
+          "type": "layout_only",
+          "description": "合并PDF行末硬换行，去掉中文与数字间的排版空格及填空线两侧空格；单独保留设问段，不改选项次序。"
+        },
+        {
+          "type": "copy_edit",
+          "description": "初编将源库“一颗绿绒嵩”订正为“一株绿绒蒿”，修正植物名与量词，不涉及三处填空和选项；初编时未取得原PDF。后续Claude对0.1.0外审核得对应原PDF第11页也写作“一颗绿绒嵩”，说明错字来自源文件本身。现保留规范的“一株绿绒蒿”，原源对象不改，订正不冒称源卷原字。"
+        }
+      ]
+    },
+    "added_edits": [
+      {
+        "type": "source_verification_update",
+        "description": "将初编阶段“未逐字复核江浙原PDF”的当前状态更新为Claude已核0.1.0；记录核对者、版本、物理页码、git blob与已知差异，保留初编过程及原始源对象。",
+        "revision": "0.2.0"
+      },
+      {
+        "type": "edit_record_update",
+        "description": "更新现行订正说明的时间范围；旧说明原文保存在before中，避免用后来的核对反写初编历史。",
+        "revision": "0.2.0",
+        "before": {
+          "copy_edit_description": "将源库“一颗绿绒嵩”订正为“一株绿绒蒿”，修正植物名与量词；不涉及三处填空和选项。原源对象完整保留，本轮未取得江浙原PDF逐字核对，不把订正冒称源卷原字。"
+        },
+        "after": {
+          "copy_edit_description": "初编将源库“一颗绿绒嵩”订正为“一株绿绒蒿”，修正植物名与量词，不涉及三处填空和选项；初编时未取得原PDF。后续Claude对0.1.0外审核得对应原PDF第11页也写作“一颗绿绒嵩”，说明错字来自源文件本身。现保留规范的“一株绿绒蒿”，原源对象不改，订正不冒称源卷原字。"
+        }
+      }
+    ],
+    "reason": "据Claude留存的PDF、blob与逐字比较记录更新来源核对状态。；保留规范的“一株”；只把订正记录中的初编状态与后续Claude核对分阶段写清。"
+  },
+  {
+    "number": 19,
+    "updates": {
+      "analysis": "第三空四词都可表达进入他人思维、暂时脱离现实的状态，不能因为“沉浸在……里”顺口就单独选C，也不能把“沉醉”说成唯一能与拽回现实相呼应的词。定项主要靠前两空：第一空承接“一场对抗”，A“唇枪舌剑”体现双方激烈争辩；B“雄辩高谈”重在能言善辩，不突出双方对抗，C“舌战群儒”额外引入一对多的场面。D“剑拔弩张”虽有对抗意味，但第二空“巧舌如簧”带有狡辩意味，不合读者被精彩论述折服的语气。A“字字珠玑”能形容论述精辟优美，三空合看选A。",
+      "verification": {
+        "status": "editor_verified_pending_independent_review",
+        "independent_answer": "A",
+        "source_answer_available": true,
+        "source_answer_agreement": true,
+        "method": "先读题干、选项形成判断，再比对题库参考答案，并逐项检查选项边界；这是编者自核，不冒称隔离盲审或Claude审核。",
+        "checked_on": "2026-11-15",
+        "completeness": "题干与四选项完整，无共用长文章、图像或缺题标记。",
+        "prior_output_check": {
+          "method": "源ID排除M01、M02现用及撤题；题干去空白标点后的前35字与中段35字检索广东2022—2026及旧24天集训、习题本的可读文本。",
+          "previous_project_source_id_match": false,
+          "guangdong_reference_text_match": false,
+          "old_output_files_checked": 156,
+          "old_output_matches": [],
+          "limit": "只说明本次可读语料检索未命中，不证明用户从未做过，也不等同对全部图片或扫描PDF作了去重。"
+        },
+        "source_check": "初编已核对江浙题库题面、来源定位及配套参考答案；后续Claude对0.1.0独立外审时从来源仓库取得对应PDF，git blob SHA与本题source_locators一致，并逐字比较题干与四选项。排除空白与排版分行后，0.1.0题干（含标点）与四选项核对一致。本次GPT依据留存核对记录更新状态，未冒称自己重新下载并逐页目检。",
+        "internal_cross_review": {
+          "status": "completed",
+          "report": "核验记录/verbal_independent_review.md",
+          "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
+          "final_answer": "A"
+        },
+        "source_pdf_review": {
+          "reviewer": "Claude",
+          "reviewed_version": "0.1.0",
+          "report_commit": "ec1e3e6",
+          "pdf_file": "2023年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+          "pdf_git_blob_sha": "5bcc6163c999c3910d10f36f6d8bea8a57df1417",
+          "blob_match": true,
+          "pdf_pages": [
+            7
+          ],
+          "comparison": "排除空白与排版分行后，0.1.0题干（含标点）与四选项核对一致。",
+          "subsequent_change": null,
+          "evidence": [
+            "核验记录/claude_review/verbal/pdf_sources_verified.json",
+            "核验记录/claude_review/verbal/jz_pdf_compare.json",
+            "核验记录/claude_review/verbal/review_comparison.json"
+          ]
+        }
+      },
+      "source_notice": "题面取自2023年浙江A类网友回忆版，原PDF页脚标注为粉笔用户生成；本卷保留源ID、源对象、PDF文件与git blob定位。源参考答案来自整理库配套解析，不冒称官方公布答案。Claude已对0.1.0对应源PDF作逐字核对；该核对证明转写与所列文件的关系，不改变回忆版身份。"
+    },
+    "added_edits": [
+      {
+        "type": "analysis_refinement",
+        "description": "删去容易暗示“沉醉”独优的说明，强调第一、二空决定组合。",
+        "revision": "0.2.0"
+      },
+      {
+        "type": "source_verification_update",
+        "description": "将初编阶段“未逐字复核江浙原PDF”的当前状态更新为Claude已核0.1.0；记录核对者、版本、物理页码、git blob与已知差异，保留初编过程及原始源对象。",
+        "revision": "0.2.0"
+      }
+    ],
+    "reason": "采纳第三空不能独立定项的建议，呈现真实的前两空排除路径。；据Claude留存的PDF、blob与逐字比较记录更新来源核对状态，并补浙江网友回忆版身份。"
+  },
+  {
+    "number": 21,
+    "updates": {
+      "analysis": "文段先说明法学理论是对生活的抽象，不能以抽象命题规训现实；尾句再要求理论法学学者不断考察经验，以此理解生动的法律世界。D“重视理论与真实世界的对接”概括了尾句这一要求。“意识到理论话语的局限”是提出该要求的前提，论述最后落在如何理解真实法律世界上。A只概括前面的局限性，未落到最后的要求；B转为促进理论发展完善，不是文段直接强调的理解现实；C扩大到所有法律工作，又提出必须通晓某类经验，均不如D贴近。",
+      "verification": {
+        "status": "editor_verified_pending_independent_review",
+        "independent_answer": "D",
+        "source_answer_available": true,
+        "source_answer_agreement": true,
+        "method": "先读题干、选项形成判断，再比对题库参考答案，并逐项检查选项边界；这是编者自核，不冒称隔离盲审或Claude审核。",
+        "checked_on": "2026-11-15",
+        "completeness": "题干与四选项完整，无共用长文章、图像或缺题标记。",
+        "prior_output_check": {
+          "method": "源ID排除M01、M02现用及撤题；题干去空白标点后的前35字与中段35字检索广东2022—2026及旧24天集训、习题本的可读文本。",
+          "previous_project_source_id_match": false,
+          "guangdong_reference_text_match": false,
+          "old_output_files_checked": 156,
+          "old_output_matches": [],
+          "limit": "只说明本次可读语料检索未命中，不证明用户从未做过，也不等同对全部图片或扫描PDF作了去重。"
+        },
+        "source_check": "初编已核对江浙题库题面、来源定位及配套参考答案；后续Claude对0.1.0独立外审时从来源仓库取得对应PDF，git blob SHA与本题source_locators一致，并逐字比较题干与四选项。排除空白与排版分行后，0.1.0题干（含标点）与四选项核对一致。本次GPT依据留存核对记录更新状态，未冒称自己重新下载并逐页目检。",
+        "internal_cross_review": {
+          "status": "completed",
+          "report": "核验记录/verbal_independent_review.md",
+          "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
+          "final_answer": "D"
+        },
+        "source_pdf_review": {
+          "reviewer": "Claude",
+          "reviewed_version": "0.1.0",
+          "report_commit": "ec1e3e6",
+          "pdf_file": "2020年江苏公务员考试《行测》真题（A类）.pdf",
+          "pdf_git_blob_sha": "00f42a7f169be020b83a9e1149f5f5a35cf4f059",
+          "blob_match": true,
+          "pdf_pages": [
+            4
+          ],
+          "comparison": "排除空白与排版分行后，0.1.0题干（含标点）与四选项核对一致。",
+          "subsequent_change": null,
+          "evidence": [
+            "核验记录/claude_review/verbal/pdf_sources_verified.json",
+            "核验记录/claude_review/verbal/jz_pdf_compare.json",
+            "核验记录/claude_review/verbal/review_comparison.json"
+          ]
+        }
+      }
+    },
+    "added_edits": [
+      {
+        "type": "analysis_refinement",
+        "description": "明确D概括对接要求，局限性是论述前提，不替D扩写未说内容。",
+        "revision": "0.2.0"
+      },
+      {
+        "type": "source_verification_update",
+        "description": "将初编阶段“未逐字复核江浙原PDF”的当前状态更新为Claude已核0.1.0；记录核对者、版本、物理页码、git blob与已知差异，保留初编过程及原始源对象。",
+        "revision": "0.2.0"
+      }
+    ],
+    "reason": "采纳对D略有拔高的批评，按选项实际文字说明尾句落点与前提的关系。；据Claude留存的PDF、blob与逐字比较记录更新来源核对状态。"
+  },
+  {
+    "number": 22,
+    "updates": {
+      "verification": {
+        "status": "editor_verified_pending_independent_review",
+        "independent_answer": "C",
+        "source_answer_available": true,
+        "source_answer_agreement": true,
+        "method": "先读题干、选项形成判断，再比对题库参考答案，并逐项检查选项边界；这是编者自核，不冒称隔离盲审或Claude审核。",
+        "checked_on": "2026-11-15",
+        "completeness": "题干与四选项完整，无共用长文章、图像或缺题标记。",
+        "prior_output_check": {
+          "method": "源ID排除M01、M02现用及撤题；题干去空白标点后的前35字与中段35字检索广东2022—2026及旧24天集训、习题本的可读文本。",
+          "previous_project_source_id_match": false,
+          "guangdong_reference_text_match": false,
+          "old_output_files_checked": 156,
+          "old_output_matches": [],
+          "limit": "只说明本次可读语料检索未命中，不证明用户从未做过，也不等同对全部图片或扫描PDF作了去重。"
+        },
+        "source_check": "初编已核对江浙题库题面、来源定位及配套参考答案；后续Claude对0.1.0独立外审时从来源仓库取得对应PDF，git blob SHA与本题source_locators一致，并逐字比较题干与四选项。排除空白与排版分行后，0.1.0题干（含标点）与四选项核对一致。本次GPT依据留存核对记录更新状态，未冒称自己重新下载并逐页目检。",
+        "internal_cross_review": {
+          "status": "completed",
+          "report": "核验记录/verbal_independent_review.md",
+          "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
+          "final_answer": "C"
+        },
+        "source_pdf_review": {
+          "reviewer": "Claude",
+          "reviewed_version": "0.1.0",
+          "report_commit": "ec1e3e6",
+          "pdf_file": "2022年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+          "pdf_git_blob_sha": "e5f7736531d4616c23a3d51856695fb309bf27c8",
+          "blob_match": true,
+          "pdf_pages": [
+            8
+          ],
+          "comparison": "排除空白与排版分行后，0.1.0题干（含标点）与四选项核对一致。",
+          "subsequent_change": null,
+          "evidence": [
+            "核验记录/claude_review/verbal/pdf_sources_verified.json",
+            "核验记录/claude_review/verbal/jz_pdf_compare.json",
+            "核验记录/claude_review/verbal/review_comparison.json"
+          ]
+        }
+      },
+      "source_notice": "题面取自2022年浙江A类网友回忆版，原PDF页脚标注为粉笔用户生成；本卷保留源ID、源对象、PDF文件与git blob定位。源参考答案来自整理库配套解析，不冒称官方公布答案。Claude已对0.1.0对应源PDF作逐字核对；该核对证明转写与所列文件的关系，不改变回忆版身份。"
+    },
+    "added_edits": [
+      {
+        "type": "source_verification_update",
+        "description": "将初编阶段“未逐字复核江浙原PDF”的当前状态更新为Claude已核0.1.0；记录核对者、版本、物理页码、git blob与已知差异，保留初编过程及原始源对象。",
+        "revision": "0.2.0"
+      }
+    ],
+    "reason": "据Claude留存的PDF、blob与逐字比较记录更新来源核对状态，并补浙江网友回忆版身份。"
+  },
+  {
+    "number": 23,
+    "updates": {
+      "verification": {
+        "status": "editor_verified_pending_independent_review",
+        "independent_answer": "D",
+        "source_answer_available": true,
+        "source_answer_agreement": true,
+        "method": "先读题干、选项形成判断，再比对题库参考答案，并逐项检查选项边界；这是编者自核，不冒称隔离盲审或Claude审核。",
+        "checked_on": "2026-11-15",
+        "completeness": "题干与四选项完整，无共用长文章、图像或缺题标记。",
+        "prior_output_check": {
+          "method": "源ID排除M01、M02现用及撤题；题干去空白标点后的前35字与中段35字检索广东2022—2026及旧24天集训、习题本的可读文本。",
+          "previous_project_source_id_match": false,
+          "guangdong_reference_text_match": false,
+          "old_output_files_checked": 156,
+          "old_output_matches": [],
+          "limit": "只说明本次可读语料检索未命中，不证明用户从未做过，也不等同对全部图片或扫描PDF作了去重。"
+        },
+        "source_check": "初编已核对江浙题库题面、来源定位及配套参考答案；后续Claude对0.1.0独立外审时从来源仓库取得对应PDF，git blob SHA与本题source_locators一致，并逐字比较题干与四选项。第23题跨页处的页脚水印未进入题干，属于正确清理，题目文字未因此改变。本次GPT依据留存核对记录更新状态，未冒称自己重新下载并逐页目检。",
+        "internal_cross_review": {
+          "status": "completed",
+          "report": "核验记录/verbal_independent_review.md",
+          "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
+          "final_answer": "D"
+        },
+        "source_pdf_review": {
+          "reviewer": "Claude",
+          "reviewed_version": "0.1.0",
+          "report_commit": "ec1e3e6",
+          "pdf_file": "2021年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+          "pdf_git_blob_sha": "bf44d1314deecbe22e6b2bf45ccec0c5bc9de703",
+          "blob_match": true,
+          "pdf_pages": [
+            6,
+            7
+          ],
+          "comparison": "第23题跨页处的页脚水印未进入题干，属于正确清理，题目文字未因此改变。",
+          "subsequent_change": null,
+          "evidence": [
+            "核验记录/claude_review/verbal/pdf_sources_verified.json",
+            "核验记录/claude_review/verbal/jz_pdf_compare.json",
+            "核验记录/claude_review/verbal/review_comparison.json"
+          ]
+        }
+      },
+      "source_notice": "题面取自2021年浙江A类网友回忆版，原PDF页脚标注为粉笔用户生成；本卷保留源ID、源对象、PDF文件与git blob定位。源参考答案来自整理库配套解析，不冒称官方公布答案。Claude已对0.1.0对应源PDF作逐字核对；该核对证明转写与所列文件的关系，不改变回忆版身份。"
+    },
+    "added_edits": [
+      {
+        "type": "source_verification_update",
+        "description": "将初编阶段“未逐字复核江浙原PDF”的当前状态更新为Claude已核0.1.0；记录核对者、版本、物理页码、git blob与已知差异，保留初编过程及原始源对象。",
+        "revision": "0.2.0"
+      }
+    ],
+    "reason": "据Claude留存的PDF、blob与逐字比较记录更新来源核对状态，并补浙江网友回忆版身份。"
+  },
+  {
+    "number": 24,
+    "updates": {
+      "verification": {
+        "status": "editor_verified_pending_independent_review",
+        "independent_answer": "D",
+        "source_answer_available": true,
+        "source_answer_agreement": true,
+        "method": "先读题干、选项形成判断，再比对题库参考答案，并逐项检查选项边界；这是编者自核，不冒称隔离盲审或Claude审核。",
+        "checked_on": "2026-11-15",
+        "completeness": "题干与四选项完整，无共用长文章、图像或缺题标记。",
+        "prior_output_check": {
+          "method": "源ID排除M01、M02现用及撤题；题干去空白标点后的前35字与中段35字检索广东2022—2026及旧24天集训、习题本的可读文本。",
+          "previous_project_source_id_match": false,
+          "guangdong_reference_text_match": false,
+          "old_output_files_checked": 156,
+          "old_output_matches": [],
+          "limit": "只说明本次可读语料检索未命中，不证明用户从未做过，也不等同对全部图片或扫描PDF作了去重。"
+        },
+        "source_check": "初编已核对江浙题库题面、来源定位及配套参考答案；后续Claude对0.1.0独立外审时从来源仓库取得对应PDF，git blob SHA与本题source_locators一致，并逐字比较题干与四选项。排除空白与排版分行后，0.1.0题干（含标点）与四选项核对一致。本次GPT依据留存核对记录更新状态，未冒称自己重新下载并逐页目检。",
+        "internal_cross_review": {
+          "status": "completed",
+          "report": "核验记录/verbal_independent_review.md",
+          "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
+          "final_answer": "D"
+        },
+        "source_pdf_review": {
+          "reviewer": "Claude",
+          "reviewed_version": "0.1.0",
+          "report_commit": "ec1e3e6",
+          "pdf_file": "2022年江苏公务员考试《行测》真题（A类）....pdf",
+          "pdf_git_blob_sha": "0c2016b9c742eda719a376a8a63c41daa6d3ec3b",
+          "blob_match": true,
+          "pdf_pages": [
+            5
+          ],
+          "comparison": "排除空白与排版分行后，0.1.0题干（含标点）与四选项核对一致。",
+          "subsequent_change": null,
+          "evidence": [
+            "核验记录/claude_review/verbal/pdf_sources_verified.json",
+            "核验记录/claude_review/verbal/jz_pdf_compare.json",
+            "核验记录/claude_review/verbal/review_comparison.json"
+          ]
+        }
+      }
+    },
+    "added_edits": [
+      {
+        "type": "source_verification_update",
+        "description": "将初编阶段“未逐字复核江浙原PDF”的当前状态更新为Claude已核0.1.0；记录核对者、版本、物理页码、git blob与已知差异，保留初编过程及原始源对象。",
+        "revision": "0.2.0"
+      }
+    ],
+    "reason": "据Claude留存的PDF、blob与逐字比较记录更新来源核对状态。"
+  },
+  {
+    "number": 25,
+    "updates": {
+      "verification": {
+        "status": "editor_verified_pending_independent_review",
+        "independent_answer": "B",
+        "source_answer_available": true,
+        "source_answer_agreement": true,
+        "method": "先读题干、选项形成判断，再比对题库参考答案，并逐项检查选项边界；这是编者自核，不冒称隔离盲审或Claude审核。",
+        "checked_on": "2026-11-15",
+        "completeness": "题干与四选项完整，无共用长文章、图像或缺题标记。",
+        "prior_output_check": {
+          "method": "源ID排除M01、M02现用及撤题；题干去空白标点后的前35字与中段35字检索广东2022—2026及旧24天集训、习题本的可读文本。",
+          "previous_project_source_id_match": false,
+          "guangdong_reference_text_match": false,
+          "old_output_files_checked": 156,
+          "old_output_matches": [],
+          "limit": "只说明本次可读语料检索未命中，不证明用户从未做过，也不等同对全部图片或扫描PDF作了去重。"
+        },
+        "source_check": "初编已核对江浙题库题面、来源定位及配套参考答案；后续Claude对0.1.0独立外审时从来源仓库取得对应PDF，git blob SHA与本题source_locators一致，并逐字比较题干与四选项。排除空白与排版分行后，0.1.0题干（含标点）与四选项核对一致。本次GPT依据留存核对记录更新状态，未冒称自己重新下载并逐页目检。",
+        "internal_cross_review": {
+          "status": "completed",
+          "report": "核验记录/verbal_independent_review.md",
+          "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
+          "final_answer": "B"
+        },
+        "source_pdf_review": {
+          "reviewer": "Claude",
+          "reviewed_version": "0.1.0",
+          "report_commit": "ec1e3e6",
+          "pdf_file": "2021年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+          "pdf_git_blob_sha": "bf44d1314deecbe22e6b2bf45ccec0c5bc9de703",
+          "blob_match": true,
+          "pdf_pages": [
+            8
+          ],
+          "comparison": "排除空白与排版分行后，0.1.0题干（含标点）与四选项核对一致。",
+          "subsequent_change": null,
+          "evidence": [
+            "核验记录/claude_review/verbal/pdf_sources_verified.json",
+            "核验记录/claude_review/verbal/jz_pdf_compare.json",
+            "核验记录/claude_review/verbal/review_comparison.json"
+          ]
+        }
+      },
+      "source_notice": "题面取自2021年浙江A类网友回忆版，原PDF页脚标注为粉笔用户生成；本卷保留源ID、源对象、PDF文件与git blob定位。源参考答案来自整理库配套解析，不冒称官方公布答案。Claude已对0.1.0对应源PDF作逐字核对；该核对证明转写与所列文件的关系，不改变回忆版身份。"
+    },
+    "added_edits": [
+      {
+        "type": "source_verification_update",
+        "description": "将初编阶段“未逐字复核江浙原PDF”的当前状态更新为Claude已核0.1.0；记录核对者、版本、物理页码、git blob与已知差异，保留初编过程及原始源对象。",
+        "revision": "0.2.0"
+      }
+    ],
+    "reason": "据Claude留存的PDF、blob与逐字比较记录更新来源核对状态，并补浙江网友回忆版身份。"
+  },
+  {
+    "number": 27,
+    "updates": {
+      "analysis": "横线与前文同属一句，陈述对象是“它们识别名字的方式”：反复经历某个字符伴随自身事件，才建立字符与自己的联系。D以“这”承接上述方式，用条件反射概括反复伴随、建立联系的过程，最合适。B转谈名字与普通字符的地位差别，偏离本句对识别方式的说明，“完全不同”也过强；C转向动物知道自己有专属代号的自我认知，文段只给出建立关联，并未证明这种认识。A又扩大为人与动物的一般互动模式。因此选D，关键是横线对同一句中识别方式的概括。"
+    },
+    "added_edits": [
+      {
+        "type": "analysis_refinement",
+        "description": "补明“识别名字的方式”这一句内衔接，解释B转向名字地位、C转向自我认知；D不变。",
+        "revision": "0.2.0"
+      }
+    ],
+    "reason": "采纳合理分歧后的补强建议，以同句陈述对象与方式的概括为主理由，绝对化只作补充。"
+  },
+  {
+    "number": 28,
+    "updates": {
+      "stem_override": "斑马鱼和蝾螈等少数脊椎动物具有肢体和内脏器官再生的能力，比如成年斑马鱼的心室被切除20%后，其心脏组织在2个月内可完全再生。对于小鼠而言，在胚胎时期的第10～12天以及出生后的第4～14天左右，其心肌细胞可以分裂增殖，而成年小鼠的心肌细胞几乎已经不能分裂增殖，心脏组织一般不再具有再生能力。人类亦是如此，尽管有研究显示成年人的心肌细胞有极低程度的更新，然而，绝大部分心肌细胞已不再分裂增殖。而细胞不分裂增殖，相关基因突变就不会累积在细胞的基因组中，心肌细胞就不会变成肿瘤细胞。相反，肝脏、肠道上皮、皮肤等组织器官再生能力强、细胞分裂增殖旺盛，导致肿瘤相关基因突变累积在细胞基因组中的概率大幅增加，因而更加容易出现肿瘤。\n根据这段文字，下列说法正确的是：",
+      "verification": {
+        "status": "editor_verified_pending_independent_review",
+        "independent_answer": "C",
+        "source_answer_available": true,
+        "source_answer_agreement": true,
+        "method": "先读题干、选项形成判断，再比对题库参考答案，并逐项检查选项边界；这是编者自核，不冒称隔离盲审或Claude审核。",
+        "checked_on": "2026-11-15",
+        "completeness": "题干与四选项完整，无共用长文章、图像或缺题标记。",
+        "prior_output_check": {
+          "method": "源ID排除M01、M02现用及撤题；题干去空白标点后的前35字与中段35字检索广东2022—2026及旧24天集训、习题本的可读文本。",
+          "previous_project_source_id_match": false,
+          "guangdong_reference_text_match": false,
+          "old_output_files_checked": 156,
+          "old_output_matches": [],
+          "limit": "只说明本次可读语料检索未命中，不证明用户从未做过，也不等同对全部图片或扫描PDF作了去重。"
+        },
+        "source_check": "初编已核对江浙题库题面、来源定位及配套参考答案；后续Claude对0.1.0独立外审时从来源仓库取得对应PDF，git blob SHA与本题source_locators一致，并逐字比较题干与四选项。排除空白与排版分行后，0.1.0题干（含标点）与四选项核对一致。本次0.2.0另外将两个范围连接号“~”规范为“～”，不把此标点变化记成源PDF原字。本次GPT依据留存核对记录更新状态，未冒称自己重新下载并逐页目检。",
+        "internal_cross_review": {
+          "status": "completed",
+          "report": "核验记录/verbal_independent_review.md",
+          "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
+          "final_answer": "C"
+        },
+        "source_pdf_review": {
+          "reviewer": "Claude",
+          "reviewed_version": "0.1.0",
+          "report_commit": "ec1e3e6",
+          "pdf_file": "2023年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+          "pdf_git_blob_sha": "5bcc6163c999c3910d10f36f6d8bea8a57df1417",
+          "blob_match": true,
+          "pdf_pages": [
+            9
+          ],
+          "comparison": "排除空白与排版分行后，0.1.0题干（含标点）与四选项核对一致。",
+          "subsequent_change": "本次0.2.0另外将两个范围连接号“~”规范为“～”，不把此标点变化记成源PDF原字。",
+          "evidence": [
+            "核验记录/claude_review/verbal/pdf_sources_verified.json",
+            "核验记录/claude_review/verbal/jz_pdf_compare.json",
+            "核验记录/claude_review/verbal/review_comparison.json"
+          ]
+        }
+      },
+      "source_notice": "题面取自2023年浙江A类网友回忆版，原PDF页脚标注为粉笔用户生成；本卷保留源ID、源对象、PDF文件与git blob定位。源参考答案来自整理库配套解析，不冒称官方公布答案。Claude已对0.1.0对应源PDF作逐字核对；该核对证明转写与所列文件的关系，不改变回忆版身份。"
+    },
+    "added_edits": [
+      {
+        "type": "typography",
+        "description": "将“第10~12天”“第4~14天”的半角连接号统一为全角“～”；不改时间范围、选项或答案。",
+        "revision": "0.2.0",
+        "before": {
+          "ranges": [
+            "第10~12天",
+            "第4~14天"
+          ]
+        },
+        "after": {
+          "ranges": [
+            "第10～12天",
+            "第4～14天"
+          ]
+        }
+      },
+      {
+        "type": "source_verification_update",
+        "description": "将初编阶段“未逐字复核江浙原PDF”的当前状态更新为Claude已核0.1.0；记录核对者、版本、物理页码、git blob与已知差异，保留初编过程及原始源对象。",
+        "revision": "0.2.0"
+      }
+    ],
+    "reason": "采纳范围连接号规范，数字与条件不变。；据Claude留存的PDF、blob与逐字比较记录更新来源核对状态，并补浙江网友回忆版身份。"
+  },
+  {
+    "number": 29,
+    "updates": {
+      "verification": {
+        "status": "editor_verified_pending_independent_review",
+        "independent_answer": "A",
+        "source_answer_available": true,
+        "source_answer_agreement": true,
+        "method": "先读题干、选项形成判断，再比对题库参考答案，并逐项检查选项边界；这是编者自核，不冒称隔离盲审或Claude审核。",
+        "checked_on": "2026-11-15",
+        "completeness": "题干与四选项完整，无共用长文章、图像或缺题标记。",
+        "prior_output_check": {
+          "method": "源ID排除M01、M02现用及撤题；题干去空白标点后的前35字与中段35字检索广东2022—2026及旧24天集训、习题本的可读文本。",
+          "previous_project_source_id_match": false,
+          "guangdong_reference_text_match": false,
+          "old_output_files_checked": 156,
+          "old_output_matches": [],
+          "limit": "只说明本次可读语料检索未命中，不证明用户从未做过，也不等同对全部图片或扫描PDF作了去重。"
+        },
+        "source_check": "初编已核对江浙题库题面、来源定位及配套参考答案；后续Claude对0.1.0独立外审时从来源仓库取得对应PDF，git blob SHA与本题source_locators一致，并逐字比较题干与四选项。排除空白与排版分行后，0.1.0题干（含标点）与四选项核对一致。本次GPT依据留存核对记录更新状态，未冒称自己重新下载并逐页目检。",
+        "internal_cross_review": {
+          "status": "completed",
+          "report": "核验记录/verbal_independent_review.md",
+          "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
+          "final_answer": "A"
+        },
+        "source_pdf_review": {
+          "reviewer": "Claude",
+          "reviewed_version": "0.1.0",
+          "report_commit": "ec1e3e6",
+          "pdf_file": "2023年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+          "pdf_git_blob_sha": "5bcc6163c999c3910d10f36f6d8bea8a57df1417",
+          "blob_match": true,
+          "pdf_pages": [
+            10
+          ],
+          "comparison": "排除空白与排版分行后，0.1.0题干（含标点）与四选项核对一致。",
+          "subsequent_change": null,
+          "evidence": [
+            "核验记录/claude_review/verbal/pdf_sources_verified.json",
+            "核验记录/claude_review/verbal/jz_pdf_compare.json",
+            "核验记录/claude_review/verbal/review_comparison.json"
+          ]
+        }
+      },
+      "source_notice": "题面取自2023年浙江A类网友回忆版，原PDF页脚标注为粉笔用户生成；本卷保留源ID、源对象、PDF文件与git blob定位。源参考答案来自整理库配套解析，不冒称官方公布答案。Claude已对0.1.0对应源PDF作逐字核对；该核对证明转写与所列文件的关系，不改变回忆版身份。"
+    },
+    "added_edits": [
+      {
+        "type": "source_verification_update",
+        "description": "将初编阶段“未逐字复核江浙原PDF”的当前状态更新为Claude已核0.1.0；记录核对者、版本、物理页码、git blob与已知差异，保留初编过程及原始源对象。",
+        "revision": "0.2.0"
+      }
+    ],
+    "reason": "据Claude留存的PDF、blob与逐字比较记录更新来源核对状态，并补浙江网友回忆版身份。"
+  }
+]

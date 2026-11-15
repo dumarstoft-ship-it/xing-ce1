@@ -478,11 +478,12 @@
       "question_count": 90,
       "forbidden_metadata_leaks": [],
       "visible_source_or_answer_markers": [],
-      "unique_existing_figure_files": 18,
+      "unique_existing_figure_files": 19,
       "figure_paths": [
+        "广东行测18套模拟/M03/assets/q35_number_grid_v020.png",
+        "广东行测18套模拟/M03/assets/q67_projectile_v020.png",
+        "广东行测18套模拟/M03/assets/q68_particles_v020.png",
         "广东行测18套模拟/M03/assets/q69_foodweb.png",
-        "广东行测18套模拟/M03/编辑底稿/quant_data_number_grid.png",
-        "模考/2026下半年广东卷_16-33季_AI可读/assets/s21_p17_i04.png",
         "模考/2026下半年广东卷_16-33季_AI可读/assets/s22_p19_i01.png",
         "模考/2026下半年广东卷_16-33季_AI可读/assets/s22_p19_i02.png",
         "模考/2026下半年广东卷_16-33季_AI可读/assets/s22_p20_i00.png",
@@ -512,7 +513,7 @@
       "command_exit_code": 0,
       "changes": [],
       "unmodified": true,
-      "head": "050bbf87348dfe8f81421746676595b02f547858"
+      "head": "887670327a0706f75830dd05241900be48b747a2"
     },
     "numeric_execution": {
       "input": "广东行测18套模拟/M03/selection.json",
@@ -564,31 +565,95 @@
         ],
         "source_objects_unchanged": true,
         "shared_materials_consistent": true,
-        "all_table_cells_preserved": true,
+        "all_table_data_cells_preserved": true,
+        "material_changes_match_registered_edits": true,
         "all_answer_keys_match": true,
         "passed": true
       },
       "report_file": "广东行测18套模拟/M03/编辑底稿/quant_data_check.json",
-      "report_sha256": "b7fd9ecb3bb97a351a7b255d9eaeb797768bdc995a4268075bad2403007ab4b8"
+      "report_sha256": "0fde2180a7d1a417dfa632378b2445b78b8c13438ac23c550f0671f1753f8d64"
+    },
+    "revision_020": {
+      "result": "PASS",
+      "report_file": "广东行测18套模拟/M03/核验记录/v020_revision_check.json",
+      "report_sha256": "a12dd72acd654e44394d02ce25b508c2ba89ce17d214563387884d86cf72c69b",
+      "checks": {
+        "baseline_and_revision_hashes": "PASS",
+        "all_90_answer_keys_unchanged": true,
+        "source_objects_and_identifiers_unchanged": true,
+        "current_reasoning_conditions_and_options_preserved_numbers": [
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65
+        ],
+        "delivered_Q55_Q60_Q65_layout": "PASS",
+        "Q35_revised_image_is_delivered": true,
+        "Q67_geometry": {
+          "horizontal_initial_tangents": true,
+          "same_landings_and_wall": true,
+          "B_x_at_wall_top": 143.48984784872124,
+          "answer": "B"
+        },
+        "Q68_visual_particle_inventory": {
+          "matches_source_table": true,
+          "before_atoms": {
+            "C": 1,
+            "H": 4,
+            "O": 6
+          },
+          "after_atoms": {
+            "O": 6,
+            "C": 1,
+            "H": 4
+          },
+          "molecules_per_stage": 4,
+          "remaining_O2": 1,
+          "answer": "C"
+        },
+        "Q69_added_direction_is_logged": true,
+        "Q70_elevation_evidence_is_recorded": true,
+        "original_claude_review_files_preserved": 63
+      }
     },
     "reasoning_execution": {
       "actual_input": "广东行测18套模拟/M03/编辑底稿/reasoning.json",
-      "actual_input_scope": "独立模块稿，不是直接读取selection.json",
+      "actual_input_scope": "0.1.0独立模块稿，不是直接读取当前selection.json",
       "module_sha256": "e3a2372f1bc4fd9fa5b917315b1e8fb9550e2f7048c20de764f1e7bc80c2c9a6",
-      "canonical_full_row_equal_numbers": [
+      "canonical_full_row_equal_numbers": [],
+      "canonical_effective_question_and_answer_equal_numbers": [
         46,
         47,
         48,
         49,
-        51,
+        50,
         52,
         53,
         54,
-        55,
         56,
         57,
         58,
-        59,
+        59
+      ],
+      "canonical_payload_differences": [
+        51,
+        55,
         60,
         61,
         62,
@@ -596,7 +661,7 @@
         64,
         65
       ],
-      "canonical_effective_question_and_answer_equal_numbers": [
+      "current_conditions_and_options_preserved_numbers": [
         46,
         47,
         48,
@@ -618,8 +683,7 @@
         64,
         65
       ],
-      "canonical_payload_differences": [],
-      "meaning": "已运行模块核验，且另比对模块稿与当前统一稿的题面、答案、源ID；相等部分可对应当前稿。脚本自身只对选定逻辑/图形题作枚举或像素/构造验证，不能称20题全部完成程序穷举。",
+      "meaning": "旧脚本实际读取历史模块稿；当前题面与旧稿的显示差异另列。0.2.0增量检查直接读取当前题目并确认判断模块仅改分段、空格、填空线与标点，条件及选项不变；不把旧输入冒称当前输入。脚本只对选定题作枚举或像素/构造验证，不能称20题全部程序穷举。",
       "programmed_content_check_keys": [
         "Q51",
         "Q53",
@@ -677,22 +741,24 @@
       "changed_outputs": [],
       "byte_identical": true,
       "output_sha256": {
-        "广东行测18套模拟/M03/题本_待审.md": "a3738151883b2c3fbff32843f8346f42b5a42935d6c9f4253cc5fccf79e0417d",
-        "广东行测18套模拟/M03/题目.jsonl": "87558895d10899a0c0e38b09331128bfd682db6f3aaf8fefdae864b74bc39a38",
-        "广东行测18套模拟/M03/答案与解析_待审.md": "3d92e3aed438444e71daa14325f328cf262e015bdd7995ccb7736f1b4b839c24",
-        "广东行测18套模拟/M03/来源登记.jsonl": "4e7db3e7e59331ab9be2ddfe1d14ddfd58f17f8ac0696906e224a6c4b04f7fe0",
+        "广东行测18套模拟/M03/题本_待审.md": "b84551c3396c603712b5fbea023d08f7acb4572e92b33dd53463db8235298a86",
+        "广东行测18套模拟/M03/题目.jsonl": "70e42d42fd83de59fb724ab78d48baa8510955f7e2d78d53a2733eeb662c3c35",
+        "广东行测18套模拟/M03/答案与解析_待审.md": "3ae4ab0c9ce962505a9702a06cd77b8cd1527f26080c02e7b11d8d0a402c148f",
+        "广东行测18套模拟/M03/来源登记.jsonl": "9bcde4913c9a33ca2f8d261e92dc60e9365b5ccbf1de8b6a6d185f44d8c79988",
         "广东行测18套模拟/M03/选题记录.md": "dc0a7cf1b66f479b53c91844670ae02a5963bb7ef1dfde049f8dccef90392b4a",
-        "广东行测18套模拟/M03/核验报告.json": "0b98f4206a8b277c31f9ae2004f51022413477acb9e4e8672ee79a342b578505",
-        "广东行测18套模拟/用题登记.jsonl": "1966badac2a8c6200375ad8a73707470cf1aa953d45c70577c386ad808d25744"
+        "广东行测18套模拟/M03/核验报告.json": "ff20b3defd7d222eca348d72a2a892c52ff12d92ba7246425d77d7e4bc72feed",
+        "广东行测18套模拟/用题登记.jsonl": "240c40a7947e31daeb253741b51440b704a2d83ae4f485ed8286500287593137"
       },
       "canonical_inputs_unchanged_during_check": true
     },
     "current_review_status": {
-      "external_review": "pending_claude",
-      "printing_status": "pending_content_review",
+      "external_review": "claude_reviewed_v0.1.0_revisions_pending_recheck",
+      "printing_status": "pending_revision_recheck",
       "print_ready": false,
-      "science_Q70_corrected_answer": "B",
-      "independent_reports_are_internal": true
+      "science_Q70_answer": "B",
+      "initial_editor_cross_reviews_are_internal": true,
+      "claude_reviewed_version": "0.1.0",
+      "current_revision_recheck_pending": true
     }
   },
   "executions": [
@@ -702,9 +768,9 @@
         "广东行测18套模拟/M03/build_m03.py"
       ],
       "exit_code": 0,
-      "stdout": "{\"content_validation\": \"PASS\", \"actual_count\": 90, \"missing_numbers\": [], \"unique_figure_files\": 18, \"is_complete_paper\": true, \"print_ready\": false}",
+      "stdout": "{\"content_validation\": \"PASS\", \"actual_count\": 90, \"missing_numbers\": [], \"unique_figure_files\": 19, \"is_complete_paper\": true, \"print_ready\": false}",
       "stderr": "",
-      "script_sha256": "739281ed0f1d8a66ef9a1e6f3da826ebe71865e5b8cecb934e0e8da1fd0dd9e6"
+      "script_sha256": "a8bfe3354319dc0848577d5af8c265e2a81676c71e36c27aabc5a1aabad28a69"
     },
     {
       "command": [
@@ -712,9 +778,9 @@
         "广东行测18套模拟/M03/编辑底稿/quant_data_check.py"
       ],
       "exit_code": 0,
-      "stdout": "{\"question_count\": 35, \"questions_with_numeric_or_rule_computations\": 33, \"manual_support_judgment_components\": [71, 72, 75, 80], \"source_objects_unchanged\": true, \"shared_materials_consistent\": true, \"all_table_cells_preserved\": true, \"all_answer_keys_match\": true, \"passed\": true}",
+      "stdout": "{\"question_count\": 35, \"questions_with_numeric_or_rule_computations\": 33, \"manual_support_judgment_components\": [71, 72, 75, 80], \"source_objects_unchanged\": true, \"shared_materials_consistent\": true, \"all_table_data_cells_preserved\": true, \"material_changes_match_registered_edits\": true, \"all_answer_keys_match\": true, \"passed\": true}",
       "stderr": "",
-      "script_sha256": "4ab99052606b273867417beaf02fa80813f33910e0d5be688830797322395a7a"
+      "script_sha256": "549854c33f77a1872c6b547ebeaf079c4dace2828e53f799a0fbec8ece9cd72c"
     },
     {
       "command": [
@@ -725,6 +791,16 @@
       "stdout": "PASS: 20-source integrity; 18 source answers; five exhaustive logic checks; honeycomb pixels; spatial filling witness; prior-project exposure scan.",
       "stderr": "",
       "script_sha256": "049ee9aaf965649a4bfce7646785fefc2ca1b4b24c2e5c7c6bac24dddf46a8c1"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "广东行测18套模拟/M03/核验记录/verify_v020_revision.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"result\": \"PASS\", \"answers_unchanged\": 90, \"reasoning_conditions_preserved\": 20, \"claude_files_unchanged\": 63, \"science_figures_verified\": [67, 68]}",
+      "stderr": "",
+      "script_sha256": "bbfc4a2db2b6ba23cb95530c0b19ab3de15e74584c4b03b5af6babf60bb6abe9"
     },
     {
       "command": [
@@ -742,23 +818,23 @@
         "广东行测18套模拟/M03/build_m03.py"
       ],
       "exit_code": 0,
-      "stdout": "{\"content_validation\": \"PASS\", \"actual_count\": 90, \"missing_numbers\": [], \"unique_figure_files\": 18, \"is_complete_paper\": true, \"print_ready\": false}",
+      "stdout": "{\"content_validation\": \"PASS\", \"actual_count\": 90, \"missing_numbers\": [], \"unique_figure_files\": 19, \"is_complete_paper\": true, \"print_ready\": false}",
       "stderr": "",
-      "script_sha256": "739281ed0f1d8a66ef9a1e6f3da826ebe71865e5b8cecb934e0e8da1fd0dd9e6"
+      "script_sha256": "a8bfe3354319dc0848577d5af8c265e2a81676c71e36c27aabc5a1aabad28a69"
     }
   ],
   "limitations": [
     "本检查是结构、来源、计算和重建一致性核验，不是90题答案正确性的自动证明。",
-    "GPT内部交叉复核与Claude独立审核分开；本稿尚待Claude审核及之后的打印排版。",
+    "Claude已审核0.1.0；本稿为GPT处理意见后的0.2.0，改动尚待Claude复核及之后的打印排版。",
     "未声称原PDF全部逐题核对；缺失原图的重建依据及边界另有编辑记录。",
     "不重复既有源ID或仓库文本未匹配，不等于用户从未在其他材料中做过。",
     "题目JSON保留必要图片寻址路径，路径可能含源库目录名；它们不作为考生可见题源说明。"
   ],
-  "version": "0.1.0",
+  "version": "0.2.0",
   "input_sha256": {
-    "selection.json": "5a265f7c6278eaa3c7ec5eb9c26e2964593182c3a6bcc1d60d28dfb5c3af05a7",
-    "paper.json": "d543453b7da66b41e6d34823c57fa35e05c4a611afb0a3cb99a02b693f45f3a2",
-    "build_m03.py": "739281ed0f1d8a66ef9a1e6f3da826ebe71865e5b8cecb934e0e8da1fd0dd9e6"
+    "selection.json": "7b7a951aa2cc279c8eb9e146717e3222218cfcfe219b53e0f6a6ed86af742d0b",
+    "paper.json": "e6f9b1c8ff4b595629a842f4d61501008e4a8171a6d96e3abbabd8b731a26fc3",
+    "build_m03.py": "a8bfe3354319dc0848577d5af8c265e2a81676c71e36c27aabc5a1aabad28a69"
   },
   "errors": [],
   "result": "PASS"

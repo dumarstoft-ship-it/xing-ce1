@@ -75,7 +75,10 @@ def clean_blocks(value, base=''):
         b = copy.deepcopy(b)
         if b.get('type') in ('figure', 'image'):
             b['type'] = 'figure'
-            b['path'] = Path(os.path.normpath(Path(base)/b['path'])).as_posix()
+            # Editorial reconstruction assets explicitly use repository paths;
+            # original bank figures keep their source-file-relative semantics.
+            path_base = '' if b.pop('path_base', None) == 'repository' else base
+            b['path'] = Path(os.path.normpath(Path(path_base)/b['path'])).as_posix()
         for key in ('caption','asset_id','source_asset_id','source_pages','source_spans','svg_path'):
             b.pop(key,None)
         out.append(b)
@@ -270,7 +273,7 @@ def main():
     write_jsonl(HERE/'题目.jsonl',questions)
 
     answer_lines=['# M03｜答案与解析（待审）',
-                  f'本文件含{len(rows)}题的编辑答案。{missing_note}原参考答案、编辑独立解答、内部复核和Claude外部审核是不同状态；本稿尚待Claude独立审核，打印状态见paper.json。',
+                  f'本文件含{len(rows)}题的编辑答案。{missing_note}原参考答案、编辑独立解答、内部复核和Claude外部审核是不同状态；具体审核版本及打印状态见paper.json。',
                   '## 答案速查']
     for start in range(1,91,10):
         ns=list(range(start,min(start+10,91)))
@@ -297,7 +300,12 @@ def main():
         if source_notice:
             answer_lines.append('题源说明：'+source_notice)
         if r.get('edits'):
-            answer_lines.append('编辑处理：'+'；'.join((e.get('description', e.get('text', e.get('type',''))) if isinstance(e,dict) else str(e)).rstrip('。；;') for e in r['edits'])+'。')
+            def edit_text(e):
+                if not isinstance(e, dict):
+                    return str(e).rstrip('。；;')
+                prefix = f'【{e["version"]}】' if e.get('version') else ''
+                return prefix + e.get('description', e.get('text', e.get('type',''))).rstrip('。；;')
+            answer_lines.append('编辑处理（按修订先后记录）：'+'；'.join(edit_text(e) for e in r['edits'])+'。')
         source_rows.append({
             'paper_id':'M03','number':r['number'],'source_id':r['source_id'],
             'source_bank':r['source_bank'],'source_file':sf,'source_file_sha256':file_hashes.get(sf),

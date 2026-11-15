@@ -776,6 +776,63 @@
     "数列采用简洁一致规律；有限数列不可能排除任意插值。",
     "文字检索与证据边界由人工阅读核对，程序中的事实标记不冒称自动语义审题。"
   ],
+  "material_preservation": {
+    "groups": [
+      {
+        "questions": [
+          71,
+          72,
+          73,
+          74,
+          75
+        ],
+        "material_id": "gd-mock-2026h2-s19-m1",
+        "table_data_cells_unchanged": true
+      },
+      {
+        "questions": [
+          76,
+          77,
+          78,
+          79,
+          80
+        ],
+        "material_id": "gd-mock-2026h2-s17-m3",
+        "table_data_cells_unchanged": true
+      },
+      {
+        "questions": [
+          81,
+          82,
+          83,
+          84,
+          85
+        ],
+        "material_id": "gd-mock-2026h2-s22-m1",
+        "table_data_cells_unchanged": true
+      },
+      {
+        "questions": [
+          86,
+          87,
+          88,
+          89,
+          90
+        ],
+        "material_id": "gd-mock-2026h2-s25-m2",
+        "table_data_cells_unchanged": true
+      }
+    ],
+    "registered_81_85_edits": {
+      "removed_sentence": "据中国海关总署统计数据显示，2023年7月，中国空调产量同比增长29.0%。",
+      "header_change": [
+        "图示期间",
+        "统计期"
+      ],
+      "retained_cumulative_note": "表中各月数值均为当年年初至该月的累计值；2023年1—2月为两个月合计。"
+    },
+    "method": "derive the expected full material from source; allow only explicit registered changes and existing text whitespace normalization"
+  },
   "summary": {
     "question_count": 35,
     "questions_with_numeric_or_rule_computations": 33,
@@ -787,7 +844,8 @@
     ],
     "source_objects_unchanged": true,
     "shared_materials_consistent": true,
-    "all_table_cells_preserved": true,
+    "all_table_data_cells_preserved": true,
+    "material_changes_match_registered_edits": true,
     "all_answer_keys_match": true,
     "passed": true
   }

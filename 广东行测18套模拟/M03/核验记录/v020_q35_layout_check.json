@@ -1,0 +1,433 @@
+{
+  "scope": "第35题重建数阵图；保留旧图；未与缺失的原PDF逐像素比较。",
+  "source_id": "gd-mock-2026h2-s19-q35",
+  "source_values_TL_TR_BL_BR": [
+    [
+      "25",
+      "3",
+      "7",
+      "−4"
+    ],
+    [
+      "14",
+      "8",
+      "6",
+      "34"
+    ],
+    [
+      "51",
+      "9",
+      "4",
+      "−15"
+    ],
+    [
+      "22",
+      "8",
+      "7",
+      "？"
+    ]
+  ],
+  "display_values_TL_TR_BL_BR": [
+    [
+      "25",
+      "3",
+      "7",
+      "−4"
+    ],
+    [
+      "14",
+      "8",
+      "6",
+      "34"
+    ],
+    [
+      "51",
+      "9",
+      "4",
+      "−15"
+    ],
+    [
+      "22",
+      "8",
+      "7",
+      "?"
+    ]
+  ],
+  "fullwidth_question_mark_normalization": "源表的？与既有图的?指同一待求数，本版沿用既有图?。",
+  "canvas_px": [
+    2160,
+    540
+  ],
+  "svg_viewbox": [
+    0,
+    0,
+    720,
+    180
+  ],
+  "previous_parameters": {
+    "font_size": 28,
+    "dx": 29,
+    "dy": 28,
+    "radius": 70
+  },
+  "new_parameters": {
+    "font_size": 24,
+    "dx": 32,
+    "dy": 22,
+    "radius": 70
+  },
+  "svg_stroke_width": 1.8,
+  "png_line_width_px": 5,
+  "font_file": "/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf",
+  "font_sha256": "8cb29f7db250ebb2551a6ce2c1e0bfd5a0eb520e9e233370db0493e82e1f36f7",
+  "clearance_method": "深色字形像素到直径/圆周的几何距离，减SVG线宽的一半；与审核原型同口径。",
+  "before": {
+    "min_to_diameter_px": 4.3,
+    "min_to_circle_px": 11.7,
+    "cells": [
+      {
+        "circle": 1,
+        "quadrant": [
+          -1,
+          -1
+        ],
+        "text": "25",
+        "to_diameter_px": 38.3,
+        "to_circle_px": 32.0
+      },
+      {
+        "circle": 1,
+        "quadrant": [
+          1,
+          -1
+        ],
+        "text": "3",
+        "to_diameter_px": 52.3,
+        "to_circle_px": 57.0
+      },
+      {
+        "circle": 1,
+        "quadrant": [
+          -1,
+          1
+        ],
+        "text": "7",
+        "to_diameter_px": 49.3,
+        "to_circle_px": 59.8
+      },
+      {
+        "circle": 1,
+        "quadrant": [
+          1,
+          1
+        ],
+        "text": "−4",
+        "to_diameter_px": 31.3,
+        "to_circle_px": 27.2
+      },
+      {
+        "circle": 2,
+        "quadrant": [
+          -1,
+          -1
+        ],
+        "text": "14",
+        "to_diameter_px": 36.3,
+        "to_circle_px": 38.9
+      },
+      {
+        "circle": 2,
+        "quadrant": [
+          1,
+          -1
+        ],
+        "text": "8",
+        "to_diameter_px": 52.3,
+        "to_circle_px": 56.3
+      },
+      {
+        "circle": 2,
+        "quadrant": [
+          -1,
+          1
+        ],
+        "text": "6",
+        "to_diameter_px": 48.3,
+        "to_circle_px": 59.3
+      },
+      {
+        "circle": 2,
+        "quadrant": [
+          1,
+          1
+        ],
+        "text": "34",
+        "to_diameter_px": 37.3,
+        "to_circle_px": 33.4
+      },
+      {
+        "circle": 3,
+        "quadrant": [
+          -1,
+          -1
+        ],
+        "text": "51",
+        "to_diameter_px": 43.3,
+        "to_circle_px": 33.1
+      },
+      {
+        "circle": 3,
+        "quadrant": [
+          1,
+          -1
+        ],
+        "text": "9",
+        "to_diameter_px": 52.3,
+        "to_circle_px": 57.6
+      },
+      {
+        "circle": 3,
+        "quadrant": [
+          -1,
+          1
+        ],
+        "text": "4",
+        "to_diameter_px": 48.3,
+        "to_circle_px": 60.4
+      },
+      {
+        "circle": 3,
+        "quadrant": [
+          1,
+          1
+        ],
+        "text": "−15",
+        "to_diameter_px": 4.3,
+        "to_circle_px": 11.7
+      },
+      {
+        "circle": 4,
+        "quadrant": [
+          -1,
+          -1
+        ],
+        "text": "22",
+        "to_diameter_px": 40.3,
+        "to_circle_px": 32.0
+      },
+      {
+        "circle": 4,
+        "quadrant": [
+          1,
+          -1
+        ],
+        "text": "8",
+        "to_diameter_px": 52.3,
+        "to_circle_px": 56.3
+      },
+      {
+        "circle": 4,
+        "quadrant": [
+          -1,
+          1
+        ],
+        "text": "7",
+        "to_diameter_px": 49.3,
+        "to_circle_px": 59.8
+      },
+      {
+        "circle": 4,
+        "quadrant": [
+          1,
+          1
+        ],
+        "text": "?",
+        "to_diameter_px": 48.3,
+        "to_circle_px": 65.3
+      }
+    ]
+  },
+  "after": {
+    "min_to_diameter_px": 25.3,
+    "min_to_circle_px": 23.9,
+    "cells": [
+      {
+        "circle": 1,
+        "quadrant": [
+          -1,
+          -1
+        ],
+        "text": "25",
+        "to_diameter_px": 38.3,
+        "to_circle_px": 43.4
+      },
+      {
+        "circle": 1,
+        "quadrant": [
+          1,
+          -1
+        ],
+        "text": "3",
+        "to_diameter_px": 38.3,
+        "to_circle_px": 67.2
+      },
+      {
+        "circle": 1,
+        "quadrant": [
+          -1,
+          1
+        ],
+        "text": "7",
+        "to_diameter_px": 36.3,
+        "to_circle_px": 69.8
+      },
+      {
+        "circle": 1,
+        "quadrant": [
+          1,
+          1
+        ],
+        "text": "−4",
+        "to_diameter_px": 35.3,
+        "to_circle_px": 38.3
+      },
+      {
+        "circle": 2,
+        "quadrant": [
+          -1,
+          -1
+        ],
+        "text": "14",
+        "to_diameter_px": 39.3,
+        "to_circle_px": 48.9
+      },
+      {
+        "circle": 2,
+        "quadrant": [
+          1,
+          -1
+        ],
+        "text": "8",
+        "to_diameter_px": 38.3,
+        "to_circle_px": 66.6
+      },
+      {
+        "circle": 2,
+        "quadrant": [
+          -1,
+          1
+        ],
+        "text": "6",
+        "to_diameter_px": 35.3,
+        "to_circle_px": 68.5
+      },
+      {
+        "circle": 2,
+        "quadrant": [
+          1,
+          1
+        ],
+        "text": "34",
+        "to_diameter_px": 35.3,
+        "to_circle_px": 44.2
+      },
+      {
+        "circle": 3,
+        "quadrant": [
+          -1,
+          -1
+        ],
+        "text": "51",
+        "to_diameter_px": 38.3,
+        "to_circle_px": 44.2
+      },
+      {
+        "circle": 3,
+        "quadrant": [
+          1,
+          -1
+        ],
+        "text": "9",
+        "to_diameter_px": 38.3,
+        "to_circle_px": 67.8
+      },
+      {
+        "circle": 3,
+        "quadrant": [
+          -1,
+          1
+        ],
+        "text": "4",
+        "to_diameter_px": 35.3,
+        "to_circle_px": 67.8
+      },
+      {
+        "circle": 3,
+        "quadrant": [
+          1,
+          1
+        ],
+        "text": "−15",
+        "to_diameter_px": 25.3,
+        "to_circle_px": 23.9
+      },
+      {
+        "circle": 4,
+        "quadrant": [
+          -1,
+          -1
+        ],
+        "text": "22",
+        "to_diameter_px": 39.3,
+        "to_circle_px": 43.4
+      },
+      {
+        "circle": 4,
+        "quadrant": [
+          1,
+          -1
+        ],
+        "text": "8",
+        "to_diameter_px": 38.3,
+        "to_circle_px": 66.6
+      },
+      {
+        "circle": 4,
+        "quadrant": [
+          -1,
+          1
+        ],
+        "text": "7",
+        "to_diameter_px": 36.3,
+        "to_circle_px": 69.8
+      },
+      {
+        "circle": 4,
+        "quadrant": [
+          1,
+          1
+        ],
+        "text": "?",
+        "to_diameter_px": 35.3,
+        "to_circle_px": 74.9
+      }
+    ]
+  },
+  "at_120mm_width": {
+    "min_to_diameter_mm": 1.406,
+    "min_to_circle_mm": 1.328,
+    "preview_png": "核验记录/v020_q35_print120mm.png",
+    "dpi": 300,
+    "note": "仅为规定物理宽度的缩放预览，不代表整卷PDF排版已完成。"
+  },
+  "old_files_preserved_sha256": {
+    "编辑底稿/quant_data_number_grid.svg": "a3f5e60731e7eab7170db7d43017cd3f88b23ff95a5693317544a027cc36716d",
+    "编辑底稿/quant_data_number_grid.png": "65eddacf2fba55209fb99364ad3bb5072465475a7c3017532567711584d1232f"
+  },
+  "new_files_sha256": {
+    "assets/q35_number_grid_v020.svg": "b4ff502c5d1839d8977dceb31e16ce9ccd41fe13a23357089a88f4f0ebbe0723",
+    "assets/q35_number_grid_v020.png": "8bee898320d2354fd66e0797bd4a62c4a7ea64b8f6607c7a8ebb1b04ace04861",
+    "核验记录/v020_q35_print120mm.png": "3598ad3d9ef51ee055cc382e5ca04bbe2e5334e558ca08bbf63606335d6814ed"
+  },
+  "status": "PASS"
+}

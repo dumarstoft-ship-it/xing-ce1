@@ -9,13 +9,31 @@
     "stem": "构建以国内大循环为主体的新发展格局，应先由各省建立省内供需闭环，再以省际贸易把这些相对独立的循环连接起来。",
     "options": {},
     "answer": "错误",
-    "analysis": "“国内大循环”针对全国，而不是以各省先形成自我小循环为基础。各地区应在全国统一市场中确定自身分工和比较优势，打通商品、要素流动的堵点。区域合作可以先行，但须有利于全国循环，不能把省域内部供需闭环当作普遍前提。",
+    "analysis": "“国内大循环”针对全国。习近平相关讲话明确指出，构建新发展格局“不是各地都搞自我小循环”。各地区应在全国统一市场中确定自身分工和比较优势，打通商品、要素流动的堵点；有条件的地区可以先行探索有利于全国循环的路径，但不能把先建省域供需闭环作为普遍前提。因此题干错误。讲义第27、65页提供相关主题，反对地方自我小循环的直接依据为所列讲话。",
     "selection_reason": "辨析全国循环与地方自我循环，检验规模与分工的真实含义。",
     "source_question": null,
     "source_answer": null,
-    "edits": [],
+    "edits": [
+      {
+        "type": "analysis_and_provenance",
+        "description": "补充讲话短引文、全国统一大市场的讲义主题页与各自证据边界；题干、答案不变。",
+        "revision": "0.2.0",
+        "before": {
+          "book_pages": [
+            27
+          ]
+        },
+        "after": {
+          "book_pages": [
+            27,
+            65
+          ]
+        },
+        "version": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_solved_external_review_pending",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "逐项辨析；依据用户讲义相关主题原创，时政、法律及专门事实补充核对所列一手或政府公开资料。",
       "checked_on": "2026-11-15",
       "internal_cross_review": {
@@ -23,22 +41,41 @@
         "report": "核验记录/politics_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "错误"
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "错误",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "analysis",
+          "edits",
+          "provenance"
+        ]
       }
     },
     "provenance": {
       "kind": "original",
       "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
       "book_pages": [
-        27
+        27,
+        65
       ],
       "references": [
         {
           "title": "新发展阶段贯彻新发展理念必然要求构建新发展格局",
           "url": "https://www.mem.gov.cn/jjz/ywgz/202209/t20220902_421700.shtml",
-          "locator": "关于全国统一大市场与地方自我小循环的段落；已读取检索返回的对应正文",
+          "locator": "第三部分“着力构建新发展格局”的第三点：全国统一大市场基础上的国内大循环、地方比较优势与反对地方自我小循环；本次已打开政府网站刊载的讲话正文核对。",
           "checked_on": "2026-11-15"
         }
-      ]
+      ],
+      "book_scope": "第27页提供新发展格局主题，第65页提及全国统一大市场；反对地方自我小循环的直接依据为所列习近平讲话，非讲义原句。"
     },
     "figures": [],
     "materials": []
@@ -59,7 +96,7 @@
     "source_answer": null,
     "edits": [],
     "verification": {
-      "status": "editor_solved_external_review_pending",
+      "status": "claude_reviewed_v010_unchanged",
       "method": "逐项辨析；依据用户讲义相关主题原创，时政、法律及专门事实补充核对所列一手或政府公开资料。",
       "checked_on": "2026-11-15",
       "internal_cross_review": {
@@ -67,6 +104,14 @@
         "report": "核验记录/politics_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "正确"
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "正确",
+        "key_result": "accepted_after_review"
       }
     },
     "provenance": {
@@ -96,7 +141,7 @@
     "source_answer": null,
     "edits": [],
     "verification": {
-      "status": "editor_solved_external_review_pending",
+      "status": "claude_reviewed_v010_unchanged",
       "method": "逐项辨析；依据用户讲义相关主题原创，时政、法律及专门事实补充核对所列一手或政府公开资料。",
       "checked_on": "2026-11-15",
       "internal_cross_review": {
@@ -104,6 +149,14 @@
         "report": "核验记录/politics_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "错误"
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "错误",
+        "key_result": "accepted_after_review"
       }
     },
     "provenance": {
@@ -140,13 +193,20 @@
     "stem": "一定社会经济条件发生变化后，与之相关的旧观念仍可能长期存在；这体现社会意识的相对独立性，并不否定社会存在对社会意识的决定作用。",
     "options": {},
     "answer": "正确",
-    "analysis": "社会存在决定社会意识的内容和发展根源，但二者的变化不必严格同步。旧观念具有惯性，也会通过习俗、制度和文化传承延续。承认这种相对独立性，不等于把观念看成脱离社会条件而独立产生的决定力量。",
+    "analysis": "社会存在决定社会意识的内容和发展根源，但二者的变化不必严格同步。旧观念具有惯性，也会通过习俗、制度和文化传承延续。承认这种相对独立性，不等于把观念看成脱离社会条件而独立产生的决定力量。讲义第43页只提供社会存在与社会意识的相关主题；本题关于相对独立性、变化不完全同步的判断依据教材通行表述，并非该页原文。",
     "selection_reason": "辨析决定作用与不同步变化，训练对“相对独立”边界的理解。",
     "source_question": null,
     "source_answer": null,
-    "edits": [],
+    "edits": [
+      {
+        "type": "provenance_clarification",
+        "description": "明确讲义主题支持与教材通行论断之间的界限，题面和答案不变。",
+        "revision": "0.2.0",
+        "version": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_solved_external_review_pending",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "逐项辨析；依据用户讲义相关主题原创，时政、法律及专门事实补充核对所列一手或政府公开资料。",
       "checked_on": "2026-11-15",
       "internal_cross_review": {
@@ -154,6 +214,23 @@
         "report": "核验记录/politics_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "正确"
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "正确",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "analysis",
+          "edits",
+          "provenance"
+        ]
       }
     },
     "provenance": {
@@ -162,7 +239,8 @@
       "book_pages": [
         43
       ],
-      "references": []
+      "references": [],
+      "book_scope": "第43页列社会存在、社会意识及二者关系问题；未直接载明相对独立性或发展变化不完全同步。本题该论断按马克思主义哲学教材通行表述理解，不将其冒称为本讲义原文。"
     },
     "figures": [],
     "materials": []
@@ -177,18 +255,31 @@
     "stem": "某科研管理部门分别资助自由探索类基础研究和目标导向类基础研究。下列评价安排，最符合分类评价要求的是（　）。",
     "options": {
       "A": "自由探索类主要看短期转化收入，目标导向类主要看论文数量",
-      "B": "自由探索类主要看解决既定工程指标的进度，目标导向类主要看选题的新奇程度",
+      "B": "自由探索类主要看解决重大科学问题的效能，目标导向类主要看原创性和学术贡献",
       "C": "自由探索类主要看原创性和学术贡献，目标导向类主要看解决重大科学问题的效能",
       "D": "自由探索类主要看形成专利的数量，目标导向类主要看成果发表期刊的影响因子"
     },
     "answer": "C",
-    "analysis": "两类研究都属于基础研究，但任务形成方式和评价重点不同。自由探索类重在原创性与学术贡献，可探索长周期和同行评价；目标导向类重在解决重大科学问题的效能。A、D把转化收入、专利数量或期刊指标当作主要尺度；B又把目标导向的基础科学问题偷换成既定工程指标，并以“新奇”替代实质贡献。C能够把评价与研究目的相接。",
+    "analysis": "两类研究都属于基础研究，但评价重点不同。自由探索类主要评价原创性和学术贡献，可探索长周期评价与国际同行评价；目标导向类主要评价解决重大科学问题的效能。C按两类研究的目的作出对应，B将两组评价重点互换。A、D把短期转化收入、论文数量、专利数量或期刊影响因子当作主要尺度，不符合题目要求。这里比较的是主要评价标准，并非否认两类研究可能产生多种成果。",
     "selection_reason": "把科技政策放进具体管理选择，辨析基础研究目标和指标的关系。",
     "source_question": null,
     "source_answer": null,
-    "edits": [],
+    "edits": [
+      {
+        "type": "distractor_revision",
+        "description": "B由工程指标/选题新奇程度改为自由探索类与目标导向类评价重点的互换项，解析同步改写，C仍唯一正确。",
+        "revision": "0.2.0",
+        "before": {
+          "B": "自由探索类主要看解决既定工程指标的进度，目标导向类主要看选题的新奇程度"
+        },
+        "after": {
+          "B": "自由探索类主要看解决重大科学问题的效能，目标导向类主要看原创性和学术贡献"
+        },
+        "version": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_solved_external_review_pending",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "逐项辨析；依据用户讲义相关主题原创，时政、法律及专门事实补充核对所列一手或政府公开资料。",
       "checked_on": "2026-11-15",
       "internal_cross_review": {
@@ -196,6 +287,23 @@
         "report": "核验记录/politics_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "C"
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "C",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "analysis",
+          "edits",
+          "options"
+        ]
       }
     },
     "provenance": {
@@ -223,7 +331,7 @@
     "question_type": "single_choice",
     "source_bank": "editor_original",
     "source_id": "M03-ORIG-006",
-    "stem": "在认识中华文明的突出特性时，以下三项分别强调：①各民族文化融为一体、共同维护国家团结；②对世界文明成果兼收并蓄；③面对新问题不断革新创造。它们依次突出体现的是（　）。",
+    "stem": "在认识中华文明的突出特性时，以下三项分别强调：①各民族文化融为一体，形成团结集中的格局；②对世界文明成果兼收并蓄；③面对新问题不断革新创造。它们依次突出体现的是（　）。",
     "options": {
       "A": "统一性、包容性、创新性",
       "B": "包容性、统一性、连续性",
@@ -231,18 +339,43 @@
       "D": "连续性、包容性、创新性"
     },
     "answer": "A",
-    "analysis": "①重点是多元一体与团结凝聚，对应统一性；②重点是吸收、容纳不同文明的优秀成果，对应包容性；③重点是应对新问题、创造新成果，对应创新性。连续性侧重文明传承不绝，和平性侧重和平、和睦、和谐，不能把所有正面文化现象无区别地套入同一特性。",
+    "analysis": "①强调各民族文化融为一体、团结集中，对应统一性；②强调吸收、容纳不同文明成果，对应包容性；③强调应对新问题、不断创造，对应创新性，故选A。D虽与A的后两项相同，但连续性侧重文明传承不绝，不能替代①的多元一体与团结凝聚。和平性侧重和平、和睦、和谐，也不能与其他特性混用。",
     "selection_reason": "用实际含义区分相邻文化概念，避免只记五个名词。",
     "source_question": null,
     "source_answer": null,
     "edits": [
       {
         "type": "distractor_revision",
-        "description": "内部交叉审查后调整选项组合，保留多个选项在第二项为包容性，避免仅凭一个词锁定答案。"
+        "description": "内部交叉审查后调整选项组合，保留多个选项在第二项为包容性，避免仅凭一个词锁定答案。",
+        "version": "0.1.0"
+      },
+      {
+        "type": "wording_and_history",
+        "description": "将①“共同维护国家团结”改为“形成团结集中的格局”，四组选项保持0.1.0现状。本条保存的是本次0.2.0修改前快照；初次内部调整前四项未存档，旧distractor_revision记录只能证明当时调整理由，不能据此重建原四项。",
+        "revision": "0.2.0",
+        "before": {
+          "stem": "在认识中华文明的突出特性时，以下三项分别强调：①各民族文化融为一体、共同维护国家团结；②对世界文明成果兼收并蓄；③面对新问题不断革新创造。它们依次突出体现的是（　）。",
+          "options": {
+            "A": "统一性、包容性、创新性",
+            "B": "包容性、统一性、连续性",
+            "C": "统一性、创新性、包容性",
+            "D": "连续性、包容性、创新性"
+          }
+        },
+        "after": {
+          "stem": "在认识中华文明的突出特性时，以下三项分别强调：①各民族文化融为一体，形成团结集中的格局；②对世界文明成果兼收并蓄；③面对新问题不断革新创造。它们依次突出体现的是（　）。",
+          "options": {
+            "A": "统一性、包容性、创新性",
+            "B": "包容性、统一性、连续性",
+            "C": "统一性、创新性、包容性",
+            "D": "连续性、包容性、创新性"
+          }
+        },
+        "version": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_solved_external_review_pending",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "逐项辨析；依据用户讲义相关主题原创，时政、法律及专门事实补充核对所列一手或政府公开资料。",
       "checked_on": "2026-11-15",
       "internal_cross_review": {
@@ -250,6 +383,24 @@
         "report": "核验记录/politics_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "A"
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "A",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "analysis",
+          "edits",
+          "provenance",
+          "stem"
+        ]
       }
     },
     "provenance": {
@@ -265,7 +416,8 @@
           "locator": "中华文明五个突出特性，尤其统一性、包容性、创新性的对应阐述",
           "checked_on": "2026-11-15"
         }
-      ]
+      ],
+      "book_scope": "第32页列中华文明五个突出特性；各民族文化融为一体、团结集中及兼收并蓄等具体含义依据所列讲话。本次由教育部页面的检索正文提取核对“多元一体、团结集中”，直接打开仍遇重定向。"
     },
     "figures": [],
     "materials": []
@@ -285,13 +437,20 @@
       "D": "事物的联系具有客观性，实践只能发现联系而不能改变具体联系"
     },
     "answer": "B",
-    "analysis": "桥隧改变了具体的交通条件，从而形成新的运输和协作关系；这种创造须服从地质、水文等客观条件。B同时保留了联系的客观性和实践的能动性。A、C把主观意愿置于客观基础之上；D则把客观性误解为任何具体联系都不能改变。",
+    "analysis": "桥隧改变了具体的交通条件，从而形成新的运输和协作关系；这种创造须服从地质、水文等客观条件。B同时保留了联系的客观性和实践的能动性。A、C把主观意愿置于客观基础之上；D则把客观性误解为任何具体联系都不能改变。讲义第40页列出联系的特点；依据固有联系建立新的具体联系的完整表述，属于本题采用的教材通行知识，不冒称为该页原文。",
     "selection_reason": "辨清“联系客观”与“人能建立联系”并不矛盾，换用具体实践情境。",
     "source_question": null,
     "source_answer": null,
-    "edits": [],
+    "edits": [
+      {
+        "type": "provenance_clarification",
+        "description": "补明讲义未直接载有完整关键论断，题干、选项、答案不变。",
+        "revision": "0.2.0",
+        "version": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_solved_external_review_pending",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "逐项辨析；依据用户讲义相关主题原创，时政、法律及专门事实补充核对所列一手或政府公开资料。",
       "checked_on": "2026-11-15",
       "internal_cross_review": {
@@ -299,6 +458,23 @@
         "report": "核验记录/politics_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "B"
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "B",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "analysis",
+          "edits",
+          "provenance"
+        ]
       }
     },
     "provenance": {
@@ -307,7 +483,8 @@
       "book_pages": [
         40
       ],
-      "references": []
+      "references": [],
+      "book_scope": "第40页列联系的普遍性、客观性、条件性、多样性；“依据固有联系改变条件、建立新的具体联系”的完整论断未直接载于该页，按马克思主义哲学教材通行表述作答。"
     },
     "figures": [],
     "materials": []
@@ -333,7 +510,7 @@
     "source_answer": null,
     "edits": [],
     "verification": {
-      "status": "editor_solved_external_review_pending",
+      "status": "claude_reviewed_v010_unchanged",
       "method": "逐项辨析；依据用户讲义相关主题原创，时政、法律及专门事实补充核对所列一手或政府公开资料。",
       "checked_on": "2026-11-15",
       "internal_cross_review": {
@@ -341,6 +518,14 @@
         "report": "核验记录/politics_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "D"
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "D",
+        "key_result": "accepted_after_review"
       }
     },
     "provenance": {
@@ -376,7 +561,7 @@
     "source_answer": null,
     "edits": [],
     "verification": {
-      "status": "editor_solved_external_review_pending",
+      "status": "claude_reviewed_v010_unchanged",
       "method": "逐项辨析；依据用户讲义相关主题原创，时政、法律及专门事实补充核对所列一手或政府公开资料。",
       "checked_on": "2026-11-15",
       "internal_cross_review": {
@@ -384,6 +569,14 @@
         "report": "核验记录/politics_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "ACD"
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "ACD",
+        "key_result": "accepted_after_review"
       }
     },
     "provenance": {
@@ -420,13 +613,33 @@
       "D": "河套：依托深港跨境相邻的条件，推进科技创新协同与规则衔接"
     },
     "answer": "AD",
-    "analysis": "横琴侧重服务澳门经济适度多元发展；前海侧重深港现代服务业合作；南沙突出面向世界的粤港澳全面合作；河套突出深港科技创新合作。B、C对调了前海与南沙的主要定位。这不意味着各平台完全没有交叉业务，判断依据是国家方案明确的功能侧重。",
+    "analysis": "横琴粤澳深度合作区侧重服务澳门经济适度多元发展、推进琴澳一体化；前海深港现代服务业合作区侧重深港现代服务业合作；广州南沙突出面向世界的粤港澳全面合作；河套深港科技创新合作区突出深港科技创新协同与规则衔接。B、C对调了前海与南沙的主要定位，A、D正确。这些是国家方案明确的功能侧重，不意味着平台之间完全没有交叉业务。讲义第74—75页支持横琴主题，四个平台的完整比较另据所列发布会。",
     "selection_reason": "广东省情与改革开放结合，比较四个平台而非只背一条宣传语。",
     "source_question": null,
     "source_answer": null,
-    "edits": [],
+    "edits": [
+      {
+        "type": "analysis_and_provenance",
+        "description": "解析补全横琴、前海、河套正式名称，保留平台可有交叉业务的边界；讲义页码由74、75、77改为74、75。",
+        "revision": "0.2.0",
+        "before": {
+          "book_pages": [
+            74,
+            75,
+            77
+          ]
+        },
+        "after": {
+          "book_pages": [
+            74,
+            75
+          ]
+        },
+        "version": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_solved_external_review_pending",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "逐项辨析；依据用户讲义相关主题原创，时政、法律及专门事实补充核对所列一手或政府公开资料。",
       "checked_on": "2026-11-15",
       "internal_cross_review": {
@@ -434,6 +647,23 @@
         "report": "核验记录/politics_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "AD"
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "AD",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "analysis",
+          "edits",
+          "provenance"
+        ]
       }
     },
     "provenance": {
@@ -441,8 +671,7 @@
       "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
       "book_pages": [
         74,
-        75,
-        77
+        75
       ],
       "references": [
         {
@@ -451,7 +680,8 @@
           "locator": "答记者问第一问，逐一说明横琴、前海、南沙、河套的功能侧重；已实际读取全文",
           "checked_on": "2026-11-15"
         }
-      ]
+      ],
+      "book_scope": "第74—75页直接涉及横琴粤澳深度合作区与澳门经济适度多元、琴澳一体化；前海、南沙、河套的并列定位以国家发展改革委新闻发布会为依据。第77页没有这些平台的具体内容，已从本题主题页码中移除。"
     },
     "figures": [],
     "materials": []
@@ -477,7 +707,7 @@
     "source_answer": null,
     "edits": [],
     "verification": {
-      "status": "editor_solved_external_review_pending",
+      "status": "claude_reviewed_v010_unchanged",
       "method": "逐项辨析；依据用户讲义相关主题原创，时政、法律及专门事实补充核对所列一手或政府公开资料。",
       "checked_on": "2026-11-15",
       "internal_cross_review": {
@@ -485,6 +715,14 @@
         "report": "核验记录/politics_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "B"
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "B",
+        "key_result": "accepted_after_review"
       }
     },
     "provenance": {
@@ -513,7 +751,7 @@
     "question_type": "single_choice",
     "source_bank": "editor_original",
     "source_id": "M03-ORIG-012",
-    "stem": "广州话、梅州客家话、潮州话、雷州话，依次主要归属于下列哪组汉语方言（　）？",
+    "stem": "广州话、梅县话、潮州话、雷州话，依次主要归属于下列哪组汉语方言（　）？",
     "options": {
       "A": "粤方言、客家方言、粤方言、闽方言",
       "B": "粤方言、客家方言、闽方言、闽方言",
@@ -521,13 +759,28 @@
       "D": "粤方言、客家方言、闽方言、粤方言"
     },
     "answer": "B",
-    "analysis": "广州话是粤方言的代表，梅州是客家方言的重要代表地区；广东闽方言包含潮汕片和雷州片。不能把“位于广东省”与“属于粤方言”等同，也不能按粤东、粤西的地理位置直接给方言归类。本题只判断所列话种，不宣称这些城市居民只使用一种语言。",
+    "analysis": "广州话是粤方言的代表，梅县话是客家方言的代表；广东闽方言包含潮汕片与雷州片，潮州话、雷州话均属闽方言，故B正确。A将潮州话错归粤方言；C将梅县话、潮州话的归属错置；D将雷州话错归粤方言。不能把“位于广东省”与“属于粤方言”等同，也不能按粤东、粤西的地理位置直接分类。本题只判断所列话种，不宣称各地居民只使用一种方言。",
     "selection_reason": "辨析广东三大方言及潮汕、雷州两个闽方言片，避免地理名称偷换语言分类。",
     "source_question": null,
     "source_answer": null,
-    "edits": [],
+    "edits": [
+      {
+        "type": "wording_and_provenance",
+        "description": "“梅州客家话”改为“梅县话”，四选项和答案B不变；广东方言通用引用统一为post_70415，新增中国客家博物馆第7问支撑梅县话。",
+        "revision": "0.2.0",
+        "before": {
+          "stem": "广州话、梅州客家话、潮州话、雷州话，依次主要归属于下列哪组汉语方言（　）？",
+          "reference_url": "https://www.gdhmo.gov.cn/gaikuang/content/post_68514.html"
+        },
+        "after": {
+          "stem": "广州话、梅县话、潮州话、雷州话，依次主要归属于下列哪组汉语方言（　）？",
+          "reference_url": "https://www.gdhmo.gov.cn/gaikuang/content/post_70415.html"
+        },
+        "version": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_solved_external_review_pending",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "逐项辨析；依据用户讲义相关主题原创，时政、法律及专门事实补充核对所列一手或政府公开资料。",
       "checked_on": "2026-11-15",
       "internal_cross_review": {
@@ -535,6 +788,24 @@
         "report": "核验记录/politics_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "B"
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "B",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "analysis",
+          "edits",
+          "provenance",
+          "stem"
+        ]
       }
     },
     "provenance": {
@@ -546,12 +817,19 @@
       ],
       "references": [
         {
-          "title": "广东概况（中共广东省委港澳工作办公室）",
-          "url": "https://www.gdhmo.gov.cn/gaikuang/content/post_68514.html",
-          "locator": "粤、客、闽三大汉语方言及潮汕片、雷州片；不使用其中会变动的人口数",
+          "title": "人口语言（中共广东省委港澳工作办公室）",
+          "url": "https://www.gdhmo.gov.cn/gaikuang/content/post_70415.html",
+          "locator": "汉语方言段：广州话为粤方言代表，广东主要分布粤、客、闽方言，潮州话和雷州话同属闽方言；2026-11-15已打开正文，不使用动态人口数字。",
+          "checked_on": "2026-11-15"
+        },
+        {
+          "title": "客家方言篇（中国客家博物馆）",
+          "url": "https://www.kjbwg.cn/zwgk/jy/zskz/t20150504_321.htm",
+          "locator": "第7问“为何将梅县话作为客家方言的代表”，2026-11-15已打开正文核对。",
           "checked_on": "2026-11-15"
         }
-      ]
+      ],
+      "book_scope": "第71—72页支持广东粤、客、闽三大方言及潮汕片、雷州片；“梅县话”的代表性另据中国客家博物馆。通用广东方言链接统一到本卷内部复核已用的post_70415，旧post_68514保留在修订记录，不无痕改历史报告。"
     },
     "figures": [],
     "materials": []
@@ -565,19 +843,42 @@
     "source_id": "M03-ORIG-013",
     "stem": "“确立思想建党、政治建军原则”“制定抗日民族统一战线的策略方针”“明确实行全面抗战路线”，依次对应的会议是（　）。",
     "options": {
-      "A": "遵义会议、古田会议、瓦窑堡会议",
+      "A": "遵义会议、洛川会议、瓦窑堡会议",
       "B": "古田会议、洛川会议、瓦窑堡会议",
-      "C": "瓦窑堡会议、遵义会议、古田会议",
+      "C": "遵义会议、瓦窑堡会议、洛川会议",
       "D": "古田会议、瓦窑堡会议、洛川会议"
     },
     "answer": "D",
-    "analysis": "1929年古田会议解决党和红军建设的重大问题，确立思想建党、政治建军原则。1935年瓦窑堡会议制定抗日民族统一战线的策略方针。1937年洛川会议在全国抗战开始后明确全面抗战路线。遵义会议重点解决当时具有决定意义的军事和组织问题，不是上述三个对应关系中的第一项。",
+    "analysis": "1929年古田会议确立思想建党、政治建军原则。1935年瓦窑堡会议制定抗日民族统一战线的策略方针。1937年洛川会议在全国抗战开始后明确全面抗战路线。遵义会议重点解决当时具有决定意义的军事和组织问题，不能对应第一项。A、C第一项错配为遵义会议，B将第二、三项颠倒，只有D三项均正确。",
     "selection_reason": "按每次会议解决的实际问题区分党史节点，避免把统一战线方针与全面抗战路线混同。",
     "source_question": null,
     "source_answer": null,
-    "edits": [],
+    "edits": [
+      {
+        "type": "distractor_revision",
+        "description": "保留题干及D正确序列，调整A、C，使单独识别第一、第二或第三项均不足以锁定答案。",
+        "revision": "0.2.0",
+        "before": {
+          "options": {
+            "A": "遵义会议、古田会议、瓦窑堡会议",
+            "B": "古田会议、洛川会议、瓦窑堡会议",
+            "C": "瓦窑堡会议、遵义会议、古田会议",
+            "D": "古田会议、瓦窑堡会议、洛川会议"
+          }
+        },
+        "after": {
+          "options": {
+            "A": "遵义会议、洛川会议、瓦窑堡会议",
+            "B": "古田会议、洛川会议、瓦窑堡会议",
+            "C": "遵义会议、瓦窑堡会议、洛川会议",
+            "D": "古田会议、瓦窑堡会议、洛川会议"
+          }
+        },
+        "version": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_solved_external_review_pending",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "逐项辨析；依据用户讲义相关主题原创，时政、法律及专门事实补充核对所列一手或政府公开资料。",
       "checked_on": "2026-11-15",
       "internal_cross_review": {
@@ -585,6 +886,23 @@
         "report": "核验记录/politics_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "D"
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "D",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "analysis",
+          "edits",
+          "options"
+        ]
       }
     },
     "provenance": {
@@ -633,13 +951,20 @@
       "D": "“雪龙2”号是我国自主建造的极地科考破冰船"
     },
     "answer": "C",
-    "analysis": "C919是单通道干线客机，不是双通道宽体机，故C错误。其余三项的装备性质与功能对应正确。识别科技名词时要把对象、用途和技术类别联系起来；本题不使用会变化的机组数量、交付数量或下潜次数。",
+    "analysis": "C919是单通道干线客机，不是双通道宽体机，故选C。“大型干线客机”不意味着采用双通道宽体布局。华龙一号属于自主三代压水堆核电技术，奋斗者号属于全海深载人潜水器，A、B正确。讲义提及的“雪龙”号由乌克兰建造，我国购入后改装；“雪龙2”号则是我国首艘自主建造的极地科考破冰船，不能混为同一艘船，D正确。讲义第107页未完整列出C919的单通道属性与雪龙2号的上述性质，具体依据另见所列官方资料。",
     "selection_reason": "轮换到核电、深海、航空与极地装备，避免再次堆叠探月及科学卫星题材。",
     "source_question": null,
     "source_answer": null,
-    "edits": [],
+    "edits": [
+      {
+        "type": "analysis_and_provenance",
+        "description": "补清大型干线与单/双通道的不同维度，以及雪龙号、雪龙2号的建造来源区别；题面和答案C不变。",
+        "revision": "0.2.0",
+        "version": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_solved_external_review_pending",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "逐项辨析；依据用户讲义相关主题原创，时政、法律及专门事实补充核对所列一手或政府公开资料。",
       "checked_on": "2026-11-15",
       "internal_cross_review": {
@@ -647,6 +972,23 @@
         "report": "核验记录/politics_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "C"
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "C",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "analysis",
+          "edits",
+          "provenance"
+        ]
       }
     },
     "provenance": {
@@ -677,10 +1019,17 @@
         {
           "title": "我国自主建造的雪龙2号极地科学考察破冰船交付使用",
           "url": "https://www.miit.gov.cn/jgsj/zbes/cbgy/art/2020/art_8580100d54eb4a61b105df8b455e4d75.html",
-          "locator": "2019年交付、国内自主建造及极地科考破冰船属性",
+          "locator": "2019年交付及我国首艘自主建造的极地科学考察破冰船属性；本次已打开工业和信息化部正文。自主建造不等于完全自主设计。",
+          "checked_on": "2026-11-15"
+        },
+        {
+          "title": "南极考察船（武汉大学中国南极测绘研究中心）",
+          "url": "https://pole.whu.edu.cn/cn/gb_article.php?modid=03005",
+          "locator": "“雪龙”号考察船段：由乌克兰赫尔松船厂建造，中国购进后改装；本次读取官方科研机构页面的检索正文提取，直接打开返回403，不记作网页全文读取。",
           "checked_on": "2026-11-15"
         }
-      ]
+      ],
+      "book_scope": "第107页有华龙一号、奋斗者号和C919大型干线客机等主题，提到的是“雪龙号”而非“雪龙2”号；压水堆、C919单通道及雪龙2自主建造等具体属性据外部官方资料核对。"
     },
     "figures": [],
     "materials": []
@@ -706,7 +1055,7 @@
     "source_answer": null,
     "edits": [],
     "verification": {
-      "status": "editor_solved_external_review_pending",
+      "status": "claude_reviewed_v010_unchanged",
       "method": "逐项辨析；依据用户讲义相关主题原创，时政、法律及专门事实补充核对所列一手或政府公开资料。",
       "checked_on": "2026-11-15",
       "internal_cross_review": {
@@ -714,6 +1063,14 @@
         "report": "核验记录/politics_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "C"
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "C",
+        "key_result": "accepted_after_review"
       }
     },
     "provenance": {
@@ -798,16 +1155,29 @@
     },
     "source_answer": "A",
     "answer": "A",
-    "analysis": "文段要把具有中国特色与具有全球价值统一起来，“兼备”表示两方面同时具备。中西“互镜”强调通过比较和对话认识自己，因此说互镜“意味着”养成文化自觉，衔接自然。第三空又要与后文“通过对话、互通获得自知之明”相照应：“武断、狂妄的自尊”是不顾他者和事实、自以为是的态度，正是文段所否定的。B的“臆断”侧重凭猜测作判断，和这里自尊的态度及“狂妄”的搭配不及“武断”；C把互镜与文化自觉写成“象征”关系，D的“决断”也没有体现需要排除的自大态度。三空合看，A最恰当。",
+    "analysis": "第一空的“兼备、兼容、兼有、兼顾”都指向同时兼取两个方面，单凭这一空不足以稳健定项。第二空是在说明互镜对文化自觉的意义，“意味着”衔接最自然；“包含、象征、表达”没有准确呈现这里的关系。第三空需要与“狂妄”并列并修饰“自尊”，“武断”所表达的不顾事实、主观自信的态度最贴切；“臆断”侧重凭猜测作出判断，用作这里的定语不及“武断”自然。“决断”也没有题干所否定的自大意味。结合后两空，A最恰当。",
     "selection_reason": "在中西互鉴的关系中辨析近义词，依靠三空相互约束，不将“同义并列”当机械标签。",
     "edits": [
       {
         "type": "layout_only",
-        "description": "合并PDF行末硬换行，去掉中文与数字间的排版空格及填空线两侧空格；单独保留设问段，不改选项次序。"
+        "description": "合并PDF行末硬换行，去掉中文与数字间的排版空格及填空线两侧空格；单独保留设问段，不改选项次序。",
+        "version": "0.1.0"
+      },
+      {
+        "type": "analysis_refinement",
+        "description": "按后两空共同约束重写解析，保留A；第一空不再被描述成单独定项依据。",
+        "revision": "0.2.0",
+        "version": "0.2.0"
+      },
+      {
+        "type": "source_verification_update",
+        "description": "将初编阶段“未逐字复核江浙原PDF”的当前状态更新为Claude已核0.1.0；记录核对者、版本、物理页码、git blob与已知差异，保留初编过程及原始源对象。",
+        "revision": "0.2.0",
+        "version": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "independent_answer": "A",
       "source_answer_available": true,
       "source_answer_agreement": true,
@@ -822,12 +1192,48 @@
         "old_output_matches": [],
         "limit": "只说明本次可读语料检索未命中，不证明用户从未做过，也不等同对全部图片或扫描PDF作了去重。"
       },
-      "source_check": "核对江浙题库完整题面、来源定位、质量标记和配套答案；原PDF位于源记录所指另一仓库，本轮未逐字复核该PDF。",
+      "source_check": "初编已核对江浙题库题面、来源定位及配套参考答案；后续Claude对0.1.0独立外审时从来源仓库取得对应PDF，git blob SHA与本题source_locators一致，并逐字比较题干与四选项。排除空白与排版分行后，0.1.0题干（含标点）与四选项核对一致。本次GPT依据留存核对记录更新状态，未冒称自己重新下载并逐页目检。",
       "internal_cross_review": {
         "status": "completed",
         "report": "核验记录/verbal_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "A"
+      },
+      "source_pdf_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "report_commit": "ec1e3e6",
+        "pdf_file": "2022年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "pdf_git_blob_sha": "e5f7736531d4616c23a3d51856695fb309bf27c8",
+        "blob_match": true,
+        "pdf_pages": [
+          6
+        ],
+        "comparison": "排除空白与排版分行后，0.1.0题干（含标点）与四选项核对一致。",
+        "subsequent_change": null,
+        "evidence": [
+          "核验记录/claude_review/verbal/pdf_sources_verified.json",
+          "核验记录/claude_review/verbal/jz_pdf_compare.json",
+          "核验记录/claude_review/verbal/review_comparison.json"
+        ]
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "A",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "analysis",
+          "edits",
+          "source_notice",
+          "verification"
+        ]
       }
     },
     "source_locators": {
@@ -893,7 +1299,8 @@
         "page_numbering": "PDF physical page, 1-based"
       },
       "quality_flags": []
-    }
+    },
+    "source_notice": "题面取自2022年浙江A类网友回忆版，原PDF页脚标注为粉笔用户生成；本卷保留源ID、源对象、PDF文件与git blob定位。源参考答案来自整理库配套解析，不冒称官方公布答案。Claude已对0.1.0对应源PDF作逐字核对；该核对证明转写与所列文件的关系，不改变回忆版身份。"
   },
   {
     "number": 17,
@@ -963,15 +1370,35 @@
     "edits": [
       {
         "type": "layout_only",
-        "description": "合并PDF行末硬换行，去掉中文与数字间的排版空格及填空线两侧空格；单独保留设问段，不改选项次序。"
+        "description": "合并PDF行末硬换行，去掉中文与数字间的排版空格及填空线两侧空格；单独保留设问段，不改选项次序。",
+        "version": "0.2.0"
       },
       {
         "type": "copy_edit",
-        "description": "将源库“一颗绿绒嵩”订正为“一株绿绒蒿”，修正植物名与量词；不涉及三处填空和选项。原源对象完整保留，本轮未取得江浙原PDF逐字核对，不把订正冒称源卷原字。"
+        "description": "初编将源库“一颗绿绒嵩”订正为“一株绿绒蒿”，修正植物名与量词，不涉及三处填空和选项；初编时未取得原PDF。后续Claude对0.1.0外审核得对应原PDF第11页也写作“一颗绿绒嵩”，说明错字来自源文件本身。现保留规范的“一株绿绒蒿”，原源对象不改，订正不冒称源卷原字。",
+        "version": "0.2.0"
+      },
+      {
+        "type": "source_verification_update",
+        "description": "将初编阶段“未逐字复核江浙原PDF”的当前状态更新为Claude已核0.1.0；记录核对者、版本、物理页码、git blob与已知差异，保留初编过程及原始源对象。",
+        "revision": "0.2.0",
+        "version": "0.2.0"
+      },
+      {
+        "type": "edit_record_update",
+        "description": "更新现行订正说明的时间范围；旧说明原文保存在before中，避免用后来的核对反写初编历史。",
+        "revision": "0.2.0",
+        "before": {
+          "copy_edit_description": "将源库“一颗绿绒嵩”订正为“一株绿绒蒿”，修正植物名与量词；不涉及三处填空和选项。原源对象完整保留，本轮未取得江浙原PDF逐字核对，不把订正冒称源卷原字。"
+        },
+        "after": {
+          "copy_edit_description": "初编将源库“一颗绿绒嵩”订正为“一株绿绒蒿”，修正植物名与量词，不涉及三处填空和选项；初编时未取得原PDF。后续Claude对0.1.0外审核得对应原PDF第11页也写作“一颗绿绒嵩”，说明错字来自源文件本身。现保留规范的“一株绿绒蒿”，原源对象不改，订正不冒称源卷原字。"
+        },
+        "version": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "independent_answer": "D",
       "source_answer_available": true,
       "source_answer_agreement": true,
@@ -986,12 +1413,46 @@
         "old_output_matches": [],
         "limit": "只说明本次可读语料检索未命中，不证明用户从未做过，也不等同对全部图片或扫描PDF作了去重。"
       },
-      "source_check": "核对江浙题库完整题面、来源定位、质量标记和配套答案；原PDF位于源记录所指另一仓库，本轮未逐字复核该PDF。",
+      "source_check": "初编已核对江浙题库题面、来源定位及配套参考答案；后续Claude对0.1.0独立外审时从来源仓库取得对应PDF，git blob SHA与本题source_locators一致，并逐字比较题干与四选项。仅第17题“颗→株”“嵩→蒿”为已记录的有意订正；原PDF第11页本就写作“一颗绿绒嵩”。本次GPT依据留存核对记录更新状态，未冒称自己重新下载并逐页目检。",
       "internal_cross_review": {
         "status": "completed",
         "report": "核验记录/verbal_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "D"
+      },
+      "source_pdf_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "report_commit": "ec1e3e6",
+        "pdf_file": "2023年江苏公务员考试《行测》真题（A类）.pdf",
+        "pdf_git_blob_sha": "07c8f03595cce0f2acb456b5c5573f24715f4516",
+        "blob_match": true,
+        "pdf_pages": [
+          11
+        ],
+        "comparison": "仅第17题“颗→株”“嵩→蒿”为已记录的有意订正；原PDF第11页本就写作“一颗绿绒嵩”。",
+        "subsequent_change": null,
+        "evidence": [
+          "核验记录/claude_review/verbal/pdf_sources_verified.json",
+          "核验记录/claude_review/verbal/jz_pdf_compare.json",
+          "核验记录/claude_review/verbal/review_comparison.json"
+        ]
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "D",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "edits",
+          "verification"
+        ]
       }
     },
     "source_locators": {
@@ -1099,7 +1560,7 @@
     "selection_reason": "在多个第一空皆可搭配时，用第二空所表达的解决关系完成选择。",
     "edits": [],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
+      "status": "claude_reviewed_v010_unchanged",
       "independent_answer": "B",
       "source_answer_available": true,
       "source_answer_agreement": true,
@@ -1120,6 +1581,14 @@
         "report": "核验记录/verbal_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "B"
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "B",
+        "key_result": "accepted_after_review"
       }
     },
     "source_locators": {
@@ -1211,16 +1680,29 @@
     },
     "source_answer": "A",
     "answer": "A",
-    "analysis": "第一空解释前面的“一场对抗”，须能表达读者与作者之间激烈争辩，“唇枪舌剑”合适。“雄辩高谈”只重能言善辩，“舌战群儒”还增加了与多人辩论的情境，文段没有这一层意思。“剑拔弩张”虽有对抗意味，但第二空“巧舌如簧”含有狡辩意味，与读者被精彩论述折服的语气不合。“字字珠玑”可形容论述精辟优美，“沉醉”又与被电话铃声拽回现实相呼应，故选A。",
+    "analysis": "第三空四词都可表达进入他人思维、暂时脱离现实的状态，不能因为“沉浸在……里”顺口就单独选C，也不能把“沉醉”说成唯一能与拽回现实相呼应的词。定项主要靠前两空：第一空承接“一场对抗”，A“唇枪舌剑”体现双方激烈争辩；B“雄辩高谈”重在能言善辩，不突出双方对抗，C“舌战群儒”额外引入一对多的场面。D“剑拔弩张”虽有对抗意味，但第二空“巧舌如簧”带有狡辩意味，不合读者被精彩论述折服的语气。A“字字珠玑”能形容论述精辟优美，三空合看选A。",
     "selection_reason": "成语同时受论述态度与对话关系限制，不只看字面上是否有争辩或沉浸。",
     "edits": [
       {
         "type": "layout_only",
-        "description": "合并PDF行末硬换行，去掉中文与数字间的排版空格及填空线两侧空格；单独保留设问段，不改选项次序。"
+        "description": "合并PDF行末硬换行，去掉中文与数字间的排版空格及填空线两侧空格；单独保留设问段，不改选项次序。",
+        "version": "0.1.0"
+      },
+      {
+        "type": "analysis_refinement",
+        "description": "删去容易暗示“沉醉”独优的说明，强调第一、二空决定组合。",
+        "revision": "0.2.0",
+        "version": "0.2.0"
+      },
+      {
+        "type": "source_verification_update",
+        "description": "将初编阶段“未逐字复核江浙原PDF”的当前状态更新为Claude已核0.1.0；记录核对者、版本、物理页码、git blob与已知差异，保留初编过程及原始源对象。",
+        "revision": "0.2.0",
+        "version": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "independent_answer": "A",
       "source_answer_available": true,
       "source_answer_agreement": true,
@@ -1235,12 +1717,48 @@
         "old_output_matches": [],
         "limit": "只说明本次可读语料检索未命中，不证明用户从未做过，也不等同对全部图片或扫描PDF作了去重。"
       },
-      "source_check": "核对江浙题库完整题面、来源定位、质量标记和配套答案；原PDF位于源记录所指另一仓库，本轮未逐字复核该PDF。",
+      "source_check": "初编已核对江浙题库题面、来源定位及配套参考答案；后续Claude对0.1.0独立外审时从来源仓库取得对应PDF，git blob SHA与本题source_locators一致，并逐字比较题干与四选项。排除空白与排版分行后，0.1.0题干（含标点）与四选项核对一致。本次GPT依据留存核对记录更新状态，未冒称自己重新下载并逐页目检。",
       "internal_cross_review": {
         "status": "completed",
         "report": "核验记录/verbal_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "A"
+      },
+      "source_pdf_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "report_commit": "ec1e3e6",
+        "pdf_file": "2023年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "pdf_git_blob_sha": "5bcc6163c999c3910d10f36f6d8bea8a57df1417",
+        "blob_match": true,
+        "pdf_pages": [
+          7
+        ],
+        "comparison": "排除空白与排版分行后，0.1.0题干（含标点）与四选项核对一致。",
+        "subsequent_change": null,
+        "evidence": [
+          "核验记录/claude_review/verbal/pdf_sources_verified.json",
+          "核验记录/claude_review/verbal/jz_pdf_compare.json",
+          "核验记录/claude_review/verbal/review_comparison.json"
+        ]
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "A",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "analysis",
+          "edits",
+          "source_notice",
+          "verification"
+        ]
       }
     },
     "source_locators": {
@@ -1296,7 +1814,8 @@
         "page_numbering": "PDF physical page, 1-based"
       },
       "quality_flags": []
-    }
+    },
+    "source_notice": "题面取自2023年浙江A类网友回忆版，原PDF页脚标注为粉笔用户生成；本卷保留源ID、源对象、PDF文件与git blob定位。源参考答案来自整理库配套解析，不冒称官方公布答案。Claude已对0.1.0对应源PDF作逐字核对；该核对证明转写与所列文件的关系，不改变回忆版身份。"
   },
   {
     "number": 20,
@@ -1338,7 +1857,7 @@
     "selection_reason": "根据一套做法反推它所追求的研究立场，辨明客观、公正、真实三个近邻概念。",
     "edits": [],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
+      "status": "claude_reviewed_v010_unchanged",
       "independent_answer": "D",
       "source_answer_available": true,
       "source_answer_agreement": true,
@@ -1359,6 +1878,14 @@
         "report": "核验记录/verbal_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "D"
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "D",
+        "key_result": "accepted_after_review"
       }
     },
     "source_locators": {
@@ -1450,16 +1977,29 @@
     },
     "source_answer": "D",
     "answer": "D",
-    "analysis": "文段先指出法学理论只是对生活的抽象，不能把现实全部装进既有命题；随后提出学者应不断考察经验，以此理解真实的法律世界。D把前提与落脚点连起来：认识理论的边界，并加强理论同现实的对接。A只概括了局限性，停在为何需要调整研究方式这一层；B说的是促进理论发展完善，文段直接强调的却是如何理解生动的法律世界；C把“理论法学学者”的要求扩大到所有法律工作，又将其变为必须通晓某类经验。选D。",
+    "analysis": "文段先说明法学理论是对生活的抽象，不能以抽象命题规训现实；尾句再要求理论法学学者不断考察经验，以此理解生动的法律世界。D“重视理论与真实世界的对接”概括了尾句这一要求。“意识到理论话语的局限”是提出该要求的前提，论述最后落在如何理解真实法律世界上。A只概括前面的局限性，未落到最后的要求；B转为促进理论发展完善，不是文段直接强调的理解现实；C扩大到所有法律工作，又提出必须通晓某类经验，均不如D贴近。",
     "selection_reason": "在问题诊断与实际主张之间找论述落点；不以出现“必须”一词代替整段理解。",
     "edits": [
       {
         "type": "layout_only",
-        "description": "合并PDF行末硬换行，去掉中文与数字间的排版空格及填空线两侧空格；单独保留设问段，不改选项次序。"
+        "description": "合并PDF行末硬换行，去掉中文与数字间的排版空格及填空线两侧空格；单独保留设问段，不改选项次序。",
+        "version": "0.1.0"
+      },
+      {
+        "type": "analysis_refinement",
+        "description": "明确D概括对接要求，局限性是论述前提，不替D扩写未说内容。",
+        "revision": "0.2.0",
+        "version": "0.2.0"
+      },
+      {
+        "type": "source_verification_update",
+        "description": "将初编阶段“未逐字复核江浙原PDF”的当前状态更新为Claude已核0.1.0；记录核对者、版本、物理页码、git blob与已知差异，保留初编过程及原始源对象。",
+        "revision": "0.2.0",
+        "version": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "independent_answer": "D",
       "source_answer_available": true,
       "source_answer_agreement": true,
@@ -1474,12 +2014,47 @@
         "old_output_matches": [],
         "limit": "只说明本次可读语料检索未命中，不证明用户从未做过，也不等同对全部图片或扫描PDF作了去重。"
       },
-      "source_check": "核对江浙题库完整题面、来源定位、质量标记和配套答案；原PDF位于源记录所指另一仓库，本轮未逐字复核该PDF。",
+      "source_check": "初编已核对江浙题库题面、来源定位及配套参考答案；后续Claude对0.1.0独立外审时从来源仓库取得对应PDF，git blob SHA与本题source_locators一致，并逐字比较题干与四选项。排除空白与排版分行后，0.1.0题干（含标点）与四选项核对一致。本次GPT依据留存核对记录更新状态，未冒称自己重新下载并逐页目检。",
       "internal_cross_review": {
         "status": "completed",
         "report": "核验记录/verbal_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "D"
+      },
+      "source_pdf_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "report_commit": "ec1e3e6",
+        "pdf_file": "2020年江苏公务员考试《行测》真题（A类）.pdf",
+        "pdf_git_blob_sha": "00f42a7f169be020b83a9e1149f5f5a35cf4f059",
+        "blob_match": true,
+        "pdf_pages": [
+          4
+        ],
+        "comparison": "排除空白与排版分行后，0.1.0题干（含标点）与四选项核对一致。",
+        "subsequent_change": null,
+        "evidence": [
+          "核验记录/claude_review/verbal/pdf_sources_verified.json",
+          "核验记录/claude_review/verbal/jz_pdf_compare.json",
+          "核验记录/claude_review/verbal/review_comparison.json"
+        ]
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "D",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "analysis",
+          "edits",
+          "verification"
+        ]
       }
     },
     "source_locators": {
@@ -1605,11 +2180,18 @@
     "edits": [
       {
         "type": "layout_only",
-        "description": "合并PDF行末硬换行，去掉中文与数字间的排版空格及填空线两侧空格；单独保留设问段，不改选项次序。"
+        "description": "合并PDF行末硬换行，去掉中文与数字间的排版空格及填空线两侧空格；单独保留设问段，不改选项次序。",
+        "version": "0.1.0"
+      },
+      {
+        "type": "source_verification_update",
+        "description": "将初编阶段“未逐字复核江浙原PDF”的当前状态更新为Claude已核0.1.0；记录核对者、版本、物理页码、git blob与已知差异，保留初编过程及原始源对象。",
+        "revision": "0.2.0",
+        "version": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "independent_answer": "C",
       "source_answer_available": true,
       "source_answer_agreement": true,
@@ -1624,12 +2206,47 @@
         "old_output_matches": [],
         "limit": "只说明本次可读语料检索未命中，不证明用户从未做过，也不等同对全部图片或扫描PDF作了去重。"
       },
-      "source_check": "核对江浙题库完整题面、来源定位、质量标记和配套答案；原PDF位于源记录所指另一仓库，本轮未逐字复核该PDF。",
+      "source_check": "初编已核对江浙题库题面、来源定位及配套参考答案；后续Claude对0.1.0独立外审时从来源仓库取得对应PDF，git blob SHA与本题source_locators一致，并逐字比较题干与四选项。排除空白与排版分行后，0.1.0题干（含标点）与四选项核对一致。本次GPT依据留存核对记录更新状态，未冒称自己重新下载并逐页目检。",
       "internal_cross_review": {
         "status": "completed",
         "report": "核验记录/verbal_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "C"
+      },
+      "source_pdf_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "report_commit": "ec1e3e6",
+        "pdf_file": "2022年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "pdf_git_blob_sha": "e5f7736531d4616c23a3d51856695fb309bf27c8",
+        "blob_match": true,
+        "pdf_pages": [
+          8
+        ],
+        "comparison": "排除空白与排版分行后，0.1.0题干（含标点）与四选项核对一致。",
+        "subsequent_change": null,
+        "evidence": [
+          "核验记录/claude_review/verbal/pdf_sources_verified.json",
+          "核验记录/claude_review/verbal/jz_pdf_compare.json",
+          "核验记录/claude_review/verbal/review_comparison.json"
+        ]
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "C",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "edits",
+          "source_notice",
+          "verification"
+        ]
       }
     },
     "source_locators": {
@@ -1685,7 +2302,8 @@
         "page_numbering": "PDF physical page, 1-based"
       },
       "quality_flags": []
-    }
+    },
+    "source_notice": "题面取自2022年浙江A类网友回忆版，原PDF页脚标注为粉笔用户生成；本卷保留源ID、源对象、PDF文件与git blob定位。源参考答案来自整理库配套解析，不冒称官方公布答案。Claude已对0.1.0对应源PDF作逐字核对；该核对证明转写与所列文件的关系，不改变回忆版身份。"
   },
   {
     "number": 23,
@@ -1765,11 +2383,18 @@
     "edits": [
       {
         "type": "layout_only",
-        "description": "合并PDF行末硬换行，去掉中文与数字间的排版空格及填空线两侧空格；单独保留设问段，不改选项次序。"
+        "description": "合并PDF行末硬换行，去掉中文与数字间的排版空格及填空线两侧空格；单独保留设问段，不改选项次序。",
+        "version": "0.1.0"
+      },
+      {
+        "type": "source_verification_update",
+        "description": "将初编阶段“未逐字复核江浙原PDF”的当前状态更新为Claude已核0.1.0；记录核对者、版本、物理页码、git blob与已知差异，保留初编过程及原始源对象。",
+        "revision": "0.2.0",
+        "version": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "independent_answer": "D",
       "source_answer_available": true,
       "source_answer_agreement": true,
@@ -1784,12 +2409,48 @@
         "old_output_matches": [],
         "limit": "只说明本次可读语料检索未命中，不证明用户从未做过，也不等同对全部图片或扫描PDF作了去重。"
       },
-      "source_check": "核对江浙题库完整题面、来源定位、质量标记和配套答案；原PDF位于源记录所指另一仓库，本轮未逐字复核该PDF。",
+      "source_check": "初编已核对江浙题库题面、来源定位及配套参考答案；后续Claude对0.1.0独立外审时从来源仓库取得对应PDF，git blob SHA与本题source_locators一致，并逐字比较题干与四选项。第23题跨页处的页脚水印未进入题干，属于正确清理，题目文字未因此改变。本次GPT依据留存核对记录更新状态，未冒称自己重新下载并逐页目检。",
       "internal_cross_review": {
         "status": "completed",
         "report": "核验记录/verbal_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "D"
+      },
+      "source_pdf_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "report_commit": "ec1e3e6",
+        "pdf_file": "2021年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "pdf_git_blob_sha": "bf44d1314deecbe22e6b2bf45ccec0c5bc9de703",
+        "blob_match": true,
+        "pdf_pages": [
+          6,
+          7
+        ],
+        "comparison": "第23题跨页处的页脚水印未进入题干，属于正确清理，题目文字未因此改变。",
+        "subsequent_change": null,
+        "evidence": [
+          "核验记录/claude_review/verbal/pdf_sources_verified.json",
+          "核验记录/claude_review/verbal/jz_pdf_compare.json",
+          "核验记录/claude_review/verbal/review_comparison.json"
+        ]
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "D",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "edits",
+          "source_notice",
+          "verification"
+        ]
       }
     },
     "source_locators": {
@@ -1856,7 +2517,8 @@
         "page_numbering": "PDF physical page, 1-based"
       },
       "quality_flags": []
-    }
+    },
+    "source_notice": "题面取自2021年浙江A类网友回忆版，原PDF页脚标注为粉笔用户生成；本卷保留源ID、源对象、PDF文件与git blob定位。源参考答案来自整理库配套解析，不冒称官方公布答案。Claude已对0.1.0对应源PDF作逐字核对；该核对证明转写与所列文件的关系，不改变回忆版身份。"
   },
   {
     "number": 24,
@@ -1926,11 +2588,18 @@
     "edits": [
       {
         "type": "layout_only",
-        "description": "合并PDF行末硬换行，去掉中文与数字间的排版空格及填空线两侧空格；单独保留设问段，不改选项次序。"
+        "description": "合并PDF行末硬换行，去掉中文与数字间的排版空格及填空线两侧空格；单独保留设问段，不改选项次序。",
+        "version": "0.1.0"
+      },
+      {
+        "type": "source_verification_update",
+        "description": "将初编阶段“未逐字复核江浙原PDF”的当前状态更新为Claude已核0.1.0；记录核对者、版本、物理页码、git blob与已知差异，保留初编过程及原始源对象。",
+        "revision": "0.2.0",
+        "version": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "independent_answer": "D",
       "source_answer_available": true,
       "source_answer_agreement": true,
@@ -1945,12 +2614,46 @@
         "old_output_matches": [],
         "limit": "只说明本次可读语料检索未命中，不证明用户从未做过，也不等同对全部图片或扫描PDF作了去重。"
       },
-      "source_check": "核对江浙题库完整题面、来源定位、质量标记和配套答案；原PDF位于源记录所指另一仓库，本轮未逐字复核该PDF。",
+      "source_check": "初编已核对江浙题库题面、来源定位及配套参考答案；后续Claude对0.1.0独立外审时从来源仓库取得对应PDF，git blob SHA与本题source_locators一致，并逐字比较题干与四选项。排除空白与排版分行后，0.1.0题干（含标点）与四选项核对一致。本次GPT依据留存核对记录更新状态，未冒称自己重新下载并逐页目检。",
       "internal_cross_review": {
         "status": "completed",
         "report": "核验记录/verbal_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "D"
+      },
+      "source_pdf_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "report_commit": "ec1e3e6",
+        "pdf_file": "2022年江苏公务员考试《行测》真题（A类）....pdf",
+        "pdf_git_blob_sha": "0c2016b9c742eda719a376a8a63c41daa6d3ec3b",
+        "blob_match": true,
+        "pdf_pages": [
+          5
+        ],
+        "comparison": "排除空白与排版分行后，0.1.0题干（含标点）与四选项核对一致。",
+        "subsequent_change": null,
+        "evidence": [
+          "核验记录/claude_review/verbal/pdf_sources_verified.json",
+          "核验记录/claude_review/verbal/jz_pdf_compare.json",
+          "核验记录/claude_review/verbal/review_comparison.json"
+        ]
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "D",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "edits",
+          "verification"
+        ]
       }
     },
     "source_locators": {
@@ -2086,11 +2789,18 @@
     "edits": [
       {
         "type": "layout_only",
-        "description": "合并PDF行末硬换行，去掉中文与数字间的排版空格及填空线两侧空格；单独保留设问段，不改选项次序。"
+        "description": "合并PDF行末硬换行，去掉中文与数字间的排版空格及填空线两侧空格；单独保留设问段，不改选项次序。",
+        "version": "0.1.0"
+      },
+      {
+        "type": "source_verification_update",
+        "description": "将初编阶段“未逐字复核江浙原PDF”的当前状态更新为Claude已核0.1.0；记录核对者、版本、物理页码、git blob与已知差异，保留初编过程及原始源对象。",
+        "revision": "0.2.0",
+        "version": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "independent_answer": "B",
       "source_answer_available": true,
       "source_answer_agreement": true,
@@ -2105,12 +2815,47 @@
         "old_output_matches": [],
         "limit": "只说明本次可读语料检索未命中，不证明用户从未做过，也不等同对全部图片或扫描PDF作了去重。"
       },
-      "source_check": "核对江浙题库完整题面、来源定位、质量标记和配套答案；原PDF位于源记录所指另一仓库，本轮未逐字复核该PDF。",
+      "source_check": "初编已核对江浙题库题面、来源定位及配套参考答案；后续Claude对0.1.0独立外审时从来源仓库取得对应PDF，git blob SHA与本题source_locators一致，并逐字比较题干与四选项。排除空白与排版分行后，0.1.0题干（含标点）与四选项核对一致。本次GPT依据留存核对记录更新状态，未冒称自己重新下载并逐页目检。",
       "internal_cross_review": {
         "status": "completed",
         "report": "核验记录/verbal_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "B"
+      },
+      "source_pdf_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "report_commit": "ec1e3e6",
+        "pdf_file": "2021年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "pdf_git_blob_sha": "bf44d1314deecbe22e6b2bf45ccec0c5bc9de703",
+        "blob_match": true,
+        "pdf_pages": [
+          8
+        ],
+        "comparison": "排除空白与排版分行后，0.1.0题干（含标点）与四选项核对一致。",
+        "subsequent_change": null,
+        "evidence": [
+          "核验记录/claude_review/verbal/pdf_sources_verified.json",
+          "核验记录/claude_review/verbal/jz_pdf_compare.json",
+          "核验记录/claude_review/verbal/review_comparison.json"
+        ]
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "B",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "edits",
+          "source_notice",
+          "verification"
+        ]
       }
     },
     "source_locators": {
@@ -2176,7 +2921,8 @@
         "page_numbering": "PDF physical page, 1-based"
       },
       "quality_flags": []
-    }
+    },
+    "source_notice": "题面取自2021年浙江A类网友回忆版，原PDF页脚标注为粉笔用户生成；本卷保留源ID、源对象、PDF文件与git blob定位。源参考答案来自整理库配套解析，不冒称官方公布答案。Claude已对0.1.0对应源PDF作逐字核对；该核对证明转写与所列文件的关系，不改变回忆版身份。"
   },
   {
     "number": 26,
@@ -2218,7 +2964,7 @@
     "selection_reason": "同时利用方法—原理、指代与因果链，而非只做首句筛选。",
     "edits": [],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
+      "status": "claude_reviewed_v010_unchanged",
       "independent_answer": "C",
       "source_answer_available": true,
       "source_answer_agreement": true,
@@ -2239,6 +2985,14 @@
         "report": "核验记录/verbal_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "C"
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "C",
+        "key_result": "accepted_after_review"
       }
     },
     "source_locators": {
@@ -2303,11 +3057,18 @@
     },
     "source_answer": "D",
     "answer": "D",
-    "analysis": "横线前说明名字识别的形成过程：同一特殊字符反复与自身经历同时出现，动物逐步建立两者的联系。D用条件反射概括这个学习机制，承接最直接。A转向人与动物的互动模式，范围比名字识别大；B“与普通字符完全不同”增加了绝对化的性质判断；C进一步说动物知道自己拥有专属代号，加入了文段没有证明的自我认识。能够对名字作出反应，并不等于理解名字的抽象意义。选D。",
+    "analysis": "横线与前文同属一句，陈述对象是“它们识别名字的方式”：反复经历某个字符伴随自身事件，才建立字符与自己的联系。D以“这”承接上述方式，用条件反射概括反复伴随、建立联系的过程，最合适。B转谈名字与普通字符的地位差别，偏离本句对识别方式的说明，“完全不同”也过强；C转向动物知道自己有专属代号的自我认知，文段只给出建立关联，并未证明这种认识。A又扩大为人与动物的一般互动模式。因此选D，关键是横线对同一句中识别方式的概括。",
     "selection_reason": "从行为证据概括学习机制，防止把可观察反应扩写成主观意识。",
-    "edits": [],
+    "edits": [
+      {
+        "type": "analysis_refinement",
+        "description": "补明“识别名字的方式”这一句内衔接，解释B转向名字地位、C转向自我认知；D不变。",
+        "revision": "0.2.0",
+        "version": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "independent_answer": "D",
       "source_answer_available": true,
       "source_answer_agreement": true,
@@ -2328,6 +3089,22 @@
         "report": "核验记录/verbal_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "D"
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "D",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "analysis",
+          "edits"
+        ]
       }
     },
     "source_locators": {
@@ -2410,7 +3187,7 @@
       "quality_flags": [],
       "notes": []
     },
-    "stem_override": "斑马鱼和蝾螈等少数脊椎动物具有肢体和内脏器官再生的能力，比如成年斑马鱼的心室被切除20%后，其心脏组织在2个月内可完全再生。对于小鼠而言，在胚胎时期的第10~12天以及出生后的第4~14天左右，其心肌细胞可以分裂增殖，而成年小鼠的心肌细胞几乎已经不能分裂增殖，心脏组织一般不再具有再生能力。人类亦是如此，尽管有研究显示成年人的心肌细胞有极低程度的更新，然而，绝大部分心肌细胞已不再分裂增殖。而细胞不分裂增殖，相关基因突变就不会累积在细胞的基因组中，心肌细胞就不会变成肿瘤细胞。相反，肝脏、肠道上皮、皮肤等组织器官再生能力强、细胞分裂增殖旺盛，导致肿瘤相关基因突变累积在细胞基因组中的概率大幅增加，因而更加容易出现肿瘤。\n根据这段文字，下列说法正确的是：",
+    "stem_override": "斑马鱼和蝾螈等少数脊椎动物具有肢体和内脏器官再生的能力，比如成年斑马鱼的心室被切除20%后，其心脏组织在2个月内可完全再生。对于小鼠而言，在胚胎时期的第10～12天以及出生后的第4～14天左右，其心肌细胞可以分裂增殖，而成年小鼠的心肌细胞几乎已经不能分裂增殖，心脏组织一般不再具有再生能力。人类亦是如此，尽管有研究显示成年人的心肌细胞有极低程度的更新，然而，绝大部分心肌细胞已不再分裂增殖。而细胞不分裂增殖，相关基因突变就不会累积在细胞的基因组中，心肌细胞就不会变成肿瘤细胞。相反，肝脏、肠道上皮、皮肤等组织器官再生能力强、细胞分裂增殖旺盛，导致肿瘤相关基因突变累积在细胞基因组中的概率大幅增加，因而更加容易出现肿瘤。\n根据这段文字，下列说法正确的是：",
     "options": {
       "A": "肿瘤细胞会导致相关基因突变",
       "B": "成年人的心肌细胞不能分裂增殖",
@@ -2424,11 +3201,36 @@
     "edits": [
       {
         "type": "layout_only",
-        "description": "合并PDF行末硬换行，去掉中文与数字间的排版空格及填空线两侧空格；单独保留设问段，不改选项次序。"
+        "description": "合并PDF行末硬换行，去掉中文与数字间的排版空格及填空线两侧空格；单独保留设问段，不改选项次序。",
+        "version": "0.1.0"
+      },
+      {
+        "type": "typography",
+        "description": "将“第10~12天”“第4~14天”的半角连接号统一为全角“～”；不改时间范围、选项或答案。",
+        "revision": "0.2.0",
+        "before": {
+          "ranges": [
+            "第10~12天",
+            "第4~14天"
+          ]
+        },
+        "after": {
+          "ranges": [
+            "第10～12天",
+            "第4～14天"
+          ]
+        },
+        "version": "0.2.0"
+      },
+      {
+        "type": "source_verification_update",
+        "description": "将初编阶段“未逐字复核江浙原PDF”的当前状态更新为Claude已核0.1.0；记录核对者、版本、物理页码、git blob与已知差异，保留初编过程及原始源对象。",
+        "revision": "0.2.0",
+        "version": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "independent_answer": "C",
       "source_answer_available": true,
       "source_answer_agreement": true,
@@ -2443,12 +3245,48 @@
         "old_output_matches": [],
         "limit": "只说明本次可读语料检索未命中，不证明用户从未做过，也不等同对全部图片或扫描PDF作了去重。"
       },
-      "source_check": "核对江浙题库完整题面、来源定位、质量标记和配套答案；原PDF位于源记录所指另一仓库，本轮未逐字复核该PDF。",
+      "source_check": "初编已核对江浙题库题面、来源定位及配套参考答案；后续Claude对0.1.0独立外审时从来源仓库取得对应PDF，git blob SHA与本题source_locators一致，并逐字比较题干与四选项。排除空白与排版分行后，0.1.0题干（含标点）与四选项核对一致。本次0.2.0另外将两个范围连接号“~”规范为“～”，不把此标点变化记成源PDF原字。本次GPT依据留存核对记录更新状态，未冒称自己重新下载并逐页目检。",
       "internal_cross_review": {
         "status": "completed",
         "report": "核验记录/verbal_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "C"
+      },
+      "source_pdf_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "report_commit": "ec1e3e6",
+        "pdf_file": "2023年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "pdf_git_blob_sha": "5bcc6163c999c3910d10f36f6d8bea8a57df1417",
+        "blob_match": true,
+        "pdf_pages": [
+          9
+        ],
+        "comparison": "排除空白与排版分行后，0.1.0题干（含标点）与四选项核对一致。",
+        "subsequent_change": "本次0.2.0另外将两个范围连接号“~”规范为“～”，不把此标点变化记成源PDF原字。",
+        "evidence": [
+          "核验记录/claude_review/verbal/pdf_sources_verified.json",
+          "核验记录/claude_review/verbal/jz_pdf_compare.json",
+          "核验记录/claude_review/verbal/review_comparison.json"
+        ]
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "C",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "edits",
+          "source_notice",
+          "stem_override",
+          "verification"
+        ]
       }
     },
     "source_locators": {
@@ -2504,7 +3342,8 @@
         "page_numbering": "PDF physical page, 1-based"
       },
       "quality_flags": []
-    }
+    },
+    "source_notice": "题面取自2023年浙江A类网友回忆版，原PDF页脚标注为粉笔用户生成；本卷保留源ID、源对象、PDF文件与git blob定位。源参考答案来自整理库配套解析，不冒称官方公布答案。Claude已对0.1.0对应源PDF作逐字核对；该核对证明转写与所列文件的关系，不改变回忆版身份。"
   },
   {
     "number": 29,
@@ -2574,11 +3413,18 @@
     "edits": [
       {
         "type": "layout_only",
-        "description": "合并PDF行末硬换行，去掉中文与数字间的排版空格及填空线两侧空格；单独保留设问段，不改选项次序。"
+        "description": "合并PDF行末硬换行，去掉中文与数字间的排版空格及填空线两侧空格；单独保留设问段，不改选项次序。",
+        "version": "0.1.0"
+      },
+      {
+        "type": "source_verification_update",
+        "description": "将初编阶段“未逐字复核江浙原PDF”的当前状态更新为Claude已核0.1.0；记录核对者、版本、物理页码、git blob与已知差异，保留初编过程及原始源对象。",
+        "revision": "0.2.0",
+        "version": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "independent_answer": "A",
       "source_answer_available": true,
       "source_answer_agreement": true,
@@ -2593,12 +3439,47 @@
         "old_output_matches": [],
         "limit": "只说明本次可读语料检索未命中，不证明用户从未做过，也不等同对全部图片或扫描PDF作了去重。"
       },
-      "source_check": "核对江浙题库完整题面、来源定位、质量标记和配套答案；原PDF位于源记录所指另一仓库，本轮未逐字复核该PDF。",
+      "source_check": "初编已核对江浙题库题面、来源定位及配套参考答案；后续Claude对0.1.0独立外审时从来源仓库取得对应PDF，git blob SHA与本题source_locators一致，并逐字比较题干与四选项。排除空白与排版分行后，0.1.0题干（含标点）与四选项核对一致。本次GPT依据留存核对记录更新状态，未冒称自己重新下载并逐页目检。",
       "internal_cross_review": {
         "status": "completed",
         "report": "核验记录/verbal_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "A"
+      },
+      "source_pdf_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "report_commit": "ec1e3e6",
+        "pdf_file": "2023年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "pdf_git_blob_sha": "5bcc6163c999c3910d10f36f6d8bea8a57df1417",
+        "blob_match": true,
+        "pdf_pages": [
+          10
+        ],
+        "comparison": "排除空白与排版分行后，0.1.0题干（含标点）与四选项核对一致。",
+        "subsequent_change": null,
+        "evidence": [
+          "核验记录/claude_review/verbal/pdf_sources_verified.json",
+          "核验记录/claude_review/verbal/jz_pdf_compare.json",
+          "核验记录/claude_review/verbal/review_comparison.json"
+        ]
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "A",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "edits",
+          "source_notice",
+          "verification"
+        ]
       }
     },
     "source_locators": {
@@ -2654,7 +3535,8 @@
         "page_numbering": "PDF physical page, 1-based"
       },
       "quality_flags": []
-    }
+    },
+    "source_notice": "题面取自2023年浙江A类网友回忆版，原PDF页脚标注为粉笔用户生成；本卷保留源ID、源对象、PDF文件与git blob定位。源参考答案来自整理库配套解析，不冒称官方公布答案。Claude已对0.1.0对应源PDF作逐字核对；该核对证明转写与所列文件的关系，不改变回忆版身份。"
   },
   {
     "number": 30,
@@ -2696,7 +3578,7 @@
     "selection_reason": "判断话题会沿哪条问题线继续，而非把文末出现的术语重复作为下文。",
     "edits": [],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
+      "status": "claude_reviewed_v010_unchanged",
       "independent_answer": "D",
       "source_answer_available": true,
       "source_answer_agreement": true,
@@ -2717,6 +3599,14 @@
         "report": "核验记录/verbal_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "D"
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "D",
+        "key_result": "accepted_after_review"
       }
     },
     "source_locators": {
@@ -2860,11 +3750,19 @@
     "selection_reason": "根号与九项长度提示分组，训练先识别计数/观察单位。",
     "edits": [],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_unchanged",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "A",
+        "key_result": "accepted_after_review"
+      }
     },
     "source_locators": {
       "original_number": 31,
@@ -2969,11 +3867,19 @@
     "selection_reason": "同一数列内两条规律并行，避免把相邻数强行拟合成单链。",
     "edits": [],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_unchanged",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "A",
+        "key_result": "accepted_after_review"
+      }
     },
     "source_locators": {
       "original_number": 35,
@@ -3118,15 +4024,37 @@
     },
     "source_answer": null,
     "answer": "D",
-    "analysis": "依次把分母写成1、3、9、27、81，即3/1、7/3、15/9、27/27、43/81。分子3、7、15、27、43的相邻差是4、8、12、16，下一差为20，故下一项是63/243=7/27，选D。应统一比较层次，不能只盯着约分后的表面分子。",
+    "analysis": "前四项看似公差为−2/3的等差数列，但按此规律第五项应为1/3，与43/81不符。依次把分母写成1、3、9、27、81，即3/1、7/3、15/9、27/27、43/81。分子3、7、15、27、43的相邻差为4、8、12、16，下一差为20，故下一项是63/243=7/27，选D。数列规律须解释全部已知项，不能只凭前几项作判断。",
     "selection_reason": "约分隐藏了统一分母结构，检验把分数恢复到同一生成方式。",
-    "edits": [],
+    "edits": [
+      {
+        "type": "analysis_enrichment",
+        "description": "补充前四项的等差表象，并用第五项43/81排除；答案不变。",
+        "version": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "D",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "analysis",
+          "edits"
+        ]
+      }
     },
     "source_locators": {
       "original_number": 34,
@@ -3231,11 +4159,19 @@
     "selection_reason": "差数列内部的递推关系，不只是再求一次等差。",
     "edits": [],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_unchanged",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "A",
+        "key_result": "accepted_after_review"
+      }
     },
     "source_locators": {
       "original_number": 34,
@@ -3382,15 +4318,47 @@
     "edits": [
       {
         "type": "diagram_reconstruction",
-        "description": "源库以四行位置表转写原圆形数阵，原题图文件未保留。本题依转写表的左上、右上、左下、右下顺序绘制清晰数阵；数字和方位均不改，未冒称与原PDF逐像素一致。"
+        "description": "源库以四行位置表转写原圆形数阵，原题图文件未保留。本题依转写表的左上、右上、左下、右下顺序绘制清晰数阵；数字和方位均不改，未冒称与原PDF逐像素一致。",
+        "version": "0.1.0"
+      },
+      {
+        "type": "diagram_layout_correction",
+        "description": "保留4个圆及各格数值、半径70、2160×540像素画布；在720×180逻辑坐标中将字号28改为24，水平偏移±29改为±32，垂直偏移±28改为±22。新增v020 SVG/PNG，不覆盖旧图；与源位置表逐格一致。",
+        "version": "0.2.0"
+      },
+      {
+        "type": "editor_added_stem",
+        "description": "补记已有编辑补写：题干“观察下列各圆内数字的关系，问号处应填入的数是：”为根据位置表与待求数补写的引导语，不冒称为原PDF逐字题干。",
+        "version": "0.2.0"
+      },
+      {
+        "type": "asset_path_normalization",
+        "description": "新图使用仓库根目录相对路径，并明确path_base为repository、尺寸为2160×540像素。",
+        "version": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "B",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "edits",
+          "stem_override"
+        ]
+      }
     },
     "source_locators": {
       "original_number": 35,
@@ -3410,7 +4378,8 @@
       },
       {
         "type": "figure",
-        "path": "../../广东行测18套模拟/M03/编辑底稿/quant_data_number_grid.png",
+        "path": "广东行测18套模拟/M03/assets/q35_number_grid_v020.png",
+        "path_base": "repository",
         "width_px": 2160,
         "height_px": 540
       }
@@ -3528,11 +4497,19 @@
     "selection_reason": "把部分与其余的比转换为部分占总数，再用整数约束锁定。",
     "edits": [],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_unchanged",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "B",
+        "key_result": "accepted_after_review"
+      }
     },
     "source_locators": {
       "original_number": 37,
@@ -3661,15 +4638,37 @@
     },
     "source_answer": null,
     "answer": "C",
-    "analysis": "设公司人数为100a+10b+c。交换百、十位少270，得90(a−b)=270，即a−b=3；交换百、个位少594，得99(a−c)=594，即a−c=6。人数不足700且c≥0，只能a=6、b=3、c=0，总人数630。设大巴x辆、小巴y辆，则50x+40y=630，即5x+4y=63，故x≡3（mod 4）。最小非负可行x为3，此时y=12，选C。",
+    "analysis": "设公司人数为100a+10b+c。交换百、十位少270，得90(a−b)=270，即a−b=3；交换百、个位少594，得99(a−c)=594，即a−c=6。人数不足700且c≥0，只能a=6、b=3、c=0，总人数630。交换百、个位后写作036，即36，确实有630−36=594。设大巴x辆、小巴y辆，则50x+40y=630，即5x+4y=63，故x≡3（mod 4）。最小非负可行x为3，此时y=12，选C。",
     "selection_reason": "位值关系与整数分配串联，边界和同余都须保留。",
-    "edits": [],
+    "edits": [
+      {
+        "type": "analysis_enrichment",
+        "description": "补充630交换百、个位后为036，即36，并验算人数差594。",
+        "version": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "C",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "analysis",
+          "edits"
+        ]
+      }
     },
     "source_locators": {
       "original_number": 37,
@@ -3790,20 +4789,42 @@
     },
     "source_answer": null,
     "answer": "D",
-    "analysis": "售价上涨20%使单件利润增加30元，故原售价为30/20%=150元。进价120元，原、新单件利润分别为30、60元。总利润变为原来的80%，故销量变为0.8×30/60=0.4倍；新售价为1.2倍，总收入变为1.2×0.4=0.48倍，即减少52%，选D。不能把总利润降幅直接当作销售收入降幅。",
+    "analysis": "本月进价不变，故售价增量等于单件利润增量30元。售价上涨20%，所以原售价为30/20%=150元。进价120元，原、新单件利润分别为30、60元。总利润变为原来的80%，故销量变为0.8×30/60=0.4倍；新售价为1.2倍，总收入变为1.2×0.4=0.48倍，即减少52%，选D。不能把总利润降幅直接当作销售收入降幅。",
     "selection_reason": "同一变动同时作用于单价、单件利润、销量、总收入，考查指标转换。",
     "edits": [
       {
         "type": "clarification",
-        "description": "补明本月进价保持不变，使涨价金额与单件利润增量相同有明确前提。"
+        "description": "补明本月进价保持不变，使涨价金额与单件利润增量相同有明确前提。",
+        "version": "0.1.0"
+      },
+      {
+        "type": "analysis_enrichment",
+        "description": "在求原售价前明确“进价不变，故售价增量等于单件利润增量”；本轮不再改题干。",
+        "version": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "D",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "analysis",
+          "edits"
+        ]
+      }
     },
     "source_locators": {
       "original_number": 42,
@@ -3942,11 +4963,19 @@
     "selection_reason": "先由时间比恢复速度比，再求第二次往返的调和平均；题型自然变化。",
     "edits": [],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_unchanged",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "D",
+        "key_result": "accepted_after_review"
+      }
     },
     "source_locators": {
       "original_number": 42,
@@ -4067,15 +5096,37 @@
     },
     "source_answer": null,
     "answer": "B",
-    "analysis": "圆锥底面朝上，露出部分是上方的圆台，留在水下的是与原圆锥相似的小圆锥。要露出至少37/64，水下体积至多为27/64；相似体积比等于高度比的立方，因此水下高度至多为7×∛(27/64)=7×3/4=5.25米。原水面恰好淹没整个圆锥，至少下降7−5.25=1.75米，选B。不能把37/64直接当作高度比例。",
+    "analysis": "圆锥底面朝上，露出部分是上方的圆台，留在水下的是与原圆锥相似的小圆锥。要露出至少37/64，水下体积至多为27/64；相似体积比等于高度比的立方，因此水下高度至多为7×∛(27/64)=7×3/4=5.25米。原水面恰好淹没整个圆锥，至少下降7−5.25=1.75米，选B。2.10米、3.00米也能使露出体积超过37/64，但均不是所需的最小降幅。不能把37/64直接当作高度比例。",
     "selection_reason": "底面朝上决定应对水下小圆锥取补集，检验几何对象选择。",
-    "edits": [],
+    "edits": [
+      {
+        "type": "analysis_enrichment",
+        "description": "补明C、D两项虽满足露出体积要求，但不是最小水位降幅；结论经四项露出体积分数核验。",
+        "version": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "B",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "analysis",
+          "edits"
+        ]
+      }
     },
     "source_locators": {
       "original_number": 40,
@@ -4200,11 +5251,19 @@
     "selection_reason": "计划与实际两条时间线相互约束，关键是换队时刻而非机械套公式。",
     "edits": [],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_unchanged",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "A",
+        "key_result": "accepted_after_review"
+      }
     },
     "source_locators": {
       "original_number": 40,
@@ -4332,20 +5391,42 @@
     },
     "source_answer": null,
     "answer": "B",
-    "analysis": "老张的周期为12天，1月1日是第1个工作日。若是平年，3月30日为第89天，在周期中是第5个工作日；若是闰年，则为第90天，恰为第6个工作日，故这一年是闰年。老陈从1月2日开始，至3月30日是其排班第89天。89=9×9+8，在“上8天休1天”的周期中是第8个工作日，即休息前上班的最后一天，选B。锚定开始日为第1天，避免间隔与天数混用。",
+    "analysis": "老张的周期为12天，1月1日是第1个工作日。若是平年，3月30日为第89天，在周期中是第5个工作日；若是闰年，则为第90天，恰为第6个工作日，故这一年是闰年。老陈从1月2日开始，至3月30日是其排班第89天。89=9×9+8，在“上8天休1天”的周期中是第8个工作日，即休息前上班的最后一天，选B。若忘记老陈从1月2日起算，会把当天当作其第90天而误选A；若只把年份误按平年，则为其第88天、第7个工作日，误选D。两处都错也会碰巧得到B，仍须分别核准年份和起始日。",
     "selection_reason": "从周期位置反推闰年，再换另一个起点计数；覆盖锚点与边界。",
     "edits": [
       {
         "type": "layout_correction",
-        "description": "合并源库“方案”与“①”之间的抽取换行，不改变排班和日期。"
+        "description": "合并源库“方案”与“①”之间的抽取换行，不改变排班和日期。",
+        "version": "0.1.0"
+      },
+      {
+        "type": "analysis_enrichment",
+        "description": "补充忘记1月2日起算、误按平年及两错抵消的具体结果；日期和排班条件不变。",
+        "version": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "B",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "analysis",
+          "edits"
+        ]
+      }
     },
     "source_locators": {
       "original_number": 39,
@@ -4470,20 +5551,48 @@
     },
     "source_answer": null,
     "answer": "D",
-    "analysis": "最终恰好3人合格，只可能有两类互斥情形。①首次恰好3人合格，剩下1人补考不合格：C(4,3)×0.8³×0.2×0.6=0.24576。②首次恰好2人合格，剩下2人补考恰好1人合格：C(4,2)×0.8²×0.2²×C(2,1)×0.4×0.6=0.073728。首次少于2人会取消补考，不可能最终达到3人；首次4人合格也不符合。两类相加为0.319488，约0.32，选D。",
+    "analysis": "“不足一半”指首次合格人数少于2人；恰好2人合格仍可补考。最终恰好3人合格，只可能有两类互斥情形。①首次恰好3人合格，剩下1人补考不合格：C(4,3)×0.8³×0.2×0.6=0.24576。②首次恰好2人合格，剩下2人补考恰好1人合格：C(4,2)×0.8²×0.2²×C(2,1)×0.4×0.6=0.073728。首次少于2人会取消补考，首次4人合格也不符合。两类相加为0.319488，约0.32，选D。若把恰好2人也判为取消补考，会漏掉第②类而得到约0.25（B）；若第②类漏乘C(2,1)，则得到0.282624，约0.28（C）。",
     "selection_reason": "补考启动门槛与最终恰好人数共同作用，按最终事件反推首次结果。",
     "edits": [
       {
         "type": "condition_clarification",
-        "description": "明确不同考生及首次/补考结果的独立性，并在设问中加入“最终”，使概率模型由题面完整给出；概率、补考门槛与选项不变。"
+        "description": "明确不同考生及首次/补考结果的独立性，并在设问中加入“最终”，使概率模型由题面完整给出；概率、补考门槛与选项不变。",
+        "version": "0.1.0"
+      },
+      {
+        "type": "wording_simplification",
+        "description": "将已有编辑补明的独立性文字简化为“各人各次考试的结果相互独立”；概率、补考规则、“最终”设问及选项不变。",
+        "version": "0.2.0"
+      },
+      {
+        "type": "analysis_enrichment",
+        "description": "补明恰好2人合格仍可补考，并给出误取消补考对应B、漏乘C(2,1)对应C的独立计算。",
+        "version": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "D",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "analysis",
+          "edits",
+          "stem_override"
+        ]
+      }
     },
     "source_locators": {
       "original_number": 41,
@@ -4499,7 +5608,7 @@
     "stem_override": [
       {
         "type": "text",
-        "text": "某公司招聘时，4名应届毕业生同时参加笔试。每人首次笔试合格的概率均为0.8，且未合格者有一次补考机会，补考合格的概率均为0.4。各人的考试结果相互独立，补考结果也与首次考试结果独立。若首次笔试合格人数不足参加笔试总人数的一半，则取消补考。恰好有3名应届毕业生最终笔试合格的概率约为："
+        "text": "某公司招聘时，4名应届毕业生同时参加笔试。每人首次笔试合格的概率均为0.8，且未合格者有一次补考机会，补考合格的概率均为0.4。各人各次考试的结果相互独立。若首次笔试合格人数不足参加笔试总人数的一半，则取消补考。恰好有3名应届毕业生最终笔试合格的概率约为："
       }
     ],
     "exposure_check": {
@@ -4612,11 +5721,19 @@
     "selection_reason": "百分比的比较对象嵌在集合内部，要先把交叠区和独有区分清。",
     "edits": [],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_unchanged",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "D",
+        "key_result": "accepted_after_review"
+      }
     },
     "source_locators": {
       "original_number": 43,
@@ -4739,11 +5856,19 @@
     "selection_reason": "以最终人员分组为计数对象，辨别有标号容器和至少人数约束。",
     "edits": [],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_unchanged",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "B",
+        "key_result": "accepted_after_review"
+      }
     },
     "source_locators": {
       "original_number": 45,
@@ -4854,16 +5979,38 @@
     },
     "source_answer": "C",
     "answer": "C",
-    "analysis": "先观察整个点阵的对称性，黑点、白点也要分别对应。第1、3、5幅都可以绕中心旋转180°后与自身重合；第2、4幅则各只有一条对称轴，依次交替。下一幅应延续偶数位置的单轴对称：C只有一条竖直对称轴；A有两条对角线对称轴，B、D都不满足单轴对称。数量与颜色很醒目，但本题真正稳定的是整体对称关系。",
+    "analysis": "先观察整个点阵的对称性，黑点、白点也要分别对应。第1、3、5幅都可以绕中心旋转180°后与自身重合；第2、4幅则各只有一条对称轴，依次交替。下一幅应延续偶数位置的单轴对称：C只有一条竖直对称轴；A既中心对称，又有两条对角线对称轴，不符合“只有一条轴”；B、D也不满足单轴对称。黑白数量没有形成这里的稳定规律，但判断对称时必须带着颜色比较，不能把黑点与白点视为相同元素。",
     "selection_reason": "同一批元素可以承载不同规律；辨清中心对称与单轴对称，不能见黑白点就只数数量。",
-    "edits": [],
+    "edits": [
+      {
+        "type": "analysis_revision",
+        "description": "补明A既中心对称又有两条对角轴，并区分“黑白数量不构成所用规律”与“判断对称必须区分颜色”。题图和答案不变。",
+        "version": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_checked_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "figure_visual_inspection": true
+      "figure_visual_inspection": true,
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "C",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "analysis",
+          "edits"
+        ]
+      }
     },
     "options_mode": "in_figure",
     "source_locators": {
@@ -5011,17 +6158,39 @@
     },
     "source_answer": "A",
     "answer": "A",
-    "analysis": "把蜂窝按竖直方向分成8列，每列有7格。每次先将整列向右循环移动2列，越过右边界的列回到最左边；再使各列内部的黑白格向下循环移动1格，越过列底的格回到列顶。前四幅连续三次均符合这一变换。第四幅再变换一次，得到A。可以先追踪黑格较少的一列确定列的去向，再检查列内位置，不必同时追踪全部黑格。B、C虽然外观接近，但局部格子的循环位置不符；D没有按这一步的整体变换移动。",
+    "analysis": "把蜂窝按竖直方向分成8列，每列有7格；列从左往右编号，列内格从上往下编号。每次先将整列向右循环移动2列，越过右边界的列回到最左边；再使各列内部的黑白格向下循环移动1格，越过列底的格回到列顶。前四幅连续三次均符合这一变换，第四幅再变换一次得到A。B的第2列最上格应为白，第7列最上格应为黑；C除这两处外，第4列第6格应为黑、第6列第6格应为白；D则是第四幅原样保留后，把第5列第4格另涂成黑色，并未进行规定的循环移动。可以先追踪黑格较少的一列确定去向，再检查列内位置。",
     "selection_reason": "二维循环平移，列整体移动与列内移动叠加；用少量锚点识别，再验证整体。",
-    "edits": [],
+    "edits": [
+      {
+        "type": "analysis_revision",
+        "description": "明确列和格的编号方向，写出B、C的具体错格及D相对第四幅多出的黑格，保留原二维循环规律。",
+        "version": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_checked_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
       "figure_visual_inspection": true,
-      "reproducible_check": "reasoning_verify.py"
+      "reproducible_check": "reasoning_verify.py",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "A",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "analysis",
+          "edits"
+        ]
+      }
     },
     "options_mode": "in_figure",
     "source_locators": {
@@ -5170,16 +6339,38 @@
     },
     "source_answer": "A",
     "answer": "A",
-    "analysis": "每一行都先把第一幅的内部图案逆时针转90°，再与第二幅对齐，消去相同位置上共有的圆和线，保留不同部分；外侧大圆仅作为固定框架。第一行旋转后是上黑、中央白、下白，中央白圆与两侧连接线被第二幅消去，留下上黑下白。第二行同法得到第三幅的十字形。第三行旋转后为左白、中央白、右黑及横向连接线，与第二幅相消后只剩中央白圆，因此选A。",
+    "analysis": "每一行都先把第一幅的内部图案逆时针转90°，再与第二幅对齐，消去相同位置上共有的圆和连接线，保留不同部分；外侧大圆仅作为固定框架。第一行旋转后是上黑、中央白、下白，中央白圆与上下两段连接线被第二幅消去，留下上黑下白。第二幅中央白圆上下的短线也是对应的连接段，只是绘制得稍短，按位置和连接关系判断。第二行同法得到第三幅的十字形。第三行旋转后为左白、中央白、右黑及横向连接线，与第二幅相消后只剩中央白圆，因此选A。",
     "selection_reason": "旋转与去同存异组合，必须先对齐再运算；不能只看到样式相似就直接叠加。",
-    "edits": [],
+    "edits": [
+      {
+        "type": "analysis_correction",
+        "description": "将第一行旋转后的“两侧连接线”纠正为“上下两段连接线”，说明第二幅短线的连接含义，不以像素长度差另立规律。",
+        "version": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_checked_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "figure_visual_inspection": true
+      "figure_visual_inspection": true,
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "A",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "analysis",
+          "edits"
+        ]
+      }
     },
     "options_mode": "in_figure",
     "source_locators": {
@@ -5327,16 +6518,38 @@
     },
     "source_answer": "B",
     "answer": "B",
-    "analysis": "暂时把各根小方块柱压到同一高度，比较它们占据的平面位置。题干八幅立体的俯视轮廓相同，只是部分位置的高度改变，而且最高都恰为两层。A、C的俯视轮廓与题干不同；B与D的俯视轮廓符合，但D出现了三层高的方块柱，B仍为两层。因此B同时满足平面占位和最大高度两个条件。只数方块总数，或只验证俯视图，都会漏掉约束。",
+    "analysis": "题干八幅立体共同具有两项属性：俯视占位相同，且最高都恰为两层。把方块柱压到同一高度看，俯视占位都是六格：后排左右两格、中排三格、前排中间一格。B同时满足这两项。A相当于第一行第三幅在后排中间多放一个底层方块；C相当于第三行第一幅在前排右侧多放一个底层方块，因此二者都改变了俯视占位。它们新增的块没有改变原来的主视、左视轮廓，只查这两个视图容易漏掉差别。D相当于第二行第二幅在左后方柱顶增加一块，俯视占位不变，但最高变成三层。这里考查的是八幅图的共同属性，九宫格排列不要求每行另有递推；只比较每行个别视图可能出现巧合，只把第三行凑成7、8、9块也不能统一解释前两行。按图中通常的方块柱结构读图，只有B同时保留共同占位和高度。",
     "selection_reason": "从三维图中提取稳定投影，再叠加高度条件，避免在细碎方块上逐个硬数。",
-    "edits": [],
+    "edits": [
+      {
+        "type": "analysis_revision",
+        "description": "保留原题与B答案；把共同俯视六格写明，补A/C新增底层格及D新增第三层的具体区别，并说明按行局部视图或仅看块数的局限。",
+        "version": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_checked_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "figure_visual_inspection": true
+      "figure_visual_inspection": true,
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "B",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "analysis",
+          "edits"
+        ]
+      }
     },
     "options_mode": "in_figure",
     "source_locators": {
@@ -5494,11 +6707,17 @@
     },
     "source_answer": "D",
     "answer": "D",
-    "analysis": "把图①的完整底层当作基准：底层是4×2的8个方块，其上还有3个方块，故图①共11块；图②为3块。A、C、D均为10块，三部分共24块，能够容纳图①的长方体只能取4×2×3。B有13块，合计27块；27的整数边长组合中，1×1×27、1×3×9过薄，3×3×3又容不下图①的4格长边，因此B不行。图①底层已铺满，待补部分只能占上面两层；C的包围尺寸为4×3×2，无法放进4×2×2的上部空间，排除C。A的4格长边必须沿长方体的4格方向，避开图①右后方的高柱后只剩两个朝向，二者都会与另一短柱重叠，排除A。把图②旋转为水平放置，在图①第二层补入相邻的三个空位后，第二层还缺一个L形的三格，第三层缺七格；D转动后恰能填满且没有重叠，故选D。关键是先确定长方体尺寸，再利用完整底层和高低柱限制占位。",
+    "analysis": "按图中连续方块柱的通常读法，计数时需补入被前排遮住的格：A、D各有2格，B有1格。图①完整底层为4×2的8格，其上还有3格，共11格；图②为3格。A、C、D各10格，总共24格，能容纳图①的长方体只能是4×2×3。B按图读为13格，合计27格：1×1×27、1×3×9过薄，3×3×3又放不下①的4格长边；即使把B那一格遮挡处当空，总量26格，也没有可容纳①的整数边长组合。①底层已满，待补部分只能进入上面两层；C的包围尺寸为4×3×2，放不进4×2×2的上部空间。A的4格长边必须沿长方体的4格方向，避开①右后方高柱只剩两个朝向，两者都与另一短柱重叠，故排除A。将②平放在①第二层的前排第3、4格及后排第3格（各排均从左向右数），第二层还缺左侧L形三格，第三层缺七格；D旋转后恰能填满且没有重叠，选D。",
     "selection_reason": "用体积、包围盒与逐层缺口依次缩小空间；选项A保留形状辨别价值。",
-    "edits": [],
+    "edits": [
+      {
+        "type": "analysis_revision",
+        "description": "补A/D各2格、B的1格遮挡读图约定，说明B按12格或13格读均不成立，并明确②在第二层的具体三个位置；保留A的全朝向排除证据。",
+        "version": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_checked_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
       "source_answer_available": true,
       "source_answer_agreement": true,
@@ -5508,6 +6727,22 @@
         "report": "核验记录/q50_spatial_review.md",
         "data": "核验记录/q50_spatial_review.json",
         "method": "按原图通常积木读法转录坐标，枚举24个正旋转与可容纳图①的全部整数边长组合；A/B/C无解、D存在拼合见证。计算以显式坐标转录为前提，不代替原图判读，也不是Claude外审。"
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "D",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "analysis",
+          "edits"
+        ]
       }
     },
     "options_mode": "in_figure",
@@ -5639,16 +6874,38 @@
     "edits": [
       {
         "type": "layout_only",
-        "description": "合并源PDF行末硬换行；保留设问、编号条件和对话的分段，不改变命题含义。"
+        "description": "合并源PDF“既没/有”“错误/的”等句中折行；将源题原先连续写在一行的三项编号判断分别另起一行，并将“结果发现”独立成段；保留设问分段，不改变命题含义。",
+        "version": "0.2.0"
+      },
+      {
+        "type": "layout_correction",
+        "description": "将“结果发现，上述判断有两项是错误的。”另起一行，并纠正旧编辑记录：编号分行属于编辑新排版，不是照抄源段落。",
+        "version": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "reproducible_check": "reasoning_verify.py"
+      "reproducible_check": "reasoning_verify.py",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "C",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "edits",
+          "stem_override"
+        ]
+      }
     },
     "options_mode": "text_or_mixed",
     "source_locators": {
@@ -5705,7 +6962,7 @@
       },
       "quality_flags": []
     },
-    "stem_override": "关于小张、小李书法学习的情况，有如下判断：\n（1）如果小张学习魏碑，那么小李学习汉隶；\n（2）小张既没有学习秦篆，也没有学习魏碑；\n（3）小张或者学习秦篆，或者学习魏碑。结果发现，上述判断有两项是错误的。\n根据以上信息，可以得出以下哪项结论？",
+    "stem_override": "关于小张、小李书法学习的情况，有如下判断：\n（1）如果小张学习魏碑，那么小李学习汉隶；\n（2）小张既没有学习秦篆，也没有学习魏碑；\n（3）小张或者学习秦篆，或者学习魏碑。\n结果发现，上述判断有两项是错误的。\n根据以上信息，可以得出以下哪项结论？",
     "options": {
       "A": "小张学习魏碑，小李学习汉隶",
       "B": "小张没有学习魏碑，小李学习汉隶",
@@ -5779,11 +7036,19 @@
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_independent_review",
+      "status": "claude_reviewed_v010_unchanged",
       "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
       "source_answer_available": true,
       "source_answer_agreement": true,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "D",
+        "key_result": "accepted_after_review"
+      }
     },
     "options_mode": "text_or_mixed",
     "source_locators": {
@@ -5918,12 +7183,20 @@
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_independent_review",
+      "status": "claude_reviewed_v010_unchanged",
       "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "reproducible_check": "reasoning_verify.py"
+      "reproducible_check": "reasoning_verify.py",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "D",
+        "key_result": "accepted_after_review"
+      }
     },
     "options_mode": "text_or_mixed",
     "source_locators": {
@@ -6053,11 +7326,19 @@
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_independent_review",
+      "status": "claude_reviewed_v010_unchanged",
       "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
       "source_answer_available": true,
       "source_answer_agreement": true,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "C",
+        "key_result": "accepted_after_review"
+      }
     },
     "options_mode": "text_or_mixed",
     "source_locators": {
@@ -6193,16 +7474,38 @@
     "edits": [
       {
         "type": "layout_only",
-        "description": "合并源PDF行末硬换行；保留设问、编号条件和对话的分段，不改变命题含义。"
+        "description": "合并源PDF行末硬换行；保留设问、编号条件和对话的分段，不改变命题含义。",
+        "version": "0.1.0"
+      },
+      {
+        "type": "blank_restoration",
+        "description": "将“男教师，”与“，所以”之间原有8个半角空格改为可见的填空标记“____”；条件、选项与答案均不变。",
+        "version": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "reproducible_check": "reasoning_verify.py"
+      "reproducible_check": "reasoning_verify.py",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "A",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "edits",
+          "stem_override"
+        ]
+      }
     },
     "options_mode": "text_or_mixed",
     "source_locators": {
@@ -6269,7 +7572,7 @@
       },
       "quality_flags": []
     },
-    "stem_override": "某地区中小学教师中，毕业于师范类院校的女教师多于毕业于非师范类院校的男教师，        ，所以，该地区中小学女教师比男教师多。\n要使上述推理成立，最适合填入画横线位置的是：",
+    "stem_override": "某地区中小学教师中，毕业于师范类院校的女教师多于毕业于非师范类院校的男教师，____，所以，该地区中小学女教师比男教师多。\n要使上述推理成立，最适合填入画横线位置的是：",
     "options": {
       "A": "毕业于师范类院校的教师少于毕业于非师范类院校的教师",
       "B": "毕业于师范类院校的教师多于毕业于非师范类院校的教师",
@@ -6334,20 +7637,42 @@
     },
     "source_answer": "A",
     "answer": "A",
-    "analysis": "甲根据一种表现作出评价；乙承认该表现，却补入被忽略的条件，指出这个表现不足以支持甲的评价。A对应：价格较高是事实，但材料档次不同，不能仅凭与普通产品比价就断定不划算。B、C中乙是在解释、支持甲描述的现象，没有反对甲的判断；D用未来可能改过的预测反驳“无可救药”，没有用新的背景条件重新解释既有表现。A在“承认现象、补充背景、改判评价”三个环节上都一致。",
+    "analysis": "题干甲由“十岁能流利对话”进一步评价小明“语言天赋出类拔萃”；乙承认这一表现，却补充“曾在英国生活两年”的经历，指出该表现未必足以证明甲的评价。A同样承认价格高，但补充材料档次，并改用“同材质产品”作为比较背景，说明不能仅凭与常见产品比价就断定不划算，结构最接近。B的“理所当然”表面上像题干的“不足为奇”，但B中甲只报告从冲动到稳重的变化，没有进一步由此推断某种出众品质；乙是在解释变化，没有削弱甲从表现到评价的推断。C也在解释、支持所述现象。D以未来可能改过反驳“无可救药”，没有补入既有经历来重新解释当前表现。因此选A。",
     "selection_reason": "对话结构不止看有没有转折，更要看乙在解释事实还是反驳从事实到评价的推断。",
     "edits": [
       {
         "type": "layout_only",
-        "description": "合并源PDF行末硬换行；保留设问、编号条件和对话的分段，不改变命题含义。"
+        "description": "合并源PDF行末硬换行；保留设问、编号条件和对话的分段，不改变命题含义。",
+        "version": "0.1.0"
+      },
+      {
+        "type": "analysis_revision",
+        "description": "补明B“理所当然”与“不足为奇”的表层相似，以及A补入同材质比较背景的作用；比较回应的推理功能，不靠单个词匹配。",
+        "version": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
       "source_answer_available": true,
       "source_answer_agreement": true,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "A",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "analysis",
+          "edits"
+        ]
+      }
     },
     "options_mode": "text_or_mixed",
     "source_locators": {
@@ -6497,11 +7822,19 @@
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_independent_review",
+      "status": "claude_reviewed_v010_unchanged",
       "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
       "source_answer_available": true,
       "source_answer_agreement": true,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "D",
+        "key_result": "accepted_after_review"
+      }
     },
     "options_mode": "text_or_mixed",
     "source_locators": {
@@ -6646,11 +7979,19 @@
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_independent_review",
+      "status": "claude_reviewed_v010_unchanged",
       "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
       "source_answer_available": true,
       "source_answer_agreement": true,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "A",
+        "key_result": "accepted_after_review"
+      }
     },
     "options_mode": "text_or_mixed",
     "source_locators": {
@@ -6790,11 +8131,19 @@
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_independent_review",
+      "status": "claude_reviewed_v010_unchanged",
       "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
       "source_answer_available": true,
       "source_answer_agreement": true,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "C",
+        "key_result": "accepted_after_review"
+      }
     },
     "options_mode": "text_or_mixed",
     "source_locators": {
@@ -6926,21 +8275,44 @@
     },
     "source_answer": "D",
     "answer": "D",
-    "analysis": "先看甲的预言。若甲说错，则乙是歌手；丁的“乙不会成为大学教师”就为真，因而丁是唯一说真的会计师。此时丙应说错，于是丁又必须是企业家，与丁为会计师冲突。故甲说真，甲就是会计师，其余三人均说假。丁说假得乙是大学教师，丙说假得丁是企业家，余下丙为歌手，得到D。这里真假取决于说话者的职业，必须把身份和陈述联立，不能只数对了几句话。",
+    "analysis": "先看甲的预言。若甲说错，则乙是歌手；丁的“乙不会成为大学教师”就为真，因而丁是唯一说真的会计师。此时丙应说错，于是丁又必须是企业家，与丁为会计师冲突。故甲说真，甲就是会计师，其余三人均说假。丁说假得乙是大学教师，丙说假得丁是企业家，余下丙为歌手，得到D。代入检验：乙是大学教师，所以甲的话为真；丙是歌手，所以乙的话为假；丙、丁的话也都为假，恰好只有会计师甲的预言正确。真假取决于说话者的职业，必须把身份和陈述联立。",
     "selection_reason": "真假与说话者身份耦合，从一个假设推出职业冲突，比枚举全部24种排列更快。",
     "edits": [
       {
         "type": "layout_only",
-        "description": "合并源PDF行末硬换行；保留设问、编号条件和对话的分段，不改变命题含义。"
+        "description": "仅合并源题首段“且/每人”之间的PDF满行折行；四人的预言、其后的“现在看来”叙述句及设问均按源题分别成行。将“4 位”“30 年”改为“4位”“30年”，将“预言:”与四个说话人的半角冒号统一为全角并去掉其后多余空格；不改变条件。",
+        "version": "0.2.0"
+      },
+      {
+        "type": "paragraph_restoration",
+        "description": "0.2.0恢复“丁：乙不会成为大学教师。”之后的源分段，避免把“只有会计师的预言正确”误读为丁的话；清理本题提取空格和半角冒号，并补答案代入核验。",
+        "version": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "reproducible_check": "reasoning_verify.py"
+      "reproducible_check": "reasoning_verify.py",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "D",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "analysis",
+          "edits",
+          "stem_override"
+        ]
+      }
     },
     "options_mode": "text_or_mixed",
     "source_locators": {
@@ -6997,7 +8369,7 @@
       },
       "quality_flags": []
     },
-    "stem_override": "甲、乙、丙、丁4 位中学同学毕业30 年后相聚。现在，他们已成为企业家、大学教师、歌手和会计师，且每人只有一种身份，并不重复。他们在中学时代就各人的未来职业有过如下预言:\n甲: 乙不会成为歌手；\n乙: 丙会成为会计师；\n丙: 丁不会成为企业家；\n丁: 乙不会成为大学教师。现在看来，他们当中只有会计师的预言是正确的。\n根据上述信息可以推断，甲、乙、丙、丁的职业分别是：",
+    "stem_override": "甲、乙、丙、丁4位中学同学毕业30年后相聚。现在，他们已成为企业家、大学教师、歌手和会计师，且每人只有一种身份，并不重复。他们在中学时代就各人的未来职业有过如下预言：\n甲：乙不会成为歌手；\n乙：丙会成为会计师；\n丙：丁不会成为企业家；\n丁：乙不会成为大学教师。\n现在看来，他们当中只有会计师的预言是正确的。\n根据上述信息可以推断，甲、乙、丙、丁的职业分别是：",
     "options": {
       "A": "企业家、大学教师、歌手、会计师",
       "B": "大学教师、歌手、企业家、会计师",
@@ -7168,13 +8540,35 @@
     "answer": "D",
     "analysis": "记提高管理为P、优化流程为Q、提升效率为R。题干前提是P→R、Q→R，结论却写成R→（P或Q），把两种已知的充分办法说成必须至少采用一种的必要条件。D同样是宣传→知名度提高、优化设计→知名度提高，却据此断定提高知名度必须宣传或优化设计。A从同一前件推出两个结果；B的绿色生产本来就是两个目标各自的必要条件；C则是两条不同条件链后只保留其中一项，都不是同一结构。结构相似不要求论证本身正确。",
     "selection_reason": "辨认把充分条件当必要条件的同构错误，避免只凭题材或“或者”匹配。",
-    "edits": [],
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "将题干末尾“下列选项与题干逻辑结构最为相似的是……”另起一行；这是便于阅读的编辑分段，源题文本块原为同一段。",
+        "version": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_checked_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "D",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "edits",
+          "stem_override"
+        ]
+      }
     },
     "options_mode": "text_or_mixed",
     "source_locators": {
@@ -7187,7 +8581,13 @@
         "source_sha256": "f101b84dd197ecd9df9f17c31ec074440855732d5de5267664437c1d44ae5762",
         "pages": 25
       }
-    }
+    },
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "如果提高管理水平，企业工作效率就会得到提升；如果优化工作流程，企业工作效率也会得到提升。因此，企业要想提升工作效率，必须依靠提高管理水平或优化工作流程来实现。\n下列选项与题干逻辑结构最为相似的是（    ）。"
+      }
+    ]
   },
   {
     "number": 62,
@@ -7260,19 +8660,42 @@
     "edits": [
       {
         "type": "layout_only",
-        "description": "合并源PDF行末硬换行；保留设问、编号条件和对话的分段，不改变命题含义。"
+        "description": "合并源PDF行末硬换行；保留设问、编号条件和对话的分段，不改变命题含义。",
+        "version": "0.1.0"
       },
       {
         "type": "punctuation",
-        "description": "设问半角问号统一为全角。"
+        "description": "设问半角问号统一为全角。",
+        "version": "0.1.0"
+      },
+      {
+        "type": "punctuation",
+        "description": "将年份范围“2013-2020年”中的半角连字符改为中文范围连接号“2013—2020年”。",
+        "version": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
       "source_answer_available": true,
       "source_answer_agreement": true,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "D",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "edits",
+          "stem_override"
+        ]
+      }
     },
     "options_mode": "text_or_mixed",
     "source_locators": {
@@ -7340,7 +8763,7 @@
       },
       "quality_flags": []
     },
-    "stem_override": "某研究团队在2013-2020年对分布在德国南部和奥地利的白鹳进行技术跟踪，收集的跟踪数据能确定白鹳的迁徙路线。结果显示，白鹳的飞行路线在不断变化，路过一些新地方。专家认为白鹳通过学习不断完善迁徙路线。\n以下哪项如果为真，最有可能是专家得出结论的论据？",
+    "stem_override": "某研究团队在2013—2020年对分布在德国南部和奥地利的白鹳进行技术跟踪，收集的跟踪数据能确定白鹳的迁徙路线。结果显示，白鹳的飞行路线在不断变化，路过一些新地方。专家认为白鹳通过学习不断完善迁徙路线。\n以下哪项如果为真，最有可能是专家得出结论的论据？",
     "options": {
       "A": "成年白鹳会教幼鸟各种捕食技能",
       "B": "白鹳在迁徙目的地附近会探索一些新地方，更好地过冬",
@@ -7410,17 +8833,39 @@
     "edits": [
       {
         "type": "layout_only",
-        "description": "合并源PDF行末硬换行；保留设问、编号条件和对话的分段，不改变命题含义。"
+        "description": "合并源PDF行末硬换行；保留设问、编号条件和对话的分段，不改变命题含义。",
+        "version": "0.1.0"
+      },
+      {
+        "type": "punctuation",
+        "description": "将最后一项条件（5）句末的分号改为句号，结束条件列举。",
+        "version": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
       "source_analysis_correction": true,
-      "reproducible_check": "reasoning_verify.py"
+      "reproducible_check": "reasoning_verify.py",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "C",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "edits",
+          "stem_override"
+        ]
+      }
     },
     "options_mode": "text_or_mixed",
     "source_locators": {
@@ -7487,7 +8932,7 @@
       },
       "quality_flags": []
     },
-    "stem_override": "某单位准备从甲、乙、丙、丁、戊、己六人中择优录取数名技术人员，录用情况符合如下条件：\n（1）丙和丁恰有一人录取；\n（2）甲和乙至少有一人录取；\n（3）甲和丁恰有一人录取；\n（4）录取乙当且仅当录用丙；\n（5）甲、戊、己中恰有两人录用；\n根据上述信息，可以推出最终录用的人数为：",
+    "stem_override": "某单位准备从甲、乙、丙、丁、戊、己六人中择优录取数名技术人员，录用情况符合如下条件：\n（1）丙和丁恰有一人录取；\n（2）甲和乙至少有一人录取；\n（3）甲和丁恰有一人录取；\n（4）录取乙当且仅当录用丙；\n（5）甲、戊、己中恰有两人录用。\n根据上述信息，可以推出最终录用的人数为：",
     "options": {
       "A": "2",
       "B": "3",
@@ -7665,20 +9110,43 @@
     },
     "source_answer": null,
     "answer": "A",
-    "analysis": "将题干压缩为：真实P且真诚Q→成功R；现在P成立但R不成立，故Q不成立。这是对联言充分条件的逆否运用。A中“除非提升质量，否则产销或出口不能稳定增长”可写成“产销稳定增长P且出口稳定增长Q→提升质量R”；现有P而无R，因而无Q，结构一致。B用的是P或Q作为条件，且从身体疲惫到冲击未减小还有概念变化；C是对使用限制的直接违反；D由结果反推条件并从缺一个条件推出另一个，方向不符。",
+    "analysis": "记真实为P、真诚为Q、口碑票房双丰收为R。题干是“P且Q→R”；口碑很差说明R不成立，已有P成立，故推出Q不成立。A中的“除非提升质量，否则或者产销不能稳定增长，或者出口不能稳定增长”，可先写成“非R→（非P或非Q）”，再取逆否等价为“P且Q→R”；现有产销稳定增长P而质量未提升即非R，故出口不能稳定增长即非Q，与题干一致。B的充分条件是“P或Q”，而且身体疲惫不等于跑步冲击没有减小；C只说使用了志愿服务标识，没有说用于商标或商业广告，不能据此推出违规，也没有题干的联言条件逆否结构；D从结果R成立、条件P不成立反推另一个条件Q成立，推理方向不同。因此选A。",
     "selection_reason": "同一推理可藏在“只要且”“除非否则或者”等不同句式中，要对齐条件方向与连接词。",
     "edits": [
       {
         "type": "logical_precision",
-        "description": "A项将“产销不断增长”统一为前提中的“产销稳定增长”，将“出口必然处于停滞态势”改为可严格推出的“出口不能稳定增长”，并将“质量原地踏步”明写为“质量未提升”。保留原拟考的联言逆否结构，避免把增长不稳定偷换为停滞；源题对象保持原样。"
+        "description": "A项将“产销不断增长”统一为前提中的“产销稳定增长”，将“出口必然处于停滞态势”改为可严格推出的“出口不能稳定增长”，并将“质量原地踏步”明写为“质量未提升”。保留原拟考的联言逆否结构，避免把增长不稳定偷换为停滞；源题对象保持原样。",
+        "version": "0.1.0"
+      },
+      {
+        "type": "analysis_correction",
+        "description": "纠正“C是对使用限制的直接违反”：一般使用标识不等于用于商标或商业广告，违规结论不能推出。补A项“除非”句的等价变形，并将设问单独分行；保留上一轮A项逻辑精确化改编。",
+        "version": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "A",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "analysis",
+          "edits",
+          "stem_override"
+        ]
+      }
     },
     "options_mode": "text_or_mixed",
     "source_locators": {
@@ -7717,7 +9185,13 @@
           "text": "退税商店增多了，且口岸验核等待时间减少了，说明离境退税2.0版政策开始实施。某地退税商店没有增多，但离境退税2.0版政策已经开始实施，所以，其口岸验核等待时间一定减少了"
         }
       ]
-    }
+    },
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "电影只要以真实为土壤，且以真诚为养分，就一定能口碑票房双丰收。某部大制作电影虽然取材于真实事件，但口碑很差，说明创作者在讲述故事时并不真诚。\n下列选项与题干逻辑结构最为相似的是（    ）。"
+      }
+    ]
   },
   {
     "number": 65,
@@ -7780,16 +9254,38 @@
     "edits": [
       {
         "type": "layout_only",
-        "description": "合并源PDF行末硬换行；保留设问、编号条件和对话的分段，不改变命题含义。"
+        "description": "仅合并源题“查出/来”之间的PDF句中折行；保留小张引语结束后的原有分段，使“以下哪项如果为真，不能反驳小张的观点？”独立成行，不改变措辞、选项或否定式设问。",
+        "version": "0.2.0"
+      },
+      {
+        "type": "paragraph_restoration",
+        "description": "0.2.0恢复“我还是不去了。”之后、设问之前的源分段，纠正旧clean_stem把引语与设问连在一行的问题。",
+        "version": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "source_analysis_correction": true
+      "source_analysis_correction": true,
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "B",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "edits",
+          "stem_override"
+        ]
+      }
     },
     "options_mode": "text_or_mixed",
     "source_locators": {
@@ -7846,7 +9342,7 @@
       },
       "quality_flags": []
     },
-    "stem_override": "某单位即将组织员工进行常规体检，小张说：“上周老王刚被查出了癌症晚期，单位年年组织做体检都没查出来，说明这个体检根本没用！我还是不去了。”以下哪项如果为真，不能反驳小张的观点？",
+    "stem_override": "某单位即将组织员工进行常规体检，小张说：“上周老王刚被查出了癌症晚期，单位年年组织做体检都没查出来，说明这个体检根本没用！我还是不去了。”\n以下哪项如果为真，不能反驳小张的观点？",
     "options": {
       "A": "老王患的是肝癌，早期发展到晚期只需数月",
       "B": "单位组织的常规体检项目难以查出早期癌症",
@@ -7976,7 +9472,7 @@
     "selection_reason": "同时识别漂浮/悬浮、排液重力、压强、液体体积四个对象，避免仅按浸入深度猜浮力。",
     "edits": [],
     "verification": {
-      "status": "editor_solved_external_review_pending",
+      "status": "claude_reviewed_v010_unchanged",
       "method": "读取完整题面与四项；逐项推导；所用现存图片已实际打开查看。源库无参考答案。",
       "checked_on": "2026-11-15",
       "internal_cross_review": {
@@ -7984,6 +9480,14 @@
         "report": "核验记录/science_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "D"
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "D",
+        "key_result": "accepted_after_review"
       }
     }
   },
@@ -8158,11 +9662,17 @@
     "edits": [
       {
         "type": "clarification",
-        "description": "明示不计空气阻力，图像、物理量和四个判断保持原样。源库题图本身为依原图重绘版，此处未再改变轨迹。"
+        "description": "明示不计空气阻力，图像、物理量和四个判断保持原样。源库题图本身为依原图重绘版，此处未再改变轨迹。",
+        "version": "0.1.0"
+      },
+      {
+        "type": "diagram_geometry_correction",
+        "description": "0.2.0保留源图的共同起点O、A在墙顶的落点、B在竖直墙面的落点和墙角坐标；将两条虚线改为起始切线水平的二次曲线，并移开A/B标签。未增加距离、时间或速度数值。原图与0.1.0说明留存，新的SVG/PNG及几何核验另存。",
+        "version": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_solved_external_review_pending",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "读取完整题面与四项；逐项推导；所用现存图片已实际打开查看。源库无参考答案。",
       "checked_on": "2026-11-15",
       "internal_cross_review": {
@@ -8170,6 +9680,22 @@
         "report": "核验记录/science_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "B"
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "B",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "edits",
+          "stem_override"
+        ]
       }
     },
     "stem_override": [
@@ -8179,12 +9705,10 @@
       },
       {
         "type": "figure",
-        "asset_id": "s21_p17_i04",
-        "path": "assets/s21_p17_i04.png",
-        "svg_path": "assets/s21_p17_i04.svg",
+        "path": "广东行测18套模拟/M03/assets/q67_projectile_v020.png",
+        "path_base": "repository",
         "width_px": 1296,
-        "height_px": 1020,
-        "caption": "原卷第17页，第66题图（依原图重绘）"
+        "height_px": 1020
       },
       {
         "type": "text",
@@ -8353,11 +9877,17 @@
     "edits": [
       {
         "type": "clarification",
-        "description": "按已入库的完整粒子表呈现，保留全部5行及各数量；B明确比较实际参加反应的粒子，D明确生成物，避免投料比/混合物总类数的措辞两解。只删除转写过程注记。"
+        "description": "按已入库的完整粒子表呈现，保留全部5行及各数量；B明确比较实际参加反应的粒子，D明确生成物，避免投料比/混合物总类数的措辞两解。只删除转写过程注记。",
+        "version": "0.1.0"
+      },
+      {
+        "type": "diagram_reconstruction",
+        "description": "0.2.0依据源库完整粒子表与图例，将0.1.0的组成表改为微观示意图：反应前1个CH₄、3个O₂，反应后1个CO₂、2个H₂O及1个剩余O₂。图上只画粒子与元素图例，不预先标化学式或反应方程式；全部数量保留。布局为编辑重排，原PDF/原位图缺失，不能称原图复原。",
+        "version": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_solved_external_review_pending",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "读取完整题面与四项；逐项推导；所用现存图片已实际打开查看。源库无参考答案。",
       "checked_on": "2026-11-15",
       "internal_cross_review": {
@@ -8365,50 +9895,35 @@
         "report": "核验记录/science_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "C"
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "C",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "edits",
+          "stem_override"
+        ]
       }
     },
     "stem_override": [
       {
         "type": "text",
-        "text": "某反应在点燃条件下进行，反应前后的微观粒子情况如下表所示。下列说法正确的是（　）。"
+        "text": "某化学反应的微观示意图如下，下列说法正确的是（　）。"
       },
       {
-        "type": "table",
-        "title": "反应前后图示粒子的组成与数量",
-        "headers": [
-          "阶段",
-          "每个图示粒子的原子组成",
-          "图示粒子个数"
-        ],
-        "rows": [
-          [
-            "反应前",
-            "1 个碳原子、4 个氢原子",
-            "1"
-          ],
-          [
-            "反应前",
-            "2 个氧原子",
-            "3"
-          ],
-          [
-            "反应后",
-            "1 个碳原子、2 个氧原子",
-            "1"
-          ],
-          [
-            "反应后",
-            "2 个氧原子",
-            "1"
-          ],
-          [
-            "反应后",
-            "1 个氧原子、2 个氢原子",
-            "2"
-          ]
-        ],
-        "notes": "表中数量为同一微观示意图中的粒子个数。",
-        "source_asset_id": "s26_p19_i00"
+        "type": "figure",
+        "path": "广东行测18套模拟/M03/assets/q68_particles_v020.png",
+        "path_base": "repository",
+        "width_px": 2400,
+        "height_px": 860
       }
     ],
     "options": {
@@ -8599,11 +10114,17 @@
     "edits": [
       {
         "type": "diagram_reconstruction",
-        "description": "源库仅保存食物网箭头表，没有对应原图文件；据表中8个节点、11条有向边重建示意图，另保存DOT/SVG及核验清单。布局为编辑重排，不称原图复原；全部箭头关系保持不变。"
+        "description": "源库仅保存食物网箭头表，没有对应原图文件；据表中8个节点、11条有向边重建示意图，另保存DOT/SVG及核验清单。布局为编辑重排，不称原图复原；全部箭头关系保持不变。",
+        "version": "0.1.0"
+      },
+      {
+        "type": "clarification",
+        "description": "补记0.1.0相对源题已添加的句子“箭头从被捕食者指向捕食者”，属于方向约定说明；0.2.0将B项“最高营养级为五级”规范为“最高营养级为第五营养级”。八个节点、十一条有向边、题图和答案均不变。",
+        "version": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_solved_external_review_pending",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "读取完整题面与四项；逐项推导；所用现存图片已实际打开查看。源库无参考答案。",
       "checked_on": "2026-11-15",
       "internal_cross_review": {
@@ -8611,6 +10132,23 @@
         "report": "核验记录/science_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "B"
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "B",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "edits",
+          "options",
+          "stem_override"
+        ]
       }
     },
     "stem_override": [
@@ -8620,9 +10158,38 @@
       },
       {
         "type": "figure",
-        "path": "../../广东行测18套模拟/M03/assets/q69_foodweb.png"
+        "path": "广东行测18套模拟/M03/assets/q69_foodweb.png",
+        "path_base": "repository",
+        "width_px": 1761,
+        "height_px": 573
       }
-    ]
+    ],
+    "options": {
+      "A": [
+        {
+          "type": "text",
+          "text": "该食物网中有7条食物链"
+        }
+      ],
+      "B": [
+        {
+          "type": "text",
+          "text": "该食物网中，最高营养级为第五营养级"
+        }
+      ],
+      "C": [
+        {
+          "type": "text",
+          "text": "蛇捕食鸟后，能吸收鸟全部的能量"
+        }
+      ],
+      "D": [
+        {
+          "type": "text",
+          "text": "该食物网包含了该生态系统中所有的生物"
+        }
+      ]
+    }
   },
   {
     "number": 70,
@@ -8732,11 +10299,17 @@
     },
     "source_answer": null,
     "answer": "B",
-    "analysis": "读图先看指北针：北方指向纸面的右上方，南方相应指向左下方。河流从右上方的较高海拔处流向左下方的较低处，所以实际大致自北向南，B正确，不能把纸面上方直接当北方。②处是从600米高地向低处伸出的山脊，等高线向低处凸出，A错误；③处等高线向高处弯曲，是山谷，D错误。甲村位于两侧实线200米等高线以下的低地，海拔低于200米，更不高于400米，C错误；村庄周围的闭合虚线是图例中的区域界，并非等高线。此题须把等高线的高低方向与地图的实际方位分开判断。",
+    "analysis": "先从等高线确定上下游，再按指北针判断方位。图中相邻等高线相差100米：标注400米与200米的等高线之间还有一条未标注的300米等高线。沿右上方河道向纸面左下方追踪，河流依次穿过400米、300米、200米等高线，之后流向200米以下的低处，因而这一方向是下游方向。指北针指向纸面右上方，南方相应在左下方，故河流整体大致自北向南，B正确。②处等高线从600米高地向低处凸出，是山脊，A错误；③处等高线向高处弯曲，是山谷，D错误。甲村位于两侧实线200米等高线以下的低地，更不可能高于400米，C错误；村庄周围的闭合虚线是图例中的区域界，并非等高线。不能只凭河道在页面上倾斜的方向推断水流，也不能把纸面上方直接当作北方。",
     "selection_reason": "倾斜指北针与山谷/山脊判读共同起作用，防止按页面上下代替真实方位。",
-    "edits": [],
+    "edits": [
+      {
+        "type": "analysis_revision",
+        "description": "补足河流高低依据：400米与200米之间的未注记线为300米，沿河流可追踪400→300→200米的下降，再结合倾斜指北针判断流向；题面、图片及答案B不变。",
+        "version": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_solved_external_review_pending",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "读取完整题面与四项；逐项推导；所用现存图片已实际打开查看。源库无参考答案。",
       "checked_on": "2026-11-15",
       "internal_revision": "初稿误读山脊山谷及倾斜指北针，经独立阅图发现，答案由A改B，四项解析全部重写；题面与源图不变。",
@@ -8745,6 +10318,22 @@
         "report": "核验记录/science_independent_review.md",
         "review_scope": "题面先答后比；GPT内部交叉复核，非Claude外审",
         "final_answer": "B"
+      },
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "B",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "analysis",
+          "edits"
+        ]
       }
     }
   },
@@ -9031,11 +10620,19 @@
       }
     ],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_unchanged",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "A",
+        "key_result": "accepted_after_review"
+      }
     },
     "source_locators": {
       "original_number": 71,
@@ -9513,11 +11110,19 @@
       }
     ],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_unchanged",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "C",
+        "key_result": "accepted_after_review"
+      }
     },
     "source_locators": {
       "original_number": 72,
@@ -9974,11 +11579,19 @@
       }
     ],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_unchanged",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "D",
+        "key_result": "accepted_after_review"
+      }
     },
     "source_locators": {
       "original_number": 73,
@@ -10431,11 +12044,19 @@
       }
     ],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_unchanged",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "D",
+        "key_result": "accepted_after_review"
+      }
     },
     "source_locators": {
       "original_number": 74,
@@ -10909,11 +12530,19 @@
       }
     ],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_unchanged",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "B",
+        "key_result": "accepted_after_review"
+      }
     },
     "source_locators": {
       "original_number": 75,
@@ -11391,11 +13020,19 @@
     "selection_reason": "表内双分母计算与百分点方向判断。",
     "edits": [],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_unchanged",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "C",
+        "key_result": "accepted_after_review"
+      }
     },
     "source_locators": {
       "original_number": 81,
@@ -11891,11 +13528,19 @@
     "selection_reason": "同跨度年均增长排序化为终期/基期比，减少不必要的开方计算。",
     "edits": [],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_unchanged",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "B",
+        "key_result": "accepted_after_review"
+      }
     },
     "source_locators": {
       "original_number": 82,
@@ -12391,11 +14036,19 @@
     "selection_reason": "用分子分母增速判平均数方向，并注意首年也可由给定同比判断。",
     "edits": [],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_unchanged",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "B",
+        "key_result": "accepted_after_review"
+      }
     },
     "source_locators": {
       "original_number": 83,
@@ -12891,11 +14544,19 @@
     "selection_reason": "双平均数作差、条件分母与亿元/万元转换叠加。",
     "edits": [],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_unchanged",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "D",
+        "key_result": "accepted_after_review"
+      }
     },
     "source_locators": {
       "original_number": 84,
@@ -13432,11 +15093,19 @@
       }
     ],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_unchanged",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "C",
+        "key_result": "accepted_after_review"
+      }
     },
     "source_locators": {
       "original_number": 85,
@@ -13902,15 +15571,42 @@
     "edits": [
       {
         "type": "material_clarification",
-        "description": "补明累计口径随自然年重新起算，1—2月为合计；这是原表标题及数值的既有含义，不改数值。"
+        "description": "补明累计口径随自然年重新起算，1—2月为合计；这是原表标题及数值的既有含义，不改数值。",
+        "version": "0.1.0"
+      },
+      {
+        "type": "material_sentence_removal",
+        "description": "删除共用材料中“据中国海关总署统计数据显示，2023年7月，中国空调产量同比增长29.0%。”整句。该句不参与81—85题任何设问，且29.0%与累计表反推的7月当月同比约26.57%不一致；不以推算值替写原数，也不重署统计机构。保留余下出口材料及全部表内数值，source_question不改。",
+        "version": "0.2.0"
+      },
+      {
+        "type": "material_header_correction",
+        "description": "将共用表第一列表头“图示期间”改为“统计期”，清除图表转写残留。81—85题共享同一份材料修订。",
+        "version": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "A",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "edits",
+          "materials"
+        ]
+      }
     },
     "source_locators": {
       "original_number": 71,
@@ -13940,7 +15636,7 @@
             "type": "table",
             "title": "2022年8月—2023年7月中国空调累计产量及累计同比增速",
             "headers": [
-              "图示期间",
+              "统计期",
               "中国空调累计产量（万台）",
               "累计同比增速（%）"
             ],
@@ -14006,7 +15702,7 @@
           },
           {
             "type": "text",
-            "text": "据中国海关总署统计数据显示，2023年7月，中国空调产量同比增长29.0%。2023年7月，中国空调出口量为308万台，同比增长1.3%。2023年1-7月，中国空调累计出口量达到3475万台，累计同比下降1.2%。2023年7月，中国空调出口金额为500028千美元，同比下降15.4%。2023年1-7月，中国空调累计出口金额达到5463418千美元，累计同比下降7.4%。"
+            "text": "2023年7月，中国空调出口量为308万台，同比增长1.3%。2023年1-7月，中国空调累计出口量达到3475万台，累计同比下降1.2%。2023年7月，中国空调出口金额为500028千美元，同比下降15.4%。2023年1-7月，中国空调累计出口金额达到5463418千美元，累计同比下降7.4%。"
           }
         ],
         "source_pages": [
@@ -14333,15 +16029,42 @@
     "edits": [
       {
         "type": "material_clarification",
-        "description": "补明累计口径随自然年重新起算，1—2月为合计；这是原表标题及数值的既有含义，不改数值。"
+        "description": "补明累计口径随自然年重新起算，1—2月为合计；这是原表标题及数值的既有含义，不改数值。",
+        "version": "0.1.0"
+      },
+      {
+        "type": "material_sentence_removal",
+        "description": "删除共用材料中“据中国海关总署统计数据显示，2023年7月，中国空调产量同比增长29.0%。”整句。该句不参与81—85题任何设问，且29.0%与累计表反推的7月当月同比约26.57%不一致；不以推算值替写原数，也不重署统计机构。保留余下出口材料及全部表内数值，source_question不改。",
+        "version": "0.2.0"
+      },
+      {
+        "type": "material_header_correction",
+        "description": "将共用表第一列表头“图示期间”改为“统计期”，清除图表转写残留。81—85题共享同一份材料修订。",
+        "version": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "D",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "edits",
+          "materials"
+        ]
+      }
     },
     "source_locators": {
       "original_number": 72,
@@ -14371,7 +16094,7 @@
             "type": "table",
             "title": "2022年8月—2023年7月中国空调累计产量及累计同比增速",
             "headers": [
-              "图示期间",
+              "统计期",
               "中国空调累计产量（万台）",
               "累计同比增速（%）"
             ],
@@ -14437,7 +16160,7 @@
           },
           {
             "type": "text",
-            "text": "据中国海关总署统计数据显示，2023年7月，中国空调产量同比增长29.0%。2023年7月，中国空调出口量为308万台，同比增长1.3%。2023年1-7月，中国空调累计出口量达到3475万台，累计同比下降1.2%。2023年7月，中国空调出口金额为500028千美元，同比下降15.4%。2023年1-7月，中国空调累计出口金额达到5463418千美元，累计同比下降7.4%。"
+            "text": "2023年7月，中国空调出口量为308万台，同比增长1.3%。2023年1-7月，中国空调累计出口量达到3475万台，累计同比下降1.2%。2023年7月，中国空调出口金额为500028千美元，同比下降15.4%。2023年1-7月，中国空调累计出口金额达到5463418千美元，累计同比下降7.4%。"
           }
         ],
         "source_pages": [
@@ -14764,15 +16487,42 @@
     "edits": [
       {
         "type": "material_clarification",
-        "description": "补明累计口径随自然年重新起算，1—2月为合计；这是原表标题及数值的既有含义，不改数值。"
+        "description": "补明累计口径随自然年重新起算，1—2月为合计；这是原表标题及数值的既有含义，不改数值。",
+        "version": "0.1.0"
+      },
+      {
+        "type": "material_sentence_removal",
+        "description": "删除共用材料中“据中国海关总署统计数据显示，2023年7月，中国空调产量同比增长29.0%。”整句。该句不参与81—85题任何设问，且29.0%与累计表反推的7月当月同比约26.57%不一致；不以推算值替写原数，也不重署统计机构。保留余下出口材料及全部表内数值，source_question不改。",
+        "version": "0.2.0"
+      },
+      {
+        "type": "material_header_correction",
+        "description": "将共用表第一列表头“图示期间”改为“统计期”，清除图表转写残留。81—85题共享同一份材料修订。",
+        "version": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "D",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "edits",
+          "materials"
+        ]
+      }
     },
     "source_locators": {
       "original_number": 73,
@@ -14802,7 +16552,7 @@
             "type": "table",
             "title": "2022年8月—2023年7月中国空调累计产量及累计同比增速",
             "headers": [
-              "图示期间",
+              "统计期",
               "中国空调累计产量（万台）",
               "累计同比增速（%）"
             ],
@@ -14868,7 +16618,7 @@
           },
           {
             "type": "text",
-            "text": "据中国海关总署统计数据显示，2023年7月，中国空调产量同比增长29.0%。2023年7月，中国空调出口量为308万台，同比增长1.3%。2023年1-7月，中国空调累计出口量达到3475万台，累计同比下降1.2%。2023年7月，中国空调出口金额为500028千美元，同比下降15.4%。2023年1-7月，中国空调累计出口金额达到5463418千美元，累计同比下降7.4%。"
+            "text": "2023年7月，中国空调出口量为308万台，同比增长1.3%。2023年1-7月，中国空调累计出口量达到3475万台，累计同比下降1.2%。2023年7月，中国空调出口金额为500028千美元，同比下降15.4%。2023年1-7月，中国空调累计出口金额达到5463418千美元，累计同比下降7.4%。"
           }
         ],
         "source_pages": [
@@ -15195,15 +16945,42 @@
     "edits": [
       {
         "type": "material_clarification",
-        "description": "补明累计口径随自然年重新起算，1—2月为合计；这是原表标题及数值的既有含义，不改数值。"
+        "description": "补明累计口径随自然年重新起算，1—2月为合计；这是原表标题及数值的既有含义，不改数值。",
+        "version": "0.1.0"
+      },
+      {
+        "type": "material_sentence_removal",
+        "description": "删除共用材料中“据中国海关总署统计数据显示，2023年7月，中国空调产量同比增长29.0%。”整句。该句不参与81—85题任何设问，且29.0%与累计表反推的7月当月同比约26.57%不一致；不以推算值替写原数，也不重署统计机构。保留余下出口材料及全部表内数值，source_question不改。",
+        "version": "0.2.0"
+      },
+      {
+        "type": "material_header_correction",
+        "description": "将共用表第一列表头“图示期间”改为“统计期”，清除图表转写残留。81—85题共享同一份材料修订。",
+        "version": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "B",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "edits",
+          "materials"
+        ]
+      }
     },
     "source_locators": {
       "original_number": 74,
@@ -15233,7 +17010,7 @@
             "type": "table",
             "title": "2022年8月—2023年7月中国空调累计产量及累计同比增速",
             "headers": [
-              "图示期间",
+              "统计期",
               "中国空调累计产量（万台）",
               "累计同比增速（%）"
             ],
@@ -15299,7 +17076,7 @@
           },
           {
             "type": "text",
-            "text": "据中国海关总署统计数据显示，2023年7月，中国空调产量同比增长29.0%。2023年7月，中国空调出口量为308万台，同比增长1.3%。2023年1-7月，中国空调累计出口量达到3475万台，累计同比下降1.2%。2023年7月，中国空调出口金额为500028千美元，同比下降15.4%。2023年1-7月，中国空调累计出口金额达到5463418千美元，累计同比下降7.4%。"
+            "text": "2023年7月，中国空调出口量为308万台，同比增长1.3%。2023年1-7月，中国空调累计出口量达到3475万台，累计同比下降1.2%。2023年7月，中国空调出口金额为500028千美元，同比下降15.4%。2023年1-7月，中国空调累计出口金额达到5463418千美元，累计同比下降7.4%。"
           }
         ],
         "source_pages": [
@@ -15670,20 +17447,53 @@
     },
     "source_answer": null,
     "answer": "A",
-    "analysis": "先将累计量还原为当月量：9月1770、10月1468、11月1489、12月1798万台。10—12月的“环比增量”依次是−302、21、309万台，逐月增加，所以折线应持续向上，选A。这里画的是增量，不是产量本身；原选项未给零线，只判断三点的先后高低。",
+    "analysis": "先将累计量还原为当月量：9月1770、10月1468、11月1489、12月1798万台。10—12月的“环比增量”依次是−302、21、309万台，逐月增加，所以折线应持续向上，选A。这里画的是增量，不是产量本身；原选项未给零线，只判断三点的先后高低。若误用累计同比增速3.2%→2.0%→1.8%，会得到持续下降的C图，但它既不是当月量，也不是环比增量。",
     "selection_reason": "从累计量到当月量再到环比增量，两次作差后识别图形趋势。",
     "edits": [
       {
         "type": "material_clarification",
-        "description": "补明累计口径随自然年重新起算，1—2月为合计；这是原表标题及数值的既有含义，不改数值。"
+        "description": "补明累计口径随自然年重新起算，1—2月为合计；这是原表标题及数值的既有含义，不改数值。",
+        "version": "0.1.0"
+      },
+      {
+        "type": "material_sentence_removal",
+        "description": "删除共用材料中“据中国海关总署统计数据显示，2023年7月，中国空调产量同比增长29.0%。”整句。该句不参与81—85题任何设问，且29.0%与累计表反推的7月当月同比约26.57%不一致；不以推算值替写原数，也不重署统计机构。保留余下出口材料及全部表内数值，source_question不改。",
+        "version": "0.2.0"
+      },
+      {
+        "type": "material_header_correction",
+        "description": "将共用表第一列表头“图示期间”改为“统计期”，清除图表转写残留。81—85题共享同一份材料修订。",
+        "version": "0.2.0"
+      },
+      {
+        "type": "analysis_enrichment",
+        "description": "补充C图与误用累计同比增速3.2%→2.0%→1.8%的对应关系；保留两次差分的正确求法。",
+        "version": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "A",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "analysis",
+          "edits",
+          "materials"
+        ]
+      }
     },
     "source_locators": {
       "original_number": 75,
@@ -15714,7 +17524,7 @@
             "type": "table",
             "title": "2022年8月—2023年7月中国空调累计产量及累计同比增速",
             "headers": [
-              "图示期间",
+              "统计期",
               "中国空调累计产量（万台）",
               "累计同比增速（%）"
             ],
@@ -15780,7 +17590,7 @@
           },
           {
             "type": "text",
-            "text": "据中国海关总署统计数据显示，2023年7月，中国空调产量同比增长29.0%。2023年7月，中国空调出口量为308万台，同比增长1.3%。2023年1-7月，中国空调累计出口量达到3475万台，累计同比下降1.2%。2023年7月，中国空调出口金额为500028千美元，同比下降15.4%。2023年1-7月，中国空调累计出口金额达到5463418千美元，累计同比下降7.4%。"
+            "text": "2023年7月，中国空调出口量为308万台，同比增长1.3%。2023年1-7月，中国空调累计出口量达到3475万台，累计同比下降1.2%。2023年7月，中国空调出口金额为500028千美元，同比下降15.4%。2023年1-7月，中国空调累计出口金额达到5463418千美元，累计同比下降7.4%。"
           }
         ],
         "source_pages": [
@@ -16109,13 +17919,35 @@
     "answer": "D",
     "analysis": "“其他能源”生产量四个同比增速依次约为：(75490−68953)/68953=9.48%，(80237−75490)/75490=6.29%，(87985−80237)/80237=9.66%，(92872−87985)/87985=5.55%。最慢为2022年，选D。2020年的增量虽略小于2022年，但基数也更小，不能只比增量。",
     "selection_reason": "相近增量下比较增长率，避免只看差值。",
-    "edits": [],
+    "edits": [
+      {
+        "type": "source_boundary_note",
+        "description": "增加题源说明，注明92872按源转写表保留、尚未对照原PDF；题面、材料数值与答案均不改。",
+        "version": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "D",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "edits",
+          "source_notice"
+        ]
+      }
     },
     "source_locators": {
       "original_number": 76,
@@ -16299,7 +18131,8 @@
       "old_corpus_files_scanned": 157,
       "old_corpus_matches": [],
       "limitations": "仅核对仓库内旧专项/习题本/解析的文本文件；没有匹配不证明用户未在别处做过。纯数列及短泛化设问不能仅靠短句匹配确认未曝光。"
-    }
+    },
+    "source_notice": "本题采用题源转写表中的2022年“其他能源”生产量92872万吨标准煤。本轮未取得粉笔原PDF逐格核对，不按构成比规律推测替换该数值；当前答案依题给表计算。"
   },
   {
     "number": 87,
@@ -16547,11 +18380,19 @@
     "selection_reason": "生产与消费两表同名指标并列，训练守住表和统计口径。",
     "edits": [],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_unchanged",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "D",
+        "key_result": "accepted_after_review"
+      }
     },
     "source_locators": {
       "original_number": 77,
@@ -17073,15 +18914,37 @@
     },
     "source_answer": null,
     "answer": "B",
-    "analysis": "2022年消费量中，原煤304042/540956≈56.20%，原油96839/540956≈17.90%，天然气45444/540956≈8.40%，其他能源94631/540956≈17.49%。应表现为灰色略过一半、白色不到一成、黑白格与黑色均接近18%且黑白格略大，只有B符合。A、C灰色约七成；D白色与黑色比例也不符合，选B。",
+    "analysis": "2022年消费量中，原煤304042/540956≈56.20%，原油96839/540956≈17.90%，天然气45444/540956≈8.40%，其他能源94631/540956≈17.49%。应表现为灰色略过一半、白色不到一成、黑白格与黑色均接近18%且黑白格略大，只有B符合。表1的2022年生产构成约为67.7%、6.3%、5.9%、20.0%，与A接近；2018年生产构成约为69.2%、7.2%、5.4%、18.2%，与C接近，均不符合题问的2022年消费构成。D的白色扇区明显偏大，也不符合8.40%的天然气消费占比，选B。",
     "selection_reason": "把数表转换为组成关系，比较大小、近似相等和扇区量级。",
-    "edits": [],
+    "edits": [
+      {
+        "type": "analysis_enrichment",
+        "description": "补充A接近2022年生产构成、C接近2018年生产构成，提示辨别生产/消费及年份；保留近似措辞，不冒称图像扇区的精确比例。",
+        "version": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_revisions_pending_recheck",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "B",
+        "key_result": "accepted_after_review"
+      },
+      "revision_020": {
+        "status": "editor_revised_pending_claude_recheck",
+        "report": "GPT审核意见处理.md",
+        "changed_fields": [
+          "analysis",
+          "edits"
+        ]
+      }
     },
     "source_locators": {
       "original_number": 78,
@@ -17523,11 +19386,19 @@
     "selection_reason": "年均量与年均增长的期数区别；数值靠近区间边界，粗估须留足精度。",
     "edits": [],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_unchanged",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "C",
+        "key_result": "accepted_after_review"
+      }
     },
     "source_locators": {
       "original_number": 79,
@@ -17986,11 +19857,19 @@
     "selection_reason": "综合检验差值绝对方向、跨年下降、结构比重和隔年增长。",
     "edits": [],
     "verification": {
-      "status": "editor_solved_pending_independent_review",
+      "status": "claude_reviewed_v010_unchanged",
       "method": "编辑独立推导；源库未提供答案。整数与概率题另用穷举/精确分数核对，资料各项计算见quant_data_check.py；图形选项已实际查看。程序核验不替代Claude独立审核。",
       "source_answer_available": false,
       "source_answer_agreement": null,
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "initial_editor_check_version": "0.1.0",
+      "claude_review": {
+        "reviewed_version": "0.1.0",
+        "review_commit": "ec1e3e6abf30caba6144c9397709f068d80ea8b3",
+        "report": "Claude审核意见.md",
+        "final_answer": "C",
+        "key_result": "accepted_after_review"
+      }
     },
     "source_locators": {
       "original_number": 80,
