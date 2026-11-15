@@ -1,0 +1,35 @@
+{
+  "_meta": {
+    "paper": "M03 0.1.0 待审稿",
+    "module": "资料分析 第71-90题",
+    "written_before_opening": [
+      "selection.json", "答案与解析_待审.md", "来源登记.jsonl", "选题记录.md", "核验报告.json",
+      "交接_Claude.md", "核验记录/", "编辑底稿/", "模考/ 下含答案文件"
+    ],
+    "inputs_used": ["题目.jsonl", "题本_待审.md 第七部分", "选项图 s22_p19_i01/i02, s22_p20_i00/i01, s25_p19_i02/i03, s25_p20_i00/i01"],
+    "computation": "blind_calc_71_90.py (输出 blind_calc_71_90.out.txt); q88_pie_measure.py",
+    "confidence_scale": "high / medium-high / medium / low"
+  },
+  "answers": {
+    "71": {"answer": "A", "confidence": "high", "key": "材料末段原文检索", "uncertainty": "纯检索题，几乎无计算与取舍，练习价值低"},
+    "72": {"answer": "C", "confidence": "high", "key": "材料只提4K节目量，无8K信息；A/B/D均有原文", "uncertainty": "无"},
+    "73": {"answer": "D", "confidence": "high", "key": "105/25%=420万片/月 ×12 = 5040", "uncertainty": "‘全国总产能’默认指月产能口径；题干已补满负荷前提"},
+    "74": {"answer": "D", "confidence": "high", "key": "1.044/1.094-1 = -4.57%，下降不到5%", "uncertainty": "简单相减得-5.0%恰在边界，属有意陷阱；精确值离边界0.43个百分点"},
+    "75": {"answer": "B", "confidence": "high", "key": "2905/89% = 3264万户 > 3000", "uncertainty": "D依赖‘增长2.5倍=3.5倍’的公考惯例：按惯例增长额7716>7500为错；若误读为‘是2.5倍’则增长额6482<7500会变成对"},
+    "76": {"answer": "C", "confidence": "high", "key": "25.512% - 11.208% = 14.30个百分点，扩大", "uncertainty": "无"},
+    "77": {"answer": "B", "confidence": "high", "key": "2023/2013：亏损总额6.52倍 > 亏损企业数3.15 > 企业数1.60 > 利润0.996", "uncertainty": "无"},
+    "78": {"answer": "B", "confidence": "medium-high", "key": "利润增速>收入增速的年份：2013(25.6>19.8)、2014(17.3>10.1)", "uncertainty": "2013年需用表中同比增速判断（无2012水平值）；漏掉2013会选A=1。按表给出的2013同比，应计入"},
+    "79": {"answer": "D", "confidence": "high", "key": "2738.64 - 2849.48 = -110.84万元", "uncertainty": "单位换算亿元→万元"},
+    "80": {"answer": "C", "confidence": "medium-high", "key": "①1088.9/311.5=3.50>3成立；②5107.7×0.256/1.256=1041>1000成立；③年度数据推不出12月当月 → 2项", "uncertainty": "①‘超过……的3倍’按A>3B理解；若有人理解为‘多出3倍’(A>4B)则不成立。③靠‘2023年12月当月’与年度表区分，属口径陷阱"},
+    "81": {"answer": "A", "confidence": "high", "key": "22247 - 14060/1.166 = 22247 - 12058.32 = 10188.7", "uncertainty": "用2023年6月累计及累计增速倒推2022年6月累计，属常规口径"},
+    "82": {"answer": "D", "confidence": "high", "key": "10月1468 / 9月1770 - 1 = -17.06%", "uncertainty": "无"},
+    "83": {"answer": "D", "confidence": "high", "key": "2635 / (12058.32 - 10004.38) - 1 = 28.29%", "uncertainty": "同法推2023年7月当月同比为26.6%，与材料文字‘7月产量同比增长29.0%’不自洽（真实统计口径差），不影响本题"},
+    "84": {"answer": "B", "confidence": "high", "key": "0.846/1.013 - 1 = -16.49%", "uncertainty": "无"},
+    "85": {"answer": "A", "confidence": "high", "key": "环比增量 10月-302、11月+21、12月+309，单调上升且近似等距；A图两段升幅比1.11与实际1.12吻合", "uncertainty": "四图只有A上升，区分度低；图无坐标轴"},
+    "86": {"answer": "D", "confidence": "high", "key": "2022: 4887/87985=5.55% < 2020: 4747/75490=6.29%", "uncertainty": "无"},
+    "87": {"answer": "D", "confidence": "high", "key": "10435/4134 = 2.52", "uncertainty": "无"},
+    "88": {"answer": "B", "confidence": "high", "key": "期望 原煤56.2%/原油17.9%/天然气8.4%/其他17.5%；实测B≈55.8/19.5/7.1/17.6(含边界线误差)，D天然气≈11.4%偏大、其他≈15.0%偏小，A、C原煤≈67-69%", "uncertainty": "B与D主要靠‘天然气约为其他能源一半’区分，需图印得够大"},
+    "89": {"answer": "C", "confidence": "high", "key": "120267/5 = 24053.4，落在24000~25000", "uncertainty": "距下界仅53.4（合计差267），千位取整估算会误落B；须精算。依赖转写数字无误"},
+    "90": {"answer": "C", "confidence": "high", "key": "2021三项占比 = 438072/525896 = 83.30% > 80%", "uncertainty": "A: ‘相差’取绝对值则2018(+16266)、2022(-10042)两年超10000，A错；若单向理解消费-生产只有2018一年，A会变成对 → 依赖‘相差’的标准读法"}
+  }
+}

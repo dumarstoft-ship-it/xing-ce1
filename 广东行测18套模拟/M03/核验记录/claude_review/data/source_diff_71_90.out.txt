@@ -1,0 +1,178 @@
+========================================================================
+第71题  源 gd-mock-2026h2-s19-q71  源页 [20]
+  题干: 与原题一致
+  -- 材料 M03-M01（首次出现，逐项比对）
+     文字（去空白/换行）: 逐字一致
+     表格数: 原 0 / 现 0
+     现材料文字块 1 个，各块长度 [553]
+       > 凭借多年前瞻布局与全链条深耕，广东省超高清视频产业领跑全国，建成全国唯一的超高清视频产业发展试验区，组建国家级制造业创新…
+  edit[material_paragraphs]: {"description": "按产业总规模、当期产出、龙头企业、存量能力和规划五个语义段落分段；文字、数据与顺序保持不变。"}
+  selection_reason: 保留广东资料中的文字检索；训练定位并逐项比对名词范围。
+  verification: status=editor_solved_pending_independent_review source_answer_available=False
+  source_answer: None；source_question.answer: None
+========================================================================
+第72题  源 gd-mock-2026h2-s19-q72  源页 [20]
+  题干: 有改动
+    原: 关于广东省超高清视频产业，下列说法错误的是：
+    现: 根据材料，关于广东省超高清视频产业，下列说法不能推出的是：
+  stem_override 与 题目.jsonl 题干一致
+  edit[material_paragraphs]: {"description": "按产业总规模、当期产出、龙头企业、存量能力和规划五个语义段落分段；文字、数据与顺序保持不变。"}
+  edit[question_clarification]: {"description": "将“错误的是”改为“不能推出的是”：未给8K节目数量和排名只能判为材料不支持，不能仅凭缺信息断言现实事实为假。选项和检索对象不变。"}
+  selection_reason: 区分材料支持与背景想当然，核对4K/8K及全国排名等边界。
+  verification: status=editor_solved_pending_independent_review source_answer_available=False
+  source_answer: None；source_question.answer: None
+========================================================================
+第73题  源 gd-mock-2026h2-s19-q73  源页 [20]
+  题干: 有改动
+    原: 在全国面板月产能保持目前水平的前提下，2026年全国将生产面板多少万片？
+    现: 假设2026年全国各月面板产能均保持材料所述目前水平，且各月均按该产能满负荷生产，则2026年全国面板产量为多少万片？
+  stem_override 与 题目.jsonl 题干一致
+  edit[material_paragraphs]: {"description": "按产业总规模、当期产出、龙头企业、存量能力和规划五个语义段落分段；文字、数据与顺序保持不变。"}
+  edit[condition_clarification]: {"description": "源题只规定月产能不变却直接求实际产量。本题明确全年各月保持该水平且满负荷生产，使5040万片成为由题面可推出的产量；不改数据或选项。"}
+  selection_reason: 连续完成地区范围和月度/年度两个转换，同时补足产能转换产量的必要条件。
+  verification: status=editor_solved_pending_independent_review source_answer_available=False
+  source_answer: None；source_question.answer: None
+========================================================================
+第74题  源 gd-mock-2026h2-s19-q74  源页 [20]
+  题干: 与原题一致
+  edit[material_paragraphs]: {"description": "按产业总规模、当期产出、龙头企业、存量能力和规划五个语义段落分段；文字、数据与顺序保持不变。"}
+  selection_reason: 由两年累计增长和后一年的增长反推前一年，守住比较基期。
+  verification: status=editor_solved_pending_independent_review source_answer_available=False
+  source_answer: None；source_question.answer: None
+========================================================================
+第75题  源 gd-mock-2026h2-s19-q75  源页 [20]
+  题干: 与原题一致
+  edit[material_paragraphs]: {"description": "按产业总规模、当期产出、龙头企业、存量能力和规划五个语义段落分段；文字、数据与顺序保持不变。"}
+  selection_reason: 综合识别百分点、部分反推总体、不同分母、增长几倍四类边界。
+  verification: status=editor_solved_pending_independent_review source_answer_available=False
+  source_answer: None；source_question.answer: None
+========================================================================
+第76题  源 gd-mock-2026h2-s17-q81  源页 [22]
+  题干: 与原题一致
+  -- 材料 M03-M02（首次出现，逐项比对）
+     文字（去空白/换行）: 逐字一致
+     表格数: 原 1 / 现 1
+     表1: 原 11 行 / 现 11 行；比对 99 格，不一致 0 格 []
+     表1 其它字段: 原{"source_asset_id": "s17_p22_i00"} 现{}
+     现材料文字块 1 个，各块长度 [24]
+       > 注：企业亏损面  = （亏损企业数）/（企业数）
+  selection_reason: 表内双分母计算与百分点方向判断。
+  verification: status=editor_solved_pending_independent_review source_answer_available=False
+  source_answer: None；source_question.answer: None
+========================================================================
+第77题  源 gd-mock-2026h2-s17-q82  源页 [22]
+  题干: 与原题一致
+  selection_reason: 同跨度年均增长排序化为终期/基期比，减少不必要的开方计算。
+  verification: status=editor_solved_pending_independent_review source_answer_available=False
+  source_answer: None；source_question.answer: None
+========================================================================
+第78题  源 gd-mock-2026h2-s17-q83  源页 [22]
+  题干: 与原题一致
+  selection_reason: 用分子分母增速判平均数方向，并注意首年也可由给定同比判断。
+  verification: status=editor_solved_pending_independent_review source_answer_available=False
+  source_answer: None；source_question.answer: None
+========================================================================
+第79题  源 gd-mock-2026h2-s17-q84  源页 [22]
+  题干: 与原题一致
+  selection_reason: 双平均数作差、条件分母与亿元/万元转换叠加。
+  verification: status=editor_solved_pending_independent_review source_answer_available=False
+  source_answer: None；source_question.answer: None
+========================================================================
+第80题  源 gd-mock-2026h2-s17-q85  源页 [22]
+  题干: 有改动
+    原: 根据上述材料，下列说法正确的有几项？ / ①“十三五”期间，我国汽车制造业亏损总额最多的年份，其亏损总额超过亏损总额最少年份的3倍 / ②2013年，我国汽车制造业主营业务利润总额同比增加超过1000亿元 / ③2023年12月，我国汽车制造业当月亏损额同比增加约188.5亿元
+    现: 根据上述材料，下列说法可以推出的有几项？ / ①“十三五”期间，我国汽车制造业亏损总额最多的年份，其亏损总额超过亏损总额最少年份的3倍 / ②2013年，我国汽车制造业主营业务利润总额同比增加超过1000亿元 / ③2023年12月，我国汽车制造业当月亏损额同比增加约188.5亿元
+  stem_override 与 题目.jsonl 题干一致
+  edit[question_clarification]: {"description": "将“说法正确的有几项”明确为“说法可以推出的有几项”，使第③项按材料缺少月度数据判定，而不把未知月度事实当作已证伪。各判断内容不变。"}
+  selection_reason: 综合检验规划期边界、增长量和全年/单月统计口径。
+  verification: status=editor_solved_pending_independent_review source_answer_available=False
+  source_answer: None；source_question.answer: None
+========================================================================
+第81题  源 gd-mock-2026h2-s22-q71  源页 [19]
+  题干: 与原题一致
+  -- 材料 M03-M03（首次出现，逐项比对）
+     文字（去空白/换行）: 逐字一致
+     表格数: 原 1 / 现 1
+     表1: 原 11 行 / 现 11 行；比对 33 格，不一致 0 格 []
+     表1 注: 原[] 现[表中各月数值均为当年年初至该月的累计值；2023年1—2月为两个月合计。]
+     表1 其它字段: 原{"source_asset_id": "s22_p19_i00"} 现{}
+     现材料文字块 1 个，各块长度 [189]
+       > 据中国海关总署统计数据显示，2023年7月，中国空调产量同比增长29.0%。2023年7月，中国空调出口量为308万台，…
+  edit[material_clarification]: {"description": "补明累计口径随自然年重新起算，1—2月为合计；这是原表标题及数值的既有含义，不改数值。"}
+  selection_reason: 从次年累计同比反推缺失上半年，再与全年相减。
+  verification: status=editor_solved_pending_independent_review source_answer_available=False
+  source_answer: None；source_question.answer: None
+========================================================================
+第82题  源 gd-mock-2026h2-s22-q72  源页 [19]
+  题干: 与原题一致
+  edit[material_clarification]: {"description": "补明累计口径随自然年重新起算，1—2月为合计；这是原表标题及数值的既有含义，不改数值。"}
+  selection_reason: 先还原两个月当月量，再计算环比，不被累计表的列名牵走。
+  verification: status=editor_solved_pending_independent_review source_answer_available=False
+  source_answer: None；source_question.answer: None
+========================================================================
+第83题  源 gd-mock-2026h2-s22-q73  源页 [19]
+  题干: 与原题一致
+  edit[material_clarification]: {"description": "补明累计口径随自然年重新起算，1—2月为合计；这是原表标题及数值的既有含义，不改数值。"}
+  selection_reason: 两组现期累计量与两组同比需要分别还原，考查累计转单月的完整链条。
+  verification: status=editor_solved_pending_independent_review source_answer_available=False
+  source_answer: None；source_question.answer: None
+========================================================================
+第84题  源 gd-mock-2026h2-s22-q74  源页 [19]
+  题干: 与原题一致
+  edit[material_clarification]: {"description": "补明累计口径随自然年重新起算，1—2月为合计；这是原表标题及数值的既有含义，不改数值。"}
+  selection_reason: 平均数增长率，先用方向和幅度关系作合理性检查。
+  verification: status=editor_solved_pending_independent_review source_answer_available=False
+  source_answer: None；source_question.answer: None
+========================================================================
+第85题  源 gd-mock-2026h2-s22-q75  源页 [19, 20]
+  题干: 与原题一致
+  选项A 改动: 原[[FIG assets/s22_p19_i01.png]] 现[[FIG 模考/2026下半年广东卷_16-33季_AI可读/assets/s22_p19_i01.png]]
+  选项B 改动: 原[[FIG assets/s22_p19_i02.png]] 现[[FIG 模考/2026下半年广东卷_16-33季_AI可读/assets/s22_p19_i02.png]]
+  选项C 改动: 原[[FIG assets/s22_p20_i00.png]] 现[[FIG 模考/2026下半年广东卷_16-33季_AI可读/assets/s22_p20_i00.png]]
+  选项D 改动: 原[[FIG assets/s22_p20_i01.png]] 现[[FIG 模考/2026下半年广东卷_16-33季_AI可读/assets/s22_p20_i01.png]]
+  edit[material_clarification]: {"description": "补明累计口径随自然年重新起算，1—2月为合计；这是原表标题及数值的既有含义，不改数值。"}
+  selection_reason: 从累计量到当月量再到环比增量，两次作差后识别图形趋势。
+  verification: status=editor_solved_pending_independent_review source_answer_available=False
+  source_answer: None；source_question.answer: None
+========================================================================
+第86题  源 gd-mock-2026h2-s25-q76  源页 [19]
+  题干: 与原题一致
+  -- 材料 M03-M04（首次出现，逐项比对）
+     文字（去空白/换行）: 逐字一致
+     表格数: 原 2 / 现 2
+     表1: 原 5 行 / 现 5 行；比对 30 格，不一致 0 格 []
+     表1 其它字段: 原{"source_asset_id": "s25_p19_i00"} 现{}
+     表2: 原 5 行 / 现 5 行；比对 30 格，不一致 0 格 []
+     表2 其它字段: 原{"source_asset_id": "s25_p19_i01"} 现{}
+     现材料文字块 0 个，各块长度 []
+  selection_reason: 相近增量下比较增长率，避免只看差值。
+  verification: status=editor_solved_pending_independent_review source_answer_available=False
+  source_answer: None；source_question.answer: None
+========================================================================
+第87题  源 gd-mock-2026h2-s25-q77  源页 [19]
+  题干: 与原题一致
+  selection_reason: 生产与消费两表同名指标并列，训练守住表和统计口径。
+  verification: status=editor_solved_pending_independent_review source_answer_available=False
+  source_answer: None；source_question.answer: None
+========================================================================
+第88题  源 gd-mock-2026h2-s25-q78  源页 [19, 20]
+  题干: 与原题一致
+  选项A 改动: 原[[FIG assets/s25_p19_i02.png]] 现[[FIG 模考/2026下半年广东卷_16-33季_AI可读/assets/s25_p19_i02.png]]
+  选项B 改动: 原[[FIG assets/s25_p19_i03.png]] 现[[FIG 模考/2026下半年广东卷_16-33季_AI可读/assets/s25_p19_i03.png]]
+  选项C 改动: 原[[FIG assets/s25_p20_i00.png]] 现[[FIG 模考/2026下半年广东卷_16-33季_AI可读/assets/s25_p20_i00.png]]
+  选项D 改动: 原[[FIG assets/s25_p20_i01.png]] 现[[FIG 模考/2026下半年广东卷_16-33季_AI可读/assets/s25_p20_i01.png]]
+  selection_reason: 把数表转换为组成关系，比较大小、近似相等和扇区量级。
+  verification: status=editor_solved_pending_independent_review source_answer_available=False
+  source_answer: None；source_question.answer: None
+========================================================================
+第89题  源 gd-mock-2026h2-s25-q79  源页 [20]
+  题干: 与原题一致
+  selection_reason: 年均量与年均增长的期数区别；数值靠近区间边界，粗估须留足精度。
+  verification: status=editor_solved_pending_independent_review source_answer_available=False
+  source_answer: None；source_question.answer: None
+========================================================================
+第90题  源 gd-mock-2026h2-s25-q80  源页 [20]
+  题干: 与原题一致
+  selection_reason: 综合检验差值绝对方向、跨年下降、结构比重和隔年增长。
+  verification: status=editor_solved_pending_independent_review source_answer_available=False
+  source_answer: None；source_question.answer: None

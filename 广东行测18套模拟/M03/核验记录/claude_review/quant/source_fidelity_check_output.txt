@@ -1,0 +1,34 @@
+31 gd-mock-2026h2-s19-q31 source_question==源库对象: True 源库answer: None
+32 gd-mock-2026h2-s29-q35 source_question==源库对象: True 源库answer: None
+33 gd-mock-2026h2-s27-q34 source_question==源库对象: True 源库answer: None
+34 gd-mock-2026h2-s25-q34 source_question==源库对象: True 源库answer: None
+35 gd-mock-2026h2-s19-q35 source_question==源库对象: True 源库answer: None
+36 gd-mock-2026h2-s30-q37 source_question==源库对象: True 源库answer: None
+37 gd-mock-2026h2-s32-q37 source_question==源库对象: True 源库answer: None
+38 gd-mock-2026h2-s27-q42 source_question==源库对象: True 源库answer: None
+39 gd-mock-2026h2-s25-q42 source_question==源库对象: True 源库answer: None
+40 gd-mock-2026h2-s19-q40 source_question==源库对象: True 源库answer: None
+41 gd-mock-2026h2-s22-q40 source_question==源库对象: True 源库answer: None
+42 gd-mock-2026h2-s27-q39 source_question==源库对象: True 源库answer: None
+43 gd-mock-2026h2-s19-q41 source_question==源库对象: True 源库answer: None
+44 gd-mock-2026h2-s23-q43 source_question==源库对象: True 源库answer: None
+45 gd-mock-2026h2-s31-q45 source_question==源库对象: True 源库answer: None
+
+本模块题用到的转写资产：
+  第31题 s19_p09_i00: $\sqrt{13}$  同哈希其他资产: []  同哈希文本是否唯一: True
+  第31题 s19_p09_i01: $\sqrt{109}$  同哈希其他资产: []  同哈希文本是否唯一: True
+  第31题 s19_p09_i02: $\sqrt{103}$  同哈希其他资产: []  同哈希文本是否唯一: True
+  第33题 s27_p09_i00: $\frac{7}{3}$  同哈希其他资产: ['s27_p10_i00']  同哈希文本是否唯一: True
+  第33题 s27_p09_i01: $\frac{5}{3}$  同哈希其他资产: []  同哈希文本是否唯一: True
+  第33题 s27_p09_i02: $\frac{43}{81}$  同哈希其他资产: []  同哈希文本是否唯一: True
+  第33题 s27_p09_i03: $\frac{20}{243}$  同哈希其他资产: []  同哈希文本是否唯一: True
+  第33题 s27_p09_i04: $\frac{13}{81}$  同哈希其他资产: []  同哈希文本是否唯一: True
+  第33题 s27_p09_i05: $\frac{59}{243}$  同哈希其他资产: []  同哈希文本是否唯一: True
+  第33题 s27_p09_i06: $\frac{7}{27}$  同哈希其他资产: []  同哈希文本是否唯一: True
+  第35题 s19_p10_i04: 四个圆内的数字  同哈希其他资产: []  同哈希文本是否唯一: True
+  第36题 s30_p09_i09: $\frac{3}{4}$  同哈希其他资产: ['s18_p09_i04', 's20_p10_i05', 's23_p10_i00', 's26_p10_i00', 's27_p10_i01', 's30_p09_i05', 's32_p09_i06']  同哈希文本是否唯一: True
+  第36题 s30_p09_i10: $\frac{3}{5}$  同哈希其他资产: ['s19_p09_i04', 's21_p10_i00', 's23_p11_i04', 's30_p10_i03', 's32_p09_i03']  同哈希文本是否唯一: True
+  第40题 s19_p11_i01: $\frac{37}{64}$  同哈希其他资产: []  同哈希文本是否唯一: True
+  第41题 s22_p10_i01: $\frac{2}{5}$  同哈希其他资产: ['s19_p09_i05', 's23_p10_i04', 's23_p11_i02', 's30_p10_i02', 's32_p10_i00']  同哈希文本是否唯一: True
+
+全源库同一图片哈希对应不同转写文本的数量: 0

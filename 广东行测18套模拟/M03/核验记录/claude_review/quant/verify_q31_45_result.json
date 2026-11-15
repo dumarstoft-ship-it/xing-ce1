@@ -1,0 +1,285 @@
+{
+ "repo_root": "/home/user/xing-ce1",
+ "questions": {
+  "31": {
+   "editor_answer": "A",
+   "claude_check_answer": "A",
+   "agree": true,
+   "options_satisfying_conditions": [
+    "A"
+   ],
+   "source_answer": null,
+   "notes": "唯一拟合的组内运算为 c=√(a²+b²)"
+  },
+  "32": {
+   "editor_answer": "A",
+   "claude_check_answer": "A",
+   "agree": true,
+   "options_satisfying_conditions": [
+    "A"
+   ],
+   "source_answer": null,
+   "notes": "奇数项差2,6,18公比3；另奇数项−27=1,3,9,27 同解；无规律指向B/C/D"
+  },
+  "33": {
+   "editor_answer": "D",
+   "claude_check_answer": "D",
+   "agree": true,
+   "options_satisfying_conditions": [
+    "D"
+   ],
+   "source_answer": null,
+   "notes": "分母统一为3^n，分子3,7,15,27,43二级差为4，下一项63/243=7/27"
+  },
+  "34": {
+   "editor_answer": "A",
+   "claude_check_answer": "A",
+   "agree": true,
+   "options_satisfying_conditions": [
+    "A"
+   ],
+   "source_answer": null,
+   "notes": "差数列递推唯一指向84"
+  },
+  "35": {
+   "editor_answer": "B",
+   "claude_check_answer": "B",
+   "agree": true,
+   "options_satisfying_conditions": [
+    "B"
+   ],
+   "source_answer": null,
+   "notes": "a+d=b×c；重建图与源位置表逐格一致",
+   "svg_matches_source_table": true
+  },
+  "36": {
+   "editor_answer": "B",
+   "claude_check_answer": "B",
+   "agree": true,
+   "options_satisfying_conditions": [
+    "B"
+   ],
+   "source_answer": null,
+   "notes": "唯一解 168=72+63+33"
+  },
+  "37": {
+   "editor_answer": "C",
+   "claude_check_answer": "C",
+   "agree": true,
+   "options_satisfying_conditions": [
+    "C"
+   ],
+   "source_answer": null,
+   "notes": "唯一 N=630；x≡3(mod 4)，最少3辆"
+  },
+  "38": {
+   "editor_answer": "D",
+   "claude_check_answer": "D",
+   "agree": true,
+   "options_satisfying_conditions": [
+    "D"
+   ],
+   "source_answer": null,
+   "notes": "收入为上月48%，降52%；补“进价不变”是必要前提"
+  },
+  "39": {
+   "editor_answer": "D",
+   "claude_check_answer": "D",
+   "agree": true,
+   "options_satisfying_conditions": [
+    "D"
+   ],
+   "source_answer": null,
+   "notes": "w=12，二测18，L=54"
+  },
+  "40": {
+   "editor_answer": "B",
+   "claude_check_answer": "B",
+   "agree": true,
+   "options_satisfying_conditions": [
+    "B"
+   ],
+   "source_answer": null,
+   "notes": "水下≤27/64 -> 相似比3/4 -> 降1.75；C/D满足但非最小",
+   "per_option": [
+    [
+     "A",
+     1.54,
+     0.5254,
+     false
+    ],
+    [
+     "B",
+     1.75,
+     0.5781,
+     true
+    ],
+    [
+     "C",
+     2.1,
+     0.657,
+     true
+    ],
+    [
+     "D",
+     3.0,
+     0.8134,
+     true
+    ]
+   ]
+  },
+  "41": {
+   "editor_answer": "A",
+   "claude_check_answer": "A",
+   "agree": true,
+   "options_satisfying_conditions": [
+    "A"
+   ],
+   "source_answer": null,
+   "notes": "乙1/40，丙1/100，5:2"
+  },
+  "42": {
+   "editor_answer": "B",
+   "claude_check_answer": "B",
+   "agree": true,
+   "options_satisfying_conditions": [
+    "B"
+   ],
+   "source_answer": null,
+   "notes": "老张条件迫使闰年；老陈第89天≡8(mod 9)"
+  },
+  "43": {
+   "editor_answer": "D",
+   "claude_check_answer": "D",
+   "agree": true,
+   "options_satisfying_conditions": [
+    "D"
+   ],
+   "source_answer": null,
+   "notes": "P=4992/15625=0.319488≈0.32",
+   "variants": {
+    "正确：首次<2人取消补考": [
+     "4992/15625",
+     0.319488,
+     "D"
+    ],
+    "误读：首次≤2人也取消（“不足一半”含一半）": [
+     "768/3125",
+     0.24576,
+     "B"
+    ],
+    "忽略门槛（所有人都可补考）": [
+     "127776/390625",
+     0.32710656,
+     "D"
+    ]
+   }
+  },
+  "44": {
+   "editor_answer": "D",
+   "claude_check_answer": "D",
+   "agree": true,
+   "options_satisfying_conditions": [
+    "D"
+   ],
+   "source_answer": null,
+   "notes": "唯一 47"
+  },
+  "45": {
+   "editor_answer": "B",
+   "claude_check_answer": "B",
+   "agree": true,
+   "options_satisfying_conditions": [
+    "B"
+   ],
+   "source_answer": null,
+   "notes": "35×(6+4)=350"
+  }
+ },
+ "q35_png_gap_px": {
+  "−4": 31,
+  "34": 64,
+  "−15": 4,
+  "?": 79
+ },
+ "display_consistency": {
+  "31": {
+   "stem": true,
+   "options": true
+  },
+  "32": {
+   "stem": true,
+   "options": true
+  },
+  "33": {
+   "stem": true,
+   "options": true
+  },
+  "34": {
+   "stem": true,
+   "options": true
+  },
+  "35": {
+   "stem": true,
+   "options": true
+  },
+  "36": {
+   "stem": true,
+   "options": true
+  },
+  "37": {
+   "stem": true,
+   "options": true
+  },
+  "38": {
+   "stem": true,
+   "options": true
+  },
+  "39": {
+   "stem": true,
+   "options": true
+  },
+  "40": {
+   "stem": true,
+   "options": true
+  },
+  "41": {
+   "stem": true,
+   "options": true
+  },
+  "42": {
+   "stem": true,
+   "options": true
+  },
+  "43": {
+   "stem": true,
+   "options": true
+  },
+  "44": {
+   "stem": true,
+   "options": true
+  },
+  "45": {
+   "stem": true,
+   "options": true
+  }
+ },
+ "stem_changes_vs_source": {
+  "35": {
+   "source": "[table]",
+   "now": "观察下列各圆内数字的关系，问号处应填入的数是："
+  },
+  "38": {
+   "source": "某服装店上月的爆款T恤单件进价为120元，本月店主决定将该款T恤的售价上涨20%，则单件利润将增加30元。然而由于价格上涨，本月该款T恤的销量下降，总利润仅为上月的80%，则本月售卖该款T恤的总收入比上月减少了：",
+   "now": "某服装店上月的爆款T恤单件进价为120元，本月进价保持不变，店主决定将该款T恤的售价上涨20%，则单件利润将增加30元。然而由于价格上涨，本月该款T恤的销量下降，总利润仅为上月的80%，则本月售卖该款T恤的总收入比上月减少了："
+  },
+  "42": {
+   "source": "某物业公司的保安可选择的排班方案有两种：①上10天休2天；②上8天休1天。老张选择方案\n①，从1月1日开始第1天上班，3月30日是他休息后上班的第6天。若老陈选择方案②并从1月2日开始第1天上班，那么3月30日这天他处于：",
+   "now": "某物业公司的保安可选择的排班方案有两种：①上10天休2天；②上8天休1天。老张选择方案①，从1月1日开始第1天上班，3月30日是他休息后上班的第6天。若老陈选择方案②并从1月2日开始第1天上班，那么3月30日这天他处于："
+  },
+  "43": {
+   "source": "某公司招聘时，4名应届毕业生同时参加笔试。每人首次笔试合格的概率均为0.8，且未合格者有一次补考机会，补考合格的概率均为0.4。若首次笔试合格人数不足参加笔试总人数的一半，则取消补考。恰好有3名应届毕业生笔试合格的概率约为：",
+   "now": "某公司招聘时，4名应届毕业生同时参加笔试。每人首次笔试合格的概率均为0.8，且未合格者有一次补考机会，补考合格的概率均为0.4。各人的考试结果相互独立，补考结果也与首次考试结果独立。若首次笔试合格人数不足参加笔试总人数的一半，则取消补考。恰好有3名应届毕业生最终笔试合格的概率约为："
+  }
+ }
+}
