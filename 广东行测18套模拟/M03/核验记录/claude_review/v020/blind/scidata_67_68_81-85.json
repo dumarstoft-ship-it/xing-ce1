@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "paper": "M03 v0.2.0",
+    "written_at": "2026-11-15, before opening selection.json / 答案与解析_待审.md / any answer-bearing file",
+    "visible_inputs_used": [
+      "广东行测18套模拟/M03/题目.jsonl (lines for Q67, Q68, Q81-Q85)",
+      "广东行测18套模拟/M03/assets/q67_projectile_v020.png (+ .svg source read for geometry)",
+      "广东行测18套模拟/M03/assets/q68_particles_v020.png (+ .svg source read for geometry)",
+      "模考/2026下半年广东卷_16-33季_AI可读/assets/s22_p19_i01.png, s22_p19_i02.png, s22_p20_i00.png, s22_p20_i01.png (Q85 option charts, examinee-visible)"
+    ],
+    "blindness_note": "No answer file opened before writing this. The two SVG files carry <title>/<desc> metadata not printed on paper; q68 desc says '保留反应后未消耗的氧气' (interpretive hint, not an answer letter). q67 desc has no answer hint. Treat all seven as blind."
+  },
+  "answers": {
+    "67": {
+      "answer": "B",
+      "confidence": "high (0.97)",
+      "derivation": [
+        "SVG geometry: O=(195,13); wall top surface y=69 (x 11..137), corner (137,69), vertical face x=137 (y 69..165).",
+        "A lands on wall top at (117,69): dx=78, drop=56. B hits vertical face at (137,84): dx=58, drop=71.",
+        "Both paths are quadratic Beziers with control point at (mid-x, y0) -> horizontal initial tangent, x linear in t, y quadratic in t = true projectile parabolas.",
+        "t depends only on drop: drop_B > drop_A (B lands below the corner level where A lands) -> t_A < t_B (②).",
+        "v = dx/t: dx_A > dx_B and t_A < t_B -> v_A > v_B (③). Numeric check v_A ∝ 78/√56 ≈ 10.4, v_B ∝ 58/√71 ≈ 6.9.",
+        "Consistency: A at x=137 is at y≈44 (<69), so A clears the corner and lands on the top; B reaches x=137 at y=84 (below top) so it hits the face. ②③ -> option B."
+      ],
+      "uncertainties": [
+        "None for the answer. Qualitative relations hold for any figure where A lands on the top surface left of the corner and B on the face below the corner.",
+        "Cosmetic: last visible dash of A stops ~8 px (≈1.3 viewBox units) above the wall top (falls in a dash gap); B's last dash is a short stub that does touch the face. Not answer-affecting."
+      ]
+    },
+    "68": {
+      "answer": "C",
+      "confidence": "high (0.95)",
+      "derivation": [
+        "Legend: large white = C, large hatched = O, small white = H.",
+        "Before: 1 CH4 (C + 4H) + 3 O2. After: 1 CO2 (O-C-O) + 2 H2O + 1 O2.",
+        "O2 appears on both sides -> 1 O2 unreacted; actual reaction CH4 + 2O2 -> CO2 + 2H2O (atoms: C1 H4 O6 before = C1 H4 O6 after, incl. leftover O2).",
+        "A wrong: molecule kinds change (CH4,O2 -> CO2,H2O); molecule count 4->4 (or 3->3 for reacting) but '种类、数目均不变' fails on kinds.",
+        "B wrong: reacting ratio CH4:O2 = 1:2, not 1:3 (1:3 is the charged ratio, a trap).",
+        "C correct: elemental O2 takes part; C -4 -> +4, O 0 -> -2: oxidation-reduction.",
+        "D wrong: products are only CO2 and H2O (2 kinds); leftover O2 is not generated."
+      ],
+      "uncertainties": [
+        "Relies on the standard convention that a molecule present before and after is excess reactant; the figure follows it cleanly.",
+        "Option C uses a high-school concept (氧化还原); acceptable for 广东 科学推理."
+      ]
+    },
+    "81": {
+      "answer": "A",
+      "confidence": "high (0.97)",
+      "derivation": [
+        "2022 H2 = 2022 full-year cumulative − 2022 Jan–Jun cumulative.",
+        "2022 Jan–Jun = 14060 / 1.166 = 12058.3 (from 2023 Jun cumulative and its cumulative YoY).",
+        "22247 − 12058.3 = 10188.7 ≈ 10189 万台 -> A. (C 12058 is the H1 value trap.)"
+      ],
+      "uncertainties": ["None."]
+    },
+    "82": {
+      "answer": "D",
+      "confidence": "high (0.97)",
+      "derivation": [
+        "2022 Sep monthly = 17492 − 15722 = 1770; Oct monthly = 18960 − 17492 = 1468.",
+        "1468/1770 − 1 = −17.06% -> 下降17% -> D."
+      ],
+      "uncertainties": ["None."]
+    },
+    "83": {
+      "answer": "D",
+      "confidence": "high (0.96)",
+      "derivation": [
+        "2023 Jun monthly = 14060 − 11425 = 2635.",
+        "2022 Jun monthly = 14060/1.166 − 11425/1.142 = 12058.32 − 10004.38 = 2053.94.",
+        "2635/2053.94 − 1 = 28.29% -> 28.3% -> D. (A 16.6% is the cumulative-rate trap.)"
+      ],
+      "uncertainties": ["None; nearest distractor 23.2% is far."]
+    },
+    "84": {
+      "answer": "B",
+      "confidence": "high (0.97)",
+      "derivation": [
+        "Unit price index = (1 − 15.4%)/(1 + 1.3%) = 0.846/1.013 = 0.83514.",
+        "-> −16.49% ≈ 下降16.5% -> B."
+      ],
+      "uncertainties": ["None. Uses only the text paragraph (July 2023 export volume and value YoY)."]
+    },
+    "85": {
+      "answer": "A",
+      "confidence": "high (0.95)",
+      "derivation": [
+        "Monthly 2022: Sep 1770, Oct 1468, Nov 20449−18960=1489, Dec 22247−20449=1798.",
+        "环比增量: Oct −302, Nov +21, Dec +309 -> monotonic increase, nearly linear (steps +323, +288).",
+        "Option charts: A rising straight line; B V-shape; C falling; D inverted V. -> A.",
+        "Robustness: monthly level (1468,1489,1798) and MoM rate (−17.1%,+1.4%,+20.7%) are also monotonic rising, so any reading gives A."
+      ],
+      "uncertainties": [
+        "Option charts are tiny (130x110 px source rasters, no axes/labels); fine for trend-shape choice but low-res for print."
+      ]
+    }
+  }
+}

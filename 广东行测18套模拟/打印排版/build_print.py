@@ -483,7 +483,7 @@ def figure_html(block: dict, sizer: FigureSizer, number, log: Log, in_material: 
             return f'<div class="fig">{html_part}</div>'
         if kind == "image":
             html_part, w, h = _png_part(rec["png_path"], rec["print_width_mm"])
-            log.add(number, "题图", "改用原像素放大二值化图", block["path"],
+            log.add(number, "题图", "改用原像素放大二值化图" if rec.get("binarize", True) else "改用原像素平滑放大图", block["path"],
                     f"{rec['png_path']}，{w:.1f}×{h:.1f}mm（核对见 重绘/重绘核对记录.json）")
             return f'<div class="fig">{html_part}</div>'
         if kind == "compose":
@@ -733,6 +733,8 @@ def question_html(q: dict, sizer: FigureSizer, log: Log) -> str:
         any(b["type"] == "figure" for o in q["options"].values() for b in o)
     if q.get("materials"):
         keep = ""
+    elif n in TURN_KEEPS:
+        keep = " keep"      # 第二遍排版发现它跨过翻页，整题移到下一页
     elif has_fig:
         keep = " keep"      # 带图、带表的题整题不跨页（题干、图表、选项在同一页），避免题干与图表被翻页隔开
     else:
@@ -1090,6 +1092,63 @@ def spread_pass(body_pdf: Path, questions: list[dict]) -> dict:
     return moved
 
 
+TURN_KEEPS: set[int] = set()
+TURN_KEEP_MAX_LINES = 18     # 约占半页多；更长的题（如长篇阅读）跨页属正常
+
+
+def _part_starts(body_pdf: Path, questions: list[dict]) -> list[int]:
+    """各部分第一题所在页（正文页码）。"""
+    import pdfplumber  # type: ignore
+    firsts, prev = [], None
+    for q in questions:
+        if q["section"] != prev:
+            firsts.append(q["number"])
+        prev = q["section"]
+    qpage = {}
+    with pdfplumber.open(str(body_pdf)) as doc:
+        for i, page in enumerate(doc.pages, 1):
+            for w in page.extract_words():
+                if w["x0"] < 30 * 72 / 25.4 and re.fullmatch(r"\d{1,3}\.", w["text"]):
+                    qpage.setdefault(int(w["text"][:-1]), i)
+        total = len(doc.pages)
+    return [qpage.get(n, 0) for n in firsts] + [total]
+
+
+def turn_pass(body_pdf: Path, questions: list[dict]) -> dict:
+    """找出跨过翻页的非资料题：从右页（奇数页）开始、最后一个选项落在背面，作答时要来回翻。
+    不长于约18行的改为整题不跨页；部分内第一题不动（否则部分标题页只剩标题）。"""
+    import pdfplumber  # type: ignore
+    with pdfplumber.open(str(body_pdf)) as doc:
+        pages = [re.sub(r"\s+", "", p.extract_text() or "") for p in doc.pages]
+        qpage = {}
+        for i, page in enumerate(doc.pages, 1):
+            for w in page.extract_words():
+                if w["x0"] < 30 * 72 / 25.4 and re.fullmatch(r"\d{1,3}\.", w["text"]):
+                    qpage.setdefault(int(w["text"][:-1]), i)
+    found = {}
+    prev_section = None
+    for q in questions:
+        n = q["number"]
+        first_in_part = q["section"] != prev_section
+        prev_section = q["section"]
+        if first_in_part or q.get("materials") or n in TURN_KEEPS or n not in qpage:
+            continue
+        start = qpage[n]
+        if start % 2 == 0:
+            continue
+        if q.get("options_mode") == "in_figure" or not q["options"]:
+            continue
+        last_opt = "".join(b.get("text", "") for b in q["options"][sorted(q["options"])[-1]] if b["type"] == "text")
+        key = re.sub(r"\s+", "", norm_text(last_opt, n, "核对", Log()))
+        key = re.split(r"\$|_{3,}", key)[0][:12]
+        if len(key) < 2:
+            continue
+        end = next((i for i in range(start, min(start + 2, len(pages)) + 1) if key in pages[i - 1]), None)
+        if end == start + 1 and _estimated_lines(q) <= TURN_KEEP_MAX_LINES:
+            found[n] = (start, end)
+    return found
+
+
 def _expected_segments(q: dict) -> list[str]:
     """按排版时同样的规范化，取出该题应出现在PDF里的文字片段（数学式、填空线处切开）。"""
     quiet = Log()
@@ -1200,6 +1259,32 @@ def main() -> None:
             for mid, (a, b) in moved.items():
                 log.add(None, "资料组", "资料组另起左页，与题目同在一个对开页", f"{mid}：原在正文第{a}—{b}页", "")
             SPREAD_BREAKS.update(moved)
+            body = body_html(args.paper_id, questions, "exam.css", "fonts.css", Log())
+            (tdp / "body.html").write_text(body, encoding="utf-8")
+            layout = render(tdp / "body.html", tdp / "body.pdf")
+        # 第三遍：非资料题若从右页开始、延续到背面（不长于约18行），逐题试着整题移到下一页。
+        # 只接受不改变其后各部分起始页的移动，即只用本部分末尾的空白，不连锁推后资料分析等后面的版面。
+        base_starts = _part_starts(tdp / "body.pdf", questions)
+        tried: set[int] = set()
+        for _ in range(12):
+            cand = {n: v for n, v in turn_pass(tdp / "body.pdf", questions).items() if n not in tried}
+            if not cand:
+                break
+            n, (a, b) = min(cand.items())
+            tried.add(n)
+            TURN_KEEPS.add(n)
+            body = body_html(args.paper_id, questions, "exam.css", "fonts.css", Log())
+            (tdp / "trial.html").write_text(body, encoding="utf-8")
+            render(tdp / "trial.html", tdp / "trial.pdf")
+            if _part_starts(tdp / "trial.pdf", questions) == base_starts:
+                log.add(n, "分页", "跨过翻页的题整题移到下一页", f"原在正文第{a}—{b}页", "")
+                shutil.copy(tdp / "trial.pdf", tdp / "body.pdf")
+                (tdp / "body.html").write_text(body, encoding="utf-8")
+            else:
+                TURN_KEEPS.discard(n)
+                log.add(n, "分页", "跨过翻页但保留原样", f"正文第{a}—{b}页",
+                        "整题移页会使后面各部分整体后移")
+        if tried:
             body = body_html(args.paper_id, questions, "exam.css", "fonts.css", Log())
             (tdp / "body.html").write_text(body, encoding="utf-8")
             layout = render(tdp / "body.html", tdp / "body.pdf")

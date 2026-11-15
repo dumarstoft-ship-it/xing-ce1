@@ -36,10 +36,95 @@
   "source_image_sha256": "364f9c90935afb52a5a195d01420ae988ad2d262f6a36cf08f9647c7318e86f6",
   "png_path": "重绘/s32_p12_i02_二值放大.png",
   "print_width_mm": 150.0,
+  "binarize": true,
   "method": "M02第50题。原图600×194像素，原尺寸印刷时每个面约5.9mm。线稿按原像素做4倍放大后二值化（不手工转录、不改动任何线条），印到150mm宽，每个面约7.5mm。",
   "comparison": {
    "缩回原尺寸后平均绝对灰度差": 1.65,
    "深色像素交并比": 0.9768
+  }
+ },
+ {
+  "asset_id": "1310",
+  "kind": "image",
+  "source_path": "江浙行测_AI题库/images/original/1310.png",
+  "source_image_sha256": "a9614ef5f78df1227fcaa653f03a40b14da8e6d95c22333c556885c5e71bd712",
+  "png_path": "重绘/1310_二值放大.png",
+  "print_width_mm": 88.0,
+  "binarize": true,
+  "method": "M03第46题。原图595×275像素，源PDF印宽83mm时小圆直径约2.7mm。纯黑白点阵，4倍放大后二值化，印88mm宽。",
+  "comparison": {
+   "缩回原尺寸后平均绝对灰度差": 1.05,
+   "深色像素交并比": 0.9937
+  }
+ },
+ {
+  "asset_id": "1244",
+  "kind": "image",
+  "source_path": "江浙行测_AI题库/images/original/1244.png",
+  "source_image_sha256": "927ce48598618f242dbf3dd27e939e2f011dc15ac2d65c7d9004b5a52908e4a1",
+  "png_path": "重绘/1244_二值放大.png",
+  "print_width_mm": 112.0,
+  "binarize": true,
+  "method": "M03第47题。原图570×311像素，源PDF印宽112mm时蜂窝格距约2.2mm、描边发虚。纯黑白蜂窝，4倍放大后二值化，按原宽112mm印，描边清晰。",
+  "comparison": {
+   "缩回原尺寸后平均绝对灰度差": 3.0,
+   "深色像素交并比": 0.9879
+  }
+ },
+ {
+  "asset_id": "938",
+  "kind": "image",
+  "source_path": "江浙行测_AI题库/images/original/938.png",
+  "source_image_sha256": "bbe6e787e7817c059b9e3abaf783d71e4458522046267dea8737de66c7346a15",
+  "png_path": "重绘/938_二值放大.png",
+  "print_width_mm": 60.0,
+  "binarize": true,
+  "method": "M03第48题。原图485×572像素，源PDF印宽56mm时小圆直径约2.4mm、连接短线约1.2mm。黑白线稿，4倍放大后二值化，印60mm宽。",
+  "comparison": {
+   "缩回原尺寸后平均绝对灰度差": 2.44,
+   "深色像素交并比": 0.9666
+  }
+ },
+ {
+  "asset_id": "212",
+  "kind": "image",
+  "source_path": "江浙行测_AI题库/images/original/212.png",
+  "source_image_sha256": "319b6513c9ffa955609bdf4406140282ee44345df60261de6b0d75c626ea1e94",
+  "png_path": "重绘/212_二值放大.png",
+  "print_width_mm": 92.0,
+  "binarize": true,
+  "method": "M03第49题。原图534×638像素，源PDF印宽70mm时方块棱长约3.2mm，三层柱与后排缺口不易分辨。线稿（浅灰只是线边压缩噪点），4倍放大后二值化，印92mm宽，棱长约4.2mm。",
+  "comparison": {
+   "缩回原尺寸后平均绝对灰度差": 3.41,
+   "深色像素交并比": 0.9405
+  }
+ },
+ {
+  "asset_id": "352",
+  "kind": "image",
+  "source_path": "江浙行测_AI题库/images/original/352.png",
+  "source_image_sha256": "b519da766e9da221258f1ed365a5ea762186ed0306c4c363d62ab37c19518be3",
+  "png_path": "重绘/352_平滑放大.png",
+  "print_width_mm": 110.0,
+  "binarize": false,
+  "method": "M03第50题。原图488×377像素，源PDF印宽96mm。侧面为浅灰（灰度约200），区分前后层要靠它，故只做4倍平滑放大、不二值化，印110mm宽，棱长约6.2mm。",
+  "comparison": {
+   "缩回原尺寸后平均绝对灰度差": 1.46,
+   "深色像素交并比": 0.9951
+  }
+ },
+ {
+  "asset_id": "s26_p19_i01",
+  "kind": "image",
+  "source_path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s26_p19_i01.png",
+  "source_image_sha256": "568a06245ed291afcf1813dcf3d9340c706f0fc37e31855ea3975543f4eaa05c",
+  "png_path": "重绘/s26_p19_i01_平滑放大.png",
+  "print_width_mm": 115.0,
+  "binarize": false,
+  "method": "M03第70题。原图500×327像素，源PDF印宽98mm时等高线数字约2.7mm、区域界虚线段约0.6mm。细线和小字较多，二值化会断线，故只做4倍平滑放大、不二值化，印115mm宽。",
+  "comparison": {
+   "缩回原尺寸后平均绝对灰度差": 3.06,
+   "深色像素交并比": 0.9727
   }
  },
  {

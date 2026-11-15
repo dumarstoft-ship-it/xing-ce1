@@ -1,0 +1,68 @@
+{
+  "scope": "M03 v0.2.0 incremental recheck: Q67, Q68, Q81-Q85",
+  "blind_vs_editorial": {
+    "67": {"blind": "B", "editorial": "B", "match": true},
+    "68": {"blind": "C", "editorial": "C", "match": true},
+    "81": {"blind": "A", "editorial": "A", "match": true},
+    "82": {"blind": "D", "editorial": "D", "match": true},
+    "83": {"blind": "D", "editorial": "D", "match": true},
+    "84": {"blind": "B", "editorial": "B", "match": true},
+    "85": {"blind": "A", "editorial": "A", "match": true}
+  },
+  "q67": {
+    "fixed_points_identical_to_source_svg": {"O": [195, 13], "A_landing_on_top": [117, 69], "B_landing_on_face": [137, 84], "corner": [137, 69], "wall_path": "M11 69 H137 V165 H129 V78 H11 Z"},
+    "original_pdf_bitmap_216x170": "top bar rows 69-76, vertical bar cols 129-136, A meets top at col 117-118, B meets face ~row 80-84, O ~(193.5,12.9): consistent with redraw",
+    "png_vs_svg": "wall region pixel diff 0 vs source PNG; sampled curve pixels within 0.67 viewBox units of the v0.2.0 parabolas",
+    "new_curves": {
+      "A": "x=195-78u, y=13+56u^2 (exact parabola, horizontal start tangent); end angle 55.1 deg = physical 2*56/78",
+      "B": "x=195-58u, y=13+71u^2 (exact parabola, horizontal start tangent); end angle 67.8 deg = physical 2*71/58"
+    },
+    "old_source_curve_defects_fixed": {"B_start_slope_deg": 9.1, "A_end_angle_deg_old": 81.7},
+    "A_height_at_corner_x": 43.96,
+    "relations": {"drop_A": 56, "drop_B": 71, "dx_A": 78, "dx_B": 58, "tA_lt_tB": true, "vA_gt_vB": true, "v_ratio_A_over_B": 1.514},
+    "label_ink_clearance_px_at_1296": {"A_to_curveA": 13.6, "B": 28.9, "O": 27.0, "source_A": 36.6},
+    "A_last_dash_gap_to_landing_units": {"v020": 1.57, "source": 2.01},
+    "png": "1296x1020, opaque, pure grayscale, sha256 407663d6... matches 题图尺寸调整.json"
+  },
+  "q68": {
+    "source_table_rows": [
+      ["反应前", "C1H4", 1], ["反应前", "O2", 3], ["反应后", "C1O2", 1], ["反应后", "O2", 1], ["反应后", "O1H2", 2]
+    ],
+    "figure_molecules": {"before": ["CH4 x1", "O2 x3"], "after": ["CO2 x1", "H2O x2", "O2 x1"]},
+    "atoms_from_rendered_png": {"before": {"C": 1, "H": 4, "O": 6}, "after": {"C": 1, "H": 4, "O": 6}, "legend": {"C": 1, "O": 1, "H": 1}},
+    "radii": {"C": 22, "O": 22, "H": 12},
+    "fill_ink_fraction": {"O_hatched": "0.256-0.271", "C": 0.0, "H": 0.0},
+    "unexplained_ink_pixels": 0,
+    "printed_text": ["反应前", "反应后", "点燃", "碳原子", "氧原子", "氢原子"],
+    "chemical_formulas_printed": false,
+    "legend_complete": true,
+    "bw_threshold_130mm_300dpi": "hatching survives; three atom kinds distinguishable",
+    "original_bitmap_s26_p19_i00": "absent from repo; table+legend notes are the only source",
+    "png": "2400x860, opaque, pure grayscale, sha256 7bf45f7c... matches 题图尺寸调整.json"
+  },
+  "q81_85_material": {
+    "removed_text_exact": "据中国海关总署统计数据显示，2023年7月，中国空调产量同比增长29.0%。",
+    "remaining_text_is_exact_suffix_of_source": true,
+    "table_title_identical": true,
+    "table_rows_identical_cell_by_cell": true,
+    "header_change": ["图示期间", "统计期"],
+    "note_added_in_010": "表中各月数值均为当年年初至该月的累计值；2023年1—2月为两个月合计。",
+    "stems_options_identical_to_source": true,
+    "jsonl_material_equals_selection_material": true,
+    "july_monthly_yoy_from_table": {"point_pct": 26.5718, "rounding_range_pct": [25.7987, 27.3552], "deleted_value_pct": 29.0, "inconsistent": true},
+    "questions_using_deleted_sentence": []
+  },
+  "precision": {
+    "81": {"value": 10188.68, "rounding_range": [10182.6, 10194.8], "answer": "A"},
+    "82": {"value_pct": -17.0621, "answer": "D"},
+    "83": {"value_pct": 28.29, "rounding_range_pct": [27.69, 28.90], "answer": "D"},
+    "84": {"value_pct": -16.4857, "rounding_range_pct": [-16.576, -16.395], "answer": "B"},
+    "85": {"monthly_2022": {"Sep": 1770, "Oct": 1468, "Nov": 1489, "Dec": 1798}, "mom_increment": [-302, 21, 309], "option_A_marker_rises_px": [43, 39], "true_rises": [323, 288], "answer": "A",
+           "distractor_shapes": {"B_V": "matches Oct-Dec monthly YoY -0.25%, -11.15%, -0.42%", "C_falling": "direction matches cumulative YoY 3.2->2.0->1.8 but C's 2nd drop is steeper (37 then 44.5 px) whereas 3.2->2.0->1.8 drops 1.2 then 0.2"}}
+  },
+  "print_measurements": {
+    "q67_at_70mm": {"height_mm": 55.1, "dpi": 470, "label_cap_height_mm": {"A": 2.11, "B": 2.11, "O": 2.21}, "font_em_mm": 3.08, "dash_stroke_mm": 0.36, "dash_mm": 1.04, "gap_mm": 0.58, "O_dot_diam_mm": 1.36, "wall_mm": [2.59, 2.92], "A_label_clearance_mm": 0.73, "B_below_top_mm": 4.86, "A_left_of_corner_mm": 6.48},
+    "q68_at_130mm": {"height_mm": 46.6, "dpi": 469, "text_ink_height_mm": 2.6, "font_em_pt": 8.0, "H_diam_mm": 2.6, "C_O_diam_mm": 4.77, "outline_mm": 0.27, "hatch_stroke_mm": 0.163, "hatch_pitch_mm": 0.61, "arrow_mm": 0.33},
+    "q68_at_140mm": {"height_mm": 50.2, "text_ink_height_mm": 2.8, "font_em_pt": 8.6, "H_diam_mm": 2.8, "hatch_stroke_mm": 0.175, "hatch_pitch_mm": 0.66}
+  }
+}
