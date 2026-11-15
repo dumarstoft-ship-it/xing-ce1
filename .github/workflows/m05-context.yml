@@ -1,0 +1,60 @@
+name: M05 source context
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/m05-context.yml']
+permissions:
+  contents: read
+jobs:
+  context:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /README.md
+            /协作原则_指月之指非月.md
+            /广东行测18套模拟/
+            /江浙行测_AI题库/
+            /模考/2026下半年广东卷_16-33季_AI可读/
+            /国考/言语理解/2016-2025/
+            /广东/行测/2022-2026/
+            /学习资料/政治理论常识/
+            /广东行测24天集训/
+            /习题本/图推/
+            !*.pdf
+            !*.zip
+            !*.ttf
+            !*.otf
+            !*.woff
+            !*.woff2
+      - name: Record latest collaboration notes without merging
+        run: |
+          git fetch --no-tags --depth=1 origin cabcf30f8f26e7daa49f80b836212ee1efbbeccb
+          mkdir -p _m05_context
+          git show cabcf30f8f26e7daa49f80b836212ee1efbbeccb:'广东行测18套模拟/选编意图与改题边界.md' > _m05_context/最新改题边界.md
+          git show cabcf30f8f26e7daa49f80b836212ee1efbbeccb:'广东行测18套模拟/Claude意见要点.md' > _m05_context/Claude意见要点.md
+          git show cabcf30f8f26e7daa49f80b836212ee1efbbeccb:'广东行测18套模拟/M04/Claude增量复核_v020.md' > _m05_context/M04增量复核.md
+          git rev-parse HEAD > _m05_context/main_snapshot.txt
+      - name: Bundle tracked source files only
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import zipfile
+          roots=['README.md','协作原则_指月之指非月.md','广东行测18套模拟','江浙行测_AI题库','模考/2026下半年广东卷_16-33季_AI可读','国考/言语理解/2016-2025','广东/行测/2022-2026','学习资料/政治理论常识','广东行测24天集训','习题本/图推','_m05_context']
+          allowed={'.md','.txt','.json','.jsonl','.py','.csv','.html','.png','.jpg','.jpeg','.svg','.webp','.sha256'}
+          with zipfile.ZipFile('/tmp/m05_source_context.zip','w',zipfile.ZIP_DEFLATED) as z:
+            for root in roots:
+              p=Path(root)
+              for f in ([p] if p.is_file() else p.rglob('*')):
+                if f.is_file() and f.suffix.lower() in allowed and '__pycache__' not in str(f): z.write(f,str(f))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: m05-source-context
+          path: /tmp/m05_source_context.zip
+          retention-days: 3
