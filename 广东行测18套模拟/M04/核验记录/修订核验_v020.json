@@ -1,0 +1,748 @@
+{
+  "paper_id": "M04",
+  "version": "0.2.0",
+  "status": "PASS",
+  "kind": "editor_revision_checks_not_external_review",
+  "question_count": 90,
+  "q48_answer": "B",
+  "answer_key_changes": [
+    48
+  ],
+  "replacement_numbers": [
+    2,
+    57
+  ],
+  "retired_ids": [
+    "M04-ORIG-002",
+    "gd-mock-2026h2-s24-q62"
+  ],
+  "verbal_reasoning_fidelity": [
+    {
+      "number": 16,
+      "source_id": "GKYY-2025-040",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "original if present"
+    },
+    {
+      "number": 17,
+      "source_id": "ZJ2025-A类-032",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "original if present"
+    },
+    {
+      "number": 18,
+      "source_id": "GKYY-2025-055",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "original if present"
+    },
+    {
+      "number": 19,
+      "source_id": "ZJ2026-A类-028",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "original if present"
+    },
+    {
+      "number": 20,
+      "source_id": "GKYY-2025-036",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "original if present"
+    },
+    {
+      "number": 21,
+      "source_id": "GKYY-2025-020",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "original if present"
+    },
+    {
+      "number": 22,
+      "source_id": "GKYY-2024-052",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "original if present"
+    },
+    {
+      "number": 23,
+      "source_id": "ZJ2025-A类-034",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "original if present"
+    },
+    {
+      "number": 24,
+      "source_id": "ZJ2024-A类-045",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "original if present"
+    },
+    {
+      "number": 25,
+      "source_id": "GKYY-2025-044",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "original if present"
+    },
+    {
+      "number": 26,
+      "source_id": "GKYY-2025-062",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "original if present"
+    },
+    {
+      "number": 27,
+      "source_id": "GKYY-2025-048",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "original if present"
+    },
+    {
+      "number": 28,
+      "source_id": "ZJ2024-A类-046",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "original if present"
+    },
+    {
+      "number": 29,
+      "source_id": "GKYY-2024-066",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "original if present"
+    },
+    {
+      "number": 30,
+      "source_id": "GKYY-2025-059",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "original if present"
+    },
+    {
+      "number": 46,
+      "source_id": "gd-mock-2026h2-s21-q46",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "original if present"
+    },
+    {
+      "number": 47,
+      "source_id": "gd-mock-2026h2-s25-q46",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "original if present"
+    },
+    {
+      "number": 48,
+      "source_id": "gd-mock-2026h2-s23-q48",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "original if present"
+    },
+    {
+      "number": 49,
+      "source_id": "gd-mock-2026h2-s22-q50",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "original if present"
+    },
+    {
+      "number": 50,
+      "source_id": "gd-mock-2026h2-s26-q48",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "original if present"
+    },
+    {
+      "number": 51,
+      "source_id": "JS2023-A类-091",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "original if present"
+    },
+    {
+      "number": 52,
+      "source_id": "JS2022-A类-093",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "original if present"
+    },
+    {
+      "number": 53,
+      "source_id": "ZJ2024-A类-104",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "original if present"
+    },
+    {
+      "number": 54,
+      "source_id": "gd-mock-2026h2-s22-q52",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "original if present"
+    },
+    {
+      "number": 55,
+      "source_id": "gd-mock-2026h2-s25-q55",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "original if present"
+    },
+    {
+      "number": 56,
+      "source_id": "JS2022-A类-103",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "original if present"
+    },
+    {
+      "number": 57,
+      "source_id": "JS2023-A类-104",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "original if present"
+    },
+    {
+      "number": 58,
+      "source_id": "JS2022-A类-094",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "original if present"
+    },
+    {
+      "number": 59,
+      "source_id": "gd-mock-2026h2-s26-q59",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "original if present"
+    },
+    {
+      "number": 60,
+      "source_id": "JS2023-A类-103",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "original if present"
+    },
+    {
+      "number": 61,
+      "source_id": "JS2022-A类-102",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "original if present"
+    },
+    {
+      "number": 62,
+      "source_id": "ZJ2024-A类-109",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "original if present"
+    },
+    {
+      "number": 63,
+      "source_id": "gd-mock-2026h2-s26-q55",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "Q63 structured-table rendering; no original scan"
+    },
+    {
+      "number": 64,
+      "source_id": "JS2023-A类-101",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "original if present"
+    },
+    {
+      "number": 65,
+      "source_id": "ZJ2024-A类-101",
+      "source_text_and_options": "PASS_EXCEPT_WHITESPACE",
+      "figure_boundary": "original if present"
+    }
+  ],
+  "q57_source_answer": "A",
+  "q57_enumerated_models": [
+    [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    [
+      [
+        2,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    [
+      [
+        2,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        3
+      ]
+    ]
+  ],
+  "q57_universal_options": [
+    "A"
+  ],
+  "source_id_and_old_delivery_exposure_hits": [],
+  "q41_original_prices": [
+    40,
+    40,
+    55,
+    55,
+    55,
+    55
+  ],
+  "q41_discounted_prices": [
+    24,
+    24,
+    33,
+    33,
+    33,
+    33
+  ],
+  "quantitative_changed_visible_inputs": [
+    40,
+    43
+  ],
+  "protected_source_and_prior_paper_hashes": {
+    "江浙行测_AI题库/questions.jsonl": "07b748dd27d44132d7734279306f724981a89de028d19d229c989f00fd9b7c93",
+    "江浙行测_AI题库/answers.jsonl": "4e4ec4c9221e776af5bba32901951e0970718f51e3621e2877de20624bb348c9",
+    "模考/2026下半年广东卷_16-33季_AI可读/全部题目.jsonl": "12fb48ab01e38b88ff19d85e59e463730f290407350207e00afe318f597fa3b9",
+    "国考/言语理解/2016-2025/all.jsonl": "f3e468935dadeaa7dcdd778bd59da40f2100c53012ab161c251818f3e3313ba9",
+    "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl": "ad8ddcd6429d7cfb5b00fc3211519042fd609fb87c287d32140a40f9f5760326",
+    "广东行测18套模拟/M01/交接_Claude_修订复核.md": "fff94f31aa2c6c6e62c0bbe44a6bab2e8061dbbfe8b03f2af6fbbd77df341b03",
+    "广东行测18套模拟/M01/选题记录.md": "adfde6a4f9f9335177d3032d61094dd96ec5e0a9d9a56c8b973aa3017fb05e7e",
+    "广东行测18套模拟/M01/来源登记.jsonl": "052e4ea9274467c40b8bf5c5941b8ce26b859833d7f92cbd77cfdf6cec547061",
+    "广东行测18套模拟/M01/科推5题_题本.md": "490218c8791dc6b0d477529b17867ea41f6a990219c716a38dba32baad61afec",
+    "广东行测18套模拟/M01/.gitignore": "6feaded4e28ea86e001a6751b4e3d960e8b7c31b9616ff9936b79297086e809b",
+    "广东行测18套模拟/M01/题目.jsonl": "781d26bbfd55d6693297bb0c6bdd243363a8cda168e5ae3e98433f0e67306121",
+    "广东行测18套模拟/M01/答案与解析_待审.md": "7766d8acd8f9cd58c7f5c866db1a134f9749ca7be8057c95d918f90e66226c70",
+    "广东行测18套模拟/M01/build_m01_core.py": "b6ec377044f9f48f8cd14e3248e645b52309ce4d50d2c88ac77ee3083f7f6b4a",
+    "广东行测18套模拟/M01/GPT审核意见处理.md": "287ab12dbddddf3e7a6be30953a648a3837cdd2a10a7cd245e48bffaa0a142d9",
+    "广东行测18套模拟/M01/science_selection_v2.json": "8741502c95b7aa54eb47abbeb6881a6913a88d5767ceacc3ae73ee68294242b3",
+    "广东行测18套模拟/M01/paper.json": "16c3cce86ad2705fc2ea4eb9fc016272d42a52c58bb6b65ac9f46e6e52829647",
+    "广东行测18套模拟/M01/Claude审核意见.md": "f6096cb03f6631702abc5dc55bd06dda38618a137aac452803e6f23fcae59a10",
+    "广东行测18套模拟/M01/核验报告.json": "d7459ed2eb1e8671eb7eb7612a2a122c63fa3393a3dd4caacf373aa668fafd6f",
+    "广东行测18套模拟/M01/科推5题_恢复候选.json": "59d311b2d6bd588d1c8f9b556d6aca32f15e65d9b21022fb22e09d7530b7a6c6",
+    "广东行测18套模拟/M01/交接_Claude_科推重选.md": "d9897dce38ee2dce88cd28aba3b0354f7267d4da3b20c0c05b2e309b6bbb3565",
+    "广东行测18套模拟/M01/题本_待审.md": "c33d669b9665316ca7d6a45705a46c1f24083182baa8752fb5e20e8e48c0b2d2",
+    "广东行测18套模拟/M01/README.md": "b28eb74a1dcb1e0f120ca7b119e558442d4d726975dd3b032fe8498d33fc8a97",
+    "广东行测18套模拟/M01/selection.json": "ef2562eec9370361dfcd3c3c030b84c43eee5618e3437b2c8ff7a5f907cb7ab1",
+    "广东行测18套模拟/M01/apply_claude_review_v3.py": "18a8d22d13f74afb8bfc50230628840ab206545619c1d03d9ea7cb10ef5a0794",
+    "广东行测18套模拟/M01/科推5题_解析与来源.md": "a116a778d143fa6a2860f4c681852ad51acd14cb54518e76b650db133f33ca9d",
+    "广东行测18套模拟/M01/build_m01.py": "ee888bd553afb85eecaffd23fae2ed07a93aa90b7a211e4c83e9c7eb19daf436",
+    "广东行测18套模拟/M01/review_v3_changes.json": "b796ec9aa8460734f4b50ad5e57f67a8edd8f3d0f7c9b9e3b268a7159652058a",
+    "广东行测18套模拟/M01/complete_science.py": "dde86f8c3cf5d2eeca12fdddb17af79bcaf465513ad785d9aebf5cc1127d73ec",
+    "广东行测18套模拟/M01/打印版/README.md": "de90ef4c933fe232fb8ff572269ab77241a07d282bdfa9c19d25521ba9e7e2d4",
+    "广东行测18套模拟/M01/打印版/排版日志.json": "2b22326c844ef8dd965c4b58b25330a5c1aaadaf9ed0f7817eea9a07e2a09275",
+    "广东行测18套模拟/M01/核验记录/politics_review.json": "80677741fcbbfcf0a271fd8c15118c04332fc5a6aa3f337f5ae816ca89cf4431",
+    "广东行测18套模拟/M01/核验记录/judgment_verification.json": "720af3bb41dcfe99b20951bced19e05d67086b4070de6e3804dde06b66c13c7a",
+    "广东行测18套模拟/M01/核验记录/politics_independent_answers.json": "2ba765883cd5df9c0e5945239037cf07392cb1e8b19301d5bece9fe095023f6a",
+    "广东行测18套模拟/M01/核验记录/science_model_checks.json": "50244345ca31bd079383d5cc8880c4618554f3bd00f0de067d7de069bab3b409",
+    "广东行测18套模拟/M01/核验记录/old_graphic_source_ids.json": "a72e2711f1e6d0db760a4576e34bbb2ea003c179d818588096d0b29b372853be",
+    "广东行测18套模拟/M01/核验记录/Claude意见处理核验.json": "dc16c72abf25791d92ecccca032d6b6478564d0c36e0b3881b82683c7f793d07",
+    "广东行测18套模拟/M01/核验记录/judgment_notes.md": "7ed9c554d7118b446e0841aabb9dc66f92fe96093aa72602e7d72d1d721b11a8",
+    "广东行测18套模拟/M01/核验记录/格式修订日志_v0.3.0.json": "4a10957597aaaa834c0cfe4d0c0122cdd90dab3a1b643832e9cf0340cb645d54",
+    "广东行测18套模拟/M01/核验记录/verbal_review.json": "4fa0001db4c7e2358a7f71503f7f48d11df4a1223780f5772f252a0f027c9d2f",
+    "广东行测18套模拟/M01/核验记录/verbal_national_provenance.json": "09dd76667d2fb02e21efb9867b1c1bbc5ecfcbc7cf671b4ed76d9fe8f6d3a4a8",
+    "广东行测18套模拟/M01/核验记录/verbal_independent_answers.json": "1351242d14afca24d0ac47719353d95ce3df27955965407077d0177e105b26d8",
+    "广东行测18套模拟/M01/核验记录/assembly_review.json": "3292b2e4ff3f25faaf361d55e71b2bd8a67e8a0a82756e2cb197ecbb7f949256",
+    "广东行测18套模拟/M01/核验记录/quant_data_verification.json": "1e53a8b10fd47fb3116a0c7cfc13f701e6bb2a92425211133df62e11f7a716ad",
+    "广东行测18套模拟/M01/核验记录/politics_review_resolution.json": "ae6e28717f0ab117be44a7efc86383f2d772c844621b391cb1bd562f44648d31",
+    "广东行测18套模拟/M01/核验记录/judgment_logic_review.json": "43c7864b75950a09b3ccc9cbfdde974d590ec041ddf0367adb6a039d5d492f29",
+    "广东行测18套模拟/M01/核验记录/verbal_review_blind.json": "ff7ecc16503dc49162385682c0d79346213a00b1fd2c22d4ac88ebbc81912f90",
+    "广东行测18套模拟/M01/核验记录/judgment_logic_review_blind.json": "2439444dc6d02b2da346e30e38582f7f174b99b35d79943f882e2fd09a0bf3bb",
+    "广东行测18套模拟/M01/核验记录/README.md": "c70350b17d87c0e89107f714785b56c0245bc59160e88fc82328fd4185c805be",
+    "广东行测18套模拟/M01/核验记录/修订构建复检.json": "f54ff9bdbc89a6caccba3ca097b50dcd1a9e8fae5310822b2faa9b90193ed59e",
+    "广东行测18套模拟/M01/核验记录/judgment_prior_exposure_scan.json": "8e31c802d2d8011c9dfc76d130264365a07cc7c90c93d057f174da31dbbaab51",
+    "广东行测18套模拟/M01/核验记录/check_science.py": "6a35a064e080a7546c2020f73093c0442c8d2551b36b374255cb45578b4002c7",
+    "广东行测18套模拟/M01/核验记录/judgment_logic_review.md": "04f91cd5b38bb4bf8b6a6afc79c1a923e60bf81445c99d2aba2ba8bb17feda2b",
+    "广东行测18套模拟/M01/核验记录/politics_review.md": "24f72aa48a1b6b7e69f1e4a424404cb0cfaedb2b38c01a7f61651d963b5e84df",
+    "广东行测18套模拟/M01/核验记录/quant_data_notes.md": "5a97a59acc386ef58c0eeffb8703b3c4f02bd8dfd698b5e8c13b4ca33b180129",
+    "广东行测18套模拟/M01/核验记录/科推重选核验.json": "d70c79387164fef162c89049b1adcfb0def19fbf5c096caf57e372990c02e251",
+    "广东行测18套模拟/M01/核验记录/quant_data_prior_exposure_scan.json": "79b09e64425e14419b6230b3d71b33bc848889a04cbf394b4687419faa47d958",
+    "广东行测18套模拟/M01/核验记录/verbal_review.md": "40acbf0ea925ccedcfb4c46f7f0fa33b4c0c095b3009b3ca0f1fd93bcd653d2b",
+    "广东行测18套模拟/M01/核验记录/verbal_notes.md": "6e0958a58d0cb96efba36a0f328d5c550d18d76592ac65009f9bb7c6adecc640",
+    "广东行测18套模拟/M01/打印版/历史版本/排版日志_v0.2.0.json": "603d6bdde370ed3b18935b488958e523ca74be8421f1625d0ef7274a9f2131cb",
+    "广东行测18套模拟/M01/核验记录/claude_review/science_verify.py": "53a836d40f98265407eab3c191c1bf12f5fa871901e6abfdb3f839a41a260f82",
+    "广东行测18套模拟/M01/核验记录/claude_review/brute_51_55.py": "9125de07c2999f2a787e39f2ca39b2a809ab77b066d57d4173c497d0b68090a4",
+    "广东行测18套模拟/M01/核验记录/claude_review/quant_verify.py": "c1613a3c46bb1f5c52cfca3963bada570c29dadb56cac1b4437b7e143dd9323b",
+    "广东行测18套模拟/M01/核验记录/claude_review/q50_并集与覆盖对比.png": "27d0340f3ebd981eeb6c7c1e9040e7de4d3935548dc3b416037d11880ee8b31b",
+    "广东行测18套模拟/M01/核验记录/claude_review/data_solve_blind.py": "fe3ebb74997f4371d234c6fb243441dda4708bffd5184107ad9a9b6c592007c0",
+    "广东行测18套模拟/M01/核验记录/claude_review/claude_review.json": "eb8f2fa6a715b224736a60124ee2cc330c678489aba99a8c95e6ab019feeb757",
+    "广东行测18套模拟/M02/politics_original.json": "d8a43acec958a97b1549d7b96e5344b76c1c215f49ad9be7b3d14c690f0d360f",
+    "广东行测18套模拟/M02/交接_Claude_修订复核.md": "b79c53bf6e8db6902e0b6eab7d35bc6619ab15f438d6496ba82dd2538baf902f",
+    "广东行测18套模拟/M02/选题记录.md": "c14d6f7ef71f01505a8f5a3713738ce5576449e30589f9c9ddfa346eb0f1ca6a",
+    "广东行测18套模拟/M02/来源登记.jsonl": "530f79b9d785dbd54b2cde9bb160c1260607c5eb63dce724939791085dee7afb",
+    "广东行测18套模拟/M02/apply_review_v020.py": "9b4750607de357e37565de9423fd65f462d5b84c2df0c97d9ea8007c36073711",
+    "广东行测18套模拟/M02/.gitignore": "6feaded4e28ea86e001a6751b4e3d960e8b7c31b9616ff9936b79297086e809b",
+    "广东行测18套模拟/M02/工作断点.json": "24fcbb8a087bc478f265972b44cc47ad72a4e989d4dc68e121ef07b2fd5e8d6d",
+    "广东行测18套模拟/M02/题目.jsonl": "85def13f7422340bdbea8aa102ed4322d533950d3089191e02810e6d50e484fc",
+    "广东行测18套模拟/M02/答案与解析_待审.md": "ca011a98709258f72bd6eaa3bc210a16753dc0f4295b19587fc45f4e6e2b73d5",
+    "广东行测18套模拟/M02/GPT审核意见处理.md": "790cea2a83053f6e47bc513c7f012c840a160eb9c10125e6ff119c97c3d20b32",
+    "广东行测18套模拟/M02/paper.json": "03409341e68a74b22a7ff21e45c069b05fc181e9cb62a78ce2b885c31d188541",
+    "广东行测18套模拟/M02/Claude审核意见.md": "bdd496b4d08f43c11ebd8bf83466ed7ef1bfd37c17b4dc578ea2110719856a2c",
+    "广东行测18套模拟/M02/核验报告.json": "edb47ee0abd1ab145d11a9b2f559aee589a07afc3a357ab84aa6ab6b6cce1a7e",
+    "广东行测18套模拟/M02/assemble_m02.py": "6102aa07968964acfc11409a13d761343f85806ee20de35650bedc870cb4ea56",
+    "广东行测18套模拟/M02/build_m02.py": "06cc9ff9bc4698ed7fb4ce706f84e9774a77447136f871d37fd499962d9e4ce3",
+    "广东行测18套模拟/M02/交接_Claude.md": "28c4deb2f6be6760a3061ec09fecaba604bd7931a28a3b813dd6dbf6baede5c2",
+    "广东行测18套模拟/M02/题本_待审.md": "55d4e500f3fce97d497155d4f02b3ab1a19d06afcb982cafec625ac9ed8b4e6c",
+    "广东行测18套模拟/M02/editorial.json": "355fe3a37c786d1f4ded4e40e7e9b6e81e9c1ccbac97541922ceb5cfc507a07e",
+    "广东行测18套模拟/M02/README.md": "0120a5aaff5c545df4e92eb982999092bf16cb60ac50bcaadf97d417a3b0035f",
+    "广东行测18套模拟/M02/selection.json": "212ece9b168185e97162f1e049e737738770b329e427bd56ab7009e9aca17038",
+    "广东行测18套模拟/M02/撤题记录.json": "9b839db8b606e1268646bc5d72449521d1f3b6e8f0a547217ef0966917d0b7fb",
+    "广东行测18套模拟/M02/选编断点_75题.json": "de46e340199811ba60f592084e69925b0dab0de397bf5858d7ef17de12d7ee12",
+    "广东行测18套模拟/M02/编辑底稿/46-90.jsonl": "eb238537361a5f18c81beddaad6b56faa62d9211ea7cf163de1fdff437da5c39",
+    "广东行测18套模拟/M02/编辑底稿/politics_original.py": "3a8c05263089e92c9ee4de1d5bbcf35d7215561ad826c7cb6a6e8abd98a5413b",
+    "广东行测18套模拟/M02/编辑底稿/16-45.jsonl": "1807a69253c2715c4b7c27b905147d20222dd512104c7d4f5770e2b81296801e",
+    "广东行测18套模拟/M02/核验记录/交付核验.json": "6eb23ad0af49d8fcdf51590b0945e1b7d375bf6cc12ed68052c0018abf668662",
+    "广东行测18套模拟/M02/核验记录/审核处理变更.json": "89a4039e79b5899c589d05903ced88b59d6671323197692dd911b6a892941fac",
+    "广东行测18套模拟/M02/核验记录/check_diagrams.py": "25fd52fb1b9dcd8cd43edf067be280047dbfc427b7e943b6634ece79a550988f",
+    "广东行测18套模拟/M02/核验记录/numeric_checks.json": "4b7814a41d48ace73ff6d313e9d97021ae84b9a84cea4cd967fcfc9794f31e57",
+    "广东行测18套模拟/M02/核验记录/修订基线.json": "525e625d856314e7b13239cee8bf8113771758ea3f483be920589d28e57cf7d1",
+    "广东行测18套模拟/M02/核验记录/politics_references.json": "0d5113bd540773afcef771e5d8894ad5065d0d6e49fc31a370d333039d366155",
+    "广东行测18套模拟/M02/核验记录/diagram_checks.json": "46312d26e3c8c8326bf6b404435a1c4fd2e2c46de92f0ef15484ca1b4aff7e59",
+    "广东行测18套模拟/M02/核验记录/layout_log.json": "9ff0558441aeb51531715b0be8dd3d66a4d3b3dad05cedb2bc3248cf1b2d68d0",
+    "广东行测18套模拟/M02/核验记录/check_numeric.py": "4cdb4c9d180687c81813b92fd6d5ea9dbff7d24fd23478578270bcbecf3c1ede",
+    "广东行测18套模拟/M02/核验记录/source_answer_comparison.json": "8118dda901cc39f2c96845d56f51851910e710a46433ab5c4a733882b9b2815b",
+    "广东行测18套模拟/M02/核验记录/verify_delivery.py": "a7721a8694d87c5666241cec83eb626a79f1263c14c09d6737309e606389916c",
+    "广东行测18套模拟/M02/核验记录/历史_v0.1.0/交付核验.json": "c57e1a5c8202c05357aed7a244c2b529c591d629d2d8ef760477cb1cd3fbc4a4",
+    "广东行测18套模拟/M02/核验记录/历史_v0.1.0/numeric_checks.json": "d20302f60e6150ffc229c7f1a26ba806585e0e6bd03a5debd4298cd83b0abec4",
+    "广东行测18套模拟/M02/核验记录/历史_v0.1.0/politics_references.json": "818c0db8acd489b58ad440f81623ed221a9a925f64dd5e973cfeae4388afbc9b",
+    "广东行测18套模拟/M02/核验记录/历史_v0.1.0/layout_log.json": "2bde4526557d88235bca1051de007d0b049941f9558ca394cd7552398d4e21b6",
+    "广东行测18套模拟/M02/核验记录/历史_v0.1.0/check_numeric.py": "73696738cf99979ca6c5c10c9fffa83e6995dfe91c5f0a9d98bb3b17081b6d90",
+    "广东行测18套模拟/M02/核验记录/历史_v0.1.0/source_answer_comparison.json": "3d2658ecff06c3c4ba5fc978673bbf30adf12c220e6cf6332c16728f0b1ae9f2",
+    "广东行测18套模拟/M02/核验记录/历史_v0.1.0/verify_delivery.py": "ff15d5ebad930c99df73e5d628ffc0c2c27d2cbd93bb783c2901beca0c2223a3",
+    "广东行测18套模拟/M02/核验记录/历史_v0.1.0/selection_before_revision.json": "74576854958fe537ca04ebe41c171262fbf4c3e5d7166532bd974f4d9d2254bb",
+    "广东行测18套模拟/M02/核验记录/claude_review/sci_q67_nodal.py": "e6db9623f79ed3b47d3750375eff6215bebe3b8083cb64b1131de984786ae07d",
+    "广东行测18套模拟/M02/核验记录/claude_review/quant_verify.py": "302a0ded7276d9bb21715b3c3a8e54640b4f09505d5c2b96455917fbe6cb610f",
+    "广东行测18套模拟/M02/核验记录/claude_review/quant_q44_search.py": "3b35cf7e4634ac0a056672fbb1aef645f868faa0c2e7b856fcb920a904414f17",
+    "广东行测18套模拟/M02/核验记录/claude_review/logic_bruteforce.py": "202489ce0c2f9eaa98ff04dccf5ad82919d206b1fd56a8eb8ceca4ea4680d220",
+    "广东行测18套模拟/M02/核验记录/claude_review/fig_q50_cube.py": "ed925ee0e157add87f70fd91be77d2b6032bf7ac49ba387137973e4c6e58208e",
+    "广东行测18套模拟/M02/核验记录/claude_review/claude_review.json": "ee11b98068a77f6cb87ef7d4b8b12a8d1437e4e133e1f765713b909f99e02b33",
+    "广东行测18套模拟/M03/交接_Claude_修订复核.md": "116ed3857bbcdb5a990a453fe8767ede848c8dda0509ba2c6cec1bb7a73a6097",
+    "广东行测18套模拟/M03/选题记录.md": "dc0a7cf1b66f479b53c91844670ae02a5963bb7ef1dfde049f8dccef90392b4a",
+    "广东行测18套模拟/M03/来源登记.jsonl": "9bcde4913c9a33ca2f8d261e92dc60e9365b5ccbf1de8b6a6d185f44d8c79988",
+    "广东行测18套模拟/M03/build_m03.py": "a8bfe3354319dc0848577d5af8c265e2a81676c71e36c27aabc5a1aabad28a69",
+    "广东行测18套模拟/M03/题目.jsonl": "70e42d42fd83de59fb724ab78d48baa8510955f7e2d78d53a2733eeb662c3c35",
+    "广东行测18套模拟/M03/答案与解析_待审.md": "3ae4ab0c9ce962505a9702a06cd77b8cd1527f26080c02e7b11d8d0a402c148f",
+    "广东行测18套模拟/M03/GPT审核意见处理.md": "2aed1fe5d0131cfed2f35bb7d0aff6040aaaa0624c32d295f4a0ba871b6ece86",
+    "广东行测18套模拟/M03/paper.json": "e6f9b1c8ff4b595629a842f4d61501008e4a8171a6d96e3abbabd8b731a26fc3",
+    "广东行测18套模拟/M03/Claude审核意见.md": "d8d81ba0e92fea612d67463389ad9633a5ddd270653de902c2ecf5a33a0698c2",
+    "广东行测18套模拟/M03/核验报告.json": "ff20b3defd7d222eca348d72a2a892c52ff12d92ba7246425d77d7e4bc72feed",
+    "广东行测18套模拟/M03/交接_Claude.md": "b02f9a061efee1d43eec8c93f4b3f98eec4963ae9825e23b22256c49ebe0679e",
+    "广东行测18套模拟/M03/题本_待审.md": "b84551c3396c603712b5fbea023d08f7acb4572e92b33dd53463db8235298a86",
+    "广东行测18套模拟/M03/README.md": "1b4d69269fdeef5a60fe31d73e8bfcdee307adf5eee4ed9960d24096c925165d",
+    "广东行测18套模拟/M03/selection.json": "7b7a951aa2cc279c8eb9e146717e3222218cfcfe219b53e0f6a6ed86af742d0b",
+    "广东行测18套模拟/M03/编辑底稿/originals_science.json": "80cd6c689f0119cbee7d6312364161d32ac7f6b39c2f1009bd7d0471b4acdc0a",
+    "广东行测18套模拟/M03/编辑底稿/quant_data_check.json": "0fde2180a7d1a417dfa632378b2445b78b8c13438ac23c550f0671f1753f8d64",
+    "广东行测18套模拟/M03/编辑底稿/verbal.json": "1b8327f4eb581aa73f2c37351e351c2ecb09d5d29a4ce5469b5ae10a279663e0",
+    "广东行测18套模拟/M03/编辑底稿/build_originals_science.py": "2736d0a443e4b4070494c69bcee9d56ce54112e453b044f4acdc84ab41e200d1",
+    "广东行测18套模拟/M03/编辑底稿/reasoning.json": "e3a2372f1bc4fd9fa5b917315b1e8fb9550e2f7048c20de764f1e7bc80c2c9a6",
+    "广东行测18套模拟/M03/编辑底稿/reasoning_verification.json": "232353d1855c3e2ba25b4c5fdd7711828b8bae10de74e89b3c7125e79ff8f84e",
+    "广东行测18套模拟/M03/编辑底稿/quant_data_number_grid.png": "65eddacf2fba55209fb99364ad3bb5072465475a7c3017532567711584d1232f",
+    "广东行测18套模拟/M03/编辑底稿/reasoning_notes.md": "4d8b98463bbcb860d725204000a8b4ed010e207f10d7210e15f27f34e80ac400",
+    "广东行测18套模拟/M03/编辑底稿/quant_data.json": "58e648cd1c4df404b2b15301f6ce9bf5c070ba62d9efa5cbd82d48dd9fc5d352",
+    "广东行测18套模拟/M03/编辑底稿/quant_data_number_grid.svg": "a3f5e60731e7eab7170db7d43017cd3f88b23ff95a5693317544a027cc36716d",
+    "广东行测18套模拟/M03/编辑底稿/reasoning_verify.py": "049ee9aaf965649a4bfce7646785fefc2ca1b4b24c2e5c7c6bac24dddf46a8c1",
+    "广东行测18套模拟/M03/编辑底稿/quant_data_make.py": "2daafc9155f03d31219d02a369e5da96de337607ec5cc475ab63194d27121220",
+    "广东行测18套模拟/M03/编辑底稿/quant_data_exposure.json": "ee6477a31a35d92971840e54a81378750989aaf392d7f8ae8359b021e988a947",
+    "广东行测18套模拟/M03/编辑底稿/quant_data_check.py": "549854c33f77a1872c6b547ebeaf079c4dace2828e53f799a0fbec8ece9cd72c",
+    "广东行测18套模拟/M03/编辑底稿/reasoning_build.py": "937d2531a3281eb3351b308e3be9c6b2b120764298ea5eb26005bef7f0e03c56",
+    "广东行测18套模拟/M03/编辑底稿/quant_data_notes.md": "27634742a6a9ce6141635225633e095ce91dc336064550c4dd933918da5803af",
+    "广东行测18套模拟/M03/编辑底稿/verbal_notes.md": "4f7ffee087e7d76edee9e158541af60261c8914e761a0702113e54a83f2a8fe7",
+    "广东行测18套模拟/M03/修订底稿/apply_v020_revision.py": "9e0837960e535059ed55969acdf9ba6ff76d9b0db60b73878b30386be93cb7b5",
+    "广东行测18套模拟/M03/修订底稿/v020_reasoning_patch.json": "73b127addb6b010e5b7016f41e8299a81ec5ea27d3b6ad4a1de79642f32dd2b2",
+    "广东行测18套模拟/M03/修订底稿/v020_quant_data_patch.json": "9f8393284e0df37871c76b6d9fd351652beaf7798286100308c864fc984e4d38",
+    "广东行测18套模拟/M03/修订底稿/render_v020_science.py": "14c73fb2980897b20c380d6477280a383bb612ed45ce0a76ff14f8956e7b4668",
+    "广东行测18套模拟/M03/修订底稿/v020_science_patch.json": "bace8873098836fee4167c789ebbff7f029dc3dd7596dfb66363addee0c79bb0",
+    "广东行测18套模拟/M03/修订底稿/v020_verbal_politics_patch.json": "fd748335903c813f3a8c75b16e3f328841d00937a70af3b6cc890168cb06994f",
+    "广东行测18套模拟/M03/assets/q67_projectile_v020.png": "407663d601a2830702d5cf4a1e86be9be75bba3794ea13c4d64a5fad9c308fac",
+    "广东行测18套模拟/M03/assets/q68_particles_v020.png": "7bf45f7c4dcb7bb9764ca8353b91c4940a3eeb6ed19ca1b69d325047aee341ae",
+    "广东行测18套模拟/M03/assets/q69_foodweb.png": "b8ec691067ffccac315a50f31d3a0cd187d9ade2a5cae5f9b5464618ab212edd",
+    "广东行测18套模拟/M03/assets/q35_number_grid_v020.svg": "b4ff502c5d1839d8977dceb31e16ce9ccd41fe13a23357089a88f4f0ebbe0723",
+    "广东行测18套模拟/M03/assets/q68_particles_v020.svg": "5e28dcdd4cef3ba67981f3a9ee42bf5266d98dda538ece7b31f58e8e235e5a0e",
+    "广东行测18套模拟/M03/assets/q69_foodweb.svg": "a263ae2d42b7eecd58afccd49fc47f51e1465a553c7953fed4298341c0fd2d62",
+    "广东行测18套模拟/M03/assets/q35_number_grid_v020.png": "8bee898320d2354fd66e0797bd4a62c4a7ea64b8f6607c7a8ebb1b04ace04861",
+    "广东行测18套模拟/M03/assets/q67_projectile_v020.svg": "67ba4087e58891e623a577bfc44952421fd4f3b9a88c676ac3add9caf928c17d",
+    "广东行测18套模拟/M03/assets/q69_foodweb.dot": "e3afc760070e945b6d1bd5a805516010531b0acff090c750e8dfd2bba56d6258",
+    "广东行测18套模拟/M03/核验记录/v020_q35_redraw.py": "56ab4f43a9f999358af6de9eb7f229754bad4c113c3e23de0d1eba7c4f1fcb3d",
+    "广东行测18套模拟/M03/核验记录/science_independent_review.md": "12a55859a686a1f53b71dad012dc3657b7b4c3713e1ed2eda8577a858c59b509",
+    "广东行测18套模拟/M03/核验记录/q50_spatial_review.py": "6c9c3abdc1928e7e95e5bf0f573e21d0a8fbd0741a0b77eec77d545ca3c219cc",
+    "广东行测18套模拟/M03/核验记录/verbal_independent_review.md": "65734d0eaf161e8bba16f7c87f94bbe947b52077a75c5f5b649d432fec51e9ab",
+    "广东行测18套模拟/M03/核验记录/verify_v020_revision.py": "bbfc4a2db2b6ba23cb95530c0b19ab3de15e74584c4b03b5af6babf60bb6abe9",
+    "广东行测18套模拟/M03/核验记录/v020_revision_manifest.json": "eeea1af26cf4520948ad63e07db6f9da54a9ca2dfee618147f27483868ba2108",
+    "广东行测18套模拟/M03/核验记录/交付核验.json": "7ea541b26c6f6e4188c79a6f060a7041b86e1c959b78173ea4d90ff026927607",
+    "广东行测18套模拟/M03/核验记录/主编复核与修订.md": "49dc79899f499f7f4e65fd87369f0a6095937c7b6bdb9b701e802671069575c6",
+    "广东行测18套模拟/M03/核验记录/politics_independent_review.md": "10a63b757044a21139c29fa98a7bc4e6227b02a603ff60d7c9cdedad7393ee9b",
+    "广东行测18套模拟/M03/核验记录/v020_science_decisions.md": "0aeb80deb8f2d1f9620e0000cb7555dc5571f00d3bed477458ea50b2cc0e5c68",
+    "广东行测18套模拟/M03/核验记录/q50_spatial_review.md": "39f30d015ecbc25c5bd6110c146306e671aed607c072ef8f854487180df56478",
+    "广东行测18套模拟/M03/核验记录/v020_science_diagrams.json": "92e594f85af4ab12f6fe86f519ef0f04945f05c330174ee63ac9b6a6341e607b",
+    "广东行测18套模拟/M03/核验记录/v020_verbal_politics_decisions.md": "ac2ced315518543265cdb5f13fc74debd5b28dfdf25f6aa6c3bf03b3f0024e8c",
+    "广东行测18套模拟/M03/核验记录/v020_q35_layout_check.json": "d9884310a9a6c2dadc88b536b718d5cbe8c205ed37d908298d620e44b9dc62ad",
+    "广东行测18套模拟/M03/核验记录/政治常识依据.json": "5cef5ce250f4bffeaf13b7bfafd0c22e1e084407cc9770a9f02468294cb10a3c",
+    "广东行测18套模拟/M03/核验记录/v020_quant_data_check.json": "5418355cc55b79cd5697a8f5e85a34fd8f38ece3d6c92901138d6276f1837b14",
+    "广东行测18套模拟/M03/核验记录/v020_quant_data_decisions.md": "cf591a8ebb9fafcf577854748fc1f0077f289ed0e51bcfb470dca336939ff4cc",
+    "广东行测18套模拟/M03/核验记录/v020_q35_print120mm.png": "3598ad3d9ef51ee055cc382e5ca04bbe2e5334e558ca08bbf63606335d6814ed",
+    "广东行测18套模拟/M03/核验记录/q50_spatial_review.json": "297ba871547fe1c4a1d1b1f37b0ac3da073cfe94f8d6ea4f12e9164405276652",
+    "广东行测18套模拟/M03/核验记录/v020_reasoning_decisions.md": "a92cd39c5602f3cd76e16c525f2c580b3f4732d4eefe846249e8d18fb20582fb",
+    "广东行测18套模拟/M03/核验记录/science_independent_answers_before_compare.json": "a9d641fc7b39124dabdab7c1a9a8aa711cdf845a7d3c178c01ba689d5dec5dcb",
+    "广东行测18套模拟/M03/核验记录/v020_revision_check.json": "a12dd72acd654e44394d02ce25b508c2ba89ce17d214563387884d86cf72c69b",
+    "广东行测18套模拟/M03/核验记录/science_independent_check.json": "4afe42ec86c28e96b0b5955b40d00dd979330827da3ee24c3f87d7ab7de1ebf8",
+    "广东行测18套模拟/M03/核验记录/v020_quant_data_check.py": "eac466841562c4145531d523b3bcdd0889e4fa760d99c142b1eb0ed2b17b2d8e",
+    "广东行测18套模拟/M03/核验记录/verify_delivery.py": "a838e017f51cd4571f6409aeaed4a31113e6e35b12b7a31b9489ad2e7dd60ea8",
+    "广东行测18套模拟/M03/核验记录/q69_foodweb_edges.json": "6b7aad76eedba31048977169261e60dcf369eedb1b6746b21032f83d5fbce77d",
+    "广东行测18套模拟/M03/历史版本/0.1.0/paper.json": "d543453b7da66b41e6d34823c57fa35e05c4a611afb0a3cb99a02b693f45f3a2",
+    "广东行测18套模拟/M03/历史版本/0.1.0/核验报告.json": "0b98f4206a8b277c31f9ae2004f51022413477acb9e4e8672ee79a342b578505",
+    "广东行测18套模拟/M03/历史版本/0.1.0/README.md": "ebab7093319b0c1b1008da763276104be4707b7b0d2165570e893d2f3b2826ed",
+    "广东行测18套模拟/M03/历史版本/0.1.0/selection.json": "5a265f7c6278eaa3c7ec5eb9c26e2964593182c3a6bcc1d60d28dfb5c3af05a7",
+    "广东行测18套模拟/M03/历史版本/0.1.0/编辑底稿/quant_data_check.json": "b7fd9ecb3bb97a351a7b255d9eaeb797768bdc995a4268075bad2403007ab4b8",
+    "广东行测18套模拟/M03/历史版本/0.1.0/编辑底稿/reasoning_verification.json": "232353d1855c3e2ba25b4c5fdd7711828b8bae10de74e89b3c7125e79ff8f84e",
+    "广东行测18套模拟/M03/历史版本/0.1.0/核验记录/交付核验.json": "04495bda86a6a1e06ef9c065543aec111c764c9abea1d244e033e4c1d9526214",
+    "广东行测18套模拟/M03/核验记录/claude_review/README.md": "34ddb36dab9f626baf2418197f1152307f2ef99512c862131f8e93a690db17e4",
+    "广东行测18套模拟/M03/核验记录/claude_review/claude_review.json": "fb1fd9283c2823723435903ede78cee1148ecca33ec4553cf7d9c74e81fb9b97",
+    "广东行测18套模拟/M03/核验记录/claude_review/data/q88_pie_measure.out.txt": "41c069a43ba5d41a6b11411a77c9bf9f1096e3cd199a103aa210ddaf5b83c0cd",
+    "广东行测18套模拟/M03/核验记录/claude_review/data/sensitivity_and_provenance.out.txt": "1116e05bc059a6f9270476f74e0588fa8527c8e2fc146c1fa541a4b06670d160",
+    "广东行测18套模拟/M03/核验记录/claude_review/data/blind_calc_71_90.out.txt": "dd064e59f2232c1013850778b1ad735109b0d081c14b3b9895ae8f21fdf21e37",
+    "广东行测18套模拟/M03/核验记录/claude_review/data/blind_calc_71_90.py": "369c0106716b8af93091c7433bd2d6b130d9dbce8619f421e93fe131e26c1bdd",
+    "广东行测18套模拟/M03/核验记录/claude_review/data/source_diff_71_90.py": "af4001ffc932789bdb228d86c3674748f565ef393de1ac4ed142beaf63774783",
+    "广东行测18套模拟/M03/核验记录/claude_review/data/sensitivity_and_provenance.py": "2c5bf95a10481694826677af585839a1e48766e4c16963bbf8430358016c66ca",
+    "广东行测18套模拟/M03/核验记录/claude_review/data/q88_pie_measure.py": "1af3e1ca8f665531d74dd8c432ddc87899a428a7fab155e3edf50a99bc348015",
+    "广东行测18套模拟/M03/核验记录/claude_review/data/source_diff_71_90.out.txt": "18808664e7a9f3a75ff4b54f131c255ccc6a14f061dd300772f9c3bc926e29e8",
+    "广东行测18套模拟/M03/核验记录/claude_review/sci/q69_foodchains.py": "66ac65717615e72d26686c1e48f488d548098e6041d9944cf42d8fae9bee552b",
+    "广东行测18套模拟/M03/核验记录/claude_review/sci/print_sizes_output.txt": "53518d900dfc9c4a46b947fba1f82c9603c961557844db69dc5deb7e12179fc0",
+    "广东行测18套模拟/M03/核验记录/claude_review/sci/print_sizes.py": "b9e64a8097958c241508b236fa6f920ce176d381422cde5c14fb08e64c9c19ea",
+    "广东行测18套模拟/M03/核验记录/claude_review/sci/compare_after_blind.json": "4f1ba3470fdd55dd82e839fa4383cc05361cf53f9027a705b8f91159204501a4",
+    "广东行测18套模拟/M03/核验记录/claude_review/sci/q66_68_checks.py": "0cab5f4bad89afd261b94ff2f50a6feb6f3ab3295d9e95536fe21da66a1f06a1",
+    "广东行测18套模拟/M03/核验记录/claude_review/sci/q66_68_checks_output.txt": "be4a0181c67896937f22fef748194f1f5da7c349badf8063327e29c51dfd4605",
+    "广东行测18套模拟/M03/核验记录/claude_review/sci/q69_foodchains_output.txt": "8de0f0f6bf72e5f6a4879ffb4cf115d830ed5633d57b613b0f85250593a0980e",
+    "广东行测18套模拟/M03/核验记录/claude_review/sci/q70_annotated_x3.png": "f93f88669625f88fdf4cf18207464c8708503ee2a72f7a031bbdd77d0cab5d19",
+    "广东行测18套模拟/M03/核验记录/claude_review/blind/verbal.json": "913fb7b66f86e489ef61f55fae6a9bbddf7556dd1bb25d8338d04dfc230324f4",
+    "广东行测18套模拟/M03/核验记录/claude_review/blind/quant.json": "943c2c404244f5c5a70887e484595d43eb9edecadd0599693ef605558f7c8726",
+    "广东行测18套模拟/M03/核验记录/claude_review/blind/pol.json": "c3d6b235c18ce38337c8b53e0d0d0343c18dd64e702e19b843388ecd89d341c9",
+    "广东行测18套模拟/M03/核验记录/claude_review/blind/logic.json": "a76c4f3b109fb433b05924bd41172a59e919cac8ad66733cfc9b253fd6106695",
+    "广东行测18套模拟/M03/核验记录/claude_review/blind/sci.json": "53b1d1562ebd8114d78a815e7c8f5fc310d420e2c6a01339b98924930c374dd5",
+    "广东行测18套模拟/M03/核验记录/claude_review/blind/fig.json": "1047986f286869a704072eec5bcf384cb384d484ab493d549ff2a85c797ddcae",
+    "广东行测18套模拟/M03/核验记录/claude_review/blind/data.json": "72b962ef7f4b664fdea44dc00a33c19490f32691489e6ad47f76b376602e7e4a",
+    "广东行测18套模拟/M03/核验记录/claude_review/quant/q35_fix_prototype.py": "83a3e055a40ae88a9378b767efd117f1cf6a074679855bbe262a07cdf9080763",
+    "广东行测18套模拟/M03/核验记录/claude_review/quant/verify_q31_45.py": "aab686099b8549fd5c8edd6fba01e70aad29150b0fa0390d703e22578e536b9e",
+    "广东行测18套模拟/M03/核验记录/claude_review/quant/q35_print_preview_c3.png": "beadea44d5ec2c7106795da4772d1fc754e2294b7ee9790cb2e05a31eb22ee79",
+    "广东行测18套模拟/M03/核验记录/claude_review/quant/source_fidelity_check.py": "e80f78575bb6c1a5ee703d6b9e21e912b4f4b2be24f010352ba00a7636c51333",
+    "广东行测18套模拟/M03/核验记录/claude_review/quant/verify_q31_45_report.txt": "2499ef1844a4b47802a2e1bcabb835cf0245d03da277fd0bb89dd39578624bc0",
+    "广东行测18套模拟/M03/核验记录/claude_review/quant/q35_legibility.json": "f036331a71af99937000d23a16c9a808691367a199a697f46ebed96899bfa49c",
+    "广东行测18套模拟/M03/核验记录/claude_review/quant/source_fidelity_check_output.txt": "378e246b0d5e1b52599a04aa262282d8cbdf7f40e5966715158b69e36867913d",
+    "广东行测18套模拟/M03/核验记录/claude_review/quant/q35_legibility.py": "e6f7b0d320aa9ac2d33b958e78c24fe10112621660a9165ff4495e5cfa0276d8",
+    "广东行测18套模拟/M03/核验记录/claude_review/quant/verify_q31_45_result.json": "ced73ca56a63921bee8fb0b51a8bddabe4394dc10053190d81f4614ab0a57653",
+    "广东行测18套模拟/M03/核验记录/claude_review/quant/q35_fix_prototype.json": "b67f9dc98a2ab562c0fdc3cb0f5a6b475a374f9813b23a2fb463086a99b705a2",
+    "广东行测18套模拟/M03/核验记录/claude_review/fig/q50_readings.json": "6ab70ebd5018bcc888e1f955fa05fd72dd06be46a18e4e5612535f93b2a9902d",
+    "广东行测18套模拟/M03/核验记录/claude_review/fig/q47_grids.json": "0d37b7666a58faf8eef36781f40497ff6566ddead3f2ed622107fa60ba891d1b",
+    "广东行测18套模拟/M03/核验记录/claude_review/fig/q50_hidden.json": "04a5861b88917d804d8065c36381f5a7f3eb0270182991dd94e770a8af252f6e",
+    "广东行测18套模拟/M03/核验记录/claude_review/fig/q47_rule_check.py": "0e568b386aec8e8d9de26be8c4260ce8aa409b91807142696ccb1d01e2b36162",
+    "广东行测18套模拟/M03/核验记录/claude_review/fig/q49_rule_check.py": "d7eb71aa2011cc4df110d33d91550e5a26ebd75741cbccdeb0aaba15e30dff0d",
+    "广东行测18套模拟/M03/核验记录/claude_review/fig/q49_views.py": "c33c50ab5938b557a545407fb7e6b95c7c10deacab2f75a65775318fd3be0a6d",
+    "广东行测18套模拟/M03/核验记录/claude_review/fig/q46_symmetry.py": "5c69df53ac9e0320014be10f1e18497fbe32f5b2c9dd249829b51905d1305a3b",
+    "广东行测18套模拟/M03/核验记录/claude_review/fig/q50_enumerate.py": "e7232882a5f7a25e20f5bcea9062786e67416dfb498880f4f8dd775937c6a016",
+    "广东行测18套模拟/M03/核验记录/claude_review/fig/q49_fit_results.json": "7346f085771057c538a4679f04bba6f6139d29cba42da59769a8753fe99957c3",
+    "广东行测18套模拟/M03/核验记录/claude_review/logic/diff_stems_51_65.py": "4f4a977b4f492b895302c6b87c4221e30c7725328d9b63effb410cae281b9ab1",
+    "广东行测18套模拟/M03/核验记录/claude_review/logic/compare_51_65.json": "63146c3d0a8c1edac47e4bb68bd7c465a29e618374825f14c5ab9ec10f32866e",
+    "广东行测18套模拟/M03/核验记录/claude_review/logic/check_print_blank_q55.out.txt": "3f2fbc8bdfe6cd7ffe6080c7b1d19b69350b558a91dbc0cd627f71ede10cc8a1",
+    "广东行测18套模拟/M03/核验记录/claude_review/logic/diff_stems_51_65.out.txt": "2f885859564877dcaab7faaeaeb180a3a11e11a8d9244619193178ee37a31be4",
+    "广东行测18套模拟/M03/核验记录/claude_review/logic/verify_logic_51_65.py": "d946a126d3b71b1ebb0771712ec6ef6db8eb430fdb79cff8fa6c10c4cc840d16",
+    "广东行测18套模拟/M03/核验记录/claude_review/logic/check_print_blank_q55.py": "e0b489a791d94ec0641e68b675c7482fb01faadf417ca5c4ca7f180bdcf499e8",
+    "广东行测18套模拟/M03/核验记录/claude_review/logic/verify_logic_51_65.out.txt": "d73ec7ae1255a67aced1661c5728b67605cfac3439225d9c46a2350f3aaafa18",
+    "广东行测18套模拟/M03/核验记录/claude_review/verbal/stem_diff.json": "a218a23729082567b6da1fd03b9b7d8b1b3e87834312093e16acd1e273903dd1",
+    "广东行测18套模拟/M03/核验记录/claude_review/verbal/pdf_sources_verified.json": "9229de21037cd3dc1e9615047c344c249d2532753d8f669bf7e2146613a3860d",
+    "广东行测18套模拟/M03/核验记录/claude_review/verbal/gk_pdf_compare.json": "65963761e6baa5a002a2166f28636a0017bb1ec534b624c21ad602d0e1b9355a",
+    "广东行测18套模拟/M03/核验记录/claude_review/verbal/review_comparison.json": "407aeec9e7b9a8c8a540fba99471aba23300b4d8414feb4204f93b8d23c83991",
+    "广东行测18套模拟/M03/核验记录/claude_review/verbal/jz_pdf_compare.json": "f3ebec78f590dca21ffcf93beeded4ad4f36191cf30de0cf1e282dd658e16ab2",
+    "广东行测18套模拟/M03/核验记录/claude_review/verbal/diff_stems.py": "0f82882f117078a44fed428ff4d1670255619a7c826a93665a441e3db1210018",
+    "广东行测18套模拟/M03/核验记录/claude_review/politics/web_evidence.json": "8f60279eb401915d47b94f51fad7d6d98b6755e81b05b73d693d98674677c1b6",
+    "广东行测18套模拟/M03/核验记录/claude_review/politics/option_discrimination.out.json": "49298314fbd81e16e7bc546bee95abd5912a5f7a0543d04928cf2986fef8a03a",
+    "广东行测18套模拟/M03/核验记录/claude_review/politics/option_discrimination.py": "9abef62537d0d6d36a984a19a0e785c9296669b0a0b92a80e9bbbbfa128398b7",
+    "广东行测18套模拟/M03/核验记录/claude_review/politics/provenance_page_check.py": "9bb48883d0ab98d9dc3ef909940d7afc950dd3fb4e391c77d37df1eed2d4d6ae",
+    "广东行测18套模拟/M03/核验记录/claude_review/politics/provenance_page_check.out.json": "b91df4bfaaccc939c30c30210b22482a8ad7c30e87ab7466917d505542e4d60c"
+  },
+  "output_sha256": {
+    "paper.json": "386f98ea6e5de1a8adc7fa4f4e60ae8db243c33e41a0f5f3fec7eebcd3986b71",
+    "selection.json": "61c0677d599d572a308262cc5d03d488881aa9ab09c5bd64cca946122a1c1eb3",
+    "题目.jsonl": "572ad81d916d50b6595f6d8290702252266ce31f1b7e298d6993fee5014378ab",
+    "题本_待审.md": "a44a3594e29d1e6f019b807814bc1b66eea050ac731c5b169d798187f6e96f09",
+    "答案与解析_待审.md": "38a51ae3a83e7131a33ace4de8e34560fa87c4d14dce400a30100497ab465a9e",
+    "来源登记.jsonl": "da91d079079ba8f8b4a001562c60804145e48e3f7c7775df856b56d8431eebae"
+  },
+  "limits": [
+    "本轮是编辑处理和复算，Claude增量审核未完成。",
+    "第58题保留源转写标点，原PDF点位待核。",
+    "第63题只有结构化表格，未取得原扫描图。",
+    "资料第78、84题敏感表格单元格仍缺原PDF核对。",
+    "2025年国考言语8题用户是否做过未知；不把无曝光检索命中当作从未做过。",
+    "未生成本版打印PDF，旧32页PDF归档。"
+  ]
+}

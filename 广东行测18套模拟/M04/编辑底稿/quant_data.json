@@ -83,12 +83,13 @@
     "selection_reason": "二级差呈等比，训练差分层级的识别。",
     "edits": [],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "对本题精确分数或有限模型复算；原始趋势选项图核对只适用于第90题，不扩称其他题也做过此检查。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 31,
@@ -233,12 +234,13 @@
     "selection_reason": "约分掩盖共同分母；运算量小而观察入口有价值。",
     "edits": [],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "对本题精确分数或有限模型复算；原始趋势选项图核对只适用于第90题，不扩称其他题也做过此检查。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 34,
@@ -337,12 +339,13 @@
     "selection_reason": "数字拆分后两条规律并行，保留数推观察方式的变化。",
     "edits": [],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "对本题精确分数或有限模型复算；原始趋势选项图核对只适用于第90题，不扩称其他题也做过此检查。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 32,
@@ -437,16 +440,17 @@
     },
     "source_answer": null,
     "answer": "C",
-    "analysis": "从第三项起，每项等于前一项加上前两项的二分之一：12+26/2=25，25+12/2=31，31+25/2=43.5。因此下一项为43.5+31/2=59，选C。三处已知递推都须符合。",
+    "analysis": "从第三项起，每项等于前一项加上前第二项（隔一项）的二分之一：12+26/2=25，25+12/2=31，31+25/2=43.5。因此下一项为43.5+31/2=59，选C。三处已知递推都须符合。",
     "selection_reason": "出现半整数后识别相邻递推，而非强行差分拟合。",
     "edits": [],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "对本题精确分数或有限模型复算；原始趋势选项图核对只适用于第90题，不扩称其他题也做过此检查。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 35,
@@ -545,12 +549,13 @@
     "selection_reason": "平方外形与加和递推结合，考察先变换再观察。",
     "edits": [],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "对本题精确分数或有限模型复算；原始趋势选项图核对只适用于第90题，不扩称其他题也做过此检查。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 32,
@@ -658,12 +663,13 @@
     "selection_reason": "多个比例的整数约束与子群体口径。",
     "edits": [],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "对本题精确分数或有限模型复算；原始趋势选项图核对只适用于第90题，不扩称其他题也做过此检查。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 40,
@@ -767,16 +773,17 @@
     },
     "source_answer": null,
     "answer": "A",
-    "analysis": "以原成本100元计，原售价125元。成本提高15%后为115元；售价先提高50%、再打八折，实售价为125×1.5×0.8=150元。新利润率为(150−115)/115≈30.43%，比原来的25%高约5.43个百分点，选A。利润率分母应随成本改为115，不能仍除以100。",
+    "analysis": "以原成本100元计，原售价125元。成本提高15%后为115元；售价先提高50%、再打八折，实售价为125×1.5×0.8=150元。新利润率为(150−115)/115≈30.43%，比原来的25%高约5.43个百分点，选A。利润率分母应随成本改为115，不能仍除以100。 利润率以成本为分母，应算35/115≈30.4%，较25%增加约5.4个百分点；若误以售价作分母，会算成20%→约23.3%，误选B。",
     "selection_reason": "调价与成本同时变化，检验利润率分母而非连续打折口诀。",
     "edits": [],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "对本题精确分数或有限模型复算；原始趋势选项图核对只适用于第90题，不扩称其他题也做过此检查。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 41,
@@ -889,16 +896,17 @@
     },
     "source_answer": null,
     "answer": "D",
-    "analysis": "24米的直角边连同两端共有9个传感器，对应8段，间距为24/8=3米。闭合的一圈40个传感器对应40段，故温室周长120米。设另一条直角边为x米、斜边为y米，则x+y=96，且y²−x²=24²=576，所以y−x=576/96=6，得y=51米，选D。直线段与闭合一圈的“点数—段数”关系不同。",
+    "analysis": "24米的直角边连同两端共有9个传感器，对应8段，间距为24/8=3米。闭合的一圈40个传感器对应40段，故温室周长120米。设另一条直角边为x米、斜边为y米，则x+y=96，且y²−x²=24²=576，所以y−x=576/96=6，得y=51米，选D。直线段与闭合一圈的“点数—段数”关系不同。 三边24、45、51米均为3米的整数倍，分别是8、15、17段，合计40段，三个顶点均可落在传感器位置上。",
     "selection_reason": "植树端点口径与勾股平方差结合，几何建模有明确突破口。",
     "edits": [],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "对本题精确分数或有限模型复算；原始趋势选项图核对只适用于第90题，不扩称其他题也做过此检查。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 36,
@@ -1015,12 +1023,13 @@
     "selection_reason": "先后事件、停车区间与设问终点的阅读建模。",
     "edits": [],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "对本题精确分数或有限模型复算；原始趋势选项图核对只适用于第90题，不扩称其他题也做过此检查。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 40,
@@ -1142,22 +1151,23 @@
     },
     "source_answer": null,
     "answer": "B",
-    "analysis": "设订单需要N套螺丝，则N/30−N/40=20，得N=2400，即螺丝钉、螺丝帽各需2400个。A生产1个螺丝帽会少产40/50=0.8个螺丝钉，B生产1个帽只少产30/60=0.5个钉，因此优先让B生产帽。B生产2400个帽需40小时；若总时间为T小时，A全时产钉、B剩余时间产钉，最多可产40T+30(T−40)个钉。要求不少于2400，得T≥360/7≈51.43小时，按整小时计为52小时。可行方案：A在52小时内生产2080个钉，B用40小时生产2400个帽，再用10又2/3小时生产320个钉，任务能完成，选B。下界与可行方案同时成立，才说明最少。",
+    "analysis": "设订单需要N套螺丝，则N/30−N/40=20，得N=2400，即螺丝钉、螺丝帽各需2400个。A生产1个螺丝帽会少产40/50=0.8个螺丝钉，B生产1个帽只少产30/60=0.5个钉，因此优先让B生产帽。B生产2400个帽需40小时；若总时间为T小时，A全时产钉、B剩余时间产钉，最多可产40T+30(T−40)个钉。要求不少于2400，得T≥360/7≈51.43小时，按整小时计为52小时。可行方案：A在52小时内生产2080个钉，B用40小时生产2400个帽，再用10又2/3小时生产320个钉，任务能完成，选B。下界与可行方案同时成立，才说明最少。 严格下界：给螺丝钉记2单位、螺丝帽记1单位，总任务为7200单位。A每小时至多完成80单位，B每小时至多60单位，所以T≥7200/140=360/7小时。再结合可行安排与不足1小时按1小时计，得52小时。生产对象如何安排留给考生识别，不在题干额外提示切换模型。",
     "selection_reason": "资源分配与机会成本；用更少损失生产配套零件，并证明最优。",
     "edits": [
       {
-        "type": "model_clarification",
-        "description": "补明车间可切换、切换不耗时及单车间不能同时生产两类零件，使资源分配模型明确；数量、效率、选项不变。",
-        "version": "0.1.0"
+        "type": "restore_source",
+        "description": "撤销非必要的分时切换模型提示，恢复原题题干；保持原难度和答案。",
+        "version": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "对本题精确分数或有限模型复算；原始趋势选项图核对只适用于第90题，不扩称其他题也做过此检查。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 43,
@@ -1170,13 +1180,7 @@
         "pages": 25
       }
     },
-    "source_notice": "题面和材料依据仓库已存转写；源库没有参考答案。未取得原PDF逐字逐格重核，不把本次独立解答称为官方答案。",
-    "stem_override": [
-      {
-        "type": "text",
-        "text": "某工厂收到一批螺丝（一个螺丝钉配一个螺丝帽）加工任务，A车间每小时可生产40个螺丝钉或者50个螺丝帽，B车间每小时可生产30个螺丝钉或者60个螺丝帽。若单独生产这批螺丝钉，A车间所需时间比B车间少20小时。那么两个车间合作完成这批任务，最少需要多少小时？（两车间均可切换生产对象，切换不耗时；每个车间同一时刻只生产一种零件；不足1小时按1小时计算）"
-      }
-    ]
+    "source_notice": "题面和材料依据仓库已存转写；源库没有参考答案。未取得原PDF逐字逐格重核，不把本次独立解答称为官方答案。"
   },
   {
     "number": 41,
@@ -1276,16 +1280,23 @@
     },
     "source_answer": null,
     "answer": "D",
-    "analysis": "6单中有4单达到满减门槛，共减4×3=12元；活动仅5天，一个账号最多领到5张红包，共抵20元。因此六单六折价之和最多为148+12+20=180元，原价合计最多180/0.6=300元，选D。这个上限可实现：六折价设为20、20、35、35、35、35元，其中恰好2单不足25元；把6单安排在5天内，使用5张红包，实付正好148元。不能把6单直接当作有6张红包。",
+    "analysis": "选D。设六单六折后的金额合计为S。六单中恰有两单不足25元，满减最多作用于另四单，合计最多减4×3=12元；五天每天使用一张4元优惠券，最多再减20元。因此实付148元意味着S≤148+12+20=180元，原价合计最多180÷0.6=300元。这个上界可以取到：六单原价设为40、40、55、55、55、55元，对应六折价24、24、33、33、33、33元，把两笔24元安排在同一天、其余四笔分在其余四天，六单中恰有两单不满25元，四笔满减共12元，五天优惠券共20元，实付180−12−20=148元。所有原价均为整数元，当然可以按分计价。",
     "selection_reason": "优惠层级、天数约束及上界可实现性。",
-    "edits": [],
+    "edits": [
+      {
+        "type": "analysis_correction",
+        "description": "修正上界可达的价格构造；旧构造反推原价不能按分计价。题干、选项、答案和优化难度不变。",
+        "version": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "对本题精确分数或有限模型复算；原始趋势选项图核对只适用于第90题，不扩称其他题也做过此检查。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 42,
@@ -1413,12 +1424,13 @@
     "selection_reason": "多集合最优化以补集覆盖理解，兼顾可实现性。",
     "edits": [],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "对本题精确分数或有限模型复算；原始趋势选项图核对只适用于第90题，不扩称其他题也做过此检查。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 44,
@@ -1569,12 +1581,13 @@
       }
     ],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "对本题精确分数或有限模型复算；原始趋势选项图核对只适用于第90题，不扩称其他题也做过此检查。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 43,
@@ -1591,7 +1604,7 @@
     "stem_override": [
       {
         "type": "text",
-        "text": "某演出团队中有5名男性和4名女性，其中有2对夫妻，现在从中等可能随机选出2名男性和2名女性去演出，则选出的人中只有1对夫妻的概率为："
+        "text": "某演出团队中有5名男性和4名女性，其中有2对夫妻，现从中随机选出2名男性和2名女性去演出（各种选法可能性相同），则选出的人中只有1对夫妻的概率为："
       }
     ],
     "options": {
@@ -1732,12 +1745,13 @@
     "selection_reason": "最小公倍数与端点例外，检验题面限定范围。",
     "edits": [],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "对本题精确分数或有限模型复算；原始趋势选项图核对只适用于第90题，不扩称其他题也做过此检查。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 44,
@@ -1845,12 +1859,13 @@
     "selection_reason": "多项相邻限制一起定义为整体，减少过程式分类。",
     "edits": [],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "对本题精确分数或有限模型复算；原始趋势选项图核对只适用于第90题，不扩称其他题也做过此检查。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 43,
@@ -2122,12 +2137,13 @@
       }
     ],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "对本题精确分数或有限模型复算；原始趋势选项图核对只适用于第90题，不扩称其他题也做过此检查。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 71,
@@ -2595,12 +2611,13 @@
       }
     ],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "对本题精确分数或有限模型复算；原始趋势选项图核对只适用于第90题，不扩称其他题也做过此检查。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 72,
@@ -3042,12 +3059,13 @@
       }
     ],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "对本题精确分数或有限模型复算；原始趋势选项图核对只适用于第90题，不扩称其他题也做过此检查。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 73,
@@ -3483,12 +3501,13 @@
       }
     ],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "对本题精确分数或有限模型复算；原始趋势选项图核对只适用于第90题，不扩称其他题也做过此检查。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 74,
@@ -3957,12 +3976,13 @@
       }
     ],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "对本题精确分数或有限模型复算；原始趋势选项图核对只适用于第90题，不扩称其他题也做过此检查。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 75,
@@ -4363,12 +4383,13 @@
     "selection_reason": "负增长与正增长并存下的两期比重差。",
     "edits": [],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "对本题精确分数或有限模型复算；原始趋势选项图核对只适用于第90题，不扩称其他题也做过此检查。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 71,
@@ -4589,12 +4610,13 @@
     "selection_reason": "基期差值须先分别还原，防止现期差额套一个增速。",
     "edits": [],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "对本题精确分数或有限模型复算；原始趋势选项图核对只适用于第90题，不扩称其他题也做过此检查。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 72,
@@ -4806,12 +4828,13 @@
     "selection_reason": "混合增长的夹心关系，省去逐项求非住宅增速。",
     "edits": [],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "对本题精确分数或有限模型复算；原始趋势选项图核对只适用于第90题，不扩称其他题也做过此检查。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 73,
@@ -5023,12 +5046,13 @@
     "selection_reason": "部分增长额由整体与已知部分相减，辨别单位。",
     "edits": [],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "对本题精确分数或有限模型复算；原始趋势选项图核对只适用于第90题，不扩称其他题也做过此检查。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 74,
@@ -5267,12 +5291,13 @@
     "selection_reason": "检验能否求出与具体计算分离，注意同比跨年所需信息。",
     "edits": [],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "对本题精确分数或有限模型复算；原始趋势选项图核对只适用于第90题，不扩称其他题也做过此检查。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 75,
@@ -5519,12 +5544,13 @@
     "selection_reason": "半年区间定位和月均分母。",
     "edits": [],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "对本题精确分数或有限模型复算；原始趋势选项图核对只适用于第90题，不扩称其他题也做过此检查。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 86,
@@ -5771,12 +5797,13 @@
     "selection_reason": "高增长率下的平均数变化，增长倍数与百分数区分。",
     "edits": [],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "对本题精确分数或有限模型复算；原始趋势选项图核对只适用于第90题，不扩称其他题也做过此检查。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 87,
@@ -6023,12 +6050,13 @@
     "selection_reason": "季度聚合后计算环比，防止平均各月同比。",
     "edits": [],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "对本题精确分数或有限模型复算；原始趋势选项图核对只适用于第90题，不扩称其他题也做过此检查。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 88,
@@ -6281,12 +6309,13 @@
       }
     ],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "对本题精确分数或有限模型复算；原始趋势选项图核对只适用于第90题，不扩称其他题也做过此检查。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 89,
@@ -6566,12 +6595,13 @@
     "selection_reason": "综合判断保留直接比较项，与基期、倍数干扰形成取舍。",
     "edits": [],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "对本题精确分数或有限模型复算；原始趋势选项图核对只适用于第90题，不扩称其他题也做过此检查。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 90,
@@ -6832,12 +6862,13 @@
       }
     ],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "对本题精确分数或有限模型复算；原始趋势选项图核对只适用于第90题，不扩称其他题也做过此检查。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 86,
@@ -7283,12 +7314,13 @@
       }
     ],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "对本题精确分数或有限模型复算；原始趋势选项图核对只适用于第90题，不扩称其他题也做过此检查。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 87,
@@ -7716,12 +7748,13 @@
       }
     ],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "对本题精确分数或有限模型复算；原始趋势选项图核对只适用于第90题，不扩称其他题也做过此检查。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 88,
@@ -8149,12 +8182,13 @@
       }
     ],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "对本题精确分数或有限模型复算；原始趋势选项图核对只适用于第90题，不扩称其他题也做过此检查。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 89,
@@ -8631,12 +8665,13 @@
       }
     ],
     "verification": {
-      "status": "editor_verified_pending_independent_review",
-      "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+      "status": "editor_revision_pending_incremental_claude",
+      "method": "原始趋势图四个选项在0.1.0时已实际查看；本轮复跑数值与选项匹配，不称新一轮图片盲审。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "report": "编辑底稿/quant_data_check.json"
+      "report": "编辑底稿/quant_data_check.json",
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 90,

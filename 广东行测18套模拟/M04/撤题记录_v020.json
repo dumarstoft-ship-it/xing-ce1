@@ -1,0 +1,18 @@
+[
+  {
+    "paper_id": "M04",
+    "number": 2,
+    "source_id": "M04-ORIG-002",
+    "retired_in": "0.2.0",
+    "reason": "与前卷及撤题的主次矛盾题重复，改用量变质变的另一考点。",
+    "replacement_source_id": "M04-ORIG-002-v020"
+  },
+  {
+    "paper_id": "M04",
+    "number": 57,
+    "source_id": "gd-mock-2026h2-s24-q62",
+    "retired_in": "0.2.0",
+    "reason": "投诉率分母不同读法会改变判断；按不实质改写原则换题。",
+    "replacement_source_id": "JS2023-A类-104"
+  }
+]

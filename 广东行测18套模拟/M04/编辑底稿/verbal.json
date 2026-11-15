@@ -39,7 +39,7 @@
     "selection_reason": "把借鉴与照搬区分开，并以第三空检验外地经验不适用的因果关系。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_cross_review",
+      "status": "editor_revision_pending_incremental_claude",
       "independent_answer": "B",
       "source_answer_available": true,
       "source_answer_agreement": true,
@@ -62,7 +62,8 @@
         "method": "排除M01–M03现用及撤题源ID；跨卷正文相似项另由整卷核验。",
         "previous_project_source_id_match": false,
         "limit": "不据此声称用户从未做过。"
-      }
+      },
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 48,
@@ -138,14 +139,14 @@
     },
     "stem_override": "近年来，太空领域____。美国、法国成立太空部队，中国、美国发射火星探测器。有人说，太空竞争已____。但与冷战期间的美苏太空竞赛相比，当前太空竞赛呈现多极化、战场化、产业化三大新特点。这将严重____现有太空秩序，国际社会亟需建章立制，予以规范。\n依次填入画横线部分最恰当的一项是：",
     "options": {
-      "A": "龙争虎斗 箭在弦上 动摇",
-      "B": "风起云涌 卷土重来 冲击",
-      "C": "如火如荼 愈演愈烈 挑战",
-      "D": "变幻莫测 死灰复燃 扰乱"
+      "A": "龙争虎斗箭在弦上动摇",
+      "B": "风起云涌卷土重来冲击",
+      "C": "如火如荼愈演愈烈挑战",
+      "D": "变幻莫测死灰复燃扰乱"
     },
     "source_answer": "B",
     "answer": "B",
-    "analysis": "前两句说明多国已相继采取行动，第一空“风起云涌”可概括多种活动兴起的态势。第二空随后拿“当前太空竞赛”与“冷战期间的美苏太空竞赛”比较，重点是新一轮竞赛再度出现，“卷土重来”与此衔接；“箭在弦上”侧重尚待行动的紧迫状态，与前文已经发生的行动不合，“愈演愈烈”侧重程度不断加剧，而题面突出的是再次出现及特点变化。第三空“冲击现有太空秩序”也与亟须规范相接。选B。“卷土重来”在此是借用其再次兴起的意思，不必另造题面没有的某国曾经失败这一事实。",
+    "analysis": "前两句说明多国已相继采取行动，第一空“风起云涌”可概括多种活动兴起的态势。第二空随后拿“当前太空竞赛”与“冷战期间的美苏太空竞赛”比较，重点是新一轮竞赛再度出现，“卷土重来”与此衔接；“箭在弦上”侧重尚待行动的紧迫状态，与前文已经发生的行动不合，“愈演愈烈”侧重程度不断加剧，而题面突出的是再次出现及特点变化。第三空“冲击现有太空秩序”也与亟须规范相接。选B。“卷土重来”在此是借用其再次兴起的意思，不必另造题面没有的某国曾经失败这一事实。 第一空单独看，“龙争虎斗”也可以描述竞争激烈，不能凭这一空直接排除D；D后两空中，“变幻莫测”不能概括所列具体事件，“死灰复燃”通常指已经消失的坏事重新出现，带贬义。",
     "selection_reason": "同一主题下区分再次兴起、程度加剧和尚待行动，三空相互校验。",
     "edits": [
       {
@@ -155,7 +156,7 @@
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_cross_review",
+      "status": "editor_revision_pending_incremental_claude",
       "independent_answer": "B",
       "source_answer_available": true,
       "source_answer_agreement": true,
@@ -178,7 +179,8 @@
         "method": "排除M01–M03现用及撤题源ID；跨卷正文相似项另由整卷核验。",
         "previous_project_source_id_match": false,
         "limit": "不据此声称用户从未做过。"
-      }
+      },
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 32,
@@ -276,7 +278,7 @@
     "selection_reason": "从既要又要、打通堵点到要素流动的连贯关系校验三空，不只凭政策熟词作答。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_cross_review",
+      "status": "editor_revision_pending_incremental_claude",
       "independent_answer": "D",
       "source_answer_available": true,
       "source_answer_agreement": true,
@@ -299,7 +301,8 @@
         "method": "排除M01–M03现用及撤题源ID；跨卷正文相似项另由整卷核验。",
         "previous_project_source_id_match": false,
         "limit": "不据此声称用户从未做过。"
-      }
+      },
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 50,
@@ -380,16 +383,16 @@
       "quality_flags": [],
       "notes": []
     },
-    "stem_override": "发挥主动性去探究问题，综合运用已有知识去探索解决问题的方法，是研学的主要目的。强化探究性不仅要根据____的研究主题进行，而且要针对在旅行中孩子们提出的____问题持续推进，这样才能让孩子们深入探究。研学的组织者要善于____孩子们感兴趣的研究主题，鼓励孩子去探索，避免只学不研，或者研究流于形式。\n依次填入画横线部分最恰当的一项是：",
+    "stem_override": "发挥主动性去探究问题，综合运用已有知识去探索解决问题的方法，是研学的主要目的。强化探究性不仅要根据____的研究主题进行，而且要针对在旅行中孩子们提出的____问题持续推进，这样才能让孩子们深入探究。\n研学的组织者要善于____孩子们感兴趣的研究主题，鼓励孩子去探索，避免只学不研，或者研究流于形式。\n依次填入画横线部分最恰当的一项是：",
     "options": {
-      "A": "预设 鲜活 捕捉",
-      "B": "现有 真实 延伸",
-      "C": "设计 新奇 激发",
-      "D": "既定 实际 引导"
+      "A": "预设鲜活捕捉",
+      "B": "现有真实延伸",
+      "C": "设计新奇激发",
+      "D": "既定实际引导"
     },
     "source_answer": null,
     "answer": "A",
-    "analysis": "文段把研学中的两类问题相对照：一类在出发前安排好，一类在旅行现场由孩子提出。第一空“预设”与这种事先安排相符，第二空“鲜活”突出来自现场的具体问题。第三空的宾语是“孩子们感兴趣的研究主题”，组织者要善于发现、抓住这些主题，“捕捉”恰当；“延伸主题”是进一步扩展已有主题，“激发”通常搭配兴趣、思考等，“引导主题”也没有准确表达发现兴趣所在。A三空最协调。此题源库未提供参考答案，A为本卷编辑推导，待独立复核。",
+    "analysis": "选A。第一、二空不能独立排除D：“预设／既定”的研究主题与旅行中“鲜活／实际”的问题在语境中均可理解，不能靠前两空硬分胜负。关键是第三空：组织者要善于“捕捉”孩子感兴趣的研究主题，动宾搭配自然；“引导研究主题”不当，通常引导的是研究活动或学习者，D据此排除。“激发”宜接兴趣、热情等，“善于延伸……主题”也不及“捕捉”符合发现儿童兴趣并鼓励探究的语境。三个空整体回读，A最恰当。",
     "selection_reason": "在真实研学情境中辨别预设主题与现场问题，再以动宾搭配收束。",
     "edits": [
       {
@@ -399,7 +402,7 @@
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_cross_review",
+      "status": "editor_revision_pending_incremental_claude",
       "independent_answer": "A",
       "source_answer_available": false,
       "source_answer_agreement": null,
@@ -422,7 +425,8 @@
         "method": "排除M01–M03现用及撤题源ID；跨卷正文相似项另由整卷核验。",
         "previous_project_source_id_match": false,
         "limit": "不据此声称用户从未做过。"
-      }
+      },
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 28,
@@ -501,7 +505,7 @@
     "selection_reason": "将材料描述的变化翻译成恰当词义，不只凭欢迎雨水的感情色彩选项。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_cross_review",
+      "status": "editor_revision_pending_incremental_claude",
       "independent_answer": "D",
       "source_answer_available": true,
       "source_answer_agreement": true,
@@ -524,7 +528,8 @@
         "method": "排除M01–M03现用及撤题源ID；跨卷正文相似项另由整卷核验。",
         "previous_project_source_id_match": false,
         "limit": "不据此声称用户从未做过。"
-      }
+      },
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 44,
@@ -584,7 +589,7 @@
     "selection_reason": "区分金融与经济关系这一背景总论，和净息差变化带来共赢的具体论证中心。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_cross_review",
+      "status": "editor_revision_pending_incremental_claude",
       "independent_answer": "D",
       "source_answer_available": true,
       "source_answer_agreement": true,
@@ -607,7 +612,8 @@
         "method": "排除M01–M03现用及撤题源ID；跨卷正文相似项另由整卷核验。",
         "previous_project_source_id_match": false,
         "limit": "不据此声称用户从未做过。"
-      }
+      },
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 55,
@@ -674,7 +680,7 @@
     "selection_reason": "理解材料由历史信息到乡建方法的递进，防止主旨停留在漂亮的背景概括。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_cross_review",
+      "status": "editor_revision_pending_incremental_claude",
       "independent_answer": "D",
       "source_answer_available": true,
       "source_answer_agreement": true,
@@ -697,7 +703,8 @@
         "method": "排除M01–M03现用及撤题源ID；跨卷正文相似项另由整卷核验。",
         "previous_project_source_id_match": false,
         "limit": "不据此声称用户从未做过。"
-      }
+      },
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 46,
@@ -790,7 +797,7 @@
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_cross_review",
+      "status": "editor_revision_pending_incremental_claude",
       "independent_answer": "A",
       "source_answer_available": true,
       "source_answer_agreement": true,
@@ -813,7 +820,8 @@
         "method": "排除M01–M03现用及撤题源ID；跨卷正文相似项另由整卷核验。",
         "previous_project_source_id_match": false,
         "limit": "不据此声称用户从未做过。"
-      }
+      },
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 34,
@@ -944,7 +952,7 @@
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_cross_review",
+      "status": "editor_revision_pending_incremental_claude",
       "independent_answer": "C",
       "source_answer_available": true,
       "source_answer_agreement": true,
@@ -967,7 +975,8 @@
         "method": "排除M01–M03现用及撤题源ID；跨卷正文相似项另由整卷核验。",
         "previous_project_source_id_match": false,
         "limit": "不据此声称用户从未做过。"
-      }
+      },
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 45,
@@ -1075,7 +1084,7 @@
     "selection_reason": "区分“提及结论”与“解释机制”，科学材料无需外部专业知识即可作答。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_cross_review",
+      "status": "editor_revision_pending_incremental_claude",
       "independent_answer": "C",
       "source_answer_available": true,
       "source_answer_agreement": true,
@@ -1098,7 +1107,8 @@
         "method": "排除M01–M03现用及撤题源ID；跨卷正文相似项另由整卷核验。",
         "previous_project_source_id_match": false,
         "limit": "不据此声称用户从未做过。"
-      }
+      },
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 56,
@@ -1158,7 +1168,7 @@
     "selection_reason": "按初期条件、专门材料分离、更高要求及结构创新组织六句，同时核查因果与指代。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_cross_review",
+      "status": "editor_revision_pending_incremental_claude",
       "independent_answer": "C",
       "source_answer_available": true,
       "source_answer_agreement": true,
@@ -1181,7 +1191,8 @@
         "method": "排除M01–M03现用及撤题源ID；跨卷正文相似项另由整卷核验。",
         "previous_project_source_id_match": false,
         "limit": "不据此声称用户从未做过。"
-      }
+      },
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 61,
@@ -1248,7 +1259,7 @@
     "selection_reason": "总结两条就业机制，防止熟悉的政策词语造成主体或范围偷换。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_cross_review",
+      "status": "editor_revision_pending_incremental_claude",
       "independent_answer": "A",
       "source_answer_available": true,
       "source_answer_agreement": true,
@@ -1271,7 +1282,8 @@
         "method": "排除M01–M03现用及撤题源ID；跨卷正文相似项另由整卷核验。",
         "previous_project_source_id_match": false,
         "limit": "不据此声称用户从未做过。"
-      }
+      },
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 62,
@@ -1349,12 +1361,12 @@
     "options": {
       "A": "明清两代江南地区一直流行饮用绿茶",
       "B": "江南炒青或蒸青都用早春新茶作原料",
-      "C": "改变饮茶风尚前，武夷茶农曾受江南影响",
-      "D": "清初的武夷山地区开始兴起饮用发酵茶"
+      "C": "明代武夷山地区饮茶风尚受江南影响",
+      "D": "饮用发酵茶是清初出现的一种新方式"
     },
     "source_answer": "B",
     "answer": "B",
-    "analysis": "B把“江南炒青或蒸青”概括为都用早春新茶，与明确的例外冲突：蒸青的罗岕茶使用初夏新茶，仍有春天气息，但不是早春新茶。A对应明清饮用江南炒青、蒸青新茶的总体风尚；C对应武夷茶农原先遵循江南绿茶风尚；D对应文段所述清初武夷山开始饮用发酵陈茶。选B。判断全称表述时，只需一个题面明示的例外即可否定。本卷给C、D补足语境边界，避免把地区风尚变化误读为全国最早出现发酵茶的断言。",
+    "analysis": "选B。文段说江南新茶通常取早春茶芽，却专门举出罗岕茶是初夏新茶这一例外，故“都用早春新茶”与文意不符。A需连读“明清两代一直以江南炒青或蒸青的新茶为尚”及开头的炒青绿茶，说明江南的绿茶风尚延续。C须结合开头“原先遵循江南”与后文“到了清初……开始喝陈茶”的时间转换，理解清初变化以前的影响。D承接“清初的武夷山地区”这一语境，概括当地出现的新的饮茶风尚，而非声称全国历史上的一切发酵茶均始于清初。保留原C、D，使考生仍须跨句判断时间与语境范围，不把答案线索改成直接复述。源参考答案同为B。",
     "selection_reason": "历史叙述中的地区、时间与全称边界；保留早春与初夏这一可证伪点。",
     "edits": [
       {
@@ -1363,21 +1375,13 @@
         "version": "0.1.0"
       },
       {
-        "type": "disambiguation",
-        "description": "C不再把未明示的“原先”严格固定为明代；D补武夷山地域，避免将地区风尚变化扩大成全国饮用发酵茶的最早起源。原有正确答案及早春/初夏考点不变。",
-        "before": {
-          "C": "明代武夷山地区饮茶风尚受江南影响",
-          "D": "饮用发酵茶是清初出现的一种新方式"
-        },
-        "after": {
-          "C": "改变饮茶风尚前，武夷茶农曾受江南影响",
-          "D": "清初的武夷山地区开始兴起饮用发酵茶"
-        },
-        "version": "0.1.0"
+        "type": "restore_source",
+        "description": "恢复源题选项、文字及标点，仅处理排版空白；未改变论证边界或干扰项。",
+        "version": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_cross_review",
+      "status": "editor_revision_pending_incremental_claude",
       "independent_answer": "B",
       "source_answer_available": true,
       "source_answer_agreement": true,
@@ -1400,7 +1404,8 @@
         "method": "排除M01–M03现用及撤题源ID；跨卷正文相似项另由整卷核验。",
         "previous_project_source_id_match": false,
         "limit": "不据此声称用户从未做过。"
-      }
+      },
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 46,
@@ -1498,7 +1503,7 @@
     "selection_reason": "从末端案件反馈到前端治理改进，区分事实、方法与总主张。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_cross_review",
+      "status": "editor_revision_pending_incremental_claude",
       "independent_answer": "A",
       "source_answer_available": true,
       "source_answer_agreement": true,
@@ -1521,7 +1526,8 @@
         "method": "排除M01–M03现用及撤题源ID；跨卷正文相似项另由整卷核验。",
         "previous_project_source_id_match": false,
         "limit": "不据此声称用户从未做过。"
-      }
+      },
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 55,
@@ -1581,7 +1587,7 @@
     "selection_reason": "在较密的科学说明中区分理论基础、信息提取机制、性能结果与未涉及的发射载体。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_cross_review",
+      "status": "editor_revision_pending_incremental_claude",
       "independent_answer": "D",
       "source_answer_available": true,
       "source_answer_agreement": true,
@@ -1604,7 +1610,8 @@
         "method": "排除M01–M03现用及撤题源ID；跨卷正文相似项另由整卷核验。",
         "previous_project_source_id_match": false,
         "limit": "不据此声称用户从未做过。"
-      }
+      },
+      "checked_version": "0.2.0"
     },
     "source_locators": {
       "original_number": 58,

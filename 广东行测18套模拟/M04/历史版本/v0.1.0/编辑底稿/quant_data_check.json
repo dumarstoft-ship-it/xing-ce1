@@ -1,0 +1,830 @@
+{
+  "status": "pass",
+  "question_count": 35,
+  "answer_agreement_count": 35,
+  "source_objects_identical_to_bank": true,
+  "material_groups": {
+    "gd-mock-2026h2-s26-m1": [
+      71,
+      72,
+      73,
+      74,
+      75
+    ],
+    "gd-mock-2026h2-s24-m1": [
+      76,
+      77,
+      78,
+      79,
+      80
+    ],
+    "gd-mock-2026h2-s27-m4": [
+      81,
+      82,
+      83,
+      84,
+      85
+    ],
+    "gd-mock-2026h2-s23-m4": [
+      86,
+      87,
+      88,
+      89,
+      90
+    ]
+  },
+  "scope": "Exact displayed-input fingerprints checked before calculation. Natural-language models were derived by the editor; program checks do not replace another reader or external review.",
+  "source_pdf_rechecked": false,
+  "source_answers_available": false,
+  "checks": [
+    {
+      "number": 31,
+      "independent_answer": "A",
+      "details": {
+        "first_differences": [
+          25,
+          26,
+          29,
+          38,
+          65
+        ],
+        "second_differences": [
+          1,
+          3,
+          9,
+          27
+        ],
+        "next": 343
+      },
+      "input_sha256": "0fb0904a1c51dd1f965014d930e5a8ab00ca8df99f774551fd3946e257817256",
+      "editorial_answer": "A",
+      "agrees": true
+    },
+    {
+      "number": 32,
+      "independent_answer": "B",
+      "details": {
+        "common_denominator": 96,
+        "numerators": [
+          {
+            "exact": "40",
+            "decimal": 40.0
+          },
+          {
+            "exact": "43",
+            "decimal": 43.0
+          },
+          {
+            "exact": "48",
+            "decimal": 48.0
+          },
+          {
+            "exact": "55",
+            "decimal": 55.0
+          },
+          {
+            "exact": "64",
+            "decimal": 64.0
+          }
+        ],
+        "next": {
+          "exact": "25/32",
+          "decimal": 0.78125
+        }
+      },
+      "input_sha256": "5a27223c141d798cb34d335e0f5506548d9a66ecf501684ebfc92ef3726323dd",
+      "editorial_answer": "B",
+      "agrees": true
+    },
+    {
+      "number": 33,
+      "independent_answer": "A",
+      "details": {
+        "split_left_next": 32,
+        "split_right_next": 324,
+        "recombined": "32.324"
+      },
+      "input_sha256": "560b5fbb6f234c6b08142cc21946f981622e9cb3b37cc70127f20c44d474396c",
+      "editorial_answer": "A",
+      "agrees": true
+    },
+    {
+      "number": 34,
+      "independent_answer": "C",
+      "details": {
+        "recurrence": "x[n]=x[n-1]+x[n-2]/2",
+        "next": {
+          "exact": "59",
+          "decimal": 59.0
+        }
+      },
+      "input_sha256": "a9ced8533ce8cda5605232b030e43c7e33dd44a4409c1e6cd0d5e8b166a01159",
+      "editorial_answer": "C",
+      "agrees": true
+    },
+    {
+      "number": 35,
+      "independent_answer": "B",
+      "details": {
+        "square_roots": [
+          4,
+          2,
+          6,
+          8,
+          14
+        ],
+        "next": 484
+      },
+      "input_sha256": "a0d8b95b24a01563c1c109c35c65fa5e4544a70060d6d80043d694313d87aaac",
+      "editorial_answer": "B",
+      "agrees": true
+    },
+    {
+      "number": 36,
+      "independent_answer": "A",
+      "details": {
+        "feasible_total_and_difference": [
+          [
+            56,
+            1
+          ]
+        ]
+      },
+      "input_sha256": "95bb67e1569881c43a7b26c292b27c580b8a75c45dcf9a7ea13d6ebda6793e5e",
+      "editorial_answer": "A",
+      "agrees": true
+    },
+    {
+      "number": 37,
+      "independent_answer": "A",
+      "details": {
+        "new_profit_rate": {
+          "exact": "7/23",
+          "decimal": 0.30434782608695654
+        },
+        "increase_percentage_points": {
+          "exact": "125/23",
+          "decimal": 5.434782608695652
+        }
+      },
+      "input_sha256": "88176a4be79f21ed5a0fc4ecf6c3b666662c61c8ffae676e9ac0eb217597a1e0",
+      "editorial_answer": "A",
+      "agrees": true
+    },
+    {
+      "number": 38,
+      "independent_answer": "D",
+      "details": {
+        "spacing": {
+          "exact": "3",
+          "decimal": 3.0
+        },
+        "perimeter": {
+          "exact": "120",
+          "decimal": 120.0
+        },
+        "triangles": [
+          [
+            24,
+            45,
+            51
+          ]
+        ]
+      },
+      "input_sha256": "670b1ddfe0bab7a456c28f7790888a94273a084fc73fda9e6e17d3db55db50ae",
+      "editorial_answer": "D",
+      "agrees": true
+    },
+    {
+      "number": 39,
+      "independent_answer": "D",
+      "details": {
+        "original_speed": {
+          "exact": "50",
+          "decimal": 50.0
+        },
+        "distance": {
+          "exact": "440",
+          "decimal": 440.0
+        },
+        "arrival_hours": {
+          "exact": "10",
+          "decimal": 10.0
+        }
+      },
+      "input_sha256": "e3481412e9bbadde67548b2df0bfb18ce09b85735291ec585cc0d29b2ff1e5a3",
+      "editorial_answer": "D",
+      "agrees": true
+    },
+    {
+      "number": 40,
+      "independent_answer": "B",
+      "details": {
+        "quantity_each": 2400,
+        "continuous_lower_bound_hours": {
+          "exact": "360/7",
+          "decimal": 51.42857142857143
+        },
+        "integer_hour_51_feasible": false,
+        "integer_hour_52_feasible": true,
+        "example_at_52": {
+          "A_nails": 2080,
+          "B_nails": 320,
+          "B_caps": 2400,
+          "A_time": 52,
+          "B_time": {
+            "exact": "152/3",
+            "decimal": 50.666666666666664
+          }
+        }
+      },
+      "input_sha256": "36278f01ca8eb06cec69f4b1f4d85f093759b3bdf3546a9729aa0792e9b23d78",
+      "editorial_answer": "B",
+      "agrees": true
+    },
+    {
+      "number": 41,
+      "independent_answer": "D",
+      "details": {
+        "max_coupon_count": 5,
+        "max_threshold_discount": 12,
+        "discounted_values_witness": [
+          20,
+          20,
+          35,
+          35,
+          35,
+          35
+        ],
+        "days_witness": [
+          1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "paid": 148,
+        "original_total": {
+          "exact": "300",
+          "decimal": 300.0
+        }
+      },
+      "input_sha256": "912bc586e71fb2e359980a0f99935cf369a6c11270cf77ddd564d231a68ec873",
+      "editorial_answer": "D",
+      "agrees": true
+    },
+    {
+      "number": 42,
+      "independent_answer": "A",
+      "details": {
+        "dissatisfied_counts": [
+          20,
+          160,
+          24,
+          32
+        ],
+        "union_max": 236,
+        "all_satisfied_min": 164,
+        "attainability": "The four dissatisfaction sets are disjoint subsets of 400 households."
+      },
+      "input_sha256": "f58d41ecf63cb159fc14752b28896ab922da6e7f30d5f4c6597313f0b01cc507",
+      "editorial_answer": "A",
+      "agrees": true
+    },
+    {
+      "number": 43,
+      "independent_answer": "D",
+      "details": {
+        "sample_space": 60,
+        "favourable_committees": 22,
+        "probability": {
+          "exact": "11/30",
+          "decimal": 0.36666666666666664
+        },
+        "current_option_values": {
+          "A": {
+            "exact": "9/20",
+            "decimal": 0.45
+          },
+          "B": {
+            "exact": "2/5",
+            "decimal": 0.4
+          },
+          "C": {
+            "exact": "13/30",
+            "decimal": 0.43333333333333335
+          },
+          "D": {
+            "exact": "11/30",
+            "decimal": 0.36666666666666664
+          }
+        },
+        "B_distractor_error": "Forgetting the subtraction of the second complete couple."
+      },
+      "input_sha256": "d8a6aef32ae0e39a9ece37f4387bd03c7c5e3d8b79fa0acb6c39e819e60ae802",
+      "editorial_answer": "D",
+      "agrees": true
+    },
+    {
+      "number": 44,
+      "independent_answer": "B",
+      "details": {
+        "left_count": 100,
+        "right_before_merge": 46,
+        "interior_right_positions_removed": [
+          165,
+          330,
+          495,
+          660,
+          825,
+          990,
+          1155,
+          1320
+        ],
+        "final": 138
+      },
+      "input_sha256": "236f617a80576433f3fc2ca8c5a539a46ece83c622d3d24d612f25c01e4b59fc",
+      "editorial_answer": "B",
+      "agrees": true
+    },
+    {
+      "number": 45,
+      "independent_answer": "C",
+      "details": {
+        "full_permutations": 40320,
+        "valid_permutations": 2880
+      },
+      "input_sha256": "dced279073472a25e81f201a876c0d2a37cfb4bd38b12ea8dec0334e03dfaf19",
+      "editorial_answer": "C",
+      "agrees": true
+    },
+    {
+      "number": 71,
+      "independent_answer": "D",
+      "details": {
+        "material_list": [
+          "岭南特色植物园体系建设工程",
+          "珠三角大美湿地体系建设工程",
+          "粤港澳大湾区内湾绿带工程",
+          "国有林场样板带动工程"
+        ],
+        "reason": "D is absent from the four named projects."
+      },
+      "input_sha256": "3c03756ce0eba0233da2441d1d9e9e3ea5fe5a010d8763d61038075fa868506e",
+      "editorial_answer": "D",
+      "agrees": true
+    },
+    {
+      "number": 72,
+      "independent_answer": "C",
+      "details": {
+        "provided_period": "十四五",
+        "unsupported_option_period": "十三五",
+        "epistemic_scope": "unsupported, not proven factually false"
+      },
+      "input_sha256": "69cb3fb3866878ffd4753c47969ec8b38374467005cafc4faec20efb15e28350",
+      "editorial_answer": "C",
+      "agrees": true
+    },
+    {
+      "number": 73,
+      "independent_answer": "A",
+      "details": {
+        "repair_share_percent": {
+          "exact": "268200/7613",
+          "decimal": 35.22921318796795
+        }
+      },
+      "input_sha256": "55de162f8556d1a11784d1d35aeced02e34f559172755fffb1f5966b0dab0edc",
+      "editorial_answer": "A",
+      "agrees": true
+    },
+    {
+      "number": 74,
+      "independent_answer": "B",
+      "details": {
+        "annual_average_10000_events": {
+          "exact": "739/500",
+          "decimal": 1.478
+        }
+      },
+      "input_sha256": "1a0e6bc7c3434fb6c7d0a65f66fd318f5424933c267a1af423c57f0192e00481",
+      "editorial_answer": "B",
+      "agrees": true
+    },
+    {
+      "number": 75,
+      "independent_answer": "B",
+      "details": {
+        "A_percentage_points": 6,
+        "B_scope_error": "first batch does not establish whole-period total",
+        "C_cities": 3,
+        "D_target_minimum_percent": 5
+      },
+      "input_sha256": "3fbda01eab66b62acbfaa70df43a98969d237adbe4d4055c7b16d68018c1cc58",
+      "editorial_answer": "B",
+      "agrees": true
+    },
+    {
+      "number": 76,
+      "independent_answer": "A",
+      "details": {
+        "current_share": {
+          "exact": "27435/38951",
+          "decimal": 0.7043464866113835
+        },
+        "base_share": {
+          "exact": "1975320/2765521",
+          "decimal": 0.7142668596622481
+        },
+        "change_percentage_points": {
+          "exact": "-2743500/2765521",
+          "decimal": -0.9920373050864557
+        }
+      },
+      "input_sha256": "4f5ce37311edcee6b35b207a10536dba4577acfe580c998b442febc3e6abc8bc",
+      "editorial_answer": "A",
+      "agrees": true
+    },
+    {
+      "number": 77,
+      "independent_answer": "C",
+      "details": {
+        "base_nonresidential_construction_area": {
+          "exact": "1176829630/228723",
+          "decimal": 5145.217708756881
+        }
+      },
+      "input_sha256": "14494787f41f9c7662d6b6c6a757c1f3d06bb227202576cff9b2c85419ade9cc",
+      "editorial_answer": "C",
+      "agrees": true
+    },
+    {
+      "number": 78,
+      "independent_answer": "B",
+      "details": {
+        "individual_component_checks": [
+          {
+            "row_pair": 1,
+            "residential": {
+              "exact": "-3/500",
+              "decimal": -0.006
+            },
+            "nonresidential": {
+              "exact": "4247011/98775125",
+              "decimal": 0.042996766645448437
+            },
+            "residential_faster": false
+          },
+          {
+            "row_pair": 2,
+            "residential": {
+              "exact": "-43/1000",
+              "decimal": -0.043
+            },
+            "nonresidential": {
+              "exact": "-5428230553/117682963000",
+              "decimal": -0.04612588274991003
+            },
+            "residential_faster": true
+          },
+          {
+            "row_pair": 3,
+            "residential": {
+              "exact": "221/1000",
+              "decimal": 0.221
+            },
+            "nonresidential": {
+              "exact": "-180063977/4204679000",
+              "decimal": -0.04282466675815205
+            },
+            "residential_faster": true
+          },
+          {
+            "row_pair": 4,
+            "residential": {
+              "exact": "121/500",
+              "decimal": 0.242
+            },
+            "nonresidential": {
+              "exact": "19770497/51462550",
+              "decimal": 0.38417250991254803
+            },
+            "residential_faster": false
+          },
+          {
+            "row_pair": 5,
+            "residential": {
+              "exact": "147/500",
+              "decimal": 0.294
+            },
+            "nonresidential": {
+              "exact": "628492389/1270622125",
+              "decimal": 0.49463359454723804
+            },
+            "residential_faster": false
+          }
+        ],
+        "count": 2
+      },
+      "input_sha256": "90430055f51df8c340581d6d7e0ee5f3aed04944f120509e1417fa36c3a70be4",
+      "editorial_answer": "B",
+      "agrees": true
+    },
+    {
+      "number": 79,
+      "independent_answer": "A",
+      "details": {
+        "nonresidential_sales_growth_100m_yuan": {
+          "exact": "1256984778/21367175",
+          "decimal": 58.82784120970601
+        }
+      },
+      "input_sha256": "9f45d3e624a66837e718b38a1584414a02fd5c1861c0bf5aad8b70d714d2f673",
+      "editorial_answer": "A",
+      "agrees": true
+    },
+    {
+      "number": 80,
+      "independent_answer": "C",
+      "details": {
+        "inferable": [
+          true,
+          true,
+          false
+        ],
+        "item_3_missing_year": 2021,
+        "item_1_share": {
+          "exact": "1029251/11256246",
+          "decimal": 0.09143821128287352
+        },
+        "item_2_yuan_per_square_metre": {
+          "exact": "209308900000/35916669",
+          "decimal": 5827.625607486039
+        }
+      },
+      "input_sha256": "480cedaba59b6bb629bc3eb8af70dd34bf6b6d1efbd27c77984cb68f40f2e646",
+      "editorial_answer": "C",
+      "agrees": true
+    },
+    {
+      "number": 81,
+      "independent_answer": "A",
+      "details": {
+        "first_half_total": {
+          "exact": "4149/2",
+          "decimal": 2074.5
+        },
+        "monthly_average": {
+          "exact": "1383/4",
+          "decimal": 345.75
+        }
+      },
+      "input_sha256": "fed115ee38a56bca3185d8b595a6e55aaac07be72e8e07f3c029cd5d2f917a82",
+      "editorial_answer": "A",
+      "agrees": true
+    },
+    {
+      "number": 82,
+      "independent_answer": "D",
+      "details": {
+        "unit_price_change_percent": {
+          "exact": "-291900/6869",
+          "decimal": -42.49526859804921
+        }
+      },
+      "input_sha256": "c5d8d2d6f7bd63740842a709a86e6e4e4f1f4b2b6abb0258570ce2d2016d5f45",
+      "editorial_answer": "D",
+      "agrees": true
+    },
+    {
+      "number": 83,
+      "independent_answer": "B",
+      "details": {
+        "q1": {
+          "exact": "21/2",
+          "decimal": 10.5
+        },
+        "q2": {
+          "exact": "193/10",
+          "decimal": 19.3
+        },
+        "qoq_percent": {
+          "exact": "1760/21",
+          "decimal": 83.80952380952381
+        }
+      },
+      "input_sha256": "af09b13407be278f4fadc2a75c316627940e3a99f33205451b5c47ec33742fe7",
+      "editorial_answer": "B",
+      "agrees": true
+    },
+    {
+      "number": 84,
+      "independent_answer": "C",
+      "details": {
+        "unit_prices_yuan": [
+          {
+            "exact": "3125/18",
+            "decimal": 173.61111111111111
+          },
+          {
+            "exact": "32000/193",
+            "decimal": 165.80310880829015
+          },
+          {
+            "exact": "47500/337",
+            "decimal": 140.94955489614244
+          },
+          {
+            "exact": "305000/2047",
+            "decimal": 148.99853444064485
+          },
+          {
+            "exact": "140000/1119",
+            "decimal": 125.11170688114387
+          },
+          {
+            "exact": "760000/5533",
+            "decimal": 137.35767214892462
+          }
+        ],
+        "months_at_or_below_150": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "rounding_scope": "Uses displayed values, explicitly stated in the edited stem.",
+        "April_interval_if_underlying_values_rounded": [
+          {
+            "exact": "1210000/8189",
+            "decimal": 147.75918915618513
+          },
+          {
+            "exact": "410000/2729",
+            "decimal": 150.23818248442652
+          }
+        ]
+      },
+      "input_sha256": "abf5e2bec7a4e96c420e2d203fb82379108c644cc47ab866a49160eccc08589a",
+      "editorial_answer": "C",
+      "agrees": true
+    },
+    {
+      "number": 85,
+      "independent_answer": "D",
+      "details": {
+        "A_base_May_June_amount": {
+          "exact": "2256760/296361",
+          "decimal": 7.6149020957548395
+        },
+        "B_base_January": {
+          "exact": "201600/1067",
+          "decimal": 188.94095595126524
+        },
+        "B_base_February": {
+          "exact": "24125/112",
+          "decimal": 215.40178571428572
+        },
+        "C_base_export_ratio": {
+          "exact": "3932253/1647767",
+          "decimal": 2.386413248960563
+        },
+        "D_both_maximum_month": 6
+      },
+      "input_sha256": "6072cb453b3d3721bf430e7ece59c2d63c02086e8c5133e8a1d5ddce59e7e1b7",
+      "editorial_answer": "D",
+      "agrees": true
+    },
+    {
+      "number": 86,
+      "independent_answer": "C",
+      "details": {
+        "monthly_difference_10000_tonnes": {
+          "exact": "6203/12",
+          "decimal": 516.9166666666666
+        }
+      },
+      "input_sha256": "a413a396b8a245cf04d1d93cabe97bf2bb9e9a08e61141b6c751432abead9778",
+      "editorial_answer": "C",
+      "agrees": true
+    },
+    {
+      "number": 87,
+      "independent_answer": "B",
+      "details": {
+        "national_mean_distance_growth": {
+          "exact": "-1/334",
+          "decimal": -0.0029940119760479044
+        },
+        "other_mean_distance_growth": {
+          "exact": "127/1039",
+          "decimal": 0.12223291626564003
+        }
+      },
+      "input_sha256": "96d8a593bd792e0d2d7d26a1329537bde23ba0aa66db08328fc95c58b79b650e",
+      "editorial_answer": "B",
+      "agrees": true
+    },
+    {
+      "number": 88,
+      "independent_answer": "C",
+      "details": {
+        "2022_national_turnover_share_percent": {
+          "exact": "36265000000/398997159",
+          "decimal": 90.89037147755731
+        }
+      },
+      "input_sha256": "9fd04a9bc81607c5c047281e757fc1ed40debd9856fc159409aa55c18b8a56de",
+      "editorial_answer": "C",
+      "agrees": true
+    },
+    {
+      "number": 89,
+      "independent_answer": "D",
+      "details": {
+        "annual_average_increase_100m_tonnes": {
+          "exact": "48299/30000",
+          "decimal": 1.6099666666666668
+        },
+        "interval_count": 3
+      },
+      "input_sha256": "02fce80a5d0786c7ca23cf20f53e54816a485b17d3a19c2a510c0ece0ac26501",
+      "editorial_answer": "D",
+      "agrees": true
+    },
+    {
+      "number": 90,
+      "independent_answer": "A",
+      "details": {
+        "growth_rates": [
+          {
+            "exact": "31945/409268",
+            "decimal": 0.07805398907317454
+          },
+          {
+            "exact": "14023/441213",
+            "decimal": 0.0317828350479247
+          },
+          {
+            "exact": "5534/113809",
+            "decimal": 0.04862532840109306
+          },
+          {
+            "exact": "5263/119343",
+            "decimal": 0.04409977962679001
+          }
+        ],
+        "trend": [
+          "down",
+          "up",
+          "down"
+        ],
+        "visually_observed_option_trends": {
+          "A": [
+            "down",
+            "up",
+            "down"
+          ],
+          "B": [
+            "up",
+            "down",
+            "down"
+          ],
+          "C": [
+            "down",
+            "down",
+            "up"
+          ],
+          "D": [
+            "down",
+            "up",
+            "up"
+          ]
+        },
+        "original_option_images_viewed": {
+          "A": {
+            "path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s23_p24_i00.png",
+            "sha256": "b18ad67868266c2f89fa917988152d3cb7c7ec214a0acfa7e2e0764b2cd0dbd3"
+          },
+          "B": {
+            "path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s23_p24_i01.png",
+            "sha256": "2ab9ec84dec8604c2ef696b2ad10cfd5ba61edb8a3987cab6c2e13bf8232bc96"
+          },
+          "C": {
+            "path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s23_p24_i02.png",
+            "sha256": "936dd5dad4333e8c16937bbecc1c75cc0b69de3465392695dbbc4956a05741c8"
+          },
+          "D": {
+            "path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s23_p24_i03.png",
+            "sha256": "33a1f41406eb51ebef302efc3e4c1068f64bf2acac2a8c2001c5850eb2411fc5"
+          }
+        }
+      },
+      "input_sha256": "9000bb745230b2539a8b6893a6d70b6c8e331ad45e6b46f88f52329f520e3399",
+      "editorial_answer": "A",
+      "agrees": true
+    }
+  ]
+}
