@@ -1,0 +1,73 @@
+name: Revise M04 v0.2.0
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '广东行测18套模拟/M04/revise_m04_v020.py'
+      - '.github/workflows/revise-m04-v020.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: m04-v020-revision
+  cancel-in-progress: false
+
+jobs:
+  revise:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /README.md
+            /协作原则_指月之指非月.md
+            /广东行测18套模拟/
+            /江浙行测_AI题库/
+            /模考/2026下半年广东卷_16-33季_AI可读/
+            /国考/言语理解/2016-2025/
+            /广东/行测/2022-2026/
+            /学习资料/政治理论常识/
+            /广东行测24天集训/
+            /习题本/图推/
+            !*.pdf
+            !*.zip
+            /广东行测18套模拟/M04/审阅排版/M04_题本_打印版.pdf
+      - name: Preserve the exact external review, without merging other papers
+        shell: bash
+        run: |
+          set -euo pipefail
+          review=d539f18064e429e3e002f9c9315546c942618e8b
+          git fetch --no-tags --depth=1 origin "$review"
+          git restore --source="$review" --worktree -- \
+            '广东行测18套模拟/Claude意见要点.md' \
+            '广东行测18套模拟/M04/Claude审核意见.md' \
+            '广东行测18套模拟/M04/核验记录/claude_review'
+      - name: Install numeric-check dependency
+        run: python3 -m pip install --disable-pip-version-check 'numpy==2.2.6'
+      - name: Apply revision, rebuild, and verify
+        run: python3 '广东行测18套模拟/M04/revise_m04_v020.py'
+      - name: Commit only validated M04 outputs and project entries
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add -A -- \
+            'README.md' \
+            '广东行测18套模拟/README.md' \
+            '广东行测18套模拟/选编意图与改题边界.md' \
+            '广东行测18套模拟/用题登记.jsonl' \
+            '广东行测18套模拟/Claude意见要点.md' \
+            '广东行测18套模拟/M04'
+          if git diff --cached --quiet; then exit 0; fi
+          git diff --cached --name-only -z | python3 -c 'import sys; paths=sys.stdin.buffer.read().decode().split("\0"); allowed=["README.md","广东行测18套模拟/README.md","广东行测18套模拟/选编意图与改题边界.md","广东行测18套模拟/用题登记.jsonl","广东行测18套模拟/Claude意见要点.md"]; assert all(not p or p in allowed or p.startswith("广东行测18套模拟/M04/") for p in paths),paths'
+          git fetch --no-tags origin main
+          test "$(git rev-parse origin/main)" = "$(git rev-parse HEAD)"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'M04 0.2.0：恢复言语判推原题、纠正48题、换题与增量审核交接'
+          git push origin HEAD:main
