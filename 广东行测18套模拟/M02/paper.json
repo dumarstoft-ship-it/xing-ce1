@@ -1,0 +1,23 @@
+{
+  "paper_id": "M02",
+  "version": "0.1.0",
+  "source_snapshot": "5800414d9cb40bfcfe66888eb87bb44631eac38f",
+  "target_question_count": 90,
+  "missing_numbers": [],
+  "completed_section_counts": {
+    "政治理论": 10,
+    "常识应用": 5,
+    "言语理解与表达": 15,
+    "数量关系": 15,
+    "判断推理": 20,
+    "科学推理": 5,
+    "资料分析": 20
+  },
+  "date": "2026-11-15",
+  "date_timezone": "Asia/Shanghai",
+  "status": "editor_checked_review_draft",
+  "external_review": "pending_claude",
+  "printing_status": "not_started",
+  "display_status": "90题已编齐并经编辑核验；待Claude独立审核，尚非打印定稿。",
+  "structure_basis": "沿用项目近年广东90题结构；不承诺未来考试固定题量。"
+}

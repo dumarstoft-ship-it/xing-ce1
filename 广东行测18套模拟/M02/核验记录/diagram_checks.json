@@ -1,0 +1,270 @@
+{
+  "Q48_enclosed_regions": [
+    5,
+    4,
+    5,
+    4,
+    5,
+    5,
+    4,
+    4,
+    5
+  ],
+  "Q50_net_transcription": {
+    "A": [
+      {
+        "xy": [
+          0,
+          0
+        ],
+        "pattern": "F",
+        "orientation": null
+      },
+      {
+        "xy": [
+          1,
+          0
+        ],
+        "pattern": "O",
+        "orientation": null
+      },
+      {
+        "xy": [
+          2,
+          0
+        ],
+        "pattern": "L",
+        "orientation": "left"
+      },
+      {
+        "xy": [
+          3,
+          0
+        ],
+        "pattern": "G",
+        "orientation": null
+      },
+      {
+        "xy": [
+          0,
+          -1
+        ],
+        "pattern": "M",
+        "orientation": "vertical"
+      },
+      {
+        "xy": [
+          1,
+          1
+        ],
+        "pattern": "D",
+        "orientation": "left"
+      }
+    ],
+    "B": [
+      {
+        "xy": [
+          0,
+          0
+        ],
+        "pattern": "F",
+        "orientation": null
+      },
+      {
+        "xy": [
+          1,
+          0
+        ],
+        "pattern": "D",
+        "orientation": "left"
+      },
+      {
+        "xy": [
+          2,
+          0
+        ],
+        "pattern": "L",
+        "orientation": "down"
+      },
+      {
+        "xy": [
+          3,
+          0
+        ],
+        "pattern": "M",
+        "orientation": "horizontal"
+      },
+      {
+        "xy": [
+          1,
+          -1
+        ],
+        "pattern": "G",
+        "orientation": null
+      },
+      {
+        "xy": [
+          2,
+          1
+        ],
+        "pattern": "O",
+        "orientation": null
+      }
+    ],
+    "C": [
+      {
+        "xy": [
+          0,
+          0
+        ],
+        "pattern": "G",
+        "orientation": null
+      },
+      {
+        "xy": [
+          1,
+          0
+        ],
+        "pattern": "M",
+        "orientation": "vertical"
+      },
+      {
+        "xy": [
+          1,
+          1
+        ],
+        "pattern": "F",
+        "orientation": null
+      },
+      {
+        "xy": [
+          2,
+          1
+        ],
+        "pattern": "O",
+        "orientation": null
+      },
+      {
+        "xy": [
+          3,
+          1
+        ],
+        "pattern": "L",
+        "orientation": "left"
+      },
+      {
+        "xy": [
+          2,
+          2
+        ],
+        "pattern": "D",
+        "orientation": "left"
+      }
+    ],
+    "D": [
+      {
+        "xy": [
+          0,
+          0
+        ],
+        "pattern": "F",
+        "orientation": null
+      },
+      {
+        "xy": [
+          1,
+          0
+        ],
+        "pattern": "D",
+        "orientation": "left"
+      },
+      {
+        "xy": [
+          2,
+          0
+        ],
+        "pattern": "L",
+        "orientation": "up"
+      },
+      {
+        "xy": [
+          1,
+          -1
+        ],
+        "pattern": "O",
+        "orientation": null
+      },
+      {
+        "xy": [
+          2,
+          1
+        ],
+        "pattern": "G",
+        "orientation": null
+      },
+      {
+        "xy": [
+          3,
+          1
+        ],
+        "pattern": "M",
+        "orientation": "vertical"
+      }
+    ]
+  },
+  "Q50_A_to_each_proper_rotation": {
+    "A": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "B": null,
+    "C": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        -1,
+        0,
+        0
+      ]
+    ],
+    "D": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  "Q50_boundary": "网格坐标与图案朝向人工目视转录；程序核验折叠和24种正旋转，不等同于自动图像识别。"
+}

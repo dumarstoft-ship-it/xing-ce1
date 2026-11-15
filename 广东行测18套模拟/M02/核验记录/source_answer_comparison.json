@@ -1,0 +1,202 @@
+{
+  "matched_count": 28,
+  "comparisons": [
+    {
+      "number": 16,
+      "source_id": "ZJ2025-A类-022",
+      "source_answer": "A",
+      "editor_answer": "A",
+      "match": true
+    },
+    {
+      "number": 17,
+      "source_id": "ZJ2025-A类-028",
+      "source_answer": "C",
+      "editor_answer": "C",
+      "match": true
+    },
+    {
+      "number": 18,
+      "source_id": "GKYY-2024-005",
+      "source_answer": "D",
+      "editor_answer": "D",
+      "match": true
+    },
+    {
+      "number": 19,
+      "source_id": "JS2025-A类-045",
+      "source_answer": "B",
+      "editor_answer": "B",
+      "match": true
+    },
+    {
+      "number": 20,
+      "source_id": "GKYY-2024-043",
+      "source_answer": "A",
+      "editor_answer": "A",
+      "match": true
+    },
+    {
+      "number": 21,
+      "source_id": "JS2025-A类-021",
+      "source_answer": "C",
+      "editor_answer": "C",
+      "match": true
+    },
+    {
+      "number": 22,
+      "source_id": "JS2025-A类-022",
+      "source_answer": "B",
+      "editor_answer": "B",
+      "match": true
+    },
+    {
+      "number": 23,
+      "source_id": "GKYY-2024-028",
+      "source_answer": "B",
+      "editor_answer": "B",
+      "match": true
+    },
+    {
+      "number": 24,
+      "source_id": "JS2025-A类-026",
+      "source_answer": "D",
+      "editor_answer": "D",
+      "match": true
+    },
+    {
+      "number": 25,
+      "source_id": "ZJ2025-A类-035",
+      "source_answer": "D",
+      "editor_answer": "D",
+      "match": true
+    },
+    {
+      "number": 26,
+      "source_id": "JS2025-A类-035",
+      "source_answer": "B",
+      "editor_answer": "B",
+      "match": true
+    },
+    {
+      "number": 27,
+      "source_id": "ZJ2025-A类-040",
+      "source_answer": "D",
+      "editor_answer": "D",
+      "match": true
+    },
+    {
+      "number": 28,
+      "source_id": "GKYY-2024-023",
+      "source_answer": "B",
+      "editor_answer": "B",
+      "match": true
+    },
+    {
+      "number": 29,
+      "source_id": "JS2025-A类-032",
+      "source_answer": "D",
+      "editor_answer": "D",
+      "match": true
+    },
+    {
+      "number": 30,
+      "source_id": "GKYY-2024-058",
+      "source_answer": "C",
+      "editor_answer": "C",
+      "match": true
+    },
+    {
+      "number": 51,
+      "source_id": "JS2024-A类-091",
+      "source_answer": "B",
+      "editor_answer": "B",
+      "match": true
+    },
+    {
+      "number": 52,
+      "source_id": "JS2023-A类-092",
+      "source_answer": "B",
+      "editor_answer": "B",
+      "match": true
+    },
+    {
+      "number": 54,
+      "source_id": "JS2023-A类-095",
+      "source_answer": "D",
+      "editor_answer": "D",
+      "match": true
+    },
+    {
+      "number": 55,
+      "source_id": "ZJ2024-A类-107",
+      "source_answer": "C",
+      "editor_answer": "C",
+      "match": true
+    },
+    {
+      "number": 56,
+      "source_id": "JS2025-A类-095",
+      "source_answer": "C",
+      "editor_answer": "C",
+      "match": true
+    },
+    {
+      "number": 57,
+      "source_id": "JS2023-A类-099",
+      "source_answer": "A",
+      "editor_answer": "A",
+      "match": true
+    },
+    {
+      "number": 58,
+      "source_id": "ZJ2024-A类-105",
+      "source_answer": "B",
+      "editor_answer": "B",
+      "match": true
+    },
+    {
+      "number": 59,
+      "source_id": "ZJ2023-A类-101",
+      "source_answer": "D",
+      "editor_answer": "D",
+      "match": true
+    },
+    {
+      "number": 60,
+      "source_id": "JS2023-A类-096",
+      "source_answer": "A",
+      "editor_answer": "A",
+      "match": true
+    },
+    {
+      "number": 61,
+      "source_id": "ZJ2023-A类-107",
+      "source_answer": "D",
+      "editor_answer": "D",
+      "match": true
+    },
+    {
+      "number": 62,
+      "source_id": "ZJ2024-A类-103",
+      "source_answer": "D",
+      "editor_answer": "D",
+      "match": true
+    },
+    {
+      "number": 63,
+      "source_id": "JS2023-A类-100",
+      "source_answer": "C",
+      "editor_answer": "C",
+      "match": true
+    },
+    {
+      "number": 64,
+      "source_id": "JS2025-A类-101",
+      "source_answer": "A",
+      "editor_answer": "A",
+      "match": true
+    }
+  ],
+  "limits": "有源参考答案的28题另行比对；参考答案不等于官方答案，不以相同字母代替解题核验。"
+}
