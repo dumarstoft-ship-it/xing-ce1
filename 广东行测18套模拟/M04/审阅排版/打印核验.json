@@ -1,0 +1,187 @@
+{
+  "paper_id": "M04",
+  "version": "0.1.0",
+  "status": "review_pdf_visual_checked_pending_claude",
+  "pdf_sha256": "d3029686c89f878cc839edb486cd85758aee7cb5bc263a9c91e1a76f5334999f",
+  "question_jsonl_sha256": "1ac5d186100f2a071a193aafba0562d026aa2b263b76edee701647fde00390c7",
+  "pdf_pages": 32,
+  "body_pages": 30,
+  "auto_text_check": "题干、选项、资料文字按序与题目.jsonl一致，表格数值逐格出现；共577个片段",
+  "all_pages_actually_viewed": true,
+  "actual_visual_coverage": {
+    "verbal_reviewer": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "root": [
+      14,
+      15,
+      16,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "reasoning_reviewer": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ]
+  },
+  "final_revision_changed_pages": [
+    23
+  ],
+  "unchanged_pages_pixel_equal_to_reviewed_images": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "changed_pages_rechecked": {
+    "23": "reasoning审读者实际复看final-23.png，发言与设问分段恢复"
+  },
+  "additional_final_pages_rechecked": [
+    31,
+    32
+  ],
+  "embedded_fonts": [
+    {
+      "pdf_font_name": "DVSNUJ+ZG-Hei",
+      "embedded_postscript_name": "FZHTJW--GB1-0"
+    },
+    {
+      "pdf_font_name": "QDTMZR+ZG-LatinB-Bold",
+      "embedded_postscript_name": "LiberationSerif-Bold"
+    },
+    {
+      "pdf_font_name": "PFSLNT+ZG-Kai",
+      "embedded_postscript_name": "FZKTJW--GB1-0"
+    },
+    {
+      "pdf_font_name": "GNZDQB+ZG-Latin",
+      "embedded_postscript_name": "LiberationSerif"
+    },
+    {
+      "pdf_font_name": "DVSNUJ+ZG-Hei",
+      "embedded_postscript_name": "FZHTJW--GB1-0"
+    },
+    {
+      "pdf_font_name": "QDTMZR+ZG-LatinB-Bold",
+      "embedded_postscript_name": "LiberationSerif-Bold"
+    },
+    {
+      "pdf_font_name": "YDUJEG+ZG-Song",
+      "embedded_postscript_name": "FZSSJW--GB1-0"
+    },
+    {
+      "pdf_font_name": "GNZDQB+ZG-Latin",
+      "embedded_postscript_name": "LiberationSerif"
+    },
+    {
+      "pdf_font_name": "FQQZVM+ZG-RareSong",
+      "embedded_postscript_name": "NotoSerifCJKjp-Regular"
+    },
+    {
+      "pdf_font_name": "EKTXAY+ZG-Latin-Oblique",
+      "embedded_postscript_name": "LiberationSerif"
+    }
+  ],
+  "rare_character_fallback": [
+    {
+      "pdf_page": 12,
+      "text": "岕",
+      "font": "ZG-RareSong"
+    }
+  ],
+  "resolved_layout_issues": [
+    "分数改为稳定的行内上下结构",
+    "方正GB2312缺岕，单字以Noto Serif CJK补字",
+    "64题保留源输入的发言及设问换段",
+    "铁路材料与5题保持同页"
+  ],
+  "open_visual_issues": [],
+  "formal_finalized": false,
+  "external_review": "not_started",
+  "rendering": "WeasyPrint 70 with shared public exam CSS; original shared tooling unchanged",
+  "page_png_sha256": {
+    "1": "e1ccf8b10387e870a14f79ae1562c9176c383146a00725abe80d2ea569d5bd0b",
+    "2": "1e1f7a54eaf0891e2ade04afc0fe743f6f0bc0accc0ad6fd70b9971918f42b5e",
+    "3": "70147d27d6cebb1e130eee1a213317a5b2e4da854c22833f62308550dabef697",
+    "4": "54940e4c4af41038250d2b4c04b88f185fecc2879e4f9f402a7107e722d7fc7c",
+    "5": "f4718726ee389817cf95b7876ce807b555a0f9e339e61ff304af98f40ff6177f",
+    "6": "6ec5c0385fe2ab728c3fcbc3e7b3eed2d9506e12f38432ab351c1fd1c7270f18",
+    "7": "ee07ee5a5397cf8de2698f492d5f1a35ef5795a516cdea85dd9f658ec4c58d85",
+    "8": "912a969ade3a7001004dbd762ef980c52b34cee90941e78be40051b7f5d356f6",
+    "9": "881287983ce68d9a45dce1b1a40bc593f630de5c69b108182c73b3a3039e5da4",
+    "10": "36db10552bc02cd0326900d4fb272223cc048ce1bbd65988c91fdb5e3d7ecff8",
+    "11": "d6d5321cb32b35b7ecc0606bf9037280ea9676b2aad01bbfcb046802d95cf714",
+    "12": "6a05a1860381bc27c419828639098ed89dc619eeb219a78f53a4975d2ca7f1cd",
+    "13": "9f76cd6b23ffdcb4b7f6503b1c41ce428c017a643c94c76aa15e86b0890b4aaa",
+    "14": "63e23e073ac140c036f0a383e45bc7a89814a725590d6cf9544d55d601980145",
+    "15": "9f15a4878523ae0dc7def9d9c28e5b2e02ba895a9d3120d5738af72d1e791ff4",
+    "16": "b1e9b565d9609c65e7270f6f659dff5c32234dc2396980590d34d81090dfb490",
+    "17": "8ed4927fb51b6fc50d72dbadd5d79c746a85e6774f90d1079537dd3f0a99e3ef",
+    "18": "9de93f374f68bedb0853332ac9c45a4ffe630dbd201c04599979885f06bb68c6",
+    "19": "806a90dc5059e18c495765dc239eb45300b04365dde260d29e132a9ee87cbdef",
+    "20": "6acd6d301a670071be487342969b5eea15071c669c9c0eb422bbf7f888dd9e67",
+    "21": "3e49a72b561160e94a5c0827dfbbe52a1efb32c248bdb532c4616e466823e6eb",
+    "22": "c3772ec9766392e14efa1e7feae524ef5267b01e47018e4653247a8cf54d4238",
+    "23": "19e912d98c24eeab7a0a0f465265575defa7863f94a1ad371572da8b63c78d08",
+    "24": "d7759d805e1d778cb12cbe2b82fc519d077b0451b0e8ae437223fdb8d3935f9c",
+    "25": "04f678062fff260c061096b1dae19a08c0fbc241c26053f091fc69ef7de53760",
+    "26": "8d54f5ec1ba434ee86933cf3afd36060fd6f650d64c5e0ebd2385e3fd4faa480",
+    "27": "7cb381fcda4a7d2f807d6e69afa935c3741bf953bd22f850c13f89885d879402",
+    "28": "6535dfd8a124746db3c1af8bd507b49037fcd24973a2f21e5a3826d3bb1e1283",
+    "29": "9f424230c07d404c15a93000ce4b1c367509efeea93d1daeaa08be0b2d1f6c7c",
+    "30": "759977e9d86b3c0275c9dec07be8e396a5c437a4ab27a92091a5e6dd06a0db30",
+    "31": "0cb5093c4cede4c7a88d95a62e348538c581ca950037d98b2d6b765039cf5fc9",
+    "32": "430724c238a514a7d3bb6d2679354de4fb39a0d48ace862eaecc4274122f17a6"
+  }
+}

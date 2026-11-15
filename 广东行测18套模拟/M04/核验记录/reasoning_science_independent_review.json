@@ -1,0 +1,233 @@
+{
+  "reviewer": "verbal 模块代理独立盲审",
+  "scope": "51–70；先存独立作答，再打开作者答案与解析。",
+  "results": [
+    {
+      "number": 51,
+      "independent_answer": "A",
+      "reasoning": "事立→心立不能逆否为不事立→不必心立；B、D分别是题面两条条件的逆否，C直接成立。",
+      "author_answer": "A",
+      "agrees": true
+    },
+    {
+      "number": 52,
+      "independent_answer": "C",
+      "reasoning": "中国只占全球植被面积6.6%，却贡献全球新增绿化净面积25%，直接支撑中国贡献突出。",
+      "author_answer": "C",
+      "agrees": true
+    },
+    {
+      "number": 53,
+      "independent_answer": "D",
+      "reasoning": "D是题设长期对照观察最可能产生的发病记录，且唯一病例另有遗传原因；A否定关节摩擦这一机制，不能直接建立两个变量不存在明显相关。D未交代对照组，故只视为四选项中最可能的论据，不说其单独足以证明完整研究结论。",
+      "author_answer": "D",
+      "agrees": true
+    },
+    {
+      "number": 54,
+      "independent_answer": "B",
+      "reasoning": "实验只喝一次且剂量远低于真正狂饮，未真正检验短期狂饮，不能以其阴性结果推出只有长期饮酒才有响应。",
+      "author_answer": "B",
+      "agrees": true
+    },
+    {
+      "number": 55,
+      "independent_answer": "C",
+      "reasoning": "原结论以保持自然植被及枯落物层完整为必要条件；没有该条件，人工生态毯仍能有效遏制流失，是直接反例。",
+      "author_answer": "C",
+      "agrees": true
+    },
+    {
+      "number": 56,
+      "independent_answer": "C",
+      "reasoning": "乙与丙同为党员，否则不够3名党员；丁不是党员而甲是。唯一教授是组长，所以丁不是教授，只能为男性。甲乙同性且男性仅2名，甲乙均女，丙为另一男性。组长为兼具男性党员教授的丙。",
+      "author_answer": "C",
+      "agrees": true
+    },
+    {
+      "number": 57,
+      "independent_answer": "A",
+      "reasoning": "题目指标是投诉量/消费人次。人次更多只能解释投诉绝对量增加，不能解释投诉率上升。",
+      "author_answer": "A",
+      "agrees": true
+    },
+    {
+      "number": 58,
+      "independent_answer": "B",
+      "reasoning": "方言多在私人场合使用，不影响公共和正式场合推广普通话，直接否定两个用途之间存在必然冲突。",
+      "author_answer": "B",
+      "agrees": true
+    },
+    {
+      "number": 59,
+      "independent_answer": "C",
+      "reasoning": "若焚烧发电所需最低热值超过4 MJ/kg，则处理后的餐厨垃圾3–4 MJ/kg仍达不到要求，补足能量值与适宜性之间缺少的标准。",
+      "author_answer": "C",
+      "agrees": true
+    },
+    {
+      "number": 60,
+      "independent_answer": "D",
+      "reasoning": "丁若瘦则所说乙瘦为真，乙真又推出丙瘦，超过2名；故丁胖。乙若瘦，则丙瘦且1.72，甲胖需≥1.70，剩余乙1.65、丁1.68，反使丁的陈述为真，矛盾。故乙丁胖，甲丙瘦。唯一解甲1.65瘦、乙1.72胖、丙1.70瘦、丁1.68胖。穷举24×6种配置确认。",
+      "author_answer": "D",
+      "agrees": true
+    },
+    {
+      "number": 61,
+      "independent_answer": "D",
+      "reasoning": "乙否认甲提问所预设的已阅读/已购买对象；D用实际买洗衣机否定已买冰箱的预设。",
+      "author_answer": "D",
+      "agrees": true
+    },
+    {
+      "number": 62,
+      "independent_answer": "A",
+      "reasoning": "重金属超标危及健康，直接反驳所有适龄儿童都可放心使用；B、C不直接推翻安全性，D超出适龄范围。",
+      "author_answer": "A",
+      "agrees": true
+    },
+    {
+      "number": 63,
+      "independent_answer": "C",
+      "reasoning": "按序回溯每个位置不能等于前3节，固定8个位置，枚举得唯一序列：红黄绿蓝橙黄绿蓝橙红绿黄橙蓝绿黄红橙蓝绿。因此第12节为黄，其他三项均错。",
+      "author_answer": "C",
+      "agrees": true
+    },
+    {
+      "number": 64,
+      "independent_answer": "B",
+      "reasoning": "从未观察到存在的证据直接推断不存在；B从没见老王家人出门推断没人出门，最接近。",
+      "author_answer": "B",
+      "agrees": true
+    },
+    {
+      "number": 65,
+      "independent_answer": "A",
+      "reasoning": "把包含关系的上位概念与其下位概念并列；易燃、易爆属于危险品，与鸡、鸭属于家禽一致。",
+      "author_answer": "A",
+      "agrees": true
+    },
+    {
+      "number": 66,
+      "independent_answer": "D",
+      "reasoning": "已看原图，A在下、B在上，F作用于A向右。静止时B无水平受力，A受地面摩擦；共同加速时B受向右静摩擦f=m_B a。滑动后地面动摩擦恒定且F继续逐渐增大，所以a及B所受静摩擦持续增大。",
+      "author_answer": "D",
+      "agrees": true
+    },
+    {
+      "number": 67,
+      "independent_answer": "A",
+      "reasoning": "已看原电路图。理想电流表短接、理想电压表断路后，L1与L2串联，L3与该串联支路并联。A1=A2=U/(2R)，A3=U/R；V1=V2=U/2，V3=U最大，因此A错误。",
+      "author_answer": "A",
+      "agrees": true
+    },
+    {
+      "number": 68,
+      "independent_answer": "D",
+      "reasoning": "②硫酸钡难溶水、⑤金的延展性、⑥干冰升华均不形成新物质，属物理性质。③碳酸钙溶于酸发生反应。",
+      "author_answer": "D",
+      "agrees": true
+    },
+    {
+      "number": 69,
+      "independent_answer": "C",
+      "reasoning": "两只长翅亲本出现残翅后代，在题设单对常染色体等位基因的孟德尔模型下，长翅显性，亲本均Aa，残翅aa，为隐性。",
+      "author_answer": "C",
+      "agrees": true
+    },
+    {
+      "number": 70,
+      "independent_answer": "A",
+      "reasoning": "海陆温度随昼夜变化幅度不同来自热学性质不同，形成气压差与海陆风。气流总体由高压向低压，日夜表面温度差的方向不可倒置。",
+      "author_answer": "A",
+      "agrees": true
+    }
+  ],
+  "summary": "20/20与当前编辑答案一致。没有发现答案多解或必须替换的逻辑缺陷。60、63额外穷举确认唯一解；66、67已看原图并对照重绘图。",
+  "issues": [
+    {
+      "number": 60,
+      "severity": "排版必改",
+      "suggestion": "在丁的陈述末尾“偏瘦。”后另起段，将“如果体型偏瘦的说真话……”从丁的引语中分离。"
+    },
+    {
+      "number": 64,
+      "severity": "排版",
+      "suggestion": "小朱与小李的发言分行。"
+    },
+    {
+      "number": 67,
+      "severity": "图面细节",
+      "suggestion": "q67_circuit.png的L₂、L₃标签下缘与水平导线相接，建议上移标签或放到灯泡旁稍高处。电路连接本身与原图一致。"
+    }
+  ],
+  "resolved_concerns": [
+    {
+      "number": 53,
+      "finding": "D只报告实验组，原本担心解析可能夸大其证据强度；当前解析已准确限制为“最可能的实验观察”，未补造对照组，也区分机制解释与统计相关，可以保留。"
+    },
+    {
+      "number": 66,
+      "finding": "题面已明确F始终逐渐增大、地面均匀且A/B相对静止，运动后B静摩擦不断增大充分成立。"
+    }
+  ],
+  "figure_review": {
+    "seen_source": [
+      66,
+      67
+    ],
+    "seen_redrawn": [
+      63,
+      66,
+      67
+    ],
+    "q63": "重绘位置与题面8个指定色位置及路线相符；未单独看原始63扫描图，不把此项标为原图逐线复核。",
+    "not_reviewed": [
+      46,
+      47,
+      48,
+      49,
+      50
+    ]
+  },
+  "enumeration": {
+    "q60_unique_model": {
+      "甲": "1.65米，瘦",
+      "乙": "1.72米，胖",
+      "丙": "1.70米，瘦",
+      "丁": "1.68米，胖"
+    },
+    "q63_unique_sequence": [
+      "红",
+      "黄",
+      "绿",
+      "蓝",
+      "橙",
+      "黄",
+      "绿",
+      "蓝",
+      "橙",
+      "红",
+      "绿",
+      "黄",
+      "橙",
+      "蓝",
+      "绿",
+      "黄",
+      "红",
+      "橙",
+      "蓝",
+      "绿"
+    ]
+  },
+  "editor_followup": {
+    "reported_by": "reasoning_science代理",
+    "items": [
+      60,
+      64,
+      67
+    ],
+    "status": "编辑报告已修正并逐图复看；本盲审答案及电路拓扑判断不变。",
+    "report": "核验记录/reasoning_science_verification.md"
+  }
+}

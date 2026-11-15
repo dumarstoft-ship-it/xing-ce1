@@ -1,0 +1,3093 @@
+{
+  "scanned_files": [
+    "M01/科推5题_恢复候选.json",
+    "M01/核验报告.json",
+    "M01/来源登记.jsonl",
+    "M01/题目.jsonl",
+    "M01/science_selection_v2.json",
+    "M01/review_v3_changes.json",
+    "M01/paper.json",
+    "M01/selection.json",
+    "M01/核验记录/old_graphic_source_ids.json",
+    "M01/核验记录/verbal_review_blind.json",
+    "M01/核验记录/Claude意见处理核验.json",
+    "M01/核验记录/politics_review_resolution.json",
+    "M01/核验记录/quant_data_prior_exposure_scan.json",
+    "M01/核验记录/judgment_prior_exposure_scan.json",
+    "M01/核验记录/科推重选核验.json",
+    "M01/核验记录/quant_data_verification.json",
+    "M01/核验记录/修订构建复检.json",
+    "M01/核验记录/judgment_verification.json",
+    "M01/核验记录/assembly_review.json",
+    "M01/核验记录/judgment_logic_review.json",
+    "M01/核验记录/verbal_national_provenance.json",
+    "M01/核验记录/politics_independent_answers.json",
+    "M01/核验记录/politics_review.json",
+    "M01/核验记录/science_model_checks.json",
+    "M01/核验记录/verbal_independent_answers.json",
+    "M01/核验记录/judgment_logic_review_blind.json",
+    "M01/核验记录/verbal_review.json",
+    "M01/核验记录/格式修订日志_v0.3.0.json",
+    "M01/打印版/排版日志.json",
+    "M01/核验记录/claude_review/claude_review.json",
+    "M01/打印版/历史版本/排版日志_v0.2.0.json",
+    "M02/核验报告.json",
+    "M02/politics_original.json",
+    "M02/工作断点.json",
+    "M02/来源登记.jsonl",
+    "M02/题目.jsonl",
+    "M02/paper.json",
+    "M02/撤题记录.json",
+    "M02/editorial.json",
+    "M02/选编断点_75题.json",
+    "M02/selection.json",
+    "M02/核验记录/diagram_checks.json",
+    "M02/核验记录/numeric_checks.json",
+    "M02/核验记录/politics_references.json",
+    "M02/核验记录/修订基线.json",
+    "M02/核验记录/layout_log.json",
+    "M02/核验记录/交付核验.json",
+    "M02/核验记录/source_answer_comparison.json",
+    "M02/核验记录/审核处理变更.json",
+    "M02/编辑底稿/16-45.jsonl",
+    "M02/编辑底稿/46-90.jsonl",
+    "M02/核验记录/claude_review/claude_review.json",
+    "M02/核验记录/历史_v0.1.0/numeric_checks.json",
+    "M02/核验记录/历史_v0.1.0/politics_references.json",
+    "M02/核验记录/历史_v0.1.0/layout_log.json",
+    "M02/核验记录/历史_v0.1.0/交付核验.json",
+    "M02/核验记录/历史_v0.1.0/source_answer_comparison.json",
+    "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+    "M03/核验报告.json",
+    "M03/来源登记.jsonl",
+    "M03/题目.jsonl",
+    "M03/paper.json",
+    "M03/selection.json",
+    "M03/修订底稿/v020_science_patch.json",
+    "M03/修订底稿/v020_quant_data_patch.json",
+    "M03/修订底稿/v020_verbal_politics_patch.json",
+    "M03/修订底稿/v020_reasoning_patch.json",
+    "M03/核验记录/q69_foodweb_edges.json",
+    "M03/核验记录/政治常识依据.json",
+    "M03/核验记录/v020_revision_manifest.json",
+    "M03/核验记录/v020_q35_layout_check.json",
+    "M03/核验记录/v020_science_diagrams.json",
+    "M03/核验记录/交付核验.json",
+    "M03/核验记录/v020_revision_check.json",
+    "M03/核验记录/v020_quant_data_check.json",
+    "M03/核验记录/q50_spatial_review.json",
+    "M03/核验记录/science_independent_answers_before_compare.json",
+    "M03/核验记录/science_independent_check.json",
+    "M03/编辑底稿/quant_data.json",
+    "M03/编辑底稿/quant_data_check.json",
+    "M03/编辑底稿/quant_data_exposure.json",
+    "M03/编辑底稿/reasoning_verification.json",
+    "M03/编辑底稿/verbal.json",
+    "M03/编辑底稿/originals_science.json",
+    "M03/编辑底稿/reasoning.json",
+    "M03/历史版本/0.1.0/核验报告.json",
+    "M03/历史版本/0.1.0/paper.json",
+    "M03/历史版本/0.1.0/selection.json",
+    "M03/历史版本/0.1.0/核验记录/交付核验.json",
+    "M03/历史版本/0.1.0/编辑底稿/quant_data_check.json",
+    "M03/历史版本/0.1.0/编辑底稿/reasoning_verification.json",
+    "M03/核验记录/claude_review/claude_review.json",
+    "M03/核验记录/claude_review/verbal/review_comparison.json",
+    "M03/核验记录/claude_review/verbal/gk_pdf_compare.json",
+    "M03/核验记录/claude_review/verbal/pdf_sources_verified.json",
+    "M03/核验记录/claude_review/verbal/stem_diff.json",
+    "M03/核验记录/claude_review/verbal/jz_pdf_compare.json",
+    "M03/核验记录/claude_review/blind/pol.json",
+    "M03/核验记录/claude_review/blind/data.json",
+    "M03/核验记录/claude_review/blind/fig.json",
+    "M03/核验记录/claude_review/blind/logic.json",
+    "M03/核验记录/claude_review/blind/verbal.json",
+    "M03/核验记录/claude_review/blind/sci.json",
+    "M03/核验记录/claude_review/blind/quant.json",
+    "M03/核验记录/claude_review/logic/compare_51_65.json",
+    "M03/核验记录/claude_review/quant/verify_q31_45_result.json",
+    "M03/核验记录/claude_review/quant/q35_fix_prototype.json",
+    "M03/核验记录/claude_review/quant/q35_legibility.json",
+    "M03/核验记录/claude_review/sci/compare_after_blind.json",
+    "M03/核验记录/claude_review/fig/q50_readings.json",
+    "M03/核验记录/claude_review/fig/q49_fit_results.json",
+    "M03/核验记录/claude_review/fig/q50_hidden.json",
+    "M03/核验记录/claude_review/fig/q47_grids.json",
+    "M03/核验记录/claude_review/politics/option_discrimination.out.json",
+    "M03/核验记录/claude_review/politics/provenance_page_check.out.json",
+    "M03/核验记录/claude_review/politics/web_evidence.json"
+  ],
+  "source_ids": {
+    "GKYY-2020-004": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/历史版本/0.1.0/核验记录/交付核验.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/claude_review/verbal/stem_diff.json",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/核验记录/交付核验.json",
+      "M03/编辑底稿/verbal.json",
+      "用题登记.jsonl"
+    ],
+    "GKYY-2020-027": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/历史版本/0.1.0/核验记录/交付核验.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/claude_review/verbal/stem_diff.json",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/核验记录/交付核验.json",
+      "M03/编辑底稿/verbal.json",
+      "用题登记.jsonl"
+    ],
+    "GKYY-2021-025": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/历史版本/0.1.0/核验记录/交付核验.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/claude_review/verbal/stem_diff.json",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/核验记录/交付核验.json",
+      "M03/编辑底稿/verbal.json",
+      "用题登记.jsonl"
+    ],
+    "GKYY-2021-044": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/历史版本/0.1.0/核验记录/交付核验.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/claude_review/verbal/stem_diff.json",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/核验记录/交付核验.json",
+      "M03/编辑底稿/verbal.json",
+      "用题登记.jsonl"
+    ],
+    "GKYY-2022-057": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/source_answer_comparison.json",
+      "用题登记.jsonl"
+    ],
+    "GKYY-2023-060": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/历史版本/0.1.0/核验记录/交付核验.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/claude_review/verbal/stem_diff.json",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/核验记录/交付核验.json",
+      "M03/编辑底稿/verbal.json",
+      "用题登记.jsonl"
+    ],
+    "GKYY-2024-005": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/source_answer_comparison.json",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "M02/核验记录/历史_v0.1.0/source_answer_comparison.json",
+      "用题登记.jsonl"
+    ],
+    "GKYY-2024-023": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/source_answer_comparison.json",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "M02/核验记录/历史_v0.1.0/source_answer_comparison.json",
+      "用题登记.jsonl"
+    ],
+    "GKYY-2024-028": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/source_answer_comparison.json",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "M02/核验记录/历史_v0.1.0/source_answer_comparison.json",
+      "用题登记.jsonl"
+    ],
+    "GKYY-2024-043": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/source_answer_comparison.json",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "M02/核验记录/历史_v0.1.0/source_answer_comparison.json",
+      "用题登记.jsonl"
+    ],
+    "GKYY-2024-058": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/source_answer_comparison.json",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "M02/核验记录/历史_v0.1.0/source_answer_comparison.json",
+      "用题登记.jsonl"
+    ],
+    "GKYY-2025-017": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/verbal_review.json",
+      "用题登记.jsonl"
+    ],
+    "GKYY-2025-034": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/verbal_review.json",
+      "用题登记.jsonl"
+    ],
+    "GKYY-2025-046": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/verbal_review.json",
+      "用题登记.jsonl"
+    ],
+    "GKYY-2025-057": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/verbal_review.json",
+      "用题登记.jsonl"
+    ],
+    "GKYY-2025-058": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/verbal_review.json",
+      "用题登记.jsonl"
+    ],
+    "GKYY-2025-061": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/verbal_review.json",
+      "用题登记.jsonl"
+    ],
+    "JS2020-A类-029": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/历史版本/0.1.0/核验记录/交付核验.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/claude_review/verbal/jz_pdf_compare.json",
+      "M03/核验记录/claude_review/verbal/stem_diff.json",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/核验记录/交付核验.json",
+      "M03/编辑底稿/verbal.json",
+      "用题登记.jsonl"
+    ],
+    "JS2020-A类-074": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "JS2020-A类-075": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "JS2020-A类-076": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "JS2020-A类-077": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "JS2020-A类-078": [
+      "M01/核验记录/old_graphic_source_ids.json",
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/历史版本/0.1.0/核验记录/交付核验.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/核验记录/交付核验.json",
+      "M03/编辑底稿/reasoning.json",
+      "用题登记.jsonl"
+    ],
+    "JS2020-A类-088": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "JS2020-A类-089": [
+      "M01/核验记录/old_graphic_source_ids.json",
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/历史版本/0.1.0/核验记录/交付核验.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/核验记录/交付核验.json",
+      "M03/编辑底稿/reasoning.json",
+      "用题登记.jsonl"
+    ],
+    "JS2020-A类-096": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/历史版本/0.1.0/核验记录/交付核验.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/核验记录/交付核验.json",
+      "M03/编辑底稿/reasoning.json",
+      "用题登记.jsonl"
+    ],
+    "JS2021-A类-076": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/judgment_prior_exposure_scan.json",
+      "M01/核验记录/old_graphic_source_ids.json",
+      "用题登记.jsonl"
+    ],
+    "JS2021-A类-077": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/judgment_prior_exposure_scan.json",
+      "M01/核验记录/old_graphic_source_ids.json",
+      "用题登记.jsonl"
+    ],
+    "JS2021-A类-078": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "JS2021-A类-079": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "JS2021-A类-080": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "JS2021-A类-081": [
+      "M01/核验记录/old_graphic_source_ids.json",
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/历史版本/0.1.0/核验记录/交付核验.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/核验记录/交付核验.json",
+      "M03/编辑底稿/reasoning.json",
+      "用题登记.jsonl"
+    ],
+    "JS2021-A类-082": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/judgment_prior_exposure_scan.json",
+      "M01/核验记录/old_graphic_source_ids.json",
+      "用题登记.jsonl"
+    ],
+    "JS2021-A类-094": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/历史版本/0.1.0/核验记录/交付核验.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/核验记录/交付核验.json",
+      "M03/编辑底稿/reasoning.json",
+      "用题登记.jsonl"
+    ],
+    "JS2021-A类-098": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/历史版本/0.1.0/核验记录/交付核验.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/核验记录/交付核验.json",
+      "M03/编辑底稿/reasoning.json",
+      "用题登记.jsonl"
+    ],
+    "JS2022-A类-029": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/历史版本/0.1.0/核验记录/交付核验.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/claude_review/verbal/jz_pdf_compare.json",
+      "M03/核验记录/claude_review/verbal/stem_diff.json",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/核验记录/交付核验.json",
+      "M03/编辑底稿/verbal.json",
+      "用题登记.jsonl"
+    ],
+    "JS2022-A类-084": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "JS2022-A类-090": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "JS2022-A类-095": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/历史版本/0.1.0/核验记录/交付核验.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/核验记录/交付核验.json",
+      "M03/编辑底稿/reasoning.json",
+      "用题登记.jsonl"
+    ],
+    "JS2022-A类-097": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/历史版本/0.1.0/核验记录/交付核验.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/核验记录/交付核验.json",
+      "M03/编辑底稿/reasoning.json",
+      "用题登记.jsonl"
+    ],
+    "JS2023-A类-035": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/verbal_review.json",
+      "用题登记.jsonl"
+    ],
+    "JS2023-A类-037": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/历史版本/0.1.0/核验记录/交付核验.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/claude_review/verbal/jz_pdf_compare.json",
+      "M03/核验记录/claude_review/verbal/stem_diff.json",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/核验记录/交付核验.json",
+      "M03/编辑底稿/verbal.json",
+      "用题登记.jsonl"
+    ],
+    "JS2023-A类-050": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "JS2023-A类-082": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "JS2023-A类-083": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "JS2023-A类-084": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "JS2023-A类-089": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "JS2023-A类-092": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/source_answer_comparison.json",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "M02/核验记录/历史_v0.1.0/source_answer_comparison.json",
+      "用题登记.jsonl"
+    ],
+    "JS2023-A类-095": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/source_answer_comparison.json",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "M02/核验记录/历史_v0.1.0/source_answer_comparison.json",
+      "用题登记.jsonl"
+    ],
+    "JS2023-A类-096": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/source_answer_comparison.json",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "M02/核验记录/历史_v0.1.0/source_answer_comparison.json",
+      "用题登记.jsonl"
+    ],
+    "JS2023-A类-099": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/source_answer_comparison.json",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "M02/核验记录/历史_v0.1.0/source_answer_comparison.json",
+      "用题登记.jsonl"
+    ],
+    "JS2023-A类-100": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/source_answer_comparison.json",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "M02/核验记录/历史_v0.1.0/source_answer_comparison.json",
+      "用题登记.jsonl"
+    ],
+    "JS2024-A类-019": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/verbal_review.json",
+      "用题登记.jsonl"
+    ],
+    "JS2024-A类-020": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/verbal_review.json",
+      "用题登记.jsonl"
+    ],
+    "JS2024-A类-036": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/verbal_review.json",
+      "用题登记.jsonl"
+    ],
+    "JS2024-A类-076": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "JS2024-A类-077": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "JS2024-A类-078": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "JS2024-A类-091": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/source_answer_comparison.json",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "M02/核验记录/历史_v0.1.0/source_answer_comparison.json",
+      "用题登记.jsonl"
+    ],
+    "JS2024-A类-099": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/历史版本/0.1.0/核验记录/交付核验.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/核验记录/交付核验.json",
+      "M03/编辑底稿/reasoning.json",
+      "用题登记.jsonl"
+    ],
+    "JS2024-A类-100": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/judgment_logic_review.json",
+      "M01/核验记录/judgment_prior_exposure_scan.json",
+      "用题登记.jsonl"
+    ],
+    "JS2024-A类-103": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/judgment_logic_review.json",
+      "M01/核验记录/judgment_prior_exposure_scan.json",
+      "用题登记.jsonl"
+    ],
+    "JS2025-A类-021": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/source_answer_comparison.json",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "M02/核验记录/历史_v0.1.0/source_answer_comparison.json",
+      "用题登记.jsonl"
+    ],
+    "JS2025-A类-022": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/source_answer_comparison.json",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "M02/核验记录/历史_v0.1.0/source_answer_comparison.json",
+      "用题登记.jsonl"
+    ],
+    "JS2025-A类-026": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/source_answer_comparison.json",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "M02/核验记录/历史_v0.1.0/source_answer_comparison.json",
+      "用题登记.jsonl"
+    ],
+    "JS2025-A类-032": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/source_answer_comparison.json",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "M02/核验记录/历史_v0.1.0/source_answer_comparison.json",
+      "用题登记.jsonl"
+    ],
+    "JS2025-A类-035": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/source_answer_comparison.json",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "M02/核验记录/历史_v0.1.0/source_answer_comparison.json",
+      "用题登记.jsonl"
+    ],
+    "JS2025-A类-045": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/source_answer_comparison.json",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "M02/核验记录/历史_v0.1.0/source_answer_comparison.json",
+      "用题登记.jsonl"
+    ],
+    "JS2025-A类-054": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "JS2025-A类-063": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "JS2025-A类-069": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "JS2025-A类-088": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "JS2025-A类-092": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/judgment_logic_review.json",
+      "M01/核验记录/judgment_prior_exposure_scan.json",
+      "用题登记.jsonl"
+    ],
+    "JS2025-A类-094": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/历史版本/0.1.0/核验记录/交付核验.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/核验记录/交付核验.json",
+      "M03/编辑底稿/reasoning.json",
+      "用题登记.jsonl"
+    ],
+    "JS2025-A类-095": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/source_answer_comparison.json",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "M02/核验记录/历史_v0.1.0/source_answer_comparison.json",
+      "用题登记.jsonl"
+    ],
+    "JS2025-A类-098": [
+      "M02/选编断点_75题.json"
+    ],
+    "JS2025-A类-099": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/judgment_logic_review.json",
+      "M01/核验记录/judgment_prior_exposure_scan.json",
+      "用题登记.jsonl"
+    ],
+    "JS2025-A类-100": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/judgment_logic_review.json",
+      "M01/核验记录/judgment_prior_exposure_scan.json",
+      "用题登记.jsonl"
+    ],
+    "JS2025-A类-101": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/source_answer_comparison.json",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "M02/核验记录/历史_v0.1.0/source_answer_comparison.json",
+      "用题登记.jsonl"
+    ],
+    "JS2025-A类-102": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/judgment_logic_review.json",
+      "M01/核验记录/judgment_prior_exposure_scan.json",
+      "用题登记.jsonl"
+    ],
+    "JS2025-A类-103": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/judgment_logic_review.json",
+      "M01/核验记录/judgment_prior_exposure_scan.json",
+      "用题登记.jsonl"
+    ],
+    "M01-ORIG-001": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "M01-ORIG-002": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "M01-ORIG-003": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "M01-ORIG-004": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "M01-ORIG-005": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "M01-ORIG-006": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "M01-ORIG-007": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "M01-ORIG-008": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "M01-ORIG-009": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "M01-ORIG-010": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "M01-ORIG-011": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "M01-ORIG-012": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "M01-ORIG-013": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "M01-ORIG-014": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "M01-ORIG-015": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "M01-Q001": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q002": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q003": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q004": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q005": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q006": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q007": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q008": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q009": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q010": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q011": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q012": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q013": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q014": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q015": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q016": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q017": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q018": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q019": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q020": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q021": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q022": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q023": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q024": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q025": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q026": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q027": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q028": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q029": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q030": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q031": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q032": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q033": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q034": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q035": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q036": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q037": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q038": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q039": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q040": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q041": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q042": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q043": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q044": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q045": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q046": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q047": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q048": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q049": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q050": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q051": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q052": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q053": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q054": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q055": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q056": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q057": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q058": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q059": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q060": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q061": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q062": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q063": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q064": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q065": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q066": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q067": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q068": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q069": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q070": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q071": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q072": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q073": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q074": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q075": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q076": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q077": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q078": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q079": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q080": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q081": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q082": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q083": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q084": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q085": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q086": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q087": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q088": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q089": [
+      "M01/题目.jsonl"
+    ],
+    "M01-Q090": [
+      "M01/题目.jsonl"
+    ],
+    "M02-ORIG-001": [
+      "M02/politics_original.json",
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "M02-ORIG-002": [
+      "M02/politics_original.json",
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "M02-ORIG-003": [
+      "M02/politics_original.json",
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "M02-ORIG-004": [
+      "M02/politics_original.json",
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "M02-ORIG-005": [
+      "M02/politics_original.json",
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "M02-ORIG-006": [
+      "M02/politics_original.json",
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "M02-ORIG-007": [
+      "M02/politics_original.json",
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "M02-ORIG-008": [
+      "M02/politics_original.json",
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "M02-ORIG-009": [
+      "M02/politics_original.json",
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "M02-ORIG-010": [
+      "M02/politics_original.json",
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "M02-ORIG-011": [
+      "M02/politics_original.json",
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "M02-ORIG-012": [
+      "M02/politics_original.json",
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "M02-ORIG-013": [
+      "M02/politics_original.json",
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "M02-ORIG-014": [
+      "M02/politics_original.json",
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "M02-ORIG-015": [
+      "M02/politics_original.json",
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "M02-Q001": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q002": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q003": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q004": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q005": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q006": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q007": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q008": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q009": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q010": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q011": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q012": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q013": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q014": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q015": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q016": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q017": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q018": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q019": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q020": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q021": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q022": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q023": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q024": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q025": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q026": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q027": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q028": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q029": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q030": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q031": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q032": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q033": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q034": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q035": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q036": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q037": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q038": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q039": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q040": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q041": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q042": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q043": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q044": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q045": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q046": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q047": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q048": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q049": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q050": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q051": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q052": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q053": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q054": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q055": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q056": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q057": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q058": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q059": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q060": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q061": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q062": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q063": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q064": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q065": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q066": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q067": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q068": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q069": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q070": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q071": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q072": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q073": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q074": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q075": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q076": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q077": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q078": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q079": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q080": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q081": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q082": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q083": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q084": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q085": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q086": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q087": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q088": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q089": [
+      "M02/题目.jsonl"
+    ],
+    "M02-Q090": [
+      "M02/题目.jsonl"
+    ],
+    "M03-M01": [
+      "M03/题目.jsonl"
+    ],
+    "M03-M02": [
+      "M03/题目.jsonl"
+    ],
+    "M03-M03": [
+      "M03/题目.jsonl"
+    ],
+    "M03-M04": [
+      "M03/题目.jsonl"
+    ],
+    "M03-ORIG-001": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/originals_science.json",
+      "用题登记.jsonl"
+    ],
+    "M03-ORIG-002": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/originals_science.json",
+      "用题登记.jsonl"
+    ],
+    "M03-ORIG-003": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/originals_science.json",
+      "用题登记.jsonl"
+    ],
+    "M03-ORIG-004": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/originals_science.json",
+      "用题登记.jsonl"
+    ],
+    "M03-ORIG-005": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/originals_science.json",
+      "用题登记.jsonl"
+    ],
+    "M03-ORIG-006": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/originals_science.json",
+      "用题登记.jsonl"
+    ],
+    "M03-ORIG-007": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/originals_science.json",
+      "用题登记.jsonl"
+    ],
+    "M03-ORIG-008": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/originals_science.json",
+      "用题登记.jsonl"
+    ],
+    "M03-ORIG-009": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/originals_science.json",
+      "用题登记.jsonl"
+    ],
+    "M03-ORIG-010": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/originals_science.json",
+      "用题登记.jsonl"
+    ],
+    "M03-ORIG-011": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/originals_science.json",
+      "用题登记.jsonl"
+    ],
+    "M03-ORIG-012": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/originals_science.json",
+      "用题登记.jsonl"
+    ],
+    "M03-ORIG-013": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/originals_science.json",
+      "用题登记.jsonl"
+    ],
+    "M03-ORIG-014": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/originals_science.json",
+      "用题登记.jsonl"
+    ],
+    "M03-ORIG-015": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/originals_science.json",
+      "用题登记.jsonl"
+    ],
+    "M03-Q001": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q002": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q003": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q004": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q005": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q006": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q007": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q008": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q009": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q010": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q011": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q012": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q013": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q014": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q015": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q016": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q017": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q018": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q019": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q020": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q021": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q022": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q023": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q024": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q025": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q026": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q027": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q028": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q029": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q030": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q031": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q032": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q033": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q034": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q035": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q036": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q037": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q038": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q039": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q040": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q041": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q042": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q043": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q044": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q045": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q046": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q047": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q048": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q049": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q050": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q051": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q052": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q053": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q054": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q055": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q056": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q057": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q058": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q059": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q060": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q061": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q062": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q063": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q064": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q065": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q066": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q067": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q068": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q069": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q070": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q071": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q072": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q073": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q074": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q075": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q076": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q077": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q078": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q079": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q080": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q081": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q082": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q083": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q084": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q085": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q086": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q087": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q088": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q089": [
+      "M03/题目.jsonl"
+    ],
+    "M03-Q090": [
+      "M03/题目.jsonl"
+    ],
+    "ZJ2020-B卷-046": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "ZJ2020-B卷-047": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "ZJ2020-B卷-048": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "ZJ2020-B卷-049": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "ZJ2020-B卷-050": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "ZJ2021-A类-040": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/历史版本/0.1.0/核验记录/交付核验.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/claude_review/verbal/jz_pdf_compare.json",
+      "M03/核验记录/claude_review/verbal/stem_diff.json",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/核验记录/交付核验.json",
+      "M03/编辑底稿/verbal.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2021-A类-050": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/历史版本/0.1.0/核验记录/交付核验.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/claude_review/verbal/jz_pdf_compare.json",
+      "M03/核验记录/claude_review/verbal/stem_diff.json",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/核验记录/交付核验.json",
+      "M03/编辑底稿/verbal.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2021-A类-076": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "ZJ2021-A类-077": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/judgment_prior_exposure_scan.json",
+      "M01/核验记录/old_graphic_source_ids.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2021-A类-078": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "ZJ2021-A类-079": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "ZJ2021-A类-080": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/judgment_prior_exposure_scan.json",
+      "M01/核验记录/old_graphic_source_ids.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2021-A类-081": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "ZJ2021-A类-082": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "ZJ2021-A类-083": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "ZJ2021-A类-084": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "ZJ2021-A类-085": [
+      "M01/核验记录/old_graphic_source_ids.json",
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/历史版本/0.1.0/核验记录/交付核验.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/q50_spatial_review.json",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/核验记录/交付核验.json",
+      "M03/编辑底稿/reasoning.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2022-A类-028": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/历史版本/0.1.0/核验记录/交付核验.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/claude_review/verbal/jz_pdf_compare.json",
+      "M03/核验记录/claude_review/verbal/stem_diff.json",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/核验记录/交付核验.json",
+      "M03/编辑底稿/verbal.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2022-A类-040": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/历史版本/0.1.0/核验记录/交付核验.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/claude_review/verbal/jz_pdf_compare.json",
+      "M03/核验记录/claude_review/verbal/stem_diff.json",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/核验记录/交付核验.json",
+      "M03/编辑底稿/verbal.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2022-A类-071": [
+      "M01/核验记录/old_graphic_source_ids.json",
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/历史版本/0.1.0/核验记录/交付核验.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/核验记录/交付核验.json",
+      "M03/编辑底稿/reasoning.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2022-A类-072": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "ZJ2022-A类-076": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "ZJ2022-A类-077": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "ZJ2022-A类-079": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "ZJ2023-A类-025": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/verbal_review.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2023-A类-031": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/历史版本/0.1.0/核验记录/交付核验.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/claude_review/verbal/jz_pdf_compare.json",
+      "M03/核验记录/claude_review/verbal/stem_diff.json",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/核验记录/交付核验.json",
+      "M03/编辑底稿/verbal.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2023-A类-042": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/历史版本/0.1.0/核验记录/交付核验.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/claude_review/verbal/jz_pdf_compare.json",
+      "M03/核验记录/claude_review/verbal/stem_diff.json",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/核验记录/交付核验.json",
+      "M03/编辑底稿/verbal.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2023-A类-047": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/历史版本/0.1.0/核验记录/交付核验.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/claude_review/verbal/jz_pdf_compare.json",
+      "M03/核验记录/claude_review/verbal/stem_diff.json",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/核验记录/交付核验.json",
+      "M03/编辑底稿/verbal.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2023-A类-101": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/source_answer_comparison.json",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "M02/核验记录/历史_v0.1.0/source_answer_comparison.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2023-A类-102": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/历史版本/0.1.0/核验记录/交付核验.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/核验记录/交付核验.json",
+      "M03/编辑底稿/reasoning.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2023-A类-103": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/历史版本/0.1.0/核验记录/交付核验.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/核验记录/交付核验.json",
+      "M03/编辑底稿/reasoning.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2023-A类-104": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/历史版本/0.1.0/核验记录/交付核验.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/核验记录/交付核验.json",
+      "M03/编辑底稿/reasoning.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2023-A类-107": [
+      "M02/撤题记录.json",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "M02/核验记录/历史_v0.1.0/source_answer_comparison.json"
+    ],
+    "ZJ2023-A类-109": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/历史版本/0.1.0/核验记录/交付核验.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/核验记录/交付核验.json",
+      "M03/编辑底稿/reasoning.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2024-A类-024": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/verbal_review.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2024-A类-034": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/verbal_review.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2024-A类-074": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "ZJ2024-A类-102": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/judgment_logic_review.json",
+      "M01/核验记录/judgment_prior_exposure_scan.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2024-A类-103": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/source_answer_comparison.json",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "M02/核验记录/历史_v0.1.0/source_answer_comparison.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2024-A类-105": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/source_answer_comparison.json",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "M02/核验记录/历史_v0.1.0/source_answer_comparison.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2024-A类-107": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/source_answer_comparison.json",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "M02/核验记录/历史_v0.1.0/source_answer_comparison.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2024-A类-110": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/judgment_logic_review.json",
+      "M01/核验记录/judgment_prior_exposure_scan.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2025-A类-022": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/source_answer_comparison.json",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "M02/核验记录/历史_v0.1.0/source_answer_comparison.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2025-A类-028": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/source_answer_comparison.json",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "M02/核验记录/历史_v0.1.0/source_answer_comparison.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2025-A类-035": [
+      "M02/撤题记录.json",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "M02/核验记录/历史_v0.1.0/source_answer_comparison.json"
+    ],
+    "ZJ2025-A类-040": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/source_answer_comparison.json",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "M02/核验记录/历史_v0.1.0/source_answer_comparison.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2025-A类-046": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/verbal_review.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2025-A类-048": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/verbal_review.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2025-A类-052": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "ZJ2025-A类-103": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/judgment_logic_review.json",
+      "M01/核验记录/judgment_prior_exposure_scan.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2025-A类-104": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/judgment_logic_review.json",
+      "M01/核验记录/judgment_prior_exposure_scan.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2025-A类-105": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/历史版本/0.1.0/核验记录/交付核验.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/核验记录/交付核验.json",
+      "M03/编辑底稿/reasoning.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2025-A类-106": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/judgment_logic_review.json",
+      "M01/核验记录/judgment_prior_exposure_scan.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2025-A类-107": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/历史版本/0.1.0/核验记录/交付核验.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/核验记录/交付核验.json",
+      "M03/编辑底稿/reasoning.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2025-A类-108": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/judgment_logic_review.json",
+      "M01/核验记录/judgment_prior_exposure_scan.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2026-A类-066": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "ZJ2026-A类-068": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "ZJ2026-A类-069": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "ZJ2026-A类-070": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "ZJ2026-A类-074": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "ZJ2026-A类-075": [
+      "M01/核验记录/old_graphic_source_ids.json"
+    ],
+    "ZJ2026-A类-097": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "ZJ2026-A类-101": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s16-m3": [
+      "M02/selection.json",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "M02/题目.jsonl"
+    ],
+    "gd-mock-2026h2-s16-q32": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s16-q33": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s16-q39": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s16-q46": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s16-q81": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s16-q82": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s16-q83": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s16-q84": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s16-q85": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s17-m1": [
+      "M01/selection.json",
+      "M01/题目.jsonl"
+    ],
+    "gd-mock-2026h2-s17-m3": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/核验记录/v020_quant_data_check.json",
+      "M03/编辑底稿/quant_data.json",
+      "M03/编辑底稿/quant_data_check.json"
+    ],
+    "gd-mock-2026h2-s17-q35": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s17-q70": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s17-q71": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s17-q72": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s17-q73": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s17-q74": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s17-q75": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s17-q81": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s17-q82": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s17-q83": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s17-q84": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s17-q85": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s18-q32": [
+      "M02/撤题记录.json",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json"
+    ],
+    "gd-mock-2026h2-s18-q33": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s18-q36": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s18-q41": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s18-q43": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s19-m1": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/核验记录/v020_quant_data_check.json",
+      "M03/编辑底稿/quant_data.json",
+      "M03/编辑底稿/quant_data_check.json"
+    ],
+    "gd-mock-2026h2-s19-q31": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s19-q35": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_q35_layout_check.json",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s19-q40": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s19-q41": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s19-q64": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/reasoning.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s19-q71": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s19-q72": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s19-q73": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s19-q74": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s19-q75": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s20-m3": [
+      "M02/selection.json",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "M02/题目.jsonl"
+    ],
+    "gd-mock-2026h2-s20-q39": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s20-q40": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s20-q61": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/judgment_logic_review.json",
+      "M01/核验记录/judgment_prior_exposure_scan.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s20-q64": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/核验记录/judgment_logic_review.json",
+      "M01/核验记录/judgment_prior_exposure_scan.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s20-q67": [
+      "M01/science_selection_v2.json",
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/科推5题_恢复候选.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s20-q69": [
+      "M01/science_selection_v2.json",
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s20-q81": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s20-q82": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s20-q83": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s20-q84": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s20-q85": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s21-m3": [
+      "M01/selection.json",
+      "M01/题目.jsonl"
+    ],
+    "gd-mock-2026h2-s21-q33": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s21-q66": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/originals_science.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s21-q70": [
+      "M01/science_selection_v2.json",
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/科推5题_恢复候选.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s21-q81": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s21-q82": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s21-q83": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s21-q84": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s21-q85": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s22-m1": [
+      "M03/selection.json",
+      "M03/修订底稿/v020_quant_data_patch.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/核验记录/v020_quant_data_check.json",
+      "M03/编辑底稿/quant_data.json",
+      "M03/编辑底稿/quant_data_check.json"
+    ],
+    "gd-mock-2026h2-s22-q40": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s22-q47": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s22-q71": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s22-q72": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s22-q73": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s22-q74": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s22-q75": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s23-q38": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s23-q39": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s23-q43": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s23-q68": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/originals_science.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s24-q44": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s24-q45": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s24-q48": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s24-q67": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s24-q69": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/q69_foodweb_edges.json",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/originals_science.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s25-m2": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/核验记录/v020_quant_data_check.json",
+      "M03/编辑底稿/quant_data.json",
+      "M03/编辑底稿/quant_data_check.json"
+    ],
+    "gd-mock-2026h2-s25-m4": [
+      "M01/selection.json",
+      "M01/核验记录/assembly_review.json",
+      "M01/题目.jsonl"
+    ],
+    "gd-mock-2026h2-s25-q34": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s25-q42": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s25-q61": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s25-q67": [
+      "M01/science_selection_v2.json",
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "M01/科推5题_恢复候选.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s25-q70": [
+      "M01/science_selection_v2.json",
+      "M01/科推5题_恢复候选.json"
+    ],
+    "gd-mock-2026h2-s25-q76": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s25-q77": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s25-q78": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s25-q79": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s25-q80": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s25-q86": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s25-q87": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s25-q88": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s25-q89": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s25-q90": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s26-m2": [
+      "M02/selection.json",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "M02/题目.jsonl"
+    ],
+    "gd-mock-2026h2-s26-q31": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s26-q40": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s26-q64": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/reasoning.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s26-q68": [
+      "M01/science_selection_v2.json",
+      "M01/科推5题_恢复候选.json",
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/originals_science.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s26-q69": [
+      "M01/science_selection_v2.json",
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s26-q70": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/originals_science.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s26-q76": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s26-q77": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s26-q78": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s26-q79": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s26-q80": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s27-q34": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s27-q39": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s27-q42": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s27-q68": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s27-q69": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s28-q36": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s28-q39": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s28-q43": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s29-q35": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s29-q40": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s29-q43": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s29-q45": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s29-q46": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s30-m2": [
+      "M02/selection.json",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "M02/题目.jsonl"
+    ],
+    "gd-mock-2026h2-s30-q37": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s30-q76": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s30-q77": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s30-q78": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s30-q79": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s30-q80": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s31-q45": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s31-q66": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s32-q37": [
+      "M03/selection.json",
+      "M03/历史版本/0.1.0/selection.json",
+      "M03/来源登记.jsonl",
+      "M03/核验记录/v020_revision_manifest.json",
+      "M03/编辑底稿/quant_data.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s32-q50": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s33-m1": [
+      "M01/selection.json",
+      "M01/题目.jsonl"
+    ],
+    "gd-mock-2026h2-s33-q31": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s33-q43": [
+      "M02/selection.json",
+      "M02/来源登记.jsonl",
+      "M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s33-q71": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s33-q72": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s33-q73": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s33-q74": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ],
+    "gd-mock-2026h2-s33-q75": [
+      "M01/selection.json",
+      "M01/来源登记.jsonl",
+      "用题登记.jsonl"
+    ]
+  }
+}

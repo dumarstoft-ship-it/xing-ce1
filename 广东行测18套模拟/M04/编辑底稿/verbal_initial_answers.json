@@ -1,0 +1,89 @@
+[
+  {
+    "number": 16,
+    "source_id": "JS2024-A类-035",
+    "independent_answer": "A"
+  },
+  {
+    "number": 17,
+    "source_id": "ZJ2025-A类-032",
+    "independent_answer": "B"
+  },
+  {
+    "number": 18,
+    "source_id": "GKYY-2024-005",
+    "independent_answer": "D"
+  },
+  {
+    "number": 19,
+    "source_id": "ZJ2026-A类-028",
+    "independent_answer": "A"
+  },
+  {
+    "number": 20,
+    "source_id": "GKYY-2025-036",
+    "independent_answer": "D"
+  },
+  {
+    "number": 21,
+    "source_id": "JS2024-A类-023",
+    "independent_answer": "B"
+  },
+  {
+    "number": 22,
+    "source_id": "GKYY-2024-052",
+    "independent_answer": "D"
+  },
+  {
+    "number": 23,
+    "source_id": "ZJ2025-A类-034",
+    "independent_answer": "A"
+  },
+  {
+    "number": 24,
+    "source_id": "ZJ2024-A类-045",
+    "independent_answer": "C"
+  },
+  {
+    "number": 25,
+    "source_id": "GKYY-2025-044",
+    "independent_answer": "C"
+  },
+  {
+    "number": 26,
+    "source_id": "GKYY-2025-017",
+    "independent_answer": "C"
+  },
+  {
+    "number": 27,
+    "source_id": "GKYY-2025-048",
+    "independent_answer": "A"
+  },
+  {
+    "number": 28,
+    "source_id": "ZJ2024-A类-046",
+    "independent_answer": "B"
+  },
+  {
+    "number": 29,
+    "source_id": "GKYY-2024-066",
+    "independent_answer": "A"
+  },
+  {
+    "number": 30,
+    "source_id": "GKYY-2025-061",
+    "independent_answer": "C"
+  },
+  {
+    "number": 16,
+    "source_id": "GKYY-2025-040",
+    "independent_answer": "B",
+    "replaces_candidate": "JS2024-A类-035"
+  },
+  {
+    "number": 21,
+    "source_id": "JS2024-A类-020",
+    "independent_answer": "B",
+    "replaces_candidate": "JS2024-A类-023"
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "reason": "整卷用题登记复核发现4道已在M01或M02使用，现撤下；此前盲审只证明旧题版本答案，不覆盖替换题。",
+  "withdrawn": [
+    {
+      "number": 18,
+      "source_id": "GKYY-2024-005",
+      "prior_paper": "M02",
+      "prior_number": 18
+    },
+    {
+      "number": 21,
+      "source_id": "JS2024-A类-020",
+      "prior_paper": "M01",
+      "prior_number": 21
+    },
+    {
+      "number": 26,
+      "source_id": "GKYY-2025-017",
+      "prior_paper": "M01",
+      "prior_number": 30
+    },
+    {
+      "number": 30,
+      "source_id": "GKYY-2025-061",
+      "prior_paper": "M01",
+      "prior_number": 25
+    }
+  ],
+  "failure_cause": "此前使用的excluded_source_ids.json只完整排除部分模考/江浙来源，缺少这些现用国考/江苏源ID。现重新递归扫描M01–M03全部JSON/JSONL及非M04用题登记，共602个来源/材料ID，并记录逐ID出处。"
+}

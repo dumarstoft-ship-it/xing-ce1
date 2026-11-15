@@ -1,0 +1,1772 @@
+{
+  "baseline_commit": "6aecdb088169c4c8b0c393046a77e483910aaf7d",
+  "module_file_sha256": {
+    "politics.json": "5ed3edc6aac864d26a362d8a18e227f67c906c71e1a81f894df8c5da9a9d4950",
+    "verbal.json": "cc9434891abcce9f2c09c5f8debaa6ead16a2c03779c76a111a366a55829d9f1",
+    "quant_data.json": "d22d1b32bca7dd12680aa5050eaa3688b5a8dfbd4c28410cdcd937502d341e8e",
+    "reasoning_science.json": "229022e36b8de9eb17c542fe0c1ff2ea6fb0ab85bcdf9ef83f9af404185fcb2b"
+  },
+  "question_count": 90,
+  "corpus_files": 394,
+  "old24_text_files": 159,
+  "corpus_bytes": 17448142,
+  "corpus_lines": 199674,
+  "strong_source_record_paths": [
+    "广东行测18套模拟/M01/review_v3_changes.json",
+    "广东行测18套模拟/M01/science_selection_v2.json",
+    "广东行测18套模拟/M01/selection.json",
+    "广东行测18套模拟/M02/selection.json",
+    "广东行测18套模拟/M02/撤题记录.json",
+    "广东行测18套模拟/M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+    "广东行测18套模拟/M03/selection.json",
+    "广东行测18套模拟/M03/历史版本/0.1.0/selection.json",
+    "广东行测18套模拟/用题登记.jsonl"
+  ],
+  "old_graphic_reference_count": 147,
+  "methods": [
+    "literal source IDs",
+    "reserved/withdrawn/history source IDs",
+    "old delivered graphic source index",
+    "complete normalised stem text",
+    "48-character overlapping stem fragments",
+    "64-character material fragments"
+  ],
+  "limitations": [
+    "A common policy quotation, common topic or generic instruction is not by itself a duplicate question; text candidate hits require interpretation.",
+    "Normalisation removes whitespace and punctuation; short numeric-expression matches are candidates, not proof of complete identity.",
+    "No all-pairs perceptual image matching, no OCR of old PDFs lacking text-side artifacts, and no assertion that the user never encountered an unhit question elsewhere.",
+    "Source objects read from the fixed baseline Git commit; current temporary M04 registry rows are excluded by construction."
+  ],
+  "module_summary": {
+    "politics.json": {
+      "question_count": 15,
+      "reserved_source_hits": [],
+      "old_graphic_source_hits": [],
+      "old24_source_reference_hits": [],
+      "text_candidate_hits": []
+    },
+    "verbal.json": {
+      "question_count": 15,
+      "reserved_source_hits": [
+        18,
+        21,
+        26,
+        30
+      ],
+      "old_graphic_source_hits": [],
+      "old24_source_reference_hits": [],
+      "text_candidate_hits": [
+        18,
+        21,
+        26,
+        30
+      ]
+    },
+    "quant_data.json": {
+      "question_count": 35,
+      "reserved_source_hits": [],
+      "old_graphic_source_hits": [],
+      "old24_source_reference_hits": [],
+      "text_candidate_hits": []
+    },
+    "reasoning_science.json": {
+      "question_count": 25,
+      "reserved_source_hits": [],
+      "old_graphic_source_hits": [],
+      "old24_source_reference_hits": [],
+      "text_candidate_hits": []
+    }
+  },
+  "results": [
+    {
+      "number": 1,
+      "module": "politics.json",
+      "source_id": "M04-ORIG-001",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 1,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 2,
+      "module": "politics.json",
+      "source_id": "M04-ORIG-002",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 1,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 3,
+      "module": "politics.json",
+      "source_id": "M04-ORIG-003",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 3,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 4,
+      "module": "politics.json",
+      "source_id": "M04-ORIG-004",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 1,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 5,
+      "module": "politics.json",
+      "source_id": "M04-ORIG-005",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 3,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 6,
+      "module": "politics.json",
+      "source_id": "M04-ORIG-006",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 1,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 7,
+      "module": "politics.json",
+      "source_id": "M04-ORIG-007",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 4,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 8,
+      "module": "politics.json",
+      "source_id": "M04-ORIG-008",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 4,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 9,
+      "module": "politics.json",
+      "source_id": "M04-ORIG-009",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 1,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 10,
+      "module": "politics.json",
+      "source_id": "M04-ORIG-010",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 0,
+      "input_kind_limitations": [
+        "no_distinctive_text_pattern; rely on source ID and graphic provenance"
+      ]
+    },
+    {
+      "number": 11,
+      "module": "politics.json",
+      "source_id": "M04-ORIG-011",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 4,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 12,
+      "module": "politics.json",
+      "source_id": "M04-ORIG-012",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 1,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 13,
+      "module": "politics.json",
+      "source_id": "M04-ORIG-013",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 1,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 14,
+      "module": "politics.json",
+      "source_id": "M04-ORIG-014",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 1,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 15,
+      "module": "politics.json",
+      "source_id": "M04-ORIG-015",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 3,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 16,
+      "module": "verbal.json",
+      "source_id": "GKYY-2025-040",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 5,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 17,
+      "module": "verbal.json",
+      "source_id": "ZJ2025-A类-032",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 10,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 18,
+      "module": "verbal.json",
+      "source_id": "GKYY-2024-005",
+      "reserved_source_id_matches": [
+        "广东行测18套模拟/M02/selection.json",
+        "广东行测18套模拟/M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+        "广东行测18套模拟/用题登记.jsonl"
+      ],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [
+        {
+          "path": "广东行测18套模拟/M02/selection.json",
+          "line": 1151,
+          "category": "prior_paper_reference",
+          "snippet": "rce_file\": \"国考/言语理解/2016-2025/all.jsonl\",\n    \"source_id\": \"GKYY-2024-005\",\n    \"source_question\": {\n      \"id\": \"GKYY-2024-005\",\n      \"year\": 2024,\n      \"section\": \"言语理解与表达\",\n      \"passage\""
+        },
+        {
+          "path": "广东行测18套模拟/M02/来源登记.jsonl",
+          "line": 18,
+          "category": "prior_paper_reference",
+          "snippet": "将题库参考答案称为官方答案。\"}\n{\"paper_id\":\"M02\",\"number\":18,\"source_id\":\"GKYY-2024-005\",\"source_bank\":\"guokao_verbal\",\"source_file\":\"国考/言语理解/2016-2025/all.jsonl\",\"source_file_sha256\":\"f3e468935dadeaa7dcdd77"
+        },
+        {
+          "path": "广东行测18套模拟/M02/核验记录/source_answer_comparison.json",
+          "line": 21,
+          "category": "prior_paper_reference",
+          "snippet": ": true\n    },\n    {\n      \"number\": 18,\n      \"source_id\": \"GKYY-2024-005\",\n      \"source_answer\": \"D\",\n      \"editor_answer\": \"D\",\n      \"match\": true\n    },\n    {\n      \"number\": 19,\n      \"s"
+        },
+        {
+          "path": "广东行测18套模拟/M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+          "line": 895,
+          "category": "prior_paper_reference",
+          "snippet": "rce_file\": \"国考/言语理解/2016-2025/all.jsonl\",\n    \"source_id\": \"GKYY-2024-005\",\n    \"source_question\": {\n      \"id\": \"GKYY-2024-005\",\n      \"year\": 2024,\n      \"section\": \"言语理解与表达\",\n      \"passage\""
+        },
+        {
+          "path": "广东行测18套模拟/M02/核验记录/历史_v0.1.0/source_answer_comparison.json",
+          "line": 20,
+          "category": "prior_paper_reference",
+          "snippet": ": true\n    },\n    {\n      \"number\": 18,\n      \"source_id\": \"GKYY-2024-005\",\n      \"source_answer\": \"D\",\n      \"editor_answer\": \"D\",\n      \"match\": true\n    },\n    {\n      \"number\": 19,\n      \"s"
+        },
+        {
+          "path": "广东行测18套模拟/M02/答案与解析_待审.md",
+          "line": 209,
+          "category": "prior_paper_reference",
+          "snippet": "虚构历史真实”搭配不通且“杜绝”过强。此题按文段作答，不把文段中对某项科学研究的概括当作独立核实的科研结论。\n\n来源：[GKYY-2024-005](../../国考/言语理解/2016-2025/all.jsonl)。原参考答案已存在，另经编辑独立解答。\n\n### 第19题　B\n\n黄河原先被高原地形限制，离开限制后成为到处滚动、狂奔的“野马”，“挟持—肆无忌惮”形成受制与失控的对照"
+        },
+        {
+          "path": "广东行测18套模拟/M02/选编断点_75题.json",
+          "line": 1,
+          "category": "prior_paper_reference",
+          "snippet": "er\":[[16,\"ZJ2025-A类-022\",\"A\"],[17,\"ZJ2025-A类-028\",\"C\"],[18,\"GKYY-2024-005\",\"D\"],[19,\"JS2025-A类-045\",\"B\"],[20,\"GKYY-2024-043\",\"A\"],[21,\"JS2025-A类-021\",\"C\"],[22,\"JS2025-A类-022\",\"B\"],[23,\"GKYY-202"
+        },
+        {
+          "path": "广东行测18套模拟/M02/选题记录.md",
+          "line": 22,
+          "category": "prior_paper_reference",
+          "snippet": "\n| 17 | ZJ2025-A类-028 | 双成语需同时匹配长远谋划和精神延续，排除只看第一空。 |\n| 18 | GKYY-2024-005 | 识别科学论证中的程度边界；可检验不等于绝无造假。 |\n| 19 | JS2025-A类-045 | 拟人语境与地貌形成的实词搭配联合约束。 |\n| 20 | GKYY-2024-043 | 治标与治本的时间指向相反，需要成语对偶但不机"
+        },
+        {
+          "path": "广东行测18套模拟/用题登记.jsonl",
+          "line": 108,
+          "category": "prior_paper_reference",
+          "snippet": "a73bd167d77dbd\"}\n{\"paper_id\":\"M02\",\"number\":18,\"source_id\":\"GKYY-2024-005\",\"source_file\":\"国考/言语理解/2016-2025/all.jsonl\",\"status\":\"reserved_for_review\",\"user_done\":\"unknown\",\"content_sha256\":\"bf1"
+        }
+      ],
+      "text_matches": [
+        {
+          "path": "广东行测18套模拟/M02/selection.json",
+          "prefix": "广东行测18套模拟/M02",
+          "match_count": 6,
+          "examples": [
+            {
+              "kind": "complete_current_stem",
+              "line": 1157,
+              "matched_chars": 131,
+              "pattern": "史书是古人写就的有些内容可能会因有人随意取舍记忆有误或者心存故意而历史真实运用基因等高科技手段的考古研究是科学它以客观而非主观的科学事实和科学数据得出结论科学可以检验可以用重复操作检验此前的研究成果是否准确正确从而了人为造假的可能依次填入画横线部分最恰当的一项是",
+              "context": "idGKYY2024005year2024section言语理解与表达passagenullstem史书是古人写就的有些内容可能会因有人随意取舍记忆有误或者心存故意而历史真实运用基因等高科技手段的考古研究是科学它以客观而非主观的科学事实和科学数据得出结论科学可以检验可以用重复操作检验此前的研究成果是否准确正确从而了人为造假的可能依次填入画横线部分最恰当的一项是optionsA违背化解B掩盖规避C虚构杜绝D偏离降低answerDanswercandidatesDanswerstatussinglenotessource"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 1157,
+              "matched_chars": 48,
+              "pattern": "史书是古人写就的有些内容可能会因有人随意取舍记忆有误或者心存故意而历史真实运用基因等高科技手段的",
+              "context": "idGKYY2024005year2024section言语理解与表达passagenullstem史书是古人写就的有些内容可能会因有人随意取舍记忆有误或者心存故意而历史真实运用基因等高科技手段的考古研究是科学它以客观而非主观的科学事实和科学数据得出结论科学可以检验可以用重复操作检验此前的研究成果是否准确正确从而了人为造假的可能依次填入画横线部分最恰当的"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 1157,
+              "matched_chars": 48,
+              "pattern": "有误或者心存故意而历史真实运用基因等高科技手段的考古研究是科学它以客观而非主观的科学事实和科学数",
+              "context": "tion言语理解与表达passagenullstem史书是古人写就的有些内容可能会因有人随意取舍记忆有误或者心存故意而历史真实运用基因等高科技手段的考古研究是科学它以客观而非主观的科学事实和科学数据得出结论科学可以检验可以用重复操作检验此前的研究成果是否准确正确从而了人为造假的可能依次填入画横线部分最恰当的一项是optionsA违背化解B掩盖规避C虚构杜"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 1157,
+              "matched_chars": 48,
+              "pattern": "考古研究是科学它以客观而非主观的科学事实和科学数据得出结论科学可以检验可以用重复操作检验此前的研",
+              "context": "em史书是古人写就的有些内容可能会因有人随意取舍记忆有误或者心存故意而历史真实运用基因等高科技手段的考古研究是科学它以客观而非主观的科学事实和科学数据得出结论科学可以检验可以用重复操作检验此前的研究成果是否准确正确从而了人为造假的可能依次填入画横线部分最恰当的一项是optionsA违背化解B掩盖规避C虚构杜绝D偏离降低answerDanswercandi"
+            }
+          ]
+        },
+        {
+          "path": "广东行测18套模拟/M02/核验记录/历史_v0.1.0/selection_before_revision.json",
+          "prefix": "广东行测18套模拟/M02",
+          "match_count": 6,
+          "examples": [
+            {
+              "kind": "complete_current_stem",
+              "line": 901,
+              "matched_chars": 131,
+              "pattern": "史书是古人写就的有些内容可能会因有人随意取舍记忆有误或者心存故意而历史真实运用基因等高科技手段的考古研究是科学它以客观而非主观的科学事实和科学数据得出结论科学可以检验可以用重复操作检验此前的研究成果是否准确正确从而了人为造假的可能依次填入画横线部分最恰当的一项是",
+              "context": "idGKYY2024005year2024section言语理解与表达passagenullstem史书是古人写就的有些内容可能会因有人随意取舍记忆有误或者心存故意而历史真实运用基因等高科技手段的考古研究是科学它以客观而非主观的科学事实和科学数据得出结论科学可以检验可以用重复操作检验此前的研究成果是否准确正确从而了人为造假的可能依次填入画横线部分最恰当的一项是optionsA违背化解B掩盖规避C虚构杜绝D偏离降低answerDanswercandidatesDanswerstatussinglenotessource"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 901,
+              "matched_chars": 48,
+              "pattern": "史书是古人写就的有些内容可能会因有人随意取舍记忆有误或者心存故意而历史真实运用基因等高科技手段的",
+              "context": "idGKYY2024005year2024section言语理解与表达passagenullstem史书是古人写就的有些内容可能会因有人随意取舍记忆有误或者心存故意而历史真实运用基因等高科技手段的考古研究是科学它以客观而非主观的科学事实和科学数据得出结论科学可以检验可以用重复操作检验此前的研究成果是否准确正确从而了人为造假的可能依次填入画横线部分最恰当的"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 901,
+              "matched_chars": 48,
+              "pattern": "有误或者心存故意而历史真实运用基因等高科技手段的考古研究是科学它以客观而非主观的科学事实和科学数",
+              "context": "tion言语理解与表达passagenullstem史书是古人写就的有些内容可能会因有人随意取舍记忆有误或者心存故意而历史真实运用基因等高科技手段的考古研究是科学它以客观而非主观的科学事实和科学数据得出结论科学可以检验可以用重复操作检验此前的研究成果是否准确正确从而了人为造假的可能依次填入画横线部分最恰当的一项是optionsA违背化解B掩盖规避C虚构杜"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 901,
+              "matched_chars": 48,
+              "pattern": "考古研究是科学它以客观而非主观的科学事实和科学数据得出结论科学可以检验可以用重复操作检验此前的研",
+              "context": "em史书是古人写就的有些内容可能会因有人随意取舍记忆有误或者心存故意而历史真实运用基因等高科技手段的考古研究是科学它以客观而非主观的科学事实和科学数据得出结论科学可以检验可以用重复操作检验此前的研究成果是否准确正确从而了人为造假的可能依次填入画横线部分最恰当的一项是optionsA违背化解B掩盖规避C虚构杜绝D偏离降低answerDanswercandi"
+            }
+          ]
+        },
+        {
+          "path": "广东行测18套模拟/M02/题本_待审.md",
+          "prefix": "广东行测18套模拟/M02",
+          "match_count": 6,
+          "examples": [
+            {
+              "kind": "complete_current_stem",
+              "line": 207,
+              "matched_chars": 131,
+              "pattern": "史书是古人写就的有些内容可能会因有人随意取舍记忆有误或者心存故意而历史真实运用基因等高科技手段的考古研究是科学它以客观而非主观的科学事实和科学数据得出结论科学可以检验可以用重复操作检验此前的研究成果是否准确正确从而了人为造假的可能依次填入画横线部分最恰当的一项是",
+              "context": "画横线部分最恰当的一项是A筚路蓝缕不绝如缕B宵衣旰食源远流长C深谋远虑相沿不辍D卧薪尝胆一脉相传18史书是古人写就的有些内容可能会因有人随意取舍记忆有误或者心存故意而历史真实运用基因等高科技手段的考古研究是科学它以客观而非主观的科学事实和科学数据得出结论科学可以检验可以用重复操作检验此前的研究成果是否准确正确从而了人为造假的可能依次填入画横线部分最恰当的一项是A违背化解B掩盖规避C虚构杜绝D偏离降低19巍巍华山阻住了奔腾南来的黄河逼其90度大拐弯原来被高原土层着的黄河一旦向东越过三门峡进入华北平原顿时就变成了在平地上"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 207,
+              "matched_chars": 48,
+              "pattern": "史书是古人写就的有些内容可能会因有人随意取舍记忆有误或者心存故意而历史真实运用基因等高科技手段的",
+              "context": "画横线部分最恰当的一项是A筚路蓝缕不绝如缕B宵衣旰食源远流长C深谋远虑相沿不辍D卧薪尝胆一脉相传18史书是古人写就的有些内容可能会因有人随意取舍记忆有误或者心存故意而历史真实运用基因等高科技手段的考古研究是科学它以客观而非主观的科学事实和科学数据得出结论科学可以检验可以用重复操作检验此前的研究成果是否准确正确从而了人为造假的可能依次填入画横线部分最恰当的"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 207,
+              "matched_chars": 48,
+              "pattern": "有误或者心存故意而历史真实运用基因等高科技手段的考古研究是科学它以客观而非主观的科学事实和科学数",
+              "context": "旰食源远流长C深谋远虑相沿不辍D卧薪尝胆一脉相传18史书是古人写就的有些内容可能会因有人随意取舍记忆有误或者心存故意而历史真实运用基因等高科技手段的考古研究是科学它以客观而非主观的科学事实和科学数据得出结论科学可以检验可以用重复操作检验此前的研究成果是否准确正确从而了人为造假的可能依次填入画横线部分最恰当的一项是A违背化解B掩盖规避C虚构杜绝D偏离降低1"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 207,
+              "matched_chars": 48,
+              "pattern": "考古研究是科学它以客观而非主观的科学事实和科学数据得出结论科学可以检验可以用重复操作检验此前的研",
+              "context": "18史书是古人写就的有些内容可能会因有人随意取舍记忆有误或者心存故意而历史真实运用基因等高科技手段的考古研究是科学它以客观而非主观的科学事实和科学数据得出结论科学可以检验可以用重复操作检验此前的研究成果是否准确正确从而了人为造假的可能依次填入画横线部分最恰当的一项是A违背化解B掩盖规避C虚构杜绝D偏离降低19巍巍华山阻住了奔腾南来的黄河逼其90度大拐弯原"
+            }
+          ]
+        },
+        {
+          "path": "广东行测18套模拟/M02/题目.jsonl",
+          "prefix": "广东行测18套模拟/M02",
+          "match_count": 6,
+          "examples": [
+            {
+              "kind": "complete_current_stem",
+              "line": 18,
+              "matched_chars": 131,
+              "pattern": "史书是古人写就的有些内容可能会因有人随意取舍记忆有误或者心存故意而历史真实运用基因等高科技手段的考古研究是科学它以客观而非主观的科学事实和科学数据得出结论科学可以检验可以用重复操作检验此前的研究成果是否准确正确从而了人为造假的可能依次填入画横线部分最恰当的一项是",
+              "context": "与表达subtypequestiontypesinglechoicestemtypetexttext史书是古人写就的有些内容可能会因有人随意取舍记忆有误或者心存故意而历史真实运用基因等高科技手段的考古研究是科学它以客观而非主观的科学事实和科学数据得出结论科学可以检验可以用重复操作检验此前的研究成果是否准确正确从而了人为造假的可能依次填入画横线部分最恰当的一项是optionsAtypetexttext违背化解Btypetexttext掩盖规避Ctypetexttext虚构杜绝Dtypetexttext偏离降低optio"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 18,
+              "matched_chars": 48,
+              "pattern": "史书是古人写就的有些内容可能会因有人随意取舍记忆有误或者心存故意而历史真实运用基因等高科技手段的",
+              "context": "与表达subtypequestiontypesinglechoicestemtypetexttext史书是古人写就的有些内容可能会因有人随意取舍记忆有误或者心存故意而历史真实运用基因等高科技手段的考古研究是科学它以客观而非主观的科学事实和科学数据得出结论科学可以检验可以用重复操作检验此前的研究成果是否准确正确从而了人为造假的可能依次填入画横线部分最恰当的"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 18,
+              "matched_chars": 48,
+              "pattern": "有误或者心存故意而历史真实运用基因等高科技手段的考古研究是科学它以客观而非主观的科学事实和科学数",
+              "context": "nglechoicestemtypetexttext史书是古人写就的有些内容可能会因有人随意取舍记忆有误或者心存故意而历史真实运用基因等高科技手段的考古研究是科学它以客观而非主观的科学事实和科学数据得出结论科学可以检验可以用重复操作检验此前的研究成果是否准确正确从而了人为造假的可能依次填入画横线部分最恰当的一项是optionsAtypetexttext违"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 18,
+              "matched_chars": 48,
+              "pattern": "考古研究是科学它以客观而非主观的科学事实和科学数据得出结论科学可以检验可以用重复操作检验此前的研",
+              "context": "xt史书是古人写就的有些内容可能会因有人随意取舍记忆有误或者心存故意而历史真实运用基因等高科技手段的考古研究是科学它以客观而非主观的科学事实和科学数据得出结论科学可以检验可以用重复操作检验此前的研究成果是否准确正确从而了人为造假的可能依次填入画横线部分最恰当的一项是optionsAtypetexttext违背化解Btypetexttext掩盖规避Ctyp"
+            }
+          ]
+        }
+      ],
+      "text_pattern_count": 6,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 19,
+      "module": "verbal.json",
+      "source_id": "ZJ2026-A类-028",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 12,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 20,
+      "module": "verbal.json",
+      "source_id": "GKYY-2025-036",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 6,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 21,
+      "module": "verbal.json",
+      "source_id": "JS2024-A类-020",
+      "reserved_source_id_matches": [
+        "广东行测18套模拟/M01/selection.json",
+        "广东行测18套模拟/用题登记.jsonl"
+      ],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [
+        {
+          "path": "广东行测18套模拟/M01/selection.json",
+          "line": 1842,
+          "category": "prior_paper_reference",
+          "snippet": "ource_bank\": \"江浙行测_AI题库/questions.jsonl\",\n    \"source_id\": \"JS2024-A类-020\",\n    \"answer\": \"B\",\n    \"analysis\": \"文段先介绍线下生产与线上分析结合的模式，再说明这种模式怎样降低供应链成本、提高反应速度，最后明确落脚于中小企业的数字化转型和竞争优势。B完整概括了“数字赋能—改进"
+        },
+        {
+          "path": "广东行测18套模拟/M01/来源登记.jsonl",
+          "line": 21,
+          "category": "prior_paper_reference",
+          "snippet": "asset_paths\":[]}\n{\"paper_id\":\"M01\",\"number\":21,\"source_id\":\"JS2024-A类-020\",\"source_bank\":\"江浙行测_AI题库/questions.jsonl\",\"source_file\":\"江浙行测_AI题库/questions.jsonl\",\"source_file_sha256\":\"07b748dd27d4"
+        },
+        {
+          "path": "广东行测18套模拟/M01/核验记录/verbal_independent_answers.json",
+          "line": 29,
+          "category": "prior_paper_reference",
+          "snippet": "\n    20,\n    \"JS2024-A类-036\",\n    \"B\"\n  ],\n  [\n    21,\n    \"JS2024-A类-020\",\n    \"B\"\n  ],\n  [\n    22,\n    \"GKYY-2025-057\",\n    \"B\"\n  ],\n  [\n    23,\n    \"JS2024-A类-019\",\n    \"C\"\n  ],\n  [\n    24,\n"
+        },
+        {
+          "path": "广东行测18套模拟/M01/核验记录/verbal_notes.md",
+          "line": 26,
+          "category": "prior_paper_reference",
+          "snippet": "填空|\n|19|ZJ2023-A类-025|D|逻辑填空|\n|20|JS2024-A类-036|B|逻辑填空|\n|21|JS2024-A类-020|B|意图判断|\n|22|GKYY-2025-057|B|意图判断|\n|23|JS2024-A类-019|C|标题选择|\n|24|ZJ2024-A类-034|D|语句排序|\n|25|GKYY-2025-061|C|细节理解（选非）|\n|26"
+        },
+        {
+          "path": "广东行测18套模拟/M01/核验记录/verbal_review.json",
+          "line": 52,
+          "category": "prior_paper_reference",
+          "snippet": "_answer\": \"B\",\n      \"agreement\": true,\n      \"source_id\": \"JS2024-A类-020\"\n    },\n    {\n      \"number\": 22,\n      \"independent_answer\": \"B\",\n      \"reason\": \"权限不足与过度下放都构成问题，结论是科学精准配置、动态调整；B同时覆盖"
+        },
+        {
+          "path": "广东行测18套模拟/M01/答案与解析_待审.md",
+          "line": 247,
+          "category": "prior_paper_reference",
+          "snippet": "高为企业发展的“关键”，超出了原文；D把一种适合中小企业的模式说成所有企业转型的重心，范围和判断力度均扩大。\n\n来源：[JS2024-A类-020](../../江浙行测_AI题库/questions.jsonl)。原参考答案已存在，另经编辑独立解答。\n\n编辑处理：合并PDF行末硬换行；保留排序题各句及设问换行；去除填空线两侧排版空格。不改词语、标点、选项次序或答案。\n\n### 第2"
+        },
+        {
+          "path": "广东行测18套模拟/M01/选题记录.md",
+          "line": 25,
+          "category": "prior_paper_reference",
+          "snippet": "20 | JS2024-A类-036 | 三空政治社会题材，需把握现代与传统、实践与经验之间的关系。 |\n| 21 | JS2024-A类-020 | 新生产模式与中小企业转型相联系，错项分别截取环节、扩大范围、抬高程度。 |\n| 22 | GKYY-2025-057 | 两端都可能出问题的政策论证，须抓住精准匹配而不是一律下放，适合比较概括层级。 |\n| 23 | JS2024-A"
+        },
+        {
+          "path": "广东行测18套模拟/用题登记.jsonl",
+          "line": 21,
+          "category": "prior_paper_reference",
+          "snippet": "5b45d800ce00e7\"}\n{\"paper_id\":\"M01\",\"number\":21,\"source_id\":\"JS2024-A类-020\",\"source_file\":\"江浙行测_AI题库/questions.jsonl\",\"status\":\"reserved_for_review\",\"user_done\":\"unknown\",\"content_sha256\":\"7e685"
+        }
+      ],
+      "text_matches": [
+        {
+          "path": "广东行测18套模拟/M01/selection.json",
+          "prefix": "广东行测18套模拟/M01",
+          "match_count": 18,
+          "examples": [
+            {
+              "kind": "complete_current_stem",
+              "line": 1832,
+              "matched_chars": 208,
+              "pattern": "通过线下生产线上数据分析模式传统产业能够在规模化生产之外探索开展个性化定制服务比如先生产小批量产品投放市场再通过数据分析细分需求决定是否扩大生产这种轻资产快反应的柔性供应链模式增加了产品研发制造和流通的弹性能帮助解决传统供应链模式下机会成本高运转周期长等问题这样的生产变革能够通过精细化运营实现供需精准匹配是一种更加适合中小企业数字化转型的模式能让中小企业以小单快返的新模式轻装上阵形成独特的竞争优势这段文字意在说明",
+              "context": "tion言语理解与表达subtype意图判断questiontypesinglechoicestem通过线下生产线上数据分析模式传统产业能够在规模化生产之外探索开展个性化定制服务比如先生产小批量产品投放市场再通过数据分析细分需求决定是否扩大生产这种轻资产快反应的柔性供应链模式增加了产品研发制造和流通的弹性能帮助解决传统供应链模式下机会成本高运转周期长等问题这样的生产变革能够通过精细化运营实现供需精准匹配是一种更加适合中小企业数字化转型的模式能让中小企业以小单快返的新模式轻装上阵形成独特的竞争优势这段文字意在说明optionsA传统产业需借助数据分析突破固有局限B数字赋能可助力中小企业提升竞争优势C供需的动态平衡是中小企业发展的关键D企业的数字化转型重在构建柔性供应链m"
+            },
+            {
+              "kind": "complete_source_stem",
+              "line": 1832,
+              "matched_chars": 208,
+              "pattern": "通过线下生产线上数据分析模式传统产业能够在规模化生产之外探索开展个性化定制服务比如先生产小批量产品投放市场再通过数据分析细分需求决定是否扩大生产这种轻资产快反应的柔性供应链模式增加了产品研发制造和流通的弹性能帮助解决传统供应链模式下机会成本高运转周期长等问题这样的生产变革能够通过精细化运营实现供需精准匹配是一种更加适合中小企业数字化转型的模式能让中小企业以小单快返的新模式轻装上阵形成独特的竞争优势这段文字意在说明",
+              "context": "tion言语理解与表达subtype意图判断questiontypesinglechoicestem通过线下生产线上数据分析模式传统产业能够在规模化生产之外探索开展个性化定制服务比如先生产小批量产品投放市场再通过数据分析细分需求决定是否扩大生产这种轻资产快反应的柔性供应链模式增加了产品研发制造和流通的弹性能帮助解决传统供应链模式下机会成本高运转周期长等问题这样的生产变革能够通过精细化运营实现供需精准匹配是一种更加适合中小企业数字化转型的模式能让中小企业以小单快返的新模式轻装上阵形成独特的竞争优势这段文字意在说明optionsA传统产业需借助数据分析突破固有局限B数字赋能可助力中小企业提升竞争优势C供需的动态平衡是中小企业发展的关键D企业的数字化转型重在构建柔性供应链m"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 1832,
+              "matched_chars": 48,
+              "pattern": "通过线下生产线上数据分析模式传统产业能够在规模化生产之外探索开展个性化定制服务比如先生产小批量产",
+              "context": "tion言语理解与表达subtype意图判断questiontypesinglechoicestem通过线下生产线上数据分析模式传统产业能够在规模化生产之外探索开展个性化定制服务比如先生产小批量产品投放市场再通过数据分析细分需求决定是否扩大生产这种轻资产快反应的柔性供应链模式增加了产品研发制造和流通的弹性能帮助解决传统供应链模式下机会成本高运转周期长等问"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 1832,
+              "matched_chars": 48,
+              "pattern": "生产之外探索开展个性化定制服务比如先生产小批量产品投放市场再通过数据分析细分需求决定是否扩大生产",
+              "context": "estiontypesinglechoicestem通过线下生产线上数据分析模式传统产业能够在规模化生产之外探索开展个性化定制服务比如先生产小批量产品投放市场再通过数据分析细分需求决定是否扩大生产这种轻资产快反应的柔性供应链模式增加了产品研发制造和流通的弹性能帮助解决传统供应链模式下机会成本高运转周期长等问题这样的生产变革能够通过精细化运营实现供需精准匹"
+            }
+          ]
+        },
+        {
+          "path": "广东行测18套模拟/M01/题本_待审.md",
+          "prefix": "广东行测18套模拟/M01",
+          "match_count": 18,
+          "examples": [
+            {
+              "kind": "complete_current_stem",
+              "line": 247,
+              "matched_chars": 208,
+              "pattern": "通过线下生产线上数据分析模式传统产业能够在规模化生产之外探索开展个性化定制服务比如先生产小批量产品投放市场再通过数据分析细分需求决定是否扩大生产这种轻资产快反应的柔性供应链模式增加了产品研发制造和流通的弹性能帮助解决传统供应链模式下机会成本高运转周期长等问题这样的生产变革能够通过精细化运营实现供需精准匹配是一种更加适合中小企业数字化转型的模式能让中小企业以小单快返的新模式轻装上阵形成独特的竞争优势这段文字意在说明",
+              "context": "分最恰当的一项是A孕育新方法一脉相承B蕴含新经验交相辉映C贯通新举措并驾齐驱D发轫新视野相辅相成21通过线下生产线上数据分析模式传统产业能够在规模化生产之外探索开展个性化定制服务比如先生产小批量产品投放市场再通过数据分析细分需求决定是否扩大生产这种轻资产快反应的柔性供应链模式增加了产品研发制造和流通的弹性能帮助解决传统供应链模式下机会成本高运转周期长等问题这样的生产变革能够通过精细化运营实现供需精准匹配是一种更加适合中小企业数字化转型的模式能让中小企业以小单快返的新模式轻装上阵形成独特的竞争优势这段文字意在说明A传统产业需借助数据分析突破固有局限B数字赋能可助力中小企业提升竞争优势C供需的动态平衡是中小企业发展的关键D企业的数字化转型重在构建柔性供应链22足够的执法权"
+            },
+            {
+              "kind": "complete_source_stem",
+              "line": 247,
+              "matched_chars": 208,
+              "pattern": "通过线下生产线上数据分析模式传统产业能够在规模化生产之外探索开展个性化定制服务比如先生产小批量产品投放市场再通过数据分析细分需求决定是否扩大生产这种轻资产快反应的柔性供应链模式增加了产品研发制造和流通的弹性能帮助解决传统供应链模式下机会成本高运转周期长等问题这样的生产变革能够通过精细化运营实现供需精准匹配是一种更加适合中小企业数字化转型的模式能让中小企业以小单快返的新模式轻装上阵形成独特的竞争优势这段文字意在说明",
+              "context": "分最恰当的一项是A孕育新方法一脉相承B蕴含新经验交相辉映C贯通新举措并驾齐驱D发轫新视野相辅相成21通过线下生产线上数据分析模式传统产业能够在规模化生产之外探索开展个性化定制服务比如先生产小批量产品投放市场再通过数据分析细分需求决定是否扩大生产这种轻资产快反应的柔性供应链模式增加了产品研发制造和流通的弹性能帮助解决传统供应链模式下机会成本高运转周期长等问题这样的生产变革能够通过精细化运营实现供需精准匹配是一种更加适合中小企业数字化转型的模式能让中小企业以小单快返的新模式轻装上阵形成独特的竞争优势这段文字意在说明A传统产业需借助数据分析突破固有局限B数字赋能可助力中小企业提升竞争优势C供需的动态平衡是中小企业发展的关键D企业的数字化转型重在构建柔性供应链22足够的执法权"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 247,
+              "matched_chars": 48,
+              "pattern": "通过线下生产线上数据分析模式传统产业能够在规模化生产之外探索开展个性化定制服务比如先生产小批量产",
+              "context": "分最恰当的一项是A孕育新方法一脉相承B蕴含新经验交相辉映C贯通新举措并驾齐驱D发轫新视野相辅相成21通过线下生产线上数据分析模式传统产业能够在规模化生产之外探索开展个性化定制服务比如先生产小批量产品投放市场再通过数据分析细分需求决定是否扩大生产这种轻资产快反应的柔性供应链模式增加了产品研发制造和流通的弹性能帮助解决传统供应链模式下机会成本高运转周期长等问"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 247,
+              "matched_chars": 48,
+              "pattern": "生产之外探索开展个性化定制服务比如先生产小批量产品投放市场再通过数据分析细分需求决定是否扩大生产",
+              "context": "交相辉映C贯通新举措并驾齐驱D发轫新视野相辅相成21通过线下生产线上数据分析模式传统产业能够在规模化生产之外探索开展个性化定制服务比如先生产小批量产品投放市场再通过数据分析细分需求决定是否扩大生产这种轻资产快反应的柔性供应链模式增加了产品研发制造和流通的弹性能帮助解决传统供应链模式下机会成本高运转周期长等问题这样的生产变革能够通过精细化运营实现供需精准匹"
+            }
+          ]
+        },
+        {
+          "path": "广东行测18套模拟/M01/题目.jsonl",
+          "prefix": "广东行测18套模拟/M01",
+          "match_count": 18,
+          "examples": [
+            {
+              "kind": "complete_current_stem",
+              "line": 21,
+              "matched_chars": 208,
+              "pattern": "通过线下生产线上数据分析模式传统产业能够在规模化生产之外探索开展个性化定制服务比如先生产小批量产品投放市场再通过数据分析细分需求决定是否扩大生产这种轻资产快反应的柔性供应链模式增加了产品研发制造和流通的弹性能帮助解决传统供应链模式下机会成本高运转周期长等问题这样的生产变革能够通过精细化运营实现供需精准匹配是一种更加适合中小企业数字化转型的模式能让中小企业以小单快返的新模式轻装上阵形成独特的竞争优势这段文字意在说明",
+              "context": "ubtype意图判断questiontypesinglechoicestemtypetexttext通过线下生产线上数据分析模式传统产业能够在规模化生产之外探索开展个性化定制服务比如先生产小批量产品投放市场再通过数据分析细分需求决定是否扩大生产这种轻资产快反应的柔性供应链模式增加了产品研发制造和流通的弹性能帮助解决传统供应链模式下机会成本高运转周期长等问题这样的生产变革能够通过精细化运营实现供需精准匹配是一种更加适合中小企业数字化转型的模式能让中小企业以小单快返的新模式轻装上阵形成独特的竞争优势这段文字意在说明optionsAtypetexttext传统产业需借助数据分析突破固有局限Btypetexttext数字赋能可助力中小企业提升竞争优势Ctypetexttext"
+            },
+            {
+              "kind": "complete_source_stem",
+              "line": 21,
+              "matched_chars": 208,
+              "pattern": "通过线下生产线上数据分析模式传统产业能够在规模化生产之外探索开展个性化定制服务比如先生产小批量产品投放市场再通过数据分析细分需求决定是否扩大生产这种轻资产快反应的柔性供应链模式增加了产品研发制造和流通的弹性能帮助解决传统供应链模式下机会成本高运转周期长等问题这样的生产变革能够通过精细化运营实现供需精准匹配是一种更加适合中小企业数字化转型的模式能让中小企业以小单快返的新模式轻装上阵形成独特的竞争优势这段文字意在说明",
+              "context": "ubtype意图判断questiontypesinglechoicestemtypetexttext通过线下生产线上数据分析模式传统产业能够在规模化生产之外探索开展个性化定制服务比如先生产小批量产品投放市场再通过数据分析细分需求决定是否扩大生产这种轻资产快反应的柔性供应链模式增加了产品研发制造和流通的弹性能帮助解决传统供应链模式下机会成本高运转周期长等问题这样的生产变革能够通过精细化运营实现供需精准匹配是一种更加适合中小企业数字化转型的模式能让中小企业以小单快返的新模式轻装上阵形成独特的竞争优势这段文字意在说明optionsAtypetexttext传统产业需借助数据分析突破固有局限Btypetexttext数字赋能可助力中小企业提升竞争优势Ctypetexttext"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 21,
+              "matched_chars": 48,
+              "pattern": "通过线下生产线上数据分析模式传统产业能够在规模化生产之外探索开展个性化定制服务比如先生产小批量产",
+              "context": "ubtype意图判断questiontypesinglechoicestemtypetexttext通过线下生产线上数据分析模式传统产业能够在规模化生产之外探索开展个性化定制服务比如先生产小批量产品投放市场再通过数据分析细分需求决定是否扩大生产这种轻资产快反应的柔性供应链模式增加了产品研发制造和流通的弹性能帮助解决传统供应链模式下机会成本高运转周期长等问"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 21,
+              "matched_chars": 48,
+              "pattern": "生产之外探索开展个性化定制服务比如先生产小批量产品投放市场再通过数据分析细分需求决定是否扩大生产",
+              "context": "nglechoicestemtypetexttext通过线下生产线上数据分析模式传统产业能够在规模化生产之外探索开展个性化定制服务比如先生产小批量产品投放市场再通过数据分析细分需求决定是否扩大生产这种轻资产快反应的柔性供应链模式增加了产品研发制造和流通的弹性能帮助解决传统供应链模式下机会成本高运转周期长等问题这样的生产变革能够通过精细化运营实现供需精准匹"
+            }
+          ]
+        }
+      ],
+      "text_pattern_count": 18,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 22,
+      "module": "verbal.json",
+      "source_id": "GKYY-2024-052",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 10,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 23,
+      "module": "verbal.json",
+      "source_id": "ZJ2025-A类-034",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 18,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 24,
+      "module": "verbal.json",
+      "source_id": "ZJ2024-A类-045",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 18,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 25,
+      "module": "verbal.json",
+      "source_id": "GKYY-2025-044",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 9,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 26,
+      "module": "verbal.json",
+      "source_id": "GKYY-2025-017",
+      "reserved_source_id_matches": [
+        "广东行测18套模拟/M01/selection.json",
+        "广东行测18套模拟/用题登记.jsonl"
+      ],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [
+        {
+          "path": "广东行测18套模拟/M01/selection.json",
+          "line": 3033,
+          "category": "prior_paper_reference",
+          "snippet": "rce_bank\": \"国考/言语理解/2016-2025/all.jsonl\",\n    \"source_id\": \"GKYY-2025-017\",\n    \"answer\": \"C\",\n    \"analysis\": \"②先给出现行框架中的结论：数字生命不是承担法律责任的主体。⑥中的“这”承接该结论，补充原因。⑤转而交代由谁负责，③用机器出错应找开发维护人员修复加以说明。①再用“"
+        },
+        {
+          "path": "广东行测18套模拟/M01/来源登记.jsonl",
+          "line": 30,
+          "category": "prior_paper_reference",
+          "snippet": "asset_paths\":[]}\n{\"paper_id\":\"M01\",\"number\":30,\"source_id\":\"GKYY-2025-017\",\"source_bank\":\"国考/言语理解/2016-2025/all.jsonl\",\"source_file\":\"国考/言语理解/2016-2025/all.jsonl\",\"source_file_sha256\":\"f3e46893"
+        },
+        {
+          "path": "广东行测18套模拟/M01/核验记录/verbal_independent_answers.json",
+          "line": 74,
+          "category": "prior_paper_reference",
+          "snippet": "\n    29,\n    \"ZJ2025-A类-046\",\n    \"C\"\n  ],\n  [\n    30,\n    \"GKYY-2025-017\",\n    \"C\"\n  ]\n]"
+        },
+        {
+          "path": "广东行测18套模拟/M01/核验记录/verbal_national_provenance.json",
+          "line": 65,
+          "category": "prior_paper_reference",
+          "snippet": "ion\": \"原PDF文本定位；入选题面另经页面渲染核对（重复卷别仅核对一份完整题面）。\"\n    }\n  ],\n  \"GKYY-2025-017\": [\n    {\n      \"question_pdf\": \"国考/真题/2025年国家公务员录用考试《行测》题（地市级）.pdf\",\n      \"question_pages\": [\n        8\n      ],\n    "
+        },
+        {
+          "path": "广东行测18套模拟/M01/核验记录/verbal_notes.md",
+          "line": 35,
+          "category": "prior_paper_reference",
+          "snippet": "填空|\n|28|GKYY-2025-046|A|主旨概括|\n|29|ZJ2025-A类-046|C|意图判断|\n|30|GKYY-2025-017|C|语句排序|\n\n## 核验结果与边界\n\n先读取题面并将独立答案落盘，再读取源答案；两道初选题出现分歧，另选替代题后，最终15题独立答案均与来源参考答案一致。之后重写解释，着重核对错项为什么不足、范围是否被扩大、因果方向是否被倒置，没有直"
+        },
+        {
+          "path": "广东行测18套模拟/M01/核验记录/verbal_review.json",
+          "line": 124,
+          "category": "prior_paper_reference",
+          "snippet": "_answer\": \"C\",\n      \"agreement\": true,\n      \"source_id\": \"GKYY-2025-017\"\n    }\n  ]\n}\n"
+        },
+        {
+          "path": "广东行测18套模拟/M01/答案与解析_待审.md",
+          "line": 311,
+          "category": "prior_paper_reference",
+          "snippet": "，选C。注意⑤③是一组“责任主体—具体处置”的关系，①④是一组“现象—条件推进”的关系，不能只看单个关联词。\n\n来源：[GKYY-2025-017](../../国考/言语理解/2016-2025/all.jsonl)。原参考答案已存在，另经编辑独立解答。\n\n### 第31题　D\n\n相邻两项作商依次为1/2、1、3/2、2、5/2，商每次增加1/2，下一商为3，因此下一项为(15/2"
+        },
+        {
+          "path": "广东行测18套模拟/M01/选题记录.md",
+          "line": 34,
+          "category": "prior_paper_reference",
+          "snippet": " ZJ2025-A类-046 | 跨时期展开的主旨题，最后落脚整体发展，防止把最新阶段当成全文重点。 |\n| 30 | GKYY-2025-017 | 数字生命题材的六句排序，涉及指代、例证与条件推进，是较适合后置和回收判断的潜在对象；题本不作提示。 |\n| 31 | ZJ2025-A类-052 | 商的等差变化。提供可识别的具体入口，题源本身没有被降难度。 |\n| 32 | gd-"
+        },
+        {
+          "path": "广东行测18套模拟/用题登记.jsonl",
+          "line": 30,
+          "category": "prior_paper_reference",
+          "snippet": "9f609167eeb08e\"}\n{\"paper_id\":\"M01\",\"number\":30,\"source_id\":\"GKYY-2025-017\",\"source_file\":\"国考/言语理解/2016-2025/all.jsonl\",\"status\":\"reserved_for_review\",\"user_done\":\"unknown\",\"content_sha256\":\"49e"
+        }
+      ],
+      "text_matches": [
+        {
+          "path": "广东行测18套模拟/M01/selection.json",
+          "prefix": "广东行测18套模拟/M01",
+          "match_count": 12,
+          "examples": [
+            {
+              "kind": "complete_current_stem",
+              "line": 3023,
+              "matched_chars": 280,
+              "pattern": "1但目前来看新一代AI都表现出一定的回避提问的意图这可能与模型试图节约算力资源有关2在目前的法律框架内数字生命还不是可以承担法律责任的主体而被认为是程序代码或是人在网络空间中的一个身份3如果机器向人输出了错误或者不能理解的内容这是算法故障应当要求开发维护人员尽快修复而不是指令机器立刻改正4不过一旦模型有自主选择逃避人类提问的能力并且已经脱离了开发人员的控制AI没有法律人格的结论就要面临挑战了5一般认为创造数字生命的人就是对数字生命负责的人例如程序的开发者AI的使用者等6这除了伦理上的考虑还有其不具备承担责任可能的因素将以上6个句子重新排列语序正确的一项是",
+              "context": "tion言语理解与表达subtype语句排序questiontypesinglechoicestem1但目前来看新一代AI都表现出一定的回避提问的意图这可能与模型试图节约算力资源有关2在目前的法律框架内数字生命还不是可以承担法律责任的主体而被认为是程序代码或是人在网络空间中的一个身份3如果机器向人输出了错误或者不能理解的内容这是算法故障应当要求开发维护人员尽快修复而不是指令机器立刻改正4不过一旦模型有自主选择逃避人类提问的能力并且已经脱离了开发人员的控制AI没有法律人格的结论就要面临挑战了5一般认为创造数字生命的人就是对数字生命负责的人例如程序的开发者AI的使用者等6这除了伦理上的考虑还有其不具备承担责任可能的因素将以上6个句子重新排列语序正确的一项是optionsA256143B526413C265314D532641materialnullfiguressourcebank国考言语理解20162025al"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 3023,
+              "matched_chars": 48,
+              "pattern": "1但目前来看新一代AI都表现出一定的回避提问的意图这可能与模型试图节约算力资源有关2在目前的法律",
+              "context": "tion言语理解与表达subtype语句排序questiontypesinglechoicestem1但目前来看新一代AI都表现出一定的回避提问的意图这可能与模型试图节约算力资源有关2在目前的法律框架内数字生命还不是可以承担法律责任的主体而被认为是程序代码或是人在网络空间中的一个身份3如果机器向人输出了错误或者不能理解的内容这是算法故障应当要求开发维护人"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 3023,
+              "matched_chars": 48,
+              "pattern": "图这可能与模型试图节约算力资源有关2在目前的法律框架内数字生命还不是可以承担法律责任的主体而被认",
+              "context": "estiontypesinglechoicestem1但目前来看新一代AI都表现出一定的回避提问的意图这可能与模型试图节约算力资源有关2在目前的法律框架内数字生命还不是可以承担法律责任的主体而被认为是程序代码或是人在网络空间中的一个身份3如果机器向人输出了错误或者不能理解的内容这是算法故障应当要求开发维护人员尽快修复而不是指令机器立刻改正4不过一旦模型有"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 3023,
+              "matched_chars": 48,
+              "pattern": "框架内数字生命还不是可以承担法律责任的主体而被认为是程序代码或是人在网络空间中的一个身份3如果机",
+              "context": "em1但目前来看新一代AI都表现出一定的回避提问的意图这可能与模型试图节约算力资源有关2在目前的法律框架内数字生命还不是可以承担法律责任的主体而被认为是程序代码或是人在网络空间中的一个身份3如果机器向人输出了错误或者不能理解的内容这是算法故障应当要求开发维护人员尽快修复而不是指令机器立刻改正4不过一旦模型有自主选择逃避人类提问的能力并且已经脱离了开发人员"
+            }
+          ]
+        },
+        {
+          "path": "广东行测18套模拟/M01/题本_待审.md",
+          "prefix": "广东行测18套模拟/M01",
+          "match_count": 12,
+          "examples": [
+            {
+              "kind": "complete_current_stem",
+              "line": 369,
+              "matched_chars": 280,
+              "pattern": "1但目前来看新一代AI都表现出一定的回避提问的意图这可能与模型试图节约算力资源有关2在目前的法律框架内数字生命还不是可以承担法律责任的主体而被认为是程序代码或是人在网络空间中的一个身份3如果机器向人输出了错误或者不能理解的内容这是算法故障应当要求开发维护人员尽快修复而不是指令机器立刻改正4不过一旦模型有自主选择逃避人类提问的能力并且已经脱离了开发人员的控制AI没有法律人格的结论就要面临挑战了5一般认为创造数字生命的人就是对数字生命负责的人例如程序的开发者AI的使用者等6这除了伦理上的考虑还有其不具备承担责任可能的因素将以上6个句子重新排列语序正确的一项是",
+              "context": "语言是人类社会得以运转的基础C人类社会的进步离不开语言的发展D语言是人类区别于其他动物的重要标志301但目前来看新一代AI都表现出一定的回避提问的意图这可能与模型试图节约算力资源有关2在目前的法律框架内数字生命还不是可以承担法律责任的主体而被认为是程序代码或是人在网络空间中的一个身份3如果机器向人输出了错误或者不能理解的内容这是算法故障应当要求开发维护人员尽快修复而不是指令机器立刻改正4不过一旦模型有自主选择逃避人类提问的能力并且已经脱离了开发人员的控制AI没有法律人格的结论就要面临挑战了5一般认为创造数字生命的人就是对数字生命负责的人例如程序的开发者AI的使用者等6这除了伦理上的考虑还有其不具备承担责任可能的因素将以上6个句子重新排列语序正确的一项是A256143B526413C265314D532641四数量关系数字推理31211323152A9B16C352D45232812234478A99B106C"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 369,
+              "matched_chars": 48,
+              "pattern": "1但目前来看新一代AI都表现出一定的回避提问的意图这可能与模型试图节约算力资源有关2在目前的法律",
+              "context": "语言是人类社会得以运转的基础C人类社会的进步离不开语言的发展D语言是人类区别于其他动物的重要标志301但目前来看新一代AI都表现出一定的回避提问的意图这可能与模型试图节约算力资源有关2在目前的法律框架内数字生命还不是可以承担法律责任的主体而被认为是程序代码或是人在网络空间中的一个身份3如果机器向人输出了错误或者不能理解的内容这是算法故障应当要求开发维护人"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 369,
+              "matched_chars": 48,
+              "pattern": "图这可能与模型试图节约算力资源有关2在目前的法律框架内数字生命还不是可以承担法律责任的主体而被认",
+              "context": "开语言的发展D语言是人类区别于其他动物的重要标志301但目前来看新一代AI都表现出一定的回避提问的意图这可能与模型试图节约算力资源有关2在目前的法律框架内数字生命还不是可以承担法律责任的主体而被认为是程序代码或是人在网络空间中的一个身份3如果机器向人输出了错误或者不能理解的内容这是算法故障应当要求开发维护人员尽快修复而不是指令机器立刻改正4不过一旦模型有"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 370,
+              "matched_chars": 48,
+              "pattern": "框架内数字生命还不是可以承担法律责任的主体而被认为是程序代码或是人在网络空间中的一个身份3如果机",
+              "context": "301但目前来看新一代AI都表现出一定的回避提问的意图这可能与模型试图节约算力资源有关2在目前的法律框架内数字生命还不是可以承担法律责任的主体而被认为是程序代码或是人在网络空间中的一个身份3如果机器向人输出了错误或者不能理解的内容这是算法故障应当要求开发维护人员尽快修复而不是指令机器立刻改正4不过一旦模型有自主选择逃避人类提问的能力并且已经脱离了开发人员"
+            }
+          ]
+        },
+        {
+          "path": "广东行测18套模拟/M01/题目.jsonl",
+          "prefix": "广东行测18套模拟/M01",
+          "match_count": 12,
+          "examples": [
+            {
+              "kind": "complete_current_stem",
+              "line": 30,
+              "matched_chars": 280,
+              "pattern": "1但目前来看新一代AI都表现出一定的回避提问的意图这可能与模型试图节约算力资源有关2在目前的法律框架内数字生命还不是可以承担法律责任的主体而被认为是程序代码或是人在网络空间中的一个身份3如果机器向人输出了错误或者不能理解的内容这是算法故障应当要求开发维护人员尽快修复而不是指令机器立刻改正4不过一旦模型有自主选择逃避人类提问的能力并且已经脱离了开发人员的控制AI没有法律人格的结论就要面临挑战了5一般认为创造数字生命的人就是对数字生命负责的人例如程序的开发者AI的使用者等6这除了伦理上的考虑还有其不具备承担责任可能的因素将以上6个句子重新排列语序正确的一项是",
+              "context": "ubtype语句排序questiontypesinglechoicestemtypetexttext1但目前来看新一代AI都表现出一定的回避提问的意图这可能与模型试图节约算力资源有关2在目前的法律框架内数字生命还不是可以承担法律责任的主体而被认为是程序代码或是人在网络空间中的一个身份3如果机器向人输出了错误或者不能理解的内容这是算法故障应当要求开发维护人员尽快修复而不是指令机器立刻改正4不过一旦模型有自主选择逃避人类提问的能力并且已经脱离了开发人员的控制AI没有法律人格的结论就要面临挑战了5一般认为创造数字生命的人就是对数字生命负责的人例如程序的开发者AI的使用者等6这除了伦理上的考虑还有其不具备承担责任可能的因素将以上6个句子重新排列语序正确的一项是optionsAtypetexttext256143Btypetexttext526413Ctypetexttext265314Dtypetexttext532"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 30,
+              "matched_chars": 48,
+              "pattern": "1但目前来看新一代AI都表现出一定的回避提问的意图这可能与模型试图节约算力资源有关2在目前的法律",
+              "context": "ubtype语句排序questiontypesinglechoicestemtypetexttext1但目前来看新一代AI都表现出一定的回避提问的意图这可能与模型试图节约算力资源有关2在目前的法律框架内数字生命还不是可以承担法律责任的主体而被认为是程序代码或是人在网络空间中的一个身份3如果机器向人输出了错误或者不能理解的内容这是算法故障应当要求开发维护人"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 30,
+              "matched_chars": 48,
+              "pattern": "图这可能与模型试图节约算力资源有关2在目前的法律框架内数字生命还不是可以承担法律责任的主体而被认",
+              "context": "nglechoicestemtypetexttext1但目前来看新一代AI都表现出一定的回避提问的意图这可能与模型试图节约算力资源有关2在目前的法律框架内数字生命还不是可以承担法律责任的主体而被认为是程序代码或是人在网络空间中的一个身份3如果机器向人输出了错误或者不能理解的内容这是算法故障应当要求开发维护人员尽快修复而不是指令机器立刻改正4不过一旦模型有"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 30,
+              "matched_chars": 48,
+              "pattern": "框架内数字生命还不是可以承担法律责任的主体而被认为是程序代码或是人在网络空间中的一个身份3如果机",
+              "context": "xt1但目前来看新一代AI都表现出一定的回避提问的意图这可能与模型试图节约算力资源有关2在目前的法律框架内数字生命还不是可以承担法律责任的主体而被认为是程序代码或是人在网络空间中的一个身份3如果机器向人输出了错误或者不能理解的内容这是算法故障应当要求开发维护人员尽快修复而不是指令机器立刻改正4不过一旦模型有自主选择逃避人类提问的能力并且已经脱离了开发人员"
+            }
+          ]
+        }
+      ],
+      "text_pattern_count": 12,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 27,
+      "module": "verbal.json",
+      "source_id": "GKYY-2025-048",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 9,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 28,
+      "module": "verbal.json",
+      "source_id": "ZJ2024-A类-046",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 18,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 29,
+      "module": "verbal.json",
+      "source_id": "GKYY-2024-066",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 10,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 30,
+      "module": "verbal.json",
+      "source_id": "GKYY-2025-061",
+      "reserved_source_id_matches": [
+        "广东行测18套模拟/M01/selection.json",
+        "广东行测18套模拟/用题登记.jsonl"
+      ],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [
+        {
+          "path": "广东行测18套模拟/M01/selection.json",
+          "line": 2447,
+          "category": "prior_paper_reference",
+          "snippet": "rce_bank\": \"国考/言语理解/2016-2025/all.jsonl\",\n    \"source_id\": \"GKYY-2025-061\",\n    \"answer\": \"C\",\n    \"analysis\": \"A在“实验室的模拟舱也很难还原深海复杂的环境条件”处有直接依据。B可从传统方法的限制与拉曼技术能在深海原位直接研究的对照中得到。D对应深海与海面之间压力、温度的差"
+        },
+        {
+          "path": "广东行测18套模拟/M01/来源登记.jsonl",
+          "line": 25,
+          "category": "prior_paper_reference",
+          "snippet": "asset_paths\":[]}\n{\"paper_id\":\"M01\",\"number\":25,\"source_id\":\"GKYY-2025-061\",\"source_bank\":\"国考/言语理解/2016-2025/all.jsonl\",\"source_file\":\"国考/言语理解/2016-2025/all.jsonl\",\"source_file_sha256\":\"f3e46893"
+        },
+        {
+          "path": "广东行测18套模拟/M01/核验记录/verbal_independent_answers.json",
+          "line": 49,
+          "category": "prior_paper_reference",
+          "snippet": "\n    24,\n    \"ZJ2024-A类-034\",\n    \"D\"\n  ],\n  [\n    25,\n    \"GKYY-2025-061\",\n    \"C\"\n  ],\n  [\n    26,\n    \"ZJ2025-A类-048\",\n    \"D\"\n  ],\n  [\n    27,\n    \"GKYY-2025-058\",\n    \"A\"\n  ],\n  [\n    28,\n"
+        },
+        {
+          "path": "广东行测18套模拟/M01/核验记录/verbal_national_provenance.json",
+          "line": 52,
+          "category": "prior_paper_reference",
+          "snippet": "ion\": \"原PDF文本定位；入选题面另经页面渲染核对（重复卷别仅核对一份完整题面）。\"\n    }\n  ],\n  \"GKYY-2025-061\": [\n    {\n      \"question_pdf\": \"国考/真题/2025年国家公务员录用考试《行测》题（行政执法卷）.pdf\",\n      \"question_pages\": [\n        10\n      ],\n "
+        },
+        {
+          "path": "广东行测18套模拟/M01/核验记录/verbal_notes.md",
+          "line": 30,
+          "category": "prior_paper_reference",
+          "snippet": "判断|\n|23|JS2024-A类-019|C|标题选择|\n|24|ZJ2024-A类-034|D|语句排序|\n|25|GKYY-2025-061|C|细节理解（选非）|\n|26|ZJ2025-A类-048|D|细节理解（选非）|\n|27|GKYY-2025-058|A|语句填空|\n|28|GKYY-2025-046|A|主旨概括|\n|29|ZJ2025-A类-046|C|意图判断|"
+        },
+        {
+          "path": "广东行测18套模拟/M01/核验记录/verbal_review.json",
+          "line": 84,
+          "category": "prior_paper_reference",
+          "snippet": "_answer\": \"C\",\n      \"agreement\": true,\n      \"source_id\": \"GKYY-2025-061\"\n    },\n    {\n      \"number\": 26,\n      \"independent_answer\": \"D\",\n      \"reason\": \"读者期待低折扣是面对高定价的反应，文末指向价格调控失灵导致博弈；没有把"
+        },
+        {
+          "path": "广东行测18套模拟/M01/答案与解析_待审.md",
+          "line": 277,
+          "category": "prior_paper_reference",
+          "snippet": "样工作，并没有说深海环境会给它带来哪些应用限制，故未提及的是C。不要把传统取样方法遇到的限制移到新技术身上。\n\n来源：[GKYY-2025-061](../../国考/言语理解/2016-2025/all.jsonl)。原参考答案已存在，另经编辑独立解答。\n\n### 第26题　D\n\n文段把图书高定价与网络书店低折扣的博弈归因于价格调控失灵，D却把读者期待低折扣说成调控失灵的主要原因，"
+        },
+        {
+          "path": "广东行测18套模拟/M01/选题记录.md",
+          "line": 29,
+          "category": "prior_paper_reference",
+          "snippet": "34 | 城市治理题材的六句排序，包含问题、解释、追问、作答、事实、落实的关系，保留较完整搜索任务。 |\n| 25 | GKYY-2025-061 | 细节选非需要区分旧方法的局限与新方法的优势，防止把同一材料中的属性移到另一对象。 |\n| 26 | ZJ2025-A类-048 | 细节选非带有双重转折及因果方向，验证负担与上一题不同。 |\n| 27 | GKYY-2025-058 "
+        },
+        {
+          "path": "广东行测18套模拟/用题登记.jsonl",
+          "line": 25,
+          "category": "prior_paper_reference",
+          "snippet": "d465cfda4aec47\"}\n{\"paper_id\":\"M01\",\"number\":25,\"source_id\":\"GKYY-2025-061\",\"source_file\":\"国考/言语理解/2016-2025/all.jsonl\",\"status\":\"reserved_for_review\",\"user_done\":\"unknown\",\"content_sha256\":\"2a4"
+        }
+      ],
+      "text_matches": [
+        {
+          "path": "广东行测18套模拟/M01/selection.json",
+          "prefix": "广东行测18套模拟/M01",
+          "match_count": 9,
+          "examples": [
+            {
+              "kind": "complete_current_stem",
+              "line": 2437,
+              "matched_chars": 202,
+              "pattern": "近百年来对于天然气水合物的研究通常是保压取样后在实验室进行或在耐压舱中模拟水合物的形成分解但由于深海与海面之间压力和温度的差异在样品回收过程中天然气水合物的一些性质会被破坏实验室的模拟舱也很难还原深海复杂的环境条件拉曼光谱技术能在深海原位环境中对天然气水合物进行直接研究在这项技术中激光通过光纤系统传输到深海并与待测样品发生拉曼散射通过采集和分析散射光谱可获得样品组分结构和理化性质等信息这段文字没有提及",
+              "context": "on言语理解与表达subtype细节理解选非questiontypesinglechoicestem近百年来对于天然气水合物的研究通常是保压取样后在实验室进行或在耐压舱中模拟水合物的形成分解但由于深海与海面之间压力和温度的差异在样品回收过程中天然气水合物的一些性质会被破坏实验室的模拟舱也很难还原深海复杂的环境条件拉曼光谱技术能在深海原位环境中对天然气水合物进行直接研究在这项技术中激光通过光纤系统传输到深海并与待测样品发生拉曼散射通过采集和分析散射光谱可获得样品组分结构和理化性质等信息这段文字没有提及optionsA在实验室模拟舱研究天然气水合物的弊端B拉曼光谱技术对研究天然气水合物的优势C深海环境对应用拉曼光谱技术的限制D天然气水合物样品性质被破坏的原因m"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 2437,
+              "matched_chars": 48,
+              "pattern": "近百年来对于天然气水合物的研究通常是保压取样后在实验室进行或在耐压舱中模拟水合物的形成分解但由于",
+              "context": "on言语理解与表达subtype细节理解选非questiontypesinglechoicestem近百年来对于天然气水合物的研究通常是保压取样后在实验室进行或在耐压舱中模拟水合物的形成分解但由于深海与海面之间压力和温度的差异在样品回收过程中天然气水合物的一些性质会被破坏实验室的模拟舱也很难还原深海复杂的环境条件拉曼光谱技术能在深海原位环境中对天然气水合"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 2437,
+              "matched_chars": 48,
+              "pattern": "实验室进行或在耐压舱中模拟水合物的形成分解但由于深海与海面之间压力和温度的差异在样品回收过程中天",
+              "context": "estiontypesinglechoicestem近百年来对于天然气水合物的研究通常是保压取样后在实验室进行或在耐压舱中模拟水合物的形成分解但由于深海与海面之间压力和温度的差异在样品回收过程中天然气水合物的一些性质会被破坏实验室的模拟舱也很难还原深海复杂的环境条件拉曼光谱技术能在深海原位环境中对天然气水合物进行直接研究在这项技术中激光通过光纤系统传输到"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 2437,
+              "matched_chars": 48,
+              "pattern": "深海与海面之间压力和温度的差异在样品回收过程中天然气水合物的一些性质会被破坏实验室的模拟舱也很难",
+              "context": "em近百年来对于天然气水合物的研究通常是保压取样后在实验室进行或在耐压舱中模拟水合物的形成分解但由于深海与海面之间压力和温度的差异在样品回收过程中天然气水合物的一些性质会被破坏实验室的模拟舱也很难还原深海复杂的环境条件拉曼光谱技术能在深海原位环境中对天然气水合物进行直接研究在这项技术中激光通过光纤系统传输到深海并与待测样品发生拉曼散射通过采集和分析散射光"
+            }
+          ]
+        },
+        {
+          "path": "广东行测18套模拟/M01/题本_待审.md",
+          "prefix": "广东行测18套模拟/M01",
+          "match_count": 9,
+          "examples": [
+            {
+              "kind": "complete_current_stem",
+              "line": 304,
+              "matched_chars": 202,
+              "pattern": "近百年来对于天然气水合物的研究通常是保压取样后在实验室进行或在耐压舱中模拟水合物的形成分解但由于深海与海面之间压力和温度的差异在样品回收过程中天然气水合物的一些性质会被破坏实验室的模拟舱也很难还原深海复杂的环境条件拉曼光谱技术能在深海原位环境中对天然气水合物进行直接研究在这项技术中激光通过光纤系统传输到深海并与待测样品发生拉曼散射通过采集和分析散射光谱可获得样品组分结构和理化性质等信息这段文字没有提及",
+              "context": "题将以上6个句子重新排列语序正确的一项是A543162B534612C653421D61352425近百年来对于天然气水合物的研究通常是保压取样后在实验室进行或在耐压舱中模拟水合物的形成分解但由于深海与海面之间压力和温度的差异在样品回收过程中天然气水合物的一些性质会被破坏实验室的模拟舱也很难还原深海复杂的环境条件拉曼光谱技术能在深海原位环境中对天然气水合物进行直接研究在这项技术中激光通过光纤系统传输到深海并与待测样品发生拉曼散射通过采集和分析散射光谱可获得样品组分结构和理化性质等信息这段文字没有提及A在实验室模拟舱研究天然气水合物的弊端B拉曼光谱技术对研究天然气水合物的优势C深海环境对应用拉曼光谱技术的限制D天然气水合物样品性质被破坏的原因26图书作为文化"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 304,
+              "matched_chars": 48,
+              "pattern": "近百年来对于天然气水合物的研究通常是保压取样后在实验室进行或在耐压舱中模拟水合物的形成分解但由于",
+              "context": "题将以上6个句子重新排列语序正确的一项是A543162B534612C653421D61352425近百年来对于天然气水合物的研究通常是保压取样后在实验室进行或在耐压舱中模拟水合物的形成分解但由于深海与海面之间压力和温度的差异在样品回收过程中天然气水合物的一些性质会被破坏实验室的模拟舱也很难还原深海复杂的环境条件拉曼光谱技术能在深海原位环境中对天然气水合"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 304,
+              "matched_chars": 48,
+              "pattern": "实验室进行或在耐压舱中模拟水合物的形成分解但由于深海与海面之间压力和温度的差异在样品回收过程中天",
+              "context": "162B534612C653421D61352425近百年来对于天然气水合物的研究通常是保压取样后在实验室进行或在耐压舱中模拟水合物的形成分解但由于深海与海面之间压力和温度的差异在样品回收过程中天然气水合物的一些性质会被破坏实验室的模拟舱也很难还原深海复杂的环境条件拉曼光谱技术能在深海原位环境中对天然气水合物进行直接研究在这项技术中激光通过光纤系统传输到"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 304,
+              "matched_chars": 48,
+              "pattern": "深海与海面之间压力和温度的差异在样品回收过程中天然气水合物的一些性质会被破坏实验室的模拟舱也很难",
+              "context": "25近百年来对于天然气水合物的研究通常是保压取样后在实验室进行或在耐压舱中模拟水合物的形成分解但由于深海与海面之间压力和温度的差异在样品回收过程中天然气水合物的一些性质会被破坏实验室的模拟舱也很难还原深海复杂的环境条件拉曼光谱技术能在深海原位环境中对天然气水合物进行直接研究在这项技术中激光通过光纤系统传输到深海并与待测样品发生拉曼散射通过采集和分析散射光"
+            }
+          ]
+        },
+        {
+          "path": "广东行测18套模拟/M01/题目.jsonl",
+          "prefix": "广东行测18套模拟/M01",
+          "match_count": 9,
+          "examples": [
+            {
+              "kind": "complete_current_stem",
+              "line": 25,
+              "matched_chars": 202,
+              "pattern": "近百年来对于天然气水合物的研究通常是保压取样后在实验室进行或在耐压舱中模拟水合物的形成分解但由于深海与海面之间压力和温度的差异在样品回收过程中天然气水合物的一些性质会被破坏实验室的模拟舱也很难还原深海复杂的环境条件拉曼光谱技术能在深海原位环境中对天然气水合物进行直接研究在这项技术中激光通过光纤系统传输到深海并与待测样品发生拉曼散射通过采集和分析散射光谱可获得样品组分结构和理化性质等信息这段文字没有提及",
+              "context": "type细节理解选非questiontypesinglechoicestemtypetexttext近百年来对于天然气水合物的研究通常是保压取样后在实验室进行或在耐压舱中模拟水合物的形成分解但由于深海与海面之间压力和温度的差异在样品回收过程中天然气水合物的一些性质会被破坏实验室的模拟舱也很难还原深海复杂的环境条件拉曼光谱技术能在深海原位环境中对天然气水合物进行直接研究在这项技术中激光通过光纤系统传输到深海并与待测样品发生拉曼散射通过采集和分析散射光谱可获得样品组分结构和理化性质等信息这段文字没有提及optionsAtypetexttext在实验室模拟舱研究天然气水合物的弊端Btypetexttext拉曼光谱技术对研究天然气水合物的优势Ctypetextte"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 25,
+              "matched_chars": 48,
+              "pattern": "近百年来对于天然气水合物的研究通常是保压取样后在实验室进行或在耐压舱中模拟水合物的形成分解但由于",
+              "context": "type细节理解选非questiontypesinglechoicestemtypetexttext近百年来对于天然气水合物的研究通常是保压取样后在实验室进行或在耐压舱中模拟水合物的形成分解但由于深海与海面之间压力和温度的差异在样品回收过程中天然气水合物的一些性质会被破坏实验室的模拟舱也很难还原深海复杂的环境条件拉曼光谱技术能在深海原位环境中对天然气水合"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 25,
+              "matched_chars": 48,
+              "pattern": "实验室进行或在耐压舱中模拟水合物的形成分解但由于深海与海面之间压力和温度的差异在样品回收过程中天",
+              "context": "nglechoicestemtypetexttext近百年来对于天然气水合物的研究通常是保压取样后在实验室进行或在耐压舱中模拟水合物的形成分解但由于深海与海面之间压力和温度的差异在样品回收过程中天然气水合物的一些性质会被破坏实验室的模拟舱也很难还原深海复杂的环境条件拉曼光谱技术能在深海原位环境中对天然气水合物进行直接研究在这项技术中激光通过光纤系统传输到"
+            },
+            {
+              "kind": "long_fragment_current_stem",
+              "line": 25,
+              "matched_chars": 48,
+              "pattern": "深海与海面之间压力和温度的差异在样品回收过程中天然气水合物的一些性质会被破坏实验室的模拟舱也很难",
+              "context": "xt近百年来对于天然气水合物的研究通常是保压取样后在实验室进行或在耐压舱中模拟水合物的形成分解但由于深海与海面之间压力和温度的差异在样品回收过程中天然气水合物的一些性质会被破坏实验室的模拟舱也很难还原深海复杂的环境条件拉曼光谱技术能在深海原位环境中对天然气水合物进行直接研究在这项技术中激光通过光纤系统传输到深海并与待测样品发生拉曼散射通过采集和分析散射光"
+            }
+          ]
+        }
+      ],
+      "text_pattern_count": 9,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 31,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s20-q31",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 1,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 32,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s17-q34",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 1,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 33,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s23-q32",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 1,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 34,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s24-q35",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 0,
+      "input_kind_limitations": [
+        "no_distinctive_text_pattern; rely on source ID and graphic provenance"
+      ]
+    },
+    {
+      "number": 35,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s17-q32",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 0,
+      "input_kind_limitations": [
+        "no_distinctive_text_pattern; rely on source ID and graphic provenance"
+      ]
+    },
+    {
+      "number": 36,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s21-q40",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 3,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 37,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s16-q41",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 3,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 38,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s24-q36",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 5,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 39,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s33-q40",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 5,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 40,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s17-q43",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 13,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 41,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s28-q42",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 5,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 42,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s28-q44",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 6,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 43,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s27-q43",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 2,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 44,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s20-q44",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 5,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 45,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s16-q43",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 3,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 46,
+      "module": "reasoning_science.json",
+      "source_id": "gd-mock-2026h2-s21-q46",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 0,
+      "input_kind_limitations": [
+        "no_distinctive_text_pattern; rely on source ID and graphic provenance"
+      ]
+    },
+    {
+      "number": 47,
+      "module": "reasoning_science.json",
+      "source_id": "gd-mock-2026h2-s25-q46",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 0,
+      "input_kind_limitations": [
+        "no_distinctive_text_pattern; rely on source ID and graphic provenance"
+      ]
+    },
+    {
+      "number": 48,
+      "module": "reasoning_science.json",
+      "source_id": "gd-mock-2026h2-s23-q48",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 0,
+      "input_kind_limitations": [
+        "no_distinctive_text_pattern; rely on source ID and graphic provenance"
+      ]
+    },
+    {
+      "number": 49,
+      "module": "reasoning_science.json",
+      "source_id": "gd-mock-2026h2-s22-q50",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 1,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 50,
+      "module": "reasoning_science.json",
+      "source_id": "gd-mock-2026h2-s26-q48",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 0,
+      "input_kind_limitations": [
+        "no_distinctive_text_pattern; rely on source ID and graphic provenance"
+      ]
+    },
+    {
+      "number": 51,
+      "module": "reasoning_science.json",
+      "source_id": "JS2023-A类-091",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 8,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 52,
+      "module": "reasoning_science.json",
+      "source_id": "JS2022-A类-093",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 10,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 53,
+      "module": "reasoning_science.json",
+      "source_id": "ZJ2024-A类-104",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 14,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 54,
+      "module": "reasoning_science.json",
+      "source_id": "gd-mock-2026h2-s22-q52",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 10,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 55,
+      "module": "reasoning_science.json",
+      "source_id": "gd-mock-2026h2-s25-q55",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 5,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 56,
+      "module": "reasoning_science.json",
+      "source_id": "JS2022-A类-103",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 10,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 57,
+      "module": "reasoning_science.json",
+      "source_id": "gd-mock-2026h2-s24-q62",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 12,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 58,
+      "module": "reasoning_science.json",
+      "source_id": "JS2022-A类-094",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 14,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 59,
+      "module": "reasoning_science.json",
+      "source_id": "gd-mock-2026h2-s26-q59",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 5,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 60,
+      "module": "reasoning_science.json",
+      "source_id": "JS2023-A类-103",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 12,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 61,
+      "module": "reasoning_science.json",
+      "source_id": "JS2022-A类-102",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 1,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 62,
+      "module": "reasoning_science.json",
+      "source_id": "ZJ2024-A类-109",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 10,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 63,
+      "module": "reasoning_science.json",
+      "source_id": "gd-mock-2026h2-s26-q55",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 20,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 64,
+      "module": "reasoning_science.json",
+      "source_id": "JS2023-A类-101",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 1,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 65,
+      "module": "reasoning_science.json",
+      "source_id": "ZJ2024-A类-101",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 1,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 66,
+      "module": "reasoning_science.json",
+      "source_id": "gd-mock-2026h2-s33-q68",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 10,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 67,
+      "module": "reasoning_science.json",
+      "source_id": "gd-mock-2026h2-s17-q67",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 7,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 68,
+      "module": "reasoning_science.json",
+      "source_id": "gd-mock-2026h2-s31-q68",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 5,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 69,
+      "module": "reasoning_science.json",
+      "source_id": "gd-mock-2026h2-s22-q69",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 5,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 70,
+      "module": "reasoning_science.json",
+      "source_id": "gd-mock-2026h2-s32-q70",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 1,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 71,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s26-q71",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 7,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 72,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s26-q72",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 7,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 73,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s26-q73",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 8,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 74,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s26-q74",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 7,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 75,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s26-q75",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 7,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 76,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s24-q71",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 4,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 77,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s24-q72",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 4,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 78,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s24-q73",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 5,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 79,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s24-q74",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 4,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 80,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s24-q75",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 8,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 81,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s27-q86",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 5,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 82,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s27-q87",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 5,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 83,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s27-q88",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 5,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 84,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s27-q89",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 7,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 85,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s27-q90",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 5,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 86,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s23-q86",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 5,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 87,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s23-q87",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 6,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 88,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s23-q88",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 6,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 89,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s23-q89",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 6,
+      "input_kind_limitations": []
+    },
+    {
+      "number": 90,
+      "module": "quant_data.json",
+      "source_id": "gd-mock-2026h2-s23-q90",
+      "reserved_source_id_matches": [],
+      "old_graphic_source_id_match": false,
+      "source_id_reference_matches": [],
+      "text_matches": [],
+      "text_pattern_count": 6,
+      "input_kind_limitations": []
+    }
+  ]
+}

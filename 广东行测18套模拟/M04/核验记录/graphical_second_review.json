@@ -1,0 +1,98 @@
+{
+  "paper_id": "M04",
+  "reviewer": "整卷负责人root",
+  "method": "在已知编辑答案后实际查看5道源图及4道重绘图，逐项核对图形，并评估几何/网格记录；不称第二次盲答。",
+  "results": [
+    {
+      "number": 46,
+      "answer": "B",
+      "review_reason": "逐格对照9×9原图与重绘；同一图案向上、向左各一格并循环回接，下一图匹配B。",
+      "original_images": [
+        {
+          "path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s21_p11_i00.png",
+          "sha256": "d310858a6815fabf5432c833c709603911f8a7d0f409eb5687e085236cbe2aaf"
+        }
+      ],
+      "final_images": [
+        {
+          "path": "广东行测18套模拟/M04/assets/q46_pixel_shift.png",
+          "sha256": "9713a1637f923caa04bafc010519136b517a711388e631c9357c24dc73fbf5c2"
+        }
+      ],
+      "result": "PASS"
+    },
+    {
+      "number": 47,
+      "answer": "B",
+      "review_reason": "对照5×5网格的每个端点；头部新增2格、尾部退1格，B同时满足位置与数量。",
+      "original_images": [
+        {
+          "path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s25_p11_i00.png",
+          "sha256": "5a86c2d0b7dbc85b9d331e2a849143884359f6d9555a06058615132f755666d3"
+        }
+      ],
+      "final_images": [
+        {
+          "path": "广东行测18套模拟/M04/assets/q47_growing_path.png",
+          "sha256": "b7519ba9b33b120592e2721cf90fa90160dc00668733182f96bdfdd10393cb45"
+        }
+      ],
+      "result": "PASS"
+    },
+    {
+      "number": 48,
+      "answer": "C",
+      "review_reason": "实际查看原图，重复结构为a-b-b-c-d-a-c-e，C同构，其他项均有额外重复。",
+      "original_images": [
+        {
+          "path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s23_p12_i02.png",
+          "sha256": "109c31b0b3abefa256c4977470e8db6e14e96eba4108f0a260996d6f223f176d"
+        }
+      ],
+      "final_images": [
+        {
+          "path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s23_p12_i02.png",
+          "sha256": "109c31b0b3abefa256c4977470e8db6e14e96eba4108f0a260996d6f223f176d"
+        }
+      ],
+      "result": "PASS"
+    },
+    {
+      "number": 49,
+      "answer": "A",
+      "review_reason": "原图与重绘的四个展开图格位、黑/空心角块及三角方向相符；结合记录的六面折叠及24旋转核验，左②右④。",
+      "original_images": [
+        {
+          "path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s22_p13_i01.png",
+          "sha256": "bc2e7ac56e77edf8fbcd5dab491542e4bf66921de82463d5ba319a04da77035e"
+        }
+      ],
+      "final_images": [
+        {
+          "path": "广东行测18套模拟/M04/assets/q49_cube_nets.png",
+          "sha256": "cd96428ef89fb6e72e1b4a8b5838efe4bcbb42d79d69dce9a31d0798caa69177"
+        }
+      ],
+      "result": "PASS"
+    },
+    {
+      "number": 50,
+      "answer": "C",
+      "review_reason": "对照可见面与遮挡关系；题干及A/B/D的2×2方片外接两条各2块支臂，C为3块与1块。记录坐标的24旋转检验与此不变量一致。",
+      "original_images": [
+        {
+          "path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s26_p13_i00.png",
+          "sha256": "f2c334f5f2e4ea0d815f465322dfc17df21219947dbdee4ce99b8bf027ccc906"
+        }
+      ],
+      "final_images": [
+        {
+          "path": "广东行测18套模拟/M04/assets/q50_solids.png",
+          "sha256": "9e238779879d5b1d0948ac0477c985073d8b7342cd46bc28f3e2a38f9a4efbcb"
+        }
+      ],
+      "result": "PASS"
+    }
+  ],
+  "limits": "人工图形解释仍可被外部审读质疑；枚举不能自动证明源图读取正确。"
+}

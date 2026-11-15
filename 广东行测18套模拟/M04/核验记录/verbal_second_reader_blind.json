@@ -1,0 +1,120 @@
+{
+  "reader": "quant_data_agent",
+  "phase": "answers_recorded_before_reading_verbal_json",
+  "input": "编辑底稿/verbal_blind.json",
+  "scope": "先只读取当前考生题面与选项，写下答案和依据，再另行比较编辑键；未以机构参考答案作为本轮推断依据。",
+  "items": [
+    {
+      "number": 16,
+      "answer": "B",
+      "reason": "地域条件不同导致经验不适配，末空水土不服最贴切；借鉴与照搬形成准确对比，主产区与主销区情况大相径庭。D末空弄巧成拙虽可泛指负面结果，但效仿本身不等于机械照搬，整体不如B。",
+      "boundary": "不能把其他每一空都断为完全不通；按三空共同适配作最优判断。",
+      "current_applicability": "unchanged_current_item"
+    },
+    {
+      "number": 17,
+      "answer": "B",
+      "reason": "成立太空部队、发射探测器体现领域新动向集中涌现；冷战太空竞赛与当前新竞赛的时间对照支持卷土重来，冲击现有秩序搭配自然。A箭在弦上偏向尚待发生，与已列出的竞争动作不合；D莫测和死灰复燃的语义色彩无依据。C愈演愈烈可以描述竞争，但太空领域如火如荼及连续强化的时间关系不如B三空完整。",
+      "boundary": "C的第二、三空并非字面错误；B凭整体语义与搭配胜出。",
+      "current_applicability": "unchanged_current_item"
+    },
+    {
+      "number": 18,
+      "answer": "D",
+      "reason": "取舍、记忆差错、故意修改都可能导致史书偏离历史真实；可重复检验只能降低造假可能，不足以杜绝。A化解可能、B规避可能均不如降低可能准确；C虚构历史真实亦不合搭配。",
+      "boundary": "科学研究仍可能造假，所以题文不能被解释为绝对杜绝。",
+      "current_applicability": "withdrawn_item_only"
+    },
+    {
+      "number": 19,
+      "answer": "A",
+      "reason": "预设主题对应旅行之前的设计，与旅行中不断产生的鲜活问题形成对照；组织者捕捉孩子感兴趣的主题，继而鼓励探究，动作顺序清楚。C激发研究主题、D引导研究主题均偏离其通常宾语；B延伸主题虽能搭配，却不足以表达及时发现儿童兴趣的要求。",
+      "boundary": "既定、实际等单个词并非错误，关键是三个空与研学过程共同吻合。",
+      "current_applicability": "unchanged_current_item"
+    },
+    {
+      "number": 20,
+      "answer": "D",
+      "reason": "丰盈且变化平缓是喜闻乐见的状态；更湿润且波动更大意味着极端性更强。B持续性对应更平缓而非波动增加；A偶然性和C集中性不能准确覆盖文中变化模式。",
+      "boundary": "基于文段对变化型的对照，不额外推导气候统计机制。",
+      "current_applicability": "unchanged_current_item"
+    },
+    {
+      "number": 21,
+      "answer": "B",
+      "reason": "文段以小批量生产加线上数据分析说明中小企业如何通过数字化转型形成竞争优势，末句收束于此。D把一种适合中小企业的模式泛化为所有企业转型的重点；A仅抓传统产业起句，C把供需匹配这一机制拔高为唯一关键。",
+      "boundary": "B表述比具体例子抽象，但保留中小企业与竞争优势这两个落点。",
+      "current_applicability": "withdrawn_item_only"
+    },
+    {
+      "number": 22,
+      "answer": "D",
+      "reason": "村落历史痕迹的发现需要长时间田野调查、与原住民深入交流，并据其审美找到艺术乡建切入点。B复原村落特色容易诱人，但文段要找到原住民能接受的艺术形式，不能等同于恢复历史原状。A缺少艺术乡建目的；C扩大到村落振兴并加上基础定位。",
+      "boundary": "D中的扎实田野调查应理解为包含交流、理解地方审美的调查，不只是查遗留物。",
+      "current_applicability": "unchanged_current_item"
+    },
+    {
+      "number": 23,
+      "answer": "A",
+      "reason": "自研AI算法是完成高负荷天文数据分析的关键工具，金刚钻与瓷器活的比喻分别对应技术能力与科研任务。B的遥遥领先、C的细节、D的艰辛历程均未成为文段论述重点。",
+      "boundary": "标题考察比喻对应关系，不须证明研究中心领先其他机构。",
+      "current_applicability": "unchanged_current_item"
+    },
+    {
+      "number": 24,
+      "answer": "C",
+      "reason": "前文从传统市场化动力转向数字平台管理市场，横线概括智能数字技术成为新的产业动力；后文进一步写持续数字化对前沿技术的需求，形成技术与产业相互驱动的逻辑。A引入企业平台选择，B转换为规范性口号，D引入政府有形之手，均不如C承接。",
+      "boundary": "B相关，但没有C与原动力、新阶段动力的对应直接。",
+      "current_applicability": "unchanged_current_item"
+    },
+    {
+      "number": 25,
+      "answer": "C",
+      "reason": "月球没有大气层、磁场极弱，给出了太阳风可直射表面并注入氦-3的原因。B只得到低温促进吸附这个结论，未解释其物理机制；A只有估算储量结果没有换算方法；D没有开采方式。",
+      "boundary": "说明一种效果不等于解释这种效果如何产生。",
+      "current_applicability": "unchanged_current_item"
+    },
+    {
+      "number": 26,
+      "answer": "C",
+      "reason": "②提出数字生命不是法律责任主体；⑥承接这解释其原因；⑤转向创造者负责；③用错误输出的责任归属举例；①转折到模型回避提问的新情况；④再提出自主逃避且脱离控制时将挑战原结论。②⑥、⑤③和①④各自衔接清楚。",
+      "boundary": "④是加上更强条件的进一步转折，应置于①之后。",
+      "current_applicability": "withdrawn_item_only"
+    },
+    {
+      "number": 27,
+      "answer": "A",
+      "reason": "整段同时写高技能新岗位、传统岗位再造及超2亿灵活就业者，尾句应概括吸纳就业能力。B跨区域资源、D重点群体没有给出；C只取高技能岗位这一部分。",
+      "boundary": "灵活就业人数用于支持总体吸纳规模，不可据此缩成某个重点群体。",
+      "current_applicability": "unchanged_current_item"
+    },
+    {
+      "number": 28,
+      "answer": "B",
+      "reason": "罗岕茶属于蒸青，却采用初夏新茶，明确反例否定了B的都用早春新茶。C由本次题面首句直接支持；D对应清初武夷山开始喝发酵茶；A与明清江南炒青、蒸青的风尚一致。",
+      "boundary": "当前首句已把武夷茶农此前受江南影响写明，C/D边界在可见题面中明确；不需靠历史常识补前提。",
+      "current_applicability": "unchanged_current_item"
+    },
+    {
+      "number": 29,
+      "answer": "A",
+      "reason": "行政复议虽在末端，却能暴露个案与制度性问题，机关应据此纠错、补制度、规范新情况，从而提升行政管理。B概括了分类处理的方法，但漏掉用复议反促管理的主张；C、D主要停留在背景说明。",
+      "boundary": "A的提升管理水平是后文各类纠偏措施共同指向的结果。",
+      "current_applicability": "unchanged_current_item"
+    },
+    {
+      "number": 30,
+      "answer": "C",
+      "reason": "文段解释样品回收时温压差造成性质破坏、模拟舱难还原环境，并说明拉曼技术能深海原位研究。没有讨论深海环境给拉曼技术本身施加什么限制。",
+      "boundary": "不能把传统回收与模拟实验的局限移接到拉曼技术上。",
+      "current_applicability": "withdrawn_item_only"
+    }
+  ],
+  "version_status": "Initial selection: entries18/21/26/30 were withdrawn for prior-paper overlap and must not be applied to current items with those numbers.",
+  "withdrawn_numbers": [
+    18,
+    21,
+    26,
+    30
+  ]
+}

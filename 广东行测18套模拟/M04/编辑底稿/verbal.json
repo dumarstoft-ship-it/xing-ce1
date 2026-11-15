@@ -1,0 +1,1634 @@
+[
+  {
+    "number": 16,
+    "section": "言语理解与表达",
+    "subtype": "逻辑填空",
+    "question_type": "single_choice",
+    "source_bank": "national_verbal",
+    "source_file": "国考/言语理解/2016-2025/all.jsonl",
+    "source_id": "GKYY-2025-040",
+    "source_question": {
+      "id": "GKYY-2025-040",
+      "year": 2025,
+      "section": "言语理解与表达",
+      "passage": null,
+      "stem": "借鉴各地耕保的好经验、好做法，可以少走弯路，但不可将借鉴当作____。比如，平原地区的耕地恢复方法不一定适合山区，粮食主产区与主销区可能____。有些经验做法依托的是当地经济基础和民风社情，外地可能“借”不来也“学”不好，盲目推广可能导致____、劳民伤财。\n依次填入画横线部分最恰当的一项是：",
+      "options": {
+        "A": "套用 背道而驰 功亏一篑",
+        "B": "照搬 大相径庭 水土不服",
+        "C": "复制 截然不同 物极必反",
+        "D": "效仿 天差地别 弄巧成拙"
+      },
+      "answer": "B",
+      "answer_candidates": [
+        "B"
+      ],
+      "answer_status": "single",
+      "notes": []
+    },
+    "stem_override": "借鉴各地耕保的好经验、好做法，可以少走弯路，但不可将借鉴当作____。比如，平原地区的耕地恢复方法不一定适合山区，粮食主产区与主销区可能____。有些经验做法依托的是当地经济基础和民风社情，外地可能“借”不来也“学”不好，盲目推广可能导致____、劳民伤财。\n依次填入画横线部分最恰当的一项是：",
+    "options": {
+      "A": "套用 背道而驰 功亏一篑",
+      "B": "照搬 大相径庭 水土不服",
+      "C": "复制 截然不同 物极必反",
+      "D": "效仿 天差地别 弄巧成拙"
+    },
+    "source_answer": "B",
+    "answer": "B",
+    "analysis": "文段肯定借鉴，但反对忽略当地条件地照原样搬用。第一空“照搬”准确表达后一层意思；“效仿”本身不必然忽略条件，与文段的批评不完全对应。第二空说主产区、主销区的情况差别大，“大相径庭”合适，“背道而驰”偏重方向、目标相反。第三空紧扣外地经验不适合本地条件，应是“水土不服”；“功亏一篑”要求接近成功却未能完成，“物极必反”要求事物发展到极点，题面均无此意。三空合看选B。不要把所有近义词都说成第一眼即可排除：第一空的“套用”“复制”也有迷惑性，须结合后两空判断。",
+    "selection_reason": "把借鉴与照搬区分开，并以第三空检验外地经验不适用的因果关系。",
+    "edits": [],
+    "verification": {
+      "status": "editor_checked_pending_cross_review",
+      "independent_answer": "B",
+      "source_answer_available": true,
+      "source_answer_agreement": true,
+      "method": "编者先读无答案题面作答并留存记录，再比对源参考答案；这是编者自核，不冒称隔离盲审或Claude外审。",
+      "checked_on": "2026-11-15",
+      "completeness": "题干与四选项完整，无共用文章及缺题标记；国考氦-3题两处嵌图负温度已目检原PDF。",
+      "source_check": "已下载对应原PDF，git blob哈希一致，比较题干与四选项；仅记录已查阅页面，不推断其他卷别。详见核验记录/verbal_pdf_sources.json。",
+      "source_pdf_review": {
+        "reviewer": "GPT言语编辑",
+        "reviewed_version": "0.1.0",
+        "report": "核验记录/verbal_pdf_sources.json",
+        "pdf_file": "国考/真题/2025年国家公务员录用考试《行测》题（地市级）.pdf",
+        "pdf_git_blob_sha": "dcc592d8ec92c9b10c4d9dc794aeba1ef090ace7",
+        "blob_match": true,
+        "pdf_pages": [
+          7
+        ]
+      },
+      "prior_output_check": {
+        "method": "排除M01–M03现用及撤题源ID；跨卷正文相似项另由整卷核验。",
+        "previous_project_source_id_match": false,
+        "limit": "不据此声称用户从未做过。"
+      }
+    },
+    "source_locators": {
+      "original_number": 48,
+      "pages": [
+        7
+      ],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xing-ce1",
+        "commit": "0067a1a7723584d34ff564b4356af358b9c9027c",
+        "file": "国考/真题/2025年国家公务员录用考试《行测》题（地市级）.pdf",
+        "blob_sha": "dcc592d8ec92c9b10c4d9dc794aeba1ef090ace7",
+        "pdf_pages": [
+          7
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      }
+    },
+    "source_notice": "题面取自仓库国考言语整理库，已取得对应原PDF并补录卷别、原题号、物理页码和git blob。GKYY序号是整理库编号，不冒称原卷题号；参考答案是原资料答案，不冒称官方答案。"
+  },
+  {
+    "number": 17,
+    "section": "言语理解与表达",
+    "subtype": "逻辑填空",
+    "question_type": "single_choice",
+    "source_bank": "jiangzhe",
+    "source_file": "江浙行测_AI题库/questions.jsonl",
+    "source_id": "ZJ2025-A类-032",
+    "source_question": {
+      "question_id": "ZJ2025-A类-032",
+      "paper_id": "ZJ2025",
+      "province": "浙江",
+      "year": 2025,
+      "paper_type": "A类",
+      "section": "言语理解与表达",
+      "original_number": 32,
+      "instruction": null,
+      "stem": "近年来，太空领域 ____ 。美国、法国成立太空部队，中国、美国发射火星探测器。有人说，太空竞争已 ____\n。但与冷战期间的美苏太空竞赛相比，当前太空竞赛呈现多极化、战场化、产业化三大新特点。这将严重 ____\n现有太空秩序，国际社会亟需建章立制，予以规范。\n依次填入画横线部分最恰当的一项是：",
+      "options": {
+        "A": "龙争虎斗 箭在弦上 动摇",
+        "B": "风起云涌 卷土重来 冲击",
+        "C": "如火如荼 愈演愈烈 挑战",
+        "D": "变幻莫测 死灰复燃 扰乱"
+      },
+      "options_mode": "text_or_mixed",
+      "content": "近年来，太空领域 ____ 。美国、法国成立太空部队，中国、美国发射火星探测器。有人说，太空竞争已 ____\n。但与冷战期间的美苏太空竞赛相比，当前太空竞赛呈现多极化、战场化、产业化三大新特点。这将严重 ____\n现有太空秩序，国际社会亟需建章立制，予以规范。\n依次填入画横线部分最恰当的一项是：\nA.龙争虎斗 箭在弦上 动摇 B.风起云涌 卷土重来 冲击\nC.如火如荼 愈演愈烈 挑战 D.变幻莫测 死灰复燃 扰乱",
+      "figures": [],
+      "materials": [],
+      "material_ids": [],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "blob_sha": "422a8d5a7c9c379fe3b10fc81eb6424f17b4bdbb",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2025%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "regions": [
+          {
+            "page": 7,
+            "bbox": [
+              28.879276275634766,
+              335.1556091308594,
+              549.9417114257812,
+              430.2413024902344
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": [],
+      "notes": []
+    },
+    "stem_override": "近年来，太空领域____。美国、法国成立太空部队，中国、美国发射火星探测器。有人说，太空竞争已____。但与冷战期间的美苏太空竞赛相比，当前太空竞赛呈现多极化、战场化、产业化三大新特点。这将严重____现有太空秩序，国际社会亟需建章立制，予以规范。\n依次填入画横线部分最恰当的一项是：",
+    "options": {
+      "A": "龙争虎斗 箭在弦上 动摇",
+      "B": "风起云涌 卷土重来 冲击",
+      "C": "如火如荼 愈演愈烈 挑战",
+      "D": "变幻莫测 死灰复燃 扰乱"
+    },
+    "source_answer": "B",
+    "answer": "B",
+    "analysis": "前两句说明多国已相继采取行动，第一空“风起云涌”可概括多种活动兴起的态势。第二空随后拿“当前太空竞赛”与“冷战期间的美苏太空竞赛”比较，重点是新一轮竞赛再度出现，“卷土重来”与此衔接；“箭在弦上”侧重尚待行动的紧迫状态，与前文已经发生的行动不合，“愈演愈烈”侧重程度不断加剧，而题面突出的是再次出现及特点变化。第三空“冲击现有太空秩序”也与亟须规范相接。选B。“卷土重来”在此是借用其再次兴起的意思，不必另造题面没有的某国曾经失败这一事实。",
+    "selection_reason": "同一主题下区分再次兴起、程度加剧和尚待行动，三空相互校验。",
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并源PDF行末硬换行，保留设问独立成段；填空线两侧删除排版空格；六句排序逐句保留换行。不删减正文与限定条件。",
+        "version": "0.1.0"
+      }
+    ],
+    "verification": {
+      "status": "editor_checked_pending_cross_review",
+      "independent_answer": "B",
+      "source_answer_available": true,
+      "source_answer_agreement": true,
+      "method": "编者先读无答案题面作答并留存记录，再比对源参考答案；这是编者自核，不冒称隔离盲审或Claude外审。",
+      "checked_on": "2026-11-15",
+      "completeness": "题干与四选项完整，无共用文章及缺题标记；国考氦-3题两处嵌图负温度已目检原PDF。",
+      "source_check": "已下载对应原PDF，git blob哈希一致，比较题干与四选项；仅记录已查阅页面，不推断其他卷别。详见核验记录/verbal_pdf_sources.json。",
+      "source_pdf_review": {
+        "reviewer": "GPT言语编辑",
+        "reviewed_version": "0.1.0",
+        "report": "核验记录/verbal_pdf_sources.json",
+        "pdf_file": "2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "pdf_git_blob_sha": "422a8d5a7c9c379fe3b10fc81eb6424f17b4bdbb",
+        "blob_match": true,
+        "pdf_pages": [
+          7
+        ]
+      },
+      "prior_output_check": {
+        "method": "排除M01–M03现用及撤题源ID；跨卷正文相似项另由整卷核验。",
+        "previous_project_source_id_match": false,
+        "limit": "不据此声称用户从未做过。"
+      }
+    },
+    "source_locators": {
+      "original_number": 32,
+      "pages": [
+        7
+      ],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "blob_sha": "422a8d5a7c9c379fe3b10fc81eb6424f17b4bdbb",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2025%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "regions": [
+          {
+            "page": 7,
+            "bbox": [
+              28.879276275634766,
+              335.1556091308594,
+              549.9417114257812,
+              430.2413024902344
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      }
+    },
+    "source_notice": "题面取自江浙整理库，已取得source中列出的原PDF并核对文字及选项，文件git blob与记录一致。浙江试题保留网友回忆版身份，参考答案是配套资料答案，不冒称官方答案。",
+    "source_answer_reference": {
+      "file": "江浙行测_AI题库/answers.jsonl",
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）解析.pdf",
+        "blob_sha": "a4ae2b755ed2f64f3014b4f63b4f8f267775f2f8",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2025%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89%E8%A7%A3%E6%9E%90.pdf",
+        "pdf_pages": [
+          15
+        ],
+        "regions": [
+          {
+            "page": 15,
+            "bbox": [
+              90.0,
+              270.092041015625,
+              510.0,
+              565.3717041015625
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": []
+    }
+  },
+  {
+    "number": 18,
+    "section": "言语理解与表达",
+    "subtype": "逻辑填空",
+    "question_type": "single_choice",
+    "source_bank": "national_verbal",
+    "source_file": "国考/言语理解/2016-2025/all.jsonl",
+    "source_id": "GKYY-2025-055",
+    "source_question": {
+      "id": "GKYY-2025-055",
+      "year": 2025,
+      "section": "言语理解与表达",
+      "passage": null,
+      "stem": "新质生产力既需要政府超前规划引导、科学政策支持，也需要市场机制调节、企业等微观主体不断创新，是政府“有形之手”和市场“无形之手”____培育和驱动形成的。因此，要深化经济体制、科技体制等改革，着力打通____新质生产力发展的堵点卡点，建立高标准市场体系，创新生产要素配置方式，让各类先进优质生产要素向发展新质生产力____流动。\n依次填入画横线部分最恰当的一项是：",
+      "options": {
+        "A": "联合 羁绊 竞相",
+        "B": "系统 制约 自由",
+        "C": "有序 妨碍 高效",
+        "D": "共同 束缚 顺畅"
+      },
+      "answer": "D",
+      "answer_candidates": [
+        "D"
+      ],
+      "answer_status": "single",
+      "notes": []
+    },
+    "stem_override": "新质生产力既需要政府超前规划引导、科学政策支持，也需要市场机制调节、企业等微观主体不断创新，是政府“有形之手”和市场“无形之手”____培育和驱动形成的。因此，要深化经济体制、科技体制等改革，着力打通____新质生产力发展的堵点卡点，建立高标准市场体系，创新生产要素配置方式，让各类先进优质生产要素向发展新质生产力____流动。\n依次填入画横线部分最恰当的一项是：",
+    "options": {
+      "A": "联合 羁绊 竞相",
+      "B": "系统 制约 自由",
+      "C": "有序 妨碍 高效",
+      "D": "共同 束缚 顺畅"
+    },
+    "source_answer": "D",
+    "answer": "D",
+    "analysis": "第一空承接“既需要政府……也需要市场……”，强调两者都发挥作用，“共同”准确；“系统”“有序”分别侧重整体性、秩序性，没有直接照应双方共同参与。第二空“束缚发展”与“堵点卡点”相配，第三空“顺畅流动”又与前面的“打通”照应，构成消除阻碍、促进要素流动的完整关系。A的“联合”虽有迷惑性，但“竞相流动”额外突出争先竞争，题面没有这一层；B的“自由”、C的“高效”不如“顺畅”直接回应流动中的堵点。三空合看选D，不必仅凭一个词就把其他组合说成绝对不能使用。",
+    "selection_reason": "从既要又要、打通堵点到要素流动的连贯关系校验三空，不只凭政策熟词作答。",
+    "edits": [],
+    "verification": {
+      "status": "editor_checked_pending_cross_review",
+      "independent_answer": "D",
+      "source_answer_available": true,
+      "source_answer_agreement": true,
+      "method": "编者先读无答案题面作答并留存记录，再比对源参考答案；这是编者自核，不冒称隔离盲审或Claude外审。",
+      "checked_on": "2026-11-15",
+      "completeness": "题干与四选项完整，无共用文章及缺题标记；国考氦-3题两处嵌图负温度已目检原PDF。",
+      "source_check": "已下载对应原PDF，git blob哈希一致，比较题干与四选项；仅记录已查阅页面，不推断其他卷别。详见核验记录/verbal_pdf_sources.json。",
+      "source_pdf_review": {
+        "reviewer": "GPT言语编辑",
+        "reviewed_version": "0.1.0",
+        "report": "核验记录/verbal_pdf_sources.json",
+        "pdf_file": "国考/真题/2025年国家公务员录用考试《行测》题（行政执法卷）.pdf",
+        "pdf_git_blob_sha": "b4413b040efd102fea703f718c8f167d6db094aa",
+        "blob_match": true,
+        "pdf_pages": [
+          8
+        ]
+      },
+      "prior_output_check": {
+        "method": "排除M01–M03现用及撤题源ID；跨卷正文相似项另由整卷核验。",
+        "previous_project_source_id_match": false,
+        "limit": "不据此声称用户从未做过。"
+      }
+    },
+    "source_locators": {
+      "original_number": 50,
+      "pages": [
+        8
+      ],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xing-ce1",
+        "commit": "0067a1a7723584d34ff564b4356af358b9c9027c",
+        "file": "国考/真题/2025年国家公务员录用考试《行测》题（行政执法卷）.pdf",
+        "blob_sha": "b4413b040efd102fea703f718c8f167d6db094aa",
+        "pdf_pages": [
+          8
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      }
+    },
+    "source_notice": "题面取自仓库国考言语整理库，已取得对应原PDF并补录卷别、原题号、物理页码和git blob。GKYY序号是整理库编号，不冒称原卷题号；参考答案是原资料答案，不冒称官方答案。",
+    "replacement_history": {
+      "reason": "整卷登记去重发现原题已用于M01/M02，撤下后换为未用题。",
+      "archive": "编辑底稿/历史内部核验/verbal_before_duplicate_replacements",
+      "independent_editor_answers": "编辑底稿/verbal_replacements_initial_answers.json",
+      "new_blind_input": "编辑底稿/verbal_replacements_blind.json",
+      "prior_review_does_not_cover_current_question": true
+    }
+  },
+  {
+    "number": 19,
+    "section": "言语理解与表达",
+    "subtype": "逻辑填空",
+    "question_type": "single_choice",
+    "source_bank": "jiangzhe",
+    "source_file": "江浙行测_AI题库/questions.jsonl",
+    "source_id": "ZJ2026-A类-028",
+    "source_question": {
+      "question_id": "ZJ2026-A类-028",
+      "paper_id": "ZJ2026",
+      "province": "浙江",
+      "year": 2026,
+      "paper_type": "A类",
+      "section": "言语理解与表达",
+      "original_number": 28,
+      "instruction": null,
+      "stem": "发挥主动性去探究问题，综合运用已有知识去探索解决问题的方法，是研学的主要目的。强化探究性不仅要根\n据 ____ 的研究主题进行，而且要针对在旅行中孩子们提出的 ____ 问题持续推进，这样才能让孩子们深入探究。\n研学的组织者要善于 ____ 孩子们感兴趣的研究主题，鼓励孩子去探索，避免只学不研，或者研究流于形式。\n依次填入画横线部分最恰当的一项是：",
+      "options": {
+        "A": "预设 鲜活 捕捉",
+        "B": "现有 真实 延伸",
+        "C": "设计 新奇 激发",
+        "D": "既定 实际 引导"
+      },
+      "options_mode": "text_or_mixed",
+      "content": "发挥主动性去探究问题，综合运用已有知识去探索解决问题的方法，是研学的主要目的。强化探究性不仅要根\n据 ____ 的研究主题进行，而且要针对在旅行中孩子们提出的 ____ 问题持续推进，这样才能让孩子们深入探究。\n研学的组织者要善于 ____ 孩子们感兴趣的研究主题，鼓励孩子去探索，避免只学不研，或者研究流于形式。\n依次填入画横线部分最恰当的一项是：\nA.预设 鲜活 捕捉 B.现有 真实 延伸 C.设计 新奇 激发 D.既定 实际 引导",
+      "figures": [],
+      "materials": [],
+      "material_ids": [],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2026年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "blob_sha": "cae0dd3faf2b521eabad6982c90590138c3e3dd1",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2026%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "regions": [
+          {
+            "page": 7,
+            "bbox": [
+              28.879276275634766,
+              319.0940856933594,
+              547.3163452148438,
+              398.1187438964844
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": [],
+      "notes": []
+    },
+    "stem_override": "发挥主动性去探究问题，综合运用已有知识去探索解决问题的方法，是研学的主要目的。强化探究性不仅要根据____的研究主题进行，而且要针对在旅行中孩子们提出的____问题持续推进，这样才能让孩子们深入探究。研学的组织者要善于____孩子们感兴趣的研究主题，鼓励孩子去探索，避免只学不研，或者研究流于形式。\n依次填入画横线部分最恰当的一项是：",
+    "options": {
+      "A": "预设 鲜活 捕捉",
+      "B": "现有 真实 延伸",
+      "C": "设计 新奇 激发",
+      "D": "既定 实际 引导"
+    },
+    "source_answer": null,
+    "answer": "A",
+    "analysis": "文段把研学中的两类问题相对照：一类在出发前安排好，一类在旅行现场由孩子提出。第一空“预设”与这种事先安排相符，第二空“鲜活”突出来自现场的具体问题。第三空的宾语是“孩子们感兴趣的研究主题”，组织者要善于发现、抓住这些主题，“捕捉”恰当；“延伸主题”是进一步扩展已有主题，“激发”通常搭配兴趣、思考等，“引导主题”也没有准确表达发现兴趣所在。A三空最协调。此题源库未提供参考答案，A为本卷编辑推导，待独立复核。",
+    "selection_reason": "在真实研学情境中辨别预设主题与现场问题，再以动宾搭配收束。",
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并源PDF行末硬换行，保留设问独立成段；填空线两侧删除排版空格；六句排序逐句保留换行。不删减正文与限定条件。",
+        "version": "0.1.0"
+      }
+    ],
+    "verification": {
+      "status": "editor_checked_pending_cross_review",
+      "independent_answer": "A",
+      "source_answer_available": false,
+      "source_answer_agreement": null,
+      "method": "编者先读无答案题面作答并留存记录，再比对源参考答案；这是编者自核，不冒称隔离盲审或Claude外审。",
+      "checked_on": "2026-11-15",
+      "completeness": "题干与四选项完整，无共用文章及缺题标记；国考氦-3题两处嵌图负温度已目检原PDF。",
+      "source_check": "已下载对应原PDF，git blob哈希一致，比较题干与四选项；仅记录已查阅页面，不推断其他卷别。详见核验记录/verbal_pdf_sources.json。",
+      "source_pdf_review": {
+        "reviewer": "GPT言语编辑",
+        "reviewed_version": "0.1.0",
+        "report": "核验记录/verbal_pdf_sources.json",
+        "pdf_file": "2026年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "pdf_git_blob_sha": "cae0dd3faf2b521eabad6982c90590138c3e3dd1",
+        "blob_match": true,
+        "pdf_pages": [
+          7
+        ]
+      },
+      "prior_output_check": {
+        "method": "排除M01–M03现用及撤题源ID；跨卷正文相似项另由整卷核验。",
+        "previous_project_source_id_match": false,
+        "limit": "不据此声称用户从未做过。"
+      }
+    },
+    "source_locators": {
+      "original_number": 28,
+      "pages": [
+        7
+      ],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2026年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "blob_sha": "cae0dd3faf2b521eabad6982c90590138c3e3dd1",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2026%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "regions": [
+          {
+            "page": 7,
+            "bbox": [
+              28.879276275634766,
+              319.0940856933594,
+              547.3163452148438,
+              398.1187438964844
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      }
+    },
+    "source_notice": "题面取自江浙整理库，已取得source中列出的原PDF并核对文字及选项，文件git blob与记录一致。浙江试题保留网友回忆版身份，参考答案是配套资料答案，不冒称官方答案。此题源库未提供参考答案，A是本卷编辑推导，不登记为源参考答案。",
+    "source_answer_reference": {
+      "file": "江浙行测_AI题库/answers.jsonl",
+      "source": null,
+      "quality_flags": [
+        "answer_not_in_source"
+      ]
+    }
+  },
+  {
+    "number": 20,
+    "section": "言语理解与表达",
+    "subtype": "逻辑填空",
+    "question_type": "single_choice",
+    "source_bank": "national_verbal",
+    "source_file": "国考/言语理解/2016-2025/all.jsonl",
+    "source_id": "GKYY-2025-036",
+    "source_question": {
+      "id": "GKYY-2025-036",
+      "year": 2025,
+      "section": "言语理解与表达",
+      "passage": null,
+      "stem": "降水总量增多、变率减弱可能是最让人____的变化型，这意味着未来的雨水不仅丰盈，还会以“润物细无声”的方式滋养大地。遗憾的是，全球几乎没有哪个地区的降水类型属于这一变化型。我国大部分地区的降水变化型属于“更湿润且波动更大”，意味着降水的____将增强，这须引起广泛重视。\n依次填入画横线部分最恰当的一项是：",
+      "options": {
+        "A": "望眼欲穿 偶然性",
+        "B": "翘首以盼 持续性",
+        "C": "津津乐道 集中性",
+        "D": "喜闻乐见 极端性"
+      },
+      "answer": "D",
+      "answer_candidates": [
+        "D"
+      ],
+      "answer_status": "single",
+      "notes": []
+    },
+    "stem_override": "降水总量增多、变率减弱可能是最让人____的变化型，这意味着未来的雨水不仅丰盈，还会以“润物细无声”的方式滋养大地。遗憾的是，全球几乎没有哪个地区的降水类型属于这一变化型。我国大部分地区的降水变化型属于“更湿润且波动更大”，意味着降水的____将增强，这须引起广泛重视。\n依次填入画横线部分最恰当的一项是：",
+    "options": {
+      "A": "望眼欲穿 偶然性",
+      "B": "翘首以盼 持续性",
+      "C": "津津乐道 集中性",
+      "D": "喜闻乐见 极端性"
+    },
+    "source_answer": "D",
+    "answer": "D",
+    "analysis": "第二空由“更湿润且波动更大”约束，降水并非更加均匀、持续，而是分布波动增强，“极端性”最合适；“偶然性”指偶发，“持续性”强调延续，“集中性”只强调聚集，均不能像D那样概括题给的两种变化。第一空描述人们欢迎雨量丰盈又温和均匀的状态，“喜闻乐见”合适。“望眼欲穿”“翘首以盼”侧重急切等待，“津津乐道”侧重谈论兴趣，与这里直接评价某种变化型的语意不如D贴切。选D。",
+    "selection_reason": "将材料描述的变化翻译成恰当词义，不只凭欢迎雨水的感情色彩选项。",
+    "edits": [],
+    "verification": {
+      "status": "editor_checked_pending_cross_review",
+      "independent_answer": "D",
+      "source_answer_available": true,
+      "source_answer_agreement": true,
+      "method": "编者先读无答案题面作答并留存记录，再比对源参考答案；这是编者自核，不冒称隔离盲审或Claude外审。",
+      "checked_on": "2026-11-15",
+      "completeness": "题干与四选项完整，无共用文章及缺题标记；国考氦-3题两处嵌图负温度已目检原PDF。",
+      "source_check": "已下载对应原PDF，git blob哈希一致，比较题干与四选项；仅记录已查阅页面，不推断其他卷别。详见核验记录/verbal_pdf_sources.json。",
+      "source_pdf_review": {
+        "reviewer": "GPT言语编辑",
+        "reviewed_version": "0.1.0",
+        "report": "核验记录/verbal_pdf_sources.json",
+        "pdf_file": "国考/真题/2025年国家公务员录用考试《行测》题（地市级）.pdf",
+        "pdf_git_blob_sha": "dcc592d8ec92c9b10c4d9dc794aeba1ef090ace7",
+        "blob_match": true,
+        "pdf_pages": [
+          7
+        ]
+      },
+      "prior_output_check": {
+        "method": "排除M01–M03现用及撤题源ID；跨卷正文相似项另由整卷核验。",
+        "previous_project_source_id_match": false,
+        "limit": "不据此声称用户从未做过。"
+      }
+    },
+    "source_locators": {
+      "original_number": 44,
+      "pages": [
+        7
+      ],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xing-ce1",
+        "commit": "0067a1a7723584d34ff564b4356af358b9c9027c",
+        "file": "国考/真题/2025年国家公务员录用考试《行测》题（地市级）.pdf",
+        "blob_sha": "dcc592d8ec92c9b10c4d9dc794aeba1ef090ace7",
+        "pdf_pages": [
+          7
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      }
+    },
+    "source_notice": "题面取自仓库国考言语整理库，已取得对应原PDF并补录卷别、原题号、物理页码和git blob。GKYY序号是整理库编号，不冒称原卷题号；参考答案是原资料答案，不冒称官方答案。"
+  },
+  {
+    "number": 21,
+    "section": "言语理解与表达",
+    "subtype": "意图判断",
+    "question_type": "single_choice",
+    "source_bank": "national_verbal",
+    "source_file": "国考/言语理解/2016-2025/all.jsonl",
+    "source_id": "GKYY-2025-020",
+    "source_question": {
+      "id": "GKYY-2025-020",
+      "year": 2025,
+      "section": "言语理解与表达",
+      "passage": null,
+      "stem": "经济是肌体，金融是血脉，两者共生共荣。银行利润建立在企业发展的基础上，实体经济如果没有足够的利润率或者盈利能力，银行是没有办法获得持续发展和盈利空间的。而当前净息差的降低，使企业从银行获得了低成本贷款，能够极大减轻企业经营发展负担，把更多资金投入科研创新、转型升级、设备更新等领域，进而实现高质量发展。唯有实体经济规模扩大、效益改善、质量提升，银行才能获得自身高质量发展的坚实基础。\n这段文字意在说明：",
+      "options": {
+        "A": "银行的盈利空间与企业盈利能力相辅相成",
+        "B": "经济的稳定与繁荣是金融持续发展的根基",
+        "C": "银行要稳健发展须保持合理的净息差水平",
+        "D": "降低净息差有助于促进企业和银行的共赢"
+      },
+      "answer": "D",
+      "answer_candidates": [
+        "D"
+      ],
+      "answer_status": "single",
+      "notes": []
+    },
+    "stem_override": "经济是肌体，金融是血脉，两者共生共荣。银行利润建立在企业发展的基础上，实体经济如果没有足够的利润率或者盈利能力，银行是没有办法获得持续发展和盈利空间的。而当前净息差的降低，使企业从银行获得了低成本贷款，能够极大减轻企业经营发展负担，把更多资金投入科研创新、转型升级、设备更新等领域，进而实现高质量发展。唯有实体经济规模扩大、效益改善、质量提升，银行才能获得自身高质量发展的坚实基础。\n这段文字意在说明：",
+    "options": {
+      "A": "银行的盈利空间与企业盈利能力相辅相成",
+      "B": "经济的稳定与繁荣是金融持续发展的根基",
+      "C": "银行要稳健发展须保持合理的净息差水平",
+      "D": "降低净息差有助于促进企业和银行的共赢"
+    },
+    "source_answer": "D",
+    "answer": "D",
+    "analysis": "文段先交代企业发展是银行持续盈利的基础，再解释当前净息差降低的作用：企业获得低成本贷款，减轻负担并投入创新升级；实体经济发展又为银行发展奠定基础。D将“降低净息差”这一具体机制与企业、银行共同受益的结果完整连接起来。A和B所说的金融与实体经济相互关系是文段的理论前提，未概括中间重点展开的息差变化及其作用；C提出“保持合理水平”，题面没有讨论合理水平的界限或维持它的办法。选D。这里依据的是文段给出的推理，不是向外推断净息差越低越好。",
+    "selection_reason": "区分金融与经济关系这一背景总论，和净息差变化带来共赢的具体论证中心。",
+    "edits": [],
+    "verification": {
+      "status": "editor_checked_pending_cross_review",
+      "independent_answer": "D",
+      "source_answer_available": true,
+      "source_answer_agreement": true,
+      "method": "编者先读无答案题面作答并留存记录，再比对源参考答案；这是编者自核，不冒称隔离盲审或Claude外审。",
+      "checked_on": "2026-11-15",
+      "completeness": "题干与四选项完整，无共用文章及缺题标记；国考氦-3题两处嵌图负温度已目检原PDF。",
+      "source_check": "已下载对应原PDF，git blob哈希一致，比较题干与四选项；仅记录已查阅页面，不推断其他卷别。详见核验记录/verbal_pdf_sources.json。",
+      "source_pdf_review": {
+        "reviewer": "GPT言语编辑",
+        "reviewed_version": "0.1.0",
+        "report": "核验记录/verbal_pdf_sources.json",
+        "pdf_file": "国考/真题/2025年国家公务员录用考试《行测》题（副省级）.pdf",
+        "pdf_git_blob_sha": "a229e81581469ca79d7df55239185a0285de0d30",
+        "blob_match": true,
+        "pdf_pages": [
+          9
+        ]
+      },
+      "prior_output_check": {
+        "method": "排除M01–M03现用及撤题源ID；跨卷正文相似项另由整卷核验。",
+        "previous_project_source_id_match": false,
+        "limit": "不据此声称用户从未做过。"
+      }
+    },
+    "source_locators": {
+      "original_number": 55,
+      "pages": [
+        9
+      ],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xing-ce1",
+        "commit": "0067a1a7723584d34ff564b4356af358b9c9027c",
+        "file": "国考/真题/2025年国家公务员录用考试《行测》题（副省级）.pdf",
+        "blob_sha": "a229e81581469ca79d7df55239185a0285de0d30",
+        "pdf_pages": [
+          9
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      }
+    },
+    "source_notice": "题面取自仓库国考言语整理库，已取得对应原PDF并补录卷别、原题号、物理页码和git blob。GKYY序号是整理库编号，不冒称原卷题号；参考答案是原资料答案，不冒称官方答案。",
+    "replacement_history": {
+      "reason": "整卷登记去重发现原题已用于M01/M02，撤下后换为未用题。",
+      "archive": "编辑底稿/历史内部核验/verbal_before_duplicate_replacements",
+      "independent_editor_answers": "编辑底稿/verbal_replacements_initial_answers.json",
+      "new_blind_input": "编辑底稿/verbal_replacements_blind.json",
+      "prior_review_does_not_cover_current_question": true
+    }
+  },
+  {
+    "number": 22,
+    "section": "言语理解与表达",
+    "subtype": "意图判断",
+    "question_type": "single_choice",
+    "source_bank": "national_verbal",
+    "source_file": "国考/言语理解/2016-2025/all.jsonl",
+    "source_id": "GKYY-2024-052",
+    "source_question": {
+      "id": "GKYY-2024-052",
+      "year": 2024,
+      "section": "言语理解与表达",
+      "passage": null,
+      "stem": "村落形成是优胜劣汰、自我生长的过程。我们现在看到的村落，是经过历史“折叠”后的结果，当下呈现的只是其中一个切面。村落里的大部分遗留物中，都隐藏着不同历史阶段的痕迹，想要看清楚，需要将“折叠”展开，按照各种痕迹进行重新整理和立体化呈现。所谓“没有特色、没有传统的村落”，其实是因为信息残缺较为严重，但其中的历史印记不会完全消失。要发现这些信息，必须通过长时间的田野调查，与原住民进行深入交流，感受他们对艺术的认知与理解，找到他们能接受、认为美的形式，这才是艺术乡建最重要的切入点。\n作者通过这段文字想说的是：",
+      "options": {
+        "A": "村落中的历史文化信息亟待发掘整理",
+        "B": "艺术乡建应以复原村落特色为着力点",
+        "C": "发现历史细节是振兴传统村落的基础",
+        "D": "扎实的田野调查对艺术乡建至关重要"
+      },
+      "answer": "D",
+      "answer_candidates": [
+        "D"
+      ],
+      "answer_status": "single",
+      "notes": []
+    },
+    "stem_override": "村落形成是优胜劣汰、自我生长的过程。我们现在看到的村落，是经过历史“折叠”后的结果，当下呈现的只是其中一个切面。村落里的大部分遗留物中，都隐藏着不同历史阶段的痕迹，想要看清楚，需要将“折叠”展开，按照各种痕迹进行重新整理和立体化呈现。所谓“没有特色、没有传统的村落”，其实是因为信息残缺较为严重，但其中的历史印记不会完全消失。要发现这些信息，必须通过长时间的田野调查，与原住民进行深入交流，感受他们对艺术的认知与理解，找到他们能接受、认为美的形式，这才是艺术乡建最重要的切入点。\n作者通过这段文字想说的是：",
+    "options": {
+      "A": "村落中的历史文化信息亟待发掘整理",
+      "B": "艺术乡建应以复原村落特色为着力点",
+      "C": "发现历史细节是振兴传统村落的基础",
+      "D": "扎实的田野调查对艺术乡建至关重要"
+    },
+    "source_answer": "D",
+    "answer": "D",
+    "analysis": "前半段说明村落中的历史信息经过积累、遮蔽，并非真的没有传统；后半段回答如何发现这些信息，明确提出长时间田野调查、与原住民交流，进而寻找当地人能接受的艺术形式。D覆盖这一实际主张。A只说发掘整理信息，未指出艺术乡建中的调查路径；B把着力点限定为“复原村落特色”，文段还强调理解当代居民的审美，并未主张照旧恢复；C将对象扩大为传统村落振兴，又把历史细节说成基础。选D。田野调查在这里包含与居民的深入交流，不只是清点旧建筑。",
+    "selection_reason": "理解材料由历史信息到乡建方法的递进，防止主旨停留在漂亮的背景概括。",
+    "edits": [],
+    "verification": {
+      "status": "editor_checked_pending_cross_review",
+      "independent_answer": "D",
+      "source_answer_available": true,
+      "source_answer_agreement": true,
+      "method": "编者先读无答案题面作答并留存记录，再比对源参考答案；这是编者自核，不冒称隔离盲审或Claude外审。",
+      "checked_on": "2026-11-15",
+      "completeness": "题干与四选项完整，无共用文章及缺题标记；国考氦-3题两处嵌图负温度已目检原PDF。",
+      "source_check": "已下载对应原PDF，git blob哈希一致，比较题干与四选项；仅记录已查阅页面，不推断其他卷别。详见核验记录/verbal_pdf_sources.json。",
+      "source_pdf_review": {
+        "reviewer": "GPT言语编辑",
+        "reviewed_version": "0.1.0",
+        "report": "核验记录/verbal_pdf_sources.json",
+        "pdf_file": "国考/真题/2024年国家公务员录用考试《行测》题（地市级）.pdf",
+        "pdf_git_blob_sha": "757785f7c0e1aa0fcd7b65f0a9f64efa3dfdc32d",
+        "blob_match": true,
+        "pdf_pages": [
+          7
+        ]
+      },
+      "prior_output_check": {
+        "method": "排除M01–M03现用及撤题源ID；跨卷正文相似项另由整卷核验。",
+        "previous_project_source_id_match": false,
+        "limit": "不据此声称用户从未做过。"
+      }
+    },
+    "source_locators": {
+      "original_number": 46,
+      "pages": [
+        7
+      ],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xing-ce1",
+        "commit": "0067a1a7723584d34ff564b4356af358b9c9027c",
+        "file": "国考/真题/2024年国家公务员录用考试《行测》题（地市级）.pdf",
+        "blob_sha": "757785f7c0e1aa0fcd7b65f0a9f64efa3dfdc32d",
+        "pdf_pages": [
+          7
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      }
+    },
+    "source_notice": "题面取自仓库国考言语整理库，已取得对应原PDF并补录卷别、原题号、物理页码和git blob。GKYY序号是整理库编号，不冒称原卷题号；参考答案是原资料答案，不冒称官方答案。"
+  },
+  {
+    "number": 23,
+    "section": "言语理解与表达",
+    "subtype": "标题选择",
+    "question_type": "single_choice",
+    "source_bank": "jiangzhe",
+    "source_file": "江浙行测_AI题库/questions.jsonl",
+    "source_id": "ZJ2025-A类-034",
+    "source_question": {
+      "question_id": "ZJ2025-A类-034",
+      "paper_id": "ZJ2025",
+      "province": "浙江",
+      "year": 2025,
+      "paper_type": "A类",
+      "section": "言语理解与表达",
+      "original_number": 34,
+      "instruction": null,
+      "stem": "最近一年，之江实验室天文计算研究中心基于FAST的观测数据共发现了31颗脉冲星，其中包括15颗长周期脉冲\n星。该研究中心团队曾仅用170小时完成约172TB数据的处理，相当于每小时速览1024部容量为1GB的电影。团\n队负责人表示，利用中心自研的AI算法等智能计算技术辅助处理数据，可以让研究人员从繁重的数据分析中解\n放出来，将更多精力投入到理解数据背后的物理图像中，大大提高科研效率。\n如果想夸赞之江实验室天文计算研究中心的成就，这段文字可用的标题是：",
+      "options": {
+        "A": "炼得“金刚钻”敢揽“瓷器活”",
+        "B": "只有勇于探索才能遥遥领先",
+        "C": "高效源于专业成功源于细节",
+        "D": "不经一番寒彻骨怎得梅花扑鼻香"
+      },
+      "options_mode": "text_or_mixed",
+      "content": "最近一年，之江实验室天文计算研究中心基于FAST的观测数据共发现了31颗脉冲星，其中包括15颗长周期脉冲\n星。该研究中心团队曾仅用170小时完成约172TB数据的处理，相当于每小时速览1024部容量为1GB的电影。团\n队负责人表示，利用中心自研的AI算法等智能计算技术辅助处理数据，可以让研究人员从繁重的数据分析中解\n放出来，将更多精力投入到理解数据背后的物理图像中，大大提高科研效率。\n如果想夸赞之江实验室天文计算研究中心的成就，这段文字可用的标题是：\nA.炼得“金刚钻”敢揽“瓷器活” B.只有勇于探索才能遥遥领先\nC.高效源于专业成功源于细节 D.不经一番寒彻骨怎得梅花扑鼻香",
+      "figures": [],
+      "materials": [],
+      "material_ids": [],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "blob_sha": "422a8d5a7c9c379fe3b10fc81eb6424f17b4bdbb",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2025%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "regions": [
+          {
+            "page": 7,
+            "bbox": [
+              28.879276275634766,
+              572.3670043945312,
+              550.1937255859375,
+              683.5142822265625
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": [],
+      "notes": []
+    },
+    "stem_override": "最近一年，之江实验室天文计算研究中心基于FAST的观测数据共发现了31颗脉冲星，其中包括15颗长周期脉冲星。该研究中心团队曾仅用170小时完成约172TB数据的处理，相当于每小时速览1024部容量为1GB的电影。团队负责人表示，利用中心自研的AI算法等智能计算技术辅助处理数据，可以让研究人员从繁重的数据分析中解放出来，将更多精力投入到理解数据背后的物理图像中，大大提高科研效率。\n如果想夸赞之江实验室天文计算研究中心的成就，这段文字可用的标题是：",
+    "options": {
+      "A": "炼得“金刚钻”敢揽“瓷器活”",
+      "B": "只有勇于探索才能遥遥领先",
+      "C": "高效源于专业成功源于细节",
+      "D": "不经一番寒彻骨怎得梅花扑鼻香"
+    },
+    "source_answer": "A",
+    "answer": "A",
+    "analysis": "前两句列出发现脉冲星和高效处理海量数据的成绩，后文解释原因：自研AI算法等智能计算技术，让研究人员摆脱繁重分析、提高科研效率。A的“金刚钻”对应具备的技术能力，“瓷器活”对应由此能够承担的研究工作，保留了“能力支撑成果”的关系。B的“遥遥领先”、C的“成功源于细节”、D的“经历艰苦磨炼”均不是题面提供的成就依据。选A。这不是在几句好听的赞语中挑最响亮的一句，而是要看比喻能否对应事实之间的关系。",
+    "selection_reason": "把标题中的比喻还原为“技术能力支撑科研成果”的因果关系。",
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并源PDF行末硬换行，保留设问独立成段；填空线两侧删除排版空格；六句排序逐句保留换行。不删减正文与限定条件。",
+        "version": "0.1.0"
+      }
+    ],
+    "verification": {
+      "status": "editor_checked_pending_cross_review",
+      "independent_answer": "A",
+      "source_answer_available": true,
+      "source_answer_agreement": true,
+      "method": "编者先读无答案题面作答并留存记录，再比对源参考答案；这是编者自核，不冒称隔离盲审或Claude外审。",
+      "checked_on": "2026-11-15",
+      "completeness": "题干与四选项完整，无共用文章及缺题标记；国考氦-3题两处嵌图负温度已目检原PDF。",
+      "source_check": "已下载对应原PDF，git blob哈希一致，比较题干与四选项；仅记录已查阅页面，不推断其他卷别。详见核验记录/verbal_pdf_sources.json。",
+      "source_pdf_review": {
+        "reviewer": "GPT言语编辑",
+        "reviewed_version": "0.1.0",
+        "report": "核验记录/verbal_pdf_sources.json",
+        "pdf_file": "2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "pdf_git_blob_sha": "422a8d5a7c9c379fe3b10fc81eb6424f17b4bdbb",
+        "blob_match": true,
+        "pdf_pages": [
+          7
+        ]
+      },
+      "prior_output_check": {
+        "method": "排除M01–M03现用及撤题源ID；跨卷正文相似项另由整卷核验。",
+        "previous_project_source_id_match": false,
+        "limit": "不据此声称用户从未做过。"
+      }
+    },
+    "source_locators": {
+      "original_number": 34,
+      "pages": [
+        7
+      ],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "blob_sha": "422a8d5a7c9c379fe3b10fc81eb6424f17b4bdbb",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2025%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "regions": [
+          {
+            "page": 7,
+            "bbox": [
+              28.879276275634766,
+              572.3670043945312,
+              550.1937255859375,
+              683.5142822265625
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      }
+    },
+    "source_notice": "题面取自江浙整理库，已取得source中列出的原PDF并核对文字及选项，文件git blob与记录一致。浙江试题保留网友回忆版身份，参考答案是配套资料答案，不冒称官方答案。",
+    "source_answer_reference": {
+      "file": "江浙行测_AI题库/answers.jsonl",
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）解析.pdf",
+        "blob_sha": "a4ae2b755ed2f64f3014b4f63b4f8f267775f2f8",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2025%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89%E8%A7%A3%E6%9E%90.pdf",
+        "pdf_pages": [
+          16
+        ],
+        "regions": [
+          {
+            "page": 16,
+            "bbox": [
+              90.0,
+              206.01104736328125,
+              511.3190002441406,
+              501.41168212890625
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": []
+    }
+  },
+  {
+    "number": 24,
+    "section": "言语理解与表达",
+    "subtype": "语句填空",
+    "question_type": "single_choice",
+    "source_bank": "jiangzhe",
+    "source_file": "江浙行测_AI题库/questions.jsonl",
+    "source_id": "ZJ2024-A类-045",
+    "source_question": {
+      "question_id": "ZJ2024-A类-045",
+      "paper_id": "ZJ2024",
+      "province": "浙江",
+      "year": 2024,
+      "paper_type": "A类",
+      "section": "言语理解与表达",
+      "original_number": 45,
+      "instruction": null,
+      "stem": "智能计算机技术成为开启数字文化产业未来畅想的金钥匙。如果说传统文化产业发展的原动力源于文化消费的\n市场化，那么在数字化转型期，市场的无形之手已变成数字化之手，文化产业消费市场越来越多地由头部数字\n平台承接并管理， ____ ，同样的逻辑亦能解释文化产业的持续数字化对于前沿技术的强劲需求。虚拟现\n实、增强现实、人工智能、区块链以及不断创新的各类应用软件技术，正全面应用于文化产业大发展中，通过\n“技术+文化”赋能文化产业创新，改变文化产业面貌。\n填入画横线部分最恰当的一项是：",
+      "options": {
+        "A": "选择优质的数字技术平台成为企业发展关键",
+        "B": "坚持技术创新才能促进文化产业高质量发展",
+        "C": "智能数字技术成为发展文化产业新一轮动力",
+        "D": "要同时有效发挥有形之手和无形之手的作用"
+      },
+      "options_mode": "text_or_mixed",
+      "content": "智能计算机技术成为开启数字文化产业未来畅想的金钥匙。如果说传统文化产业发展的原动力源于文化消费的\n市场化，那么在数字化转型期，市场的无形之手已变成数字化之手，文化产业消费市场越来越多地由头部数字\n平台承接并管理， ____ ，同样的逻辑亦能解释文化产业的持续数字化对于前沿技术的强劲需求。虚拟现\n实、增强现实、人工智能、区块链以及不断创新的各类应用软件技术，正全面应用于文化产业大发展中，通过\n“技术+文化”赋能文化产业创新，改变文化产业面貌。\n填入画横线部分最恰当的一项是：\nA.选择优质的数字技术平台成为企业发展关键 B.坚持技术创新才能促进文化产业高质量发展\nC.智能数字技术成为发展文化产业新一轮动力 D.要同时有效发挥有形之手和无形之手的作用",
+      "figures": [],
+      "materials": [],
+      "material_ids": [],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2024年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "blob_sha": "5c91c85dea775104c07489815ffaedeee90d3e8e",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2024%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "regions": [
+          {
+            "page": 9,
+            "bbox": [
+              28.879276275634766,
+              146.1275177001953,
+              547.3163452148438,
+              273.3357849121094
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": [],
+      "notes": []
+    },
+    "stem_override": "智能计算机技术成为开启数字文化产业未来畅想的金钥匙。如果说传统文化产业发展的原动力源于文化消费的市场化，那么在数字化转型期，市场的无形之手已变成数字化之手，文化产业消费市场越来越多地由头部数字平台承接并管理，____，同样的逻辑亦能解释文化产业的持续数字化对于前沿技术的强劲需求。虚拟现实、增强现实、人工智能、区块链以及不断创新的各类应用软件技术，正全面应用于文化产业大发展中，通过“技术+文化”赋能文化产业创新，改变文化产业面貌。\n填入画横线部分最恰当的一项是：",
+    "options": {
+      "A": "选择优质的数字技术平台成为企业发展关键",
+      "B": "坚持技术创新才能促进文化产业高质量发展",
+      "C": "智能数字技术成为发展文化产业新一轮动力",
+      "D": "要同时有效发挥有形之手和无形之手的作用"
+    },
+    "source_answer": "C",
+    "answer": "C",
+    "analysis": "横线前比较文化产业发展的动力：过去是文化消费市场化，现在是数字平台及数字技术；横线后说“同样的逻辑亦能解释”文化产业数字化为何强烈需要前沿技术。C点明数字技术成为新的发展动力，既承接前文，也解释后文的技术需求。A转向企业选择平台，没有概括产业动力变化；B的技术创新与后文相关，但泛化为必要对策，弱化了前后的数字技术这一具体关系；D额外引入政府“有形之手”，题面没有这层讨论。选C。",
+    "selection_reason": "跨空观察前后的动力与需求关系，检验候选句能否同时承接两边。",
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并源PDF行末硬换行，保留设问独立成段；填空线两侧删除排版空格；六句排序逐句保留换行。不删减正文与限定条件。",
+        "version": "0.1.0"
+      }
+    ],
+    "verification": {
+      "status": "editor_checked_pending_cross_review",
+      "independent_answer": "C",
+      "source_answer_available": true,
+      "source_answer_agreement": true,
+      "method": "编者先读无答案题面作答并留存记录，再比对源参考答案；这是编者自核，不冒称隔离盲审或Claude外审。",
+      "checked_on": "2026-11-15",
+      "completeness": "题干与四选项完整，无共用文章及缺题标记；国考氦-3题两处嵌图负温度已目检原PDF。",
+      "source_check": "已下载对应原PDF，git blob哈希一致，比较题干与四选项；仅记录已查阅页面，不推断其他卷别。详见核验记录/verbal_pdf_sources.json。",
+      "source_pdf_review": {
+        "reviewer": "GPT言语编辑",
+        "reviewed_version": "0.1.0",
+        "report": "核验记录/verbal_pdf_sources.json",
+        "pdf_file": "2024年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "pdf_git_blob_sha": "5c91c85dea775104c07489815ffaedeee90d3e8e",
+        "blob_match": true,
+        "pdf_pages": [
+          9
+        ]
+      },
+      "prior_output_check": {
+        "method": "排除M01–M03现用及撤题源ID；跨卷正文相似项另由整卷核验。",
+        "previous_project_source_id_match": false,
+        "limit": "不据此声称用户从未做过。"
+      }
+    },
+    "source_locators": {
+      "original_number": 45,
+      "pages": [
+        9
+      ],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2024年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "blob_sha": "5c91c85dea775104c07489815ffaedeee90d3e8e",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2024%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "regions": [
+          {
+            "page": 9,
+            "bbox": [
+              28.879276275634766,
+              146.1275177001953,
+              547.3163452148438,
+              273.3357849121094
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      }
+    },
+    "source_notice": "题面取自江浙整理库，已取得source中列出的原PDF并核对文字及选项，文件git blob与记录一致。浙江试题保留网友回忆版身份，参考答案是配套资料答案，不冒称官方答案。",
+    "source_answer_reference": {
+      "file": "江浙行测_AI题库/answers.jsonl",
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2024年浙江省公务员录用考试《行测》（A卷）参考答案及解析.pdf",
+        "blob_sha": "dc0cd4f607d5f4bb395629e6de89a7b1606d1932",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2024%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%EF%BC%88A%E5%8D%B7%EF%BC%89%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%E5%8F%8A%E8%A7%A3%E6%9E%90.pdf",
+        "pdf_pages": [
+          15,
+          16
+        ],
+        "regions": [
+          {
+            "page": 15,
+            "bbox": [
+              90.0,
+              728.98779296875,
+              185.19476318359375,
+              746.9931030273438
+            ]
+          },
+          {
+            "page": 16,
+            "bbox": [
+              90.0,
+              73.78880310058594,
+              505.2074890136719,
+              278.994140625
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": []
+    }
+  },
+  {
+    "number": 25,
+    "section": "言语理解与表达",
+    "subtype": "细节理解（正向）",
+    "question_type": "single_choice",
+    "source_bank": "national_verbal",
+    "source_file": "国考/言语理解/2016-2025/all.jsonl",
+    "source_id": "GKYY-2025-044",
+    "source_question": {
+      "id": "GKYY-2025-044",
+      "year": 2025,
+      "section": "言语理解与表达",
+      "passage": null,
+      "stem": "相较于地球，月球上氦-3储量极为丰富。氦-3来源于太阳内部核聚变，以高能粒子形式通过太阳风向宇宙扩散。月球没有大气层，其磁场不足地球的千分之一，使得太阳风能够直射月球表面并将氦-3注入月壤层。同时，月表温度在月夜最低可达−180℃，极地永久阴影区甚至可达−250℃。极低温环境有效促进了氦-3被月壤层吸附，阻止其向太空逃逸，并在月表不断富集。据估算，全月氦-3换算储量高达110万吨，可作为清洁核原料供地球使用约1万年。\n这段文字能够解释下列哪一问题？",
+      "options": {
+        "A": "月球上的氦-3储量是如何换算的",
+        "B": "低温如何促进氦-3被月壤层吸附",
+        "C": "为何太阳风能将氦-3注入月壤层",
+        "D": "如何开采月球上丰富的氦-3资源"
+      },
+      "answer": "C",
+      "answer_candidates": [
+        "C"
+      ],
+      "answer_status": "single",
+      "notes": []
+    },
+    "stem_override": "相较于地球，月球上氦-3储量极为丰富。氦-3来源于太阳内部核聚变，以高能粒子形式通过太阳风向宇宙扩散。月球没有大气层，其磁场不足地球的千分之一，使得太阳风能够直射月球表面并将氦-3注入月壤层。同时，月表温度在月夜最低可达−180℃，极地永久阴影区甚至可达−250℃。极低温环境有效促进了氦-3被月壤层吸附，阻止其向太空逃逸，并在月表不断富集。据估算，全月氦-3换算储量高达110万吨，可作为清洁核原料供地球使用约1万年。\n这段文字能够解释下列哪一问题？",
+    "options": {
+      "A": "月球上的氦-3储量是如何换算的",
+      "B": "低温如何促进氦-3被月壤层吸附",
+      "C": "为何太阳风能将氦-3注入月壤层",
+      "D": "如何开采月球上丰富的氦-3资源"
+    },
+    "source_answer": "C",
+    "answer": "C",
+    "analysis": "题干明确给出了“月球没有大气层、磁场很弱→太阳风能够直射月面→氦-3注入月壤”的解释链，正对应C。A问储量“如何换算”，材料只给出了换算结果；B问低温“如何”促进吸附，材料只陈述低温能促进吸附，没有继续解释微观机制；D问开采方法，材料没有涉及。选C。出现某个概念或给出一个结论，不等于已经解释了它的计算过程、作用机制或实施办法。",
+    "selection_reason": "区分“提及结论”与“解释机制”，科学材料无需外部专业知识即可作答。",
+    "edits": [],
+    "verification": {
+      "status": "editor_checked_pending_cross_review",
+      "independent_answer": "C",
+      "source_answer_available": true,
+      "source_answer_agreement": true,
+      "method": "编者先读无答案题面作答并留存记录，再比对源参考答案；这是编者自核，不冒称隔离盲审或Claude外审。",
+      "checked_on": "2026-11-15",
+      "completeness": "题干与四选项完整，无共用文章及缺题标记；国考氦-3题两处嵌图负温度已目检原PDF。",
+      "source_check": "已下载对应原PDF，git blob哈希一致，比较题干与四选项；仅记录已查阅页面，不推断其他卷别。详见核验记录/verbal_pdf_sources.json。",
+      "source_pdf_review": {
+        "reviewer": "GPT言语编辑",
+        "reviewed_version": "0.1.0",
+        "report": "核验记录/verbal_pdf_sources.json",
+        "pdf_file": "国考/真题/2025年国家公务员录用考试《行测》题（地市级）.pdf",
+        "pdf_git_blob_sha": "dcc592d8ec92c9b10c4d9dc794aeba1ef090ace7",
+        "blob_match": true,
+        "pdf_pages": [
+          9
+        ]
+      },
+      "prior_output_check": {
+        "method": "排除M01–M03现用及撤题源ID；跨卷正文相似项另由整卷核验。",
+        "previous_project_source_id_match": false,
+        "limit": "不据此声称用户从未做过。"
+      }
+    },
+    "source_locators": {
+      "original_number": 56,
+      "pages": [
+        9
+      ],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xing-ce1",
+        "commit": "0067a1a7723584d34ff564b4356af358b9c9027c",
+        "file": "国考/真题/2025年国家公务员录用考试《行测》题（地市级）.pdf",
+        "blob_sha": "dcc592d8ec92c9b10c4d9dc794aeba1ef090ace7",
+        "pdf_pages": [
+          9
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      }
+    },
+    "source_notice": "题面取自仓库国考言语整理库，已取得对应原PDF并补录卷别、原题号、物理页码和git blob。GKYY序号是整理库编号，不冒称原卷题号；参考答案是原资料答案，不冒称官方答案。"
+  },
+  {
+    "number": 26,
+    "section": "言语理解与表达",
+    "subtype": "语句排序",
+    "question_type": "single_choice",
+    "source_bank": "national_verbal",
+    "source_file": "国考/言语理解/2016-2025/all.jsonl",
+    "source_id": "GKYY-2025-062",
+    "source_question": {
+      "id": "GKYY-2025-062",
+      "year": 2025,
+      "section": "言语理解与表达",
+      "passage": null,
+      "stem": "①绝缘问题已不是一般材料的简单组合和简单工艺所能解决，而需要有一些特定性能的材料，针对具体的绝缘要求做成特定形式的结构才能适应需要\n②随着技术发展，社会对电工产品的经济效益和性能稳定性的要求不断提高，绝缘材料才从材料的大类里分离而出\n③在电工技术发展初期，电工产品对绝缘的要求不高，一般天然材料如棉、麻、丝等纤维，松香、石蜡等有机物质即可满足使用要求\n④这样一来，一批多功能的协和性组合绝缘结构得到了开发，绝缘技术也发展到了一个新的阶段\n⑤因而，当时没有专门用于绝缘的材料，也没有绝缘工艺和绝缘结构的概念\n⑥随着使用电压的不断提高，电工产品使用领域的扩展，环境因素对绝缘的影响越来越显著\n将以上6个句子重新排列，语序正确的一项是：",
+      "options": {
+        "A": "②③⑤⑥④①",
+        "B": "②③⑥⑤①④",
+        "C": "③⑤②⑥①④",
+        "D": "③⑤⑥②④①"
+      },
+      "answer": "C",
+      "answer_candidates": [
+        "C"
+      ],
+      "answer_status": "single",
+      "notes": []
+    },
+    "stem_override": "①绝缘问题已不是一般材料的简单组合和简单工艺所能解决，而需要有一些特定性能的材料，针对具体的绝缘要求做成特定形式的结构才能适应需要\n②随着技术发展，社会对电工产品的经济效益和性能稳定性的要求不断提高，绝缘材料才从材料的大类里分离而出\n③在电工技术发展初期，电工产品对绝缘的要求不高，一般天然材料如棉、麻、丝等纤维，松香、石蜡等有机物质即可满足使用要求\n④这样一来，一批多功能的协和性组合绝缘结构得到了开发，绝缘技术也发展到了一个新的阶段\n⑤因而，当时没有专门用于绝缘的材料，也没有绝缘工艺和绝缘结构的概念\n⑥随着使用电压的不断提高，电工产品使用领域的扩展，环境因素对绝缘的影响越来越显著\n将以上6个句子重新排列，语序正确的一项是：",
+    "options": {
+      "A": "②③⑤⑥④①",
+      "B": "②③⑥⑤①④",
+      "C": "③⑤②⑥①④",
+      "D": "③⑤⑥②④①"
+    },
+    "source_answer": "C",
+    "answer": "C",
+    "analysis": "③介绍电工技术发展初期，普通天然材料即可满足绝缘要求；⑤用“因而”“当时”紧接，解释没有专用材料、工艺和结构概念的原因。②再写经济效益、性能稳定性要求提高，专门绝缘材料由此分离出来；⑥进一步写电压、应用领域和环境因素带来更高要求，①承接说明一般材料和简单工艺已不足，需要专门材料及结构。④的“这样一来”总结前面的解决路径，落到组合绝缘结构的开发与新阶段。顺序为③⑤②⑥①④，选C。④必须放在①提出特定材料和结构之后，不能先出现开发结果再补写需要。",
+    "selection_reason": "按初期条件、专门材料分离、更高要求及结构创新组织六句，同时核查因果与指代。",
+    "edits": [],
+    "verification": {
+      "status": "editor_checked_pending_cross_review",
+      "independent_answer": "C",
+      "source_answer_available": true,
+      "source_answer_agreement": true,
+      "method": "编者先读无答案题面作答并留存记录，再比对源参考答案；这是编者自核，不冒称隔离盲审或Claude外审。",
+      "checked_on": "2026-11-15",
+      "completeness": "题干与四选项完整，无共用文章及缺题标记；国考氦-3题两处嵌图负温度已目检原PDF。",
+      "source_check": "已下载对应原PDF，git blob哈希一致，比较题干与四选项；仅记录已查阅页面，不推断其他卷别。详见核验记录/verbal_pdf_sources.json。",
+      "source_pdf_review": {
+        "reviewer": "GPT言语编辑",
+        "reviewed_version": "0.1.0",
+        "report": "核验记录/verbal_pdf_sources.json",
+        "pdf_file": "国考/真题/2025年国家公务员录用考试《行测》题（行政执法卷）.pdf",
+        "pdf_git_blob_sha": "b4413b040efd102fea703f718c8f167d6db094aa",
+        "blob_match": true,
+        "pdf_pages": [
+          10
+        ]
+      },
+      "prior_output_check": {
+        "method": "排除M01–M03现用及撤题源ID；跨卷正文相似项另由整卷核验。",
+        "previous_project_source_id_match": false,
+        "limit": "不据此声称用户从未做过。"
+      }
+    },
+    "source_locators": {
+      "original_number": 61,
+      "pages": [
+        10
+      ],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xing-ce1",
+        "commit": "0067a1a7723584d34ff564b4356af358b9c9027c",
+        "file": "国考/真题/2025年国家公务员录用考试《行测》题（行政执法卷）.pdf",
+        "blob_sha": "b4413b040efd102fea703f718c8f167d6db094aa",
+        "pdf_pages": [
+          10
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      }
+    },
+    "source_notice": "题面取自仓库国考言语整理库，已取得对应原PDF并补录卷别、原题号、物理页码和git blob。GKYY序号是整理库编号，不冒称原卷题号；参考答案是原资料答案，不冒称官方答案。",
+    "replacement_history": {
+      "reason": "整卷登记去重发现原题已用于M01/M02，撤下后换为未用题。",
+      "archive": "编辑底稿/历史内部核验/verbal_before_duplicate_replacements",
+      "independent_editor_answers": "编辑底稿/verbal_replacements_initial_answers.json",
+      "new_blind_input": "编辑底稿/verbal_replacements_blind.json",
+      "prior_review_does_not_cover_current_question": true
+    }
+  },
+  {
+    "number": 27,
+    "section": "言语理解与表达",
+    "subtype": "语句填空",
+    "question_type": "single_choice",
+    "source_bank": "national_verbal",
+    "source_file": "国考/言语理解/2016-2025/all.jsonl",
+    "source_id": "GKYY-2025-048",
+    "source_question": {
+      "id": "GKYY-2025-048",
+      "year": 2025,
+      "section": "言语理解与表达",
+      "passage": null,
+      "stem": "与传统业态相比，新业态顺应多元化、多样化、个性化的产品或服务需求，实现产业与互联网、大数据、云计算、人工智能等新技术深度融合，通过采用新技术和新模式，为市场引入新元素、丰富新场景，促进新岗位、新就业形态不断涌现，创造更多就业机会。新业态既提供新的高技能岗位，扩大对高水平劳动力的需求，又通过带动传统产业转型升级，实现对传统职业和岗位的再造，释放新的就业需求。当前，我国有超2亿灵活就业人员，新就业形态____。\n填入画横线部分最恰当的一项是：",
+      "options": {
+        "A": "已经成为吸纳就业的重要“蓄水池”",
+        "B": "有助于促进区域间劳动资源的互补与共享",
+        "C": "为高技能劳动力流动提供充足机会",
+        "D": "是有效缓解重点群体就业压力的“缓冲器”"
+      },
+      "answer": "A",
+      "answer_candidates": [
+        "A"
+      ],
+      "answer_status": "single",
+      "notes": []
+    },
+    "stem_override": "与传统业态相比，新业态顺应多元化、多样化、个性化的产品或服务需求，实现产业与互联网、大数据、云计算、人工智能等新技术深度融合，通过采用新技术和新模式，为市场引入新元素、丰富新场景，促进新岗位、新就业形态不断涌现，创造更多就业机会。新业态既提供新的高技能岗位，扩大对高水平劳动力的需求，又通过带动传统产业转型升级，实现对传统职业和岗位的再造，释放新的就业需求。当前，我国有超2亿灵活就业人员，新就业形态____。\n填入画横线部分最恰当的一项是：",
+    "options": {
+      "A": "已经成为吸纳就业的重要“蓄水池”",
+      "B": "有助于促进区域间劳动资源的互补与共享",
+      "C": "为高技能劳动力流动提供充足机会",
+      "D": "是有效缓解重点群体就业压力的“缓冲器”"
+    },
+    "source_answer": "A",
+    "answer": "A",
+    "analysis": "横线之前从两方面说明新业态扩大就业：一是创造高技能新岗位，二是通过传统产业转型再造原有职业和岗位；紧接着用超2亿灵活就业人员提供规模佐证。结尾应总括其吸纳就业的作用，A合适。B新增跨区域资源互补，题面没有讨论；C只保留高技能劳动力，漏掉岗位再造等另一面；D限定为“重点群体”，文段未界定这一群体，也未围绕某一特定群体的压力展开。选A。",
+    "selection_reason": "总结两条就业机制，防止熟悉的政策词语造成主体或范围偷换。",
+    "edits": [],
+    "verification": {
+      "status": "editor_checked_pending_cross_review",
+      "independent_answer": "A",
+      "source_answer_available": true,
+      "source_answer_agreement": true,
+      "method": "编者先读无答案题面作答并留存记录，再比对源参考答案；这是编者自核，不冒称隔离盲审或Claude外审。",
+      "checked_on": "2026-11-15",
+      "completeness": "题干与四选项完整，无共用文章及缺题标记；国考氦-3题两处嵌图负温度已目检原PDF。",
+      "source_check": "已下载对应原PDF，git blob哈希一致，比较题干与四选项；仅记录已查阅页面，不推断其他卷别。详见核验记录/verbal_pdf_sources.json。",
+      "source_pdf_review": {
+        "reviewer": "GPT言语编辑",
+        "reviewed_version": "0.1.0",
+        "report": "核验记录/verbal_pdf_sources.json",
+        "pdf_file": "国考/真题/2025年国家公务员录用考试《行测》题（地市级）.pdf",
+        "pdf_git_blob_sha": "dcc592d8ec92c9b10c4d9dc794aeba1ef090ace7",
+        "blob_match": true,
+        "pdf_pages": [
+          10
+        ]
+      },
+      "prior_output_check": {
+        "method": "排除M01–M03现用及撤题源ID；跨卷正文相似项另由整卷核验。",
+        "previous_project_source_id_match": false,
+        "limit": "不据此声称用户从未做过。"
+      }
+    },
+    "source_locators": {
+      "original_number": 62,
+      "pages": [
+        10
+      ],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xing-ce1",
+        "commit": "0067a1a7723584d34ff564b4356af358b9c9027c",
+        "file": "国考/真题/2025年国家公务员录用考试《行测》题（地市级）.pdf",
+        "blob_sha": "dcc592d8ec92c9b10c4d9dc794aeba1ef090ace7",
+        "pdf_pages": [
+          10
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      }
+    },
+    "source_notice": "题面取自仓库国考言语整理库，已取得对应原PDF并补录卷别、原题号、物理页码和git blob。GKYY序号是整理库编号，不冒称原卷题号；参考答案是原资料答案，不冒称官方答案。"
+  },
+  {
+    "number": 28,
+    "section": "言语理解与表达",
+    "subtype": "细节理解（选非）",
+    "question_type": "single_choice",
+    "source_bank": "jiangzhe",
+    "source_file": "江浙行测_AI题库/questions.jsonl",
+    "source_id": "ZJ2024-A类-046",
+    "source_question": {
+      "question_id": "ZJ2024-A类-046",
+      "paper_id": "ZJ2024",
+      "province": "浙江",
+      "year": 2024,
+      "paper_type": "A类",
+      "section": "言语理解与表达",
+      "original_number": 46,
+      "instruction": null,
+      "stem": "武夷茶农原先遵循江南炒青绿茶的风尚，后来改为品赏发酵陈茶的浓郁口感。明清两代，一直以江南炒青或蒸\n青的新茶为尚，讲究的是早春新出的茶芽，在清明与谷雨期间采摘制作，如虎丘茶、龙井茶、松萝茶等，成为\n茶人的新宠。比较例外的是蒸青的罗岕茶，但也是初夏的新茶，保有新鲜的春天气息。到了清初的武夷山地\n区，却在全国流行鲜嫩新茶的氛围中，产生影响近现代流行的饮茶方式，开始喝陈茶，饮用发酵过后的茶叶，\n有的是轻微发酵，有的是重发酵，有的则是完全发酵。\n下列说法与这段文字不相符的是：",
+      "options": {
+        "A": "明清两代江南地区一直流行饮用绿茶",
+        "B": "江南炒青或蒸青都用早春新茶作原料",
+        "C": "明代武夷山地区饮茶风尚受江南影响",
+        "D": "饮用发酵茶是清初出现的一种新方式"
+      },
+      "options_mode": "text_or_mixed",
+      "content": "武夷茶农原先遵循江南炒青绿茶的风尚，后来改为品赏发酵陈茶的浓郁口感。明清两代，一直以江南炒青或蒸\n青的新茶为尚，讲究的是早春新出的茶芽，在清明与谷雨期间采摘制作，如虎丘茶、龙井茶、松萝茶等，成为\n茶人的新宠。比较例外的是蒸青的罗岕茶，但也是初夏的新茶，保有新鲜的春天气息。到了清初的武夷山地\n区，却在全国流行鲜嫩新茶的氛围中，产生影响近现代流行的饮茶方式，开始喝陈茶，饮用发酵过后的茶叶，\n有的是轻微发酵，有的是重发酵，有的则是完全发酵。\n下列说法与这段文字不相符的是：\nA.明清两代江南地区一直流行饮用绿茶 B.江南炒青或蒸青都用早春新茶作原料\nC.明代武夷山地区饮茶风尚受江南影响 D.饮用发酵茶是清初出现的一种新方式",
+      "figures": [],
+      "materials": [],
+      "material_ids": [],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2024年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "blob_sha": "5c91c85dea775104c07489815ffaedeee90d3e8e",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2024%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "regions": [
+          {
+            "page": 9,
+            "bbox": [
+              28.879276275634766,
+              280.7945251464844,
+              547.3163452148438,
+              408.0027770996094
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": [],
+      "notes": []
+    },
+    "stem_override": "武夷茶农原先遵循江南炒青绿茶的风尚，后来改为品赏发酵陈茶的浓郁口感。明清两代，一直以江南炒青或蒸青的新茶为尚，讲究的是早春新出的茶芽，在清明与谷雨期间采摘制作，如虎丘茶、龙井茶、松萝茶等，成为茶人的新宠。比较例外的是蒸青的罗岕茶，但也是初夏的新茶，保有新鲜的春天气息。到了清初的武夷山地区，却在全国流行鲜嫩新茶的氛围中，产生影响近现代流行的饮茶方式，开始喝陈茶，饮用发酵过后的茶叶，有的是轻微发酵，有的是重发酵，有的则是完全发酵。\n下列说法与这段文字不相符的是：",
+    "options": {
+      "A": "明清两代江南地区一直流行饮用绿茶",
+      "B": "江南炒青或蒸青都用早春新茶作原料",
+      "C": "改变饮茶风尚前，武夷茶农曾受江南影响",
+      "D": "清初的武夷山地区开始兴起饮用发酵茶"
+    },
+    "source_answer": "B",
+    "answer": "B",
+    "analysis": "B把“江南炒青或蒸青”概括为都用早春新茶，与明确的例外冲突：蒸青的罗岕茶使用初夏新茶，仍有春天气息，但不是早春新茶。A对应明清饮用江南炒青、蒸青新茶的总体风尚；C对应武夷茶农原先遵循江南绿茶风尚；D对应文段所述清初武夷山开始饮用发酵陈茶。选B。判断全称表述时，只需一个题面明示的例外即可否定。本卷给C、D补足语境边界，避免把地区风尚变化误读为全国最早出现发酵茶的断言。",
+    "selection_reason": "历史叙述中的地区、时间与全称边界；保留早春与初夏这一可证伪点。",
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并源PDF行末硬换行，保留设问独立成段；填空线两侧删除排版空格；六句排序逐句保留换行。不删减正文与限定条件。",
+        "version": "0.1.0"
+      },
+      {
+        "type": "disambiguation",
+        "description": "C不再把未明示的“原先”严格固定为明代；D补武夷山地域，避免将地区风尚变化扩大成全国饮用发酵茶的最早起源。原有正确答案及早春/初夏考点不变。",
+        "before": {
+          "C": "明代武夷山地区饮茶风尚受江南影响",
+          "D": "饮用发酵茶是清初出现的一种新方式"
+        },
+        "after": {
+          "C": "改变饮茶风尚前，武夷茶农曾受江南影响",
+          "D": "清初的武夷山地区开始兴起饮用发酵茶"
+        },
+        "version": "0.1.0"
+      }
+    ],
+    "verification": {
+      "status": "editor_checked_pending_cross_review",
+      "independent_answer": "B",
+      "source_answer_available": true,
+      "source_answer_agreement": true,
+      "method": "编者先读无答案题面作答并留存记录，再比对源参考答案；这是编者自核，不冒称隔离盲审或Claude外审。",
+      "checked_on": "2026-11-15",
+      "completeness": "题干与四选项完整，无共用文章及缺题标记；国考氦-3题两处嵌图负温度已目检原PDF。",
+      "source_check": "已下载对应原PDF，git blob哈希一致，比较题干与四选项；仅记录已查阅页面，不推断其他卷别。详见核验记录/verbal_pdf_sources.json。",
+      "source_pdf_review": {
+        "reviewer": "GPT言语编辑",
+        "reviewed_version": "0.1.0",
+        "report": "核验记录/verbal_pdf_sources.json",
+        "pdf_file": "2024年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "pdf_git_blob_sha": "5c91c85dea775104c07489815ffaedeee90d3e8e",
+        "blob_match": true,
+        "pdf_pages": [
+          9
+        ]
+      },
+      "prior_output_check": {
+        "method": "排除M01–M03现用及撤题源ID；跨卷正文相似项另由整卷核验。",
+        "previous_project_source_id_match": false,
+        "limit": "不据此声称用户从未做过。"
+      }
+    },
+    "source_locators": {
+      "original_number": 46,
+      "pages": [
+        9
+      ],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2024年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "blob_sha": "5c91c85dea775104c07489815ffaedeee90d3e8e",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2024%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "regions": [
+          {
+            "page": 9,
+            "bbox": [
+              28.879276275634766,
+              280.7945251464844,
+              547.3163452148438,
+              408.0027770996094
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      }
+    },
+    "source_notice": "题面取自江浙整理库，已取得source中列出的原PDF并核对文字及选项，文件git blob与记录一致。浙江试题保留网友回忆版身份，参考答案是配套资料答案，不冒称官方答案。",
+    "source_answer_reference": {
+      "file": "江浙行测_AI题库/answers.jsonl",
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2024年浙江省公务员录用考试《行测》（A卷）参考答案及解析.pdf",
+        "blob_sha": "dc0cd4f607d5f4bb395629e6de89a7b1606d1932",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2024%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%EF%BC%88A%E5%8D%B7%EF%BC%89%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%E5%8F%8A%E8%A7%A3%E6%9E%90.pdf",
+        "pdf_pages": [
+          16
+        ],
+        "regions": [
+          {
+            "page": 16,
+            "bbox": [
+              90.0,
+              276.58880615234375,
+              510.4900207519531,
+              481.79315185546875
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": []
+    }
+  },
+  {
+    "number": 29,
+    "section": "言语理解与表达",
+    "subtype": "意图判断",
+    "question_type": "single_choice",
+    "source_bank": "national_verbal",
+    "source_file": "国考/言语理解/2016-2025/all.jsonl",
+    "source_id": "GKYY-2024-066",
+    "source_question": {
+      "id": "GKYY-2024-066",
+      "year": 2024,
+      "section": "言语理解与表达",
+      "passage": null,
+      "stem": "从行政管理链条看，制度建设处于前端，行政复议处于末端。行政复议案件的产生，必然经过一般性行政管理规定、行政机关具体实施、产生具体行政行为、不服行政行为申请行政复议等环节。每个复议案件或多或少反映了行政管理中存在的问题。行政机关，特别是作为行政复议被申请人的行政机关，要善于“抓末端、治已病”。如果是个案具体实施问题，可以个案纠正；如果是制度性、普遍性问题，则要对制度进行查漏补缺；如果是制定制度时不曾预见的新问题，更要予以关注，适时进行规范，避免小问题变成大问题。\n作者通过这段文字想说的是：",
+      "options": {
+        "A": "善用行政复议可以提升行政管理水平",
+        "B": "对行政复议案件要具体问题具体分析",
+        "C": "行政管理链条是环环相扣的有机整体",
+        "D": "行政复议案件是行政管理问题的外化"
+      },
+      "answer": "A",
+      "answer_candidates": [
+        "A"
+      ],
+      "answer_status": "single",
+      "notes": []
+    },
+    "stem_override": "从行政管理链条看，制度建设处于前端，行政复议处于末端。行政复议案件的产生，必然经过一般性行政管理规定、行政机关具体实施、产生具体行政行为、不服行政行为申请行政复议等环节。每个复议案件或多或少反映了行政管理中存在的问题。行政机关，特别是作为行政复议被申请人的行政机关，要善于“抓末端、治已病”。如果是个案具体实施问题，可以个案纠正；如果是制度性、普遍性问题，则要对制度进行查漏补缺；如果是制定制度时不曾预见的新问题，更要予以关注，适时进行规范，避免小问题变成大问题。\n作者通过这段文字想说的是：",
+    "options": {
+      "A": "善用行政复议可以提升行政管理水平",
+      "B": "对行政复议案件要具体问题具体分析",
+      "C": "行政管理链条是环环相扣的有机整体",
+      "D": "行政复议案件是行政管理问题的外化"
+    },
+    "source_answer": "A",
+    "answer": "A",
+    "analysis": "行政复议处于管理链条末端，案件却能反映前端制度或执行中的问题；机关应利用这些反馈纠正个案、完善制度、规范新问题。A概括了“通过复议发现和修正问题，从而改进管理”的完整主张。B只概括后半段分类处置的方法；C停留在链条关系，D停留在案件反映问题，二者都没有包含作者要求机关采取的改进动作。选A。这里不是只把一件复议案办结，而是让末端反馈促进整个管理过程改进。",
+    "selection_reason": "从末端案件反馈到前端治理改进，区分事实、方法与总主张。",
+    "edits": [],
+    "verification": {
+      "status": "editor_checked_pending_cross_review",
+      "independent_answer": "A",
+      "source_answer_available": true,
+      "source_answer_agreement": true,
+      "method": "编者先读无答案题面作答并留存记录，再比对源参考答案；这是编者自核，不冒称隔离盲审或Claude外审。",
+      "checked_on": "2026-11-15",
+      "completeness": "题干与四选项完整，无共用文章及缺题标记；国考氦-3题两处嵌图负温度已目检原PDF。",
+      "source_check": "已下载对应原PDF，git blob哈希一致，比较题干与四选项；仅记录已查阅页面，不推断其他卷别。详见核验记录/verbal_pdf_sources.json。",
+      "source_pdf_review": {
+        "reviewer": "GPT言语编辑",
+        "reviewed_version": "0.1.0",
+        "report": "核验记录/verbal_pdf_sources.json",
+        "pdf_file": "国考/真题/2024年国家公务员录用考试《行测》题（行政执法卷）.pdf",
+        "pdf_git_blob_sha": "7cd789324af3a86def936b898ebb8da47e53bfe3",
+        "blob_match": true,
+        "pdf_pages": [
+          9
+        ]
+      },
+      "prior_output_check": {
+        "method": "排除M01–M03现用及撤题源ID；跨卷正文相似项另由整卷核验。",
+        "previous_project_source_id_match": false,
+        "limit": "不据此声称用户从未做过。"
+      }
+    },
+    "source_locators": {
+      "original_number": 55,
+      "pages": [
+        9
+      ],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xing-ce1",
+        "commit": "0067a1a7723584d34ff564b4356af358b9c9027c",
+        "file": "国考/真题/2024年国家公务员录用考试《行测》题（行政执法卷）.pdf",
+        "blob_sha": "7cd789324af3a86def936b898ebb8da47e53bfe3",
+        "pdf_pages": [
+          9
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      }
+    },
+    "source_notice": "题面取自仓库国考言语整理库，已取得对应原PDF并补录卷别、原题号、物理页码和git blob。GKYY序号是整理库编号，不冒称原卷题号；参考答案是原资料答案，不冒称官方答案。"
+  },
+  {
+    "number": 30,
+    "section": "言语理解与表达",
+    "subtype": "细节理解（选非）",
+    "question_type": "single_choice",
+    "source_bank": "national_verbal",
+    "source_file": "国考/言语理解/2016-2025/all.jsonl",
+    "source_id": "GKYY-2025-059",
+    "source_question": {
+      "id": "GKYY-2025-059",
+      "year": 2025,
+      "section": "言语理解与表达",
+      "passage": null,
+      "stem": "从本质上看，量子雷达成像的原理与传统雷达一致，都是对电磁场携带信息的提取，但二者获取物体信息的物理机制不同，传统成像技术建立在电磁场的确定性理论模型之上，利用电磁场的一阶关联信息，通过记录辐射场的光强或相位分布获取物体的图像信息；而量子成像技术则建立在电磁场的量子统计不确定性理论之上，利用了电磁场的高阶关联信息，通过辐射场分布的强度、相位的空间统计特性获得物体图像信息，因而量子雷达可以获得超越传统雷达系统衍射极限的成像分辨能力。\n这段文字无法解释下列哪一问题?",
+      "options": {
+        "A": "量子成像技术是如何获得物体图像信息的",
+        "B": "传统成像技术与电磁场的确定性理论模型有何关系",
+        "C": "量子雷达成像分辨能力为何可以超越传统雷达",
+        "D": "量子雷达与传统雷达的发射信息载体有何不同"
+      },
+      "answer": "D",
+      "answer_candidates": [
+        "D"
+      ],
+      "answer_status": "single",
+      "notes": []
+    },
+    "stem_override": "从本质上看，量子雷达成像的原理与传统雷达一致，都是对电磁场携带信息的提取，但二者获取物体信息的物理机制不同，传统成像技术建立在电磁场的确定性理论模型之上，利用电磁场的一阶关联信息，通过记录辐射场的光强或相位分布获取物体的图像信息；而量子成像技术则建立在电磁场的量子统计不确定性理论之上，利用了电磁场的高阶关联信息，通过辐射场分布的强度、相位的空间统计特性获得物体图像信息，因而量子雷达可以获得超越传统雷达系统衍射极限的成像分辨能力。\n这段文字无法解释下列哪一问题?",
+    "options": {
+      "A": "量子成像技术是如何获得物体图像信息的",
+      "B": "传统成像技术与电磁场的确定性理论模型有何关系",
+      "C": "量子雷达成像分辨能力为何可以超越传统雷达",
+      "D": "量子雷达与传统雷达的发射信息载体有何不同"
+    },
+    "source_answer": "D",
+    "answer": "D",
+    "analysis": "材料比较的是两种成像技术提取图像信息的机制：传统技术依据确定性理论、利用一阶关联信息，量子技术依据量子统计不确定性理论、利用高阶关联信息；后者因此有更高的成像分辨能力。A对应量子技术获取图像的方式，B对应传统技术的理论基础，C对应高阶关联信息与分辨能力的联系。D问两种雷达发射的信息载体有何不同，文段并未说明发射载体差异，不能把获取、提取信息的机制差异改写成发射载体的差异。选D。题目无需考生补充量子物理知识，只须准确定位材料解释了什么。",
+    "selection_reason": "在较密的科学说明中区分理论基础、信息提取机制、性能结果与未涉及的发射载体。",
+    "edits": [],
+    "verification": {
+      "status": "editor_checked_pending_cross_review",
+      "independent_answer": "D",
+      "source_answer_available": true,
+      "source_answer_agreement": true,
+      "method": "编者先读无答案题面作答并留存记录，再比对源参考答案；这是编者自核，不冒称隔离盲审或Claude外审。",
+      "checked_on": "2026-11-15",
+      "completeness": "题干与四选项完整，无共用文章及缺题标记；国考氦-3题两处嵌图负温度已目检原PDF。",
+      "source_check": "已下载对应原PDF，git blob哈希一致，比较题干与四选项；仅记录已查阅页面，不推断其他卷别。详见核验记录/verbal_pdf_sources.json。",
+      "source_pdf_review": {
+        "reviewer": "GPT言语编辑",
+        "reviewed_version": "0.1.0",
+        "report": "核验记录/verbal_pdf_sources.json",
+        "pdf_file": "国考/真题/2025年国家公务员录用考试《行测》题（行政执法卷）.pdf",
+        "pdf_git_blob_sha": "b4413b040efd102fea703f718c8f167d6db094aa",
+        "blob_match": true,
+        "pdf_pages": [
+          9
+        ]
+      },
+      "prior_output_check": {
+        "method": "排除M01–M03现用及撤题源ID；跨卷正文相似项另由整卷核验。",
+        "previous_project_source_id_match": false,
+        "limit": "不据此声称用户从未做过。"
+      }
+    },
+    "source_locators": {
+      "original_number": 58,
+      "pages": [
+        9
+      ],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xing-ce1",
+        "commit": "0067a1a7723584d34ff564b4356af358b9c9027c",
+        "file": "国考/真题/2025年国家公务员录用考试《行测》题（行政执法卷）.pdf",
+        "blob_sha": "b4413b040efd102fea703f718c8f167d6db094aa",
+        "pdf_pages": [
+          9
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      }
+    },
+    "source_notice": "题面取自仓库国考言语整理库，已取得对应原PDF并补录卷别、原题号、物理页码和git blob。GKYY序号是整理库编号，不冒称原卷题号；参考答案是原资料答案，不冒称官方答案。",
+    "replacement_history": {
+      "reason": "整卷登记去重发现原题已用于M01/M02，撤下后换为未用题。",
+      "archive": "编辑底稿/历史内部核验/verbal_before_duplicate_replacements",
+      "independent_editor_answers": "编辑底稿/verbal_replacements_initial_answers.json",
+      "new_blind_input": "编辑底稿/verbal_replacements_blind.json",
+      "prior_review_does_not_cover_current_question": true
+    }
+  }
+]

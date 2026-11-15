@@ -1,0 +1,157 @@
+{
+  "number": 43,
+  "section": "数量关系",
+  "subsection": "数学运算",
+  "question_type": "single_choice",
+  "source_bank": "guangdong_mock",
+  "source_file": "模考/2026下半年广东卷_16-33季_AI可读/全部题目.jsonl",
+  "source_id": "gd-mock-2026h2-s27-q43",
+  "source_question": {
+    "id": "gd-mock-2026h2-s27-q43",
+    "season": 27,
+    "section": "数量关系",
+    "number": 43,
+    "material_id": null,
+    "stem": [
+      {
+        "type": "text",
+        "text": "某演出团队中有5名男性和4名女性，其中有2对夫妻，现在要从中选出2名男性和2名女性去演出，则选出的人中只有1对夫妻的概率为："
+      }
+    ],
+    "options": {
+      "A": [
+        {
+          "type": "text",
+          "text": "$\\frac{9}{20}$"
+        }
+      ],
+      "B": [
+        {
+          "type": "text",
+          "text": "$\\frac{14}{5}$"
+        }
+      ],
+      "C": [
+        {
+          "type": "text",
+          "text": "$\\frac{13}{30}$"
+        }
+      ],
+      "D": [
+        {
+          "type": "text",
+          "text": "$\\frac{11}{30}$"
+        }
+      ]
+    },
+    "source_pages": [
+      11
+    ],
+    "source_spans": [
+      {
+        "pdf_page": 11,
+        "bbox_pt": [
+          52.402,
+          116.648,
+          522.54,
+          129.067
+        ]
+      },
+      {
+        "pdf_page": 11,
+        "bbox_pt": [
+          68.048,
+          137.034,
+          275.396,
+          149.452
+        ]
+      },
+      {
+        "pdf_page": 11,
+        "bbox_pt": [
+          68.048,
+          159.89,
+          78.956,
+          172.067
+        ]
+      },
+      {
+        "pdf_page": 11,
+        "bbox_pt": [
+          68.048,
+          187.07,
+          78.35,
+          199.247
+        ]
+      },
+      {
+        "pdf_page": 11,
+        "bbox_pt": [
+          68.048,
+          214.251,
+          78.35,
+          226.428
+        ]
+      },
+      {
+        "pdf_page": 11,
+        "bbox_pt": [
+          68.048,
+          241.431,
+          78.956,
+          253.608
+        ]
+      }
+    ],
+    "source_asset_ids": [
+      "s27_p11_i00",
+      "s27_p11_i01",
+      "s27_p11_i02",
+      "s27_p11_i03"
+    ],
+    "answer": null,
+    "source": {
+      "source_name": "2026下半年省考第二十七季行测模考大赛（广东卷）.pdf",
+      "source_sha256": "10f074039c1223505bc696a613d6e0df07eb360e3ebcebd37abbaca945139425",
+      "pages": 24
+    },
+    "material": null
+  },
+  "source_answer": null,
+  "answer": "D",
+  "analysis": "先把计数对象确定为“2名男性与2名女性组成的无序四人组”。总数为C(5,2)×C(4,2)=60组。恰有1对夫妻：先选完整入选的夫妻，有2种；再从其余4名男性和3名女性中各选1人，有4×3=12种，其中另一对夫妻同时入选的1种须剔除。因此有利组数为2×(12−1)=22，概率22/60=11/30，选D。每个恰有1对夫妻的四人组，其完整夫妻唯一，所以这一步没有重复计算。",
+  "selection_reason": "条件抽样中的计数对象、恰好与重数辨别。",
+  "edits": [
+    {
+      "type": "probability_clarification",
+      "description": "补明2男2女的选取为等可能随机抽样；计数对象、人数与事件不变。",
+      "version": "0.1.0"
+    }
+  ],
+  "verification": {
+    "status": "editor_verified_pending_independent_review",
+    "method": "源库无参考答案；编辑独立推导，并用精确分数、整数穷举及资料逐项计算核验。趋势图四个原始选项均实际查看。尚待独立交叉复核。",
+    "source_answer_available": false,
+    "source_answer_agreement": null,
+    "checked_on": "2026-11-15",
+    "report": "编辑底稿/quant_data_check.json"
+  },
+  "source_locators": {
+    "original_number": 43,
+    "pages": [
+      11
+    ],
+    "source": {
+      "source_name": "2026下半年省考第二十七季行测模考大赛（广东卷）.pdf",
+      "source_sha256": "10f074039c1223505bc696a613d6e0df07eb360e3ebcebd37abbaca945139425",
+      "pages": 24
+    }
+  },
+  "source_notice": "题面和材料依据仓库已存转写；源库没有参考答案。未取得原PDF逐字逐格重核，不把本次独立解答称为官方答案。",
+  "stem_override": [
+    {
+      "type": "text",
+      "text": "某演出团队中有5名男性和4名女性，其中有2对夫妻，现在从中等可能随机选出2名男性和2名女性去演出，则选出的人中只有1对夫妻的概率为："
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "paper_id": "M04",
+  "status": "候选淘汰，非用户已做登记",
+  "duplicate_replacements": [
+    {
+      "number": 18,
+      "withdrawn_source_id": "GKYY-2024-005",
+      "prior_location": "M02第18题",
+      "replacement_source_id": "GKYY-2025-055"
+    },
+    {
+      "number": 21,
+      "withdrawn_source_id": "JS2024-A类-020",
+      "prior_location": "M01第21题",
+      "replacement_source_id": "GKYY-2025-020"
+    },
+    {
+      "number": 26,
+      "withdrawn_source_id": "GKYY-2025-017",
+      "prior_location": "M01第30题",
+      "replacement_source_id": "GKYY-2025-062"
+    },
+    {
+      "number": 30,
+      "withdrawn_source_id": "GKYY-2025-061",
+      "prior_location": "M01第25题",
+      "replacement_source_id": "GKYY-2025-059"
+    }
+  ],
+  "unused_candidates": [
+    {
+      "source_id": "JS2024-A类-023",
+      "reason": "跨学科题编辑先答B、源键D；B有文本支撑，存在合理竞争项。"
+    },
+    {
+      "source_id": "JS2024-A类-035",
+      "reason": "太阳活动近义词边界和源解析额外限制不足以稳定排除。"
+    },
+    {
+      "source_id": "JS2024-A类-027",
+      "reason": "线位理想不能直接等同于充分论证，未涉及项有边界风险。"
+    },
+    {
+      "source_id": "ZJ2025-A类-042",
+      "reason": "解耦表征词义题可能混入题外技术背景，未采用。"
+    },
+    {
+      "source_id": "gd-mock-2026h2-s21-q47",
+      "reason": "灰度叠加不能稳定解释全部格位。"
+    },
+    {
+      "source_id": "JS2022-A类-100",
+      "reason": "小麦历史论证C/D边界和秦汉/东汉范围有争议。"
+    },
+    {
+      "source_id": "gd-mock-2026h2-s22-q53",
+      "reason": "将能分辨效果作为必要前提，论证要求过强。"
+    },
+    {
+      "source_id": "gd-mock-2026h2-s24-q59",
+      "reason": "桥接前提和可比性前提竞争，未采用。"
+    }
+  ],
+  "discarded_material": {
+    "material_id": "gd-mock-2026h2-s32-m2",
+    "source_ids": [
+      "gd-mock-2026h2-s32-q76",
+      "gd-mock-2026h2-s32-q77",
+      "gd-mock-2026h2-s32-q78",
+      "gd-mock-2026h2-s32-q79",
+      "gd-mock-2026h2-s32-q80"
+    ],
+    "reason": "作品总量5271.86万部，三类分项3458.84、206.92、87.49万部，相差1518.61万部，不能以四舍五入解释。原题又有总量与分类增量问题，整组候选放弃。",
+    "future_action": "如18套要求四组资料互不重复，须为淘汰组补源。",
+    "source_bank_modified": false
+  }
+}

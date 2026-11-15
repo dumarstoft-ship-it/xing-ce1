@@ -1,0 +1,32 @@
+{
+  "paper_id": "M04",
+  "version": "0.1.0",
+  "source_snapshot": "6aecdb088169c4c8b0c393046a77e483910aaf7d",
+  "target_question_count": 90,
+  "missing_numbers": [],
+  "completed_section_counts": {
+    "政治理论": 10,
+    "常识应用": 5,
+    "言语理解与表达": 15,
+    "数量关系": 15,
+    "判断推理": 20,
+    "科学推理": 5,
+    "资料分析": 20
+  },
+  "date": "2026-11-15",
+  "date_timezone": "Etc/UTC",
+  "status": "editor_checked_pending_claude",
+  "external_review": "not_started",
+  "printing_status": "review_pdf_visual_checked_pending_claude",
+  "display_status": "90题完整待审稿；GPT逐题解答、内部交叉核验与32页审阅PDF检查均已完成。Claude外部审核尚未进行，随附PDF不表示正式定稿。",
+  "structure_basis": "沿用本项目近年广东90题结构；政治4判断、4单选、2多选，其余单选。不预测2027实际题量。",
+  "canonical_source": "selection.json",
+  "editorial_inputs": [
+    "编辑底稿/politics.json",
+    "编辑底稿/verbal.json",
+    "编辑底稿/quant_data.json",
+    "编辑底稿/reasoning_science.json"
+  ],
+  "review_handoff": "交接_Claude.md",
+  "minutes": 90
+}

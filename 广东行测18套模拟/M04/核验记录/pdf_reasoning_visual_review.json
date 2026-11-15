@@ -1,0 +1,233 @@
+{
+  "scope": "M04 Q46—70 printed PDF visual inspection",
+  "reviewer": "reasoning_science author; actual page-image inspection",
+  "reviewed_on": "2026-11-15",
+  "pdf_path": "广东行测18套模拟/M04/审阅排版/M04_题本_打印版.pdf",
+  "pdf_sha256_at_initial_review": "87b3b5c506cc5ad9d5e2942b478f0c42199ad934607533ae8d9e4d5f23af5019",
+  "module_path": "广东行测18套模拟/M04/编辑底稿/reasoning_science.json",
+  "module_sha256": "229022e36b8de9eb17c542fe0c1ff2ea6fb0ab85bcdf9ef83f9af404185fcb2b",
+  "overview_viewed": "/workspace/scratch/5a47a69037f5/m04_final_qa/contact-2.png",
+  "actual_full_page_images_viewed": [
+    {
+      "image": "/workspace/scratch/5a47a69037f5/m04_final_qa/page-17.png",
+      "physical_page": 17,
+      "printed_page": 15,
+      "questions": [
+        46,
+        47,
+        48
+      ],
+      "sha256": "8ed4927fb51b6fc50d72dbadd5d79c746a85e6774f90d1079537dd3f0a99e3ef",
+      "pixels": [
+        1132,
+        1600
+      ],
+      "result": "pass",
+      "notes": "46/47全部前置图、问号和A—D选图完整；48原图八位符号及四行选项可辨，没有截边。"
+    },
+    {
+      "image": "/workspace/scratch/5a47a69037f5/m04_final_qa/page-18.png",
+      "physical_page": 18,
+      "printed_page": 16,
+      "questions": [
+        49,
+        50,
+        51
+      ],
+      "sha256": "9de93f374f68bedb0853332ac9c45a4ffe630dbd201c04599979885f06bb68c6",
+      "pixels": [
+        1132,
+        1600
+      ],
+      "result": "pass",
+      "notes": "49两块立体及①—④展开图清楚，四个文本选项完整；50立体与四个选项完整；51四项齐全。"
+    },
+    {
+      "image": "/workspace/scratch/5a47a69037f5/m04_final_qa/page-19.png",
+      "physical_page": 19,
+      "printed_page": 17,
+      "questions": [
+        52,
+        53,
+        54
+      ],
+      "sha256": "806a90dc5059e18c495765dc239eb45300b04365dde260d29e132a9ee87cbdef",
+      "pixels": [
+        1132,
+        1600
+      ],
+      "result": "pass",
+      "notes": "52—54题干及A—D完整；54末项未压入页脚。"
+    },
+    {
+      "image": "/workspace/scratch/5a47a69037f5/m04_final_qa/page-20.png",
+      "physical_page": 20,
+      "printed_page": 18,
+      "questions": [
+        55,
+        56,
+        57
+      ],
+      "sha256": "6acd6d301a670071be487342969b5eea15071c669c9c0eb422bbf7f888dd9e67",
+      "pixels": [
+        1132,
+        1600
+      ],
+      "result": "pass",
+      "notes": "55—57条件与四项完整，57投诉率分母明确呈现。"
+    },
+    {
+      "image": "/workspace/scratch/5a47a69037f5/m04_final_qa/page-21.png",
+      "physical_page": 21,
+      "printed_page": 19,
+      "questions": [
+        58,
+        59,
+        60
+      ],
+      "sha256": "3e49a72b561160e94a5c0827dfbbe52a1efb32c248bdb532c4616e466823e6eb",
+      "pixels": [
+        1132,
+        1600
+      ],
+      "result": "pass",
+      "notes": "58—60四项完整；60甲乙丙丁分行，真假话全题规则正确另起段。"
+    },
+    {
+      "image": "/workspace/scratch/5a47a69037f5/m04_final_qa/page-22.png",
+      "physical_page": 22,
+      "printed_page": 20,
+      "questions": [
+        61,
+        62
+      ],
+      "sha256": "c3772ec9766392e14efa1e7feae524ef5267b01e47018e4653247a8cf54d4238",
+      "pixels": [
+        1132,
+        1600
+      ],
+      "result": "pass",
+      "notes": "61—62题干及四项完整，无截断或字形缺失。"
+    },
+    {
+      "image": "/workspace/scratch/5a47a69037f5/m04_final_qa/page-23.png",
+      "physical_page": 23,
+      "printed_page": 21,
+      "questions": [
+        63,
+        64
+      ],
+      "sha256": "ec5792bbe00ae675ebde4b5856e828b8a6eaf9f09d6e98620558e950e9814549",
+      "pixels": [
+        1132,
+        1600
+      ],
+      "result": "requires_paragraph_fix",
+      "notes": "63蛇形20格路线、8个已知颜色及12个编号完整清楚，四项齐全；64内容未丢失，但题干的三段换行未体现在PDF上，待修。"
+    },
+    {
+      "image": "/workspace/scratch/5a47a69037f5/m04_final_qa/page-24.png",
+      "physical_page": 24,
+      "printed_page": 22,
+      "questions": [
+        65
+      ],
+      "sha256": "d7759d805e1d778cb12cbe2b82fc519d077b0451b0e8ae437223fdb8d3935f9c",
+      "pixels": [
+        1132,
+        1600
+      ],
+      "result": "pass",
+      "notes": "65四项完整，判断部分结束提示清晰。"
+    },
+    {
+      "image": "/workspace/scratch/5a47a69037f5/m04_final_qa/page-25.png",
+      "physical_page": 25,
+      "printed_page": 23,
+      "questions": [
+        66
+      ],
+      "sha256": "04f678062fff260c061096b1dae19a08c0fbc241c26053f091fc69ef7de53760",
+      "pixels": [
+        1132,
+        1600
+      ],
+      "result": "pass",
+      "notes": "66完整题干与四项；B在A上，F作用于A向右，地面和箭头清楚；全程增力条件已呈现。"
+    },
+    {
+      "image": "/workspace/scratch/5a47a69037f5/m04_final_qa/page-26.png",
+      "physical_page": 26,
+      "printed_page": 24,
+      "questions": [
+        67,
+        68
+      ],
+      "sha256": "8d54f5ec1ba434ee86933cf3afd36060fd6f650d64c5e0ebd2385e3fd4faa480",
+      "pixels": [
+        1132,
+        1600
+      ],
+      "result": "pass",
+      "notes": "67全部L1—L3、A1—A3、V1—V3和S标签可辨，无缺字，下标与导线分开；四项完整。68的①—⑧均呈现，选项A①④⑥、B②⑦⑧、C③④⑥、D②⑤⑥与模块一致。"
+    },
+    {
+      "image": "/workspace/scratch/5a47a69037f5/m04_final_qa/page-27.png",
+      "physical_page": 27,
+      "printed_page": 25,
+      "questions": [
+        69,
+        70
+      ],
+      "sha256": "7cb381fcda4a7d2f807d6e69afa935c3741bf953bd22f850c13f89885d879402",
+      "pixels": [
+        1132,
+        1600
+      ],
+      "result": "pass",
+      "notes": "69—70题干及四项完整，基因型Aa/aa及百分比可辨，科学部分结束提示完整。"
+    }
+  ],
+  "overall_status": "pass_for_Q46_through_Q70_final_pdf",
+  "findings": {
+    "cut_or_missing_figures": false,
+    "missing_options": false,
+    "missing_glyphs_or_garbled_text": false,
+    "unclear_circuit_labels": false,
+    "q68_complete_eight_properties_and_four_options": true
+  },
+  "limitations": [
+    "视觉审查不重复独立逻辑证明。",
+    "最终PDF的23页进行了实际复看；其余范围内页面依据首次实际查看和负责人确认未变版面衔接。"
+  ],
+  "closed_issue": {
+    "physical_page": 23,
+    "printed_page": 21,
+    "question": 64,
+    "severity": "readability",
+    "observation": "PDF joins 小朱 and 小李 and joins the conclusion with 以下哪项; frozen module has separate newline-delimited paragraphs.",
+    "requested_fix": "Preserve three stem paragraph breaks for Q64, then rerender and visually recheck the changed page.",
+    "question_content_changed_by_this_review": false,
+    "status": "fixed_and_visually_rechecked",
+    "closure": "最终第23页已实际查看：小朱、小李和设问各自独立成段；A—D四项仍完整，没有下移至页脚或截断。"
+  },
+  "final_recheck": {
+    "image": "/workspace/scratch/5a47a69037f5/m04_final_qa/final-23.png",
+    "physical_page": 23,
+    "printed_page": 21,
+    "questions": [
+      63,
+      64
+    ],
+    "sha256": "19e912d98c24eeab7a0a0f465265575defa7863f94a1ad371572da8b63c78d08",
+    "pixels": [
+      1132,
+      1600
+    ],
+    "result": "pass",
+    "notes": "蛇形图与四项完整；64的三段换行恢复，四项及全部陈述可读。"
+  },
+  "final_pdf_sha256": "d3029686c89f878cc839edb486cd85758aee7cb5bc263a9c91e1a76f5334999f",
+  "remaining_open_issues": [],
+  "unchanged_page_basis": "最终重建的整卷负责人确认17–22、24–27内容版面未改；本审阅者对这些页保留首次实际看图记录，对唯一改变的23页实际复看闭环。另有铁路资料起始页的变动不属于本报告范围。"
+}

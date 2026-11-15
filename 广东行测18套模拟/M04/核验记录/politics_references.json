@@ -1,0 +1,156 @@
+{
+  "checked_on": "2026-11-15",
+  "reference_kind": "网页原文或检索可见正文；不是讲义逐字命题",
+  "references": {
+    "economy": {
+      "title": "习近平：坚持和落实“两个毫不动摇”",
+      "url": "https://www.cac.gov.cn/2025-03/15/c_1743755857999779.htm",
+      "locator": "第十四、十五则；并核十九届四中全会《决定》第六部分的公有制主体地位与平等市场待遇",
+      "checked_on": "2026-11-15"
+    },
+    "system": {
+      "title": "中共中央关于坚持和完善中国特色社会主义制度推进国家治理体系和治理能力现代化若干重大问题的决定",
+      "url": "https://www.ndrc.gov.cn/fggz/fgdj/zydj/202004/t20200421_1226234_ext.html",
+      "locator": "第六部分：社会主义基本经济制度、各种所有制主体平等使用要素和参与竞争",
+      "checked_on": "2026-11-15"
+    },
+    "contradiction": {
+      "title": "毛泽东：矛盾论",
+      "url": "https://news.12371.cn/2017/08/29/ARTI1504001209326173.shtml",
+      "locator": "第四部分：主要矛盾与矛盾的主要方面；事物性质主要由取得支配地位的主要方面规定",
+      "checked_on": "2026-11-15"
+    },
+    "capital": {
+      "title": "《资本论》第一卷第四篇第十章：相对剩余价值的概念",
+      "url": "https://www.muhn.edu.cn/xgb/info/1097/1972.htm",
+      "locator": "工作日长度既定时，必要劳动时间缩短、剩余劳动时间相应延长；其后阐述劳动力价值降低与生产力的关系",
+      "checked_on": "2026-11-15"
+    },
+    "capital_guide": {
+      "title": "《资本论》第一卷导读",
+      "url": "https://djyj.12371.cn/2026/06/11/ARTI1781149304470774.shtml",
+      "locator": "第二部分：相对剩余价值生产的条件和过程",
+      "checked_on": "2026-11-15"
+    },
+    "cppcc": {
+      "title": "中国人民政治协商会议全国委员会：政协主要职能",
+      "url": "https://www.cppcc.gov.cn/zxgk/202405/t20240524_122514.html",
+      "locator": "民主监督的对象、提出意见批评建议的方式及协商式监督性质",
+      "checked_on": "2026-11-15"
+    },
+    "cppcc_force": {
+      "title": "协商民主是实践全过程人民民主的重要形式",
+      "url": "https://www.cppcc.gov.cn/zxww/2022/11/23/ARTI1669175314979686.shtml",
+      "locator": "关于民主监督：不具有国家法律上的强制力和约束力",
+      "checked_on": "2026-11-15"
+    },
+    "reform": {
+      "title": "中共中央关于进一步全面深化改革、推进中国式现代化的决定",
+      "url": "https://www.nra.gov.cn/ztzl/ddjs/esjszqh/zyjs_13639/202408/t20240801_346576.shtml",
+      "locator": "第20条：进城落户农民土地承包权、宅基地使用权、集体收益分配权及自愿有偿退出",
+      "checked_on": "2026-11-15"
+    },
+    "opening": {
+      "title": "稳步扩大制度型开放，完善高水平对外开放体制机制",
+      "url": "https://www.samr.gov.cn/zt/ndzt/2024n/20thszqh/pljd/art/2024/art_1c6024d9d14445d49bec79beadb93359.html",
+      "locator": "第2、3部分：制度型开放的对象与商品、服务、资本、人员便利流动的区别；政府采购、知识产权、数据规则等",
+      "checked_on": "2026-11-15"
+    },
+    "culture": {
+      "title": "中华文化传承发展的内在规律（司法部刊载）",
+      "url": "https://www.moj.gov.cn/pub/sfbgwapp/jryw/202306/t20230601_479985.html",
+      "locator": "“何为创造性转化”“如何创新性发展”两段的解释",
+      "checked_on": "2026-11-15"
+    },
+    "practice": {
+      "title": "毛泽东：实践论",
+      "url": "https://news.12371.cn/2017/08/29/ARTI1504001411770206.shtml",
+      "locator": "感性认识到理性认识、理论再回到实践；不能把理性认识停留在头脑中等同完成检验",
+      "checked_on": "2026-11-15"
+    },
+    "party": {
+      "title": "中共中央关于持之以恒推进全面从严治党若干重大问题的决定",
+      "url": "https://www.moe.gov.cn/jyb_xwfb/s6052/moe_838/202611/t20261102_1456737.html",
+      "locator": "第一部分第（三）项：四大考验及四种危险",
+      "checked_on": "2026-11-15"
+    },
+    "carbon": {
+      "title": "关于发布《大型活动碳中和实施指南（试行）》的公告",
+      "url": "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk01/201906/t20190617_706706.html",
+      "locator": "第3、6、8、13条：先减排、核算、抵消；实际排放不必为零",
+      "checked_on": "2026-11-15"
+    },
+    "carbon_action": {
+      "title": "国务院关于印发《“十五五”碳达峰行动方案》的通知",
+      "url": "https://gs.mof.gov.cn/xxgk/zhengcefagui/202607/t20260724_3994302.htm",
+      "locator": "总要求区分单位GDP二氧化碳排放与达峰；第（十三）项巩固提升生态系统碳汇能力",
+      "checked_on": "2026-11-15"
+    },
+    "civil": {
+      "title": "中华人民共和国民法典",
+      "url": "https://www.12371.cn/2020/06/01/ARTI1591021670041266.shtml",
+      "locator": "第725、726条分别规定所有权变动不影响租赁效力、近亲属交易的优先购买例外；第1045条明确兄弟姐妹属于近亲属",
+      "checked_on": "2026-11-15"
+    },
+    "danxia": {
+      "title": "世界地质公园、世界自然遗产——广东丹霞山",
+      "url": "https://dxs.sg.gov.cn/lyfw/jqjs/dxfg/content/post_2651370.html",
+      "locator": "丹霞山由近水平红色砂砾岩构成，经流水侵蚀、重力崩塌形成赤壁丹崖",
+      "checked_on": "2026-11-15"
+    },
+    "karst": {
+      "title": "七星岩简介（肇庆星湖管理局）",
+      "url": "https://gw.xhglj.com.cn/doc/2019/11/04/880.shtml",
+      "locator": "七座石灰岩峰，峰林、溶洞等主体景观",
+      "checked_on": "2026-11-15"
+    },
+    "maar": {
+      "title": "湖光岩世界地质公园",
+      "url": "https://www.zhanjiang.gov.cn/zjwl/content/post_1371640.html",
+      "locator": "玛珥火山地质地貌、火山口湖及湖底沉积记录",
+      "checked_on": "2026-11-15"
+    },
+    "march": {
+      "title": "纪念中国工农红军长征胜利90周年（中央党史和文献研究院）",
+      "url": "https://www.dswxyjy.org.cn/GB/427277/462086/",
+      "locator": "1935年3月四渡赤水、5月上旬渡金沙江、5月29日飞夺泸定桥；吴起镇会师另对照讲义第51页",
+      "checked_on": "2026-11-15"
+    },
+    "beidou": {
+      "title": "新时代的中国北斗（国务院新闻办白皮书）",
+      "url": "https://www.ccdi.gov.cn/yaowenn/202211/t20221104_228724.html",
+      "locator": "从有源到无源的发展、北斗二号无源定位和北斗三号全球服务",
+      "checked_on": "2026-11-15"
+    },
+    "beidou_designer": {
+      "title": "北斗导航总设计师：有源、无源定位的区别（访谈）",
+      "url": "https://www.xinhuanet.com/politics/2016-07/28/c_129184290.htm",
+      "locator": "总设计师直接解释：无源定位用户无需发射信号，接收卫星信号完成定位；短报文为另一项双向服务",
+      "checked_on": "2026-11-15"
+    },
+    "beidou_sms": {
+      "title": "北斗卫星短信（北斗短报文）——汛期应急通信新手段",
+      "url": "https://lnca.miit.gov.cn/xwdt/gzdt/art/2026/art_4037b26c3f8b48e79badb66c7eedc0c9.html",
+      "locator": "需终端适配；支持北斗导航定位与支持短报文发送不能等同",
+      "checked_on": "2026-11-15"
+    },
+    "tax_tang": {
+      "title": "中国古代统计历史：唐代两税法",
+      "url": "https://tjj.fj.gov.cn/ztzl/tjzs/tjls/201210/t20121024_44256.htm",
+      "locator": "唐建中元年两税法，按土地和财产计税，夏、秋两次征收",
+      "checked_on": "2026-11-15"
+    },
+    "tax_ming": {
+      "title": "明清时期的赋税改革（天津税务刊载）",
+      "url": "https://tianjin.chinatax.gov.cn/11248000000/8000/800001/80000105/20191025153820511.shtml",
+      "locator": "明代一条鞭法归并赋役、货币化征收；此处只采用基本制度特征",
+      "checked_on": "2026-11-15"
+    },
+    "tax_qing": {
+      "title": "摊丁入亩：中国古代赋役制度的重大改革",
+      "url": "https://v.ccdi.gov.cn/2020/11/06/VIDEGw2ztdg6uWcLnIieFuKe201106.shtml",
+      "locator": "清雍正时期将丁银并入田赋征收",
+      "checked_on": "2026-11-15"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "number": 43,
+  "change": "B option 14/5 -> 2/5",
+  "nature": "editorial_distractor_adaptation_not_source_correction",
+  "old_input_sha256": "35155942313895e503e32dba48241754744b9ae933f5a23121876eedfa49e5c5",
+  "new_input_sha256": "d8a6aef32ae0e39a9ece37f4387bd03c7c5e3d8b79fa0acb6c39e819e60ae802",
+  "other_question_inputs_changed": false,
+  "new_option_error_model": "2×12/60: failing to remove the second couple",
+  "correct_answer_unchanged": "D",
+  "initial_model_and_report_archive": "历史内部核验/q43_option_b_before_revision/"
+}
