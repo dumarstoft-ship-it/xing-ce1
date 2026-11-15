@@ -13,7 +13,7 @@ permissions:
 
 concurrency:
   group: m04-v020-revision
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   revise:
@@ -38,6 +38,9 @@ jobs:
             !*.pdf
             !*.zip
             /广东行测18套模拟/M04/审阅排版/M04_题本_打印版.pdf
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
       - name: Preserve the exact external review, without merging other papers
         shell: bash
         run: |
@@ -49,9 +52,9 @@ jobs:
             '广东行测18套模拟/M04/Claude审核意见.md' \
             '广东行测18套模拟/M04/核验记录/claude_review'
       - name: Install numeric-check dependency
-        run: python3 -m pip install --disable-pip-version-check 'numpy==2.2.6'
+        run: python -m pip install --disable-pip-version-check --only-binary=:all: --timeout 15 --retries 1 'numpy==2.2.6'
       - name: Apply revision, rebuild, and verify
-        run: python3 '广东行测18套模拟/M04/revise_m04_v020.py'
+        run: python '广东行测18套模拟/M04/revise_m04_v020.py'
       - name: Commit only validated M04 outputs and project entries
         shell: bash
         run: |
@@ -64,7 +67,7 @@ jobs:
             '广东行测18套模拟/Claude意见要点.md' \
             '广东行测18套模拟/M04'
           if git diff --cached --quiet; then exit 0; fi
-          git diff --cached --name-only -z | python3 -c 'import sys; paths=sys.stdin.buffer.read().decode().split("\0"); allowed=["README.md","广东行测18套模拟/README.md","广东行测18套模拟/选编意图与改题边界.md","广东行测18套模拟/用题登记.jsonl","广东行测18套模拟/Claude意见要点.md"]; assert all(not p or p in allowed or p.startswith("广东行测18套模拟/M04/") for p in paths),paths'
+          git diff --cached --name-only -z | python -c 'import sys; paths=sys.stdin.buffer.read().decode().split("\0"); allowed=["README.md","广东行测18套模拟/README.md","广东行测18套模拟/选编意图与改题边界.md","广东行测18套模拟/用题登记.jsonl","广东行测18套模拟/Claude意见要点.md"]; assert all(not p or p in allowed or p.startswith("广东行测18套模拟/M04/") for p in paths),paths'
           git fetch --no-tags origin main
           test "$(git rev-parse origin/main)" = "$(git rev-parse HEAD)"
           git config user.name 'github-actions[bot]'
