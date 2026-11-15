@@ -230,14 +230,46 @@ add(90,'C','all alternatives: absolute gaps, declines, combined share, two-year 
 # objects are unchanged, and known textual edits do not alter numeric data.
 source_path=ROOT/ROWS[31]['source_file'];bank={q['id']:q for q in map(json.loads,source_path.read_text().splitlines())}
 for n,r in ROWS.items():assert r['source_question']==bank[r['source_id']],n
-for start in [71,76,81,86]:
- reference=mat(start)
- assert all(mat(n)==reference for n in range(start,start+5))
- original=ROWS[start]['source_question']['material']
- for now,old in zip(reference['blocks'],original['blocks']):
-  if now['type']=='table':assert now['headers']==old['headers'] and now['rows']==old['rows']
-  elif now['type']=='text':assert re.sub(r'\s','',now['text'])==re.sub(r'\s','',old['text'])
+def verify_material_preservation():
+ removed='据中国海关总署统计数据显示，2023年7月，中国空调产量同比增长29.0%。'
+ cumulative_note='表中各月数值均为当年年初至该月的累计值；2023年1—2月为两个月合计。'
+ checked=[]
+ for start in [71,76,81,86]:
+  reference=mat(start)
+  assert all(mat(n)==reference for n in range(start,start+5)),(start,'shared materials differ')
+  original=ROWS[start]['source_question']['material']
+  expected=json.loads(json.dumps(original,ensure_ascii=False))
+  assert len(reference['blocks'])==len(original['blocks']),(start,'material block count changed')
+  for now,old in zip(reference['blocks'],original['blocks']):
+   assert now['type']==old['type'],(start,'material block type changed')
+   if old['type']=='table':
+    assert now['rows']==old['rows'],(start,'table data cells changed')
+  if start==81:
+   table,text=expected['blocks']
+   assert table['type']=='table' and text['type']=='text'
+   assert table['headers'][0]=='图示期间' and table['notes']==''
+   assert text['text'].startswith(removed) and text['text'].count(removed)==1
+   table['headers'][0]='统计期'
+   table['notes']=cumulative_note  # 0.1.0 已登记的累计口径说明。
+   text['text']=text['text'][len(removed):]  # 0.2.0 仅删已登记的完整首句。
+   for n in range(81,86):
+    edits=ROWS[n].get('edits',[])
+    assert any(e.get('type')=='material_clarification' for e in edits),(n,'missing cumulative-note edit')
+    assert any(e.get('type')=='material_sentence_removal' and removed in e.get('description','') for e in edits),(n,'missing registered sentence removal')
+    assert any(e.get('type')=='material_header_correction' and '图示期间' in e.get('description','') and '统计期' in e.get('description','') for e in edits),(n,'missing registered header edit')
+   assert reference==expected,(start,'unregistered material change')
+  else:
+   # 保留71/76/86既有的文字空白规范化；表头、数据、注释及元数据仍逐项相等。
+   normalized=json.loads(json.dumps(reference,ensure_ascii=False))
+   for obj in [normalized,expected]:
+    for block in obj['blocks']:
+     if block['type']=='text':block['text']=re.sub(r'\s','',block['text'])
+   assert normalized==expected,(start,'unregistered material change')
+  checked.append({'questions':list(range(start,start+5)),'material_id':original['id'],'table_data_cells_unchanged':True})
+ return {'groups':checked,'registered_81_85_edits':{'removed_sentence':removed,'header_change':['图示期间','统计期'],'retained_cumulative_note':cumulative_note},'method':'derive the expected full material from source; allow only explicit registered changes and existing text whitespace normalization'}
+
+REPORT['material_preservation']=verify_material_preservation()
 assert len(REPORT['checks'])==35
-REPORT['summary']={'question_count':35,'questions_with_numeric_or_rule_computations':33,'manual_support_judgment_components':[71,72,75,80],'source_objects_unchanged':True,'shared_materials_consistent':True,'all_table_cells_preserved':True,'all_answer_keys_match':True,'passed':True}
+REPORT['summary']={'question_count':35,'questions_with_numeric_or_rule_computations':33,'manual_support_judgment_components':[71,72,75,80],'source_objects_unchanged':True,'shared_materials_consistent':True,'all_table_data_cells_preserved':True,'material_changes_match_registered_edits':True,'all_answer_keys_match':True,'passed':True}
 (HERE/'quant_data_check.json').write_text(json.dumps(REPORT,ensure_ascii=False,indent=2)+'\n')
 print(json.dumps(REPORT['summary'],ensure_ascii=False))

@@ -1,0 +1,469 @@
+{
+  "scope": "0.1.0归档加v020补丁的内存稿；本轮有价值修订的定向复核，不冒称全卷或原PDF复核。",
+  "base_file": "广东行测18套模拟/M03/历史版本/0.1.0/selection.json",
+  "base_sha256": "5a265f7c6278eaa3c7ec5eb9c26e2964593182c3a6bcc1d60d28dfb5c3af05a7",
+  "patch_file": "广东行测18套模拟/M03/修订底稿/v020_quant_data_patch.json",
+  "patch_sha256": "9f8393284e0df37871c76b6d9fd351652beaf7798286100308c864fc984e4d38",
+  "patched_numbers": [
+    33,
+    35,
+    37,
+    38,
+    40,
+    42,
+    43,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    88
+  ],
+  "checks": {
+    "33": {
+      "arithmetic_false_fifth": {
+        "exact": "1/3",
+        "decimal": 0.3333333333333333
+      },
+      "actual_fifth": {
+        "exact": "43/81",
+        "decimal": 0.5308641975308642
+      },
+      "numerators": [
+        {
+          "exact": "3",
+          "decimal": 3.0
+        },
+        {
+          "exact": "7",
+          "decimal": 7.0
+        },
+        {
+          "exact": "15",
+          "decimal": 15.0
+        },
+        {
+          "exact": "27",
+          "decimal": 27.0
+        },
+        {
+          "exact": "43",
+          "decimal": 43.0
+        }
+      ],
+      "next": {
+        "exact": "7/27",
+        "decimal": 0.25925925925925924
+      },
+      "answer": "D"
+    },
+    "35": {
+      "source_grid_preserved": true,
+      "answer": "B",
+      "layout_report": "核验记录/v020_q35_layout_check.json",
+      "manual_view": "本轮实际打开新2160×540 PNG及120毫米、300dpi缩放预览；负号与直径分离。"
+    },
+    "37": {
+      "populations": [
+        630
+      ],
+      "swapped_hundreds_ones": "036 = 36",
+      "bus_solutions": [
+        [
+          3,
+          12
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          11,
+          2
+        ]
+      ],
+      "answer": "C"
+    },
+    "38": {
+      "original_price": {
+        "exact": "150",
+        "decimal": 150.0
+      },
+      "profit_old_new": [
+        {
+          "exact": "30",
+          "decimal": 30.0
+        },
+        {
+          "exact": "60",
+          "decimal": 60.0
+        }
+      ],
+      "sales_ratio": {
+        "exact": "2/5",
+        "decimal": 0.4
+      },
+      "revenue_ratio": {
+        "exact": "12/25",
+        "decimal": 0.48
+      },
+      "decrease": {
+        "exact": "13/25",
+        "decimal": 0.52
+      },
+      "answer": "D"
+    },
+    "40": {
+      "exposed_fractions_by_option": {
+        "A": {
+          "exact": "65681/125000",
+          "decimal": 0.525448
+        },
+        "B": {
+          "exact": "37/64",
+          "decimal": 0.578125
+        },
+        "C": {
+          "exact": "657/1000",
+          "decimal": 0.657
+        },
+        "D": {
+          "exact": "279/343",
+          "decimal": 0.8134110787172012
+        }
+      },
+      "threshold": {
+        "exact": "37/64",
+        "decimal": 0.578125
+      },
+      "minimum_drop": {
+        "exact": "7/4",
+        "decimal": 1.75
+      },
+      "answer": "B"
+    },
+    "42": {
+      "calendar_ordinals_common_leap": [
+        89,
+        90
+      ],
+      "chen_day_and_cycle_phase": {
+        "correct": [
+          89,
+          8
+        ],
+        "forget_Jan2": [
+          90,
+          9
+        ],
+        "wrong_common_year": [
+          88,
+          7
+        ],
+        "both_errors": [
+          89,
+          8
+        ]
+      },
+      "corresponding_choices": [
+        "B",
+        "A",
+        "D",
+        "B"
+      ],
+      "answer": "B"
+    },
+    "43": {
+      "enumerated_potential_outcomes": 81,
+      "total_mass": {
+        "exact": "1",
+        "decimal": 1.0
+      },
+      "three_first": {
+        "exact": "768/3125",
+        "decimal": 0.24576
+      },
+      "two_first": {
+        "exact": "1152/15625",
+        "decimal": 0.073728
+      },
+      "correct": {
+        "exact": "4992/15625",
+        "decimal": 0.319488
+      },
+      "mistaken_cancel_exactly_two": {
+        "exact": "768/3125",
+        "decimal": 0.24576
+      },
+      "omit_C_2_1": {
+        "exact": "4416/15625",
+        "decimal": 0.282624
+      },
+      "answer": "D"
+    },
+    "81-85": {
+      "removed_sentence": "据中国海关总署统计数据显示，2023年7月，中国空调产量同比增长29.0%。",
+      "new_header": "统计期",
+      "july_monthly_growth_from_table": {
+        "exact": "1587302/5973625",
+        "decimal": 0.2657183870765239
+      },
+      "rounding_bound_assumption": "累计量各±0.5万台、累计增速各±0.05个百分点，独立取16个端点组合；作为保守外包络。",
+      "rounding_growth_bounds": [
+        {
+          "exact": "122920029/476458000",
+          "decimal": 0.2579871237338863
+        },
+        {
+          "exact": "385887989/1410658000",
+          "decimal": 0.2735517673312738
+        }
+      ],
+      "29_percent_rounded_interval": [
+        {
+          "exact": "579/2000",
+          "decimal": 0.2895
+        },
+        {
+          "exact": "581/2000",
+          "decimal": 0.2905
+        }
+      ],
+      "question_dependency_note": {
+        "81": "2022全年及2023上半年累计量/增速",
+        "82": "2022年8—10月累计量",
+        "83": "2023年5—6月累计量/增速",
+        "84": "7月出口金额/数量同比",
+        "85": "2022年8—12月累计量"
+      },
+      "unaffected_question_results": {
+        "81": {
+          "exact": "5940001/583",
+          "decimal": 10188.680960548885
+        },
+        "82": {
+          "exact": "-151/885",
+          "decimal": -0.17062146892655367
+        },
+        "83": {
+          "exact": "38686111/136748500",
+          "decimal": 0.2828997100516642
+        },
+        "84": {
+          "exact": "-167/1013",
+          "decimal": -0.1648568608094768
+        },
+        "85": [
+          {
+            "exact": "-302",
+            "decimal": -302.0
+          },
+          {
+            "exact": "21",
+            "decimal": 21.0
+          },
+          {
+            "exact": "309",
+            "decimal": 309.0
+          }
+        ]
+      },
+      "source_material_snapshot_sha256": "333b12d1be420451f06bbff0e9404d423b2083ee82cfb6f8eb5daf74d9376a20",
+      "display_material_before_sha256": "670d72467768881e9cc3ecbc4b5c491481be29645f86fcc5e3020178ca35d160",
+      "display_material_after_sha256": "e7ced7628dbe4da2f768dbefcbe3be08d8fefd854787b54471c98b61d7b8f828",
+      "C_wrong_metric_cumulative_growth_percent": [
+        {
+          "exact": "16/5",
+          "decimal": 3.2
+        },
+        {
+          "exact": "2",
+          "decimal": 2.0
+        },
+        {
+          "exact": "9/5",
+          "decimal": 1.8
+        }
+      ],
+      "manual_graph_review": "本轮实际打开85题A—D：A递增、B先降后升、C递减、D先升后降。"
+    },
+    "86": {
+      "retained_2022_other_production": {
+        "exact": "92872",
+        "decimal": 92872.0
+      },
+      "growth_by_year": {
+        "2019": {
+          "exact": "6537/68953",
+          "decimal": 0.09480370687279742
+        },
+        "2020": {
+          "exact": "4747/75490",
+          "decimal": 0.06288250099350907
+        },
+        "2021": {
+          "exact": "7748/80237",
+          "decimal": 0.09656392935927316
+        },
+        "2022": {
+          "exact": "4887/87985",
+          "decimal": 0.055543558561118374
+        }
+      },
+      "table_row_sum_preserved": true,
+      "answer": "D",
+      "source_boundary": "转写表可核；本轮未取得粉笔原PDF逐格核对，未据构成规律改成95064。"
+    },
+    "88": {
+      "correct_2022_consumption": [
+        {
+          "exact": "152021/270478",
+          "decimal": 0.5620457116660135
+        },
+        {
+          "exact": "96839/540956",
+          "decimal": 0.17901455940963776
+        },
+        {
+          "exact": "11361/135239",
+          "decimal": 0.08400683234865683
+        },
+        {
+          "exact": "94631/540956",
+          "decimal": 0.17493289657569192
+        }
+      ],
+      "A_approximate_match_2022_production": [
+        {
+          "exact": "78521/115952",
+          "decimal": 0.6771853870567132
+        },
+        {
+          "exact": "14679/231904",
+          "decimal": 0.06329774389402511
+        },
+        {
+          "exact": "13747/231904",
+          "decimal": 0.0592788395198013
+        },
+        {
+          "exact": "11609/57976",
+          "decimal": 0.20023802952946046
+        }
+      ],
+      "C_approximate_match_2018_production": [
+        {
+          "exact": "262170/378859",
+          "decimal": 0.6919988702921139
+        },
+        {
+          "exact": "27278/378859",
+          "decimal": 0.07200040120466981
+        },
+        {
+          "exact": "106/1963",
+          "decimal": 0.05399898115129903
+        },
+        {
+          "exact": "68953/378859",
+          "decimal": 0.1820017473519172
+        }
+      ],
+      "manual_graph_review": "本轮实际打开88题A—D；B灰色略过半、白色不到一成、格纹与黑色接近；A/C约七成灰色；D白色明显偏大。近似对应不是图像精确角度测量。",
+      "answer": "B"
+    }
+  },
+  "material_guard_positive": {
+    "groups": [
+      {
+        "questions": [
+          71,
+          72,
+          73,
+          74,
+          75
+        ],
+        "material_id": "gd-mock-2026h2-s19-m1",
+        "table_data_cells_unchanged": true
+      },
+      {
+        "questions": [
+          76,
+          77,
+          78,
+          79,
+          80
+        ],
+        "material_id": "gd-mock-2026h2-s17-m3",
+        "table_data_cells_unchanged": true
+      },
+      {
+        "questions": [
+          81,
+          82,
+          83,
+          84,
+          85
+        ],
+        "material_id": "gd-mock-2026h2-s22-m1",
+        "table_data_cells_unchanged": true
+      },
+      {
+        "questions": [
+          86,
+          87,
+          88,
+          89,
+          90
+        ],
+        "material_id": "gd-mock-2026h2-s25-m2",
+        "table_data_cells_unchanged": true
+      }
+    ],
+    "registered_81_85_edits": {
+      "removed_sentence": "据中国海关总署统计数据显示，2023年7月，中国空调产量同比增长29.0%。",
+      "header_change": [
+        "图示期间",
+        "统计期"
+      ],
+      "retained_cumulative_note": "表中各月数值均为当年年初至该月的累计值；2023年1—2月为两个月合计。"
+    },
+    "method": "derive the expected full material from source; allow only explicit registered changes and existing text whitespace normalization"
+  },
+  "material_guard_negative_cases": {
+    "numeric_cell_changed": {
+      "rejected": true,
+      "reason": "(81, 'table data cells changed')"
+    },
+    "extra_text_deleted": {
+      "rejected": true,
+      "reason": "(81, 'unregistered material change')"
+    },
+    "source_metadata_changed": {
+      "rejected": true,
+      "reason": "(81, 'unregistered material change')"
+    },
+    "unregistered_header": {
+      "rejected": true,
+      "reason": "(81, 'unregistered material change')"
+    },
+    "missing_edit_record": {
+      "rejected": true,
+      "reason": "(81, 'missing registered sentence removal')"
+    },
+    "shared_group_differs": {
+      "rejected": true,
+      "reason": "(81, 'shared materials differ')"
+    }
+  },
+  "current_canonical_has_all_patch_updates": true,
+  "summary": {
+    "patch_items": 14,
+    "source_objects_checked_unchanged": 35,
+    "all_90_answer_keys_unchanged": true,
+    "shared_material_rows": 5,
+    "material_guard_negative_cases_rejected": 6,
+    "status": "PASS"
+  }
+}

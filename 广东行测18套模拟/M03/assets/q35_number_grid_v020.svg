@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2160" height="540" viewBox="0 0 720 180">
+<rect width="720" height="180" fill="white"/>
+<g fill="none" stroke="black" stroke-width="1.8"><circle cx="90" cy="90" r="70"/><path d="M 20 90 H 160 M 90 20 V 160"/></g>
+<text x="58" y="68" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Serif,serif" font-size="24">25</text>
+<text x="122" y="68" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Serif,serif" font-size="24">3</text>
+<text x="58" y="112" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Serif,serif" font-size="24">7</text>
+<text x="122" y="112" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Serif,serif" font-size="24">−4</text>
+<g fill="none" stroke="black" stroke-width="1.8"><circle cx="270" cy="90" r="70"/><path d="M 200 90 H 340 M 270 20 V 160"/></g>
+<text x="238" y="68" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Serif,serif" font-size="24">14</text>
+<text x="302" y="68" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Serif,serif" font-size="24">8</text>
+<text x="238" y="112" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Serif,serif" font-size="24">6</text>
+<text x="302" y="112" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Serif,serif" font-size="24">34</text>
+<g fill="none" stroke="black" stroke-width="1.8"><circle cx="450" cy="90" r="70"/><path d="M 380 90 H 520 M 450 20 V 160"/></g>
+<text x="418" y="68" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Serif,serif" font-size="24">51</text>
+<text x="482" y="68" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Serif,serif" font-size="24">9</text>
+<text x="418" y="112" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Serif,serif" font-size="24">4</text>
+<text x="482" y="112" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Serif,serif" font-size="24">−15</text>
+<g fill="none" stroke="black" stroke-width="1.8"><circle cx="630" cy="90" r="70"/><path d="M 560 90 H 700 M 630 20 V 160"/></g>
+<text x="598" y="68" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Serif,serif" font-size="24">22</text>
+<text x="662" y="68" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Serif,serif" font-size="24">8</text>
+<text x="598" y="112" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Serif,serif" font-size="24">7</text>
+<text x="662" y="112" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Serif,serif" font-size="24">?</text>
+</svg>

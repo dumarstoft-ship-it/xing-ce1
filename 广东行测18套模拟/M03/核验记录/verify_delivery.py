@@ -21,7 +21,7 @@ PROJECT=PAPER.parent
 ROOT=PROJECT.parent
 OUT=HERE/'交付核验.json'
 ERRORS=[]
-REPORT={'paper_id':'M03','checked_on':'2026-11-15','date_timezone':'Asia/Taipei','canonical_source':'selection.json','checks':{},'executions':[],'limitations':['本检查是结构、来源、计算和重建一致性核验，不是90题答案正确性的自动证明。','GPT内部交叉复核与Claude独立审核分开；本稿尚待Claude审核及之后的打印排版。','未声称原PDF全部逐题核对；缺失原图的重建依据及边界另有编辑记录。','不重复既有源ID或仓库文本未匹配，不等于用户从未在其他材料中做过。','题目JSON保留必要图片寻址路径，路径可能含源库目录名；它们不作为考生可见题源说明。']}
+REPORT={'paper_id':'M03','checked_on':'2026-11-15','date_timezone':'Asia/Taipei','canonical_source':'selection.json','checks':{},'executions':[],'limitations':['本检查是结构、来源、计算和重建一致性核验，不是90题答案正确性的自动证明。','Claude已审核0.1.0；本稿为GPT处理意见后的0.2.0，改动尚待Claude复核及之后的打印排版。','未声称原PDF全部逐题核对；缺失原图的重建依据及边界另有编辑记录。','不重复既有源ID或仓库文本未匹配，不等于用户从未在其他材料中做过。','题目JSON保留必要图片寻址路径，路径可能含源库目录名；它们不作为考生可见题源说明。']}
 
 def read(p):return json.loads(p.read_text(encoding='utf-8'))
 def lines(p):return [json.loads(l) for l in p.read_text(encoding='utf-8').splitlines() if l.strip()]
@@ -182,8 +182,13 @@ def main():
  full_equal=[r['number'] for r in module if r==by[r['number']]]
  changed=[r['number'] for r in module if r['number'] not in equivalent]
  ensure(reasoning.get('result')=='PASS','Reasoning verification did not pass')
- ensure(not changed,'Reasoning verification module payload differs from canonical; cannot transfer its result')
- REPORT['checks']['reasoning_execution']={'actual_input':rel(PAPER/'编辑底稿/reasoning.json'),'actual_input_scope':'独立模块稿，不是直接读取selection.json','module_sha256':sha(PAPER/'编辑底稿/reasoning.json'),'canonical_full_row_equal_numbers':full_equal,'canonical_effective_question_and_answer_equal_numbers':equivalent,'canonical_payload_differences':changed,'meaning':'已运行模块核验，且另比对模块稿与当前统一稿的题面、答案、源ID；相等部分可对应当前稿。脚本自身只对选定逻辑/图形题作枚举或像素/构造验证，不能称20题全部完成程序穷举。','programmed_content_check_keys':[k for k in reasoning['checks'] if k!='integrity'],'report_file':rel(PAPER/'编辑底稿/reasoning_verification.json'),'report_sha256':sha(PAPER/'编辑底稿/reasoning_verification.json'),'result':reasoning['result']}
+ execute(HERE/'verify_v020_revision.py')
+ revision=read(HERE/'v020_revision_check.json')
+ ensure(revision['result']=='PASS','Current 0.2.0 revision check failed')
+ preserved=revision['checks']['current_reasoning_conditions_and_options_preserved_numbers']
+ ensure(set(changed)<=set(preserved),'Changed reasoning payload lacks a current condition-preservation check')
+ REPORT['checks']['revision_020']={'result':revision['result'],'report_file':rel(HERE/'v020_revision_check.json'),'report_sha256':sha(HERE/'v020_revision_check.json'),'checks':revision['checks']}
+ REPORT['checks']['reasoning_execution']={'actual_input':rel(PAPER/'编辑底稿/reasoning.json'),'actual_input_scope':'0.1.0独立模块稿，不是直接读取当前selection.json','module_sha256':sha(PAPER/'编辑底稿/reasoning.json'),'canonical_full_row_equal_numbers':full_equal,'canonical_effective_question_and_answer_equal_numbers':equivalent,'canonical_payload_differences':changed,'current_conditions_and_options_preserved_numbers':preserved,'meaning':'旧脚本实际读取历史模块稿；当前题面与旧稿的显示差异另列。0.2.0增量检查直接读取当前题目并确认判断模块仅改分段、空格、填空线与标点，条件及选项不变；不把旧输入冒称当前输入。脚本只对选定题作枚举或像素/构造验证，不能称20题全部程序穷举。','programmed_content_check_keys':[k for k in reasoning['checks'] if k!='integrity'],'report_file':rel(PAPER/'编辑底稿/reasoning_verification.json'),'report_sha256':sha(PAPER/'编辑底稿/reasoning_verification.json'),'result':reasoning['result']}
 
  # Supplement the initial D-only witness with explicit four-option geometry.
  execute(HERE/'q50_spatial_review.py')
@@ -226,7 +231,7 @@ def main():
  build_report=read(PAPER/'核验报告.json')
  ensure(build_report['content_validation']=='PASS' and not build_report['errors'],'Canonical build report is not PASS')
  REPORT['checks']['reproducible_build']={'output_files_checked':len(outputs),'changed_outputs':changed_outputs,'byte_identical':not changed_outputs,'output_sha256':after,'canonical_inputs_unchanged_during_check':all(sha(PAPER/name)==digest for name,digest in start_inputs.items())}
- REPORT['checks']['current_review_status']={'external_review':cfg.get('external_review'),'printing_status':cfg.get('printing_status'),'print_ready':build_report['print_ready'],'science_Q70_corrected_answer':by[70]['answer'],'independent_reports_are_internal':True}
+ REPORT['checks']['current_review_status']={'external_review':cfg.get('external_review'),'printing_status':cfg.get('printing_status'),'print_ready':build_report['print_ready'],'science_Q70_answer':by[70]['answer'],'initial_editor_cross_reviews_are_internal':True,'claude_reviewed_version':'0.1.0','current_revision_recheck_pending':True}
  ensure(by[70]['answer']=='B','The reviewed Q70 correction has not reached canonical selection')
  REPORT['errors']=ERRORS
  REPORT['result']='PASS' if not ERRORS else 'FAIL'

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216 170" width="1296" height="1020">
+<title>M03 第67题：平抛轨迹示意图（0.2.0）</title>
+<desc>依据已存图保留起点 O、两落点和墙角坐标；两条虚线按水平初速度、竖直匀加速的二次曲线绘制，不添加数值或比较结论。</desc>
+<rect width="216" height="170" fill="white"/>
+<path d="M11 69 H137 V165 H129 V78 H11 Z" fill="black"/>
+<g fill="none" stroke="black" stroke-width="1.1" stroke-dasharray="3.2 1.8">
+<path id="trajectory-A" d="M195 13 Q156 13 117 69"/>
+<path id="trajectory-B" d="M195 13 Q166 13 137 84"/>
+</g>
+<circle cx="195" cy="13" r="2.1" fill="black"/>
+<g fill="black" font-family="Arial, sans-serif" font-size="9.5">
+<text x="201" y="17">O</text><text x="147" y="26">A</text><text x="154" y="64">B</text>
+</g></svg>

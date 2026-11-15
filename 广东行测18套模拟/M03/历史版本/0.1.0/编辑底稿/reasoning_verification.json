@@ -1,0 +1,370 @@
+{
+  "scope": "M03 reasoning editorial contribution; not an external blind review",
+  "date": "2026-11-15",
+  "module_sha256": "e3a2372f1bc4fd9fa5b917315b1e8fb9550e2f7048c20de764f1e7bc80c2c9a6",
+  "checks": {
+    "Q51": {
+      "answer": "C",
+      "all_models": [
+        {
+          "qin": false,
+          "wei": true,
+          "han": false
+        },
+        {
+          "qin": true,
+          "wei": true,
+          "han": false
+        }
+      ]
+    },
+    "Q53": {
+      "answer": "D",
+      "all_models": [
+        {
+          "majors": [
+            "经济",
+            "社会",
+            "历史",
+            "文学"
+          ],
+          "books": [
+            "社会",
+            "经济",
+            "文学",
+            "历史"
+          ]
+        },
+        {
+          "majors": [
+            "经济",
+            "社会",
+            "历史",
+            "文学"
+          ],
+          "books": [
+            "社会",
+            "历史",
+            "文学",
+            "经济"
+          ]
+        }
+      ],
+      "option_necessity": {
+        "A": true,
+        "B": true,
+        "C": true,
+        "D": false
+      }
+    },
+    "Q55": {
+      "answer": "A",
+      "bounded_assignments_with_premise": 6655,
+      "first_counterexamples_for_other_options": {
+        "A": [],
+        "B": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "C": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "D": [
+          1,
+          2,
+          1,
+          0
+        ]
+      },
+      "unbounded_proof": "a>d and a+b<c+d imply c-b>a-d>0; adding a>d and c>b gives a+c>b+d."
+    },
+    "Q60": {
+      "answer": "D",
+      "all_models": [
+        [
+          "会计师",
+          "大学教师",
+          "歌手",
+          "企业家"
+        ]
+      ],
+      "assignments_checked": 24
+    },
+    "Q63": {
+      "answer": "C",
+      "all_models": [
+        [
+          true,
+          true,
+          true,
+          false,
+          false,
+          true
+        ],
+        [
+          true,
+          true,
+          true,
+          false,
+          true,
+          false
+        ]
+      ],
+      "assignments_checked": 64,
+      "source_analysis_issue": "The source explanation drops one direction of iff; its Ding-selected branch violates the actual question."
+    },
+    "Q64": {
+      "answer": "A",
+      "normalized_premise_models": [
+        [
+          true,
+          false,
+          false
+        ]
+      ],
+      "note": "Natural-language structural matching was reviewed separately; enumeration checks the shared conjunction/contraposition schema."
+    },
+    "Q61": {
+      "answer": "D",
+      "shared_invalid_schema": "P->R, Q->R, therefore R->(P or Q)",
+      "countermodel": {
+        "P": false,
+        "Q": false,
+        "R": true
+      }
+    },
+    "Q47": {
+      "answer": "A",
+      "image_sha256": "927ce48598618f242dbf3dd27e939e2f011dc15ac2d65c7d9004b5a52908e4a1",
+      "grid_columns": 8,
+      "cells_per_column": 7,
+      "transition_mismatches": [
+        0,
+        0,
+        0
+      ],
+      "option_mismatches": {
+        "A": 0,
+        "B": 2,
+        "C": 4,
+        "D": 21
+      },
+      "sampled_columns": {
+        "1": [
+          "0100000",
+          "1000001",
+          "0010100",
+          "1101010",
+          "0000010",
+          "1010100",
+          "0001010",
+          "0000100"
+        ],
+        "2": [
+          "0000101",
+          "0000010",
+          "0010000",
+          "1100000",
+          "0001010",
+          "0110101",
+          "0000001",
+          "0101010"
+        ],
+        "3": [
+          "1000000",
+          "0010101",
+          "1000010",
+          "0000001",
+          "0001000",
+          "0110000",
+          "0000101",
+          "1011010"
+        ],
+        "4": [
+          "1000010",
+          "0101101",
+          "0100000",
+          "1001010",
+          "0100001",
+          "1000000",
+          "0000100",
+          "0011000"
+        ]
+      },
+      "boundary_rule": "Columns wrap modulo 8; cells within a column wrap modulo 7."
+    },
+    "Q50": {
+      "answer": "D",
+      "box_dimensions": [
+        4,
+        2,
+        3
+      ],
+      "piece1": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          3,
+          1,
+          0
+        ],
+        [
+          3,
+          1,
+          1
+        ],
+        [
+          3,
+          1,
+          2
+        ]
+      ],
+      "piece2": [
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          2,
+          1,
+          1
+        ],
+        [
+          3,
+          0,
+          1
+        ]
+      ],
+      "rotated_D": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          1,
+          2
+        ],
+        [
+          3,
+          0,
+          2
+        ]
+      ],
+      "note": "Constructive D witness plus visual elimination of A/B/C; this is not an exhaustive machine reconstruction of all four pictured options."
+    },
+    "integrity": {
+      "question_count": 20,
+      "numbers": [
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "source_answer_matches": 18,
+      "source_records_unchanged": true,
+      "M01_M02_and_withdrawn_overlap": [],
+      "known_planar200_spatial178_overlap": [],
+      "old_text_files_scanned": 157,
+      "old_stable_id_or_45char_stem_hits": {},
+      "boundary": "No match is not a proof of never having seen the question; cross-version paraphrases and unindexed external practice are outside this scan."
+    }
+  },
+  "result": "PASS"
+}

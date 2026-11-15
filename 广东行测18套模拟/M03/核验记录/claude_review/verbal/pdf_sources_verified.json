@@ -1,0 +1,66 @@
+[
+ {
+  "source_file": "2022年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+  "expected_blob_sha": "e5f7736531d4616c23a3d51856695fb309bf27c8",
+  "actual_git_blob_sha": "e5f7736531d4616c23a3d51856695fb309bf27c8",
+  "match": true,
+  "used_for": "Q16 p6, Q22 p8",
+  "origin": "https://raw.githubusercontent.com/dumarstoft-ship-it/xingce/407016b55b49581efa3771bb59a2dee8761d982f/<file>"
+ },
+ {
+  "source_file": "2023年江苏公务员考试《行测》真题（A类）.pdf",
+  "expected_blob_sha": "07c8f03595cce0f2acb456b5c5573f24715f4516",
+  "actual_git_blob_sha": "07c8f03595cce0f2acb456b5c5573f24715f4516",
+  "match": true,
+  "used_for": "Q17 p11",
+  "origin": "https://raw.githubusercontent.com/dumarstoft-ship-it/xingce/407016b55b49581efa3771bb59a2dee8761d982f/<file>"
+ },
+ {
+  "source_file": "2023年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+  "expected_blob_sha": "5bcc6163c999c3910d10f36f6d8bea8a57df1417",
+  "actual_git_blob_sha": "5bcc6163c999c3910d10f36f6d8bea8a57df1417",
+  "match": true,
+  "used_for": "Q19 p7, Q28 p9, Q29 p10",
+  "origin": "https://raw.githubusercontent.com/dumarstoft-ship-it/xingce/407016b55b49581efa3771bb59a2dee8761d982f/<file>"
+ },
+ {
+  "source_file": "2020年江苏公务员考试《行测》真题（A类）.pdf",
+  "expected_blob_sha": "00f42a7f169be020b83a9e1149f5f5a35cf4f059",
+  "actual_git_blob_sha": "00f42a7f169be020b83a9e1149f5f5a35cf4f059",
+  "match": true,
+  "used_for": "Q21 p4",
+  "origin": "https://raw.githubusercontent.com/dumarstoft-ship-it/xingce/407016b55b49581efa3771bb59a2dee8761d982f/<file>"
+ },
+ {
+  "source_file": "2021年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+  "expected_blob_sha": "bf44d1314deecbe22e6b2bf45ccec0c5bc9de703",
+  "actual_git_blob_sha": "bf44d1314deecbe22e6b2bf45ccec0c5bc9de703",
+  "match": true,
+  "used_for": "Q23 p6-7, Q25 p8",
+  "origin": "https://raw.githubusercontent.com/dumarstoft-ship-it/xingce/407016b55b49581efa3771bb59a2dee8761d982f/<file>"
+ },
+ {
+  "source_file": "2022年江苏公务员考试《行测》真题（A类）....pdf",
+  "expected_blob_sha": "0c2016b9c742eda719a376a8a63c41daa6d3ec3b",
+  "actual_git_blob_sha": "0c2016b9c742eda719a376a8a63c41daa6d3ec3b",
+  "match": true,
+  "used_for": "Q24 p5",
+  "origin": "https://raw.githubusercontent.com/dumarstoft-ship-it/xingce/407016b55b49581efa3771bb59a2dee8761d982f/<file>"
+ },
+ {
+  "used_for": "Q18 原题29",
+  "origin": "本仓库（只读读取，pdftotext提取到工作目录）"
+ },
+ {
+  "used_for": "Q20 原题24, Q27 原题47",
+  "origin": "本仓库（只读读取，pdftotext提取到工作目录）"
+ },
+ {
+  "used_for": "Q26 原题52",
+  "origin": "本仓库（只读读取，pdftotext提取到工作目录）"
+ },
+ {
+  "used_for": "Q30 原题45",
+  "origin": "本仓库（只读读取，pdftotext提取到工作目录）"
+ }
+]

@@ -1,0 +1,64 @@
+{
+  "paper_id": "M03",
+  "version": "0.2.0",
+  "result": "PASS",
+  "checks": {
+    "baseline_and_revision_hashes": "PASS",
+    "all_90_answer_keys_unchanged": true,
+    "source_objects_and_identifiers_unchanged": true,
+    "current_reasoning_conditions_and_options_preserved_numbers": [
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65
+    ],
+    "delivered_Q55_Q60_Q65_layout": "PASS",
+    "Q35_revised_image_is_delivered": true,
+    "Q67_geometry": {
+      "horizontal_initial_tangents": true,
+      "same_landings_and_wall": true,
+      "B_x_at_wall_top": 143.48984784872124,
+      "answer": "B"
+    },
+    "Q68_visual_particle_inventory": {
+      "matches_source_table": true,
+      "before_atoms": {
+        "C": 1,
+        "H": 4,
+        "O": 6
+      },
+      "after_atoms": {
+        "O": 6,
+        "C": 1,
+        "H": 4
+      },
+      "molecules_per_stage": 4,
+      "remaining_O2": 1,
+      "answer": "C"
+    },
+    "Q69_added_direction_is_logged": true,
+    "Q70_elevation_evidence_is_recorded": true,
+    "original_claude_review_files_preserved": 63
+  },
+  "limitations": [
+    "答案不变、来源保全和条件保全不等于自动证明90题正确。",
+    "图像已人工查看；本脚本不代替最终方正字体实尺寸排版检查。",
+    "当前修订尚待Claude增量复核。"
+  ]
+}

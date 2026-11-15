@@ -1,0 +1,237 @@
+[
+ {
+  "number": 16,
+  "source_id": "ZJ2022-A类-028",
+  "identical_after_removing_newlines_spaces": true,
+  "source_space_contexts": [
+   "国特色 ___",
+   "___ 全球价",
+   "，互镜 ___",
+   "___ 着养成",
+   "觉并非 ___",
+   "___ 、狂妄"
+  ],
+  "options_identical": true,
+  "qjsonl_stem_equals_override": true,
+  "qjsonl_options_equal": true,
+  "blanks_source": [
+   "____",
+   "____",
+   "____"
+  ],
+  "blanks_override": [
+   "____",
+   "____",
+   "____"
+  ]
+ },
+ {
+  "number": 17,
+  "source_id": "JS2023-A类-037",
+  "identical_after_removing_newlines_spaces": false,
+  "diffs": [
+   [
+    "replace",
+    "颗",
+    "株"
+   ],
+   [
+    "replace",
+    "嵩",
+    "蒿"
+   ]
+  ],
+  "source_space_contexts": [],
+  "options_identical": true,
+  "qjsonl_stem_equals_override": true,
+  "qjsonl_options_equal": true,
+  "blanks_source": [
+   "_________",
+   "________",
+   "_______"
+  ],
+  "blanks_override": [
+   "_________",
+   "________",
+   "_______"
+  ]
+ },
+ {
+  "number": 18,
+  "source_id": "GKYY-2021-044",
+  "identical_after_removing_newlines_spaces": true,
+  "source_space_contexts": [],
+  "options_identical": true,
+  "qjsonl_stem_equals_override": true,
+  "qjsonl_options_equal": true,
+  "blanks_source": [
+   "____",
+   "____"
+  ],
+  "blanks_override": [
+   "____",
+   "____"
+  ]
+ },
+ {
+  "number": 19,
+  "source_id": "ZJ2023-A类-031",
+  "identical_after_removing_newlines_spaces": true,
+  "source_space_contexts": [
+   "，一次 ___",
+   "___ 的对话",
+   "心弦、 ___",
+   "___ 的论述",
+   "未\\n曾 ___",
+   "___ 在他人"
+  ],
+  "options_identical": true,
+  "qjsonl_stem_equals_override": true,
+  "qjsonl_options_equal": true,
+  "blanks_source": [
+   "____",
+   "____",
+   "____"
+  ],
+  "blanks_override": [
+   "____",
+   "____",
+   "____"
+  ]
+ },
+ {
+  "number": 20,
+  "source_id": "GKYY-2020-004",
+  "identical_after_removing_newlines_spaces": true,
+  "source_space_contexts": [],
+  "options_identical": true,
+  "qjsonl_stem_equals_override": true,
+  "qjsonl_options_equal": true,
+  "blanks_source": [
+   "____",
+   "____"
+  ],
+  "blanks_override": [
+   "____",
+   "____"
+  ]
+ },
+ {
+  "number": 21,
+  "source_id": "JS2020-A类-029",
+  "identical_after_removing_newlines_spaces": true,
+  "source_space_contexts": [],
+  "options_identical": true,
+  "qjsonl_stem_equals_override": true,
+  "qjsonl_options_equal": true,
+  "blanks_source": [],
+  "blanks_override": []
+ },
+ {
+  "number": 22,
+  "source_id": "ZJ2022-A类-040",
+  "identical_after_removing_newlines_spaces": true,
+  "source_space_contexts": [],
+  "options_identical": true,
+  "qjsonl_stem_equals_override": true,
+  "qjsonl_options_equal": true,
+  "blanks_source": [],
+  "blanks_override": []
+ },
+ {
+  "number": 23,
+  "source_id": "ZJ2021-A类-040",
+  "identical_after_removing_newlines_spaces": true,
+  "source_space_contexts": [],
+  "options_identical": true,
+  "qjsonl_stem_equals_override": true,
+  "qjsonl_options_equal": true,
+  "blanks_source": [],
+  "blanks_override": []
+ },
+ {
+  "number": 24,
+  "source_id": "JS2022-A类-029",
+  "identical_after_removing_newlines_spaces": true,
+  "source_space_contexts": [],
+  "options_identical": true,
+  "qjsonl_stem_equals_override": true,
+  "qjsonl_options_equal": true,
+  "blanks_source": [
+   "________________"
+  ],
+  "blanks_override": [
+   "________________"
+  ]
+ },
+ {
+  "number": 25,
+  "source_id": "ZJ2021-A类-050",
+  "identical_after_removing_newlines_spaces": true,
+  "source_space_contexts": [],
+  "options_identical": true,
+  "qjsonl_stem_equals_override": true,
+  "qjsonl_options_equal": true,
+  "blanks_source": [],
+  "blanks_override": []
+ },
+ {
+  "number": 26,
+  "source_id": "GKYY-2023-060",
+  "identical_after_removing_newlines_spaces": true,
+  "source_space_contexts": [],
+  "options_identical": true,
+  "qjsonl_stem_equals_override": true,
+  "qjsonl_options_equal": true,
+  "blanks_source": [],
+  "blanks_override": []
+ },
+ {
+  "number": 27,
+  "source_id": "GKYY-2020-027",
+  "identical_after_removing_newlines_spaces": true,
+  "source_space_contexts": [],
+  "options_identical": true,
+  "qjsonl_stem_equals_override": true,
+  "qjsonl_options_equal": true,
+  "blanks_source": [
+   "____"
+  ],
+  "blanks_override": [
+   "____"
+  ]
+ },
+ {
+  "number": 28,
+  "source_id": "ZJ2023-A类-042",
+  "identical_after_removing_newlines_spaces": true,
+  "source_space_contexts": [],
+  "options_identical": true,
+  "qjsonl_stem_equals_override": true,
+  "qjsonl_options_equal": true,
+  "blanks_source": [],
+  "blanks_override": []
+ },
+ {
+  "number": 29,
+  "source_id": "ZJ2023-A类-047",
+  "identical_after_removing_newlines_spaces": true,
+  "source_space_contexts": [],
+  "options_identical": true,
+  "qjsonl_stem_equals_override": true,
+  "qjsonl_options_equal": true,
+  "blanks_source": [],
+  "blanks_override": []
+ },
+ {
+  "number": 30,
+  "source_id": "GKYY-2021-025",
+  "identical_after_removing_newlines_spaces": true,
+  "source_space_contexts": [],
+  "options_identical": true,
+  "qjsonl_stem_equals_override": true,
+  "qjsonl_options_equal": true,
+  "blanks_source": [],
+  "blanks_override": []
+ }
+]

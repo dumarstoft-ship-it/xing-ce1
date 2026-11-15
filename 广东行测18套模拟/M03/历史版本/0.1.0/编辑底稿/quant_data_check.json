@@ -1,0 +1,794 @@
+{
+  "input_file": "广东行测18套模拟/M03/selection.json",
+  "checked_on": "2026-11-15",
+  "checks": {
+    "31": {
+      "answer": "A",
+      "method": "three-term square-sum groups",
+      "missing_squared": 109
+    },
+    "32": {
+      "answer": "A",
+      "method": "separate odd/even position checks",
+      "odd_differences": [
+        2,
+        6,
+        18
+      ],
+      "missing": 108,
+      "even": [
+        17,
+        29,
+        46,
+        75
+      ]
+    },
+    "33": {
+      "answer": "D",
+      "method": "rescale fractions by powers of three",
+      "unreduced_numerators": [
+        {
+          "exact": "3",
+          "decimal": 3.0
+        },
+        {
+          "exact": "7",
+          "decimal": 7.0
+        },
+        {
+          "exact": "15",
+          "decimal": 15.0
+        },
+        {
+          "exact": "27",
+          "decimal": 27.0
+        },
+        {
+          "exact": "43",
+          "decimal": 43.0
+        }
+      ],
+      "missing": {
+        "exact": "7/27",
+        "decimal": 0.25925925925925924
+      }
+    },
+    "34": {
+      "answer": "A",
+      "method": "difference-sequence recurrence",
+      "differences": [
+        29,
+        18,
+        11,
+        7,
+        4
+      ],
+      "missing": 84
+    },
+    "35": {
+      "answer": "B",
+      "method": "all three known circles and the unknown use identical positions",
+      "missing": {
+        "exact": "34",
+        "decimal": 34.0
+      },
+      "reconstruction": "Source is a positional table; both PNG/SVG are code drawings of those cells."
+    },
+    "36": {
+      "answer": "B",
+      "method": "enumerate integer total and all three color constraints",
+      "solutions": [
+        [
+          168,
+          {
+            "exact": "72",
+            "decimal": 72.0
+          },
+          {
+            "exact": "63",
+            "decimal": 63.0
+          },
+          {
+            "exact": "33",
+            "decimal": 33.0
+          }
+        ]
+      ]
+    },
+    "37": {
+      "answer": "C",
+      "method": "enumerate possible three-digit populations and bus mixes",
+      "population": [
+        630
+      ],
+      "bus_solutions": [
+        [
+          3,
+          12
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          11,
+          2
+        ]
+      ]
+    },
+    "38": {
+      "answer": "D",
+      "method": "separate price, per-unit profit, volume and revenue",
+      "original_price": {
+        "exact": "150",
+        "decimal": 150.0
+      },
+      "original_profit": {
+        "exact": "30",
+        "decimal": 30.0
+      },
+      "new_profit": {
+        "exact": "60",
+        "decimal": 60.0
+      },
+      "volume_ratio": {
+        "exact": "2/5",
+        "decimal": 0.4
+      },
+      "revenue_decline": {
+        "exact": "13/25",
+        "decimal": 0.52
+      }
+    },
+    "39": {
+      "answer": "D",
+      "method": "speed/time reciprocal constraints",
+      "first_wind": {
+        "exact": "12",
+        "decimal": 12.0
+      },
+      "second_wind": {
+        "exact": "18",
+        "decimal": 18.0
+      },
+      "length": {
+        "exact": "54",
+        "decimal": 54.0
+      }
+    },
+    "40": {
+      "answer": "B",
+      "method": "similar-cone volume-height power and exposed-volume complement",
+      "remaining_volume": {
+        "exact": "27/64",
+        "decimal": 0.421875
+      },
+      "remaining_height": {
+        "exact": "21/4",
+        "decimal": 5.25
+      },
+      "water_drop": {
+        "exact": "7/4",
+        "decimal": 1.75
+      }
+    },
+    "41": {
+      "answer": "A",
+      "method": "reconstruct planned and actual time lines with exact fractions",
+      "a_rate": {
+        "exact": "1/20",
+        "decimal": 0.05
+      },
+      "b_rate": {
+        "exact": "1/40",
+        "decimal": 0.025
+      },
+      "c_rate": {
+        "exact": "1/100",
+        "decimal": 0.01
+      },
+      "switch_day": {
+        "exact": "7",
+        "decimal": 7.0
+      },
+      "final_day": 17,
+      "rate_ratio": {
+        "exact": "5/2",
+        "decimal": 2.5
+      }
+    },
+    "42": {
+      "answer": "B",
+      "method": "date arithmetic for one common and one leap year",
+      "calendar": [
+        {
+          "year": 2023,
+          "day_number": 89,
+          "zhang_phase": 5,
+          "chen_phase": 7
+        },
+        {
+          "year": 2024,
+          "day_number": 90,
+          "zhang_phase": 6,
+          "chen_phase": 8
+        }
+      ]
+    },
+    "43": {
+      "answer": "D",
+      "method": "enumerate every initial-pass and retake outcome, enforcing gate",
+      "probability": {
+        "exact": "4992/15625",
+        "decimal": 0.319488
+      },
+      "contributions_by_initial_pass_count": {
+        "2": {
+          "exact": "1152/15625",
+          "decimal": 0.073728
+        },
+        "3": {
+          "exact": "768/3125",
+          "decimal": 0.24576
+        }
+      }
+    },
+    "44": {
+      "answer": "D",
+      "method": "enumerate disjoint cell populations under integrality",
+      "solutions": [
+        [
+          10,
+          {
+            "exact": "17",
+            "decimal": 17.0
+          },
+          {
+            "exact": "14",
+            "decimal": 14.0
+          },
+          6,
+          {
+            "exact": "47",
+            "decimal": 47.0
+          }
+        ]
+      ]
+    },
+    "45": {
+      "answer": "B",
+      "method": "enumerate all assignments of seven named people to three named parks",
+      "count": 350,
+      "by_b_count": {
+        "3": 140,
+        "2": 210
+      }
+    },
+    "71": {
+      "answer": "A",
+      "method": "manual textual support plus exact phrase existence",
+      "support": "产品端促销、产业链对接、内容制播及AI赋能"
+    },
+    "72": {
+      "answer": "C",
+      "method": "manual evidence-boundary judgment, not a claim that absent 8K ranking is false",
+      "support": {
+        "A": "全国唯一的超高清视频产业发展试验区",
+        "B": "10803亿元，成为第十个万亿级产业集群",
+        "C": "未给出8K数量或排名",
+        "D": "国家级制造业创新中心，总投资超4000亿元"
+      }
+    },
+    "73": {
+      "answer": "D",
+      "method": "monthly provincial capacity -> monthly national capacity -> full-load annual production",
+      "national_monthly": {
+        "exact": "420",
+        "decimal": 420.0
+      },
+      "national_annual": {
+        "exact": "5040",
+        "decimal": 5040.0
+      }
+    },
+    "74": {
+      "answer": "D",
+      "method": "solve the earlier growth factor from two-year and later-year factors",
+      "earlier_growth": {
+        "exact": "-25/547",
+        "decimal": -0.04570383912248629
+      }
+    },
+    "75": {
+      "answer": "B",
+      "method": "all four alternatives checked separately",
+      "A_difference_percentage_points": {
+        "exact": "171/2",
+        "decimal": 85.5
+      },
+      "B_total_users_wan": {
+        "exact": "290500/89",
+        "decimal": 3264.044943820225
+      },
+      "C": "Two national category denominators are different; no volume ordering follows.",
+      "D_increment_yi": {
+        "exact": "54015/7",
+        "decimal": 7716.428571428572
+      }
+    },
+    "76": {
+      "answer": "C",
+      "method": "difference of the two losing-firm proportions",
+      "percentage_point_difference": {
+        "exact": "1180448300/82522587",
+        "decimal": 14.304547917287179
+      }
+    },
+    "77": {
+      "answer": "B",
+      "method": "same-span CAGR ordering by endpoint/base ratios",
+      "ratios": {
+        "A": {
+          "exact": "50863/51077",
+          "decimal": 0.995810247273724
+        },
+        "B": {
+          "exact": "14124/2165",
+          "decimal": 6.52378752886836
+        },
+        "C": {
+          "exact": "4283/1358",
+          "decimal": 3.153902798232695
+        },
+        "D": {
+          "exact": "18503/11599",
+          "decimal": 1.5952237261832916
+        }
+      },
+      "cagrs": {
+        "A": -0.0004197673063618401,
+        "B": 0.206285148212642,
+        "C": 0.12172094825789181,
+        "D": 0.04780908589878563
+      }
+    },
+    "78": {
+      "answer": "B",
+      "method": "compare profit growth against revenue growth in each listed year",
+      "qualifying_years": [
+        2013,
+        2014
+      ],
+      "growth_pairs": {
+        "2013": [
+          {
+            "exact": "128/5",
+            "decimal": 25.6
+          },
+          {
+            "exact": "99/5",
+            "decimal": 19.8
+          }
+        ],
+        "2014": [
+          {
+            "exact": "173/10",
+            "decimal": 17.3
+          },
+          {
+            "exact": "101/10",
+            "decimal": 10.1
+          }
+        ],
+        "2015": [
+          {
+            "exact": "13/10",
+            "decimal": 1.3
+          },
+          {
+            "exact": "26/5",
+            "decimal": 5.2
+          }
+        ],
+        "2016": [
+          {
+            "exact": "10",
+            "decimal": 10.0
+          },
+          {
+            "exact": "143/10",
+            "decimal": 14.3
+          }
+        ],
+        "2017": [
+          {
+            "exact": "23/10",
+            "decimal": 2.3
+          },
+          {
+            "exact": "32/5",
+            "decimal": 6.4
+          }
+        ],
+        "2018": [
+          {
+            "exact": "-109/10",
+            "decimal": -10.9
+          },
+          {
+            "exact": "-57/10",
+            "decimal": -5.7
+          }
+        ]
+      }
+    },
+    "79": {
+      "answer": "D",
+      "method": "difference of per-losing-firm loss, converted from 亿元 to 万元",
+      "average_2022_wanyuan": {
+        "exact": "12239000/4469",
+        "decimal": 2738.6439919445065
+      },
+      "average_2021_wanyuan": {
+        "exact": "10204000/3581",
+        "decimal": 2849.483384529461
+      },
+      "difference_wanyuan": {
+        "exact": "-1773817000/16003489",
+        "decimal": -110.83939258495444
+      }
+    },
+    "80": {
+      "answer": "C",
+      "method": "check two supported statements and one unsupported monthly inference",
+      "item1_max_min_ratio": {
+        "exact": "10889/3115",
+        "decimal": 3.4956661316211877
+      },
+      "item2_profit_increment_yi": {
+        "exact": "817232/785",
+        "decimal": 1041.059872611465
+      },
+      "item3_annual_not_december_increment": {
+        "exact": "377/2",
+        "decimal": 188.5
+      },
+      "supported": [
+        true,
+        true,
+        false
+      ]
+    },
+    "81": {
+      "answer": "A",
+      "method": "subtract inferred first-half base from prior-year annual total",
+      "inferred_2022_h1": {
+        "exact": "7030000/583",
+        "decimal": 12058.319039451115
+      },
+      "computed_2022_h2": {
+        "exact": "5940001/583",
+        "decimal": 10188.680960548885
+      }
+    },
+    "82": {
+      "answer": "D",
+      "method": "difference adjacent cumulative totals before comparing months",
+      "monthly_2022": {
+        "9": {
+          "exact": "1770",
+          "decimal": 1770.0
+        },
+        "10": {
+          "exact": "1468",
+          "decimal": 1468.0
+        },
+        "11": {
+          "exact": "1489",
+          "decimal": 1489.0
+        },
+        "12": {
+          "exact": "1798",
+          "decimal": 1798.0
+        }
+      },
+      "october_monthly_growth": {
+        "exact": "-151/885",
+        "decimal": -0.17062146892655367
+      }
+    },
+    "83": {
+      "answer": "D",
+      "method": "two cumulative base-period reconstructions then subtraction",
+      "current_june": {
+        "exact": "2635",
+        "decimal": 2635.0
+      },
+      "base_june": {
+        "exact": "683742500/332893",
+        "decimal": 2053.94075573833
+      },
+      "june_growth": {
+        "exact": "38686111/136748500",
+        "decimal": 0.2828997100516642
+      },
+      "rounding_sensitivity_growth_bounds": [
+        {
+          "exact": "152237653/549773300",
+          "decimal": 0.27690986994093747
+        },
+        {
+          "exact": "174723307/604683000",
+          "decimal": 0.28895025492696175
+        }
+      ]
+    },
+    "84": {
+      "answer": "B",
+      "method": "ratio-of-growth-factors for unit export price",
+      "unit_price_growth": {
+        "exact": "-167/1013",
+        "decimal": -0.1648568608094768
+      }
+    },
+    "85": {
+      "answer": "A",
+      "method": "two differences of cumulative totals; independently check option-line pixel heights",
+      "monthly_output": {
+        "9": {
+          "exact": "1770",
+          "decimal": 1770.0
+        },
+        "10": {
+          "exact": "1468",
+          "decimal": 1468.0
+        },
+        "11": {
+          "exact": "1489",
+          "decimal": 1489.0
+        },
+        "12": {
+          "exact": "1798",
+          "decimal": 1798.0
+        }
+      },
+      "month_on_month_increments": [
+        {
+          "exact": "-302",
+          "decimal": -302.0
+        },
+        {
+          "exact": "21",
+          "decimal": 21.0
+        },
+        {
+          "exact": "309",
+          "decimal": 309.0
+        }
+      ],
+      "graphic_options": {
+        "A": {
+          "pixel_y_medians": [
+            95.5,
+            52.5,
+            14
+          ],
+          "strictly_rising": true
+        },
+        "B": {
+          "pixel_y_medians": [
+            17,
+            93,
+            15.5
+          ],
+          "strictly_rising": false
+        },
+        "C": {
+          "pixel_y_medians": [
+            15.5,
+            52.5,
+            97
+          ],
+          "strictly_rising": false
+        },
+        "D": {
+          "pixel_y_medians": [
+            85.5,
+            17.0,
+            87.0
+          ],
+          "strictly_rising": false
+        }
+      }
+    },
+    "86": {
+      "answer": "D",
+      "method": "compare all four other-energy production growth rates",
+      "growth_by_year": {
+        "2019": {
+          "exact": "6537/68953",
+          "decimal": 0.09480370687279742
+        },
+        "2020": {
+          "exact": "4747/75490",
+          "decimal": 0.06288250099350907
+        },
+        "2021": {
+          "exact": "7748/80237",
+          "decimal": 0.09656392935927316
+        },
+        "2022": {
+          "exact": "4887/87985",
+          "decimal": 0.055543558561118374
+        }
+      }
+    },
+    "87": {
+      "answer": "D",
+      "method": "two consumption increments and their ratio",
+      "coal_increment": {
+        "exact": "10435",
+        "decimal": 10435.0
+      },
+      "oil_increment": {
+        "exact": "4134",
+        "decimal": 4134.0
+      },
+      "ratio": {
+        "exact": "10435/4134",
+        "decimal": 2.5241896468311564
+      }
+    },
+    "88": {
+      "answer": "B",
+      "method": "four numeric proportions, visual identification, and rough radial-pixel check",
+      "material_proportions": [
+        {
+          "exact": "152021/270478",
+          "decimal": 0.5620457116660135
+        },
+        {
+          "exact": "96839/540956",
+          "decimal": 0.17901455940963776
+        },
+        {
+          "exact": "11361/135239",
+          "decimal": 0.08400683234865683
+        },
+        {
+          "exact": "94631/540956",
+          "decimal": 0.17493289657569192
+        }
+      ],
+      "pie_options": {
+        "A": {
+          "estimated_sector_proportions": [
+            0.6833333333333333,
+            0.06944444444444445,
+            0.04722222222222222,
+            0.2
+          ],
+          "squared_distance_from_material": 0.028697764479439357
+        },
+        "B": {
+          "estimated_sector_proportions": [
+            0.5722222222222222,
+            0.18333333333333332,
+            0.07222222222222222,
+            0.17222222222222222
+          ],
+          "squared_distance_from_material": 0.0002684379665872438
+        },
+        "C": {
+          "estimated_sector_proportions": [
+            0.6972222222222222,
+            0.07777777777777778,
+            0.044444444444444446,
+            0.18055555555555555
+          ],
+          "squared_distance_from_material": 0.03011837179201692
+        },
+        "D": {
+          "estimated_sector_proportions": [
+            0.5638888888888889,
+            0.16944444444444445,
+            0.11944444444444445,
+            0.14722222222222223
+          ],
+          "squared_distance_from_material": 0.0021186902268974994
+        }
+      }
+    },
+    "89": {
+      "answer": "C",
+      "method": "five-year arithmetic mean (not four growth intervals)",
+      "total": {
+        "exact": "120267",
+        "decimal": 120267.0
+      },
+      "mean": {
+        "exact": "120267/5",
+        "decimal": 24053.4
+      },
+      "rounding_mean_bounds": [
+        {
+          "exact": "240529/10",
+          "decimal": 24052.9
+        },
+        {
+          "exact": "240539/10",
+          "decimal": 24053.9
+        }
+      ]
+    },
+    "90": {
+      "answer": "C",
+      "method": "all alternatives: absolute gaps, declines, combined share, two-year growth",
+      "A_signed_gaps": {
+        "2018": {
+          "exact": "16266",
+          "decimal": 16266.0
+        },
+        "2019": {
+          "exact": "9119",
+          "decimal": 9119.0
+        },
+        "2020": {
+          "exact": "8617",
+          "decimal": 8617.0
+        },
+        "2021": {
+          "exact": "9090",
+          "decimal": 9090.0
+        },
+        "2022": {
+          "exact": "-10042",
+          "decimal": -10042.0
+        }
+      },
+      "A_years_abs_gap_above_10000": [
+        2018,
+        2022
+      ],
+      "B_declines": [
+        [
+          2022,
+          2
+        ],
+        [
+          2022,
+          3
+        ]
+      ],
+      "C_three_fuel_share": {
+        "exact": "54759/65737",
+        "decimal": 0.8330012017585225
+      },
+      "D_2022_over_2020_growth": {
+        "exact": "207/2419",
+        "decimal": 0.08557255064076065
+      }
+    }
+  },
+  "limitations": [
+    "源库没有本模块参考答案；这是编辑解答及计算核验，不是官方答案比对。",
+    "原PDF与大部分材料原图不在仓库；只能核对现存转写表、源对象与图形选项。",
+    "数列采用简洁一致规律；有限数列不可能排除任意插值。",
+    "文字检索与证据边界由人工阅读核对，程序中的事实标记不冒称自动语义审题。"
+  ],
+  "summary": {
+    "question_count": 35,
+    "questions_with_numeric_or_rule_computations": 33,
+    "manual_support_judgment_components": [
+      71,
+      72,
+      75,
+      80
+    ],
+    "source_objects_unchanged": true,
+    "shared_materials_consistent": true,
+    "all_table_cells_preserved": true,
+    "all_answer_keys_match": true,
+    "passed": true
+  }
+}

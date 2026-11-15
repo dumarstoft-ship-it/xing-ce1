@@ -1,0 +1,710 @@
+[
+ {
+  "number": 1,
+  "cited_pages": [
+   27
+  ],
+  "claims": [
+   {
+    "label": "新发展格局总体表述",
+    "variants": [
+     "以国内大循环为主体、国内国际双循环相互促进的新发展格局"
+    ],
+    "status": "所引页命中",
+    "cited_hits": [
+     27
+    ],
+    "other_hits": [
+     21,
+     63
+    ]
+   },
+   {
+    "label": "反对地方自我小循环",
+    "variants": [
+     "自我小循环",
+     "省内、市内、县内"
+    ],
+    "status": "讲义中无",
+    "cited_hits": [],
+    "other_hits": []
+   },
+   {
+    "label": "全国统一大市场",
+    "variants": [
+     "全国统一大市场"
+    ],
+    "status": "仅讲义其他页命中",
+    "cited_hits": [],
+    "other_hits": [
+     65
+    ]
+   }
+  ]
+ },
+ {
+  "number": 2,
+  "cited_pages": [
+   44
+  ],
+  "claims": [
+   {
+    "label": "劳动二重性=同一劳动两种规定",
+    "variants": [
+     "同一劳动的两种规定",
+     "同一劳动过程不可分割的两个方面"
+    ],
+    "status": "所引页命中",
+    "cited_hits": [
+     44
+    ],
+    "other_hits": []
+   },
+   {
+    "label": "二重性决定商品二因素",
+    "variants": [
+     "劳动的二重性，它决定了商品的二因素",
+     "决定了商品的二因素"
+    ],
+    "status": "所引页命中",
+    "cited_hits": [
+     44
+    ],
+    "other_hits": []
+   },
+   {
+    "label": "不是两次劳动",
+    "variants": [
+     "两次劳动"
+    ],
+    "status": "讲义中无",
+    "cited_hits": [],
+    "other_hits": []
+   }
+  ]
+ },
+ {
+  "number": 3,
+  "cited_pages": [
+   36
+  ],
+  "claims": [
+   {
+    "label": "全球治理倡议五项内容",
+    "variants": [
+     "奉行主权平等",
+     "遵守国际法治",
+     "践行多边主义",
+     "倡导以人为本",
+     "注重行动导向"
+    ],
+    "status": "所引页命中",
+    "cited_hits": [
+     36
+    ],
+    "other_hits": []
+   },
+   {
+    "label": "尊重文明多样性属全球文明倡议",
+    "variants": [
+     "共同倡导尊重世界文明多样性"
+    ],
+    "status": "所引页命中",
+    "cited_hits": [
+     36
+    ],
+    "other_hits": []
+   },
+   {
+    "label": "“核心理念”一词",
+    "variants": [
+     "核心理念"
+    ],
+    "status": "讲义中无",
+    "cited_hits": [],
+    "other_hits": []
+   }
+  ]
+ },
+ {
+  "number": 4,
+  "cited_pages": [
+   43
+  ],
+  "claims": [
+   {
+    "label": "社会存在决定社会意识",
+    "variants": [
+     "社会存在和社会意识的关系问题"
+    ],
+    "status": "所引页命中",
+    "cited_hits": [
+     43
+    ],
+    "other_hits": []
+   },
+   {
+    "label": "社会意识相对独立性",
+    "variants": [
+     "相对独立性",
+     "相对独立"
+    ],
+    "status": "讲义中无",
+    "cited_hits": [],
+    "other_hits": []
+   },
+   {
+    "label": "不同步/滞后",
+    "variants": [
+     "不完全同步",
+     "落后于社会存在"
+    ],
+    "status": "讲义中无",
+    "cited_hits": [],
+    "other_hits": []
+   }
+  ]
+ },
+ {
+  "number": 5,
+  "cited_pages": [
+   29
+  ],
+  "claims": [
+   {
+    "label": "目标导向与自由探索两条腿",
+    "variants": [
+     "坚持目标导向和自由探索“两条腿走路”",
+     "两条腿走路"
+    ],
+    "status": "所引页命中",
+    "cited_hits": [
+     29
+    ],
+    "other_hits": []
+   },
+   {
+    "label": "自由探索类评价：原创性和学术贡献",
+    "variants": [
+     "原创性和学术贡献"
+    ],
+    "status": "讲义中无",
+    "cited_hits": [],
+    "other_hits": []
+   },
+   {
+    "label": "目标导向类评价：解决重大科学问题的效能",
+    "variants": [
+     "解决重大科学问题的效能"
+    ],
+    "status": "讲义中无",
+    "cited_hits": [],
+    "other_hits": []
+   }
+  ]
+ },
+ {
+  "number": 6,
+  "cited_pages": [
+   32
+  ],
+  "claims": [
+   {
+    "label": "五个突出特性",
+    "variants": [
+     "连续性、创新性、统一性、包容性、和平性"
+    ],
+    "status": "所引页命中",
+    "cited_hits": [
+     32
+    ],
+    "other_hits": []
+   },
+   {
+    "label": "统一性含义：各民族文化融为一体",
+    "variants": [
+     "各民族文化融为一体"
+    ],
+    "status": "讲义中无",
+    "cited_hits": [],
+    "other_hits": []
+   },
+   {
+    "label": "包容性含义：兼收并蓄",
+    "variants": [
+     "兼收并蓄"
+    ],
+    "status": "讲义中无",
+    "cited_hits": [],
+    "other_hits": []
+   },
+   {
+    "label": "创新性含义：不惧新挑战",
+    "variants": [
+     "不惧新挑战",
+     "守正不守旧"
+    ],
+    "status": "讲义中无",
+    "cited_hits": [],
+    "other_hits": []
+   }
+  ]
+ },
+ {
+  "number": 7,
+  "cited_pages": [
+   40
+  ],
+  "claims": [
+   {
+    "label": "联系的特点",
+    "variants": [
+     "联系的特点：普遍性、客观性、条件性、多样性"
+    ],
+    "status": "所引页命中",
+    "cited_hits": [
+     40
+    ],
+    "other_hits": []
+   },
+   {
+    "label": "依据固有联系建立新的具体联系",
+    "variants": [
+     "固有的联系",
+     "固有联系",
+     "具体的联系",
+     "具体联系"
+    ],
+    "status": "讲义中无",
+    "cited_hits": [],
+    "other_hits": []
+   }
+  ]
+ },
+ {
+  "number": 8,
+  "cited_pages": [
+   43,
+   44
+  ],
+  "claims": [
+   {
+    "label": "生产关系三方面",
+    "variants": [
+     "生产资料所有制关系、生产中人与人的关系和产品分配关系"
+    ],
+    "status": "所引页命中",
+    "cited_hits": [
+     43
+    ],
+    "other_hits": []
+   },
+   {
+    "label": "生产力实体性要素",
+    "variants": [
+     "劳动者、劳动对象、劳动资料"
+    ],
+    "status": "所引页命中",
+    "cited_hits": [
+     43
+    ],
+    "other_hits": []
+   },
+   {
+    "label": "政治上层建筑",
+    "variants": [
+     "政治上层建筑（政治法律制度及设施和政治组织）"
+    ],
+    "status": "所引页命中",
+    "cited_hits": [
+     44
+    ],
+    "other_hits": []
+   }
+  ]
+ },
+ {
+  "number": 9,
+  "cited_pages": [
+   26,
+   27
+  ],
+  "claims": [
+   {
+    "label": "创新—动力",
+    "variants": [
+     "创新发展注重的是解决发展动力问题"
+    ],
+    "status": "所引页命中",
+    "cited_hits": [
+     26
+    ],
+    "other_hits": []
+   },
+   {
+    "label": "协调—不平衡",
+    "variants": [
+     "协调发展注重的是解决发展不平衡问题"
+    ],
+    "status": "所引页命中",
+    "cited_hits": [
+     26
+    ],
+    "other_hits": []
+   },
+   {
+    "label": "绿色—人与自然和谐共生",
+    "variants": [
+     "绿色发展注重的是解决人与自然和谐共生问题"
+    ],
+    "status": "所引页命中",
+    "cited_hits": [
+     26
+    ],
+    "other_hits": []
+   },
+   {
+    "label": "开放—内外联动",
+    "variants": [
+     "开放发展注重的是解决发展内外联动问题"
+    ],
+    "status": "所引页命中",
+    "cited_hits": [
+     26
+    ],
+    "other_hits": []
+   },
+   {
+    "label": "共享—公平正义",
+    "variants": [
+     "共享发展注重的是解决社会公平正义问题"
+    ],
+    "status": "所引页命中",
+    "cited_hits": [
+     26
+    ],
+    "other_hits": []
+   }
+  ]
+ },
+ {
+  "number": 10,
+  "cited_pages": [
+   74,
+   75,
+   77
+  ],
+  "claims": [
+   {
+    "label": "横琴：澳门经济适度多元",
+    "variants": [
+     "促进澳门经济适度多元发展"
+    ],
+    "status": "所引页命中",
+    "cited_hits": [
+     74,
+     75
+    ],
+    "other_hits": []
+   },
+   {
+    "label": "横琴：琴澳一体化",
+    "variants": [
+     "琴澳一体化"
+    ],
+    "status": "所引页命中",
+    "cited_hits": [
+     74,
+     75
+    ],
+    "other_hits": []
+   },
+   {
+    "label": "前海：深港现代服务业合作",
+    "variants": [
+     "前海",
+     "深港现代服务业"
+    ],
+    "status": "讲义中无",
+    "cited_hits": [],
+    "other_hits": []
+   },
+   {
+    "label": "南沙：面向世界的粤港澳全面合作",
+    "variants": [
+     "南沙",
+     "面向世界的粤港澳全面合作"
+    ],
+    "status": "讲义中无",
+    "cited_hits": [],
+    "other_hits": []
+   },
+   {
+    "label": "河套：深港科技创新合作",
+    "variants": [
+     "河套深港科技创新合作区",
+     "深港科技创新"
+    ],
+    "status": "讲义中无",
+    "cited_hits": [],
+    "other_hits": []
+   }
+  ]
+ },
+ {
+  "number": 11,
+  "cited_pages": [
+   94,
+   95
+  ],
+  "claims": [
+   {
+    "label": "宣告死亡普通期间4年",
+    "variants": [
+     "普通期间为4年"
+    ],
+    "status": "所引页命中",
+    "cited_hits": [
+     95
+    ],
+    "other_hits": []
+   },
+   {
+    "label": "申请冲突时应当宣告死亡",
+    "variants": [
+     "有的利害关系人申请宣告死亡，有的利害关系人申请宣告失踪，符合法律规定的宣告死亡条件的，人民法院应当宣告死亡"
+    ],
+    "status": "所引页命中",
+    "cited_hits": [
+     95
+    ],
+    "other_hits": []
+   },
+   {
+    "label": "死亡日期=判决作出之日",
+    "variants": [
+     "判决作出之日视为其死亡的日期"
+    ],
+    "status": "所引页命中",
+    "cited_hits": [
+     95
+    ],
+    "other_hits": []
+   },
+   {
+    "label": "被宣告死亡期间民事法律行为效力不受影响",
+    "variants": [
+     "不影响该自然人在被宣告死亡期间实施的民事法律行为的效力",
+     "被宣告死亡期间实施的民事法律行为"
+    ],
+    "status": "讲义中无",
+    "cited_hits": [],
+    "other_hits": []
+   }
+  ]
+ },
+ {
+  "number": 12,
+  "cited_pages": [
+   71,
+   72
+  ],
+  "claims": [
+   {
+    "label": "粤方言以广州话为代表",
+    "variants": [
+     "以广州话为代表"
+    ],
+    "status": "所引页命中",
+    "cited_hits": [
+     71
+    ],
+    "other_hits": []
+   },
+   {
+    "label": "梅州以客家方言为主",
+    "variants": [
+     "以客家方言为主的地区在粤北和粤东，包括梅州市"
+    ],
+    "status": "所引页命中",
+    "cited_hits": [
+     71
+    ],
+    "other_hits": []
+   },
+   {
+    "label": "闽方言含潮汕话、雷州话",
+    "variants": [
+     "闽方言包括潮汕话、雷州话"
+    ],
+    "status": "所引页命中",
+    "cited_hits": [
+     72
+    ],
+    "other_hits": []
+   }
+  ]
+ },
+ {
+  "number": 13,
+  "cited_pages": [
+   50,
+   51
+  ],
+  "claims": [
+   {
+    "label": "古田：思想建党、政治建军",
+    "variants": [
+     "思想上建党，政治上建军",
+     "思想建党、政治建军"
+    ],
+    "status": "所引页命中",
+    "cited_hits": [
+     50
+    ],
+    "other_hits": []
+   },
+   {
+    "label": "瓦窑堡：抗日民族统一战线策略",
+    "variants": [
+     "抗日民族统一战线的策略路线",
+     "抗日民族统一战线的策略方针"
+    ],
+    "status": "所引页命中",
+    "cited_hits": [
+     51
+    ],
+    "other_hits": []
+   },
+   {
+    "label": "洛川：全面抗战路线",
+    "variants": [
+     "全面抗战路线"
+    ],
+    "status": "讲义中无",
+    "cited_hits": [],
+    "other_hits": []
+   },
+   {
+    "label": "洛川：十大纲领",
+    "variants": [
+     "抗日救国十大纲领"
+    ],
+    "status": "所引页命中",
+    "cited_hits": [
+     51
+    ],
+    "other_hits": []
+   }
+  ]
+ },
+ {
+  "number": 14,
+  "cited_pages": [
+   107
+  ],
+  "claims": [
+   {
+    "label": "华龙一号：自主三代",
+    "variants": [
+     "我国自主三代核电技术"
+    ],
+    "status": "所引页命中",
+    "cited_hits": [
+     107
+    ],
+    "other_hits": []
+   },
+   {
+    "label": "华龙一号：压水堆",
+    "variants": [
+     "压水堆"
+    ],
+    "status": "讲义中无",
+    "cited_hits": [],
+    "other_hits": []
+   },
+   {
+    "label": "奋斗者号：全海深载人潜水器",
+    "variants": [
+     "奋斗者号：全海深载人潜水器"
+    ],
+    "status": "所引页命中",
+    "cited_hits": [
+     107
+    ],
+    "other_hits": []
+   },
+   {
+    "label": "雪龙2号",
+    "variants": [
+     "雪龙2"
+    ],
+    "status": "讲义中无",
+    "cited_hits": [],
+    "other_hits": []
+   },
+   {
+    "label": "C919：单通道/窄体",
+    "variants": [
+     "单通道",
+     "窄体"
+    ],
+    "status": "讲义中无",
+    "cited_hits": [],
+    "other_hits": []
+   },
+   {
+    "label": "C919：大型干线客机",
+    "variants": [
+     "C919：大型干线客机"
+    ],
+    "status": "所引页命中",
+    "cited_hits": [
+     107
+    ],
+    "other_hits": []
+   }
+  ]
+ },
+ {
+  "number": 15,
+  "cited_pages": [
+   97,
+   98
+  ],
+  "claims": [
+   {
+    "label": "资治通鉴",
+    "variants": [
+     "资治通鉴"
+    ],
+    "status": "所引页命中",
+    "cited_hits": [
+     97
+    ],
+    "other_hits": []
+   },
+   {
+    "label": "纪传体/编年体",
+    "variants": [
+     "纪传体",
+     "编年体"
+    ],
+    "status": "讲义中无",
+    "cited_hits": [],
+    "other_hits": []
+   },
+   {
+    "label": "通史/断代史",
+    "variants": [
+     "断代史",
+     "通史"
+    ],
+    "status": "讲义中无",
+    "cited_hits": [],
+    "other_hits": []
+   }
+  ]
+ }
+]

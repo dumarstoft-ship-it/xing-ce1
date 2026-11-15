@@ -1,0 +1,199 @@
+{
+ "current": {
+  "dx": 29,
+  "font": 28,
+  "r": 70,
+  "dy": 28,
+  "min_to_diameter_px": 4.3,
+  "min_to_circle_px": 11.7,
+  "cell_minus15": {
+   "text": "−15",
+   "circle": 3,
+   "to_diameter_px": 4.3,
+   "to_circle_px": 11.7
+  }
+ },
+ "recommended_keep_r70": {
+  "dx": 32,
+  "font": 24,
+  "r": 70,
+  "dy": 22,
+  "min_to_diameter_px": 25.3,
+  "min_to_circle_px": 23.9,
+  "cell_minus15": {
+   "text": "−15",
+   "circle": 3,
+   "to_diameter_px": 25.3,
+   "to_circle_px": 23.9
+  }
+ },
+ "r70_top3": [
+  {
+   "dx": 32,
+   "font": 24,
+   "r": 70,
+   "dy": 22,
+   "min_to_diameter_px": 25.3,
+   "min_to_circle_px": 23.9,
+   "cell_minus15": {
+    "text": "−15",
+    "circle": 3,
+    "to_diameter_px": 25.3,
+    "to_circle_px": 23.9
+   },
+   "min_clearance": 23.9
+  },
+  {
+   "dx": 31,
+   "font": 24,
+   "r": 70,
+   "dy": 22,
+   "min_to_diameter_px": 22.3,
+   "min_to_circle_px": 26.6,
+   "cell_minus15": {
+    "text": "−15",
+    "circle": 3,
+    "to_diameter_px": 22.3,
+    "to_circle_px": 26.6
+   },
+   "min_clearance": 22.3
+  },
+  {
+   "dx": 31,
+   "font": 24,
+   "r": 70,
+   "dy": 24,
+   "min_to_diameter_px": 22.3,
+   "min_to_circle_px": 23.7,
+   "cell_minus15": {
+    "text": "−15",
+    "circle": 3,
+    "to_diameter_px": 22.3,
+    "to_circle_px": 23.7
+   },
+   "min_clearance": 22.3
+  }
+ ],
+ "overall_top8": [
+  {
+   "dx": 38,
+   "font": 24,
+   "r": 84,
+   "dy": 26,
+   "min_to_diameter_px": 43.3,
+   "min_to_circle_px": 44.4,
+   "cell_minus15": {
+    "text": "−15",
+    "circle": 3,
+    "to_diameter_px": 43.3,
+    "to_circle_px": 44.4
+   },
+   "min_clearance": 43.3
+  },
+  {
+   "dx": 39,
+   "font": 24,
+   "r": 84,
+   "dy": 26,
+   "min_to_diameter_px": 46.3,
+   "min_to_circle_px": 41.8,
+   "cell_minus15": {
+    "text": "−15",
+    "circle": 3,
+    "to_diameter_px": 46.3,
+    "to_circle_px": 41.8
+   },
+   "min_clearance": 41.8
+  },
+  {
+   "dx": 38,
+   "font": 24,
+   "r": 84,
+   "dy": 28,
+   "min_to_diameter_px": 43.3,
+   "min_to_circle_px": 41.5,
+   "cell_minus15": {
+    "text": "−15",
+    "circle": 3,
+    "to_diameter_px": 43.3,
+    "to_circle_px": 41.5
+   },
+   "min_clearance": 41.5
+  },
+  {
+   "dx": 38,
+   "font": 24,
+   "r": 84,
+   "dy": 24,
+   "min_to_diameter_px": 41.3,
+   "min_to_circle_px": 47.1,
+   "cell_minus15": {
+    "text": "−15",
+    "circle": 3,
+    "to_diameter_px": 41.3,
+    "to_circle_px": 47.1
+   },
+   "min_clearance": 41.3
+  },
+  {
+   "dx": 39,
+   "font": 24,
+   "r": 84,
+   "dy": 24,
+   "min_to_diameter_px": 41.3,
+   "min_to_circle_px": 44.4,
+   "cell_minus15": {
+    "text": "−15",
+    "circle": 3,
+    "to_diameter_px": 41.3,
+    "to_circle_px": 44.4
+   },
+   "min_clearance": 41.3
+  },
+  {
+   "dx": 40,
+   "font": 24,
+   "r": 84,
+   "dy": 24,
+   "min_to_diameter_px": 41.3,
+   "min_to_circle_px": 41.7,
+   "cell_minus15": {
+    "text": "−15",
+    "circle": 3,
+    "to_diameter_px": 41.3,
+    "to_circle_px": 41.7
+   },
+   "min_clearance": 41.3
+  },
+  {
+   "dx": 37,
+   "font": 24,
+   "r": 84,
+   "dy": 24,
+   "min_to_diameter_px": 40.3,
+   "min_to_circle_px": 49.8,
+   "cell_minus15": {
+    "text": "−15",
+    "circle": 3,
+    "to_diameter_px": 40.3,
+    "to_circle_px": 49.8
+   },
+   "min_clearance": 40.3
+  },
+  {
+   "dx": 37,
+   "font": 24,
+   "r": 84,
+   "dy": 26,
+   "min_to_diameter_px": 40.3,
+   "min_to_circle_px": 47.1,
+   "cell_minus15": {
+    "text": "−15",
+    "circle": 3,
+    "to_diameter_px": 40.3,
+    "to_circle_px": 47.1
+   },
+   "min_clearance": 40.3
+  }
+ ]
+}

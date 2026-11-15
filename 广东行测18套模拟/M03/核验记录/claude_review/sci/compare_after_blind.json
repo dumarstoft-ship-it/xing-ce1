@@ -1,0 +1,28 @@
+{
+  "_meta": {
+    "paper": "M03 0.1.0 待审稿",
+    "module": "科学推理 第66—70题",
+    "reviewer": "Claude 外审（模块审读）",
+    "blind_file": "blind_answers.json（写于打开任何答案文件之前）",
+    "blind_status": "5题均为盲解。盲解期间看过的非答案图源：Q67 的 s21_p17_i04.svg（只含几何，desc 声明不含物理结论）；Q69 的 DOT/SVG 在写完盲解后才打开。",
+    "compared_against": [
+      "selection.json（66—70 的 answer/analysis/edits/stem_override/source_question/source_answer/verification）",
+      "答案与解析_待审.md（与 selection.json 一致）",
+      "交接_Claude.md 第三节",
+      "核验记录/science_independent_review.md、science_independent_check.json、science_independent_answers_before_compare.json、q69_foodweb_edges.json",
+      "模考/2026下半年广东卷_16-33季_AI可读/原图核对/s21_p17_i04.png（Q67 原图）、转写核验记录.json（Q68/Q69 源图转表记录）"
+    ]
+  },
+  "questions": {
+    "66": {"blind": "D", "confidence": 0.97, "editor": "D", "agree": true, "source_answer": "无", "verdict": "无问题",
+           "note": "漂浮/悬浮与同液面清晰（两杯液面同在像素第26行）；随机扫描2万组参数仅D恒真；解析完整。"},
+    "67": {"blind": "B", "confidence": 0.95, "editor": "B", "agree": true, "source_answer": "无", "verdict": "无问题（附可选优化）",
+           "note": "重绘图与原图核对一致；结论只依赖A落墙顶、B落竖直面且低于墙角，拓扑扫描2万组无反例；B轨迹起点切线向下约9°、A轨迹末段过陡均继承原图，不影响作答。"},
+    "68": {"blind": "C", "confidence": 0.93, "editor": "C", "agree": true, "source_answer": "无", "verdict": "合理分歧（呈现方式）/可选优化",
+           "note": "原子守恒、实际消耗1:2、O2为剩余物，C唯一；B、D改写必要且忠实；表格代替粒子图、选项A仍称'该微观示意图'，与广东2023卷以图考查不一致。"},
+    "69": {"blind": "B", "confidence": 0.90, "editor": "B", "agree": true, "source_answer": "无", "verdict": "必须修改（仅记录层面）+可选优化",
+           "note": "读图边集=DOT=源表=q69_foodweb_edges.json（11边，无增删反转）；交叉点等距四节点78.8pt且无节点；8条链、最高第五营养级。题干新增'箭头从被捕食者指向捕食者'未写入edits。"},
+    "70": {"blind": "B", "confidence": 0.85, "editor": "B", "agree": true, "source_answer": "无", "verdict": "必须修改（解析补证，不改答案）",
+           "note": "等高距100m（左缘'400'与'200'注记线之间有一条无注记线）；河道上段依次穿过400/300/200m；②山脊、③山谷；甲村区100—200m；指北针约48°，河流整体方位约169°（南偏东11°）。解析未给出'哪端高'的判据。"}
+  }
+}
