@@ -1,5 +1,48 @@
 [
  {
+  "asset_id": "s24_p11_i01",
+  "kind": "compose",
+  "source_path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s24_p11_i01.png",
+  "source_image_sha256": "0159d8493e9d1d983271f9c40ec6e5bee491aa0ebc6562d7a4141b31fa81249a",
+  "parts": [
+   {
+    "svg_path": "重绘/s24_p11_i01_扇形.svg",
+    "print_width_mm": 28.8
+   },
+   {
+    "png_path": "重绘/s24_p11_i01_选项.png",
+    "print_width_mm": 98.1,
+    "crop_px": [
+     0,
+     75,
+     500,
+     242
+    ]
+   }
+  ],
+  "overlay_path": "重绘/s24_p11_i01_扇形_叠图核对.png",
+  "method": "M02第49题。原图扇形半径约52像素，原尺寸印刷时半径约10mm，剪裁拐点落在约1mm的一段虚线里。题干扇形按原图坐标矢量重绘：四分之一圆、两条折边、剪裁虚线的四个顶点按像素拟合，放大约2.5倍印刷；选项区保留原像素、原尺寸。不增删任何信息。",
+  "comparison": {
+   "平均绝对灰度差": 24.94,
+   "原图深色像素被重绘覆盖率(±1px)": 0.9695,
+   "重绘深色像素落在原图笔画上的比例(±1px)": 0.9873
+  },
+  "overlay_legend": "叠图放大3倍：黑=两者重合，红=仅原图有，蓝=仅重绘有"
+ },
+ {
+  "asset_id": "s32_p12_i02",
+  "kind": "image",
+  "source_path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s32_p12_i02.png",
+  "source_image_sha256": "364f9c90935afb52a5a195d01420ae988ad2d262f6a36cf08f9647c7318e86f6",
+  "png_path": "重绘/s32_p12_i02_二值放大.png",
+  "print_width_mm": 150.0,
+  "method": "M02第50题。原图600×194像素，原尺寸印刷时每个面约5.9mm。线稿按原像素做4倍放大后二值化（不手工转录、不改动任何线条），印到150mm宽，每个面约7.5mm。",
+  "comparison": {
+   "缩回原尺寸后平均绝对灰度差": 1.65,
+   "深色像素交并比": 0.9768
+  }
+ },
+ {
   "asset_id": "s21_p18_i12",
   "source_path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s21_p18_i12.png",
   "source_image_sha256": "58298a24bc9705ddece45ce4254e859ab2f567e01975321a7af267035cbaa748",

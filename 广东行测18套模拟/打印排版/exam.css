@@ -115,6 +115,7 @@ p { margin: 0; }
   break-before: avoid;
 }
 .fig img { display: inline-block; }
+.fig-part + .fig-part { margin-top: 3mm; }
 
 /* ---------- 表 ---------- */
 .tbl { margin: 6pt 0 6pt; break-inside: avoid; }

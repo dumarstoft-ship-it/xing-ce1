@@ -320,8 +320,9 @@ class FigureSizer:
         wpx, hpx = Image.open(path).size
         bbox = None
         how = "按200dpi换算"
-        if block.get("asset_id") in self.mock:
-            bbox, how = self.mock[block["asset_id"]], "源PDF印刷尺寸（模考图片清单）"
+        aid = block.get("asset_id") or Path(block["path"]).stem   # 底稿有时省略asset_id，文件名即资产编号
+        if "模考/" in block["path"] and aid in self.mock:
+            bbox, how = self.mock[aid], "源PDF印刷尺寸（模考图片清单）"
         else:
             stem = Path(block["path"]).stem
             if "江浙行测_AI题库/images" in block["path"] and stem in self.jz:
@@ -432,18 +433,50 @@ REDRAWS: Redraws | None = None
 def figure_html(block: dict, sizer: FigureSizer, number, log: Log, in_material: bool = False) -> str:
     rec = REDRAWS.lookup(block, number, log) if REDRAWS else None
     if rec:
-        svg = (HERE / rec["svg_path"]).read_text(encoding="utf-8")
-        m = re.search(r'viewBox="0 0 ([\d.]+) ([\d.]+)"', svg)
-        w = rec["print_width_mm"]
-        h = w * float(m.group(2)) / float(m.group(1))
-        svg = re.sub(r'width="[\d.]+" height="[\d.]+"', f'width="{w:.2f}mm" height="{h:.2f}mm"', svg, count=1)
-        log.add(number, "题图", "改用按原图坐标的矢量重绘图", block["path"],
-                f"{rec['svg_path']}，{w:.1f}×{h:.1f}mm（核对见 重绘/重绘核对记录.json）")
-        return f'<div class="fig">{svg}</div>'
+        kind = rec.get("kind", "svg")
+        if kind == "svg":
+            html_part, w, h = _svg_part(rec["svg_path"], rec["print_width_mm"])
+            log.add(number, "题图", "改用按原图坐标的矢量重绘图", block["path"],
+                    f"{rec['svg_path']}，{w:.1f}×{h:.1f}mm（核对见 重绘/重绘核对记录.json）")
+            return f'<div class="fig">{html_part}</div>'
+        if kind == "image":
+            html_part, w, h = _png_part(rec["png_path"], rec["print_width_mm"])
+            log.add(number, "题图", "改用原像素放大二值化图", block["path"],
+                    f"{rec['png_path']}，{w:.1f}×{h:.1f}mm（核对见 重绘/重绘核对记录.json）")
+            return f'<div class="fig">{html_part}</div>'
+        if kind == "compose":
+            parts, desc = [], []
+            for part in rec["parts"]:
+                if "svg_path" in part:
+                    hp, w, h = _svg_part(part["svg_path"], part["print_width_mm"])
+                else:
+                    hp, w, h = _png_part(part["png_path"], part["print_width_mm"])
+                parts.append(f'<div class="fig-part">{hp}</div>')
+                desc.append(f"{part.get('svg_path') or part.get('png_path')} {w:.1f}×{h:.1f}mm")
+            log.add(number, "题图", "题干小图矢量重绘、选项原像素", block["path"],
+                    "；".join(desc) + "（核对见 重绘/重绘核对记录.json）")
+            return '<div class="fig">' + "".join(parts) + "</div>"
+        raise SystemExit(f"未知的重绘记录类型：{kind}")
     w, h, how = sizer.size_mm(block, in_material)
     src = (REPO / block["path"]).as_uri()
     log.add(number, "题图", "题图尺寸", block["path"], f"{w:.1f}×{h:.1f}mm（{how}）")
     return f'<div class="fig"><img src="{src}" style="width:{w:.2f}mm;height:{h:.2f}mm" alt=""></div>'
+
+
+def _svg_part(rel: str, width_mm: float) -> tuple[str, float, float]:
+    svg = (HERE / rel).read_text(encoding="utf-8")
+    m = re.search(r'viewBox="[-\d.]+ [-\d.]+ ([\d.]+) ([\d.]+)"', svg)
+    h = width_mm * float(m.group(2)) / float(m.group(1))
+    svg = re.sub(r'width="[\d.]+" height="[\d.]+"', f'width="{width_mm:.2f}mm" height="{h:.2f}mm"', svg, count=1)
+    return svg, width_mm, h
+
+
+def _png_part(rel: str, width_mm: float) -> tuple[str, float, float]:
+    from PIL import Image  # type: ignore
+    path = HERE / rel
+    wpx, hpx = Image.open(path).size
+    h = width_mm * hpx / wpx
+    return f'<img src="{path.as_uri()}" style="width:{width_mm:.2f}mm;height:{h:.2f}mm" alt="">', width_mm, h
 
 
 # ---- 表格 ----
@@ -650,7 +683,15 @@ def question_html(q: dict, sizer: FigureSizer, log: Log) -> str:
             log.add(n, "题干", "判断题题末加答题括号", last[-10:], last[-10:] + BRACKET)
     # 题号挂在第一段左侧；约6行以内的短题整题不跨页（长题仍可在题干与选项间分页，同粉笔样卷）
     num = f'<span class="num">{n}.</span>'
-    keep = " keep" if _estimated_lines(q) <= 6 else ""
+    # 资料分析题不整题保护：资料组是否在同一对开页由 spread_pass 负责，组内跨左右页不影响作答
+    has_fig = any(b["type"] == "figure" for b in q["stem"]) or \
+        any(b["type"] == "figure" for o in q["options"].values() for b in o)
+    if q.get("materials"):
+        keep = ""
+    elif has_fig:
+        keep = " keep"      # 带图的题整题不跨页（题干、题图、选项在同一页），避免题干被图挤成两半
+    else:
+        keep = " keep" if _estimated_lines(q) <= 6 else ""
     return (f'<div class="q{keep}" id="q{n}" data-n="{n}">{num}<div class="stem">' + "".join(stem_parts)
             + "</div>" + options_html(q, log, sizer) + "</div>")
 
