@@ -1,0 +1,89 @@
+name: Apply M01 Claude review revision
+on:
+  push:
+    branches: ['gpt/m01-claude-revision-20261115']
+    paths:
+      - '.github/workflows/m01-review-apply.yml'
+      - '广东行测18套模拟/M01/apply_claude_review_v3.py'
+      - '广东行测18套模拟/M01/review_v3_changes.json'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /.github/
+            /README.md
+            /协作原则_指月之指非月.md
+            /广东行测18套模拟/
+            /江浙行测_AI题库/questions.jsonl
+            /江浙行测_AI题库/images/
+            /模考/2026下半年广东卷_16-33季_AI可读/
+            /国考/言语理解/2016-2025/all.jsonl
+            /学习资料/政治理论常识/*.jsonl
+            !*.zip
+      - name: Apply checked revision
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('广东行测18套模拟/M01/apply_claude_review_v3.py')
+          s=p.read_text()
+          # Repair a single transport quote in the generated-table code string.
+          bad="+' |]))"
+          good="+' |']))"
+          assert s.count(bad) in (0,1)
+          if bad in s:
+              p.write_text(s.replace(bad,good,1))
+          PY
+          python '广东行测18套模拟/M01/apply_claude_review_v3.py'
+      - name: Repeat build and reproduce numerical audits
+        run: |
+          python - <<'PY'
+          import hashlib,json,subprocess,sys
+          from pathlib import Path
+          p=Path('广东行测18套模拟/M01')
+          names=['selection.json','paper.json','题目.jsonl','题本_待审.md','答案与解析_待审.md','来源登记.jsonl','核验报告.json']
+          def hashes():
+              return {n:hashlib.sha256((p/n).read_bytes()).hexdigest() for n in names}
+          before=hashes()
+          subprocess.run([sys.executable,str(p/'build_m01.py')],check=True)
+          assert before==hashes(), 'Repeat build changed content or review state'
+          runs={}
+          for name in ['quant_verify.py','data_solve_blind.py','science_verify.py','brute_51_55.py']:
+              s=p/'核验记录/claude_review'/name
+              r=subprocess.run([sys.executable,str(s)],capture_output=True,text=True,timeout=30)
+              assert r.returncode==0, r.stderr
+              runs[name]={'returncode':r.returncode,'stdout':r.stdout,'stderr':r.stderr}
+          report={'status':'PASS','version':'0.3.0','repeat_build_identical':True,'output_sha256':hashes(),'claude_scripts_rerun':runs,'limits':['These are reruns of existing scripts, not a fresh independent model review.','Political distractor edits and explanatory revisions still await delta review.']}
+          (p/'核验记录/修订构建复检.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+          cfg=json.loads((p/'paper.json').read_text())
+          assert cfg['version']=='0.3.0' and cfg['missing_numbers']==[]
+          assert not (p/'打印版/M01_题本_打印版.pdf').exists()
+          assert (p/'打印版/历史版本/M01_题本_v0.2.0_旧版勿打印.pdf').is_file()
+          PY
+      - name: Commit revised outputs and retire one-time workflows
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git rm -- '.github/workflows/m01-review-workspace.yml' '.github/workflows/m01-review-apply.yml'
+          git add -- README.md '广东行测18套模拟'
+          git diff --cached --stat
+          git commit -m 'M01 v0.3.0: 落实Claude审核意见，修正45/50与干扰项，保全90题答案并归档旧打印稿'
+          git push origin HEAD:gpt/m01-claude-revision-20261115
+      - uses: actions/upload-artifact@v4
+        with:
+          name: M01-v0.3.0-reviewed-revision
+          path: |
+            README.md
+            广东行测18套模拟/M01/
+            广东行测18套模拟/README.md
+          retention-days: 7
