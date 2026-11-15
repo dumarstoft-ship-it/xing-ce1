@@ -1,6 +1,6 @@
 {
   "paper_id": "M02",
-  "checked_version": "0.1.0",
+  "checked_version": "0.2.0",
   "content_validation": "PASS",
   "target_count": 90,
   "actual_count": 90,
@@ -48,7 +48,7 @@
   "errors": [],
   "is_complete_paper": true,
   "print_ready": false,
-  "external_review": "pending_claude",
+  "external_review": "claude_reviewed_v0.1.0_revisions_pending_recheck",
   "printing_status": "not_started",
   "source_file_sha256": {
     "江浙行测_AI题库/questions.jsonl": "07b748dd27d44132d7734279306f724981a89de028d19d229c989f00fd9b7c93",

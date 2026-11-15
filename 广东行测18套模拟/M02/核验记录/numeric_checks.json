@@ -1,4 +1,5 @@
 {
+  "version": "0.2.0",
   "status": "PASS",
   "paper_id": "M02",
   "checks": {
@@ -13,20 +14,37 @@
       "answer_value": 19
     },
     "32": {
-      "first_differences": [
-        6,
-        11,
-        17,
-        24,
-        32
+      "pairs": [
+        [
+          10,
+          15
+        ],
+        [
+          18,
+          16
+        ],
+        [
+          22,
+          21
+        ],
+        [
+          19,
+          33
+        ]
       ],
-      "second_differences": [
-        5,
-        6,
-        7,
-        8
+      "sums": [
+        25,
+        34,
+        43,
+        52
       ],
-      "answer_value": 102
+      "option_sums": [
+        106,
+        89,
+        63,
+        61
+      ],
+      "answer_value": 4615
     },
     "33": {
       "even_cubes_plus_alternating_one": [
@@ -241,11 +259,11 @@
       }
     ],
     "67": {
-      "initial": "U/(Rp+R)",
-      "S2": "U/(Rp+R/2)",
-      "S3": "U/R",
-      "both": "2U/R",
-      "parameter_cases": 8
+      "initial": "U/(a+R)",
+      "joined_parallel": "R/2",
+      "unjoined_parallel": "R(R+b)/(2R+b)",
+      "both_topologies_parameter_cases": 32,
+      "false_option": "A"
     },
     "68": {
       "assumptions": [
@@ -266,9 +284,15 @@
       "false_statement": "甲地的纬度高于丁地"
     },
     "71": {
-      "web_increment": 253.76582278481013,
-      "offshore_increment": 23.712351945854483,
-      "difference": 230.05347083895563
+      "kind": "text_retrieval",
+      "option_checks": {
+        "A": "matches_bank_registration",
+        "B": "reverses_direction_and_subject",
+        "C": "changes_target_enterprises",
+        "D": "confuses_quota_and_flow"
+      },
+      "editor_answer": "A",
+      "limit": "人工语义核验，不伪称数值程序证明政策理解"
     },
     "72": {
       "current_share_percent": 5.282608695652174,
@@ -409,6 +433,15 @@
         30500.6
       ],
       "sales_all_more_than_two_times_admin": true
+    },
+    "61": {
+      "premise_form": "P -> not Q; Q",
+      "conclusion": "not P",
+      "matched_option": "A",
+      "option_B": "affirming_consequent",
+      "option_C": "predicate_scope_shift",
+      "option_D": "denying_antecedent",
+      "logic_check": true
     }
   },
   "limits": [

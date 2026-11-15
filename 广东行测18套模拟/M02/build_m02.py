@@ -76,6 +76,8 @@ def clean_blocks(value, base=''):
         if b.get('type') in ('figure', 'image'):
             b['type'] = 'figure'
             b['path'] = (Path(base)/b['path']).as_posix()
+        for key in ('caption','asset_id','source_asset_id','source_pages','source_spans'):
+            b.pop(key,None)
         out.append(b)
     return out
 
@@ -282,8 +284,10 @@ def main():
             answer_lines.append(f'命题主题：讲义第{pages}页。{origin}。')
             for ref in p.get('references',[]):
                 answer_lines.append(f'- [{ref["title"]}]({ref["url"]})：{ref["locator"]}。')
+        if r.get('source_notice'):
+            answer_lines.append('题源说明：'+r['source_notice'])
         if r.get('edits'):
-            answer_lines.append('编辑处理：'+'；'.join(e.get('description', e.get('text', e.get('type',''))) if isinstance(e,dict) else str(e) for e in r['edits']))
+            answer_lines.append('编辑处理：'+'；'.join((e.get('description', e.get('text', e.get('type',''))) if isinstance(e,dict) else str(e)).rstrip('。；;') for e in r['edits'])+'。')
         source_rows.append({
             'paper_id':'M02','number':r['number'],'source_id':r['source_id'],
             'source_bank':r['source_bank'],'source_file':sf,'source_file_sha256':file_hashes.get(sf),
@@ -293,7 +297,7 @@ def main():
             'locators':r.get('source_locators'), 'provenance':r.get('provenance'),
             'source_answer':r.get('source_answer'),'editor_answer':r['answer'],
             'answer_origin':origin,'verification':r['verification'],'edits':r.get('edits',[]),
-            'selection_reason':r['selection_reason'],'asset_paths':asset_paths(q),
+            'selection_reason':r['selection_reason'],'asset_paths':asset_paths(q),'source_notice':r.get('source_notice'),
         })
     (HERE/'答案与解析_待审.md').write_text('\n\n'.join(answer_lines)+'\n',encoding='utf-8')
     write_jsonl(HERE/'来源登记.jsonl',source_rows)

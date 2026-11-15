@@ -1,0 +1,406 @@
+[
+  {
+    "number": 25,
+    "source_id": "ZJ2025-A类-035",
+    "reason": "替换逆向下文推断为正向细节判断，训练机制、结果与证据边界；不因旧题有错而撤下。",
+    "old_record": {
+      "number": 25,
+      "section": "言语理解与表达",
+      "subsection": "",
+      "question_type": "single_choice",
+      "source_bank": "jiangzhe",
+      "source_file": "江浙行测_AI题库/questions.jsonl",
+      "source_id": "ZJ2025-A类-035",
+      "source_question": {
+        "question_id": "ZJ2025-A类-035",
+        "paper_id": "ZJ2025",
+        "province": "浙江",
+        "year": 2025,
+        "paper_type": "A类",
+        "section": "言语理解与表达",
+        "original_number": 35,
+        "instruction": null,
+        "stem": "产业链是指各个产业部门之间基于一定的技术经济联系和时空布局关系而客观形成的链条式关联形态。产业链\n涵盖产品生产或服务提供的全过程，包括动力提供、原材料生产、技术研发、中间品制造、终端产品制造乃至\n流通和消费等环节，是产业组织、生产过程和价值实现的统一。“产业链现代化”是产业现代化内涵的延伸、\n细化，其实质是用当代科学技术和先进产业组织方式来改造传统产业、培育新兴产业，使产业链具备高端链接\n能力、自主可控能力、全球资源配置能力和领先于国际市场的竞争力。\n接下来应该不会重点谈论：",
+        "options": {
+          "A": "衡量产业链现代化水平的客观标准",
+          "B": "提升产业链现代化水平的主要途径",
+          "C": "产业链现代化与经济发展目标的关系",
+          "D": "社会分工推动产业链组织深化的过程"
+        },
+        "options_mode": "text_or_mixed",
+        "content": "产业链是指各个产业部门之间基于一定的技术经济联系和时空布局关系而客观形成的链条式关联形态。产业链\n涵盖产品生产或服务提供的全过程，包括动力提供、原材料生产、技术研发、中间品制造、终端产品制造乃至\n流通和消费等环节，是产业组织、生产过程和价值实现的统一。“产业链现代化”是产业现代化内涵的延伸、\n细化，其实质是用当代科学技术和先进产业组织方式来改造传统产业、培育新兴产业，使产业链具备高端链接\n能力、自主可控能力、全球资源配置能力和领先于国际市场的竞争力。\n接下来应该不会重点谈论：\nA.衡量产业链现代化水平的客观标准 B.提升产业链现代化水平的主要途径\nC.产业链现代化与经济发展目标的关系 D.社会分工推动产业链组织深化的过程",
+        "figures": [],
+        "materials": [],
+        "material_ids": [],
+        "source": {
+          "repository": "https://github.com/dumarstoft-ship-it/xingce",
+          "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+          "file": "2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+          "blob_sha": "422a8d5a7c9c379fe3b10fc81eb6424f17b4bdbb",
+          "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2025%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
+          "pdf_pages": [
+            7,
+            8
+          ],
+          "regions": [
+            {
+              "page": 7,
+              "bbox": [
+                28.879276275634766,
+                690.9729614257812,
+                547.3163452148438,
+                766.9088134765625
+              ]
+            },
+            {
+              "page": 8,
+              "bbox": [
+                43.24169921875,
+                91.76618957519531,
+                475.3787536621094,
+                138.66831970214844
+              ]
+            }
+          ],
+          "page_numbering": "PDF physical page, 1-based"
+        },
+        "quality_flags": [],
+        "notes": []
+      },
+      "source_answer": "D",
+      "answer": "D",
+      "analysis": "文段从一般产业链概念推进到产业链现代化，并给出其手段和能力要求。接下来讨论如何衡量、如何提升、与经济发展目标有何关系，均能沿这一重点展开。D转回社会分工怎样推动产业链形成和深化，是较一般的组织演变话题，与结尾聚焦的现代化最远。这里问“不会重点谈论”，不是断言下文绝对不能提到社会分工。",
+      "selection_reason": "下文推断的否定设问；区分已铺垫的现代化主题与退回一般形成史。",
+      "edits": [
+        {
+          "type": "layout_only",
+          "description": "合并源PDF行末硬换行，保留列举、对话、设问分段；详见格式核验日志。"
+        }
+      ],
+      "verification": {
+        "status": "editor_checked_pending_claude",
+        "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
+        "source_answer_available": true,
+        "source_answer_agreement": true,
+        "checked_on": "2026-11-15",
+        "external_review": "pending_claude"
+      },
+      "stem_override": "产业链是指各个产业部门之间基于一定的技术经济联系和时空布局关系而客观形成的链条式关联形态。产业链涵盖产品生产或服务提供的全过程，包括动力提供、原材料生产、技术研发、中间品制造、终端产品制造乃至流通和消费等环节，是产业组织、生产过程和价值实现的统一。“产业链现代化”是产业现代化内涵的延伸、细化，其实质是用当代科学技术和先进产业组织方式来改造传统产业、培育新兴产业，使产业链具备高端链接能力、自主可控能力、全球资源配置能力和领先于国际市场的竞争力。\n接下来应该不会重点谈论：",
+      "source_locators": {
+        "original_number": 35,
+        "pages": [
+          7,
+          8
+        ],
+        "source": {
+          "repository": "https://github.com/dumarstoft-ship-it/xingce",
+          "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+          "file": "2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+          "blob_sha": "422a8d5a7c9c379fe3b10fc81eb6424f17b4bdbb",
+          "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2025%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
+          "pdf_pages": [
+            7,
+            8
+          ],
+          "regions": [
+            {
+              "page": 7,
+              "bbox": [
+                28.879276275634766,
+                690.9729614257812,
+                547.3163452148438,
+                766.9088134765625
+              ]
+            },
+            {
+              "page": 8,
+              "bbox": [
+                43.24169921875,
+                91.76618957519531,
+                475.3787536621094,
+                138.66831970214844
+              ]
+            }
+          ],
+          "page_numbering": "PDF physical page, 1-based"
+        }
+      },
+      "source_answer_reference": {
+        "file": "江浙行测_AI题库/answers.jsonl",
+        "source": {
+          "repository": "https://github.com/dumarstoft-ship-it/xingce",
+          "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+          "file": "2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）解析.pdf",
+          "blob_sha": "a4ae2b755ed2f64f3014b4f63b4f8f267775f2f8",
+          "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2025%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89%E8%A7%A3%E6%9E%90.pdf",
+          "pdf_pages": [
+            16
+          ],
+          "regions": [
+            {
+              "page": 16,
+              "bbox": [
+                90.0,
+                509.25201416015625,
+                505.32000732421875,
+                692.5717163085938
+              ]
+            }
+          ],
+          "page_numbering": "PDF physical page, 1-based"
+        },
+        "quality_flags": []
+      }
+    },
+    "status": "withdrawn_from_M02",
+    "user_done": "unknown",
+    "do_not_auto_reuse": true
+  },
+  {
+    "number": 32,
+    "source_id": "gd-mock-2026h2-s18-q32",
+    "reason": "用多位数分组替代一条常规二级差数列，增加识别计数对象的变化，不为答案配平。",
+    "old_record": {
+      "number": 32,
+      "section": "数量关系",
+      "subsection": "数字推理",
+      "question_type": "single_choice",
+      "source_bank": "guangdong_mock",
+      "source_file": "模考/2026下半年广东卷_16-33季_AI可读/全部题目.jsonl",
+      "source_id": "gd-mock-2026h2-s18-q32",
+      "source_question": {
+        "id": "gd-mock-2026h2-s18-q32",
+        "season": 18,
+        "section": "数量关系",
+        "number": 32,
+        "material_id": null,
+        "stem": [
+          {
+            "type": "text",
+            "text": "12，18，29，46，70，（    ）"
+          }
+        ],
+        "options": {
+          "A": [
+            {
+              "type": "text",
+              "text": "102"
+            }
+          ],
+          "B": [
+            {
+              "type": "text",
+              "text": "103"
+            }
+          ],
+          "C": [
+            {
+              "type": "text",
+              "text": "104"
+            }
+          ],
+          "D": [
+            {
+              "type": "text",
+              "text": "105"
+            }
+          ]
+        },
+        "source_pages": [
+          8
+        ],
+        "source_spans": [
+          {
+            "pdf_page": 8,
+            "bbox_pt": [
+              52.402,
+              714.001,
+              215.37,
+              726.42
+            ]
+          },
+          {
+            "pdf_page": 8,
+            "bbox_pt": [
+              68.048,
+              736.857,
+              440.662,
+              749.034
+            ]
+          }
+        ],
+        "source_asset_ids": [],
+        "answer": null,
+        "source": {
+          "source_name": "2026下半年省考第十八季行测模考大赛（广东卷）.pdf",
+          "source_sha256": "2886bc82e8b3f9ca9694b565170253d436599452c81bf17a2a0e46600a69caec",
+          "pages": 23
+        },
+        "material": null
+      },
+      "source_answer": null,
+      "answer": "A",
+      "analysis": "一阶差为6、11、17、24；二阶差为5、6、7，下一项应为8，所以下一个一阶差是32，缺项为70+32=102，选A。",
+      "selection_reason": "二级差连续递增，要求将缺项代回检验。",
+      "edits": [],
+      "verification": {
+        "status": "editor_checked_pending_claude",
+        "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
+        "source_answer_available": false,
+        "source_answer_agreement": null,
+        "checked_on": "2026-11-15",
+        "external_review": "pending_claude"
+      },
+      "source_locators": {
+        "original_number": 32,
+        "pages": [
+          8
+        ],
+        "source": {
+          "source_name": "2026下半年省考第十八季行测模考大赛（广东卷）.pdf",
+          "source_sha256": "2886bc82e8b3f9ca9694b565170253d436599452c81bf17a2a0e46600a69caec",
+          "pages": 23
+        }
+      }
+    },
+    "status": "withdrawn_from_M02",
+    "user_done": "unknown",
+    "do_not_auto_reuse": true
+  },
+  {
+    "number": 61,
+    "source_id": "ZJ2023-A类-107",
+    "reason": "撤下B、D均可支持结论的争议题，换成结构相似题；按同一谓词、否定方向和论证形式独立核验。",
+    "old_record": {
+      "number": 61,
+      "section": "判断推理",
+      "subsection": "逻辑判断",
+      "question_type": "single_choice",
+      "source_bank": "jiangzhe",
+      "source_file": "江浙行测_AI题库/questions.jsonl",
+      "source_id": "ZJ2023-A类-107",
+      "source_question": {
+        "question_id": "ZJ2023-A类-107",
+        "paper_id": "ZJ2023",
+        "province": "浙江",
+        "year": 2023,
+        "paper_type": "A类",
+        "section": "判断推理",
+        "original_number": 107,
+        "instruction": null,
+        "stem": "研究人员开发了一种可以从指尖上的汗水中获取能量的新设备。在10小时的睡眠期间内，无需任何机械能量输\n入的情况下，该设备每平方厘米可产生300毫焦耳的能量；只需按一下手指，就能额外产生30毫焦耳的能量。\n这意味着可自我维持的可穿戴电子产品向更实用、更方便、更大众化的方向迈出了重要一步。\n以下哪项如果为真，最能支持上述论述？",
+        "options": {
+          "A": "新设备产生的电能可被储存在小电容器中，并在需要时释放到其他设备",
+          "B": "此前基于汗水收集能量的设备需要佩戴者大量运动出足够的汗来激活发电",
+          "C": "手指是身体24小时的“汗水工厂”，产生的汗量是其他部位的100到1000倍",
+          "D": "一名受试者在10小时睡眠中收集了近400毫焦耳的能量，这足以为一块电子表提供24小时电力"
+        },
+        "options_mode": "text_or_mixed",
+        "content": "研究人员开发了一种可以从指尖上的汗水中获取能量的新设备。在10小时的睡眠期间内，无需任何机械能量输\n入的情况下，该设备每平方厘米可产生300毫焦耳的能量；只需按一下手指，就能额外产生30毫焦耳的能量。\n这意味着可自我维持的可穿戴电子产品向更实用、更方便、更大众化的方向迈出了重要一步。\n以下哪项如果为真，最能支持上述论述？\nA.新设备产生的电能可被储存在小电容器中，并在需要时释放到其他设备\nB.此前基于汗水收集能量的设备需要佩戴者大量运动出足够的汗来激活发电\nC.手指是身体24小时的“汗水工厂”，产生的汗量是其他部位的100到1000倍\nD.一名受试者在10小时睡眠中收集了近400毫焦耳的能量，这足以为一块电子表提供24小时电力",
+        "figures": [],
+        "materials": [],
+        "material_ids": [],
+        "source": {
+          "repository": "https://github.com/dumarstoft-ship-it/xingce",
+          "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+          "file": "2023年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+          "blob_sha": "5bcc6163c999c3910d10f36f6d8bea8a57df1417",
+          "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
+          "pdf_pages": [
+            20
+          ],
+          "regions": [
+            {
+              "page": 20,
+              "bbox": [
+                23.62849998474121,
+                309.8287048339844,
+                547.3163452148438,
+                437.0364685058594
+              ]
+            }
+          ],
+          "page_numbering": "PDF physical page, 1-based"
+        },
+        "quality_flags": [],
+        "notes": []
+      },
+      "source_answer": "D",
+      "answer": "D",
+      "analysis": "结论是可穿戴设备自我维持向实用迈进，关键在产生的能量是否够设备使用。D给出睡眠收能足以维持电子表24小时的供需对应，直接支持实用性。A说明能储存但未说明够不够，B只比较激活条件，C只说明汗液多而未将其转成可用电量，均不如D直接。",
+      "selection_reason": "把能量产出连接到实际设备需求，避免只证明供能来源存在。",
+      "edits": [
+        {
+          "type": "layout_only",
+          "description": "合并源PDF行末硬换行，保留列举、对话、设问分段；详见格式核验日志。"
+        }
+      ],
+      "verification": {
+        "status": "editor_checked_pending_claude",
+        "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
+        "source_answer_available": true,
+        "source_answer_agreement": true,
+        "checked_on": "2026-11-15",
+        "external_review": "pending_claude"
+      },
+      "stem_override": "研究人员开发了一种可以从指尖上的汗水中获取能量的新设备。在10小时的睡眠期间内，无需任何机械能量输入的情况下，该设备每平方厘米可产生300毫焦耳的能量；只需按一下手指，就能额外产生30毫焦耳的能量。这意味着可自我维持的可穿戴电子产品向更实用、更方便、更大众化的方向迈出了重要一步。\n以下哪项如果为真，最能支持上述论述？",
+      "source_locators": {
+        "original_number": 107,
+        "pages": [
+          20
+        ],
+        "source": {
+          "repository": "https://github.com/dumarstoft-ship-it/xingce",
+          "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+          "file": "2023年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+          "blob_sha": "5bcc6163c999c3910d10f36f6d8bea8a57df1417",
+          "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
+          "pdf_pages": [
+            20
+          ],
+          "regions": [
+            {
+              "page": 20,
+              "bbox": [
+                23.62849998474121,
+                309.8287048339844,
+                547.3163452148438,
+                437.0364685058594
+              ]
+            }
+          ],
+          "page_numbering": "PDF physical page, 1-based"
+        }
+      },
+      "source_answer_reference": {
+        "file": "江浙行测_AI题库/answers.jsonl",
+        "source": {
+          "repository": "https://github.com/dumarstoft-ship-it/xingce",
+          "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+          "file": "2023年浙江省公务员录用考试《行测》真题（A类）（解析）.pdf",
+          "blob_sha": "9c7d7f35278953cbcb7177a79f339c0a866a1c23",
+          "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E8%A7%A3%E6%9E%90%EF%BC%89.pdf",
+          "pdf_pages": [
+            31
+          ],
+          "regions": [
+            {
+              "page": 31,
+              "bbox": [
+                54.0,
+                464.5834655761719,
+                544.8090209960938,
+                740.2334594726562
+              ]
+            }
+          ],
+          "page_numbering": "PDF physical page, 1-based"
+        },
+        "quality_flags": []
+      }
+    },
+    "status": "withdrawn_from_M02",
+    "user_done": "unknown",
+    "do_not_auto_reuse": true
+  }
+]

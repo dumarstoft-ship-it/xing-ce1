@@ -8,7 +8,11 @@ checks={}
 def put(n,v):checks[str(n)]=v
 assert [9,7,11,3,19,-13]==[9]+[9+sum(-2*(-2)**k for k in range(i)) for i in range(1,6)]
 put(31,{'differences':[-2,4,-8,16,-32],'answer_value':19})
-put(32,{'first_differences':[6,11,17,24,32],'second_differences':[5,6,7,8],'answer_value':102})
+pairs=[(x//100,x%100) for x in [1015,1816,2221,1933]]
+assert [a+b for a,b in pairs]==[25,34,43,52]
+candidates=[2977,5831,3726,4615];totals=[x//100+x%100 for x in candidates]
+assert totals==[106,89,63,61]
+put(32,{'pairs':pairs,'sums':[a+b for a,b in pairs],'option_sums':totals,'answer_value':4615})
 assert [i**3+(-1)**j for j,i in enumerate([2,4,6,8,10])]==[9,63,217,511,1001]
 put(33,{'even_cubes_plus_alternating_one':[9,63,217,511,1001]})
 put(34,{'rewritten_fractions':['4/1','6/3','8/5','10/7','12/9','14/11'],'next':str(F(14,11))})
@@ -80,11 +84,18 @@ for f in pred:
 assert [i for i,r in enumerate(res) if r['entails_cutting']]==[3];put(62,res)
 for U,r,rp in product([2,6],[1,4],[1,5]):
  I=F(U,r+rp);assert F(U,r+rp+1)<I;assert F(U,1)/(F(r,2)+rp)>I;assert F(U,r)>I;assert F(2*U,r)>I
-put(67,{'initial':'U/(Rp+R)','S2':'U/(Rp+R/2)','S3':'U/R','both':'2U/R','parameter_cases':8})
+cases=0
+for u,r,a,b in product([2,6],[1,4],[1,5],[2,7]):
+ for joined in [False,True]:
+  parallel=F(r,2) if joined else F(r*(r+b),2*r+b)
+  initial=F(u,a+r)
+  assert F(u,a+r+1)<initial and F(u,1)/(a+parallel)>initial and F(u,r)>initial and F(u,1)/parallel>initial
+  cases+=1
+put(67,{'initial':'U/(a+R)','joined_parallel':'R/2','unjoined_parallel':'R(R+b)/(2R+b)','both_topologies_parameter_cases':cases,'false_option':'A'})
 put(68,{'assumptions':['no_initial_undissolved_sugar','A_B_C_same_temperature','heating_no_evaporation_no_decomposition'],'sugar_and_water_unchanged_during_heating':True})
 put(70,{'day_minus_night_h':[1.5,0,3,-2],'latitude_absolute_order':'丙>丁>甲>乙','false_statement':'甲地的纬度高于丁地'})
 inc_web=1215*.264/1.264;inc_off=154*.182/1.182
-put(71,{'web_increment':inc_web,'offshore_increment':inc_off,'difference':inc_web-inc_off});assert abs(inc_web-inc_off-230.05347084)<1e-7
+put(71,{'kind':'text_retrieval','option_checks':{'A':'matches_bank_registration','B':'reverses_direction_and_subject','C':'changes_target_enterprises','D':'confuses_quota_and_flow'},'editor_answer':'A','limit':'人工语义核验，不伪称数值程序证明政策理解'})
 put(72,{'current_share_percent':1215/23000*100,'prior_share_percent':(1215/1.264)/(23000/1.161)*100,'delta_pp':(1215/23000-(1215/1.264)/(23000/1.161))*100})
 put(73,{'national_increment_trillion_rmb':9.1*.098/1.098/.387})
 put(74,{'prior_offshore_100m_usd':154/1.182})
@@ -109,6 +120,7 @@ put(88,{'monthly_sales':diff(sales),'monthly_finance':diff(finance),'growth_in_m
 put(89,{'ratio':(sales[-1]+admin[-1]+finance[-1])/(sales[0]+admin[0]+finance[0])})
 assert all(s>2*a for s,a in zip(diff(sales),diff(admin)))
 put(90,{'monthly_sales':diff(sales),'monthly_admin':diff(admin),'monthly_finance':diff(finance),'equity_months2_to6':[round(a-l,3) for a,l in zip(assets,liabilities)],'sales_all_more_than_two_times_admin':True})
-report={'status':'PASS','paper_id':'M02','checks':checks,'limits':['有限枚举核验计数和条件模型，不能证明政策表述、言语最优项或图形规律的绝对唯一性。','本脚本不是Claude独立审核；原材料统计事实未作为外部经济数据逐项核实。']}
+put(61,{'premise_form':'P -> not Q; Q','conclusion':'not P','matched_option':'A','option_B':'affirming_consequent','option_C':'predicate_scope_shift','option_D':'denying_antecedent','logic_check':all(not((not p or not q) and q) or not p for p,q in product([False,True],repeat=2))})
+report={'version':'0.2.0','status':'PASS','paper_id':'M02','checks':checks,'limits':['有限枚举核验计数和条件模型，不能证明政策表述、言语最优项或图形规律的绝对唯一性。','本脚本不是Claude独立审核；原材料统计事实未作为外部经济数据逐项核实。']}
 (HERE/'numeric_checks.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print('PASS: numerical/logical checks',len(checks))

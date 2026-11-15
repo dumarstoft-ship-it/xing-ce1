@@ -12,25 +12,38 @@
     "selection_reason": "覆盖新近全会，同时辨清根本性任务与关键环节的不同层次。",
     "source_question": null,
     "source_answer": null,
-    "edits": [],
+    "edits": [
+      {
+        "type": "source_correction",
+        "description": "核对讲义原页，将从严治吏定位由第10页更正为第9页；公报全文两项表述成立。",
+        "revision": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "按用户讲义主题原创；逐项检查概念与证据，时政、法律和专门事实另列实际核对的一手或政府发布依据。",
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "provenance": {
       "kind": "original",
       "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
       "book_pages": [
         6,
-        10
+        9
       ],
       "references": [
         {
           "title": "中国共产党第二十届中央委员会第五次全体会议公报",
           "url": "https://www.samr.gov.cn/jjz/ywdt/art/2026/art_039a84dda36040b980419f03fc874e23.html",
-          "locator": "2026年10月29日通过；根本性任务、从严治吏、主体、政治建设统领及党章地位",
+          "locator": "公报“增强党性”段、“从严治吏”段；均已读取全文核实。讲义分别见第6、9页。",
           "checked_on": "2026-11-15"
         }
       ]
@@ -53,10 +66,17 @@
     "source_answer": null,
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "按用户讲义主题原创；逐项检查概念与证据，时政、法律和专门事实另列实际核对的一手或政府发布依据。",
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "provenance": {
       "kind": "original",
@@ -77,17 +97,30 @@
     "source_id": "M02-ORIG-003",
     "stem": "把马克思主义基本原理同中华优秀传统文化相结合，意味着二者在结合中相互成就，而不是把传统文化的全部内容原封不动地搬入现代社会。",
     "options": {},
-    "answer": "正确",
-    "analysis": "正确。“第二个结合”不是简单拼接，强调以新的理论视野激活优秀传统文化并推动现代转化。题干同时保留“优秀”这一选择与创造性转化要求，不等于照搬历史上的所有观念和制度。",
-    "selection_reason": "文化理论判断兼顾结合与转化的边界，避免把传承理解为复原。",
+    "answer": "错误",
+    "analysis": "错误。题干把结合的前提和结果颠倒了：二者在价值追求等方面原本具有契合性，才有有机结合的基础；在结合过程中相互激活、促进，才实现互相成就。不能把结合带来的成果前置为结合发生的条件。依据为2023年6月2日文化传承发展座谈会讲话关于“两个结合”的论述。",
+    "selection_reason": "区分结合之所以可能的基础与结合后产生的成果，不用极端否定词提示判断。",
     "source_question": null,
     "source_answer": null,
-    "edits": [],
+    "edits": [
+      {
+        "type": "review_revision",
+        "description": "去掉极端否定的送分提示，改考前提与结果的关系；答案随题意调整，不为打乱对错顺序。",
+        "revision": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "editor_revised_pending_delta_review",
       "method": "按用户讲义主题原创；逐项检查概念与证据，时政、法律和专门事实另列实际核对的一手或政府发布依据。",
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "pending"
+      }
     },
     "provenance": {
       "kind": "original",
@@ -107,7 +140,13 @@
       ]
     },
     "figures": [],
-    "materials": []
+    "materials": [],
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "“第二个结合”的前提是马克思主义与中华优秀传统文化互相成就，其结果是二者彼此契合。"
+      }
+    ]
   },
   {
     "number": 4,
@@ -124,10 +163,17 @@
     "source_answer": null,
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "按用户讲义主题原创；逐项检查概念与证据，时政、法律和专门事实另列实际核对的一手或政府发布依据。",
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "provenance": {
       "kind": "original",
@@ -149,21 +195,34 @@
     "stem": "依据党的二十届五中全会公报，下列关于持之以恒推进全面从严治党的表述，正确的是（　）。",
     "options": {
       "A": "以党的组织建设为统领，全面推进党的各方面建设",
-      "B": "党的各级组织都承担主体职责，需要体系化加强不同层级和领域的党组织建设",
-      "C": "由纪检监察机关代替党委（党组）承担全面监督责任",
+      "B": "党的各级组织承担全面从严治党的主体职责，组织建设须贯通不同层级与领域",
+      "C": "在党内监督中，党委（党组）履行监督责任，纪检监察机关履行主体责任",
       "D": "以党的纪律处分条例作为全党的根本行为规范"
     },
     "answer": "B",
-    "analysis": "B符合公报对主体和组织体系的要求。A把政治建设的统领地位换成组织建设；C把不同主体的监督职责合并替代；D把党章的根本地位换成了一部具体党内法规。三项均是主体、层级或制度地位错置，而不是因为出现某个政治关键词就可以判对。",
+    "analysis": "B正确，公报全文明确各级组织的主体地位及各层级、各领域组织建设要求。A把政治建设的统领地位换成组织建设；C将党委（党组）主体责任与纪检监察机关监督责任对调；D将党章的根本规范地位换成具体党内法规。公报引用经全文核实，无须因审核时未取得全文而改为另一文件。C中的区分是党内监督职责任务，不否认纪检机关作为党组织对本单位也承担全面从严治党主体责任。",
     "selection_reason": "以原文核心概念的实质替换构造干扰项，不使用夸张绝对词。",
     "source_question": null,
     "source_answer": null,
-    "edits": [],
+    "edits": [
+      {
+        "type": "review_revision",
+        "description": "保留已核实的公报依据；用两类监督责任对调替换“代替”的明显提示。",
+        "revision": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "editor_revised_pending_delta_review",
       "method": "按用户讲义主题原创；逐项检查概念与证据，时政、法律和专门事实另列实际核对的一手或政府发布依据。",
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "pending"
+      }
     },
     "provenance": {
       "kind": "original",
@@ -180,6 +239,12 @@
           "url": "https://www.samr.gov.cn/jjz/ywdt/art/2026/art_039a84dda36040b980419f03fc874e23.html",
           "locator": "2026年10月29日通过；根本性任务、从严治吏、主体、政治建设统领及党章地位",
           "checked_on": "2026-11-15"
+        },
+        {
+          "title": "《中国共产党纪律检查机关监督执纪工作规则》第十三条释义",
+          "url": "https://www.ccdi.gov.cn/djfg/fgsy/202003/t20200326_214284.html",
+          "locator": "党委（党组）主体责任与纪检监察机关监督责任",
+          "checked_on": "2026-11-15"
         }
       ]
     },
@@ -194,22 +259,55 @@
     "source_id": "M02-ORIG-006",
     "stem": "2026年广东省高质量发展大会以制造业与服务业协同发展为主题。下列举措中，最直接体现“两业协同融合”的是（　）。",
     "options": {
-      "A": "制造企业增加相同生产线，扩大现有标准化产品的产量",
-      "B": "商贸企业建设大型购物中心，增加本地休闲消费供给",
-      "C": "设计服务企业与制造企业联合开发定制产品，并把检测、运维服务嵌入产品全生命周期",
-      "D": "生产企业将旧厂房出售给房地产企业，主要依靠资产处置获取当期收益"
+      "A": [
+        {
+          "type": "text",
+          "text": "装备制造企业面向用户提供设备全生命周期运维方案——服务业制造化"
+        }
+      ],
+      "B": [
+        {
+          "type": "text",
+          "text": "工业设计企业委托工厂生产其自主设计的品牌产品——制造业服务化"
+        }
+      ],
+      "C": [
+        {
+          "type": "text",
+          "text": "原材料生产企业由单纯供货转向提供产品及专业解决方案——制造业服务化"
+        }
+      ],
+      "D": [
+        {
+          "type": "text",
+          "text": "电商企业利用用户数据推出自有品牌产品并委托制造——制造业服务化"
+        }
+      ]
     },
     "answer": "C",
-    "analysis": "C使设计、检测、运维等服务进入制造的研发生产和使用环节，形成产品与服务共同供给，直接体现协同融合。A主要是制造规模扩大，B主要是消费服务供给增加，D是资产处置，均没有呈现两类产业在生产价值链上的协作。选项中的企业行为为命题情境，不冒称真实项目。",
-    "selection_reason": "用产业关系而非产业名称判断两业协同，覆盖当年广东会议主题。",
+    "analysis": "C正确。制造业服务化是在制造能力基础上向设计、运维、解决方案等服务延伸；服务业制造化是研发设计、电商等服务主体利用技术、数据或渠道优势向产品制造环节拓展。A也是制造业服务化，标签反了；B、D则是服务业制造化，并不要求服务企业必须自建工厂，委托制造同样可以完成这种拓展。四项均涉及制造与服务，必须判断主体及延伸方向，不能只找同时出现两个产业名称的一项。",
+    "selection_reason": "四项均涉及制造与服务，须根据主体及延伸方向区分制造业服务化和服务业制造化。",
     "source_question": null,
     "source_answer": null,
-    "edits": [],
+    "edits": [
+      {
+        "type": "review_revision",
+        "description": "接受弱干扰项问题，但不改成孤立背诵讲话原句；用双向延伸的概念归类检验理解。",
+        "revision": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "editor_revised_pending_delta_review",
       "method": "按用户讲义主题原创；逐项检查概念与证据，时政、法律和专门事实另列实际核对的一手或政府发布依据。",
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "pending"
+      }
     },
     "provenance": {
       "kind": "original",
@@ -221,21 +319,21 @@
       ],
       "references": [
         {
-          "title": "广东省高质量发展大会讲话实录（2026）",
-          "url": "https://da.gd.gov.cn/portal_home/content/10408",
-          "locator": "2026年2月24日；制造业与服务业协同发展的主题及内涵",
-          "checked_on": "2026-11-15"
-        },
-        {
           "title": "广东省推动制造业与服务业协同融合发展2026年行动方案",
           "url": "https://www.gzwxb.gov.cn/context/contextId/215610",
-          "locator": "2026年3月公布；总要求及第十、十一项，制造业服务化与服务业制造化",
+          "locator": "第十项制造业服务化、第十一项服务业制造化；实际读取全文",
           "checked_on": "2026-11-15"
         }
       ]
     },
     "figures": [],
-    "materials": []
+    "materials": [],
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "《广东省推动制造业与服务业协同融合发展2026年行动方案》提出，促进制造业服务化和服务业制造化。下列对有关举措的归类，正确的是（　）。"
+      }
+    ]
   },
   {
     "number": 7,
@@ -245,22 +343,55 @@
     "source_id": "M02-ORIG-007",
     "stem": "某县评价产业转型时，既看到少数企业调整期的经营困难，也看到技术升级、产品质量改善等积极因素已在整体发展中占据主导地位，因此判断总体态势向好。这一判断最直接体现了（　）。",
     "options": {
-      "A": "在复杂事物中，解决主要矛盾即可代替对其他矛盾的分析",
-      "B": "把握矛盾的主要方面，并在看到主流时不忽略支流",
-      "C": "事物的数量增加本身就标志着其根本性质已经改变",
-      "D": "事物内部各方面的地位相同，应当赋予相同判断权重"
+      "A": [
+        {
+          "type": "text",
+          "text": "发展主要体现为更新部分的增加，新技术的采用意味着原有技术已经失去合理性"
+        }
+      ],
+      "B": [
+        {
+          "type": "text",
+          "text": "否定不是把新旧事物截然割裂，而是在克服局限时保留和发展合理因素"
+        }
+      ],
+      "C": [
+        {
+          "type": "text",
+          "text": "肯定与否定相互联系，因而应按照相同的比例保留和替换原有技术"
+        }
+      ],
+      "D": [
+        {
+          "type": "text",
+          "text": "旧事物中仍有积极因素，说明此次改造属于原有状态的延续，而不是发展环节"
+        }
+      ]
     },
     "answer": "B",
-    "analysis": "题干在评价事物整体态势，依据是积极因素占据主导，同时承认局部困难，体现主要方面与次要方面的辩证关系，选B。它不是在许多待解决任务中寻找最主要的那一个矛盾。A还错误地把抓主要矛盾说成可以不看其他矛盾；C混淆量变与质变；D否认主次地位差异。",
-    "selection_reason": "把判断性质的主要方面与处理任务的主要矛盾区分开。",
+    "analysis": "B正确。辩证否定的实质是扬弃，即克服旧事物的局限，同时保留并发展其中有生命力的因素。题干不是简单给旧生产线加设备，也不是把旧结构清空后全部重建。A将新技术出现等同于旧技术全部失去合理性；C把辩证关系误写为数量上的平均分配；D因为存在继承便否认发展，割裂了发展与联系。改造的合理性取决于各部分实际作用，不取决于保留与淘汰的固定比例。",
+    "selection_reason": "在生产改造情境中理解扬弃，不把继承与创新、保留与克服互相割裂。",
     "source_question": null,
     "source_answer": null,
-    "edits": [],
+    "edits": [
+      {
+        "type": "review_revision",
+        "description": "不再重复M01同题位的矛盾主次情境，改为扬弃的机制辨析；不强制全套政治题位重排。",
+        "revision": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "editor_revised_pending_delta_review",
       "method": "按用户讲义主题原创；逐项检查概念与证据，时政、法律和专门事实另列实际核对的一手或政府发布依据。",
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "pending"
+      }
     },
     "provenance": {
       "kind": "original",
@@ -268,10 +399,23 @@
       "book_pages": [
         41
       ],
-      "references": []
+      "references": [
+        {
+          "title": "学习运用否定之否定规律",
+          "url": "https://www.jssjw.gov.cn/art/2024/4/23/art_435_28914.html",
+          "locator": "关于辩证否定既克服又保留、扬弃的说明；辅以用户讲义第41页",
+          "checked_on": "2026-11-15"
+        }
+      ]
     },
     "figures": [],
-    "materials": []
+    "materials": [],
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "某企业改造传统生产线时，保留仍具精度和稳定性优势的机械结构，淘汰落后的控制模块，并结合数字技术重新组织生产流程。对这种改造方式的理解，最符合辩证否定观的是（　）。"
+      }
+    ]
   },
   {
     "number": 8,
@@ -284,19 +428,32 @@
       "A": "企业依据劳动贡献支付职工绩效奖金——初次分配",
       "B": "政府运用税收收入发放基本生活救助——第三次分配",
       "C": "个人出于自愿向公益慈善项目捐赠——再分配",
-      "D": "企业向投资者分配生产经营收益——政府再分配"
+      "D": "企业向投资者分配生产经营收益——再分配"
     },
     "answer": "A",
-    "analysis": "工资、奖金和生产要素参与经营成果分配属于初次分配，A正确。B是政府调节形成的再分配，C是自愿公益慈善的第三次分配，D把经营收益分配错归政府再分配。区分依据是机制和主体，不是款项发放的先后时间。",
+    "analysis": "工资、奖金和生产要素参与经营成果分配属于初次分配，A正确。B是政府调节形成的再分配，C是自愿公益慈善的第三次分配，D把经营收益分配错归再分配。区分依据是机制和主体，不是款项发放的先后时间。",
     "selection_reason": "用实际收入流动辨别分配机制，不把序数名称当时间顺序。",
     "source_question": null,
     "source_answer": null,
-    "edits": [],
+    "edits": [
+      {
+        "type": "review_revision",
+        "description": "删去干扰项自带的“政府”提示，保留分配机制辨别。",
+        "revision": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "editor_revised_pending_delta_review",
       "method": "按用户讲义主题原创；逐项检查概念与证据，时政、法律和专门事实另列实际核对的一手或政府发布依据。",
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "pending"
+      }
     },
     "provenance": {
       "kind": "original",
@@ -335,12 +492,25 @@
     "selection_reason": "将会议内容、规划期与两阶段目标连接核验。",
     "source_question": null,
     "source_answer": null,
-    "edits": [],
+    "edits": [
+      {
+        "type": "source_correction",
+        "description": "将两步走战略对应的报告章节更正为第三部分。",
+        "revision": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "按用户讲义主题原创；逐项检查概念与证据，时政、法律和专门事实另列实际核对的一手或政府发布依据。",
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "provenance": {
       "kind": "original",
@@ -360,7 +530,7 @@
         {
           "title": "党的二十大报告",
           "url": "https://app.www.gov.cn/govdata/gov/202210/25/493662/article.html",
-          "locator": "第十一部分：总体国家安全观；亦含两步走战略安排",
+          "locator": "第三部分“新时代新征程中国共产党的使命任务”：分两步走战略安排；非第十一部分。",
           "checked_on": "2026-11-15"
         }
       ]
@@ -388,10 +558,17 @@
     "source_answer": null,
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "按用户讲义主题原创；逐项检查概念与证据，时政、法律和专门事实另列实际核对的一手或政府发布依据。",
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "provenance": {
       "kind": "original",
@@ -425,16 +602,29 @@
       "D": "若胎儿娩出时为死体，应先将预留份额认定为该胎儿自己的遗产"
     },
     "answer": "C",
-    "analysis": "民法典第16条对继承、受赠等胎儿利益作特别保护，但胎儿娩出时为死体的，民事权利能力自始不存在。C的活体出生后死亡不同于娩出死体，不能适用“自始不存在”。A否定特别保护，B混淆权利能力与行为能力。D中死体胎儿并未取得该权利，预留份额不能先算作其遗产再继承；第1155条另规定此时按法定继承办理。",
+    "analysis": "民法典第16条对继承、受赠等胎儿利益作特别保护，但胎儿娩出时为死体的，民事权利能力自始不存在。C的活体出生后死亡不同于娩出死体，不能适用“自始不存在”。A否定特别保护，B混淆权利能力与行为能力。D中死体胎儿并未取得该权利，预留份额不能先算作其遗产再继承；第1155条另规定此时按法定继承办理。 依《最高人民法院关于适用〈中华人民共和国民法典〉继承编的解释（一）》第三十一条，胎儿出生后死亡的，为其保留的遗产份额由其继承人继承；娩出时是死体的，则由原被继承人的继承人继承。",
     "selection_reason": "通过活体出生后死亡与娩出死体的对照，检验法律条件边界。",
     "source_question": null,
     "source_answer": null,
-    "edits": [],
+    "edits": [
+      {
+        "type": "analysis_revision",
+        "description": "补齐活体出生后死亡时预留份额的继承后果。",
+        "revision": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "editor_revised_pending_delta_review",
       "method": "按用户讲义主题原创；逐项检查概念与证据，时政、法律和专门事实另列实际核对的一手或政府发布依据。",
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "pending"
+      }
     },
     "provenance": {
       "kind": "original",
@@ -447,6 +637,12 @@
           "title": "中华人民共和国民法典",
           "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_60fb3863b7364b759123a42d1df568ca.html",
           "locator": "第13、16条；第1155条，胎儿利益保护及预留继承份额",
+          "checked_on": "2026-11-15"
+        },
+        {
+          "title": "最高人民法院关于适用《中华人民共和国民法典》继承编的解释（一）",
+          "url": "https://www.court.gov.cn/fabu/xiangqing/282091.html",
+          "locator": "第三十一条；已核对最高法全文",
           "checked_on": "2026-11-15"
         }
       ]
@@ -472,12 +668,25 @@
     "selection_reason": "广东重大工程的空间定位，区分相邻跨江通道。",
     "source_question": null,
     "source_answer": null,
-    "edits": [],
+    "edits": [
+      {
+        "type": "source_correction",
+        "description": "删除来源定位中的过时距离，不把同一省情主题视为用户一定做过本题。",
+        "revision": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "按用户讲义主题原创；逐项检查概念与证据，时政、法律和专门事实另列实际核对的一手或政府发布依据。",
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "provenance": {
       "kind": "original",
@@ -489,7 +698,7 @@
         {
           "title": "深中通道项目（中山市政府）",
           "url": "https://www.zs.gov.cn/zschq/gkmlpt/content/2/2610/post_2610092.html?jump=true",
-          "locator": "东隧西桥；起于深圳向西跨珠江口，在中山登陆；南距港珠澳大桥约38公里",
+          "locator": "东隧西桥，深圳一侧出发向西跨珠江口、在中山登陆。仅用于稳定区位，不引用其早期距离数据。",
           "checked_on": "2026-11-15"
         }
       ]
@@ -517,10 +726,17 @@
     "source_answer": null,
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "按用户讲义主题原创；逐项检查概念与证据，时政、法律和专门事实另列实际核对的一手或政府发布依据。",
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "provenance": {
       "kind": "original",
@@ -562,10 +778,17 @@
     "source_answer": null,
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "按用户讲义主题原创；逐项检查概念与证据，时政、法律和专门事实另列实际核对的一手或政府发布依据。",
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "provenance": {
       "kind": "original",
@@ -606,10 +829,17 @@
     "source_answer": null,
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "按用户讲义主题原创；逐项检查概念与证据，时政、法律和专门事实另列实际核对的一手或政府发布依据。",
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "provenance": {
       "kind": "original",
@@ -691,15 +921,27 @@
       {
         "type": "layout_only",
         "description": "合并源PDF行末硬换行，保留列举、对话、设问分段；详见格式核验日志。"
+      },
+      {
+        "type": "source_correction",
+        "description": "在解析与来源登记中明确标注网友回忆版的证据边界。",
+        "revision": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "stem_override": "评论工作者不仅是当下文艺实践的参与者、见证者，更是实践的学生。要紧贴当代文艺实际，置身文艺现场，发现规律、揭示本质，言之有物，言之成理，避免 ____ 。\n填入画横线部分最恰当的一项是：",
     "source_locators": {
@@ -755,7 +997,8 @@
         "page_numbering": "PDF physical page, 1-based"
       },
       "quality_flags": []
-    }
+    },
+    "source_notice": "浙江2025年网友回忆版；本轮未取得可逐字核对的原卷，不将题库参考答案称为官方答案。"
   },
   {
     "number": 17,
@@ -819,15 +1062,27 @@
       {
         "type": "layout_only",
         "description": "合并源PDF行末硬换行，保留列举、对话、设问分段；详见格式核验日志。"
+      },
+      {
+        "type": "source_correction",
+        "description": "在解析与来源登记中明确标注网友回忆版的证据边界。",
+        "revision": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "initial_disagreement_resolved",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "stem_override": "任何事业的成功，都不是一蹴而就的，没有前面的 ____ 、铺路垫石，就没有后面的显山露水、出彩出色。越是长久基业、长远大事，越离不开“甘坐冷板凳，甘吃清苦饭”的“种树人”默默付出，这种无私奉献精神自古及今 ____ ，并被共产党人不断发扬光大。\n依次填入画横线部分最恰当的一项是：",
     "source_locators": {
@@ -883,7 +1138,8 @@
         "page_numbering": "PDF physical page, 1-based"
       },
       "quality_flags": []
-    }
+    },
+    "source_notice": "浙江2025年网友回忆版；本轮未取得可逐字核对的原卷，不将题库参考答案称为官方答案。"
   },
   {
     "number": 18,
@@ -918,12 +1174,19 @@
     "selection_reason": "识别科学论证中的程度边界；可检验不等于绝无造假。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "source_locators": {
       "original_number": null,
@@ -996,12 +1259,19 @@
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "stem_override": "巍巍华山阻住了奔腾南来的黄河，逼其90度大拐弯。原来被高原土层 ____ 着的黄河，一旦向东越过三门峡进入华北平原，顿时就变成了在平地上 ____ 的“野马”，成了到处滚动、狂奔的地上河，一会儿从东北方向流入渤海，一会儿又从东南方向夺取淮河河道注入黄海。万年千年间，黄河携带的泥沙渐渐 ____ 出了美丽富饶的华北平原。\n依次填入画横线处最恰当的一项是：",
     "source_locators": {
@@ -1102,12 +1372,19 @@
     "selection_reason": "治标与治本的时间指向相反，需要成语对偶但不机械逐字匹配。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "source_locators": {
       "original_number": null,
@@ -1180,12 +1457,19 @@
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "stem_override": "在江苏，自动驾驶已成为创新技术重塑物流运输产业的重要载体。搭载多类型传感器的智慧重型卡车，一旦切换到智能辅助驾驶状态，驾驶员就变身为安全员，只需坐在车上监管，智慧重型卡车会根据实时路况减速、避让或变道。除了智慧重型卡车，应用于港口的自动驾驶集装箱卡车也已完成技术验证的初始阶段，驶入了大规模商业应用的快车道。行驶在物流园区与制造业企业之间的自动驾驶物流车，则在智驾系统助力下，实现了物流业与制造业的深度融合。\n这段文字重在说明：",
     "source_locators": {
@@ -1308,12 +1592,19 @@
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "stem_override": "口口相传的经验是讲故事的人的灵感来源。在劳动的氛围中讲故事，是一种交流方式。每一个讲故事的人都会在故事中留下自己的痕迹，就像制陶人会在陶器上留下自己的印记一样。人在放松的状态下听故事，内心会想记下这些故事，并有对他人转述故事的愿望，这就构成了听故事的人与讲故事的人之间的关系。讲故事的人就像智者一样，能讲出自己的人生经验，也能讲出他人的经验、历史的经验，他们能让故事的火把生活的灯芯点燃。\n这段文字中“在故事中留下自己的痕迹”的含义最有可能是：",
     "source_locators": {
@@ -1414,12 +1705,19 @@
     "selection_reason": "目的与工具分层：平台建设服务于价值核算，而非把工具本身当主旨。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "source_locators": {
       "original_number": null,
@@ -1492,12 +1790,19 @@
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "stem_override": "在众多用于建筑的保温材料中，蛭石因其良好的保温性能而广受青睐。蛭石是一种含镁的水铝硅酸盐次生变质矿物，具有二维层状结构，受热时会失水膨胀，因形状类似水蛭而得名。经高温煅烧后，蛭石体积能瞬间膨胀十几倍，每块膨胀蛭石里有很多毛细孔，且每个毛细孔都是微纳米级孔径。这些小空隙就是一个个保温空间。蛭石膨胀倍数越高，空隙越发达，保温性能也就越好。更重要的是，蛭石在生产加工过程中对生态环境污染很小，产品废弃后还能回收再利用，非常符合建筑领域十分推崇的可持续发展理念。\n最适合做这段文字标题的是：",
     "source_locators": {
@@ -1560,148 +1865,58 @@
     "section": "言语理解与表达",
     "subsection": "",
     "question_type": "single_choice",
-    "source_bank": "jiangzhe",
-    "source_file": "江浙行测_AI题库/questions.jsonl",
-    "source_id": "ZJ2025-A类-035",
+    "source_bank": "guokao_verbal",
+    "source_file": "国考/言语理解/2016-2025/all.jsonl",
+    "source_id": "GKYY-2022-057",
     "source_question": {
-      "question_id": "ZJ2025-A类-035",
-      "paper_id": "ZJ2025",
-      "province": "浙江",
-      "year": 2025,
-      "paper_type": "A类",
+      "id": "GKYY-2022-057",
+      "year": 2022,
       "section": "言语理解与表达",
-      "original_number": 35,
-      "instruction": null,
-      "stem": "产业链是指各个产业部门之间基于一定的技术经济联系和时空布局关系而客观形成的链条式关联形态。产业链\n涵盖产品生产或服务提供的全过程，包括动力提供、原材料生产、技术研发、中间品制造、终端产品制造乃至\n流通和消费等环节，是产业组织、生产过程和价值实现的统一。“产业链现代化”是产业现代化内涵的延伸、\n细化，其实质是用当代科学技术和先进产业组织方式来改造传统产业、培育新兴产业，使产业链具备高端链接\n能力、自主可控能力、全球资源配置能力和领先于国际市场的竞争力。\n接下来应该不会重点谈论：",
+      "passage": null,
+      "stem": "研究发现，人体存在一种细胞清洁过程，被称为分子伴侣介导的自噬（CMA）。CMA和阿尔兹海默症之间存在动态的相互作用。CMA的效率会随着人类年龄的增长而下降，导致人体内有害蛋白质积累成不溶性团块，形成有毒蛋白质聚集体，从而损害细胞，导致阿尔兹海默症症状的出现。而早期的阿尔兹海默症也会损害CMA，使CMA活性显著降低。为此，研究人员开发出了一种新药，该药物通过提高CMA关键成分的受体水平来重振CMA效率，从而改善小鼠记忆力，显示出治疗阿尔兹海默症的潜力。\n根据这段文字，以下说法正确的是：",
       "options": {
-        "A": "衡量产业链现代化水平的客观标准",
-        "B": "提升产业链现代化水平的主要途径",
-        "C": "产业链现代化与经济发展目标的关系",
-        "D": "社会分工推动产业链组织深化的过程"
+        "A": "新药物能够减缓阿尔兹海默症的发展",
+        "B": "新药物的功效是通过提高CMA效率来实现的",
+        "C": "阿尔兹海默症抑制了CMA的发生",
+        "D": "抑制有害蛋白质积累能够提高记忆力"
       },
-      "options_mode": "text_or_mixed",
-      "content": "产业链是指各个产业部门之间基于一定的技术经济联系和时空布局关系而客观形成的链条式关联形态。产业链\n涵盖产品生产或服务提供的全过程，包括动力提供、原材料生产、技术研发、中间品制造、终端产品制造乃至\n流通和消费等环节，是产业组织、生产过程和价值实现的统一。“产业链现代化”是产业现代化内涵的延伸、\n细化，其实质是用当代科学技术和先进产业组织方式来改造传统产业、培育新兴产业，使产业链具备高端链接\n能力、自主可控能力、全球资源配置能力和领先于国际市场的竞争力。\n接下来应该不会重点谈论：\nA.衡量产业链现代化水平的客观标准 B.提升产业链现代化水平的主要途径\nC.产业链现代化与经济发展目标的关系 D.社会分工推动产业链组织深化的过程",
-      "figures": [],
-      "materials": [],
-      "material_ids": [],
-      "source": {
-        "repository": "https://github.com/dumarstoft-ship-it/xingce",
-        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
-        "file": "2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
-        "blob_sha": "422a8d5a7c9c379fe3b10fc81eb6424f17b4bdbb",
-        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2025%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
-        "pdf_pages": [
-          7,
-          8
-        ],
-        "regions": [
-          {
-            "page": 7,
-            "bbox": [
-              28.879276275634766,
-              690.9729614257812,
-              547.3163452148438,
-              766.9088134765625
-            ]
-          },
-          {
-            "page": 8,
-            "bbox": [
-              43.24169921875,
-              91.76618957519531,
-              475.3787536621094,
-              138.66831970214844
-            ]
-          }
-        ],
-        "page_numbering": "PDF physical page, 1-based"
-      },
-      "quality_flags": [],
+      "answer": "B",
+      "answer_candidates": [
+        "B"
+      ],
+      "answer_status": "single",
       "notes": []
     },
-    "source_answer": "D",
-    "answer": "D",
-    "analysis": "文段从一般产业链概念推进到产业链现代化，并给出其手段和能力要求。接下来讨论如何衡量、如何提升、与经济发展目标有何关系，均能沿这一重点展开。D转回社会分工怎样推动产业链形成和深化，是较一般的组织演变话题，与结尾聚焦的现代化最远。这里问“不会重点谈论”，不是断言下文绝对不能提到社会分工。",
-    "selection_reason": "下文推断的否定设问；区分已铺垫的现代化主题与退回一般形成史。",
+    "source_answer": "B",
+    "answer": "B",
+    "analysis": "B对应文段完整机制：药物提高CMA关键成分的受体水平，恢复CMA效率，进而在小鼠中改善记忆表现。A把“显示治疗潜力”扩大为已经证实能够减缓疾病发展；C把CMA活性降低扩大为CMA过程被抑制发生；D把特定药物、特定模型下的结果概括成一般因果。应按文段区分作用机制、已观察结果和应用潜力，不把动物试验中的效果直接外推为临床疗效。",
+    "selection_reason": "替换逆向下文推断为正向细节判断，训练机制、结果与证据边界；不因旧题有错而撤下。",
     "edits": [
       {
-        "type": "layout_only",
-        "description": "合并源PDF行末硬换行，保留列举、对话、设问分段；详见格式核验日志。"
+        "type": "source_replacement",
+        "description": "替换逆向下文推断为正向细节判断，训练机制、结果与证据边界；不因旧题有错而撤下。",
+        "revision": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
-      "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
+      "status": "editor_revised_pending_delta_review",
+      "method": "先按题面独立判断，再核对现存源答案（如有）；不沿用撤下题的外审状态。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
-    },
-    "stem_override": "产业链是指各个产业部门之间基于一定的技术经济联系和时空布局关系而客观形成的链条式关联形态。产业链涵盖产品生产或服务提供的全过程，包括动力提供、原材料生产、技术研发、中间品制造、终端产品制造乃至流通和消费等环节，是产业组织、生产过程和价值实现的统一。“产业链现代化”是产业现代化内涵的延伸、细化，其实质是用当代科学技术和先进产业组织方式来改造传统产业、培育新兴产业，使产业链具备高端链接能力、自主可控能力、全球资源配置能力和领先于国际市场的竞争力。\n接下来应该不会重点谈论：",
-    "source_locators": {
-      "original_number": 35,
-      "pages": [
-        7,
-        8
-      ],
-      "source": {
-        "repository": "https://github.com/dumarstoft-ship-it/xingce",
-        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
-        "file": "2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
-        "blob_sha": "422a8d5a7c9c379fe3b10fc81eb6424f17b4bdbb",
-        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2025%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
-        "pdf_pages": [
-          7,
-          8
-        ],
-        "regions": [
-          {
-            "page": 7,
-            "bbox": [
-              28.879276275634766,
-              690.9729614257812,
-              547.3163452148438,
-              766.9088134765625
-            ]
-          },
-          {
-            "page": 8,
-            "bbox": [
-              43.24169921875,
-              91.76618957519531,
-              475.3787536621094,
-              138.66831970214844
-            ]
-          }
-        ],
-        "page_numbering": "PDF physical page, 1-based"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "pending"
       }
     },
-    "source_answer_reference": {
-      "file": "江浙行测_AI题库/answers.jsonl",
-      "source": {
-        "repository": "https://github.com/dumarstoft-ship-it/xingce",
-        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
-        "file": "2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）解析.pdf",
-        "blob_sha": "a4ae2b755ed2f64f3014b4f63b4f8f267775f2f8",
-        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2025%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89%E8%A7%A3%E6%9E%90.pdf",
-        "pdf_pages": [
-          16
-        ],
-        "regions": [
-          {
-            "page": 16,
-            "bbox": [
-              90.0,
-              509.25201416015625,
-              505.32000732421875,
-              692.5717163085938
-            ]
-          }
-        ],
-        "page_numbering": "PDF physical page, 1-based"
-      },
-      "quality_flags": []
+    "source_locators": {
+      "original_number": null,
+      "source": null,
+      "pages": null
     }
   },
   {
@@ -1779,12 +1994,19 @@
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "stem_override": "①因为声波是一种机械波，声波的传播依赖于机械振动在介质中的传递\n②花样游泳比赛时，水上水下都要有音响设备\n③因此，当声波入射到水和空气的交界面时，仅有0.1%的声能量能透过水气交界面\n④为什么空气中和水下难以共享一个声音世界呢\n⑤在不同介质中，声波的传递能力会因介质声阻抗的差异而有所不同，常温下，空气与水的声阻抗相差约3600倍\n⑥声音在水和空气之间的极低透射，使得潜入水中的花样游泳运动员难以听到岸上音乐，所以需要水上和水下同时布置音响设备\n将以上六个句子重新排列，语序正确的是：",
     "source_locators": {
@@ -1915,17 +2137,34 @@
       {
         "type": "layout_only",
         "description": "合并源PDF行末硬换行，保留列举、对话、设问分段；详见格式核验日志。"
+      },
+      {
+        "type": "layout_correction",
+        "description": "恢复最后一条留言与设问之间的换行，撤回原格式日志对此处的硬换行误判。",
+        "revision": "0.2.0"
+      },
+      {
+        "type": "source_correction",
+        "description": "在解析与来源登记中明确标注网友回忆版的证据边界。",
+        "revision": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "editor_revised_pending_delta_review",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "pending"
+      }
     },
-    "stem_override": "以下是某机构关于年轻人“断亲”现象的调查所收集到的部分留言：\n“本来就不熟，聊起来更加尴尬。”\n“一些亲戚什么都要问什么都想管。”\n“遇到困难和问题时亲戚都是隐身的。”\n“不想听一年到头见不了几面的亲戚指指点点。”\n“表面上关心，实际上拿自己的孩子和你疯狂对比。”从这些留言中可以概括出年轻人选择“断亲”的原因不包括：",
+    "stem_override": "以下是某机构关于年轻人“断亲”现象的调查所收集到的部分留言：\n“本来就不熟，聊起来更加尴尬。”\n“一些亲戚什么都要问什么都想管。”\n“遇到困难和问题时亲戚都是隐身的。”\n“不想听一年到头见不了几面的亲戚指指点点。”\n“表面上关心，实际上拿自己的孩子和你疯狂对比。”\n从这些留言中可以概括出年轻人选择“断亲”的原因不包括：",
     "source_locators": {
       "original_number": 40,
       "pages": [
@@ -1979,7 +2218,8 @@
         "page_numbering": "PDF physical page, 1-based"
       },
       "quality_flags": []
-    }
+    },
+    "source_notice": "浙江2025年网友回忆版；本轮未取得可逐字核对的原卷，不将题库参考答案称为官方答案。"
   },
   {
     "number": 28,
@@ -2010,16 +2250,29 @@
     },
     "source_answer": "B",
     "answer": "B",
-    "analysis": "横线后强调制度植根人民、国家机关保持群众联系并服务人民，中心是施政以民心为本，B统摄全段。A“视民知治不”偏通过人民反应检验治理好坏，只对应监督的一部分；C重在修补弊端；D重在改革不拘泥旧制，均非全段重心。",
+    "analysis": "横线后强调制度植根人民、国家机关保持群众联系并服务人民，中心是施政以民心为本，B统摄全段。A“视民知治不”偏通过人民反应检验治理好坏，只对应监督的一部分；C重在修补弊端；D重在改革不拘泥旧制，均非全段重心。 本题按段落中心与选项适配作判断，不以某句话是否恰为原讲话引语替代文本分析。",
     "selection_reason": "名句填空依据全文价值重点，不因出现监督一词就选局部对应项。",
-    "edits": [],
+    "edits": [
+      {
+        "type": "analysis_revision",
+        "description": "补明名句填空仍须依据全文重点，不以回忆原讲话代替判断。",
+        "revision": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "editor_revised_pending_delta_review",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "initial_disagreement_resolved",
+        "current_revision": "0.2.0",
+        "delta_recheck": "pending"
+      }
     },
     "source_locators": {
       "original_number": null,
@@ -2092,12 +2345,19 @@
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "stem_override": "绝大多数私家车辆平均充电频率约为每年50次。按照汽车10年寿命测算，全周期内车主使用的充电次数约为500次。而目前，动力电池的实际使用寿命至少为2000次，每辆新能源汽车在全周期内仍有超过1000次的电池充电次数可参与车网互动给电网送电。经过相关验证，车辆以小倍率进行充放电，在浅充浅放的工况下，经过数千天的使用，在完成200余次V2G（电动汽车给电网送电）充放电循环后，电池容量仍保持在93%以上。此外，虽然V2G技术会增加新能源汽车电池的充放电次数，但合理的充放电管理策略可优化电池的使用效率，减少电池的老化和降解。\n这段文字讨论的核心问题是：",
     "source_locators": {
@@ -2188,12 +2448,19 @@
     "selection_reason": "关系型主旨：前端治理与兜底保障相结合，而非抽象呼吁更新思路。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "source_locators": {
       "original_number": null,
@@ -2283,14 +2550,27 @@
     "answer": "B",
     "analysis": "相邻差依次为−2、4、−8，按每次乘−2继续为16、−32。于是缺项为3+16=19，再减32得到−13，与尾项吻合，选B。数字推理本身不可能排除任意人为插值；这里采用同时解释全部已知项的简洁统一规律。",
     "selection_reason": "识别正负交替的倍数差，避免逐项硬凑原数。",
-    "edits": [],
+    "edits": [
+      {
+        "type": "layout_correction",
+        "description": "规范负号。",
+        "revision": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "editor_revised_pending_delta_review",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "pending"
+      }
     },
     "source_locators": {
       "original_number": 31,
@@ -2302,7 +2582,13 @@
         "source_sha256": "405ae735da596fd06597e990ad036af7c37a8682b99333c67a18586d28431ae5",
         "pages": 25
       }
-    }
+    },
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "9，7，11，3，（    ），−13"
+      }
+    ]
   },
   {
     "number": 32,
@@ -2311,100 +2597,113 @@
     "question_type": "single_choice",
     "source_bank": "guangdong_mock",
     "source_file": "模考/2026下半年广东卷_16-33季_AI可读/全部题目.jsonl",
-    "source_id": "gd-mock-2026h2-s18-q32",
+    "source_id": "gd-mock-2026h2-s17-q35",
     "source_question": {
-      "id": "gd-mock-2026h2-s18-q32",
-      "season": 18,
+      "id": "gd-mock-2026h2-s17-q35",
+      "season": 17,
       "section": "数量关系",
-      "number": 32,
+      "number": 35,
       "material_id": null,
       "stem": [
         {
           "type": "text",
-          "text": "12，18，29，46，70，（    ）"
+          "text": "1015，1816，2221，1933，（    ）"
         }
       ],
       "options": {
         "A": [
           {
             "type": "text",
-            "text": "102"
+            "text": "2977"
           }
         ],
         "B": [
           {
             "type": "text",
-            "text": "103"
+            "text": "5831"
           }
         ],
         "C": [
           {
             "type": "text",
-            "text": "104"
+            "text": "3726"
           }
         ],
         "D": [
           {
             "type": "text",
-            "text": "105"
+            "text": "4615"
           }
         ]
       },
       "source_pages": [
-        8
+        9
       ],
       "source_spans": [
         {
-          "pdf_page": 8,
+          "pdf_page": 9,
           "bbox_pt": [
             52.402,
-            714.001,
-            215.37,
-            726.42
+            738.711,
+            238.458,
+            751.13
           ]
         },
         {
-          "pdf_page": 8,
+          "pdf_page": 9,
           "bbox_pt": [
             68.048,
-            736.857,
-            440.662,
-            749.034
+            762.185,
+            446.379,
+            774.362
           ]
         }
       ],
       "source_asset_ids": [],
       "answer": null,
       "source": {
-        "source_name": "2026下半年省考第十八季行测模考大赛（广东卷）.pdf",
-        "source_sha256": "2886bc82e8b3f9ca9694b565170253d436599452c81bf17a2a0e46600a69caec",
-        "pages": 23
+        "source_name": "2026下半年省考第十七季行测模考大赛（广东卷）.pdf",
+        "source_sha256": "822bd71d69b9d482e6639514477584b21397c3e930705142a5f2b6089dd6b885",
+        "pages": 25
       },
       "material": null
     },
     "source_answer": null,
-    "answer": "A",
-    "analysis": "一阶差为6、11、17、24；二阶差为5、6、7，下一项应为8，所以下一个一阶差是32，缺项为70+32=102，选A。",
-    "selection_reason": "二级差连续递增，要求将缺项代回检验。",
-    "edits": [],
+    "answer": "D",
+    "analysis": "把每个四位数拆成前、后两个两位数并求和：10+15=25，18+16=34，22+21=43，19+33=52，结果依次增加9，所以下一组之和应为61。四个候选拆分之和分别为106、89、63、61，只有4615符合，选D。识别的对象是两个两位数，而不是四个数位分别运算；这一规律统一解释了全部已知项。",
+    "selection_reason": "用多位数分组替代一条常规二级差数列，增加识别计数对象的变化，不为答案配平。",
+    "edits": [
+      {
+        "type": "source_replacement",
+        "description": "用多位数分组替代一条常规二级差数列，增加识别计数对象的变化，不为答案配平。",
+        "revision": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_checked_pending_claude",
-      "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
+      "status": "editor_revised_pending_delta_review",
+      "method": "先按题面独立判断，再核对现存源答案（如有）；不沿用撤下题的外审状态。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "pending"
+      }
     },
     "source_locators": {
-      "original_number": 32,
-      "pages": [
-        8
-      ],
+      "original_number": 35,
       "source": {
-        "source_name": "2026下半年省考第十八季行测模考大赛（广东卷）.pdf",
-        "source_sha256": "2886bc82e8b3f9ca9694b565170253d436599452c81bf17a2a0e46600a69caec",
-        "pages": 23
-      }
+        "source_name": "2026下半年省考第十七季行测模考大赛（广东卷）.pdf",
+        "source_sha256": "822bd71d69b9d482e6639514477584b21397c3e930705142a5f2b6089dd6b885",
+        "pages": 25
+      },
+      "pages": [
+        9
+      ]
     }
   },
   {
@@ -2491,12 +2790,19 @@
     "selection_reason": "偶数立方与正负一交替，训练接近幂数的结构识别。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "source_locators": {
       "original_number": 33,
@@ -2636,12 +2942,19 @@
     "selection_reason": "先统一分数结构再看数列，避免被约分后的分子分母打散。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "source_locators": {
       "original_number": 31,
@@ -2740,12 +3053,19 @@
     "selection_reason": "加一后变为连续倍数，提供比机械差分更简洁的整体现象。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "source_locators": {
       "original_number": 33,
@@ -2879,14 +3199,27 @@
     "answer": "B",
     "analysis": "把10%溶液向30%溶液中倒x毫升，则(0.1x+0.3×200)/(x+200)=0.18，解得x=300。A有400毫升可供转移，B最终正好500毫升，容量允许。反向把30%溶液倒入A，需要x=800/3毫升，超过B原有200毫升且会使A超容量。故选B。默认按题目常规体积浓度混合模型，混合前后体积相加。",
     "selection_reason": "浓度方程必须同时满足容器容量和供液数量。",
-    "edits": [],
+    "edits": [
+      {
+        "type": "layout_correction",
+        "description": "将题干ml统一写为毫升，数值和单位含义不变。",
+        "revision": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "editor_revised_pending_delta_review",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "pending"
+      }
     },
     "source_locators": {
       "original_number": 40,
@@ -2899,7 +3232,13 @@
         "source_sha256": "cd5035fbb9936c5d304aeadfb5f4912624cef4dcf6b9d527ba0dd811cd025c92",
         "pages": 25
       }
-    }
+    },
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "某实验室有两个容量均为500毫升的容器A和B，其中A容器盛有浓度为10%的酒精溶液400毫升，B容器盛有浓度为30%的酒精溶液200毫升。实验员小吴要用浓度为18%的酒精溶液，但找不到合适的其他容器，只能将A容器内的溶液倒入B容器，或将B容器内的溶液倒入A容器进行混合。则他如何转移可以恰好得到所需溶液？"
+      }
+    ]
   },
   {
     "number": 37,
@@ -3005,12 +3344,19 @@
     "selection_reason": "整数比例的共同约束，不逐个猜不足100的员工数。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "source_locators": {
       "original_number": 41,
@@ -3123,21 +3469,33 @@
     },
     "source_answer": null,
     "answer": "B",
-    "analysis": "首次相遇后甲到B尚需25分钟，这一段正是乙此前30分钟的路程，因此甲、乙速度比为6∶5。设全程L，首次相遇点距A为6L/11。两人均到端点立即折返，第二次相遇时合行3L，此时甲已行18L/11，折返后距A为2L−18L/11=4L/11。两点距离为2L/11=480，故L=2640米，选B。所求是两次相遇点的地理间距，而非某人第二段路程。",
+    "analysis": "首次相遇后甲到B尚需25分钟，这一段正是乙此前30分钟的路程，因此甲、乙速度比为6∶5。设全程L，首次相遇点距A为6L/11。两人均到端点立即折返，第二次相遇时合行3L，此时甲已行18L/11，折返后距A为2L−18L/11=4L/11。两点距离为2L/11=480，故L=2640米，选B。所求是两次相遇点的地理间距，而非某人第二段路程。 第二次相遇前不会发生追及：0—30分钟相向至首次相遇，30—55分钟仍向各自目标端点走；55—66分钟甲已从B折返，乙仍向A行进，虽同向但尚未追上；66分钟乙到A折返后，两人相向，90分钟再相遇。乙到A用时为66分钟，因为速度比为6∶5、甲走完全程需55分钟。",
     "selection_reason": "往返相遇需还原两次相遇所在位置，不能直接套同向追及。",
     "edits": [
       {
         "type": "stem_clarification",
         "description": "补明端点立即折返、不停留，保留原题匀速往返的计数模型与数值。"
+      },
+      {
+        "type": "analysis_revision",
+        "description": "补充各折返时刻，核对第二次相遇前不会先发生同向追及。",
+        "revision": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "editor_revised_pending_delta_review",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "pending"
+      }
     },
     "stem_override": [
       {
@@ -3260,12 +3618,19 @@
     "selection_reason": "利润率以成本为基准，联动两件商品盈亏。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "source_locators": {
       "original_number": 39,
@@ -3390,12 +3755,19 @@
     "selection_reason": "周期布点与两端重合，避免把起点激光灯漏掉。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "source_locators": {
       "original_number": 40,
@@ -3520,12 +3892,19 @@
     "selection_reason": "以乙在总工期内能做的最大工作量推出丙的最低投入，再给可行安排。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "source_locators": {
       "original_number": 36,
@@ -3641,12 +4020,19 @@
     "selection_reason": "先固定主持人，再按工作组整体计数；颁奖人员无额外岗位顺序。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "source_locators": {
       "original_number": 43,
@@ -3790,12 +4176,19 @@
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "stem_override": [
       {
@@ -3923,16 +4316,29 @@
     },
     "source_answer": null,
     "answer": "B",
-    "analysis": "将9个月份销售额从小到大记为a₁至a₉，设a₁=x，则a₉=3x，原题排名第七、第八对应a₃、a₂，故a₂+a₃=3x。为使给定x下的总额尽可能大，a₄至a₈最多分别为3x−10、3x−8、3x−6、3x−4、3x−2。因此总额≤x+3x+3x+(15x−30)=22x−30。234≤22x−30，得x≥12。取12、16、20、26、28、30、32、34、36，各项相差至少2，且16+20=36、总和234，故12可达，选B。",
+    "analysis": "设九个月销售额按降序为b₁>b₂>…>b₉，最低值b₉=x，则b₁=3x，b₇+b₈=3x。为使给定x下总额尽量大，b₂至b₆分别不超过3x−2、3x−4、3x−6、3x−8、3x−10。因此总额≤3x+(15x−30)+3x+x=22x−30。由234≤22x−30得x≥12。取降序36、34、32、30、28、26、20、16、12，总和234，第七与第八为20、16，相加36，所有相邻差至少2，故12可达，选B。下界与可行方案共同证明最小值。",
     "selection_reason": "用上界推最低月份，而非在九个变量间盲目构造。",
-    "edits": [],
+    "edits": [
+      {
+        "type": "review_revision",
+        "description": "使用与排名方向一致的降序记号，并补足题干月份表达；解法与答案不变。",
+        "revision": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "editor_revised_pending_delta_review",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "pending"
+      }
     },
     "source_locators": {
       "original_number": 43,
@@ -3945,7 +4351,13 @@
         "source_sha256": "405ae735da596fd06597e990ad036af7c37a8682b99333c67a18586d28431ae5",
         "pages": 25
       }
-    }
+    },
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "某连锁超市前三季度的销售总额为234万元。该连锁超市在统计销售额时发现，销售额最高月份的销售额比最低月份多2倍，销售额排名第七、第八的两个月份的销售额之和恰好等于最高月份的销售额。已知任意两个月份的销售额之差不低于2万元，则该连锁超市前三季度销售额最低月份的销售额至少为多少万元？"
+      }
+    ]
   },
   {
     "number": 45,
@@ -4060,12 +4472,19 @@
     "selection_reason": "用中线交点与面积分配，不必计算边长和三角函数。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "source_locators": {
       "original_number": 38,
@@ -4183,12 +4602,19 @@
     "selection_reason": "数量递增与沿外圈移动共同约束，单数黑格不足以区分选项。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "options_mode": "in_figure",
     "source_locators": {
@@ -4304,16 +4730,29 @@
     },
     "source_answer": null,
     "answer": "A",
-    "analysis": "逐行将前两图在相同位置对齐，共有的线条或相同的填色消去，不同部分保留。第一行共有的长横线及短竖线大部相消，留下右侧箭头与短竖线；第二行相同位置的两枚三角形相消，另两处一黑一白保留黑色差异，吻合第三图。第三行的外框和分割线都是共有部分，应一并消去，不能选仍留完整方框的B、C；剩余黑色三角位于上部两侧，朝向与A一致，D的方位不符。",
+    "analysis": "逐行将前两图在相同位置对齐，共有的线条或相同的填色消去，不同部分保留。第一行共有的长横线及短竖线大部相消，留下右侧箭头与短竖线；第二行相同位置的三块三角形（包括黑色和白色块）相消，另两处一黑一白保留黑色差异，吻合第三图。第三行的外框和分割线都是共有部分，应一并消去，不能选仍留完整方框的B、C；剩余黑色三角位于上部两侧，朝向与A一致，D的方位不符。",
     "selection_reason": "去同存异同时作用于线条和填色，不能把公共外框机械保留。",
-    "edits": [],
+    "edits": [
+      {
+        "type": "analysis_revision",
+        "description": "实际放大查看原图第二行，修正共同消去的三角形块数为三块。",
+        "revision": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "editor_revised_pending_delta_review",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "pending"
+      }
     },
     "options_mode": "in_figure",
     "source_locators": {
@@ -4432,12 +4871,19 @@
     "selection_reason": "双条件筛选：面数交替与曲直类型交替，防止命中一个规律就停止。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "options_mode": "in_figure",
     "source_locators": {
@@ -4564,12 +5010,19 @@
     "selection_reason": "沿两条折痕分别镜像展开，检验剪口形状而非凭整体相似。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "options_mode": "in_figure",
     "source_locators": {
@@ -4687,12 +5140,19 @@
     "selection_reason": "相对面配对不足以判定同一纸盒，还需检查三面相邻次序。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "options_mode": "in_figure",
     "source_locators": {
@@ -4763,21 +5223,33 @@
     },
     "source_answer": "B",
     "answer": "B",
-    "analysis": "令F表示能飞，H表示两翼健壮，P表示共同推动。题干为F→(H且P)，所以②成立；其逆否命题为(非H或非P)→非F，正是③。①把必要条件当成充分条件，④把否定结论当成否定前件的依据，均不能推出；例如两翼健壮且协同推动，却因其他因素仍不能飞，并不违反题干。选B。",
+    "analysis": "令F表示能飞，H表示两翼健壮，P表示共同推动。题干为F→(H且P)，所以②成立；其逆否命题为(非H或非P)→非F，正是③。①把必要条件当成充分条件，④否定前件后，直接推得必要条件不成立，均不能推出；例如两翼健壮且协同推动，却因其他因素仍不能飞，并不违反题干。选B。 就F→(H且P)而言，④的错误形式是否定前件，并非逆否推理；非F时H且P仍可能成立。",
     "selection_reason": "必要条件与逆否关系；用反例排除逆命题。",
     "edits": [
       {
         "type": "layout_only",
         "description": "合并源PDF行末硬换行，保留列举、对话、设问分段；详见格式核验日志。"
+      },
+      {
+        "type": "analysis_revision",
+        "description": "修正形式逻辑术语，保留用于排除错误命题的反例。",
+        "revision": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "editor_revised_pending_delta_review",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "pending"
+      }
     },
     "stem_override": "一只鸟除非两翼健壮并以共同的力量来推动身体，否则它不能飞向天空。根据以上陈述，可以推出以下哪些结论？\n①一只鸟如果两翼健壮并以共同的力量来推动身体，那么它能够飞向天空\n②一只鸟如果能够飞向天空，那么它两翼健壮并以共同的力量来推动身体\n③一只鸟若两翼不健壮或不能以共同的力量来推动身体，那么它不能飞向天空\n④一只鸟如果不能飞向天空，那么它两翼不健壮或不能以共同力量来推动身体",
     "source_locators": {
@@ -4900,12 +5372,19 @@
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "stem_override": "如今，利用网络检索信息、查阅资料非常方便，大多数人遇到生僻的字词需要检索、查找、求证时，第一选择是上网而不是翻检词典。有网友坦言：尽管《现代汉语词典》伴随自己的学生时代，但在互联网时代，它已经远离了我们的生活。\n以下哪项如果为真，最能质疑上述网友的说法？",
     "source_locators": {
@@ -5019,21 +5498,33 @@
     },
     "source_answer": null,
     "answer": "A",
-    "analysis": "C在2号，使A、F都不能在1或3号；4号已被E占据，因此A、F只能占5、6号。D不可能在5或6号，排除C、D；B也不可能在5号，排除B。一个满足A的排列是B、C、D、E、A、F，其中只有B这张甲的专辑在最边上，全部条件成立。故选A。全部6!排列过滤后仅有两种合法方案，均支持这一结论。",
+    "analysis": "C在2号，使A、F都不能在1或3号；4号已被E占据，因此A、F只能占5、6号。D不可能在5或6号，排除C、D；B也不可能在5号，排除B。一个满足A的排列是B、C、D、E、A、F，其中只有B这张甲的专辑在最边上，全部条件成立。故选A。全部6!排列过滤后仅有两种合法方案，其中有方案满足A的可能性，而其余三个选项在全部合法方案中均不成立。",
     "selection_reason": "从固定位置推出剩余位置占用，再验证可能项。",
     "edits": [
       {
         "type": "layout_only",
         "description": "合并源PDF行末硬换行，保留列举、对话、设问分段；详见格式核验日志。"
+      },
+      {
+        "type": "analysis_revision",
+        "description": "把可能项与必然项分开：A只需有可行方案，不表述为两方案都实现A。",
+        "revision": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "editor_revised_pending_delta_review",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "pending"
+      }
     },
     "stem_override": "某商店现有歌手甲的专辑A、B各一张，歌手乙的专辑C、D各一张，歌手丙的专辑E、F各一张，共6张专辑，需将它们放在横向排列的1~6号货架，每个货架摆放一张。已知：（1）A和C不相邻；（2）F和C不相邻；（3）有且仅有一张甲的专辑在最边上的货架。\n如果C在2号货架，E在4号货架，那么以下哪项可能为真？",
     "source_locators": {
@@ -5144,22 +5635,59 @@
       {
         "type": "layout_only",
         "description": "合并源PDF行末硬换行，保留列举、对话、设问分段；详见格式核验日志。"
+      },
+      {
+        "type": "layout_correction",
+        "description": "统一问号、英文名称后空格或重复句末标点；不改命题含义。",
+        "revision": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
-    "stem_override": "近两年，预制菜成为很多餐饮店的新宠，经过洗、切、搭配、烹制等步骤的预制菜，在餐饮店的后厨只需经过简单加工即可上桌。在这样的情形下，使用预制菜的规模化连锁餐饮店遍地开花。有专家据此指出，长此以往许多厨师将面临失业的风险。\n以下哪项如果为真，最能支持上述专家的观点？",
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "近两年，预制菜成为很多餐饮店的新宠，经过洗、切、搭配、烹制等步骤的预制菜，在餐饮店的后厨只需经过简单加工即可上桌。在这样的情形下，使用预制菜的规模化连锁餐饮店遍地开花。有专家据此指出，长此以往许多厨师将面临失业的风险。\n以下哪项如果为真，最能支持上述专家的观点？"
+      }
+    ],
     "options": {
-      "A": "用餐的客人越来越心急，点完菜恨不得立刻吃上，导致很多需要慢慢烹制的菜都得厨师预先处理",
-      "B": "高端的预制菜已经走进了许多家庭之中，人们不需要具备高超的厨艺即可化身大厨，为家人带来一份丰盛的大餐",
-      "C": "很多连锁餐饮店开在商场，而商场由于消防要求对明火管控严格，导致这些餐饮店只能使用预制菜",
-      "D": "规模化连锁餐饮店使用预制菜，方便快捷，成本比用厨师的中小餐馆要低得多，大多数中小餐馆无力与之竞争。"
+      "A": [
+        {
+          "type": "text",
+          "text": "用餐的客人越来越心急，点完菜恨不得立刻吃上，导致很多需要慢慢烹制的菜都得厨师预先处理"
+        }
+      ],
+      "B": [
+        {
+          "type": "text",
+          "text": "高端的预制菜已经走进了许多家庭之中，人们不需要具备高超的厨艺即可化身大厨，为家人带来一份丰盛的大餐"
+        }
+      ],
+      "C": [
+        {
+          "type": "text",
+          "text": "很多连锁餐饮店开在商场，而商场由于消防要求对明火管控严格，导致这些餐饮店只能使用预制菜"
+        }
+      ],
+      "D": [
+        {
+          "type": "text",
+          "text": "规模化连锁餐饮店使用预制菜，方便快捷，成本比用厨师的中小餐馆要低得多，大多数中小餐馆无力与之竞争。"
+        }
+      ]
     },
     "source_locators": {
       "original_number": 95,
@@ -5292,12 +5820,19 @@
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "stem_override": "进入秋季以来，国际化肥价格呈爆发式上涨，氮肥、磷肥、钾肥比上一年同期都有大幅上涨。对此，有关专家表示，近期受多种因素叠加影响，化肥价格上涨明显，但价格与市场需求量相关，国内肥料价格很快就会回到正常水平。\n专家最不可能基于以下哪项得出上述观点？",
     "source_locators": {
@@ -5427,15 +5962,27 @@
       {
         "type": "stem_clarification",
         "description": "明确三人部门互不相同，保留原题选项与通常一一对应模型；不依靠选项替题干补条件。"
+      },
+      {
+        "type": "provenance_completion",
+        "description": "补全旧编辑说明：删去“由于表现较好”“正式”等背景措辞，将“将分到”整理为“分别入职”，并改写猜测引语为编号陈述；互不相同条件已在0.1.0明确，本轮不再改题面。",
+        "revision": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "stem_override": [
       {
@@ -5573,12 +6120,19 @@
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "stem_override": "据一项调查显示，对所学专业满意的大学生不到一半。某高校为了调动学生的学习主动性和积极性、提高学生对所学专业的满意度，允许在原专业中成绩名列年级前10%且不存在挂科的学生更换专业。有专家指出，这一成绩要求违背了该校制定转专业政策的初衷。\n以下哪项如果为真，最能支持上述专家的观点？",
     "source_locators": {
@@ -5698,22 +6252,59 @@
       {
         "type": "layout_only",
         "description": "合并源PDF行末硬换行，保留列举、对话、设问分段；详见格式核验日志。"
+      },
+      {
+        "type": "layout_correction",
+        "description": "统一问号、英文名称后空格或重复句末标点；不改命题含义。",
+        "revision": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "editor_revised_pending_delta_review",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "pending"
+      }
     },
-    "stem_override": "体温调节模式假说认为，变温动物因为需要吸收外部热量调节体温，因此代谢率通常较低，而恒温动物由内部产生热量，代谢率较高，因此变温动物比恒温动物衰老速度慢。就像人们觉得老鼠衰老快，是因为它们新陈代谢率很高，而海龟衰老慢，是因为它们新陈代谢率很低。\n以下哪项如果为真，最能削弱上述假说?",
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "体温调节模式假说认为，变温动物因为需要吸收外部热量调节体温，因此代谢率通常较低，而恒温动物由内部产生热量，代谢率较高，因此变温动物比恒温动物衰老速度慢。就像人们觉得老鼠衰老快，是因为它们新陈代谢率很高，而海龟衰老慢，是因为它们新陈代谢率很低。\n以下哪项如果为真，最能削弱上述假说？"
+      }
+    ],
     "options": {
-      "A": "有壳这种物理特征保护，海龟的衰老速度较慢，寿命更长",
-      "B": "研究显示，变温动物的衰老率远高于或远低于相似体型恒温动物的衰老率",
-      "C": "得出上述假说的研究主要集中在动物园的动物或少数野生动物中，且获得的证据参差不齐",
-      "D": "部分变温动物的衰老可忽略不计，包括青蛙、海龟等，一旦过了繁殖期，它们死亡的可能性不会随着年龄的增长而改变"
+      "A": [
+        {
+          "type": "text",
+          "text": "有壳这种物理特征保护，海龟的衰老速度较慢，寿命更长"
+        }
+      ],
+      "B": [
+        {
+          "type": "text",
+          "text": "研究显示，变温动物的衰老率远高于或远低于相似体型恒温动物的衰老率"
+        }
+      ],
+      "C": [
+        {
+          "type": "text",
+          "text": "得出上述假说的研究主要集中在动物园的动物或少数野生动物中，且获得的证据参差不齐"
+        }
+      ],
+      "D": [
+        {
+          "type": "text",
+          "text": "部分变温动物的衰老可忽略不计，包括青蛙、海龟等，一旦过了繁殖期，它们死亡的可能性不会随着年龄的增长而改变"
+        }
+      ]
     },
     "source_locators": {
       "original_number": 105,
@@ -5845,12 +6436,19 @@
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "stem_override": "小明、小军、小花、小飞和小雅在学校的联欢会上表演节目，表演时他们每人手上各拿了一个不同的气球，气球分别是红色圆形、蓝色五角星形、黄色心形、蓝色圆形、红色心形。\n小明说：小花和小雅的气球都不是圆形的，也不是蓝色的。\n小军说：我的气球与小雅的颜色和形状都不一样。\n小飞说：小雅的气球是黄色的，小明的气球是蓝色的。\n小花说：小军的气球与我的是一样的颜色，小飞的气球不是五角星形的。\n根据以上信息，下列说法正确的是：",
     "source_locators": {
@@ -5970,17 +6568,34 @@
       {
         "type": "layout_only",
         "description": "合并源PDF行末硬换行，保留列举、对话、设问分段；详见格式核验日志。"
+      },
+      {
+        "type": "layout_correction",
+        "description": "统一问号、英文名称后空格或重复句末标点；不改命题含义。",
+        "revision": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "editor_revised_pending_delta_review",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "pending"
+      }
     },
-    "stem_override": "手机APP 为了获得一些读取信息和修改手机设置的权限，都会提供用户协议并要求使用者同意。然而，据权威调查显示，大部分使用者很少或从没阅读过APP 提供的用户协议，也不乐意APP 有超出其功能的某些权限，但他们都会点击“我已阅读并同意用户协议”。\n以下哪项如果为真，最能解释上述现象？",
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "手机APP为了获得一些读取信息和修改手机设置的权限，都会提供用户协议并要求使用者同意。然而，据权威调查显示，大部分使用者很少或从没阅读过APP提供的用户协议，也不乐意APP有超出其功能的某些权限，但他们都会点击“我已阅读并同意用户协议”。\n以下哪项如果为真，最能解释上述现象？"
+      }
+    ],
     "source_locators": {
       "original_number": 96,
       "pages": [
@@ -6044,6 +6659,32 @@
         "page_numbering": "PDF physical page, 1-based"
       },
       "quality_flags": []
+    },
+    "options": {
+      "A": [
+        {
+          "type": "text",
+          "text": "如果用户不同意手机APP所提供的用户协议，就不能使用这款APP"
+        }
+      ],
+      "B": [
+        {
+          "type": "text",
+          "text": "通过正规平台下载的APP有平台审核其安全性，不需要下载者进行核查"
+        }
+      ],
+      "C": [
+        {
+          "type": "text",
+          "text": "很多手机APP的用户协议冗长复杂，用户无法在短时间内读完或读懂"
+        }
+      ],
+      "D": [
+        {
+          "type": "text",
+          "text": "对于某些APP来说，用户在使用过程中还能重新设定它获取的各种权限"
+        }
+      ]
     }
   },
   {
@@ -6051,127 +6692,151 @@
     "section": "判断推理",
     "subsection": "逻辑判断",
     "question_type": "single_choice",
-    "source_bank": "jiangzhe",
-    "source_file": "江浙行测_AI题库/questions.jsonl",
-    "source_id": "ZJ2023-A类-107",
+    "source_bank": "guangdong_mock",
+    "source_file": "模考/2026下半年广东卷_16-33季_AI可读/全部题目.jsonl",
+    "source_id": "gd-mock-2026h2-s25-q61",
     "source_question": {
-      "question_id": "ZJ2023-A类-107",
-      "paper_id": "ZJ2023",
-      "province": "浙江",
-      "year": 2023,
-      "paper_type": "A类",
+      "id": "gd-mock-2026h2-s25-q61",
+      "season": 25,
       "section": "判断推理",
-      "original_number": 107,
-      "instruction": null,
-      "stem": "研究人员开发了一种可以从指尖上的汗水中获取能量的新设备。在10小时的睡眠期间内，无需任何机械能量输\n入的情况下，该设备每平方厘米可产生300毫焦耳的能量；只需按一下手指，就能额外产生30毫焦耳的能量。\n这意味着可自我维持的可穿戴电子产品向更实用、更方便、更大众化的方向迈出了重要一步。\n以下哪项如果为真，最能支持上述论述？",
+      "number": 61,
+      "material_id": null,
+      "stem": [
+        {
+          "type": "text",
+          "text": "民生在勤，勤则不匮。他物资匮乏，所以他不勤劳。\n以下选项的逻辑结构与题干最为相似的是（    ）。"
+        }
+      ],
       "options": {
-        "A": "新设备产生的电能可被储存在小电容器中，并在需要时释放到其他设备",
-        "B": "此前基于汗水收集能量的设备需要佩戴者大量运动出足够的汗来激活发电",
-        "C": "手指是身体24小时的“汗水工厂”，产生的汗量是其他部位的100到1000倍",
-        "D": "一名受试者在10小时睡眠中收集了近400毫焦耳的能量，这足以为一块电子表提供24小时电力"
-      },
-      "options_mode": "text_or_mixed",
-      "content": "研究人员开发了一种可以从指尖上的汗水中获取能量的新设备。在10小时的睡眠期间内，无需任何机械能量输\n入的情况下，该设备每平方厘米可产生300毫焦耳的能量；只需按一下手指，就能额外产生30毫焦耳的能量。\n这意味着可自我维持的可穿戴电子产品向更实用、更方便、更大众化的方向迈出了重要一步。\n以下哪项如果为真，最能支持上述论述？\nA.新设备产生的电能可被储存在小电容器中，并在需要时释放到其他设备\nB.此前基于汗水收集能量的设备需要佩戴者大量运动出足够的汗来激活发电\nC.手指是身体24小时的“汗水工厂”，产生的汗量是其他部位的100到1000倍\nD.一名受试者在10小时睡眠中收集了近400毫焦耳的能量，这足以为一块电子表提供24小时电力",
-      "figures": [],
-      "materials": [],
-      "material_ids": [],
-      "source": {
-        "repository": "https://github.com/dumarstoft-ship-it/xingce",
-        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
-        "file": "2023年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
-        "blob_sha": "5bcc6163c999c3910d10f36f6d8bea8a57df1417",
-        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
-        "pdf_pages": [
-          20
-        ],
-        "regions": [
+        "A": [
           {
-            "page": 20,
-            "bbox": [
-              23.62849998474121,
-              309.8287048339844,
-              547.3163452148438,
-              437.0364685058594
-            ]
+            "type": "text",
+            "text": "牡丹花是芬芳的。这朵花不芬芳，所以它绝不是牡丹花"
           }
         ],
-        "page_numbering": "PDF physical page, 1-based"
+        "B": [
+          {
+            "type": "text",
+            "text": "不前进就会退步。他退步明显，所以他一定没有前进"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "text": "边牧都会牧羊。它不会牧羊，那么它绝不是牧羊犬"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "text": "猛将必发于卒伍。他不是猛将，因此他并非出身于士兵队伍"
+          }
+        ]
       },
-      "quality_flags": [],
-      "notes": []
+      "source_pages": [
+        15
+      ],
+      "source_spans": [
+        {
+          "pdf_page": 15,
+          "bbox_pt": [
+            52.402,
+            180.275,
+            325.748,
+            192.693
+          ]
+        },
+        {
+          "pdf_page": 15,
+          "bbox_pt": [
+            68.048,
+            200.042,
+            315.194,
+            212.461
+          ]
+        },
+        {
+          "pdf_page": 15,
+          "bbox_pt": [
+            68.048,
+            222.899,
+            348.091,
+            235.317
+          ]
+        },
+        {
+          "pdf_page": 15,
+          "bbox_pt": [
+            68.048,
+            243.285,
+            336.279,
+            255.703
+          ]
+        },
+        {
+          "pdf_page": 15,
+          "bbox_pt": [
+            68.048,
+            263.052,
+            325.065,
+            275.471
+          ]
+        },
+        {
+          "pdf_page": 15,
+          "bbox_pt": [
+            68.048,
+            282.82,
+            370.519,
+            295.238
+          ]
+        }
+      ],
+      "source_asset_ids": [],
+      "answer": null,
+      "source": {
+        "source_name": "2026下半年省考第二十五季行测模考大赛（广东卷）.pdf",
+        "source_sha256": "17838db5023427dbdf9f18afbcb27ff8d57750e4bfe7da7700db253f5ff55b18",
+        "pages": 23
+      },
+      "material": null
     },
-    "source_answer": "D",
-    "answer": "D",
-    "analysis": "结论是可穿戴设备自我维持向实用迈进，关键在产生的能量是否够设备使用。D给出睡眠收能足以维持电子表24小时的供需对应，直接支持实用性。A说明能储存但未说明够不够，B只比较激活条件，C只说明汗液多而未将其转成可用电量，均不如D直接。",
-    "selection_reason": "把能量产出连接到实际设备需求，避免只证明供能来源存在。",
+    "source_answer": null,
+    "answer": "A",
+    "analysis": "题干把“勤劳则不匮乏”作为前提，以“匮乏”否定后件，推出“不勤劳”，形式为P→非Q，Q，所以非P。A同样是否定后件：牡丹→芬芳，非芬芳，所以非牡丹。B由退步反推没有前进，是肯定后件；C的前提只涉及边牧，结论却换成更宽的“牧羊犬”，未维持同一概念；D否定前件后直接否定后件，不成立。故A在概念范围不变的条件下复现了题干的逆否结构。本题只检验给定命题之间的关系，不把“勤劳与匮乏”的前提推广为现实社会中的无条件因果。",
+    "selection_reason": "撤下B、D均可支持结论的争议题，换成结构相似题；按同一谓词、否定方向和论证形式独立核验。",
     "edits": [
       {
-        "type": "layout_only",
-        "description": "合并源PDF行末硬换行，保留列举、对话、设问分段；详见格式核验日志。"
+        "type": "source_replacement",
+        "description": "撤下B、D均可支持结论的争议题，换成结构相似题；按同一谓词、否定方向和论证形式独立核验。",
+        "revision": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
-      "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
-      "source_answer_available": true,
-      "source_answer_agreement": true,
+      "status": "editor_revised_pending_delta_review",
+      "method": "先按题面独立判断，再核对现存源答案（如有）；不沿用撤下题的外审状态。",
+      "source_answer_available": false,
+      "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
-    },
-    "stem_override": "研究人员开发了一种可以从指尖上的汗水中获取能量的新设备。在10小时的睡眠期间内，无需任何机械能量输入的情况下，该设备每平方厘米可产生300毫焦耳的能量；只需按一下手指，就能额外产生30毫焦耳的能量。这意味着可自我维持的可穿戴电子产品向更实用、更方便、更大众化的方向迈出了重要一步。\n以下哪项如果为真，最能支持上述论述？",
-    "source_locators": {
-      "original_number": 107,
-      "pages": [
-        20
-      ],
-      "source": {
-        "repository": "https://github.com/dumarstoft-ship-it/xingce",
-        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
-        "file": "2023年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
-        "blob_sha": "5bcc6163c999c3910d10f36f6d8bea8a57df1417",
-        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
-        "pdf_pages": [
-          20
-        ],
-        "regions": [
-          {
-            "page": 20,
-            "bbox": [
-              23.62849998474121,
-              309.8287048339844,
-              547.3163452148438,
-              437.0364685058594
-            ]
-          }
-        ],
-        "page_numbering": "PDF physical page, 1-based"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "withdrawn_ambiguous",
+        "current_revision": "0.2.0",
+        "delta_recheck": "pending"
       }
     },
-    "source_answer_reference": {
-      "file": "江浙行测_AI题库/answers.jsonl",
+    "source_locators": {
+      "original_number": 61,
       "source": {
-        "repository": "https://github.com/dumarstoft-ship-it/xingce",
-        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
-        "file": "2023年浙江省公务员录用考试《行测》真题（A类）（解析）.pdf",
-        "blob_sha": "9c7d7f35278953cbcb7177a79f339c0a866a1c23",
-        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E8%A7%A3%E6%9E%90%EF%BC%89.pdf",
-        "pdf_pages": [
-          31
-        ],
-        "regions": [
-          {
-            "page": 31,
-            "bbox": [
-              54.0,
-              464.5834655761719,
-              544.8090209960938,
-              740.2334594726562
-            ]
-          }
-        ],
-        "page_numbering": "PDF physical page, 1-based"
+        "source_name": "2026下半年省考第二十五季行测模考大赛（广东卷）.pdf",
+        "source_sha256": "17838db5023427dbdf9f18afbcb27ff8d57750e4bfe7da7700db253f5ff55b18",
+        "pages": 23
       },
-      "quality_flags": []
+      "pages": [
+        15
+      ]
     }
   },
   {
@@ -6239,12 +6904,19 @@
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "stem_override": "市美术馆近期举办“小读者”系列活动，活动包含若干项目。报名情况如下：\n（1）小读者在艺术阅读和版画实践课中至少参加了一个；\n（2）小读者如果参加了艺术阅读，则没有参加书法小课堂；\n（3）小苏参加了书法小课堂；\n美术馆馆长知道上述情况后断定，小苏也参加了手工剪纸活动。以下哪项如果为真，可以成为美术馆馆长判断的前提？",
     "source_locators": {
@@ -6387,12 +7059,19 @@
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "stem_override": "北方某市有甲、乙两条十字交叉的马路，每年冬季都有成群的乌鸦聚集于甲路边的树上，但乙路边的树上基本没有乌鸦。有鸟类爱好者发现，甲路两旁的杨树要比乙路多数倍。\n据此，该鸟类爱好者断言，乌鸦更喜欢停留在杨树多的地方过冬。\n以下哪项如果为真，最能削弱上述鸟类爱好者的断言？",
     "source_locators": {
@@ -6526,12 +7205,19 @@
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": true,
       "source_answer_agreement": true,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "stem_override": "一项调查显示，某公司有70%的员工存在压力过大、健康隐患等问题。为此，公司计划建立一个“健康角”，提供瑜伽课程和心理咨询服务。公司管理层预测，设立“健康角”能改善员工的身心状态，提高整体工作效率。\n回答以下哪个问题，最有助于评价公司管理层作出的上述预测？",
     "source_locators": {
@@ -6661,17 +7347,34 @@
       {
         "type": "layout_only",
         "description": "合并源PDF行末硬换行，保留列举、对话、设问分段；详见格式核验日志。"
+      },
+      {
+        "type": "layout_correction",
+        "description": "统一问号、英文名称后空格或重复句末标点；不改命题含义。",
+        "revision": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "editor_revised_pending_delta_review",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "pending"
+      }
     },
-    "stem_override": "动物毛发的自我更新和生长依赖于毛囊干细胞的周期性增殖和分化，年龄增长会使毛囊干细胞变僵硬，妨碍毛发再生。近日有研究发现，当毛囊干细胞中由肌动球蛋白组成的细胞骨架软化时，细胞会膨大并发生一系列反应，成功促使老龄小鼠毛发再生。因此，增强毛囊干细胞中微核糖核酸分子miR-205的表达可使细胞软化并促进毛发生长。\n上述结论的成立需要补充以下哪项作为前提?",
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "动物毛发的自我更新和生长依赖于毛囊干细胞的周期性增殖和分化，年龄增长会使毛囊干细胞变僵硬，妨碍毛发再生。近日有研究发现，当毛囊干细胞中由肌动球蛋白组成的细胞骨架软化时，细胞会膨大并发生一系列反应，成功促使老龄小鼠毛发再生。因此，增强毛囊干细胞中微核糖核酸分子miR-205的表达可使细胞软化并促进毛发生长。\n上述结论的成立需要补充以下哪项作为前提？"
+      }
+    ],
     "source_locators": {
       "original_number": 101,
       "pages": [
@@ -6705,6 +7408,32 @@
       "source": null,
       "quality_flags": [
         "answer_not_in_source"
+      ]
+    },
+    "options": {
+      "A": [
+        {
+          "type": "text",
+          "text": "miR-205影响着毛发的软硬程度"
+        }
+      ],
+      "B": [
+        {
+          "type": "text",
+          "text": "可以通过基因手段增强miR-205表达"
+        }
+      ],
+      "C": [
+        {
+          "type": "text",
+          "text": "miR-205能抑制毛囊干细胞增殖和分化"
+        }
+      ],
+      "D": [
+        {
+          "type": "text",
+          "text": "miR-205对软化细胞骨架起着重要作用"
+        }
       ]
     }
   },
@@ -6856,12 +7585,19 @@
     "selection_reason": "静摩擦由平衡决定，不能把恒定压力误当成恒定摩擦。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "source_locators": {
       "original_number": 66,
@@ -7019,26 +7755,38 @@
     },
     "source_answer": null,
     "answer": "A",
-    "analysis": "图中变阻器右端与滑片通过导线相接，实际接入的是左端到滑片的电阻Rp。初始S2、S3断开，总电阻为Rp+R1。滑片右移使Rp增加，总电流减小，所以A错误。单独闭合S2使R2与R1并联，总阻为Rp+R1/2，电流增大；单独闭合S3短接Rp，总阻为R1，电流增大；同时闭合两者，总阻为R1/2，也增大。各操作均相对题给的初始状态，初始Rp>0，选A。",
+    "analysis": "初始S₂、S₃均断开，设变阻器左端至滑片电阻为a>0，滑片至右端为b>0，R₁=R₂=R。初始总电阻为a+R，滑片右移使a增大，电流变小，所以A错误。图中滑片引线与上方导线交叉点未画连接黑点，不能把相连作为唯一读法：若相连，闭合S₂后总电阻为a+R/2；若不相连，总电阻为a+R(R+b)/(2R+b)。两式都小于a+R，故B均正确。单独闭合S₃短接a，总电阻变为R；同时闭合两开关时，总电阻分别为R/2或R(R+b)/(2R+b)，均小于初始值，C、D正确。因此两种交点读法都唯一选A。各操作仍分别从相同初始状态开始。图示滑片并非精确中点，题干仅要求它不在端点。",
     "selection_reason": "电路状态变更要先识别短接与并联，不按开关数量猜电流。",
     "edits": [
       {
         "type": "stem_clarification",
         "description": "补明初始滑片在中间、各项分别从初始状态开始，排除滑片端点及连续累计操作的歧义；不改原图、选项和答案。"
+      },
+      {
+        "type": "review_revision",
+        "description": "滑片改为图示非端点位置，并对交点相连、不相连两种接线分别给出推导；不靠未标黑点补接线。",
+        "revision": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "editor_revised_pending_delta_review",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "pending"
+      }
     },
     "stem_override": [
       {
         "type": "text",
-        "text": "如图所示的电路中，电源电压恒定，P是滑动变阻器的滑片，定值电阻$R_1$、$R_2$的阻值相同。初始时，P位于中间位置，开关$S_1$闭合，$S_2$、$S_3$断开。以下各项操作均分别从该初始状态开始，其他条件不变。下列说法不正确的是（　）。"
+        "text": "如图所示的电路中，电源电压恒定，P是滑动变阻器的滑片，定值电阻$R_1$、$R_2$的阻值相同。初始时，P位于图示位置（不在两端），开关$S_1$闭合，$S_2$、$S_3$断开。以下各项操作均分别从该初始状态开始，其他条件不变。下列说法不正确的是（　）。"
       },
       {
         "type": "figure",
@@ -7196,12 +7944,19 @@
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "stem_override": [
       {
@@ -7347,16 +8102,29 @@
     },
     "source_answer": null,
     "answer": "C",
-    "analysis": "正午高温强光可使叶片失水加快，植物发生暂时水分亏缺，通过气孔部分关闭减少蒸腾；这与题干观察相符。C把蒸腾下降归因于光合作用大量消耗水，既未解释已观察到的气孔变化，也颠倒了植物水分散失的主要途径，错误。A为蒸腾的主要通道，B、D分别说明水分供需变化与调节响应，均成立。",
+    "analysis": "正午外界高温强光可带来较大的失水压力，气孔缩小或关闭使实际蒸腾通量下降，这是环境压力与生理调节共同作用的结果，二者不矛盾。B表达的是可能的水分亏缺，不再断言测量时刻的实际失水速率必然增加。C把蒸腾下降归因于光合作用消耗大量水，未解释气孔调节且混淆主要失水途径，错误；A、D分别说明主要散失通道和调节作用。选C。",
     "selection_reason": "植物午间调节的机制判断，避免把两个生理过程耗水量混淆。",
-    "edits": [],
+    "edits": [
+      {
+        "type": "review_revision",
+        "description": "把B项改为失水压力与水分亏缺，避免与测得正午蒸腾最低的事实形成字面冲突。",
+        "revision": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "editor_revised_pending_delta_review",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "pending"
+      }
     },
     "source_locators": {
       "original_number": 69,
@@ -7368,6 +8136,32 @@
         "source_sha256": "10f074039c1223505bc696a613d6e0df07eb360e3ebcebd37abbaca945139425",
         "pages": 24
       }
+    },
+    "options": {
+      "A": [
+        {
+          "type": "text",
+          "text": "植物体内的大部分水分以水蒸气形式通过叶片气孔散失"
+        }
+      ],
+      "B": [
+        {
+          "type": "text",
+          "text": "在高温强光下，叶片面临较大的失水压力，植物可能出现暂时水分亏缺"
+        }
+      ],
+      "C": [
+        {
+          "type": "text",
+          "text": "正午蒸腾速率下降是因为光合作用消耗了大量水分"
+        }
+      ],
+      "D": [
+        {
+          "type": "text",
+          "text": "气孔部分关闭能够减少水分散失，是植物根据环境变化进行的自我调节"
+        }
+      ]
     }
   },
   {
@@ -7503,14 +8297,27 @@
     "answer": "D",
     "analysis": "夏至日北半球昼长夜短，甲、丙差值为正，在北半球；乙为0，对应赤道附近；丁为负，在南半球，因此A、B、C成立。比较纬度高低应看昼夜长差的绝对值，在题给的非极昼极夜范围内，绝对值越大，纬度越高。丁为2小时，大于甲的1.5小时，所以丁纬度高于甲，D错误。不能把+1.5大于−2误当成甲更高纬。",
     "selection_reason": "从昼夜时差推半球与纬度绝对值，避免只比较带符号大小。",
-    "edits": [],
+    "edits": [
+      {
+        "type": "layout_correction",
+        "description": "移除重复的源库转写备注，题干仍保留昼长减夜长的定义。",
+        "revision": "0.2.0"
+      }
+    ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "editor_revised_pending_delta_review",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "pending"
+      }
     },
     "source_locators": {
       "original_number": 70,
@@ -7522,7 +8329,34 @@
         "source_sha256": "822bd71d69b9d482e6639514477584b21397c3e930705142a5f2b6089dd6b885",
         "pages": 25
       }
-    }
+    },
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "下表为小明在夏至日（6月22日）这天记录的甲、乙、丙、丁四个地方的白昼时长和黑夜时长的差值（白昼时长-黑夜时长），下列说法不正确的是（    ）。"
+      },
+      {
+        "type": "table",
+        "title": "夏至日白昼时长与黑夜时长的差值",
+        "headers": [
+          "地方",
+          "甲",
+          "乙",
+          "丙",
+          "丁"
+        ],
+        "rows": [
+          [
+            "差值/h",
+            "1.5",
+            "0",
+            "3",
+            "−2"
+          ]
+        ],
+        "source_asset_id": "s17_p19_i00"
+      }
+    ]
   },
   {
     "number": 71,
@@ -7825,9 +8659,9 @@
       }
     },
     "source_answer": null,
-    "answer": "B",
-    "analysis": "网络购物跨境收支增长量=1215×26.4%/1.264≈253.77亿美元；新型离岸贸易增长量=154×18.2%/1.182≈23.71亿美元；两者相差约230.05亿美元，选B。增长率较高不直接等于增长量差，需要分别还原各自基数。",
-    "selection_reason": "将原文直接摘抄题改为两个不同基数的增长量比较。",
+    "answer": "A",
+    "analysis": "A与材料一致：取消的是名录登记的行政许可，登记改由境内银行直接办理，不是登记本身取消。B把境外资金汇入广州外资非企业科研机构，改成境内企业资金汇往境外，方向与对象均不符。C把优质中小企业、“专精特新”企业换成另一类企业。D把集中外债、境外放款额度合计误当成已经发生的资金收付。该题须定位材料并核对政策行为及对象，无须重复计算离岸贸易的基期规模。",
+    "selection_reason": "保留文字检索的独立训练价值，区分办理方式、资金方向、受益对象及额度与实流，不重复第74题的离岸基期计算。",
     "edits": [
       {
         "type": "adapted_question",
@@ -7836,45 +8670,57 @@
       {
         "type": "material_paragraphs",
         "description": "依据源库保存的行首缩进坐标和材料语义恢复真实分段；不改材料字符、数值和顺序。未声称已逐页查看原PDF。"
+      },
+      {
+        "type": "adapted_question_revision",
+        "description": "接受恢复文字检索价值的建议，但重写实质干扰项，不原样恢复易凭“大规模降低关税”排除的旧题。",
+        "revision": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "editor_revised_pending_delta_review",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "pending"
+      }
     },
     "stem_override": [
       {
         "type": "text",
-        "text": "2024年，广东省网络购物跨境收支的同比增长量，约比新型离岸国际贸易跨境收支的同比增长量多多少亿美元？"
+        "text": "根据资料，下列对2024年广东省有关外汇管理举措的理解，正确的是（　）。"
       }
     ],
     "options": {
       "A": [
         {
           "type": "text",
-          "text": "180"
+          "text": "外贸企业名录登记取消行政许可后，改为在境内银行直接办理"
         }
       ],
       "B": [
         {
           "type": "text",
-          "text": "230"
+          "text": "“科汇通”试点支持境内企业将科研开办资金直接汇往境外科研机构"
         }
       ],
       "C": [
         {
           "type": "text",
-          "text": "270"
+          "text": "跨境贸易高水平开放重点加大大型国有企业和上市公司的推荐力度"
         }
       ],
       "D": [
         {
           "type": "text",
-          "text": "310"
+          "text": "跨境资金池试点的3002亿美元，指相关企业已经实际收到的跨境资金"
         }
       ]
     },
@@ -8412,12 +9258,19 @@
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "stem_override": [
       {
@@ -8945,12 +9798,19 @@
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "materials": [
       {
@@ -9446,12 +10306,19 @@
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "materials": [
       {
@@ -9984,21 +10851,33 @@
     },
     "source_answer": null,
     "answer": "D",
-    "analysis": "QFLP累计10家、QDLP累计5家，前者是后者2倍，D可推出。B的103/1213≈8.49%，不到10%；C扩围到广东全辖，不是全国。A虽可算出2023年规模约1.981万亿美元，但只有前一年低于2万亿，不能证明更早年份都未突破，材料也未给出“首次”，故不能据此推出A。",
+    "analysis": "D可推出：QFLP试点累计10家、QDLP累计5家，前者是后者2倍。B的103/1213约8.49%，不足10%；C将全省扩围误说为全国。A的“首次”没有足够历史资料支持。若将展示数值按精确数计算，上一年约为2.3/1.161=1.981万亿美元；但2.3只有一位小数，若按通常四舍五入处理，现期可能在[2.25,2.35)，以1.161为增长倍数得到上年约[1.938,2.024)万亿美元，连上年是否低于2万亿也不能确定。即便忽略这项精度问题，只知道上一年仍不足以判断更早年份，从而不能证明“首次”。",
     "selection_reason": "综合判断区分明确数量关系与材料未提供的历史首次。",
     "edits": [
       {
         "type": "material_paragraphs",
         "description": "依据源库保存的行首缩进坐标和材料语义恢复真实分段；不改材料字符、数值和顺序。未声称已逐页查看原PDF。"
+      },
+      {
+        "type": "analysis_revision",
+        "description": "补充展示精度带来的区间，避免把近似反推值写成已证实的历史事实。",
+        "revision": "0.2.0"
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "editor_revised_pending_delta_review",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "pending"
+      }
     },
     "materials": [
       {
@@ -10502,12 +11381,19 @@
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "materials": [
       {
@@ -11111,12 +11997,19 @@
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "materials": [
       {
@@ -11627,12 +12520,19 @@
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "materials": [
       {
@@ -12151,12 +13051,19 @@
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "materials": [
       {
@@ -12702,12 +13609,19 @@
       }
     ],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "materials": [
       {
@@ -13179,12 +14093,19 @@
     "selection_reason": "由五年规划时间范围限定样本，再比较比值而非单项产量。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "source_locators": {
       "original_number": 76,
@@ -13460,12 +14381,19 @@
     "selection_reason": "先确认十四五含2025，再用相邻年份的现期比值外推。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "source_locators": {
       "original_number": 77,
@@ -13732,12 +14660,19 @@
     "selection_reason": "排名区间求和，避免把前三与后三错读成单一最大最小。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "source_locators": {
       "original_number": 78,
@@ -14013,12 +14948,19 @@
     "selection_reason": "增长贡献率可以超过100%，不要凭数值范围排除。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "source_locators": {
       "original_number": 79,
@@ -14314,12 +15256,19 @@
     "selection_reason": "看增速趋势而非面积绝对量趋势，利用形态减少精算。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "source_locators": {
       "original_number": 80,
@@ -14556,12 +15505,19 @@
     "selection_reason": "相近选项下保持平均数有效精度。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "source_locators": {
       "original_number": 76,
@@ -14797,12 +15753,19 @@
     "selection_reason": "在接近的分数中比较负债率，而非只比负债绝对量。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "source_locators": {
       "original_number": 77,
@@ -15038,12 +16001,19 @@
     "selection_reason": "累计转单月后再找月份，再计算环比，连续三层口径转换。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "source_locators": {
       "original_number": 78,
@@ -15288,12 +16258,19 @@
     "selection_reason": "累计合计与指定月份基数对比，不擅自转换为单月。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "source_locators": {
       "original_number": 79,
@@ -15556,12 +16533,19 @@
     "selection_reason": "多指标综合判断，按单月与存量分别处理并找反例。",
     "edits": [],
     "verification": {
-      "status": "editor_checked_pending_claude",
+      "status": "claude_reviewed_baseline_retained",
       "method": "本轮对已保存断点作题面、解法及答案复核；已见断点答案，不冒称本轮盲解。数值与枚举另见可重复核验脚本，图形题实际查看。",
       "source_answer_available": false,
       "source_answer_agreement": null,
       "checked_on": "2026-11-15",
-      "external_review": "pending_claude"
+      "external_review": {
+        "reviewer": "Claude",
+        "reviewed_version": "0.1.0",
+        "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+        "review_finding": "baseline_answer_agreement",
+        "current_revision": "0.2.0",
+        "delta_recheck": "no_answer_or_question_change"
+      }
     },
     "source_locators": {
       "original_number": 80,

@@ -1,0 +1,418 @@
+{
+  "status": "PASS",
+  "paper_id": "M02",
+  "checks": {
+    "31": {
+      "differences": [
+        -2,
+        4,
+        -8,
+        16,
+        -32
+      ],
+      "answer_value": 19
+    },
+    "32": {
+      "first_differences": [
+        6,
+        11,
+        17,
+        24,
+        32
+      ],
+      "second_differences": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "answer_value": 102
+    },
+    "33": {
+      "even_cubes_plus_alternating_one": [
+        9,
+        63,
+        217,
+        511,
+        1001
+      ]
+    },
+    "34": {
+      "rewritten_fractions": [
+        "4/1",
+        "6/3",
+        "8/5",
+        "10/7",
+        "12/9",
+        "14/11"
+      ],
+      "next": "14/11"
+    },
+    "35": [
+      3,
+      7,
+      23,
+      95,
+      479,
+      2879
+    ],
+    "36": {
+      "A_to_B_ml": 300,
+      "B_final_ml": 500,
+      "final_concentration": "9/50"
+    },
+    "37": [
+      [
+        78,
+        45,
+        22
+      ]
+    ],
+    "38": {
+      "L": 2640,
+      "speeds_m_per_min": [
+        "48",
+        "40"
+      ],
+      "positions_from_A": [
+        "1440",
+        "960"
+      ],
+      "meeting_times_min": [
+        30,
+        90
+      ]
+    },
+    "39": {
+      "costs": [
+        200,
+        240
+      ],
+      "selling_prices": [
+        260,
+        180
+      ],
+      "total_revenue": 440
+    },
+    "40": [
+      {
+        "length_m": 90,
+        "washing": 24,
+        "flood": 12,
+        "laser": 7,
+        "cost": 8620
+      }
+    ],
+    "41": {
+      "efficiencies": [
+        6,
+        3,
+        10
+      ],
+      "work": 70,
+      "max_elapsed_days": 10,
+      "min_C_days": 4
+    },
+    "42": {
+      "group_assignments": 155
+    },
+    "43": {
+      "all_equal_probability_sequences": 1000,
+      "target_cup_down": 504,
+      "probability": "63/125"
+    },
+    "44": {
+      "lower_bound": "12",
+      "feasible_sorted_months": [
+        12,
+        16,
+        20,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36
+      ],
+      "total": 234
+    },
+    "45": {
+      "total_area": "2",
+      "yellow_area": "2/3",
+      "yellow_blue_ratio": "1/2"
+    },
+    "51": {
+      "all_premise_models": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          true
+        ],
+        [
+          false,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "entailed_1_to_4": [
+        false,
+        true,
+        true,
+        false
+      ]
+    },
+    "53": {
+      "valid_assignments": [
+        "BCDEAF",
+        "DCBEFA"
+      ]
+    },
+    "56": [
+      [
+        "财务",
+        "办公室",
+        "人事"
+      ]
+    ],
+    "59": {
+      "names": [
+        "明",
+        "军",
+        "花",
+        "飞",
+        "雅"
+      ],
+      "assignments": [
+        [
+          [
+            "蓝",
+            "星"
+          ],
+          [
+            "红",
+            "圆"
+          ],
+          [
+            "红",
+            "心"
+          ],
+          [
+            "蓝",
+            "圆"
+          ],
+          [
+            "黄",
+            "心"
+          ]
+        ]
+      ]
+    },
+    "62": [
+      {
+        "compatible_count": 2,
+        "entails_cutting": false
+      },
+      {
+        "compatible_count": 0,
+        "entails_cutting": false
+      },
+      {
+        "compatible_count": 2,
+        "entails_cutting": false
+      },
+      {
+        "compatible_count": 1,
+        "entails_cutting": true
+      }
+    ],
+    "67": {
+      "initial": "U/(Rp+R)",
+      "S2": "U/(Rp+R/2)",
+      "S3": "U/R",
+      "both": "2U/R",
+      "parameter_cases": 8
+    },
+    "68": {
+      "assumptions": [
+        "no_initial_undissolved_sugar",
+        "A_B_C_same_temperature",
+        "heating_no_evaporation_no_decomposition"
+      ],
+      "sugar_and_water_unchanged_during_heating": true
+    },
+    "70": {
+      "day_minus_night_h": [
+        1.5,
+        0,
+        3,
+        -2
+      ],
+      "latitude_absolute_order": "丙>丁>甲>乙",
+      "false_statement": "甲地的纬度高于丁地"
+    },
+    "71": {
+      "web_increment": 253.76582278481013,
+      "offshore_increment": 23.712351945854483,
+      "difference": 230.05347083895563
+    },
+    "72": {
+      "current_share_percent": 5.282608695652174,
+      "prior_share_percent": 4.852142955421024,
+      "delta_pp": 0.43046574023115003
+    },
+    "73": {
+      "national_increment_trillion_rmb": 2.098718365080037
+    },
+    "74": {
+      "prior_offshore_100m_usd": 130.28764805414554
+    },
+    "75": {
+      "hosts_to_beneficiaries_percent": 8.491343775762573,
+      "QFLP_QDLP_ratio": 2.0,
+      "prior_crossborder_trillion_usd": 1.9810508182601203
+    },
+    "76": {
+      "2019": 13.517350157728707,
+      "six_year_average": 10.592891692954785
+    },
+    "77": {
+      "east_central_west_northeast_percent": [
+        51.849315068493155,
+        11.027397260273974,
+        30.75342465753425,
+        6.36986301369863
+      ],
+      "image_match": "C"
+    },
+    "78": {
+      "more_times": 1.434619601740176
+    },
+    "79": {
+      "passenger_share_rises": [
+        "东部"
+      ],
+      "cargo_share_rises": [
+        "中部",
+        "西部"
+      ],
+      "intersection_count": 0
+    },
+    "80": {
+      "cargo_median": 1683.31,
+      "cargo_2021_vs2019": 0.04245999999999994,
+      "rate_difference_pp": 24.200000000000003,
+      "max_growth_passenger_year": 2023,
+      "max_growth_cargo_year": 2024
+    },
+    "81": {
+      "2016": 4.790398628375482,
+      "2017": 4.908973252804142,
+      "2018": 4.904272801972063,
+      "2019": 5.036837748344371,
+      "2020": 5.105822354441139
+    },
+    "82": {
+      "2025_forecast": 11538.576740506329,
+      "2021_2025_total": 57061.57674050633
+    },
+    "83": {
+      "top3": 9844.12,
+      "rank6to8": 217.73999999999998,
+      "ratio": 45.21043446312116
+    },
+    "84": {
+      "Yunnan_increment": 99.99101599247415,
+      "national_increment": 81,
+      "contribution_percent": 123.44569875614093
+    },
+    "85": {
+      "2015": -9.478127398311587,
+      "2016": -1.102161933022472,
+      "2017": -0.6429489927132437,
+      "2018": 5.0043140638481365,
+      "2019": -0.7395234182415722,
+      "2020": -2.6076158940397387,
+      "2021": -7.0548236294092685,
+      "2022": -0.32007315957933713,
+      "2023": -2.6146788990825676,
+      "2024": 4.569006123410269
+    },
+    "86": {
+      "average_asset": 5.269772256728778
+    },
+    "87": {
+      "months2_to6_debt_ratios": [
+        0.39389772617940416,
+        0.39874029373302083,
+        0.39989578462684555,
+        0.39858325692479224,
+        0.40084469414214435
+      ]
+    },
+    "88": {
+      "monthly_sales": [
+        373.8,
+        312.6,
+        314.3,
+        390.5
+      ],
+      "monthly_finance": [
+        1.5,
+        0.8,
+        8.3,
+        -2.4
+      ],
+      "growth_in_min_sales_month": -0.4666666666666667
+    },
+    "89": {
+      "ratio": 3.1431400594124765
+    },
+    "90": {
+      "monthly_sales": [
+        373.8,
+        312.6,
+        314.3,
+        390.5
+      ],
+      "monthly_admin": [
+        147.8,
+        127.5,
+        128.1,
+        145.1
+      ],
+      "monthly_finance": [
+        1.5,
+        0.8,
+        8.3,
+        -2.4
+      ],
+      "equity_months2_to6": [
+        30238.2,
+        30299.1,
+        30288.7,
+        30369.2,
+        30500.6
+      ],
+      "sales_all_more_than_two_times_admin": true
+    }
+  },
+  "limits": [
+    "有限枚举核验计数和条件模型，不能证明政策表述、言语最优项或图形规律的绝对唯一性。",
+    "本脚本不是Claude独立审核；原材料统计事实未作为外部经济数据逐项核实。"
+  ]
+}

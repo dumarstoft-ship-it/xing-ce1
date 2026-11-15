@@ -1,6 +1,6 @@
 {
   "paper_id": "M02",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "source_snapshot": "5800414d9cb40bfcfe66888eb87bb44631eac38f",
   "target_question_count": 90,
   "missing_numbers": [],
@@ -15,9 +15,54 @@
   },
   "date": "2026-11-15",
   "date_timezone": "Asia/Shanghai",
-  "status": "editor_checked_review_draft",
-  "external_review": "pending_claude",
+  "status": "editor_revised_after_claude_review",
+  "external_review": "claude_reviewed_v0.1.0_revisions_pending_recheck",
   "printing_status": "not_started",
-  "display_status": "90题已编齐并经编辑核验；待Claude独立审核，尚非打印定稿。",
-  "structure_basis": "沿用项目近年广东90题结构；不承诺未来考试固定题量。"
+  "display_status": "Claude已审核0.1.0；本稿为意见处理后的0.2.0，新增与改动项待增量复核，尚非打印定稿。",
+  "structure_basis": "沿用项目近年广东90题结构；不承诺未来考试固定题量。",
+  "review_baseline": {
+    "version": "0.1.0",
+    "commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+    "initial_answer_agreement": 87,
+    "initial_disagreements": [
+      17,
+      28,
+      61
+    ],
+    "resolved_after_review": [
+      17,
+      28
+    ],
+    "withdrawn_ambiguous": [
+      61
+    ]
+  },
+  "revision_recheck_numbers": [
+    3,
+    5,
+    6,
+    7,
+    8,
+    11,
+    25,
+    27,
+    28,
+    31,
+    32,
+    36,
+    38,
+    44,
+    47,
+    51,
+    53,
+    58,
+    60,
+    61,
+    65,
+    67,
+    69,
+    70,
+    71,
+    75
+  ]
 }

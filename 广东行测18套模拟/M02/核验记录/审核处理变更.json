@@ -1,0 +1,172 @@
+[
+  {
+    "number": 1,
+    "reason": "核对讲义原页，将从严治吏定位由第10页更正为第9页；公报全文两项表述成立。",
+    "type": "source_correction"
+  },
+  {
+    "number": 3,
+    "reason": "去掉极端否定的送分提示，改考前提与结果的关系；答案随题意调整，不为打乱对错顺序。",
+    "type": "review_revision"
+  },
+  {
+    "number": 5,
+    "reason": "保留已核实的公报依据；用两类监督责任对调替换“代替”的明显提示。",
+    "type": "review_revision"
+  },
+  {
+    "number": 6,
+    "reason": "接受弱干扰项问题，但不改成孤立背诵讲话原句；用双向延伸的概念归类检验理解。",
+    "type": "review_revision"
+  },
+  {
+    "number": 7,
+    "reason": "不再重复M01同题位的矛盾主次情境，改为扬弃的机制辨析；不强制全套政治题位重排。",
+    "type": "review_revision"
+  },
+  {
+    "number": 8,
+    "reason": "删去干扰项自带的“政府”提示，保留分配机制辨别。",
+    "type": "review_revision"
+  },
+  {
+    "number": 9,
+    "reason": "将两步走战略对应的报告章节更正为第三部分。",
+    "type": "source_correction"
+  },
+  {
+    "number": 11,
+    "reason": "补齐活体出生后死亡时预留份额的继承后果。",
+    "type": "analysis_revision"
+  },
+  {
+    "number": 12,
+    "reason": "删除来源定位中的过时距离，不把同一省情主题视为用户一定做过本题。",
+    "type": "source_correction"
+  },
+  {
+    "number": 25,
+    "reason": "替换逆向下文推断为正向细节判断，训练机制、结果与证据边界；不因旧题有错而撤下。",
+    "type": "source_replacement"
+  },
+  {
+    "number": 32,
+    "reason": "用多位数分组替代一条常规二级差数列，增加识别计数对象的变化，不为答案配平。",
+    "type": "source_replacement"
+  },
+  {
+    "number": 61,
+    "reason": "撤下B、D均可支持结论的争议题，换成结构相似题；按同一谓词、否定方向和论证形式独立核验。",
+    "type": "source_replacement"
+  },
+  {
+    "number": 27,
+    "reason": "恢复最后一条留言与设问之间的换行，撤回原格式日志对此处的硬换行误判。",
+    "type": "layout_correction"
+  },
+  {
+    "number": 16,
+    "reason": "在解析与来源登记中明确标注网友回忆版的证据边界。",
+    "type": "source_correction"
+  },
+  {
+    "number": 17,
+    "reason": "在解析与来源登记中明确标注网友回忆版的证据边界。",
+    "type": "source_correction"
+  },
+  {
+    "number": 27,
+    "reason": "在解析与来源登记中明确标注网友回忆版的证据边界。",
+    "type": "source_correction"
+  },
+  {
+    "number": 28,
+    "reason": "补明名句填空仍须依据全文重点，不以回忆原讲话代替判断。",
+    "type": "analysis_revision"
+  },
+  {
+    "number": 31,
+    "reason": "规范负号。",
+    "type": "layout_correction"
+  },
+  {
+    "number": 36,
+    "reason": "将题干ml统一写为毫升，数值和单位含义不变。",
+    "type": "layout_correction"
+  },
+  {
+    "number": 38,
+    "reason": "补充各折返时刻，核对第二次相遇前不会先发生同向追及。",
+    "type": "analysis_revision"
+  },
+  {
+    "number": 44,
+    "reason": "使用与排名方向一致的降序记号，并补足题干月份表达；解法与答案不变。",
+    "type": "review_revision"
+  },
+  {
+    "number": 47,
+    "reason": "实际放大查看原图第二行，修正共同消去的三角形块数为三块。",
+    "type": "analysis_revision"
+  },
+  {
+    "number": 51,
+    "reason": "修正形式逻辑术语，保留用于排除错误命题的反例。",
+    "type": "analysis_revision"
+  },
+  {
+    "number": 53,
+    "reason": "把可能项与必然项分开：A只需有可行方案，不表述为两方案都实现A。",
+    "type": "analysis_revision"
+  },
+  {
+    "number": 54,
+    "reason": "统一问号、英文名称后空格或重复句末标点；不改命题含义。",
+    "type": "layout_correction"
+  },
+  {
+    "number": 58,
+    "reason": "统一问号、英文名称后空格或重复句末标点；不改命题含义。",
+    "type": "layout_correction"
+  },
+  {
+    "number": 60,
+    "reason": "统一问号、英文名称后空格或重复句末标点；不改命题含义。",
+    "type": "layout_correction"
+  },
+  {
+    "number": 65,
+    "reason": "统一问号、英文名称后空格或重复句末标点；不改命题含义。",
+    "type": "layout_correction"
+  },
+  {
+    "number": 56,
+    "reason": "补全旧编辑说明：删去“由于表现较好”“正式”等背景措辞，将“将分到”整理为“分别入职”，并改写猜测引语为编号陈述；互不相同条件已在0.1.0明确，本轮不再改题面。",
+    "type": "provenance_completion"
+  },
+  {
+    "number": 67,
+    "reason": "滑片改为图示非端点位置，并对交点相连、不相连两种接线分别给出推导；不靠未标黑点补接线。",
+    "type": "review_revision"
+  },
+  {
+    "number": 69,
+    "reason": "把B项改为失水压力与水分亏缺，避免与测得正午蒸腾最低的事实形成字面冲突。",
+    "type": "review_revision"
+  },
+  {
+    "number": 70,
+    "reason": "移除重复的源库转写备注，题干仍保留昼长减夜长的定义。",
+    "type": "layout_correction"
+  },
+  {
+    "number": 71,
+    "reason": "接受恢复文字检索价值的建议，但重写实质干扰项，不原样恢复易凭“大规模降低关税”排除的旧题。",
+    "type": "adapted_question_revision"
+  },
+  {
+    "number": 75,
+    "reason": "补充展示精度带来的区间，避免把近似反推值写成已证实的历史事实。",
+    "type": "analysis_revision"
+  }
+]

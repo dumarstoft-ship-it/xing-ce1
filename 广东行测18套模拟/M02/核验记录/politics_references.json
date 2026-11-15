@@ -1,74 +1,248 @@
 {
-  "fifth": {
-    "title": "中国共产党第二十届中央委员会第五次全体会议公报",
-    "url": "https://www.samr.gov.cn/jjz/ywdt/art/2026/art_039a84dda36040b980419f03fc874e23.html",
-    "locator": "2026年10月29日通过；根本性任务、从严治吏、主体、政治建设统领及党章地位",
-    "checked_on": "2026-11-15"
-  },
-  "culture": {
-    "title": "两个结合（习近平2023年6月2日讲话节录）",
-    "url": "https://www.12371.cn/2023/11/28/STUD1701138144762931.shtml",
-    "locator": "第二，结合的结果是互相成就；第三，道路与文明的关系",
-    "checked_on": "2026-11-15"
-  },
-  "industries": {
-    "title": "广东省推动制造业与服务业协同融合发展2026年行动方案",
-    "url": "https://www.gzwxb.gov.cn/context/contextId/215610",
-    "locator": "2026年3月公布；总要求及第十、十一项，制造业服务化与服务业制造化",
-    "checked_on": "2026-11-15"
-  },
-  "conference": {
-    "title": "广东省高质量发展大会讲话实录（2026）",
-    "url": "https://da.gd.gov.cn/portal_home/content/10408",
-    "locator": "2026年2月24日；制造业与服务业协同发展的主题及内涵",
-    "checked_on": "2026-11-15"
-  },
-  "distribution": {
-    "title": "如何理解构建初次分配、再分配、第三次分配协调配套的制度体系",
-    "url": "https://www.12371.cn/2023/03/02/ARTI1677755948047657.shtml",
-    "locator": "二十大报告辅导百问；初次分配、政府调节与公益慈善的区分",
-    "checked_on": "2026-11-15"
-  },
-  "fourth": {
-    "title": "中国共产党第二十届中央委员会第四次全体会议公报",
-    "url": "https://www.cnsa.gov.cn/n6758823/n6758838/c10712454/content.html",
-    "locator": "2025年10月23日通过；十五五定位、2035目标与经济社会发展要求",
-    "checked_on": "2026-11-15"
-  },
-  "security": {
-    "title": "党的二十大报告",
-    "url": "https://app.www.gov.cn/govdata/gov/202210/25/493662/article.html",
-    "locator": "第十一部分：总体国家安全观；亦含两步走战略安排",
-    "checked_on": "2026-11-15"
-  },
-  "civil": {
-    "title": "中华人民共和国民法典",
-    "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_60fb3863b7364b759123a42d1df568ca.html",
-    "locator": "第13、16条；第1155条，胎儿利益保护及预留继承份额",
-    "checked_on": "2026-11-15"
-  },
-  "bridge": {
-    "title": "深中通道项目（中山市政府）",
-    "url": "https://www.zs.gov.cn/zschq/gkmlpt/content/2/2610/post_2610092.html?jump=true",
-    "locator": "东隧西桥；起于深圳向西跨珠江口，在中山登陆；南距港珠澳大桥约38公里",
-    "checked_on": "2026-11-15"
-  },
-  "party1945": {
-    "title": "中国共产党党章（1945年6月11日七大通过）",
-    "url": "https://fuwu.12371.cn/2012/09/21/ARTI1348215626066289.shtml",
-    "locator": "总纲：毛泽东思想作为一切工作的指针",
-    "checked_on": "2026-11-15"
-  },
-  "satellite": {
-    "title": "科学实验卫星：空间科学研究“群星”闪耀（国家航天局）",
-    "url": "https://www.cnsa.gov.cn/n6758968/n6758974/c6797018/content.html",
-    "locator": "悟空暗物质粒子、墨子量子科学、慧眼硬X射线调制望远镜",
-    "checked_on": "2026-11-15"
-  },
-  "ministries": {
-    "title": "公元620年代：解码大唐的三省六部制",
-    "url": "https://www.ccdi.gov.cn/2020/202005/t20200529_219088.html",
-    "locator": "中书起草、门下审议封驳、尚书具体执行",
-    "checked_on": "2026-11-15"
+  "version": "0.2.0",
+  "by_question": {
+    "1": {
+      "kind": "original",
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        6,
+        9
+      ],
+      "references": [
+        {
+          "title": "中国共产党第二十届中央委员会第五次全体会议公报",
+          "url": "https://www.samr.gov.cn/jjz/ywdt/art/2026/art_039a84dda36040b980419f03fc874e23.html",
+          "locator": "公报“增强党性”段、“从严治吏”段；均已读取全文核实。讲义分别见第6、9页。",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    "2": {
+      "kind": "original",
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        45
+      ],
+      "references": []
+    },
+    "3": {
+      "kind": "original",
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        20,
+        31,
+        32
+      ],
+      "references": [
+        {
+          "title": "两个结合（习近平2023年6月2日讲话节录）",
+          "url": "https://www.12371.cn/2023/11/28/STUD1701138144762931.shtml",
+          "locator": "第二，结合的结果是互相成就；第三，道路与文明的关系",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    "4": {
+      "kind": "original",
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        46
+      ],
+      "references": []
+    },
+    "5": {
+      "kind": "original",
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        5,
+        12,
+        18,
+        19
+      ],
+      "references": [
+        {
+          "title": "中国共产党第二十届中央委员会第五次全体会议公报",
+          "url": "https://www.samr.gov.cn/jjz/ywdt/art/2026/art_039a84dda36040b980419f03fc874e23.html",
+          "locator": "2026年10月29日通过；根本性任务、从严治吏、主体、政治建设统领及党章地位",
+          "checked_on": "2026-11-15"
+        },
+        {
+          "title": "《中国共产党纪律检查机关监督执纪工作规则》第十三条释义",
+          "url": "https://www.ccdi.gov.cn/djfg/fgsy/202003/t20200326_214284.html",
+          "locator": "党委（党组）主体责任与纪检监察机关监督责任",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    "6": {
+      "kind": "original",
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        67,
+        68,
+        69
+      ],
+      "references": [
+        {
+          "title": "广东省推动制造业与服务业协同融合发展2026年行动方案",
+          "url": "https://www.gzwxb.gov.cn/context/contextId/215610",
+          "locator": "第十项制造业服务化、第十一项服务业制造化；实际读取全文",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    "7": {
+      "kind": "original",
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        41
+      ],
+      "references": [
+        {
+          "title": "学习运用否定之否定规律",
+          "url": "https://www.jssjw.gov.cn/art/2024/4/23/art_435_28914.html",
+          "locator": "关于辩证否定既克服又保留、扬弃的说明；辅以用户讲义第41页",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    "8": {
+      "kind": "original",
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        26,
+        27
+      ],
+      "references": [
+        {
+          "title": "如何理解构建初次分配、再分配、第三次分配协调配套的制度体系",
+          "url": "https://www.12371.cn/2023/03/02/ARTI1677755948047657.shtml",
+          "locator": "二十大报告辅导百问；初次分配、政府调节与公益慈善的区分",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    "9": {
+      "kind": "original",
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        23,
+        62,
+        63
+      ],
+      "references": [
+        {
+          "title": "中国共产党第二十届中央委员会第四次全体会议公报",
+          "url": "https://www.cnsa.gov.cn/n6758823/n6758838/c10712454/content.html",
+          "locator": "2025年10月23日通过；十五五定位、2035目标与经济社会发展要求",
+          "checked_on": "2026-11-15"
+        },
+        {
+          "title": "党的二十大报告",
+          "url": "https://app.www.gov.cn/govdata/gov/202210/25/493662/article.html",
+          "locator": "第三部分“新时代新征程中国共产党的使命任务”：分两步走战略安排；非第十一部分。",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    "10": {
+      "kind": "original",
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        34
+      ],
+      "references": [
+        {
+          "title": "党的二十大报告",
+          "url": "https://app.www.gov.cn/govdata/gov/202210/25/493662/article.html",
+          "locator": "第十一部分：总体国家安全观；亦含两步走战略安排",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    "11": {
+      "kind": "original",
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        93
+      ],
+      "references": [
+        {
+          "title": "中华人民共和国民法典",
+          "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_60fb3863b7364b759123a42d1df568ca.html",
+          "locator": "第13、16条；第1155条，胎儿利益保护及预留继承份额",
+          "checked_on": "2026-11-15"
+        },
+        {
+          "title": "最高人民法院关于适用《中华人民共和国民法典》继承编的解释（一）",
+          "url": "https://www.court.gov.cn/fabu/xiangqing/282091.html",
+          "locator": "第三十一条；已核对最高法全文",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    "12": {
+      "kind": "original",
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        76
+      ],
+      "references": [
+        {
+          "title": "深中通道项目（中山市政府）",
+          "url": "https://www.zs.gov.cn/zschq/gkmlpt/content/2/2610/post_2610092.html?jump=true",
+          "locator": "东隧西桥，深圳一侧出发向西跨珠江口、在中山登陆。仅用于稳定区位，不引用其早期距离数据。",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    "13": {
+      "kind": "original",
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        51,
+        53,
+        54
+      ],
+      "references": [
+        {
+          "title": "中国共产党党章（1945年6月11日七大通过）",
+          "url": "https://fuwu.12371.cn/2012/09/21/ARTI1348215626066289.shtml",
+          "locator": "总纲：毛泽东思想作为一切工作的指针",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    "14": {
+      "kind": "original",
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        106,
+        107
+      ],
+      "references": [
+        {
+          "title": "科学实验卫星：空间科学研究“群星”闪耀（国家航天局）",
+          "url": "https://www.cnsa.gov.cn/n6758968/n6758974/c6797018/content.html",
+          "locator": "悟空暗物质粒子、墨子量子科学、慧眼硬X射线调制望远镜",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    "15": {
+      "kind": "original",
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        97
+      ],
+      "references": [
+        {
+          "title": "公元620年代：解码大唐的三省六部制",
+          "url": "https://www.ccdi.gov.cn/2020/202005/t20200529_219088.html",
+          "locator": "中书起草、门下审议封驳、尚书具体执行",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    }
   }
 }

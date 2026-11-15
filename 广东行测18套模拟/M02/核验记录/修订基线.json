@@ -1,0 +1,91 @@
+{
+  "version": "0.2.0",
+  "source_bank_sha256": {
+    "国考/言语理解/2016-2025/all.jsonl": "f3e468935dadeaa7dcdd778bd59da40f2100c53012ab161c251818f3e3313ba9",
+    "模考/2026下半年广东卷_16-33季_AI可读/全部题目.jsonl": "12fb48ab01e38b88ff19d85e59e463730f290407350207e00afe318f597fa3b9",
+    "江浙行测_AI题库/questions.jsonl": "07b748dd27d44132d7734279306f724981a89de028d19d229c989f00fd9b7c93"
+  },
+  "review_commit": "b4b4d07ded2e7c2eb0e18523eef1d35252dc9048",
+  "baseline_selection_sha256": "c1e1caf8ff62db5016b330277946dc8cb754879a85f843e035cf62ec21b3a6ef",
+  "current_selection_sha256": "f02c48786fc90cae25483a391de7ac472db3c01e4f9aae6e563019e72721a3b6",
+  "body_changed_numbers": [
+    3,
+    5,
+    6,
+    7,
+    8,
+    25,
+    27,
+    31,
+    32,
+    36,
+    44,
+    58,
+    60,
+    61,
+    65,
+    67,
+    69,
+    70,
+    71
+  ],
+  "analysis_only_numbers": [
+    11,
+    28,
+    38,
+    47,
+    51,
+    53,
+    75
+  ],
+  "provenance_only_numbers": [
+    1,
+    9,
+    12,
+    16,
+    17,
+    54,
+    56
+  ],
+  "expected_replacements": {
+    "25": {
+      "old": "ZJ2025-A类-035",
+      "new": "GKYY-2022-057"
+    },
+    "32": {
+      "old": "gd-mock-2026h2-s18-q32",
+      "new": "gd-mock-2026h2-s17-q35"
+    },
+    "61": {
+      "old": "ZJ2023-A类-107",
+      "new": "gd-mock-2026h2-s25-q61"
+    }
+  },
+  "answer_changes": [
+    {
+      "number": 3,
+      "old": "正确",
+      "new": "错误"
+    },
+    {
+      "number": 25,
+      "old": "D",
+      "new": "B"
+    },
+    {
+      "number": 32,
+      "old": "A",
+      "new": "D"
+    },
+    {
+      "number": 61,
+      "old": "D",
+      "new": "A"
+    },
+    {
+      "number": 71,
+      "old": "B",
+      "new": "A"
+    }
+  ]
+}

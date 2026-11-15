@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "paper_id": "M02",
+  "version": "0.1.0",
+  "question_count": 90,
+  "original_politics_and_knowledge": 15,
+  "selected_source_records_preserved": 75,
+  "checkpoint_ids_and_answers_preserved": 75,
+  "source_reference_answers_matched": 28,
+  "M01_source_id_collisions": [],
+  "M01_exact_normalized_question_matches": [],
+  "M01_files_unchanged": true,
+  "other_papers_ledger_preserved": true,
+  "M02_ledger_entries": 90,
+  "material_group_count": 4,
+  "unique_question_figures": 13,
+  "numeric_logical_check_groups": 43,
+  "answer_table_blocks": 9,
+  "source_edit_questions": [
+    38,
+    43,
+    56,
+    67,
+    68,
+    71,
+    72
+  ],
+  "rebuild_identical": true,
+  "output_sha256": {
+    "selection.json": "74576854958fe537ca04ebe41c171262fbf4c3e5d7166532bd974f4d9d2254bb",
+    "paper.json": "a328af026734386860891be2e3c2bd365356ba452eb0b040b5e47f0450255d65",
+    "题目.jsonl": "ff1dc0c120cd82b12b25d13d79a43016b2f35511f75e29b898c422db983b970e",
+    "题本_待审.md": "116a2e0b9da04869b6ba74fffdaddc300060b8eef1a34eebce61bac11ce6e913",
+    "答案与解析_待审.md": "1566046dc459d98364bcd5642464112bc2fbe3dca0c2726f5676700839019f4e",
+    "来源登记.jsonl": "9dc1df762d5a27511cc63058ecf01aef5e721f43db834c2dad3ce15e02f69232",
+    "核验报告.json": "b9bc5e119bebb26dd1cfcc56d418a885aef8dd55c7eec03e2b60dc027ae82de5",
+    "选题记录.md": "3fe62aa75c304a8ef475267a5a859c5af62c07de7de3f5c727f3c3c22604a3b5"
+  },
+  "source_file_sha256": {
+    "江浙行测_AI题库/questions.jsonl": "07b748dd27d44132d7734279306f724981a89de028d19d229c989f00fd9b7c93",
+    "国考/言语理解/2016-2025/all.jsonl": "f3e468935dadeaa7dcdd778bd59da40f2100c53012ab161c251818f3e3313ba9",
+    "模考/2026下半年广东卷_16-33季_AI可读/全部题目.jsonl": "12fb48ab01e38b88ff19d85e59e463730f290407350207e00afe318f597fa3b9"
+  },
+  "figure_sha256": {
+    "模考/2026下半年广东卷_16-33季_AI可读/assets/s16_p11_i00.png": "1e60b33b644ffe245f0ea6d35009688668d643a8907e8b56515638a6157a2b2e",
+    "模考/2026下半年广东卷_16-33季_AI可读/assets/s20_p22_i01.png": "d4d5deb567cc080ccddad75f2e889f0dd904062d67fbbcbd81b87cb6f9b4a51a",
+    "模考/2026下半年广东卷_16-33季_AI可读/assets/s20_p22_i02.png": "41bfb3220ff35b0896ce9e8ae740b52f49fadd70e9fcfe4f43c8e2b8a4aeaaf8",
+    "模考/2026下半年广东卷_16-33季_AI可读/assets/s20_p22_i03.png": "b2404ba565e398ab52753f4057e1563df844cb259730875bbb74428e47196659",
+    "模考/2026下半年广东卷_16-33季_AI可读/assets/s20_p23_i00.png": "56f9bb5a50f66edddfe6e795f0a96231bf71717a5eaa18a085b813c5727af69c",
+    "模考/2026下半年广东卷_16-33季_AI可读/assets/s22_p12_i00.png": "b9f8dbec35fdc7a05b73c7cb9852afe4f65907f7ca7549a7e3c69025a7925405",
+    "模考/2026下半年广东卷_16-33季_AI可读/assets/s23_p10_i02.png": "a2c36a0f6809bfa02daae6936bb1e76caabeccd745beff51edc12363c320d424",
+    "模考/2026下半年广东卷_16-33季_AI可读/assets/s24_p11_i01.png": "0159d8493e9d1d983271f9c40ec6e5bee491aa0ebc6562d7a4141b31fa81249a",
+    "模考/2026下半年广东卷_16-33季_AI可读/assets/s24_p17_i05.png": "429f6161e6165ba115b4d74a2633b6913f447d57a98112c35cf29f44aed7a2f1",
+    "模考/2026下半年广东卷_16-33季_AI可读/assets/s26_p22_i00.png": "19c2756d1d526cacc8e0bbce69f80fae3c46fc0ae30a9d13eb47b5ee5c88cac3",
+    "模考/2026下半年广东卷_16-33季_AI可读/assets/s29_p11_i00.png": "f88dade488ee0bae4d7ddeede70ddf70b68a45152b0d0819d61b852b5de0407a",
+    "模考/2026下半年广东卷_16-33季_AI可读/assets/s31_p17_i02.png": "66b28d43c9c53c0a0752ad283debb65c47702ccf8d488071f51d26d31c9286d5",
+    "模考/2026下半年广东卷_16-33季_AI可读/assets/s32_p12_i02.png": "364f9c90935afb52a5a195d01420ae988ad2d262f6a36cf08f9647c7318e86f6"
+  },
+  "external_review": "pending_claude",
+  "print_ready": false,
+  "limits": [
+    "编辑已见断点答案，本轮不是盲解；Claude尚未独立审核。",
+    "同ID与规范化题面重复检查不等于掌握用户完整做题史，也不等于语义相似题检测。",
+    "题库保留的13幅题图已实际查看；未逐页核对全部原始PDF。",
+    "资料原图转写成表格的部分尚未还原为原印刷图；经济材料按题给口径作答，不冒称已审核统计报告。"
+  ]
+}

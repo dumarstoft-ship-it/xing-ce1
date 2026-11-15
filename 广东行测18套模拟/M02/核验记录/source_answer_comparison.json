@@ -1,5 +1,6 @@
 {
-  "matched_count": 28,
+  "version": "0.2.0",
+  "matched_count": 27,
   "comparisons": [
     {
       "number": 16,
@@ -66,9 +67,9 @@
     },
     {
       "number": 25,
-      "source_id": "ZJ2025-A类-035",
-      "source_answer": "D",
-      "editor_answer": "D",
+      "source_id": "GKYY-2022-057",
+      "source_answer": "B",
+      "editor_answer": "B",
       "match": true
     },
     {
@@ -170,13 +171,6 @@
       "match": true
     },
     {
-      "number": 61,
-      "source_id": "ZJ2023-A类-107",
-      "source_answer": "D",
-      "editor_answer": "D",
-      "match": true
-    },
-    {
       "number": 62,
       "source_id": "ZJ2024-A类-103",
       "source_answer": "D",
@@ -198,5 +192,5 @@
       "match": true
     }
   ],
-  "limits": "有源参考答案的28题另行比对；参考答案不等于官方答案，不以相同字母代替解题核验。"
+  "limits": "参考答案比对不等于独立审题。旧版28题比对已归档，撤掉争议源题后为27。"
 }
