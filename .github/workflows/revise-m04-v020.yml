@@ -52,7 +52,8 @@ jobs:
             '广东行测18套模拟/M04/Claude审核意见.md' \
             '广东行测18套模拟/M04/核验记录/claude_review'
       - name: Install numeric-check dependency
-        run: python -m pip install --disable-pip-version-check --only-binary=:all: --timeout 15 --retries 1 'numpy==2.2.6'
+        run: |
+          python -m pip install --disable-pip-version-check --only-binary=:all: --timeout 15 --retries 1 'numpy==2.2.6'
       - name: Apply revision, rebuild, and verify
         run: python '广东行测18套模拟/M04/revise_m04_v020.py'
       - name: Commit only validated M04 outputs and project entries
