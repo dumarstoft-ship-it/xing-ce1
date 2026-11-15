@@ -1,0 +1,22 @@
+digraph foodweb {
+graph [rankdir=LR, bgcolor="white", margin=0.10, nodesep=0.7, ranksep=0.85, splines=polyline, dpi=220];
+node [shape=plaintext, fontname="Noto Serif CJK SC", fontsize=22];
+edge [arrowsize=0.9, penwidth=1.4];
+{rank=same; "茶树"; "草";}
+{rank=same; "茶毛虫"; "茶尺蠖";}
+{rank=same; "蜘蛛"; "鸟";}
+"茶树" -> "草" [style=invis];
+"茶毛虫" -> "茶尺蠖" [style=invis];
+"蜘蛛" -> "鸟" [style=invis];
+"茶树" -> "茶毛虫";
+"茶树" -> "茶尺蠖";
+"草" -> "茶毛虫";
+"草" -> "茶尺蠖";
+"茶毛虫" -> "蛙";
+"茶毛虫" -> "蜘蛛";
+"茶尺蠖" -> "蜘蛛";
+"茶尺蠖" -> "鸟";
+"蜘蛛" -> "蛙";
+"蛙" -> "蛇";
+"鸟" -> "蛇";
+}

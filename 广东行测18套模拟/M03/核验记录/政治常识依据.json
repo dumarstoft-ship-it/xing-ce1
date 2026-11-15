@@ -1,0 +1,108 @@
+{
+  "checked_on": "2026-11-15",
+  "references": {
+    "market": {
+      "title": "新发展阶段贯彻新发展理念必然要求构建新发展格局",
+      "url": "https://www.mem.gov.cn/jjz/ywgz/202209/t20220902_421700.shtml",
+      "locator": "关于全国统一大市场与地方自我小循环的段落；已读取检索返回的对应正文",
+      "checked_on": "2026-11-15"
+    },
+    "governance": {
+      "title": "全球治理倡议（中国常驻联合国代表团）",
+      "url": "https://un.china-mission.gov.cn/zt_0/qqzlcy/",
+      "locator": "五项核心理念及各自解释；已读取对应正文",
+      "checked_on": "2026-11-15"
+    },
+    "civilization": {
+      "title": "全球文明倡议（中国常驻联合国代表团）",
+      "url": "https://un.china-mission.gov.cn/chn/zt_0/qqwmcy/",
+      "locator": "尊重世界文明多样性；与全球治理倡议分别核对",
+      "checked_on": "2026-11-15"
+    },
+    "research": {
+      "title": "国务院关于全面加强基础科学研究的若干意见",
+      "url": "https://www.moe.gov.cn/jyb_xxgk/moe_1777/moe_1778/201802/t20180202_326384.html",
+      "locator": "第（二十一）项：自由探索类和目标导向类基础研究的评价；检索提取已读，直接打开曾超时，不记作全文读取",
+      "checked_on": "2026-11-15"
+    },
+    "culture": {
+      "title": "在文化传承发展座谈会上的讲话",
+      "url": "https://www.moe.gov.cn/jyb_xwfb/moe_176/202308/t20230831_1077496.html",
+      "locator": "中华文明五个突出特性，尤其统一性、包容性、创新性的对应阐述",
+      "checked_on": "2026-11-15"
+    },
+    "development": {
+      "title": "关于习近平经济思想若干重大理论观点的思考",
+      "url": "https://www.ndrc.gov.cn/wsdwhfz/202403/t20240329_1365346_ext.html",
+      "locator": "第四部分：五大发展理念各自着力解决的问题",
+      "checked_on": "2026-11-15"
+    },
+    "bay": {
+      "title": "《河套深港科技创新合作区深圳园区发展规划》新闻发布会",
+      "url": "https://www.ndrc.gov.cn/fzggw/wld/glf/zyhd/202309/t20230905_1360388.html",
+      "locator": "答记者问第一问，逐一说明横琴、前海、南沙、河套的功能侧重；已实际读取全文",
+      "checked_on": "2026-11-15"
+    },
+    "civilcode": {
+      "title": "中华人民共和国民法典",
+      "url": "https://www.cac.gov.cn/2020-06/01/c_1592561777268319.htm",
+      "locator": "第46—49条：宣告死亡条件、申请冲突、死亡日期与行为效力；已打开官方全文并核对相关条文",
+      "checked_on": "2026-11-15"
+    },
+    "dialects": {
+      "title": "广东概况（中共广东省委港澳工作办公室）",
+      "url": "https://www.gdhmo.gov.cn/gaikuang/content/post_68514.html",
+      "locator": "粤、客、闽三大汉语方言及潮汕片、雷州片；不使用其中会变动的人口数",
+      "checked_on": "2026-11-15"
+    },
+    "gutian": {
+      "title": "古田会议与党的建设",
+      "url": "https://xfb.beijing.gov.cn/ztzl/dsxxjy/zyhy/202104/t20210412_2352039.html",
+      "locator": "1929年古田会议与思想建党、政治建军",
+      "checked_on": "2026-11-15"
+    },
+    "wayao": {
+      "title": "中国共产党历史上的重要会议（深圳人大网）",
+      "url": "https://www.szrd.gov.cn/dsxxjy/dszl/content/post_704191.html",
+      "locator": "瓦窑堡会议部分：抗日民族统一战线的理论与策略",
+      "checked_on": "2026-11-15"
+    },
+    "luochuan": {
+      "title": "1937：生死存亡筑长城",
+      "url": "https://www.mem.gov.cn/xw/ztzl/2021/dsxxjy/xxfd/202103/t20210329_382220.shtml",
+      "locator": "1937年8月洛川会议与全面抗战路线、敌后独立自主游击战争",
+      "checked_on": "2026-11-15"
+    },
+    "hualong": {
+      "title": "我国自主三代核电技术华龙一号",
+      "url": "https://www.nea.gov.cn/2024-08/23/c_1212390764.htm",
+      "locator": "三代压水堆核电技术；不使用在运在建机组动态数量",
+      "checked_on": "2026-11-15"
+    },
+    "fendouzhe": {
+      "title": "奋斗者号载人潜水器（中国科学院）",
+      "url": "https://lssf.cas.cn/sszs/gykj/zrqsqyhszymc/sbzs/202504/t20250410_5062556.html",
+      "locator": "装备性质为全海深载人潜水器；不使用累计下潜次数",
+      "checked_on": "2026-11-15"
+    },
+    "xuelong": {
+      "title": "我国自主建造的雪龙2号极地科学考察破冰船交付使用",
+      "url": "https://www.miit.gov.cn/jgsj/zbes/cbgy/art/2020/art_8580100d54eb4a61b105df8b455e4d75.html",
+      "locator": "2019年交付、国内自主建造及极地科考破冰船属性",
+      "checked_on": "2026-11-15"
+    },
+    "c919": {
+      "title": "C919飞机机场规划手册（中国商飞）",
+      "url": "https://www.comac.cc/fujian/c919acap_cn.pdf",
+      "locator": "飞机概况：中短航程干线飞机、单通道客舱；检索提取已读取，未把PDF全页目检写为完成",
+      "checked_on": "2026-11-15"
+    },
+    "historybooks": {
+      "title": "深刻理解中华文明突出的连续性",
+      "url": "https://www.forestry.gov.cn/c/www/xxyd/512380.jhtml",
+      "locator": "中国史学段：史记的纪传体通史、汉书的纪传体断代史及资治通鉴的编年体",
+      "checked_on": "2026-11-15"
+    }
+  },
+  "note": "政府发布/主管机构与技术手册是核对依据；已读检索提取与全文读取分别标注，不把工具通过当作内容正确性证明。"
+}
