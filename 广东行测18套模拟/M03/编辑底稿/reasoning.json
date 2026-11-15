@@ -1,0 +1,3088 @@
+[
+  {
+    "number": 46,
+    "section": "判断推理",
+    "subsection": "图形推理",
+    "question_type": "single_choice",
+    "source_bank": "jiangzhe",
+    "source_file": "江浙行测_AI题库/questions.jsonl",
+    "source_id": "JS2020-A类-078",
+    "source_question": {
+      "question_id": "JS2020-A类-078",
+      "paper_id": "JS2020",
+      "province": "江苏",
+      "year": 2020,
+      "paper_type": "A类",
+      "section": "判断推理",
+      "original_number": 78,
+      "instruction": null,
+      "stem": "请从所给的四个选项中，选出最恰当的一项填入问号处，使之呈现一定的规律性。\n\n\n![原图 1310](images/original/1310.png)\n\n",
+      "options": {
+        "A": "见题图中标为 A 的选项。",
+        "B": "见题图中标为 B 的选项。",
+        "C": "见题图中标为 C 的选项。",
+        "D": "见题图中标为 D 的选项。"
+      },
+      "options_mode": "in_figure",
+      "content": "请从所给的四个选项中，选出最恰当的一项填入问号处，使之呈现一定的规律性。\n\n\n![原图 1310](images/original/1310.png)\n\n",
+      "figures": [
+        {
+          "figure_id": "1310",
+          "path": "images/original/1310.png",
+          "original_path": "images/original/1310.png",
+          "pixel_size": [
+            595,
+            275
+          ],
+          "code_hd": null,
+          "method": "source_image_extract",
+          "source": {
+            "repository": "https://github.com/dumarstoft-ship-it/xingce",
+            "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+            "file": "2020年江苏公务员考试《行测》真题（A类）.pdf",
+            "blob_sha": "00f42a7f169be020b83a9e1149f5f5a35cf4f059",
+            "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2020%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89.pdf",
+            "pdf_pages": [
+              7
+            ],
+            "regions": [
+              {
+                "page": 7,
+                "bbox": [
+                  60.119998931884766,
+                  703.6799926757812,
+                  295.44000244140625,
+                  812.6400146484375
+                ]
+              }
+            ],
+            "page_numbering": "PDF physical page, 1-based"
+          }
+        }
+      ],
+      "materials": [],
+      "material_ids": [],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2020年江苏公务员考试《行测》真题（A类）.pdf",
+        "blob_sha": "00f42a7f169be020b83a9e1149f5f5a35cf4f059",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2020%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "regions": [
+          {
+            "page": 7,
+            "bbox": [
+              60.119998931884766,
+              691.6234741210938,
+              459.11700439453125,
+              812.6400146484375
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": [],
+      "notes": []
+    },
+    "source_answer": "C",
+    "answer": "C",
+    "analysis": "先观察整个点阵的对称性，黑点、白点也要分别对应。第1、3、5幅都可以绕中心旋转180°后与自身重合；第2、4幅则各只有一条对称轴，依次交替。下一幅应延续偶数位置的单轴对称：C只有一条竖直对称轴；A有两条对角线对称轴，B、D都不满足单轴对称。数量与颜色很醒目，但本题真正稳定的是整体对称关系。",
+    "selection_reason": "同一批元素可以承载不同规律；辨清中心对称与单轴对称，不能见黑白点就只数数量。",
+    "edits": [],
+    "verification": {
+      "status": "editor_checked_pending_independent_review",
+      "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
+      "source_answer_available": true,
+      "source_answer_agreement": true,
+      "checked_on": "2026-11-15",
+      "figure_visual_inspection": true
+    },
+    "options_mode": "in_figure",
+    "source_locators": {
+      "original_number": 78,
+      "pages": [
+        7
+      ],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2020年江苏公务员考试《行测》真题（A类）.pdf",
+        "blob_sha": "00f42a7f169be020b83a9e1149f5f5a35cf4f059",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2020%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "regions": [
+          {
+            "page": 7,
+            "bbox": [
+              60.119998931884766,
+              691.6234741210938,
+              459.11700439453125,
+              812.6400146484375
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      }
+    },
+    "source_answer_reference": {
+      "file": "江浙行测_AI题库/answers.jsonl",
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2020年江苏公务员考试《行测》真题（A类）参考答案及解析.pdf",
+        "blob_sha": "1a1ef2fb48e2ee2c6502da08f5bd390283bb7c78",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2020%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%E5%8F%8A%E8%A7%A3%E6%9E%90.pdf",
+        "pdf_pages": [
+          13
+        ],
+        "regions": [
+          {
+            "page": 13,
+            "bbox": [
+              39.111328125,
+              177.90447998046875,
+              556.0830078125,
+              242.95445251464844
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": []
+    }
+  },
+  {
+    "number": 47,
+    "section": "判断推理",
+    "subsection": "图形推理",
+    "question_type": "single_choice",
+    "source_bank": "jiangzhe",
+    "source_file": "江浙行测_AI题库/questions.jsonl",
+    "source_id": "ZJ2022-A类-071",
+    "source_question": {
+      "question_id": "ZJ2022-A类-071",
+      "paper_id": "ZJ2022",
+      "province": "浙江",
+      "year": 2022,
+      "paper_type": "A类",
+      "section": "判断推理",
+      "original_number": 71,
+      "instruction": null,
+      "stem": "从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：\n\n\n![原图 1244](images/original/1244.png)\n\n",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "options_mode": "text_or_mixed",
+      "content": "从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：\n\n\n![原图 1244](images/original/1244.png)\n\n\nA.A B.B C.C D.D",
+      "figures": [
+        {
+          "figure_id": "1244",
+          "path": "images/original/1244.png",
+          "original_path": "images/original/1244.png",
+          "pixel_size": [
+            570,
+            311
+          ],
+          "code_hd": null,
+          "method": "source_image_extract",
+          "source": {
+            "repository": "https://github.com/dumarstoft-ship-it/xingce",
+            "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+            "file": "2022年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+            "blob_sha": "e5f7736531d4616c23a3d51856695fb309bf27c8",
+            "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2022%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
+            "pdf_pages": [
+              13
+            ],
+            "regions": [
+              {
+                "page": 13,
+                "bbox": [
+                  43.24169921875,
+                  324.1228332519531,
+                  360.1415710449219,
+                  497.0896301269531
+                ]
+              }
+            ],
+            "page_numbering": "PDF physical page, 1-based"
+          }
+        }
+      ],
+      "materials": [],
+      "material_ids": [],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2022年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "blob_sha": "e5f7736531d4616c23a3d51856695fb309bf27c8",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2022%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
+        "pdf_pages": [
+          13
+        ],
+        "regions": [
+          {
+            "page": 13,
+            "bbox": [
+              28.879276275634766,
+              309.8277282714844,
+              441.5810546875,
+              518.5775146484375
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": [],
+      "notes": []
+    },
+    "source_answer": "A",
+    "answer": "A",
+    "analysis": "把蜂窝按竖直方向分成8列，每列有7格。每次先将整列向右循环移动2列，越过右边界的列回到最左边；再使各列内部的黑白格向下循环移动1格，越过列底的格回到列顶。前四幅连续三次均符合这一变换。第四幅再变换一次，得到A。可以先追踪黑格较少的一列确定列的去向，再检查列内位置，不必同时追踪全部黑格。B、C虽然外观接近，但局部格子的循环位置不符；D没有按这一步的整体变换移动。",
+    "selection_reason": "二维循环平移，列整体移动与列内移动叠加；用少量锚点识别，再验证整体。",
+    "edits": [],
+    "verification": {
+      "status": "editor_checked_pending_independent_review",
+      "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
+      "source_answer_available": true,
+      "source_answer_agreement": true,
+      "checked_on": "2026-11-15",
+      "figure_visual_inspection": true,
+      "reproducible_check": "reasoning_verify.py"
+    },
+    "options_mode": "in_figure",
+    "source_locators": {
+      "original_number": 71,
+      "pages": [
+        13
+      ],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2022年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "blob_sha": "e5f7736531d4616c23a3d51856695fb309bf27c8",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2022%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
+        "pdf_pages": [
+          13
+        ],
+        "regions": [
+          {
+            "page": 13,
+            "bbox": [
+              28.879276275634766,
+              309.8277282714844,
+              441.5810546875,
+              518.5775146484375
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      }
+    },
+    "source_answer_reference": {
+      "file": "江浙行测_AI题库/answers.jsonl",
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2022年浙江省公务员录用考试（A）答案解析.pdf",
+        "blob_sha": "b0209293dd463c5bc77fbb55051d1977151ecb78",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2022%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%EF%BC%88A%EF%BC%89%E7%AD%94%E6%A1%88%E8%A7%A3%E6%9E%90.pdf",
+        "pdf_pages": [
+          24
+        ],
+        "regions": [
+          {
+            "page": 24,
+            "bbox": [
+              90.0,
+              73.78880310058594,
+              401.8800048828125,
+              254.52000427246094
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": []
+    },
+    "provenance_note": "题面来自仓库收录的网友回忆版；源参考答案为整理库所收解析答案，不冒称官方公布答案。"
+  },
+  {
+    "number": 48,
+    "section": "判断推理",
+    "subsection": "图形推理",
+    "question_type": "single_choice",
+    "source_bank": "jiangzhe",
+    "source_file": "江浙行测_AI题库/questions.jsonl",
+    "source_id": "JS2020-A类-089",
+    "source_question": {
+      "question_id": "JS2020-A类-089",
+      "paper_id": "JS2020",
+      "province": "江苏",
+      "year": 2020,
+      "paper_type": "A类",
+      "section": "判断推理",
+      "original_number": 89,
+      "instruction": null,
+      "stem": "请从所给的四个选项中，选出最恰当的一项填入问号处，使之呈现一定的规律性。\n\n\n![原图 938](images/original/938.png)\n\n",
+      "options": {
+        "A": "见题图中标为 A 的选项。",
+        "B": "见题图中标为 B 的选项。",
+        "C": "见题图中标为 C 的选项。",
+        "D": "见题图中标为 D 的选项。"
+      },
+      "options_mode": "in_figure",
+      "content": "请从所给的四个选项中，选出最恰当的一项填入问号处，使之呈现一定的规律性。\n\n\n![原图 938](images/original/938.png)\n\n",
+      "figures": [
+        {
+          "figure_id": "938",
+          "path": "images/original/938.png",
+          "original_path": "images/original/938.png",
+          "pixel_size": [
+            485,
+            572
+          ],
+          "code_hd": null,
+          "method": "source_image_extract",
+          "source": {
+            "repository": "https://github.com/dumarstoft-ship-it/xingce",
+            "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+            "file": "2020年江苏公务员考试《行测》真题（A类）.pdf",
+            "blob_sha": "00f42a7f169be020b83a9e1149f5f5a35cf4f059",
+            "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2020%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89.pdf",
+            "pdf_pages": [
+              9
+            ],
+            "regions": [
+              {
+                "page": 9,
+                "bbox": [
+                  60.119998931884766,
+                  620.3999633789062,
+                  218.87998962402344,
+                  807.5999755859375
+                ]
+              }
+            ],
+            "page_numbering": "PDF physical page, 1-based"
+          }
+        }
+      ],
+      "materials": [],
+      "material_ids": [],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2020年江苏公务员考试《行测》真题（A类）.pdf",
+        "blob_sha": "00f42a7f169be020b83a9e1149f5f5a35cf4f059",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2020%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "regions": [
+          {
+            "page": 9,
+            "bbox": [
+              60.119998931884766,
+              608.2234497070312,
+              459.11700439453125,
+              807.5999755859375
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": [],
+      "notes": []
+    },
+    "source_answer": "A",
+    "answer": "A",
+    "analysis": "每一行都先把第一幅的内部图案逆时针转90°，再与第二幅对齐，消去相同位置上共有的圆和线，保留不同部分；外侧大圆仅作为固定框架。第一行旋转后是上黑、中央白、下白，中央白圆与两侧连接线被第二幅消去，留下上黑下白。第二行同法得到第三幅的十字形。第三行旋转后为左白、中央白、右黑及横向连接线，与第二幅相消后只剩中央白圆，因此选A。",
+    "selection_reason": "旋转与去同存异组合，必须先对齐再运算；不能只看到样式相似就直接叠加。",
+    "edits": [],
+    "verification": {
+      "status": "editor_checked_pending_independent_review",
+      "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
+      "source_answer_available": true,
+      "source_answer_agreement": true,
+      "checked_on": "2026-11-15",
+      "figure_visual_inspection": true
+    },
+    "options_mode": "in_figure",
+    "source_locators": {
+      "original_number": 89,
+      "pages": [
+        9
+      ],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2020年江苏公务员考试《行测》真题（A类）.pdf",
+        "blob_sha": "00f42a7f169be020b83a9e1149f5f5a35cf4f059",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2020%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "regions": [
+          {
+            "page": 9,
+            "bbox": [
+              60.119998931884766,
+              608.2234497070312,
+              459.11700439453125,
+              807.5999755859375
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      }
+    },
+    "source_answer_reference": {
+      "file": "江浙行测_AI题库/answers.jsonl",
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2020年江苏公务员考试《行测》真题（A类）参考答案及解析.pdf",
+        "blob_sha": "1a1ef2fb48e2ee2c6502da08f5bd390283bb7c78",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2020%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%E5%8F%8A%E8%A7%A3%E6%9E%90.pdf",
+        "pdf_pages": [
+          16
+        ],
+        "regions": [
+          {
+            "page": 16,
+            "bbox": [
+              39.117156982421875,
+              349.385498046875,
+              556.2071533203125,
+              387.0744934082031
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": []
+    }
+  },
+  {
+    "number": 49,
+    "section": "判断推理",
+    "subsection": "图形推理",
+    "question_type": "single_choice",
+    "source_bank": "jiangzhe",
+    "source_file": "江浙行测_AI题库/questions.jsonl",
+    "source_id": "JS2021-A类-081",
+    "source_question": {
+      "question_id": "JS2021-A类-081",
+      "paper_id": "JS2021",
+      "province": "江苏",
+      "year": 2021,
+      "paper_type": "A类",
+      "section": "判断推理",
+      "original_number": 81,
+      "instruction": null,
+      "stem": "请从所给的四个选项中，选出最恰当的一项填入问号处，使之呈现一定的规律。\n\n\n![原图 212](images/original/212.png)\n\n",
+      "options": {
+        "A": "见题图中标为 A 的选项。",
+        "B": "见题图中标为 B 的选项。",
+        "C": "见题图中标为 C 的选项。",
+        "D": "见题图中标为 D 的选项。"
+      },
+      "options_mode": "in_figure",
+      "content": "请从所给的四个选项中，选出最恰当的一项填入问号处，使之呈现一定的规律。\n\n\n![原图 212](images/original/212.png)\n\n",
+      "figures": [
+        {
+          "figure_id": "212",
+          "path": "images/original/212.png",
+          "original_path": "images/original/212.png",
+          "pixel_size": [
+            534,
+            638
+          ],
+          "code_hd": null,
+          "method": "source_image_extract",
+          "source": {
+            "repository": "https://github.com/dumarstoft-ship-it/xingce",
+            "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+            "file": "2021年江苏公务员考试《行测》真题（A卷）.pdf",
+            "blob_sha": "959016a0337c29a66b64ca50a642bfdb5574d6df",
+            "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2021%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E5%8D%B7%EF%BC%89.pdf",
+            "pdf_pages": [
+              10
+            ],
+            "regions": [
+              {
+                "page": 10,
+                "bbox": [
+                  42.0,
+                  315.96002197265625,
+                  240.47999572753906,
+                  553.0800170898438
+                ]
+              }
+            ],
+            "page_numbering": "PDF physical page, 1-based"
+          }
+        }
+      ],
+      "materials": [],
+      "material_ids": [],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2021年江苏公务员考试《行测》真题（A卷）.pdf",
+        "blob_sha": "959016a0337c29a66b64ca50a642bfdb5574d6df",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2021%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E5%8D%B7%EF%BC%89.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "regions": [
+          {
+            "page": 10,
+            "bbox": [
+              42.0,
+              301.0234680175781,
+              430.4371643066406,
+              553.0800170898438
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": [],
+      "notes": []
+    },
+    "source_answer": "B",
+    "answer": "B",
+    "analysis": "暂时把各根小方块柱压到同一高度，比较它们占据的平面位置。题干八幅立体的俯视轮廓相同，只是部分位置的高度改变，而且最高都恰为两层。A、C的俯视轮廓与题干不同；B与D的俯视轮廓符合，但D出现了三层高的方块柱，B仍为两层。因此B同时满足平面占位和最大高度两个条件。只数方块总数，或只验证俯视图，都会漏掉约束。",
+    "selection_reason": "从三维图中提取稳定投影，再叠加高度条件，避免在细碎方块上逐个硬数。",
+    "edits": [],
+    "verification": {
+      "status": "editor_checked_pending_independent_review",
+      "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
+      "source_answer_available": true,
+      "source_answer_agreement": true,
+      "checked_on": "2026-11-15",
+      "figure_visual_inspection": true
+    },
+    "options_mode": "in_figure",
+    "source_locators": {
+      "original_number": 81,
+      "pages": [
+        10
+      ],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2021年江苏公务员考试《行测》真题（A卷）.pdf",
+        "blob_sha": "959016a0337c29a66b64ca50a642bfdb5574d6df",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2021%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E5%8D%B7%EF%BC%89.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "regions": [
+          {
+            "page": 10,
+            "bbox": [
+              42.0,
+              301.0234680175781,
+              430.4371643066406,
+              553.0800170898438
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      }
+    },
+    "source_answer_reference": {
+      "file": "江浙行测_AI题库/answers.jsonl",
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2021年江苏公务员考试《行测》真题（A卷）参考答案及解析.pdf",
+        "blob_sha": "4890efbb110a89238acb6dcacc445e06a23271b0",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2021%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E5%8D%B7%EF%BC%89%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%E5%8F%8A%E8%A7%A3%E6%9E%90.pdf",
+        "pdf_pages": [
+          19
+        ],
+        "regions": [
+          {
+            "page": 19,
+            "bbox": [
+              41.999603271484375,
+              61.2645263671875,
+              551.1682739257812,
+              182.7145233154297
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": []
+    }
+  },
+  {
+    "number": 50,
+    "section": "判断推理",
+    "subsection": "图形推理",
+    "question_type": "single_choice",
+    "source_bank": "jiangzhe",
+    "source_file": "江浙行测_AI题库/questions.jsonl",
+    "source_id": "ZJ2021-A类-085",
+    "source_question": {
+      "question_id": "ZJ2021-A类-085",
+      "paper_id": "ZJ2021",
+      "province": "浙江",
+      "year": 2021,
+      "paper_type": "A类",
+      "section": "判断推理",
+      "original_number": 85,
+      "instruction": null,
+      "stem": "下列哪个选项可与①和②组成一个长方体？\n\n\n![原图 352](images/original/352.png)\n\n",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "options_mode": "text_or_mixed",
+      "content": "下列哪个选项可与①和②组成一个长方体？\n\n\n![原图 352](images/original/352.png)\n\n\nA.A B.B C.C D.D",
+      "figures": [
+        {
+          "figure_id": "352",
+          "path": "images/original/352.png",
+          "original_path": "images/original/352.png",
+          "pixel_size": [
+            488,
+            377
+          ],
+          "code_hd": null,
+          "method": "source_image_extract",
+          "source": {
+            "repository": "https://github.com/dumarstoft-ship-it/xingce",
+            "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+            "file": "2021年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+            "blob_sha": "bf44d1314deecbe22e6b2bf45ccec0c5bc9de703",
+            "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2021%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
+            "pdf_pages": [
+              14
+            ],
+            "regions": [
+              {
+                "page": 14,
+                "bbox": [
+                  43.24169921875,
+                  557.6277465820312,
+                  314.4289245605469,
+                  767.0411376953125
+                ]
+              }
+            ],
+            "page_numbering": "PDF physical page, 1-based"
+          }
+        }
+      ],
+      "materials": [],
+      "material_ids": [],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2021年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "blob_sha": "bf44d1314deecbe22e6b2bf45ccec0c5bc9de703",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2021%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
+        "pdf_pages": [
+          14,
+          15
+        ],
+        "regions": [
+          {
+            "page": 14,
+            "bbox": [
+              28.879276275634766,
+              543.3335571289062,
+              314.4289245605469,
+              767.0411376953125
+            ]
+          },
+          {
+            "page": 15,
+            "bbox": [
+              43.24169921875,
+              91.76618957519531,
+              441.5810546875,
+              103.4573745727539
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": [],
+      "notes": []
+    },
+    "source_answer": "D",
+    "answer": "D",
+    "analysis": "把图①的完整底层当作基准：底层是4×2的8个方块，其上还有3个方块，故图①共11块；图②为3块。图①在三个方向上已占据4、2、3个单位，结合选项可知应补成4×2×3的24块长方体，待选部分须有10块，先排除块数不符的B。沿该长方体的高度分层，底层已铺满，待补部分只能占上面的两层，C的三层形状不符。把图②旋转为水平放置，在图①第二层补入相邻的三个空位后，第二层还缺一个L形的三格，第三层缺七格；D转动后恰能填入这两层，A对应的缺口形状不合。关键是先固定完整底层，再按缺口分层拼合，而不是反复试整体朝向。",
+    "selection_reason": "用体积、包围盒与逐层缺口依次缩小空间；选项A保留形状辨别价值。",
+    "edits": [],
+    "verification": {
+      "status": "editor_checked_pending_independent_review",
+      "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
+      "source_answer_available": true,
+      "source_answer_agreement": true,
+      "checked_on": "2026-11-15",
+      "figure_visual_inspection": true
+    },
+    "options_mode": "in_figure",
+    "source_locators": {
+      "original_number": 85,
+      "pages": [
+        14,
+        15
+      ],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2021年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "blob_sha": "bf44d1314deecbe22e6b2bf45ccec0c5bc9de703",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2021%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
+        "pdf_pages": [
+          14,
+          15
+        ],
+        "regions": [
+          {
+            "page": 14,
+            "bbox": [
+              28.879276275634766,
+              543.3335571289062,
+              314.4289245605469,
+              767.0411376953125
+            ]
+          },
+          {
+            "page": 15,
+            "bbox": [
+              43.24169921875,
+              91.76618957519531,
+              441.5810546875,
+              103.4573745727539
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      }
+    },
+    "source_answer_reference": {
+      "file": "江浙行测_AI题库/answers.jsonl",
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2021年浙江省公务员录用考试《行测》题（A类）参考答案及解析.pdf",
+        "blob_sha": "2789c8f05d9be4428ee91efd9fd749e36c1e0ec5",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2021%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%E5%8F%8A%E8%A7%A3%E6%9E%90.pdf",
+        "pdf_pages": [
+          22
+        ],
+        "regions": [
+          {
+            "page": 22,
+            "bbox": [
+              42.0,
+              470.9444580078125,
+              558.8500366210938,
+              754.5144653320312
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": []
+    },
+    "provenance_note": "题面来自仓库收录的网友回忆版；源参考答案为整理库所收解析答案，不冒称官方公布答案。"
+  },
+  {
+    "number": 51,
+    "section": "判断推理",
+    "subsection": "逻辑判断",
+    "question_type": "single_choice",
+    "source_bank": "jiangzhe",
+    "source_file": "江浙行测_AI题库/questions.jsonl",
+    "source_id": "ZJ2023-A类-102",
+    "source_question": {
+      "question_id": "ZJ2023-A类-102",
+      "paper_id": "ZJ2023",
+      "province": "浙江",
+      "year": 2023,
+      "paper_type": "A类",
+      "section": "判断推理",
+      "original_number": 102,
+      "instruction": null,
+      "stem": "关于小张、小李书法学习的情况，有如下判断：（1）如果小张学习魏碑，那么小李学习汉隶；（2）小张既没\n有学习秦篆，也没有学习魏碑；（3）小张或者学习秦篆，或者学习魏碑。结果发现，上述判断有两项是错误\n的。\n根据以上信息，可以得出以下哪项结论？",
+      "options": {
+        "A": "小张学习魏碑，小李学习汉隶",
+        "B": "小张没有学习魏碑，小李学习汉隶",
+        "C": "小张学习魏碑，小李没有学习汉隶",
+        "D": "小张没有学习魏碑，小李没有学习汉隶"
+      },
+      "options_mode": "text_or_mixed",
+      "content": "关于小张、小李书法学习的情况，有如下判断：（1）如果小张学习魏碑，那么小李学习汉隶；（2）小张既没\n有学习秦篆，也没有学习魏碑；（3）小张或者学习秦篆，或者学习魏碑。结果发现，上述判断有两项是错误\n的。\n根据以上信息，可以得出以下哪项结论？\nA.小张学习魏碑，小李学习汉隶 B.小张没有学习魏碑，小李学习汉隶\nC.小张学习魏碑，小李没有学习汉隶 D.小张没有学习魏碑，小李没有学习汉隶",
+      "figures": [],
+      "materials": [],
+      "material_ids": [],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2023年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "blob_sha": "5bcc6163c999c3910d10f36f6d8bea8a57df1417",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
+        "pdf_pages": [
+          19
+        ],
+        "regions": [
+          {
+            "page": 19,
+            "bbox": [
+              23.62849998474121,
+              354.3052673339844,
+              547.3163452148438,
+              449.3909606933594
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": [],
+      "notes": []
+    },
+    "source_answer": "C",
+    "answer": "C",
+    "analysis": "（2）“不学秦篆且不学魏碑”和（3）“学秦篆或学魏碑”互为矛盾，恰有一真一假。总共两项错误，剩下的（1）必假。要使“若小张学魏碑，则小李学汉隶”为假，必须是前件真而后件假，即小张学魏碑、小李不学汉隶，选C。“或者”在这里按逻辑上的相容或理解，不需要额外假定两种书体只能学一种。",
+    "selection_reason": "先锁定矛盾对，再用假言命题的唯一假情形，避免给所有陈述逐一设真假。",
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并源PDF行末硬换行；保留设问、编号条件和对话的分段，不改变命题含义。"
+      }
+    ],
+    "verification": {
+      "status": "editor_checked_pending_independent_review",
+      "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
+      "source_answer_available": true,
+      "source_answer_agreement": true,
+      "checked_on": "2026-11-15",
+      "reproducible_check": "reasoning_verify.py"
+    },
+    "options_mode": "text_or_mixed",
+    "source_locators": {
+      "original_number": 102,
+      "pages": [
+        19
+      ],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2023年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "blob_sha": "5bcc6163c999c3910d10f36f6d8bea8a57df1417",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
+        "pdf_pages": [
+          19
+        ],
+        "regions": [
+          {
+            "page": 19,
+            "bbox": [
+              23.62849998474121,
+              354.3052673339844,
+              547.3163452148438,
+              449.3909606933594
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      }
+    },
+    "source_answer_reference": {
+      "file": "江浙行测_AI题库/answers.jsonl",
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2023年浙江省公务员录用考试《行测》真题（A类）（解析）.pdf",
+        "blob_sha": "9c7d7f35278953cbcb7177a79f339c0a866a1c23",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E8%A7%A3%E6%9E%90%EF%BC%89.pdf",
+        "pdf_pages": [
+          29
+        ],
+        "regions": [
+          {
+            "page": 29,
+            "bbox": [
+              54.0,
+              480.1834716796875,
+              540.6000366210938,
+              631.033447265625
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": []
+    },
+    "stem_override": "关于小张、小李书法学习的情况，有如下判断：\n（1）如果小张学习魏碑，那么小李学习汉隶；\n（2）小张既没有学习秦篆，也没有学习魏碑；\n（3）小张或者学习秦篆，或者学习魏碑。结果发现，上述判断有两项是错误的。\n根据以上信息，可以得出以下哪项结论？",
+    "options": {
+      "A": "小张学习魏碑，小李学习汉隶",
+      "B": "小张没有学习魏碑，小李学习汉隶",
+      "C": "小张学习魏碑，小李没有学习汉隶",
+      "D": "小张没有学习魏碑，小李没有学习汉隶"
+    },
+    "provenance_note": "题面来自仓库收录的网友回忆版；源参考答案为整理库所收解析答案，不冒称官方公布答案。"
+  },
+  {
+    "number": 52,
+    "section": "判断推理",
+    "subsection": "逻辑判断",
+    "question_type": "single_choice",
+    "source_bank": "jiangzhe",
+    "source_file": "江浙行测_AI题库/questions.jsonl",
+    "source_id": "ZJ2023-A类-104",
+    "source_question": {
+      "question_id": "ZJ2023-A类-104",
+      "paper_id": "ZJ2023",
+      "province": "浙江",
+      "year": 2023,
+      "paper_type": "A类",
+      "section": "判断推理",
+      "original_number": 104,
+      "instruction": null,
+      "stem": "一项研究通过比较某市在参与创建全国卫生城市前后的环境空气质量发现，该市在参与创建全国卫生城市之后\n环境空气质量明显优于之前，因此该研究得出结论，创建全国卫生城市有助于提升该市的环境空气质量。\n以下哪项如果为真，最能支持上述结论？",
+      "options": {
+        "A": "参与全国卫生城市创建能够获得更多的政府专项财政补助",
+        "B": "众多城市考察团常常来该市学习创建全国卫生城市的经验",
+        "C": "参与全国卫生城市创建之前，该市环境空气质量长期处于较差的状况",
+        "D": "周边未参与全国卫生城市创建的城市在同时期环境空气质量有所下降"
+      },
+      "options_mode": "text_or_mixed",
+      "content": "一项研究通过比较某市在参与创建全国卫生城市前后的环境空气质量发现，该市在参与创建全国卫生城市之后\n环境空气质量明显优于之前，因此该研究得出结论，创建全国卫生城市有助于提升该市的环境空气质量。\n以下哪项如果为真，最能支持上述结论？\nA.参与全国卫生城市创建能够获得更多的政府专项财政补助\nB.众多城市考察团常常来该市学习创建全国卫生城市的经验\nC.参与全国卫生城市创建之前，该市环境空气质量长期处于较差的状况\nD.周边未参与全国卫生城市创建的城市在同时期环境空气质量有所下降",
+      "figures": [],
+      "materials": [],
+      "material_ids": [],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2023年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "blob_sha": "5bcc6163c999c3910d10f36f6d8bea8a57df1417",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
+        "pdf_pages": [
+          19
+        ],
+        "regions": [
+          {
+            "page": 19,
+            "bbox": [
+              23.62849998474121,
+              575.4556274414062,
+              547.3163452148438,
+              686.6029052734375
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": [],
+      "notes": []
+    },
+    "source_answer": "D",
+    "answer": "D",
+    "analysis": "本市参与创建后空气变好，还不能直接排除共同的外部变化。D补充同期未参与创建的周边城市反而变差，使“大家都因同一外部因素而改善”的解释变弱，为创建活动的效果提供对照支持。A只给出财政补助，尚缺钱如何影响空气质量的环节；B有人来学习不等于创建导致空气改善；C重复创建前空气差的背景，没有区分其他原因。D提高因果解释的可信度，但不能据此说已经排除所有差异。",
+    "selection_reason": "前后比较需要同期对照；加强证据有方向，不等于完整因果证明。",
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并源PDF行末硬换行；保留设问、编号条件和对话的分段，不改变命题含义。"
+      }
+    ],
+    "verification": {
+      "status": "editor_checked_pending_independent_review",
+      "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
+      "source_answer_available": true,
+      "source_answer_agreement": true,
+      "checked_on": "2026-11-15"
+    },
+    "options_mode": "text_or_mixed",
+    "source_locators": {
+      "original_number": 104,
+      "pages": [
+        19
+      ],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2023年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "blob_sha": "5bcc6163c999c3910d10f36f6d8bea8a57df1417",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
+        "pdf_pages": [
+          19
+        ],
+        "regions": [
+          {
+            "page": 19,
+            "bbox": [
+              23.62849998474121,
+              575.4556274414062,
+              547.3163452148438,
+              686.6029052734375
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      }
+    },
+    "source_answer_reference": {
+      "file": "江浙行测_AI题库/answers.jsonl",
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2023年浙江省公务员录用考试《行测》真题（A类）（解析）.pdf",
+        "blob_sha": "9c7d7f35278953cbcb7177a79f339c0a866a1c23",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E8%A7%A3%E6%9E%90%EF%BC%89.pdf",
+        "pdf_pages": [
+          30
+        ],
+        "regions": [
+          {
+            "page": 30,
+            "bbox": [
+              54.0,
+              214.98443603515625,
+              541.208984375,
+              521.83447265625
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": []
+    },
+    "stem_override": "一项研究通过比较某市在参与创建全国卫生城市前后的环境空气质量发现，该市在参与创建全国卫生城市之后环境空气质量明显优于之前，因此该研究得出结论，创建全国卫生城市有助于提升该市的环境空气质量。\n以下哪项如果为真，最能支持上述结论？",
+    "options": {
+      "A": "参与全国卫生城市创建能够获得更多的政府专项财政补助",
+      "B": "众多城市考察团常常来该市学习创建全国卫生城市的经验",
+      "C": "参与全国卫生城市创建之前，该市环境空气质量长期处于较差的状况",
+      "D": "周边未参与全国卫生城市创建的城市在同时期环境空气质量有所下降"
+    },
+    "provenance_note": "题面来自仓库收录的网友回忆版；源参考答案为整理库所收解析答案，不冒称官方公布答案。"
+  },
+  {
+    "number": 53,
+    "section": "判断推理",
+    "subsection": "逻辑判断",
+    "question_type": "single_choice",
+    "source_bank": "jiangzhe",
+    "source_file": "江浙行测_AI题库/questions.jsonl",
+    "source_id": "JS2025-A类-094",
+    "source_question": {
+      "question_id": "JS2025-A类-094",
+      "paper_id": "JS2025",
+      "province": "江苏",
+      "year": 2025,
+      "paper_type": "A类",
+      "section": "判断推理",
+      "original_number": 94,
+      "instruction": null,
+      "stem": "文学、经济学、历史学、社会学四个专业的学生甲、乙、丙、丁各自携带本专业的一本书参加读书会。读书会\n期间，四人交换了所带的书，已知：\n（1）丙是历史学专业学生，丁是文学专业学生；\n（2）交换书后，甲持有社会学书，乙不持有文学书；\n（3）交换书后，每个人所持有的书不是原来所携带的专业书。\n根据以上信息，不能推出以下哪项？",
+      "options": {
+        "A": "甲是经济学专业学生",
+        "B": "丙持有文学书",
+        "C": "乙是社会学专业学生",
+        "D": "丁持有历史书"
+      },
+      "options_mode": "text_or_mixed",
+      "content": "文学、经济学、历史学、社会学四个专业的学生甲、乙、丙、丁各自携带本专业的一本书参加读书会。读书会\n期间，四人交换了所带的书，已知：\n（1）丙是历史学专业学生，丁是文学专业学生；\n（2）交换书后，甲持有社会学书，乙不持有文学书；\n（3）交换书后，每个人所持有的书不是原来所携带的专业书。\n根据以上信息，不能推出以下哪项？\nA.甲是经济学专业学生 B.丙持有文学书 C.乙是社会学专业学生 D.丁持有历史书",
+      "figures": [],
+      "materials": [],
+      "material_ids": [],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2025年江苏省公务员录用考试《行测》题（A类）.pdf",
+        "blob_sha": "19aafbd1c2ff684bcc20b0520f6b0591f2dea72b",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2025%E5%B9%B4%E6%B1%9F%E8%8B%8F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89.pdf",
+        "pdf_pages": [
+          18
+        ],
+        "regions": [
+          {
+            "page": 18,
+            "bbox": [
+              28.855037689208984,
+              338.6507263183594,
+              546.8568115234375,
+              446.618408203125
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": [],
+      "notes": []
+    },
+    "source_answer": "D",
+    "answer": "D",
+    "analysis": "丙、丁分别学历史、文学，甲、乙只能分别学经济、社会。甲换到社会学书，而每人都不能持有自己的专业书，故甲学经济、乙学社会，A、C可推出。文学书不能给甲（甲已持社会学书）、乙（题干排除）或丁（不能持自己的专业书），只能给丙，B也可推出。余下经济学书与历史学书由乙、丁分持，既可乙经济、丁历史，也可乙历史、丁经济，所以D并非必然。两种完整方案都满足条件，不要把一种可行安排当成唯一安排。",
+    "selection_reason": "“不能推出”考察所有可行方案的共同部分，剩余自由度必须保留。",
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并源PDF行末硬换行；保留设问、编号条件和对话的分段，不改变命题含义。"
+      },
+      {
+        "type": "clarification",
+        "description": "将四个不同专业一一对应四人的常规语义显式写为“四人的专业各不相同”，不改变源题标准解所用关系。"
+      }
+    ],
+    "verification": {
+      "status": "editor_checked_pending_independent_review",
+      "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
+      "source_answer_available": true,
+      "source_answer_agreement": true,
+      "checked_on": "2026-11-15",
+      "reproducible_check": "reasoning_verify.py"
+    },
+    "options_mode": "text_or_mixed",
+    "source_locators": {
+      "original_number": 94,
+      "pages": [
+        18
+      ],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2025年江苏省公务员录用考试《行测》题（A类）.pdf",
+        "blob_sha": "19aafbd1c2ff684bcc20b0520f6b0591f2dea72b",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2025%E5%B9%B4%E6%B1%9F%E8%8B%8F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89.pdf",
+        "pdf_pages": [
+          18
+        ],
+        "regions": [
+          {
+            "page": 18,
+            "bbox": [
+              28.855037689208984,
+              338.6507263183594,
+              546.8568115234375,
+              446.618408203125
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      }
+    },
+    "source_answer_reference": {
+      "file": "江浙行测_AI题库/answers.jsonl",
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2025年江苏省公务员录用考试《行测》题（A类）答案及解析（121后暂缺）.pdf",
+        "blob_sha": "b710d5714e5dd1035a9fa2849b4007da7b8377e7",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2025%E5%B9%B4%E6%B1%9F%E8%8B%8F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%E7%AD%94%E6%A1%88%E5%8F%8A%E8%A7%A3%E6%9E%90%EF%BC%88121%E5%90%8E%E6%9A%82%E7%BC%BA%EF%BC%89.pdf",
+        "pdf_pages": [
+          46
+        ],
+        "regions": [
+          {
+            "page": 46,
+            "bbox": [
+              36.0,
+              135.87794494628906,
+              559.2000122070312,
+              568.4400024414062
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": []
+    },
+    "stem_override": "文学、经济学、历史学、社会学四个专业的学生甲、乙、丙、丁各自携带本专业的一本书参加读书会。四人的专业各不相同。读书会期间，四人交换了所带的书，已知：\n（1）丙是历史学专业学生，丁是文学专业学生；\n（2）交换书后，甲持有社会学书，乙不持有文学书；\n（3）交换书后，每个人所持有的书不是原来所携带的专业书。\n根据以上信息，不能推出以下哪项？",
+    "options": {
+      "A": "甲是经济学专业学生",
+      "B": "丙持有文学书",
+      "C": "乙是社会学专业学生",
+      "D": "丁持有历史书"
+    }
+  },
+  {
+    "number": 54,
+    "section": "判断推理",
+    "subsection": "逻辑判断",
+    "question_type": "single_choice",
+    "source_bank": "jiangzhe",
+    "source_file": "江浙行测_AI题库/questions.jsonl",
+    "source_id": "JS2020-A类-096",
+    "source_question": {
+      "question_id": "JS2020-A类-096",
+      "paper_id": "JS2020",
+      "province": "江苏",
+      "year": 2020,
+      "paper_type": "A类",
+      "section": "判断推理",
+      "original_number": 96,
+      "instruction": null,
+      "stem": "一项对某企业基层工作人员的研究报告显示，使用社交软件的基层工作人员罹患糖尿病、精神疾病、缺\n血性心脏疾病的概率均显著低于不使用社交软件的。据此，该企业管理人员认为，社交软件的使用有利于基层工\n作人员的健康。\n以下哪项如果为真，最能削弱上述管理人员的结论？",
+      "options": {
+        "A": "长时间使用电脑或者手机会引发包括精神疾病在内的多种健康问题",
+        "B": "该企业基层工作人员没有足够多的时间和精力锻炼身体",
+        "C": "该企业基层工作人员压力大，身心健康的人才在工作之余使用社交软件",
+        "D": "该企业基层工作人员普遍在四十岁以上，相当一部分人不使用社交软件"
+      },
+      "options_mode": "text_or_mixed",
+      "content": "一项对某企业基层工作人员的研究报告显示，使用社交软件的基层工作人员罹患糖尿病、精神疾病、缺\n血性心脏疾病的概率均显著低于不使用社交软件的。据此，该企业管理人员认为，社交软件的使用有利于基层工\n作人员的健康。\n以下哪项如果为真，最能削弱上述管理人员的结论？\nA、长时间使用电脑或者手机会引发包括精神疾病在内的多种健康问题\nB、该企业基层工作人员没有足够多的时间和精力锻炼身体\nC、该企业基层工作人员压力大，身心健康的人才在工作之余使用社交软件\nD、该企业基层工作人员普遍在四十岁以上，相当一部分人不使用社交软件",
+      "figures": [],
+      "materials": [],
+      "material_ids": [],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2020年江苏公务员考试《行测》真题（A类）.pdf",
+        "blob_sha": "00f42a7f169be020b83a9e1149f5f5a35cf4f059",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2020%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "regions": [
+          {
+            "page": 10,
+            "bbox": [
+              39.119998931884766,
+              634.0234375,
+              553.67333984375,
+              739.7544555664062
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": [],
+      "notes": []
+    },
+    "source_answer": "C",
+    "answer": "C",
+    "analysis": "调查只给出使用社交软件者患病较少，管理人员却把使用软件当作健康的原因。C提供反向解释：本来身心健康的人才更有余力在工作之余使用社交软件。因此，即使软件没有改善健康的作用，也会观察到这种分组差异。A谈长时间使用设备的风险，未说明两组在使用时长上的差别；B是共同的锻炼不足背景；D只说年龄和使用比例，未建立可解释两组健康差异的联系。C最直接动摇因果方向。",
+    "selection_reason": "关联可能由选择进入某组的条件造成；用反向因果解释同一观察结果。",
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并源PDF行末硬换行；保留设问、编号条件和对话的分段，不改变命题含义。"
+      }
+    ],
+    "verification": {
+      "status": "editor_checked_pending_independent_review",
+      "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
+      "source_answer_available": true,
+      "source_answer_agreement": true,
+      "checked_on": "2026-11-15"
+    },
+    "options_mode": "text_or_mixed",
+    "source_locators": {
+      "original_number": 96,
+      "pages": [
+        10
+      ],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2020年江苏公务员考试《行测》真题（A类）.pdf",
+        "blob_sha": "00f42a7f169be020b83a9e1149f5f5a35cf4f059",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2020%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "regions": [
+          {
+            "page": 10,
+            "bbox": [
+              39.119998931884766,
+              634.0234375,
+              553.67333984375,
+              739.7544555664062
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      }
+    },
+    "source_answer_reference": {
+      "file": "江浙行测_AI题库/answers.jsonl",
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2020年江苏公务员考试《行测》真题（A类）参考答案及解析.pdf",
+        "blob_sha": "1a1ef2fb48e2ee2c6502da08f5bd390283bb7c78",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2020%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%E5%8F%8A%E8%A7%A3%E6%9E%90.pdf",
+        "pdf_pages": [
+          17,
+          18
+        ],
+        "regions": [
+          {
+            "page": 17,
+            "bbox": [
+              60.11537170410156,
+              767.70458984375,
+              553.548095703125,
+              805.3945922851562
+            ]
+          },
+          {
+            "page": 18,
+            "bbox": [
+              39.1136474609375,
+              28.264404296875,
+              561.3656005859375,
+              202.0344696044922
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": []
+    },
+    "stem_override": "一项对某企业基层工作人员的研究报告显示，使用社交软件的基层工作人员罹患糖尿病、精神疾病、缺血性心脏疾病的概率均显著低于不使用社交软件的。据此，该企业管理人员认为，社交软件的使用有利于基层工作人员的健康。\n以下哪项如果为真，最能削弱上述管理人员的结论？",
+    "options": {
+      "A": "长时间使用电脑或者手机会引发包括精神疾病在内的多种健康问题",
+      "B": "该企业基层工作人员没有足够多的时间和精力锻炼身体",
+      "C": "该企业基层工作人员压力大，身心健康的人才在工作之余使用社交软件",
+      "D": "该企业基层工作人员普遍在四十岁以上，相当一部分人不使用社交软件"
+    }
+  },
+  {
+    "number": 55,
+    "section": "判断推理",
+    "subsection": "逻辑判断",
+    "question_type": "single_choice",
+    "source_bank": "jiangzhe",
+    "source_file": "江浙行测_AI题库/questions.jsonl",
+    "source_id": "ZJ2023-A类-103",
+    "source_question": {
+      "question_id": "ZJ2023-A类-103",
+      "paper_id": "ZJ2023",
+      "province": "浙江",
+      "year": 2023,
+      "paper_type": "A类",
+      "section": "判断推理",
+      "original_number": 103,
+      "instruction": null,
+      "stem": "某地区中小学教师中，毕业于师范类院校的女教师多于毕业于非师范类院校的男教师，        ，所以，该地区中\n小学女教师比男教师多。\n要使上述推理成立，最适合填入画横线位置的是：",
+      "options": {
+        "A": "毕业于师范类院校的教师少于毕业于非师范类院校的教师",
+        "B": "毕业于师范类院校的教师多于毕业于非师范类院校的教师",
+        "C": "毕业于师范类院校的女教师比毕业于非师范类院校的男教师多",
+        "D": "毕业于非师范类院校的女教师比毕业于非师范类院校的男教师多"
+      },
+      "options_mode": "text_or_mixed",
+      "content": "某地区中小学教师中，毕业于师范类院校的女教师多于毕业于非师范类院校的男教师，        ，所以，该地区中\n小学女教师比男教师多。\n要使上述推理成立，最适合填入画横线位置的是：\nA.毕业于师范类院校的教师少于毕业于非师范类院校的教师\nB.毕业于师范类院校的教师多于毕业于非师范类院校的教师\nC.毕业于师范类院校的女教师比毕业于非师范类院校的男教师多\nD.毕业于非师范类院校的女教师比毕业于非师范类院校的男教师多",
+      "figures": [],
+      "materials": [],
+      "material_ids": [],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2023年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "blob_sha": "5bcc6163c999c3910d10f36f6d8bea8a57df1417",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
+        "pdf_pages": [
+          19
+        ],
+        "regions": [
+          {
+            "page": 19,
+            "bbox": [
+              23.62849998474121,
+              456.8492126464844,
+              547.3163452148438,
+              567.9964599609375
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": [],
+      "notes": []
+    },
+    "source_answer": "A",
+    "answer": "A",
+    "analysis": "将教师按“师范/非师范”和“男/女”分成四格。设师范女、师范男、非师范女、非师范男分别为a、b、c、d，已知a>d。A给出a+b<c+d，移项得c-b>a-d>0，故c>b。两组交叉比较相加，a+c>b+d，女教师总数更多。B、C、D均不足：例如a=2、b=10、c=2、d=1，已知条件及B、C、D都成立，但女教师4人、男教师11人。不要把不同分类口径中的局部大小直接加到总量上。",
+    "selection_reason": "二维分组中的缺失比较，用差额而非表面多数推导总量。",
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并源PDF行末硬换行；保留设问、编号条件和对话的分段，不改变命题含义。"
+      }
+    ],
+    "verification": {
+      "status": "editor_checked_pending_independent_review",
+      "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
+      "source_answer_available": true,
+      "source_answer_agreement": true,
+      "checked_on": "2026-11-15",
+      "reproducible_check": "reasoning_verify.py"
+    },
+    "options_mode": "text_or_mixed",
+    "source_locators": {
+      "original_number": 103,
+      "pages": [
+        19
+      ],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2023年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "blob_sha": "5bcc6163c999c3910d10f36f6d8bea8a57df1417",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
+        "pdf_pages": [
+          19
+        ],
+        "regions": [
+          {
+            "page": 19,
+            "bbox": [
+              23.62849998474121,
+              456.8492126464844,
+              547.3163452148438,
+              567.9964599609375
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      }
+    },
+    "source_answer_reference": {
+      "file": "江浙行测_AI题库/answers.jsonl",
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2023年浙江省公务员录用考试《行测》真题（A类）（解析）.pdf",
+        "blob_sha": "9c7d7f35278953cbcb7177a79f339c0a866a1c23",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E8%A7%A3%E6%9E%90%EF%BC%89.pdf",
+        "pdf_pages": [
+          29,
+          30
+        ],
+        "regions": [
+          {
+            "page": 29,
+            "bbox": [
+              54.0,
+              636.1834716796875,
+              546.489990234375,
+              740.2334594726562
+            ]
+          },
+          {
+            "page": 30,
+            "bbox": [
+              54.0,
+              74.58447265625,
+              541.2052612304688,
+              209.83445739746094
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": []
+    },
+    "stem_override": "某地区中小学教师中，毕业于师范类院校的女教师多于毕业于非师范类院校的男教师，        ，所以，该地区中小学女教师比男教师多。\n要使上述推理成立，最适合填入画横线位置的是：",
+    "options": {
+      "A": "毕业于师范类院校的教师少于毕业于非师范类院校的教师",
+      "B": "毕业于师范类院校的教师多于毕业于非师范类院校的教师",
+      "C": "毕业于师范类院校的女教师比毕业于非师范类院校的男教师多",
+      "D": "毕业于非师范类院校的女教师比毕业于非师范类院校的男教师多"
+    },
+    "provenance_note": "题面来自仓库收录的网友回忆版；源参考答案为整理库所收解析答案，不冒称官方公布答案。"
+  },
+  {
+    "number": 56,
+    "section": "判断推理",
+    "subsection": "逻辑判断",
+    "question_type": "single_choice",
+    "source_bank": "jiangzhe",
+    "source_file": "江浙行测_AI题库/questions.jsonl",
+    "source_id": "JS2024-A类-099",
+    "source_question": {
+      "question_id": "JS2024-A类-099",
+      "paper_id": "JS2024",
+      "province": "江苏",
+      "year": 2024,
+      "paper_type": "A类",
+      "section": "判断推理",
+      "original_number": 99,
+      "instruction": null,
+      "stem": "甲：小明十岁就能用英语与英国人流利对话，语言天赋真是出类拔萃。\n乙：小明跟着父母在英国住了两年，能流利对话不足为奇。\n以下哪项与题干对话方式最为相似？",
+      "options": {
+        "A": "甲：这款热水器的价格比市面上常见的热水器高出一倍，太不划算了\n乙：这款产品用的是航天级别的材料，在同材质热水器中性价比很高",
+        "B": "甲：小李以前容易冲动，进入职场一年后稳重多了\n乙：小李承担了单位大量重要工作，变得稳重一点理所当然",
+        "C": "甲：小张的数学一直很好，进入高中后，物理、化学等科目的学习很轻松\n乙：数学强调科学思维，掌握科学思维的人学习物理、化学当然没有难度",
+        "D": "甲：小刘在过去的一年中连续犯下三起盗窃案，真是无可救药\n乙：人非圣贤，孰能无过，相信在经过改造之后他会洗心革面"
+      },
+      "options_mode": "text_or_mixed",
+      "content": "甲：小明十岁就能用英语与英国人流利对话，语言天赋真是出类拔萃。\n乙：小明跟着父母在英国住了两年，能流利对话不足为奇。\n以下哪项与题干对话方式最为相似？\nA.甲：这款热水器的价格比市面上常见的热水器高出一倍，太不划算了\n乙：这款产品用的是航天级别的材料，在同材质热水器中性价比很高\nB.甲：小李以前容易冲动，进入职场一年后稳重多了\n乙：小李承担了单位大量重要工作，变得稳重一点理所当然\nC.甲：小张的数学一直很好，进入高中后，物理、化学等科目的学习很轻松\n乙：数学强调科学思维，掌握科学思维的人学习物理、化学当然没有难度\nD.甲：小刘在过去的一年中连续犯下三起盗窃案，真是无可救药\n乙：人非圣贤，孰能无过，相信在经过改造之后他会洗心革面",
+      "figures": [],
+      "materials": [],
+      "material_ids": [],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2024年江苏省公务员录用考试《行测》题（A类）.pdf",
+        "blob_sha": "64d6269bf7fb4c028cadfefc95388304f46cb67d",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2024%E5%B9%B4%E6%B1%9F%E8%8B%8F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89.pdf",
+        "pdf_pages": [
+          16
+        ],
+        "regions": [
+          {
+            "page": 16,
+            "bbox": [
+              28.855030059814453,
+              267.67254638671875,
+              387.990234375,
+              442.9172058105469
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": [],
+      "notes": []
+    },
+    "source_answer": "A",
+    "answer": "A",
+    "analysis": "甲根据一种表现作出评价；乙承认该表现，却补入被忽略的条件，指出这个表现不足以支持甲的评价。A对应：价格较高是事实，但材料档次不同，不能仅凭与普通产品比价就断定不划算。B、C中乙是在解释、支持甲描述的现象，没有反对甲的判断；D用未来可能改过的预测反驳“无可救药”，没有用新的背景条件重新解释既有表现。A在“承认现象、补充背景、改判评价”三个环节上都一致。",
+    "selection_reason": "对话结构不止看有没有转折，更要看乙在解释事实还是反驳从事实到评价的推断。",
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并源PDF行末硬换行；保留设问、编号条件和对话的分段，不改变命题含义。"
+      }
+    ],
+    "verification": {
+      "status": "editor_checked_pending_independent_review",
+      "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
+      "source_answer_available": true,
+      "source_answer_agreement": true,
+      "checked_on": "2026-11-15"
+    },
+    "options_mode": "text_or_mixed",
+    "source_locators": {
+      "original_number": 99,
+      "pages": [
+        16
+      ],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2024年江苏省公务员录用考试《行测》题（A类）.pdf",
+        "blob_sha": "64d6269bf7fb4c028cadfefc95388304f46cb67d",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2024%E5%B9%B4%E6%B1%9F%E8%8B%8F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89.pdf",
+        "pdf_pages": [
+          16
+        ],
+        "regions": [
+          {
+            "page": 16,
+            "bbox": [
+              28.855030059814453,
+              267.67254638671875,
+              387.990234375,
+              442.9172058105469
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      }
+    },
+    "source_answer_reference": {
+      "file": "江浙行测_AI题库/answers.jsonl",
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2024年江苏省公务员录用考试《行测》（A类）答案+解析.pdf",
+        "blob_sha": "1bcbc9124febeb75a797933742018e2e45642061",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2024%E5%B9%B4%E6%B1%9F%E8%8B%8F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%EF%BC%88A%E7%B1%BB%EF%BC%89%E7%AD%94%E6%A1%88%2B%E8%A7%A3%E6%9E%90.pdf",
+        "pdf_pages": [
+          30,
+          31
+        ],
+        "regions": [
+          {
+            "page": 30,
+            "bbox": [
+              70.91999816894531,
+              636.5289306640625,
+              524.6441040039062,
+              756.2716674804688
+            ]
+          },
+          {
+            "page": 31,
+            "bbox": [
+              70.91999816894531,
+              59.328922271728516,
+              524.6726684570312,
+              210.26287841796875
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": []
+    },
+    "stem_override": "甲：小明十岁就能用英语与英国人流利对话，语言天赋真是出类拔萃。\n乙：小明跟着父母在英国住了两年，能流利对话不足为奇。\n以下哪项与题干对话方式最为相似？",
+    "options": {
+      "A": "甲：这款热水器的价格比市面上常见的热水器高出一倍，太不划算了\n乙：这款产品用的是航天级别的材料，在同材质热水器中性价比很高",
+      "B": "甲：小李以前容易冲动，进入职场一年后稳重多了\n乙：小李承担了单位大量重要工作，变得稳重一点理所当然",
+      "C": "甲：小张的数学一直很好，进入高中后，物理、化学等科目的学习很轻松\n乙：数学强调科学思维，掌握科学思维的人学习物理、化学当然没有难度",
+      "D": "甲：小刘在过去的一年中连续犯下三起盗窃案，真是无可救药\n乙：人非圣贤，孰能无过，相信在经过改造之后他会洗心革面"
+    }
+  },
+  {
+    "number": 57,
+    "section": "判断推理",
+    "subsection": "逻辑判断",
+    "question_type": "single_choice",
+    "source_bank": "jiangzhe",
+    "source_file": "江浙行测_AI题库/questions.jsonl",
+    "source_id": "JS2021-A类-098",
+    "source_question": {
+      "question_id": "JS2021-A类-098",
+      "paper_id": "JS2021",
+      "province": "江苏",
+      "year": 2021,
+      "paper_type": "A类",
+      "section": "判断推理",
+      "original_number": 98,
+      "instruction": null,
+      "stem": "当前，很多高校规定研究生毕业之前必须发表一定数量的学术文章，并将其与学位获得资格挂钩。校方认为，\n研究生学习期间发表论文，有利于提高其学术水平，增强其学术能力，既能实现人才培养的目标，又能扩大学校\n的知名度。然而，最近某高校取消了研究生论文发表与学位获得资格挂钩的规定，受到许多研究生导师的认同。\n他们认为，这一规定更有利于培养该校研究生的学术能力。\n以下哪项如果为真，最能支持上述研究生导师们的观点？",
+      "options": {
+        "A": "该校的研究生素质高，即使学校不做规定，大部分研究生也会想方设法发表论文",
+        "B": "该校曾有极少数研究生为了学位而肆意抄袭、买卖论文，严重影响学校声誉",
+        "C": "该校许多导师指导多名研究生，需要花费大量时间来修改学生的投稿论文",
+        "D": "该校过去用论文发表要求来代替培养过程监督，导致学生难以沉下心来研究学问"
+      },
+      "options_mode": "text_or_mixed",
+      "content": "当前，很多高校规定研究生毕业之前必须发表一定数量的学术文章，并将其与学位获得资格挂钩。校方认为，\n研究生学习期间发表论文，有利于提高其学术水平，增强其学术能力，既能实现人才培养的目标，又能扩大学校\n的知名度。然而，最近某高校取消了研究生论文发表与学位获得资格挂钩的规定，受到许多研究生导师的认同。\n他们认为，这一规定更有利于培养该校研究生的学术能力。\n以下哪项如果为真，最能支持上述研究生导师们的观点？\nA、该校的研究生素质高，即使学校不做规定，大部分研究生也会想方设法发表论文\nB、该校曾有极少数研究生为了学位而肆意抄袭、买卖论文，严重影响学校声誉\nC、该校许多导师指导多名研究生，需要花费大量时间来修改学生的投稿论文\nD、该校过去用论文发表要求来代替培养过程监督，导致学生难以沉下心来研究学问",
+      "figures": [],
+      "materials": [],
+      "material_ids": [],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2021年江苏公务员考试《行测》真题（A卷）.pdf",
+        "blob_sha": "959016a0337c29a66b64ca50a642bfdb5574d6df",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2021%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E5%8D%B7%EF%BC%89.pdf",
+        "pdf_pages": [
+          13,
+          14
+        ],
+        "regions": [
+          {
+            "page": 13,
+            "bbox": [
+              42.0,
+              678.5444946289062,
+              558.8500366210938,
+              799.9945068359375
+            ]
+          },
+          {
+            "page": 14,
+            "bbox": [
+              42.0,
+              28.26446533203125,
+              425.1571960449219,
+              38.7144660949707
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": [],
+      "notes": []
+    },
+    "source_answer": "D",
+    "answer": "D",
+    "analysis": "要支持的是取消硬性发表要求更有利于培养学术能力。D直接指出旧制度如何损害这一目标：以发表要求替代过程培养，促使学生追逐发表而难以沉心研究；取消这种约束因此具有改善培养的理由。A只说明没有硬性规定也有人发表，未表明能力培养更好；B谈极少数人的学术不端及学校声誉；C谈导师的修改负担。B、C可以构成其他改革理由，但D与本题要证明的培养效果联系最直接。",
+    "selection_reason": "围绕结论中的目标衡量支持力度，不能把对某项政策的任何赞成理由都当成同等证据。",
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并源PDF行末硬换行；保留设问、编号条件和对话的分段，不改变命题含义。"
+      }
+    ],
+    "verification": {
+      "status": "editor_checked_pending_independent_review",
+      "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
+      "source_answer_available": true,
+      "source_answer_agreement": true,
+      "checked_on": "2026-11-15"
+    },
+    "options_mode": "text_or_mixed",
+    "source_locators": {
+      "original_number": 98,
+      "pages": [
+        13,
+        14
+      ],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2021年江苏公务员考试《行测》真题（A卷）.pdf",
+        "blob_sha": "959016a0337c29a66b64ca50a642bfdb5574d6df",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2021%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E5%8D%B7%EF%BC%89.pdf",
+        "pdf_pages": [
+          13,
+          14
+        ],
+        "regions": [
+          {
+            "page": 13,
+            "bbox": [
+              42.0,
+              678.5444946289062,
+              558.8500366210938,
+              799.9945068359375
+            ]
+          },
+          {
+            "page": 14,
+            "bbox": [
+              42.0,
+              28.26446533203125,
+              425.1571960449219,
+              38.7144660949707
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      }
+    },
+    "source_answer_reference": {
+      "file": "江浙行测_AI题库/answers.jsonl",
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2021年江苏公务员考试《行测》真题（A卷）参考答案及解析.pdf",
+        "blob_sha": "4890efbb110a89238acb6dcacc445e06a23271b0",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2021%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E5%8D%B7%EF%BC%89%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%E5%8F%8A%E8%A7%A3%E6%9E%90.pdf",
+        "pdf_pages": [
+          26
+        ],
+        "regions": [
+          {
+            "page": 26,
+            "bbox": [
+              41.995243072509766,
+              430.0235900878906,
+              553.56689453125,
+              686.3546142578125
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": []
+    },
+    "stem_override": "当前，很多高校规定研究生毕业之前必须发表一定数量的学术文章，并将其与学位获得资格挂钩。校方认为，研究生学习期间发表论文，有利于提高其学术水平，增强其学术能力，既能实现人才培养的目标，又能扩大学校的知名度。然而，最近某高校取消了研究生论文发表与学位获得资格挂钩的规定，受到许多研究生导师的认同。他们认为，这一规定更有利于培养该校研究生的学术能力。\n以下哪项如果为真，最能支持上述研究生导师们的观点？",
+    "options": {
+      "A": "该校的研究生素质高，即使学校不做规定，大部分研究生也会想方设法发表论文",
+      "B": "该校曾有极少数研究生为了学位而肆意抄袭、买卖论文，严重影响学校声誉",
+      "C": "该校许多导师指导多名研究生，需要花费大量时间来修改学生的投稿论文",
+      "D": "该校过去用论文发表要求来代替培养过程监督，导致学生难以沉下心来研究学问"
+    }
+  },
+  {
+    "number": 58,
+    "section": "判断推理",
+    "subsection": "逻辑判断",
+    "question_type": "single_choice",
+    "source_bank": "jiangzhe",
+    "source_file": "江浙行测_AI题库/questions.jsonl",
+    "source_id": "JS2022-A类-095",
+    "source_question": {
+      "question_id": "JS2022-A类-095",
+      "paper_id": "JS2022",
+      "province": "江苏",
+      "year": 2022,
+      "paper_type": "A类",
+      "section": "判断推理",
+      "original_number": 95,
+      "instruction": null,
+      "stem": "、某企业秉持人才为上的理念，一直致力于专业技术人才队伍建设，十年来，该企业招聘的\n大部分机械工人来自甲职业技术学院，今年招聘的机械工人总数明显增加，但从该学院招聘的机械\n工人数量却大幅减少，而且招进来的很多人没有经过职业技术学院系统的学习。\n以下哪项？如果为真，最能解释该企业今年招聘情况的变化。",
+      "options": {
+        "A": "该企业增设了技术培训部门，以培训新招聘的机械工人",
+        "B": "三年前，该企业的管理层进行了重大重组，决定推广A、I 的应用",
+        "C": "从去年开始，权威的职业技术学院排行榜上，甲学院落后于乙学院",
+        "D": "很多没有上过职业技术学院的工人很有才华，只是没有机会上学"
+      },
+      "options_mode": "text_or_mixed",
+      "content": "、某企业秉持人才为上的理念，一直致力于专业技术人才队伍建设，十年来，该企业招聘的\n大部分机械工人来自甲职业技术学院，今年招聘的机械工人总数明显增加，但从该学院招聘的机械\n工人数量却大幅减少，而且招进来的很多人没有经过职业技术学院系统的学习。\n以下哪项？如果为真，最能解释该企业今年招聘情况的变化。\nA、该企业增设了技术培训部门，以培训新招聘的机械工人\nB、三年前，该企业的管理层进行了重大重组，决定推广A、I 的应用\nC、从去年开始，权威的职业技术学院排行榜上，甲学院落后于乙学院\nD、很多没有上过职业技术学院的工人很有才华，只是没有机会上学",
+      "figures": [],
+      "materials": [],
+      "material_ids": [],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2022年江苏公务员考试《行测》真题（A类）....pdf",
+        "blob_sha": "0c2016b9c742eda719a376a8a63c41daa6d3ec3b",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2022%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89....pdf",
+        "pdf_pages": [
+          16
+        ],
+        "regions": [
+          {
+            "page": 16,
+            "bbox": [
+              36.0,
+              409.9219970703125,
+              553.0799560546875,
+              536.3060302734375
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": [],
+      "notes": []
+    },
+    "source_answer": "A",
+    "answer": "A",
+    "analysis": "需同时解释三个信息：企业仍重视专业技术，招聘总量增加，却减少从职业院校招聘并吸纳了许多未经系统培训的人。A中的企业自建培训部门，使“先招进来、再完成技能培养”成为可能，不必放弃技术要求，能连起这些变化。B只是三年前重组并推广AI，未说明为何今年增加这类招聘；C只能解释可能少从甲学院招，不能解释招入许多未受系统培训者；D泛称有人有才华，缺少企业如何保证专业技能的环节。",
+    "selection_reason": "解释题须兼顾整组看似冲突的事实，不能仅解释其中一个变化。",
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并源PDF行末硬换行；保留设问、编号条件和对话的分段，不改变命题含义。"
+      },
+      {
+        "type": "transcription_correction",
+        "description": "删除题干开头孤立顿号，将设问误插问号及句末句号规范为完整问句，将B项“A、I”合并为“AI”；不改选项内容。"
+      }
+    ],
+    "verification": {
+      "status": "editor_checked_pending_independent_review",
+      "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
+      "source_answer_available": true,
+      "source_answer_agreement": true,
+      "checked_on": "2026-11-15"
+    },
+    "options_mode": "text_or_mixed",
+    "source_locators": {
+      "original_number": 95,
+      "pages": [
+        16
+      ],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2022年江苏公务员考试《行测》真题（A类）....pdf",
+        "blob_sha": "0c2016b9c742eda719a376a8a63c41daa6d3ec3b",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2022%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89....pdf",
+        "pdf_pages": [
+          16
+        ],
+        "regions": [
+          {
+            "page": 16,
+            "bbox": [
+              36.0,
+              409.9219970703125,
+              553.0799560546875,
+              536.3060302734375
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      }
+    },
+    "source_answer_reference": {
+      "file": "江浙行测_AI题库/answers.jsonl",
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2022年江苏公务员考试《行测》（A类）及解析.pdf",
+        "blob_sha": "68a5929db30d504c674f19703f9b7e262043621a",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2022%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%EF%BC%88A%E7%B1%BB%EF%BC%89%E5%8F%8A%E8%A7%A3%E6%9E%90.pdf",
+        "pdf_pages": [
+          30,
+          31
+        ],
+        "regions": [
+          {
+            "page": 30,
+            "bbox": [
+              36.0,
+              726.5038452148438,
+              256.447021484375,
+              776.7147216796875
+            ]
+          },
+          {
+            "page": 31,
+            "bbox": [
+              36.0,
+              38.42380142211914,
+              550.4461669921875,
+              249.9147491455078
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": []
+    },
+    "stem_override": "某企业秉持人才为上的理念，一直致力于专业技术人才队伍建设，十年来，该企业招聘的大部分机械工人来自甲职业技术学院，今年招聘的机械工人总数明显增加，但从该学院招聘的机械工人数量却大幅减少，而且招进来的很多人没有经过职业技术学院系统的学习。\n以下哪项如果为真，最能解释该企业今年招聘情况的变化？",
+    "options": {
+      "A": "该企业增设了技术培训部门，以培训新招聘的机械工人",
+      "B": "三年前，该企业的管理层进行了重大重组，决定推广AI的应用",
+      "C": "从去年开始，权威的职业技术学院排行榜上，甲学院落后于乙学院",
+      "D": "很多没有上过职业技术学院的工人很有才华，只是没有机会上学"
+    }
+  },
+  {
+    "number": 59,
+    "section": "判断推理",
+    "subsection": "逻辑判断",
+    "question_type": "single_choice",
+    "source_bank": "jiangzhe",
+    "source_file": "江浙行测_AI题库/questions.jsonl",
+    "source_id": "ZJ2023-A类-109",
+    "source_question": {
+      "question_id": "ZJ2023-A类-109",
+      "paper_id": "ZJ2023",
+      "province": "浙江",
+      "year": 2023,
+      "paper_type": "A类",
+      "section": "判断推理",
+      "original_number": 109,
+      "instruction": null,
+      "stem": "三叠纪末期中央大西洋超级火成岩省喷发造成的火山冬天导致大量陆地生物灭绝，恐龙却避过了这一灾难，并\n于三叠纪末生物灭绝事件后迅速占据生态主位。恐龙为什么能在生物灭绝的天灾中得以生存，并于灾后蓬勃发\n展？晚三叠世至早侏罗世早期是地球历史上典型的温室时期，地球两极不存在冰川，森林覆盖到达潘吉亚大陆\n的南北两极。研究人员在潘吉亚大陆的北极地区准噶尔盆地晚三叠世至早侏罗世湖沼相泥岩中发现了保存精美\n的恐龙脚印化石，据此认为早已适应极地寒冷的气候是恐龙崛起的主要原因。\n下列哪项最可能是研究人员得出结论的条件？",
+      "options": {
+        "A": "晚三叠世至早侏罗世早期恐龙生活于极地地区",
+        "B": "大灭绝事件后恐龙体积迅速增加，地理分布范围迅速扩张",
+        "C": "即使两极无冰川的温室地球时期，极地也存在季节性的结冰",
+        "D": "在大灭绝中幸存下来的大多是分布于中、高纬度地区的恐龙"
+      },
+      "options_mode": "text_or_mixed",
+      "content": "三叠纪末期中央大西洋超级火成岩省喷发造成的火山冬天导致大量陆地生物灭绝，恐龙却避过了这一灾难，并\n于三叠纪末生物灭绝事件后迅速占据生态主位。恐龙为什么能在生物灭绝的天灾中得以生存，并于灾后蓬勃发\n展？晚三叠世至早侏罗世早期是地球历史上典型的温室时期，地球两极不存在冰川，森林覆盖到达潘吉亚大陆\n的南北两极。研究人员在潘吉亚大陆的北极地区准噶尔盆地晚三叠世至早侏罗世湖沼相泥岩中发现了保存精美\n的恐龙脚印化石，据此认为早已适应极地寒冷的气候是恐龙崛起的主要原因。\n下列哪项最可能是研究人员得出结论的条件？\nA.晚三叠世至早侏罗世早期恐龙生活于极地地区\nB.大灭绝事件后恐龙体积迅速增加，地理分布范围迅速扩张\nC.即使两极无冰川的温室地球时期，极地也存在季节性的结冰\nD.在大灭绝中幸存下来的大多是分布于中、高纬度地区的恐龙",
+      "figures": [],
+      "materials": [],
+      "material_ids": [],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2023年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "blob_sha": "5bcc6163c999c3910d10f36f6d8bea8a57df1417",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
+        "pdf_pages": [
+          20
+        ],
+        "regions": [
+          {
+            "page": 20,
+            "bbox": [
+              23.62849998474121,
+              579.1626586914062,
+              547.3163452148438,
+              738.4935302734375
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": [],
+      "notes": []
+    },
+    "source_answer": "C",
+    "answer": "C",
+    "analysis": "脚印化石能支持恐龙当时生活在极地，却不能自动证明当时极地寒冷，题干还特意给出了两极无冰川的温室背景。C说明即使无冰川，极地仍有季节性结冰，为“恐龙已适应寒冷”补上缺失的环境条件。A只是重复由脚印得到的分布信息；B说的是崛起后的结果；D补充幸存者的地理分布，却仍未说明这些地区当时是否寒冷。C最贴近这一步推断所缺的条件。",
+    "selection_reason": "地理名称不能代替当时环境事实，识别论证中被常识印象遮住的前提。",
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并源PDF行末硬换行；保留设问、编号条件和对话的分段，不改变命题含义。"
+      }
+    ],
+    "verification": {
+      "status": "editor_checked_pending_independent_review",
+      "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
+      "source_answer_available": true,
+      "source_answer_agreement": true,
+      "checked_on": "2026-11-15"
+    },
+    "options_mode": "text_or_mixed",
+    "source_locators": {
+      "original_number": 109,
+      "pages": [
+        20
+      ],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2023年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "blob_sha": "5bcc6163c999c3910d10f36f6d8bea8a57df1417",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
+        "pdf_pages": [
+          20
+        ],
+        "regions": [
+          {
+            "page": 20,
+            "bbox": [
+              23.62849998474121,
+              579.1626586914062,
+              547.3163452148438,
+              738.4935302734375
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      }
+    },
+    "source_answer_reference": {
+      "file": "江浙行测_AI题库/answers.jsonl",
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2023年浙江省公务员录用考试《行测》真题（A类）（解析）.pdf",
+        "blob_sha": "9c7d7f35278953cbcb7177a79f339c0a866a1c23",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E8%A7%A3%E6%9E%90%EF%BC%89.pdf",
+        "pdf_pages": [
+          32,
+          33
+        ],
+        "regions": [
+          {
+            "page": 32,
+            "bbox": [
+              54.0,
+              277.38446044921875,
+              541.2649536132812,
+              615.4334716796875
+            ]
+          },
+          {
+            "page": 33,
+            "bbox": [
+              54.0,
+              78.72003173828125,
+              540.3599853515625,
+              282.84002685546875
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": []
+    },
+    "stem_override": "三叠纪末期中央大西洋超级火成岩省喷发造成的火山冬天导致大量陆地生物灭绝，恐龙却避过了这一灾难，并于三叠纪末生物灭绝事件后迅速占据生态主位。恐龙为什么能在生物灭绝的天灾中得以生存，并于灾后蓬勃发展？晚三叠世至早侏罗世早期是地球历史上典型的温室时期，地球两极不存在冰川，森林覆盖到达潘吉亚大陆的南北两极。研究人员在潘吉亚大陆的北极地区准噶尔盆地晚三叠世至早侏罗世湖沼相泥岩中发现了保存精美的恐龙脚印化石，据此认为早已适应极地寒冷的气候是恐龙崛起的主要原因。\n下列哪项最可能是研究人员得出结论的条件？",
+    "options": {
+      "A": "晚三叠世至早侏罗世早期恐龙生活于极地地区",
+      "B": "大灭绝事件后恐龙体积迅速增加，地理分布范围迅速扩张",
+      "C": "即使两极无冰川的温室地球时期，极地也存在季节性的结冰",
+      "D": "在大灭绝中幸存下来的大多是分布于中、高纬度地区的恐龙"
+    },
+    "provenance_note": "题面来自仓库收录的网友回忆版；源参考答案为整理库所收解析答案，不冒称官方公布答案。"
+  },
+  {
+    "number": 60,
+    "section": "判断推理",
+    "subsection": "逻辑判断",
+    "question_type": "single_choice",
+    "source_bank": "jiangzhe",
+    "source_file": "江浙行测_AI题库/questions.jsonl",
+    "source_id": "JS2021-A类-094",
+    "source_question": {
+      "question_id": "JS2021-A类-094",
+      "paper_id": "JS2021",
+      "province": "江苏",
+      "year": 2021,
+      "paper_type": "A类",
+      "section": "判断推理",
+      "original_number": 94,
+      "instruction": null,
+      "stem": "甲、乙、丙、丁4 位中学同学毕业30 年后相聚。现在，他们已成为企业家、大学教师、歌手和会计师，且\n每人只有一种身份，并不重复。他们在中学时代就各人的未来职业有过如下预言:\n甲: 乙不会成为歌手；\n乙: 丙会成为会计师；\n丙: 丁不会成为企业家；\n丁: 乙不会成为大学教师。\n现在看来，他们当中只有会计师的预言是正确的。\n根据上述信息可以推断，甲、乙、丙、丁的职业分别是：",
+      "options": {
+        "A": "企业家、大学教师、歌手、会计师",
+        "B": "大学教师、歌手、企业家、会计师",
+        "C": "企业家、歌手、会计师、大学教师",
+        "D": "会计师、大学教师、歌手、企业家"
+      },
+      "options_mode": "text_or_mixed",
+      "content": "甲、乙、丙、丁4 位中学同学毕业30 年后相聚。现在，他们已成为企业家、大学教师、歌手和会计师，且\n每人只有一种身份，并不重复。他们在中学时代就各人的未来职业有过如下预言:\n甲: 乙不会成为歌手；\n乙: 丙会成为会计师；\n丙: 丁不会成为企业家；\n丁: 乙不会成为大学教师。\n现在看来，他们当中只有会计师的预言是正确的。\n根据上述信息可以推断，甲、乙、丙、丁的职业分别是：\nA、企业家、大学教师、歌手、会计师 B、大学教师、歌手、企业家、会计师\nC、企业家、歌手、会计师、大学教师 D、会计师、大学教师、歌手、企业家",
+      "figures": [],
+      "materials": [],
+      "material_ids": [],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2021年江苏公务员考试《行测》真题（A卷）.pdf",
+        "blob_sha": "959016a0337c29a66b64ca50a642bfdb5574d6df",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2021%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E5%8D%B7%EF%BC%89.pdf",
+        "pdf_pages": [
+          13
+        ],
+        "regions": [
+          {
+            "page": 13,
+            "bbox": [
+              42.0,
+              94.26446533203125,
+              551.0381469726562,
+              251.9544677734375
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": [],
+      "notes": []
+    },
+    "source_answer": "D",
+    "answer": "D",
+    "analysis": "先看甲的预言。若甲说错，则乙是歌手；丁的“乙不会成为大学教师”就为真，因而丁是唯一说真的会计师。此时丙应说错，于是丁又必须是企业家，与丁为会计师冲突。故甲说真，甲就是会计师，其余三人均说假。丁说假得乙是大学教师，丙说假得丁是企业家，余下丙为歌手，得到D。这里真假取决于说话者的职业，必须把身份和陈述联立，不能只数对了几句话。",
+    "selection_reason": "真假与说话者身份耦合，从一个假设推出职业冲突，比枚举全部24种排列更快。",
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并源PDF行末硬换行；保留设问、编号条件和对话的分段，不改变命题含义。"
+      }
+    ],
+    "verification": {
+      "status": "editor_checked_pending_independent_review",
+      "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
+      "source_answer_available": true,
+      "source_answer_agreement": true,
+      "checked_on": "2026-11-15",
+      "reproducible_check": "reasoning_verify.py"
+    },
+    "options_mode": "text_or_mixed",
+    "source_locators": {
+      "original_number": 94,
+      "pages": [
+        13
+      ],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2021年江苏公务员考试《行测》真题（A卷）.pdf",
+        "blob_sha": "959016a0337c29a66b64ca50a642bfdb5574d6df",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2021%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E5%8D%B7%EF%BC%89.pdf",
+        "pdf_pages": [
+          13
+        ],
+        "regions": [
+          {
+            "page": 13,
+            "bbox": [
+              42.0,
+              94.26446533203125,
+              551.0381469726562,
+              251.9544677734375
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      }
+    },
+    "source_answer_reference": {
+      "file": "江浙行测_AI题库/answers.jsonl",
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2021年江苏公务员考试《行测》真题（A卷）参考答案及解析.pdf",
+        "blob_sha": "4890efbb110a89238acb6dcacc445e06a23271b0",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2021%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E5%8D%B7%EF%BC%89%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%E5%8F%8A%E8%A7%A3%E6%9E%90.pdf",
+        "pdf_pages": [
+          25
+        ],
+        "regions": [
+          {
+            "page": 25,
+            "bbox": [
+              41.995147705078125,
+              211.02362060546875,
+              553.565673828125,
+              362.4736022949219
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": []
+    },
+    "stem_override": "甲、乙、丙、丁4 位中学同学毕业30 年后相聚。现在，他们已成为企业家、大学教师、歌手和会计师，且每人只有一种身份，并不重复。他们在中学时代就各人的未来职业有过如下预言:\n甲: 乙不会成为歌手；\n乙: 丙会成为会计师；\n丙: 丁不会成为企业家；\n丁: 乙不会成为大学教师。现在看来，他们当中只有会计师的预言是正确的。\n根据上述信息可以推断，甲、乙、丙、丁的职业分别是：",
+    "options": {
+      "A": "企业家、大学教师、歌手、会计师",
+      "B": "大学教师、歌手、企业家、会计师",
+      "C": "企业家、歌手、会计师、大学教师",
+      "D": "会计师、大学教师、歌手、企业家"
+    }
+  },
+  {
+    "number": 61,
+    "section": "判断推理",
+    "subsection": "逻辑判断",
+    "question_type": "single_choice",
+    "source_bank": "guangdong_mock",
+    "source_file": "模考/2026下半年广东卷_16-33季_AI可读/全部题目.jsonl",
+    "source_id": "gd-mock-2026h2-s19-q64",
+    "source_question": {
+      "id": "gd-mock-2026h2-s19-q64",
+      "season": 19,
+      "section": "判断推理",
+      "number": 64,
+      "material_id": null,
+      "stem": [
+        {
+          "type": "text",
+          "text": "如果提高管理水平，企业工作效率就会得到提升；如果优化工作流程，企业工作效率也会得到提升。因此，企业要想提升工作效率，必须依靠提高管理水平或优化工作流程来实现。下列选项与题干逻辑结构最为相似的是（    ）。"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "text": "只要科学施肥，就能提高产量；只要科学施肥，就能改良土壤。因此，实现科学施肥就能提高产量或改良土壤"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "text": "只有绿色生产，才能减少污染；只有绿色生产，才能节约资源。因此，减少污染或节约资源都离不开绿色生产"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "text": "降低设备故障率离不开定期检修；避免安全事故离不开规范操作。因此，规范操作是降低设备故障率或避免安全事故的必要条件"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "text": "只要加强宣传，就能提高产品知名度；只要优化产品设计，就能提高产品知名度。因此，提高产品知名度的前提是加强宣传或优化产品设计"
+          }
+        ]
+      },
+      "source_pages": [
+        17
+      ],
+      "source_spans": [
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            52.402,
+            343.359,
+            516.384,
+            355.777
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            68.048,
+            363.432,
+            505.17,
+            375.545
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            68.048,
+            382.894,
+            303.98,
+            395.312
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            68.048,
+            406.369,
+            516.299,
+            418.787
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            68.048,
+            426.442,
+            168.754,
+            438.555
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            68.048,
+            445.904,
+            526.914,
+            458.322
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            68.048,
+            466.594,
+            157.54,
+            478.707
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            68.048,
+            486.056,
+            526.914,
+            498.475
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            68.048,
+            506.748,
+            247.251,
+            518.86
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            68.048,
+            526.209,
+            516.299,
+            538.628
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            68.048,
+            546.283,
+            314.534,
+            558.395
+          ]
+        }
+      ],
+      "source_asset_ids": [],
+      "answer": null,
+      "source": {
+        "source_name": "2026下半年省考第十九季行测模考大赛（广东卷）.pdf",
+        "source_sha256": "f101b84dd197ecd9df9f17c31ec074440855732d5de5267664437c1d44ae5762",
+        "pages": 25
+      },
+      "material": null
+    },
+    "source_answer": null,
+    "answer": "D",
+    "analysis": "记提高管理为P、优化流程为Q、提升效率为R。题干前提是P→R、Q→R，结论却写成R→（P或Q），把两种已知的充分办法说成必须至少采用一种的必要条件。D同样是宣传→知名度提高、优化设计→知名度提高，却据此断定提高知名度必须宣传或优化设计。A从同一前件推出两个结果；B的绿色生产本来就是两个目标各自的必要条件；C则是两条不同条件链后只保留其中一项，都不是同一结构。结构相似不要求论证本身正确。",
+    "selection_reason": "辨认把充分条件当必要条件的同构错误，避免只凭题材或“或者”匹配。",
+    "edits": [],
+    "verification": {
+      "status": "editor_checked_pending_independent_review",
+      "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
+      "source_answer_available": false,
+      "source_answer_agreement": null,
+      "checked_on": "2026-11-15"
+    },
+    "options_mode": "text_or_mixed",
+    "source_locators": {
+      "original_number": 64,
+      "pages": [
+        17
+      ],
+      "source": {
+        "source_name": "2026下半年省考第十九季行测模考大赛（广东卷）.pdf",
+        "source_sha256": "f101b84dd197ecd9df9f17c31ec074440855732d5de5267664437c1d44ae5762",
+        "pages": 25
+      }
+    }
+  },
+  {
+    "number": 62,
+    "section": "判断推理",
+    "subsection": "逻辑判断",
+    "question_type": "single_choice",
+    "source_bank": "jiangzhe",
+    "source_file": "江浙行测_AI题库/questions.jsonl",
+    "source_id": "ZJ2025-A类-105",
+    "source_question": {
+      "question_id": "ZJ2025-A类-105",
+      "paper_id": "ZJ2025",
+      "province": "浙江",
+      "year": 2025,
+      "paper_type": "A类",
+      "section": "判断推理",
+      "original_number": 105,
+      "instruction": null,
+      "stem": "某研究团队在2013-2020年对分布在德国南部和奥地利的白鹳进行技术跟踪，收集的跟踪数据能确定白鹳的迁\n徙路线。结果显示，白鹳的飞行路线在不断变化，路过一些新地方。专家认为白鹳通过学习不断完善迁徙路\n线。\n以下哪项如果为真，最有可能是专家得出结论的论据?",
+      "options": {
+        "A": "成年白鹳会教幼鸟各种捕食技能",
+        "B": "白鹳在迁徙目的地附近会探索一些新地方，更好地过冬",
+        "C": "迁徙途中遇到突发的危险，白鹳会绕路避险，但不会改变目的地",
+        "D": "随着迁徙次数增多，白鹳迁徙路线更优，完成时间更短，耗费能量更少"
+      },
+      "options_mode": "text_or_mixed",
+      "content": "某研究团队在2013-2020年对分布在德国南部和奥地利的白鹳进行技术跟踪，收集的跟踪数据能确定白鹳的迁\n徙路线。结果显示，白鹳的飞行路线在不断变化，路过一些新地方。专家认为白鹳通过学习不断完善迁徙路\n线。\n以下哪项如果为真，最有可能是专家得出结论的论据?\nA.成年白鹳会教幼鸟各种捕食技能\nB.白鹳在迁徙目的地附近会探索一些新地方，更好地过冬\nC.迁徙途中遇到突发的危险，白鹳会绕路避险，但不会改变目的地\nD.随着迁徙次数增多，白鹳迁徙路线更优，完成时间更短，耗费能量更少",
+      "figures": [],
+      "materials": [],
+      "material_ids": [],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "blob_sha": "422a8d5a7c9c379fe3b10fc81eb6424f17b4bdbb",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2025%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
+        "pdf_pages": [
+          21,
+          22
+        ],
+        "regions": [
+          {
+            "page": 21,
+            "bbox": [
+              23.62849998474121,
+              668.7339477539062,
+              542.5591430664062,
+              763.8197021484375
+            ]
+          },
+          {
+            "page": 22,
+            "bbox": [
+              43.24169921875,
+              91.76716613769531,
+              378.3938293457031,
+              119.5188980102539
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": [],
+      "notes": []
+    },
+    "source_answer": "D",
+    "answer": "D",
+    "analysis": "题干观察到的是路线不断变化，结论却多了“通过学习”且“不断完善”。D补充随着迁徙经验增多，路线更优、时间更短、能耗更少，既提供经验积累的方向，也为“完善”给出效率指标。A是捕食技能，并非迁徙路线；B是目的地附近的探索，未显示整条路线改善；C是偶发避险绕路，能解释变化，却未说明学习或更高效率。D最有力地跨过从“变化”到“改善”的一步。",
+    "selection_reason": "变化不自动等于进步，支持结论须补出改善的可观察指标。",
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并源PDF行末硬换行；保留设问、编号条件和对话的分段，不改变命题含义。"
+      },
+      {
+        "type": "punctuation",
+        "description": "设问半角问号统一为全角。"
+      }
+    ],
+    "verification": {
+      "status": "editor_checked_pending_independent_review",
+      "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
+      "source_answer_available": true,
+      "source_answer_agreement": true,
+      "checked_on": "2026-11-15"
+    },
+    "options_mode": "text_or_mixed",
+    "source_locators": {
+      "original_number": 105,
+      "pages": [
+        21,
+        22
+      ],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "blob_sha": "422a8d5a7c9c379fe3b10fc81eb6424f17b4bdbb",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2025%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
+        "pdf_pages": [
+          21,
+          22
+        ],
+        "regions": [
+          {
+            "page": 21,
+            "bbox": [
+              23.62849998474121,
+              668.7339477539062,
+              542.5591430664062,
+              763.8197021484375
+            ]
+          },
+          {
+            "page": 22,
+            "bbox": [
+              43.24169921875,
+              91.76716613769531,
+              378.3938293457031,
+              119.5188980102539
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      }
+    },
+    "source_answer_reference": {
+      "file": "江浙行测_AI题库/answers.jsonl",
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）解析.pdf",
+        "blob_sha": "a4ae2b755ed2f64f3014b4f63b4f8f267775f2f8",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2025%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89%E8%A7%A3%E6%9E%90.pdf",
+        "pdf_pages": [
+          46
+        ],
+        "regions": [
+          {
+            "page": 46,
+            "bbox": [
+              90.0,
+              174.09205627441406,
+              510.4900207519531,
+              469.63348388671875
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": []
+    },
+    "stem_override": "某研究团队在2013-2020年对分布在德国南部和奥地利的白鹳进行技术跟踪，收集的跟踪数据能确定白鹳的迁徙路线。结果显示，白鹳的飞行路线在不断变化，路过一些新地方。专家认为白鹳通过学习不断完善迁徙路线。\n以下哪项如果为真，最有可能是专家得出结论的论据？",
+    "options": {
+      "A": "成年白鹳会教幼鸟各种捕食技能",
+      "B": "白鹳在迁徙目的地附近会探索一些新地方，更好地过冬",
+      "C": "迁徙途中遇到突发的危险，白鹳会绕路避险，但不会改变目的地",
+      "D": "随着迁徙次数增多，白鹳迁徙路线更优，完成时间更短，耗费能量更少"
+    },
+    "provenance_note": "题面来自仓库收录的网友回忆版；源参考答案为整理库所收解析答案，不冒称官方公布答案。"
+  },
+  {
+    "number": 63,
+    "section": "判断推理",
+    "subsection": "逻辑判断",
+    "question_type": "single_choice",
+    "source_bank": "jiangzhe",
+    "source_file": "江浙行测_AI题库/questions.jsonl",
+    "source_id": "JS2022-A类-097",
+    "source_question": {
+      "question_id": "JS2022-A类-097",
+      "paper_id": "JS2022",
+      "province": "江苏",
+      "year": 2022,
+      "paper_type": "A类",
+      "section": "判断推理",
+      "original_number": 97,
+      "instruction": null,
+      "stem": "某单位准备从甲、乙、丙、丁、戊、己六人中择优录取数名技术人员，录用情况符合如下\n条件：\n（1）丙和丁恰有一人录取；\n（2）甲和乙至少有一人录取；\n（3）甲和丁恰有一人录取；\n（4）录取乙当且仅当录用丙；\n（5）甲、戊、己中恰有两人录用；\n根据上述信息，可以推出最终录用的人数为：",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5"
+      },
+      "options_mode": "text_or_mixed",
+      "content": "某单位准备从甲、乙、丙、丁、戊、己六人中择优录取数名技术人员，录用情况符合如下\n条件：\n（1）丙和丁恰有一人录取；\n（2）甲和乙至少有一人录取；\n（3）甲和丁恰有一人录取；\n（4）录取乙当且仅当录用丙；\n（5）甲、戊、己中恰有两人录用；\n根据上述信息，可以推出最终录用的人数为：\nA、2 B、3 C、4 D、5",
+      "figures": [],
+      "materials": [],
+      "material_ids": [],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2022年江苏公务员考试《行测》真题（A类）....pdf",
+        "blob_sha": "0c2016b9c742eda719a376a8a63c41daa6d3ec3b",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2022%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89....pdf",
+        "pdf_pages": [
+          16
+        ],
+        "regions": [
+          {
+            "page": 16,
+            "bbox": [
+              36.0,
+              643.322021484375,
+              553.0799560546875,
+              785.3060302734375
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": [],
+      "notes": []
+    },
+    "source_answer": "C",
+    "answer": "C",
+    "analysis": "丙与丁恰录一人，甲与丁也恰录一人，所以甲、丙的录用状态相同。乙当且仅当丙录用，故甲、乙、丙三人状态全部相同；再由甲、乙至少录取一人，可知三人都录取，丁不录取。甲、戊、己恰录两人，甲已录取，故戊、己再录一人。总人数为3+1=4，选C。源参考解析将“当且仅当”只写成一个方向，并保留了实际上不可能的“丁录取”分支；本解析按题面双向条件重新推导，答案仍为C。",
+    "selection_reason": "多个异或与充要条件可合并为同一状态，再用存在条件定值，避免多余分类。",
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并源PDF行末硬换行；保留设问、编号条件和对话的分段，不改变命题含义。"
+      }
+    ],
+    "verification": {
+      "status": "editor_checked_pending_independent_review",
+      "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
+      "source_answer_available": true,
+      "source_answer_agreement": true,
+      "checked_on": "2026-11-15",
+      "source_analysis_correction": true,
+      "reproducible_check": "reasoning_verify.py"
+    },
+    "options_mode": "text_or_mixed",
+    "source_locators": {
+      "original_number": 97,
+      "pages": [
+        16
+      ],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2022年江苏公务员考试《行测》真题（A类）....pdf",
+        "blob_sha": "0c2016b9c742eda719a376a8a63c41daa6d3ec3b",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2022%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89....pdf",
+        "pdf_pages": [
+          16
+        ],
+        "regions": [
+          {
+            "page": 16,
+            "bbox": [
+              36.0,
+              643.322021484375,
+              553.0799560546875,
+              785.3060302734375
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      }
+    },
+    "source_answer_reference": {
+      "file": "江浙行测_AI题库/answers.jsonl",
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2022年江苏公务员考试《行测》（A类）及解析.pdf",
+        "blob_sha": "68a5929db30d504c674f19703f9b7e262043621a",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2022%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%EF%BC%88A%E7%B1%BB%EF%BC%89%E5%8F%8A%E8%A7%A3%E6%9E%90.pdf",
+        "pdf_pages": [
+          31,
+          32
+        ],
+        "regions": [
+          {
+            "page": 31,
+            "bbox": [
+              36.0,
+              562.9428100585938,
+              551.16845703125,
+              793.2737426757812
+            ]
+          },
+          {
+            "page": 32,
+            "bbox": [
+              36.0,
+              38.42380142211914,
+              132.0082550048828,
+              69.91474914550781
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": []
+    },
+    "stem_override": "某单位准备从甲、乙、丙、丁、戊、己六人中择优录取数名技术人员，录用情况符合如下条件：\n（1）丙和丁恰有一人录取；\n（2）甲和乙至少有一人录取；\n（3）甲和丁恰有一人录取；\n（4）录取乙当且仅当录用丙；\n（5）甲、戊、己中恰有两人录用；\n根据上述信息，可以推出最终录用的人数为：",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5"
+    }
+  },
+  {
+    "number": 64,
+    "section": "判断推理",
+    "subsection": "逻辑判断",
+    "question_type": "single_choice",
+    "source_bank": "guangdong_mock",
+    "source_file": "模考/2026下半年广东卷_16-33季_AI可读/全部题目.jsonl",
+    "source_id": "gd-mock-2026h2-s26-q64",
+    "source_question": {
+      "id": "gd-mock-2026h2-s26-q64",
+      "season": 26,
+      "section": "判断推理",
+      "number": 64,
+      "material_id": null,
+      "stem": [
+        {
+          "type": "text",
+          "text": "电影只要以真实为土壤，且以真诚为养分，就一定能口碑票房双丰收。某部大制作电影虽然取材于真实事件，但口碑很差，说明创作者在讲述故事时并不真诚。下列选项与题干逻辑结构最为相似的是（    ）。"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "text": "新能源汽车除非提升质量，否则或者产销不能稳定增长，或者出口不能稳定增长。某品牌新能源汽车产销不断增长，质量却原地踏步，那么其出口必然处于停滞态势"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "text": "如果做好跑前热身或者跑后拉伸，就能减小跑步对身体的冲击。小李跑前进行了充分热身，但跑完步身体仍感到疲惫，说明他没有做好跑后拉伸"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "text": "志愿服务标识不得用于商标，也不得用于商业广告。某品牌轮椅使用了志愿服务标识，所以该品牌违规了"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "text": "退税商店增多了，且口岸验核等待时间减少了，说明离境退税2.0版政策开始实施。某地退税商店没有增多，但离境退税2.0版政策已经开始实施，所以，其口岸验核等待时间一定减少了"
+          }
+        ]
+      },
+      "source_pages": [
+        17
+      ],
+      "source_spans": [
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            52.402,
+            346.448,
+            516.384,
+            358.866
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            68.048,
+            366.521,
+            404.245,
+            378.634
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            68.048,
+            385.983,
+            303.98,
+            398.401
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            68.048,
+            409.457,
+            516.299,
+            421.876
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            68.048,
+            429.531,
+            437.887,
+            441.644
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            68.048,
+            448.993,
+            526.914,
+            461.411
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            68.048,
+            469.683,
+            325.748,
+            481.796
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            68.048,
+            489.145,
+            526.914,
+            501.563
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            68.048,
+            509.837,
+            135.113,
+            521.949
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            68.048,
+            529.298,
+            519.487,
+            541.717
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            68.048,
+            549.066,
+            519.572,
+            561.484
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            68.048,
+            569.758,
+            79.044,
+            581.87
+          ]
+        }
+      ],
+      "source_asset_ids": [],
+      "answer": null,
+      "source": {
+        "source_name": "2026下半年省考第二十六季行测模考大赛（广东卷）.pdf",
+        "source_sha256": "cd5035fbb9936c5d304aeadfb5f4912624cef4dcf6b9d527ba0dd811cd025c92",
+        "pages": 25
+      },
+      "material": null
+    },
+    "source_answer": null,
+    "answer": "A",
+    "analysis": "将题干压缩为：真实P且真诚Q→成功R；现在P成立但R不成立，故Q不成立。这是对联言充分条件的逆否运用。A中“除非提升质量，否则产销或出口不能稳定增长”可写成“产销稳定增长P且出口稳定增长Q→提升质量R”；现有P而无R，因而无Q，结构一致。B用的是P或Q作为条件，且从身体疲惫到冲击未减小还有概念变化；C是对使用限制的直接违反；D由结果反推条件并从缺一个条件推出另一个，方向不符。",
+    "selection_reason": "同一推理可藏在“只要且”“除非否则或者”等不同句式中，要对齐条件方向与连接词。",
+    "edits": [
+      {
+        "type": "logical_precision",
+        "description": "A项将“产销不断增长”统一为前提中的“产销稳定增长”，将“出口必然处于停滞态势”改为可严格推出的“出口不能稳定增长”，并将“质量原地踏步”明写为“质量未提升”。保留原拟考的联言逆否结构，避免把增长不稳定偷换为停滞；源题对象保持原样。"
+      }
+    ],
+    "verification": {
+      "status": "editor_checked_pending_independent_review",
+      "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
+      "source_answer_available": false,
+      "source_answer_agreement": null,
+      "checked_on": "2026-11-15"
+    },
+    "options_mode": "text_or_mixed",
+    "source_locators": {
+      "original_number": 64,
+      "pages": [
+        17
+      ],
+      "source": {
+        "source_name": "2026下半年省考第二十六季行测模考大赛（广东卷）.pdf",
+        "source_sha256": "cd5035fbb9936c5d304aeadfb5f4912624cef4dcf6b9d527ba0dd811cd025c92",
+        "pages": 25
+      }
+    },
+    "options": {
+      "A": [
+        {
+          "type": "text",
+          "text": "新能源汽车除非提升质量，否则或者产销不能稳定增长，或者出口不能稳定增长。某品牌新能源汽车产销稳定增长，质量却未提升，因此其出口不能稳定增长"
+        }
+      ],
+      "B": [
+        {
+          "type": "text",
+          "text": "如果做好跑前热身或者跑后拉伸，就能减小跑步对身体的冲击。小李跑前进行了充分热身，但跑完步身体仍感到疲惫，说明他没有做好跑后拉伸"
+        }
+      ],
+      "C": [
+        {
+          "type": "text",
+          "text": "志愿服务标识不得用于商标，也不得用于商业广告。某品牌轮椅使用了志愿服务标识，所以该品牌违规了"
+        }
+      ],
+      "D": [
+        {
+          "type": "text",
+          "text": "退税商店增多了，且口岸验核等待时间减少了，说明离境退税2.0版政策开始实施。某地退税商店没有增多，但离境退税2.0版政策已经开始实施，所以，其口岸验核等待时间一定减少了"
+        }
+      ]
+    }
+  },
+  {
+    "number": 65,
+    "section": "判断推理",
+    "subsection": "逻辑判断",
+    "question_type": "single_choice",
+    "source_bank": "jiangzhe",
+    "source_file": "江浙行测_AI题库/questions.jsonl",
+    "source_id": "ZJ2025-A类-107",
+    "source_question": {
+      "question_id": "ZJ2025-A类-107",
+      "paper_id": "ZJ2025",
+      "province": "浙江",
+      "year": 2025,
+      "paper_type": "A类",
+      "section": "判断推理",
+      "original_number": 107,
+      "instruction": null,
+      "stem": "某单位即将组织员工进行常规体检，小张说：“上周老王刚被查出了癌症晚期，单位年年组织做体检都没查出\n来，说明这个体检根本没用！我还是不去了。”\n以下哪项如果为真，不能反驳小张的观点？",
+      "options": {
+        "A": "老王患的是肝癌，早期发展到晚期只需数月",
+        "B": "单位组织的常规体检项目难以查出早期癌症",
+        "C": "单位在今年的体检项目中新增了癌症筛查项目",
+        "D": "常规体检可以提前发现一些疾病，有助于及早治疗"
+      },
+      "options_mode": "text_or_mixed",
+      "content": "某单位即将组织员工进行常规体检，小张说：“上周老王刚被查出了癌症晚期，单位年年组织做体检都没查出\n来，说明这个体检根本没用！我还是不去了。”\n以下哪项如果为真，不能反驳小张的观点？\nA.老王患的是肝癌，早期发展到晚期只需数月 B.单位组织的常规体检项目难以查出早期癌症\nC.单位在今年的体检项目中新增了癌症筛查项目 D.常规体检可以提前发现一些疾病，有助于及早治疗",
+      "figures": [],
+      "materials": [],
+      "material_ids": [],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "blob_sha": "422a8d5a7c9c379fe3b10fc81eb6424f17b4bdbb",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2025%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
+        "pdf_pages": [
+          22
+        ],
+        "regions": [
+          {
+            "page": 22,
+            "bbox": [
+              23.62849998474121,
+              261.6451110839844,
+              547.3163452148438,
+              340.6692810058594
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": [],
+      "notes": []
+    },
+    "source_answer": "B",
+    "answer": "B",
+    "analysis": "本题选不能反驳项。A提供时间上的解释：年度检查之间也可能迅速进展，不能仅凭这次漏检断言检查无用；C说明本次检查内容已改变，旧结果不能直接评价新检查；D直接给出常规体检对其他疾病的价值。B只说明常规检查难以查出早期癌症，仍未提供反驳“根本没用”的理由，因此选B。B也不能证明所有常规体检都没有价值；源解析把它说成“说明体检确实没用”，扩大了选项含义，本解析不沿用。",
+    "selection_reason": "分清“不能反驳”与“能够证明”，同时守住单一疾病和检查整体价值的范围。",
+    "edits": [
+      {
+        "type": "layout_only",
+        "description": "合并源PDF行末硬换行；保留设问、编号条件和对话的分段，不改变命题含义。"
+      }
+    ],
+    "verification": {
+      "status": "editor_checked_pending_independent_review",
+      "method": "按题面逐题推导并对照源参考答案；图题实际查看原图；未宣称为隔离答案的盲审。可穷举条件题及图格变换另留复算脚本。",
+      "source_answer_available": true,
+      "source_answer_agreement": true,
+      "checked_on": "2026-11-15",
+      "source_analysis_correction": true
+    },
+    "options_mode": "text_or_mixed",
+    "source_locators": {
+      "original_number": 107,
+      "pages": [
+        22
+      ],
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf",
+        "blob_sha": "422a8d5a7c9c379fe3b10fc81eb6424f17b4bdbb",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2025%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf",
+        "pdf_pages": [
+          22
+        ],
+        "regions": [
+          {
+            "page": 22,
+            "bbox": [
+              23.62849998474121,
+              261.6451110839844,
+              547.3163452148438,
+              340.6692810058594
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      }
+    },
+    "source_answer_reference": {
+      "file": "江浙行测_AI题库/answers.jsonl",
+      "source": {
+        "repository": "https://github.com/dumarstoft-ship-it/xingce",
+        "commit": "407016b55b49581efa3771bb59a2dee8761d982f",
+        "file": "2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）解析.pdf",
+        "blob_sha": "a4ae2b755ed2f64f3014b4f63b4f8f267775f2f8",
+        "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2025%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89%E8%A7%A3%E6%9E%90.pdf",
+        "pdf_pages": [
+          47
+        ],
+        "regions": [
+          {
+            "page": 47,
+            "bbox": [
+              90.0,
+              126.09204864501953,
+              510.4900207519531,
+              389.594482421875
+            ]
+          }
+        ],
+        "page_numbering": "PDF physical page, 1-based"
+      },
+      "quality_flags": []
+    },
+    "stem_override": "某单位即将组织员工进行常规体检，小张说：“上周老王刚被查出了癌症晚期，单位年年组织做体检都没查出来，说明这个体检根本没用！我还是不去了。”以下哪项如果为真，不能反驳小张的观点？",
+    "options": {
+      "A": "老王患的是肝癌，早期发展到晚期只需数月",
+      "B": "单位组织的常规体检项目难以查出早期癌症",
+      "C": "单位在今年的体检项目中新增了癌症筛查项目",
+      "D": "常规体检可以提前发现一些疾病，有助于及早治疗"
+    },
+    "provenance_note": "题面来自仓库收录的网友回忆版；源参考答案为整理库所收解析答案，不冒称官方公布答案。"
+  }
+]

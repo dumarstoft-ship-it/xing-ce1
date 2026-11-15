@@ -1,0 +1,261 @@
+{
+  "baseline_sha256": "42f39309b53501d034a262ddaf2aeab8f4ab0803c0953dd6087bb8b241e624d3",
+  "comparison": [
+    {
+      "number": 66,
+      "independent_answer": "D",
+      "draft_answer": "D",
+      "agreement": true
+    },
+    {
+      "number": 67,
+      "independent_answer": "B",
+      "draft_answer": "B",
+      "agreement": true
+    },
+    {
+      "number": 68,
+      "independent_answer": "C",
+      "draft_answer": "C",
+      "agreement": true
+    },
+    {
+      "number": 69,
+      "independent_answer": "B",
+      "draft_answer": "B",
+      "agreement": true
+    },
+    {
+      "number": 70,
+      "independent_answer": "B",
+      "draft_answer": "A",
+      "agreement": false
+    }
+  ],
+  "foodweb": {
+    "diagram_edges": [
+      [
+        "茶树",
+        "茶毛虫"
+      ],
+      [
+        "茶树",
+        "茶尺蠖"
+      ],
+      [
+        "草",
+        "茶毛虫"
+      ],
+      [
+        "草",
+        "茶尺蠖"
+      ],
+      [
+        "茶毛虫",
+        "蜘蛛"
+      ],
+      [
+        "茶毛虫",
+        "蛙"
+      ],
+      [
+        "茶尺蠖",
+        "蜘蛛"
+      ],
+      [
+        "茶尺蠖",
+        "鸟"
+      ],
+      [
+        "蜘蛛",
+        "蛙"
+      ],
+      [
+        "蛙",
+        "蛇"
+      ],
+      [
+        "鸟",
+        "蛇"
+      ]
+    ],
+    "source_table_edges": [
+      [
+        "茶树",
+        "茶毛虫"
+      ],
+      [
+        "茶树",
+        "茶尺蠖"
+      ],
+      [
+        "草",
+        "茶毛虫"
+      ],
+      [
+        "草",
+        "茶尺蠖"
+      ],
+      [
+        "茶毛虫",
+        "蛙"
+      ],
+      [
+        "茶毛虫",
+        "蜘蛛"
+      ],
+      [
+        "茶尺蠖",
+        "蜘蛛"
+      ],
+      [
+        "茶尺蠖",
+        "鸟"
+      ],
+      [
+        "蜘蛛",
+        "蛙"
+      ],
+      [
+        "蛙",
+        "蛇"
+      ],
+      [
+        "鸟",
+        "蛇"
+      ]
+    ],
+    "edge_sets_equal": true,
+    "nodes": [
+      "茶尺蠖",
+      "茶树",
+      "茶毛虫",
+      "草",
+      "蛇",
+      "蛙",
+      "蜘蛛",
+      "鸟"
+    ],
+    "node_count": 8,
+    "edge_count": 11,
+    "complete_paths": [
+      [
+        "茶树",
+        "茶毛虫",
+        "蜘蛛",
+        "蛙",
+        "蛇"
+      ],
+      [
+        "茶树",
+        "茶毛虫",
+        "蛙",
+        "蛇"
+      ],
+      [
+        "茶树",
+        "茶尺蠖",
+        "蜘蛛",
+        "蛙",
+        "蛇"
+      ],
+      [
+        "茶树",
+        "茶尺蠖",
+        "鸟",
+        "蛇"
+      ],
+      [
+        "草",
+        "茶毛虫",
+        "蜘蛛",
+        "蛙",
+        "蛇"
+      ],
+      [
+        "草",
+        "茶毛虫",
+        "蛙",
+        "蛇"
+      ],
+      [
+        "草",
+        "茶尺蠖",
+        "蜘蛛",
+        "蛙",
+        "蛇"
+      ],
+      [
+        "草",
+        "茶尺蠖",
+        "鸟",
+        "蛇"
+      ]
+    ],
+    "path_count": 8,
+    "levels_by_organism": {
+      "茶树": [
+        1
+      ],
+      "茶毛虫": [
+        2
+      ],
+      "蜘蛛": [
+        3
+      ],
+      "蛙": [
+        3,
+        4
+      ],
+      "蛇": [
+        4,
+        5
+      ],
+      "茶尺蠖": [
+        2
+      ],
+      "鸟": [
+        3
+      ],
+      "草": [
+        1
+      ]
+    },
+    "maximum_trophic_level": 5
+  },
+  "chemistry": {
+    "before": {
+      "CH4": 1,
+      "O2": 3
+    },
+    "after": {
+      "CO2": 1,
+      "O2": 1,
+      "H2O": 2
+    },
+    "consumed": {
+      "CH4": 1,
+      "O2": 2
+    },
+    "formed": {
+      "CO2": 1,
+      "H2O": 2
+    },
+    "atom_totals_before_and_after": {
+      "C": 1,
+      "H": 4,
+      "O": 6
+    },
+    "molecule_total_before_and_after": 4
+  },
+  "q70": {
+    "independent_answer": "B",
+    "north_in_page_coordinates": "右上",
+    "river_flow_in_page_coordinates": "右上至左下",
+    "river_flow_geographical": "自北向南",
+    "feature_2": "山脊",
+    "feature_3": "山谷",
+    "jia_village": "低于200米",
+    "initial_draft_issue": "初稿A错，地形判读与罗盘转换均错；且以③为山脊同时否定D，内部矛盾。"
+  }
+}

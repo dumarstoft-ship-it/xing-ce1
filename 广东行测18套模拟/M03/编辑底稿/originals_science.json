@@ -1,0 +1,1505 @@
+[
+  {
+    "number": 1,
+    "section": "政治理论",
+    "subtype": "新发展格局",
+    "question_type": "true_false",
+    "source_bank": "editor_original",
+    "source_id": "M03-ORIG-001",
+    "stem": "构建以国内大循环为主体的新发展格局，应先由各省建立省内供需闭环，再以省际贸易把这些相对独立的循环连接起来。",
+    "options": {},
+    "answer": "错误",
+    "analysis": "“国内大循环”针对全国，而不是以各省先形成自我小循环为基础。各地区应在全国统一市场中确定自身分工和比较优势，打通商品、要素流动的堵点。区域合作可以先行，但须有利于全国循环，不能把省域内部供需闭环当作普遍前提。",
+    "selection_reason": "辨析全国循环与地方自我循环，检验规模与分工的真实含义。",
+    "source_question": null,
+    "source_answer": null,
+    "edits": [],
+    "verification": {
+      "status": "editor_solved_external_review_pending",
+      "method": "逐项辨析；依据用户讲义相关主题原创，时政、法律及专门事实补充核对所列一手或政府公开资料。",
+      "checked_on": "2026-11-15"
+    },
+    "provenance": {
+      "kind": "original",
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        27
+      ],
+      "references": [
+        {
+          "title": "新发展阶段贯彻新发展理念必然要求构建新发展格局",
+          "url": "https://www.mem.gov.cn/jjz/ywgz/202209/t20220902_421700.shtml",
+          "locator": "关于全国统一大市场与地方自我小循环的段落；已读取检索返回的对应正文",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    "figures": [],
+    "materials": []
+  },
+  {
+    "number": 2,
+    "section": "政治理论",
+    "subtype": "政治经济学",
+    "question_type": "true_false",
+    "source_bank": "editor_original",
+    "source_id": "M03-ORIG-002",
+    "stem": "具体劳动和抽象劳动是同一商品生产劳动的两个方面，分别形成商品的使用价值和价值，并不是前后相继的两次劳动。",
+    "options": {},
+    "answer": "正确",
+    "analysis": "一项劳动以特定方式生产有用物，表现为具体劳动；撇开具体形式，把它作为一般人类劳动耗费来考察，表现为抽象劳动。两者是对同一过程的不同规定，劳动的二重性决定商品的使用价值和价值两个因素。不能把它们理解成先做一次具体劳动、再做一次抽象劳动。",
+    "selection_reason": "从同一过程的两种规定理解劳动二重性，区别于前两卷的劳动生产率和资本分类。",
+    "source_question": null,
+    "source_answer": null,
+    "edits": [],
+    "verification": {
+      "status": "editor_solved_external_review_pending",
+      "method": "逐项辨析；依据用户讲义相关主题原创，时政、法律及专门事实补充核对所列一手或政府公开资料。",
+      "checked_on": "2026-11-15"
+    },
+    "provenance": {
+      "kind": "original",
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        44
+      ],
+      "references": []
+    },
+    "figures": [],
+    "materials": []
+  },
+  {
+    "number": 3,
+    "section": "政治理论",
+    "subtype": "全球倡议",
+    "question_type": "true_false",
+    "source_bank": "editor_original",
+    "source_id": "M03-ORIG-003",
+    "stem": "全球治理倡议将“共同倡导尊重世界文明多样性”列为五项核心理念之一。",
+    "options": {},
+    "answer": "错误",
+    "analysis": "题干把全球文明倡议的内容放进了全球治理倡议。全球文明倡议提出四个共同倡导，包括尊重世界文明多样性。全球治理倡议的五项核心理念是主权平等、国际法治、多边主义、以人为本和行动导向。辨析的是两项倡议的正式内容，不能因为二者理念相通就互相替代名称。",
+    "selection_reason": "辨析相近倡议的内容归属，避免仅凭措辞积极就判对。",
+    "source_question": null,
+    "source_answer": null,
+    "edits": [],
+    "verification": {
+      "status": "editor_solved_external_review_pending",
+      "method": "逐项辨析；依据用户讲义相关主题原创，时政、法律及专门事实补充核对所列一手或政府公开资料。",
+      "checked_on": "2026-11-15"
+    },
+    "provenance": {
+      "kind": "original",
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        36
+      ],
+      "references": [
+        {
+          "title": "全球治理倡议（中国常驻联合国代表团）",
+          "url": "https://un.china-mission.gov.cn/zt_0/qqzlcy/",
+          "locator": "五项核心理念及各自解释；已读取对应正文",
+          "checked_on": "2026-11-15"
+        },
+        {
+          "title": "全球文明倡议（中国常驻联合国代表团）",
+          "url": "https://un.china-mission.gov.cn/chn/zt_0/qqwmcy/",
+          "locator": "尊重世界文明多样性；与全球治理倡议分别核对",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    "figures": [],
+    "materials": []
+  },
+  {
+    "number": 4,
+    "section": "政治理论",
+    "subtype": "唯物史观",
+    "question_type": "true_false",
+    "source_bank": "editor_original",
+    "source_id": "M03-ORIG-004",
+    "stem": "一定社会经济条件发生变化后，与之相关的旧观念仍可能长期存在；这体现社会意识的相对独立性，并不否定社会存在对社会意识的决定作用。",
+    "options": {},
+    "answer": "正确",
+    "analysis": "社会存在决定社会意识的内容和发展根源，但二者的变化不必严格同步。旧观念具有惯性，也会通过习俗、制度和文化传承延续。承认这种相对独立性，不等于把观念看成脱离社会条件而独立产生的决定力量。",
+    "selection_reason": "辨析决定作用与不同步变化，训练对“相对独立”边界的理解。",
+    "source_question": null,
+    "source_answer": null,
+    "edits": [],
+    "verification": {
+      "status": "editor_solved_external_review_pending",
+      "method": "逐项辨析；依据用户讲义相关主题原创，时政、法律及专门事实补充核对所列一手或政府公开资料。",
+      "checked_on": "2026-11-15"
+    },
+    "provenance": {
+      "kind": "original",
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        43
+      ],
+      "references": []
+    },
+    "figures": [],
+    "materials": []
+  },
+  {
+    "number": 5,
+    "section": "政治理论",
+    "subtype": "科技与人才评价",
+    "question_type": "single_choice",
+    "source_bank": "editor_original",
+    "source_id": "M03-ORIG-005",
+    "stem": "某科研管理部门分别资助自由探索类基础研究和目标导向类基础研究。下列评价安排，最符合分类评价要求的是（　）。",
+    "options": {
+      "A": "自由探索类主要看短期转化收入，目标导向类主要看论文数量",
+      "B": "自由探索类主要看解决既定工程指标的进度，目标导向类主要看选题的新奇程度",
+      "C": "自由探索类主要看原创性和学术贡献，目标导向类主要看解决重大科学问题的效能",
+      "D": "自由探索类主要看形成专利的数量，目标导向类主要看成果发表期刊的影响因子"
+    },
+    "answer": "C",
+    "analysis": "两类研究都属于基础研究，但任务形成方式和评价重点不同。自由探索类重在原创性与学术贡献，可探索长周期和同行评价；目标导向类重在解决重大科学问题的效能。A、D把转化收入、专利数量或期刊指标当作主要尺度；B又把目标导向的基础科学问题偷换成既定工程指标，并以“新奇”替代实质贡献。C能够把评价与研究目的相接。",
+    "selection_reason": "把科技政策放进具体管理选择，辨析基础研究目标和指标的关系。",
+    "source_question": null,
+    "source_answer": null,
+    "edits": [],
+    "verification": {
+      "status": "editor_solved_external_review_pending",
+      "method": "逐项辨析；依据用户讲义相关主题原创，时政、法律及专门事实补充核对所列一手或政府公开资料。",
+      "checked_on": "2026-11-15"
+    },
+    "provenance": {
+      "kind": "original",
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        29
+      ],
+      "references": [
+        {
+          "title": "国务院关于全面加强基础科学研究的若干意见",
+          "url": "https://www.moe.gov.cn/jyb_xxgk/moe_1777/moe_1778/201802/t20180202_326384.html",
+          "locator": "第（二十一）项：自由探索类和目标导向类基础研究的评价；检索提取已读，直接打开曾超时，不记作全文读取",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    "figures": [],
+    "materials": []
+  },
+  {
+    "number": 6,
+    "section": "政治理论",
+    "subtype": "中华文明特性",
+    "question_type": "single_choice",
+    "source_bank": "editor_original",
+    "source_id": "M03-ORIG-006",
+    "stem": "在认识中华文明的突出特性时，以下三项分别强调：①各民族文化融为一体、共同维护国家团结；②对世界文明成果兼收并蓄；③面对新问题不断革新创造。它们依次突出体现的是（　）。",
+    "options": {
+      "A": "统一性、包容性、创新性",
+      "B": "包容性、统一性、连续性",
+      "C": "统一性、创新性、包容性",
+      "D": "连续性、包容性、创新性"
+    },
+    "answer": "A",
+    "analysis": "①重点是多元一体与团结凝聚，对应统一性；②重点是吸收、容纳不同文明的优秀成果，对应包容性；③重点是应对新问题、创造新成果，对应创新性。连续性侧重文明传承不绝，和平性侧重和平、和睦、和谐，不能把所有正面文化现象无区别地套入同一特性。",
+    "selection_reason": "用实际含义区分相邻文化概念，避免只记五个名词。",
+    "source_question": null,
+    "source_answer": null,
+    "edits": [],
+    "verification": {
+      "status": "editor_solved_external_review_pending",
+      "method": "逐项辨析；依据用户讲义相关主题原创，时政、法律及专门事实补充核对所列一手或政府公开资料。",
+      "checked_on": "2026-11-15"
+    },
+    "provenance": {
+      "kind": "original",
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        32
+      ],
+      "references": [
+        {
+          "title": "在文化传承发展座谈会上的讲话",
+          "url": "https://www.moe.gov.cn/jyb_xwfb/moe_176/202308/t20230831_1077496.html",
+          "locator": "中华文明五个突出特性，尤其统一性、包容性、创新性的对应阐述",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    "figures": [],
+    "materials": []
+  },
+  {
+    "number": 7,
+    "section": "政治理论",
+    "subtype": "联系的客观性与条件性",
+    "question_type": "single_choice",
+    "source_bank": "editor_original",
+    "source_id": "M03-ORIG-007",
+    "stem": "某山区原本交通不便，当地依据地形、地质和水文条件修建桥隧，建立起跨山运输通道，使原来分散的生产环节能够协作。这主要说明（　）。",
+    "options": {
+      "A": "人为建立的联系与自然联系不同，其成立主要取决于人们的主观愿望",
+      "B": "人能够依据事物固有的联系，改变条件，建立新的具体联系",
+      "C": "人能够通过实践改变联系的客观性，使联系服从既定方案",
+      "D": "事物的联系具有客观性，实践只能发现联系而不能改变具体联系"
+    },
+    "answer": "B",
+    "analysis": "桥隧改变了具体的交通条件，从而形成新的运输和协作关系；这种创造须服从地质、水文等客观条件。B同时保留了联系的客观性和实践的能动性。A、C把主观意愿置于客观基础之上；D则把客观性误解为任何具体联系都不能改变。",
+    "selection_reason": "辨清“联系客观”与“人能建立联系”并不矛盾，换用具体实践情境。",
+    "source_question": null,
+    "source_answer": null,
+    "edits": [],
+    "verification": {
+      "status": "editor_solved_external_review_pending",
+      "method": "逐项辨析；依据用户讲义相关主题原创，时政、法律及专门事实补充核对所列一手或政府公开资料。",
+      "checked_on": "2026-11-15"
+    },
+    "provenance": {
+      "kind": "original",
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        40
+      ],
+      "references": []
+    },
+    "figures": [],
+    "materials": []
+  },
+  {
+    "number": 8,
+    "section": "政治理论",
+    "subtype": "生产力、生产关系与上层建筑",
+    "question_type": "single_choice",
+    "source_bank": "editor_original",
+    "source_id": "M03-ORIG-008",
+    "stem": "下列变化中，直接属于调整生产关系的是（　）。",
+    "options": {
+      "A": "工人通过训练提高操作熟练程度",
+      "B": "企业用自动化设备替换原有生产工具",
+      "C": "行政机关完善执法程序与监督制度",
+      "D": "合作组织重新约定成员的产权份额和收益分配办法"
+    },
+    "answer": "D",
+    "analysis": "生产关系包括生产资料所有制、生产中人与人的关系以及产品分配关系。D直接改变产权和分配安排。A、B分别涉及劳动者与劳动资料，属于生产力方面的变化；C直接涉及政治法律制度的运行，属于上层建筑方面。调整生产关系可能进一步促进生产力，但作用结果不能替代对变化本身的归类。",
+    "selection_reason": "要求先辨变化对象，再谈促进作用，避免把有利于发展都归为生产力。",
+    "source_question": null,
+    "source_answer": null,
+    "edits": [],
+    "verification": {
+      "status": "editor_solved_external_review_pending",
+      "method": "逐项辨析；依据用户讲义相关主题原创，时政、法律及专门事实补充核对所列一手或政府公开资料。",
+      "checked_on": "2026-11-15"
+    },
+    "provenance": {
+      "kind": "original",
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        43,
+        44
+      ],
+      "references": []
+    },
+    "figures": [],
+    "materials": []
+  },
+  {
+    "number": 9,
+    "section": "政治理论",
+    "subtype": "新发展理念",
+    "question_type": "multiple_choice",
+    "source_bank": "editor_original",
+    "source_id": "M03-ORIG-009",
+    "stem": "关于新发展理念各自着力解决的问题，下列对应关系正确的有（　）。",
+    "options": {
+      "A": "创新发展着力解决发展动力问题",
+      "B": "协调发展着力解决发展内外联动问题",
+      "C": "绿色发展着力解决人与自然和谐共生问题",
+      "D": "共享发展着力解决社会公平正义问题"
+    },
+    "answer": "ACD",
+    "analysis": "创新对应动力，协调对应发展不平衡，绿色对应人与自然和谐共生，开放对应内外联动，共享对应社会公平正义。B将开放发展的重点安在协调发展上。五种理念相互贯通，但各有主要针对的问题，题目考查这种对应关系。",
+    "selection_reason": "核对完整发展理念中的关键区别，为案例辨识提供基本坐标。",
+    "source_question": null,
+    "source_answer": null,
+    "edits": [],
+    "verification": {
+      "status": "editor_solved_external_review_pending",
+      "method": "逐项辨析；依据用户讲义相关主题原创，时政、法律及专门事实补充核对所列一手或政府公开资料。",
+      "checked_on": "2026-11-15"
+    },
+    "provenance": {
+      "kind": "original",
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        26,
+        27
+      ],
+      "references": [
+        {
+          "title": "关于习近平经济思想若干重大理论观点的思考",
+          "url": "https://www.ndrc.gov.cn/wsdwhfz/202403/t20240329_1365346_ext.html",
+          "locator": "第四部分：五大发展理念各自着力解决的问题",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    "figures": [],
+    "materials": []
+  },
+  {
+    "number": 10,
+    "section": "政治理论",
+    "subtype": "粤港澳大湾区合作平台",
+    "question_type": "multiple_choice",
+    "source_bank": "editor_original",
+    "source_id": "M03-ORIG-010",
+    "stem": "粤港澳大湾区重大合作平台各有功能侧重。下列对应关系正确的有（　）。",
+    "options": {
+      "A": "横琴：围绕促进澳门经济适度多元发展，推进琴澳一体化发展",
+      "B": "前海：以面向世界的粤港澳全面合作作为其区别于其他平台的主要侧重",
+      "C": "南沙：以深化深港现代服务业合作作为其区别于其他平台的主要侧重",
+      "D": "河套：依托深港跨境相邻的条件，推进科技创新协同与规则衔接"
+    },
+    "answer": "AD",
+    "analysis": "横琴侧重服务澳门经济适度多元发展；前海侧重深港现代服务业合作；南沙突出面向世界的粤港澳全面合作；河套突出深港科技创新合作。B、C对调了前海与南沙的主要定位。这不意味着各平台完全没有交叉业务，判断依据是国家方案明确的功能侧重。",
+    "selection_reason": "广东省情与改革开放结合，比较四个平台而非只背一条宣传语。",
+    "source_question": null,
+    "source_answer": null,
+    "edits": [],
+    "verification": {
+      "status": "editor_solved_external_review_pending",
+      "method": "逐项辨析；依据用户讲义相关主题原创，时政、法律及专门事实补充核对所列一手或政府公开资料。",
+      "checked_on": "2026-11-15"
+    },
+    "provenance": {
+      "kind": "original",
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        74,
+        75,
+        77
+      ],
+      "references": [
+        {
+          "title": "《河套深港科技创新合作区深圳园区发展规划》新闻发布会",
+          "url": "https://www.ndrc.gov.cn/fzggw/wld/glf/zyhd/202309/t20230905_1360388.html",
+          "locator": "答记者问第一问，逐一说明横琴、前海、南沙、河套的功能侧重；已实际读取全文",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    "figures": [],
+    "materials": []
+  },
+  {
+    "number": 11,
+    "section": "常识应用",
+    "subtype": "宣告失踪与宣告死亡",
+    "question_type": "single_choice",
+    "source_bank": "editor_original",
+    "source_id": "M03-ORIG-011",
+    "stem": "甲外出经商后下落不明已满5年，非因意外事件失踪。甲的妻子向法院申请宣告甲失踪，成年子女申请宣告甲死亡，其他法定条件均已满足。根据《民法典》，下列说法正确的是（　）。",
+    "options": {
+      "A": "应先宣告失踪，满2年后才能宣告死亡",
+      "B": "法院应当宣告甲死亡",
+      "C": "甲下落不明满4年之日应视为其死亡日期",
+      "D": "甲被宣告死亡后，即使实际仍生存，在此期间实施的民事法律行为也当然无效"
+    },
+    "answer": "B",
+    "analysis": "《民法典》第47条明确：同一自然人同时出现失踪和死亡申请，符合死亡条件的，应当宣告死亡，故B正确。宣告失踪不是宣告死亡的前置程序，A错误。非意外事件适用第48条的一般规则，以宣告死亡判决作出之日为死亡日期，C错误。第49条规定，对实际未死亡的人，死亡宣告不影响其在该期间实施的民事法律行为的效力，D错误。",
+    "selection_reason": "在一个情境内区分申请优先规则、程序前置、日期与行为效力。",
+    "source_question": null,
+    "source_answer": null,
+    "edits": [],
+    "verification": {
+      "status": "editor_solved_external_review_pending",
+      "method": "逐项辨析；依据用户讲义相关主题原创，时政、法律及专门事实补充核对所列一手或政府公开资料。",
+      "checked_on": "2026-11-15"
+    },
+    "provenance": {
+      "kind": "original",
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        94,
+        95
+      ],
+      "references": [
+        {
+          "title": "中华人民共和国民法典",
+          "url": "https://www.cac.gov.cn/2020-06/01/c_1592561777268319.htm",
+          "locator": "第46—49条：宣告死亡条件、申请冲突、死亡日期与行为效力；已打开官方全文并核对相关条文",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    "figures": [],
+    "materials": []
+  },
+  {
+    "number": 12,
+    "section": "常识应用",
+    "subtype": "广东语言文化",
+    "question_type": "single_choice",
+    "source_bank": "editor_original",
+    "source_id": "M03-ORIG-012",
+    "stem": "广州话、梅州客家话、潮州话、雷州话，依次主要归属于下列哪组汉语方言（　）？",
+    "options": {
+      "A": "粤方言、客家方言、粤方言、闽方言",
+      "B": "粤方言、客家方言、闽方言、闽方言",
+      "C": "粤方言、闽方言、客家方言、闽方言",
+      "D": "粤方言、客家方言、闽方言、粤方言"
+    },
+    "answer": "B",
+    "analysis": "广州话是粤方言的代表，梅州是客家方言的重要代表地区；广东闽方言包含潮汕片和雷州片。不能把“位于广东省”与“属于粤方言”等同，也不能按粤东、粤西的地理位置直接给方言归类。本题只判断所列话种，不宣称这些城市居民只使用一种语言。",
+    "selection_reason": "辨析广东三大方言及潮汕、雷州两个闽方言片，避免地理名称偷换语言分类。",
+    "source_question": null,
+    "source_answer": null,
+    "edits": [],
+    "verification": {
+      "status": "editor_solved_external_review_pending",
+      "method": "逐项辨析；依据用户讲义相关主题原创，时政、法律及专门事实补充核对所列一手或政府公开资料。",
+      "checked_on": "2026-11-15"
+    },
+    "provenance": {
+      "kind": "original",
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        71,
+        72
+      ],
+      "references": [
+        {
+          "title": "广东概况（中共广东省委港澳工作办公室）",
+          "url": "https://www.gdhmo.gov.cn/gaikuang/content/post_68514.html",
+          "locator": "粤、客、闽三大汉语方言及潮汕片、雷州片；不使用其中会变动的人口数",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    "figures": [],
+    "materials": []
+  },
+  {
+    "number": 13,
+    "section": "常识应用",
+    "subtype": "重要会议与历史任务",
+    "question_type": "single_choice",
+    "source_bank": "editor_original",
+    "source_id": "M03-ORIG-013",
+    "stem": "“确立思想建党、政治建军原则”“制定抗日民族统一战线的策略方针”“明确实行全面抗战路线”，依次对应的会议是（　）。",
+    "options": {
+      "A": "遵义会议、古田会议、瓦窑堡会议",
+      "B": "古田会议、洛川会议、瓦窑堡会议",
+      "C": "瓦窑堡会议、遵义会议、古田会议",
+      "D": "古田会议、瓦窑堡会议、洛川会议"
+    },
+    "answer": "D",
+    "analysis": "1929年古田会议解决党和红军建设的重大问题，确立思想建党、政治建军原则。1935年瓦窑堡会议制定抗日民族统一战线的策略方针。1937年洛川会议在全国抗战开始后明确全面抗战路线。遵义会议重点解决当时具有决定意义的军事和组织问题，不是上述三个对应关系中的第一项。",
+    "selection_reason": "按每次会议解决的实际问题区分党史节点，避免把统一战线方针与全面抗战路线混同。",
+    "source_question": null,
+    "source_answer": null,
+    "edits": [],
+    "verification": {
+      "status": "editor_solved_external_review_pending",
+      "method": "逐项辨析；依据用户讲义相关主题原创，时政、法律及专门事实补充核对所列一手或政府公开资料。",
+      "checked_on": "2026-11-15"
+    },
+    "provenance": {
+      "kind": "original",
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        50,
+        51
+      ],
+      "references": [
+        {
+          "title": "古田会议与党的建设",
+          "url": "https://xfb.beijing.gov.cn/ztzl/dsxxjy/zyhy/202104/t20210412_2352039.html",
+          "locator": "1929年古田会议与思想建党、政治建军",
+          "checked_on": "2026-11-15"
+        },
+        {
+          "title": "中国共产党历史上的重要会议（深圳人大网）",
+          "url": "https://www.szrd.gov.cn/dsxxjy/dszl/content/post_704191.html",
+          "locator": "瓦窑堡会议部分：抗日民族统一战线的理论与策略",
+          "checked_on": "2026-11-15"
+        },
+        {
+          "title": "1937：生死存亡筑长城",
+          "url": "https://www.mem.gov.cn/xw/ztzl/2021/dsxxjy/xxfd/202103/t20210329_382220.shtml",
+          "locator": "1937年8月洛川会议与全面抗战路线、敌后独立自主游击战争",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    "figures": [],
+    "materials": []
+  },
+  {
+    "number": 14,
+    "section": "常识应用",
+    "subtype": "科技装备",
+    "question_type": "single_choice",
+    "source_bank": "editor_original",
+    "source_id": "M03-ORIG-014",
+    "stem": "关于我国科技成果与装备，下列说法不正确的是（　）。",
+    "options": {
+      "A": "“华龙一号”属于自主三代压水堆核电技术",
+      "B": "“奋斗者”号属于全海深载人潜水器",
+      "C": "C919属于双通道宽体干线客机",
+      "D": "“雪龙2”号是我国自主建造的极地科考破冰船"
+    },
+    "answer": "C",
+    "analysis": "C919是单通道干线客机，不是双通道宽体机，故C错误。其余三项的装备性质与功能对应正确。识别科技名词时要把对象、用途和技术类别联系起来；本题不使用会变化的机组数量、交付数量或下潜次数。",
+    "selection_reason": "轮换到核电、深海、航空与极地装备，避免再次堆叠探月及科学卫星题材。",
+    "source_question": null,
+    "source_answer": null,
+    "edits": [],
+    "verification": {
+      "status": "editor_solved_external_review_pending",
+      "method": "逐项辨析；依据用户讲义相关主题原创，时政、法律及专门事实补充核对所列一手或政府公开资料。",
+      "checked_on": "2026-11-15"
+    },
+    "provenance": {
+      "kind": "original",
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        107
+      ],
+      "references": [
+        {
+          "title": "我国自主三代核电技术华龙一号",
+          "url": "https://www.nea.gov.cn/2024-08/23/c_1212390764.htm",
+          "locator": "三代压水堆核电技术；不使用在运在建机组动态数量",
+          "checked_on": "2026-11-15"
+        },
+        {
+          "title": "奋斗者号载人潜水器（中国科学院）",
+          "url": "https://lssf.cas.cn/sszs/gykj/zrqsqyhszymc/sbzs/202504/t20250410_5062556.html",
+          "locator": "装备性质为全海深载人潜水器；不使用累计下潜次数",
+          "checked_on": "2026-11-15"
+        },
+        {
+          "title": "C919飞机机场规划手册（中国商飞）",
+          "url": "https://www.comac.cc/fujian/c919acap_cn.pdf",
+          "locator": "飞机概况：中短航程干线飞机、单通道客舱；检索提取已读取，未把PDF全页目检写为完成",
+          "checked_on": "2026-11-15"
+        },
+        {
+          "title": "我国自主建造的雪龙2号极地科学考察破冰船交付使用",
+          "url": "https://www.miit.gov.cn/jgsj/zbes/cbgy/art/2020/art_8580100d54eb4a61b105df8b455e4d75.html",
+          "locator": "2019年交付、国内自主建造及极地科考破冰船属性",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    "figures": [],
+    "materials": []
+  },
+  {
+    "number": 15,
+    "section": "常识应用",
+    "subtype": "史书体例",
+    "question_type": "single_choice",
+    "source_bank": "editor_original",
+    "source_id": "M03-ORIG-015",
+    "stem": "将史书按编纂体例和记事范围分类，“纪传体通史”“纪传体断代史”“编年体通史”分别对应的是（　）。",
+    "options": {
+      "A": "《汉书》《史记》《资治通鉴》",
+      "B": "《史记》《资治通鉴》《汉书》",
+      "C": "《史记》《汉书》《资治通鉴》",
+      "D": "《资治通鉴》《汉书》《史记》"
+    },
+    "answer": "C",
+    "analysis": "“纪传体/编年体”区分组织史料的方法，“通史/断代史”区分记事的时间范围。司马迁《史记》为纪传体通史，班固《汉书》为纪传体断代史，司马光《资治通鉴》为编年体通史。两组分类标准不能混为一组互斥概念。讲义提供古代史与《资治通鉴》相关主题，三书体例另外依据所列公开资料核对。",
+    "selection_reason": "把两套分类标准分开，增加古代文化知识的结构理解。",
+    "source_question": null,
+    "source_answer": null,
+    "edits": [],
+    "verification": {
+      "status": "editor_solved_external_review_pending",
+      "method": "逐项辨析；依据用户讲义相关主题原创，时政、法律及专门事实补充核对所列一手或政府公开资料。",
+      "checked_on": "2026-11-15"
+    },
+    "provenance": {
+      "kind": "original",
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        97,
+        98
+      ],
+      "references": [
+        {
+          "title": "深刻理解中华文明突出的连续性",
+          "url": "https://www.forestry.gov.cn/c/www/xxyd/512380.jhtml",
+          "locator": "中国史学段：史记的纪传体通史、汉书的纪传体断代史及资治通鉴的编年体",
+          "checked_on": "2026-11-15"
+        }
+      ]
+    },
+    "figures": [],
+    "materials": []
+  },
+  {
+    "number": 66,
+    "section": "科学推理",
+    "subtype": "浮力与液体压强",
+    "question_type": "single_choice",
+    "source_bank": "广东粉笔模考",
+    "source_file": "模考/2026下半年广东卷_16-33季_AI可读/全部题目.jsonl",
+    "source_id": "gd-mock-2026h2-s23-q68",
+    "source_question": {
+      "id": "gd-mock-2026h2-s23-q68",
+      "season": 23,
+      "section": "科学推理",
+      "number": 68,
+      "material_id": null,
+      "stem": [
+        {
+          "type": "text",
+          "text": "将两个完全相同的实心小球，分别放入装有不同液体的甲、乙两个完全相同的烧杯中，小球静止时两烧杯中的液体液面相平，如图所示，下列说法正确的是（    ）。"
+        },
+        {
+          "type": "figure",
+          "asset_id": "s23_p18_i00",
+          "path": "assets/s23_p18_i00.png",
+          "width_px": 343,
+          "height_px": 157,
+          "caption": "原卷第18页，第68题图"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "text": "乙烧杯中小球排开液体的重力更小"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "text": "乙烧杯底部受到的液体压强更大"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "text": "甲烧杯中液体的质量更小"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "text": "甲烧杯中的液体对烧杯底部的压力更大"
+          }
+        ]
+      },
+      "source_pages": [
+        18
+      ],
+      "source_spans": [
+        {
+          "pdf_page": 18,
+          "bbox_pt": [
+            52.402,
+            401.426,
+            516.384,
+            413.845
+          ]
+        },
+        {
+          "pdf_page": 18,
+          "bbox_pt": [
+            68.048,
+            421.194,
+            427.333,
+            433.612
+          ]
+        },
+        {
+          "pdf_page": 18,
+          "bbox_pt": [
+            67.951,
+            437.787,
+            258.832,
+            524.888
+          ]
+        },
+        {
+          "pdf_page": 18,
+          "bbox_pt": [
+            68.048,
+            537.946,
+            465.056,
+            550.364
+          ]
+        },
+        {
+          "pdf_page": 18,
+          "bbox_pt": [
+            68.048,
+            558.331,
+            499.296,
+            570.75
+          ]
+        }
+      ],
+      "source_asset_ids": [
+        "s23_p18_i00"
+      ],
+      "answer": null,
+      "source": {
+        "source_name": "2026下半年省考第二十三季行测模考大赛（广东卷）.pdf",
+        "source_sha256": "84756de0a579cf7d6e40be45401796e46070fd50231368e97d844143ee10f57f",
+        "pages": 25
+      },
+      "material": null
+    },
+    "source_answer": null,
+    "answer": "D",
+    "analysis": "图中甲球漂浮、乙球悬浮，两球质量和体积相同且均未接触杯底。静止时两球所受浮力都等于自身重力，所以排开液体的重力相同，A错误。由甲球仅部分浸入而乙球全部浸入，得ρ甲＞ρ球＝ρ乙；液面同高，p＝ρgh，所以甲杯底液体压强更大，B错误。两杯底面积相同，F＝pS，因此D正确。甲球浸入体积更小，在相同液面高度下甲杯内液体体积反而更大，再结合ρ甲＞ρ乙，知甲杯内液体质量更大，C错误。这里比较的是液体对杯底的压力，不混同烧杯对桌面的总压力。",
+    "selection_reason": "同时识别漂浮/悬浮、排液重力、压强、液体体积四个对象，避免仅按浸入深度猜浮力。",
+    "edits": [],
+    "verification": {
+      "status": "editor_solved_external_review_pending",
+      "method": "读取完整题面与四项；逐项推导；所用现存图片已实际打开查看。源库无参考答案。",
+      "checked_on": "2026-11-15"
+    }
+  },
+  {
+    "number": 67,
+    "section": "科学推理",
+    "subtype": "平抛运动",
+    "question_type": "single_choice",
+    "source_bank": "广东粉笔模考",
+    "source_file": "模考/2026下半年广东卷_16-33季_AI可读/全部题目.jsonl",
+    "source_id": "gd-mock-2026h2-s21-q66",
+    "source_question": {
+      "id": "gd-mock-2026h2-s21-q66",
+      "season": 21,
+      "section": "科学推理",
+      "number": 66,
+      "material_id": null,
+      "stem": [
+        {
+          "type": "text",
+          "text": "A、B两个物体（可看成质点）均从O点水平抛出，两者做平抛运动的轨迹如下图所示。假设A、B两个物体从抛出到碰到墙壁所用的时间分别为 $t_A$ 、 $t_B$ ，初速度分别为 $v_A$ 、 $v_B$ ，则下列分析正确的是（    ）。"
+        },
+        {
+          "type": "figure",
+          "asset_id": "s21_p17_i04",
+          "path": "assets/s21_p17_i04.png",
+          "svg_path": "assets/s21_p17_i04.svg",
+          "width_px": 1296,
+          "height_px": 1020,
+          "caption": "原卷第17页，第66题图（依原图重绘）"
+        },
+        {
+          "type": "text",
+          "text": "① $t_A > t_B$\n② $t_A < t_B$\n③ $v_A > v_B$\n④ $v_A < v_B$"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "text": "①④"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "text": "②③"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "text": "①③"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "text": "②④"
+          }
+        ]
+      },
+      "source_pages": [
+        17
+      ],
+      "source_spans": [
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            52.402,
+            358.185,
+            517.828,
+            370.603
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            68.048,
+            378.57,
+            521.657,
+            390.988
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            68.048,
+            398.337,
+            180.628,
+            410.756
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            67.951,
+            414.313,
+            188.41,
+            508.827
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            68.048,
+            519.72,
+            79.044,
+            531.833
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            68.048,
+            539.488,
+            79.044,
+            551.601
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            68.048,
+            559.256,
+            79.044,
+            571.368
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            68.048,
+            579.641,
+            79.044,
+            591.754
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            68.048,
+            602.192,
+            445.94,
+            614.61
+          ]
+        }
+      ],
+      "source_asset_ids": [
+        "s21_p17_i00",
+        "s21_p17_i01",
+        "s21_p17_i02",
+        "s21_p17_i03",
+        "s21_p17_i04",
+        "s21_p17_i05",
+        "s21_p17_i06",
+        "s21_p17_i07",
+        "s21_p17_i08"
+      ],
+      "answer": null,
+      "source": {
+        "source_name": "2026下半年省考第二十一季行测模考大赛（广东卷）.pdf",
+        "source_sha256": "b17d5b3baa812dc95bc5a6f7dd4d8bd2c5e0bacb4b5e74fb9f1ca227cd61b1d9",
+        "pages": 24
+      },
+      "material": null
+    },
+    "source_answer": null,
+    "answer": "B",
+    "analysis": "先分别比较竖直位移和水平位移，不把两物体的落点当成同一高度或同一位置。A落在墙顶，B撞到更低的竖直墙面，所以hA＜hB。平抛竖直方向满足h＝gt²/2，得tA＜tB。图中A落点在墙角左侧，而B落点在墙面上；从同一O点向左量水平位移，xA＞xB。由v＝x/t，A用更短时间走过更大水平距离，故vA＞vB。②③正确，选B。",
+    "selection_reason": "从非同高、非同距的轨迹图分别锁定两个方向，训练平抛分解而非套同一落点公式。",
+    "edits": [
+      {
+        "type": "clarification",
+        "description": "明示不计空气阻力，图像、物理量和四个判断保持原样。源库题图本身为依原图重绘版，此处未再改变轨迹。"
+      }
+    ],
+    "verification": {
+      "status": "editor_solved_external_review_pending",
+      "method": "读取完整题面与四项；逐项推导；所用现存图片已实际打开查看。源库无参考答案。",
+      "checked_on": "2026-11-15"
+    },
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "不计空气阻力，A、B两个物体（可看成质点）均从O点水平抛出，两者做平抛运动的轨迹如下图所示。假设不计空气阻力，A、B两个物体从抛出到碰到墙壁所用的时间分别为 $t_A$ 、 $t_B$ ，初速度分别为 $v_A$ 、 $v_B$ ，则下列分析正确的是（    ）。"
+      },
+      {
+        "type": "figure",
+        "asset_id": "s21_p17_i04",
+        "path": "assets/s21_p17_i04.png",
+        "svg_path": "assets/s21_p17_i04.svg",
+        "width_px": 1296,
+        "height_px": 1020,
+        "caption": "原卷第17页，第66题图（依原图重绘）"
+      },
+      {
+        "type": "text",
+        "text": "① $t_A > t_B$\n② $t_A < t_B$\n③ $v_A > v_B$\n④ $v_A < v_B$"
+      }
+    ]
+  },
+  {
+    "number": 68,
+    "section": "科学推理",
+    "subtype": "微观反应与剩余反应物",
+    "question_type": "single_choice",
+    "source_bank": "广东粉笔模考",
+    "source_file": "模考/2026下半年广东卷_16-33季_AI可读/全部题目.jsonl",
+    "source_id": "gd-mock-2026h2-s26-q68",
+    "source_question": {
+      "id": "gd-mock-2026h2-s26-q68",
+      "season": 26,
+      "section": "科学推理",
+      "number": 68,
+      "material_id": null,
+      "stem": [
+        {
+          "type": "text",
+          "text": "某化学反应的微观示意图如下，下列说法正确的是（    ）。"
+        },
+        {
+          "type": "table",
+          "title": "反应前后的微观粒子示意图",
+          "headers": [
+            "阶段",
+            "每个图示粒子的原子组成",
+            "图示粒子个数"
+          ],
+          "rows": [
+            [
+              "反应前",
+              "1 个碳原子、4 个氢原子",
+              "1"
+            ],
+            [
+              "反应前",
+              "2 个氧原子",
+              "3"
+            ],
+            [
+              "反应后",
+              "1 个碳原子、2 个氧原子",
+              "1"
+            ],
+            [
+              "反应后",
+              "2 个氧原子",
+              "1"
+            ],
+            [
+              "反应后",
+              "1 个氧原子、2 个氢原子",
+              "2"
+            ]
+          ],
+          "notes": "原图箭头：反应前 → 反应后；箭头上标“点燃”。图例：大空心圆为碳原子、斜线圆为氧原子、小空心圆为氢原子。按图示粒子逐个计数，保留反应后仍存在的氧粒子；未将原图改写为配平反应方程式。",
+          "source_asset_id": "s26_p19_i00"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "text": "该微观示意图可说明反应前后分子种类、数目均不发生改变"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "text": "该反应的反应物分子个数比为1：3"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "text": "该反应属于氧化还原反应"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "text": "该反应的生成物有三种分子"
+          }
+        ]
+      },
+      "source_pages": [
+        19
+      ],
+      "source_spans": [
+        {
+          "pdf_page": 19,
+          "bbox_pt": [
+            52.402,
+            177.186,
+            360.05,
+            189.604
+          ]
+        },
+        {
+          "pdf_page": 19,
+          "bbox_pt": [
+            67.951,
+            193.163,
+            401.53,
+            299.414
+          ]
+        },
+        {
+          "pdf_page": 19,
+          "bbox_pt": [
+            68.048,
+            312.471,
+            370.519,
+            324.89
+          ]
+        },
+        {
+          "pdf_page": 19,
+          "bbox_pt": [
+            68.048,
+            332.857,
+            246.787,
+            345.275
+          ]
+        },
+        {
+          "pdf_page": 19,
+          "bbox_pt": [
+            68.048,
+            352.624,
+            201.712,
+            365.043
+          ]
+        },
+        {
+          "pdf_page": 19,
+          "bbox_pt": [
+            68.048,
+            372.392,
+            213.525,
+            384.811
+          ]
+        }
+      ],
+      "source_asset_ids": [
+        "s26_p19_i00"
+      ],
+      "answer": null,
+      "source": {
+        "source_name": "2026下半年省考第二十六季行测模考大赛（广东卷）.pdf",
+        "source_sha256": "cd5035fbb9936c5d304aeadfb5f4912624cef4dcf6b9d527ba0dd811cd025c92",
+        "pages": 25
+      },
+      "material": null
+    },
+    "source_answer": null,
+    "answer": "C",
+    "analysis": "按每个粒子的组成识别：反应前有1个CH₄和3个O₂，反应后有1个CO₂、2个H₂O及剩余的1个O₂。因此实际消耗的是1个CH₄与2个O₂，而不是把投放的3个O₂都算成参加反应。反应可写为CH₄＋2O₂→CO₂＋2H₂O（点燃），属于氧化还原反应，C正确。A中“种类不变”错误，虽然本图分子总数恰巧前后均为4。B把投料比当作反应比。D把未反应完的氧气算作生成物，实际生成物只有CO₂、H₂O两种。",
+    "selection_reason": "保留过量氧气，辨析投放量、参加反应量、生成物与剩余物；不预先给出配平方程。",
+    "edits": [
+      {
+        "type": "clarification",
+        "description": "按已入库的完整粒子表呈现，保留全部5行及各数量；B明确比较实际参加反应的粒子，D明确生成物，避免投料比/混合物总类数的措辞两解。只删除转写过程注记。"
+      }
+    ],
+    "verification": {
+      "status": "editor_solved_external_review_pending",
+      "method": "读取完整题面与四项；逐项推导；所用现存图片已实际打开查看。源库无参考答案。",
+      "checked_on": "2026-11-15"
+    },
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "某反应在点燃条件下进行，反应前后的微观粒子情况如下表所示。下列说法正确的是（　）。"
+      },
+      {
+        "type": "table",
+        "title": "反应前后图示粒子的组成与数量",
+        "headers": [
+          "阶段",
+          "每个图示粒子的原子组成",
+          "图示粒子个数"
+        ],
+        "rows": [
+          [
+            "反应前",
+            "1 个碳原子、4 个氢原子",
+            "1"
+          ],
+          [
+            "反应前",
+            "2 个氧原子",
+            "3"
+          ],
+          [
+            "反应后",
+            "1 个碳原子、2 个氧原子",
+            "1"
+          ],
+          [
+            "反应后",
+            "2 个氧原子",
+            "1"
+          ],
+          [
+            "反应后",
+            "1 个氧原子、2 个氢原子",
+            "2"
+          ]
+        ],
+        "notes": "表中数量为同一微观示意图中的粒子个数。",
+        "source_asset_id": "s26_p19_i00"
+      }
+    ],
+    "options": {
+      "A": [
+        {
+          "type": "text",
+          "text": "该微观示意图可说明反应前后分子种类、数目均不发生改变"
+        }
+      ],
+      "B": [
+        {
+          "type": "text",
+          "text": "实际参加反应的甲烷分子与氧分子的个数比为1∶3"
+        }
+      ],
+      "C": [
+        {
+          "type": "text",
+          "text": "该反应属于氧化还原反应"
+        }
+      ],
+      "D": [
+        {
+          "type": "text",
+          "text": "该反应生成了三种不同的分子"
+        }
+      ]
+    }
+  },
+  {
+    "number": 69,
+    "section": "科学推理",
+    "subtype": "食物网与营养级",
+    "question_type": "single_choice",
+    "source_bank": "广东粉笔模考",
+    "source_file": "模考/2026下半年广东卷_16-33季_AI可读/全部题目.jsonl",
+    "source_id": "gd-mock-2026h2-s24-q69",
+    "source_question": {
+      "id": "gd-mock-2026h2-s24-q69",
+      "season": 24,
+      "section": "科学推理",
+      "number": 69,
+      "material_id": null,
+      "stem": [
+        {
+          "type": "text",
+          "text": "下图是某茶园生态系统食物网的示意图，下列说法正确的是（    ）。"
+        },
+        {
+          "type": "table",
+          "title": "食物网的全部箭头关系",
+          "headers": [
+            "箭头起点",
+            "箭头终点"
+          ],
+          "rows": [
+            [
+              "茶树",
+              "茶毛虫"
+            ],
+            [
+              "茶树",
+              "茶尺蠖"
+            ],
+            [
+              "草",
+              "茶毛虫"
+            ],
+            [
+              "草",
+              "茶尺蠖"
+            ],
+            [
+              "茶毛虫",
+              "蛙"
+            ],
+            [
+              "茶毛虫",
+              "蜘蛛"
+            ],
+            [
+              "茶尺蠖",
+              "蜘蛛"
+            ],
+            [
+              "茶尺蠖",
+              "鸟"
+            ],
+            [
+              "蜘蛛",
+              "蛙"
+            ],
+            [
+              "蛙",
+              "蛇"
+            ],
+            [
+              "鸟",
+              "蛇"
+            ]
+          ],
+          "notes": "每行表示原图的一条有向箭头（起点 → 终点），完整保留 8 个节点及 11 条连接；行的先后顺序不代表食物链顺序。",
+          "source_asset_id": "s24_p17_i11"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "text": "该食物网中有7条食物链"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "text": "该食物网中，最高营养级为五级"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "text": "蛇捕食鸟后，能吸收鸟全部的能量"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "text": "该食物网包含了该生态系统中所有的生物"
+          }
+        ]
+      },
+      "source_pages": [
+        17
+      ],
+      "source_spans": [
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            52.402,
+            536.093,
+            404.905,
+            548.512
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            67.951,
+            552.687,
+            457.126,
+            698.473
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            68.048,
+            711.531,
+            465.056,
+            723.949
+          ]
+        },
+        {
+          "pdf_page": 17,
+          "bbox_pt": [
+            68.048,
+            731.298,
+            510.51,
+            743.717
+          ]
+        }
+      ],
+      "source_asset_ids": [
+        "s24_p17_i11"
+      ],
+      "answer": null,
+      "source": {
+        "source_name": "2026下半年省考第二十四季行测模考大赛（广东卷）.pdf",
+        "source_sha256": "417f1d633f78531135c56c90edc2c198d67c4ac0d6283bbc5ff645b67fe66511",
+        "pages": 24
+      },
+      "material": null
+    },
+    "source_answer": null,
+    "answer": "B",
+    "analysis": "箭头从被捕食者指向捕食者。以茶树为起点，到蛇共有4条路径：茶树→茶毛虫→蛙→蛇；茶树→茶毛虫→蜘蛛→蛙→蛇；茶树→茶尺蠖→蜘蛛→蛙→蛇；茶树→茶尺蠖→鸟→蛇。把起点换成草，另有4条，共8条，A错误。最长路径有5个生物环节，蛇在这些链中处于第五营养级，B正确；在较短的链中蛇也可处于第四营养级，不能给某物种固定唯一营养级。消费者不能吸收猎物全部能量，且食物网未列出分解者等全部生物，C、D错误。",
+    "selection_reason": "把食物链计数与最高营养级联系起来，同一物种可处不同营养级，补充前两卷未覆盖的生态结构判断。",
+    "edits": [
+      {
+        "type": "diagram_reconstruction",
+        "description": "源库仅保存食物网箭头表，没有对应原图文件；据表中8个节点、11条有向边重建示意图，另保存DOT/SVG及核验清单。布局为编辑重排，不称原图复原；全部箭头关系保持不变。"
+      }
+    ],
+    "verification": {
+      "status": "editor_solved_external_review_pending",
+      "method": "读取完整题面与四项；逐项推导；所用现存图片已实际打开查看。源库无参考答案。",
+      "checked_on": "2026-11-15"
+    },
+    "stem_override": [
+      {
+        "type": "text",
+        "text": "下图是某茶园生态系统食物网的示意图，箭头从被捕食者指向捕食者。下列说法正确的是（　）。"
+      },
+      {
+        "type": "figure",
+        "path": "../../广东行测18套模拟/M03/assets/q69_foodweb.png"
+      }
+    ]
+  },
+  {
+    "number": 70,
+    "section": "科学推理",
+    "subtype": "等高线与指北针",
+    "question_type": "single_choice",
+    "source_bank": "广东粉笔模考",
+    "source_file": "模考/2026下半年广东卷_16-33季_AI可读/全部题目.jsonl",
+    "source_id": "gd-mock-2026h2-s26-q70",
+    "source_question": {
+      "id": "gd-mock-2026h2-s26-q70",
+      "season": 26,
+      "section": "科学推理",
+      "number": 70,
+      "material_id": null,
+      "stem": [
+        {
+          "type": "text",
+          "text": "下图为某地的等高线地形图，下列说法正确的是（    ）。"
+        },
+        {
+          "type": "figure",
+          "asset_id": "s26_p19_i01",
+          "path": "assets/s26_p19_i01.png",
+          "width_px": 500,
+          "height_px": 327,
+          "caption": "原卷第19页，第70题图"
+        }
+      ],
+      "options": {
+        "A": [
+          {
+            "type": "text",
+            "text": "②处为山谷，容易发育河流"
+          }
+        ],
+        "B": [
+          {
+            "type": "text",
+            "text": "图中河流流向为自北向南"
+          }
+        ],
+        "C": [
+          {
+            "type": "text",
+            "text": "甲村所在区域海拔高于400米"
+          }
+        ],
+        "D": [
+          {
+            "type": "text",
+            "text": "③处为山脊"
+          }
+        ]
+      },
+      "source_pages": [
+        19
+      ],
+      "source_spans": [
+        {
+          "pdf_page": 19,
+          "bbox_pt": [
+            52.402,
+            502.117,
+            348.836,
+            514.535
+          ]
+        },
+        {
+          "pdf_page": 19,
+          "bbox_pt": [
+            67.951,
+            518.093,
+            345.934,
+            699.708
+          ]
+        },
+        {
+          "pdf_page": 19,
+          "bbox_pt": [
+            68.048,
+            713.383,
+            431.415,
+            725.802
+          ]
+        },
+        {
+          "pdf_page": 19,
+          "bbox_pt": [
+            68.048,
+            733.151,
+            364.73,
+            745.569
+          ]
+        }
+      ],
+      "source_asset_ids": [
+        "s26_p19_i01"
+      ],
+      "answer": null,
+      "source": {
+        "source_name": "2026下半年省考第二十六季行测模考大赛（广东卷）.pdf",
+        "source_sha256": "cd5035fbb9936c5d304aeadfb5f4912624cef4dcf6b9d527ba0dd811cd025c92",
+        "pages": 25
+      },
+      "material": null
+    },
+    "source_answer": null,
+    "answer": "B",
+    "analysis": "读图先看指北针：北方指向纸面的右上方，南方相应指向左下方。河流从右上方的较高海拔处流向左下方的较低处，所以实际大致自北向南，B正确，不能把纸面上方直接当北方。②处是从600米高地向低处伸出的山脊，等高线向低处凸出，A错误；③处等高线向高处弯曲，是山谷，D错误。甲村在200米等高线外侧的低处，海拔低于200米，更不高于400米，C错误。此题须把等高线的高低方向与地图的实际方位分开判断。",
+    "selection_reason": "倾斜指北针与山谷/山脊判读共同起作用，防止按页面上下代替真实方位。",
+    "edits": [],
+    "verification": {
+      "status": "editor_solved_external_review_pending",
+      "method": "读取完整题面与四项；逐项推导；所用现存图片已实际打开查看。源库无参考答案。",
+      "checked_on": "2026-11-15"
+    }
+  }
+]
