@@ -1,0 +1,32 @@
+name: M02 source audit inputs
+on:
+  push:
+    branches: ['gpt/m02-20261115']
+    paths: ['.github/workflows/m02-source-audit.yml']
+permissions:
+  contents: read
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /江浙行测_AI题库/answers.jsonl
+            /江浙行测_AI题库/quality_report.md
+            /广东行测24天集训/
+            !*.pdf
+            !*.zip
+            !*.png
+            !*.jpg
+            !*.html
+      - uses: actions/upload-artifact@v4
+        with:
+          name: M02-source-audit-inputs
+          path: |
+            江浙行测_AI题库/answers.jsonl
+            江浙行测_AI题库/quality_report.md
+            广东行测24天集训/
+          retention-days: 2
