@@ -174,6 +174,7 @@ def reflow(text: str, number, where: str, log: Log) -> list[str]:
 DOTS = re.compile(r"·{3,}|•{3,}")
 EMPTY_PAREN = re.compile(r"（[ 　]*）|\([ 　]*\)")
 UNDERS = re.compile(r"_{3,}")
+SPACE_BLANK = re.compile(r"(?<=\S)(?: {4,}|　{2,})(?=\S)")
 EDITORIAL_CELL = {"原表未标注": "", "原表空白": ""}
 
 
@@ -188,7 +189,13 @@ def norm_text(s: str, number, where: str, log: Log) -> str:
     t2 = EMPTY_PAREN.sub(BRACKET, t)
     if t2 != t:
         log.add(number, where, "空括号统一为考场样式", t[-24:], t2[-24:])
-    return t2
+    # 用一串空格充当的填空位置：HTML会把连续空格折成一个，印出来就看不到横线
+    t3 = SPACE_BLANK.sub("____", t2)
+    if t3 != t2:
+        m = SPACE_BLANK.search(t2)
+        log.add(number, where, "空格占位改为填空线", t2[max(0, m.start() - 8):m.end() + 8],
+                t3[max(0, m.start() - 8):m.start() + 12])
+    return t3
 
 
 # --------------------------------------------------------------------------
@@ -730,8 +737,11 @@ def question_html(q: dict, sizer: FigureSizer, log: Log) -> str:
         keep = " keep"      # 带图、带表的题整题不跨页（题干、图表、选项在同一页），避免题干与图表被翻页隔开
     else:
         keep = " keep" if _estimated_lines(q) <= 6 else ""
-    return (f'<div class="q{keep}" id="q{n}" data-n="{n}">{num}<div class="stem">' + "".join(stem_parts)
-            + "</div>" + options_html(q, log, sizer) + "</div>")
+    out = (f'<div class="q{keep}" id="q{n}" data-n="{n}">{num}<div class="stem">' + "".join(stem_parts)
+           + "</div>" + options_html(q, log, sizer) + "</div>")
+    if any(("横线" in b["text"] or "画线" in b["text"]) for b in texts) and 'class="blank"' not in out:
+        raise SystemExit(f"第{n}题题面提到横线，但没有可印出的填空线")
+    return out
 
 
 def _estimated_lines(q: dict) -> float:
