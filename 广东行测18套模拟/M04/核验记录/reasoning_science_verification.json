@@ -1,8 +1,8 @@
 {
   "scope": "M04 Q46–70: 5 graphic, 15 logical, 5 scientific reasoning questions",
-  "status": "editor_checks_passed_text_cross_review_passed_graphics_pending_parent_review",
+  "status": "v020_editor_rechecked_pending_incremental_claude",
   "method": "Editor read and solved before comparing available source keys. This is not an isolated blind review or Claude review.",
-  "module_sha256": "229022e36b8de9eb17c542fe0c1ff2ea6fb0ab85bcdf9ef83f9af404185fcb2b",
+  "module_sha256": "a1b4b8c130cd492329110801875ad3fd51242d55518276e5842d46eaf8ab0ba3",
   "diagram_data_sha256": "dc456c84c6c5946a53ece9f255a7c34406cf9253f69b625df7fe24a9846747f4",
   "source_banks": [
     {
@@ -88,8 +88,8 @@
     {
       "name": "provided_source_answer_count",
       "pass": true,
-      "actual": 10,
-      "expected": 10
+      "actual": 11,
+      "expected": 11
     },
     {
       "name": "provided_source_answers_agree",
@@ -187,10 +187,10 @@
       "name": "q48_matching_equality_pattern",
       "pass": true,
       "actual": [
-        "C"
+        "B"
       ],
       "expected": [
-        "C"
+        "B"
       ]
     },
     {
@@ -442,16 +442,16 @@
       "expected": "C"
     },
     {
-      "name": "exact_redraw_asset_count",
+      "name": "active_reconstructed_asset_count",
       "pass": true,
-      "actual": 14,
-      "expected": 14
+      "actual": 2,
+      "expected": 2
     }
   ],
   "independent_text_review": {
     "path": "核验记录/reasoning_science_independent_review.json",
-    "scope": "Q51–70; reviewer saved answers before seeing editorial keys; all 20 agreed.",
-    "followups_closed": "Q60 global rule separated from Ding dialogue; Q64 speakers separated; Q67 lamp labels moved above wires.",
+    "scope": "Historical v0.1.0 review only; replaced Q57 and revised explanations are not covered by that old agreement.",
+    "followups_closed": "Current layout is verified separately; Q67 now uses the original figure.",
     "not_claimed": "This is internal GPT cross-review, not external Claude review."
   },
   "q48_manual_symbol_patterns": {
@@ -481,30 +481,30 @@
         1,
         1,
         2,
-        2,
-        0,
-        2,
-        3
-      ],
-      "C": [
-        0,
-        1,
-        1,
-        2,
         3,
         0,
         2,
         4
       ],
-      "D": [
-        0,
-        0,
+      "C": [
         0,
         1,
         2,
+        3,
+        4,
+        0,
+        3,
+        5
+      ],
+      "D": [
         0,
         1,
-        2
+        1,
+        2,
+        3,
+        1,
+        2,
+        4
       ]
     }
   },
@@ -589,7 +589,7 @@
   },
   "visual_review": {
     "date": "2026-11-15",
-    "source_images_actually_viewed": [
+    "historical_v010_source_images_viewed": [
       46,
       47,
       48,
@@ -598,10 +598,13 @@
       66,
       67
     ],
+    "current_revision_image_read_again": [
+      48
+    ],
     "source_table_actually_read": [
       63
     ],
-    "redrawn_pngs_actually_viewed": [
+    "historical_v010_redrawn_pngs_viewed": [
       46,
       47,
       49,
@@ -609,6 +612,9 @@
       63,
       66,
       67
+    ],
+    "currently_active_reconstruction": [
+      63
     ],
     "q67_font_issue_fixed": "Replaced unsupported Unicode subscript glyphs with separately drawn small digits; final PNG reviewed.",
     "pdf_layout_review": "Out of scope for this module; the full-paper builder must inspect final rendered pages."
@@ -645,68 +651,20 @@
   ],
   "redraw_assets": [
     {
-      "path": "广东行测18套模拟/M04/assets/q46_pixel_shift.png",
-      "sha256": "9713a1637f923caa04bafc010519136b517a711388e631c9357c24dc73fbf5c2"
-    },
-    {
-      "path": "广东行测18套模拟/M04/assets/q47_growing_path.png",
-      "sha256": "b7519ba9b33b120592e2721cf90fa90160dc00668733182f96bdfdd10393cb45"
-    },
-    {
-      "path": "广东行测18套模拟/M04/assets/q49_cube_nets.png",
-      "sha256": "cd96428ef89fb6e72e1b4a8b5838efe4bcbb42d79d69dce9a31d0798caa69177"
-    },
-    {
-      "path": "广东行测18套模拟/M04/assets/q50_solids.png",
-      "sha256": "9e238779879d5b1d0948ac0477c985073d8b7342cd46bc28f3e2a38f9a4efbcb"
-    },
-    {
       "path": "广东行测18套模拟/M04/assets/q63_snake.png",
       "sha256": "8eed68559cd15b1d27161613e28859b22b527c7e6b59e1f608622cbe49c8689f"
     },
     {
-      "path": "广东行测18套模拟/M04/assets/q66_blocks.png",
-      "sha256": "dc5fda8be93218cc38f7692c0328fc931a834ef07ef8b36037a616a68bd21702"
-    },
-    {
-      "path": "广东行测18套模拟/M04/assets/q67_circuit.png",
-      "sha256": "19c8728545627437bca5b7d636d3b7e27f1eb4fc910019819c86ab94d2a01084"
-    },
-    {
-      "path": "广东行测18套模拟/M04/assets/q46_pixel_shift.svg",
-      "sha256": "6f98ed8fe63a0e58e897d3a842ee35496069ed4c1c277c72c9e517d0504dc76f"
-    },
-    {
-      "path": "广东行测18套模拟/M04/assets/q47_growing_path.svg",
-      "sha256": "6973942711f3e5f887ae1cd1fdba0372fd263c5b99a19aab6dc8040610d17030"
-    },
-    {
-      "path": "广东行测18套模拟/M04/assets/q49_cube_nets.svg",
-      "sha256": "ccc7e35d77a30cc4adc16feffdc2abdf126d8377087104c980826a2754238375"
-    },
-    {
-      "path": "广东行测18套模拟/M04/assets/q50_solids.svg",
-      "sha256": "fb17a34c0e2a5b8f93731dfa429fc35e31950c489a32c394ba052a0e58e5f7ba"
-    },
-    {
       "path": "广东行测18套模拟/M04/assets/q63_snake.svg",
       "sha256": "9d69f5e3b9c615f84b4e17ac8832b69b8f839dce3a69e579788ffe2040c30d8e"
-    },
-    {
-      "path": "广东行测18套模拟/M04/assets/q66_blocks.svg",
-      "sha256": "cc2d39a7b3461436f854597c0c545b2309e8fc17d79a6dd3e7efb50ba9ea6a3b"
-    },
-    {
-      "path": "广东行测18套模拟/M04/assets/q67_circuit.svg",
-      "sha256": "42a526a8e519e59440f2767eadc27099977e0570905d2cc7a3ac5eecd33486d3"
     }
   ],
   "limitations": [
     "The original PDFs were not downloaded and compared word-for-word in this session.",
     "Graphic grids/nets/solids were interpreted from source images; code proves consequences of that interpretation, not unseen original image content.",
-    "Ten Jiangzhe items have repository reference keys; fifteen mock items have editorial keys only. No claim of official answer provenance.",
+    "Eleven Jiangzhe items have repository reference keys; fourteen mock items have editorial keys only. No claim of official answer provenance.",
     "Old-booklet source-ID screening does not establish full visual deduplication or user completion status.",
-    "The initial q57 answer D belongs to rejected wheat-history source JS2022-A类-100; final q57 is a different question and answer A.",
+    "The current q57 is JS2023-A类-104 (answer A); previous candidates and the v0.1 complaint-rate question are retired and do not supply its proof.",
     "Textual argument questions require human reading; deterministic constraint checks do not certify their semantics."
   ]
 }

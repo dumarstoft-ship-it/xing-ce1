@@ -79,7 +79,7 @@ def clean_blocks(value, base=''):
             # original bank figures keep their source-file-relative semantics.
             path_base = '' if b.pop('path_base', None) == 'repository' else base
             b['path'] = Path(os.path.normpath(Path(path_base)/b['path'])).as_posix()
-        for key in ('caption','asset_id','source_asset_id','source_pages','source_spans','svg_path'):
+        for key in ('caption','source_pages','source_spans','svg_path'):
             b.pop(key,None)
         out.append(b)
     return out
@@ -265,7 +265,7 @@ def main():
             for m in q['materials']:
                 if m['id'] not in seen_materials:
                     members=group_members[m['id']]
-                    head.append(f'### 材料：回答第{min(members)}—{max(members)}题')
+                    head.append(f'### 材料：回答第{members[0]}题' if len(members)==1 else f'### 材料：回答第{min(members)}—{max(members)}题')
                     head.append(render_blocks(m['blocks']))
                     seen_materials.add(m['id'])
             head.append(render_question(q))

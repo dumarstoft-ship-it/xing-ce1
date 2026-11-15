@@ -10,10 +10,10 @@
     "37": "88176a4be79f21ed5a0fc4ecf6c3b666662c61c8ffae676e9ac0eb217597a1e0",
     "38": "670b1ddfe0bab7a456c28f7790888a94273a084fc73fda9e6e17d3db55db50ae",
     "39": "e3481412e9bbadde67548b2df0bfb18ce09b85735291ec585cc0d29b2ff1e5a3",
-    "40": "36278f01ca8eb06cec69f4b1f4d85f093759b3bdf3546a9729aa0792e9b23d78",
+    "40": "f861836a3239fb055035c5371d9e9e1224f4e3b2694a8e34278f6d11fa68596a",
     "41": "912bc586e71fb2e359980a0f99935cf369a6c11270cf77ddd564d231a68ec873",
     "42": "f58d41ecf63cb159fc14752b28896ab922da6e7f30d5f4c6597313f0b01cc507",
-    "43": "d8a6aef32ae0e39a9ece37f4387bd03c7c5e3d8b79fa0acb6c39e819e60ae802",
+    "43": "d67c298b581de1de59c7d865ced745992b54730e1762c877095c9667c0fe4d21",
     "44": "236f617a80576433f3fc2ca8c5a539a46ece83c622d3d24d612f25c01e4b59fc",
     "45": "dced279073472a25e81f201a876c0d2a37cfb4bd38b12ea8dec0334e03dfaf19",
     "71": "3c03756ce0eba0233da2441d1d9e9e3ea5fe5a010d8763d61038075fa868506e",
@@ -36,5 +36,15 @@
     "88": "9fd04a9bc81607c5c047281e757fc1ed40debd9856fc159409aa55c18b8a56de",
     "89": "02fce80a5d0786c7ca23cf20f53e54816a485b17d3a19c2a510c0ece0ac26501",
     "90": "9000bb745230b2539a8b6893a6d70b6c8e331ad45e6b46f88f52329f520e3399"
-  }
+  },
+  "checked_version": "0.2.0",
+  "revision_notes": {
+    "40": "恢复原题，生产能力、需求量、整数小时口径均不变；枚举与下界复跑。",
+    "43": "等可能抽样表述调整；样本空间及2/5干扰项不变，组合枚举复跑。"
+  },
+  "changed_input_numbers": [
+    40,
+    43
+  ],
+  "not_claimed": "模型由编辑复核，不是新的隔离盲审。"
 }

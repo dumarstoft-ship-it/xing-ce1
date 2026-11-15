@@ -43,7 +43,7 @@ for q in questions:
         banks[q['source_file']] = {r.get('id', r.get('question_id')): r for r in rows(ROOT / q['source_file'])}
 check('original_source_objects_unchanged', all(q['source_question'] == banks[q['source_file']][q['source_id']] for q in questions))
 source_key_rows = [q for q in questions if q.get('source_answer') is not None]
-check('provided_source_answer_count', len(source_key_rows), 10)
+check('provided_source_answer_count', len(source_key_rows), 11)
 check('provided_source_answers_agree', all(q['source_answer'] == q['answer'] for q in source_key_rows))
 check('mock_answers_marked_editorial', all(q['source_answer'] is None for q in questions if q['source_bank'] == 'guangdong_mock'))
 
@@ -83,8 +83,8 @@ check('q47_matching_option', q47_matches, [Q[47]['answer']])
 
 # Q48: positions of equal symbols, manually transcribed after actually viewing the source PNG.
 q48_pattern = [0, 1, 1, 2, 3, 0, 2, 4]
-q48_options = {'A':[0,1,1,2,3,0,2,3], 'B':[0,1,1,2,2,0,2,3],
-               'C':[0,1,1,2,3,0,2,4], 'D':[0,0,0,1,2,0,1,2]}
+q48_options = {'A':[0,1,1,2,3,0,2,3], 'B':[0,1,1,2,3,0,2,4],
+               'C':[0,1,2,3,4,0,3,5], 'D':[0,1,1,2,3,1,2,4]}
 check('q48_matching_equality_pattern', [k for k,v in q48_options.items() if v == q48_pattern], [Q[48]['answer']])
 
 # The 24 orientation-preserving symmetries of the coordinate cube. Reflections are excluded.
@@ -244,8 +244,8 @@ check('q69_long_wing_probability', (offspring['AA']+offspring['Aa'])/4, .75)
 check('q69_answer', Q[69]['answer'], 'C')
 
 asset_files = sorted((HERE.parent/'assets').glob('q*.png')) + sorted((HERE.parent/'assets').glob('q*.svg'))
-owned_assets = [p for p in asset_files if int(p.name[1:3]) in [46,47,49,50,63,66,67]]
-check('exact_redraw_asset_count', len(owned_assets), 14)
+owned_assets = [p for p in asset_files if int(p.name[1:3]) in [63]]
+check('active_reconstructed_asset_count', len(owned_assets), 2)
 assets = [{'path':str(p.relative_to(ROOT)), 'sha256':digest(p)} for p in owned_assets]
 source_figures = ['s21_p11_i00.png','s25_p11_i00.png','s23_p12_i02.png','s22_p13_i01.png',
                   's26_p13_i00.png','s33_p18_i00.png','s17_p18_i00.png']
@@ -255,15 +255,15 @@ source_images = [{'path':str((source_root/f).relative_to(ROOT)), 'sha256':digest
 
 report = {
     'scope':'M04 Q46–70: 5 graphic, 15 logical, 5 scientific reasoning questions',
-    'status':'editor_checks_passed_text_cross_review_passed_graphics_pending_parent_review',
+    'status':'v020_editor_rechecked_pending_incremental_claude',
     'method':'Editor read and solved before comparing available source keys. This is not an isolated blind review or Claude review.',
     'module_sha256':digest(MODULE), 'diagram_data_sha256':digest(DATA),
     'source_banks':[{'path':p,'sha256':digest(ROOT/p)} for p in banks],
     'checks':checks,
     'independent_text_review':{
         'path':'核验记录/reasoning_science_independent_review.json',
-        'scope':'Q51–70; reviewer saved answers before seeing editorial keys; all 20 agreed.',
-        'followups_closed':'Q60 global rule separated from Ding dialogue; Q64 speakers separated; Q67 lamp labels moved above wires.',
+        'scope':'Historical v0.1.0 review only; replaced Q57 and revised explanations are not covered by that old agreement.',
+        'followups_closed':'Current layout is verified separately; Q67 now uses the original figure.',
         'not_claimed':'This is internal GPT cross-review, not external Claude review.'
     },
     'q48_manual_symbol_patterns':{'stem':q48_pattern, 'options':q48_options},
@@ -279,9 +279,11 @@ report = {
     },
     'visual_review':{
         'date':'2026-11-15',
-        'source_images_actually_viewed':[46,47,48,49,50,66,67],
+        'historical_v010_source_images_viewed':[46,47,48,49,50,66,67],
+        'current_revision_image_read_again':[48],
         'source_table_actually_read':[63],
-        'redrawn_pngs_actually_viewed':[46,47,49,50,63,66,67],
+        'historical_v010_redrawn_pngs_viewed':[46,47,49,50,63,66,67],
+        'currently_active_reconstruction':[63],
         'q67_font_issue_fixed':'Replaced unsupported Unicode subscript glyphs with separately drawn small digits; final PNG reviewed.',
         'pdf_layout_review':'Out of scope for this module; the full-paper builder must inspect final rendered pages.'
     },
@@ -289,9 +291,9 @@ report = {
     'limitations':[
         'The original PDFs were not downloaded and compared word-for-word in this session.',
         'Graphic grids/nets/solids were interpreted from source images; code proves consequences of that interpretation, not unseen original image content.',
-        'Ten Jiangzhe items have repository reference keys; fifteen mock items have editorial keys only. No claim of official answer provenance.',
+        'Eleven Jiangzhe items have repository reference keys; fourteen mock items have editorial keys only. No claim of official answer provenance.',
         'Old-booklet source-ID screening does not establish full visual deduplication or user completion status.',
-        'The initial q57 answer D belongs to rejected wheat-history source JS2022-A类-100; final q57 is a different question and answer A.',
+        'The current q57 is JS2023-A类-104 (answer A); previous candidates and the v0.1 complaint-rate question are retired and do not supply its proof.',
         'Textual argument questions require human reading; deterministic constraint checks do not certify their semantics.'
     ]
 }

@@ -17,9 +17,10 @@
     "materials": [],
     "figures": [],
     "verification": {
-      "status": "editor_solved_pending_cross_review",
+      "status": "editor_revision_pending_incremental_claude",
       "method": "主题取自讲义；逐项辨析并补查所列一手公开依据；未冒称源题或官方答案",
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "checked_version": "0.2.0"
     },
     "provenance": {
       "kind": "original",
@@ -50,38 +51,37 @@
     "subtype": "主要矛盾与矛盾主要方面",
     "question_type": "true_false",
     "source_bank": "editor_original",
-    "source_id": "M04-ORIG-002",
-    "stem": "评价一项改革时，既承认实施中存在配套不足，又根据显著成效居于主导地位作出总体肯定，主要运用的是抓主要矛盾的方法。",
+    "source_id": "M04-ORIG-002-v020",
+    "stem": "某系统在要素种类、数量不变的情况下，仅通过调整内部排列结构便发生了性质变化，因此这次变化不需要量变作为准备。",
     "options": {},
     "answer": "错误",
-    "analysis": "题干比较的是同一项改革的成效与不足，作出的是对这项改革的总体评价，对应把握矛盾的主要方面。抓主要矛盾侧重在多种矛盾或多项制约中找出支配其他矛盾的关键问题，决定优先解决什么。题干没有列举多种矛盾并安排工作先后，因此不能把“评价主流”偷换成“解决关键问题”。",
-    "selection_reason": "用评价对象与判断任务区分两个相近概念，承接用户重视的模型识别。",
+    "analysis": "错误。量变不仅包括数量的增减，还包括组成要素排列次序的变动。要素种类、数量不变，并不等于没有量变；内部排列变化达到一定限度，也可能导致性质变化。题干用“数量未变”直接否定量变的准备作用，缩小了量变的内涵。",
+    "selection_reason": "替换与前卷重复的主次矛盾情境；考查量变是否只指数量增减，以及量变与质变的区分。",
     "source_question": null,
     "source_answer": null,
-    "edits": [],
+    "edits": [
+      {
+        "type": "question_replacement",
+        "description": "换掉重复考点情境，旧题源ID进入撤题登记；新题保持判断题形式。",
+        "version": "0.2.0"
+      }
+    ],
     "materials": [],
     "figures": [],
     "verification": {
-      "status": "editor_solved_pending_cross_review",
+      "status": "editor_revision_pending_incremental_claude",
       "method": "主题取自讲义；逐项辨析并补查所列一手公开依据；未冒称源题或官方答案",
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "checked_version": "0.2.0"
     },
     "provenance": {
       "kind": "original",
       "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
       "book_pages": [
-        40,
         41
       ],
-      "book_scope": "讲义第40—41页为两组概念，直接定义核《矛盾论》第四部分。",
-      "references": [
-        {
-          "title": "毛泽东：矛盾论",
-          "url": "https://news.12371.cn/2017/08/29/ARTI1504001209326173.shtml",
-          "locator": "第四部分：主要矛盾与矛盾的主要方面；事物性质主要由取得支配地位的主要方面规定",
-          "checked_on": "2026-11-15"
-        }
-      ]
+      "book_scope": "讲义第41页直接列出量变包括组成要素排列次序变动；新情境为编辑原创，不称真题改编。",
+      "references": []
     }
   },
   {
@@ -102,9 +102,10 @@
     "materials": [],
     "figures": [],
     "verification": {
-      "status": "editor_solved_pending_cross_review",
+      "status": "editor_revision_pending_incremental_claude",
       "method": "主题取自讲义；逐项辨析并补查所列一手公开依据；未冒称源题或官方答案",
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "checked_version": "0.2.0"
     },
     "provenance": {
       "kind": "original",
@@ -148,9 +149,10 @@
     "materials": [],
     "figures": [],
     "verification": {
-      "status": "editor_solved_pending_cross_review",
+      "status": "editor_revision_pending_incremental_claude",
       "method": "主题取自讲义；逐项辨析并补查所列一手公开依据；未冒称源题或官方答案",
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "checked_version": "0.2.0"
     },
     "provenance": {
       "kind": "original",
@@ -199,9 +201,10 @@
     "materials": [],
     "figures": [],
     "verification": {
-      "status": "editor_solved_pending_cross_review",
+      "status": "editor_revision_pending_incremental_claude",
       "method": "主题取自讲义；逐项辨析并补查所列一手公开依据；未冒称源题或官方答案",
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "checked_version": "0.2.0"
     },
     "provenance": {
       "kind": "original",
@@ -233,29 +236,35 @@
       "A": "增设跨境货运班次，扩大港口货物吞吐规模",
       "B": "组织企业参加境外展会，增加商品出口订单",
       "C": "对接国际高标准经贸规则，完善政府采购、知识产权保护等制度安排",
-      "D": "引导企业扩大先进设备进口，增加生产性外资到资额"
+      "D": "出台出口奖励政策，按新增出口订单给予财政补贴"
     },
     "answer": "C",
-    "analysis": "制度型开放的直接对象是规则、规制、管理和标准的相通相容。C改变制度安排，对应这一对象。A、B、D分别直接增加运输与货物流动、出口订单、设备和资本流入，主要着眼于商品和要素流动。它们可以受益于制度型开放，也能促进开放，但题目问“最直接体现”，不能把开放带来的业务规模变化本身等同制度规则的改变。",
+    "analysis": "选C。制度型开放着重于规则、规制、管理、标准等制度层面的对接，C以政府采购、知识产权保护为具体落点，直接符合题意。A扩大运输能力，B增加商品订单，侧重货物流量与贸易规模；D虽然也是政府出台的政策，但直接作用是奖励出口订单，未体现制度与国际高标准的对接。不能见到“政策”就等同于制度型开放。",
     "selection_reason": "辨别开放的制度条件与流量结果，四个方案都与开放有关，需看直接作用对象。",
     "source_question": null,
     "source_answer": null,
-    "edits": [],
+    "edits": [
+      {
+        "type": "distractor_improvement",
+        "description": "用出口奖励政策替换弱干扰项，避免凭“有没有政策字样”排除，答案C不变。",
+        "version": "0.2.0"
+      }
+    ],
     "materials": [],
     "figures": [],
     "verification": {
-      "status": "editor_solved_pending_cross_review",
+      "status": "editor_revision_pending_incremental_claude",
       "method": "主题取自讲义；逐项辨析并补查所列一手公开依据；未冒称源题或官方答案",
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "checked_version": "0.2.0"
     },
     "provenance": {
       "kind": "original",
       "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
       "book_pages": [
-        26,
-        27
+        74
       ],
-      "book_scope": "讲义第26—27页改革开放和高质量发展主题；制度型与流动型区分据政策解读。",
+      "book_scope": "讲义第74页直接涉及制度型开放、自贸试验区提升及规则机制软联通；四项具体工作为编辑原创情境。",
       "references": [
         {
           "title": "稳步扩大制度型开放，完善高水平对外开放体制机制",
@@ -289,9 +298,10 @@
     "materials": [],
     "figures": [],
     "verification": {
-      "status": "editor_solved_pending_cross_review",
+      "status": "editor_revision_pending_incremental_claude",
       "method": "主题取自讲义；逐项辨析并补查所列一手公开依据；未冒称源题或官方答案",
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "checked_version": "0.2.0"
     },
     "provenance": {
       "kind": "original",
@@ -334,9 +344,10 @@
     "materials": [],
     "figures": [],
     "verification": {
-      "status": "editor_solved_pending_cross_review",
+      "status": "editor_revision_pending_incremental_claude",
       "method": "主题取自讲义；逐项辨析并补查所列一手公开依据；未冒称源题或官方答案",
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "checked_version": "0.2.0"
     },
     "provenance": {
       "kind": "original",
@@ -379,9 +390,10 @@
     "materials": [],
     "figures": [],
     "verification": {
-      "status": "editor_solved_pending_cross_review",
+      "status": "editor_revision_pending_incremental_claude",
       "method": "主题取自讲义；逐项辨析并补查所列一手公开依据；未冒称源题或官方答案",
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "checked_version": "0.2.0"
     },
     "provenance": {
       "kind": "original",
@@ -424,9 +436,10 @@
     "materials": [],
     "figures": [],
     "verification": {
-      "status": "editor_solved_pending_cross_review",
+      "status": "editor_revision_pending_incremental_claude",
       "method": "主题取自讲义；逐项辨析并补查所列一手公开依据；未冒称源题或官方答案",
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "checked_version": "0.2.0"
     },
     "provenance": {
       "kind": "original",
@@ -474,9 +487,10 @@
     "materials": [],
     "figures": [],
     "verification": {
-      "status": "editor_solved_pending_cross_review",
+      "status": "editor_revision_pending_incremental_claude",
       "method": "主题取自讲义；逐项辨析并补查所列一手公开依据；未冒称源题或官方答案",
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "checked_version": "0.2.0"
     },
     "provenance": {
       "kind": "original",
@@ -506,34 +520,38 @@
     "stem": "广东韶关丹霞山、肇庆七星岩、湛江湖光岩玛珥湖的主要地貌形成特征，依次对应正确的是（　）。",
     "options": {
       "A": "红色砂砾岩侵蚀形成的赤壁丹崖、石灰岩溶蚀形成的峰林溶洞、火山喷发形成的火山口湖",
-      "B": "红色砂砾岩侵蚀形成的赤壁丹崖、火山喷发形成的孤立山峰、冰川侵蚀形成的冰斗湖",
+      "B": "红色砂砾岩侵蚀形成的赤壁丹崖、火山喷发形成的孤立山峰、火山喷发形成的火山口湖",
       "C": "石灰岩溶蚀形成的峰林、红色砂砾岩侵蚀形成的赤壁、火山喷发形成的火山口湖",
       "D": "火山喷发形成的赤壁、石灰岩溶蚀形成的峰林溶洞、河道改道形成的牛轭湖"
     },
     "answer": "A",
-    "analysis": "丹霞山的造景岩石为红色砂砾岩，流水侵蚀、重力崩塌等形成赤壁丹崖；七星岩为石灰岩峰林及溶洞景观，属于喀斯特地貌；湖光岩玛珥湖为火山口湖。A三处都对应。B误判七星岩与湖光岩；C交换丹霞与岩溶的造景基础；D把红色山崖颜色直接联想到火山，又误判玛珥湖为河流遗迹。不能仅因名称都有“岩”，便将成因归为一类。",
+    "analysis": "选A。丹霞山以红色砂砾岩经侵蚀形成的赤壁丹崖为主要特征；七星岩属于石灰岩地区的喀斯特地貌，溶蚀形成峰林、溶洞；湖光岩玛珥湖与火山喷发有关。B的丹霞山和湖光岩两格正确，错误仅在把七星岩说成火山成因；C混淆丹霞与喀斯特，D混淆丹霞山及湖光岩的成因。不能只靠丹霞与火山两端的明显词语锁定答案，还须判断七星岩。",
     "selection_reason": "把省情景观与基本地理机制相联，检查三组对应而非单记景点名。",
     "source_question": null,
     "source_answer": null,
-    "edits": [],
+    "edits": [
+      {
+        "type": "provenance_and_distractor",
+        "description": "改正依据页码；B第三格改为正确的火山成因，必须分辨七星岩才能排除B。",
+        "version": "0.2.0"
+      }
+    ],
     "materials": [],
     "figures": [],
     "verification": {
-      "status": "editor_solved_pending_cross_review",
+      "status": "editor_revision_pending_incremental_claude",
       "method": "主题取自讲义；逐项辨析并补查所列一手公开依据；未冒称源题或官方答案",
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "checked_version": "0.2.0"
     },
     "provenance": {
       "kind": "original",
       "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
       "book_pages": [
-        59,
-        72,
-        73,
-        105,
-        106
+        70,
+        104
       ],
-      "book_scope": "讲义广东省情与自然地理为主题范围；三个景区具体岩性、成因由管理部门或地方政府公开介绍直接支持，讲义页码不充当三项细节证据。",
+      "book_scope": "讲义第70页为广东地貌概况，第104页提及碳酸钙、石灰石与喀斯特地貌；三处景区讲义未收录，具体岩性与成因以已列官方介绍为直接依据。",
       "references": [
         {
           "title": "世界地质公园、世界自然遗产——广东丹霞山",
@@ -579,9 +597,10 @@
     "materials": [],
     "figures": [],
     "verification": {
-      "status": "editor_solved_pending_cross_review",
+      "status": "editor_revision_pending_incremental_claude",
       "method": "主题取自讲义；逐项辨析并补查所列一手公开依据；未冒称源题或官方答案",
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "checked_version": "0.2.0"
     },
     "provenance": {
       "kind": "original",
@@ -613,27 +632,33 @@
       "A": "“无源定位”意味着终端不需要电源，太阳落山后也无需电池",
       "B": "没有地面移动通信网络，终端就不能利用卫星信号完成定位",
       "C": "终端可以通过接收卫星信号计算位置，但仅支持这种定位并不等于具备北斗短报文发送能力",
-      "D": "只要能够接收北斗定位信号，终端便能直接向北斗卫星发射求救短报文"
+      "D": "终端完成无源定位时，需要先向卫星发出测距请求，再由卫星返回位置结果"
     },
     "answer": "C",
-    "analysis": "无源定位中的“无源”指用户终端进行定位时不必向卫星主动发射测距信号，而非不消耗电能。终端接收卫星导航信号并计算自身位置，地面移动通信网络不是完成这一过程的必要条件，故A、B错误。短报文发送是另一项通信能力，需要相应的终端和业务支持，不能从支持定位直接推定支持发送，C正确、D错误。手机联网地图、辅助定位与卫星无源定位也不是同一个环节。",
+    "analysis": "选C。无源定位指终端接收卫星信号并据此计算位置，不表示终端无需供电，A错误；它不以地面移动通信网络为必要条件，B错误。仅支持接收定位，不等于具备向卫星发送短报文的设备与功能，C正确。D把需要终端发送请求的交互方式混入无源定位；本题定位不以向卫星提出测距请求为前提。",
     "selection_reason": "区分定位、地图与通信三种能力，考察常见科技术语的真实含义。",
     "source_question": null,
     "source_answer": null,
-    "edits": [],
+    "edits": [
+      {
+        "type": "distractor_improvement",
+        "description": "以有源与无源定位的具体混淆替换绝对化弱干扰项；答案C不变。",
+        "version": "0.2.0"
+      }
+    ],
     "materials": [],
     "figures": [],
     "verification": {
-      "status": "editor_solved_pending_cross_review",
+      "status": "editor_revision_pending_incremental_claude",
       "method": "主题取自讲义；逐项辨析并补查所列一手公开依据；未冒称源题或官方答案",
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "checked_version": "0.2.0"
     },
     "provenance": {
       "kind": "original",
       "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
       "book_pages": [
-        106,
-        107
+        106
       ],
       "book_scope": "讲义第106—107页北斗等科技成就主题；功能区别由白皮书、总设计师访谈和通信主管部门说明支持。",
       "references": [
@@ -681,9 +706,10 @@
     "materials": [],
     "figures": [],
     "verification": {
-      "status": "editor_solved_pending_cross_review",
+      "status": "editor_revision_pending_incremental_claude",
       "method": "主题取自讲义；逐项辨析并补查所列一手公开依据；未冒称源题或官方答案",
-      "checked_on": "2026-11-15"
+      "checked_on": "2026-11-15",
+      "checked_version": "0.2.0"
     },
     "provenance": {
       "kind": "original",

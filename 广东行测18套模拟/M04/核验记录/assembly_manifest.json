@@ -1,27 +1,27 @@
 {
   "paper_id": "M04",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "inputs": [
     {
       "path": "编辑底稿/politics.json",
-      "sha256": "5ed3edc6aac864d26a362d8a18e227f67c906c71e1a81f894df8c5da9a9d4950",
+      "sha256": "e327f775cceb7cd92e01cb1f6167e91e4b891ad1a5dfbdb8bef51171b9350e55",
       "count": 15
     },
     {
       "path": "编辑底稿/verbal.json",
-      "sha256": "ca73dd686348d92eca402f2fe39be05f8685a5038447cd0e3734588ef2b3cb46",
+      "sha256": "e4296ebb54eb8c5c1d0afceb53278abf572d2dd7a476698ea573e4dbcb46db7b",
       "count": 15
     },
     {
       "path": "编辑底稿/quant_data.json",
-      "sha256": "d22d1b32bca7dd12680aa5050eaa3688b5a8dfbd4c28410cdcd937502d341e8e",
+      "sha256": "758a5c0b914eb7f21be4394e9784516f6dbd58db72436402b6de06c5a58fccf4",
       "count": 35
     },
     {
       "path": "编辑底稿/reasoning_science.json",
-      "sha256": "229022e36b8de9eb17c542fe0c1ff2ea6fb0ab85bcdf9ef83f9af404185fcb2b",
+      "sha256": "a1b4b8c130cd492329110801875ad3fd51242d55518276e5842d46eaf8ab0ba3",
       "count": 25
     }
   ],
-  "selection_sha256": "fd433e5fc337fa3027e8cc64e47255c0a577050f4e82799414f569fa8f1ea1e9"
+  "selection_sha256": "61c0677d599d572a308262cc5d03d488881aa9ab09c5bd64cca946122a1c1eb3"
 }

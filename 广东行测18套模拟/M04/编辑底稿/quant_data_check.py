@@ -121,12 +121,15 @@ add(40,'B',{'quantity_each':2400,'continuous_lower_bound_hours':lower,
                             'A_time':52,'B_time':F(320,30)+F(2400,60)}})
 
 # 41: prove the upper bound, then give a compatible witness.
-discounted=[20,20,35,35,35,35]; days=[1,1,2,3,4,5]
+discounted=[24,24,33,33,33,33]; days=[1,1,2,3,4,5]
+original_prices=[F(v)/F('0.6') for v in discounted]
+assert original_prices==list(map(F,[40,40,55,55,55,55]))
+assert all(p.denominator==1 and (100*p).denominator==1 for p in original_prices)
 assert sum(x<25 for x in discounted)==2 and len(set(days))==5
 paid=sum(discounted)-4*3-5*4; original=F(sum(discounted),1)/F('0.6')
 assert paid==148 and original==300
 add(41,'D',{'max_coupon_count':5,'max_threshold_discount':12,
-            'discounted_values_witness':discounted,'days_witness':days,
+            'discounted_values_witness':discounted,'original_prices_witness':original_prices,'days_witness':days,
             'paid':paid,'original_total':original})
 
 # 42: construct disjoint dissatisfaction sets, not only a formal bound.

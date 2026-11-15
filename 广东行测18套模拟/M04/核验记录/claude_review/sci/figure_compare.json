@@ -1,0 +1,66 @@
+{
+ "q66": {
+  "original": "模考/2026下半年广东卷_16-33季_AI可读/assets/s33_p18_i00.png",
+  "original_px": [
+   364,
+   135
+  ],
+  "original_print_mm": [
+   71.5,
+   26.6
+  ],
+  "original_effective_dpi": 129.3,
+  "redraw": "广东行测18套模拟/M04/assets/q66_blocks.png",
+  "redraw_px": [
+   2880,
+   1020
+  ],
+  "redraw_built_mm": [
+   120.0,
+   42.5
+  ],
+  "linear_enlargement_vs_original": [
+   1.68,
+   1.6
+  ],
+  "area_ratio": 2.68,
+  "ink_bbox_aspect_original": 2.868,
+  "ink_bbox_aspect_redraw": 3.027,
+  "coarse_stroke_agreement_tol3px": {
+   "original_ink_near_redraw": 0.423,
+   "redraw_ink_near_original": 0.52
+  }
+ },
+ "q67": {
+  "original": "模考/2026下半年广东卷_16-33季_AI可读/assets/s17_p18_i00.png",
+  "original_px": [
+   300,
+   316
+  ],
+  "original_print_mm": [
+   58.8,
+   61.9
+  ],
+  "original_effective_dpi": 129.5,
+  "redraw": "广东行测18套模拟/M04/assets/q67_circuit.png",
+  "redraw_px": [
+   1860,
+   2100
+  ],
+  "redraw_built_mm": [
+   88.6,
+   100.0
+  ],
+  "linear_enlargement_vs_original": [
+   1.51,
+   1.62
+  ],
+  "area_ratio": 2.43,
+  "ink_bbox_aspect_original": 0.949,
+  "ink_bbox_aspect_redraw": 0.817,
+  "coarse_stroke_agreement_tol3px": {
+   "original_ink_near_redraw": 0.516,
+   "redraw_ink_near_original": 0.576
+  }
+ }
+}

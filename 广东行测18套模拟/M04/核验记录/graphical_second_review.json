@@ -1,7 +1,7 @@
 {
   "paper_id": "M04",
   "reviewer": "整卷负责人root",
-  "method": "在已知编辑答案后实际查看5道源图及4道重绘图，逐项核对图形，并评估几何/网格记录；不称第二次盲答。",
+  "method": "0.1.0人工记录保全在历史版本；本轮重读第48题、统一图符标准并复算模型。其余原图按源路径和哈希恢复，不称新一轮五题盲审。",
   "results": [
     {
       "number": 46,
@@ -15,11 +15,11 @@
       ],
       "final_images": [
         {
-          "path": "广东行测18套模拟/M04/assets/q46_pixel_shift.png",
-          "sha256": "9713a1637f923caa04bafc010519136b517a711388e631c9357c24dc73fbf5c2"
+          "path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s21_p11_i00.png",
+          "sha256": "d310858a6815fabf5432c833c709603911f8a7d0f409eb5687e085236cbe2aaf"
         }
       ],
-      "result": "PASS"
+      "result": "ORIGINAL_ASSET_RESTORED_MODEL_RECHECKED"
     },
     {
       "number": 47,
@@ -33,16 +33,16 @@
       ],
       "final_images": [
         {
-          "path": "广东行测18套模拟/M04/assets/q47_growing_path.png",
-          "sha256": "b7519ba9b33b120592e2721cf90fa90160dc00668733182f96bdfdd10393cb45"
+          "path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s25_p11_i00.png",
+          "sha256": "5a86c2d0b7dbc85b9d331e2a849143884359f6d9555a06058615132f755666d3"
         }
       ],
-      "result": "PASS"
+      "result": "ORIGINAL_ASSET_RESTORED_MODEL_RECHECKED"
     },
     {
       "number": 48,
-      "answer": "C",
-      "review_reason": "实际查看原图，重复结构为a-b-b-c-d-a-c-e，C同构，其他项均有额外重复。",
+      "answer": "B",
+      "review_reason": "选B。是否为同一图符，应对所有摆放方向使用同一标准：比较完整图形，尤其是完整椭圆所表示的可见端面。转过180°后，可见端面换到另一端，即为不同图符。题干第1与6位、第2与3位、第4与7位分别相同，第5、8位各为另一种，结构为a-b-b-c-d-a-c-e。B具有完全相同的重复位置。A第5与8位还相同，重复过多；C第2、3位互为转180°，并非同一图符；D第1与6位不同，第6位又和第2、3位相同。因此只有B符合。旧解析把斜放图形的相反端面合并，却区分平放图形的相反端面，判断口径不一致，已撤销。",
       "original_images": [
         {
           "path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s23_p12_i02.png",
@@ -55,7 +55,7 @@
           "sha256": "109c31b0b3abefa256c4977470e8db6e14e96eba4108f0a260996d6f223f176d"
         }
       ],
-      "result": "PASS"
+      "result": "CORRECTED_C_TO_B"
     },
     {
       "number": 49,
@@ -69,11 +69,11 @@
       ],
       "final_images": [
         {
-          "path": "广东行测18套模拟/M04/assets/q49_cube_nets.png",
-          "sha256": "cd96428ef89fb6e72e1b4a8b5838efe4bcbb42d79d69dce9a31d0798caa69177"
+          "path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s22_p13_i01.png",
+          "sha256": "bc2e7ac56e77edf8fbcd5dab491542e4bf66921de82463d5ba319a04da77035e"
         }
       ],
-      "result": "PASS"
+      "result": "ORIGINAL_ASSET_RESTORED_MODEL_RECHECKED"
     },
     {
       "number": 50,
@@ -87,12 +87,13 @@
       ],
       "final_images": [
         {
-          "path": "广东行测18套模拟/M04/assets/q50_solids.png",
-          "sha256": "9e238779879d5b1d0948ac0477c985073d8b7342cd46bc28f3e2a38f9a4efbcb"
+          "path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s26_p13_i00.png",
+          "sha256": "f2c334f5f2e4ea0d815f465322dfc17df21219947dbdee4ce99b8bf027ccc906"
         }
       ],
-      "result": "PASS"
+      "result": "ORIGINAL_ASSET_RESTORED_MODEL_RECHECKED"
     }
   ],
-  "limits": "人工图形解释仍可被外部审读质疑；枚举不能自动证明源图读取正确。"
+  "limits": "人工图形解释仍可被外部审读质疑；枚举不能自动证明源图读取正确。",
+  "checked_version": "0.2.0"
 }

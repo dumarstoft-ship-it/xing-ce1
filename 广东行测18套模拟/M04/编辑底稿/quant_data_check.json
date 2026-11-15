@@ -238,7 +238,7 @@
           }
         }
       },
-      "input_sha256": "36278f01ca8eb06cec69f4b1f4d85f093759b3bdf3546a9729aa0792e9b23d78",
+      "input_sha256": "f861836a3239fb055035c5371d9e9e1224f4e3b2694a8e34278f6d11fa68596a",
       "editorial_answer": "B",
       "agrees": true
     },
@@ -249,12 +249,38 @@
         "max_coupon_count": 5,
         "max_threshold_discount": 12,
         "discounted_values_witness": [
-          20,
-          20,
-          35,
-          35,
-          35,
-          35
+          24,
+          24,
+          33,
+          33,
+          33,
+          33
+        ],
+        "original_prices_witness": [
+          {
+            "exact": "40",
+            "decimal": 40.0
+          },
+          {
+            "exact": "40",
+            "decimal": 40.0
+          },
+          {
+            "exact": "55",
+            "decimal": 55.0
+          },
+          {
+            "exact": "55",
+            "decimal": 55.0
+          },
+          {
+            "exact": "55",
+            "decimal": 55.0
+          },
+          {
+            "exact": "55",
+            "decimal": 55.0
+          }
         ],
         "days_witness": [
           1,
@@ -322,7 +348,7 @@
         },
         "B_distractor_error": "Forgetting the subtraction of the second complete couple."
       },
-      "input_sha256": "d8a6aef32ae0e39a9ece37f4387bd03c7c5e3d8b79fa0acb6c39e819e60ae802",
+      "input_sha256": "d67c298b581de1de59c7d865ced745992b54730e1762c877095c9667c0fe4d21",
       "editorial_answer": "D",
       "agrees": true
     },

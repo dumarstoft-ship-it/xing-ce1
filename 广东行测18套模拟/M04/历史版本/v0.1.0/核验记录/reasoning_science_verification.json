@@ -1,0 +1,712 @@
+{
+  "scope": "M04 Q46–70: 5 graphic, 15 logical, 5 scientific reasoning questions",
+  "status": "editor_checks_passed_text_cross_review_passed_graphics_pending_parent_review",
+  "method": "Editor read and solved before comparing available source keys. This is not an isolated blind review or Claude review.",
+  "module_sha256": "229022e36b8de9eb17c542fe0c1ff2ea6fb0ab85bcdf9ef83f9af404185fcb2b",
+  "diagram_data_sha256": "dc456c84c6c5946a53ece9f255a7c34406cf9253f69b625df7fe24a9846747f4",
+  "source_banks": [
+    {
+      "path": "模考/2026下半年广东卷_16-33季_AI可读/全部题目.jsonl",
+      "sha256": "12fb48ab01e38b88ff19d85e59e463730f290407350207e00afe318f597fa3b9"
+    },
+    {
+      "path": "江浙行测_AI题库/questions.jsonl",
+      "sha256": "07b748dd27d44132d7734279306f724981a89de028d19d229c989f00fd9b7c93"
+    }
+  ],
+  "checks": [
+    {
+      "name": "question_numbers",
+      "pass": true,
+      "actual": [
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70
+      ],
+      "expected": [
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70
+      ]
+    },
+    {
+      "name": "source_ids_unique",
+      "pass": true,
+      "actual": 25,
+      "expected": 25
+    },
+    {
+      "name": "original_source_objects_unchanged",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "provided_source_answer_count",
+      "pass": true,
+      "actual": 10,
+      "expected": 10
+    },
+    {
+      "name": "provided_source_answers_agree",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "mock_answers_marked_editorial",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "prior_paper_and_retired_id_overlap",
+      "pass": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "name": "old_graphic_booklet_id_overlap",
+      "pass": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "name": "q46_unique_cyclic_shift_mod_9",
+      "pass": true,
+      "actual": [
+        [
+          8,
+          8
+        ]
+      ],
+      "expected": [
+        [
+          8,
+          8
+        ]
+      ]
+    },
+    {
+      "name": "q46_matching_option",
+      "pass": true,
+      "actual": [
+        "B"
+      ],
+      "expected": [
+        "B"
+      ]
+    },
+    {
+      "name": "q46_all_grids_have_14_black_cells",
+      "pass": true,
+      "actual": [
+        14,
+        14,
+        14,
+        14,
+        14,
+        14,
+        14,
+        14,
+        14
+      ],
+      "expected": [
+        14,
+        14,
+        14,
+        14,
+        14,
+        14,
+        14,
+        14,
+        14
+      ]
+    },
+    {
+      "name": "q47_all_five_frames_match_growth_rule",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "q47_matching_option",
+      "pass": true,
+      "actual": [
+        "B"
+      ],
+      "expected": [
+        "B"
+      ]
+    },
+    {
+      "name": "q48_matching_equality_pattern",
+      "pass": true,
+      "actual": [
+        "C"
+      ],
+      "expected": [
+        "C"
+      ]
+    },
+    {
+      "name": "cube_proper_rotation_count",
+      "pass": true,
+      "actual": 24,
+      "expected": 24
+    },
+    {
+      "name": "q49_cube_net_matches",
+      "pass": true,
+      "actual": {
+        "left": [
+          2
+        ],
+        "right": [
+          4
+        ]
+      },
+      "expected": {
+        "left": [
+          2
+        ],
+        "right": [
+          4
+        ]
+      }
+    },
+    {
+      "name": "q49_answer",
+      "pass": true,
+      "actual": "A",
+      "expected": "A"
+    },
+    {
+      "name": "q50_rotational_equivalence",
+      "pass": true,
+      "actual": {
+        "A": true,
+        "B": true,
+        "C": false,
+        "D": true
+      },
+      "expected": {
+        "A": true,
+        "B": true,
+        "C": false,
+        "D": true
+      }
+    },
+    {
+      "name": "q50_answer",
+      "pass": true,
+      "actual": [
+        "C"
+      ],
+      "expected": [
+        "C"
+      ]
+    },
+    {
+      "name": "q50_four_cube_square_branch_invariant",
+      "pass": true,
+      "actual": {
+        "S": [
+          2,
+          2
+        ],
+        "A": [
+          2,
+          2
+        ],
+        "B": [
+          2,
+          2
+        ],
+        "C": [
+          1,
+          3
+        ],
+        "D": [
+          2,
+          2
+        ]
+      },
+      "expected": {
+        "S": [
+          2,
+          2
+        ],
+        "A": [
+          2,
+          2
+        ],
+        "B": [
+          2,
+          2
+        ],
+        "C": [
+          1,
+          3
+        ],
+        "D": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "name": "q56_unique_model",
+      "pass": true,
+      "actual": [
+        {
+          "males": [
+            2,
+            3
+          ],
+          "party": [
+            0,
+            1,
+            2
+          ],
+          "professor": 2,
+          "leader": 2
+        }
+      ],
+      "expected": [
+        {
+          "males": [
+            2,
+            3
+          ],
+          "party": [
+            0,
+            1,
+            2
+          ],
+          "professor": 2,
+          "leader": 2
+        }
+      ]
+    },
+    {
+      "name": "q56_answer",
+      "pass": true,
+      "actual": "C",
+      "expected": "C"
+    },
+    {
+      "name": "q60_unique_model",
+      "pass": true,
+      "actual": [
+        {
+          "heights_cm": [
+            165,
+            172,
+            170,
+            168
+          ],
+          "slim": [
+            0,
+            2
+          ]
+        }
+      ],
+      "expected": [
+        {
+          "heights_cm": [
+            165,
+            172,
+            170,
+            168
+          ],
+          "slim": [
+            0,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q60_answer",
+      "pass": true,
+      "actual": "D",
+      "expected": "D"
+    },
+    {
+      "name": "q63_unique_model_count",
+      "pass": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "q63_matching_option",
+      "pass": true,
+      "actual": [
+        "C"
+      ],
+      "expected": [
+        "C"
+      ]
+    },
+    {
+      "name": "q63_route_is_20_connected_cells",
+      "pass": true,
+      "actual": 20,
+      "expected": 20
+    },
+    {
+      "name": "q63_route_step_adjacency",
+      "pass": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "q67_only_false_option",
+      "pass": true,
+      "actual": [
+        "A"
+      ],
+      "expected": [
+        "A"
+      ]
+    },
+    {
+      "name": "q69_genotype_frequencies",
+      "pass": true,
+      "actual": {
+        "AA": 1,
+        "Aa": 2,
+        "aa": 1
+      },
+      "expected": {
+        "AA": 1,
+        "Aa": 2,
+        "aa": 1
+      }
+    },
+    {
+      "name": "q69_long_wing_probability",
+      "pass": true,
+      "actual": 0.75,
+      "expected": 0.75
+    },
+    {
+      "name": "q69_answer",
+      "pass": true,
+      "actual": "C",
+      "expected": "C"
+    },
+    {
+      "name": "exact_redraw_asset_count",
+      "pass": true,
+      "actual": 14,
+      "expected": 14
+    }
+  ],
+  "independent_text_review": {
+    "path": "核验记录/reasoning_science_independent_review.json",
+    "scope": "Q51–70; reviewer saved answers before seeing editorial keys; all 20 agreed.",
+    "followups_closed": "Q60 global rule separated from Ding dialogue; Q64 speakers separated; Q67 lamp labels moved above wires.",
+    "not_claimed": "This is internal GPT cross-review, not external Claude review."
+  },
+  "q48_manual_symbol_patterns": {
+    "stem": [
+      0,
+      1,
+      1,
+      2,
+      3,
+      0,
+      2,
+      4
+    ],
+    "options": {
+      "A": [
+        0,
+        1,
+        1,
+        2,
+        3,
+        0,
+        2,
+        3
+      ],
+      "B": [
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        2,
+        3
+      ],
+      "C": [
+        0,
+        1,
+        1,
+        2,
+        3,
+        0,
+        2,
+        4
+      ],
+      "D": [
+        0,
+        0,
+        0,
+        1,
+        2,
+        0,
+        1,
+        2
+      ]
+    }
+  },
+  "q49_result": {
+    "left": [
+      2
+    ],
+    "right": [
+      4
+    ]
+  },
+  "q50_rotation_result": {
+    "A": true,
+    "B": true,
+    "C": false,
+    "D": true
+  },
+  "q56_solutions": [
+    {
+      "males": [
+        2,
+        3
+      ],
+      "party": [
+        0,
+        1,
+        2
+      ],
+      "professor": 2,
+      "leader": 2
+    }
+  ],
+  "q60_solutions": [
+    {
+      "heights_cm": [
+        165,
+        172,
+        170,
+        168
+      ],
+      "slim": [
+        0,
+        2
+      ]
+    }
+  ],
+  "q63_unique_sequence": [
+    "红",
+    "黄",
+    "绿",
+    "蓝",
+    "橙",
+    "黄",
+    "绿",
+    "蓝",
+    "橙",
+    "红",
+    "绿",
+    "黄",
+    "橙",
+    "蓝",
+    "绿",
+    "黄",
+    "红",
+    "橙",
+    "蓝",
+    "绿"
+  ],
+  "q67_example_meter_values": {
+    "V1": 6.0,
+    "V2": 6.0,
+    "V3": 12.0,
+    "A1": 0.5,
+    "A2": 0.5,
+    "A3": 1.0
+  },
+  "q66_manual_derivation": {
+    "static_phase": "B has zero horizontal friction; ground static friction on A balances F.",
+    "moving_phase": "A and B remain relatively at rest; f_B=m_B*a, a=(F-f_ground)/(m_A+m_B).",
+    "derivative": "df_B/dF=m_B/(m_A+m_B)>0 with positive masses and constant sliding ground friction.",
+    "explicit_edit": "F continues increasing throughout the moving phase; ideal Coulomb sliding model."
+  },
+  "visual_review": {
+    "date": "2026-11-15",
+    "source_images_actually_viewed": [
+      46,
+      47,
+      48,
+      49,
+      50,
+      66,
+      67
+    ],
+    "source_table_actually_read": [
+      63
+    ],
+    "redrawn_pngs_actually_viewed": [
+      46,
+      47,
+      49,
+      50,
+      63,
+      66,
+      67
+    ],
+    "q67_font_issue_fixed": "Replaced unsupported Unicode subscript glyphs with separately drawn small digits; final PNG reviewed.",
+    "pdf_layout_review": "Out of scope for this module; the full-paper builder must inspect final rendered pages."
+  },
+  "original_image_hashes": [
+    {
+      "path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s21_p11_i00.png",
+      "sha256": "d310858a6815fabf5432c833c709603911f8a7d0f409eb5687e085236cbe2aaf"
+    },
+    {
+      "path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s25_p11_i00.png",
+      "sha256": "5a86c2d0b7dbc85b9d331e2a849143884359f6d9555a06058615132f755666d3"
+    },
+    {
+      "path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s23_p12_i02.png",
+      "sha256": "109c31b0b3abefa256c4977470e8db6e14e96eba4108f0a260996d6f223f176d"
+    },
+    {
+      "path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s22_p13_i01.png",
+      "sha256": "bc2e7ac56e77edf8fbcd5dab491542e4bf66921de82463d5ba319a04da77035e"
+    },
+    {
+      "path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s26_p13_i00.png",
+      "sha256": "f2c334f5f2e4ea0d815f465322dfc17df21219947dbdee4ce99b8bf027ccc906"
+    },
+    {
+      "path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s33_p18_i00.png",
+      "sha256": "9d222bce2445632391b0f22b56c70a62ce4426d15f4b57cbdc95bac7462fd4c6"
+    },
+    {
+      "path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s17_p18_i00.png",
+      "sha256": "df454a8aa58e57f259aa8650a083943a389303da8eaf6e67fec75be4318c3a79"
+    }
+  ],
+  "redraw_assets": [
+    {
+      "path": "广东行测18套模拟/M04/assets/q46_pixel_shift.png",
+      "sha256": "9713a1637f923caa04bafc010519136b517a711388e631c9357c24dc73fbf5c2"
+    },
+    {
+      "path": "广东行测18套模拟/M04/assets/q47_growing_path.png",
+      "sha256": "b7519ba9b33b120592e2721cf90fa90160dc00668733182f96bdfdd10393cb45"
+    },
+    {
+      "path": "广东行测18套模拟/M04/assets/q49_cube_nets.png",
+      "sha256": "cd96428ef89fb6e72e1b4a8b5838efe4bcbb42d79d69dce9a31d0798caa69177"
+    },
+    {
+      "path": "广东行测18套模拟/M04/assets/q50_solids.png",
+      "sha256": "9e238779879d5b1d0948ac0477c985073d8b7342cd46bc28f3e2a38f9a4efbcb"
+    },
+    {
+      "path": "广东行测18套模拟/M04/assets/q63_snake.png",
+      "sha256": "8eed68559cd15b1d27161613e28859b22b527c7e6b59e1f608622cbe49c8689f"
+    },
+    {
+      "path": "广东行测18套模拟/M04/assets/q66_blocks.png",
+      "sha256": "dc5fda8be93218cc38f7692c0328fc931a834ef07ef8b36037a616a68bd21702"
+    },
+    {
+      "path": "广东行测18套模拟/M04/assets/q67_circuit.png",
+      "sha256": "19c8728545627437bca5b7d636d3b7e27f1eb4fc910019819c86ab94d2a01084"
+    },
+    {
+      "path": "广东行测18套模拟/M04/assets/q46_pixel_shift.svg",
+      "sha256": "6f98ed8fe63a0e58e897d3a842ee35496069ed4c1c277c72c9e517d0504dc76f"
+    },
+    {
+      "path": "广东行测18套模拟/M04/assets/q47_growing_path.svg",
+      "sha256": "6973942711f3e5f887ae1cd1fdba0372fd263c5b99a19aab6dc8040610d17030"
+    },
+    {
+      "path": "广东行测18套模拟/M04/assets/q49_cube_nets.svg",
+      "sha256": "ccc7e35d77a30cc4adc16feffdc2abdf126d8377087104c980826a2754238375"
+    },
+    {
+      "path": "广东行测18套模拟/M04/assets/q50_solids.svg",
+      "sha256": "fb17a34c0e2a5b8f93731dfa429fc35e31950c489a32c394ba052a0e58e5f7ba"
+    },
+    {
+      "path": "广东行测18套模拟/M04/assets/q63_snake.svg",
+      "sha256": "9d69f5e3b9c615f84b4e17ac8832b69b8f839dce3a69e579788ffe2040c30d8e"
+    },
+    {
+      "path": "广东行测18套模拟/M04/assets/q66_blocks.svg",
+      "sha256": "cc2d39a7b3461436f854597c0c545b2309e8fc17d79a6dd3e7efb50ba9ea6a3b"
+    },
+    {
+      "path": "广东行测18套模拟/M04/assets/q67_circuit.svg",
+      "sha256": "42a526a8e519e59440f2767eadc27099977e0570905d2cc7a3ac5eecd33486d3"
+    }
+  ],
+  "limitations": [
+    "The original PDFs were not downloaded and compared word-for-word in this session.",
+    "Graphic grids/nets/solids were interpreted from source images; code proves consequences of that interpretation, not unseen original image content.",
+    "Ten Jiangzhe items have repository reference keys; fifteen mock items have editorial keys only. No claim of official answer provenance.",
+    "Old-booklet source-ID screening does not establish full visual deduplication or user completion status.",
+    "The initial q57 answer D belongs to rejected wheat-history source JS2022-A类-100; final q57 is a different question and answer A.",
+    "Textual argument questions require human reading; deterministic constraint checks do not certify their semantics."
+  ]
+}
