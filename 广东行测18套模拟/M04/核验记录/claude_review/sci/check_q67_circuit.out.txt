@@ -1,0 +1,21 @@
+--- ideal meters (U=6V, bulb R=10 ohm)
+  A1=0.3000 A2=0.3000 A3=0.6000 (A)
+  V1=3.0000 V2=3.0000 V3=6.0000 (V)
+  A: V3 smallest?  False
+  B: A3 largest?   True
+  C: A1==A2?       True
+  D: V1==V2?       True
+--- non-ideal, equal ammeter r=0.5 (U=6V, bulb R=10 ohm)
+  A1=0.2863 A2=0.2857 A3=0.5714 (A)
+  V1=3.0001 V2=2.9999 V3=5.8569 (V)
+  A: V3 smallest?  False
+  B: A3 largest?   True
+  C: A1==A2?       False
+  D: V1==V2?       False
+--- non-ideal, unequal ammeter r (U=6V, bulb R=10 ohm)
+  A1=0.2836 A2=0.2830 A3=0.5714 (A)
+  V1=3.1134 V2=2.8866 V3=5.7164 (V)
+  A: V3 smallest?  False
+  B: A3 largest?   True
+  C: A1==A2?       False
+  D: V1==V2?       False

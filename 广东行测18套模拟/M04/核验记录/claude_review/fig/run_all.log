@@ -1,0 +1,181 @@
+crops ok
+P1: visual==redrawn True; visual==original True
+P2: visual==redrawn True; visual==original True
+P3: visual==redrawn True; visual==original True
+P4: visual==redrawn True; visual==original True
+P5: visual==redrawn True; visual==original True
+A: visual==redrawn True; visual==original True
+B: visual==redrawn True; visual==original True
+C: visual==redrawn True; visual==original True
+D: visual==redrawn True; visual==original True
+shift(P1)==P2: True
+shift(P2)==P3: True
+shift(P3)==P4: True
+shift(P4)==P5: True
+option A: matches prediction=False; differing cells=[(np.int64(8), np.int64(1)), (np.int64(8), np.int64(2)), (np.int64(8), np.int64(8)), (np.int64(8), np.int64(9))]
+option B: matches prediction=True; differing cells=[]
+option C: matches prediction=False; differing cells=[(np.int64(2), np.int64(8)), (np.int64(2), np.int64(9)), (np.int64(8), np.int64(7)), (np.int64(8), np.int64(8))]
+option D: matches prediction=False; differing cells=[(np.int64(5), np.int64(8)), (np.int64(5), np.int64(9)), (np.int64(6), np.int64(8)), (np.int64(6), np.int64(9)), (np.int64(7), np.int64(7)), (np.int64(7), np.int64(8))]
+consistent torus shift (dr,dc)= -1 -1
+P1 visual==redrawn True visual==original True
+P2 visual==redrawn True visual==original True
+P3 visual==redrawn True visual==original True
+P4 visual==redrawn True visual==original True
+P5 visual==redrawn True visual==original True
+A visual==redrawn True visual==original True
+B visual==redrawn True visual==original True
+C visual==redrawn True visual==original True
+D visual==redrawn True visual==original True
+P1 == route[0..4] True
+P2 == route[1..6] True
+P3 == route[2..8] True
+P4 == route[3..10] True
+P5 == route[4..12] True
+option A cells 10 route idx [6, 7, 8, 9, 10, 11, 12, 13, 14, 15] == pred False
+option B cells 10 route idx [5, 6, 7, 8, 9, 10, 11, 12, 13, 14] == pred True
+option C cells 10 route idx [4, 5, 6, 7, 8, 9, 10, 11, 12, 13] == pred False
+option D cells 8 route idx [5, 6, 7, 8, 9, 10, 11, 12] == pred False
+symbol  hand  best-match(as drawn)  corr  | corr with same symbol rotated 180
+stem1   U    A5      0.986
+stem2   D    stem3   0.992
+stem3   D    stem2   0.992
+stem4   R    C7      0.991
+stem5   LL   C2      0.995
+stem6   U    A8      0.973
+stem7   R    C4      0.978
+stem8   UL   A4      0.990
+A1      LL   stem5   0.994
+A2      L    A3      0.998
+A3      L    A2      0.998
+A4      UL   stem8   0.990
+A5      U    A8      0.987
+A6      LL   D3      0.985
+A7      UL   stem8   0.968
+A8      U    A5      0.987
+B1      R    stem4   0.975
+B2      U    B3      0.993
+B3      U    B2      0.993
+B4      LL   A1      0.993
+B5      UR   D1      0.955
+B6      R    D8      0.981
+B7      LL   D2      0.966
+B8      LR   D4      0.948
+C1      U    B2      0.961
+C2      LL   stem5   0.995
+C3      UR   D1      0.945
+C4      R    stem7   0.978
+C5      LR   D7      0.988
+C6      U    A5      0.982
+C7      R    stem4   0.991
+C8      D    stem2   0.987
+D1      UR   B5      0.955
+D2      LL   B7      0.966
+D3      LL   A6      0.985
+D4      LR   B8      0.948
+D5      L    A3      0.954
+D6      LL   C2      0.987
+D7      LR   C5      0.988
+D8      R    B6      0.981
+C2 vs C3: as drawn 0.693; after rotating C3 by 180 deg 0.984
+B4 vs B5: as drawn 0.742; after rotating B5 by 180 deg 0.955
+B5 vs B7: as drawn 0.708; after rotating B7 by 180 deg 0.910
+D1 vs D2: as drawn 0.721; after rotating D2 by 180 deg 0.967
+stem1 vs stem2: as drawn 0.754; after rotating stem2 by 180 deg 0.972
+stem5 vs B4: as drawn 0.985; after rotating B4 by 180 deg 0.728
+stem5 vs C2: as drawn 0.995; after rotating C2 by 180 deg 0.701
+B5 vs C3: as drawn 0.931; after rotating C3 by 180 deg 0.746
+C3 vs D1: as drawn 0.945; after rotating D1 by 180 deg 0.707
+number of distinct drawings (fine classes): 8 representatives: ['stem1', 'stem2', 'stem4', 'stem5', 'stem8', 'A2', 'B5', 'B8']
+180-degree twin classes: {'stem1': 'stem2', 'stem4': 'A2', 'stem5': 'B5', 'stem8': 'B8'}
+hand reading consistent with pixel classes: True {0: 'U', 1: 'D', 2: 'R', 3: 'LL', 4: 'UL', 5: 'L', 6: 'UR', 7: 'LR'}
+fine   stem=abbcdace  A=abbcdacd(pairs agreeing 27/28)  B=abbcdace*(pairs agreeing 28/28)  C=abcdeadf(pairs agreeing 27/28)  D=abbcdbce(pairs agreeing 25/28)
+coarse stem=aaabcabd  A=abbcdacd(pairs agreeing 23/28)  B=abbccacd(pairs agreeing 22/28)  C=abbcdaca(pairs agreeing 22/28)  D=aaabcabc(pairs agreeing 27/28)
+mixed  stem=abbcdace  A=abbcdacd(pairs agreeing 27/28)  B=abbccacd(pairs agreeing 26/28)  C=abbcdace*(pairs agreeing 28/28)  D=aaabcabd(pairs agreeing 24/28)
+A: equals stem rotated by 225 deg at positions [1, 4, 6, 7]
+A: positions where option keeps the stem symbol unchanged: []
+B: equals stem rotated by 180 deg at positions [2, 3, 5, 8]
+B: positions where option keeps the stem symbol unchanged: []
+C: equals stem rotated by   0 deg at positions [1, 4, 6, 7]
+C: positions where option keeps the stem symbol unchanged: [1, 4, 6, 7]
+D: equals stem rotated by  45 deg at positions [1, 2, 3, 4, 5, 7]
+D: positions where option keeps the stem symbol unchanged: []
+C2,C3 = LL UR -> angle difference 180 deg (a 180-degree twin pair, like stem1/stem2 U/D)
+GD2023县级卷第50题(箭头) fine  : stem abcdeadb; exact matches ['A']
+GD2023县级卷第50题(箭头) coarse: stem abacdacb; exact matches ['B']
+GD2023乡镇卷第55题(三角) fine  : stem abbacdbd; exact matches ['A']
+GD2023乡镇卷第55题(三角) coarse: stem abbaabbb; exact matches ['C']
+net 1: folded (root=Front): blk@Front(np.int64(1), np.int64(-1), np.int64(1)), tri@Top(np.int64(0), np.int64(1), np.int64(-1)), out@Right(np.int64(1), np.int64(-1), np.int64(1))
+   left cube: proper-rotation fits=0  mirror-image fits=0
+   right cube: proper-rotation fits=0  mirror-image fits=1
+net 2: folded (root=Front): tri@Front(np.int64(0), np.int64(1), np.int64(1)), blk@Left(np.int64(-1), np.int64(-1), np.int64(-1)), out@Top(np.int64(-1), np.int64(1), np.int64(-1))
+   left cube: proper-rotation fits=1  mirror-image fits=0
+   right cube: proper-rotation fits=0  mirror-image fits=0
+net 3: folded (root=Front): out@Front(np.int64(-1), np.int64(1), np.int64(1)), blk@Bottom(np.int64(-1), np.int64(-1), np.int64(-1)), tri@Top(np.int64(0), np.int64(1), np.int64(1))
+   left cube: proper-rotation fits=0  mirror-image fits=0
+   right cube: proper-rotation fits=0  mirror-image fits=0
+net 4: folded (root=Front): tri@Bottom(np.int64(0), np.int64(-1), np.int64(1)), blk@Back(np.int64(-1), np.int64(1), np.int64(-1)), out@Left(np.int64(-1), np.int64(1), np.int64(-1))
+   left cube: proper-rotation fits=0  mirror-image fits=0
+   right cube: proper-rotation fits=1  mirror-image fits=0
+
+-- where every net face lands under the fitting rotation --
+net 2 -> left cube
+   cell (1, 2) pattern ('tri', 0, -1) -> Right
+   cell (2, 2) pattern None -> Bottom
+   cell (2, 3) pattern None -> Back
+   cell (2, 1) pattern ('blk', 1, 1) -> Front
+   cell (3, 3) pattern None -> Left
+   cell (3, 4) pattern ('out', -1, 1) -> Top
+net 4 -> right cube
+   cell (1, 1) pattern None -> Bottom
+   cell (1, 2) pattern None -> Left
+   cell (2, 2) pattern ('tri', -1, 0) -> Front
+   cell (2, 3) pattern ('blk', 1, 1) -> Top
+   cell (3, 3) pattern ('out', 1, -1) -> Right
+   cell (3, 4) pattern None -> Back
+net 1 -> right cube (ONLY as mirror image)
+   cell (1, 3) pattern ('blk', 1, 1) -> Top
+   cell (2, 3) pattern None -> Back
+   cell (2, 4) pattern ('out', -1, -1) -> Right
+   cell (2, 2) pattern None -> Left
+   cell (2, 1) pattern ('tri', 0, 1) -> Front
+   cell (3, 4) pattern None -> Bottom
+net1 oriented: tri on 正面 base-mid (np.int64(0), np.int64(-1), np.int64(1)) | black on 顶面 corner (np.int64(-1), np.int64(1), np.int64(-1)) | outline on 左面 corner (np.int64(-1), np.int64(1), np.int64(-1))
+right cube in the solid: black on 顶面 corner (1,1,-1) [右后], outline on 右面 corner (1,1,-1) [上后]
+net① Λ: apex reaches 0.68 of the face in the original, 0.52 in the redraw
+net② V: apex reaches 0.65 of the face in the original, 0.50 in the redraw
+net③ V: apex reaches 0.65 of the face in the original, 0.52 in the redraw
+net④ >: apex reaches 0.65 of the face in the original, 0.51 in the redraw
+立体右块正面Λ: apex reaches 0.64 of the face in the original, 0.51 in the redraw
+stem without (0,0,1) connected? False | with it: True
+stem: 8 cubes; invisible cells (any): [(-1, 0, 2), (2, 3, -1), (3, 1, -1)]; of these attachable to the solid: [] (jointly invisible: True)
+A: 8 cubes; invisible cells (any): [(-1, 1, 2), (0, 1, 2), (3, 3, -1)]; of these attachable to the solid: [(-1, 1, 2), (0, 1, 2)] (jointly invisible: True)
+B: 8 cubes; invisible cells (any): [(1, 0, 2), (1, 1, 2)]; of these attachable to the solid: [(1, 0, 2), (1, 1, 2)] (jointly invisible: True)
+C: 8 cubes; invisible cells (any): [(-1, 0, 2), (-1, 1, 2), (0, 1, 2), (1, 0, 2), (1, 1, 2)]; of these attachable to the solid: [] (jointly invisible: True)
+D: 8 cubes; invisible cells (any): [(1, 2, -1), (3, 3, -1)]; of these attachable to the solid: [] (jointly invisible: True)
+option A: congruent to stem by proper rotation: True; only as mirror image: False
+option B: congruent to stem by proper rotation: True; only as mirror image: False
+option C: congruent to stem by proper rotation: False; only as mirror image: False
+option D: congruent to stem by proper rotation: True; only as mirror image: False
+stem degree sequence [1, 1, 2, 2, 2, 2, 3, 3]
+A degree sequence [1, 1, 2, 2, 2, 2, 3, 3]
+B degree sequence [1, 1, 2, 2, 2, 2, 3, 3]
+C degree sequence [1, 1, 2, 2, 2, 2, 3, 3]
+D degree sequence [1, 1, 2, 2, 2, 2, 3, 3]
+stem picture identical with/without hidden (0,0,1): True
+Q46 s21_p11_i00: 600x279px; printed 333.6x155.1pt = 117.7x54.7mm => 130 dpi (1px=0.20mm); mid-grey 7.2% of px, isolated from ink: 0 px; ink components 17, specks<=2px: 0
+Q47 s25_p11_i00: 600x277px; printed 333.6x153.8pt = 117.7x54.3mm => 130 dpi (1px=0.20mm); mid-grey 5.3% of px, isolated from ink: 0 px; ink components 17, specks<=2px: 0
+Q48 s23_p12_i02: 400x295px; printed 222.4x163.7pt = 78.5x57.8mm => 130 dpi (1px=0.20mm); mid-grey 4.7% of px, isolated from ink: 0 px; ink components 108, specks<=2px: 0
+Q49 s22_p13_i01: 600x126px; printed 333.6x69.8pt = 117.7x24.6mm => 130 dpi (1px=0.20mm); mid-grey 2.5% of px, isolated from ink: 34 px; ink components 32, specks<=2px: 11
+Q50 s26_p13_i00: 500x300px; printed 278.0x166.8pt = 98.1x58.8mm => 130 dpi (1px=0.20mm); mid-grey 2.9% of px, isolated from ink: 0 px; ink components 10, specks<=2px: 0
+题 | 审阅PDF实印 | 现规则·现数据 | 现规则·改用原图 | 原卷印尺寸 | 关键要素：PDF实印 vs 原卷
+46 | 120.0×51.0 | 120.0×51.0（200dpi换算，缩至26%） | 117.7×54.7（源PDF印刷尺寸） | 117.7×54.7 | 9×9网格单格边长 1.60mm vs 1.88mm (86%)
+47 | 120.0×51.0 | 120.0×51.0（200dpi换算，缩至26%） | 117.7×54.3（源PDF印刷尺寸） | 117.7×54.3 | 5×5网格单格边长 2.81mm vs 3.06mm (92%)
+48 | 50.8×37.5 | 78.5×57.8（源PDF印刷尺寸） | 78.5×57.8（源PDF印刷尺寸） | 78.5×57.8 | 单个圆饼宽 4.70mm vs 7.26mm (65%)
+49 | 120.0×30.0 | 120.0×30.0（200dpi换算，缩至25%） | 117.7×24.6（源PDF印刷尺寸） | 117.7×24.6 | 展开图单面边长 4.16mm vs 4.96mm (84%)
+50 | 120.0×72.0 | 120.0×72.0（200dpi换算，缩至26%） | 98.1×58.8（源PDF印刷尺寸） | 98.1×58.8 | 选项小正方体边长（原图题干与选项同为约24px；重绘题干放大到195px） 5.17mm vs 4.79mm (108%)
+Q46 grid lines: original px [1, 2, 1, 2, 11, 11, 2, 1] -> mm [0.2, 0.39, 0.2, 0.39, 2.16, 2.16, 0.39, 0.2] | redrawn px [2, 2, 2, 2, 50, 50, 2, 2] -> mm [0.067, 0.067, 0.067, 0.067, 1.667, 1.667, 0.067, 0.067]
+Q47 grid lines: original px [3, 3, 3, 2] -> mm [0.59, 0.59, 0.59, 0.39] | redrawn px [2, 2, 2, 2] -> mm [0.067, 0.067, 0.067, 0.067]
+Q49 net lines: original px [2, 2, 2, 2, 2] -> mm [0.39, 0.39, 0.39, 0.39, 0.39] | redrawn px [5, 5, 5, 5, 5] -> mm [0.161, 0.161, 0.161, 0.161, 0.161]
+Q50 stem lines: original px [4, 3, 4, 3, 3] -> mm [0.78, 0.59, 0.78, 0.59, 0.59] | redrawn px [7, 7] -> mm [0.233, 0.233]
+Q50 grey fill: original dominant 205 | redrawn dominant 221
+ok

@@ -1,0 +1,30 @@
+{
+  "_meta": {
+    "paper": "M04 0.1.0 待审稿",
+    "module": "判断推理·逻辑判断 第51—65题",
+    "reviewer": "Claude 外审（逻辑判断模块）",
+    "date": "2026-11-15",
+    "blind": "15题均为盲解，盲解答案先写入 blind_answers.json 后才打开 selection.json 等答案材料",
+    "repo_readonly": true
+  },
+  "items": [
+    {"n": 51, "blind": "A", "conf": 0.95, "editor": "A", "agree": true, "source": "有且一致", "verdict": "无问题", "note": "否前推否后；B、D为逆否，C为链式直推；真值表验证。"},
+    {"n": 52, "blind": "C", "conf": 0.9, "editor": "C", "agree": true, "source": "有且一致", "verdict": "无问题", "note": "“全球”范围要求相对贡献，C唯一；设问半角“?”可顺手改全角。"},
+    {"n": 53, "blind": "D", "conf": 0.75, "editor": "D", "agree": true, "source": "有且一致", "verdict": "无问题", "note": "解析未把实验组单组数据说成排除一切机制，且明言不补造对照组数据；题库原解析“也能证明论点成立”过强，编辑解析已纠偏。"},
+    {"n": 54, "blind": "B", "conf": 0.85, "editor": "B", "agree": true, "source": "无", "verdict": "无问题", "note": "剂量与时长混杂；可选补一句啤酒节每天约七升远超五份标准饮酒量。"},
+    {"n": 55, "blind": "C", "conf": 0.85, "editor": "C", "agree": true, "source": "无", "verdict": "无问题", "note": "必要条件的范围内反例；B经自然修复可能已恢复完整，不稳定。可选：“经过……表明”主语残缺。"},
+    {"n": 56, "blind": "C", "conf": 0.99, "editor": "C", "agree": true, "source": "有且一致", "verdict": "无问题", "note": "穷举唯一；依赖“组长在4人中”，题干已蕴含，解析已显式使用。"},
+    {"n": 57, "blind": "A", "conf": 0.95, "editor": "A", "agree": true, "source": "无", "verdict": "有益建议", "note": "明示分母的改写必要（源口径若读作餐饮投诉占全部投诉，答案会变C）；建议分子补“餐饮”。"},
+    {"n": 58, "blind": "B", "conf": 0.8, "editor": "B", "agree": true, "source": "有且一致", "verdict": "无问题", "note": "标点修复忠实，内容零改动。"},
+    {"n": 59, "blind": "C", "conf": 0.9, "editor": "C", "agree": true, "source": "无", "verdict": "有益建议", "note": "设问与材料接排，建议单独成行（与本模块其余14题及广东2026第55题一致）。"},
+    {"n": 60, "blind": "D", "conf": 0.99, "editor": "D", "agree": true, "source": "有且一致", "verdict": "无问题", "note": "标准合取语义唯一解；“假话每句都假”读法无解；解析已提示。"},
+    {"n": 61, "blind": "D", "conf": 0.85, "editor": "D", "agree": true, "source": "有且一致", "verdict": "必须修改", "note": "选项A—D内两名说话人的换行被 clean_jz 合并，与源题、题干及第64题不一致，edits记录“保留逐人陈述分段”与实际不符。"},
+    {"n": 62, "blind": "A", "conf": 0.75, "editor": "A", "agree": true, "source": "有且一致", "verdict": "有益建议", "note": "解析排除C时只列“安全性、开发智力、爱上写字”，漏掉C最贴近的“寓教于乐”，建议补一句。"},
+    {"n": 63, "blind": "C", "conf": 0.99, "editor": "C", "agree": true, "source": "无", "verdict": "可保留但应说明的边界", "note": "全涂色唯一；重绘图与源表格、文字条件逐格一致；但原扫描图未入库，答案文件“原图路径保留”的通用措辞对本题不准确。"},
+    {"n": 64, "blind": "B", "conf": 0.85, "editor": "B", "agree": true, "source": "有且一致", "verdict": "无问题", "note": "诉诸无知；解析已说明不要求模态强度逐字相同。"},
+    {"n": 65, "blind": "A", "conf": 0.95, "editor": "A", "agree": true, "source": "有且一致", "verdict": "无问题", "note": "属种并列；B为交叉并列。模块层面可作为替换候选（见报告第4节）。"}
+  ],
+  "must_fix": [
+    {"n": 61, "problem": "选项内对话换行丢失", "evidence": ["compare_stems_out.txt: 第61题 选项内换行数不一致 A/B/C/D (1,0)", "pdf_q61-22.png: 打印版第20页四个选项均为两人发言接排", "编辑底稿/build_reasoning_science.py clean_jz 只在 以下|根据|由此|甲：|乙：|丙：|丁：|（n） 前保留换行，学生：/员工乙：/父亲：/顾客： 均被合并；第64题题干已用特例修复，第61题选项未处理"], "minimal_fix": "仿第64题特例：在 学生：/员工乙：/父亲：/顾客： 前恢复 \\n（即还原源题选项），补一条 layout_only 记录“恢复各选项中两名说话者的分行”，重建 题目.jsonl / 题本 / PDF。"}
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "q10_example_total_change": 0.08,
+  "q10_counterexample_exists": true,
+  "q13_true_order": [
+    3,
+    4,
+    1,
+    2
+  ],
+  "q13_matching_options": [
+    "D"
+  ],
+  "q13_true_order_if_4th_crossing_date": [
+    3,
+    4,
+    1,
+    2
+  ],
+  "q15_matching_options": [
+    "C"
+  ],
+  "q12_matching_options": [
+    "A"
+  ],
+  "q12_survivors_using_only_name_cues": [
+    "A"
+  ],
+  "q12_fix_survivors_using_only_name_cues": [
+    "A",
+    "B"
+  ],
+  "q12_fix_matching_options": [
+    "A"
+  ]
+}
