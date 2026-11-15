@@ -1,0 +1,84 @@
+name: Complete and verify M02
+on:
+  push:
+    branches: ['gpt/m02-20261115']
+    paths:
+      - '.github/workflows/m02-complete.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: m02-complete
+  cancel-in-progress: false
+jobs:
+  complete:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /.github/
+            /README.md
+            /广东行测18套模拟/
+            /江浙行测_AI题库/questions.jsonl
+            /江浙行测_AI题库/answers.jsonl
+            /江浙行测_AI题库/images/
+            /模考/2026下半年广东卷_16-33季_AI可读/
+            /国考/言语理解/2016-2025/all.jsonl
+            /学习资料/政治理论常识/
+            !*.pdf
+            !*.zip
+      - name: Install image-check dependencies
+        run: |
+          python -m venv /tmp/m02-check-env
+          /tmp/m02-check-env/bin/python -m pip install numpy pillow scipy
+          echo '/tmp/m02-check-env/bin' >> "$GITHUB_PATH"
+      - name: Assemble full paper without changing source banks
+        run: |
+          python '广东行测18套模拟/M02/assemble_m02.py'
+          python '广东行测18套模拟/M02/build_m02.py'
+          python '广东行测18套模拟/M02/核验记录/check_numeric.py'
+          python '广东行测18套模拟/M02/核验记录/check_diagrams.py'
+          python '广东行测18套模拟/M02/核验记录/verify_delivery.py'
+      - name: Update collaboration entry points
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('广东行测18套模拟/README.md')
+          s=p.read_text()
+          s=s.replace('| M02—M18 | 尚未开始选编 | 首卷反馈后逐套推进 |','| M02 | [90题选编待审稿](M02/README.md)，题本、解析、来源与交付核验齐全 | [Claude独立审核](M02/交接_Claude.md) |\n| M03—M18 | 尚未开始选编 | 根据前两套反馈继续 |')
+          lines=s.splitlines()
+          for i,line in enumerate(lines):
+              if line.startswith('| M01 |'):
+                  lines[i]='| M01 | [0.3.0审核意见处理稿](M01/README.md)，内容未被M02修改 | 改动项待增量复核；打印状态见M01入口 |'
+              if line.startswith('| 打印版 |'):
+                  lines[i]='| 打印版 | [通用排版工具](打印排版/README.md)保留；M01旧PDF已归档，M02尚未生成PDF | 审核意见处理后使用原字体排版；用户自行购买答题卡 |'
+          s='\n'.join(lines)+'\n'
+          note='M02现已完成90题编辑稿，待Claude独立审核；见[M02入口](M02/README.md)与[交付核验](M02/核验记录/交付核验.json)。\n\n'
+          if note not in s:s=s.replace('# 广东行测18套模拟｜协作入口',note+'# 广东行测18套模拟｜协作入口',1)
+          p.write_text(s)
+          root=Path('README.md');t=root.read_text()
+          entry='## M02第二套已编齐\n\n[90题题本、解析与状态](广东行测18套模拟/M02/README.md)｜[Claude审核交接](广东行测18套模拟/M02/交接_Claude.md)。当前为编辑核验后的待审稿，未完成外部审核和打印排版；M01原内容未改。\n\n'
+          if entry not in t:root.write_text(entry+t)
+          Path('广东行测18套模拟/M02/.gitignore').write_text('__pycache__/\n*.py[cod]\n')
+          PY
+      - name: Commit complete deliverables and retire temporary workflows
+        run: |
+          git diff --exit-code -- '广东行测18套模拟/M01' '江浙行测_AI题库' '模考' '国考' '学习资料'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git rm -- '.github/workflows/m02-inputs.yml' '.github/workflows/m02-complete.yml'
+          git add -- README.md '广东行测18套模拟/README.md' '广东行测18套模拟/用题登记.jsonl' '广东行测18套模拟/M02'
+          git diff --cached --stat
+          git commit -m 'M02 v0.1.0: 完成90题待审稿、完整解析与可复核交接，保护M01和原题库'
+          git push origin HEAD:gpt/m02-20261115
+      - uses: actions/upload-artifact@v4
+        with:
+          name: M02-complete-review-draft
+          path: 广东行测18套模拟/M02/
+          retention-days: 7
