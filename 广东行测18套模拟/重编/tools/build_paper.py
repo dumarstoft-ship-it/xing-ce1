@@ -438,6 +438,13 @@ def build(paper, dry=False):
                 desc, f, kind = describe_source(sid)
                 meta.update(source_type=kind, source_id=sid, source_desc=desc, source_file=f)
         rec["materials"] = rec["materials"] or []
+        # 转写带进来的不可见字符（零宽空格等）删去
+        zw = re.compile("[\u200b\u200c\u200d\ufeff]")
+        for blocks in [rec["stem"], *rec["options"].values(), *[m["blocks"] for m in rec["materials"]]]:
+            for b in blocks:
+                if b.get("type") == "text" and zw.search(b["text"]):
+                    b["text"] = zw.sub("", b["text"])
+                    log.add(n, "不可见字符", "删去转写留下的零宽字符")
         questions.append(rec)
         meta["edits"] = [x for x in log.items if x["number"] == n]
         meta["content_sha256"] = sha({k: rec[k] for k in ("stem", "options")})
