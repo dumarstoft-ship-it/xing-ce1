@@ -1,5 +1,37 @@
 [
  {
+  "id": "JS2020-A类-048",
+  "number": 32,
+  "answer": "A",
+  "category": "数字推理",
+  "subcategory": "递推",
+  "form": "",
+  "analysis": "题眼：数列增长越来越快，后项大约是前项的2倍（7≈3×2，16≈7×2，36≈16×2，80≈36×2），提示按“前项×2＋修正项”找递推规律。\n7＝3×2＋1，16＝7×2＋2，36＝16×2＋4，80＝36×2＋8，修正项1、2、4、8是公比为2的等比数列，下一个修正项为16，所求项＝80×2＋16＝176。\n故正确答案为A。",
+  "verification": "来源答案A；scripts/swaps_series_check.py 逐项核对修正项。",
+  "confidence": "high",
+  "issues": [],
+  "replace_recommended": false,
+  "difficulty": "中",
+  "prior_answer": null,
+  "prior_note": "旧卷未用过"
+ },
+ {
+  "id": "JS2020-A类-050",
+  "number": 35,
+  "answer": "B",
+  "category": "数字推理",
+  "subcategory": "分数数列",
+  "form": "",
+  "analysis": "题眼：分子32、128、128、512都是2的幂次，而整数4和分子相同的两项$\\frac{128}{25}$、$\\frac{128}{17}$打乱了规律，提示“反约分”，把各项分子统一成2的幂次。\n把4写成$\\frac{64}{16}$，把$\\frac{128}{17}$写成$\\frac{256}{34}$，数列变为$\\frac{32}{7}$，$\\frac{64}{16}$，$\\frac{128}{25}$，$\\frac{256}{34}$，$\\frac{512}{43}$：分子32、64、128、256、512是公比为2的等比数列，下一项为1024；分母7、16、25、34、43是公差为9的等差数列，下一项为52。所求项为$\\frac{1024}{52}$＝$\\frac{256}{13}$。\n故正确答案为B。",
+  "verification": "来源答案B；scripts/swaps_series_check.py 反约分后逐项核对分子、分母规律。",
+  "confidence": "high",
+  "issues": [],
+  "replace_recommended": false,
+  "difficulty": "中",
+  "prior_answer": null,
+  "prior_note": "旧卷未用过"
+ },
+ {
   "id": "JS2021-A类-054",
   "number": 37,
   "answer": "D",

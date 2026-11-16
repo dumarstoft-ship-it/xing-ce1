@@ -15,3 +15,9 @@ zs, ds, zx, dx = sols[0]
 print("张共", zs + zx, "丁共", ds + dx)
 assert zs + zx == 56
 print("答案: D（B=54 是丁老师的总量）")
+
+# 另一种读法：“下午丁比上午少6份”若理解为比张老师上午少6份
+alt = [(zs, ds) for zs in range(0, 111) for ds in range(0, 111)
+       if 2 * ds == 3 * zs and (zs - 6) >= 0 and zs + ds + (zs - 6) + (zs - 6 + 12) == 110]
+print("按“比张老师上午少6份”理解的解：", alt or "无（9x=110无整数解）")
+assert not alt

@@ -279,7 +279,13 @@ def subtype_of(n):
 
 def build(paper, dry=False):
     season = SEASON[paper]
-    oldq = {q["number"]: q for q in jl(S / paper / "题目.jsonl")} if dry else {}
+    oldq = {q["number"]: q for q in jl(S / paper / "题目.jsonl")} if dry and (S / paper / "题目.jsonl").exists() else {}
+
+    def placeholder(n, sec):   # 试排：政治、言语未齐时用旧卷题占位；新套没有旧卷就用空题占位
+        o = oldq.get(n) or {"number": n, "section": sec, "subtype": subtype_of(n), "question_type": "single_choice",
+                            "stem": [{"type": "text", "text": "（试排占位）"}], "options_mode": "text_or_mixed", "materials": [],
+                            "options": {k: [{"type": "text", "text": "占位"}] for k in "ABCD"}}
+        return dict(o, id=f"{paper}-Q{n:03d}")
     plan = jload(R / paper / "编排.json", {})
     log = Log()
     pol, ver, sol = politics_items(paper), verbal_items(paper), solutions(paper)
@@ -318,8 +324,7 @@ def build(paper, dry=False):
         if n <= 15:
             q = pol.get(n)
             if not q and dry:
-                o = oldq[n]
-                questions.append(dict(o, id=f"{paper}-Q{n:03d}"))
+                questions.append(placeholder(n, sec))
                 answers[n] = {"answer": "?", "card": "?", "analysis": "（试排占位：旧卷题）", "category": ""}
                 registry.append({"number": n, "section": sec, "source_type": "试排占位", "source_id": "old", "edits": [], "content_sha256": ""})
                 continue
@@ -341,8 +346,7 @@ def build(paper, dry=False):
         elif n <= 30:
             v = ver.get(n)
             if not v and dry:
-                o = oldq[n]
-                questions.append(dict(o, id=f"{paper}-Q{n:03d}"))
+                questions.append(placeholder(n, sec))
                 answers[n] = {"answer": "?", "card": "?", "analysis": "（试排占位：旧卷题）", "category": ""}
                 registry.append({"number": n, "section": sec, "source_type": "试排占位", "source_id": "old", "edits": [], "content_sha256": ""})
                 continue
@@ -398,7 +402,23 @@ def build(paper, dry=False):
                     m = q["material"]
                     if m["id"] not in mat_ids:
                         mat_ids[m["id"]] = f"{paper}-M{len(mat_ids) + 1:02d}"
-                        rec["materials"] = [{"id": mat_ids[m["id"]], "blocks": material_blocks(m, mat_ids[m["id"]], log, n)}]
+                        mblocks = material_blocks(m, mat_ids[m["id"]], log, n)
+                        for e in plan.get("material_edits", []):   # 资料材料的改动：表格单元格整格相等，或文字段中唯一出现
+                            if e["material"] != m["id"]:
+                                continue
+                            hits = [(b, i, j) for b in mblocks if b["type"] == "table"
+                                    for i, row in enumerate(b["rows"]) for j, cell in enumerate(row) if cell == e["old"]]
+                            texts = [b for b in mblocks if b["type"] == "text" and e["old"] in b["text"]]
+                            if len(hits) + sum(b["text"].count(e["old"]) for b in texts) != 1:
+                                raise SystemExit(f"{paper}第{n}题资料：改动原文未唯一命中：{e['old']}")
+                            if hits:
+                                b, i, j = hits[0]
+                                b["rows"] = [list(r) for r in b["rows"]]   # 不改动题库数据本身
+                                b["rows"][i][j] = e["new"]
+                            else:
+                                texts[0]["text"] = texts[0]["text"].replace(e["old"], e["new"])
+                            log.add(n, "改动", f"资料：{e['old']} → {e['new'] or '（空白）'}（{e['reason']}）")
+                        rec["materials"] = [{"id": mat_ids[m["id"]], "blocks": mblocks}]
                     else:
                         rec["materials"] = [x for x in questions if x["materials"] and x["materials"][0]["id"] == mat_ids[m["id"]]][0]["materials"]
             elif sid in JZ_Q:
