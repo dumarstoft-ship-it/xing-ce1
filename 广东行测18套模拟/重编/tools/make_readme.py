@@ -15,6 +15,21 @@ SEASON = {f"M{i:02d}": 15 + i for i in range(1, 19)}
 OLD = {"M01": "0.3.0", "M02": "0.2.0", "M03": "0.2.0", "M04": "0.2.0", "M05": "0.2.0"}
 
 
+def verbal_check(p):
+    """言语第二人盲做与来源答案对照（M06起一套一个 言语/复核/<套卷>_blind.json）；不一致的题在 言语/复核/<套卷>_blind_note.json 写明处理。"""
+    f = R / "言语" / "复核" / f"{p}_blind.json"
+    if not f.exists():
+        return "新选的题另由一人只看题面盲做，全部一致。"
+    blind = {x["number"]: x["answer"] for x in json.loads(f.read_text(encoding="utf-8"))}
+    sel = json.loads((R / "言语" / f"selection_{p}.json").read_text(encoding="utf-8"))[p]
+    diff = [x for x in sel if blind.get(x["number"]) not in (None, x["answer"])]
+    if not diff:
+        return "新选的题另由一人只看题面盲做，全部一致。"
+    notes = json.loads((R / "言语" / "复核" / f"{p}_blind_note.json").read_text(encoding="utf-8"))
+    return (f"新选的题另由一人只看题面盲做，{len(blind)}题中{len(blind) - len(diff)}题一致；"
+            + "；".join(f"第{x['number']}题盲做选{blind[x['number']]}、来源答案{x['answer']}，{notes[str(x['number'])]}" for x in diff) + "。")
+
+
 def main():
     p = sys.argv[1]
     d = S / p
@@ -51,7 +66,7 @@ def main():
         f"判断推理和科学推理另由第二人只看题面独立再做{('（' + str(n_second) + '题）') if n_second else ''}，两遍对照。"
         "换入的江浙真题用来源答案并复算。"
         + (f"换入题、改写的资料题和编辑新写的题另由第二人只看题面盲做（{n_extras}题），全部一致。" if n_extras else ""),
-        "- **第16—30题**：用国考、江浙真题的来源答案，选题时自己先做一遍；新选的题另由一人只看题面盲做，全部一致。",
+        "- **第16—30题**：用国考、江浙真题的来源答案，选题时自己先做一遍；" + verbal_check(p),
         "- **第1—15题**：每题的正确答案和每个错误选项都对应讲义原句；另由一人先凭知识盲做、再对照讲义和公开原文核查，答案全部一致。",
         "",
         "## 题型",
