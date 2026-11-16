@@ -1,0 +1,22 @@
+r3c1
+   area   23px (0.88mm²)  inscribed 4.0px=0.78mm  bbox 8x6px=1.6x1.2mm  at (76,263)
+   area   39px (1.50mm²)  inscribed 5.7px=1.11mm  bbox 7x9px=1.4x1.8mm  at (123,229)
+   area  531px (20.42mm²)  inscribed 17.9px=3.51mm  bbox 37x20px=7.3x3.9mm  at (102,250)
+   area  617px (23.72mm²)  inscribed 10.0px=1.96mm  bbox 48x35px=9.4x6.9mm  at (112,259)
+   area  676px (25.99mm²)  inscribed 12.2px=2.39mm  bbox 49x35px=9.6x6.9mm  at (91,239)
+r3c2
+   area   72px (2.77mm²)  inscribed 7.2px=1.41mm  bbox 16x8px=3.1x1.6mm  at (204,232)
+   area  167px (6.42mm²)  inscribed 12.6px=2.48mm  bbox 18x17px=3.5x3.3mm  at (215,239)
+   area  167px (6.42mm²)  inscribed 12.8px=2.51mm  bbox 18x18px=3.5x3.5mm  at (225,249)
+   area  171px (6.58mm²)  inscribed 11.3px=2.22mm  bbox 18x18px=3.5x3.5mm  at (202,250)
+   area  178px (6.84mm²)  inscribed 12.8px=2.51mm  bbox 19x15px=3.7x2.9mm  at (213,260)
+   area  302px (11.61mm²)  inscribed 15.6px=3.06mm  bbox 29x20px=5.7x3.9mm  at (189,237)
+   area  598px (22.99mm²)  inscribed 20.0px=3.92mm  bbox 33x35px=6.5x6.9mm  at (182,255)
+C
+   area   52px (2.00mm²)  inscribed 6.0px=1.18mm  bbox 8x11px=1.6x2.2mm  at (248,390)
+   area   93px (3.58mm²)  inscribed 8.9px=1.75mm  bbox 13x10px=2.5x2.0mm  at (248,380)
+   area  121px (4.65mm²)  inscribed 8.9px=1.75mm  bbox 13x18px=2.5x3.5mm  at (258,374)
+   area  127px (4.88mm²)  inscribed 10.0px=1.96mm  bbox 14x18px=2.7x3.5mm  at (237,374)
+   area  364px (14.00mm²)  inscribed 17.0px=3.33mm  bbox 37x20px=7.3x3.9mm  at (248,360)
+   area  456px (17.53mm²)  inscribed 16.0px=3.14mm  bbox 28x29px=5.5x5.7mm  at (230,388)
+   area  468px (18.00mm²)  inscribed 16.0px=3.14mm  bbox 27x29px=5.3x5.7mm  at (266,388)

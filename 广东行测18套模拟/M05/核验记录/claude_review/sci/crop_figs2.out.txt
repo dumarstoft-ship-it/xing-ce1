@@ -1,0 +1,4 @@
+q70_topleft_x3.png (990, 720)
+q70_topright_x3.png (999, 720)
+q70_botleft_x3.png (990, 750)
+q70_botright_x3.png (999, 750)

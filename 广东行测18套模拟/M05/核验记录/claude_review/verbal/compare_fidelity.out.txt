@@ -1,0 +1,90 @@
+### 16 ZJ2025-A类-021  M05 keys=['id', 'number', 'section', 'subtype', 'question_type', 'stem', 'options', 'options_mode', 'materials']
+  stem identical: True | M05 ws: {'newlines': 2, 'ascii_spaces': 2, 'fullwidth_spaces': 0, 'nbsp': 0, 'tabs': 0, 'underscores': 4} | src ws: {'newlines': 2, 'ascii_spaces': 2, 'fullwidth_spaces': 0, 'nbsp': 0, 'tabs': 0, 'underscores': 4}
+  options identical: True {'A': "'知己知彼'", 'B': "'别出心裁'", 'C': "'胸有成竹'", 'D': "'兼收并蓄'"}
+  blind_input == 题目.jsonl: True
+  src line lengths: [48, 36, 15]
+  odd chars in M05 stem: []
+### 17 ZJ2023-A类-024  M05 keys=['id', 'number', 'section', 'subtype', 'question_type', 'stem', 'options', 'options_mode', 'materials']
+  stem identical: True | M05 ws: {'newlines': 2, 'ascii_spaces': 4, 'fullwidth_spaces': 0, 'nbsp': 0, 'tabs': 0, 'underscores': 8} | src ws: {'newlines': 2, 'ascii_spaces': 4, 'fullwidth_spaces': 0, 'nbsp': 0, 'tabs': 0, 'underscores': 8}
+  options identical: True {'A': "'舍本逐末 接受'", 'B': "'走马观花 理解'", 'C': "'浅尝辄止 信服'", 'D': "'缘木求鱼 认可'"}
+  blind_input == 题目.jsonl: True
+  src line lengths: [51, 45, 17]
+  odd chars in M05 stem: []
+### 18 JS2023-A类-040  M05 keys=['id', 'number', 'section', 'subtype', 'question_type', 'stem', 'options', 'options_mode', 'materials']
+  stem identical: True | M05 ws: {'newlines': 5, 'ascii_spaces': 0, 'fullwidth_spaces': 0, 'nbsp': 0, 'tabs': 0, 'underscores': 23} | src ws: {'newlines': 5, 'ascii_spaces': 0, 'fullwidth_spaces': 0, 'nbsp': 0, 'tabs': 0, 'underscores': 23}
+  options identical: True {'A': "'阐释 可遇不可求 水到渠成'", 'B': "'精通 难能可贵 功到自然成'", 'C': "'诠释 可望不可即 自然而然'", 'D': "'通晓 不可多得 铁杵磨成针'"}
+  blind_input == 题目.jsonl: True
+  src line lengths: [39, 40, 44, 44, 46, 15]
+  odd chars in M05 stem: []
+### 19 ZJ2025-A类-027  M05 keys=['id', 'number', 'section', 'subtype', 'question_type', 'stem', 'options', 'options_mode', 'materials']
+  stem identical: True | M05 ws: {'newlines': 2, 'ascii_spaces': 3, 'fullwidth_spaces': 0, 'nbsp': 0, 'tabs': 0, 'underscores': 8} | src ws: {'newlines': 2, 'ascii_spaces': 3, 'fullwidth_spaces': 0, 'nbsp': 0, 'tabs': 0, 'underscores': 8}
+  options identical: True {'A': "'水涨船高 主宰'", 'B': "'与日俱增 支配'", 'C': "'突飞猛进 驾驭'", 'D': "'瞬息万变 操纵'"}
+  blind_input == 题目.jsonl: True
+  src line lengths: [48, 41, 17]
+  odd chars in M05 stem: []
+### 20 JS2022-A类-042  M05 keys=['id', 'number', 'section', 'subtype', 'question_type', 'stem', 'options', 'options_mode', 'materials']
+  stem identical: True | M05 ws: {'newlines': 5, 'ascii_spaces': 0, 'fullwidth_spaces': 0, 'nbsp': 0, 'tabs': 0, 'underscores': 24} | src ws: {'newlines': 5, 'ascii_spaces': 0, 'fullwidth_spaces': 0, 'nbsp': 0, 'tabs': 0, 'underscores': 24}
+  options identical: True {'A': "'如雷贯耳刀光剑影客观性'", 'B': "'如数家珍白纸黑字严肃性'", 'C': "'司空见惯鼓角齐鸣主体性'", 'D': "'耳熟能详只言片语独立性'"}
+  blind_input == 题目.jsonl: True
+  src line lengths: [43, 47, 43, 44, 40, 16]
+  odd chars in M05 stem: []
+### 21 JS2023-A类-023  M05 keys=['id', 'number', 'section', 'subtype', 'question_type', 'stem', 'options', 'options_mode', 'materials']
+  stem identical: True | M05 ws: {'newlines': 5, 'ascii_spaces': 0, 'fullwidth_spaces': 0, 'nbsp': 0, 'tabs': 0, 'underscores': 0} | src ws: {'newlines': 5, 'ascii_spaces': 0, 'fullwidth_spaces': 0, 'nbsp': 0, 'tabs': 0, 'underscores': 0}
+  options identical: True {'A': "'法院法官作出的司法裁判是不可被预测的'", 'B': "'基于人工智能预测的司法裁判不一定可靠'", 'C': "'司法裁判的可预测性建立在法律规则之上'", 'D': "'基于技术对裁判的预测不能等同法院裁判'"}
+  blind_input == 题目.jsonl: True
+  src line lengths: [38, 40, 40, 40, 22, 16]
+  odd chars in M05 stem: []
+### 22 JS2023-A类-027  M05 keys=['id', 'number', 'section', 'subtype', 'question_type', 'stem', 'options', 'options_mode', 'materials']
+  stem identical: True | M05 ws: {'newlines': 6, 'ascii_spaces': 0, 'fullwidth_spaces': 0, 'nbsp': 0, 'tabs': 0, 'underscores': 0} | src ws: {'newlines': 6, 'ascii_spaces': 0, 'fullwidth_spaces': 0, 'nbsp': 0, 'tabs': 0, 'underscores': 0}
+  options identical: True {'A': "'人工智能和人类大脑认知模式有类似之处'", 'B': "'人工智能与人类大脑利用相近的原理工作'", 'C': "'人工智能借鉴了认知科学的有关研究成果'", 'D': "'人工智能信号处理方式与人脑有很大差别'"}
+  blind_input == 题目.jsonl: True
+  src line lengths: [38, 41, 40, 40, 40, 3, 11]
+  odd chars in M05 stem: []
+### 23 ZJ2023-A类-039  M05 keys=['id', 'number', 'section', 'subtype', 'question_type', 'stem', 'options', 'options_mode', 'materials']
+  stem identical: True | M05 ws: {'newlines': 4, 'ascii_spaces': 0, 'fullwidth_spaces': 0, 'nbsp': 0, 'tabs': 0, 'underscores': 0} | src ws: {'newlines': 4, 'ascii_spaces': 0, 'fullwidth_spaces': 0, 'nbsp': 0, 'tabs': 0, 'underscores': 0}
+  options identical: True {'A': "'《岁朝图》里牡丹和玉兰花的象征意义'", 'B': "'“唐花”这一专门术语的由来以及含义'", 'C': "'我国古代已经出现了实用的温室技术'", 'D': "'温室技术源于皇帝冬天吃蔬菜的需求'"}
+  blind_input == 题目.jsonl: True
+  src line lengths: [48, 48, 48, 20, 9]
+  odd chars in M05 stem: []
+### 24 ZJ2025-A类-042  M05 keys=['id', 'number', 'section', 'subtype', 'question_type', 'stem', 'options', 'options_mode', 'materials']
+  stem identical: True | M05 ws: {'newlines': 5, 'ascii_spaces': 0, 'fullwidth_spaces': 0, 'nbsp': 0, 'tabs': 0, 'underscores': 0} | src ws: {'newlines': 5, 'ascii_spaces': 0, 'fullwidth_spaces': 0, 'nbsp': 0, 'tabs': 0, 'underscores': 0}
+  options identical: True {'A': "'更准确地识别和传达语音信息的方法'", 'B': "'根据语音属性将不同声源的语音分离出来'", 'C': "'利用技术降低噪音影响、加强语音识别的方法'", 'D': "'多维度分析以提升复杂场景下语音识别准确率'"}
+  blind_input == 题目.jsonl: True
+  src line lengths: [48, 48, 48, 55, 27, 20]
+  odd chars in M05 stem: []
+### 25 JS2022-A类-022  M05 keys=['id', 'number', 'section', 'subtype', 'question_type', 'stem', 'options', 'options_mode', 'materials']
+  stem identical: True | M05 ws: {'newlines': 5, 'ascii_spaces': 0, 'fullwidth_spaces': 0, 'nbsp': 0, 'tabs': 0, 'underscores': 0} | src ws: {'newlines': 5, 'ascii_spaces': 0, 'fullwidth_spaces': 0, 'nbsp': 0, 'tabs': 0, 'underscores': 0}
+  options identical: True {'A': "'交叉学科的创生模式并非简单的多学科交集'", 'B': "'用几何图交叉表达交叉学科的模式是错误的'", 'C': "'交叉学科的形式实际上具有非常多的可能性'", 'D': "'当下产生全新的独立学科的可能性越来越小'"}
+  blind_input == 题目.jsonl: True
+  src line lengths: [39, 43, 43, 43, 38, 12]
+  odd chars in M05 stem: []
+### 26 ZJ2025-A类-049  M05 keys=['id', 'number', 'section', 'subtype', 'question_type', 'stem', 'options', 'options_mode', 'materials']
+  stem identical: True | M05 ws: {'newlines': 5, 'ascii_spaces': 0, 'fullwidth_spaces': 0, 'nbsp': 0, 'tabs': 0, 'underscores': 0} | src ws: {'newlines': 5, 'ascii_spaces': 0, 'fullwidth_spaces': 0, 'nbsp': 0, 'tabs': 0, 'underscores': 0}
+  options identical: True {'A': "'旅游市场及游客需求日益多样化'", 'B': "'传统旅游的价值仍有待进一步挖掘'", 'C': "'传统旅游城市需开发旅游消费新业态'", 'D': "'新的旅游需求推动城市服务升级优化'"}
+  blind_input == 题目.jsonl: True
+  src line lengths: [48, 48, 48, 48, 4, 9]
+  odd chars in M05 stem: []
+### 27 ZJ2023-A类-049  M05 keys=['id', 'number', 'section', 'subtype', 'question_type', 'stem', 'options', 'options_mode', 'materials']
+  stem identical: True | M05 ws: {'newlines': 3, 'ascii_spaces': 0, 'fullwidth_spaces': 0, 'nbsp': 0, 'tabs': 0, 'underscores': 0} | src ws: {'newlines': 3, 'ascii_spaces': 0, 'fullwidth_spaces': 0, 'nbsp': 0, 'tabs': 0, 'underscores': 0}
+  options identical: True {'A': "'尼古拉斯东正教堂坐落在西面后方一角'", 'B': "'尼古拉斯东正教堂在太阳底下比较养眼'", 'C': "'尼古拉斯东正教堂三十年代由俄侨建立'", 'D': "'尼古拉斯东正教堂是为纪念尼古拉二世'"}
+  blind_input == 题目.jsonl: True
+  src line lengths: [48, 48, 39, 21]
+  odd chars in M05 stem: []
+### 28 ZJ2025-A类-045  M05 keys=['id', 'number', 'section', 'subtype', 'question_type', 'stem', 'options', 'options_mode', 'materials']
+  stem identical: True | M05 ws: {'newlines': 4, 'ascii_spaces': 1, 'fullwidth_spaces': 0, 'nbsp': 0, 'tabs': 0, 'underscores': 4} | src ws: {'newlines': 4, 'ascii_spaces': 1, 'fullwidth_spaces': 0, 'nbsp': 0, 'tabs': 0, 'underscores': 4}
+  options identical: True {'A': "'诗以简约含蓄为贵'", 'B': "'诗以言辞优美为贵'", 'C': "'诗以情感真挚为贵'", 'D': "'诗以浑然天成为贵'"}
+  blind_input == 题目.jsonl: True
+  src line lengths: [48, 48, 48, 3, 15]
+  odd chars in M05 stem: []
+### 29 ZJ2023-A类-038  M05 keys=['id', 'number', 'section', 'subtype', 'question_type', 'stem', 'options', 'options_mode', 'materials']
+  stem identical: True | M05 ws: {'newlines': 5, 'ascii_spaces': 2, 'fullwidth_spaces': 0, 'nbsp': 0, 'tabs': 0, 'underscores': 4} | src ws: {'newlines': 5, 'ascii_spaces': 2, 'fullwidth_spaces': 0, 'nbsp': 0, 'tabs': 0, 'underscores': 4}
+  options identical: True {'A': "'广告效果转化呈现跨界的特性'", 'B': "'传统的广告测量方法面临挑战'", 'C': "'广告从投放到获得收益存在诸多环节'", 'D': "'算法应用在广告效果归因上具有局限性'"}
+  blind_input == 题目.jsonl: True
+  src line lengths: [41, 49, 48, 48, 35, 15]
+  odd chars in M05 stem: []
+### 30 ZJ2023-A类-033  M05 keys=['id', 'number', 'section', 'subtype', 'question_type', 'stem', 'options', 'options_mode', 'materials']
+  stem identical: True | M05 ws: {'newlines': 9, 'ascii_spaces': 0, 'fullwidth_spaces': 0, 'nbsp': 0, 'tabs': 0, 'underscores': 0} | src ws: {'newlines': 9, 'ascii_spaces': 0, 'fullwidth_spaces': 0, 'nbsp': 0, 'tabs': 0, 'underscores': 0}
+  options identical: True {'A': "'①②③④⑥⑤'", 'B': "'②⑥⑤③①④'", 'C': "'④③⑥①②⑤'", 'D': "'⑥②⑤③①④'"}
+  blind_input == 题目.jsonl: True
+  src line lengths: [29, 54, 6, 48, 1, 47, 13, 23, 37, 21]
+  odd chars in M05 stem: []

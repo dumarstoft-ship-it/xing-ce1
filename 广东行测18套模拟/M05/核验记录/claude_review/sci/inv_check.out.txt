@@ -1,0 +1,18 @@
+s32_p17_i00: NOT in 图片清单.json; file exists=False
+s32_p17_i01 Q 32 科学推理 66 page 17 bbox [67.951, 185.132, 401.53, 274.704] px 600 161
+s32_p17_i02: NOT in 图片清单.json; file exists=False
+s32_p17_i03: NOT in 图片清单.json; file exists=False
+s32_p17_i04: NOT in 图片清单.json; file exists=False
+s27_p18_i01 Q 27 科学推理 67 page 18 bbox [67.951, 337.096, 329.255, 615.078] px 574 599
+s27_p18_i02: NOT in 图片清单.json; file exists=False
+s27_p18_i03: NOT in 图片清单.json; file exists=False
+s27_p18_i04: NOT in 图片清单.json; file exists=False
+s27_p18_i05: NOT in 图片清单.json; file exists=False
+s21_p18_i09: NOT in 图片清单.json; file exists=False
+s21_p18_i10: NOT in 图片清单.json; file exists=False
+s21_p18_i11: NOT in 图片清单.json; file exists=False
+s23_p19_i11 Q 23 科学推理 70 page 19 bbox [67.951, 396.398, 425.622, 646.582] px 643 450
+---- entries tied to these questions ----
+s23_p19_i11 (23, 70) [67.951, 396.398, 425.622, 646.582] 643 450
+s27_p18_i01 (27, 67) [67.951, 337.096, 329.255, 615.078] 574 599
+s32_p17_i01 (32, 66) [67.951, 185.132, 401.53, 274.704] 600 161

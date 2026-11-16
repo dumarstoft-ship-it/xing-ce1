@@ -1,0 +1,5 @@
+premise models: 6
+A 只要J且G则不衰退: valid=False; counterexample(J,G,K,S)=[(True, True, False, True)]
+B 如果J且G则K: valid=False; counterexample(J,G,K,S)=[(True, True, False, True)]
+C 如果衰退则非K: valid=False; counterexample(J,G,K,S)=[(True, True, True, True)]
+D 除非G否则衰退(非G->S): valid=True; counterexample(J,G,K,S)=[]

@@ -1,0 +1,3 @@
+s32_p17_i01 file==inventory: True | file==M05图形核验: True | visual_check: 已检查题图边界、线条、阴影及标签可辨认
+s27_p18_i01 file==inventory: True | file==M05图形核验: True | visual_check: 已检查题图边界、线条、阴影及标签可辨认
+s23_p19_i11 file==inventory: True | file==M05图形核验: True | visual_check: 已检查题图边界、线条、阴影及标签可辨认

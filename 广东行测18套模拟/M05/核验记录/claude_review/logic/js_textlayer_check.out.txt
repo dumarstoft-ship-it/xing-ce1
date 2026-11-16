@@ -1,0 +1,32 @@
+56 stem found-in-PDF-text-layer(ignoring whitespace)= True
+56 optA found-in-PDF-text-layer(ignoring whitespace)= True
+56 optB found-in-PDF-text-layer(ignoring whitespace)= True
+56 optC found-in-PDF-text-layer(ignoring whitespace)= True
+56 optD found-in-PDF-text-layer(ignoring whitespace)= True
+56 material found-in-PDF-text-layer(ignoring whitespace)= True
+58 stem found-in-PDF-text-layer(ignoring whitespace)= True
+58 optA found-in-PDF-text-layer(ignoring whitespace)= True
+58 optB found-in-PDF-text-layer(ignoring whitespace)= True
+58 optC found-in-PDF-text-layer(ignoring whitespace)= True
+58 optD found-in-PDF-text-layer(ignoring whitespace)= True
+60 stem found-in-PDF-text-layer(ignoring whitespace)= True
+60 optA found-in-PDF-text-layer(ignoring whitespace)= True
+60 optB found-in-PDF-text-layer(ignoring whitespace)= True
+60 optC found-in-PDF-text-layer(ignoring whitespace)= True
+60 optD found-in-PDF-text-layer(ignoring whitespace)= True
+60 material found-in-PDF-text-layer(ignoring whitespace)= True
+64 stem found-in-PDF-text-layer(ignoring whitespace)= True
+64 optA found-in-PDF-text-layer(ignoring whitespace)= True
+64 optB found-in-PDF-text-layer(ignoring whitespace)= True
+64 optC found-in-PDF-text-layer(ignoring whitespace)= True
+64 optD found-in-PDF-text-layer(ignoring whitespace)= True
+65 stem found-in-PDF-text-layer(ignoring whitespace)= True
+65 optA found-in-PDF-text-layer(ignoring whitespace)= True
+65 optB found-in-PDF-text-layer(ignoring whitespace)= True
+65 optC found-in-PDF-text-layer(ignoring whitespace)= True
+65 optD found-in-PDF-text-layer(ignoring whitespace)= True
+('21', 14) 隧道: '条新开通的南北向高速公路，中间有 6 条隧道:长川隧道、大美隧道、青山隧道、绿水隧道、彩石隧道、白玉'
+('21', 12) 古人云 '高度，就会在历史的洪流中奋勇向前\n92、古人云:立善法于天下，则天下治；立善法于一国，则一国治。\n以'
+('22', 17) 一定为真 '99、假如王猜对了甲的名次，那么以下哪项一定为真?\nA、 丁第四 B、 丙第一 C、 乙第二 D、 '
+('22', 17) 3000 '17 页 共 67 页\n材料\n运动会的 3000 米比赛中，运动员你追我赶，其中选手甲、乙、丙、丁表'
+('21', 13) 2020 '、会计师、大学教师、歌手、企业家\n95、2020 年疫情肆虐，但电商直播逆势崛起，一季度全国电商直播'

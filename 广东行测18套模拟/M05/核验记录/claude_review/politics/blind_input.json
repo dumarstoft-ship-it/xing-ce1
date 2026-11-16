@@ -1,0 +1,502 @@
+[
+ {
+  "number": 1,
+  "section": "政治理论",
+  "subtype": "判断题",
+  "question_type": "true_false",
+  "stem": [
+   {
+    "type": "text",
+    "text": "现实中已经存在的某种可能性，要转化为现实仍需相应条件；具有实现的客观根据，并不等于已经具备实现所需的全部条件。"
+   }
+  ],
+  "options": {},
+  "options_mode": "text_or_mixed",
+  "materials": []
+ },
+ {
+  "number": 2,
+  "section": "政治理论",
+  "subtype": "判断题",
+  "question_type": "true_false",
+  "stem": [
+   {
+    "type": "text",
+    "text": "所谓偶然性，只是人们尚未发现必然联系时形成的主观错觉；当因果关系被揭示后，偶然性便失去了客观存在的依据。"
+   }
+  ],
+  "options": {},
+  "options_mode": "text_or_mixed",
+  "materials": []
+ },
+ {
+  "number": 3,
+  "section": "政治理论",
+  "subtype": "判断题",
+  "question_type": "true_false",
+  "stem": [
+   {
+    "type": "text",
+    "text": "某类商品的市场价格因供求变化而在一段时间内低于其价值，这种背离本身并不能证明价值规律已经失去作用。"
+   }
+  ],
+  "options": {},
+  "options_mode": "text_or_mixed",
+  "materials": []
+ },
+ {
+  "number": 4,
+  "section": "政治理论",
+  "subtype": "判断题",
+  "question_type": "true_false",
+  "stem": [
+   {
+    "type": "text",
+    "text": "某党组织讨论一项重要问题，发生较大争论，赞成和反对人数接近，且不存在必须紧急决定的情形。只要赞成人数过半，就应当立即按多数意见作出决定，不宜暂缓。"
+   }
+  ],
+  "options": {},
+  "options_mode": "text_or_mixed",
+  "materials": []
+ },
+ {
+  "number": 5,
+  "section": "政治理论",
+  "subtype": "单项选择题",
+  "question_type": "single_choice",
+  "stem": [
+   {
+    "type": "text",
+    "text": "“物之不齐，物之情也”强调事物存在差异。下列工作方法与这一认识最直接相契合的是（　）。"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "把各地共有的目标直接细化为完全相同的实施步骤"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "在统一目标下，依据各地条件分别确定推进路径"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "以个别地区的成功经验代替对本地条件的具体调查"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "把地区差异主要归因于执行力度，统一加大投入强度"
+    }
+   ]
+  },
+  "options_mode": "text_or_mixed",
+  "materials": []
+ },
+ {
+  "number": 6,
+  "section": "政治理论",
+  "subtype": "单项选择题",
+  "question_type": "single_choice",
+  "stem": [
+   {
+    "type": "text",
+    "text": "某地拟组织企业、高校和科研院所联合攻关产业共性技术。下列安排中，最符合强化企业科技创新主体地位要求的是（　）。"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "由企业主要负责成果购买，高校独立确定全部产业技术需求"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "由行政部门包办技术路线和研发分工，企业按照任务清单提供资金"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "支持有能力的企业牵头提出产业需求、组织联合研发并推动成果应用"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "按企业投资额大小确定各项科学结论的取舍，再由科研院所完成论证"
+    }
+   ]
+  },
+  "options_mode": "text_or_mixed",
+  "materials": []
+ },
+ {
+  "number": 7,
+  "section": "政治理论",
+  "subtype": "单项选择题",
+  "question_type": "single_choice",
+  "stem": [
+   {
+    "type": "text",
+    "text": "在马克思主义政治经济学的分析中，假定劳动力按其价值出售，其他商品也按价值交换，资本家仍可能获得剩余价值。对此解释正确的是（　）。"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "等价交换本身能够使买卖双方创造出原来不存在的新价值"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "劳动力在使用过程中能够创造超过其自身价值的价值"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "生产资料在价值转移过程中会增加超过原有价值的部分"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "工人出售的是其全部劳动成果，工资与成果价值之间的差额来自不等价交换"
+    }
+   ]
+  },
+  "options_mode": "text_or_mixed",
+  "materials": []
+ },
+ {
+  "number": 8,
+  "section": "政治理论",
+  "subtype": "单项选择题",
+  "question_type": "single_choice",
+  "stem": [
+   {
+    "type": "text",
+    "text": "关于法治国家、法治政府、法治社会一体建设，下列说法正确的是（　）。"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "法治社会建设是全面依法治国的主体工程，法治政府建设主要提供社会基础"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "法治政府建设是全面依法治国的重点任务和主体工程，法治社会是构筑法治国家的基础"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "法治国家建设主要对应司法机关建设，行政机关依法履职属于法治社会建设"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "三者需要依次完成，先建成法治国家后再启动法治政府和法治社会建设"
+    }
+   ]
+  },
+  "options_mode": "text_or_mixed",
+  "materials": []
+ },
+ {
+  "number": 9,
+  "section": "政治理论",
+  "subtype": "多项选择题",
+  "question_type": "multiple_choice",
+  "stem": [
+   {
+    "type": "text",
+    "text": "关于经济基础与上层建筑，下列认识正确的有（　）。"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "经济基础是一定社会占统治地位的生产关系的总和，不是各种厂房设备的总和"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "国家政权属于政治上层建筑的核心，而非生产力的实体性要素"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "上层建筑只要维护既有经济基础，就必然推动社会进步"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "判断上层建筑反作用的社会效果，应考察它所服务的经济基础是否适合生产力发展要求"
+    }
+   ]
+  },
+  "options_mode": "text_or_mixed",
+  "materials": []
+ },
+ {
+  "number": 10,
+  "section": "政治理论",
+  "subtype": "多项选择题",
+  "question_type": "multiple_choice",
+  "stem": [
+   {
+    "type": "text",
+    "text": "落实“三个区分开来”，需要辨明干部履职失误与违纪违法行为的性质。下列属于应当作出的区分的有（　）。"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "缺乏经验、先行先试出现的失误，与明知故犯的违纪违法行为"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "上级尚无明确限制的探索性试验失误，与明令禁止后依然我行我素的行为"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "带来短期经济收益的谋私行为，与未形成经济收益的一般履职行为"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "为推动发展的无意过失，与为谋取私利的违纪违法行为"
+    }
+   ]
+  },
+  "options_mode": "text_or_mixed",
+  "materials": []
+ },
+ {
+  "number": 11,
+  "section": "常识应用",
+  "subtype": "单项选择题",
+  "question_type": "single_choice",
+  "stem": [
+   {
+    "type": "text",
+    "text": "依据《中华人民共和国宪法》，下列关于国家机关职权的对应关系正确的是（　）。"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "省、自治区和直辖市的建置——国务院批准；县的建置——全国人民代表大会批准"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "省、自治区和直辖市的建置——全国人民代表大会批准；省、自治区和直辖市的区域划分——国务院批准"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "特别行政区的设立及其制度——国务院决定；省级区域划分——全国人民代表大会批准"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "自治州、县、自治县、市的建置——国务院批准；特赦——国务院决定"
+    }
+   ]
+  },
+  "options_mode": "text_or_mixed",
+  "materials": []
+ },
+ {
+  "number": 12,
+  "section": "常识应用",
+  "subtype": "单项选择题",
+  "question_type": "single_choice",
+  "stem": [
+   {
+    "type": "text",
+    "text": "救援队拟使用热红外相机、雷达和主动声呐开展探测。只就探测原理而言，下列说法正确的是（　）。"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "热红外相机主要接收目标反射的可见光，故与普通相机一样需要外在照明"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "雷达和主动声呐都向目标发射并接收电磁波，只是工作频率不同"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "热红外相机可接收目标自身发出的热辐射；雷达则可通过发射并接收返回的电磁波探测目标"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "主动声呐与雷达都属于主动探测，所以二者发出的信号都可在真空中传播"
+    }
+   ]
+  },
+  "options_mode": "text_or_mixed",
+  "materials": []
+ },
+ {
+  "number": 13,
+  "section": "常识应用",
+  "subtype": "单项选择题",
+  "question_type": "single_choice",
+  "stem": [
+   {
+    "type": "text",
+    "text": "广东推进“五外联动”。某地开展以下工作：①吸引境外企业在本地投资设厂；②承接境外企业的软件研发服务外包；③支持本地企业到境外承包工程；④引进海外科研人才团队。按各项工作的直接侧重点，①—④依次对应的是（　）。"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "外贸、外包、外经、外智"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "外资、外经、外包、外智"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "外资、外包、外智、外经"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "外资、外包、外经、外智"
+    }
+   ]
+  },
+  "options_mode": "text_or_mixed",
+  "materials": []
+ },
+ {
+  "number": 14,
+  "section": "常识应用",
+  "subtype": "单项选择题",
+  "question_type": "single_choice",
+  "stem": [
+   {
+    "type": "text",
+    "text": "依据2026年1月1日起施行的修订后《治安管理处罚法》，下列人员均依法应当给予行政拘留处罚，且不存在其他影响处罚或执行的情形。其中，应当不执行行政拘留处罚的是（　）。"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "已满十五周岁，一年以内第二次违反治安管理的甲"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "已满十七周岁、初次违反治安管理，但情节严重、影响恶劣的乙"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "七十二周岁、初次违反治安管理，但情节严重、影响恶劣的丙"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "正在怀孕、此次违反治安管理情节严重、影响恶劣的丁"
+    }
+   ]
+  },
+  "options_mode": "text_or_mixed",
+  "materials": []
+ },
+ {
+  "number": 15,
+  "section": "常识应用",
+  "subtype": "单项选择题",
+  "question_type": "single_choice",
+  "stem": [
+   {
+    "type": "text",
+    "text": "某博物馆按传统“八音”分类陈列古代乐器。下列分组正确的是（　）。"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "编钟与玉磬均归入金类"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "琴与瑟均归入木类"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "笙与箫均归入竹类"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "陶埙与陶缶均归入土类"
+    }
+   ]
+  },
+  "options_mode": "text_or_mixed",
+  "materials": []
+ }
+]

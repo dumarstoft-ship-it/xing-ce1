@@ -1,0 +1,226 @@
+[
+ {
+  "number": 66,
+  "section": "科学推理",
+  "subtype": "科学推理",
+  "question_type": "single_choice",
+  "stem": [
+   {
+    "type": "text",
+    "text": "仓库中一个货箱静止在水平地面上，工作人员用水平向右的拉力F拉动货箱。拉力F随时间t变化的曲线如图所示。已知货箱与地面之间的最大静摩擦力 $f_{\\text{静}max}$ 大小等于滑动摩擦力大小，下列说法错误的是（    ）。"
+   },
+   {
+    "type": "figure",
+    "asset_id": "s32_p17_i01",
+    "path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s32_p17_i01.png",
+    "width_px": 600,
+    "height_px": 161,
+    "abs_path": "/home/user/xing-ce1/模考/2026下半年广东卷_16-33季_AI可读/assets/s32_p17_i01.png"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "$t_1$ 时刻货箱受力平衡"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "$t_2$ 时刻货箱的加速度达到最大值"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "$t_1-t_3$ 时间段内货箱受到的摩擦力先增大后减小"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "货箱与地面之间有2对相互作用力"
+    }
+   ]
+  },
+  "options_mode": "text_or_mixed",
+  "materials": []
+ },
+ {
+  "number": 67,
+  "section": "科学推理",
+  "subtype": "科学推理",
+  "question_type": "single_choice",
+  "stem": [
+   {
+    "type": "text",
+    "text": "下图所示的电路中，电源电压不变，闭合开关S后，滑动变阻器R的滑片从左向右移动的过程中，下列说法错误的是（    ）。"
+   },
+   {
+    "type": "figure",
+    "asset_id": "s27_p18_i01",
+    "path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s27_p18_i01.png",
+    "width_px": 574,
+    "height_px": 599,
+    "abs_path": "/home/user/xing-ce1/模考/2026下半年广东卷_16-33季_AI可读/assets/s27_p18_i01.png"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "电流表 $A_1$ 的示数变小"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "电流表 $A_2$ 的示数不变"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "灯泡 $L_2$ 的亮度不变"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "灯泡 $L_1$ 的亮度不变"
+    }
+   ]
+  },
+  "options_mode": "text_or_mixed",
+  "materials": []
+ },
+ {
+  "number": 68,
+  "section": "科学推理",
+  "subtype": "科学推理",
+  "question_type": "single_choice",
+  "stem": [
+   {
+    "type": "text",
+    "text": "汽车排放的尾气中所含的一氧化碳，在四氧化三钴（ $\\mathrm{Co_3O_4}$ ）的催化作用下，于低温条件下便可与氧气发生反应生成二氧化碳。关于上述反应，下列说法正确的是（    ）。\n①该反应为化合反应\n②该反应为分解反应\n③该反应可降低汽车尾气对大气的污染\n④该反应前后四氧化三钴（ $\\mathrm{Co_3O_4}$ ）的质量保持不变\n⑤该反应中四氧化三钴（ $\\mathrm{Co_3O_4}$ ）会不断消耗，质量减少"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "①③⑤"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "②③④"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "①③④"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "②③⑤"
+    }
+   ]
+  },
+  "options_mode": "text_or_mixed",
+  "materials": []
+ },
+ {
+  "number": 69,
+  "section": "科学推理",
+  "subtype": "科学推理",
+  "question_type": "single_choice",
+  "stem": [
+   {
+    "type": "text",
+    "text": "下列关于酶的说法正确的是（    ）。"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "酶由活细胞产生，也只能在活细胞中发挥作用"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "酶的化学成分均为蛋白质"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "过高或过低的温度均会彻底破坏酶的空间结构"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "酶促反应的反应速率受pH值影响很大"
+    }
+   ]
+  },
+  "options_mode": "text_or_mixed",
+  "materials": []
+ },
+ {
+  "number": 70,
+  "section": "科学推理",
+  "subtype": "科学推理",
+  "question_type": "single_choice",
+  "stem": [
+   {
+    "type": "text",
+    "text": "某地等高线地形图如下，下列说法正确的是（    ）。"
+   },
+   {
+    "type": "figure",
+    "asset_id": "s23_p19_i11",
+    "path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s23_p19_i11.png",
+    "width_px": 643,
+    "height_px": 450,
+    "abs_path": "/home/user/xing-ce1/模考/2026下半年广东卷_16-33季_AI可读/assets/s23_p19_i11.png"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "G处是登山线路中优先选择的通行位置"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "CD虚线处所在地形为山谷，容易发育河流"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "A处地势高于乙山山顶，适合修建高山气象观测站"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "B处暴雨天气下容易汇集水流，出现山洪"
+    }
+   ]
+  },
+  "options_mode": "text_or_mixed",
+  "materials": []
+ }
+]

@@ -1,0 +1,3 @@
+<class 'list'>
+len 90
+['number', 'source_id', 'source_bank', 'source_file', 'section', 'subtype', 'question_type', 'stem', 'options', 'answer', 'analysis', 'source_answer', 'selection_reason', 'edits', 'provenance', 'verification']

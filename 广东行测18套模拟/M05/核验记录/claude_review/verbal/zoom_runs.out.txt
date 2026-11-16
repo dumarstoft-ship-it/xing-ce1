@@ -1,0 +1,5 @@
+saved q19_zoom_line1-2_left.png (155, 3388, 1666, 3666) (3306, 4678)
+saved q19_zoom_line1-2_right.png (2111, 3388, 3066, 3666) (3306, 4678)
+saved q20_options_ABC_zoom400.png (277, 4044, 1833, 4366) (3306, 4678)
+saved q20_option_D_zoom400.png (277, 166, 1833, 311) (3306, 4678)
+saved q28_zoom_blank400.png (155, 2377, 1833, 2500) (3306, 4678)

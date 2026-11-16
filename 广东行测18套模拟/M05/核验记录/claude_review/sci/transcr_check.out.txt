@@ -1,0 +1,15 @@
+{"asset_id": "s21_p18_i09", "type": "formula_text", "text": "$\\mathrm{Co_3O_4}$", "pdf_page": 18, "season": 21, "source_image_sha256": "816655c6d16064df46be98de748119b0a971aa57c552a6350ed7b61fe35dcbfa"}
+{"asset_id": "s21_p18_i10", "type": "formula_text", "text": "$\\mathrm{Co_3O_4}$", "pdf_page": 18, "season": 21, "source_image_sha256": "816655c6d16064df46be98de748119b0a971aa57c552a6350ed7b61fe35dcbfa"}
+{"asset_id": "s21_p18_i11", "type": "formula_text", "text": "$\\mathrm{Co_3O_4}$", "pdf_page": 18, "season": 21, "source_image_sha256": "816655c6d16064df46be98de748119b0a971aa57c552a6350ed7b61fe35dcbfa"}
+{"asset_id": "s27_p18_i02", "type": "formula_text", "text": "$A_1$", "pdf_page": 18, "season": 27, "source_image_sha256": "50dd2666d6a10a10f83e7cb115326e16a47add149304f38380e00a1bb0f40544"}
+{"asset_id": "s27_p18_i03", "type": "formula_text", "text": "$A_2$", "pdf_page": 18, "season": 27, "source_image_sha256": "2448a5df056924055e3f71c0ff8db7aaccf7ebda4a8f649c54baa188c2c64db8"}
+{"asset_id": "s27_p18_i04", "type": "formula_text", "text": "$L_2$", "pdf_page": 18, "season": 27, "source_image_sha256": "a624bce120933da97939b6fd3ca73be521a19c63fdfe5a3e6b4b50fcf096c327"}
+{"asset_id": "s27_p18_i05", "type": "formula_text", "text": "$L_1$", "pdf_page": 18, "season": 27, "source_image_sha256": "bc4d01de2ff19da88537b39d88738a319a8064adc48b92e9fac567ed6ee250d5"}
+{"asset_id": "s32_p17_i00", "type": "formula_text", "text": "$f_{\\text{静}max}$", "pdf_page": 17, "season": 32, "source_image_sha256": "a5d7a45a73ba589b8af0b6bc329e830a2980e9185f8e0bcad29b06bb7bda292f"}
+{"asset_id": "s32_p17_i02", "type": "formula_text", "text": "$t_1$", "pdf_page": 17, "season": 32, "source_image_sha256": "33c4b0e1326da7e5a269de81fba450e32d9ed24a7a2c5e6aa727ef1e46cdbd2c"}
+{"asset_id": "s32_p17_i03", "type": "formula_text", "text": "$t_2$", "pdf_page": 17, "season": 32, "source_image_sha256": "49628537f3fc7db7e7b780292edfb0847b8424e7de492a4fd519cf0cda2541c2"}
+{"asset_id": "s32_p17_i04", "type": "formula_text", "text": "$t_1-t_3$", "pdf_page": 17, "season": 32, "source_image_sha256": "c484039f459acc6849078679192631b4fabcabbf67f78f8963c0f7ac8bd3b7df"}
+not found in 转写核验记录: ['s23_p19_i11', 's27_p18_i01', 's32_p17_i01']
+阅读顺序校正记录.json mentions: ['s21_p18']
+重绘核对记录.json mentions: []
+校验报告.json mentions: []

@@ -1,0 +1,602 @@
+[
+ {
+  "number": 31,
+  "section": "数量关系",
+  "subtype": "数字推理",
+  "question_type": "single_choice",
+  "stem": [
+   {
+    "type": "text",
+    "text": "3，16，43，88，155，（    ）"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "186"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "209"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "248"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "261"
+    }
+   ]
+  },
+  "options_mode": "text_or_mixed",
+  "materials": []
+ },
+ {
+  "number": 32,
+  "section": "数量关系",
+  "subtype": "数字推理",
+  "question_type": "single_choice",
+  "stem": [
+   {
+    "type": "text",
+    "text": "5.4，9.1，10.8，18.2，20.16，（    ）"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "36.4"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "36.28"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "35.4"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "33.15"
+    }
+   ]
+  },
+  "options_mode": "text_or_mixed",
+  "materials": []
+ },
+ {
+  "number": 33,
+  "section": "数量关系",
+  "subtype": "数字推理",
+  "question_type": "single_choice",
+  "stem": [
+   {
+    "type": "text",
+    "text": "$\\frac{2}{15}$ ， $\\frac{2}{9}$ ， $\\frac{7}{22}$ ， $\\frac{4}{9}$ ， $\\frac{19}{33}$ ，（    ）"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "$\\frac{3}{4}$"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "$\\frac{2}{3}$"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "$\\frac{4}{5}$"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "$\\frac{17}{19}$"
+    }
+   ]
+  },
+  "options_mode": "text_or_mixed",
+  "materials": []
+ },
+ {
+  "number": 34,
+  "section": "数量关系",
+  "subtype": "数字推理",
+  "question_type": "single_choice",
+  "stem": [
+   {
+    "type": "text",
+    "text": "48，32，56，72，100，（    ），186"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "122"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "130"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "136"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "140"
+    }
+   ]
+  },
+  "options_mode": "text_or_mixed",
+  "materials": []
+ },
+ {
+  "number": 35,
+  "section": "数量关系",
+  "subtype": "数字推理",
+  "question_type": "single_choice",
+  "stem": [
+   {
+    "type": "text",
+    "text": "15，12，19，14，28，26，53，40，（    ）"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "102"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "108"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "112"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "122"
+    }
+   ]
+  },
+  "options_mode": "text_or_mixed",
+  "materials": []
+ },
+ {
+  "number": 36,
+  "section": "数量关系",
+  "subtype": "数学运算",
+  "question_type": "single_choice",
+  "stem": [
+   {
+    "type": "text",
+    "text": "某箱子中装有红、黄、白、绿四种颜色的小球，小球数量之和不超过100个。已知黄球的数量比其余三种颜色小球的数量之和多 $\\frac{5}{9}$ ，白球的数量是红球的3倍，绿球有4个。问黄球比红球多多少个？"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "40"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "44"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "48"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "52"
+    }
+   ]
+  },
+  "options_mode": "text_or_mixed",
+  "materials": []
+ },
+ {
+  "number": 37,
+  "section": "数量关系",
+  "subtype": "数学运算",
+  "question_type": "single_choice",
+  "stem": [
+   {
+    "type": "text",
+    "text": "一项工程，若甲、乙两公司合作需12天完成，总工费为12万元；若甲公司先单独工作8天，然后由乙公司接替再做18天也可以完成，总工费为14万元。若甲公司单独完成该工程，则总工费为多少万元？"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "6"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "8"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "10"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "12"
+    }
+   ]
+  },
+  "options_mode": "text_or_mixed",
+  "materials": []
+ },
+ {
+  "number": 38,
+  "section": "数量关系",
+  "subtype": "数学运算",
+  "question_type": "single_choice",
+  "stem": [
+   {
+    "type": "text",
+    "text": "甲车从A地出发前往B地，到达B地后立即返回。甲车出发30分钟后，乙车也从A地出发前往B地，又过了30分钟两车在C地相遇，且B、C两地相距20千米。若甲车的速度比乙车快30%，那么A、B两地相距多少千米？"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "30"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "35"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "40"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "45"
+    }
+   ]
+  },
+  "options_mode": "text_or_mixed",
+  "materials": []
+ },
+ {
+  "number": 39,
+  "section": "数量关系",
+  "subtype": "数学运算",
+  "question_type": "single_choice",
+  "stem": [
+   {
+    "type": "text",
+    "text": "有一根不足50厘米长的绳子可围成一个三边长度为等差数列的直角三角形，现要将其围成一个相邻两边长度不等的长方形，若这根绳子围成的各图形边长均为整数，则这个长方形的面积最大为多少平方厘米？"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "143"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "144"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "146"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "149"
+    }
+   ]
+  },
+  "options_mode": "text_or_mixed",
+  "materials": []
+ },
+ {
+  "number": 40,
+  "section": "数量关系",
+  "subtype": "数学运算",
+  "question_type": "single_choice",
+  "stem": [
+   {
+    "type": "text",
+    "text": "在一次百分制的数学考试中，有5位同学的平均分为83分，已知这5位同学的分数均为整数且各不相同，其中得分第三高的人与第四高的人的分数和为160分，其余任意相邻排名的两人分数差不超过5分。问这5人中得分第三高的人最低得多少分？"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "80"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "81"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "83"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "85"
+    }
+   ]
+  },
+  "options_mode": "text_or_mixed",
+  "materials": []
+ },
+ {
+  "number": 41,
+  "section": "数量关系",
+  "subtype": "数学运算",
+  "question_type": "single_choice",
+  "stem": [
+   {
+    "type": "text",
+    "text": "某研究院科研小组6名成员的年龄分别为24岁、26岁、29岁、32岁、34岁、36岁，现从这6人中选出3人依次进行汇报，每人负责1个不同课题。汇报完毕后，发现这3人的平均年龄超过了28岁，且任意2人的年龄差不超过10岁，问有多少种汇报情况？"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "70"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "74"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "76"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "78"
+    }
+   ]
+  },
+  "options_mode": "text_or_mixed",
+  "materials": []
+ },
+ {
+  "number": 42,
+  "section": "数量关系",
+  "subtype": "数学运算",
+  "question_type": "single_choice",
+  "stem": [
+   {
+    "type": "text",
+    "text": "甲、乙、丙三人要共同投资项目，约定每个项目的投资额中：30万元及以内的部分，三人平摊；30万元-50万元（含50万元）的部分，甲承担40%，乙和丙各承担30%；50万元-60万元（含60万元）的部分，甲承担20%，乙和丙各承担40%；超出60万元的部分，全部由甲承担。现有两个投资计划：①投资一个75万元的项目，②投资45万元和30万元的项目各一个。则甲在两个投资计划中的出资额相差多少万元？"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "15"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "14"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "12"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "9"
+    }
+   ]
+  },
+  "options_mode": "text_or_mixed",
+  "materials": []
+ },
+ {
+  "number": 43,
+  "section": "数量关系",
+  "subtype": "数学运算",
+  "question_type": "single_choice",
+  "stem": [
+   {
+    "type": "text",
+    "text": "F公司每月5号发工资，若5号为星期六或星期日，则工资会提前在当周的星期五发放。某年的下半年，F公司最多有几个月刚好在5号发工资？"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "6"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "5"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "4"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "3"
+    }
+   ]
+  },
+  "options_mode": "text_or_mixed",
+  "materials": []
+ },
+ {
+  "number": 44,
+  "section": "数量关系",
+  "subtype": "数学运算",
+  "question_type": "single_choice",
+  "stem": [
+   {
+    "type": "text",
+    "text": "某班级统计40名学生的考试情况，其中数学及格的有25人，英语及格的有27人，语文及格的有21人，三科都及格的有12人，比三科都不及格的人数多2倍。则至少两科及格的有多少人？"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "13"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "18"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "25"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "31"
+    }
+   ]
+  },
+  "options_mode": "text_or_mixed",
+  "materials": []
+ },
+ {
+  "number": 45,
+  "section": "数量关系",
+  "subtype": "数学运算",
+  "question_type": "single_choice",
+  "stem": [
+   {
+    "type": "text",
+    "text": "某雾天能见度为500m。甲车在单行道路上从静止开始匀加速，行驶1km后速度达到60km/h。此时视线内恰好出现的前方车辆正以40km/h的速度匀速行驶，甲车立刻匀减速至与前车同速，此时恰好与前车保持100m安全距离，此后甲车保持匀速行驶。问甲车从出发到开始匀速行驶，共用了多长时间？"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "120s"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "144s"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "264s"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "280s"
+    }
+   ]
+  },
+  "options_mode": "text_or_mixed",
+  "materials": []
+ }
+]

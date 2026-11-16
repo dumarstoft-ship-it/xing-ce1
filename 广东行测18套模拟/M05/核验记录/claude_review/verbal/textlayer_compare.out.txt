@@ -1,0 +1,106 @@
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+Could not get FontBBox from font descriptor because None cannot be parsed as 4 floats
+### 16  textlayer_chars=113  m05_chars=113  identical_ignoring_ws=True
+    line: '差异障碍，了解占据主导地位的西方媒体的运行规则，            ，方有胜算。'
+    line: 'A.知己知彼 B.别出心裁 C.胸有成竹 D.兼收并蓄'
+### 17  textlayer_chars=129  m05_chars=129  identical_ignoring_ws=True
+    line: '24.有些教育者讲授思政课之所以效果不佳，一个重要的原因在于讲授的内容流于表面，            ，往往是从书本到'
+    line: '书本，从理论到理论，致使授课看似在说理，实则缺乏理论深度与厚度，难以让人真正        。'
+    line: 'A.舍本逐末 接受 B.走马观花 理解 C.浅尝辄止 信服 D.缘木求鱼 认可'
+### 18  textlayer_chars=253  m05_chars=253  identical_ignoring_ws=True
+    line: 'A.阐释 可遇不可求 水到渠成'
+    line: 'B.精通 难能可贵 功到自然成'
+    line: 'C.诠释 可望不可即 自然而然'
+    line: 'D.通晓 不可多得 铁杵磨成针'
+### 19  textlayer_chars=123  m05_chars=123  identical_ignoring_ws=True
+    line: '          。用户与信息的角色定位也从开始时的双向选择，演变为信息        人类。'
+    line: 'A.水涨船高 主宰 B.与日俱增 支配 C.突飞猛进 驾驭 D.瞬息万变 操纵'
+### 20  textlayer_chars=286  m05_chars=257  identical_ignoring_ws=False
+    delete PDF: 'D侃侃而谈闯入忍俊不禁、' M05: '' ctx: 'D侃侃而谈闯入忍俊不禁、访古是十分感人的'
+    delete PDF: '42' M05: '' ctx: '时。亲手触摸庄重42威严的利簋,秀丽'
+    insert PDF: '' M05: '“' ctx: '说可谓一种致命的诱惑。然而,身为'
+    insert PDF: '' M05: '”' ctx: '谓一种致命的诱惑。然而,身为一名'
+    delete PDF: '“”' M05: '' ctx: '持足够的警惕,维“”护考古记录的,这'
+    replace PDF: '、' M05: 'A' ctx: '最恰当的一项是:、如雷贯耳刀光剑影'
+    replace PDF: 'A' M05: 'B' ctx: '耳刀光剑影客观性A如数家珍白纸黑字'
+    replace PDF: 'B' M05: 'C' ctx: '珍白纸黑字严肃性B司空见惯鼓角齐鸣'
+    replace PDF: 'C' M05: 'D' ctx: '惯鼓角齐鸣主体性C耳熟能详只言片语'
+    delete PDF: 'D三、文章阅读。阅读下面文章,' M05: '' ctx: '详只言片语独立性D三、文章阅读。阅读下面文章,'
+    line: 'D、 侃侃而谈 闯入 忍俊不禁'
+### 21  textlayer_chars=272  m05_chars=272  identical_ignoring_ws=True
+    line: 'A.法院法官作出的司法裁判是不可被预测的'
+    line: 'B.基于人工智能预测的司法裁判不一定可靠'
+    line: 'C.司法裁判的可预测性建立在法律规则之上'
+    line: 'D.基于技术对裁判的预测不能等同法院裁判'
+### 22  textlayer_chars=289  m05_chars=289  identical_ignoring_ws=True
+    line: 'A.人工智能和人类大脑认知模式有类似之处'
+    line: 'B.人工智能与人类大脑利用相近的原理工作'
+    line: 'C.人工智能借鉴了认知科学的有关研究成果'
+    line: 'D.人工智能信号处理方式与人脑有很大差别'
+### 23  textlayer_chars=243  m05_chars=243  identical_ignoring_ws=True
+    line: 'A.《岁朝图》里牡丹和玉兰花的象征意义 B.“唐花”这一专门术语的由来以及含义'
+    line: 'C.我国古代已经出现了实用的温室技术 D.温室技术源于皇帝冬天吃蔬菜的需求'
+### 24  textlayer_chars=317  m05_chars=317  identical_ignoring_ws=True
+    line: 'A.更准确地识别和传达语音信息的方法 B.根据语音属性将不同声源的语音分离出来'
+    line: 'C.利用技术降低噪音影响、加强语音识别的方法 D.多维度分析以提升复杂场景下语音识别准确率'
+### 25  textlayer_chars=359  m05_chars=298  identical_ignoring_ws=False
+    delete PDF: 'D信息无障碍建设促使信息技术水平提升、' M05: '' ctx: 'D信息无障碍建设促使信息技术水平提升、随着学科的不断延'
+    delete PDF: '22' M05: '' ctx: '来越少,以至于更22多的新学科是由多'
+    replace PDF: '、' M05: 'A' ctx: '与文意不符的是:、交叉学科的创生模'
+    replace PDF: 'A' M05: 'B' ctx: '简单的多学科交集A用几何图交叉表达'
+    replace PDF: 'B' M05: 'C' ctx: '科的模式是错误的B交叉学科的形式实'
+    replace PDF: 'C' M05: 'D' ctx: '有非常多的可能性C当下产生全新的独'
+    delete PDF: 'D农村金融需求是否满足,对农村发展的进程有极大影响。全面疏解农村地区信贷供给,是' M05: '' ctx: '的可能性越来越小D农村金融需求是否满足,对农村发展的进程有极大影响。全面疏解农村地区信贷供给,是'
+    line: 'D、 信息无障碍建设促使信息技术水平提升'
+### 26  textlayer_chars=270  m05_chars=270  identical_ignoring_ws=True
+    line: 'A.旅游市场及游客需求日益多样化 B.传统旅游的价值仍有待进一步挖掘'
+    line: 'C.传统旅游城市需开发旅游消费新业态 D.新的旅游需求推动城市服务升级优化'
+### 27  textlayer_chars=228  m05_chars=228  identical_ignoring_ws=True
+    line: 'A.尼古拉斯东正教堂坐落在西面后方一角 B.尼古拉斯东正教堂在太阳底下比较养眼'
+    line: 'C.尼古拉斯东正教堂三十年代由俄侨建立 D.尼古拉斯东正教堂是为纪念尼古拉二世'
+### 28  textlayer_chars=193  m05_chars=193  identical_ignoring_ws=True
+    line: '45.                    ，这是诗歌鉴赏和审美体验对诗歌创作提出的要求。钱钟书在《谈艺录》中说：“夫言情写景，贵'
+    line: 'A.诗以简约含蓄为贵 B.诗以言辞优美为贵 C.诗以情感真挚为贵 D.诗以浑然天成为贵'
+### 29  textlayer_chars=293  m05_chars=293  identical_ignoring_ws=True
+    line: '出，                    。一方面，广告效果归因变得更加复杂。用户在多个社交平台中积极互动，消费者跨设备、跨'
+    line: 'A.广告效果转化呈现跨界的特性 B.传统的广告测量方法面临挑战'
+    line: 'C.广告从投放到获得收益存在诸多环节 D.算法应用在广告效果归因上具有局限性'
+### 30  textlayer_chars=307  m05_chars=307  identical_ignoring_ws=True
+    line: 'A.①②③④⑥⑤ B.②⑥⑤③①④ C.④③⑥①②⑤ D.⑥②⑤③①④'

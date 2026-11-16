@@ -1,0 +1,148 @@
+========== 51 gd-mock-2026h2-s17-q51
+  stem: IDENTICAL
+  opt A: IDENTICAL
+  opt B: IDENTICAL
+  opt C: IDENTICAL
+  opt D: IDENTICAL
+  M05 newlines: ['形成科学的饮食结构。⏎由此可以推出：只要']
+========== 52 gd-mock-2026h2-s16-q59
+  stem: IDENTICAL
+  opt A: IDENTICAL
+  opt B: IDENTICAL
+  opt C: IDENTICAL
+  opt D: IDENTICAL
+  M05 newlines: []
+  FLAG space at …充的前提是（␣␣␣␣）。…
+  FLAG space at …的前提是（␣␣␣␣）。硫…
+  FLAG space at …前提是（␣␣␣␣）。硫磺…
+  FLAG space at …提是（␣␣␣␣）。硫磺皂…
+========== 53 gd-mock-2026h2-s18-q54
+  stem: IDENTICAL
+  opt A: IDENTICAL
+  opt B: IDENTICAL
+  opt C: IDENTICAL
+  opt D: IDENTICAL
+  M05 newlines: ['会促使学生成绩提升。⏎以下哪项如果为真，']
+========== 54 gd-mock-2026h2-s16-q53
+  stem: IDENTICAL
+  opt A: IDENTICAL
+  opt B: IDENTICAL
+  opt C: IDENTICAL
+  opt D: IDENTICAL
+  M05 newlines: ['的人数其实是下降的。⏎以下哪项如果为真，']
+========== 55 gd-mock-2026h2-s19-q59
+  stem: IDENTICAL
+  opt A: IDENTICAL
+  opt B: IDENTICAL
+  opt C: IDENTICAL
+  opt D: IDENTICAL
+  M05 newlines: []
+  FLAG space at …前提条件是（␣␣␣␣）。…
+  FLAG space at …提条件是（␣␣␣␣）。马…
+  FLAG space at …条件是（␣␣␣␣）。马的…
+  FLAG space at …件是（␣␣␣␣）。马的面…
+========== 56 JS2021-A类-100
+  stem: IDENTICAL
+  opt A: IDENTICAL
+  opt B: IDENTICAL
+  opt C: IDENTICAL
+  opt D: IDENTICAL
+  material 0: IDENTICAL
+  M05 newlines: ['隧道、彩石隧道、白玉⏎隧道。已知：⏎（1', '、白玉⏎隧道。已知：⏎（1）白玉隧道在彩', '的南边但与之不相邻；⏎（2）长川隧道与青']
+  FLAG space at …路，中间有6␣条隧道:长…
+  FLAG half-width ':' at …有6␣条隧道:长川隧道、…
+========== 57 gd-mock-2026h2-s18-q63
+  stem: IDENTICAL
+  opt A: IDENTICAL
+  opt B: IDENTICAL
+  opt C: IDENTICAL
+  opt D: IDENTICAL
+  M05 newlines: []
+  FLAG space at …证缺陷的是（␣␣␣␣）。…
+  FLAG space at …缺陷的是（␣␣␣␣）。默…
+  FLAG space at …陷的是（␣␣␣␣）。默认…
+  FLAG space at …的是（␣␣␣␣）。默认了…
+========== 58 JS2021-A类-092
+  stem: IDENTICAL
+  opt A: IDENTICAL
+  opt B: IDENTICAL
+  opt C: IDENTICAL
+  opt D: IDENTICAL
+  M05 newlines: ['法于一国，则一国治。⏎以下哪项与上述古人']
+  FLAG half-width ':' at …古人云:立善法于天…
+========== 59 gd-mock-2026h2-s19-q62
+  stem: IDENTICAL
+  opt A: IDENTICAL
+  opt B: IDENTICAL
+  opt C: IDENTICAL
+  opt D: IDENTICAL
+  M05 newlines: []
+  FLAG space at …述现象的是（␣␣␣␣）。…
+  FLAG space at …现象的是（␣␣␣␣）。该…
+  FLAG space at …象的是（␣␣␣␣）。该小…
+  FLAG space at …的是（␣␣␣␣）。该小区…
+========== 60 JS2022-A类-099
+  stem: IDENTICAL
+  opt A: IDENTICAL
+  opt B: IDENTICAL
+  opt C: IDENTICAL
+  opt D: IDENTICAL
+  material 0: IDENTICAL
+  M05 newlines: ['表现特别出色，交替领⏎先。观众张、王、李', '␣位选手的最终名次：⏎张：甲第四，乙第三', '三，丙第二，丁第一；⏎王：甲第三，乙第二', '二，丙第四，丁第一；⏎李：甲第四，乙第二', '二，丙第一，丁第三；⏎赵：甲第二，乙第三', '三，丙第一，丁第四。⏎比赛结束后，甲、乙', '但他们的具体名次，张⏎全猜错了，而其余3']
+  FLAG half-width '?' at …哪项一定为真?丁第四丙第…
+  FLAG space at …会的3000␣米比赛中，…
+  FLAG space at …分别预测了4␣位选手的最…
+  FLAG space at …了，而其余3␣人分别猜对…
+  FLAG space at …分别猜对了1␣个。…
+========== 61 gd-mock-2026h2-s18-q64
+  stem: IDENTICAL
+  opt A: IDENTICAL
+  opt B: IDENTICAL
+  opt C: IDENTICAL
+  opt D: IDENTICAL
+  M05 newlines: []
+  FLAG space at …为相似的是（␣␣␣␣）。…
+  FLAG space at …相似的是（␣␣␣␣）。传…
+  FLAG space at …似的是（␣␣␣␣）。传统…
+  FLAG space at …的是（␣␣␣␣）。传统手…
+========== 62 gd-mock-2026h2-s16-q65
+  stem: IDENTICAL
+  opt A: IDENTICAL
+  opt B: IDENTICAL
+  opt C: IDENTICAL
+  opt D: IDENTICAL
+  M05 newlines: ['大螯进行沟通与交流。⏎以下属于上述推测暗']
+  FLAG space at …含前提的是（␣␣␣␣）。…
+  FLAG space at …前提的是（␣␣␣␣）。雄…
+  FLAG space at …提的是（␣␣␣␣）。雄性…
+  FLAG space at …的是（␣␣␣␣）。雄性清…
+========== 63 gd-mock-2026h2-s19-q52
+  stem: IDENTICAL
+  opt A: IDENTICAL
+  opt B: IDENTICAL
+  opt C: IDENTICAL
+  opt D: IDENTICAL
+  M05 newlines: ['居民给出了如下猜测：⏎（1）小李：甲、乙', '乙两个品牌均能中标；⏎（2）小张：若丙品', '，则甲品牌也能中标；⏎（3）小王：甲和乙', '有一位居民预测正确。⏎根据上述信息可以推']
+========== 64 JS2021-A类-095
+  stem: IDENTICAL
+  opt A: IDENTICAL
+  opt B: IDENTICAL
+  opt C: IDENTICAL
+  opt D: IDENTICAL
+  M05 newlines: ['物可播、全民可播”成⏎为一个响亮的口号。', '优惠的价格购买到心仪⏎的商品，商家也能提', '受到商家和消费者的追⏎捧。⏎以下各项如果', '家和消费者的追⏎捧。⏎以下各项如果为真，']
+  FLAG space at …2020␣年疫情肆虐…
+  FLAG space at …播超过400␣万场，“万…
+========== 65 JS2021-A类-096
+  stem: IDENTICAL
+  opt A: IDENTICAL
+  opt B: IDENTICAL
+  opt C: IDENTICAL
+  opt D: IDENTICAL
+  M05 newlines: ['热带非洲以外地区人类⏎的灭绝。近期一项对', '人群替代其他地区人群⏎的过程，关于现代人', '地区人群的直接祖先。⏎以下哪项如果为真，']
+  FLAG space at …一般认为，7␣万多年前的…
+  FLAG space at …究认为，约6␣万年前至5…
+  FLAG space at …␣万年前至5␣万年前之间…
+  FLAG space at …影响距今10␣万年前至4…
+  FLAG space at …␣万年前至4␣万年前，东…
+  FLAG space at …安德特人在2␣万年前至3…
+  FLAG space at …␣万年前至3␣万年前已经…

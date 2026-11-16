@@ -1,0 +1,5 @@
+s19_p12_i00 (600, 274) RGB None
+s27_p12_i00 (400, 469) RGB None
+s31_p12_i00 (500, 324) RGB None
+s20_p13_i00 (500, 199) RGB None
+s23_p13_i00 (600, 154) RGB None

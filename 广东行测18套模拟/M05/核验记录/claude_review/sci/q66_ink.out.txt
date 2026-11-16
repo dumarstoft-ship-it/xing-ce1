@@ -1,0 +1,7 @@
+digit 2 (2f静max)       min=  0  darkest-10%-mean=   1.8  ink-px(<200)=64
+f (2f静max)             min=  0  darkest-10%-mean=   0.3  ink-px(<200)=62
+静 (2f静max)             min= 40  darkest-10%-mean=  64.3  ink-px(<200)=116
+max (2f静max)           min= 11  darkest-10%-mean=  18.0  ink-px(<200)=115
+静 (f静max)              min= 51  darkest-10%-mean=  64.6  ink-px(<200)=114
+t1 tick label          min=  7  darkest-10%-mean=  13.7  ink-px(<200)=61
+axis label F           min=  0  darkest-10%-mean=   0.0  ink-px(<200)=44

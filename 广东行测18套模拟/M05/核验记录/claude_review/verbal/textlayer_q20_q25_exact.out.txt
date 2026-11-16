@@ -1,0 +1,11 @@
+第20题 文字层顺序一致=False 字符多重集一致=False
+  仅PDF有: Counter({'、': 1})
+  仅M05有: Counter()
+   delete PDF: '、' M05: ''
+   insert PDF: '' M05: '“'
+   insert PDF: '' M05: '”'
+   delete PDF: '“”' M05: ''
+第25题 文字层顺序一致=False 字符多重集一致=False
+  仅PDF有: Counter({'、': 1})
+  仅M05有: Counter()
+   delete PDF: '、' M05: ''

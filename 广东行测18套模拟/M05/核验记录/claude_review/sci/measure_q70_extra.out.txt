@@ -1,0 +1,8 @@
+cliff tick crossings (y,len): [(97, 2), (111, 3), (125, 3), (140, 2), (154, 2), (168, 3), (182, 3), (197, 2), (211, 3), (225, 3), (240, 2), (246, 1)]
+tick pitch px: [14.5, 14.0, 14.5, 14.0, 14.5, 14.0, 14.5, 14.5, 14.0, 14.5, 5.5] -> mean 13.5 px = 2.65 mm
+  tick row y=98: dark x from 47 to 83 -> extent 7.26 mm (incl. main line)
+  tick row y=112: dark x from 50 to 67 -> extent 3.53 mm (incl. main line)
+  tick row y=126: dark x from 53 to 97 -> extent 8.83 mm (incl. main line)
+  tick row y=141: dark x from 55 to 90 -> extent 7.06 mm (incl. main line)
+column x=295 dark runs (y,len): [(4, 3), (40, 2), (47, 9), (68, 3), (100, 3)]
+mm per px: 0.1962

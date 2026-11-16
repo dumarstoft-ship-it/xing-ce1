@@ -1,0 +1,779 @@
+keys of first item: ['number', 'source_id', 'source_bank', 'source_file', 'section', 'subtype', 'question_type', 'stem', 'options', 'answer', 'analysis', 'source_answer', 'selection_reason', 'edits', 'provenance', 'verification']
+====================================================================================================
+{
+ "number": 66,
+ "source_id": "gd-mock-2026h2-s32-q66",
+ "source_bank": "guangdong_mock",
+ "source_file": "模考/2026下半年广东卷_16-33季_AI可读/全部题目.jsonl",
+ "section": "科学推理",
+ "subtype": "科学推理",
+ "question_type": "single_choice",
+ "source_question": {
+  "id": "gd-mock-2026h2-s32-q66",
+  "season": 32,
+  "section": "科学推理",
+  "number": 66,
+  "material_id": null,
+  "stem": [
+   {
+    "type": "text",
+    "text": "仓库中一个货箱静止在水平地面上，工作人员用水平向右的拉力F拉动货箱。拉力F随时间t变化的曲线如图所示。已知货箱与地面之间的最大静摩擦力 $f_{\\text{静}max}$ 大小等于滑动摩擦力大小，下列说法错误的是（    ）。"
+   },
+   {
+    "type": "figure",
+    "asset_id": "s32_p17_i01",
+    "path": "assets/s32_p17_i01.png",
+    "width_px": 600,
+    "height_px": 161,
+    "caption": "原卷第17页，第66题图"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "$t_1$ 时刻货箱受力平衡"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "$t_2$ 时刻货箱的加速度达到最大值"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "$t_1-t_3$ 时间段内货箱受到的摩擦力先增大后减小"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "货箱与地面之间有2对相互作用力"
+    }
+   ]
+  },
+  "source_pages": [
+   17
+  ],
+  "source_spans": [
+   {
+    "pdf_page": 17,
+    "bbox_pt": [
+     52.402,
+     129.003,
+     521.113,
+     141.422
+    ]
+   },
+   {
+    "pdf_page": 17,
+    "bbox_pt": [
+     68.048,
+     149.077,
+     524.844,
+     161.189
+    ]
+   },
+   {
+    "pdf_page": 17,
+    "bbox_pt": [
+     68.048,
+     169.157,
+     191.842,
+     181.575
+    ]
+   },
+   {
+    "pdf_page": 17,
+    "bbox_pt": [
+     67.951,
+     185.132,
+     401.53,
+     274.704
+    ]
+   },
+   {
+    "pdf_page": 17,
+    "bbox_pt": [
+     68.048,
+     287.762,
+     180.406,
+     300.181
+    ]
+   },
+   {
+    "pdf_page": 17,
+    "bbox_pt": [
+     68.048,
+     308.148,
+     235.877,
+     320.566
+    ]
+   },
+   {
+    "pdf_page": 17,
+    "bbox_pt": [
+     68.048,
+     327.915,
+     311.714,
+     340.334
+    ]
+   },
+   {
+    "pdf_page": 17,
+    "bbox_pt": [
+     68.048,
+     348.301,
+     241.669,
+     360.72
+    ]
+   }
+  ],
+  "source_asset_ids": [
+   "s32_p17_i00",
+   "s32_p17_i01",
+   "s32_p17_i02",
+   "s32_p17_i03",
+   "s32_p17_i04"
+  ],
+  "answer": null,
+  "source": {
+   "source_name": "2026下半年省考第三十二季行测模考大赛（广东卷）.pdf",
+   "source_sha256": "6ac9b640512affbeb40b329234d539706b7c104b07a7e171c67ab1117815f4ba",
+   "pages": 24
+  },
+  "material": null
+ },
+ "source_answer": null,
+ "answer": "C",
+ "analysis": "选C。在t₁以前静止，静摩擦随拉力增大；t₁到达最大静摩擦力，临界时合力仍为0，A正确。此后已经滑动，摩擦力大小为固定的滑动摩擦力，不再随拉力先增后减，故C错误。t₂拉力最大而滑动摩擦不变，合力及加速度最大，B正确；货箱与地面之间分别存在支持力与压力、两方向的摩擦力两对相互作用力，D正确。",
+ "selection_reason": "拉力图不能直接当摩擦力图，区分静摩擦阶段与滑动阶段。",
+ "edits": [],
+ "source_locators": {
+  "id": "gd-mock-2026h2-s32-q66",
+  "original_number": 66,
+  "source": {
+   "source_name": "2026下半年省考第三十二季行测模考大赛（广东卷）.pdf",
+   "source_sha256": "6ac9b640512affbeb40b329234d539706b7c104b07a7e171c67ab1117815f4ba",
+   "pages": 24
+  },
+  "source_pages": [
+   17
+  ]
+ },
+ "verification": {
+  "status": "editor_checked_pending_claude",
+  "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。",
+  "reference_answer_available": false,
+  "reference_answer_agreement": null
+ },
+ "source_notice": "原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。 未为降低难度而补写提示或重构选项。"
+}
+====================================================================================================
+{
+ "number": 67,
+ "source_id": "gd-mock-2026h2-s27-q67",
+ "source_bank": "guangdong_mock",
+ "source_file": "模考/2026下半年广东卷_16-33季_AI可读/全部题目.jsonl",
+ "section": "科学推理",
+ "subtype": "科学推理",
+ "question_type": "single_choice",
+ "source_question": {
+  "id": "gd-mock-2026h2-s27-q67",
+  "season": 27,
+  "section": "科学推理",
+  "number": 67,
+  "material_id": null,
+  "stem": [
+   {
+    "type": "text",
+    "text": "下图所示的电路中，电源电压不变，闭合开关S后，滑动变阻器R的滑片从左向右移动的过程中，下列说法错误的是（    ）。"
+   },
+   {
+    "type": "figure",
+    "asset_id": "s27_p18_i01",
+    "path": "assets/s27_p18_i01.png",
+    "width_px": 574,
+    "height_px": 599,
+    "caption": "原卷第18页，第67题图"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "电流表 $A_1$ 的示数变小"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "电流表 $A_2$ 的示数不变"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "灯泡 $L_2$ 的亮度不变"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "灯泡 $L_1$ 的亮度不变"
+    }
+   ]
+  },
+  "source_pages": [
+   18
+  ],
+  "source_spans": [
+   {
+    "pdf_page": 18,
+    "bbox_pt": [
+     52.402,
+     300.735,
+     519.057,
+     313.153
+    ]
+   },
+   {
+    "pdf_page": 18,
+    "bbox_pt": [
+     68.048,
+     321.12,
+     225.484,
+     333.538
+    ]
+   },
+   {
+    "pdf_page": 18,
+    "bbox_pt": [
+     67.951,
+     337.096,
+     329.255,
+     615.078
+    ]
+   },
+   {
+    "pdf_page": 18,
+    "bbox_pt": [
+     68.048,
+     628.136,
+     184.119,
+     640.555
+    ]
+   },
+   {
+    "pdf_page": 18,
+    "bbox_pt": [
+     68.048,
+     648.521,
+     183.52,
+     660.939
+    ]
+   },
+   {
+    "pdf_page": 18,
+    "bbox_pt": [
+     68.048,
+     668.288,
+     171.687,
+     680.707
+    ]
+   },
+   {
+    "pdf_page": 18,
+    "bbox_pt": [
+     68.048,
+     688.674,
+     172.285,
+     701.093
+    ]
+   }
+  ],
+  "source_asset_ids": [
+   "s27_p18_i01",
+   "s27_p18_i02",
+   "s27_p18_i03",
+   "s27_p18_i04",
+   "s27_p18_i05"
+  ],
+  "answer": null,
+  "source": {
+   "source_name": "2026下半年省考第二十七季行测模考大赛（广东卷）.pdf",
+   "source_sha256": "10f074039c1223505bc696a613d6e0df07eb360e3ebcebd37abbaca945139425",
+   "pages": 24
+  },
+  "material": null
+ },
+ "source_answer": null,
+ "answer": "D",
+ "analysis": "选D。按中学题常用理想电表、电源恒压模型，L₂及A₂所在支路直接接在电源两端，其电流、亮度不变。另一支路为R₀串联“变阻器有效电阻与L₁的并联组合”。滑片右移使有效电阻增大，并联等效电阻增大，该支路电流和总电流A₁读数减小；R₀分压随之减小，并联部分及L₁两端电压反而升高，L₁变亮。所以D的“亮度不变”错误。不能把L₁误看成直接跨接电源。",
+ "selection_reason": "复杂接线先化为两并联支路，再判断串并联部分的电压变化。",
+ "edits": [],
+ "source_locators": {
+  "id": "gd-mock-2026h2-s27-q67",
+  "original_number": 67,
+  "source": {
+   "source_name": "2026下半年省考第二十七季行测模考大赛（广东卷）.pdf",
+   "source_sha256": "10f074039c1223505bc696a613d6e0df07eb360e3ebcebd37abbaca945139425",
+   "pages": 24
+  },
+  "source_pages": [
+   18
+  ]
+ },
+ "verification": {
+  "status": "editor_checked_pending_claude",
+  "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。",
+  "reference_answer_available": false,
+  "reference_answer_agreement": null
+ },
+ "source_notice": "原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。 未为降低难度而补写提示或重构选项。"
+}
+====================================================================================================
+{
+ "number": 68,
+ "source_id": "gd-mock-2026h2-s21-q68",
+ "source_bank": "guangdong_mock",
+ "source_file": "模考/2026下半年广东卷_16-33季_AI可读/全部题目.jsonl",
+ "section": "科学推理",
+ "subtype": "科学推理",
+ "question_type": "single_choice",
+ "source_question": {
+  "id": "gd-mock-2026h2-s21-q68",
+  "season": 21,
+  "section": "科学推理",
+  "number": 68,
+  "material_id": null,
+  "stem": [
+   {
+    "type": "text",
+    "text": "汽车排放的尾气中所含的一氧化碳，在四氧化三钴（ $\\mathrm{Co_3O_4}$ ）的催化作用下，于低温条件下便可与氧气发生反应生成二氧化碳。关于上述反应，下列说法正确的是（    ）。\n①该反应为化合反应\n②该反应为分解反应\n③该反应可降低汽车尾气对大气的污染\n④该反应前后四氧化三钴（ $\\mathrm{Co_3O_4}$ ）的质量保持不变\n⑤该反应中四氧化三钴（ $\\mathrm{Co_3O_4}$ ）会不断消耗，质量减少"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "①③⑤"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "②③④"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "①③④"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "②③⑤"
+    }
+   ]
+  },
+  "source_pages": [
+   18
+  ],
+  "source_spans": [
+   {
+    "pdf_page": 18,
+    "bbox_pt": [
+     52.402,
+     347.065,
+     526.703,
+     359.483
+    ]
+   },
+   {
+    "pdf_page": 18,
+    "bbox_pt": [
+     68.048,
+     366.832,
+     449.76,
+     379.251
+    ]
+   },
+   {
+    "pdf_page": 18,
+    "bbox_pt": [
+     68.048,
+     387.524,
+     168.754,
+     399.637
+    ]
+   },
+   {
+    "pdf_page": 18,
+    "bbox_pt": [
+     68.048,
+     407.292,
+     168.754,
+     419.404
+    ]
+   },
+   {
+    "pdf_page": 18,
+    "bbox_pt": [
+     68.048,
+     427.677,
+     258.465,
+     439.789
+    ]
+   },
+   {
+    "pdf_page": 18,
+    "bbox_pt": [
+     68.048,
+     447.444,
+     324.851,
+     459.557
+    ]
+   },
+   {
+    "pdf_page": 18,
+    "bbox_pt": [
+     68.048,
+     467.213,
+     347.277,
+     479.325
+    ]
+   },
+   {
+    "pdf_page": 18,
+    "bbox_pt": [
+     68.048,
+     490.38,
+     457.154,
+     502.799
+    ]
+   }
+  ],
+  "source_asset_ids": [
+   "s21_p18_i09",
+   "s21_p18_i10",
+   "s21_p18_i11"
+  ],
+  "answer": null,
+  "source": {
+   "source_name": "2026下半年省考第二十一季行测模考大赛（广东卷）.pdf",
+   "source_sha256": "b17d5b3baa812dc95bc5a6f7dd4d8bd2c5e0bacb4b5e74fb9f1ca227cd61b1d9",
+   "pages": 24
+  },
+  "material": null
+ },
+ "source_answer": null,
+ "answer": "C",
+ "analysis": "选C。反应为2CO＋O₂→2CO₂，多种反应物生成一种产物，属于化合反应而非分解反应，①对、②错。将有毒CO转为CO₂可减轻该类尾气污染，③对；这并不等于CO₂没有任何环境效应。催化剂在反应前后质量和化学性质不变，④对、⑤错，故组合为①③④。",
+ "selection_reason": "分类、污染物转化与催化剂守恒三方面合并，避免只选反应类型。",
+ "edits": [],
+ "source_locators": {
+  "id": "gd-mock-2026h2-s21-q68",
+  "original_number": 68,
+  "source": {
+   "source_name": "2026下半年省考第二十一季行测模考大赛（广东卷）.pdf",
+   "source_sha256": "b17d5b3baa812dc95bc5a6f7dd4d8bd2c5e0bacb4b5e74fb9f1ca227cd61b1d9",
+   "pages": 24
+  },
+  "source_pages": [
+   18
+  ]
+ },
+ "verification": {
+  "status": "editor_checked_pending_claude",
+  "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。",
+  "reference_answer_available": false,
+  "reference_answer_agreement": null
+ },
+ "source_notice": "原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。 未为降低难度而补写提示或重构选项。"
+}
+====================================================================================================
+{
+ "number": 69,
+ "source_id": "gd-mock-2026h2-s31-q70",
+ "source_bank": "guangdong_mock",
+ "source_file": "模考/2026下半年广东卷_16-33季_AI可读/全部题目.jsonl",
+ "section": "科学推理",
+ "subtype": "科学推理",
+ "question_type": "single_choice",
+ "source_question": {
+  "id": "gd-mock-2026h2-s31-q70",
+  "season": 31,
+  "section": "科学推理",
+  "number": 70,
+  "material_id": null,
+  "stem": [
+   {
+    "type": "text",
+    "text": "下列关于酶的说法正确的是（    ）。"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "酶由活细胞产生，也只能在活细胞中发挥作用"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "酶的化学成分均为蛋白质"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "过高或过低的温度均会彻底破坏酶的空间结构"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "酶促反应的反应速率受pH值影响很大"
+    }
+   ]
+  },
+  "source_pages": [
+   18
+  ],
+  "source_spans": [
+   {
+    "pdf_page": 18,
+    "bbox_pt": [
+     52.402,
+     489.145,
+     247.911,
+     501.563
+    ]
+   },
+   {
+    "pdf_page": 18,
+    "bbox_pt": [
+     68.048,
+     512.619,
+     303.236,
+     525.037
+    ]
+   },
+   {
+    "pdf_page": 18,
+    "bbox_pt": [
+     68.048,
+     532.386,
+     201.712,
+     544.805
+    ]
+   },
+   {
+    "pdf_page": 18,
+    "bbox_pt": [
+     68.048,
+     552.154,
+     302.637,
+     564.572
+    ]
+   },
+   {
+    "pdf_page": 18,
+    "bbox_pt": [
+     68.048,
+     572.539,
+     261.043,
+     584.958
+    ]
+   }
+  ],
+  "source_asset_ids": [],
+  "answer": null,
+  "source": {
+   "source_name": "2026下半年省考第三十一季行测模考大赛（广东卷）.pdf",
+   "source_sha256": "06193364ca96e42b186a34b27935e9f19ba4e02ee594840149ba2df191b987fb",
+   "pages": 24
+  },
+  "material": null
+ },
+ "source_answer": null,
+ "answer": "D",
+ "analysis": "选D。酶促反应通常对pH敏感，pH变化会影响酶活性，D正确。酶由活细胞产生，但从细胞提取后仍可在适宜条件下发挥催化作用，A错误；大多数酶是蛋白质，少数是具有催化作用的RNA，B错误；低温一般降低反应速率，不等于像高温变性那样彻底破坏空间结构，C错误。",
+ "selection_reason": "区分酶的产生地点与作用地点、低温抑制与变性，避免绝对化结论。",
+ "edits": [],
+ "source_locators": {
+  "id": "gd-mock-2026h2-s31-q70",
+  "original_number": 70,
+  "source": {
+   "source_name": "2026下半年省考第三十一季行测模考大赛（广东卷）.pdf",
+   "source_sha256": "06193364ca96e42b186a34b27935e9f19ba4e02ee594840149ba2df191b987fb",
+   "pages": 24
+  },
+  "source_pages": [
+   18
+  ]
+ },
+ "verification": {
+  "status": "editor_checked_pending_claude",
+  "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。",
+  "reference_answer_available": false,
+  "reference_answer_agreement": null
+ },
+ "source_notice": "原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。 未为降低难度而补写提示或重构选项。"
+}
+====================================================================================================
+{
+ "number": 70,
+ "source_id": "gd-mock-2026h2-s23-q70",
+ "source_bank": "guangdong_mock",
+ "source_file": "模考/2026下半年广东卷_16-33季_AI可读/全部题目.jsonl",
+ "section": "科学推理",
+ "subtype": "科学推理",
+ "question_type": "single_choice",
+ "source_question": {
+  "id": "gd-mock-2026h2-s23-q70",
+  "season": 23,
+  "section": "科学推理",
+  "number": 70,
+  "material_id": null,
+  "stem": [
+   {
+    "type": "text",
+    "text": "某地等高线地形图如下，下列说法正确的是（    ）。"
+   },
+   {
+    "type": "figure",
+    "asset_id": "s23_p19_i11",
+    "path": "assets/s23_p19_i11.png",
+    "width_px": 643,
+    "height_px": 450,
+    "caption": "原卷第19页，第70题图"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "G处是登山线路中优先选择的通行位置"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "CD虚线处所在地形为山谷，容易发育河流"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "A处地势高于乙山山顶，适合修建高山气象观测站"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "B处暴雨天气下容易汇集水流，出现山洪"
+    }
+   ]
+  },
+  "source_pages": [
+   19
+  ],
+  "source_spans": [
+   {
+    "pdf_page": 19,
+    "bbox_pt": [
+     52.402,
+     380.422,
+     326.408,
+     392.841
+    ]
+   },
+   {
+    "pdf_page": 19,
+    "bbox_pt": [
+     67.951,
+     396.398,
+     425.622,
+     646.582
+    ]
+   },
+   {
+    "pdf_page": 19,
+    "bbox_pt": [
+     68.048,
+     660.258,
+     266.54,
+     672.677
+    ]
+   },
+   {
+    "pdf_page": 19,
+    "bbox_pt": [
+     68.048,
+     680.026,
+     284.708,
+     692.444
+    ]
+   },
+   {
+    "pdf_page": 19,
+    "bbox_pt": [
+     68.048,
+     699.793,
+     322.01,
+     712.212
+    ]
+   },
+   {
+    "pdf_page": 19,
+    "bbox_pt": [
+     68.048,
+     720.178,
+     277.147,
+     732.597
+    ]
+   }
+  ],
+  "source_asset_ids": [
+   "s23_p19_i11"
+  ],
+  "answer": null,
+  "source": {
+   "source_name": "2026下半年省考第二十三季行测模考大赛（广东卷）.pdf",
+   "source_sha256": "84756de0a579cf7d6e40be45401796e46070fd50231368e97d844143ee10f57f",
+   "pages": 25
+  },
+  "material": null
+ },
+ "source_answer": null,
+ "answer": "D",
+ "analysis": "选D。B附近等高线向高处弯曲，表示山谷，降雨时容易汇水，暴雨下存在山洪风险。CD处等高线弯曲方向对应山脊而不是山谷，B项错误；G处等高线重叠为陡崖，不是优先通行位置；A为两高地之间较低的鞍部，不能高于乙山山顶，C错误。以上判断均以原图标高与线形为依据。",
+ "selection_reason": "等高线弯曲方向、鞍部与陡崖联合辨别，而非记单个地形名。",
+ "edits": [],
+ "source_locators": {
+  "id": "gd-mock-2026h2-s23-q70",
+  "original_number": 70,
+  "source": {
+   "source_name": "2026下半年省考第二十三季行测模考大赛（广东卷）.pdf",
+   "source_sha256": "84756de0a579cf7d6e40be45401796e46070fd50231368e97d844143ee10f57f",
+   "pages": 25
+  },
+  "source_pages": [
+   19
+  ]
+ },
+ "verification": {
+  "status": "editor_checked_pending_claude",
+  "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。",
+  "reference_answer_available": false,
+  "reference_answer_agreement": null
+ },
+ "source_notice": "原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。 未为降低难度而补写提示或重构选项。"
+}

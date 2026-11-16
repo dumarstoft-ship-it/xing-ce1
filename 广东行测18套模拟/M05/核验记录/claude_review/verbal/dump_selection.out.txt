@@ -1,0 +1,345 @@
+{
+ "number": 16,
+ "source_id": "ZJ2025-A类-021",
+ "source_bank": "jiangzhe",
+ "source_file": "江浙行测_AI题库/questions.jsonl",
+ "subtype": "言语",
+ "question_type": "single_choice",
+ "answer": "A",
+ "source_answer": "A",
+ "edits": [],
+ "selection_reason": "单空语义须合并“自身内容＋对方规则”，不只选褒义熟词。",
+ "verification": {
+  "status": "editor_checked_pending_claude",
+  "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。",
+  "reference_answer_available": true,
+  "reference_answer_agreement": true
+ }
+}
+STEM: null
+OPTIONS: null
+ANALYSIS: 选A。“熟悉外国人会感兴趣的中国故事”要求了解自身可传播的内容，“了解……西方媒体的运行规则”要求了解传播对象和环境，两方面合起来是“知己知彼”。“别出心裁”强调新颖，“胸有成竹”强调事前有把握，“兼收并蓄”强调广泛吸收，都不能准确概括前面的两层要求。
+OTHER: {"section": "言语理解与表达", "source_question": {"question_id": "ZJ2025-A类-021", "paper_id": "ZJ2025", "province": "浙江", "year": 2025, "paper_type": "A类", "section": "言语理解与表达", "original_number": 21, "instruction": null, "stem": "打造文化软实力要提升讲好中国故事的能力，传播者不仅要熟悉外国人会感兴趣的中国故事，还要能跨越文化\n差异障碍，了解占据主导地位的西方媒体的运行规则， ____ ，方有胜算。\n填入画横线部分最恰当的一项是：", "options": {"A": "知己知彼", "B": "别出心裁", "C": "胸有成竹", "D": "兼收并蓄"}, "options_mode": "text_or_mixed", "content": "打造文化软实力要提升讲好中国故事的能力，传播者不仅要熟悉外国人会感兴趣的中国故事，还要能跨越文化\n差异障碍，了解占据主导地位的西方媒体的运行规则， ____ ，方有胜算。\n填入画横线部分最恰当的一项是：\nA.知己知彼 B.别出心裁 C.胸有成竹 D.兼收并蓄", "figures": [], "materials": [], "material_ids": [], "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf", "blob_sha": "422a8d5a7c9c379fe3b10fc81eb6424f17b4bdbb", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2025%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf", "pdf_pages": [6], "regions": [{"page": 6, "bbox": [28.879276275634766, 126.97737121582031, 547.3163452148438, 189.94102478027344]}], "page_numbering": "PDF physical page, 1-based"}, "quality_flags": [], "notes": []}, "source_locators": {"id": "ZJ2025-A类-021", "original_number": 21, "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf", "blob_sha": "422a8d5a7c9c379fe3b10fc81eb6424f17b4bdbb", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2025%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf", "pdf_pages": [6], "regions": [{"page": 6, "bbox": [28.879276275634766, 126.97737121582031, 547.3163452148438, 189.94102478027344]}], "page_numbering": "PDF physical page, 1-based"}, "source_pages": null}, "source_notice": "原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。", "source_answer_reference": {"file": "江浙行测_AI题库/answers.jsonl", "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）解析.pdf", "blob_sha": "a4ae2b755ed2f64f3014b4f63b4f8f267775f2f8", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2025%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89%E8%A7%A3%E6%9E%90.pdf", "pdf_pages
+================================================================================
+{
+ "number": 17,
+ "source_id": "ZJ2023-A类-024",
+ "source_bank": "jiangzhe",
+ "source_file": "江浙行测_AI题库/questions.jsonl",
+ "subtype": "言语",
+ "question_type": "single_choice",
+ "answer": "C",
+ "source_answer": "C",
+ "edits": [],
+ "selection_reason": "从程度不足与说理效果之间建立对应，比较近义成语。",
+ "verification": {
+  "status": "editor_checked_pending_claude",
+  "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。",
+  "reference_answer_available": true,
+  "reference_answer_agreement": true
+ }
+}
+STEM: null
+OPTIONS: null
+ANALYSIS: 选C。第一空与“流于表面”“缺乏理论深度与厚度”照应，指学习、研究不深入，“浅尝辄止”最恰当；第二空落在说理效果上，缺乏深度便难以使人“信服”。“走马观花”侧重粗略观察，“舍本逐末”侧重主次倒置，“缘木求鱼”侧重方法、方向错误，均不及C准确。
+OTHER: {"section": "言语理解与表达", "source_question": {"question_id": "ZJ2023-A类-024", "paper_id": "ZJ2023", "province": "浙江", "year": 2023, "paper_type": "A类", "section": "言语理解与表达", "original_number": 24, "instruction": null, "stem": "有些教育者讲授思政课之所以效果不佳，一个重要的原因在于讲授的内容流于表面， ____ ，往往是从书本到\n书本，从理论到理论，致使授课看似在说理，实则缺乏理论深度与厚度，难以让人真正 ____ 。\n依次填入画横线部分最恰当的一项是：", "options": {"A": "舍本逐末 接受", "B": "走马观花 理解", "C": "浅尝辄止 信服", "D": "缘木求鱼 认可"}, "options_mode": "text_or_mixed", "content": "有些教育者讲授思政课之所以效果不佳，一个重要的原因在于讲授的内容流于表面， ____ ，往往是从书本到\n书本，从理论到理论，致使授课看似在说理，实则缺乏理论深度与厚度，难以让人真正 ____ 。\n依次填入画横线部分最恰当的一项是：\nA.舍本逐末 接受 B.走马观花 理解 C.浅尝辄止 信服 D.缘木求鱼 认可", "figures": [], "materials": [], "material_ids": [], "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2023年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf", "blob_sha": "5bcc6163c999c3910d10f36f6d8bea8a57df1417", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf", "pdf_pages": [6], "regions": [{"page": 6, "bbox": [28.879276275634766, 459.9385681152344, 547.3163452148438, 522.9019775390625]}], "page_numbering": "PDF physical page, 1-based"}, "quality_flags": [], "notes": []}, "source_locators": {"id": "ZJ2023-A类-024", "original_number": 24, "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2023年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf", "blob_sha": "5bcc6163c999c3910d10f36f6d8bea8a57df1417", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf", "pdf_pages": [6], "regions": [{"page": 6, "bbox": [28.879276275634766, 459.9385681152344, 547.3163452148438, 522.9019775390625]}], "page_numbering": "PDF physical page, 1-based"}, "source_pages": null}, "source_notice": "原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。", "source_answer_reference": {"file": "江浙行测_AI题库/answers.jsonl", "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2023年浙江省公务员录用考试《行测》真题（A类）（解析）.pdf", "blob_sha": "9c7d7f35278953cbcb7177a79f339c0a866a1c23", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E8%A7%A3%E6%9E%90%EF%BC%89.pdf", "p
+================================================================================
+{
+ "number": 18,
+ "source_id": "JS2023-A类-040",
+ "source_bank": "jiangzhe",
+ "source_file": "江浙行测_AI题库/questions.jsonl",
+ "subtype": "言语",
+ "question_type": "single_choice",
+ "answer": "A",
+ "source_answer": "A",
+ "edits": [],
+ "selection_reason": "三空联动：传承解释、不可强求、自然达成，避免只凭首空定项。",
+ "verification": {
+  "status": "editor_checked_pending_claude",
+  "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。",
+  "reference_answer_available": true,
+  "reference_answer_agreement": true
+ }
+}
+STEM: null
+OPTIONS: null
+ANALYSIS: 选A。第一空承接“理解、解释……人文经典”，“阐释”贴合。“不应该是预先设立的目标”说明创造性思想不宜强求，“可遇不可求”准确；第三空说明长期“修炼”后条件成熟而自然实现，用“水到渠成”。C的“可望不可即”意味着难以达到，与才能杰出者能够提出创造性思想不符；B、D也未完整体现“不能把创新预先规定为目标”的关系。
+OTHER: {"section": "言语理解与表达", "source_question": {"question_id": "JS2023-A类-040", "paper_id": "JS2023", "province": "江苏", "year": 2023, "paper_type": "A类", "section": "言语理解与表达", "original_number": 40, "instruction": null, "stem": "在人文领域，人文学者担负的任务首先而且主要是“传承”人类文化，是理解、解释从而\n传播人文经典。评价一个人文学者学术水平的基本标准是，他熟悉多少经典著作，能在多大\n程度上_______经典著作，本着当代人面临的问题开展与伟大经典的对话。至于创造性思想，\n那是一种________的事情，有些才能杰出者或许可以提出富有创造性的思想，甚至提出自己\n独特的理论体系，但那是人文学者“修炼”过程中________的事情，不应该是预先设立的目标。\n依次填入画横线处最恰当的一项是", "options": {"A": "阐释 可遇不可求 水到渠成", "B": "精通 难能可贵 功到自然成", "C": "诠释 可望不可即 自然而然", "D": "通晓 不可多得 铁杵磨成针"}, "options_mode": "text_or_mixed", "content": "在人文领域，人文学者担负的任务首先而且主要是“传承”人类文化，是理解、解释从而\n传播人文经典。评价一个人文学者学术水平的基本标准是，他熟悉多少经典著作，能在多大\n程度上_______经典著作，本着当代人面临的问题开展与伟大经典的对话。至于创造性思想，\n那是一种________的事情，有些才能杰出者或许可以提出富有创造性的思想，甚至提出自己\n独特的理论体系，但那是人文学者“修炼”过程中________的事情，不应该是预先设立的目标。\n依次填入画横线处最恰当的一项是\nA.阐释 可遇不可求 水到渠成\nB.精通 难能可贵 功到自然成\nC.诠释 可望不可即 自然而然\nD.通晓 不可多得 铁杵磨成针", "figures": [], "materials": [], "material_ids": [], "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2023年江苏公务员考试《行测》真题（A类）.pdf", "blob_sha": "07c8f03595cce0f2acb456b5c5573f24715f4516", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89.pdf", "pdf_pages": [11, 12], "regions": [{"page": 11, "bbox": [89.99954223632812, 618.8917846679688, 510.2495422363281, 756.2945556640625]}, {"page": 12, "bbox": [90.0, 72.89115142822266, 235.92848205566406, 85.49394226074219]}], "page_numbering": "PDF physical page, 1-based"}, "quality_flags": [], "notes": []}, "source_locators": {"id": "JS2023-A类-040", "original_number": 40, "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2023年江苏公务员考试《行测》真题（A类）.pdf", "blob_sha": "07c8f03595cce0f2acb456b5c5573f24715f4516", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89.pdf", "pdf_pages": [11, 12], "regions": [{"page": 11, "bbox": [89.99954223632812, 618.8917846679688, 510.2495422363281, 756.2945556640625]}, {"page": 12, "bbox": [90.0, 72.89115142822266, 235.92848205566406, 85.49394226074219]}], "page_numbering": "PDF physical page, 1-based"}, "source_pages": null}, "source_notice": "原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。", "source_answer_reference": {"file": "江浙行测_AI题库/answers.jsonl", "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2023年江苏公务员考试《行测》真题（A类）解析.pdf", "blob_sha": "43b8510451230c8f2e5419ca08bb34a9aa0d5fd0", "url": "https://github.com/dumarsto
+================================================================================
+{
+ "number": 19,
+ "source_id": "ZJ2025-A类-027",
+ "source_bank": "jiangzhe",
+ "source_file": "江浙行测_AI题库/questions.jsonl",
+ "subtype": "言语",
+ "question_type": "single_choice",
+ "answer": "B",
+ "source_answer": "B",
+ "edits": [],
+ "selection_reason": "区分信息规模增长与信息变化速度；保留词组之间的原空格。",
+ "verification": {
+  "status": "editor_checked_pending_claude",
+  "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。",
+  "reference_answer_available": true,
+  "reference_answer_agreement": true
+ }
+}
+STEM: null
+OPTIONS: null
+ANALYSIS: 选B。每位用户都成为传播中心，直接推动的是信息流量不断增加，“与日俱增”合适；后一句强调信息从被选择的对象变成对人产生控制性影响的力量，用“支配”。“瞬息万变”强调变化迅速而非流量增长；“突飞猛进”常形容事业、学习等的快速进步；“水涨船高”强调随另一因素上升而提高，在这里不如“与日俱增”直接。
+OTHER: {"section": "言语理解与表达", "source_question": {"question_id": "ZJ2025-A类-027", "paper_id": "ZJ2025", "province": "浙江", "year": 2025, "paper_type": "A类", "section": "言语理解与表达", "original_number": 27, "instruction": null, "stem": "信息网络时代，个人门户的传播模式占据主导地位，每一位用户作为一个节点，成为一个传播中心，信息流量\n____ 。用户与信息的角色定位也从开始时的双向选择，演变为信息 ____ 人类。\n依次填入画横线部分最恰当的一项是：", "options": {"A": "水涨船高 主宰", "B": "与日俱增 支配", "C": "突飞猛进 驾驭", "D": "瞬息万变 操纵"}, "options_mode": "text_or_mixed", "content": "信息网络时代，个人门户的传播模式占据主导地位，每一位用户作为一个节点，成为一个传播中心，信息流量\n____ 。用户与信息的角色定位也从开始时的双向选择，演变为信息 ____ 人类。\n依次填入画横线部分最恰当的一项是：\nA.水涨船高 主宰 B.与日俱增 支配 C.突飞猛进 驾驭 D.瞬息万变 操纵", "figures": [], "materials": [], "material_ids": [], "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf", "blob_sha": "422a8d5a7c9c379fe3b10fc81eb6424f17b4bdbb", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2025%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf", "pdf_pages": [6], "regions": [{"page": 6, "bbox": [28.879276275634766, 613.7554321289062, 549.9417114257812, 676.7188720703125]}], "page_numbering": "PDF physical page, 1-based"}, "quality_flags": [], "notes": []}, "source_locators": {"id": "ZJ2025-A类-027", "original_number": 27, "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf", "blob_sha": "422a8d5a7c9c379fe3b10fc81eb6424f17b4bdbb", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2025%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf", "pdf_pages": [6], "regions": [{"page": 6, "bbox": [28.879276275634766, 613.7554321289062, 549.9417114257812, 676.7188720703125]}], "page_numbering": "PDF physical page, 1-based"}, "source_pages": null}, "source_notice": "原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。", "source_answer_reference": {"file": "江浙行测_AI题库/answers.jsonl", "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）解析.pdf", "blob_sha": "a4ae2b755ed2f64f3014b4f63b4f8f267775f2f8", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2025%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89%
+================================================================================
+{
+ "number": 20,
+ "source_id": "JS2022-A类-042",
+ "source_bank": "jiangzhe",
+ "source_file": "江浙行测_AI题库/questions.jsonl",
+ "subtype": "言语",
+ "question_type": "single_choice",
+ "answer": "D",
+ "source_answer": "D",
+ "edits": [],
+ "selection_reason": "考古记录与文献印象的边界，需要读出转折后的学科立场。",
+ "verification": {
+  "status": "editor_checked_pending_claude",
+  "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。",
+  "reference_answer_available": true,
+  "reference_answer_agreement": true
+ }
+}
+STEM: null
+OPTIONS: null
+ANALYSIS: 选D。来到文献中熟悉的地点，用“耳熟能详”；铭文及古代文献中有限的文字，用“只言片语”。末尾“然而”转入警惕：不能因为已有文献印象生动、感人，就让考古记录失去独立判断的地位，故“独立性”准确。A的“刀光剑影”、C的“鼓角齐鸣”均不能作为描绘古代社会面貌的文字载体，B的“如数家珍”也不适宜直接修饰这里的地点。
+OTHER: {"section": "言语理解与表达", "source_question": {"question_id": "JS2022-A类-042", "paper_id": "JS2022", "province": "江苏", "year": 2022, "paper_type": "A类", "section": "言语理解与表达", "original_number": 42, "instruction": null, "stem": "访古是十分感人的经历，尤其是当我们踏上古代文献中________的地点时。亲手触摸庄重\n威严的利簋，秀丽的铭文好像把我们拉回到三千年前牧野之战的场景，________中描绘的古代社会\n面貌在脑海中清晰了起来，我们感受到了历史迎面扑来的强烈震颤。这种感觉，对于考古学家来说\n可谓一种致命的“诱惑”。然而，身为一名严谨科学的从业者，必须对这种诱惑保持足够的警惕，维\n护考古记录的________，这是一名考古学者的自警，也是整个考古学学科的自尊。\n依次填入画横线处最恰当的一项是:", "options": {"A": "如雷贯耳刀光剑影客观性", "B": "如数家珍白纸黑字严肃性", "C": "司空见惯鼓角齐鸣主体性", "D": "耳熟能详只言片语独立性"}, "options_mode": "text_or_mixed", "content": "访古是十分感人的经历，尤其是当我们踏上古代文献中________的地点时。亲手触摸庄重\n威严的利簋，秀丽的铭文好像把我们拉回到三千年前牧野之战的场景，________中描绘的古代社会\n面貌在脑海中清晰了起来，我们感受到了历史迎面扑来的强烈震颤。这种感觉，对于考古学家来说\n可谓一种致命的“诱惑”。然而，身为一名严谨科学的从业者，必须对这种诱惑保持足够的警惕，维\n护考古记录的________，这是一名考古学者的自警，也是整个考古学学科的自尊。\n依次填入画横线处最恰当的一项是:\nA、如雷贯耳刀光剑影客观性\nB、如数家珍白纸黑字严肃性\nC、司空见惯鼓角齐鸣主体性\nD、耳熟能详只言片语独立性", "figures": [], "materials": [], "material_ids": [], "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2022年江苏公务员考试《行测》真题（A类）....pdf", "blob_sha": "0c2016b9c742eda719a376a8a63c41daa6d3ec3b", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2022%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89....pdf", "pdf_pages": [7, 8], "regions": [{"page": 7, "bbox": [36.0, 642.4819946289062, 557.52001953125, 784.4660034179688]}, {"page": 8, "bbox": [60.0, 35.641998291015625, 223.32000732421875, 53.06599807739258]}], "page_numbering": "PDF physical page, 1-based"}, "quality_flags": [], "notes": []}, "source_locators": {"id": "JS2022-A类-042", "original_number": 42, "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2022年江苏公务员考试《行测》真题（A类）....pdf", "blob_sha": "0c2016b9c742eda719a376a8a63c41daa6d3ec3b", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2022%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89....pdf", "pdf_pages": [7, 8], "regions": [{"page": 7, "bbox": [36.0, 642.4819946289062, 557.52001953125, 784.4660034179688]}, {"page": 8, "bbox": [60.0, 35.641998291015625, 223.32000732421875, 53.06599807739258]}], "page_numbering": "PDF physical page, 1-based"}, "source_pages": null}, "source_notice": "原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。 当前源转写四个选项内部未分词留空，本稿保留所接收文本，未自行造称原卷空格；打印时可对原卷检查排版。", "source_answer_reference": {"file": "江浙行测_AI题库/answers.jsonl", "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2022年江苏公务员考试《行测》（A类）及解析.pdf", "blob_sha": "68a5929db30d504c674f19703f9b7e262043621a", "url": "https://
+================================================================================
+{
+ "number": 21,
+ "source_id": "JS2023-A类-023",
+ "source_bank": "jiangzhe",
+ "source_file": "江浙行测_AI题库/questions.jsonl",
+ "subtype": "言语",
+ "question_type": "single_choice",
+ "answer": "A",
+ "source_answer": "A",
+ "edits": [],
+ "selection_reason": "区分规范意义的可预测性与事实上的预测能力，不能偷换为绝对不能预测。",
+ "verification": {
+  "status": "editor_checked_pending_claude",
+  "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。",
+  "reference_answer_available": true,
+  "reference_answer_agreement": true
+ }
+}
+STEM: null
+OPTIONS: null
+ANALYSIS: 选A。文段否定的是两种概念可以等同，并没有断言任何人、任何技术都不能预测某次裁判；反而明确提到“偶然地预测到”及“有规律地预测到”这些可能。A把“不等同”扩大成“不可被预测”，与原文不符。C直接对应一般法律规则的要求；B没有把技术预测说成必然可靠，D也不把预测本身等同于法院裁判，均不构成A这种明确的绝对化否定。
+OTHER: {"section": "言语理解与表达", "source_question": {"question_id": "JS2023-A类-023", "paper_id": "JS2023", "province": "江苏", "year": 2023, "paper_type": "A类", "section": "言语理解与表达", "original_number": 23, "instruction": null, "stem": "法律或司法裁判的确应具备可预测性，但可预测性指的只是司法裁判应建立在事先已经\n被公布的一般法律规则的基础之上。它不是指法院或法官作出的判决实际上被某个公民或社\n会公众所预测到，无论是被他们自己偶然地预测到，还是借助于人工智能或算法系统被有规\n律地预测到。因此，基于技术对司法裁判的预测不等同于司法裁判的可预测性，前者涉及事\n实上的预测能力，而后者涉及法律上的可预测性。\n根据这段文字，下列说法不正确的是", "options": {"A": "法院法官作出的司法裁判是不可被预测的", "B": "基于人工智能预测的司法裁判不一定可靠", "C": "司法裁判的可预测性建立在法律规则之上", "D": "基于技术对裁判的预测不能等同法院裁判"}, "options_mode": "text_or_mixed", "content": "法律或司法裁判的确应具备可预测性，但可预测性指的只是司法裁判应建立在事先已经\n被公布的一般法律规则的基础之上。它不是指法院或法官作出的判决实际上被某个公民或社\n会公众所预测到，无论是被他们自己偶然地预测到，还是借助于人工智能或算法系统被有规\n律地预测到。因此，基于技术对司法裁判的预测不等同于司法裁判的可预测性，前者涉及事\n实上的预测能力，而后者涉及法律上的可预测性。\n根据这段文字，下列说法不正确的是\nA.法院法官作出的司法裁判是不可被预测的\nB.基于人工智能预测的司法裁判不一定可靠\nC.司法裁判的可预测性建立在法律规则之上\nD.基于技术对裁判的预测不能等同法院裁判", "figures": [], "materials": [], "material_ids": [], "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2023年江苏公务员考试《行测》真题（A类）.pdf", "blob_sha": "07c8f03595cce0f2acb456b5c5573f24715f4516", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89.pdf", "pdf_pages": [7], "regions": [{"page": 7, "bbox": [90.00004577636719, 603.29248046875, 505.20758056640625, 756.2952270507812]}], "page_numbering": "PDF physical page, 1-based"}, "quality_flags": [], "notes": []}, "source_locators": {"id": "JS2023-A类-023", "original_number": 23, "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2023年江苏公务员考试《行测》真题（A类）.pdf", "blob_sha": "07c8f03595cce0f2acb456b5c5573f24715f4516", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89.pdf", "pdf_pages": [7], "regions": [{"page": 7, "bbox": [90.00004577636719, 603.29248046875, 505.20758056640625, 756.2952270507812]}], "page_numbering": "PDF physical page, 1-based"}, "source_pages": null}, "source_notice": "原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。", "source_answer_reference": {"file": "江浙行测_AI题库/answers.jsonl", "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2023年江苏公务员考试《行测》真题（A类）解析.pdf", "blob_sha": "43b8510451230c8f2e5419ca08bb34a9aa0d5fd0", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E7%B1%BB%
+================================================================================
+{
+ "number": 22,
+ "source_id": "JS2023-A类-027",
+ "source_bank": "jiangzhe",
+ "source_file": "江浙行测_AI题库/questions.jsonl",
+ "subtype": "言语",
+ "question_type": "single_choice",
+ "answer": "B",
+ "source_answer": "B",
+ "edits": [],
+ "selection_reason": "限定词的力度辨别：相似的可能性不能改成无条件事实。",
+ "verification": {
+  "status": "editor_checked_pending_claude",
+  "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。",
+  "reference_answer_available": true,
+  "reference_answer_agreement": true
+ }
+}
+STEM: null
+OPTIONS: null
+ANALYSIS: 选B。原文说“有时候”“在某种程度上”“似乎”利用相似的结构原理工作，包含多重限定；B去掉限定，直接认定两者利用相近原理工作，表述过强。A只说“有类似之处”，符合部分数学结构与大脑认知模型相似；C对应彼此借鉴思路；D对应材料和信号处理方式的巨大差别。
+OTHER: {"section": "言语理解与表达", "source_question": {"question_id": "JS2023-A类-027", "paper_id": "JS2023", "province": "江苏", "year": 2023, "paper_type": "A类", "section": "言语理解与表达", "original_number": 27, "instruction": null, "stem": "人工智能应该以与人类智能相同的方式工作，在逻辑上是没有道理的，这也是用形容词\n“人工”的一个原因。然而，这些由电子电路体现的数学结构，和神经科学家开发的大脑认知\n模型有一些相似之处。因此，在人工智能和认知科学之间出现了一个创造性的反馈回路，它\n们彼此借鉴对方的思路。有时候在某种程度上，我们的大脑和人造大脑似乎是利用相似的结\n构原理来工作的。然而，从构成的材料和信号处理过程的方式来看，它们的差别当然是非常\n大的。\n下列说法与文意不符的是", "options": {"A": "人工智能和人类大脑认知模式有类似之处", "B": "人工智能与人类大脑利用相近的原理工作", "C": "人工智能借鉴了认知科学的有关研究成果", "D": "人工智能信号处理方式与人脑有很大差别"}, "options_mode": "text_or_mixed", "content": "人工智能应该以与人类智能相同的方式工作，在逻辑上是没有道理的，这也是用形容词\n“人工”的一个原因。然而，这些由电子电路体现的数学结构，和神经科学家开发的大脑认知\n模型有一些相似之处。因此，在人工智能和认知科学之间出现了一个创造性的反馈回路，它\n们彼此借鉴对方的思路。有时候在某种程度上，我们的大脑和人造大脑似乎是利用相似的结\n构原理来工作的。然而，从构成的材料和信号处理过程的方式来看，它们的差别当然是非常\n大的。\n下列说法与文意不符的是\nA.人工智能和人类大脑认知模式有类似之处\nB.人工智能与人类大脑利用相近的原理工作\nC.人工智能借鉴了认知科学的有关研究成果\nD.人工智能信号处理方式与人脑有很大差别", "figures": [], "materials": [], "material_ids": [], "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2023年江苏公务员考试《行测》真题（A类）.pdf", "blob_sha": "07c8f03595cce0f2acb456b5c5573f24715f4516", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89.pdf", "pdf_pages": [8, 9], "regions": [{"page": 8, "bbox": [90.00042724609375, 603.2921142578125, 505.2094421386719, 756.2948608398438]}, {"page": 9, "bbox": [90.0, 72.89115142822266, 288.36383056640625, 85.4939956665039]}], "page_numbering": "PDF physical page, 1-based"}, "quality_flags": [], "notes": []}, "source_locators": {"id": "JS2023-A类-027", "original_number": 27, "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2023年江苏公务员考试《行测》真题（A类）.pdf", "blob_sha": "07c8f03595cce0f2acb456b5c5573f24715f4516", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89.pdf", "pdf_pages": [8, 9], "regions": [{"page": 8, "bbox": [90.00042724609375, 603.2921142578125, 505.2094421386719, 756.2948608398438]}, {"page": 9, "bbox": [90.0, 72.89115142822266, 288.36383056640625, 85.4939956665039]}], "page_numbering": "PDF physical page, 1-based"}, "source_pages": null}, "source_notice": "原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。", "source_answer_reference": {"file": "江浙行测_AI题库/answers.jsonl", "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2023年江苏公务员考试《行测》真题（A类）解析.pdf", "blob_sha": "43b8510451230c8f2e5419ca08bb34a9aa0d5fd0", "url": "https://github.com/duma
+================================================================================
+{
+ "number": 23,
+ "source_id": "ZJ2023-A类-039",
+ "source_bank": "jiangzhe",
+ "source_file": "江浙行测_AI题库/questions.jsonl",
+ "subtype": "言语",
+ "question_type": "single_choice",
+ "answer": "C",
+ "source_answer": "C",
+ "edits": [],
+ "selection_reason": "文化例子与技术主旨的层级区分，不把历史用途当起源。",
+ "verification": {
+  "status": "editor_checked_pending_claude",
+  "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。",
+  "reference_answer_available": true,
+  "reference_answer_agreement": true
+ }
+}
+STEM: null
+OPTIONS: null
+ANALYSIS: 选C。牡丹、玉兰是引子，文段随后解释“唐花”的做法，并指出类似温室的加温技术在汉代已有实用用途，整体说明我国古代已有实用的温室技术。A、B分别停留在引子和术语说明，未覆盖后文；“汉代更多是为了满足……需求”不能推出该技术必定起源于这一需求，D把用途当成起源。
+OTHER: {"section": "言语理解与表达", "source_question": {"question_id": "ZJ2023-A类-039", "paper_id": "ZJ2023", "province": "浙江", "year": 2023, "paper_type": "A类", "section": "言语理解与表达", "original_number": 39, "instruction": null, "stem": "牡丹和玉兰都不会在正月里开花，但是《岁朝图》里却出现这两种花卉，并且都代表“玉堂富贵”的意思。古\n人为了让这些花不按时令盛开，想到了一个办法，叫唐花，有时也写成火字旁的“煻”，煻就是烧火的意思，\n类似我们今天的温室技术。冬天在温室里加温，催花早放。这样的技术其实在汉代就已经有了，不过在汉代的\n时候更多是为了满足皇帝冬天吃蔬菜的需求。\n这段文字意在说明：", "options": {"A": "《岁朝图》里牡丹和玉兰花的象征意义", "B": "“唐花”这一专门术语的由来以及含义", "C": "我国古代已经出现了实用的温室技术", "D": "温室技术源于皇帝冬天吃蔬菜的需求"}, "options_mode": "text_or_mixed", "content": "牡丹和玉兰都不会在正月里开花，但是《岁朝图》里却出现这两种花卉，并且都代表“玉堂富贵”的意思。古\n人为了让这些花不按时令盛开，想到了一个办法，叫唐花，有时也写成火字旁的“煻”，煻就是烧火的意思，\n类似我们今天的温室技术。冬天在温室里加温，催花早放。这样的技术其实在汉代就已经有了，不过在汉代的\n时候更多是为了满足皇帝冬天吃蔬菜的需求。\n这段文字意在说明：\nA.《岁朝图》里牡丹和玉兰花的象征意义 B.“唐花”这一专门术语的由来以及含义\nC.我国古代已经出现了实用的温室技术 D.温室技术源于皇帝冬天吃蔬菜的需求", "figures": [], "materials": [], "material_ids": [], "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2023年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf", "blob_sha": "5bcc6163c999c3910d10f36f6d8bea8a57df1417", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf", "pdf_pages": [8, 9], "regions": [{"page": 8, "bbox": [28.879276275634766, 749.0401000976562, 547.3163452148438, 776.7923583984375]}, {"page": 9, "bbox": [43.24169921875, 91.76667785644531, 547.3163452148438, 170.79136657714844]}], "page_numbering": "PDF physical page, 1-based"}, "quality_flags": [], "notes": []}, "source_locators": {"id": "ZJ2023-A类-039", "original_number": 39, "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2023年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf", "blob_sha": "5bcc6163c999c3910d10f36f6d8bea8a57df1417", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf", "pdf_pages": [8, 9], "regions": [{"page": 8, "bbox": [28.879276275634766, 749.0401000976562, 547.3163452148438, 776.7923583984375]}, {"page": 9, "bbox": [43.24169921875, 91.76667785644531, 547.3163452148438, 170.79136657714844]}], "page_numbering": "PDF physical page, 1-based"}, "source_pages": null}, "source_notice": "原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。", "source_answer_reference": {"file": "江浙行测_AI题库/answers.jsonl", "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2023年浙江省公务员录用考试《
+================================================================================
+{
+ "number": 24,
+ "source_id": "ZJ2025-A类-042",
+ "source_bank": "jiangzhe",
+ "source_file": "江浙行测_AI题库/questions.jsonl",
+ "subtype": "言语",
+ "question_type": "single_choice",
+ "answer": "B",
+ "source_answer": "B",
+ "edits": [],
+ "selection_reason": "词语指代须落在方法本身，辨别方法、目标与效果。",
+ "verification": {
+  "status": "editor_checked_pending_claude",
+  "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。",
+  "reference_answer_available": true,
+  "reference_answer_agreement": true
+ }
+}
+STEM: null
+OPTIONS: null
+ANALYSIS: 选B。画线词后面紧接着“简单来说就是解耦、提取内容、韵律、音色等语音属性”，解释的核心是分离、提取语音属性。B在四项中最接近这一操作层面的含义。A是识别与传达的目标，D是提升准确率的效果，C主要概括降低噪音干扰而没有抓住多维语音属性的分离。B中的“不同声源”概括不如原文“语音属性”精确，但与其余三项相比仍为源题所取的最佳对应；不为消除这种表达差异重写选项。
+OTHER: {"section": "言语理解与表达", "source_question": {"question_id": "ZJ2025-A类-042", "paper_id": "ZJ2025", "province": "浙江", "year": 2025, "paper_type": "A类", "section": "言语理解与表达", "original_number": 42, "instruction": null, "stem": "要让机器听清、听懂人类语言并不是一件容易的事。语音识别研究中有一道最具挑战性的典型难题被称为“鸡\n尾酒会”效应，即远场环境、噪声干扰、多人语音混叠等现象导致的语音识别困难。针对这一难题，研发团队\n提出了多通道语音信号时空分离建模方法，即先将人声和不同的噪音分离，再进行建模。同时，团队还提出多\n维度语音属性<u>解耦表征</u>方法。简单来说就是解耦、提取内容、韵律、音色等语音属性，以便更准确地识别和传\n达语音信息，使得复杂场景下语音识别准确率得到显著提升。\n根据上下文，画线词“解耦表征”的意思是：", "options": {"A": "更准确地识别和传达语音信息的方法", "B": "根据语音属性将不同声源的语音分离出来", "C": "利用技术降低噪音影响、加强语音识别的方法", "D": "多维度分析以提升复杂场景下语音识别准确率"}, "options_mode": "text_or_mixed", "content": "要让机器听清、听懂人类语言并不是一件容易的事。语音识别研究中有一道最具挑战性的典型难题被称为“鸡\n尾酒会”效应，即远场环境、噪声干扰、多人语音混叠等现象导致的语音识别困难。针对这一难题，研发团队\n提出了多通道语音信号时空分离建模方法，即先将人声和不同的噪音分离，再进行建模。同时，团队还提出多\n维度语音属性<u>解耦表征</u>方法。简单来说就是解耦、提取内容、韵律、音色等语音属性，以便更准确地识别和传\n达语音信息，使得复杂场景下语音识别准确率得到显著提升。\n根据上下文，画线词“解耦表征”的意思是：\nA.更准确地识别和传达语音信息的方法 B.根据语音属性将不同声源的语音分离出来\nC.利用技术降低噪音影响、加强语音识别的方法 D.多维度分析以提升复杂场景下语音识别准确率", "figures": [], "materials": [], "material_ids": [], "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf", "blob_sha": "422a8d5a7c9c379fe3b10fc81eb6424f17b4bdbb", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2025%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf", "pdf_pages": [9, 10], "regions": [{"page": 9, "bbox": [28.879276275634766, 708.8872680664062, 547.3163452148438, 752.7010498046875]}, {"page": 10, "bbox": [43.24169921875, 91.76618957519531, 547.3163452148438, 170.79087829589844]}], "page_numbering": "PDF physical page, 1-based"}, "quality_flags": [], "notes": []}, "source_locators": {"id": "ZJ2025-A类-042", "original_number": 42, "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf", "blob_sha": "422a8d5a7c9c379fe3b10fc81eb6424f17b4bdbb", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2025%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf", "pdf_pages": [9, 10], "regions": [{"page": 9, "bbox": [28.879276275634766, 708.8872680664062, 547.3163452148438, 752.7010498046875]}, {"page": 10, "bbox": [43.24169921875, 91.76618957519531, 547.3163452148438, 170.79087829589844]}], "page_numbering": "PDF physical page, 1-based"}, "source_pages": null}, "source_notice": "原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。 解析已说明最佳选项与其他表述之间的边界，列为独立审核重点；不以改写选项处理主观判断。", "s
+================================================================================
+{
+ "number": 25,
+ "source_id": "JS2022-A类-022",
+ "source_bank": "jiangzhe",
+ "source_file": "江浙行测_AI题库/questions.jsonl",
+ "subtype": "言语",
+ "question_type": "single_choice",
+ "answer": "B",
+ "source_answer": "B",
+ "edits": [],
+ "selection_reason": "反对误用不等于反对工具本身，检查否定范围。",
+ "verification": {
+  "status": "editor_checked_pending_claude",
+  "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。",
+  "reference_answer_available": true,
+  "reference_answer_agreement": true
+ }
+}
+STEM: null
+OPTIONS: null
+ANALYSIS: 选B。文段批评的是外行或管理者把示意图当成学科交叉的全部事实，即“误解和误用”；它并未否定用几何图进行示意表达本身。B把使用者的错误理解转移成表达方法一定错误。A、C符合文段对简单几何交集、形式有限的批评，D对应开头全新独立学科创生越来越少。
+OTHER: {"section": "言语理解与表达", "source_question": {"question_id": "JS2022-A类-022", "paper_id": "JS2022", "province": "江苏", "year": 2022, "paper_type": "A类", "section": "言语理解与表达", "original_number": 22, "instruction": null, "stem": "随着学科的不断延伸、细分、侧生和增多，现在全新的独立学科创生越来越少，以至于更\n多的新学科是由多个已有学科交融孕育而成的。这些新学科被称为交叉学科。研究学科学的人，为\n了表征新学科的创生规律，就归纳出一些交叉学科的创生模式，并经常用简单直观的集合或几何图\n交叉加以示意表达。这类表达方式被外行人或寻求简单化的管理者误解和误用，让很多人认为交叉\n学科就是现有多学科的几何交集，学科交叉的形式是有限的，是可以图示化的，等等。\n下列说法与文意不符的是：", "options": {"A": "交叉学科的创生模式并非简单的多学科交集", "B": "用几何图交叉表达交叉学科的模式是错误的", "C": "交叉学科的形式实际上具有非常多的可能性", "D": "当下产生全新的独立学科的可能性越来越小"}, "options_mode": "text_or_mixed", "content": "随着学科的不断延伸、细分、侧生和增多，现在全新的独立学科创生越来越少，以至于更\n多的新学科是由多个已有学科交融孕育而成的。这些新学科被称为交叉学科。研究学科学的人，为\n了表征新学科的创生规律，就归纳出一些交叉学科的创生模式，并经常用简单直观的集合或几何图\n交叉加以示意表达。这类表达方式被外行人或寻求简单化的管理者误解和误用，让很多人认为交叉\n学科就是现有多学科的几何交集，学科交叉的形式是有限的，是可以图示化的，等等。\n下列说法与文意不符的是：\nA、交叉学科的创生模式并非简单的多学科交集\nB、用几何图交叉表达交叉学科的模式是错误的\nC、交叉学科的形式实际上具有非常多的可能性\nD、当下产生全新的独立学科的可能性越来越小", "figures": [], "materials": [], "material_ids": [], "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2022年江苏公务员考试《行测》真题（A类）....pdf", "blob_sha": "0c2016b9c742eda719a376a8a63c41daa6d3ec3b", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2022%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89....pdf", "pdf_pages": [3], "regions": [{"page": 3, "bbox": [36.0, 595.9219970703125, 553.0800170898438, 753.385009765625]}], "page_numbering": "PDF physical page, 1-based"}, "quality_flags": [], "notes": []}, "source_locators": {"id": "JS2022-A类-022", "original_number": 22, "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2022年江苏公务员考试《行测》真题（A类）....pdf", "blob_sha": "0c2016b9c742eda719a376a8a63c41daa6d3ec3b", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2022%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E7%9C%9F%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89....pdf", "pdf_pages": [3], "regions": [{"page": 3, "bbox": [36.0, 595.9219970703125, 553.0800170898438, 753.385009765625]}], "page_numbering": "PDF physical page, 1-based"}, "source_pages": null}, "source_notice": "原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。", "source_answer_reference": {"file": "江浙行测_AI题库/answers.jsonl", "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2022年江苏公务员考试《行测》（A类）及解析.pdf", "blob_sha": "68a5929db30d504c674f19703f9b7e262043621a", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2022%E5%B9%B4%E6%B1%9F%E8%8B%8F%E5%85%AC%E5%8A%A1%E5%91%98%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%
+================================================================================
+{
+ "number": 26,
+ "source_id": "ZJ2025-A类-049",
+ "source_bank": "jiangzhe",
+ "source_file": "江浙行测_AI题库/questions.jsonl",
+ "subtype": "言语",
+ "question_type": "single_choice",
+ "answer": "D",
+ "source_answer": "D",
+ "edits": [],
+ "selection_reason": "抓住“需求变化→供给和服务升级”的完整因果链，区分局部对策。",
+ "verification": {
+  "status": "editor_checked_pending_claude",
+  "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。",
+  "reference_answer_available": true,
+  "reference_answer_agreement": true
+ }
+}
+STEM: null
+OPTIONS: null
+ANALYSIS: 选D。文段从游客追求极致体验、全时段需求旺盛谈起，继而说明旅游城市须提升硬件、软性服务，最后落在城市服务治理整体提升上，主线是新需求推动城市服务升级。A只有原因，B不是文段着力点，C只覆盖消费场景和业态变化，未概括服务治理这一层。
+OTHER: {"section": "言语理解与表达", "source_question": {"question_id": "ZJ2025-A类-049", "paper_id": "ZJ2025", "province": "浙江", "year": 2025, "paper_type": "A类", "section": "言语理解与表达", "original_number": 49, "instruction": null, "stem": "传统旅游有追求“冬暖夏凉”的季节性特征，现在游客则追求极致体验性。冬季到北方体验冰雪旅游，夏季到\n南方体验水上和高空项目，南北方全时段都有旺盛的体验需求。这就要求传统旅游城市从自然景观向娱乐文旅\n融合等消费场景过渡，加大“非热点时段”的旅游硬件设施和软性服务的整体供给能力。许多传统旅游城市因\n旅游需求旺盛而提升了“以游客为导向”的服务能级，服务更加主动、热情、精细、有活力，城市服务治理整\n体提升。\n这段文字意在说明：", "options": {"A": "旅游市场及游客需求日益多样化", "B": "传统旅游的价值仍有待进一步挖掘", "C": "传统旅游城市需开发旅游消费新业态", "D": "新的旅游需求推动城市服务升级优化"}, "options_mode": "text_or_mixed", "content": "传统旅游有追求“冬暖夏凉”的季节性特征，现在游客则追求极致体验性。冬季到北方体验冰雪旅游，夏季到\n南方体验水上和高空项目，南北方全时段都有旺盛的体验需求。这就要求传统旅游城市从自然景观向娱乐文旅\n融合等消费场景过渡，加大“非热点时段”的旅游硬件设施和软性服务的整体供给能力。许多传统旅游城市因\n旅游需求旺盛而提升了“以游客为导向”的服务能级，服务更加主动、热情、精细、有活力，城市服务治理整\n体提升。\n这段文字意在说明：\nA.旅游市场及游客需求日益多样化 B.传统旅游的价值仍有待进一步挖掘\nC.传统旅游城市需开发旅游消费新业态 D.新的旅游需求推动城市服务升级优化", "figures": [], "materials": [], "material_ids": [], "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf", "blob_sha": "422a8d5a7c9c379fe3b10fc81eb6424f17b4bdbb", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2025%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf", "pdf_pages": [11], "regions": [{"page": 11, "bbox": [28.879276275634766, 309.8282165527344, 547.3163452148438, 437.0364685058594]}], "page_numbering": "PDF physical page, 1-based"}, "quality_flags": [], "notes": []}, "source_locators": {"id": "ZJ2025-A类-049", "original_number": 49, "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf", "blob_sha": "422a8d5a7c9c379fe3b10fc81eb6424f17b4bdbb", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2025%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf", "pdf_pages": [11], "regions": [{"page": 11, "bbox": [28.879276275634766, 309.8282165527344, 547.3163452148438, 437.0364685058594]}], "page_numbering": "PDF physical page, 1-based"}, "source_pages": null}, "source_notice": "原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。", "source_answer_reference": {"file": "江浙行测_AI题库/answers.jsonl", "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）解析.pdf", "blob_sha": "a4ae2b755ed2f64f3014b4f63b4f8f267775f2f8", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/
+================================================================================
+{
+ "number": 27,
+ "source_id": "ZJ2023-A类-049",
+ "source_bank": "jiangzhe",
+ "source_file": "江浙行测_AI题库/questions.jsonl",
+ "subtype": "言语",
+ "question_type": "single_choice",
+ "answer": "C",
+ "source_answer": "C",
+ "edits": [],
+ "selection_reason": "事实判断不等于外部常识，注意“据说”和观察者视角。",
+ "verification": {
+  "status": "editor_checked_pending_claude",
+  "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。",
+  "reference_answer_available": true,
+  "reference_answer_agreement": true
+ }
+}
+STEM: null
+OPTIONS: null
+ANALYSIS: 选C。“三十年代俄侨建立”以确定陈述出现，能够据文段确认。A的“西面后方”依赖阿宝所在屋顶这一观察点，不能脱离参照点当成教堂的绝对方位；B是审美感受；D受到“据说”限制，文段并没有把纪念原因确认为事实。
+OTHER: {"section": "言语理解与表达", "source_question": {"question_id": "ZJ2023-A类-049", "paper_id": "ZJ2023", "province": "浙江", "year": 2023, "paper_type": "A类", "section": "言语理解与表达", "original_number": 49, "instruction": null, "stem": "阿宝十岁，邻居蓓蒂六岁。两个人从假三层爬上屋顶，瓦片温热，眼里是半个卢湾区，前面香山路，东面复兴\n公园，东面偏北，看见祖父独幢洋房一角，西面后方，皋兰路尼古拉斯东正教堂，三十年代俄侨建立，据说是\n纪念苏维埃处决的沙皇，尼古拉二世，打雷闪电阶段，阴森可惧，太阳底下，比较养眼。\n根据这段文字，能够确定的历史事实是哪一项？", "options": {"A": "尼古拉斯东正教堂坐落在西面后方一角", "B": "尼古拉斯东正教堂在太阳底下比较养眼", "C": "尼古拉斯东正教堂三十年代由俄侨建立", "D": "尼古拉斯东正教堂是为纪念尼古拉二世"}, "options_mode": "text_or_mixed", "content": "阿宝十岁，邻居蓓蒂六岁。两个人从假三层爬上屋顶，瓦片温热，眼里是半个卢湾区，前面香山路，东面复兴\n公园，东面偏北，看见祖父独幢洋房一角，西面后方，皋兰路尼古拉斯东正教堂，三十年代俄侨建立，据说是\n纪念苏维埃处决的沙皇，尼古拉二世，打雷闪电阶段，阴森可惧，太阳底下，比较养眼。\n根据这段文字，能够确定的历史事实是哪一项？\nA.尼古拉斯东正教堂坐落在西面后方一角 B.尼古拉斯东正教堂在太阳底下比较养眼\nC.尼古拉斯东正教堂三十年代由俄侨建立 D.尼古拉斯东正教堂是为纪念尼古拉二世", "figures": [], "materials": [], "material_ids": [], "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2023年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf", "blob_sha": "5bcc6163c999c3910d10f36f6d8bea8a57df1417", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf", "pdf_pages": [10], "regions": [{"page": 10, "bbox": [28.879276275634766, 665.6455688476562, 547.3163452148438, 760.7313232421875]}], "page_numbering": "PDF physical page, 1-based"}, "quality_flags": [], "notes": []}, "source_locators": {"id": "ZJ2023-A类-049", "original_number": 49, "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2023年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf", "blob_sha": "5bcc6163c999c3910d10f36f6d8bea8a57df1417", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf", "pdf_pages": [10], "regions": [{"page": 10, "bbox": [28.879276275634766, 665.6455688476562, 547.3163452148438, 760.7313232421875]}], "page_numbering": "PDF physical page, 1-based"}, "source_pages": null}, "source_notice": "原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。", "source_answer_reference": {"file": "江浙行测_AI题库/answers.jsonl", "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2023年浙江省公务员录用考试《行测》真题（A类）（解析）.pdf", "blob_sha": "9c7d7f35278953cbcb7177a79f339c0a866a1c23", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A
+================================================================================
+{
+ "number": 28,
+ "source_id": "ZJ2025-A类-045",
+ "source_bank": "jiangzhe",
+ "source_file": "江浙行测_AI题库/questions.jsonl",
+ "subtype": "言语",
+ "question_type": "single_choice",
+ "answer": "A",
+ "source_answer": "A",
+ "edits": [],
+ "selection_reason": "语句填空需统摄引文及例证，不被诗歌常见评价词吸引。",
+ "verification": {
+  "status": "editor_checked_pending_claude",
+  "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。",
+  "reference_answer_available": true,
+  "reference_answer_agreement": true
+ }
+}
+STEM: null
+OPTIONS: null
+ANALYSIS: 选A。钱钟书强调“言情写景，贵有余不尽”，接着以一点红引出读者心中的无限春色，说明少量语言留下丰富想象空间，即简约、含蓄。文段没有集中讨论辞藻优美、感情真挚或作品天然无雕饰，B、C、D都不是引文和解释共同指向的中心。
+OTHER: {"section": "言语理解与表达", "source_question": {"question_id": "ZJ2025-A类-045", "paper_id": "ZJ2025", "province": "浙江", "year": 2025, "paper_type": "A类", "section": "言语理解与表达", "original_number": 45, "instruction": null, "stem": "____ ，这是诗歌鉴赏和审美体验对诗歌创作提出的要求。钱钟书在《谈艺录》中说：“夫言情写景，贵\n有余不尽。然所谓有余不尽，如万绿丛中之着点红，作者举一隅而读者以三隅反。见点红而知嫣红姹紫正无限\n在。”诗作里的一点“红”，透露了春天的气息；读者在鉴赏中举一反三，自然会在脑海中浮现出万紫千红的\n春色。\n填入画横线部分最恰当的一项是：", "options": {"A": "诗以简约含蓄为贵", "B": "诗以言辞优美为贵", "C": "诗以情感真挚为贵", "D": "诗以浑然天成为贵"}, "options_mode": "text_or_mixed", "content": "____ ，这是诗歌鉴赏和审美体验对诗歌创作提出的要求。钱钟书在《谈艺录》中说：“夫言情写景，贵\n有余不尽。然所谓有余不尽，如万绿丛中之着点红，作者举一隅而读者以三隅反。见点红而知嫣红姹紫正无限\n在。”诗作里的一点“红”，透露了春天的气息；读者在鉴赏中举一反三，自然会在脑海中浮现出万紫千红的\n春色。\n填入画横线部分最恰当的一项是：\nA.诗以简约含蓄为贵 B.诗以言辞优美为贵 C.诗以情感真挚为贵 D.诗以浑然天成为贵", "figures": [], "materials": [], "material_ids": [], "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf", "blob_sha": "422a8d5a7c9c379fe3b10fc81eb6424f17b4bdbb", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2025%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf", "pdf_pages": [10], "regions": [{"page": 10, "bbox": [28.879276275634766, 431.5225524902344, 547.3163452148438, 526.6082763671875]}], "page_numbering": "PDF physical page, 1-based"}, "quality_flags": [], "notes": []}, "source_locators": {"id": "ZJ2025-A类-045", "original_number": 45, "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf", "blob_sha": "422a8d5a7c9c379fe3b10fc81eb6424f17b4bdbb", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2025%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf", "pdf_pages": [10], "regions": [{"page": 10, "bbox": [28.879276275634766, 431.5225524902344, 547.3163452148438, 526.6082763671875]}], "page_numbering": "PDF physical page, 1-based"}, "source_pages": null}, "source_notice": "原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。", "source_answer_reference": {"file": "江浙行测_AI题库/answers.jsonl", "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2025年浙江省公务员录用考试《行测》题（A类）（网友回忆版）解析.pdf", "blob_sha": "a4ae2b755ed2f64f3014b4f63b4f8f267775f2f8", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2025%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%8
+================================================================================
+{
+ "number": 29,
+ "source_id": "ZJ2023-A类-038",
+ "source_bank": "jiangzhe",
+ "source_file": "江浙行测_AI题库/questions.jsonl",
+ "subtype": "言语",
+ "question_type": "single_choice",
+ "answer": "B",
+ "source_answer": "B",
+ "edits": [],
+ "selection_reason": "总分关系必须覆盖归因复杂和跨渠道难追踪两方面。",
+ "verification": {
+  "status": "editor_checked_pending_claude",
+  "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。",
+  "reference_answer_available": true,
+  "reference_answer_agreement": true
+ }
+}
+STEM: null
+OPTIONS: null
+ANALYSIS: 选B。空后用“一方面”“另一方面”分述：单一平台广告效果难精确归因，常用方法无法追踪其他渠道的转化。二者共同表明传统广告测量方法面临挑战。A只概括跨渠道转化，遗漏归因问题；C过于宽泛；D把问题直接归到算法本身，而文段着重的是现有测量方法难以应对新的传播和消费路径。
+OTHER: {"section": "言语理解与表达", "source_question": {"question_id": "ZJ2023-A类-038", "paper_id": "ZJ2023", "province": "浙江", "year": 2023, "paper_type": "A类", "section": "言语理解与表达", "original_number": 38, "instruction": null, "stem": "在互联网社交化、移动化背景下，算法应用使广告的个性化、强互动和精准性特征变得非常突\n出， ____ 。一方面，广告效果归因变得更加复杂。用户在多个社交平台中积极互动，消费者跨设备、跨\n媒体、线上线下行为交叉的情况也越来越多，如何精确测量单一平台的广告效果成为现实问题。另一方面，目\n前互联网广告常用的方法都无法追踪用户在其他渠道中的转化。以视频信息流广告为代表的一类广告存在着极\n强的推荐、分享等性质，用户与之相关的消费行为可能是在其他渠道中完成的。\n填入画横线部分最恰当的一项是：", "options": {"A": "广告效果转化呈现跨界的特性", "B": "传统的广告测量方法面临挑战", "C": "广告从投放到获得收益存在诸多环节", "D": "算法应用在广告效果归因上具有局限性"}, "options_mode": "text_or_mixed", "content": "在互联网社交化、移动化背景下，算法应用使广告的个性化、强互动和精准性特征变得非常突\n出， ____ 。一方面，广告效果归因变得更加复杂。用户在多个社交平台中积极互动，消费者跨设备、跨\n媒体、线上线下行为交叉的情况也越来越多，如何精确测量单一平台的广告效果成为现实问题。另一方面，目\n前互联网广告常用的方法都无法追踪用户在其他渠道中的转化。以视频信息流广告为代表的一类广告存在着极\n强的推荐、分享等性质，用户与之相关的消费行为可能是在其他渠道中完成的。\n填入画横线部分最恰当的一项是：\nA.广告效果转化呈现跨界的特性 B.传统的广告测量方法面临挑战\nC.广告从投放到获得收益存在诸多环节 D.算法应用在广告效果归因上具有局限性", "figures": [], "materials": [], "material_ids": [], "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2023年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf", "blob_sha": "5bcc6163c999c3910d10f36f6d8bea8a57df1417", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf", "pdf_pages": [8], "regions": [{"page": 8, "bbox": [28.879276275634766, 614.3731079101562, 547.3163452148438, 741.5814208984375]}], "page_numbering": "PDF physical page, 1-based"}, "quality_flags": [], "notes": []}, "source_locators": {"id": "ZJ2023-A类-038", "original_number": 38, "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2023年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf", "blob_sha": "5bcc6163c999c3910d10f36f6d8bea8a57df1417", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf", "pdf_pages": [8], "regions": [{"page": 8, "bbox": [28.879276275634766, 614.3731079101562, 547.3163452148438, 741.5814208984375]}], "page_numbering": "PDF physical page, 1-based"}, "source_pages": null}, "source_notice": "原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。", "source_answer_reference": {"file": "江浙行测_AI题库/answers.jsonl", "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2023年浙江省公务员录用考试《行测》真题（A类）（解析）.pdf", "blob_sha": "9c7d7f35278953cbcb7177a79f339c0a866a1c23", "url": "
+================================================================================
+{
+ "number": 30,
+ "source_id": "ZJ2023-A类-033",
+ "source_bank": "jiangzhe",
+ "source_file": "江浙行测_AI题库/questions.jsonl",
+ "subtype": "言语",
+ "question_type": "single_choice",
+ "answer": "D",
+ "source_answer": "D",
+ "edits": [],
+ "selection_reason": "统计数据、指代、机制解释、价值导向与结论的顺序链。",
+ "verification": {
+  "status": "editor_checked_pending_claude",
+  "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。",
+  "reference_answer_available": true,
+  "reference_answer_agreement": true
+ }
+}
+STEM: null
+OPTIONS: null
+ANALYSIS: 选D。⑥先提出近域化流动的新趋势，②用跨省和省内流动数据作具体说明，⑤“这表明”紧接数据归纳省内务工趋势。③进一步解释人口回流与城市发展的互动。①转入城镇化应服务于人的价值要求，④据此结合人口流动方向，推出县域城镇化的大势。故顺序为⑥②⑤③①④。
+OTHER: {"section": "言语理解与表达", "source_question": {"question_id": "ZJ2023-A类-033", "paper_id": "ZJ2023", "province": "浙江", "year": 2023, "paper_type": "A类", "section": "言语理解与表达", "original_number": 33, "instruction": null, "stem": "①城镇化意味着对人口自由发展需求的满足，本质上要服务于人民\n②据统计，2010年到2020年十年间，全国农村总流出人口中跨省进城人口增加2657万人，省内进城人口增长近\n1.12亿人\n③事实上，近年来“人口回流促进区域内城市发展，城市发展进一步吸引人口回流”的循环互动在各地不断上\n演\n④人口往哪里流动，城镇化的方向就应当往哪里延伸，随着人口省内流动日益频繁，作为城乡融合的重要载\n体，县域的城镇化是大势所趋\n⑤这表明，省内城市务工成为近年来人口流动的趋势\n⑥近年来，人口流动呈现出“跨省区人口流动趋缓、近域化流动趋势加强”的新趋势\n将以上6个句子重新排序，语序正确的一项是：", "options": {"A": "①②③④⑥⑤", "B": "②⑥⑤③①④", "C": "④③⑥①②⑤", "D": "⑥②⑤③①④"}, "options_mode": "text_or_mixed", "content": "①城镇化意味着对人口自由发展需求的满足，本质上要服务于人民\n②据统计，2010年到2020年十年间，全国农村总流出人口中跨省进城人口增加2657万人，省内进城人口增长近\n1.12亿人\n③事实上，近年来“人口回流促进区域内城市发展，城市发展进一步吸引人口回流”的循环互动在各地不断上\n演\n④人口往哪里流动，城镇化的方向就应当往哪里延伸，随着人口省内流动日益频繁，作为城乡融合的重要载\n体，县域的城镇化是大势所趋\n⑤这表明，省内城市务工成为近年来人口流动的趋势\n⑥近年来，人口流动呈现出“跨省区人口流动趋缓、近域化流动趋势加强”的新趋势\n将以上6个句子重新排序，语序正确的一项是：\nA.①②③④⑥⑤ B.②⑥⑤③①④ C.④③⑥①②⑤ D.⑥②⑤③①④", "figures": [], "materials": [], "material_ids": [], "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2023年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf", "blob_sha": "5bcc6163c999c3910d10f36f6d8bea8a57df1417", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf", "pdf_pages": [7], "regions": [{"page": 7, "bbox": [28.879276275634766, 572.3670043945312, 547.3163452148438, 747.7589111328125]}], "page_numbering": "PDF physical page, 1-based"}, "quality_flags": [], "notes": []}, "source_locators": {"id": "ZJ2023-A类-033", "original_number": 33, "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2023年浙江省公务员录用考试《行测》题（A类）（网友回忆版）.pdf", "blob_sha": "5bcc6163c999c3910d10f36f6d8bea8a57df1417", "url": "https://github.com/dumarstoft-ship-it/xingce/blob/407016b55b49581efa3771bb59a2dee8761d982f/2023%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%85%AC%E5%8A%A1%E5%91%98%E5%BD%95%E7%94%A8%E8%80%83%E8%AF%95%E3%80%8A%E8%A1%8C%E6%B5%8B%E3%80%8B%E9%A2%98%EF%BC%88A%E7%B1%BB%EF%BC%89%EF%BC%88%E7%BD%91%E5%8F%8B%E5%9B%9E%E5%BF%86%E7%89%88%EF%BC%89.pdf", "pdf_pages": [7], "regions": [{"page": 7, "bbox": [28.879276275634766, 572.3670043945312, 547.3163452148438, 747.7589111328125]}], "page_numbering": "PDF physical page, 1-based"}, "source_pages": null}, "source_notice": "原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。", "source_answer_reference": {"file": "江浙行测_AI题库/answers.jsonl", "source": {"repository": "https://github.com/dumarstoft-ship-it/xingce", "commit": "407016b55b49581efa3771bb59a2dee8761d982f", "file": "2023年浙江省公务员录用考试《行测》真题（A类）（解析）.pdf", "blob_sha": "9c7d7f35278953cbcb71
+================================================================================

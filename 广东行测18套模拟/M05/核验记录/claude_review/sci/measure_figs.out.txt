@@ -1,0 +1,57 @@
+== s32_p17_i01: source print 117.7 x 31.6 mm; 0.1961 mm/px (x), 0.1963 mm/px (y); = 130 ppi effective
+   label 2f静max (whole)               ink bbox (np.int64(300), np.int64(25), np.int64(368), np.int64(49)): 69x25px -> 13.53 x 4.91 mm
+   label f静max (whole)                ink bbox (np.int64(300), np.int64(65), np.int64(369), np.int64(91)): 70x27px -> 13.73 x 5.30 mm
+   axis label F                       ink bbox (np.int64(370), np.int64(11), np.int64(382), np.int64(22)): 13x12px -> 2.55 x 2.36 mm
+   axis label t (x-axis end)          ink bbox (np.int64(585), np.int64(134), np.int64(588), np.int64(134)): 4x1px -> 0.78 x 0.20 mm
+   origin O                           ink bbox (np.int64(350), np.int64(120), np.int64(371), np.int64(140)): 22x21px -> 4.31 x 4.12 mm
+   tick label t1 (with subscript)     ink bbox (np.int64(390), np.int64(132), np.int64(411), np.int64(153)): 22x22px -> 4.31 x 4.32 mm
+   tick label t2 (with subscript)     ink bbox (np.int64(418), np.int64(132), np.int64(439), np.int64(153)): 22x22px -> 4.31 x 4.32 mm
+   tick label t3 (with subscript)     ink bbox (np.int64(458), np.int64(132), np.int64(481), np.int64(152)): 24x21px -> 4.71 x 4.12 mm
+   arrow label F (box sketch)         ink bbox (np.int64(154), np.int64(77), np.int64(163), np.int64(89)): 10x13px -> 1.96 x 2.55 mm
+   stroke: curve/axis (vertical axis) row y=80, x(360, 380): runs(px)=[(360, 1)]
+   dashes on f level (y~82)           row y=82, x(378, 475): runs(px)=[(378, 5), (390, 10), (404, 7), (418, 7), (432, 8), (446, 8), (460, 11)]
+   dashes at t2 (x~425)               column x=425, y(40, 130): runs(px)=[(40, 2), (48, 6), (60, 7), (72, 6), (85, 6), (97, 7), (110, 6), (122, 6)]
+   t1->t2 tick spacing (~401->425)    24px -> 4.71 mm
+   t2->t3 tick spacing (~425->470)    45px -> 8.83 mm
+   f level -> 2f level vertical       46px -> 9.03 mm
+== s27_p18_i01: source print 92.2 x 98.1 mm; 0.1606 mm/px (x), 0.1637 mm/px (y); = 158 ppi effective
+   label R                            ink bbox (np.int64(245), np.int64(92), np.int64(261), np.int64(110)): 17x19px -> 2.73 x 3.11 mm
+   label R0 (with subscript)          ink bbox (np.int64(537), np.int64(293), np.int64(565), np.int64(318)): 29x26px -> 4.66 x 4.26 mm
+   label L1 (with subscript)          ink bbox (np.int64(232), np.int64(289), np.int64(255), np.int64(313)): 24x25px -> 3.85 x 4.09 mm
+   label L2 (with subscript)          ink bbox (np.int64(355), np.int64(550), np.int64(384), np.int64(593)): 30x44px -> 4.82 x 7.20 mm
+   ammeter A1 circle                  ink bbox (np.int64(85), np.int64(359), np.int64(159), np.int64(419)): 75x61px -> 12.04 x 9.99 mm
+   ammeter A2 circle                  ink bbox (np.int64(130), np.int64(489), np.int64(204), np.int64(553)): 75x65px -> 12.04 x 10.64 mm
+   label S                            ink bbox (np.int64(364), np.int64(405), np.int64(379), np.int64(424)): 16x20px -> 2.57 x 3.27 mm
+   lamp L1 circle                     ink bbox (np.int64(205), np.int64(204), np.int64(284), np.int64(267)): 80x64px -> 12.85 x 10.48 mm
+   slider arrowhead                   ink bbox (np.int64(240), np.int64(35), np.int64(269), np.int64(53)): 30x19px -> 4.82 x 3.11 mm
+   top wire stroke (col x=100)        column x=100, y(50, 75): runs(px)=[(63, 2)]
+   slider wire top (col x=320)        column x=320, y(0, 20): runs(px)=[(7, 2)]
+   switch gap (row y=385)             row y=385, x(330, 420): runs(px)=[(330, 5), (344, 3), (386, 34)]
+   R right end -> slider-wire drop (295->385) 90px -> 14.45 mm
+   slider wire height above R body (8->52) 44px -> 7.20 mm
+== s23_p19_i11: source print 126.2 x 88.3 mm; 0.1962 mm/px (x), 0.1961 mm/px (y); = 129 ppi effective
+   contour label 1320 (peak)          ink bbox (np.int64(164), np.int64(124), np.int64(215), np.int64(143)): 52x20px -> 10.20 x 3.92 mm
+   contour label 1000 (甲山)            ink bbox (np.int64(386), np.int64(177), np.int64(437), np.int64(199)): 52x23px -> 10.20 x 4.51 mm
+   contour label 800                  ink bbox (np.int64(410), np.int64(198), np.int64(459), np.int64(216)): 50x19px -> 9.81 x 3.73 mm
+   contour label 200                  ink bbox (np.int64(563), np.int64(290), np.int64(602), np.int64(314)): 40x25px -> 7.85 x 4.90 mm
+   contour label 0                    ink bbox (np.int64(588), np.int64(329), np.int64(604), np.int64(351)): 17x23px -> 3.34 x 4.51 mm
+   point label A                      ink bbox (np.int64(252), np.int64(133), np.int64(269), np.int64(151)): 18x19px -> 3.53 x 3.73 mm
+   point label B                      ink bbox (np.int64(265), np.int64(40), np.int64(289), np.int64(64)): 25x25px -> 4.91 x 4.90 mm
+   point label C                      ink bbox (np.int64(565), np.int64(135), np.int64(580), np.int64(153)): 16x19px -> 3.14 x 3.73 mm
+   point label D                      ink bbox (np.int64(465), np.int64(118), np.int64(489), np.int64(144)): 25x27px -> 4.91 x 5.30 mm
+   point label E                      ink bbox (np.int64(245), np.int64(207), np.int64(258), np.int64(225)): 14x19px -> 2.75 x 3.73 mm
+   point label G                      ink bbox (np.int64(33), np.int64(154), np.int64(49), np.int64(172)): 17x19px -> 3.34 x 3.73 mm
+   point label H                      ink bbox (np.int64(434), np.int64(261), np.int64(450), np.int64(279)): 17x19px -> 3.34 x 3.73 mm
+   char 甲山                            ink bbox (np.int64(313), np.int64(142), np.int64(359), np.int64(165)): 47x24px -> 9.22 x 4.71 mm
+   char 丙                             ink bbox (np.int64(213), np.int64(375), np.int64(235), np.int64(397)): 23x23px -> 4.51 x 4.51 mm
+   scale text 1:300000                ink bbox (np.int64(10), np.int64(414), np.int64(124), np.int64(444)): 115x31px -> 22.57 x 6.08 mm
+   north arrow (whole)                ink bbox (np.int64(563), np.int64(29), np.int64(614), np.int64(71)): 52x43px -> 10.20 x 8.43 mm
+   B point dot                        ink bbox (np.int64(291), np.int64(47), np.int64(299), np.int64(55)): 9x9px -> 1.77 x 1.77 mm
+   peak triangle 1320                 ink bbox (np.int64(140), np.int64(120), np.int64(164), np.int64(144)): 25x25px -> 4.91 x 4.90 mm
+   contour stroke (col x=100 top)     column x=100, y(0, 140): runs(px)=[(4, 5), (50, 3), (86, 3), (120, 4)]
+   contours at B column (x=292)       column x=292, y(0, 130): runs(px)=[(4, 3), (40, 2), (48, 7), (69, 3), (100, 3), (128, 2)]
+   contours along CD row (y=158)      row y=158, x(460, 643): runs(px)=[(468, 2), (496, 3), (527, 8), (543, 3), (609, 2), (636, 3)]
+   cliff ticks (col x=62, y 90-250)   column x=62, y(85, 250): runs(px)=[(87, 5), (113, 22), (139, 3), (154, 2), (169, 2)]
+   EF dashes (col x=290..)            column x=290, y(200, 240): runs(px)=[(228, 3)]
+   U-line bottom (y~40) -> 600 line at B (y~70) 30px -> 5.88 mm
+   ridge bulge depth at CD (approx)   40px -> 7.85 mm

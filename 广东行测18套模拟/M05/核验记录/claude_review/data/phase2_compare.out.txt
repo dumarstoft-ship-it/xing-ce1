@@ -1,0 +1,134 @@
+==================== 第71题 ← gd-mock-2026h2-s23-q76（源第76题，2026下半年省考第二十三季行测模考大赛（广东卷）.pdf）
+盲解输入 == M05/题目.jsonl（忽略 source_asset_id/abs_path 元数据）： True
+selection.source_question 快照 == 题源记录： True
+题干差异： 无
+选项差异： 无
+材料差异/比对：
+    材料 块1(table)（逐格比对 27 格完成）
+edits： []
+==================== 第72题 ← gd-mock-2026h2-s23-q77（源第77题，2026下半年省考第二十三季行测模考大赛（广东卷）.pdf）
+盲解输入 == M05/题目.jsonl（忽略 source_asset_id/abs_path 元数据）： True
+selection.source_question 快照 == 题源记录： True
+题干差异： 无
+选项差异： 无
+材料：同组前题已比对（M05 材料与前题相同）
+==================== 第73题 ← gd-mock-2026h2-s23-q78（源第78题，2026下半年省考第二十三季行测模考大赛（广东卷）.pdf）
+盲解输入 == M05/题目.jsonl（忽略 source_asset_id/abs_path 元数据）： True
+selection.source_question 快照 == 题源记录： True
+题干差异： 无
+选项差异： 无
+材料：同组前题已比对（M05 材料与前题相同）
+==================== 第74题 ← gd-mock-2026h2-s23-q79（源第79题，2026下半年省考第二十三季行测模考大赛（广东卷）.pdf）
+盲解输入 == M05/题目.jsonl（忽略 source_asset_id/abs_path 元数据）： True
+selection.source_question 快照 == 题源记录： True
+题干差异： 无
+选项差异： 无
+材料：同组前题已比对（M05 材料与前题相同）
+==================== 第75题 ← gd-mock-2026h2-s23-q80（源第80题，2026下半年省考第二十三季行测模考大赛（广东卷）.pdf）
+盲解输入 == M05/题目.jsonl（忽略 source_asset_id/abs_path 元数据）： True
+selection.source_question 快照 == 题源记录： True
+题干差异： 无
+选项差异： 无
+材料：同组前题已比对（M05 材料与前题相同）
+==================== 第76题 ← gd-mock-2026h2-s27-q71（源第71题，2026下半年省考第二十七季行测模考大赛（广东卷）.pdf）
+盲解输入 == M05/题目.jsonl（忽略 source_asset_id/abs_path 元数据）： True
+selection.source_question 快照 == 题源记录： True
+题干差异： 无
+选项差异： 无
+材料差异/比对：
+    材料 块0(table) notes：源'同比增长列为绝对增量，原表未标百分号。' → M05None
+    材料 块0(table)（逐格比对 48 格完成）
+selection.materials 覆盖 == M05/题目.jsonl 材料： True
+edits： [{"type": "remove_transcription_hint", "description": "仅去掉转写附注“同比增长列为绝对增量，原表未标百分号。”；题目、表头、单位、数字均不变，不提前替考生判断增量/增长率。原附注仍完整保存在source_question。"}]
+==================== 第77题 ← gd-mock-2026h2-s27-q72（源第72题，2026下半年省考第二十七季行测模考大赛（广东卷）.pdf）
+盲解输入 == M05/题目.jsonl（忽略 source_asset_id/abs_path 元数据）： True
+selection.source_question 快照 == 题源记录： True
+题干差异： 无
+选项差异： 无
+材料：同组前题已比对（M05 材料与前题相同）
+==================== 第78题 ← gd-mock-2026h2-s27-q73（源第73题，2026下半年省考第二十七季行测模考大赛（广东卷）.pdf）
+盲解输入 == M05/题目.jsonl（忽略 source_asset_id/abs_path 元数据）： True
+selection.source_question 快照 == 题源记录： True
+题干差异： 无
+选项差异： 无
+材料：同组前题已比对（M05 材料与前题相同）
+==================== 第79题 ← gd-mock-2026h2-s27-q74（源第74题，2026下半年省考第二十七季行测模考大赛（广东卷）.pdf）
+盲解输入 == M05/题目.jsonl（忽略 source_asset_id/abs_path 元数据）： True
+selection.source_question 快照 == 题源记录： True
+题干差异： 无
+选项差异： 无
+材料：同组前题已比对（M05 材料与前题相同）
+==================== 第80题 ← gd-mock-2026h2-s27-q75（源第75题，2026下半年省考第二十七季行测模考大赛（广东卷）.pdf）
+盲解输入 == M05/题目.jsonl（忽略 source_asset_id/abs_path 元数据）： True
+selection.source_question 快照 == 题源记录： True
+题干差异： 无
+选项差异： 无
+材料：同组前题已比对（M05 材料与前题相同）
+==================== 第81题 ← gd-mock-2026h2-s16-q76（源第76题，2026下半年省考第十六季行测模考大赛（广东卷）.pdf）
+盲解输入 == M05/题目.jsonl（忽略 source_asset_id/abs_path 元数据）： True
+selection.source_question 快照 == 题源记录： True
+题干差异： 无
+选项差异： 无
+材料差异/比对：
+    材料 块1(table)（逐格比对 24 格完成）
+edits： []
+==================== 第82题 ← gd-mock-2026h2-s16-q77（源第77题，2026下半年省考第十六季行测模考大赛（广东卷）.pdf）
+盲解输入 == M05/题目.jsonl（忽略 source_asset_id/abs_path 元数据）： True
+selection.source_question 快照 == 题源记录： True
+题干差异： 无
+选项差异： 无
+材料：同组前题已比对（M05 材料与前题相同）
+==================== 第83题 ← gd-mock-2026h2-s16-q78（源第78题，2026下半年省考第十六季行测模考大赛（广东卷）.pdf）
+盲解输入 == M05/题目.jsonl（忽略 source_asset_id/abs_path 元数据）： True
+selection.source_question 快照 == 题源记录： True
+题干差异： 无
+选项差异： 无
+材料：同组前题已比对（M05 材料与前题相同）
+==================== 第84题 ← gd-mock-2026h2-s16-q79（源第79题，2026下半年省考第十六季行测模考大赛（广东卷）.pdf）
+盲解输入 == M05/题目.jsonl（忽略 source_asset_id/abs_path 元数据）： True
+selection.source_question 快照 == 题源记录： True
+题干差异： 无
+选项差异： 无
+材料：同组前题已比对（M05 材料与前题相同）
+==================== 第85题 ← gd-mock-2026h2-s16-q80（源第80题，2026下半年省考第十六季行测模考大赛（广东卷）.pdf）
+盲解输入 == M05/题目.jsonl（忽略 source_asset_id/abs_path 元数据）： True
+selection.source_question 快照 == 题源记录： True
+题干差异： 无
+选项差异： 无
+材料：同组前题已比对（M05 材料与前题相同）
+==================== 第86题 ← gd-mock-2026h2-s32-q86（源第86题，2026下半年省考第三十二季行测模考大赛（广东卷）.pdf）
+盲解输入 == M05/题目.jsonl（忽略 source_asset_id/abs_path 元数据）： True
+selection.source_question 快照 == 题源记录： True
+题干差异： 无
+选项差异： 无
+材料差异/比对：
+    材料 块1(table)（逐格比对 35 格完成）
+edits： []
+==================== 第87题 ← gd-mock-2026h2-s32-q87（源第87题，2026下半年省考第三十二季行测模考大赛（广东卷）.pdf）
+盲解输入 == M05/题目.jsonl（忽略 source_asset_id/abs_path 元数据）： True
+selection.source_question 快照 == 题源记录： True
+题干差异： 无
+选项差异： 无
+材料：同组前题已比对（M05 材料与前题相同）
+==================== 第88题 ← gd-mock-2026h2-s32-q88（源第88题，2026下半年省考第三十二季行测模考大赛（广东卷）.pdf）
+盲解输入 == M05/题目.jsonl（忽略 source_asset_id/abs_path 元数据）： True
+selection.source_question 快照 == 题源记录： True
+题干差异： 无
+选项差异： 无
+材料：同组前题已比对（M05 材料与前题相同）
+==================== 第89题 ← gd-mock-2026h2-s32-q89（源第89题，2026下半年省考第三十二季行测模考大赛（广东卷）.pdf）
+盲解输入 == M05/题目.jsonl（忽略 source_asset_id/abs_path 元数据）： True
+selection.source_question 快照 == 题源记录： True
+题干差异： 无
+选项差异： 无
+材料：同组前题已比对（M05 材料与前题相同）
+==================== 第90题 ← gd-mock-2026h2-s32-q90（源第90题，2026下半年省考第三十二季行测模考大赛（广东卷）.pdf）
+盲解输入 == M05/题目.jsonl（忽略 source_asset_id/abs_path 元数据）： True
+selection.source_question 快照 == 题源记录： True
+题干差异： 无
+选项差异： ['A: 源[{"type": "figure", "asset_id": "s32_p23_i00", "path": "assets/s32_p23_i00.png", "width_px": 200, "height_px": 115, "caption": "原卷第23页，第90题图"}] → M05[{"type": "figure", "asset_id": "s32_p23_i00", "path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s32_p23_i00.png", "width_px": 200, "height_px": 115}]', 'B: 源[{"type": "figure", "asset_id": "s32_p23_i01", "path": "assets/s32_p23_i01.png", "width_px": 200, "height_px": 115, "caption": "原卷第23页，第90题图"}] → M05[{"type": "figure", "asset_id": "s32_p23_i01", "path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s32_p23_i01.png", "width_px": 200, "height_px": 115}]', 'C: 源[{"type": "figure", "asset_id": "s32_p23_i02", "path": "assets/s32_p23_i02.png", "width_px": 200, "height_px": 115, "caption": "原卷第23页，第90题图"}] → M05[{"type": "figure", "asset_id": "s32_p23_i02", "path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s32_p23_i02.png", "width_px": 200, "height_px": 115}]', 'D: 源[{"type": "figure", "asset_id": "s32_p23_i03", "path": "assets/s32_p23_i03.png", "width_px": 200, "height_px": 115, "caption": "原卷第23页，第90题图"}] → M05[{"type": "figure", "asset_id": "s32_p23_i03", "path": "模考/2026下半年广东卷_16-33季_AI可读/assets/s32_p23_i03.png", "width_px": 200, "height_px": 115}]']
+  选项A 图 s32_p23_i00 sha256=93433d209219… 与图片清单一致
+  选项B 图 s32_p23_i01 sha256=2286991cf207… 与图片清单一致
+  选项C 图 s32_p23_i02 sha256=8c3e0f0dd29b… 与图片清单一致
+  选项D 图 s32_p23_i03 sha256=043cf0b4d922… 与图片清单一致
+材料：同组前题已比对（M05 材料与前题相同）

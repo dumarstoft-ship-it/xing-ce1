@@ -1,0 +1,76 @@
+题目.jsonl keys: ['id', 'number', 'section', 'subtype', 'question_type', 'stem', 'options', 'options_mode', 'materials']
+==========================================================================================
+66 gd-mock-2026h2-s32-q66 in bank: True
+bank keys: ['id', 'season', 'section', 'number', 'material_id', 'stem', 'options', 'source_pages', 'source_spans', 'source_asset_ids', 'answer', 'source', 'material']
+bank answer field: {'answer': None}
+  selection.source_question.stem == bank.stem: True
+  selection.source_question.options == bank.options: True
+  题目.jsonl.stem texts == bank: True
+  题目.jsonl.options texts == bank: True
+  题目.jsonl[id] = "M05-Q066"
+  题目.jsonl[number] = 66
+  题目.jsonl[section] = "科学推理"
+  题目.jsonl[subtype] = "科学推理"
+  题目.jsonl[question_type] = "single_choice"
+  题目.jsonl[options_mode] = "text_or_mixed"
+  题目.jsonl[materials] = []
+==========================================================================================
+67 gd-mock-2026h2-s27-q67 in bank: True
+bank keys: ['id', 'season', 'section', 'number', 'material_id', 'stem', 'options', 'source_pages', 'source_spans', 'source_asset_ids', 'answer', 'source', 'material']
+bank answer field: {'answer': None}
+  selection.source_question.stem == bank.stem: True
+  selection.source_question.options == bank.options: True
+  题目.jsonl.stem texts == bank: True
+  题目.jsonl.options texts == bank: True
+  题目.jsonl[id] = "M05-Q067"
+  题目.jsonl[number] = 67
+  题目.jsonl[section] = "科学推理"
+  题目.jsonl[subtype] = "科学推理"
+  题目.jsonl[question_type] = "single_choice"
+  题目.jsonl[options_mode] = "text_or_mixed"
+  题目.jsonl[materials] = []
+==========================================================================================
+68 gd-mock-2026h2-s21-q68 in bank: True
+bank keys: ['id', 'season', 'section', 'number', 'material_id', 'stem', 'options', 'source_pages', 'source_spans', 'source_asset_ids', 'answer', 'source', 'material']
+bank answer field: {'answer': None}
+  selection.source_question.stem == bank.stem: True
+  selection.source_question.options == bank.options: True
+  题目.jsonl.stem texts == bank: True
+  题目.jsonl.options texts == bank: True
+  题目.jsonl[id] = "M05-Q068"
+  题目.jsonl[number] = 68
+  题目.jsonl[section] = "科学推理"
+  题目.jsonl[subtype] = "科学推理"
+  题目.jsonl[question_type] = "single_choice"
+  题目.jsonl[options_mode] = "text_or_mixed"
+  题目.jsonl[materials] = []
+==========================================================================================
+69 gd-mock-2026h2-s31-q70 in bank: True
+bank keys: ['id', 'season', 'section', 'number', 'material_id', 'stem', 'options', 'source_pages', 'source_spans', 'source_asset_ids', 'answer', 'source', 'material']
+bank answer field: {'answer': None}
+  selection.source_question.stem == bank.stem: True
+  selection.source_question.options == bank.options: True
+  题目.jsonl.stem texts == bank: True
+  题目.jsonl.options texts == bank: True
+  题目.jsonl[id] = "M05-Q069"
+  题目.jsonl[number] = 69
+  题目.jsonl[section] = "科学推理"
+  题目.jsonl[subtype] = "科学推理"
+  题目.jsonl[question_type] = "single_choice"
+  题目.jsonl[options_mode] = "text_or_mixed"
+  题目.jsonl[materials] = []
+==========================================================================================
+70 gd-mock-2026h2-s23-q70 in bank: True
+bank keys: ['id', 'season', 'section', 'number', 'material_id', 'stem', 'options', 'source_pages', 'source_spans', 'source_asset_ids', 'answer', 'source', 'material']
+bank answer field: {'answer': None}
+  selection.source_question.stem == bank.stem: True
+  selection.source_question.options == bank.options: True
+  题目.jsonl.stem texts == bank: True
+  题目.jsonl.options texts == bank: True
+  题目.jsonl[id] = "M05-Q070"
+  题目.jsonl[number] = 70
+  题目.jsonl[section] = "科学推理"
+  题目.jsonl[subtype] = "科学推理"
+  题目.jsonl[question_type] = "single_choice"
+  题目.jsonl[options_mode] = "text_or_mixed"
+  题目.jsonl[materials] = []

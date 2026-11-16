@@ -1,0 +1,25 @@
+glyph names:
+  box E [| m E |] [| m E  identity pattern: abcadbca
+  A   m ∀ Ǝ m ∀ [| Ǝ m  identity pattern: abcabdca
+  B   Ǝ [| Ǝ m A ∀ m Ш  identity pattern: abacdecf
+  C   E A Ш E |] [| Ш m  identity pattern: abcadecf
+  D   Ш |] E Ш A |] E Ш  identity pattern: abcadbca
+option A pairs with identical D4-relation set as box: 15/28
+option B pairs with identical D4-relation set as box: 15/28
+option C pairs with identical D4-relation set as box: 18/28
+option D pairs with identical D4-relation set as box: 16/28
+  box consecutive rotation relations: ['-', '-', 'r270', '-', 'r180', '-', 'r270']
+       consecutive mirror relations  : ['-', '-', 'mD2', '-', 'mLR', '-', 'mD2']
+  A   consecutive rotation relations: ['-', '-', 'r270', '-', 'r90', '-', 'r270']
+       consecutive mirror relations  : ['-', '-', 'mD1', '-', 'mD1', '-', 'mD1']
+  B   consecutive rotation relations: ['-', '-', 'r270', '-', 'r180', '-', 'r180']
+       consecutive mirror relations  : ['-', '-', 'mD1', '-', 'mTB', '-', 'mTB']
+  C   consecutive rotation relations: ['-', '-', 'r90', '-', 'r180', '-', 'r180']
+       consecutive mirror relations  : ['-', '-', 'mD1', '-', 'mLR', '-', 'mTB']
+  D   consecutive rotation relations: ['-', '-', 'r270', '-', 'r90', '-', 'r270']
+       consecutive mirror relations  : ['-', '-', 'mD1', '-', 'mD1', '-', 'mD1']
+  box rel to glyph1 (rotations): ['id', '-', 'r90', 'id', '-', '-', 'r90', 'id']
+  A   rel to glyph1 (rotations): ['id', '-', 'r90', 'id', '-', '-', 'r90', 'id']
+  B   rel to glyph1 (rotations): ['id', '-', 'id', 'r270', '-', '-', 'r270', 'r90']
+  C   rel to glyph1 (rotations): ['id', '-', 'r270', 'id', '-', '-', 'r270', 'r90']
+  D   rel to glyph1 (rotations): ['id', '-', 'r90', 'id', '-', '-', 'r90', 'id']

@@ -1,0 +1,246 @@
+================================================================================
+第31题  source_id=gd-mock-2026h2-s17-q31  subtype=数字推理
+  卷面(题目.jsonl)题干：3，16，43，88，155，（    ）
+  卷面选项：{'A': '186', 'B': '209', 'C': '248', 'D': '261'}
+  题目.jsonl 其他字段：materials=[] options_mode=text_or_mixed
+  题源第17季 第31题  answer字段=None
+  题干比对（源→卷）：一致
+  选项比对：一致
+  selection内嵌source_question与题源一致：True
+  blind_input 题面与卷面一致：True
+  答案键：C   源答案：None   盲解：C  → 一致
+  edits：[]
+  selection_reason：递增差分须识别到二阶变化，不是直接一次等差。
+  source_notice：原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。 未为降低难度而补写提示或重构选项。
+  verification：{"status": "editor_checked_pending_claude", "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。", "reference_answer_available": false, "reference_answer_agreement": null}
+  analysis：选C。相邻差为13、27、45、67，再作差为14、18、22，构成公差4的等差数列。下一二阶差为26，因此下一一阶差为67＋26＝93，所求为155＋93＝248。这里是数字推理通常采用的简洁规律，并不声称有限序列在纯数学意义上只有一种延拓。
+================================================================================
+第32题  source_id=gd-mock-2026h2-s20-q32  subtype=数字推理
+  卷面(题目.jsonl)题干：5.4，9.1，10.8，18.2，20.16，（    ）
+  卷面选项：{'A': '36.4', 'B': '36.28', 'C': '35.4', 'D': '33.15'}
+  题目.jsonl 其他字段：materials=[] options_mode=text_or_mixed
+  题源第20季 第32题  answer字段=None
+  题干比对（源→卷）：一致
+  选项比对：一致
+  selection内嵌source_question与题源一致：True
+  blind_input 题面与卷面一致：True
+  答案键：A   源答案：None   盲解：A  → 一致
+  edits：[]
+  selection_reason：把数字形式与数值运算区分，先交叉分组再看两侧数字。
+  source_notice：原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。 未为降低难度而补写提示或重构选项。
+  verification：{"status": "editor_checked_pending_claude", "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。", "reference_answer_available": false, "reference_answer_agreement": null}
+  analysis：选A。奇数位置为5.4、10.8、20.16；偶数位置为9.1、18.2、所求项。两组都把小数点左右的数字分别加倍，故偶数项下一项为36.4。注意这是源题对数字书写形式的分组规律，并不是把10.8当作实数乘2得到20.16；按普通小数倍数会走入错误方向。
+================================================================================
+第33题  source_id=gd-mock-2026h2-s30-q34  subtype=数字推理
+  卷面(题目.jsonl)题干：$\frac{2}{15}$ ， $\frac{2}{9}$ ， $\frac{7}{22}$ ， $\frac{4}{9}$ ， $\frac{19}{33}$ ，（    ）
+  卷面选项：{'A': '$\\frac{3}{4}$', 'B': '$\\frac{2}{3}$', 'C': '$\\frac{4}{5}$', 'D': '$\\frac{17}{19}$'}
+  题目.jsonl 其他字段：materials=[] options_mode=text_or_mixed
+  题源第30季 第34题  answer字段=None
+  题干比对（源→卷）：一致
+  选项比对：一致
+  题源图片：['s30_p09_i00', 's30_p09_i01', 's30_p09_i02', 's30_p09_i03', 's30_p09_i04', 's30_p09_i05', 's30_p09_i06', 's30_p09_i07', 's30_p09_i08']
+  selection内嵌source_question与题源一致：True
+  blind_input 题面与卷面一致：True
+  答案键：A   源答案：None   盲解：A  → 一致
+  edits：[]
+  selection_reason：分数需适当反约分，分子分母分别寻找递推关系。
+  source_notice：原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。 未为降低难度而补写提示或重构选项。
+  verification：{"status": "editor_checked_pending_claude", "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。", "reference_answer_available": false, "reference_answer_agreement": null}
+  analysis：选A。将各项写成2/15、4/18、7/22、12/27、19/33。分子相邻差为2、3、5、7，是依次出现的质数，下一差为11，下一分子为30；分母相邻差为3、4、5、6，下一差为7，下一分母为40。因此所求为30/40＝3/4。
+================================================================================
+第34题  source_id=gd-mock-2026h2-s25-q35  subtype=数字推理
+  卷面(题目.jsonl)题干：48，32，56，72，100，（    ），186
+  卷面选项：{'A': '122', 'B': '130', 'C': '136', 'D': '140'}
+  题目.jsonl 其他字段：materials=[] options_mode=text_or_mixed
+  题源第25季 第35题  answer字段=None
+  题干比对（源→卷）：一致
+  选项比对：一致
+  selection内嵌source_question与题源一致：True
+  blind_input 题面与卷面一致：True
+  答案键：C   源答案：None   盲解：C  → 一致
+  edits：[]
+  selection_reason：双项递推且末项反向校验，避免只拟合前几项。
+  source_notice：原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。 未为降低难度而补写提示或重构选项。
+  verification：{"status": "editor_checked_pending_claude", "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。", "reference_answer_available": false, "reference_answer_agreement": null}
+  analysis：选C。从第三项起，每项等于前一项加前第二项的一半：32＋48/2＝56，56＋32/2＝72，72＋56/2＝100。所求为100＋72/2＝136；再验末项136＋100/2＝186，符合题面。
+================================================================================
+第35题  source_id=gd-mock-2026h2-s31-q35  subtype=数字推理
+  卷面(题目.jsonl)题干：15，12，19，14，28，26，53，40，（    ）
+  卷面选项：{'A': '102', 'B': '108', 'C': '112', 'D': '122'}
+  题目.jsonl 其他字段：materials=[] options_mode=text_or_mixed
+  题源第31季 第35题  answer字段=None
+  题干比对（源→卷）：一致
+  选项比对：一致
+  selection内嵌source_question与题源一致：True
+  blind_input 题面与卷面一致：True
+  答案键：A   源答案：None   盲解：A  → 一致
+  edits：[]
+  selection_reason：交叉序列中的质数平方差与和递推同时验证。
+  source_notice：原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。 未为降低难度而补写提示或重构选项。
+  verification：{"status": "editor_checked_pending_claude", "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。", "reference_answer_available": false, "reference_answer_agreement": null}
+  analysis：选A。奇数位置15、19、28、53，依次增加4、9、25，即2²、3²、5²；下一次增加下一质数7的平方49，得到102。偶数位置12、14、26、40满足前两项相加得后一项，也印证了交叉分组方向。
+================================================================================
+第36题  source_id=gd-mock-2026h2-s19-q39  subtype=数学运算
+  卷面(题目.jsonl)题干：某箱子中装有红、黄、白、绿四种颜色的小球，小球数量之和不超过100个。已知黄球的数量比其余三种颜色小球的数量之和多 $\frac{5}{9}$ ，白球的数量是红球的3倍，绿球有4个。问黄球比红球多多少个？
+  卷面选项：{'A': '40', 'B': '44', 'C': '48', 'D': '52'}
+  题目.jsonl 其他字段：materials=[] options_mode=text_or_mixed
+  题源第19季 第39题  answer字段=None
+  题干比对（源→卷）：一致
+  选项比对：一致
+  题源图片：['s19_p11_i00']
+  selection内嵌source_question与题源一致：True
+  blind_input 题面与卷面一致：True
+  答案键：C   源答案：None   盲解：C  → 一致
+  edits：[]
+  selection_reason：比例整数化后用总量上界锁定参数，训练同余约束。
+  source_notice：原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。 未为降低难度而补写提示或重构选项。
+  verification：{"status": "editor_checked_pending_claude", "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。", "reference_answer_available": false, "reference_answer_agreement": null}
+  analysis：选C。黄球与其余三色总数之比为14∶9，设分别为14k、9k，总数23k≤100，所以正整数k≤4。设红球r个，则其余三色合计r＋3r＋4＝4r＋4＝9k，故k必须是4的倍数，只能取4。于是r＝8，黄球56个，差为48个。
+================================================================================
+第37题  source_id=gd-mock-2026h2-s25-q43  subtype=数学运算
+  卷面(题目.jsonl)题干：一项工程，若甲、乙两公司合作需12天完成，总工费为12万元；若甲公司先单独工作8天，然后由乙公司接替再做18天也可以完成，总工费为14万元。若甲公司单独完成该工程，则总工费为多少万元？
+  卷面选项：{'A': '6', 'B': '8', 'C': '10', 'D': '12'}
+  题目.jsonl 其他字段：materials=[] options_mode=text_or_mixed
+  题源第25季 第43题  answer字段=None
+  题干比对（源→卷）：一致
+  选项比对：一致
+  selection内嵌source_question与题源一致：True
+  blind_input 题面与卷面一致：True
+  答案键：B   源答案：None   盲解：B  → 一致
+  edits：[]
+  selection_reason：工作效率与按天费用是两套未知量，必须分别建模。
+  source_notice：原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。 未为降低难度而补写提示或重构选项。
+  verification：{"status": "editor_checked_pending_claude", "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。", "reference_answer_available": false, "reference_answer_agreement": null}
+  analysis：选B。设甲、乙日效率为a、b，总工程量为1，有a＋b＝1/12、8a＋18b＝1，解得a＝1/20、b＝1/30，甲单做需20天。另设每日工费为u、v万元，有12(u＋v)＝12、8u＋18v＝14，解得u＝0.4、v＝0.6。甲单做总费用为20×0.4＝8万元。不要把总费用比例直接当效率比例。
+================================================================================
+第38题  source_id=gd-mock-2026h2-s22-q38  subtype=数学运算
+  卷面(题目.jsonl)题干：甲车从A地出发前往B地，到达B地后立即返回。甲车出发30分钟后，乙车也从A地出发前往B地，又过了30分钟两车在C地相遇，且B、C两地相距20千米。若甲车的速度比乙车快30%，那么A、B两地相距多少千米？
+  卷面选项：{'A': '30', 'B': '35', 'C': '40', 'D': '45'}
+  题目.jsonl 其他字段：materials=[] options_mode=text_or_mixed
+  题源第22季 第38题  answer字段=None
+  题干比对（源→卷）：一致
+  选项比对：一致
+  selection内嵌source_question与题源一致：True
+  blind_input 题面与卷面一致：True
+  答案键：D   源答案：None   盲解：D  → 一致
+  edits：[]
+  selection_reason：相遇时刻与往返路程必须在同一个时间锚点上比较。
+  source_notice：原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。 未为降低难度而补写提示或重构选项。
+  verification：{"status": "editor_checked_pending_claude", "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。", "reference_answer_available": false, "reference_answer_agreement": null}
+  analysis：选D。从甲出发到相遇共1小时，乙实际行驶0.5小时。设AB距离为L，甲已到B再返至C，走了L＋20；乙走了L－20。速度比1.3∶1、时间比2∶1，所以路程比为2.6∶1，即L＋20＝2.6(L－20)，解得L＝45千米。
+================================================================================
+第39题  source_id=gd-mock-2026h2-s27-q37  subtype=数学运算
+  卷面(题目.jsonl)题干：有一根不足50厘米长的绳子可围成一个三边长度为等差数列的直角三角形，现要将其围成一个相邻两边长度不等的长方形，若这根绳子围成的各图形边长均为整数，则这个长方形的面积最大为多少平方厘米？
+  卷面选项：{'A': '143', 'B': '144', 'C': '146', 'D': '149'}
+  题目.jsonl 其他字段：materials=[] options_mode=text_or_mixed
+  题源第27季 第37题  answer字段=None
+  题干比对（源→卷）：一致
+  选项比对：一致
+  selection内嵌source_question与题源一致：True
+  blind_input 题面与卷面一致：True
+  答案键：A   源答案：None   盲解：A  → 一致
+  edits：[]
+  selection_reason：几何比例、周长整数约束和排除正方形三个边界叠加。
+  source_notice：原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。 未为降低难度而补写提示或重构选项。
+  verification：{"status": "editor_checked_pending_claude", "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。", "reference_answer_available": false, "reference_answer_agreement": null}
+  analysis：选A。等差三边直角三角形必为3∶4∶5，且三边均为整数，周长为12k。绳长不足50厘米，可取的最大周长为48厘米。长方形相邻两边为不同整数且和为24，乘积在最接近时最大，取11和13，面积143平方厘米。12×12虽为144，但违反相邻边长不等的条件；更短周长的面积上界也达不到143。
+================================================================================
+第40题  source_id=gd-mock-2026h2-s21-q38  subtype=数学运算
+  卷面(题目.jsonl)题干：在一次百分制的数学考试中，有5位同学的平均分为83分，已知这5位同学的分数均为整数且各不相同，其中得分第三高的人与第四高的人的分数和为160分，其余任意相邻排名的两人分数差不超过5分。问这5人中得分第三高的人最低得多少分？
+  卷面选项：{'A': '80', 'B': '81', 'C': '83', 'D': '85'}
+  题目.jsonl 其他字段：materials=[] options_mode=text_or_mixed
+  题源第21季 第38题  answer字段=None
+  题干比对（源→卷）：一致
+  选项比对：一致
+  selection内嵌source_question与题源一致：True
+  blind_input 题面与卷面一致：True
+  答案键：B   源答案：None   盲解：B  → 一致
+  edits：[]
+  selection_reason：从上界不等式推出最小中位分数，再构造可达方案。
+  source_notice：原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。 未为降低难度而补写提示或重构选项。
+  verification：{"status": "editor_checked_pending_claude", "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。", "reference_answer_available": false, "reference_answer_agreement": null}
+  analysis：选B。设第三名为x，第四名为160－x。由其余相邻分差≤5，第二名至多x＋5，第一名至多x＋10；分数互异使第五名至多159－x。五人总分至多(x＋10)＋(x＋5)＋x＋(160－x)＋(159－x)＝x＋334。总分415，故x≥81。取91、86、81、79、78，和为415，第三、四名和160，要求的相邻分差均合格，所以81可以达到。
+================================================================================
+第41题  source_id=gd-mock-2026h2-s22-q43  subtype=数学运算
+  卷面(题目.jsonl)题干：某研究院科研小组6名成员的年龄分别为24岁、26岁、29岁、32岁、34岁、36岁，现从这6人中选出3人依次进行汇报，每人负责1个不同课题。汇报完毕后，发现这3人的平均年龄超过了28岁，且任意2人的年龄差不超过10岁，问有多少种汇报情况？
+  卷面选项：{'A': '70', 'B': '74', 'C': '76', 'D': '78'}
+  题目.jsonl 其他字段：materials=[] options_mode=text_or_mixed
+  题源第22季 第43题  answer字段=None
+  题干比对（源→卷）：一致
+  选项比对：一致
+  selection内嵌source_question与题源一致：True
+  blind_input 题面与卷面一致：True
+  答案键：D   源答案：None   盲解：D  → 一致
+  edits：[]
+  selection_reason：先定义选中的三人集合，再处理汇报顺序，避免重计。
+  source_notice：原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。 未为降低难度而补写提示或重构选项。
+  verification：{"status": "editor_checked_pending_claude", "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。", "reference_answer_available": false, "reference_answer_agreement": null}
+  analysis：选D。先计选中的三人集合，再计汇报顺序。含24岁时，为使极差≤10，另两人须在26、29、32、34中选；6种组合中，(24,26,29)、(24,26,32)总年龄不足84，(24,26,34)恰为84，都不满足平均年龄“超过”28，只剩3组。不含24但含26时，另两人从29、32、34、36中选，共6组，均满足总年龄>84和极差≤10。既不含24也不含26时，从剩余4人选3，共4组，均满足。合计3＋6＋4＝13组。每组三人对应3!＝6种汇报顺序，故有78种。
+================================================================================
+第42题  source_id=gd-mock-2026h2-s25-q39  subtype=数学运算
+  卷面(题目.jsonl)题干：甲、乙、丙三人要共同投资项目，约定每个项目的投资额中：30万元及以内的部分，三人平摊；30万元-50万元（含50万元）的部分，甲承担40%，乙和丙各承担30%；50万元-60万元（含60万元）的部分，甲承担20%，乙和丙各承担40%；超出60万元的部分，全部由甲承担。现有两个投资计划：①投资一个75万元的项目，②投资45万元和30万元的项目各一个。则甲在两个投资计划中的出资额相差多少万元？
+  卷面选项：{'A': '15', 'B': '14', 'C': '12', 'D': '9'}
+  题目.jsonl 其他字段：materials=[] options_mode=text_or_mixed
+  题源第25季 第39题  answer字段=None
+  题干比对（源→卷）：一致
+  选项比对：一致
+  selection内嵌source_question与题源一致：True
+  blind_input 题面与卷面一致：True
+  答案键：D   源答案：None   盲解：D  → 一致
+  edits：[]
+  selection_reason：分段累进规则按每个项目独立重置，不按总金额整体分摊。
+  source_notice：原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。 未为降低难度而补写提示或重构选项。
+  verification：{"status": "editor_checked_pending_claude", "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。", "reference_answer_available": false, "reference_answer_agreement": null}
+  analysis：选D。计划①甲出资：前30万元分摊10万元；30至50万元部分出20×40%＝8万元；50至60万元部分出10×20%＝2万元；超出60的15万元全部出资，总计35万元。计划②中，45万元项目甲出10＋15×40%＝16万元，30万元项目甲出10万元，合计26万元。相差9万元。
+================================================================================
+第43题  source_id=gd-mock-2026h2-s25-q44  subtype=数学运算
+  卷面(题目.jsonl)题干：F公司每月5号发工资，若5号为星期六或星期日，则工资会提前在当周的星期五发放。某年的下半年，F公司最多有几个月刚好在5号发工资？
+  卷面选项：{'A': '6', 'B': '5', 'C': '4', 'D': '3'}
+  题目.jsonl 其他字段：materials=[] options_mode=text_or_mixed
+  题源第25季 第44题  answer字段=None
+  题干比对（源→卷）：一致
+  选项比对：一致
+  selection内嵌source_question与题源一致：True
+  blind_input 题面与卷面一致：True
+  答案键：B   源答案：None   盲解：B  → 一致
+  edits：[]
+  selection_reason：周期计数看半年各月5日的星期位移，枚举锚点而不臆定年份。
+  source_notice：原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。 未为降低难度而补写提示或重构选项。
+  verification：{"status": "editor_checked_pending_claude", "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。", "reference_answer_available": false, "reference_answer_agreement": null}
+  analysis：选B。7、8、9、10、11、12月的5日，相对7月5日的星期位移依次为0、3、6、1、4、6（模7）。依次枚举7月5日为星期一至星期日，六个日期中落在周一至周五的个数为4、5、4、5、5、4、3，最大为5。例如7月5日为星期二时，六次依次为周二、周五、周一、周三、周六、周一，只有11月提前发放，其余五个月恰在5号发工资。
+================================================================================
+第44题  source_id=gd-mock-2026h2-s30-q42  subtype=数学运算
+  卷面(题目.jsonl)题干：某班级统计40名学生的考试情况，其中数学及格的有25人，英语及格的有27人，语文及格的有21人，三科都及格的有12人，比三科都不及格的人数多2倍。则至少两科及格的有多少人？
+  卷面选项：{'A': '13', 'B': '18', 'C': '25', 'D': '31'}
+  题目.jsonl 其他字段：materials=[] options_mode=text_or_mixed
+  题源第30季 第42题  answer字段=None
+  题干比对（源→卷）：一致
+  选项比对：一致
+  selection内嵌source_question与题源一致：True
+  blind_input 题面与卷面一致：True
+  答案键：C   源答案：None   盲解：C  → 一致
+  edits：[]
+  selection_reason：区分人次与人数，并处理“多2倍”和恰好两科。
+  source_notice：原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。 未为降低难度而补写提示或重构选项。
+  verification：{"status": "editor_checked_pending_claude", "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。", "reference_answer_available": false, "reference_answer_agreement": null}
+  analysis：选C。三科都及格12人，是都不及格人数的3倍，所以都不及格4人，至少一科及格36人。三科及格总人次为25＋27＋21＝73，比至少一科人数多37人次。恰两科者各多计1次，三科者各多计2次，故恰两科人数为37－2×12＝13，至少两科人数为13＋12＝25。
+================================================================================
+第45题  source_id=gd-mock-2026h2-s26-q45  subtype=数学运算
+  卷面(题目.jsonl)题干：某雾天能见度为500m。甲车在单行道路上从静止开始匀加速，行驶1km后速度达到60km/h。此时视线内恰好出现的前方车辆正以40km/h的速度匀速行驶，甲车立刻匀减速至与前车同速，此时恰好与前车保持100m安全距离，此后甲车保持匀速行驶。问甲车从出发到开始匀速行驶，共用了多长时间？
+  卷面选项：{'A': '120s', 'B': '144s', 'C': '264s', 'D': '280s'}
+  题目.jsonl 其他字段：materials=[] options_mode=text_or_mixed
+  题源第26季 第45题  answer字段=None
+  题干比对（源→卷）：一致
+  选项比对：一致
+  selection内嵌source_question与题源一致：True
+  blind_input 题面与卷面一致：True
+  答案键：C   源答案：None   盲解：C  → 一致
+  edits：[]
+  selection_reason：两阶段分别取平均速度，减速阶段须转入相对运动。
+  source_notice：原题文字、标点、选项及现有原图保留；源卷为用户确认未做过的题源，仍排除既有整卷与旧专项曝光。 未为降低难度而补写提示或重构选项。
+  verification：{"status": "editor_checked_pending_claude", "method": "本编辑先作答，再与源参考答案或本题复算/原图读取对照；不是隔离的第二读者审核。", "reference_answer_available": false, "reference_answer_agreement": null}
+  analysis：选C。匀加速阶段平均速度为30千米/小时，行驶1千米用时1/30小时，即120秒。开始减速时两车距离为能见度500米，减速结束相距100米，须追近400米。相对速度从20千米/小时匀减到0，平均相对速度10千米/小时，故减速阶段用时0.4/10小时＝144秒。合计264秒，不能把前车在减速期间仍然行驶漏掉。
+================================================================================
+汇总（题号, 答案键, 盲解）： [(31, 'C', 'C'), (32, 'A', 'A'), (33, 'A', 'A'), (34, 'C', 'C'), (35, 'A', 'A'), (36, 'C', 'C'), (37, 'B', 'B'), (38, 'D', 'D'), (39, 'A', 'A'), (40, 'B', 'B'), (41, 'D', 'D'), (42, 'D', 'D'), (43, 'B', 'B'), (44, 'C', 'C'), (45, 'C', 'C')]
+一致数： 15 / 15
+答案键字母分布： Counter({'C': 5, 'A': 4, 'B': 3, 'D': 3})

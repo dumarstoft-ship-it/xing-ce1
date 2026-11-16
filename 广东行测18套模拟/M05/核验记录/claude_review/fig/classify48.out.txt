@@ -1,0 +1,70 @@
+===== box 8 glyphs
+   +-+--   +-+--   +-+-+   +-+--   --+-+   +-+--   +-+-+   +-+--
+   |       | |     | | |   |         | |   | |     | | |   |    
+   +-+--   + +     + + +   +-+--     + +   + +     + + +   +-+--
+   |       | |     | | |   |         | |   | |     | | |   |    
+   +-+--   +-+--   | | |   +-+--   --+-+   +-+--   | | |   +-+--
+   #1 Ht-L Ht-R Hm-L Hm-R Hb-L Hb-R Vl-U Vl-D
+   #2 Ht-L Ht-R Hb-L Hb-R Vl-U Vl-D Vc-U Vc-D
+   #3 Ht-L Ht-R Vl-U Vl-D Vc-U Vc-D Vr-U Vr-D
+   #4 Ht-L Ht-R Hm-L Hm-R Hb-L Hb-R Vl-U Vl-D
+   #5 Ht-L Ht-R Hb-L Hb-R Vc-U Vc-D Vr-U Vr-D
+   #6 Ht-L Ht-R Hb-L Hb-R Vl-U Vl-D Vc-U Vc-D
+   #7 Ht-L Ht-R Vl-U Vl-D Vc-U Vc-D Vr-U Vr-D
+   #8 Ht-L Ht-R Hm-L Hm-R Hb-L Hb-R Vl-U Vl-D
+===== A 8 glyphs
+   +-+-+   |   |   --+-+   +-+-+   |   |   +-+--   --+-+   +-+-+
+   | | |   |   |       |   | | |   |   |   | |         |   | | |
+   + + +   +-+-+   --+-+   + + +   +-+-+   + +     --+-+   + + +
+   | | |   |   |       |   | | |   |   |   | |         |   | | |
+   | | |   +-+-+   --+-+   | | |   +-+-+   +-+--   --+-+   | | |
+   #1 Ht-L Ht-R Vl-U Vl-D Vc-U Vc-D Vr-U Vr-D
+   #2 Hm-L Hm-R Hb-L Hb-R Vl-U Vl-D Vr-U Vr-D
+   #3 Ht-L Ht-R Hm-L Hm-R Hb-L Hb-R Vr-U Vr-D
+   #4 Ht-L Ht-R Vl-U Vl-D Vc-U Vc-D Vr-U Vr-D
+   #5 Hm-L Hm-R Hb-L Hb-R Vl-U Vl-D Vr-U Vr-D
+   #6 Ht-L Ht-R Hb-L Hb-R Vl-U Vl-D Vc-U Vc-D
+   #7 Ht-L Ht-R Hm-L Hm-R Hb-L Hb-R Vr-U Vr-D
+   #8 Ht-L Ht-R Vl-U Vl-D Vc-U Vc-D Vr-U Vr-D
+===== B 8 glyphs
+   --+-+   +-+--   --+-+   +-+-+   +-+-+   |   |   +-+-+   | | |
+       |   | |         |   | | |   |   |   |   |   | | |   | | |
+   --+-+   + +     --+-+   + + +   +-+-+   +-+-+   + + +   + + +
+       |   | |         |   | | |   |   |   |   |   | | |   | | |
+   --+-+   +-+--   --+-+   | | |   |   |   +-+-+   | | |   +-+-+
+   #1 Ht-L Ht-R Hm-L Hm-R Hb-L Hb-R Vr-U Vr-D
+   #2 Ht-L Ht-R Hb-L Hb-R Vl-U Vl-D Vc-U Vc-D
+   #3 Ht-L Ht-R Hm-L Hm-R Hb-L Hb-R Vr-U Vr-D
+   #4 Ht-L Ht-R Vl-U Vl-D Vc-U Vc-D Vr-U Vr-D
+   #5 Ht-L Ht-R Hm-L Hm-R Vl-U Vl-D Vr-U Vr-D
+   #6 Hm-L Hm-R Hb-L Hb-R Vl-U Vl-D Vr-U Vr-D
+   #7 Ht-L Ht-R Vl-U Vl-D Vc-U Vc-D Vr-U Vr-D
+   #8 Hb-L Hb-R Vl-U Vl-D Vc-U Vc-D Vr-U Vr-D
+===== C 8 glyphs
+   +-+--   +-+-+   | | |   +-+--   --+-+   +-+--   | | |   +-+-+
+   |       |   |   | | |   |         | |   | |     | | |   | | |
+   +-+--   +-+-+   + + +   +-+--     + +   + +     + + +   + + +
+   |       |   |   | | |   |         | |   | |     | | |   | | |
+   +-+--   |   |   +-+-+   +-+--   --+-+   +-+--   +-+-+   | | |
+   #1 Ht-L Ht-R Hm-L Hm-R Hb-L Hb-R Vl-U Vl-D
+   #2 Ht-L Ht-R Hm-L Hm-R Vl-U Vl-D Vr-U Vr-D
+   #3 Hb-L Hb-R Vl-U Vl-D Vc-U Vc-D Vr-U Vr-D
+   #4 Ht-L Ht-R Hm-L Hm-R Hb-L Hb-R Vl-U Vl-D
+   #5 Ht-L Ht-R Hb-L Hb-R Vc-U Vc-D Vr-U Vr-D
+   #6 Ht-L Ht-R Hb-L Hb-R Vl-U Vl-D Vc-U Vc-D
+   #7 Hb-L Hb-R Vl-U Vl-D Vc-U Vc-D Vr-U Vr-D
+   #8 Ht-L Ht-R Vl-U Vl-D Vc-U Vc-D Vr-U Vr-D
+===== D 8 glyphs
+   | | |   --+-+   +-+--   | | |   +-+-+   --+-+   +-+--   | | |
+   | | |     | |   |       | | |   |   |     | |   |       | | |
+   + + +     + +   +-+--   + + +   +-+-+     + +   +-+--   + + +
+   | | |     | |   |       | | |   |   |     | |   |       | | |
+   +-+-+   --+-+   +-+--   +-+-+   |   |   --+-+   +-+--   +-+-+
+   #1 Hb-L Hb-R Vl-U Vl-D Vc-U Vc-D Vr-U Vr-D
+   #2 Ht-L Ht-R Hb-L Hb-R Vc-U Vc-D Vr-U Vr-D
+   #3 Ht-L Ht-R Hm-L Hm-R Hb-L Hb-R Vl-U Vl-D
+   #4 Hb-L Hb-R Vl-U Vl-D Vc-U Vc-D Vr-U Vr-D
+   #5 Ht-L Ht-R Hm-L Hm-R Vl-U Vl-D Vr-U Vr-D
+   #6 Ht-L Ht-R Hb-L Hb-R Vc-U Vc-D Vr-U Vr-D
+   #7 Ht-L Ht-R Hm-L Hm-R Hb-L Hb-R Vl-U Vl-D
+   #8 Hb-L Hb-R Vl-U Vl-D Vc-U Vc-D Vr-U Vr-D

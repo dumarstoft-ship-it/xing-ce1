@@ -1,0 +1,56 @@
+====== M05 51 gd-mock-2026h2-s17-q51
+  para1: chars= 80 est_width=  874.7pt -> 2 line(s), est last-line width= 426.4; observed spans [448.3, 448.3]
+         text: 宠物的免疫力与它们的饮食息息相关。如果宠物缺乏科学的饮食结构…否则无法形成科学的饮食结构。
+  para2: chars=  7 est_width=   76.5pt -> 1 line(s), est last-line width=  76.5; observed spans [78.3]
+         text: 由此可以推出：…由此可以推出：
+  remaining spans (options etc.): [425.8, 414.0, 357.9, 313.7]
+====== M05 52 gd-mock-2026h2-s16-q59
+  para1: chars=147 est_width= 1585.4pt -> 4 line(s), est last-line width= 240.5; observed spans [448.3, 448.3, 448.3, 33.4]
+         text: 银价上涨后，很多博主教大家用硫磺皂检验银饰真假——用硫磺皂一…须补充的前提是（    ）。
+  remaining spans (options etc.): [235.9, 167.9, 200.9, 200.9, 235.2]
+====== M05 53 gd-mock-2026h2-s18-q54
+  para1: chars= 90 est_width=  984.1pt -> 3 line(s), est last-line width=  87.5; observed spans [448.3, 448.3, 111.9]
+         text: 某心理学家做测验时发现，一所公立学校的教师对该校部分学生有较…积极期望会促使学生成绩提升。
+  para2: chars= 19 est_width=  207.7pt -> 1 line(s), est last-line width= 207.7; observed spans [212.8]
+         text: 以下哪项如果为真，最能够削弱上述观点？…果为真，最能够削弱上述观点？
+  remaining spans (options etc.): [302.5, 335.5, 324.3, 302.5]
+====== M05 54 gd-mock-2026h2-s16-q53
+  para1: chars=134 est_width= 1426.9pt -> 4 line(s), est last-line width=  82.0; observed spans [437.1, 454.1, 456.3, 123.1]
+         text: 为掌握市民对健身运动的参与情况，某市体育局连续三年开展线上抽…身房锻炼的人数其实是下降的。
+  para2: chars= 18 est_width=  196.8pt -> 1 line(s), est last-line width= 196.8; observed spans [201.6]
+         text: 以下哪项如果为真，最能解释上述现象？…如果为真，最能解释上述现象？
+  remaining spans (options etc.): [448.2, 44.6, 436.4, 453.4, 190.4, 448.2, 67.1]
+====== M05 55 gd-mock-2026h2-s19-q59
+  para1: chars=114 est_width= 1224.6pt -> 3 line(s), est last-line width= 328.0; observed spans [448.3, 448.3, 89.5]
+         text: 对马类化石的研究表明，早期始祖马呈现明显的低冠齿特征，而在后…充的前提条件是（    ）。
+  remaining spans (options etc.): [258.4, 358.5, 357.9, 357.9, 358.5]
+====== M05 57 gd-mock-2026h2-s18-q63
+  para1: chars=174 est_width= 1880.6pt -> 5 line(s), est last-line width=  87.4; observed spans [448.3, 448.3, 437.1, 358.6, 224.7]
+         text: 消费者在选购洗衣机时往往会关注转速这个参数。有人认为，洗衣机…述论证缺陷的是（    ）。
+  remaining spans (options etc.): [257.6, 245.8, 257.0, 246.4]
+====== M05 59 gd-mock-2026h2-s19-q62
+  para1: chars=122 est_width= 1312.1pt -> 3 line(s), est last-line width= 415.5; observed spans [448.3, 448.3, 179.2]
+         text: 某小区过去停车位严重不足，业主常因抢停车位发生矛盾。物业为缓…释上述现象的是（    ）。
+  remaining spans (options etc.): [258.4, 392.2, 335.5, 313.1, 324.9]
+====== M05 61 gd-mock-2026h2-s18-q64
+  para1: chars= 90 est_width=  962.2pt -> 3 line(s), est last-line width=  65.6; observed spans [448.3, 280.1, 247.1]
+         text: 构建数字化的企业管理模式能够提升企业运营效率，企业高质量发展…干最为相似的是（    ）。
+  remaining spans (options etc.): [448.2, 212.8, 447.7, 268.9, 458.9, 156.8, 448.2, 235.3]
+====== M05 62 gd-mock-2026h2-s16-q65
+  para1: chars=116 est_width= 1268.3pt -> 3 line(s), est last-line width= 371.7; observed spans [448.3, 448.3, 403.5]
+         text: 雄性清白招潮蟹左右螯大小悬殊，大螯约占其体重的一半，它们用大…通过挥舞大螯进行沟通与交流。
+  para2: chars= 21 est_width=  207.7pt -> 1 line(s), est last-line width= 207.7; observed spans [202.3]
+         text: 以下属于上述推测暗含前提的是（    ）。…测暗含前提的是（    ）。
+  remaining spans (options etc.): [156.7, 200.9, 234.6, 235.2]
+====== M05 63 gd-mock-2026h2-s19-q52
+  para1: chars= 50 est_width=  546.7pt -> 2 line(s), est last-line width=  98.4; observed spans [448.3, 111.9]
+         text: 某老旧小区计划加装电梯，甲、乙、丙三个电梯品牌参与投标。对于…牌，三位居民给出了如下猜测：
+  para2: chars= 18 est_width=  191.3pt -> 1 line(s), est last-line width= 191.3; observed spans [196.1]
+         text: （1）小李：甲、乙两个品牌均能中标；…李：甲、乙两个品牌均能中标；
+  para3: chars= 23 est_width=  246.0pt -> 1 line(s), est last-line width= 246.0; observed spans [252.2]
+         text: （2）小张：若丙品牌能中标，则甲品牌也能中标；…牌能中标，则甲品牌也能中标；
+  para4: chars= 45 est_width=  486.6pt -> 2 line(s), est last-line width=  38.3; observed spans [263.4, 235.3]
+         text: （3）小王：甲和乙两个品牌中，至多有一个能中标。中标结果出来…发现，只有一位居民预测正确。
+  para5: chars= 11 est_width=  120.3pt -> 1 line(s), est last-line width= 120.3; observed spans [123.1]
+         text: 根据上述信息可以推出：…根据上述信息可以推出：
+  remaining spans (options etc.): [422.7]

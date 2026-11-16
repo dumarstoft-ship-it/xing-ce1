@@ -1,0 +1,29 @@
+folded face normals: {'a': (np.int64(-1), np.int64(0), np.int64(0)), 'b': (np.int64(0), np.int64(1), np.int64(0)), 'c': (np.int64(0), np.int64(0), np.int64(1)), 'd': (np.int64(1), np.int64(0), np.int64(0)), 'e': (np.int64(0), np.int64(-1), np.int64(0)), 'f': (np.int64(0), np.int64(0), np.int64(-1))}
+net label 8: a.E -> cube edge mid (np.int64(-1), np.int64(1), np.int64(0)), glued pair ['bW', 'aE']
+net label 5: c.E -> cube edge mid (np.int64(1), np.int64(0), np.int64(1)), glued pair ['cE', 'dW']
+net label 6: e.E -> cube edge mid (np.int64(0), np.int64(-1), np.int64(-1)), glued pair ['eE', 'fW']
+net label 7: d.N -> cube edge mid (np.int64(1), np.int64(1), np.int64(0)), glued pair ['bE', 'dN']
+opposite: a d
+opposite: b e
+opposite: c f
+
+proper rotations (det=+1) mapping net windows onto top/front/right: 3
+   [[1, 0, 0], [0, 0, -1], [0, 1, 0]]  net->view: {8: 4, 5: 3, 6: 1, 7: None}
+   [[0, 1, 0], [1, 0, 0], [0, 0, -1]]  net->view: {8: 3, 5: 1, 6: 4, 7: 2}
+   [[0, 0, -1], [0, 1, 0], [1, 0, 0]]  net->view: {8: 1, 5: 4, 6: 3, 7: None}
+improper (mirror, det=-1) placements mapping windows onto top/front/right: 3
+   [[1, 0, 0], [0, 1, 0], [0, 0, -1]]  net->view: {8: None, 5: None, 6: None, 7: 2}
+   [[0, 1, 0], [0, 0, -1], [1, 0, 0]]  net->view: {8: None, 5: None, 6: None, 7: None}
+   [[0, 0, -1], [1, 0, 0], [0, 1, 0]]  net->view: {8: None, 5: None, 6: None, 7: None}
+
+proper:
+  option A {1: 7, 2: 5, 3: 6, 4: 8} consistent with placements []
+  option B {1: 6, 2: 5, 3: 8, 4: 7} consistent with placements []
+  option C {1: 5, 2: 7, 3: 8, 4: 6} consistent with placements [1]
+  option D {1: 5, 2: 7, 3: 6, 4: 8} consistent with placements []
+
+improper:
+  option A {1: 7, 2: 5, 3: 6, 4: 8} consistent with placements []
+  option B {1: 6, 2: 5, 3: 8, 4: 7} consistent with placements []
+  option C {1: 5, 2: 7, 3: 8, 4: 6} consistent with placements []
+  option D {1: 5, 2: 7, 3: 6, 4: 8} consistent with placements []
