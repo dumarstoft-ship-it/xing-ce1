@@ -36,8 +36,8 @@
 | `tools/composition.py` | 题型与真题范围对照 |
 | `tools/extract_season.py`、`verbal_pool.py`、`compare_second.py`、`archive_old.py`、`make_readme.py` | 导出解题输入、言语题池、复核对照、旧版归档、各套README |
 | `<套卷>/编排.json` | 本套的换题、调序、改写、补条件，每条写明理由 |
-| `<套卷>/输入/`、`解题/`、`复核/`、`原创.json` | 解题输入、第一遍解题记录与脚本、第二人盲解、编辑新写的题 |
-| `言语/`、`政治常识/`、`charts/` | 言语选题、政治常识出题与复核、统计图样式指定 |
+| `<套卷>/输入/`、`解题/`、`复核/`、`原创.json`、`figures/` | 解题输入、第一遍解题记录与脚本（`swaps.json`是换入题）、第二人盲解（`second_extras.json`是换入题与改写题）、编辑新写的题及其题图 |
+| `言语/`、`政治常识/`、`charts/` | 言语选题（M06起一套一个 `selection_<套卷>.json`）、政治常识出题与复核（M06为 `戊.json`）、统计图样式指定 |
 | `解题说明.md`、`复核说明.md` | 给解题人、复核人的说明 |
 
 重新生成一套：`python3 广东行测18套模拟/重编/tools/build_paper.py M01`，再用 `打印排版/build_print.py` 排版。

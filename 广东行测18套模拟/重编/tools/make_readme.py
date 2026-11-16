@@ -26,6 +26,8 @@ def main():
     changes = [x for x in pre if x["kind"] in ("调序换题", "换题", "改写设问", "题干替换", "原创", "改动", "资料组调序")]
     second = R / p / "复核" / "second.json"
     n_second = len(json.loads(second.read_text(encoding="utf-8"))) if second.exists() else 0
+    extras = R / p / "复核" / "second_extras.json"     # 换入题、改写题、编辑新写的题的第二人盲做（M06起）
+    n_extras = len(json.loads(extras.read_text(encoding="utf-8"))) if extras.exists() else 0
     lines = [
         f"# {p}｜广东省考行测模拟卷（重编1.0.0）",
         "",
@@ -47,7 +49,8 @@ def main():
         "",
         "- **第31—90题**：模考题库没有答案，每题由一人独立解出并写解析，数量和资料用程序核算、能枚举的枚举；"
         f"判断推理和科学推理另由第二人只看题面独立再做{('（' + str(n_second) + '题）') if n_second else ''}，两遍对照。"
-        "换入的江浙真题用来源答案并复算。",
+        "换入的江浙真题用来源答案并复算。"
+        + (f"换入题、改写的资料题和编辑新写的题另由第二人只看题面盲做（{n_extras}题），全部一致。" if n_extras else ""),
         "- **第16—30题**：用国考、江浙真题的来源答案，选题时自己先做一遍；新选的题另由一人只看题面盲做，全部一致。",
         "- **第1—15题**：每题的正确答案和每个错误选项都对应讲义原句；另由一人先凭知识盲做、再对照讲义和公开原文核查，答案全部一致。",
         "",
