@@ -400,9 +400,15 @@ def text_values(spec):
     out = []
     for c in spec.get("categories") or []:
         out += cat_lines(c, 0) if spec.get("kind") not in ("hbar", "hbar2") else [c]
-    for s in (spec.get("bars") or []) + (spec.get("lines") or []):
+    series = (spec.get("bars") or []) + (spec.get("lines") or [])
+    # 只有一个指标的坐标图不画图例，指标名不印出来（单位另写在纵轴上方）
+    legend = not (spec.get("kind") in ("bar", "line", "combo") and len(series) == 1 and not spec.get("legend_always"))
+    for s in series:
         out += [x for x in s["labels"] if x not in (None, "")]
-        out.append(s["name"])
+        if legend:
+            out.append(s["name"])
+    if spec.get("left_unit"):
+        out.append(spec["left_unit"])
     for x in spec.get("slices") or []:
         out += [x["name"], x["label"]]
     for g in spec.get("groups") or []:
