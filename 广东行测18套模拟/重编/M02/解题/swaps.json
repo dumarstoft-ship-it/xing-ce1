@@ -1,0 +1,34 @@
+[
+ {
+  "id": "JS2023-A类-064",
+  "number": 42,
+  "answer": "B",
+  "category": "数学运算",
+  "subcategory": "最值与构造",
+  "form": "",
+  "analysis": "本题考查和定最值。设快递员共n人，由总送件量相等得220n＝260＋218（n－1），解得n＝21，总送件量为220×21＝4620件。\n要使某一名快递员送件最多，其余快递员应尽量少。送件最少的是200件，除送260件的快递员和所求的快递员外，其余19人都按200件计，则所求最多为4620－260－200×19＝560件。\n故正确答案为B。",
+  "verification": "来源答案B；n＝21，4620－260－3800＝560。",
+  "confidence": "high",
+  "issues": [],
+  "replace_recommended": false,
+  "difficulty": "中",
+  "prior_answer": null,
+  "prior_note": null
+ },
+ {
+  "id": "gd-mock-2026h2-s28-q67",
+  "number": 67,
+  "answer": "C",
+  "category": "物理",
+  "subcategory": "力学",
+  "form": "带图",
+  "analysis": "本题考查摩擦力的方向。\n手推车由工人推动，前后轮都是从动轮，相对地面有向前运动的趋势，地面对前后轮的摩擦力都向左（与运动方向相反），A、B两项错误。\n货物与车保持相对静止。车加速向右时，货物也向右加速，使货物加速的只能是车对货物的静摩擦力，方向向右，C项正确。\n车匀速向右时，货物做匀速直线运动，水平方向不受力，不受摩擦力，D项错误。\n故正确答案为C。",
+  "verification": "逐项受力分析；第二人盲解复核见 复核/second.json。",
+  "confidence": "high",
+  "issues": [],
+  "replace_recommended": false,
+  "difficulty": "中",
+  "prior_answer": null,
+  "prior_note": null
+ }
+]
