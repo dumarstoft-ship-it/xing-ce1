@@ -1,0 +1,80 @@
+[
+ {
+  "id": "ZJ2021-A类-085",
+  "stem": [
+   {
+    "type": "text",
+    "text": "下列哪个选项可与①和②组成一个长方体？"
+   },
+   {
+    "type": "figure",
+    "path": "江浙行测_AI题库/images/original/352.png"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "A"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "B"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "C"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "D"
+    }
+   ]
+  }
+ },
+ {
+  "id": "M03-ORIG-SCI-ELEC",
+  "stem": [
+   {
+    "type": "text",
+    "text": "如图所示电路，电源电压保持不变，$R_1$ 为定值电阻。闭合开关S，将滑动变阻器 $R_2$ 的滑片P由a端向b端移动的过程中（电表均为理想电表），下列说法正确的是（    ）。"
+   },
+   {
+    "type": "figure",
+    "path": "广东行测18套模拟/重编/M03/figures/elec_circuit_preview.png"
+   }
+  ],
+  "options": {
+   "A": [
+    {
+     "type": "text",
+     "text": "电流表A的示数变小，电压表 $V_1$ 的示数变大"
+    }
+   ],
+   "B": [
+    {
+     "type": "text",
+     "text": "电压表 $V_2$ 的示数与电流表A的示数之比不变"
+    }
+   ],
+   "C": [
+    {
+     "type": "text",
+     "text": "电压表 $V_2$ 示数的变化量与电流表A示数的变化量之比的绝对值不变"
+    }
+   ],
+   "D": [
+    {
+     "type": "text",
+     "text": "电路消耗的总功率变大"
+    }
+   ]
+  }
+ }
+]
