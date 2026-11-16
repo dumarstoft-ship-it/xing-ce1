@@ -77,6 +77,14 @@ def main():
         "- 重新生成：`python3 广东行测18套模拟/重编/tools/build_paper.py " + p + "`，再 `python3 广东行测18套模拟/打印排版/build_print.py " + p + " --font-dir <字体目录>`。字体文件不入库。",
         "",
     ]
+    if (d / "astra审核.md").exists():
+        lines += [
+            "## Astra审核",
+            "",
+            "Astra（GPT）按[协作分工](../协作分工.md)对本套做了定向审核：[astra审核.md](astra审核.md)；Claude的处理见"
+            + ("[astra审核处理.md](astra审核处理.md)。" if (d / "astra审核处理.md").exists() else "（待处理）。"),
+            "",
+        ]
     if p in OLD:
         lines += [
             "## 旧版",
