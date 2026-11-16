@@ -781,14 +781,14 @@
   },
   "output_sha256": {
     "paper.json": "047dbdbffdfed7c25c0b8a552767b575e731fad1f2539f275eea227b6321bb71",
-    "selection.json": "f6115d390b4f534b2cdd23aefc5bcaf21ecf943a1a7edfdbb61fc412ad448a59",
-    "originals.json": "f8bd26dda249bfed454be6aeea9b89468c31e143465ea2b49844672ac6bfce69",
+    "selection.json": "cc96c061acdce31a4578ef3d60bd10a03c497234bf00f62e4106d45528892931",
+    "originals.json": "2017daad3c4ce5b1b8b3a20f186e7930314966d3f49e67c1f2041558e3b93560",
     "choices.json": "4e9f9e5d4293486364950538c762b781512b39c8abac0e44e02dffb68e7693c7",
     "editorial.json": "5ee36cef40f2babb8d38bbc22f169b9faa7fccd4f2eb140098648be38c6467f4",
-    "题目.jsonl": "1aa68fc12dd5e0ac6abef8181cb23a01b27120f8a600c99c6626968c9ced11b2",
-    "题本_待审.md": "ad705215639bcef93e328a2f0f381e5b2a024eb135422bf847fdf65cfdd5b456",
-    "答案与解析_待审.md": "bf57d89e03f752853b0b94aa2ecdda34396ad9255152245b15ae501e84269cef",
-    "来源登记.jsonl": "1ee11741b046460a16a81b5f903db5a725fab468bf307d938f10b1fe5cab63f9"
+    "题目.jsonl": "b88e427b650309e27a502274c0d3faf3b74fc03ef807fe1589b29f1c3120260b",
+    "题本_待审.md": "026ac7c98b044431c7cb21ef02bb6cc0cc552321eb2eb04d8dd4d862d4fb8916",
+    "答案与解析_待审.md": "0b2e310f23bc7d38ff7ab2807ffe891016ec9bd9420b7c4ae7e865bc86e3de2c",
+    "来源登记.jsonl": "efc075ae2c4caac6d129264255129d2c8127d34b1732cb259f34a913857709fe"
   },
   "use_ledger_rows_after_local_build": 450,
   "external_review": "claude_review_v010_done",
