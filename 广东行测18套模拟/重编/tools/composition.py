@@ -35,8 +35,11 @@ def norm_label(part, label):
             return ["逻辑填空-单空" if "单空" in L else "逻辑填空-多空"]
         if L.startswith("语句排序"):
             return ["语句排序"]
-        if L in ("词句理解", "接语"):
+        if L.startswith(("词句理解", "接语")):
             return ["词句理解、接语"]
+        for k in ("主旨意图", "细节判断", "标题", "语句填空"):
+            if L.startswith(k):
+                return [k]
         return [L]
     if part == "数学运算":
         for k in ["和差倍比方程", "行程", "工程", "最值与构造", "排列组合与概率", "经济利润", "几何", "杂题"]:
