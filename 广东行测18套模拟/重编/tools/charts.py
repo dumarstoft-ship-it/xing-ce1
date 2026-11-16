@@ -415,7 +415,7 @@ def text_values(spec):
     # 只有一个指标的坐标图不画图例，指标名不印出来（单位另写在纵轴上方）
     legend = not (spec.get("kind") in ("bar", "line", "combo") and len(series) == 1 and not spec.get("legend_always"))
     for s in series:
-        out += [x for x in s["labels"] if x not in (None, "")]
+        out += [x for v, x in zip(s["values"], s["labels"]) if v is not None and x not in (None, "")]   # 原图没有的值（如“原图未给出”）不画也不印
         if legend:
             out.append(s["name"])
     if spec.get("left_unit"):
