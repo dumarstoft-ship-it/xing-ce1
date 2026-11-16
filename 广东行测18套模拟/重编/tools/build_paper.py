@@ -32,7 +32,7 @@ MOCK_REL = "模考/2026下半年广东卷_16-33季_AI可读"
 MOCK = ROOT / MOCK_REL
 JZ_REL = "江浙行测_AI题库"
 GK_REL = "国考/言语理解/2016-2025/all.jsonl"
-SEASON = {"M01": 16, "M02": 17, "M03": 18, "M04": 19, "M05": 20}
+SEASON = {f"M{i:02d}": 15 + i for i in range(1, 19)}   # M01对第16季……M18对第33季
 VERSION = "1.0.0"
 
 
@@ -195,18 +195,21 @@ def material_blocks(m, new_id, log, number):
         elif blk["type"] == "table":
             box = image_spans[ii] if ii < len(image_spans) else None
             ii += 1
-            if CHART_TITLE.match(blk.get("title") or "") and box:
-                aid = blk.get("source_asset_id") or f"{m['id']}-{ii}"
+            aid = blk.get("source_asset_id") or f"{m['id']}-{ii}"
+            ov = dict(specs.get(aid) or {})
+            # 标题带“图1：”的按统计图重画；标题没有“图”字样、但 charts/specs.json 标了 chart 的也按图重画（理由写在 note）
+            if box and (CHART_TITLE.match(blk.get("title") or "") or ov.pop("chart", False)):
+                note = ov.pop("note", "")
                 w_mm = (box[2] - box[0]) / 72 * 25.4
                 h_mm = (box[3] - box[1]) / 72 * 25.4
-                spec = chart_spec(blk, w_mm, h_mm, specs.get(aid))
+                spec = chart_spec(blk, w_mm, h_mm, ov or None)
                 rel = f"广东行测18套模拟/重编/charts/{aid}.svg"
                 (ROOT / rel).parent.mkdir(parents=True, exist_ok=True)
                 (ROOT / rel).write_text(charts.render(spec), encoding="utf-8")
                 out.append({"type": "chart", "title": blk["title"], "svg_path": rel, "print_width_mm": round(w_mm, 1),
                             "values": charts.text_values(spec), "source_table": {k: blk[k] for k in ("headers", "rows")},
                             "notes": blk.get("notes") or ""})
-                log.add(number, "统计图", f"{blk['title']}：原图未入库，按转写数据重绘为{ {'bar': '柱状图', 'line': '折线图', 'combo': '柱线图', 'pie': '饼图', 'hbar': '条形图', 'hbar2': '条形图', 'stack': '堆积柱状图', 'multipie': '饼图'}[spec['kind']] }，按原图印宽{w_mm:.1f}mm")
+                log.add(number, "统计图", f"{blk['title']}：原图未入库，按转写数据重绘为{ {'bar': '柱状图', 'line': '折线图', 'combo': '柱线图', 'pie': '饼图', 'hbar': '条形图', 'hbar2': '条形图', 'stack': '堆积柱状图', 'multipie': '饼图'}[spec['kind']] }，按原图印宽{w_mm:.1f}mm" + (f"（{note}）" if note else ""))
             else:
                 out.append({k: v for k, v in blk.items() if k != "source_asset_id"})
         else:
@@ -217,7 +220,7 @@ def material_blocks(m, new_id, log, number):
 # ---------------------------------------------------------------- 各部分
 def politics_items(paper):
     items = {}
-    for who in ("甲", "乙", "丙", "丁"):      # 丁补写的经济题替换甲在同一题位的题
+    for who in ("甲", "乙", "丙", "丁", "戊"):      # 丁补写的经济题替换甲在同一题位的题；戊写M06
         for q in jload(R / "政治常识" / f"{who}.json", []):
             if q["paper"] == paper:
                 items[q["number"]] = dict(q, writer=who)
@@ -225,7 +228,10 @@ def politics_items(paper):
 
 
 def verbal_items(paper):
-    sel = jload(R / "言语" / "selection.json", {})
+    sel = jload(R / "言语" / "selection.json", {})          # M01—M05
+    one = R / "言语" / f"selection_{paper}.json"             # M06起一套一个文件
+    if one.exists():
+        sel = dict(sel, **jload(one))
     return {q["number"]: q for q in sel.get(paper, [])}
 
 

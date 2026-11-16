@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="330pt" height="300pt" viewBox="0 0 330 300">
+<rect width="100%" height="100%" fill="#fff"/>
+<g stroke="#000" stroke-width="1.1" fill="none" stroke-linecap="round">
+<path d="M13.0,61.0 H31.0"/>
+<path d="M17.0,68.0 H27.0" stroke-width="2.6" stroke-linecap="butt"/>
+<path d="M22.0,36.0 L22.0,61.0"/>
+<path d="M22.0,68.0 L22.0,94.0"/>
+<path d="M22.0,36.0 L44.0,36.0"/>
+<path d="M44.0,36.0 L63.0,27.0"/>
+<path d="M66.0,36.0 L95.5,36.0"/>
+<circle cx="104.0" cy="36.0" r="8.5"/>
+<path d="M112.5,36.0 L140.0,36.0"/>
+<path d="M140.0,36.0 L140.0,94.0"/>
+<path d="M22.0,94.0 L66.0,94.0"/>
+<rect x="66.0" y="89.0" width="30" height="10"/>
+<path d="M96.0,94.0 L140.0,94.0"/>
+<path d="M86.0,36.0 L86.0,18.0"/>
+<path d="M86.0,18.0 L94.0,18.0"/>
+<path d="M94.0,18.0 L111.0,9.0"/>
+<path d="M114.0,18.0 L122.0,18.0"/>
+<path d="M122.0,18.0 L122.0,36.0"/>
+<path d="M178.0,61.0 H196.0"/>
+<path d="M182.0,68.0 H192.0" stroke-width="2.6" stroke-linecap="butt"/>
+<path d="M187.0,36.0 L187.0,61.0"/>
+<path d="M187.0,68.0 L187.0,94.0"/>
+<path d="M187.0,36.0 L209.0,36.0"/>
+<path d="M209.0,36.0 L228.0,27.0"/>
+<path d="M231.0,36.0 L260.5,36.0"/>
+<circle cx="269.0" cy="36.0" r="8.5"/>
+<path d="M277.5,36.0 L305.0,36.0"/>
+<path d="M305.0,36.0 L305.0,94.0"/>
+<path d="M187.0,94.0 L231.0,94.0"/>
+<rect x="231.0" y="89.0" width="30" height="10"/>
+<path d="M261.0,94.0 L305.0,94.0"/>
+<path d="M219.0,94.0 L219.0,112.0"/>
+<path d="M219.0,112.0 L235.0,112.0"/>
+<path d="M235.0,112.0 L254.0,103.0"/>
+<path d="M257.0,112.0 L273.0,112.0"/>
+<path d="M273.0,112.0 L273.0,94.0"/>
+<path d="M13.0,211.0 H31.0"/>
+<path d="M17.0,218.0 H27.0" stroke-width="2.6" stroke-linecap="butt"/>
+<path d="M22.0,186.0 L22.0,211.0"/>
+<path d="M22.0,218.0 L22.0,244.0"/>
+<path d="M22.0,186.0 L44.0,186.0"/>
+<path d="M44.0,186.0 L63.0,177.0"/>
+<path d="M66.0,186.0 L95.5,186.0"/>
+<circle cx="104.0" cy="186.0" r="8.5"/>
+<path d="M112.5,186.0 L140.0,186.0"/>
+<path d="M140.0,186.0 L140.0,244.0"/>
+<path d="M22.0,244.0 L66.0,244.0"/>
+<rect x="66.0" y="239.0" width="30" height="10"/>
+<path d="M96.0,244.0 L140.0,244.0"/>
+<path d="M54.0,244.0 L54.0,262.0"/>
+<path d="M54.0,262.0 L70.0,262.0"/>
+<path d="M70.0,262.0 L89.0,253.0"/>
+<path d="M92.0,262.0 L108.0,262.0"/>
+<path d="M108.0,262.0 L108.0,244.0"/>
+<path d="M178.0,211.0 H196.0"/>
+<path d="M182.0,218.0 H192.0" stroke-width="2.6" stroke-linecap="butt"/>
+<path d="M187.0,186.0 L187.0,211.0"/>
+<path d="M187.0,218.0 L187.0,244.0"/>
+<path d="M187.0,186.0 L209.0,186.0"/>
+<path d="M209.0,186.0 L228.0,177.0"/>
+<path d="M231.0,186.0 L305.0,186.0"/>
+<path d="M187.0,244.0 L305.0,244.0"/>
+<path d="M261.0,186.0 L261.0,206.5"/>
+<circle cx="261.0" cy="215.0" r="8.5"/>
+<path d="M261.0,223.5 L261.0,244.0"/>
+<path d="M305.0,186.0 L305.0,191.0"/>
+<rect x="300.0" y="191.0" width="10" height="20"/>
+<path d="M305.0,211.0 L305.0,219.0"/>
+<path d="M305.0,235.0 L314.0,222.0"/>
+<path d="M305.0,235.0 L305.0,244.0"/>
+</g>
+<g fill="#000">
+<circle cx="44.0" cy="36.0" r="1.7"/>
+<circle cx="66.0" cy="36.0" r="1.7"/>
+<circle cx="86.0" cy="36.0" r="1.7"/>
+<circle cx="122.0" cy="36.0" r="1.7"/>
+<circle cx="94.0" cy="18.0" r="1.7"/>
+<circle cx="114.0" cy="18.0" r="1.7"/>
+<circle cx="209.0" cy="36.0" r="1.7"/>
+<circle cx="231.0" cy="36.0" r="1.7"/>
+<circle cx="219.0" cy="94.0" r="1.7"/>
+<circle cx="273.0" cy="94.0" r="1.7"/>
+<circle cx="235.0" cy="112.0" r="1.7"/>
+<circle cx="257.0" cy="112.0" r="1.7"/>
+<circle cx="44.0" cy="186.0" r="1.7"/>
+<circle cx="66.0" cy="186.0" r="1.7"/>
+<circle cx="54.0" cy="244.0" r="1.7"/>
+<circle cx="108.0" cy="244.0" r="1.7"/>
+<circle cx="70.0" cy="262.0" r="1.7"/>
+<circle cx="92.0" cy="262.0" r="1.7"/>
+<circle cx="209.0" cy="186.0" r="1.7"/>
+<circle cx="231.0" cy="186.0" r="1.7"/>
+<circle cx="261.0" cy="186.0" r="1.7"/>
+<circle cx="261.0" cy="244.0" r="1.7"/>
+<circle cx="305.0" cy="219.0" r="1.7"/>
+<circle cx="305.0" cy="235.0" r="1.7"/>
+</g>
+<g font-family='"ZG Latin", "ZG Song"' fill="#000">
+<text x="55.0" y="24.0" font-size="10.5" font-style="italic" text-anchor="middle">S</text>
+<text x="61.5" y="27.0" font-size="7" text-anchor="middle">1</text>
+<text x="104.0" y="39.8" font-size="10.5" text-anchor="middle">M</text>
+<text x="81.0" y="85.0" font-size="10.5" font-style="italic" text-anchor="middle">R</text>
+<text x="132.0" y="16.0" font-size="10.5" font-style="italic" text-anchor="middle">S</text>
+<text x="138.5" y="19.0" font-size="7" text-anchor="middle">2</text>
+<text x="81.0" y="142.0" font-size="11" text-anchor="middle">A</text>
+<text x="220.0" y="24.0" font-size="10.5" font-style="italic" text-anchor="middle">S</text>
+<text x="226.5" y="27.0" font-size="7" text-anchor="middle">2</text>
+<text x="269.0" y="39.8" font-size="10.5" text-anchor="middle">M</text>
+<text x="246.0" y="85.0" font-size="10.5" font-style="italic" text-anchor="middle">R</text>
+<text x="286.0" y="116.0" font-size="10.5" font-style="italic" text-anchor="middle">S</text>
+<text x="292.5" y="119.0" font-size="7" text-anchor="middle">1</text>
+<text x="246.0" y="142.0" font-size="11" text-anchor="middle">B</text>
+<text x="55.0" y="174.0" font-size="10.5" font-style="italic" text-anchor="middle">S</text>
+<text x="61.5" y="177.0" font-size="7" text-anchor="middle">1</text>
+<text x="104.0" y="189.8" font-size="10.5" text-anchor="middle">M</text>
+<text x="81.0" y="235.0" font-size="10.5" font-style="italic" text-anchor="middle">R</text>
+<text x="121.0" y="266.0" font-size="10.5" font-style="italic" text-anchor="middle">S</text>
+<text x="127.5" y="269.0" font-size="7" text-anchor="middle">2</text>
+<text x="81.0" y="292.0" font-size="11" text-anchor="middle">C</text>
+<text x="220.0" y="174.0" font-size="10.5" font-style="italic" text-anchor="middle">S</text>
+<text x="226.5" y="177.0" font-size="7" text-anchor="middle">1</text>
+<text x="261.0" y="218.8" font-size="10.5" text-anchor="middle">M</text>
+<text x="290.0" y="205.0" font-size="10.5" font-style="italic" text-anchor="middle">R</text>
+<text x="288.0" y="231.0" font-size="10.5" font-style="italic" text-anchor="middle">S</text>
+<text x="294.5" y="234.0" font-size="7" text-anchor="middle">2</text>
+<text x="246.0" y="292.0" font-size="11" text-anchor="middle">D</text>
+</g>
+</svg>
