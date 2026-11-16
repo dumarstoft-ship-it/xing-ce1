@@ -1,3 +1,6 @@
+"""Automatic render-fit of the four Q50 options.  NOTE: for option B the greedy fit drops (0,2,1)
+by a tiny loss margin; the zoomed comparison shows the top layer's left edge is one unbroken
+diagonal, so (0,2,1) is present.  Final readings used for the verdict are in q50_robust.py."""
 import sys
 sys.path.insert(0, '.')
 from q50_fit import refine

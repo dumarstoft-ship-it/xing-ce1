@@ -26,13 +26,17 @@ for name, (x0, y0, x1, y1) in LABELS.items():
 
 
 def transect(p0, p1, n=2000):
+    """record every entry into a contour component from background"""
     seq = []
+    prev = 0
     for t in np.linspace(0, 1, n):
         x = int(round(p0[0] + (p1[0] - p0[0]) * t))
         y = int(round(p0[1] + (p1[1] - p0[1]) * t))
         v = int(lab[y, x])
-        if v in big and (not seq or seq[-1][0] != v):
+        v = v if v in big else 0
+        if v and v != prev:
             seq.append((v, (x, y)))
+        prev = v
     return seq
 
 

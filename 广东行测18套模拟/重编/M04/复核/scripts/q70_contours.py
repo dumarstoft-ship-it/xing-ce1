@@ -19,6 +19,11 @@ dark[384:, :] = False
 dark[:, :6] = False
 dark[:, 593:] = False
 dark[249:, :196] = False
+# erase the circled run labels (1) and (2); they touch neighbouring contours and would
+# merge two different contour lines into one component
+yy, xx = np.mgrid[0:H, 0:W]
+for cx, cy, r in ((277.5, 130.5, 16.5), (379.0, 120.0, 16.0)):
+    dark[(xx - cx) ** 2 + (yy - cy) ** 2 <= r ** 2] = False
 
 
 def label(mask):
