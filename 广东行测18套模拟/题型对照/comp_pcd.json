@@ -1,0 +1,8504 @@
+{
+ "meta": {
+  "generated": "2026-11-16",
+  "scope": "政治理论1—10、常识判断11—15、资料分析71—90",
+  "real_papers": {
+   "GD2024": "2024年广东行测（网友回忆版）；1—15题为常识判断（判断5、单选5、多选5）",
+   "GD2025": "2025年广东行测；政治理论10＋常识5",
+   "GD2026": "2026年广东行测（网友回忆版）；政治理论10＋常识5"
+  },
+  "mock_papers": "M01—M05 题目.jsonl（未看答案）",
+  "range_basis": "政治题型：2025—2026；政治内容：三年（2024为政治领域13题）；常识内容：2025—2026；1—15合并指标与资料分析：三年",
+  "material_form_note": "模拟卷资料分析底稿只有转写表格，打印版亦以表格呈现（打印排版/README“已知限制”），故按表格计；图形选项题的选项图照常印出"
+ },
+ "taxonomy": {
+  "政治理论内容": [
+   "马克思主义哲学",
+   "马克思主义政治经济学",
+   "科学社会主义",
+   "习近平新时代中国特色社会主义思想与党的创新理论",
+   "党史与党建",
+   "宪法与法治",
+   "经济社会政策与时政",
+   "广东省情",
+   "其他"
+  ],
+  "政治理论细则": [
+   "马克思主义哲学：唯物论、辩证法、认识论、唯物史观，含马克思主义理论特征等马原总论",
+   "马克思主义政治经济学：劳动价值论、货币、资本、剩余价值、价值规律，以及所有制结构、分配制度等社会主义基本经济制度（细类注“中特政经”）",
+   "习思想与党的创新理论：十个明确、六个必须坚持、两个结合、两个确立、中国式现代化与新发展理念/格局、新质生产力、全过程人民民主、总体国家安全观、文化思想等理论命题及党代会/全会理论表述",
+   "党史与党建：党史事件与人物、毛泽东思想著作与党的思想路线、党的建设、干部标准、党内法规",
+   "宪法与法治：宪法理论、国家政治制度、法治与德治、法治建设理论（具体法条应用题归常识“法律”）",
+   "经济社会政策与时政：具体政策领域与举措（双碳、水安全、社会治理、科技体制、开放、户籍等）及时政事实",
+   "广东省情：题干明确指向广东的政策、会议、精神与区域平台"
+  ],
+  "常识内容": [
+   "法律",
+   "历史与人文",
+   "地理",
+   "科技",
+   "经济",
+   "生活常识",
+   "广东相关",
+   "其他"
+  ],
+  "常识细则": [
+   "题干明确以广东为对象的归“广东相关”，另记其知识领域为细类；党史类题放在常识题位时归“历史与人文”（细类注党史）；“十四五”成就、全会提出的经济概念、规划沿革归“经济”"
+  ],
+  "1—15题标记": [
+   "古语：古语名句匹配",
+   "六个必须坚持：考“必须坚持……”立场观点方法",
+   "情境：题干设“某地/某企业/某镇/某团队/某党组织”等假设情境",
+   "对应排序：依次/分别对应、对应关系、归类分组、时间排序",
+   "时政锚定：题干或选项明确依托近两年会议、文件、讲话、事件、成就或新施行法律"
+  ],
+  "资料分析材料形式": [
+   "纯文字",
+   "纯表格",
+   "文字+表格",
+   "文字+统计图",
+   "文字+表格+统计图",
+   "（按打印所见判定；模拟卷“图1/图2”转写表也印成表格）"
+  ],
+  "资料分析考点": [
+   "增长率",
+   "增长量",
+   "基期量",
+   "现期量·简单计算",
+   "比重",
+   "倍数",
+   "平均数",
+   "比较排序",
+   "综合分析判断",
+   "材料理解（非计算）",
+   "图形选项题"
+  ],
+  "资料分析考点细则": [
+   "增长率：同比/环比/年均/间隔增长率及增长率比较计数",
+   "增长量：增量、年均增量、贡献率（增量之比）",
+   "基期量：已知现期与增长率或增量求过去值，含由“低x%”等百分比关系反推",
+   "现期量·简单计算：和差、读数计数、按增速推算未来值",
+   "比重：比重、两期比重变化、由部分与比重求整体或部分",
+   "倍数：现期倍数、基期倍数、增量之比",
+   "平均数：平均数及其增长率、增量、比较",
+   "比较排序：从多项中选最大/最小或排序（底层量另记）",
+   "综合分析判断：说法正误题且至少一项需计算",
+   "材料理解（非计算）：主题、未提及、不属于、文字型正误判断",
+   "图形选项题：选项为图或题干给图选对应项"
+  ],
+  "判级规则": [
+   "超出真题范围≥2题（组），或真题每年都有而本套为0 → 明显",
+   "超出范围1题（组） → 轻微"
+  ]
+ },
+ "questions": [
+  {
+   "paper": "GD2024",
+   "number": 1,
+   "part": "常识判断（2024原卷1—15题未分政治/常识）",
+   "question_type": "判断",
+   "domain": "政治",
+   "category": "习近平新时代中国特色社会主义思想与党的创新理论",
+   "subcategory": "“十个明确”",
+   "tags": [],
+   "basis": "党的领导是中国特色社会主义制度最大优势，考习近平新时代中国特色社会主义思想核心表述"
+  },
+  {
+   "paper": "GD2024",
+   "number": 2,
+   "part": "常识判断（2024原卷1—15题未分政治/常识）",
+   "question_type": "判断",
+   "domain": "政治",
+   "category": "习近平新时代中国特色社会主义思想与党的创新理论",
+   "subcategory": "“两个确立”",
+   "tags": [],
+   "basis": "“两个确立”的意义，出自党的十九届六中全会决议"
+  },
+  {
+   "paper": "GD2024",
+   "number": 3,
+   "part": "常识判断（2024原卷1—15题未分政治/常识）",
+   "question_type": "判断",
+   "domain": "政治",
+   "category": "经济社会政策与时政",
+   "subcategory": "时政事实",
+   "tags": [
+    "时政锚定"
+   ],
+   "basis": "2024年全国两会开幕日期，纯时政事实"
+  },
+  {
+   "paper": "GD2024",
+   "number": 4,
+   "part": "常识判断（2024原卷1—15题未分政治/常识）",
+   "question_type": "判断",
+   "domain": "政治",
+   "category": "习近平新时代中国特色社会主义思想与党的创新理论",
+   "subcategory": "民族工作重要思想",
+   "tags": [],
+   "basis": "中华民族共同体认同对民族形成的决定作用，属铸牢中华民族共同体意识论述"
+  },
+  {
+   "paper": "GD2024",
+   "number": 5,
+   "part": "常识判断（2024原卷1—15题未分政治/常识）",
+   "question_type": "判断",
+   "domain": "常识",
+   "category": "广东相关",
+   "subcategory": "地理",
+   "tags": [],
+   "basis": "广东光、热、水资源状况，考广东自然地理"
+  },
+  {
+   "paper": "GD2024",
+   "number": 6,
+   "part": "常识判断（2024原卷1—15题未分政治/常识）",
+   "question_type": "单选",
+   "domain": "政治",
+   "category": "习近平新时代中国特色社会主义思想与党的创新理论",
+   "subcategory": "六个必须坚持",
+   "tags": [
+    "六个必须坚持"
+   ],
+   "basis": "由材料判断体现“必须坚持胸怀天下”的立场观点方法"
+  },
+  {
+   "paper": "GD2024",
+   "number": 7,
+   "part": "常识判断（2024原卷1—15题未分政治/常识）",
+   "question_type": "单选",
+   "domain": "政治",
+   "category": "习近平新时代中国特色社会主义思想与党的创新理论",
+   "subcategory": "文化思想",
+   "tags": [
+    "古语"
+   ],
+   "basis": "传承中华优秀传统文化理念与古语选项匹配"
+  },
+  {
+   "paper": "GD2024",
+   "number": 8,
+   "part": "常识判断（2024原卷1—15题未分政治/常识）",
+   "question_type": "单选",
+   "domain": "政治",
+   "category": "党史与党建",
+   "subcategory": "党史·毛泽东著作",
+   "tags": [],
+   "basis": "“没有调查，没有发言权”出自《反对本本主义》，党史与毛泽东思想"
+  },
+  {
+   "paper": "GD2024",
+   "number": 9,
+   "part": "常识判断（2024原卷1—15题未分政治/常识）",
+   "question_type": "单选",
+   "domain": "政治",
+   "category": "广东省情",
+   "subcategory": "粤港澳大湾区",
+   "tags": [
+    "时政锚定"
+   ],
+   "basis": "总书记2023年视察广东所述大湾区战略地位"
+  },
+  {
+   "paper": "GD2024",
+   "number": 10,
+   "part": "常识判断（2024原卷1—15题未分政治/常识）",
+   "question_type": "单选",
+   "domain": "政治",
+   "category": "广东省情",
+   "subcategory": "广东高质量发展大会",
+   "tags": [
+    "时政锚定"
+   ],
+   "basis": "2024年广东全省高质量发展大会对产业科技创新的要求"
+  },
+  {
+   "paper": "GD2024",
+   "number": 11,
+   "part": "常识判断（2024原卷1—15题未分政治/常识）",
+   "question_type": "多选",
+   "domain": "政治",
+   "category": "经济社会政策与时政",
+   "subcategory": "社会治理",
+   "tags": [
+    "时政锚定"
+   ],
+   "basis": "二十大报告“完善社会治理体系”的具体要求，属社会治理政策"
+  },
+  {
+   "paper": "GD2024",
+   "number": 12,
+   "part": "常识判断（2024原卷1—15题未分政治/常识）",
+   "question_type": "多选",
+   "domain": "政治",
+   "category": "马克思主义哲学",
+   "subcategory": "唯物辩证法",
+   "tags": [],
+   "basis": "矛盾的同一性"
+  },
+  {
+   "paper": "GD2024",
+   "number": 13,
+   "part": "常识判断（2024原卷1—15题未分政治/常识）",
+   "question_type": "多选",
+   "domain": "政治",
+   "category": "党史与党建",
+   "subcategory": "党史·精神谱系",
+   "tags": [],
+   "basis": "判断英模事迹是否发生于社会主义建设时期"
+  },
+  {
+   "paper": "GD2024",
+   "number": 14,
+   "part": "常识判断（2024原卷1—15题未分政治/常识）",
+   "question_type": "多选",
+   "domain": "政治",
+   "category": "马克思主义哲学",
+   "subcategory": "唯物史观·道德观",
+   "tags": [],
+   "basis": "马克思主义道德观中的道德起源"
+  },
+  {
+   "paper": "GD2024",
+   "number": 15,
+   "part": "常识判断（2024原卷1—15题未分政治/常识）",
+   "question_type": "多选",
+   "domain": "常识",
+   "category": "法律",
+   "subcategory": "专门法条文",
+   "tags": [
+    "时政锚定"
+   ],
+   "basis": "《爱国主义教育法》（2024年施行）规定的教育内容，法条知识"
+  },
+  {
+   "paper": "GD2025",
+   "number": 1,
+   "part": "政治理论",
+   "question_type": "判断",
+   "domain": "政治",
+   "category": "习近平新时代中国特色社会主义思想与党的创新理论",
+   "subcategory": "文化思想·两个结合",
+   "tags": [],
+   "basis": "习近平文化思想与“第二个结合”的含义"
+  },
+  {
+   "paper": "GD2025",
+   "number": 2,
+   "part": "政治理论",
+   "question_type": "判断",
+   "domain": "政治",
+   "category": "习近平新时代中国特色社会主义思想与党的创新理论",
+   "subcategory": "新质生产力",
+   "tags": [],
+   "basis": "科技创新是发展新质生产力的核心要素"
+  },
+  {
+   "paper": "GD2025",
+   "number": 3,
+   "part": "政治理论",
+   "question_type": "判断",
+   "domain": "政治",
+   "category": "习近平新时代中国特色社会主义思想与党的创新理论",
+   "subcategory": "中国式现代化·国家安全",
+   "tags": [],
+   "basis": "国家安全是中国式现代化行稳致远的重要基础"
+  },
+  {
+   "paper": "GD2025",
+   "number": 4,
+   "part": "政治理论",
+   "question_type": "判断",
+   "domain": "政治",
+   "category": "马克思主义哲学",
+   "subcategory": "马克思主义理论特征（马原总论）",
+   "tags": [],
+   "basis": "实践性而非科学性是马克思主义区别于其他理论的显著特征"
+  },
+  {
+   "paper": "GD2025",
+   "number": 5,
+   "part": "政治理论",
+   "question_type": "单选",
+   "domain": "政治",
+   "category": "党史与党建",
+   "subcategory": "党建·好干部标准",
+   "tags": [
+    "古语"
+   ],
+   "basis": "由古语判断对应的好干部标准（信念坚定）"
+  },
+  {
+   "paper": "GD2025",
+   "number": 6,
+   "part": "政治理论",
+   "question_type": "单选",
+   "domain": "政治",
+   "category": "习近平新时代中国特色社会主义思想与党的创新理论",
+   "subcategory": "六个必须坚持",
+   "tags": [
+    "六个必须坚持"
+   ],
+   "basis": "由讲话判断体现“必须坚持自信自立”"
+  },
+  {
+   "paper": "GD2025",
+   "number": 7,
+   "part": "政治理论",
+   "question_type": "单选",
+   "domain": "政治",
+   "category": "宪法与法治",
+   "subcategory": "法治与德治",
+   "tags": [],
+   "basis": "思想道德与法律的关系"
+  },
+  {
+   "paper": "GD2025",
+   "number": 8,
+   "part": "政治理论",
+   "question_type": "单选",
+   "domain": "政治",
+   "category": "习近平新时代中国特色社会主义思想与党的创新理论",
+   "subcategory": "六个必须坚持·人民至上",
+   "tags": [
+    "古语",
+    "六个必须坚持"
+   ],
+   "basis": "选出最能体现“必须坚持人民至上”的古语"
+  },
+  {
+   "paper": "GD2025",
+   "number": 9,
+   "part": "政治理论",
+   "question_type": "多选",
+   "domain": "政治",
+   "category": "党史与党建",
+   "subcategory": "党史",
+   "tags": [],
+   "basis": "党的奋斗历程史实判断"
+  },
+  {
+   "paper": "GD2025",
+   "number": 10,
+   "part": "政治理论",
+   "question_type": "多选",
+   "domain": "政治",
+   "category": "马克思主义哲学",
+   "subcategory": "唯物辩证法",
+   "tags": [],
+   "basis": "唯物辩证法的认识"
+  },
+  {
+   "paper": "GD2025",
+   "number": 11,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "科技",
+   "subcategory": "年度科技成就",
+   "tags": [
+    "时政锚定"
+   ],
+   "basis": "2024年我国科技成就表述辨析"
+  },
+  {
+   "paper": "GD2025",
+   "number": 12,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "经济",
+   "subcategory": "金融·三中全会",
+   "tags": [
+    "时政锚定"
+   ],
+   "basis": "二十届三中全会提出的“耐心资本”含义"
+  },
+  {
+   "paper": "GD2025",
+   "number": 13,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "经济",
+   "subcategory": "农业·三中全会",
+   "tags": [
+    "时政锚定"
+   ],
+   "basis": "三中全会“基本农作物”所指范围（也可视为农业常识）"
+  },
+  {
+   "paper": "GD2025",
+   "number": 14,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "法律",
+   "subcategory": "专门法条文",
+   "tags": [],
+   "basis": "《社会保险法》中仅由用人单位缴费的险种"
+  },
+  {
+   "paper": "GD2025",
+   "number": 15,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "广东相关",
+   "subcategory": "经济·产业",
+   "tags": [
+    "时政锚定"
+   ],
+   "basis": "2025年广东高质量发展大会对产业体系迭代的表述"
+  },
+  {
+   "paper": "GD2026",
+   "number": 1,
+   "part": "政治理论",
+   "question_type": "判断",
+   "domain": "政治",
+   "category": "广东省情",
+   "subcategory": "广东改革开放精神",
+   "tags": [],
+   "basis": "广东须弘扬改革开放精神、特区精神"
+  },
+  {
+   "paper": "GD2026",
+   "number": 2,
+   "part": "政治理论",
+   "question_type": "判断",
+   "domain": "政治",
+   "category": "习近平新时代中国特色社会主义思想与党的创新理论",
+   "subcategory": "中国式现代化·农业农村",
+   "tags": [],
+   "basis": "农业农村现代化关系中国式现代化全局和成色"
+  },
+  {
+   "paper": "GD2026",
+   "number": 3,
+   "part": "政治理论",
+   "question_type": "判断",
+   "domain": "政治",
+   "category": "习近平新时代中国特色社会主义思想与党的创新理论",
+   "subcategory": "中国式现代化·产业体系",
+   "tags": [],
+   "basis": "现代化产业体系是中国式现代化的物质技术基础"
+  },
+  {
+   "paper": "GD2026",
+   "number": 4,
+   "part": "政治理论",
+   "question_type": "判断",
+   "domain": "政治",
+   "category": "马克思主义哲学",
+   "subcategory": "唯物史观",
+   "tags": [],
+   "basis": "生产力而非生产关系是社会发展的根本动力"
+  },
+  {
+   "paper": "GD2026",
+   "number": 5,
+   "part": "政治理论",
+   "question_type": "单选",
+   "domain": "政治",
+   "category": "习近平新时代中国特色社会主义思想与党的创新理论",
+   "subcategory": "六个必须坚持·守正创新",
+   "tags": [
+    "六个必须坚持"
+   ],
+   "basis": "守正与创新的辩证关系辨析"
+  },
+  {
+   "paper": "GD2026",
+   "number": 6,
+   "part": "政治理论",
+   "question_type": "单选",
+   "domain": "政治",
+   "category": "经济社会政策与时政",
+   "subcategory": "双碳政策",
+   "tags": [],
+   "basis": "推进碳达峰碳中和的表述辨析"
+  },
+  {
+   "paper": "GD2026",
+   "number": 7,
+   "part": "政治理论",
+   "question_type": "单选",
+   "domain": "政治",
+   "category": "宪法与法治",
+   "subcategory": "宪法理论",
+   "tags": [
+    "古语"
+   ],
+   "basis": "宪法随经济基础变化，与古语匹配"
+  },
+  {
+   "paper": "GD2026",
+   "number": 8,
+   "part": "政治理论",
+   "question_type": "单选",
+   "domain": "政治",
+   "category": "经济社会政策与时政",
+   "subcategory": "水安全",
+   "tags": [],
+   "basis": "治水方针与水安全措施辨析"
+  },
+  {
+   "paper": "GD2026",
+   "number": 9,
+   "part": "政治理论",
+   "question_type": "多选",
+   "domain": "政治",
+   "category": "党史与党建",
+   "subcategory": "党的思想路线（毛泽东思想）",
+   "tags": [],
+   "basis": "实事求是思想路线的理解"
+  },
+  {
+   "paper": "GD2026",
+   "number": 10,
+   "part": "政治理论",
+   "question_type": "多选",
+   "domain": "政治",
+   "category": "马克思主义哲学",
+   "subcategory": "辩证唯物论",
+   "tags": [],
+   "basis": "马克思主义物质范畴"
+  },
+  {
+   "paper": "GD2026",
+   "number": 11,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "经济",
+   "subcategory": "五年规划（兼经济史）",
+   "tags": [
+    "时政锚定"
+   ],
+   "basis": "五年规划（计划）沿革与“十四五”收官等事实"
+  },
+  {
+   "paper": "GD2026",
+   "number": 12,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "经济",
+   "subcategory": "“十四五”成就",
+   "tags": [
+    "时政锚定"
+   ],
+   "basis": "“十四五”时期经济社会发展成就辨析"
+  },
+  {
+   "paper": "GD2026",
+   "number": 13,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "广东相关",
+   "subcategory": "交通工程·地理",
+   "tags": [
+    "时政锚定"
+   ],
+   "basis": "近年开通的大湾区跨江跨海通道"
+  },
+  {
+   "paper": "GD2026",
+   "number": 14,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "法律",
+   "subcategory": "专门法条文",
+   "tags": [],
+   "basis": "《国歌法》禁止的使用场合（选项为场景）"
+  },
+  {
+   "paper": "GD2026",
+   "number": 15,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "经济",
+   "subcategory": "产业·四中全会",
+   "tags": [
+    "时政锚定"
+   ],
+   "basis": "四中全会“十五五”建议中的新兴产业辨析"
+  },
+  {
+   "paper": "M01",
+   "number": 1,
+   "part": "政治理论",
+   "question_type": "判断",
+   "domain": "政治",
+   "category": "习近平新时代中国特色社会主义思想与党的创新理论",
+   "subcategory": "新质生产力·产业创新",
+   "tags": [],
+   "basis": "以科技创新推动产业创新、改造提升传统产业"
+  },
+  {
+   "paper": "M01",
+   "number": 2,
+   "part": "政治理论",
+   "question_type": "判断",
+   "domain": "政治",
+   "category": "马克思主义政治经济学",
+   "subcategory": "社会主义基本经济制度",
+   "tags": [],
+   "basis": "公有制主体地位的含义（并非每个地区行业都占优势）"
+  },
+  {
+   "paper": "M01",
+   "number": 3,
+   "part": "政治理论",
+   "question_type": "判断",
+   "domain": "政治",
+   "category": "广东省情",
+   "subcategory": "“百千万工程”",
+   "tags": [
+    "时政锚定"
+   ],
+   "basis": "广东“百县千镇万村高质量发展工程”的途径与目标"
+  },
+  {
+   "paper": "M01",
+   "number": 4,
+   "part": "政治理论",
+   "question_type": "判断",
+   "domain": "政治",
+   "category": "马克思主义政治经济学",
+   "subcategory": "劳动价值论",
+   "tags": [
+    "情境"
+   ],
+   "basis": "某企业缩短个别劳动时间与单位商品社会价值"
+  },
+  {
+   "paper": "M01",
+   "number": 5,
+   "part": "政治理论",
+   "question_type": "单选",
+   "domain": "政治",
+   "category": "习近平新时代中国特色社会主义思想与党的创新理论",
+   "subcategory": "因地制宜发展新质生产力",
+   "tags": [
+    "情境"
+   ],
+   "basis": "某地培育新动能的举措选择"
+  },
+  {
+   "paper": "M01",
+   "number": 6,
+   "part": "政治理论",
+   "question_type": "单选",
+   "domain": "政治",
+   "category": "习近平新时代中国特色社会主义思想与党的创新理论",
+   "subcategory": "六个必须坚持·系统观念",
+   "tags": [
+    "六个必须坚持",
+    "情境"
+   ],
+   "basis": "某地治理河流污染体现“必须坚持系统观念”"
+  },
+  {
+   "paper": "M01",
+   "number": 7,
+   "part": "政治理论",
+   "question_type": "单选",
+   "domain": "政治",
+   "category": "马克思主义哲学",
+   "subcategory": "唯物辩证法·矛盾",
+   "tags": [
+    "情境"
+   ],
+   "basis": "某镇集中解决主要矛盾、兼顾次要矛盾"
+  },
+  {
+   "paper": "M01",
+   "number": 8,
+   "part": "政治理论",
+   "question_type": "单选",
+   "domain": "政治",
+   "category": "经济社会政策与时政",
+   "subcategory": "生态·科学绿化（隐含绿美广东）",
+   "tags": [
+    "情境"
+   ],
+   "basis": "某地绿美生态建设中不恰当的做法"
+  },
+  {
+   "paper": "M01",
+   "number": 9,
+   "part": "政治理论",
+   "question_type": "多选",
+   "domain": "政治",
+   "category": "习近平新时代中国特色社会主义思想与党的创新理论",
+   "subcategory": "全过程人民民主",
+   "tags": [],
+   "basis": "全过程人民民主的内涵"
+  },
+  {
+   "paper": "M01",
+   "number": 10,
+   "part": "政治理论",
+   "question_type": "多选",
+   "domain": "政治",
+   "category": "马克思主义哲学",
+   "subcategory": "认识论",
+   "tags": [
+    "情境"
+   ],
+   "basis": "某项基层治理措施试点体现的实践与认识关系"
+  },
+  {
+   "paper": "M01",
+   "number": 11,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "法律",
+   "subcategory": "民法典·民事行为能力（案例）",
+   "tags": [],
+   "basis": "《民法典》各年龄段民事行为能力判断"
+  },
+  {
+   "paper": "M01",
+   "number": 12,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "广东相关",
+   "subcategory": "地理·河流",
+   "tags": [
+    "对应排序"
+   ],
+   "basis": "广东北江、韩江、西江水系对应关系"
+  },
+  {
+   "paper": "M01",
+   "number": 13,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "历史与人文",
+   "subcategory": "党史",
+   "tags": [
+    "对应排序"
+   ],
+   "basis": "1927年南昌起义、秋收起义、三湾改编、广州起义时间排序"
+  },
+  {
+   "paper": "M01",
+   "number": 14,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "科技",
+   "subcategory": "探月工程",
+   "tags": [],
+   "basis": "嫦娥四号、五号与鹊桥、玉兔二号说法辨析"
+  },
+  {
+   "paper": "M01",
+   "number": 15,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "历史与人文",
+   "subcategory": "古代制度",
+   "tags": [],
+   "basis": "宋代科举“封弥”“誊录”"
+  },
+  {
+   "paper": "M02",
+   "number": 1,
+   "part": "政治理论",
+   "question_type": "判断",
+   "domain": "政治",
+   "category": "党史与党建",
+   "subcategory": "党建·全面从严治党",
+   "tags": [
+    "时政锚定"
+   ],
+   "basis": "依五中全会公报判断从严治党的根本性任务与关键"
+  },
+  {
+   "paper": "M02",
+   "number": 2,
+   "part": "政治理论",
+   "question_type": "判断",
+   "domain": "政治",
+   "category": "马克思主义政治经济学",
+   "subcategory": "货币职能",
+   "tags": [],
+   "basis": "支付到期工资体现的货币职能"
+  },
+  {
+   "paper": "M02",
+   "number": 3,
+   "part": "政治理论",
+   "question_type": "判断",
+   "domain": "政治",
+   "category": "习近平新时代中国特色社会主义思想与党的创新理论",
+   "subcategory": "“第二个结合”",
+   "tags": [],
+   "basis": "“第二个结合”的前提与结果"
+  },
+  {
+   "paper": "M02",
+   "number": 4,
+   "part": "政治理论",
+   "question_type": "判断",
+   "domain": "政治",
+   "category": "马克思主义政治经济学",
+   "subcategory": "资本构成",
+   "tags": [],
+   "basis": "不变资本与可变资本的划分依据"
+  },
+  {
+   "paper": "M02",
+   "number": 5,
+   "part": "政治理论",
+   "question_type": "单选",
+   "domain": "政治",
+   "category": "党史与党建",
+   "subcategory": "党建·全面从严治党",
+   "tags": [
+    "时政锚定"
+   ],
+   "basis": "依五中全会公报判断从严治党表述"
+  },
+  {
+   "paper": "M02",
+   "number": 6,
+   "part": "政治理论",
+   "question_type": "单选",
+   "domain": "政治",
+   "category": "广东省情",
+   "subcategory": "广东制造业服务业融合",
+   "tags": [
+    "对应排序",
+    "时政锚定"
+   ],
+   "basis": "广东2026年行动方案中举措的归类"
+  },
+  {
+   "paper": "M02",
+   "number": 7,
+   "part": "政治理论",
+   "question_type": "单选",
+   "domain": "政治",
+   "category": "马克思主义哲学",
+   "subcategory": "辩证否定观",
+   "tags": [
+    "情境"
+   ],
+   "basis": "某企业改造生产线体现辩证否定"
+  },
+  {
+   "paper": "M02",
+   "number": 8,
+   "part": "政治理论",
+   "question_type": "单选",
+   "domain": "政治",
+   "category": "马克思主义政治经济学",
+   "subcategory": "分配制度（中特政经）",
+   "tags": [
+    "对应排序"
+   ],
+   "basis": "初次分配、再分配、第三次分配的归类"
+  },
+  {
+   "paper": "M02",
+   "number": 9,
+   "part": "政治理论",
+   "question_type": "多选",
+   "domain": "政治",
+   "category": "习近平新时代中国特色社会主义思想与党的创新理论",
+   "subcategory": "中国式现代化战略安排",
+   "tags": [
+    "时政锚定"
+   ],
+   "basis": "四中全会公报与“十五五”、2035年目标"
+  },
+  {
+   "paper": "M02",
+   "number": 10,
+   "part": "政治理论",
+   "question_type": "多选",
+   "domain": "政治",
+   "category": "习近平新时代中国特色社会主义思想与党的创新理论",
+   "subcategory": "总体国家安全观",
+   "tags": [
+    "对应排序"
+   ],
+   "basis": "各领域安全在总体国家安全观中的定位"
+  },
+  {
+   "paper": "M02",
+   "number": 11,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "法律",
+   "subcategory": "民法典·胎儿利益（案例）",
+   "tags": [],
+   "basis": "继承中为胎儿保留份额的法律效果"
+  },
+  {
+   "paper": "M02",
+   "number": 12,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "广东相关",
+   "subcategory": "交通工程·地理",
+   "tags": [
+    "时政锚定"
+   ],
+   "basis": "深中通道（2024年通车）的位置与布局"
+  },
+  {
+   "paper": "M02",
+   "number": 13,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "历史与人文",
+   "subcategory": "党史",
+   "tags": [],
+   "basis": "毛泽东思想确立为指导思想的会议"
+  },
+  {
+   "paper": "M02",
+   "number": 14,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "科技",
+   "subcategory": "科学卫星",
+   "tags": [
+    "对应排序"
+   ],
+   "basis": "悟空、墨子、慧眼卫星与任务依次对应"
+  },
+  {
+   "paper": "M02",
+   "number": 15,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "历史与人文",
+   "subcategory": "古代制度",
+   "tags": [
+    "对应排序"
+   ],
+   "basis": "唐代三省六部职掌依次对应"
+  },
+  {
+   "paper": "M03",
+   "number": 1,
+   "part": "政治理论",
+   "question_type": "判断",
+   "domain": "政治",
+   "category": "习近平新时代中国特色社会主义思想与党的创新理论",
+   "subcategory": "新发展格局",
+   "tags": [],
+   "basis": "国内大循环不是各省省内闭环"
+  },
+  {
+   "paper": "M03",
+   "number": 2,
+   "part": "政治理论",
+   "question_type": "判断",
+   "domain": "政治",
+   "category": "马克思主义政治经济学",
+   "subcategory": "劳动二重性",
+   "tags": [],
+   "basis": "具体劳动与抽象劳动"
+  },
+  {
+   "paper": "M03",
+   "number": 3,
+   "part": "政治理论",
+   "question_type": "判断",
+   "domain": "政治",
+   "category": "经济社会政策与时政",
+   "subcategory": "外交时政·全球治理倡议",
+   "tags": [
+    "时政锚定"
+   ],
+   "basis": "全球治理倡议的核心理念"
+  },
+  {
+   "paper": "M03",
+   "number": 4,
+   "part": "政治理论",
+   "question_type": "判断",
+   "domain": "政治",
+   "category": "马克思主义哲学",
+   "subcategory": "唯物史观",
+   "tags": [],
+   "basis": "社会意识的相对独立性"
+  },
+  {
+   "paper": "M03",
+   "number": 5,
+   "part": "政治理论",
+   "question_type": "单选",
+   "domain": "政治",
+   "category": "经济社会政策与时政",
+   "subcategory": "科技体制·分类评价",
+   "tags": [
+    "情境"
+   ],
+   "basis": "某科研管理部门对两类基础研究的评价安排"
+  },
+  {
+   "paper": "M03",
+   "number": 6,
+   "part": "政治理论",
+   "question_type": "单选",
+   "domain": "政治",
+   "category": "习近平新时代中国特色社会主义思想与党的创新理论",
+   "subcategory": "文化思想·中华文明特性",
+   "tags": [
+    "对应排序"
+   ],
+   "basis": "中华文明突出特性依次对应"
+  },
+  {
+   "paper": "M03",
+   "number": 7,
+   "part": "政治理论",
+   "question_type": "单选",
+   "domain": "政治",
+   "category": "马克思主义哲学",
+   "subcategory": "唯物辩证法·联系",
+   "tags": [
+    "情境"
+   ],
+   "basis": "某山区修建桥隧说明联系的客观性与条件性"
+  },
+  {
+   "paper": "M03",
+   "number": 8,
+   "part": "政治理论",
+   "question_type": "单选",
+   "domain": "政治",
+   "category": "马克思主义哲学",
+   "subcategory": "唯物史观",
+   "tags": [],
+   "basis": "区分生产力、生产关系与上层建筑的变化"
+  },
+  {
+   "paper": "M03",
+   "number": 9,
+   "part": "政治理论",
+   "question_type": "多选",
+   "domain": "政治",
+   "category": "习近平新时代中国特色社会主义思想与党的创新理论",
+   "subcategory": "新发展理念",
+   "tags": [
+    "对应排序"
+   ],
+   "basis": "新发展理念各自着力解决的问题"
+  },
+  {
+   "paper": "M03",
+   "number": 10,
+   "part": "政治理论",
+   "question_type": "多选",
+   "domain": "政治",
+   "category": "广东省情",
+   "subcategory": "大湾区合作平台",
+   "tags": [
+    "对应排序"
+   ],
+   "basis": "横琴、前海、南沙、河套平台定位对应"
+  },
+  {
+   "paper": "M03",
+   "number": 11,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "法律",
+   "subcategory": "民法典·宣告失踪与死亡（案例）",
+   "tags": [],
+   "basis": "宣告死亡的条件与效力"
+  },
+  {
+   "paper": "M03",
+   "number": 12,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "广东相关",
+   "subcategory": "人文·方言",
+   "tags": [
+    "对应排序"
+   ],
+   "basis": "广州话、梅县话、潮州话、雷州话的方言归属"
+  },
+  {
+   "paper": "M03",
+   "number": 13,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "历史与人文",
+   "subcategory": "党史",
+   "tags": [
+    "对应排序"
+   ],
+   "basis": "古田、瓦窑堡、洛川会议任务依次对应"
+  },
+  {
+   "paper": "M03",
+   "number": 14,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "科技",
+   "subcategory": "大国重器",
+   "tags": [],
+   "basis": "华龙一号、奋斗者号、C919、雪龙2号说法辨析"
+  },
+  {
+   "paper": "M03",
+   "number": 15,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "历史与人文",
+   "subcategory": "史学·史书体例",
+   "tags": [
+    "对应排序"
+   ],
+   "basis": "《史记》《汉书》《资治通鉴》体例对应"
+  },
+  {
+   "paper": "M04",
+   "number": 1,
+   "part": "政治理论",
+   "question_type": "判断",
+   "domain": "政治",
+   "category": "马克思主义政治经济学",
+   "subcategory": "社会主义基本经济制度",
+   "tags": [],
+   "basis": "各种所有制平等竞争与公有制主体地位"
+  },
+  {
+   "paper": "M04",
+   "number": 2,
+   "part": "政治理论",
+   "question_type": "判断",
+   "domain": "政治",
+   "category": "马克思主义哲学",
+   "subcategory": "量变质变",
+   "tags": [
+    "情境"
+   ],
+   "basis": "某系统结构变化引起质变是否需要量变"
+  },
+  {
+   "paper": "M04",
+   "number": 3,
+   "part": "政治理论",
+   "question_type": "判断",
+   "domain": "政治",
+   "category": "马克思主义政治经济学",
+   "subcategory": "剩余价值",
+   "tags": [],
+   "basis": "相对剩余价值生产"
+  },
+  {
+   "paper": "M04",
+   "number": 4,
+   "part": "政治理论",
+   "question_type": "判断",
+   "domain": "政治",
+   "category": "宪法与法治",
+   "subcategory": "国家政治制度·政协",
+   "tags": [],
+   "basis": "政协民主监督不具有法律强制力"
+  },
+  {
+   "paper": "M04",
+   "number": 5,
+   "part": "政治理论",
+   "question_type": "单选",
+   "domain": "政治",
+   "category": "经济社会政策与时政",
+   "subcategory": "农业转移人口市民化",
+   "tags": [
+    "情境",
+    "时政锚定"
+   ],
+   "basis": "依三中全会《决定》处理某县进城落户农民的土地权益"
+  },
+  {
+   "paper": "M04",
+   "number": 6,
+   "part": "政治理论",
+   "question_type": "单选",
+   "domain": "政治",
+   "category": "经济社会政策与时政",
+   "subcategory": "制度型开放",
+   "tags": [
+    "情境"
+   ],
+   "basis": "某自贸试验区举措中属于制度型开放的一项"
+  },
+  {
+   "paper": "M04",
+   "number": 7,
+   "part": "政治理论",
+   "question_type": "单选",
+   "domain": "政治",
+   "category": "习近平新时代中国特色社会主义思想与党的创新理论",
+   "subcategory": "文化思想·“两创”",
+   "tags": [
+    "对应排序"
+   ],
+   "basis": "创造性转化与创新性发展依次对应"
+  },
+  {
+   "paper": "M04",
+   "number": 8,
+   "part": "政治理论",
+   "question_type": "单选",
+   "domain": "政治",
+   "category": "马克思主义哲学",
+   "subcategory": "认识论",
+   "tags": [
+    "情境"
+   ],
+   "basis": "某农技团队建模与试验体现认识的两次飞跃"
+  },
+  {
+   "paper": "M04",
+   "number": 9,
+   "part": "政治理论",
+   "question_type": "多选",
+   "domain": "政治",
+   "category": "党史与党建",
+   "subcategory": "党建·四大考验四种危险",
+   "tags": [
+    "对应排序",
+    "时政锚定"
+   ],
+   "basis": "依五中全会部署对“四大考验”“四种危险”归类"
+  },
+  {
+   "paper": "M04",
+   "number": 10,
+   "part": "政治理论",
+   "question_type": "多选",
+   "domain": "政治",
+   "category": "经济社会政策与时政",
+   "subcategory": "双碳政策",
+   "tags": [],
+   "basis": "碳达峰碳中和概念辨析"
+  },
+  {
+   "paper": "M04",
+   "number": 11,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "法律",
+   "subcategory": "民法典·租赁与优先购买（案例）",
+   "tags": [],
+   "basis": "买卖不破租赁与承租人优先购买权"
+  },
+  {
+   "paper": "M04",
+   "number": 12,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "广东相关",
+   "subcategory": "地理·地貌",
+   "tags": [
+    "对应排序"
+   ],
+   "basis": "丹霞山、七星岩、湖光岩地貌成因依次对应"
+  },
+  {
+   "paper": "M04",
+   "number": 13,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "历史与人文",
+   "subcategory": "党史",
+   "tags": [
+    "对应排序"
+   ],
+   "basis": "中央红军长征事件时间排序"
+  },
+  {
+   "paper": "M04",
+   "number": 14,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "科技",
+   "subcategory": "北斗导航（情境）",
+   "tags": [],
+   "basis": "北斗无源定位与短报文功能辨析"
+  },
+  {
+   "paper": "M04",
+   "number": 15,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "历史与人文",
+   "subcategory": "古代赋税制度",
+   "tags": [
+    "对应排序"
+   ],
+   "basis": "两税法、一条鞭法、摊丁入亩依次对应"
+  },
+  {
+   "paper": "M05",
+   "number": 1,
+   "part": "政治理论",
+   "question_type": "判断",
+   "domain": "政治",
+   "category": "马克思主义哲学",
+   "subcategory": "可能性与现实性",
+   "tags": [],
+   "basis": "有客观根据不等于条件已经具备"
+  },
+  {
+   "paper": "M05",
+   "number": 2,
+   "part": "政治理论",
+   "question_type": "判断",
+   "domain": "政治",
+   "category": "马克思主义哲学",
+   "subcategory": "必然性与偶然性",
+   "tags": [],
+   "basis": "偶然性是否只是主观错觉"
+  },
+  {
+   "paper": "M05",
+   "number": 3,
+   "part": "政治理论",
+   "question_type": "判断",
+   "domain": "政治",
+   "category": "马克思主义政治经济学",
+   "subcategory": "价值规律",
+   "tags": [],
+   "basis": "价格背离价值不否定价值规律"
+  },
+  {
+   "paper": "M05",
+   "number": 4,
+   "part": "政治理论",
+   "question_type": "判断",
+   "domain": "政治",
+   "category": "党史与党建",
+   "subcategory": "党内法规·民主集中制",
+   "tags": [
+    "情境"
+   ],
+   "basis": "某党组织表决人数接近时应暂缓决定"
+  },
+  {
+   "paper": "M05",
+   "number": 5,
+   "part": "政治理论",
+   "question_type": "单选",
+   "domain": "政治",
+   "category": "马克思主义哲学",
+   "subcategory": "矛盾特殊性",
+   "tags": [
+    "古语"
+   ],
+   "basis": "“物之不齐，物之情也”对应的工作方法"
+  },
+  {
+   "paper": "M05",
+   "number": 6,
+   "part": "政治理论",
+   "question_type": "单选",
+   "domain": "政治",
+   "category": "经济社会政策与时政",
+   "subcategory": "企业科技创新主体地位",
+   "tags": [
+    "情境"
+   ],
+   "basis": "某地联合攻关中企业主体地位的安排"
+  },
+  {
+   "paper": "M05",
+   "number": 7,
+   "part": "政治理论",
+   "question_type": "单选",
+   "domain": "政治",
+   "category": "马克思主义政治经济学",
+   "subcategory": "剩余价值来源",
+   "tags": [],
+   "basis": "等价交换下剩余价值的来源"
+  },
+  {
+   "paper": "M05",
+   "number": 8,
+   "part": "政治理论",
+   "question_type": "单选",
+   "domain": "政治",
+   "category": "宪法与法治",
+   "subcategory": "法治国家法治政府法治社会一体建设",
+   "tags": [],
+   "basis": "三者关系辨析（习近平法治思想）"
+  },
+  {
+   "paper": "M05",
+   "number": 9,
+   "part": "政治理论",
+   "question_type": "多选",
+   "domain": "政治",
+   "category": "马克思主义哲学",
+   "subcategory": "唯物史观",
+   "tags": [],
+   "basis": "经济基础与上层建筑"
+  },
+  {
+   "paper": "M05",
+   "number": 10,
+   "part": "政治理论",
+   "question_type": "多选",
+   "domain": "政治",
+   "category": "党史与党建",
+   "subcategory": "党建·“三个区分开来”",
+   "tags": [],
+   "basis": "“三个区分开来”要求的区分"
+  },
+  {
+   "paper": "M05",
+   "number": 11,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "法律",
+   "subcategory": "宪法·国家机关职权",
+   "tags": [
+    "对应排序"
+   ],
+   "basis": "行政区划建置与特赦的决定机关对应"
+  },
+  {
+   "paper": "M05",
+   "number": 12,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "科技",
+   "subcategory": "物理原理·探测技术（情境）",
+   "tags": [],
+   "basis": "热红外相机、雷达、主动声呐探测原理"
+  },
+  {
+   "paper": "M05",
+   "number": 13,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "广东相关",
+   "subcategory": "经济·“五外联动”",
+   "tags": [
+    "对应排序",
+    "时政锚定"
+   ],
+   "basis": "广东“五外联动”中外资、外经、外包、外智对应"
+  },
+  {
+   "paper": "M05",
+   "number": 14,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "法律",
+   "subcategory": "治安管理处罚法（新修订）",
+   "tags": [
+    "时政锚定"
+   ],
+   "basis": "2026年施行的修订后《治安管理处罚法》不执行拘留的情形"
+  },
+  {
+   "paper": "M05",
+   "number": 15,
+   "part": "常识判断",
+   "question_type": "单选",
+   "domain": "常识",
+   "category": "历史与人文",
+   "subcategory": "传统音乐·“八音”",
+   "tags": [
+    "对应排序"
+   ],
+   "basis": "古代乐器按“八音”分组"
+  },
+  {
+   "paper": "GD2024",
+   "number": 71,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "纯文字",
+   "material_region": "广东",
+   "category": "比重",
+   "underlying": "",
+   "tags": [],
+   "basis": "657÷1934求高技能人才占比"
+  },
+  {
+   "paper": "GD2024",
+   "number": 72,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "纯文字",
+   "material_region": "广东",
+   "category": "比重",
+   "underlying": "",
+   "tags": [],
+   "basis": "由广东在校生占全国七分之一反推全国总量"
+  },
+  {
+   "paper": "GD2024",
+   "number": 73,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "纯文字",
+   "material_region": "广东",
+   "category": "材料理解（非计算）",
+   "underlying": "",
+   "tags": [],
+   "basis": "辨析技能人才培养表述，无需计算"
+  },
+  {
+   "paper": "GD2024",
+   "number": 74,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "纯文字",
+   "material_region": "广东",
+   "category": "材料理解（非计算）",
+   "underlying": "",
+   "tags": [],
+   "basis": "检索重点专业所面向的产业"
+  },
+  {
+   "paper": "GD2024",
+   "number": 75,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "纯文字",
+   "material_region": "广东",
+   "category": "材料理解（非计算）",
+   "underlying": "",
+   "tags": [],
+   "basis": "“233家”与“100多家”等文字核对"
+  },
+  {
+   "paper": "GD2024",
+   "number": 76,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "文字+表格+统计图",
+   "material_region": "全国",
+   "category": "增长量",
+   "underlying": "",
+   "tags": [],
+   "basis": "2013—2022年年均增加量"
+  },
+  {
+   "paper": "GD2024",
+   "number": 77,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "文字+表格+统计图",
+   "material_region": "全国",
+   "category": "比重",
+   "underlying": "",
+   "tags": [],
+   "basis": "中国占全球份额的两期比重变化"
+  },
+  {
+   "paper": "GD2024",
+   "number": 78,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "文字+表格+统计图",
+   "material_region": "全国",
+   "category": "现期量·简单计算",
+   "underlying": "",
+   "tags": [
+    "计数"
+   ],
+   "basis": "数表中同比增长为正的行业个数（读数）"
+  },
+  {
+   "paper": "GD2024",
+   "number": 79,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "文字+表格+统计图",
+   "material_region": "全国",
+   "category": "比较排序",
+   "underlying": "基期量",
+   "tags": [],
+   "basis": "由2022年值与增速推2021年各行业值并排序"
+  },
+  {
+   "paper": "GD2024",
+   "number": 80,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "文字+表格+统计图",
+   "material_region": "全国",
+   "category": "综合分析判断",
+   "underlying": "",
+   "tags": [],
+   "basis": "读图、比重、累计、基期比重多项判断"
+  },
+  {
+   "paper": "GD2024",
+   "number": 81,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+表格+统计图",
+   "material_region": "广东",
+   "category": "比重",
+   "underlying": "",
+   "tags": [],
+   "basis": "G省案件占全国比重"
+  },
+  {
+   "paper": "GD2024",
+   "number": 82,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+表格+统计图",
+   "material_region": "广东",
+   "category": "平均数",
+   "underlying": "",
+   "tags": [],
+   "basis": "受援人数÷案件数"
+  },
+  {
+   "paper": "GD2024",
+   "number": 83,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+表格+统计图",
+   "material_region": "广东",
+   "category": "比较排序",
+   "underlying": "比重",
+   "tags": [],
+   "basis": "各年行政案件占比最高的年份"
+  },
+  {
+   "paper": "GD2024",
+   "number": 84,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+表格+统计图",
+   "material_region": "广东",
+   "category": "图形选项题",
+   "underlying": "",
+   "tags": [],
+   "basis": "选出反映各类案件同比增长率的折线图"
+  },
+  {
+   "paper": "GD2024",
+   "number": 85,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+表格+统计图",
+   "material_region": "广东",
+   "category": "综合分析判断",
+   "underlying": "",
+   "tags": [],
+   "basis": "基期、比重、累计等多项判断"
+  },
+  {
+   "paper": "GD2024",
+   "number": 86,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "文字+统计图",
+   "material_region": "全国",
+   "category": "增长率",
+   "underlying": "",
+   "tags": [],
+   "basis": "两年间年均增长率"
+  },
+  {
+   "paper": "GD2024",
+   "number": 87,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "文字+统计图",
+   "material_region": "全国",
+   "category": "基期量",
+   "underlying": "",
+   "tags": [],
+   "basis": "县数不变，按增速反推2020年投入"
+  },
+  {
+   "paper": "GD2024",
+   "number": 88,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "文字+统计图",
+   "material_region": "全国",
+   "category": "倍数",
+   "underlying": "",
+   "tags": [],
+   "basis": "东部与中西部之和之比"
+  },
+  {
+   "paper": "GD2024",
+   "number": 89,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "文字+统计图",
+   "material_region": "全国",
+   "category": "比较排序",
+   "underlying": "增长率",
+   "tags": [],
+   "basis": "四项数据同比增长率比较"
+  },
+  {
+   "paper": "GD2024",
+   "number": 90,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "文字+统计图",
+   "material_region": "全国",
+   "category": "综合分析判断",
+   "underlying": "",
+   "tags": [],
+   "basis": "增速、增量多项比较判断"
+  },
+  {
+   "paper": "GD2025",
+   "number": 71,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "纯表格",
+   "material_region": "广东",
+   "category": "现期量·简单计算",
+   "underlying": "",
+   "tags": [],
+   "basis": "全年减12月得1—11月"
+  },
+  {
+   "paper": "GD2025",
+   "number": 72,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "纯表格",
+   "material_region": "广东",
+   "category": "增长率",
+   "underlying": "",
+   "tags": [],
+   "basis": "全年社零同比增速"
+  },
+  {
+   "paper": "GD2025",
+   "number": 73,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "纯表格",
+   "material_region": "广东",
+   "category": "比重",
+   "underlying": "",
+   "tags": [],
+   "basis": "城镇占社零比重"
+  },
+  {
+   "paper": "GD2025",
+   "number": 74,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "纯表格",
+   "material_region": "广东",
+   "category": "比较排序",
+   "underlying": "增长率",
+   "tags": [],
+   "basis": "四项指标同比增速比较"
+  },
+  {
+   "paper": "GD2025",
+   "number": 75,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "纯表格",
+   "material_region": "广东",
+   "category": "综合分析判断",
+   "underlying": "",
+   "tags": [],
+   "basis": "月均、增速、比重多项判断"
+  },
+  {
+   "paper": "GD2025",
+   "number": 76,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "纯文字",
+   "material_region": "全国",
+   "category": "综合分析判断",
+   "underlying": "",
+   "tags": [],
+   "basis": "比重、倍数、由比重反推总量等计算判断"
+  },
+  {
+   "paper": "GD2025",
+   "number": 77,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "纯文字",
+   "material_region": "全国",
+   "category": "综合分析判断",
+   "underlying": "",
+   "tags": [],
+   "basis": "文字辨析与人口比例估算混合"
+  },
+  {
+   "paper": "GD2025",
+   "number": 78,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "纯文字",
+   "material_region": "全国",
+   "category": "增长量",
+   "underlying": "",
+   "tags": [],
+   "basis": "充电设施十年年均增加量"
+  },
+  {
+   "paper": "GD2025",
+   "number": 79,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "纯文字",
+   "material_region": "全国",
+   "category": "材料理解（非计算）",
+   "underlying": "",
+   "tags": [],
+   "basis": "新能源产业对世界的影响，文字检索"
+  },
+  {
+   "paper": "GD2025",
+   "number": 80,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "纯文字",
+   "material_region": "全国",
+   "category": "材料理解（非计算）",
+   "underlying": "",
+   "tags": [],
+   "basis": "“累计”与“2023年”等表述辨析"
+  },
+  {
+   "paper": "GD2025",
+   "number": 81,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+统计图",
+   "material_region": "广东",
+   "category": "增长率",
+   "underlying": "",
+   "tags": [],
+   "basis": "博物馆数量同比增速"
+  },
+  {
+   "paper": "GD2025",
+   "number": 82,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+统计图",
+   "material_region": "广东",
+   "category": "增长量",
+   "underlying": "",
+   "tags": [],
+   "basis": "年均增加量"
+  },
+  {
+   "paper": "GD2025",
+   "number": 83,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+统计图",
+   "material_region": "广东",
+   "category": "比重",
+   "underlying": "",
+   "tags": [],
+   "basis": "文物系统国有博物馆占国有博物馆比重"
+  },
+  {
+   "paper": "GD2025",
+   "number": 84,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+统计图",
+   "material_region": "广东",
+   "category": "比较排序",
+   "underlying": "增长量",
+   "tags": [],
+   "basis": "总数×占比得国有数量，比较各年增量"
+  },
+  {
+   "paper": "GD2025",
+   "number": 85,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+统计图",
+   "material_region": "广东",
+   "category": "综合分析判断",
+   "underlying": "",
+   "tags": [],
+   "basis": "逐年变化、首次超过、人均等多项判断"
+  },
+  {
+   "paper": "GD2025",
+   "number": 86,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "文字+统计图",
+   "material_region": "全国",
+   "category": "增长率",
+   "underlying": "",
+   "tags": [],
+   "basis": "旅客发送量同比增速"
+  },
+  {
+   "paper": "GD2025",
+   "number": 87,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "文字+统计图",
+   "material_region": "全国",
+   "category": "增长量",
+   "underlying": "",
+   "tags": [],
+   "basis": "年均增长量"
+  },
+  {
+   "paper": "GD2025",
+   "number": 88,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "文字+统计图",
+   "material_region": "全国",
+   "category": "增长率",
+   "underlying": "",
+   "tags": [],
+   "basis": "两年年均增长率"
+  },
+  {
+   "paper": "GD2025",
+   "number": 89,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "文字+统计图",
+   "material_region": "全国",
+   "category": "比较排序",
+   "underlying": "平均数",
+   "tags": [],
+   "basis": "周转量÷发送量得平均运距，比较最短年份"
+  },
+  {
+   "paper": "GD2025",
+   "number": 90,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "文字+统计图",
+   "material_region": "全国",
+   "category": "综合分析判断",
+   "underlying": "",
+   "tags": [],
+   "basis": "趋势、增速、年均值多项判断"
+  },
+  {
+   "paper": "GD2026",
+   "number": 71,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "纯文字",
+   "material_region": "广东",
+   "category": "材料理解（非计算）",
+   "underlying": "",
+   "tags": [],
+   "basis": "行动计划主题，文字检索"
+  },
+  {
+   "paper": "GD2026",
+   "number": 72,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "纯文字",
+   "material_region": "广东",
+   "category": "材料理解（非计算）",
+   "underlying": "",
+   "tags": [],
+   "basis": "资料未提及的内容"
+  },
+  {
+   "paper": "GD2026",
+   "number": 73,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "纯文字",
+   "material_region": "广东",
+   "category": "比重",
+   "underlying": "",
+   "tags": [],
+   "basis": "年薪10万以上岗位占比"
+  },
+  {
+   "paper": "GD2026",
+   "number": 74,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "纯文字",
+   "material_region": "广东",
+   "category": "比重",
+   "underlying": "",
+   "tags": [],
+   "basis": "10万人×四分之一求部分量"
+  },
+  {
+   "paper": "GD2026",
+   "number": 75,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "纯文字",
+   "material_region": "广东",
+   "category": "材料理解（非计算）",
+   "underlying": "",
+   "tags": [],
+   "basis": "时间口径陷阱（截至7月中旬≠上半年等），无需计算"
+  },
+  {
+   "paper": "GD2026",
+   "number": 76,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "纯文字",
+   "material_region": "全国",
+   "category": "材料理解（非计算）",
+   "underlying": "",
+   "tags": [],
+   "basis": "国家标准物质分类数，文字检索"
+  },
+  {
+   "paper": "GD2026",
+   "number": 77,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "纯文字",
+   "material_region": "全国",
+   "category": "材料理解（非计算）",
+   "underlying": "",
+   "tags": [],
+   "basis": "快速增长原因不包括的一项"
+  },
+  {
+   "paper": "GD2026",
+   "number": 78,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "纯文字",
+   "material_region": "全国",
+   "category": "现期量·简单计算",
+   "underlying": "",
+   "tags": [],
+   "basis": "累计数减当期新增"
+  },
+  {
+   "paper": "GD2026",
+   "number": 79,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "纯文字",
+   "material_region": "全国",
+   "category": "比重",
+   "underlying": "",
+   "tags": [],
+   "basis": "基期比重（企业申报占比）"
+  },
+  {
+   "paper": "GD2026",
+   "number": 80,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "纯文字",
+   "material_region": "全国",
+   "category": "图形选项题",
+   "underlying": "",
+   "tags": [],
+   "basis": "选出反映地域分布的饼图"
+  },
+  {
+   "paper": "GD2026",
+   "number": 81,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+表格",
+   "material_region": "广东",
+   "category": "增长量",
+   "underlying": "",
+   "tags": [],
+   "basis": "由现期与增速求增量"
+  },
+  {
+   "paper": "GD2026",
+   "number": 82,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+表格",
+   "material_region": "广东",
+   "category": "比重",
+   "underlying": "",
+   "tags": [],
+   "basis": "环形跑道田径场地占比"
+  },
+  {
+   "paper": "GD2026",
+   "number": 83,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+表格",
+   "material_region": "广东",
+   "category": "现期量·简单计算",
+   "underlying": "",
+   "tags": [],
+   "basis": "球类面积减其他分项"
+  },
+  {
+   "paper": "GD2026",
+   "number": 84,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+表格",
+   "material_region": "广东",
+   "category": "比较排序",
+   "underlying": "平均数",
+   "tags": [],
+   "basis": "面积÷数量求单位面积并排序"
+  },
+  {
+   "paper": "GD2026",
+   "number": 85,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+表格",
+   "material_region": "广东",
+   "category": "综合分析判断",
+   "underlying": "",
+   "tags": [],
+   "basis": "基期、人口反推、比重多项判断"
+  },
+  {
+   "paper": "GD2026",
+   "number": 86,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "文字+统计图",
+   "material_region": "全国",
+   "category": "比较排序",
+   "underlying": "增长量",
+   "tags": [],
+   "basis": "各时段城镇化率增加百分点比较"
+  },
+  {
+   "paper": "GD2026",
+   "number": 87,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "文字+统计图",
+   "material_region": "全国",
+   "category": "平均数",
+   "underlying": "",
+   "tags": [],
+   "basis": "常住人口÷城市数"
+  },
+  {
+   "paper": "GD2026",
+   "number": 88,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "文字+统计图",
+   "material_region": "全国",
+   "category": "比重",
+   "underlying": "",
+   "tags": [],
+   "basis": "地级以上城市数量占比两期变化"
+  },
+  {
+   "paper": "GD2026",
+   "number": 89,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "文字+统计图",
+   "material_region": "全国",
+   "category": "比较排序",
+   "underlying": "增长率",
+   "tags": [],
+   "basis": "三类城镇数量增幅排序"
+  },
+  {
+   "paper": "GD2026",
+   "number": 90,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "文字+统计图",
+   "material_region": "全国",
+   "category": "综合分析判断",
+   "underlying": "",
+   "tags": [],
+   "basis": "人口、占比、比例多项判断"
+  },
+  {
+   "paper": "M01",
+   "number": 71,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "比重",
+   "underlying": "",
+   "tags": [],
+   "basis": "消费支出÷消费占收入比例求可支配收入"
+  },
+  {
+   "paper": "M01",
+   "number": 72,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "基期量",
+   "underlying": "",
+   "tags": [],
+   "basis": "由交通通信支出与增速求2022年值再×5"
+  },
+  {
+   "paper": "M01",
+   "number": 73,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "增长率",
+   "underlying": "",
+   "tags": [],
+   "basis": "结合基期比重求两年收入后算增速"
+  },
+  {
+   "paper": "M01",
+   "number": 74,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "增长率",
+   "underlying": "",
+   "tags": [
+    "计数"
+   ],
+   "basis": "逐年算上海增速并数超过10%的年份"
+  },
+  {
+   "paper": "M01",
+   "number": 75,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "综合分析判断",
+   "underlying": "",
+   "tags": [],
+   "basis": "月均、增速比较、倍数多项判断"
+  },
+  {
+   "paper": "M01",
+   "number": 76,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "基期量",
+   "underlying": "",
+   "tags": [],
+   "basis": "1—4月货运量反推上年同期"
+  },
+  {
+   "paper": "M01",
+   "number": 77,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "比重",
+   "underlying": "",
+   "tags": [
+    "计数"
+   ],
+   "basis": "四类运输工具占比同比升降计数"
+  },
+  {
+   "paper": "M01",
+   "number": 78,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "基期量",
+   "underlying": "",
+   "tags": [],
+   "basis": "1—4月与4月分别求基期再相减"
+  },
+  {
+   "paper": "M01",
+   "number": 79,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "平均数",
+   "underlying": "",
+   "tags": [
+    "计数"
+   ],
+   "basis": "4月与1—3月月均比较计数"
+  },
+  {
+   "paper": "M01",
+   "number": 80,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "综合分析判断",
+   "underlying": "",
+   "tags": [],
+   "basis": "日均、倍数、增量、差值多项判断"
+  },
+  {
+   "paper": "M01",
+   "number": 81,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "增长量",
+   "underlying": "",
+   "tags": [],
+   "basis": "由进出口与出口增速反推进口基期，求增减量"
+  },
+  {
+   "paper": "M01",
+   "number": 82,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "比重",
+   "underlying": "",
+   "tags": [],
+   "basis": "两类服务占总额比重之差"
+  },
+  {
+   "paper": "M01",
+   "number": 83,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "倍数",
+   "underlying": "",
+   "tags": [],
+   "basis": "用混合增速求2021年进口与出口之比（基期倍数）"
+  },
+  {
+   "paper": "M01",
+   "number": 84,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "比较排序",
+   "underlying": "现期量·简单计算",
+   "tags": [],
+   "basis": "比较各类服务贸易顺差（出口−进口）"
+  },
+  {
+   "paper": "M01",
+   "number": 85,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "综合分析判断",
+   "underlying": "",
+   "tags": [],
+   "basis": "最大值、逆差、比重、基期多项判断"
+  },
+  {
+   "paper": "M01",
+   "number": 86,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "增长率",
+   "underlying": "",
+   "tags": [],
+   "basis": "间隔增长率"
+  },
+  {
+   "paper": "M01",
+   "number": 87,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "比重",
+   "underlying": "",
+   "tags": [],
+   "basis": "由增速反推1—2月数量占全年比重"
+  },
+  {
+   "paper": "M01",
+   "number": 88,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "平均数",
+   "underlying": "",
+   "tags": [],
+   "basis": "平均单价增长率"
+  },
+  {
+   "paper": "M01",
+   "number": 89,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "平均数",
+   "underlying": "",
+   "tags": [],
+   "basis": "四年总金额÷总数量"
+  },
+  {
+   "paper": "M01",
+   "number": 90,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "综合分析判断",
+   "underlying": "",
+   "tags": [],
+   "basis": "趋势、增长率、增量、基期多项判断"
+  },
+  {
+   "paper": "M02",
+   "number": 71,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "纯文字",
+   "material_region": "广东",
+   "category": "材料理解（非计算）",
+   "underlying": "",
+   "tags": [],
+   "basis": "外汇管理举措理解，文字核对"
+  },
+  {
+   "paper": "M02",
+   "number": 72,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "纯文字",
+   "material_region": "广东",
+   "category": "比重",
+   "underlying": "",
+   "tags": [],
+   "basis": "网购跨境收支占比两期变化"
+  },
+  {
+   "paper": "M02",
+   "number": 73,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "纯文字",
+   "material_region": "广东",
+   "category": "增长量",
+   "underlying": "",
+   "tags": [],
+   "basis": "由广东增量与贡献率求全国增量"
+  },
+  {
+   "paper": "M02",
+   "number": 74,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "纯文字",
+   "material_region": "广东",
+   "category": "基期量",
+   "underlying": "",
+   "tags": [],
+   "basis": "求2023年新型离岸贸易收支"
+  },
+  {
+   "paper": "M02",
+   "number": 75,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "纯文字",
+   "material_region": "广东",
+   "category": "综合分析判断",
+   "underlying": "",
+   "tags": [],
+   "basis": "文字辨析＋比例估算"
+  },
+  {
+   "paper": "M02",
+   "number": 76,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "平均数",
+   "underlying": "",
+   "tags": [],
+   "basis": "反推2019年后求六年年均吞吐量"
+  },
+  {
+   "paper": "M02",
+   "number": 77,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "图形选项题",
+   "underlying": "",
+   "tags": [],
+   "basis": "饼图选项判断各地区旅客吞吐量比例"
+  },
+  {
+   "paper": "M02",
+   "number": 78,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "倍数",
+   "underlying": "",
+   "tags": [],
+   "basis": "东部比中西部之和多几倍"
+  },
+  {
+   "paper": "M02",
+   "number": 79,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "比重",
+   "underlying": "",
+   "tags": [
+    "计数"
+   ],
+   "basis": "两类吞吐量占比均上升的地区个数"
+  },
+  {
+   "paper": "M02",
+   "number": 80,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "综合分析判断",
+   "underlying": "",
+   "tags": [],
+   "basis": "中位数、增速、间隔增长、差值多项判断"
+  },
+  {
+   "paper": "M02",
+   "number": 81,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "比较排序",
+   "underlying": "平均数",
+   "tags": [],
+   "basis": "“十三五”各年单产（产量÷面积）最高"
+  },
+  {
+   "paper": "M02",
+   "number": 82,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "现期量·简单计算",
+   "underlying": "",
+   "tags": [],
+   "basis": "按增速推算2025年再求五年合计"
+  },
+  {
+   "paper": "M02",
+   "number": 83,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "倍数",
+   "underlying": "",
+   "tags": [],
+   "basis": "前三与第六至八地区产量之比"
+  },
+  {
+   "paper": "M02",
+   "number": 84,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "增长量",
+   "underlying": "",
+   "tags": [],
+   "basis": "云南增量÷全国增量求增长贡献率"
+  },
+  {
+   "paper": "M02",
+   "number": 85,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "图形选项题",
+   "underlying": "",
+   "tags": [],
+   "basis": "题干给折线图，选对应时间段"
+  },
+  {
+   "paper": "M02",
+   "number": 86,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "平均数",
+   "underlying": "",
+   "tags": [],
+   "basis": "资产÷企业数"
+  },
+  {
+   "paper": "M02",
+   "number": 87,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "比较排序",
+   "underlying": "比重",
+   "tags": [],
+   "basis": "各月资产负债率最高"
+  },
+  {
+   "paper": "M02",
+   "number": 88,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "增长率",
+   "underlying": "",
+   "tags": [],
+   "basis": "由累计值求当月财务费用环比"
+  },
+  {
+   "paper": "M02",
+   "number": 89,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "倍数",
+   "underlying": "",
+   "tags": [],
+   "basis": "三项费用之和6月比2月"
+  },
+  {
+   "paper": "M02",
+   "number": 90,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "综合分析判断",
+   "underlying": "",
+   "tags": [],
+   "basis": "数量、权益、费用变化多项判断"
+  },
+  {
+   "paper": "M03",
+   "number": 71,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "纯文字",
+   "material_region": "广东",
+   "category": "材料理解（非计算）",
+   "underlying": "",
+   "tags": [],
+   "basis": "规划四大板块，文字检索"
+  },
+  {
+   "paper": "M03",
+   "number": 72,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "纯文字",
+   "material_region": "广东",
+   "category": "材料理解（非计算）",
+   "underlying": "",
+   "tags": [],
+   "basis": "不能推出项（8K未提及）"
+  },
+  {
+   "paper": "M03",
+   "number": 73,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "纯文字",
+   "material_region": "广东",
+   "category": "比重",
+   "underlying": "",
+   "tags": [],
+   "basis": "由广东产能占全国25%反推全国年产量"
+  },
+  {
+   "paper": "M03",
+   "number": 74,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "纯文字",
+   "material_region": "广东",
+   "category": "增长率",
+   "underlying": "",
+   "tags": [],
+   "basis": "由两个同比增速推2025年一季度增速"
+  },
+  {
+   "paper": "M03",
+   "number": 75,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "纯文字",
+   "material_region": "广东",
+   "category": "综合分析判断",
+   "underlying": "",
+   "tags": [],
+   "basis": "百分点差、由比重反推、增量多项判断"
+  },
+  {
+   "paper": "M03",
+   "number": 76,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "比重",
+   "underlying": "",
+   "tags": [],
+   "basis": "亏损面（亏损企业占比）两年差"
+  },
+  {
+   "paper": "M03",
+   "number": 77,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "比较排序",
+   "underlying": "增长率",
+   "tags": [],
+   "basis": "四项指标年均增速比较"
+  },
+  {
+   "paper": "M03",
+   "number": 78,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "比重",
+   "underlying": "",
+   "tags": [
+    "计数"
+   ],
+   "basis": "利润率（利润÷收入）同比上升年份计数"
+  },
+  {
+   "paper": "M03",
+   "number": 79,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "平均数",
+   "underlying": "",
+   "tags": [],
+   "basis": "每家亏损企业亏损额的同比增量"
+  },
+  {
+   "paper": "M03",
+   "number": 80,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "综合分析判断",
+   "underlying": "",
+   "tags": [
+    "计数"
+   ],
+   "basis": "判断可推出几项"
+  },
+  {
+   "paper": "M03",
+   "number": 81,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "基期量",
+   "underlying": "",
+   "tags": [],
+   "basis": "由累计增速反推2022年1—6月再求下半年"
+  },
+  {
+   "paper": "M03",
+   "number": 82,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "增长率",
+   "underlying": "",
+   "tags": [],
+   "basis": "累计差得当月产量后求环比"
+  },
+  {
+   "paper": "M03",
+   "number": 83,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "增长率",
+   "underlying": "",
+   "tags": [],
+   "basis": "当月产量同比（含基期反推）"
+  },
+  {
+   "paper": "M03",
+   "number": 84,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "平均数",
+   "underlying": "",
+   "tags": [],
+   "basis": "出口单价增长率"
+  },
+  {
+   "paper": "M03",
+   "number": 85,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "图形选项题",
+   "underlying": "",
+   "tags": [],
+   "basis": "折线图选项反映环比增量趋势"
+  },
+  {
+   "paper": "M03",
+   "number": 86,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "比较排序",
+   "underlying": "增长率",
+   "tags": [],
+   "basis": "其他能源生产量同比增长最慢年份"
+  },
+  {
+   "paper": "M03",
+   "number": 87,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "倍数",
+   "underlying": "",
+   "tags": [],
+   "basis": "原煤与原油消费增量之比"
+  },
+  {
+   "paper": "M03",
+   "number": 88,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "图形选项题",
+   "underlying": "",
+   "tags": [],
+   "basis": "饼图选项反映消费构成"
+  },
+  {
+   "paper": "M03",
+   "number": 89,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "平均数",
+   "underlying": "",
+   "tags": [],
+   "basis": "五年天然气年均产量"
+  },
+  {
+   "paper": "M03",
+   "number": 90,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "综合分析判断",
+   "underlying": "",
+   "tags": [],
+   "basis": "差值、增减、比重、间隔增长多项判断"
+  },
+  {
+   "paper": "M04",
+   "number": 71,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "纯文字",
+   "material_region": "广东",
+   "category": "材料理解（非计算）",
+   "underlying": "",
+   "tags": [],
+   "basis": "不属于“四大工程”的一项"
+  },
+  {
+   "paper": "M04",
+   "number": 72,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "纯文字",
+   "material_region": "广东",
+   "category": "材料理解（非计算）",
+   "underlying": "",
+   "tags": [],
+   "basis": "不能得到支持项（“十三五”未提及）"
+  },
+  {
+   "paper": "M04",
+   "number": 73,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "纯文字",
+   "material_region": "广东",
+   "category": "比重",
+   "underlying": "",
+   "tags": [],
+   "basis": "修复面积占营造与修复总面积比重"
+  },
+  {
+   "paper": "M04",
+   "number": 74,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "纯文字",
+   "material_region": "广东",
+   "category": "平均数",
+   "underlying": "",
+   "tags": [],
+   "basis": "五年平均每年活动场次"
+  },
+  {
+   "paper": "M04",
+   "number": 75,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "纯文字",
+   "material_region": "广东",
+   "category": "材料理解（非计算）",
+   "underlying": "",
+   "tags": [],
+   "basis": "“首批30个”与“共30个”等表述辨析"
+  },
+  {
+   "paper": "M04",
+   "number": 76,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "纯表格",
+   "material_region": "其他",
+   "category": "比重",
+   "underlying": "",
+   "tags": [],
+   "basis": "住宅投资占比两期变化"
+  },
+  {
+   "paper": "M04",
+   "number": 77,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "纯表格",
+   "material_region": "其他",
+   "category": "基期量",
+   "underlying": "",
+   "tags": [],
+   "basis": "2022年非住宅施工面积"
+  },
+  {
+   "paper": "M04",
+   "number": 78,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "纯表格",
+   "material_region": "其他",
+   "category": "增长率",
+   "underlying": "",
+   "tags": [
+    "计数"
+   ],
+   "basis": "住宅与非住宅增速比较计数（混合增长）"
+  },
+  {
+   "paper": "M04",
+   "number": 79,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "纯表格",
+   "material_region": "其他",
+   "category": "增长量",
+   "underlying": "",
+   "tags": [],
+   "basis": "非住宅销售额增量"
+  },
+  {
+   "paper": "M04",
+   "number": 80,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "纯表格",
+   "material_region": "其他",
+   "category": "综合分析判断",
+   "underlying": "",
+   "tags": [
+    "计数"
+   ],
+   "basis": "判断能推出几项"
+  },
+  {
+   "paper": "M04",
+   "number": 81,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+表格",
+   "material_region": "其他",
+   "category": "平均数",
+   "underlying": "",
+   "tags": [],
+   "basis": "上半年月均出口量"
+  },
+  {
+   "paper": "M04",
+   "number": 82,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+表格",
+   "material_region": "其他",
+   "category": "平均数",
+   "underlying": "",
+   "tags": [],
+   "basis": "出口单价同比增速"
+  },
+  {
+   "paper": "M04",
+   "number": 83,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+表格",
+   "material_region": "其他",
+   "category": "增长率",
+   "underlying": "",
+   "tags": [],
+   "basis": "二季度出口金额环比"
+  },
+  {
+   "paper": "M04",
+   "number": 84,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+表格",
+   "material_region": "其他",
+   "category": "平均数",
+   "underlying": "",
+   "tags": [
+    "计数"
+   ],
+   "basis": "各月单价是否超过150元计数"
+  },
+  {
+   "paper": "M04",
+   "number": 85,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+表格",
+   "material_region": "其他",
+   "category": "综合分析判断",
+   "underlying": "",
+   "tags": [],
+   "basis": "基期和、基期比较、倍数、最值多项判断"
+  },
+  {
+   "paper": "M04",
+   "number": 86,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "平均数",
+   "underlying": "",
+   "tags": [],
+   "basis": "月均石油与粮食运量之差"
+  },
+  {
+   "paper": "M04",
+   "number": 87,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "平均数",
+   "underlying": "",
+   "tags": [],
+   "basis": "两类铁路平均运距与上年比较"
+  },
+  {
+   "paper": "M04",
+   "number": 88,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "比重",
+   "underlying": "",
+   "tags": [],
+   "basis": "基期比重"
+  },
+  {
+   "paper": "M04",
+   "number": 89,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "增长量",
+   "underlying": "",
+   "tags": [],
+   "basis": "年均增加量"
+  },
+  {
+   "paper": "M04",
+   "number": 90,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "图形选项题",
+   "underlying": "",
+   "tags": [],
+   "basis": "折线图选项反映增长率趋势"
+  },
+  {
+   "paper": "M05",
+   "number": 71,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "平均数",
+   "underlying": "",
+   "tags": [],
+   "basis": "人均花费增长率"
+  },
+  {
+   "paper": "M05",
+   "number": 72,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "倍数",
+   "underlying": "",
+   "tags": [],
+   "basis": "2022年城镇比农村花费多几倍（基期倍数）"
+  },
+  {
+   "paper": "M05",
+   "number": 73,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "平均数",
+   "underlying": "",
+   "tags": [],
+   "basis": "城镇人均花费的增量"
+  },
+  {
+   "paper": "M05",
+   "number": 74,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "增长率",
+   "underlying": "",
+   "tags": [
+    "计数"
+   ],
+   "basis": "总花费同比变化超50%的年份计数"
+  },
+  {
+   "paper": "M05",
+   "number": 75,
+   "part": "资料分析",
+   "group": 1,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "综合分析判断",
+   "underlying": "",
+   "tags": [],
+   "basis": "平均数、比重、月均、增量多项判断"
+  },
+  {
+   "paper": "M05",
+   "number": 76,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "基期量",
+   "underlying": "",
+   "tags": [],
+   "basis": "由增量求上年同期"
+  },
+  {
+   "paper": "M05",
+   "number": 77,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "比较排序",
+   "underlying": "增长率",
+   "tags": [],
+   "basis": "四类运输工具增速第二高"
+  },
+  {
+   "paper": "M05",
+   "number": 78,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "平均数",
+   "underlying": "",
+   "tags": [],
+   "basis": "9月值与1—8月月均比较"
+  },
+  {
+   "paper": "M05",
+   "number": 79,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "倍数",
+   "underlying": "",
+   "tags": [],
+   "basis": "2023年1—9月进口与出口之比（基期倍数）"
+  },
+  {
+   "paper": "M05",
+   "number": 80,
+   "part": "资料分析",
+   "group": 2,
+   "material_form": "纯表格",
+   "material_region": "全国",
+   "category": "综合分析判断",
+   "underlying": "",
+   "tags": [],
+   "basis": "基期比重、增量、贡献率等多项判断"
+  },
+  {
+   "paper": "M05",
+   "number": 81,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "现期量·简单计算",
+   "underlying": "",
+   "tags": [],
+   "basis": "按增速推算2024年值"
+  },
+  {
+   "paper": "M05",
+   "number": 82,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "增长率",
+   "underlying": "",
+   "tags": [],
+   "basis": "间隔增长率"
+  },
+  {
+   "paper": "M05",
+   "number": 83,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "基期量",
+   "underlying": "",
+   "tags": [],
+   "basis": "由“低20.9%”“低26.4%”反推两类企业收益再求差"
+  },
+  {
+   "paper": "M05",
+   "number": 84,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "基期量",
+   "underlying": "",
+   "tags": [],
+   "basis": "连环百分比反推其他内资企业收益"
+  },
+  {
+   "paper": "M05",
+   "number": 85,
+   "part": "资料分析",
+   "group": 3,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "综合分析判断",
+   "underlying": "",
+   "tags": [],
+   "basis": "倍数、百分点、基期、差值多项判断"
+  },
+  {
+   "paper": "M05",
+   "number": 86,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "平均数",
+   "underlying": "",
+   "tags": [],
+   "basis": "由人均道路面积推人口，再求人均供水量"
+  },
+  {
+   "paper": "M05",
+   "number": 87,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "基期量",
+   "underlying": "",
+   "tags": [],
+   "basis": "求2023年末排水管道长度"
+  },
+  {
+   "paper": "M05",
+   "number": 88,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "平均数",
+   "underlying": "",
+   "tags": [],
+   "basis": "每个在建城市在建线路长度变化"
+  },
+  {
+   "paper": "M05",
+   "number": 89,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "比重",
+   "underlying": "",
+   "tags": [],
+   "basis": "焚烧能力占比两期变化"
+  },
+  {
+   "paper": "M05",
+   "number": 90,
+   "part": "资料分析",
+   "group": 4,
+   "material_form": "文字+表格",
+   "material_region": "全国",
+   "category": "图形选项题",
+   "underlying": "",
+   "tags": [],
+   "basis": "折线图选项反映增量趋势"
+  }
+ ],
+ "data_analysis_groups": [
+  {
+   "paper": "GD2024",
+   "group": 1,
+   "questions": "71—75",
+   "form": "纯文字",
+   "form_detail": "纯文字（约580字）",
+   "region": "广东",
+   "topic": "广东技能人才与技工教育",
+   "print_note": ""
+  },
+  {
+   "paper": "GD2024",
+   "group": 2,
+   "questions": "76—80",
+   "form": "文字+表格+统计图",
+   "form_detail": "文字＋折线图（2013—2022年投资流量）＋表格（2022年行业分布）",
+   "region": "全国",
+   "topic": "中国对外直接投资",
+   "print_note": ""
+  },
+  {
+   "paper": "GD2024",
+   "group": 3,
+   "questions": "81—85",
+   "form": "文字+表格+统计图",
+   "form_detail": "文字＋表格（2018—2022年案件数）＋折线图（受援群众）",
+   "region": "广东",
+   "topic": "G省法律援助",
+   "print_note": ""
+  },
+  {
+   "paper": "GD2024",
+   "group": 4,
+   "questions": "86—90",
+   "form": "文字+统计图",
+   "form_detail": "文字＋两幅条形图（县均、人均社会资本投入）",
+   "region": "全国",
+   "topic": "县域农业农村信息化社会资本投入",
+   "print_note": ""
+  },
+  {
+   "paper": "GD2025",
+   "group": 1,
+   "questions": "71—75",
+   "form": "纯表格",
+   "form_detail": "单张表格，无文字段",
+   "region": "广东",
+   "topic": "G省社会消费品零售额",
+   "print_note": ""
+  },
+  {
+   "paper": "GD2025",
+   "group": 2,
+   "questions": "76—80",
+   "form": "纯文字",
+   "form_detail": "纯文字（约740字）",
+   "region": "全国",
+   "topic": "中国能源转型十年",
+   "print_note": ""
+  },
+  {
+   "paper": "GD2025",
+   "group": 3,
+   "questions": "81—85",
+   "form": "文字+统计图",
+   "form_detail": "文字＋柱状图（博物馆数量）＋百分比堆积柱状图（国有/非国有占比）",
+   "region": "广东",
+   "topic": "G省博物馆",
+   "print_note": ""
+  },
+  {
+   "paper": "GD2025",
+   "group": 4,
+   "questions": "86—90",
+   "form": "文字+统计图",
+   "form_detail": "文字＋两幅柱状图（旅客发送量、周转量）",
+   "region": "全国",
+   "topic": "国家铁路客运",
+   "print_note": ""
+  },
+  {
+   "paper": "GD2026",
+   "group": 1,
+   "questions": "71—75",
+   "form": "纯文字",
+   "form_detail": "纯文字（约700字）",
+   "region": "广东",
+   "topic": "广东就业与“百万英才汇南粤”",
+   "print_note": ""
+  },
+  {
+   "paper": "GD2026",
+   "group": 2,
+   "questions": "76—80",
+   "form": "纯文字",
+   "form_detail": "纯文字（约630字）",
+   "region": "全国",
+   "topic": "国家标准物质",
+   "print_note": ""
+  },
+  {
+   "paper": "GD2026",
+   "group": 3,
+   "questions": "81—85",
+   "form": "文字+表格",
+   "form_detail": "文字＋表格（各类体育场地数量与面积）",
+   "region": "广东",
+   "topic": "广东体育场地",
+   "print_note": ""
+  },
+  {
+   "paper": "GD2026",
+   "group": 4,
+   "questions": "86—90",
+   "form": "文字+统计图",
+   "form_detail": "文字＋折线图（城镇化率）",
+   "region": "全国",
+   "topic": "我国城市发展与城镇化",
+   "print_note": ""
+  },
+  {
+   "paper": "M01",
+   "group": 1,
+   "questions": "71—75",
+   "form": "文字+表格",
+   "form_detail": "文字＋两张表（消费支出占收入比例、各省城镇人均消费支出）",
+   "region": "全国",
+   "topic": "全国居民消费支出",
+   "print_note": "打印为表格"
+  },
+  {
+   "paper": "M01",
+   "group": 2,
+   "questions": "76—80",
+   "form": "纯表格",
+   "form_detail": "单张表格",
+   "region": "全国",
+   "topic": "全国监管货运进出境",
+   "print_note": "打印为表格"
+  },
+  {
+   "paper": "M01",
+   "group": 3,
+   "questions": "81—85",
+   "form": "文字+表格",
+   "form_detail": "文字＋表格（服务分类进出口）",
+   "region": "全国",
+   "topic": "我国服务进出口",
+   "print_note": "打印为表格"
+  },
+  {
+   "paper": "M01",
+   "group": 4,
+   "questions": "86—90",
+   "form": "纯表格",
+   "form_detail": "两张表（题名“图1/图2”，源为统计图，转写后以表格打印）",
+   "region": "全国",
+   "topic": "中国CPU出口",
+   "print_note": "源为统计图，打印为表格"
+  },
+  {
+   "paper": "M02",
+   "group": 1,
+   "questions": "71—75",
+   "form": "纯文字",
+   "form_detail": "纯文字（约700字）",
+   "region": "广东",
+   "topic": "广东外汇管理与外贸外资",
+   "print_note": ""
+  },
+  {
+   "paper": "M02",
+   "group": 2,
+   "questions": "76—80",
+   "form": "文字+表格",
+   "form_detail": "文字＋两张表（题名“图1/图2”，源为统计图，以表格打印）",
+   "region": "全国",
+   "topic": "全国民航机场吞吐量",
+   "print_note": "源为统计图，打印为表格；第77题选项为饼图"
+  },
+  {
+   "paper": "M02",
+   "group": 3,
+   "questions": "81—85",
+   "form": "纯表格",
+   "form_detail": "两张表（题名“图1/图2”，源为统计图，以表格打印）",
+   "region": "全国",
+   "topic": "我国糖料产量与种植面积",
+   "print_note": "源为统计图，打印为表格；第85题题干附折线图"
+  },
+  {
+   "paper": "M02",
+   "group": 4,
+   "questions": "86—90",
+   "form": "纯表格",
+   "form_detail": "两张表（表1/表2）",
+   "region": "全国",
+   "topic": "医药制造业资产负债与费用",
+   "print_note": "打印为表格"
+  },
+  {
+   "paper": "M03",
+   "group": 1,
+   "questions": "71—75",
+   "form": "纯文字",
+   "form_detail": "纯文字（约550字）",
+   "region": "广东",
+   "topic": "广东超高清视频产业",
+   "print_note": ""
+  },
+  {
+   "paper": "M03",
+   "group": 2,
+   "questions": "76—80",
+   "form": "纯表格",
+   "form_detail": "单张大表＋亏损面公式注",
+   "region": "全国",
+   "topic": "汽车制造业",
+   "print_note": "打印为表格"
+  },
+  {
+   "paper": "M03",
+   "group": 3,
+   "questions": "81—85",
+   "form": "文字+表格",
+   "form_detail": "表格（空调累计产量）＋文字（出口）",
+   "region": "全国",
+   "topic": "中国空调产量与出口",
+   "print_note": "打印为表格；第85题选项为折线图"
+  },
+  {
+   "paper": "M03",
+   "group": 4,
+   "questions": "86—90",
+   "form": "纯表格",
+   "form_detail": "两张表（能源生产、消费构成）",
+   "region": "全国",
+   "topic": "能源生产与消费",
+   "print_note": "打印为表格；第88题选项为饼图"
+  },
+  {
+   "paper": "M04",
+   "group": 1,
+   "questions": "71—75",
+   "form": "纯文字",
+   "form_detail": "纯文字（约540字）",
+   "region": "广东",
+   "topic": "绿美广东生态建设",
+   "print_note": ""
+  },
+  {
+   "paper": "M04",
+   "group": 2,
+   "questions": "76—80",
+   "form": "纯表格",
+   "form_detail": "单张表格",
+   "region": "其他",
+   "topic": "X地区房地产开发与销售",
+   "print_note": "打印为表格"
+  },
+  {
+   "paper": "M04",
+   "group": 3,
+   "questions": "81—85",
+   "form": "文字+表格",
+   "form_detail": "文字＋表格（前三季度逐月出口）",
+   "region": "其他",
+   "topic": "J市平板显示模组出口",
+   "print_note": "打印为表格"
+  },
+  {
+   "paper": "M04",
+   "group": 4,
+   "questions": "86—90",
+   "form": "文字+表格",
+   "form_detail": "三段文字＋表格（货运发送量）＋公式注",
+   "region": "全国",
+   "topic": "全国铁路货运",
+   "print_note": "打印为表格；第90题选项为折线图"
+  },
+  {
+   "paper": "M05",
+   "group": 1,
+   "questions": "71—75",
+   "form": "文字+表格",
+   "form_detail": "文字＋表格（2015—2023年国内旅游）",
+   "region": "全国",
+   "topic": "国内旅游",
+   "print_note": "打印为表格"
+  },
+  {
+   "paper": "M05",
+   "group": 2,
+   "questions": "76—80",
+   "form": "纯表格",
+   "form_detail": "单张表格",
+   "region": "全国",
+   "topic": "货运监管业务",
+   "print_note": "打印为表格"
+  },
+  {
+   "paper": "M05",
+   "group": 3,
+   "questions": "81—85",
+   "form": "文字+表格",
+   "form_detail": "文字＋表格（不同规模企业产业化率）",
+   "region": "全国",
+   "topic": "企业发明专利产业化",
+   "print_note": "打印为表格"
+  },
+  {
+   "paper": "M05",
+   "group": 4,
+   "questions": "86—90",
+   "form": "文字+表格",
+   "form_detail": "文字＋表格（轨道交通）＋文字",
+   "region": "全国",
+   "topic": "城市道路、轨交与市政设施",
+   "print_note": "打印为表格；第90题选项为折线图"
+  }
+ ],
+ "summary": {
+  "政治理论_题型": {
+   "判断": {
+    "GD2024": 4,
+    "GD2025": 4,
+    "GD2026": 4,
+    "M01": 4,
+    "M02": 4,
+    "M03": 4,
+    "M04": 4,
+    "M05": 4,
+    "真题范围": [
+     4,
+     4
+    ],
+    "范围口径": "2025—2026（2024无单列政治理论）",
+    "明细（题号/组号）": {
+     "GD2024": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "GD2025": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "GD2026": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "M01": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "M02": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "M03": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "M04": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "M05": [
+      1,
+      2,
+      3,
+      4
+     ]
+    },
+    "备注": "2024年1—15题为判断5、单选5、多选5；其中政治领域13题为判断4、单选5、多选4"
+   },
+   "单选": {
+    "GD2024": 5,
+    "GD2025": 4,
+    "GD2026": 4,
+    "M01": 4,
+    "M02": 4,
+    "M03": 4,
+    "M04": 4,
+    "M05": 4,
+    "真题范围": [
+     4,
+     4
+    ],
+    "范围口径": "2025—2026（2024无单列政治理论）",
+    "明细（题号/组号）": {
+     "GD2024": [
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "GD2025": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "GD2026": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "M01": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "M02": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "M03": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "M04": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "M05": [
+      5,
+      6,
+      7,
+      8
+     ]
+    },
+    "备注": "2024年1—15题为判断5、单选5、多选5；其中政治领域13题为判断4、单选5、多选4"
+   },
+   "多选": {
+    "GD2024": 4,
+    "GD2025": 2,
+    "GD2026": 2,
+    "M01": 2,
+    "M02": 2,
+    "M03": 2,
+    "M04": 2,
+    "M05": 2,
+    "真题范围": [
+     2,
+     2
+    ],
+    "范围口径": "2025—2026（2024无单列政治理论）",
+    "明细（题号/组号）": {
+     "GD2024": [
+      11,
+      12,
+      13,
+      14
+     ],
+     "GD2025": [
+      9,
+      10
+     ],
+     "GD2026": [
+      9,
+      10
+     ],
+     "M01": [
+      9,
+      10
+     ],
+     "M02": [
+      9,
+      10
+     ],
+     "M03": [
+      9,
+      10
+     ],
+     "M04": [
+      9,
+      10
+     ],
+     "M05": [
+      9,
+      10
+     ]
+    },
+    "备注": "2024年1—15题为判断5、单选5、多选5；其中政治领域13题为判断4、单选5、多选4"
+   }
+  },
+  "政治理论_内容": {
+   "马克思主义哲学": {
+    "GD2024": 2,
+    "GD2025": 2,
+    "GD2026": 2,
+    "M01": 2,
+    "M02": 1,
+    "M03": 3,
+    "M04": 2,
+    "M05": 4,
+    "真题范围": [
+     2,
+     2
+    ],
+    "范围口径": "2024—2026（2024为1—15题中政治领域13题）",
+    "明细（题号/组号）": {
+     "GD2024": [
+      12,
+      14
+     ],
+     "GD2025": [
+      4,
+      10
+     ],
+     "GD2026": [
+      4,
+      10
+     ],
+     "M01": [
+      7,
+      10
+     ],
+     "M02": [
+      7
+     ],
+     "M03": [
+      4,
+      7,
+      8
+     ],
+     "M04": [
+      2,
+      8
+     ],
+     "M05": [
+      1,
+      2,
+      5,
+      9
+     ]
+    }
+   },
+   "马克思主义政治经济学": {
+    "GD2024": 0,
+    "GD2025": 0,
+    "GD2026": 0,
+    "M01": 2,
+    "M02": 3,
+    "M03": 1,
+    "M04": 2,
+    "M05": 2,
+    "真题范围": [
+     0,
+     0
+    ],
+    "范围口径": "2024—2026（2024为1—15题中政治领域13题）",
+    "明细（题号/组号）": {
+     "GD2024": [],
+     "GD2025": [],
+     "GD2026": [],
+     "M01": [
+      2,
+      4
+     ],
+     "M02": [
+      2,
+      4,
+      8
+     ],
+     "M03": [
+      2
+     ],
+     "M04": [
+      1,
+      3
+     ],
+     "M05": [
+      3,
+      7
+     ]
+    }
+   },
+   "科学社会主义": {
+    "GD2024": 0,
+    "GD2025": 0,
+    "GD2026": 0,
+    "M01": 0,
+    "M02": 0,
+    "M03": 0,
+    "M04": 0,
+    "M05": 0,
+    "真题范围": [
+     0,
+     0
+    ],
+    "范围口径": "2024—2026（2024为1—15题中政治领域13题）",
+    "明细（题号/组号）": {
+     "GD2024": [],
+     "GD2025": [],
+     "GD2026": [],
+     "M01": [],
+     "M02": [],
+     "M03": [],
+     "M04": [],
+     "M05": []
+    }
+   },
+   "习近平新时代中国特色社会主义思想与党的创新理论": {
+    "GD2024": 5,
+    "GD2025": 5,
+    "GD2026": 3,
+    "M01": 4,
+    "M02": 3,
+    "M03": 3,
+    "M04": 1,
+    "M05": 0,
+    "真题范围": [
+     3,
+     5
+    ],
+    "范围口径": "2024—2026（2024为1—15题中政治领域13题）",
+    "明细（题号/组号）": {
+     "GD2024": [
+      1,
+      2,
+      4,
+      6,
+      7
+     ],
+     "GD2025": [
+      1,
+      2,
+      3,
+      6,
+      8
+     ],
+     "GD2026": [
+      2,
+      3,
+      5
+     ],
+     "M01": [
+      1,
+      5,
+      6,
+      9
+     ],
+     "M02": [
+      3,
+      9,
+      10
+     ],
+     "M03": [
+      1,
+      6,
+      9
+     ],
+     "M04": [
+      7
+     ],
+     "M05": []
+    }
+   },
+   "党史与党建": {
+    "GD2024": 2,
+    "GD2025": 2,
+    "GD2026": 1,
+    "M01": 0,
+    "M02": 2,
+    "M03": 0,
+    "M04": 1,
+    "M05": 2,
+    "真题范围": [
+     1,
+     2
+    ],
+    "范围口径": "2024—2026（2024为1—15题中政治领域13题）",
+    "明细（题号/组号）": {
+     "GD2024": [
+      8,
+      13
+     ],
+     "GD2025": [
+      5,
+      9
+     ],
+     "GD2026": [
+      9
+     ],
+     "M01": [],
+     "M02": [
+      1,
+      5
+     ],
+     "M03": [],
+     "M04": [
+      9
+     ],
+     "M05": [
+      4,
+      10
+     ]
+    }
+   },
+   "宪法与法治": {
+    "GD2024": 0,
+    "GD2025": 1,
+    "GD2026": 1,
+    "M01": 0,
+    "M02": 0,
+    "M03": 0,
+    "M04": 1,
+    "M05": 1,
+    "真题范围": [
+     0,
+     1
+    ],
+    "范围口径": "2024—2026（2024为1—15题中政治领域13题）",
+    "明细（题号/组号）": {
+     "GD2024": [],
+     "GD2025": [
+      7
+     ],
+     "GD2026": [
+      7
+     ],
+     "M01": [],
+     "M02": [],
+     "M03": [],
+     "M04": [
+      4
+     ],
+     "M05": [
+      8
+     ]
+    }
+   },
+   "经济社会政策与时政": {
+    "GD2024": 2,
+    "GD2025": 0,
+    "GD2026": 2,
+    "M01": 1,
+    "M02": 0,
+    "M03": 2,
+    "M04": 3,
+    "M05": 1,
+    "真题范围": [
+     0,
+     2
+    ],
+    "范围口径": "2024—2026（2024为1—15题中政治领域13题）",
+    "明细（题号/组号）": {
+     "GD2024": [
+      3,
+      11
+     ],
+     "GD2025": [],
+     "GD2026": [
+      6,
+      8
+     ],
+     "M01": [
+      8
+     ],
+     "M02": [],
+     "M03": [
+      3,
+      5
+     ],
+     "M04": [
+      5,
+      6,
+      10
+     ],
+     "M05": [
+      6
+     ]
+    }
+   },
+   "广东省情": {
+    "GD2024": 2,
+    "GD2025": 0,
+    "GD2026": 1,
+    "M01": 1,
+    "M02": 1,
+    "M03": 1,
+    "M04": 0,
+    "M05": 0,
+    "真题范围": [
+     0,
+     2
+    ],
+    "范围口径": "2024—2026（2024为1—15题中政治领域13题）",
+    "明细（题号/组号）": {
+     "GD2024": [
+      9,
+      10
+     ],
+     "GD2025": [],
+     "GD2026": [
+      1
+     ],
+     "M01": [
+      3
+     ],
+     "M02": [
+      6
+     ],
+     "M03": [
+      10
+     ],
+     "M04": [],
+     "M05": []
+    }
+   },
+   "其他": {
+    "GD2024": 0,
+    "GD2025": 0,
+    "GD2026": 0,
+    "M01": 0,
+    "M02": 0,
+    "M03": 0,
+    "M04": 0,
+    "M05": 0,
+    "真题范围": [
+     0,
+     0
+    ],
+    "范围口径": "2024—2026（2024为1—15题中政治领域13题）",
+    "明细（题号/组号）": {
+     "GD2024": [],
+     "GD2025": [],
+     "GD2026": [],
+     "M01": [],
+     "M02": [],
+     "M03": [],
+     "M04": [],
+     "M05": []
+    }
+   },
+   "（合计）马原：哲学＋政治经济学": {
+    "GD2024": 2,
+    "GD2025": 2,
+    "GD2026": 2,
+    "M01": 4,
+    "M02": 4,
+    "M03": 4,
+    "M04": 4,
+    "M05": 6,
+    "真题范围": [
+     2,
+     2
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [
+      12,
+      14
+     ],
+     "GD2025": [
+      4,
+      10
+     ],
+     "GD2026": [
+      4,
+      10
+     ],
+     "M01": [
+      2,
+      4,
+      7,
+      10
+     ],
+     "M02": [
+      2,
+      4,
+      7,
+      8
+     ],
+     "M03": [
+      2,
+      4,
+      7,
+      8
+     ],
+     "M04": [
+      1,
+      2,
+      3,
+      8
+     ],
+     "M05": [
+      1,
+      2,
+      3,
+      5,
+      7,
+      9
+     ]
+    }
+   },
+   "（合计）当代理论与时政：习思想＋政策时政＋广东省情": {
+    "GD2024": 9,
+    "GD2025": 5,
+    "GD2026": 6,
+    "M01": 6,
+    "M02": 4,
+    "M03": 6,
+    "M04": 4,
+    "M05": 1,
+    "真题范围": [
+     5,
+     9
+    ],
+    "范围口径": "2024—2026（2024为13题口径，故上限偏大）",
+    "明细（题号/组号）": {
+     "GD2024": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      9,
+      10,
+      11
+     ],
+     "GD2025": [
+      1,
+      2,
+      3,
+      6,
+      8
+     ],
+     "GD2026": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      8
+     ],
+     "M01": [
+      1,
+      3,
+      5,
+      6,
+      8,
+      9
+     ],
+     "M02": [
+      3,
+      6,
+      9,
+      10
+     ],
+     "M03": [
+      1,
+      3,
+      5,
+      6,
+      9,
+      10
+     ],
+     "M04": [
+      5,
+      6,
+      7,
+      10
+     ],
+     "M05": [
+      6
+     ]
+    }
+   }
+  },
+  "常识_内容": {
+   "法律": {
+    "GD2024": 1,
+    "GD2025": 1,
+    "GD2026": 1,
+    "M01": 1,
+    "M02": 1,
+    "M03": 1,
+    "M04": 1,
+    "M05": 2,
+    "真题范围": [
+     1,
+     1
+    ],
+    "范围口径": "2025—2026（5题常识）；2024仅2题、不计入范围",
+    "明细（题号/组号）": {
+     "GD2024": [
+      15
+     ],
+     "GD2025": [
+      14
+     ],
+     "GD2026": [
+      14
+     ],
+     "M01": [
+      11
+     ],
+     "M02": [
+      11
+     ],
+     "M03": [
+      11
+     ],
+     "M04": [
+      11
+     ],
+     "M05": [
+      11,
+      14
+     ]
+    }
+   },
+   "历史与人文": {
+    "GD2024": 0,
+    "GD2025": 0,
+    "GD2026": 0,
+    "M01": 2,
+    "M02": 2,
+    "M03": 2,
+    "M04": 2,
+    "M05": 1,
+    "真题范围": [
+     0,
+     0
+    ],
+    "范围口径": "2025—2026（5题常识）；2024仅2题、不计入范围",
+    "明细（题号/组号）": {
+     "GD2024": [],
+     "GD2025": [],
+     "GD2026": [],
+     "M01": [
+      13,
+      15
+     ],
+     "M02": [
+      13,
+      15
+     ],
+     "M03": [
+      13,
+      15
+     ],
+     "M04": [
+      13,
+      15
+     ],
+     "M05": [
+      15
+     ]
+    }
+   },
+   "地理": {
+    "GD2024": 0,
+    "GD2025": 0,
+    "GD2026": 0,
+    "M01": 0,
+    "M02": 0,
+    "M03": 0,
+    "M04": 0,
+    "M05": 0,
+    "真题范围": [
+     0,
+     0
+    ],
+    "范围口径": "2025—2026（5题常识）；2024仅2题、不计入范围",
+    "明细（题号/组号）": {
+     "GD2024": [],
+     "GD2025": [],
+     "GD2026": [],
+     "M01": [],
+     "M02": [],
+     "M03": [],
+     "M04": [],
+     "M05": []
+    }
+   },
+   "科技": {
+    "GD2024": 0,
+    "GD2025": 1,
+    "GD2026": 0,
+    "M01": 1,
+    "M02": 1,
+    "M03": 1,
+    "M04": 1,
+    "M05": 1,
+    "真题范围": [
+     0,
+     1
+    ],
+    "范围口径": "2025—2026（5题常识）；2024仅2题、不计入范围",
+    "明细（题号/组号）": {
+     "GD2024": [],
+     "GD2025": [
+      11
+     ],
+     "GD2026": [],
+     "M01": [
+      14
+     ],
+     "M02": [
+      14
+     ],
+     "M03": [
+      14
+     ],
+     "M04": [
+      14
+     ],
+     "M05": [
+      12
+     ]
+    }
+   },
+   "经济": {
+    "GD2024": 0,
+    "GD2025": 2,
+    "GD2026": 3,
+    "M01": 0,
+    "M02": 0,
+    "M03": 0,
+    "M04": 0,
+    "M05": 0,
+    "真题范围": [
+     2,
+     3
+    ],
+    "范围口径": "2025—2026（5题常识）；2024仅2题、不计入范围",
+    "明细（题号/组号）": {
+     "GD2024": [],
+     "GD2025": [
+      12,
+      13
+     ],
+     "GD2026": [
+      11,
+      12,
+      15
+     ],
+     "M01": [],
+     "M02": [],
+     "M03": [],
+     "M04": [],
+     "M05": []
+    }
+   },
+   "生活常识": {
+    "GD2024": 0,
+    "GD2025": 0,
+    "GD2026": 0,
+    "M01": 0,
+    "M02": 0,
+    "M03": 0,
+    "M04": 0,
+    "M05": 0,
+    "真题范围": [
+     0,
+     0
+    ],
+    "范围口径": "2025—2026（5题常识）；2024仅2题、不计入范围",
+    "明细（题号/组号）": {
+     "GD2024": [],
+     "GD2025": [],
+     "GD2026": [],
+     "M01": [],
+     "M02": [],
+     "M03": [],
+     "M04": [],
+     "M05": []
+    }
+   },
+   "广东相关": {
+    "GD2024": 1,
+    "GD2025": 1,
+    "GD2026": 1,
+    "M01": 1,
+    "M02": 1,
+    "M03": 1,
+    "M04": 1,
+    "M05": 1,
+    "真题范围": [
+     1,
+     1
+    ],
+    "范围口径": "2025—2026（5题常识）；2024仅2题、不计入范围",
+    "明细（题号/组号）": {
+     "GD2024": [
+      5
+     ],
+     "GD2025": [
+      15
+     ],
+     "GD2026": [
+      13
+     ],
+     "M01": [
+      12
+     ],
+     "M02": [
+      12
+     ],
+     "M03": [
+      12
+     ],
+     "M04": [
+      12
+     ],
+     "M05": [
+      13
+     ]
+    }
+   },
+   "其他": {
+    "GD2024": 0,
+    "GD2025": 0,
+    "GD2026": 0,
+    "M01": 0,
+    "M02": 0,
+    "M03": 0,
+    "M04": 0,
+    "M05": 0,
+    "真题范围": [
+     0,
+     0
+    ],
+    "范围口径": "2025—2026（5题常识）；2024仅2题、不计入范围",
+    "明细（题号/组号）": {
+     "GD2024": [],
+     "GD2025": [],
+     "GD2026": [],
+     "M01": [],
+     "M02": [],
+     "M03": [],
+     "M04": [],
+     "M05": []
+    }
+   },
+   "（标记）时政锚定": {
+    "GD2024": 1,
+    "GD2025": 4,
+    "GD2026": 4,
+    "M01": 0,
+    "M02": 1,
+    "M03": 0,
+    "M04": 0,
+    "M05": 2,
+    "真题范围": [
+     4,
+     4
+    ],
+    "范围口径": "2025—2026",
+    "明细（题号/组号）": {
+     "GD2024": [
+      15
+     ],
+     "GD2025": [
+      11,
+      12,
+      13,
+      15
+     ],
+     "GD2026": [
+      11,
+      12,
+      13,
+      15
+     ],
+     "M01": [],
+     "M02": [
+      12
+     ],
+     "M03": [],
+     "M04": [],
+     "M05": [
+      13,
+      14
+     ]
+    }
+   }
+  },
+  "1—15题_合并指标": {
+   "广东相关合计（省情＋常识广东）": {
+    "GD2024": 3,
+    "GD2025": 1,
+    "GD2026": 2,
+    "M01": 2,
+    "M02": 2,
+    "M03": 2,
+    "M04": 1,
+    "M05": 1,
+    "真题范围": [
+     1,
+     3
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [
+      5,
+      9,
+      10
+     ],
+     "GD2025": [
+      15
+     ],
+     "GD2026": [
+      1,
+      13
+     ],
+     "M01": [
+      3,
+      12
+     ],
+     "M02": [
+      6,
+      12
+     ],
+     "M03": [
+      10,
+      12
+     ],
+     "M04": [
+      12
+     ],
+     "M05": [
+      13
+     ]
+    }
+   },
+   "法律相关合计（宪法法治＋常识法律）": {
+    "GD2024": 1,
+    "GD2025": 2,
+    "GD2026": 2,
+    "M01": 1,
+    "M02": 1,
+    "M03": 1,
+    "M04": 2,
+    "M05": 3,
+    "真题范围": [
+     1,
+     2
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [
+      15
+     ],
+     "GD2025": [
+      7,
+      14
+     ],
+     "GD2026": [
+      7,
+      14
+     ],
+     "M01": [
+      11
+     ],
+     "M02": [
+      11
+     ],
+     "M03": [
+      11
+     ],
+     "M04": [
+      4,
+      11
+     ],
+     "M05": [
+      8,
+      11,
+      14
+     ]
+    }
+   },
+   "时政锚定合计": {
+    "GD2024": 5,
+    "GD2025": 4,
+    "GD2026": 4,
+    "M01": 1,
+    "M02": 5,
+    "M03": 1,
+    "M04": 2,
+    "M05": 2,
+    "真题范围": [
+     4,
+     5
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [
+      3,
+      9,
+      10,
+      11,
+      15
+     ],
+     "GD2025": [
+      11,
+      12,
+      13,
+      15
+     ],
+     "GD2026": [
+      11,
+      12,
+      13,
+      15
+     ],
+     "M01": [
+      3
+     ],
+     "M02": [
+      1,
+      5,
+      6,
+      9,
+      12
+     ],
+     "M03": [
+      3
+     ],
+     "M04": [
+      5,
+      9
+     ],
+     "M05": [
+      13,
+      14
+     ]
+    }
+   },
+   "古语名句匹配题": {
+    "GD2024": 1,
+    "GD2025": 2,
+    "GD2026": 1,
+    "M01": 0,
+    "M02": 0,
+    "M03": 0,
+    "M04": 0,
+    "M05": 1,
+    "真题范围": [
+     1,
+     2
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [
+      7
+     ],
+     "GD2025": [
+      5,
+      8
+     ],
+     "GD2026": [
+      7
+     ],
+     "M01": [],
+     "M02": [],
+     "M03": [],
+     "M04": [],
+     "M05": [
+      5
+     ]
+    }
+   },
+   "“六个必须坚持”/立场观点方法题": {
+    "GD2024": 1,
+    "GD2025": 2,
+    "GD2026": 1,
+    "M01": 1,
+    "M02": 0,
+    "M03": 0,
+    "M04": 0,
+    "M05": 0,
+    "真题范围": [
+     1,
+     2
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [
+      6
+     ],
+     "GD2025": [
+      6,
+      8
+     ],
+     "GD2026": [
+      5
+     ],
+     "M01": [
+      6
+     ],
+     "M02": [],
+     "M03": [],
+     "M04": [],
+     "M05": []
+    }
+   },
+   "“某地/某企业”情境案例题（政治部分）": {
+    "GD2024": 0,
+    "GD2025": 0,
+    "GD2026": 0,
+    "M01": 6,
+    "M02": 1,
+    "M03": 2,
+    "M04": 4,
+    "M05": 2,
+    "真题范围": [
+     0,
+     0
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [],
+     "GD2025": [],
+     "GD2026": [],
+     "M01": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      10
+     ],
+     "M02": [
+      7
+     ],
+     "M03": [
+      5,
+      7
+     ],
+     "M04": [
+      2,
+      5,
+      6,
+      8
+     ],
+     "M05": [
+      4,
+      6
+     ]
+    }
+   },
+   "依次对应/归类/时间排序题": {
+    "GD2024": 0,
+    "GD2025": 0,
+    "GD2026": 0,
+    "M01": 2,
+    "M02": 5,
+    "M03": 6,
+    "M04": 5,
+    "M05": 3,
+    "真题范围": [
+     0,
+     0
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [],
+     "GD2025": [],
+     "GD2026": [],
+     "M01": [
+      12,
+      13
+     ],
+     "M02": [
+      6,
+      8,
+      10,
+      14,
+      15
+     ],
+     "M03": [
+      6,
+      9,
+      10,
+      12,
+      13,
+      15
+     ],
+     "M04": [
+      7,
+      9,
+      12,
+      13,
+      15
+     ],
+     "M05": [
+      11,
+      13,
+      15
+     ]
+    }
+   }
+  },
+  "资料分析_材料形式（组数）": {
+   "纯文字": {
+    "GD2024": 1,
+    "GD2025": 1,
+    "GD2026": 2,
+    "M01": 0,
+    "M02": 1,
+    "M03": 1,
+    "M04": 1,
+    "M05": 0,
+    "真题范围": [
+     1,
+     2
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [
+      1
+     ],
+     "GD2025": [
+      2
+     ],
+     "GD2026": [
+      1,
+      2
+     ],
+     "M01": [],
+     "M02": [
+      1
+     ],
+     "M03": [
+      1
+     ],
+     "M04": [
+      1
+     ],
+     "M05": []
+    }
+   },
+   "纯表格": {
+    "GD2024": 0,
+    "GD2025": 1,
+    "GD2026": 0,
+    "M01": 2,
+    "M02": 2,
+    "M03": 2,
+    "M04": 1,
+    "M05": 1,
+    "真题范围": [
+     0,
+     1
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [],
+     "GD2025": [
+      1
+     ],
+     "GD2026": [],
+     "M01": [
+      2,
+      4
+     ],
+     "M02": [
+      3,
+      4
+     ],
+     "M03": [
+      2,
+      4
+     ],
+     "M04": [
+      2
+     ],
+     "M05": [
+      2
+     ]
+    }
+   },
+   "文字+表格": {
+    "GD2024": 0,
+    "GD2025": 0,
+    "GD2026": 1,
+    "M01": 2,
+    "M02": 1,
+    "M03": 1,
+    "M04": 2,
+    "M05": 3,
+    "真题范围": [
+     0,
+     1
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [],
+     "GD2025": [],
+     "GD2026": [
+      3
+     ],
+     "M01": [
+      1,
+      3
+     ],
+     "M02": [
+      2
+     ],
+     "M03": [
+      3
+     ],
+     "M04": [
+      3,
+      4
+     ],
+     "M05": [
+      1,
+      3,
+      4
+     ]
+    }
+   },
+   "文字+统计图": {
+    "GD2024": 1,
+    "GD2025": 2,
+    "GD2026": 1,
+    "M01": 0,
+    "M02": 0,
+    "M03": 0,
+    "M04": 0,
+    "M05": 0,
+    "真题范围": [
+     1,
+     2
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [
+      4
+     ],
+     "GD2025": [
+      3,
+      4
+     ],
+     "GD2026": [
+      4
+     ],
+     "M01": [],
+     "M02": [],
+     "M03": [],
+     "M04": [],
+     "M05": []
+    }
+   },
+   "文字+表格+统计图": {
+    "GD2024": 2,
+    "GD2025": 0,
+    "GD2026": 0,
+    "M01": 0,
+    "M02": 0,
+    "M03": 0,
+    "M04": 0,
+    "M05": 0,
+    "真题范围": [
+     0,
+     2
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [
+      2,
+      3
+     ],
+     "GD2025": [],
+     "GD2026": [],
+     "M01": [],
+     "M02": [],
+     "M03": [],
+     "M04": [],
+     "M05": []
+    }
+   },
+   "（合计）含统计图的组": {
+    "GD2024": 3,
+    "GD2025": 2,
+    "GD2026": 1,
+    "M01": 0,
+    "M02": 0,
+    "M03": 0,
+    "M04": 0,
+    "M05": 0,
+    "真题范围": [
+     1,
+     3
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [
+      2,
+      3,
+      4
+     ],
+     "GD2025": [
+      3,
+      4
+     ],
+     "GD2026": [
+      4
+     ],
+     "M01": [],
+     "M02": [],
+     "M03": [],
+     "M04": [],
+     "M05": []
+    }
+   },
+   "（合计）含表格的组": {
+    "GD2024": 2,
+    "GD2025": 1,
+    "GD2026": 1,
+    "M01": 4,
+    "M02": 3,
+    "M03": 3,
+    "M04": 3,
+    "M05": 4,
+    "真题范围": [
+     1,
+     2
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [
+      2,
+      3
+     ],
+     "GD2025": [
+      1
+     ],
+     "GD2026": [
+      3
+     ],
+     "M01": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "M02": [
+      2,
+      3,
+      4
+     ],
+     "M03": [
+      2,
+      3,
+      4
+     ],
+     "M04": [
+      2,
+      3,
+      4
+     ],
+     "M05": [
+      1,
+      2,
+      3,
+      4
+     ]
+    }
+   },
+   "广东/G省主题材料": {
+    "GD2024": 2,
+    "GD2025": 2,
+    "GD2026": 2,
+    "M01": 0,
+    "M02": 1,
+    "M03": 1,
+    "M04": 1,
+    "M05": 0,
+    "真题范围": [
+     2,
+     2
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [
+      1,
+      3
+     ],
+     "GD2025": [
+      1,
+      3
+     ],
+     "GD2026": [
+      1,
+      3
+     ],
+     "M01": [],
+     "M02": [
+      1
+     ],
+     "M03": [
+      1
+     ],
+     "M04": [
+      1
+     ],
+     "M05": []
+    }
+   }
+  },
+  "资料分析_考点": {
+   "增长率": {
+    "GD2024": 1,
+    "GD2025": 4,
+    "GD2026": 0,
+    "M01": 3,
+    "M02": 1,
+    "M03": 3,
+    "M04": 2,
+    "M05": 2,
+    "真题范围": [
+     0,
+     4
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [
+      86
+     ],
+     "GD2025": [
+      72,
+      81,
+      86,
+      88
+     ],
+     "GD2026": [],
+     "M01": [
+      73,
+      74,
+      86
+     ],
+     "M02": [
+      88
+     ],
+     "M03": [
+      74,
+      82,
+      83
+     ],
+     "M04": [
+      78,
+      83
+     ],
+     "M05": [
+      74,
+      82
+     ]
+    }
+   },
+   "增长量": {
+    "GD2024": 1,
+    "GD2025": 3,
+    "GD2026": 1,
+    "M01": 1,
+    "M02": 2,
+    "M03": 0,
+    "M04": 2,
+    "M05": 0,
+    "真题范围": [
+     1,
+     3
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [
+      76
+     ],
+     "GD2025": [
+      78,
+      82,
+      87
+     ],
+     "GD2026": [
+      81
+     ],
+     "M01": [
+      81
+     ],
+     "M02": [
+      73,
+      84
+     ],
+     "M03": [],
+     "M04": [
+      79,
+      89
+     ],
+     "M05": []
+    }
+   },
+   "基期量": {
+    "GD2024": 1,
+    "GD2025": 0,
+    "GD2026": 0,
+    "M01": 3,
+    "M02": 1,
+    "M03": 1,
+    "M04": 1,
+    "M05": 4,
+    "真题范围": [
+     0,
+     1
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [
+      87
+     ],
+     "GD2025": [],
+     "GD2026": [],
+     "M01": [
+      72,
+      76,
+      78
+     ],
+     "M02": [
+      74
+     ],
+     "M03": [
+      81
+     ],
+     "M04": [
+      77
+     ],
+     "M05": [
+      76,
+      83,
+      84,
+      87
+     ]
+    }
+   },
+   "现期量·简单计算": {
+    "GD2024": 1,
+    "GD2025": 1,
+    "GD2026": 2,
+    "M01": 0,
+    "M02": 1,
+    "M03": 0,
+    "M04": 0,
+    "M05": 1,
+    "真题范围": [
+     1,
+     2
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [
+      78
+     ],
+     "GD2025": [
+      71
+     ],
+     "GD2026": [
+      78,
+      83
+     ],
+     "M01": [],
+     "M02": [
+      82
+     ],
+     "M03": [],
+     "M04": [],
+     "M05": [
+      81
+     ]
+    }
+   },
+   "比重": {
+    "GD2024": 4,
+    "GD2025": 2,
+    "GD2026": 5,
+    "M01": 4,
+    "M02": 2,
+    "M03": 3,
+    "M04": 3,
+    "M05": 1,
+    "真题范围": [
+     2,
+     5
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [
+      71,
+      72,
+      77,
+      81
+     ],
+     "GD2025": [
+      73,
+      83
+     ],
+     "GD2026": [
+      73,
+      74,
+      79,
+      82,
+      88
+     ],
+     "M01": [
+      71,
+      77,
+      82,
+      87
+     ],
+     "M02": [
+      72,
+      79
+     ],
+     "M03": [
+      73,
+      76,
+      78
+     ],
+     "M04": [
+      73,
+      76,
+      88
+     ],
+     "M05": [
+      89
+     ]
+    }
+   },
+   "倍数": {
+    "GD2024": 1,
+    "GD2025": 0,
+    "GD2026": 0,
+    "M01": 1,
+    "M02": 3,
+    "M03": 1,
+    "M04": 0,
+    "M05": 2,
+    "真题范围": [
+     0,
+     1
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [
+      88
+     ],
+     "GD2025": [],
+     "GD2026": [],
+     "M01": [
+      83
+     ],
+     "M02": [
+      78,
+      83,
+      89
+     ],
+     "M03": [
+      87
+     ],
+     "M04": [],
+     "M05": [
+      72,
+      79
+     ]
+    }
+   },
+   "平均数": {
+    "GD2024": 1,
+    "GD2025": 0,
+    "GD2026": 1,
+    "M01": 3,
+    "M02": 2,
+    "M03": 3,
+    "M04": 6,
+    "M05": 5,
+    "真题范围": [
+     0,
+     1
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [
+      82
+     ],
+     "GD2025": [],
+     "GD2026": [
+      87
+     ],
+     "M01": [
+      79,
+      88,
+      89
+     ],
+     "M02": [
+      76,
+      86
+     ],
+     "M03": [
+      79,
+      84,
+      89
+     ],
+     "M04": [
+      74,
+      81,
+      82,
+      84,
+      86,
+      87
+     ],
+     "M05": [
+      71,
+      73,
+      78,
+      86,
+      88
+     ]
+    }
+   },
+   "比较排序": {
+    "GD2024": 3,
+    "GD2025": 3,
+    "GD2026": 3,
+    "M01": 1,
+    "M02": 2,
+    "M03": 2,
+    "M04": 0,
+    "M05": 1,
+    "真题范围": [
+     3,
+     3
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [
+      79,
+      83,
+      89
+     ],
+     "GD2025": [
+      74,
+      84,
+      89
+     ],
+     "GD2026": [
+      84,
+      86,
+      89
+     ],
+     "M01": [
+      84
+     ],
+     "M02": [
+      81,
+      87
+     ],
+     "M03": [
+      77,
+      86
+     ],
+     "M04": [],
+     "M05": [
+      77
+     ]
+    }
+   },
+   "综合分析判断": {
+    "GD2024": 3,
+    "GD2025": 5,
+    "GD2026": 2,
+    "M01": 4,
+    "M02": 3,
+    "M03": 3,
+    "M04": 2,
+    "M05": 3,
+    "真题范围": [
+     2,
+     5
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [
+      80,
+      85,
+      90
+     ],
+     "GD2025": [
+      75,
+      76,
+      77,
+      85,
+      90
+     ],
+     "GD2026": [
+      85,
+      90
+     ],
+     "M01": [
+      75,
+      80,
+      85,
+      90
+     ],
+     "M02": [
+      75,
+      80,
+      90
+     ],
+     "M03": [
+      75,
+      80,
+      90
+     ],
+     "M04": [
+      80,
+      85
+     ],
+     "M05": [
+      75,
+      80,
+      85
+     ]
+    }
+   },
+   "材料理解（非计算）": {
+    "GD2024": 3,
+    "GD2025": 2,
+    "GD2026": 5,
+    "M01": 0,
+    "M02": 1,
+    "M03": 2,
+    "M04": 3,
+    "M05": 0,
+    "真题范围": [
+     2,
+     5
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [
+      73,
+      74,
+      75
+     ],
+     "GD2025": [
+      79,
+      80
+     ],
+     "GD2026": [
+      71,
+      72,
+      75,
+      76,
+      77
+     ],
+     "M01": [],
+     "M02": [
+      71
+     ],
+     "M03": [
+      71,
+      72
+     ],
+     "M04": [
+      71,
+      72,
+      75
+     ],
+     "M05": []
+    }
+   },
+   "图形选项题": {
+    "GD2024": 1,
+    "GD2025": 0,
+    "GD2026": 1,
+    "M01": 0,
+    "M02": 2,
+    "M03": 2,
+    "M04": 1,
+    "M05": 1,
+    "真题范围": [
+     0,
+     1
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [
+      84
+     ],
+     "GD2025": [],
+     "GD2026": [
+      80
+     ],
+     "M01": [],
+     "M02": [
+      77,
+      85
+     ],
+     "M03": [
+      85,
+      88
+     ],
+     "M04": [
+      90
+     ],
+     "M05": [
+      90
+     ]
+    }
+   }
+  },
+  "资料分析_考点（概念口径：比较排序计入底层量）": {
+   "增长率": {
+    "GD2024": 2,
+    "GD2025": 5,
+    "GD2026": 1,
+    "M01": 3,
+    "M02": 1,
+    "M03": 5,
+    "M04": 2,
+    "M05": 3,
+    "真题范围": [
+     1,
+     5
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [
+      86,
+      89
+     ],
+     "GD2025": [
+      72,
+      74,
+      81,
+      86,
+      88
+     ],
+     "GD2026": [
+      89
+     ],
+     "M01": [
+      73,
+      74,
+      86
+     ],
+     "M02": [
+      88
+     ],
+     "M03": [
+      74,
+      77,
+      82,
+      83,
+      86
+     ],
+     "M04": [
+      78,
+      83
+     ],
+     "M05": [
+      74,
+      77,
+      82
+     ]
+    }
+   },
+   "增长量": {
+    "GD2024": 1,
+    "GD2025": 4,
+    "GD2026": 2,
+    "M01": 1,
+    "M02": 2,
+    "M03": 0,
+    "M04": 2,
+    "M05": 0,
+    "真题范围": [
+     1,
+     4
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [
+      76
+     ],
+     "GD2025": [
+      78,
+      82,
+      84,
+      87
+     ],
+     "GD2026": [
+      81,
+      86
+     ],
+     "M01": [
+      81
+     ],
+     "M02": [
+      73,
+      84
+     ],
+     "M03": [],
+     "M04": [
+      79,
+      89
+     ],
+     "M05": []
+    }
+   },
+   "基期量": {
+    "GD2024": 2,
+    "GD2025": 0,
+    "GD2026": 0,
+    "M01": 3,
+    "M02": 1,
+    "M03": 1,
+    "M04": 1,
+    "M05": 4,
+    "真题范围": [
+     0,
+     2
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [
+      79,
+      87
+     ],
+     "GD2025": [],
+     "GD2026": [],
+     "M01": [
+      72,
+      76,
+      78
+     ],
+     "M02": [
+      74
+     ],
+     "M03": [
+      81
+     ],
+     "M04": [
+      77
+     ],
+     "M05": [
+      76,
+      83,
+      84,
+      87
+     ]
+    }
+   },
+   "现期量·简单计算": {
+    "GD2024": 1,
+    "GD2025": 1,
+    "GD2026": 2,
+    "M01": 1,
+    "M02": 1,
+    "M03": 0,
+    "M04": 0,
+    "M05": 1,
+    "真题范围": [
+     1,
+     2
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [
+      78
+     ],
+     "GD2025": [
+      71
+     ],
+     "GD2026": [
+      78,
+      83
+     ],
+     "M01": [
+      84
+     ],
+     "M02": [
+      82
+     ],
+     "M03": [],
+     "M04": [],
+     "M05": [
+      81
+     ]
+    }
+   },
+   "比重": {
+    "GD2024": 5,
+    "GD2025": 2,
+    "GD2026": 5,
+    "M01": 4,
+    "M02": 3,
+    "M03": 3,
+    "M04": 3,
+    "M05": 1,
+    "真题范围": [
+     2,
+     5
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [
+      71,
+      72,
+      77,
+      81,
+      83
+     ],
+     "GD2025": [
+      73,
+      83
+     ],
+     "GD2026": [
+      73,
+      74,
+      79,
+      82,
+      88
+     ],
+     "M01": [
+      71,
+      77,
+      82,
+      87
+     ],
+     "M02": [
+      72,
+      79,
+      87
+     ],
+     "M03": [
+      73,
+      76,
+      78
+     ],
+     "M04": [
+      73,
+      76,
+      88
+     ],
+     "M05": [
+      89
+     ]
+    }
+   },
+   "倍数": {
+    "GD2024": 1,
+    "GD2025": 0,
+    "GD2026": 0,
+    "M01": 1,
+    "M02": 3,
+    "M03": 1,
+    "M04": 0,
+    "M05": 2,
+    "真题范围": [
+     0,
+     1
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [
+      88
+     ],
+     "GD2025": [],
+     "GD2026": [],
+     "M01": [
+      83
+     ],
+     "M02": [
+      78,
+      83,
+      89
+     ],
+     "M03": [
+      87
+     ],
+     "M04": [],
+     "M05": [
+      72,
+      79
+     ]
+    }
+   },
+   "平均数": {
+    "GD2024": 1,
+    "GD2025": 1,
+    "GD2026": 2,
+    "M01": 3,
+    "M02": 3,
+    "M03": 3,
+    "M04": 6,
+    "M05": 5,
+    "真题范围": [
+     1,
+     2
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [
+      82
+     ],
+     "GD2025": [
+      89
+     ],
+     "GD2026": [
+      84,
+      87
+     ],
+     "M01": [
+      79,
+      88,
+      89
+     ],
+     "M02": [
+      76,
+      81,
+      86
+     ],
+     "M03": [
+      79,
+      84,
+      89
+     ],
+     "M04": [
+      74,
+      81,
+      82,
+      84,
+      86,
+      87
+     ],
+     "M05": [
+      71,
+      73,
+      78,
+      86,
+      88
+     ]
+    }
+   }
+  },
+  "资料分析_设问指标": {
+   "单项计算题（除综合判断、材料理解、图形选项外）": {
+    "GD2024": 13,
+    "GD2025": 13,
+    "GD2026": 12,
+    "M01": 16,
+    "M02": 14,
+    "M03": 13,
+    "M04": 14,
+    "M05": 16,
+    "真题范围": [
+     12,
+     13
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [
+      71,
+      72,
+      76,
+      77,
+      78,
+      79,
+      81,
+      82,
+      83,
+      86,
+      87,
+      88,
+      89
+     ],
+     "GD2025": [
+      71,
+      72,
+      73,
+      74,
+      78,
+      81,
+      82,
+      83,
+      84,
+      86,
+      87,
+      88,
+      89
+     ],
+     "GD2026": [
+      73,
+      74,
+      78,
+      79,
+      81,
+      82,
+      83,
+      84,
+      86,
+      87,
+      88,
+      89
+     ],
+     "M01": [
+      71,
+      72,
+      73,
+      74,
+      76,
+      77,
+      78,
+      79,
+      81,
+      82,
+      83,
+      84,
+      86,
+      87,
+      88,
+      89
+     ],
+     "M02": [
+      72,
+      73,
+      74,
+      76,
+      78,
+      79,
+      81,
+      82,
+      83,
+      84,
+      86,
+      87,
+      88,
+      89
+     ],
+     "M03": [
+      73,
+      74,
+      76,
+      77,
+      78,
+      79,
+      81,
+      82,
+      83,
+      84,
+      86,
+      87,
+      89
+     ],
+     "M04": [
+      73,
+      74,
+      76,
+      77,
+      78,
+      79,
+      81,
+      82,
+      83,
+      84,
+      86,
+      87,
+      88,
+      89
+     ],
+     "M05": [
+      71,
+      72,
+      73,
+      74,
+      76,
+      77,
+      78,
+      79,
+      81,
+      82,
+      83,
+      84,
+      86,
+      87,
+      88,
+      89
+     ]
+    }
+   },
+   "“有几个/几种/几项”计数式设问": {
+    "GD2024": 1,
+    "GD2025": 0,
+    "GD2026": 0,
+    "M01": 3,
+    "M02": 1,
+    "M03": 2,
+    "M04": 3,
+    "M05": 1,
+    "真题范围": [
+     0,
+     1
+    ],
+    "范围口径": "2024—2026",
+    "明细（题号/组号）": {
+     "GD2024": [
+      78
+     ],
+     "GD2025": [],
+     "GD2026": [],
+     "M01": [
+      74,
+      77,
+      79
+     ],
+     "M02": [
+      79
+     ],
+     "M03": [
+      78,
+      80
+     ],
+     "M04": [
+      78,
+      80,
+      84
+     ],
+     "M05": [
+      74
+     ]
+    }
+   }
+  }
+ },
+ "deviations": [
+  {
+   "mock": "M01",
+   "section": "常识",
+   "dimension": "常识_内容",
+   "category": "（标记）时政锚定",
+   "count": 0,
+   "real_range": [
+    4,
+    4
+   ],
+   "real_mean": 4.0,
+   "delta": -4,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "题",
+   "items": [],
+   "suggest": "可从偏多类别调换：历史与人文13、15",
+   "severity_score": 4.0
+  },
+  {
+   "mock": "M01",
+   "section": "1—15题",
+   "dimension": "1—15题_合并指标",
+   "category": "“某地/某企业”情境案例题（政治部分）",
+   "count": 6,
+   "real_range": [
+    0,
+    0
+   ],
+   "real_mean": 0.0,
+   "delta": 6,
+   "kind": "偏多",
+   "severity": "明显",
+   "unit": "题",
+   "items": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    10
+   ],
+   "severity_score": 3.6
+  },
+  {
+   "mock": "M01",
+   "section": "资料分析",
+   "dimension": "资料分析_考点",
+   "category": "材料理解（非计算）",
+   "count": 0,
+   "real_range": [
+    2,
+    5
+   ],
+   "real_mean": 3.33,
+   "delta": -2,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "题",
+   "items": [],
+   "suggest": "可从偏多类别调换：基期量72、76、78；平均数79、88、89",
+   "severity_score": 3.33
+  },
+  {
+   "mock": "M01",
+   "section": "常识",
+   "dimension": "常识_内容",
+   "category": "经济",
+   "count": 0,
+   "real_range": [
+    2,
+    3
+   ],
+   "real_mean": 2.5,
+   "delta": -2,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "题",
+   "items": [],
+   "suggest": "可从偏多类别调换：历史与人文13、15",
+   "severity_score": 2.5
+  },
+  {
+   "mock": "M01",
+   "section": "资料分析",
+   "dimension": "资料分析_材料形式（组数）",
+   "category": "（合计）含表格的组",
+   "count": 4,
+   "real_range": [
+    1,
+    2
+   ],
+   "real_mean": 1.33,
+   "delta": 2,
+   "kind": "偏多",
+   "severity": "明显",
+   "unit": "组",
+   "items": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "note": "其中纯表格2组（真题纯表格至多1组）",
+   "severity_score": 2.0
+  },
+  {
+   "mock": "M01",
+   "section": "资料分析",
+   "dimension": "资料分析_考点",
+   "category": "基期量",
+   "count": 3,
+   "real_range": [
+    0,
+    1
+   ],
+   "real_mean": 0.33,
+   "delta": 2,
+   "kind": "偏多",
+   "severity": "明显",
+   "unit": "题",
+   "items": [
+    72,
+    76,
+    78
+   ],
+   "severity_score": 2.0
+  },
+  {
+   "mock": "M01",
+   "section": "资料分析",
+   "dimension": "资料分析_考点",
+   "category": "平均数",
+   "count": 3,
+   "real_range": [
+    0,
+    1
+   ],
+   "real_mean": 0.67,
+   "delta": 2,
+   "kind": "偏多",
+   "severity": "明显",
+   "unit": "题",
+   "items": [
+    79,
+    88,
+    89
+   ],
+   "severity_score": 2.0
+  },
+  {
+   "mock": "M01",
+   "section": "政治理论",
+   "dimension": "政治理论_内容",
+   "category": "马克思主义政治经济学",
+   "count": 2,
+   "real_range": [
+    0,
+    0
+   ],
+   "real_mean": 0.0,
+   "delta": 2,
+   "kind": "偏多",
+   "severity": "明显",
+   "unit": "题",
+   "items": [
+    2,
+    4
+   ],
+   "severity_score": 2.0
+  },
+  {
+   "mock": "M01",
+   "section": "常识",
+   "dimension": "常识_内容",
+   "category": "历史与人文",
+   "count": 2,
+   "real_range": [
+    0,
+    0
+   ],
+   "real_mean": 0.0,
+   "delta": 2,
+   "kind": "偏多",
+   "severity": "明显",
+   "unit": "题",
+   "items": [
+    13,
+    15
+   ],
+   "severity_score": 2.0
+  },
+  {
+   "mock": "M01",
+   "section": "资料分析",
+   "dimension": "资料分析_材料形式（组数）",
+   "category": "（合计）含统计图的组",
+   "count": 0,
+   "real_range": [
+    1,
+    3
+   ],
+   "real_mean": 2.0,
+   "delta": -1,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "组",
+   "items": [],
+   "note": "模拟卷资料图表只有转写表格，打印版一律印成表格；第4组源卷为统计图（题名“图1/图2”）",
+   "severity_score": 2.0
+  },
+  {
+   "mock": "M01",
+   "section": "资料分析",
+   "dimension": "资料分析_材料形式（组数）",
+   "category": "广东/G省主题材料",
+   "count": 0,
+   "real_range": [
+    2,
+    2
+   ],
+   "real_mean": 2.0,
+   "delta": -2,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "组",
+   "items": [],
+   "severity_score": 2.0
+  },
+  {
+   "mock": "M01",
+   "section": "资料分析",
+   "dimension": "资料分析_考点",
+   "category": "比较排序",
+   "count": 1,
+   "real_range": [
+    3,
+    3
+   ],
+   "real_mean": 3.0,
+   "delta": -2,
+   "kind": "偏少",
+   "severity": "明显",
+   "unit": "题",
+   "items": [
+    84
+   ],
+   "suggest": "可从偏多类别调换：基期量72、76、78；平均数79、88、89",
+   "severity_score": 2.0
+  },
+  {
+   "mock": "M01",
+   "section": "资料分析",
+   "dimension": "资料分析_设问指标",
+   "category": "单项计算题（除综合判断、材料理解、图形选项外）",
+   "count": 16,
+   "real_range": [
+    12,
+    13
+   ],
+   "real_mean": 12.67,
+   "delta": 3,
+   "kind": "偏多",
+   "severity": "明显",
+   "unit": "题",
+   "items": [
+    71,
+    72,
+    73,
+    74,
+    76,
+    77,
+    78,
+    79,
+    81,
+    82,
+    83,
+    84,
+    86,
+    87,
+    88,
+    89
+   ],
+   "severity_score": 1.8
+  },
+  {
+   "mock": "M01",
+   "section": "政治理论",
+   "dimension": "政治理论_内容",
+   "category": "党史与党建",
+   "count": 0,
+   "real_range": [
+    1,
+    2
+   ],
+   "real_mean": 1.67,
+   "delta": -1,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "题",
+   "items": [],
+   "suggest": "可从偏多类别调换：马克思主义政治经济学2、4",
+   "note": "本套常识第13题为党史题，内容在、题位和形式（常识单选、排序/对应）与真题（政治多选或单选）不同",
+   "severity_score": 1.67
+  },
+  {
+   "mock": "M01",
+   "section": "1—15题",
+   "dimension": "1—15题_合并指标",
+   "category": "古语名句匹配题",
+   "count": 0,
+   "real_range": [
+    1,
+    2
+   ],
+   "real_mean": 1.33,
+   "delta": -1,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "题",
+   "items": [],
+   "suggest": "可从偏多类别调换：马克思主义政治经济学2、4",
+   "severity_score": 1.33
+  },
+  {
+   "mock": "M01",
+   "section": "资料分析",
+   "dimension": "资料分析_材料形式（组数）",
+   "category": "纯文字",
+   "count": 0,
+   "real_range": [
+    1,
+    2
+   ],
+   "real_mean": 1.33,
+   "delta": -1,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "组",
+   "items": [],
+   "severity_score": 1.33
+  },
+  {
+   "mock": "M01",
+   "section": "资料分析",
+   "dimension": "资料分析_设问指标",
+   "category": "“有几个/几种/几项”计数式设问",
+   "count": 3,
+   "real_range": [
+    0,
+    1
+   ],
+   "real_mean": 0.33,
+   "delta": 2,
+   "kind": "偏多",
+   "severity": "明显",
+   "unit": "题",
+   "items": [
+    74,
+    77,
+    79
+   ],
+   "severity_score": 1.2
+  },
+  {
+   "mock": "M01",
+   "section": "1—15题",
+   "dimension": "1—15题_合并指标",
+   "category": "依次对应/归类/时间排序题",
+   "count": 2,
+   "real_range": [
+    0,
+    0
+   ],
+   "real_mean": 0.0,
+   "delta": 2,
+   "kind": "偏多",
+   "severity": "明显",
+   "unit": "题",
+   "items": [
+    12,
+    13
+   ],
+   "severity_score": 1.2
+  },
+  {
+   "mock": "M01",
+   "section": "资料分析",
+   "dimension": "资料分析_考点",
+   "category": "现期量·简单计算",
+   "count": 0,
+   "real_range": [
+    1,
+    2
+   ],
+   "real_mean": 1.33,
+   "delta": -1,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "题",
+   "items": [],
+   "suggest": "可从偏多类别调换：基期量72、76、78；平均数79、88、89",
+   "note": "属最易题，边界较软（月均差、和差类可归此类），影响小",
+   "severity_score": 0.67
+  },
+  {
+   "mock": "M02",
+   "section": "1—15题",
+   "dimension": "1—15题_合并指标",
+   "category": "依次对应/归类/时间排序题",
+   "count": 5,
+   "real_range": [
+    0,
+    0
+   ],
+   "real_mean": 0.0,
+   "delta": 5,
+   "kind": "偏多",
+   "severity": "明显",
+   "unit": "题",
+   "items": [
+    6,
+    8,
+    10,
+    14,
+    15
+   ],
+   "severity_score": 3.0
+  },
+  {
+   "mock": "M02",
+   "section": "政治理论",
+   "dimension": "政治理论_内容",
+   "category": "马克思主义政治经济学",
+   "count": 3,
+   "real_range": [
+    0,
+    0
+   ],
+   "real_mean": 0.0,
+   "delta": 3,
+   "kind": "偏多",
+   "severity": "明显",
+   "unit": "题",
+   "items": [
+    2,
+    4,
+    8
+   ],
+   "severity_score": 3.0
+  },
+  {
+   "mock": "M02",
+   "section": "常识",
+   "dimension": "常识_内容",
+   "category": "（标记）时政锚定",
+   "count": 1,
+   "real_range": [
+    4,
+    4
+   ],
+   "real_mean": 4.0,
+   "delta": -3,
+   "kind": "偏少",
+   "severity": "明显",
+   "unit": "题",
+   "items": [
+    12
+   ],
+   "suggest": "可从偏多类别调换：历史与人文13、15",
+   "note": "本套时政题集中在政治部分（第1、5、9题全会公报，第6题广东2026方案），1—15合计5题在真题范围内",
+   "severity_score": 3.0
+  },
+  {
+   "mock": "M02",
+   "section": "常识",
+   "dimension": "常识_内容",
+   "category": "经济",
+   "count": 0,
+   "real_range": [
+    2,
+    3
+   ],
+   "real_mean": 2.5,
+   "delta": -2,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "题",
+   "items": [],
+   "suggest": "可从偏多类别调换：历史与人文13、15",
+   "severity_score": 2.5
+  },
+  {
+   "mock": "M02",
+   "section": "资料分析",
+   "dimension": "资料分析_考点",
+   "category": "倍数",
+   "count": 3,
+   "real_range": [
+    0,
+    1
+   ],
+   "real_mean": 0.33,
+   "delta": 2,
+   "kind": "偏多",
+   "severity": "明显",
+   "unit": "题",
+   "items": [
+    78,
+    83,
+    89
+   ],
+   "severity_score": 2.0
+  },
+  {
+   "mock": "M02",
+   "section": "常识",
+   "dimension": "常识_内容",
+   "category": "历史与人文",
+   "count": 2,
+   "real_range": [
+    0,
+    0
+   ],
+   "real_mean": 0.0,
+   "delta": 2,
+   "kind": "偏多",
+   "severity": "明显",
+   "unit": "题",
+   "items": [
+    13,
+    15
+   ],
+   "severity_score": 2.0
+  },
+  {
+   "mock": "M02",
+   "section": "资料分析",
+   "dimension": "资料分析_材料形式（组数）",
+   "category": "（合计）含统计图的组",
+   "count": 0,
+   "real_range": [
+    1,
+    3
+   ],
+   "real_mean": 2.0,
+   "delta": -1,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "组",
+   "items": [],
+   "note": "模拟卷资料图表只有转写表格，打印版一律印成表格；第2、3组源卷为统计图（题名“图1/图2”）",
+   "severity_score": 2.0
+  },
+  {
+   "mock": "M02",
+   "section": "1—15题",
+   "dimension": "1—15题_合并指标",
+   "category": "古语名句匹配题",
+   "count": 0,
+   "real_range": [
+    1,
+    2
+   ],
+   "real_mean": 1.33,
+   "delta": -1,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "题",
+   "items": [],
+   "suggest": "可从偏多类别调换：马克思主义政治经济学2、4、8",
+   "severity_score": 1.33
+  },
+  {
+   "mock": "M02",
+   "section": "1—15题",
+   "dimension": "1—15题_合并指标",
+   "category": "“六个必须坚持”/立场观点方法题",
+   "count": 0,
+   "real_range": [
+    1,
+    2
+   ],
+   "real_mean": 1.33,
+   "delta": -1,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "题",
+   "items": [],
+   "suggest": "可从偏多类别调换：马克思主义政治经济学2、4、8",
+   "severity_score": 1.33
+  },
+  {
+   "mock": "M02",
+   "section": "资料分析",
+   "dimension": "资料分析_考点",
+   "category": "材料理解（非计算）",
+   "count": 1,
+   "real_range": [
+    2,
+    5
+   ],
+   "real_mean": 3.33,
+   "delta": -1,
+   "kind": "偏少",
+   "severity": "轻微",
+   "unit": "题",
+   "items": [
+    71
+   ],
+   "suggest": "可从偏多类别调换：倍数78、83、89；平均数76、86；图形选项题77、85",
+   "severity_score": 1.0
+  },
+  {
+   "mock": "M02",
+   "section": "资料分析",
+   "dimension": "资料分析_材料形式（组数）",
+   "category": "（合计）含表格的组",
+   "count": 3,
+   "real_range": [
+    1,
+    2
+   ],
+   "real_mean": 1.33,
+   "delta": 1,
+   "kind": "偏多",
+   "severity": "轻微",
+   "unit": "组",
+   "items": [
+    2,
+    3,
+    4
+   ],
+   "note": "其中纯表格2组（真题纯表格至多1组）",
+   "severity_score": 1.0
+  },
+  {
+   "mock": "M02",
+   "section": "资料分析",
+   "dimension": "资料分析_考点",
+   "category": "平均数",
+   "count": 2,
+   "real_range": [
+    0,
+    1
+   ],
+   "real_mean": 0.67,
+   "delta": 1,
+   "kind": "偏多",
+   "severity": "轻微",
+   "unit": "题",
+   "items": [
+    76,
+    86
+   ],
+   "severity_score": 1.0
+  },
+  {
+   "mock": "M02",
+   "section": "资料分析",
+   "dimension": "资料分析_考点",
+   "category": "图形选项题",
+   "count": 2,
+   "real_range": [
+    0,
+    1
+   ],
+   "real_mean": 0.67,
+   "delta": 1,
+   "kind": "偏多",
+   "severity": "轻微",
+   "unit": "题",
+   "items": [
+    77,
+    85
+   ],
+   "severity_score": 1.0
+  },
+  {
+   "mock": "M02",
+   "section": "政治理论",
+   "dimension": "政治理论_内容",
+   "category": "马克思主义哲学",
+   "count": 1,
+   "real_range": [
+    2,
+    2
+   ],
+   "real_mean": 2.0,
+   "delta": -1,
+   "kind": "偏少",
+   "severity": "轻微",
+   "unit": "题",
+   "items": [
+    7
+   ],
+   "suggest": "可从偏多类别调换：马克思主义政治经济学2、4、8",
+   "severity_score": 1.0
+  },
+  {
+   "mock": "M02",
+   "section": "资料分析",
+   "dimension": "资料分析_材料形式（组数）",
+   "category": "广东/G省主题材料",
+   "count": 1,
+   "real_range": [
+    2,
+    2
+   ],
+   "real_mean": 2.0,
+   "delta": -1,
+   "kind": "偏少",
+   "severity": "轻微",
+   "unit": "组",
+   "items": [
+    1
+   ],
+   "severity_score": 1.0
+  },
+  {
+   "mock": "M02",
+   "section": "资料分析",
+   "dimension": "资料分析_考点",
+   "category": "比较排序",
+   "count": 2,
+   "real_range": [
+    3,
+    3
+   ],
+   "real_mean": 3.0,
+   "delta": -1,
+   "kind": "偏少",
+   "severity": "轻微",
+   "unit": "题",
+   "items": [
+    81,
+    87
+   ],
+   "suggest": "可从偏多类别调换：倍数78、83、89；平均数76、86；图形选项题77、85",
+   "severity_score": 1.0
+  },
+  {
+   "mock": "M02",
+   "section": "资料分析",
+   "dimension": "资料分析_设问指标",
+   "category": "单项计算题（除综合判断、材料理解、图形选项外）",
+   "count": 14,
+   "real_range": [
+    12,
+    13
+   ],
+   "real_mean": 12.67,
+   "delta": 1,
+   "kind": "偏多",
+   "severity": "轻微",
+   "unit": "题",
+   "items": [
+    72,
+    73,
+    74,
+    76,
+    78,
+    79,
+    81,
+    82,
+    83,
+    84,
+    86,
+    87,
+    88,
+    89
+   ],
+   "severity_score": 0.6
+  },
+  {
+   "mock": "M02",
+   "section": "1—15题",
+   "dimension": "1—15题_合并指标",
+   "category": "“某地/某企业”情境案例题（政治部分）",
+   "count": 1,
+   "real_range": [
+    0,
+    0
+   ],
+   "real_mean": 0.0,
+   "delta": 1,
+   "kind": "偏多",
+   "severity": "轻微",
+   "unit": "题",
+   "items": [
+    7
+   ],
+   "severity_score": 0.6
+  },
+  {
+   "mock": "M03",
+   "section": "常识",
+   "dimension": "常识_内容",
+   "category": "（标记）时政锚定",
+   "count": 0,
+   "real_range": [
+    4,
+    4
+   ],
+   "real_mean": 4.0,
+   "delta": -4,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "题",
+   "items": [],
+   "suggest": "可从偏多类别调换：历史与人文13、15",
+   "severity_score": 4.0
+  },
+  {
+   "mock": "M03",
+   "section": "1—15题",
+   "dimension": "1—15题_合并指标",
+   "category": "依次对应/归类/时间排序题",
+   "count": 6,
+   "real_range": [
+    0,
+    0
+   ],
+   "real_mean": 0.0,
+   "delta": 6,
+   "kind": "偏多",
+   "severity": "明显",
+   "unit": "题",
+   "items": [
+    6,
+    9,
+    10,
+    12,
+    13,
+    15
+   ],
+   "severity_score": 3.6
+  },
+  {
+   "mock": "M03",
+   "section": "常识",
+   "dimension": "常识_内容",
+   "category": "经济",
+   "count": 0,
+   "real_range": [
+    2,
+    3
+   ],
+   "real_mean": 2.5,
+   "delta": -2,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "题",
+   "items": [],
+   "suggest": "可从偏多类别调换：历史与人文13、15",
+   "severity_score": 2.5
+  },
+  {
+   "mock": "M03",
+   "section": "资料分析",
+   "dimension": "资料分析_考点",
+   "category": "平均数",
+   "count": 3,
+   "real_range": [
+    0,
+    1
+   ],
+   "real_mean": 0.67,
+   "delta": 2,
+   "kind": "偏多",
+   "severity": "明显",
+   "unit": "题",
+   "items": [
+    79,
+    84,
+    89
+   ],
+   "severity_score": 2.0
+  },
+  {
+   "mock": "M03",
+   "section": "常识",
+   "dimension": "常识_内容",
+   "category": "历史与人文",
+   "count": 2,
+   "real_range": [
+    0,
+    0
+   ],
+   "real_mean": 0.0,
+   "delta": 2,
+   "kind": "偏多",
+   "severity": "明显",
+   "unit": "题",
+   "items": [
+    13,
+    15
+   ],
+   "severity_score": 2.0
+  },
+  {
+   "mock": "M03",
+   "section": "资料分析",
+   "dimension": "资料分析_材料形式（组数）",
+   "category": "（合计）含统计图的组",
+   "count": 0,
+   "real_range": [
+    1,
+    3
+   ],
+   "real_mean": 2.0,
+   "delta": -1,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "组",
+   "items": [],
+   "note": "模拟卷资料图表只有转写表格，打印版一律印成表格",
+   "severity_score": 2.0
+  },
+  {
+   "mock": "M03",
+   "section": "政治理论",
+   "dimension": "政治理论_内容",
+   "category": "党史与党建",
+   "count": 0,
+   "real_range": [
+    1,
+    2
+   ],
+   "real_mean": 1.67,
+   "delta": -1,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "题",
+   "items": [],
+   "suggest": "可从偏多类别调换：马克思主义哲学4、7、8；马克思主义政治经济学2",
+   "note": "本套常识第13题为党史题，内容在、题位和形式（常识单选、排序/对应）与真题（政治多选或单选）不同",
+   "severity_score": 1.67
+  },
+  {
+   "mock": "M03",
+   "section": "资料分析",
+   "dimension": "资料分析_考点",
+   "category": "增长量",
+   "count": 0,
+   "real_range": [
+    1,
+    3
+   ],
+   "real_mean": 1.67,
+   "delta": -1,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "题",
+   "items": [],
+   "suggest": "可从偏多类别调换：平均数79、84、89；图形选项题85、88",
+   "severity_score": 1.67
+  },
+  {
+   "mock": "M03",
+   "section": "1—15题",
+   "dimension": "1—15题_合并指标",
+   "category": "古语名句匹配题",
+   "count": 0,
+   "real_range": [
+    1,
+    2
+   ],
+   "real_mean": 1.33,
+   "delta": -1,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "题",
+   "items": [],
+   "suggest": "可从偏多类别调换：马克思主义哲学4、7、8；马克思主义政治经济学2",
+   "severity_score": 1.33
+  },
+  {
+   "mock": "M03",
+   "section": "1—15题",
+   "dimension": "1—15题_合并指标",
+   "category": "“六个必须坚持”/立场观点方法题",
+   "count": 0,
+   "real_range": [
+    1,
+    2
+   ],
+   "real_mean": 1.33,
+   "delta": -1,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "题",
+   "items": [],
+   "suggest": "可从偏多类别调换：马克思主义哲学4、7、8；马克思主义政治经济学2",
+   "severity_score": 1.33
+  },
+  {
+   "mock": "M03",
+   "section": "1—15题",
+   "dimension": "1—15题_合并指标",
+   "category": "“某地/某企业”情境案例题（政治部分）",
+   "count": 2,
+   "real_range": [
+    0,
+    0
+   ],
+   "real_mean": 0.0,
+   "delta": 2,
+   "kind": "偏多",
+   "severity": "明显",
+   "unit": "题",
+   "items": [
+    5,
+    7
+   ],
+   "severity_score": 1.2
+  },
+  {
+   "mock": "M03",
+   "section": "资料分析",
+   "dimension": "资料分析_考点",
+   "category": "现期量·简单计算",
+   "count": 0,
+   "real_range": [
+    1,
+    2
+   ],
+   "real_mean": 1.33,
+   "delta": -1,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "题",
+   "items": [],
+   "suggest": "可从偏多类别调换：平均数79、84、89；图形选项题85、88",
+   "note": "属最易题，边界较软（月均差、和差类可归此类），影响小",
+   "severity_score": 0.67
+  },
+  {
+   "mock": "M03",
+   "section": "资料分析",
+   "dimension": "资料分析_材料形式（组数）",
+   "category": "（合计）含表格的组",
+   "count": 3,
+   "real_range": [
+    1,
+    2
+   ],
+   "real_mean": 1.33,
+   "delta": 1,
+   "kind": "偏多",
+   "severity": "轻微",
+   "unit": "组",
+   "items": [
+    2,
+    3,
+    4
+   ],
+   "note": "其中纯表格2组（真题纯表格至多1组）",
+   "severity_score": 1.0
+  },
+  {
+   "mock": "M03",
+   "section": "资料分析",
+   "dimension": "资料分析_考点",
+   "category": "图形选项题",
+   "count": 2,
+   "real_range": [
+    0,
+    1
+   ],
+   "real_mean": 0.67,
+   "delta": 1,
+   "kind": "偏多",
+   "severity": "轻微",
+   "unit": "题",
+   "items": [
+    85,
+    88
+   ],
+   "severity_score": 1.0
+  },
+  {
+   "mock": "M03",
+   "section": "政治理论",
+   "dimension": "政治理论_内容",
+   "category": "马克思主义哲学",
+   "count": 3,
+   "real_range": [
+    2,
+    2
+   ],
+   "real_mean": 2.0,
+   "delta": 1,
+   "kind": "偏多",
+   "severity": "轻微",
+   "unit": "题",
+   "items": [
+    4,
+    7,
+    8
+   ],
+   "severity_score": 1.0
+  },
+  {
+   "mock": "M03",
+   "section": "政治理论",
+   "dimension": "政治理论_内容",
+   "category": "马克思主义政治经济学",
+   "count": 1,
+   "real_range": [
+    0,
+    0
+   ],
+   "real_mean": 0.0,
+   "delta": 1,
+   "kind": "偏多",
+   "severity": "轻微",
+   "unit": "题",
+   "items": [
+    2
+   ],
+   "severity_score": 1.0
+  },
+  {
+   "mock": "M03",
+   "section": "资料分析",
+   "dimension": "资料分析_材料形式（组数）",
+   "category": "广东/G省主题材料",
+   "count": 1,
+   "real_range": [
+    2,
+    2
+   ],
+   "real_mean": 2.0,
+   "delta": -1,
+   "kind": "偏少",
+   "severity": "轻微",
+   "unit": "组",
+   "items": [
+    1
+   ],
+   "severity_score": 1.0
+  },
+  {
+   "mock": "M03",
+   "section": "资料分析",
+   "dimension": "资料分析_考点",
+   "category": "比较排序",
+   "count": 2,
+   "real_range": [
+    3,
+    3
+   ],
+   "real_mean": 3.0,
+   "delta": -1,
+   "kind": "偏少",
+   "severity": "轻微",
+   "unit": "题",
+   "items": [
+    77,
+    86
+   ],
+   "suggest": "可从偏多类别调换：平均数79、84、89；图形选项题85、88",
+   "severity_score": 1.0
+  },
+  {
+   "mock": "M03",
+   "section": "资料分析",
+   "dimension": "资料分析_设问指标",
+   "category": "“有几个/几种/几项”计数式设问",
+   "count": 2,
+   "real_range": [
+    0,
+    1
+   ],
+   "real_mean": 0.33,
+   "delta": 1,
+   "kind": "偏多",
+   "severity": "轻微",
+   "unit": "题",
+   "items": [
+    78,
+    80
+   ],
+   "severity_score": 0.6
+  },
+  {
+   "mock": "M04",
+   "section": "资料分析",
+   "dimension": "资料分析_考点",
+   "category": "平均数",
+   "count": 6,
+   "real_range": [
+    0,
+    1
+   ],
+   "real_mean": 0.67,
+   "delta": 5,
+   "kind": "偏多",
+   "severity": "明显",
+   "unit": "题",
+   "items": [
+    74,
+    81,
+    82,
+    84,
+    86,
+    87
+   ],
+   "severity_score": 5.0
+  },
+  {
+   "mock": "M04",
+   "section": "常识",
+   "dimension": "常识_内容",
+   "category": "（标记）时政锚定",
+   "count": 0,
+   "real_range": [
+    4,
+    4
+   ],
+   "real_mean": 4.0,
+   "delta": -4,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "题",
+   "items": [],
+   "suggest": "可从偏多类别调换：历史与人文13、15",
+   "severity_score": 4.0
+  },
+  {
+   "mock": "M04",
+   "section": "1—15题",
+   "dimension": "1—15题_合并指标",
+   "category": "依次对应/归类/时间排序题",
+   "count": 5,
+   "real_range": [
+    0,
+    0
+   ],
+   "real_mean": 0.0,
+   "delta": 5,
+   "kind": "偏多",
+   "severity": "明显",
+   "unit": "题",
+   "items": [
+    7,
+    9,
+    12,
+    13,
+    15
+   ],
+   "severity_score": 3.0
+  },
+  {
+   "mock": "M04",
+   "section": "资料分析",
+   "dimension": "资料分析_考点",
+   "category": "比较排序",
+   "count": 0,
+   "real_range": [
+    3,
+    3
+   ],
+   "real_mean": 3.0,
+   "delta": -3,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "题",
+   "items": [],
+   "suggest": "可从偏多类别调换：平均数74、81、82、84、86、87",
+   "severity_score": 3.0
+  },
+  {
+   "mock": "M04",
+   "section": "常识",
+   "dimension": "常识_内容",
+   "category": "经济",
+   "count": 0,
+   "real_range": [
+    2,
+    3
+   ],
+   "real_mean": 2.5,
+   "delta": -2,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "题",
+   "items": [],
+   "suggest": "可从偏多类别调换：历史与人文13、15",
+   "severity_score": 2.5
+  },
+  {
+   "mock": "M04",
+   "section": "1—15题",
+   "dimension": "1—15题_合并指标",
+   "category": "“某地/某企业”情境案例题（政治部分）",
+   "count": 4,
+   "real_range": [
+    0,
+    0
+   ],
+   "real_mean": 0.0,
+   "delta": 4,
+   "kind": "偏多",
+   "severity": "明显",
+   "unit": "题",
+   "items": [
+    2,
+    5,
+    6,
+    8
+   ],
+   "severity_score": 2.4
+  },
+  {
+   "mock": "M04",
+   "section": "政治理论",
+   "dimension": "政治理论_内容",
+   "category": "习近平新时代中国特色社会主义思想与党的创新理论",
+   "count": 1,
+   "real_range": [
+    3,
+    5
+   ],
+   "real_mean": 4.33,
+   "delta": -2,
+   "kind": "偏少",
+   "severity": "明显",
+   "unit": "题",
+   "items": [
+    7
+   ],
+   "suggest": "可从偏多类别调换：马克思主义政治经济学1、3；经济社会政策与时政5、6、10",
+   "note": "习思想与政策时政边界较软；三者合计本套4题，真题2025为5、2026为6（2024按13题口径为9）",
+   "severity_score": 2.0
+  },
+  {
+   "mock": "M04",
+   "section": "政治理论",
+   "dimension": "政治理论_内容",
+   "category": "马克思主义政治经济学",
+   "count": 2,
+   "real_range": [
+    0,
+    0
+   ],
+   "real_mean": 0.0,
+   "delta": 2,
+   "kind": "偏多",
+   "severity": "明显",
+   "unit": "题",
+   "items": [
+    1,
+    3
+   ],
+   "severity_score": 2.0
+  },
+  {
+   "mock": "M04",
+   "section": "常识",
+   "dimension": "常识_内容",
+   "category": "历史与人文",
+   "count": 2,
+   "real_range": [
+    0,
+    0
+   ],
+   "real_mean": 0.0,
+   "delta": 2,
+   "kind": "偏多",
+   "severity": "明显",
+   "unit": "题",
+   "items": [
+    13,
+    15
+   ],
+   "severity_score": 2.0
+  },
+  {
+   "mock": "M04",
+   "section": "资料分析",
+   "dimension": "资料分析_材料形式（组数）",
+   "category": "（合计）含统计图的组",
+   "count": 0,
+   "real_range": [
+    1,
+    3
+   ],
+   "real_mean": 2.0,
+   "delta": -1,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "组",
+   "items": [],
+   "note": "模拟卷资料图表只有转写表格，打印版一律印成表格",
+   "severity_score": 2.0
+  },
+  {
+   "mock": "M04",
+   "section": "1—15题",
+   "dimension": "1—15题_合并指标",
+   "category": "古语名句匹配题",
+   "count": 0,
+   "real_range": [
+    1,
+    2
+   ],
+   "real_mean": 1.33,
+   "delta": -1,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "题",
+   "items": [],
+   "suggest": "可从偏多类别调换：马克思主义政治经济学1、3；经济社会政策与时政5、6、10",
+   "severity_score": 1.33
+  },
+  {
+   "mock": "M04",
+   "section": "1—15题",
+   "dimension": "1—15题_合并指标",
+   "category": "“六个必须坚持”/立场观点方法题",
+   "count": 0,
+   "real_range": [
+    1,
+    2
+   ],
+   "real_mean": 1.33,
+   "delta": -1,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "题",
+   "items": [],
+   "suggest": "可从偏多类别调换：马克思主义政治经济学1、3；经济社会政策与时政5、6、10",
+   "severity_score": 1.33
+  },
+  {
+   "mock": "M04",
+   "section": "资料分析",
+   "dimension": "资料分析_设问指标",
+   "category": "“有几个/几种/几项”计数式设问",
+   "count": 3,
+   "real_range": [
+    0,
+    1
+   ],
+   "real_mean": 0.33,
+   "delta": 2,
+   "kind": "偏多",
+   "severity": "明显",
+   "unit": "题",
+   "items": [
+    78,
+    80,
+    84
+   ],
+   "severity_score": 1.2
+  },
+  {
+   "mock": "M04",
+   "section": "资料分析",
+   "dimension": "资料分析_考点",
+   "category": "现期量·简单计算",
+   "count": 0,
+   "real_range": [
+    1,
+    2
+   ],
+   "real_mean": 1.33,
+   "delta": -1,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "题",
+   "items": [],
+   "suggest": "可从偏多类别调换：平均数74、81、82、84、86、87",
+   "note": "属最易题，边界较软（月均差、和差类可归此类），影响小",
+   "severity_score": 0.67
+  },
+  {
+   "mock": "M04",
+   "section": "政治理论",
+   "dimension": "政治理论_内容",
+   "category": "经济社会政策与时政",
+   "count": 3,
+   "real_range": [
+    0,
+    2
+   ],
+   "real_mean": 1.33,
+   "delta": 1,
+   "kind": "偏多",
+   "severity": "轻微",
+   "unit": "题",
+   "items": [
+    5,
+    6,
+    10
+   ],
+   "severity_score": 1.0
+  },
+  {
+   "mock": "M04",
+   "section": "资料分析",
+   "dimension": "资料分析_材料形式（组数）",
+   "category": "（合计）含表格的组",
+   "count": 3,
+   "real_range": [
+    1,
+    2
+   ],
+   "real_mean": 1.33,
+   "delta": 1,
+   "kind": "偏多",
+   "severity": "轻微",
+   "unit": "组",
+   "items": [
+    2,
+    3,
+    4
+   ],
+   "note": "其中纯表格1组（真题纯表格至多1组）",
+   "severity_score": 1.0
+  },
+  {
+   "mock": "M04",
+   "section": "资料分析",
+   "dimension": "资料分析_材料形式（组数）",
+   "category": "广东/G省主题材料",
+   "count": 1,
+   "real_range": [
+    2,
+    2
+   ],
+   "real_mean": 2.0,
+   "delta": -1,
+   "kind": "偏少",
+   "severity": "轻微",
+   "unit": "组",
+   "items": [
+    1
+   ],
+   "severity_score": 1.0
+  },
+  {
+   "mock": "M04",
+   "section": "资料分析",
+   "dimension": "资料分析_设问指标",
+   "category": "单项计算题（除综合判断、材料理解、图形选项外）",
+   "count": 14,
+   "real_range": [
+    12,
+    13
+   ],
+   "real_mean": 12.67,
+   "delta": 1,
+   "kind": "偏多",
+   "severity": "轻微",
+   "unit": "题",
+   "items": [
+    73,
+    74,
+    76,
+    77,
+    78,
+    79,
+    81,
+    82,
+    83,
+    84,
+    86,
+    87,
+    88,
+    89
+   ],
+   "severity_score": 0.6
+  },
+  {
+   "mock": "M05",
+   "section": "政治理论",
+   "dimension": "政治理论_内容",
+   "category": "习近平新时代中国特色社会主义思想与党的创新理论",
+   "count": 0,
+   "real_range": [
+    3,
+    5
+   ],
+   "real_mean": 4.33,
+   "delta": -3,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "题",
+   "items": [],
+   "suggest": "可从偏多类别调换：马克思主义哲学1、2、5、9；马克思主义政治经济学3、7",
+   "note": "习思想与政策时政边界较软；三者合计本套1题，真题2025为5、2026为6（2024按13题口径为9）",
+   "severity_score": 4.33
+  },
+  {
+   "mock": "M05",
+   "section": "资料分析",
+   "dimension": "资料分析_考点",
+   "category": "平均数",
+   "count": 5,
+   "real_range": [
+    0,
+    1
+   ],
+   "real_mean": 0.67,
+   "delta": 4,
+   "kind": "偏多",
+   "severity": "明显",
+   "unit": "题",
+   "items": [
+    71,
+    73,
+    78,
+    86,
+    88
+   ],
+   "severity_score": 4.0
+  },
+  {
+   "mock": "M05",
+   "section": "资料分析",
+   "dimension": "资料分析_考点",
+   "category": "材料理解（非计算）",
+   "count": 0,
+   "real_range": [
+    2,
+    5
+   ],
+   "real_mean": 3.33,
+   "delta": -2,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "题",
+   "items": [],
+   "suggest": "可从偏多类别调换：基期量76、83、84、87；倍数72、79；平均数71、73、78、86、88",
+   "severity_score": 3.33
+  },
+  {
+   "mock": "M05",
+   "section": "资料分析",
+   "dimension": "资料分析_考点",
+   "category": "基期量",
+   "count": 4,
+   "real_range": [
+    0,
+    1
+   ],
+   "real_mean": 0.33,
+   "delta": 3,
+   "kind": "偏多",
+   "severity": "明显",
+   "unit": "题",
+   "items": [
+    76,
+    83,
+    84,
+    87
+   ],
+   "severity_score": 3.0
+  },
+  {
+   "mock": "M05",
+   "section": "常识",
+   "dimension": "常识_内容",
+   "category": "经济",
+   "count": 0,
+   "real_range": [
+    2,
+    3
+   ],
+   "real_mean": 2.5,
+   "delta": -2,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "题",
+   "items": [],
+   "suggest": "可从偏多类别调换：法律11、14；历史与人文15",
+   "note": "第13题广东“五外联动”内容属经济，按广东相关计；即便改计经济也只1题",
+   "severity_score": 2.5
+  },
+  {
+   "mock": "M05",
+   "section": "资料分析",
+   "dimension": "资料分析_材料形式（组数）",
+   "category": "（合计）含表格的组",
+   "count": 4,
+   "real_range": [
+    1,
+    2
+   ],
+   "real_mean": 1.33,
+   "delta": 2,
+   "kind": "偏多",
+   "severity": "明显",
+   "unit": "组",
+   "items": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "note": "其中纯表格1组（真题纯表格至多1组）",
+   "severity_score": 2.0
+  },
+  {
+   "mock": "M05",
+   "section": "政治理论",
+   "dimension": "政治理论_内容",
+   "category": "马克思主义哲学",
+   "count": 4,
+   "real_range": [
+    2,
+    2
+   ],
+   "real_mean": 2.0,
+   "delta": 2,
+   "kind": "偏多",
+   "severity": "明显",
+   "unit": "题",
+   "items": [
+    1,
+    2,
+    5,
+    9
+   ],
+   "severity_score": 2.0
+  },
+  {
+   "mock": "M05",
+   "section": "政治理论",
+   "dimension": "政治理论_内容",
+   "category": "马克思主义政治经济学",
+   "count": 2,
+   "real_range": [
+    0,
+    0
+   ],
+   "real_mean": 0.0,
+   "delta": 2,
+   "kind": "偏多",
+   "severity": "明显",
+   "unit": "题",
+   "items": [
+    3,
+    7
+   ],
+   "severity_score": 2.0
+  },
+  {
+   "mock": "M05",
+   "section": "常识",
+   "dimension": "常识_内容",
+   "category": "（标记）时政锚定",
+   "count": 2,
+   "real_range": [
+    4,
+    4
+   ],
+   "real_mean": 4.0,
+   "delta": -2,
+   "kind": "偏少",
+   "severity": "明显",
+   "unit": "题",
+   "items": [
+    13,
+    14
+   ],
+   "suggest": "可从偏多类别调换：法律11；历史与人文15",
+   "severity_score": 2.0
+  },
+  {
+   "mock": "M05",
+   "section": "资料分析",
+   "dimension": "资料分析_材料形式（组数）",
+   "category": "（合计）含统计图的组",
+   "count": 0,
+   "real_range": [
+    1,
+    3
+   ],
+   "real_mean": 2.0,
+   "delta": -1,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "组",
+   "items": [],
+   "note": "模拟卷资料图表只有转写表格，打印版一律印成表格",
+   "severity_score": 2.0
+  },
+  {
+   "mock": "M05",
+   "section": "资料分析",
+   "dimension": "资料分析_材料形式（组数）",
+   "category": "广东/G省主题材料",
+   "count": 0,
+   "real_range": [
+    2,
+    2
+   ],
+   "real_mean": 2.0,
+   "delta": -2,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "组",
+   "items": [],
+   "severity_score": 2.0
+  },
+  {
+   "mock": "M05",
+   "section": "资料分析",
+   "dimension": "资料分析_考点",
+   "category": "比较排序",
+   "count": 1,
+   "real_range": [
+    3,
+    3
+   ],
+   "real_mean": 3.0,
+   "delta": -2,
+   "kind": "偏少",
+   "severity": "明显",
+   "unit": "题",
+   "items": [
+    77
+   ],
+   "suggest": "可从偏多类别调换：基期量76、83、84、87；倍数72、79；平均数71、73、78、86、88",
+   "severity_score": 2.0
+  },
+  {
+   "mock": "M05",
+   "section": "资料分析",
+   "dimension": "资料分析_设问指标",
+   "category": "单项计算题（除综合判断、材料理解、图形选项外）",
+   "count": 16,
+   "real_range": [
+    12,
+    13
+   ],
+   "real_mean": 12.67,
+   "delta": 3,
+   "kind": "偏多",
+   "severity": "明显",
+   "unit": "题",
+   "items": [
+    71,
+    72,
+    73,
+    74,
+    76,
+    77,
+    78,
+    79,
+    81,
+    82,
+    83,
+    84,
+    86,
+    87,
+    88,
+    89
+   ],
+   "severity_score": 1.8
+  },
+  {
+   "mock": "M05",
+   "section": "1—15题",
+   "dimension": "1—15题_合并指标",
+   "category": "依次对应/归类/时间排序题",
+   "count": 3,
+   "real_range": [
+    0,
+    0
+   ],
+   "real_mean": 0.0,
+   "delta": 3,
+   "kind": "偏多",
+   "severity": "明显",
+   "unit": "题",
+   "items": [
+    11,
+    13,
+    15
+   ],
+   "severity_score": 1.8
+  },
+  {
+   "mock": "M05",
+   "section": "资料分析",
+   "dimension": "资料分析_考点",
+   "category": "增长量",
+   "count": 0,
+   "real_range": [
+    1,
+    3
+   ],
+   "real_mean": 1.67,
+   "delta": -1,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "题",
+   "items": [],
+   "suggest": "可从偏多类别调换：基期量76、83、84、87；倍数72、79；平均数71、73、78、86、88",
+   "severity_score": 1.67
+  },
+  {
+   "mock": "M05",
+   "section": "1—15题",
+   "dimension": "1—15题_合并指标",
+   "category": "“六个必须坚持”/立场观点方法题",
+   "count": 0,
+   "real_range": [
+    1,
+    2
+   ],
+   "real_mean": 1.33,
+   "delta": -1,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "题",
+   "items": [],
+   "suggest": "可从偏多类别调换：马克思主义哲学1、2、5、9；马克思主义政治经济学3、7",
+   "severity_score": 1.33
+  },
+  {
+   "mock": "M05",
+   "section": "资料分析",
+   "dimension": "资料分析_材料形式（组数）",
+   "category": "纯文字",
+   "count": 0,
+   "real_range": [
+    1,
+    2
+   ],
+   "real_mean": 1.33,
+   "delta": -1,
+   "kind": "缺失·真题每年都有",
+   "severity": "明显",
+   "unit": "组",
+   "items": [],
+   "severity_score": 1.33
+  },
+  {
+   "mock": "M05",
+   "section": "1—15题",
+   "dimension": "1—15题_合并指标",
+   "category": "“某地/某企业”情境案例题（政治部分）",
+   "count": 2,
+   "real_range": [
+    0,
+    0
+   ],
+   "real_mean": 0.0,
+   "delta": 2,
+   "kind": "偏多",
+   "severity": "明显",
+   "unit": "题",
+   "items": [
+    4,
+    6
+   ],
+   "severity_score": 1.2
+  },
+  {
+   "mock": "M05",
+   "section": "资料分析",
+   "dimension": "资料分析_考点",
+   "category": "比重",
+   "count": 1,
+   "real_range": [
+    2,
+    5
+   ],
+   "real_mean": 3.67,
+   "delta": -1,
+   "kind": "偏少",
+   "severity": "轻微",
+   "unit": "题",
+   "items": [
+    89
+   ],
+   "suggest": "可从偏多类别调换：基期量76、83、84、87；倍数72、79；平均数71、73、78、86、88",
+   "severity_score": 1.0
+  },
+  {
+   "mock": "M05",
+   "section": "资料分析",
+   "dimension": "资料分析_考点",
+   "category": "倍数",
+   "count": 2,
+   "real_range": [
+    0,
+    1
+   ],
+   "real_mean": 0.33,
+   "delta": 1,
+   "kind": "偏多",
+   "severity": "轻微",
+   "unit": "题",
+   "items": [
+    72,
+    79
+   ],
+   "severity_score": 1.0
+  },
+  {
+   "mock": "M05",
+   "section": "常识",
+   "dimension": "常识_内容",
+   "category": "法律",
+   "count": 2,
+   "real_range": [
+    1,
+    1
+   ],
+   "real_mean": 1.0,
+   "delta": 1,
+   "kind": "偏多",
+   "severity": "轻微",
+   "unit": "题",
+   "items": [
+    11,
+    14
+   ],
+   "severity_score": 1.0
+  },
+  {
+   "mock": "M05",
+   "section": "常识",
+   "dimension": "常识_内容",
+   "category": "历史与人文",
+   "count": 1,
+   "real_range": [
+    0,
+    0
+   ],
+   "real_mean": 0.0,
+   "delta": 1,
+   "kind": "偏多",
+   "severity": "轻微",
+   "unit": "题",
+   "items": [
+    15
+   ],
+   "severity_score": 1.0
+  }
+ ]
+}

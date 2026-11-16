@@ -1,0 +1,5280 @@
+{
+ "meta": {
+  "title": "判断推理（图形推理46—50、逻辑判断51—65）与科学推理（66—70）题型构成对照",
+  "generated": "2026-11-16",
+  "real_papers": {
+   "GD2024": "/home/user/xing-ce1/广东/行测/2022-2026/GD2024.jsonl（网友回忆版）",
+   "GD2025": "/home/user/xing-ce1/广东/行测/2022-2026/GD2025.jsonl",
+   "GD2026": "/home/user/xing-ce1/广东/行测/2022-2026/GD2026.jsonl（网友回忆版，无答案）"
+  },
+  "mock_papers": {
+   "M01": "/home/user/xing-ce1/广东行测18套模拟/M01/题目.jsonl",
+   "M02": "/home/user/xing-ce1/广东行测18套模拟/M02/题目.jsonl",
+   "M03": "/home/user/xing-ce1/广东行测18套模拟/M03/题目.jsonl",
+   "M04": "/home/user/xing-ce1/广东行测18套模拟/M04/题目.jsonl",
+   "M05": "/home/user/xing-ce1/广东行测18套模拟/M05/题目.jsonl"
+  },
+  "reference_only": "2022—2023旧卷只作参考（真假推理：2022年两卷各1道、2023年县级卷1道；字符串：2023年两卷各1道），不计入范围",
+  "severity_rule": "明显：真题每年都有的类型本卷为0，或超出/低于三年范围≥2道；轻微：差1道（含近三年未出现的类型出现1道）",
+  "graphic_rule_sources": {
+   "GD2024": "官方解析",
+   "GD2025": "官方解析",
+   "GD2026": "自行看图判读（无答案）",
+   "M01-M05": "看图判读并对照卷内编辑解析"
+  }
+ },
+ "taxonomy": {
+  "图形推理": {
+   "规律类": [
+    "位置",
+    "样式",
+    "属性",
+    "数量",
+    "立体块元素",
+    "其他规律（字符串相同元素位置）"
+   ],
+   "空间类": [
+    "展开与折叠（含折纸剪纸）",
+    "三视图",
+    "截面",
+    "拼合（立体拼合与平面拼合合并）",
+    "空间其他（立体图形旋转辨识）"
+   ],
+   "形式（规律类）": [
+    "一组图",
+    "九宫格",
+    "分组（两段式）",
+    "字符串"
+   ]
+  },
+  "逻辑判断": {
+   "形式逻辑": [
+    "翻译推理（条件串联/逆否即可得出）",
+    "分析推理（排序、匹配、选人分组、数量比较，需分情况）",
+    "真假推理"
+   ],
+   "论证": [
+    "削弱",
+    "加强",
+    "前提假设",
+    "论证缺陷/评价"
+   ],
+   "解释": [
+    "解释"
+   ],
+   "结构比较": [
+    "推理形式/论证结构型",
+    "对话/概念错误型"
+   ],
+   "归纳结论": [
+    "归纳结论"
+   ]
+  },
+  "科学推理": {
+   "物理": [
+    "力学",
+    "电学",
+    "光热声及其他"
+   ],
+   "化学": [
+    "化学"
+   ],
+   "生物": [
+    "生物"
+   ],
+   "地理": [
+    "地理"
+   ],
+   "附加统计": [
+    "带图（含表格）",
+    "选项为图"
+   ]
+  }
+ },
+ "items": [
+  {
+   "paper": "GD2024",
+   "number": 46,
+   "part": "图形推理",
+   "major": "规律类",
+   "minor": "样式",
+   "form": "九宫格",
+   "rule_source": "官方解析（答案解析PDF）",
+   "basis": "3×3黑白方格九宫格，纵向看前两图黑白运算（黑+黑=白、黑+白=黑、白+白=白）得第三图（官方解析：样式-黑白运算）"
+  },
+  {
+   "paper": "GD2024",
+   "number": 47,
+   "part": "图形推理",
+   "major": "规律类",
+   "minor": "数量",
+   "form": "一组图",
+   "rule_source": "官方解析（答案解析PDF）",
+   "basis": "方格中两条线段，题干每图两条直线共经过8个格子（官方解析：数量规律）"
+  },
+  {
+   "paper": "GD2024",
+   "number": 48,
+   "part": "图形推理",
+   "major": "空间类",
+   "minor": "展开与折叠",
+   "form": "空间题",
+   "rule_source": "官方解析（答案解析PDF）",
+   "basis": "正方形卡片沿对角线折两次后沿虚线剪开再展开，属折纸剪纸"
+  },
+  {
+   "paper": "GD2024",
+   "number": 49,
+   "part": "图形推理",
+   "major": "空间类",
+   "minor": "三视图",
+   "form": "空间题",
+   "rule_source": "官方解析（答案解析PDF）",
+   "basis": "给定立体图形，选从任一角度都不可能看到的视图（官方解析：三视图）"
+  },
+  {
+   "paper": "GD2024",
+   "number": 50,
+   "part": "图形推理",
+   "major": "空间类",
+   "minor": "拼合",
+   "form": "空间题",
+   "rule_source": "官方解析（答案解析PDF）",
+   "basis": "立体拼合：两个相同的4块立体拼接，选不可能拼成者（官方解析：立体拼合）"
+  },
+  {
+   "paper": "GD2024",
+   "number": 51,
+   "part": "逻辑判断",
+   "major": "形式逻辑",
+   "minor": "翻译推理",
+   "basis": "“如果…就…”“只有…才…”条件串联后选可推出项（官方解析首步“翻译题干”）"
+  },
+  {
+   "paper": "GD2024",
+   "number": 52,
+   "part": "逻辑判断",
+   "major": "解释",
+   "minor": "解释",
+   "basis": "好评率较低的乙餐厅营业额反而远超甲餐厅，要求解释现象"
+  },
+  {
+   "paper": "GD2024",
+   "number": 53,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "前提假设",
+   "basis": "“需要补充的前提条件”，在拓宽投诉渠道与违法现象减少间搭桥"
+  },
+  {
+   "paper": "GD2024",
+   "number": 54,
+   "part": "逻辑判断",
+   "major": "解释",
+   "minor": "解释",
+   "basis": "通宵学习室受欢迎却4个月后因人少关闭，要求解释"
+  },
+  {
+   "paper": "GD2024",
+   "number": 55,
+   "part": "逻辑判断",
+   "major": "形式逻辑",
+   "minor": "分析推理",
+   "basis": "三组得分之和的不等式比较，推出最低者（官方解析首步“分析题干条件”）"
+  },
+  {
+   "paper": "GD2024",
+   "number": 56,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "前提假设",
+   "basis": "“属于这一推论暗含前提的是”"
+  },
+  {
+   "paper": "GD2024",
+   "number": 57,
+   "part": "逻辑判断",
+   "major": "结构比较",
+   "minor": "结构比较",
+   "struct_kind": "推理形式/论证结构型",
+   "basis": "“所犯的逻辑错误与题干最相似”（否前推否后）"
+  },
+  {
+   "paper": "GD2024",
+   "number": 58,
+   "part": "逻辑判断",
+   "major": "形式逻辑",
+   "minor": "分析推理",
+   "basis": "4人×4种乐器、每人会2种的对应匹配"
+  },
+  {
+   "paper": "GD2024",
+   "number": 59,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "削弱",
+   "basis": "“最能反驳这一结论”（为他人花钱提高幸福感）"
+  },
+  {
+   "paper": "GD2024",
+   "number": 60,
+   "part": "逻辑判断",
+   "major": "结构比较",
+   "minor": "结构比较",
+   "struct_kind": "推理形式/论证结构型",
+   "basis": "“逻辑结构与题干最为相似”（A利于B、B利于C→A利于C）"
+  },
+  {
+   "paper": "GD2024",
+   "number": 61,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "削弱",
+   "basis": "“最能质疑上述观点”（塑料水壶更不利健康）"
+  },
+  {
+   "paper": "GD2024",
+   "number": 62,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "前提假设",
+   "basis": "“需要补充的前提条件”（中药材只能来自种植和野外采集）"
+  },
+  {
+   "paper": "GD2024",
+   "number": 63,
+   "part": "逻辑判断",
+   "major": "结构比较",
+   "minor": "结构比较",
+   "struct_kind": "推理形式/论证结构型",
+   "basis": "“逻辑结构与题干最为相似”（A有益、B有益→对各方都有益）"
+  },
+  {
+   "paper": "GD2024",
+   "number": 64,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "加强",
+   "basis": "“最不能支持这一结论”（低钠盐防中风）"
+  },
+  {
+   "paper": "GD2024",
+   "number": 65,
+   "part": "逻辑判断",
+   "major": "解释",
+   "minor": "解释",
+   "basis": "“最不能解释这一现象”（网上预约后景区仍拥挤）"
+  },
+  {
+   "paper": "GD2024",
+   "number": 66,
+   "part": "科学推理",
+   "major": "化学",
+   "minor": "化学",
+   "figure": true,
+   "figure_kind": "示意图",
+   "option_figure": false,
+   "basis": "冷碟子置于烛火上方得炭黑制墨，考不完全燃烧与碳的还原性"
+  },
+  {
+   "paper": "GD2024",
+   "number": 67,
+   "part": "科学推理",
+   "major": "地理",
+   "minor": "地理",
+   "figure": true,
+   "figure_kind": "等高线地形图",
+   "option_figure": false,
+   "basis": "根据等高线地形图判断露营、耕作、河流、攀岩"
+  },
+  {
+   "paper": "GD2024",
+   "number": 68,
+   "part": "科学推理",
+   "major": "物理",
+   "minor": "力学",
+   "figure": true,
+   "figure_kind": "F-t、v-t图像",
+   "option_figure": false,
+   "basis": "物体受力移动的F-t、v-t图像，判断做功与摩擦力"
+  },
+  {
+   "paper": "GD2024",
+   "number": 69,
+   "part": "科学推理",
+   "major": "物理",
+   "minor": "电学",
+   "figure": true,
+   "figure_kind": "选项为电路图",
+   "option_figure": true,
+   "basis": "汽车灯光关闭提醒系统的电路设计"
+  },
+  {
+   "paper": "GD2024",
+   "number": 70,
+   "part": "科学推理",
+   "major": "生物",
+   "minor": "生物",
+   "figure": false,
+   "figure_kind": "无图",
+   "option_figure": false,
+   "basis": "胰岛素的成分、来源与作用"
+  },
+  {
+   "paper": "GD2025",
+   "number": 46,
+   "part": "图形推理",
+   "major": "空间类",
+   "minor": "三视图",
+   "form": "空间题",
+   "rule_source": "官方解析（答案解析PDF）",
+   "basis": "一条棱垂直于底面的四棱锥，选其俯视图（官方解析：三视图）"
+  },
+  {
+   "paper": "GD2025",
+   "number": 47,
+   "part": "图形推理",
+   "major": "规律类",
+   "minor": "样式",
+   "form": "分组",
+   "rule_source": "官方解析（答案解析PDF）",
+   "basis": "两段式：第一组图1与图2叠加保留相同部分得图3（官方解析：样式-叠加求同）"
+  },
+  {
+   "paper": "GD2025",
+   "number": 48,
+   "part": "图形推理",
+   "major": "规律类",
+   "minor": "位置",
+   "form": "分组",
+   "rule_source": "官方解析（答案解析PDF）",
+   "basis": "两段式：图1顺时针、图2逆时针各转90°后组合成图3（官方解析：位置规律）"
+  },
+  {
+   "paper": "GD2025",
+   "number": 49,
+   "part": "图形推理",
+   "major": "规律类",
+   "minor": "位置",
+   "form": "一组图",
+   "rule_source": "官方解析（答案解析PDF）",
+   "basis": "4×4方格中内圈、外圈黑块分别按顺/逆时针平移（官方解析：位置规律）"
+  },
+  {
+   "paper": "GD2025",
+   "number": 50,
+   "part": "图形推理",
+   "major": "空间类",
+   "minor": "拼合",
+   "form": "空间题",
+   "rule_source": "官方解析（答案解析PDF）",
+   "basis": "立体拼合：两个不规则立体与选项拼成正方体（官方解析：立体拼合）"
+  },
+  {
+   "paper": "GD2025",
+   "number": 51,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "前提假设",
+   "basis": "“需要补充的前提”，在合理规划任务与达芬奇机器人间搭桥"
+  },
+  {
+   "paper": "GD2025",
+   "number": 52,
+   "part": "逻辑判断",
+   "major": "解释",
+   "minor": "解释",
+   "basis": "单车涨价100%而使用人次未减少，要求解释"
+  },
+  {
+   "paper": "GD2025",
+   "number": 53,
+   "part": "逻辑判断",
+   "major": "形式逻辑",
+   "minor": "分析推理",
+   "basis": "7人中选2男2女并附一个条件句，需分情况讨论（官方解析首步“分析题干条件”；含条件句，属边界题）",
+   "boundary_note": "含条件句的选人题；按官方解析“分析题干条件、分情况”计分析推理，按内容也可算翻译推理。"
+  },
+  {
+   "paper": "GD2025",
+   "number": 54,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "前提假设",
+   "basis": "“需要补充的前提”（该贫血症由基因突变导致）"
+  },
+  {
+   "paper": "GD2025",
+   "number": 55,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "前提假设",
+   "basis": "“必需补充的前提”（体育课是增强体魄的必要途径）"
+  },
+  {
+   "paper": "GD2025",
+   "number": 56,
+   "part": "逻辑判断",
+   "major": "结构比较",
+   "minor": "结构比较",
+   "struct_kind": "推理形式/论证结构型",
+   "basis": "“推理逻辑与题干最相似”（三段论）"
+  },
+  {
+   "paper": "GD2025",
+   "number": 57,
+   "part": "逻辑判断",
+   "major": "解释",
+   "minor": "解释",
+   "basis": "运费险增加退货成本但网店仍不关闭，要求解释"
+  },
+  {
+   "paper": "GD2025",
+   "number": 58,
+   "part": "逻辑判断",
+   "major": "结构比较",
+   "minor": "结构比较",
+   "struct_kind": "推理形式/论证结构型",
+   "basis": "“推理逻辑与题干最相似”（不仅靠a更靠b→仅有a不能成）"
+  },
+  {
+   "paper": "GD2025",
+   "number": 59,
+   "part": "逻辑判断",
+   "major": "形式逻辑",
+   "minor": "分析推理",
+   "basis": "4人名次排序结合好友关系（官方解析首步“分析题干条件”）"
+  },
+  {
+   "paper": "GD2025",
+   "number": 60,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "加强",
+   "basis": "“最能支持研究者建议”"
+  },
+  {
+   "paper": "GD2025",
+   "number": 61,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "论证缺陷/评价",
+   "basis": "“上述论证的主要逻辑错误在于”"
+  },
+  {
+   "paper": "GD2025",
+   "number": 62,
+   "part": "逻辑判断",
+   "major": "结构比较",
+   "minor": "结构比较",
+   "struct_kind": "推理形式/论证结构型",
+   "basis": "“推理逻辑与题干最相似”（否后推否前）"
+  },
+  {
+   "paper": "GD2025",
+   "number": 63,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "削弱",
+   "basis": "“最能反驳上述推论”（泡沫即有害残留）"
+  },
+  {
+   "paper": "GD2025",
+   "number": 64,
+   "part": "逻辑判断",
+   "major": "形式逻辑",
+   "minor": "分析推理",
+   "basis": "景点去留的选言、假言条件，官方解析以假设法分情况（首步“分析题干条件”；按内容也可算翻译推理，属边界题）",
+   "boundary_note": "选言/假言条件的去留题；官方解析用假设法（首步“分析题干条件”），计分析推理，按内容也可算翻译推理。"
+  },
+  {
+   "paper": "GD2025",
+   "number": 65,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "削弱",
+   "basis": "“最能反驳这一质疑”（买了保险就可不穿救生衣）"
+  },
+  {
+   "paper": "GD2025",
+   "number": 66,
+   "part": "科学推理",
+   "major": "化学",
+   "minor": "化学",
+   "figure": true,
+   "figure_kind": "表格",
+   "option_figure": false,
+   "basis": "常见溶液pH表，判断酸碱中和的应用"
+  },
+  {
+   "paper": "GD2025",
+   "number": 67,
+   "part": "科学推理",
+   "major": "物理",
+   "minor": "力学",
+   "figure": true,
+   "figure_kind": "示意图",
+   "option_figure": false,
+   "basis": "夹物器匀速夹起三块木块，分析摩擦力方向与个数"
+  },
+  {
+   "paper": "GD2025",
+   "number": 68,
+   "part": "科学推理",
+   "major": "地理",
+   "minor": "地理",
+   "figure": true,
+   "figure_kind": "示意图",
+   "option_figure": false,
+   "basis": "海陆风示意图，判断昼夜风向与温差"
+  },
+  {
+   "paper": "GD2025",
+   "number": 69,
+   "part": "科学推理",
+   "major": "物理",
+   "minor": "电学",
+   "figure": true,
+   "figure_kind": "电路图",
+   "option_figure": false,
+   "basis": "热敏电阻随温度升高阻值减小，电路动态分析"
+  },
+  {
+   "paper": "GD2025",
+   "number": 70,
+   "part": "科学推理",
+   "major": "生物",
+   "minor": "生物",
+   "figure": false,
+   "figure_kind": "无图",
+   "option_figure": false,
+   "basis": "细菌的致病、利用与繁殖"
+  },
+  {
+   "paper": "GD2026",
+   "number": 46,
+   "part": "图形推理",
+   "major": "规律类",
+   "minor": "数量",
+   "form": "一组图",
+   "rule_source": "自行看图判读（回忆版无答案）",
+   "basis": "箭头分叉图，箭头数依次为2、3、4、5（自行判读：数量类-线/箭头）",
+   "boundary_note": "回忆版无答案，规律自行判读（箭头数2、3、4、5递增）。"
+  },
+  {
+   "paper": "GD2026",
+   "number": 47,
+   "part": "图形推理",
+   "major": "规律类",
+   "minor": "属性",
+   "form": "九宫格",
+   "rule_source": "自行看图判读（回忆版无答案）",
+   "basis": "第一行全直线、第二行全曲线、第三行曲直兼有，唯C曲直兼有（自行判读：属性-曲直）",
+   "boundary_note": "回忆版无答案，规律自行判读（行内曲直）。"
+  },
+  {
+   "paper": "GD2026",
+   "number": 48,
+   "part": "图形推理",
+   "major": "空间类",
+   "minor": "拼合",
+   "form": "空间题",
+   "rule_source": "自行看图判读（回忆版无答案）",
+   "basis": "平面拼合：4个所给图形不经旋转翻转拼接成选项图形"
+  },
+  {
+   "paper": "GD2026",
+   "number": 49,
+   "part": "图形推理",
+   "major": "规律类",
+   "minor": "立体块元素",
+   "form": "一组图",
+   "rule_source": "自行看图判读（回忆版无答案）",
+   "basis": "小立方体堆叠的序列题，块数逐图增加（自行判读；具体规律有不确定，故单列“立体块元素”）",
+   "boundary_note": "回忆版无答案，立体块序列的具体规律未能确证，单列“立体块元素”，不计入数量类。"
+  },
+  {
+   "paper": "GD2026",
+   "number": 50,
+   "part": "图形推理",
+   "major": "空间类",
+   "minor": "展开与折叠",
+   "form": "空间题",
+   "rule_source": "自行看图判读（回忆版无答案）",
+   "basis": "由给定平面展开图折叠成的正方体"
+  },
+  {
+   "paper": "GD2026",
+   "number": 51,
+   "part": "逻辑判断",
+   "major": "形式逻辑",
+   "minor": "翻译推理",
+   "basis": "“如果…那么…”“只要…就…”，逆否推出"
+  },
+  {
+   "paper": "GD2026",
+   "number": 52,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "前提假设",
+   "basis": "“需要补充的前提”（需求增长→扩大甘蔗种植）"
+  },
+  {
+   "paper": "GD2026",
+   "number": 53,
+   "part": "逻辑判断",
+   "major": "解释",
+   "minor": "解释",
+   "basis": "水毛茛大面积消失后又大规模重现，要求解释"
+  },
+  {
+   "paper": "GD2026",
+   "number": 54,
+   "part": "逻辑判断",
+   "major": "形式逻辑",
+   "minor": "翻译推理",
+   "basis": "三条选言/假言条件，补充选项后串联得出“一定去科技馆”"
+  },
+  {
+   "paper": "GD2026",
+   "number": 55,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "前提假设",
+   "basis": "“推论暗含前提”"
+  },
+  {
+   "paper": "GD2026",
+   "number": 56,
+   "part": "逻辑判断",
+   "major": "解释",
+   "minor": "解释",
+   "basis": "“最不能解释”预售火爆后大量取消"
+  },
+  {
+   "paper": "GD2026",
+   "number": 57,
+   "part": "逻辑判断",
+   "major": "结构比较",
+   "minor": "结构比较",
+   "struct_kind": "推理形式/论证结构型",
+   "basis": "“逻辑结构最为相似”（不…就不能…，肯定前件的必要条件推理）"
+  },
+  {
+   "paper": "GD2026",
+   "number": 58,
+   "part": "逻辑判断",
+   "major": "解释",
+   "minor": "解释",
+   "basis": "永冻土融化但北极湖泊面积缩减，要求解释"
+  },
+  {
+   "paper": "GD2026",
+   "number": 59,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "削弱",
+   "basis": "“最能反驳这一结论”（只招新手研发人员）"
+  },
+  {
+   "paper": "GD2026",
+   "number": 60,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "加强",
+   "basis": "“最不能支持这一结论”（水凝胶抗衰老）"
+  },
+  {
+   "paper": "GD2026",
+   "number": 61,
+   "part": "逻辑判断",
+   "major": "结构比较",
+   "minor": "结构比较",
+   "struct_kind": "推理形式/论证结构型",
+   "basis": "“逻辑结构最为相似”（A→B、B→C，故A→C）"
+  },
+  {
+   "paper": "GD2026",
+   "number": 62,
+   "part": "逻辑判断",
+   "major": "形式逻辑",
+   "minor": "分析推理",
+   "basis": "6个职能局座位排列"
+  },
+  {
+   "paper": "GD2026",
+   "number": 63,
+   "part": "逻辑判断",
+   "major": "形式逻辑",
+   "minor": "分析推理",
+   "basis": "4村×4奖项匹配并结合收入排序"
+  },
+  {
+   "paper": "GD2026",
+   "number": 64,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "加强",
+   "basis": "“最能支持上述推测”（中空管状结构调节体温）"
+  },
+  {
+   "paper": "GD2026",
+   "number": 65,
+   "part": "逻辑判断",
+   "major": "结构比较",
+   "minor": "结构比较",
+   "struct_kind": "推理形式/论证结构型",
+   "basis": "“逻辑结构最为相似”（选言推理否定一支）"
+  },
+  {
+   "paper": "GD2026",
+   "number": 66,
+   "part": "科学推理",
+   "major": "物理",
+   "minor": "力学",
+   "figure": true,
+   "figure_kind": "示意图",
+   "option_figure": false,
+   "basis": "叠放棋子被击飞，惯性与受力；“判断正确的有几项”"
+  },
+  {
+   "paper": "GD2026",
+   "number": 67,
+   "part": "科学推理",
+   "major": "物理",
+   "minor": "力学",
+   "figure": true,
+   "figure_kind": "选项为图像",
+   "option_figure": true,
+   "basis": "实心铜块在加水过程中对容器底压力随水深的变化（浮力）"
+  },
+  {
+   "paper": "GD2026",
+   "number": 68,
+   "part": "科学推理",
+   "major": "物理",
+   "minor": "电学",
+   "figure": true,
+   "figure_kind": "选项为电路图",
+   "option_figure": true,
+   "basis": "三档电热毯的电路设计"
+  },
+  {
+   "paper": "GD2026",
+   "number": 69,
+   "part": "科学推理",
+   "major": "地理",
+   "minor": "地理",
+   "figure": true,
+   "figure_kind": "选项为示意图",
+   "option_figure": true,
+   "basis": "锋面雨形成原理示意图"
+  },
+  {
+   "paper": "GD2026",
+   "number": 70,
+   "part": "科学推理",
+   "major": "生物",
+   "minor": "生物",
+   "figure": true,
+   "figure_kind": "示意图",
+   "option_figure": false,
+   "basis": "海洋食物网，食物链与营养级"
+  },
+  {
+   "paper": "M01",
+   "number": 46,
+   "part": "图形推理",
+   "major": "规律类",
+   "minor": "数量",
+   "form": "一组图",
+   "rule_source": "看图判读，并对照卷内编辑解析",
+   "basis": "各图恰有两个互不连通的部分（部分数）"
+  },
+  {
+   "paper": "M01",
+   "number": 47,
+   "part": "图形推理",
+   "major": "规律类",
+   "minor": "数量",
+   "form": "一组图",
+   "rule_source": "看图判读，并对照卷内编辑解析",
+   "basis": "外轮廓边数等于封闭区域数（线、面数量）"
+  },
+  {
+   "paper": "M01",
+   "number": 48,
+   "part": "图形推理",
+   "major": "规律类",
+   "minor": "属性",
+   "form": "九宫格",
+   "rule_source": "看图判读，并对照卷内编辑解析",
+   "basis": "按列：全直线、全曲线、曲直兼有（曲直性）"
+  },
+  {
+   "paper": "M01",
+   "number": 49,
+   "part": "图形推理",
+   "major": "规律类",
+   "minor": "位置",
+   "form": "一组图",
+   "rule_source": "看图判读，并对照卷内编辑解析",
+   "basis": "4×4圆点阵中黑球与两个空位按固定方向移动"
+  },
+  {
+   "paper": "M01",
+   "number": 50,
+   "part": "图形推理",
+   "major": "规律类",
+   "minor": "样式",
+   "form": "九宫格",
+   "rule_source": "看图判读，并对照卷内编辑解析",
+   "basis": "逐行将第二图覆盖叠放在第一图上（叠加）"
+  },
+  {
+   "paper": "M01",
+   "number": 51,
+   "part": "逻辑判断",
+   "major": "形式逻辑",
+   "minor": "翻译推理",
+   "basis": "“只有…才…”与不相容选言条件串联，补哪项可推出小吴练游泳"
+  },
+  {
+   "paper": "M01",
+   "number": 52,
+   "part": "逻辑判断",
+   "major": "形式逻辑",
+   "minor": "分析推理",
+   "basis": "6人申报4奖项，每奖1至2人并附条件的分组"
+  },
+  {
+   "paper": "M01",
+   "number": 53,
+   "part": "逻辑判断",
+   "major": "形式逻辑",
+   "minor": "分析推理",
+   "basis": "四人计票误差的数字计算，找粗略估计者（数字计算型）"
+  },
+  {
+   "paper": "M01",
+   "number": 54,
+   "part": "逻辑判断",
+   "major": "形式逻辑",
+   "minor": "真假推理",
+   "basis": "4名观众的猜测只有1名为真"
+  },
+  {
+   "paper": "M01",
+   "number": 55,
+   "part": "逻辑判断",
+   "major": "形式逻辑",
+   "minor": "分析推理",
+   "basis": "石头剪刀布手指总数推断胜负过程（数字推理型）"
+  },
+  {
+   "paper": "M01",
+   "number": 56,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "削弱",
+   "basis": "“最能缓解上述专家的担忧”"
+  },
+  {
+   "paper": "M01",
+   "number": 57,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "加强",
+   "basis": "“最能支持上述结论”（金伯利岩来自地幔）"
+  },
+  {
+   "paper": "M01",
+   "number": 58,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "加强",
+   "basis": "“除哪项外均能支持专家的观点”"
+  },
+  {
+   "paper": "M01",
+   "number": 59,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "论证缺陷/评价",
+   "basis": "“回答以下哪个问题最有助于评价”（提问评价型）"
+  },
+  {
+   "paper": "M01",
+   "number": 60,
+   "part": "逻辑判断",
+   "major": "解释",
+   "minor": "解释",
+   "basis": "“除哪项外均能解释”《百家姓》的重要地位"
+  },
+  {
+   "paper": "M01",
+   "number": 61,
+   "part": "逻辑判断",
+   "major": "结构比较",
+   "minor": "结构比较",
+   "struct_kind": "推理形式/论证结构型",
+   "basis": "“逻辑结构与题干最为相似”（必要条件肯定前件）"
+  },
+  {
+   "paper": "M01",
+   "number": 62,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "削弱",
+   "basis": "“最能质疑该厂商的说法”"
+  },
+  {
+   "paper": "M01",
+   "number": 63,
+   "part": "逻辑判断",
+   "major": "结构比较",
+   "minor": "结构比较",
+   "struct_kind": "对话/概念错误型",
+   "basis": "“与上述对话方式最为相似”（对话型）"
+  },
+  {
+   "paper": "M01",
+   "number": 64,
+   "part": "逻辑判断",
+   "major": "结构比较",
+   "minor": "结构比较",
+   "struct_kind": "推理形式/论证结构型",
+   "basis": "“逻辑结构最为相似”（A→B、B→C，故A→C）"
+  },
+  {
+   "paper": "M01",
+   "number": 65,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "削弱",
+   "basis": "“最能削弱上述观点”（呼吸可作身份识别）"
+  },
+  {
+   "paper": "M01",
+   "number": 66,
+   "part": "科学推理",
+   "major": "物理",
+   "minor": "力学",
+   "figure": true,
+   "figure_kind": "示意图",
+   "option_figure": false,
+   "basis": "叠放物块受F1、F2作用，受力个数与摩擦力"
+  },
+  {
+   "paper": "M01",
+   "number": 67,
+   "part": "科学推理",
+   "major": "物理",
+   "minor": "电学",
+   "figure": true,
+   "figure_kind": "电路图",
+   "option_figure": false,
+   "basis": "温敏、光敏电阻电路的电表示数变化"
+  },
+  {
+   "paper": "M01",
+   "number": 68,
+   "part": "科学推理",
+   "major": "化学",
+   "minor": "化学",
+   "figure": false,
+   "figure_kind": "无图",
+   "option_figure": false,
+   "basis": "验证Fe、Cu、Ag金属活动性的方案组合"
+  },
+  {
+   "paper": "M01",
+   "number": 69,
+   "part": "科学推理",
+   "major": "生物",
+   "minor": "生物",
+   "figure": false,
+   "figure_kind": "无图",
+   "option_figure": false,
+   "basis": "ABO血型遗传"
+  },
+  {
+   "paper": "M01",
+   "number": 70,
+   "part": "科学推理",
+   "major": "地理",
+   "minor": "地理",
+   "figure": true,
+   "figure_kind": "经纬网图",
+   "option_figure": false,
+   "basis": "经纬网判读半球、纬度带与坐标"
+  },
+  {
+   "paper": "M02",
+   "number": 46,
+   "part": "图形推理",
+   "major": "规律类",
+   "minor": "位置",
+   "form": "一组图",
+   "rule_source": "看图判读，并对照卷内编辑解析",
+   "basis": "外圈黑格成连续一段，起点逐图顺时针前进且逐图加1格（位置为主，兼数量递增）",
+   "boundary_note": "位置为主，兼黑格数量递增。"
+  },
+  {
+   "paper": "M02",
+   "number": 47,
+   "part": "图形推理",
+   "major": "规律类",
+   "minor": "样式",
+   "form": "九宫格",
+   "rule_source": "看图判读，并对照卷内编辑解析",
+   "basis": "逐行前两图去同存异得第三图"
+  },
+  {
+   "paper": "M02",
+   "number": 48,
+   "part": "图形推理",
+   "major": "规律类",
+   "minor": "数量",
+   "form": "一组图",
+   "rule_source": "看图判读，并对照卷内编辑解析",
+   "basis": "封闭区域数5、4、5、4、5交替，辅以曲直特征"
+  },
+  {
+   "paper": "M02",
+   "number": 49,
+   "part": "图形推理",
+   "major": "空间类",
+   "minor": "展开与折叠",
+   "form": "空间题",
+   "rule_source": "看图判读，并对照卷内编辑解析",
+   "basis": "圆形卡片沿两条垂直直径折两次后剪开再展开（折纸剪纸）"
+  },
+  {
+   "paper": "M02",
+   "number": 50,
+   "part": "图形推理",
+   "major": "空间类",
+   "minor": "展开与折叠",
+   "form": "空间题",
+   "rule_source": "看图判读，并对照卷内编辑解析",
+   "basis": "4个正方体展开图，选折成后与其他三个不同者"
+  },
+  {
+   "paper": "M02",
+   "number": 51,
+   "part": "逻辑判断",
+   "major": "形式逻辑",
+   "minor": "翻译推理",
+   "basis": "“除非…否则…”条件的等价推出"
+  },
+  {
+   "paper": "M02",
+   "number": 52,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "削弱",
+   "basis": "“最能质疑上述网友的说法”"
+  },
+  {
+   "paper": "M02",
+   "number": 53,
+   "part": "逻辑判断",
+   "major": "形式逻辑",
+   "minor": "分析推理",
+   "basis": "6张专辑在1~6号货架上的排列"
+  },
+  {
+   "paper": "M02",
+   "number": 54,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "加强",
+   "basis": "“最能支持上述专家的观点”"
+  },
+  {
+   "paper": "M02",
+   "number": 55,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "加强",
+   "basis": "“专家最不可能基于以下哪项得出上述观点”（论据支持型，问最不能支持）"
+  },
+  {
+   "paper": "M02",
+   "number": 56,
+   "part": "逻辑判断",
+   "major": "形式逻辑",
+   "minor": "真假推理",
+   "basis": "三个猜测只有一个是对的"
+  },
+  {
+   "paper": "M02",
+   "number": 57,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "加强",
+   "basis": "“最能支持上述专家的观点”"
+  },
+  {
+   "paper": "M02",
+   "number": 58,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "削弱",
+   "basis": "“最能削弱上述假说”"
+  },
+  {
+   "paper": "M02",
+   "number": 59,
+   "part": "逻辑判断",
+   "major": "形式逻辑",
+   "minor": "分析推理",
+   "basis": "5人与5种气球的颜色、形状匹配"
+  },
+  {
+   "paper": "M02",
+   "number": 60,
+   "part": "逻辑判断",
+   "major": "解释",
+   "minor": "解释",
+   "basis": "用户未读协议却都点同意，要求解释"
+  },
+  {
+   "paper": "M02",
+   "number": 61,
+   "part": "逻辑判断",
+   "major": "结构比较",
+   "minor": "结构比较",
+   "struct_kind": "推理形式/论证结构型",
+   "basis": "“逻辑结构与题干最为相似”（充分条件否后推否前）"
+  },
+  {
+   "paper": "M02",
+   "number": 62,
+   "part": "逻辑判断",
+   "major": "形式逻辑",
+   "minor": "翻译推理",
+   "basis": "选言、假言条件串联，补哪项可成为“小苏参加剪纸”的前提"
+  },
+  {
+   "paper": "M02",
+   "number": 63,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "削弱",
+   "basis": "“最能削弱上述鸟类爱好者的断言”"
+  },
+  {
+   "paper": "M02",
+   "number": 64,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "论证缺陷/评价",
+   "basis": "“回答以下哪个问题最有助于评价”（提问评价型）"
+  },
+  {
+   "paper": "M02",
+   "number": 65,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "前提假设",
+   "basis": "“上述结论的成立需要补充以下哪项作为前提”"
+  },
+  {
+   "paper": "M02",
+   "number": 66,
+   "part": "科学推理",
+   "major": "物理",
+   "minor": "力学",
+   "figure": true,
+   "figure_kind": "示意图",
+   "option_figure": false,
+   "basis": "水平力压在墙上的容器注水前后的摩擦力"
+  },
+  {
+   "paper": "M02",
+   "number": 67,
+   "part": "科学推理",
+   "major": "物理",
+   "minor": "电学",
+   "figure": true,
+   "figure_kind": "电路图",
+   "option_figure": false,
+   "basis": "滑动变阻器与多开关电路的电流表示数"
+  },
+  {
+   "paper": "M02",
+   "number": 68,
+   "part": "科学推理",
+   "major": "化学",
+   "minor": "化学",
+   "figure": false,
+   "figure_kind": "无图",
+   "option_figure": false,
+   "basis": "蔗糖饱和溶液的各种操作与溶质质量分数"
+  },
+  {
+   "paper": "M02",
+   "number": 69,
+   "part": "科学推理",
+   "major": "生物",
+   "minor": "生物",
+   "figure": false,
+   "figure_kind": "无图",
+   "option_figure": false,
+   "basis": "植物蒸腾作用与气孔“午休”"
+  },
+  {
+   "paper": "M02",
+   "number": 70,
+   "part": "科学推理",
+   "major": "地理",
+   "minor": "地理",
+   "figure": true,
+   "figure_kind": "表格",
+   "option_figure": false,
+   "basis": "夏至日四地昼夜时长差值表，判断半球与纬度"
+  },
+  {
+   "paper": "M03",
+   "number": 46,
+   "part": "图形推理",
+   "major": "规律类",
+   "minor": "属性",
+   "form": "一组图",
+   "rule_source": "看图判读，并对照卷内编辑解析",
+   "basis": "黑白点阵中心对称与单轴对称交替（对称性）"
+  },
+  {
+   "paper": "M03",
+   "number": 47,
+   "part": "图形推理",
+   "major": "规律类",
+   "minor": "位置",
+   "form": "一组图",
+   "rule_source": "看图判读，并对照卷内编辑解析",
+   "basis": "蜂窝格整列循环右移2列、列内循环下移1格"
+  },
+  {
+   "paper": "M03",
+   "number": 48,
+   "part": "图形推理",
+   "major": "规律类",
+   "minor": "样式",
+   "form": "九宫格",
+   "rule_source": "看图判读，并对照卷内编辑解析",
+   "basis": "第一图逆时针转90°后与第二图去同存异（样式为主，兼旋转）",
+   "boundary_note": "样式（去同存异）为主，兼旋转。"
+  },
+  {
+   "paper": "M03",
+   "number": 49,
+   "part": "图形推理",
+   "major": "规律类",
+   "minor": "立体块元素",
+   "form": "九宫格",
+   "rule_source": "看图判读，并对照卷内编辑解析",
+   "basis": "方块堆叠九宫格，八幅俯视占位相同且最高两层（以视图为线索的立体块规律题）",
+   "boundary_note": "以小立方体堆叠为元素的九宫格规律题，规律用到俯视占位，带一定空间成分，但题型属规律类。"
+  },
+  {
+   "paper": "M03",
+   "number": 50,
+   "part": "图形推理",
+   "major": "空间类",
+   "minor": "拼合",
+   "form": "空间题",
+   "rule_source": "看图判读，并对照卷内编辑解析",
+   "basis": "立体拼合：选项与①②组成一个长方体"
+  },
+  {
+   "paper": "M03",
+   "number": 51,
+   "part": "逻辑判断",
+   "major": "形式逻辑",
+   "minor": "真假推理",
+   "basis": "三个判断中有两项错误"
+  },
+  {
+   "paper": "M03",
+   "number": 52,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "加强",
+   "basis": "“最能支持上述结论”（创卫提升空气质量）"
+  },
+  {
+   "paper": "M03",
+   "number": 53,
+   "part": "逻辑判断",
+   "major": "形式逻辑",
+   "minor": "分析推理",
+   "basis": "4人专业与交换后所持书的对应"
+  },
+  {
+   "paper": "M03",
+   "number": 54,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "削弱",
+   "basis": "“最能削弱管理人员的结论”（因果倒置）"
+  },
+  {
+   "paper": "M03",
+   "number": 55,
+   "part": "逻辑判断",
+   "major": "形式逻辑",
+   "minor": "分析推理",
+   "basis": "师范/非师范×男女的人数比较，填哪项使推理成立（数量比较型）"
+  },
+  {
+   "paper": "M03",
+   "number": 56,
+   "part": "逻辑判断",
+   "major": "结构比较",
+   "minor": "结构比较",
+   "struct_kind": "对话/概念错误型",
+   "basis": "“与题干对话方式最为相似”（对话型）"
+  },
+  {
+   "paper": "M03",
+   "number": 57,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "加强",
+   "basis": "“最能支持研究生导师们的观点”"
+  },
+  {
+   "paper": "M03",
+   "number": 58,
+   "part": "逻辑判断",
+   "major": "解释",
+   "minor": "解释",
+   "basis": "招聘人数增加但来自甲学院的大减，要求解释"
+  },
+  {
+   "paper": "M03",
+   "number": 59,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "前提假设",
+   "basis": "“最可能是研究人员得出结论的条件”"
+  },
+  {
+   "paper": "M03",
+   "number": 60,
+   "part": "逻辑判断",
+   "major": "形式逻辑",
+   "minor": "真假推理",
+   "basis": "只有会计师的预言正确，结合四人职业匹配"
+  },
+  {
+   "paper": "M03",
+   "number": 61,
+   "part": "逻辑判断",
+   "major": "结构比较",
+   "minor": "结构比较",
+   "struct_kind": "推理形式/论证结构型",
+   "basis": "“逻辑结构最为相似”（两个充分条件→析取的必要条件）"
+  },
+  {
+   "paper": "M03",
+   "number": 62,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "加强",
+   "basis": "“最有可能是专家得出结论的论据”"
+  },
+  {
+   "paper": "M03",
+   "number": 63,
+   "part": "逻辑判断",
+   "major": "形式逻辑",
+   "minor": "分析推理",
+   "basis": "恰有一人、至少一人、当且仅当等条件，用假设法推录用人数（边界题，也可视为翻译推理）",
+   "boundary_note": "用假设法推录用人数，计分析推理；按条件串联也可算翻译推理。"
+  },
+  {
+   "paper": "M03",
+   "number": 64,
+   "part": "逻辑判断",
+   "major": "结构比较",
+   "minor": "结构比较",
+   "struct_kind": "推理形式/论证结构型",
+   "basis": "“逻辑结构最为相似”（联言前件的充分条件否后推否前）"
+  },
+  {
+   "paper": "M03",
+   "number": 65,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "削弱",
+   "basis": "“不能反驳小张的观点”（反驳型）"
+  },
+  {
+   "paper": "M03",
+   "number": 66,
+   "part": "科学推理",
+   "major": "物理",
+   "minor": "力学",
+   "figure": true,
+   "figure_kind": "示意图",
+   "option_figure": false,
+   "basis": "相同小球在两种液体中的浮沉、液体压强与压力"
+  },
+  {
+   "paper": "M03",
+   "number": 67,
+   "part": "科学推理",
+   "major": "物理",
+   "minor": "力学",
+   "figure": true,
+   "figure_kind": "轨迹图",
+   "option_figure": false,
+   "basis": "两物体平抛运动的时间与初速度比较"
+  },
+  {
+   "paper": "M03",
+   "number": 68,
+   "part": "科学推理",
+   "major": "化学",
+   "minor": "化学",
+   "figure": true,
+   "figure_kind": "微观示意图",
+   "option_figure": false,
+   "basis": "甲烷燃烧的微观反应示意图"
+  },
+  {
+   "paper": "M03",
+   "number": 69,
+   "part": "科学推理",
+   "major": "生物",
+   "minor": "生物",
+   "figure": true,
+   "figure_kind": "食物网图",
+   "option_figure": false,
+   "basis": "茶园食物网的食物链与营养级"
+  },
+  {
+   "paper": "M03",
+   "number": 70,
+   "part": "科学推理",
+   "major": "地理",
+   "minor": "地理",
+   "figure": true,
+   "figure_kind": "等高线地形图",
+   "option_figure": false,
+   "basis": "等高线地形图判读山谷、山脊与河流流向"
+  },
+  {
+   "paper": "M04",
+   "number": 46,
+   "part": "图形推理",
+   "major": "规律类",
+   "minor": "位置",
+   "form": "一组图",
+   "rule_source": "看图判读，并对照卷内编辑解析",
+   "basis": "9×9网格黑格整体向上、向左循环平移一格"
+  },
+  {
+   "paper": "M04",
+   "number": 47,
+   "part": "图形推理",
+   "major": "规律类",
+   "minor": "位置",
+   "form": "一组图",
+   "rule_source": "看图判读，并对照卷内编辑解析",
+   "basis": "黑格折线尾部退1格、头部沿路线前进2格（位置为主，兼数量递增）",
+   "boundary_note": "位置为主，兼黑格数量递增。"
+  },
+  {
+   "paper": "M04",
+   "number": 48,
+   "part": "图形推理",
+   "major": "规律类",
+   "minor": "其他规律",
+   "form": "字符串",
+   "rule_source": "看图判读，并对照卷内编辑解析",
+   "basis": "字符串：8个图符的相同元素位置结构a-b-b-c-d-a-c-e"
+  },
+  {
+   "paper": "M04",
+   "number": 49,
+   "part": "图形推理",
+   "major": "空间类",
+   "minor": "展开与折叠",
+   "form": "空间题",
+   "rule_source": "看图判读，并对照卷内编辑解析",
+   "basis": "两个正方体组合成的长方体，选两个正方体的展开图"
+  },
+  {
+   "paper": "M04",
+   "number": 50,
+   "part": "图形推理",
+   "major": "空间类",
+   "minor": "空间其他",
+   "form": "空间题",
+   "rule_source": "看图判读，并对照卷内编辑解析",
+   "basis": "选与所给立体图形不可能是同一图形者（立体图形旋转辨识，非拼合）"
+  },
+  {
+   "paper": "M04",
+   "number": 51,
+   "part": "逻辑判断",
+   "major": "形式逻辑",
+   "minor": "翻译推理",
+   "basis": "“须是…”“就…”等条件，选不能推出项"
+  },
+  {
+   "paper": "M04",
+   "number": 52,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "加强",
+   "basis": "“最能支持上述专家的观点”"
+  },
+  {
+   "paper": "M04",
+   "number": 53,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "加强",
+   "basis": "“最有可能是研究人员通过实验得到的论据”"
+  },
+  {
+   "paper": "M04",
+   "number": 54,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "削弱",
+   "basis": "“最能削弱上述学者的结论”"
+  },
+  {
+   "paper": "M04",
+   "number": 55,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "削弱",
+   "basis": "“最能削弱上述结论”（只有维持地被层完整才能遏制水土流失）"
+  },
+  {
+   "paper": "M04",
+   "number": 56,
+   "part": "逻辑判断",
+   "major": "形式逻辑",
+   "minor": "分析推理",
+   "basis": "4位专家的性别、党员、教授特征计数，推出组长"
+  },
+  {
+   "paper": "M04",
+   "number": 57,
+   "part": "逻辑判断",
+   "major": "形式逻辑",
+   "minor": "分析推理",
+   "basis": "4人各点4道菜中的2道并附条件，分情况推理"
+  },
+  {
+   "paper": "M04",
+   "number": 58,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "削弱",
+   "basis": "“最能质疑上述专家的观点”"
+  },
+  {
+   "paper": "M04",
+   "number": 59,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "前提假设",
+   "basis": "“推论暗含前提”"
+  },
+  {
+   "paper": "M04",
+   "number": 60,
+   "part": "逻辑判断",
+   "major": "形式逻辑",
+   "minor": "真假推理",
+   "basis": "偏瘦者说真话、偏胖者说假话（身份型真假）"
+  },
+  {
+   "paper": "M04",
+   "number": 61,
+   "part": "逻辑判断",
+   "major": "结构比较",
+   "minor": "结构比较",
+   "struct_kind": "对话/概念错误型",
+   "basis": "“对话与上述对话最为相似”（对话型）"
+  },
+  {
+   "paper": "M04",
+   "number": 62,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "削弱",
+   "basis": "“最能质疑商家的说法”"
+  },
+  {
+   "paper": "M04",
+   "number": 63,
+   "part": "逻辑判断",
+   "major": "形式逻辑",
+   "minor": "分析推理",
+   "basis": "贪吃蛇涂色，任意连续4节颜色不同的排列"
+  },
+  {
+   "paper": "M04",
+   "number": 64,
+   "part": "逻辑判断",
+   "major": "结构比较",
+   "minor": "结构比较",
+   "struct_kind": "对话/概念错误型",
+   "basis": "“乙的论证方式与小李最为相似”（对话型，诉诸无知）"
+  },
+  {
+   "paper": "M04",
+   "number": 65,
+   "part": "逻辑判断",
+   "major": "结构比较",
+   "minor": "结构比较",
+   "struct_kind": "对话/概念错误型",
+   "basis": "“所包含的逻辑错误与题干最相似”（概念并列不当）"
+  },
+  {
+   "paper": "M04",
+   "number": 66,
+   "part": "科学推理",
+   "major": "物理",
+   "minor": "力学",
+   "figure": true,
+   "figure_kind": "示意图",
+   "option_figure": false,
+   "basis": "叠放物块在逐渐增大拉力下的摩擦力"
+  },
+  {
+   "paper": "M04",
+   "number": 67,
+   "part": "科学推理",
+   "major": "物理",
+   "minor": "电学",
+   "figure": true,
+   "figure_kind": "电路图",
+   "option_figure": false,
+   "basis": "三灯泡与多电表电路的示数比较"
+  },
+  {
+   "paper": "M04",
+   "number": 68,
+   "part": "科学推理",
+   "major": "化学",
+   "minor": "化学",
+   "figure": false,
+   "figure_kind": "无图",
+   "option_figure": false,
+   "basis": "物质的物理性质与化学性质辨析"
+  },
+  {
+   "paper": "M04",
+   "number": 69,
+   "part": "科学推理",
+   "major": "生物",
+   "minor": "生物",
+   "figure": false,
+   "figure_kind": "无图",
+   "option_figure": false,
+   "basis": "果蝇长翅、残翅的基因分离定律"
+  },
+  {
+   "paper": "M04",
+   "number": 70,
+   "part": "科学推理",
+   "major": "地理",
+   "minor": "地理",
+   "figure": false,
+   "figure_kind": "无图",
+   "option_figure": false,
+   "basis": "海上风电场与海陆风成因（无图）"
+  },
+  {
+   "paper": "M05",
+   "number": 46,
+   "part": "图形推理",
+   "major": "规律类",
+   "minor": "位置",
+   "form": "一组图",
+   "rule_source": "看图判读，并对照卷内编辑解析",
+   "basis": "六边形内小圆、三角形、短线分别按各自方向移动"
+  },
+  {
+   "paper": "M05",
+   "number": 47,
+   "part": "图形推理",
+   "major": "规律类",
+   "minor": "数量",
+   "form": "九宫格",
+   "rule_source": "看图判读，并对照卷内编辑解析",
+   "basis": "封闭区域数，每列第三幅等于上两幅之和"
+  },
+  {
+   "paper": "M05",
+   "number": 48,
+   "part": "图形推理",
+   "major": "规律类",
+   "minor": "其他规律",
+   "form": "字符串",
+   "rule_source": "看图判读，并对照卷内编辑解析",
+   "basis": "字符串：图符相同位置结构abcadbca"
+  },
+  {
+   "paper": "M05",
+   "number": 49,
+   "part": "图形推理",
+   "major": "空间类",
+   "minor": "展开与折叠",
+   "form": "空间题",
+   "rule_source": "看图判读，并对照卷内编辑解析",
+   "basis": "多面体与其展开图的棱对应关系"
+  },
+  {
+   "paper": "M05",
+   "number": 50,
+   "part": "图形推理",
+   "major": "空间类",
+   "minor": "截面",
+   "form": "空间题",
+   "rule_source": "看图判读，并对照卷内编辑解析",
+   "basis": "用经P、Q、R三点的平面切割多面体，求截面"
+  },
+  {
+   "paper": "M05",
+   "number": 51,
+   "part": "逻辑判断",
+   "major": "形式逻辑",
+   "minor": "翻译推理",
+   "basis": "“如果…则…”“除非…否则…”串联后选可推出项"
+  },
+  {
+   "paper": "M05",
+   "number": 52,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "前提假设",
+   "basis": "“必须补充的前提”"
+  },
+  {
+   "paper": "M05",
+   "number": 53,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "削弱",
+   "basis": "“最能够削弱上述观点”（因果倒置）"
+  },
+  {
+   "paper": "M05",
+   "number": 54,
+   "part": "逻辑判断",
+   "major": "解释",
+   "minor": "解释",
+   "basis": "自称常健身比例升高而健身房人数下降，要求解释"
+  },
+  {
+   "paper": "M05",
+   "number": 55,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "前提假设",
+   "basis": "“需要补充的前提条件”"
+  },
+  {
+   "paper": "M05",
+   "number": 56,
+   "part": "逻辑判断",
+   "major": "形式逻辑",
+   "minor": "分析推理",
+   "basis": "6条隧道的南北排序"
+  },
+  {
+   "paper": "M05",
+   "number": 57,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "论证缺陷/评价",
+   "basis": "“最能指出上述论证缺陷”"
+  },
+  {
+   "paper": "M05",
+   "number": 58,
+   "part": "逻辑判断",
+   "major": "结构比较",
+   "minor": "结构比较",
+   "struct_kind": "推理形式/论证结构型",
+   "basis": "“形式结构最为相似”"
+  },
+  {
+   "paper": "M05",
+   "number": 59,
+   "part": "逻辑判断",
+   "major": "解释",
+   "minor": "解释",
+   "basis": "增设免费车位后停车矛盾反而更突出，要求解释"
+  },
+  {
+   "paper": "M05",
+   "number": 60,
+   "part": "逻辑判断",
+   "major": "形式逻辑",
+   "minor": "分析推理",
+   "basis": "4人名次与4位观众各猜对几个的推断（含猜测命中数，边界题，也可视为真假推理）",
+   "boundary_note": "已知各人猜对几个的排序题，计分析推理；若计真假推理，M05真假推理为2道。"
+  },
+  {
+   "paper": "M05",
+   "number": 61,
+   "part": "逻辑判断",
+   "major": "结构比较",
+   "minor": "结构比较",
+   "struct_kind": "推理形式/论证结构型",
+   "basis": "“逻辑结构最为相似”（A利于B、C利于A→C利于B）"
+  },
+  {
+   "paper": "M05",
+   "number": 62,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "前提假设",
+   "basis": "“推测暗含前提”"
+  },
+  {
+   "paper": "M05",
+   "number": 63,
+   "part": "逻辑判断",
+   "major": "形式逻辑",
+   "minor": "真假推理",
+   "basis": "三位居民的猜测只有一位正确"
+  },
+  {
+   "paper": "M05",
+   "number": 64,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "削弱",
+   "basis": "“除哪项外均能削弱”"
+  },
+  {
+   "paper": "M05",
+   "number": 65,
+   "part": "逻辑判断",
+   "major": "论证",
+   "minor": "削弱",
+   "basis": "“最能质疑上述研究人员的论证”"
+  },
+  {
+   "paper": "M05",
+   "number": 66,
+   "part": "科学推理",
+   "major": "物理",
+   "minor": "力学",
+   "figure": true,
+   "figure_kind": "F-t图像",
+   "option_figure": false,
+   "basis": "拉力随时间变化的货箱静摩擦与滑动摩擦"
+  },
+  {
+   "paper": "M05",
+   "number": 67,
+   "part": "科学推理",
+   "major": "物理",
+   "minor": "电学",
+   "figure": true,
+   "figure_kind": "电路图",
+   "option_figure": false,
+   "basis": "滑动变阻器移动时的电流表与灯泡亮度"
+  },
+  {
+   "paper": "M05",
+   "number": 68,
+   "part": "科学推理",
+   "major": "化学",
+   "minor": "化学",
+   "figure": false,
+   "figure_kind": "无图",
+   "option_figure": false,
+   "basis": "CO催化氧化的反应类型与催化剂特点"
+  },
+  {
+   "paper": "M05",
+   "number": 69,
+   "part": "科学推理",
+   "major": "生物",
+   "minor": "生物",
+   "figure": false,
+   "figure_kind": "无图",
+   "option_figure": false,
+   "basis": "酶的来源、成分与影响因素"
+  },
+  {
+   "paper": "M05",
+   "number": 70,
+   "part": "科学推理",
+   "major": "地理",
+   "minor": "地理",
+   "figure": true,
+   "figure_kind": "等高线地形图",
+   "option_figure": false,
+   "basis": "等高线地形图判读山谷、山脊与选址"
+  }
+ ],
+ "summary": [
+  {
+   "part": "图形推理",
+   "category": "规律类（合计）",
+   "level": 1,
+   "real": {
+    "GD2024": {
+     "count": 2,
+     "questions": [
+      46,
+      47
+     ]
+    },
+    "GD2025": {
+     "count": 3,
+     "questions": [
+      47,
+      48,
+      49
+     ]
+    },
+    "GD2026": {
+     "count": 3,
+     "questions": [
+      46,
+      47,
+      49
+     ]
+    }
+   },
+   "range": [
+    2,
+    3
+   ],
+   "every_year": true,
+   "mocks": {
+    "M01": {
+     "count": 5,
+     "questions": [
+      46,
+      47,
+      48,
+      49,
+      50
+     ],
+     "severity": "明显",
+     "deviation": "多2"
+    },
+    "M02": {
+     "count": 3,
+     "questions": [
+      46,
+      47,
+      48
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M03": {
+     "count": 4,
+     "questions": [
+      46,
+      47,
+      48,
+      49
+     ],
+     "severity": "轻微",
+     "deviation": "多1"
+    },
+    "M04": {
+     "count": 3,
+     "questions": [
+      46,
+      47,
+      48
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M05": {
+     "count": 3,
+     "questions": [
+      46,
+      47,
+      48
+     ],
+     "severity": "",
+     "deviation": ""
+    }
+   }
+  },
+  {
+   "part": "图形推理",
+   "category": "规律·位置",
+   "level": 2,
+   "real": {
+    "GD2024": {
+     "count": 0,
+     "questions": []
+    },
+    "GD2025": {
+     "count": 2,
+     "questions": [
+      48,
+      49
+     ]
+    },
+    "GD2026": {
+     "count": 0,
+     "questions": []
+    }
+   },
+   "range": [
+    0,
+    2
+   ],
+   "every_year": false,
+   "mocks": {
+    "M01": {
+     "count": 1,
+     "questions": [
+      49
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M02": {
+     "count": 1,
+     "questions": [
+      46
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M03": {
+     "count": 1,
+     "questions": [
+      47
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M04": {
+     "count": 2,
+     "questions": [
+      46,
+      47
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M05": {
+     "count": 1,
+     "questions": [
+      46
+     ],
+     "severity": "",
+     "deviation": ""
+    }
+   }
+  },
+  {
+   "part": "图形推理",
+   "category": "规律·样式",
+   "level": 2,
+   "real": {
+    "GD2024": {
+     "count": 1,
+     "questions": [
+      46
+     ]
+    },
+    "GD2025": {
+     "count": 1,
+     "questions": [
+      47
+     ]
+    },
+    "GD2026": {
+     "count": 0,
+     "questions": []
+    }
+   },
+   "range": [
+    0,
+    1
+   ],
+   "every_year": false,
+   "mocks": {
+    "M01": {
+     "count": 1,
+     "questions": [
+      50
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M02": {
+     "count": 1,
+     "questions": [
+      47
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M03": {
+     "count": 1,
+     "questions": [
+      48
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M04": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M05": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    }
+   }
+  },
+  {
+   "part": "图形推理",
+   "category": "规律·属性",
+   "level": 2,
+   "real": {
+    "GD2024": {
+     "count": 0,
+     "questions": []
+    },
+    "GD2025": {
+     "count": 0,
+     "questions": []
+    },
+    "GD2026": {
+     "count": 1,
+     "questions": [
+      47
+     ]
+    }
+   },
+   "range": [
+    0,
+    1
+   ],
+   "every_year": false,
+   "mocks": {
+    "M01": {
+     "count": 1,
+     "questions": [
+      48
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M02": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M03": {
+     "count": 1,
+     "questions": [
+      46
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M04": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M05": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    }
+   }
+  },
+  {
+   "part": "图形推理",
+   "category": "规律·数量",
+   "level": 2,
+   "real": {
+    "GD2024": {
+     "count": 1,
+     "questions": [
+      47
+     ]
+    },
+    "GD2025": {
+     "count": 0,
+     "questions": []
+    },
+    "GD2026": {
+     "count": 1,
+     "questions": [
+      46
+     ]
+    }
+   },
+   "range": [
+    0,
+    1
+   ],
+   "every_year": false,
+   "mocks": {
+    "M01": {
+     "count": 2,
+     "questions": [
+      46,
+      47
+     ],
+     "severity": "轻微",
+     "deviation": "多1"
+    },
+    "M02": {
+     "count": 1,
+     "questions": [
+      48
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M03": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M04": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M05": {
+     "count": 1,
+     "questions": [
+      47
+     ],
+     "severity": "",
+     "deviation": ""
+    }
+   }
+  },
+  {
+   "part": "图形推理",
+   "category": "规律·立体块元素",
+   "level": 2,
+   "real": {
+    "GD2024": {
+     "count": 0,
+     "questions": []
+    },
+    "GD2025": {
+     "count": 0,
+     "questions": []
+    },
+    "GD2026": {
+     "count": 1,
+     "questions": [
+      49
+     ]
+    }
+   },
+   "range": [
+    0,
+    1
+   ],
+   "every_year": false,
+   "mocks": {
+    "M01": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M02": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M03": {
+     "count": 1,
+     "questions": [
+      49
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M04": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M05": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    }
+   }
+  },
+  {
+   "part": "图形推理",
+   "category": "规律·其他（字符串）",
+   "level": 2,
+   "real": {
+    "GD2024": {
+     "count": 0,
+     "questions": []
+    },
+    "GD2025": {
+     "count": 0,
+     "questions": []
+    },
+    "GD2026": {
+     "count": 0,
+     "questions": []
+    }
+   },
+   "range": [
+    0,
+    0
+   ],
+   "every_year": false,
+   "mocks": {
+    "M01": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M02": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M03": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M04": {
+     "count": 1,
+     "questions": [
+      48
+     ],
+     "severity": "轻微",
+     "deviation": "多1（2024—2026均未出现）"
+    },
+    "M05": {
+     "count": 1,
+     "questions": [
+      48
+     ],
+     "severity": "轻微",
+     "deviation": "多1（2024—2026均未出现）"
+    }
+   }
+  },
+  {
+   "part": "图形推理",
+   "category": "空间类（合计）",
+   "level": 1,
+   "real": {
+    "GD2024": {
+     "count": 3,
+     "questions": [
+      48,
+      49,
+      50
+     ]
+    },
+    "GD2025": {
+     "count": 2,
+     "questions": [
+      46,
+      50
+     ]
+    },
+    "GD2026": {
+     "count": 2,
+     "questions": [
+      48,
+      50
+     ]
+    }
+   },
+   "range": [
+    2,
+    3
+   ],
+   "every_year": true,
+   "mocks": {
+    "M01": {
+     "count": 0,
+     "questions": [],
+     "severity": "明显",
+     "deviation": "缺失（真题每年都有）"
+    },
+    "M02": {
+     "count": 2,
+     "questions": [
+      49,
+      50
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M03": {
+     "count": 1,
+     "questions": [
+      50
+     ],
+     "severity": "轻微",
+     "deviation": "少1"
+    },
+    "M04": {
+     "count": 2,
+     "questions": [
+      49,
+      50
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M05": {
+     "count": 2,
+     "questions": [
+      49,
+      50
+     ],
+     "severity": "",
+     "deviation": ""
+    }
+   }
+  },
+  {
+   "part": "图形推理",
+   "category": "空间·展开与折叠（含折纸剪纸）",
+   "level": 2,
+   "real": {
+    "GD2024": {
+     "count": 1,
+     "questions": [
+      48
+     ]
+    },
+    "GD2025": {
+     "count": 0,
+     "questions": []
+    },
+    "GD2026": {
+     "count": 1,
+     "questions": [
+      50
+     ]
+    }
+   },
+   "range": [
+    0,
+    1
+   ],
+   "every_year": false,
+   "mocks": {
+    "M01": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M02": {
+     "count": 2,
+     "questions": [
+      49,
+      50
+     ],
+     "severity": "轻微",
+     "deviation": "多1"
+    },
+    "M03": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M04": {
+     "count": 1,
+     "questions": [
+      49
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M05": {
+     "count": 1,
+     "questions": [
+      49
+     ],
+     "severity": "",
+     "deviation": ""
+    }
+   }
+  },
+  {
+   "part": "图形推理",
+   "category": "空间·三视图",
+   "level": 2,
+   "real": {
+    "GD2024": {
+     "count": 1,
+     "questions": [
+      49
+     ]
+    },
+    "GD2025": {
+     "count": 1,
+     "questions": [
+      46
+     ]
+    },
+    "GD2026": {
+     "count": 0,
+     "questions": []
+    }
+   },
+   "range": [
+    0,
+    1
+   ],
+   "every_year": false,
+   "mocks": {
+    "M01": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M02": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M03": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M04": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M05": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    }
+   }
+  },
+  {
+   "part": "图形推理",
+   "category": "空间·截面",
+   "level": 2,
+   "real": {
+    "GD2024": {
+     "count": 0,
+     "questions": []
+    },
+    "GD2025": {
+     "count": 0,
+     "questions": []
+    },
+    "GD2026": {
+     "count": 0,
+     "questions": []
+    }
+   },
+   "range": [
+    0,
+    0
+   ],
+   "every_year": false,
+   "mocks": {
+    "M01": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M02": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M03": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M04": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M05": {
+     "count": 1,
+     "questions": [
+      50
+     ],
+     "severity": "轻微",
+     "deviation": "多1（2024—2026均未出现）"
+    }
+   }
+  },
+  {
+   "part": "图形推理",
+   "category": "空间·拼合（立体/平面）",
+   "level": 2,
+   "real": {
+    "GD2024": {
+     "count": 1,
+     "questions": [
+      50
+     ]
+    },
+    "GD2025": {
+     "count": 1,
+     "questions": [
+      50
+     ]
+    },
+    "GD2026": {
+     "count": 1,
+     "questions": [
+      48
+     ]
+    }
+   },
+   "range": [
+    1,
+    1
+   ],
+   "every_year": true,
+   "mocks": {
+    "M01": {
+     "count": 0,
+     "questions": [],
+     "severity": "明显",
+     "deviation": "缺失（真题每年都有）"
+    },
+    "M02": {
+     "count": 0,
+     "questions": [],
+     "severity": "明显",
+     "deviation": "缺失（真题每年都有）"
+    },
+    "M03": {
+     "count": 1,
+     "questions": [
+      50
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M04": {
+     "count": 0,
+     "questions": [],
+     "severity": "明显",
+     "deviation": "缺失（真题每年都有）"
+    },
+    "M05": {
+     "count": 0,
+     "questions": [],
+     "severity": "明显",
+     "deviation": "缺失（真题每年都有）"
+    }
+   }
+  },
+  {
+   "part": "图形推理",
+   "category": "空间·其他（立体旋转辨识）",
+   "level": 2,
+   "real": {
+    "GD2024": {
+     "count": 0,
+     "questions": []
+    },
+    "GD2025": {
+     "count": 0,
+     "questions": []
+    },
+    "GD2026": {
+     "count": 0,
+     "questions": []
+    }
+   },
+   "range": [
+    0,
+    0
+   ],
+   "every_year": false,
+   "mocks": {
+    "M01": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M02": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M03": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M04": {
+     "count": 1,
+     "questions": [
+      50
+     ],
+     "severity": "轻微",
+     "deviation": "多1（2024—2026均未出现）"
+    },
+    "M05": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    }
+   }
+  },
+  {
+   "part": "图形推理",
+   "category": "形式·一组图",
+   "level": 3,
+   "real": {
+    "GD2024": {
+     "count": 1,
+     "questions": [
+      47
+     ]
+    },
+    "GD2025": {
+     "count": 1,
+     "questions": [
+      49
+     ]
+    },
+    "GD2026": {
+     "count": 2,
+     "questions": [
+      46,
+      49
+     ]
+    }
+   },
+   "range": [
+    1,
+    2
+   ],
+   "every_year": true,
+   "mocks": {
+    "M01": {
+     "count": 3,
+     "questions": [
+      46,
+      47,
+      49
+     ],
+     "severity": "轻微",
+     "deviation": "多1"
+    },
+    "M02": {
+     "count": 2,
+     "questions": [
+      46,
+      48
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M03": {
+     "count": 2,
+     "questions": [
+      46,
+      47
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M04": {
+     "count": 2,
+     "questions": [
+      46,
+      47
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M05": {
+     "count": 1,
+     "questions": [
+      46
+     ],
+     "severity": "",
+     "deviation": ""
+    }
+   }
+  },
+  {
+   "part": "图形推理",
+   "category": "形式·九宫格",
+   "level": 3,
+   "real": {
+    "GD2024": {
+     "count": 1,
+     "questions": [
+      46
+     ]
+    },
+    "GD2025": {
+     "count": 0,
+     "questions": []
+    },
+    "GD2026": {
+     "count": 1,
+     "questions": [
+      47
+     ]
+    }
+   },
+   "range": [
+    0,
+    1
+   ],
+   "every_year": false,
+   "mocks": {
+    "M01": {
+     "count": 2,
+     "questions": [
+      48,
+      50
+     ],
+     "severity": "轻微",
+     "deviation": "多1"
+    },
+    "M02": {
+     "count": 1,
+     "questions": [
+      47
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M03": {
+     "count": 2,
+     "questions": [
+      48,
+      49
+     ],
+     "severity": "轻微",
+     "deviation": "多1"
+    },
+    "M04": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M05": {
+     "count": 1,
+     "questions": [
+      47
+     ],
+     "severity": "",
+     "deviation": ""
+    }
+   }
+  },
+  {
+   "part": "图形推理",
+   "category": "形式·分组（两段式）",
+   "level": 3,
+   "real": {
+    "GD2024": {
+     "count": 0,
+     "questions": []
+    },
+    "GD2025": {
+     "count": 2,
+     "questions": [
+      47,
+      48
+     ]
+    },
+    "GD2026": {
+     "count": 0,
+     "questions": []
+    }
+   },
+   "range": [
+    0,
+    2
+   ],
+   "every_year": false,
+   "mocks": {
+    "M01": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M02": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M03": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M04": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M05": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    }
+   }
+  },
+  {
+   "part": "图形推理",
+   "category": "形式·字符串",
+   "level": 3,
+   "real": {
+    "GD2024": {
+     "count": 0,
+     "questions": []
+    },
+    "GD2025": {
+     "count": 0,
+     "questions": []
+    },
+    "GD2026": {
+     "count": 0,
+     "questions": []
+    }
+   },
+   "range": [
+    0,
+    0
+   ],
+   "every_year": false,
+   "mocks": {
+    "M01": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M02": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M03": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M04": {
+     "count": 1,
+     "questions": [
+      48
+     ],
+     "severity": "轻微",
+     "deviation": "多1（2024—2026均未出现）"
+    },
+    "M05": {
+     "count": 1,
+     "questions": [
+      48
+     ],
+     "severity": "轻微",
+     "deviation": "多1（2024—2026均未出现）"
+    }
+   }
+  },
+  {
+   "part": "逻辑判断",
+   "category": "形式逻辑（合计）",
+   "level": 1,
+   "real": {
+    "GD2024": {
+     "count": 3,
+     "questions": [
+      51,
+      55,
+      58
+     ]
+    },
+    "GD2025": {
+     "count": 3,
+     "questions": [
+      53,
+      59,
+      64
+     ]
+    },
+    "GD2026": {
+     "count": 4,
+     "questions": [
+      51,
+      54,
+      62,
+      63
+     ]
+    }
+   },
+   "range": [
+    3,
+    4
+   ],
+   "every_year": true,
+   "mocks": {
+    "M01": {
+     "count": 5,
+     "questions": [
+      51,
+      52,
+      53,
+      54,
+      55
+     ],
+     "severity": "轻微",
+     "deviation": "多1"
+    },
+    "M02": {
+     "count": 5,
+     "questions": [
+      51,
+      53,
+      56,
+      59,
+      62
+     ],
+     "severity": "轻微",
+     "deviation": "多1"
+    },
+    "M03": {
+     "count": 5,
+     "questions": [
+      51,
+      53,
+      55,
+      60,
+      63
+     ],
+     "severity": "轻微",
+     "deviation": "多1"
+    },
+    "M04": {
+     "count": 5,
+     "questions": [
+      51,
+      56,
+      57,
+      60,
+      63
+     ],
+     "severity": "轻微",
+     "deviation": "多1"
+    },
+    "M05": {
+     "count": 4,
+     "questions": [
+      51,
+      56,
+      60,
+      63
+     ],
+     "severity": "",
+     "deviation": ""
+    }
+   }
+  },
+  {
+   "part": "逻辑判断",
+   "category": "翻译推理",
+   "level": 2,
+   "real": {
+    "GD2024": {
+     "count": 1,
+     "questions": [
+      51
+     ]
+    },
+    "GD2025": {
+     "count": 0,
+     "questions": []
+    },
+    "GD2026": {
+     "count": 2,
+     "questions": [
+      51,
+      54
+     ]
+    }
+   },
+   "range": [
+    0,
+    2
+   ],
+   "every_year": false,
+   "mocks": {
+    "M01": {
+     "count": 1,
+     "questions": [
+      51
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M02": {
+     "count": 2,
+     "questions": [
+      51,
+      62
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M03": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M04": {
+     "count": 1,
+     "questions": [
+      51
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M05": {
+     "count": 1,
+     "questions": [
+      51
+     ],
+     "severity": "",
+     "deviation": ""
+    }
+   }
+  },
+  {
+   "part": "逻辑判断",
+   "category": "分析推理",
+   "level": 2,
+   "real": {
+    "GD2024": {
+     "count": 2,
+     "questions": [
+      55,
+      58
+     ]
+    },
+    "GD2025": {
+     "count": 3,
+     "questions": [
+      53,
+      59,
+      64
+     ]
+    },
+    "GD2026": {
+     "count": 2,
+     "questions": [
+      62,
+      63
+     ]
+    }
+   },
+   "range": [
+    2,
+    3
+   ],
+   "every_year": true,
+   "mocks": {
+    "M01": {
+     "count": 3,
+     "questions": [
+      52,
+      53,
+      55
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M02": {
+     "count": 2,
+     "questions": [
+      53,
+      59
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M03": {
+     "count": 3,
+     "questions": [
+      53,
+      55,
+      63
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M04": {
+     "count": 3,
+     "questions": [
+      56,
+      57,
+      63
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M05": {
+     "count": 2,
+     "questions": [
+      56,
+      60
+     ],
+     "severity": "",
+     "deviation": ""
+    }
+   }
+  },
+  {
+   "part": "逻辑判断",
+   "category": "真假推理",
+   "level": 2,
+   "real": {
+    "GD2024": {
+     "count": 0,
+     "questions": []
+    },
+    "GD2025": {
+     "count": 0,
+     "questions": []
+    },
+    "GD2026": {
+     "count": 0,
+     "questions": []
+    }
+   },
+   "range": [
+    0,
+    0
+   ],
+   "every_year": false,
+   "mocks": {
+    "M01": {
+     "count": 1,
+     "questions": [
+      54
+     ],
+     "severity": "轻微",
+     "deviation": "多1（2024—2026均未出现）"
+    },
+    "M02": {
+     "count": 1,
+     "questions": [
+      56
+     ],
+     "severity": "轻微",
+     "deviation": "多1（2024—2026均未出现）"
+    },
+    "M03": {
+     "count": 2,
+     "questions": [
+      51,
+      60
+     ],
+     "severity": "明显",
+     "deviation": "多2（2024—2026均未出现）"
+    },
+    "M04": {
+     "count": 1,
+     "questions": [
+      60
+     ],
+     "severity": "轻微",
+     "deviation": "多1（2024—2026均未出现）"
+    },
+    "M05": {
+     "count": 1,
+     "questions": [
+      63
+     ],
+     "severity": "轻微",
+     "deviation": "多1（2024—2026均未出现）"
+    }
+   }
+  },
+  {
+   "part": "逻辑判断",
+   "category": "论证（合计）",
+   "level": 1,
+   "real": {
+    "GD2024": {
+     "count": 6,
+     "questions": [
+      53,
+      56,
+      59,
+      61,
+      62,
+      64
+     ]
+    },
+    "GD2025": {
+     "count": 7,
+     "questions": [
+      51,
+      54,
+      55,
+      60,
+      61,
+      63,
+      65
+     ]
+    },
+    "GD2026": {
+     "count": 5,
+     "questions": [
+      52,
+      55,
+      59,
+      60,
+      64
+     ]
+    }
+   },
+   "range": [
+    5,
+    7
+   ],
+   "every_year": true,
+   "mocks": {
+    "M01": {
+     "count": 6,
+     "questions": [
+      56,
+      57,
+      58,
+      59,
+      62,
+      65
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M02": {
+     "count": 8,
+     "questions": [
+      52,
+      54,
+      55,
+      57,
+      58,
+      63,
+      64,
+      65
+     ],
+     "severity": "轻微",
+     "deviation": "多1"
+    },
+    "M03": {
+     "count": 6,
+     "questions": [
+      52,
+      54,
+      57,
+      59,
+      62,
+      65
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M04": {
+     "count": 7,
+     "questions": [
+      52,
+      53,
+      54,
+      55,
+      58,
+      59,
+      62
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M05": {
+     "count": 7,
+     "questions": [
+      52,
+      53,
+      55,
+      57,
+      62,
+      64,
+      65
+     ],
+     "severity": "",
+     "deviation": ""
+    }
+   }
+  },
+  {
+   "part": "逻辑判断",
+   "category": "削弱",
+   "level": 2,
+   "real": {
+    "GD2024": {
+     "count": 2,
+     "questions": [
+      59,
+      61
+     ]
+    },
+    "GD2025": {
+     "count": 2,
+     "questions": [
+      63,
+      65
+     ]
+    },
+    "GD2026": {
+     "count": 1,
+     "questions": [
+      59
+     ]
+    }
+   },
+   "range": [
+    1,
+    2
+   ],
+   "every_year": true,
+   "mocks": {
+    "M01": {
+     "count": 3,
+     "questions": [
+      56,
+      62,
+      65
+     ],
+     "severity": "轻微",
+     "deviation": "多1"
+    },
+    "M02": {
+     "count": 3,
+     "questions": [
+      52,
+      58,
+      63
+     ],
+     "severity": "轻微",
+     "deviation": "多1"
+    },
+    "M03": {
+     "count": 2,
+     "questions": [
+      54,
+      65
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M04": {
+     "count": 4,
+     "questions": [
+      54,
+      55,
+      58,
+      62
+     ],
+     "severity": "明显",
+     "deviation": "多2"
+    },
+    "M05": {
+     "count": 3,
+     "questions": [
+      53,
+      64,
+      65
+     ],
+     "severity": "轻微",
+     "deviation": "多1"
+    }
+   }
+  },
+  {
+   "part": "逻辑判断",
+   "category": "加强/支持",
+   "level": 2,
+   "real": {
+    "GD2024": {
+     "count": 1,
+     "questions": [
+      64
+     ]
+    },
+    "GD2025": {
+     "count": 1,
+     "questions": [
+      60
+     ]
+    },
+    "GD2026": {
+     "count": 2,
+     "questions": [
+      60,
+      64
+     ]
+    }
+   },
+   "range": [
+    1,
+    2
+   ],
+   "every_year": true,
+   "mocks": {
+    "M01": {
+     "count": 2,
+     "questions": [
+      57,
+      58
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M02": {
+     "count": 3,
+     "questions": [
+      54,
+      55,
+      57
+     ],
+     "severity": "轻微",
+     "deviation": "多1"
+    },
+    "M03": {
+     "count": 3,
+     "questions": [
+      52,
+      57,
+      62
+     ],
+     "severity": "轻微",
+     "deviation": "多1"
+    },
+    "M04": {
+     "count": 2,
+     "questions": [
+      52,
+      53
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M05": {
+     "count": 0,
+     "questions": [],
+     "severity": "明显",
+     "deviation": "缺失（真题每年都有）"
+    }
+   }
+  },
+  {
+   "part": "逻辑判断",
+   "category": "前提假设",
+   "level": 2,
+   "real": {
+    "GD2024": {
+     "count": 3,
+     "questions": [
+      53,
+      56,
+      62
+     ]
+    },
+    "GD2025": {
+     "count": 3,
+     "questions": [
+      51,
+      54,
+      55
+     ]
+    },
+    "GD2026": {
+     "count": 2,
+     "questions": [
+      52,
+      55
+     ]
+    }
+   },
+   "range": [
+    2,
+    3
+   ],
+   "every_year": true,
+   "mocks": {
+    "M01": {
+     "count": 0,
+     "questions": [],
+     "severity": "明显",
+     "deviation": "缺失（真题每年都有）"
+    },
+    "M02": {
+     "count": 1,
+     "questions": [
+      65
+     ],
+     "severity": "轻微",
+     "deviation": "少1"
+    },
+    "M03": {
+     "count": 1,
+     "questions": [
+      59
+     ],
+     "severity": "轻微",
+     "deviation": "少1"
+    },
+    "M04": {
+     "count": 1,
+     "questions": [
+      59
+     ],
+     "severity": "轻微",
+     "deviation": "少1"
+    },
+    "M05": {
+     "count": 3,
+     "questions": [
+      52,
+      55,
+      62
+     ],
+     "severity": "",
+     "deviation": ""
+    }
+   }
+  },
+  {
+   "part": "逻辑判断",
+   "category": "论证缺陷/评价",
+   "level": 2,
+   "real": {
+    "GD2024": {
+     "count": 0,
+     "questions": []
+    },
+    "GD2025": {
+     "count": 1,
+     "questions": [
+      61
+     ]
+    },
+    "GD2026": {
+     "count": 0,
+     "questions": []
+    }
+   },
+   "range": [
+    0,
+    1
+   ],
+   "every_year": false,
+   "mocks": {
+    "M01": {
+     "count": 1,
+     "questions": [
+      59
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M02": {
+     "count": 1,
+     "questions": [
+      64
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M03": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M04": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M05": {
+     "count": 1,
+     "questions": [
+      57
+     ],
+     "severity": "",
+     "deviation": ""
+    }
+   }
+  },
+  {
+   "part": "逻辑判断",
+   "category": "解释",
+   "level": 1,
+   "real": {
+    "GD2024": {
+     "count": 3,
+     "questions": [
+      52,
+      54,
+      65
+     ]
+    },
+    "GD2025": {
+     "count": 2,
+     "questions": [
+      52,
+      57
+     ]
+    },
+    "GD2026": {
+     "count": 3,
+     "questions": [
+      53,
+      56,
+      58
+     ]
+    }
+   },
+   "range": [
+    2,
+    3
+   ],
+   "every_year": true,
+   "mocks": {
+    "M01": {
+     "count": 1,
+     "questions": [
+      60
+     ],
+     "severity": "轻微",
+     "deviation": "少1"
+    },
+    "M02": {
+     "count": 1,
+     "questions": [
+      60
+     ],
+     "severity": "轻微",
+     "deviation": "少1"
+    },
+    "M03": {
+     "count": 1,
+     "questions": [
+      58
+     ],
+     "severity": "轻微",
+     "deviation": "少1"
+    },
+    "M04": {
+     "count": 0,
+     "questions": [],
+     "severity": "明显",
+     "deviation": "缺失（真题每年都有）"
+    },
+    "M05": {
+     "count": 2,
+     "questions": [
+      54,
+      59
+     ],
+     "severity": "",
+     "deviation": ""
+    }
+   }
+  },
+  {
+   "part": "逻辑判断",
+   "category": "结构比较",
+   "level": 1,
+   "real": {
+    "GD2024": {
+     "count": 3,
+     "questions": [
+      57,
+      60,
+      63
+     ]
+    },
+    "GD2025": {
+     "count": 3,
+     "questions": [
+      56,
+      58,
+      62
+     ]
+    },
+    "GD2026": {
+     "count": 3,
+     "questions": [
+      57,
+      61,
+      65
+     ]
+    }
+   },
+   "range": [
+    3,
+    3
+   ],
+   "every_year": true,
+   "mocks": {
+    "M01": {
+     "count": 3,
+     "questions": [
+      61,
+      63,
+      64
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M02": {
+     "count": 1,
+     "questions": [
+      61
+     ],
+     "severity": "明显",
+     "deviation": "少2"
+    },
+    "M03": {
+     "count": 3,
+     "questions": [
+      56,
+      61,
+      64
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M04": {
+     "count": 3,
+     "questions": [
+      61,
+      64,
+      65
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M05": {
+     "count": 2,
+     "questions": [
+      58,
+      61
+     ],
+     "severity": "轻微",
+     "deviation": "少1"
+    }
+   }
+  },
+  {
+   "part": "逻辑判断",
+   "category": "结构比较·推理形式/论证结构型",
+   "level": 2,
+   "real": {
+    "GD2024": {
+     "count": 3,
+     "questions": [
+      57,
+      60,
+      63
+     ]
+    },
+    "GD2025": {
+     "count": 3,
+     "questions": [
+      56,
+      58,
+      62
+     ]
+    },
+    "GD2026": {
+     "count": 3,
+     "questions": [
+      57,
+      61,
+      65
+     ]
+    }
+   },
+   "range": [
+    3,
+    3
+   ],
+   "every_year": true,
+   "mocks": {
+    "M01": {
+     "count": 2,
+     "questions": [
+      61,
+      64
+     ],
+     "severity": "轻微",
+     "deviation": "少1"
+    },
+    "M02": {
+     "count": 1,
+     "questions": [
+      61
+     ],
+     "severity": "明显",
+     "deviation": "少2"
+    },
+    "M03": {
+     "count": 2,
+     "questions": [
+      61,
+      64
+     ],
+     "severity": "轻微",
+     "deviation": "少1"
+    },
+    "M04": {
+     "count": 0,
+     "questions": [],
+     "severity": "明显",
+     "deviation": "缺失（真题每年都有）"
+    },
+    "M05": {
+     "count": 2,
+     "questions": [
+      58,
+      61
+     ],
+     "severity": "轻微",
+     "deviation": "少1"
+    }
+   }
+  },
+  {
+   "part": "逻辑判断",
+   "category": "结构比较·对话/概念错误型",
+   "level": 2,
+   "real": {
+    "GD2024": {
+     "count": 0,
+     "questions": []
+    },
+    "GD2025": {
+     "count": 0,
+     "questions": []
+    },
+    "GD2026": {
+     "count": 0,
+     "questions": []
+    }
+   },
+   "range": [
+    0,
+    0
+   ],
+   "every_year": false,
+   "mocks": {
+    "M01": {
+     "count": 1,
+     "questions": [
+      63
+     ],
+     "severity": "轻微",
+     "deviation": "多1（2024—2026均未出现）"
+    },
+    "M02": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M03": {
+     "count": 1,
+     "questions": [
+      56
+     ],
+     "severity": "轻微",
+     "deviation": "多1（2024—2026均未出现）"
+    },
+    "M04": {
+     "count": 3,
+     "questions": [
+      61,
+      64,
+      65
+     ],
+     "severity": "明显",
+     "deviation": "多3（2024—2026均未出现）"
+    },
+    "M05": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    }
+   }
+  },
+  {
+   "part": "逻辑判断",
+   "category": "归纳结论",
+   "level": 1,
+   "real": {
+    "GD2024": {
+     "count": 0,
+     "questions": []
+    },
+    "GD2025": {
+     "count": 0,
+     "questions": []
+    },
+    "GD2026": {
+     "count": 0,
+     "questions": []
+    }
+   },
+   "range": [
+    0,
+    0
+   ],
+   "every_year": false,
+   "mocks": {
+    "M01": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M02": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M03": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M04": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M05": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    }
+   }
+  },
+  {
+   "part": "科学推理",
+   "category": "物理（合计）",
+   "level": 1,
+   "real": {
+    "GD2024": {
+     "count": 2,
+     "questions": [
+      68,
+      69
+     ]
+    },
+    "GD2025": {
+     "count": 2,
+     "questions": [
+      67,
+      69
+     ]
+    },
+    "GD2026": {
+     "count": 3,
+     "questions": [
+      66,
+      67,
+      68
+     ]
+    }
+   },
+   "range": [
+    2,
+    3
+   ],
+   "every_year": true,
+   "mocks": {
+    "M01": {
+     "count": 2,
+     "questions": [
+      66,
+      67
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M02": {
+     "count": 2,
+     "questions": [
+      66,
+      67
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M03": {
+     "count": 2,
+     "questions": [
+      66,
+      67
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M04": {
+     "count": 2,
+     "questions": [
+      66,
+      67
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M05": {
+     "count": 2,
+     "questions": [
+      66,
+      67
+     ],
+     "severity": "",
+     "deviation": ""
+    }
+   }
+  },
+  {
+   "part": "科学推理",
+   "category": "物理·力学",
+   "level": 2,
+   "real": {
+    "GD2024": {
+     "count": 1,
+     "questions": [
+      68
+     ]
+    },
+    "GD2025": {
+     "count": 1,
+     "questions": [
+      67
+     ]
+    },
+    "GD2026": {
+     "count": 2,
+     "questions": [
+      66,
+      67
+     ]
+    }
+   },
+   "range": [
+    1,
+    2
+   ],
+   "every_year": true,
+   "mocks": {
+    "M01": {
+     "count": 1,
+     "questions": [
+      66
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M02": {
+     "count": 1,
+     "questions": [
+      66
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M03": {
+     "count": 2,
+     "questions": [
+      66,
+      67
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M04": {
+     "count": 1,
+     "questions": [
+      66
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M05": {
+     "count": 1,
+     "questions": [
+      66
+     ],
+     "severity": "",
+     "deviation": ""
+    }
+   }
+  },
+  {
+   "part": "科学推理",
+   "category": "物理·电学",
+   "level": 2,
+   "real": {
+    "GD2024": {
+     "count": 1,
+     "questions": [
+      69
+     ]
+    },
+    "GD2025": {
+     "count": 1,
+     "questions": [
+      69
+     ]
+    },
+    "GD2026": {
+     "count": 1,
+     "questions": [
+      68
+     ]
+    }
+   },
+   "range": [
+    1,
+    1
+   ],
+   "every_year": true,
+   "mocks": {
+    "M01": {
+     "count": 1,
+     "questions": [
+      67
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M02": {
+     "count": 1,
+     "questions": [
+      67
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M03": {
+     "count": 0,
+     "questions": [],
+     "severity": "明显",
+     "deviation": "缺失（真题每年都有）"
+    },
+    "M04": {
+     "count": 1,
+     "questions": [
+      67
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M05": {
+     "count": 1,
+     "questions": [
+      67
+     ],
+     "severity": "",
+     "deviation": ""
+    }
+   }
+  },
+  {
+   "part": "科学推理",
+   "category": "物理·光热声及其他",
+   "level": 2,
+   "real": {
+    "GD2024": {
+     "count": 0,
+     "questions": []
+    },
+    "GD2025": {
+     "count": 0,
+     "questions": []
+    },
+    "GD2026": {
+     "count": 0,
+     "questions": []
+    }
+   },
+   "range": [
+    0,
+    0
+   ],
+   "every_year": false,
+   "mocks": {
+    "M01": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M02": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M03": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M04": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M05": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    }
+   }
+  },
+  {
+   "part": "科学推理",
+   "category": "化学",
+   "level": 1,
+   "real": {
+    "GD2024": {
+     "count": 1,
+     "questions": [
+      66
+     ]
+    },
+    "GD2025": {
+     "count": 1,
+     "questions": [
+      66
+     ]
+    },
+    "GD2026": {
+     "count": 0,
+     "questions": []
+    }
+   },
+   "range": [
+    0,
+    1
+   ],
+   "every_year": false,
+   "mocks": {
+    "M01": {
+     "count": 1,
+     "questions": [
+      68
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M02": {
+     "count": 1,
+     "questions": [
+      68
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M03": {
+     "count": 1,
+     "questions": [
+      68
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M04": {
+     "count": 1,
+     "questions": [
+      68
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M05": {
+     "count": 1,
+     "questions": [
+      68
+     ],
+     "severity": "",
+     "deviation": ""
+    }
+   }
+  },
+  {
+   "part": "科学推理",
+   "category": "生物",
+   "level": 1,
+   "real": {
+    "GD2024": {
+     "count": 1,
+     "questions": [
+      70
+     ]
+    },
+    "GD2025": {
+     "count": 1,
+     "questions": [
+      70
+     ]
+    },
+    "GD2026": {
+     "count": 1,
+     "questions": [
+      70
+     ]
+    }
+   },
+   "range": [
+    1,
+    1
+   ],
+   "every_year": true,
+   "mocks": {
+    "M01": {
+     "count": 1,
+     "questions": [
+      69
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M02": {
+     "count": 1,
+     "questions": [
+      69
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M03": {
+     "count": 1,
+     "questions": [
+      69
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M04": {
+     "count": 1,
+     "questions": [
+      69
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M05": {
+     "count": 1,
+     "questions": [
+      69
+     ],
+     "severity": "",
+     "deviation": ""
+    }
+   }
+  },
+  {
+   "part": "科学推理",
+   "category": "地理",
+   "level": 1,
+   "real": {
+    "GD2024": {
+     "count": 1,
+     "questions": [
+      67
+     ]
+    },
+    "GD2025": {
+     "count": 1,
+     "questions": [
+      68
+     ]
+    },
+    "GD2026": {
+     "count": 1,
+     "questions": [
+      69
+     ]
+    }
+   },
+   "range": [
+    1,
+    1
+   ],
+   "every_year": true,
+   "mocks": {
+    "M01": {
+     "count": 1,
+     "questions": [
+      70
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M02": {
+     "count": 1,
+     "questions": [
+      70
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M03": {
+     "count": 1,
+     "questions": [
+      70
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M04": {
+     "count": 1,
+     "questions": [
+      70
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M05": {
+     "count": 1,
+     "questions": [
+      70
+     ],
+     "severity": "",
+     "deviation": ""
+    }
+   }
+  },
+  {
+   "part": "科学推理",
+   "category": "带图（含表格）",
+   "level": 3,
+   "real": {
+    "GD2024": {
+     "count": 4,
+     "questions": [
+      66,
+      67,
+      68,
+      69
+     ]
+    },
+    "GD2025": {
+     "count": 4,
+     "questions": [
+      66,
+      67,
+      68,
+      69
+     ]
+    },
+    "GD2026": {
+     "count": 5,
+     "questions": [
+      66,
+      67,
+      68,
+      69,
+      70
+     ]
+    }
+   },
+   "range": [
+    4,
+    5
+   ],
+   "every_year": true,
+   "mocks": {
+    "M01": {
+     "count": 3,
+     "questions": [
+      66,
+      67,
+      70
+     ],
+     "severity": "轻微",
+     "deviation": "少1"
+    },
+    "M02": {
+     "count": 3,
+     "questions": [
+      66,
+      67,
+      70
+     ],
+     "severity": "轻微",
+     "deviation": "少1"
+    },
+    "M03": {
+     "count": 5,
+     "questions": [
+      66,
+      67,
+      68,
+      69,
+      70
+     ],
+     "severity": "",
+     "deviation": ""
+    },
+    "M04": {
+     "count": 2,
+     "questions": [
+      66,
+      67
+     ],
+     "severity": "明显",
+     "deviation": "少2"
+    },
+    "M05": {
+     "count": 3,
+     "questions": [
+      66,
+      67,
+      70
+     ],
+     "severity": "轻微",
+     "deviation": "少1"
+    }
+   }
+  },
+  {
+   "part": "科学推理",
+   "category": "其中：选项为图",
+   "level": 3,
+   "real": {
+    "GD2024": {
+     "count": 1,
+     "questions": [
+      69
+     ]
+    },
+    "GD2025": {
+     "count": 0,
+     "questions": []
+    },
+    "GD2026": {
+     "count": 3,
+     "questions": [
+      67,
+      68,
+      69
+     ]
+    }
+   },
+   "range": [
+    0,
+    3
+   ],
+   "every_year": false,
+   "mocks": {
+    "M01": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M02": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M03": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M04": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    },
+    "M05": {
+     "count": 0,
+     "questions": [],
+     "severity": "",
+     "deviation": ""
+    }
+   }
+  }
+ ],
+ "positions": {
+  "GD2024": {
+   "图形推理": "46样式(九宫格) 47数量(一组图) 48空间·折纸剪纸 49空间·三视图 50空间·立体拼合",
+   "逻辑判断": "51翻译 52解释 53前提 54解释 55分析 56前提 57结构 58分析 59削弱 60结构 61削弱 62前提 63结构 64加强 65解释",
+   "科学推理": "66化学 67地理 68力学 69电学(选项图) 70生物(无图)"
+  },
+  "GD2025": {
+   "图形推理": "46空间·三视图 47样式(分组) 48位置(分组) 49位置(一组图) 50空间·立体拼合",
+   "逻辑判断": "51前提 52解释 53分析 54前提 55前提 56结构 57解释 58结构 59分析 60加强 61缺陷评价 62结构 63削弱 64分析 65削弱",
+   "科学推理": "66化学(表) 67力学 68地理 69电学 70生物(无图)"
+  },
+  "GD2026": {
+   "图形推理": "46数量(一组图) 47属性(九宫格) 48空间·平面拼合 49立体块(一组图) 50空间·展开图",
+   "逻辑判断": "51翻译 52前提 53解释 54翻译 55前提 56解释 57结构 58解释 59削弱 60加强 61结构 62分析 63分析 64加强 65结构",
+   "科学推理": "66力学 67力学(选项图) 68电学(选项图) 69地理(选项图) 70生物"
+  },
+  "M01": {
+   "图形推理": "46数量(一组图) 47数量(一组图) 48属性(九宫格) 49位置(一组图) 50样式(九宫格)",
+   "逻辑判断": "51翻译 52分析 53分析 54真假 55分析 56削弱 57加强 58加强 59缺陷评价 60解释 61结构 62削弱 63结构* 64结构 65削弱",
+   "科学推理": "66力学 67电学 68化学(无图) 69生物(无图) 70地理"
+  },
+  "M02": {
+   "图形推理": "46位置(一组图) 47样式(九宫格) 48数量(一组图) 49空间·折纸剪纸 50空间·展开图",
+   "逻辑判断": "51翻译 52削弱 53分析 54加强 55加强 56真假 57加强 58削弱 59分析 60解释 61结构 62翻译 63削弱 64缺陷评价 65前提",
+   "科学推理": "66力学 67电学 68化学(无图) 69生物(无图) 70地理(表)"
+  },
+  "M03": {
+   "图形推理": "46属性(一组图) 47位置(一组图) 48样式(九宫格) 49立体块(九宫格) 50空间·立体拼合",
+   "逻辑判断": "51真假 52加强 53分析 54削弱 55分析 56结构* 57加强 58解释 59前提 60真假 61结构 62加强 63分析 64结构 65削弱",
+   "科学推理": "66力学 67力学 68化学 69生物 70地理"
+  },
+  "M04": {
+   "图形推理": "46位置(一组图) 47位置(一组图) 48字符串(字符串) 49空间·展开图 50空间·立体旋转辨识",
+   "逻辑判断": "51翻译 52加强 53加强 54削弱 55削弱 56分析 57分析 58削弱 59前提 60真假 61结构* 62削弱 63分析 64结构* 65结构*",
+   "科学推理": "66力学 67电学 68化学(无图) 69生物(无图) 70地理(无图)"
+  },
+  "M05": {
+   "图形推理": "46位置(一组图) 47数量(九宫格) 48字符串(字符串) 49空间·展开图 50空间·截面",
+   "逻辑判断": "51翻译 52前提 53削弱 54解释 55前提 56分析 57缺陷评价 58结构 59解释 60分析 61结构 62前提 63真假 64削弱 65削弱",
+   "科学推理": "66力学 67电学 68化学(无图) 69生物(无图) 70地理"
+  }
+ },
+ "deviations": {
+  "major": [
+   {
+    "rank": 1,
+    "severity": "明显",
+    "papers": [
+     "M01"
+    ],
+    "part": "图形推理",
+    "title": "没有空间类，5道全是规律类",
+    "detail": "空间类0道（真题每年2—3道），规律类5道（真题2—3道），因而也没有每年都有的拼合题。连带：数量类2道（46、47，真题0—1）、一组图3道（46、47、49，真题1—2）、九宫格2道（48、50，真题0—1）；第50题是九宫格叠加题，而真题第50题三年都是空间题。",
+    "questions": {
+     "M01": [
+      46,
+      47,
+      48,
+      49,
+      50
+     ]
+    }
+   },
+   {
+    "rank": 2,
+    "severity": "明显",
+    "papers": [
+     "M04"
+    ],
+    "part": "逻辑判断",
+    "title": "没有解释题；削弱4道",
+    "detail": "解释0道（真题每年2—3道）；削弱4道（真题1—2道）。论证合计7道在范围内，但集中在削弱。",
+    "questions": {
+     "M04": [
+      54,
+      55,
+      58,
+      62
+     ]
+    }
+   },
+   {
+    "rank": 3,
+    "severity": "明显",
+    "papers": [
+     "M01"
+    ],
+    "part": "逻辑判断",
+    "title": "没有前提假设题",
+    "detail": "前提假设0道（真题每年2—3道）。本卷论证题为削弱3（56、62、65）、加强2（57、58）、提问评价1（59）。",
+    "questions": {
+     "M01": []
+    }
+   },
+   {
+    "rank": 4,
+    "severity": "明显",
+    "papers": [
+     "M02"
+    ],
+    "part": "逻辑判断",
+    "title": "结构比较只有1道",
+    "detail": "结构比较仅第61题（真题每年恰3道）；题量转到了加强3道（54、55、57）和削弱3道（52、58、63）。",
+    "questions": {
+     "M02": [
+      61
+     ]
+    }
+   },
+   {
+    "rank": 5,
+    "severity": "明显",
+    "papers": [
+     "M05"
+    ],
+    "part": "逻辑判断",
+    "title": "没有加强/支持题",
+    "detail": "加强0道（真题每年1—2道）；论证7道为削弱3（53、64、65）、前提假设3（52、55、62）、论证缺陷1（57）。",
+    "questions": {
+     "M05": []
+    }
+   },
+   {
+    "rank": 6,
+    "severity": "明显",
+    "papers": [
+     "M03"
+    ],
+    "part": "科学推理",
+    "title": "没有电学题",
+    "detail": "第66题（浮力与液体压强）、第67题（平抛）都是力学，电学0道（真题每年1道：GD2024第69、GD2025第69、GD2026第68题）。",
+    "questions": {
+     "M03": [
+      66,
+      67
+     ]
+    }
+   },
+   {
+    "rank": 7,
+    "severity": "明显",
+    "papers": [
+     "M03"
+    ],
+    "part": "逻辑判断",
+    "title": "真假推理2道",
+    "detail": "第51题（三个判断两项错误）、第60题（只有会计师预言正确）。2024—2026三年真题均无真假推理（2022年乡镇、县级卷各1道，2023年县级卷1道）。形式逻辑合计因此为5道（51、53、55、60、63；真题3—4）。",
+    "questions": {
+     "M03": [
+      51,
+      60
+     ]
+    }
+   },
+   {
+    "rank": 8,
+    "severity": "明显",
+    "papers": [
+     "M04"
+    ],
+    "part": "逻辑判断",
+    "title": "结构比较没有一道“推理形式/论证结构”题",
+    "detail": "3道结构比较是第61题（对话方式）、第64题（对话中的论证方式）、第65题（概念并列不当的逻辑错误）；真题三年各3道，全部是题干给一段推理或论证、比较推理形式或论证结构的题。总数对上了，但练不到真题那种形式化比较。",
+    "questions": {
+     "M04": [
+      61,
+      64,
+      65
+     ]
+    }
+   },
+   {
+    "rank": 9,
+    "severity": "明显",
+    "papers": [
+     "M02",
+     "M04",
+     "M05"
+    ],
+    "part": "图形推理",
+    "title": "空间题里没有拼合",
+    "detail": "真题每年1道拼合（GD2024第50、GD2025第50题立体拼合，GD2026第48题平面拼合）。M02的空间题是第49题折纸剪纸和第50题正方体展开图（展开与折叠2道，比真题0—1多1）；M04是第49题展开图和第50题立体图形旋转辨识；M05是第49题展开图棱对应和第50题截面（截面2022—2026均未出现）。注：若把平面拼合与立体拼合分开算，立体拼合三年两见，此条可降为轻微；但五套只有M03第50题一道拼合，整体偏少是确定的。",
+    "questions": {
+     "M02": [
+      49,
+      50
+     ],
+     "M04": [
+      49,
+      50
+     ],
+     "M05": [
+      49,
+      50
+     ]
+    }
+   },
+   {
+    "rank": 10,
+    "severity": "明显",
+    "papers": [
+     "M04"
+    ],
+    "part": "科学推理",
+    "title": "带图题只有2道",
+    "detail": "只有第66、67题带图，第68—70题都是纯文字（真题带图4—5道：2024、2025仅第70题无图，2026全部带图）。属呈现形式偏离，学科配比本身正常。",
+    "questions": {
+     "M04": [
+      66,
+      67
+     ]
+    }
+   }
+  ],
+  "minor": {
+   "M01": [
+    {
+     "part": "逻辑判断",
+     "text": "形式逻辑5道（51翻译、52/53/55分析、54真假；真题3—4），多1；其中第54题真假推理为2024—2026未出现的题型",
+     "questions": [
+      51,
+      52,
+      53,
+      54,
+      55
+     ]
+    },
+    {
+     "part": "逻辑判断",
+     "text": "削弱3道（56、62、65；真题1—2），多1",
+     "questions": [
+      56,
+      62,
+      65
+     ]
+    },
+    {
+     "part": "逻辑判断",
+     "text": "解释1道（60；真题2—3），少1",
+     "questions": [
+      60
+     ]
+    },
+    {
+     "part": "逻辑判断",
+     "text": "推理形式类结构比较2道（61、64），少1；第63题为对话型，近三年未出现",
+     "questions": [
+      63
+     ]
+    },
+    {
+     "part": "科学推理",
+     "text": "带图3道（66、67、70；真题4—5），少1",
+     "questions": [
+      66,
+      67,
+      70
+     ]
+    },
+    {
+     "part": "题位",
+     "text": "第51—55题连续5道形式逻辑，真题是各类穿插排列；第50题不是空间题",
+     "questions": [
+      51,
+      52,
+      53,
+      54,
+      55,
+      50
+     ]
+    }
+   ],
+   "M02": [
+    {
+     "part": "逻辑判断",
+     "text": "加强3道（54、55、57；真题1—2），多1",
+     "questions": [
+      54,
+      55,
+      57
+     ]
+    },
+    {
+     "part": "逻辑判断",
+     "text": "削弱3道（52、58、63；真题1—2），多1；论证合计8道（真题5—7），多1",
+     "questions": [
+      52,
+      58,
+      63
+     ]
+    },
+    {
+     "part": "逻辑判断",
+     "text": "前提假设1道（65；真题2—3），少1",
+     "questions": [
+      65
+     ]
+    },
+    {
+     "part": "逻辑判断",
+     "text": "解释1道（60；真题2—3），少1",
+     "questions": [
+      60
+     ]
+    },
+    {
+     "part": "逻辑判断",
+     "text": "形式逻辑5道（51、53、56、59、62；真题3—4），多1；其中第56题真假推理近三年未出现",
+     "questions": [
+      56
+     ]
+    },
+    {
+     "part": "图形推理",
+     "text": "展开与折叠2道（49折纸剪纸、50展开图；真题0—1），多1",
+     "questions": [
+      49,
+      50
+     ]
+    },
+    {
+     "part": "科学推理",
+     "text": "带图3道（66、67、70为表格；真题4—5），少1",
+     "questions": [
+      66,
+      67,
+      70
+     ]
+    }
+   ],
+   "M03": [
+    {
+     "part": "图形推理",
+     "text": "空间类1道（50；真题2—3）、规律类4道（真题2—3），各差1；第49题是立体块九宫格，有一定空间成分",
+     "questions": [
+      49,
+      50
+     ]
+    },
+    {
+     "part": "图形推理",
+     "text": "九宫格2道（48、49；真题0—1），多1",
+     "questions": [
+      48,
+      49
+     ]
+    },
+    {
+     "part": "逻辑判断",
+     "text": "加强3道（52、57、62；真题1—2），多1",
+     "questions": [
+      52,
+      57,
+      62
+     ]
+    },
+    {
+     "part": "逻辑判断",
+     "text": "前提假设1道（59；真题2—3），少1",
+     "questions": [
+      59
+     ]
+    },
+    {
+     "part": "逻辑判断",
+     "text": "解释1道（58；真题2—3），少1",
+     "questions": [
+      58
+     ]
+    },
+    {
+     "part": "逻辑判断",
+     "text": "推理形式类结构比较2道（61、64），少1；第56题为对话型",
+     "questions": [
+      56
+     ]
+    }
+   ],
+   "M04": [
+    {
+     "part": "逻辑判断",
+     "text": "形式逻辑5道（51、56、57、60、63；真题3—4），多1；其中第60题真假推理近三年未出现",
+     "questions": [
+      60
+     ]
+    },
+    {
+     "part": "逻辑判断",
+     "text": "前提假设1道（59；真题2—3），少1",
+     "questions": [
+      59
+     ]
+    },
+    {
+     "part": "图形推理",
+     "text": "第48题字符串：2024—2026未出现（2023旧卷出现过）",
+     "questions": [
+      48
+     ]
+    },
+    {
+     "part": "图形推理",
+     "text": "第50题立体图形旋转辨识：2024—2026未出现",
+     "questions": [
+      50
+     ]
+    }
+   ],
+   "M05": [
+    {
+     "part": "逻辑判断",
+     "text": "削弱3道（53、64、65；真题1—2），多1",
+     "questions": [
+      53,
+      64,
+      65
+     ]
+    },
+    {
+     "part": "逻辑判断",
+     "text": "结构比较2道（58、61；真题每年3），少1",
+     "questions": [
+      58,
+      61
+     ]
+    },
+    {
+     "part": "逻辑判断",
+     "text": "真假推理1道（63），近三年未出现；第60题为“猜对几个”的排序题，若也计真假则为2道",
+     "questions": [
+      63,
+      60
+     ]
+    },
+    {
+     "part": "图形推理",
+     "text": "第50题截面：2022—2026均未出现",
+     "questions": [
+      50
+     ]
+    },
+    {
+     "part": "图形推理",
+     "text": "第48题字符串：2024—2026未出现（2023旧卷出现过）",
+     "questions": [
+      48
+     ]
+    },
+    {
+     "part": "科学推理",
+     "text": "带图3道（66、67、70；真题4—5），少1",
+     "questions": [
+      66,
+      67,
+      70
+     ]
+    }
+   ]
+  }
+ },
+ "systemic": [
+  "真假推理：五套都有（M01—M05依次1、1、2、1、1道），而2024—2026三年真题均为0（2022年乡镇、县级卷各1道，2023年县级卷1道）。",
+  "前提假设偏少：依次0、1、1、1、3道（真题2—3），只有M05达标。",
+  "解释偏少：依次1、1、1、0、2道（真题2—3），只有M05达标。",
+  "削弱偏多：依次3、3、2、4、3道（真题1—2），只有M03在范围内。",
+  "形式逻辑合计偏多：依次5、5、5、5、4道（真题3—4），多出的主要就是真假推理。",
+  "图推拼合与三视图偏少：拼合五套只有M03一道（真题每年1道）；三视图五套都没有（真题2024、2025各1道）。同时出现了近三年没有的截面（M05第50题）、立体旋转辨识（M04第50题）和字符串（M04、M05第48题）。",
+  "科学推理学科配比贴合：除M03外，各卷都是力学、电学、化学、生物、地理各1道，与2024、2025完全一致。但带图偏少（依次3、3、5、2、3道，真题4—5），选项为图五套都是0（真题2024有1道、2026有3道）。",
+  "科学推理题序固定为“力—电—化—生—地”，第70题都是地理；真题第70题三年都是生物，化学出现时在第66题，电学在第68—69题。只影响题位，不影响数量。"
+ ],
+ "uncertain": [
+  "GD2026为回忆版、无答案：第46题按箭头数递增判为数量类，第47题按行内曲直判为属性类，第49题立体块序列规律未能确证，单列“立体块元素”，与M03第49题同类比较，不计入数量类。",
+  "GD2025第53、64题含条件句，按官方解析的“分析题干条件、假设法”计为分析推理，故翻译推理范围为0—2、分析推理为2—3。若按内容改计翻译推理，翻译变为每年1—2道（M03的0道会变成缺失），分析变为1—2道（M01、M03、M04各多1）；形式逻辑合计3—4不变，上面的主要结论不受影响。",
+  "边界题：M03第63题（假设法推录用人数）计分析推理；M05第60题（已知各人猜对几个的排序）计分析推理；M02第46题、M04第47题位置兼数量，按位置计；M03第48题样式兼旋转，按样式计。",
+  "“拼合”合并了立体拼合与平面拼合，“结构比较”再拆出推理形式/论证结构型与对话/概念错误型，这两处是按真题实际情况做的细化，真题与模拟卷用同一口径。",
+  "2024、2026为网友回忆版，个别措辞可能与原卷有出入，不影响题型判断。"
+ ]
+}
