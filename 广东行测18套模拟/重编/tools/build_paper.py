@@ -206,7 +206,7 @@ def material_blocks(m, new_id, log, number):
                 out.append({"type": "chart", "title": blk["title"], "svg_path": rel, "print_width_mm": round(w_mm, 1),
                             "values": charts.text_values(spec), "source_table": {k: blk[k] for k in ("headers", "rows")},
                             "notes": blk.get("notes") or ""})
-                log.add(number, "统计图", f"{blk['title']}：原图未入库，按转写数据重绘为{ {'bar': '柱状图', 'line': '折线图', 'combo': '柱线图', 'pie': '饼图', 'hbar': '条形图'}[spec['kind']] }，按原图印宽{w_mm:.1f}mm")
+                log.add(number, "统计图", f"{blk['title']}：原图未入库，按转写数据重绘为{ {'bar': '柱状图', 'line': '折线图', 'combo': '柱线图', 'pie': '饼图', 'hbar': '条形图', 'hbar2': '条形图', 'stack': '堆积柱状图', 'multipie': '饼图'}[spec['kind']] }，按原图印宽{w_mm:.1f}mm")
             else:
                 out.append({k: v for k, v in blk.items() if k != "source_asset_id"})
         else:
