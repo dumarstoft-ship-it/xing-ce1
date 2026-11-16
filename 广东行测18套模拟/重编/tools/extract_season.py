@@ -10,6 +10,15 @@ ROOT = Path(__file__).resolve().parents[3]          # 仓库根
 BANK = ROOT / "模考/2026下半年广东卷_16-33季_AI可读"
 SERIES = ROOT / "广东行测18套模拟"
 
+
+def old_selection(paper_dir):
+    """旧版（0.x）选编记录：归档前在套卷目录，归档后在 历史版本/<版本>/。"""
+    p = paper_dir / "selection.json"
+    if p.exists():
+        return p
+    cands = sorted(paper_dir.glob("历史版本/0.*/selection.json"))
+    return cands[-1]
+
 def blocks_md(blocks):
     out = []
     for b in blocks:
@@ -73,7 +82,7 @@ def main(paper, season):
     prior = {}
     ids = {q["id"] for q in items}
     for p in ["M01", "M02", "M03", "M04", "M05"]:
-        for q in json.load(open(SERIES / p / "selection.json", encoding="utf-8")):
+        for q in json.load(open(old_selection(SERIES / p), encoding="utf-8")):
             if q.get("source_id") in ids:
                 prior[q["source_id"]] = {"old_paper": p, "old_number": q["number"], "answer": q.get("answer"),
                                          "analysis": q.get("analysis"), "edits": q.get("edits")}

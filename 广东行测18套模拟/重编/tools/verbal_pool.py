@@ -10,6 +10,15 @@ ROOT = Path(__file__).resolve().parents[3]
 S = ROOT / "广东行测18套模拟"
 OUT = S / "重编/言语"
 
+
+def old_selection(paper_dir):
+    """旧版（0.x）选编记录：归档前在套卷目录，归档后在 历史版本/<版本>/。"""
+    p = paper_dir / "selection.json"
+    if p.exists():
+        return p
+    cands = sorted(paper_dir.glob("历史版本/0.*/selection.json"))
+    return cands[-1]
+
 def norm(s):
     s = html.unescape(unicodedata.normalize("NFKC", str(s)))
     s = re.sub(r"<[^>\n]{0,300}>", "", s)
@@ -83,14 +92,9 @@ def old_corpus():
 def used_and_withdrawn():
     used, withdrawn = {}, {}
     for p in ["M01", "M02", "M03", "M04", "M05"]:
-        for q in json.load(open(S / p / "selection.json", encoding="utf-8")):
+        for q in json.load(open(old_selection(S / p), encoding="utf-8")):
             if q.get("source_id"):
                 used[q["source_id"]] = f"{p}第{q['number']}题"
-    for f in [S / "M02/撤题记录.json", S / "M04/撤题记录_v020.json"]:
-        for r in json.load(open(f, encoding="utf-8")):
-            withdrawn[r["source_id"]] = r.get("reason", "")
-    for r in json.load(open(S / "M04/候选淘汰记录.json", encoding="utf-8")).get("duplicate_replacements", []):
-        pass  # 只是与前卷重复而换下，题本身没有问题
     for p in ["M01", "M02", "M03", "M04", "M05"]:
         for f in (S / p).rglob("*撤*"):
             if f.suffix == ".json":
