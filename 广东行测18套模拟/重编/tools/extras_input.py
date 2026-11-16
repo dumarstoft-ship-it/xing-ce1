@@ -26,6 +26,24 @@ def jz_md(s):
     return IMG.sub(lambda m: f"[图：{JZ / m.group(1)}]", s or "").strip()
 
 
+def apply_plan(q, plan):
+    """套用编排里的题干整段替换和文字改动，使盲做题面与印出来的一致。"""
+    sid = q["id"]
+    ov = (plan.get("stem_override") or {}).get(sid)
+    if ov:
+        q["stem"] = [dict(b) for b in ov["stem"]]
+    q["options"] = {k: [dict(b) for b in v] for k, v in q["options"].items()}
+    q["stem"] = [dict(b) for b in q["stem"]]
+    for e in plan.get("edits", []):
+        if e["source"] != sid:
+            continue
+        blocks = q["stem"] if e["where"] == "stem" else q["options"][e["where"]]
+        hit = [b for b in blocks if b["type"] == "text" and e["old"] in b["text"]]
+        assert len(hit) == 1, (sid, e["old"])
+        hit[0]["text"] = hit[0]["text"].replace(e["old"], e["new"])
+    return q
+
+
 def main(paper, extra_numbers):
     plan = json.loads((R / paper / "编排.json").read_text(encoding="utf-8"))
     mock = {q["id"]: q for q in jl(BANK / "全部题目.jsonl")}
@@ -66,10 +84,15 @@ def main(paper, extra_numbers):
             s = [f"### 第{n}题　`{sid}`（改写）", rw["stem"]] + [f"{k}. {v}" for k, v in rw["options"].items()]
             out.append("\n\n".join(s))
         else:
-            q = dict(mock[sid], number=n)
+            q = apply_plan(dict(mock[sid], number=n), plan)
             if q.get("material"):
                 out.append(f"## 资料：第{n}题所在材料\n\n" + blocks_md(q["material"]["blocks"]))
-            out.append(q_md(q))
+            md = q_md(q).replace(f"[图：{BANK}/广东行测18套模拟/", f"[图：{ROOT}/广东行测18套模拟/")
+            for svg in re.findall(r"\[图：([^\]]+\.svg)\]", md):     # 编辑重画的SVG另给渲染好的PNG
+                png = Path(svg).with_name(Path(svg).stem + "_preview.png")
+                if png.exists():
+                    md = md.replace(f"[图：{svg}]", f"[图：{svg}]（渲染PNG：{png}）")
+            out.append(md)
     dst = R / paper / "复核" / "extras_input.md"
     dst.parent.mkdir(parents=True, exist_ok=True)
     dst.write_text("\n\n".join(out) + "\n", encoding="utf-8")

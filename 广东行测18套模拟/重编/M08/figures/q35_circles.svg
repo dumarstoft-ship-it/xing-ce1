@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="317.05pt" height="61.93pt" viewBox="0 0 317.05 61.93">
+<rect width="100%" height="100%" fill="#fff"/>
+<g stroke="#000" stroke-width="0.8" fill="none">
+<circle cx="30.96" cy="30.96" r="29.76"/>
+<path d="M1.20,30.96 L60.73,30.96 M30.96,1.20 L30.96,60.73"/>
+<circle cx="116.00" cy="30.96" r="29.76"/>
+<path d="M86.24,30.96 L145.77,30.96 M116.00,1.20 L116.00,60.73"/>
+<circle cx="201.04" cy="30.96" r="29.76"/>
+<path d="M171.28,30.96 L230.81,30.96 M201.04,1.20 L201.04,60.73"/>
+<circle cx="286.08" cy="30.96" r="29.76"/>
+<path d="M256.32,30.96 L315.85,30.96 M286.08,1.20 L286.08,60.73"/>
+</g>
+<g font-family='"ZG Latin", "ZG Song"' fill="#000">
+<text x="17.57" y="21.35" font-size="10.5" text-anchor="middle">2</text>
+<text x="44.36" y="21.35" font-size="10.5" text-anchor="middle">6</text>
+<text x="17.57" y="48.14" font-size="10.5" text-anchor="middle">10</text>
+<text x="44.36" y="48.14" font-size="10.5" text-anchor="middle">8</text>
+<text x="102.61" y="21.35" font-size="10.5" text-anchor="middle">5</text>
+<text x="129.40" y="21.35" font-size="10.5" text-anchor="middle">11</text>
+<text x="102.61" y="48.14" font-size="10.5" text-anchor="middle">4</text>
+<text x="129.40" y="48.14" font-size="10.5" text-anchor="middle">3</text>
+<text x="187.65" y="21.35" font-size="10.5" text-anchor="middle">7</text>
+<text x="214.44" y="21.35" font-size="10.5" text-anchor="middle">17</text>
+<text x="187.65" y="48.14" font-size="10.5" text-anchor="middle">11</text>
+<text x="214.44" y="48.14" font-size="10.5" text-anchor="middle">4</text>
+<text x="272.69" y="21.35" font-size="10.5" text-anchor="middle">？</text>
+<text x="299.48" y="21.35" font-size="10.5" text-anchor="middle">9</text>
+<text x="272.69" y="48.14" font-size="10.5" text-anchor="middle">18</text>
+<text x="299.48" y="48.14" font-size="10.5" text-anchor="middle">3</text>
+</g>
+</svg>
