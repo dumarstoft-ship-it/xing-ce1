@@ -78,7 +78,7 @@ def main():
         "",
     ]
     for x in changes:
-        lines.append(f"- 第{x['number']}题，{x['kind']}：{x['detail']}")
+        lines.append(f"- 第{x['number']}题，{x['kind']}：{x['detail']}".replace("\n", "⏎"))   # 改动原文里的换行显示为⏎，不断开列表
     if not changes:
         lines.append("- 无")
     lines += [

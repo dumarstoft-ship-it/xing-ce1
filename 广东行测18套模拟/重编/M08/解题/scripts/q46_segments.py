@@ -97,3 +97,28 @@ for k, v in results.items():
     outer = sum(v[x] == 'S' for x in order[:8])
     inner = sum(v[x] == 'S' for x in order[8:])
     print(k, outer, inner, outer + inner)
+
+# ---- rule check: outer ring (8 unit edges, clockwise from top-left) shifts one edge
+# clockwise per step; inner cross (4 arms) rotates 90 degrees counter-clockwise per step.
+ring = order[:8]            # T1 T2 R1 R2 B2 B1 L2 L1  (clockwise)
+arms = ['Vu', 'Hl', 'Vd', 'Hr']   # up, left, down, right  (counter-clockwise order)
+
+
+def outer(lbl):
+    return ''.join(results[lbl][k] for k in ring)
+
+
+def inner(lbl):
+    return ''.join(results[lbl][k] for k in arms)
+
+
+figs = ['fig1', 'fig2', 'fig3', 'fig4', 'fig5']
+ok_outer = all(outer(b) == outer(a)[-1] + outer(a)[:-1] for a, b in zip(figs, figs[1:]))
+ok_inner = all(inner(b) == inner(a)[-1] + inner(a)[:-1] for a, b in zip(figs, figs[1:]))
+print('\nouter ring shifts 1 edge clockwise each step:', ok_outer)
+print('inner cross rotates 90 deg counter-clockwise each step:', ok_inner)
+pred_outer = outer('fig5')[-1] + outer('fig5')[:-1]
+pred_inner = inner('fig5')[-1] + inner('fig5')[:-1]
+print('predicted 6th: outer', pred_outer, 'inner(up,left,down,right)', pred_inner)
+for o in 'ABCD':
+    print(o, 'outer', outer(o), 'inner', inner(o), '<- match' if (outer(o), inner(o)) == (pred_outer, pred_inner) else '')
