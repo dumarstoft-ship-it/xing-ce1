@@ -382,10 +382,15 @@ def build(paper):
                         rec["materials"] = [{"id": mat_ids[m["id"]], "blocks": material_blocks(m, mat_ids[m["id"]], log, n)}]
                     else:
                         rec["materials"] = [x for x in questions if x["materials"] and x["materials"][0]["id"] == mat_ids[m["id"]]][0]["materials"]
-            else:
+            elif sid in JZ_Q:
                 g = JZ_Q[sid]
                 rec["stem"] = md_blocks(g["stem"])
                 rec["options"] = {k: md_blocks(t) for k, t in g["options"].items()}
+                # 选项画在题图里时，江浙题库的选项文字只是字母本身
+                if all([b.get("text", "").strip() for b in v] in ([k], []) for k, v in rec["options"].items()):
+                    rec["options"] = {k: [{"type": "text", "text": f"见题图中的 {k} 选项"}] for k in rec["options"]}
+            else:
+                raise SystemExit(f"{paper}第{n}题：找不到来源 {sid}")
             rw = (plan.get("rewrite") or {}).get(sid)
             if rw:
                 rec["stem"] = [{"type": "text", "text": rw["stem"]}]
