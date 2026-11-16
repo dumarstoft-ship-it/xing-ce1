@@ -1,0 +1,1019 @@
+{
+  "status": "PASS",
+  "checked_version": "0.1.0",
+  "checks": 40,
+  "quantitative_and_data_questions": 35,
+  "records": [
+    {
+      "number": 31,
+      "computed_answer": "C",
+      "agrees": true,
+      "details": {
+        "first_differences": [
+          13,
+          27,
+          45,
+          67
+        ],
+        "second_differences": [
+          14,
+          18,
+          22
+        ],
+        "next": 248
+      },
+      "source_input_sha256": "3c2037682b81af76c976eef0b1f87b6c67c39f1a4980d15bba6c3b3c5c2b5f4f"
+    },
+    {
+      "number": 32,
+      "computed_answer": "A",
+      "agrees": true,
+      "details": {
+        "method": "odd/even digit-pair doubling, not decimal multiplication",
+        "next_pair": [
+          36,
+          4
+        ]
+      },
+      "source_input_sha256": "074d7c2f0830c76c623a7c1608f4e871b891d4bd4abd6ae6e2bac356927b3b19"
+    },
+    {
+      "number": 33,
+      "computed_answer": "A",
+      "agrees": true,
+      "details": {
+        "numerators": [
+          2,
+          4,
+          7,
+          12,
+          19
+        ],
+        "denominators": [
+          15,
+          18,
+          22,
+          27,
+          33
+        ],
+        "next": {
+          "fraction": "3/4",
+          "decimal": 0.75
+        }
+      },
+      "source_input_sha256": "8020b4995d18b1f41d166b068793b8452f22fb28b027f03c389c3ff318e35f05"
+    },
+    {
+      "number": 34,
+      "computed_answer": "C",
+      "agrees": true,
+      "details": {
+        "recurrence_values": [
+          {
+            "fraction": "48",
+            "decimal": 48.0
+          },
+          {
+            "fraction": "32",
+            "decimal": 32.0
+          },
+          {
+            "fraction": "56",
+            "decimal": 56.0
+          },
+          {
+            "fraction": "72",
+            "decimal": 72.0
+          },
+          {
+            "fraction": "100",
+            "decimal": 100.0
+          },
+          {
+            "fraction": "136",
+            "decimal": 136.0
+          },
+          {
+            "fraction": "186",
+            "decimal": 186.0
+          }
+        ]
+      },
+      "source_input_sha256": "b845cfebb7f9cd921dfb9ef032f635c5609e018d1d80948b18fd909ee6862602"
+    },
+    {
+      "number": 35,
+      "computed_answer": "A",
+      "agrees": true,
+      "details": {
+        "odd_differences": [
+          4,
+          9,
+          25
+        ],
+        "even_values": [
+          12,
+          14,
+          26,
+          40
+        ],
+        "next": 102
+      },
+      "source_input_sha256": "523a4c8793a097f0eedc0db71f9447ff82f9207c00c8daeccde63eb962d10100"
+    },
+    {
+      "number": 36,
+      "computed_answer": "C",
+      "agrees": true,
+      "details": [
+        {
+          "red": 8,
+          "yellow": 56,
+          "white": 24,
+          "green": 4
+        }
+      ],
+      "source_input_sha256": "096ad03391dce443818fdf1bf50254296fccf7e143f1f6d58f3c5cbd348c6222"
+    },
+    {
+      "number": 37,
+      "computed_answer": "B",
+      "agrees": true,
+      "details": {
+        "daily_efficiencies": [
+          {
+            "fraction": "1/20",
+            "decimal": 0.05
+          },
+          {
+            "fraction": "1/30",
+            "decimal": 0.03333333333333333
+          }
+        ],
+        "daily_costs": [
+          {
+            "fraction": "2/5",
+            "decimal": 0.4
+          },
+          {
+            "fraction": "3/5",
+            "decimal": 0.6
+          }
+        ],
+        "solo_cost": {
+          "fraction": "8",
+          "decimal": 8.0
+        }
+      },
+      "source_input_sha256": "9cee95c56ecef9b7abf9c99dddf6e535764093fbf6ff864ef29795575fd12936"
+    },
+    {
+      "number": 38,
+      "computed_answer": "D",
+      "agrees": true,
+      "details": {
+        "distance": {
+          "fraction": "45",
+          "decimal": 45.0
+        },
+        "travel_time_ratio": 2,
+        "speed_ratio": {
+          "fraction": "13/10",
+          "decimal": 1.3
+        }
+      },
+      "source_input_sha256": "035f3ce0e23f370a2ceeb87178dbdfdc0d18dc67686dd8f112cd08d25734a5a2"
+    },
+    {
+      "number": 39,
+      "computed_answer": "A",
+      "agrees": true,
+      "details": {
+        "best_area_sides_perimeter": [
+          143,
+          11,
+          13,
+          48
+        ]
+      },
+      "source_input_sha256": "40403dce137514ac36dda1af65854692e6dd9d1d60422ab2f19a5f7875a8aa16"
+    },
+    {
+      "number": 40,
+      "computed_answer": "B",
+      "agrees": true,
+      "details": {
+        "minimum_third": 81,
+        "witness": [
+          [
+            91,
+            86,
+            81,
+            79,
+            78
+          ]
+        ],
+        "bound": "415 <= x+334"
+      },
+      "source_input_sha256": "5f14fdc98c5d502dc705741fbbb35a5e2a0f180222800b9957f83ddc44529760"
+    },
+    {
+      "number": 41,
+      "computed_answer": "D",
+      "agrees": true,
+      "details": {
+        "unordered_sets": [
+          [
+            24,
+            29,
+            32
+          ],
+          [
+            24,
+            29,
+            34
+          ],
+          [
+            24,
+            32,
+            34
+          ],
+          [
+            26,
+            29,
+            32
+          ],
+          [
+            26,
+            29,
+            34
+          ],
+          [
+            26,
+            29,
+            36
+          ],
+          [
+            26,
+            32,
+            34
+          ],
+          [
+            26,
+            32,
+            36
+          ],
+          [
+            26,
+            34,
+            36
+          ],
+          [
+            29,
+            32,
+            34
+          ],
+          [
+            29,
+            32,
+            36
+          ],
+          [
+            29,
+            34,
+            36
+          ],
+          [
+            32,
+            34,
+            36
+          ]
+        ],
+        "orders_per_set": 6,
+        "total": 78
+      },
+      "source_input_sha256": "bda3ca0aa981ebc346dd26f456d9bd6d3b03a841a342d3f787bea21d04ff9ef6"
+    },
+    {
+      "number": 42,
+      "computed_answer": "D",
+      "agrees": true,
+      "details": {
+        "plan_one": {
+          "fraction": "35",
+          "decimal": 35.0
+        },
+        "plan_two": {
+          "fraction": "26",
+          "decimal": 26.0
+        },
+        "difference": {
+          "fraction": "9",
+          "decimal": 9.0
+        }
+      },
+      "source_input_sha256": "a0dc361192cf02a6970af7c14808764a7184aebfc4483b7aac4dda62e9b27414"
+    },
+    {
+      "number": 43,
+      "computed_answer": "B",
+      "agrees": true,
+      "details": {
+        "weekday_offsets": [
+          0,
+          3,
+          6,
+          1,
+          4,
+          6
+        ],
+        "counts_monday_to_sunday": [
+          4,
+          5,
+          4,
+          5,
+          5,
+          4,
+          3
+        ]
+      },
+      "source_input_sha256": "e3ef9d776c95c9332bd55b4733082c0bba558507f01377c7a5b1b3f663d414df"
+    },
+    {
+      "number": 44,
+      "computed_answer": "C",
+      "agrees": true,
+      "details": {
+        "none": 4,
+        "at_least_one": 36,
+        "exactly_two": 13,
+        "at_least_two": 25
+      },
+      "source_input_sha256": "461732a3b7d66f83de21d53456574516c85896a9001d316ac968a2aeddfbd485"
+    },
+    {
+      "number": 45,
+      "computed_answer": "C",
+      "agrees": true,
+      "details": {
+        "acceleration_seconds": {
+          "fraction": "120",
+          "decimal": 120.0
+        },
+        "deceleration_seconds": {
+          "fraction": "144",
+          "decimal": 144.0
+        },
+        "total_seconds": {
+          "fraction": "264",
+          "decimal": 264.0
+        }
+      },
+      "source_input_sha256": "5ca8b832647afee25f222f64406e08de0610ab14d66d5503f18c8586848cc76a"
+    },
+    {
+      "number": 51,
+      "computed_answer": "D",
+      "agrees": true,
+      "details": {
+        "model_count": 6,
+        "entailed_options": [
+          "D"
+        ]
+      },
+      "source_input_sha256": "4b5c900f31e0b403c49f1291e3c8a92a87925b20ba8ba0dde52c54576de122f4"
+    },
+    {
+      "number": 56,
+      "computed_answer": "B",
+      "agrees": true,
+      "details": {
+        "all_north_south_orders": [
+          [
+            "长",
+            "大",
+            "青",
+            "绿",
+            "白",
+            "彩"
+          ],
+          [
+            "青",
+            "大",
+            "长",
+            "绿",
+            "白",
+            "彩"
+          ]
+        ],
+        "entailed_options": [
+          "B"
+        ]
+      },
+      "source_input_sha256": "9634625e413c14c6c0df21980c49702eb33832869e175119e1e20058104295c4"
+    },
+    {
+      "number": 60,
+      "computed_answer": "B",
+      "agrees": true,
+      "details": {
+        "ranks_by_jia_yi_bing_ding": [
+          [
+            3,
+            4,
+            1,
+            2
+          ]
+        ],
+        "predictions": [
+          [
+            4,
+            3,
+            2,
+            1
+          ],
+          [
+            3,
+            2,
+            4,
+            1
+          ],
+          [
+            4,
+            2,
+            1,
+            3
+          ],
+          [
+            2,
+            3,
+            1,
+            4
+          ]
+        ]
+      },
+      "source_input_sha256": "cc60c72f4c09f7a287f9fe8d0630ae1886386b33b42dafa5660ac88e57252878"
+    },
+    {
+      "number": 63,
+      "computed_answer": "C",
+      "agrees": true,
+      "details": {
+        "valid_jia_yi_bing_assignments": [
+          [
+            false,
+            false,
+            true
+          ],
+          [
+            false,
+            true,
+            true
+          ]
+        ],
+        "note": "乙可真可假；非唯一品牌中标"
+      },
+      "source_input_sha256": "d1a68a4e2609ebdc98ef997db498f12cf72398943e2e3aa9870fbb7020b61de6"
+    },
+    {
+      "number": 67,
+      "computed_answer": "D",
+      "agrees": true,
+      "details": {
+        "ideal_circuit_examples": [
+          {
+            "Rv": {
+              "fraction": "1",
+              "decimal": 1.0
+            },
+            "A1": {
+              "fraction": "135/34",
+              "decimal": 3.9705882352941178
+            },
+            "A2": {
+              "fraction": "3/2",
+              "decimal": 1.5
+            },
+            "L1_voltage": {
+              "fraction": "36/17",
+              "decimal": 2.1176470588235294
+            },
+            "L2_voltage": {
+              "fraction": "12",
+              "decimal": 12.0
+            }
+          },
+          {
+            "Rv": {
+              "fraction": "3",
+              "decimal": 3.0
+            },
+            "A1": {
+              "fraction": "7/2",
+              "decimal": 3.5
+            },
+            "A2": {
+              "fraction": "3/2",
+              "decimal": 1.5
+            },
+            "L1_voltage": {
+              "fraction": "4",
+              "decimal": 4.0
+            },
+            "L2_voltage": {
+              "fraction": "12",
+              "decimal": 12.0
+            }
+          },
+          {
+            "Rv": {
+              "fraction": "6",
+              "decimal": 6.0
+            },
+            "A1": {
+              "fraction": "45/14",
+              "decimal": 3.2142857142857144
+            },
+            "A2": {
+              "fraction": "3/2",
+              "decimal": 1.5
+            },
+            "L1_voltage": {
+              "fraction": "36/7",
+              "decimal": 5.142857142857143
+            },
+            "L2_voltage": {
+              "fraction": "12",
+              "decimal": 12.0
+            }
+          },
+          {
+            "Rv": {
+              "fraction": "12",
+              "decimal": 12.0
+            },
+            "A1": {
+              "fraction": "3",
+              "decimal": 3.0
+            },
+            "A2": {
+              "fraction": "3/2",
+              "decimal": 1.5
+            },
+            "L1_voltage": {
+              "fraction": "6",
+              "decimal": 6.0
+            },
+            "L2_voltage": {
+              "fraction": "12",
+              "decimal": 12.0
+            }
+          },
+          {
+            "Rv": {
+              "fraction": "24",
+              "decimal": 24.0
+            },
+            "A1": {
+              "fraction": "63/22",
+              "decimal": 2.8636363636363638
+            },
+            "A2": {
+              "fraction": "3/2",
+              "decimal": 1.5
+            },
+            "L1_voltage": {
+              "fraction": "72/11",
+              "decimal": 6.545454545454546
+            },
+            "L2_voltage": {
+              "fraction": "12",
+              "decimal": 12.0
+            }
+          }
+        ],
+        "algebra": "Rp=Rv*R1/(Rv+R1); VL1=U*Rp/(R0+Rp), strictly increases with Rv"
+      },
+      "source_input_sha256": "eac477a6b0937c52e7a727a09185dfccc1906727bdfad8f3c8527b27f15aa6ea"
+    },
+    {
+      "number": 71,
+      "computed_answer": "B",
+      "agrees": true,
+      "details": {
+        "per_trip_growth": {
+          "fraction": "470/1933",
+          "decimal": 0.24314536989136057
+        }
+      },
+      "source_input_sha256": "fff6234b0296ad5f083df38b9b468aa7616e81802bcea0b06d8524229ce71327"
+    },
+    {
+      "number": 72,
+      "computed_answer": "A",
+      "agrees": true,
+      "details": {
+        "times_more_not_total_multiple": {
+          "fraction": "1101/275",
+          "decimal": 4.003636363636364
+        }
+      },
+      "source_input_sha256": "e828ba2b6da77c96b283db3187703885b215324357837b3c6df30110de13f7d5"
+    },
+    {
+      "number": 73,
+      "computed_answer": "D",
+      "agrees": true,
+      "details": {
+        "current_yuan": {
+          "fraction": "52500/47",
+          "decimal": 1117.0212765957447
+        },
+        "prior_yuan": {
+          "fraction": "1364300/1551",
+          "decimal": 879.6260477111541
+        },
+        "increase_yuan": {
+          "fraction": "368200/1551",
+          "decimal": 237.39522888459058
+        }
+      },
+      "source_input_sha256": "2c30dc599daac0338dd734ba84357caf5b8334303ba94d528f16463943add3bd"
+    },
+    {
+      "number": 74,
+      "computed_answer": "B",
+      "agrees": true,
+      "details": {
+        "yearly_change": {
+          "2018": {
+            "fraction": "5/46",
+            "decimal": 0.10869565217391304
+          },
+          "2019": {
+            "fraction": "2/17",
+            "decimal": 0.11764705882352941
+          },
+          "2020": {
+            "fraction": "-35/57",
+            "decimal": -0.6140350877192983
+          },
+          "2021": {
+            "fraction": "7/22",
+            "decimal": 0.3181818181818182
+          },
+          "2022": {
+            "fraction": "-9/29",
+            "decimal": -0.3103448275862069
+          },
+          "2023": {
+            "fraction": "29/20",
+            "decimal": 1.45
+          }
+        },
+        "number_exceed_50pct": 2
+      },
+      "source_input_sha256": "b82c4d8c4eabb11fef421bf19e4cdf1d32a053daca066c1cfa8b6d711624e733"
+    },
+    {
+      "number": 75,
+      "computed_answer": "C",
+      "agrees": true,
+      "details": {
+        "monthly_trips_100m": {
+          "fraction": "2387/600",
+          "decimal": 3.9783333333333335
+        },
+        "profit_10k_yuan": {
+          "fraction": "14960/2251",
+          "decimal": 6.645935139937805
+        },
+        "highest_spend_year": 2019,
+        "largest_positive_increment_year": 2021
+      },
+      "source_input_sha256": "bf2dd24ef681322a9dbd153115e2875255c12a71757142f28bceca022d296594"
+    },
+    {
+      "number": 76,
+      "computed_answer": "A",
+      "agrees": true,
+      "details": {
+        "last_september_total": {
+          "fraction": "46161",
+          "decimal": 46161.0
+        }
+      },
+      "source_input_sha256": "315d8893c95432ad31cf6fab196aa53f16c1e88f7208504faec37cccc1b3ee28"
+    },
+    {
+      "number": 77,
+      "computed_answer": "B",
+      "agrees": true,
+      "details": {
+        "rates": {
+          "A": {
+            "fraction": "423331/3013063",
+            "decimal": 0.14049855578857792
+          },
+          "B": {
+            "fraction": "3216311/9328516",
+            "decimal": 0.34478270713155235
+          },
+          "C": {
+            "fraction": "8036/90803",
+            "decimal": 0.08849927865819411
+          },
+          "D": {
+            "fraction": "141556/180589",
+            "decimal": 0.783857267053918
+          }
+        },
+        "ranking": [
+          "D",
+          "B",
+          "A",
+          "C"
+        ]
+      },
+      "source_input_sha256": "8a0c9be69f3b6b72d6211974a02594e8aa6941a941bd8b0b226cad6bd83a137a"
+    },
+    {
+      "number": 78,
+      "computed_answer": "C",
+      "agrees": true,
+      "details": {
+        "below_jan_aug_average": {
+          "A": false,
+          "B": false,
+          "C": true,
+          "D": false
+        },
+        "method": "9*September < Jan-Sep cumulative"
+      },
+      "source_input_sha256": "2df600ccd730a18eba6ea0af30e9d8c9b3f75f6c6d7e882020c9f92ac8f1d2ba"
+    },
+    {
+      "number": 79,
+      "computed_answer": "B",
+      "agrees": true,
+      "details": {
+        "prior_import_export_ratio": {
+          "fraction": "259709/137488",
+          "decimal": 1.8889575817525892
+        }
+      },
+      "source_input_sha256": "a01db2f3eda158dd385236faeaa036c60594c3afedfb601196e856cae53d3d57"
+    },
+    {
+      "number": 80,
+      "computed_answer": "D",
+      "agrees": true,
+      "details": {
+        "A_share": {
+          "fraction": "2435657/2869129",
+          "decimal": 0.8489186090970465
+        },
+        "B_increment": {
+          "fraction": "7080231",
+          "decimal": 7080231.0
+        },
+        "C_contribution": {
+          "fraction": "29772/451265",
+          "decimal": 0.06597453824249609
+        },
+        "D_nonborder": {
+          "fraction": "2430122",
+          "decimal": 2430122.0
+        },
+        "D_margin_units": {
+          "fraction": "122",
+          "decimal": 122.0
+        }
+      },
+      "source_input_sha256": "e6d74f0e1f14dd2ac875247562186861a232b384b07310190bcb2665b1f01929"
+    },
+    {
+      "number": 81,
+      "computed_answer": "A",
+      "agrees": true,
+      "details": {
+        "next_year_return": {
+          "fraction": "538203/625",
+          "decimal": 861.1248
+        }
+      },
+      "source_input_sha256": "e1d1b0e98ff6fc6bf7dbc1aa313060ce30bbdf04b36cac41947308a126dcf6dd"
+    },
+    {
+      "number": 82,
+      "computed_answer": "C",
+      "agrees": true,
+      "details": {
+        "two_year_growth_percent": {
+          "fraction": "34051/5000",
+          "decimal": 6.8102
+        }
+      },
+      "source_input_sha256": "6c981f0851bf4307080b0a5ae28f2dce3d0efd6c12beed9dba8c5be713eff662"
+    },
+    {
+      "number": 83,
+      "computed_answer": "B",
+      "agrees": true,
+      "details": {
+        "hk_return": {
+          "fraction": "811400/791",
+          "decimal": 1025.7901390644754
+        },
+        "foreign_return": {
+          "fraction": "101425/92",
+          "decimal": 1102.445652173913
+        },
+        "hk_minus_foreign": {
+          "fraction": "-5578375/72772",
+          "decimal": -76.65551310943769
+        }
+      },
+      "source_input_sha256": "23ec0befd9b4c0b173a852c18eea7d6bd08b9bea9de3ca1ccf58504623cda0a1"
+    },
+    {
+      "number": 84,
+      "computed_answer": "C",
+      "agrees": true,
+      "details": {
+        "other_domestic_return": {
+          "fraction": "1444292/2045",
+          "decimal": 706.2552567237163
+        }
+      },
+      "source_input_sha256": "d9f964e2574e44734fc42d4b53b203782b0899802a9cafd28243dcbaf4c141bc"
+    },
+    {
+      "number": 85,
+      "computed_answer": "A",
+      "agrees": true,
+      "details": {
+        "option_truth": [
+          false,
+          true,
+          true,
+          true
+        ],
+        "large_2023_2019_ratio": {
+          "fraction": "255/229",
+          "decimal": 1.1135371179039302
+        },
+        "medium_small_gaps_pp": [
+          {
+            "fraction": "7/10",
+            "decimal": 0.7
+          },
+          {
+            "fraction": "69/10",
+            "decimal": 6.9
+          },
+          {
+            "fraction": "101/10",
+            "decimal": 10.1
+          }
+        ]
+      },
+      "source_input_sha256": "b38b82de7aeca81af914a4637b96ea80d9332902c73dd74f1b2b43defe1086a6"
+    },
+    {
+      "number": 86,
+      "computed_answer": "C",
+      "agrees": true,
+      "details": {
+        "per_person_water_m3": {
+          "fraction": "1409760/11333",
+          "decimal": 124.3942468896144
+        }
+      },
+      "source_input_sha256": "4f9e70a80f5e60bb0d24ea8a0b01eb2163af3f9097da8d9f2aa7a7d0a12187cc"
+    },
+    {
+      "number": 87,
+      "computed_answer": "A",
+      "agrees": true,
+      "details": {
+        "prior_drainage_10k_km": {
+          "fraction": "15525/163",
+          "decimal": 95.24539877300613
+        }
+      },
+      "source_input_sha256": "3c32f3073a49297cbccc6adf039735fd54f49015d86d2fcc88e1a58e267a619e"
+    },
+    {
+      "number": 88,
+      "computed_answer": "D",
+      "agrees": true,
+      "details": {
+        "in_progress_per_city_2022_2024": [
+          {
+            "fraction": "480289/4400",
+            "decimal": 109.15659090909091
+          },
+          {
+            "fraction": "126533/1125",
+            "decimal": 112.47377777777778
+          },
+          {
+            "fraction": "412113/3800",
+            "decimal": 108.45078947368421
+          }
+        ]
+      },
+      "source_input_sha256": "8555e0771bce033092bdb07a2adbb8c77f20a34f11a9ffbc09dbde9a11865b1d"
+    },
+    {
+      "number": 89,
+      "computed_answer": "B",
+      "agrees": true,
+      "details": {
+        "current_share": {
+          "fraction": "9209/11793",
+          "decimal": 0.7808869668447384
+        },
+        "prior_share": {
+          "fraction": "31632915/42010597",
+          "decimal": 0.7529746601791925
+        },
+        "increase_pp": {
+          "fraction": "351783800/126031791",
+          "decimal": 2.7912306665545996
+        }
+      },
+      "source_input_sha256": "d12cbae28e6572d62d95391da0b01f93690efb0cf171c53b2623c7a9895befee"
+    },
+    {
+      "number": 90,
+      "computed_answer": "D",
+      "agrees": true,
+      "details": {
+        "newly_built_lengths": {
+          "2019": {
+            "fraction": "18357/20",
+            "decimal": 917.85
+          },
+          "2020": {
+            "fraction": "83027/50",
+            "decimal": 1660.54
+          },
+          "2021": {
+            "fraction": "23052/25",
+            "decimal": 922.08
+          },
+          "2022": {
+            "fraction": "50179/50",
+            "decimal": 1003.58
+          },
+          "2023": {
+            "fraction": "19632/25",
+            "decimal": 785.28
+          },
+          "2024": {
+            "fraction": "17958/25",
+            "decimal": 718.32
+          }
+        },
+        "newly_built_yoy_increments": {
+          "2020": {
+            "fraction": "74269/100",
+            "decimal": 742.69
+          },
+          "2021": {
+            "fraction": "-36923/50",
+            "decimal": -738.46
+          },
+          "2022": {
+            "fraction": "163/2",
+            "decimal": 81.5
+          },
+          "2023": {
+            "fraction": "-2183/10",
+            "decimal": -218.3
+          },
+          "2024": {
+            "fraction": "-1674/25",
+            "decimal": -66.96
+          }
+        },
+        "point_rank_ascending": [
+          0,
+          2,
+          3,
+          1
+        ],
+        "option_image_matching": "原四幅图实际查看；D的纵向点序为第1<第3<第4<第2。"
+      },
+      "source_input_sha256": "a15df354a29a065a857e21795d6d2814ecf1c81a5f7df4febdbdd5ae922eaa4e"
+    }
+  ],
+  "limits": [
+    "有限枚举验证的是已写明模型；模型仍需外审。",
+    "数字推理没有无限延拓唯一性保证。",
+    "原表缺图的转写风险不由复算消除。",
+    "第90题选项形状为人工原图识别，数值序列由脚本独立算出。"
+  ]
+}

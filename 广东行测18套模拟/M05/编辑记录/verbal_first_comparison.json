@@ -1,0 +1,107 @@
+[
+  {
+    "number": 16,
+    "source_id": "ZJ2025-A类-021",
+    "editor_initial_answer": "A",
+    "source_answer": "A",
+    "same": true
+  },
+  {
+    "number": 17,
+    "source_id": "ZJ2023-A类-024",
+    "editor_initial_answer": "C",
+    "source_answer": "C",
+    "same": true
+  },
+  {
+    "number": 18,
+    "source_id": "JS2023-A类-040",
+    "editor_initial_answer": "A",
+    "source_answer": "A",
+    "same": true
+  },
+  {
+    "number": 19,
+    "source_id": "ZJ2025-A类-027",
+    "editor_initial_answer": "B",
+    "source_answer": "B",
+    "same": true
+  },
+  {
+    "number": 20,
+    "source_id": "JS2022-A类-042",
+    "editor_initial_answer": "D",
+    "source_answer": "D",
+    "same": true
+  },
+  {
+    "number": 21,
+    "source_id": "JS2023-A类-023",
+    "editor_initial_answer": "A",
+    "source_answer": "A",
+    "same": true
+  },
+  {
+    "number": 22,
+    "source_id": "JS2023-A类-027",
+    "editor_initial_answer": "B",
+    "source_answer": "B",
+    "same": true
+  },
+  {
+    "number": 23,
+    "source_id": "ZJ2023-A类-039",
+    "editor_initial_answer": "C",
+    "source_answer": "C",
+    "same": true
+  },
+  {
+    "number": 24,
+    "source_id": "ZJ2025-A类-042",
+    "editor_initial_answer": "B",
+    "source_answer": "B",
+    "same": true
+  },
+  {
+    "number": 25,
+    "source_id": "JS2022-A类-022",
+    "editor_initial_answer": "B",
+    "source_answer": "B",
+    "same": true
+  },
+  {
+    "number": 26,
+    "source_id": "ZJ2025-A类-049",
+    "editor_initial_answer": "D",
+    "source_answer": "D",
+    "same": true
+  },
+  {
+    "number": 27,
+    "source_id": "ZJ2023-A类-049",
+    "editor_initial_answer": "C",
+    "source_answer": "C",
+    "same": true
+  },
+  {
+    "number": 28,
+    "source_id": "ZJ2025-A类-045",
+    "editor_initial_answer": "A",
+    "source_answer": "A",
+    "same": true
+  },
+  {
+    "number": 29,
+    "source_id": "ZJ2023-A类-038",
+    "editor_initial_answer": "B",
+    "source_answer": "B",
+    "same": true
+  },
+  {
+    "number": 30,
+    "source_id": "ZJ2023-A类-033",
+    "editor_initial_answer": "D",
+    "source_answer": "D",
+    "same": true
+  }
+]

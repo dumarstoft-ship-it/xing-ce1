@@ -1,0 +1,37 @@
+{
+  "paper_id": "M05",
+  "version": "0.1.0",
+  "date": "2026-11-16",
+  "date_timezone": "Asia/Taipei",
+  "source_snapshot": "8b37121d4f486e364b8f76826cf8de651021f4b2",
+  "policy_snapshot": "cabcf30f8f26e7daa49f80b836212ee1efbbeccb",
+  "target_question_count": 90,
+  "minutes": 90,
+  "missing_numbers": [],
+  "completed_section_counts": {
+    "政治理论": 10,
+    "常识应用": 5,
+    "言语理解与表达": 15,
+    "数量关系": 15,
+    "判断推理": 20,
+    "科学推理": 5,
+    "资料分析": 20
+  },
+  "status": "editor_checked_pending_claude",
+  "external_review": "not_started",
+  "printing_status": "pending_external_review",
+  "display_status": "90题完整待审稿；题本、编辑解析与复算记录已齐，尚未经过Claude独立审核，不是正式打印定稿。",
+  "structure_basis": "沿用项目90题结构；并非对2027公告题量作预测。",
+  "source_exposure": "用户已确认源卷未做过；与已用、撤题和旧专项曝光排重。",
+  "canonical_source": "selection.json",
+  "review_handoff": "交接_Claude.md",
+  "editorial_inputs": [
+    "originals.json",
+    "choices.json",
+    "editorial.json"
+  ],
+  "answer_counts": {
+    "source_reference": 20,
+    "editor_without_source_key": 70
+  }
+}
