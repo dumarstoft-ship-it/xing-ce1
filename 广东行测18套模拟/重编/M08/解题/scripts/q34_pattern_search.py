@@ -100,3 +100,74 @@ for perm in permutations(seq):
             r = simple(s)
             if r and list(perm) == seq and pos == 4: orig.append((o, r))
 print('\n原顺序、空位在末尾时，代入各选项满足的简单规律:', orig or '无')
+
+# 4) 公式图哈希交叉核对：同一分式在各季通常是逐字节相同的图
+import json, os
+from collections import defaultdict
+rec_path = '/home/user/xing-ce1/模考/2026下半年广东卷_16-33季_AI可读/转写核验记录.json'
+if os.path.exists(rec_path):
+    rec = json.load(open(rec_path, encoding='utf-8'))
+    by_text = defaultdict(lambda: defaultdict(list))
+    for x in rec:
+        if x.get('type') == 'formula_text':
+            by_text[x['text']][x['source_image_sha256'][:10]].append(x['asset_id'])
+    q34_assets = {'s23_p09_i06': '1/20', 's23_p09_i07': '2/15', 's23_p09_i08': '1/4', 's23_p09_i09': '13/30',
+                  's23_p09_i10': 'A 9/10', 's23_p09_i11': 'B 3/10', 's23_p09_i12': 'C 11/30', 's23_p09_i13': 'D 19/60'}
+    print('\n公式图哈希核对（同哈希的其他图）:')
+    for x in rec:
+        if x.get('asset_id') in q34_assets:
+            h = x['source_image_sha256'][:10]
+            others = [a for a in by_text[x['text']][h] if a != x['asset_id']]
+            print(f"  {q34_assets[x['asset_id']]:8s} {x['asset_id']} hash {h} 同图: {others or '无（全库仅此一处，无法交叉核对）'}")
+    for t in ['$\\frac{3}{4}$', '$\\frac{49}{60}$', '$\\frac{13}{20}$']:
+        print(f'  全库中 {t} 的图哈希:', dict(by_text.get(t, {})) or '无')
+    print('  说明: 9/10 同第19季第33题(9/10,3/5,2/5,4/15,8/45,16/135，公比2/3)；11/30 同第27季第43题(按题意算得22/60=11/30)；'
+          '2/15 同第30季第34题；B、D 两图都不是 3/4 的图。')
+
+# 5) 二次有理式拟合 a_n = (αn²+βn+γ)/(δn²+εn+ζ)，以及分子含2^n的拟合
+from math import gcd
+fits = Counter()
+R = range(-12, 13)
+for a, b, c in product(range(-6, 7), R, R):
+    P = [a*n*n + b*n + c for n in range(1, 6)]
+    if any(p == 0 for p in P[:4]): continue
+    Qr = [F(P[i]) / seq[i] for i in range(4)]
+    if any(q.denominator != 1 for q in Qr): continue
+    Qv = [int(q) for q in Qr]
+    d1 = [Qv[i+1]-Qv[i] for i in range(3)]
+    if d1[1]-d1[0] == d1[2]-d1[1]:
+        q5 = Qv[3] + d1[2] + (d1[2]-d1[1])
+        if q5: fits[F(P[4], q5)] += 1
+for base in (2, 3):
+    for a, b, c in product(range(-5, 6), R, R):
+        P = [a*base**n + b*n + c for n in range(1, 6)]
+        if any(p == 0 for p in P[:4]): continue
+        Qr = [F(P[i]) / seq[i] for i in range(4)]
+        if any(q.denominator != 1 for q in Qr): continue
+        Qv = [int(q) for q in Qr]
+        d1 = [Qv[i+1]-Qv[i] for i in range(3)]
+        if d1[1]-d1[0] == d1[2]-d1[1]:
+            q5 = Qv[3] + d1[2] + (d1[2]-d1[1])
+            if q5: fits[F(P[4], q5)] += 1
+print('\n有理式拟合所得预测:', [(str(k), n) for k, n in fits.most_common(6)], ' 命中选项:', [opts[k] for k in fits if k in opts] or '无')
+
+# 6) 假设首项1/20有误：换成任意 p/q（p≤60，q≤120），看代入各选项后5项能否满足简单规律
+def simple5(s):
+    d = [s[i+1]-s[i] for i in range(4)]; dd = [d[i+1]-d[i] for i in range(3)]
+    r = []
+    if len(set(d)) == 1: r.append('等差')
+    if len(set(dd)) == 1: r.append('二级等差')
+    if all(s) and len({s[i+1]/s[i] for i in range(4)}) == 1: r.append('等比')
+    if all(d) and len({d[i+1]/d[i] for i in range(3)}) == 1: r.append('差等比')
+    if all(s[i+2] == s[i]+s[i+1] for i in range(3)): r.append('和递推')
+    c = [s[i+2]-s[i]-s[i+1] for i in range(3)]
+    if len(set(c)) == 1: r.append('和递推+常数')
+    return r
+first_hits = []
+for p in range(1, 61):
+    for q in range(2, 121):
+        if gcd(p, q) != 1: continue
+        for v, o in opts.items():
+            r = simple5([F(p, q)] + seq[1:] + [v])
+            if r: first_hits.append((F(p, q), o, r))
+print('改动首项后能推出选项的情形:', first_hits or '无')
