@@ -101,9 +101,14 @@ def analyse(box):
         c = pts.mean(0)
         ev, evec = np.linalg.eigh(np.cov((pts - c).T))
         if ev[1] / max(ev[0], 1e-6) > 8:
+            if m.sum() < 25 or xs.min() == 0 or xs.max() == W - 1:   # 碎段或格子边框残留，不是题中的短线
+                continue
             vx, vy = evec[:, 1]
             ang = np.degrees(np.arctan2(-vy, vx)) % 180
+            hc = np.mean(V, axis=0)
+            pos = np.degrees(np.arctan2(-(c[1] - hc[1]), c[0] - hc[0])) % 360
             res['短线'].append(round(float(ang)))
+            res.setdefault('短线位置', []).append(round(float(pos)))
             continue
         (cx, cy), r, err = circle_fit(pts)
         if err < 0.8 and 4 < r < 10:
@@ -131,7 +136,8 @@ if __name__ == '__main__':
     # 规律：圆每次逆时针移一条边；短线每次顺时针转60°（\ → / → — 循环）；三角形位置4图一循环（图5=图1，故问号=图2）
     print()
     print('圆所在边：', [R[k]['圆'][0][0] if R[k]['圆'] else '(与三角形相连)' for k in ['图1', '图2', '图3', '图4', '图5']])
-    print('短线：', [line_kind(R[k]['短线'][0]) for k in ['图1', '图2', '图3', '图4', '图5']])
+    print('短线方向：', [line_kind(R[k]['短线'][0]) for k in ['图1', '图2', '图3', '图4', '图5']])
+    print('短线相对中心的方位角(0=正右,90=正上)：', [R[k]['短线位置'][0] for k in ['图1', '图2', '图3', '图4', '图5', 'A', 'B', 'C', 'D']])
     print('三角形：', [R[k]['三角形'][0][:3] for k in ['图1', '图2', '图3', '图4', '图5']])
     exp_tri = R['图2']['三角形'][0]
     for o in 'ABCD':
