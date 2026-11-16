@@ -204,6 +204,7 @@ def material_blocks(m, new_id, log, number):
             # 标题带“图1：”的按统计图重画；标题没有“图”字样、但 charts/specs.json 标了 chart 的也按图重画（理由写在 note）
             if box and (CHART_TITLE.match(blk.get("title") or "") or ov.pop("chart", False)):
                 note = ov.pop("note", "")
+                drop = ov.pop("drop_note", "")        # 图下的“注”若是题库转写时加的说明（不是原卷内容），不印
                 w_mm = (box[2] - box[0]) / 72 * 25.4
                 h_mm = (box[3] - box[1]) / 72 * 25.4
                 spec = chart_spec(blk, w_mm, h_mm, ov or None)
@@ -212,7 +213,9 @@ def material_blocks(m, new_id, log, number):
                 (ROOT / rel).write_text(charts.render(spec), encoding="utf-8")
                 out.append({"type": "chart", "title": blk["title"], "svg_path": rel, "print_width_mm": round(w_mm, 1),
                             "values": charts.text_values(spec), "source_table": {k: blk[k] for k in ("headers", "rows")},
-                            "notes": blk.get("notes") or ""})
+                            "notes": "" if drop else (blk.get("notes") or "")})
+                if drop:
+                    log.add(number, "删去转写说明", f"{blk['title']}：图下“{blk.get('notes')}”{drop}")
                 log.add(number, "统计图", f"{blk['title']}：原图未入库，按转写数据重绘为{ {'bar': '柱状图', 'line': '折线图', 'combo': '柱线图', 'pie': '饼图', 'hbar': '条形图', 'hbar2': '条形图', 'stack': '堆积柱状图', 'multipie': '饼图'}[spec['kind']] }，按原图印宽{w_mm:.1f}mm" + (f"（{note}）" if note else ""))
             else:
                 out.append({k: v for k, v in blk.items() if k != "source_asset_id"})
