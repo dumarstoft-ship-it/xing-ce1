@@ -450,6 +450,11 @@ def build(paper, dry=False):
         meta["edits"] = [x for x in log.items if x["number"] == n]
         meta["content_sha256"] = sha({k: rec[k] for k in ("stem", "options")})
         registry.append(meta)
+    # 改写后的解析（讲清题眼与易错，见 重编/解析改写/改写说明.md），按套卷与题号覆盖
+    for f in sorted((R / "解析改写").glob("out_*.json")):
+        for x in jload(f, []):
+            if x.get("paper") == paper and x.get("number") in answers and (x.get("analysis") or "").strip():
+                answers[x["number"]]["analysis"] = x["analysis"].strip()
     return questions, answers, registry, log, src, plan
 
 
@@ -512,7 +517,9 @@ def write_outputs(paper, questions, answers, registry, log, plan, out=None, ledg
         if n in starts:
             md.append(f"## {starts[n]}\n")
         a = answers[n]
-        md.append(f"**{n}.【答案】{a['answer']}**\n\n{a['analysis'].strip()}\n")
+        body = "\n\n".join(x.strip() for x in a["analysis"].strip().split("\n") if x.strip())
+        body = re.sub(r"(^|\n\n)(题眼|易错)：", r"\1**\2**：", body)
+        md.append(f"**{n}.【答案】{a['answer']}**\n\n{body}\n")
     (out / "答案与解析.md").write_text("\n".join(md), encoding="utf-8")
     labels = {n: a.get("category") or "" for n, a in answers.items()}
     rows = composition.table(labels)
