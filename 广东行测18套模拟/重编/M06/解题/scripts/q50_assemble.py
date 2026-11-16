@@ -94,3 +94,15 @@ if __name__ == '__main__':
                 for sol in s:
                     for p in sol:
                         print('     ', sorted(p))
+
+# ---------- 便于讲解的排除依据 ----------
+# 组合体前排第4列最上面一块 (4,3,0)：左、后、上都空，只与正下方 (4,2,0) 相连。
+# 检验：各选项（补足7块）在只旋转、不翻转时，有没有能盖住 (4,3,0) 的放法；允许镜像时又如何。
+if __name__ == '__main__':
+    tip = (4, 3, 0)
+    print('\n能盖住前排第4列顶块(4,3,0)的放法数：')
+    for k in 'ABCD':
+        piece = VISIBLE[k] | set(HIDDEN[k])
+        rot = [p for p in placements(piece, composite) if tip in p]
+        ref = [p for p in placements(piece, composite, reflect=True) if tip in p]
+        print(f'  选项{k}: 只旋转 {len(rot)} 种；允许镜像 {len(ref)} 种')

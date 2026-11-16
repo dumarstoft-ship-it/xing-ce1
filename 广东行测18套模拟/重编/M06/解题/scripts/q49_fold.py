@@ -160,3 +160,24 @@ if __name__ == '__main__':
         res.sort()
         for tot, i, used in res[:3]:
             print(f'  摆放#{i}: 顶={used[0]} 前={used[1]} 右={used[2]}  总误差={tot:.4f}')
+
+# ---------- 结论汇总（解析中的编号：上排①②，中排③④⑤，下方⑥）----------
+LABEL = {'P': '①', 'Q': '②', 'R': '③', 'S': '④', 'T': '⑤', 'U': '⑥'}
+if __name__ == '__main__':
+    print('\n===== 汇总 =====')
+    print('相对面:', sorted({tuple(sorted((LABEL[a], LABEL[b]))) for a, b in OPP.items()}))
+    for k in 'ABCD':
+        of = opt_faces(k)
+        ids = {}
+        indiv = 0.0
+        for w in ('top', 'front', 'right'):
+            best = min((dist(of[w], G), fk) for fk, F in FACES.items() for _, G in d8(F))
+            ids[w] = best[1]; indiv += best[0]
+        opp_pairs = [(a, b) for a in ids.values() for b in ids.values() if OPP.get(a) == b]
+        best_tot, best_used = min(
+            (sum(dist(of[w], render(M, w)[1]) for w in ('top', 'front', 'right')),
+             [render(M, w)[0] for w in ('top', 'front', 'right')]) for M in ROTS)
+        print(f'选项{k}: 单看各面 顶={LABEL[ids["top"]]} 前={LABEL[ids["front"]]} 右={LABEL[ids["right"]]}'
+              f'（①⑥图案相同，单看分不出）；三面单独最佳误差之和={indiv:.3f}；'
+              f'按折叠整体最佳摆放 顶{LABEL[best_used[0]]}前{LABEL[best_used[1]]}右{LABEL[best_used[2]]} 误差={best_tot:.3f}'
+              + ('；可见面中有一组相对面→不可能' if opp_pairs else ''))

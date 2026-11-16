@@ -1,5 +1,5 @@
 """第60题：逐个选项计算四人预测的真假，要求假话至多2句。
-排名"高"按名次靠前（第1名最高）理解；附带检验反向理解，看是否会出现多解。"""
+排名"高"按名次靠前（第1名最高）理解，">"左边的名次更靠前。"""
 
 OPTS = {
     'A': ('孙>李>赵>钱', '钱>赵>李>孙'),
@@ -25,8 +25,8 @@ def judge(phy, chem, better_is_smaller=True):
     return {'赵': zhao, '钱': qian, '孙': sun, '李': li}
 
 
-for mode in (True, False):
-    print('理解：' + ('名次数字小=排名高（常规）' if mode else '名次数字大=排名高（反向，仅作对照）'))
+for mode in (True,):
+    print('理解：名次数字小=排名高')
     for k, (p, c) in OPTS.items():
         t = judge(ranks(p), ranks(c), mode)
         nf = sum(not v for v in t.values())
