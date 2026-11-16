@@ -217,7 +217,7 @@ def material_blocks(m, new_id, log, number):
 # ---------------------------------------------------------------- 各部分
 def politics_items(paper):
     items = {}
-    for who in ("甲", "乙", "丙"):
+    for who in ("甲", "乙", "丙", "丁"):      # 丁补写的经济题替换甲在同一题位的题
         for q in jload(R / "政治常识" / f"{who}.json", []):
             if q["paper"] == paper:
                 items[q["number"]] = dict(q, writer=who)

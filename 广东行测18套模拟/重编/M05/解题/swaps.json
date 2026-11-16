@@ -1,0 +1,50 @@
+[
+ {
+  "id": "ZJ2022-A类-054",
+  "number": 34,
+  "answer": "A",
+  "category": "数字推理",
+  "subcategory": "递推",
+  "form": "",
+  "analysis": "数列变化平缓，作差、作和均无明显规律，考虑递推。\n2＋4－0＝6，4＋6－1＝9，6＋9－2＝13，9＋13－3＝19，即前两项之和减去修正项得第三项，修正项0、1、2、3是公差为1的等差数列，下一项为4。\n所求项为13＋19－4＝28。\n故正确答案为A。",
+  "verification": "来源答案A；按规律逐项代入核对。",
+  "confidence": "high",
+  "issues": [],
+  "replace_recommended": false,
+  "difficulty": "中",
+  "prior_answer": null,
+  "prior_note": null
+ },
+ {
+  "id": "JS2024-A类-055",
+  "number": 38,
+  "answer": "C",
+  "category": "数学运算",
+  "subcategory": "最值与构造",
+  "form": "",
+  "analysis": "本题考查不定方程求最值。设获得一、二、三等奖的人数分别为x、y、z，则x＋y＋z＝100，888x＋88y＋8z＝2480。\n第二式除以8得111x＋11y＋z＝310，减去第一式得110x＋10y＝210，即11x＋y＝21。\nx只能取0或1：x＝0时y＝21、z＝79；x＝1时y＝10、z＝89。三等奖最少为79人。\n故正确答案为C。",
+  "verification": "来源答案C；枚举全部非负整数解仅(0,21,79)与(1,10,89)。",
+  "confidence": "high",
+  "issues": [],
+  "replace_recommended": false,
+  "difficulty": "中",
+  "prior_answer": null,
+  "prior_note": null
+ },
+ {
+  "id": "JS2020-A类-058",
+  "number": 43,
+  "answer": "D",
+  "category": "数学运算",
+  "subcategory": "行程",
+  "form": "",
+  "analysis": "本题考查相遇行程中的比例关系。两人速度不变，合计走完全程的1/4时甲走了500米，则合计走完全程的3/4时（用时为前者的3倍）甲走了500×3＝1500米，此时乙走了2400米。\n两人速度比＝路程比＝1500∶2400＝5∶8，乙较快；全程为（1500＋2400）÷3/4＝5200米。\n乙走完全程5200米时，甲走了5200×5/8＝3250米，还剩5200－3250＝1950米。\n故正确答案为D。",
+  "verification": "来源答案D；按比例复算。",
+  "confidence": "high",
+  "issues": [],
+  "replace_recommended": false,
+  "difficulty": "中",
+  "prior_answer": null,
+  "prior_note": null
+ }
+]
