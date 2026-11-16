@@ -415,9 +415,10 @@ def build(paper, dry=False):
                 s = dict(s, answer=rw["answer"], analysis=rw["analysis"], category=rw.get("category", s.get("category")),
                          subcategory=rw.get("subcategory"), form=None, confidence="high")
                 log.add(n, "改写设问", rw["reason"])
-            if all(len(v) == 1 and v[0]["type"] == "text" and re.fullmatch(r"见题图中(?:标为)?的?\s*[A-D]\s*(?:的)?选项", v[0]["text"].strip())
+            if all(len(v) == 1 and v[0]["type"] == "text" and re.fullmatch(r"见题图中(?:标为)?的?\s*[A-D]\s*(?:的)?选项。?", v[0]["text"].strip())
                    for v in rec["options"].values()):
                 rec["options_mode"] = "in_figure"
+                rec["options"] = {k: [{"type": "text", "text": f"见题图中的 {k} 选项"}] for k in rec["options"]}
             for e in plan.get("edits", []):
                 if e["source"] == sid:
                     blocks = rec["stem"] if e["where"] == "stem" else rec["options"][e["where"]]

@@ -263,7 +263,7 @@ BRACKET = "（　）"
 
 
 # 选项画在题图里时，题库在文字选项处放占位说明（“见题图中标为A的选项”“见题图中的 A 选项”），不印
-FIG_PLACEHOLDER = re.compile(r"^见题图中(?:标为)?的?\s*[A-D]\s*(?:的)?选项$")
+FIG_PLACEHOLDER = re.compile(r"^见题图中(?:标为)?的?\s*[A-D]\s*(?:的)?选项。?$")
 
 
 def options_in_figure(q: dict) -> bool:
