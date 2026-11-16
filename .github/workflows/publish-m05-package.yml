@@ -1,0 +1,71 @@
+name: Publish verified M05 package
+on:
+  push:
+    branches: ['gpt/m05-upload-20261116']
+    paths:
+      - '.github/workflows/publish-m05-package.yml'
+      - '.github/m05_upload/**'
+permissions:
+  contents: write
+concurrency:
+  group: publish-m05-verified-package
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /.github/m05_upload/
+            /README.md
+            /协作原则_指月之指非月.md
+            /广东行测18套模拟/
+            /江浙行测_AI题库/
+            /模考/2026下半年广东卷_16-33季_AI可读/
+            /国考/言语理解/2016-2025/
+            /广东/行测/2022-2026/
+            /学习资料/政治理论常识/
+            /广东行测24天集训/
+            /习题本/图推/
+            !*.pdf
+            !*.zip
+            !*.ttf
+            !*.otf
+            !*.woff
+            !*.woff2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install check dependencies
+        run: |
+          python -m pip install --disable-pip-version-check --only-binary=:all: --timeout 15 --retries 1 'numpy==2.2.6' 'Pillow==11.3.0'
+      - name: Switch to exact main baseline without staging transport history
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp -R .github/m05_upload "$RUNNER_TEMP/m05_upload"
+          git fetch --no-tags --depth=1 origin main
+          test "$(git rev-parse origin/main)" = '8b37121d4f486e364b8f76826cf8de651021f4b2'
+          git checkout --detach origin/main
+      - name: Rebuild and verify exact original deliverables
+        env:
+          PYTHONDONTWRITEBYTECODE: '1'
+        run: |
+          python "$RUNNER_TEMP/m05_upload/publish_m05.py"
+      - name: Publish only M05 and project entries
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add --sparse -- 'README.md' '广东行测18套模拟/README.md' '广东行测18套模拟/用题登记.jsonl' '广东行测18套模拟/M05'
+          git diff --cached --name-only -z | python -c 'import sys; p=sys.stdin.buffer.read().decode().split("\0"); allow={"README.md","广东行测18套模拟/README.md","广东行测18套模拟/用题登记.jsonl"}; assert all(not x or (x in allow or x.startswith("广东行测18套模拟/M05/")) and not x.endswith((".pyc",".ttf",".otf",".woff",".woff2")) for x in p),p'
+          git fetch --no-tags --depth=1 origin main
+          test "$(git rev-parse origin/main)" = "$(git rev-parse HEAD)"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'M05 0.1.0：第五套90题完整待审稿、解析、核验与Claude交接'
+          git push origin HEAD:main
+          git rev-parse HEAD
