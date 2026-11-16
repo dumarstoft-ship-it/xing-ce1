@@ -793,6 +793,12 @@ def _col_widths(heads: list[str], rows: list[list[str]], avail: float = TEXT_WID
 def table_html(block: dict, number, log: Log, avail: float = TEXT_WIDTH_EM) -> str:
     heads, rows = _clean_cells(block, number, log)
     title = block.get("title") or ""
+    # 数字推理的数阵：原卷是一个数字方格，题库转写成表时加了“题目数表”的表题和“第1列”这类列名，只印数字
+    if re.search(r"列名为转写时添加", block.get("notes") or "") and heads and all(re.fullmatch(r"第\d+列", h) for h in heads):
+        log.add(number, "题干表格", "数阵去掉转写时加的表题和列名", f"{title}｜{'、'.join(heads)}", "只印数字方格")
+        heads = []
+        if title == "题目数表":
+            title = ""
     # 两列长表（如逐年比例）在原卷中多为横排，转成两行以省版面
     if len(heads) == 2 and len(rows) >= 5 and all(len(r) == 2 for r in rows) \
             and max(_em(c) for r in rows for c in r) <= 6:
