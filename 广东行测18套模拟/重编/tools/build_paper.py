@@ -159,6 +159,12 @@ def chart_spec(block, w_mm, h_mm, override=None):
         spec.update(kind="pie", categories=[],
                     slices=[{"name": r[0], "value": num(r[1]), "label": r[1]} for r in rows])
         return spec
+    if override and override.get("as_line"):    # 两个数量指标单位不同时，指定哪几列画折线（其余画柱）
+        names = override["as_line"]
+        spec.update(kind="combo", bars=[s for s in series if s["name"] not in names],
+                    lines=[s for s in series if s["name"] in names])
+        spec.update({k: v for k, v in override.items() if k not in ("as_line", "kind")})
+        return spec
     pct = [is_pct(s["name"]) for s in series]
     if len(series) == 1:
         spec.update(kind="line" if pct[0] else "bar", **({"lines": series} if pct[0] else {"bars": series}))

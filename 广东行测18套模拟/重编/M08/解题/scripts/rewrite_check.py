@@ -40,3 +40,30 @@ assert "".join(sorted(signed, key=signed.get, reverse=True)) == opts["D"]
 cur = {"①": 13050, "②": other, "③": 6847, "④": 90986}
 assert "".join(sorted(cur, key=cur.get, reverse=True)) == opts["A"]
 print("A＝按现期量排，D＝按带符号的增量排：核对无误")
+
+
+# ---------------------------------------------------------------------------
+# M08第78题改写（第2组，国内旅游）：四项同比增速排序。
+# 材料：全国国内出游48.9亿人次，增长93.3%；城镇居民37.6亿人次，增长94.9%；农村居民出游花费增长106.4%。
+print("\n第78题改写")
+tot, r_tot, urb, r_urb, r_rural_spend = 48.9, 93.3, 37.6, 94.9, 106.4
+
+def rural_rate(t, rt, u, ru):
+    return ((t - u) / (t / (1 + rt / 100) - u / (1 + ru / 100)) - 1) * 100
+
+r_rural = rural_rate(tot, r_tot, urb, r_urb)
+print(f"农村居民出游人次：2023年{tot - urb:.1f}亿，2022年{tot / 1.933 - urb / 1.949:.2f}亿，增速{r_rural:.1f}%")
+rates = {"①": r_tot, "②": r_urb, "③": r_rural, "④": r_rural_spend}
+order78 = "".join(sorted(rates, key=rates.get, reverse=True))
+print("从高到低：", order78)
+assert order78 == "④②①③"
+# 舍入稳定性：人次±0.05亿、增速±0.05个百分点的全部边界组合
+ok = all("".join(sorted({"①": r_tot + c, "②": r_urb + d, "③": rural_rate(tot + a, r_tot + c, urb + b, r_urb + d),
+                         "④": r_rural_spend + e}.items(), key=lambda kv: kv[1], reverse=True)[i][0] for i in range(4)) == "④②①③"
+         for a, b, c, d, e in product((-0.05, 0.05), repeat=5))
+print("舍入边界下排序都不变：", ok)
+assert ok
+opts78 = {"A": "④③②①", "B": "④②③①", "C": "④①②③", "D": "④②①③"}
+print("答案：", [k for k, s in opts78.items() if s == order78])
+# 混合增长率：总人次增速介于城镇、农村之间；城镇94.9%＞总93.3%，故农村＜93.3%
+assert r_urb > r_tot > r_rural
