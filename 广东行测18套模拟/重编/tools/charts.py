@@ -122,6 +122,8 @@ def axis_chart(spec):
     has_right = bool(bars and lines)
     # 版面
     top = 8 + (14 if (len(bars) + len(lines)) > 1 or spec.get("legend_always") else 0)
+    if spec.get("left_unit"):      # 纵轴上方写单位，要多留一行
+        top += 10
     left = 30
     right = 12
     slot = (W - left - right) / len(cats)

@@ -23,7 +23,7 @@ def main():
     comp = json.loads((d / "题型统计.json").read_text(encoding="utf-8"))["对照"]
     off = [r for r in comp if r["判定"] not in ("√",)]
     pre = json.loads((d / "排版前处理日志.json").read_text(encoding="utf-8"))
-    changes = [x for x in pre if x["kind"] in ("调序换题", "换题", "改写设问", "题干替换", "原创", "改动")]
+    changes = [x for x in pre if x["kind"] in ("调序换题", "换题", "改写设问", "题干替换", "原创", "改动", "资料组调序")]
     second = R / p / "复核" / "second.json"
     n_second = len(json.loads(second.read_text(encoding="utf-8"))) if second.exists() else 0
     lines = [

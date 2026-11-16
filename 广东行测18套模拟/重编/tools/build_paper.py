@@ -299,6 +299,8 @@ def build(paper, dry=False):
         for g, old in enumerate(plan["data_group_order"]):
             for k in range(5):
                 src[71 + g * 5 + k] = f"gd-mock-2026h2-s{season}-q{71 + (old - 1) * 5 + k}"
+        log.add(71, "资料组调序", plan.get("data_group_order_reason") or
+                "资料四组按原第" + "、".join(map(str, plan["data_group_order"])) + "组的顺序排列")
     for n, r in (plan.get("replace") or {}).items():
         src[int(n)] = r["source"]
         log.add(int(n), "换题", f"{r['source']}：{r['reason']}")
