@@ -312,6 +312,16 @@ def norm_text(s: str, number, where: str, log: Log) -> str:
 # --------------------------------------------------------------------------
 # 行内：数学片段与填空线
 # --------------------------------------------------------------------------
+SYMBOLS = {   # 题库数学片段里出现的符号命令，按印刷体字符输出
+    "pi": "π", "alpha": "α", "beta": "β", "gamma": "γ", "theta": "θ", "lambda": "λ", "mu": "μ", "rho": "ρ",
+    "omega": "ω", "Omega": "Ω", "Delta": "Δ", "delta": "δ", "varphi": "φ", "phi": "φ", "sigma": "σ",
+    "leq": "≤", "le": "≤", "geq": "≥", "ge": "≥", "neq": "≠", "ne": "≠", "approx": "≈", "pm": "±",
+    "infty": "∞", "rightarrow": "→", "to": "→", "Rightarrow": "⇒", "leftarrow": "←", "uparrow": "↑",
+    "downarrow": "↓", "because": "∵", "therefore": "∴", "parallel": "∥", "perp": "⊥", "cdots": "⋯",
+    "ldots": "…", "prime": "′", "sim": "∼", "equiv": "≡", "propto": "∝", "in": "∈", "cap": "∩", "cup": "∪",
+}
+
+
 def tex_to_html(src: str) -> str:
     """覆盖题库中出现的少量 LaTeX：\\frac \\sqrt ^ _ \\circ \\mathrm。"""
     pos = 0
@@ -357,6 +367,12 @@ def tex_to_html(src: str) -> str:
                 return "·"
             if cmd in ("%",):
                 return "%"
+            if cmd in SYMBOLS:
+                return SYMBOLS[cmd]
+            if cmd in ("left", "right"):          # \left( \right) 只取括号本身
+                return ""
+            if cmd in ("text", "textbf", "mathbf", "operatorname"):
+                return group(True)
             raise ValueError(f"未支持的 LaTeX 命令：\\{cmd}（{src}）")
         pos += 1
         if c.isalpha() and c.isascii() and not upright:
@@ -1404,6 +1420,8 @@ def verify_content(pdf: Path, questions: list[dict], front_pages: int) -> dict:
         return obj.get("object_type") != "char" or obj.get("size", 12) >= 9.8
     with pdfplumber.open(str(pdf)) as doc:
         text = "".join((p.filter(normal_size).extract_text() or "") for p in doc.pages[front_pages:])
+        # 统计图里的数值用小字号（约7.5pt），另取不按字号过滤的全文核对
+        flat_all = re.sub(r"\s+", "", "".join((p.extract_text() or "") for p in doc.pages[front_pages:]))
     text = re.sub(r"第\d+页\s*共\d+页", "", text)
     flat = re.sub(r"\s+", "", text)
     pos = 0
@@ -1426,7 +1444,7 @@ def verify_content(pdf: Path, questions: list[dict], front_pages: int) -> dict:
                 if b["type"] == "chart":
                     for c in [b.get("title") or ""] + list(b.get("values") or []):
                         c2 = re.sub(r"\s+", "", str(c))
-                        if len(c2) >= 2 and c2 not in flat:
+                        if len(c2) >= 2 and c2 not in flat_all:
                             missing.append((q["number"], "统计图：" + c2))
                         elif len(c2) >= 2:
                             checked += 1

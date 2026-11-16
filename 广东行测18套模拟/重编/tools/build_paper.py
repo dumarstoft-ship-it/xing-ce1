@@ -271,8 +271,9 @@ def subtype_of(n):
         "资料分析" if n >= 71 else "常识判断")
 
 
-def build(paper):
+def build(paper, dry=False):
     season = SEASON[paper]
+    oldq = {q["number"]: q for q in jl(S / paper / "题目.jsonl")} if dry else {}
     plan = jload(R / paper / "编排.json", {})
     log = Log()
     pol, ver, sol = politics_items(paper), verbal_items(paper), solutions(paper)
@@ -310,6 +311,12 @@ def build(paper):
         meta = {"number": n, "section": sec}
         if n <= 15:
             q = pol.get(n)
+            if not q and dry:
+                o = oldq[n]
+                questions.append(dict(o, id=f"{paper}-Q{n:03d}"))
+                answers[n] = {"answer": "?", "card": "?", "analysis": "（试排占位：旧卷题）", "category": ""}
+                registry.append({"number": n, "section": sec, "source_type": "试排占位", "source_id": "old", "edits": [], "content_sha256": ""})
+                continue
             if not q:
                 raise SystemExit(f"{paper}第{n}题：政治常识未写")
             form = q["form"]
@@ -327,6 +334,12 @@ def build(paper):
                         grounding=q.get("grounding"))
         elif n <= 30:
             v = ver.get(n)
+            if not v and dry:
+                o = oldq[n]
+                questions.append(dict(o, id=f"{paper}-Q{n:03d}"))
+                answers[n] = {"answer": "?", "card": "?", "analysis": "（试排占位：旧卷题）", "category": ""}
+                registry.append({"number": n, "section": sec, "source_type": "试排占位", "source_id": "old", "edits": [], "content_sha256": ""})
+                continue
             if not v:
                 raise SystemExit(f"{paper}第{n}题：言语未选")
             sid = v["id"]
@@ -451,8 +464,9 @@ PART_NAMES = [(1, "第一部分　政治理论"), (11, "第二部分　常识判
               (31, "第四部分　数量关系"), (46, "第五部分　判断推理"), (66, "第六部分　科学推理"), (71, "第七部分　资料分析")]
 
 
-def write_outputs(paper, questions, answers, registry, log, plan):
-    out = S / paper
+def write_outputs(paper, questions, answers, registry, log, plan, out=None, ledger=True):
+    out = out or S / paper
+    out.mkdir(parents=True, exist_ok=True)
     with open(out / "题目.jsonl", "w", encoding="utf-8") as f:
         for q in questions:
             f.write(json.dumps(q, ensure_ascii=False) + "\n")
@@ -513,6 +527,8 @@ def write_outputs(paper, questions, answers, registry, log, plan):
         for r in registry:
             f.write(json.dumps(r, ensure_ascii=False) + "\n")
     (out / "排版前处理日志.json").write_text(json.dumps(log.items, ensure_ascii=False, indent=1), encoding="utf-8")
+    if not ledger:
+        return
     # 项目级用题登记：替换本套记录
     led = S / "用题登记.jsonl"
     rows = [r for r in jl(led) if r["paper_id"] != paper]
@@ -527,8 +543,12 @@ def write_outputs(paper, questions, answers, registry, log, plan):
 
 def main():
     paper = sys.argv[1]
-    questions, answers, registry, log, src, plan = build(paper)
-    write_outputs(paper, questions, answers, registry, log, plan)
+    dry = "--dry" in sys.argv
+    questions, answers, registry, log, src, plan = build(paper, dry=dry)
+    if dry:   # 试排：政治、言语未齐时用旧卷题占位，输出到 广东行测18套模拟/_试排<套卷>/，不动正式文件和用题登记
+        write_outputs(paper, questions, answers, registry, log, plan, out=S / f"_试排{paper}", ledger=False)
+    else:
+        write_outputs(paper, questions, answers, registry, log, plan)
     c = Counter(x["kind"] for x in log.items)
     print(paper, "90题", dict(c))
 

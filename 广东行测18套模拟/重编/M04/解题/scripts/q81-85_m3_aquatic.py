@@ -144,7 +144,7 @@ def fit(vals, dh):
     return same, c, resid
 
 
-a85 = None
+a85, fits = None, {}
 for k in 'ABCD':
     fig = q85['options'][k][0]
     im_ = Image.open(ASSETS / fig['path']).convert('L')
@@ -160,11 +160,14 @@ for k in 'ABCD':
           f'；与出口金额环比走势相同={same}（残差 {resid:.1f}）'
           f'；与出口金额同比相同={same_y}（残差 {resid_y:.1f}）；与进口金额环比相同={same_i}（残差 {resid_i:.1f}）')
     if same:
-        assert a85 is None
-        a85 = k
+        fits[k] = resid
         ratio = abs(dh[0]) / abs(dh[1])
-        print(f'    该图降幅/升幅 = {ratio:.4f}，实际 {abs(steps[0])/abs(steps[1]):.4f}')
-print(f'  → {a85}')
+        print(f'    升降方向一致；该图第一段/第二段幅度之比 = {ratio:.4f}，实际 {abs(steps[0])/abs(steps[1]):.4f}')
+a85 = min(fits, key=fits.get)
+print(f'  升降方向一致的选项 {list(fits)}，残差 { {k: round(v, 1) for k, v in fits.items()} }；'
+      f'D是“先大降后小升”，与“先小降后大升”幅度相反')
+assert sorted(fits.values())[1] > 20 * fits[a85]
+print(f'  → {a85}（B恰是出口金额同比增速的走势，A恰是进口金额环比增速的走势）')
 
 print('=' * 70)
 print(f'答案：81{a81} 82{a82} 83{a83} 84{a84} 85{a85}')

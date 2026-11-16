@@ -58,9 +58,12 @@ class SVG:
     def text(self, x, y, s, fs=FS, anchor="middle", family="song", weight=None, rotate=None, halo=False):
         fam = '"ZG Latin", "ZG Song"' if family == "song" else '"ZG LatinB", "ZG Hei"'
         tr = f' transform="rotate({rotate} {x:.2f} {y:.2f})"' if rotate else ""
-        h = ' stroke="#fff" stroke-width="2.2" paint-order="stroke" stroke-linejoin="round"' if halo else ""
+        if halo:   # 白底衬框（不用描边：描边会让PDF文字层里每个字重复一次）
+            w = tw(s, fs)
+            x0 = x - w / 2 if anchor == "middle" else (x - w if anchor == "end" else x)
+            self.add(f'<rect x="{x0 - 0.8:.2f}" y="{y - fs * 0.82:.2f}" width="{w + 1.6:.2f}" height="{fs * 1.0:.2f}" fill="#fff"/>')
         self.add(f'<text x="{x:.2f}" y="{y:.2f}" font-size="{fs}" text-anchor="{anchor}" '
-                 f"font-family='{fam}' fill=\"#000\"{h}{tr}>{escape(str(s))}</text>")
+                 f"font-family='{fam}' fill=\"#000\"{tr}>{escape(str(s))}</text>")
 
     def line(self, x1, y1, x2, y2, w=0.6, color="#000", dash=None):
         d = f' stroke-dasharray="{dash}"' if dash else ""
@@ -80,6 +83,16 @@ class SVG:
     def render(self):
         return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{self.w:.2f}pt" height="{self.h:.2f}pt" '
                 f'viewBox="0 0 {self.w:.2f} {self.h:.2f}">' + "".join(self.parts) + "</svg>\n")
+
+
+def cat_lines(label, slot, fs=FS_AXIS):
+    """类别名放不下一行时，在“年”后折成两行（如“9月”在上、“2023年”在下的写法改为“2023年／9月”两行）。"""
+    if tw(label, fs) <= slot - 2:
+        return [label]
+    m = label.find("年")
+    if 0 < m < len(label) - 1:
+        return [label[:m + 1], label[m + 1:]]
+    return [label]
 
 
 def legend(svg, items, y, x_center):
@@ -111,8 +124,9 @@ def axis_chart(spec):
     top = 8 + (14 if (len(bars) + len(lines)) > 1 or spec.get("legend_always") else 0)
     left = 30
     right = 12
-    rot = max(tw(c, FS_AXIS) for c in cats) > (W - left - right) / len(cats) - 2
-    bottom = 16 + (max(tw(c, FS_AXIS) for c in cats) * 0.7 if rot else 0)
+    slot = (W - left - right) / len(cats)
+    lines_per = [cat_lines(c, slot) for c in cats]
+    bottom = 8 + 9.5 * max(len(x) for x in lines_per)
     x0, x1, y0, y1 = left, W - right, top, H - bottom
     pw = (x1 - x0) / len(cats)
 
@@ -162,10 +176,8 @@ def axis_chart(spec):
     # 类别标签
     for i, c in enumerate(cats):
         cx = x0 + pw * (i + 0.5)
-        if rot:
-            svg.text(cx + 2, y1 + 8, c, FS_AXIS, "end", rotate=-40)
-        else:
-            svg.text(cx, y1 + 10, c, FS_AXIS)
+        for k, ln in enumerate(lines_per[i]):
+            svg.text(cx, y1 + 10 + 9.5 * k, ln, FS_AXIS)
     # 柱
     nb = len(bars)
     if nb:
@@ -284,7 +296,8 @@ def stack_chart(spec):
     bw = pw * 0.5
     for i, c in enumerate(cats):
         bx = x0 + pw * i + (pw - bw) / 2
-        svg.text(bx + bw / 2, y1 + 10, c, FS_AXIS)
+        for k, ln in enumerate(cat_lines(c, pw)):
+            svg.text(bx + bw / 2, y1 + 10 + 9.5 * k, ln, FS_AXIS)
         acc = 0
         for j, s in enumerate(bars):
             v = s["values"][i] or 0
@@ -382,7 +395,9 @@ def render(spec):
 
 def text_values(spec):
     """图上印出的全部文字（用于核对PDF文字层）。"""
-    out = list(spec["categories"]) if spec.get("categories") else []
+    out = []
+    for c in spec.get("categories") or []:
+        out += cat_lines(c, 0) if spec.get("kind") not in ("hbar", "hbar2") else [c]
     for s in (spec.get("bars") or []) + (spec.get("lines") or []):
         out += [x for x in s["labels"] if x not in (None, "")]
         out.append(s["name"])

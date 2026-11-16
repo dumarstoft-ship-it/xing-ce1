@@ -128,17 +128,22 @@ print(f'  题图 {fig["path"]}：节点 (x, y像素) = {[(x, round(y, 1)) for x,
 h = [-y for _, y in nodes]                      # 像素y向下，取负得“高度”
 dh = [h[i + 1] - h[i] for i in range(3)]
 print(f'  题图相邻节点高度变化（像素）{[round(v, 2) for v in dh]}，走势 {["升" if s > 0 else "降" for s in dh]}')
-best = None
+best, same_dir = None, []
 for k, v in inc.items():
     steps = np.array([v[i + 1] - v[i] for i in range(3)], float)
     same_shape = all((s > 0) == (t > 0) for s, t in zip(steps, dh))
-    # 最小二乘比例：像素 ≈ c × 数值，看残差
+    # 最小二乘比例：像素 ≈ c × 数值，看残差（比例不符的残差大）
     c = float(np.dot(steps, dh) / np.dot(steps, steps))
     resid = float(np.sqrt(np.mean((np.array(dh) - c * steps) ** 2)))
-    print(f'  {k}: 走势相同={same_shape}，比例 c={c:.4f} 像素/万吨，均方根残差 {resid:.2f} 像素')
-    if same_shape and (best is None or resid < best[1]):
-        best = (k, resid, c)
-print(f'  → {best[0][0]}（唯一走势相同；按 c={best[2]:.4f} 换算后三段变化 '
+    rel = [round(s / steps[0], 3) for s in steps]
+    print(f'  {k}: 升降方向相同={same_shape}，三段变化之比 {rel}，比例 c={c:.4f} 像素/万吨，均方根残差 {resid:.2f} 像素')
+    if same_shape:
+        same_dir.append(k[0])
+        if best is None or resid < best[1]:
+            best = (k, resid, c)
+print(f'  题图三段变化之比 {[round(v / dh[0], 3) for v in dh]}')
+print(f'  升降方向相同的有 {same_dir}；其中国产纸浆第一段几乎持平、第二段暴涨、第三段大跌，幅度与题图完全不符；')
+print(f'  → {best[0][0]}（按 c={best[2]:.4f} 换算后三段变化 '
       f'{[round(best[2]*s,1) for s in [inc[best[0]][i+1]-inc[best[0]][i] for i in range(3)]]} 像素，'
       f'实测 {[round(v,1) for v in dh]}）')
 
