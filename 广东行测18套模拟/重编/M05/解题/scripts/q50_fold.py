@@ -88,9 +88,10 @@ for k, opt in options.items():
     ok = any(all(corr.get(c) == n for c, n in opt.items()) for corr in found)
     print('option', k, opt, 'consistent:', ok)
 
-# 若把展开图当成从内侧看（镜像），再检验一次，说明D是镜像干扰项
+# 对照：若把展开图当成从内侧看（镜像），任何方位都得不到4个标号的完整对应
 print('--- mirror check (net viewed from inside) ---')
 mirror = lambda p: (-p[0], p[1], p[2])
+full = 0
 for m in rotations():
     rot = lambda p: tuple(int(x) for x in m @ np.array(mirror(p)))
     if {rot(normal[s]) for s in marked} != {T, F, R}:
@@ -101,5 +102,6 @@ for m in rotations():
         for c, ce in cube_edges.items():
             if ce == img:
                 corr[c] = k
-    if len(corr) == 4:
-        print('mirror full correspondence:', dict(sorted(corr.items())))
+    print('mirror orientation -> partial correspondence:', dict(sorted(corr.items())))
+    full += len(corr) == 4
+print('mirror orientations with all 4 labels matched:', full)

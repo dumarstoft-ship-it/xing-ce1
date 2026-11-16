@@ -30,5 +30,37 @@
   "difficulty": "中",
   "prior_answer": null,
   "prior_note": null
+ },
+ {
+  "id": "JS2023-A类-096",
+  "number": 56,
+  "answer": "A",
+  "category": "解释",
+  "subcategory": "",
+  "form": "",
+  "analysis": "本题考查解释。要解释的矛盾是：使用者既不读协议、也不愿让APP获得超出功能的权限，却都点击同意。\nA项说明不同意协议就不能使用APP，使用者为了用上功能只能接受整份协议，直接解释了这种看似矛盾的选择。\nC项只能解释为什么不读协议，解释不了明知不愿授权仍点同意；B项说平台审核了安全性，但安全不等于权限符合使用者意愿；D项只涉及部分APP事后可以调整权限，不能解释普遍现象。\n故正确答案为A。",
+  "verification": "来源答案A；旧卷审核过。",
+  "confidence": "high",
+  "issues": [],
+  "replace_recommended": false,
+  "difficulty": "中",
+  "prior_answer": "A",
+  "prior_note": "旧M02第60题用过"
+ },
+ {
+  "id": "JS2021-A类-092",
+  "number": 58,
+  "answer": "B",
+  "category": "结构比较",
+  "subcategory": "推理形式或论证结构型",
+  "form": "",
+  "analysis": "本题考查推理形式的比较。题干是两个并列的条件句：“立善法于天下，则天下治；立善法于一国，则一国治”，形式为“若P则Q；若R则S”。\nB项“穷则独善其身，达则兼济天下”同样是两个并列的“若……则……”，形式最为相似。\nA项只有一个条件关系；C项是两个并列的陈述，没有“则”所表示的条件与结果；D项每一组内部都有两次条件传递（俭→约→百善俱兴），结构比题干多一层。\n故正确答案为B。",
+  "verification": "来源答案B；旧卷审核过。",
+  "confidence": "high",
+  "issues": [],
+  "replace_recommended": false,
+  "difficulty": "中",
+  "prior_answer": "B",
+  "prior_note": "旧M05第58题用过"
  }
 ]

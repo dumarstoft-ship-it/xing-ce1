@@ -252,7 +252,7 @@ EMPTY_PAREN = re.compile(r"（[ 　]*）|\([ 　]*\)")
 UNDERS = re.compile(r"_{3,}")
 SPACE_BLANK = re.compile(r"(?<=\S)(?: {4,}|　{2,})(?=\S)")
 BLANK_SIDE_SPACE = re.compile(r"(?:^|(?<=[^\x00-\x7F]))[ 　]+(?=_{3,})|(?<=___)[ 　]+(?=[^\x00-\x7F]|$)")
-DIGIT_CJK_SPACE = re.compile(r"(?<=[0-9])[ ]+(?=[\u4e00-\u9fff])|(?<=[\u4e00-\u9fff])[ ]+(?=[0-9])")
+DIGIT_CJK_SPACE = re.compile(r"(?<=[0-9A-Za-z])[ ]+(?=[\u4e00-\u9fff])|(?<=[\u4e00-\u9fff])[ ]+(?=[0-9A-Za-z])")
 HALF_PUNCT = re.compile(r"(?<=[\u4e00-\u9fff）”’])([:?;,])(?=[\u4e00-\u9fff“‘（]|\s|$)")
 FULL_PUNCT = {":": "：", "?": "？", ";": "；", ",": "，"}
 EDITORIAL_CELL = {"原表未标注": "", "原表空白": ""}
@@ -294,11 +294,11 @@ def norm_text(s: str, number, where: str, log: Log) -> str:
         m = BLANK_SIDE_SPACE.search(t3)
         log.add(number, where, "填空线两侧空格删去", t3[max(0, m.start() - 8):m.end() + 8],
                 t4[max(0, m.start() - 8):m.start() + 8])
-    # PDF转写在数字与汉字之间留的空格（“6 条隧道”“3000 米”），中文排版不留
+    # PDF转写在数字、西文与汉字之间留的空格（“6 条隧道”“3000 米”“APP 为了”），中文排版不留
     t5 = DIGIT_CJK_SPACE.sub("", t4)
     if t5 != t4:
         m = DIGIT_CJK_SPACE.search(t4)
-        log.add(number, where, "数字与汉字间空格删去", t4[max(0, m.start() - 6):m.end() + 6],
+        log.add(number, where, "数字、西文与汉字间空格删去", t4[max(0, m.start() - 6):m.end() + 6],
                 t5[max(0, m.start() - 6):m.start() + 6])
     # 汉字后的半角冒号、问号、分号、逗号改全角（“古人云:”“一定为真?”）
     t6 = HALF_PUNCT.sub(lambda m: FULL_PUNCT[m.group(1)], t5)

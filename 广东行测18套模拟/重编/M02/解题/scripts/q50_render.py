@@ -3,6 +3,10 @@
 
 坐标：x 向右(0..2)，d 向后(0..2)，h 向上(0..2)。
 投影：屏幕 X = X0 + s*x + a*d，Y = Y0 - s*h - b*d（Y 向下）。
+
+做法：先用形状已知的第3、4个积木拟合投影参数；再把 q50_solve.py 中各选项的最终读法渲染出来，
+拟合位置后与题图比较，并逐格翻转检查哪些格子"被挡住"（翻转后渲染不变）。
+用法：python3 q50_render.py [保存对比图的目录]
 """
 import itertools
 import sys
@@ -108,32 +112,8 @@ OPT_BOX = {"A": (28, 141, 103, 216), "B": (151, 140, 226, 215),
            "C": (268, 139, 337, 214), "D": (390, 140, 465, 215)}
 PIECE_BOX = {"P3": (265, 26, 335, 81), "P4": (376, 25, 430, 81)}
 
-# 题图辨认出的初始假设（被挡住处先按"有"）
-HYP = {
-    "A": ALL - {(0, 0, 0), (0, 0, 1), (2, 0, 0), (2, 0, 1), (2, 1, 1), (2, 1, 2)},
-    "B": ALL - {(2, 0, 2), (2, 1, 2), (2, 2, 2), (2, 0, 1), (1, 0, 0)},
-    "C": ALL - {(0, 0, 0), (0, 0, 1), (0, 0, 2), (1, 0, 0), (1, 0, 1), (0, 1, 2)},
-    "D": ALL - {(1, 0, 2), (2, 0, 2), (1, 0, 0), (2, 0, 0), (2, 2, 1), (2, 2, 0)},
-}
 P3 = {(0, 0, 0), (1, 0, 0), (2, 0, 0), (2, 0, 1), (2, 1, 0), (2, 1, 1)}
 P4 = {(0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1), (1, 1, 0), (1, 1, 1)}
-
-
-def local_search(vox, params, box):
-    """逐格翻转，若与题图差异变小就接受；重复到不再改进。"""
-    vox = set(vox)
-    best = diff(vox, params, box)
-    improved = True
-    while improved:
-        improved = False
-        for c in sorted(ALL):
-            v2 = vox ^ {c}
-            if not v2:
-                continue
-            d = diff(v2, params, box)
-            if d < best - 0.05:
-                vox, best, improved = v2, d, True
-    return vox, best
 
 
 if __name__ == "__main__":
@@ -143,25 +123,36 @@ if __name__ == "__main__":
     p4, e4 = fit(P4, PIECE_BOX["P4"], [381, 75, 16, 5, 5])
     print("积木4 拟合参数 =", [round(v, 2) for v in p4], "平均灰度差", round(e4, 2))
     s, a, b = p3[2], p3[3], p3[4]
+    # 最终读法取自 q50_solve.py 的 OPTS（被挡住的格子按“有”渲染，渲染结果与按“无”相同）
+    from q50_solve import OPTS
+    save_dir = sys.argv[1] if len(sys.argv) > 1 else None   # 传入目录则保存“原图|渲染图”对比图
+    # 目视排查过的其他读法（像素差相近时以放大目视为准）：
+    ALT = {"A": ("(2,1,2)有方块", {(2, 1, 2)}, set()),
+           "B": ("(2,2,0)有方块", {(2, 2, 0)}, set())}
     for k in "ABCD":
         box = OPT_BOX[k]
         x0, y0, x1, y1 = box
-        init = [x0 + 5, y1 - 6, s, a, b]
-        params, err = fit(HYP[k], box, init, scan=7)
-        vox, err2 = local_search(HYP[k], params, box)
-        params, err3 = fit(vox, box, params)
+        vox = {c for c, v in OPTS[k].items() if v != "空"}
+        params, err = fit(vox, box, [x0 + 5, y1 - 6, s, a, b], scan=7)
         st = visibility(vox, params, box)
-        print(f"\n选项{k}: 参数 {[round(v, 2) for v in params]}  初始差 {err:.2f} -> 搜索后 {err3:.2f}")
+        agree = all((st[c] == OPTS[k][c]) for c in ALL)
+        print(f"\n选项{k}: 投影参数 {[round(v, 2) for v in params]}  与题图平均灰度差 {err:.2f}  "
+              f"渲染得到的可见性与 q50_solve.py 读法一致：{agree}")
         for h in (2, 1, 0):
             print(f"  第{h}层(h={h})  d=0行/d=1行/d=2行：",
                   " | ".join("".join(st[(x, d, h)] for x in range(3)) for d in range(3)))
-        x0, y0, x1, y1 = box
-        r = render(vox, *params, box)
-        t = GRAY[y0:y1, x0:x1]
-        side = np.concatenate([t, np.full((t.shape[0], 4), 128.0), r], axis=1)
-        Image.fromarray(side.astype(np.uint8)).resize((side.shape[1] * 6, side.shape[0] * 6),
-            Image.NEAREST).save(f"/tmp/claude-0/-home-user-xing-ce1/532e1442-4812-52b3-a392-6d873e7b4a6c/scratchpad/m02/q50_fit_{k}.png")
         known = sum(1 for v in st.values() if v == "有")
         empty = sum(1 for v in st.values() if v == "空")
         hidden = sum(1 for v in st.values() if v == "挡")
         print(f"  看得见的方块 {known}，看得见的空位 {empty}，被挡住 {hidden}")
+        if k in ALT:
+            name, add, rem = ALT[k]
+            alt = (vox | add) - rem
+            print(f"  对照读法 {name}：平均灰度差 {diff(alt, params, box):.2f}"
+                  "（差别很小，放大比对后以最终读法为准；两种读法下 q50_solve.py 的结论相同）")
+        if save_dir:
+            r = render(vox, *params, box)
+            t = GRAY[y0:y1, x0:x1]
+            side = np.concatenate([t, np.full((t.shape[0], 4), 128.0), r], axis=1)
+            Image.fromarray(side.astype(np.uint8)).resize(
+                (side.shape[1] * 6, side.shape[0] * 6), Image.NEAREST).save(f"{save_dir}/q50_fit_{k}.png")

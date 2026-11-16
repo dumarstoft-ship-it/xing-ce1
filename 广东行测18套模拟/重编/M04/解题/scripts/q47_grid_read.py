@@ -51,14 +51,6 @@ def read_panel(box):
     return grid, (round(sx, 1), round(sy, 1))
 
 
-if __name__ == '__main__':
-    G = {}
-    for k, box in panels.items():
-        g, s = read_panel(box)
-        G[k] = g
-        print(k, s, ' '.join(g))
-
-
 def check_rule(G):
     """按行逐位置建立 (第1幅, 第2幅) -> 第3幅 的对应表，检查前两行是否自洽，再推第三行并与选项比对。"""
     table = {}
@@ -104,4 +96,9 @@ def check_rule(G):
 
 
 if __name__ == '__main__':
-    check_rule({k: read_panel(b)[0] for k, b in panels.items()})
+    G = {}
+    for k, box in panels.items():
+        g, sp = read_panel(box)
+        G[k] = g
+        print(k, '点距', sp, ' '.join(g))
+    check_rule(G)

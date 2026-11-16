@@ -113,3 +113,44 @@ if __name__ == "__main__":
                 names = ["T形", "L形", "积木3", "积木4"]
                 for i in sorted(s):
                     print("   ", names[i], sorted(s[i]))
+
+    print("== 读图敏感性检查（P4按6块） ==")
+    pcs = [P1, P2, P3, P4_6]
+    stA = dict(OPTS["A"]); stA[(2, 1, 2)] = "有"
+    print("A 若(2,1,2)有方块：拼法", len(solve(stA, pcs)[0]), "种")
+    for nv in ("有", "挡"):
+        stB = dict(OPTS["B"]); stB[(2, 2, 0)] = nv
+        print(f"B 若(2,2,0)读作“{nv}”：拼法", len(solve(stB, pcs)[0]), "种")
+    flips = []
+    for c, v in OPTS["B"].items():
+        for nv in ("有", "空", "挡"):
+            if nv != v:
+                st = dict(OPTS["B"]); st[c] = nv
+                if solve(st, pcs)[0]:
+                    flips.append((c, v, nv))
+    print("B 中改动单格读法后变为可拼的情形：", flips,
+          "（只涉及底层前排中间、中层前排右侧两个明显的空位）")
+
+    print("== B 项分情况推理的逐步核对 ==")
+    allowed = {c for c, v in OPTS["B"].items() if v != "空"}
+    corner = (2, 0, 0)
+    for nm, pc in (("T形", P1), ("L形", P2), ("积木3", P3), ("积木4", P4_6)):
+        print(" 能放到底层右前角", corner, "的", nm, "摆法：",
+              [sorted(p) for p in placements(pc) if p <= allowed and corner in p])
+    L = frozenset({(2, 0, 0), (2, 1, 0), (1, 1, 0), (0, 1, 0)})
+    T1 = frozenset({(0, 0, 0), (0, 0, 1), (0, 0, 2), (0, 1, 1), (0, 2, 1)})
+    Q3 = frozenset({(0, 0, 0), (0, 0, 1), (0, 0, 2), (0, 1, 2), (1, 0, 2), (1, 1, 2)})
+    rem = allowed - L
+    print(" L形放好后，能覆盖底层左前角(0,0,0)的摆法：",
+          {nm: [sorted(p) for p in placements(pc) if p <= rem and (0, 0, 0) in p]
+           for nm, pc in (("T形", P1), ("积木3", P3), ("积木4", P4_6))})
+    rem = allowed - L - T1
+    print(" 情况①T形放左前棱后，能覆盖底层左后角(0,2,0)的积木3/积木4摆法：",
+          [sorted(p) for pc in (P3, P4_6) for p in placements(pc) if p <= rem and (0, 2, 0) in p])
+    rem = allowed - L - Q3
+    Ts = [p for p in placements(P1) if p <= rem and (1, 0, 1) in p]
+    print(" 情况②积木3放左前棱后，能覆盖中层前排中间(1,0,1)的T形摆法", len(Ts), "种；",
+          "积木4摆法", len([p for p in placements(P4_6) if p <= rem and (1, 0, 1) in p]), "种")
+    for T in Ts:
+        print("   T=", sorted(T), "之后积木4能否恰好填满剩余：",
+              any(p == rem - T for p in placements(P4_6)))

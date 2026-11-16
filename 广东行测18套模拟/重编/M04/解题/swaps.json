@@ -14,5 +14,21 @@
   "difficulty": "中",
   "prior_answer": null,
   "prior_note": null
+ },
+ {
+  "id": "JS2022-A类-095",
+  "number": 52,
+  "answer": "A",
+  "category": "解释",
+  "subcategory": "",
+  "form": "",
+  "analysis": "本题考查解释。需要同时解释三点：企业一向重视专业技术人才；今年招聘总数明显增加；却大幅减少从甲职业技术学院招人，还招进了很多没有经过系统学习的人。\nA项说明企业增设了技术培训部门，可以先招进来、再自行培训，既不放弃技术要求，又能招更多未经系统学习的人，解释了这一变化。\nB项是三年前的重组和推广AI，与今年招聘的变化没有直接联系；C项最多解释少从甲学院招人，解释不了为何招进很多未受系统学习的人；D项只说这些工人有才华，没有说明企业如何保证专业技能。\n故正确答案为A。",
+  "verification": "来源答案A；旧卷审核过。",
+  "confidence": "high",
+  "issues": [],
+  "replace_recommended": false,
+  "difficulty": "中",
+  "prior_answer": "A",
+  "prior_note": "旧M03第58题用过"
  }
 ]

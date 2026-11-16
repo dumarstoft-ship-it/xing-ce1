@@ -83,5 +83,7 @@ if __name__ == '__main__':
     cv = Image.new('L', (W, H), 255)
     for i, t in enumerate(tiles):
         cv.paste(t, ((i % 2) * 500, (i // 2) * 250))
+    import os
+    os.makedirs(os.path.dirname(OUT), exist_ok=True)
     cv.save(OUT)
     print('saved', OUT)

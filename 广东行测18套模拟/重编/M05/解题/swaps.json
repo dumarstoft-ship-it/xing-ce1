@@ -46,5 +46,21 @@
   "difficulty": "中",
   "prior_answer": null,
   "prior_note": null
+ },
+ {
+  "id": "JS2022-A类-097",
+  "number": 60,
+  "answer": "C",
+  "category": "形式逻辑",
+  "subcategory": "分析推理",
+  "form": "",
+  "analysis": "本题考查分析推理。由（1）丙、丁恰录一人，（3）甲、丁恰录一人，可知甲与丙的录用情况相同；由（4）乙当且仅当丙录用，可知甲、乙、丙三人的录用情况相同。\n再由（2）甲、乙至少录一人，可知甲、乙、丙都被录取，丁不录取。\n由（5）甲、戊、己中恰有两人录用，甲已录用，故戊、己中恰录一人。\n录用人数为3＋1＝4人。\n故正确答案为C。",
+  "verification": "来源答案C；枚举全部64种录用情况，满足条件的录用人数只有4。",
+  "confidence": "high",
+  "issues": [],
+  "replace_recommended": false,
+  "difficulty": "中",
+  "prior_answer": "C",
+  "prior_note": "旧M03第63题用过"
  }
 ]
