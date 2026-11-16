@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250pt" height="165pt" viewBox="0 0 250 165">
+<g stroke="#000" stroke-width="1.1" fill="none" stroke-linecap="round">
+  <path d="M30,30 H96"/>
+  <path d="M96,19 V41"/>
+  <path d="M104,24 V36" stroke-width="2.8" stroke-linecap="butt"/>
+  <path d="M104,30 H140"/>
+  <path d="M140,30 L165,17"/>
+  <path d="M168,30 H220 V120"/>
+  <path d="M30,30 V59"/>
+  <circle cx="30" cy="70" r="11"/>
+  <path d="M30,81 V120 H55"/>
+  <rect x="55" y="113" width="36" height="14"/>
+  <path d="M91,120 H128"/>
+  <rect x="128" y="113" width="52" height="14"/>
+  <path d="M180,120 H220"/>
+  <path d="M154,112 V96 H204 V120"/>
+  <path d="M42,120 V142 H62"/>
+  <circle cx="73" cy="142" r="11"/>
+  <path d="M84,142 H106 V120"/>
+  <path d="M116,120 V142 H151"/>
+  <circle cx="162" cy="142" r="11"/>
+  <path d="M173,142 H212 V120"/>
+</g>
+<g fill="#000">
+  <circle cx="140" cy="30" r="1.8"/><circle cx="168" cy="30" r="1.8"/>
+  <circle cx="42" cy="120" r="1.6"/><circle cx="106" cy="120" r="1.6"/><circle cx="116" cy="120" r="1.6"/>
+  <circle cx="204" cy="120" r="1.6"/><circle cx="212" cy="120" r="1.6"/>
+  <path d="M150,105 L154,112.5 L158,105 Z"/>
+</g>
+<g font-family='"ZG Latin", "ZG Song"' font-size="11" fill="#000" text-anchor="middle">
+  <text x="30" y="74">A</text>
+  <text x="71" y="146">V</text><text x="78" y="149" font-size="7">1</text>
+  <text x="160" y="146">V</text><text x="167" y="149" font-size="7">2</text>
+  <text x="70" y="107" font-style="italic">R</text><text x="77" y="110" font-size="7">1</text>
+  <text x="139" y="107" font-style="italic">R</text><text x="146" y="110" font-size="7">2</text>
+  <text x="162" y="92" font-style="italic">P</text>
+  <text x="124" y="111" font-style="italic">a</text>
+  <text x="186" y="111" font-style="italic">b</text>
+  <text x="154" y="15" font-style="italic">S</text>
+</g>
+</svg>

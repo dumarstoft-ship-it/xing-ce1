@@ -663,6 +663,15 @@ def figure_html(block: dict, sizer: FigureSizer, number, log: Log, in_material: 
                     "；".join(desc) + "（核对见 重绘/重绘核对记录.json）")
             return '<div class="fig">' + "".join(parts) + "</div>"
         raise SystemExit(f"未知的重绘记录类型：{kind}")
+    if block["path"].endswith(".svg"):
+        # 编辑新画的矢量题图（如重编原创题）：内嵌SVG，按登记印宽
+        svg = (REPO / block["path"]).read_text(encoding="utf-8")
+        m = re.search(r'viewBox="[-\d.]+ [-\d.]+ ([\d.]+) ([\d.]+)"', svg)
+        w = float(block["print_width_mm"])
+        h = w * float(m.group(2)) / float(m.group(1))
+        svg = re.sub(r'width="[\d.]+(?:pt|mm)?" height="[\d.]+(?:pt|mm)?"', f'width="{w:.2f}mm" height="{h:.2f}mm"', svg, count=1)
+        log.add(number, "题图", "编辑绘制的矢量题图", block["path"], f"{w:.1f}×{h:.1f}mm（{block.get('size_basis', '登记印宽')}）")
+        return f'<div class="fig">{svg}</div>'
     w, h, how = sizer.size_mm(block, in_material)
     src = (REPO / block["path"]).as_uri()
     log.add(number, "题图", "题图尺寸", block["path"], f"{w:.1f}×{h:.1f}mm（{how}）")
@@ -683,6 +692,20 @@ def _png_part(rel: str, width_mm: float) -> tuple[str, float, float]:
     wpx, hpx = Image.open(path).size
     h = width_mm * hpx / wpx
     return f'<img src="{path.as_uri()}" style="width:{width_mm:.2f}mm;height:{h:.2f}mm" alt="">', width_mm, h
+
+
+def chart_html(block: dict, number, log: Log) -> str:
+    """资料统计图：原图未入库、按转写数据重绘的SVG（重编/tools/charts.py），内嵌进题本，图中文字用题本字体。"""
+    path = REPO / block["svg_path"]
+    svg = path.read_text(encoding="utf-8")
+    m = re.search(r'viewBox="[-\d.]+ [-\d.]+ ([\d.]+) ([\d.]+)"', svg)
+    w = min(float(block["print_width_mm"]), FigureSizer.MAT_W)
+    h = w * float(m.group(2)) / float(m.group(1))
+    svg = re.sub(r'width="[\d.]+pt" height="[\d.]+pt"', f'width="{w:.2f}mm" height="{h:.2f}mm"', svg, count=1)
+    log.add(number, "资料统计图", "按转写数据重绘的统计图", block["title"], f"{block['svg_path']}，{w:.1f}×{h:.1f}mm（原图印宽）")
+    title = f'<div class="chart-title">{inline_html(block["title"])}</div>' if block.get("title") else ""
+    notes = "".join(f'<p class="tbl-note">{inline_html(x)}</p>' for x in (block.get("notes") or "").split("\n") if x.strip())
+    return f'<div class="chart">{title}<div class="fig">{svg}</div>{notes}</div>'
 
 
 # ---- 表格 ----
@@ -963,6 +986,8 @@ def material_html(m: dict, log: Log, first_q: int) -> str:
             out.append(table_html(b, first_q, log))
         elif b["type"] == "figure":
             out.append(figure_html(b, FigureSizer(), first_q, log, in_material=True))
+        elif b["type"] == "chart":
+            out.append(chart_html(b, first_q, log))
         else:
             raise SystemExit(f"资料含未知块：{b['type']}")
         i += 1
@@ -1281,7 +1306,7 @@ def spread_pass(body_pdf: Path, questions: list[dict]) -> dict:
     for mid, g in groups.items():
         if mid in SPREAD_BREAKS or g["lead"]:
             continue
-        first = next((b for b in g["m"]["blocks"] if b["type"] in ("text", "table")), None)
+        first = next((b for b in g["m"]["blocks"] if b["type"] in ("text", "table", "chart")), None)
         if not first:
             continue
         key = re.sub(r"\s+", "", (first.get("text") or first.get("title") or ""))[:14]
@@ -1398,6 +1423,13 @@ def verify_content(pdf: Path, questions: list[dict], front_pages: int) -> dict:
         for m in mats:
             seen_mat.add(m["id"])
             for b in m["blocks"]:
+                if b["type"] == "chart":
+                    for c in [b.get("title") or ""] + list(b.get("values") or []):
+                        c2 = re.sub(r"\s+", "", str(c))
+                        if len(c2) >= 2 and c2 not in flat:
+                            missing.append((q["number"], "统计图：" + c2))
+                        elif len(c2) >= 2:
+                            checked += 1
                 if b["type"] == "table":
                     for row in b.get("rows") or []:
                         for c in row:

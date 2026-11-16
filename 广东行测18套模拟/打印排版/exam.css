@@ -177,3 +177,15 @@ sup { vertical-align: 0.5em; }
 .frac > span { display: block; padding: 0 0.12em; }
 .frac > span:first-child { border-bottom: 0.6pt solid #000; }
 .sqrt-arg { border-top: 0.6pt solid #000; padding-top: 0.05em; }
+
+/* 资料统计图（按转写数据重绘的SVG）：图题居中在图上方，同表题 */
+.chart { margin: 6pt 0 4pt; break-inside: avoid; }
+.chart-title {
+  font-family: "ZG LatinB", "ZG Hei";
+  font-size: 10.5pt;
+  line-height: 14pt;
+  text-align: center;
+  margin-bottom: 2pt;
+}
+.chart .fig { margin: 0; }
+.chart .fig svg { display: inline-block; }
