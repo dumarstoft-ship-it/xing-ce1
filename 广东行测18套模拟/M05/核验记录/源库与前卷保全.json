@@ -1,0 +1,11 @@
+{
+  "snapshot": "8b37121d4f486e364b8f76826cf8de651021f4b2",
+  "status": "PASS",
+  "baseline_files_checked": 1730,
+  "changed_baseline_files": [
+    "广东行测18套模拟/用题登记.jsonl"
+  ],
+  "prior_ledger_rows_preserved": 360,
+  "new_ledger_rows": 90,
+  "scope": "取回工作包中的文件逐字节对照；不包括当时未取回的PDF或字体。未执行远端写入。"
+}

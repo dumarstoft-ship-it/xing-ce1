@@ -1,0 +1,714 @@
+{
+  "paper_id": "M05",
+  "version": "0.1.0",
+  "status": "PASS",
+  "question_count": 90,
+  "source_reference_count": 20,
+  "editor_without_source_key_count": 70,
+  "source_fidelity": [
+    {
+      "number": 16,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 17,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 18,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 19,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 20,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 21,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 22,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 23,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 24,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 25,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 26,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 27,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 28,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 29,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 30,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 31,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 32,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 33,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 34,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 35,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 36,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 37,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 38,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 39,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 40,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 41,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 42,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 43,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 44,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 45,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 46,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 47,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 48,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 49,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 50,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 51,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 52,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 53,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 54,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 55,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 56,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 57,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 58,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 59,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 60,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 61,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 62,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 63,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 64,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 65,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 66,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 67,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 68,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 69,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 70,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 71,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 72,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 73,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 74,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 75,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 76,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": "remove_transcription_hint_only"
+    },
+    {
+      "number": 77,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": "remove_transcription_hint_only"
+    },
+    {
+      "number": 78,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": "remove_transcription_hint_only"
+    },
+    {
+      "number": 79,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": "remove_transcription_hint_only"
+    },
+    {
+      "number": 80,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": "remove_transcription_hint_only"
+    },
+    {
+      "number": 81,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 82,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 83,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 84,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 85,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 86,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 87,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 88,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 89,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    },
+    {
+      "number": 90,
+      "source_object_exact": true,
+      "stem_options_exact_after_asset_path_normalization": true,
+      "internal_spaces_and_newlines_retained": true,
+      "material_exception": null
+    }
+  ],
+  "reference_matches": [
+    {
+      "number": 16,
+      "source_id": "ZJ2025-A类-021",
+      "reference": "A"
+    },
+    {
+      "number": 17,
+      "source_id": "ZJ2023-A类-024",
+      "reference": "C"
+    },
+    {
+      "number": 18,
+      "source_id": "JS2023-A类-040",
+      "reference": "A"
+    },
+    {
+      "number": 19,
+      "source_id": "ZJ2025-A类-027",
+      "reference": "B"
+    },
+    {
+      "number": 20,
+      "source_id": "JS2022-A类-042",
+      "reference": "D"
+    },
+    {
+      "number": 21,
+      "source_id": "JS2023-A类-023",
+      "reference": "A"
+    },
+    {
+      "number": 22,
+      "source_id": "JS2023-A类-027",
+      "reference": "B"
+    },
+    {
+      "number": 23,
+      "source_id": "ZJ2023-A类-039",
+      "reference": "C"
+    },
+    {
+      "number": 24,
+      "source_id": "ZJ2025-A类-042",
+      "reference": "B"
+    },
+    {
+      "number": 25,
+      "source_id": "JS2022-A类-022",
+      "reference": "B"
+    },
+    {
+      "number": 26,
+      "source_id": "ZJ2025-A类-049",
+      "reference": "D"
+    },
+    {
+      "number": 27,
+      "source_id": "ZJ2023-A类-049",
+      "reference": "C"
+    },
+    {
+      "number": 28,
+      "source_id": "ZJ2025-A类-045",
+      "reference": "A"
+    },
+    {
+      "number": 29,
+      "source_id": "ZJ2023-A类-038",
+      "reference": "B"
+    },
+    {
+      "number": 30,
+      "source_id": "ZJ2023-A类-033",
+      "reference": "D"
+    },
+    {
+      "number": 56,
+      "source_id": "JS2021-A类-100",
+      "reference": "B"
+    },
+    {
+      "number": 58,
+      "source_id": "JS2021-A类-092",
+      "reference": "B"
+    },
+    {
+      "number": 60,
+      "source_id": "JS2022-A类-099",
+      "reference": "B"
+    },
+    {
+      "number": 64,
+      "source_id": "JS2021-A类-095",
+      "reference": "D"
+    },
+    {
+      "number": 65,
+      "source_id": "JS2021-A类-096",
+      "reference": "C"
+    }
+  ],
+  "material_groups": {
+    "M05-M03": [
+      71,
+      72,
+      73,
+      74,
+      75
+    ],
+    "M05-M04": [
+      76,
+      77,
+      78,
+      79,
+      80
+    ],
+    "M05-M05": [
+      81,
+      82,
+      83,
+      84,
+      85
+    ],
+    "M05-M06": [
+      86,
+      87,
+      88,
+      89,
+      90
+    ]
+  },
+  "exclude_id_count": 839,
+  "old_drill_text_files_scanned": 160,
+  "old_exposure_hits": [],
+  "prior_paper_text_hits": [],
+  "original_asset_count": 12,
+  "original_asset_sha256": {
+    "模考/2026下半年广东卷_16-33季_AI可读/assets/s19_p12_i00.png": "68ed5342c7833693da17eda7957cede101ce839cb70c9c5cf838cfd29370fe48",
+    "模考/2026下半年广东卷_16-33季_AI可读/assets/s27_p12_i00.png": "2bf1b873431e4a379425b452591e722ce65f15292fbe0975087b843ce9219015",
+    "模考/2026下半年广东卷_16-33季_AI可读/assets/s31_p12_i00.png": "96fdf8ebe3a30886c5332ec546dd87fb950377776c5e8325fa941b7e2326d188",
+    "模考/2026下半年广东卷_16-33季_AI可读/assets/s20_p13_i00.png": "a008e42f2a99e93b6d66f6e0e937860c9c9fe416ea28a7172631b328af4792e6",
+    "模考/2026下半年广东卷_16-33季_AI可读/assets/s23_p13_i00.png": "f54c5ad7717100b7dca69fac33a573d1c9018c42feb4fce0ee4fe0d16968b4a0",
+    "模考/2026下半年广东卷_16-33季_AI可读/assets/s32_p17_i01.png": "40f79439d78a96e79c3b33f8f684ecb704b7c5e13c0cba6270afee3a1a007bf2",
+    "模考/2026下半年广东卷_16-33季_AI可读/assets/s27_p18_i01.png": "9404b73aa5100b86a22081af5731299903bb855bc0f1bf9fecc1f012ee5d4ca5",
+    "模考/2026下半年广东卷_16-33季_AI可读/assets/s23_p19_i11.png": "8c5b4c81c3b7bcda778a5276f83a934f7c59dd3673b0e566a767804a4d3f0fac",
+    "模考/2026下半年广东卷_16-33季_AI可读/assets/s32_p23_i00.png": "93433d2092190b88bc215051c99038f4cf1c8b090e924bda38363e0b8f9fa0e3",
+    "模考/2026下半年广东卷_16-33季_AI可读/assets/s32_p23_i01.png": "2286991cf207250673516569701088d3945b2cc3bbde3371c32fa4424307d9e7",
+    "模考/2026下半年广东卷_16-33季_AI可读/assets/s32_p23_i02.png": "8c3e0f0dd29b213974539d674aeacd38f8201f9405fc50997b332c103c4cde0a",
+    "模考/2026下半年广东卷_16-33季_AI可读/assets/s32_p23_i03.png": "043cf0b4d922b3206f3d5666efbf6658c635c873ba7dd7c919000661fc3bfafb"
+  },
+  "source_file_sha256": {
+    "江浙行测_AI题库/questions.jsonl": "07b748dd27d44132d7734279306f724981a89de028d19d229c989f00fd9b7c93",
+    "江浙行测_AI题库/answers.jsonl": "4e4ec4c9221e776af5bba32901951e0970718f51e3621e2877de20624bb348c9",
+    "模考/2026下半年广东卷_16-33季_AI可读/全部题目.jsonl": "12fb48ab01e38b88ff19d85e59e463730f290407350207e00afe318f597fa3b9"
+  },
+  "output_sha256": {
+    "paper.json": "987fae8b94223a3729b39ab4f72ffe8854d1b970b1f2d32ba2537ea748c15e6c",
+    "selection.json": "ad0c80813dba4df1cf1dc066274cb6bc1a0f27796e357a1e7a7980d09f25ccfb",
+    "originals.json": "9c5a9f4b72c993cab9c80aae48acad0a68e699c520214b41785c0734b73bc936",
+    "choices.json": "4e9f9e5d4293486364950538c762b781512b39c8abac0e44e02dffb68e7693c7",
+    "editorial.json": "bcb26ea964657f9d60f544dfab2fd91f28ca5b05d405b1b73cd0787b8354043c",
+    "题目.jsonl": "c454841111f262f96e2b6c4f4ebe3d859f76c6bb1c9253824bd1506270a61fe1",
+    "题本_待审.md": "83e874259db8e75899421a20def9ef1d1d083b373ebe6893da8d362ce5953b43",
+    "答案与解析_待审.md": "a8ed4f9198cb5717db24e633d78a207eba0481a4eb179f8482a8be1c84cc1bd0",
+    "来源登记.jsonl": "6ad5ff9dc74ff176e53357de915b9a37ebade047fb51bb16906abba80a0b7edd"
+  },
+  "use_ledger_rows_after_local_build": 450,
+  "external_review": "not_started",
+  "print_ready": false,
+  "limits": [
+    "没有独立第二读者；20题参考键一致不等于其余70题官方有键。",
+    "原模考PDF未取得；表格转写仅做内部计算和单位核验。",
+    "第80题D只有122辆艘余量，表格原图须优先检查。",
+    "第24、65题按源参考键取最佳项，解释边界保留给外审。",
+    "第50题截面判断的原图到模型环节须人工复核。",
+    "没有最终PDF；不借用前卷打印检查。",
+    "用户已确认源卷未做过；旧专项扫描仅覆盖本地可读文本与已登记图推索引。"
+  ]
+}

@@ -1,0 +1,107 @@
+[
+  {
+    "number": 51,
+    "source_id": "gd-mock-2026h2-s17-q51",
+    "editor_initial_answer": "D",
+    "source_answer": null,
+    "same": null
+  },
+  {
+    "number": 52,
+    "source_id": "JS2021-A类-093",
+    "editor_initial_answer": "A",
+    "source_answer": "C",
+    "same": false
+  },
+  {
+    "number": 53,
+    "source_id": "gd-mock-2026h2-s18-q54",
+    "editor_initial_answer": "C",
+    "source_answer": null,
+    "same": null
+  },
+  {
+    "number": 54,
+    "source_id": "gd-mock-2026h2-s16-q53",
+    "editor_initial_answer": "D",
+    "source_answer": null,
+    "same": null
+  },
+  {
+    "number": 55,
+    "source_id": "gd-mock-2026h2-s19-q59",
+    "editor_initial_answer": "D",
+    "source_answer": null,
+    "same": null
+  },
+  {
+    "number": 56,
+    "source_id": "JS2021-A类-100",
+    "editor_initial_answer": "B",
+    "source_answer": "B",
+    "same": true
+  },
+  {
+    "number": 57,
+    "source_id": "gd-mock-2026h2-s18-q63",
+    "editor_initial_answer": "D",
+    "source_answer": null,
+    "same": null
+  },
+  {
+    "number": 58,
+    "source_id": "JS2021-A类-092",
+    "editor_initial_answer": "B",
+    "source_answer": "B",
+    "same": true
+  },
+  {
+    "number": 59,
+    "source_id": "gd-mock-2026h2-s19-q62",
+    "editor_initial_answer": "A",
+    "source_answer": null,
+    "same": null
+  },
+  {
+    "number": 60,
+    "source_id": "JS2022-A类-099",
+    "editor_initial_answer": "B",
+    "source_answer": "B",
+    "same": true
+  },
+  {
+    "number": 61,
+    "source_id": "gd-mock-2026h2-s18-q64",
+    "editor_initial_answer": "D",
+    "source_answer": null,
+    "same": null
+  },
+  {
+    "number": 62,
+    "source_id": "gd-mock-2026h2-s16-q65",
+    "editor_initial_answer": "B",
+    "source_answer": null,
+    "same": null
+  },
+  {
+    "number": 63,
+    "source_id": "gd-mock-2026h2-s19-q52",
+    "editor_initial_answer": "C",
+    "source_answer": null,
+    "same": null
+  },
+  {
+    "number": 64,
+    "source_id": "JS2021-A类-095",
+    "editor_initial_answer": "D",
+    "source_answer": "D",
+    "same": true
+  },
+  {
+    "number": 65,
+    "source_id": "JS2021-A类-096",
+    "editor_initial_answer": "C",
+    "source_answer": "C",
+    "same": true
+  }
+]

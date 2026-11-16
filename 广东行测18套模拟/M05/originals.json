@@ -1,0 +1,618 @@
+[
+  {
+    "number": 1,
+    "source_id": "M05-ORIG-001",
+    "source_bank": "editor_original",
+    "source_file": null,
+    "section": "政治理论",
+    "subtype": "判断题",
+    "question_type": "true_false",
+    "stem": "现实中已经存在的某种可能性，要转化为现实仍需相应条件；具有实现的客观根据，并不等于已经具备实现所需的全部条件。",
+    "options": {},
+    "answer": "正确",
+    "analysis": "正确。可能性是事物发展中包含的趋势和根据，现实则是已经实际存在的事物及其联系。可能性向现实转化需要相应条件。不能把“有客观根据”直接等同于“已经实现”，也不能因尚未实现就否定它的可能性。",
+    "source_answer": null,
+    "selection_reason": "区分有客观根据、条件成熟和已经实现，不重复前卷主次矛盾题。",
+    "edits": [],
+    "provenance": {
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        42
+      ],
+      "book_scope": "直接对应可能与现实；不引入讲义未展开的概率计算。",
+      "references": [],
+      "checked_at": "2026-11-16",
+      "evidence_scope": "本轮读取讲义逐页转写文本；所列网页/检索摘录按locator标明。未核对讲义原PDF页面。"
+    },
+    "verification": {
+      "status": "editor_checked_pending_claude",
+      "method": "讲义相关页与列明的主要依据核对，逐项检验干扰项；未经过外部盲审。",
+      "source_answer_available": false
+    }
+  },
+  {
+    "number": 2,
+    "source_id": "M05-ORIG-002",
+    "source_bank": "editor_original",
+    "source_file": null,
+    "section": "政治理论",
+    "subtype": "判断题",
+    "question_type": "true_false",
+    "stem": "所谓偶然性，只是人们尚未发现必然联系时形成的主观错觉；当因果关系被揭示后，偶然性便失去了客观存在的依据。",
+    "options": {},
+    "answer": "错误",
+    "analysis": "错误。偶然性不是无原因，也不是主观无知的别名。它有客观原因，影响必然过程的具体表现、速度等。认识到某种偶然事件的原因，不等于把客观的偶然性消除；必然性与偶然性相联系而又有区别。",
+    "source_answer": null,
+    "selection_reason": "辨析有因果原因不等于没有偶然性，避免只记“必然寓于偶然”口号。",
+    "edits": [],
+    "provenance": {
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        42
+      ],
+      "book_scope": "直接对应必然与偶然范畴。",
+      "references": [],
+      "checked_at": "2026-11-16",
+      "evidence_scope": "本轮读取讲义逐页转写文本；所列网页/检索摘录按locator标明。未核对讲义原PDF页面。"
+    },
+    "verification": {
+      "status": "editor_checked_pending_claude",
+      "method": "讲义相关页与列明的主要依据核对，逐项检验干扰项；未经过外部盲审。",
+      "source_answer_available": false
+    }
+  },
+  {
+    "number": 3,
+    "source_id": "M05-ORIG-003",
+    "source_bank": "editor_original",
+    "source_file": null,
+    "section": "政治理论",
+    "subtype": "判断题",
+    "question_type": "true_false",
+    "stem": "某类商品的市场价格因供求变化而在一段时间内低于其价值，这种背离本身并不能证明价值规律已经失去作用。",
+    "options": {},
+    "answer": "正确",
+    "analysis": "正确。价值规律并不要求每一次交换的价格都恰好等于价值。价格在供求变化下可以偏离价值，价值仍是价格形成的基础；这种波动正是价值规律发生作用的表现。题干只说“一段时间内”，不能据此推出规律失效。",
+    "source_answer": null,
+    "selection_reason": "考查价值规律与具体交换价格的层次，不再考个别劳动时间缩短。",
+    "edits": [],
+    "provenance": {
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        44,
+        45
+      ],
+      "book_scope": "讲义涉及价值及价值量；价格形式与价值量偏离的直接依据另列《资本论》提纲。",
+      "references": [
+        {
+          "title": "恩格斯：《资本论》第一卷提纲",
+          "url": "https://www.marxists.org/chinese/marx-engels/16/039.htm",
+          "locator": "第三章价格形式：价格与价值量在量上不一致的可能性"
+        }
+      ],
+      "checked_at": "2026-11-16",
+      "evidence_scope": "本轮读取讲义逐页转写文本；所列网页/检索摘录按locator标明。未核对讲义原PDF页面。"
+    },
+    "verification": {
+      "status": "editor_checked_pending_claude",
+      "method": "讲义相关页与列明的主要依据核对，逐项检验干扰项；未经过外部盲审。",
+      "source_answer_available": false
+    }
+  },
+  {
+    "number": 4,
+    "source_id": "M05-ORIG-004",
+    "source_bank": "editor_original",
+    "source_file": null,
+    "section": "政治理论",
+    "subtype": "判断题",
+    "question_type": "true_false",
+    "stem": "某党组织讨论一项重要问题，发生较大争论，赞成和反对人数接近，且不存在必须紧急决定的情形。只要赞成人数过半，就应当立即按多数意见作出决定，不宜暂缓。",
+    "options": {},
+    "answer": "错误",
+    "analysis": "错误。党章第十七条既规定少数服从多数，也规定：对重要问题发生争论、双方人数接近时，除紧急情况必须按多数意见执行外，应暂缓决定，进一步调查研究、交换意见后再表决；特殊情况下也可请求上级裁决。不能把多数原则理解成排除这一程序性安排。",
+    "source_answer": null,
+    "selection_reason": "一般原则与特定决策程序结合，防止看到“少数服从多数”即机械作答。",
+    "edits": [],
+    "provenance": {
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        8,
+        9
+      ],
+      "book_scope": "讲义民主集中制与议事规则；人数接近的直接规范为党章第十七条。",
+      "references": [
+        {
+          "title": "中国共产党章程（2022年修改）",
+          "url": "https://www.12371.cn/special/zggcdzc/zggcdzcqw/",
+          "locator": "第十七条：重要问题争论、双方人数接近时的处理"
+        }
+      ],
+      "checked_at": "2026-11-16",
+      "evidence_scope": "本轮读取讲义逐页转写文本；所列网页/检索摘录按locator标明。未核对讲义原PDF页面。"
+    },
+    "verification": {
+      "status": "editor_checked_pending_claude",
+      "method": "讲义相关页与列明的主要依据核对，逐项检验干扰项；未经过外部盲审。",
+      "source_answer_available": false
+    }
+  },
+  {
+    "number": 5,
+    "source_id": "M05-ORIG-005",
+    "source_bank": "editor_original",
+    "source_file": null,
+    "section": "政治理论",
+    "subtype": "单项选择题",
+    "question_type": "single_choice",
+    "stem": "“物之不齐，物之情也”强调事物存在差异。下列工作方法与这一认识最直接相契合的是（　）。",
+    "options": {
+      "A": "把各地共有的目标直接细化为完全相同的实施步骤",
+      "B": "在统一目标下，依据各地条件分别确定推进路径",
+      "C": "以个别地区的成功经验代替对本地条件的具体调查",
+      "D": "把地区差异主要归因于执行力度，统一加大投入强度"
+    },
+    "answer": "B",
+    "analysis": "选B。这句话突出事物的差异性、特殊性，方法上要求具体问题具体分析。B没有否认统一目标，但把路径落实到不同条件。A、C把一般要求或个别经验直接套用；D把不同条件造成的差异先行归结为同一原因，也没有具体分析。并非只要出现“不同”两字就对，而是看是否依实际条件处理问题。",
+    "source_answer": null,
+    "selection_reason": "古语与实际工作方法对应；选项均谈执行安排而非凭主题词排除。",
+    "edits": [],
+    "provenance": {
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        40
+      ],
+      "book_scope": "讲义矛盾特殊性；引语与方法论关系另据全国哲社办所载文章。",
+      "references": [
+        {
+          "title": "《孟子》的三大思想方法论",
+          "url": "https://www.nopss.gov.cn/n1/2018/0522/c219468-30005149.html",
+          "locator": "“物之不齐，物之情也”：特殊性与具体问题具体分析"
+        }
+      ],
+      "checked_at": "2026-11-16",
+      "evidence_scope": "本轮读取讲义逐页转写文本；所列网页/检索摘录按locator标明。未核对讲义原PDF页面。"
+    },
+    "verification": {
+      "status": "editor_checked_pending_claude",
+      "method": "讲义相关页与列明的主要依据核对，逐项检验干扰项；未经过外部盲审。",
+      "source_answer_available": false
+    }
+  },
+  {
+    "number": 6,
+    "source_id": "M05-ORIG-006",
+    "source_bank": "editor_original",
+    "source_file": null,
+    "section": "政治理论",
+    "subtype": "单项选择题",
+    "question_type": "single_choice",
+    "stem": "某地拟组织企业、高校和科研院所联合攻关产业共性技术。下列安排中，最符合强化企业科技创新主体地位要求的是（　）。",
+    "options": {
+      "A": "由企业主要负责成果购买，高校独立确定全部产业技术需求",
+      "B": "由行政部门包办技术路线和研发分工，企业按照任务清单提供资金",
+      "C": "支持有能力的企业牵头提出产业需求、组织联合研发并推动成果应用",
+      "D": "按企业投资额大小确定各项科学结论的取舍，再由科研院所完成论证"
+    },
+    "answer": "C",
+    "analysis": "选C。企业主体地位不仅指企业出资或最终买成果，还包括在产业需求凝练、研发组织和成果应用等环节发挥主导作用。C体现企业主导的产学研融合。A把企业限于末端购买，B以行政包办代替创新主体的自主判断，D混淆创新组织中的主导作用与科学结论的客观评价。",
+    "source_answer": null,
+    "selection_reason": "区分组织创新的主体作用与单纯出钱、行政包办、资本决定科学结论。",
+    "edits": [],
+    "provenance": {
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        28,
+        64
+      ],
+      "book_scope": "第64页直接列出强化企业科技创新主体地位；具体组织机制据三中全会《决定》。",
+      "references": [
+        {
+          "title": "中共中央关于进一步全面深化改革、推进中国式现代化的决定",
+          "url": "https://www.mofcom.gov.cn/xwfb/ldrhd/art/2024/art_ec1f616bbfba49d7bd9baf70152f9caf.html",
+          "locator": "第（14）项：企业主导的产学研深度融合、支持企业牵头或参与科技攻关"
+        }
+      ],
+      "checked_at": "2026-11-16",
+      "evidence_scope": "本轮读取讲义逐页转写文本；所列网页/检索摘录按locator标明。未核对讲义原PDF页面。"
+    },
+    "verification": {
+      "status": "editor_checked_pending_claude",
+      "method": "讲义相关页与列明的主要依据核对，逐项检验干扰项；未经过外部盲审。",
+      "source_answer_available": false
+    }
+  },
+  {
+    "number": 7,
+    "source_id": "M05-ORIG-007",
+    "source_bank": "editor_original",
+    "source_file": null,
+    "section": "政治理论",
+    "subtype": "单项选择题",
+    "question_type": "single_choice",
+    "stem": "在马克思主义政治经济学的分析中，假定劳动力按其价值出售，其他商品也按价值交换，资本家仍可能获得剩余价值。对此解释正确的是（　）。",
+    "options": {
+      "A": "等价交换本身能够使买卖双方创造出原来不存在的新价值",
+      "B": "劳动力在使用过程中能够创造超过其自身价值的价值",
+      "C": "生产资料在价值转移过程中会增加超过原有价值的部分",
+      "D": "工人出售的是其全部劳动成果，工资与成果价值之间的差额来自不等价交换"
+    },
+    "answer": "B",
+    "analysis": "选B。关键在于劳动力的价值与劳动力的使用价值不同。资本家支付劳动力价值，但使用劳动力进行生产时，劳动创造的新价值可以超过劳动力自身价值，超出部分构成剩余价值。等价交换不创造新价值，生产资料转移其已有价值，不能把剩余价值归结为流通中的简单加价或不等价交换。",
+    "source_answer": null,
+    "selection_reason": "在等价交换前提下追问剩余价值来源，区别于前卷只识别相对剩余价值。",
+    "edits": [],
+    "provenance": {
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        45,
+        46
+      ],
+      "book_scope": "讲义剩余价值与可变资本；直接推导据《资本论》劳动过程和价值增殖过程。",
+      "references": [
+        {
+          "title": "马克思：《资本论》第一卷第五章",
+          "url": "https://www.marxists.org/chinese/marx/capital/05.htm",
+          "locator": "劳动过程和价值增殖过程：劳动力的价值与使用价值"
+        }
+      ],
+      "checked_at": "2026-11-16",
+      "evidence_scope": "本轮读取讲义逐页转写文本；所列网页/检索摘录按locator标明。未核对讲义原PDF页面。"
+    },
+    "verification": {
+      "status": "editor_checked_pending_claude",
+      "method": "讲义相关页与列明的主要依据核对，逐项检验干扰项；未经过外部盲审。",
+      "source_answer_available": false
+    }
+  },
+  {
+    "number": 8,
+    "source_id": "M05-ORIG-008",
+    "source_bank": "editor_original",
+    "source_file": null,
+    "section": "政治理论",
+    "subtype": "单项选择题",
+    "question_type": "single_choice",
+    "stem": "关于法治国家、法治政府、法治社会一体建设，下列说法正确的是（　）。",
+    "options": {
+      "A": "法治社会建设是全面依法治国的主体工程，法治政府建设主要提供社会基础",
+      "B": "法治政府建设是全面依法治国的重点任务和主体工程，法治社会是构筑法治国家的基础",
+      "C": "法治国家建设主要对应司法机关建设，行政机关依法履职属于法治社会建设",
+      "D": "三者需要依次完成，先建成法治国家后再启动法治政府和法治社会建设"
+    },
+    "answer": "B",
+    "analysis": "选B。法治国家、法治政府、法治社会相互联系，应一体建设；法治政府建设是重点任务和主体工程，法治社会是基础。A把定位颠倒，C把法治国家狭窄化为司法机关建设，D把一体推进改成先后割裂。",
+    "source_answer": null,
+    "selection_reason": "不考泛泛依法办事，而辨析三个建设层次的定位。",
+    "edits": [],
+    "provenance": {
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        31
+      ],
+      "book_scope": "讲义法治中国总体目标，三者定位直接依据司法部材料。",
+      "references": [
+        {
+          "title": "司法部：法治政府建设的路径进度",
+          "url": "https://www.moj.gov.cn/pub/sfbgw/qmyfzg/fzgzzffz/202402/t20240220_494838.html",
+          "locator": "国家、政府、社会关系及重点任务和主体工程"
+        }
+      ],
+      "checked_at": "2026-11-16",
+      "evidence_scope": "本轮读取讲义逐页转写文本；所列网页/检索摘录按locator标明。未核对讲义原PDF页面。"
+    },
+    "verification": {
+      "status": "editor_checked_pending_claude",
+      "method": "讲义相关页与列明的主要依据核对，逐项检验干扰项；未经过外部盲审。",
+      "source_answer_available": false
+    }
+  },
+  {
+    "number": 9,
+    "source_id": "M05-ORIG-009",
+    "source_bank": "editor_original",
+    "source_file": null,
+    "section": "政治理论",
+    "subtype": "多项选择题",
+    "question_type": "multiple_choice",
+    "stem": "关于经济基础与上层建筑，下列认识正确的有（　）。",
+    "options": {
+      "A": "经济基础是一定社会占统治地位的生产关系的总和，不是各种厂房设备的总和",
+      "B": "国家政权属于政治上层建筑的核心，而非生产力的实体性要素",
+      "C": "上层建筑只要维护既有经济基础，就必然推动社会进步",
+      "D": "判断上层建筑反作用的社会效果，应考察它所服务的经济基础是否适合生产力发展要求"
+    },
+    "answer": "ABD",
+    "analysis": "选ABD。经济基础是生产关系的总和，不能按日常语言理解为物质设施；国家政权是政治上层建筑的核心。上层建筑对经济基础有反作用，但这种作用是否促进社会发展，还要看所服务的经济基础是否适合生产力发展要求，因此C把“维护既有基础”直接等同于“社会进步”不成立。",
+    "source_answer": null,
+    "selection_reason": "用概念边界与反作用条件区分，而不重复前卷“哪项调整生产关系”的单层识别。",
+    "edits": [],
+    "provenance": {
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        43,
+        44
+      ],
+      "book_scope": "直接对应经济基础、上层建筑及其反作用的条件。",
+      "references": [],
+      "checked_at": "2026-11-16",
+      "evidence_scope": "本轮读取讲义逐页转写文本；所列网页/检索摘录按locator标明。未核对讲义原PDF页面。"
+    },
+    "verification": {
+      "status": "editor_checked_pending_claude",
+      "method": "讲义相关页与列明的主要依据核对，逐项检验干扰项；未经过外部盲审。",
+      "source_answer_available": false
+    }
+  },
+  {
+    "number": 10,
+    "source_id": "M05-ORIG-010",
+    "source_bank": "editor_original",
+    "source_file": null,
+    "section": "政治理论",
+    "subtype": "多项选择题",
+    "question_type": "multiple_choice",
+    "stem": "落实“三个区分开来”，需要辨明干部履职失误与违纪违法行为的性质。下列属于应当作出的区分的有（　）。",
+    "options": {
+      "A": "缺乏经验、先行先试出现的失误，与明知故犯的违纪违法行为",
+      "B": "上级尚无明确限制的探索性试验失误，与明令禁止后依然我行我素的行为",
+      "C": "带来短期经济收益的谋私行为，与未形成经济收益的一般履职行为",
+      "D": "为推动发展的无意过失，与为谋取私利的违纪违法行为"
+    },
+    "answer": "ABD",
+    "analysis": "选ABD。三个区分分别围绕经验与故意、探索空间与明令禁止、公心与私利展开。C以有没有短期经济收益代替行为动机和纪律法律边界，并不是“三个区分开来”的内容。容错不是把结果有效就视为行为合规。",
+    "source_answer": null,
+    "selection_reason": "把容错的判断标准落到性质差别，防止结果论。",
+    "edits": [],
+    "provenance": {
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        12
+      ],
+      "book_scope": "讲义严管厚爱、激励保护机制；三组区分的具体表述据中央学习辅导材料。",
+      "references": [
+        {
+          "title": "落实“三个区分开来”",
+          "url": "https://www.12371.cn/2024/11/19/ARTI1732009644389652.shtml",
+          "locator": "三组区分与政策界限"
+        }
+      ],
+      "checked_at": "2026-11-16",
+      "evidence_scope": "本轮读取讲义逐页转写文本；所列网页/检索摘录按locator标明。未核对讲义原PDF页面。"
+    },
+    "verification": {
+      "status": "editor_checked_pending_claude",
+      "method": "讲义相关页与列明的主要依据核对，逐项检验干扰项；未经过外部盲审。",
+      "source_answer_available": false
+    }
+  },
+  {
+    "number": 11,
+    "source_id": "M05-ORIG-011",
+    "source_bank": "editor_original",
+    "source_file": null,
+    "section": "常识应用",
+    "subtype": "单项选择题",
+    "question_type": "single_choice",
+    "stem": "依据《中华人民共和国宪法》，下列关于国家机关职权的对应关系正确的是（　）。",
+    "options": {
+      "A": "省、自治区和直辖市的建置——国务院批准；县的建置——全国人民代表大会批准",
+      "B": "省、自治区和直辖市的建置——全国人民代表大会批准；省、自治区和直辖市的区域划分——国务院批准",
+      "C": "特别行政区的设立及其制度——国务院决定；省级区域划分——全国人民代表大会批准",
+      "D": "自治州、县、自治县、市的建置——国务院批准；特赦——国务院决定"
+    },
+    "answer": "B",
+    "analysis": "选B。宪法第六十二条规定，全国人大批准省、自治区、直辖市的建置，决定特别行政区的设立及其制度；第八十九条规定国务院批准省级区域划分，以及自治州、县、自治县、市的建置和区域划分。特赦由全国人大常委会决定。注意“省级建置”和“省级区域划分”不是同一事项。",
+    "source_answer": null,
+    "selection_reason": "常识法律题从民法转为国家机关权限，关键在相近事务层级。",
+    "edits": [],
+    "provenance": {
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        90,
+        91,
+        92
+      ],
+      "book_scope": "讲义已分别列出三类机关权限，按宪法现行公开文本复核。",
+      "references": [
+        {
+          "title": "中华人民共和国宪法",
+          "url": "https://www.mfa.gov.cn/ziliao_674904/zt_674979/dnzt_674981/qtzt/twwt/stflgf/202206/t20220606_10698959.html",
+          "locator": "第六十二条、第六十七条、第八十九条"
+        }
+      ],
+      "checked_at": "2026-11-16",
+      "evidence_scope": "本轮读取讲义逐页转写文本；所列网页/检索摘录按locator标明。未核对讲义原PDF页面。"
+    },
+    "verification": {
+      "status": "editor_checked_pending_claude",
+      "method": "讲义相关页与列明的主要依据核对，逐项检验干扰项；未经过外部盲审。",
+      "source_answer_available": false
+    }
+  },
+  {
+    "number": 12,
+    "source_id": "M05-ORIG-012",
+    "source_bank": "editor_original",
+    "source_file": null,
+    "section": "常识应用",
+    "subtype": "单项选择题",
+    "question_type": "single_choice",
+    "stem": "救援队拟使用热红外相机、雷达和主动声呐开展探测。只就探测原理而言，下列说法正确的是（　）。",
+    "options": {
+      "A": "热红外相机主要接收目标反射的可见光，故与普通相机一样需要外在照明",
+      "B": "雷达和主动声呐都向目标发射并接收电磁波，只是工作频率不同",
+      "C": "热红外相机可接收目标自身发出的热辐射；雷达则可通过发射并接收返回的电磁波探测目标",
+      "D": "主动声呐与雷达都属于主动探测，所以二者发出的信号都可在真空中传播"
+    },
+    "answer": "C",
+    "analysis": "选C。热红外成像可利用目标自身的热辐射，不必依赖可见光照明。雷达发射电磁波并利用回波探测，主动声呐利用声波；声波是机械波，需要介质，不能因“主动”二字就认为能在真空传播。A混淆热红外与可见光，B、D混淆电磁波与声波。",
+    "source_answer": null,
+    "selection_reason": "区分主动/被动与电磁/机械两个维度，不沿用前卷航天装备名称配对。",
+    "edits": [],
+    "provenance": {
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        102
+      ],
+      "book_scope": "讲义第102页给出声呐和声波应用；热红外、主动微波的直接依据为天文台及中科院资料，非声称讲义已完整收录。",
+      "references": [
+        {
+          "title": "香港天文台：热视眼观天",
+          "url": "https://www.hko.gov.hk/sc/education/weather/clouds/00665-Thermal-Vision-for-sky-observation.html",
+          "locator": "热红外相机不依赖外在照明，接收物体自身的热红外辐射"
+        },
+        {
+          "title": "中国科学院微波遥感技术重点实验室：微波遥感助力海洋动力探测",
+          "url": "https://www.mirslab.cn/kydt/201108/t20110817_44800.html",
+          "locator": "雷达高度计和散射计为主动微波遥感，辐射计为被动遥感"
+        }
+      ],
+      "checked_at": "2026-11-16",
+      "evidence_scope": "本轮读取讲义逐页转写文本；所列网页/检索摘录按locator标明。未核对讲义原PDF页面。"
+    },
+    "verification": {
+      "status": "editor_checked_pending_claude",
+      "method": "讲义相关页与列明的主要依据核对，逐项检验干扰项；未经过外部盲审。",
+      "source_answer_available": false
+    }
+  },
+  {
+    "number": 13,
+    "source_id": "M05-ORIG-013",
+    "source_bank": "editor_original",
+    "source_file": null,
+    "section": "常识应用",
+    "subtype": "单项选择题",
+    "question_type": "single_choice",
+    "stem": "广东推进“五外联动”。某地开展以下工作：①吸引境外企业在本地投资设厂；②承接境外企业的软件研发服务外包；③支持本地企业到境外承包工程；④引进海外科研人才团队。按各项工作的直接侧重点，①—④依次对应的是（　）。",
+    "options": {
+      "A": "外贸、外包、外经、外智",
+      "B": "外资、外经、外包、外智",
+      "C": "外资、外包、外智、外经",
+      "D": "外资、外包、外经、外智"
+    },
+    "answer": "D",
+    "analysis": "选D。“五外”指外贸、外资、外包、外经、外智。①侧重吸收境外投资，②明确为服务外包，③属于对外经济合作中的境外承包工程，④侧重引进海外智力和人才。相关活动可能有交叉，题目要求按直接侧重点归类，不把一项工作的全部影响混入分类。",
+    "source_answer": null,
+    "selection_reason": "让五外从名词落实到不同活动，避免只靠选项是否出现“开放”作答。",
+    "edits": [],
+    "provenance": {
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        64
+      ],
+      "book_scope": "第64页明确列出五外；本题活动情境为原创，2026广东公开报告和官方通报作核对。",
+      "references": [
+        {
+          "title": "2026年广东省政府工作报告",
+          "url": "https://www.pwccw.gd.gov.cn/szyw/content/post_1319752.html",
+          "locator": "激活改革开放创新三大动力、抓好五外联动"
+        },
+        {
+          "title": "广东省委巡视整改进展通报",
+          "url": "https://www.gdjct.gd.gov.cn/zhyw/content/mpost_211720.html",
+          "locator": "进一步扩大高水平对外开放：外贸、外资、外包、外经、外智；检索摘录核对，原网页本轮未能打开"
+        }
+      ],
+      "checked_at": "2026-11-16",
+      "evidence_scope": "本轮读取讲义逐页转写文本；所列网页/检索摘录按locator标明。未核对讲义原PDF页面。"
+    },
+    "verification": {
+      "status": "editor_checked_pending_claude",
+      "method": "讲义相关页与列明的主要依据核对，逐项检验干扰项；未经过外部盲审。",
+      "source_answer_available": false
+    }
+  },
+  {
+    "number": 14,
+    "source_id": "M05-ORIG-014",
+    "source_bank": "editor_original",
+    "source_file": null,
+    "section": "常识应用",
+    "subtype": "单项选择题",
+    "question_type": "single_choice",
+    "stem": "依据2026年1月1日起施行的修订后《治安管理处罚法》，下列人员均依法应当给予行政拘留处罚，且不存在其他影响处罚或执行的情形。其中，应当不执行行政拘留处罚的是（　）。",
+    "options": {
+      "A": "已满十五周岁，一年以内第二次违反治安管理的甲",
+      "B": "已满十七周岁、初次违反治安管理，但情节严重、影响恶劣的乙",
+      "C": "七十二周岁、初次违反治安管理，但情节严重、影响恶劣的丙",
+      "D": "正在怀孕、此次违反治安管理情节严重、影响恶劣的丁"
+    },
+    "answer": "D",
+    "analysis": "选D。第二十三条第一款规定了若干不执行行政拘留的情形，第二款又对其中未成年人和七十周岁以上人员规定例外：情节严重、影响恶劣时不受第一款限制；十四至十六周岁及七十周岁以上人员一年内二次以上违法，也不受限制。第二款并未把怀孕或哺乳本人不满一周岁婴儿的人员纳入这些例外，故丁仍不执行行政拘留。注意不执行行政拘留不等同于行为不违法或不作任何处理。",
+    "source_answer": null,
+    "selection_reason": "考查新法一般保护与列举例外，不能套用未成年人一律不拘留的旧印象。",
+    "edits": [],
+    "provenance": {
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        87,
+        88
+      ],
+      "book_scope": "讲义新法修订范围；具体年龄与执行例外直接依据现行法第二十三条，非从旧法记忆推断。",
+      "references": [
+        {
+          "title": "中华人民共和国治安管理处罚法（2025年修订）",
+          "url": "https://www.szns.gov.cn/nsnsgafj/gkmlpt/content/12/12854/post_12854926.html",
+          "locator": "第二十三条两款：不执行行政拘留与不受限制情形；2026-01-01施行"
+        }
+      ],
+      "checked_at": "2026-11-16",
+      "evidence_scope": "本轮读取讲义逐页转写文本；所列网页/检索摘录按locator标明。未核对讲义原PDF页面。"
+    },
+    "verification": {
+      "status": "editor_checked_pending_claude",
+      "method": "讲义相关页与列明的主要依据核对，逐项检验干扰项；未经过外部盲审。",
+      "source_answer_available": false
+    }
+  },
+  {
+    "number": 15,
+    "source_id": "M05-ORIG-015",
+    "source_bank": "editor_original",
+    "source_file": null,
+    "section": "常识应用",
+    "subtype": "单项选择题",
+    "question_type": "single_choice",
+    "stem": "某博物馆按传统“八音”分类陈列古代乐器。下列分组正确的是（　）。",
+    "options": {
+      "A": "编钟与玉磬均归入金类",
+      "B": "琴与瑟均归入木类",
+      "C": "笙与箫均归入竹类",
+      "D": "陶埙与陶缶均归入土类"
+    },
+    "answer": "D",
+    "analysis": "选D。传统八音为金、石、土、革、丝、木、匏、竹。编钟属金，磬即使以玉制成也归石；琴瑟归丝，不因木制琴体而归木；笙归匏，箫归竹；陶埙、陶缶均归土。分类不能只看乐器外观中最显眼的材料。",
+    "source_answer": null,
+    "selection_reason": "人文常识转到乐器分类，干扰项来自看外观材料的常见混淆。",
+    "edits": [],
+    "provenance": {
+      "book": "学习资料/政治理论常识/颜培天广东政治理论常识.pages.jsonl",
+      "book_pages": [
+        72,
+        73
+      ],
+      "book_scope": "讲义音乐、琴与句鑃作为主题入口；八音具体归类是人文常识补充，直接依据所引古籍和博物馆介绍，不冒称讲义逐项记载。",
+      "references": [
+        {
+          "title": "《五礼通考》卷七十四所引《周礼》八音注",
+          "url": "https://ctext.org/wiki.pl?chapter=698869&if=gb&remap=gb",
+          "locator": "金钟、石磬、土埙缶、丝琴瑟、匏笙、竹箫管"
+        },
+        {
+          "title": "故宫博物院：碧玉描金编磬",
+          "url": "https://www.dpm.org.cn/collection/music/232167.html",
+          "locator": "编磬属八音，与编钟合称金石之音"
+        }
+      ],
+      "checked_at": "2026-11-16",
+      "evidence_scope": "本轮读取讲义逐页转写文本；所列网页/检索摘录按locator标明。未核对讲义原PDF页面。"
+    },
+    "verification": {
+      "status": "editor_checked_pending_claude",
+      "method": "讲义相关页与列明的主要依据核对，逐项检验干扰项；未经过外部盲审。",
+      "source_answer_available": false
+    }
+  }
+]
