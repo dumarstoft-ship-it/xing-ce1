@@ -92,6 +92,9 @@ def cat_lines(label, slot, fs=FS_AXIS):
     m = label.find("年")
     if 0 < m < len(label) - 1:
         return [label[:m + 1], label[m + 1:]]
+    m = label.find("—")          # 没有“年”的累计期间（如“1—10月”）在“—”后折行
+    if 0 < m < len(label) - 1:
+        return [label[:m + 1], label[m + 1:]]
     return [label]
 
 
@@ -147,7 +150,7 @@ def axis_chart(spec):
     if has_right:
         # 柱占下部约一半，折线浮在上部，两组数值标注互不遮挡
         bv = [v for s in bars for v in s["values"] if v is not None]
-        la, lb, ls = nice_scale(min(bv + [0]), max(bv) * 1.85)
+        la, lb, ls = nice_scale(min(bv + [0]), max(bv) * spec.get("bar_scale", 1.85))   # 柱压得更低时在specs里加大
         lv = [v for s in lines for v in s["values"] if v is not None]
         lo, hi = min(lv), max(lv)
         span = (hi - lo) or abs(hi) or 1
@@ -196,7 +199,15 @@ def axis_chart(spec):
                 fs = min(FS_AXIS, max(5.5, (bw + 6) / max(1, len(str(lab))) / 0.52)) if nb > 1 else FS_AXIS
                 ty = top_y - 2 if v >= 0 else base + fs + 1
                 svg.text(bx + bw / 2, ty, lab, fs, halo=True)
-    # 线
+    # 线：多条折线时，同一类别上较高那点的数值标在上方、较低那点的标在下方
+    offs = {}
+    if len(lines) >= 2:
+        for i in range(len(cats)):
+            vs = [(j, s["values"][i]) for j, s in enumerate(lines) if s["values"][i] is not None]
+            if len(vs) >= 2:
+                hi_j = max(vs, key=lambda t: t[1])[0]
+                for j, _ in vs:
+                    offs[(j, i)] = -4 if j == hi_j else 9
     for j, s in enumerate(lines):
         color, dash, mk = LINE_STYLES[j % len(LINE_STYLES)]
         yf = ry if has_right else ly
@@ -211,7 +222,7 @@ def axis_chart(spec):
             x, y = pts[k]
             k += 1
             svg.marker(x, y, mk)
-            off = -4 if j % 2 == 0 else 9
+            off = offs.get((j, i), -4 if j % 2 == 0 else 9)
             svg.text(x, y + off, s["labels"][i], FS_AXIS, halo=True)
     # 图例
     items = [("bar", j, s["name"]) for j, s in enumerate(bars)] + [("line", j, s["name"]) for j, s in enumerate(lines)]

@@ -155,6 +155,10 @@ def chart_spec(block, w_mm, h_mm, override=None):
     if kind == "hbar2":
         spec.update(kind="hbar2", bars=[series[0]], extra=series[1])
         return spec
+    if kind == "pie":      # 两列表（名称、占比）画成饼图
+        spec.update(kind="pie", categories=[],
+                    slices=[{"name": r[0], "value": num(r[1]), "label": r[1]} for r in rows])
+        return spec
     pct = [is_pct(s["name"]) for s in series]
     if len(series) == 1:
         spec.update(kind="line" if pct[0] else "bar", **({"lines": series} if pct[0] else {"bars": series}))
@@ -220,7 +224,7 @@ def material_blocks(m, new_id, log, number):
 # ---------------------------------------------------------------- 各部分
 def politics_items(paper):
     items = {}
-    for who in ("甲", "乙", "丙", "丁", "戊"):      # 丁补写的经济题替换甲在同一题位的题；戊写M06
+    for who in ("甲", "乙", "丙", "丁", "戊", "己", "庚", "辛", "壬", "癸"):  # 丁补写的经济题替换甲在同一题位的题；戊写M06，己写M07……
         for q in jload(R / "政治常识" / f"{who}.json", []):
             if q["paper"] == paper:
                 items[q["number"]] = dict(q, writer=who)
