@@ -1,0 +1,18 @@
+[
+ {
+  "id": "JS2023-A类-058",
+  "number": 45,
+  "answer": "B",
+  "category": "数学运算",
+  "subcategory": "行程",
+  "form": "",
+  "analysis": "本题考查行程问题，可用赋值法。设乙的速度为1米/分钟，则甲的速度为3米/分钟。\n乙走完4000米用时4000分钟。此时甲离B地还有400米，即甲骑行了3600米，骑行用时3600÷3＝1200分钟，所以甲修车用了4000－1200＝2800分钟。\n甲修车期间乙一直在走，走过的路程为2800×1＝2800米。\n故正确答案为B。",
+  "verification": "来源答案B；赋值复算。",
+  "confidence": "high",
+  "issues": [],
+  "replace_recommended": false,
+  "difficulty": "中",
+  "prior_answer": null,
+  "prior_note": null
+ }
+]

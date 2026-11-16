@@ -404,6 +404,10 @@ def build(paper, dry=False):
                     rec["options"] = {k: [{"type": "text", "text": f"见题图中的 {k} 选项"}] for k in rec["options"]}
             else:
                 raise SystemExit(f"{paper}第{n}题：找不到来源 {sid}")
+            ov = (plan.get("stem_override") or {}).get(sid)
+            if ov:   # 题干整段替换（原图未入库时用编辑重画的图、补写引导语等），选项不变
+                rec["stem"] = [dict(b) for b in ov["stem"]]
+                log.add(n, "题干替换", ov["reason"])
             rw = (plan.get("rewrite") or {}).get(sid)
             if rw:
                 rec["stem"] = [{"type": "text", "text": rw["stem"]}]
