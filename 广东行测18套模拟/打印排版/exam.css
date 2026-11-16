@@ -157,6 +157,8 @@ p { margin: 0; }
   vertical-align: -0.15em;
   margin: 0 0.1em;
 }
+/* 原卷加下划线的文字（“画线词”等） */
+.ul { text-decoration: underline; text-decoration-thickness: 0.6pt; text-underline-offset: 0.18em; }
 .m-i { font-style: italic; font-family: "ZG Latin"; }
 .m-r { font-family: "ZG Latin"; }
 sub, sup { font-size: 70%; line-height: 0; }

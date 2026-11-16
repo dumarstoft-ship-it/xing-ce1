@@ -112,12 +112,13 @@ def find_fonts(font_dir: Path | None) -> dict[str, Path]:
         if role not in found and fallback.exists():
             found[role] = fallback
     # 补字：方正书宋简体是GB2312版，个别生僻字（如“岕”）不在其中。字体目录里以“补字”开头的
-    # 宋体字体（如思源宋体 Noto Serif SC 的子集）只用于书宋缺的字，见 fonts_css 与构建日志。
+    # 宋体字体（如思源宋体的子集）只用于书宋缺的字，见 fonts_css 与构建日志。可放多个，
+    # 按文件名排序，前一个没有的字才由后一个补。
     if font_dir and font_dir.is_dir():
         ext = sorted(p for p in font_dir.rglob(EXT_PREFIX + "*")
                      if p.suffix.lower() in (".ttf", ".otf", ".woff2", ".woff"))
-        if ext:
-            found["SongExt"] = ext[0]
+        for i, p in enumerate(ext):
+            found["SongExt" if i == 0 else f"SongExt{i + 1}"] = p
     missing = [r for r in FONT_ROLES if r not in found]
     if missing:
         raise SystemExit(
@@ -136,17 +137,28 @@ def fonts_css(fonts: dict[str, Path]) -> str:
         face("ZG Latin", fonts["Latin"], LATIN_RANGE)
         + face("ZG LatinB", fonts["LatinB"], LATIN_RANGE)
         + face("ZG Song", fonts["Song"])
-        + (face("ZG Song", fonts["SongExt"], _ranges(sorted(_cmap(fonts["SongExt"]) - _cmap(fonts["Song"]))))
-           if "SongExt" in fonts else "")
+        + "".join(face("ZG Song", path, _ranges(sorted(cps))) for path, cps in _ext_layers(fonts) if cps)
         + face("ZG Hei", fonts["Hei"])
         + face("ZG Kai", fonts["Kai"])
     )
 
 
+def _ext_layers(fonts: dict[str, Path]) -> list[tuple[Path, set[int]]]:
+    """各补字字体实际负责的字：书宋和排在前面的补字字体都没有的那部分。"""
+    taken = set(_cmap(fonts["Song"]))
+    layers = []
+    for key in sorted((k for k in fonts if k.startswith("SongExt")), key=lambda k: fonts[k].name):
+        cps = _cmap(fonts[key]) - taken
+        layers.append((fonts[key], cps))
+        taken |= cps
+    return layers
+
+
 def check_glyphs(questions: list[dict], fonts: dict[str, Path], log: "Log") -> None:
     """正文用字逐一核对：书宋没有的字由补字字体排印并记入日志；两者都没有时直接报错。"""
     song = _cmap(fonts["Song"])
-    ext = _cmap(fonts["SongExt"]) if "SongExt" in fonts else set()
+    layers = _ext_layers(fonts)
+    ext = set().union(*(cps for _, cps in layers)) if layers else set()
     latin = set(range(0x20, 0x7F)) | {0xB0, 0x2212}
     used: dict[str, set[int]] = {}
 
@@ -171,8 +183,9 @@ def check_glyphs(questions: list[dict], fonts: dict[str, Path], log: "Log") -> N
             f"“{ch}”（U+{ord(ch):04X}，第{'、'.join(map(str, sorted(ns)))}题）" for ch, ns in missing.items())
             + "。可把含该字的宋体（如思源宋体）放入字体目录，文件名以“补字”开头")
     for ch, ns in sorted(lacking.items()):
+        src = next(path for path, cps in layers if ord(ch) in cps)
         log.add(min(ns), "字体", "书宋缺字，由补字字体排印", ch,
-                f"{fonts['SongExt'].name}（U+{ord(ch):04X}，第{'、'.join(map(str, sorted(ns)))}题）")
+                f"{src.name}（U+{ord(ch):04X}，第{'、'.join(map(str, sorted(ns)))}题）")
 
 
 # --------------------------------------------------------------------------
@@ -238,11 +251,28 @@ DOTS = re.compile(r"·{3,}|•{3,}")
 EMPTY_PAREN = re.compile(r"（[ 　]*）|\([ 　]*\)")
 UNDERS = re.compile(r"_{3,}")
 SPACE_BLANK = re.compile(r"(?<=\S)(?: {4,}|　{2,})(?=\S)")
+BLANK_SIDE_SPACE = re.compile(r"(?:^|(?<=[^\x00-\x7F]))[ 　]+(?=_{3,})|(?<=___)[ 　]+(?=[^\x00-\x7F]|$)")
+DIGIT_CJK_SPACE = re.compile(r"(?<=[0-9])[ ]+(?=[\u4e00-\u9fff])|(?<=[\u4e00-\u9fff])[ ]+(?=[0-9])")
+HALF_PUNCT = re.compile(r"(?<=[\u4e00-\u9fff）”’])([:?;,])(?=[\u4e00-\u9fff“‘（]|\s|$)")
+FULL_PUNCT = {":": "：", "?": "？", ";": "；", ",": "，"}
 EDITORIAL_CELL = {"原表未标注": "", "原表空白": ""}
 
 
 # 答题括号：粉笔样卷括号内约留两字宽，这里用全角括号夹一个全角空格
 BRACKET = "（　）"
+
+
+# 选项画在题图里时，题库在文字选项处放占位说明（“见题图中标为A的选项”“见题图中的 A 选项”），不印
+FIG_PLACEHOLDER = re.compile(r"^见题图中(?:标为)?的?\s*[A-D]\s*(?:的)?选项$")
+
+
+def options_in_figure(q: dict) -> bool:
+    if q.get("options_mode") == "in_figure":
+        return True
+    opts = q.get("options") or {}
+    has_fig = any(b["type"] == "figure" for b in q["stem"])
+    return bool(opts) and has_fig and all(
+        len(v) == 1 and v[0]["type"] == "text" and FIG_PLACEHOLDER.match(v[0]["text"].strip()) for v in opts.values())
 
 
 def norm_text(s: str, number, where: str, log: Log) -> str:
@@ -258,7 +288,25 @@ def norm_text(s: str, number, where: str, log: Log) -> str:
         m = SPACE_BLANK.search(t2)
         log.add(number, where, "空格占位改为填空线", t2[max(0, m.start() - 8):m.end() + 8],
                 t3[max(0, m.start() - 8):m.start() + 12])
-    return t3
+    # 转写在填空线两侧留的空格（“太空领域 ____ 。”），原卷没有，印出来是一段空白
+    t4 = BLANK_SIDE_SPACE.sub("", t3)
+    if t4 != t3:
+        m = BLANK_SIDE_SPACE.search(t3)
+        log.add(number, where, "填空线两侧空格删去", t3[max(0, m.start() - 8):m.end() + 8],
+                t4[max(0, m.start() - 8):m.start() + 8])
+    # PDF转写在数字与汉字之间留的空格（“6 条隧道”“3000 米”），中文排版不留
+    t5 = DIGIT_CJK_SPACE.sub("", t4)
+    if t5 != t4:
+        m = DIGIT_CJK_SPACE.search(t4)
+        log.add(number, where, "数字与汉字间空格删去", t4[max(0, m.start() - 6):m.end() + 6],
+                t5[max(0, m.start() - 6):m.start() + 6])
+    # 汉字后的半角冒号、问号、分号、逗号改全角（“古人云:”“一定为真?”）
+    t6 = HALF_PUNCT.sub(lambda m: FULL_PUNCT[m.group(1)], t5)
+    if t6 != t5:
+        m = HALF_PUNCT.search(t5)
+        log.add(number, where, "半角标点改全角", t5[max(0, m.start() - 8):m.end() + 4],
+                t6[max(0, m.start() - 8):m.end() + 4])
+    return t6
 
 
 # --------------------------------------------------------------------------
@@ -368,7 +416,24 @@ def _glue(m: re.Match) -> str:
     return f'<span class="nobr">{m.group(0)}</span>' if (m.group(1) or m.group(3)) else m.group(0)
 
 
+# 原卷中加下划线的文字（如“画线词”），题库转写为 <u>…</u>
+UNDERLINE = re.compile(r"<u>(.*?)</u>", re.S)
+
+
 def _text_html(s: str) -> str:
+    out, pos = [], 0
+    for m in UNDERLINE.finditer(s):
+        out.append(_plain_html(s[pos:m.start()]))
+        out.append(f'<span class="ul">{_plain_html(m.group(1))}</span>')
+        pos = m.end()
+    out.append(_plain_html(s[pos:]))
+    res = "".join(out)
+    if "&lt;u&gt;" in res or "&lt;/u&gt;" in res:
+        raise SystemExit(f"下划线标记没有成对：{s[:30]}")
+    return res
+
+
+def _plain_html(s: str) -> str:
     parts = UNDERS.split(s)
     return BLANK_GLUE.sub(_glue, '<span class="blank"></span>'.join(html.escape(p) for p in parts))
 
@@ -783,7 +848,9 @@ def options_html(q: dict, log: Log, sizer: "FigureSizer | None" = None) -> str:
         return ('<div class="opts c2 fixed">'
                 + "".join(f'<div class="opt"><span class="lab">{k}.</span>{v}</div>' for k, v in items)
                 + "</div>")
-    if q.get("options_mode") == "in_figure":
+    if options_in_figure(q):
+        if q.get("options_mode") != "in_figure":
+            log.add(q["number"], "选项", "选项在题图中，占位文字不印", "".join(b["text"] for b in q["options"]["A"]), "")
         return ""  # 选项画在题图中；题库里的“见题图中标为A的选项”是占位说明，不印
     blocks = []
     multi = False
@@ -840,8 +907,9 @@ def question_html(q: dict, sizer: FigureSizer, log: Log) -> str:
         keep = " keep" if _estimated_lines(q) <= 6 else ""
     out = (f'<div class="q{keep}" id="q{n}" data-n="{n}">{num}<div class="stem">' + "".join(stem_parts)
            + "</div>" + options_html(q, log, sizer) + "</div>")
-    if any(("横线" in b["text"] or "画线" in b["text"]) for b in texts) and 'class="blank"' not in out:
-        raise SystemExit(f"第{n}题题面提到横线，但没有可印出的填空线")
+    if any(("横线" in b["text"] or "画线" in b["text"]) for b in texts) \
+            and 'class="blank"' not in out and 'class="ul"' not in out:
+        raise SystemExit(f"第{n}题题面提到横线，但没有可印出的填空线或下划线")
     return out
 
 
@@ -853,7 +921,7 @@ def _estimated_lines(q: dict) -> float:
     lines = sum(math.ceil(max(1.0, _width(p)) / 36) for b in q["stem"] for p in b["text"].split("\n") if p.strip())
     if q["question_type"] == "true_false":
         return lines + 1
-    if q.get("options_mode") == "in_figure" or any(b["type"] != "text" for o in q["options"].values() for b in o):
+    if options_in_figure(q) or any(b["type"] != "text" for o in q["options"].values() for b in o):
         return 99
     widths = [_width("A." + "".join(b["text"] for b in o)) for o in q["options"].values()]
     w = max(widths or [0])
@@ -1270,7 +1338,7 @@ def turn_pass(body_pdf: Path, questions: list[dict]) -> dict:
         start = qpage[n]
         if start % 2 == 0:
             continue
-        if q.get("options_mode") == "in_figure" or not q["options"]:
+        if options_in_figure(q) or not q["options"]:
             continue
         last_opt = "".join(b.get("text", "") for b in q["options"][sorted(q["options"])[-1]] if b["type"] == "text")
         key = re.sub(r"\s+", "", norm_text(last_opt, n, "核对", Log()))
@@ -1290,12 +1358,12 @@ def _expected_segments(q: dict) -> list[str]:
     for m in q.get("materials") or []:          # 资料印在题目之前
         texts += [b["text"] for b in m["blocks"] if b["type"] == "text"]
     texts += [b["text"] for b in q["stem"] if b["type"] == "text"]
-    if q.get("options_mode") != "in_figure":
+    if not options_in_figure(q):
         texts += [b["text"] for k in sorted(q["options"]) for b in q["options"][k] if b["type"] == "text"]
     segs = []
     for t in texts:
         for para in reflow(norm_text(t, q["number"], "核对", quiet), q["number"], "核对", quiet):
-            for piece in re.split(r"\$[^$]+\$|_{3,}", para):
+            for piece in re.split(r"\$[^$]+\$|_{3,}", re.sub(r"</?u>", "", para)):
                 piece = re.sub(r"\s+", "", piece)
                 if len(piece) >= 2:
                     segs.append(piece)
