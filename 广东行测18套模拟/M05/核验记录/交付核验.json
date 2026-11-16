@@ -1,6 +1,6 @@
 {
   "paper_id": "M05",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "status": "PASS",
   "question_count": 90,
   "source_reference_count": 20,
@@ -11,6 +11,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -18,6 +19,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -25,6 +27,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -32,13 +35,17 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
       "number": 20,
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
-      "internal_spaces_and_newlines_retained": true,
+      "internal_spaces_and_newlines_retained": false,
+      "registered_overrides": [
+        "layout_only"
+      ],
       "material_exception": null
     },
     {
@@ -46,6 +53,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -53,6 +61,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -60,6 +69,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -67,6 +77,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -74,6 +85,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -81,6 +93,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -88,6 +101,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -95,6 +109,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -102,6 +117,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -109,6 +125,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -116,6 +133,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -123,6 +141,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -130,6 +149,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -137,6 +157,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -144,6 +165,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -151,6 +173,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -158,6 +181,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -165,6 +189,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -172,6 +197,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -179,6 +205,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -186,6 +213,9 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [
+        "distractor_revision"
+      ],
       "material_exception": null
     },
     {
@@ -193,6 +223,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -200,6 +231,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -207,6 +239,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -214,6 +247,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -221,6 +255,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -228,6 +263,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -235,6 +271,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -242,6 +279,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -249,6 +287,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -256,13 +295,17 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
       "number": 52,
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
-      "internal_spaces_and_newlines_retained": true,
+      "internal_spaces_and_newlines_retained": false,
+      "registered_overrides": [
+        "layout_only"
+      ],
       "material_exception": null
     },
     {
@@ -270,6 +313,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -277,13 +321,17 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
       "number": 55,
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
-      "internal_spaces_and_newlines_retained": true,
+      "internal_spaces_and_newlines_retained": false,
+      "registered_overrides": [
+        "layout_only"
+      ],
       "material_exception": null
     },
     {
@@ -291,13 +339,17 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
       "number": 57,
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
-      "internal_spaces_and_newlines_retained": true,
+      "internal_spaces_and_newlines_retained": false,
+      "registered_overrides": [
+        "layout_only"
+      ],
       "material_exception": null
     },
     {
@@ -305,13 +357,17 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
       "number": 59,
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
-      "internal_spaces_and_newlines_retained": true,
+      "internal_spaces_and_newlines_retained": false,
+      "registered_overrides": [
+        "layout_only"
+      ],
       "material_exception": null
     },
     {
@@ -319,13 +375,17 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
       "number": 61,
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
-      "internal_spaces_and_newlines_retained": true,
+      "internal_spaces_and_newlines_retained": false,
+      "registered_overrides": [
+        "layout_only"
+      ],
       "material_exception": null
     },
     {
@@ -333,13 +393,17 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
       "number": 63,
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
-      "internal_spaces_and_newlines_retained": true,
+      "internal_spaces_and_newlines_retained": false,
+      "registered_overrides": [
+        "layout_only"
+      ],
       "material_exception": null
     },
     {
@@ -347,6 +411,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -354,6 +419,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -361,6 +427,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -368,6 +435,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -375,6 +443,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -382,6 +451,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -389,6 +459,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -396,6 +467,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -403,6 +475,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -410,6 +483,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -417,6 +491,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -424,6 +499,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -431,6 +507,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": "remove_transcription_hint_only"
     },
     {
@@ -438,6 +515,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": "remove_transcription_hint_only"
     },
     {
@@ -445,6 +523,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": "remove_transcription_hint_only"
     },
     {
@@ -452,6 +531,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": "remove_transcription_hint_only"
     },
     {
@@ -459,6 +539,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": "remove_transcription_hint_only"
     },
     {
@@ -466,6 +547,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -473,6 +555,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -480,6 +563,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -487,6 +571,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -494,6 +579,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -501,6 +587,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -508,6 +595,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -515,6 +603,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -522,6 +611,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     },
     {
@@ -529,6 +619,7 @@
       "source_object_exact": true,
       "stem_options_exact_after_asset_path_normalization": true,
       "internal_spaces_and_newlines_retained": true,
+      "registered_overrides": [],
       "material_exception": null
     }
   ],
@@ -689,26 +780,23 @@
     "模考/2026下半年广东卷_16-33季_AI可读/全部题目.jsonl": "12fb48ab01e38b88ff19d85e59e463730f290407350207e00afe318f597fa3b9"
   },
   "output_sha256": {
-    "paper.json": "987fae8b94223a3729b39ab4f72ffe8854d1b970b1f2d32ba2537ea748c15e6c",
-    "selection.json": "ad0c80813dba4df1cf1dc066274cb6bc1a0f27796e357a1e7a7980d09f25ccfb",
-    "originals.json": "9c5a9f4b72c993cab9c80aae48acad0a68e699c520214b41785c0734b73bc936",
+    "paper.json": "047dbdbffdfed7c25c0b8a552767b575e731fad1f2539f275eea227b6321bb71",
+    "selection.json": "f6115d390b4f534b2cdd23aefc5bcaf21ecf943a1a7edfdbb61fc412ad448a59",
+    "originals.json": "f8bd26dda249bfed454be6aeea9b89468c31e143465ea2b49844672ac6bfce69",
     "choices.json": "4e9f9e5d4293486364950538c762b781512b39c8abac0e44e02dffb68e7693c7",
-    "editorial.json": "bcb26ea964657f9d60f544dfab2fd91f28ca5b05d405b1b73cd0787b8354043c",
-    "题目.jsonl": "c454841111f262f96e2b6c4f4ebe3d859f76c6bb1c9253824bd1506270a61fe1",
-    "题本_待审.md": "83e874259db8e75899421a20def9ef1d1d083b373ebe6893da8d362ce5953b43",
-    "答案与解析_待审.md": "a8ed4f9198cb5717db24e633d78a207eba0481a4eb179f8482a8be1c84cc1bd0",
-    "来源登记.jsonl": "6ad5ff9dc74ff176e53357de915b9a37ebade047fb51bb16906abba80a0b7edd"
+    "editorial.json": "5ee36cef40f2babb8d38bbc22f169b9faa7fccd4f2eb140098648be38c6467f4",
+    "题目.jsonl": "1aa68fc12dd5e0ac6abef8181cb23a01b27120f8a600c99c6626968c9ced11b2",
+    "题本_待审.md": "ad705215639bcef93e328a2f0f381e5b2a024eb135422bf847fdf65cfdd5b456",
+    "答案与解析_待审.md": "bf57d89e03f752853b0b94aa2ecdda34396ad9255152245b15ae501e84269cef",
+    "来源登记.jsonl": "1ee11741b046460a16a81b5f903db5a725fab468bf307d938f10b1fe5cab63f9"
   },
   "use_ledger_rows_after_local_build": 450,
-  "external_review": "not_started",
-  "print_ready": false,
+  "external_review": "claude_review_v010_done",
+  "print_ready": true,
   "limits": [
-    "没有独立第二读者；20题参考键一致不等于其余70题官方有键。",
-    "原模考PDF未取得；表格转写仅做内部计算和单位核验。",
-    "第80题D只有122辆艘余量，表格原图须优先检查。",
-    "第24、65题按源参考键取最佳项，解释边界保留给外审。",
-    "第50题截面判断的原图到模型环节须人工复核。",
-    "没有最终PDF；不借用前卷打印检查。",
+    "0.1.0已由Claude七个模块独立盲解（90/90与答案键一致）；0.2.0修订由Claude按审核意见完成。",
+    "20题参考键一致不等于其余70题官方有键。",
+    "原模考PDF未取得；表格转写仅做内部计算和单位核验；第80题D只有122辆艘余量。",
     "用户已确认源卷未做过；旧专项扫描仅覆盖本地可读文本与已登记图推索引。"
   ]
 }

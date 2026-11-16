@@ -44,7 +44,8 @@ def blocks(bs):
    if b.get('notes'):out.append('<p>'+html.escape(b['notes'])+'</p>')
  return '\n'.join(out)
 def page(title,body):return '<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>'+title+'</title><style>'+STYLE+'</style><body>'+body+'</body></html>'
-body='<h1>广东行测模拟 M05｜第五套题本</h1><p>90题 · 90分钟 · 0.1.0完整待审稿</p><p class="small">仅为题本阅览页，不含答案；尚未经过Claude独立审核，不是最终打印版。第1—4题判断，第5—8题单选，第9—10题多选，其余单选。</p>'
+_cfg=json.loads((D/'paper.json').read_text(encoding='utf-8')) if 'D' in globals() else {}
+body='<h1>广东行测模拟 M05｜第五套题本</h1><p>90题 · 90分钟 · '+_cfg.get('version','')+'</p><p class="small">仅为题本阅览页，不含答案；正式打印请用打印版PDF。第1—4题判断，第5—8题单选，第9—10题多选，其余单选。</p>'
 section=None;seen=set();groups={}
 for q in questions:
  for m in q['materials']:groups.setdefault(m['id'],[]).append(q['number'])

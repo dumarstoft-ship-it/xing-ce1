@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Assemble selected originals from immutable banks; never rewrite source prose."""
-import collections,copy,hashlib,json
+import collections,copy,hashlib,json,re
 from pathlib import Path
 D=Path(__file__).resolve().parent
 R=D.parents[1]
@@ -45,13 +45,40 @@ def main():
     q['edits']=[{'type':'remove_transcription_hint','description':'仅去掉转写附注“同比增长列为绝对增量，原表未标百分号。”；题目、表头、单位、数字均不变，不提前替考生判断增量/增长率。原附注仍完整保存在source_question。'}]
    rows.append(q)
  rows.sort(key=lambda q:q['number']);assert [q['number'] for q in rows]==list(range(1,91))
+ # 0.2.0：Claude审核后的修订（用户授权Claude直接修改）。只改空白的覆盖须与源题去空白后逐字相同。
+ rev=load(D/'revisions_v020.json') if (D/'revisions_v020.json').exists() else None
+ if rev:
+  byn={q['number']:q for q in rows};C=lambda t:re.sub(r'\s','',t)
+  T=lambda v:v if isinstance(v,str) else ''.join(b.get('text','') for b in v)
+  for n,r in rev['layout_only'].items():
+   q=byn[int(n)];src=q['source_question']
+   if 'stem_block' in r:
+    stem=copy.deepcopy(src['stem'])
+    if isinstance(stem,str):assert stem==r['from'];stem=r['to']
+    else:assert stem[r['stem_block']]['text']==r['from'];stem[r['stem_block']]['text']=r['to']
+    assert C(r['from'])==C(r['to']);q['stem_override']=stem
+   if 'options' in r:
+    assert all(C(T(src['options'][k]))==C(v) for k,v in r['options'].items()) and set(r['options'])==set(src['options'])
+    q['options']=dict(r['options'])
+   q['edits'].append({'type':'layout_only','version':rev['version'],'description':r['description']})
+  for n,r in rev['options'].items():
+   q=byn[int(n)];q['options']=dict(r['options'])
+   q['edits'].append({'type':'distractor_revision','version':rev['version'],'description':r['description']})
+  for n,r in rev['notices'].items():
+   q=byn[int(n)];assert r['drop'] in q['source_notice']
+   q['source_notice']=(q['source_notice'].replace(' '+r['drop'],'').replace(r['drop'],'')+(' '+r['add'] if r['add'] else '')).strip()
+  for q in rows:
+   q['verification']['status']='claude_reviewed_v010_revised_v020'
  assert len({q['source_id'] for q in rows})==90
- cfg={'paper_id':'M05','version':'0.1.0','date':'2026-11-16','date_timezone':'Asia/Taipei',
+ cfg={'paper_id':'M05','version':rev['version'] if rev else '0.1.0','date':'2026-11-16','date_timezone':'Asia/Taipei',
  'source_snapshot':'8b37121d4f486e364b8f76826cf8de651021f4b2','policy_snapshot':'cabcf30f8f26e7daa49f80b836212ee1efbbeccb',
  'target_question_count':90,'minutes':90,'missing_numbers':[],
  'completed_section_counts':dict(collections.Counter(q['section'] for q in rows)),
- 'status':'editor_checked_pending_claude','external_review':'not_started','printing_status':'pending_external_review',
- 'display_status':'90题完整待审稿；题本、编辑解析与复算记录已齐，尚未经过Claude独立审核，不是正式打印定稿。',
+ 'status':'claude_reviewed_revised' if rev else 'editor_checked_pending_claude',
+ 'external_review':'claude_review_v010_done' if rev else 'not_started',
+ 'printing_status':'final_print_by_claude' if rev else 'pending_external_review',
+ 'display_status':('90题完整卷0.2.0：Claude审核后已按审核意见修订（用户授权Claude直接修改），正式打印版见打印版/。' if rev else
+                   '90题完整待审稿；题本、编辑解析与复算记录已齐，尚未经过Claude独立审核，不是正式打印定稿。'),
  'structure_basis':'沿用项目90题结构；并非对2027公告题量作预测。',
  'source_exposure':'用户已确认源卷未做过；与已用、撤题和旧专项曝光排重。',
  'canonical_source':'selection.json','review_handoff':'交接_Claude.md',

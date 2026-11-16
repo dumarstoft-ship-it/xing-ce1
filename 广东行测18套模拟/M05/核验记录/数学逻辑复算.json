@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "checked_version": "0.1.0",
+  "checked_version": "0.2.0",
   "checks": 40,
   "quantitative_and_data_questions": 35,
   "records": [
@@ -219,7 +219,7 @@
     },
     {
       "number": 41,
-      "computed_answer": "D",
+      "computed_answer": "B",
       "agrees": true,
       "details": {
         "unordered_sets": [

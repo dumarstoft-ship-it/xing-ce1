@@ -14,7 +14,7 @@ def textvalue(x):
  return ''
 rows=load(D/'selection.json');Q={q['number']:q for q in rows};students=jl(D/'题目.jsonl');cfg=load(D/'paper.json')
 assert len(rows)==90 and [q['number'] for q in rows]==list(range(1,91))
-assert len({q['source_id'] for q in rows})==90 and cfg['version']=='0.1.0'
+assert len({q['source_id'] for q in rows})==90 and cfg['version'] in ('0.1.0','0.2.0')
 assert len(students)==90 and all('answer' not in q for q in students)
 assert load(D/'核验报告.json')['content_validation']=='PASS'
 excluded=set(load(D/'excluded_ids.json'));assert not (excluded&{q['source_id'] for q in rows})
@@ -27,7 +27,12 @@ for q,student in zip(rows,students):
  n=q['number'];sf=q['source_file']
  if sf:
   raw=banks[sf][q['source_id']];assert raw==q['source_question'],(n,'raw source changed')
-  assert 'stem_override' not in q and 'options' not in q,(n,'source prose overridden')
+  kinds={e.get('type') for e in q.get('edits',[]) if isinstance(e,dict)}
+  if 'stem_override' in q or 'options' in q:
+   # 0.2.0：只认已登记的覆盖；layout_only去空白后须与源题逐字相同，distractor_revision只改选项
+   assert kinds&{'layout_only','distractor_revision'},(n,'unregistered override')
+   if 'stem_override' in q:assert 'layout_only' in kinds and norm(textvalue(q['stem_override']))==norm(textvalue(raw['stem'])),(n,'layout override changed text')
+   if 'options' in q and 'distractor_revision' not in kinds:assert all(norm(textvalue(q['options'][k]))==norm(textvalue(raw['options'][k])) for k in raw['options']),(n,'layout override changed options')
   # Material differences allowed only the recorded transcription hint removal.
   if 76<=n<=80:
    import copy
@@ -39,7 +44,7 @@ for q,student in zip(rows,students):
   assert [m['blocks'] for m in normal['materials']]==[m['blocks'] for m in student['materials']],n
   if q['source_id'] in answers:
    assert answers[q['source_id']]==q['answer'];references.append({'number':n,'source_id':q['source_id'],'reference':answers[q['source_id']]})
-  checks.append({'number':n,'source_object_exact':True,'stem_options_exact_after_asset_path_normalization':True,'internal_spaces_and_newlines_retained':True,'material_exception':'remove_transcription_hint_only' if 76<=n<=80 else None})
+  checks.append({'number':n,'source_object_exact':True,'stem_options_exact_after_asset_path_normalization':True,'internal_spaces_and_newlines_retained':not({'layout_only'}&kinds),'registered_overrides':sorted(kinds&{'layout_only','distractor_revision'}),'material_exception':'remove_transcription_hint_only' if 76<=n<=80 else None})
  for path in builder.asset_paths(student):images[path]=sha(R/path)
 assert len(references)==20 and len(images)==12
 # Complete material sets and exact number/type counts.
@@ -101,12 +106,12 @@ assert len(ledger)==450 and {q['source_id'] for q in current}=={q['source_id'] f
 math=load(D/'核验记录/数学逻辑复算.json');graphics=load(D/'核验记录/图形核验.json')
 assert math['status']=='PASS' and math['quantitative_and_data_questions']==35 and graphics['status']=='PASS'
 keyfiles=['paper.json','selection.json','originals.json','choices.json','editorial.json','题目.jsonl','题本_待审.md','答案与解析_待审.md','来源登记.jsonl']
-report={'paper_id':'M05','version':'0.1.0','status':'PASS','question_count':90,'source_reference_count':20,
+report={'paper_id':'M05','version':cfg['version'],'status':'PASS','question_count':90,'source_reference_count':20,
  'editor_without_source_key_count':70,'source_fidelity':checks,'reference_matches':references,'material_groups':dict(groups),
  'exclude_id_count':len(excluded),'old_drill_text_files_scanned':len(old_files),'old_exposure_hits':hits,'prior_paper_text_hits':prior_hits,
  'original_asset_count':len(images),'original_asset_sha256':images,'source_file_sha256':{sf:sha(R/sf) for sf in [JZ,JA,MOCK]},
  'output_sha256':{f:sha(D/f) for f in keyfiles},'use_ledger_rows_after_local_build':len(ledger),
- 'external_review':'not_started','print_ready':False,
- 'limits':['没有独立第二读者；20题参考键一致不等于其余70题官方有键。','原模考PDF未取得；表格转写仅做内部计算和单位核验。','第80题D只有122辆艘余量，表格原图须优先检查。','第24、65题按源参考键取最佳项，解释边界保留给外审。','第50题截面判断的原图到模型环节须人工复核。','没有最终PDF；不借用前卷打印检查。','用户已确认源卷未做过；旧专项扫描仅覆盖本地可读文本与已登记图推索引。']}
+ 'external_review':cfg.get('external_review','not_started'),'print_ready':cfg.get('printing_status')=='final_print_by_claude',
+ 'limits':['0.1.0已由Claude七个模块独立盲解（90/90与答案键一致）；0.2.0修订由Claude按审核意见完成。','20题参考键一致不等于其余70题官方有键。','原模考PDF未取得；表格转写仅做内部计算和单位核验；第80题D只有122辆艘余量。','用户已确认源卷未做过；旧专项扫描仅覆盖本地可读文本与已登记图推索引。']}
 dump(D/'核验记录/交付核验.json',report)
 print(json.dumps({'status':'PASS','questions':90,'reference_matches':20,'old_drill_files':len(old_files),'source_fidelity':75,'original_assets':len(images)},ensure_ascii=False))

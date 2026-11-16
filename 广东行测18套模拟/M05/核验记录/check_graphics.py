@@ -63,7 +63,7 @@ for n in [46,47,48,49,50,66,67,70,90]:
  s=Q[n]['source_question'];blocks=s['stem']+sum(s['options'].values(),[])
  for b in blocks:
   if b.get('type')=='figure':assets[b['path']]=hashlib.sha256((M/b['path']).read_bytes()).hexdigest()
-report={'status':'PASS','version':'0.1.0','q47':{'bounded_regions_stem':stem,'options':dict(zip('ABCD',options)),'threshold':150,'minimum_area_doubled_pixels':60},
+report={'status':'PASS','version':json.loads((D/'paper.json').read_text(encoding='utf-8'))['version'],'q47':{'bounded_regions_stem':stem,'options':dict(zip('ABCD',options)),'threshold':150,'minimum_area_doubled_pixels':60},
 'q48':{'stem_pattern':pattern,'option_patterns':patterns,'same_glyph_rule':'完整朝向不变的同一图符'},
 'q49':{'rotations_examined':rotations,'compatible_rotations':records},'source_asset_sha256':assets,
 'manual_checks':{'46':'逐元素追踪后合并；原图已查看。','50':'截面高低边界、遮挡和右端小块由原图判断；不声称程序已证明原图三维实体模型。','66':'原F-t图已查看，不将F曲线等同于摩擦力曲线。','67':'原图接线已查看；等效电路的代数检查在数学逻辑报告。','70':'原图线型和标高已查看。','90':'四个原选项实际查看，数值二次差分另算。'},

@@ -1,6 +1,6 @@
 {
   "paper_id": "M05",
-  "checked_version": "0.1.0",
+  "checked_version": "0.2.0",
   "content_validation": "PASS",
   "target_count": 90,
   "actual_count": 90,
@@ -54,10 +54,10 @@
   "errors": [],
   "is_complete_paper": true,
   "print_ready": false,
-  "external_review": "not_started",
+  "external_review": "claude_review_v010_done",
   "review_print_ready": false,
   "print_ready_definition": "正式定稿状态；审阅PDF已检查与否另见review_print_ready，外部审核未完成时此值仍为false。",
-  "printing_status": "pending_external_review",
+  "printing_status": "final_print_by_claude",
   "source_file_sha256": {
     "江浙行测_AI题库/questions.jsonl": "07b748dd27d44132d7734279306f724981a89de028d19d229c989f00fd9b7c93",
     "模考/2026下半年广东卷_16-33季_AI可读/全部题目.jsonl": "12fb48ab01e38b88ff19d85e59e463730f290407350207e00afe318f597fa3b9"

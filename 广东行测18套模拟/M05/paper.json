@@ -1,6 +1,6 @@
 {
   "paper_id": "M05",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "date": "2026-11-16",
   "date_timezone": "Asia/Taipei",
   "source_snapshot": "8b37121d4f486e364b8f76826cf8de651021f4b2",
@@ -17,10 +17,10 @@
     "科学推理": 5,
     "资料分析": 20
   },
-  "status": "editor_checked_pending_claude",
-  "external_review": "not_started",
-  "printing_status": "pending_external_review",
-  "display_status": "90题完整待审稿；题本、编辑解析与复算记录已齐，尚未经过Claude独立审核，不是正式打印定稿。",
+  "status": "claude_reviewed_revised",
+  "external_review": "claude_review_v010_done",
+  "printing_status": "final_print_by_claude",
+  "display_status": "90题完整卷0.2.0：Claude审核后已按审核意见修订（用户授权Claude直接修改），正式打印版见打印版/。",
   "structure_basis": "沿用项目90题结构；并非对2027公告题量作预测。",
   "source_exposure": "用户已确认源卷未做过；与已用、撤题和旧专项曝光排重。",
   "canonical_source": "selection.json",

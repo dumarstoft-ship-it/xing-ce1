@@ -22,7 +22,7 @@ def check(n,got,details):
  payload={'stem':s.get('stem'),'options':s.get('options'),'material':s.get('material'),'materials':s.get('materials')}
  records.append({'number':n,'computed_answer':got,'agrees':True,'details':details,'source_input_sha256':hashlib.sha256(json.dumps(payload,ensure_ascii=False,sort_keys=True).encode()).hexdigest()})
 def optnum(n,key):
- val=Q[n]['source_question']['options'][key]
+ val=(Q[n].get('options') or Q[n]['source_question']['options'])[key]  # 0.2.0第41题选项另行登记
  s=val if isinstance(val,str) else ''.join(x.get('text','') for x in val)
  s=s.strip().strip('$').strip()
  import re
@@ -175,7 +175,7 @@ assert vals==list(map(F,['-738.46','81.50','-218.30','-66.96']))
 rank=sorted(range(4),key=lambda i:vals[i]);assert rank==[0,2,3,1]
 check(90,'D',{'newly_built_lengths':new,'newly_built_yoy_increments':inc,'point_rank_ascending':rank,'option_image_matching':'原四幅图实际查看；D的纵向点序为第1<第3<第4<第2。'})
 assert {r['number'] for r in records}==set(range(31,46))|set(range(71,91))|{51,56,60,63,67}
-out={'status':'PASS','checked_version':'0.1.0','checks':len(records),'quantitative_and_data_questions':35,'records':records,
+out={'status':'PASS','checked_version':json.loads((D/'paper.json').read_text())['version'],'checks':len(records),'quantitative_and_data_questions':35,'records':records,
  'limits':['有限枚举验证的是已写明模型；模型仍需外审。','数字推理没有无限延拓唯一性保证。','原表缺图的转写风险不由复算消除。','第90题选项形状为人工原图识别，数值序列由脚本独立算出。']}
 (D/'核验记录/数学逻辑复算.json').write_text(json.dumps(out,ensure_ascii=False,indent=2,default=encode)+'\n')
 print(json.dumps({'status':'PASS','checks':len(records),'quant_data':35},ensure_ascii=False))
