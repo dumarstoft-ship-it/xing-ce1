@@ -30,6 +30,33 @@ def verbal_check(p):
             + "；".join(f"第{x['number']}题盲做选{blind[x['number']]}、来源答案{x['answer']}，{notes[str(x['number'])]}" for x in diff) + "。")
 
 
+def difficulty_lines(p, real):
+    """M09起：按解题人的逐题评分（难度对照的标准）写数资难度与估时。"""
+    if not real:
+        return []
+    d = R / p / "解题"
+    data = json.loads((d / "data.json").read_text(encoding="utf-8")) if (d / "data.json").exists() else []
+    qs = json.loads((d / "quant_sci.json").read_text(encoding="utf-8")) if (d / "quant_sci.json").exists() else []
+    math = [x for x in qs if 36 <= x["number"] <= 45 and x.get("mode")]
+    if not data or not math:
+        return []
+    from collections import Counter
+    c = Counter(x["mode"] for x in data)
+    multi = c["两步"] + c["三步及以上"]
+    secs = sum(x.get("est_seconds") or 0 for x in data) + sum(x.get("material_seconds") or 0 for x in data)
+    cm = Counter(x["mode"] for x in math)
+    msecs = sum(x.get("est_seconds") or 0 for x in math)
+    return [
+        "## 难度",
+        "",
+        f"- 资料分析：读一眼就能判断{c['读']}道、一步{c['一步']}道、两步{c['两步']}道、三步及以上{c['三步及以上']}道（多步{multi}道）；"
+        f"熟练考生连扫读材料约{secs / 60:.1f}分钟。近三年真题多步5—8道、约16.1分钟（见[难度对照](../难度对照/README.md)）。",
+        f"- 数学运算：多步{cm['两步'] + cm['三步及以上']}道（两步{cm['两步']}、三步及以上{cm['三步及以上']}），熟练考生约{msecs / 60:.1f}分钟；近三年真题多步6—7道。",
+        "- 评分人各有松紧（同一组资料，题池归类时另一人评的多步题少几道），只作大致参照。按考场时段计时90分钟。",
+        "",
+    ]
+
+
 def main():
     p = sys.argv[1]
     d = S / p
@@ -84,12 +111,15 @@ def main():
          f"判断推理和科学推理另由第二人只看题面独立再做{('（' + str(n_second) + '题）') if n_second else ''}，两遍对照。"
          "换入的江浙真题用来源答案并复算。"
          + (f"换入题、改写的资料题和编辑新写的题另由第二人只看题面盲做（{n_extras}题），全部一致。" if n_extras else "")),
-        "- **第16—30题**：用真题的来源答案，选题时自己先做一遍；" + verbal_check(p),
+        "- **第16—30题**：用" + ("真题" if real else "国考、江浙真题") + "的来源答案，选题时自己先做一遍；" + verbal_check(p),
         "- **第1—15题**：每题的正确答案和每个错误选项都对应讲义原句；另由一人先凭知识盲做、再对照讲义和公开原文核查，答案全部一致。",
+        *[f"- {x}" for x in plan.get("review_notes") or []],
         "",
+        *difficulty_lines(p, real),
         "## 题型",
         "",
-        "各部分各类题的多少与2024—2026年广东卷对照见[编排说明](编排说明.md)。与真题范围差一两道的保留（用户原话“一两道之差无妨”），真题每年都有而本季缺的已补上。"
+        "各部分各类题的多少与2024—2026年广东卷对照见[编排说明](编排说明.md)。与真题范围差一两道的保留（用户原话“一两道之差无妨”）"
+        + ("。旧卷资料几乎没有“材料理解”（不用计算、在纯文字材料里找信息）这类题，现期量题也少，各套多半缺这两类。" if real else "，真题每年都有而本季缺的已补上。")
         + ("与真题范围有出入的类别：" + "；".join(f"{r['部分']}{r['类别']}{r['本卷']}道（真题{r['真题范围']}）" for r in off) + "。" if off else ""),
         "",
         "## 与原题不同的地方",

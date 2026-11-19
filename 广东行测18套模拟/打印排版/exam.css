@@ -97,7 +97,7 @@ p { margin: 0; }
 .opt .lab { font-family: "ZG Latin"; }
 /* 图形选项：标号在左上，图在右 */
 .opts.figs { column-gap: 8mm; row-gap: 3mm; margin: 2pt 0 4pt; }
-.optfig { display: flex; align-items: flex-start; gap: 1.5mm; line-height: 1; }
+.optfig { display: flex; align-items: flex-start; gap: 1.5mm; line-height: 1; break-inside: avoid; }   /* 选项图整组一页放不下时（一行一幅的饼图），在两幅之间断页，不把字母和图拆开 */
 .optfig .lab { font-family: "ZG Latin"; line-height: 22.9pt; }
 .optfig img { display: block; margin-top: 2mm; }
 .opt p + p { margin: 0; }

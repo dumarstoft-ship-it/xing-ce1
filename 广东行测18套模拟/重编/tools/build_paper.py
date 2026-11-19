@@ -424,6 +424,8 @@ def build(paper, dry=False):
         for n, sid in plan["sources"].items():
             src[int(n)] = sid
         log.add(31, "题源", plan.get("sources_note") or "第31—90题逐题选自真题题库，见编排说明")
+        for r in plan.get("replaced") or []:     # 组卷后因答案争议等换下的题
+            log.add(int(r["number"]), "换题", f"原选{r['old']}，换为{r['new']}：{r['reason']}")
     skip = set(int(n) for n in plan.get("skip") or [])   # 不出的题号（如政治常识材料不够时空出的题位）
     if skip:
         log.add(min(skip), "空题位", plan.get("skip_reason") or f"本套不出第{'、'.join(map(str, sorted(skip)))}题")
@@ -641,6 +643,16 @@ def num_ranges(ns):
     return "、".join(out)
 
 
+def real_source_desc(plan):
+    """编排说明题源表的第31—90题一行（M09起逐题选自真题）：按来源卷别计数。"""
+    ids = list(plan["sources"].values())
+    kinds = [("广东省考旧卷", sum(1 for i in ids if re.match(r"GD\d{4}", i))),
+             ("广东省选调生笔试", sum(1 for i in ids if i.startswith("GDXD"))),
+             ("广东事业单位统考", sum(1 for i in ids if i.startswith("SYDW"))),
+             ("其他", sum(1 for i in ids if not re.match(r"(GD|SYDW)", i)))]
+    return "真题：" + "，".join(f"{k}{c}题" for k, c in kinds if c)
+
+
 def verbal_source_desc(paper):
     """编排说明题源表的第16—30题一行：按本套言语题的实际来源写。"""
     ids = [v["id"] for v in verbal_items(paper).values()]
@@ -712,7 +724,7 @@ def write_outputs(paper, questions, answers, registry, log, plan, out=None, ledg
            "| 1—15 | 原创，依据《颜培天2027广东省考政治理论常识》讲义（含二十届五中全会《决定》）"
            + ("；本套空出第" + "、".join(map(str, sorted(skip))) + "题（讲义材料不够，按用户决定不硬出）" if skip else "") + " |"),
           "| 16—30 | " + verbal_source_desc(paper) + " |",
-          ("| 31—90 | 广东省考旧卷、事业单位统考真题（逐题来源见 `来源登记.jsonl`） |\n" if plan.get("sources")
+          ("| 31—90 | " + real_source_desc(plan) + "（逐题来源见 `来源登记.jsonl`） |\n" if plan.get("sources")
            else f"| 31—90 | 粉笔2026下半年广东省考模考第{SEASON[paper]}季原题（个别调换见下） |\n"),
           "逐题来源见 `来源登记.jsonl`。\n",
           "## 题型与近三年广东真题对照\n",
