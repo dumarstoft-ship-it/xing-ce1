@@ -35,7 +35,16 @@ def norm(s):
 
 
 def pid(paper):
-    m = re.match(r"GD(20\d\d)([XZ]?)$", paper or "")
+    """集训题册的卷名 → 题库卷名：GD2020X→GD2020-XJ，GD2020Z→GD2020-XZ，GD20131→GD2013-1（一卷），
+    GDXD2020ZH→GDXD2020-ZH（选调）。"""
+    p = paper or ""
+    m = re.match(r"GDXD(20\d\d)(XC|ZH|SW)$", p)
+    if m:
+        return f"GDXD{m.group(1)}-{m.group(2)}"
+    m = re.match(r"GD(2013)([13])$", p)
+    if m:
+        return f"GD2013-{m.group(2)}"
+    m = re.match(r"GD(20\d\d)([XZ]?)$", p)
     if not m:
         return None
     y, v = m.groups()
@@ -62,7 +71,8 @@ def windows(s, n=20, shifts=6):
 def load_bank():
     bank = {}
     for d in BANKS:
-        for f in sorted(list((ROOT / d).glob("GD20*.jsonl")) + list((ROOT / d).glob("SYDW20*.jsonl"))):
+        for f in sorted(list((ROOT / d).glob("GD20*.jsonl")) + list((ROOT / d).glob("GDXD20*.jsonl"))
+                        + list((ROOT / d).glob("SYDW20*.jsonl"))):
             for line in open(f, encoding="utf-8"):
                 q = json.loads(line)
                 bank[q["id"]] = q
@@ -153,7 +163,7 @@ def main():
             qids.add(i)
             why[i] = f"集训{q['id']}"
     for r in csv.DictReader(open(DRILL / "GPT_数量/D01/D01_已用题锁定_v2.csv", encoding="utf-8-sig")):
-        m = re.match(r"(GD20\d\d[XZ]?)-(\d+)$", r["source_key"] or "")
+        m = re.match(r"(GD[0-9A-Z]+?)-(\d+)$", r["source_key"] or "")
         if m and pid(m.group(1)):
             i = f"{pid(m.group(1))}-Q{int(m.group(2)):03d}"
             qids.add(i)
@@ -173,7 +183,7 @@ def main():
     # 集训第2天用过的资料材料
     mats = set()
     for r in csv.DictReader(open(DRILL / "GPT_复核/第1批/D02_材料连续编排对照.csv", encoding="utf-8-sig")):
-        m = re.match(r"ZLM-(GD20\d\d[XZ]?)-(\d+)$", r["material_id"])
+        m = re.match(r"ZLM-(GD[0-9A-Z]+?)-(\d+)$", r["material_id"])
         if m and pid(m.group(1)):
             mats.add(f"{pid(m.group(1))}-M{int(m.group(2))}")
     mtext = {}
