@@ -69,7 +69,8 @@ JZ_A = {a["question_id"]: a for a in jl(ROOT / JZ_REL / "answers.jsonl")}
 GK_Q = {q["id"]: q for q in jl(ROOT / GK_REL)}
 GD_Q = {}                                   # id → (题库目录, 题目)
 for _d in GD_DIRS:
-    for _f in sorted(list((ROOT / _d).glob("GD20*.jsonl")) + list((ROOT / _d).glob("SYDW20*.jsonl"))):
+    for _f in sorted(list((ROOT / _d).glob("GD20*.jsonl")) + list((ROOT / _d).glob("GDXD20*.jsonl"))
+                     + list((ROOT / _d).glob("SYDW20*.jsonl"))):
         for _q in jl(_f):
             GD_Q[_q["id"]] = (_d, _q)
 
@@ -117,8 +118,11 @@ def gd_figure(d, f):
 
 def gd_blocks(d, q):
     """广东真题题库的一题转为题块：题干、题图、选项；选项画在题图里时写“见题图中的X选项”。"""
-    stem = [{"type": "text", "text": q["stem"]}] if q.get("stem") else []
-    stem += [gd_figure(d, f) for f in q.get("figures") or [] if f.get("role") != "option"]
+    figs = [gd_figure(d, f) for f in q.get("figures") or [] if f.get("role") != "option"]
+    # 题干只有“（见题图）”这类占位字样时（如数阵题），原卷只印图
+    placeholder = figs and re.fullmatch(r"[（(]?见(?:题)?图[）)]?。?", (q.get("stem") or "").strip())
+    stem = [{"type": "text", "text": q["stem"]}] if q.get("stem") and not placeholder else []
+    stem += figs
     opt_figs = {f.get("option_label"): f for f in q.get("figures") or [] if f.get("role") == "option"}
     options = {}
     for o in q["options"]:
@@ -142,6 +146,37 @@ def gd_material_blocks(d, m):
     return out
 
 
+def apply_edits(plan, sid, rec, log, n, paper):
+    """题干、选项的改动（编排.json 的 edits，按来源编号）：原文须在该处唯一出现。"""
+    for e in plan.get("edits", []):
+        if e["source"] == sid:
+            blocks = rec["stem"] if e["where"] == "stem" else rec["options"][e["where"]]
+            hit = [b for b in blocks if b["type"] == "text" and e["old"] in b["text"]]
+            if len(hit) != 1 or hit[0]["text"].count(e["old"]) != 1:
+                raise SystemExit(f"{paper}第{n}题：改动原文未唯一命中：{e['old']}")
+            hit[0]["text"] = hit[0]["text"].replace(e["old"], e["new"])
+            log.add(n, "改动", f"{e['where']}：{e['old']} → {e['new']}（{e['reason']}）")
+
+
+def apply_material_edits(plan, mid, mblocks, log, n, paper):
+    """资料材料的改动（编排.json 的 material_edits）：表格单元格整格相等，或文字段中唯一出现。不改题库数据本身。"""
+    for e in plan.get("material_edits", []):
+        if e["material"] != mid:
+            continue
+        hits = [(b, i, j) for b in mblocks if b["type"] == "table"
+                for i, row in enumerate(b["rows"]) for j, cell in enumerate(row) if cell == e["old"]]
+        texts = [b for b in mblocks if b["type"] == "text" and e["old"] in b["text"]]
+        if len(hits) + sum(b["text"].count(e["old"]) for b in texts) != 1:
+            raise SystemExit(f"{paper}第{n}题资料：改动原文未唯一命中：{e['old']}")
+        if hits:
+            b, i, j = hits[0]
+            b["rows"] = [list(r) for r in b["rows"]]   # 不改动题库数据本身
+            b["rows"][i][j] = e["new"]
+        else:
+            texts[0]["text"] = texts[0]["text"].replace(e["old"], e["new"])
+        log.add(n, "改动", f"资料：{e['old']} → {e['new'] or '（空白）'}（{e['reason']}）")
+
+
 def describe_source(sid):
     m = re.match(r"gd-mock-2026h2-s(\d+)-q(\d+)$", sid)
     if m:
@@ -150,9 +185,15 @@ def describe_source(sid):
     if m:
         prov = "江苏" if m.group(1) == "JS" else "浙江"
         return f"{m.group(2)}年{prov}省考{m.group(3)}第{int(m.group(4))}题", f"{JZ_REL}/questions.jsonl", "真题"
-    m = re.match(r"GD(\d{4})(?:-(XJ|XZ))?-Q(\d+)$", sid)
+    m = re.match(r"GDXD(\d{4})-(XC|ZH|SW)-Q(\d+)$", sid)
     if m:
-        variant = {"XJ": "县级卷", "XZ": "乡镇卷"}.get(m.group(2), "")
+        name = {"XC": "《行测》", "ZH": "《综合行政能力测验》", "SW": "《思维能力测验》"}[m.group(2)]
+        d = GD_Q[sid][0] if sid in GD_Q else GD_DIRS[0]
+        paper = sid.rsplit("-Q", 1)[0]
+        return f"{m.group(1)}年广东省选调生笔试{name}第{int(m.group(3))}题", f"{d}/{paper}.jsonl", "真题"
+    m = re.match(r"GD(\d{4})(?:-(XJ|XZ|1|3))?-Q(\d+)$", sid)
+    if m:
+        variant = {"XJ": "县级卷", "XZ": "乡镇卷", "1": "一卷", "3": "三卷"}.get(m.group(2), "")
         d = GD_Q[sid][0] if sid in GD_Q else GD_DIRS[0]
         paper = sid.rsplit("-Q", 1)[0]
         return f"{m.group(1)}年广东省考{variant}第{int(m.group(3))}题", f"{d}/{paper}.jsonl", "真题"
@@ -454,6 +495,7 @@ def build(paper, dry=False):
                 log.add(n, "选项空格", "多空题选项恢复词间空格（按原卷）")
             rec["stem"] = [{"type": "text", "text": stem}]
             rec["options"] = {k: [{"type": "text", "text": t}] for k, t in opts.items()}
+            apply_edits(plan, sid, rec, log, n, paper)
             if v["answer"] != src_ans:
                 raise SystemExit(f"{paper}第{n}题：答案{v['answer']}与来源答案{src_ans}不一致")
             answers[n] = {"answer": v["answer"], "card": v["answer"], "analysis": v["analysis"],
@@ -463,9 +505,13 @@ def build(paper, dry=False):
         else:
             sid = src[n]
             s = sol.get(sid)
+            if not s and dry:   # 试排：解题记录未齐时用来源答案占位
+                s = {"answer": gd_answer(GD_Q[sid][1]) if sid in GD_Q else "?", "analysis": "（试排占位：解析未写）"}
             if not s:
                 raise SystemExit(f"{paper}第{n}题：{sid} 没有解题记录")
             orig = originals(paper).get(sid)
+            if sid in GD_Q and not orig and s["answer"] != gd_answer(GD_Q[sid][1]):
+                raise SystemExit(f"{paper}第{n}题：解题答案{s['answer']}与来源答案{gd_answer(GD_Q[sid][1])}不一致（{sid}）")
             if orig:
                 rec["stem"] = [dict(b) for b in orig["stem"]]
                 rec["options"] = {k: [dict(b) for b in v] for k, v in orig["options"].items()}
@@ -486,21 +532,7 @@ def build(paper, dry=False):
                     if m["id"] not in mat_ids:
                         mat_ids[m["id"]] = f"{paper}-M{len(mat_ids) + 1:02d}"
                         mblocks = material_blocks(m, mat_ids[m["id"]], log, n)
-                        for e in plan.get("material_edits", []):   # 资料材料的改动：表格单元格整格相等，或文字段中唯一出现
-                            if e["material"] != m["id"]:
-                                continue
-                            hits = [(b, i, j) for b in mblocks if b["type"] == "table"
-                                    for i, row in enumerate(b["rows"]) for j, cell in enumerate(row) if cell == e["old"]]
-                            texts = [b for b in mblocks if b["type"] == "text" and e["old"] in b["text"]]
-                            if len(hits) + sum(b["text"].count(e["old"]) for b in texts) != 1:
-                                raise SystemExit(f"{paper}第{n}题资料：改动原文未唯一命中：{e['old']}")
-                            if hits:
-                                b, i, j = hits[0]
-                                b["rows"] = [list(r) for r in b["rows"]]   # 不改动题库数据本身
-                                b["rows"][i][j] = e["new"]
-                            else:
-                                texts[0]["text"] = texts[0]["text"].replace(e["old"], e["new"])
-                            log.add(n, "改动", f"资料：{e['old']} → {e['new'] or '（空白）'}（{e['reason']}）")
+                        apply_material_edits(plan, m["id"], mblocks, log, n, paper)
                         rec["materials"] = [{"id": mat_ids[m["id"]], "blocks": mblocks}]
                     else:
                         rec["materials"] = [x for x in questions if x["materials"] and x["materials"][0]["id"] == mat_ids[m["id"]]][0]["materials"]
@@ -511,7 +543,9 @@ def build(paper, dry=False):
                     m = g["material"]
                     if m["id"] not in mat_ids:
                         mat_ids[m["id"]] = f"{paper}-M{len(mat_ids) + 1:02d}"
-                        rec["materials"] = [{"id": mat_ids[m["id"]], "blocks": gd_material_blocks(d, m)}]
+                        mblocks = gd_material_blocks(d, m)
+                        apply_material_edits(plan, m["id"], mblocks, log, n, paper)
+                        rec["materials"] = [{"id": mat_ids[m["id"]], "blocks": mblocks}]
                         log.add(n, "资料材料", f"{mat_ids[m['id']]}：广东真题{m['id']}，表格、统计图用原卷裁图")
                     else:
                         rec["materials"] = [x for x in questions if x["materials"] and x["materials"][0]["id"] == mat_ids[m["id"]]][0]["materials"]
@@ -539,14 +573,7 @@ def build(paper, dry=False):
                    for v in rec["options"].values()):
                 rec["options_mode"] = "in_figure"
                 rec["options"] = {k: [{"type": "text", "text": f"见题图中的 {k} 选项"}] for k in rec["options"]}
-            for e in plan.get("edits", []):
-                if e["source"] == sid:
-                    blocks = rec["stem"] if e["where"] == "stem" else rec["options"][e["where"]]
-                    hit = [b for b in blocks if b["type"] == "text" and e["old"] in b["text"]]
-                    if len(hit) != 1 or hit[0]["text"].count(e["old"]) != 1:
-                        raise SystemExit(f"{paper}第{n}题：改动原文未唯一命中：{e['old']}")
-                    hit[0]["text"] = hit[0]["text"].replace(e["old"], e["new"])
-                    log.add(n, "改动", f"{e['where']}：{e['old']} → {e['new']}（{e['reason']}）")
+            apply_edits(plan, sid, rec, log, n, paper)
             answers[n] = {"answer": s["answer"], "card": s["answer"], "analysis": s["analysis"],
                           "category": "／".join(x for x in (s.get("category"), s.get("subcategory"), s.get("form")) if x),
                           "basis": "模考无答案，独立解出并复核" if sid.startswith("gd-mock") else "来源答案，编辑解出一致",
@@ -630,8 +657,11 @@ def write_outputs(paper, questions, answers, registry, log, plan, out=None, ledg
     for a, b in [(1, 15), (16, 30), (31, 45), (46, 60), (61, 75), (76, 90)]:
         md.append("| 题号 | " + " | ".join(str(i) for i in range(a, b + 1)) + " |")
         md.append("|---|" + "---|" * (b - a + 1))
-        md.append("| 答案 | " + " | ".join(answers[i]["answer"] for i in range(a, b + 1)) + " |\n")
+        md.append("| 答案 | " + " | ".join(answers[i]["answer"] if i in answers else "—" for i in range(a, b + 1)) + " |\n")
     md.append("判断题在答题卡上正确涂A、错误涂B。\n")
+    skipped = sorted(set(range(1, 91)) - set(answers))
+    if skipped:
+        md.append("本套没有第" + "、".join(map(str, skipped)) + "题（表中记“—”），答题卡上这几题空着。\n")
     for q in questions:
         n = q["number"]
         if n in starts:

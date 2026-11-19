@@ -614,6 +614,8 @@ PARTS = [
     {"name": "资料分析", "match": ["资料分析"],
      "intro": ["所给出的图、表、文字或综合性资料均有若干个问题要你回答。你应根据资料提供的信息进行分析、比较、计算和判断处理。"]},
 ]
+SECTION_RANGES = {"政治理论": (1, 10), "常识判断": (11, 15), "言语理解与表达": (16, 30), "数量关系": (31, 45),
+                  "判断推理": (46, 65), "科学推理": (66, 70), "资料分析": (71, 90)}   # 2025、2026年广东卷各部分题号
 POLITICS_GROUPS = {
     "true_false": ("判断题", "{ord}、判断题。阅读题目，对题目表述的正误作出判断。"),
     "single_choice": ("单选题", "{ord}、单选题。每题只有 1 个答案是最恰当的，要求选出最恰当的 1 项。"),
@@ -878,7 +880,7 @@ def table_width_em(block: dict, avail: float = TEXT_WIDTH_EM) -> float | None:
 
 
 def figure_options_html(q: dict, sizer: "FigureSizer", log: Log) -> str:
-    """选项为图（如资料分析的饼图选项）：原印刷尺寸，四列放得下排一行，否则两列。"""
+    """选项为图（如资料分析的饼图选项）：原印刷尺寸，四列放得下排一行，否则两列，两列也放不下就一行一幅。"""
     n = q["number"]
     cells, widths = [], []
     for k in sorted(q["options"]):
@@ -893,7 +895,8 @@ def figure_options_html(q: dict, sizer: "FigureSizer", log: Log) -> str:
         cap = f'<span class="optfig-text">{inline_html("".join(texts))}</span>' if texts else ""
         cells.append(f'<div class="optfig"><span class="lab">{k}.</span>'
                      f'<img src="{src}" style="width:{w:.2f}mm;height:{h:.2f}mm" alt="">{cap}</div>')
-    cols = 4 if 4 * max(widths) + 3 * 8 <= 152.4 else 2
+    # 四列放得下排一行，两列放得下排两行，再宽（如原卷一行一幅的饼图选项）一行一幅
+    cols = 4 if 4 * max(widths) + 3 * 8 <= 152.4 else 2 if 2 * max(widths) + 8 <= 152.4 else 1
     log.add(n, "选项", "图形选项排法", f"{len(cells)}幅", f"每行{cols}幅")
     return f'<div class="opts figs" style="grid-template-columns:repeat({cols},1fr)">' + "".join(cells) + "</div>"
 
@@ -1072,8 +1075,13 @@ def body_html(paper_id: str, questions: list[dict], css_href: str, fonts_href: s
         raise SystemExit(f"以下题目的 section 无法归入考场部分：{leftover}")
     # 题号须连续且各部分按顺序
     order = [q["number"] for _, qs in by_part for q in qs]
-    if order != sorted(order) or order != list(range(1, len(order) + 1)):
+    # 题号须递增且各部分按顺序；M09起政治常识材料不够时会空出题位（编排 skip），其余题号不变，
+    # 空出的题号在所属部分的说明后注明
+    missing = sorted(set(range(1, max(order) + 1)) - set(order))
+    if order != sorted(order) or len(set(order)) != len(order) or (missing and max(order) != 90):
         raise SystemExit(f"题号不连续或部分顺序与原卷不符：{order}")
+    if missing:
+        log.add(None, "空题位", "本套没有第" + "、".join(map(str, missing)) + "题，在所属部分的说明后注明", "", "")
 
     out = [
         "<!doctype html><html lang=\"zh-CN\"><head><meta charset=\"utf-8\">",
@@ -1106,6 +1114,10 @@ def body_html(paper_id: str, questions: list[dict], css_href: str, fonts_href: s
         else:
             for t in part["intro"]:
                 out.append(f'<p class="instr">{html.escape(t)}</p>')
+        lo, hi = SECTION_RANGES.get(part["name"], (qs[0]["number"], qs[-1]["number"]))
+        gap = [x for x in missing if lo <= x <= hi]
+        if gap:
+            out.append(f'<p class="instr">本部分没有第{"、".join(map(str, gap))}题，答题卡上这几题不填涂。</p>')
         out.append('<p class="instr">请开始答题：</p>')
 
         current = None
@@ -1281,7 +1293,7 @@ def line_start_punct(pdf: Path, front_pages: int) -> list[tuple[int, str]]:
     return found
 
 
-def check_pdf(pdf: Path, n_questions: int, front_pages: int) -> dict:
+def check_pdf(pdf: Path, numbers: list[int], front_pages: int) -> dict:
     r = subprocess.run(["pdffonts", str(pdf)], capture_output=True, text=True)
     fonts = [ln.split()[0] for ln in r.stdout.splitlines()[2:] if ln.strip()]
     bad = [f for f in fonts if not ALLOWED_FONT.search(f)]
@@ -1307,10 +1319,10 @@ def check_pdf(pdf: Path, n_questions: int, front_pages: int) -> dict:
     bad_starts = line_start_punct(pdf, front_pages)
     if bad_starts:
         raise SystemExit(f"句末标点落在行首（避头尾失效）：{bad_starts}")
-    missing = [k for k in range(1, n_questions + 1) if k not in page_of]
+    missing = [k for k in numbers if k not in page_of]
     if missing:
         raise SystemExit(f"PDF中找不到以下题号：{missing}")
-    seq = [page_of[k] for k in range(1, n_questions + 1)]
+    seq = [page_of[k] for k in numbers]
     if seq != sorted(seq):
         raise SystemExit("题号在PDF中的页序不单调")
     return {"字体": fonts, "正文页数": total_body, "题号所在PDF页": page_of}
@@ -1584,7 +1596,7 @@ def main() -> None:
                 shutil.copy(tdp / name, out_dir / name)
 
     front_pages = 1 if args.no_notice else 2
-    report = check_pdf(pdf_path, len(questions), front_pages)
+    report = check_pdf(pdf_path, [q["number"] for q in questions], front_pages)
     content = verify_content(pdf_path, questions, front_pages)
     import hashlib
     summary = {
