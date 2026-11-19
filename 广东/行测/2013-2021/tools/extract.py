@@ -18,6 +18,7 @@
 每卷的文件（多人可同时整理不同的卷，互不覆盖）
   输入  tools/papers/<卷>.json       登记：year、title、paper_variant、source_edition、question_pdf、answer_pdf、
                                     expected_questions；可选 missing_questions（原卷缺题的题号）、
+                                    exam、subject（默认“公务员录用考试”“行政职业能力测验”，选调等其他考试时填写）、
                                     source_commit（记作来源的提交；默认沿用 sources/<卷>.json 已记录的提交，
                                     源 PDF 变了才改用 HEAD）
         tools/corrections/<卷>.json  人工修正（键见下）
@@ -26,7 +27,8 @@
   all.jsonl  assets-manifest.json  sources.json  quality-report.md  README.md
 
 修正文件的键（都可省略）
-  section_map      原卷部分名 → schema 部分名，如 {"常识应用": "常识判断"}
+  section_map      原卷部分名 → schema 部分名，如 {"常识应用": "常识判断"}；这里列出的原卷部分名同时被识别为
+                   部分标题（如选调卷的“实词填空”“阅读理解”“推理判断”“思维能力测验”）
   section_ranges   [{from, to, section, note}] 按题号改部分（如原卷未单列的科学推理）
   material_groups  [[86, 90], ...] 资料分析各组材料的首末题号，用于核对自动分段
   inline_images    {"p04-i01": "1/3"} 行内小图的文字；缺哪个 build 会列出
@@ -320,14 +322,14 @@ class MBlock:
     questions: list = field(default_factory=list)
 
 
-def match_section(text: str):
-    """返回原卷部分名（如“常识应用”）；不是部分标题则返回 None。"""
+def match_section(text: str, extra=()):
+    """返回原卷部分名（如“常识应用”）；不是部分标题则返回 None。extra：本卷修正文件 section_map 中的原卷部分名。"""
     t = text.replace(' ', '')
     for rx in RE_SECTION:
         m = rx.match(t)
         if m:
             name = m.group('name')
-            for cand in SECTION_NAMES + sorted(SECTION_ALIASES, key=len, reverse=True):
+            for cand in SECTION_NAMES + sorted(set(SECTION_ALIASES) | set(extra), key=len, reverse=True):
                 if name.startswith(cand):
                     return cand
     return None
@@ -338,7 +340,7 @@ def match_material(text: str) -> bool:
     return any(rx.match(t) for rx in RE_MATERIAL)
 
 
-def segment(pages: list[Page], expected: int, inline_text: dict, missing=()):
+def segment(pages: list[Page], expected: int, inline_text: dict, missing=(), extra_sections=()):
     """按阅读顺序把行与题图分到部分、材料、题目。材料有两种写法：带“材料1/（材料一）/根据以下资料”等标题；
     或（2013、2015、2017、2019等年）无标题，资料分析部分里上一组题的A—D选项之后直接接首行缩进的材料段落或图表。"""
     for p in pages:
@@ -386,7 +388,7 @@ def segment(pages: list[Page], expected: int, inline_text: dict, missing=()):
         short_prev = prev is not None and prev.x1 < right - 1.5 * prev.em
         indented = ln.x0 > left + 1.2 * ln.em
         prev = ln
-        sec = match_section(ln.text) if len(ln.text) < 160 else None
+        sec = match_section(ln.text, extra_sections) if len(ln.text) < 160 else None
         if sec:
             section, cur_q, cur_m, collecting = sec, None, None, False
             headings.append(ln)
@@ -875,7 +877,8 @@ def cmd_dump(paper: str, raw: bool = True):
     cfg, corr = load_cfg(paper)
     pages = load_pages(REPO / cfg['question_pdf'])
     inline = {} if raw else corr.get('inline_images', {})
-    seg = segment(pages, cfg['expected_questions'], inline, set(cfg.get('missing_questions', [])))
+    seg = segment(pages, cfg['expected_questions'], inline, set(cfg.get('missing_questions', [])),
+                  corr.get('section_map', {}))
     if not raw:
         apply_figure_questions(seg, corr)
     left, right = seg['margins']
@@ -1187,7 +1190,7 @@ def build(paper: str, work: Path | None):
     pages = load_pages(qpdf)
     page_by_no = {p.no: p for p in pages}
     missing_q = set(cfg.get('missing_questions', []))
-    seg = segment(pages, cfg['expected_questions'], inline_text, missing_q)
+    seg = segment(pages, cfg['expected_questions'], inline_text, missing_q, corr.get('section_map', {}))
     apply_figure_questions(seg, corr)
     left, right = seg['margins']
     autofix, fixlog, problems = [], [], []
@@ -1388,8 +1391,8 @@ def build(paper: str, work: Path | None):
         rec['id'] = f'{paper}-Q{n:03d}'
         rec['year'] = cfg['year']
         rec['province'] = '广东'
-        rec['exam'] = '公务员录用考试'
-        rec['subject'] = '行政职业能力测验'
+        rec['exam'] = cfg.get('exam', '公务员录用考试')
+        rec['subject'] = cfg.get('subject', '行政职业能力测验')
         rec['paper_id'] = paper
         rec['paper_variant'] = cfg['paper_variant']
         rec['source_edition'] = cfg['source_edition']

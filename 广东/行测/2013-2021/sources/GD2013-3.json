@@ -1,0 +1,22 @@
+{
+  "paper_id": "GD2013-3",
+  "commit": "52f9811b22cad5410a7108dd0a07a879f1187aa5",
+  "sources": [
+    {
+      "path": "真题/2013年广东公务员考试《行测》三卷.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70e3e698ffa1a01680c443779e5a136ab43b8de5",
+      "size": 813187,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/70e3e698ffa1a01680c443779e5a136ab43b8de5"
+    },
+    {
+      "path": "答案解析/2013年广东公务员考试《行测》三卷答案及解析.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49814165632bd7fb2fe41d0a3641169f574f7225",
+      "size": 676721,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/49814165632bd7fb2fe41d0a3641169f574f7225"
+    }
+  ]
+}
