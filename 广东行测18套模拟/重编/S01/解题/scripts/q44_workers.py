@@ -7,3 +7,4 @@ for q in range(1, 200):                 # q：每道工序每小时产量
         break
 print('每小时产量', best[0], '各工序人数', best[1:], '共', sum(best[1:]))
 assert best[0] == lcm(5, 4, 8) == 40 and sum(best[1:]) == 23
+print('易错核对：最小公倍数本身为', lcm(5, 4, 8), '（D项），是每小时件数而非人数')

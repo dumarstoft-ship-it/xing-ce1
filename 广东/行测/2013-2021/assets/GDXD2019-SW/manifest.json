@@ -1,0 +1,189 @@
+[
+  {
+    "id": "GDXD2019-SW-p12-i09",
+    "path": "assets/GDXD2019-SW/GDXD2019-SW-p12-i09.png",
+    "paper_id": "GDXD2019-SW",
+    "source_page": 12,
+    "source_bbox_points": [
+      73.5,
+      98.5,
+      488.5,
+      130.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1660,
+    "height": 129,
+    "sha256": "d2cb9d8c9a9014fcd45e8724fd1ca4539b3232e4b27c69fe3c783e73041f413c",
+    "transcription": "题图数字表格（按原图，四组三格方框从左到右排列）\n\n| 组 | 第1格 | 第2格 | 第3格 |\n| --- | --- | --- | --- |\n| 第1组 | 4 | 2 | 3 |\n| 第2组 | 3 | 7 | 5 |\n| 第3组 | 8 | 10 | 9 |\n| 第4组 | 8 | 2 | （ ） |"
+  },
+  {
+    "id": "GDXD2019-SW-p12-i10",
+    "path": "assets/GDXD2019-SW/GDXD2019-SW-p12-i10.png",
+    "paper_id": "GDXD2019-SW",
+    "source_page": 12,
+    "source_bbox_points": [
+      159.0,
+      343.75,
+      457.0,
+      450.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1192,
+    "height": 427,
+    "sha256": "b67596dcde354e43a89e63439cc7e8a0aa43a2bd27767de57c3acc216cce0025",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2019-SW-p12-i11",
+    "path": "assets/GDXD2019-SW/GDXD2019-SW-p12-i11.png",
+    "paper_id": "GDXD2019-SW",
+    "source_page": 12,
+    "source_bbox_points": [
+      199.75,
+      518.75,
+      425.25,
+      632.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 902,
+    "height": 456,
+    "sha256": "0ea839edc725e1da71aa7d6409f01cb2e757f8d0e4e9cb1b4d1552dfd8051e14",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2019-SW-p12-i12",
+    "path": "assets/GDXD2019-SW/GDXD2019-SW-p12-i12.png",
+    "paper_id": "GDXD2019-SW",
+    "source_page": 12,
+    "source_bbox_points": [
+      168.75,
+      705.5,
+      420.0,
+      777.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1005,
+    "height": 289,
+    "sha256": "188927bf3bb247e4ced321f18b94f775fb1f0313acd86b469cbc8930afbf95db",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2019-SW-p13-i01",
+    "path": "assets/GDXD2019-SW/GDXD2019-SW-p13-i01.png",
+    "paper_id": "GDXD2019-SW",
+    "source_page": 13,
+    "source_bbox_points": [
+      176.75,
+      31.5,
+      448.0,
+      101.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1085,
+    "height": 281,
+    "sha256": "272aa917879bc93f32916b68ba82d90abcfa4e27a58a79921e786f782bfcb43e",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2019-SW-p13-i02",
+    "path": "assets/GDXD2019-SW/GDXD2019-SW-p13-i02.png",
+    "paper_id": "GDXD2019-SW",
+    "source_page": 13,
+    "source_bbox_points": [
+      167.25,
+      151.75,
+      448.25,
+      228.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1124,
+    "height": 308,
+    "sha256": "a2a1183d7227d2a84de6edfa104eba678f123b0d32b111af185462ade7d39b88",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2019-SW-p13-i03",
+    "path": "assets/GDXD2019-SW/GDXD2019-SW-p13-i03.png",
+    "paper_id": "GDXD2019-SW",
+    "source_page": 13,
+    "source_bbox_points": [
+      195.25,
+      277.75,
+      417.75,
+      438.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 890,
+    "height": 642,
+    "sha256": "495bb2fa100ad8407e3680ee35ae9918132b306470b8e3b26fa71ffa937ee06b",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2019-SW-p13-i04",
+    "path": "assets/GDXD2019-SW/GDXD2019-SW-p13-i04.png",
+    "paper_id": "GDXD2019-SW",
+    "source_page": 13,
+    "source_bbox_points": [
+      191.75,
+      479.0,
+      423.0,
+      626.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 925,
+    "height": 591,
+    "sha256": "9d2b45c81151458565a49c78afb5ab86c85d6024a34c4c7b9ee081dd5277e982",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2019-SW-p13-i05",
+    "path": "assets/GDXD2019-SW/GDXD2019-SW-p13-i05.png",
+    "paper_id": "GDXD2019-SW",
+    "source_page": 13,
+    "source_bbox_points": [
+      157.25,
+      661.5,
+      459.0,
+      754.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1207,
+    "height": 370,
+    "sha256": "05964e372cb044e159caf8baa6197b372594cbe47c87e5ad7540f6d4b5211fc6",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2019-SW-p14-i01",
+    "path": "assets/GDXD2019-SW/GDXD2019-SW-p14-i01.png",
+    "paper_id": "GDXD2019-SW",
+    "source_page": 14,
+    "source_bbox_points": [
+      173.5,
+      45.5,
+      440.25,
+      123.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1067,
+    "height": 311,
+    "sha256": "bb4563ca0a6dffd1af2cb0b3706a19b2ba5d469843d3b238ed1879b735ca8d84",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2019-SW-p14-i02",
+    "path": "assets/GDXD2019-SW/GDXD2019-SW-p14-i02.png",
+    "paper_id": "GDXD2019-SW",
+    "source_page": 14,
+    "source_bbox_points": [
+      162.25,
+      194.0,
+      452.75,
+      282.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1162,
+    "height": 355,
+    "sha256": "1cc0c00c5b6dbb56a61ace8ae41bf942d750b2de2c5aed2da1b064d02bc77b15",
+    "transcription": ""
+  }
+]

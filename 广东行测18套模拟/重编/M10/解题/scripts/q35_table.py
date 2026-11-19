@@ -26,3 +26,5 @@ for p, q, r, s, t in itertools.product(R, R, R, R, R):
         vals[f(a, b)] += 1
 print('同类线性组合拟合前三行后给出的第4行值：', vals)
 print('答案：', [k for k, v in opts.items() if v == ans])
+# 易错核对：只看第2行 2×5=10，用“前两数相乘”套第4行 → 4×17=68（D）；此规律第1、3行不成立
+print('4×17 =', 4 * 17, '；第1行1×2=', 1 * 2, '≠3，第3行3×10=', 3 * 10, '≠29')

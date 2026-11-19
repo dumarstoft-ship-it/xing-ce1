@@ -19,3 +19,5 @@ for x, y, z, u, w in itertools.product(R, R, R, R, R):
         hits.setdefault(v, []).append((x, y, z, u, w))
 print('拟合前五项的同类递推给出的下一项：', {k: len(v) for k, v in hits.items()})
 print('落在选项上的：', {k: v for k, v in opts.items() if v in hits})
+# 易错核对：只做“前两项相乘”而漏加修正项 10² → 39×10=390（C）
+print('39×10 =', 39 * 10, '→ C')

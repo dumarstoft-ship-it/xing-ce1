@@ -16,3 +16,6 @@ d = [F(b) - F(a) for a, b in zip(seq, seq[1:])]
 assert len(set(d)) == 1
 nxt = F(seq[-1]) + d[0]
 print('等差续写：公差', float(d[0]), '下一项', float(nxt), '在选项中？', any(F(v) == nxt for v in opts.values()))
+# 易错核对：只续写小数部分（46、42、38、34 → 30），选项中小数部分为30的只有D
+print('小数部分为30的选项：', [k for k, s in opts.items() if split(s)[1] == 30])
+assert [k for k, s in opts.items() if split(s)[1] == 30] == ['D']

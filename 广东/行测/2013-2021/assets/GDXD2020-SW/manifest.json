@@ -1,0 +1,478 @@
+[
+  {
+    "id": "GDXD2020-SW-p11-i01",
+    "path": "assets/GDXD2020-SW/GDXD2020-SW-p11-i01.png",
+    "paper_id": "GDXD2020-SW",
+    "source_page": 11,
+    "source_bbox_points": [
+      153.25,
+      439.0,
+      463.25,
+      597.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1240,
+    "height": 635,
+    "sha256": "991b9034d2d3657c75b70f3ec8ff85939e4c1b610367759517a3f9bfd53983fd",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-SW-p11-i02",
+    "path": "assets/GDXD2020-SW/GDXD2020-SW-p11-i02.png",
+    "paper_id": "GDXD2020-SW",
+    "source_page": 11,
+    "source_bbox_points": [
+      154.75,
+      616.0,
+      459.5,
+      668.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1219,
+    "height": 209,
+    "sha256": "601e43277162494bc1ff8717311693eca9f557195f6dec36e226e8583724f802",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-SW-p11-i03",
+    "path": "assets/GDXD2020-SW/GDXD2020-SW-p11-i03.png",
+    "paper_id": "GDXD2020-SW",
+    "source_page": 11,
+    "source_bbox_points": [
+      284.75,
+      669.5,
+      327.5,
+      737.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 171,
+    "height": 270,
+    "sha256": "9a0ef6b8148c1f70479dd778517f84b79555280bb29849cbdf3dddb3dc56454e",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-SW-p11-i04",
+    "path": "assets/GDXD2020-SW/GDXD2020-SW-p11-i04.png",
+    "paper_id": "GDXD2020-SW",
+    "source_page": 11,
+    "source_bbox_points": [
+      86.25,
+      677.0,
+      141.0,
+      731.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 219,
+    "height": 219,
+    "sha256": "22ce3e8587e87ad13864d89f81fd92d5ab1dc2aa68341a535818c18ef177248f",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-SW-p11-i05",
+    "path": "assets/GDXD2020-SW/GDXD2020-SW-p11-i05.png",
+    "paper_id": "GDXD2020-SW",
+    "source_page": 11,
+    "source_bbox_points": [
+      189.5,
+      680.75,
+      233.0,
+      734.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 174,
+    "height": 213,
+    "sha256": "532efe51d9d3a8532b0babae30a5ae7a82501c992287865be51a7a5c87cbb6a5",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-SW-p11-i06",
+    "path": "assets/GDXD2020-SW/GDXD2020-SW-p11-i06.png",
+    "paper_id": "GDXD2020-SW",
+    "source_page": 11,
+    "source_bbox_points": [
+      390.0,
+      682.0,
+      415.25,
+      732.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 101,
+    "height": 202,
+    "sha256": "d25772a748f98f185ab46730925716203c68e943b8dbe02d6d58b89f0fad3e97",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-SW-p12-i01",
+    "path": "assets/GDXD2020-SW/GDXD2020-SW-p12-i01.png",
+    "paper_id": "GDXD2020-SW",
+    "source_page": 12,
+    "source_bbox_points": [
+      144.0,
+      35.75,
+      459.75,
+      154.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1263,
+    "height": 473,
+    "sha256": "54ff852a54a11d80e356fb17c7ee67ba2ba446ea53bcf084a244850e948d4cd5",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-SW-p12-i02",
+    "path": "assets/GDXD2020-SW/GDXD2020-SW-p12-i02.png",
+    "paper_id": "GDXD2020-SW",
+    "source_page": 12,
+    "source_bbox_points": [
+      211.5,
+      175.25,
+      396.0,
+      226.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 738,
+    "height": 204,
+    "sha256": "94cb52004605c9eb340d72896490e4d2f9eebb116dc94db9a4fe84e552266ec4",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-SW-p12-i03",
+    "path": "assets/GDXD2020-SW/GDXD2020-SW-p12-i03.png",
+    "paper_id": "GDXD2020-SW",
+    "source_page": 12,
+    "source_bbox_points": [
+      211.25,
+      251.5,
+      267.0,
+      306.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 223,
+    "height": 218,
+    "sha256": "6f1b493a16d688f9e609bf4a5c360a47491dd1c0c3e3d55fa5e7eb84b3c4f5bb",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-SW-p12-i04",
+    "path": "assets/GDXD2020-SW/GDXD2020-SW-p12-i04.png",
+    "paper_id": "GDXD2020-SW",
+    "source_page": 12,
+    "source_bbox_points": [
+      92.25,
+      260.75,
+      157.5,
+      310.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 261,
+    "height": 197,
+    "sha256": "68a93327911fd843dadd62571a53a30a6758dad90e443f6a8b14d3c102b1a5c7",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-SW-p12-i05",
+    "path": "assets/GDXD2020-SW/GDXD2020-SW-p12-i05.png",
+    "paper_id": "GDXD2020-SW",
+    "source_page": 12,
+    "source_bbox_points": [
+      317.0,
+      260.75,
+      376.25,
+      307.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 237,
+    "height": 185,
+    "sha256": "1a42c4fffd68407dd0cf74d89ca99dc22906b040dd171c4382d989454ff06cbc",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-SW-p12-i06",
+    "path": "assets/GDXD2020-SW/GDXD2020-SW-p12-i06.png",
+    "paper_id": "GDXD2020-SW",
+    "source_page": 12,
+    "source_bbox_points": [
+      428.75,
+      262.25,
+      497.5,
+      307.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 275,
+    "height": 179,
+    "sha256": "567a468d41786e2dc40da26c847546cd2fcba6c061bdbb2bbec1a6254b16de98",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-SW-p12-i07",
+    "path": "assets/GDXD2020-SW/GDXD2020-SW-p12-i07.png",
+    "paper_id": "GDXD2020-SW",
+    "source_page": 12,
+    "source_bbox_points": [
+      154.25,
+      349.5,
+      455.25,
+      507.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1204,
+    "height": 630,
+    "sha256": "d0bb1265190fb3edee63eacfc83c5c1688783e2797838a7837a93605b632278e",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-SW-p12-i08",
+    "path": "assets/GDXD2020-SW/GDXD2020-SW-p12-i08.png",
+    "paper_id": "GDXD2020-SW",
+    "source_page": 12,
+    "source_bbox_points": [
+      251.75,
+      518.25,
+      363.75,
+      569.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 448,
+    "height": 204,
+    "sha256": "ccfbe9c72041004d9874f2e82253e9e540ce379d16b3b61a72620b5c61d184fc",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-SW-p12-i09",
+    "path": "assets/GDXD2020-SW/GDXD2020-SW-p12-i09.png",
+    "paper_id": "GDXD2020-SW",
+    "source_page": 12,
+    "source_bbox_points": [
+      458.5,
+      566.0,
+      506.5,
+      670.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 192,
+    "height": 418,
+    "sha256": "d6a68e8b10b4f3f9fd74eba0fa575f7b497ce1cb138ce281934c76e71077ae68",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-SW-p12-i10",
+    "path": "assets/GDXD2020-SW/GDXD2020-SW-p12-i10.png",
+    "paper_id": "GDXD2020-SW",
+    "source_page": 12,
+    "source_bbox_points": [
+      346.0,
+      597.5,
+      440.0,
+      671.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 376,
+    "height": 295,
+    "sha256": "ed2ba06c4f12542b58be2531778dc4b5f258e21a198e3d98f895b918b949cd06",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-SW-p12-i11",
+    "path": "assets/GDXD2020-SW/GDXD2020-SW-p12-i11.png",
+    "paper_id": "GDXD2020-SW",
+    "source_page": 12,
+    "source_bbox_points": [
+      241.0,
+      603.5,
+      327.75,
+      671.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 347,
+    "height": 271,
+    "sha256": "4bc94040b1ed62ab6bf53c3bb9582b1b1d50b4d231e88e1e4cc617a5e3cc4cfc",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-SW-p12-i12",
+    "path": "assets/GDXD2020-SW/GDXD2020-SW-p12-i12.png",
+    "paper_id": "GDXD2020-SW",
+    "source_page": 12,
+    "source_bbox_points": [
+      125.5,
+      626.0,
+      222.0,
+      670.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 386,
+    "height": 178,
+    "sha256": "008bf931775fedff1289eb77e5430385c4083140be2a209172dca95e0566b47a",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-SW-p13-i01",
+    "path": "assets/GDXD2020-SW/GDXD2020-SW-p13-i01.png",
+    "paper_id": "GDXD2020-SW",
+    "source_page": 13,
+    "source_bbox_points": [
+      136.0,
+      35.75,
+      467.5,
+      228.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1326,
+    "height": 771,
+    "sha256": "6c5362f3c74652dc08ebd34bba57c5464b8672ac3215b9abf5efc7403dbeb915",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-SW-p13-i02",
+    "path": "assets/GDXD2020-SW/GDXD2020-SW-p13-i02.png",
+    "paper_id": "GDXD2020-SW",
+    "source_page": 13,
+    "source_bbox_points": [
+      145.0,
+      247.25,
+      472.25,
+      403.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1309,
+    "height": 625,
+    "sha256": "9f9994b1c32047e1ba7473ad8daad8c6f8281d4510ea7e6f1e5a35ea478e6aa1",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-SW-p13-i03",
+    "path": "assets/GDXD2020-SW/GDXD2020-SW-p13-i03.png",
+    "paper_id": "GDXD2020-SW",
+    "source_page": 13,
+    "source_bbox_points": [
+      164.75,
+      433.5,
+      456.5,
+      540.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1167,
+    "height": 426,
+    "sha256": "ff6e4bbf20273a2e801fa58df863143d524f2fab76d92033fc728d9646ae76a3",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-SW-p13-i04",
+    "path": "assets/GDXD2020-SW/GDXD2020-SW-p13-i04.png",
+    "paper_id": "GDXD2020-SW",
+    "source_page": 13,
+    "source_bbox_points": [
+      326.75,
+      545.5,
+      392.0,
+      613.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 261,
+    "height": 273,
+    "sha256": "9bd15c299536fe26d3a4135d3c2854375a5a9283492b0e69cf43eb77853bde91",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-SW-p13-i05",
+    "path": "assets/GDXD2020-SW/GDXD2020-SW-p13-i05.png",
+    "paper_id": "GDXD2020-SW",
+    "source_page": 13,
+    "source_bbox_points": [
+      151.5,
+      549.75,
+      215.75,
+      614.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 257,
+    "height": 258,
+    "sha256": "e9124231644da0800ebcd38129796480dd77eaab6fdf0d025560cea9d8a3e2b4",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-SW-p13-i06",
+    "path": "assets/GDXD2020-SW/GDXD2020-SW-p13-i06.png",
+    "paper_id": "GDXD2020-SW",
+    "source_page": 13,
+    "source_bbox_points": [
+      413.5,
+      548.5,
+      479.75,
+      615.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 265,
+    "height": 266,
+    "sha256": "02101dc5b2d645ac09ff3721eedc682e95c34e23bf21a684eae4b0a53257c2d9",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-SW-p13-i07",
+    "path": "assets/GDXD2020-SW/GDXD2020-SW-p13-i07.png",
+    "paper_id": "GDXD2020-SW",
+    "source_page": 13,
+    "source_bbox_points": [
+      240.0,
+      550.0,
+      304.5,
+      614.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 258,
+    "height": 258,
+    "sha256": "25cbb772fd79f66be4783053beb8f6f8638f449516a795f20c4d307c89b4c3a8",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-SW-p14-i01",
+    "path": "assets/GDXD2020-SW/GDXD2020-SW-p14-i01.png",
+    "paper_id": "GDXD2020-SW",
+    "source_page": 14,
+    "source_bbox_points": [
+      167.5,
+      39.5,
+      445.75,
+      194.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1113,
+    "height": 619,
+    "sha256": "cf5b2e1fba6922828f206b27889e0988b1cdd9d2633281c49f6d156a55775fa3",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-SW-p14-i02",
+    "path": "assets/GDXD2020-SW/GDXD2020-SW-p14-i02.png",
+    "paper_id": "GDXD2020-SW",
+    "source_page": 14,
+    "source_bbox_points": [
+      240.75,
+      356.5,
+      367.5,
+      489.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 507,
+    "height": 530,
+    "sha256": "b162d2314dc295858a129b2f0ad40f32759e966e5dbf335acd37fa7362cf6b9b",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-SW-p15-i09",
+    "path": "assets/GDXD2020-SW/GDXD2020-SW-p15-i09.png",
+    "paper_id": "GDXD2020-SW",
+    "source_page": 15,
+    "source_bbox_points": [
+      90.75,
+      583.0,
+      384.25,
+      650.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1174,
+    "height": 271,
+    "sha256": "51db107dc2c5418003ec4a893826bf0d8770027b55ae251a49e0daa986370862",
+    "transcription": "题图数字表格（按原图行列）\n\n| 第1列 | 第2列 | 第3列 |\n| --- | --- | --- |\n| 63 | 56 | 49 |\n| 76 | 68 | 60 |\n| 81 | 72 | （ ） |"
+  }
+]

@@ -14,3 +14,8 @@ for lat in (39.7, 41.6):
     print('赤纬%.2f°，纬度%.1f°N：昼长约%.2f小时' % (dec, lat, 2 * H / 15))
     assert 2 * H / 15 > 12
 print('太阳直射点在北半球（赤纬>0），北半球昼长夜短 → 干旱少雨、昼长夜短，A。')
+# 秋分日（2021-09-23）前后对照：秋分后北半球昼短夜长
+for dd in (date(2021, 9, 23), date(2021, 10, 1)):
+    de = declination(dd)
+    H = degrees(acos(-tan(radians(39.7)) * tan(radians(de))))
+    print(dd, '赤纬%.2f°，酒泉昼长约%.2f小时' % (de, 2 * H / 15))
