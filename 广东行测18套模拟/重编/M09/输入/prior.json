@@ -1,0 +1,546 @@
+{
+ "GD2021-XZ-Q032": {
+  "answer": "C",
+  "status": "known",
+  "answer_pdf": "答案解析/2021年0314广东公务员考试《行测》真题（乡镇）参考答案及解析.pdf",
+  "answer_pages": [
+   9
+  ],
+  "note": ""
+ },
+ "GD2023-XZ-Q032": {
+  "answer": "B",
+  "status": "known",
+  "answer_pdf": "答案解析/2023年广东省公务员录用考试《行测》题（乡镇卷）答案解析.pdf",
+  "answer_pages": [
+   10
+  ],
+  "note": ""
+ },
+ "GD2022-XZ-Q034": {
+  "answer": "B",
+  "status": "known",
+  "answer_pdf": "答案解析/2022年广东公务员考试行测试题（乡镇）答案解析.pdf",
+  "answer_pages": [
+   17
+  ],
+  "note": ""
+ },
+ "GD2022-XZ-Q033": {
+  "answer": "D",
+  "status": "known",
+  "answer_pdf": "答案解析/2022年广东公务员考试行测试题（乡镇）答案解析.pdf",
+  "answer_pages": [
+   17
+  ],
+  "note": ""
+ },
+ "GD2023-XJ-Q030": {
+  "answer": "D",
+  "status": "known",
+  "answer_pdf": "答案解析/2023年广东省公务员录用考试《行测》题（县级卷）答案解析.pdf",
+  "answer_pages": [
+   9,
+   10
+  ],
+  "note": ""
+ },
+ "GD2020-XZ-Q041": {
+  "answer": "D",
+  "status": "known",
+  "answer_pdf": "答案解析/2020年0809广东公务员考试《行测》真题（乡镇）参考答案及解析.pdf",
+  "answer_pages": [
+   11
+  ],
+  "note": ""
+ },
+ "GD2023-XJ-Q036": {
+  "answer": "C",
+  "status": "known",
+  "answer_pdf": "答案解析/2023年广东省公务员录用考试《行测》题（县级卷）答案解析.pdf",
+  "answer_pages": [
+   11
+  ],
+  "note": ""
+ },
+ "GD2023-XZ-Q045": {
+  "answer": "B",
+  "status": "known",
+  "answer_pdf": "答案解析/2023年广东省公务员录用考试《行测》题（乡镇卷）答案解析.pdf",
+  "answer_pages": [
+   13
+  ],
+  "note": ""
+ },
+ "GD2020-XJ-Q032": {
+  "answer": "C",
+  "status": "known",
+  "answer_pdf": "答案解析/2020年0809广东公务员考试《行测》真题（县级以上）参考答案及解析.pdf",
+  "answer_pages": [
+   9
+  ],
+  "note": ""
+ },
+ "GD2022-XZ-Q044": {
+  "answer": "B",
+  "status": "known",
+  "answer_pdf": "答案解析/2022年广东公务员考试行测试题（乡镇）答案解析.pdf",
+  "answer_pages": [
+   20
+  ],
+  "note": ""
+ },
+ "GD2021-XZ-Q043": {
+  "answer": "D",
+  "status": "known",
+  "answer_pdf": "答案解析/2021年0314广东公务员考试《行测》真题（乡镇）参考答案及解析.pdf",
+  "answer_pages": [
+   11
+  ],
+  "note": ""
+ },
+ "GD2022-XJ-Q035": {
+  "answer": "D",
+  "status": "known",
+  "answer_pdf": "答案解析/2022年广东公务员考试行测试题（县级）答案解析.pdf",
+  "answer_pages": [
+   16
+  ],
+  "note": ""
+ },
+ "GD2021-XZ-Q045": {
+  "answer": "D",
+  "status": "known",
+  "answer_pdf": "答案解析/2021年0314广东公务员考试《行测》真题（乡镇）参考答案及解析.pdf",
+  "answer_pages": [
+   11
+  ],
+  "note": ""
+ },
+ "GD2019-XJ-Q026": {
+  "answer": "C",
+  "status": "known",
+  "answer_pdf": "答案解析/2019年广东公务员考试《行测》真题（县级）答案及解析.pdf",
+  "answer_pages": [
+   3
+  ],
+  "note": ""
+ },
+ "GD2018-Q030": {
+  "answer": "B",
+  "status": "known",
+  "answer_pdf": "答案解析/2018年广东省公务员录用考试《行测》真题（县级、乡镇统一卷）答案及解析.pdf",
+  "answer_pages": [
+   5
+  ],
+  "note": ""
+ },
+ "GD2023-XJ-Q077": {
+  "answer": "A",
+  "status": "known",
+  "answer_pdf": "答案解析/2023年广东省公务员录用考试《行测》题（县级卷）答案解析.pdf",
+  "answer_pages": [
+   27,
+   28
+  ],
+  "note": ""
+ },
+ "GD2023-XZ-Q068": {
+  "answer": "D",
+  "status": "known",
+  "answer_pdf": "答案解析/2023年广东省公务员录用考试《行测》题（乡镇卷）答案解析.pdf",
+  "answer_pages": [
+   21
+  ],
+  "note": ""
+ },
+ "GD2020-XZ-Q079": {
+  "answer": "C",
+  "status": "known",
+  "answer_pdf": "答案解析/2020年0809广东公务员考试《行测》真题（乡镇）参考答案及解析.pdf",
+  "answer_pages": [
+   19
+  ],
+  "note": ""
+ },
+ "GD2023-XZ-Q070": {
+  "answer": "A",
+  "status": "known",
+  "answer_pdf": "答案解析/2023年广东省公务员录用考试《行测》题（乡镇卷）答案解析.pdf",
+  "answer_pages": [
+   22
+  ],
+  "note": ""
+ },
+ "GD2023-XJ-Q084": {
+  "answer": "D",
+  "status": "known",
+  "answer_pdf": "答案解析/2023年广东省公务员录用考试《行测》题（县级卷）答案解析.pdf",
+  "answer_pages": [
+   31
+  ],
+  "note": ""
+ },
+ "GD2020-XZ-Q047": {
+  "answer": "A",
+  "status": "known",
+  "answer_pdf": "答案解析/2020年0809广东公务员考试《行测》真题（乡镇）参考答案及解析.pdf",
+  "answer_pages": [
+   12
+  ],
+  "note": ""
+ },
+ "GD2018-Q036": {
+  "answer": "D",
+  "status": "known",
+  "answer_pdf": "答案解析/2018年广东省公务员录用考试《行测》真题（县级、乡镇统一卷）答案及解析.pdf",
+  "answer_pages": [
+   6
+  ],
+  "note": ""
+ },
+ "GD2020-XZ-Q046": {
+  "answer": "B",
+  "status": "known",
+  "answer_pdf": "答案解析/2020年0809广东公务员考试《行测》真题（乡镇）参考答案及解析.pdf",
+  "answer_pages": [
+   12
+  ],
+  "note": ""
+ },
+ "GD2023-XZ-Q046": {
+  "answer": "A",
+  "status": "known",
+  "answer_pdf": "答案解析/2023年广东省公务员录用考试《行测》题（乡镇卷）答案解析.pdf",
+  "answer_pages": [
+   13
+  ],
+  "note": ""
+ },
+ "GD2021-XZ-Q053": {
+  "answer": "C",
+  "status": "known",
+  "answer_pdf": "答案解析/2021年0314广东公务员考试《行测》真题（乡镇）参考答案及解析.pdf",
+  "answer_pages": [
+   12
+  ],
+  "note": ""
+ },
+ "GD2023-XJ-Q069": {
+  "answer": "A",
+  "status": "known",
+  "answer_pdf": "答案解析/2023年广东省公务员录用考试《行测》题（县级卷）答案解析.pdf",
+  "answer_pages": [
+   24
+  ],
+  "note": ""
+ },
+ "GD2023-XJ-Q066": {
+  "answer": "A",
+  "status": "known",
+  "answer_pdf": "答案解析/2023年广东省公务员录用考试《行测》题（县级卷）答案解析.pdf",
+  "answer_pages": [
+   22,
+   23
+  ],
+  "note": ""
+ },
+ "GD2023-XJ-Q056": {
+  "answer": "D",
+  "status": "known",
+  "answer_pdf": "答案解析/2023年广东省公务员录用考试《行测》题（县级卷）答案解析.pdf",
+  "answer_pages": [
+   18
+  ],
+  "note": ""
+ },
+ "GD2022-XJ-Q064": {
+  "answer": "B",
+  "status": "known",
+  "answer_pdf": "答案解析/2022年广东公务员考试行测试题（县级）答案解析.pdf",
+  "answer_pages": [
+   32
+  ],
+  "note": ""
+ },
+ "GD2023-XJ-Q065": {
+  "answer": "A",
+  "status": "known",
+  "answer_pdf": "答案解析/2023年广东省公务员录用考试《行测》题（县级卷）答案解析.pdf",
+  "answer_pages": [
+   22
+  ],
+  "note": ""
+ },
+ "GD2020-XJ-Q064": {
+  "answer": "C",
+  "status": "known",
+  "answer_pdf": "答案解析/2020年0809广东公务员考试《行测》真题（县级以上）参考答案及解析.pdf",
+  "answer_pages": [
+   17
+  ],
+  "note": ""
+ },
+ "GD2022-XJ-Q057": {
+  "answer": "C",
+  "status": "known",
+  "answer_pdf": "答案解析/2022年广东公务员考试行测试题（县级）答案解析.pdf",
+  "answer_pages": [
+   27
+  ],
+  "note": ""
+ },
+ "GD2020-XJ-Q065": {
+  "answer": "C",
+  "status": "known",
+  "answer_pdf": "答案解析/2020年0809广东公务员考试《行测》真题（县级以上）参考答案及解析.pdf",
+  "answer_pages": [
+   18
+  ],
+  "note": ""
+ },
+ "GD2018-Q060": {
+  "answer": "D",
+  "status": "known",
+  "answer_pdf": "答案解析/2018年广东省公务员录用考试《行测》真题（县级、乡镇统一卷）答案及解析.pdf",
+  "answer_pages": [
+   11
+  ],
+  "note": ""
+ },
+ "GD2020-XZ-Q062": {
+  "answer": "B",
+  "status": "known",
+  "answer_pdf": "答案解析/2020年0809广东公务员考试《行测》真题（乡镇）参考答案及解析.pdf",
+  "answer_pages": [
+   15
+  ],
+  "note": ""
+ },
+ "GD2019-XJ-Q049": {
+  "answer": "C",
+  "status": "known",
+  "answer_pdf": "答案解析/2019年广东公务员考试《行测》真题（县级）答案及解析.pdf",
+  "answer_pages": [
+   9
+  ],
+  "note": ""
+ },
+ "GD2019-XJ-Q053": {
+  "answer": "A",
+  "status": "known",
+  "answer_pdf": "答案解析/2019年广东公务员考试《行测》真题（县级）答案及解析.pdf",
+  "answer_pages": [
+   10
+  ],
+  "note": ""
+ },
+ "GD2022-XJ-Q075": {
+  "answer": "B",
+  "status": "known",
+  "answer_pdf": "答案解析/2022年广东公务员考试行测试题（县级）答案解析.pdf",
+  "answer_pages": [
+   40
+  ],
+  "note": ""
+ },
+ "GD2021-XZ-Q064": {
+  "answer": "A",
+  "status": "known",
+  "answer_pdf": "答案解析/2021年0314广东公务员考试《行测》真题（乡镇）参考答案及解析.pdf",
+  "answer_pages": [
+   15
+  ],
+  "note": ""
+ },
+ "GD2018-Q052": {
+  "answer": "C",
+  "status": "known",
+  "answer_pdf": "答案解析/2018年广东省公务员录用考试《行测》真题（县级、乡镇统一卷）答案及解析.pdf",
+  "answer_pages": [
+   9
+  ],
+  "note": ""
+ },
+ "GD2021-XZ-Q086": {
+  "answer": "A",
+  "status": "known",
+  "answer_pdf": "答案解析/2021年0314广东公务员考试《行测》真题（乡镇）参考答案及解析.pdf",
+  "answer_pages": [
+   19
+  ],
+  "note": ""
+ },
+ "GD2021-XZ-Q087": {
+  "answer": "C",
+  "status": "known",
+  "answer_pdf": "答案解析/2021年0314广东公务员考试《行测》真题（乡镇）参考答案及解析.pdf",
+  "answer_pages": [
+   20
+  ],
+  "note": ""
+ },
+ "GD2021-XZ-Q088": {
+  "answer": "B",
+  "status": "known",
+  "answer_pdf": "答案解析/2021年0314广东公务员考试《行测》真题（乡镇）参考答案及解析.pdf",
+  "answer_pages": [
+   20
+  ],
+  "note": ""
+ },
+ "GD2021-XZ-Q089": {
+  "answer": "C",
+  "status": "known",
+  "answer_pdf": "答案解析/2021年0314广东公务员考试《行测》真题（乡镇）参考答案及解析.pdf",
+  "answer_pages": [
+   20
+  ],
+  "note": ""
+ },
+ "GD2021-XZ-Q090": {
+  "answer": "C",
+  "status": "known",
+  "answer_pdf": "答案解析/2021年0314广东公务员考试《行测》真题（乡镇）参考答案及解析.pdf",
+  "answer_pages": [
+   20
+  ],
+  "note": ""
+ },
+ "GD2021-XZ-Q096": {
+  "answer": "C",
+  "status": "known",
+  "answer_pdf": "答案解析/2021年0314广东公务员考试《行测》真题（乡镇）参考答案及解析.pdf",
+  "answer_pages": [
+   21
+  ],
+  "note": "第20页后加文字层作“96. :C”，第21页扫描图中本题解析结尾为“因此，选择C选项”，两处一致。"
+ },
+ "GD2021-XZ-Q097": {
+  "answer": "D",
+  "status": "known",
+  "answer_pdf": "答案解析/2021年0314广东公务员考试《行测》真题（乡镇）参考答案及解析.pdf",
+  "answer_pages": [
+   21
+  ],
+  "note": ""
+ },
+ "GD2021-XZ-Q098": {
+  "answer": "A",
+  "status": "known",
+  "answer_pdf": "答案解析/2021年0314广东公务员考试《行测》真题（乡镇）参考答案及解析.pdf",
+  "answer_pages": [
+   21
+  ],
+  "note": ""
+ },
+ "GD2021-XZ-Q099": {
+  "answer": "B",
+  "status": "known",
+  "answer_pdf": "答案解析/2021年0314广东公务员考试《行测》真题（乡镇）参考答案及解析.pdf",
+  "answer_pages": [
+   21
+  ],
+  "note": ""
+ },
+ "GD2021-XZ-Q100": {
+  "answer": "D",
+  "status": "known",
+  "answer_pdf": "答案解析/2021年0314广东公务员考试《行测》真题（乡镇）参考答案及解析.pdf",
+  "answer_pages": [
+   21
+  ],
+  "note": ""
+ },
+ "GD2018-Q096": {
+  "answer": "B",
+  "status": "known",
+  "answer_pdf": "答案解析/2018年广东省公务员录用考试《行测》真题（县级、乡镇统一卷）答案及解析.pdf",
+  "answer_pages": [
+   19
+  ],
+  "note": ""
+ },
+ "GD2018-Q097": {
+  "answer": "B",
+  "status": "known",
+  "answer_pdf": "答案解析/2018年广东省公务员录用考试《行测》真题（县级、乡镇统一卷）答案及解析.pdf",
+  "answer_pages": [
+   19
+  ],
+  "note": ""
+ },
+ "GD2018-Q098": {
+  "answer": "A",
+  "status": "known",
+  "answer_pdf": "答案解析/2018年广东省公务员录用考试《行测》真题（县级、乡镇统一卷）答案及解析.pdf",
+  "answer_pages": [
+   19
+  ],
+  "note": ""
+ },
+ "GD2018-Q099": {
+  "answer": "C",
+  "status": "known",
+  "answer_pdf": "答案解析/2018年广东省公务员录用考试《行测》真题（县级、乡镇统一卷）答案及解析.pdf",
+  "answer_pages": [
+   20
+  ],
+  "note": ""
+ },
+ "GD2018-Q100": {
+  "answer": "D",
+  "status": "known",
+  "answer_pdf": "答案解析/2018年广东省公务员录用考试《行测》真题（县级、乡镇统一卷）答案及解析.pdf",
+  "answer_pages": [
+   20
+  ],
+  "note": ""
+ },
+ "GD2023-XJ-Q096": {
+  "answer": "B",
+  "status": "known",
+  "answer_pdf": "答案解析/2023年广东省公务员录用考试《行测》题（县级卷）答案解析.pdf",
+  "answer_pages": [
+   36
+  ],
+  "note": ""
+ },
+ "GD2023-XJ-Q097": {
+  "answer": "B",
+  "status": "known",
+  "answer_pdf": "答案解析/2023年广东省公务员录用考试《行测》题（县级卷）答案解析.pdf",
+  "answer_pages": [
+   36,
+   37
+  ],
+  "note": ""
+ },
+ "GD2023-XJ-Q098": {
+  "answer": "D",
+  "status": "known",
+  "answer_pdf": "答案解析/2023年广东省公务员录用考试《行测》题（县级卷）答案解析.pdf",
+  "answer_pages": [
+   37
+  ],
+  "note": ""
+ },
+ "GD2023-XJ-Q099": {
+  "answer": "A",
+  "status": "known",
+  "answer_pdf": "答案解析/2023年广东省公务员录用考试《行测》题（县级卷）答案解析.pdf",
+  "answer_pages": [
+   37
+  ],
+  "note": ""
+ },
+ "GD2023-XJ-Q100": {
+  "answer": "C",
+  "status": "known",
+  "answer_pdf": "答案解析/2023年广东省公务员录用考试《行测》题（县级卷）答案解析.pdf",
+  "answer_pages": [
+   38
+  ],
+  "note": ""
+ }
+}
