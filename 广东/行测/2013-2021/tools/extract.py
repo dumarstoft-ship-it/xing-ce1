@@ -102,6 +102,7 @@ RE_MATERIAL = [
 RE_MAT_INSTR = re.compile(r'(?:根据|阅读)(?:以下|下列|下面|所给)(?:资料|材料)[，,]?(?:回答)?(?:第?\d+\s*[~～\-—–至]+\s*\d+题)?[：:。]?')
 RE_QNUM = re.compile(r'^(\d{1,3})\s*[、.．]')
 RE_OPT = re.compile(r'^([A-D])\s*[、.．:：]')
+LABEL_ROW = re.compile(r'^[A-D][、.．]?[A-D]?$')     # 图下的选项字母行，如“B B”
 RE_FOOTER = re.compile(r'^(?:[-－—–]\s*\d+\s*[-－—–]|第\s*\d+\s*页(?:\s*共\s*\d+\s*页)?|\d+)$')
 RE_MARKER = re.compile(r'^(?:[①-⑳]|[（(]\d{1,2}[）)]|[ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩ][、.．])')
 # 设问句：上一行以句末标点结束、本行以这些词开头时另起一段（即使上一行写满）
@@ -512,6 +513,11 @@ def parse_question(q: QBlock, left: float, right: float, autofix: list) -> dict:
                 options[-1]['text'] += sep + text
             else:
                 stem += text
+    if q.figures and strays and options and re.fullmatch(r'[A-D、.．\s]*', ''.join(o['text'] for o in options)) \
+            and all(LABEL_ROW.match(ln.text.replace(' ', '')) for ln in strays):
+        # 图下逐行排的选项字母（“A、A”“B B”“C C”“D D”）：不是无法归属的行，按选项字母行处理（选项在题图中）
+        labels_raw += [ln.text for ln in strays]
+        strays = []
     if 0 < len(options) < 4:
         # 选项之间没有留白（如“A、……好坏B、不健康……”），或下一项排在上一项的续行上（“…… D、……”）：
         # 按下一个应出现的选项字母补拆；字母前须是汉字、数字、右括号/引号/百分号或空白，
@@ -1628,7 +1634,16 @@ def render_report(records, cfg, corr, paper, commit, autofix, fixlog, problems, 
     L += ['', '## 完整性', '', '| 部分 | 题号 | 题数 |', '| --- | --- | ---: |']
     for s in order:
         nums = [r['question_number'] for r in records if r['section'] == s]
-        L.append(f'| {s} | {nums[0]}—{nums[-1]} | {len(nums)} |')
+        runs, prev = [], None          # 按卷内顺序连续的题号成一段（原卷缺题不断开），部分被别的部分隔开时分段列出
+        for i, r in enumerate(records):
+            if r['section'] == s:
+                if prev is not None and prev == i - 1:
+                    runs[-1][1] = r['question_number']
+                else:
+                    runs.append([r['question_number'], r['question_number']])
+                prev = i
+        span = '、'.join(f'{a}—{b}' if a != b else f'{a}' for a, b in runs)
+        L.append(f'| {s} | {span} | {len(nums)} |')
     L += [f'| 合计 | | {len(records)} |', '']
     if sub_count:
         L += ['判断推理小类（记在 notes，如 `subtype:类比推理`）：' +
