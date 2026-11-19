@@ -1,0 +1,22 @@
+{
+  "paper_id": "GDXD2020-ZH",
+  "commit": "52f9811b22cad5410a7108dd0a07a879f1187aa5",
+  "sources": [
+    {
+      "path": "真题/2020年广东选调生和急需紧缺专业公务员招录笔试《综合行政能力测验》真题.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61ba7b28632954364009c412067d3df598d9e9db",
+      "size": 801329,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/61ba7b28632954364009c412067d3df598d9e9db"
+    },
+    {
+      "path": "答案解析/2020年广东选调生和急需紧缺专业公务员招录笔试《综合行政能力测验》真题答案及解析.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6922a78b835658cd9c8c0145ecf844fb27d60c9",
+      "size": 1035311,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/f6922a78b835658cd9c8c0145ecf844fb27d60c9"
+    }
+  ]
+}

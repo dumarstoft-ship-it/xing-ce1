@@ -34,9 +34,13 @@
   inline_images    {"p04-i01": "1/3"} 行内小图的文字；缺哪个 build 会列出
   text_fixes       [{q, field: "stem" | "option:A", find, replace | set, reason}]；find 须恰好出现一次
   ignore_lines     ["69——75题暂缺"] 选项之后无法归属、又不属于试题内容的行（按开头匹配）
+  bare_numbers     [67] 原卷题号后漏印“、”（如题号单独印在题图左侧）的题号，按题号行识别
+  long_options     {"32": "A"} 核对过、原卷本来就超过80字的选项（不再报“选项过长”）
   figures          {"p06-i02": {bbox: [x0, top, x1, bottom]（pt）, reason, role, alt, transcription}}
   figure_questions {"p05-i03": 35} 把题图归入指定题号（图片对象连同白边越过下一题题号行等，自动归属错时用）；
                    归走后空出的“材料”并入前一组
+  figure_materials {"p11-i01": 1} 把图片归入第 k 组材料（按阅读位置插入；材料图排在下一页页首而连同白边越过
+                   第一题题号行、被自动归入该题时用）
   option_splits    [{q, label: "D", reason}] 在上一选项文字中按“ D、”拆出该项（自动补拆拆不出时才用）；
                    原卷标记不规范时加 at: "B、C、"，按这段原样文字拆分并整体删去
   option_figures   {"89": {"A": "p13-i02", "B": …}} 每个选项一张图：这些图在 figures 中设 role: "option"，
@@ -103,6 +107,7 @@ RE_MATERIAL = [
 ]
 RE_MAT_INSTR = re.compile(r'(?:根据|阅读)(?:以下|下列|下面|所给)(?:资料|材料)[，,]?(?:回答)?(?:第?\d+\s*[~～\-—–至]+\s*\d+题)?[：:。]?')
 RE_QNUM = re.compile(r'^(\d{1,3})\s*[、.．]')
+RE_QNUM_BARE = re.compile(r'^(\d{1,3})(?=\s|$)')    # 漏印“、”的题号（只在修正文件 bare_numbers 列出的题号上使用）
 RE_OPT = re.compile(r'^([A-D])\s*[、.．:：]')
 LABEL_ROW = re.compile(r'^[A-D][、.．]?[A-D]?$')     # 图下的选项字母行，如“B B”
 RE_FOOTER = re.compile(r'^(?:[-－—–]\s*\d+\s*[-－—–]|第\s*\d+\s*页(?:\s*共\s*\d+\s*页)?|\d+)$')
@@ -340,7 +345,7 @@ def match_material(text: str) -> bool:
     return any(rx.match(t) for rx in RE_MATERIAL)
 
 
-def segment(pages: list[Page], expected: int, inline_text: dict, missing=(), extra_sections=()):
+def segment(pages: list[Page], expected: int, inline_text: dict, missing=(), extra_sections=(), bare=()):
     """按阅读顺序把行与题图分到部分、材料、题目。材料有两种写法：带“材料1/（材料一）/根据以下资料”等标题；
     或（2013、2015、2017、2019等年）无标题，资料分析部分里上一组题的A—D选项之后直接接首行缩进的材料段落或图表。"""
     for p in pages:
@@ -402,6 +407,8 @@ def segment(pages: list[Page], expected: int, inline_text: dict, missing=(), ext
         m = RE_QNUM.match(ln.text)
         while nxt in missing:
             nxt += 1                                  # tools/papers/<卷>.json 声明的原卷缺题题号
+        if not m and nxt in bare:
+            m = RE_QNUM_BARE.match(ln.text)           # 修正文件 bare_numbers：原卷题号后漏印“、”
         if m and int(m.group(1)) == nxt and nxt <= expected:
             cur_q = QBlock(nxt, section)
             cur_q.lines.append(ln)
@@ -487,7 +494,7 @@ def join_lines(lines: list[Line], left: float, right: float, first_strip: str = 
 
 def parse_question(q: QBlock, left: float, right: float, autofix: list) -> dict:
     first = q.lines[0]
-    m = RE_QNUM.match(first.text)
+    m = RE_QNUM.match(first.text) or RE_QNUM_BARE.match(first.text)
     opt_i = next((i for i, ln in enumerate(q.lines) if i > 0 and (RE_OPT.match(ln.text) or bare_label(ln.segs, 'A'))), None)
     stem_lines = q.lines if opt_i is None else q.lines[:opt_i]
     opt_lines = [] if opt_i is None else q.lines[opt_i:]
@@ -586,32 +593,48 @@ def parse_material(mb: MBlock, left: float, right: float) -> dict:
                 inline=[t.image for _, o in mb.items if _ == 'line' for t in o.toks if t.image])
 
 
+def _take_figure(seg: dict, key: str, what: str):
+    """从题目、材料或未归属图片中取出指定图片（供 figure_questions / figure_materials 重新归属）。"""
+    found = None
+    for q in seg['questions']:
+        for im in list(q.figures):
+            if im.key == key:
+                q.figures.remove(im)
+                found = im
+    for m in seg['materials']:
+        for it in list(m.items):
+            if it[0] == 'fig' and it[1].key == key:
+                m.items.remove(it)
+                found = it[1]
+    for im in list(seg['orphans']):
+        if im.key == key:
+            seg['orphans'].remove(im)
+            found = im
+    if found is None:
+        die(f'{what}：找不到图片 {key}')
+    return found
+
+
 def apply_figure_questions(seg: dict, corr: dict) -> None:
     """figure_questions {"p05-i03": 35}：把指定题图归入指定题号，覆盖按图片下缘排序的自动归属（图片对象连同白边
     越过下一题题号行、资料分析中排在“C、 D、”字母行之后的选项图等情形）。归走后既无标题也无内容的“材料”删去，
     其题目并入前一组材料。"""
     fq = corr.get('figure_questions', {})
-    if not fq:
+    fm = corr.get('figure_materials', {})
+    if not fq and not fm:
         return
     qmap = {q.number: q for q in seg['questions']}
+    mmap = {m.k: m for m in seg['materials']}
+    for key, k in fm.items():
+        # figure_materials {"p11-i01": 1}：把图片归入第 k 组材料（材料图排在下一页页首、连同白边越过第一题题号行等）
+        found = _take_figure(seg, key, 'figure_materials')
+        if k not in mmap:
+            die(f'figure_materials：没有第{k}组材料')
+        items = mmap[k].items
+        pos = next((i for i, it in enumerate(items) if (it[1].page, it[1].top) > (found.page, found.top)), len(items))
+        items.insert(pos, ('fig', found))
     for key, qn in fq.items():
-        found = None
-        for q in seg['questions']:
-            for im in list(q.figures):
-                if im.key == key:
-                    q.figures.remove(im)
-                    found = im
-        for m in seg['materials']:
-            for it in list(m.items):
-                if it[0] == 'fig' and it[1].key == key:
-                    m.items.remove(it)
-                    found = it[1]
-        for im in list(seg['orphans']):
-            if im.key == key:
-                seg['orphans'].remove(im)
-                found = im
-        if found is None:
-            die(f'figure_questions：找不到题图 {key}')
+        found = _take_figure(seg, key, 'figure_questions')
         if qn not in qmap:
             die(f'figure_questions：没有第{qn}题')
         qmap[qn].figures.append(found)
@@ -713,6 +736,7 @@ def classify_subtype(rec: dict) -> str:
 # ---------------------------------------------------------------------------
 RE_ANS_BATCH = re.compile(r'(\d{1,3})\s*[-—–~～]{1,3}\s*(\d{1,3})\s+([A-D](?:[\s.、，,]*[A-D])+)')
 RE_ANS_ONE = re.compile(r'(\d{1,3})\s*[、.．]\s*(?:【?(?:正确)?答案】?(?:是|为)?)?\s*[：:]\s*([A-D]{1,4})(?![A-Za-z])')
+RE_ANS_CONCL = re.compile(r'(?:正确)?(?:答案|选项)(?:应?为|是|选择?)[：:]?([A-D]{1,4})(?![A-Za-z])')   # 结论句（去空格后匹配）
 
 
 def answer_text_layer(pdf: Path) -> tuple[dict, list]:
@@ -732,7 +756,37 @@ def answer_text_layer(pdf: Path) -> tuple[dict, list]:
                     found[a + i] = dict(value=L, page=pno, raw=m.group(0).strip())
         for m in RE_ANS_ONE.finditer(page):
             found.setdefault(int(m.group(1)), dict(value=m.group(2), page=pno, raw=re.sub(r'\s+', ' ', m.group(0))))
+    if sum(n for _, n in stats) > 200:
+        # 格式二的文字层版本（选调卷等）：每题解析以“N、”开头、以“故正确答案为X”结束；同一题的结论不一致时不取
+        by_q = collections.defaultdict(list)
+        for n, v, pno, _, raw in text_conclusions(pdf):
+            by_q[n].append((v, pno, raw))
+        for n, lst in by_q.items():
+            if n not in found and len({v for v, _, _ in lst}) == 1:
+                v, pno, raw = lst[-1]
+                found[n] = dict(value=v, page=pno, raw=raw)
     return found, stats
+
+
+def text_conclusions(pdf: Path) -> list:
+    """有文字层的答案 PDF：按行找“N、”开头的解析起点（N 只取比上一题大 1—3 的数，避开解析里的列项）与其后的结论句
+    “正确答案为X”。返回 [(题号, 答案, 页码, 答案字母的框 (x0, top, x1, bottom) pt, 去空格的整行)]。"""
+    import pdfplumber
+    out, cur, expect = [], None, 1
+    with pdfplumber.open(str(pdf)) as doc:
+        for pno, page in enumerate(doc.pages, 1):
+            for ln in page.extract_text_lines(return_chars=True):
+                chars = [c for c in ln['chars'] if not c['text'].isspace()]
+                t = ''.join(c['text'] for c in chars)
+                m = re.match(r'(\d{1,3})[、.．]', t)
+                if m and expect <= int(m.group(1)) <= expect + 2:
+                    cur, expect = int(m.group(1)), int(m.group(1)) + 1
+                if cur is None or len(t) != len(chars):
+                    continue
+                for mm in RE_ANS_CONCL.finditer(t):
+                    a, b = chars[mm.start(1)], chars[mm.end(1) - 1]
+                    out.append((cur, mm.group(1), pno, (a['x0'], ln['top'], b['x1'], ln['bottom']), t))
+    return out
 
 
 def manual_answers(spec: dict) -> dict:
@@ -878,7 +932,7 @@ def cmd_dump(paper: str, raw: bool = True):
     pages = load_pages(REPO / cfg['question_pdf'])
     inline = {} if raw else corr.get('inline_images', {})
     seg = segment(pages, cfg['expected_questions'], inline, set(cfg.get('missing_questions', [])),
-                  corr.get('section_map', {}))
+                  corr.get('section_map', {}), set(corr.get('bare_numbers', [])))
     if not raw:
         apply_figure_questions(seg, corr)
     left, right = seg['margins']
@@ -1071,6 +1125,9 @@ def cmd_answer_sheet(paper: str, work: Path):
                           字母），均放大三倍；没有配上的题号行或结论行单独成行，标 NO CONCLUSION / NO NUMBER LINE；
       answer-maybe-*.png  得分略低于阈值的行（多为“故本题选择X”等措辞不同的结论句或正文中的“正确答案”），供补查。
     两种格式共用：answer-check-*.png  “解析/拓展”等两字短行的上一行（多为“因此，选择X选项”），用来再核一次。
+    有文字层的答案 PDF（选调卷等）：文字层按“N、”起、“正确答案为X”止直接取答案（build 自动使用）；另出
+      answer-text-*.png   按文字层定位裁出每条结论句的答案字母（标 Q题号 p页码），目视读一遍写入 answers.by_page，
+                          build 时与文字层逐题比对，不一致的记为争议。
     两遍读取一致后，按“页码: 题号答案 …”写入 tools/corrections/<卷>.json 的 answers.by_page。"""
     import numpy as np
     from PIL import Image, ImageDraw
@@ -1078,7 +1135,7 @@ def cmd_answer_sheet(paper: str, work: Path):
     pdf = REPO / cfg['answer_pdf']
     work.mkdir(parents=True, exist_ok=True)
     for pat in ('ans-*.png', 'answer-lines-*.png', 'answer-zoom-*.png', 'answer-check-*.png',
-                'answer-pairs-*.png', 'answer-maybe-*.png'):
+                'answer-pairs-*.png', 'answer-maybe-*.png', 'answer-text-*.png', 'text-*.png'):
         for old in work.glob(pat):          # 只清理本命令自己生成的文件
             old.unlink()
     subprocess.run(['pdftoppm', '-r', str(ANS_DPI), '-gray', '-png', str(pdf), str(work / 'ans')], check=True, capture_output=True)
@@ -1165,8 +1222,28 @@ def cmd_answer_sheet(paper: str, work: Path):
     found, stats = answer_text_layer(pdf)
     scanned = [p for p, n in stats if n < 30]
     exp = cfg['expected_questions'] - len(cfg.get('missing_questions', []))
+    tconc = text_conclusions(pdf) if sum(n for _, n in stats) > 200 else []
+    if tconc:
+        # 文字层版格式二：按文字层定位每条结论句的答案字母，从页面渲染图裁出（字母与它前面几个字），供目视读第二遍
+        tdpi, timgs, tiles = 200, {}, []
+        for pno in sorted({c[2] for c in tconc}):
+            stem = work / f'text-{pno:02d}'
+            subprocess.run(['pdftoppm', '-r', str(tdpi), '-gray', '-png', '-singlefile', '-f', str(pno), '-l', str(pno),
+                            str(pdf), str(stem)], check=True, capture_output=True)
+            timgs[pno] = Image.open(stem.with_suffix('.png')).convert('L')
+        k = tdpi / 72
+        for n, v, pno, (x0, top, x1, bottom), raw in tconc:
+            tiles.append((f'Q{n} p{pno}', timgs[pno].crop((int((x0 - 84) * k), int((top - 2) * k), int((x1 + 14) * k),
+                                                           int((bottom + 2) * k)))))
+        out += contact_sheet(tiles, work / 'answer-text', max(t.size[0] for _, t in tiles), 1, cols=3, label_w=70)
     print(f'答案PDF共 {len(stats)} 页，其中 {len(scanned)} 页几乎没有文字层（扫描页）。')
     print(f'文字层可直接取到的答案：{ {k: v["value"] for k, v in sorted(found.items())} }')
+    if tconc:
+        got = collections.Counter(c[0] for c in tconc)
+        print(f'文字层格式二（“N、”起、“正确答案为X”止）：结论句 {len(tconc)} 条，涉及 {len(got)} 题；'
+              f'没有结论句的题：{[n for n in range(1, cfg["expected_questions"] + 1) if n not in got and n not in found]}；'
+              f'结论句多于一条的题：{sorted(n for n, c in got.items() if c > 1)}。'
+              '请按 answer-text 拼图逐条目视读取答案字母，写入 answers.by_page；build 时与文字层逐题比对。')
     print(f'格式一：检测到“N、正确答案：X”行 {len(full)} 条（本卷应有约 {exp} 条）。')
     unpaired_n = sum(1 for nl, cl in rows if cl is None)
     unpaired_c = sum(1 for nl, cl in rows if nl is None)
@@ -1190,7 +1267,8 @@ def build(paper: str, work: Path | None):
     pages = load_pages(qpdf)
     page_by_no = {p.no: p for p in pages}
     missing_q = set(cfg.get('missing_questions', []))
-    seg = segment(pages, cfg['expected_questions'], inline_text, missing_q, corr.get('section_map', {}))
+    seg = segment(pages, cfg['expected_questions'], inline_text, missing_q, corr.get('section_map', {}),
+                  set(corr.get('bare_numbers', [])))
     apply_figure_questions(seg, corr)
     left, right = seg['margins']
     autofix, fixlog, problems = [], [], []
@@ -1221,7 +1299,8 @@ def build(paper: str, work: Path | None):
         die(f'识别出的材料题组 {groups} 与 tools/corrections/{paper}.json 的 material_groups {corr["material_groups"]} 不符；先用 dump 检查材料分段')
     for r in recs.values():
         for o in r['options']:
-            if len(o['text']) > 80 or '\n' in o['text']:
+            if (len(o['text']) > 80 and o['label'] not in corr.get('long_options', {}).get(str(r['number']), '')) \
+                    or '\n' in o['text']:
                 problems.append(f'第{r["number"]}题{o["label"]}项过长（{len(o["text"])}字），可能并入了下一题题干或材料，请核对')
 
     # 章节
@@ -1674,7 +1753,7 @@ def render_report(records, cfg, corr, paper, commit, autofix, fixlog, problems, 
     L += ['', f'答案PDF共 {len(stats)} 页，其中 {len(scanned)} 页为扫描图片、没有可用的正文文字层'
               + (f'（第{"、".join(map(str, texty))}页另有后加的少量文字）' if texty else '') + '。'
               + (f'文字层直接取到 {len(tq)} 题（' + '、'.join(f'{k}{v["value"]}' for k, v in sorted(answer_log['text'].items())) + '）；' if tq else '文字层没有取到答案；')
-              + (f'扫描图人工读取 {len(mq)} 题（第{num_ranges(sorted(mq))}题，记录在 `tools/corrections/{paper}.json` 的 `answers.by_page`）。' if mq else '')
+              + (f'{"扫描图" if scanned else "页面渲染图"}人工读取 {len(mq)} 题（第{num_ranges(sorted(mq))}题，记录在 `tools/corrections/{paper}.json` 的 `answers.by_page`）。' if mq else '')
               + (f'两处都有的第{num_ranges(both)}题逐一比对' + ('，结果一致。' if not answer_log['conflicts'] else f'，不一致：{answer_log["conflicts"]}。') if both else '')]
     if answer_log['missing']:
         L.append(f'缺失答案：{answer_log["missing"]}。')

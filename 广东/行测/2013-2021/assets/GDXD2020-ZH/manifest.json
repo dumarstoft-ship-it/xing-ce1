@@ -1,0 +1,410 @@
+[
+  {
+    "id": "GDXD2020-ZH-p10-i01",
+    "path": "assets/GDXD2020-ZH/GDXD2020-ZH-p10-i01.png",
+    "paper_id": "GDXD2020-ZH",
+    "source_page": 10,
+    "source_bbox_points": [
+      233.0,
+      251.25,
+      382.25,
+      381.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 597,
+    "height": 520,
+    "sha256": "2ff84cea7ee08886b4742c28e0ea4bf9e76a73c5807ca5d03364a3043142788a",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-ZH-p10-i03",
+    "path": "assets/GDXD2020-ZH/GDXD2020-ZH-p10-i03.png",
+    "paper_id": "GDXD2020-ZH",
+    "source_page": 10,
+    "source_bbox_points": [
+      259.5,
+      630.5,
+      359.5,
+      684.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 400,
+    "height": 215,
+    "sha256": "3b5bb2fb18230913826ef1621fa5d4f498f7ac84ea20c631c3948f8dcf713c54",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-ZH-p11-i01",
+    "path": "assets/GDXD2020-ZH/GDXD2020-ZH-p11-i01.png",
+    "paper_id": "GDXD2020-ZH",
+    "source_page": 11,
+    "source_bbox_points": [
+      172.0,
+      40.0,
+      447.75,
+      163.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1103,
+    "height": 493,
+    "sha256": "ac4064202bf080e76b7b889ec9e2469784f06b00dc68841ef9b2694855e69228",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-ZH-p11-i03",
+    "path": "assets/GDXD2020-ZH/GDXD2020-ZH-p11-i03.png",
+    "paper_id": "GDXD2020-ZH",
+    "source_page": 11,
+    "source_bbox_points": [
+      202.75,
+      317.5,
+      414.0,
+      414.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 845,
+    "height": 389,
+    "sha256": "6da7e3d222dfaca773097fef24cb8f056a6d5c2bfdf862392b828097c80d2ac6",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-ZH-p11-i04",
+    "path": "assets/GDXD2020-ZH/GDXD2020-ZH-p11-i04.png",
+    "paper_id": "GDXD2020-ZH",
+    "source_page": 11,
+    "source_bbox_points": [
+      248.0,
+      534.75,
+      367.5,
+      633.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 478,
+    "height": 395,
+    "sha256": "066e75ca50cfbe95eb5b684a327e17338070246bc5fdaf9433ee4c2aa156055f",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-ZH-p12-i01",
+    "path": "assets/GDXD2020-ZH/GDXD2020-ZH-p12-i01.png",
+    "paper_id": "GDXD2020-ZH",
+    "source_page": 12,
+    "source_bbox_points": [
+      190.5,
+      38.5,
+      425.25,
+      163.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 939,
+    "height": 498,
+    "sha256": "92b9c0ab9c891db4088d5b4ce51325a9620424e64ecfeabf2476f47ee94d298c",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-ZH-p12-i04",
+    "path": "assets/GDXD2020-ZH/GDXD2020-ZH-p12-i04.png",
+    "paper_id": "GDXD2020-ZH",
+    "source_page": 12,
+    "source_bbox_points": [
+      240.75,
+      284.75,
+      370.0,
+      417.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 517,
+    "height": 531,
+    "sha256": "ddd0905b1bcfafbbc238dbd26762ce8c17b5a18b1fed186b6c77364e90e8adb6",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-ZH-p12-i05",
+    "path": "assets/GDXD2020-ZH/GDXD2020-ZH-p12-i05.png",
+    "paper_id": "GDXD2020-ZH",
+    "source_page": 12,
+    "source_bbox_points": [
+      336.25,
+      505.75,
+      470.75,
+      636.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 538,
+    "height": 522,
+    "sha256": "1ee381ba8ac844cf8a912337db0f8ef6e058e4896b2792c409ef98b0c456fef9",
+    "transcription": "纵轴“数量”，横轴“暗处”“明处”，图例同A项。暗处：深色物种A少于浅色物种A；明处：深色物种A少于浅色物种A。（柱高未标数值）"
+  },
+  {
+    "id": "GDXD2020-ZH-p12-i06",
+    "path": "assets/GDXD2020-ZH/GDXD2020-ZH-p12-i06.png",
+    "paper_id": "GDXD2020-ZH",
+    "source_page": 12,
+    "source_bbox_points": [
+      156.0,
+      508.25,
+      288.25,
+      636.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 529,
+    "height": 514,
+    "sha256": "7ab4d92ee5fdf347c6b5d489d78d712b3207573092dd0e26ef90ae2c5740c8dd",
+    "transcription": "纵轴“数量”，横轴“暗处”“明处”，图例“深色物种A”（斜线柱）、“浅色物种A”（白柱）。暗处：深色物种A少于浅色物种A；明处：深色物种A多于浅色物种A。（柱高未标数值）"
+  },
+  {
+    "id": "GDXD2020-ZH-p12-i07",
+    "path": "assets/GDXD2020-ZH/GDXD2020-ZH-p12-i07.png",
+    "paper_id": "GDXD2020-ZH",
+    "source_page": 12,
+    "source_bbox_points": [
+      156.0,
+      649.25,
+      292.25,
+      781.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 545,
+    "height": 530,
+    "sha256": "6d09520107b7c7a831a0f27784604c78288d4a8e278fccaaf4fb39c3db8227a8",
+    "transcription": "纵轴“数量”，横轴“暗处”“明处”，图例同A项。暗处：深色物种A多于浅色物种A；明处：深色物种A多于浅色物种A。（柱高未标数值）"
+  },
+  {
+    "id": "GDXD2020-ZH-p12-i08",
+    "path": "assets/GDXD2020-ZH/GDXD2020-ZH-p12-i08.png",
+    "paper_id": "GDXD2020-ZH",
+    "source_page": 12,
+    "source_bbox_points": [
+      340.0,
+      664.0,
+      463.0,
+      783.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 492,
+    "height": 479,
+    "sha256": "2108a39db61fbbbe4e691c5e4aaf13250398ba85091a6161ed0148ab20a70ed0",
+    "transcription": "纵轴“数量”，横轴“暗处”“明处”，图例同A项。暗处：深色物种A多于浅色物种A；明处：深色物种A少于浅色物种A。（柱高未标数值）"
+  },
+  {
+    "id": "GDXD2020-ZH-p13-i02",
+    "path": "assets/GDXD2020-ZH/GDXD2020-ZH-p13-i02.png",
+    "paper_id": "GDXD2020-ZH",
+    "source_page": 13,
+    "source_bbox_points": [
+      123.75,
+      120.25,
+      493.5,
+      337.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1479,
+    "height": 868,
+    "sha256": "a8d60eba6b9bc897d56a9c65d430d42917b5de7a01dac3a0623403b31634fb09",
+    "transcription": "2008-2018年中国电子政务市场规模情况\n\n| 年份 | 电子政务市场规模（亿元） |\n| --- | --- |\n| 2008年 | 740 |\n| 2009年 | 861.7 |\n| 2010年 | 1010.9 |\n| 2011年 | 1188.6 |\n| 2012年 | 1397.8 |\n| 2013年 | 1634.2 |\n| 2014年 | 1915 |\n| 2015年 | 2245.3 |\n| 2016年 | 2569.9 |\n| 2017年 | 2861.8 |\n| 2018年 | 3106.9 |\n\n柱为电子政务市场规模（左轴，0.0—4,000.0），折线为同比增长率（%）（右轴，0—20，2009—2018年各点未标数值）。2016年的数值标注被折线遮住一部分，按可辨认的字形记为2569.9；材料中表格2016年四个细分市场之和为2568.9。"
+  },
+  {
+    "id": "GDXD2020-ZH-p13-i03",
+    "path": "assets/GDXD2020-ZH/GDXD2020-ZH-p13-i03.png",
+    "paper_id": "GDXD2020-ZH",
+    "source_page": 13,
+    "source_bbox_points": [
+      154.0,
+      368.25,
+      463.75,
+      557.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1239,
+    "height": 756,
+    "sha256": "66618730c1e323a0c3c142ace99a75169deccd1b1cea3a09a4adb70096a5fd9d",
+    "transcription": "2008-2018年中国电子政务细分市场规模走势（亿元）\n\n| 年份 | 硬件市场 | 网络设备市场 | 软件市场 | 服务市场 |\n| --- | --- | --- | --- | --- |\n| 2008 | 361.9 | 141.4 | 74.0 | 162.8 |\n| 2009 | 410.2 | 149.9 | 94.8 | 206.8 |\n| 2010 | 473.1 | 153.7 | 121.3 | 262.8 |\n| 2011 | 517.0 | 184.2 | 154.5 | 332.8 |\n| 2012 | 566.1 | 209.7 | 202.7 | 419.3 |\n| 2013 | 645.8 | 244.4 | 282.2 | 461.8 |\n| 2014 | 711.0 | 289.0 | 374.7 | 540.3 |\n| 2015 | 791.5 | 334.3 | 470.5 | 649.0 |\n| 2016 | 896.6 | 377.6 | 552.3 | 742.4 |\n| 2017 | 960.7 | 413.8 | 650.8 | 836.5 |\n| 2018 | 1010.5 | 444.6 | 723.9 | 927.9 |\n\n表题在图片内。各年四项之和与上图市场规模一致（差0.1以内），只有2016年四项之和为2568.9，比上图标注的2569.9少1.0。"
+  },
+  {
+    "id": "GDXD2020-ZH-p13-i04",
+    "path": "assets/GDXD2020-ZH/GDXD2020-ZH-p13-i04.png",
+    "paper_id": "GDXD2020-ZH",
+    "source_page": 13,
+    "source_bbox_points": [
+      88.25,
+      652.0,
+      237.5,
+      787.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 597,
+    "height": 540,
+    "sha256": "39f70c982828d90badab9eff838f3bc410874d703b60b827d3a67f4ff2626dce",
+    "transcription": "2008年中国电子政务市场结构\n\n| 细分市场 | 占比 |\n| --- | --- |\n| 硬件市场 | 40% |\n| 网络设备市场 | 22% |\n| 软件市场 | 12% |\n| 服务市场 | 26% |"
+  },
+  {
+    "id": "GDXD2020-ZH-p13-i05",
+    "path": "assets/GDXD2020-ZH/GDXD2020-ZH-p13-i05.png",
+    "paper_id": "GDXD2020-ZH",
+    "source_page": 13,
+    "source_bbox_points": [
+      299.5,
+      649.25,
+      447.75,
+      789.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 593,
+    "height": 562,
+    "sha256": "5bf2fd6b7e82da812b91592ff9f10e569ac4ecb7c0da4e98d14530782cf6c60e",
+    "transcription": "2011年中国电子政务市场结构\n\n| 细分市场 | 占比 |\n| --- | --- |\n| 硬件市场 | 41% |\n| 网络设备市场 | 14% |\n| 软件市场 | 19% |\n| 服务市场 | 26% |"
+  },
+  {
+    "id": "GDXD2020-ZH-p14-i01",
+    "path": "assets/GDXD2020-ZH/GDXD2020-ZH-p14-i01.png",
+    "paper_id": "GDXD2020-ZH",
+    "source_page": 14,
+    "source_bbox_points": [
+      94.75,
+      40.5,
+      240.25,
+      175.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 582,
+    "height": 540,
+    "sha256": "e9c41e46e38486139354a062643913bc3b1dc14b6ff70646bd4e1d3161a9d202",
+    "transcription": "2014年中国电子政务市场结构\n\n| 细分市场 | 占比 |\n| --- | --- |\n| 硬件市场 | 37% |\n| 网络设备市场 | 15% |\n| 软件市场 | 20% |\n| 服务市场 | 28% |"
+  },
+  {
+    "id": "GDXD2020-ZH-p14-i02",
+    "path": "assets/GDXD2020-ZH/GDXD2020-ZH-p14-i02.png",
+    "paper_id": "GDXD2020-ZH",
+    "source_page": 14,
+    "source_bbox_points": [
+      309.0,
+      41.5,
+      452.5,
+      176.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 574,
+    "height": 541,
+    "sha256": "7ee2b4b51e223bcf98fab77108db75a6020910c57d1b2dc401d6257793b119bc",
+    "transcription": "2017年中国电子政务市场结构\n\n| 细分市场 | 占比 |\n| --- | --- |\n| 硬件市场 | 32% |\n| 网络设备市场 | 14% |\n| 软件市场 | 22% |\n| 服务市场 | 32% |"
+  },
+  {
+    "id": "GDXD2020-ZH-p14-i03",
+    "path": "assets/GDXD2020-ZH/GDXD2020-ZH-p14-i03.png",
+    "paper_id": "GDXD2020-ZH",
+    "source_page": 14,
+    "source_bbox_points": [
+      335.0,
+      202.75,
+      495.5,
+      306.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 642,
+    "height": 416,
+    "sha256": "32f1334752407932deb3c8da4d3b917850442e00b72631452c4624008ba9892d",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-ZH-p14-i04",
+    "path": "assets/GDXD2020-ZH/GDXD2020-ZH-p14-i04.png",
+    "paper_id": "GDXD2020-ZH",
+    "source_page": 14,
+    "source_bbox_points": [
+      130.5,
+      208.5,
+      289.0,
+      307.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 634,
+    "height": 396,
+    "sha256": "789d51dcc231ec4c42f02b6e9e62c5d3e3e80006a1abb17ca6dd8e5a966512ac",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-ZH-p14-i05",
+    "path": "assets/GDXD2020-ZH/GDXD2020-ZH-p14-i05.png",
+    "paper_id": "GDXD2020-ZH",
+    "source_page": 14,
+    "source_bbox_points": [
+      335.25,
+      322.0,
+      500.75,
+      433.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 662,
+    "height": 444,
+    "sha256": "4ab3603773fb9278cce34556f19200946a0dee07525d152ecec362f98ef567d5",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-ZH-p14-i06",
+    "path": "assets/GDXD2020-ZH/GDXD2020-ZH-p14-i06.png",
+    "paper_id": "GDXD2020-ZH",
+    "source_page": 14,
+    "source_bbox_points": [
+      126.75,
+      336.25,
+      282.5,
+      434.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 623,
+    "height": 394,
+    "sha256": "ed7748d7b199c327423d36cff1aad670d520d50d58bf8e96a8afe4cc72d1f979",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2020-ZH-p14-i08",
+    "path": "assets/GDXD2020-ZH/GDXD2020-ZH-p14-i08.png",
+    "paper_id": "GDXD2020-ZH",
+    "source_page": 14,
+    "source_bbox_points": [
+      159.75,
+      613.5,
+      451.25,
+      776.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1166,
+    "height": 651,
+    "sha256": "1488046a93ca17a8b9ee98a33f35f7eea556372f1f716ec46aaa62c9275b1b46",
+    "transcription": "2014-2018年全国海洋生产总值情况\n\n| 年份 | 海洋生产总值（亿元） | 海洋生产总值占国内生产总值的比重（%） |\n| --- | --- | --- |\n| 2014年 | 60699 | 9.5 |\n| 2015年 | 65534 | 9.5 |\n| 2016年 | 69694 | 9.4 |\n| 2017年 | 76749 | 9.4 |\n| 2018年 | 83415 | 9.3 |\n\n柱为海洋生产总值（左轴，0—90000），折线为占国内生产总值的比重（右轴，9—10）。"
+  },
+  {
+    "id": "GDXD2020-ZH-p15-i06",
+    "path": "assets/GDXD2020-ZH/GDXD2020-ZH-p15-i06.png",
+    "paper_id": "GDXD2020-ZH",
+    "source_page": 15,
+    "source_bbox_points": [
+      152.75,
+      75.25,
+      466.0,
+      550.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1253,
+    "height": 1899,
+    "sha256": "53e3a6462860aade45999bcc17201cafb61c1b9bdea92f955670c99d97be60f6",
+    "transcription": "2018年全国海洋产业产值情况\n\n| 指标 | 总量（亿元） | 增速（%） |\n| --- | --- | --- |\n| 海洋生产总值 | 83415 | 8.7 |\n| 海洋产业 | 52965 | 6.2 |\n| 主要海洋产业 | 33609 | 4.0 |\n| 海洋渔业 | 4801 | -0.2 |\n| 海洋油气业 | 1477 | 3.3 |\n| 海洋矿业 | 71 | 0.5 |\n| 海洋盐业 | 39 | -16.6 |\n| 海洋化工业 | 1119 | 3.1 |\n| 海洋生物医药业 | 413 | 9.6 |\n| 海洋电力业 | 172 | 12.8 |\n| 海水利用业 | 17 | 7.9 |\n| 海洋船舶工业 | 997 | -9.8 |\n| 海洋工程建筑业 | 1905 | -3.8 |\n| 海洋交通运输业 | 6522 | 5.5 |\n| 滨海旅游业 | 16078 | 8.3 |\n| 海洋科研教育管理服务业 | 19356 | 10.2 |\n| 海洋相关产业 | 30449 | — |\n\n表题在图片内。原表按缩进分层：海洋生产总值＝海洋产业＋海洋相关产业；海洋产业＝主要海洋产业＋海洋科研教育管理服务业；“海洋渔业”至“滨海旅游业”12行属主要海洋产业（原表这12行缩进略有不齐）。“海洋相关产业”增速原表为“—”。12项之和33611，与主要海洋产业33609相差2（材料注释：部分数据因四舍五入，总计与分项合计不等）。"
+  },
+  {
+    "id": "GDXD2020-ZH-p16-i02",
+    "path": "assets/GDXD2020-ZH/GDXD2020-ZH-p16-i02.png",
+    "paper_id": "GDXD2020-ZH",
+    "source_page": 16,
+    "source_bbox_points": [
+      68.75,
+      153.5,
+      483.5,
+      277.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1659,
+    "height": 495,
+    "sha256": "28de08e88092943bbb8730a2da214b7fac1448054b59cac9824996f4cb788652",
+    "transcription": "2018年全国与广东主要经济指标情况\n\n| 指标 | 全国绝对量（万亿元） | 全国同比增长（%） | 广东绝对量（万亿元） | 广东同比增长（%） |\n| --- | --- | --- | --- | --- |\n| GDP | 90.03 | 6.6 | 9.73 | 6.8 |\n| 规模以上工业增加值 | 30.52 | 6.2 | 3.23 | 6.3 |\n| 固定资产投资 | 63.56 | 5.9 | 3.53 | 10.7 |\n| 社会消费品零售总额 | 38.10 | 9.0 | 3.95 | 8.8 |\n| 进出口总额 | 30.51 | 9.7 | 7.16 | 5.1 |\n\n表题在图片内；原表两层表头（“全国”“广东”下各分“绝对量（万亿元）”“同比增长（%）”），转写时合成一格。"
+  }
+]

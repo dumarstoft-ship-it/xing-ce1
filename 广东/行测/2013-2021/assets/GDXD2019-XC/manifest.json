@@ -1,0 +1,138 @@
+[
+  {
+    "id": "GDXD2019-XC-p08-i01",
+    "path": "assets/GDXD2019-XC/GDXD2019-XC-p08-i01.png",
+    "paper_id": "GDXD2019-XC",
+    "source_page": 8,
+    "source_bbox_points": [
+      168.0,
+      312.5,
+      436.75,
+      421.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1075,
+    "height": 435,
+    "sha256": "cac185d05cc23bd4926558925d460f912271690339ee598607ce9ba7553c84af",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2019-XC-p09-i01",
+    "path": "assets/GDXD2019-XC/GDXD2019-XC-p09-i01.png",
+    "paper_id": "GDXD2019-XC",
+    "source_page": 9,
+    "source_bbox_points": [
+      149.25,
+      46.25,
+      443.0,
+      173.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1175,
+    "height": 509,
+    "sha256": "225ca56ccf1834347cd2ff934ad94e9cf2368565945d4bdee47d832e01aa99e8",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2019-XC-p09-i02",
+    "path": "assets/GDXD2019-XC/GDXD2019-XC-p09-i02.png",
+    "paper_id": "GDXD2019-XC",
+    "source_page": 9,
+    "source_bbox_points": [
+      203.75,
+      517.75,
+      385.0,
+      656.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 725,
+    "height": 554,
+    "sha256": "eb2e1ff401f2080959bc6f5290970f35f4510da8c94d2a333b81d41a6c069bb7",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2019-XC-p10-i01",
+    "path": "assets/GDXD2019-XC/GDXD2019-XC-p10-i01.png",
+    "paper_id": "GDXD2019-XC",
+    "source_page": 10,
+    "source_bbox_points": [
+      190.0,
+      47.0,
+      391.0,
+      170.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 804,
+    "height": 495,
+    "sha256": "b694b035bbd1510e81cee1ea6efc203a7baa18c9142acae7c57d320fa6f0fb87",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2019-XC-p10-i02",
+    "path": "assets/GDXD2019-XC/GDXD2019-XC-p10-i02.png",
+    "paper_id": "GDXD2019-XC",
+    "source_page": 10,
+    "source_bbox_points": [
+      189.75,
+      299.5,
+      389.75,
+      446.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 800,
+    "height": 589,
+    "sha256": "4ced84a1b578ad32864bcdd4e6f33a3d938de51d8e8a723f8e96f96eac345b76",
+    "transcription": ""
+  },
+  {
+    "id": "GDXD2019-XC-p11-i01",
+    "path": "assets/GDXD2019-XC/GDXD2019-XC-p11-i01.png",
+    "paper_id": "GDXD2019-XC",
+    "source_page": 11,
+    "source_bbox_points": [
+      68.0,
+      11.75,
+      489.5,
+      242.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1686,
+    "height": 921,
+    "sha256": "66a16d996d7d8b5d6cbdbb32294f8ed91c612705e9a18204330c0d0b9f6d6cfd",
+    "transcription": "2013-2017年全国铁路营业里程（单位：万公里）\n\n| 年份 | 营业里程 | 复线里程 | 电气化里程 |\n| --- | --- | --- | --- |\n| 2013年 | 10.3 | 4.8 | 5.6 |\n| 2014年 | 11.2 | 5.7 | 6.5 |\n| 2015年 | 12.1 | 6.4 | 7.4 |\n| 2016年 | 12.4 | 6.8 | 8.0 |\n| 2017年 | 12.7 | 7.2 | 8.7 |\n\n每年三根柱（蓝：营业里程，橙：复线里程，灰：电气化里程），数值按柱顶标注转写；纵轴没有刻度数字。图在第11页页首、第66题之前，属材料1。"
+  },
+  {
+    "id": "GDXD2019-XC-p12-i01",
+    "path": "assets/GDXD2019-XC/GDXD2019-XC-p12-i01.png",
+    "paper_id": "GDXD2019-XC",
+    "source_page": 12,
+    "source_bbox_points": [
+      108.5,
+      427.5,
+      486.0,
+      663.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1510,
+    "height": 942,
+    "sha256": "068d5e9d7fff24088d098c8e0352c4fb2d0a3f311ae4ee1bc03729932845f270",
+    "transcription": "2011-2015年我国部分社会服务机构情况\n\n| 指标 | 2015年 | 2014年 | 2013年 | 2012年 | 2011年 |\n| --- | --- | --- | --- | --- | --- |\n| 社会服务机构单位数（个） | 1765004 | 1668143 | 1562298 | 1366650 | 1293986 |\n| 社会工作单位数（个） | 413372 | 370893 | 323061 | 179045 | 146451 |\n| 社会福利院单位数（个） | - | - | 1825 | 1719 | 1597 |\n| 社会福利医院单位数（个） | 151 | 156 | 155 | 156 | 155 |\n| 儿童福利机构单位数（个） | 478 | 545 | 529 | 463 | 397 |\n| 社会福利企业单位数（个） | 14585 | 16389 | 18227 | 20232 | 21507 |\n| 老龄机构单位数（个） | 2280 | 2558 | 2571 | 2583 | 2503 |\n| 基金会单位数（个） | 4784 | 4117 | 3549 | 3029 | 2614 |\n| …… |  |  |  |  |  |\n\n表题在图片内；原表“社会服务机构单位数”以下各行缩进排列；2014、2015年“社会福利院单位数”原表为“-”，照录；末行“……”为原表省略行。"
+  },
+  {
+    "id": "GDXD2019-XC-p13-i01",
+    "path": "assets/GDXD2019-XC/GDXD2019-XC-p13-i01.png",
+    "paper_id": "GDXD2019-XC",
+    "source_page": 13,
+    "source_bbox_points": [
+      110.75,
+      34.5,
+      484.5,
+      205.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1495,
+    "height": 684,
+    "sha256": "fc8d3cf67167ecb6913fd96852b9739d92af1964c7c97d5118e8036f4388da89",
+    "transcription": "2011-2015年我国社区服务机构情况\n\n| 指标 | 2015年 | 2014年 | 2013年 | 2012年 | 2011年 |\n| --- | --- | --- | --- | --- | --- |\n| 社区服务机构数（个） | 360956 | 251368 | 251939 | 200162 | 160352 |\n| 社区服务中心数（个） | 24138 | 23088 | 19014 | 15497 | 14391 |\n| 社区服务站数（个） | 128083 | 120188 | 108377 | 87931 | 56156 |\n| 其他社区服务设施数（个） | 119778 | 107174 | 123658 | 95925 | 89805 |\n| 便民、利民服务网点（个） | 248643 | 302039 | 358518 | 397222 | 452868 |\n| 社区服务机构覆盖率（%） | 22.5 | 21.1 | 18.8 | 15.3 | 23.6 |\n\n表题在图片内。"
+  }
+]

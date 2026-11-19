@@ -1,0 +1,12 @@
+{
+  "year": 2019,
+  "title": "2019年广东选调优秀大学毕业生笔试《思维能力测验》",
+  "paper_variant": "选调《思维能力测验》",
+  "source_edition": "仓库原卷",
+  "exam": "选调优秀大学毕业生笔试",
+  "subject": "思维能力测验",
+  "question_pdf": "真题/2019年广东省选调优秀大学毕业生笔试《思维能力测验》真题.pdf",
+  "answer_pdf": "答案解析/2019年广东省选调优秀大学毕业生笔试《思维能力测验》答案及解析.pdf",
+  "expected_questions": 80,
+  "source_commit": "52f9811b22cad5410a7108dd0a07a879f1187aa5"
+}
