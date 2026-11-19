@@ -98,6 +98,22 @@
       "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/fe60d67c3062e5c9a5d18f7f88b3af6e0e3264d9"
     },
     {
+      "path": "真题/2019年广东省选调优秀大学毕业生笔试《思维能力测验》真题.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc1e9c800b67724008884439f891906dfaa5920b",
+      "size": 375818,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/dc1e9c800b67724008884439f891906dfaa5920b"
+    },
+    {
+      "path": "真题/2019年广东省选调优秀大学毕业生笔试《行测》真题.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "499380c1518af14f532f88e9736bcf82da777e43",
+      "size": 383336,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/499380c1518af14f532f88e9736bcf82da777e43"
+    },
+    {
       "path": "真题/2020年0809广东公务员考试《行测》真题（乡镇）.pdf",
       "mode": "100644",
       "type": "blob",
@@ -112,6 +128,22 @@
       "sha": "86de27ccb7b5dd495a31387aad8e3450450488cb",
       "size": 1014800,
       "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/86de27ccb7b5dd495a31387aad8e3450450488cb"
+    },
+    {
+      "path": "真题/2020年广东选调生和急需紧缺专业公务员招录笔试《思维能力测验》真题.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a515ceec279ceaadbffdd5968d3b7b254793f604",
+      "size": 600918,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/a515ceec279ceaadbffdd5968d3b7b254793f604"
+    },
+    {
+      "path": "真题/2020年广东选调生和急需紧缺专业公务员招录笔试《综合行政能力测验》真题.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61ba7b28632954364009c412067d3df598d9e9db",
+      "size": 801329,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/61ba7b28632954364009c412067d3df598d9e9db"
     },
     {
       "path": "真题/2021年0314广东公务员考试《行测》真题（乡镇）.pdf",
@@ -218,6 +250,22 @@
       "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/56363fb0ea4f7f7656d2d1176c643a507d63a4cf"
     },
     {
+      "path": "答案解析/2019年广东省选调优秀大学毕业生笔试《思维能力测验》答案及解析.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2551eea4642ee59a5d7ca8ae6dea21dc06da71a5",
+      "size": 625172,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/2551eea4642ee59a5d7ca8ae6dea21dc06da71a5"
+    },
+    {
+      "path": "答案解析/2019年广东省选调优秀大学毕业生笔试《行测》答案及解析.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ed43576905506bb8523b8503e8eece950fcdcb1",
+      "size": 701737,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/6ed43576905506bb8523b8503e8eece950fcdcb1"
+    },
+    {
       "path": "答案解析/2020年0809广东公务员考试《行测》真题（乡镇）参考答案及解析.pdf",
       "mode": "100644",
       "type": "blob",
@@ -232,6 +280,22 @@
       "sha": "9a6561527ff8f8f559506837ae220bcb29e7417d",
       "size": 1389111,
       "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/9a6561527ff8f8f559506837ae220bcb29e7417d"
+    },
+    {
+      "path": "答案解析/2020年广东选调生和急需紧缺专业公务员招录笔试《思维能力测验》真题答案及解析.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37e619540322821d4594dcd138ab750222ffb635",
+      "size": 874537,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/37e619540322821d4594dcd138ab750222ffb635"
+    },
+    {
+      "path": "答案解析/2020年广东选调生和急需紧缺专业公务员招录笔试《综合行政能力测验》真题答案及解析.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6922a78b835658cd9c8c0145ecf844fb27d60c9",
+      "size": 1035311,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/f6922a78b835658cd9c8c0145ecf844fb27d60c9"
     },
     {
       "path": "答案解析/2021年0314广东公务员考试《行测》真题（乡镇）参考答案及解析.pdf",
