@@ -1,19 +1,47 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""广东行测旧卷整卷结构化工具（2013—2021 试点：GD2021-XZ）。
+"""广东行测旧卷（2013—2021）整卷结构化工具。
 
-输出格式与 广东/行测/2022-2026 题库一致（字段见 ../schema.json）。自动完成：文字分题、
-选项拆分、行内小图（分数、根号、化学式）占位、题图/材料图定位与 288 DPI 裁剪、答案文字层提取、
-扫描版答案页的候选行拼图。人工判断全部写在 corrections.json，由 build 读取后套用。
+输出格式与 广东/行测/2022-2026 题库一致（字段见 ../schema.json）。自动完成：文字分题、选项拆分、
+行内小图（分数、根号、公式）占位、题图/材料图定位与 288 DPI 裁剪、答案文字层提取、扫描版答案页的候选行拼图、
+文字守恒与裁图检查。人工判断写在每卷自己的修正文件里，build 读取后套用。
 
-  python3 tools/extract.py dump GD2021-XZ           自动分题结果（不套用修正），供核对、编写 corrections.json
-  python3 tools/extract.py answer-sheet GD2021-XZ   扫描版答案 PDF：裁出“正确答案”候选行拼图，供人工读取
-  python3 tools/extract.py build GD2021-XZ          套用修正，生成 JSONL、Markdown、题图、manifest、来源、质量报告
-  python3 tools/extract.py verify [GD2021-XZ ...]   校验已生成文件（schema、题号、答案、图片哈希、文字不入图）
+命令
+  dump <卷> [--with-inline]    自动分题结果（默认不套用修正），供核对、编写修正文件
+  answer-sheet <卷> [--work D] 扫描版答案 PDF：裁出“正确答案”候选行拼成图，供人工逐题读取
+  build <卷> [--work D]        套用修正，只生成本卷文件（见下），并校验本卷
+  index                        扫描全部已生成的卷，合并生成根目录汇总文件
+  verify [<卷> ...]            校验指定卷；不带参数时校验全部卷，并检查根目录汇总是否最新
+
+每卷的文件（多人可同时整理不同的卷，互不覆盖）
+  输入  tools/papers/<卷>.json       登记：year、title、paper_variant、source_edition、question_pdf、answer_pdf、
+                                    expected_questions，可选 missing_questions（原卷缺题的题号）
+        tools/corrections/<卷>.json  人工修正（键见下）
+  输出  <卷>.jsonl  <卷>.md  assets/<卷>/*.png  assets/<卷>/manifest.json  quality/<卷>.md  sources/<卷>.json
+根目录汇总只由 index 生成（合并分支后有冲突时重跑 index 即可）：
+  all.jsonl  assets-manifest.json  sources.json  quality-report.md  README.md
+
+修正文件的键（都可省略）
+  section_map      原卷部分名 → schema 部分名，如 {"常识应用": "常识判断"}
+  section_ranges   [{from, to, section, note}] 按题号改部分（如原卷未单列的科学推理）
+  material_groups  [[86, 90], ...] 资料分析各组材料的首末题号，用于核对自动分段
+  inline_images    {"p04-i01": "1/3"} 行内小图的文字；缺哪个 build 会列出
+  text_fixes       [{q, field: "stem" | "option:A", find, replace | set, reason}]；find 须恰好出现一次
+  ignore_lines     ["69——75题暂缺"] 选项之后无法归属、又不属于试题内容的行（按开头匹配）
+  figures          {"p06-i02": {bbox: [x0, top, x1, bottom]（pt）, reason, role, alt, transcription}}
+  subtypes         {"52": "图形推理"} 判断推理小类覆盖。自动分类：有题图→图形推理；题干与各选项均为
+                   A∶B 式→类比推理；含“是指/定义”→定义判断；其余→逻辑判断
+  question_notes   {"47": ["…"]}；materials {"2": {"question_notes": ["…"]}} 写入该组每题 notes
+  answers          {"source": "…", "by_page": {"1": "1B 2D 3B"}} 人工读取的答案（答案PDF页码: 题号答案…）
+  answer_notes     {"91": "…"} 答案说明
+  report           {answers, source_issues, uncertain, review: [...]} 写入本卷质量报告；readme: [...] 写入 README
+
+整理新的一卷
+  1. 写 tools/papers/<卷>.json；2. dump 核对分题、材料与图片归属；3. answer-sheet 读答案，写入 answers.by_page；
+  4. 在 tools/corrections/<卷>.json 补行内小图文字、图表转写、部分/小类与源文件问题注记；
+  5. build <卷>（失败时按提示补修正）；6. 对照页面渲染图逐题、逐图复核；7. index；8. verify。
 
 依赖：Python 3.10+；pdfplumber、Pillow、numpy；poppler-utils（pdftoppm、pdftotext）；git。可选 jsonschema。
-新增一套试卷：在 papers.json 登记路径与年份 → dump 核对 → answer-sheet 读答案 → 在 corrections.json
-写修正 → build → 对照页面渲染图逐题复核 → verify。
 """
 from __future__ import annotations
 
@@ -42,6 +70,8 @@ LINE_TOL = 3.0                          # pt；字符竖直中心相差在此以
 INLINE_MAX_H = 32.0                     # pt；不高于此且与文字同行的图片视为行内小图（分数、根号、公式）
 PAD_PX = 6                              # 裁图四周留白（像素，288 DPI 下 1.5pt）
 INK = 240                               # 灰度低于此值视为有墨迹（用于收紧裁剪框）
+PAPERS_DIR = TOOLS / 'papers'           # 每卷登记信息
+CORR_DIR = TOOLS / 'corrections'        # 每卷人工修正
 
 SECTION_NAMES = ['政治理论', '常识判断', '言语理解与表达', '数量关系', '判断推理', '科学推理', '资料分析']
 SECTION_ALIASES = {'常识应用': '常识判断', '常识': '常识判断', '言语理解': '言语理解与表达',
@@ -350,7 +380,7 @@ def segment(pages: list[Page], expected: int, inline_text: dict, missing=()):
         heading_open = False
         m = RE_QNUM.match(ln.text)
         while nxt in missing:
-            nxt += 1                                  # papers.json 声明原卷缺失的题号
+            nxt += 1                                  # tools/papers/<卷>.json 声明的原卷缺题题号
         if m and int(m.group(1)) == nxt and nxt <= expected:
             cur_q = QBlock(nxt, section)
             cur_q.lines.append(ln)
@@ -582,7 +612,7 @@ def manual_answers(spec: dict) -> dict:
     for page, s in (spec or {}).get('by_page', {}).items():
         for q, v in re.findall(r'(\d{1,3})([A-D]{1,4}|正确|错误)', s):
             if int(q) in res:
-                die(f'corrections.json answers 中第{q}题重复')
+                die(f'修正文件 answers.by_page 中第{q}题重复')
             res[int(q)] = dict(value=v, page=int(page))
     return res
 
@@ -657,11 +687,32 @@ def png_size(raw: bytes):
 # 读取配置、修正
 # ---------------------------------------------------------------------------
 def load_cfg(paper: str):
-    papers = json.loads((TOOLS / 'papers.json').read_text(encoding='utf-8'))
-    if paper not in papers:
-        die(f'papers.json 中没有 {paper}')
-    corr_all = json.loads((TOOLS / 'corrections.json').read_text(encoding='utf-8')) if (TOOLS / 'corrections.json').exists() else {}
-    return papers[paper], corr_all.get(paper, {})
+    pf = PAPERS_DIR / f'{paper}.json'
+    if not pf.exists():
+        die(f'没有登记文件 tools/papers/{paper}.json')
+    cf = CORR_DIR / f'{paper}.json'
+    corr = json.loads(cf.read_text(encoding='utf-8')) if cf.exists() else {}
+    return json.loads(pf.read_text(encoding='utf-8')), corr
+
+
+def paper_files(paper: str) -> dict:
+    """一卷的全部输出位置；build 只写这些文件。"""
+    return dict(jsonl=OUT / f'{paper}.jsonl', md=OUT / f'{paper}.md', assets=OUT / 'assets' / paper,
+                manifest=OUT / 'assets' / paper / 'manifest.json', quality=OUT / 'quality' / f'{paper}.md',
+                sources=OUT / 'sources' / f'{paper}.json')
+
+
+def paper_sort_key(paper: str):
+    cfg = json.loads((PAPERS_DIR / f'{paper}.json').read_text(encoding='utf-8'))
+    suffix = paper.split('-', 1)[1] if '-' in paper else ''
+    return (cfg.get('year', 0), {'XZ': 0, 'XJ': 1}.get(suffix, 2), paper)
+
+
+def list_papers(built_only: bool = False) -> list:
+    papers = [f.stem for f in PAPERS_DIR.glob('*.json') if not f.stem.startswith('_')]
+    if built_only:
+        papers = [p for p in papers if paper_files(p)['jsonl'].exists()]
+    return sorted(papers, key=paper_sort_key)
 
 
 def git(*args) -> str:
@@ -686,7 +737,7 @@ def apply_text_fixes(recs: dict, corr: dict, log: list) -> None:
             holder[key] = fx['set']
         else:
             if cur.count(fx['find']) != 1:
-                die(f'第{fx["q"]}题 {fld}：要替换的“{fx["find"]}”出现 {cur.count(fx["find"])} 次（应为 1 次），请重新核对原卷后更新 corrections.json')
+                die(f'第{fx["q"]}题 {fld}：要替换的“{fx["find"]}”出现 {cur.count(fx["find"])} 次（应为 1 次），请重新核对原卷后更新修正文件')
             holder[key] = cur.replace(fx['find'], fx['replace'])
         log.append(f'第{fx["q"]}题{"题干" if fld == "stem" else fld.split(":")[1] + "项"}：{fx["reason"]}')
 
@@ -782,7 +833,7 @@ def cmd_answer_sheet(paper: str, work: Path):
     print(f'候选行 {len(cands)} 条，拼图：')
     for fn in out_files:
         print('  ', fn)
-    print('逐页读取后，按 “页码: 题号答案 …” 写入 corrections.json 的 answers.by_page。')
+    print(f'逐页读取后，按 “页码: 题号答案 …” 写入 tools/corrections/{paper}.json 的 answers.by_page。')
 
 
 # ---------------------------------------------------------------------------
@@ -801,13 +852,13 @@ def build(paper: str, work: Path | None):
     autofix, fixlog, problems = [], [], []
     if len(seg['questions']) != cfg['expected_questions'] - len(missing_q):
         die(f'只识别出 {len(seg["questions"])} 题（应为 {cfg["expected_questions"] - len(missing_q)}）；先用 dump 检查分题，'
-            '原卷缺题请在 papers.json 的 missing_questions 中声明')
+            f'原卷缺题请在 tools/papers/{paper}.json 的 missing_questions 中声明')
     if seg['orphans']:
         die(f'有未归属的图片：{[i.key for i in seg["orphans"]]}')
     all_inline = [im.key for p in pages for im in p.images if im.inline]
     missing_inline = [k for k in all_inline if k not in inline_text]
     if missing_inline:
-        die(f'行内小图未在 corrections.json 的 inline_images 中给出文字：{missing_inline}')
+        die(f'行内小图未在 tools/corrections/{paper}.json 的 inline_images 中给出文字：{missing_inline}')
 
     recs = {}
     ignore = corr.get('ignore_lines', [])
@@ -818,11 +869,11 @@ def build(paper: str, work: Path | None):
                 autofix.append(f'第{q.number}题选项后的“{st}”按 ignore_lines 不收录。')
             else:
                 die(f'第{q.number}题选项之后有一行无法归属：“{st}”。核对原卷后，若是题目内容请用 text_fixes 补入，'
-                    '若非试题内容（如“××题暂缺”说明）请写入 corrections.json 的 ignore_lines')
+                    f'若非试题内容（如“××题暂缺”说明）请写入 tools/corrections/{paper}.json 的 ignore_lines')
     mats = {m.k: parse_material(m, left, right) for m in seg['materials']}
     groups = [[m['questions'][0], m['questions'][-1]] if m['questions'] else [] for m in mats.values()]
     if 'material_groups' in corr and groups != corr['material_groups']:
-        die(f'识别出的材料题组 {groups} 与 corrections.json 的 material_groups {corr["material_groups"]} 不符；先用 dump 检查材料分段')
+        die(f'识别出的材料题组 {groups} 与 tools/corrections/{paper}.json 的 material_groups {corr["material_groups"]} 不符；先用 dump 检查材料分段')
     for r in recs.values():
         for o in r['options']:
             if len(o['text']) > 80 or '\n' in o['text']:
@@ -875,7 +926,8 @@ def build(paper: str, work: Path | None):
     own_work = work is None
     work = work or Path(tempfile.mkdtemp(prefix=f'{paper}-'))
     renders = render_pages(qpdf, fig_pages, work / 'render')
-    asset_dir = OUT / 'assets' / paper
+    files = paper_files(paper)
+    asset_dir = files['assets']
     if asset_dir.exists():
         shutil.rmtree(asset_dir)
     asset_dir.mkdir(parents=True)
@@ -913,7 +965,7 @@ def build(paper: str, work: Path | None):
         r['figure_objs'] = figs
         if not r['options']:
             if len(figs) != 1:
-                die(f'第{n}题没有文字选项，且题图数为 {len(figs)}，需在 corrections.json 指明选项与图片的对应')
+                die(f'第{n}题没有文字选项，且题图数为 {len(figs)}，需在 tools/corrections/{paper}.json 指明选项与图片的对应')
             r['options'] = [{'label': L, 'text': '', 'image_refs': [{'image_id': figs[0]['image_id'], 'label_in_image': L}]}
                             for L in 'ABCD']
         else:
@@ -1006,13 +1058,14 @@ def build(paper: str, work: Path | None):
         rec['notes'] = r['notes']
         records.append(rec)
 
-    # 写文件
-    (OUT / f'{paper}.jsonl').write_text(''.join(json.dumps(r, ensure_ascii=False, separators=(',', ':')) + '\n' for r in records), encoding='utf-8')
-    write_manifest(manifest, paper)
+    # 写文件：只写本卷自己的文件
+    files['jsonl'].write_text(''.join(json.dumps(r, ensure_ascii=False, separators=(',', ':')) + '\n' for r in records), encoding='utf-8')
+    files['manifest'].write_text(json.dumps(sorted(manifest, key=lambda e: e['id']), ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     write_sources(cfg, commit, paper)
-    (OUT / f'{paper}.md').write_text(render_md(records, cfg, paper, commit), encoding='utf-8')
-    (OUT / 'quality-report.md').write_text(render_report(records, cfg, corr, paper, commit, autofix, fixlog, problems,
-                                                         answer_log, manifest, all_inline, seg, conserve), encoding='utf-8')
+    files['md'].write_text(render_md(records, cfg, paper, commit), encoding='utf-8')
+    files['quality'].parent.mkdir(exist_ok=True)
+    files['quality'].write_text(render_report(records, cfg, corr, paper, commit, autofix, fixlog, problems,
+                                              answer_log, manifest, all_inline, seg, conserve), encoding='utf-8')
     _PAGE_CACHE.clear()
     if own_work:
         shutil.rmtree(work, ignore_errors=True)
@@ -1054,51 +1107,39 @@ def redact(s: str) -> str:
         s = s[:start] + s[end + 1:]
 
 
-def write_manifest(entries: list, paper: str) -> None:
-    p = OUT / 'assets-manifest.json'
-    old = json.loads(p.read_text(encoding='utf-8')) if p.exists() else []
-    keep = [e for e in old if e.get('paper_id') != paper]
-    allm = sorted(keep + entries, key=lambda e: e['id'])
-    p.write_text(json.dumps(allm, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+def github_repo() -> str:
+    try:
+        m = re.search(r'github\.com[:/](.+?)(?:\.git)?$', git('remote', 'get-url', 'origin'))
+        return m.group(1) if m else ''
+    except subprocess.CalledProcessError:
+        return ''
 
 
 def write_sources(cfg: dict, commit: str, paper: str) -> None:
-    p = OUT / 'sources.json'
-    data = json.loads(p.read_text(encoding='utf-8')) if p.exists() else {'commit': commit, 'sources': []}
-    data['commit'] = commit
-    remote = ''
-    try:
-        url = git('remote', 'get-url', 'origin')
-        m = re.search(r'github\.com[:/](.+?)(?:\.git)?$', url)
-        remote = m.group(1) if m else ''
-    except subprocess.CalledProcessError:
-        pass
-    srcs = {s['path']: s for s in data['sources']}
+    """sources/<卷>.json：源 PDF 在提交中的 blob，并核对与工作区文件一致。"""
+    remote, srcs = github_repo(), []
     for rel in [cfg['question_pdf'], cfg.get('answer_pdf')]:
         if not rel:
             continue
         line = git('ls-tree', '-l', commit, '--', rel)
         if not line:
             die(f'{rel} 不在提交 {commit} 中')
-        meta, path = line.split('\t', 1)
+        meta, _ = line.split('\t', 1)
         mode, typ, sha, size = meta.split()
-        work_sha = git('hash-object', '--', rel)
-        if work_sha != sha:
+        if git('hash-object', '--', rel) != sha:
             die(f'{rel} 与提交中的版本不一致')
-        srcs[rel] = dict(path=rel, mode=mode, type=typ, sha=sha, size=int(size),
-                         url=f'https://api.github.com/repos/{remote}/git/blobs/{sha}' if remote else '')
-    data['sources'] = sorted(srcs.values(), key=lambda s: s['path'])
-    p.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+        srcs.append(dict(path=rel, mode=mode, type=typ, sha=sha, size=int(size),
+                         url=f'https://api.github.com/repos/{remote}/git/blobs/{sha}' if remote else ''))
+    f = paper_files(paper)['sources']
+    f.parent.mkdir(exist_ok=True)
+    f.write_text(json.dumps({'paper_id': paper, 'commit': commit, 'sources': sorted(srcs, key=lambda x: x['path'])},
+                            ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 
 
 def blob_url(commit: str, rel: str) -> str:
-    try:
-        url = git('remote', 'get-url', 'origin')
-        m = re.search(r'github\.com[:/](.+?)(?:\.git)?$', url)
-        if m:
-            return f'https://github.com/{m.group(1)}/blob/{commit}/' + urllib.parse.quote(rel)
-    except subprocess.CalledProcessError:
-        pass
+    repo = github_repo()
+    if repo:
+        return f'https://github.com/{repo}/blob/{commit}/' + urllib.parse.quote(rel)
     return '../../../' + urllib.parse.quote(rel)
 
 
@@ -1131,7 +1172,7 @@ def render_md(records, cfg, paper, commit) -> str:
     qtype_cn = {'single_choice': '单选', 'multiple_choice': '多选', 'true_false': '判断'}
     out = [f'# {cfg["title"]}', '',
            f'共 {len(records)} 题，原题号完整保留。内容：题干、选项、答案（不收解析）；资料分析共用材料置于所属题组前，JSONL 每条记录完整内嵌材料。', '',
-           f'[结构化数据]({paper}.jsonl) · [字段说明](schema.json) · [质量报告](quality-report.md)', '',
+           f'[结构化数据]({paper}.jsonl) · [字段说明](schema.json) · [质量报告](quality/{paper}.md)', '',
            f'原题来源：[{Path(cfg["question_pdf"]).name}]({blob_url(commit, cfg["question_pdf"])})。']
     if cfg.get('answer_pdf'):
         out[-1] += f'答案来源：[{Path(cfg["answer_pdf"]).name}]({blob_url(commit, cfg["answer_pdf"])})（只取答案）。'
@@ -1206,7 +1247,7 @@ def render_report(records, cfg, corr, paper, commit, autofix, fixlog, problems, 
                 sub_ranges[n.split(':', 1)[1]].append(r['question_number'])
     status = collections.Counter(r['answer']['status'] for r in records)
     mats = {r['material']['id']: r['material'] for r in records if r['material']}
-    srcs = json.loads((OUT / 'sources.json').read_text(encoding='utf-8'))['sources']
+    srcs = json.loads(paper_files(paper)['sources'].read_text(encoding='utf-8'))['sources']
     sha = {s['path']: s['sha'] for s in srcs}
     order = []
     for r in records:
@@ -1235,7 +1276,8 @@ def render_report(records, cfg, corr, paper, commit, autofix, fixlog, problems, 
           f'- 图片 {len(manifest)} 张：题图 {nfig_q} 张、材料图 {nmat_img} 张，全部为 288 DPI 页面渲染后的裁剪（`pdf_render_crop`），无重绘。',
           f'- 行内小图 {len(all_inline)} 个（分数、根号、化学方程式）已转成文字，不另存图片：' + '、'.join(f'`{k}`' for k in all_inline) + '。',
           f'- 文字守恒检查：每题“题干+选项”与该题在原 PDF 文字层中的字符逐一相符（不计空白、题号与选项字母，行内小图按转写计）'
-          + ('，' + str(len(records)) + ' 题全部通过' if not conserve else f'；人工修正造成差异的题：{[c[0] for c in conserve]}') + '；3 组材料正文同样相符。' if mats else '。',
+          + ('，' + str(len(records)) + ' 题全部通过' if not conserve else f'；人工修正造成差异的题：{[c[0] for c in conserve]}')
+          + (f'；{len(mats)} 组材料正文同样相符。' if mats else '。'),
           '- 题型按答案判定（单选一个字母、多选多个字母）：' + '，'.join(f'{qtype_cn[k]} {v} 题' for k, v in qtypes.items()) + '。', '']
     custom = corr.get('report', {})
     L += ['## 答案', '', '| 状态 | 数量 |', '| --- | ---: |']
@@ -1249,7 +1291,7 @@ def render_report(records, cfg, corr, paper, commit, autofix, fixlog, problems, 
     L += ['', f'答案PDF共 {len(stats)} 页，其中 {len(scanned)} 页为扫描图片、没有可用的正文文字层'
               + (f'（第{"、".join(map(str, texty))}页另有后加的少量文字）' if texty else '') + '。'
               + (f'文字层直接取到 {len(tq)} 题（' + '、'.join(f'{k}{v["value"]}' for k, v in sorted(answer_log['text'].items())) + '）；' if tq else '文字层没有取到答案；')
-              + (f'扫描图人工读取 {len(mq)} 题（第{num_ranges(sorted(mq))}题，记录在 `tools/corrections.json` 的 `answers.by_page`）。' if mq else '')
+              + (f'扫描图人工读取 {len(mq)} 题（第{num_ranges(sorted(mq))}题，记录在 `tools/corrections/{paper}.json` 的 `answers.by_page`）。' if mq else '')
               + (f'两处都有的第{num_ranges(both)}题逐一比对' + ('，结果一致。' if not answer_log['conflicts'] else f'，不一致：{answer_log["conflicts"]}。') if both else '')]
     if answer_log['missing']:
         L.append(f'缺失答案：{answer_log["missing"]}。')
@@ -1267,7 +1309,7 @@ def render_report(records, cfg, corr, paper, commit, autofix, fixlog, problems, 
         L.append(f'- {item}')
     L += ['', '## 题图与材料图', '',
           '裁剪框取原 PDF 中图片对象的外框，收紧到有墨迹处并留 1.5pt 白边，再检查框内不含任何文字层字符'
-          '（题干、选项文字不入图；画在图中的选项字母 A—D 属于图片本身，随图保留）。`assets-manifest.json` 记录来源页、'
+          f'（题干、选项文字不入图；画在图中的选项字母 A—D 属于图片本身，随图保留）。`assets/{paper}/manifest.json`（汇总于根目录 `assets-manifest.json`）记录来源页、'
           '裁剪框（PDF pt，左上角为原点）、像素尺寸与 SHA-256；像素尺寸 = 裁剪框 × 4（288 DPI），可按 pt 尺寸原大印刷。', '',
           '| 图片 | 题号 | 页 | 裁剪框（pt） | 像素 | 文字转写 |', '| --- | --- | ---: | --- | --- | --- |']
     usage = collections.defaultdict(list)
@@ -1287,98 +1329,284 @@ def render_report(records, cfg, corr, paper, commit, autofix, fixlog, problems, 
     for item in custom.get('review', []):
         L.append(f'- {item}')
     L += ['', '## 重跑', '', '```bash',
-          f'python3 tools/extract.py build {paper}     # 读取 tools/papers.json 与 tools/corrections.json，重新生成全部文件',
-          f'python3 tools/extract.py verify {paper}    # 校验 schema、题号、答案、材料、图片哈希与 Markdown 链接',
+          f'python3 tools/extract.py build {paper}   # 读取 tools/papers/{paper}.json 与 tools/corrections/{paper}.json，只重写本卷文件',
+          'python3 tools/extract.py index            # 重新合并根目录汇总（all.jsonl、assets-manifest.json、sources.json、quality-report.md、README.md）',
+          'python3 tools/extract.py verify           # 校验全部卷（schema、题号、答案、材料、图片哈希、Markdown 链接）与汇总',
           '```', '']
     return '\n'.join(L)
 
 
 # ---------------------------------------------------------------------------
+# index：由各卷文件合并根目录汇总
+# ---------------------------------------------------------------------------
+def read_jsonl(path: Path) -> list:
+    return [json.loads(x) for x in path.read_text(encoding='utf-8').splitlines() if x.strip()]
+
+
+def index_outputs() -> dict:
+    """由各卷文件生成根目录汇总的内容（不写盘；verify 用它检查汇总是否最新）。"""
+    papers = list_papers(built_only=True)
+    if not papers:
+        die('还没有已生成的卷，先运行 build')
+    alltxt, recs, cfgs, manifest, srcs = '', {}, {}, [], []
+    for p in papers:
+        f = paper_files(p)
+        txt = f['jsonl'].read_text(encoding='utf-8')
+        alltxt += txt
+        recs[p] = [json.loads(x) for x in txt.splitlines() if x.strip()]
+        cfgs[p] = load_cfg(p)
+        manifest += json.loads(f['manifest'].read_text(encoding='utf-8'))
+        srcs.append(json.loads(f['sources'].read_text(encoding='utf-8')))
+    commits = sorted({x['commit'] for x in srcs})
+    entries = {}
+    for x in srcs:
+        for e in x['sources']:
+            e = dict(e)
+            if len(commits) > 1:
+                e['commit'] = x['commit']
+            entries[e['path']] = e
+    sources = {'commit': commits[0] if len(commits) == 1 else None,
+               'sources': sorted(entries.values(), key=lambda e: e['path'])}
+    manifest.sort(key=lambda e: e['id'])
+    return {
+        'all.jsonl': alltxt,
+        'assets-manifest.json': json.dumps(manifest, ensure_ascii=False, indent=2) + '\n',
+        'sources.json': json.dumps(sources, ensure_ascii=False, indent=2) + '\n',
+        'quality-report.md': render_quality_index(papers, recs, cfgs, manifest, sources),
+        'README.md': render_readme(papers, recs, cfgs, manifest, sources),
+    }
+
+
+def paper_stats(rs: list) -> dict:
+    st = collections.Counter(r['answer']['status'] for r in rs)
+    mats = {r['material']['id']: r['material'] for r in rs if r['material']}
+    figs = {f['image_id'] for r in rs for f in r['figures']}
+    mimgs = {b['image_id'] for m in mats.values() for b in m['content'] if b['type'] == 'image'}
+    return dict(n=len(rs), known=st.get('known', 0), disputed=st.get('disputed', 0), missing=st.get('missing', 0),
+                mats=len(mats), figs=len(figs), mimgs=len(mimgs),
+                sec=collections.Counter(r['section'] for r in rs),
+                sub=collections.Counter(n.split(':', 1)[1] for r in rs for n in r['notes'] if n.startswith('subtype:')))
+
+
+def render_quality_index(papers, recs, cfgs, manifest, sources) -> str:
+    stats = {p: paper_stats(recs[p]) for p in papers}
+    tot = collections.Counter()
+    for x in stats.values():
+        tot.update({k: v for k, v in x.items() if isinstance(v, int)})
+    L = ['# 广东行测（2013—2021）转换与校验汇总', '',
+         f'共 {len(papers)} 套、{tot["n"]} 题。每卷的完整记录（来源与 blob、完整性、答案读取方式、源文件问题、'
+         '转写拿不准的地方、题图清单、复核方法）见各卷报告。本文件由 `python3 tools/extract.py index` 生成，请勿手改。', '',
+         '| 试卷 | 题数 | 明确答案 | 争议答案 | 答案缺失 | 共用材料 | 题图 | 材料图 | 详细报告 |',
+         '| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |']
+    for p in papers:
+        x = stats[p]
+        L.append(f'| {cfgs[p][0]["title"]} `{p}` | {x["n"]} | {x["known"]} | {x["disputed"]} | {x["missing"]} | '
+                 f'{x["mats"]} | {x["figs"]} | {x["mimgs"]} | [quality/{p}.md](quality/{p}.md) |')
+    L += [f'| 合计 | {tot["n"]} | {tot["known"]} | {tot["disputed"]} | {tot["missing"]} | {tot["mats"]} | '
+          f'{tot["figs"]} | {tot["mimgs"]} | |', '']
+    secs = [s_ for s_ in SECTION_NAMES if any(stats[p]['sec'][s_] for p in papers)]
+    L += ['## 各部分题数', '', '| 试卷 | ' + ' | '.join(secs) + ' | 判断推理小类 |',
+          '| --- | ' + ' | '.join('---:' for _ in secs) + ' | --- |']
+    for p in papers:
+        x = stats[p]
+        sub = '，'.join(f'{k} {x["sub"][k]}' for k in SUBTYPES if x['sub'][k])
+        L.append(f'| `{p}` | ' + ' | '.join(str(x['sec'][s_]) for s_ in secs) + f' | {sub} |')
+    L += ['', '## 争议与缺失答案', '']
+    flagged = [(r['id'], r['answer']) for p in papers for r in recs[p] if r['answer']['status'] != 'known']
+    L += [f'- `{i}`：{a["status"]}，候选 ' + ('、'.join(''.join(v) for v in a['values']) or '无') + f'；{a["note"]}'
+          for i, a in flagged] or ['无。']
+    noted = [(r['id'], r['answer']['note']) for p in papers for r in recs[p]
+             if r['answer']['status'] == 'known' and r['answer']['note']]
+    if noted:
+        L += ['', '答案明确、但来源或依据需要留意的题：', '']
+        L += [f'- `{i}`：{n}' for i, n in noted]
+    L += ['', '## 图片', '',
+          f'{len(manifest)} 张，全部为原 PDF 页面按 288 DPI 渲染后的裁剪（`pdf_render_crop`），其中 '
+          f'{sum(1 for e in manifest if e["transcription"])} 张附文字转写。裁剪框（pt）、像素尺寸与 SHA-256 见 '
+          '[assets-manifest.json](assets-manifest.json)。', '',
+          '## 校验', '',
+          '`python3 tools/extract.py verify` 校验全部卷：schema、题号、答案语义、材料一致性、图片 SHA-256 与像素尺寸、'
+          'Markdown 链接、源 PDF blob，并检查本汇总及 all.jsonl、assets-manifest.json、sources.json、README.md 与各卷文件一致。'
+          '源文件提取所基于的提交：' + (f'`{sources["commit"]}`' if sources['commit'] else '见 sources.json（各卷不同）') + '。', '']
+    return '\n'.join(L)
+
+
+def render_readme(papers, recs, cfgs, manifest, sources) -> str:
+    stats = {p: paper_stats(recs[p]) for p in papers}
+    n = sum(x['n'] for x in stats.values())
+    ntr = sum(1 for e in manifest if e['transcription'])
+    L = ['# 广东行测整卷结构化题库（2013—2021）', '',
+         f'{len(papers)} 套试卷，共 {n} 题。按卷保留原题号，收录题干、选项、答案，不收录解析。字段与 '
+         '[2022—2026 题库](../2022-2026/README.md) 相同，`year` 为 2013—2021。', '',
+         '| 试卷 | 题数 | 明确答案 | 争议答案 | 答案缺失 | 文件 |', '| --- | ---: | ---: | ---: | ---: | --- |']
+    for p in papers:
+        x = stats[p]
+        L.append(f'| {cfgs[p][0]["title"]} | {x["n"]} | {x["known"]} | {x["disputed"]} | {x["missing"]} | '
+                 f'[阅读]({p}.md) · [JSONL]({p}.jsonl) · [质量报告](quality/{p}.md) |')
+    L += ['', '## 给 AI 的入口', '',
+          '- [all.jsonl](all.jsonl)：每行一道题，UTF-8；可直接逐行解析、分块或建立检索索引。',
+          '- 每卷的 Markdown：供阅读，保留图片与图表文字数据。',
+          '- [schema.json](schema.json)：字段类型；[assets-manifest.json](assets-manifest.json)：图片来源页、裁剪坐标（pt）、'
+          '像素尺寸与 SHA-256；[sources.json](sources.json)：原 PDF 路径及 Git blob SHA。',
+          '- [质量报告](quality-report.md)：各卷汇总；每卷的详细记录在 `quality/`。', '',
+          'JSONL 每条题目都包含完整 `material`（如果有），包括材料文字、图表数据文字和图片路径。每题的 `figures` 包含题图；'
+          '`options[].image_refs` 指向图形选项。读取图形题时，需要把图片一并交给支持图像的模型。所有 `path` 相对于本目录，'
+          '不能只传 JSONL 而丢弃 `assets/`。', '',
+          '`answer.values` 表示候选答案集合：单选 `[ ["A"] ]`，多选 `[ ["A","B"] ]`，判断题 `[ ["正确"] ]`；争议答案例如 '
+          '`[ ["D"], ["B"] ]`，表示 D 或 B 两个候选，**不是多选 DB**。`status` 分别为 `known`、`disputed`、`missing`。'
+          '缺失时 `values=[]`。', '',
+          '判断推理题在 `notes` 中注明小类（`subtype:图形推理`、`subtype:定义判断`、`subtype:类比推理`、`subtype:逻辑判断`），'
+          '组卷时可按小类筛选。原卷未单列科学推理部分的，按题型记为“科学推理”，并在 `notes` 中注明原卷位置。']
+    extra = [(p, x) for p in papers for x in cfgs[p][1].get('report', {}).get('readme', [])]
+    if extra:
+        L += ['', '需要留意：', '']
+        L += [f'- {cfgs[p][0]["title"]}：{x}' for p, x in extra]
+    L += ['', '## 图文处理', '',
+          f'正文、选项、数字、分数及上下标转为文字；行内的分数、根号、公式小图转写为文字，不另存图片。{len(manifest)} 个题图/材料图'
+          f'文件均为原 PDF 页面按 288 DPI 渲染后的裁剪，只裁图形本身，无重绘；{ntr} 个图表另有经过对照的文字转写，便于纯文本检索。'
+          '多空选项的两词之间保留一个空格（原卷以空白分隔）。源文件的措辞、数据和答案按原卷保留，明显的印刷问题在题目 `notes` 中说明。'
+          '页码为 PDF 的 1 起算物理页码。', '',
+          '## 整理与校验', '',
+          '整理工具在 `tools/`：每卷的登记信息在 `tools/papers/<卷>.json`，人工修正在 `tools/corrections/<卷>.json`'
+          '（各键的说明见 `python3 tools/extract.py --help`）。', '',
+          '```bash',
+          'python3 tools/extract.py dump <卷>          # 自动分题结果，供核对、编写修正',
+          'python3 tools/extract.py answer-sheet <卷>  # 扫描版答案：裁出答案候选行拼图，人工读取',
+          'python3 tools/extract.py build <卷>         # 只生成本卷文件，并校验本卷',
+          'python3 tools/extract.py index              # 合并生成根目录汇总',
+          'python3 tools/extract.py verify             # 校验全部卷与汇总',
+          '```', '',
+          '`build` 只写本卷的 `<卷>.jsonl`、`<卷>.md`、`assets/<卷>/`（含 `manifest.json`）、`quality/<卷>.md`、'
+          '`sources/<卷>.json`，多人可以同时整理不同的卷；根目录的 `all.jsonl`、`assets-manifest.json`、`sources.json`、'
+          '`quality-report.md` 与本文件只由 `index` 生成，合并后有冲突时重跑 `index` 即可。', '',
+          '## 来源与可追溯性', '',
+          '原始 PDF 位于仓库的 `真题/` 与 `答案解析/`，未修改。' +
+          (f'提取基于提交 `{sources["commit"]}`；' if sources['commit'] else '各卷提取所基于的提交见 sources.json；') +
+          f'{len(sources["sources"])} 个源文件的 blob SHA 见 [sources.json](sources.json)，build 时均已与本地 PDF 核对一致。', '']
+    return '\n'.join(L)
+
+
+def cmd_index() -> None:
+    outs = index_outputs()
+    for name, content in outs.items():
+        (OUT / name).write_text(content, encoding='utf-8')
+    papers = list_papers(built_only=True)
+    print(f'已合并 {len(papers)} 卷（{"、".join(papers)}）→ {"、".join(outs)}')
+
+
+# ---------------------------------------------------------------------------
 # verify
 # ---------------------------------------------------------------------------
-def cmd_verify(papers: list[str]) -> None:
-    schema = json.loads((OUT / 'schema.json').read_text(encoding='utf-8'))
+def check(cond, msg: str) -> None:
+    if not cond:
+        die(f'校验失败：{msg}')
+
+
+def verify_paper(paper: str, validator) -> dict:
+    cfg, _ = load_cfg(paper)
+    f = paper_files(paper)
+    for k in ('jsonl', 'md', 'manifest', 'quality', 'sources'):
+        check(f[k].exists(), f'{paper} 缺少 {f[k].relative_to(OUT)}')
+    rs = read_jsonl(f['jsonl'])
+    md = f['md'].read_text(encoding='utf-8')
+    manifest = {e['id']: e for e in json.loads(f['manifest'].read_text(encoding='utf-8'))}
+    nums = [k for k in range(1, cfg['expected_questions'] + 1) if k not in set(cfg.get('missing_questions', []))]
+    check([r['question_number'] for r in rs] == nums, f'{paper} 题号与 tools/papers/{paper}.json 不符')
+    check(len(re.findall(r'^### 第 \d+ 题$', md, re.M)) == len(nums), f'{paper} Markdown 题数不符')
+    mats, used = {}, set()
+    for r in rs:
+        rid = r['id']
+        if validator:
+            errs = sorted(validator.iter_errors(r), key=lambda e: list(e.path))
+            check(not errs, f'{rid}: {errs[0].message if errs else ""}')
+        check(rid == f'{paper}-Q{r["question_number"]:03d}' and r['paper_id'] == paper and r['year'] == cfg['year'],
+              f'{rid} 编号或年份不符')
+        dumped = json.dumps(r, ensure_ascii=False)
+        check(r['stem'] and '⟦' not in dumped and chr(0xFFFD) not in dumped, f'{rid} 题干为空或含未转写的占位')
+        for para in r['stem'].split('\n'):
+            check(para in md, f'{rid} 题干未出现在 Markdown')
+        a = r['answer']
+        check(len(a['values']) == {'known': 1, 'disputed': 2, 'missing': 0}[a['status']]
+              or (a['status'] == 'disputed' and len(a['values']) > 1), f'{rid} 答案状态与候选数不符')
+        check([o['label'] for o in r['options']] == list('ABCD'), f'{rid} 选项不是A—D')
+        for o in r['options']:
+            check(o['text'] or o['image_refs'], f'{rid} {o["label"]} 项为空')
+            for ref in o['image_refs']:
+                check(ref['image_id'] in {x['image_id'] for x in r['figures']}, f'{rid} 选项图不在题图中')
+        for v in a['values']:
+            check((len(v) > 1) == (r['question_type'] == 'multiple_choice'), f'{rid} 题型与答案不符')
+        if r['section'] == '判断推理':
+            check(sum(x.startswith('subtype:') for x in r['notes']) == 1, f'{rid} 缺判断推理小类')
+        imgs = list(r['figures'])
+        if r['section'] == '资料分析':
+            check(r['material'] and r['question_number'] in r['material']['question_numbers'], f'{rid} 缺共用材料')
+        if r['material']:
+            mid = r['material']['id']
+            check(mats.setdefault(mid, r['material']) == r['material'], f'{mid} 各题内嵌内容不一致')
+            imgs += [b for b in r['material']['content'] if b['type'] == 'image']
+        for im in imgs:
+            check(im['image_id'] in manifest, f'{rid} 引用的 {im["image_id"]} 不在本卷 manifest')
+            e = manifest[im['image_id']]
+            check(im['path'] == e['path'] and im['transcription'] == e['transcription'] and im['path'] in md,
+                  f'{im["image_id"]} 与 manifest 或 Markdown 不符')
+            used.add(im['image_id'])
+    for target in re.findall(r'\]\(([^)]+)\)', md):
+        if not target.startswith(('http', '#')):
+            check((OUT / urllib.parse.unquote(target)).exists(), f'{paper}.md 链接失效：{target}')
+    for aid, e in manifest.items():
+        check(e['paper_id'] == paper and aid.startswith(paper + '-'), f'{aid} 不属于 {paper}')
+        raw = (OUT / e['path']).read_bytes()
+        check(raw[:8] == b'\x89PNG\r\n\x1a\n' and hashlib.sha256(raw).hexdigest() == e['sha256'], f'{aid} SHA-256 不符')
+        check(png_size(raw) == (e['width'], e['height']), f'{aid} 像素尺寸不符')
+        bb = e['source_bbox_points']
+        check(abs((bb[2] - bb[0]) * SCALE - e['width']) <= 1 and abs((bb[3] - bb[1]) * SCALE - e['height']) <= 1,
+              f'{aid} 像素与裁剪框不符')
+        check(aid in used, f'{aid} 未被任何题目引用')
+    on_disk = {str(x.relative_to(OUT)) for x in f['assets'].glob('*.png')}
+    check(on_disk == {e['path'] for e in manifest.values()}, f'assets/{paper}/ 与 manifest 不一致')
+    src = json.loads(f['sources'].read_text(encoding='utf-8'))
+    check(src['paper_id'] == paper, f'sources/{paper}.json 卷号不符')
+    for e in src['sources']:
+        check(git('hash-object', '--', e['path']) == e['sha'], f'{e["path"]} 与记录的 blob 不一致')
+    return dict(questions=len(rs), materials=len(mats), images=len(manifest),
+                answers=dict(collections.Counter(r['answer']['status'] for r in rs)))
+
+
+def cmd_verify(papers: list) -> None:
+    full = not papers
     try:
         import jsonschema
-        validator = jsonschema.Draft202012Validator(schema)
+        validator = jsonschema.Draft202012Validator(json.loads((OUT / 'schema.json').read_text(encoding='utf-8')))
     except ImportError:
         validator = None
         print('提示：未安装 jsonschema，跳过 schema 校验')
-    manifest = {a['id']: a for a in json.loads((OUT / 'assets-manifest.json').read_text(encoding='utf-8'))}
-    cfgs = json.loads((TOOLS / 'papers.json').read_text(encoding='utf-8'))
-    papers = papers or [k for k in cfgs if not k.startswith('_') and (OUT / f'{k}.jsonl').exists()]
-    used = set()
-    summary = {}
-    for paper in papers:
-        cfg = cfgs[paper]
-        rs = [json.loads(s) for s in (OUT / f'{paper}.jsonl').read_text(encoding='utf-8').splitlines() if s.strip()]
-        md = (OUT / f'{paper}.md').read_text(encoding='utf-8')
-        nums = [k for k in range(1, cfg['expected_questions'] + 1) if k not in set(cfg.get('missing_questions', []))]
-        assert [r['question_number'] for r in rs] == nums, '题号与 papers.json 不符'
-        assert len(re.findall(r'^### 第 \d+ 题$', md, re.M)) == len(nums), 'Markdown 题数不符'
-        mats = {}
-        for r in rs:
-            if validator:
-                errs = sorted(validator.iter_errors(r), key=lambda e: e.path)
-                assert not errs, f'{r["id"]}: {errs[0].message}'
-            assert r['id'] == f'{paper}-Q{r["question_number"]:03d}' and r['paper_id'] == paper and r['year'] == cfg['year']
-            assert r['stem'] and '⟦' not in json.dumps(r, ensure_ascii=False) and '�' not in json.dumps(r, ensure_ascii=False)
-            for para in r['stem'].split('\n'):
-                assert para in md, f'{r["id"]} 题干未出现在 Markdown'
-            a = r['answer']
-            assert len(a['values']) == {'known': 1, 'disputed': 2, 'missing': 0}[a['status']] or (a['status'] == 'disputed' and len(a['values']) > 1)
-            assert [o['label'] for o in r['options']] == list('ABCD')
-            for o in r['options']:
-                assert o['text'] or o['image_refs'], f'{r["id"]} {o["label"]} 项为空'
-                for ref in o['image_refs']:
-                    assert ref['image_id'] in {f['image_id'] for f in r['figures']}
-            for v in a['values']:
-                assert (len(v) > 1) == (r['question_type'] == 'multiple_choice')
-            if r['section'] == '判断推理':
-                assert sum(x.startswith('subtype:') for x in r['notes']) == 1, f'{r["id"]} 缺小类'
-            imgs = list(r['figures'])
-            if r['section'] == '资料分析':
-                assert r['material'] and r['question_number'] in r['material']['question_numbers']
-            if r['material']:
-                mid = r['material']['id']
-                assert mats.setdefault(mid, r['material']) == r['material'], f'{mid} 各题内嵌内容不一致'
-                imgs += [b for b in r['material']['content'] if b['type'] == 'image']
-            for im in imgs:
-                e = manifest[im['image_id']]
-                assert im['path'] == e['path'] and im['transcription'] == e['transcription'] and im['path'] in md
-                used.add(im['image_id'])
-        for target in re.findall(r'\]\(([^)]+)\)', md):
-            if not target.startswith(('http', '#')):
-                assert (OUT / urllib.parse.unquote(target)).exists(), target
-        summary[paper] = dict(questions=len(rs), materials=len(mats),
-                              answers=dict(collections.Counter(r['answer']['status'] for r in rs)))
-    for aid, e in manifest.items():
-        if e['paper_id'] not in papers:
-            continue
-        raw = (OUT / e['path']).read_bytes()
-        assert raw[:8] == b'\x89PNG\r\n\x1a\n' and hashlib.sha256(raw).hexdigest() == e['sha256'], aid
-        assert png_size(raw) == (e['width'], e['height']), aid
-        bb = e['source_bbox_points']
-        assert abs((bb[2] - bb[0]) * SCALE - e['width']) <= 1 and abs((bb[3] - bb[1]) * SCALE - e['height']) <= 1, f'{aid} 像素与裁剪框不符'
-        assert aid in used, f'{aid} 未被任何题目引用'
-    on_disk = {str(f.relative_to(OUT)) for p in papers for f in (OUT / 'assets' / p).glob('*.png')}
-    assert on_disk == {e['path'] for e in manifest.values() if e['paper_id'] in papers}, '图片目录与 manifest 不一致'
-    print(json.dumps({'status': 'PASS', 'papers': summary, 'images': len([e for e in manifest.values() if e['paper_id'] in papers])}, ensure_ascii=False))
+    papers = papers or list_papers(built_only=True)
+    result = {'status': 'PASS', 'papers': {p: verify_paper(p, validator) for p in papers}}
+    if full:
+        stale = [name for name, content in index_outputs().items()
+                 if not (OUT / name).exists() or (OUT / name).read_text(encoding='utf-8') != content]
+        check(not stale, f'根目录汇总未更新：{stale}；请运行 python3 tools/extract.py index')
+        result['index'] = '最新'
+        pending = [p for p in list_papers() if p not in papers]
+        if pending:
+            result['已登记未生成'] = pending
+    print(json.dumps(result, ensure_ascii=False))
 
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest='cmd', required=True)
-    d = sub.add_parser('dump')
+    d = sub.add_parser('dump', help='自动分题结果')
     d.add_argument('paper')
-    d.add_argument('--with-inline', action='store_true', help='套用 corrections.json 中的行内小图文字')
-    s = sub.add_parser('answer-sheet')
+    d.add_argument('--with-inline', action='store_true', help='套用修正文件中的行内小图文字')
+    s = sub.add_parser('answer-sheet', help='扫描版答案候选行拼图')
     s.add_argument('paper')
     s.add_argument('--work', type=Path, default=None)
-    b = sub.add_parser('build')
+    b = sub.add_parser('build', help='生成本卷文件并校验本卷')
     b.add_argument('paper')
-    b.add_argument('--work', type=Path, default=None, help='页面渲染缓存目录（默认临时目录）')
-    v = sub.add_parser('verify')
+    b.add_argument('--work', type=Path, default=None, help='页面渲染缓存目录（默认临时目录，用完删除）')
+    sub.add_parser('index', help='合并生成根目录汇总')
+    v = sub.add_parser('verify', help='校验指定卷；不带参数时校验全部卷与汇总')
     v.add_argument('papers', nargs='*')
     a = ap.parse_args()
     if a.cmd == 'dump':
@@ -1388,6 +1616,9 @@ def main():
     elif a.cmd == 'build':
         build(a.paper, a.work)
         cmd_verify([a.paper])
+        print('本卷已生成并校验；汇总根目录文件请运行：python3 tools/extract.py index')
+    elif a.cmd == 'index':
+        cmd_index()
     elif a.cmd == 'verify':
         cmd_verify(a.papers)
 
