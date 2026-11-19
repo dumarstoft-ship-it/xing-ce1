@@ -1,0 +1,206 @@
+[
+  {
+    "id": "GD2014-XJ-p06-i01",
+    "path": "assets/GD2014-XJ/GD2014-XJ-p06-i01.png",
+    "paper_id": "GD2014-XJ",
+    "source_page": 6,
+    "source_bbox_points": [
+      187.25,
+      267.25,
+      408.5,
+      508.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 885,
+    "height": 966,
+    "sha256": "e90223f796521a0650e4bdbd7e7a041cb68530fde5f41cfeb49c8338711493b9",
+    "transcription": ""
+  },
+  {
+    "id": "GD2014-XJ-p06-i02",
+    "path": "assets/GD2014-XJ/GD2014-XJ-p06-i02.png",
+    "paper_id": "GD2014-XJ",
+    "source_page": 6,
+    "source_bbox_points": [
+      159.0,
+      525.25,
+      435.5,
+      660.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1106,
+    "height": 542,
+    "sha256": "781b282022bf0808cd5304a790e1e5e43a2ae05954f201ead87b5cfbbbbfc862",
+    "transcription": ""
+  },
+  {
+    "id": "GD2014-XJ-p07-i01",
+    "path": "assets/GD2014-XJ/GD2014-XJ-p07-i01.png",
+    "paper_id": "GD2014-XJ",
+    "source_page": 7,
+    "source_bbox_points": [
+      163.0,
+      38.75,
+      432.25,
+      176.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1077,
+    "height": 552,
+    "sha256": "20f28833b2b1b034f284253735cbe31c57ab3ed50fb0abdc3f7bafcafc6aa5e7",
+    "transcription": ""
+  },
+  {
+    "id": "GD2014-XJ-p07-i02",
+    "path": "assets/GD2014-XJ/GD2014-XJ-p07-i02.png",
+    "paper_id": "GD2014-XJ",
+    "source_page": 7,
+    "source_bbox_points": [
+      154.25,
+      193.75,
+      441.0,
+      314.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1147,
+    "height": 481,
+    "sha256": "f91dd4368a1567768dcac365439bdf86f5195ca03fb0f5b226695f013abbd218",
+    "transcription": ""
+  },
+  {
+    "id": "GD2014-XJ-p07-i03",
+    "path": "assets/GD2014-XJ/GD2014-XJ-p07-i03.png",
+    "paper_id": "GD2014-XJ",
+    "source_page": 7,
+    "source_bbox_points": [
+      154.25,
+      328.0,
+      440.5,
+      470.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1145,
+    "height": 568,
+    "sha256": "e29d0e33badf5ad460cf20f15c3e236c9396d5f97ce2999a52159f72205d361f",
+    "transcription": ""
+  },
+  {
+    "id": "GD2014-XJ-p07-i04",
+    "path": "assets/GD2014-XJ/GD2014-XJ-p07-i04.png",
+    "paper_id": "GD2014-XJ",
+    "source_page": 7,
+    "source_bbox_points": [
+      154.25,
+      483.5,
+      441.0,
+      592.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1147,
+    "height": 437,
+    "sha256": "a501a6a7256ad9df55901e2b70f0dccabdd1e83b93abdb4eba4c86b1e53d568a",
+    "transcription": ""
+  },
+  {
+    "id": "GD2014-XJ-p07-i05",
+    "path": "assets/GD2014-XJ/GD2014-XJ-p07-i05.png",
+    "paper_id": "GD2014-XJ",
+    "source_page": 7,
+    "source_bbox_points": [
+      154.25,
+      607.0,
+      441.0,
+      716.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1147,
+    "height": 439,
+    "sha256": "73da6c53994e95f4111d147562b1cbbf4323ccb5084a2e71774fd385a2165d9a",
+    "transcription": ""
+  },
+  {
+    "id": "GD2014-XJ-p08-i01",
+    "path": "assets/GD2014-XJ/GD2014-XJ-p08-i01.png",
+    "paper_id": "GD2014-XJ",
+    "source_page": 8,
+    "source_bbox_points": [
+      154.25,
+      31.5,
+      441.0,
+      118.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1147,
+    "height": 347,
+    "sha256": "21675c5a07d31e4d6ab0cf125496044618c98f851408e08b5214540f039490f7",
+    "transcription": ""
+  },
+  {
+    "id": "GD2014-XJ-p08-i02",
+    "path": "assets/GD2014-XJ/GD2014-XJ-p08-i02.png",
+    "paper_id": "GD2014-XJ",
+    "source_page": 8,
+    "source_bbox_points": [
+      154.25,
+      132.5,
+      441.0,
+      239.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1147,
+    "height": 428,
+    "sha256": "d00fdd49eab4fa6a48fcf6ec03c9ab6948e16da6423e2b799d93116aa47224aa",
+    "transcription": ""
+  },
+  {
+    "id": "GD2014-XJ-p08-i03",
+    "path": "assets/GD2014-XJ/GD2014-XJ-p08-i03.png",
+    "paper_id": "GD2014-XJ",
+    "source_page": 8,
+    "source_bbox_points": [
+      154.25,
+      253.25,
+      441.0,
+      391.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1147,
+    "height": 554,
+    "sha256": "57105186dfd9ecea5e01e2e7847e9c4ce3658c26be7bf7ba6352144d251d59cc",
+    "transcription": ""
+  },
+  {
+    "id": "GD2014-XJ-p11-i01",
+    "path": "assets/GD2014-XJ/GD2014-XJ-p11-i01.png",
+    "paper_id": "GD2014-XJ",
+    "source_page": 11,
+    "source_bbox_points": [
+      73.25,
+      33.0,
+      522.25,
+      260.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1796,
+    "height": 908,
+    "sha256": "5fc490f177db203ce7f9ae2f6e8ae9ddb0a680d265b3c88df12b85d3ffea72e9",
+    "transcription": "2009—2013年普通本专科、中等职业教育、普通高中的招生人数（单位：万人）\n\n| 年份 | 普通本专科 | 中等职业教育 | 普通高中 |\n| --- | --- | --- | --- |\n| 2009年 | 640 | 869 | 830 |\n| 2010年 | 662 | 870 | 836 |\n| 2011年 | 682 | 814 | 861 |\n| 2012年 | 689 | 754 | 845 |\n| 2013年 | 700 | 698 | 823 |\n\n按图例读取：浅灰柱为普通本专科，中灰柱为中等职业教育，深灰柱为普通高中。"
+  },
+  {
+    "id": "GD2014-XJ-p11-i02",
+    "path": "assets/GD2014-XJ/GD2014-XJ-p11-i02.png",
+    "paper_id": "GD2014-XJ",
+    "source_page": 11,
+    "source_bbox_points": [
+      68.75,
+      548.0,
+      524.0,
+      682.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1821,
+    "height": 537,
+    "sha256": "b89854e52075fc5889b4407bfa37479bd512e9b407c24d59df3de453a23bd184",
+    "transcription": "广东2013年分地区分产业固定资产投资结构情况表（单位：亿元）\n\n| 指标名称 | 珠三角完成投资 | 珠三角比去年增长% | 粤东完成投资 | 粤东比去年增长% | 粤西完成投资 | 粤西比去年增长% | 粤北完成投资 | 粤北比去年增长% |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 第一产业 | 92.74 | 10.4 | 63.03 | 34.6 | 105.9 | 41 | 92.47 | 36.1 |\n| 第二产业 | 4431.69 | 6.5 | 1132.53 | 22.3 | 867.03 | 37.9 | 914.81 | 20.2 |\n| 第三产业 | 11532.46 | 18.5 | 1134.22 | 23.5 | 981.84 | 38.9 | 1409.81 | 24.8 |\n\n原表表头分两层（地区下分“完成投资”“比去年增长%”），转写时合成一格。"
+  }
+]
