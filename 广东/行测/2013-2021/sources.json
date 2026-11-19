@@ -1,0 +1,21 @@
+{
+  "commit": "52f9811b22cad5410a7108dd0a07a879f1187aa5",
+  "sources": [
+    {
+      "path": "真题/2021年0314广东公务员考试《行测》真题（乡镇）.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a856a7bf56604e15074a8b877f6ede197eea137b",
+      "size": 1014925,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/a856a7bf56604e15074a8b877f6ede197eea137b"
+    },
+    {
+      "path": "答案解析/2021年0314广东公务员考试《行测》真题（乡镇）参考答案及解析.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5946c04bf7b243d15a07af0db6e81fdac8ba3e35",
+      "size": 1130114,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/5946c04bf7b243d15a07af0db6e81fdac8ba3e35"
+    }
+  ]
+}

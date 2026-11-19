@@ -1,0 +1,461 @@
+[
+  {
+    "id": "GD2021-XZ-p05-i01",
+    "path": "assets/GD2021-XZ/GD2021-XZ-p05-i01.png",
+    "paper_id": "GD2021-XZ",
+    "source_page": 5,
+    "source_bbox_points": [
+      131.25,
+      25.0,
+      464.5,
+      191.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1333,
+    "height": 664,
+    "sha256": "5640ad3b4fdb0272b578cac3cdcdeaf7f6f31832d32ae477d788c5ad493ff6ad",
+    "transcription": ""
+  },
+  {
+    "id": "GD2021-XZ-p05-i04",
+    "path": "assets/GD2021-XZ/GD2021-XZ-p05-i04.png",
+    "paper_id": "GD2021-XZ",
+    "source_page": 5,
+    "source_bbox_points": [
+      126.0,
+      247.0,
+      469.5,
+      419.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1374,
+    "height": 689,
+    "sha256": "35c5fa96dc6e92f2f934cc5895daab1d6e3427634eb6960258a9b1b0badf0cc7",
+    "transcription": ""
+  },
+  {
+    "id": "GD2021-XZ-p05-i05",
+    "path": "assets/GD2021-XZ/GD2021-XZ-p05-i05.png",
+    "paper_id": "GD2021-XZ",
+    "source_page": 5,
+    "source_bbox_points": [
+      133.0,
+      438.25,
+      465.0,
+      566.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1328,
+    "height": 513,
+    "sha256": "163e8d6d2386d47062e18525b17eb52564fc116aa7e1e37c6c7b2433288c0bfa",
+    "transcription": ""
+  },
+  {
+    "id": "GD2021-XZ-p05-i06",
+    "path": "assets/GD2021-XZ/GD2021-XZ-p05-i06.png",
+    "paper_id": "GD2021-XZ",
+    "source_page": 5,
+    "source_bbox_points": [
+      126.0,
+      585.75,
+      469.5,
+      754.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1374,
+    "height": 673,
+    "sha256": "05cff81174da29d3ad05cd40350ccf637dc20c1f380a6141d8ff073f48a9052b",
+    "transcription": ""
+  },
+  {
+    "id": "GD2021-XZ-p06-i01",
+    "path": "assets/GD2021-XZ/GD2021-XZ-p06-i01.png",
+    "paper_id": "GD2021-XZ",
+    "source_page": 6,
+    "source_bbox_points": [
+      150.0,
+      25.0,
+      442.5,
+      174.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1170,
+    "height": 597,
+    "sha256": "f5536db81c16f7fe411bf95b7a2d097083acd196a8ba0b225953f8f56d3c2696",
+    "transcription": ""
+  },
+  {
+    "id": "GD2021-XZ-p06-i02",
+    "path": "assets/GD2021-XZ/GD2021-XZ-p06-i02.png",
+    "paper_id": "GD2021-XZ",
+    "source_page": 6,
+    "source_bbox_points": [
+      130.75,
+      198.25,
+      461.25,
+      350.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1322,
+    "height": 609,
+    "sha256": "0b67e56ab50916fccd3dac32108ea85cc627deca377892df097322bf59784772",
+    "transcription": ""
+  },
+  {
+    "id": "GD2021-XZ-p06-i03",
+    "path": "assets/GD2021-XZ/GD2021-XZ-p06-i03.png",
+    "paper_id": "GD2021-XZ",
+    "source_page": 6,
+    "source_bbox_points": [
+      158.25,
+      374.0,
+      444.25,
+      522.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1144,
+    "height": 592,
+    "sha256": "90ab7717f0fe3edaa5775397dce5702d8a471d79cc0b53456eb50d0f2456e91f",
+    "transcription": ""
+  },
+  {
+    "id": "GD2021-XZ-p06-i04",
+    "path": "assets/GD2021-XZ/GD2021-XZ-p06-i04.png",
+    "paper_id": "GD2021-XZ",
+    "source_page": 6,
+    "source_bbox_points": [
+      142.75,
+      549.5,
+      448.75,
+      704.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1224,
+    "height": 620,
+    "sha256": "904bc19318d7a6f9183b7964a85679893ff71ae479dc17ee05457b2b7d15457e",
+    "transcription": ""
+  },
+  {
+    "id": "GD2021-XZ-p07-i01",
+    "path": "assets/GD2021-XZ/GD2021-XZ-p07-i01.png",
+    "paper_id": "GD2021-XZ",
+    "source_page": 7,
+    "source_bbox_points": [
+      83.25,
+      25.0,
+      511.5,
+      154.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1713,
+    "height": 518,
+    "sha256": "c108bb50ab145a26cfb5180074ac46c90411c340d1facba5c02f1cce12a2b346",
+    "transcription": ""
+  },
+  {
+    "id": "GD2021-XZ-p07-i02",
+    "path": "assets/GD2021-XZ/GD2021-XZ-p07-i02.png",
+    "paper_id": "GD2021-XZ",
+    "source_page": 7,
+    "source_bbox_points": [
+      126.0,
+      172.0,
+      469.5,
+      360.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1374,
+    "height": 752,
+    "sha256": "6f0b947319d601aec4ceb75574510143ba224b93dcb6dfa59a5870fe4dae76f3",
+    "transcription": ""
+  },
+  {
+    "id": "GD2021-XZ-p07-i03",
+    "path": "assets/GD2021-XZ/GD2021-XZ-p07-i03.png",
+    "paper_id": "GD2021-XZ",
+    "source_page": 7,
+    "source_bbox_points": [
+      113.25,
+      398.25,
+      481.75,
+      658.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1474,
+    "height": 1040,
+    "sha256": "103eaf158e58aa02cd2cdb07a9d8d0c0ea487ed9d40af2fd44de71e09372552b",
+    "transcription": ""
+  },
+  {
+    "id": "GD2021-XZ-p08-i01",
+    "path": "assets/GD2021-XZ/GD2021-XZ-p08-i01.png",
+    "paper_id": "GD2021-XZ",
+    "source_page": 8,
+    "source_bbox_points": [
+      171.25,
+      630.5,
+      424.5,
+      795.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1013,
+    "height": 659,
+    "sha256": "994c0eef69c6848804eb653aa4cc7412801ab96adce95dcfd5ca9a4c56f58ff9",
+    "transcription": ""
+  },
+  {
+    "id": "GD2021-XZ-p09-i01",
+    "path": "assets/GD2021-XZ/GD2021-XZ-p09-i01.png",
+    "paper_id": "GD2021-XZ",
+    "source_page": 9,
+    "source_bbox_points": [
+      126.0,
+      56.5,
+      468.25,
+      173.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1369,
+    "height": 468,
+    "sha256": "af52fa6fbf51ac1e4073c19aa21a5c15a30780dde16afa4b96e59ee19e12b7ed",
+    "transcription": ""
+  },
+  {
+    "id": "GD2021-XZ-p09-i02",
+    "path": "assets/GD2021-XZ/GD2021-XZ-p09-i02.png",
+    "paper_id": "GD2021-XZ",
+    "source_page": 9,
+    "source_bbox_points": [
+      102.0,
+      223.0,
+      493.75,
+      301.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1567,
+    "height": 313,
+    "sha256": "b60e68fbea33fee2f522ced222a2809a4318c37e925051774cee818314c6379c",
+    "transcription": ""
+  },
+  {
+    "id": "GD2021-XZ-p09-i03",
+    "path": "assets/GD2021-XZ/GD2021-XZ-p09-i03.png",
+    "paper_id": "GD2021-XZ",
+    "source_page": 9,
+    "source_bbox_points": [
+      154.5,
+      562.25,
+      441.0,
+      650.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1146,
+    "height": 351,
+    "sha256": "601786f01ce8772419b07820a5d4cb8f5f70b182661d1700198c4840cf07dfd8",
+    "transcription": ""
+  },
+  {
+    "id": "GD2021-XZ-p09-i04",
+    "path": "assets/GD2021-XZ/GD2021-XZ-p09-i04.png",
+    "paper_id": "GD2021-XZ",
+    "source_page": 9,
+    "source_bbox_points": [
+      182.25,
+      667.25,
+      412.25,
+      788.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 920,
+    "height": 484,
+    "sha256": "a053400f6c40a950f4995015359eb961169d11e9912abd718996f1bfcf98bf10",
+    "transcription": ""
+  },
+  {
+    "id": "GD2021-XZ-p10-i01",
+    "path": "assets/GD2021-XZ/GD2021-XZ-p10-i01.png",
+    "paper_id": "GD2021-XZ",
+    "source_page": 10,
+    "source_bbox_points": [
+      205.5,
+      336.0,
+      390.0,
+      503.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 738,
+    "height": 668,
+    "sha256": "875c52a38d13d949953ec97c8c85c72ab3c7fe41733efd797422d7579a50589c",
+    "transcription": ""
+  },
+  {
+    "id": "GD2021-XZ-p10-i02",
+    "path": "assets/GD2021-XZ/GD2021-XZ-p10-i02.png",
+    "paper_id": "GD2021-XZ",
+    "source_page": 10,
+    "source_bbox_points": [
+      210.75,
+      586.5,
+      384.25,
+      676.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 694,
+    "height": 358,
+    "sha256": "5ef460f2c939439a6174289acc10fed28b4607929dfc329f250d411c072f5500",
+    "transcription": ""
+  },
+  {
+    "id": "GD2021-XZ-p10-i03",
+    "path": "assets/GD2021-XZ/GD2021-XZ-p10-i03.png",
+    "paper_id": "GD2021-XZ",
+    "source_page": 10,
+    "source_bbox_points": [
+      154.5,
+      741.0,
+      441.0,
+      810.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1146,
+    "height": 279,
+    "sha256": "2a42b67477921c0a23dd556f4eab931271a6a241ccdb8131aca81719301be232",
+    "transcription": ""
+  },
+  {
+    "id": "GD2021-XZ-p11-i02",
+    "path": "assets/GD2021-XZ/GD2021-XZ-p11-i02.png",
+    "paper_id": "GD2021-XZ",
+    "source_page": 11,
+    "source_bbox_points": [
+      138.75,
+      91.0,
+      454.5,
+      196.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1263,
+    "height": 421,
+    "sha256": "b20dd559719318bff4d727cc1260b39505301243457122c470311c6f7d2daeac",
+    "transcription": ""
+  },
+  {
+    "id": "GD2021-XZ-p11-i03",
+    "path": "assets/GD2021-XZ/GD2021-XZ-p11-i03.png",
+    "paper_id": "GD2021-XZ",
+    "source_page": 11,
+    "source_bbox_points": [
+      83.25,
+      281.5,
+      511.5,
+      377.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1713,
+    "height": 382,
+    "sha256": "2986abff733b2112b7026dd9298fafcaa61e89861c54917b91547a1b63f231bb",
+    "transcription": ""
+  },
+  {
+    "id": "GD2021-XZ-p11-i04",
+    "path": "assets/GD2021-XZ/GD2021-XZ-p11-i04.png",
+    "paper_id": "GD2021-XZ",
+    "source_page": 11,
+    "source_bbox_points": [
+      186.75,
+      412.0,
+      409.0,
+      470.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 889,
+    "height": 235,
+    "sha256": "e3979c97835d6e021e0c96ab6a4dd1b0f2c5a19f4f0a0b279ae6daf1cfe7c022",
+    "transcription": ""
+  },
+  {
+    "id": "GD2021-XZ-p11-i05",
+    "path": "assets/GD2021-XZ/GD2021-XZ-p11-i05.png",
+    "paper_id": "GD2021-XZ",
+    "source_page": 11,
+    "source_bbox_points": [
+      86.5,
+      573.75,
+      504.5,
+      755.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1672,
+    "height": 725,
+    "sha256": "a4fe9074f750055795eb42139aebe8dd3362c36baa5e8ed5cad3814440b7f9a4",
+    "transcription": "G省农业科研和科技开发机构基本情况\n\n| 项目 | 2015年 | 2016年 | 2017年 | 2018年 | 2019年 |\n| --- | --- | --- | --- | --- | --- |\n| 机构数（个） | 76 | 76 | 76 | 73 | 68 |\n| 职工人数（人） | 4983 | 4781 | 4760 | 4289 | 4633 |\n| 从事科技活动人员（人） | 3502 | 3611 | 3651 | 3432 | 3995 |\n| 科技活动课题数（个） | 1688 | 1813 | 1918 | 1631 | 2286 |\n| 课题投入经费（万元） | 50350 | 56237 | 56224 | 42623 | 68810 |\n| 科学论文合计（篇） | 1519 | 1680 | 1891 | 1383 | 1862 |\n| 其中：国外发表（篇） | 339 | 365 | 393 | 308 | 605 |\n| 科技论著合计（种） | 41 | 49 | 44 | 43 | 32 |"
+  },
+  {
+    "id": "GD2021-XZ-p12-i01",
+    "path": "assets/GD2021-XZ/GD2021-XZ-p12-i01.png",
+    "paper_id": "GD2021-XZ",
+    "source_page": 12,
+    "source_bbox_points": [
+      64.5,
+      273.0,
+      529.0,
+      394.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1858,
+    "height": 487,
+    "sha256": "d285266075bf35ea979bf8dbfe072f204eb384f75b6ef4dc1d5f7601eaaff14c",
+    "transcription": "2020年前三季度G省智能机器人产业四大行业发展情况\n\n| 行业名称 | 企业个数 | 总产值（亿元） | 同比增长 |\n| --- | --- | --- | --- |\n| 工业机器人制造业 | 95 | 76.88 | 57.4% |\n| 特殊作业工业机器人制造业 | 4 | 2.77 | 163.0% |\n| 智能无人飞行器制造业 | 17 | 201.07 | 31.7% |\n| 服务消费机器人制造业 | 24 | 26.18 | -22.8% |"
+  },
+  {
+    "id": "GD2021-XZ-p12-i02",
+    "path": "assets/GD2021-XZ/GD2021-XZ-p12-i02.png",
+    "paper_id": "GD2021-XZ",
+    "source_page": 12,
+    "source_bbox_points": [
+      80.25,
+      434.75,
+      509.75,
+      570.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1718,
+    "height": 542,
+    "sha256": "3b10337759f487939c86d58b96e5f7548444794ea70c3ac620aa1078b5edfa01",
+    "transcription": "2020年前三季度G省智能机器人产业园大行业效益情况\n\n| 行业名称 | 营业收入（亿元） | 同比增速 | 利润总额（亿元） |\n| --- | --- | --- | --- |\n| 工业机器人制造业 | 48.62 | 27.5% | -8.61 |\n| 特殊作业工业机器人制造业 | 1.07 | 118.4% | 0.22 |\n| 智能无人飞行器制造业 | 233.07 | 46.0% | 40.74 |\n| 服务消费机器人制造业 | 43.86 | 40.3% | -0.9 |"
+  },
+  {
+    "id": "GD2021-XZ-p13-i01",
+    "path": "assets/GD2021-XZ/GD2021-XZ-p13-i01.png",
+    "paper_id": "GD2021-XZ",
+    "source_page": 13,
+    "source_bbox_points": [
+      84.5,
+      213.75,
+      508.75,
+      389.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1697,
+    "height": 702,
+    "sha256": "efc4d3d4136fab19a05811a10dbc9a0697fe916d119eb1347e78d33e270e377a",
+    "transcription": "2020年上半年六大洲进口额占比\n\n| 大洲 | 占比 |\n| --- | --- |\n| 亚洲 | 18.9% |\n| 非洲 | 3.0% |\n| 欧洲 | 18.8% |\n| 南美洲 | 31.5% |\n| 北美洲 | 14.9% |\n| 大洋洲 | 12.7% |\n\n2020上半年六大洲出口额占比\n\n| 大洲 | 占比 |\n| --- | --- |\n| 亚洲 | 65.3% |\n| 非洲 | 4.5% |\n| 欧洲 | 14.7% |\n| 南美洲 | 3.3% |\n| 北美洲 | 10.1% |\n| 大洋洲 | 2.0% |"
+  },
+  {
+    "id": "GD2021-XZ-p13-i02",
+    "path": "assets/GD2021-XZ/GD2021-XZ-p13-i02.png",
+    "paper_id": "GD2021-XZ",
+    "source_page": 13,
+    "source_bbox_points": [
+      94.5,
+      438.25,
+      499.25,
+      692.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1619,
+    "height": 1017,
+    "sha256": "a05928fd601fcfb6efb88fd301bd17a9cfd854e1ee4476f98571c1e726c84f92",
+    "transcription": "2020年上半年部分类别农产品进出口情况\n\n| 类别 | 进口额（亿美元） | 进口同比增长 | 出口额（亿美元） | 出口同比增长 |\n| --- | --- | --- | --- | --- |\n| 谷物 | 33.9 | 25.2% | 5.5 | -7.0% |\n| 食用蔬菜 | 9.6 | 4.0% | 44.9 | -4.8% |\n| 禽类产品 | 17.0 | 66.0% | 11.7 | -24.5% |\n| 畜类产品 | 222.0 | 43.2% | 12.4 | -16.6% |\n| 水、海产品 | 65.8 | -6.4% | 48.7 | -19.6% |\n| 饮料、酒及醋 | 21.3 | -23.9% | 10.1 | 3.3% |\n| 食用水果及坚果 | 68.0 | 10.2% | 22.9 | 24.4% |\n| 咖啡、茶、马黛茶及调味香料 | 5.3 | 20.1% | 20.4 | 15.5% |"
+  }
+]

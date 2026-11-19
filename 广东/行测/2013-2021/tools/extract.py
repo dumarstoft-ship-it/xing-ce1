@@ -1,0 +1,1396 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""广东行测旧卷整卷结构化工具（2013—2021 试点：GD2021-XZ）。
+
+输出格式与 广东/行测/2022-2026 题库一致（字段见 ../schema.json）。自动完成：文字分题、
+选项拆分、行内小图（分数、根号、化学式）占位、题图/材料图定位与 288 DPI 裁剪、答案文字层提取、
+扫描版答案页的候选行拼图。人工判断全部写在 corrections.json，由 build 读取后套用。
+
+  python3 tools/extract.py dump GD2021-XZ           自动分题结果（不套用修正），供核对、编写 corrections.json
+  python3 tools/extract.py answer-sheet GD2021-XZ   扫描版答案 PDF：裁出“正确答案”候选行拼图，供人工读取
+  python3 tools/extract.py build GD2021-XZ          套用修正，生成 JSONL、Markdown、题图、manifest、来源、质量报告
+  python3 tools/extract.py verify [GD2021-XZ ...]   校验已生成文件（schema、题号、答案、图片哈希、文字不入图）
+
+依赖：Python 3.10+；pdfplumber、Pillow、numpy；poppler-utils（pdftoppm、pdftotext）；git。可选 jsonschema。
+新增一套试卷：在 papers.json 登记路径与年份 → dump 核对 → answer-sheet 读答案 → 在 corrections.json
+写修正 → build → 对照页面渲染图逐题复核 → verify。
+"""
+from __future__ import annotations
+
+import argparse
+import collections
+import hashlib
+import json
+import logging
+import math
+import re
+import shutil
+import struct
+import subprocess
+import tempfile
+import urllib.parse
+from dataclasses import dataclass, field
+from pathlib import Path
+
+TOOLS = Path(__file__).resolve().parent
+OUT = TOOLS.parent                      # 广东/行测/2013-2021
+REPO = TOOLS.parents[3]                 # 仓库根目录
+DPI = 288
+SCALE = DPI / 72.0                      # 每 pt 的像素数
+GAP_SPLIT = 4.0                         # pt；同一行内大于此间距视为分隔（选项、多空词语）
+LINE_TOL = 3.0                          # pt；字符竖直中心相差在此以内视为同一行
+INLINE_MAX_H = 32.0                     # pt；不高于此且与文字同行的图片视为行内小图（分数、根号、公式）
+PAD_PX = 6                              # 裁图四周留白（像素，288 DPI 下 1.5pt）
+INK = 240                               # 灰度低于此值视为有墨迹（用于收紧裁剪框）
+
+SECTION_NAMES = ['政治理论', '常识判断', '言语理解与表达', '数量关系', '判断推理', '科学推理', '资料分析']
+SECTION_ALIASES = {'常识应用': '常识判断', '常识': '常识判断', '言语理解': '言语理解与表达',
+                   '言语表达与理解': '言语理解与表达', '数学运算': '数量关系'}
+SUBTYPES = ['图形推理', '定义判断', '类比推理', '逻辑判断']
+CN_NUM = '一二三四五六七八九十'
+RE_SECTION = [
+    re.compile(rf'^第[{CN_NUM}]+部分[\s:：]*(?P<name>[\u4e00-\u9fff]+)'),
+    re.compile(rf'^[{CN_NUM}]+[、.．](?P<name>[\u4e00-\u9fff]{{2,8}}?)(?:[，。,.：:（(]|共|$)'),
+]
+RE_MATERIAL = [
+    re.compile(r'^[（(]?\s*材料\s*(?P<k>[0-9一二三四五六七八九十]+)\s*[）)]?'),
+    re.compile(r'^[（(]?\s*资料\s*(?P<k>[0-9一二三四五六七八九十]+)\s*[）)]?'),
+    re.compile(r'^(?:根据|阅读)(?:以下|下列|下面|所给)(?:资料|材料)'),
+    re.compile(rf'^[（(][{CN_NUM}]+[）)]$'),                  # 单独一行的组号“（一）”
+]
+RE_MAT_INSTR = re.compile(r'(?:根据|阅读)(?:以下|下列|下面|所给)(?:资料|材料)[，,]?(?:回答)?(?:第?\d+\s*[~～\-—–至]+\s*\d+题)?[：:。]?')
+RE_QNUM = re.compile(r'^(\d{1,3})\s*[、.．]')
+RE_OPT = re.compile(r'^([A-D])\s*[、.．:：]')
+RE_FOOTER = re.compile(r'^(?:[-－—–]\s*\d+\s*[-－—–]|第\s*\d+\s*页(?:\s*共\s*\d+\s*页)?|\d+)$')
+RE_MARKER = re.compile(r'^(?:[①-⑳]|[（(]\d{1,2}[）)]|[ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩ][、.．])')
+# 设问句：上一行以句末标点结束、本行以这些词开头时另起一段（即使上一行写满）
+RE_PROMPT = re.compile(r'^(?:以下|下列|填入|依次填入|这段文字|这段话|上述|对这段|对上述|根据以上|根据上述|根据这段|'
+                       r'要使上述|由此可以推出|由此可推出|如果以上|如果上述|最能)')
+TERMINAL = set('。！？：；…!?:;')
+CLOSERS = set('”’）)」』')
+
+
+def die(msg: str) -> None:
+    raise SystemExit(f'错误：{msg}')
+
+
+# ---------------------------------------------------------------------------
+# 基础数据结构
+# ---------------------------------------------------------------------------
+@dataclass
+class Tok:
+    text: str
+    x0: float
+    x1: float
+    top: float
+    bottom: float
+    size: float = 10.0
+    image: str | None = None            # 行内小图 id（如 p04-i01）
+
+    @property
+    def vc(self) -> float:
+        return (self.top + self.bottom) / 2
+
+
+@dataclass
+class Img:
+    page: int
+    idx: int
+    x0: float
+    top: float
+    x1: float
+    bottom: float
+    inline: bool = False
+
+    @property
+    def key(self) -> str:
+        return f'p{self.page:02d}-i{self.idx:02d}'
+
+    @property
+    def h(self) -> float:
+        return self.bottom - self.top
+
+
+@dataclass
+class Line:
+    page: int
+    toks: list
+    text: str = ''
+    segs: list = field(default_factory=list)   # [(text, x0, x1)]
+
+    @property
+    def x0(self): return min(t.x0 for t in self.toks)
+    @property
+    def x1(self): return max(t.x1 for t in self.toks)
+    @property
+    def top(self): return min(t.top for t in self.toks)
+    @property
+    def bottom(self): return max(t.bottom for t in self.toks)
+    @property
+    def em(self):
+        sizes = [t.size for t in self.toks if not t.image]
+        return statistics_median(sizes) if sizes else 10.5
+
+
+def statistics_median(xs):
+    xs = sorted(xs)
+    n = len(xs)
+    return xs[n // 2] if n % 2 else (xs[n // 2 - 1] + xs[n // 2]) / 2
+
+
+@dataclass
+class Page:
+    no: int
+    width: float
+    height: float
+    chars: list
+    images: list
+    lines: list = field(default_factory=list)
+
+
+def kind(ch: str) -> str:
+    if not ch:
+        return ''
+    o = ord(ch[0])
+    if 0x4E00 <= o <= 0x9FFF or 0x3400 <= o <= 0x4DBF:
+        return 'H'
+    if ch.isascii() and ch.isalnum():
+        return 'a'
+    return 'p' if ch.isascii() else 'F'
+
+
+# ---------------------------------------------------------------------------
+# 版面：字符 → 行；图片分为行内小图与题图
+# ---------------------------------------------------------------------------
+def load_pages(pdf_path: Path) -> list[Page]:
+    logging.getLogger('pdfminer').setLevel(logging.ERROR)
+    import pdfplumber
+    pages = []
+    with pdfplumber.open(str(pdf_path)) as pdf:
+        for no, pg in enumerate(pdf.pages, 1):
+            W, H = float(pg.width), float(pg.height)
+            chars = [Tok(c['text'], c['x0'], c['x1'], c['top'], c['bottom'], c.get('size', 10.0))
+                     for c in pg.chars if c['text'] and not c['text'].isspace()]
+            raw = sorted(pg.images, key=lambda i: (round(i['top'], 1), i['x0']))
+            imgs = []
+            for k, im in enumerate(raw, 1):
+                x0, x1 = max(0.0, im['x0']), min(W, im['x1'])
+                top, bottom = max(0.0, im['top']), min(H, im['bottom'])
+                imgs.append(Img(no, k, x0, top, x1, bottom))
+            pages.append(Page(no, W, H, chars, imgs))
+    for p in pages:
+        build_lines(p)
+    return pages
+
+
+def build_lines(page: Page) -> None:
+    toks = sorted(page.chars, key=lambda t: (t.vc, t.x0))
+    groups: list[list[Tok]] = []
+    for t in toks:
+        if groups and abs(t.vc - groups[-1][0].vc) <= LINE_TOL:
+            groups[-1].append(t)
+        else:
+            groups.append([t])
+    lines = [Line(page.no, sorted(g, key=lambda t: t.x0)) for g in groups]
+    # 行内小图：高度不大、与某一文字行竖直重叠且左右紧邻文字
+    for im in page.images:
+        if im.h > INLINE_MAX_H:
+            continue
+        best, ov_best = None, 0.0
+        for ln in lines:
+            ov = min(im.bottom, ln.bottom) - max(im.top, ln.top)
+            near = any(abs(t.x1 - im.x0) < 60 or abs(im.x1 - t.x0) < 60 for t in ln.toks)
+            if ov > ov_best and near:
+                best, ov_best = ln, ov
+        if best is not None and ov_best >= 0.3 * min(im.h, best.bottom - best.top):
+            im.inline = True
+            best.toks.append(Tok('', im.x0, im.x1, im.top, im.bottom, best.em, image=im.key))
+            best.toks.sort(key=lambda t: t.x0)
+    # 去掉页码等页脚
+    keep = []
+    for ln in lines:
+        txt = ''.join(t.text for t in ln.toks if not t.image)
+        if ln.top > page.height * 0.92 and RE_FOOTER.match(txt.replace(' ', '')):
+            continue
+        keep.append(ln)
+    page.lines = sorted(keep, key=lambda l: (l.top, l.x0))
+
+
+def tok_text(t: Tok, inline_text: dict) -> str:
+    if t.image:
+        return inline_text.get(t.image, f'⟦{t.image}⟧')
+    return t.text
+
+
+def render_line(ln: Line, inline_text: dict) -> None:
+    """拼出行文字与分段。原卷无空格字符，字间距全靠定位：中西文之间的自动间距不转成空格；
+    空括号内的留白收为“（）”；两个西文字母/数字之间的明显间距记一个空格；大间距后的①②…另起一行。"""
+    out, segs, cur, seg_x0, prev = [], [], [], None, None
+    for t in ln.toks:
+        s = tok_text(t, inline_text)
+        if prev is not None:
+            gap = t.x0 - prev.x1
+            ps, ns = tok_text(prev, inline_text), s
+            if gap > GAP_SPLIT:
+                segs.append((''.join(cur), seg_x0, prev.x1))
+                cur, seg_x0 = [], None
+                if ps.endswith(('（', '(')) and ns.startswith(('）', ')')):
+                    pass
+                elif kind(ps[-1:]) == 'a' and kind(ns[:1]) == 'a':
+                    out.append(' ')
+                elif gap > 1.5 * ln.em and RE_MARKER.match(ns):
+                    out.append('\n')
+        if seg_x0 is None:
+            seg_x0 = t.x0
+        out.append(s)
+        cur.append(s)
+        prev = t
+    if cur:
+        segs.append((''.join(cur), seg_x0, prev.x1))
+    ln.text = ''.join(out)
+    ln.segs = segs
+
+
+# ---------------------------------------------------------------------------
+# 分题：章节、材料、题目
+# ---------------------------------------------------------------------------
+@dataclass
+class QBlock:
+    number: int
+    section_raw: str
+    lines: list = field(default_factory=list)
+    figures: list = field(default_factory=list)
+    material: int | None = None
+
+
+@dataclass
+class MBlock:
+    k: int
+    section_raw: str
+    header: list = field(default_factory=list)   # 材料标题段（含编者按语）
+    items: list = field(default_factory=list)    # ('line', Line) | ('fig', Img)
+    questions: list = field(default_factory=list)
+
+
+def match_section(text: str):
+    """返回原卷部分名（如“常识应用”）；不是部分标题则返回 None。"""
+    t = text.replace(' ', '')
+    for rx in RE_SECTION:
+        m = rx.match(t)
+        if m:
+            name = m.group('name')
+            for cand in SECTION_NAMES + sorted(SECTION_ALIASES, key=len, reverse=True):
+                if name.startswith(cand):
+                    return cand
+    return None
+
+
+def match_material(text: str) -> bool:
+    t = text.replace(' ', '')
+    return any(rx.match(t) for rx in RE_MATERIAL)
+
+
+def segment(pages: list[Page], expected: int, inline_text: dict, missing=()):
+    """按阅读顺序把行与题图分到部分、材料、题目。材料有两种写法：带“材料1/（材料一）/根据以下资料”等标题；
+    或（2013、2015、2017、2019等年）无标题，资料分析部分里上一组题的A—D选项之后直接接首行缩进的材料段落或图表。"""
+    for p in pages:
+        for ln in p.lines:
+            render_line(ln, inline_text)
+    stream = []
+    for p in pages:
+        stream += [('line', ln, ln.top, ln.x0) for ln in p.lines]
+        # 题图按下边缘排序：图片与题号同一横带、顶部高于题号行时（如2016年第31题）仍归入该题
+        stream += [('fig', im, im.bottom, im.x0) for im in p.images if not im.inline]
+    stream.sort(key=lambda it: (it[1].page, it[2], it[3]))
+    left, right = margins(pages)
+    preamble, headings, questions, materials, orphans = [], [], [], [], []
+    section, cur_q, cur_m, collecting = None, None, None, False
+    header_open = heading_open = False
+    last_label, prev = '', None
+    nxt = 1
+
+    def new_material(first=None):
+        nonlocal cur_m, cur_q, collecting
+        cur_q = None
+        cur_m = MBlock(len(materials) + 1, section)
+        materials.append(cur_m)
+        collecting = True
+        if first is not None:
+            cur_m.items.append(first)
+
+    for kind_, obj, _, _ in stream:
+        if kind_ == 'fig':
+            heading_open = False
+            if section == '资料分析' and cur_q is not None and last_label == 'D':
+                new_material(('fig', obj))
+            elif cur_q is not None:
+                cur_q.figures.append(obj)
+            elif cur_m is not None and collecting:
+                cur_m.items.append(('fig', obj))
+                header_open = False
+            elif section == '资料分析':
+                new_material(('fig', obj))
+            else:
+                orphans.append(obj)
+            continue
+        ln = obj
+        short_prev = prev is not None and prev.x1 < right - 1.5 * prev.em
+        indented = ln.x0 > left + 1.2 * ln.em
+        prev = ln
+        sec = match_section(ln.text) if len(ln.text) < 160 else None
+        if sec:
+            section, cur_q, cur_m, collecting = sec, None, None, False
+            headings.append(ln)
+            heading_open = ln.x1 >= right - 1.5 * ln.em
+            continue
+        if heading_open and not indented and not RE_QNUM.match(ln.text) and not match_material(ln.text):
+            headings.append(ln)                       # 部分说明的续行
+            heading_open = ln.x1 >= right - 1.5 * ln.em
+            continue
+        heading_open = False
+        m = RE_QNUM.match(ln.text)
+        while nxt in missing:
+            nxt += 1                                  # papers.json 声明原卷缺失的题号
+        if m and int(m.group(1)) == nxt and nxt <= expected:
+            cur_q = QBlock(nxt, section)
+            cur_q.lines.append(ln)
+            if cur_m is not None:
+                cur_q.material = cur_m.k
+                cur_m.questions.append(nxt)
+            questions.append(cur_q)
+            collecting, last_label = False, ''
+            nxt += 1
+            continue
+        if match_material(ln.text) and section in (None, '资料分析'):
+            if not (cur_m is not None and collecting and not cur_m.items and not cur_m.questions):
+                new_material()                        # “（一）”后紧接“根据下列资料……”时并为同一材料标题
+            cur_m.header.append(ln)
+            header_open = ln.x1 >= right - 1.5 * ln.em
+            continue
+        if section == '资料分析' and cur_q is not None and last_label == 'D' and (indented or short_prev) \
+                and not RE_OPT.match(ln.text):
+            new_material(('line', ln))                # 无标题材料：选项结束后另起的缩进段落
+            continue
+        if cur_m is not None and collecting:
+            if header_open and ln.x0 <= left + 0.5 * ln.em:
+                cur_m.header.append(ln)
+                header_open = ln.x1 >= right - 1.5 * ln.em
+            else:
+                header_open = False
+                cur_m.items.append(('line', ln))
+        elif cur_q is not None:
+            cur_q.lines.append(ln)
+            for text, _, _ in ln.segs:
+                mo = RE_OPT.match(text)
+                if mo and mo.group(1) == chr(ord(last_label or '@') + 1):
+                    last_label = mo.group(1)
+        elif section == '资料分析':
+            new_material(('line', ln))
+        else:
+            preamble.append(ln)
+    return dict(preamble=preamble, headings=headings, questions=questions, materials=materials,
+                orphans=orphans, margins=(left, right))
+
+
+def margins(pages):
+    xs0 = sorted(ln.x0 for p in pages for ln in p.lines)
+    xs1 = sorted(ln.x1 for p in pages for ln in p.lines)
+    if not xs0:
+        return 0.0, 0.0
+    return xs0[len(xs0) // 20], xs1[int(len(xs1) * 0.95)]
+
+
+def ends_terminal(s: str) -> bool:
+    s = s.rstrip()
+    if not s:
+        return False
+    if s[-1] in TERMINAL:
+        return True
+    return s[-1] in CLOSERS and len(s) > 1 and s[-2] in TERMINAL
+
+
+def join_lines(lines: list[Line], left: float, right: float, first_strip: str = '', indent_paras=False) -> str:
+    """把若干行拼成段落：上一行未写满且以句末标点结束、或本行以①等列项开头、或（材料中）本行首行缩进，则另起一段。"""
+    out = ''
+    prev = None
+    for i, ln in enumerate(lines):
+        txt = ln.text
+        if i == 0 and first_strip:
+            txt = txt[len(first_strip):]
+        if prev is None:
+            out = txt
+        else:
+            short = prev.x1 < right - 1.5 * prev.em
+            new = bool(RE_MARKER.match(txt)) or (ends_terminal(prev.text) and (short or bool(RE_PROMPT.match(txt))))
+            if indent_paras and ln.x0 > left + 1.2 * ln.em:
+                new = True
+            if new:
+                out += '\n' + txt
+            elif kind(out[-1:]) == 'a' and kind(txt[:1]) == 'a' and out[-1:].isalpha() and txt[:1].isalpha():
+                out += ' ' + txt
+            else:
+                out += txt
+        prev = ln
+    return out
+
+
+def parse_question(q: QBlock, left: float, right: float, autofix: list) -> dict:
+    first = q.lines[0]
+    m = RE_QNUM.match(first.text)
+    opt_i = next((i for i, ln in enumerate(q.lines) if i > 0 and RE_OPT.match(ln.text)), None)
+    stem_lines = q.lines if opt_i is None else q.lines[:opt_i]
+    opt_lines = [] if opt_i is None else q.lines[opt_i:]
+    stem = join_lines(stem_lines, left, right, first_strip=m.group(0))
+    options, want, labels_raw, strays, prev_ln = [], 0, [], [], None
+    for ln in opt_lines:
+        segs = ln.segs
+        if options and not RE_OPT.match(segs[0][0]):
+            if prev_ln is not None and prev_ln.x1 < right - 2 * prev_ln.em:
+                strays.append(ln)                     # 上一行没写满，这一行不是折行：交人工判断
+                continue
+            # 选项折行：接到上一选项（同一行内被大间距隔开的部分用空格连接）
+            options[-1]['text'] += ' '.join(s[0] for s in segs)
+            prev_ln = ln
+            continue
+        prev_ln = ln
+        for text, _, _ in segs:
+            mo = RE_OPT.match(text)
+            if mo and want < 4 and mo.group(1) == 'ABCD'[want]:
+                options.append({'label': mo.group(1), 'text': text[mo.end():].strip()})
+                labels_raw.append(mo.group(0))
+                want += 1
+            elif options:
+                sep = ' ' if options[-1]['text'] else ''
+                options[-1]['text'] += sep + text
+            else:
+                stem += text
+    if 0 < len(options) < 4:
+        # 选项之间没有留白（如“A、……好坏B、不健康……”）：按下一个应出现的选项字母补拆；
+        # 字母前须是汉字、数字或右括号/引号/百分号，拆后必须恰好得到 A—D 四项，否则不动、交人工核对
+        whole = ''.join(f'\u0000{o["label"]}\u0001{o["text"]}' for o in options)
+        cut, pos = [], 0
+        for L in 'ABCD'[len(options):]:
+            mo = re.compile(rf'(?<=[\u4e00-\u9fff\d）)”%])({L})[、.．](?=[^、.．\s])').search(whole, pos)
+            if not mo:
+                break
+            cut.append(mo)
+            pos = mo.end()
+        if len(options) + len(cut) == 4:
+            for mo in reversed(cut):
+                whole = whole[:mo.start()] + f'\u0000{mo.group(1)}\u0001' + whole[mo.end():]
+            parts = [x.split('\u0001', 1) for x in whole.split('\u0000') if x]
+            labels_raw += [mo.group(0) for mo in cut]
+            options = [{'label': a, 'text': b.strip()} for a, b in parts]
+            autofix.append(f'第{q.number}题：选项之间没有留白，按选项字母补拆出{"、".join(m_.group(1) for m_ in cut)}项，请对照原卷确认。')
+    if q.figures and options and re.fullmatch(r'[A-D、.．\s]*', ''.join(o['text'] for o in options)):
+        # 图下只排了选项字母（“A、A B B C C D D”）：选项在图中
+        autofix.append(f'第{q.number}题：选项行只有字母，按图形选项处理（选项在题图中）。')
+        labels_raw += [o['text'] for o in options]       # 选项字母已在解析时记入 labels_raw
+        options = []
+    dups = []
+    for o in options:
+        dup = re.match(rf'^{o["label"]}\s*[.．、]\s*', o['text'])
+        if dup:
+            dups.append(f'{o["label"]}项“{dup.group(0).strip()}”')
+            labels_raw.append(dup.group(0))
+            o['text'] = o['text'][dup.end():]
+    if dups:
+        autofix.append(f'第{q.number}题：删去选项文字开头重复印出的选项字母（{"、".join(dups)}）。')
+    pages = sorted({ln.page for ln in q.lines} | {f.page for f in q.figures})
+    return dict(number=q.number, section_raw=q.section_raw, stem=stem, options=options,
+                figures=list(q.figures), pages=pages, material=q.material, labels_raw=labels_raw,
+                strays=[ln.text for ln in strays], prefix=m.group(0),
+                raw=''.join(t.text for ln in q.lines if ln not in strays for t in ln.toks if not t.image),
+                inline=[t.image for ln in q.lines for t in ln.toks if t.image])
+
+
+def parse_material(mb: MBlock, left: float, right: float) -> dict:
+    head = ''.join(ln.text for ln in mb.header).replace(' ', '')
+    note = head
+    for rx in RE_MATERIAL[:2] + [re.compile(rf'^[（(][{CN_NUM}]+[）)]')]:
+        note = rx.sub('', note, count=1)
+    note = RE_MAT_INSTR.sub('', note).strip('：:，, ')   # 去掉材料编号与“根据下列资料，回答86~90题”后，余下的才算编者按语
+    blocks, buf = [], []
+
+    def flush():
+        if buf:
+            blocks.append({'type': 'text', 'text': join_lines(buf, left, right, indent_paras=True)})
+            buf.clear()
+    for kind_, obj in mb.items:
+        if kind_ == 'line':
+            buf.append(obj)
+        else:
+            flush()
+            blocks.append({'type': 'fig', 'img': obj})
+    flush()
+    pages = sorted({ln.page for ln in mb.header} | {o.page for _, o in mb.items})
+    return dict(k=mb.k, header_text=head, header_note=note, blocks=blocks, pages=pages,
+                questions=list(mb.questions),
+                inline=[t.image for _, o in mb.items if _ == 'line' for t in o.toks if t.image])
+
+
+def normalize_blanks(text: str, section: str | None) -> str:
+    text = re.sub(r'[（(]\s*[）)]', '（）', text)
+    if section == '数量关系':
+        core = text.replace('（）', '')
+        if core and re.fullmatch(r'[\d\s，,.．/√、\-－+]+', core):
+            text = text.replace('（）', '（    ）')
+    return text
+
+
+def classify_subtype(rec: dict) -> str:
+    stem = rec['stem']
+    opts = [o['text'] for o in rec['options']]
+    if rec['figures']:
+        return '图形推理'
+    if len(stem) <= 30 and re.search(r'[∶:]', stem) and opts and all(re.search(r'[∶:]', o) for o in opts):
+        return '类比推理'
+    if re.search(r'是指|定义', stem):
+        return '定义判断'
+    return '逻辑判断'
+
+
+# ---------------------------------------------------------------------------
+# 答案
+# ---------------------------------------------------------------------------
+RE_ANS_BATCH = re.compile(r'(\d{1,3})\s*[-—–~～]{1,3}\s*(\d{1,3})\s+([A-D](?:[\s.、，,]*[A-D])+)')
+RE_ANS_ONE = re.compile(r'(\d{1,3})\s*[、.．]\s*(?:【?(?:正确)?答案】?(?:是|为)?)?\s*[：:]\s*([A-D]{1,4})(?![A-Za-z])')
+
+
+def answer_text_layer(pdf: Path) -> tuple[dict, list]:
+    """从答案 PDF 文字层提取答案；同时返回每页可读字符数，用于判断是否扫描页。"""
+    found, stats = {}, []
+    out = subprocess.run(['pdftotext', '-layout', str(pdf), '-'], capture_output=True, text=True).stdout
+    pages = out.split('\f')
+    if pages and not pages[-1].strip():
+        pages = pages[:-1]          # pdftotext 在最后一页后也输出换页符
+    for pno, page in enumerate(pages, 1):
+        stats.append((pno, len(re.sub(r'\s', '', page))))
+        for m in RE_ANS_BATCH.finditer(page):
+            a, b = int(m.group(1)), int(m.group(2))
+            letters = re.findall(r'[A-D]', m.group(3))
+            if b - a + 1 == len(letters):
+                for i, L in enumerate(letters):
+                    found[a + i] = dict(value=L, page=pno, raw=m.group(0).strip())
+        for m in RE_ANS_ONE.finditer(page):
+            found.setdefault(int(m.group(1)), dict(value=m.group(2), page=pno, raw=re.sub(r'\s+', ' ', m.group(0))))
+    return found, stats
+
+
+def manual_answers(spec: dict) -> dict:
+    res = {}
+    for page, s in (spec or {}).get('by_page', {}).items():
+        for q, v in re.findall(r'(\d{1,3})([A-D]{1,4}|正确|错误)', s):
+            if int(q) in res:
+                die(f'corrections.json answers 中第{q}题重复')
+            res[int(q)] = dict(value=v, page=int(page))
+    return res
+
+
+# ---------------------------------------------------------------------------
+# 渲染与裁图
+# ---------------------------------------------------------------------------
+def render_pages(pdf: Path, pages: list[int], work: Path) -> dict:
+    work.mkdir(parents=True, exist_ok=True)
+    res = {}
+    for p in pages:
+        stem = work / f'page-{p:02d}'
+        png = stem.with_suffix('.png')
+        if not png.exists():
+            subprocess.run(['pdftoppm', '-r', str(DPI), '-png', '-singlefile', '-f', str(p), '-l', str(p),
+                            str(pdf), str(stem)], check=True, capture_output=True)
+        res[p] = png
+    return res
+
+
+_PAGE_CACHE: dict = {}
+
+
+def crop_box(img_path: Path, im: Img, page: Page, override=None):
+    """返回裁剪框（像素）。默认取图片对象外框，收紧到有墨迹处并留 1.5pt 白边，不越过邻近文字。"""
+    import numpy as np
+    from PIL import Image
+    if img_path not in _PAGE_CACHE:
+        _PAGE_CACHE[img_path] = Image.open(img_path).convert('RGB')
+    full = _PAGE_CACHE[img_path]
+    Wpx, Hpx = full.size
+    if override:
+        x0, t0, x1, b0 = override
+        return full, (math.floor(x0 * SCALE), math.floor(t0 * SCALE), math.ceil(x1 * SCALE), math.ceil(b0 * SCALE))
+    bx = (max(0, math.floor(im.x0 * SCALE)), max(0, math.floor(im.top * SCALE)),
+          min(Wpx, math.ceil(im.x1 * SCALE)), min(Hpx, math.ceil(im.bottom * SCALE)))
+    arr = np.asarray(full.crop(bx).convert('L'))
+    ys, xs = np.where(arr < INK)
+    if len(xs):
+        tight = (bx[0] + xs.min(), bx[1] + ys.min(), bx[0] + xs.max() + 1, bx[1] + ys.max() + 1)
+    else:
+        tight = bx
+    box = [tight[0] - PAD_PX, tight[1] - PAD_PX, tight[2] + PAD_PX, tight[3] + PAD_PX]
+    box = [max(box[0], 0), max(box[1], 0), min(box[2], Wpx), min(box[3], Hpx)]
+    # 留白不得碰到文字：逐个检查与文字框相交的方向并退回到图片外框
+    for c in page.chars:
+        cx0, cy0, cx1, cy1 = c.x0 * SCALE, c.top * SCALE, c.x1 * SCALE, c.bottom * SCALE
+        if cx1 <= box[0] or cx0 >= box[2] or cy1 <= box[1] or cy0 >= box[3]:
+            continue
+        if cy1 <= tight[1]:
+            box[1] = max(box[1], math.ceil(cy1))
+        elif cy0 >= tight[3]:
+            box[3] = min(box[3], math.floor(cy0))
+        elif cx1 <= tight[0]:
+            box[0] = max(box[0], math.ceil(cx1))
+        elif cx0 >= tight[2]:
+            box[2] = min(box[2], math.floor(cx0))
+    return full, tuple(int(v) for v in box)
+
+
+def text_inside(page: Page, box_pt) -> str:
+    x0, t0, x1, b0 = box_pt
+    hit = [c.text for c in page.chars if c.x1 > x0 + 0.5 and c.x0 < x1 - 0.5 and c.bottom > t0 + 0.5 and c.top < b0 - 0.5]
+    return ''.join(hit)
+
+
+def png_size(raw: bytes):
+    return struct.unpack('>II', raw[16:24])
+
+
+# ---------------------------------------------------------------------------
+# 读取配置、修正
+# ---------------------------------------------------------------------------
+def load_cfg(paper: str):
+    papers = json.loads((TOOLS / 'papers.json').read_text(encoding='utf-8'))
+    if paper not in papers:
+        die(f'papers.json 中没有 {paper}')
+    corr_all = json.loads((TOOLS / 'corrections.json').read_text(encoding='utf-8')) if (TOOLS / 'corrections.json').exists() else {}
+    return papers[paper], corr_all.get(paper, {})
+
+
+def git(*args) -> str:
+    return subprocess.run(['git', '-C', str(REPO), *args], capture_output=True, text=True, check=True).stdout.strip()
+
+
+def apply_text_fixes(recs: dict, corr: dict, log: list) -> None:
+    for fx in corr.get('text_fixes', []):
+        r = recs.get(fx['q'])
+        if r is None:
+            die(f'text_fixes 指向不存在的第{fx["q"]}题')
+        fld = fx['field']
+        if fld == 'stem':
+            holder, key = r, 'stem'
+        elif fld.startswith('option:'):
+            holder = next(o for o in r['options'] if o['label'] == fld.split(':')[1])
+            key = 'text'
+        else:
+            die(f'未知字段 {fld}')
+        cur = holder[key]
+        if 'set' in fx:
+            holder[key] = fx['set']
+        else:
+            if cur.count(fx['find']) != 1:
+                die(f'第{fx["q"]}题 {fld}：要替换的“{fx["find"]}”出现 {cur.count(fx["find"])} 次（应为 1 次），请重新核对原卷后更新 corrections.json')
+            holder[key] = cur.replace(fx['find'], fx['replace'])
+        log.append(f'第{fx["q"]}题{"题干" if fld == "stem" else fld.split(":")[1] + "项"}：{fx["reason"]}')
+
+
+# ---------------------------------------------------------------------------
+# dump / answer-sheet
+# ---------------------------------------------------------------------------
+def cmd_dump(paper: str, raw: bool = True):
+    cfg, corr = load_cfg(paper)
+    pages = load_pages(REPO / cfg['question_pdf'])
+    inline = {} if raw else corr.get('inline_images', {})
+    seg = segment(pages, cfg['expected_questions'], inline, set(cfg.get('missing_questions', [])))
+    left, right = seg['margins']
+    print(f'# {paper}  页数 {len(pages)}  左右边界 {left:.1f}/{right:.1f}pt')
+    for ln in seg['headings']:
+        print(f'[部分标题 p{ln.page}] {ln.text}')
+    for ln in seg['preamble']:
+        print(f'[卷首 p{ln.page}] {ln.text}')
+    for p in pages:
+        for im in p.images:
+            print(f'[图片 {im.key}] {"行内" if im.inline else "题图"} bbox=({im.x0:.1f},{im.top:.1f},{im.x1:.1f},{im.bottom:.1f})')
+    autofix = []
+    mats = {m.k: parse_material(m, left, right) for m in seg['materials']}
+    for q in seg['questions']:
+        if q.material and q.material in mats and mats[q.material]['questions'][0] == q.number:
+            m = mats[q.material]
+            print(f'\n=== 材料{m["k"]}（第{m["questions"][0]}—{m["questions"][-1]}题，p{m["pages"]}）标题段：{m["header_text"]}')
+            for b in m['blocks']:
+                print('  [图]', b['img'].key) if b['type'] == 'fig' else print('  [文]', b['text'])
+        r = parse_question(q, left, right, autofix)
+        print(f'\n--- 第{r["number"]}题 [{r["section_raw"]}] p{r["pages"]} 图{[f.key for f in r["figures"]]}')
+        print(r['stem'])
+        for o in r['options']:
+            print(f'  {o["label"]}. {o["text"]}')
+        for st in r['strays']:
+            print(f'  [无法归属的行] {st}')
+    for im in seg['orphans']:
+        print(f'[未归属图片] {im.key}')
+    for a in autofix:
+        print('[自动修正]', a)
+    print(f'\n共识别 {len(seg["questions"])} 题（应为 {cfg["expected_questions"]}），材料 {len(seg["materials"])} 组')
+
+
+def cmd_answer_sheet(paper: str, work: Path):
+    """扫描版答案页：找“解析/拓展”等两字短行，把其上一行（通常是“N、正确答案：X”或“因此，选择X选项”）裁出拼图。"""
+    import numpy as np
+    from PIL import Image, ImageDraw
+    cfg, _ = load_cfg(paper)
+    pdf = REPO / cfg['answer_pdf']
+    work.mkdir(parents=True, exist_ok=True)
+    subprocess.run(['pdftoppm', '-r', '96', '-gray', '-png', str(pdf), str(work / 'ans')], check=True, capture_output=True)
+    cands = []
+    for f in sorted(work.glob('ans-*.png')):
+        pno = int(re.findall(r'(\d+)\.png$', f.name)[0])
+        g = Image.open(f).convert('L')
+        dark = np.asarray(g) < 140
+        rows = dark.sum(axis=1)
+        lines, start = [], None
+        for y, v in enumerate(rows):
+            if v and start is None:
+                start = y
+            elif not v and start is not None:
+                lines.append((start, y))
+                start = None
+        info = []
+        for a, b in lines:
+            cols = np.where(dark[a:b].any(axis=0))[0]
+            info.append((a, b, cols.min(), cols.max()))
+        for i, (a, b, x0, x1) in enumerate(info):
+            if b - a >= 8 and x1 - x0 < 45 and i > 0:
+                pa, pb, _, _ = info[i - 1]
+                cands.append((pno, pa, pb, g))
+    out_files = []
+    W, S, per = 520, 2, 34
+    for k in range(0, len(cands), per):
+        chunk = cands[k:k + per]
+        H = sum((b - a + 6) * S + 6 for _, a, b, _ in chunk)
+        sheet = Image.new('L', (W * S + 120, H), 255)
+        d = ImageDraw.Draw(sheet)
+        y = 0
+        for pno, a, b, g in chunk:
+            c = g.crop((30, a - 3, 30 + W, b + 3)).resize((W * S, (b - a + 6) * S))
+            sheet.paste(c, (120, y))
+            d.text((4, y + 8), f'p{pno} y{a}', fill=0)
+            y += c.size[1] + 6
+        fn = work / f'answer-sheet-{k // per + 1:02d}.png'
+        sheet.save(fn)
+        out_files.append(fn)
+    found, stats = answer_text_layer(pdf)
+    scanned = [p for p, n in stats if n < 30]
+    print(f'答案PDF共 {len(stats)} 页，其中 {len(scanned)} 页几乎没有文字层（扫描页）：{scanned}')
+    print(f'文字层可直接取到的答案：{ {k: v["value"] for k, v in sorted(found.items())} }')
+    print(f'候选行 {len(cands)} 条，拼图：')
+    for fn in out_files:
+        print('  ', fn)
+    print('逐页读取后，按 “页码: 题号答案 …” 写入 corrections.json 的 answers.by_page。')
+
+
+# ---------------------------------------------------------------------------
+# build
+# ---------------------------------------------------------------------------
+def build(paper: str, work: Path | None):
+    cfg, corr = load_cfg(paper)
+    qpdf, apdf = REPO / cfg['question_pdf'], (REPO / cfg['answer_pdf'] if cfg.get('answer_pdf') else None)
+    commit = git('rev-parse', 'HEAD')
+    inline_text = corr.get('inline_images', {})
+    pages = load_pages(qpdf)
+    page_by_no = {p.no: p for p in pages}
+    missing_q = set(cfg.get('missing_questions', []))
+    seg = segment(pages, cfg['expected_questions'], inline_text, missing_q)
+    left, right = seg['margins']
+    autofix, fixlog, problems = [], [], []
+    if len(seg['questions']) != cfg['expected_questions'] - len(missing_q):
+        die(f'只识别出 {len(seg["questions"])} 题（应为 {cfg["expected_questions"] - len(missing_q)}）；先用 dump 检查分题，'
+            '原卷缺题请在 papers.json 的 missing_questions 中声明')
+    if seg['orphans']:
+        die(f'有未归属的图片：{[i.key for i in seg["orphans"]]}')
+    all_inline = [im.key for p in pages for im in p.images if im.inline]
+    missing_inline = [k for k in all_inline if k not in inline_text]
+    if missing_inline:
+        die(f'行内小图未在 corrections.json 的 inline_images 中给出文字：{missing_inline}')
+
+    recs = {}
+    ignore = corr.get('ignore_lines', [])
+    for q in seg['questions']:
+        recs[q.number] = parse_question(q, left, right, autofix)
+        for st in recs[q.number]['strays']:
+            if any(st.replace(' ', '').startswith(x) for x in ignore):
+                autofix.append(f'第{q.number}题选项后的“{st}”按 ignore_lines 不收录。')
+            else:
+                die(f'第{q.number}题选项之后有一行无法归属：“{st}”。核对原卷后，若是题目内容请用 text_fixes 补入，'
+                    '若非试题内容（如“××题暂缺”说明）请写入 corrections.json 的 ignore_lines')
+    mats = {m.k: parse_material(m, left, right) for m in seg['materials']}
+    groups = [[m['questions'][0], m['questions'][-1]] if m['questions'] else [] for m in mats.values()]
+    if 'material_groups' in corr and groups != corr['material_groups']:
+        die(f'识别出的材料题组 {groups} 与 corrections.json 的 material_groups {corr["material_groups"]} 不符；先用 dump 检查材料分段')
+    for r in recs.values():
+        for o in r['options']:
+            if len(o['text']) > 80 or '\n' in o['text']:
+                problems.append(f'第{r["number"]}题{o["label"]}项过长（{len(o["text"])}字），可能并入了下一题题干或材料，请核对')
+
+    # 章节
+    smap = dict(SECTION_ALIASES, **corr.get('section_map', {}))
+    for r in recs.values():
+        raw = r['section_raw']
+        r['section'] = smap.get(raw, raw)
+        r['notes'] = []
+    for rng in corr.get('section_ranges', []):
+        for n in range(rng['from'], rng['to'] + 1):
+            recs[n]['section'] = rng['section']
+            if rng.get('note'):
+                recs[n]['notes'].append(rng['note'])
+    for r in recs.values():
+        if r['section'] not in SECTION_NAMES:
+            die(f'第{r["number"]}题章节“{r["section"]}”不在 schema 范围内')
+
+    apply_text_fixes(recs, corr, fixlog)
+    for r in recs.values():
+        r['stem'] = normalize_blanks(r['stem'], r['section'])
+        for o in r['options']:
+            o['text'] = o['text'].strip()
+        if r['options'] and [o['label'] for o in r['options']] != list('ABCD'):
+            die(f'第{r["number"]}题选项拆分异常：{[o["label"] for o in r["options"]]}')
+        if '⟦' in r['stem'] or any('⟦' in o['text'] for o in r['options']):
+            die(f'第{r["number"]}题仍有未转写的行内小图')
+
+    # 文字守恒：输出的题干+选项 = 文字层原字符 − 题号 − 选项字母 + 行内小图转写（空白不计）
+    conserve = []
+    for n, r in recs.items():
+        want = collections.Counter(re.sub(r'\s', '', r['raw'][len(r['prefix']):] if r['raw'].startswith(r['prefix']) else r['raw']))
+        want -= collections.Counter(re.sub(r'\s', '', ''.join(r['labels_raw'])))
+        want += collections.Counter(re.sub(r'\s', '', ''.join(inline_text[k] for k in r['inline'])))
+        got = collections.Counter(re.sub(r'\s', '', r['stem'] + ''.join(o['text'] for o in r['options'])))
+        if got != want:
+            lost, extra = ''.join(sorted((want - got).elements())), ''.join(sorted((got - want).elements()))
+            fixed = any(fx['q'] == n for fx in corr.get('text_fixes', []))
+            conserve.append((n, lost, extra, fixed))
+    bad = [c for c in conserve if not c[3]]
+    if bad:
+        die('文字守恒检查不通过（题号, 少了的字, 多出的字）：' + '；'.join(f'{n}: -{l!r} +{e!r}' for n, l, e, _ in bad))
+
+    # 题图
+    fig_cfg = corr.get('figures', {})
+    fig_pages = sorted({f.page for r in recs.values() for f in r['figures']} |
+                       {b['img'].page for m in mats.values() for b in m['blocks'] if b['type'] == 'fig'})
+    own_work = work is None
+    work = work or Path(tempfile.mkdtemp(prefix=f'{paper}-'))
+    renders = render_pages(qpdf, fig_pages, work / 'render')
+    asset_dir = OUT / 'assets' / paper
+    if asset_dir.exists():
+        shutil.rmtree(asset_dir)
+    asset_dir.mkdir(parents=True)
+    manifest = []
+
+    def make_figure(im: Img, role: str, qnums: list, default_alt: str):
+        fid = f'{paper}-{im.key}'
+        fc = fig_cfg.get(im.key, {})
+        full, box = crop_box(renders[im.page], im, page_by_no[im.page], fc.get('bbox'))
+        if fc.get('bbox'):
+            fixlog.append(f'{fid}（第{"、".join(map(str, qnums))}题）：{fc.get("reason", "按人工指定的裁剪框裁图")}')
+        crop = full.crop(box)
+        path = asset_dir / f'{fid}.png'
+        crop.save(path, format='PNG', optimize=True)
+        raw = path.read_bytes()
+        w, h = png_size(raw)
+        bbox_pt = [round(box[0] / SCALE, 2), round(box[1] / SCALE, 2), round(box[2] / SCALE, 2), round(box[3] / SCALE, 2)]
+        leak = text_inside(page_by_no[im.page], bbox_pt)
+        if leak:
+            problems.append(f'{fid} 裁剪框内含文字层字符：{leak}')
+        manifest.append(dict(id=fid, path=f'assets/{paper}/{fid}.png', paper_id=paper, source_page=im.page,
+                             source_bbox_points=bbox_pt, method='pdf_render_crop', width=w, height=h,
+                             sha256=hashlib.sha256(raw).hexdigest(), transcription=fc.get('transcription', '')))
+        obj = dict(type='image', image_id=fid, path=f'assets/{paper}/{fid}.png', role=role, option_label=None,
+                   method='pdf_render_crop', alt=fc.get('alt', default_alt), transcription=fc.get('transcription', ''))
+        return obj
+
+    for n in sorted(recs):
+        r = recs[n]
+        figs = []
+        for im in r['figures']:
+            role = fig_cfg.get(im.key, {}).get('role') or ('question' if r['options'] else 'question_and_options')
+            alt = f'{paper} 第{im.page}页 第{n}题题图' + ('（含选项A—D）' if role == 'question_and_options' else '')
+            figs.append(make_figure(im, role, [n], alt))
+        r['figure_objs'] = figs
+        if not r['options']:
+            if len(figs) != 1:
+                die(f'第{n}题没有文字选项，且题图数为 {len(figs)}，需在 corrections.json 指明选项与图片的对应')
+            r['options'] = [{'label': L, 'text': '', 'image_refs': [{'image_id': figs[0]['image_id'], 'label_in_image': L}]}
+                            for L in 'ABCD']
+        else:
+            for o in r['options']:
+                o.setdefault('image_refs', [])
+
+    # 材料
+    mat_objs = {}
+    for k, m in mats.items():
+        mc = corr.get('materials', {}).get(str(k), {})
+        content = []
+        for b in m['blocks']:
+            if b['type'] == 'text':
+                content.append({'type': 'text', 'text': b['text']})
+            else:
+                alt = f'{paper} 第{b["img"].page}页 资料分析材料{k}图表'
+                content.append(make_figure(b['img'], 'material', m['questions'], alt))
+        mat_objs[k] = dict(id=f'{paper}-M{k}', question_numbers=m['questions'], source_pages=m['pages'], content=content)
+        raw_m = ''.join(t.text for kind_, o in seg['materials'][k - 1].items if kind_ == 'line' for t in o.toks if not t.image)
+        out_m = ''.join(b['text'] for b in content if b['type'] == 'text')
+        if collections.Counter(re.sub(r'\s', '', raw_m)) + collections.Counter(re.sub(r'\s', '', ''.join(inline_text[x] for x in m['inline']))) != collections.Counter(re.sub(r'\s', '', out_m)):
+            die(f'材料{k}文字守恒检查不通过')
+        if m['header_note']:
+            autofix.append(f'材料{k}标题后的编者按语不作为材料内容收录：“{redact(m["header_note"])}”')
+        for n in m['questions']:
+            for note in mc.get('question_notes', []):
+                recs[n]['notes'].append(note)
+
+    # 小类
+    for n, r in recs.items():
+        if r['section'] == '判断推理':
+            st = corr.get('subtypes', {}).get(str(n)) or classify_subtype({'stem': r['stem'], 'options': r['options'], 'figures': r['figure_objs']})
+            if st not in SUBTYPES:
+                die(f'第{n}题小类“{st}”无效')
+            r['notes'].insert(0, f'subtype:{st}')
+    for n, notes in corr.get('question_notes', {}).items():
+        recs[int(n)]['notes'].extend(notes)
+
+    # 答案
+    text_ans, stats = answer_text_layer(apdf) if apdf else ({}, [])
+    man_ans = manual_answers(corr.get('answers'))
+    ans_notes = corr.get('answer_notes', {})
+    answer_log = dict(text=text_ans, manual=man_ans, stats=stats, conflicts=[], missing=[])
+    for n, r in recs.items():
+        t, mnl = text_ans.get(n), man_ans.get(n)
+        cands = []
+        for src in (mnl, t):
+            if src and src['value'] not in [c['value'] for c in cands]:
+                cands.append(src)
+        if not cands:
+            r['answer'] = dict(status='missing', values=[], source_pages=[], note=ans_notes.get(str(n), '答案PDF中未找到本题答案；未推测答案。'))
+            answer_log['missing'].append(n)
+            continue
+        vals = [list(c['value']) if c['value'] not in ('正确', '错误') else [c['value']] for c in cands]
+        pages_ = sorted({c['page'] for c in cands})
+        if len(cands) > 1:
+            answer_log['conflicts'].append((n, [c['value'] for c in cands]))
+            r['answer'] = dict(status='disputed', values=vals, source_pages=pages_,
+                               note=ans_notes.get(str(n), '答案PDF的图片与文字层给出不同答案，保留争议，不自行裁定。'))
+        else:
+            r['answer'] = dict(status='known', values=vals, source_pages=pages_, note=ans_notes.get(str(n), ''))
+        typ = 'multiple_choice' if len(vals[0]) > 1 else 'single_choice'
+        r['question_type'] = 'true_false' if vals[0][0] in ('正确', '错误') else typ
+    for r in recs.values():
+        r.setdefault('question_type', 'single_choice')
+
+    # 组装记录
+    qpdf_rel, apdf_rel = cfg['question_pdf'], cfg.get('answer_pdf')
+    records = []
+    for n in sorted(recs):
+        r = recs[n]
+        rec = collections.OrderedDict()
+        rec['id'] = f'{paper}-Q{n:03d}'
+        rec['year'] = cfg['year']
+        rec['province'] = '广东'
+        rec['exam'] = '公务员录用考试'
+        rec['subject'] = '行政职业能力测验'
+        rec['paper_id'] = paper
+        rec['paper_variant'] = cfg['paper_variant']
+        rec['source_edition'] = cfg['source_edition']
+        rec['question_number'] = n
+        rec['section'] = r['section']
+        rec['question_type'] = r['question_type']
+        rec['stem'] = r['stem']
+        rec['options'] = [{'label': o['label'], 'text': o['text'], 'image_refs': o['image_refs']} for o in r['options']]
+        rec['figures'] = r['figure_objs']
+        rec['material'] = mat_objs.get(r['material']) if r['material'] else None
+        rec['answer'] = r['answer']
+        rec['source'] = dict(question_pdf=qpdf_rel, question_pages=r['pages'], answer_pdf=apdf_rel, repository_commit=commit)
+        rec['notes'] = r['notes']
+        records.append(rec)
+
+    # 写文件
+    (OUT / f'{paper}.jsonl').write_text(''.join(json.dumps(r, ensure_ascii=False, separators=(',', ':')) + '\n' for r in records), encoding='utf-8')
+    write_manifest(manifest, paper)
+    write_sources(cfg, commit, paper)
+    (OUT / f'{paper}.md').write_text(render_md(records, cfg, paper, commit), encoding='utf-8')
+    (OUT / 'quality-report.md').write_text(render_report(records, cfg, corr, paper, commit, autofix, fixlog, problems,
+                                                         answer_log, manifest, all_inline, seg, conserve), encoding='utf-8')
+    _PAGE_CACHE.clear()
+    if own_work:
+        shutil.rmtree(work, ignore_errors=True)
+    print(f'已生成 {paper}：{len(records)} 题，题图/材料图 {len(manifest)} 张' + ('' if own_work else f'；渲染缓存 {work}'))
+    if problems:
+        print('需要处理的问题：\n  ' + '\n  '.join(problems))
+    return records
+
+
+CONTACT = re.compile(r'微信|QQ|qq|公众号|电话|WeChat|wx[:：]', re.I)
+PAIRS = {'（': '）', '(': ')', '【': '】', '[': ']'}
+
+
+def redact(s: str) -> str:
+    """编者按语中常带署名、联系方式等推广信息：去掉包含联系方式的最外层括号整段，写入报告前使用。"""
+    while True:
+        m = CONTACT.search(s)
+        if not m:
+            return s
+        stack, start = [], None
+        for i, ch in enumerate(s[:m.start()]):
+            if ch in PAIRS:
+                stack.append(i)
+            elif ch in PAIRS.values() and stack:
+                stack.pop()
+        if not stack:
+            s = s[:m.start()] + s[m.end():]
+            continue
+        start = stack[0]
+        depth, end = 0, len(s) - 1
+        for j in range(start, len(s)):
+            if s[j] in PAIRS:
+                depth += 1
+            elif s[j] in PAIRS.values():
+                depth -= 1
+                if depth == 0:
+                    end = j
+                    break
+        s = s[:start] + s[end + 1:]
+
+
+def write_manifest(entries: list, paper: str) -> None:
+    p = OUT / 'assets-manifest.json'
+    old = json.loads(p.read_text(encoding='utf-8')) if p.exists() else []
+    keep = [e for e in old if e.get('paper_id') != paper]
+    allm = sorted(keep + entries, key=lambda e: e['id'])
+    p.write_text(json.dumps(allm, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+
+
+def write_sources(cfg: dict, commit: str, paper: str) -> None:
+    p = OUT / 'sources.json'
+    data = json.loads(p.read_text(encoding='utf-8')) if p.exists() else {'commit': commit, 'sources': []}
+    data['commit'] = commit
+    remote = ''
+    try:
+        url = git('remote', 'get-url', 'origin')
+        m = re.search(r'github\.com[:/](.+?)(?:\.git)?$', url)
+        remote = m.group(1) if m else ''
+    except subprocess.CalledProcessError:
+        pass
+    srcs = {s['path']: s for s in data['sources']}
+    for rel in [cfg['question_pdf'], cfg.get('answer_pdf')]:
+        if not rel:
+            continue
+        line = git('ls-tree', '-l', commit, '--', rel)
+        if not line:
+            die(f'{rel} 不在提交 {commit} 中')
+        meta, path = line.split('\t', 1)
+        mode, typ, sha, size = meta.split()
+        work_sha = git('hash-object', '--', rel)
+        if work_sha != sha:
+            die(f'{rel} 与提交中的版本不一致')
+        srcs[rel] = dict(path=rel, mode=mode, type=typ, sha=sha, size=int(size),
+                         url=f'https://api.github.com/repos/{remote}/git/blobs/{sha}' if remote else '')
+    data['sources'] = sorted(srcs.values(), key=lambda s: s['path'])
+    p.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+
+
+def blob_url(commit: str, rel: str) -> str:
+    try:
+        url = git('remote', 'get-url', 'origin')
+        m = re.search(r'github\.com[:/](.+?)(?:\.git)?$', url)
+        if m:
+            return f'https://github.com/{m.group(1)}/blob/{commit}/' + urllib.parse.quote(rel)
+    except subprocess.CalledProcessError:
+        pass
+    return '../../../' + urllib.parse.quote(rel)
+
+
+def num_ranges(nums) -> str:
+    """[46,47,48,50] → '46—48、50'"""
+    nums = sorted(nums)
+    out, i = [], 0
+    while i < len(nums):
+        j = i
+        while j + 1 < len(nums) and nums[j + 1] == nums[j] + 1:
+            j += 1
+        out.append(str(nums[i]) if i == j else f'{nums[i]}—{nums[j]}')
+        i = j + 1
+    return '、'.join(out)
+
+
+def pages_cn(pages):
+    return '、'.join(str(p) for p in pages)
+
+
+def answer_md(a: dict) -> str:
+    if a['status'] == 'known':
+        return '**答案：' + ''.join(a['values'][0]) + '**'
+    if a['status'] == 'disputed':
+        return '**答案：争议：' + ' 或 '.join(''.join(v) for v in a['values']) + '（原答案列出，不自行裁定）**'
+    return '**答案：缺失（' + (a['note'] or '答案PDF中未找到') + '）**'
+
+
+def render_md(records, cfg, paper, commit) -> str:
+    qtype_cn = {'single_choice': '单选', 'multiple_choice': '多选', 'true_false': '判断'}
+    out = [f'# {cfg["title"]}', '',
+           f'共 {len(records)} 题，原题号完整保留。内容：题干、选项、答案（不收解析）；资料分析共用材料置于所属题组前，JSONL 每条记录完整内嵌材料。', '',
+           f'[结构化数据]({paper}.jsonl) · [字段说明](schema.json) · [质量报告](quality-report.md)', '',
+           f'原题来源：[{Path(cfg["question_pdf"]).name}]({blob_url(commit, cfg["question_pdf"])})。']
+    if cfg.get('answer_pdf'):
+        out[-1] += f'答案来源：[{Path(cfg["answer_pdf"]).name}]({blob_url(commit, cfg["answer_pdf"])})（只取答案）。'
+    def common(rs):
+        if len(rs) < 2:
+            return []
+        c = [n for n in rs[0]['notes'] if not n.startswith('subtype:')]
+        return [n for n in c if all(n in r['notes'] for r in rs[1:])]
+    by_sec, by_mat = collections.defaultdict(list), collections.defaultdict(list)
+    for r in records:
+        by_sec[r['section']].append(r)
+        if r['material']:
+            by_mat[r['material']['id']].append(r)
+    sec_notes = {k: common(v) for k, v in by_sec.items()}
+    mat_notes = {k: [n for n in common(v) if n not in sec_notes[v[0]['section']]] for k, v in by_mat.items()}
+    section, shown_mat = None, set()
+    for r in records:
+        if r['section'] != section:
+            section = r['section']
+            out += ['', f'## {section}']
+            for n in sec_notes[section]:
+                out += ['', f'> 说明：{n}']
+        m = r['material']
+        if m and m['id'] not in shown_mat:
+            shown_mat.add(m['id'])
+            qn = m['question_numbers']
+            out += ['', f'<a id="{m["id"]}"></a>', '', f'### 共用材料：第 {qn[0]}—{qn[-1]} 题']
+            for b in m['content']:
+                if b['type'] == 'text':
+                    out += ['', b['text']]
+                else:
+                    out += ['', f'![{b["alt"]}]({b["path"]})']
+                    if b['transcription']:
+                        out += ['', b['transcription']]
+            for n in mat_notes[m['id']]:
+                out += ['', f'> 材料说明：{n}']
+        sub = next((n.split(':', 1)[1] for n in r['notes'] if n.startswith('subtype:')), None)
+        meta = f'`{r["id"]}` · {qtype_cn[r["question_type"]]}' + (f' · {sub}' if sub else '') + f' · 原卷第 {pages_cn(r["source"]["question_pages"])} 页'
+        out += ['', f'<a id="{r["id"]}"></a>', '', f'### 第 {r["question_number"]} 题', '', meta]
+        if m:
+            out += ['', f'[共用材料](#{m["id"]})']
+        out += ['', r['stem']]
+        for f in r['figures']:
+            out += ['', f'![{f["alt"]}]({f["path"]})']
+            if f['transcription']:
+                out += ['', f['transcription']]
+        for o in r['options']:
+            if o['text']:
+                txt = o['text']
+            elif o['image_refs']:
+                txt = f'见上方题图中 {o["image_refs"][0]["label_in_image"] or o["label"]} 项。'
+            else:
+                txt = ''
+            out += ['', f'**{o["label"]}.** {txt}']
+        out += ['', answer_md(r['answer'])]
+        if r['answer']['note'] and r['answer']['status'] == 'known':
+            out += ['', f'> 答案说明：{r["answer"]["note"]}']
+        shared = set(sec_notes[r['section']]) | set(mat_notes.get(m['id'], []) if m else [])
+        for n in r['notes']:
+            if not n.startswith('subtype:') and n not in shared:
+                out += ['', f'> 转写说明：{n}']
+    return '\n'.join(out) + '\n'
+
+
+def render_report(records, cfg, corr, paper, commit, autofix, fixlog, problems, answer_log, manifest, all_inline, seg, conserve) -> str:
+    sec_count = collections.Counter(r['section'] for r in records)
+    sub_count = collections.Counter(n.split(':', 1)[1] for r in records for n in r['notes'] if n.startswith('subtype:'))
+    sub_ranges = collections.defaultdict(list)
+    for r in records:
+        for n in r['notes']:
+            if n.startswith('subtype:'):
+                sub_ranges[n.split(':', 1)[1]].append(r['question_number'])
+    status = collections.Counter(r['answer']['status'] for r in records)
+    mats = {r['material']['id']: r['material'] for r in records if r['material']}
+    srcs = json.loads((OUT / 'sources.json').read_text(encoding='utf-8'))['sources']
+    sha = {s['path']: s['sha'] for s in srcs}
+    order = []
+    for r in records:
+        if r['section'] not in order:
+            order.append(r['section'])
+    L = [f'# {paper} 转换与校验记录', '',
+         f'范围：{cfg["title"]}，共 {len(records)} 题。来源为仓库内题本与答案解析各 1 份 PDF，均未修改；'
+         f'提取基于提交 `{commit}`。', '',
+         '| 文件 | Git blob | 用途 |', '| --- | --- | --- |',
+         f'| `{cfg["question_pdf"]}` | `{sha.get(cfg["question_pdf"], "")}` | 题干、选项、材料、题图（有文字层） |']
+    if cfg.get('answer_pdf'):
+        L.append(f'| `{cfg["answer_pdf"]}` | `{sha.get(cfg["answer_pdf"], "")}` | 只取答案，不收解析 |')
+    L += ['', '## 完整性', '', '| 部分 | 题号 | 题数 |', '| --- | --- | ---: |']
+    for s in order:
+        nums = [r['question_number'] for r in records if r['section'] == s]
+        L.append(f'| {s} | {nums[0]}—{nums[-1]} | {len(nums)} |')
+    L += [f'| 合计 | | {len(records)} |', '']
+    if sub_count:
+        L += ['判断推理小类（记在 notes，如 `subtype:类比推理`）：' +
+              '，'.join(f'{k} {sub_count[k]} 题（第{num_ranges(sub_ranges[k])}题）' for k in SUBTYPES if sub_count[k]) + '。', '']
+    nfig_q = sum(len(r['figures']) for r in records)
+    qtypes = collections.Counter(r['question_type'] for r in records)
+    qtype_cn = {'single_choice': '单选', 'multiple_choice': '多选', 'true_false': '判断'}
+    nmat_img = len({b['image_id'] for m in mats.values() for b in m['content'] if b['type'] == 'image'})
+    L += [f'- 资料分析共用材料 {len(mats)} 组，关联 {sum(len(m["question_numbers"]) for m in mats.values())} 题；每题 JSONL 内嵌完整材料。',
+          f'- 图片 {len(manifest)} 张：题图 {nfig_q} 张、材料图 {nmat_img} 张，全部为 288 DPI 页面渲染后的裁剪（`pdf_render_crop`），无重绘。',
+          f'- 行内小图 {len(all_inline)} 个（分数、根号、化学方程式）已转成文字，不另存图片：' + '、'.join(f'`{k}`' for k in all_inline) + '。',
+          f'- 文字守恒检查：每题“题干+选项”与该题在原 PDF 文字层中的字符逐一相符（不计空白、题号与选项字母，行内小图按转写计）'
+          + ('，' + str(len(records)) + ' 题全部通过' if not conserve else f'；人工修正造成差异的题：{[c[0] for c in conserve]}') + '；3 组材料正文同样相符。' if mats else '。',
+          '- 题型按答案判定（单选一个字母、多选多个字母）：' + '，'.join(f'{qtype_cn[k]} {v} 题' for k, v in qtypes.items()) + '。', '']
+    custom = corr.get('report', {})
+    L += ['## 答案', '', '| 状态 | 数量 |', '| --- | ---: |']
+    for k, cn in [('known', '明确答案'), ('disputed', '争议答案'), ('missing', '答案缺失')]:
+        L.append(f'| {cn}（`{k}`） | {status.get(k, 0)} |')
+    stats = answer_log['stats']
+    scanned = [p for p, n in stats if n < 30]
+    texty = [p for p, n in stats if 0 < n < 30]
+    tq, mq = set(answer_log['text']), set(answer_log['manual'])
+    both = sorted(tq & mq)
+    L += ['', f'答案PDF共 {len(stats)} 页，其中 {len(scanned)} 页为扫描图片、没有可用的正文文字层'
+              + (f'（第{"、".join(map(str, texty))}页另有后加的少量文字）' if texty else '') + '。'
+              + (f'文字层直接取到 {len(tq)} 题（' + '、'.join(f'{k}{v["value"]}' for k, v in sorted(answer_log['text'].items())) + '）；' if tq else '文字层没有取到答案；')
+              + (f'扫描图人工读取 {len(mq)} 题（第{num_ranges(sorted(mq))}题，记录在 `tools/corrections.json` 的 `answers.by_page`）。' if mq else '')
+              + (f'两处都有的第{num_ranges(both)}题逐一比对' + ('，结果一致。' if not answer_log['conflicts'] else f'，不一致：{answer_log["conflicts"]}。') if both else '')]
+    if answer_log['missing']:
+        L.append(f'缺失答案：{answer_log["missing"]}。')
+    for item in custom.get('answers', []):
+        L += ['', f'- {item}']
+    L += ['', '## 源文件问题与处理', '']
+    for item in custom.get('source_issues', []):
+        L.append(f'- {item}')
+    for item in autofix:
+        L.append(f'- 自动处理：{item}')
+    for item in fixlog:
+        L.append(f'- 人工修正：{item}')
+    L += ['', '## 转写拿不准、需要留意的地方', '']
+    for item in custom.get('uncertain', []):
+        L.append(f'- {item}')
+    L += ['', '## 题图与材料图', '',
+          '裁剪框取原 PDF 中图片对象的外框，收紧到有墨迹处并留 1.5pt 白边，再检查框内不含任何文字层字符'
+          '（题干、选项文字不入图；画在图中的选项字母 A—D 属于图片本身，随图保留）。`assets-manifest.json` 记录来源页、'
+          '裁剪框（PDF pt，左上角为原点）、像素尺寸与 SHA-256；像素尺寸 = 裁剪框 × 4（288 DPI），可按 pt 尺寸原大印刷。', '',
+          '| 图片 | 题号 | 页 | 裁剪框（pt） | 像素 | 文字转写 |', '| --- | --- | ---: | --- | --- | --- |']
+    usage = collections.defaultdict(list)
+    for r in records:
+        for f in r['figures']:
+            usage[f['image_id']].append(str(r['question_number']))
+    for m in mats.values():
+        for b in m['content']:
+            if b['type'] == 'image':
+                usage[b['image_id']] = [f'{m["question_numbers"][0]}—{m["question_numbers"][-1]}（材料）']
+    for e in manifest:
+        bb = ', '.join(f'{v:g}' for v in e['source_bbox_points'])
+        L.append(f'| `{e["id"]}` | {"、".join(usage[e["id"]])} | {e["source_page"]} | {bb} | {e["width"]}×{e["height"]} | {"有" if e["transcription"] else "—"} |')
+    L += ['', f'脚本检查：{len(manifest)} 张图的裁剪框内均没有文字层字符。' if not problems
+          else '脚本检查发现问题：' + '；'.join(problems)]
+    L += ['', '## 复核方法', '']
+    for item in custom.get('review', []):
+        L.append(f'- {item}')
+    L += ['', '## 重跑', '', '```bash',
+          f'python3 tools/extract.py build {paper}     # 读取 tools/papers.json 与 tools/corrections.json，重新生成全部文件',
+          f'python3 tools/extract.py verify {paper}    # 校验 schema、题号、答案、材料、图片哈希与 Markdown 链接',
+          '```', '']
+    return '\n'.join(L)
+
+
+# ---------------------------------------------------------------------------
+# verify
+# ---------------------------------------------------------------------------
+def cmd_verify(papers: list[str]) -> None:
+    schema = json.loads((OUT / 'schema.json').read_text(encoding='utf-8'))
+    try:
+        import jsonschema
+        validator = jsonschema.Draft202012Validator(schema)
+    except ImportError:
+        validator = None
+        print('提示：未安装 jsonschema，跳过 schema 校验')
+    manifest = {a['id']: a for a in json.loads((OUT / 'assets-manifest.json').read_text(encoding='utf-8'))}
+    cfgs = json.loads((TOOLS / 'papers.json').read_text(encoding='utf-8'))
+    papers = papers or [k for k in cfgs if not k.startswith('_') and (OUT / f'{k}.jsonl').exists()]
+    used = set()
+    summary = {}
+    for paper in papers:
+        cfg = cfgs[paper]
+        rs = [json.loads(s) for s in (OUT / f'{paper}.jsonl').read_text(encoding='utf-8').splitlines() if s.strip()]
+        md = (OUT / f'{paper}.md').read_text(encoding='utf-8')
+        nums = [k for k in range(1, cfg['expected_questions'] + 1) if k not in set(cfg.get('missing_questions', []))]
+        assert [r['question_number'] for r in rs] == nums, '题号与 papers.json 不符'
+        assert len(re.findall(r'^### 第 \d+ 题$', md, re.M)) == len(nums), 'Markdown 题数不符'
+        mats = {}
+        for r in rs:
+            if validator:
+                errs = sorted(validator.iter_errors(r), key=lambda e: e.path)
+                assert not errs, f'{r["id"]}: {errs[0].message}'
+            assert r['id'] == f'{paper}-Q{r["question_number"]:03d}' and r['paper_id'] == paper and r['year'] == cfg['year']
+            assert r['stem'] and '⟦' not in json.dumps(r, ensure_ascii=False) and '�' not in json.dumps(r, ensure_ascii=False)
+            for para in r['stem'].split('\n'):
+                assert para in md, f'{r["id"]} 题干未出现在 Markdown'
+            a = r['answer']
+            assert len(a['values']) == {'known': 1, 'disputed': 2, 'missing': 0}[a['status']] or (a['status'] == 'disputed' and len(a['values']) > 1)
+            assert [o['label'] for o in r['options']] == list('ABCD')
+            for o in r['options']:
+                assert o['text'] or o['image_refs'], f'{r["id"]} {o["label"]} 项为空'
+                for ref in o['image_refs']:
+                    assert ref['image_id'] in {f['image_id'] for f in r['figures']}
+            for v in a['values']:
+                assert (len(v) > 1) == (r['question_type'] == 'multiple_choice')
+            if r['section'] == '判断推理':
+                assert sum(x.startswith('subtype:') for x in r['notes']) == 1, f'{r["id"]} 缺小类'
+            imgs = list(r['figures'])
+            if r['section'] == '资料分析':
+                assert r['material'] and r['question_number'] in r['material']['question_numbers']
+            if r['material']:
+                mid = r['material']['id']
+                assert mats.setdefault(mid, r['material']) == r['material'], f'{mid} 各题内嵌内容不一致'
+                imgs += [b for b in r['material']['content'] if b['type'] == 'image']
+            for im in imgs:
+                e = manifest[im['image_id']]
+                assert im['path'] == e['path'] and im['transcription'] == e['transcription'] and im['path'] in md
+                used.add(im['image_id'])
+        for target in re.findall(r'\]\(([^)]+)\)', md):
+            if not target.startswith(('http', '#')):
+                assert (OUT / urllib.parse.unquote(target)).exists(), target
+        summary[paper] = dict(questions=len(rs), materials=len(mats),
+                              answers=dict(collections.Counter(r['answer']['status'] for r in rs)))
+    for aid, e in manifest.items():
+        if e['paper_id'] not in papers:
+            continue
+        raw = (OUT / e['path']).read_bytes()
+        assert raw[:8] == b'\x89PNG\r\n\x1a\n' and hashlib.sha256(raw).hexdigest() == e['sha256'], aid
+        assert png_size(raw) == (e['width'], e['height']), aid
+        bb = e['source_bbox_points']
+        assert abs((bb[2] - bb[0]) * SCALE - e['width']) <= 1 and abs((bb[3] - bb[1]) * SCALE - e['height']) <= 1, f'{aid} 像素与裁剪框不符'
+        assert aid in used, f'{aid} 未被任何题目引用'
+    on_disk = {str(f.relative_to(OUT)) for p in papers for f in (OUT / 'assets' / p).glob('*.png')}
+    assert on_disk == {e['path'] for e in manifest.values() if e['paper_id'] in papers}, '图片目录与 manifest 不一致'
+    print(json.dumps({'status': 'PASS', 'papers': summary, 'images': len([e for e in manifest.values() if e['paper_id'] in papers])}, ensure_ascii=False))
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    sub = ap.add_subparsers(dest='cmd', required=True)
+    d = sub.add_parser('dump')
+    d.add_argument('paper')
+    d.add_argument('--with-inline', action='store_true', help='套用 corrections.json 中的行内小图文字')
+    s = sub.add_parser('answer-sheet')
+    s.add_argument('paper')
+    s.add_argument('--work', type=Path, default=None)
+    b = sub.add_parser('build')
+    b.add_argument('paper')
+    b.add_argument('--work', type=Path, default=None, help='页面渲染缓存目录（默认临时目录）')
+    v = sub.add_parser('verify')
+    v.add_argument('papers', nargs='*')
+    a = ap.parse_args()
+    if a.cmd == 'dump':
+        cmd_dump(a.paper, raw=not a.with_inline)
+    elif a.cmd == 'answer-sheet':
+        cmd_answer_sheet(a.paper, a.work or Path(tempfile.mkdtemp(prefix=f'{a.paper}-answers-')))
+    elif a.cmd == 'build':
+        build(a.paper, a.work)
+        cmd_verify([a.paper])
+    elif a.cmd == 'verify':
+        cmd_verify(a.papers)
+
+
+if __name__ == '__main__':
+    main()
