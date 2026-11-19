@@ -541,6 +541,10 @@ def build(paper, dry=False):
             elif sid in GD_Q:
                 d, g = GD_Q[sid]
                 rec["stem"], rec["options"] = gd_blocks(d, g)
+                fill = (plan.get("stem_fill") or {}).get(sid)
+                if fill:   # 原卷只在部分说明里写答题要求、题目本身没印题干（题库记“（见题图）”）时，补上通行的题干
+                    rec["stem"] = [{"type": "text", "text": fill}] + [b for b in rec["stem"] if b["type"] != "text"]
+                    log.add(n, "补题干", f"原卷本题没印题干，补“{fill}”")
                 if g.get("material"):
                     m = g["material"]
                     if m["id"] not in mat_ids:
