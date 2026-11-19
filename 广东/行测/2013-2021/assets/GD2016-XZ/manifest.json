@@ -1,0 +1,461 @@
+[
+  {
+    "id": "GD2016-XZ-p02-i01",
+    "path": "assets/GD2016-XZ/GD2016-XZ-p02-i01.png",
+    "paper_id": "GD2016-XZ",
+    "source_page": 2,
+    "source_bbox_points": [
+      212.25,
+      638.25,
+      400.5,
+      705.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 753,
+    "height": 270,
+    "sha256": "0f474c245f0bcb8c496b273dbac3be4be4884ae4898d0204200fa74e52f3a540",
+    "transcription": "题图数字表格（按原图行列）\n\n| 第1列 | 第2列 | 第3列 |\n| --- | --- | --- |\n| 9 | 47 | 17 |\n| 15 | （  ） | 6.5 |\n| 4 | -36 | 26 |"
+  },
+  {
+    "id": "GD2016-XZ-p03-i01",
+    "path": "assets/GD2016-XZ/GD2016-XZ-p03-i01.png",
+    "paper_id": "GD2016-XZ",
+    "source_page": 3,
+    "source_bbox_points": [
+      104.0,
+      596.75,
+      415.0,
+      756.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1244,
+    "height": 638,
+    "sha256": "f4ea836585c3d577414baa563971efdb7ef9a9c3dd138b6bfd1393752384eb40",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XZ-p04-i01",
+    "path": "assets/GD2016-XZ/GD2016-XZ-p04-i01.png",
+    "paper_id": "GD2016-XZ",
+    "source_page": 4,
+    "source_bbox_points": [
+      104.5,
+      44.5,
+      357.25,
+      174.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1011,
+    "height": 519,
+    "sha256": "03b15e9cbdf0b86c9d051a9770f6bdd9f751dc54005226990e234a15f3f64adc",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XZ-p04-i02",
+    "path": "assets/GD2016-XZ/GD2016-XZ-p04-i02.png",
+    "paper_id": "GD2016-XZ",
+    "source_page": 4,
+    "source_bbox_points": [
+      104.0,
+      178.75,
+      357.0,
+      308.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1012,
+    "height": 520,
+    "sha256": "f3e18195b82ea7e3401ec13c56919ec200e5d6514d151d6fdd75871923c43434",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XZ-p04-i03",
+    "path": "assets/GD2016-XZ/GD2016-XZ-p04-i03.png",
+    "paper_id": "GD2016-XZ",
+    "source_page": 4,
+    "source_bbox_points": [
+      104.25,
+      314.75,
+      358.5,
+      445.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1017,
+    "height": 522,
+    "sha256": "9d5cb6dee0309f7e4d50ef6c467a88690493f3fb14f228268849fffad84b132e",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XZ-p04-i04",
+    "path": "assets/GD2016-XZ/GD2016-XZ-p04-i04.png",
+    "paper_id": "GD2016-XZ",
+    "source_page": 4,
+    "source_bbox_points": [
+      104.75,
+      450.25,
+      357.75,
+      605.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1012,
+    "height": 620,
+    "sha256": "1b06a4b3d7de33a54fb9669b360e7716d264d514c7bbf41a5111d37a166bf3fd",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XZ-p04-i05",
+    "path": "assets/GD2016-XZ/GD2016-XZ-p04-i05.png",
+    "paper_id": "GD2016-XZ",
+    "source_page": 4,
+    "source_bbox_points": [
+      104.5,
+      610.25,
+      383.75,
+      781.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1117,
+    "height": 683,
+    "sha256": "c01dd5b96eb4f4f5c8bbf228af9dd9067857e54c51925b3bb2cb4f7ad954bbb0",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XZ-p05-i01",
+    "path": "assets/GD2016-XZ/GD2016-XZ-p05-i01.png",
+    "paper_id": "GD2016-XZ",
+    "source_page": 5,
+    "source_bbox_points": [
+      104.0,
+      43.75,
+      368.5,
+      205.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1058,
+    "height": 648,
+    "sha256": "64f6194d9f7b79ed92a27df24c7ba9622b705a0ff532427ff88c8d9845139759",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XZ-p05-i02",
+    "path": "assets/GD2016-XZ/GD2016-XZ-p05-i02.png",
+    "paper_id": "GD2016-XZ",
+    "source_page": 5,
+    "source_bbox_points": [
+      104.75,
+      211.75,
+      414.25,
+      344.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1238,
+    "height": 529,
+    "sha256": "1d22d2d4bdb41153e890662d3c6c93166530ea02732bfced93f8f29c9aecea2b",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XZ-p05-i03",
+    "path": "assets/GD2016-XZ/GD2016-XZ-p05-i03.png",
+    "paper_id": "GD2016-XZ",
+    "source_page": 5,
+    "source_bbox_points": [
+      104.75,
+      349.75,
+      414.25,
+      482.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1238,
+    "height": 529,
+    "sha256": "ae01cdfdeaf64d81aab0c8e4021638fb3a9a26ee7ffba18521ea9043bb227864",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XZ-p05-i04",
+    "path": "assets/GD2016-XZ/GD2016-XZ-p05-i04.png",
+    "paper_id": "GD2016-XZ",
+    "source_page": 5,
+    "source_bbox_points": [
+      104.25,
+      489.0,
+      414.5,
+      678.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1241,
+    "height": 758,
+    "sha256": "e3f99a260b2f70b6dcdff490a53e84dec5dcc527c13f946c6c0a15ff117dea89",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XZ-p08-i01",
+    "path": "assets/GD2016-XZ/GD2016-XZ-p08-i01.png",
+    "paper_id": "GD2016-XZ",
+    "source_page": 8,
+    "source_bbox_points": [
+      239.75,
+      123.0,
+      375.5,
+      233.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 543,
+    "height": 441,
+    "sha256": "b13bae230347080a20621601ae197c6774617a2afba2b0fa0dac372f47c9e480",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XZ-p08-i02",
+    "path": "assets/GD2016-XZ/GD2016-XZ-p08-i02.png",
+    "paper_id": "GD2016-XZ",
+    "source_page": 8,
+    "source_bbox_points": [
+      231.25,
+      291.0,
+      386.0,
+      382.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 619,
+    "height": 367,
+    "sha256": "97a87d4fd8ddd3c3a3a24a3747d8d32a5ac4e62d8a0c56c0e63d5f57d0774e4b",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XZ-p08-i03",
+    "path": "assets/GD2016-XZ/GD2016-XZ-p08-i03.png",
+    "paper_id": "GD2016-XZ",
+    "source_page": 8,
+    "source_bbox_points": [
+      277.5,
+      472.0,
+      339.0,
+      551.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 246,
+    "height": 318,
+    "sha256": "65071447237a6a67acda4ab004450a8379b941eec851719235fde9070ddfca81",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XZ-p08-i04",
+    "path": "assets/GD2016-XZ/GD2016-XZ-p08-i04.png",
+    "paper_id": "GD2016-XZ",
+    "source_page": 8,
+    "source_bbox_points": [
+      335.25,
+      620.5,
+      418.75,
+      675.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 334,
+    "height": 218,
+    "sha256": "84249b96c6ba6b05b7e14e9a66b29b9c1c5531b9b97dece2a8b1da507f768c1b",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XZ-p08-i05",
+    "path": "assets/GD2016-XZ/GD2016-XZ-p08-i05.png",
+    "paper_id": "GD2016-XZ",
+    "source_page": 8,
+    "source_bbox_points": [
+      212.75,
+      620.25,
+      297.25,
+      675.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 338,
+    "height": 222,
+    "sha256": "ffa2a69570c461ef82206b20f54af12ebd8c39eeb548e434b26e47e6cd4a7cd6",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XZ-p08-i06",
+    "path": "assets/GD2016-XZ/GD2016-XZ-p08-i06.png",
+    "paper_id": "GD2016-XZ",
+    "source_page": 8,
+    "source_bbox_points": [
+      214.0,
+      685.0,
+      297.0,
+      739.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 332,
+    "height": 217,
+    "sha256": "a97cf5416cb5190cd0d97b04f2f55aee627924e682fa0cf1928f2c48adaf4917",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XZ-p08-i07",
+    "path": "assets/GD2016-XZ/GD2016-XZ-p08-i07.png",
+    "paper_id": "GD2016-XZ",
+    "source_page": 8,
+    "source_bbox_points": [
+      336.0,
+      690.0,
+      417.25,
+      738.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 325,
+    "height": 194,
+    "sha256": "80c2da410821bdf9c7d0519b517e38992be3f82c9343b2d89dea76ff8ef735c6",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XZ-p09-i01",
+    "path": "assets/GD2016-XZ/GD2016-XZ-p09-i01.png",
+    "paper_id": "GD2016-XZ",
+    "source_page": 9,
+    "source_bbox_points": [
+      208.25,
+      47.75,
+      408.25,
+      195.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 800,
+    "height": 590,
+    "sha256": "622a6a2dde6b0d07a61c1e5c47771fba837b460717f50e8154f0cc0cca875cf3",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XZ-p09-i02",
+    "path": "assets/GD2016-XZ/GD2016-XZ-p09-i02.png",
+    "paper_id": "GD2016-XZ",
+    "source_page": 9,
+    "source_bbox_points": [
+      223.25,
+      344.25,
+      391.25,
+      459.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 672,
+    "height": 459,
+    "sha256": "e96a7bb0f98c4cc942a897373f34cf51f4016b0703512cb9fa522f262218b00a",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XZ-p09-i03",
+    "path": "assets/GD2016-XZ/GD2016-XZ-p09-i03.png",
+    "paper_id": "GD2016-XZ",
+    "source_page": 9,
+    "source_bbox_points": [
+      208.25,
+      516.0,
+      406.5,
+      684.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 793,
+    "height": 673,
+    "sha256": "d9d22747ccb26dd5cf839c8bd2c76dabd5c1f9e16acc78fc85f2120ae02030ff",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XZ-p10-i01",
+    "path": "assets/GD2016-XZ/GD2016-XZ-p10-i01.png",
+    "paper_id": "GD2016-XZ",
+    "source_page": 10,
+    "source_bbox_points": [
+      204.5,
+      52.0,
+      413.0,
+      166.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 834,
+    "height": 456,
+    "sha256": "36a7986ab476cc49539578f7dfac26d16910da4cbf7c408eaf91edee57beec0f",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XZ-p10-i02",
+    "path": "assets/GD2016-XZ/GD2016-XZ-p10-i02.png",
+    "paper_id": "GD2016-XZ",
+    "source_page": 10,
+    "source_bbox_points": [
+      267.0,
+      242.75,
+      350.25,
+      369.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 333,
+    "height": 507,
+    "sha256": "db7b52aad101525fde3fc24b907a1832503c972b7ea2fd54cd8e476f6aa9a3e9",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XZ-p10-i03",
+    "path": "assets/GD2016-XZ/GD2016-XZ-p10-i03.png",
+    "paper_id": "GD2016-XZ",
+    "source_page": 10,
+    "source_bbox_points": [
+      85.0,
+      438.0,
+      478.5,
+      598.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1574,
+    "height": 640,
+    "sha256": "548fb860e91bcde3d983f8be97c3745c6cdb03f3fac5670412a6481654b271df",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XZ-p13-i01",
+    "path": "assets/GD2016-XZ/GD2016-XZ-p13-i01.png",
+    "paper_id": "GD2016-XZ",
+    "source_page": 13,
+    "source_bbox_points": [
+      106.25,
+      52.5,
+      509.75,
+      204.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1614,
+    "height": 608,
+    "sha256": "f058f20bf138d64932412435c7df4513882386fe987ec9d203c573fb0b805953",
+    "transcription": "2010-2014年我国新型农村合作医疗情况\n\n| 指标 | 2014年 | 2013年 | 2012年 | 2011年 | 2010年 |\n| --- | --- | --- | --- | --- | --- |\n| 县级区划数（个） | 2854 | 2853 | 2852 | 2853 | 2856 |\n| 开展新型农村合作医疗县（市、区）数（个） | 2349 | 2489 | 2566 | 2637 | 2678 |\n| 参加新型农村合作医疗人数（亿人） | 7.36 | 8.02 | 8.05 | 8.32 | 8.36 |\n| 新型农村合作医疗参与率（%） | 98.9 | 99.0 | 98.3 | 97.5 | 96.0 |\n| 新型农村合作医疗人均筹资（元） | 410.89 | 370.59 | 308.50 | 246.21 | 156.60 |\n| 新型农村合作医疗基金支出（亿元） | 2890.40 | 2908.00 | 2408.00 | 1710.19 | 1187.80 |\n| 新型农村合作医疗受益人次（亿人次） | 16.52 | 19.42 | 17.45 | 13.15 | 10.87 |\n\n原表年份自左至右为2014年至2010年（倒序），照录。"
+  },
+  {
+    "id": "GD2016-XZ-p13-i02",
+    "path": "assets/GD2016-XZ/GD2016-XZ-p13-i02.png",
+    "paper_id": "GD2016-XZ",
+    "source_page": 13,
+    "source_bbox_points": [
+      116.25,
+      474.25,
+      497.5,
+      688.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1525,
+    "height": 858,
+    "sha256": "2fdc21ad3cddb902ce7e45166821a44991799fe3f3d095a0d735236b79c8be24",
+    "transcription": "人口及其自然增长率变化趋势\n\n| 年份 | 总人口（万人） | 自然增长率（‰） |\n| --- | --- | --- |\n| 2006年 | 131448 | 5.3 |\n| 2007年 | 132129 | 5.2 |\n| 2008年 | 132802 | 5.1 |\n| 2009年 | 133450 | 4.9 |\n| 2010年 | 134091 | 4.8 |\n| 2011年 | 134735 | 4.8 |\n\n柱为总人口（右轴，129000—135000），折线为自然增长率（左轴，4.5—5.4）。"
+  },
+  {
+    "id": "GD2016-XZ-p14-i01",
+    "path": "assets/GD2016-XZ/GD2016-XZ-p14-i01.png",
+    "paper_id": "GD2016-XZ",
+    "source_page": 14,
+    "source_bbox_points": [
+      113.5,
+      51.5,
+      499.0,
+      285.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1542,
+    "height": 935,
+    "sha256": "8fa6b77cb13297c72cc79a8e376679d24ea6bfb7e6e6f4d5c1de148d88a71713",
+    "transcription": "各年龄段人口比重变化情况\n\n| 年份 | 0-14岁比重 | 15-64岁比重 | 65岁及以上 |\n| --- | --- | --- | --- |\n| 2006年 | 7.9 | 72.3 | 19.8 |\n| 2007年 | 8.1 | 72.5 | 19.4 |\n| 2008年 | 8.3 | 72.7 | 19 |\n| 2009年 | 8.5 | 73 | 18.5 |\n| 2010年 | 8.9 | 74.5 | 16.6 |\n| 2011年 | 9.1 | 74.4 | 16.5 |\n\n数值单位为%（纵轴0%—100%）。按图例读取：柱子底段（横线纹）为“0-14岁比重”，中段（斜线纹）为“15-64岁比重”，顶段（竖线纹）为“65岁及以上”。2008年顶段原图标“19”、2009年中段标“73”，照录。"
+  }
+]

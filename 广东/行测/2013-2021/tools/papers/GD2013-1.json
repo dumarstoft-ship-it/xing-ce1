@@ -1,0 +1,10 @@
+{
+  "year": 2013,
+  "title": "2013年广东行测（一卷）",
+  "paper_variant": "一卷",
+  "source_edition": "仓库原卷",
+  "question_pdf": "真题/2013年广东公务员考试《行测》一卷.pdf",
+  "answer_pdf": "答案解析/2013年广东公务员考试《行测》一卷答案及解析.pdf",
+  "expected_questions": 100,
+  "source_commit": "52f9811b22cad5410a7108dd0a07a879f1187aa5"
+}

@@ -1,0 +1,22 @@
+{
+  "paper_id": "GD2016-XZ",
+  "commit": "52f9811b22cad5410a7108dd0a07a879f1187aa5",
+  "sources": [
+    {
+      "path": "真题/2016年广东公务员考试《行测》真题（乡镇卷）.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ccf4621e75e32b05de91e69228e7483658ed4f4",
+      "size": 931124,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/4ccf4621e75e32b05de91e69228e7483658ed4f4"
+    },
+    {
+      "path": "答案解析/2016年广东公务员考试《行测》真题（乡镇卷）答案及解析.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3fc2a629c1fb17e118ca4820b25e14ff16649a6b",
+      "size": 792525,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/3fc2a629c1fb17e118ca4820b25e14ff16649a6b"
+    }
+  ]
+}

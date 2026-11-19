@@ -1,0 +1,10 @@
+{
+  "year": 2014,
+  "title": "2014年广东行测（乡镇卷）",
+  "paper_variant": "乡镇卷",
+  "source_edition": "仓库原卷",
+  "question_pdf": "真题/2014年广东省公务员录用考试《行测》题（乡镇）.pdf",
+  "answer_pdf": "答案解析/2014年广东省公务员录用考试《行测》题（乡镇）答案及解析.pdf",
+  "expected_questions": 100,
+  "source_commit": "52f9811b22cad5410a7108dd0a07a879f1187aa5"
+}

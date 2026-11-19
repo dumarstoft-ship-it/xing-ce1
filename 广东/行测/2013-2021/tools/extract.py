@@ -35,7 +35,8 @@
   figures          {"p06-i02": {bbox: [x0, top, x1, bottom]（pt）, reason, role, alt, transcription}}
   figure_questions {"p05-i03": 35} 把题图归入指定题号（图片对象连同白边越过下一题题号行等，自动归属错时用）；
                    归走后空出的“材料”并入前一组
-  option_splits    [{q, label: "D", reason}] 在上一选项文字中按“ D、”拆出该项（自动补拆拆不出时才用）
+  option_splits    [{q, label: "D", reason}] 在上一选项文字中按“ D、”拆出该项（自动补拆拆不出时才用）；
+                   原卷标记不规范时加 at: "B、C、"，按这段原样文字拆分并整体删去
   option_figures   {"89": {"A": "p13-i02", "B": …}} 每个选项一张图：这些图在 figures 中设 role: "option"，
                    输出 option_label，选项 image_refs 指向各自的图（label_in_image 为 null）
   subtypes         {"52": "图形推理"} 判断推理小类覆盖。自动分类：有题图→图形推理；题干与各选项均为
@@ -637,13 +638,20 @@ def apply_option_fixes(r: dict, corr: dict, autofix: list) -> None:
             die(f'option_splits：第{n}题最后一个选项不是{chr(ord(L) - 1)}项'
                 + ('（自动补拆可能已拆出该项，请删去这一条）' if r['options'] and r['options'][-1]['label'] == L else ''))
         o = r['options'][-1]
-        ms = list(re.finditer(rf'\s({L})\s*[、.．]', o['text']))
-        if len(ms) != 1:
-            die(f'option_splits：第{n}题{o["label"]}项中“ {L}、”出现 {len(ms)} 次（应为 1 次）')
-        m = ms[0]
-        r['options'].append({'label': L, 'text': o['text'][m.end():].strip()})
-        o['text'] = o['text'][:m.start()].strip()
-        r['labels_raw'].append(m.group(0).strip())
+        if 'at' in sp:          # 原卷选项标记印得不规范（如多印一个字母“B、C、”）：按给出的原样标记拆分，标记整体删去
+            k = o['text'].count(sp['at'])
+            if k != 1:
+                die(f'option_splits：第{n}题{o["label"]}项中“{sp["at"]}”出现 {k} 次（应为 1 次）')
+            i = o['text'].index(sp['at'])
+            start, end, marker = i, i + len(sp['at']), sp['at']
+        else:
+            ms = list(re.finditer(rf'\s({L})\s*[、.．]', o['text']))
+            if len(ms) != 1:
+                die(f'option_splits：第{n}题{o["label"]}项中“ {L}、”出现 {len(ms)} 次（应为 1 次）')
+            start, end, marker = ms[0].start(), ms[0].end(), ms[0].group(0)
+        r['options'].append({'label': L, 'text': o['text'][end:].strip()})
+        o['text'] = o['text'][:start].strip()
+        r['labels_raw'].append(marker.strip())
         autofix.append(f'第{n}题：{sp["reason"]}')
     if str(n) in corr.get('option_figures', {}):
         if any(o['text'] for o in r['options']):
