@@ -1,0 +1,206 @@
+[
+  {
+    "id": "GD2013-1-p11-i01",
+    "path": "assets/GD2013-1/GD2013-1-p11-i01.png",
+    "paper_id": "GD2013-1",
+    "source_page": 11,
+    "source_bbox_points": [
+      42.5,
+      72.25,
+      563.0,
+      337.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 2082,
+    "height": 1059,
+    "sha256": "b555c1ba11dde1a67e8a4c6fab5543ea2d0ff10bbaf37eda271a8103792939a7",
+    "transcription": ""
+  },
+  {
+    "id": "GD2013-1-p11-i02",
+    "path": "assets/GD2013-1/GD2013-1-p11-i02.png",
+    "paper_id": "GD2013-1",
+    "source_page": 11,
+    "source_bbox_points": [
+      45.5,
+      435.75,
+      566.0,
+      700.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 2082,
+    "height": 1059,
+    "sha256": "746d85018e9ed4b779eed7b971d17936bded7b5bb8733b436dbc945806029292",
+    "transcription": ""
+  },
+  {
+    "id": "GD2013-1-p12-i01",
+    "path": "assets/GD2013-1/GD2013-1-p12-i01.png",
+    "paper_id": "GD2013-1",
+    "source_page": 12,
+    "source_bbox_points": [
+      48.5,
+      69.5,
+      563.0,
+      287.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 2058,
+    "height": 873,
+    "sha256": "cbefe7525a73c78e6fea76f2b89218db1b706e1b380e5d9532fd4632968c0dfb",
+    "transcription": ""
+  },
+  {
+    "id": "GD2013-1-p12-i02",
+    "path": "assets/GD2013-1/GD2013-1-p12-i02.png",
+    "paper_id": "GD2013-1",
+    "source_page": 12,
+    "source_bbox_points": [
+      47.75,
+      389.5,
+      560.0,
+      607.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 2049,
+    "height": 870,
+    "sha256": "d8f9ef4a72599f7aecedf12226cb6907d10483f13a9f32f39eafddb29dcaf9c6",
+    "transcription": ""
+  },
+  {
+    "id": "GD2013-1-p13-i01",
+    "path": "assets/GD2013-1/GD2013-1-p13-i01.png",
+    "paper_id": "GD2013-1",
+    "source_page": 13,
+    "source_bbox_points": [
+      44.75,
+      72.75,
+      563.25,
+      337.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 2074,
+    "height": 1059,
+    "sha256": "de56b889f20c56e0186c0edf37668b3c25b904f2fac608c9d51fbbfd86501501",
+    "transcription": ""
+  },
+  {
+    "id": "GD2013-1-p13-i02",
+    "path": "assets/GD2013-1/GD2013-1-p13-i02.png",
+    "paper_id": "GD2013-1",
+    "source_page": 13,
+    "source_bbox_points": [
+      45.5,
+      444.25,
+      562.25,
+      708.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 2067,
+    "height": 1055,
+    "sha256": "43a53cc061872e7f56fcde831eccfe4f02bc3796bc9f9bf68ce5a76b51560a60",
+    "transcription": ""
+  },
+  {
+    "id": "GD2013-1-p14-i01",
+    "path": "assets/GD2013-1/GD2013-1-p14-i01.png",
+    "paper_id": "GD2013-1",
+    "source_page": 14,
+    "source_bbox_points": [
+      45.5,
+      70.75,
+      560.75,
+      304.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 2061,
+    "height": 936,
+    "sha256": "32f0569973553e4f66a6e21a7544a38a217cdf20c66e3dbfe82d3ec6f2a9aaae",
+    "transcription": ""
+  },
+  {
+    "id": "GD2013-1-p14-i02",
+    "path": "assets/GD2013-1/GD2013-1-p14-i02.png",
+    "paper_id": "GD2013-1",
+    "source_page": 14,
+    "source_bbox_points": [
+      45.5,
+      405.25,
+      564.5,
+      670.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 2076,
+    "height": 1059,
+    "sha256": "30ee0386f42ce2834e1bcf4b3a5859067dd4b55ceef559b5ac20c3a7e89065ea",
+    "transcription": ""
+  },
+  {
+    "id": "GD2013-1-p15-i01",
+    "path": "assets/GD2013-1/GD2013-1-p15-i01.png",
+    "paper_id": "GD2013-1",
+    "source_page": 15,
+    "source_bbox_points": [
+      50.75,
+      73.25,
+      562.25,
+      291.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 2046,
+    "height": 871,
+    "sha256": "9606b6a507bcfbcd919f666f39600446b3b54bff63b71ee1f185708da16c23bd",
+    "transcription": ""
+  },
+  {
+    "id": "GD2013-1-p15-i02",
+    "path": "assets/GD2013-1/GD2013-1-p15-i02.png",
+    "paper_id": "GD2013-1",
+    "source_page": 15,
+    "source_bbox_points": [
+      52.25,
+      390.0,
+      560.75,
+      605.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 2034,
+    "height": 863,
+    "sha256": "ceb949c9e0e269c3e1447a9b476f06de51bccc9f5115100006a103758d6f70af",
+    "transcription": ""
+  },
+  {
+    "id": "GD2013-1-p19-i01",
+    "path": "assets/GD2013-1/GD2013-1-p19-i01.png",
+    "paper_id": "GD2013-1",
+    "source_page": 19,
+    "source_bbox_points": [
+      42.5,
+      47.75,
+      411.75,
+      503.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1477,
+    "height": 1821,
+    "sha256": "daea27ba6a456d401f55439d50546b10e4a29197d28514578fe737f5a859dcee",
+    "transcription": "2012年某市居民人均日常时间利用情况（单位：分钟/天）\n\n| 项目 | 全市 | 城镇 | 农村 |\n| --- | --- | --- | --- |\n| 工作时间 | 455 | 457 | 452 |\n| 其中：工作活动 |  | 362 | 293 |\n| 家庭经营活动 |  | 4 | 89 |\n| 交通活动 |  | 91 | 70 |\n| 个人生活必需时间 | 670 | 664 | 679 |\n| 其中：睡眠休息 |  | 506 | 536 |\n| 吃饭 |  | 98 | 89 |\n| 个人卫生 |  | 56 | 51 |\n| 交通时间 |  | 4 | 3 |\n| 家务劳动时间 | 106 | 104 | 109 |\n| 其中：准备事务和清理 |  | 51 | 73 |\n| 购买商品和服务 |  | 15 | 8 |\n| 照顾家人 |  | 13 | 9 |\n| 环境清洁整理 |  | 10 | 11 |\n| 交通时间 |  | 15 | 8 |\n| 可以自由支配时间 | 209 | 215 | 200 |\n| 其中：娱乐休闲 |  | 203 | 193 |\n| 学习培训 |  | 4 | 3 |\n| 交通活动 |  | 8 | 4 |\n\n原表没有表题（表题取自材料文字），表头为“时间（分钟/天）”下分“全市”“城镇”“农村”。“其中：”以下各分项在原表中缩进排列（两行“交通时间”未缩进），都属于上方的大类；“全市”一栏只有四个大类有数值，空白格不补值。"
+  },
+  {
+    "id": "GD2013-1-p20-i01",
+    "path": "assets/GD2013-1/GD2013-1-p20-i01.png",
+    "paper_id": "GD2013-1",
+    "source_page": 20,
+    "source_bbox_points": [
+      43.25,
+      131.5,
+      564.5,
+      467.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 2085,
+    "height": 1342,
+    "sha256": "80161e67e351f5b29e1bf605565be5950cedc0de25ec6f46357e4f48157d83f8",
+    "transcription": "某市2008年至2012年文化产业发展状况\n\n| 年份 | 文化产业总产值（万元） | 从业人口总数（百分） |\n| --- | --- | --- |\n| 2008年 | 4526 | 2.7 |\n| 2009年 | 4571 | 4.2 |\n| 2010年 | 4310 | 2.4 |\n| 2011年 | 4695 | 3.5 |\n| 2012年 | 4840 | 3.9 |\n\n柱为文化产业总产值（左轴，4000—4900），折线为从业人口总数（右轴，0—4.5）；图例单位“（百分）”照录。"
+  }
+]
