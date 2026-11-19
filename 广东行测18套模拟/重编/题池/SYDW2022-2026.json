@@ -151,7 +151,7 @@
   "type": "细节判断",
   "difficulty": "难",
   "issues": [],
-  "excluded": null
+  "excluded": "答案与选题人自做不一致或定不下（M10、S01言语选题时提出）"
  },
  {
   "id": "SYDW2022-Q043",
@@ -1003,7 +1003,7 @@
   "type": "逻辑填空-多空",
   "difficulty": "中",
   "issues": [],
-  "excluded": null
+  "excluded": "答案与选题人自做不一致或定不下（M10、S01言语选题时提出）"
  },
  {
   "id": "SYDW2023-Q036",
@@ -1027,7 +1027,7 @@
   "type": "逻辑填空-多空",
   "difficulty": "中",
   "issues": [],
-  "excluded": null
+  "excluded": "答案与选题人自做不一致或定不下（M10、S01言语选题时提出）"
  },
  {
   "id": "SYDW2023-Q038",
@@ -3826,7 +3826,7 @@
   "type": "逻辑填空-多空",
   "difficulty": "中",
   "issues": [],
-  "excluded": null
+  "excluded": "答案与选题人自做不一致或定不下（M10、S01言语选题时提出）"
  },
  {
   "id": "SYDW2026-Q039",

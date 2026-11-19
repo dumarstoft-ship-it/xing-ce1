@@ -87,6 +87,13 @@
    "old": "出货量量",
    "new": "出货量",
    "reason": "原卷多一“量”字"
+  },
+  {
+   "source": "SYDW2025-Q046",
+   "where": "stem",
+   "old": "他又能实现",
+   "new": "它又能实现",
+   "reason": "原卷错字（指代事物）"
   }
  ],
  "material_edits": [

@@ -76,6 +76,41 @@
    "old": "约10%速度增。",
    "new": "约10%速度增长。",
    "reason": "原卷漏“长”字"
+  },
+  {
+   "source": "SYDW2022-Q034",
+   "where": "stem",
+   "old": "能够无形的思想",
+   "new": "能够以无形的思想",
+   "reason": "原卷漏“以”字"
+  },
+  {
+   "source": "SYDW2024-Q047",
+   "where": "stem",
+   "old": "品体管",
+   "new": "晶体管",
+   "reason": "原卷错字"
+  },
+  {
+   "source": "SYDW2026-Q043",
+   "where": "stem",
+   "old": "新型生产关系;主动完善",
+   "new": "新型生产关系；主动完善",
+   "reason": "原文档半角分号"
+  },
+  {
+   "source": "SYDW2026-Q043",
+   "where": "stem",
+   "old": "相适应的生产关系发展新型生产关系",
+   "new": "相适应的生产关系、发展新型生产关系",
+   "reason": "原文档漏顿号"
+  },
+  {
+   "source": "SYDW2023-Q050",
+   "where": "stem",
+   "old": "车辆贷款就业创业",
+   "new": "车辆贷款；就业创业",
+   "reason": "原卷漏标点"
   }
  ],
  "material_edits": [],
