@@ -38,3 +38,11 @@ for v, n in sorted(hits.items(), key=lambda t: -t[1])[:12]:
     print(f'  {v:>4}: {n:>3} 条 例 p,q,r,s={examples[v]} {"←选项"+tag[0] if tag else ""}')
 simple = {k: hits.get(o, 0) for k, o in opts.items()}
 print('落在各选项上的规律条数:', simple)
+# 易错核算：只用第一行凑出“第1个数+第2个数=第4个数”（2+3=5），不在第二行检验（5+6=11≠13），
+# 套到第三行得 8+9=17
+r1_rule = rows[0][0] + rows[0][1] == rows[0][3]
+r2_rule = rows[1][0] + rows[1][1] == rows[1][3]
+wrong = rows[2][0] + rows[2][1]
+print('第一行 a+b=d 成立:', r1_rule, '；第二行成立:', r2_rule, '；套到第三行得', wrong,
+      '→', [k for k, o in opts.items() if o == wrong])
+assert r1_rule and not r2_rule and wrong == 17

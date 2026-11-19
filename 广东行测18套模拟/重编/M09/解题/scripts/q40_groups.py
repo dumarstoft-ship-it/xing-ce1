@@ -25,4 +25,7 @@ for kk, n in opts.items():
     k = (F(20) - F(3, 10) * 55) / (2 - F(3, 10) * n)
     m = 55 - n * k
     print(f'{kk}: n={n} → k={k}, m={m}', '整数解' if k.denominator == 1 and k > 0 and m > 0 and m.denominator == 1 else '')
-# 易错：把“增加了2组”当成检验人员共增加2人，或忽略m须为10的倍数等，均得不到唯一整数解
+# 易错核算：问“原有”组数，若答成补充后的组数 n+2
+after = sols[0][2] + 2
+print('补充后组数', after, '→', [kk for kk, v in opts.items() if v == after])
+assert after == 7
