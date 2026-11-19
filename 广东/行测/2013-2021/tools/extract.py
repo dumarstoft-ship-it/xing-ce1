@@ -15,7 +15,9 @@
 
 每卷的文件（多人可同时整理不同的卷，互不覆盖）
   输入  tools/papers/<卷>.json       登记：year、title、paper_variant、source_edition、question_pdf、answer_pdf、
-                                    expected_questions，可选 missing_questions（原卷缺题的题号）
+                                    expected_questions；可选 missing_questions（原卷缺题的题号）、
+                                    source_commit（记作来源的提交；默认沿用 sources/<卷>.json 已记录的提交，
+                                    源 PDF 变了才改用 HEAD）
         tools/corrections/<卷>.json  人工修正（键见下）
   输出  <卷>.jsonl  <卷>.md  assets/<卷>/*.png  assets/<卷>/manifest.json  quality/<卷>.md  sources/<卷>.json
 根目录汇总只由 index 生成（合并分支后有冲突时重跑 index 即可）：
@@ -842,7 +844,7 @@ def cmd_answer_sheet(paper: str, work: Path):
 def build(paper: str, work: Path | None):
     cfg, corr = load_cfg(paper)
     qpdf, apdf = REPO / cfg['question_pdf'], (REPO / cfg['answer_pdf'] if cfg.get('answer_pdf') else None)
-    commit = git('rev-parse', 'HEAD')
+    commit = source_commit(cfg, paper)
     inline_text = corr.get('inline_images', {})
     pages = load_pages(qpdf)
     page_by_no = {p.no: p for p in pages}
@@ -1113,6 +1115,30 @@ def github_repo() -> str:
         return m.group(1) if m else ''
     except subprocess.CalledProcessError:
         return ''
+
+
+def blob_at(commit: str, rel: str) -> str:
+    line = git('ls-tree', commit, '--', rel)
+    return line.split()[2] if line else ''
+
+
+def source_commit(cfg: dict, paper: str) -> str:
+    """提取所基于的提交：papers 中指定的 source_commit，或本卷 sources 文件已记录的提交——只要源 PDF 的 blob 与
+    HEAD、工作区一致就沿用，避免仓库有无关提交时每题的 repository_commit 跟着变；否则用 HEAD。"""
+    head = git('rev-parse', 'HEAD')
+    rels = [r for r in (cfg['question_pdf'], cfg.get('answer_pdf')) if r]
+    cands = [cfg['source_commit']] if cfg.get('source_commit') else []
+    f = paper_files(paper)['sources']
+    if f.exists():
+        cands.append(json.loads(f.read_text(encoding='utf-8'))['commit'])
+    for c in cands:
+        try:
+            full = git('rev-parse', c)
+        except subprocess.CalledProcessError:
+            continue
+        if all(blob_at(full, r) and blob_at(full, r) == blob_at(head, r) == git('hash-object', '--', r) for r in rels):
+            return full
+    return head
 
 
 def write_sources(cfg: dict, commit: str, paper: str) -> None:
