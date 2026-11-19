@@ -1,0 +1,11 @@
+{
+  "year": 2023,
+  "title": "2023年广东事业单位统考《基本能力测试》",
+  "paper_variant": "未标卷别",
+  "source_edition": "仓库原卷",
+  "question_pdf": "广东/事业单位/2023/2023年5月21日广东省事业单位高校毕业生招聘考试（广东统考）《基本能力测试》真题.pdf",
+  "answer_pdf": "广东/事业单位/2023/2023年5月21日广东省事业单位高校毕业生招聘考试（广东统考）《基本能力测试》（解析）.pdf",
+  "question_number_pattern": "^(\\d{1,3})(?=（多选）$|$)",
+  "expected_questions": 100,
+  "source_commit": "3eadbf4cafe03d1f6e9089b3bb696e838ee60f0a"
+}

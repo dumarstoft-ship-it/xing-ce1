@@ -1,0 +1,22 @@
+{
+  "paper_id": "SYDW2022",
+  "commit": "3eadbf4cafe03d1f6e9089b3bb696e838ee60f0a",
+  "sources": [
+    {
+      "path": "广东/事业单位/2022/2022年7月23日广东省事业单位高校毕业生招聘考试（广东统考）《基本能力测试》真题.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47c34523fc8b5d031ce456fc2793a5aa8064e7d8",
+      "size": 716877,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/47c34523fc8b5d031ce456fc2793a5aa8064e7d8"
+    },
+    {
+      "path": "广东/事业单位/2022/2022年7月23日广东省事业单位高校毕业生招聘考试（广东统考）《基本能力测试》（解析）.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1200b391f07e6282486812742d96256f99dd8eeb",
+      "size": 14348870,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/1200b391f07e6282486812742d96256f99dd8eeb"
+    }
+  ]
+}

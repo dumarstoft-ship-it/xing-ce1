@@ -1,0 +1,257 @@
+[
+  {
+    "id": "SYDW2025-p06-i01",
+    "path": "assets/SYDW2025/SYDW2025-p06-i01.png",
+    "paper_id": "SYDW2025",
+    "source_page": 6,
+    "source_bbox_points": [
+      70.25,
+      87.75,
+      221.75,
+      138.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 606,
+    "height": 201,
+    "sha256": "def2ac8ae17e1b769d806f27a4349d6411f577d86c6c8c5ed592bad598d0f079",
+    "transcription": "3×3数表（原卷为图片）\n\n| 4 | 6 | 9 |\n| --- | --- | --- |\n| 12 | 9 | 2 |\n| 18 | ？ | 3 |\n\n原图为无表头的三行三列数表，转写时把第一行排在表头位置；第三行第二格为问号。"
+  },
+  {
+    "id": "SYDW2025-p06-i04",
+    "path": "assets/SYDW2025/SYDW2025-p06-i04.png",
+    "paper_id": "SYDW2025",
+    "source_page": 6,
+    "source_bbox_points": [
+      72.5,
+      573.5,
+      262.0,
+      725.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 758,
+    "height": 609,
+    "sha256": "408ed6588b9cd78e5ac990a8286aead6549ec6b758250ef1445a55cbd318a6dc",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2025-p07-i01",
+    "path": "assets/SYDW2025/SYDW2025-p07-i01.png",
+    "paper_id": "SYDW2025",
+    "source_page": 7,
+    "source_bbox_points": [
+      73.25,
+      238.75,
+      540.0,
+      474.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1867,
+    "height": 944,
+    "sha256": "506301f7371e7b6cc96e4daba7ae9163cb78557cc4ece61399449c887e016715",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2025-p07-i02",
+    "path": "assets/SYDW2025/SYDW2025-p07-i02.png",
+    "paper_id": "SYDW2025",
+    "source_page": 7,
+    "source_bbox_points": [
+      76.5,
+      529.0,
+      535.75,
+      719.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1837,
+    "height": 761,
+    "sha256": "29c53b31a736b7f486ff169e1dac20d1dbfa99626c3e91635de0ec19ee6d75b5",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2025-p08-i01",
+    "path": "assets/SYDW2025/SYDW2025-p08-i01.png",
+    "paper_id": "SYDW2025",
+    "source_page": 8,
+    "source_bbox_points": [
+      40.75,
+      29.75,
+      511.0,
+      211.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1881,
+    "height": 726,
+    "sha256": "d262068b7cc6b46e99de2d346410e162e0c1de96f7bd9e666499ebd3453eb204",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2025-p08-i02",
+    "path": "assets/SYDW2025/SYDW2025-p08-i02.png",
+    "paper_id": "SYDW2025",
+    "source_page": 8,
+    "source_bbox_points": [
+      77.25,
+      256.5,
+      537.5,
+      490.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1841,
+    "height": 936,
+    "sha256": "cf4fae8a7b5f4bfb24d5bc3919181364009ea94742e2d21120d4048b30361e03",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2025-p08-i03",
+    "path": "assets/SYDW2025/SYDW2025-p08-i03.png",
+    "paper_id": "SYDW2025",
+    "source_page": 8,
+    "source_bbox_points": [
+      68.5,
+      535.75,
+      544.0,
+      776.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1902,
+    "height": 964,
+    "sha256": "07cc2d3b344e229465b0c938208e0772ad94c291d218bece32a1f20645970e0b",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2025-p09-i01",
+    "path": "assets/SYDW2025/SYDW2025-p09-i01.png",
+    "paper_id": "SYDW2025",
+    "source_page": 9,
+    "source_bbox_points": [
+      83.0,
+      54.75,
+      509.25,
+      263.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1705,
+    "height": 833,
+    "sha256": "56feed0c432eefb0cc59a9fa52dca41ff2145fcdd29adac873cfe1b7b29ac9bf",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2025-p09-i02",
+    "path": "assets/SYDW2025/SYDW2025-p09-i02.png",
+    "paper_id": "SYDW2025",
+    "source_page": 9,
+    "source_bbox_points": [
+      68.5,
+      315.0,
+      544.0,
+      435.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1902,
+    "height": 483,
+    "sha256": "1b891ba291c8b7858119063f1ac1895b956eb74d0f6de90a4c38920a35c127e4",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2025-p09-i03",
+    "path": "assets/SYDW2025/SYDW2025-p09-i03.png",
+    "paper_id": "SYDW2025",
+    "source_page": 9,
+    "source_bbox_points": [
+      68.5,
+      483.25,
+      544.0,
+      684.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1902,
+    "height": 805,
+    "sha256": "4ee1bacfa1877ad8224209ac05c54914ce420047211ecc351448ac80f0391700",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2025-p10-i01",
+    "path": "assets/SYDW2025/SYDW2025-p10-i01.png",
+    "paper_id": "SYDW2025",
+    "source_page": 10,
+    "source_bbox_points": [
+      38.25,
+      26.75,
+      514.0,
+      232.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1903,
+    "height": 821,
+    "sha256": "cd2bd9f9705ef4bdc7863bc35f000eecea39ed1b1c5341f4a5dc38340df60901",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2025-p10-i02",
+    "path": "assets/SYDW2025/SYDW2025-p10-i02.png",
+    "paper_id": "SYDW2025",
+    "source_page": 10,
+    "source_bbox_points": [
+      75.0,
+      277.5,
+      395.5,
+      382.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1282,
+    "height": 421,
+    "sha256": "371ab4b518dcee1de5255e735b873c6816565e5962757cf203b212d61da94ee1",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2025-p13-i01",
+    "path": "assets/SYDW2025/SYDW2025-p13-i01.png",
+    "paper_id": "SYDW2025",
+    "source_page": 13,
+    "source_bbox_points": [
+      44.0,
+      26.75,
+      496.0,
+      362.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1808,
+    "height": 1344,
+    "sha256": "4cfeea4994734a0d9815292f4309805796f4fe8d92126b7b89b96fa696dc4ba8",
+    "transcription": "新业态劳动者中不同收入计算方式的占比情况（饼图）\n\n| 收入计算方式 | 占比 |\n| --- | --- |\n| 固定薪资（月薪、年薪等） | 46% |\n| 计件工资/按订单计算 | 21% |\n| 按项目提成 | 11% |\n| 按流量/收益提成 | 10% |\n| 计时工资 | 6% |\n| 按股份分红/收益 | 6% |\n\n各扇区标签与百分数照图转写，合计100%。"
+  },
+  {
+    "id": "SYDW2025-p13-i02",
+    "path": "assets/SYDW2025/SYDW2025-p13-i02.png",
+    "paper_id": "SYDW2025",
+    "source_page": 13,
+    "source_bbox_points": [
+      44.25,
+      359.5,
+      520.25,
+      536.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1904,
+    "height": 708,
+    "sha256": "16e4682562109ef5eb000670162adcd7b7f2a531c7892a395066157861991c45",
+    "transcription": "不同就业类型劳动者的工作及社会保险状况\n\n| 项目 | | 新业态劳动者 | 传统正规就业者 | 传统灵活就业者 |\n| --- | --- | --- | --- | --- |\n| 工作时间 | 每月工作天数 | 24.05 | 23.34 | 22.77 |\n| 工作时间 | 每天工作小时数 | 8.41 | 8.54 | 8.94 |\n| 工作时间 | 每周工作小时数 | 48.45 | 47.18 | 49.48 |\n| 小时平均工资（元） | | 52.38 | 48.04 | 34.45 |\n| 拥有各类保险的劳动者占比（%） | 养老保险 | 70.72 | 86.17 | 58.93 |\n| 拥有各类保险的劳动者占比（%） | 医疗保险 | 87.84 | 94.99 | 86.20 |\n| 拥有各类保险的劳动者占比（%） | 失业保险 | 49.06 | 71.87 | 13.41 |\n| 拥有各类保险的劳动者占比（%） | 工伤保险 | 51.87 | 75.47 | 18.75 |\n\n原表“工作时间”“拥有各类保险的劳动者占比（%）”为跨行合并的单元格，转写时逐行重复。"
+  },
+  {
+    "id": "SYDW2025-p13-i03",
+    "path": "assets/SYDW2025/SYDW2025-p13-i03.png",
+    "paper_id": "SYDW2025",
+    "source_page": 13,
+    "source_bbox_points": [
+      55.75,
+      546.0,
+      510.0,
+      675.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1817,
+    "height": 517,
+    "sha256": "672381beec6d1c3bd157de6f26639e3c12c08a6cf634096dc30335f149186767",
+    "transcription": "不同就业类型劳动者的户籍比例及人口流动模式（单位：%）\n\n| 分类 | | 新业态劳动者 | 传统正规就业者 | 传统灵活就业者 |\n| --- | --- | --- | --- | --- |\n| 户籍 | 农业户口 | 63.45 | 47.89 | 76.95 |\n| 户籍 | 非农业户口 | 36.55 | 52.11 | 23.05 |\n| 人口流动 | 本地 | 66.86 | 70.53 | 81.73 |\n| 人口流动 | 本省跨县流动 | 15.07 | 15.67 | 9.96 |\n| 人口流动 | 跨省流动 | 18.07 | 13.79 | 8.31 |\n\n原表“户籍”“人口流动”为跨行合并的单元格，转写时逐行重复。传统正规就业者人口流动三项之和为99.99（原资料舍入），照录。"
+  }
+]

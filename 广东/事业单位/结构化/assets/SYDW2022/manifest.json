@@ -1,0 +1,257 @@
+[
+  {
+    "id": "SYDW2022-p09-i01",
+    "path": "assets/SYDW2022/SYDW2022-p09-i01.png",
+    "paper_id": "SYDW2022",
+    "source_page": 9,
+    "source_bbox_points": [
+      75.25,
+      523.0,
+      260.25,
+      712.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 740,
+    "height": 759,
+    "sha256": "256e3d75fb3e659693d233b46055a6641ac7d520f273d39139906c2b2fff0767",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2022-p10-i01",
+    "path": "assets/SYDW2022/SYDW2022-p10-i01.png",
+    "paper_id": "SYDW2022",
+    "source_page": 10,
+    "source_bbox_points": [
+      66.25,
+      173.0,
+      429.5,
+      330.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1453,
+    "height": 631,
+    "sha256": "20b1a8dea6d703c6886e3bb94cabfb6ec5fa7479d55f6be044d0ea7e38a1b9b2",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2022-p10-i02",
+    "path": "assets/SYDW2022/SYDW2022-p10-i02.png",
+    "paper_id": "SYDW2022",
+    "source_page": 10,
+    "source_bbox_points": [
+      65.25,
+      376.5,
+      420.25,
+      521.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1420,
+    "height": 581,
+    "sha256": "e5bffc4afda333526dd26d99e58a3f915e1af31c3c692c529356605ffa19fc60",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2022-p10-i03",
+    "path": "assets/SYDW2022/SYDW2022-p10-i03.png",
+    "paper_id": "SYDW2022",
+    "source_page": 10,
+    "source_bbox_points": [
+      66.75,
+      562.5,
+      375.25,
+      736.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1234,
+    "height": 695,
+    "sha256": "3fdaa9e7be39316bb0eefa6fe31d6cc6dcae6a967c33e168639e20c2b2c964b9",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2022-p11-i01",
+    "path": "assets/SYDW2022/SYDW2022-p11-i01.png",
+    "paper_id": "SYDW2022",
+    "source_page": 11,
+    "source_bbox_points": [
+      77.5,
+      94.5,
+      287.0,
+      331.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 838,
+    "height": 949,
+    "sha256": "bd0ac6d5539ccda7fded0673d7f75e63e409c8ee283f9a4b7cd23fce86ded80a",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2022-p11-i02",
+    "path": "assets/SYDW2022/SYDW2022-p11-i02.png",
+    "paper_id": "SYDW2022",
+    "source_page": 11,
+    "source_bbox_points": [
+      74.75,
+      371.5,
+      345.25,
+      505.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1082,
+    "height": 534,
+    "sha256": "23da41917738251ec9839d9d9768ac0140061f9aeb41705e01f8a44a2445bb03",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2022-p11-i03",
+    "path": "assets/SYDW2022/SYDW2022-p11-i03.png",
+    "paper_id": "SYDW2022",
+    "source_page": 11,
+    "source_bbox_points": [
+      70.75,
+      553.25,
+      373.0,
+      721.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1209,
+    "height": 673,
+    "sha256": "8b2820cb324e8337fa17137bdc656505d592024008dbb7f4cd746847cf98668c",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2022-p12-i01",
+    "path": "assets/SYDW2022/SYDW2022-p12-i01.png",
+    "paper_id": "SYDW2022",
+    "source_page": 12,
+    "source_bbox_points": [
+      81.5,
+      85.75,
+      402.5,
+      205.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1284,
+    "height": 477,
+    "sha256": "10cc486630c72ede86920adc18af9083c0a841a12926a43101e151d4294335ac",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2022-p12-i02",
+    "path": "assets/SYDW2022/SYDW2022-p12-i02.png",
+    "paper_id": "SYDW2022",
+    "source_page": 12,
+    "source_bbox_points": [
+      70.5,
+      261.0,
+      400.75,
+      343.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1321,
+    "height": 328,
+    "sha256": "8025f71f175a6a6b2ef024d55b053441e4182bd4ff07dee57cbcdb2083de4a94",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2022-p12-i03",
+    "path": "assets/SYDW2022/SYDW2022-p12-i03.png",
+    "paper_id": "SYDW2022",
+    "source_page": 12,
+    "source_bbox_points": [
+      74.25,
+      401.0,
+      374.25,
+      531.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1200,
+    "height": 520,
+    "sha256": "a11fb3716f10c22aa19889b60898ce5feecefdc9ff5b6a01c9bf828187aaf1f8",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2022-p12-i04",
+    "path": "assets/SYDW2022/SYDW2022-p12-i04.png",
+    "paper_id": "SYDW2022",
+    "source_page": 12,
+    "source_bbox_points": [
+      93.5,
+      602.0,
+      370.0,
+      732.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1106,
+    "height": 522,
+    "sha256": "b67ed410b16671e27a98970886d504855c9576adab271eb0b4b1e65cce3f59e4",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2022-p16-i01",
+    "path": "assets/SYDW2022/SYDW2022-p16-i01.png",
+    "paper_id": "SYDW2022",
+    "source_page": 16,
+    "source_bbox_points": [
+      72.75,
+      80.5,
+      535.75,
+      217.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1852,
+    "height": 549,
+    "sha256": "61e579e6484619c42858cdb1eba402aaa2c50026d8eae8933c1d3a1c335f8680",
+    "transcription": "图8 规模以上工业天然气产量月度走势；图9 天然气进口月度走势（两幅柱线组合图并排）\n\n| 月份 | 图8 日均产量（亿立方米） | 图8 当月增速（%） | 图9 当月进口量（万吨） | 图9 当月增速（%） |\n| --- | --- | --- | --- | --- |\n| 2020年12月 | 6.0 | 13.7 | 1123 | 18.4 |\n| 2021年1-2月 | 5.9 | 13.5 | 2080 | 17.4 |\n| 3月 | 6.0 | 12.1 | 873 | 27.1 |\n| 4月 | 5.6 | 7.0 | 1015 | 32.4 |\n| 5月 | 5.4 | 5.8 | 1032 | 33.1 |\n| 6月 | 5.7 | 13.1 | 1021 | 22.9 |\n| 7月 | 5.1 | 9.8 | 934 | 27.9 |\n| 8月 | 5.1 | 11.3 | 1044 | 12.2 |\n| 9月 | 5.2 | 7.1 | 1062 | 23.6 |\n| 10月 | 5.3 | 0.5 | 938 | 25.5 |\n| 11月 | 5.9 | 4.4 | 1073 | 17.8 |\n| 12月 | 6.2 | 2.3 | 1165 | 3.8 |\n\n柱为日均产量（图8）、当月进口量（图9），折线为当月增速，数值照图中标注转写。图8左轴0—10、右轴-60—30；图9左轴400—2800、右轴-140—40。"
+  },
+  {
+    "id": "SYDW2022-p16-i02",
+    "path": "assets/SYDW2022/SYDW2022-p16-i02.png",
+    "paper_id": "SYDW2022",
+    "source_page": 16,
+    "source_bbox_points": [
+      76.25,
+      551.75,
+      324.75,
+      714.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 994,
+    "height": 652,
+    "sha256": "20d2467857b2d239e764c42630ef8113e9bd4af6b166b7b2b173894364f18268",
+    "transcription": "四幅折线示意图（无坐标刻度），每幅6个点，依次对应2021年7—12月。按各点的竖直位置排序（脚本量取点心坐标，1为最高）：A：5、3、4、6、1、2（第2、6点几乎等高）；B：5、4、6、2、1、3；C：5、6、3、1、4、2；D：2、4、5、6、1、3（第2—4点几乎等高，第1、6点几乎等高）。"
+  },
+  {
+    "id": "SYDW2022-p17-i02",
+    "path": "assets/SYDW2022/SYDW2022-p17-i02.png",
+    "paper_id": "SYDW2022",
+    "source_page": 17,
+    "source_bbox_points": [
+      71.0,
+      185.5,
+      517.25,
+      342.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1785,
+    "height": 626,
+    "sha256": "a012ccb00b3d6c401f93ee14ab677195ea50cc6d12048ba50a4c20957b439f6d",
+    "transcription": "2015-2020年A国消费电子新机出货量（单位：亿台）\n\n| 年份 | 智能手机 | 平板电脑 | 笔记本电脑 | 其他 |\n| --- | --- | --- | --- | --- |\n| 2015年 | 4.27 | 0.26 | 0.38 | 0.35 |\n| 2016年 | 4.65 | 0.26 | 0.36 | 0.46 |\n| 2017年 | 4.44 | 0.22 | 0.36 | 0.66 |\n| 2018年 | 3.96 | 0.22 | 0.35 | 0.79 |\n| 2019年 | 3.67 | 0.22 | 0.36 | 1.17 |\n| 2020年 | 3.33 | 0.23 | 0.39 | 1.43 |\n\n2020年四项合计5.38亿台，与正文一致。"
+  },
+  {
+    "id": "SYDW2022-p18-i01",
+    "path": "assets/SYDW2022/SYDW2022-p18-i01.png",
+    "paper_id": "SYDW2022",
+    "source_page": 18,
+    "source_bbox_points": [
+      76.0,
+      85.5,
+      235.25,
+      168.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 637,
+    "height": 331,
+    "sha256": "0c549c14ead381526c2f7b953188190b1f48aacc19abda8979d2ad113055c7c4",
+    "transcription": "折线示意图（无坐标刻度），5个点依次对应2016—2020年。按各点的竖直位置排序（脚本量取点心坐标，1为最高）：5、3、4、1、2。"
+  }
+]

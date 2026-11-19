@@ -26,7 +26,12 @@ answer-sheet 的模板、渲染分辨率可按卷配置；新增 Word（.docx）
                                     源 PDF 变了才改用 HEAD）、answer_sheet（扫描版答案的读取参数：dpi、
                                     templates、match、x_from、x_to、numbers、rows、zoom，默认值见 ANS_DEFAULT）；
                                     Word 题源写 question_docx（题目与答案
-                                    在同一文档时不写 answer_pdf，记录中的 question_pdf/answer_pdf 都填该文档路径）
+                                    在同一文档时不写 answer_pdf，记录中的 question_pdf/answer_pdf 都填该文档路径）；
+                                    可选 question_number_pattern（题号行的正则，第1组为题号；默认“N.”“N、”，
+                                    题号单独成行的卷如 2022、2023 年写 "^(\\d{1,3})(?=（多选）$|$)"）、
+                                    reference_files（[{path, use}] 参与核对但不作题源的文件，如另一版本的题本，
+                                    记入 sources 与质量报告）、answer_pdf_kind（"vector"：答案 PDF 是打印成曲线的
+                                    矢量字形页面而非扫描图片，只影响报告措辞）
         tools/corrections/<卷>.json  人工修正（键见下）
   输出  <卷>.jsonl  <卷>.md  assets/<卷>/*.png  assets/<卷>/manifest.json  quality/<卷>.md  sources/<卷>.json
 根目录汇总只由 index 生成（合并分支后有冲突时重跑 index 即可）：
@@ -55,7 +60,13 @@ answer-sheet 的模板、渲染分辨率可按卷配置；新增 Word（.docx）
   missing_materials {"91": "…"} 原文档缺资料的资料分析题：material 记为 null 并说明
   docx_images      {"image4": {q, role, alt, transcription}} Word 题源：word/media 中每张非装饰图片归属的题与角色
                    （浮动图片在文档流中的位置不可靠，须逐张登记）；material 图写 {material: 2, ...}
-  report           {answers, source_issues, uncertain, review: [...]} 写入本卷质量报告；readme: [...] 写入 README
+  report           {answers, source_issues, uncertain, review: [...]} 写入本卷质量报告；readme: [...] 写入 README；
+                   sections: [{title, intro, items}] 另起的报告小节（排在“源文件问题与处理”之后）
+  transcription    原卷没有文字层（如打印成曲线的矢量字形 PDF）时，题目文字按人工转写收录（题图仍从 question_pdf
+                   裁剪）：{sections: [{from, to, name}], questions: {"1": {pages, stem, options: [A,B,C,D 文字],
+                   figures: ["p07-i01"], inline: ["p05-i01"]}}, materials: {"1": {questions: [首, 末], pages, header,
+                   content: ["段落", {image: "p13-i01"}]}}}；question_pdf 中每张图片须归属某题、某组材料，或作为
+                   行内小图写在 inline_images；选项只有字母（“A、A B、B…”）且有题图的按图形选项处理；不做文字守恒检查
 
 整理新的一卷
   1. 写 tools/papers/<卷>.json；2. dump 核对分题、材料与图片归属；3. answer-sheet 读答案，写入 answers.by_page；
@@ -105,7 +116,7 @@ CORR_DIR = TOOLS / 'corrections'        # 每卷人工修正
 
 SECTION_NAMES = ['政治理论', '常识判断', '言语理解与表达', '数量关系', '判断推理', '科学推理', '资料分析']
 SECTION_ALIASES = {'常识应用': '常识判断', '常识': '常识判断', '言语理解': '言语理解与表达',
-                   '言语表达与理解': '言语理解与表达', '数学运算': '数量关系'}
+                   '言语表达与理解': '言语理解与表达', '数学运算': '数量关系', '数字推理': '数量关系'}
 SUBTYPES = ['图形推理', '定义判断', '类比推理', '逻辑判断']
 CN_NUM = '一二三四五六七八九十'
 RE_SECTION = [
@@ -359,9 +370,11 @@ def match_material(text: str) -> bool:
     return any(rx.match(t) for rx in RE_MATERIAL)
 
 
-def segment(pages: list[Page], expected: int, inline_text: dict, missing=()):
+def segment(pages: list[Page], expected: int, inline_text: dict, missing=(), qnum=RE_QNUM):
     """按阅读顺序把行与题图分到部分、材料、题目。材料有两种写法：带“材料1/（材料一）/根据以下资料”等标题；
-    或（2013、2015、2017、2019等年）无标题，资料分析部分里上一组题的A—D选项之后直接接首行缩进的材料段落或图表。"""
+    或（2013、2015、2017、2019等年）无标题，资料分析部分里上一组题的A—D选项之后直接接首行缩进的材料段落或图表。
+    qnum：题号行的正则（第1组为题号），默认 RE_QNUM；题号单独成行的卷在 tools/papers/<卷>.json 的
+    question_number_pattern 中另行登记。"""
     for p in pages:
         for ln in p.lines:
             render_line(ln, inline_text)
@@ -412,12 +425,12 @@ def segment(pages: list[Page], expected: int, inline_text: dict, missing=()):
             headings.append(ln)
             heading_open = ln.x1 >= right - 1.5 * ln.em
             continue
-        if heading_open and not indented and not RE_QNUM.match(ln.text) and not match_material(ln.text):
+        if heading_open and not indented and not qnum.match(ln.text) and not match_material(ln.text):
             headings.append(ln)                       # 部分说明的续行
             heading_open = ln.x1 >= right - 1.5 * ln.em
             continue
         heading_open = False
-        m = RE_QNUM.match(ln.text)
+        m = qnum.match(ln.text)
         while nxt in missing:
             nxt += 1                                  # tools/papers/<卷>.json 声明的原卷缺题题号
         if m and int(m.group(1)) == nxt and nxt <= expected:
@@ -509,9 +522,9 @@ def join_lines(lines: list[Line], left: float, right: float, first_strip: str = 
     return out
 
 
-def parse_question(q: QBlock, left: float, right: float, autofix: list) -> dict:
+def parse_question(q: QBlock, left: float, right: float, autofix: list, qnum=RE_QNUM) -> dict:
     first = q.lines[0]
-    m = RE_QNUM.match(first.text)
+    m = qnum.match(first.text)
     opt_i = next((i for i, ln in enumerate(q.lines) if i > 0 and RE_OPT.match(ln.text)), None)
     stem_lines = q.lines if opt_i is None else q.lines[:opt_i]
     opt_lines = [] if opt_i is None else q.lines[opt_i:]
@@ -731,6 +744,11 @@ def png_size(raw: bytes):
 # ---------------------------------------------------------------------------
 # 读取配置、修正
 # ---------------------------------------------------------------------------
+def qnum_re(cfg: dict):
+    """题号行的正则：tools/papers/<卷>.json 的 question_number_pattern（第1组为题号），默认 RE_QNUM。"""
+    return re.compile(cfg['question_number_pattern']) if cfg.get('question_number_pattern') else RE_QNUM
+
+
 def load_cfg(paper: str):
     pf = PAPERS_DIR / f'{paper}.json'
     if not pf.exists():
@@ -821,13 +839,39 @@ def cmd_dump_docx(paper: str, cfg: dict, corr: dict):
     print(f'\n共识别 {len(seg["questions"])} 题（应为 {cfg["expected_questions"]}），材料 {len(seg["materials"])} 组')
 
 
+def cmd_dump_transcribed(paper: str, cfg: dict, corr: dict):
+    pages = load_pages(REPO / cfg['question_pdf'])
+    tr = corr['transcription']
+    print(f'# {paper}  页数 {len(pages)}  原卷没有文字层，题目文字取自 tools/corrections/{paper}.json 的 transcription')
+    for p in pages:
+        for im in p.images:
+            print(f'[图片 {im.key}] bbox=({im.x0:.1f},{im.top:.1f},{im.x1:.1f},{im.bottom:.1f})'
+                  + (f' 行内：{corr["inline_images"][im.key]}' if im.key in corr.get('inline_images', {}) else ''))
+    mats = {int(k): m for k, m in tr.get('materials', {}).items()}
+    for n in sorted(int(k) for k in tr.get('questions', {})):
+        for k, m in mats.items():
+            if m['questions'][0] == n:
+                print(f'\n=== 材料{k}（第{m["questions"][0]}—{m["questions"][1]}题，p{m.get("pages")}）{m.get("header", "")}')
+                for b in m['content']:
+                    print('  [图]', b['image']) if isinstance(b, dict) else print('  [文]', b)
+        q = tr['questions'][str(n)]
+        print(f'\n--- 第{n}题 p{q.get("pages")} 图{q.get("figures", [])}')
+        print(q['stem'])
+        for L, t in zip('ABCD', q.get('options', [])):
+            print(f'  {L}. {t}')
+    print(f'\n共 {len(tr.get("questions", {}))} 题（应为 {cfg["expected_questions"]}），材料 {len(mats)} 组')
+
+
 def cmd_dump(paper: str, raw: bool = True):
     cfg, corr = load_cfg(paper)
     if cfg.get('question_docx'):
         return cmd_dump_docx(paper, cfg, corr)
+    if corr.get('transcription'):
+        return cmd_dump_transcribed(paper, cfg, corr)
     pages = load_pages(REPO / cfg['question_pdf'])
     inline = {} if raw else corr.get('inline_images', {})
-    seg = segment(pages, cfg['expected_questions'], inline, set(cfg.get('missing_questions', [])))
+    qnum = qnum_re(cfg)
+    seg = segment(pages, cfg['expected_questions'], inline, set(cfg.get('missing_questions', [])), qnum)
     left, right = seg['margins']
     print(f'# {paper}  页数 {len(pages)}  左右边界 {left:.1f}/{right:.1f}pt')
     for ln in seg['headings']:
@@ -845,7 +889,7 @@ def cmd_dump(paper: str, raw: bool = True):
             print(f'\n=== 材料{m["k"]}（第{m["questions"][0]}—{m["questions"][-1]}题，p{m["pages"]}）标题段：{m["header_text"]}')
             for b in m['blocks']:
                 print('  [图]', b['img'].key) if b['type'] == 'fig' else print('  [文]', b['text'])
-        r = parse_question(q, left, right, autofix)
+        r = parse_question(q, left, right, autofix, qnum)
         print(f'\n--- 第{r["number"]}题 [{r["section_raw"]}] p{r["pages"]} 图{[f.key for f in r["figures"]]}')
         print(r['stem'])
         for o in r['options']:
@@ -1058,7 +1102,8 @@ RE_DSEC = re.compile(r'^\s*[一二三四五六七八九十]+\s*[、.．]\s*(判�
 RE_DMAT = re.compile(r'^\s*根据(?:以下|下列)(?:资料|材料)[，,]?\s*回答\s*(\d{1,3})\s*[-—–~～]\s*(\d{1,3})\s*题\s*[:：]?')
 RE_DANS = re.compile(r'答案\s*[：:]')
 DOCX_TAG_TYPE = {'判断题': 'true_false', '多选题': 'multiple_choice', '单选题': 'single_choice'}
-PDF_TAG_TYPE = {'（判断题）': 'true_false', '（多选题）': 'multiple_choice', '（单选题）': 'single_choice'}
+PDF_TAG_TYPE = {'（判断题）': 'true_false', '（多选题）': 'multiple_choice', '（单选题）': 'single_choice',
+                '（多选）': 'multiple_choice'}       # 2022、2023年卷题号后印“（多选）”
 LABEL_PRE = r'[\s一-鿿\d）)”"%，。、；：？?！]'
 
 
@@ -1365,7 +1410,8 @@ def load_pdf_source(cfg: dict, corr: dict, paper: str, autofix: list) -> dict:
     inline_text = corr.get('inline_images', {})
     pages = load_pages(qpdf)
     missing_q = set(cfg.get('missing_questions', []))
-    seg = segment(pages, cfg['expected_questions'], inline_text, missing_q)
+    qnum = qnum_re(cfg)
+    seg = segment(pages, cfg['expected_questions'], inline_text, missing_q, qnum)
     left, right = seg['margins']
     if len(seg['questions']) != cfg['expected_questions'] - len(missing_q):
         die(f'只识别出 {len(seg["questions"])} 题（应为 {cfg["expected_questions"] - len(missing_q)}）；先用 dump 检查分题，'
@@ -1379,7 +1425,7 @@ def load_pdf_source(cfg: dict, corr: dict, paper: str, autofix: list) -> dict:
     recs = {}
     ignore = corr.get('ignore_lines', [])
     for q in seg['questions']:
-        recs[q.number] = parse_question(q, left, right, autofix)
+        recs[q.number] = parse_question(q, left, right, autofix, qnum)
         tags = [v for k, v in PDF_TAG_TYPE.items() if recs[q.number]['stem'].startswith(k)]
         recs[q.number]['tag'] = {'true_false': '判断题', 'multiple_choice': '多选题', 'single_choice': '单选题'}[tags[0]] if tags else None
         for st in recs[q.number]['strays']:
@@ -1405,6 +1451,75 @@ def load_pdf_source(cfg: dict, corr: dict, paper: str, autofix: list) -> dict:
                 pages=pages, qpdf=qpdf)
 
 
+def load_transcribed_source(cfg: dict, corr: dict, paper: str, autofix: list) -> dict:
+    """原卷没有文字层（如打印成曲线的矢量字形 PDF）：题干、选项、材料文字取自修正文件的 transcription，
+    题图与材料图仍按 question_pdf 中的图片对象裁剪。每张图片须归属某题、某组材料，或作为行内小图登记文字。"""
+    qpdf = REPO / cfg['question_pdf']
+    tr = corr['transcription']
+    pages = load_pages(qpdf)
+    imgs = {im.key: im for p in pages for im in p.images}
+    inline_text = corr.get('inline_images', {})
+    missing_q = set(cfg.get('missing_questions', []))
+    nums = [n for n in range(1, cfg['expected_questions'] + 1) if n not in missing_q]
+    qs = tr.get('questions', {})
+    if sorted(int(k) for k in qs) != nums:
+        die(f'transcription.questions 的题号与 tools/papers/{paper}.json 不符')
+    sec_of = {n: s['name'] for s in tr.get('sections', []) for n in range(s['from'], s['to'] + 1)}
+    used, inl_used = {}, {}
+
+    def take(key, who):
+        if key not in imgs:
+            die(f'{who} 引用的图片 {key} 不在 {cfg["question_pdf"]} 中')
+        if key in used or key in inline_text:
+            die(f'图片 {key} 重复登记（{used.get(key, "inline_images")}、{who}）')
+        used[key] = who
+        return imgs[key]
+    recs = {}
+    for n in nums:
+        q = qs[str(n)]
+        if n not in sec_of:
+            die(f'transcription.sections 没有覆盖第{n}题')
+        opts = q.get('options', [])
+        if opts and len(opts) != 4:
+            die(f'transcription 第{n}题的选项应为 4 项（现为 {len(opts)} 项）')
+        for k in q.get('inline', []):
+            if k not in imgs or k not in inline_text:
+                die(f'第{n}题的行内小图 {k} 不在 question_pdf 中或未在 inline_images 中给出文字')
+            inl_used[k] = n
+        r = dict(number=n, section_raw=sec_of[n], stem=q['stem'], options=[{'label': L, 'text': t} for L, t in zip('ABCD', opts)],
+                 figures=[take(k, f'第{n}题') for k in q.get('figures', [])], pages=list(q['pages']), material=None,
+                 labels_raw=[], strays=[], prefix='', raw=None, inline=list(q.get('inline', [])), tag=None)
+        tags = [v for k, v in PDF_TAG_TYPE.items() if r['stem'].startswith(k)]
+        r['tag'] = {'true_false': '判断题', 'multiple_choice': '多选题', 'single_choice': '单选题'}[tags[0]] if tags else None
+        if r['figures'] and r['options'] and all(o['text'] == o['label'] for o in r['options']):
+            autofix.append(f'第{n}题：图下选项只印了字母（“A、A B、B C、C D、D”），按图形选项处理（选项在题图中）。')
+            r['options'] = []
+        recs[n] = r
+    mats = {}
+    for k, m in sorted(tr.get('materials', {}).items(), key=lambda kv: int(kv[0])):
+        k = int(k)
+        qn = list(range(m['questions'][0], m['questions'][1] + 1))
+        blocks = [{'type': 'text', 'text': b} if isinstance(b, str) else {'type': 'fig', 'img': take(b['image'], f'材料{k}')}
+                  for b in m['content']]
+        for n in qn:
+            if recs[n]['material'] is not None:
+                die(f'第{n}题同时属于两组材料')
+            recs[n]['material'] = k
+        mats[k] = dict(k=k, header_text=m.get('header', ''), header_note='', blocks=blocks, pages=list(m['pages']),
+                       questions=qn, inline=[], raw=None)
+    stray_inline = sorted(k for k in inline_text if k in imgs and k not in inl_used)
+    if stray_inline:
+        die(f'inline_images 登记的行内小图 {stray_inline} 没有被任何题目的 inline 引用')
+    unused = sorted(k for k in imgs if k not in used and k not in inline_text)
+    if unused:
+        die(f'{cfg["question_pdf"]} 中的图片 {unused} 没有归属（题图、材料图或 inline_images）')
+    apdf = REPO / cfg['answer_pdf'] if cfg.get('answer_pdf') else None
+    text_ans, stats = answer_text_layer(apdf) if apdf else ({}, [])
+    all_inline = sorted(k for k in inline_text if k in imgs)
+    return dict(recs=recs, mats=mats, text_ans=text_ans, stats=stats, conclusions={}, seg=None, all_inline=all_inline,
+                pages=pages, qpdf=qpdf)
+
+
 def check_qtype(n: int, qt: str, vals: list) -> str | None:
     for v in vals:
         if qt == 'true_false' and v not in (['正确'], ['错误']):
@@ -1425,7 +1540,12 @@ def build(paper: str, work: Path | None):
     commit = source_commit(cfg, paper)
     inline_text = corr.get('inline_images', {})
     autofix, fixlog, problems = [], [], []
-    src = load_docx_source(cfg, corr, paper, autofix) if is_docx else load_pdf_source(cfg, corr, paper, autofix)
+    if is_docx:
+        src = load_docx_source(cfg, corr, paper, autofix)
+    elif corr.get('transcription'):
+        src = load_transcribed_source(cfg, corr, paper, autofix)
+    else:
+        src = load_pdf_source(cfg, corr, paper, autofix)
     recs, mats = src['recs'], src['mats']
     groups = [[m['questions'][0], m['questions'][-1]] if m['questions'] else [] for m in mats.values()]
     if 'material_groups' in corr and groups != corr['material_groups']:
@@ -1479,6 +1599,8 @@ def build(paper: str, work: Path | None):
     # 空括号按 normalize_blanks 统一为“（）”后再比，Word 中的“( )”“(）”等写法因此不算差异）
     conserve = []
     for n, r in recs.items():
+        if r['raw'] is None:
+            continue                                  # 转写的题（原卷没有文字层），没有可比对的原文字
         raw = r['raw'][len(r['prefix']):] if r['raw'].startswith(r['prefix']) else r['raw']
         want = collections.Counter(re.sub(r'\s', '', re.sub(r'[（(]\s*[）)]', '（）', raw)))
         want -= collections.Counter(re.sub(r'\s', '', ''.join(r['labels_raw'])))
@@ -1600,7 +1722,7 @@ def build(paper: str, work: Path | None):
             hits[0]['text'] = hits[0]['text'].replace(fx['find'], fx['replace'])
             fixlog.append(f'材料{k}（第{m["questions"][0]}—{m["questions"][-1]}题）：{fx["reason"]}')
         out_m = ''.join(b['text'] for b in content if b['type'] == 'text')
-        if collections.Counter(re.sub(r'\s', '', m['raw'])) + collections.Counter(re.sub(r'\s', '', ''.join(inline_text[x] for x in m['inline']))) != collections.Counter(re.sub(r'\s', '', out_m)):
+        if m['raw'] is not None and collections.Counter(re.sub(r'\s', '', m['raw'])) + collections.Counter(re.sub(r'\s', '', ''.join(inline_text[x] for x in m['inline']))) != collections.Counter(re.sub(r'\s', '', out_m)):
             die(f'材料{k}文字守恒检查不通过')
         if m['header_note']:
             autofix.append(f'材料{k}标题后的编者按语不作为材料内容收录：“{redact(m["header_note"])}”')
@@ -1760,7 +1882,7 @@ def source_commit(cfg: dict, paper: str) -> str:
     """提取所基于的提交：papers 中指定的 source_commit，或本卷 sources 文件已记录的提交——只要源 PDF 的 blob 与
     HEAD、工作区一致就沿用，避免仓库有无关提交时每题的 repository_commit 跟着变；否则用 HEAD。"""
     head = git('rev-parse', 'HEAD')
-    rels = sorted({r for r in src_files(cfg) if r})
+    rels = all_src_files(cfg)
     cands = [cfg['source_commit']] if cfg.get('source_commit') else []
     f = paper_files(paper)['sources']
     if f.exists():
@@ -1778,7 +1900,7 @@ def source_commit(cfg: dict, paper: str) -> str:
 def write_sources(cfg: dict, commit: str, paper: str) -> None:
     """sources/<卷>.json：源 PDF 在提交中的 blob，并核对与工作区文件一致。"""
     remote, srcs = github_repo(), []
-    for rel in sorted({r for r in src_files(cfg) if r}):
+    for rel in all_src_files(cfg):
         line = git('ls-tree', '-l', commit, '--', rel)
         if not line:
             die(f'{rel} 不在提交 {commit} 中')
@@ -1833,6 +1955,11 @@ def src_files(cfg: dict) -> tuple:
     return q, a
 
 
+def all_src_files(cfg: dict) -> list:
+    """本卷用到的全部源文件：题目、答案来源，加上 reference_files（参与核对、不作题源的文件）。"""
+    return sorted({r for r in src_files(cfg) if r} | {x['path'] for x in cfg.get('reference_files', [])})
+
+
 def render_md(records, cfg, paper, commit) -> str:
     qtype_cn = {'single_choice': '单选', 'multiple_choice': '多选', 'true_false': '判断'}
     qsrc, asrc = src_files(cfg)
@@ -1844,6 +1971,8 @@ def render_md(records, cfg, paper, commit) -> str:
         out[-1] += f'答案来源：[{Path(asrc).name}]({blob_url(commit, asrc)})（只取答案）。'
     elif asrc:
         out[-1] += '答案取自同一文档每题后的“答案：”（只取答案，不收解析）。'
+    for ref in cfg.get('reference_files', []):
+        out[-1] += f'参考：[{Path(ref["path"]).name}]({blob_url(commit, ref["path"])})（{ref["use"]}）。'
 
     def common(rs):
         if len(rs) < 2:
@@ -1933,13 +2062,19 @@ def render_report(records, cfg, corr, paper, commit, autofix, fixlog, problems, 
              '| 文件 | Git blob | 用途 |', '| --- | --- | --- |',
              f'| `{qsrc}` | `{sha.get(qsrc, "")}` | 题干、选项、材料、题图（读 word/document.xml 与 word/media/）；答案只取每题的“答案：”，不收解析 |']
     else:
+        refs = cfg.get('reference_files', [])
         L = [f'# {paper} 转换与校验记录', '',
-             f'范围：{cfg["title"]}，共 {len(records)} 题。来源为仓库内题本与答案解析各 1 份 PDF，均未修改；'
+             f'范围：{cfg["title"]}，共 {len(records)} 题。来源为仓库内题本与答案解析各 1 份 PDF'
+             + (f'，另有 {len(refs)} 份参考文件' if refs else '') + '，均未修改；'
              f'提取基于提交 `{commit}`。', '',
              '| 文件 | Git blob | 用途 |', '| --- | --- | --- |',
-             f'| `{qsrc}` | `{sha.get(qsrc, "")}` | 题干、选项、材料、题图（有文字层） |']
+             f'| `{qsrc}` | `{sha.get(qsrc, "")}` | '
+             + ('题本（以此为准）：原卷没有文字层，题干、选项、材料按修正文件中的转写收录；题图、材料图从本卷裁剪 |'
+                if corr.get('transcription') else '题干、选项、材料、题图（有文字层） |')]
         if asrc:
             L.append(f'| `{asrc}` | `{sha.get(asrc, "")}` | 只取答案，不收解析 |')
+        for ref in refs:
+            L.append(f'| `{ref["path"]}` | `{sha.get(ref["path"], "")}` | {ref["use"]} |')
     L += ['', '## 完整性', '', '| 部分 | 题号 | 题数 | 题型 |', '| --- | --- | ---: | --- |']
     for s in order:
         rs = [r for r in records if r['section'] == s]
@@ -1964,9 +2099,14 @@ def render_report(records, cfg, corr, paper, commit, autofix, fixlog, problems, 
     L += [f'- 资料分析共用材料 {len(mats)} 组，关联 {sum(len(m["question_numbers"]) for m in mats.values())} 题；每题 JSONL 内嵌完整材料。', img_line]
     if all_inline:
         L.append(f'- 行内小图 {len(all_inline)} 个（分数等）已转成文字，不另存图片：' + '、'.join(f'`{k}`' for k in all_inline) + '。')
-    L += [f'- 文字守恒检查：每题“题干+选项”与{cons_src}逐一相符（不计空白、题号与选项字母，行内小图按转写计）'
-          + ('，' + str(len(records)) + ' 题全部通过' if not conserve else f'；人工修正造成差异的题：{[c[0] for c in conserve]}')
-          + (f'；{len(mats)} 组材料正文同样相符。' if mats else '。'),
+    if corr.get('transcription'):
+        cons_line = ('- 文字来源：原卷没有文字层，每题“题干+选项”与材料正文取自修正文件的 `transcription`（转写与核对方法见下文'
+                     '“复核方法”），没有可做文字守恒检查的原文字；' + str(len(records)) + ' 题与转写一一对应。')
+    else:
+        cons_line = (f'- 文字守恒检查：每题“题干+选项”与{cons_src}逐一相符（不计空白、题号与选项字母，行内小图按转写计）'
+                     + ('，' + str(len(records)) + ' 题全部通过' if not conserve else f'；人工修正造成差异的题：{[c[0] for c in conserve]}')
+                     + (f'；{len(mats)} 组材料正文同样相符。' if mats else '。'))
+    L += [cons_line,
           ('- 题型按原卷标注登记（`question_types`），并与答案逐题核对（判断题答案为“正确/错误”、多选题两个以上字母、单选题一个字母）：'
            if declared else '- 题型按答案判定（单选一个字母、多选多个字母）：')
           + '，'.join(f'{qtype_cn[k]} {v} 题' for k, v in qtypes.items()) + '。判断题没有选项（`options` 为空）。' if qtypes.get('true_false') else
@@ -1991,10 +2131,12 @@ def render_report(records, cfg, corr, paper, commit, autofix, fixlog, problems, 
         scanned = [p for p, n in stats if n < 30]
         texty = [p for p, n in stats if 0 < n < 30]
         both = sorted(tq & mq)
-        L += ['', f'答案PDF共 {len(stats)} 页，其中 {len(scanned)} 页为扫描图片、没有可用的正文文字层'
+        vector = cfg.get('answer_pdf_kind') == 'vector'
+        L += ['', f'答案PDF共 {len(stats)} 页，其中 {len(scanned)} 页'
+              + ('为矢量字形页面（文字打印成曲线，不是扫描图片）、没有文字层' if vector else '为扫描图片、没有可用的正文文字层')
               + (f'（第{"、".join(map(str, texty))}页另有后加的少量文字）' if texty else '') + '。'
               + (f'文字层直接取到 {len(tq)} 题（' + '、'.join(f'{k}{v["value"]}' for k, v in sorted(answer_log['text'].items())) + '）；' if tq else '文字层没有取到答案；')
-              + (f'扫描图人工读取 {len(mq)} 题（第{num_ranges(sorted(mq))}题，记录在 `tools/corrections/{paper}.json` 的 `answers.by_page`）' if mq else '')
+              + (f'{"页面" if vector else "扫描图"}人工读取 {len(mq)} 题（第{num_ranges(sorted(mq))}题，记录在 `tools/corrections/{paper}.json` 的 `answers.by_page`）' if mq else '')
               + (f'，另有第{num_ranges(sorted(aq))}题的第二个候选记在 `answers.alternatives`。' if aq else '。')
               + (f'两处都有的第{num_ranges(both)}题逐一比对' + ('，结果一致。' if not answer_log['conflicts'] else f'，不一致：{answer_log["conflicts"]}。') if both else '')]
     if answer_log['missing']:
@@ -2008,6 +2150,12 @@ def render_report(records, cfg, corr, paper, commit, autofix, fixlog, problems, 
         L.append(f'- 自动处理：{item}')
     for item in fixlog:
         L.append(f'- 人工修正：{item}')
+    for sec in custom.get('sections', []):
+        L += ['', f'## {sec["title"]}', '']
+        if sec.get('intro'):
+            L += [sec['intro'], '']
+        for item in sec.get('items', []):
+            L.append(f'- {item}')
     L += ['', '## 转写拿不准、需要留意的地方', '']
     for item in custom.get('uncertain', []):
         L.append(f'- {item}')
@@ -2039,8 +2187,11 @@ def render_report(records, cfg, corr, paper, commit, autofix, fixlog, problems, 
         for e in manifest:
             bb = ', '.join(f'{v:g}' for v in e['source_bbox_points'])
             L.append(f'| `{e["id"]}` | {"、".join(usage[e["id"]])} | {e["source_page"]} | {bb} | {e["width"]}×{e["height"]} | {"有" if e["transcription"] else "—"} |')
-        L += ['', f'脚本检查：{len(manifest)} 张图的裁剪框内均没有文字层字符。' if not problems
-              else '脚本检查发现问题：' + '；'.join(problems)]
+        if corr.get('transcription') and not problems:
+            L += ['', f'原卷没有文字层，脚本无法检查裁剪框内是否混入题干文字；{len(manifest)} 张图的裁剪范围已逐张对照原页目视检查（见复核方法）。']
+        else:
+            L += ['', f'脚本检查：{len(manifest)} 张图的裁剪框内均没有文字层字符。' if not problems
+                  else '脚本检查发现问题：' + '；'.join(problems)]
     L += ['', '## 复核方法', '']
     for item in custom.get('review', []):
         L.append(f'- {item}')

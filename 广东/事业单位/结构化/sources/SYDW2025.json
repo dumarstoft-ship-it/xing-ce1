@@ -1,0 +1,30 @@
+{
+  "paper_id": "SYDW2025",
+  "commit": "3eadbf4cafe03d1f6e9089b3bb696e838ee60f0a",
+  "sources": [
+    {
+      "path": "广东/事业单位/2025/2025年3月30日广东省事业单位高校毕业生招聘考试（广东统考）《基本能力测试》真题.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe3f4b1aa41436d6cfb923be5b8c4c4b01bd2649",
+      "size": 6914302,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/fe3f4b1aa41436d6cfb923be5b8c4c4b01bd2649"
+    },
+    {
+      "path": "广东/事业单位/2025/2025年3月30日广东省事业单位高校毕业生招聘考试（广东统考）《基本能力测试》解析.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed0d762e3faa028d011c3452eee0fea2393f0bf9",
+      "size": 14897484,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/ed0d762e3faa028d011c3452eee0fea2393f0bf9"
+    },
+    {
+      "path": "广东/事业单位/2025/2025年广东省事业单位高校毕业招聘考试试卷及答案-版本2（可看可不看）.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d649aa9a349070c59722c744c7faa3fbdb715f2",
+      "size": 944843,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/9d649aa9a349070c59722c744c7faa3fbdb715f2"
+    }
+  ]
+}

@@ -1,5 +1,515 @@
 [
   {
+    "id": "SYDW2022-p09-i01",
+    "path": "assets/SYDW2022/SYDW2022-p09-i01.png",
+    "paper_id": "SYDW2022",
+    "source_page": 9,
+    "source_bbox_points": [
+      75.25,
+      523.0,
+      260.25,
+      712.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 740,
+    "height": 759,
+    "sha256": "256e3d75fb3e659693d233b46055a6641ac7d520f273d39139906c2b2fff0767",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2022-p10-i01",
+    "path": "assets/SYDW2022/SYDW2022-p10-i01.png",
+    "paper_id": "SYDW2022",
+    "source_page": 10,
+    "source_bbox_points": [
+      66.25,
+      173.0,
+      429.5,
+      330.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1453,
+    "height": 631,
+    "sha256": "20b1a8dea6d703c6886e3bb94cabfb6ec5fa7479d55f6be044d0ea7e38a1b9b2",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2022-p10-i02",
+    "path": "assets/SYDW2022/SYDW2022-p10-i02.png",
+    "paper_id": "SYDW2022",
+    "source_page": 10,
+    "source_bbox_points": [
+      65.25,
+      376.5,
+      420.25,
+      521.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1420,
+    "height": 581,
+    "sha256": "e5bffc4afda333526dd26d99e58a3f915e1af31c3c692c529356605ffa19fc60",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2022-p10-i03",
+    "path": "assets/SYDW2022/SYDW2022-p10-i03.png",
+    "paper_id": "SYDW2022",
+    "source_page": 10,
+    "source_bbox_points": [
+      66.75,
+      562.5,
+      375.25,
+      736.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1234,
+    "height": 695,
+    "sha256": "3fdaa9e7be39316bb0eefa6fe31d6cc6dcae6a967c33e168639e20c2b2c964b9",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2022-p11-i01",
+    "path": "assets/SYDW2022/SYDW2022-p11-i01.png",
+    "paper_id": "SYDW2022",
+    "source_page": 11,
+    "source_bbox_points": [
+      77.5,
+      94.5,
+      287.0,
+      331.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 838,
+    "height": 949,
+    "sha256": "bd0ac6d5539ccda7fded0673d7f75e63e409c8ee283f9a4b7cd23fce86ded80a",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2022-p11-i02",
+    "path": "assets/SYDW2022/SYDW2022-p11-i02.png",
+    "paper_id": "SYDW2022",
+    "source_page": 11,
+    "source_bbox_points": [
+      74.75,
+      371.5,
+      345.25,
+      505.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1082,
+    "height": 534,
+    "sha256": "23da41917738251ec9839d9d9768ac0140061f9aeb41705e01f8a44a2445bb03",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2022-p11-i03",
+    "path": "assets/SYDW2022/SYDW2022-p11-i03.png",
+    "paper_id": "SYDW2022",
+    "source_page": 11,
+    "source_bbox_points": [
+      70.75,
+      553.25,
+      373.0,
+      721.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1209,
+    "height": 673,
+    "sha256": "8b2820cb324e8337fa17137bdc656505d592024008dbb7f4cd746847cf98668c",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2022-p12-i01",
+    "path": "assets/SYDW2022/SYDW2022-p12-i01.png",
+    "paper_id": "SYDW2022",
+    "source_page": 12,
+    "source_bbox_points": [
+      81.5,
+      85.75,
+      402.5,
+      205.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1284,
+    "height": 477,
+    "sha256": "10cc486630c72ede86920adc18af9083c0a841a12926a43101e151d4294335ac",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2022-p12-i02",
+    "path": "assets/SYDW2022/SYDW2022-p12-i02.png",
+    "paper_id": "SYDW2022",
+    "source_page": 12,
+    "source_bbox_points": [
+      70.5,
+      261.0,
+      400.75,
+      343.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1321,
+    "height": 328,
+    "sha256": "8025f71f175a6a6b2ef024d55b053441e4182bd4ff07dee57cbcdb2083de4a94",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2022-p12-i03",
+    "path": "assets/SYDW2022/SYDW2022-p12-i03.png",
+    "paper_id": "SYDW2022",
+    "source_page": 12,
+    "source_bbox_points": [
+      74.25,
+      401.0,
+      374.25,
+      531.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1200,
+    "height": 520,
+    "sha256": "a11fb3716f10c22aa19889b60898ce5feecefdc9ff5b6a01c9bf828187aaf1f8",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2022-p12-i04",
+    "path": "assets/SYDW2022/SYDW2022-p12-i04.png",
+    "paper_id": "SYDW2022",
+    "source_page": 12,
+    "source_bbox_points": [
+      93.5,
+      602.0,
+      370.0,
+      732.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1106,
+    "height": 522,
+    "sha256": "b67ed410b16671e27a98970886d504855c9576adab271eb0b4b1e65cce3f59e4",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2022-p16-i01",
+    "path": "assets/SYDW2022/SYDW2022-p16-i01.png",
+    "paper_id": "SYDW2022",
+    "source_page": 16,
+    "source_bbox_points": [
+      72.75,
+      80.5,
+      535.75,
+      217.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1852,
+    "height": 549,
+    "sha256": "61e579e6484619c42858cdb1eba402aaa2c50026d8eae8933c1d3a1c335f8680",
+    "transcription": "图8 规模以上工业天然气产量月度走势；图9 天然气进口月度走势（两幅柱线组合图并排）\n\n| 月份 | 图8 日均产量（亿立方米） | 图8 当月增速（%） | 图9 当月进口量（万吨） | 图9 当月增速（%） |\n| --- | --- | --- | --- | --- |\n| 2020年12月 | 6.0 | 13.7 | 1123 | 18.4 |\n| 2021年1-2月 | 5.9 | 13.5 | 2080 | 17.4 |\n| 3月 | 6.0 | 12.1 | 873 | 27.1 |\n| 4月 | 5.6 | 7.0 | 1015 | 32.4 |\n| 5月 | 5.4 | 5.8 | 1032 | 33.1 |\n| 6月 | 5.7 | 13.1 | 1021 | 22.9 |\n| 7月 | 5.1 | 9.8 | 934 | 27.9 |\n| 8月 | 5.1 | 11.3 | 1044 | 12.2 |\n| 9月 | 5.2 | 7.1 | 1062 | 23.6 |\n| 10月 | 5.3 | 0.5 | 938 | 25.5 |\n| 11月 | 5.9 | 4.4 | 1073 | 17.8 |\n| 12月 | 6.2 | 2.3 | 1165 | 3.8 |\n\n柱为日均产量（图8）、当月进口量（图9），折线为当月增速，数值照图中标注转写。图8左轴0—10、右轴-60—30；图9左轴400—2800、右轴-140—40。"
+  },
+  {
+    "id": "SYDW2022-p16-i02",
+    "path": "assets/SYDW2022/SYDW2022-p16-i02.png",
+    "paper_id": "SYDW2022",
+    "source_page": 16,
+    "source_bbox_points": [
+      76.25,
+      551.75,
+      324.75,
+      714.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 994,
+    "height": 652,
+    "sha256": "20d2467857b2d239e764c42630ef8113e9bd4af6b166b7b2b173894364f18268",
+    "transcription": "四幅折线示意图（无坐标刻度），每幅6个点，依次对应2021年7—12月。按各点的竖直位置排序（脚本量取点心坐标，1为最高）：A：5、3、4、6、1、2（第2、6点几乎等高）；B：5、4、6、2、1、3；C：5、6、3、1、4、2；D：2、4、5、6、1、3（第2—4点几乎等高，第1、6点几乎等高）。"
+  },
+  {
+    "id": "SYDW2022-p17-i02",
+    "path": "assets/SYDW2022/SYDW2022-p17-i02.png",
+    "paper_id": "SYDW2022",
+    "source_page": 17,
+    "source_bbox_points": [
+      71.0,
+      185.5,
+      517.25,
+      342.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1785,
+    "height": 626,
+    "sha256": "a012ccb00b3d6c401f93ee14ab677195ea50cc6d12048ba50a4c20957b439f6d",
+    "transcription": "2015-2020年A国消费电子新机出货量（单位：亿台）\n\n| 年份 | 智能手机 | 平板电脑 | 笔记本电脑 | 其他 |\n| --- | --- | --- | --- | --- |\n| 2015年 | 4.27 | 0.26 | 0.38 | 0.35 |\n| 2016年 | 4.65 | 0.26 | 0.36 | 0.46 |\n| 2017年 | 4.44 | 0.22 | 0.36 | 0.66 |\n| 2018年 | 3.96 | 0.22 | 0.35 | 0.79 |\n| 2019年 | 3.67 | 0.22 | 0.36 | 1.17 |\n| 2020年 | 3.33 | 0.23 | 0.39 | 1.43 |\n\n2020年四项合计5.38亿台，与正文一致。"
+  },
+  {
+    "id": "SYDW2022-p18-i01",
+    "path": "assets/SYDW2022/SYDW2022-p18-i01.png",
+    "paper_id": "SYDW2022",
+    "source_page": 18,
+    "source_bbox_points": [
+      76.0,
+      85.5,
+      235.25,
+      168.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 637,
+    "height": 331,
+    "sha256": "0c549c14ead381526c2f7b953188190b1f48aacc19abda8979d2ad113055c7c4",
+    "transcription": "折线示意图（无坐标刻度），5个点依次对应2016—2020年。按各点的竖直位置排序（脚本量取点心坐标，1为最高）：5、3、4、1、2。"
+  },
+  {
+    "id": "SYDW2023-p09-i01",
+    "path": "assets/SYDW2023/SYDW2023-p09-i01.png",
+    "paper_id": "SYDW2023",
+    "source_page": 9,
+    "source_bbox_points": [
+      88.75,
+      628.25,
+      189.5,
+      755.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 403,
+    "height": 509,
+    "sha256": "47bc2551ac668e15b0bb4fae3cf802b53058d0a51eecbc051c1843c12e080326",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2023-p10-i01",
+    "path": "assets/SYDW2023/SYDW2023-p10-i01.png",
+    "paper_id": "SYDW2023",
+    "source_page": 10,
+    "source_bbox_points": [
+      72.75,
+      447.25,
+      293.75,
+      563.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 884,
+    "height": 465,
+    "sha256": "b2735f6c6fd8f927eb82582821097b28d184aabace559b05a6fe7c7d1bc0eacd",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2023-p10-i02",
+    "path": "assets/SYDW2023/SYDW2023-p10-i02.png",
+    "paper_id": "SYDW2023",
+    "source_page": 10,
+    "source_bbox_points": [
+      72.25,
+      603.75,
+      305.25,
+      700.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 932,
+    "height": 385,
+    "sha256": "4d1d7a221ed247066599ddcc6e5cf7a35910765bbe9753d34bca6142f77a5dca",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2023-p11-i01",
+    "path": "assets/SYDW2023/SYDW2023-p11-i01.png",
+    "paper_id": "SYDW2023",
+    "source_page": 11,
+    "source_bbox_points": [
+      64.5,
+      70.75,
+      295.5,
+      188.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 924,
+    "height": 471,
+    "sha256": "ac26e3c552acc5a8bbb7290b7d873bdd9bfd8983f9f288d42dfe011b298fb4ae",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2023-p11-i02",
+    "path": "assets/SYDW2023/SYDW2023-p11-i02.png",
+    "paper_id": "SYDW2023",
+    "source_page": 11,
+    "source_bbox_points": [
+      68.0,
+      230.25,
+      342.5,
+      347.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1098,
+    "height": 470,
+    "sha256": "ce6345e623895959b6cdebe95f6efc5fa7a13ec9aa794cb6385bb9fc0de2543f",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2023-p11-i03",
+    "path": "assets/SYDW2023/SYDW2023-p11-i03.png",
+    "paper_id": "SYDW2023",
+    "source_page": 11,
+    "source_bbox_points": [
+      80.25,
+      399.75,
+      205.5,
+      565.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 501,
+    "height": 661,
+    "sha256": "a5083f68e0fd427783e8d9658c2224a390fff1712f581c3dbd21968c1aa6098f",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2023-p11-i04",
+    "path": "assets/SYDW2023/SYDW2023-p11-i04.png",
+    "paper_id": "SYDW2023",
+    "source_page": 11,
+    "source_bbox_points": [
+      80.25,
+      632.25,
+      305.5,
+      747.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 901,
+    "height": 461,
+    "sha256": "bb922c41cd9de08f64cc2b458764171836e13e28bc41d595ad179a9216e8514b",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2023-p12-i01",
+    "path": "assets/SYDW2023/SYDW2023-p12-i01.png",
+    "paper_id": "SYDW2023",
+    "source_page": 12,
+    "source_bbox_points": [
+      73.0,
+      104.0,
+      290.75,
+      279.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 871,
+    "height": 702,
+    "sha256": "565a5da92aae86fa3834a4d95337f6f5aa4fcaf19eda3c8f5d4160ddbe788295",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2023-p12-i02",
+    "path": "assets/SYDW2023/SYDW2023-p12-i02.png",
+    "paper_id": "SYDW2023",
+    "source_page": 12,
+    "source_bbox_points": [
+      103.5,
+      336.25,
+      320.75,
+      454.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 869,
+    "height": 471,
+    "sha256": "ec85531330ee0fc4d01f79a33327d3f1658433137b3070d7aa396104c62b6226",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2023-p12-i03",
+    "path": "assets/SYDW2023/SYDW2023-p12-i03.png",
+    "paper_id": "SYDW2023",
+    "source_page": 12,
+    "source_bbox_points": [
+      70.25,
+      512.75,
+      349.5,
+      719.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1117,
+    "height": 827,
+    "sha256": "71565ee95c599ea4007f496363d190158232cde0e1d9411572df2bb8bdfde45e",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2023-p13-i01",
+    "path": "assets/SYDW2023/SYDW2023-p13-i01.png",
+    "paper_id": "SYDW2023",
+    "source_page": 13,
+    "source_bbox_points": [
+      100.5,
+      111.75,
+      355.25,
+      235.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1019,
+    "height": 493,
+    "sha256": "6e8dbde63251c44100c3c3e1d43f255c7d7ded743e0ddeea1f1aac92215899ff",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2023-p16-i01",
+    "path": "assets/SYDW2023/SYDW2023-p16-i01.png",
+    "paper_id": "SYDW2023",
+    "source_page": 16,
+    "source_bbox_points": [
+      68.5,
+      187.0,
+      476.0,
+      419.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1630,
+    "height": 929,
+    "sha256": "8cddaffb2bdb7b9edad4cdfa68135428c15f8887993a8afeb32f1904649ce48f",
+    "transcription": "广东全社会就业人员（万人）（柱状图）\n\n| 年份 | 广东全社会就业人员（万人） |\n| --- | --- |\n| 2012年 | 6171 |\n| 2013年 | 6273 |\n| 2014年 | 6428 |\n| 2015年 | 6566 |\n| 2016年 | 6703 |\n| 2017年 | 6858 |\n| 2018年 | 6960 |\n| 2019年 | 6995 |\n| 2020年 | 7039 |\n| 2021年 | 7072 |\n\n纵轴刻度5600—7200，柱顶标数值。2021年比2012年增加901万人，与正文一致。"
+  },
+  {
+    "id": "SYDW2023-p17-i01",
+    "path": "assets/SYDW2023/SYDW2023-p17-i01.png",
+    "paper_id": "SYDW2023",
+    "source_page": 17,
+    "source_bbox_points": [
+      86.25,
+      331.75,
+      443.75,
+      525.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1430,
+    "height": 775,
+    "sha256": "d5022c105ffba7f4c9e3a5ea91cb4e7b3f989b6a18b5ed0a70cf49d987cde53c",
+    "transcription": "四幅折线示意图（无坐标刻度），每幅有第一产业（实线、圆点）、第二产业（虚线、方块）、第三产业（点线、三角）三条线，横轴为2012年、2021年两点。按点的竖直位置（脚本量取标记中心坐标）从高到低：A：2012年第二、第三产业同高（两点重合），第一产业最低；2021年第二＞第三＞第一（第一产业两年持平）。B：2012年第三＞第一＞第二；2021年第三＞第二＞第一。C：2012年第二＞第一＞第三；2021年第三＞第二＞第一。D：2012年第二＞第三＞第一；2021年第三＞第二＞第一。"
+  },
+  {
+    "id": "SYDW2023-p18-i01",
+    "path": "assets/SYDW2023/SYDW2023-p18-i01.png",
+    "paper_id": "SYDW2023",
+    "source_page": 18,
+    "source_bbox_points": [
+      64.5,
+      75.75,
+      483.5,
+      348.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1676,
+    "height": 1090,
+    "sha256": "763feef9d5719c0b8edd1801e538ae1f51d420fc07b24f601b1b3e103b2506d0",
+    "transcription": "2020年12月-2021年6月各类互联网应用用户规模和增长率情况\n\n| 大类 | 应用类别 | 2020年12月用户规模（万） | 2021年6月用户规模（万） | 增长率 |\n| --- | --- | --- | --- | --- |\n| 基础应用类 | 即时通信 | 98111 | 98330 | 0.2% |\n| 基础应用类 | 搜索引擎 | 76977 | 79544 | 3.3% |\n| 基础应用类 | 网络新闻 | 74274 | 75997 | 2.3% |\n| 基础应用类 | 在线办公 | 34560 | 38065 | 10.1% |\n| 商务交易类 | 网络支付 | 85434 | 87221 | 2.1% |\n| 商务交易类 | 网络购物 | 78241 | 81206 | 3.8% |\n| 商务交易类 | 网上外卖 | 41883 | 46859 | 11.9% |\n| 商务交易类 | 在线旅行预定 | 34244 | 36655 | 7.0% |\n| 网络娱乐类 | 网络视频（含短视频） | 92677 | 94384 | 1.8% |\n| 网络娱乐类 | 网络直播 | 61685 | 63769 | 3.4% |\n| 网络娱乐类 | 网络游戏 | 51793 | 50925 | -1.7% |\n| 网络娱乐类 | 网络音乐 | 65825 | 68098 | 3.5% |\n| 公共服务类 | 网约车 | 36528 | 39651 | 8.5% |\n| 公共服务类 | 在线教育 | 34171 | 32493 | -4.9% |\n| 公共服务类 | 在线医疗 | 21480 | 23933 | 11.4% |\n\n原表“大类”为跨行合并的单元格，转写时逐行重复；各行增长率均可由两期用户规模复算。"
+  },
+  {
+    "id": "SYDW2023-p18-i02",
+    "path": "assets/SYDW2023/SYDW2023-p18-i02.png",
+    "paper_id": "SYDW2023",
+    "source_page": 18,
+    "source_bbox_points": [
+      80.25,
+      488.0,
+      390.5,
+      709.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1241,
+    "height": 887,
+    "sha256": "2ca34ff58c193b2d1c90e499fd5614425243d578d8f984b82c9937bb91754dfb",
+    "transcription": "我国网民年龄结构（柱状图）\n\n| 年龄段 | 占比 |\n| --- | --- |\n| 10岁以下 | 3.3% |\n| 10-19岁 | 12.3% |\n| 20-29岁 | 17.4% |\n| 30-39岁 | 20.3% |\n| 40-49岁 | 18.7% |\n| 50-59岁 | 15.9% |\n| 60岁以上 | 12.2% |\n\n图下注：“网民指过去半年内使用过互联网的6周岁及以上我国居民”。七项合计100.1%（原资料舍入），照录。"
+  },
+  {
     "id": "SYDW2024-p06-i06",
     "path": "assets/SYDW2024/SYDW2024-p06-i06.png",
     "paper_id": "SYDW2024",
@@ -219,6 +729,261 @@
     "height": 773,
     "sha256": "cb701fbf0d5f3cbe8ce115805f2379d75ccbde9a86321d099607d3c183b6c906",
     "transcription": "2018-2022年广东省海洋捕捞和海水养殖情况\n\n| 年份 | 海洋捕捞（万吨） | 海水养殖（万吨） |\n| --- | --- | --- |\n| 2018年 | 139.83 | 316.73 |\n| 2019年 | 126.36 | 329.13 |\n| 2020年 | 119.29 | 331.24 |\n| 2021年 | 118.8 | 336.24 |\n| 2022年 | 118.72 | 339.67 |\n\n柱状图，纵轴刻度0—400；黑柱为海洋捕捞，白柱为海水养殖，柱顶标数值。"
+  },
+  {
+    "id": "SYDW2025-p06-i01",
+    "path": "assets/SYDW2025/SYDW2025-p06-i01.png",
+    "paper_id": "SYDW2025",
+    "source_page": 6,
+    "source_bbox_points": [
+      70.25,
+      87.75,
+      221.75,
+      138.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 606,
+    "height": 201,
+    "sha256": "def2ac8ae17e1b769d806f27a4349d6411f577d86c6c8c5ed592bad598d0f079",
+    "transcription": "3×3数表（原卷为图片）\n\n| 4 | 6 | 9 |\n| --- | --- | --- |\n| 12 | 9 | 2 |\n| 18 | ？ | 3 |\n\n原图为无表头的三行三列数表，转写时把第一行排在表头位置；第三行第二格为问号。"
+  },
+  {
+    "id": "SYDW2025-p06-i04",
+    "path": "assets/SYDW2025/SYDW2025-p06-i04.png",
+    "paper_id": "SYDW2025",
+    "source_page": 6,
+    "source_bbox_points": [
+      72.5,
+      573.5,
+      262.0,
+      725.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 758,
+    "height": 609,
+    "sha256": "408ed6588b9cd78e5ac990a8286aead6549ec6b758250ef1445a55cbd318a6dc",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2025-p07-i01",
+    "path": "assets/SYDW2025/SYDW2025-p07-i01.png",
+    "paper_id": "SYDW2025",
+    "source_page": 7,
+    "source_bbox_points": [
+      73.25,
+      238.75,
+      540.0,
+      474.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1867,
+    "height": 944,
+    "sha256": "506301f7371e7b6cc96e4daba7ae9163cb78557cc4ece61399449c887e016715",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2025-p07-i02",
+    "path": "assets/SYDW2025/SYDW2025-p07-i02.png",
+    "paper_id": "SYDW2025",
+    "source_page": 7,
+    "source_bbox_points": [
+      76.5,
+      529.0,
+      535.75,
+      719.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1837,
+    "height": 761,
+    "sha256": "29c53b31a736b7f486ff169e1dac20d1dbfa99626c3e91635de0ec19ee6d75b5",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2025-p08-i01",
+    "path": "assets/SYDW2025/SYDW2025-p08-i01.png",
+    "paper_id": "SYDW2025",
+    "source_page": 8,
+    "source_bbox_points": [
+      40.75,
+      29.75,
+      511.0,
+      211.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1881,
+    "height": 726,
+    "sha256": "d262068b7cc6b46e99de2d346410e162e0c1de96f7bd9e666499ebd3453eb204",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2025-p08-i02",
+    "path": "assets/SYDW2025/SYDW2025-p08-i02.png",
+    "paper_id": "SYDW2025",
+    "source_page": 8,
+    "source_bbox_points": [
+      77.25,
+      256.5,
+      537.5,
+      490.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1841,
+    "height": 936,
+    "sha256": "cf4fae8a7b5f4bfb24d5bc3919181364009ea94742e2d21120d4048b30361e03",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2025-p08-i03",
+    "path": "assets/SYDW2025/SYDW2025-p08-i03.png",
+    "paper_id": "SYDW2025",
+    "source_page": 8,
+    "source_bbox_points": [
+      68.5,
+      535.75,
+      544.0,
+      776.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1902,
+    "height": 964,
+    "sha256": "07cc2d3b344e229465b0c938208e0772ad94c291d218bece32a1f20645970e0b",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2025-p09-i01",
+    "path": "assets/SYDW2025/SYDW2025-p09-i01.png",
+    "paper_id": "SYDW2025",
+    "source_page": 9,
+    "source_bbox_points": [
+      83.0,
+      54.75,
+      509.25,
+      263.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1705,
+    "height": 833,
+    "sha256": "56feed0c432eefb0cc59a9fa52dca41ff2145fcdd29adac873cfe1b7b29ac9bf",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2025-p09-i02",
+    "path": "assets/SYDW2025/SYDW2025-p09-i02.png",
+    "paper_id": "SYDW2025",
+    "source_page": 9,
+    "source_bbox_points": [
+      68.5,
+      315.0,
+      544.0,
+      435.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1902,
+    "height": 483,
+    "sha256": "1b891ba291c8b7858119063f1ac1895b956eb74d0f6de90a4c38920a35c127e4",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2025-p09-i03",
+    "path": "assets/SYDW2025/SYDW2025-p09-i03.png",
+    "paper_id": "SYDW2025",
+    "source_page": 9,
+    "source_bbox_points": [
+      68.5,
+      483.25,
+      544.0,
+      684.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1902,
+    "height": 805,
+    "sha256": "4ee1bacfa1877ad8224209ac05c54914ce420047211ecc351448ac80f0391700",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2025-p10-i01",
+    "path": "assets/SYDW2025/SYDW2025-p10-i01.png",
+    "paper_id": "SYDW2025",
+    "source_page": 10,
+    "source_bbox_points": [
+      38.25,
+      26.75,
+      514.0,
+      232.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1903,
+    "height": 821,
+    "sha256": "cd2bd9f9705ef4bdc7863bc35f000eecea39ed1b1c5341f4a5dc38340df60901",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2025-p10-i02",
+    "path": "assets/SYDW2025/SYDW2025-p10-i02.png",
+    "paper_id": "SYDW2025",
+    "source_page": 10,
+    "source_bbox_points": [
+      75.0,
+      277.5,
+      395.5,
+      382.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1282,
+    "height": 421,
+    "sha256": "371ab4b518dcee1de5255e735b873c6816565e5962757cf203b212d61da94ee1",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2025-p13-i01",
+    "path": "assets/SYDW2025/SYDW2025-p13-i01.png",
+    "paper_id": "SYDW2025",
+    "source_page": 13,
+    "source_bbox_points": [
+      44.0,
+      26.75,
+      496.0,
+      362.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1808,
+    "height": 1344,
+    "sha256": "4cfeea4994734a0d9815292f4309805796f4fe8d92126b7b89b96fa696dc4ba8",
+    "transcription": "新业态劳动者中不同收入计算方式的占比情况（饼图）\n\n| 收入计算方式 | 占比 |\n| --- | --- |\n| 固定薪资（月薪、年薪等） | 46% |\n| 计件工资/按订单计算 | 21% |\n| 按项目提成 | 11% |\n| 按流量/收益提成 | 10% |\n| 计时工资 | 6% |\n| 按股份分红/收益 | 6% |\n\n各扇区标签与百分数照图转写，合计100%。"
+  },
+  {
+    "id": "SYDW2025-p13-i02",
+    "path": "assets/SYDW2025/SYDW2025-p13-i02.png",
+    "paper_id": "SYDW2025",
+    "source_page": 13,
+    "source_bbox_points": [
+      44.25,
+      359.5,
+      520.25,
+      536.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1904,
+    "height": 708,
+    "sha256": "16e4682562109ef5eb000670162adcd7b7f2a531c7892a395066157861991c45",
+    "transcription": "不同就业类型劳动者的工作及社会保险状况\n\n| 项目 | | 新业态劳动者 | 传统正规就业者 | 传统灵活就业者 |\n| --- | --- | --- | --- | --- |\n| 工作时间 | 每月工作天数 | 24.05 | 23.34 | 22.77 |\n| 工作时间 | 每天工作小时数 | 8.41 | 8.54 | 8.94 |\n| 工作时间 | 每周工作小时数 | 48.45 | 47.18 | 49.48 |\n| 小时平均工资（元） | | 52.38 | 48.04 | 34.45 |\n| 拥有各类保险的劳动者占比（%） | 养老保险 | 70.72 | 86.17 | 58.93 |\n| 拥有各类保险的劳动者占比（%） | 医疗保险 | 87.84 | 94.99 | 86.20 |\n| 拥有各类保险的劳动者占比（%） | 失业保险 | 49.06 | 71.87 | 13.41 |\n| 拥有各类保险的劳动者占比（%） | 工伤保险 | 51.87 | 75.47 | 18.75 |\n\n原表“工作时间”“拥有各类保险的劳动者占比（%）”为跨行合并的单元格，转写时逐行重复。"
+  },
+  {
+    "id": "SYDW2025-p13-i03",
+    "path": "assets/SYDW2025/SYDW2025-p13-i03.png",
+    "paper_id": "SYDW2025",
+    "source_page": 13,
+    "source_bbox_points": [
+      55.75,
+      546.0,
+      510.0,
+      675.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1817,
+    "height": 517,
+    "sha256": "672381beec6d1c3bd157de6f26639e3c12c08a6cf634096dc30335f149186767",
+    "transcription": "不同就业类型劳动者的户籍比例及人口流动模式（单位：%）\n\n| 分类 | | 新业态劳动者 | 传统正规就业者 | 传统灵活就业者 |\n| --- | --- | --- | --- | --- |\n| 户籍 | 农业户口 | 63.45 | 47.89 | 76.95 |\n| 户籍 | 非农业户口 | 36.55 | 52.11 | 23.05 |\n| 人口流动 | 本地 | 66.86 | 70.53 | 81.73 |\n| 人口流动 | 本省跨县流动 | 15.07 | 15.67 | 9.96 |\n| 人口流动 | 跨省流动 | 18.07 | 13.79 | 8.31 |\n\n原表“户籍”“人口流动”为跨行合并的单元格，转写时逐行重复。传统正规就业者人口流动三项之和为99.99（原资料舍入），照录。"
   },
   {
     "id": "SYDW2026-image04",
