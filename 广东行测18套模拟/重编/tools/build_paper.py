@@ -32,7 +32,7 @@ MOCK_REL = "模考/2026下半年广东卷_16-33季_AI可读"
 MOCK = ROOT / MOCK_REL
 JZ_REL = "江浙行测_AI题库"
 GK_REL = "国考/言语理解/2016-2025/all.jsonl"
-GD_DIRS = ("广东/行测/2013-2021", "广东/行测/2022-2026")   # 广东省考真题题库（M09起的题源）
+GD_DIRS = ("广东/行测/2013-2021", "广东/行测/2022-2026", "广东/事业单位/结构化")   # 广东省考、事业单位统考真题题库（M09起的题源）
 SEASON = {f"M{i:02d}": 15 + i for i in range(1, 19)}   # M01对第16季……M18对第33季
 VERSION = "1.0.0"
 
@@ -69,7 +69,7 @@ JZ_A = {a["question_id"]: a for a in jl(ROOT / JZ_REL / "answers.jsonl")}
 GK_Q = {q["id"]: q for q in jl(ROOT / GK_REL)}
 GD_Q = {}                                   # id → (题库目录, 题目)
 for _d in GD_DIRS:
-    for _f in sorted((ROOT / _d).glob("GD20*.jsonl")):
+    for _f in sorted(list((ROOT / _d).glob("GD20*.jsonl")) + list((ROOT / _d).glob("SYDW20*.jsonl"))):
         for _q in jl(_f):
             GD_Q[_q["id"]] = (_d, _q)
 
@@ -156,6 +156,10 @@ def describe_source(sid):
         d = GD_Q[sid][0] if sid in GD_Q else GD_DIRS[0]
         paper = sid.rsplit("-Q", 1)[0]
         return f"{m.group(1)}年广东省考{variant}第{int(m.group(3))}题", f"{d}/{paper}.jsonl", "真题"
+    m = re.match(r"SYDW(\d{4})-Q(\d+)$", sid)
+    if m:
+        d = GD_Q[sid][0] if sid in GD_Q else "广东/事业单位/结构化"
+        return f"{m.group(1)}年广东事业单位统考第{int(m.group(2))}题", f"{d}/SYDW{m.group(1)}.jsonl", "真题"
     m = re.match(r"GKYY-(\d{4})-(\d+)$", sid)
     if m:
         return f"{m.group(1)}年国考言语（整理库第{int(m.group(2))}条）", GK_REL, "真题"

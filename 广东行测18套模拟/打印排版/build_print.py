@@ -474,11 +474,15 @@ class FigureSizer:
                 src = (x.get("sources") or [{}])[0]
                 self.jz[k] = src.get("bbox")
         self.gd = {}                     # 广东真题题库（2013—2021、2022—2026）：裁图在源PDF中的框（pt）
-        for d in ("广东/行测/2013-2021", "广东/行测/2022-2026"):
+        for d in ("广东/行测/2013-2021", "广东/行测/2022-2026", "广东/事业单位/结构化"):
             p = REPO / d / "assets-manifest.json"
             if p.exists():
                 for x in json.loads(p.read_text(encoding="utf-8")):
-                    self.gd[x["id"]] = x.get("source_bbox_points")
+                    box = x.get("source_bbox_points")
+                    if not box and x.get("docx_extent_points"):      # Word原图：按文档中的显示尺寸
+                        w, h = x["docx_extent_points"][:2]
+                        box = [0, 0, w, h]
+                    self.gd[x["id"]] = box
 
     def size_mm(self, block: dict, in_material: bool = False) -> tuple[float, float, str]:
         w, h, how = self._size_mm(block, in_material)
@@ -503,7 +507,7 @@ class FigureSizer:
             stem = Path(block["path"]).stem
             if "江浙行测_AI题库/images" in block["path"] and stem in self.jz:
                 bbox, how = self.jz[stem], "源PDF印刷尺寸（江浙图片清单）"
-            elif "广东/行测/" in block["path"] and stem in self.gd:
+            elif ("广东/行测/" in block["path"] or "广东/事业单位/" in block["path"]) and stem in self.gd:
                 bbox, how = self.gd[stem], "源PDF印刷尺寸（广东真题图片清单）"
         if bbox:
             w = (bbox[2] - bbox[0]) / 72 * 25.4
