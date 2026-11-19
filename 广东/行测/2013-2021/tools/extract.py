@@ -1373,8 +1373,8 @@ def build(paper: str, work: Path | None):
         if leak:
             problems.append(f'{fid} 裁剪框内含文字层字符：{leak}')
         x0, t0, x1, b0 = bbox_pt
-        inl = [o.key for o in page_by_no[im.page].images if o.inline and o.x1 > x0 + 0.5 and o.x0 < x1 - 0.5
-               and o.bottom > t0 + 0.5 and o.top < b0 - 0.5]
+        inl = [o.key for o in page_by_no[im.page].images if o.inline and o.x1 > x0 + 1 and o.x0 < x1 - 1
+               and o.bottom > t0 + 1 and o.top < b0 - 1]     # 行内小图外框带白边，重叠超过 1pt 才报
         if inl:
             problems.append(f'{fid} 裁剪框压到行内小图：{"、".join(inl)}')
         manifest.append(dict(id=fid, path=f'assets/{paper}/{fid}.png', paper_id=paper, source_page=im.page,
