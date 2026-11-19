@@ -346,7 +346,7 @@ def verbal_items(paper):
 def solutions(paper):
     """各套解题记录合在一起查：换入的别季题，解题记录在那一季对应的套卷目录里。本套的记录优先。"""
     out = {}
-    for p in sorted(SEASON, key=lambda x: x == paper):
+    for p in sorted(set(SEASON) | {paper}, key=lambda x: (x == paper, x)):   # 加量套（S01起）不在季表里
         d = R / p / "解题"
         for f in ("quant_sci.json", "fig_logic.json", "data.json", "swaps.json"):
             for q in jload(d / f, []):
@@ -386,7 +386,7 @@ def subtype_of(n):
 
 
 def build(paper, dry=False):
-    season = SEASON[paper]
+    season = SEASON.get(paper)     # 加量套（S01起）不对应模考季，第31—90题全由编排的 sources 给出
     oldq = {q["number"]: q for q in jl(S / paper / "题目.jsonl")} if dry and (S / paper / "题目.jsonl").exists() else {}
 
     def placeholder(n, sec):   # 试排：政治、言语未齐时用旧卷题占位；新套没有旧卷就用空题占位
@@ -399,7 +399,7 @@ def build(paper, dry=False):
     pol, ver, sol = politics_items(paper), verbal_items(paper), solutions(paper)
 
     # 第31—90题的来源编号
-    src = {n: f"gd-mock-2026h2-s{season}-q{n}" for n in range(31, 91)}
+    src = {n: f"gd-mock-2026h2-s{season}-q{n}" for n in range(31, 91)} if season else {}
     if plan.get("science_order"):
         for pos, old in zip(range(66, 71), plan["science_order"]):
             src[pos] = f"gd-mock-2026h2-s{season}-q{old}"
@@ -628,6 +628,19 @@ PART_NAMES = [(1, "第一部分　政治理论"), (11, "第二部分　常识判
               (31, "第四部分　数量关系"), (46, "第五部分　判断推理"), (66, "第六部分　科学推理"), (71, "第七部分　资料分析")]
 
 
+def num_ranges(ns):
+    """[1,2,3,6,10] → “1—3、6、10”。"""
+    ns, out = sorted(ns), []
+    i = 0
+    while i < len(ns):
+        j = i
+        while j + 1 < len(ns) and ns[j + 1] == ns[j] + 1:
+            j += 1
+        out.append(f"{ns[i]}—{ns[j]}" if j - i >= 2 else "、".join(map(str, ns[i:j + 1])))
+        i = j + 1
+    return "、".join(out)
+
+
 def verbal_source_desc(paper):
     """编排说明题源表的第16—30题一行：按本套言语题的实际来源写。"""
     ids = [v["id"] for v in verbal_items(paper).values()]
@@ -676,7 +689,7 @@ def write_outputs(paper, questions, answers, registry, log, plan, out=None, ledg
     md.append("判断题在答题卡上正确涂A、错误涂B。\n")
     skipped = sorted(set(range(1, 91)) - set(answers))
     if skipped:
-        md.append("本套没有第" + "、".join(map(str, skipped)) + "题（表中记“—”），答题卡上这几题空着。\n")
+        md.append("本套没有第" + num_ranges(skipped) + "题（表中记“—”），答题卡上这几题空着。\n")
     for q in questions:
         n = q["number"]
         if n in starts:
@@ -695,8 +708,9 @@ def write_outputs(paper, questions, answers, registry, log, plan, out=None, ledg
     md = [f"# {paper}　编排说明（重编{VERSION}）\n",
           "## 题源\n",
           "| 题号 | 来源 |", "|---|---|",
-          "| 1—15 | 原创，依据《颜培天2027广东省考政治理论常识》讲义（含二十届五中全会《决定》）"
-          + ("；本套空出第" + "、".join(map(str, sorted(skip))) + "题（讲义材料不够，按用户决定不硬出）" if skip else "") + " |",
+          ("| 1—15 | 本套不出（加量套只练第16—90题，题号照真题位置） |" if set(range(1, 16)) <= skip else
+           "| 1—15 | 原创，依据《颜培天2027广东省考政治理论常识》讲义（含二十届五中全会《决定》）"
+           + ("；本套空出第" + "、".join(map(str, sorted(skip))) + "题（讲义材料不够，按用户决定不硬出）" if skip else "") + " |"),
           "| 16—30 | " + verbal_source_desc(paper) + " |",
           ("| 31—90 | 广东省考旧卷、事业单位统考真题（逐题来源见 `来源登记.jsonl`） |\n" if plan.get("sources")
            else f"| 31—90 | 粉笔2026下半年广东省考模考第{SEASON[paper]}季原题（个别调换见下） |\n"),
@@ -737,7 +751,7 @@ def main():
     else:
         write_outputs(paper, questions, answers, registry, log, plan)
     c = Counter(x["kind"] for x in log.items)
-    print(paper, "90题", dict(c))
+    print(paper, f"{len(questions)}题", dict(c))
 
 
 if __name__ == "__main__":

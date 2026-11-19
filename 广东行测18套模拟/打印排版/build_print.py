@@ -1151,8 +1151,9 @@ def body_html(paper_id: str, questions: list[dict], css_href: str, fonts_href: s
 # 封面与注意事项（粉笔样卷封面布局；注意事项按中公样卷，排在封面背面）
 # --------------------------------------------------------------------------
 def front_html(paper_no: int, n_parts: int, n_questions: int, minutes: int, subtitle: str,
-               badge: str, fonts_href: str, with_notice: bool) -> str:
-    title = f"行政职业能力测验（{cn_number(paper_no)}）"
+               badge: str, fonts_href: str, with_notice: bool, extra: bool = False) -> str:
+    # 加量套（S01起）标题注“加量”，与主套（M01—M18）区分
+    title = f"行政职业能力测验（{'加量' if extra else ''}{cn_number(paper_no)}）"
     badge_html = "<br>".join(html.escape(x) for x in badge.split("|"))
     notice = ""
     if with_notice:
@@ -1537,7 +1538,7 @@ def main() -> None:
         (tdp / "body.html").write_text(body, encoding="utf-8")
         n_parts = body.count('<section class="part">')
         front = front_html(paper_no, n_parts, len(questions), args.minutes, args.subtitle, args.badge,
-                           "fonts.css", not args.no_notice)
+                           "fonts.css", not args.no_notice, extra=bool(re.match(r"(_试排)?S\d", args.paper_id)))
         (tdp / "front.html").write_text(front, encoding="utf-8")
 
         layout = render(tdp / "body.html", tdp / "body.pdf")
