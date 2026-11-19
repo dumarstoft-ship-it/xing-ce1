@@ -1,0 +1,22 @@
+{
+  "paper_id": "GD2020-XJ",
+  "commit": "52f9811b22cad5410a7108dd0a07a879f1187aa5",
+  "sources": [
+    {
+      "path": "真题/2020年0809广东公务员考试《行测》真题（县级以上）（7道题暂缺）.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86de27ccb7b5dd495a31387aad8e3450450488cb",
+      "size": 1014800,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/86de27ccb7b5dd495a31387aad8e3450450488cb"
+    },
+    {
+      "path": "答案解析/2020年0809广东公务员考试《行测》真题（县级以上）参考答案及解析.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a6561527ff8f8f559506837ae220bcb29e7417d",
+      "size": 1389111,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/9a6561527ff8f8f559506837ae220bcb29e7417d"
+    }
+  ]
+}

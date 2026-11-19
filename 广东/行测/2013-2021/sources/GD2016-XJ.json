@@ -1,0 +1,22 @@
+{
+  "paper_id": "GD2016-XJ",
+  "commit": "52f9811b22cad5410a7108dd0a07a879f1187aa5",
+  "sources": [
+    {
+      "path": "真题/2016年广东公务员考试《行测》真题（县级卷）.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e80c198bd1bc2e342412e434e1e18a6979abcb3",
+      "size": 1173316,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/9e80c198bd1bc2e342412e434e1e18a6979abcb3"
+    },
+    {
+      "path": "答案解析/2016年广东公务员考试《行测》真题（县级卷）答案及解析.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c207a40efea6688519b31ca33a4eb5fc65cc8751",
+      "size": 931433,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/c207a40efea6688519b31ca33a4eb5fc65cc8751"
+    }
+  ]
+}

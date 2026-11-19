@@ -1,0 +1,22 @@
+{
+  "paper_id": "GD2019-XZ",
+  "commit": "52f9811b22cad5410a7108dd0a07a879f1187aa5",
+  "sources": [
+    {
+      "path": "真题/2019年广东公务员考试《行测》真题（乡镇级）.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84cf884ae843d7d2411757db8e9fd62a7f310433",
+      "size": 651825,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/84cf884ae843d7d2411757db8e9fd62a7f310433"
+    },
+    {
+      "path": "答案解析/2019年广东公务员考试《行测》真题（乡镇级）答案及解析.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a994a39ef6c4f94d76fa863f017138af8fd1577",
+      "size": 924634,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/8a994a39ef6c4f94d76fa863f017138af8fd1577"
+    }
+  ]
+}

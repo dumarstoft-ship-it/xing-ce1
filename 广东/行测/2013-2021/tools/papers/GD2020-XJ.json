@@ -1,0 +1,11 @@
+{
+  "year": 2020,
+  "title": "2020年广东行测（县级以上卷）",
+  "paper_variant": "县级以上卷",
+  "source_edition": "仓库原卷",
+  "question_pdf": "真题/2020年0809广东公务员考试《行测》真题（县级以上）（7道题暂缺）.pdf",
+  "answer_pdf": "答案解析/2020年0809广东公务员考试《行测》真题（县级以上）参考答案及解析.pdf",
+  "expected_questions": 100,
+  "missing_questions": [69, 70, 71, 72, 73, 74, 75],
+  "source_commit": "52f9811b22cad5410a7108dd0a07a879f1187aa5"
+}

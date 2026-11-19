@@ -1,0 +1,427 @@
+[
+  {
+    "id": "GD2018-p03-i07",
+    "path": "assets/GD2018/GD2018-p03-i07.png",
+    "paper_id": "GD2018",
+    "source_page": 3,
+    "source_bbox_points": [
+      260.75,
+      459.75,
+      357.25,
+      556.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 386,
+    "height": 386,
+    "sha256": "bb71b21995ad30e66f532e7fe3dd4def42b6198835043b0750444d0f2e109fad",
+    "transcription": ""
+  },
+  {
+    "id": "GD2018-p04-i01",
+    "path": "assets/GD2018/GD2018-p04-i01.png",
+    "paper_id": "GD2018",
+    "source_page": 4,
+    "source_bbox_points": [
+      230.25,
+      94.5,
+      385.0,
+      171.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 619,
+    "height": 308,
+    "sha256": "42cf5a1af8b4ec5c11459c5aaa5a008ab7597f72943f1f12bdadd7ca3debc6bc",
+    "transcription": ""
+  },
+  {
+    "id": "GD2018-p04-i02",
+    "path": "assets/GD2018/GD2018-p04-i02.png",
+    "paper_id": "GD2018",
+    "source_page": 4,
+    "source_bbox_points": [
+      187.0,
+      366.0,
+      435.0,
+      525.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 992,
+    "height": 637,
+    "sha256": "dd16ad52fd66e4416d8b8c2596ff452f35f74b8c4695ce460db8347a7072c0a3",
+    "transcription": ""
+  },
+  {
+    "id": "GD2018-p04-i03",
+    "path": "assets/GD2018/GD2018-p04-i03.png",
+    "paper_id": "GD2018",
+    "source_page": 4,
+    "source_bbox_points": [
+      168.0,
+      562.5,
+      450.5,
+      708.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1130,
+    "height": 584,
+    "sha256": "139a42a542a3d45e1957cf13edd4b82f6cf808fafceb687a5254a678b1dd0422",
+    "transcription": ""
+  },
+  {
+    "id": "GD2018-p05-i01",
+    "path": "assets/GD2018/GD2018-p05-i01.png",
+    "paper_id": "GD2018",
+    "source_page": 5,
+    "source_bbox_points": [
+      176.0,
+      58.25,
+      447.0,
+      170.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1084,
+    "height": 449,
+    "sha256": "a24eddec5ad0adf40b77b93dc4401a5bfc995b8f4648fbad974eee87b9125ef1",
+    "transcription": ""
+  },
+  {
+    "id": "GD2018-p05-i02",
+    "path": "assets/GD2018/GD2018-p05-i02.png",
+    "paper_id": "GD2018",
+    "source_page": 5,
+    "source_bbox_points": [
+      174.25,
+      221.25,
+      444.75,
+      360.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1082,
+    "height": 558,
+    "sha256": "720464e6b6c05c4733b0fbce77e3bba796c1ab625e23a39746cfb7daf912be63",
+    "transcription": ""
+  },
+  {
+    "id": "GD2018-p05-i03",
+    "path": "assets/GD2018/GD2018-p05-i03.png",
+    "paper_id": "GD2018",
+    "source_page": 5,
+    "source_bbox_points": [
+      189.5,
+      395.75,
+      432.5,
+      520.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 972,
+    "height": 499,
+    "sha256": "834c9ef8e51b6771b43205125576930cf0a7654504faaadc0b8f9c3f0b1788ce",
+    "transcription": ""
+  },
+  {
+    "id": "GD2018-p05-i04",
+    "path": "assets/GD2018/GD2018-p05-i04.png",
+    "paper_id": "GD2018",
+    "source_page": 5,
+    "source_bbox_points": [
+      169.0,
+      549.0,
+      450.5,
+      694.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1126,
+    "height": 580,
+    "sha256": "1089ce1d892eebee5d9fbff6ad0ea2acd7d6a59592f0e5ed5f7e4b87372d41ee",
+    "transcription": ""
+  },
+  {
+    "id": "GD2018-p06-i01",
+    "path": "assets/GD2018/GD2018-p06-i01.png",
+    "paper_id": "GD2018",
+    "source_page": 6,
+    "source_bbox_points": [
+      190.0,
+      45.5,
+      425.5,
+      167.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 942,
+    "height": 486,
+    "sha256": "00ee524d83a6cee661a0d598fcd1b763c9686f928c031a9b8fe2ba52f025dbda",
+    "transcription": ""
+  },
+  {
+    "id": "GD2018-p06-i02",
+    "path": "assets/GD2018/GD2018-p06-i02.png",
+    "paper_id": "GD2018",
+    "source_page": 6,
+    "source_bbox_points": [
+      194.25,
+      192.75,
+      424.75,
+      315.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 922,
+    "height": 492,
+    "sha256": "3cd01c6897e83b8fc0bccb9f23d198e1b2f73c11a4be988ed2d3287e85054425",
+    "transcription": ""
+  },
+  {
+    "id": "GD2018-p06-i03",
+    "path": "assets/GD2018/GD2018-p06-i03.png",
+    "paper_id": "GD2018",
+    "source_page": 6,
+    "source_bbox_points": [
+      188.5,
+      343.0,
+      428.5,
+      471.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 960,
+    "height": 513,
+    "sha256": "8535f2ed6b51e2d31a7e60a7c02b57254bfb392b3efc37354c9dc1a13c5d6fe4",
+    "transcription": ""
+  },
+  {
+    "id": "GD2018-p06-i04",
+    "path": "assets/GD2018/GD2018-p06-i04.png",
+    "paper_id": "GD2018",
+    "source_page": 6,
+    "source_bbox_points": [
+      167.5,
+      492.75,
+      450.25,
+      643.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1131,
+    "height": 604,
+    "sha256": "615ea5e7fbf65c7ae38904ef5a9e725cb0549feae2e07e14da32497d334a0f81",
+    "transcription": ""
+  },
+  {
+    "id": "GD2018-p09-i01",
+    "path": "assets/GD2018/GD2018-p09-i01.png",
+    "paper_id": "GD2018",
+    "source_page": 9,
+    "source_bbox_points": [
+      266.5,
+      250.75,
+      350.5,
+      393.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 336,
+    "height": 569,
+    "sha256": "2dc5222eb4570e121ca4df23f8d9bb9d936a0beb4dfafd5ab1c15d4560a5a2ad",
+    "transcription": ""
+  },
+  {
+    "id": "GD2018-p09-i02",
+    "path": "assets/GD2018/GD2018-p09-i02.png",
+    "paper_id": "GD2018",
+    "source_page": 9,
+    "source_bbox_points": [
+      234.25,
+      532.25,
+      398.0,
+      693.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 655,
+    "height": 643,
+    "sha256": "ab1cf494f8e0539d49c95f4dac7458fafafd7ccd65c89162153db4b9ef0dd870",
+    "transcription": ""
+  },
+  {
+    "id": "GD2018-p10-i01",
+    "path": "assets/GD2018/GD2018-p10-i01.png",
+    "paper_id": "GD2018",
+    "source_page": 10,
+    "source_bbox_points": [
+      244.25,
+      106.0,
+      374.75,
+      204.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 522,
+    "height": 395,
+    "sha256": "4aa99db036413fc7060ef83915a5fa9640e70902a95c177cf500fe895679cee2",
+    "transcription": ""
+  },
+  {
+    "id": "GD2018-p10-i04",
+    "path": "assets/GD2018/GD2018-p10-i04.png",
+    "paper_id": "GD2018",
+    "source_page": 10,
+    "source_bbox_points": [
+      262.5,
+      332.75,
+      355.25,
+      437.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 371,
+    "height": 417,
+    "sha256": "85b559aeee6eec28e9bb36208d80f0f78e47a66f0752be9c1245b69696e985d3",
+    "transcription": "伏安特性曲线：纵轴为I，横轴为U；R1、R2均为过原点的直线。U=10时，R1对应I=20，R2对应I=5（图中以虚线标出）。"
+  },
+  {
+    "id": "GD2018-p10-i13",
+    "path": "assets/GD2018/GD2018-p10-i13.png",
+    "paper_id": "GD2018",
+    "source_page": 10,
+    "source_bbox_points": [
+      200.0,
+      509.0,
+      418.75,
+      655.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 875,
+    "height": 584,
+    "sha256": "ae89491bc10dc98b27de5f4833d97a8035ffc02f78c77fd085119a5d49fcd4e3",
+    "transcription": ""
+  },
+  {
+    "id": "GD2018-p11-i01",
+    "path": "assets/GD2018/GD2018-p11-i01.png",
+    "paper_id": "GD2018",
+    "source_page": 11,
+    "source_bbox_points": [
+      229.25,
+      46.25,
+      386.5,
+      178.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 629,
+    "height": 530,
+    "sha256": "bf8f54b1b9ea1641687509d95f5a0223d7db8ebe8abdf9403114fd8c00e6eb81",
+    "transcription": ""
+  },
+  {
+    "id": "GD2018-p11-i02",
+    "path": "assets/GD2018/GD2018-p11-i02.png",
+    "paper_id": "GD2018",
+    "source_page": 11,
+    "source_bbox_points": [
+      172.5,
+      236.0,
+      445.5,
+      366.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1092,
+    "height": 521,
+    "sha256": "2f41a2112e9b4d14187a66117af5e854e6176f513a307c4dc2834245f603ff04",
+    "transcription": "图中标注：平面镜在左，视力表在右；平面镜到检查点3米，检查点到视力表1米。"
+  },
+  {
+    "id": "GD2018-p14-i01",
+    "path": "assets/GD2018/GD2018-p14-i01.png",
+    "paper_id": "GD2018",
+    "source_page": 14,
+    "source_bbox_points": [
+      109.25,
+      42.0,
+      509.25,
+      313.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1600,
+    "height": 1084,
+    "sha256": "b93abb759975cfc9f8e2db4a274ae4d88cccd5142edddb51fa88857e55595a13",
+    "transcription": "2012—2016年A市研究与发展（R&D）经费内部支出及其增长速度\n\n| 年份 | R&D经费内部支出（亿元） | 比上年增速 |\n| --- | --- | --- |\n| 2012年 | 7.90 |  |\n| 2013年 | 10.17 | 28.7% |\n| 2014年 | 12.34 | 21.3% |\n| 2015年 | 14.05 | 13.9% |\n| 2016年 | 19.55 | 39.1% |\n\n2012年没有增速数据点（空格不补值）；右侧纵轴刻度为0%—100%。"
+  },
+  {
+    "id": "GD2018-p15-i03",
+    "path": "assets/GD2018/GD2018-p15-i03.png",
+    "paper_id": "GD2018",
+    "source_page": 15,
+    "source_bbox_points": [
+      103.5,
+      111.75,
+      500.75,
+      353.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1589,
+    "height": 965,
+    "sha256": "0afba7194f400be7f0d01bd1c36330f1b97e141712c664fd6fd7d1e9c5f2e325",
+    "transcription": "2015年第一季度—2017年第四季度岗位空缺与求职人数比率变化趋势\n\n| 季度 | 岗位空缺与求职人数比率 |\n| --- | --- |\n| 2015年第一季度 | 1.12 |\n| 2015年第二季度 | 1.06 |\n| 2015年第三季度 | 1.09 |\n| 2015年第四季度 | 1.10 |\n| 2016年第一季度 | 1.07 |\n| 2016年第二季度 | 1.05 |\n| 2016年第三季度 | 1.10 |\n| 2016年第四季度 | 1.13 |\n| 2017年第一季度 | 1.13 |\n| 2017年第二季度 | 1.11 |\n| 2017年第三季度 | 1.16 |\n| 2017年第四季度 | 1.22 |"
+  },
+  {
+    "id": "GD2018-p15-i04",
+    "path": "assets/GD2018/GD2018-p15-i04.png",
+    "paper_id": "GD2018",
+    "source_page": 15,
+    "source_bbox_points": [
+      96.0,
+      398.5,
+      522.75,
+      503.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1707,
+    "height": 420,
+    "sha256": "4644e2e3ce6e9ad7b0ab033fdfa7a52d2617ee1d0e1ae6994ca577cde9133483",
+    "transcription": "2017年第四季度与去年同期相比东、中、西部市场供需变化情况\n\n| 区域 | 市场用人需求：增加量（万人） | 市场用人需求：增长率（%） | 求职人数：增加量（万人） | 求职人数：增长率（%） |\n| --- | --- | --- | --- | --- |\n| 东部 | 15 | 7.1 | -12.2 | -6.2 |\n| 中部 | 0.5 | 0.4 | -0.4 | -0.4 |\n| 西部 | 0.1 | 0.2 | -4.7 | -7.4 |\n\n原表表头分两层（“市场用人需求”“求职人数”下各分增加量、增长率两列），转写时合成一格。"
+  },
+  {
+    "id": "GD2018-p16-i01",
+    "path": "assets/GD2018/GD2018-p16-i01.png",
+    "paper_id": "GD2018",
+    "source_page": 16,
+    "source_bbox_points": [
+      126.75,
+      111.5,
+      488.25,
+      316.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1446,
+    "height": 821,
+    "sha256": "a2a4d517f48d221fc808549e3fc3ebe5ebeaa4dcd3d0d34e0f34ae9cb228c256",
+    "transcription": "2009-2016年全省医疗卫生机构数（单位：万个）\n\n| 年份 | 医疗卫生机构数（万个） |\n| --- | --- |\n| 2009年 | 4.43 |\n| 2010年 | 4.49 |\n| 2011年 | 4.59 |\n| 2012年 | 4.66 |\n| 2013年 | 4.79 |\n| 2014年 | 4.81 |\n| 2015年 | 4.84 |\n| 2016年 | 4.91 |"
+  },
+  {
+    "id": "GD2018-p16-i02",
+    "path": "assets/GD2018/GD2018-p16-i02.png",
+    "paper_id": "GD2018",
+    "source_page": 16,
+    "source_bbox_points": [
+      129.5,
+      322.5,
+      492.75,
+      532.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1453,
+    "height": 839,
+    "sha256": "aeb04f8fb131f70b6495d1e0934ba91df3791676a071c6d876e02a00f2a43334",
+    "transcription": "2012-2016年全省医疗卫生机构床位数（单位：万张）\n\n| 年份 | 医疗卫生机构 | 医院 | 卫生院 |\n| --- | --- | --- | --- |\n| 2012年 | 35.5 | 27.3 | 5.2 |\n| 2013年 | 37.8 | 29.4 | 5.2 |\n| 2014年 | 40.6 | 32 | 5.3 |\n| 2015年 | 43.6 | 34.5 | 5.5 |\n| 2016年 | 46.5 | 37.2 | 5.7 |"
+  },
+  {
+    "id": "GD2018-p16-i03",
+    "path": "assets/GD2018/GD2018-p16-i03.png",
+    "paper_id": "GD2018",
+    "source_page": 16,
+    "source_bbox_points": [
+      115.75,
+      540.5,
+      503.5,
+      759.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1551,
+    "height": 874,
+    "sha256": "69d0344aef1e17d3ec840d8bdd68809990ed64aac2bf3b92970da5ff9fcbda9a",
+    "transcription": "2012-2016年全省医疗卫生机构卫生技术人员数（单位：万人）\n\n| 年份 | 注册护士 | 执业（助理）医师 | 卫生技术人员 |\n| --- | --- | --- | --- |\n| 2012年 | 20 | 19.9 | 52 |\n| 2013年 | 21.8 | 21.1 | 55.6 |\n| 2014年 | 23.4 | 21.7 | 58.4 |\n| 2015年 | 25.4 | 22.9 | 62 |\n| 2016年 | 28.4 | 24.4 | 66.8 |"
+  }
+]

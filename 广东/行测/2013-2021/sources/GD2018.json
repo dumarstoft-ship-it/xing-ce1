@@ -1,0 +1,22 @@
+{
+  "paper_id": "GD2018",
+  "commit": "52f9811b22cad5410a7108dd0a07a879f1187aa5",
+  "sources": [
+    {
+      "path": "真题/2018年广东省公务员录用考试《行测》真题（县级、乡镇统一卷）.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9416c1cd02a2f4080980a82c8fdc0dd1757845b1",
+      "size": 961634,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/9416c1cd02a2f4080980a82c8fdc0dd1757845b1"
+    },
+    {
+      "path": "答案解析/2018年广东省公务员录用考试《行测》真题（县级、乡镇统一卷）答案及解析.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5aa6f741d0c5a2cf03b4d84e1f7bb1b2d6108993",
+      "size": 1103385,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/5aa6f741d0c5a2cf03b4d84e1f7bb1b2d6108993"
+    }
+  ]
+}

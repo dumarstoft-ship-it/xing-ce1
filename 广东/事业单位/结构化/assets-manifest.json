@@ -1,0 +1,393 @@
+[
+  {
+    "id": "SYDW2024-p06-i06",
+    "path": "assets/SYDW2024/SYDW2024-p06-i06.png",
+    "paper_id": "SYDW2024",
+    "source_page": 6,
+    "source_bbox_points": [
+      47.25,
+      489.5,
+      426.5,
+      574.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1517,
+    "height": 339,
+    "sha256": "9e2c0673605efa6afd5f978ff50661d84a4c9df1fb81309f451e8fb10ed7fe50",
+    "transcription": "梯次退票政策（原图为表格）\n\n| 退票时间 | 开车前15天（不含）以上 | 开车前48小时至15天以内 | 开车前24小时至48小时以内 | 开车前24小时以内 |\n| --- | --- | --- | --- | --- |\n| 退票手续费占票价的百分比 | 0% | 5% | 10% | 20% |"
+  },
+  {
+    "id": "SYDW2024-p07-i01",
+    "path": "assets/SYDW2024/SYDW2024-p07-i01.png",
+    "paper_id": "SYDW2024",
+    "source_page": 7,
+    "source_bbox_points": [
+      50.0,
+      328.0,
+      347.25,
+      403.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1189,
+    "height": 302,
+    "sha256": "85b991c7c5b9c45ba9c37d285c68b6db1ab8abc6d383b8d5398909fbe59af6f2",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2024-p07-i02",
+    "path": "assets/SYDW2024/SYDW2024-p07-i02.png",
+    "paper_id": "SYDW2024",
+    "source_page": 7,
+    "source_bbox_points": [
+      45.0,
+      467.75,
+      430.75,
+      568.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1543,
+    "height": 402,
+    "sha256": "9590dea6e59fdc873b949a180f546f836447a3b94c36dc1573710188b8ae73cb",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2024-p08-i01",
+    "path": "assets/SYDW2024/SYDW2024-p08-i01.png",
+    "paper_id": "SYDW2024",
+    "source_page": 8,
+    "source_bbox_points": [
+      49.0,
+      92.5,
+      428.75,
+      394.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1519,
+    "height": 1209,
+    "sha256": "b11630b0bca28415f249f22e569528fa92f07710bc345c859c3e53303570ac56",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2024-p08-i02",
+    "path": "assets/SYDW2024/SYDW2024-p08-i02.png",
+    "paper_id": "SYDW2024",
+    "source_page": 8,
+    "source_bbox_points": [
+      46.0,
+      445.25,
+      429.5,
+      640.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1534,
+    "height": 781,
+    "sha256": "dd51195a1167906f41b2948ca99f7365ad48a98a31d8d765e2f81108f0194683",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2024-p09-i01",
+    "path": "assets/SYDW2024/SYDW2024-p09-i01.png",
+    "paper_id": "SYDW2024",
+    "source_page": 9,
+    "source_bbox_points": [
+      47.75,
+      92.0,
+      426.5,
+      257.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1515,
+    "height": 661,
+    "sha256": "e16dd7781038380a48d1730d5a7045250a2e10d7e37c965c792f75a8f1bce913",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2024-p09-i02",
+    "path": "assets/SYDW2024/SYDW2024-p09-i02.png",
+    "paper_id": "SYDW2024",
+    "source_page": 9,
+    "source_bbox_points": [
+      41.5,
+      301.25,
+      433.75,
+      516.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1569,
+    "height": 860,
+    "sha256": "94eab5923ac6262f29f842577f6ac5c20d046946983a45edc3fd5c639c584903",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2024-p10-i01",
+    "path": "assets/SYDW2024/SYDW2024-p10-i01.png",
+    "paper_id": "SYDW2024",
+    "source_page": 10,
+    "source_bbox_points": [
+      41.5,
+      88.5,
+      433.75,
+      330.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1569,
+    "height": 969,
+    "sha256": "c0d278c8d58f64d8487f93d1b1da02927a3d70084e7829b60981030c02c99cf1",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2024-p10-i02",
+    "path": "assets/SYDW2024/SYDW2024-p10-i02.png",
+    "paper_id": "SYDW2024",
+    "source_page": 10,
+    "source_bbox_points": [
+      41.5,
+      380.25,
+      433.75,
+      546.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1569,
+    "height": 665,
+    "sha256": "d0341c886a784e2312ebc971103d6eacb3c6d6acbe0c4ae7a1214587a14f258a",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2024-p11-i01",
+    "path": "assets/SYDW2024/SYDW2024-p11-i01.png",
+    "paper_id": "SYDW2024",
+    "source_page": 11,
+    "source_bbox_points": [
+      41.5,
+      88.5,
+      433.75,
+      290.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1569,
+    "height": 806,
+    "sha256": "d619fda334c11411f87f5a01059943a2bd34c882b4e9c4787eabf966ccc1915a",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2024-p11-i02",
+    "path": "assets/SYDW2024/SYDW2024-p11-i02.png",
+    "paper_id": "SYDW2024",
+    "source_page": 11,
+    "source_bbox_points": [
+      41.5,
+      343.25,
+      433.75,
+      504.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1569,
+    "height": 645,
+    "sha256": "7bc9fa3b3cf2306011ac0258a7fb3baad0fab49cc3e3e4decfc8c2c508268456",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2024-p14-i01",
+    "path": "assets/SYDW2024/SYDW2024-p14-i01.png",
+    "paper_id": "SYDW2024",
+    "source_page": 14,
+    "source_bbox_points": [
+      50.0,
+      94.0,
+      415.25,
+      261.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1461,
+    "height": 668,
+    "sha256": "ef84d0f42914a9ddeb76a5e78c2252236cde6c74f14abe1868a47dad68a65e4d",
+    "transcription": "2023年上半年营业性货运客运情况\n\n| 方式 | 营业性货运量（亿吨） | 货运量同比增长率 | 营业性客运量（亿人） | 客运量同比增长率 |\n| --- | --- | --- | --- | --- |\n| 公路 | 190.1 | 7.5% | 21.4 | 18.6% |\n| 水路 | 44.2 | 7.7% | 1.2 | 146.8% |\n| 铁路 | 24.9 | 0.6% | 17.7 | 124.9% |\n| 民航货邮 | 327.6（万吨） | 6.4% | 2.8 | 140.2% |\n\n原表两列表头均为“同比增长率”，分别属于其左侧的营业性货运量、营业性客运量；民航货邮的货运量单位为万吨（原表在该格内注明）。"
+  },
+  {
+    "id": "SYDW2024-p15-i01",
+    "path": "assets/SYDW2024/SYDW2024-p15-i01.png",
+    "paper_id": "SYDW2024",
+    "source_page": 15,
+    "source_bbox_points": [
+      58.5,
+      91.5,
+      407.75,
+      284.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1397,
+    "height": 773,
+    "sha256": "cb701fbf0d5f3cbe8ce115805f2379d75ccbde9a86321d099607d3c183b6c906",
+    "transcription": "2018-2022年广东省海洋捕捞和海水养殖情况\n\n| 年份 | 海洋捕捞（万吨） | 海水养殖（万吨） |\n| --- | --- | --- |\n| 2018年 | 139.83 | 316.73 |\n| 2019年 | 126.36 | 329.13 |\n| 2020年 | 119.29 | 331.24 |\n| 2021年 | 118.8 | 336.24 |\n| 2022年 | 118.72 | 339.67 |\n\n柱状图，纵轴刻度0—400；黑柱为海洋捕捞，白柱为海水养殖，柱顶标数值。"
+  },
+  {
+    "id": "SYDW2026-image04",
+    "path": "assets/SYDW2026/SYDW2026-image04.png",
+    "paper_id": "SYDW2026",
+    "source_file": "word/media/image4.png",
+    "source_page": null,
+    "source_bbox_points": null,
+    "docx_extent_points": [
+      453.6,
+      294.4
+    ],
+    "method": "docx_original",
+    "width": 1362,
+    "height": 884,
+    "sha256": "1f879b2cb267a19769ddc5fe2db886831a5938ce173fdab702cfd07aa5ae0c91",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2026-image05",
+    "path": "assets/SYDW2026/SYDW2026-image05.png",
+    "paper_id": "SYDW2026",
+    "source_file": "word/media/image5.png",
+    "source_page": null,
+    "source_bbox_points": null,
+    "docx_extent_points": [
+      453.6,
+      209.5
+    ],
+    "method": "docx_original",
+    "width": 1362,
+    "height": 629,
+    "sha256": "8e967cc30a7f89eb289d81fe4c9dcd69cab4d950140bde665d1ac0c8d7c11bcb",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2026-image06",
+    "path": "assets/SYDW2026/SYDW2026-image06.png",
+    "paper_id": "SYDW2026",
+    "source_file": "word/media/image6.png",
+    "source_page": null,
+    "source_bbox_points": null,
+    "docx_extent_points": [
+      453.6,
+      313.7
+    ],
+    "method": "docx_original",
+    "width": 1362,
+    "height": 942,
+    "sha256": "298f8d198dc21f0f1852670b13bb941fa7a35a8b14969ec5988690ed156581c4",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2026-image07",
+    "path": "assets/SYDW2026/SYDW2026-image07.png",
+    "paper_id": "SYDW2026",
+    "source_file": "word/media/image7.png",
+    "source_page": null,
+    "source_bbox_points": null,
+    "docx_extent_points": [
+      453.6,
+      269.75
+    ],
+    "method": "docx_original",
+    "width": 1362,
+    "height": 810,
+    "sha256": "afaabca8d536ce02ccc84597eb4e99524c190ed720ece396aba17e45293a065f",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2026-image08",
+    "path": "assets/SYDW2026/SYDW2026-image08.png",
+    "paper_id": "SYDW2026",
+    "source_file": "word/media/image8.png",
+    "source_page": null,
+    "source_bbox_points": null,
+    "docx_extent_points": [
+      453.6,
+      207.5
+    ],
+    "method": "docx_original",
+    "width": 1362,
+    "height": 623,
+    "sha256": "5c6202d89ecb3a3bb2bdd32f1a97b049938e886c8252c45bea326428f394c0a0",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2026-image09",
+    "path": "assets/SYDW2026/SYDW2026-image09.png",
+    "paper_id": "SYDW2026",
+    "source_file": "word/media/image9.png",
+    "source_page": null,
+    "source_bbox_points": null,
+    "docx_extent_points": [
+      160.6,
+      143.3
+    ],
+    "method": "docx_original",
+    "width": 483,
+    "height": 431,
+    "sha256": "416cc240750112850c5e999d723ecd15fbd1990bc81a0d28a73fd4dc2cbc94e2",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2026-image10",
+    "path": "assets/SYDW2026/SYDW2026-image10.png",
+    "paper_id": "SYDW2026",
+    "source_file": "word/media/image10.png",
+    "source_page": null,
+    "source_bbox_points": null,
+    "docx_extent_points": [
+      401.0,
+      293.1
+    ],
+    "method": "docx_original",
+    "width": 1204,
+    "height": 880,
+    "sha256": "44a2413b8a1b33189200da303eff0273c62693015e14fd8d6e3621f4c9c76094",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2026-image11",
+    "path": "assets/SYDW2026/SYDW2026-image11.png",
+    "paper_id": "SYDW2026",
+    "source_file": "word/media/image11.png",
+    "source_page": null,
+    "source_bbox_points": null,
+    "docx_extent_points": [
+      193.6,
+      196.6
+    ],
+    "method": "docx_original",
+    "width": 582,
+    "height": 591,
+    "sha256": "a7f05975bb350c2d84b5fa566d0acf590a1ad0faffa2ebcaa033223bbcac3fe2",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2026-image12",
+    "path": "assets/SYDW2026/SYDW2026-image12.png",
+    "paper_id": "SYDW2026",
+    "source_file": "word/media/image12.png",
+    "source_page": null,
+    "source_bbox_points": null,
+    "docx_extent_points": [
+      453.6,
+      119.0
+    ],
+    "method": "docx_original",
+    "width": 1362,
+    "height": 358,
+    "sha256": "45f8a1746bb5a90a02ed5d4a7583de3b95a77e44caa8a5b3d5ef6a24f36e1332",
+    "transcription": ""
+  },
+  {
+    "id": "SYDW2026-image13",
+    "path": "assets/SYDW2026/SYDW2026-image13.png",
+    "paper_id": "SYDW2026",
+    "source_file": "word/media/image13.png",
+    "source_page": null,
+    "source_bbox_points": null,
+    "docx_extent_points": [
+      453.6,
+      216.8
+    ],
+    "method": "docx_original",
+    "width": 1362,
+    "height": 651,
+    "sha256": "b466f1cf81f6d831294d0b65bfbede9409f6c81e7d12daf2d8672b7980f32be0",
+    "transcription": ""
+  }
+]

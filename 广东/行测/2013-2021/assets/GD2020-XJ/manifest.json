@@ -1,0 +1,495 @@
+[
+  {
+    "id": "GD2020-XJ-p03-i01",
+    "path": "assets/GD2020-XJ/GD2020-XJ-p03-i01.png",
+    "paper_id": "GD2020-XJ",
+    "source_page": 3,
+    "source_bbox_points": [
+      65.75,
+      597.0,
+      183.5,
+      735.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 471,
+    "height": 555,
+    "sha256": "f0d3fc049486f6365867ba27b2876431091d017bf942c247f40c7ee465821df0",
+    "transcription": "题图数字矩阵（按原图行列）\n\n| 第1列 | 第2列 | 第3列 |\n| --- | --- | --- |\n| 4 | 5 | 7 |\n| 8 | 8 | 16 |\n| 12 | 9 | 27 |\n| 16 | 10 | ? |"
+  },
+  {
+    "id": "GD2020-XJ-p04-i01",
+    "path": "assets/GD2020-XJ/GD2020-XJ-p04-i01.png",
+    "paper_id": "GD2020-XJ",
+    "source_page": 4,
+    "source_bbox_points": [
+      40.5,
+      260.5,
+      466.25,
+      309.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1703,
+    "height": 196,
+    "sha256": "ec8c6e2a829d41fb5f9a471ad1892da9199cdac432513e8759372212175977fd",
+    "transcription": "售价与销量对应表\n\n| 售价（元/千克） | 25 | 24 | 23 | …… | 15 |\n| --- | --- | --- | --- | --- | --- |\n| 销量（千克） | 30 | 32 | 34 | …… | 50 |"
+  },
+  {
+    "id": "GD2020-XJ-p04-i02",
+    "path": "assets/GD2020-XJ/GD2020-XJ-p04-i02.png",
+    "paper_id": "GD2020-XJ",
+    "source_page": 4,
+    "source_bbox_points": [
+      40.5,
+      410.25,
+      187.75,
+      496.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 589,
+    "height": 344,
+    "sha256": "2dfa6f208a72aaa6e6711ad5e60a5c18aa2ebbec1d09d5d13fe14d185f7ed368",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XJ-p05-i01",
+    "path": "assets/GD2020-XJ/GD2020-XJ-p05-i01.png",
+    "paper_id": "GD2020-XJ",
+    "source_page": 5,
+    "source_bbox_points": [
+      121.5,
+      25.0,
+      473.25,
+      254.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1407,
+    "height": 919,
+    "sha256": "929b83507d4c2a1c9c4cd5ea599918fd9bc2838b3071b2e05f7fb7bef0d9027d",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XJ-p05-i02",
+    "path": "assets/GD2020-XJ/GD2020-XJ-p05-i02.png",
+    "paper_id": "GD2020-XJ",
+    "source_page": 5,
+    "source_bbox_points": [
+      111.75,
+      271.0,
+      483.5,
+      455.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1487,
+    "height": 736,
+    "sha256": "543b5ce3f53fe4a461af8a4644427fb428303ec595d194af992b6d287c723631",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XJ-p05-i03",
+    "path": "assets/GD2020-XJ/GD2020-XJ-p05-i03.png",
+    "paper_id": "GD2020-XJ",
+    "source_page": 5,
+    "source_bbox_points": [
+      127.5,
+      472.0,
+      468.0,
+      671.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1362,
+    "height": 797,
+    "sha256": "adedf66be3d919a962ccf3cc2892480cf5135fa220a63ad2c14fdcce06295d67",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XJ-p05-i04",
+    "path": "assets/GD2020-XJ/GD2020-XJ-p05-i04.png",
+    "paper_id": "GD2020-XJ",
+    "source_page": 5,
+    "source_bbox_points": [
+      83.25,
+      687.75,
+      511.5,
+      788.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1713,
+    "height": 401,
+    "sha256": "fc080f1276cc2bbba478791fca861866b7ee21fb32221558a8d7c302ecc5e141",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XJ-p06-i01",
+    "path": "assets/GD2020-XJ/GD2020-XJ-p06-i01.png",
+    "paper_id": "GD2020-XJ",
+    "source_page": 6,
+    "source_bbox_points": [
+      144.0,
+      41.5,
+      450.5,
+      225.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1226,
+    "height": 736,
+    "sha256": "1b10f44ff55decb7d1b316e1fdb2e34709f8980b15af6df33f75897df5e5ac83",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XJ-p06-i02",
+    "path": "assets/GD2020-XJ/GD2020-XJ-p06-i02.png",
+    "paper_id": "GD2020-XJ",
+    "source_page": 6,
+    "source_bbox_points": [
+      140.5,
+      255.5,
+      456.25,
+      412.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1263,
+    "height": 629,
+    "sha256": "37301ec02cf671a37c8e3c776dde0fe760306da6fab4f0cf96e044c01e2b4cd9",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XJ-p06-i03",
+    "path": "assets/GD2020-XJ/GD2020-XJ-p06-i03.png",
+    "paper_id": "GD2020-XJ",
+    "source_page": 6,
+    "source_bbox_points": [
+      153.5,
+      455.0,
+      443.0,
+      599.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1158,
+    "height": 579,
+    "sha256": "98765e8cfec860e7376ff5ade1f3d1fd53ffa5b60f483f4bb35fc29eab62041f",
+    "transcription": "题干：风、山、凶、匡、？\n选项：A 同；B 土；C 闪；D 广"
+  },
+  {
+    "id": "GD2020-XJ-p06-i04",
+    "path": "assets/GD2020-XJ/GD2020-XJ-p06-i04.png",
+    "paper_id": "GD2020-XJ",
+    "source_page": 6,
+    "source_bbox_points": [
+      135.75,
+      640.5,
+      460.25,
+      781.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1298,
+    "height": 565,
+    "sha256": "c4253045d3508f996a99d74f2cbb7026c62972c48fb158bd72130456355b0e02",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XJ-p07-i01",
+    "path": "assets/GD2020-XJ/GD2020-XJ-p07-i01.png",
+    "paper_id": "GD2020-XJ",
+    "source_page": 7,
+    "source_bbox_points": [
+      127.25,
+      46.25,
+      466.25,
+      238.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1356,
+    "height": 767,
+    "sha256": "232f2fb574eaa2ba83c4cadbe5009d0cce77041d283cd8c96cd6f5f488c23f04",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XJ-p07-i02",
+    "path": "assets/GD2020-XJ/GD2020-XJ-p07-i02.png",
+    "paper_id": "GD2020-XJ",
+    "source_page": 7,
+    "source_bbox_points": [
+      129.25,
+      272.5,
+      466.5,
+      444.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1349,
+    "height": 689,
+    "sha256": "51b5d496296c07b758a0b425548431e447ac6b2bf27fb68aaa9f7a6f930a8067",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XJ-p10-i01",
+    "path": "assets/GD2020-XJ/GD2020-XJ-p10-i01.png",
+    "paper_id": "GD2020-XJ",
+    "source_page": 10,
+    "source_bbox_points": [
+      171.0,
+      106.25,
+      423.75,
+      307.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1011,
+    "height": 803,
+    "sha256": "db111a1255894126f34b38d05b81768766dd9df39c132b49808c41bf337967b5",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XJ-p10-i02",
+    "path": "assets/GD2020-XJ/GD2020-XJ-p10-i02.png",
+    "paper_id": "GD2020-XJ",
+    "source_page": 10,
+    "source_bbox_points": [
+      156.75,
+      308.5,
+      437.75,
+      582.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1124,
+    "height": 1097,
+    "sha256": "d5926ca4fe52578f2eb798c91fdfc16d4063a5f6024919b4c5a55f1cdf069466",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XJ-p10-i03",
+    "path": "assets/GD2020-XJ/GD2020-XJ-p10-i03.png",
+    "paper_id": "GD2020-XJ",
+    "source_page": 10,
+    "source_bbox_points": [
+      127.5,
+      617.25,
+      456.25,
+      810.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1315,
+    "height": 771,
+    "sha256": "a3802c1a2effbc469f091ffee736bb6d18245430f98ee824e724b12a81c6a0a7",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XJ-p11-i01",
+    "path": "assets/GD2020-XJ/GD2020-XJ-p11-i01.png",
+    "paper_id": "GD2020-XJ",
+    "source_page": 11,
+    "source_bbox_points": [
+      127.75,
+      123.75,
+      467.25,
+      189.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1358,
+    "height": 263,
+    "sha256": "357dd6b3a8778d6635db67742d27dbaf0bcdc5a0f52cba5271cd53cdd5c1f2ea",
+    "transcription": "选项图字母分布（每项4行，按原图行序）\n\n| 选项 | 第1行 | 第2行 | 第3行 | 第4行 |\n| --- | --- | --- | --- | --- |\n| A | NONONO | ONONON | NONONO | ONONON |\n| B | OOOOOO | ONOONO | NONNON | NNNNNN |\n| C | NNNNNN | NONNON | ONOONO | OOOOOO |\n| D | NNNNNN | NNNNNN | OOOOOO | OOOOOO |"
+  },
+  {
+    "id": "GD2020-XJ-p11-i02",
+    "path": "assets/GD2020-XJ/GD2020-XJ-p11-i02.png",
+    "paper_id": "GD2020-XJ",
+    "source_page": 11,
+    "source_bbox_points": [
+      200.5,
+      231.75,
+      394.75,
+      351.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 777,
+    "height": 478,
+    "sha256": "b846bbc0b103d273dfef4943d26547bec8ab7872c838f868b400c85722d093a6",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XJ-p11-i03",
+    "path": "assets/GD2020-XJ/GD2020-XJ-p11-i03.png",
+    "paper_id": "GD2020-XJ",
+    "source_page": 11,
+    "source_bbox_points": [
+      161.75,
+      411.25,
+      435.5,
+      573.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1095,
+    "height": 649,
+    "sha256": "957c6b22ef820e1afab1aae58e188782374a9d71e0c925fde7204e512c26344f",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XJ-p11-i04",
+    "path": "assets/GD2020-XJ/GD2020-XJ-p11-i04.png",
+    "paper_id": "GD2020-XJ",
+    "source_page": 11,
+    "source_bbox_points": [
+      132.75,
+      644.0,
+      466.0,
+      762.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1333,
+    "height": 475,
+    "sha256": "3b5dadb290ec70a34a06d19155863f0b4ee65e8cd5c070f85048a01002a67a22",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XJ-p12-i01",
+    "path": "assets/GD2020-XJ/GD2020-XJ-p12-i01.png",
+    "paper_id": "GD2020-XJ",
+    "source_page": 12,
+    "source_bbox_points": [
+      138.25,
+      62.25,
+      462.75,
+      358.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1298,
+    "height": 1184,
+    "sha256": "0d3d10c7650e17546adbc0f63eecb92b02bb6223139f16c72e837378785ac7a7",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XJ-p12-i04",
+    "path": "assets/GD2020-XJ/GD2020-XJ-p12-i04.png",
+    "paper_id": "GD2020-XJ",
+    "source_page": 12,
+    "source_bbox_points": [
+      93.0,
+      623.75,
+      499.75,
+      762.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1627,
+    "height": 555,
+    "sha256": "95dd64a6ba32569660da3a05d06631dde8b6923286c5a51455c714e716647609",
+    "transcription": "B市历年社会平均工资、社保缴费基数上下限、缴费比例一览表(部分)\n\n| 年度 | 本市社会平均工资（元/月） | 社保缴费基数上限（元/月） | 城镇人员养老基数下限（元/月） | 城镇人员工伤基数下限（元/月） | 城镇人员医疗生育基数下限（元/月） | 城镇人员养老缴费比例：单位缴纳 | 城镇人员养老缴费比例：个人缴纳 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| 1994 | 377 | 1131 | 226 | 226 | - | 19% | 5% |\n| 1999 | 1024 | 2755 | 310 | 310 | - | 19% | 6% |\n| 2004 | 2004 | 6011 | 465 | 465 | 1202 | 20% | 8% |\n| 2009 | 3726 | 11178 | 1490 | 1490 | 2236 | 20% | 8% |\n| 2014 | 5793 | 17379 | 2317 | 3476 | 3476 | 20% | 8% |\n| 2019 | 8467 | 25401 | 3387 | 5080 | 5080 | 16% | 8% |\n\n原表表头分两层：“城镇人员”下分养老、工伤、医疗生育三列基数下限，“城镇人员养老缴费比例”下分单位缴纳、个人缴纳两列；转写时合成一格。1994、1999年医疗生育基数下限原表作“-”。"
+  },
+  {
+    "id": "GD2020-XJ-p13-i02",
+    "path": "assets/GD2020-XJ/GD2020-XJ-p13-i02.png",
+    "paper_id": "GD2020-XJ",
+    "source_page": 13,
+    "source_bbox_points": [
+      58.75,
+      175.75,
+      213.25,
+      257.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 618,
+    "height": 327,
+    "sha256": "872e5f120b97a95d227cd3c8303a33b41d12d637f16e0a750d74ead1c92ecba3",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XJ-p13-i03",
+    "path": "assets/GD2020-XJ/GD2020-XJ-p13-i03.png",
+    "paper_id": "GD2020-XJ",
+    "source_page": 13,
+    "source_bbox_points": [
+      251.75,
+      174.75,
+      406.5,
+      256.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 619,
+    "height": 327,
+    "sha256": "af549f6395ada1bd194847070fdcf85f450bc56eeb1cb80f3fb73f05dceb296d",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XJ-p13-i04",
+    "path": "assets/GD2020-XJ/GD2020-XJ-p13-i04.png",
+    "paper_id": "GD2020-XJ",
+    "source_page": 13,
+    "source_bbox_points": [
+      58.75,
+      266.75,
+      215.0,
+      349.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 625,
+    "height": 331,
+    "sha256": "df9644e71a5f56c5a8151ff2eddc1a5eb5cd7e225b0f34192b493ca87cd15429",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XJ-p13-i05",
+    "path": "assets/GD2020-XJ/GD2020-XJ-p13-i05.png",
+    "paper_id": "GD2020-XJ",
+    "source_page": 13,
+    "source_bbox_points": [
+      254.75,
+      266.75,
+      410.5,
+      349.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 623,
+    "height": 329,
+    "sha256": "98690c2fead39561edd537f73a4ad4692247854ce51bb0c29400ef6ea02682d5",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XJ-p13-i06",
+    "path": "assets/GD2020-XJ/GD2020-XJ-p13-i06.png",
+    "paper_id": "GD2020-XJ",
+    "source_page": 13,
+    "source_bbox_points": [
+      88.0,
+      540.25,
+      507.5,
+      806.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1678,
+    "height": 1065,
+    "sha256": "dd29f3fcbba0d14f1bdcb1a66855cea5159240e2440143081f9b9ce686f08df4",
+    "transcription": "2015-2019年我国农民工规模及增速\n\n| 年份 | 农民工规模（万人） | 同比增速 |\n| --- | --- | --- |\n| 2015年 | 27747 | 1.3% |\n| 2016年 | 28171 | 1.5% |\n| 2017年 | 28652 | 1.7% |\n| 2018年 | 28836 | 0.6% |\n| 2019年 | 29077 | 0.8% |"
+  },
+  {
+    "id": "GD2020-XJ-p14-i01",
+    "path": "assets/GD2020-XJ/GD2020-XJ-p14-i01.png",
+    "paper_id": "GD2020-XJ",
+    "source_page": 14,
+    "source_bbox_points": [
+      83.25,
+      105.75,
+      507.75,
+      238.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1698,
+    "height": 531,
+    "sha256": "658fdeb3942a280016c843011d1c3d7566012a9d039ad1114179a69bf4ab57f0",
+    "transcription": "六大行业农民工月均收入（单位：元）\n\n| 行业 | 2019年 | 2018年 |\n| --- | --- | --- |\n| 制造业 | 3958 | 3732 |\n| 建筑业 | 4567 | 4209 |\n| 批发和零售业 | 3472 | 3263 |\n| 交通运输仓储邮政业 | 4667 | 4345 |\n| 住宿餐饮业 | 3289 | 3148 |\n| 居民服务修理和其他服务业 | 3337 | 3202 |"
+  },
+  {
+    "id": "GD2020-XJ-p14-i02",
+    "path": "assets/GD2020-XJ/GD2020-XJ-p14-i02.png",
+    "paper_id": "GD2020-XJ",
+    "source_page": 14,
+    "source_bbox_points": [
+      95.25,
+      542.75,
+      493.0,
+      705.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1591,
+    "height": 652,
+    "sha256": "24909972bbbd3f530ae561b327cac130bd41d565e925965b3264070dfdb5603d",
+    "transcription": "2019年广东各地区用水量情况\n\n| 地区 | 2019年用水量 | 同比变化率 | 占比 |\n| --- | --- | --- | --- |\n| 珠三角 | 29.85亿立方米 | -0.6% | 75.5% |\n| 粤东 | 2.46亿立方米 | -10.0% | 6.2% |\n| 粤西 | 2.96亿立方米 | -8.2% | 7.5% |\n| 粤北 | 4.27亿立方米 | -2.4% | 10.8% |\n\n原表负号印作较长的横线，转写为“-”。"
+  }
+]

@@ -1,0 +1,342 @@
+[
+  {
+    "id": "GD2016-XJ-p04-i01",
+    "path": "assets/GD2016-XJ/GD2016-XJ-p04-i01.png",
+    "paper_id": "GD2016-XJ",
+    "source_page": 4,
+    "source_bbox_points": [
+      201.75,
+      240.75,
+      390.0,
+      308.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 753,
+    "height": 270,
+    "sha256": "0f474c245f0bcb8c496b273dbac3be4be4884ae4898d0204200fa74e52f3a540",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XJ-p05-i01",
+    "path": "assets/GD2016-XJ/GD2016-XJ-p05-i01.png",
+    "paper_id": "GD2016-XJ",
+    "source_page": 5,
+    "source_bbox_points": [
+      151.0,
+      183.0,
+      444.0,
+      333.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1172,
+    "height": 600,
+    "sha256": "0df6254c6b6f34e1c35210e38481e820d31bb141b73065b0749e31dbc514cf6d",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XJ-p05-i02",
+    "path": "assets/GD2016-XJ/GD2016-XJ-p05-i02.png",
+    "paper_id": "GD2016-XJ",
+    "source_page": 5,
+    "source_bbox_points": [
+      146.75,
+      348.0,
+      447.75,
+      502.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1204,
+    "height": 616,
+    "sha256": "66cf2d775221956060e227d491eaa5adac577c94afe388c020c66d758ef4afc7",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XJ-p05-i03",
+    "path": "assets/GD2016-XJ/GD2016-XJ-p05-i03.png",
+    "paper_id": "GD2016-XJ",
+    "source_page": 5,
+    "source_bbox_points": [
+      111.75,
+      528.75,
+      480.5,
+      717.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1475,
+    "height": 755,
+    "sha256": "5e98bc68f5eb861f0ad5d24af4eed939e43e697bdb3c6c8c0a4d79805915f026",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XJ-p06-i01",
+    "path": "assets/GD2016-XJ/GD2016-XJ-p06-i01.png",
+    "paper_id": "GD2016-XJ",
+    "source_page": 6,
+    "source_bbox_points": [
+      112.75,
+      32.25,
+      504.5,
+      232.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1567,
+    "height": 800,
+    "sha256": "2191596a4b61fb80c638acd64bfd165a1d73ccc8e2a04a7717c4868fc17e62fb",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XJ-p06-i02",
+    "path": "assets/GD2016-XJ/GD2016-XJ-p06-i02.png",
+    "paper_id": "GD2016-XJ",
+    "source_page": 6,
+    "source_bbox_points": [
+      154.25,
+      235.0,
+      462.75,
+      424.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1234,
+    "height": 756,
+    "sha256": "133361be186359130a524788eb21e77dc9e1c94f725dfefc0a761d8a85b83b2f",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XJ-p06-i03",
+    "path": "assets/GD2016-XJ/GD2016-XJ-p06-i03.png",
+    "paper_id": "GD2016-XJ",
+    "source_page": 6,
+    "source_bbox_points": [
+      156.5,
+      452.0,
+      438.25,
+      624.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1127,
+    "height": 689,
+    "sha256": "62f94cdae44a3d38a7dff9191c9fd3be1aa6667568808b595f6b6d8e9692732c",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XJ-p06-i04",
+    "path": "assets/GD2016-XJ/GD2016-XJ-p06-i04.png",
+    "paper_id": "GD2016-XJ",
+    "source_page": 6,
+    "source_bbox_points": [
+      155.75,
+      637.5,
+      437.75,
+      810.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1128,
+    "height": 690,
+    "sha256": "c88c94945a3103e0ddab0633e885a076a21d7b37b1f7d71a4495a0ec990a2321",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XJ-p07-i01",
+    "path": "assets/GD2016-XJ/GD2016-XJ-p07-i01.png",
+    "paper_id": "GD2016-XJ",
+    "source_page": 7,
+    "source_bbox_points": [
+      121.5,
+      43.75,
+      473.0,
+      193.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1406,
+    "height": 600,
+    "sha256": "23997cec075deed2e719732ddb453c908d84b0ce33616fcfa7e0147a3d32e93e",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XJ-p07-i02",
+    "path": "assets/GD2016-XJ/GD2016-XJ-p07-i02.png",
+    "paper_id": "GD2016-XJ",
+    "source_page": 7,
+    "source_bbox_points": [
+      156.5,
+      220.75,
+      438.25,
+      341.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1127,
+    "height": 482,
+    "sha256": "5aee595321b39d5e478d044e65a6fbef53e576ecefe1b0f86017179c3cc04e55",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XJ-p07-i03",
+    "path": "assets/GD2016-XJ/GD2016-XJ-p07-i03.png",
+    "paper_id": "GD2016-XJ",
+    "source_page": 7,
+    "source_bbox_points": [
+      156.25,
+      356.75,
+      438.5,
+      529.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1129,
+    "height": 691,
+    "sha256": "0c52031f40bbcef46e97a1c11705dc728ccb1d417fd562a16c7d7cac8bf31436",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XJ-p09-i01",
+    "path": "assets/GD2016-XJ/GD2016-XJ-p09-i01.png",
+    "paper_id": "GD2016-XJ",
+    "source_page": 9,
+    "source_bbox_points": [
+      229.25,
+      162.25,
+      365.0,
+      272.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 543,
+    "height": 441,
+    "sha256": "b13bae230347080a20621601ae197c6774617a2afba2b0fa0dac372f47c9e480",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XJ-p09-i02",
+    "path": "assets/GD2016-XJ/GD2016-XJ-p09-i02.png",
+    "paper_id": "GD2016-XJ",
+    "source_page": 9,
+    "source_bbox_points": [
+      216.75,
+      313.75,
+      379.5,
+      410.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 651,
+    "height": 387,
+    "sha256": "94a79a8bccab8be415ce1b896e4e1c6bd8b28d8002d1e269cebbc9312f596528",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XJ-p09-i03",
+    "path": "assets/GD2016-XJ/GD2016-XJ-p09-i03.png",
+    "paper_id": "GD2016-XJ",
+    "source_page": 9,
+    "source_bbox_points": [
+      251.75,
+      479.0,
+      344.25,
+      599.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 370,
+    "height": 483,
+    "sha256": "a8371246f1742cb6a5462dcc6151d7713007737ee35c9756a7817f75e1b39a05",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XJ-p10-i01",
+    "path": "assets/GD2016-XJ/GD2016-XJ-p10-i01.png",
+    "paper_id": "GD2016-XJ",
+    "source_page": 10,
+    "source_bbox_points": [
+      248.25,
+      35.25,
+      348.25,
+      187.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 400,
+    "height": 610,
+    "sha256": "182b1771c3db7c9f301b91a7d28fc57fbac167e7b5df31d1c62e713f22c41e85",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XJ-p10-i02",
+    "path": "assets/GD2016-XJ/GD2016-XJ-p10-i02.png",
+    "paper_id": "GD2016-XJ",
+    "source_page": 10,
+    "source_bbox_points": [
+      126.25,
+      235.75,
+      469.75,
+      375.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1374,
+    "height": 560,
+    "sha256": "4c981cbae0ff0bb92e1671e80f3ded2dcb34c312be79c2a6406c4b8232201902",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XJ-p10-i03",
+    "path": "assets/GD2016-XJ/GD2016-XJ-p10-i03.png",
+    "paper_id": "GD2016-XJ",
+    "source_page": 10,
+    "source_bbox_points": [
+      82.25,
+      445.25,
+      473.0,
+      682.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1563,
+    "height": 949,
+    "sha256": "b3921306426e0a4d937811fc991af53666136c8e3edaf81289433f18c9ef900b",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XJ-p11-i01",
+    "path": "assets/GD2016-XJ/GD2016-XJ-p11-i01.png",
+    "paper_id": "GD2016-XJ",
+    "source_page": 11,
+    "source_bbox_points": [
+      86.5,
+      39.0,
+      506.0,
+      275.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1678,
+    "height": 946,
+    "sha256": "c45c6c00082b6c256880af67e7e97a235664d378e8f3c5044db1626a5ca73cf4",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XJ-p11-i02",
+    "path": "assets/GD2016-XJ/GD2016-XJ-p11-i02.png",
+    "paper_id": "GD2016-XJ",
+    "source_page": 11,
+    "source_bbox_points": [
+      74.25,
+      544.75,
+      524.25,
+      778.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1800,
+    "height": 935,
+    "sha256": "c9827933fffe897a01cb78badcf5ba86c897db2cd55f0c96f8683df17c86d025",
+    "transcription": ""
+  },
+  {
+    "id": "GD2016-XJ-p12-i01",
+    "path": "assets/GD2016-XJ/GD2016-XJ-p12-i01.png",
+    "paper_id": "GD2016-XJ",
+    "source_page": 12,
+    "source_bbox_points": [
+      98.75,
+      298.75,
+      492.75,
+      541.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1576,
+    "height": 972,
+    "sha256": "a0e0d00cda6c794c53b8fb84da7a9f067ac57cabda1c1ec56c9d02482afa8f08",
+    "transcription": ""
+  }
+]

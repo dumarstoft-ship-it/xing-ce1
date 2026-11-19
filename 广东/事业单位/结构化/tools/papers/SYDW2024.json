@@ -1,0 +1,24 @@
+{
+  "year": 2024,
+  "title": "2024年广东事业单位统考《基本能力测试》",
+  "paper_variant": "未标卷别",
+  "source_edition": "仓库原卷",
+  "question_pdf": "广东/事业单位/2024/2024年4月21日广东省事业单位高校毕业生招聘考试（广东统考）《基本能力测试》真题.pdf",
+  "answer_pdf": "广东/事业单位/2024/2024年4月21日广东省事业单位高校毕业生招聘考试（广东统考）《基本能力测试》（解析）.pdf",
+  "expected_questions": 100,
+  "answer_sheet": {
+    "dpi": 192,
+    "templates": [
+      "answer-template-SYDW2024-gzqda.png",
+      "answer-template-SYDW2024-gbs.png",
+      "answer-template-SYDW2024-btwxft.png"
+    ],
+    "match": 0.6,
+    "x_from": -4,
+    "x_to": 4,
+    "numbers": true,
+    "rows": 20,
+    "zoom": 230
+  },
+  "source_commit": "3eadbf4cafe03d1f6e9089b3bb696e838ee60f0a"
+}

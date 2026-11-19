@@ -1,0 +1,29 @@
+{
+  "commit": "3eadbf4cafe03d1f6e9089b3bb696e838ee60f0a",
+  "sources": [
+    {
+      "path": "广东/事业单位/2024/2024年4月21日广东省事业单位高校毕业生招聘考试（广东统考）《基本能力测试》真题.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3574f91ed49f4f75e644effffea96334f3a54705",
+      "size": 1115999,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/3574f91ed49f4f75e644effffea96334f3a54705"
+    },
+    {
+      "path": "广东/事业单位/2024/2024年4月21日广东省事业单位高校毕业生招聘考试（广东统考）《基本能力测试》（解析）.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46316a792acb5b683a7b781378f8e9603a1a7db7",
+      "size": 15333864,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/46316a792acb5b683a7b781378f8e9603a1a7db7"
+    },
+    {
+      "path": "广东/事业单位/2026/2026广东事业单位统考-题目及答案解析（非空白卷）.docx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d94881c3f1ec5ed12393d774b0f44a8ac564bc02",
+      "size": 951968,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/d94881c3f1ec5ed12393d774b0f44a8ac564bc02"
+    }
+  ]
+}

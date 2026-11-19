@@ -1,0 +1,376 @@
+[
+  {
+    "id": "GD2019-XZ-p03-i06",
+    "path": "assets/GD2019-XZ/GD2019-XZ-p03-i06.png",
+    "paper_id": "GD2019-XZ",
+    "source_page": 3,
+    "source_bbox_points": [
+      181.0,
+      433.75,
+      413.25,
+      553.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 929,
+    "height": 479,
+    "sha256": "c9e6517968d2016392e7da5bb9dde26db41444c54ba61ebbfbaf39ba3f187fe7",
+    "transcription": ""
+  },
+  {
+    "id": "GD2019-XZ-p03-i07",
+    "path": "assets/GD2019-XZ/GD2019-XZ-p03-i07.png",
+    "paper_id": "GD2019-XZ",
+    "source_page": 3,
+    "source_bbox_points": [
+      157.0,
+      590.0,
+      438.5,
+      743.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1126,
+    "height": 613,
+    "sha256": "5b7d799666dede04cba92dba2e54fb57777844890847e9930a9e66a44618035d",
+    "transcription": ""
+  },
+  {
+    "id": "GD2019-XZ-p04-i01",
+    "path": "assets/GD2019-XZ/GD2019-XZ-p04-i01.png",
+    "paper_id": "GD2019-XZ",
+    "source_page": 4,
+    "source_bbox_points": [
+      158.25,
+      37.75,
+      440.0,
+      158.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1127,
+    "height": 482,
+    "sha256": "9ea833c0dfceaf662e23dc5105d50529a67ce9d3e84befba85637bc45326b692",
+    "transcription": ""
+  },
+  {
+    "id": "GD2019-XZ-p04-i02",
+    "path": "assets/GD2019-XZ/GD2019-XZ-p04-i02.png",
+    "paper_id": "GD2019-XZ",
+    "source_page": 4,
+    "source_bbox_points": [
+      182.0,
+      199.5,
+      419.0,
+      344.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 948,
+    "height": 579,
+    "sha256": "a7b8e79d7c34c67b6d6758106b810c965777c3d0acab4940c2f07b617604fd32",
+    "transcription": ""
+  },
+  {
+    "id": "GD2019-XZ-p04-i03",
+    "path": "assets/GD2019-XZ/GD2019-XZ-p04-i03.png",
+    "paper_id": "GD2019-XZ",
+    "source_page": 4,
+    "source_bbox_points": [
+      123.25,
+      399.75,
+      471.5,
+      444.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1393,
+    "height": 180,
+    "sha256": "e4a69ac188bb34b8194c68255979c58fe7580e7ab18eb8bddcc95757629df602",
+    "transcription": ""
+  },
+  {
+    "id": "GD2019-XZ-p04-i04",
+    "path": "assets/GD2019-XZ/GD2019-XZ-p04-i04.png",
+    "paper_id": "GD2019-XZ",
+    "source_page": 4,
+    "source_bbox_points": [
+      167.5,
+      524.25,
+      429.25,
+      678.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1047,
+    "height": 616,
+    "sha256": "bd9cf637e82bcf915b5ba8ff8c48161f1ef3fce29fd9a260596ce125d7fcdac5",
+    "transcription": ""
+  },
+  {
+    "id": "GD2019-XZ-p05-i01",
+    "path": "assets/GD2019-XZ/GD2019-XZ-p05-i01.png",
+    "paper_id": "GD2019-XZ",
+    "source_page": 5,
+    "source_bbox_points": [
+      150.75,
+      40.25,
+      446.0,
+      203.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1181,
+    "height": 653,
+    "sha256": "fcc7667c839547982c4423b8c68181ac00139fe56d92ba3ac612fa7cca7cec69",
+    "transcription": ""
+  },
+  {
+    "id": "GD2019-XZ-p05-i02",
+    "path": "assets/GD2019-XZ/GD2019-XZ-p05-i02.png",
+    "paper_id": "GD2019-XZ",
+    "source_page": 5,
+    "source_bbox_points": [
+      138.75,
+      253.25,
+      459.0,
+      440.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1281,
+    "height": 747,
+    "sha256": "232cbe0b5d6d049cb193b24ef156e0fe8a83a769b6468a41ea7b9edc572b898e",
+    "transcription": ""
+  },
+  {
+    "id": "GD2019-XZ-p05-i04",
+    "path": "assets/GD2019-XZ/GD2019-XZ-p05-i04.png",
+    "paper_id": "GD2019-XZ",
+    "source_page": 5,
+    "source_bbox_points": [
+      127.0,
+      490.0,
+      466.25,
+      594.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1357,
+    "height": 418,
+    "sha256": "ff87320d299f1d1a89519b8852ec33fefeb6dc0bc6712033fcb1f54bcc5aa6eb",
+    "transcription": ""
+  },
+  {
+    "id": "GD2019-XZ-p06-i01",
+    "path": "assets/GD2019-XZ/GD2019-XZ-p06-i01.png",
+    "paper_id": "GD2019-XZ",
+    "source_page": 6,
+    "source_bbox_points": [
+      135.25,
+      46.0,
+      460.0,
+      235.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1299,
+    "height": 758,
+    "sha256": "309306449285dc500b267b3c1a4127fbef9b2b46a97b0193cd5015a4c66a8446",
+    "transcription": ""
+  },
+  {
+    "id": "GD2019-XZ-p08-i01",
+    "path": "assets/GD2019-XZ/GD2019-XZ-p08-i01.png",
+    "paper_id": "GD2019-XZ",
+    "source_page": 8,
+    "source_bbox_points": [
+      224.75,
+      35.5,
+      355.75,
+      181.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 524,
+    "height": 583,
+    "sha256": "acadaab2d22946f7d0c578cef27f1c5ae78ec0a95e893d8e74569cea9db6b8b3",
+    "transcription": ""
+  },
+  {
+    "id": "GD2019-XZ-p08-i02",
+    "path": "assets/GD2019-XZ/GD2019-XZ-p08-i02.png",
+    "paper_id": "GD2019-XZ",
+    "source_page": 8,
+    "source_bbox_points": [
+      220.25,
+      338.0,
+      376.25,
+      469.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 624,
+    "height": 524,
+    "sha256": "1668a9373927bc2e74f4c9a0fd391ac953da5ba2035503b3e363ada528b60b3a",
+    "transcription": ""
+  },
+  {
+    "id": "GD2019-XZ-p08-i03",
+    "path": "assets/GD2019-XZ/GD2019-XZ-p08-i03.png",
+    "paper_id": "GD2019-XZ",
+    "source_page": 8,
+    "source_bbox_points": [
+      162.0,
+      576.0,
+      434.25,
+      657.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1089,
+    "height": 327,
+    "sha256": "664c9bee32f481ae6c86bdde27f761b414ede97974da1d9c807a8716be6293b4",
+    "transcription": ""
+  },
+  {
+    "id": "GD2019-XZ-p09-i01",
+    "path": "assets/GD2019-XZ/GD2019-XZ-p09-i01.png",
+    "paper_id": "GD2019-XZ",
+    "source_page": 9,
+    "source_bbox_points": [
+      225.0,
+      124.25,
+      369.75,
+      256.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 579,
+    "height": 527,
+    "sha256": "70bd40a5dccc99f46603b540249adf13deb2537df62224d6460a2b87b15a8f76",
+    "transcription": ""
+  },
+  {
+    "id": "GD2019-XZ-p09-i02",
+    "path": "assets/GD2019-XZ/GD2019-XZ-p09-i02.png",
+    "paper_id": "GD2019-XZ",
+    "source_page": 9,
+    "source_bbox_points": [
+      190.75,
+      432.0,
+      406.0,
+      496.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 861,
+    "height": 257,
+    "sha256": "b6352d2b14275bc3b08110a255768812c0dadfc2d7d7318f7c933929cad843ac",
+    "transcription": ""
+  },
+  {
+    "id": "GD2019-XZ-p10-i01",
+    "path": "assets/GD2019-XZ/GD2019-XZ-p10-i01.png",
+    "paper_id": "GD2019-XZ",
+    "source_page": 10,
+    "source_bbox_points": [
+      230.75,
+      42.75,
+      364.25,
+      156.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 534,
+    "height": 456,
+    "sha256": "03bbba69ac4c47083e14138c00f6dc48d9a53b347583379395f5e80ac733106a",
+    "transcription": ""
+  },
+  {
+    "id": "GD2019-XZ-p12-i01",
+    "path": "assets/GD2019-XZ/GD2019-XZ-p12-i01.png",
+    "paper_id": "GD2019-XZ",
+    "source_page": 12,
+    "source_bbox_points": [
+      130.25,
+      150.5,
+      455.0,
+      362.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1299,
+    "height": 846,
+    "sha256": "396a5ca8606118dc76833458123b5cbdeec0a06d3bc92d37f80bb9519e8b7cc9",
+    "transcription": "2014～2018年全国农村公路总里程及新改建农村公路里程\n\n| 年份 | 农村公路总里程（万公里） | 新改建农村公路里程（万公里） |\n| --- | --- | --- |\n| 2014年 | 388.16 | 23 |\n| 2015年 | 398.06 | 25.1 |\n| 2016年 | 395.98 | 29.3 |\n| 2017年 | 400.93 | 28.5 |\n| 2018年 | 405 | 31.8 |\n\n图例：柱为农村公路总里程（左轴，375—410），折线为新改建农村公路里程（右轴，0—35）。"
+  },
+  {
+    "id": "GD2019-XZ-p12-i02",
+    "path": "assets/GD2019-XZ/GD2019-XZ-p12-i02.png",
+    "paper_id": "GD2019-XZ",
+    "source_page": 12,
+    "source_bbox_points": [
+      130.25,
+      380.0,
+      462.0,
+      540.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1327,
+    "height": 643,
+    "sha256": "4b9a4388d59e6a24dfdf3de07580a8f506d0c217ac7c68d0677d9e184533600d",
+    "transcription": "2014～2018年全国农村公路覆盖情况\n\n| 年份 | 通硬化路面的乡镇占全国乡镇比例（%） | 通公路建制村占全国建制村比例（%） |\n| --- | --- | --- |\n| 2014年 | 98.08 | 99.82 |\n| 2015年 | 98.62 | 99.87 |\n| 2016年 | 99.00 | 99.94 |\n| 2017年 | 99.39 | 99.98 |\n| 2018年 | 99.64 | 99.47 |"
+  },
+  {
+    "id": "GD2019-XZ-p13-i03",
+    "path": "assets/GD2019-XZ/GD2019-XZ-p13-i03.png",
+    "paper_id": "GD2019-XZ",
+    "source_page": 13,
+    "source_bbox_points": [
+      98.0,
+      198.5,
+      461.0,
+      404.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1452,
+    "height": 824,
+    "sha256": "3bc7829bd35f137db392a2f8ecdb60b771bf5332fb68e6fa449edff38ca8528a",
+    "transcription": "2012—2018年全国农村贫困人口和贫困发生率\n\n| 年份 | 全国农村贫困人口（万人） | 全国农村贫困发生率（%） |\n| --- | --- | --- |\n| 2012年 | 9899 | 10.2 |\n| 2013年 | 8249 | 8.5 |\n| 2014年 | 7017 | 7.2 |\n| 2015年 | 5575 | 5.7 |\n| 2016年 | 4335 | 4.5 |\n| 2017年 | 3046 | 3.1 |\n| 2018年 | 1660 | 1.7 |\n\n图名为图下的一行正文（见材料）；图例：柱为全国农村贫困人口（左轴，0—10000），折线为全国农村贫困发生率（右轴，0—12）。"
+  },
+  {
+    "id": "GD2019-XZ-p13-i05",
+    "path": "assets/GD2019-XZ/GD2019-XZ-p13-i05.png",
+    "paper_id": "GD2019-XZ",
+    "source_page": 13,
+    "source_bbox_points": [
+      105.25,
+      491.0,
+      487.5,
+      655.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1529,
+    "height": 656,
+    "sha256": "39167c0e2ff40852974dcc591db597fc6d4e80e4124a23af3b4aad2e60f696dd",
+    "transcription": "我国贫困地区农村居民收入来源（单位：元）\n\n| 类别 | 2018年 | 2017年 |\n| --- | --- | --- |\n| 人均工资性收入 | 3627 | 3210 |\n| 人均转移性收入 | 2719 | 2325 |\n| 人均经营净收入 | 3888 | 3723 |\n| 人均财产净收入 | 137 | 119 |\n\n表中作“人均转移性收入”，第89题B项、第90题D项作“转移净收入”，均照录。2018年四项合计10371元，与正文人均可支配收入一致。"
+  },
+  {
+    "id": "GD2019-XZ-p14-i10",
+    "path": "assets/GD2019-XZ/GD2019-XZ-p14-i10.png",
+    "paper_id": "GD2019-XZ",
+    "source_page": 14,
+    "source_bbox_points": [
+      82.25,
+      398.0,
+      505.5,
+      566.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1693,
+    "height": 675,
+    "sha256": "5285083abbbab07e46aefb18e3e082bb9678d1e47bfc3265bf369907de4bbd22",
+    "transcription": "2015-2018年B省市场主体发展情况（单位：万户）\n\n| 项目 | 2018年 | 2017年 | 2016年 | 2015年 |\n| --- | --- | --- | --- | --- |\n| 实有各类市场主体 | 1146.13 | 1025.63 | 896.63 | 775.95 |\n| 新登记市场主体 | 229.76 | 195 | 161.58 | 178.76 |\n| 新登记企业 | 97.80 | 90.41 | 79.05 | 61.10 |\n| 新登记个体工商户 | 131.56 | 104.10 | 82.04 | 77.11 |\n| 新登记农民专业合作社 | 0.38 | 0.49 | 0.49 | 0.55 |\n\n照原表转写。“新登记市场主体”一行与分项不符：2018年原表作229.76，正文作229.74万户，企业、个体工商户、农民专业合作社三项之和为229.74；2015年原表作178.76，三项之和为138.76（县级卷同一数据作138.76）；2017年原表作195，未写小数。"
+  },
+  {
+    "id": "GD2019-XZ-p15-i02",
+    "path": "assets/GD2019-XZ/GD2019-XZ-p15-i02.png",
+    "paper_id": "GD2019-XZ",
+    "source_page": 15,
+    "source_bbox_points": [
+      91.25,
+      267.25,
+      504.0,
+      436.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1651,
+    "height": 677,
+    "sha256": "ba150499e9d0c504e3b654951784cda5c404b7cda0d53e5ad66b6a2da0a612e8",
+    "transcription": "2014-2017年A省无公害农产品生产情况\n\n| 项目 | 2017年 | 2016年 | 2015年 | 2014年 |\n| --- | --- | --- | --- | --- |\n| 农药使用总量（万吨） | 5.80 | 6.15 | 6.28 | 6.51 |\n| 单位耕地面积农药使用量（千克/亩） | 1.47 | 1.56 | 1.59 | 1.66 |\n| “三品一标”总数（个） | 2570 | 2561 | 2113 | 1905 |\n| 新增申报无公害农产品产地认定（个） | 221 | 235 | 194 | 270 |\n| 无公害农产品产地（个） | - | 1740 | 1895 | 1701 |\n| 无公害农产品种植面积（万亩） | 1050 | 650 | 380 | 332 |\n\n表名为表上方的一行正文（见材料）；2017年“无公害农产品产地”原表为“-”。"
+  }
+]
