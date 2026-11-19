@@ -1,0 +1,233 @@
+[
+ {
+  "paper": "GD2024",
+  "n_data": 20,
+  "n_math": 10,
+  "data_mode": [
+   5,
+   9,
+   5,
+   1
+  ],
+  "comp_avg": 2.5,
+  "traps": 14,
+  "data_min": 16.1,
+  "math_mode": [
+   0,
+   4,
+   5,
+   1
+  ],
+  "math_min": 6.9
+ },
+ {
+  "paper": "GD2025",
+  "n_data": 20,
+  "n_math": 10,
+  "data_mode": [
+   2,
+   10,
+   7,
+   1
+  ],
+  "comp_avg": 2.5,
+  "traps": 24,
+  "data_min": 16.9,
+  "math_mode": [
+   0,
+   3,
+   2,
+   5
+  ],
+  "math_min": 11.2
+ },
+ {
+  "paper": "GD2026",
+  "n_data": 20,
+  "n_math": 10,
+  "data_mode": [
+   6,
+   9,
+   4,
+   1
+  ],
+  "comp_avg": 2,
+  "traps": 21,
+  "data_min": 15.2,
+  "math_mode": [
+   0,
+   3,
+   5,
+   2
+  ],
+  "math_min": 7.4
+ },
+ {
+  "paper": "M01",
+  "n_data": 20,
+  "n_math": 10,
+  "data_mode": [
+   2,
+   6,
+   7,
+   5
+  ],
+  "comp_avg": 2.5,
+  "traps": 21,
+  "data_min": 19.0,
+  "math_mode": [
+   0,
+   1,
+   6,
+   3
+  ],
+  "math_min": 9.5
+ },
+ {
+  "paper": "M02",
+  "n_data": 20,
+  "n_math": 10,
+  "data_mode": [
+   3,
+   7,
+   7,
+   3
+  ],
+  "comp_avg": 2.8,
+  "traps": 26,
+  "data_min": 18.5,
+  "math_mode": [
+   0,
+   3,
+   4,
+   3
+  ],
+  "math_min": 8.8
+ },
+ {
+  "paper": "M03",
+  "n_data": 20,
+  "n_math": 10,
+  "data_mode": [
+   2,
+   7,
+   6,
+   5
+  ],
+  "comp_avg": 2.2,
+  "traps": 23,
+  "data_min": 19.3,
+  "math_mode": [
+   0,
+   0,
+   3,
+   7
+  ],
+  "math_min": 12.4
+ },
+ {
+  "paper": "M04",
+  "n_data": 20,
+  "n_math": 10,
+  "data_mode": [
+   2,
+   4,
+   7,
+   7
+  ],
+  "comp_avg": 2.7,
+  "traps": 27,
+  "data_min": 19.8,
+  "math_mode": [
+   0,
+   0,
+   9,
+   1
+  ],
+  "math_min": 9.3
+ },
+ {
+  "paper": "M05",
+  "n_data": 20,
+  "n_math": 10,
+  "data_mode": [
+   4,
+   4,
+   2,
+   10
+  ],
+  "comp_avg": 2.2,
+  "traps": 32,
+  "data_min": 20.2,
+  "math_mode": [
+   0,
+   0,
+   7,
+   3
+  ],
+  "math_min": 10.2
+ },
+ {
+  "paper": "M06",
+  "n_data": 20,
+  "n_math": 10,
+  "data_mode": [
+   2,
+   5,
+   6,
+   7
+  ],
+  "comp_avg": 2.2,
+  "traps": 28,
+  "data_min": 17.4,
+  "math_mode": [
+   0,
+   1,
+   7,
+   2
+  ],
+  "math_min": 7.6
+ },
+ {
+  "paper": "M07",
+  "n_data": 20,
+  "n_math": 10,
+  "data_mode": [
+   4,
+   2,
+   6,
+   8
+  ],
+  "comp_avg": 2.8,
+  "traps": 36,
+  "data_min": 19.7,
+  "math_mode": [
+   0,
+   3,
+   3,
+   4
+  ],
+  "math_min": 10.0
+ },
+ {
+  "paper": "M08",
+  "n_data": 20,
+  "n_math": 10,
+  "data_mode": [
+   4,
+   5,
+   3,
+   8
+  ],
+  "comp_avg": 2.2,
+  "traps": 29,
+  "data_min": 17.8,
+  "math_mode": [
+   0,
+   2,
+   3,
+   5
+  ],
+  "math_min": 11.1
+ }
+]

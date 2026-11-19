@@ -1,0 +1,2125 @@
+[
+ {
+  "paper": "GD2025",
+  "number": 36,
+  "type": "最值构造",
+  "mode": "一步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [],
+  "est_seconds": 30,
+  "note": "最不利构造：每色各取9个共45个，再取1个即保证10个同色，46个。"
+ },
+ {
+  "paper": "GD2025",
+  "number": 37,
+  "type": "和差倍比方程",
+  "mode": "一步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [],
+  "est_seconds": 35,
+  "note": "快捷窗口比平均多12单、其余每窗少1单，故其余窗口12个，共13个；一个方程即得。"
+ },
+ {
+  "paper": "GD2025",
+  "number": 38,
+  "type": "行程",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [
+   "对象或范围"
+  ],
+  "est_seconds": 50,
+  "note": "速度比5∶3，折返后相距40米按5∶3分配，儿子再跑15米、距终点25米；D项15是儿子再跑的距离。"
+ },
+ {
+  "paper": "GD2025",
+  "number": 39,
+  "type": "工程",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [],
+  "est_seconds": 100,
+  "note": "由合作5天+乙独做15天完成一半得乙效率为甲2倍，再按提前2天列剩余工作量方程求丙，多阶段三步以上。"
+ },
+ {
+  "paper": "GD2025",
+  "number": 40,
+  "type": "几何",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [
+   "其他：顶点重复计数"
+  ],
+  "est_seconds": 45,
+  "note": "两直角边3段、4段，勾股得斜边5段，闭合三角形共12段即12棵；分边相加不去顶点得15。"
+ },
+ {
+  "paper": "GD2025",
+  "number": 71,
+  "type": "现期量",
+  "mode": "一步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [
+   "当月与累计",
+   "单位"
+  ],
+  "est_seconds": 30,
+  "note": "1—11月=1—12月累计减12月当月，47494.86−4055.97≈43439亿元=4.34万亿元；选项间距约2%，但只是一次减法。"
+ },
+ {
+  "paper": "GD2025",
+  "number": 72,
+  "type": "增长率",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "当月与累计"
+  ],
+  "est_seconds": 35,
+  "note": "需先算增量2612亿元再除以基期44883，增速约5.8%，离5%界限约14%；误用12月两列得8.4%（仍在B区间）。"
+ },
+ {
+  "paper": "GD2025",
+  "number": 73,
+  "type": "比重",
+  "mode": "一步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "两位",
+  "traps": [
+   "当月与累计"
+  ],
+  "est_seconds": 35,
+  "note": "41385.83÷47494.86≈87.1%，与最近选项90.0%差3.3%；误用12月两列得85.6%。"
+ },
+ {
+  "paper": "GD2025",
+  "number": 74,
+  "type": "比较排序",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "当月与累计"
+  ],
+  "est_seconds": 40,
+  "note": "餐饮收入增量约1208亿元、基数4556亿元，增速约26%，其余三项均在10%以内，明显最大只需估算并核对乡村。"
+ },
+ {
+  "paper": "GD2025",
+  "number": 75,
+  "type": "综合分析",
+  "mode": "一步",
+  "options_to_check": 3,
+  "heaviest_option_mode": "一步",
+  "precision": "精算",
+  "traps": [
+   "当月与累计"
+  ],
+  "est_seconds": 45,
+  "note": "按A→D验：A项4055.97＞47494.86÷12≈3958（仅差2.5%）、B项533.54＞348.35×1.5正确，C项2680÷3218≈83%＜90%错误即定；全题需在12月与全年两列间取对口径。"
+ },
+ {
+  "paper": "GD2025",
+  "number": 76,
+  "type": "综合分析",
+  "mode": "一步",
+  "options_to_check": 3,
+  "heaviest_option_mode": "两步",
+  "precision": "两位",
+  "traps": [
+   "推不出",
+   "百分点与百分数"
+  ],
+  "est_seconds": 45,
+  "note": "A项煤炭比重材料未给（推不出）、B项17＞29.2÷2错误、D项3.8÷39.7%≈9.6万亿＞9万亿正确即定；未验的C项“提高15个百分点”对“翻一番”是百分点陷阱。"
+ },
+ {
+  "paper": "GD2025",
+  "number": 77,
+  "type": "综合分析",
+  "mode": "读",
+  "options_to_check": 2,
+  "heaviest_option_mode": "读",
+  "precision": "无",
+  "traps": [
+   "文字陷阱"
+  ],
+  "est_seconds": 35,
+  "note": "按原卷B项“超过1/2”：天然气用户5.6亿＜14亿的一半，一眼可判错误；C、D项与原文用词有出入（人均生活用电量、用电量与用电增量），细读者易犹豫。"
+ },
+ {
+  "paper": "GD2025",
+  "number": 78,
+  "type": "增长量",
+  "mode": "一步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "基期年或年份跨度"
+  ],
+  "est_seconds": 30,
+  "note": "增量860−10一眼可见，÷10年得85万台；误除以11年得约77。"
+ },
+ {
+  "paper": "GD2025",
+  "number": 79,
+  "type": "材料理解",
+  "mode": "读",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "无",
+  "traps": [
+   "对象或范围"
+  ],
+  "est_seconds": 25,
+  "note": "材料末句原文列出①②③，④“支撑经济社会高质量发展”是第二段讲的国内作用，不属于对世界的影响。"
+ },
+ {
+  "paper": "GD2025",
+  "number": 80,
+  "type": "综合分析",
+  "mode": "读",
+  "options_to_check": 3,
+  "heaviest_option_mode": "读",
+  "precision": "无",
+  "traps": [
+   "文字陷阱"
+  ],
+  "est_seconds": 45,
+  "note": "逐项回长文定位，A、B与原文一致，C项把“2023年出口风电光伏产品”偷换为“2013—2023年累计出口清洁能源产品”。"
+ },
+ {
+  "paper": "M05",
+  "number": 36,
+  "type": "和差倍比方程",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [
+   "单位"
+  ],
+  "est_seconds": 45,
+  "note": "51÷3=17次，设乙投中x次列一个方程得乙4、甲7、丙6次，再求次数差；按得分差作答会误选3。"
+ },
+ {
+  "paper": "M05",
+  "number": 37,
+  "type": "和差倍比方程",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [
+   "对象或范围"
+  ],
+  "est_seconds": 60,
+  "note": "十字交叉得人数比2∶3，再由去掉两人后高一平均分变90列方程得4人、6人，相差2人；D项4是高一人数。"
+ },
+ {
+  "paper": "M05",
+  "number": 38,
+  "type": "和差倍比方程",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [
+   "其他：一等奖人数可为0"
+  ],
+  "est_seconds": 60,
+  "note": "两式消元得11x+y=21，x取0使三等奖最少为79人；默认一等奖至少1人会误选89。"
+ },
+ {
+  "paper": "M05",
+  "number": 39,
+  "type": "经济利润",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [
+   "对象或范围"
+  ],
+  "est_seconds": 75,
+  "note": "代入A项定价120元倒推B成本80、A成本50、礼盒售价440、成本360，利润80元成立；链式多步，D项80是成本。"
+ },
+ {
+  "paper": "M05",
+  "number": 40,
+  "type": "工程",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [],
+  "est_seconds": 50,
+  "note": "一车间6天+二车间8天=合作6天+二车间2天，得二车间效率2%、单独50天；“多150个”为干扰条件。"
+ },
+ {
+  "paper": "M05",
+  "number": 41,
+  "type": "排列组合概率",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [],
+  "est_seconds": 45,
+  "note": "单次偶数概率2/5，至少2次偶数=C(3,2)(2/5)²(3/5)+(2/5)³=44/125，两类情况求和。"
+ },
+ {
+  "paper": "M05",
+  "number": 42,
+  "type": "排列组合概率",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "两位",
+  "traps": [
+   "文字陷阱"
+  ],
+  "est_seconds": 55,
+  "note": "恰两类夺冠三项乘积和0.44再加三类全中0.21得65%，距70%界限约8%；“至少两类”漏算三类全中会误选D。"
+ },
+ {
+  "paper": "M05",
+  "number": 43,
+  "type": "行程",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [],
+  "est_seconds": 90,
+  "note": "用时比1∶3得甲在3/4时走1500米，速度比5∶8、全程5200米，再求慢者剩余1950米，三步。"
+ },
+ {
+  "paper": "M05",
+  "number": 44,
+  "type": "杂题",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [
+   "文字陷阱"
+  ],
+  "est_seconds": 75,
+  "note": "左侧100个、右侧46个，公倍数165米处重合共10处，只去掉中间8处得138；“中间路段”限定是陷阱。"
+ },
+ {
+  "paper": "M05",
+  "number": 45,
+  "type": "杂题",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [
+   "文字陷阱"
+  ],
+  "est_seconds": 50,
+  "note": "第四季度月均95即11月95个，下半年月均80，明年上半年月均翻倍为160；“环比”指与今年下半年比。"
+ },
+ {
+  "paper": "M05",
+  "number": 71,
+  "type": "材料理解",
+  "mode": "读",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "无",
+  "traps": [],
+  "est_seconds": 20,
+  "note": "材料首段原句列出少子化、老龄化、区域人口增加分化三项，对照即知C未提及。"
+ },
+ {
+  "paper": "M05",
+  "number": 72,
+  "type": "综合分析",
+  "mode": "读",
+  "options_to_check": 3,
+  "heaviest_option_mode": "读",
+  "precision": "无",
+  "traps": [
+   "推不出"
+  ],
+  "est_seconds": 40,
+  "note": "A、B、C均能在原文找到（验完三项即定），D“主要依靠自给自足”材料无依据且与人才流入表述相反。"
+ },
+ {
+  "paper": "M05",
+  "number": 73,
+  "type": "增长量",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "百分点与百分数",
+   "对象或范围",
+   "基期年或年份跨度"
+  ],
+  "est_seconds": 70,
+  "note": "需倒推2024年总人口12780万、城镇化率75.91%得城镇人口约9701万，增量约146万；误用79万、错配基期或把0.67个百分点当增速都会算偏。"
+ },
+ {
+  "paper": "M05",
+  "number": 74,
+  "type": "比重",
+  "mode": "一步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [],
+  "est_seconds": 25,
+  "note": "1324÷1993≈66%，与最近选项相差15%，粗估即可。"
+ },
+ {
+  "paper": "M05",
+  "number": 75,
+  "type": "综合分析",
+  "mode": "一步",
+  "options_to_check": 1,
+  "heaviest_option_mode": "三步及以上",
+  "precision": "精算",
+  "traps": [
+   "对象或范围",
+   "推不出",
+   "基期年或年份跨度"
+  ],
+  "est_seconds": 30,
+  "note": "先验A：出生减死亡100.3−71.3=29万人恰好正确即定（需具体数值）；未验的B项非劳动年龄误用65岁及以上、C项推不出、D项要倒推2024年城乡人口。"
+ },
+ {
+  "paper": "M05",
+  "number": 76,
+  "type": "比较排序",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [
+   "当月与累计"
+  ],
+  "est_seconds": 70,
+  "note": "季度值需由累计值相减，二、四季度155.0亿与156.9亿仅差1.2%，要算准三位；直接比累计值会误选一季度。"
+ },
+ {
+  "paper": "M05",
+  "number": 77,
+  "type": "比重",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "基期年或年份跨度"
+  ],
+  "est_seconds": 90,
+  "note": "求2023年一季度（基期）非公路占比，需两个基期量或基期比重公式；1−93.6%的差值放大误差，现期占比7.43%即B项。"
+ },
+ {
+  "paper": "M05",
+  "number": 78,
+  "type": "增长率",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "两位",
+  "traps": [
+   "隔年或混合增长",
+   "对象或范围"
+  ],
+  "est_seconds": 50,
+  "note": "隔年增长率3.9%+9.0%+3.9%×9.0%≈13.25%，与C项12.9%仅差3%，漏乘积项即误选C，误用总量列得14.6%（A）。"
+ },
+ {
+  "paper": "M05",
+  "number": 79,
+  "type": "增长率",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "当月与累计",
+   "对象或范围"
+  ],
+  "est_seconds": 80,
+  "note": "先在1—7月至1—12月累计增速中找最高的7月，再用累计相减求7月、6月公路单月量，环比约9.8%；下半年范围、公路口径、当月与累计三处要对。"
+ },
+ {
+  "paper": "M05",
+  "number": 80,
+  "type": "综合分析",
+  "mode": "一步",
+  "options_to_check": 3,
+  "heaviest_option_mode": "一步",
+  "precision": "粗估",
+  "traps": [
+   "单位",
+   "推不出",
+   "对象或范围",
+   "当月与累计"
+  ],
+  "est_seconds": 60,
+  "note": "A项公路增量592.9÷21.8≈27亿＜30亿错误、B项表中只有累计值，“每月”推不出，C项非公路占比7.9%＜10%正确即定；A、D需万人次换算为亿人次，A误用总量列会判对。"
+ },
+ {
+  "paper": "M05",
+  "number": 81,
+  "type": "现期量",
+  "mode": "一步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [
+   "基期年或年份跨度"
+  ],
+  "est_seconds": 35,
+  "note": "“十三五”为2016—2020年，五数相加用尾数法锁定11670，与B项差1.7%；误取2017—2021年得D。"
+ },
+ {
+  "paper": "M05",
+  "number": 82,
+  "type": "增长率",
+  "mode": "读",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "无",
+  "traps": [
+   "平均数或比值的增长"
+  ],
+  "est_seconds": 35,
+  "note": "比重上升即部分增速高于整体，数2017—2023年占比上升的年份共4个，无需计算；只看互联网保费自身是否增长会数出6个。"
+ },
+ {
+  "paper": "M05",
+  "number": 83,
+  "type": "增长量",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [
+   "文字陷阱",
+   "基期年或年份跨度"
+  ],
+  "est_seconds": 60,
+  "note": "2023年增量166亿元，目标5800亿元，(5800−4949)÷166≈5.1须取6年至2029年；“增量不变”“20倍”与年数边界都要处理。"
+ },
+ {
+  "paper": "M05",
+  "number": 84,
+  "type": "平均数",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "基期年或年份跨度",
+   "当月与累计"
+  ],
+  "est_seconds": 60,
+  "note": "先求2023年1—7月=3663÷1.15≈3185，全年4949减去后除以5，约353；基期年、累计期与月数都要对。"
+ },
+ {
+  "paper": "M05",
+  "number": 85,
+  "type": "图形选项",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "对象或范围"
+  ],
+  "est_seconds": 80,
+  "note": "需由表算出2017—2023年共7个增量，再比对升降方向、幅度和首末点，A、D方向相同须比幅度；画的是增量不是保费。"
+ },
+ {
+  "paper": "M05",
+  "number": 86,
+  "type": "平均数",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "两位",
+  "traps": [
+   "基期年或年份跨度"
+  ],
+  "est_seconds": 70,
+  "note": "2019年需由8.57÷(1−36.6%)≈13.5倒推，6年合计除以6≈10.6，与B项差约6%；漏算2019年会得B或D。"
+ },
+ {
+  "paper": "M05",
+  "number": 87,
+  "type": "图形选项",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "对象或范围"
+  ],
+  "est_seconds": 45,
+  "note": "东部7.57÷14.60≈52%略超半圆、西部约31%，据此排除A、B、D；误用货邮数据会对上A。"
+ },
+ {
+  "paper": "M05",
+  "number": 88,
+  "type": "倍数",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "文字陷阱",
+   "对象或范围"
+  ],
+  "est_seconds": 40,
+  "note": "先加中、西部再除，1376.68÷565.46≈2.43倍即多1.43倍；“多多少倍”与“中西部之和”两处陷阱。"
+ },
+ {
+  "paper": "M05",
+  "number": 89,
+  "type": "比较排序",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "其他：增长量与增长率"
+  ],
+  "est_seconds": 65,
+  "note": "需分别算东、中、西三地增量（约170、89、58万吨），东北明显最小；只按增速或现期量排序各对应一个错误选项。"
+ },
+ {
+  "paper": "M05",
+  "number": 90,
+  "type": "综合分析",
+  "mode": "读",
+  "options_to_check": 2,
+  "heaviest_option_mode": "三步及以上",
+  "precision": "无",
+  "traps": [
+   "其他：中位数需排序",
+   "隔年或混合增长",
+   "百分点与百分数"
+  ],
+  "est_seconds": 40,
+  "note": "A项排序得中位数1683.31可推出，B项两图增速最高年份分别为2023与2024年即定；未验的C、D分别考隔年增长与百分点。"
+ },
+ {
+  "paper": "M06",
+  "number": 36,
+  "type": "工程",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [
+   "对象或范围"
+  ],
+  "est_seconds": 45,
+  "note": "赋总量60得效率6、4、3，扣除前两段完成量后乙独做4天，加开头2天共6天；漏算开头2天误选A。"
+ },
+ {
+  "paper": "M06",
+  "number": 37,
+  "type": "行程",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [
+   "单位",
+   "对象或范围"
+  ],
+  "est_seconds": 50,
+  "note": "设乙速x米/分，120(x+10)−100x=2800得x=80，甲90米/分=5.4千米/时；需加10并换算单位，C项是乙的速度。"
+ },
+ {
+  "paper": "M06",
+  "number": 38,
+  "type": "最值构造",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [
+   "文字陷阱"
+  ],
+  "est_seconds": 75,
+  "note": "设第三名x，其余尽量高，由总分不等式得x≥81，再构造91、86、81、79、78验证；“各不相同”排除80。"
+ },
+ {
+  "paper": "M06",
+  "number": 39,
+  "type": "和差倍比方程",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [],
+  "est_seconds": 35,
+  "note": "两次占比差2/9对应100ml，总容积450ml，第一次加后200ml，初始50ml。"
+ },
+ {
+  "paper": "M06",
+  "number": 40,
+  "type": "和差倍比方程",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [
+   "对象或范围"
+  ],
+  "est_seconds": 50,
+  "note": "总人数是7、8的倍数且外省人数为7的倍数，故为56人，本省女生5人比外省男生4人多1人；C项5是本省女生数。"
+ },
+ {
+  "paper": "M06",
+  "number": 41,
+  "type": "和差倍比方程",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [
+   "对象或范围"
+  ],
+  "est_seconds": 45,
+  "note": "设张上午2x、丁上午3x，下午分别3x+6、3x−6，11x=110得x=10，张共56份；B项54是丁的总量。"
+ },
+ {
+  "paper": "M06",
+  "number": 42,
+  "type": "排列组合概率",
+  "mode": "一步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [],
+  "est_seconds": 20,
+  "note": "两人各自通过三关概率24%、9%相乘得2.16%，一次连乘。"
+ },
+ {
+  "paper": "M06",
+  "number": 43,
+  "type": "杂题",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [],
+  "est_seconds": 35,
+  "note": "4×12+6d=78得d=5，最多部门27人，三项等差中间项9人。"
+ },
+ {
+  "paper": "M06",
+  "number": 44,
+  "type": "杂题",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [
+   "对象或范围"
+  ],
+  "est_seconds": 35,
+  "note": "单侧柳树31棵、松树60棵，多29棵，两侧共多58棵；只算一侧误选B。"
+ },
+ {
+  "paper": "M06",
+  "number": 45,
+  "type": "和差倍比方程",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [],
+  "est_seconds": 60,
+  "note": "总人数为11和5的公倍数且小于100得55人，男20人、党员33人，和差得党员男15人、党员女18人。"
+ },
+ {
+  "paper": "M06",
+  "number": 71,
+  "type": "材料理解",
+  "mode": "读",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "无",
+  "traps": [],
+  "est_seconds": 30,
+  "note": "逐项找关键词，A、C、D均有原句，B“港澳”全文未出现。"
+ },
+ {
+  "paper": "M06",
+  "number": 72,
+  "type": "综合分析",
+  "mode": "读",
+  "options_to_check": 2,
+  "heaviest_option_mode": "读",
+  "precision": "无",
+  "traps": [
+   "推不出",
+   "文字陷阱"
+  ],
+  "est_seconds": 35,
+  "note": "A项全覆盖可推出，B项材料只说“保障全国近五分之一随迁子女”，“居全国首位”推不出即定；A项时间表述易被误判。"
+ },
+ {
+  "paper": "M06",
+  "number": 73,
+  "type": "增长率",
+  "mode": "一步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "两位",
+  "traps": [
+   "基期年或年份跨度"
+  ],
+  "est_seconds": 35,
+  "note": "增量15.85万人直接给出，基期168.04−15.85=152.19，15.85÷152.19≈10.4%，与C项差约9.6%；用现期作分母得9.4%即C。"
+ },
+ {
+  "paper": "M06",
+  "number": 74,
+  "type": "比重",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "两位",
+  "traps": [
+   "对象或范围"
+  ],
+  "est_seconds": 35,
+  "note": "专科及以上=23.55+275.46=299.01，占2766.19约10.8%，距10%界限约7%；只算本专科得9.96%落入B。"
+ },
+ {
+  "paper": "M06",
+  "number": 75,
+  "type": "综合分析",
+  "mode": "一步",
+  "options_to_check": 1,
+  "heaviest_option_mode": "一步",
+  "precision": "粗估",
+  "traps": [
+   "文字陷阱",
+   "对象或范围"
+  ],
+  "est_seconds": 30,
+  "note": "先验A：新增普通高校166−154=12所、职教本科5所不到一半，正确即定；B项“首轮”与原文“第二轮”不符，D项是上限逻辑，A误用“新增10所本科”会判错。"
+ },
+ {
+  "paper": "M06",
+  "number": 76,
+  "type": "增长率",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "隔年或混合增长"
+  ],
+  "est_seconds": 50,
+  "note": "已知间隔增长率22%和后一年9.66%，前一年=1.22÷1.0966−1≈11.3%，与C项差约11%；直接相减得12.3%落入C。"
+ },
+ {
+  "paper": "M06",
+  "number": 77,
+  "type": "比重",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "两位",
+  "traps": [],
+  "est_seconds": 50,
+  "note": "寿险占比64÷139.56≈45.9%，意外险由100%减其余三项得约2.3%，差约43.6个百分点，与D项差3.4%。"
+ },
+ {
+  "paper": "M06",
+  "number": 78,
+  "type": "增长率",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "对象或范围"
+  ],
+  "est_seconds": 45,
+  "note": "下半年各月环比增量中11月+16亿元最大，16÷37≈43%；把6月算进下半年会得48%（B）。"
+ },
+ {
+  "paper": "M06",
+  "number": 79,
+  "type": "平均数",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [],
+  "est_seconds": 50,
+  "note": "上、下半年合计525与319亿元，差206÷6≈34.3亿元；两组六数求和。"
+ },
+ {
+  "paper": "M06",
+  "number": 80,
+  "type": "综合分析",
+  "mode": "一步",
+  "options_to_check": 3,
+  "heaviest_option_mode": "一步",
+  "precision": "两位",
+  "traps": [
+   "推不出",
+   "文字陷阱",
+   "基期年或年份跨度"
+  ],
+  "est_seconds": 40,
+  "note": "A项人均保费不能推参保人数、B项4—6月合计217≠227、C项无上年月度数据（同比推不出），排除三项得D（139.56÷1.0966≈127.3＞123）。"
+ },
+ {
+  "paper": "M06",
+  "number": 81,
+  "type": "基期量",
+  "mode": "一步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "两位",
+  "traps": [
+   "基期年或年份跨度",
+   "当月与累计",
+   "单位"
+  ],
+  "est_seconds": 35,
+  "note": "2023年1—4月=176583.3÷1.063≈16.6亿吨，与B项差3%；须用1—4月累计增速（不是4月9.6%）并换算为亿吨。"
+ },
+ {
+  "paper": "M06",
+  "number": 82,
+  "type": "比重",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "平均数或比值的增长",
+   "百分点与百分数"
+  ],
+  "est_seconds": 75,
+  "note": "火车、船舶增速低于总体先排除，再分别算汽车（约1.74个百分点）与飞机（约0.58个百分点）的比重变化量；只看增速差或比重的相对变化会误选飞机。"
+ },
+ {
+  "paper": "M06",
+  "number": 83,
+  "type": "基期量",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "两位",
+  "traps": [
+   "基期年或年份跨度",
+   "当月与累计"
+  ],
+  "est_seconds": 70,
+  "note": "需分别倒推2023年1—4月(÷1.053)与4月(÷1.075)再相减，约39477万吨，与B项差4.4%；直接用2024年数相减得B。"
+ },
+ {
+  "paper": "M06",
+  "number": 84,
+  "type": "平均数",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [
+   "当月与累计"
+  ],
+  "est_seconds": 60,
+  "note": "“4月高于1—3月平均”等价于4月×4＞1—4月累计，四种工具逐一比较，火车仅高约2.5%；比当月与累计增速会误选A。"
+ },
+ {
+  "paper": "M06",
+  "number": 85,
+  "type": "综合分析",
+  "mode": "一步",
+  "options_to_check": 3,
+  "heaviest_option_mode": "一步",
+  "precision": "精算",
+  "traps": [
+   "其他：4月按30天",
+   "文字陷阱",
+   "谁比谁",
+   "当月与累计"
+  ],
+  "est_seconds": 50,
+  "note": "按A→D验：A项69460÷30≈2315＞2300（仅差0.65%）错误、B项“多2.1倍”应为多约1.1倍错误，C项用1—4月增速6.8%求进口增量≈7504万吨＞7000正确即定；D项谁比谁说反。"
+ },
+ {
+  "paper": "M06",
+  "number": 86,
+  "type": "现期量",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "两位",
+  "traps": [],
+  "est_seconds": 40,
+  "note": "两段三年合计相减为2345，尾数5锁定C或D，再看量级约2300即选C，与B项差4.6%。"
+ },
+ {
+  "paper": "M06",
+  "number": 87,
+  "type": "增长量",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "基期年或年份跨度"
+  ],
+  "est_seconds": 30,
+  "note": "以2018年为基期到2022年增长4次，(2115−1137)÷4=244.5万吨；误除以5得195.6。"
+ },
+ {
+  "paper": "M06",
+  "number": 88,
+  "type": "增长量",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "基期年或年份跨度",
+   "文字陷阱"
+  ],
+  "est_seconds": 30,
+  "note": "2023年增量2312−2115=197，至2026年再加3次得2903万吨，与A项差10%；按增速外推或多加一次都会算偏。"
+ },
+ {
+  "paper": "M06",
+  "number": 89,
+  "type": "比较排序",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "其他：增长量与增长率"
+  ],
+  "est_seconds": 70,
+  "note": "需先求非木浆产量8823−2312−5936=575万吨，再分别算三类增量197、21.9、17.0万吨；只按增速或产量排序各对应错误选项。"
+ },
+ {
+  "paper": "M06",
+  "number": 90,
+  "type": "图形选项",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "两位",
+  "traps": [
+   "对象或范围"
+  ],
+  "est_seconds": 55,
+  "note": "由表算出2020—2023年4个增量226、319、306、197，比对升降与幅度；319与306只差约4%，易判反中间一段，画的是增量不是产量。"
+ },
+ {
+  "paper": "M07",
+  "number": 36,
+  "type": "和差倍比方程",
+  "mode": "一步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [
+   "对象或范围"
+  ],
+  "est_seconds": 40,
+  "note": "设甲部门x人，0.3x+10=(120−x)÷2−10得x=50，乙部门70人；也可直接代入C验证，A项50是甲部门人数。"
+ },
+ {
+  "paper": "M07",
+  "number": 37,
+  "type": "最值构造",
+  "mode": "一步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [],
+  "est_seconds": 25,
+  "note": "最不利情况每种礼品各被2人领取共40人，再加1人即41人。"
+ },
+ {
+  "paper": "M07",
+  "number": 38,
+  "type": "行程",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [],
+  "est_seconds": 60,
+  "note": "速度比1.3∶1、时间比2∶1，路程比2.6∶1，L+20=2.6(L−20)得L=45。"
+ },
+ {
+  "paper": "M07",
+  "number": 39,
+  "type": "杂题",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [
+   "文字陷阱"
+  ],
+  "est_seconds": 60,
+  "note": "小明比小红大3岁，3×(3x+15)=9(x+5)为平方数，代入选项或枚举x+5=16得小明14岁；“平方数的三分之一”需转化。"
+ },
+ {
+  "paper": "M07",
+  "number": 40,
+  "type": "工程",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [],
+  "est_seconds": 100,
+  "note": "赋总量20、甲效率1，由计划15天求乙0.5，算出完成2/5时已用7天，再由实际17天求丙0.2，多阶段三步以上。"
+ },
+ {
+  "paper": "M07",
+  "number": 41,
+  "type": "经济利润",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [],
+  "est_seconds": 75,
+  "note": "售价降为4/5则销量为5/4，多出1/4对应16个，得两月销量64、80，再求售价、成本和总利润480元，链式多步。"
+ },
+ {
+  "paper": "M07",
+  "number": 42,
+  "type": "几何",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [],
+  "est_seconds": 60,
+  "note": "圆台容积用1/3πh(R²+Rr+r²)=370π/3，水桶1850π，相除恰为15杯；需记得圆台公式。"
+ },
+ {
+  "paper": "M07",
+  "number": 43,
+  "type": "排列组合概率",
+  "mode": "一步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [],
+  "est_seconds": 30,
+  "note": "“依次汇报”说明结果为组合数×3!，必为6的倍数，选项中只有78满足，整除秒杀。"
+ },
+ {
+  "paper": "M07",
+  "number": 44,
+  "type": "几何",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [
+   "其他：对角线交点重复计数"
+  ],
+  "est_seconds": 75,
+  "note": "两边6段、8段，对角线10段，四周28根加两条对角线各9根，中心交点重复减1得45根；漏减中心误选B。"
+ },
+ {
+  "paper": "M07",
+  "number": 45,
+  "type": "几何",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [],
+  "est_seconds": 70,
+  "note": "△AED=9，由△BEF=5得BF∶BC=5∶9、△FCD=8，阴影=36−9−5−8=14，三步。"
+ },
+ {
+  "paper": "M07",
+  "number": 71,
+  "type": "材料理解",
+  "mode": "读",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "无",
+  "traps": [
+   "对象或范围"
+  ],
+  "est_seconds": 25,
+  "note": "首句中①②③是举措，④“经济运行总体延续回升向好态势”是结果，同在一句易误选D。"
+ },
+ {
+  "paper": "M07",
+  "number": 72,
+  "type": "综合分析",
+  "mode": "一步",
+  "options_to_check": 3,
+  "heaviest_option_mode": "一步",
+  "precision": "粗估",
+  "traps": [
+   "文字陷阱",
+   "百分点与百分数"
+  ],
+  "est_seconds": 40,
+  "note": "A项原文可查、B项941.66÷34950≈2.7%＜3%均正确，C项“降幅收窄”应为15.6+1.5=17.1%而非14.1%，错误即定。"
+ },
+ {
+  "paper": "M07",
+  "number": 73,
+  "type": "比较排序",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "其他：增长量与增长率"
+  ],
+  "est_seconds": 35,
+  "note": "第一产业增量明显最小，只需估算比较二、三产业：第三产业现期量约为第二产业1.74倍而增速相近，增量更大；按增速排会误选A。"
+ },
+ {
+  "paper": "M07",
+  "number": 74,
+  "type": "比重",
+  "mode": "一步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "基期年或年份跨度"
+  ],
+  "est_seconds": 35,
+  "note": "现期比重12410.95÷34950.34≈35.5%，第二产业增速4.7%与GDP增速4.6%几乎相同，基期比重基本不变，直接选C。"
+ },
+ {
+  "paper": "M07",
+  "number": 75,
+  "type": "综合分析",
+  "mode": "两步",
+  "options_to_check": 3,
+  "heaviest_option_mode": "两步",
+  "precision": "粗估",
+  "traps": [
+   "基期年或年份跨度",
+   "百分点与百分数",
+   "隔年或混合增长",
+   "推不出",
+   "平均数或比值的增长"
+  ],
+  "est_seconds": 55,
+  "note": "先验易档C（混合增速知房地产投资增速必低于0.2%）、D（上年一季度推不出），再验A（2025年两增速3.2%与0.3%相差2.9个百分点）均错，排除三项得B。"
+ },
+ {
+  "paper": "M07",
+  "number": 76,
+  "type": "基期量",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "当月与累计",
+   "基期年或年份跨度"
+  ],
+  "est_seconds": 45,
+  "note": "2022年上半年=14060÷1.166≈12058万台，全年22247减去得10189万台；忘记相减即C项。"
+ },
+ {
+  "paper": "M07",
+  "number": 77,
+  "type": "增长率",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "当月与累计"
+  ],
+  "est_seconds": 45,
+  "note": "由累计相减得9月1770、10月1468万台，10月环比约−17%；直接比累计值会得增长8.4%（A）。"
+ },
+ {
+  "paper": "M07",
+  "number": 78,
+  "type": "增长率",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "当月与累计",
+   "基期年或年份跨度"
+  ],
+  "est_seconds": 90,
+  "note": "6月当月量2635万台，上年同月需由1—6月、1—5月两个累计值分别倒推再相减（约2054），同比约28.3%；倒推需算准到十位（误差放大），直接读累计增速得A。"
+ },
+ {
+  "paper": "M07",
+  "number": 79,
+  "type": "平均数",
+  "mode": "读",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "无",
+  "traps": [
+   "平均数或比值的增长"
+  ],
+  "est_seconds": 30,
+  "note": "出口金额降15.4%、出口量增1.3%，单价必降且降幅大于15.4%，四个选项中只有B符合，无需计算。"
+ },
+ {
+  "paper": "M07",
+  "number": 80,
+  "type": "图形选项",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "当月与累计",
+   "对象或范围"
+  ],
+  "est_seconds": 60,
+  "note": "累计→当月产量→环比增量要做两次差，得−302、21、309，持续上升对应A；按当月产量画是“降升”，按累计增速走势会误选C。"
+ },
+ {
+  "paper": "M07",
+  "number": 81,
+  "type": "基期量",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "隔年或混合增长"
+  ],
+  "est_seconds": 45,
+  "note": "2018年=2096.76÷1.3261÷1.1803≈1339.6亿元，隔两年连续倒推；只倒推一次得2019年即D。"
+ },
+ {
+  "paper": "M07",
+  "number": 82,
+  "type": "比重",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [
+   "文字陷阱"
+  ],
+  "est_seconds": 50,
+  "note": "先合并占比(29.55+17.01)−(4.67+2.59)=39.30%，再乘2268.60得891.6，与C项差2.7%；“棋牌类”与“卡牌类”易看错。"
+ },
+ {
+  "paper": "M07",
+  "number": 83,
+  "type": "增长率",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "对象或范围"
+  ],
+  "est_seconds": 60,
+  "note": "游戏市场整体增速=1.1751×72.61÷74.88−1≈13.95%，需用部分÷比重求两年整体；误用移动游戏增速得B。"
+ },
+ {
+  "paper": "M07",
+  "number": 84,
+  "type": "增长量",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "对象或范围"
+  ],
+  "est_seconds": 50,
+  "note": "分别求2021、2022年游戏市场整体收入（÷比重）再相减，约减少306亿元，距500亿元界限远；只用移动游戏数据得减少325亿元。"
+ },
+ {
+  "paper": "M07",
+  "number": 85,
+  "type": "综合分析",
+  "mode": "两步",
+  "options_to_check": 3,
+  "heaviest_option_mode": "两步",
+  "precision": "粗估",
+  "traps": [
+   "推不出",
+   "对象或范围",
+   "基期年或年份跨度"
+  ],
+  "est_seconds": 55,
+  "note": "先验易档B（收入占比偷换为数量，推不出）、C（非移动占比低于上年有4年）均错，再验A：三年平均比2020年高约54.8亿元＜75亿元，正确；D项须除以3年。"
+ },
+ {
+  "paper": "M07",
+  "number": 86,
+  "type": "比重",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "两位",
+  "traps": [
+   "基期年或年份跨度"
+  ],
+  "est_seconds": 75,
+  "note": "基期利润率=7.26%×1.084÷0.847≈9.3%，需同时用表中利润增速和图中收入增速，与B项差7.5%；用2024年数据得A。"
+ },
+ {
+  "paper": "M07",
+  "number": 87,
+  "type": "增长率",
+  "mode": "读",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "无",
+  "traps": [
+   "当月与累计",
+   "对象或范围"
+  ],
+  "est_seconds": 40,
+  "note": "当月增速高于累计增速等价于累计增速比上月上升，7—12月中7、9、10、11、12月上升共5个；漏比7月与1—6月会得4个。"
+ },
+ {
+  "paper": "M07",
+  "number": 88,
+  "type": "增长量",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "两位",
+  "traps": [
+   "基期年或年份跨度"
+  ],
+  "est_seconds": 60,
+  "note": "先用2024年增速3.7%把5547换回2023年1—4月约5349，再用2023年增速3.3%求增量约170.9亿元，选项相差约6%；两增速用反得C。"
+ },
+ {
+  "paper": "M07",
+  "number": 89,
+  "type": "比较排序",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "其他：增长量与增长率",
+   "百分点与百分数"
+  ],
+  "est_seconds": 70,
+  "note": "东部收入需由全国减三地区、增速由全国减0.4个百分点推出，中部增速5.6%+6.4%=12%，再分别算增量；按增速排会误选C。"
+ },
+ {
+  "paper": "M07",
+  "number": 90,
+  "type": "综合分析",
+  "mode": "读",
+  "options_to_check": 2,
+  "heaviest_option_mode": "三步及以上",
+  "precision": "无",
+  "traps": [
+   "文字陷阱",
+   "当月与累计",
+   "平均数或比值的增长",
+   "基期年或年份跨度",
+   "百分点与百分数"
+  ],
+  "est_seconds": 45,
+  "note": "A项五期利润增速均低于收入增速、利润率下降正确，D项中部增速为全国+6.4个百分点必高于东部，错误即定；未验的B要用1—6月减1—3月，C要倒推2023年三期累计。"
+ },
+ {
+  "paper": "M08",
+  "number": 36,
+  "type": "经济利润",
+  "mode": "一步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [],
+  "est_seconds": 25,
+  "note": "每户打折后1080元、实缴41000÷40=1025元，补贴55元。"
+ },
+ {
+  "paper": "M08",
+  "number": 37,
+  "type": "和差倍比方程",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [
+   "对象或范围"
+  ],
+  "est_seconds": 60,
+  "note": "设今年男员工x，其余三个量用x表示，2x−5=3/4(2x+18)得x=37，再求两年女员工32+25=57；选项分别对应各中间量。"
+ },
+ {
+  "paper": "M08",
+  "number": 38,
+  "type": "几何",
+  "mode": "一步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [
+   "谁比谁"
+  ],
+  "est_seconds": 30,
+  "note": "B、C为中点、O为重心，三条中线分成6个等积小三角形，ABOC占1/3，黄∶蓝=1∶2；B项2∶3是蓝色占总面积。"
+ },
+ {
+  "paper": "M08",
+  "number": 39,
+  "type": "经济利润",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [
+   "对象或范围"
+  ],
+  "est_seconds": 45,
+  "note": "新品成本200元盈利60元，促销品亏60元为成本25%，成本240、售价180，收入440元；D项500把成本当售价。"
+ },
+ {
+  "paper": "M08",
+  "number": 40,
+  "type": "工程",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [],
+  "est_seconds": 55,
+  "note": "每台机器每天900份、每人400份，按2∶3分组3000k=9000得k=3，机器5400份比人工3600份多1800份。"
+ },
+ {
+  "paper": "M08",
+  "number": 41,
+  "type": "排列组合概率",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [
+   "文字陷阱"
+  ],
+  "est_seconds": 120,
+  "note": "条件样本空间需按相邻页对在端点或中间分类得42种，有利情形12种，概率2/7，计数复杂；“均不存在”易与“至少一页”混淆。"
+ },
+ {
+  "paper": "M08",
+  "number": 42,
+  "type": "排列组合概率",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [],
+  "est_seconds": 60,
+  "note": "选普通球、专业球概率为40%、60%，单次命中0.52，三次0.52³≈14.1%，在12%—16%内，距界限约14%。"
+ },
+ {
+  "paper": "M08",
+  "number": 43,
+  "type": "行程",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [
+   "对象或范围"
+  ],
+  "est_seconds": 100,
+  "note": "赋骑速1、车速5、全程D，列甲(D+1/3)与乙(7/3+D/5)用时差1/5小时的方程得D=11/4，甲全程含休息共185分钟；漏算休息得A。"
+ },
+ {
+  "paper": "M08",
+  "number": 44,
+  "type": "杂题",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [
+   "其他：不闭合三边植树计数"
+  ],
+  "est_seconds": 90,
+  "note": "21盏灯20段共300米，2a+(a+30)=300得长边120米，改为三边各120米共360米，每12米一盏为31盏，多10盏；三边不闭合是陷阱。"
+ },
+ {
+  "paper": "M08",
+  "number": 45,
+  "type": "最值构造",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [
+   "文字陷阱"
+  ],
+  "est_seconds": 75,
+  "note": "C=9，2B+D=32，D不超过B且不超过C=9、又须为偶数，取D=8得B=12、A=16；忽略D≤C会误选15。"
+ },
+ {
+  "paper": "M08",
+  "number": 71,
+  "type": "综合分析",
+  "mode": "读",
+  "options_to_check": 2,
+  "heaviest_option_mode": "读",
+  "precision": "无",
+  "traps": [
+   "文字陷阱"
+  ],
+  "est_seconds": 30,
+  "note": "A项与首句一致，B项把“地级市”换成“县级市”，一词之差即定。"
+ },
+ {
+  "paper": "M08",
+  "number": 72,
+  "type": "材料理解",
+  "mode": "读",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "无",
+  "traps": [],
+  "est_seconds": 20,
+  "note": "原文直接列出粤菜师傅、广东技工、南粤家政三项，粤遗匠人未提及。"
+ },
+ {
+  "paper": "M08",
+  "number": 73,
+  "type": "综合分析",
+  "mode": "一步",
+  "options_to_check": 1,
+  "heaviest_option_mode": "一步",
+  "precision": "两位",
+  "traps": [
+   "文字陷阱",
+   "基期年或年份跨度"
+  ],
+  "est_seconds": 30,
+  "note": "先验A：2011年=93÷1.192≈78所＞75所，正确即定（距75约4%）；未验的C项把十年累计说成2022年一年。"
+ },
+ {
+  "paper": "M08",
+  "number": 74,
+  "type": "增长量",
+  "mode": "一步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "两位",
+  "traps": [],
+  "est_seconds": 35,
+  "note": "增长量=125.4×83.1%÷1.831≈56.9万人，选项最近相差约9%；求成基期量68.5会误选D。"
+ },
+ {
+  "paper": "M08",
+  "number": 75,
+  "type": "综合分析",
+  "mode": "一步",
+  "options_to_check": 3,
+  "heaviest_option_mode": "一步",
+  "precision": "精算",
+  "traps": [
+   "对象或范围",
+   "推不出",
+   "单位"
+  ],
+  "est_seconds": 40,
+  "note": "按A→D验：A项125.4÷50.1%≈250万＜260万、B项62−14=48（需具体数值）、C项280.5万÷625≈4488人（需万人换算为人）均可推出，排除三项得D；A误用职业院校在校生会判错。"
+ },
+ {
+  "paper": "M08",
+  "number": 76,
+  "type": "平均数",
+  "mode": "一步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "平均数或比值的增长"
+  ],
+  "est_seconds": 35,
+  "note": "人均花费增速=(1+140.3%)÷(1+93.3%)−1≈24%，距20%界限约18%；公式写反会得−19.6%（C）。"
+ },
+ {
+  "paper": "M08",
+  "number": 77,
+  "type": "倍数",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "文字陷阱",
+   "基期年或年份跨度"
+  ],
+  "est_seconds": 60,
+  "note": "需分别倒推2022年城镇4.2÷2.475、农村0.7÷2.064再相除，约5倍即多4倍；“多几倍”与基期两处陷阱。"
+ },
+ {
+  "paper": "M08",
+  "number": 78,
+  "type": "比较排序",
+  "mode": "读",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "无",
+  "traps": [
+   "隔年或混合增长"
+  ],
+  "est_seconds": 30,
+  "note": "①②④增速材料直接给出，③由混合增速性质（总体介于城镇与农村之间、城镇高于总体）知低于93.3%，无需计算。"
+ },
+ {
+  "paper": "M08",
+  "number": 79,
+  "type": "增长率",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "文字陷阱"
+  ],
+  "est_seconds": 40,
+  "note": "逐年估算是否超过上年1.5倍或低于一半，2020年降约61%、2023年增约145%，共2个；只看增长会漏掉2020年。"
+ },
+ {
+  "paper": "M08",
+  "number": 80,
+  "type": "综合分析",
+  "mode": "一步",
+  "options_to_check": 3,
+  "heaviest_option_mode": "两步",
+  "precision": "粗估",
+  "traps": [
+   "单位",
+   "平均数或比值的增长",
+   "基期年或年份跨度",
+   "对象或范围"
+  ],
+  "est_seconds": 45,
+  "note": "按A→D验易档：A项37.4亿÷56275≈6.6万元、B项城镇增速高于总体则农村比重下降、D项2021年增量0.7＞2019年0.6，三项均错，得C。"
+ },
+ {
+  "paper": "M08",
+  "number": 81,
+  "type": "现期量",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [
+   "文字陷阱"
+  ],
+  "est_seconds": 50,
+  "note": "需先算增量27.47再除基期得增速约4.54%，再乘出2024年≈661.6万吨；选项655、658、662相差不到1%，按增量不变外推得660.4。"
+ },
+ {
+  "paper": "M08",
+  "number": 82,
+  "type": "增长率",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "对象或范围",
+   "基期年或年份跨度"
+  ],
+  "est_seconds": 55,
+  "note": "水产品行空白，需把海水、淡水两项相加得两年总量166.97与177.24，增速约6.2%；要用2021年作基期。"
+ },
+ {
+  "paper": "M08",
+  "number": 83,
+  "type": "比较排序",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "文字陷阱"
+  ],
+  "est_seconds": 45,
+  "note": "四种产品两年产量相减得变化量3.77、1.60、3.34、0.81，按绝对值排序；按带符号增量排结果不同。"
+ },
+ {
+  "paper": "M08",
+  "number": 84,
+  "type": "比重",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "两位",
+  "traps": [
+   "对象或范围"
+  ],
+  "est_seconds": 45,
+  "note": "五类水果相加286.56万吨，介于水果总量的45%（266.7）与50%（296.3）之间，距50%约3.4%；“其中”五类不是全部水果。"
+ },
+ {
+  "paper": "M08",
+  "number": 85,
+  "type": "比重",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "平均数或比值的增长"
+  ],
+  "est_seconds": 75,
+  "note": "比重上升等价于增速高于水果总体（2022年7.2%、2023年5.2%），先用2022年筛出菠萝、柑橘橙柚，再看2023年仅菠萝满足；需算多项增速。"
+ },
+ {
+  "paper": "M08",
+  "number": 86,
+  "type": "平均数",
+  "mode": "两步",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [],
+  "est_seconds": 30,
+  "note": "(13050−6847)÷12≈517万吨，增速为无关信息。"
+ },
+ {
+  "paper": "M08",
+  "number": 87,
+  "type": "平均数",
+  "mode": "读",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "无",
+  "traps": [
+   "平均数或比值的增长"
+  ],
+  "est_seconds": 30,
+  "note": "平均运距=周转量÷发送量，国家铁路周转量降、发送量增则下降，其他铁路周转量增速16.6%高于发送量3.9%则上升，无需计算。"
+ },
+ {
+  "paper": "M08",
+  "number": 88,
+  "type": "比重",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "精算",
+  "traps": [
+   "基期年或年份跨度",
+   "对象或范围"
+  ],
+  "est_seconds": 70,
+  "note": "需分别求2022年全国总周转量(36460.39−514.70)与国家铁路(32638.50÷0.999)再相除，约90.9%，与B项89%仅差约2%；用2023年数据得89.5%，用发送量得77.7%。"
+ },
+ {
+  "paper": "M08",
+  "number": 89,
+  "type": "比较排序",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "其他：增长量与增长率",
+   "文字陷阱",
+   "单位"
+  ],
+  "est_seconds": 80,
+  "note": "其他铁路发送量需由50.35−39.11=11.24亿吨换算成万吨，四项分别求变化量（约669、4219、595、5092万吨）再按绝对值排序。"
+ },
+ {
+  "paper": "M08",
+  "number": 90,
+  "type": "图形选项",
+  "mode": "三步及以上",
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "precision": "粗估",
+  "traps": [
+   "基期年或年份跨度",
+   "对象或范围"
+  ],
+  "est_seconds": 60,
+  "note": "由表算出2019—2022年4个增速7.8%、3.2%、4.9%、4.4%，比对图形（2022年增量更小、基数更大，增速必低于2021年）；年份错位成2020—2023年会对上B。"
+ },
+ {
+  "paper": "GD2025",
+  "group": 1,
+  "numbers": [
+   71,
+   72,
+   73,
+   74,
+   75
+  ],
+  "material_seconds": 20,
+  "material_note": "一张6行×4列统计表（2023、2022年的12月与1—12月），需看清当月/累计两种口径，扫读快。"
+ },
+ {
+  "paper": "GD2025",
+  "group": 2,
+  "numbers": [
+   76,
+   77,
+   78,
+   79,
+   80
+  ],
+  "material_seconds": 45,
+  "material_note": "四段纯文字约740字，数据散布在各段，定位需较多扫读。"
+ },
+ {
+  "paper": "M05",
+  "group": 1,
+  "numbers": [
+   71,
+   72,
+   73,
+   74,
+   75
+  ],
+  "material_seconds": 45,
+  "material_note": "三段纯文字约520字，人口、城镇化、年龄结构、毕业生等数据密集。"
+ },
+ {
+  "paper": "M05",
+  "group": 2,
+  "numbers": [
+   76,
+   77,
+   78,
+   79,
+   80
+  ],
+  "material_seconds": 30,
+  "material_note": "13行×5列累计数据表（1—n月，7位数，万人次）附注释，需先弄清累计口径。"
+ },
+ {
+  "paper": "M05",
+  "group": 3,
+  "numbers": [
+   81,
+   82,
+   83,
+   84,
+   85
+  ],
+  "material_seconds": 25,
+  "material_note": "一段约140字短文字加8行×3列表格，结构简单。"
+ },
+ {
+  "paper": "M05",
+  "group": 4,
+  "numbers": [
+   86,
+   87,
+   88,
+   89,
+   90
+  ],
+  "material_seconds": 40,
+  "material_note": "两段文字（全国及四大地区旅客、货邮吞吐量与增速，约310字）加两张柱线组合图，信息量较大。"
+ },
+ {
+  "paper": "M06",
+  "group": 1,
+  "numbers": [
+   71,
+   72,
+   73,
+   74,
+   75
+  ],
+  "material_seconds": 50,
+  "material_note": "四段纯文字约770字，学校、在校生、教师、经费等数据密集，干扰信息多。"
+ },
+ {
+  "paper": "M06",
+  "group": 2,
+  "numbers": [
+   76,
+   77,
+   78,
+   79,
+   80
+  ],
+  "material_seconds": 25,
+  "material_note": "一段短文字加12个月的单系列柱状图及注释，读图简单。"
+ },
+ {
+  "paper": "M06",
+  "group": 3,
+  "numbers": [
+   81,
+   82,
+   83,
+   84,
+   85
+  ],
+  "material_seconds": 25,
+  "material_note": "8行×6列统计表（4月与1—4月的数量及增速，各行单位不同）。"
+ },
+ {
+  "paper": "M06",
+  "group": 4,
+  "numbers": [
+   86,
+   87,
+   88,
+   89,
+   90
+  ],
+  "material_seconds": 20,
+  "material_note": "一段短文字加6年单系列柱状图，信息量小。"
+ },
+ {
+  "paper": "M07",
+  "group": 1,
+  "numbers": [
+   71,
+   72,
+   73,
+   74,
+   75
+  ],
+  "material_seconds": 55,
+  "material_note": "七段纯文字约770字，三次产业、工业门类、投资、价格等数据密集，含“提高/收窄×个百分点”等表述。"
+ },
+ {
+  "paper": "M07",
+  "group": 2,
+  "numbers": [
+   76,
+   77,
+   78,
+   79,
+   80
+  ],
+  "material_seconds": 30,
+  "material_note": "一张11期累计产量与累计增速的柱线组合图（跨年度、1—2月合并）加两段出口文字，累计口径需先看清。"
+ },
+ {
+  "paper": "M07",
+  "group": 3,
+  "numbers": [
+   81,
+   82,
+   83,
+   84,
+   85
+  ],
+  "material_seconds": 35,
+  "material_note": "三张图（2018—2019年数值缺失的柱线图、10类饼图、6年占比折线图），需交叉使用。"
+ },
+ {
+  "paper": "M07",
+  "group": 4,
+  "numbers": [
+   86,
+   87,
+   88,
+   89,
+   90
+  ],
+  "material_seconds": 40,
+  "material_note": "5行×4列累计表加双系列累计增速折线图，另有一段用“高于/低于全国×个百分点”表述的分地区文字。"
+ },
+ {
+  "paper": "M08",
+  "group": 1,
+  "numbers": [
+   71,
+   72,
+   73,
+   74,
+   75
+  ],
+  "material_seconds": 55,
+  "material_note": "五段纯文字约690字，院校数、在校生、培训人次、校企合作等数据与名称密集。"
+ },
+ {
+  "paper": "M08",
+  "group": 2,
+  "numbers": [
+   76,
+   77,
+   78,
+   79,
+   80
+  ],
+  "material_seconds": 35,
+  "material_note": "一段含十余个数据的文字加9年双系列（人次、花费）柱线组合图。"
+ },
+ {
+  "paper": "M08",
+  "group": 3,
+  "numbers": [
+   81,
+   82,
+   83,
+   84,
+   85
+  ],
+  "material_seconds": 25,
+  "material_note": "16行×3列产量表，含“其中”分项与空白的水产品行。"
+ },
+ {
+  "paper": "M08",
+  "group": 4,
+  "numbers": [
+   86,
+   87,
+   88,
+   89,
+   90
+  ],
+  "material_seconds": 40,
+  "material_note": "两段数据密集的文字（发送量、周转量及分品类，约310字）加6年柱状图和平均运距注释。"
+ }
+]
