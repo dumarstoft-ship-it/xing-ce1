@@ -7,8 +7,10 @@
 文字守恒与裁图检查。人工判断写在每卷自己的修正文件里，build 读取后套用。
 
 命令
-  dump <卷> [--with-inline]    自动分题结果（默认不套用修正），供核对、编写修正文件
-  answer-sheet <卷> [--work D] 扫描版答案 PDF：裁出“正确答案”候选行拼成图，供人工逐题读取
+  dump <卷> [--apply]          自动分题结果（默认不套用修正；--apply 套用行内小图文字、figure_questions、
+                               option_splits、option_figures），供核对、编写修正文件
+  answer-sheet <卷> [--work D] 扫描版答案 PDF：按两种解析格式裁出答案行拼成图，供人工逐题读两遍
+                               （格式一“N、正确答案：X”；格式二不带题号的“故正确答案为X”，与题号行按顺序配对）
   build <卷> [--work D]        套用修正，只生成本卷文件（见下），并校验本卷
   index                        扫描全部已生成的卷，合并生成根目录汇总文件
   verify [<卷> ...]            校验指定卷；不带参数时校验全部卷，并检查根目录汇总是否最新
@@ -31,15 +33,21 @@
   text_fixes       [{q, field: "stem" | "option:A", find, replace | set, reason}]；find 须恰好出现一次
   ignore_lines     ["69——75题暂缺"] 选项之后无法归属、又不属于试题内容的行（按开头匹配）
   figures          {"p06-i02": {bbox: [x0, top, x1, bottom]（pt）, reason, role, alt, transcription}}
+  figure_questions {"p05-i03": 35} 把题图归入指定题号（图片对象连同白边越过下一题题号行等，自动归属错时用）；
+                   归走后空出的“材料”并入前一组
+  option_splits    [{q, label: "D", reason}] 在上一选项文字中按“ D、”拆出该项（自动补拆拆不出时才用）
+  option_figures   {"89": {"A": "p13-i02", "B": …}} 每个选项一张图：这些图在 figures 中设 role: "option"，
+                   输出 option_label，选项 image_refs 指向各自的图（label_in_image 为 null）
   subtypes         {"52": "图形推理"} 判断推理小类覆盖。自动分类：有题图→图形推理；题干与各选项均为
-                   A∶B 式→类比推理；含“是指/定义”→定义判断；其余→逻辑判断
+                   A∶B 式（比号“∶”、半角或全角冒号）→类比推理；含“是指/定义”→定义判断；其余→逻辑判断
   question_notes   {"47": ["…"]}；materials {"2": {"question_notes": ["…"]}} 写入该组每题 notes
   answers          {"source": "…", "by_page": {"1": "1B 2D 3B"}} 人工读取的答案（答案PDF页码: 题号答案…）
   answer_notes     {"91": "…"} 答案说明
   report           {answers, source_issues, uncertain, review: [...]} 写入本卷质量报告；readme: [...] 写入 README
 
 整理新的一卷
-  1. 写 tools/papers/<卷>.json；2. dump 核对分题、材料与图片归属；3. answer-sheet 读答案，写入 answers.by_page；
+  1. 写 tools/papers/<卷>.json；2. dump 核对分题、材料与图片归属（改修正文件后用 dump --apply 再看）；
+  3. answer-sheet 读答案（两遍），写入 answers.by_page；
   4. 在 tools/corrections/<卷>.json 补行内小图文字、图表转写、部分/小类与源文件问题注记；
   5. build <卷>（失败时按提示补修正）；6. 对照页面渲染图逐题、逐图复核；7. index；8. verify。
 
@@ -178,6 +186,12 @@ class Page:
     chars: list
     images: list
     lines: list = field(default_factory=list)
+
+
+def bare_label(segs, L: str) -> bool:
+    """行首单独一个选项字母、隔开后紧跟选项文字（字母后的分隔符是全角空格等空白，读入时已丢弃）。"""
+    return (len(segs) > 1 and segs[0][0] == L and not RE_OPT.match(segs[1][0])
+            and re.match(r'[^\sA-Za-z]', segs[1][0]) is not None)
 
 
 def kind(ch: str) -> str:
@@ -330,7 +344,8 @@ def segment(pages: list[Page], expected: int, inline_text: dict, missing=()):
             render_line(ln, inline_text)
     stream = []
     for p in pages:
-        stream += [('line', ln, ln.top, ln.x0) for ln in p.lines]
+        # 文字行按该行文字字符的上缘排序：行内小图比文字高时，不致把题图（按下缘排序）排进句子中间
+        stream += [('line', ln, min((t.top for t in ln.toks if not t.image), default=ln.top), ln.x0) for ln in p.lines]
         # 题图按下边缘排序：图片与题号同一横带、顶部高于题号行时（如2016年第31题）仍归入该题
         stream += [('fig', im, im.bottom, im.x0) for im in p.images if not im.inline]
     stream.sort(key=lambda it: (it[1].page, it[2], it[3]))
@@ -469,7 +484,7 @@ def join_lines(lines: list[Line], left: float, right: float, first_strip: str = 
 def parse_question(q: QBlock, left: float, right: float, autofix: list) -> dict:
     first = q.lines[0]
     m = RE_QNUM.match(first.text)
-    opt_i = next((i for i, ln in enumerate(q.lines) if i > 0 and RE_OPT.match(ln.text)), None)
+    opt_i = next((i for i, ln in enumerate(q.lines) if i > 0 and (RE_OPT.match(ln.text) or bare_label(ln.segs, 'A'))), None)
     stem_lines = q.lines if opt_i is None else q.lines[:opt_i]
     opt_lines = [] if opt_i is None else q.lines[opt_i:]
     stem = join_lines(stem_lines, left, right, first_strip=m.group(0))
@@ -485,8 +500,8 @@ def parse_question(q: QBlock, left: float, right: float, autofix: list) -> dict:
             prev_ln = ln
             continue
         prev_ln = ln
-        for text, _, _ in segs:
-            mo = RE_OPT.match(text)
+        for j, (text, _, _) in enumerate(segs):
+            mo = RE_OPT.match(text) or (re.match(r'([A-D])', text) if j == 0 and want < 4 and bare_label(segs, 'ABCD'[want]) else None)
             if mo and want < 4 and mo.group(1) == 'ABCD'[want]:
                 options.append({'label': mo.group(1), 'text': text[mo.end():].strip()})
                 labels_raw.append(mo.group(0))
@@ -497,12 +512,13 @@ def parse_question(q: QBlock, left: float, right: float, autofix: list) -> dict:
             else:
                 stem += text
     if 0 < len(options) < 4:
-        # 选项之间没有留白（如“A、……好坏B、不健康……”）：按下一个应出现的选项字母补拆；
-        # 字母前须是汉字、数字或右括号/引号/百分号，拆后必须恰好得到 A—D 四项，否则不动、交人工核对
+        # 选项之间没有留白（如“A、……好坏B、不健康……”），或下一项排在上一项的续行上（“…… D、……”）：
+        # 按下一个应出现的选项字母补拆；字母前须是汉字、数字、右括号/引号/百分号或空白，
+        # 拆后必须恰好得到 A—D 四项，否则不动、交人工核对
         whole = ''.join(f'\u0000{o["label"]}\u0001{o["text"]}' for o in options)
         cut, pos = [], 0
         for L in 'ABCD'[len(options):]:
-            mo = re.compile(rf'(?<=[\u4e00-\u9fff\d）)”%])({L})[、.．](?=[^、.．\s])').search(whole, pos)
+            mo = re.compile(rf'(?<=[\u4e00-\u9fff\d）)”%\s])({L})[、.．](?=[^、.．\s])').search(whole, pos)
             if not mo:
                 break
             cut.append(mo)
@@ -561,6 +577,100 @@ def parse_material(mb: MBlock, left: float, right: float) -> dict:
                 inline=[t.image for _, o in mb.items if _ == 'line' for t in o.toks if t.image])
 
 
+def apply_figure_questions(seg: dict, corr: dict) -> None:
+    """figure_questions {"p05-i03": 35}：把指定题图归入指定题号，覆盖按图片下缘排序的自动归属（图片对象连同白边
+    越过下一题题号行、资料分析中排在“C、 D、”字母行之后的选项图等情形）。归走后既无标题也无内容的“材料”删去，
+    其题目并入前一组材料。"""
+    fq = corr.get('figure_questions', {})
+    if not fq:
+        return
+    qmap = {q.number: q for q in seg['questions']}
+    for key, qn in fq.items():
+        found = None
+        for q in seg['questions']:
+            for im in list(q.figures):
+                if im.key == key:
+                    q.figures.remove(im)
+                    found = im
+        for m in seg['materials']:
+            for it in list(m.items):
+                if it[0] == 'fig' and it[1].key == key:
+                    m.items.remove(it)
+                    found = it[1]
+        for im in list(seg['orphans']):
+            if im.key == key:
+                seg['orphans'].remove(im)
+                found = im
+        if found is None:
+            die(f'figure_questions：找不到题图 {key}')
+        if qn not in qmap:
+            die(f'figure_questions：没有第{qn}题')
+        qmap[qn].figures.append(found)
+        qmap[qn].figures.sort(key=lambda im: (im.page, im.top, im.x0))
+    kept = []
+    for m in seg['materials']:
+        if not m.header and not m.items:
+            if not kept:
+                die('figure_questions：第一组材料被清空，无法并入前一组')
+            kept[-1].questions.extend(m.questions)
+        else:
+            kept.append(m)
+    for k, m in enumerate(kept, 1):
+        m.k = k
+        for n in m.questions:
+            qmap[n].material = k
+    seg['materials'] = kept
+
+
+def apply_option_fixes(r: dict, corr: dict, autofix: list) -> None:
+    """紧接 parse_question 之后套用：
+    option_splits  [{"q": 10, "label": "D", "reason": "…"}]：在最后一个选项的文字里按“ D、”拆出该项（自动补拆
+                   未能拆出时才需要；自动补拆已拆出时会报错，请删去该条）；
+    option_figures {"89": {"A": "p13-i02", …}}：每个选项各是一张图，选项先置为四个空文字选项，图与选项的对应在
+                   生成题图时写入（见 link_option_figures）。"""
+    n = r['number']
+    for sp in corr.get('option_splits', []):
+        if sp['q'] != n:
+            continue
+        L = sp['label']
+        if not r['options'] or r['options'][-1]['label'] != chr(ord(L) - 1):
+            die(f'option_splits：第{n}题最后一个选项不是{chr(ord(L) - 1)}项'
+                + ('（自动补拆可能已拆出该项，请删去这一条）' if r['options'] and r['options'][-1]['label'] == L else ''))
+        o = r['options'][-1]
+        ms = list(re.finditer(rf'\s({L})\s*[、.．]', o['text']))
+        if len(ms) != 1:
+            die(f'option_splits：第{n}题{o["label"]}项中“ {L}、”出现 {len(ms)} 次（应为 1 次）')
+        m = ms[0]
+        r['options'].append({'label': L, 'text': o['text'][m.end():].strip()})
+        o['text'] = o['text'][:m.start()].strip()
+        r['labels_raw'].append(m.group(0).strip())
+        autofix.append(f'第{n}题：{sp["reason"]}')
+    if str(n) in corr.get('option_figures', {}):
+        if any(o['text'] for o in r['options']):
+            die(f'option_figures：第{n}题有文字选项')
+        r['options'] = [{'label': L, 'text': ''} for L in 'ABCD']
+
+
+def link_option_figures(n: int, paper: str, figs: list, options: list, corr: dict) -> None:
+    """option_figures：选项图的 role 须在 figures 中设为 option；写入 option_label，选项 image_refs 指向各自的图
+    （label_in_image 为 null，与2022—2026题库同类题一致）。"""
+    of = corr.get('option_figures', {}).get(str(n))
+    if not of:
+        return
+    ids = {L: f'{paper}-{key}' for L, key in of.items()}
+    byid = {f['image_id']: f for f in figs}
+    for L, iid in ids.items():
+        if iid not in byid:
+            die(f'option_figures：第{n}题没有题图 {iid}')
+        if byid[iid]['role'] != 'option':
+            die(f'option_figures：{iid} 的 role 应在 figures 中设为 option')
+        byid[iid]['option_label'] = L
+    for o in options:
+        if o['label'] not in ids:
+            die(f'option_figures：第{n}题没有给出{o["label"]}项的图')
+        o['image_refs'] = [{'image_id': ids[o['label']], 'label_in_image': None}]
+
+
 def normalize_blanks(text: str, section: str | None) -> str:
     text = re.sub(r'[（(]\s*[）)]', '（）', text)
     if section == '数量关系':
@@ -575,7 +685,7 @@ def classify_subtype(rec: dict) -> str:
     opts = [o['text'] for o in rec['options']]
     if rec['figures']:
         return '图形推理'
-    if len(stem) <= 30 and re.search(r'[∶:]', stem) and opts and all(re.search(r'[∶:]', o) for o in opts):
+    if len(stem) <= 30 and re.search(r'[∶:：]', stem) and opts and all(re.search(r'[∶:：]', o) for o in opts):
         return '类比推理'
     if re.search(r'是指|定义', stem):
         return '定义判断'
@@ -752,6 +862,8 @@ def cmd_dump(paper: str, raw: bool = True):
     pages = load_pages(REPO / cfg['question_pdf'])
     inline = {} if raw else corr.get('inline_images', {})
     seg = segment(pages, cfg['expected_questions'], inline, set(cfg.get('missing_questions', [])))
+    if not raw:
+        apply_figure_questions(seg, corr)
     left, right = seg['margins']
     print(f'# {paper}  页数 {len(pages)}  左右边界 {left:.1f}/{right:.1f}pt')
     for ln in seg['headings']:
@@ -770,6 +882,8 @@ def cmd_dump(paper: str, raw: bool = True):
             for b in m['blocks']:
                 print('  [图]', b['img'].key) if b['type'] == 'fig' else print('  [文]', b['text'])
         r = parse_question(q, left, right, autofix)
+        if not raw:
+            apply_option_fixes(r, corr, autofix)
         print(f'\n--- 第{r["number"]}题 [{r["section_raw"]}] p{r["pages"]} 图{[f.key for f in r["figures"]]}')
         print(r['stem'])
         for o in r['options']:
@@ -786,6 +900,8 @@ def cmd_dump(paper: str, raw: bool = True):
 ANS_DPI = 96                             # 扫描版答案页按 96 DPI 灰度渲染（与常见扫描件原始分辨率一致）
 ANS_TEMPLATE = TOOLS / 'answer-template.png'   # 加粗“正确答案”四字的二值模板（取自2020年乡镇卷答案第1页第1题）
 ANS_MATCH = 0.6                          # 归一化相关系数阈值：2020、2021两卷答案行均≥0.65，其余各行≤0.47
+ANS_TEMPLATE2 = TOOLS / 'answer-template-concl.png'   # 常规字重“正确答案为”五字（取自2017年卷答案第2页“故正确答案为C。”）
+CONCL_MATCH = 0.6                        # 结论行阈值（两种模板取高者）：2017—2019年各卷结论行多在0.9以上，其余行多低于0.5
 
 
 def ink_lines(dark):
@@ -800,13 +916,28 @@ def ink_lines(dark):
     return out
 
 
-def match_answer_lines(dark, T):
-    """在一页中找含“正确答案”字样的行：模板在行首 10—60 像素处横向滑动、上下错 1—2 像素，取最大相关系数。"""
+def _ncc_best(band, T):
+    """band 与模板 T 在横向各位置的归一化相关系数，返回 (最大值, 位置)。"""
     import numpy as np
     from numpy.lib.stride_tricks import sliding_window_view as swv
     th, tw = T.shape
+    if band.shape[0] < th or band.shape[1] < tw:
+        return -1.0, 0
     Tz = T - T.mean()
     Tn = math.sqrt(float((Tz ** 2).sum()))
+    W = swv(band, (th, tw))[0]
+    Wz = W - W.mean(axis=(1, 2), keepdims=True)
+    den = np.sqrt((Wz ** 2).sum(axis=(1, 2))) * Tn
+    sc = np.where(den > 0, (Wz * Tz).sum(axis=(1, 2)) / np.where(den > 0, den, 1), -1)
+    i = int(sc.argmax())
+    return float(sc[i]), i
+
+
+def match_answer_lines(dark, T):
+    """格式一（2020、2021年）：在一页中找“N、正确答案：X”行——模板在行首 10—60 像素处横向滑动、上下错 1—2 像素，
+    取最大相关系数。"""
+    import numpy as np
+    th, tw = T.shape
     hits, lines = [], ink_lines(dark)
     for a, b in lines:
         if b - a < th - 2 or b - a > th + 6:
@@ -815,17 +946,80 @@ def match_answer_lines(dark, T):
         best = -1.0
         for dy in range(-1, b - a - th + 2):
             top = a + dy
-            band = dark[max(top, 0):top + th, lx + 10:lx + 60 + tw]
-            if top < 0 or band.shape[0] < th or band.shape[1] < tw:
+            if top < 0:
                 continue
-            W = swv(band, (th, tw))[0]
-            Wz = W - W.mean(axis=(1, 2), keepdims=True)
-            den = np.sqrt((Wz ** 2).sum(axis=(1, 2))) * Tn
-            sc = np.where(den > 0, (Wz * Tz).sum(axis=(1, 2)) / np.where(den > 0, den, 1), -1)
-            best = max(best, float(sc.max()))
+            best = max(best, _ncc_best(dark[top:top + th, lx + 10:lx + 60 + tw], T)[0])
         if best >= ANS_MATCH:
             hits.append((a, b, lx, best))
     return hits, lines
+
+
+def match_conclusions(dark, lines, templates):
+    """格式二（2016—2019年）：不带题号的结论行“故正确答案为X。”（也可能在行中，如“本题为选非题，故正确答案为X。”）。
+    两种模板都在整行宽度内滑动，取较高者。返回 [(top, bottom, x, 模板宽, 得分)]，含得分≥0.5的全部行，由调用方按阈值分开。"""
+    out = []
+    for a, b in lines:
+        best = (-1.0, 0, 0)
+        for T in templates:
+            th, tw = T.shape
+            if b - a < th - 2 or b - a > th + 6:
+                continue
+            for dy in range(-1, b - a - th + 2):
+                top = a + dy
+                if top < 0:
+                    continue
+                sc, x = _ncc_best(dark[top:top + th], T)
+                if sc > best[0]:
+                    best = (sc, x, tw)
+        if best[0] >= 0.5:
+            out.append((a, b, best[1], best[2], best[0]))
+    return out
+
+
+def _stroke(blk) -> float:
+    """字形笔画粗细：各像素行最长连续墨迹的中位数（加粗数字约2—3像素，常规字母约1像素）。"""
+    vals = []
+    for row in blk < 128:
+        best = cur = 0
+        for v in row:
+            cur = cur + 1 if v else 0
+            best = max(best, cur)
+        if best:
+            vals.append(best)
+    return float(sorted(vals)[len(vals) // 2]) if vals else 0.0
+
+
+def is_number_line(g, dark, a: int, b: int, margin: int, bold: bool = True) -> bool:
+    """题号行“N、……”：行首在左边距处，1—3个数字宽的字形（两位数也可能粘成一个）后紧跟“、”（墨迹只在行的下半部）。
+    bold=True 时还要求数字笔画粗（2016年以后的解析题号多为加粗），以排除“C、D两项”这类以字母开头的行。"""
+    import numpy as np
+    colm = dark[a:b].any(axis=0)
+    xs = np.where(colm)[0]
+    if not len(xs) or abs(int(xs.min()) - margin) > 3 or b - a < 9:
+        return False
+    runs, start = [], None
+    for x in range(int(xs.min()), min(int(xs.min()) + 70, len(colm))):
+        if colm[x] and start is None:
+            start = x
+        elif not colm[x] and start is not None:
+            runs.append((start, x))
+            start = None
+    lead = []
+    for r in runs:
+        w = r[1] - r[0]
+        rows = np.where(dark[a:b, r[0]:r[1]].any(axis=1))[0]
+        if 2 <= w <= 5 and rows.min() >= (b - a) * 0.45:          # “、”或“，”“。”
+            ys, xs_ = np.where(dark[a:b, r[0]:r[1]] > 0)
+            if not lead or len(xs_) < 3 or float(np.cov(xs_, ys)[0, 1]) <= 0:
+                return False                                       # “、”自左上向右下；“，”的尾巴向左下
+            ws = [d[1] - d[0] for d in lead]
+            if not (all(4 <= x <= 8 for x in ws) or (len(ws) == 1 and 9 <= ws[0] <= 16)):
+                return False
+            return not bold or all(_stroke(g[a:b, d[0]:d[1]]) >= 2.0 for d in lead)
+        lead.append(r)
+        if len(lead) > 3:
+            return False
+    return False
 
 
 def contact_sheet(items, out: Path, width: int, scale: int, cols: int = 1, label_w: int = 120):
@@ -851,26 +1045,36 @@ def contact_sheet(items, out: Path, width: int, scale: int, cols: int = 1, label
 
 
 def cmd_answer_sheet(paper: str, work: Path):
-    """扫描版答案 PDF 的读取辅助（没有 OCR 时用）：
-    answer-lines-*.png  每条检测到的“N、正确答案：X”行（整行），第一遍按此逐题读取；
-    answer-zoom-*.png   同一批行的行首（题号到答案字母）放大三倍、四列排开，第二遍按此独立重读；
-    answer-check-*.png  “解析/拓展”等短行的上一行（多为“因此，选择X选项”），用来再核一次。
-    两遍结果一致后，按“页码: 题号答案 …”写入 tools/corrections/<卷>.json 的 answers.by_page。"""
+    """扫描版答案 PDF 的读取辅助（没有 OCR 时用），按两种解析格式各出一套拼图：
+    格式一（2020、2021年：每题有“N、正确答案：X，全站正确率……”行）
+      answer-lines-*.png  检测到的答案行（整行），第一遍按此逐题读取；
+      answer-zoom-*.png   同一批行的行首（题号到答案字母）放大三倍、四列排开，第二遍按此独立重读。
+    格式二（2016—2019年：每题解析以“N、”开头、以不带题号的“故正确答案为X。”结束）
+      answer-pairs-*.png  按阅读顺序把每条结论行与它前面最近的题号行配对：左格为题号行行首，右格为结论句（含答案
+                          字母），均放大三倍；没有配上的题号行或结论行单独成行，标 NO CONCLUSION / NO NUMBER LINE；
+      answer-maybe-*.png  得分略低于阈值的行（多为“故本题选择X”等措辞不同的结论句或正文中的“正确答案”），供补查。
+    两种格式共用：answer-check-*.png  “解析/拓展”等两字短行的上一行（多为“因此，选择X选项”），用来再核一次。
+    两遍读取一致后，按“页码: 题号答案 …”写入 tools/corrections/<卷>.json 的 answers.by_page。"""
     import numpy as np
-    from PIL import Image
+    from PIL import Image, ImageDraw
     cfg, _ = load_cfg(paper)
     pdf = REPO / cfg['answer_pdf']
     work.mkdir(parents=True, exist_ok=True)
-    for pat in ('ans-*.png', 'answer-lines-*.png', 'answer-zoom-*.png', 'answer-check-*.png'):
+    for pat in ('ans-*.png', 'answer-lines-*.png', 'answer-zoom-*.png', 'answer-check-*.png',
+                'answer-pairs-*.png', 'answer-maybe-*.png'):
         for old in work.glob(pat):          # 只清理本命令自己生成的文件
             old.unlink()
     subprocess.run(['pdftoppm', '-r', str(ANS_DPI), '-gray', '-png', str(pdf), str(work / 'ans')], check=True, capture_output=True)
     T = (np.asarray(Image.open(ANS_TEMPLATE).convert('L')) < 128).astype(float)
-    full, zoom, check = [], [], []
+    T2 = (np.asarray(Image.open(ANS_TEMPLATE2).convert('L')) < 128).astype(float)
+    full, zoom, check, maybe = [], [], [], []
+    events, imgs = [], {}
     for f in sorted(work.glob('ans-*.png'), key=lambda x: int(re.findall(r'(\d+)\.png$', x.name)[0])):
         pno = int(re.findall(r'(\d+)\.png$', f.name)[0])
         g = Image.open(f).convert('L')
-        dark = (np.asarray(g) < 140).astype(float)
+        imgs[pno] = g
+        garr = np.asarray(g).astype(int)
+        dark = (garr < 140).astype(float)
         hits, lines = match_answer_lines(dark, T)
         for a, b, lx, sc in hits:
             n = len(full) + 1
@@ -881,16 +1085,78 @@ def cmd_answer_sheet(paper: str, work: Path):
             if b - a >= 8 and x1 - x0 < 45 and i > 0:      # 两字短行（解析、拓展）
                 pa, pb, _, _ = info[i - 1]
                 check.append((f'p{pno} y{pa}', g.crop((30, pa - 3, 30 + 520, pb + 3))))
+        # 格式二：结论行与题号行
+        tall = [ln for ln in lines if ln[1] - ln[0] >= 9]
+        starts = [int(np.where(dark[a:b].any(axis=0))[0].min()) for a, b in tall]
+        margin = sorted(starts)[len(starts) // 2] if starts else 0
+        for a, b, x, tw, sc in match_conclusions(dark, lines, [T, T2]):
+            if sc >= CONCL_MATCH:
+                events.append((pno, a, 'C', (b, x, tw)))
+            else:
+                maybe.append((f'p{pno} y{a} {sc:.2f}', g.crop((30, a - 3, 30 + 520, b + 3))))
+        for a, b in tall:
+            events.append((pno, a, 'N', (b, margin, garr, dark)))
+    events.sort(key=lambda e: (e[0], e[1], e[2]))
+    conclusions = [e for e in events if e[2] == 'C']
+
+    def numbers(bold):
+        return [e for e in events if e[2] == 'N' and is_number_line(e[3][2], e[3][3], e[1], e[3][0], e[3][1], bold)]
+    nums, rule = numbers(True), '加粗题号'
+    if len(nums) < 0.5 * len(conclusions):
+        nums, rule = numbers(False), '题号不加粗（未要求笔画粗细）'
+    seq = sorted(conclusions + nums, key=lambda e: (e[0], e[1]))
+    rows, pending = [], []
+    for e in seq:
+        if e[2] == 'N':
+            pending.append(e)
+            continue
+        for u in pending[:-1]:
+            rows.append((u, None))
+        rows.append((pending[-1] if pending else None, e))
+        pending = []
+    rows += [(u, None) for u in pending]
+
+    def pair_image(nl, cl):
+        num = imgs[nl[0]].crop((nl[3][1] - 2, nl[1] - 3, nl[3][1] + 48, nl[3][0] + 3)) if nl else None
+        con = None
+        if cl:
+            b, x, tw = cl[3]
+            con = imgs[cl[0]].crop((max(x - 16, 0), cl[1] - 3, x + tw + 44, b + 3))
+        cell_h = max([im.size[1] for im in (num, con) if im is not None] + [20])
+        canvas = Image.new('L', (50 + 20 + 16 + 69 + 44 + 10, cell_h), 255)
+        d = ImageDraw.Draw(canvas)
+        if num:
+            canvas.paste(num, (0, 0))
+        else:
+            d.text((2, 4), 'NO NUMBER LINE', fill=0)
+        if con:
+            canvas.paste(con, (70, 0))
+        else:
+            d.text((72, 4), 'NO CONCLUSION', fill=0)
+        return canvas
+    pairs = []
+    for k, (nl, cl) in enumerate(rows, 1):
+        where = f'p{(cl or nl)[0]}'
+        flag = '' if nl and cl else ' !'
+        pairs.append((f'#{k} {where}{flag}', pair_image(nl, cl)))
     out = []
     out += contact_sheet(full, work / 'answer-lines', 520, 2)
     out += contact_sheet(zoom, work / 'answer-zoom', 152, 3, cols=4, label_w=70)
+    out += contact_sheet(pairs, work / 'answer-pairs', 209, 3, cols=2, label_w=80)
+    out += contact_sheet(maybe, work / 'answer-maybe', 520, 2)
     out += contact_sheet(check, work / 'answer-check', 520, 2)
     found, stats = answer_text_layer(pdf)
     scanned = [p for p, n in stats if n < 30]
+    exp = cfg['expected_questions'] - len(cfg.get('missing_questions', []))
     print(f'答案PDF共 {len(stats)} 页，其中 {len(scanned)} 页几乎没有文字层（扫描页）。')
     print(f'文字层可直接取到的答案：{ {k: v["value"] for k, v in sorted(found.items())} }')
-    exp = cfg['expected_questions'] - len(cfg.get('missing_questions', []))
-    print(f'检测到“正确答案”行 {len(full)} 条（本卷应有约 {exp} 条；多出的多为“故正确答案为X”等结论句，少了的请到对应页查看）。')
+    print(f'格式一：检测到“N、正确答案：X”行 {len(full)} 条（本卷应有约 {exp} 条）。')
+    unpaired_n = sum(1 for nl, cl in rows if cl is None)
+    unpaired_c = sum(1 for nl, cl in rows if nl is None)
+    print(f'格式二：结论行 {len(conclusions)} 条，题号行 {len(nums)} 条（{rule}），配成 {len(rows) - unpaired_n - unpaired_c} 对；'
+          f'没有结论行的题号行 {unpaired_n} 条，没有题号行的结论行 {unpaired_c} 条（拼图中标“!”）；'
+          f'得分略低于阈值的行 {len(maybe)} 条（answer-maybe）。')
+    print('哪种格式的条数接近本卷题数，就按哪种格式的拼图读取；标“!”的行与 answer-maybe 中的行须对照整页确认。')
     for fn in out:
         print('  ', fn)
     print(f'两遍读取一致后，按 “页码: 题号答案 …” 写入 tools/corrections/{paper}.json 的 answers.by_page。')
@@ -908,6 +1174,7 @@ def build(paper: str, work: Path | None):
     page_by_no = {p.no: p for p in pages}
     missing_q = set(cfg.get('missing_questions', []))
     seg = segment(pages, cfg['expected_questions'], inline_text, missing_q)
+    apply_figure_questions(seg, corr)
     left, right = seg['margins']
     autofix, fixlog, problems = [], [], []
     if len(seg['questions']) != cfg['expected_questions'] - len(missing_q):
@@ -924,6 +1191,7 @@ def build(paper: str, work: Path | None):
     ignore = corr.get('ignore_lines', [])
     for q in seg['questions']:
         recs[q.number] = parse_question(q, left, right, autofix)
+        apply_option_fixes(recs[q.number], corr, autofix)
         for st in recs[q.number]['strays']:
             if any(st.replace(' ', '').startswith(x) for x in ignore):
                 autofix.append(f'第{q.number}题选项后的“{st}”按 ignore_lines 不收录。')
@@ -1035,6 +1303,7 @@ def build(paper: str, work: Path | None):
         else:
             for o in r['options']:
                 o['image_refs'] = [{'image_id': qo[0]['image_id'], 'label_in_image': o['label']}] if len(qo) == 1 else []
+        link_option_figures(n, paper, figs, r['options'], corr)
 
     # 材料
     mat_objs = {}
@@ -1686,7 +1955,8 @@ def main():
     sub = ap.add_subparsers(dest='cmd', required=True)
     d = sub.add_parser('dump', help='自动分题结果')
     d.add_argument('paper')
-    d.add_argument('--with-inline', action='store_true', help='套用修正文件中的行内小图文字')
+    d.add_argument('--apply', '--with-inline', dest='apply', action='store_true',
+                   help='套用修正文件（行内小图文字、figure_questions、option_splits、option_figures）')
     s = sub.add_parser('answer-sheet', help='扫描版答案候选行拼图')
     s.add_argument('paper')
     s.add_argument('--work', type=Path, default=None)
@@ -1698,7 +1968,7 @@ def main():
     v.add_argument('papers', nargs='*')
     a = ap.parse_args()
     if a.cmd == 'dump':
-        cmd_dump(a.paper, raw=not a.with_inline)
+        cmd_dump(a.paper, raw=not a.apply)
     elif a.cmd == 'answer-sheet':
         cmd_answer_sheet(a.paper, a.work or Path(tempfile.mkdtemp(prefix=f'{a.paper}-answers-')))
     elif a.cmd == 'build':
