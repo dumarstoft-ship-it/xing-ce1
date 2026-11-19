@@ -1372,6 +1372,11 @@ def build(paper: str, work: Path | None):
         leak = text_inside(page_by_no[im.page], bbox_pt)
         if leak:
             problems.append(f'{fid} 裁剪框内含文字层字符：{leak}')
+        x0, t0, x1, b0 = bbox_pt
+        inl = [o.key for o in page_by_no[im.page].images if o.inline and o.x1 > x0 + 0.5 and o.x0 < x1 - 0.5
+               and o.bottom > t0 + 0.5 and o.top < b0 - 0.5]
+        if inl:
+            problems.append(f'{fid} 裁剪框压到行内小图：{"、".join(inl)}')
         manifest.append(dict(id=fid, path=f'assets/{paper}/{fid}.png', paper_id=paper, source_page=im.page,
                              source_bbox_points=bbox_pt, method='pdf_render_crop', width=w, height=h,
                              sha256=hashlib.sha256(raw).hexdigest(), transcription=fc.get('transcription', '')))

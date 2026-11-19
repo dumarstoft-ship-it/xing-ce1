@@ -243,15 +243,15 @@
     "paper_id": "GDXD2020-SW",
     "source_page": 12,
     "source_bbox_points": [
-      458.5,
-      566.0,
-      506.5,
-      670.5
+      460.5,
+      567.5,
+      505.0,
+      669.0
     ],
     "method": "pdf_render_crop",
-    "width": 192,
-    "height": 418,
-    "sha256": "d6a68e8b10b4f3f9fd74eba0fa575f7b497ce1cb138ce281934c76e71077ae68",
+    "width": 178,
+    "height": 406,
+    "sha256": "7ee1b190e667e5a339ea393760f5528480a53ea7472066ab1e374edc66fb587d",
     "transcription": ""
   },
   {
@@ -260,15 +260,15 @@
     "paper_id": "GDXD2020-SW",
     "source_page": 12,
     "source_bbox_points": [
-      346.0,
-      597.5,
-      440.0,
-      671.25
+      348.0,
+      599.0,
+      438.5,
+      669.75
     ],
     "method": "pdf_render_crop",
-    "width": 376,
-    "height": 295,
-    "sha256": "ed2ba06c4f12542b58be2531778dc4b5f258e21a198e3d98f895b918b949cd06",
+    "width": 362,
+    "height": 283,
+    "sha256": "bd970964ba2b822d89428f9753a46a72bfee7c87d9b69853b4a863bdaf6f62cd",
     "transcription": ""
   },
   {
@@ -277,15 +277,15 @@
     "paper_id": "GDXD2020-SW",
     "source_page": 12,
     "source_bbox_points": [
-      241.0,
-      603.5,
-      327.75,
-      671.25
+      243.0,
+      605.0,
+      326.25,
+      669.75
     ],
     "method": "pdf_render_crop",
-    "width": 347,
-    "height": 271,
-    "sha256": "4bc94040b1ed62ab6bf53c3bb9582b1b1d50b4d231e88e1e4cc617a5e3cc4cfc",
+    "width": 333,
+    "height": 259,
+    "sha256": "28702deae1c27f80f9cca9ab3b02e46f141db936e33e0a57b487c50873999f21",
     "transcription": ""
   },
   {
@@ -294,15 +294,15 @@
     "paper_id": "GDXD2020-SW",
     "source_page": 12,
     "source_bbox_points": [
-      125.5,
-      626.0,
-      222.0,
-      670.5
+      127.5,
+      627.5,
+      220.5,
+      669.0
     ],
     "method": "pdf_render_crop",
-    "width": 386,
-    "height": 178,
-    "sha256": "008bf931775fedff1289eb77e5430385c4083140be2a209172dca95e0566b47a",
+    "width": 372,
+    "height": 166,
+    "sha256": "7c6452c3ccf2a3b1539d59b68be72fdc70e690c08f70289fa01887f9b9d5f038",
     "transcription": ""
   },
   {
@@ -450,12 +450,12 @@
       240.75,
       356.5,
       367.5,
-      489.0
+      484.5
     ],
     "method": "pdf_render_crop",
     "width": 507,
-    "height": 530,
-    "sha256": "b162d2314dc295858a129b2f0ad40f32759e966e5dbf335acd37fa7362cf6b9b",
+    "height": 512,
+    "sha256": "74de5e98417a7321a97bf85ea9cbbf3f68d2cfd73a38adf11c151162c35be7f2",
     "transcription": ""
   },
   {
