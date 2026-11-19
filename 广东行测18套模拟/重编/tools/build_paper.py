@@ -32,6 +32,7 @@ MOCK_REL = "模考/2026下半年广东卷_16-33季_AI可读"
 MOCK = ROOT / MOCK_REL
 JZ_REL = "江浙行测_AI题库"
 GK_REL = "国考/言语理解/2016-2025/all.jsonl"
+GD_DIRS = ("广东/行测/2013-2021", "广东/行测/2022-2026")   # 广东省考真题题库（M09起的题源）
 SEASON = {f"M{i:02d}": 15 + i for i in range(1, 19)}   # M01对第16季……M18对第33季
 VERSION = "1.0.0"
 
@@ -66,6 +67,11 @@ MOCK_Q = {q["id"]: q for q in jl(MOCK / "全部题目.jsonl")}
 JZ_Q = {q["question_id"]: q for q in jl(ROOT / JZ_REL / "questions.jsonl")}
 JZ_A = {a["question_id"]: a for a in jl(ROOT / JZ_REL / "answers.jsonl")}
 GK_Q = {q["id"]: q for q in jl(ROOT / GK_REL)}
+GD_Q = {}                                   # id → (题库目录, 题目)
+for _d in GD_DIRS:
+    for _f in sorted((ROOT / _d).glob("GD20*.jsonl")):
+        for _q in jl(_f):
+            GD_Q[_q["id"]] = (_d, _q)
 
 IMG = re.compile(r"!\[[^\]]*\]\((images/[^)]+)\)")
 HD_LINKS = re.compile(r"\[代码描摹高清 PNG\]\([^)]*\)\s*·\s*\[SVG\]\([^)]*\)（原图为准）")
@@ -98,6 +104,44 @@ def mock_blocks(blocks):
     return out
 
 
+def gd_answer(q):
+    vals = (q.get("answer") or {}).get("values") or []
+    if len(vals) != 1:
+        raise SystemExit(f"{q['id']}：广东题库答案不是唯一确定的（{vals}）")
+    return "".join(vals[0])
+
+
+def gd_figure(d, f):
+    return {"type": "figure", "asset_id": f.get("image_id"), "path": f"{d}/{f['path']}"}
+
+
+def gd_blocks(d, q):
+    """广东真题题库的一题转为题块：题干、题图、选项；选项画在题图里时写“见题图中的X选项”。"""
+    stem = [{"type": "text", "text": q["stem"]}] if q.get("stem") else []
+    stem += [gd_figure(d, f) for f in q.get("figures") or [] if f.get("role") != "option"]
+    opt_figs = {f.get("option_label"): f for f in q.get("figures") or [] if f.get("role") == "option"}
+    options = {}
+    for o in q["options"]:
+        if o.get("text"):
+            options[o["label"]] = [{"type": "text", "text": o["text"]}]
+        elif o["label"] in opt_figs:
+            options[o["label"]] = [gd_figure(d, opt_figs[o["label"]])]
+        else:
+            options[o["label"]] = [{"type": "text", "text": f"见题图中的 {o['label']} 选项"}]
+    return stem, options
+
+
+def gd_material_blocks(d, m):
+    """广东真题题库的资料材料：文字照录；表格、统计图用原卷裁图（按原卷尺寸印），转写留在题库里备查。"""
+    out = []
+    for b in m.get("content") or []:
+        if b.get("type") == "text":
+            out.append({"type": "text", "text": b["text"]})
+        elif b.get("type") == "image":
+            out.append(gd_figure(d, b))
+    return out
+
+
 def describe_source(sid):
     m = re.match(r"gd-mock-2026h2-s(\d+)-q(\d+)$", sid)
     if m:
@@ -106,6 +150,12 @@ def describe_source(sid):
     if m:
         prov = "江苏" if m.group(1) == "JS" else "浙江"
         return f"{m.group(2)}年{prov}省考{m.group(3)}第{int(m.group(4))}题", f"{JZ_REL}/questions.jsonl", "真题"
+    m = re.match(r"GD(\d{4})(?:-(XJ|XZ))?-Q(\d+)$", sid)
+    if m:
+        variant = {"XJ": "县级卷", "XZ": "乡镇卷"}.get(m.group(2), "")
+        d = GD_Q[sid][0] if sid in GD_Q else GD_DIRS[0]
+        paper = sid.rsplit("-Q", 1)[0]
+        return f"{m.group(1)}年广东省考{variant}第{int(m.group(3))}题", f"{d}/{paper}.jsonl", "真题"
     m = re.match(r"GKYY-(\d{4})-(\d+)$", sid)
     if m:
         return f"{m.group(1)}年国考言语（整理库第{int(m.group(2))}条）", GK_REL, "真题"
@@ -373,6 +423,11 @@ def build(paper, dry=False):
                 stem = ((g.get("passage") or "") + "\n" + g["stem"]).strip()
                 opts = g["options"]
                 src_ans = g.get("answer")
+            elif sid in GD_Q:
+                g = GD_Q[sid][1]
+                stem = g["stem"]
+                opts = {o["label"]: o["text"] for o in g["options"]}
+                src_ans = gd_answer(g)
             else:
                 g = JZ_Q[sid]
                 stem = g["stem"]
@@ -434,6 +489,17 @@ def build(paper, dry=False):
                                 texts[0]["text"] = texts[0]["text"].replace(e["old"], e["new"])
                             log.add(n, "改动", f"资料：{e['old']} → {e['new'] or '（空白）'}（{e['reason']}）")
                         rec["materials"] = [{"id": mat_ids[m["id"]], "blocks": mblocks}]
+                    else:
+                        rec["materials"] = [x for x in questions if x["materials"] and x["materials"][0]["id"] == mat_ids[m["id"]]][0]["materials"]
+            elif sid in GD_Q:
+                d, g = GD_Q[sid]
+                rec["stem"], rec["options"] = gd_blocks(d, g)
+                if g.get("material"):
+                    m = g["material"]
+                    if m["id"] not in mat_ids:
+                        mat_ids[m["id"]] = f"{paper}-M{len(mat_ids) + 1:02d}"
+                        rec["materials"] = [{"id": mat_ids[m["id"]], "blocks": gd_material_blocks(d, m)}]
+                        log.add(n, "资料材料", f"{mat_ids[m['id']]}：广东真题{m['id']}，表格、统计图用原卷裁图")
                     else:
                         rec["materials"] = [x for x in questions if x["materials"] and x["materials"][0]["id"] == mat_ids[m["id"]]][0]["materials"]
             elif sid in JZ_Q:
