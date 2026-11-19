@@ -379,12 +379,21 @@ def build(paper, dry=False):
     for n, r in (plan.get("move") or {}).items():
         src[int(n)] = r["source"]
         log.add(int(n), "调序", r["reason"])
+    if plan.get("sources"):     # M09起：第31—90题逐题直接给出来源（广东真题等），不以某一季模考为底
+        for n, sid in plan["sources"].items():
+            src[int(n)] = sid
+        log.add(31, "题源", plan.get("sources_note") or "第31—90题逐题选自真题题库，见编排说明")
+    skip = set(int(n) for n in plan.get("skip") or [])   # 不出的题号（如政治常识材料不够时空出的题位）
+    if skip:
+        log.add(min(skip), "空题位", plan.get("skip_reason") or f"本套不出第{'、'.join(map(str, sorted(skip)))}题")
     if len(set(src.values())) != 60:
         raise SystemExit("第31—90题来源有重复")
 
     questions, answers, registry = [], {}, []
     mat_ids = {}
     for n in range(1, 91):
+        if n in skip:
+            continue
         sec = section_of(n)
         rec = {"id": f"{paper}-Q{n:03d}", "number": n, "section": sec, "subtype": subtype_of(n),
                "question_type": "single_choice", "stem": [], "options": {}, "options_mode": "text_or_mixed",
@@ -637,12 +646,15 @@ def write_outputs(paper, questions, answers, registry, log, plan, out=None, ledg
     (out / "题型统计.json").write_text(json.dumps({"逐题": {str(k): v for k, v in labels.items()},
                                                  "对照": [dict(zip(("部分", "类别", "本卷", "真题范围", "判定", "题号"), r)) for r in rows]},
                                                 ensure_ascii=False, indent=1), encoding="utf-8")
+    skip = set(int(n) for n in plan.get("skip") or [])
     md = [f"# {paper}　编排说明（重编{VERSION}）\n",
           "## 题源\n",
           "| 题号 | 来源 |", "|---|---|",
-          "| 1—15 | 原创，依据《颜培天2027广东省考政治理论常识》讲义（含二十届五中全会《决定》） |",
-          "| 16—30 | 国考、江苏、浙江言语真题 |",
-          f"| 31—90 | 粉笔2026下半年广东省考模考第{SEASON[paper]}季原题（个别调换见下） |\n",
+          "| 1—15 | 原创，依据《颜培天2027广东省考政治理论常识》讲义（含二十届五中全会《决定》）"
+          + ("；本套空出第" + "、".join(map(str, sorted(skip))) + "题（讲义材料不够，按用户决定不硬出）" if skip else "") + " |",
+          "| 16—30 | " + ("广东省考、事业单位统考及国考、江浙言语真题" if plan.get("sources") else "国考、江苏、浙江言语真题") + " |",
+          ("| 31—90 | 广东省考旧卷、事业单位统考真题（逐题来源见 `来源登记.jsonl`） |\n" if plan.get("sources")
+           else f"| 31—90 | 粉笔2026下半年广东省考模考第{SEASON[paper]}季原题（个别调换见下） |\n"),
           "逐题来源见 `来源登记.jsonl`。\n",
           "## 题型与近三年广东真题对照\n",
           "范围取自2024—2026年广东卷（见 `../题型参照_2024-2026.md`），★为三年每年都有。范围是参照，不是配额。\n",
