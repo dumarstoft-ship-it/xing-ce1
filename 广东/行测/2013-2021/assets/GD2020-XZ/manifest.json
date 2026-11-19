@@ -1,0 +1,478 @@
+[
+  {
+    "id": "GD2020-XZ-p05-i01",
+    "path": "assets/GD2020-XZ/GD2020-XZ-p05-i01.png",
+    "paper_id": "GD2020-XZ",
+    "source_page": 5,
+    "source_bbox_points": [
+      66.25,
+      501.5,
+      181.75,
+      638.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 462,
+    "height": 547,
+    "sha256": "82f2c295a0ec830272ec94963af48ffc28868e72f14748619b7ff16bfa58401a",
+    "transcription": "题图数字矩阵（按原图行列）\n\n| 第1列 | 第2列 | 第3列 |\n| --- | --- | --- |\n| 4 | 5 | 7 |\n| 8 | 8 | 16 |\n| 12 | 9 | 27 |\n| 16 | 10 | ? |"
+  },
+  {
+    "id": "GD2020-XZ-p06-i01",
+    "path": "assets/GD2020-XZ/GD2020-XZ-p06-i01.png",
+    "paper_id": "GD2020-XZ",
+    "source_page": 6,
+    "source_bbox_points": [
+      40.5,
+      28.25,
+      188.0,
+      114.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 590,
+    "height": 343,
+    "sha256": "df52a6147f2ee76c2b1ca0a121f760cafbb3b08b1a4f106ce69289c9d8971094",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XZ-p07-i01",
+    "path": "assets/GD2020-XZ/GD2020-XZ-p07-i01.png",
+    "paper_id": "GD2020-XZ",
+    "source_page": 7,
+    "source_bbox_points": [
+      40.25,
+      27.0,
+      199.5,
+      226.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 637,
+    "height": 798,
+    "sha256": "662565395236ce0dbd21747a67dd7bba1213b1eec0b475fc8e5a4f774923ae59",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XZ-p07-i02",
+    "path": "assets/GD2020-XZ/GD2020-XZ-p07-i02.png",
+    "paper_id": "GD2020-XZ",
+    "source_page": 7,
+    "source_bbox_points": [
+      40.25,
+      259.75,
+      242.0,
+      384.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 807,
+    "height": 500,
+    "sha256": "48808125eea1d0e7f46eab22e12c592882d25c0a5e128175cfb2ab015f137776",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XZ-p07-i03",
+    "path": "assets/GD2020-XZ/GD2020-XZ-p07-i03.png",
+    "paper_id": "GD2020-XZ",
+    "source_page": 7,
+    "source_bbox_points": [
+      40.25,
+      419.0,
+      327.0,
+      562.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1147,
+    "height": 572,
+    "sha256": "bb8ca583d531a7e7a38559f803217b56f2e7feaa3ae94ecdcc1417d4a1c3aba9",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XZ-p07-i04",
+    "path": "assets/GD2020-XZ/GD2020-XZ-p07-i04.png",
+    "paper_id": "GD2020-XZ",
+    "source_page": 7,
+    "source_bbox_points": [
+      40.25,
+      596.5,
+      270.25,
+      711.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 920,
+    "height": 458,
+    "sha256": "b809acfbb2d52939faea807babade3e8a9f413e267d553d8c82752be6948707b",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XZ-p08-i01",
+    "path": "assets/GD2020-XZ/GD2020-XZ-p08-i01.png",
+    "paper_id": "GD2020-XZ",
+    "source_page": 8,
+    "source_bbox_points": [
+      41.75,
+      28.75,
+      267.0,
+      141.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 901,
+    "height": 451,
+    "sha256": "0d0b5f3689014af2e73fa6ec46d0fa35a65d4b1fdfbe336c1738eebfb67b9c92",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XZ-p08-i02",
+    "path": "assets/GD2020-XZ/GD2020-XZ-p08-i02.png",
+    "paper_id": "GD2020-XZ",
+    "source_page": 8,
+    "source_bbox_points": [
+      40.25,
+      175.75,
+      250.5,
+      324.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 841,
+    "height": 595,
+    "sha256": "f47e3a5c7caf888d60d86d0c81301b590d609f5aa76f2377ced9691f560dd9b2",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XZ-p08-i03",
+    "path": "assets/GD2020-XZ/GD2020-XZ-p08-i03.png",
+    "paper_id": "GD2020-XZ",
+    "source_page": 8,
+    "source_bbox_points": [
+      40.25,
+      382.5,
+      270.25,
+      533.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 920,
+    "height": 602,
+    "sha256": "b047456b47ce8cdf62930782811703d20f9a45d3a4edf554b643712d317d40d3",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XZ-p08-i04",
+    "path": "assets/GD2020-XZ/GD2020-XZ-p08-i04.png",
+    "paper_id": "GD2020-XZ",
+    "source_page": 8,
+    "source_bbox_points": [
+      40.25,
+      567.5,
+      270.25,
+      702.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 920,
+    "height": 540,
+    "sha256": "bad6fcb4423eb7448c9420bea975d5929b641d9acee63e8318be96fc0c8b861e",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XZ-p09-i01",
+    "path": "assets/GD2020-XZ/GD2020-XZ-p09-i01.png",
+    "paper_id": "GD2020-XZ",
+    "source_page": 9,
+    "source_bbox_points": [
+      40.25,
+      27.0,
+      355.5,
+      101.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1261,
+    "height": 297,
+    "sha256": "a02d51c9d0d8b62e4c3d0f3fa7ef174deedf6ff7230dc1c33abb2f8573b59d15",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XZ-p09-i02",
+    "path": "assets/GD2020-XZ/GD2020-XZ-p09-i02.png",
+    "paper_id": "GD2020-XZ",
+    "source_page": 9,
+    "source_bbox_points": [
+      40.5,
+      160.25,
+      327.0,
+      331.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1146,
+    "height": 684,
+    "sha256": "f6047abcfa061a03b61a8e2e8402ff937af25920fd9e635bb261202f5c6a45cc",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XZ-p12-i01",
+    "path": "assets/GD2020-XZ/GD2020-XZ-p12-i01.png",
+    "paper_id": "GD2020-XZ",
+    "source_page": 12,
+    "source_bbox_points": [
+      40.25,
+      27.0,
+      553.5,
+      196.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 2053,
+    "height": 678,
+    "sha256": "314674b734cf49d4c001c9082ab1bc543f7d19a7cb3c9b6e51792a2e84af048f",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XZ-p12-i02",
+    "path": "assets/GD2020-XZ/GD2020-XZ-p12-i02.png",
+    "paper_id": "GD2020-XZ",
+    "source_page": 12,
+    "source_bbox_points": [
+      40.25,
+      423.75,
+      239.25,
+      580.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 796,
+    "height": 627,
+    "sha256": "80a0448fa86bc327fdbcc4ff7ccd0380e5c91a1d68fee54a7b8bddd99ecd0579",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XZ-p12-i03",
+    "path": "assets/GD2020-XZ/GD2020-XZ-p12-i03.png",
+    "paper_id": "GD2020-XZ",
+    "source_page": 12,
+    "source_bbox_points": [
+      40.25,
+      590.0,
+      242.0,
+      786.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 807,
+    "height": 787,
+    "sha256": "d305a9ce9ebee1d77434b965ffb201a26c0c5ec87f1b1c83804c36a86c42c7b6",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XZ-p13-i01",
+    "path": "assets/GD2020-XZ/GD2020-XZ-p13-i01.png",
+    "paper_id": "GD2020-XZ",
+    "source_page": 13,
+    "source_bbox_points": [
+      41.75,
+      70.5,
+      354.25,
+      252.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1250,
+    "height": 727,
+    "sha256": "d3df89336bf122052838d5160345752c92bdfd973007c1f1327e2996e115be08",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XZ-p13-i02",
+    "path": "assets/GD2020-XZ/GD2020-XZ-p13-i02.png",
+    "paper_id": "GD2020-XZ",
+    "source_page": 13,
+    "source_bbox_points": [
+      42.0,
+      398.0,
+      395.75,
+      466.5
+    ],
+    "method": "pdf_render_crop",
+    "width": 1415,
+    "height": 274,
+    "sha256": "dc939206ccf9a9ae3c7ac00a225b7db9613e57733a9fd37a318cf7f79c6574bb",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XZ-p13-i03",
+    "path": "assets/GD2020-XZ/GD2020-XZ-p13-i03.png",
+    "paper_id": "GD2020-XZ",
+    "source_page": 13,
+    "source_bbox_points": [
+      46.75,
+      530.25,
+      320.0,
+      782.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1093,
+    "height": 1008,
+    "sha256": "1c18ab9e69f39acb7bc38882da5dc581aa8ab32a1b6a2766405472da888ac66a",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XZ-p14-i01",
+    "path": "assets/GD2020-XZ/GD2020-XZ-p14-i01.png",
+    "paper_id": "GD2020-XZ",
+    "source_page": 14,
+    "source_bbox_points": [
+      51.75,
+      203.75,
+      372.0,
+      400.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1281,
+    "height": 785,
+    "sha256": "f8e8408a77f8aaa7eb90c06d419c8203f50c8f0b57e7e663e5ffd1d997c3f069",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XZ-p14-i02",
+    "path": "assets/GD2020-XZ/GD2020-XZ-p14-i02.png",
+    "paper_id": "GD2020-XZ",
+    "source_page": 14,
+    "source_bbox_points": [
+      49.0,
+      498.25,
+      377.0,
+      692.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1312,
+    "height": 776,
+    "sha256": "b5b7b457b52e4c4e5f68c7ef6847099caf235a67d0377a8c8101e2388262ac60",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XZ-p15-i01",
+    "path": "assets/GD2020-XZ/GD2020-XZ-p15-i01.png",
+    "paper_id": "GD2020-XZ",
+    "source_page": 15,
+    "source_bbox_points": [
+      47.25,
+      29.75,
+      386.0,
+      150.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 1355,
+    "height": 482,
+    "sha256": "391f4d51d64b06306f62289463ba8bfc39c231aeb4b5b79f8ec3d652b7429b03",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XZ-p15-i02",
+    "path": "assets/GD2020-XZ/GD2020-XZ-p15-i02.png",
+    "paper_id": "GD2020-XZ",
+    "source_page": 15,
+    "source_bbox_points": [
+      44.0,
+      259.0,
+      148.75,
+      421.25
+    ],
+    "method": "pdf_render_crop",
+    "width": 419,
+    "height": 649,
+    "sha256": "f7490bc26acf2cbadeddfea1a9b071b4a7a29390eb12f4a77827132491775b5d",
+    "transcription": ""
+  },
+  {
+    "id": "GD2020-XZ-p16-i01",
+    "path": "assets/GD2020-XZ/GD2020-XZ-p16-i01.png",
+    "paper_id": "GD2020-XZ",
+    "source_page": 16,
+    "source_bbox_points": [
+      89.75,
+      32.5,
+      502.75,
+      294.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1652,
+    "height": 1049,
+    "sha256": "0f4b73a35db5cf72deb2899ab9247579f2183ba519822439af6e57151a3c0788",
+    "transcription": "2012—2020年我国农村网民规模及增速\n\n| 时间 | 农村网民规模（亿人） | 增长率 |\n| --- | --- | --- |\n| 2012.12 | 1.56 | 14.6% |\n| 2013.12 | 1.77 | 13.5% |\n| 2014.12 | 1.78 | 0.6% |\n| 2015.12 | 1.95 | 9.6% |\n| 2016.12 | 2.01 | 3.1% |\n| 2017.12 | 2.09 | 4.0% |\n| 2018.12 | 2.22 | 6.2% |\n| 2020.03 | 2.55 | 14.9% |\n\n图例：柱为农村网民规模（单位：亿人），折线为同比增长率；图例另有“非同比增长率”一项，标记与“同比增长率”相同。2020.03的14.9%为较2018年12月的增长率（正文同），即非同比增长率。"
+  },
+  {
+    "id": "GD2020-XZ-p16-i02",
+    "path": "assets/GD2020-XZ/GD2020-XZ-p16-i02.png",
+    "paper_id": "GD2020-XZ",
+    "source_page": 16,
+    "source_bbox_points": [
+      102.75,
+      351.0,
+      499.75,
+      544.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1588,
+    "height": 775,
+    "sha256": "be39461b51435c77d93163e307727a2adfcf391bd1d7a71aa5270ee227afb807",
+    "transcription": "2013—2020年城乡地区互联网普及率\n\n| 时间 | 城镇地区互联网普及率 | 农村地区互联网普及率 |\n| --- | --- | --- |\n| 2013.12 | 60.3% | 28.1% |\n| 2014.12 | 62.8% | 28.8% |\n| 2015.12 | 65.8% | 31.6% |\n| 2016.12 | 69.1% | 33.1% |\n| 2017.12 | 71.0% | 35.4% |\n| 2018.12 | 74.6% | 38.4% |\n| 2020.03 | 76.5% | 46.2% |"
+  },
+  {
+    "id": "GD2020-XZ-p17-i01",
+    "path": "assets/GD2020-XZ/GD2020-XZ-p17-i01.png",
+    "paper_id": "GD2020-XZ",
+    "source_page": 17,
+    "source_bbox_points": [
+      88.75,
+      214.75,
+      507.5,
+      476.0
+    ],
+    "method": "pdf_render_crop",
+    "width": 1675,
+    "height": 1045,
+    "sha256": "f11a295ae2a994565664be30cdb00385cbd0ded8addd9e0840b27ecd80bd6458",
+    "transcription": "2015-2019年我国农民工规模及增速\n\n| 年份 | 农民工规模（万人） | 同比增速 |\n| --- | --- | --- |\n| 2015年 | 27747 | 1.3% |\n| 2016年 | 28171 | 1.5% |\n| 2017年 | 28652 | 1.7% |\n| 2018年 | 28836 | 0.6% |\n| 2019年 | 29077 | 0.8% |"
+  },
+  {
+    "id": "GD2020-XZ-p17-i02",
+    "path": "assets/GD2020-XZ/GD2020-XZ-p17-i02.png",
+    "paper_id": "GD2020-XZ",
+    "source_page": 17,
+    "source_bbox_points": [
+      85.75,
+      577.25,
+      507.75,
+      707.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1688,
+    "height": 522,
+    "sha256": "64fe3a98fb0b8424c26863903d22db405453a4a581bed047c5eab515cf8777a9",
+    "transcription": "六大行业农民工月均收入（单位：元）\n\n| 行业 | 2019年 | 2018年 |\n| --- | --- | --- |\n| 制造业 | 3958 | 3732 |\n| 建筑业 | 4567 | 4209 |\n| 批发和零售业 | 3472 | 3263 |\n| 交通运输仓储邮政业 | 4667 | 4345 |\n| 住宿餐饮业 | 3289 | 3148 |\n| 居民服务修理和其他服务业 | 3337 | 3202 |"
+  },
+  {
+    "id": "GD2020-XZ-p18-i01",
+    "path": "assets/GD2020-XZ/GD2020-XZ-p18-i01.png",
+    "paper_id": "GD2020-XZ",
+    "source_page": 18,
+    "source_bbox_points": [
+      85.0,
+      407.5,
+      508.5,
+      634.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1694,
+    "height": 909,
+    "sha256": "47420f63884e87fbe31a25e4b87be8ec0c807ec2ca376ec80130119854957465",
+    "transcription": "2014—2019年全国农村网络零售情况\n\n| 年份 | 农村网络零售额（亿元） | 同比增长率 |\n| --- | --- | --- |\n| 2014年 | 1800.0 |  |\n| 2015年 | 3530.0 | 96.1% |\n| 2016年 | 8945.4 | 153.4% |\n| 2017年 | 12448.8 | 39.2% |\n| 2018年 | 14348.8 | 15.3% |\n| 2019年 | 17082.8 | 19.1% |\n\n2014年无增长率数据点（空格不补值）；右侧纵轴刻度为0—1.8，以小数表示增长率。"
+  },
+  {
+    "id": "GD2020-XZ-p19-i01",
+    "path": "assets/GD2020-XZ/GD2020-XZ-p19-i01.png",
+    "paper_id": "GD2020-XZ",
+    "source_page": 19,
+    "source_bbox_points": [
+      84.75,
+      29.75,
+      509.75,
+      313.75
+    ],
+    "method": "pdf_render_crop",
+    "width": 1700,
+    "height": 1136,
+    "sha256": "b85efb05d286a40bae45266bfec7fc128390f987d316c381c0e44195ad560012",
+    "transcription": "2019年全国各类农产品网络零售情况\n\n| 类别 | 零售额占比 | 零售额增速 |\n| --- | --- | --- |\n| 水果 | 8.6% | 53.2% |\n| 肉禽蛋 | 6.8% | 39.4% |\n| 奶类 | 3.2% | 37.5% |\n| 茶叶 | 12.0% | 35.8% |\n| 滋补食品 | 11.8% | 29.1% |\n| 蔬菜 | 3.9% | 24.1% |\n| 水产品 | 9.5% | 23.2% |\n| 调味品 | 9.2% | 21.8% |\n| 粮油 | 8.5% | 21.2% |\n| 休闲产品 | 24.9% | 20.5% |\n| 豆制品 | 1.6% | 16.2% |"
+  }
+]

@@ -783,59 +783,117 @@ def cmd_dump(paper: str, raw: bool = True):
     print(f'\n共识别 {len(seg["questions"])} 题（应为 {cfg["expected_questions"]}），材料 {len(seg["materials"])} 组')
 
 
-def cmd_answer_sheet(paper: str, work: Path):
-    """扫描版答案页：找“解析/拓展”等两字短行，把其上一行（通常是“N、正确答案：X”或“因此，选择X选项”）裁出拼图。"""
+ANS_DPI = 96                             # 扫描版答案页按 96 DPI 灰度渲染（与常见扫描件原始分辨率一致）
+ANS_TEMPLATE = TOOLS / 'answer-template.png'   # 加粗“正确答案”四字的二值模板（取自2020年乡镇卷答案第1页第1题）
+ANS_MATCH = 0.6                          # 归一化相关系数阈值：2020、2021两卷答案行均≥0.65，其余各行≤0.47
+
+
+def ink_lines(dark):
+    """按水平投影切出文字行 [(top, bottom)]。"""
+    rows, out, start = dark.sum(axis=1), [], None
+    for y, v in enumerate(rows):
+        if v and start is None:
+            start = y
+        elif not v and start is not None:
+            out.append((start, y))
+            start = None
+    return out
+
+
+def match_answer_lines(dark, T):
+    """在一页中找含“正确答案”字样的行：模板在行首 10—60 像素处横向滑动、上下错 1—2 像素，取最大相关系数。"""
     import numpy as np
+    from numpy.lib.stride_tricks import sliding_window_view as swv
+    th, tw = T.shape
+    Tz = T - T.mean()
+    Tn = math.sqrt(float((Tz ** 2).sum()))
+    hits, lines = [], ink_lines(dark)
+    for a, b in lines:
+        if b - a < th - 2 or b - a > th + 6:
+            continue
+        lx = int(np.where(dark[a:b].any(axis=0))[0].min())
+        best = -1.0
+        for dy in range(-1, b - a - th + 2):
+            top = a + dy
+            band = dark[max(top, 0):top + th, lx + 10:lx + 60 + tw]
+            if top < 0 or band.shape[0] < th or band.shape[1] < tw:
+                continue
+            W = swv(band, (th, tw))[0]
+            Wz = W - W.mean(axis=(1, 2), keepdims=True)
+            den = np.sqrt((Wz ** 2).sum(axis=(1, 2))) * Tn
+            sc = np.where(den > 0, (Wz * Tz).sum(axis=(1, 2)) / np.where(den > 0, den, 1), -1)
+            best = max(best, float(sc.max()))
+        if best >= ANS_MATCH:
+            hits.append((a, b, lx, best))
+    return hits, lines
+
+
+def contact_sheet(items, out: Path, width: int, scale: int, cols: int = 1, label_w: int = 120):
+    """items: [(标签, 灰度PIL图)] → 拼成若干张图，返回文件列表。"""
     from PIL import Image, ImageDraw
+    files, per = [], 34 * cols
+    for k in range(0, len(items), per):
+        chunk = items[k:k + per]
+        cell_h = max(im.size[1] for _, im in chunk) * scale + 8
+        cell_w = width * scale + label_w
+        rows = (len(chunk) + cols - 1) // cols
+        sheet = Image.new('L', (cell_w * cols, cell_h * rows), 255)
+        d = ImageDraw.Draw(sheet)
+        for i, (lab, im) in enumerate(chunk):
+            r, c = divmod(i, cols)
+            im = im.resize((im.size[0] * scale, im.size[1] * scale))
+            sheet.paste(im, (c * cell_w + label_w, r * cell_h + 4))
+            d.text((c * cell_w + 4, r * cell_h + cell_h // 2 - 6), lab, fill=0)
+        fn = out.parent / f'{out.stem}-{k // per + 1:02d}.png'
+        sheet.save(fn)
+        files.append(fn)
+    return files
+
+
+def cmd_answer_sheet(paper: str, work: Path):
+    """扫描版答案 PDF 的读取辅助（没有 OCR 时用）：
+    answer-lines-*.png  每条检测到的“N、正确答案：X”行（整行），第一遍按此逐题读取；
+    answer-zoom-*.png   同一批行的行首（题号到答案字母）放大三倍、四列排开，第二遍按此独立重读；
+    answer-check-*.png  “解析/拓展”等短行的上一行（多为“因此，选择X选项”），用来再核一次。
+    两遍结果一致后，按“页码: 题号答案 …”写入 tools/corrections/<卷>.json 的 answers.by_page。"""
+    import numpy as np
+    from PIL import Image
     cfg, _ = load_cfg(paper)
     pdf = REPO / cfg['answer_pdf']
     work.mkdir(parents=True, exist_ok=True)
-    subprocess.run(['pdftoppm', '-r', '96', '-gray', '-png', str(pdf), str(work / 'ans')], check=True, capture_output=True)
-    cands = []
-    for f in sorted(work.glob('ans-*.png')):
+    for pat in ('ans-*.png', 'answer-lines-*.png', 'answer-zoom-*.png', 'answer-check-*.png'):
+        for old in work.glob(pat):          # 只清理本命令自己生成的文件
+            old.unlink()
+    subprocess.run(['pdftoppm', '-r', str(ANS_DPI), '-gray', '-png', str(pdf), str(work / 'ans')], check=True, capture_output=True)
+    T = (np.asarray(Image.open(ANS_TEMPLATE).convert('L')) < 128).astype(float)
+    full, zoom, check = [], [], []
+    for f in sorted(work.glob('ans-*.png'), key=lambda x: int(re.findall(r'(\d+)\.png$', x.name)[0])):
         pno = int(re.findall(r'(\d+)\.png$', f.name)[0])
         g = Image.open(f).convert('L')
-        dark = np.asarray(g) < 140
-        rows = dark.sum(axis=1)
-        lines, start = [], None
-        for y, v in enumerate(rows):
-            if v and start is None:
-                start = y
-            elif not v and start is not None:
-                lines.append((start, y))
-                start = None
-        info = []
-        for a, b in lines:
-            cols = np.where(dark[a:b].any(axis=0))[0]
-            info.append((a, b, cols.min(), cols.max()))
+        dark = (np.asarray(g) < 140).astype(float)
+        hits, lines = match_answer_lines(dark, T)
+        for a, b, lx, sc in hits:
+            n = len(full) + 1
+            full.append((f'#{n} p{pno} y{a}', g.crop((30, a - 3, 30 + 520, b + 3))))
+            zoom.append((f'#{n} p{pno}', g.crop((lx - 2, a - 3, lx + 150, b + 3))))
+        info = [(a, b, *(lambda c: (c.min(), c.max()))(np.where(dark[a:b].any(axis=0))[0])) for a, b in lines]
         for i, (a, b, x0, x1) in enumerate(info):
-            if b - a >= 8 and x1 - x0 < 45 and i > 0:
+            if b - a >= 8 and x1 - x0 < 45 and i > 0:      # 两字短行（解析、拓展）
                 pa, pb, _, _ = info[i - 1]
-                cands.append((pno, pa, pb, g))
-    out_files = []
-    W, S, per = 520, 2, 34
-    for k in range(0, len(cands), per):
-        chunk = cands[k:k + per]
-        H = sum((b - a + 6) * S + 6 for _, a, b, _ in chunk)
-        sheet = Image.new('L', (W * S + 120, H), 255)
-        d = ImageDraw.Draw(sheet)
-        y = 0
-        for pno, a, b, g in chunk:
-            c = g.crop((30, a - 3, 30 + W, b + 3)).resize((W * S, (b - a + 6) * S))
-            sheet.paste(c, (120, y))
-            d.text((4, y + 8), f'p{pno} y{a}', fill=0)
-            y += c.size[1] + 6
-        fn = work / f'answer-sheet-{k // per + 1:02d}.png'
-        sheet.save(fn)
-        out_files.append(fn)
+                check.append((f'p{pno} y{pa}', g.crop((30, pa - 3, 30 + 520, pb + 3))))
+    out = []
+    out += contact_sheet(full, work / 'answer-lines', 520, 2)
+    out += contact_sheet(zoom, work / 'answer-zoom', 152, 3, cols=4, label_w=70)
+    out += contact_sheet(check, work / 'answer-check', 520, 2)
     found, stats = answer_text_layer(pdf)
     scanned = [p for p, n in stats if n < 30]
-    print(f'答案PDF共 {len(stats)} 页，其中 {len(scanned)} 页几乎没有文字层（扫描页）：{scanned}')
+    print(f'答案PDF共 {len(stats)} 页，其中 {len(scanned)} 页几乎没有文字层（扫描页）。')
     print(f'文字层可直接取到的答案：{ {k: v["value"] for k, v in sorted(found.items())} }')
-    print(f'候选行 {len(cands)} 条，拼图：')
-    for fn in out_files:
+    exp = cfg['expected_questions'] - len(cfg.get('missing_questions', []))
+    print(f'检测到“正确答案”行 {len(full)} 条（本卷应有约 {exp} 条；多出的多为“故正确答案为X”等结论句，少了的请到对应页查看）。')
+    for fn in out:
         print('  ', fn)
-    print(f'逐页读取后，按 “页码: 题号答案 …” 写入 tools/corrections/{paper}.json 的 answers.by_page。')
+    print(f'两遍读取一致后，按 “页码: 题号答案 …” 写入 tools/corrections/{paper}.json 的 answers.by_page。')
 
 
 # ---------------------------------------------------------------------------
@@ -965,14 +1023,18 @@ def build(paper: str, work: Path | None):
             alt = f'{paper} 第{im.page}页 第{n}题题图' + ('（含选项A—D）' if role == 'question_and_options' else '')
             figs.append(make_figure(im, role, [n], alt))
         r['figure_objs'] = figs
+        # 画有选项 A—D 的图（role=question_and_options）：没有文字选项时，选项全指向它；
+        # 有文字选项（如“如上图所示”）时，文字照录，并同样指向图中对应字母
+        qo = [f for f in figs if f['role'] == 'question_and_options']
         if not r['options']:
-            if len(figs) != 1:
-                die(f'第{n}题没有文字选项，且题图数为 {len(figs)}，需在 tools/corrections/{paper}.json 指明选项与图片的对应')
-            r['options'] = [{'label': L, 'text': '', 'image_refs': [{'image_id': figs[0]['image_id'], 'label_in_image': L}]}
+            if len(qo) != 1:
+                die(f'第{n}题没有文字选项，画有选项的题图应恰好 1 张（现为 {len(qo)} 张）；'
+                    f'请在 tools/corrections/{paper}.json 的 figures 中把只含题目部分的图设为 role: "question"')
+            r['options'] = [{'label': L, 'text': '', 'image_refs': [{'image_id': qo[0]['image_id'], 'label_in_image': L}]}
                             for L in 'ABCD']
         else:
             for o in r['options']:
-                o.setdefault('image_refs', [])
+                o['image_refs'] = [{'image_id': qo[0]['image_id'], 'label_in_image': o['label']}] if len(qo) == 1 else []
 
     # 材料
     mat_objs = {}

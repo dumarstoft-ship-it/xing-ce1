@@ -1,0 +1,22 @@
+{
+  "paper_id": "GD2020-XZ",
+  "commit": "52f9811b22cad5410a7108dd0a07a879f1187aa5",
+  "sources": [
+    {
+      "path": "真题/2020年0809广东公务员考试《行测》真题（乡镇）.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "361eae3cba93491e7446555ba1cf7212eace20f5",
+      "size": 1538871,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/361eae3cba93491e7446555ba1cf7212eace20f5"
+    },
+    {
+      "path": "答案解析/2020年0809广东公务员考试《行测》真题（乡镇）参考答案及解析.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1cedb26d642eab910519d1ee9de14bbffa0314ab",
+      "size": 1294980,
+      "url": "https://api.github.com/repos/dumarstoft-ship-it/xing-ce1/git/blobs/1cedb26d642eab910519d1ee9de14bbffa0314ab"
+    }
+  ]
+}

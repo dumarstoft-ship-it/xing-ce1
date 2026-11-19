@@ -1,16 +1,18 @@
 # 广东行测（2013—2021）转换与校验汇总
 
-共 1 套、100 题。每卷的完整记录（来源与 blob、完整性、答案读取方式、源文件问题、转写拿不准的地方、题图清单、复核方法）见各卷报告。本文件由 `python3 tools/extract.py index` 生成，请勿手改。
+共 2 套、200 题。每卷的完整记录（来源与 blob、完整性、答案读取方式、源文件问题、转写拿不准的地方、题图清单、复核方法）见各卷报告。本文件由 `python3 tools/extract.py index` 生成，请勿手改。
 
 | 试卷 | 题数 | 明确答案 | 争议答案 | 答案缺失 | 共用材料 | 题图 | 材料图 | 详细报告 |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
+| 2020年广东行测（乡镇卷） `GD2020-XZ` | 100 | 100 | 0 | 0 | 3 | 22 | 6 | [quality/GD2020-XZ.md](quality/GD2020-XZ.md) |
 | 2021年广东行测（乡镇卷） `GD2021-XZ` | 100 | 100 | 0 | 0 | 3 | 22 | 5 | [quality/GD2021-XZ.md](quality/GD2021-XZ.md) |
-| 合计 | 100 | 100 | 0 | 0 | 3 | 22 | 5 | |
+| 合计 | 200 | 200 | 0 | 0 | 6 | 44 | 11 | |
 
 ## 各部分题数
 
 | 试卷 | 常识判断 | 言语理解与表达 | 数量关系 | 判断推理 | 科学推理 | 资料分析 | 判断推理小类 |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
+| `GD2020-XZ` | 20 | 10 | 15 | 20 | 20 | 15 | 图形推理 10，类比推理 5，逻辑判断 5 |
 | `GD2021-XZ` | 20 | 10 | 15 | 20 | 20 | 15 | 图形推理 10，类比推理 5，逻辑判断 5 |
 
 ## 争议与缺失答案
@@ -28,8 +30,8 @@
 
 ## 图片
 
-27 张，全部为原 PDF 页面按 288 DPI 渲染后的裁剪（`pdf_render_crop`），其中 5 张附文字转写。裁剪框（pt）、像素尺寸与 SHA-256 见 [assets-manifest.json](assets-manifest.json)。
+55 张，全部为原 PDF 页面按 288 DPI 渲染后的裁剪（`pdf_render_crop`），其中 12 张附文字转写。裁剪框（pt）、像素尺寸与 SHA-256 见 [assets-manifest.json](assets-manifest.json)。
 
 ## 校验
 
-`python3 tools/extract.py verify` 校验全部卷：schema、题号、答案语义、材料一致性、图片 SHA-256 与像素尺寸、Markdown 链接、源 PDF blob，并检查本汇总及 all.jsonl、assets-manifest.json、sources.json、README.md 与各卷文件一致。源文件提取所基于的提交：`5984b15b9c971c37a67885c661d43fc842c2caa8`。
+`python3 tools/extract.py verify` 校验全部卷：schema、题号、答案语义、材料一致性、图片 SHA-256 与像素尺寸、Markdown 链接、源 PDF blob，并检查本汇总及 all.jsonl、assets-manifest.json、sources.json、README.md 与各卷文件一致。源文件提取所基于的提交：`52f9811b22cad5410a7108dd0a07a879f1187aa5`。
