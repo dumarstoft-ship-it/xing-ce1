@@ -628,6 +628,21 @@ PART_NAMES = [(1, "第一部分　政治理论"), (11, "第二部分　常识判
               (31, "第四部分　数量关系"), (46, "第五部分　判断推理"), (66, "第六部分　科学推理"), (71, "第七部分　资料分析")]
 
 
+def verbal_source_desc(paper):
+    """编排说明题源表的第16—30题一行：按本套言语题的实际来源写。"""
+    ids = [v["id"] for v in verbal_items(paper).values()]
+    kinds = [("广东省考旧卷", sum(1 for i in ids if re.match(r"GD(XD)?\d{4}", i))),
+             ("广东事业单位统考", sum(1 for i in ids if i.startswith("SYDW"))),
+             ("国考", sum(1 for i in ids if i.startswith("GKYY"))),
+             ("江苏、浙江省考", sum(1 for i in ids if re.match(r"(JS|ZJ)\d{4}", i)))]
+    kinds = [(k, c) for k, c in kinds if c]
+    if not kinds:
+        return "国考、江苏、浙江言语真题"
+    if len(kinds) == 1:
+        return kinds[0][0] + "言语真题"
+    return "言语真题：" + "，".join(f"{k}{c}题" for k, c in kinds)
+
+
 def write_outputs(paper, questions, answers, registry, log, plan, out=None, ledger=True):
     out = out or S / paper
     out.mkdir(parents=True, exist_ok=True)
@@ -682,7 +697,7 @@ def write_outputs(paper, questions, answers, registry, log, plan, out=None, ledg
           "| 题号 | 来源 |", "|---|---|",
           "| 1—15 | 原创，依据《颜培天2027广东省考政治理论常识》讲义（含二十届五中全会《决定》）"
           + ("；本套空出第" + "、".join(map(str, sorted(skip))) + "题（讲义材料不够，按用户决定不硬出）" if skip else "") + " |",
-          "| 16—30 | " + ("广东省考、事业单位统考及国考、江浙言语真题" if plan.get("sources") else "国考、江苏、浙江言语真题") + " |",
+          "| 16—30 | " + verbal_source_desc(paper) + " |",
           ("| 31—90 | 广东省考旧卷、事业单位统考真题（逐题来源见 `来源登记.jsonl`） |\n" if plan.get("sources")
            else f"| 31—90 | 粉笔2026下半年广东省考模考第{SEASON[paper]}季原题（个别调换见下） |\n"),
           "逐题来源见 `来源登记.jsonl`。\n",
