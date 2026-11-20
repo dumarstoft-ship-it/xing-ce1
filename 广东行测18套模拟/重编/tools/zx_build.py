@@ -237,9 +237,78 @@ def build(only=None):
         print(tag, d["date"], len(qs), "题")
 
 
+def typeset(font_dir, only=None):
+    """逐天排版：封面写题数、建议用时；各部分接着排。"""
+    import subprocess
+    pl = jload(ZX / "编排.json")
+    for d in pl["days"]:
+        tag = f"D{d['day']}"
+        if only and tag not in only:
+            continue
+        cmd = [sys.executable, str(S / "打印排版" / "build_print.py"), f"专项/{tag}", "--font-dir", str(font_dir),
+               "--no-notice", "--flow", "--subtitle", "广东行测18套模拟·专项",
+               "--title", f"图推·数推·科推专项（第{CN[d['day'] - 1]}天）", "--minutes", str(d["minutes"]),
+               "--cover-tip", f"{d['date']}练。本册题目都是广东真题，共{d['n']}题，建议用时{d['minutes']}分钟。",
+               "--cover-tip", "每类题前印有方法要点：先读要点再做题。做完对照《答案与解析》，按题眼、推导、易错三段复盘，错题回到方法要点再看一遍。"]
+        r = subprocess.run(cmd, capture_output=True, text=True)
+        print(tag, (r.stdout or r.stderr).strip().splitlines()[-1] if (r.stdout or r.stderr) else r.returncode)
+        if r.returncode:
+            raise SystemExit(r.stderr)
+
+
+def readme():
+    pl = jload(ZX / "编排.json")
+    recs = records()
+    alloc = jload(ZX / "分配.json")
+    rows = []
+    for d in pl["days"]:
+        parts = defaultdict(int)
+        cardt = []
+        for b in d["blocks"]:
+            parts[b["part"]] += len(b["ids"])
+            t = b["card"] + ("（续）" if b.get("continued") else "")
+            cardt.append(t)
+        tag = f"D{d['day']}"
+        rows.append(f"| 第{CN[d['day'] - 1]}天 {d['date']} | {d['n']}（数推{parts['数推']}、图推{parts['图推']}、科推{parts['科推']}） | {d['minutes']}分钟 | "
+                    f"[题本](D{d['day']}/打印版/{tag}_题本_打印版.pdf)、[答案与解析]({tag}/答案与解析.md) | {'；'.join(cardt)} |")
+    used = [i for d in pl["days"] for b in d["blocks"] for i in b["ids"]]
+    src = defaultdict(int)
+    for i in used:
+        src["省考2017—2023年" if i.startswith("GD20") and int(i[2:6]) >= 2017 else "省考2013—2016年" if i.startswith("GD20")
+            else "选调2019、2020年" if i.startswith("GDXD") else "事业编2022—2026年"] += 1
+    n_blind_diff = sum(1 for i in used if recs[i].get("blind_answer") and recs[i]["blind_answer"] != recs[i]["answer"])
+    lines = [
+        "# 图推·数推·科推专项（2026-11-21至11-25）", "",
+        "用户说图推、数推、科推比较弱，想专门练，并且“尽可能把广东比较有价值的真题安排进去”（2026-11-20），选了每天约30—40题、25日前练完。"
+        "题目全部是广东真题：剩下没用过的广东题先给M12—M18、S03—S07每类留够60题（每套5题），其余全部编进专项，"
+        f"共{len(used)}题（{'、'.join(f'{k}{v}题' for k, v in src.items())}）。都不在24天集训第1、2天和习题本图推里，也不与M01—M11、S01—S02重复。", "",
+        "## 每天的量", "",
+        "| 天 | 题数 | 建议用时 | 文件 | 规律分组（每组前印方法要点） |", "| --- | --- | --- | --- | --- |", *rows, "",
+        "## 怎么用", "",
+        "- 每册按数推、图推、科推三部分排，每部分按规律分组，组前方框里是这类题的方法要点：怎么认、怎么做、常见变化、易错。先读要点，再做这一组题。",
+        "- 计时做完再对答案。《答案与解析》每题写来源卷别、规律细类，解析分题眼（题面上哪个特征提示用这条规律）、推导、易错三段；做错的题回到方法要点再读一遍。",
+        "- 建议用时按熟练考生的估计秒数乘1.5取整；做不完不要紧，专项重在把规律认熟。", "",
+        "## 答案是怎么核的", "",
+        f"- 每题先由一人不看答案独立解出，写下答案后再与来源答案（答案解析PDF）对照；{len(used)}题中{len(used) - n_blind_diff}题盲解与来源答案一致，"
+        f"{n_blind_diff}题盲解不一致，复核后都认来源答案，解析里写明了盲解为什么错（这几道正是容易想偏的题）。",
+        f"- 来源答案可商榷（两条规律都说得通、指向不同选项）或题目本身有毛病的{len(pl.get('不用') or {})}题不放进专项，理由见 [编排.json](../重编/专项/编排.json) 的“不用”。",
+        "- 原卷的错字、漏字、多余标点照来源改正，题干只印了图的补上通行设问；数列里的分数按原卷排成上下分数。逐题改动见各天的 来源登记.jsonl。", "",
+        "## 文件", "",
+        "- 各天目录：打印版/（题本PDF）、答案与解析.md、题目.jsonl（排版用）、答案.json、来源登记.jsonl。",
+        "- 底稿：[重编/专项/](../重编/专项/)（分配.json：哪些题进专项、哪些留给模考；解题/：逐题答案和解析；方法/：方法要点卡；编排.json：每天的分组）。",
+        "- 重新生成：`python3 广东行测18套模拟/重编/tools/zx_build.py plan`（排分组）→ `zx_build.py build` → `zx_build.py typeset <字体目录>`。字体文件不入库。", "",
+    ]
+    (OUT / "README.md").write_text("\n".join(lines), encoding="utf-8")
+    print("README", len(lines))
+
+
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else "build"
     if cmd == "plan":
         plan()
+    elif cmd == "typeset":
+        typeset(Path(sys.argv[2]), set(sys.argv[3:]) or None)
+    elif cmd == "readme":
+        readme()
     else:
         build(set(sys.argv[2:]) or None)

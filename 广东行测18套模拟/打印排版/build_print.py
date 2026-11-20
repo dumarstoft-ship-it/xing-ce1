@@ -310,23 +310,31 @@ def norm_text(s: str, number, where: str, log: Log) -> str:
     t7 = sub_digits(t6)
     if t7 != t6:
         m = SUB_DIGITS.search(t6)
-        log.add(number, where, "下标数字改为下标排印", t6[max(0, m.start() - 6):m.end() + 6],
+        log.add(number, where, "上下标、分数字符改为数学排印", t6[max(0, m.start() - 6):m.end() + 6],
                 t7[max(0, m.start() - 6):m.end() + 12])
     return t7
 
 
-SUB_DIGITS = re.compile("[₀₁₂₃₄₅₆₇₈₉]+")
-SUB_PLAIN = str.maketrans("₀₁₂₃₄₅₆₇₈₉", "0123456789")
+SUB_DIGITS = re.compile("[₀₁₂₃₄₅₆₇₈₉]+|[⁰¹²³⁴⁵⁶⁷⁸⁹]+|[½⅓¼¾]")
+SUB_PLAIN = str.maketrans("₀₁₂₃₄₅₆₇₈₉⁰¹²³⁴⁵⁶⁷⁸⁹", "01234567890123456789")
+VULGAR = {"½": ("1", "2"), "⅓": ("1", "3"), "¼": ("1", "4"), "¾": ("3", "4")}
+
+
+def _sub_tex(t: str) -> str:
+    if t in VULGAR:
+        return "\\frac{%s}{%s}" % VULGAR[t]
+    return ("_{" if t[0] in "₀₁₂₃₄₅₆₇₈₉" else "^{") + t.translate(SUB_PLAIN) + "}"
 
 
 def sub_digits(s: str) -> str:
-    """数学片段外的“₁”改为 $_{1}$，片段内的改为 _{1}。"""
+    """下标、上标数字字符（“S₁”“m²”）和“½”这类分数字符，方正书宋没有字形：
+    数学片段外的改为 $_{1}$、$^{2}$、$\\frac{1}{2}$，片段内的去掉外层$。"""
     out, pos = [], 0
     for m in re.finditer(r"\$[^$]+\$", s):
-        out.append(SUB_DIGITS.sub(lambda d: "$_{" + d.group(0).translate(SUB_PLAIN) + "}$", s[pos:m.start()]))
-        out.append(SUB_DIGITS.sub(lambda d: "_{" + d.group(0).translate(SUB_PLAIN) + "}", m.group(0)))
+        out.append(SUB_DIGITS.sub(lambda d: "$" + _sub_tex(d.group(0)) + "$", s[pos:m.start()]))
+        out.append(SUB_DIGITS.sub(lambda d: _sub_tex(d.group(0)), m.group(0)))
         pos = m.end()
-    out.append(SUB_DIGITS.sub(lambda d: "$_{" + d.group(0).translate(SUB_PLAIN) + "}$", s[pos:]))
+    out.append(SUB_DIGITS.sub(lambda d: "$" + _sub_tex(d.group(0)) + "$", s[pos:]))
     return "".join(out)
 
 
@@ -1560,6 +1568,7 @@ def main() -> None:
     ap.add_argument("--subtitle", default="广东行测18套模拟")
     ap.add_argument("--badge", default="仅供个人|练习使用", help="封面右上角方框文字，用|分行")
     ap.add_argument("--minutes", type=int, default=90, help="注意事项中的总时限")
+    ap.add_argument("--flow", action="store_true", help="各部分接着排、不另起页（专项练习本用）")
     ap.add_argument("--title", default=None, help="封面标题（专项等用）；默认“行政职业能力测验（一）”式")
     ap.add_argument("--cover-tip", action="append", default=None, help="封面“重要提示”各段（可多次给）；默认考场提示")
     ap.add_argument("--no-notice", action="store_true", help="不印封面背面的注意事项")
@@ -1595,6 +1604,9 @@ def main() -> None:
         tdp = Path(td)
         (tdp / "fonts.css").write_text(fonts_css(fonts), encoding="utf-8")
         shutil.copy(HERE / "exam.css", tdp / "exam.css")
+        if args.flow:   # 专项练习本：各部分接着排，不另起页
+            with open(tdp / "exam.css", "a", encoding="utf-8") as fcss:
+                fcss.write("\n.part { break-before: auto; margin-top: 20pt; }\n.part:first-child { margin-top: 0; }\n")
         body = body_html(args.paper_id, questions, "exam.css", "fonts.css", log)
         (tdp / "body.html").write_text(body, encoding="utf-8")
         n_parts = body.count('<section class="part">')
