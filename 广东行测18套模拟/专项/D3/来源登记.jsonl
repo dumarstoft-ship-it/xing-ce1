@@ -1,0 +1,35 @@
+{"number": 1, "source_id": "GD2023-XZ-Q031", "source_desc": "2023年广东省考乡镇卷第31题", "edits": [], "stem_fill": null}
+{"number": 2, "source_id": "GD2015-XZ-Q023", "source_desc": "2015年广东省考乡镇卷第23题", "edits": [], "stem_fill": null}
+{"number": 3, "source_id": "GD2018-Q016", "source_desc": "2018年广东省考第16题", "edits": [], "stem_fill": null}
+{"number": 4, "source_id": "SYDW2026-Q051", "source_desc": "2026年广东事业单位统考第51题", "edits": [], "stem_fill": null}
+{"number": 5, "source_id": "GD2016-XJ-Q037", "source_desc": "2016年广东省考县级卷第37题", "edits": [], "stem_fill": null}
+{"number": 6, "source_id": "GD2013-3-Q071", "source_desc": "2013年广东省考三卷第71题", "edits": [], "stem_fill": "从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性。"}
+{"number": 7, "source_id": "GD2017-Q037", "source_desc": "2017年广东省考第37题", "edits": [], "stem_fill": null}
+{"number": 8, "source_id": "GD2013-1-Q067", "source_desc": "2013年广东省考一卷第67题", "edits": [], "stem_fill": "从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性。"}
+{"number": 9, "source_id": "GD2015-XJ-Q042", "source_desc": "2015年广东省考县级卷第42题", "edits": [], "stem_fill": null}
+{"number": 10, "source_id": "GD2016-XJ-Q060", "source_desc": "2016年广东省考县级卷第60题", "edits": [], "stem_fill": "从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性。"}
+{"number": 11, "source_id": "GD2020-XZ-Q050", "source_desc": "2020年广东省考乡镇卷第50题", "edits": [], "stem_fill": null}
+{"number": 12, "source_id": "SYDW2023-Q071", "source_desc": "2023年广东事业单位统考第71题", "edits": [], "stem_fill": null}
+{"number": 13, "source_id": "GD2017-Q038", "source_desc": "2017年广东省考第38题", "edits": [], "stem_fill": null}
+{"number": 14, "source_id": "GD2019-XJ-Q032", "source_desc": "2019年广东省考县级卷第32题", "edits": [], "stem_fill": null}
+{"number": 15, "source_id": "GD2014-XJ-Q058", "source_desc": "2014年广东省考县级卷第58题", "edits": [], "stem_fill": null}
+{"number": 16, "source_id": "GD2013-1-Q073", "source_desc": "2013年广东省考一卷第73题", "edits": [], "stem_fill": "从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性。"}
+{"number": 17, "source_id": "GD2015-XJ-Q043", "source_desc": "2015年广东省考县级卷第43题", "edits": [], "stem_fill": null}
+{"number": 18, "source_id": "SYDW2024-Q071", "source_desc": "2024年广东事业单位统考第71题", "edits": [], "stem_fill": null}
+{"number": 19, "source_id": "SYDW2025-Q068", "source_desc": "2025年广东事业单位统考第68题", "edits": [], "stem_fill": null}
+{"number": 20, "source_id": "GD2017-Q040", "source_desc": "2017年广东省考第40题", "edits": [{"where": "stem", "old": "分类正确的是:", "new": "分类正确的是：", "reason": "句末半角冒号改为全角冒号"}], "stem_fill": null}
+{"number": 21, "source_id": "GD2015-XJ-Q039", "source_desc": "2015年广东省考县级卷第39题", "edits": [], "stem_fill": null}
+{"number": 22, "source_id": "GD2019-XJ-Q067", "source_desc": "2019年广东省考县级卷第67题", "edits": [], "stem_fill": null}
+{"number": 23, "source_id": "GDXD2020-ZH-Q081", "source_desc": "2020年广东选调生考试第81题", "edits": [{"where": "C", "old": "向右加速度运动", "new": "向右加速运动", "reason": "多一个“度”字，“加速度”是物理量，选项要说的是“加速运动”"}], "stem_fill": null}
+{"number": 24, "source_id": "GD2020-XZ-Q072", "source_desc": "2020年广东省考乡镇卷第72题", "edits": [], "stem_fill": null}
+{"number": 25, "source_id": "GD2015-XZ-Q067", "source_desc": "2015年广东省考乡镇卷第67题", "edits": [{"where": "stem", "old": "R₁=R₁=R₃", "new": "R₁=R₂=R₃", "reason": "第二个R₁应为R₂（图中三个电阻为R₁、R₂、R₃，原卷印误）。"}], "stem_fill": null}
+{"number": 26, "source_id": "GD2016-XZ-Q067", "source_desc": "2016年广东省考乡镇卷第67题", "edits": [{"where": "stem", "old": "S1，S2", "new": "S1、S2", "reason": "并列的两个开关之间应用顿号。"}], "stem_fill": null}
+{"number": 27, "source_id": "GD2017-Q061", "source_desc": "2017年广东省考第61题", "edits": [], "stem_fill": null}
+{"number": 28, "source_id": "GD2019-XJ-Q062", "source_desc": "2019年广东省考县级卷第62题", "edits": [], "stem_fill": null}
+{"number": 29, "source_id": "GD2022-XJ-Q078", "source_desc": "2022年广东省考县级卷第78题", "edits": [{"where": "A", "old": "乙和甲", "new": "乙和丙", "reason": "图中串联在火线与零线之间的是乙、丙，A项讨论的是二者中哪个是开关；甲接三根线，是三孔插座；解析也按乙、丙分析，原卷“甲”为笔误。"}], "stem_fill": null}
+{"number": 30, "source_id": "GDXD2020-ZH-Q080", "source_desc": "2020年广东选调生考试第80题", "edits": [], "stem_fill": null}
+{"number": 31, "source_id": "GD2019-XZ-Q046", "source_desc": "2019年广东省考乡镇卷第46题", "edits": [], "stem_fill": null}
+{"number": 32, "source_id": "GD2015-XZ-Q066", "source_desc": "2015年广东省考乡镇卷第66题", "edits": [{"where": "stem", "old": "视力表到平面镜的距离3米", "new": "视力表到平面镜的距离为3米", "reason": "漏“为”字，补齐使句子通顺。"}], "stem_fill": null}
+{"number": 33, "source_id": "GD2015-XJ-Q066", "source_desc": "2015年广东省考县级卷第66题", "edits": [], "stem_fill": null}
+{"number": 34, "source_id": "GD2018-Q068", "source_desc": "2018年广东省考第68题", "edits": [], "stem_fill": null}
+{"number": 35, "source_id": "GD2022-XJ-Q077", "source_desc": "2022年广东省考县级卷第77题", "edits": [], "stem_fill": null}

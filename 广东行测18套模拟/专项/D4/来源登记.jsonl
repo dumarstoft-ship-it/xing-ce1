@@ -1,0 +1,37 @@
+{"number": 1, "source_id": "GD2014-XJ-Q044", "source_desc": "2014年广东省考县级卷第44题", "edits": [], "stem_fill": null}
+{"number": 2, "source_id": "SYDW2026-Q054", "source_desc": "2026年广东事业单位统考第54题", "edits": [{"where": "A", "old": "113/105，", "new": "113/105", "reason": "选项末尾多余的逗号"}], "stem_fill": null}
+{"number": 3, "source_id": "GD2015-XJ-Q024", "source_desc": "2015年广东省考县级卷第24题", "edits": [], "stem_fill": null}
+{"number": 4, "source_id": "GDXD2019-SW-Q068", "source_desc": "2019年广东选调生考试第68题", "edits": [], "stem_fill": null}
+{"number": 5, "source_id": "SYDW2025-Q053", "source_desc": "2025年广东事业单位统考第53题", "edits": [], "stem_fill": null}
+{"number": 6, "source_id": "GD2014-XZ-Q060", "source_desc": "2014年广东省考乡镇卷第60题", "edits": [], "stem_fill": null}
+{"number": 7, "source_id": "GD2014-XZ-Q077", "source_desc": "2014年广东省考乡镇卷第77题", "edits": [], "stem_fill": null}
+{"number": 8, "source_id": "GD2014-XZ-Q080", "source_desc": "2014年广东省考乡镇卷第80题", "edits": [], "stem_fill": null}
+{"number": 9, "source_id": "SYDW2022-Q071", "source_desc": "2022年广东事业单位统考第71题", "edits": [], "stem_fill": null}
+{"number": 10, "source_id": "SYDW2025-Q070", "source_desc": "2025年广东事业单位统考第70题", "edits": [], "stem_fill": null}
+{"number": 11, "source_id": "GD2017-Q035", "source_desc": "2017年广东省考第35题", "edits": [], "stem_fill": null}
+{"number": 12, "source_id": "GD2020-XJ-Q042", "source_desc": "2020年广东省考县级卷第42题", "edits": [], "stem_fill": null}
+{"number": 13, "source_id": "GD2019-XJ-Q038", "source_desc": "2019年广东省考县级卷第38题", "edits": [], "stem_fill": null}
+{"number": 14, "source_id": "GDXD2019-SW-Q073", "source_desc": "2019年广东选调生考试第73题", "edits": [], "stem_fill": null}
+{"number": 15, "source_id": "GDXD2019-SW-Q075", "source_desc": "2019年广东选调生考试第75题", "edits": [], "stem_fill": null}
+{"number": 16, "source_id": "SYDW2022-Q073", "source_desc": "2022年广东事业单位统考第73题", "edits": [{"where": "stem", "old": "平行图形", "new": "平面图形", "reason": "原卷错字，展开图是平面图形"}], "stem_fill": null}
+{"number": 17, "source_id": "GD2016-XJ-Q056", "source_desc": "2016年广东省考县级卷第56题", "edits": [], "stem_fill": "从所给的四个选项中，选择最合适的一个填在问号处，使之呈现一定的规律性（）。"}
+{"number": 18, "source_id": "SYDW2025-Q075", "source_desc": "2025年广东事业单位统考第75题", "edits": [], "stem_fill": null}
+{"number": 19, "source_id": "SYDW2026-Q074", "source_desc": "2026年广东事业单位统考第74题", "edits": [], "stem_fill": null}
+{"number": 20, "source_id": "SYDW2025-Q073", "source_desc": "2025年广东事业单位统考第73题", "edits": [], "stem_fill": null}
+{"number": 21, "source_id": "GD2019-XJ-Q037", "source_desc": "2019年广东省考县级卷第37题", "edits": [], "stem_fill": null}
+{"number": 22, "source_id": "GDXD2019-SW-Q080", "source_desc": "2019年广东选调生考试第80题", "edits": [], "stem_fill": null}
+{"number": 23, "source_id": "GDXD2020-SW-Q070", "source_desc": "2020年广东选调生考试第70题", "edits": [], "stem_fill": null}
+{"number": 24, "source_id": "GD2023-XZ-Q073", "source_desc": "2023年广东省考乡镇卷第73题", "edits": [], "stem_fill": null}
+{"number": 25, "source_id": "GD2017-Q064", "source_desc": "2017年广东省考第64题", "edits": [], "stem_fill": null}
+{"number": 26, "source_id": "GD2021-XZ-Q071", "source_desc": "2021年广东省考乡镇卷第71题", "edits": [], "stem_fill": null}
+{"number": 27, "source_id": "GD2020-XZ-Q073", "source_desc": "2020年广东省考乡镇卷第73题", "edits": [], "stem_fill": null}
+{"number": 28, "source_id": "GD2022-XJ-Q085", "source_desc": "2022年广东省考县级卷第85题", "edits": [], "stem_fill": null}
+{"number": 29, "source_id": "GD2021-XZ-Q067", "source_desc": "2021年广东省考乡镇卷第67题", "edits": [], "stem_fill": null}
+{"number": 30, "source_id": "GDXD2019-XC-Q060", "source_desc": "2019年广东选调生考试第60题", "edits": [{"where": "D", "old": "三烧杯", "new": "三个烧杯", "reason": "漏“个”字。"}], "stem_fill": null}
+{"number": 31, "source_id": "GD2022-XJ-Q076", "source_desc": "2022年广东省考县级卷第76题", "edits": [], "stem_fill": null}
+{"number": 32, "source_id": "GD2019-XJ-Q065", "source_desc": "2019年广东省考县级卷第65题", "edits": [], "stem_fill": null}
+{"number": 33, "source_id": "GDXD2019-XC-Q061", "source_desc": "2019年广东选调生考试第61题", "edits": [], "stem_fill": null}
+{"number": 34, "source_id": "GD2020-XJ-Q085", "source_desc": "2020年广东省考县级卷第85题", "edits": [], "stem_fill": null}
+{"number": 35, "source_id": "GD2018-Q070", "source_desc": "2018年广东省考第70题", "edits": [], "stem_fill": null}
+{"number": 36, "source_id": "GD2020-XJ-Q076", "source_desc": "2020年广东省考县级卷第76题", "edits": [], "stem_fill": null}
+{"number": 37, "source_id": "GDXD2019-XC-Q064", "source_desc": "2019年广东选调生考试第64题", "edits": [], "stem_fill": null}

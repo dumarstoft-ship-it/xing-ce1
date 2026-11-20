@@ -29,6 +29,9 @@ PATTERN_ORDER = {
     "科推": ["力学", "电学", "光热声", "化学", "生物", "地理"],
 }
 LEVEL = {"易": 0, "中": 1, "难": 2}
+CARD_ORDER = {"科推": ["受力", "摩擦", "惯性", "浮力", "杠杆", "速度", "圆周", "能", "动量",
+                     "静电", "电路", "家庭电路", "光", "热", "声", "能量"],
+              "图推": ["顺序循环", "平移", "旋转", "相对位置", "叠加", "黑白", "遍历"]}
 FRAC = re.compile(r"(?<![\d.$])(\d+)/(\d+)(?![\d.])")
 CN = "一二三四五六七八九十"
 
@@ -102,20 +105,32 @@ def plan():
         ids.sort(key=lambda i: (LEVEL.get(recs[i].get("difficulty"), 1), recs[i].get("est_seconds") or 0, i))
         blocks[part].append({"part": part, "card": title, "pattern": c.get("pattern") or r0.get("pattern"),
                              "subpattern": c.get("subpattern"), "ids": ids})
+    file_pos = {c["title"]: k for k, c in enumerate(cs)}
+
+    def card_rank(b):
+        # 同一规律内：力学按先受力、后运动和能量的顺序教；其余按方法卡文件里的顺序
+        kw = CARD_ORDER.get(b["part"], [])
+        k = next((j for j, w in enumerate(kw) if w in b["card"]), len(kw))
+        return (pattern_rank(b["part"], b["pattern"]), k, file_pos.get(b["card"], 999))
     for part in PART_ORDER:
-        blocks[part].sort(key=lambda b: (pattern_rank(part, b["pattern"]), b["card"]))
+        blocks[part].sort(key=card_rank)
     # 每部分按题数切成5段（尽量不拆卡；拆开的卡次日重印方法要点并注“续”）
     days = [{"day": d, "date": dt, "blocks": []} for d, dt in DAYS]
     for part in PART_ORDER:
         flat = [(b, i) for b in blocks[part] for i in b["ids"]]
         n = len(flat)
         cuts = [round(n * k / len(DAYS)) for k in range(len(DAYS) + 1)]
-        # 切点挪到最近的卡边界（前后各挪不超过2题）
-        bounds = {k for k in range(n + 1) if k == 0 or k == n or flat[k][0] is not flat[k - 1][0]}
+        # 各天题数要匀；只在切开后某一边只剩1题时挪1题，免得为1题重印整张方法要点
         for j in range(1, len(cuts) - 1):
-            near = [b for b in bounds if abs(b - cuts[j]) <= 2 and cuts[j - 1] < b < cuts[j + 1]]
-            if near:
-                cuts[j] = min(near, key=lambda b: abs(b - cuts[j]))
+            c = cuts[j]
+            if 0 < c < n and flat[c][0] is flat[c - 1][0]:
+                b = flat[c][0]
+                left = sum(1 for x, _ in flat[:c] if x is b)
+                right = len(b["ids"]) - left
+                if left == 1 and cuts[j - 1] < c - 1:
+                    cuts[j] = c - 1
+                elif right == 1 and c + 1 < cuts[j + 1]:
+                    cuts[j] = c + 1
         for d in range(len(DAYS)):
             seg = flat[cuts[d]:cuts[d + 1]]
             cur = None

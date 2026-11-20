@@ -1606,7 +1606,8 @@ def main() -> None:
         shutil.copy(HERE / "exam.css", tdp / "exam.css")
         if args.flow:   # 专项练习本：各部分接着排，不另起页
             with open(tdp / "exam.css", "a", encoding="utf-8") as fcss:
-                fcss.write("\n.part { break-before: auto; margin-top: 20pt; }\n.part:first-child { margin-top: 0; }\n")
+                fcss.write("\n.part { break-before: auto; margin-top: 20pt; }\n.part:first-child { margin-top: 0; }\n"
+                           ".instr, .part-title { break-inside: avoid; }\n")   # 部分标题、说明不拆在两页
         body = body_html(args.paper_id, questions, "exam.css", "fonts.css", log)
         (tdp / "body.html").write_text(body, encoding="utf-8")
         n_parts = body.count('<section class="part">')

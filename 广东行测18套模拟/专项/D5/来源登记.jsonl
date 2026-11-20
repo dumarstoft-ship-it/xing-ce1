@@ -1,0 +1,37 @@
+{"number": 1, "source_id": "GDXD2020-SW-Q086", "source_desc": "2020年广东选调生考试第86题", "edits": [], "stem_fill": null}
+{"number": 2, "source_id": "GD2013-3-Q005", "source_desc": "2013年广东省考三卷第5题", "edits": [], "stem_fill": null}
+{"number": 3, "source_id": "GD2021-XZ-Q034", "source_desc": "2021年广东省考乡镇卷第34题", "edits": [], "stem_fill": null}
+{"number": 4, "source_id": "SYDW2026-Q055", "source_desc": "2026年广东事业单位统考第55题", "edits": [], "stem_fill": null}
+{"number": 5, "source_id": "SYDW2022-Q053", "source_desc": "2022年广东事业单位统考第53题", "edits": [], "stem_fill": null}
+{"number": 6, "source_id": "GDXD2019-SW-Q070", "source_desc": "2019年广东选调生考试第70题", "edits": [], "stem_fill": null}
+{"number": 7, "source_id": "SYDW2026-Q075", "source_desc": "2026年广东事业单位统考第75题", "edits": [], "stem_fill": null}
+{"number": 8, "source_id": "GD2014-XJ-Q063", "source_desc": "2014年广东省考县级卷第63题", "edits": [], "stem_fill": null}
+{"number": 9, "source_id": "GD2019-XJ-Q034", "source_desc": "2019年广东省考县级卷第34题", "edits": [], "stem_fill": null}
+{"number": 10, "source_id": "GD2021-XZ-Q052", "source_desc": "2021年广东省考乡镇卷第52题", "edits": [], "stem_fill": null}
+{"number": 11, "source_id": "GD2019-XZ-Q029", "source_desc": "2019年广东省考乡镇卷第29题", "edits": [], "stem_fill": null}
+{"number": 12, "source_id": "SYDW2025-Q074", "source_desc": "2025年广东事业单位统考第74题", "edits": [], "stem_fill": null}
+{"number": 13, "source_id": "GDXD2019-SW-Q077", "source_desc": "2019年广东选调生考试第77题", "edits": [], "stem_fill": null}
+{"number": 14, "source_id": "GDXD2019-SW-Q079", "source_desc": "2019年广东选调生考试第79题", "edits": [], "stem_fill": null}
+{"number": 15, "source_id": "SYDW2023-Q075", "source_desc": "2023年广东事业单位统考第75题", "edits": [], "stem_fill": null}
+{"number": 16, "source_id": "GD2021-XZ-Q051", "source_desc": "2021年广东省考乡镇卷第51题", "edits": [], "stem_fill": null}
+{"number": 17, "source_id": "SYDW2022-Q072", "source_desc": "2022年广东事业单位统考第72题", "edits": [], "stem_fill": null}
+{"number": 18, "source_id": "GDXD2019-SW-Q076", "source_desc": "2019年广东选调生考试第76题", "edits": [], "stem_fill": null}
+{"number": 19, "source_id": "GDXD2020-SW-Q069", "source_desc": "2020年广东选调生考试第69题", "edits": [], "stem_fill": null}
+{"number": 20, "source_id": "GD2019-XZ-Q035", "source_desc": "2019年广东省考乡镇卷第35题", "edits": [], "stem_fill": null}
+{"number": 21, "source_id": "SYDW2022-Q075", "source_desc": "2022年广东事业单位统考第75题", "edits": [{"where": "stem", "old": "绕柱腰旋转", "new": "绕柱子旋转", "reason": "“柱腰”不通，指三棱柱绕穿过它的柱子旋转"}], "stem_fill": null}
+{"number": 22, "source_id": "SYDW2026-Q072", "source_desc": "2026年广东事业单位统考第72题", "edits": [], "stem_fill": null}
+{"number": 23, "source_id": "GD2020-XZ-Q051", "source_desc": "2020年广东省考乡镇卷第51题", "edits": [], "stem_fill": null}
+{"number": 24, "source_id": "GDXD2020-ZH-Q076", "source_desc": "2020年广东选调生考试第76题", "edits": [], "stem_fill": null}
+{"number": 25, "source_id": "GD2018-Q062", "source_desc": "2018年广东省考第62题", "edits": [], "stem_fill": null}
+{"number": 26, "source_id": "GD2023-XZ-Q078", "source_desc": "2023年广东省考乡镇卷第78题", "edits": [], "stem_fill": null}
+{"number": 27, "source_id": "GD2017-Q062", "source_desc": "2017年广东省考第62题", "edits": [], "stem_fill": null}
+{"number": 28, "source_id": "GD2022-XJ-Q079", "source_desc": "2022年广东省考县级卷第79题", "edits": [], "stem_fill": null}
+{"number": 29, "source_id": "GDXD2020-ZH-Q085", "source_desc": "2020年广东选调生考试第85题", "edits": [], "stem_fill": null}
+{"number": 30, "source_id": "GD2021-XZ-Q069", "source_desc": "2021年广东省考乡镇卷第69题", "edits": [{"where": "stem", "old": "数量（a）", "new": "数量（n）", "reason": "题图纵轴标为n，题干的数量记号应与图一致（原卷题干与图不一致）。"}], "stem_fill": null}
+{"number": 31, "source_id": "GD2021-XZ-Q082", "source_desc": "2021年广东省考乡镇卷第82题", "edits": [], "stem_fill": null}
+{"number": 32, "source_id": "GD2019-XZ-Q047", "source_desc": "2019年广东省考乡镇卷第47题", "edits": [{"where": "D", "old": "震动", "new": "振动", "reason": "鼓膜的往复运动在物理上称“振动”，“震动”用词不当（原卷如此）。"}], "stem_fill": null}
+{"number": 33, "source_id": "GD2023-XJ-Q082", "source_desc": "2023年广东省考县级卷第82题", "edits": [], "stem_fill": null}
+{"number": 34, "source_id": "GD2020-XZ-Q067", "source_desc": "2020年广东省考乡镇卷第67题", "edits": [{"where": "stem", "old": "最不可能观察到的现象是", "new": "最不可能观察到的现象是（）。", "reason": "题干末尾缺少答题括号和句号，补齐与其他题统一。"}], "stem_fill": null}
+{"number": 35, "source_id": "GD2020-XJ-Q077", "source_desc": "2020年广东省考县级卷第77题", "edits": [], "stem_fill": null}
+{"number": 36, "source_id": "GD2023-XJ-Q085", "source_desc": "2023年广东省考县级卷第85题", "edits": [], "stem_fill": null}
+{"number": 37, "source_id": "GD2020-XZ-Q071", "source_desc": "2020年广东省考乡镇卷第71题", "edits": [], "stem_fill": null}

@@ -1227,7 +1227,7 @@
   "type": "力学",
   "difficulty": "中",
   "issues": [],
-  "excluded": null
+  "excluded": "科推：③“快速移动时突然向右倒下”不成立（拉力过重心，能否翻倒只看摩擦系数），四个选项都含③（专项解题人）"
  },
  {
   "id": "GDXD2020-ZH-Q078",
@@ -3307,7 +3307,7 @@
   "form": "分组",
   "difficulty": "难",
   "issues": [],
-  "excluded": null
+  "excluded": "图推：来源规律下C的下方图形并不对称；“每组只有一幅含曲线”也成立、指向A（专项解题人）"
  },
  {
   "id": "GDXD2020-SW-Q063",
@@ -3350,7 +3350,7 @@
   "issues": [
    "题干末尾没有“（ ）”（原卷）"
   ],
-  "excluded": null
+  "excluded": "图推：题图底部带题干文字残边"
  },
  {
   "id": "GDXD2020-SW-Q066",

@@ -799,7 +799,7 @@
   "form": "分组",
   "difficulty": "难",
   "issues": [],
-  "excluded": null
+  "excluded": "图推：来源按封闭区域数取C，但题干五图都能一笔画、只有C不能，按一笔画指向D（专项解题人）"
  },
  {
   "id": "GD2013-1-Q076",
