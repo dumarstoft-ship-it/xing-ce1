@@ -84,6 +84,7 @@ def main():
     skip = sorted(int(n) for n in plan.get("skip") or [])
     extra = set(range(1, 16)) <= set(skip)    # 加量套（S01起）：不出第1—15题
     n_sydw = sum(1 for v in (plan.get("sources") or {}).values() if v.startswith("SYDW"))
+    n_gdxd = sum(1 for v in (plan.get("sources") or {}).values() if v.startswith("GDXD"))   # 2019、2020年广东选调生考试卷（M11起）
     vf = R / "言语" / f"selection_{p}.json"
     v_sydw = vf.exists() and any(x["id"].startswith("SYDW") for x in json.loads(vf.read_text(encoding="utf-8")).get(p, []))
     qs = [json.loads(l) for l in (d / "题目.jsonl").read_text(encoding="utf-8").splitlines() if l.strip()]
@@ -92,14 +93,18 @@ def main():
     n_second = len(json.loads(second.read_text(encoding="utf-8"))) if second.exists() else 0
     extras = R / p / "复核" / "second_extras.json"     # 换入题、改写题、编辑新写的题的第二人盲做（M06起）
     n_extras = len(json.loads(extras.read_text(encoding="utf-8"))) if extras.exists() else 0
+    squant = R / p / "复核" / "second_quant.json"     # 解题人此前看过答案页的题另由一人盲做（M11起）
+    n_squant = len(json.loads(squant.read_text(encoding="utf-8"))) if squant.exists() else 0
     if extra:
         intro = ("加量套：2026-11-26至12-02每天的第二场，用事业编和省考旧卷剩下的题编（见[重编说明](../重编/README.md)“M09起怎么编”）。"
-                 "只出第16—90题，题号照真题位置，不出政治理论、常识判断；第31—90题以2022—2026年广东事业单位统考题为主，配广东省考旧卷里较易的题，"
+                 "只出第16—90题，题号照真题位置，不出政治理论、常识判断；第31—90题以2022—2026年广东事业单位统考题为主，配广东省考旧卷"
+                 + ("和选调生考试卷" if n_gdxd else "") + "里较易的题，"
                  "题型照2024—2026年真题分布，难度略低于主套，解析写得简短。建议限时75分钟（主套90分钟里约10分钟用在第1—15题），"
                  "到点没做完就换一支颜色的笔做完。")
     elif real:
         intro = ("2026-11-19起用广东省考旧卷编（见[重编说明](../重编/README.md)“给后面各套的提示”）。"
                  "第31—90题逐题选自广东省考旧卷"
+                 + (f"和2019、2020年广东选调生考试卷（{n_gdxd}题）" if n_gdxd else "")
                  + (f"（旧卷用完的题型取广东事业单位统考题，共{n_sydw}题）" if n_sydw else "")
                  + "，都不在用户练过的24天集训第1、2天和习题本图推里；"
                  "各部分题型按2024—2026年真题的分布挑，数量、资料按[难度对照](../难度对照/README.md)的标准控制多步题。"
@@ -130,9 +135,11 @@ def main():
         "## 答案是怎么核的",
         "",
         ("- **第31—90题**：用真题的来源答案（答案解析PDF）。每题先由一人不看答案独立解出并写解析，数量和资料用程序核算、能枚举的枚举，"
-         "写完再与来源答案对照" + ("；" if n_second or n_extras else "。")
-         + (f"判断推理和科学推理另由第二人只看题面独立再做（{n_second}题），三方对照。" if n_second else "")
-         + (f"换入的题另由第二人只看题面盲做（{n_extras}题），与来源答案一致。" if n_extras else "") if real else
+         "写完再与来源答案对照" + ("；" if n_second or n_extras or n_squant else "。")
+         + ((f"部分题另由第二人只看题面独立再做（{n_second}题），三方对照。" if extra else
+             f"判断推理和科学推理另由第二人只看题面独立再做（{n_second}题），三方对照。") if n_second else "")
+         + (f"换入的题另由第二人只看题面盲做（{n_extras}题），与来源答案一致。" if n_extras else "")
+         + (f"解题人此前核对别的套时看过答案页的题，另由一人只看题面独立再做（{n_squant}题），与来源答案一致。" if n_squant else "") if real else
          "- **第31—90题**：模考题库没有答案，每题由一人独立解出并写解析，数量和资料用程序核算、能枚举的枚举；"
          f"判断推理和科学推理另由第二人只看题面独立再做{('（' + str(n_second) + '题）') if n_second else ''}，两遍对照。"
          "换入的江浙真题用来源答案并复算。"
