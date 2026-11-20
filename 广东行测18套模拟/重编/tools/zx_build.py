@@ -29,6 +29,7 @@ PATTERN_ORDER = {
     "科推": ["力学", "电学", "光热声", "化学", "生物", "地理"],
 }
 LEVEL = {"易": 0, "中": 1, "难": 2}
+FRAC = re.compile(r"(?<![\d.$])(\d+)/(\d+)(?![\d.])")
 CN = "一二三四五六七八九十"
 
 
@@ -207,6 +208,10 @@ def build(only=None):
                         rec["options_mode"] = "in_figure"
                         rec["options"] = {x: [{"type": "text", "text": f"见题图中的 {x} 选项"}] for x in rec["options"]}
                     apply_record_edits(rec, r, n)
+                    if part == "数推":   # 数列里的分数原卷都是上下排的，题库转写成斜线；按原卷排成分数
+                        for blk in rec["stem"] + [x for v in rec["options"].values() for x in v]:
+                            if blk["type"] == "text":
+                                blk["text"] = FRAC.sub(r"$\\frac{\1}{\2}$", blk["text"])
                     if k == 0:
                         rec["block"] = {"title": title, "points": c.get("points") or []}
                     qs.append(rec)
