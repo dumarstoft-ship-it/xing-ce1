@@ -1,0 +1,788 @@
+[
+ {
+  "id": "GD2013-3-Q005",
+  "number": 1,
+  "section": "数量关系",
+  "pool_type": "其他",
+  "stem": "24，35，55，57，（    ）",
+  "options": [
+   {
+    "label": "A",
+    "text": "64"
+   },
+   {
+    "label": "B",
+    "text": "68"
+   },
+   {
+    "label": "C",
+    "text": "75"
+   },
+   {
+    "label": "D",
+    "text": "79"
+   }
+  ],
+  "figures": []
+ },
+ {
+  "id": "GDXD2019-SW-Q070",
+  "number": 2,
+  "section": "数量关系",
+  "pool_type": "其他",
+  "stem": "0.02，3.13，8.24，5.35，4.46，（    ）",
+  "options": [
+   {
+    "label": "A",
+    "text": "5.57"
+   },
+   {
+    "label": "B",
+    "text": "5.68"
+   },
+   {
+    "label": "C",
+    "text": "6.57"
+   },
+   {
+    "label": "D",
+    "text": "6.68"
+   }
+  ],
+  "figures": []
+ },
+ {
+  "id": "GDXD2020-SW-Q086",
+  "number": 3,
+  "section": "数量关系",
+  "pool_type": "其他",
+  "stem": "0.02，3.13，8.24，15.35，24.46，35.57，48.68，（    ）",
+  "options": [
+   {
+    "label": "A",
+    "text": "63.79"
+   },
+   {
+    "label": "B",
+    "text": "73.89"
+   },
+   {
+    "label": "C",
+    "text": "66.79"
+   },
+   {
+    "label": "D",
+    "text": "76.89"
+   }
+  ],
+  "figures": []
+ },
+ {
+  "id": "GD2014-XJ-Q044",
+  "number": 4,
+  "section": "数量关系",
+  "pool_type": "分数数列",
+  "stem": "1，27/15，2.6，51/15，（    ）",
+  "options": [
+   {
+    "label": "A",
+    "text": "21/15"
+   },
+   {
+    "label": "B",
+    "text": "21/5"
+   },
+   {
+    "label": "C",
+    "text": "5.2"
+   },
+   {
+    "label": "D",
+    "text": "6.2"
+   }
+  ],
+  "figures": []
+ },
+ {
+  "id": "GD2015-XJ-Q024",
+  "number": 5,
+  "section": "数量关系",
+  "pool_type": "分数数列",
+  "stem": "2/5、3/10、7/30、23/210、（    ）",
+  "options": [
+   {
+    "label": "A",
+    "text": "31/967"
+   },
+   {
+    "label": "B",
+    "text": "35/1208"
+   },
+   {
+    "label": "C",
+    "text": "159/2282"
+   },
+   {
+    "label": "D",
+    "text": "187/4830"
+   }
+  ],
+  "figures": []
+ },
+ {
+  "id": "SYDW2026-Q054",
+  "number": 6,
+  "section": "数量关系",
+  "pool_type": "分数数列",
+  "stem": "21/16，27/22，39/34，63/58，（    ）",
+  "options": [
+   {
+    "label": "A",
+    "text": "113/105，"
+   },
+   {
+    "label": "B",
+    "text": "111/106"
+   },
+   {
+    "label": "C",
+    "text": "112/107"
+   },
+   {
+    "label": "D",
+    "text": "110/108"
+   }
+  ],
+  "figures": []
+ },
+ {
+  "id": "GD2014-XZ-Q060",
+  "number": 7,
+  "section": "数量关系",
+  "pool_type": "图形数阵",
+  "stem": "（见题图）",
+  "options": [
+   {
+    "label": "A",
+    "text": "10"
+   },
+   {
+    "label": "B",
+    "text": "9"
+   },
+   {
+    "label": "C",
+    "text": "8"
+   },
+   {
+    "label": "D",
+    "text": "7"
+   }
+  ],
+  "figures": [
+   {
+    "path": "/home/user/xing-ce1/广东/行测/2013-2021/assets/GD2014-XZ/GD2014-XZ-p06-i01.png",
+    "role": "question",
+    "transcription": "题图数字方阵（按原图行列）\n\n| 第1列 | 第2列 | 第3列 |\n| --- | --- | --- |\n| 2 | 27 | 5 |\n| 21 | 512 | 22 |\n| 9 | 125 | （ ） |"
+   }
+  ]
+ },
+ {
+  "id": "GD2013-1-Q002",
+  "number": 8,
+  "section": "数量关系",
+  "pool_type": "多级差",
+  "stem": "6，14，22，（    ），38，46",
+  "options": [
+   {
+    "label": "A",
+    "text": "30"
+   },
+   {
+    "label": "B",
+    "text": "32"
+   },
+   {
+    "label": "C",
+    "text": "34"
+   },
+   {
+    "label": "D",
+    "text": "36"
+   }
+  ],
+  "figures": []
+ },
+ {
+  "id": "GD2014-XJ-Q041",
+  "number": 9,
+  "section": "数量关系",
+  "pool_type": "多级差",
+  "stem": "2187，729，243，81，27，（    ）",
+  "options": [
+   {
+    "label": "A",
+    "text": "3"
+   },
+   {
+    "label": "B",
+    "text": "6"
+   },
+   {
+    "label": "C",
+    "text": "9"
+   },
+   {
+    "label": "D",
+    "text": "12"
+   }
+  ],
+  "figures": []
+ },
+ {
+  "id": "GD2014-XZ-Q057",
+  "number": 10,
+  "section": "数量关系",
+  "pool_type": "多级差",
+  "stem": "4，12，36，108，（    ）",
+  "options": [
+   {
+    "label": "A",
+    "text": "223"
+   },
+   {
+    "label": "B",
+    "text": "257"
+   },
+   {
+    "label": "C",
+    "text": "315"
+   },
+   {
+    "label": "D",
+    "text": "324"
+   }
+  ],
+  "figures": []
+ },
+ {
+  "id": "GD2016-XZ-Q017",
+  "number": 11,
+  "section": "数量关系",
+  "pool_type": "多级差",
+  "stem": "13 26 39 52（    ）",
+  "options": [
+   {
+    "label": "A",
+    "text": "55"
+   },
+   {
+    "label": "B",
+    "text": "65"
+   },
+   {
+    "label": "C",
+    "text": "75"
+   },
+   {
+    "label": "D",
+    "text": "85"
+   }
+  ],
+  "figures": []
+ },
+ {
+  "id": "GD2017-Q016",
+  "number": 12,
+  "section": "数量关系",
+  "pool_type": "多级差",
+  "stem": "7 14 28 56（    ）",
+  "options": [
+   {
+    "label": "A",
+    "text": "110"
+   },
+   {
+    "label": "B",
+    "text": "112"
+   },
+   {
+    "label": "C",
+    "text": "114"
+   },
+   {
+    "label": "D",
+    "text": "119"
+   }
+  ],
+  "figures": []
+ },
+ {
+  "id": "GD2018-Q016",
+  "number": 13,
+  "section": "数量关系",
+  "pool_type": "多级差",
+  "stem": "31 29 28 26 25 23（    ）",
+  "options": [
+   {
+    "label": "A",
+    "text": "22"
+   },
+   {
+    "label": "B",
+    "text": "24"
+   },
+   {
+    "label": "C",
+    "text": "35"
+   },
+   {
+    "label": "D",
+    "text": "38"
+   }
+  ],
+  "figures": []
+ },
+ {
+  "id": "GD2019-XJ-Q018",
+  "number": 14,
+  "section": "数量关系",
+  "pool_type": "多级差",
+  "stem": "24 32 41 51 62（    ）",
+  "options": [
+   {
+    "label": "A",
+    "text": "72"
+   },
+   {
+    "label": "B",
+    "text": "74"
+   },
+   {
+    "label": "C",
+    "text": "76"
+   },
+   {
+    "label": "D",
+    "text": "78"
+   }
+  ],
+  "figures": []
+ },
+ {
+  "id": "GD2019-XZ-Q012",
+  "number": 15,
+  "section": "数量关系",
+  "pool_type": "多级差",
+  "stem": "5 9 17 33（    ）",
+  "options": [
+   {
+    "label": "A",
+    "text": "35"
+   },
+   {
+    "label": "B",
+    "text": "45"
+   },
+   {
+    "label": "C",
+    "text": "65"
+   },
+   {
+    "label": "D",
+    "text": "85"
+   }
+  ],
+  "figures": []
+ },
+ {
+  "id": "GDXD2019-SW-Q061",
+  "number": 16,
+  "section": "数量关系",
+  "pool_type": "多级差",
+  "stem": "34，32，28，22，14，（    ）",
+  "options": [
+   {
+    "label": "A",
+    "text": "3"
+   },
+   {
+    "label": "B",
+    "text": "4"
+   },
+   {
+    "label": "C",
+    "text": "8"
+   },
+   {
+    "label": "D",
+    "text": "12"
+   }
+  ],
+  "figures": []
+ },
+ {
+  "id": "GDXD2019-SW-Q065",
+  "number": 17,
+  "section": "数量关系",
+  "pool_type": "多级差",
+  "stem": "5，10，17，26，（    ）",
+  "options": [
+   {
+    "label": "A",
+    "text": "30"
+   },
+   {
+    "label": "B",
+    "text": "32"
+   },
+   {
+    "label": "C",
+    "text": "36"
+   },
+   {
+    "label": "D",
+    "text": "37"
+   }
+  ],
+  "figures": []
+ },
+ {
+  "id": "GDXD2020-SW-Q081",
+  "number": 18,
+  "section": "数量关系",
+  "pool_type": "多级差",
+  "stem": "3，4，6，10，18，（    ）",
+  "options": [
+   {
+    "label": "A",
+    "text": "28"
+   },
+   {
+    "label": "B",
+    "text": "32"
+   },
+   {
+    "label": "C",
+    "text": "34"
+   },
+   {
+    "label": "D",
+    "text": "40"
+   }
+  ],
+  "figures": []
+ },
+ {
+  "id": "SYDW2022-Q051",
+  "number": 19,
+  "section": "数量关系",
+  "pool_type": "多级差",
+  "stem": "18，30，（    ），54，66",
+  "options": [
+   {
+    "label": "A",
+    "text": "39"
+   },
+   {
+    "label": "B",
+    "text": "42"
+   },
+   {
+    "label": "C",
+    "text": "45"
+   },
+   {
+    "label": "D",
+    "text": "48"
+   }
+  ],
+  "figures": []
+ },
+ {
+  "id": "SYDW2023-Q053",
+  "number": 20,
+  "section": "数量关系",
+  "pool_type": "多级差",
+  "stem": "1，9，25，57，（    ）。",
+  "options": [
+   {
+    "label": "A",
+    "text": "121"
+   },
+   {
+    "label": "B",
+    "text": "122"
+   },
+   {
+    "label": "C",
+    "text": "123"
+   },
+   {
+    "label": "D",
+    "text": "124"
+   }
+  ],
+  "figures": []
+ },
+ {
+  "id": "SYDW2025-Q051",
+  "number": 21,
+  "section": "数量关系",
+  "pool_type": "多级差",
+  "stem": "6，9，18，33，54，（    ）",
+  "options": [
+   {
+    "label": "A",
+    "text": "68"
+   },
+   {
+    "label": "B",
+    "text": "72"
+   },
+   {
+    "label": "C",
+    "text": "81"
+   },
+   {
+    "label": "D",
+    "text": "96"
+   }
+  ],
+  "figures": []
+ },
+ {
+  "id": "GD2015-XZ-Q023",
+  "number": 22,
+  "section": "数量关系",
+  "pool_type": "多重数列",
+  "stem": "11、22、13、26、15、30、17、（    ）",
+  "options": [
+   {
+    "label": "A",
+    "text": "32"
+   },
+   {
+    "label": "B",
+    "text": "34"
+   },
+   {
+    "label": "C",
+    "text": "36"
+   },
+   {
+    "label": "D",
+    "text": "38"
+   }
+  ],
+  "figures": []
+ },
+ {
+  "id": "GD2016-XJ-Q037",
+  "number": 23,
+  "section": "数量关系",
+  "pool_type": "多重数列",
+  "stem": "8,14,16,21,24,28（    ）",
+  "options": [
+   {
+    "label": "A",
+    "text": "35"
+   },
+   {
+    "label": "B",
+    "text": "34"
+   },
+   {
+    "label": "C",
+    "text": "33"
+   },
+   {
+    "label": "D",
+    "text": "32"
+   }
+  ],
+  "figures": []
+ },
+ {
+  "id": "GD2021-XZ-Q034",
+  "number": 24,
+  "section": "数量关系",
+  "pool_type": "多重数列",
+  "stem": "389，569，479，587，299，（    ）",
+  "options": [
+   {
+    "label": "A",
+    "text": "845"
+   },
+   {
+    "label": "B",
+    "text": "787"
+   },
+   {
+    "label": "C",
+    "text": "673"
+   },
+   {
+    "label": "D",
+    "text": "668"
+   }
+  ],
+  "figures": []
+ },
+ {
+  "id": "GD2023-XZ-Q031",
+  "number": 25,
+  "section": "数量关系",
+  "pool_type": "多重数列",
+  "stem": "11，-13，15，-17，19，（）",
+  "options": [
+   {
+    "label": "A",
+    "text": "-21"
+   },
+   {
+    "label": "B",
+    "text": "-22"
+   },
+   {
+    "label": "C",
+    "text": "21"
+   },
+   {
+    "label": "D",
+    "text": "22"
+   }
+  ],
+  "figures": []
+ },
+ {
+  "id": "SYDW2022-Q053",
+  "number": 26,
+  "section": "数量关系",
+  "pool_type": "多重数列",
+  "stem": "12，22，24，28，（    ）",
+  "options": [
+   {
+    "label": "A",
+    "text": "46"
+   },
+   {
+    "label": "B",
+    "text": "47"
+   },
+   {
+    "label": "C",
+    "text": "48"
+   },
+   {
+    "label": "D",
+    "text": "49"
+   }
+  ],
+  "figures": []
+ },
+ {
+  "id": "SYDW2026-Q051",
+  "number": 27,
+  "section": "数量关系",
+  "pool_type": "多重数列",
+  "stem": "12，10，13，11，14，12，（    ）",
+  "options": [
+   {
+    "label": "A",
+    "text": "13"
+   },
+   {
+    "label": "B",
+    "text": "14"
+   },
+   {
+    "label": "C",
+    "text": "15"
+   },
+   {
+    "label": "D",
+    "text": "16"
+   }
+  ],
+  "figures": []
+ },
+ {
+  "id": "SYDW2026-Q055",
+  "number": 28,
+  "section": "数量关系",
+  "pool_type": "多重数列",
+  "stem": "3.8，5.24，2.3，6.35，（    ）",
+  "options": [
+   {
+    "label": "A",
+    "text": "9.80"
+   },
+   {
+    "label": "B",
+    "text": "8.21"
+   },
+   {
+    "label": "C",
+    "text": "7.45"
+   },
+   {
+    "label": "D",
+    "text": "4.11"
+   }
+  ],
+  "figures": []
+ },
+ {
+  "id": "GDXD2019-SW-Q068",
+  "number": 29,
+  "section": "数量关系",
+  "pool_type": "递推",
+  "stem": "5，8，13，21，34，（    ）",
+  "options": [
+   {
+    "label": "A",
+    "text": "43"
+   },
+   {
+    "label": "B",
+    "text": "48"
+   },
+   {
+    "label": "C",
+    "text": "50"
+   },
+   {
+    "label": "D",
+    "text": "55"
+   }
+  ],
+  "figures": []
+ },
+ {
+  "id": "SYDW2025-Q053",
+  "number": 30,
+  "section": "数量关系",
+  "pool_type": "递推",
+  "stem": "0，32，16，-24，-28，10，（    ）",
+  "options": [
+   {
+    "label": "A",
+    "text": "12"
+   },
+   {
+    "label": "B",
+    "text": "20"
+   },
+   {
+    "label": "C",
+    "text": "33"
+   },
+   {
+    "label": "D",
+    "text": "48"
+   }
+  ],
+  "figures": []
+ }
+]

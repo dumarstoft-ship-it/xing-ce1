@@ -175,7 +175,7 @@ def check_glyphs(questions: list[dict], fonts: dict[str, Path], log: "Log") -> N
             for x in v:
                 walk(x, n)
     for q in questions:
-        walk({"s": q["stem"], "o": q["options"], "m": q.get("materials") or []}, q["number"])
+        walk({"s": q["stem"], "o": q["options"], "m": q.get("materials") or [], "b": q.get("block") or {}}, q["number"])
     lacking = {ch: ns for ch, ns in used.items() if ord(ch) not in song and ord(ch) not in latin}
     missing = {ch: ns for ch, ns in lacking.items() if ord(ch) not in ext}
     if missing:
@@ -996,6 +996,13 @@ def question_html(q: dict, sizer: FigureSizer, log: Log) -> str:
     return out
 
 
+def block_html(block: dict, number, log: Log) -> str:
+    """专项的方法要点框：标题一行（黑体），要点逐条（宋体）。"""
+    head = f'<p class="tips-h">方法要点｜{html.escape(block["title"])}</p>'
+    pts = "".join(f"<p>{inline_html(norm_text(t, number, '方法要点', log))}</p>" for t in block.get("points") or [])
+    return f'<div class="tips">{head}{pts}</div>'
+
+
 def _estimated_lines(q: dict) -> float:
     """估算题目所占行数（每行36字）。含图或表的题不算短题。"""
     import math
@@ -1183,6 +1190,8 @@ def body_html(paper_id: str, questions: list[dict], css_href: str, fonts_href: s
                 if m["id"] not in seen_materials:
                     seen_materials.add(m["id"])
                     out.append(material_html(m, log, q["number"]))
+            if q.get("block"):      # 专项：每类题前印方法要点
+                out.append(block_html(q["block"], q["number"], log))
             out.append(question_html(q, sizer, log))
         if pi + 1 < len(by_part):
             end = f"※※※ 第{ordinal}部分结束，请继续做第{cn_number(pi + 2)}部分！※※※"
@@ -1198,9 +1207,13 @@ def body_html(paper_id: str, questions: list[dict], css_href: str, fonts_href: s
 # 封面与注意事项（粉笔样卷封面布局；注意事项按中公样卷，排在封面背面）
 # --------------------------------------------------------------------------
 def front_html(paper_no: int, n_parts: int, n_questions: int, minutes: int, subtitle: str,
-               badge: str, fonts_href: str, with_notice: bool, extra: bool = False) -> str:
-    # 加量套（S01起）标题注“加量”，与主套（M01—M18）区分
-    title = f"行政职业能力测验（{'加量' if extra else ''}{cn_number(paper_no)}）"
+               badge: str, fonts_href: str, with_notice: bool, extra: bool = False,
+               title: str | None = None, tips: list[str] | None = None) -> str:
+    # 加量套（S01起）标题注“加量”，与主套（M01—M18）区分；专项另给标题和提示
+    title = title or f"行政职业能力测验（{'加量' if extra else ''}{cn_number(paper_no)}）"
+    tip_ps = "".join(f"<p>{html.escape(t)}</p>" for t in tips) if tips else (
+        "<p>为维护您的个人权益，确保考试的公平公正，请您协助我们监督考试实施工作。</p>"
+        "<p>本场考试规定：监考老师要向本考场全体考生展示题本密封情况，并邀请<span class=\"m-r\">2</span>名考生代表验封签字后，方能开启试卷袋。</p>")
     badge_html = "<br>".join(html.escape(x) for x in badge.split("|"))
     notice = ""
     if with_notice:
@@ -1281,8 +1294,7 @@ body {{ margin: 0; }}
   <div class="center title">{html.escape(title)}</div>
   <div class="tip-h">重要提示</div>
   <div class="tip">
-    <p>为维护您的个人权益，确保考试的公平公正，请您协助我们监督考试实施工作。</p>
-    <p>本场考试规定：监考老师要向本考场全体考生展示题本密封情况，并邀请<span class="m-r">2</span>名考生代表验封签字后，方能开启试卷袋。</p>
+    {tip_ps}
   </div>
   <div class="barcode"><div class="inner"><div class="txt">条形码粘贴处</div></div></div>
   <div class="peel">请将此条形码揭下，<br>贴在答题卡指定位置</div>
@@ -1548,6 +1560,8 @@ def main() -> None:
     ap.add_argument("--subtitle", default="广东行测18套模拟")
     ap.add_argument("--badge", default="仅供个人|练习使用", help="封面右上角方框文字，用|分行")
     ap.add_argument("--minutes", type=int, default=90, help="注意事项中的总时限")
+    ap.add_argument("--title", default=None, help="封面标题（专项等用）；默认“行政职业能力测验（一）”式")
+    ap.add_argument("--cover-tip", action="append", default=None, help="封面“重要提示”各段（可多次给）；默认考场提示")
     ap.add_argument("--no-notice", action="store_true", help="不印封面背面的注意事项")
     ap.add_argument("--out", type=Path, default=None, help="输出目录，默认 <套卷>/打印版/")
     ap.add_argument("--keep-html", action="store_true")
@@ -1585,7 +1599,8 @@ def main() -> None:
         (tdp / "body.html").write_text(body, encoding="utf-8")
         n_parts = body.count('<section class="part">')
         front = front_html(paper_no, n_parts, len(questions), args.minutes, args.subtitle, args.badge,
-                           "fonts.css", not args.no_notice, extra=bool(re.match(r"(_试排)?S\d", args.paper_id)))
+                           "fonts.css", not args.no_notice, extra=bool(re.match(r"(_试排)?S\d", args.paper_id)),
+                           title=args.title, tips=args.cover_tip)
         (tdp / "front.html").write_text(front, encoding="utf-8")
 
         layout = render(tdp / "body.html", tdp / "body.pdf")
@@ -1634,7 +1649,7 @@ def main() -> None:
         writer = PdfWriter()
         writer.append(str(tdp / "front.pdf"))
         writer.append(str(tdp / "body.pdf"))
-        pdf_path = out_dir / f"{args.paper_id}_题本_打印版.pdf"
+        pdf_path = out_dir / f"{Path(args.paper_id).name}_题本_打印版.pdf"   # 专项按“专项/D1”给路径，文件名只取末段
         writer.add_metadata({"/Title": f"{args.subtitle} {args.paper_id} 行政职业能力测验题本",
                              "/Creator": "广东行测18套模拟/打印排版/build_print.py"})
         with open(pdf_path, "wb") as fh:

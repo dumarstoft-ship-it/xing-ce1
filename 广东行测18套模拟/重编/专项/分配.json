@@ -1,0 +1,1157 @@
+{
+ "说明": "2026-11-20用户要专门练图推、数推、科推（“尽可能把广东比较有价值的真题安排进去”，专项每天约30题、25日前练完）。剩下的广东真题按细类各自按比例分两份：模考留够M12—M18、S03—S07各60题（每套5题），其余编专项；细类内按来源年份、难度交替分，两边各类都有、新题两边都有。",
+ "模考保留": {
+  "数字推理": [
+   "GD2013-1-Q001",
+   "GD2013-1-Q003",
+   "GD2013-1-Q004",
+   "GD2013-1-Q005",
+   "GD2013-3-Q002",
+   "GD2013-3-Q004",
+   "GD2014-XJ-Q042",
+   "GD2014-XJ-Q043",
+   "GD2014-XZ-Q056",
+   "GD2014-XZ-Q058",
+   "GD2014-XZ-Q059",
+   "GD2015-XJ-Q021",
+   "GD2015-XJ-Q023",
+   "GD2015-XZ-Q021",
+   "GD2015-XZ-Q022",
+   "GD2016-XJ-Q036",
+   "GD2016-XJ-Q039",
+   "GD2016-XZ-Q016",
+   "GD2017-Q017",
+   "GD2017-Q018",
+   "GD2017-Q020",
+   "GD2018-Q018",
+   "GD2018-Q019",
+   "GD2018-Q020",
+   "GD2019-XJ-Q016",
+   "GD2019-XJ-Q017",
+   "GD2019-XJ-Q019",
+   "GD2019-XZ-Q011",
+   "GD2019-XZ-Q013",
+   "GD2019-XZ-Q014",
+   "GD2019-XZ-Q015",
+   "GD2020-XJ-Q028",
+   "GD2020-XJ-Q030",
+   "GD2021-XZ-Q031",
+   "GD2021-XZ-Q033",
+   "GD2022-XJ-Q027",
+   "GD2022-XZ-Q031",
+   "GD2022-XZ-Q035",
+   "GD2023-XJ-Q028",
+   "GD2023-XZ-Q033",
+   "GD2023-XZ-Q035",
+   "GDXD2019-SW-Q062",
+   "GDXD2019-SW-Q063",
+   "GDXD2019-SW-Q064",
+   "GDXD2019-SW-Q066",
+   "GDXD2019-SW-Q067",
+   "GDXD2020-SW-Q082",
+   "GDXD2020-SW-Q084",
+   "GDXD2020-SW-Q085",
+   "GDXD2020-SW-Q087",
+   "GDXD2020-SW-Q088",
+   "GDXD2020-SW-Q089",
+   "GDXD2020-SW-Q090",
+   "SYDW2022-Q054",
+   "SYDW2023-Q055",
+   "SYDW2024-Q052",
+   "SYDW2024-Q054",
+   "SYDW2024-Q055",
+   "SYDW2025-Q054",
+   "SYDW2026-Q053"
+  ],
+  "图形推理": [
+   "GD2013-1-Q069",
+   "GD2013-1-Q071",
+   "GD2013-1-Q072",
+   "GD2013-1-Q074",
+   "GD2013-3-Q070",
+   "GD2013-3-Q073",
+   "GD2013-3-Q075",
+   "GD2014-XJ-Q065",
+   "GD2014-XZ-Q076",
+   "GD2014-XZ-Q078",
+   "GD2014-XZ-Q079",
+   "GD2015-XJ-Q037",
+   "GD2015-XJ-Q038",
+   "GD2015-XJ-Q040",
+   "GD2016-XJ-Q051",
+   "GD2016-XJ-Q054",
+   "GD2016-XJ-Q055",
+   "GD2016-XJ-Q057",
+   "GD2017-Q034",
+   "GD2017-Q039",
+   "GD2018-Q031",
+   "GD2018-Q032",
+   "GD2018-Q033",
+   "GD2018-Q037",
+   "GD2018-Q038",
+   "GD2018-Q040",
+   "GD2019-XJ-Q031",
+   "GD2019-XJ-Q033",
+   "GD2019-XJ-Q035",
+   "GD2019-XJ-Q036",
+   "GD2019-XJ-Q039",
+   "GD2019-XZ-Q026",
+   "GD2020-XJ-Q041",
+   "GD2020-XJ-Q044",
+   "GD2020-XJ-Q045",
+   "GD2020-XJ-Q046",
+   "GD2020-XJ-Q047",
+   "GD2020-XJ-Q048",
+   "GD2020-XJ-Q049",
+   "GD2020-XZ-Q048",
+   "GD2021-XZ-Q050",
+   "GD2021-XZ-Q054",
+   "GD2021-XZ-Q055",
+   "GD2022-XJ-Q048",
+   "GD2022-XZ-Q046",
+   "GD2022-XZ-Q048",
+   "GDXD2019-SW-Q072",
+   "GDXD2019-SW-Q078",
+   "GDXD2020-SW-Q061",
+   "GDXD2020-SW-Q064",
+   "GDXD2020-SW-Q066",
+   "GDXD2020-SW-Q068",
+   "SYDW2023-Q066",
+   "SYDW2023-Q068",
+   "SYDW2023-Q074",
+   "SYDW2024-Q070",
+   "SYDW2025-Q067",
+   "SYDW2025-Q072",
+   "SYDW2026-Q070",
+   "SYDW2026-Q073"
+  ],
+  "科学推理": [
+   "GD2015-XJ-Q070",
+   "GD2015-XZ-Q068",
+   "GD2016-XJ-Q081",
+   "GD2016-XJ-Q083",
+   "GD2016-XZ-Q068",
+   "GD2017-Q063",
+   "GD2017-Q065",
+   "GD2017-Q066",
+   "GD2017-Q067",
+   "GD2017-Q070",
+   "GD2018-Q061",
+   "GD2018-Q065",
+   "GD2018-Q067",
+   "GD2019-XJ-Q061",
+   "GD2019-XJ-Q064",
+   "GD2019-XJ-Q066",
+   "GD2019-XJ-Q068",
+   "GD2019-XZ-Q048",
+   "GD2019-XZ-Q049",
+   "GD2019-XZ-Q056",
+   "GD2020-XJ-Q078",
+   "GD2020-XJ-Q079",
+   "GD2020-XJ-Q080",
+   "GD2020-XJ-Q083",
+   "GD2020-XZ-Q066",
+   "GD2020-XZ-Q070",
+   "GD2020-XZ-Q080",
+   "GD2020-XZ-Q085",
+   "GD2021-XZ-Q070",
+   "GD2021-XZ-Q073",
+   "GD2021-XZ-Q074",
+   "GD2021-XZ-Q077",
+   "GD2021-XZ-Q079",
+   "GD2021-XZ-Q081",
+   "GD2021-XZ-Q083",
+   "GD2022-XJ-Q080",
+   "GD2022-XJ-Q081",
+   "GD2022-XJ-Q084",
+   "GD2022-XZ-Q066",
+   "GD2022-XZ-Q072",
+   "GD2022-XZ-Q073",
+   "GD2022-XZ-Q077",
+   "GD2022-XZ-Q083",
+   "GD2022-XZ-Q084",
+   "GD2023-XJ-Q078",
+   "GD2023-XJ-Q080",
+   "GD2023-XJ-Q081",
+   "GD2023-XJ-Q083",
+   "GD2023-XZ-Q067",
+   "GD2023-XZ-Q075",
+   "GD2023-XZ-Q084",
+   "GDXD2019-XC-Q056",
+   "GDXD2019-XC-Q058",
+   "GDXD2019-XC-Q059",
+   "GDXD2019-XC-Q062",
+   "GDXD2019-XC-Q063",
+   "GDXD2020-ZH-Q078",
+   "GDXD2020-ZH-Q079",
+   "GDXD2020-ZH-Q082",
+   "GDXD2020-ZH-Q083"
+  ]
+ },
+ "专项": {
+  "数字推理": [
+   {
+    "id": "GD2013-3-Q005",
+    "type": "其他",
+    "difficulty": "中"
+   },
+   {
+    "id": "GDXD2019-SW-Q070",
+    "type": "其他",
+    "difficulty": "难"
+   },
+   {
+    "id": "GDXD2020-SW-Q086",
+    "type": "其他",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2014-XJ-Q044",
+    "type": "分数数列",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2015-XJ-Q024",
+    "type": "分数数列",
+    "difficulty": "难"
+   },
+   {
+    "id": "SYDW2026-Q054",
+    "type": "分数数列",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2014-XZ-Q060",
+    "type": "图形数阵",
+    "difficulty": "难"
+   },
+   {
+    "id": "GD2013-1-Q002",
+    "type": "多级差",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2014-XJ-Q041",
+    "type": "多级差",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2014-XZ-Q057",
+    "type": "多级差",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2016-XZ-Q017",
+    "type": "多级差",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2017-Q016",
+    "type": "多级差",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2018-Q016",
+    "type": "多级差",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2019-XJ-Q018",
+    "type": "多级差",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2019-XZ-Q012",
+    "type": "多级差",
+    "difficulty": "易"
+   },
+   {
+    "id": "GDXD2019-SW-Q061",
+    "type": "多级差",
+    "difficulty": "易"
+   },
+   {
+    "id": "GDXD2019-SW-Q065",
+    "type": "多级差",
+    "difficulty": "易"
+   },
+   {
+    "id": "GDXD2020-SW-Q081",
+    "type": "多级差",
+    "difficulty": "易"
+   },
+   {
+    "id": "SYDW2022-Q051",
+    "type": "多级差",
+    "difficulty": "易"
+   },
+   {
+    "id": "SYDW2023-Q053",
+    "type": "多级差",
+    "difficulty": "易"
+   },
+   {
+    "id": "SYDW2025-Q051",
+    "type": "多级差",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2015-XZ-Q023",
+    "type": "多重数列",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2016-XJ-Q037",
+    "type": "多重数列",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2021-XZ-Q034",
+    "type": "多重数列",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2023-XZ-Q031",
+    "type": "多重数列",
+    "difficulty": "易"
+   },
+   {
+    "id": "SYDW2022-Q053",
+    "type": "多重数列",
+    "difficulty": "中"
+   },
+   {
+    "id": "SYDW2026-Q051",
+    "type": "多重数列",
+    "difficulty": "易"
+   },
+   {
+    "id": "SYDW2026-Q055",
+    "type": "多重数列",
+    "difficulty": "中"
+   },
+   {
+    "id": "GDXD2019-SW-Q068",
+    "type": "递推",
+    "difficulty": "易"
+   },
+   {
+    "id": "SYDW2025-Q053",
+    "type": "递推",
+    "difficulty": "难"
+   }
+  ],
+  "图形推理": [
+   {
+    "id": "GD2014-XZ-Q077",
+    "type": "其他",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2014-XZ-Q080",
+    "type": "其他",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2017-Q035",
+    "type": "其他",
+    "difficulty": "难"
+   },
+   {
+    "id": "GD2020-XJ-Q042",
+    "type": "其他",
+    "difficulty": "难"
+   },
+   {
+    "id": "GD2020-XZ-Q050",
+    "type": "其他",
+    "difficulty": "易"
+   },
+   {
+    "id": "SYDW2022-Q071",
+    "type": "其他",
+    "difficulty": "易"
+   },
+   {
+    "id": "SYDW2025-Q070",
+    "type": "其他",
+    "difficulty": "难"
+   },
+   {
+    "id": "GD2017-Q040",
+    "type": "分类分组",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2016-XJ-Q056",
+    "type": "空间类-展开与折叠",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2019-XJ-Q037",
+    "type": "空间类-展开与折叠",
+    "difficulty": "中"
+   },
+   {
+    "id": "GDXD2019-SW-Q080",
+    "type": "空间类-展开与折叠",
+    "difficulty": "中"
+   },
+   {
+    "id": "GDXD2020-SW-Q070",
+    "type": "空间类-展开与折叠",
+    "difficulty": "中"
+   },
+   {
+    "id": "SYDW2022-Q073",
+    "type": "空间类-展开与折叠",
+    "difficulty": "易"
+   },
+   {
+    "id": "SYDW2025-Q073",
+    "type": "空间类-展开与折叠",
+    "difficulty": "难"
+   },
+   {
+    "id": "SYDW2025-Q075",
+    "type": "空间类-展开与折叠",
+    "difficulty": "易"
+   },
+   {
+    "id": "SYDW2026-Q074",
+    "type": "空间类-展开与折叠",
+    "difficulty": "中"
+   },
+   {
+    "id": "GDXD2020-SW-Q065",
+    "type": "空间类-截面",
+    "difficulty": "中"
+   },
+   {
+    "id": "SYDW2026-Q075",
+    "type": "空间类-截面",
+    "difficulty": "难"
+   },
+   {
+    "id": "GD2014-XJ-Q063",
+    "type": "空间类-拼合",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2019-XJ-Q034",
+    "type": "空间类-拼合",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2019-XZ-Q029",
+    "type": "空间类-拼合",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2021-XZ-Q052",
+    "type": "空间类-拼合",
+    "difficulty": "易"
+   },
+   {
+    "id": "GDXD2019-SW-Q077",
+    "type": "空间类-拼合",
+    "difficulty": "难"
+   },
+   {
+    "id": "GDXD2019-SW-Q079",
+    "type": "空间类-拼合",
+    "difficulty": "中"
+   },
+   {
+    "id": "SYDW2022-Q074",
+    "type": "空间类-拼合",
+    "difficulty": "中"
+   },
+   {
+    "id": "SYDW2023-Q075",
+    "type": "空间类-拼合",
+    "difficulty": "难"
+   },
+   {
+    "id": "SYDW2025-Q074",
+    "type": "空间类-拼合",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2019-XJ-Q038",
+    "type": "空间类-立体",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2020-XZ-Q051",
+    "type": "空间类-立体",
+    "difficulty": "易"
+   },
+   {
+    "id": "GDXD2019-SW-Q073",
+    "type": "空间类-立体",
+    "difficulty": "中"
+   },
+   {
+    "id": "GDXD2019-SW-Q075",
+    "type": "空间类-立体",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2019-XZ-Q035",
+    "type": "空间类-视图",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2021-XZ-Q051",
+    "type": "空间类-视图",
+    "difficulty": "易"
+   },
+   {
+    "id": "GDXD2019-SW-Q076",
+    "type": "空间类-视图",
+    "difficulty": "中"
+   },
+   {
+    "id": "GDXD2020-SW-Q069",
+    "type": "空间类-视图",
+    "difficulty": "难"
+   },
+   {
+    "id": "SYDW2022-Q072",
+    "type": "空间类-视图",
+    "difficulty": "易"
+   },
+   {
+    "id": "SYDW2022-Q075",
+    "type": "空间类-视图",
+    "difficulty": "难"
+   },
+   {
+    "id": "SYDW2026-Q072",
+    "type": "空间类-视图",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2013-1-Q066",
+    "type": "规律类-位置",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2013-1-Q070",
+    "type": "规律类-位置",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2013-3-Q072",
+    "type": "规律类-位置",
+    "difficulty": "难"
+   },
+   {
+    "id": "GD2014-XJ-Q057",
+    "type": "规律类-位置",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2014-XJ-Q060",
+    "type": "规律类-位置",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2014-XJ-Q064",
+    "type": "规律类-位置",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2015-XJ-Q039",
+    "type": "规律类-位置",
+    "difficulty": "难"
+   },
+   {
+    "id": "GD2015-XJ-Q041",
+    "type": "规律类-位置",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2015-XZ-Q037",
+    "type": "规律类-位置",
+    "difficulty": "难"
+   },
+   {
+    "id": "GD2016-XJ-Q052",
+    "type": "规律类-位置",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2016-XJ-Q053",
+    "type": "规律类-位置",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2016-XJ-Q059",
+    "type": "规律类-位置",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2017-Q032",
+    "type": "规律类-位置",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2017-Q036",
+    "type": "规律类-位置",
+    "difficulty": "难"
+   },
+   {
+    "id": "GD2018-Q034",
+    "type": "规律类-位置",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2019-XZ-Q027",
+    "type": "规律类-位置",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2020-XJ-Q050",
+    "type": "规律类-位置",
+    "difficulty": "易"
+   },
+   {
+    "id": "SYDW2022-Q066",
+    "type": "规律类-位置",
+    "difficulty": "易"
+   },
+   {
+    "id": "SYDW2022-Q070",
+    "type": "规律类-位置",
+    "difficulty": "易"
+   },
+   {
+    "id": "SYDW2023-Q070",
+    "type": "规律类-位置",
+    "difficulty": "中"
+   },
+   {
+    "id": "SYDW2024-Q069",
+    "type": "规律类-位置",
+    "difficulty": "难"
+   },
+   {
+    "id": "GD2013-3-Q071",
+    "type": "规律类-属性",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2017-Q037",
+    "type": "规律类-属性",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2021-XZ-Q046",
+    "type": "规律类-属性",
+    "difficulty": "易"
+   },
+   {
+    "id": "GDXD2020-SW-Q062",
+    "type": "规律类-属性",
+    "difficulty": "难"
+   },
+   {
+    "id": "SYDW2022-Q069",
+    "type": "规律类-属性",
+    "difficulty": "易"
+   },
+   {
+    "id": "SYDW2023-Q067",
+    "type": "规律类-属性",
+    "difficulty": "难"
+   },
+   {
+    "id": "SYDW2026-Q068",
+    "type": "规律类-属性",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2013-1-Q067",
+    "type": "规律类-数量",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2013-1-Q073",
+    "type": "规律类-数量",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2013-1-Q075",
+    "type": "规律类-数量",
+    "difficulty": "难"
+   },
+   {
+    "id": "GD2014-XJ-Q058",
+    "type": "规律类-数量",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2015-XJ-Q042",
+    "type": "规律类-数量",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2015-XJ-Q043",
+    "type": "规律类-数量",
+    "difficulty": "难"
+   },
+   {
+    "id": "GD2016-XJ-Q060",
+    "type": "规律类-数量",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2017-Q038",
+    "type": "规律类-数量",
+    "difficulty": "难"
+   },
+   {
+    "id": "GD2019-XJ-Q032",
+    "type": "规律类-数量",
+    "difficulty": "易"
+   },
+   {
+    "id": "SYDW2023-Q071",
+    "type": "规律类-数量",
+    "difficulty": "难"
+   },
+   {
+    "id": "SYDW2024-Q071",
+    "type": "规律类-数量",
+    "difficulty": "易"
+   },
+   {
+    "id": "SYDW2025-Q068",
+    "type": "规律类-数量",
+    "difficulty": "难"
+   },
+   {
+    "id": "SYDW2026-Q069",
+    "type": "规律类-数量",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2013-3-Q068",
+    "type": "规律类-样式",
+    "difficulty": "难"
+   },
+   {
+    "id": "GD2013-3-Q069",
+    "type": "规律类-样式",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2014-XJ-Q056",
+    "type": "规律类-样式",
+    "difficulty": "难"
+   },
+   {
+    "id": "GD2014-XJ-Q061",
+    "type": "规律类-样式",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2014-XJ-Q062",
+    "type": "规律类-样式",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2015-XJ-Q036",
+    "type": "规律类-样式",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2015-XJ-Q045",
+    "type": "规律类-样式",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2019-XZ-Q028",
+    "type": "规律类-样式",
+    "difficulty": "易"
+   },
+   {
+    "id": "SYDW2022-Q067",
+    "type": "规律类-样式",
+    "difficulty": "易"
+   },
+   {
+    "id": "SYDW2024-Q073",
+    "type": "规律类-样式",
+    "difficulty": "难"
+   }
+  ],
+  "科学推理": [
+   {
+    "id": "GD2015-XJ-Q066",
+    "type": "光热声及其他",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2015-XZ-Q066",
+    "type": "光热声及其他",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2017-Q064",
+    "type": "光热声及其他",
+    "difficulty": "难"
+   },
+   {
+    "id": "GD2018-Q068",
+    "type": "光热声及其他",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2019-XZ-Q046",
+    "type": "光热声及其他",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2020-XZ-Q073",
+    "type": "光热声及其他",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2021-XZ-Q067",
+    "type": "光热声及其他",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2021-XZ-Q071",
+    "type": "光热声及其他",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2022-XJ-Q077",
+    "type": "光热声及其他",
+    "difficulty": "难"
+   },
+   {
+    "id": "GD2022-XJ-Q085",
+    "type": "光热声及其他",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2023-XZ-Q073",
+    "type": "光热声及其他",
+    "difficulty": "中"
+   },
+   {
+    "id": "GDXD2019-XC-Q060",
+    "type": "光热声及其他",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2015-XJ-Q067",
+    "type": "力学",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2015-XJ-Q068",
+    "type": "力学",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2015-XZ-Q070",
+    "type": "力学",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2016-XJ-Q082",
+    "type": "力学",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2016-XJ-Q084",
+    "type": "力学",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2016-XJ-Q085",
+    "type": "力学",
+    "difficulty": "难"
+   },
+   {
+    "id": "GD2016-XZ-Q066",
+    "type": "力学",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2017-Q068",
+    "type": "力学",
+    "difficulty": "难"
+   },
+   {
+    "id": "GD2018-Q064",
+    "type": "力学",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2018-Q069",
+    "type": "力学",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2019-XJ-Q063",
+    "type": "力学",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2019-XJ-Q067",
+    "type": "力学",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2019-XJ-Q069",
+    "type": "力学",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2019-XJ-Q070",
+    "type": "力学",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2020-XJ-Q081",
+    "type": "力学",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2020-XJ-Q084",
+    "type": "力学",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2020-XZ-Q084",
+    "type": "力学",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2021-XZ-Q072",
+    "type": "力学",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2021-XZ-Q075",
+    "type": "力学",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2021-XZ-Q080",
+    "type": "力学",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2022-XJ-Q082",
+    "type": "力学",
+    "difficulty": "难"
+   },
+   {
+    "id": "GD2022-XJ-Q083",
+    "type": "力学",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2022-XZ-Q075",
+    "type": "力学",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2023-XJ-Q079",
+    "type": "力学",
+    "difficulty": "难"
+   },
+   {
+    "id": "GD2023-XZ-Q069",
+    "type": "力学",
+    "difficulty": "中"
+   },
+   {
+    "id": "GDXD2019-XC-Q057",
+    "type": "力学",
+    "difficulty": "中"
+   },
+   {
+    "id": "GDXD2019-XC-Q065",
+    "type": "力学",
+    "difficulty": "中"
+   },
+   {
+    "id": "GDXD2020-ZH-Q077",
+    "type": "力学",
+    "difficulty": "中"
+   },
+   {
+    "id": "GDXD2020-ZH-Q081",
+    "type": "力学",
+    "difficulty": "中"
+   },
+   {
+    "id": "GDXD2020-ZH-Q084",
+    "type": "力学",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2018-Q070",
+    "type": "化学",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2019-XJ-Q065",
+    "type": "化学",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2020-XJ-Q076",
+    "type": "化学",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2020-XJ-Q085",
+    "type": "化学",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2021-XZ-Q076",
+    "type": "化学",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2022-XJ-Q076",
+    "type": "化学",
+    "difficulty": "易"
+   },
+   {
+    "id": "GDXD2019-XC-Q061",
+    "type": "化学",
+    "difficulty": "易"
+   },
+   {
+    "id": "GDXD2019-XC-Q064",
+    "type": "化学",
+    "difficulty": "中"
+   },
+   {
+    "id": "GDXD2020-ZH-Q076",
+    "type": "化学",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2020-XJ-Q077",
+    "type": "地理",
+    "difficulty": "难"
+   },
+   {
+    "id": "GD2020-XZ-Q067",
+    "type": "地理",
+    "difficulty": "难"
+   },
+   {
+    "id": "GD2020-XZ-Q071",
+    "type": "地理",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2023-XJ-Q085",
+    "type": "地理",
+    "difficulty": "难"
+   },
+   {
+    "id": "GD2017-Q062",
+    "type": "生物",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2018-Q062",
+    "type": "生物",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2019-XZ-Q047",
+    "type": "生物",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2021-XZ-Q069",
+    "type": "生物",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2021-XZ-Q082",
+    "type": "生物",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2022-XJ-Q079",
+    "type": "生物",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2023-XJ-Q082",
+    "type": "生物",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2023-XZ-Q078",
+    "type": "生物",
+    "difficulty": "易"
+   },
+   {
+    "id": "GDXD2020-ZH-Q085",
+    "type": "生物",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2015-XZ-Q067",
+    "type": "电学",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2016-XZ-Q067",
+    "type": "电学",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2017-Q061",
+    "type": "电学",
+    "difficulty": "难"
+   },
+   {
+    "id": "GD2019-XJ-Q062",
+    "type": "电学",
+    "difficulty": "易"
+   },
+   {
+    "id": "GD2020-XZ-Q072",
+    "type": "电学",
+    "difficulty": "中"
+   },
+   {
+    "id": "GD2022-XJ-Q078",
+    "type": "电学",
+    "difficulty": "中"
+   },
+   {
+    "id": "GDXD2020-ZH-Q080",
+    "type": "电学",
+    "difficulty": "中"
+   }
+  ]
+ },
+ "专项不用": {
+  "GD2015-XJ-Q025": "原卷没有题干，数表两个括号、选项两数连写",
+  "GD2019-XZ-Q050": "要默认货物加速下滑，题干没说",
+  "SYDW2024-Q066": "D项“最不可能”靠“放不稳”，题干没说要平稳放置",
+  "GDXD2020-SW-Q063": "题图带题干文字残边",
+  "GDXD2020-SW-Q067": "题图带题干文字残边",
+  "SYDW2025-Q071": "有版本答案作A（按原版D），不用"
+ }
+}

@@ -1,0 +1,963 @@
+[
+ {
+  "id": "GD2013-1-Q066",
+  "number": 1,
+  "section": "判断推理",
+  "pool_type": "规律类-位置",
+  "stem": "（见题图）",
+  "options": [
+   {
+    "label": "A",
+    "text": ""
+   },
+   {
+    "label": "B",
+    "text": ""
+   },
+   {
+    "label": "C",
+    "text": ""
+   },
+   {
+    "label": "D",
+    "text": ""
+   }
+  ],
+  "figures": [
+   {
+    "path": "/home/user/xing-ce1/广东/行测/2013-2021/assets/GD2013-1/GD2013-1-p11-i01.png",
+    "role": "question_and_options"
+   }
+  ]
+ },
+ {
+  "id": "GD2013-1-Q070",
+  "number": 2,
+  "section": "判断推理",
+  "pool_type": "规律类-位置",
+  "stem": "（见题图）",
+  "options": [
+   {
+    "label": "A",
+    "text": ""
+   },
+   {
+    "label": "B",
+    "text": ""
+   },
+   {
+    "label": "C",
+    "text": ""
+   },
+   {
+    "label": "D",
+    "text": ""
+   }
+  ],
+  "figures": [
+   {
+    "path": "/home/user/xing-ce1/广东/行测/2013-2021/assets/GD2013-1/GD2013-1-p13-i01.png",
+    "role": "question_and_options"
+   }
+  ]
+ },
+ {
+  "id": "GD2013-3-Q072",
+  "number": 3,
+  "section": "判断推理",
+  "pool_type": "规律类-位置",
+  "stem": "（见题图）",
+  "options": [
+   {
+    "label": "A",
+    "text": ""
+   },
+   {
+    "label": "B",
+    "text": ""
+   },
+   {
+    "label": "C",
+    "text": ""
+   },
+   {
+    "label": "D",
+    "text": ""
+   }
+  ],
+  "figures": [
+   {
+    "path": "/home/user/xing-ce1/广东/行测/2013-2021/assets/GD2013-3/GD2013-3-p11-i01.png",
+    "role": "question_and_options"
+   }
+  ]
+ },
+ {
+  "id": "GD2014-XJ-Q057",
+  "number": 4,
+  "section": "判断推理",
+  "pool_type": "规律类-位置",
+  "stem": "从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定规律性：",
+  "options": [
+   {
+    "label": "A",
+    "text": ""
+   },
+   {
+    "label": "B",
+    "text": ""
+   },
+   {
+    "label": "C",
+    "text": ""
+   },
+   {
+    "label": "D",
+    "text": ""
+   }
+  ],
+  "figures": [
+   {
+    "path": "/home/user/xing-ce1/广东/行测/2013-2021/assets/GD2014-XJ/GD2014-XJ-p06-i02.png",
+    "role": "question_and_options"
+   }
+  ]
+ },
+ {
+  "id": "GD2014-XJ-Q060",
+  "number": 5,
+  "section": "判断推理",
+  "pool_type": "规律类-位置",
+  "stem": "从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定规律性：",
+  "options": [
+   {
+    "label": "A",
+    "text": ""
+   },
+   {
+    "label": "B",
+    "text": ""
+   },
+   {
+    "label": "C",
+    "text": ""
+   },
+   {
+    "label": "D",
+    "text": ""
+   }
+  ],
+  "figures": [
+   {
+    "path": "/home/user/xing-ce1/广东/行测/2013-2021/assets/GD2014-XJ/GD2014-XJ-p07-i03.png",
+    "role": "question_and_options"
+   }
+  ]
+ },
+ {
+  "id": "GD2014-XJ-Q064",
+  "number": 6,
+  "section": "判断推理",
+  "pool_type": "规律类-位置",
+  "stem": "从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定规律性：",
+  "options": [
+   {
+    "label": "A",
+    "text": ""
+   },
+   {
+    "label": "B",
+    "text": ""
+   },
+   {
+    "label": "C",
+    "text": ""
+   },
+   {
+    "label": "D",
+    "text": ""
+   }
+  ],
+  "figures": [
+   {
+    "path": "/home/user/xing-ce1/广东/行测/2013-2021/assets/GD2014-XJ/GD2014-XJ-p08-i02.png",
+    "role": "question_and_options"
+   }
+  ]
+ },
+ {
+  "id": "GD2015-XJ-Q039",
+  "number": 7,
+  "section": "判断推理",
+  "pool_type": "规律类-位置",
+  "stem": "请从所给的四个选项中，选择最合适的一项填在问号处，使之呈现一定的规律性：",
+  "options": [
+   {
+    "label": "A",
+    "text": ""
+   },
+   {
+    "label": "B",
+    "text": ""
+   },
+   {
+    "label": "C",
+    "text": ""
+   },
+   {
+    "label": "D",
+    "text": ""
+   }
+  ],
+  "figures": [
+   {
+    "path": "/home/user/xing-ce1/广东/行测/2013-2021/assets/GD2015-XJ/GD2015-XJ-p05-i01.png",
+    "role": "question_and_options"
+   }
+  ]
+ },
+ {
+  "id": "GD2015-XJ-Q041",
+  "number": 8,
+  "section": "判断推理",
+  "pool_type": "规律类-位置",
+  "stem": "从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：",
+  "options": [
+   {
+    "label": "A",
+    "text": ""
+   },
+   {
+    "label": "B",
+    "text": ""
+   },
+   {
+    "label": "C",
+    "text": ""
+   },
+   {
+    "label": "D",
+    "text": ""
+   }
+  ],
+  "figures": [
+   {
+    "path": "/home/user/xing-ce1/广东/行测/2013-2021/assets/GD2015-XJ/GD2015-XJ-p05-i03.png",
+    "role": "question_and_options"
+   }
+  ]
+ },
+ {
+  "id": "GD2015-XZ-Q037",
+  "number": 9,
+  "section": "判断推理",
+  "pool_type": "规律类-位置",
+  "stem": "从所给的四个选项中，选择最合适的一个填在问号处，使之呈现一定的规律性：",
+  "options": [
+   {
+    "label": "A",
+    "text": ""
+   },
+   {
+    "label": "B",
+    "text": ""
+   },
+   {
+    "label": "C",
+    "text": ""
+   },
+   {
+    "label": "D",
+    "text": ""
+   }
+  ],
+  "figures": [
+   {
+    "path": "/home/user/xing-ce1/广东/行测/2013-2021/assets/GD2015-XZ/GD2015-XZ-p05-i01.png",
+    "role": "question_and_options"
+   }
+  ]
+ },
+ {
+  "id": "GD2016-XJ-Q052",
+  "number": 10,
+  "section": "判断推理",
+  "pool_type": "规律类-位置",
+  "stem": "（见题图）",
+  "options": [
+   {
+    "label": "A",
+    "text": ""
+   },
+   {
+    "label": "B",
+    "text": ""
+   },
+   {
+    "label": "C",
+    "text": ""
+   },
+   {
+    "label": "D",
+    "text": ""
+   }
+  ],
+  "figures": [
+   {
+    "path": "/home/user/xing-ce1/广东/行测/2013-2021/assets/GD2016-XJ/GD2016-XJ-p05-i02.png",
+    "role": "question_and_options"
+   }
+  ]
+ },
+ {
+  "id": "GD2016-XJ-Q053",
+  "number": 11,
+  "section": "判断推理",
+  "pool_type": "规律类-位置",
+  "stem": "（见题图）",
+  "options": [
+   {
+    "label": "A",
+    "text": ""
+   },
+   {
+    "label": "B",
+    "text": ""
+   },
+   {
+    "label": "C",
+    "text": ""
+   },
+   {
+    "label": "D",
+    "text": ""
+   }
+  ],
+  "figures": [
+   {
+    "path": "/home/user/xing-ce1/广东/行测/2013-2021/assets/GD2016-XJ/GD2016-XJ-p05-i03.png",
+    "role": "question_and_options"
+   }
+  ]
+ },
+ {
+  "id": "GD2016-XJ-Q059",
+  "number": 12,
+  "section": "判断推理",
+  "pool_type": "规律类-位置",
+  "stem": "（见题图）",
+  "options": [
+   {
+    "label": "A",
+    "text": ""
+   },
+   {
+    "label": "B",
+    "text": ""
+   },
+   {
+    "label": "C",
+    "text": ""
+   },
+   {
+    "label": "D",
+    "text": ""
+   }
+  ],
+  "figures": [
+   {
+    "path": "/home/user/xing-ce1/广东/行测/2013-2021/assets/GD2016-XJ/GD2016-XJ-p07-i02.png",
+    "role": "question_and_options"
+   }
+  ]
+ },
+ {
+  "id": "GD2017-Q032",
+  "number": 13,
+  "section": "判断推理",
+  "pool_type": "规律类-位置",
+  "stem": "从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定规律性：",
+  "options": [
+   {
+    "label": "A",
+    "text": ""
+   },
+   {
+    "label": "B",
+    "text": ""
+   },
+   {
+    "label": "C",
+    "text": ""
+   },
+   {
+    "label": "D",
+    "text": ""
+   }
+  ],
+  "figures": [
+   {
+    "path": "/home/user/xing-ce1/广东/行测/2013-2021/assets/GD2017/GD2017-p03-i09.png",
+    "role": "question_and_options"
+   }
+  ]
+ },
+ {
+  "id": "GD2017-Q036",
+  "number": 14,
+  "section": "判断推理",
+  "pool_type": "规律类-位置",
+  "stem": "从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定规律性：",
+  "options": [
+   {
+    "label": "A",
+    "text": ""
+   },
+   {
+    "label": "B",
+    "text": ""
+   },
+   {
+    "label": "C",
+    "text": ""
+   },
+   {
+    "label": "D",
+    "text": ""
+   }
+  ],
+  "figures": [
+   {
+    "path": "/home/user/xing-ce1/广东/行测/2013-2021/assets/GD2017/GD2017-p04-i04.png",
+    "role": "question_and_options"
+   }
+  ]
+ },
+ {
+  "id": "GD2018-Q034",
+  "number": 15,
+  "section": "判断推理",
+  "pool_type": "规律类-位置",
+  "stem": "从所给的四个选项中，选择最合适的一个填在问号处，使之呈现一定的规律性：",
+  "options": [
+   {
+    "label": "A",
+    "text": ""
+   },
+   {
+    "label": "B",
+    "text": ""
+   },
+   {
+    "label": "C",
+    "text": ""
+   },
+   {
+    "label": "D",
+    "text": ""
+   }
+  ],
+  "figures": [
+   {
+    "path": "/home/user/xing-ce1/广东/行测/2013-2021/assets/GD2018/GD2018-p05-i02.png",
+    "role": "question_and_options"
+   }
+  ]
+ },
+ {
+  "id": "GD2019-XZ-Q027",
+  "number": 16,
+  "section": "判断推理",
+  "pool_type": "规律类-位置",
+  "stem": "下列选项中最符合所给图形规律的是（）。",
+  "options": [
+   {
+    "label": "A",
+    "text": ""
+   },
+   {
+    "label": "B",
+    "text": ""
+   },
+   {
+    "label": "C",
+    "text": ""
+   },
+   {
+    "label": "D",
+    "text": ""
+   }
+  ],
+  "figures": [
+   {
+    "path": "/home/user/xing-ce1/广东/行测/2013-2021/assets/GD2019-XZ/GD2019-XZ-p03-i07.png",
+    "role": "question_and_options"
+   }
+  ]
+ },
+ {
+  "id": "GD2020-XJ-Q050",
+  "number": 17,
+  "section": "判断推理",
+  "pool_type": "规律类-位置",
+  "stem": "下列选项中最符合所给图形规律的是（）。",
+  "options": [
+   {
+    "label": "A",
+    "text": ""
+   },
+   {
+    "label": "B",
+    "text": ""
+   },
+   {
+    "label": "C",
+    "text": ""
+   },
+   {
+    "label": "D",
+    "text": ""
+   }
+  ],
+  "figures": [
+   {
+    "path": "/home/user/xing-ce1/广东/行测/2013-2021/assets/GD2020-XJ/GD2020-XJ-p07-i02.png",
+    "role": "question_and_options"
+   }
+  ]
+ },
+ {
+  "id": "SYDW2022-Q066",
+  "number": 18,
+  "section": "判断推理",
+  "pool_type": "规律类-位置",
+  "stem": "下列选项中最符合所给图形规律的是（）。",
+  "options": [
+   {
+    "label": "A",
+    "text": ""
+   },
+   {
+    "label": "B",
+    "text": ""
+   },
+   {
+    "label": "C",
+    "text": ""
+   },
+   {
+    "label": "D",
+    "text": ""
+   }
+  ],
+  "figures": [
+   {
+    "path": "/home/user/xing-ce1/广东/事业单位/结构化/assets/SYDW2022/SYDW2022-p10-i01.png",
+    "role": "question_and_options"
+   }
+  ]
+ },
+ {
+  "id": "SYDW2022-Q070",
+  "number": 19,
+  "section": "判断推理",
+  "pool_type": "规律类-位置",
+  "stem": "下列选项中最符合所给图形规律的是（）。",
+  "options": [
+   {
+    "label": "A",
+    "text": ""
+   },
+   {
+    "label": "B",
+    "text": ""
+   },
+   {
+    "label": "C",
+    "text": ""
+   },
+   {
+    "label": "D",
+    "text": ""
+   }
+  ],
+  "figures": [
+   {
+    "path": "/home/user/xing-ce1/广东/事业单位/结构化/assets/SYDW2022/SYDW2022-p11-i02.png",
+    "role": "question_and_options"
+   }
+  ]
+ },
+ {
+  "id": "SYDW2023-Q070",
+  "number": 20,
+  "section": "判断推理",
+  "pool_type": "规律类-位置",
+  "stem": "请从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性（）。",
+  "options": [
+   {
+    "label": "A",
+    "text": ""
+   },
+   {
+    "label": "B",
+    "text": ""
+   },
+   {
+    "label": "C",
+    "text": ""
+   },
+   {
+    "label": "D",
+    "text": ""
+   }
+  ],
+  "figures": [
+   {
+    "path": "/home/user/xing-ce1/广东/事业单位/结构化/assets/SYDW2023/SYDW2023-p11-i03.png",
+    "role": "question_and_options"
+   }
+  ]
+ },
+ {
+  "id": "SYDW2024-Q069",
+  "number": 21,
+  "section": "判断推理",
+  "pool_type": "规律类-位置",
+  "stem": "下列选项中最符合所给图形规律的是（）。",
+  "options": [
+   {
+    "label": "A",
+    "text": ""
+   },
+   {
+    "label": "B",
+    "text": ""
+   },
+   {
+    "label": "C",
+    "text": ""
+   },
+   {
+    "label": "D",
+    "text": ""
+   }
+  ],
+  "figures": [
+   {
+    "path": "/home/user/xing-ce1/广东/事业单位/结构化/assets/SYDW2024/SYDW2024-p08-i02.png",
+    "role": "question_and_options"
+   }
+  ]
+ },
+ {
+  "id": "GD2013-3-Q068",
+  "number": 22,
+  "section": "判断推理",
+  "pool_type": "规律类-样式",
+  "stem": "（见题图）",
+  "options": [
+   {
+    "label": "A",
+    "text": ""
+   },
+   {
+    "label": "B",
+    "text": ""
+   },
+   {
+    "label": "C",
+    "text": ""
+   },
+   {
+    "label": "D",
+    "text": ""
+   }
+  ],
+  "figures": [
+   {
+    "path": "/home/user/xing-ce1/广东/行测/2013-2021/assets/GD2013-3/GD2013-3-p09-i03.png",
+    "role": "question_and_options"
+   }
+  ]
+ },
+ {
+  "id": "GD2013-3-Q069",
+  "number": 23,
+  "section": "判断推理",
+  "pool_type": "规律类-样式",
+  "stem": "（见题图）",
+  "options": [
+   {
+    "label": "A",
+    "text": ""
+   },
+   {
+    "label": "B",
+    "text": ""
+   },
+   {
+    "label": "C",
+    "text": ""
+   },
+   {
+    "label": "D",
+    "text": ""
+   }
+  ],
+  "figures": [
+   {
+    "path": "/home/user/xing-ce1/广东/行测/2013-2021/assets/GD2013-3/GD2013-3-p10-i01.png",
+    "role": "question_and_options"
+   }
+  ]
+ },
+ {
+  "id": "GD2014-XJ-Q056",
+  "number": 24,
+  "section": "判断推理",
+  "pool_type": "规律类-样式",
+  "stem": "从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定规律性：",
+  "options": [
+   {
+    "label": "A",
+    "text": ""
+   },
+   {
+    "label": "B",
+    "text": ""
+   },
+   {
+    "label": "C",
+    "text": ""
+   },
+   {
+    "label": "D",
+    "text": ""
+   }
+  ],
+  "figures": [
+   {
+    "path": "/home/user/xing-ce1/广东/行测/2013-2021/assets/GD2014-XJ/GD2014-XJ-p06-i01.png",
+    "role": "question_and_options"
+   }
+  ]
+ },
+ {
+  "id": "GD2014-XJ-Q061",
+  "number": 25,
+  "section": "判断推理",
+  "pool_type": "规律类-样式",
+  "stem": "从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定规律性：",
+  "options": [
+   {
+    "label": "A",
+    "text": ""
+   },
+   {
+    "label": "B",
+    "text": ""
+   },
+   {
+    "label": "C",
+    "text": ""
+   },
+   {
+    "label": "D",
+    "text": ""
+   }
+  ],
+  "figures": [
+   {
+    "path": "/home/user/xing-ce1/广东/行测/2013-2021/assets/GD2014-XJ/GD2014-XJ-p07-i04.png",
+    "role": "question_and_options"
+   }
+  ]
+ },
+ {
+  "id": "GD2014-XJ-Q062",
+  "number": 26,
+  "section": "判断推理",
+  "pool_type": "规律类-样式",
+  "stem": "从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定规律性：",
+  "options": [
+   {
+    "label": "A",
+    "text": ""
+   },
+   {
+    "label": "B",
+    "text": ""
+   },
+   {
+    "label": "C",
+    "text": ""
+   },
+   {
+    "label": "D",
+    "text": ""
+   }
+  ],
+  "figures": [
+   {
+    "path": "/home/user/xing-ce1/广东/行测/2013-2021/assets/GD2014-XJ/GD2014-XJ-p07-i05.png",
+    "role": "question_and_options"
+   }
+  ]
+ },
+ {
+  "id": "GD2015-XJ-Q036",
+  "number": 27,
+  "section": "判断推理",
+  "pool_type": "规律类-样式",
+  "stem": "从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：",
+  "options": [
+   {
+    "label": "A",
+    "text": ""
+   },
+   {
+    "label": "B",
+    "text": ""
+   },
+   {
+    "label": "C",
+    "text": ""
+   },
+   {
+    "label": "D",
+    "text": ""
+   }
+  ],
+  "figures": [
+   {
+    "path": "/home/user/xing-ce1/广东/行测/2013-2021/assets/GD2015-XJ/GD2015-XJ-p04-i01.png",
+    "role": "question_and_options"
+   }
+  ]
+ },
+ {
+  "id": "GD2015-XJ-Q045",
+  "number": 28,
+  "section": "判断推理",
+  "pool_type": "规律类-样式",
+  "stem": "从所给的四个选项中选，择最合适的一个填入问号处，使之呈现一定的规律性：",
+  "options": [
+   {
+    "label": "A",
+    "text": ""
+   },
+   {
+    "label": "B",
+    "text": ""
+   },
+   {
+    "label": "C",
+    "text": ""
+   },
+   {
+    "label": "D",
+    "text": ""
+   }
+  ],
+  "figures": [
+   {
+    "path": "/home/user/xing-ce1/广东/行测/2013-2021/assets/GD2015-XJ/GD2015-XJ-p06-i03.png",
+    "role": "question_and_options"
+   }
+  ]
+ },
+ {
+  "id": "GD2019-XZ-Q028",
+  "number": 29,
+  "section": "判断推理",
+  "pool_type": "规律类-样式",
+  "stem": "下列选项中最符合所给图形规律的是（）。",
+  "options": [
+   {
+    "label": "A",
+    "text": ""
+   },
+   {
+    "label": "B",
+    "text": ""
+   },
+   {
+    "label": "C",
+    "text": ""
+   },
+   {
+    "label": "D",
+    "text": ""
+   }
+  ],
+  "figures": [
+   {
+    "path": "/home/user/xing-ce1/广东/行测/2013-2021/assets/GD2019-XZ/GD2019-XZ-p04-i01.png",
+    "role": "question_and_options"
+   }
+  ]
+ },
+ {
+  "id": "SYDW2022-Q067",
+  "number": 30,
+  "section": "判断推理",
+  "pool_type": "规律类-样式",
+  "stem": "下列选项中最符合所给图形规律的是（）。",
+  "options": [
+   {
+    "label": "A",
+    "text": ""
+   },
+   {
+    "label": "B",
+    "text": ""
+   },
+   {
+    "label": "C",
+    "text": ""
+   },
+   {
+    "label": "D",
+    "text": ""
+   }
+  ],
+  "figures": [
+   {
+    "path": "/home/user/xing-ce1/广东/事业单位/结构化/assets/SYDW2022/SYDW2022-p10-i02.png",
+    "role": "question_and_options"
+   }
+  ]
+ },
+ {
+  "id": "SYDW2024-Q073",
+  "number": 31,
+  "section": "判断推理",
+  "pool_type": "规律类-样式",
+  "stem": "下列选项中最符合所给图形规律的是（）。",
+  "options": [
+   {
+    "label": "A",
+    "text": ""
+   },
+   {
+    "label": "B",
+    "text": ""
+   },
+   {
+    "label": "C",
+    "text": ""
+   },
+   {
+    "label": "D",
+    "text": ""
+   }
+  ],
+  "figures": [
+   {
+    "path": "/home/user/xing-ce1/广东/事业单位/结构化/assets/SYDW2024/SYDW2024-p10-i02.png",
+    "role": "question_and_options"
+   }
+  ]
+ }
+]
