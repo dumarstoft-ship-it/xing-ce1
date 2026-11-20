@@ -164,7 +164,7 @@ def check_glyphs(questions: list[dict], fonts: dict[str, Path], log: "Log") -> N
 
     def walk(v, n):
         if isinstance(v, str):
-            for ch in v:
+            for ch in sub_digits(v):     # 下标数字排成下标（见 norm_text），不用书宋的字形
                 if not ch.isspace():
                     used.setdefault(ch, set()).add(n)
         elif isinstance(v, dict):
@@ -306,7 +306,28 @@ def norm_text(s: str, number, where: str, log: Log) -> str:
         m = HALF_PUNCT.search(t5)
         log.add(number, where, "半角标点改全角", t5[max(0, m.start() - 8):m.end() + 4],
                 t6[max(0, m.start() - 8):m.end() + 4])
-    return t6
+    # 下标数字字符（“S₁”“A₂”）：方正书宋没有这些字形，改成数学片段里的下标排印
+    t7 = sub_digits(t6)
+    if t7 != t6:
+        m = SUB_DIGITS.search(t6)
+        log.add(number, where, "下标数字改为下标排印", t6[max(0, m.start() - 6):m.end() + 6],
+                t7[max(0, m.start() - 6):m.end() + 12])
+    return t7
+
+
+SUB_DIGITS = re.compile("[₀₁₂₃₄₅₆₇₈₉]+")
+SUB_PLAIN = str.maketrans("₀₁₂₃₄₅₆₇₈₉", "0123456789")
+
+
+def sub_digits(s: str) -> str:
+    """数学片段外的“₁”改为 $_{1}$，片段内的改为 _{1}。"""
+    out, pos = [], 0
+    for m in re.finditer(r"\$[^$]+\$", s):
+        out.append(SUB_DIGITS.sub(lambda d: "$_{" + d.group(0).translate(SUB_PLAIN) + "}$", s[pos:m.start()]))
+        out.append(SUB_DIGITS.sub(lambda d: "_{" + d.group(0).translate(SUB_PLAIN) + "}", m.group(0)))
+        pos = m.end()
+    out.append(SUB_DIGITS.sub(lambda d: "$_{" + d.group(0).translate(SUB_PLAIN) + "}$", s[pos:]))
+    return "".join(out)
 
 
 # --------------------------------------------------------------------------
@@ -1061,6 +1082,27 @@ window.__layout = function () {
 """
 
 
+def absent_sections(missing: list[int], present: list[str], name: str, first: bool) -> list[tuple[str, int, int]]:
+    """整个部分都空着（如M11常识判断第11—15题、加量套第1—15题）时，在它前面的部分说明里注明；
+    排在第一个部分之前的，注在第一个部分。返回 [(部分名, 起, 止)]，按题号顺序。"""
+    names = list(SECTION_RANGES)
+    gone = {n for n, (lo, hi) in SECTION_RANGES.items()
+            if n not in present and all(x in missing for x in range(lo, hi + 1))}
+    i = names.index(name) if name in names else None
+    if i is None:
+        return []
+    out = []
+    if first:
+        for n in names[:i]:
+            if n in gone:
+                out.append((n, *SECTION_RANGES[n]))
+    for n in names[i + 1:]:
+        if n not in gone:
+            break
+        out.append((n, *SECTION_RANGES[n]))
+    return out
+
+
 def body_html(paper_id: str, questions: list[dict], css_href: str, fonts_href: str, log: Log) -> str:
     sizer = FigureSizer()
     by_part: list[tuple[dict, list[dict]]] = []
@@ -1116,8 +1158,13 @@ def body_html(paper_id: str, questions: list[dict], css_href: str, fonts_href: s
                 out.append(f'<p class="instr">{html.escape(t)}</p>')
         lo, hi = SECTION_RANGES.get(part["name"], (qs[0]["number"], qs[-1]["number"]))
         gap = [x for x in missing if lo <= x <= hi]
-        if gap:
-            out.append(f'<p class="instr">本部分没有第{"、".join(map(str, gap))}题，答题卡上这几题不填涂。</p>')
+        notes = [f'本部分没有第{"、".join(map(str, gap))}题'] if gap else []
+        whole = absent_sections(missing, [p["name"] for p, _ in by_part], part["name"], first=pi == 0)
+        if whole:
+            names = "、".join(n for n, _, _ in whole)
+            notes.append(f"本套不出{names}（第{whole[0][1]}—{whole[-1][2]}题）")
+        if notes:
+            out.append(f'<p class="instr">{"；".join(notes)}，答题卡上这几题不填涂。</p>')
         out.append('<p class="instr">请开始答题：</p>')
 
         current = None
