@@ -83,6 +83,20 @@
    "old": "从高到底",
    "new": "从高到低",
    "reason": "原卷错字"
+  },
+  {
+   "source": "GD2022-XJ-Q039",
+   "where": "stem",
+   "old": "一开始, 他发现",
+   "new": "一开始，他发现",
+   "reason": "原卷半角逗号"
+  },
+  {
+   "source": "GD2021-XZ-Q068",
+   "where": "stem",
+   "old": "右图为地球示意图",
+   "new": "下图为地球示意图",
+   "reason": "题图印在题干下方"
   }
  ],
  "material_edits": [
