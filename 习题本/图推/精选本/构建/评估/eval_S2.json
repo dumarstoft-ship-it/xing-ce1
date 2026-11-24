@@ -1,0 +1,1919 @@
+{
+ "range": "S2-01—S7-02",
+ "types": [
+  {
+   "name": "视图·轮廓与线条",
+   "method": "①先定方向：找斜面、圆柱、凹槽等特征面判断选项从哪边看（斜面只在与它垂直的方向投影成斜线，弧面只在正对时显弧线）。②再核外轮廓：连通物体的视图必连通，前后深度、高低比例要对，放桌上的物体不能悬空。③最后核内部线：两面相交必有线、共面无线、曲面与平面相切处有线、孔槽正对时只剩一个轮廓。",
+   "signals": "“从任一角度观看，哪项可能/不可能是视图”；物体带斜面、圆柱、凹槽、台阶，或两个物体摆在桌上",
+   "traps": "正视与后视、左视与右视、俯视与仰视互为镜像，不是同一张图；选项只差比例时最易漏看；把“看不见”当成“没有”",
+   "core": [
+    "S2-03",
+    "S2-05",
+    "S2-07"
+   ],
+   "advanced": [
+    "S2-06",
+    "S2-11",
+    "S2-12"
+   ],
+   "backup": [
+    "S2-09",
+    "S2-13",
+    "S2-14"
+   ]
+  },
+  {
+   "name": "视图·方块堆叠",
+   "method": "先数看得见的块，再补上必需的支撑块（上层块下面必须有块），用总数减出藏起来的块数；藏块只能放在被三面挡住、不露顶的位置，每列能藏几层要逐列数。颜色题把剩余颜色配给藏块，再逐个观察方向看最外层是否必露灰。",
+   "signals": "给出总块数或黑白块数；问俯视图、纯白视图或某一视图",
+   "traps": "能露出顶面的位置不能藏块；忘加支撑块；藏块颜色可以按“最有利”的方式安排",
+   "core": [
+    "S2-10"
+   ],
+   "advanced": [
+    "S2-08"
+   ],
+   "backup": []
+  },
+  {
+   "name": "立体识别",
+   "method": "数字立方体：与某面同框出现过的都是它的邻面，剩下的就是对面；先排除同时露出一对对面的选项，剩下的再核三面的顺/逆时针顺序。方块组合体：挑最特殊的部分（最长柱、伸出臂）作参照，判断整体转了多少度，再核其余块的相对位置。",
+   "signals": "“与左侧是同一物体/同一立方体的是”；给出同一立方体的几张图",
+   "traps": "只排相对面不核方位（镜像也会露出同样三面）；转动时把左右和前后弄反",
+   "core": [
+    "S7-01",
+    "S7-02"
+   ],
+   "advanced": [],
+   "backup": []
+  },
+  {
+   "name": "立体拼合·多块成形",
+   "method": "先数块数：整体总数=各零件之和，选项块数不对直接排除（S4-11一步出答案）。再用特殊块定位：灰/黑块、最长条、最高柱先放，零件可转但颜色块跟着转；剩下的空位逐层核对。选项之间只差一两块时，只核这几处差异对应的位置是空还是满（S4-03）。",
+   "signals": "给出整体（常附正、反两面图）和①②③，问？处；“补成立方体”",
+   "traps": "后视图里的块别漏数；隐藏块要靠总数推出；零件只能旋转不能变成镜像",
+   "core": [
+    "S4-03",
+    "S4-07",
+    "S4-11"
+   ],
+   "advanced": [
+    "S4-05",
+    "S4-08",
+    "S4-09",
+    "S4-18"
+   ],
+   "backup": [
+    "S4-12",
+    "S4-13",
+    "S4-14",
+    "S4-16"
+   ]
+  },
+  {
+   "name": "立体拼合·同件拼合",
+   "method": "先比体积：零件块数×个数必须等于选项块数（S4-02一步排除）；体积相同再用标记定位：可见黑面所在的块就是零件拐角，零件所在平面随之确定，剩余块组不成合法零件即排除。空间里留空位时先确定空位，再试放小件。",
+   "signals": "“由两个/三个左侧图形拼成”；零件带黑面；给定空间有空格",
+   "traps": "只核体积不核形状；L形零件的黑面限定了它的朝向",
+   "core": [
+    "S4-04"
+   ],
+   "advanced": [
+    "S4-06"
+   ],
+   "backup": []
+  },
+  {
+   "name": "折纸剪纸",
+   "method": "每条折痕都是展开图的对称轴：沿两条对角线各折一次，展开图须同时关于两条对角线对称（逐边核镜像）。来回折的长条，剪口在哪一侧，那一侧的每条折痕处各出一个完整对称花纹，纸边一侧只出半个。求投影面积按“先覆盖取外轮廓、再折时重叠部分只算一次”。",
+   "signals": "正方形沿对角线折后剪；长条纸来回折后剪；问展开图或折后面积",
+   "traps": "对称轴方向搞错；数花纹时漏看两端纸边在哪一侧",
+   "core": [
+    "S6-03"
+   ],
+   "advanced": [
+    "S6-02"
+   ],
+   "backup": []
+  },
+  {
+   "name": "平面拼合·计数速判",
+   "method": "块全是同形三角形：先数各朝向的个数，只平移时朝向不变，选项朝向个数不符直接排除。方格块：先数总格数排除格数不符的选项，再把最长或最怪的块放进选项中唯一能容纳它的位置；两个L形加小条时想到围成空心框。",
+   "signals": "四块三角形朝向不同；块由单位方格组成",
+   "traps": "格数相等的选项要看长条能否放下；正三角形拼不出直角",
+   "core": [
+    "S5-12",
+    "S5-21"
+   ],
+   "advanced": [
+    "S5-35"
+   ],
+   "backup": [
+    "S5-06",
+    "S5-22",
+    "S5-30"
+   ]
+  },
+  {
+   "name": "平面拼合·只平移",
+   "method": "只平移时每条边的方向不变：先在选项外轮廓上找最特殊的边（唯一方向的斜边、最长斜边、尖角、凹口），回题干找唯一能提供它的块，斜率或长度不符直接排除；内部拼缝的斜边要两两等长配对；曲线块凸弧配同样弯度的凹弧、尖角对尖角。",
+   "signals": "“只能通过上、下、左、右平移”；四块多边形或曲线块，选项为外轮廓",
+   "traps": "斜率相近但长度不同；把需要旋转才能用的边当成可用",
+   "core": [
+    "S5-05"
+   ],
+   "advanced": [
+    "S5-01",
+    "S5-07",
+    "S5-10"
+   ],
+   "backup": [
+    "S5-03",
+    "S5-14",
+    "S5-18"
+   ]
+  },
+  {
+   "name": "平面拼合·翻面换色",
+   "method": "旋转不换色、翻面才换色：在选项中找到每块的位置，若形状与题干相比是镜像（顺逆方向反了），颜色必须与题干相反；优先用不对称的块（折角块、直角三角形）判断，对称块翻不翻都一样。",
+   "signals": "“每张纸片一面黑一面白，可平移、旋转、翻转”",
+   "traps": "把单纯旋转误判为镜像；用等腰三角形等对称块判断无效",
+   "core": [
+    "S5-02"
+   ],
+   "advanced": [
+    "S5-11"
+   ],
+   "backup": [
+    "S5-15"
+   ]
+  },
+  {
+   "name": "平面拼合·分割与旋转拼",
+   "method": "允许旋转时比边长和角：目标轮廓的直角、凹角、最长边只能由某一块提供，先放最大或最特殊的块定底边，再用小块补凹口。找多余块时，能对上目标各段边的块留下，对不上的就是多余块；可转不可翻时注意不对称三角形的镜像。",
+   "signals": "“可以平移、旋转但不可翻转”；“找出不属于分割所得的图形”；三块自由拼合",
+   "traps": "可旋转不等于可翻转；形状相近的三角形要比边长比例",
+   "core": [
+    "S5-08"
+   ],
+   "advanced": [
+    "S5-28"
+   ],
+   "backup": []
+  },
+  {
+   "name": "截面·方块过三点",
+   "method": "把三个顶点写成小方块坐标（列、排、层），求出切面；三点确定的平面平行于某条棱时，只切到“层号与排号（或列号）满足同一关系”的那一串小块，截面是3×3小格，逐块读颜色；与选项比对时允许旋转和翻面。",
+   "signals": "若干白/灰小立方体组成的多面体，用经过A、B、C三个顶点的平面切",
+   "traps": "把立体表面颜色直接搬到截面；只碰到一条棱的小块不算入截面",
+   "core": [
+    "S3-01"
+   ],
+   "advanced": [],
+   "backup": [
+    "S3-02"
+   ]
+  },
+  {
+   "name": "截面·形状判断",
+   "method": "先用固定结论排除：正方体/长方体切一个角只得锐角三角形；截面边数=切到的面数；竖切棱台、圆台侧边必斜；旋转体只有垂直于轴切才得圆，含同轴空腔则必为圆环；同一高度只有一种结构；通孔竖切必断开、盲孔竖切缺口朝开口敞开；竖切时各部分高度比例不变；能一刀平分成全等/镜像两块须有对称面或对称中心。",
+   "signals": "“从任一面剖开，哪项可能/不可能是截面”；含空腔、圆柱、棱台、台阶",
+   "traps": "把立体原有表面当成截面；忽视空腔、孔是否贯通；只看形状不看比例",
+   "core": [
+    "S3-03",
+    "S3-05"
+   ],
+   "advanced": [
+    "S3-04",
+    "S3-08",
+    "S3-12",
+    "S3-14"
+   ],
+   "backup": [
+    "S3-06",
+    "S3-11",
+    "S3-17"
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "S2-01",
+   "tier": "留作限时",
+   "type": "视图·轮廓与线条",
+   "feature": "一条棱垂直底面的四棱锥，问俯视图",
+   "fast_path": "垂直底面的棱→顶点投影落在底面一角；只有通向对角顶点的棱投影成对角线→C",
+   "time_target": 45,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S2-02"
+   ],
+   "reason": "2025广东真题，按要求留作限时；固定结论“垂直棱投影成点”可秒选。"
+  },
+  {
+   "id": "S2-02",
+   "tier": "留作限时",
+   "type": "视图·轮廓与线条",
+   "feature": "顶面内凹成弧的块体，问不可能的视图",
+   "fast_path": "弧线只在正对弧面时出现且在顶部；C露出底部矩形带却把侧边画成弧，方向矛盾→C",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S2-01",
+    "S2-12"
+   ],
+   "reason": "2024广东真题，按要求留作限时。"
+  },
+  {
+   "id": "S2-03",
+   "tier": "核心",
+   "type": "视图·轮廓与线条",
+   "feature": "两块方板放桌上，选正前方看到的轮廓",
+   "fast_path": "每块要么着地、要么压在另一块上；A右上块底边悬空无支撑→A（B是两块平放叠摞，可能）",
+   "time_target": 30,
+   "difficulty": 2,
+   "speed_value": 5,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "解析“两物体底边应在同一水平线”说法过强：B是两块平放叠摞，同样成立；A错在右上块悬空。",
+   "similar_to": [
+    "S2-14"
+   ],
+   "reason": "广东县级真题，30秒内可用“不能悬空”排除，代表摆放类视图。"
+  },
+  {
+   "id": "S2-04",
+   "tier": "删",
+   "type": "视图·方块堆叠",
+   "feature": "两幅方块视图带灰块，选最可能的立体",
+   "fast_path": "（争议）左视与仰视都能对上B；A若藏着的连接块为白色也能匹配，原解析按“假设更少”选B",
+   "time_target": 90,
+   "difficulty": 4,
+   "speed_value": 1,
+   "recognition_value": 1,
+   "answer_ok": null,
+   "issue": "原书已注明：A若隐藏的底部连接块为白色也能匹配两视图，不能严格排除，答案不唯一。",
+   "similar_to": [
+    "S2-08"
+   ],
+   "reason": "原书标注的争议题，答案靠“最有可能”取舍，删。"
+  },
+  {
+   "id": "S2-05",
+   "tier": "核心",
+   "type": "视图·轮廓与线条",
+   "feature": "有厚度的U形磁铁状实体，选不可能的视图",
+   "fast_path": "连通物体的任一视图都连通：俯视时两臂之间能看到U形底部，C分成两块→C",
+   "time_target": 30,
+   "difficulty": 2,
+   "speed_value": 5,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "解析“C漏掉了相应轮廓线”表述不准：C的问题是两块分离，俯视轮廓应连成一个矩形。",
+   "similar_to": [
+    "S2-09"
+   ],
+   "reason": "国考真题，“连通性”一条规则即可秒排，速度价值高。"
+  },
+  {
+   "id": "S2-06",
+   "tier": "进阶",
+   "type": "视图·轮廓与线条",
+   "feature": "带斜面端头的复杂多面体，选可能的视图",
+   "fast_path": "斜面只在与它垂直的方向投影成斜线：先认定斜线出现在正视，再核小方块与竖柱位置→B",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S2-13"
+   ],
+   "reason": "2021国考，示范“用斜面定观察方向”，比核心题多一步方向判断。"
+  },
+  {
+   "id": "S2-07",
+   "tier": "核心",
+   "type": "视图·轮廓与线条",
+   "feature": "带切角和台阶的L形体，C、D外形相同只差比例",
+   "fast_path": "C、D同为右视轮廓只差宽度：后部高块与前部低块深度相等，D比例错→D",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "解析称“B可由上方得到”，实为从下往上看（仰视）所得；不影响答案。",
+   "similar_to": [
+    "S2-14"
+   ],
+   "reason": "国考经典，练“两选项同形时比比例”的最快排除。"
+  },
+  {
+   "id": "S2-08",
+   "tier": "进阶",
+   "type": "视图·方块堆叠",
+   "feature": "8白4灰小方块堆叠，找某视图可全白的",
+   "fast_path": "数可见灰块：B、C藏的2块全是灰必露；A每个方向都露灰；D可把藏着的灰块压在白块下，俯视全白→D",
+   "time_target": 90,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S2-10"
+   ],
+   "reason": "2025江苏新题型：用“数可见块推藏块颜色”，难度高于计数题。"
+  },
+  {
+   "id": "S2-09",
+   "tier": "备选",
+   "type": "视图·轮廓与线条",
+   "feature": "实心块+开槽块+四面体组合，选不可能的视图",
+   "fast_path": "凹槽正对看只剩一个矩形轮廓，不会多出中线；D槽中多一条竖线→D",
+   "time_target": 45,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S2-12",
+    "S2-05"
+   ],
+   "reason": "2025浙江，考“多画一条线”，与S2-12同类，作备选。"
+  },
+  {
+   "id": "S2-10",
+   "tier": "核心",
+   "type": "视图·方块堆叠",
+   "feature": "墙角堆15个纸箱，给效果图选俯视图",
+   "fast_path": "可见10块+必需支撑2块=12，还差3块；藏块每列最多2层：A、D只多1格最多藏2块，B多出的格会露顶→C",
+   "time_target": 90,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S2-08"
+   ],
+   "reason": "2025浙江，“已知块+藏块容量”计数法的最佳代表，选项比对清楚。"
+  },
+  {
+   "id": "S2-11",
+   "tier": "进阶",
+   "type": "视图·轮廓与线条",
+   "feature": "带斜筋、顶槽和U形缺口底座的支架，选不是视图的",
+   "fast_path": "俯视时立起部分与底座的交界是一条贯通全宽的横线；C在右段断开→C",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 4,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S2-12"
+   ],
+   "reason": "2024河北，物体复杂但抓“交界线必贯通”可快速锁定，属典型难点。"
+  },
+  {
+   "id": "S2-12",
+   "tier": "进阶",
+   "type": "视图·轮廓与线条",
+   "feature": "顶上有小方块和小圆柱的积木体，选不可能的视图",
+   "fast_path": "圆柱与平面只相切于一条线，连接处必须画横线（与平面共面的方块则无线）；A圆柱下缺横线→A",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S2-09",
+    "S2-11"
+   ],
+   "reason": "2024江苏，“共面无线、相切有线”的标准考法。"
+  },
+  {
+   "id": "S2-13",
+   "tier": "备选",
+   "type": "视图·轮廓与线条",
+   "feature": "立方体顶上立圆柱、前方接斜顶块，选可能的视图",
+   "fast_path": "圆柱居中在立方体顶面→小方块应居中；斜顶在右视中为斜线且不带平台→B",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S2-06"
+   ],
+   "reason": "2022四川，方法与S2-06相同，作备选。"
+  },
+  {
+   "id": "S2-14",
+   "tier": "备选",
+   "type": "视图·轮廓与线条",
+   "feature": "立方体与L形体前后摆放，选主视图和左视图组合",
+   "fast_path": "抓两处尺寸：L形立柱比立方体高（排除A、B），左视时两者宽度相同（排除D）→C",
+   "time_target": 45,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S2-07",
+    "S2-03"
+   ],
+   "reason": "2019浙江，“比尺寸”思路与S2-07重复，作备选。"
+  },
+  {
+   "id": "S3-01",
+   "tier": "核心",
+   "type": "截面·方块过三点",
+   "feature": "13白5灰方块体，用过A、B、C三顶点的平面切",
+   "fast_path": "坐标化：A(0,2,2)、B(3,3,3)、C(3,0,0)得切面“高=深”，只切层号=排号的9块，逐块读色、可翻面→B",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S3-02"
+   ],
+   "reason": "2024国考，三点共一斜面时“只切一串对角块”是最快路径，已逐块核对答案。"
+  },
+  {
+   "id": "S3-02",
+   "tier": "备选",
+   "type": "截面·方块过三点",
+   "feature": "13白5灰方块体，过A、B、C切",
+   "fast_path": "三点得切面“列+层=常数”，只切斜对角一串9块，截面3×3格，逐块读色（可翻面）→B",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S3-01"
+   ],
+   "reason": "2024国考地市卷，与S3-01方法完全相同，留作备选。"
+  },
+  {
+   "id": "S3-03",
+   "tier": "核心",
+   "type": "截面·形状判断",
+   "feature": "小圆柱立在空心大圆柱上，选不可能的截面",
+   "fast_path": "水平切：上段得实心圆、下段得圆环，同一高度不可能“外环+中心实心圆”→A",
+   "time_target": 45,
+   "difficulty": 2,
+   "speed_value": 5,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S3-14",
+    "S3-04"
+   ],
+   "reason": "2023国考，“同一高度只有一种结构”的代表，45秒内可做完。"
+  },
+  {
+   "id": "S3-04",
+   "tier": "进阶",
+   "type": "截面·形状判断",
+   "feature": "圆锥接倒圆台、内含锥形空腔，选可能的截面",
+   "fast_path": "空心旋转体：水平切过空腔得圆环B；过顶点竖切必是等腰三角形（C不等腰）；侧边不会是竖直直线→B",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S3-03",
+    "S3-14"
+   ],
+   "reason": "2022国考，补充“过顶点得等腰三角形”结论，比S3-03多一类排除。"
+  },
+  {
+   "id": "S3-05",
+   "tier": "核心",
+   "type": "截面·形状判断",
+   "feature": "半个空心圆柱竖立、旁接长方体，选可能的截面",
+   "fast_path": "半圆柱切不出整环（排A）；长方体切角只得锐角三角形（排D）；B无对应切法；贴端面竖切得L形→C",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S3-12"
+   ],
+   "reason": "2022国考，一题用上“切角只有锐角三角形”等两条固定结论。"
+  },
+  {
+   "id": "S3-06",
+   "tier": "备选",
+   "type": "截面·形状判断",
+   "feature": "底座连两块错开的竖板，选不可能的截面",
+   "fast_path": "一刀最多切出与立体分支数相同的分离块：该体最多两块，D三个三角形→D",
+   "time_target": 30,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S3-05"
+   ],
+   "reason": "2020国考，规则简单，作备选。"
+  },
+  {
+   "id": "S3-07",
+   "tier": "删",
+   "type": "截面·形状判断",
+   "feature": "6个小正方体组成的台阶体，选不可能的截面",
+   "fast_path": "A、B、C可一刀截得；D要同时切出上部菱形和下部三角形，所需切面不一致→D",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S3-01",
+    "S3-11"
+   ],
+   "reason": "2019国考，解析只说“切面不一致”难以操作，方块截面已有S3-01更好的代表。"
+  },
+  {
+   "id": "S3-08",
+   "tier": "进阶",
+   "type": "截面·形状判断",
+   "feature": "四个方块组合体，选不能一刀分成全等/镜像两半的",
+   "fast_path": "须有对称面或对称中心：A水平、C竖切、D沿对角都能平分；B各凸起高度错开无法配对→B",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S3-05"
+   ],
+   "reason": "2018国考，“一刀平分”是截面题的另一问法，作进阶了解。"
+  },
+  {
+   "id": "S3-09",
+   "tier": "删",
+   "type": "截面·形状判断",
+   "feature": "U形实体，选可能的截面",
+   "fast_path": "沿一侧壁竖切、避开空腔得矩形A；直角三角形、U外轮廓、梯形均无对应切法→A",
+   "time_target": 30,
+   "difficulty": 1,
+   "speed_value": 2,
+   "recognition_value": 1,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S3-06"
+   ],
+   "reason": "2016国考，正确项一眼可见，训练价值低。"
+  },
+  {
+   "id": "S3-10",
+   "tier": "删",
+   "type": "截面·形状判断",
+   "feature": "正方体切去上半部分大部，选不可能的截面",
+   "fast_path": "后方竖切得长矩形B、跨台阶竖切得L形D、斜切两层得A；尖顶五边形C截不出→C",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S3-11",
+    "S3-05"
+   ],
+   "reason": "2015国考，年代早，台阶体截面已有S3-11、S3-05。"
+  },
+  {
+   "id": "S3-11",
+   "tier": "备选",
+   "type": "截面·形状判断",
+   "feature": "L形台阶体前方另有一块小长方体，选不可能的截面",
+   "fast_path": "竖切时各部分高度不变：左侧小块比L形立柱矮，D两块等高→D；A、B、C可由不同切面得到",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "解析含糊；更直接的理由是竖切时高度比例不变，左块比L形立柱矮，D却画成等高。",
+   "similar_to": [
+    "S3-10"
+   ],
+   "reason": "2023浙江，可用“高度比例”快速排除，作备选。"
+  },
+  {
+   "id": "S3-12",
+   "tier": "进阶",
+   "type": "截面·形状判断",
+   "feature": "三棱台中挖竖直圆柱孔，选不可能的截面",
+   "fast_path": "棱台侧面是斜面，竖切过圆孔时两段外侧边必是斜的，得不到B的两条矩形→B",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S3-14",
+    "S3-05"
+   ],
+   "reason": "2022浙江，“竖切棱台侧边必斜”一条结论直接出答案。"
+  },
+  {
+   "id": "S3-13",
+   "tier": "删",
+   "type": "截面·形状判断",
+   "feature": "上下两段扭转的柱体，选不可能的截面",
+   "fast_path": "（解析）A、B斜切上下两部分、C切下部得矩形；D的V形缺口与轮廓不符→D",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 1,
+   "recognition_value": 2,
+   "answer_ok": null,
+   "issue": "解析未说明D为何不可能，立体结构难从图确认，无法核实。",
+   "similar_to": [
+    "S3-11"
+   ],
+   "reason": "2021山东，结构难辨、解析含糊，正确率41%，删。"
+  },
+  {
+   "id": "S3-14",
+   "tier": "进阶",
+   "type": "截面·形状判断",
+   "feature": "圆台中心挖去倒圆锥，选不可能的截面",
+   "fast_path": "旋转体截面是圆只能垂直轴切（水平切），而水平切必经中央锥形空腔，只能是圆环→D",
+   "time_target": 30,
+   "difficulty": 2,
+   "speed_value": 5,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S3-03",
+    "S3-04"
+   ],
+   "reason": "2020河北，“圆⇔垂直轴切”的反推用法，30秒可完成。"
+  },
+  {
+   "id": "S3-15",
+   "tier": "删",
+   "type": "截面·形状判断",
+   "feature": "正方体顶面挖倒圆锥，选不可能的截面",
+   "fast_path": "（参考答案思路）A需正方形外框+椭圆孔：正方形截面只能平行于面，切圆锥只得圆或三角形→A",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 1,
+   "recognition_value": 2,
+   "answer_ok": null,
+   "issue": "题图A外框实为长方形（宽:高≈1:1.18），用平行于一组棱、约58°倾斜的切面可同时得到长方形外框和封闭椭圆孔，A其实可能；参考答案只在“A外框为正方形”时成立，题图有瑕疵。",
+   "similar_to": [
+    "S3-14"
+   ],
+   "reason": "按题图比例A也能切出，题目不严谨，删。"
+  },
+  {
+   "id": "S3-16",
+   "tier": "删",
+   "type": "截面·形状判断",
+   "feature": "正二十面体，问截面边数不可能是几",
+   "fast_path": "截面边数=切到的面数；每个顶点连5个面，切角得五边形、切腰得十边形，三角形不可能→D",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S3-05"
+   ],
+   "reason": "2020山东，冷门立体，非广东考法；“边数=切到的面数”已写进方法。"
+  },
+  {
+   "id": "S3-17",
+   "tier": "备选",
+   "type": "截面·形状判断",
+   "feature": "圆柱顶面开盲孔，选不可能的截面",
+   "fast_path": "盲孔从顶面开口：竖切过孔，缺口必须向上敞开；A缺口顶上多一条封口线→A",
+   "time_target": 30,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S3-18"
+   ],
+   "reason": "2019江苏，孔的“开口方向”规则清楚，作备选。"
+  },
+  {
+   "id": "S3-18",
+   "tier": "删",
+   "type": "截面·形状判断",
+   "feature": "立方体上叠圆柱并打通孔，选不可能的截面",
+   "fast_path": "通孔竖切必断开成两块；B中间仍连成一个矩形并带分界线→B",
+   "time_target": 30,
+   "difficulty": 2,
+   "speed_value": 3,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S3-17"
+   ],
+   "reason": "2017浙江，孔类截面与S3-17重复，保留后者。"
+  },
+  {
+   "id": "S4-01",
+   "tier": "留作限时",
+   "type": "立体拼合·多块成形",
+   "feature": "两块不规则方块体，选第三块补成正方体",
+   "fast_path": "总27块，两件共20块，补件需7块；A至少8块先排除，再按空位试拼，只有C能补满→C",
+   "time_target": 90,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S4-03"
+   ],
+   "reason": "2025广东真题，按要求留作限时；已穷举验证只有C能拼成。"
+  },
+  {
+   "id": "S4-02",
+   "tier": "留作限时",
+   "type": "立体拼合·同件拼合",
+   "feature": "两个4块零件，选不能拼成的",
+   "fast_path": "每件4块，两件共8块；D只有7块，体积不够→D",
+   "time_target": 30,
+   "difficulty": 1,
+   "speed_value": 5,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S4-04"
+   ],
+   "reason": "2024广东真题，按要求留作限时；数块数一步出答案。"
+  },
+  {
+   "id": "S4-03",
+   "tier": "核心",
+   "type": "立体拼合·多块成形",
+   "feature": "一块方块体，选能与它合成3×3×3立方体的一块",
+   "fast_path": "四个选项只差两处（上层左后、底层右后）：原图上层左后空→需补，底层右后已占→不能有；只有C",
+   "time_target": 90,
+   "difficulty": 4,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S4-01",
+    "S4-13"
+   ],
+   "reason": "广东县级真题；“只核选项差异处”的提速示范，已逐块核对C。"
+  },
+  {
+   "id": "S4-04",
+   "tier": "核心",
+   "type": "立体拼合·同件拼合",
+   "feature": "3块L形零件（拐角一面黑），选不能由三件拼成的",
+   "fast_path": "可见黑面锁定零件拐角及所在平面；D两份L定死后，剩下两块与顶层无法再组成带拐角的L→D",
+   "time_target": 90,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S4-02",
+    "S4-06"
+   ],
+   "reason": "广东县级真题，“用黑面锁定零件”方法清楚，已核对A、B、C均可拼。"
+  },
+  {
+   "id": "S4-05",
+   "tier": "进阶",
+   "type": "立体拼合·多块成形",
+   "feature": "15白3灰多面体给正、反两面图，①②已知求③",
+   "fast_path": "正反两图定出全部18块及3灰块位置；①②各带1灰按灰块放入，余下6块（含1灰）只与B同形→B",
+   "time_target": 120,
+   "difficulty": 5,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S4-07",
+    "S4-14"
+   ],
+   "reason": "2025国考最新考法（正反两面图+灰块），难度高，已穷举验证B唯一。"
+  },
+  {
+   "id": "S4-06",
+   "tier": "进阶",
+   "type": "立体拼合·同件拼合",
+   "feature": "4个零件（共34块）放进3×3×4空间，选不能拼成的",
+   "fast_path": "4件共34块放36格须空2格；先放两件10块大件，再试两件7块小件，只有C的空位使小件放不下→C",
+   "time_target": 120,
+   "difficulty": 5,
+   "speed_value": 2,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S4-04"
+   ],
+   "reason": "2025国考执法卷，需试拼，耗时长；已穷举验证A、B、D可拼、C不可。"
+  },
+  {
+   "id": "S4-07",
+   "tier": "核心",
+   "type": "立体拼合·多块成形",
+   "feature": "15白3灰多面体，①②已知选③",
+   "fast_path": "①②各含1个灰块，按灰块位置放入后，余下6块中灰块在一端，形状和灰块位置只对得上A",
+   "time_target": 90,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S4-05",
+    "S4-08"
+   ],
+   "reason": "2024国考，“灰块定位”三块拼合的标准代表，已穷举验证A唯一。"
+  },
+  {
+   "id": "S4-08",
+   "tier": "进阶",
+   "type": "立体拼合·多块成形",
+   "feature": "台阶状多面体，①②已知选③",
+   "fast_path": "②竖长列放后侧，①转成中间十字层，余下5~6块补前排和侧边凹位，只有D吻合",
+   "time_target": 90,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S4-07",
+    "S4-09"
+   ],
+   "reason": "2022国考，无颜色提示、要靠形状嵌合，作进阶；已穷举验证D唯一。"
+  },
+  {
+   "id": "S4-09",
+   "tier": "进阶",
+   "type": "立体拼合·多块成形",
+   "feature": "多面体正视+后视图，①②已知选③",
+   "fast_path": "合并正、后视图得整体；①的长L定底边与后柱，②补中部，余块须横放补上方横梁并向下伸一格→C",
+   "time_target": 120,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S4-08",
+    "S4-10"
+   ],
+   "reason": "2021国考（正确率53%），正后视合成整体的典型难题。"
+  },
+  {
+   "id": "S4-10",
+   "tier": "删",
+   "type": "立体拼合·多块成形",
+   "feature": "多面体正视+后视图，①②已知选③",
+   "fast_path": "由正反两图定1前2后，使两块底层缺口互补，第二层缺3块（排C、D），最左不能缺→B",
+   "time_target": 90,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S4-09",
+    "S4-05"
+   ],
+   "reason": "2020国考，与S4-09同类，题图很小难辨，删。"
+  },
+  {
+   "id": "S4-11",
+   "tier": "核心",
+   "type": "立体拼合·多块成形",
+   "feature": "多面体正视+后视图，①②③已知求④",
+   "fast_path": "按前、中、后三排数总块数2+8+12=22，减①②③共16块，④须6块，只有D是6块→D",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 5,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S4-09"
+   ],
+   "reason": "2019国考，“先数块数”一步出答案，速度价值最高。"
+  },
+  {
+   "id": "S4-12",
+   "tier": "备选",
+   "type": "立体拼合·多块成形",
+   "feature": "非单位块：①由②③④组成，选不能填入④的",
+   "fast_path": "②对准带小凸起的底部，③长方体可放上层、左侧或右侧，余下分别为A、C、D，唯独得不到T形B",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S4-08"
+   ],
+   "reason": "2017国考，长方体块拼合，思路可靠，作备选。"
+  },
+  {
+   "id": "S4-13",
+   "tier": "备选",
+   "type": "立体拼合·多块成形",
+   "feature": "3×3×3被分解，①②已知选第三块",
+   "fast_path": "补回27块：①翻转填右下较深缺口，②平放成T形填上层一侧，余下上层需4格L形→B",
+   "time_target": 90,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S4-03"
+   ],
+   "reason": "2025河北，与S4-03同为补立方体，作备选。"
+  },
+  {
+   "id": "S4-14",
+   "tier": "备选",
+   "type": "立体拼合·多块成形",
+   "feature": "15白3黑多面体正后视图，①②已知选③",
+   "fast_path": "用3个黑块锁定零件朝向：①转后放下部，②竖起补一侧阶梯，余块须补另一侧长列且含指定黑块→D",
+   "time_target": 90,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S4-05",
+    "S4-07"
+   ],
+   "reason": "2025四川，与国考灰块题同法，作备选。"
+  },
+  {
+   "id": "S4-15",
+   "tier": "删",
+   "type": "立体拼合·多块成形",
+   "feature": "多面体视图，①②已知选③",
+   "fast_path": "①不能占满3层，旋成2层放右侧，②转后放左侧；余块上下两层各缺3格→A",
+   "time_target": 90,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S4-08"
+   ],
+   "reason": "2024四川，与国考三块拼合重复，删。"
+  },
+  {
+   "id": "S4-16",
+   "tier": "备选",
+   "type": "立体拼合·多块成形",
+   "feature": "缺块的立方体，①②已知选③",
+   "fast_path": "①放下方，②转向补右下；剩余上部是横向伸展、局部下垂的补块，A翻转后正好盖住→A",
+   "time_target": 90,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S4-03",
+    "S4-13"
+   ],
+   "reason": "2024浙江，形状嵌合清楚，作备选。"
+  },
+  {
+   "id": "S4-17",
+   "tier": "删",
+   "type": "立体拼合·多块成形",
+   "feature": "18白3灰多面体，①②③已知求④",
+   "fast_path": "灰块定位：余块最高2层（排D），缺口不规则（排C）；1、3灰块下方缺块，A能补齐→A",
+   "time_target": 120,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S4-07",
+    "S4-11"
+   ],
+   "reason": "2022四川，图片模糊，与S4-07、S4-11重复，删。"
+  },
+  {
+   "id": "S4-18",
+   "tier": "进阶",
+   "type": "立体拼合·多块成形",
+   "feature": "正方体与4个四面体，不旋转补第5块",
+   "fast_path": "正方体=4个切角直角四面体+1个正四面体；缺的是中央正四面体，只有D六条棱等长→D",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "原书注明缺最终拼合示意图；题图本身完整，不影响作答。",
+   "similar_to": [
+    "S3-05"
+   ],
+   "reason": "2021四川（正确率31%），记住“切掉四角剩正四面体”即可秒选。"
+  },
+  {
+   "id": "S5-01",
+   "tier": "进阶",
+   "type": "平面拼合·只平移",
+   "feature": "五选四：左尖右平的五边形由哪四块拼成（只平移）",
+   "fast_path": "目标左尖右平：①给左上斜边、④给左下斜边、③封右侧竖边、⑤嵌顶部；②平行四边形无处可放→D",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-05",
+    "S5-10"
+   ],
+   "reason": "2025江苏新变形“选块组合”，用外轮廓斜边定块，作进阶。"
+  },
+  {
+   "id": "S5-02",
+   "tier": "核心",
+   "type": "平面拼合·翻面换色",
+   "feature": "四张一面黑一面白的纸片拼五角星",
+   "fast_path": "旋转不换色、翻面才换色：逐块看形状是否成镜像，镜像的必须换色；A、B颜色不对，D右上无对应块→C",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-11",
+    "S5-15"
+   ],
+   "reason": "2025江苏，翻面换色的最新代表，规则一句话可用。"
+  },
+  {
+   "id": "S5-03",
+   "tier": "备选",
+   "type": "平面拼合·只平移",
+   "feature": "四块梯形/三角形只平移，选拼成的四边形",
+   "fast_path": "第1、2块排在上面，第3块放左下，细三角补右下；外框左边竖直、右边斜→C",
+   "time_target": 45,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-05",
+    "S5-09"
+   ],
+   "reason": "2025四川，简单可靠，作备选。"
+  },
+  {
+   "id": "S5-04",
+   "tier": "删",
+   "type": "平面拼合·只平移",
+   "feature": "菱形、三角形等四块只平移，选拼成的轮廓",
+   "fast_path": "第4块放左上、第1块右上，第2、3块接下方，下边留出凹口→A",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-05"
+   ],
+   "reason": "2024江苏，与S5-05同年同类、方法相同，保留S5-05，删。"
+  },
+  {
+   "id": "S5-05",
+   "tier": "核心",
+   "type": "平面拼合·只平移",
+   "feature": "三角形、两个平行四边形、直角梯形只平移",
+   "fast_path": "只有①有“\\”边：选项轮廓中的“\\”边须与①右边等长同斜率，C、D的“\\”边过长排除，再核A、B→B",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-04",
+    "S5-13"
+   ],
+   "reason": "2024江苏，“找唯一方向的斜边”示范最清楚的一题。"
+  },
+  {
+   "id": "S5-06",
+   "tier": "备选",
+   "type": "平面拼合·计数速判",
+   "feature": "T形、长条、两种L形直角块只平移",
+   "fast_path": "长条放最左，长L铺底，T形放上部中间，折角块接右侧，凸起与凹口一一对上→B",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-12",
+    "S5-22"
+   ],
+   "reason": "2024江苏直角块，作备选。"
+  },
+  {
+   "id": "S5-07",
+   "tier": "进阶",
+   "type": "平面拼合·只平移",
+   "feature": "四块曲边块只平移，选拼成的图形",
+   "fast_path": "先数选项轮廓的尖角与凹凸弧，再逐块对应：凸弧配凹弧、尖角对尖角→D",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-14",
+    "S5-20"
+   ],
+   "reason": "2024江苏，曲线块的代表，作进阶。"
+  },
+  {
+   "id": "S5-08",
+   "tier": "核心",
+   "type": "平面拼合·分割与旋转拼",
+   "feature": "缺口正方形可分成三个三角形，找不属于的一个",
+   "fast_path": "可旋转不可翻：原图凹角两侧与底边须由三角形的边拼成；A、C、D能对上，B多余→B",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-28"
+   ],
+   "reason": "2024江苏，分割找多余块的唯一代表。"
+  },
+  {
+   "id": "S5-09",
+   "tier": "删",
+   "type": "平面拼合·只平移",
+   "feature": "四个三角形不旋转不翻转，选拼成的四边形",
+   "fast_path": "第1块铺底、第2块放顶、第3、4块补两侧，拼成左侧竖直、右侧倾斜的梯形→D",
+   "time_target": 45,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-18",
+    "S5-03"
+   ],
+   "reason": "2024四川，四个三角形拼四边形，与S5-03、S5-18重复，删。"
+  },
+  {
+   "id": "S5-10",
+   "tier": "进阶",
+   "type": "平面拼合·只平移",
+   "feature": "给三块和目标图形，选第四块（只平移）",
+   "fast_path": "把前三块按原方向放进目标轮廓，剩下的空缺就是答案形状→A",
+   "time_target": 45,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-01"
+   ],
+   "reason": "2023江苏“补第四块”变形，作进阶。"
+  },
+  {
+   "id": "S5-11",
+   "tier": "进阶",
+   "type": "平面拼合·翻面换色",
+   "feature": "黑白纸片可翻转，选不能拼成的",
+   "fast_path": "翻面必换色：B中两块长折角纸片相对原形是镜像却仍保留原色→不能拼成，选B",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-02",
+    "S5-15"
+   ],
+   "reason": "2023江苏，翻面换色的“选不能”问法，作进阶。"
+  },
+  {
+   "id": "S5-12",
+   "tier": "核心",
+   "type": "平面拼合·计数速判",
+   "feature": "四块方格块（3、4、4、5格）只平移",
+   "fast_path": "数格3+4+4+5=16，选4×4；三格L左上、正方形居中、短L左下、长折条沿顶边右段和右列→A",
+   "time_target": 45,
+   "difficulty": 2,
+   "speed_value": 5,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-40",
+    "S5-22"
+   ],
+   "reason": "2022江苏，“先数格”的代表，与S5-40同构保留较新者。"
+  },
+  {
+   "id": "S5-13",
+   "tier": "删",
+   "type": "平面拼合·只平移",
+   "feature": "四块多边形只平移，选带凹口的六边形",
+   "fast_path": "第2块在顶、第4块接其右下，第1块右下、第3块左下，左侧留水平凹口→D",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-05"
+   ],
+   "reason": "2022江苏，只平移多边形，与S5-05重复。"
+  },
+  {
+   "id": "S5-14",
+   "tier": "备选",
+   "type": "平面拼合·只平移",
+   "feature": "四块曲边块只平移",
+   "fast_path": "凹凸弧逐对贴合，上方两个尖峰来自块的尖角，下方连成圆弧→A",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-07",
+    "S5-20"
+   ],
+   "reason": "2022江苏曲线块，作备选。"
+  },
+  {
+   "id": "S5-15",
+   "tier": "备选",
+   "type": "平面拼合·翻面换色",
+   "feature": "黑白纸片可翻转，拼成正方形",
+   "fast_path": "小白三角放左下、大白三角放顶、黑三角放右下、黑四边形填中部，颜色形状都对→D",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "题干“翻账”应为“翻转”。",
+   "similar_to": [
+    "S5-02",
+    "S5-16"
+   ],
+   "reason": "2022江苏，翻面换色，作备选。"
+  },
+  {
+   "id": "S5-16",
+   "tier": "删",
+   "type": "平面拼合·翻面换色",
+   "feature": "黑白纸片可翻转，选拼成的图形",
+   "fast_path": "白四边形翻面变黑、黑三角翻面变白拼下端，另两块旋转后接上端→C",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-15",
+    "S5-02"
+   ],
+   "reason": "2022江苏，与S5-15同类且图片小而模糊，删。"
+  },
+  {
+   "id": "S5-17",
+   "tier": "删",
+   "type": "平面拼合·分割与旋转拼",
+   "feature": "两块带箭头/色块的三角形可旋转并重叠",
+   "fast_path": "左图顺转90°、右图逆转90°重叠，得正方形B（箭头朝左）；A改了内部结构，D需翻面→B",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-08"
+   ],
+   "reason": "2022四川特有的“旋转叠加”玩法，与广东考法差异大，删。"
+  },
+  {
+   "id": "S5-18",
+   "tier": "备选",
+   "type": "平面拼合·只平移",
+   "feature": "四个直角三角形不旋转不翻转",
+   "fast_path": "1、3块合成左下小矩形，2块接上、4块接右，外框成大直角三角形→A",
+   "time_target": 45,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-33",
+    "S5-09"
+   ],
+   "reason": "2022四川，与S5-33同类保留较新者，作备选。"
+  },
+  {
+   "id": "S5-19",
+   "tier": "删",
+   "type": "平面拼合·只平移",
+   "feature": "四块多边形只平移，选上下带尖齿的图形",
+   "fast_path": "细长四边形放最左，2块上、4块下、1块封右，上下都有尖齿→A",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-05"
+   ],
+   "reason": "2021江苏，只平移多边形重复，删。"
+  },
+  {
+   "id": "S5-20",
+   "tier": "删",
+   "type": "平面拼合·只平移",
+   "feature": "四块曲边块只平移",
+   "fast_path": "4块顶、2块左下、3块填中、1块右下，凹凸弧吻合，右侧留弯口→C",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-07",
+    "S5-14"
+   ],
+   "reason": "2021江苏曲线块，与S5-07、S5-14重复，删。"
+  },
+  {
+   "id": "S5-21",
+   "tier": "核心",
+   "type": "平面拼合·计数速判",
+   "feature": "四个黑色直角三角形，3块同向1块反向",
+   "fast_path": "只平移时朝向不变：数选项中各朝向三角形个数，只有A是3同1反→A",
+   "time_target": 20,
+   "difficulty": 1,
+   "speed_value": 5,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-35"
+   ],
+   "reason": "2021江苏（正确率91%），“数朝向”20秒出答案，识别价值最高。"
+  },
+  {
+   "id": "S5-22",
+   "tier": "备选",
+   "type": "平面拼合·计数速判",
+   "feature": "四块方格块（1、3、4、4格）只平移",
+   "fast_path": "数格1+3+4+4=12，排除格数不符者；4格块沿右侧竖放，S形块与单格补余位→3×4矩形D",
+   "time_target": 45,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-12"
+   ],
+   "reason": "2021江苏，数格法第二例，作备选。"
+  },
+  {
+   "id": "S5-23",
+   "tier": "删",
+   "type": "平面拼合·只平移",
+   "feature": "四个三角形只平移",
+   "fast_path": "最大三角形放下方，尖朝下的放上方，两个小三角补左侧，右侧留V形凹口→B",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-05"
+   ],
+   "reason": "2020江苏同年连续5道只平移题之一，重复，删。"
+  },
+  {
+   "id": "S5-24",
+   "tier": "删",
+   "type": "平面拼合·只平移",
+   "feature": "三角形与四边形只平移",
+   "fast_path": "扁三角作屋顶，四边形左下，倒三角填中，细长三角补右侧，屋檐右伸→C",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-05"
+   ],
+   "reason": "2020江苏，只平移多边形重复，删。"
+  },
+  {
+   "id": "S5-25",
+   "tier": "删",
+   "type": "平面拼合·只平移",
+   "feature": "五边形与三角形只平移",
+   "fast_path": "五边形放右下，细长三角放左上，两个小三角补左下、右上，右上留直角缺口→D",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-05"
+   ],
+   "reason": "2020江苏，只平移多边形重复，删。"
+  },
+  {
+   "id": "S5-26",
+   "tier": "删",
+   "type": "平面拼合·只平移",
+   "feature": "菱形等四块只平移",
+   "fast_path": "菱形居中，2块接右上、3块填右下、4块接左下，底边平直、上有两尖峰→D",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-05"
+   ],
+   "reason": "2020江苏，只平移多边形重复，删。"
+  },
+  {
+   "id": "S5-27",
+   "tier": "删",
+   "type": "平面拼合·只平移",
+   "feature": "含弧边的四块只平移",
+   "fast_path": "2块放左、3块放右、1块居中、4块补左下凹口，底部弧线连成一段→C",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-07"
+   ],
+   "reason": "2020江苏，选项差异细小，与曲线块题重复，删。"
+  },
+  {
+   "id": "S5-28",
+   "tier": "进阶",
+   "type": "平面拼合·分割与旋转拼",
+   "feature": "直角梯形+小正方形+大正方形自由拼合",
+   "fast_path": "可旋转：梯形横放、长直边朝上定底，小正方形接左上、大正方形接右上，中间留方形凹口→A",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "解析称“小长方形”，图中实为小正方形。",
+   "similar_to": [
+    "S5-08"
+   ],
+   "reason": "2020四川（正确率28%），可旋转拼合的典型难题，作进阶。"
+  },
+  {
+   "id": "S5-29",
+   "tier": "删",
+   "type": "平面拼合·只平移",
+   "feature": "四块多边形只平移",
+   "fast_path": "4块左上、3块右上、2块左下、1块右下，等长斜边相接→B",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-05"
+   ],
+   "reason": "2019江苏，只平移多边形重复，删。"
+  },
+  {
+   "id": "S5-30",
+   "tier": "备选",
+   "type": "平面拼合·计数速判",
+   "feature": "两条小矩形+两个L形只平移",
+   "fast_path": "L形开口相对可围成中空框，两条小矩形补左右；实心选项面积不符→回字框A",
+   "time_target": 30,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-12"
+   ],
+   "reason": "2019江苏，“两个L围空心框”特征鲜明，作备选。"
+  },
+  {
+   "id": "S5-31",
+   "tier": "删",
+   "type": "平面拼合·计数速判",
+   "feature": "四块方格块只平移",
+   "fast_path": "五格长条作顶边，1块接左端下方，4块放下部、2块填右侧凹位→D",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-12",
+    "S5-22"
+   ],
+   "reason": "2019江苏方格块，与S5-12、S5-22重复，删。"
+  },
+  {
+   "id": "S5-32",
+   "tier": "删",
+   "type": "平面拼合·只平移",
+   "feature": "四块多边形只平移",
+   "fast_path": "3块居中偏上、4块左下、2块下方、1块封右，底边成直线、顶部两尖峰→B",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-05"
+   ],
+   "reason": "2018江苏，只平移多边形重复，删。"
+  },
+  {
+   "id": "S5-33",
+   "tier": "删",
+   "type": "平面拼合·只平移",
+   "feature": "四个三角形只平移拼大三角形",
+   "fast_path": "扁三角铺底，1块沿左边，2块右上，3块填中，外侧斜边接成直线→A",
+   "time_target": 45,
+   "difficulty": 2,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-18"
+   ],
+   "reason": "2018江苏，与S5-18同类，保留较新者，删。"
+  },
+  {
+   "id": "S5-34",
+   "tier": "删",
+   "type": "平面拼合·只平移",
+   "feature": "两个三角形与两个四边形只平移",
+   "fast_path": "1块三角放上、2块三角放下、3块四边形封右、4块封左→平行四边形B",
+   "time_target": 45,
+   "difficulty": 2,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-05"
+   ],
+   "reason": "2018江苏，只平移多边形重复，删。"
+  },
+  {
+   "id": "S5-35",
+   "tier": "进阶",
+   "type": "平面拼合·计数速判",
+   "feature": "四个等大正三角形（2上2下）只平移",
+   "fast_path": "2上2下：正方形无直角拼不出，大三角形要3上1下，只有D可由2上2下拼成→D",
+   "time_target": 30,
+   "difficulty": 2,
+   "speed_value": 5,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-21"
+   ],
+   "reason": "2018江苏，“数朝向+60°角”双重速判，作进阶。"
+  },
+  {
+   "id": "S5-36",
+   "tier": "删",
+   "type": "平面拼合·计数速判",
+   "feature": "四块方格块只平移",
+   "fast_path": "把五格竖列放最左，3块接上部、1块接右侧、4块补下部中间→A",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-12"
+   ],
+   "reason": "2018江苏方格块，重复，删。"
+  },
+  {
+   "id": "S5-37",
+   "tier": "删",
+   "type": "平面拼合·计数速判",
+   "feature": "四块方格块拼合（浙江）",
+   "fast_path": "1块放右上、3块左下，4块中间竖向连接、2块填右下，得错开2格的两个4×4→B",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-12"
+   ],
+   "reason": "2018浙江方格块，重复，删。"
+  },
+  {
+   "id": "S5-38",
+   "tier": "删",
+   "type": "平面拼合·只平移",
+   "feature": "四块多边形只平移",
+   "fast_path": "4块小三角左上、2块凹五边形左下、3块居中偏右、1块补右下→B",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-05"
+   ],
+   "reason": "2017江苏，只平移多边形重复，删。"
+  },
+  {
+   "id": "S5-39",
+   "tier": "删",
+   "type": "平面拼合·只平移",
+   "feature": "四个三角形只平移拼L形",
+   "fast_path": "大三角放左，4块放下方，两个小直角三角补左上和右下，得右上缺角的L形→D",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-18"
+   ],
+   "reason": "2017江苏，只平移重复，删。"
+  },
+  {
+   "id": "S5-40",
+   "tier": "删",
+   "type": "平面拼合·计数速判",
+   "feature": "四块方格块（3、4、4、5格）只平移",
+   "fast_path": "数格16→4×4；小L左上、正方形右上、T形中下、长L铺底补右→A",
+   "time_target": 45,
+   "difficulty": 2,
+   "speed_value": 3,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-12"
+   ],
+   "reason": "2017江苏，块的格数构成与S5-12相同（16格→4×4），保留较新的S5-12。"
+  },
+  {
+   "id": "S5-41",
+   "tier": "删",
+   "type": "平面拼合·分割与旋转拼",
+   "feature": "四块多边形可适当旋转",
+   "fast_path": "四边形居中，细三角接左，三角接右上，1块接右下，等长边贴合→C",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-28"
+   ],
+   "reason": "2016江苏，可旋转拼合已有S5-28，删。"
+  },
+  {
+   "id": "S5-42",
+   "tier": "删",
+   "type": "平面拼合·只平移",
+   "feature": "四块多边形拼凑",
+   "fast_path": "1、2块沿最长竖边相接成上半，3块接右下、4块平行四边形接右侧→D",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-05"
+   ],
+   "reason": "2016江苏旧题，重复，删。"
+  },
+  {
+   "id": "S5-43",
+   "tier": "删",
+   "type": "平面拼合·只平移",
+   "feature": "四块多边形只平移",
+   "fast_path": "大三角放右，1、2块补左上和顶部，4块接左下，左下伸出、右下内凹→D",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-05"
+   ],
+   "reason": "2015江苏旧题，重复，删。"
+  },
+  {
+   "id": "S5-44",
+   "tier": "删",
+   "type": "平面拼合·只平移",
+   "feature": "四块多边形只平移",
+   "fast_path": "1块放上、4块接右、2块左下、3块补其下方，左侧凸起、底部窄凹口→A",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S5-05"
+   ],
+   "reason": "2015江苏旧题，重复，删。"
+  },
+  {
+   "id": "S6-01",
+   "tier": "留作限时",
+   "type": "折纸剪纸",
+   "feature": "正方形沿两条对角线各折一次后剪弧线",
+   "fast_path": "沿两条对角线各折一次→展开图须同时关于两条对角线对称；逐边核镜像，只有A满足→A",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S6-03"
+   ],
+   "reason": "2024广东真题，按要求留作限时；已逐边核对A的对称性。"
+  },
+  {
+   "id": "S6-02",
+   "tier": "进阶",
+   "type": "折纸剪纸",
+   "feature": "直角三角形纸片两次折叠，求投影面积",
+   "fast_path": "先沿水平折痕：上部盖下来后投影为b+d；再沿竖折痕：重叠部分恰为a，只算一次→b+d−a（D）",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S6-01"
+   ],
+   "reason": "2023国考，折纸计算型，已核对两种折叠顺序结果相同。"
+  },
+  {
+   "id": "S6-03",
+   "tier": "核心",
+   "type": "折纸剪纸",
+   "feature": "长方形纸来回折成8份后剪，选窗花",
+   "fast_path": "剪口在4条折痕那一侧：展开得4个完整对称花纹，两端纸边不受剪→B",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S6-01"
+   ],
+   "reason": "2025四川，来回折“数完整花纹”的固定结论，可补广东剪纸题。"
+  },
+  {
+   "id": "S7-01",
+   "tier": "核心",
+   "type": "立体识别",
+   "feature": "方块组合体，选与之为同一物体的",
+   "fast_path": "以中间3格竖柱为参照，整体绕竖轴转90°：顶层前后两格变左右、中层伸出臂转到前方→B",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S7-02"
+   ],
+   "reason": "广东县级真题；已按旋转后的立体逐块核对B。"
+  },
+  {
+   "id": "S7-02",
+   "tier": "核心",
+   "type": "立体识别",
+   "feature": "三张同一数字立方体图，选可能的立方体",
+   "fast_path": "与3同框过5、1、2、4→3对6；同理2对5、1对4；A、B、D都同时露出一对对面→C",
+   "time_target": 45,
+   "difficulty": 2,
+   "speed_value": 5,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S7-01"
+   ],
+   "reason": "广东县级真题，“找对面再排除”30秒内可完成；已核C的方位也成立。"
+  }
+ ]
+}

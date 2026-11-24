@@ -1,0 +1,1510 @@
+{
+ "range": "S1-01—S1-79",
+ "types": [
+  {
+   "name": "相对面排除",
+   "method": "先在展开图中圈出三组相对面：同行或同列隔一个的两面相对，Z字形两端相对。选项同时露出一对相对面即排除；问“任意角度都能看到某图案”或“三面共点数字和”时，也先用相对面筛。",
+   "signals": "选项里有两个醒目的同类图案（圆、斜线面、数字、全黑面）；展开图是一字型或Z字型",
+   "traps": "Z字两端漏判为相对；排除一项后不再核对剩余选项的方向；把只隔一角相碰的两面当相对",
+   "core": [
+    "S1-12",
+    "S1-24",
+    "S1-32",
+    "S1-77"
+   ],
+   "advanced": [
+    "S1-22",
+    "S1-52"
+   ],
+   "backup": [
+    "S1-16",
+    "S1-31",
+    "S1-39",
+    "S1-51",
+    "S1-54",
+    "S1-78"
+   ]
+  },
+  {
+   "name": "公共边颜色接边（黑白/灰三角面）",
+   "method": "先把面分成纯线面和半黑（半灰）面，再看选项中两面相接的那条棱：原图这条棱两侧是黑接黑、白接白还是黑接白，选项必须一致。两个对角线面相邻时，对角线应交于公共棱的同一端点。",
+   "signals": "每个面被对角线或折线分成黑/白/灰两部分，或带小黑三角、小灰三角",
+   "traps": "只核对面是否存在、不看贴边颜色；忽视对角线端点是否落在三面公共点",
+   "core": [
+    "S1-02",
+    "S1-14"
+   ],
+   "advanced": [
+    "S1-13",
+    "S1-28"
+   ],
+   "backup": [
+    "S1-46"
+   ]
+  },
+  {
+   "name": "特征图案贴边与方向（线条/箭头/汉字）",
+   "method": "选一个有方向的特征面（箭头、汉字、贴边小块、平行线条），先定它的特征边或特征点贴着哪个邻面；再查选项中这一贴边关系，以及线条与公共棱是平行还是垂直。",
+   "signals": "面内有箭头、汉字、贴边或贴角的小图形、平行条纹、只画一半的图形",
+   "traps": "图案转90°后把平行看成垂直；只看两面相邻，不看贴的是哪条边",
+   "core": [
+    "S1-08",
+    "S1-18"
+   ],
+   "advanced": [
+    "S1-10",
+    "S1-19",
+    "S1-23",
+    "S1-45"
+   ],
+   "backup": [
+    "S1-17",
+    "S1-38",
+    "S1-73"
+   ]
+  },
+  {
+   "name": "公共点与时针方向（含选不同项）",
+   "method": "选项三面都对、只是排列不同，或题问“选不同项”时，绕三面公共顶点按顺时针读出面序与展开图比较，镜像选项面都对但顺序相反；字母和不对称图形还要看自身朝向。",
+   "signals": "四个选项面相同只换位置；问“哪个与其他三个不同”；面上是字母或有方向的图形",
+   "traps": "立体图上把顺时针读反；没按“从外表面看”读展开图",
+   "core": [
+    "S1-04",
+    "S1-09",
+    "S1-68"
+   ],
+   "advanced": [
+    "S1-07",
+    "S1-40"
+   ],
+   "backup": [
+    "S1-26",
+    "S1-74"
+   ]
+  },
+  {
+   "name": "长方体面形与尺寸",
+   "method": "1-4-1型长方体展开图：先看伸出的两个盖面是否全等，再看盖面伸出长度是否等于相邻条带面的宽，不等就合不拢。",
+   "signals": "题干是长宽高不等的长方体，选项展开图格子大小不一",
+   "traps": "只数面数不比边长；把盖面的长、宽方向看反",
+   "core": [
+    "S1-01"
+   ],
+   "advanced": [],
+   "backup": []
+  },
+  {
+   "name": "小方块长方体：颜色与块数",
+   "method": "每个小方块通体同色：先按面形划出6个面，数每面黑（灰）格的个数和位置，2×2端面最好用；再核对同一小块跨棱的两个格子同色。下表面类题只推外圈。",
+   "signals": "题干是黑白（灰白）小正方体拼成的长方体或正方体",
+   "traps": "面划分错（3×2面可能竖放）；忘了角格同时属于三个面",
+   "core": [
+    "S1-03",
+    "S1-06"
+   ],
+   "advanced": [
+    "S1-05",
+    "S1-34"
+   ],
+   "backup": []
+  },
+  {
+   "name": "标点法与特殊多面体（棱对应/切角/组合体）",
+   "method": "非正方体时给关键点、关键棱标号：同一条棱在展开图两处应等长并对应；切角的三个缺口折后必须汇于同一顶点；侧面箭头应首尾相连成圈。",
+   "signals": "台阶体、切角正方体、正方体加棱锥、异形柱体，或要求棱与棱对应",
+   "traps": "面在展开图中倒置时忘了左右互换；把相邻的两段当成同一条棱",
+   "core": [
+    "S1-11"
+   ],
+   "advanced": [
+    "S1-29",
+    "S1-70"
+   ],
+   "backup": [
+    "S1-41"
+   ]
+  },
+  {
+   "name": "四面体与八面体（单独成组）",
+   "method": "四面体展开图中三个三角相聚处就是一个完整顶点，其余顶点两两合并；先认完整顶点和共边关系，再用黑角汇点、线段指向公共边中点或顺时针读邻面排除。八面体先看特征面是否共边。",
+   "signals": "由三角形拼成的展开图；选项是三棱锥、四棱锥或八面体",
+   "traps": "把只在一点相碰的两面当相邻；合并顶点时配错对",
+   "core": [
+    "S1-21",
+    "S1-65"
+   ],
+   "advanced": [
+    "S1-25",
+    "S1-30"
+   ],
+   "backup": [
+    "S1-35",
+    "S1-37",
+    "S1-49"
+   ]
+  },
+  {
+   "name": "非标准展开图（面以顶点相连）",
+   "method": "部分面只用一个顶点接在别的面上，须按“点相连即公共顶点”推断，属江苏特有考法，答案依赖读图约定，不建议花时间练。",
+   "signals": "展开图里有倾斜的面或只用一个角相接的面",
+   "traps": "按常规展开图去折，得不出唯一答案",
+   "core": [],
+   "advanced": [],
+   "backup": []
+  }
+ ],
+ "questions": [
+  {
+   "id": "S1-01",
+   "tier": "核心",
+   "type": "长方体面形与尺寸",
+   "feature": "长方体1-4-1展开，盖面大小不一",
+   "fast_path": "盖面应全等且伸出长=相邻条宽：D两盖不全等，A、C伸出长对不上→B",
+   "time_target": 45,
+   "difficulty": 2,
+   "speed_value": 5,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [],
+   "reason": "广东2023真题，只比边长不必想象，长方体尺寸题的最佳示范。"
+  },
+  {
+   "id": "S1-02",
+   "tier": "核心",
+   "type": "公共边颜色接边（黑白/灰三角面）",
+   "feature": "对角线黑白面+纯线面",
+   "fast_path": "半黑面之间的棱只会黑接黑或白接白：B、C黑接白；A半黑面接两纯线面全白→D",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-14",
+    "S1-13"
+   ],
+   "reason": "广东2022真题，“公共棱两侧颜色”一条规则排三项，示范性最强。"
+  },
+  {
+   "id": "S1-03",
+   "tier": "核心",
+   "type": "小方块长方体：颜色与块数",
+   "feature": "黑白小方块拼长方体",
+   "fast_path": "划6面：两2×2面应一全白一单黑；A两面全白，B一面两黑，C有一行三黑→D",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-05",
+    "S1-06"
+   ],
+   "reason": "2025国考新题型，先数面格即可排三项，题干特征一眼可认。"
+  },
+  {
+   "id": "S1-04",
+   "tier": "核心",
+   "type": "公共点与时针方向（含选不同项）",
+   "feature": "字母A、C各两面，选不同",
+   "fast_path": "同字母都相对，比朝向：D中两C同行且开口同朝下→同指一个A，其余各指不同A",
+   "time_target": 75,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-09"
+   ],
+   "reason": "2025国考，字母方向类选不同项的代表；需先排除相对面再比朝向。"
+  },
+  {
+   "id": "S1-05",
+   "tier": "进阶",
+   "type": "小方块长方体：颜色与块数",
+   "feature": "灰白小方块长方体",
+   "fast_path": "B、C面配色不存在；A左端面灰格应在前下角却在后下角→D",
+   "time_target": 90,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-03",
+    "S1-06"
+   ],
+   "reason": "2024国考，A与D面色全同，只能逐格核跨棱，作为小方块题的难点进阶。"
+  },
+  {
+   "id": "S1-06",
+   "tier": "核心",
+   "type": "小方块长方体：颜色与块数",
+   "feature": "小方块长方体，选不可能",
+   "fast_path": "数两个2×2端面：应一面对角2黑、一面1黑；D两端都对角2黑→D",
+   "time_target": 45,
+   "difficulty": 2,
+   "speed_value": 5,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-03",
+    "S1-05"
+   ],
+   "reason": "2024国考，数端面黑格即秒出，比S1-05快得多。"
+  },
+  {
+   "id": "S1-07",
+   "tier": "进阶",
+   "type": "公共点与时针方向（含选不同项）",
+   "feature": "四个半格小方块拼成第6面",
+   "fast_path": "四小块合成一面：右侧两块折后左右并排、一上一下反向，只B含此组",
+   "time_target": 75,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [],
+   "reason": "2023国考新颖考法，需追踪小块落点，练公共点追踪。"
+  },
+  {
+   "id": "S1-08",
+   "tier": "核心",
+   "type": "特征图案贴边与方向（线条/箭头/汉字）",
+   "feature": "小方框、黑块贴边贴角",
+   "fast_path": "中心空框与中心黑块相对；贴边空框只贴“顶边黑块面”的棱；B、C角块位置错，D贴错边→A",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-54"
+   ],
+   "reason": "2022国考，贴边、贴角、居中三类位置齐全，适合练“贴哪条边”。"
+  },
+  {
+   "id": "S1-09",
+   "tier": "核心",
+   "type": "公共点与时针方向（含选不同项）",
+   "feature": "圆、方块居中/贴边/贴角，选不同",
+   "fast_path": "三组相对面全同→读“居中方块、角方块、角圆”公共点的时针，C与其他相反→C",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-04",
+    "S1-68"
+   ],
+   "reason": "2022国考两卷同题，镜像型选不同项的标准范例。"
+  },
+  {
+   "id": "S1-10",
+   "tier": "进阶",
+   "type": "特征图案贴边与方向（线条/箭头/汉字）",
+   "feature": "灰白折线花纹，立体选展开图",
+   "fast_path": "正面白Z带中心对称；看右面灰带：上沿平直、下沿台阶，只A（整图转180°）吻合",
+   "time_target": 90,
+   "difficulty": 5,
+   "speed_value": 2,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-45"
+   ],
+   "reason": "2021国考（正确率58%）的典型难题，图案细节多，做完核心再练。"
+  },
+  {
+   "id": "S1-11",
+   "tier": "核心",
+   "type": "标点法与特殊多面体（棱对应/切角/组合体）",
+   "feature": "台阶形多面体，棱与编号对应",
+   "fast_path": "上层立面在展开图中倒置（上边接黑面），左右互换：1-C、2-A，3为B，余4-D",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [],
+   "reason": "2020国考，标点/标棱法唯一代表题，规则清楚。"
+  },
+  {
+   "id": "S1-12",
+   "tier": "核心",
+   "type": "相对面排除",
+   "feature": "菱形、三角面，Z字布局",
+   "fast_path": "细长菱形↔小三角相对排A、D；B中细长菱形尖端碰大菱形公共边→C",
+   "time_target": 45,
+   "difficulty": 2,
+   "speed_value": 5,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-16",
+    "S1-77"
+   ],
+   "reason": "2019国考，相对面一步排两项再看一条边，节奏标准。"
+  },
+  {
+   "id": "S1-13",
+   "tier": "进阶",
+   "type": "公共边颜色接边（黑白/灰三角面）",
+   "feature": "灰三角+白斜带面",
+   "fast_path": "B顶面只有一个小灰三角，原图无此面；A两对角面对角线不交于棱同一端；C灰接灰→D",
+   "time_target": 75,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "原解析称“B正面的灰色梯形在原图中根本没有”不准确：该梯形是横排第二格（角—中点线面）转90°，B真正错在顶面只有一个小灰三角；答案D无误。",
+   "similar_to": [
+    "S1-02",
+    "S1-14"
+   ],
+   "reason": "2018国考，接边规则的综合运用，但原解析B项理由需更正。"
+  },
+  {
+   "id": "S1-14",
+   "tier": "核心",
+   "type": "公共边颜色接边（黑白/灰三角面）",
+   "feature": "叉线面+半黑面+纯线面",
+   "fast_path": "两叉线面公共边两侧都应为白三角，排A；B、C对角线端点或时针不符→D",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-02"
+   ],
+   "reason": "2017国考，叉线面的“公共棱两侧白三角”很好用，与S1-02互补。"
+  },
+  {
+   "id": "S1-15",
+   "tier": "删",
+   "type": "相对面排除",
+   "feature": "全黑面、椭圆、斜线面",
+   "fast_path": "全黑↔短斜线相对排D；椭圆贴边朝下时左邻应是空白，A、C错→B",
+   "time_target": 60,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "与S1-16同图同选项；原册答案D对应旧选项顺序，按当前图应为B（本册已改B）。",
+   "similar_to": [
+    "S1-16"
+   ],
+   "reason": "与S1-16重复，保留S1-16即可。"
+  },
+  {
+   "id": "S1-16",
+   "tier": "备选",
+   "type": "相对面排除",
+   "feature": "全黑面、椭圆贴边面",
+   "fast_path": "全黑↔短斜线相对排D；椭圆贴边朝下时左邻须是空白，A、C接对角线面→B",
+   "time_target": 60,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-12"
+   ],
+   "reason": "2016国考，相对面+贴边方向，考法与S1-12重复，留作混合组。"
+  },
+  {
+   "id": "S1-17",
+   "tier": "备选",
+   "type": "特征图案贴边与方向（线条/箭头/汉字）",
+   "feature": "灰带跨面的斜分面",
+   "fast_path": "固定横排第二格小灰三角面，按尖角定四邻：B、C、D接边或方向错→A",
+   "time_target": 75,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-10"
+   ],
+   "reason": "2015国考，图案连续带的判断可靠，但年代较早、比S1-10简单。"
+  },
+  {
+   "id": "S1-18",
+   "tier": "核心",
+   "type": "特征图案贴边与方向（线条/箭头/汉字）",
+   "feature": "带提手的纸盒，数字4、6和横杠",
+   "fast_path": "4与横杠相对排A；横杠应平行于它与6面的公共边，C、D折后垂直→B",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-12"
+   ],
+   "reason": "2026重庆新题，“相对面+线条平行”两步出答案，新颖且快。"
+  },
+  {
+   "id": "S1-19",
+   "tier": "进阶",
+   "type": "特征图案贴边与方向（线条/箭头/汉字）",
+   "feature": "分叉尾箭头、单箭头、双头箭头",
+   "fast_path": "分叉尾的尾部应邻单箭头面排A；单箭头应指双头箭头端部排B；C为镜像→D",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-29"
+   ],
+   "reason": "2025江苏，箭头“头尾指向”考法清晰，最后还要防镜像。"
+  },
+  {
+   "id": "S1-20",
+   "tier": "删",
+   "type": "非标准展开图（面以顶点相连）",
+   "feature": "斜放展开图，两面只以顶点相连",
+   "fast_path": "双圆↔三条带排D；条纹应垂直与单圆面公共边排C；按点相连读法排B→A",
+   "time_target": 90,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "展开图中空心框面、三分格面只以顶点与其余面相连（非标准展开图），A、B之辨须按“点相连即公共顶点”理解，原解析未说明。",
+   "similar_to": [
+    "S1-42",
+    "S1-44"
+   ],
+   "reason": "答案依赖特殊读图约定，江苏特有，不值得练。"
+  },
+  {
+   "id": "S1-21",
+   "tier": "核心",
+   "type": "四面体与八面体（单独成组）",
+   "feature": "八面体展开图，纯白面与四等分白面",
+   "fast_path": "纯白面与“四等分白”面在展开图中共整条边；B、C、D中二者只在顶点相碰→A",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 5,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-25"
+   ],
+   "reason": "2025山东八面体，一条共边规则即得答案，多面体组的首选。"
+  },
+  {
+   "id": "S1-22",
+   "tier": "进阶",
+   "type": "相对面排除",
+   "feature": "5个相同纸盒并排，求①的对面",
+   "fast_path": "对角线面在三盒中重复：①与小角三角形面都接在它的同一对对边上→二者相对，选B",
+   "time_target": 90,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-24"
+   ],
+   "reason": "2025浙江，多视图推相对面的代表，需比对朝向，进阶练。"
+  },
+  {
+   "id": "S1-23",
+   "tier": "进阶",
+   "type": "特征图案贴边与方向（线条/箭头/汉字）",
+   "feature": "汉字面：廿、甘、古、占、旦、由",
+   "fast_path": "旦底长横须贴由排B；古占公共边不碰占的短横排C；古由公共边垂直由长竖排D→A",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-18"
+   ],
+   "reason": "2024江苏，汉字特征笔画贴边，三条规则各排一项，很典型。"
+  },
+  {
+   "id": "S1-24",
+   "tier": "核心",
+   "type": "相对面排除",
+   "feature": "数字1-6，三面共点和为8",
+   "fast_path": "和为8只有1+2+5、1+3+4；A、B、D中这两组都含相对面，只有C可共点",
+   "time_target": 40,
+   "difficulty": 2,
+   "speed_value": 5,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-32"
+   ],
+   "reason": "2024江苏，相对面与数字结合，30秒级的好题。"
+  },
+  {
+   "id": "S1-25",
+   "tier": "进阶",
+   "type": "四面体与八面体（单独成组）",
+   "feature": "三棱锥展开图，角上小弧，选不同",
+   "fast_path": "数合拢后各顶点的小弧：A、B、C都只有一个顶点三面全有弧，D有两个→D",
+   "time_target": 75,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-65"
+   ],
+   "reason": "2024江苏四面体选不同，用“完整顶点数弧”可快速判断，进阶练。"
+  },
+  {
+   "id": "S1-26",
+   "tier": "备选",
+   "type": "公共点与时针方向（含选不同项）",
+   "feature": "四格、二分、三分格、角框面",
+   "fast_path": "三分格面大矩形贴田字面；A、B把邻面放反（镜像），D短线接错→C",
+   "time_target": 75,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-09",
+    "S1-46"
+   ],
+   "reason": "2024四川，时针+贴边综合，可靠但方法与S1-09重复。"
+  },
+  {
+   "id": "S1-27",
+   "tier": "删",
+   "type": "公共边颜色接边（黑白/灰三角面）",
+   "feature": "六面都是“对角线+小旗”同一图案",
+   "fast_path": "逐棱查黑白三角关系：A直角边黑接黑，C、D斜边朝向原图没有→B",
+   "time_target": 120,
+   "difficulty": 5,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-02",
+    "S1-14"
+   ],
+   "reason": "2024山东，六面同图须逐棱分析，超时明显，方法已由S1-02、S1-14覆盖。"
+  },
+  {
+   "id": "S1-28",
+   "tier": "进阶",
+   "type": "公共边颜色接边（黑白/灰三角面）",
+   "feature": "大三角面、对角+半对角面",
+   "fast_path": "大三角面底边应贴纯对角线面，且三面公共点处线条衔接；A、B、D接边或交点错→C",
+   "time_target": 75,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-13"
+   ],
+   "reason": "2024浙江，线面接边在公共点的细节判断，作为接边题进阶。"
+  },
+  {
+   "id": "S1-29",
+   "tier": "进阶",
+   "type": "标点法与特殊多面体（棱对应/切角/组合体）",
+   "feature": "正方体加四棱锥，侧面箭头",
+   "fast_path": "四个侧面箭头须首尾相接绕一圈：A、C箭头指向侧身，D接不上尾→B",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-19"
+   ],
+   "reason": "2023河北组合体，“箭头成圈”规则简洁，可作特殊立体进阶。"
+  },
+  {
+   "id": "S1-30",
+   "tier": "进阶",
+   "type": "四面体与八面体（单独成组）",
+   "feature": "三棱锥，灰白面与黑白面",
+   "fast_path": "固定灰白面：其白半与黑白面的黑半都贴公共边，且分割线出自同一顶点→C",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-35",
+    "S1-37"
+   ],
+   "reason": "2023江苏四面体，“同一顶点出分割线+贴边颜色”方法清楚。"
+  },
+  {
+   "id": "S1-31",
+   "tier": "备选",
+   "type": "相对面排除",
+   "feature": "Y形、三分格、尖头线面",
+   "fast_path": "Y形面↔“对角线+支线”面相对排D；A、C三分格面小格接边错→B",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-39"
+   ],
+   "reason": "2023江苏，相对面+贴边，常规可靠，与S1-39同类。"
+  },
+  {
+   "id": "S1-32",
+   "tier": "核心",
+   "type": "相对面排除",
+   "feature": "两个圆面，任意角度都要看到圆",
+   "fast_path": "任意角度见圆⇔两圆面相对：A两圆隔一格相对；B、C、D圆面两两相邻→A",
+   "time_target": 40,
+   "difficulty": 2,
+   "speed_value": 5,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-24",
+    "S1-52"
+   ],
+   "reason": "2023江苏，把相对面概念考成判断题，帮助理解“三面图必含每对相对面之一”。"
+  },
+  {
+   "id": "S1-33",
+   "tier": "删",
+   "type": "公共边颜色接边（黑白/灰三角面）",
+   "feature": "黑梯形、白五边形，选不同",
+   "fast_path": "白五边形面与“白矩形+黑梯形”面的公共边：A、C、D贴黑梯形上底，B贴白矩形长边",
+   "time_target": 90,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-26"
+   ],
+   "reason": "2023四川，面型变体多、辨认费时，方法与接边题重复。"
+  },
+  {
+   "id": "S1-34",
+   "tier": "进阶",
+   "type": "小方块长方体：颜色与块数",
+   "feature": "3×3×3立方体给五面求下表面",
+   "fast_path": "只推下表面外圈：四侧面最底行绕一圈（角格计一次）得5灰3白，仅B外圈5灰",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-03"
+   ],
+   "reason": "2023山东，“只推外圈”的计数法有迁移价值，不必猜中心格。"
+  },
+  {
+   "id": "S1-35",
+   "tier": "备选",
+   "type": "四面体与八面体（单独成组）",
+   "feature": "三棱锥，实线、虚线中线",
+   "fast_path": "双线面的实线、虚线分别在公共边中点接单实线面、单虚线面；A、B、D错→C",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-30"
+   ],
+   "reason": "2023浙江四面体，线段在棱中点接续，可靠但与S1-30同类。"
+  },
+  {
+   "id": "S1-36",
+   "tier": "删",
+   "type": "特征图案贴边与方向（线条/箭头/汉字）",
+   "feature": "椰树、云朵、海鸥图案，选不可能",
+   "fast_path": "云朵底端应贴与椰树面的公共边，B折后倒置→B",
+   "time_target": 75,
+   "difficulty": 3,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "原解析承认C的云朵、海鸥也有制图差异，以“B错误更明显”选B，非严格单解。",
+   "similar_to": [],
+   "reason": "图案方向靠细节，存在争议，删除。"
+  },
+  {
+   "id": "S1-37",
+   "tier": "备选",
+   "type": "四面体与八面体（单独成组）",
+   "feature": "三棱锥，折线、横线、黑三角",
+   "fast_path": "以黑三角所指顶点为上，折线面应在其右侧共棱，且折线不碰公共棱中点→B",
+   "time_target": 75,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-30"
+   ],
+   "reason": "2022江苏四面体，可靠，与S1-30、S1-35方法相近。"
+  },
+  {
+   "id": "S1-38",
+   "tier": "备选",
+   "type": "特征图案贴边与方向（线条/箭头/汉字）",
+   "feature": "半灰面、双圆面、⊢面",
+   "fast_path": "大空心圆+小黑点面应在半灰面“灰→白”方向左侧；B换面、D放右、C朝向错→A",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-26"
+   ],
+   "reason": "2022江苏，定向+邻接综合，可靠但与核心题重复。"
+  },
+  {
+   "id": "S1-39",
+   "tier": "备选",
+   "type": "相对面排除",
+   "feature": "四格面、尖头面、半面叉线",
+   "fast_path": "四格面↔尖头面相对排B；由窄列指向宽列，右侧应接半面叉线，排A、D→C",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-31"
+   ],
+   "reason": "2022江苏，相对面+方向两步，常规可靠。"
+  },
+  {
+   "id": "S1-40",
+   "tier": "进阶",
+   "type": "公共点与时针方向（含选不同项）",
+   "feature": "两个展开图，选不可能",
+   "fast_path": "两对角线交于三面公共点→只能来自右图；此时小三角面不碰该棱另一端，C却碰→C",
+   "time_target": 75,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-02"
+   ],
+   "reason": "2022四川，两展开图并列+公共点锁定，思路独特。"
+  },
+  {
+   "id": "S1-41",
+   "tier": "备选",
+   "type": "标点法与特殊多面体（棱对应/切角/组合体）",
+   "feature": "异形柱体，箭头形展开图",
+   "fast_path": "左右封口矩形须分在条带两侧（排A、C）；再比斜面接边长短，D不等→B",
+   "time_target": 75,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-47",
+    "S1-01"
+   ],
+   "reason": "2022山东异形体，用“封口+等长”判断，可靠但少见。"
+  },
+  {
+   "id": "S1-42",
+   "tier": "删",
+   "type": "非标准展开图（面以顶点相连）",
+   "feature": "菱形面只以顶点接在横排上",
+   "fast_path": "点纹面↔黑三角面相对；B中点纹直角落在三面公共点、对角线方向对→B",
+   "time_target": 75,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "上下两菱形面只以顶点与横排相连（非标准展开图）；A、D的排除依赖“点相连即公共顶点”读法。",
+   "similar_to": [
+    "S1-44",
+    "S1-20"
+   ],
+   "reason": "非标准展开图，江苏特有，删除。"
+  },
+  {
+   "id": "S1-43",
+   "tier": "删",
+   "type": "非标准展开图（面以顶点相连）",
+   "feature": "带对角线的四边形+两个顶点相连的三角",
+   "fast_path": "对齐右上黑白三角的黑白分界，再比黑白次序与右侧线条面接边→B",
+   "time_target": 90,
+   "difficulty": 5,
+   "speed_value": 1,
+   "recognition_value": 1,
+   "answer_ok": null,
+   "issue": "展开图由带两条对角线的四边形和两个仅以顶点相连的三角形构成，立体构成从图上难以确定，未能独立核实答案。",
+   "similar_to": [
+    "S1-42"
+   ],
+   "reason": "图形不规范、难以核验，删除。"
+  },
+  {
+   "id": "S1-44",
+   "tier": "删",
+   "type": "非标准展开图（面以顶点相连）",
+   "feature": "点纹面、菱形面以顶点相连，选不能",
+   "fast_path": "D右侧点纹面只能是最左点纹面，此时顶面应为下方菱形对角面，斜线方向反→D",
+   "time_target": 90,
+   "difficulty": 5,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "两菱形面仅以顶点相连（非标准），排除D依赖点相连读法；正确率仅23%。",
+   "similar_to": [
+    "S1-42"
+   ],
+   "reason": "非标准展开图且难度过高，删除。"
+  },
+  {
+   "id": "S1-45",
+   "tier": "进阶",
+   "type": "特征图案贴边与方向（线条/箭头/汉字）",
+   "feature": "点纹三角，立体选展开图",
+   "fast_path": "以单斜线正面为基准，顶面、右面的点纹三角都须贴与正面的公共边→只C满足",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-10",
+    "S1-73"
+   ],
+   "reason": "2021江苏立体选展开图，“特征贴公共边”规则清楚，补足反向题型。"
+  },
+  {
+   "id": "S1-46",
+   "tier": "备选",
+   "type": "公共边颜色接边（黑白/灰三角面）",
+   "feature": "灰白半面、对角面",
+   "fast_path": "A取展开图右下三面，时针与灰白接边一致；B、C公共点落在白侧，D邻面错→A",
+   "time_target": 75,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-26"
+   ],
+   "reason": "2021四川，可靠，但需旋转三面，与核心题方法重复。"
+  },
+  {
+   "id": "S1-47",
+   "tier": "删",
+   "type": "标点法与特殊多面体（棱对应/切角/组合体）",
+   "feature": "异形多面体展开图",
+   "fast_path": "只查底部两处封口：左端小矩形应竖挂、右端大矩形换边连接，仅C都对→C",
+   "time_target": 90,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-41"
+   ],
+   "reason": "与S1-41同类且更早，保留一道即可。"
+  },
+  {
+   "id": "S1-48",
+   "tier": "删",
+   "type": "四面体与八面体（单独成组）",
+   "feature": "斜放三棱锥条带，黑三角+短线",
+   "fast_path": "长黑三角面与“仅一条短线”面接边，C吻合；A小白三角反，B、D短线错",
+   "time_target": 90,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-37"
+   ],
+   "reason": "2020江苏四面体，图小线密，与保留的四面体题重复。"
+  },
+  {
+   "id": "S1-49",
+   "tier": "备选",
+   "type": "四面体与八面体（单独成组）",
+   "feature": "三棱锥大三角展开，外角皆黑",
+   "fast_path": "外侧三面的黑角折后汇于一点、两两相接（排A）；左右次序C、D反→B",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-30"
+   ],
+   "reason": "2020江苏，“外角折后汇于顶点”规则好用，可作四面体备选。"
+  },
+  {
+   "id": "S1-50",
+   "tier": "删",
+   "type": "公共边颜色接边（黑白/灰三角面）",
+   "feature": "斜放链式展开图，黑三角+线条",
+   "fast_path": "三面公共点处出线数：A应两条却一条，B交点数不符，D黑三角次序错→C",
+   "time_target": 90,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-02"
+   ],
+   "reason": "2020江苏，斜放展开图辨认费时，方法与核心题重复。"
+  },
+  {
+   "id": "S1-51",
+   "tier": "备选",
+   "type": "相对面排除",
+   "feature": "圆、点、八边形、条纹",
+   "fast_path": "大黑圆↔方框、空白↔八边形相对，排B、C；A双黑点定向后次序反→D",
+   "time_target": 45,
+   "difficulty": 2,
+   "speed_value": 5,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-77"
+   ],
+   "reason": "2020江苏，相对面排两项的常规题，与S1-77重复。"
+  },
+  {
+   "id": "S1-52",
+   "tier": "进阶",
+   "type": "相对面排除",
+   "feature": "两块完整对角线面相对",
+   "fast_path": "两完整对角线面相对，三面图必现且只现一个：A零个、B两个排除；D线方向错→C",
+   "time_target": 50,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-32"
+   ],
+   "reason": "2020四川，“相对面必现其一”的快速变式，值得掌握。"
+  },
+  {
+   "id": "S1-53",
+   "tier": "删",
+   "type": "四面体与八面体（单独成组）",
+   "feature": "三棱锥实线、虚线",
+   "fast_path": "看公共边两端出线：C两实线应同端却分开，D虚实应分端却同端；A方向反→B",
+   "time_target": 75,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "原解析B项的面号有笔误（相邻的是单虚线面与虚线交叉面），不影响答案B。",
+   "similar_to": [
+    "S1-35"
+   ],
+   "reason": "与S1-35同类，且原解析有笔误，删除。"
+  },
+  {
+   "id": "S1-54",
+   "tier": "备选",
+   "type": "相对面排除",
+   "feature": "大小黑块贴边",
+   "fast_path": "D顶面与正面相对排除；A、C公共边应贴右面小黑块却贴大黑块、长黑条→B",
+   "time_target": 45,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-08"
+   ],
+   "reason": "2020山东（正确率88%），可靠易做，适合混合组热身。"
+  },
+  {
+   "id": "S1-55",
+   "tier": "删",
+   "type": "四面体与八面体（单独成组）",
+   "feature": "三棱锥半灰半纹",
+   "fast_path": "B浅灰三角应接点纹三角；C、D顺时针第一条边应贴花纹却贴白→A",
+   "time_target": 75,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-65"
+   ],
+   "reason": "2019江苏四面体，方法与S1-65重复。"
+  },
+  {
+   "id": "S1-56",
+   "tier": "删",
+   "type": "四面体与八面体（单独成组）",
+   "feature": "三棱锥带箭头线段",
+   "fast_path": "实箭头与双向虚箭头都应指向公共边（A错）；C、D多出接边交点→B",
+   "time_target": 75,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-35"
+   ],
+   "reason": "2019江苏四面体，同类题已足。"
+  },
+  {
+   "id": "S1-57",
+   "tier": "删",
+   "type": "特征图案贴边与方向（线条/箭头/汉字）",
+   "feature": "Y形、条纹、半纹面",
+   "fast_path": "A交叉线面转向错；B条纹贴错Y形面的边；C空白面邻边长短错→D",
+   "time_target": 75,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-31"
+   ],
+   "reason": "2019江苏，三项各有细节错误，耗时且与S1-31重复。"
+  },
+  {
+   "id": "S1-58",
+   "tier": "删",
+   "type": "特征图案贴边与方向（线条/箭头/汉字）",
+   "feature": "田字、单斜线、X形面",
+   "fast_path": "田字↔单斜线面相对排B；A、C单斜线接边方向错→D",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-39"
+   ],
+   "reason": "2019江苏，与S1-39、S1-31考法重复。"
+  },
+  {
+   "id": "S1-59",
+   "tier": "删",
+   "type": "标点法与特殊多面体（棱对应/切角/组合体）",
+   "feature": "两正方体加四分之一圆柱",
+   "fast_path": "扇形两直角边分接矩形面与L形底面（排B、D）；右侧小矩形应接长矩形上段→A",
+   "time_target": 90,
+   "difficulty": 5,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-29"
+   ],
+   "reason": "2019浙江曲面组合体，考法罕见，性价比低。"
+  },
+  {
+   "id": "S1-60",
+   "tier": "删",
+   "type": "四面体与八面体（单独成组）",
+   "feature": "三棱锥，深浅菱形",
+   "fast_path": "按菱形尖端定向：中央面与顶端面公共边、尖端朝向只有B吻合",
+   "time_target": 75,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-76"
+   ],
+   "reason": "2018江苏四面体，同类题已足。"
+  },
+  {
+   "id": "S1-61",
+   "tier": "删",
+   "type": "四面体与八面体（单独成组）",
+   "feature": "三棱锥，虚线与实线",
+   "fast_path": "两虚线面相接时应有一条虚线垂直公共边（排A）；实线应垂直所邻虚线面（排B）→D",
+   "time_target": 75,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-35"
+   ],
+   "reason": "2018江苏四面体，与S1-35、S1-53重复。"
+  },
+  {
+   "id": "S1-62",
+   "tier": "删",
+   "type": "公共边颜色接边（黑白/灰三角面）",
+   "feature": "黑块、格纹三角、砖纹",
+   "fast_path": "A出现原图没有的图案；B格子三角应贴白区；C两黑块应接于一点→D",
+   "time_target": 75,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-08"
+   ],
+   "reason": "2018江苏，图案杂、方法重复。"
+  },
+  {
+   "id": "S1-63",
+   "tier": "删",
+   "type": "公共边颜色接边（黑白/灰三角面）",
+   "feature": "每面2×2格，黑/格纹/白",
+   "fast_path": "D露出相对的单黑块面与黑格相间面；A多出全白面；C顶面黑块邻接错→B",
+   "time_target": 75,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-03"
+   ],
+   "reason": "2018江苏，格子面辨认费时，同类已有2024—2025国考题。"
+  },
+  {
+   "id": "S1-64",
+   "tier": "删",
+   "type": "特征图案贴边与方向（线条/箭头/汉字）",
+   "feature": "箭头、双框、分格面",
+   "fast_path": "带尾横线箭头右侧应接双框面（排B、D）；C折线面方向反→A",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-19"
+   ],
+   "reason": "2018浙江，箭头贴边题，与S1-19重复且更早。"
+  },
+  {
+   "id": "S1-65",
+   "tier": "核心",
+   "type": "四面体与八面体（单独成组）",
+   "feature": "三棱锥条带：白、白带中线、灰、黑",
+   "fast_path": "从线段所到顶点起，顺时针三条边的邻面应依次为灰、白、黑：只B第一边接灰→B",
+   "time_target": 50,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-25",
+    "S1-55"
+   ],
+   "reason": "四面体时针法最清楚的一道，三条边依次核对即可。"
+  },
+  {
+   "id": "S1-66",
+   "tier": "删",
+   "type": "四面体与八面体（单独成组）",
+   "feature": "四棱锥，黑菱形、砖纹三角",
+   "fast_path": "沿中线从边中点指向顶角，黑菱形面应在左（C错）；另一白面方向再排A、D→B",
+   "time_target": 75,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-65"
+   ],
+   "reason": "2017江苏四棱锥，少见且方法与四面体重复。"
+  },
+  {
+   "id": "S1-67",
+   "tier": "删",
+   "type": "四面体与八面体（单独成组）",
+   "feature": "三棱锥，T形短线",
+   "fast_path": "沿T形短线从交点指向顶角，单中线白面应在左侧：B、D在前、C在右→A",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-65"
+   ],
+   "reason": "2017江苏四面体，方法与S1-65重复。"
+  },
+  {
+   "id": "S1-68",
+   "tier": "核心",
+   "type": "公共点与时针方向（含选不同项）",
+   "feature": "三面相同只换位置：X、灰三角、黑三角",
+   "fast_path": "三面图案都一样只比时针：原图“X→灰三角→黑三角”顺时针，只D保持→D",
+   "time_target": 40,
+   "difficulty": 2,
+   "speed_value": 5,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-09"
+   ],
+   "reason": "纯时针法示范题，30—40秒可完成，正确率79%。"
+  },
+  {
+   "id": "S1-69",
+   "tier": "删",
+   "type": "公共边颜色接边（黑白/灰三角面）",
+   "feature": "小黑角、虚线面、灰黑三角",
+   "fast_path": "角上小黑三角↔虚线面相对排C；A小黑三角贴错边；D斜线出自黑三角→B",
+   "time_target": 75,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-02"
+   ],
+   "reason": "2017江苏，选项画了透视虚线易混，方法与S1-02重复。"
+  },
+  {
+   "id": "S1-70",
+   "tier": "进阶",
+   "type": "标点法与特殊多面体（棱对应/切角/组合体）",
+   "feature": "切掉一个角的纸盒，选不是",
+   "fast_path": "切掉一个角，三个缺角必须折到同一顶点；C的缺口对着未切角的边→C",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-11"
+   ],
+   "reason": "2017浙江，“三缺口汇一点”规则简单好用，可作特殊立体进阶。"
+  },
+  {
+   "id": "S1-71",
+   "tier": "删",
+   "type": "四面体与八面体（单独成组）",
+   "feature": "三棱锥，灰小三角与中线",
+   "fast_path": "灰小三角不贴公共边、另一面中线交公共边中点：A、C贴边，D未交中点→B",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-35"
+   ],
+   "reason": "2016江苏四面体，同类已足。"
+  },
+  {
+   "id": "S1-72",
+   "tier": "删",
+   "type": "四面体与八面体（单独成组）",
+   "feature": "三棱锥，箭头格纹面与灰三角",
+   "fast_path": "原图箭头方向不垂直于与灰三角面的公共边，A、B、C折后垂直→D",
+   "time_target": 75,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "原解析缺少编号示意图（本册已改用箭头面、灰三角面表述），答案D不变。",
+   "similar_to": [
+    "S1-71"
+   ],
+   "reason": "2016江苏四面体，图细且原解析不完整，删除。"
+  },
+  {
+   "id": "S1-73",
+   "tier": "备选",
+   "type": "特征图案贴边与方向（线条/箭头/汉字）",
+   "feature": "多线、双线、单线面，立体选展开图",
+   "fast_path": "单线面与双线面的线条应互相垂直（排B、C）；多线→双线→单线环绕次序A反→D",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-45"
+   ],
+   "reason": "2016江苏，线条平行/垂直判断清楚，与S1-45互补。"
+  },
+  {
+   "id": "S1-74",
+   "tier": "备选",
+   "type": "公共点与时针方向（含选不同项）",
+   "feature": "大灰圆、斜线面",
+   "fast_path": "三面公共顶点原图无线经过，B有两条斜线到此；C、D露出相对面→A",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-77"
+   ],
+   "reason": "2016江苏，公共点+相对面，可靠易做。"
+  },
+  {
+   "id": "S1-75",
+   "tier": "删",
+   "type": "四面体与八面体（单独成组）",
+   "feature": "三棱锥，棋盘格、细分三角",
+   "fast_path": "右下白面从短线中点指向小三角顶角定向：右邻棋盘格、后邻细分三角→A",
+   "time_target": 75,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-65"
+   ],
+   "reason": "2015江苏四面体，同类已足。"
+  },
+  {
+   "id": "S1-76",
+   "tier": "删",
+   "type": "四面体与八面体（单独成组）",
+   "feature": "三棱锥条带，深浅菱形",
+   "fast_path": "沿深色菱形从底边顶点指向对顶点：右邻小三角面、下邻浅色菱形面→D",
+   "time_target": 75,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-60"
+   ],
+   "reason": "2015江苏四面体，与S1-60同类。"
+  },
+  {
+   "id": "S1-77",
+   "tier": "核心",
+   "type": "相对面排除",
+   "feature": "菱形、大圆、小圆、小方块、斜线",
+   "fast_path": "菱形↔大圆、小圆↔小方块、两斜线面相对：A、C、D各露一对→B",
+   "time_target": 30,
+   "difficulty": 1,
+   "speed_value": 5,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-51",
+    "S1-12"
+   ],
+   "reason": "三项全靠相对面排除，相对面法最纯粹的示范。"
+  },
+  {
+   "id": "S1-78",
+   "tier": "备选",
+   "type": "相对面排除",
+   "feature": "黑三角、单灰、双灰三角面",
+   "fast_path": "B露黑三角与双灰三角（相对），D露两单灰三角（相对）；C三面交点无线→A",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-77"
+   ],
+   "reason": "2015江苏，相对面+公共点，可靠，适合混合组。"
+  },
+  {
+   "id": "S1-79",
+   "tier": "删",
+   "type": "公共点与时针方向（含选不同项）",
+   "feature": "圆、星、三角、格子面",
+   "fast_path": "灰图案公共点：A灰块与灰三角应相接；B灰三角应碰交点；C圆面左右反→D",
+   "time_target": 75,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "S1-74"
+   ],
+   "reason": "2015浙江，图案杂而方法与S1-74重复。"
+  }
+ ]
+}

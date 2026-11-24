@@ -1,0 +1,1997 @@
+{
+ "range": "P101—P200",
+ "types": [
+  {
+   "name": "黑白叠加运算",
+   "method": "外框或格子完全相同、只有涂色或线段不同时，先按行把前两幅逐位对齐，写出“黑黑、黑白、白白（及空、斜线、带点）”各得什么的小表；一行建表、另一行验证，行不通立刻改按列。问号在中间时反推：选项与已知图运算后要等于结果图。",
+   "signals": "九宫格或两组各三幅；轮廓、格子、线框完全相同；第三幅像前两幅拼起来或少掉一部分；出现第三种状态（斜线、空格、带点）。",
+   "traps": "只背“去同存异”不建表；把空格当白格；按行不成立不换列；问号在中间仍按正向合成；按整件图形而不是按重合线段消去。",
+   "core": [
+    "P153",
+    "P103"
+   ],
+   "advanced": [
+    "P110",
+    "P198",
+    "P128",
+    "P143",
+    "P169"
+   ],
+   "backup": [
+    "P156",
+    "P118"
+   ]
+  },
+  {
+   "name": "字符串身份模式",
+   "method": "给框内每个位置标字母，同样的符号同一字母，写成骨架（如abbacdbd）；选项同样标，只比骨架，先查重复最多的两三个位置即可排除。",
+   "signals": "题干是一行符号串，选项也是一行符号串，问“与框内规律最接近”。",
+   "traps": "去追箭头转了多少度、颜色怎么变；只数“共几种”而丢掉“哪几位相同”。",
+   "core": [
+    "P101"
+   ],
+   "advanced": [],
+   "backup": [
+    "P106"
+   ]
+  },
+  {
+   "name": "对称类型",
+   "method": "图形都规整、居中、看起来都对称时，逐幅问三问：能否对折重合（轴）、能否转180°重合（中心）、是否只能转一定角度重合（风车式旋转对称）；再按交替或分组选。",
+   "signals": "题干元素杂、数量无规律，但每幅都很规整；风车形、雪花形、螺旋形、带内部线的规则多边形。",
+   "traps": "只看外轮廓、忽略内部线；把风车形旋转对称当成轴对称；双轴必中心对称，中心对称不一定有轴。",
+   "core": [
+    "P102"
+   ],
+   "advanced": [
+    "P146"
+   ],
+   "backup": [
+    "P142"
+   ]
+  },
+  {
+   "name": "对称轴方向与位置",
+   "method": "确认都轴对称后，把每幅的轴画出来：先看方向（竖、横、斜，是否每步转45°）和条数，再看轴与图形的关系（过顶点还是边中点、穿过几个面），外框加内图的要内外分开判。",
+   "signals": "全部图形都轴对称；黑白格或点阵图案每幅形状都变；外框里套一个小图；九宫格按列素材不同。",
+   "traps": "轴没有方向，转180°是同一条轴；判断时要保留黑白差别；内外分层时不能要求整幅对称；点阵题要先想到只看白球或黑球的图案。",
+   "core": [
+    "P132",
+    "P167"
+   ],
+   "advanced": [
+    "P111",
+    "P164",
+    "P117"
+   ],
+   "backup": [
+    "P109",
+    "P129"
+   ]
+  },
+  {
+   "name": "曲直与开闭",
+   "method": "每幅由若干独立小符号组成时，给每个符号贴标签：纯直、纯曲、曲直混合；封闭、开放。数每幅各类的个数或比例；九宫格按行列看“全直、全曲、混合”。",
+   "signals": "每幅是几个字母、数字、俄文或生活小图；形状杂乱、数量相同。",
+   "traps": "字母按印刷形状判（R、B、Б含曲线，7、M纯直）；只看整幅“有没有曲线”会丢掉分配信息。",
+   "core": [
+    "P123",
+    "P119"
+   ],
+   "advanced": [],
+   "backup": [
+    "P137"
+   ]
+  },
+  {
+   "name": "面数与面形状",
+   "method": "线条围出区域时数最小封闭面（不数外部空白、不把小面合并成大面）；面数都相同时，再数面的形状构成（几个三角形、几个四边形）。",
+   "signals": "方框被直线分割；图形互相交叠出许多小区域；选项素材相同、只是交叠方式不同。",
+   "traps": "开口凹槽不算面；几个小面拼成的大三角不另计；相切的圆也会围出面。",
+   "core": [
+    "P192"
+   ],
+   "advanced": [
+    "P163"
+   ],
+   "backup": [
+    "P185",
+    "P193"
+   ]
+  },
+  {
+   "name": "线条数与角",
+   "method": "面、点都无规律而线条清楚时，数完整线条（直线加曲线，一条完整的圆算1条）或数直角；直角只数图形内部的90°，凹进去的270°不算，外框里的小图是干扰时只数外框。",
+   "signals": "不规则多边形、边数凹凸无规律；直线与圆、弧混搭；黑色实心多边形。",
+   "traps": "按交点把线切成小段来数；把凹角当直角；内部小图的角混进来；平行线要数“方向组”而不是配对数。",
+   "core": [
+    "P199",
+    "P161"
+   ],
+   "advanced": [
+    "P126"
+   ],
+   "backup": [
+    "P177"
+   ]
+  },
+  {
+   "name": "笔画数（一笔画）",
+   "method": "线条连通、交点多或出现字母汉字数字时数奇点：每个连通部分笔画数＝max(1，奇点数÷2)，各部分相加，孤立的点各算1笔；分类题多为“一笔画/两笔画”。",
+   "signals": "汉字、字母、数字、符号混排；“日”“田”字形、五角星、方框加对角线、圆加切线；交点和三岔口很多。",
+   "traps": "两个互不相连的部分即使都无奇点也要两笔；孤立点要算笔；按书写笔顺数；交点处度数漏数。",
+   "core": [
+    "P165",
+    "P154"
+   ],
+   "advanced": [
+    "P120"
+   ],
+   "backup": [
+    "P115",
+    "P183"
+   ]
+  },
+  {
+   "name": "交点与切点",
+   "method": "曲线与直线或曲线挨在一起时，先分清“碰住不穿过”的相切和“穿过去或顶进去”的相交，再按题意数切点、交点，或看“谁与谁相切”。",
+   "signals": "圆、弧与直线、多边形刚好碰到；几个圆互相接触；同一幅里既有交叉又有贴靠。",
+   "traps": "把相交点也算成切点；线的端点碰到圆不一定是相切；要分清是直线与圆还是圆与圆的关系。",
+   "core": [
+    "P168",
+    "P151"
+   ],
+   "advanced": [
+    "P124"
+   ],
+   "backup": [
+    "P131"
+   ]
+  },
+  {
+   "name": "元素数量关系",
+   "method": "同一幅里有两类以上可数小元素时，分别数每类个数，看此消彼长（等价替换）、差值、总数；总数都满足时再看与前一幅重合（保留）的个数，或数元素种类数。",
+   "signals": "方块与圆、黑球与白球混放；灰格逐步增减；生活化图形中有重复出现的小部件。",
+   "traps": "只数总数；忽略新旧重合；件数与种类数混用；种类判断时被朝向不同骗到。",
+   "core": [
+    "P158",
+    "P116"
+   ],
+   "advanced": [
+    "P200"
+   ],
+   "backup": [
+    "P145",
+    "P182"
+   ]
+  },
+  {
+   "name": "面积与周长",
+   "method": "方格底板上黑块格数都相同时改比周长（周长＝4×格数－2×共边数，或直接数露在外面的边）；格点多边形用整格加半格拼出面积。",
+   "signals": "图形画在方格纸上；黑块形状各异但格数一样。",
+   "traps": "凹口处露出的边漏数；斜边处的半格没拼。",
+   "core": [],
+   "advanced": [
+    "P196"
+   ],
+   "backup": [
+    "P171"
+   ]
+  },
+  {
+   "name": "连通片与相邻关系",
+   "method": "黑白球、黑白格数量相近而排布不同时，按同色“实际相接”数连通片（方格对角不连）；有一块黑区时看它与哪几块白区共边；面与面之间看共边还是只共点；数量恒定时看两两相邻方式。",
+   "signals": "黑白点阵、蜂窝阵、方格阵；被分割图形中只涂黑一块；生活化图形中多个封闭区域相接。",
+   "traps": "黑白只数一种；角碰角当连通；共边与共点混为一谈；只数黑块个数不看位置关系。",
+   "core": [
+    "P160"
+   ],
+   "advanced": [
+    "P112",
+    "P107",
+    "P105"
+   ],
+   "backup": [
+    "P149",
+    "P125",
+    "P170"
+   ]
+  },
+  {
+   "name": "旋转与翻转",
+   "method": "每幅是同一图形换朝向时，盯住不对称的标记（小圆、亮点、缺口、触角）判断转了几度、是否镜像；相邻看不出就隔项看；两图之间夹着的竖线、横线可能是翻转指令。",
+   "signals": "同一图形反复出现、朝向变化；带小圆点、缺口等方向标记；一行五幅以上的黑白格。",
+   "traps": "旋转与镜像混淆（镜像会改变左右手性）；只看外框不看标记；相邻无规律就放弃，不试隔项。",
+   "core": [
+    "P172"
+   ],
+   "advanced": [
+    "P147"
+   ],
+   "backup": [
+    "P178",
+    "P130"
+   ]
+  },
+  {
+   "name": "位置移动",
+   "method": "元素种类和数量不变、只是位置在变时，先比首尾或隔幅有没有完全相同的图（周期）；再把阵列拆成外圈、内圈或行、列，分别追踪步数和方向；挖空补全题逐行找循环节和相位。",
+   "signals": "点阵、蜂窝阵、九宫格中黑块数恒定；相邻两图只有局部不同；大图中挖去一块。",
+   "traps": "把不同圈当成整体旋转；忽略出界后从另一端回来；被遮住的元素仍在走；细节题不先找周期而硬推。",
+   "core": [
+    "P155"
+   ],
+   "advanced": [
+    "P139",
+    "P108",
+    "P152",
+    "P104",
+    "P157"
+   ],
+   "backup": [
+    "P127",
+    "P184",
+    "P176"
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "P101",
+   "tier": "核心",
+   "type": "字符串身份模式",
+   "feature": "框内一行8个黑白、朝向各异的三角形，选项也是8个符号串，问“规律最接近”。",
+   "fast_path": "框内标骨架abbacdbd；B第7、8位、C第6位、D第8位不符→A。",
+   "time_target": 30,
+   "difficulty": 2,
+   "speed_value": 5,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P106"
+   ],
+   "reason": "广东2023乡镇真题，字符串身份模式最典型，骨架法15秒可解。"
+  },
+  {
+   "id": "P102",
+   "tier": "核心",
+   "type": "对称类型",
+   "feature": "五幅都是带圆的规整图形（笑脸、太阳、箭头、四角星、五角星），看起来都对称。",
+   "fast_path": "逐幅问能否转180°重合：1、3、5只轴对称，2、4兼中心对称→问号要两者兼有→D。",
+   "time_target": 40,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P142",
+    "P138"
+   ],
+   "reason": "广东2023县级，轴对称与中心对称交替的标准题，练“都对称时再分类型”。"
+  },
+  {
+   "id": "P103",
+   "tier": "核心",
+   "type": "黑白叠加运算",
+   "feature": "两组各三幅2×3格，第三幅出现前两幅没有的斜线格。",
+   "fast_path": "第一组建表：灰灰→白、白白→灰、灰白→斜线；第二组左上应斜线排除C、D，右上斜线排除B→A。",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P128",
+    "P141"
+   ],
+   "reason": "广东2023县级，三态叠加，练“出现新颜色＝新运算结果”。"
+  },
+  {
+   "id": "P104",
+   "tier": "进阶",
+   "type": "位置移动",
+   "feature": "每幅四个小图形，相邻两幅总有两个图形重复出现，其余是新图形。",
+   "fast_path": "只追踪重复元素：前图左上→后图右下、左下→后图左上；末图左下梯形到左上、左上箭头到右下→D。",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P176"
+   ],
+   "reason": "广东2023县级，元素位置继承，只追踪重复元素即可，广东特色变形。"
+  },
+  {
+   "id": "P105",
+   "tier": "进阶",
+   "type": "连通片与相邻关系",
+   "feature": "3×3点阵，每幅都是4颗灰球，位置看似杂乱。",
+   "fast_path": "先数灰球都为4排除B；再配对：一对横向相邻、一对斜向相邻，A、D配不出→C。",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P174",
+    "P149"
+   ],
+   "reason": "广东2023县级，“数量恒定→转看相邻方式”的典型，规律需要点拨。"
+  },
+  {
+   "id": "P106",
+   "tier": "备选",
+   "type": "字符串身份模式",
+   "feature": "框内一行8个方向不同的箭头。",
+   "fast_path": "骨架abcdeadb（1=6、2=8、4=7）；B第4、7位不同，C为周期，D第2、5位相同→A。",
+   "time_target": 30,
+   "difficulty": 2,
+   "speed_value": 5,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P101"
+   ],
+   "reason": "与P101同卷同法，箭头方向只是换名，作限时组备用。"
+  },
+  {
+   "id": "P107",
+   "tier": "进阶",
+   "type": "连通片与相邻关系",
+   "feature": "每幅被线分成几块，恰有一块涂黑。",
+   "fast_path": "先数面：题干都4面，A不是4面排除；再看黑块是否与另3块白块都共边，B、D不满足→C。",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P170"
+   ],
+   "reason": "国考2023副省，面数加黑块邻接的双层规律，练“一块黑→看它挨着谁”。"
+  },
+  {
+   "id": "P108",
+   "tier": "进阶",
+   "type": "位置移动",
+   "feature": "方框边由12个黑白小三角格组成，相邻两幅只有一条边不同。",
+   "fast_path": "比相邻两幅找变动的边：上→右→下→左依次各格顺时针转90°，下一步轮到上边；只改上边的是B。",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P114"
+   ],
+   "reason": "国考2023副省，局部轮流变化的典型，学会“先找哪里变了”可省时。"
+  },
+  {
+   "id": "P109",
+   "tier": "备选",
+   "type": "对称轴方向与位置",
+   "feature": "5×5黑白球阵，黑球数不恒定、图案杂乱。",
+   "fast_path": "只看白球图案找对称轴：\\、|、/、—、\\，每步顺时针转45°→下一幅竖轴；A竖轴、B横轴→A。",
+   "time_target": 90,
+   "difficulty": 5,
+   "speed_value": 2,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P167",
+    "P194"
+   ],
+   "reason": "国考2023副省，同为轴转45°但需先想到只看白球，难度高于P167，作进阶后的备用。"
+  },
+  {
+   "id": "P110",
+   "tier": "进阶",
+   "type": "黑白叠加运算",
+   "feature": "九宫格三行分别是线条、黑色块、小圆，每行第三幅像前两幅拼起来又少了部分。",
+   "fast_path": "前两行验证：前两幅对齐，重合的线、黑块消去，只留不重合部分；第三行小圆照做→C。",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P153",
+    "P156",
+    "P198"
+   ],
+   "reason": "国考2023副省，去同存异跨三种素材，练“运算与素材无关”。"
+  },
+  {
+   "id": "P111",
+   "tier": "进阶",
+   "type": "对称轴方向与位置",
+   "feature": "六幅都是轴对称的简单组合图，轴有竖有横。",
+   "fast_path": "画出每幅对称轴，数轴穿过几个封闭面内部：①⑤⑥各3面，②③④各1面→D。",
+   "time_target": 50,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P164"
+   ],
+   "reason": "国考2023副省，“都对称→看轴与面的关系”的典型变形。"
+  },
+  {
+   "id": "P112",
+   "tier": "进阶",
+   "type": "连通片与相邻关系",
+   "feature": "六个19球蜂窝阵，黑白约各一半，分两类。",
+   "fast_path": "黑、白分别数连通片：①④⑥黑1片白3片，②③⑤黑3片白1片→B。",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P160",
+    "P149"
+   ],
+   "reason": "国考2023副省，在P160基础上黑白都要数，属变形进阶（已逐图核对）。"
+  },
+  {
+   "id": "P113",
+   "tier": "删",
+   "type": "笔画数（一笔画）",
+   "feature": "六幅由直线拼成、交叉很多的线图。",
+   "fast_path": "数奇点：①②⑥为一笔，③④⑤有4个奇点需两笔→C。",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P165",
+    "P115"
+   ],
+   "reason": "与P165、P115同为国考一笔画分类，线条更密、数起来更慢，重复删。"
+  },
+  {
+   "id": "P114",
+   "tier": "删",
+   "type": "位置移动",
+   "feature": "5行条带中各有一个黑三角，位置和朝向都在变。",
+   "fast_path": "每个三角在本行右移1格并顺时针转90°；先按位置排除C、D，再按朝向排除B→A。",
+   "time_target": 75,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P108",
+    "P127"
+   ],
+   "reason": "国考2023地市，位置加自转双变化、细节多耗时，同类已留P108、P155。"
+  },
+  {
+   "id": "P115",
+   "tier": "备选",
+   "type": "笔画数（一笔画）",
+   "feature": "六幅含半圆、波浪线、天线、把手的生活化线图，三岔口多。",
+   "fast_path": "数奇点：①②④只有2个奇点为一笔；③⑤⑥各有4个（天线、V形、把手）需两笔→D。",
+   "time_target": 50,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P165",
+    "P113"
+   ],
+   "reason": "国考2023地市，曲线干扰下的一笔画分类，可靠，作限时备用。"
+  },
+  {
+   "id": "P116",
+   "tier": "核心",
+   "type": "元素数量关系",
+   "feature": "九宫格里圆和小方块混放，两类个数都不固定。",
+   "fast_path": "每幅数圆与方块之差：①④⑤圆多1，②③⑥方块多1→C。",
+   "time_target": 35,
+   "difficulty": 2,
+   "speed_value": 5,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P158"
+   ],
+   "reason": "国考2023地市，两类元素看差值的标准题，计数快。"
+  },
+  {
+   "id": "P117",
+   "tier": "进阶",
+   "type": "对称轴方向与位置",
+   "feature": "每幅都是“外框图形＋框内小图”两层。",
+   "fast_path": "内外分开判：外框须轴对称、内图须中心对称；A内图是单向箭头、B内图不中心对称、C外框不对称→D。",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "题图上方留有大片空白和残留页码“15”，不影响作答。",
+   "similar_to": [
+    "P175",
+    "P140"
+   ],
+   "reason": "国考2023行政执法，“内外分层分别判对称”的最佳代表。"
+  },
+  {
+   "id": "P118",
+   "tier": "备选",
+   "type": "黑白叠加运算",
+   "feature": "九宫格每格是4×4黑白点阵，第三幅黑点明显偏少。",
+   "fast_path": "前两行逐位验证：两幅同为白→黑，否则白；第三行只找“两幅都白”的位置→A。",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P103",
+    "P153"
+   ],
+   "reason": "国考2023执法，“同白得黑”的非常规运算（已逐位核对），作叠加类备用。"
+  },
+  {
+   "id": "P119",
+   "tier": "核心",
+   "type": "曲直与开闭",
+   "feature": "每幅是9个互不相连的小符号（字母、折线、小多边形）。",
+   "fast_path": "每幅只数封闭符号：①②④各4个、③⑤⑥各5个（开放5/4）→B。",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P123"
+   ],
+   "reason": "国考2023执法，多元素开放/封闭计数的标准题。"
+  },
+  {
+   "id": "P120",
+   "tier": "进阶",
+   "type": "笔画数（一笔画）",
+   "feature": "两组图有⌘、F、花、分数1/60、方框四圆，选项含汉字“行”。",
+   "fast_path": "字母汉字数字混排→数笔画：第一组1、2、3，第二组4、5→要6笔；“行”为6笔→C。",
+   "time_target": 50,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P154"
+   ],
+   "reason": "深圳2023，字母汉字混排是笔画数最强信号，且需分部分相加。"
+  },
+  {
+   "id": "P121",
+   "tier": "删",
+   "type": "连通片与相邻关系",
+   "feature": "十字形方格与蜂窝格里各有两个黑格。",
+   "fast_path": "看两黑格是否同一直线上恰隔一个白格：只有A符合→A。",
+   "time_target": 50,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "方格组中两幅是斜向隔一格、一幅是竖向隔一格，“同一直线”的口径偏宽，规律牵强。",
+   "similar_to": [
+    "P105",
+    "P125"
+   ],
+   "reason": "深圳2023，规律口径宽、识别价值低，同类已留P105、P107。"
+  },
+  {
+   "id": "P122",
+   "tier": "删",
+   "type": "位置移动",
+   "feature": "第一组阶梯格中黑块换位；第二组三根高低不同的长条。",
+   "fast_path": "第二组三列整体右移循环：高中低→低高中→中低高，只有D顺序对→D。",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "第二组小方块从顶端跳到底端、选项多为底对齐，规律只解释列序不解释竖直位置；解析“阶梯状位置序列循环”表述含糊。",
+   "similar_to": [
+    "P184"
+   ],
+   "reason": "深圳2023，规律不完整、靠排除得答案，删。"
+  },
+  {
+   "id": "P123",
+   "tier": "核心",
+   "type": "曲直与开闭",
+   "feature": "每幅4个字母或小符号，有的带曲线、有的全是直线。",
+   "fast_path": "每个符号标“含曲/纯直”：每幅都是1个含曲＋3个纯直；B只有R含曲线→B。",
+   "time_target": 35,
+   "difficulty": 2,
+   "speed_value": 5,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P119",
+    "P137"
+   ],
+   "reason": "深圳2023，曲直计数的标准题，字母混排练识别。"
+  },
+  {
+   "id": "P124",
+   "tier": "进阶",
+   "type": "交点与切点",
+   "feature": "爆炸星、U形箭头、圆与三角、夹在两线间的椭圆等，曲线与直线多处接触。",
+   "fast_path": "只数相切点：第一组0、1、2，第二组2、3→要4个切点；A有4处相切→A。",
+   "time_target": 50,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P151",
+    "P168",
+    "P131"
+   ],
+   "reason": "深圳2023，切点数递增，在P168分清相切后练计数。"
+  },
+  {
+   "id": "P125",
+   "tier": "备选",
+   "type": "连通片与相邻关系",
+   "feature": "每幅是一串相连的小方格（像蛇形路），其中几格涂黑。",
+   "fast_path": "看黑格位置：题干黑格都在路线转弯处；B、C、D有白格落在转弯处→A。",
+   "time_target": 40,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P105"
+   ],
+   "reason": "浙江2023，黑格“角色位置”规律，可靠但少见，作备用。"
+  },
+  {
+   "id": "P126",
+   "tier": "进阶",
+   "type": "线条数与角",
+   "feature": "外框是不规则多边形，框内套一个小图。",
+   "fast_path": "只数外框直角：0、1、2、3、4→要5个；B外框5个直角（内图的角不计）→B。",
+   "time_target": 50,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P161",
+    "P134"
+   ],
+   "reason": "浙江2023，直角数加内图干扰，在P161之后做。"
+  },
+  {
+   "id": "P127",
+   "tier": "备选",
+   "type": "位置移动",
+   "feature": "5×5黑白方格阵，黑格数不变、位置在变。",
+   "fast_path": "拆外圈16格、内圈8格：外圈黑格顺时针走2格，内圈逆时针走1格→A。",
+   "time_target": 90,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P155",
+    "P162"
+   ],
+   "reason": "浙江2023，与P155同为分圈移动（已逐格核对），作备用。"
+  },
+  {
+   "id": "P128",
+   "tier": "进阶",
+   "type": "黑白叠加运算",
+   "feature": "两组各三幅3×3格子图，有灰格、白格，还有没画格子的空位。",
+   "fast_path": "第一组建表：同色相遇→空、色＋空→色、灰＋白→灰；第二组首行应为灰、空、灰，只有C→C。",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P103",
+    "P141"
+   ],
+   "reason": "浙江2023，在P103基础上区分“空”与“白”，新干扰（已逐格核对）。"
+  },
+  {
+   "id": "P129",
+   "tier": "备选",
+   "type": "对称轴方向与位置",
+   "feature": "两组图形都左右对称（箭头加三角、套圆、花朵、菱形等）。",
+   "fast_path": "先保留竖直单轴，排除不对称的B、D；再数面：两组都2、3、4面，A为3面、C为4面→C。",
+   "time_target": 50,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P132",
+    "P192"
+   ],
+   "reason": "浙江2023，对称加面数的组合，可靠，作备用。"
+  },
+  {
+   "id": "P130",
+   "tier": "备选",
+   "type": "旋转与翻转",
+   "feature": "每幅是一大一小两个同形图形（三角、矩形、双箭头、十字等）。",
+   "fast_path": "把小的放大后与大的比朝向：①④⑤相差90°，②③⑥相差180°→D。",
+   "time_target": 50,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P178"
+   ],
+   "reason": "浙江2023，相似图形比朝向，较少见，作备用。"
+  },
+  {
+   "id": "P131",
+   "tier": "备选",
+   "type": "交点与切点",
+   "feature": "每幅一大一小两个圆加一条直线，彼此接触。",
+   "fast_path": "只看直线与圆：①②⑤直线切1个圆，③④⑥切2个圆→A。",
+   "time_target": 40,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P168",
+    "P124"
+   ],
+   "reason": "浙江2023，“谁与谁相切”的变形，作备用。"
+  },
+  {
+   "id": "P132",
+   "tier": "核心",
+   "type": "对称轴方向与位置",
+   "feature": "九宫格：叉线、十字、三条横线上摆着小方块、小圆、小三角。",
+   "fast_path": "按列看轴：第一列竖轴、第二列横轴、第三列横竖双轴；B上下△▽互为镜像、左右也对称→B。",
+   "time_target": 40,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P102",
+    "P142"
+   ],
+   "reason": "浙江2023，对称轴方向（竖、横、双）的清晰示范。"
+  },
+  {
+   "id": "P133",
+   "tier": "删",
+   "type": "对称轴方向与位置",
+   "feature": "翻拍图：五幅轴对称图形，内部有细线。",
+   "fast_path": "看对称轴是否与图内实线重合：1、3、5重合，2、4不重合→下一幅不重合→D。",
+   "time_target": 50,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 3,
+   "answer_ok": null,
+   "issue": "翻拍图模糊，判断轴是否落在内部细线上所需的细节看不清。",
+   "similar_to": [
+    "P111"
+   ],
+   "reason": "江苏2023，图不清且规律依赖细节，删。"
+  },
+  {
+   "id": "P134",
+   "tier": "删",
+   "type": "线条数与角",
+   "feature": "翻拍图：扇形、半圆矩形、切角多边形等。",
+   "fast_path": "数直角：1、2、3、4、5→要6个→C。",
+   "time_target": 50,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": null,
+   "issue": "翻拍图模糊，部分角是否为直角难以确认。",
+   "similar_to": [
+    "P161",
+    "P126"
+   ],
+   "reason": "江苏2023，与P161、P126同规律且图不清，删。"
+  },
+  {
+   "id": "P135",
+   "tier": "删",
+   "type": "笔画数（一笔画）",
+   "feature": "翻拍图：每幅两个分离部分（箭头、圆、矩形等）。",
+   "fast_path": "两部分分别为1笔和2笔；C保持“1笔＋2笔”→C。",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 3,
+   "answer_ok": null,
+   "issue": "翻拍图模糊，交点和端点细节难辨。",
+   "similar_to": [
+    "P165",
+    "P120"
+   ],
+   "reason": "江苏2023，图不清、同类已有更好的题，删。"
+  },
+  {
+   "id": "P136",
+   "tier": "删",
+   "type": "对称轴方向与位置",
+   "feature": "翻拍图：圆、方、菱形与箭头的组合图。",
+   "fast_path": "对称轴每步顺时针转45°，且都能一笔画；A轴向不对，C、D需两笔→B。",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 3,
+   "answer_ok": null,
+   "issue": "翻拍图模糊，细线连接和轴向需猜测。",
+   "similar_to": [
+    "P167",
+    "P109"
+   ],
+   "reason": "江苏2023，图不清，轴旋转已留P167，删。"
+  },
+  {
+   "id": "P137",
+   "tier": "备选",
+   "type": "曲直与开闭",
+   "feature": "九宫格（翻拍）：圆弧、方框、折线等，有一列全是曲线、一列全是直线。",
+   "fast_path": "按列：第一列纯曲、第二列纯直、第三列曲直都有；A有曲有直→A。",
+   "time_target": 30,
+   "difficulty": 2,
+   "speed_value": 5,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "翻拍图略模糊，但不影响判断曲直。",
+   "similar_to": [
+    "P123"
+   ],
+   "reason": "江苏2023，按列曲直的基础题，判断快，作限时备用。"
+  },
+  {
+   "id": "P138",
+   "tier": "删",
+   "type": "对称类型",
+   "feature": "翻拍九宫格：箭头、圆、扇形、星形等。",
+   "fast_path": "第一列单轴、第二列中心对称、第三列横竖双轴；D为双轴→D。",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": null,
+   "issue": "翻拍图模糊，部分图形的对称性需猜。",
+   "similar_to": [
+    "P102",
+    "P142"
+   ],
+   "reason": "江苏2023，与P102、P142同法且图不清，删。"
+  },
+  {
+   "id": "P139",
+   "tier": "进阶",
+   "type": "位置移动",
+   "feature": "9×9密集小点阵，黑点多且分散，四幅后接问号。",
+   "fast_path": "先比首尾：第4幅与第1幅完全相同→周期3，下一幅应与第2幅相同→B。",
+   "time_target": 30,
+   "difficulty": 3,
+   "speed_value": 5,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P127"
+   ],
+   "reason": "山东2023，复杂点阵用“找重复图→周期”秒选，提速价值高（已逐点核对）。"
+  },
+  {
+   "id": "P140",
+   "tier": "删",
+   "type": "对称轴方向与位置",
+   "feature": "每幅左边是电路符号，右边是外框加内部小图。",
+   "fast_path": "只看右部：外框轴对称且内图恰1个交点；A外框不对称，B交点多，C无交点→D。",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P117"
+   ],
+   "reason": "山东2023，左半是干扰、规律组合牵强，P117已覆盖内外分层，删。"
+  },
+  {
+   "id": "P141",
+   "tier": "删",
+   "type": "黑白叠加运算",
+   "feature": "九宫格：四分圆、方格、六角星，含黑、白、带点三种格。",
+   "fast_path": "按行逐位：两输入中带点个数0→黑、1→带点、2→白；第三行算出→B。",
+   "time_target": 75,
+   "difficulty": 5,
+   "speed_value": 2,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P103",
+    "P128"
+   ],
+   "reason": "山东2023，规则复杂耗时，三态叠加已留P103、P128，删。"
+  },
+  {
+   "id": "P142",
+   "tier": "备选",
+   "type": "对称类型",
+   "feature": "六个都轴对称的组合图（椭圆加小圆、三角加小三角等）。",
+   "fast_path": "逐个问能否转180°重合：①③⑥能，②④⑤不能→D。",
+   "time_target": 40,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P102",
+    "P138"
+   ],
+   "reason": "山东2023，轴对称是否兼中心对称的分类，作限时备用。"
+  },
+  {
+   "id": "P143",
+   "tier": "进阶",
+   "type": "黑白叠加运算",
+   "feature": "九宫格中圆被分成8个扇形，部分扇形画斜线阴影。",
+   "fast_path": "按行试不通→改按列：前两幅任一有阴影则有（并集）；第三列照做→C。",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P153",
+    "P169"
+   ],
+   "reason": "河北2023，叠加方向由行换列的典型，练“行不通就换列”。"
+  },
+  {
+   "id": "P144",
+   "tier": "删",
+   "type": "交点与切点",
+   "feature": "外框多边形内有许多交叉线，问号在第三位。",
+   "fast_path": "外框边数3、4、?、6、7→5边，排除A、D；再数内部交点也为5→B。",
+   "time_target": 70,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P173"
+   ],
+   "reason": "河北2023，需数复杂交点、耗时，规律组合少见，删。"
+  },
+  {
+   "id": "P145",
+   "tier": "备选",
+   "type": "元素数量关系",
+   "feature": "生活化图形：拱桥飞鸟、卡车、天平人、桃子、轮船、象头。",
+   "fast_path": "找重复出现的同种小部件：①④⑤各3个（鸟、叶、波浪），②③⑥各2个（轮、秤盘、耳）→C。",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P182"
+   ],
+   "reason": "河北2023，生活化图形数相同部件的代表，作备用。"
+  },
+  {
+   "id": "P146",
+   "tier": "进阶",
+   "type": "对称类型",
+   "feature": "六个很规整的图案：分割六边形、雪花、风车花、三叶结、排球等。",
+   "fast_path": "逐个连内部线试对折：②④⑤有对称轴；①③⑥只能旋转重合、无轴→B。",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P102"
+   ],
+   "reason": "河北2023，风车式旋转对称是最常见干扰，进阶必做。"
+  },
+  {
+   "id": "P147",
+   "tier": "进阶",
+   "type": "旋转与翻转",
+   "feature": "两行图中间夹着竖线或横线，眼睛高光点、小怪物的朝向在变。",
+   "fast_path": "竖线＝左右翻、横线＝上下翻；第二行先上下翻、再左右翻，追踪触角卷曲方向→B。",
+   "time_target": 50,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P178",
+    "P195"
+   ],
+   "reason": "四川2023，“夹在图间的线是操作指令”，新颖的翻转题。"
+  },
+  {
+   "id": "P148",
+   "tier": "删",
+   "type": "字符串身份模式",
+   "feature": "链表框里的字母串与数字串，用箭头相连。",
+   "fast_path": "前框末字符＝后框首字符；12后须以2开头、45前须以4结尾→254→A。",
+   "time_target": 20,
+   "difficulty": 1,
+   "speed_value": 5,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P101"
+   ],
+   "reason": "四川2023，字符接龙不属常规图推、考频低，删。"
+  },
+  {
+   "id": "P149",
+   "tier": "备选",
+   "type": "连通片与相邻关系",
+   "feature": "4×4黑白球阵，黑球6～7个、分布零散。",
+   "fast_path": "数白球连通片（只算上下左右相接）：①②⑥白2片，③④⑤白3片→B。",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P160",
+    "P112"
+   ],
+   "reason": "四川2023，方阵连通片最直观（已逐图核对），作限时备用。"
+  },
+  {
+   "id": "P150",
+   "tier": "删",
+   "type": "笔画数（一笔画）",
+   "feature": "六幅线图（V形、矩形加三角、五边形等）。",
+   "fast_path": "数奇点：①④⑥为一笔，②③⑤需两笔→D。",
+   "time_target": 50,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P165",
+    "P115"
+   ],
+   "reason": "四川2023，与P165同类重复，删。"
+  },
+  {
+   "id": "P151",
+   "tier": "核心",
+   "type": "交点与切点",
+   "feature": "每幅都是方形、圆、三角形三件，叠放、挨靠方式各不相同。",
+   "fast_path": "只数“碰到而不穿过”的切点：题干各1处；A、B没有，C有2处→D。",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P168",
+    "P124"
+   ],
+   "reason": "广东2022乡镇，在交叉干扰中找唯一切点，广东真题代表。"
+  },
+  {
+   "id": "P152",
+   "tier": "进阶",
+   "type": "位置移动",
+   "feature": "六等分正六边形，顶格灰色不动，其余格有不同条纹。",
+   "fast_path": "横条纹顺时针每步走1格，第4幅藏在灰格下；下一步到右上，与竖纹叠成网格→B。",
+   "time_target": 50,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P155"
+   ],
+   "reason": "广东2022乡镇，移动＋遮挡＋叠纹，广东特色进阶。"
+  },
+  {
+   "id": "P153",
+   "tier": "核心",
+   "type": "黑白叠加运算",
+   "feature": "九宫格里都是2×2田字格，只有灰格位置不同，有的全白。",
+   "fast_path": "按行：同位置都灰或都白→白，不同→灰；第三行全白＋左上灰→只留左上→B。",
+   "time_target": 20,
+   "difficulty": 1,
+   "speed_value": 5,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P156",
+    "P110",
+    "P198"
+   ],
+   "reason": "广东2022乡镇，去同存异最纯粹的示范，20秒内可解。"
+  },
+  {
+   "id": "P154",
+   "tier": "核心",
+   "type": "笔画数（一笔画）",
+   "feature": "Q形、ψ、ö、HA合体字母，选项有#、€、带点的A，字母上有小点。",
+   "fast_path": "笔画1、2、3、4→要5笔；孤立点各算1笔：D中A形2笔＋横线1笔＋两点2笔＝5→D。",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P120"
+   ],
+   "reason": "广东2022县级，含孤立点的笔画数，广东真题代表。"
+  },
+  {
+   "id": "P155",
+   "tier": "核心",
+   "type": "位置移动",
+   "feature": "19格蜂窝阵，黑格数不变、位置在变。",
+   "fast_path": "拆外圈12格、内圈6格：外圈黑格顺时针走3格，内圈逆时针走2格，中心保持白→D。",
+   "time_target": 75,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P127",
+    "P162"
+   ],
+   "reason": "广东2022县级，分圈移动的广东真题（已逐格核对），移动类代表。"
+  },
+  {
+   "id": "P156",
+   "tier": "备选",
+   "type": "黑白叠加运算",
+   "feature": "九宫格中3×3黑白方格图，黑块连成像字母的形状。",
+   "fast_path": "按行逐格去同存异（黑白不同→黑，相同→白），第三行算出→C。",
+   "time_target": 45,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P153",
+    "P110"
+   ],
+   "reason": "广东2022县级，与P153同法，大黑块要拆回格位（已核对），作限时备用。"
+  },
+  {
+   "id": "P157",
+   "tier": "进阶",
+   "type": "位置移动",
+   "feature": "一条5行16列的斜线格/白格长条，中间挖去一个4×4方块。",
+   "fast_path": "逐行找循环节：第2行“白斜”、第3行“白斜斜”；按相位补这两行即排除B、C、D→A。",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P139"
+   ],
+   "reason": "广东2022县级，挖空补全按行周期，只需验两行，提速明显（已核对）。"
+  },
+  {
+   "id": "P158",
+   "tier": "核心",
+   "type": "元素数量关系",
+   "feature": "黑方块与黑圆混放，方块逐渐减少、圆逐渐增多。",
+   "fast_path": "方块4、3、2、1，圆0、2、4、6→下一幅0方8圆；只有D是8个圆→D。",
+   "time_target": 30,
+   "difficulty": 2,
+   "speed_value": 5,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P116"
+   ],
+   "reason": "广东2022县级，此消彼长（1方换2圆）的标准题（已数清各选项）。"
+  },
+  {
+   "id": "P159",
+   "tier": "删",
+   "type": "面数与面形状",
+   "feature": "方框内被直线分割成大小不同的面。",
+   "fast_path": "比较最大面与最小面：题干二者形状相似、大小不同；C保持→C。",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P163"
+   ],
+   "reason": "国考2022副省，“最大最小面相似”规律冷僻、难识别，删。"
+  },
+  {
+   "id": "P160",
+   "tier": "核心",
+   "type": "连通片与相邻关系",
+   "feature": "19球蜂窝阵，黑白混排，两组各三幅。",
+   "fast_path": "只数白球连通片：第一组3、2、1，第二组3、2→要1片；D白球连成一片→D。",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P112",
+    "P149"
+   ],
+   "reason": "国考2022副省，连通片数的最佳代表（已逐图核对）。"
+  },
+  {
+   "id": "P161",
+   "tier": "核心",
+   "type": "线条数与角",
+   "feature": "黑色不规则多边形，边数、凹凸都无明显规律。",
+   "fast_path": "数黑块内部90°角：第一组1、2、3，第二组1、2→要3个；A5、B3、C2、D1→B。",
+   "time_target": 40,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P126",
+    "P134"
+   ],
+   "reason": "国考2022副省，直角数的标准题，含270°凹角陷阱。"
+  },
+  {
+   "id": "P162",
+   "tier": "删",
+   "type": "位置移动",
+   "feature": "九宫格每格上下两组黑白小球。",
+   "fast_path": "上半黑球沿环逆时针走1位，下半白球按行左移1位；第三行推出→A。",
+   "time_target": 90,
+   "difficulty": 5,
+   "speed_value": 2,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P155",
+    "P127"
+   ],
+   "reason": "国考2022副省，双轨移动细节多，同类已留P155、P127，删。"
+  },
+  {
+   "id": "P163",
+   "tier": "进阶",
+   "type": "面数与面形状",
+   "feature": "方框被几条直线分成若干三角形和四边形。",
+   "fast_path": "先数面：都是7面无法分；再数三角形面：①③⑥4个、②④⑤3个→D。",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P193",
+    "P185"
+   ],
+   "reason": "国考2022副省，“面数相同→看面的形状”的典型。"
+  },
+  {
+   "id": "P164",
+   "tier": "进阶",
+   "type": "对称轴方向与位置",
+   "feature": "六个都轴对称的不规则多边形。",
+   "fast_path": "画轴看它与轮廓怎么交：①②⑤轴过顶点，③④⑥轴过两条平行边的中点→A。",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "原解析分组与当前选项字母顺序不一致，书中已校正为A，核对无误。",
+   "similar_to": [
+    "P111"
+   ],
+   "reason": "国考2022副省，都对称后看轴过点还是过边的典型。"
+  },
+  {
+   "id": "P165",
+   "tier": "核心",
+   "type": "笔画数（一笔画）",
+   "feature": "三角形、六边形、方框加交叉线的线图，内部线较多。",
+   "fast_path": "数奇点和连通：①④⑤奇点不超过2为一笔；②⑥各4个奇点、③两个三角不相连→两笔→D。",
+   "time_target": 40,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P115",
+    "P113",
+    "P150"
+   ],
+   "reason": "国考2022副省，一笔画分类最佳代表，含“不连通”陷阱。"
+  },
+  {
+   "id": "P166",
+   "tier": "删",
+   "type": "元素数量关系",
+   "feature": "19球蜂窝阵（图小且糊），黑白交错。",
+   "fast_path": "数黑球：9、10、9、10、9→下一幅10个；只有B为10个→B。",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "原解析的数量笔误书中已更正为10个；原图小而糊，19球逐个数易错。",
+   "similar_to": [
+    "P160"
+   ],
+   "reason": "国考2022地市，规律只是数量交替、价值低，删。"
+  },
+  {
+   "id": "P167",
+   "tier": "核心",
+   "type": "对称轴方向与位置",
+   "feature": "由不超过5个小方格拼成的黑白图形，每幅形状都变。",
+   "fast_path": "保留黑白看对称轴：/、|、\\、—、/，每步逆时针转45°→下一幅竖轴；D竖轴、A横轴→D。",
+   "time_target": 40,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "解析把各图轴向写错：实际依次为/、|、\\、—、/（每步逆时针45°），问号需竖直轴，D正是竖轴；解析称问号需“右上—左下”轴且D符合，与图不符，答案D无误。",
+   "similar_to": [
+    "P109",
+    "P194",
+    "P136"
+   ],
+   "reason": "国考2022地市，对称轴旋转最清楚的一题；答案对、解析需改。"
+  },
+  {
+   "id": "P168",
+   "tier": "核心",
+   "type": "交点与切点",
+   "feature": "每幅一个圆加一条折线，圆与折线都有接触。",
+   "fast_path": "只看圆与线的接触处：①④⑤贴住不穿（相切），②③⑥顶入或穿入（相交）→A。",
+   "time_target": 35,
+   "difficulty": 2,
+   "speed_value": 5,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P131",
+    "P151",
+    "P124"
+   ],
+   "reason": "国考2022地市，相切与相交的定义题，最适合入门。"
+  },
+  {
+   "id": "P169",
+   "tier": "进阶",
+   "type": "黑白叠加运算",
+   "feature": "九宫格中黑色不规则图形，第三行问号在中间。",
+   "fast_path": "前两行验证求同（只留两幅共有的黑）；第三行反推：选项与左图的交集须等于右图→C。",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P143",
+    "P198"
+   ],
+   "reason": "国考2022执法，问号在中间须反推输入，新干扰。"
+  },
+  {
+   "id": "P170",
+   "tier": "备选",
+   "type": "连通片与相邻关系",
+   "feature": "生活化图形（旗、日出、枝叶、蜡烛、星、鸟），都有若干封闭区域。",
+   "fast_path": "看封闭面之间如何接触：①②⑤有共边的面，③④⑥的面只以点相接→C。",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P107"
+   ],
+   "reason": "浙江2022，面与面共边/共点的代表，作备用。"
+  },
+  {
+   "id": "P171",
+   "tier": "备选",
+   "type": "面积与周长",
+   "feature": "方格纸上的不规则多边形。",
+   "fast_path": "按格数面积（整格加半格拼）：①④⑤为7.5，②③⑥为10.5→C。",
+   "time_target": 75,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P196"
+   ],
+   "reason": "浙江2022，格点面积题，耗时、考频低，作备用。"
+  },
+  {
+   "id": "P172",
+   "tier": "核心",
+   "type": "旋转与翻转",
+   "feature": "一行五幅3×3黑白格，相邻两幅看不出关系。",
+   "fast_path": "改隔项看：1→3→5、2→4各逆时针转90°；把第4幅再逆时针转90°→A。",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P178"
+   ],
+   "reason": "浙江2022，“相邻无规律→隔项”的典型，含整体旋转（已核对）。"
+  },
+  {
+   "id": "P173",
+   "tier": "删",
+   "type": "交点与切点",
+   "feature": "圆与直线、折线的组合（扫描小图）。",
+   "fast_path": "数交点位置2、3、4、5、6→下一幅7个→B。",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 3,
+   "answer_ok": null,
+   "issue": "扫描图小，三叶形、Σ形处的交点口径不易确认。",
+   "similar_to": [
+    "P124",
+    "P144"
+   ],
+   "reason": "江苏2022，交点计数口径依赖读图，删。"
+  },
+  {
+   "id": "P174",
+   "tier": "删",
+   "type": "连通片与相邻关系",
+   "feature": "3×3黑白球，每幅3个黑球。",
+   "fast_path": "黑球都3个、白球都连成2片：B黑球4个、C白球3片、A白球1片→D。",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "解析称各图黑球都分成3片有误：题干黑球连通片依次为1、3、2、2、2；正确规律是黑球恒为3个、白球恒为2片，答案D不变。",
+   "similar_to": [
+    "P149",
+    "P105"
+   ],
+   "reason": "江苏2022，与P149同类且解析有误，删。"
+  },
+  {
+   "id": "P175",
+   "tier": "删",
+   "type": "对称轴方向与位置",
+   "feature": "外框（箭头、房形、菱形等）内放一个小图。",
+   "fast_path": "内外各自轴对称且两轴互相垂直；A外框横轴、内三角竖轴→A。",
+   "time_target": 50,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "扫描图偏糊。",
+   "similar_to": [
+    "P117"
+   ],
+   "reason": "江苏2022，P117已覆盖内外分层对称，删。"
+  },
+  {
+   "id": "P176",
+   "tier": "备选",
+   "type": "位置移动",
+   "feature": "方框内有三角形、中央小圆和沿边排列的小圆串。",
+   "fast_path": "三角形沿四角顺时针走→到左上；中央圆1、2交替→2个；边上小圆总数恒为6→D。",
+   "time_target": 50,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "边上小圆很小，需放大数清。",
+   "similar_to": [
+    "P104"
+   ],
+   "reason": "江苏2022，多元素分别追踪的代表，可靠，作备用。"
+  },
+  {
+   "id": "P177",
+   "tier": "备选",
+   "type": "线条数与角",
+   "feature": "九宫格中多边形内有几条斜线，形状各异。",
+   "fast_path": "按行数平行线方向组：1、2、3；第三行问号要3组，C（菱形两组＋内部横线一组）→C。",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "扫描图，D的平行线组较难数清。",
+   "similar_to": [
+    "P126"
+   ],
+   "reason": "江苏2022，平行线组数的代表，规律较冷，作备用。"
+  },
+  {
+   "id": "P178",
+   "tier": "备选",
+   "type": "旋转与翻转",
+   "feature": "九宫格：时钟指针、方框斜线、圆内折线加小圆。",
+   "fast_path": "每行：第一幅逆时针转90°得第二幅，再上下翻得第三幅；追踪小圆所在位置→B。",
+   "time_target": 55,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P147",
+    "P195"
+   ],
+   "reason": "江苏2022，旋转加翻转的连续操作，作备用。"
+  },
+  {
+   "id": "P179",
+   "tier": "删",
+   "type": "位置移动",
+   "feature": "七个汉字状线图，问去掉哪个后能成规律。",
+   "fast_path": "去掉③后，相邻两图都只移动一根短线→A。",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P108"
+   ],
+   "reason": "山东2022，“删一个图”题型广东不考，删。"
+  },
+  {
+   "id": "P180",
+   "tier": "删",
+   "type": "交点与切点",
+   "feature": "每幅三个圆，有交叉、相切、分离。",
+   "fast_path": "看三对圆的关系组合：第二组重复第一组前两种，问号取“三对相切”→B。",
+   "time_target": 50,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P131"
+   ],
+   "reason": "山东2022，关系组合较绕、同类已有P131，删。"
+  },
+  {
+   "id": "P181",
+   "tier": "删",
+   "type": "连通片与相邻关系",
+   "feature": "九宫格中复杂菱形花纹，部分三角形涂灰。",
+   "fast_path": "行看灰三角数2、3、4，列看分离、共点、共边；问号需4个且共边→C。",
+   "time_target": 75,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P170"
+   ],
+   "reason": "山东2022，图繁复、双维度组合耗时，删。"
+  },
+  {
+   "id": "P182",
+   "tier": "备选",
+   "type": "元素数量关系",
+   "feature": "表情脸，眼和嘴是^、‿、×、v、—等符号。",
+   "fast_path": "只数内部符号种类（朝向不同算同类）：①③⑤2类，②④⑥1类→D。",
+   "time_target": 40,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P145"
+   ],
+   "reason": "山东2022，元素种类数且需忽略朝向，作备用。"
+  },
+  {
+   "id": "P183",
+   "tier": "备选",
+   "type": "笔画数（一笔画）",
+   "feature": "圆、花瓣、双线箭头、沙漏等曲直线图，问“不能”呈现规律的一项。",
+   "fast_path": "题干都能一笔画，A、B、C也能，D需两笔→选D（注意问的是“不能”）。",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P165"
+   ],
+   "reason": "河北2022，反向提问的一笔画，练审题，作备用。"
+  },
+  {
+   "id": "P184",
+   "tier": "备选",
+   "type": "位置移动",
+   "feature": "蜂窝格阵中黑格连成弯曲的长串。",
+   "fast_path": "整体平移：每步右移2列、下移1行，出界从另一边回来→A。",
+   "time_target": 70,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P155"
+   ],
+   "reason": "河北2022，整体循环平移，作备用。"
+  },
+  {
+   "id": "P185",
+   "tier": "备选",
+   "type": "面数与面形状",
+   "feature": "风车三角、扇形、相机快门、套方、六边形风车、相切圆。",
+   "fast_path": "数最小封闭面：①⑤⑥各6面，②③④各9面→D。",
+   "time_target": 50,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P192",
+    "P163"
+   ],
+   "reason": "河北2022，面数分类，相切圆也会围出面，作备用。"
+  },
+  {
+   "id": "P186",
+   "tier": "删",
+   "type": "旋转与翻转",
+   "feature": "第一组菱形回纹复制成1、2、4个；第二组为条纹三角。",
+   "fast_path": "模板按上下翻转、左右转90°复制拼成四份；第二组照拼→B。",
+   "time_target": 70,
+   "difficulty": 5,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P178"
+   ],
+   "reason": "河北2022，复制拼图规律繁复、识别价值低，删。"
+  },
+  {
+   "id": "P187",
+   "tier": "删",
+   "type": "线条数与角",
+   "feature": "扫描小图：方、圆、三角、弧线等组合。",
+   "fast_path": "数完整曲线条数：1、2、3、4→5条→C。",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "扫描图偏糊。",
+   "similar_to": [
+    "P199"
+   ],
+   "reason": "四川2022上，与P199同类且图不清，删。"
+  },
+  {
+   "id": "P188",
+   "tier": "删",
+   "type": "位置移动",
+   "feature": "扫描小图：19球蜂窝阵。",
+   "fast_path": "黑球交替沿左下、右下斜列走1位，出界循环→C。",
+   "time_target": 75,
+   "difficulty": 5,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": null,
+   "issue": "扫描图小而糊，无法逐球核对。",
+   "similar_to": [
+    "P155"
+   ],
+   "reason": "四川2022上，图不清、细节多，删。"
+  },
+  {
+   "id": "P189",
+   "tier": "删",
+   "type": "笔画数（一笔画）",
+   "feature": "扫描小图：方框内曲直混合线图。",
+   "fast_path": "题干都能一笔画，D也能→D。",
+   "time_target": 50,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": null,
+   "issue": "扫描图小，接点看不清。",
+   "similar_to": [
+    "P165"
+   ],
+   "reason": "四川2022上，图不清且同类重复，删。"
+  },
+  {
+   "id": "P190",
+   "tier": "删",
+   "type": "黑白叠加运算",
+   "feature": "九宫格中两条平行线（实或虚）夹着黑白小图形。",
+   "fast_path": "由第二、三列关系反推：颜色互换、实线变虚线，把第三幅还原→A。",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "规律只解释第二到第三列，第一列关系未交代；扫描图偏糊。",
+   "similar_to": [
+    "P153"
+   ],
+   "reason": "四川2022上，规律不完整、图不清，删。"
+  },
+  {
+   "id": "P191",
+   "tier": "删",
+   "type": "元素数量关系",
+   "feature": "猫头鹰、星星、三角、螺旋等生活化图形。",
+   "fast_path": "每幅有3个同类小元素；B有3个白色小五边形→B。",
+   "time_target": 40,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "B中黑五边形与白五边形是否同类、A中黑白三角是否同类取决于口径，规律偏牵强。",
+   "similar_to": [
+    "P145"
+   ],
+   "reason": "四川2022下，口径模糊，删。"
+  },
+  {
+   "id": "P192",
+   "tier": "核心",
+   "type": "面数与面形状",
+   "feature": "箭头、螺旋、三角、喇叭、风筝；选项都是圆和三角形的不同交叠。",
+   "fast_path": "数封闭面0、1、2、3、4→要5面；四个选项素材相同只差交叠，A为5面→A。",
+   "time_target": 40,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P185",
+    "P129"
+   ],
+   "reason": "四川2022下，面数递增加同素材选项，面数类最典型。"
+  },
+  {
+   "id": "P193",
+   "tier": "备选",
+   "type": "面数与面形状",
+   "feature": "方框被线分成若干三角形和四边形。",
+   "fast_path": "面数都是6，再数三角形面0、1、2、3、4→要5个；A符合→A。",
+   "time_target": 50,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P163"
+   ],
+   "reason": "四川2022下，与P163同法，作备用。"
+  },
+  {
+   "id": "P194",
+   "tier": "删",
+   "type": "对称轴方向与位置",
+   "feature": "5×5黑白球阵两组，问号在第二组中间。",
+   "fast_path": "对称轴每步顺时针转45°：第二组水平→?→竖直，中间应为斜轴→D。",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P167",
+    "P109"
+   ],
+   "reason": "四川2022下，与P167、P109同规律，删。"
+  },
+  {
+   "id": "P195",
+   "tier": "删",
+   "type": "旋转与翻转",
+   "feature": "九宫格：电路板状小方块连线图。",
+   "fast_path": "每行：左右镜像得第二幅，再上下镜像得第三幅→D。",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 3,
+   "answer_ok": null,
+   "issue": "图密集偏糊，逐格比对困难。",
+   "similar_to": [
+    "P178",
+    "P147"
+   ],
+   "reason": "四川2022下，图不清、同类已有，删。"
+  },
+  {
+   "id": "P196",
+   "tier": "进阶",
+   "type": "面积与周长",
+   "feature": "4×4方格中黑块形状各异，但黑格数相同。",
+   "fast_path": "黑格数一样→改比周长：数黑块露在外面的边，①②⑥为10，③④⑤为12→B。",
+   "time_target": 50,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P171"
+   ],
+   "reason": "四川2022下，“面积相同→看周长”的新特征，有公式可提速。"
+  },
+  {
+   "id": "P197",
+   "tier": "删",
+   "type": "笔画数（一笔画）",
+   "feature": "矩形、圆和连接线的组合。",
+   "fast_path": "数奇点：①②⑤一笔，③④⑥两笔→A。",
+   "time_target": 50,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P165",
+    "P115"
+   ],
+   "reason": "四川2022下，同类重复，删。"
+  },
+  {
+   "id": "P198",
+   "tier": "进阶",
+   "type": "黑白叠加运算",
+   "feature": "第一组⊠、N、Z；第二组田字菱形、上下两个叠菱形、问号。",
+   "fast_path": "第一幅＝第二幅＋第三幅，重合线消去：⊠去N剩Z；田字菱形去掉中间两菱形剩左右折角→C。",
+   "time_target": 35,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P153",
+    "P110"
+   ],
+   "reason": "广东2021乡镇，按线段去同存异（反向拆分），广东特色。"
+  },
+  {
+   "id": "P199",
+   "tier": "核心",
+   "type": "线条数与角",
+   "feature": "半圆、圆锥、椭圆加三角、方框套圆，都是直线与曲线混搭。",
+   "fast_path": "数完整线条（直＋曲）：2、3、4、5→要6条；D为1圆＋5直线＝6→D。",
+   "time_target": 35,
+   "difficulty": 2,
+   "speed_value": 5,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P187"
+   ],
+   "reason": "广东2021乡镇，线条数的广东真题代表。"
+  },
+  {
+   "id": "P200",
+   "tier": "进阶",
+   "type": "元素数量关系",
+   "feature": "4×4方格中灰格逐渐增多，位置跳来跳去。",
+   "fast_path": "灰格2、3、4、5→要6格（四项都是6格）；再看与前图重合0、1、2→要3格，只有C→C。",
+   "time_target": 50,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P158"
+   ],
+   "reason": "广东2021乡镇，数量相同后看重合数（已核对），广东特色进阶。"
+  }
+ ]
+}

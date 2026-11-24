@@ -1,0 +1,2009 @@
+{
+ "range": "P001—P100",
+ "types": [
+  {
+   "name": "曲直与开闭",
+   "method": "先扫一眼每幅是全直、全曲还是曲直混合，九宫格按行看三种是否各占一格。若是杯、瓶等生活物品，把承载外轮廓和内部小图案分开再判曲直。曲直一致时转看开闭：外轮廓是否闭合、有没有线头伸到外面。",
+   "signals": "弧线与折线混搭；生活物品图标；一组全由直线组成、另一组带弧线",
+   "traps": "物品外轮廓与内部图案混着判；钩形把手其实是直线折成；内部指针等开放线被误当成‘开放图形’",
+   "core": [
+    "P001"
+   ],
+   "advanced": [
+    "P008",
+    "P090"
+   ],
+   "backup": [
+    "P047"
+   ]
+  },
+  {
+   "name": "对称：有无、类型与轴数",
+   "method": "图形规整、有等腰元素先试对称：先分轴对称、中心对称还是兼具，再数轴数。黑白点阵整体乱时，黑白分开看某一色是否对称。阴影、小点等细节要跟着一起折、一起转。",
+   "signals": "正多边形、等腰三角、五角星；分类题两组都很规整；黑白球阵中某一色排列规整",
+   "traps": "把中心对称当轴对称；默认对称中心在版面正中；斜向对称轴漏数",
+   "core": [
+    "P034",
+    "P041"
+   ],
+   "advanced": [
+    "P094"
+   ],
+   "backup": [
+    "P079"
+   ]
+  },
+  {
+   "name": "对称轴：方向、位置与轴上元素",
+   "method": "每幅只有一条对称轴时，在图上画出轴，比较方向是否依次转45°或90°，或与九宫格位置相关。球阵对称时再数轴上有几个元素。对象不一定是线条，规整的留白也有对称轴。",
+   "signals": "每幅都单轴对称但朝向不同；中间留出规整空白；黑球排成对称图案",
+   "traps": "判断出‘都对称’就停；忽略留白区域；把轴两侧成对的元素也算到轴上",
+   "core": [
+    "P029"
+   ],
+   "advanced": [
+    "P015",
+    "P023"
+   ],
+   "backup": [
+    "P087"
+   ]
+  },
+  {
+   "name": "笔画与奇点",
+   "method": "看到‘日’‘田’变形、圆相交相切、五角星，先数奇点（连出奇数条线的点）：0或2个为一笔，否则笔数＝奇点数÷2。再看有没有互不相连的部分，各部分分别算再相加。",
+   "signals": "日、田字变形；两圆相交或相切；外框连内线、线条交叉多；有独立的小圆或弧",
+   "traps": "不连通的两部分即使都没有奇点也要两笔；局部像‘日’字不等于整体两笔；装饰框、题号不计入",
+   "core": [
+    "P019"
+   ],
+   "advanced": [
+    "P025",
+    "P099"
+   ],
+   "backup": [
+    "P004",
+    "P037",
+    "P062"
+   ]
+  },
+  {
+   "name": "封闭区域：面数、面形状与最大面",
+   "method": "图形被分割成多块或是汉字时先数最小封闭面；面数无规律再看面的形状（几边形、几种）或最大面的边数、对称性。只数线条实际围成的最小区域，不把相邻小面拼成大面。",
+   "signals": "多边形内有分割线；汉字；立体感图形；有一块明显最大的面",
+   "traps": "立体外观诱导去想立体名称；同形面重复计种类；开口区域被误算成面",
+   "core": [
+    "P084"
+   ],
+   "advanced": [
+    "P005",
+    "P020"
+   ],
+   "backup": [
+    "P033"
+   ]
+  },
+  {
+   "name": "交点、线条与角",
+   "method": "曲线和直线明显相交时只数曲直交点（端点相接算、同类相交不算、同一位置只算一次）；圆框内画直线时数框上交点。交点筛不出唯一项，再用直线数、边数或直角数补一刀。",
+   "signals": "弧线穿过直线；圆框里画直线；两个多边形相接；图中多处垂直",
+   "traps": "把曲曲、直直交点也计入；一个点被多条线经过而重复计数；只用一条规律就选，没核对第二条",
+   "core": [
+    "P027"
+   ],
+   "advanced": [
+    "P100"
+   ],
+   "backup": [
+    "P003",
+    "P051",
+    "P064"
+   ]
+  },
+  {
+   "name": "数量、种类与面积",
+   "method": "元素零散时先数种类和个数，同形转向不算新种。方格里黑区形状不规则时改算面积：以小格为单位，斜切的半格两两合并；面积差别大时看黑色占整体的比例。",
+   "signals": "若干小元素、同一元素换方向出现；方格中黑块大小不一；图形被等分后部分涂黑",
+   "traps": "比黑块个数而不比面积；把占比当成等差增加；转向的同形元素当新种类",
+   "core": [
+    "P048",
+    "P057"
+   ],
+   "advanced": [],
+   "backup": [
+    "P028",
+    "P097"
+   ]
+  },
+  {
+   "name": "部分数与连通",
+   "method": "黑白球或格子分堆明显时，数各色连成几片（共边、相切才连通，角对角不连通）。片数都一样时，再数每片各有几个。",
+   "signals": "黑白球阵一团一团；方格中白区被黑格隔开；线条把点阵分成几块",
+   "traps": "角对角接触算成连通；只数一种颜色；片数相同就以为没有规律",
+   "core": [
+    "P014"
+   ],
+   "advanced": [
+    "P007",
+    "P068"
+   ],
+   "backup": [
+    "P054",
+    "P081"
+   ]
+  },
+  {
+   "name": "位置平移与逐格变化",
+   "method": "元素数量不变、位置在变：先把对象分组并找轨道（外圈、内圈、行、列），每个对象单独记方向和步数，步数可能递增，越界按圈循环。整体看不出移动时，相邻两图对比找唯一变化的行或块。",
+   "signals": "方格、九宫格、蜂窝点阵中黑块数量固定但位置变化；内外圈结构；相邻两图只差一行",
+   "traps": "不同对象混在一起追；外圈格数数错；忽略步数递增或两块组队整体移动",
+   "core": [
+    "P013"
+   ],
+   "advanced": [
+    "P021",
+    "P040",
+    "P052",
+    "P058"
+   ],
+   "backup": [
+    "P066"
+   ]
+  },
+  {
+   "name": "旋转与翻转",
+   "method": "组成相同、朝向不同时，先抓有身份的标记（黑点、空心点、弧线）看顺逆时针次序：次序不变是旋转，次序反了是翻转，再定角度。多个对象各自追转角；分区图案可能原地各转各的。",
+   "signals": "几幅元素一样只是方向不同；六边形或方格内多条线方向变化；田字格各区图案在转",
+   "traps": "把镜像当旋转；把整体旋转当分区自转；多对象转角不同却当成一个整体转",
+   "core": [
+    "P043",
+    "P098"
+   ],
+   "advanced": [
+    "P026",
+    "P049",
+    "P080"
+   ],
+   "backup": [
+    "P082"
+   ]
+  },
+  {
+   "name": "叠加：求同求异与黑白运算",
+   "method": "九宫格外框和分割都相同、只有线条或黑白不同时试叠加：先横看再竖看，列出黑黑、白白、黑白各得什么（求同、求异、同黑异白、三态）。前两行验证后，留意叠加后是否还要旋转或镜像。",
+   "signals": "每格轮廓相同、黑块数量无规律；同一线条在不同图中重复出现",
+   "traps": "把‘空位’当白色；只做求异忘了镜像或旋转；横看不通不去竖看",
+   "core": [
+    "P009",
+    "P030"
+   ],
+   "advanced": [
+    "P016",
+    "P060"
+   ],
+   "backup": [
+    "P042",
+    "P053",
+    "P091"
+   ]
+  },
+  {
+   "name": "图形间关系：相交、公共边与邻接",
+   "method": "两图重叠时看重叠出来的那块面；几块拼成一个图且有一块涂黑时，看黑块与外框、与其他块的公共边（有无、几条、长短）或相邻块数。块数相同时就转看关系。",
+   "signals": "两个相同图形交叠；多块拼成方框其中一块黑；两个面共用一条边",
+   "traps": "共点当共边；沿外轮廓转折的两段边算成一条；以为凹口的边不算外轮廓",
+   "core": [
+    "P032",
+    "P063"
+   ],
+   "advanced": [
+    "P024"
+   ],
+   "backup": [
+    "P022",
+    "P044",
+    "P061"
+   ]
+  },
+  {
+   "name": "元素位置与功能标记",
+   "method": "小黑点、带圈球等少数特殊元素往往是‘标签’：两两连线比平行或垂直，或指认所在的面比共边、共点。若干元素中有一种重复时，看重复的两个在对角还是相邻；两黑格看中间的白格是否真实存在。",
+   "signals": "每幅都有两个小黑点或两种特殊球；四宫格三种元素一种重复；蜂窝格中两块黑格",
+   "traps": "把普通空心球也拿来连线；把没画出的格位当白格；用整体观感代替具体位置关系",
+   "core": [
+    "P006",
+    "P018",
+    "P077"
+   ],
+   "advanced": [],
+   "backup": [
+    "P035"
+   ]
+  },
+  {
+   "name": "汉字部件（约定性题）",
+   "method": "汉字题先当图形处理：数封闭区域、一笔画或曲直；这些都不成立时才考虑部件，而部件拆分有约定成分，考场上不宜久耗。",
+   "signals": "题干和选项都是汉字",
+   "traps": "按书写笔顺数笔画；凭字义或偏旁意义找规律",
+   "core": [],
+   "advanced": [],
+   "backup": []
+  }
+ ],
+ "questions": [
+  {
+   "id": "P001",
+   "tier": "核心",
+   "type": "曲直与开闭",
+   "feature": "九宫格里有的图全是直线、有的全是弧线",
+   "fast_path": "按行看曲直：一行全直、一行全曲、第三行曲直混合→排除全直的A、B和全曲的D→选C",
+   "time_target": 25,
+   "difficulty": 1,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "原文件无参考答案，答案为本册独立推导；逐图核对后认为C正确",
+   "similar_to": [
+    "P047",
+    "P089",
+    "P008"
+   ],
+   "reason": "2026广东真题，曲直按行分布最干净，比P047（器材图标干扰）更适合作这一规律的第一题。"
+  },
+  {
+   "id": "P002",
+   "tier": "删",
+   "type": "元素位置与功能标记",
+   "feature": "蜂窝格中两块黑格，各图白格数相同",
+   "fast_path": "看两黑格与中间一格是否排成一直线：②④⑤成直线、①③⑥错开→C",
+   "time_target": 45,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "解析称⑥有2个与两黑格都共边的白格，但⑥下方中间是开口缺格（未画六边形），实际只有1个；按解析口径①③为2、②④⑤⑥为1，无选项成立，且与手册M6‘缺格不能补’及P035口径矛盾。C可改由‘两黑格与中间格是否共线’（黑格中心距不同）解释。",
+   "similar_to": [
+    "P035"
+   ],
+   "reason": "无官方答案，解析口径与题图不符、需改读才成立；同类‘两黑格间隔’已有P035，删。"
+  },
+  {
+   "id": "P003",
+   "tier": "备选",
+   "type": "交点、线条与角",
+   "feature": "曲线与直线相交明显，形状各异",
+   "fast_path": "只数曲线与直线的交点（端点相接也算，曲曲相交不算）：题干都是3→只有D为3",
+   "time_target": 40,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "原文件无参考答案，答案为本册独立推导；逐图核对后认为D正确",
+   "similar_to": [
+    "P027",
+    "P074",
+    "P100"
+   ],
+   "reason": "与P027同规律；2026新题，含‘端点接触也算’的细节，适合放进限时混合组。"
+  },
+  {
+   "id": "P004",
+   "tier": "备选",
+   "type": "笔画与奇点",
+   "feature": "线条图中有独立的圆或弧，外加装饰框",
+   "fast_path": "忽略装饰框，数奇点并找分离部分：①②③一笔；④⑤⑥都要3笔→A",
+   "time_target": 50,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "原文件无参考答案，答案为本册独立推导；逐图核对：④独立弧＋两笔部分＝3，⑤6个奇点＝3，⑥外轮廓＋两个独立圆＝3，A正确",
+   "similar_to": [
+    "P025",
+    "P019"
+   ],
+   "reason": "3笔分别来自奇点和不连通两种来源，比P025多一层干扰，但无官方答案，作备选。"
+  },
+  {
+   "id": "P005",
+   "tier": "进阶",
+   "type": "封闭区域：面数、面形状与最大面",
+   "feature": "立体感图形被线条分成多个小面",
+   "fast_path": "不想立体名称，只看线围成的每个最小面：题干全是四边形→排除含三角、六边、曲边面者→C",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "原文件无参考答案，答案为本册独立推导；逐图核对后认为C正确",
+   "similar_to": [
+    "P033",
+    "P020"
+   ],
+   "reason": "‘面的形状’考法，带立体外观干扰，比P033的面种类数更直接。"
+  },
+  {
+   "id": "P006",
+   "tier": "核心",
+   "type": "元素位置与功能标记",
+   "feature": "每幅四个位置放三种小图形，其中一种出现两次",
+   "fast_path": "先找重复的那种图形，看两次出现在对角还是相邻：①③④对角、②⑤⑥相邻→B",
+   "time_target": 30,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "原文件无参考答案，答案为本册独立推导；逐图核对后认为B正确",
+   "similar_to": [
+    "P035",
+    "P017"
+   ],
+   "reason": "‘相同元素相对位置’最典型的一题，特征一眼可见，暂时忘掉具体形状即可。"
+  },
+  {
+   "id": "P007",
+   "tier": "进阶",
+   "type": "部分数与连通",
+   "feature": "方格中黑白格散布，白格被黑格隔成几块",
+   "fast_path": "数白格连通块（共边才通，角对角不通）：两组都是2、3、4→选4块的D",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "原文件仅给答案D，文字为本册补写；核对一致",
+   "similar_to": [
+    "P014",
+    "P081"
+   ],
+   "reason": "方格版部分数，含‘角接触不连通’的判定，是P014球阵题的变形。"
+  },
+  {
+   "id": "P008",
+   "tier": "进阶",
+   "type": "曲直与开闭",
+   "feature": "杯、瓶、盘等物品外轮廓里画着独立小图案",
+   "fast_path": "只看物品内部的小图案：①③⑥由曲线构成、②④⑤由直线构成→C",
+   "time_target": 40,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "原文件仅给答案C，文字为本册补写；核对一致",
+   "similar_to": [
+    "P001",
+    "P090"
+   ],
+   "reason": "曲直规律加上‘承载物与图案分开看’的新干扰。"
+  },
+  {
+   "id": "P009",
+   "tier": "核心",
+   "type": "叠加：求同求异与黑白运算",
+   "feature": "九宫格同一行线条在不同图中重复出现",
+   "fast_path": "按行叠加前两图，相同线段去掉、不同的保留：前两行验证→第三行得C",
+   "time_target": 40,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "原文件仅给答案C，文字为本册补写；核对一致",
+   "similar_to": [
+    "P042",
+    "P091",
+    "P010"
+   ],
+   "reason": "线条去同求异最标准的一题，可与广东P010（求同）对照。"
+  },
+  {
+   "id": "P010",
+   "tier": "留作限时",
+   "type": "叠加：求同求异与黑白运算",
+   "feature": "两组图，第三图像是前两图的一部分",
+   "fast_path": "前两图叠加只留共同部分（求同）：第二组留横线与上半竖线→D",
+   "time_target": 35,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P009"
+   ],
+   "reason": "广东2025真题，留作限时整块。"
+  },
+  {
+   "id": "P011",
+   "tier": "留作限时",
+   "type": "叠加：求同求异与黑白运算",
+   "feature": "第三图像前两图各转了方向后拼在一起",
+   "fast_path": "图1顺时针转90°、图2逆时针转90°再叠放：第一组验证→第二组得D",
+   "time_target": 50,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P016",
+    "P049"
+   ],
+   "reason": "广东2025真题，留作限时整块。"
+  },
+  {
+   "id": "P012",
+   "tier": "留作限时",
+   "type": "位置平移与逐格变化",
+   "feature": "方格中三块黑格位置各自变化",
+   "fast_path": "分内圈4格与外圈12格：内圈逆时针1格，外圈两块一顺一逆各1格→B",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P052",
+    "P013"
+   ],
+   "reason": "广东2025真题，留作限时整块。"
+  },
+  {
+   "id": "P013",
+   "tier": "核心",
+   "type": "位置平移与逐格变化",
+   "feature": "方框边上一个圆、一个方块，位置每幅都变",
+   "fast_path": "外框8个位置：圆顺时针走3格、方块逆时针走3格→两者同时符合的D",
+   "time_target": 35,
+   "difficulty": 2,
+   "speed_value": 5,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P058",
+    "P066",
+    "P093"
+   ],
+   "reason": "环形平移最典型：两个对象、同一轨道、方向相反，国考原题。"
+  },
+  {
+   "id": "P014",
+   "tier": "核心",
+   "type": "部分数与连通",
+   "feature": "黑白球分堆明显",
+   "fast_path": "数各色连成几片：黑1片、白2片→A白4片、C白3片、D黑3片，选B",
+   "time_target": 35,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P081",
+    "P007",
+    "P054"
+   ],
+   "reason": "部分数最直接的国考题，黑白分堆的特征一眼可见。"
+  },
+  {
+   "id": "P015",
+   "tier": "进阶",
+   "type": "对称轴：方向、位置与轴上元素",
+   "feature": "每幅中间留出一块规整的空白区域",
+   "fast_path": "把空白当图形找对称轴：方向依次顺时针转45°→下一个为左上—右下，选D",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P029",
+    "P087"
+   ],
+   "reason": "对称轴方向题的新干扰：对象是留白而不是线条。"
+  },
+  {
+   "id": "P016",
+   "tier": "进阶",
+   "type": "叠加：求同求异与黑白运算",
+   "feature": "九宫格线条重复出现，但第三图左右是反的",
+   "fast_path": "每行前两图求异后再左右镜像：第三行求异得B的形状，再镜像→A",
+   "time_target": 50,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P096",
+    "P011"
+   ],
+   "reason": "求异＋镜像组合，B恰是只做一步的陷阱，最能练‘做完第二步’。"
+  },
+  {
+   "id": "P017",
+   "tier": "删",
+   "type": "元素位置与功能标记",
+   "feature": "每幅由多个零件组成，都含一个黑色正方形",
+   "fast_path": "看黑方块在整体中的位置：①③④居中被环绕、②⑤⑥在外围→C",
+   "time_target": 40,
+   "difficulty": 3,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P006"
+   ],
+   "reason": "‘居中/外围’缺少硬判据、靠整体观感，识别价值低于P006，删。"
+  },
+  {
+   "id": "P018",
+   "tier": "核心",
+   "type": "元素位置与功能标记",
+   "feature": "普通空心球中有两颗黑球、两颗带内圈的标记球",
+   "fast_path": "两黑球连线、两标记球连线：①②④互相垂直、③⑤⑥互相平行→C",
+   "time_target": 35,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "v1解析把带内圈的标记球说成‘白球’，v2已更正，答案不变",
+   "similar_to": [
+    "P077"
+   ],
+   "reason": "功能元素‘两点连线’的标准题，国考原题。"
+  },
+  {
+   "id": "P019",
+   "tier": "核心",
+   "type": "笔画与奇点",
+   "feature": "‘日’‘田’字变形、圆与直线相交",
+   "fast_path": "数奇点：①③④奇点为0或2→一笔，②⑤⑥有4个奇点→两笔→B",
+   "time_target": 45,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P025",
+    "P062",
+    "P031",
+    "P070",
+    "P078"
+   ],
+   "reason": "一笔画国考标准题；③局部像‘日’字是常见陷阱。"
+  },
+  {
+   "id": "P020",
+   "tier": "进阶",
+   "type": "封闭区域：面数、面形状与最大面",
+   "feature": "图形分成多个面，其中有一个明显最大的面",
+   "fast_path": "数面无规律→只看最大面：题干最大面都是轴对称→只有D的最大面对称",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P073",
+    "P005"
+   ],
+   "reason": "‘最大面＋对称’组合的国考题；P073同为最大面考法，留此删彼。"
+  },
+  {
+   "id": "P021",
+   "tier": "进阶",
+   "type": "位置平移与逐格变化",
+   "feature": "5×5黑白格整体乱，相邻两幅只差一行",
+   "fast_path": "相邻比较：第1、2、3、4行依次黑白互换→下一步换第5行，前四行不动→C",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P052"
+   ],
+   "reason": "整体无规律时‘相邻两图找差异’的典型，变化是逐行翻色而不是移动。"
+  },
+  {
+   "id": "P022",
+   "tier": "备选",
+   "type": "图形间关系：相交、公共边与邻接",
+   "feature": "每幅是两个三段折线交叉在一起",
+   "fast_path": "看两折线在哪一段相交：第一组在端部线段，第二组在中间线段→D",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P044",
+    "P032"
+   ],
+   "reason": "‘相交位置’的国考考法，规律较隐蔽，作备选。"
+  },
+  {
+   "id": "P023",
+   "tier": "进阶",
+   "type": "对称轴：方向、位置与轴上元素",
+   "feature": "黑白球阵中黑球排成对称图案",
+   "fast_path": "黑球单看是轴对称，数对称轴上的黑球：①②④为4颗、③⑤⑥为2颗→B",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P094",
+    "P029"
+   ],
+   "reason": "对称＋轴上元素计数，国考新考法。"
+  },
+  {
+   "id": "P024",
+   "tier": "进阶",
+   "type": "图形间关系：相交、公共边与邻接",
+   "feature": "多块拼成的图形中有一块黑块",
+   "fast_path": "看黑块有没有边贴着最外轮廓：①②⑥有、③④⑤没有（⑥凹口边也算外轮廓）→A",
+   "time_target": 40,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P061",
+    "P063"
+   ],
+   "reason": "黑块与外框关系，带‘凹口边也算外轮廓’的陷阱。"
+  },
+  {
+   "id": "P025",
+   "tier": "进阶",
+   "type": "笔画与奇点",
+   "feature": "线条图中有一幅由两块分开的部分组成",
+   "fast_path": "①③④一笔；②⑥各4个奇点要2笔；⑤两部分不连通也要2笔→B",
+   "time_target": 40,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P019",
+    "P004"
+   ],
+   "reason": "笔画数‘不连通也要加笔’的典型，国考题。"
+  },
+  {
+   "id": "P026",
+   "tier": "进阶",
+   "type": "旋转与翻转",
+   "feature": "方格中一条短线和一个折线都在动，折线还转了方向",
+   "fast_path": "分开追：短线沿外圈逆时针1格；折线拐点沿内圈顺时针1格且自身顺转90°→C",
+   "time_target": 50,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P082",
+    "P040",
+    "P012"
+   ],
+   "reason": "平移与自转叠加、两个对象各走各的，是广东P012一类题的前置训练。"
+  },
+  {
+   "id": "P027",
+   "tier": "核心",
+   "type": "交点、线条与角",
+   "feature": "曲线与直线混画且交叉明显",
+   "fast_path": "只数曲线与直线的交点：题干都是2→排除不是2的→D",
+   "time_target": 35,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P003",
+    "P074",
+    "P100"
+   ],
+   "reason": "曲直交点最标准的一题，有参考答案。"
+  },
+  {
+   "id": "P028",
+   "tier": "备选",
+   "type": "数量、种类与面积",
+   "feature": "方格中黑块形状不规则，大小逐渐变化",
+   "fast_path": "数黑格：9、10、11、12、13→选14格的A",
+   "time_target": 30,
+   "difficulty": 1,
+   "speed_value": 4,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P076",
+    "P057"
+   ],
+   "reason": "数量递增的基础题，简单可靠，适合放进限时组。"
+  },
+  {
+   "id": "P029",
+   "tier": "核心",
+   "type": "对称轴：方向、位置与轴上元素",
+   "feature": "两组图，每幅都只有一条对称轴且方向不同",
+   "fast_path": "画出每幅唯一的对称轴：方向依次顺转45°→第二组问号需左下—右上轴→D",
+   "time_target": 40,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P015",
+    "P087"
+   ],
+   "reason": "对称轴方向旋转的标准题。"
+  },
+  {
+   "id": "P030",
+   "tier": "核心",
+   "type": "叠加：求同求异与黑白运算",
+   "feature": "九宫格每格外框和分割相同，只有黑白不同",
+   "fast_path": "按行逐格比较前两图：相同得黑、不同得白→第三行得A",
+   "time_target": 45,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P053",
+    "P060",
+    "P055"
+   ],
+   "reason": "黑白运算标准题，真值表（同黑异白）一次列清。"
+  },
+  {
+   "id": "P031",
+   "tier": "删",
+   "type": "笔画与奇点",
+   "feature": "九宫格图形被线分割，有明显能一笔画成的线条",
+   "fast_path": "按行数笔画：1、2、3笔→第三行缺3笔，选B",
+   "time_target": 45,
+   "difficulty": 2,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P019",
+    "P070"
+   ],
+   "reason": "笔画数同规律已有P019、P025、P062，删。"
+  },
+  {
+   "id": "P032",
+   "tier": "核心",
+   "type": "图形间关系：相交、公共边与邻接",
+   "feature": "每幅都是两个相同图形重叠",
+   "fast_path": "只看重叠出来的那块面：①④⑥是四边形、②③⑤是五边形→C",
+   "time_target": 35,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P033",
+    "P022",
+    "P044"
+   ],
+   "reason": "‘两图相交→看相交面’的典型，特征强。"
+  },
+  {
+   "id": "P033",
+   "tier": "备选",
+   "type": "封闭区域：面数、面形状与最大面",
+   "feature": "两个相同图形交叠，分出多块小面",
+   "fast_path": "数面的形状有几种：①③④两种、②⑤⑥三种→C",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P005",
+    "P032"
+   ],
+   "reason": "面的种类数；题面与P032几乎一样而规律不同，适合作辨析备选。"
+  },
+  {
+   "id": "P034",
+   "tier": "核心",
+   "type": "对称：有无、类型与轴数",
+   "feature": "规整图形，等腰元素多，对称程度逐渐降低",
+   "fast_path": "数对称轴：6、5、4、3、2→选只有1条轴的B",
+   "time_target": 35,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P039",
+    "P079"
+   ],
+   "reason": "对称轴数量递减最典型的一题。"
+  },
+  {
+   "id": "P035",
+   "tier": "备选",
+   "type": "元素位置与功能标记",
+   "feature": "蜂窝格中两块黑格",
+   "fast_path": "两黑格间隔一个实际存在的白格（黑—白—黑）→A；C中间位置是空缺而非白格",
+   "time_target": 40,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "v2已澄清中间格必须实际存在",
+   "similar_to": [
+    "P002"
+   ],
+   "reason": "两黑格间隔关系，含‘空缺不算白格’陷阱；江苏题，作备选。"
+  },
+  {
+   "id": "P036",
+   "tier": "删",
+   "type": "元素位置与功能标记",
+   "feature": "每幅由一个独立小矩形和四个相连矩形组成",
+   "fast_path": "独立矩形横竖交替；四连矩形中与它同向的个数2、1交替→C",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [],
+   "reason": "方向与计数两条规律都要逐图核对，组合牵强，删。"
+  },
+  {
+   "id": "P037",
+   "tier": "备选",
+   "type": "笔画与奇点",
+   "feature": "多边形加几条内线，有‘日’字变形",
+   "fast_path": "先判一笔画排除A、B；再看三角形面：题干都有2个→C",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P099",
+    "P019"
+   ],
+   "reason": "笔画＋面形状双规律，与广东P099同类，江苏题作备选。"
+  },
+  {
+   "id": "P038",
+   "tier": "删",
+   "type": "对称轴：方向、位置与轴上元素",
+   "feature": "九宫格规整图形，对称轴有横有竖",
+   "fast_path": "每行轴为横、竖、横竖双轴排除A、B；每行面数3、4、5→选5面的D",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P037",
+    "P099"
+   ],
+   "reason": "九宫格双规律、计数量大，同类已有P099、P037，删。"
+  },
+  {
+   "id": "P039",
+   "tier": "删",
+   "type": "对称：有无、类型与轴数",
+   "feature": "规整图形，均有等腰元素",
+   "fast_path": "题干都只有一条对称轴→选只有一条轴的B",
+   "time_target": 35,
+   "difficulty": 2,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P034",
+    "P079"
+   ],
+   "reason": "对称轴数同规律已有P034、P079，删。"
+  },
+  {
+   "id": "P040",
+   "tier": "进阶",
+   "type": "位置平移与逐格变化",
+   "feature": "4×4黑球位置变化，有相邻两球和一个单球",
+   "fast_path": "两相邻球为一组沿外圈逆时针1格；单球逆时针1、2、3、4格→下次5格→C",
+   "time_target": 50,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P013",
+    "P082"
+   ],
+   "reason": "平移加‘步数递增’和‘两球组队移动’两个新点。"
+  },
+  {
+   "id": "P041",
+   "tier": "核心",
+   "type": "对称：有无、类型与轴数",
+   "feature": "两组规整图形，对称方式不同",
+   "fast_path": "第一组既轴对称又中心对称，第二组只轴对称→A不对称，B、D兼中心对称→C",
+   "time_target": 35,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P079",
+    "P034"
+   ],
+   "reason": "区分轴对称与中心对称的标准题。"
+  },
+  {
+   "id": "P042",
+   "tier": "备选",
+   "type": "叠加：求同求异与黑白运算",
+   "feature": "两组图，第三图是前两图重叠后黑白相间",
+   "fast_path": "前两图叠放，重叠处留白、只被一图覆盖处涂黑→D",
+   "time_target": 40,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P009"
+   ],
+   "reason": "面状求异（用涂黑表示），是P009线条求异的变形，作备选。"
+  },
+  {
+   "id": "P043",
+   "tier": "核心",
+   "type": "旋转与翻转",
+   "feature": "六幅元素完全相同，只是朝向不同",
+   "fast_path": "固定黑点、空心点、弧线的顺逆时针次序：①②③可互相转到、④⑤⑥是其镜像→B",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P080",
+    "P049"
+   ],
+   "reason": "旋转与翻转分类最典型，练‘看标记点次序’的方法。"
+  },
+  {
+   "id": "P044",
+   "tier": "备选",
+   "type": "图形间关系：相交、公共边与邻接",
+   "feature": "每幅由两个共一条边的面组成",
+   "fast_path": "看公共边是各自的最短边还是最长边：①②⑤最短、③④⑥最长→C",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P022",
+    "P061"
+   ],
+   "reason": "公共边长短的考法较少见，作备选。"
+  },
+  {
+   "id": "P045",
+   "tier": "删",
+   "type": "数量、种类与面积",
+   "feature": "外框多边形内放若干小元素",
+   "fast_path": "外框边数减内部元素数：①③⑥为2、②④⑤为3→C",
+   "time_target": 50,
+   "difficulty": 3,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P050"
+   ],
+   "reason": "边数与元素数相减属样本拟合，规律牵强，删。"
+  },
+  {
+   "id": "P046",
+   "tier": "删",
+   "type": "交点、线条与角",
+   "feature": "曲线与多边形混画",
+   "fast_path": "曲直分开数：曲线都是2条排除A，直线都是7条→B",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 2,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P027",
+    "P083"
+   ],
+   "reason": "需逐条数7条直线，耗时易错，同类已有曲直交点题，删。"
+  },
+  {
+   "id": "P047",
+   "tier": "备选",
+   "type": "曲直与开闭",
+   "feature": "九宫格都是体育器材图标",
+   "fast_path": "按行：全曲、全直、曲直混合→第三行缺混合；伞柄钩由直线折成→D",
+   "time_target": 30,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P001",
+    "P089"
+   ],
+   "reason": "与P001同规律，生活图标干扰，作备选。"
+  },
+  {
+   "id": "P048",
+   "tier": "核心",
+   "type": "数量、种类与面积",
+   "feature": "每幅由多个小元素组成，有的同形不同向",
+   "fast_path": "数元素种类（转向不算新种）：①④⑤两种、②③⑥一种→A",
+   "time_target": 35,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P076"
+   ],
+   "reason": "元素种类最清楚的一题，‘同形转向不算新种’是关键。"
+  },
+  {
+   "id": "P049",
+   "tier": "进阶",
+   "type": "旋转与翻转",
+   "feature": "田字格四个区域的三角图案在变",
+   "fast_path": "四区位置不换，各区图案原地顺时针转90°：第一组验证→第二组得C",
+   "time_target": 50,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P043",
+    "P080"
+   ],
+   "reason": "分区原地自转，易与整体旋转混淆，是旋转类的新变形。"
+  },
+  {
+   "id": "P050",
+   "tier": "删",
+   "type": "数量、种类与面积",
+   "feature": "多边形外框内有黑点",
+   "fast_path": "外框边数减黑点数都等于2→4边2点的B",
+   "time_target": 35,
+   "difficulty": 2,
+   "speed_value": 3,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P045"
+   ],
+   "reason": "边点差值只是样本数值关系，与P045同类，删。"
+  },
+  {
+   "id": "P051",
+   "tier": "备选",
+   "type": "交点、线条与角",
+   "feature": "图中多处出现直角或垂直关系",
+   "fast_path": "数直角：1、2、3、4、5→选6个直角的B",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [],
+   "reason": "直角数考法，数角易漏，作备选。"
+  },
+  {
+   "id": "P052",
+   "tier": "进阶",
+   "type": "位置平移与逐格变化",
+   "feature": "4×4方格中多块黑格各自移动",
+   "fast_path": "分三组：首列单块下移1格、首行单块沿外圈顺1格、右下三块沿右侧4×3外圈顺1格→A",
+   "time_target": 75,
+   "difficulty": 5,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P012",
+    "P021"
+   ],
+   "reason": "与广东P012同型的多轨道平移，难度更高，做完核心再练。"
+  },
+  {
+   "id": "P053",
+   "tier": "备选",
+   "type": "叠加：求同求异与黑白运算",
+   "feature": "九宫格黑白格轮廓相同",
+   "fast_path": "按行逐格：白白得黑，其余都得白→A",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P030",
+    "P060"
+   ],
+   "reason": "黑白运算的另一种真值表，与P030对照用，作备选。"
+  },
+  {
+   "id": "P054",
+   "tier": "备选",
+   "type": "部分数与连通",
+   "feature": "蜂窝球阵中白球被分成两块",
+   "fast_path": "白球都分2片，再数每片个数：①⑤⑥为5＋5、②③④为3＋7→B",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P068",
+    "P014"
+   ],
+   "reason": "与P068同为‘片内个数’，作备选。"
+  },
+  {
+   "id": "P055",
+   "tier": "留作限时",
+   "type": "叠加：求同求异与黑白运算",
+   "feature": "九宫格3×3黑白格，横看无规律",
+   "fast_path": "竖着看：同色得白、一黑一白得黑（异或）→第三列得B",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P030",
+    "P091"
+   ],
+   "reason": "广东2024真题，留作限时整块。"
+  },
+  {
+   "id": "P056",
+   "tier": "留作限时",
+   "type": "交点、线条与角",
+   "feature": "方格纸上画两条直线",
+   "fast_path": "数两线合起来穿过的不同小格（只碰顶点不算）：题干都是8→C",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [],
+   "reason": "广东2024真题，留作限时整块。"
+  },
+  {
+   "id": "P057",
+   "tier": "核心",
+   "type": "数量、种类与面积",
+   "feature": "图形被等分，部分涂黑",
+   "fast_path": "黑色占整体比例1/6、1/5、1/4、1/3、1/2→下一项全黑→D",
+   "time_target": 35,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P097",
+    "P028"
+   ],
+   "reason": "面积占比的国考标准题。"
+  },
+  {
+   "id": "P058",
+   "tier": "进阶",
+   "type": "位置平移与逐格变化",
+   "feature": "蜂窝球阵中黑球位置变化",
+   "fast_path": "分内外两圈：内圈黑球顺时针1位、外圈黑球逆时针1位→A",
+   "time_target": 50,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P013",
+    "P066",
+    "P093"
+   ],
+   "reason": "内外圈反向平移的国考题。"
+  },
+  {
+   "id": "P059",
+   "tier": "删",
+   "type": "部分数与连通",
+   "feature": "5×5圆阵上画折线",
+   "fast_path": "折线把白球分成两片：5＋5与6＋4交替→问号应为6＋4，C",
+   "time_target": 75,
+   "difficulty": 4,
+   "speed_value": 1,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "题图圆与线重叠密集，计数容易出错",
+   "similar_to": [
+    "P054",
+    "P068"
+   ],
+   "reason": "要逐个数被分隔的白球，且规律是交替数值，耗时又牵强，删。"
+  },
+  {
+   "id": "P060",
+   "tier": "进阶",
+   "type": "叠加：求同求异与黑白运算",
+   "feature": "九宫格中有黑球、白球、空位三种状态",
+   "fast_path": "按行逐位置：黑白得白、白白得黑、黑黑得空→第三行得B",
+   "time_target": 55,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P030",
+    "P053"
+   ],
+   "reason": "三态黑白运算，提醒‘空位’不能当白色。"
+  },
+  {
+   "id": "P061",
+   "tier": "备选",
+   "type": "图形间关系：相交、公共边与邻接",
+   "feature": "几块拼成方框，其中一块涂黑",
+   "fast_path": "数黑块与外框的公共边：①③⑥为1条、②④⑤为2条（转折算两条）→C",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P024",
+    "P063"
+   ],
+   "reason": "与P024同为黑块与外框关系，计数版，作备选。"
+  },
+  {
+   "id": "P062",
+   "tier": "备选",
+   "type": "笔画与奇点",
+   "feature": "方框内画几条折线",
+   "fast_path": "外框连同内线一起数奇点：①⑤⑥两笔、②③④一笔→C",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P019",
+    "P078"
+   ],
+   "reason": "外框参与笔画判断的国考题，作备选。"
+  },
+  {
+   "id": "P063",
+   "tier": "核心",
+   "type": "图形间关系：相交、公共边与邻接",
+   "feature": "方框被分成一黑四白五块",
+   "fast_path": "块数相同→看黑块与几块白块共边：①②③为4、④⑤⑥为3→D",
+   "time_target": 40,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P024",
+    "P061"
+   ],
+   "reason": "块数相同时转看邻接关系的典型，国考题。"
+  },
+  {
+   "id": "P064",
+   "tier": "备选",
+   "type": "交点、线条与角",
+   "feature": "每幅是两个相接的多边形",
+   "fast_path": "分别数两个多边形的边：题干每幅两者相等→只有B两者边数相等",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P095",
+    "P067"
+   ],
+   "reason": "两部分分开数边的国考题，作备选。"
+  },
+  {
+   "id": "P065",
+   "tier": "删",
+   "type": "位置平移与逐格变化",
+   "feature": "九宫格蜂窝球阵灰球位置变化",
+   "fast_path": "每行所有灰球沿各自斜线先向右上1格、再向右下1格，越界循环→B",
+   "time_target": 90,
+   "difficulty": 5,
+   "speed_value": 1,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P058"
+   ],
+   "reason": "要逐颗追踪且同一行内方向改变，耗时过长，删。"
+  },
+  {
+   "id": "P066",
+   "tier": "备选",
+   "type": "位置平移与逐格变化",
+   "feature": "5×5黑白球，中心黑球不动",
+   "fast_path": "中心不动；内圈两球每次走4位（左右对调）；外圈黑球顺时针1位→C",
+   "time_target": 50,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P058",
+    "P013"
+   ],
+   "reason": "内外圈分开平移的又一例，作备选。"
+  },
+  {
+   "id": "P067",
+   "tier": "删",
+   "type": "交点、线条与角",
+   "feature": "黑白两个多边形拼在一起",
+   "fast_path": "分别数黑白边数：两者差1且谁多交替→问号白多1→A",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P064"
+   ],
+   "reason": "‘差1且交替’是样本拟合，牵强，删。"
+  },
+  {
+   "id": "P068",
+   "tier": "进阶",
+   "type": "部分数与连通",
+   "feature": "三角球阵中黑球分成两团",
+   "fast_path": "黑球都分2团，再看每团个数：①④⑥为2＋4、②③⑤为1＋5→A",
+   "time_target": 40,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P054",
+    "P014"
+   ],
+   "reason": "片数相同再看片内个数，国考题。"
+  },
+  {
+   "id": "P069",
+   "tier": "删",
+   "type": "图形间关系：相交、公共边与邻接",
+   "feature": "两组都是两个图形叠放",
+   "fast_path": "按参考口径数两部分交界的线段：1、2、3；4、5→6段，C",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 1,
+   "recognition_value": 2,
+   "answer_ok": null,
+   "issue": "题图模糊，交界线分段依赖原参考‘相交线’口径，本册也注明无法独立复核",
+   "similar_to": [
+    "P032"
+   ],
+   "reason": "图不清、口径存疑，删。"
+  },
+  {
+   "id": "P070",
+   "tier": "删",
+   "type": "笔画与奇点",
+   "feature": "风车、田字变形、彩虹等图",
+   "fast_path": "两组笔画数都是1、2、3笔→选3笔的B",
+   "time_target": 45,
+   "difficulty": 2,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P019",
+    "P031"
+   ],
+   "reason": "笔画同规律重复，删。"
+  },
+  {
+   "id": "P071",
+   "tier": "删",
+   "type": "汉字部件（约定性题）",
+   "feature": "两组都是汉字",
+   "fast_path": "第一组都含‘人’形，第二组都含‘乂’形→斑（文中有乂）→D",
+   "time_target": 40,
+   "difficulty": 3,
+   "speed_value": 2,
+   "recognition_value": 1,
+   "answer_ok": true,
+   "issue": "汉字部件拆分有约定成分",
+   "similar_to": [
+    "P086"
+   ],
+   "reason": "汉字部件规律约定性强，删。"
+  },
+  {
+   "id": "P072",
+   "tier": "删",
+   "type": "叠加：求同求异与黑白运算",
+   "feature": "两组小人形格子图，黑格位置不同",
+   "fast_path": "相邻两图恰有1个黑格位置重合→选与第二图只重合1格的B",
+   "time_target": 50,
+   "difficulty": 3,
+   "speed_value": 2,
+   "recognition_value": 1,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P009"
+   ],
+   "reason": "‘相邻两图重合1格’规律弱，地方卷，删。"
+  },
+  {
+   "id": "P073",
+   "tier": "删",
+   "type": "封闭区域：面数、面形状与最大面",
+   "feature": "多边形内分出几个面，有一个最大面",
+   "fast_path": "最大面边数3、4、5、6、7→选最大面为8边的B",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P020"
+   ],
+   "reason": "最大面考法已有P020，删。"
+  },
+  {
+   "id": "P074",
+   "tier": "删",
+   "type": "交点、线条与角",
+   "feature": "曲线与直线交叉",
+   "fast_path": "数曲直交点：题干都是3→D",
+   "time_target": 40,
+   "difficulty": 2,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P027",
+    "P003"
+   ],
+   "reason": "曲直交点已有P027、P003，删。"
+  },
+  {
+   "id": "P075",
+   "tier": "删",
+   "type": "封闭区域：面数、面形状与最大面",
+   "feature": "多边形内有几条分割线",
+   "fast_path": "面数与外框边数相等（3、5、4、5、6）→A",
+   "time_target": 50,
+   "difficulty": 3,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P064"
+   ],
+   "reason": "‘面数＝外框边数’的配对规律牵强，删。"
+  },
+  {
+   "id": "P076",
+   "tier": "删",
+   "type": "数量、种类与面积",
+   "feature": "4×4黑白球，黑球分布各异",
+   "fast_path": "数黑球：①⑤⑥为9、②③④为7→D",
+   "time_target": 35,
+   "difficulty": 2,
+   "speed_value": 3,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P028"
+   ],
+   "reason": "单纯数个数，与P028重复，删。"
+  },
+  {
+   "id": "P077",
+   "tier": "核心",
+   "type": "元素位置与功能标记",
+   "feature": "每幅被线条分割的方框中有两个小黑点",
+   "fast_path": "看黑点所在的两个面：①③⑥两面共边、②④⑤只共一点→C",
+   "time_target": 40,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P018"
+   ],
+   "reason": "‘小黑点＝标签’的功能元素典型。"
+  },
+  {
+   "id": "P078",
+   "tier": "删",
+   "type": "笔画与奇点",
+   "feature": "多边形内有分割线",
+   "fast_path": "①②③一笔画、④⑤⑥两笔→B",
+   "time_target": 45,
+   "difficulty": 2,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P019",
+    "P062"
+   ],
+   "reason": "笔画同规律重复，删。"
+  },
+  {
+   "id": "P079",
+   "tier": "备选",
+   "type": "对称：有无、类型与轴数",
+   "feature": "规整线条图，对称方式不同",
+   "fast_path": "①③④只有一条轴；②⑤⑥两条垂直轴（也中心对称）→A",
+   "time_target": 35,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P041",
+    "P034"
+   ],
+   "reason": "对称轴数与类型结合，作备选。"
+  },
+  {
+   "id": "P080",
+   "tier": "进阶",
+   "type": "旋转与翻转",
+   "feature": "九宫格中复杂植物图案朝向变化",
+   "fast_path": "每行图1逆时针转90°得图2，图2上下翻转得图3→第三行得B",
+   "time_target": 60,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P043",
+    "P016"
+   ],
+   "reason": "旋转＋翻转组合的典型难题，图案复杂需抓标记部位。"
+  },
+  {
+   "id": "P081",
+   "tier": "备选",
+   "type": "部分数与连通",
+   "feature": "4×4黑白球分堆明显",
+   "fast_path": "黑球都是7个排除B；再数黑白各分几片：都是3片→A",
+   "time_target": 50,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P014",
+    "P007"
+   ],
+   "reason": "部分数＋个数双条件，江苏题，作备选。"
+  },
+  {
+   "id": "P082",
+   "tier": "备选",
+   "type": "旋转与翻转",
+   "feature": "九宫格中两个螺旋，一个移动一个转向",
+   "fast_path": "外圈螺旋顺时针走1、2、3、4格→下次5格；中央螺旋原地顺转90°→B",
+   "time_target": 50,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "v1把两个螺旋当同一对象，v2已更正，答案不变",
+   "similar_to": [
+    "P026",
+    "P040"
+   ],
+   "reason": "平移步数递增＋自转，与P026、P040重叠，作备选。"
+  },
+  {
+   "id": "P083",
+   "tier": "删",
+   "type": "交点、线条与角",
+   "feature": "体育运动人物简笔画",
+   "fast_path": "数直线：5、6、7、8、9→选10条的D",
+   "time_target": 60,
+   "difficulty": 3,
+   "speed_value": 2,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P046"
+   ],
+   "reason": "人物图逐条数直线耗时易错，删。"
+  },
+  {
+   "id": "P084",
+   "tier": "核心",
+   "type": "封闭区域：面数、面形状与最大面",
+   "feature": "题干和选项都是汉字",
+   "fast_path": "汉字先数封闭区域：1、2、3、4→选有5个的C（稷）",
+   "time_target": 35,
+   "difficulty": 2,
+   "speed_value": 4,
+   "recognition_value": 5,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P071",
+    "P086"
+   ],
+   "reason": "汉字题先当图形数面的标准做法。"
+  },
+  {
+   "id": "P085",
+   "tier": "删",
+   "type": "数量、种类与面积",
+   "feature": "中间方框周围一圈星星，黑白星混排",
+   "fast_path": "外层白星2、3、4、5→需6颗；内部线条0、1、2、3→需4条→A",
+   "time_target": 55,
+   "difficulty": 3,
+   "speed_value": 2,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [],
+   "reason": "内外两套计数同时递增，计数多，删。"
+  },
+  {
+   "id": "P086",
+   "tier": "删",
+   "type": "汉字部件（约定性题）",
+   "feature": "两组都是汉字",
+   "fast_path": "相邻字共享部件（中→心），部件数1、2、3→意→A",
+   "time_target": 50,
+   "difficulty": 4,
+   "speed_value": 1,
+   "recognition_value": 1,
+   "answer_ok": true,
+   "issue": "汉字拆分口径有约定成分",
+   "similar_to": [
+    "P071"
+   ],
+   "reason": "汉字部件拆分约定性强，删。"
+  },
+  {
+   "id": "P087",
+   "tier": "备选",
+   "type": "对称轴：方向、位置与轴上元素",
+   "feature": "九宫格每个小图都轴对称但轴方向各异",
+   "fast_path": "外围各图对称轴都指向九宫格中心→右下格需左上—右下轴→C",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P029",
+    "P015"
+   ],
+   "reason": "对称轴与位置结合，考法较少见，作备选。"
+  },
+  {
+   "id": "P088",
+   "tier": "删",
+   "type": "封闭区域：面数、面形状与最大面",
+   "feature": "九宫格各图封闭面数各不相同",
+   "fast_path": "每行面数和为15（4、9、2；3、5、7）→第三行8＋1＋6→A",
+   "time_target": 70,
+   "difficulty": 4,
+   "speed_value": 1,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P084"
+   ],
+   "reason": "要数9幅面数再求和，耗时，删。"
+  },
+  {
+   "id": "P089",
+   "tier": "删",
+   "type": "曲直与开闭",
+   "feature": "直线图形中个别带曲线",
+   "fast_path": "①②④含曲线、③⑤⑥全直线→B",
+   "time_target": 30,
+   "difficulty": 1,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P001",
+    "P047"
+   ],
+   "reason": "曲直规律已有P001、P047，删。"
+  },
+  {
+   "id": "P090",
+   "tier": "进阶",
+   "type": "曲直与开闭",
+   "feature": "生活物品图标，有的有伸出去的线头",
+   "fast_path": "看外轮廓是否闭合、有无伸向外部的线端：①②⑥封闭、③④⑤开放→C",
+   "time_target": 40,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "v1写‘全封闭图形’易误解，v2已改为外轮廓封闭、内部可有开放线",
+   "similar_to": [
+    "P008"
+   ],
+   "reason": "本段唯一的开闭题，需注意内部指针等开放线不影响分类。"
+  },
+  {
+   "id": "P091",
+   "tier": "备选",
+   "type": "叠加：求同求异与黑白运算",
+   "feature": "九宫格横看无关，竖看线条和小圆重复",
+   "fast_path": "按列前两图求异（小圆也参与）：前两列验证→第三列得D",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P009",
+    "P055"
+   ],
+   "reason": "竖向求异，可配合广东P055的列向思路练习，作备选。"
+  },
+  {
+   "id": "P092",
+   "tier": "删",
+   "type": "对称：有无、类型与轴数",
+   "feature": "图形含斜线阴影",
+   "fast_path": "连阴影一起判断：②③④轴对称、①⑤⑥不对称→C",
+   "time_target": 45,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 2,
+   "answer_ok": true,
+   "issue": "答案依赖把阴影斜线算作图案，⑤还需细看线段长短",
+   "similar_to": [
+    "P039"
+   ],
+   "reason": "对称判断靠细节读法，删。"
+  },
+  {
+   "id": "P093",
+   "tier": "删",
+   "type": "位置平移与逐格变化",
+   "feature": "蜂窝球阵中三颗黑球",
+   "fast_path": "内圈单球逆时针1格、外圈两球顺时针3格→C",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P058",
+    "P066"
+   ],
+   "reason": "内外圈平移已有P058、P066，删。"
+  },
+  {
+   "id": "P094",
+   "tier": "进阶",
+   "type": "对称：有无、类型与轴数",
+   "feature": "5×5黑白球整体无规律",
+   "fast_path": "黑白分开看：白球部分都中心对称（中心不必在方阵正中）→C",
+   "time_target": 50,
+   "difficulty": 4,
+   "speed_value": 3,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "v2补充：白球的对称中心不一定是版面中心",
+   "similar_to": [
+    "P023"
+   ],
+   "reason": "黑白分开判对称，对称中心偏置是新干扰。"
+  },
+  {
+   "id": "P095",
+   "tier": "删",
+   "type": "交点、线条与角",
+   "feature": "外框多边形内放小多边形",
+   "fast_path": "内部所有小多边形边数之和等于外框边数→D",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P064"
+   ],
+   "reason": "‘两部分边数相等’已留P064，删。"
+  },
+  {
+   "id": "P096",
+   "tier": "删",
+   "type": "叠加：求同求异与黑白运算",
+   "feature": "九宫格黑色三角重复出现",
+   "fast_path": "每行前两图求异后整体顺时针转90°→B",
+   "time_target": 50,
+   "difficulty": 3,
+   "speed_value": 3,
+   "recognition_value": 3,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P016",
+    "P011"
+   ],
+   "reason": "求异＋变换已留P016，删。"
+  },
+  {
+   "id": "P097",
+   "tier": "备选",
+   "type": "数量、种类与面积",
+   "feature": "4×4方格中黑色区域由斜线切出",
+   "fast_path": "以小格为单位算黑色面积（斜切半格合并）：①④⑤为7.5、②③⑥为8.5→D",
+   "time_target": 75,
+   "difficulty": 4,
+   "speed_value": 2,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P057"
+   ],
+   "reason": "方格面积计算，耗时较长，作备选。"
+  },
+  {
+   "id": "P098",
+   "tier": "核心",
+   "type": "旋转与翻转",
+   "feature": "六边形内一长一短两条线，方向每幅都变",
+   "fast_path": "长短线分别追转角：长线每次逆时针30°、短线顺时针60°→C",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P026",
+    "P049"
+   ],
+   "reason": "广东真题，多对象不同转角的标准题。"
+  },
+  {
+   "id": "P099",
+   "tier": "进阶",
+   "type": "笔画与奇点",
+   "feature": "交圆、切圆变形，图形都对称",
+   "fast_path": "先看对称排除C；再看一笔画：题干都能一笔→A、D奇点多→B",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P037",
+    "P019"
+   ],
+   "reason": "广东真题，对称＋笔画双规律。"
+  },
+  {
+   "id": "P100",
+   "tier": "进阶",
+   "type": "交点、线条与角",
+   "feature": "圆框内画直线，直线与圆的接触点逐渐增多",
+   "fast_path": "框上交点0、1、2、3→需4，排除C；再看直线数都是3→D",
+   "time_target": 45,
+   "difficulty": 3,
+   "speed_value": 4,
+   "recognition_value": 4,
+   "answer_ok": true,
+   "issue": "",
+   "similar_to": [
+    "P027",
+    "P003"
+   ],
+   "reason": "广东真题，交点数＋直线数双重筛选。"
+  }
+ ]
+}
