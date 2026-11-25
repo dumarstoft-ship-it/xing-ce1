@@ -7815,7 +7815,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": null
+  "excluded": "资料组GD2016-XZ-M3：与GD2016-XJ-M1同材料（GD2016-XJ-M1：资料组：统计图中0—14岁与65岁及以上两段数据与实际统计相反（题内自洽，改图则第73题无解），容易误导（M12解题人））"
  },
  {
   "id": "GD2016-XZ-Q097",
@@ -7831,7 +7831,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": null
+  "excluded": "资料组GD2016-XZ-M3：与GD2016-XJ-M1同材料（GD2016-XJ-M1：资料组：统计图中0—14岁与65岁及以上两段数据与实际统计相反（题内自洽，改图则第73题无解），容易误导（M12解题人））"
  },
  {
   "id": "GD2016-XZ-Q098",
@@ -7847,7 +7847,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": null
+  "excluded": "资料组GD2016-XZ-M3：与GD2016-XJ-M1同材料（GD2016-XJ-M1：资料组：统计图中0—14岁与65岁及以上两段数据与实际统计相反（题内自洽，改图则第73题无解），容易误导（M12解题人））"
  },
  {
   "id": "GD2016-XZ-Q099",
@@ -7863,7 +7863,7 @@
   "options_to_check": 2,
   "heaviest_option_mode": "一步",
   "issues": [],
-  "excluded": null
+  "excluded": "资料组GD2016-XZ-M3：与GD2016-XJ-M1同材料（GD2016-XJ-M1：资料组：统计图中0—14岁与65岁及以上两段数据与实际统计相反（题内自洽，改图则第73题无解），容易误导（M12解题人））"
  },
  {
   "id": "GD2016-XZ-Q100",
@@ -7879,7 +7879,7 @@
   "options_to_check": 2,
   "heaviest_option_mode": "一步",
   "issues": [],
-  "excluded": null
+  "excluded": "资料组GD2016-XZ-M3：与GD2016-XJ-M1同材料（GD2016-XJ-M1：资料组：统计图中0—14岁与65岁及以上两段数据与实际统计相反（题内自洽，改图则第73题无解），容易误导（M12解题人））"
  },
  {
   "paper": "GD2013-1",
@@ -8269,6 +8269,6 @@
   "issues": [
    "与县级卷GD2016-XJ-M1是同一材料"
   ],
-  "excluded": null
+  "excluded": "与GD2016-XJ-M1同材料（GD2016-XJ-M1：资料组：统计图中0—14岁与65岁及以上两段数据与实际统计相反（题内自洽，改图则第73题无解），容易误导（M12解题人））"
  }
 ]

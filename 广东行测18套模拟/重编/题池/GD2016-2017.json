@@ -894,7 +894,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": null
+  "excluded": "资料组GD2016-XJ-M1：资料组：统计图中0—14岁与65岁及以上两段数据与实际统计相反（题内自洽，改图则第73题无解），容易误导（M12解题人）"
  },
  {
   "id": "GD2016-XJ-Q087",
@@ -910,7 +910,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": null
+  "excluded": "资料组GD2016-XJ-M1：资料组：统计图中0—14岁与65岁及以上两段数据与实际统计相反（题内自洽，改图则第73题无解），容易误导（M12解题人）"
  },
  {
   "id": "GD2016-XJ-Q088",
@@ -926,7 +926,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": null
+  "excluded": "资料组GD2016-XJ-M1：资料组：统计图中0—14岁与65岁及以上两段数据与实际统计相反（题内自洽，改图则第73题无解），容易误导（M12解题人）"
  },
  {
   "id": "GD2016-XJ-Q089",
@@ -942,7 +942,7 @@
   "options_to_check": 2,
   "heaviest_option_mode": "一步",
   "issues": [],
-  "excluded": null
+  "excluded": "资料组GD2016-XJ-M1：资料组：统计图中0—14岁与65岁及以上两段数据与实际统计相反（题内自洽，改图则第73题无解），容易误导（M12解题人）"
  },
  {
   "id": "GD2016-XJ-Q090",
@@ -958,7 +958,7 @@
   "options_to_check": 2,
   "heaviest_option_mode": "一步",
   "issues": [],
-  "excluded": null
+  "excluded": "资料组GD2016-XJ-M1：资料组：统计图中0—14岁与65岁及以上两段数据与实际统计相反（题内自洽，改图则第73题无解），容易误导（M12解题人）"
  },
  {
   "id": "GD2016-XJ-Q091",
@@ -2249,7 +2249,7 @@
   "material_note": "两张6年统计图（年龄段比重百分比堆积柱形图、总人口与自然增长率柱线图），无文字",
   "dup_of": null,
   "issues": [],
-  "excluded": null
+  "excluded": "资料组：统计图中0—14岁与65岁及以上两段数据与实际统计相反（题内自洽，改图则第73题无解），容易误导（M12解题人）"
  },
  {
   "paper": "GD2016-XJ",

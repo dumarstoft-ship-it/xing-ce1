@@ -80,7 +80,15 @@
   15
  ],
  "skip_reason": "加量套不出政治理论、常识判断（第1—15题）：讲义材料留给主套，加量套只练第16—90题。",
- "edits": [],
+ "edits": [
+  {
+   "source": "SYDW2025-Q061",
+   "where": "stem",
+   "old": "参与甲乙两项考核",
+   "new": "参与甲、乙两项考核",
+   "reason": "原卷漏顿号"
+  }
+ ],
  "material_edits": [],
  "stem_fill": {},
  "review_notes": []

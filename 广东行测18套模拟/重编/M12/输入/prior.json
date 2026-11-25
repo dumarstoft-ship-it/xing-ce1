@@ -107,12 +107,12 @@
   ],
   "note": ""
  },
- "JS2023-A类-062": {
-  "answer": "B",
+ "JS2022-A类-066": {
+  "answer": "A",
   "status": "known",
-  "answer_pdf": "2023年江苏公务员考试《行测》真题（A类）解析.pdf",
+  "answer_pdf": "2022年江苏公务员考试《行测》（A类）及解析.pdf",
   "answer_pages": [
-   34
+   19
   ],
   "note": ""
  },
@@ -359,48 +359,48 @@
   ],
   "note": ""
  },
- "GD2016-XJ-Q086": {
+ "GD2015-XJ-Q086": {
   "answer": "B",
   "status": "known",
-  "answer_pdf": "答案解析/2016年广东公务员考试《行测》真题（县级卷）答案及解析.pdf",
+  "answer_pdf": "答案解析/2015年广东公务员考试《行测》真题县级卷答案及解析.pdf",
   "answer_pages": [
-   16
+   12
   ],
   "note": ""
  },
- "GD2016-XJ-Q087": {
+ "GD2015-XJ-Q087": {
   "answer": "A",
   "status": "known",
-  "answer_pdf": "答案解析/2016年广东公务员考试《行测》真题（县级卷）答案及解析.pdf",
+  "answer_pdf": "答案解析/2015年广东公务员考试《行测》真题县级卷答案及解析.pdf",
   "answer_pages": [
-   16
+   13
   ],
   "note": ""
  },
- "GD2016-XJ-Q088": {
-  "answer": "D",
-  "status": "known",
-  "answer_pdf": "答案解析/2016年广东公务员考试《行测》真题（县级卷）答案及解析.pdf",
-  "answer_pages": [
-   17
-  ],
-  "note": ""
- },
- "GD2016-XJ-Q089": {
+ "GD2015-XJ-Q088": {
   "answer": "C",
   "status": "known",
-  "answer_pdf": "答案解析/2016年广东公务员考试《行测》真题（县级卷）答案及解析.pdf",
+  "answer_pdf": "答案解析/2015年广东公务员考试《行测》真题县级卷答案及解析.pdf",
   "answer_pages": [
-   17
+   13
   ],
   "note": ""
  },
- "GD2016-XJ-Q090": {
-  "answer": "B",
+ "GD2015-XJ-Q089": {
+  "answer": "A",
   "status": "known",
-  "answer_pdf": "答案解析/2016年广东公务员考试《行测》真题（县级卷）答案及解析.pdf",
+  "answer_pdf": "答案解析/2015年广东公务员考试《行测》真题县级卷答案及解析.pdf",
   "answer_pages": [
-   17
+   13
+  ],
+  "note": ""
+ },
+ "GD2015-XJ-Q090": {
+  "answer": "D",
+  "status": "known",
+  "answer_pdf": "答案解析/2015年广东公务员考试《行测》真题县级卷答案及解析.pdf",
+  "answer_pages": [
+   13
   ],
   "note": ""
  },
@@ -449,48 +449,48 @@
   ],
   "note": ""
  },
- "GD2016-XJ-Q091": {
-  "answer": "D",
+ "GD2013-1-Q091": {
+  "answer": "B",
   "status": "known",
-  "answer_pdf": "答案解析/2016年广东公务员考试《行测》真题（县级卷）答案及解析.pdf",
+  "answer_pdf": "答案解析/2013年广东公务员考试《行测》一卷答案及解析.pdf",
   "answer_pages": [
-   17
+   13
   ],
   "note": ""
  },
- "GD2016-XJ-Q092": {
-  "answer": "D",
+ "GD2013-1-Q092": {
+  "answer": "B",
   "status": "known",
-  "answer_pdf": "答案解析/2016年广东公务员考试《行测》真题（县级卷）答案及解析.pdf",
+  "answer_pdf": "答案解析/2013年广东公务员考试《行测》一卷答案及解析.pdf",
   "answer_pages": [
-   17
+   13
   ],
   "note": ""
  },
- "GD2016-XJ-Q093": {
-  "answer": "A",
-  "status": "known",
-  "answer_pdf": "答案解析/2016年广东公务员考试《行测》真题（县级卷）答案及解析.pdf",
-  "answer_pages": [
-   18
-  ],
-  "note": ""
- },
- "GD2016-XJ-Q094": {
+ "GD2013-1-Q093": {
   "answer": "C",
   "status": "known",
-  "answer_pdf": "答案解析/2016年广东公务员考试《行测》真题（县级卷）答案及解析.pdf",
+  "answer_pdf": "答案解析/2013年广东公务员考试《行测》一卷答案及解析.pdf",
   "answer_pages": [
-   18
+   13
   ],
   "note": ""
  },
- "GD2016-XJ-Q095": {
+ "GD2013-1-Q094": {
+  "answer": "B",
+  "status": "known",
+  "answer_pdf": "答案解析/2013年广东公务员考试《行测》一卷答案及解析.pdf",
+  "answer_pages": [
+   13
+  ],
+  "note": ""
+ },
+ "GD2013-1-Q095": {
   "answer": "C",
   "status": "known",
-  "answer_pdf": "答案解析/2016年广东公务员考试《行测》真题（县级卷）答案及解析.pdf",
+  "answer_pdf": "答案解析/2013年广东公务员考试《行测》一卷答案及解析.pdf",
   "answer_pages": [
-   18
+   13
   ],
   "note": ""
  },
