@@ -141,7 +141,7 @@
   "part": "资料分析",
   "material_id": "GK2016-DS-M2",
   "dup_of": null,
-  "type": "比较排序",
+  "type": "增长率",
   "mode": "两步",
   "est_seconds": 50,
   "options_to_check": null,
@@ -247,7 +247,7 @@
   "options_to_check": 3,
   "heaviest_option_mode": "一步",
   "issues": [
-   "B项“三分之一”的“一”文字层为“―”（U+2015），印出字形同“一”，已录作“一”"
+   "B项“三分之一”的“一”在文字层与印出的页面上都是横线符号“―”（U+2015），按文义录作“一”"
   ],
   "excluded": null
  },
@@ -471,7 +471,7 @@
   "part": "资料分析",
   "material_id": "GK2017-DS-M2",
   "dup_of": null,
-  "type": "比较排序",
+  "type": "比重",
   "mode": "两步",
   "est_seconds": 50,
   "options_to_check": null,
@@ -509,7 +509,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": null
+  "excluded": "集训第1、2天用过"
  },
  {
   "id": "GK2017-DS-Q122",
@@ -525,7 +525,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": null
+  "excluded": "资料组GK2017-DS-M3：集训第2天用过的资料材料"
  },
  {
   "id": "GK2017-DS-Q123",
@@ -541,7 +541,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": null
+  "excluded": "资料组GK2017-DS-M3：集训第2天用过的资料材料"
  },
  {
   "id": "GK2017-DS-Q124",
@@ -557,7 +557,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": null
+  "excluded": "集训第1、2天用过"
  },
  {
   "id": "GK2017-DS-Q125",
@@ -573,7 +573,7 @@
   "options_to_check": 1,
   "heaviest_option_mode": "两步",
   "issues": [],
-  "excluded": null
+  "excluded": "资料组GK2017-DS-M3：集训第2天用过的资料材料"
  },
  {
   "id": "GK2017-DS-Q126",
@@ -755,7 +755,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": null
+  "excluded": "资料组GK2018-DS-M2：集训第2天用过的资料材料"
  },
  {
   "id": "GK2018-DS-Q117",
@@ -771,7 +771,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": null
+  "excluded": "集训第1、2天用过"
  },
  {
   "id": "GK2018-DS-Q118",
@@ -787,7 +787,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": null
+  "excluded": "集训第1、2天用过"
  },
  {
   "id": "GK2018-DS-Q119",
@@ -805,7 +805,7 @@
   "issues": [
    "四个饼图无图例、无数值，只能按三块扇区的大小比例判断"
   ],
-  "excluded": null
+  "excluded": "资料组GK2018-DS-M2：集训第2天用过的资料材料"
  },
  {
   "id": "GK2018-DS-Q120",
@@ -821,7 +821,7 @@
   "options_to_check": 1,
   "heaviest_option_mode": "两步",
   "issues": [],
-  "excluded": null
+  "excluded": "资料组GK2018-DS-M2：集训第2天用过的资料材料"
  },
  {
   "id": "GK2018-DS-Q121",
@@ -917,7 +917,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": null
+  "excluded": "集训第1、2天用过"
  },
  {
   "id": "GK2018-DS-Q127",
@@ -933,7 +933,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": null
+  "excluded": "资料组GK2018-DS-M4：集训第2天用过的资料材料"
  },
  {
   "id": "GK2018-DS-Q128",
@@ -949,7 +949,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": null
+  "excluded": "集训第1、2天用过"
  },
  {
   "id": "GK2018-DS-Q129",
@@ -965,7 +965,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": null
+  "excluded": "资料组GK2018-DS-M4：集训第2天用过的资料材料"
  },
  {
   "id": "GK2018-DS-Q130",
@@ -981,7 +981,7 @@
   "options_to_check": 3,
   "heaviest_option_mode": "一步",
   "issues": [],
-  "excluded": null
+  "excluded": "资料组GK2018-DS-M4：集训第2天用过的资料材料"
  },
  {
   "paper": "GK2016-DS",
@@ -1119,7 +1119,7 @@
   "material_note": "纯文字4段约410字（产值分项、利润率、进出口），增速、百分点口径多",
   "dup_of": null,
   "issues": [],
-  "excluded": null
+  "excluded": "集训第2天用过的资料材料"
  },
  {
   "paper": "GK2017-DS",
@@ -1179,7 +1179,7 @@
    "原卷资料组编号作（一）（三）（四）（五），缺（二）；题号111—130连续，四组材料齐全，不缺题",
    "第119题四个饼图无图例、无数值，只能按扇区大小比例判断"
   ],
-  "excluded": null
+  "excluded": "集训第2天用过的资料材料"
  },
  {
   "paper": "GK2018-DS",
@@ -1215,6 +1215,6 @@
   "material_note": "纯文字4段约380字，全国、出口船、重点企业、重点企业出口船四组平行口径",
   "dup_of": null,
   "issues": [],
-  "excluded": null
+  "excluded": "集训第2天用过的资料材料"
  }
 ]
