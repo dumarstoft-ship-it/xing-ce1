@@ -8,23 +8,58 @@
 一并给出（转写可能有误，以图为准）。
 """
 import json
+import re
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[3]
 R = ROOT / "广东行测18套模拟/重编"
-DIRS = ("广东/行测/2013-2021", "广东/行测/2022-2026", "广东/事业单位/结构化")
+DIRS = ("广东/行测/2013-2021", "广东/行测/2022-2026", "广东/事业单位/结构化", "国考/资料分析")
+
+
+JZ = "江浙行测_AI题库"
+IMG = re.compile(r"!\[[^\]]*\]\((images/[^)]+)\)")
+HD = re.compile(r"\[代码描摹高清 PNG\]\([^)]*\)\s*·\s*\[SVG\]\([^)]*\)（原图为准）")
+
+
+def jz_as_bank(q, a):
+    """江浙题库的一题转成与广东题库相同的字段（M12起数学运算可用江苏卷难题）：文字里的原图链接转为题图。"""
+    figs = []
+
+    def strip(s):
+        s = HD.sub("", s or "")
+        for m in IMG.finditer(s):
+            figs.append({"path": m.group(1), "role": "question"})
+        return IMG.sub("", s).strip()
+    stem = strip(q["stem"])
+    opts = []
+    for k in sorted(q["options"]):
+        before = len(figs)
+        t = strip(q["options"][k])
+        if len(figs) > before:
+            figs[-1]["role"] = "option"
+            figs[-1]["option_label"] = k
+        opts.append({"label": k, "text": t})
+    return {"id": q["question_id"], "section": q["section"], "stem": stem, "options": opts, "figures": figs,
+            "answer": {"values": [[a.get("correct_answer")]] if a.get("correct_answer") else [], "status": "known",
+                       "source_pages": (a.get("source") or {}).get("pdf_pages")},
+            "source": {"answer_pdf": (a.get("source") or {}).get("file")}}
 
 
 def bank():
     out = {}
     for d in DIRS:
-        for f in sorted(list((ROOT / d).glob("GD*.jsonl")) + list((ROOT / d).glob("SYDW20*.jsonl"))):
+        for f in sorted(list((ROOT / d).glob("GD*.jsonl")) + list((ROOT / d).glob("SYDW20*.jsonl"))
+                        + list((ROOT / d).glob("GK20*.jsonl"))):
             if f.name == "all.jsonl":
                 continue
             for line in open(f, encoding="utf-8"):
                 q = json.loads(line)
                 out[q["id"]] = (d, q)
+    jq = {q["question_id"]: q for q in map(json.loads, open(ROOT / JZ / "questions.jsonl", encoding="utf-8"))}
+    ja = {x["question_id"]: x for x in map(json.loads, open(ROOT / JZ / "answers.jsonl", encoding="utf-8"))}
+    for i, q in jq.items():
+        out[i] = (JZ, jz_as_bank(q, ja.get(i, {})))
     return out
 
 

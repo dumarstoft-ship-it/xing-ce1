@@ -22,7 +22,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[3]
 DRILL = ROOT / "广东行测24天集训"
-BANKS = ("广东/行测/2013-2021", "广东/行测/2022-2026", "广东/事业单位/结构化")
+BANKS = ("广东/行测/2013-2021", "广东/行测/2022-2026", "广东/事业单位/结构化", "国考/资料分析")
 HERE = ROOT / "广东行测18套模拟/重编"
 OUT = HERE / "题源排除.json"
 POOLS = HERE / "题池"
@@ -72,7 +72,7 @@ def load_bank():
     bank = {}
     for d in BANKS:
         for f in sorted(list((ROOT / d).glob("GD20*.jsonl")) + list((ROOT / d).glob("GDXD20*.jsonl"))
-                        + list((ROOT / d).glob("SYDW20*.jsonl"))):
+                        + list((ROOT / d).glob("SYDW20*.jsonl")) + list((ROOT / d).glob("GK20*.jsonl"))):
             for line in open(f, encoding="utf-8"):
                 q = json.loads(line)
                 bank[q["id"]] = q

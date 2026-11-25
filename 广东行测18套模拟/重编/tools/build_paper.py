@@ -32,7 +32,7 @@ MOCK_REL = "模考/2026下半年广东卷_16-33季_AI可读"
 MOCK = ROOT / MOCK_REL
 JZ_REL = "江浙行测_AI题库"
 GK_REL = "国考/言语理解/2016-2025/all.jsonl"
-GD_DIRS = ("广东/行测/2013-2021", "广东/行测/2022-2026", "广东/事业单位/结构化")   # 广东省考、事业单位统考真题题库（M09起的题源）
+GD_DIRS = ("广东/行测/2013-2021", "广东/行测/2022-2026", "广东/事业单位/结构化", "国考/资料分析")   # 广东省考、事业单位统考真题题库（M09起的题源）
 SEASON = {f"M{i:02d}": 15 + i for i in range(1, 19)}   # M01对第16季……M18对第33季
 VERSION = "1.0.0"
 
@@ -70,11 +70,12 @@ GK_Q = {q["id"]: q for q in jl(ROOT / GK_REL)}
 GD_Q = {}                                   # id → (题库目录, 题目)
 for _d in GD_DIRS:
     for _f in sorted(list((ROOT / _d).glob("GD20*.jsonl")) + list((ROOT / _d).glob("GDXD20*.jsonl"))
-                     + list((ROOT / _d).glob("SYDW20*.jsonl"))):
+                     + list((ROOT / _d).glob("SYDW20*.jsonl")) + list((ROOT / _d).glob("GK20*.jsonl"))):
         for _q in jl(_f):
             GD_Q[_q["id"]] = (_d, _q)
 
 IMG = re.compile(r"!\[[^\]]*\]\((images/[^)]+)\)")
+FRAC = re.compile(r"(?<![\d.$])(\d+)/(\d+)(?![\d.])")
 HD_LINKS = re.compile(r"\[代码描摹高清 PNG\]\([^)]*\)\s*·\s*\[SVG\]\([^)]*\)（原图为准）")
 
 
@@ -201,6 +202,10 @@ def describe_source(sid):
     if m:
         d = GD_Q[sid][0] if sid in GD_Q else "广东/事业单位/结构化"
         return f"{m.group(1)}年广东事业单位统考第{int(m.group(2))}题", f"{d}/SYDW{m.group(1)}.jsonl", "真题"
+    m = re.match(r"GK(\d{4})-DS-Q(\d+)$", sid)
+    if m:
+        d = GD_Q[sid][0] if sid in GD_Q else "国考/资料分析"
+        return f"{m.group(1)}年国考地市级卷第{int(m.group(2))}题", f"{d}/{sid.rsplit('-Q', 1)[0]}.jsonl", "真题"
     m = re.match(r"GKYY-(\d{4})-(\d+)$", sid)
     if m:
         return f"{m.group(1)}年国考言语（整理库第{int(m.group(2))}条）", GK_REL, "真题"
@@ -328,7 +333,7 @@ def material_blocks(m, new_id, log, number):
 # ---------------------------------------------------------------- 各部分
 def politics_items(paper):
     items = {}
-    for who in ("甲", "乙", "丙", "丁", "戊", "己", "庚", "辛", "壬", "癸"):  # 丁补写的经济题替换甲在同一题位的题；戊写M06，己写M07……
+    for who in ("甲", "乙", "丙", "丁", "戊", "己", "庚", "辛", "壬", "癸", "子", "丑", "寅", "卯", "辰", "巳"):  # 丁补写的经济题替换甲在同一题位的题；戊写M06，己写M07……
         for q in jload(R / "政治常识" / f"{who}.json", []):
             if q["paper"] == paper:
                 items[q["number"]] = dict(q, writer=who)
@@ -557,6 +562,8 @@ def build(paper, dry=False):
                         rec["materials"] = [x for x in questions if x["materials"] and x["materials"][0]["id"] == mat_ids[m["id"]]][0]["materials"]
             elif sid in JZ_Q:
                 g = JZ_Q[sid]
+                if not orig and (JZ_A.get(sid) or {}).get("correct_answer") and s["answer"] != JZ_A[sid]["correct_answer"]:
+                    raise SystemExit(f"{paper}第{n}题：解题答案{s['answer']}与来源答案{JZ_A[sid]['correct_answer']}不一致（{sid}）")
                 rec["stem"] = md_blocks(g["stem"])
                 rec["options"] = {k: md_blocks(t) for k, t in g["options"].items()}
                 # 选项画在题图里时，江浙题库的选项文字只是字母本身
@@ -580,6 +587,14 @@ def build(paper, dry=False):
                 rec["options_mode"] = "in_figure"
                 rec["options"] = {k: [{"type": "text", "text": f"见题图中的 {k} 选项"}] for k in rec["options"]}
             apply_edits(plan, sid, rec, log, n, paper)
+            if 31 <= n <= 35 and not orig:   # 数列里的分数原卷是上下排的，题库多转写成斜线（M12起自动排成分数）
+                hit = False
+                for blk in rec["stem"] + [x for v in rec["options"].values() for x in v]:
+                    if blk["type"] == "text" and FRAC.search(blk["text"]):
+                        blk["text"] = FRAC.sub(r"$\\frac{\1}{\2}$", blk["text"])
+                        hit = True
+                if hit:
+                    log.add(n, "改动", "数列里的分数按原卷排成上下分数（题库转写为斜线）")
             answers[n] = {"answer": s["answer"], "card": s["answer"], "analysis": s["analysis"],
                           "category": "／".join(x for x in (s.get("category"), s.get("subcategory"), s.get("form")) if x),
                           "basis": "模考无答案，独立解出并复核" if sid.startswith("gd-mock") else "来源答案，编辑解出一致",

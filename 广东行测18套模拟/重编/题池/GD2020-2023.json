@@ -6265,7 +6265,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": null
+  "excluded": "资料组GD2023-XZ-M1：资料组：第89题原卷缺题（只印征集说明、无选项），组内只剩4题，不能整组用"
  },
  {
   "id": "GD2023-XZ-Q087",
@@ -6281,7 +6281,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": null
+  "excluded": "资料组GD2023-XZ-M1：资料组：第89题原卷缺题（只印征集说明、无选项），组内只剩4题，不能整组用"
  },
  {
   "id": "GD2023-XZ-Q088",
@@ -6297,7 +6297,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": null
+  "excluded": "资料组GD2023-XZ-M1：资料组：第89题原卷缺题（只印征集说明、无选项），组内只剩4题，不能整组用"
  },
  {
   "id": "GD2023-XZ-Q089",
@@ -6331,7 +6331,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": null
+  "excluded": "资料组GD2023-XZ-M1：资料组：第89题原卷缺题（只印征集说明、无选项），组内只剩4题，不能整组用"
  },
  {
   "id": "GD2023-XZ-Q091",
@@ -6790,7 +6790,7 @@
   "issues": [
    "第89题原卷缺题，本组只有4题可用"
   ],
-  "excluded": null
+  "excluded": "资料组：第89题原卷缺题（只印征集说明、无选项），组内只剩4题，不能整组用"
  },
  {
   "paper": "GD2023-XZ",
