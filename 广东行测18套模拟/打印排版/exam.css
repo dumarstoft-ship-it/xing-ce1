@@ -60,6 +60,7 @@ p { margin: 0; }
   margin: 12pt 0 10pt;
   text-align: justify;
   break-after: avoid;
+  break-inside: avoid;   /* 部分说明不拆在两页（S03资料分析说明曾被拆开） */
 }
 
 .part-end {

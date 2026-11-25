@@ -636,7 +636,7 @@
   "type": "解释",
   "difficulty": "难",
   "issues": [],
-  "excluded": null
+  "excluded": "解释：M12两名解题人盲解都选D（票价过高），来源B，来源解析也承认D有解释力，答案可商榷"
  },
  {
   "id": "GD2018-Q052",
@@ -3713,7 +3713,7 @@
   "form": "一组图",
   "difficulty": "难",
   "issues": [],
-  "excluded": null
+  "excluded": "图推：M12两名解题人盲解都选C，来源A，A、C只差“门”上一个小缺口，答案可商榷"
  },
  {
   "id": "GD2020-XJ-Q048",
@@ -3955,7 +3955,7 @@
   "type": "前提假设",
   "difficulty": "难",
   "issues": [],
-  "excluded": null
+  "excluded": "前提假设：M12两名解题人盲解都选D，来源B“意愿都很强”说得过满，答案可商榷"
  },
  {
   "id": "GD2020-XJ-Q067",
