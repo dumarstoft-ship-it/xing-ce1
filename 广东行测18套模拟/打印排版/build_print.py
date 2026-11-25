@@ -199,7 +199,7 @@ class Log:
         self.items.append({"题号": number, "位置": where, "类型": kind, "原文": before, "排版后": after})
 
 
-MARKER = re.compile(r"^(（\d+）|\(\d+\)|[①-⑳]|[甲乙丙丁戊己庚辛]：|观众\d+：|[A-D][.．、]|第[一二三四五六七八九十]+[，、：])")
+MARKER = re.compile(r"^(（\d+）|\(\d+\)|[①-⑳]|[Ⅰ-Ⅻ][.．、]|[甲乙丙丁戊己庚辛]：|观众\d+：|[A-D][.．、]|第[一二三四五六七八九十]+[，、：])")   # Ⅰ.起的列项（M13第51题）
 # 对话行：两到四字的称呼加冒号开头（如“小朱：”“张老师：”）。误判只会多保留一个换行
 SPEAKER = re.compile(r"^[\u4e00-\u9fa5]{2,4}[：:]\S")
 PROMPT = re.compile(

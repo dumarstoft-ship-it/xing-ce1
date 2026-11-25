@@ -86,7 +86,9 @@ def main():
     extra = set(range(1, 16)) <= set(skip)    # 加量套（S01起）：不出第1—15题
     n_sydw = sum(1 for v in (plan.get("sources") or {}).values() if v.startswith("SYDW"))
     n_gdxd = sum(1 for v in (plan.get("sources") or {}).values() if v.startswith("GDXD"))   # 2019、2020年广东选调生考试卷（M11起）
-    n_js = sum(1 for v in (plan.get("sources") or {}).values() if v.startswith("JS"))       # 江苏省考A类卷的数学难题（M12起，用户2026-11-25）
+    js_n = [int(n) for n, v in (plan.get("sources") or {}).items() if v.startswith("JS")]   # 江苏省考A类卷的数量难题（M12起，用户2026-11-25）
+    js_parts = [f"{c}道{k}" for k, c in (("数推", sum(1 for n in js_n if n <= 35)), ("数学运算", sum(1 for n in js_n if 36 <= n <= 45))) if c]
+    n_gk = sum(1 for v in (plan.get("sources") or {}).values() if v.startswith("GK")) // 5   # 国考地市级卷的资料组（M13起）
     vf = R / "言语" / f"selection_{p}.json"
     v_sydw = vf.exists() and any(x["id"].startswith("SYDW") for x in json.loads(vf.read_text(encoding="utf-8")).get(p, []))
     qs = [json.loads(l) for l in (d / "题目.jsonl").read_text(encoding="utf-8").splitlines() if l.strip()]
@@ -101,14 +103,16 @@ def main():
         intro = ("加量套：2026-11-26至12-02每天的第二场，用事业编和省考旧卷剩下的题编（见[重编说明](../重编/README.md)“M09起怎么编”）。"
                  "只出第16—90题，题号照真题位置，不出政治理论、常识判断；第31—90题以2022—2026年广东事业单位统考题为主，配广东省考旧卷"
                  + ("和选调生考试卷" if n_gdxd else "") + "里较易的题，"
-                 "题型照2024—2026年真题分布，难度略低于主套，解析写得简短。建议限时75分钟（主套90分钟里约10分钟用在第1—15题），"
+                 + (f"资料有{n_gk}组取自国考地市级卷（广东资料组不够，用户2026-11-20定用国考补），" if n_gk else "")
+                 + "题型照2024—2026年真题分布，难度略低于主套，解析写得简短。建议限时75分钟（主套90分钟里约10分钟用在第1—15题），"
                  "到点没做完就换一支颜色的笔做完。")
     elif real:
         intro = ("2026-11-19起用广东省考旧卷编（见[重编说明](../重编/README.md)“给后面各套的提示”）。"
                  "第31—90题逐题选自广东省考旧卷"
                  + (f"和2019、2020年广东选调生考试卷（{n_gdxd}题）" if n_gdxd else "")
                  + (f"（旧卷用完的题型取广东事业单位统考题，共{n_sydw}题）" if n_sydw else "")
-                 + (f"，另有{n_js}道数学运算难题取自江苏省考A类卷（用户2026-11-25：广东难题不够可用外地难题）" if n_js else "")
+                 + (f"，另有{'、'.join(js_parts)}难题取自江苏省考A类卷（用户2026-11-25：广东难题不够可用外地难题）" if js_parts else "")
+                 + (f"，资料有{n_gk}组取自国考地市级卷（用户2026-11-20定：广东资料组不够用国考补）" if n_gk else "")
                  + "，都不在用户练过的24天集训第1、2天和习题本图推里；"
                  "各部分题型按2024—2026年真题的分布挑，数量、资料按[难度对照](../难度对照/README.md)的标准控制多步题。"
                  "第16—30题按真题题位编排，先用广东旧卷" + ("和事业编" if v_sydw else "") + "的言语题，旧卷没有的题型用国考、江浙真题；"
