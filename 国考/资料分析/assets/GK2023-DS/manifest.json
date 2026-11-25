@@ -1,0 +1,257 @@
+[
+ {
+  "id": "GK2023-DS-p25-i01",
+  "path": "assets/GK2023-DS/GK2023-DS-p25-i01.png",
+  "paper_id": "GK2023-DS",
+  "source_page": 25,
+  "source_bbox_points": [
+   70.0,
+   328.75,
+   403.0,
+   563.5
+  ],
+  "method": "pdf_render_crop",
+  "width": 1332,
+  "height": 939,
+  "sha256": "a4164393168a5fb94f2e4039ba07edad2ec813cae7b5ab3277b653deee06af44",
+  "transcription": "2021年下半年Z省各市中心城市道路交通守法率（单位：%）\n\n| 指标 | 季度 | A市 | B市 | C市 | D市 | E市 | F市 | G市 | H市 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 机动车依法礼让率 | 三季度 | 98.0 | 96.0 | 99.2 | 97.3 | 96.5 | 96.0 | 94.8 | 98.2 |\n| 机动车依法礼让率 | 四季度 | 98.8 | 98.8 | 98.0 | 99.6 | 98.3 | 98.2 | 100.0 | 99.3 |\n| 行人遵守交通信号灯率 | 三季度 | 98.0 | 96.7 | 97.2 | 99.1 | 95.7 | 96.7 | 94.7 | 99.3 |\n| 行人遵守交通信号灯率 | 四季度 | 99.4 | 97.7 | 98.0 | 98.9 | 99.2 | 99.0 | 98.2 | 99.3 |\n| 非机动车遵守交通信号灯率 | 三季度 | 95.8 | 96.7 | 95.4 | 97.8 | 91.8 | 97.0 | 90.9 | 97.7 |\n| 非机动车遵守交通信号灯率 | 四季度 | 96.0 | 98.0 | 97.0 | 100.0 | 99.3 | 98.8 | 98.2 | 99.4 |\n| 摩托车安全头盔佩戴率 | 三季度 | 99.6 | 96.0 | 92.0 | 97.0 | 92.1 | 96.0 | 92.0 | 97.2 |\n| 摩托车安全头盔佩戴率 | 四季度 | 100.0 | 98.4 | 96.0 | 99.2 | 98.9 | 98.8 | 95.6 | 99.0 |\n| 汽车前排驾乘人员安全带使用率 | 三季度 | 99.6 | 96.5 | 96.0 | 97.4 | 92.5 | 96.1 | 91.9 | 98.8 |\n| 汽车前排驾乘人员安全带使用率 | 四季度 | 99.2 | 98.8 | 98.0 | 98.6 | 99.8 | 99.1 | 98.2 | 99.4 |\n\n原表每项指标占两行（三季度、四季度），指标名分两行印（如“机动车依”“法礼让率”）；“单位：%”印在表右上方，表题在图片内。"
+ },
+ {
+  "id": "GK2023-DS-p26-i01",
+  "path": "assets/GK2023-DS/GK2023-DS-p26-i01.png",
+  "paper_id": "GK2023-DS",
+  "source_page": 26,
+  "source_bbox_points": [
+   66.5,
+   341.25,
+   379.0,
+   505.5
+  ],
+  "method": "pdf_render_crop",
+  "width": 1250,
+  "height": 657,
+  "sha256": "9c12db2921d2f697703e7605afab980bd7f84ac81b0bc233c4fcb383b73c2ce2",
+  "transcription": "图中文字（自上而下）：汽车前排驾乘人员安全带使用率；摩托车安全头盔佩戴率；非机动车遵守交通信号灯率；行人遵守交通信号灯率；机动车依法礼让率。\n\n条形没有数值和刻度。按裁图量得条长约为791、632、632、738、317像素（同一比例），即安全带最长，行人次之，摩托车与非机动车等长，机动车最短。"
+ },
+ {
+  "id": "GK2023-DS-p26-i02",
+  "path": "assets/GK2023-DS/GK2023-DS-p26-i02.png",
+  "paper_id": "GK2023-DS",
+  "source_page": 26,
+  "source_bbox_points": [
+   66.0,
+   623.5,
+   414.25,
+   747.25
+  ],
+  "method": "pdf_render_crop",
+  "width": 1393,
+  "height": 495,
+  "sha256": "fc605fbd42d2f6abbb6cf5ce482e712c5595c924bb6f78eda47614b753fd5ec6",
+  "transcription": "2016～2021年中国超算服务细分市场规模（单位：亿元）\n\n| 年份 | 尖端超算 | 通用超算 | 业务超算 | 人工智能超算 |\n| --- | --- | --- | --- | --- |\n| 2016年 | 20.9 | 23.9 | 15.6 | 4.7 |\n| 2017年 | 23.1 | 26.9 | 24.1 | 7.9 |\n| 2018年 | 24.2 | 29.7 | 34.8 | 12.5 |\n| 2019年 | 26.4 | 32.2 | 48.1 | 18.8 |\n| 2020年 | 28.3 | 37.8 | 64.4 | 27.7 |\n| 2021年 | 31.4 | 40.3 | 85.6 | 38.3 |\n\n表题和“单位：亿元”印在表格首行内。"
+ },
+ {
+  "id": "GK2023-DS-p27-i01",
+  "path": "assets/GK2023-DS/GK2023-DS-p27-i01.png",
+  "paper_id": "GK2023-DS",
+  "source_page": 27,
+  "source_bbox_points": [
+   66.5,
+   80.0,
+   383.75,
+   268.5
+  ],
+  "method": "pdf_render_crop",
+  "width": 1269,
+  "height": 754,
+  "sha256": "a0afeae284779574b312679a39145136885d9f8a1ba4b5a3d3c3e7d374ae0989",
+  "transcription": "2016～2021年中国第三方超算服务市场规模\n\n| 年份 | 独立超算服务商（亿元） | 互联网超算服务商（亿元） |\n| --- | --- | --- |\n| 2016年 | 6.0 | 1.2 |\n| 2017年 | 7.1 | 2.3 |\n| 2018年 | 8.7 | 4.2 |\n| 2019年 | 11.7 | 6.6 |\n| 2020年 | 15.0 | 9.5 |\n| 2021年 | 18.3 | 13.8 |\n\n堆积柱：下段（白色）为独立超算服务商，上段（黑色）为互联网超算服务商（数值标在柱顶上方）；纵轴单位亿元（0—40）；图题在图片内、印在图下方。"
+ },
+ {
+  "id": "GK2023-DS-p28-i01",
+  "path": "assets/GK2023-DS/GK2023-DS-p28-i01.png",
+  "paper_id": "GK2023-DS",
+  "source_page": 28,
+  "source_bbox_points": [
+   70.0,
+   106.5,
+   380.25,
+   347.0
+  ],
+  "method": "pdf_render_crop",
+  "width": 1241,
+  "height": 962,
+  "sha256": "6ae2686fa7b6a5b8c4be3dd14e475e975bc3a5e6a023bf6c24720202670d2a9b",
+  "transcription": "图1　2017-2021年我国木材进口量及进口额\n\n| 年份 | 进口量（万吨） | 进口额（亿美元） |\n| --- | --- | --- |\n| 2017年 | 2389 | 96.9 |\n| 2018年 | 2367 | 97.8 |\n| 2019年 | 2351 | 83.1 |\n| 2020年 | 2107 | 74.4 |\n| 2021年 | 1892 | 78.6 |\n\n柱为进口量（左轴，万吨，0—4000），折线为进口额（右轴，亿美元，0—120）；图名在图片内、印在图下方。"
+ },
+ {
+  "id": "GK2023-DS-p28-i02",
+  "path": "assets/GK2023-DS/GK2023-DS-p28-i02.png",
+  "paper_id": "GK2023-DS",
+  "source_page": 28,
+  "source_bbox_points": [
+   66.75,
+   357.75,
+   376.5,
+   529.25
+  ],
+  "method": "pdf_render_crop",
+  "width": 1239,
+  "height": 686,
+  "sha256": "833133ea5b117db14373d4d5b16ab13efba44fafcb5cd15f52de232c30e7c509",
+  "transcription": "图2　2021年我国进口木材主要种类进口量及进口额\n\n| 种类 | 进口量（万吨） | 进口额（亿美元） |\n| --- | --- | --- |\n| 松木 | 575 | 21.3 |\n| 冷杉 | 432 | 17.6 |\n| 针叶木材 | 209 | 5.4 |\n| 热带木材 | 430 | 16.4 |\n\n柱为进口量（左轴，万吨，0—1000），折线为进口额（右轴，亿美元，0—24）；图名在图片内、印在图下方。"
+ },
+ {
+  "id": "GK2023-DS-p28-i03",
+  "path": "assets/GK2023-DS/GK2023-DS-p28-i03.png",
+  "paper_id": "GK2023-DS",
+  "source_page": 28,
+  "source_bbox_points": [
+   82.75,
+   549.25,
+   330.5,
+   705.75
+  ],
+  "method": "pdf_render_crop",
+  "width": 991,
+  "height": 626,
+  "sha256": "869773c15f4bf25515b088e086d61410c754704ae9791e7e425e6e6205495b74",
+  "transcription": "图3　2021年我国木材主要进口来源国进口量(单位：万吨)\n\n| 来源国 | 进口量（万吨） |\n| --- | --- |\n| 俄罗斯 | 929 |\n| 泰国 | 288 |\n| 加拿大 | 98 |\n| 美国 | 90 |\n| 其他 | 487 |\n\n饼图各扇区标“国名，数值”；五项合计1892万吨，与图1中2021年进口量一致。图名在图片内、印在图下方。"
+ },
+ {
+  "id": "GK2023-DS-p29-i01",
+  "path": "assets/GK2023-DS/GK2023-DS-p29-i01.png",
+  "paper_id": "GK2023-DS",
+  "source_page": 29,
+  "source_bbox_points": [
+   84.75,
+   452.75,
+   129.75,
+   490.25
+  ],
+  "method": "pdf_render_crop",
+  "width": 180,
+  "height": 150,
+  "sha256": "1ff7471571523237c985509801eb12e105dad442ddf8ea1a2ee2bbab2cdb20a5",
+  "transcription": ""
+ },
+ {
+  "id": "GK2023-DS-p29-i02",
+  "path": "assets/GK2023-DS/GK2023-DS-p29-i02.png",
+  "paper_id": "GK2023-DS",
+  "source_page": 29,
+  "source_bbox_points": [
+   162.0,
+   458.75,
+   206.5,
+   497.75
+  ],
+  "method": "pdf_render_crop",
+  "width": 178,
+  "height": 156,
+  "sha256": "161486f57f8e4f44c26b080b36d16fc433dc9b25cffbb8ba91afa55483a30f72",
+  "transcription": ""
+ },
+ {
+  "id": "GK2023-DS-p29-i03",
+  "path": "assets/GK2023-DS/GK2023-DS-p29-i03.png",
+  "paper_id": "GK2023-DS",
+  "source_page": 29,
+  "source_bbox_points": [
+   229.0,
+   456.75,
+   275.75,
+   500.5
+  ],
+  "method": "pdf_render_crop",
+  "width": 187,
+  "height": 175,
+  "sha256": "1f2f4085e74757e43e049034524a190a96e515735c538dd620620506d42735ba",
+  "transcription": ""
+ },
+ {
+  "id": "GK2023-DS-p29-i04",
+  "path": "assets/GK2023-DS/GK2023-DS-p29-i04.png",
+  "paper_id": "GK2023-DS",
+  "source_page": 29,
+  "source_bbox_points": [
+   295.0,
+   453.5,
+   336.75,
+   499.25
+  ],
+  "method": "pdf_render_crop",
+  "width": 167,
+  "height": 183,
+  "sha256": "5a3df11da5f93fdc7b5520c0311604a268f15c0b4a369306b6f76e83dd8bc408",
+  "transcription": ""
+ },
+ {
+  "id": "GK2023-DS-p30-i01",
+  "path": "assets/GK2023-DS/GK2023-DS-p30-i01.png",
+  "paper_id": "GK2023-DS",
+  "source_page": 30,
+  "source_bbox_points": [
+   83.75,
+   250.25,
+   132.5,
+   299.25
+  ],
+  "method": "pdf_render_crop",
+  "width": 195,
+  "height": 196,
+  "sha256": "d63f304e6ab5168ac23db2d4ea9a398a9e16505cac8a726bd96006417e10b02d",
+  "transcription": ""
+ },
+ {
+  "id": "GK2023-DS-p30-i02",
+  "path": "assets/GK2023-DS/GK2023-DS-p30-i02.png",
+  "paper_id": "GK2023-DS",
+  "source_page": 30,
+  "source_bbox_points": [
+   149.0,
+   252.0,
+   194.5,
+   297.25
+  ],
+  "method": "pdf_render_crop",
+  "width": 182,
+  "height": 181,
+  "sha256": "ed46f3425cecf44302056a835b6073f25ad5665d95013e0ff21b1aebf643e3b9",
+  "transcription": ""
+ },
+ {
+  "id": "GK2023-DS-p30-i03",
+  "path": "assets/GK2023-DS/GK2023-DS-p30-i03.png",
+  "paper_id": "GK2023-DS",
+  "source_page": 30,
+  "source_bbox_points": [
+   211.0,
+   252.5,
+   255.5,
+   297.0
+  ],
+  "method": "pdf_render_crop",
+  "width": 178,
+  "height": 178,
+  "sha256": "5b676189819c03c7b8ddb1ff8645f92eafb7e2f22db405343d9c2c888bc0c9b1",
+  "transcription": ""
+ },
+ {
+  "id": "GK2023-DS-p30-i04",
+  "path": "assets/GK2023-DS/GK2023-DS-p30-i04.png",
+  "paper_id": "GK2023-DS",
+  "source_page": 30,
+  "source_bbox_points": [
+   271.75,
+   251.75,
+   318.0,
+   298.0
+  ],
+  "method": "pdf_render_crop",
+  "width": 185,
+  "height": 185,
+  "sha256": "433b720772600c2dbd885d502304cf6b676f190f5b8a24fad21aa88df9bcd24d",
+  "transcription": ""
+ }
+]

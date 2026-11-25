@@ -4,6 +4,7 @@
 
 只写本程序负责的文件：国考/资料分析/GK20{19,20,21}-DS.jsonl、.md、assets/<卷>/（PNG与manifest.json）。
 题池 广东行测18套模拟/重编/题池/GK2019-2021.json 由 check_GK2019-2021.py --write-pool 生成（评定在那里）。
+2015、2023年两卷由 gk2015_2023_build.py 生成：它导入本模块，往下面各张登记表里加两卷的登记，再调用 build()。
 
 - 文字取自题本PDF文字层（按字符拼接；PDF里没有空格字符），材料按首行缩进分段，设问里的①②③④另起一行；
 - 表格、统计图：页面按288 DPI渲染，从PDF图片对象的外框出发，把框内的页面文字涂白后收紧到有墨迹处，
@@ -212,7 +213,8 @@ ANS_VISUAL = {
 }
 
 # ---------------------------------------------------------------- 材料结构
-# ('text', 页, top下限, top上限)：区间内的正文行，首行缩进处分段
+# ('text', 页, top下限, top上限)：区间内的正文行，首行缩进处分段；
+#   跨页的一段写作 ('text', [(页, top下限, top上限), ...])，各区间的行依次相接
 # ('caption', 页, top)：图下一行图名（正文文字）
 # ('img', 图号)
 MATERIALS = {
@@ -401,7 +403,11 @@ FIG_TEXT = {
 # 材料说明（每题 notes 都带）、题目说明
 MAT_NOTES = {
     'GK2019-DS': {
-        'M1': ['材料1没有文字，只有两张统计图（图名“图1”“图2”在图片内、印在各图下方），已逐项转写。'],
+        'M1': ['原卷本组组号印作“（一）”（四组依次为“（一）”至“（四）”，与M1—M4对应），组号未收入材料。',
+               '材料1没有文字，只有两张统计图（图名“图1”“图2”在图片内、印在各图下方），已逐项转写。'],
+        'M2': ['原卷本组组号印作“（二）”，组号未收入材料。'],
+        'M3': ['原卷本组组号印作“（三）”，组号未收入材料。'],
+        'M4': ['原卷本组组号印作“（四）”，组号未收入材料。'],
     },
     'GK2020-DS': {
         'M1': ['原卷资料分析四组材料的组号依次印作“（二）”“（三）”“（四）”“（五）”（与判断推理第106—110题的材料组号“（一）”连排），本库按次序记为M1—M4。',
@@ -410,7 +416,18 @@ MAT_NOTES = {
         'M3': ['原卷本组组号印作“（四）”（资料分析各组组号从“（二）”起，见M1说明）。'],
         'M4': ['原卷本组组号印作“（五）”（资料分析各组组号从“（二）”起，见M1说明）。'],
     },
-    'GK2021-DS': {},
+    'GK2021-DS': {
+        'M1': ['原卷本组组号印作“(材料1)”（半角括号；四组依次为“(材料1)”至“(材料4)”，与M1—M4对应），组号未收入材料。'],
+        'M2': ['原卷本组组号印作“(材料2)”，组号未收入材料。'],
+        'M3': ['原卷本组组号印作“(材料3)”，组号未收入材料。'],
+        'M4': ['原卷本组组号印作“(材料4)”，组号未收入材料。'],
+    },
+}
+# md 开头写明原卷资料组号怎么印
+MD_INTRO = {
+    'GK2019-DS': ['原卷资料分析四组材料的组号印作“（一）”至“（四）”，与本库 M1—M4 依次对应。'],
+    'GK2020-DS': ['原卷资料分析四组材料的组号印作“（二）”至“（五）”（与判断推理第106—110题的“（一）”连排），本库按次序记为 M1—M4。'],
+    'GK2021-DS': ['原卷资料分析四组材料的组号印作“(材料1)”至“(材料4)”，与本库 M1—M4 依次对应。'],
 }
 Q_NOTES = {
     'GK2019-DS': {
@@ -443,6 +460,8 @@ def load_lines(paper):
 
 
 RE_SKIP = re.compile(r'^(-\d+-|（[一二三四五六]）|\(材料\d\)|第五部分资料分析)$')
+# 组号行连同“根据以下资料，回答116-120题。”（2015年卷），不收入材料
+RE_GROUP_HEAD = re.compile(r'^(?:（[一二三四五六]）)?根据以下资料，回答\d+[—\-～~－]\d+题。$')
 
 
 def paragraphs(lines):
@@ -488,9 +507,10 @@ def parse(paper):
                 t = re.sub(r'^(图\d)', r'\1　', lines[hit[0]]['text'])
                 blocks.append(('text', t))
             else:
-                _, p, lo, hi = c
-                idx = [i for i, l in enumerate(lines) if l['page'] == p and lo <= l['top'] <= hi]
-                assert idx, (paper, c)
+                ranges = c[1] if isinstance(c[1], list) else [c[1:]]
+                idx = [i for p, lo, hi in ranges for i, l in enumerate(lines) if l['page'] == p and lo <= l['top'] <= hi]
+                assert idx and all(any(lines[i]['page'] == p and lo <= lines[i]['top'] <= hi for i in idx)
+                                   for p, lo, hi in ranges), (paper, c)
                 used |= set(idx)
                 blocks.append(('text', '\n'.join(paragraphs([lines[i] for i in idx]))))
         mats[mid] = {'qnums': list(qn), 'pages': pages, 'blocks': blocks}
@@ -500,12 +520,13 @@ def parse(paper):
         if i in used:
             continue
         t = l['text']
-        if RE_SKIP.match(t) or l['size'] < 9.5 or t.startswith('五、资料分析') or t == '析、比较、计算和判断处理。':
+        if (RE_SKIP.match(t) or RE_GROUP_HEAD.match(t) or l['size'] < 9.5 or t.startswith('五、资料分析')
+                or t == '析、比较、计算和判断处理。'):
             continue
-        m = re.match(r'^(1[1-3]\d)、(.*)$', t)
+        m = re.match(r'^(1[1-3]\d)(?:、(.*))?$', t)      # 2023年卷题号单独一行
         if m:
             cur = int(m.group(1))
-            qs[cur] = {'stem': m.group(2), 'options': {}, 'pages': {l['page']}, 'opt_mode': False}
+            qs[cur] = {'stem': m.group(2) or '', 'options': {}, 'pages': {l['page']}, 'opt_mode': False}
             continue
         assert cur, (paper, t)
         q = qs[cur]
@@ -540,7 +561,7 @@ def answers_text_layer(paper):
                              capture_output=True, text=True).stdout
         for line in out.splitlines():
             s = line.strip().replace(' ', '')
-            m = re.match(r'^(\d{3})[、.．]', s)
+            m = re.match(r'^(\d{3})(?:[、.．]|$)', s)      # “111、……”或题号单独一行
             if m and 111 <= int(m.group(1)) <= 130:
                 cur = int(m.group(1))
                 res.setdefault(cur, [])
@@ -631,16 +652,17 @@ def build(paper):
 
 
 def write_md(paper, recs, mats):
-    y = YEAR[paper]
     qpdf, apdf = QPDF[paper], APDF[paper]
+    qp = sorted({p for r in recs for p in r['source']['question_pages'] + r['material']['source_pages']})
+    ap = sorted({p for r in recs for p in r['answer']['source_pages']})
     s = [f'# {TITLE[paper]}', '',
          f'共 20 题（第 111—130 题，原题号保留），4 组材料。内容：材料、题干、选项、答案（不收解析）；'
          '共用材料置于所属题组前，JSONL 每条记录完整内嵌材料。表格、统计图为题本按 288 DPI 渲染后的裁图，图中文字和数字另有转写。', '',
          f'[结构化数据]({paper}.jsonl) · [图片清单](assets/{paper}/manifest.json)', '',
-         f'原题来源：[{qpdf.split("/")[-1]}]({rel_link(qpdf)})（第 {QPAGES[paper][0] if paper != "GK2021-DS" else 15}—{QPAGES[paper][-1]} 页）。'
-         f'答案来源：[{apdf.split("/")[-1]}]({rel_link(apdf)})（第 {APAGES[paper][0] + 1 if paper != "GK2020-DS" else 24}—{APAGES[paper][1]} 页，只取答案）。', '']
-    if paper == 'GK2020-DS':
-        s += ['原卷资料分析四组材料的组号印作“（二）”至“（五）”（与判断推理第106—110题的“（一）”连排），本库按次序记为 M1—M4。', '']
+         f'原题来源：[{qpdf.split("/")[-1]}]({rel_link(qpdf)})（第 {qp[0]}—{qp[-1]} 页）。'
+         f'答案来源：[{apdf.split("/")[-1]}]({rel_link(apdf)})（第 {ap[0]}—{ap[-1]} 页，只取答案）。', '']
+    for t in MD_INTRO.get(paper, []):
+        s += [t, '']
     s += ['## 资料分析', '']
     by_mat = {}
     for r in recs:

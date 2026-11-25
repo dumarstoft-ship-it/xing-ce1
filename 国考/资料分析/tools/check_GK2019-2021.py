@@ -5,6 +5,7 @@
     python3 国考/资料分析/tools/check_GK2019-2021.py --write-pool   # 按 RATINGS、MATS 重写题池（excluded 保留原值）
 
 题库文件（jsonl、md、assets）由同目录 gk2019_2021_build.py 生成；本脚本只读题库、只写题池。
+自检、写题池的通用部分在 gk_ds_check_common.py（与 check_GK2015-2023.py 共用）。
 - 每题用材料转写的数据重新算一遍，算出的选项须与题库 answer（答案PDF读两遍一致）相同；
 - RATINGS 是题池 广东行测18套模拟/重编/题池/GK2019-2021.json 的评定（按 难度对照/rubric.md，
   熟练考生最快路径），note 写依据；MATS 是每组材料的扫读秒数等；
@@ -12,33 +13,14 @@
   （题池的 excluded 由 广东行测18套模拟/重编/tools/exclusions.py 刷新，不在这里改；
   集训第2天用过而题池未排除的材料组会打印提醒，见 DRILL_USED）。
 """
-import hashlib
-import json
 import sys
 from pathlib import Path
 
-HERE = Path(__file__).resolve().parent
-BANK = HERE.parent
-REPO = BANK.parents[1]
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from gk_ds_check_common import BANK, REPO, nearest, one_true, run, shape  # noqa: E402,F401
+
 POOL = REPO / '广东行测18套模拟/重编/题池/GK2019-2021.json'
 PAPERS = ('GK2019-DS', 'GK2020-DS', 'GK2021-DS')
-
-
-def nearest(x, opts):
-    """数值选项：取最接近的一项。"""
-    return 'ABCD'[min(range(4), key=lambda i: abs(opts[i] - x))]
-
-
-def one_true(flags):
-    """“能够推出的是”：恰有一项为真。"""
-    assert sum(flags) == 1, flags
-    return 'ABCD'[flags.index(True)]
-
-
-def shape(vals):
-    """折线形状：相邻升降，以及末点与首点比较。"""
-    steps = tuple('+' if b > a else '-' for a, b in zip(vals, vals[1:]))
-    return steps + ('末高于首' if vals[-1] > vals[0] else '末低于首',)
 
 
 # ============================================================ 2019
@@ -349,22 +331,22 @@ RATINGS = {
 # 材料组: (material_seconds, material_form, region, material_note)
 MATS = {
     'GK2019-DS': {
-        'M1': (35, '纯统计图', '全国', '无文字；2017年3月—2018年2月进口药品数量与同比增速柱线图＋金额与同比增速柱线图（各12个月）；2019年副省级卷同材料'),
-        'M2': (40, '文字+统计图', '全国', '一段文字约110字（全年与12月两种口径）＋7年交易量与增速柱线图＋5年平均价格柱状图；2019年副省级卷同材料'),
-        'M3': (40, '纯表格', '全国', '单表16个月×4列（处理数量分CN/非CN域名，占比分支付交易/金融证券类）；2019年副省级卷同材料'),
-        'M4': (55, '纯文字', 'A省', '纯文字5段约550字（邮电、移动用户、快递、客运与周转量、高铁），多处“增幅比前三季度/上年提高”；2019年副省级卷同材料'),
+        'M1': (35, '纯统计图', '全国', '原卷组号“（一）”；无文字；2017年3月—2018年2月进口药品数量与同比增速柱线图＋金额与同比增速柱线图（各12个月）；2019年副省级卷同材料'),
+        'M2': (40, '文字+统计图', '全国', '原卷组号“（二）”；一段文字约110字（全年与12月两种口径）＋7年交易量与增速柱线图＋5年平均价格柱状图；2019年副省级卷同材料'),
+        'M3': (40, '纯表格', '全国', '原卷组号“（三）”；单表16个月×4列（处理数量分CN/非CN域名，占比分支付交易/金融证券类）；2019年副省级卷同材料'),
+        'M4': (55, '纯文字', 'A省', '原卷组号“（四）”；纯文字5段约550字（邮电、移动用户、快递、客运与周转量、高铁），多处“增幅比前三季度/上年提高”；2019年副省级卷同材料'),
     },
     'GK2020-DS': {
-        'M1': (35, '纯统计图', '全国', '无正文（只有两行图名）；9年公园数量与游客规模柱线图＋9年门票/非门票收入堆积柱状图'),
-        'M2': (40, '表格+统计图', '全国', '6年×4列进出口量额表（两层表头）＋6年销售额与增速柱线图；2020年副省级卷同材料'),
-        'M3': (35, '纯表格', '全国', '单表6年×4列（总收入万亿元，三项在线收入亿元）；2020年副省级卷同材料'),
-        'M4': (65, '纯文字', 'B市', '纯文字5段约660字，指标多（新经济、高技术、战略性新兴、信息产业、投资、网上零售贡献率、示范区收入）'),
+        'M1': (35, '纯统计图', '全国', '原卷组号“（二）”（本卷资料组号从“（二）”起）；无正文（只有两行图名）；9年公园数量与游客规模柱线图＋9年门票/非门票收入堆积柱状图'),
+        'M2': (40, '表格+统计图', '全国', '原卷组号“（三）”；6年×4列进出口量额表（两层表头）＋6年销售额与增速柱线图；2020年副省级卷同材料'),
+        'M3': (35, '纯表格', '全国', '原卷组号“（四）”；单表6年×4列（总收入万亿元，三项在线收入亿元）；2020年副省级卷同材料'),
+        'M4': (65, '纯文字', 'B市', '原卷组号“（五）”；纯文字5段约660字，指标多（新经济、高技术、战略性新兴、信息产业、投资、网上零售贡献率、示范区收入）'),
     },
     'GK2021-DS': {
-        'M1': (40, '纯表格', '全国', '单表11行×7年，两级“其中”分项'),
-        'M2': (45, '文字+表格+统计图', '全国', '两句短文字约110字＋7年地铁里程柱状图＋13城×4列表（附注：时点与全年口径）；2021年副省级卷同材料'),
-        'M3': (45, '文字+统计图', '全国', '两段短文字约190字＋6年机构数柱状图＋7类服务条形图；2021年副省级卷同材料'),
-        'M4': (65, '纯文字', '全国', '纯文字4段约600字，上半年/全年、进出口/出口/进口、知识密集型及分领域多重口径'),
+        'M1': (40, '纯表格', '全国', '原卷组号“(材料1)”；单表11行×7年，两级“其中”分项'),
+        'M2': (45, '文字+表格+统计图', '全国', '原卷组号“(材料2)”；两句短文字约110字＋7年地铁里程柱状图＋13城×4列表（附注：时点与全年口径）；2021年副省级卷同材料'),
+        'M3': (45, '文字+统计图', '全国', '原卷组号“(材料3)”；两段短文字约190字＋6年机构数柱状图＋7类服务条形图；2021年副省级卷同材料'),
+        'M4': (65, '纯文字', '全国', '原卷组号“(材料4)”；纯文字4段约600字，上半年/全年、进出口/出口/进口、知识密集型及分领域多重口径'),
     },
 }
 # 集训第2天（广东行测24天集训/GPT_复核/第1批/D02_材料连续编排对照.csv）用过的材料：组号按原卷标号，
@@ -373,100 +355,8 @@ DRILL_USED = {'GK2019-DS-M1': 'ZLM-GK2019D-1（D02-ZL-089、090）', 'GK2019-DS-
               'GK2020-DS-M2': 'ZLM-GK2020D-3（D02-ZL-036）', 'GK2021-DS-M1': 'ZLM-GK2021D-1（D02-ZL-072）',
               'GK2021-DS-M4': 'ZLM-GK2021D-4（D02-ZL-058、095、096、097）'}
 ISSUES = {'GK2020-DS-Q116': ['选项把占比写作“个百分点”（如“在5～10个百分点之间”），表述不严谨（原卷）']}
-MODES = ('读', '一步', '两步', '三步及以上')
-
-
-def pool_records():
-    out = []
-    for p in PAPERS:
-        recs = [json.loads(l) for l in open(BANK / f'{p}.jsonl', encoding='utf-8')]
-        groups = {}
-        for r in recs:
-            groups.setdefault(r['material']['id'], []).append(r)
-        for mid, rs in groups.items():
-            ms, form, region, note = MATS[p][mid.split('-')[-1]]
-            out.append({'paper': p, 'material_id': mid, 'material_seconds': ms, 'questions': [r['id'] for r in rs],
-                        'material_form': form, 'region': region, 'material_note': note, 'dup_of': None,
-                        'issues': [], 'excluded': None})
-            for r in rs:
-                n = r['question_number']
-                t, mode, est, otc, heavy, _ = RATINGS[p][n]
-                out.append({'id': r['id'], 'paper': p, 'number': n, 'section': '资料分析', 'part': '资料分析',
-                            'material_id': mid, 'dup_of': None, 'type': t, 'mode': mode, 'est_seconds': est,
-                            'options_to_check': otc, 'heaviest_option_mode': heavy,
-                            'issues': list(ISSUES.get(r['id'], [])), 'excluded': None})
-    return out
-
-
-def strip_excluded(recs):
-    """excluded 由 重编/tools/exclusions.py 按排除名单刷新，这里不比、不改。"""
-    return [{k: v for k, v in r.items() if k != 'excluded'} for r in recs]
-
-
-def main(verbose=False):
-    errors = []
-    for p in PAPERS:
-        recs = [json.loads(l) for l in open(BANK / f'{p}.jsonl', encoding='utf-8')]
-        man = {m['id']: m for m in json.loads((BANK / 'assets' / p / 'manifest.json').read_text(encoding='utf-8'))}
-        nums = [r['question_number'] for r in recs]
-        mats = {r['material']['id'] for r in recs}
-        if nums != list(range(111, 131)) or len(mats) != 4:
-            errors.append(f'{p}: 题号或材料组数不对')
-        calc = COMPUTE[p]()
-        used_imgs = set()
-        for r in recs:
-            n = r['question_number']
-            a = r['answer']
-            if a['status'] != 'known' or len(a['values']) != 1 or len(a['values'][0]) != 1:
-                errors.append(f'{r["id"]}: 答案不唯一')
-            if len(r['options']) != 4 or [o['label'] for o in r['options']] != list('ABCD'):
-                errors.append(f'{r["id"]}: 选项不是四项')
-            for o in r['options']:
-                if not o['text'] and not o['image_refs']:
-                    errors.append(f'{r["id"]}: {o["label"]}项为空')
-            if calc[n] != a['values'][0][0]:
-                errors.append(f'{r["id"]}: 核算得{calc[n]}，题库答案{a["values"][0][0]}')
-            blocks = [b for b in r['material']['content'] if b['type'] == 'image'] + r['figures']
-            for b in blocks:
-                f = BANK / b['path']
-                used_imgs.add(b['image_id'])
-                if not f.exists():
-                    errors.append(f'{r["id"]}: 缺图 {b["path"]}')
-                elif hashlib.sha256(f.read_bytes()).hexdigest() != man[b['image_id']]['sha256']:
-                    errors.append(f'{r["id"]}: 图与清单哈希不符 {b["path"]}')
-            t, mode, est, otc, heavy, note = RATINGS[p][n]
-            if mode not in MODES or (heavy and heavy not in MODES) or (t == '综合分析判断') != (otc is not None):
-                errors.append(f'{r["id"]}: 评定字段不合规')
-            if verbose:
-                print(f'{r["id"]}  答案{a["values"][0][0]}  {t}｜{mode}｜{est}s'
-                      + (f'｜验{otc}项，最重{heavy}' if otc else '') + f'\n    {note}')
-        if used_imgs != set(man):
-            errors.append(f'{p}: 清单与题库引用的图片不一致 {sorted(set(man) ^ used_imgs)}')
-    if POOL.exists():
-        cur = json.loads(POOL.read_text(encoding='utf-8'))
-        if strip_excluded(cur) != strip_excluded(pool_records()):
-            errors.append('题池文件与本脚本的评定不一致（重新生成：--write-pool，excluded 保留原值）')
-        ex = {r.get('id') or r['material_id']: r.get('excluded') for r in cur}
-        for mid, why in DRILL_USED.items():
-            qs = [r['id'] for r in cur if r.get('material_id') == mid and 'id' in r]
-            miss = [k for k in [mid] + qs if not ex.get(k)]
-            if miss:
-                print(f'提醒：{mid} 是集训第2天用过的材料（{why}），题池里未排除：{"、".join(miss)}')
-    else:
-        errors.append('题池文件不存在（生成：--write-pool）')
-    for e in errors:
-        print('错误：', e)
-    print('核算与自检：', '全部通过' if not errors else f'{len(errors)}处问题')
-    return not errors
-
+CFG = {'PAPERS': PAPERS, 'POOL': POOL, 'COMPUTE': COMPUTE, 'RATINGS': RATINGS, 'MATS': MATS,
+       'DRILL_USED': DRILL_USED, 'ISSUES': ISSUES}
 
 if __name__ == '__main__':
-    if '--write-pool' in sys.argv:
-        new = pool_records()
-        if POOL.exists():                      # 保留 exclusions.py 写入的 excluded
-            old = {r.get('id') or r['material_id']: r.get('excluded') for r in json.loads(POOL.read_text(encoding='utf-8'))}
-            for r in new:
-                r['excluded'] = old.get(r.get('id') or r['material_id'])
-        POOL.write_text(json.dumps(new, ensure_ascii=False, indent=1), encoding='utf-8')
-        print('已写', POOL.relative_to(REPO))
-    sys.exit(0 if main('-v' in sys.argv) else 1)
+    sys.exit(run(CFG, sys.argv))
