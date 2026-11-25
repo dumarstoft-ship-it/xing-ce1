@@ -30,6 +30,11 @@ MANUAL_Q = ("习题本平面图推200题_广东原题", "习题本固定题型17
 MANUAL_D = ("近似题", "题目有问题")
 
 
+# 国考地市级卷资料各组在原卷上印的组号（按卷中先后）：本库按先后编 M1—M4，集训对照表按原卷组号编
+GK_GROUP_NUMBERS = {2016: [1, 2, 3, 4], 2017: [1, 2, 3, 4], 2018: [1, 3, 4, 5], 2019: [1, 2, 3, 4],
+                    2020: [2, 3, 4, 5], 2021: [1, 2, 3, 4]}
+
+
 def norm(s):
     return re.sub(r"[\s\W_]+", "", s or "")
 
@@ -186,6 +191,16 @@ def main():
         m = re.match(r"ZLM-(GD[0-9A-Z]+?)-(\d+)$", r["material_id"])
         if m and pid(m.group(1)):
             mats.add(f"{pid(m.group(1))}-M{int(m.group(2))}")
+        # 国考地市级卷（2026-11-25起入库补资料组）：集训按原卷印的组号编，有的卷不从（一）起或跳号
+        m = re.match(r"ZLM-GK(\d{4})D-(\d+)$", r["material_id"])
+        if m:
+            y, k = int(m.group(1)), int(m.group(2))
+            nums = GK_GROUP_NUMBERS.get(y)
+            if nums is None:
+                continue                      # 该年卷子不在题库里
+            if k not in nums:
+                raise SystemExit(f"集训材料{r['material_id']}：{y}年地市级卷没有第{k}组，核对 GK_GROUP_NUMBERS")
+            mats.add(f"GK{y}-DS-M{nums.index(k) + 1}")
     mtext = {}
     for q in bank.values():
         m = q.get("material")

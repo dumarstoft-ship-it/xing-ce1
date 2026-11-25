@@ -512,6 +512,10 @@ class FigureSizer:
                         w, h = x["docx_extent_points"][:2]
                         box = [0, 0, w, h]
                     self.gd[x["id"]] = box
+        for mf in sorted((REPO / "国考/资料分析/assets").glob("*/manifest.json")):   # 国考资料题库（M13起补资料组）
+            for x in json.loads(mf.read_text(encoding="utf-8")):
+                if x.get("source_bbox_points"):
+                    self.gd[x["id"]] = x["source_bbox_points"]
 
     def size_mm(self, block: dict, in_material: bool = False) -> tuple[float, float, str]:
         w, h, how = self._size_mm(block, in_material)
@@ -536,7 +540,7 @@ class FigureSizer:
             stem = Path(block["path"]).stem
             if "江浙行测_AI题库/images" in block["path"] and stem in self.jz:
                 bbox, how = self.jz[stem], "源PDF印刷尺寸（江浙图片清单）"
-            elif ("广东/行测/" in block["path"] or "广东/事业单位/" in block["path"]) and stem in self.gd:
+            elif ("广东/行测/" in block["path"] or "广东/事业单位/" in block["path"] or "国考/资料分析/" in block["path"]) and stem in self.gd:
                 bbox, how = self.gd[stem], "源PDF印刷尺寸（广东真题图片清单）"
         if bbox:
             w = (bbox[2] - bbox[0]) / 72 * 25.4

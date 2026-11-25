@@ -2,7 +2,9 @@
 
     python3 国考/资料分析/tools/check_GK2019-2021.py          # 核算60题答案、自检题库与题池
     python3 国考/资料分析/tools/check_GK2019-2021.py -v       # 另列每题的最快路径与评定
+    python3 国考/资料分析/tools/check_GK2019-2021.py --write-pool   # 按 RATINGS、MATS 重写题池（excluded 保留原值）
 
+题库文件（jsonl、md、assets）由同目录 gk2019_2021_build.py 生成；本脚本只读题库、只写题池。
 - 每题用材料转写的数据重新算一遍，算出的选项须与题库 answer（答案PDF读两遍一致）相同；
 - RATINGS 是题池 广东行测18套模拟/重编/题池/GK2019-2021.json 的评定（按 难度对照/rubric.md，
   熟练考生最快路径），note 写依据；MATS 是每组材料的扫读秒数等；

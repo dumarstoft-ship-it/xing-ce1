@@ -15,7 +15,7 @@
   "material_note": "无文字；2017年3月—2018年2月进口药品数量与同比增速柱线图＋金额与同比增速柱线图（各12个月）；2019年副省级卷同材料",
   "dup_of": null,
   "issues": [],
-  "excluded": null
+  "excluded": "集训第2天用过的资料材料"
  },
  {
   "id": "GK2019-DS-Q111",
@@ -31,7 +31,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": null
+  "excluded": "资料组GK2019-DS-M1：集训第2天用过的资料材料"
  },
  {
   "id": "GK2019-DS-Q112",
@@ -63,7 +63,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": null
+  "excluded": "资料组GK2019-DS-M1：集训第2天用过的资料材料"
  },
  {
   "id": "GK2019-DS-Q114",
@@ -95,7 +95,7 @@
   "options_to_check": 1,
   "heaviest_option_mode": "两步",
   "issues": [],
-  "excluded": null
+  "excluded": "资料组GK2019-DS-M1：集训第2天用过的资料材料"
  },
  {
   "paper": "GK2019-DS",
@@ -505,7 +505,7 @@
   "material_note": "6年×4列进出口量额表（两层表头）＋6年销售额与增速柱线图；2020年副省级卷同材料",
   "dup_of": null,
   "issues": [],
-  "excluded": null
+  "excluded": "集训第2天用过的资料材料"
  },
  {
   "id": "GK2020-DS-Q116",
@@ -523,7 +523,7 @@
   "issues": [
    "选项把占比写作“个百分点”（如“在5～10个百分点之间”），表述不严谨（原卷）"
   ],
-  "excluded": null
+  "excluded": "资料组GK2020-DS-M2：集训第2天用过的资料材料"
  },
  {
   "id": "GK2020-DS-Q117",
@@ -555,7 +555,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": null
+  "excluded": "资料组GK2020-DS-M2：集训第2天用过的资料材料"
  },
  {
   "id": "GK2020-DS-Q119",
@@ -571,7 +571,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": null
+  "excluded": "资料组GK2020-DS-M2：集训第2天用过的资料材料"
  },
  {
   "id": "GK2020-DS-Q120",
@@ -587,7 +587,7 @@
   "options_to_check": 2,
   "heaviest_option_mode": "两步",
   "issues": [],
-  "excluded": null
+  "excluded": "资料组GK2020-DS-M2：集训第2天用过的资料材料"
  },
  {
   "paper": "GK2020-DS",
@@ -801,7 +801,7 @@
   "material_note": "单表11行×7年，两级“其中”分项",
   "dup_of": null,
   "issues": [],
-  "excluded": null
+  "excluded": "集训第2天用过的资料材料"
  },
  {
   "id": "GK2021-DS-Q111",
@@ -833,7 +833,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": null
+  "excluded": "资料组GK2021-DS-M1：集训第2天用过的资料材料"
  },
  {
   "id": "GK2021-DS-Q113",
@@ -849,7 +849,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": null
+  "excluded": "资料组GK2021-DS-M1：集训第2天用过的资料材料"
  },
  {
   "id": "GK2021-DS-Q114",
@@ -865,7 +865,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": null
+  "excluded": "资料组GK2021-DS-M1：集训第2天用过的资料材料"
  },
  {
   "id": "GK2021-DS-Q115",
@@ -881,7 +881,7 @@
   "options_to_check": 1,
   "heaviest_option_mode": "两步",
   "issues": [],
-  "excluded": null
+  "excluded": "资料组GK2021-DS-M1：集训第2天用过的资料材料"
  },
  {
   "paper": "GK2021-DS",
