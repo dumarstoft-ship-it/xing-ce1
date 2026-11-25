@@ -1,0 +1,189 @@
+[
+ {
+  "id": "GK2017-DS-p13-i01",
+  "path": "assets/GK2017-DS/GK2017-DS-p13-i01.png",
+  "paper_id": "GK2017-DS",
+  "source_page": 13,
+  "source_bbox_points": [
+   127.25,
+   28.0,
+   468.25,
+   230.0
+  ],
+  "method": "pdf_render_crop",
+  "width": 1364,
+  "height": 808,
+  "sha256": "625efc608cea2d95d1cb60e4f44f390412a38413884af5e7b3cb416c4f729c93",
+  "transcription": "2010-2015年某市粮食产量及其增速（图题是印在图下方的正文文字，不在图片内）\n\n| 年份 | 粮食产量（万吨） | 同比增速（%） |\n| --- | --- | --- |\n| 2010年 | 4.18 | 1.5 |\n| 2011年 | 4.34 | 3.8 |\n| 2012年 | 4.43 | 2.1 |\n| 2013年 | 4.14 | -6.7 |\n| 2014年 | 4.21 | 1.7 |\n| 2015年 | 4.16 | -2.3 |\n\n图例：空心柱为“粮食产量（万吨）”（左轴0—6），带菱形的折线为“同比增速（%）”（右轴-20—20）。"
+ },
+ {
+  "id": "GK2017-DS-p13-i02",
+  "path": "assets/GK2017-DS/GK2017-DS-p13-i02.png",
+  "paper_id": "GK2017-DS",
+  "source_page": 13,
+  "source_bbox_points": [
+   192.5,
+   374.5,
+   239.25,
+   421.0
+  ],
+  "method": "pdf_render_crop",
+  "width": 187,
+  "height": 186,
+  "sha256": "b1ee6124b2aafef6318e54985d6a0f265d6faff9434528d23ffeb82e27cccb06",
+  "transcription": ""
+ },
+ {
+  "id": "GK2017-DS-p13-i03",
+  "path": "assets/GK2017-DS/GK2017-DS-p13-i03.png",
+  "paper_id": "GK2017-DS",
+  "source_page": 13,
+  "source_bbox_points": [
+   242.0,
+   373.5,
+   292.75,
+   416.75
+  ],
+  "method": "pdf_render_crop",
+  "width": 203,
+  "height": 173,
+  "sha256": "f4a6509b584ed56d1c7d655215392ccd47da31a19b95283d7c0bd8ddd8247a66",
+  "transcription": ""
+ },
+ {
+  "id": "GK2017-DS-p13-i04",
+  "path": "assets/GK2017-DS/GK2017-DS-p13-i04.png",
+  "paper_id": "GK2017-DS",
+  "source_page": 13,
+  "source_bbox_points": [
+   295.0,
+   371.25,
+   346.0,
+   412.25
+  ],
+  "method": "pdf_render_crop",
+  "width": 204,
+  "height": 164,
+  "sha256": "db8c34182ba74b5bc2ed1824f4792f0d6199801b35980c02bf8121768767d966",
+  "transcription": ""
+ },
+ {
+  "id": "GK2017-DS-p13-i05",
+  "path": "assets/GK2017-DS/GK2017-DS-p13-i05.png",
+  "paper_id": "GK2017-DS",
+  "source_page": 13,
+  "source_bbox_points": [
+   354.0,
+   368.25,
+   407.0,
+   411.75
+  ],
+  "method": "pdf_render_crop",
+  "width": 212,
+  "height": 174,
+  "sha256": "246d293e11c316befc9f3eeab9a664a2bf12e4caea92b01f6fa07b29947eec15",
+  "transcription": ""
+ },
+ {
+  "id": "GK2017-DS-p13-i06",
+  "path": "assets/GK2017-DS/GK2017-DS-p13-i06.png",
+  "paper_id": "GK2017-DS",
+  "source_page": 13,
+  "source_bbox_points": [
+   143.5,
+   583.75,
+   447.75,
+   802.0
+  ],
+  "method": "pdf_render_crop",
+  "width": 1217,
+  "height": 873,
+  "sha256": "56c67186c7064965dcb6ea5e2f41ef49d6474b424652e719b4523c61aa3277dd",
+  "transcription": "2008～2014年我国文物机构工作相关情况统计\n\n| 年份 | 从业人员人数（人） | 文物机构数（个） | 参观人数（万人次） | 未成年人参观人数（万人次） |\n| --- | --- | --- | --- | --- |\n| 2008 | 92060 | 4437 | 35436 | 9075 |\n| 2009 | 101986 | 4842 | 43248 | 12203 |\n| 2010 | 102471 | 5207 | 52098 | 13541 |\n| 2011 | 111338 | 5728 | 56687 | 14021 |\n| 2012 | 125155 | 6124 | 57059 | 17326 |\n| 2013 | 137173 | 7737 | 74706 | 20237 |\n| 2014 | 148095 | 8418 | 84256 | 22403 |\n\n表题在图片内。"
+ },
+ {
+  "id": "GK2017-DS-p14-i01",
+  "path": "assets/GK2017-DS/GK2017-DS-p14-i01.png",
+  "paper_id": "GK2017-DS",
+  "source_page": 14,
+  "source_bbox_points": [
+   142.25,
+   537.75,
+   459.5,
+   770.75
+  ],
+  "method": "pdf_render_crop",
+  "width": 1269,
+  "height": 932,
+  "sha256": "5520ba285010bde2a74b306ccb856463b9137610f897e1012503b8e0d5478e61",
+  "transcription": "中国新能源汽车产业各类技术专利申请情况表（“单位：件”印在表外左上方，为正文文字）\n\n| 年份 | 整车制造 | 电动机制造 | 储能装置制造 | 零部件配制制造 | 传能装置制造 |\n| --- | --- | --- | --- | --- | --- |\n| 2000 | 179 | 41 | 134 | 31 | 45 |\n| 2001 | 225 | 53 | 143 | 30 | 67 |\n| 2002 | 215 | 91 | 199 | 57 | 88 |\n| 2003 | 345 | 156 | 272 | 81 | 137 |\n| 2004 | 424 | 195 | 330 | 134 | 178 |\n| 2005 | 554 | 323 | 524 | 282 | 267 |\n| 2006 | 833 | 399 | 541 | 445 | 368 |\n| 2007 | 994 | 474 | 1021 | 585 | 391 |\n| 2008 | 1317 | 550 | 1422 | 745 | 462 |\n| 2009 | 1389 | 585 | 1769 | 768 | 410 |\n| 2010 | 1854 | 821 | 2497 | 1029 | 653 |\n| 2011 | 2597 | 1088 | 3437 | 1553 | 831 |\n| 2012 | 2603 | 1176 | 3277 | 1564 | 867 |\n| 2013 | 2487 | 1162 | 3156 | 1618 | 797 |\n| 2014 | 2035 | 807 | 2326 | 1232 | 745 |\n| 2015 | 769 | 303 | 848 | 377 | 315 |\n\n表题在图片内。表头第5列原图作“零部件配制制造”（题干作“零部件配件制造”，副省级卷同一张表以文字排印，作“零部件配件制造”），第6列作“传能装置制造”（第130题C项作“供能装置制造”），均照录。"
+ },
+ {
+  "id": "GK2017-DS-p15-i01",
+  "path": "assets/GK2017-DS/GK2017-DS-p15-i01.png",
+  "paper_id": "GK2017-DS",
+  "source_page": 15,
+  "source_bbox_points": [
+   142.25,
+   45.0,
+   200.0,
+   103.0
+  ],
+  "method": "pdf_render_crop",
+  "width": 231,
+  "height": 232,
+  "sha256": "432aaf02ec12fb967208441af32036c0fbe98b57b361c8cf7e5afb56ddc45ed6",
+  "transcription": ""
+ },
+ {
+  "id": "GK2017-DS-p15-i02",
+  "path": "assets/GK2017-DS/GK2017-DS-p15-i02.png",
+  "paper_id": "GK2017-DS",
+  "source_page": 15,
+  "source_bbox_points": [
+   223.75,
+   43.0,
+   283.5,
+   103.0
+  ],
+  "method": "pdf_render_crop",
+  "width": 239,
+  "height": 240,
+  "sha256": "0cc5625174f185b10936047e1b5589b39003f7379448b3097b8a2d96173c8e54",
+  "transcription": ""
+ },
+ {
+  "id": "GK2017-DS-p15-i03",
+  "path": "assets/GK2017-DS/GK2017-DS-p15-i03.png",
+  "paper_id": "GK2017-DS",
+  "source_page": 15,
+  "source_bbox_points": [
+   310.0,
+   42.75,
+   369.25,
+   102.0
+  ],
+  "method": "pdf_render_crop",
+  "width": 237,
+  "height": 237,
+  "sha256": "30fbe17d17795ada1faf95d02a9c6199c3d867179a84aeae8d13a86644e7f807",
+  "transcription": ""
+ },
+ {
+  "id": "GK2017-DS-p15-i04",
+  "path": "assets/GK2017-DS/GK2017-DS-p15-i04.png",
+  "paper_id": "GK2017-DS",
+  "source_page": 15,
+  "source_bbox_points": [
+   394.25,
+   45.0,
+   452.25,
+   103.5
+  ],
+  "method": "pdf_render_crop",
+  "width": 232,
+  "height": 234,
+  "sha256": "e387c68e27d08800d41aed46a5627de324e0700c18b457758c3523d7385e57dc",
+  "transcription": ""
+ }
+]

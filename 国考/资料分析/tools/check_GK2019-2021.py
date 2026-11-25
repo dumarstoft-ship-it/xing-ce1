@@ -6,7 +6,9 @@
 - 每题用材料转写的数据重新算一遍，算出的选项须与题库 answer（答案PDF读两遍一致）相同；
 - RATINGS 是题池 广东行测18套模拟/重编/题池/GK2019-2021.json 的评定（按 难度对照/rubric.md，
   熟练考生最快路径），note 写依据；MATS 是每组材料的扫读秒数等；
-- 自检：每卷20题、4组、每题4个选项、答案唯一、图片文件存在且与清单哈希一致、题池与这里一致。
+- 自检：每卷20题、4组、每题4个选项、答案唯一、图片文件存在且与清单哈希一致、题池评定与这里一致
+  （题池的 excluded 由 广东行测18套模拟/重编/tools/exclusions.py 刷新，不在这里改；
+  集训第2天用过而题池未排除的材料组会打印提醒，见 DRILL_USED）。
 """
 import hashlib
 import json
@@ -381,19 +383,22 @@ def pool_records():
             groups.setdefault(r['material']['id'], []).append(r)
         for mid, rs in groups.items():
             ms, form, region, note = MATS[p][mid.split('-')[-1]]
-            ex = '集训第2天用过的资料材料' if mid in DRILL_USED else None      # 与 exclusions.py 的写法一致
             out.append({'paper': p, 'material_id': mid, 'material_seconds': ms, 'questions': [r['id'] for r in rs],
                         'material_form': form, 'region': region, 'material_note': note, 'dup_of': None,
-                        'issues': [], 'excluded': ex})
+                        'issues': [], 'excluded': None})
             for r in rs:
                 n = r['question_number']
                 t, mode, est, otc, heavy, _ = RATINGS[p][n]
                 out.append({'id': r['id'], 'paper': p, 'number': n, 'section': '资料分析', 'part': '资料分析',
                             'material_id': mid, 'dup_of': None, 'type': t, 'mode': mode, 'est_seconds': est,
                             'options_to_check': otc, 'heaviest_option_mode': heavy,
-                            'issues': list(ISSUES.get(r['id'], [])),
-                            'excluded': f'资料组{mid}：集训第2天用过的资料材料' if mid in DRILL_USED else None})
+                            'issues': list(ISSUES.get(r['id'], [])), 'excluded': None})
     return out
+
+
+def strip_excluded(recs):
+    """excluded 由 重编/tools/exclusions.py 按排除名单刷新，这里不比、不改。"""
+    return [{k: v for k, v in r.items() if k != 'excluded'} for r in recs]
 
 
 def main(verbose=False):
@@ -436,8 +441,15 @@ def main(verbose=False):
         if used_imgs != set(man):
             errors.append(f'{p}: 清单与题库引用的图片不一致 {sorted(set(man) ^ used_imgs)}')
     if POOL.exists():
-        if json.loads(POOL.read_text(encoding='utf-8')) != pool_records():
-            errors.append('题池文件与本脚本的评定不一致（重新生成：--write-pool）')
+        cur = json.loads(POOL.read_text(encoding='utf-8'))
+        if strip_excluded(cur) != strip_excluded(pool_records()):
+            errors.append('题池文件与本脚本的评定不一致（重新生成：--write-pool，excluded 保留原值）')
+        ex = {r.get('id') or r['material_id']: r.get('excluded') for r in cur}
+        for mid, why in DRILL_USED.items():
+            qs = [r['id'] for r in cur if r.get('material_id') == mid and 'id' in r]
+            miss = [k for k in [mid] + qs if not ex.get(k)]
+            if miss:
+                print(f'提醒：{mid} 是集训第2天用过的材料（{why}），题池里未排除：{"、".join(miss)}')
     else:
         errors.append('题池文件不存在（生成：--write-pool）')
     for e in errors:
@@ -448,6 +460,11 @@ def main(verbose=False):
 
 if __name__ == '__main__':
     if '--write-pool' in sys.argv:
-        POOL.write_text(json.dumps(pool_records(), ensure_ascii=False, indent=1), encoding='utf-8')
+        new = pool_records()
+        if POOL.exists():                      # 保留 exclusions.py 写入的 excluded
+            old = {r.get('id') or r['material_id']: r.get('excluded') for r in json.loads(POOL.read_text(encoding='utf-8'))}
+            for r in new:
+                r['excluded'] = old.get(r.get('id') or r['material_id'])
+        POOL.write_text(json.dumps(new, ensure_ascii=False, indent=1), encoding='utf-8')
         print('已写', POOL.relative_to(REPO))
     sys.exit(0 if main('-v' in sys.argv) else 1)

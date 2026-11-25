@@ -69,6 +69,27 @@
    "old": "招幕",
    "new": "招募",
    "reason": "原卷错字"
+  },
+  {
+   "source": "SYDW2026-Q039",
+   "where": "stem",
+   "old": "深挖井\"",
+   "new": "深挖井”",
+   "reason": "原文档后引号误作半角直引号"
+  },
+  {
+   "source": "SYDW2024-Q040",
+   "where": "A",
+   "old": "简章",
+   "new": "篇章",
+   "reason": "原卷错字"
+  },
+  {
+   "source": "GD2015-XJ-Q003",
+   "where": "stem",
+   "old": "三个定位，两个率先",
+   "new": "三个定位、两个率先",
+   "reason": "并列短语之间应用顿号"
   }
  ],
  "material_edits": [],

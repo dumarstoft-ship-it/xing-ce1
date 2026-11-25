@@ -430,7 +430,7 @@ def build(paper, dry=False):
             src[int(n)] = sid
         log.add(31, "题源", plan.get("sources_note") or "第31—90题逐题选自真题题库，见编排说明")
         for r in plan.get("replaced") or []:     # 组卷后因答案争议等换下的题
-            log.add(int(r["number"]), "换题", f"原选{r['old']}，换为{r['new']}：{r['reason']}")
+            log.add(int(str(r["number"]).split("—")[0]), "换题", f"原选{r['old']}，换为{r['new']}：{r['reason']}")
     skip = set(int(n) for n in plan.get("skip") or [])   # 不出的题号（如政治常识材料不够时空出的题位）
     if skip:
         log.add(min(skip), "空题位", plan.get("skip_reason") or f"本套不出第{'、'.join(map(str, sorted(skip)))}题")

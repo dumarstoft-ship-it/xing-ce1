@@ -1,0 +1,138 @@
+[
+ {
+  "id": "GK2018-DS-p12-i01",
+  "path": "assets/GK2018-DS/GK2018-DS-p12-i01.png",
+  "paper_id": "GK2018-DS",
+  "source_page": 12,
+  "source_bbox_points": [
+   71.5,
+   36.0,
+   522.5,
+   189.25
+  ],
+  "method": "pdf_render_crop",
+  "width": 1804,
+  "height": 613,
+  "sha256": "6cb507272c065e3de406cab96dc62b2622356188137cf6c3abf53380bb60f9dc",
+  "transcription": "2016年“一带一路”沿线国家情况\n\n|  | 人口（万人） | GDP（亿美元） | 进口额（亿美元） | 出口额（亿美元） |\n| --- | --- | --- | --- | --- |\n| 蒙古 | 301.4 | 116.5 | 38.7 | 45.0 |\n| 东南亚11国 | 63852.5 | 25802.2 | 11267.2 | 11798.6 |\n| 南亚8国 | 174499.0 | 29146.6 | 4724.1 | 3308.5 |\n| 中亚5国 | 6946.7 | 2254.7 | 422.7 | 590.7 |\n| 西亚、北非19国 | 43504.6 | 36467.5 | 9675.5 | 8850.7 |\n| 东欧20国 | 32161.9 | 26352.1 | 9775.5 | 11388.4 |\n\n表题在图片内；首列表头原表空白。"
+ },
+ {
+  "id": "GK2018-DS-p12-i02",
+  "path": "assets/GK2018-DS/GK2018-DS-p12-i02.png",
+  "paper_id": "GK2018-DS",
+  "source_page": 12,
+  "source_bbox_points": [
+   104.0,
+   384.0,
+   493.0,
+   509.25
+  ],
+  "method": "pdf_render_crop",
+  "width": 1556,
+  "height": 501,
+  "sha256": "36cd0db8fc4a78c9c04e3f825e28bba87d44f3ac4b7af5e6a112fcca06430820",
+  "transcription": "2015~2016年中国生活服务电商市场交易规模统计表\n单位：亿元\n\n|  | 2015年 | 2016年 |\n| --- | --- | --- |\n| 在线餐饮外卖市场 | 530.6 | 1761.5 |\n| 移动出行市场 | 999.0 | 2038.0 |\n| 在线旅游市场 | 4487.2 | 6138.0 |\n\n表题与“单位：亿元”都在图片内；首列表头原表空白。"
+ },
+ {
+  "id": "GK2018-DS-p12-i03",
+  "path": "assets/GK2018-DS/GK2018-DS-p12-i03.png",
+  "paper_id": "GK2018-DS",
+  "source_page": 12,
+  "source_bbox_points": [
+   85.75,
+   515.0,
+   509.0,
+   785.5
+  ],
+  "method": "pdf_render_crop",
+  "width": 1693,
+  "height": 1082,
+  "sha256": "68f9b6cdb015f7dad206a573270cef03e5824c53a0a963ef2f9d9b5c948d2178",
+  "transcription": "2016年中国在线餐饮外卖市场交易规模及环比增速\n\n| 季度 | 交易规模（亿元） | 环比增速（%） |\n| --- | --- | --- |\n| 第一季度 | 231.1 | 55.5 |\n| 第二季度 | 363.3 | 57.2 |\n| 第三季度 | 493.9 | 35.9 |\n| 第四季度 | 673.2 | 36.3 |\n\n图例：空心柱为“交易规模”（左轴0—1200，单位“亿元”），带方块的折线为“环比增速”（右轴-50—75，单位“%”）；图题在图片内、印在图下方。"
+ },
+ {
+  "id": "GK2018-DS-p13-i01",
+  "path": "assets/GK2018-DS/GK2018-DS-p13-i01.png",
+  "paper_id": "GK2018-DS",
+  "source_page": 13,
+  "source_bbox_points": [
+   202.0,
+   117.5,
+   266.0,
+   180.75
+  ],
+  "method": "pdf_render_crop",
+  "width": 256,
+  "height": 253,
+  "sha256": "44a3cc80e42307b418faa5fcc6f95d8a2af05fd7e37577ee106664e045ebd141",
+  "transcription": ""
+ },
+ {
+  "id": "GK2018-DS-p13-i02",
+  "path": "assets/GK2018-DS/GK2018-DS-p13-i02.png",
+  "paper_id": "GK2018-DS",
+  "source_page": 13,
+  "source_bbox_points": [
+   353.25,
+   116.0,
+   417.5,
+   180.75
+  ],
+  "method": "pdf_render_crop",
+  "width": 257,
+  "height": 259,
+  "sha256": "99abe3acdf7879ffa5af3ceca8391e4a14d29af7f329186ab8280c695499d564",
+  "transcription": ""
+ },
+ {
+  "id": "GK2018-DS-p13-i03",
+  "path": "assets/GK2018-DS/GK2018-DS-p13-i03.png",
+  "paper_id": "GK2018-DS",
+  "source_page": 13,
+  "source_bbox_points": [
+   202.25,
+   195.0,
+   266.5,
+   259.25
+  ],
+  "method": "pdf_render_crop",
+  "width": 257,
+  "height": 257,
+  "sha256": "fd574e3466d572c9fb77fabf4f5c4402b194219770cdf1cc3b54259e1fab712e",
+  "transcription": ""
+ },
+ {
+  "id": "GK2018-DS-p13-i04",
+  "path": "assets/GK2018-DS/GK2018-DS-p13-i04.png",
+  "paper_id": "GK2018-DS",
+  "source_page": 13,
+  "source_bbox_points": [
+   352.75,
+   194.25,
+   417.5,
+   259.25
+  ],
+  "method": "pdf_render_crop",
+  "width": 259,
+  "height": 260,
+  "sha256": "b7141e0cef96cbc521b96894120b34fc53c1b7adb155bb417a2a7d8c9651d672",
+  "transcription": ""
+ },
+ {
+  "id": "GK2018-DS-p13-i05",
+  "path": "assets/GK2018-DS/GK2018-DS-p13-i05.png",
+  "paper_id": "GK2018-DS",
+  "source_page": 13,
+  "source_bbox_points": [
+   104.75,
+   382.0,
+   490.25,
+   571.75
+  ],
+  "method": "pdf_render_crop",
+  "width": 1542,
+  "height": 759,
+  "sha256": "8233b445eceda96fa290a71224065376878fef47bb019cdec93623dcd3828f70",
+  "transcription": "2016年部分城市公园数量及面积\n\n| 城市 | 公园个数（个） | 公园面积（公顷） | 公园绿地面积（公顷） |\n| --- | --- | --- | --- |\n| 东莞 | 1223 | 14493 | 11536 |\n| 深圳 | 911 | 21955 | 19241 |\n| 昆明 | 463 | 3206 | 3941 |\n| 广州 | 246 | 5193 | 27200 |\n| 杭州 | 217 | 2488 | 7640 |\n| 佛山 | 202 | 2033 | 2768 |\n| 珠海 | 197 | 2792 | 3594 |\n| 苏州 | 167 | 2110 | 4540 |\n| 宁波 | 133 | 1126 | 2132 |\n| 南京 | 127 | 7122 | 9328 |\n\n表题在图片内。"
+ }
+]
