@@ -1,0 +1,223 @@
+[
+ {
+  "id": "GK2019-DS-p12-i01",
+  "path": "assets/GK2019-DS/GK2019-DS-p12-i01.png",
+  "paper_id": "GK2019-DS",
+  "source_page": 12,
+  "source_bbox_points": [
+   118.25,
+   424.0,
+   473.75,
+   600.5
+  ],
+  "method": "pdf_render_crop",
+  "width": 1422,
+  "height": 706,
+  "sha256": "fd48895f45ab80456506f90d868c5251ff0b1321eb71327e7a200b737773df57",
+  "transcription": "图1　2017年3月～2018年2月全国进口药品数量及同比增速\n\n| 月份 | 数量（万吨） | 同比增速（%） |\n| --- | --- | --- |\n| 2017年3月 | 1.3 | 14.6 |\n| 2017年4月 | 1.1 | 19.8 |\n| 2017年5月 | 1.2 | 32.8 |\n| 2017年6月 | 1.1 | 5.6 |\n| 2017年7月 | 1.1 | 1.0 |\n| 2017年8月 | 1.2 | 13.3 |\n| 2017年9月 | 1.1 | 8.2 |\n| 2017年10月 | 1.0 | 7.0 |\n| 2017年11月 | 1.4 | 21.5 |\n| 2017年12月 | 1.3 | -3.0 |\n| 2018年1月 | 1.3 | 26.0 |\n| 2018年2月 | 0.8 | -17.0 |\n\n柱为数量（左轴，万吨，0—5），折线为同比增速（右轴，%，-75—50）；图名在图片内、印在图下方。"
+ },
+ {
+  "id": "GK2019-DS-p12-i02",
+  "path": "assets/GK2019-DS/GK2019-DS-p12-i02.png",
+  "paper_id": "GK2019-DS",
+  "source_page": 12,
+  "source_bbox_points": [
+   120.0,
+   611.75,
+   467.5,
+   788.25
+  ],
+  "method": "pdf_render_crop",
+  "width": 1390,
+  "height": 706,
+  "sha256": "3d03b58d30c1b8d5312f7c036245b6b0218d7ac0cb5c992aba1a0650c4808d7e",
+  "transcription": "图2　2017年3月～2018年2月全国进口药品金额及同比增速\n\n| 月份 | 金额（亿美元） | 同比增速（%） |\n| --- | --- | --- |\n| 2017年3月 | 24.9 | 24.2 |\n| 2017年4月 | 18.8 | 12.2 |\n| 2017年5月 | 27.8 | 54.5 |\n| 2017年6月 | 26.5 | 32.1 |\n| 2017年7月 | 19.6 | -4.6 |\n| 2017年8月 | 23.8 | 29.5 |\n| 2017年9月 | 21.9 | 3.5 |\n| 2017年10月 | 18.4 | 10.5 |\n| 2017年11月 | 24.0 | 11.9 |\n| 2017年12月 | 27.8 | 24.1 |\n| 2018年1月 | 22.2 | 16.3 |\n| 2018年2月 | 15.6 | 1.7 |\n\n柱为金额（左轴，亿美元，0—100），折线为同比增速（右轴，%，-60—60）；图名在图片内、印在图下方。"
+ },
+ {
+  "id": "GK2019-DS-p13-i01",
+  "path": "assets/GK2019-DS/GK2019-DS-p13-i01.png",
+  "paper_id": "GK2019-DS",
+  "source_page": 13,
+  "source_bbox_points": [
+   68.0,
+   126.25,
+   107.0,
+   161.25
+  ],
+  "method": "pdf_render_crop",
+  "width": 156,
+  "height": 140,
+  "sha256": "758b7cc9229690fcaea454203e646d89addebf7a2cdcba6690fceb574b7c3395",
+  "transcription": ""
+ },
+ {
+  "id": "GK2019-DS-p13-i02",
+  "path": "assets/GK2019-DS/GK2019-DS-p13-i02.png",
+  "paper_id": "GK2019-DS",
+  "source_page": 13,
+  "source_bbox_points": [
+   155.0,
+   124.25,
+   195.0,
+   163.75
+  ],
+  "method": "pdf_render_crop",
+  "width": 160,
+  "height": 158,
+  "sha256": "1932feb2720fc1a9d8116939d8d6494ee7d881a8b18626699e3319dc9291171e",
+  "transcription": ""
+ },
+ {
+  "id": "GK2019-DS-p13-i03",
+  "path": "assets/GK2019-DS/GK2019-DS-p13-i03.png",
+  "paper_id": "GK2019-DS",
+  "source_page": 13,
+  "source_bbox_points": [
+   223.25,
+   125.75,
+   263.5,
+   162.0
+  ],
+  "method": "pdf_render_crop",
+  "width": 161,
+  "height": 145,
+  "sha256": "778953c032de853c4da2f7a8a0324b8b1cd9ef8050c536c05e31df24fda10377",
+  "transcription": ""
+ },
+ {
+  "id": "GK2019-DS-p13-i04",
+  "path": "assets/GK2019-DS/GK2019-DS-p13-i04.png",
+  "paper_id": "GK2019-DS",
+  "source_page": 13,
+  "source_bbox_points": [
+   320.25,
+   125.25,
+   362.5,
+   166.0
+  ],
+  "method": "pdf_render_crop",
+  "width": 169,
+  "height": 163,
+  "sha256": "9b4c73a7d12f7c473a35d74e15cb973d13a3ddf61aec3562edbcd1cc84365de7",
+  "transcription": ""
+ },
+ {
+  "id": "GK2019-DS-p13-i05",
+  "path": "assets/GK2019-DS/GK2019-DS-p13-i05.png",
+  "paper_id": "GK2019-DS",
+  "source_page": 13,
+  "source_bbox_points": [
+   102.5,
+   272.75,
+   489.0,
+   453.5
+  ],
+  "method": "pdf_render_crop",
+  "width": 1546,
+  "height": 723,
+  "sha256": "20653639b7fd43c4a5aafb86a2020529e4c264047df0089c4d54e281f167006a",
+  "transcription": "图1　2011～2017年全国二手车交易量及同比增速\n\n| 年份 | 交易量（万辆） | 同比增速（%） |\n| --- | --- | --- |\n| 2011年 | 682 | 12.4 |\n| 2012年 | 794 | 16.4 |\n| 2013年 | 847 | 6.7 |\n| 2014年 | 920 | 8.6 |\n| 2015年 | 942 | 2.4 |\n| 2016年 | 1039 | 10.3 |\n| 2017年 | 1240 | 19.3 |\n\n柱为交易量（左轴，万辆，0—2000），折线为同比增速（右轴，%，-20—20）；图名在图片内、印在图下方。"
+ },
+ {
+  "id": "GK2019-DS-p13-i06",
+  "path": "assets/GK2019-DS/GK2019-DS-p13-i06.png",
+  "paper_id": "GK2019-DS",
+  "source_page": 13,
+  "source_bbox_points": [
+   96.25,
+   454.75,
+   494.5,
+   643.25
+  ],
+  "method": "pdf_render_crop",
+  "width": 1593,
+  "height": 754,
+  "sha256": "1366be0edbeb5450490cbc7b4b02d9c76fb52395c40c09d001112e409614d62f",
+  "transcription": "图2　2013～2017年全国二手车平均交易价格\n\n| 年份 | 平均交易价格（万元/辆） |\n| --- | --- |\n| 2013年 | 5.6 |\n| 2014年 | 6.1 |\n| 2015年 | 5.9 |\n| 2016年 | 5.8 |\n| 2017年 | 6.5 |\n\n纵轴单位为万元/辆（5.0—7.0，纵轴不从0起）；图名在图片内、印在图下方。"
+ },
+ {
+  "id": "GK2019-DS-p14-i01",
+  "path": "assets/GK2019-DS/GK2019-DS-p14-i01.png",
+  "paper_id": "GK2019-DS",
+  "source_page": 14,
+  "source_bbox_points": [
+   99.75,
+   70.5,
+   495.75,
+   347.0
+  ],
+  "method": "pdf_render_crop",
+  "width": 1584,
+  "height": 1106,
+  "sha256": "57fc97eb42e9db973d277f92689e9a6319225e31a03f7711cc8f41211d155ebb",
+  "transcription": "2017年1月～2018年4月全国钓鱼网站处理情况\n\n| 时间 | 处理数量（个）：CN域名 | 处理数量（个）：非CN域名 | 处理数量占比（%）：支付交易类 | 处理数量占比（%）：金融证券类 |\n| --- | --- | --- | --- | --- |\n| 2017年1月 | 42 | 1870 | 64.9 | 34.4 |\n| 2017年2月 | 91 | 860 | 52.6 | 45.8 |\n| 2017年3月 | 76 | 2019 | 80.5 | 18.9 |\n| 2017年4月 | 32 | 761 | 49.4 | 50.3 |\n| 2017年5月 | 43 | 785 | 60.4 | 39.6 |\n| 2017年6月 | 19 | 810 | 66.0 | 33.3 |\n| 2017年7月 | 33 | 1445 | 53.0 | 46.8 |\n| 2017年8月 | 58 | 4675 | 87.3 | 12.4 |\n| 2017年9月 | 52 | 2572 | 83.2 | 15.9 |\n| 2017年10月 | 87 | 2246 | 78.2 | 21.2 |\n| 2017年11月 | 40 | 2626 | 83.6 | 13.5 |\n| 2017年12月 | 302 | 2693 | 79.8 | 19.1 |\n| 2018年1月 | 204 | 2598 | 79.3 | 20.2 |\n| 2018年2月 | 58 | 641 | 46.6 | 51.9 |\n| 2018年3月 | 254 | 3230 | 77.4 | 22.3 |\n| 2018年4月 | 229 | 1749 | 73.2 | 25.8 |\n\n原表表头为两层：“处理数量（个）”下分“CN域名”“非CN域名”，“处理数量占比（%）”下分“支付交易类”“金融证券类”。"
+ },
+ {
+  "id": "GK2019-DS-p14-i02",
+  "path": "assets/GK2019-DS/GK2019-DS-p14-i02.png",
+  "paper_id": "GK2019-DS",
+  "source_page": 14,
+  "source_bbox_points": [
+   72.5,
+   471.5,
+   127.0,
+   522.25
+  ],
+  "method": "pdf_render_crop",
+  "width": 218,
+  "height": 203,
+  "sha256": "39ed175d817cec1ffcc12f270bde0ffe1b0bceddee20fec58ca7b5d656ab1a7f",
+  "transcription": ""
+ },
+ {
+  "id": "GK2019-DS-p14-i03",
+  "path": "assets/GK2019-DS/GK2019-DS-p14-i03.png",
+  "paper_id": "GK2019-DS",
+  "source_page": 14,
+  "source_bbox_points": [
+   183.0,
+   481.25,
+   247.75,
+   530.0
+  ],
+  "method": "pdf_render_crop",
+  "width": 259,
+  "height": 195,
+  "sha256": "99ffcf20ba63fd6f6ca5735c43de1b0655e64e97388d80a7785318fdee2b9cc5",
+  "transcription": ""
+ },
+ {
+  "id": "GK2019-DS-p14-i04",
+  "path": "assets/GK2019-DS/GK2019-DS-p14-i04.png",
+  "paper_id": "GK2019-DS",
+  "source_page": 14,
+  "source_bbox_points": [
+   283.75,
+   477.5,
+   344.5,
+   537.25
+  ],
+  "method": "pdf_render_crop",
+  "width": 243,
+  "height": 239,
+  "sha256": "4dda19e58d9ae34e042dd36008984e69e7d56bbbd12adbb06fa5174be51f7559",
+  "transcription": ""
+ },
+ {
+  "id": "GK2019-DS-p14-i05",
+  "path": "assets/GK2019-DS/GK2019-DS-p14-i05.png",
+  "paper_id": "GK2019-DS",
+  "source_page": 14,
+  "source_bbox_points": [
+   409.25,
+   499.25,
+   471.75,
+   528.5
+  ],
+  "method": "pdf_render_crop",
+  "width": 250,
+  "height": 117,
+  "sha256": "0f68173ff0d6b514eb77ac300d179aeb6a64c39893a5f71b0d46df2f88b5062c",
+  "transcription": ""
+ }
+]
