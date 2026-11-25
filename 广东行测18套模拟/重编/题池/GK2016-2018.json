@@ -142,7 +142,7 @@
   "material_id": "GK2016-DS-M2",
   "dup_of": null,
   "type": "比较排序",
-  "mode": "三步及以上",
+  "mode": "两步",
   "est_seconds": 50,
   "options_to_check": null,
   "heaviest_option_mode": null,
@@ -159,9 +159,9 @@
   "dup_of": null,
   "type": "综合分析判断",
   "mode": "一步",
-  "est_seconds": 55,
+  "est_seconds": 50,
   "options_to_check": 3,
-  "heaviest_option_mode": "三步及以上",
+  "heaviest_option_mode": "两步",
   "issues": [
    "A项须把图1左轴（未标单位）按“亿人次”理解；D项“人均公共图书馆建筑面积”与图2“平均每万人公共图书馆建筑面积”口径不同（不影响比较）"
   ],
@@ -243,7 +243,7 @@
   "dup_of": null,
   "type": "综合分析判断",
   "mode": "一步",
-  "est_seconds": 50,
+  "est_seconds": 45,
   "options_to_check": 3,
   "heaviest_option_mode": "一步",
   "issues": [
@@ -329,7 +329,7 @@
   "mode": "一步",
   "est_seconds": 40,
   "options_to_check": 1,
-  "heaviest_option_mode": "三步及以上",
+  "heaviest_option_mode": "两步",
   "issues": [],
   "excluded": null
  },
@@ -395,7 +395,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [
-   "材料图中2013、2015年增速标注与柱值推算不一致（−6.7对约−6.5、−2.3对约−1.2），按柱值作差或按增速推算，形状都对应A"
+   "材料图中2015年增速标−2.3%，按柱值4.21→4.16只约−1.2%（原卷数据不一致）；按柱值作差或按增速推算增量，形状都对应A，不影响作答"
   ],
   "excluded": null
  },
@@ -441,7 +441,7 @@
   "dup_of": null,
   "type": "倍数",
   "mode": "三步及以上",
-  "est_seconds": 55,
+  "est_seconds": 45,
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
@@ -472,8 +472,8 @@
   "material_id": "GK2017-DS-M2",
   "dup_of": null,
   "type": "比较排序",
-  "mode": "三步及以上",
-  "est_seconds": 55,
+  "mode": "两步",
+  "est_seconds": 50,
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
@@ -509,7 +509,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": "集训第1、2天用过"
+  "excluded": null
  },
  {
   "id": "GK2017-DS-Q122",
@@ -525,7 +525,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": "资料组GK2017-DS-M3：集训第2天用过的资料材料"
+  "excluded": null
  },
  {
   "id": "GK2017-DS-Q123",
@@ -541,7 +541,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": "资料组GK2017-DS-M3：集训第2天用过的资料材料"
+  "excluded": null
  },
  {
   "id": "GK2017-DS-Q124",
@@ -552,12 +552,12 @@
   "material_id": "GK2017-DS-M3",
   "dup_of": null,
   "type": "基期量",
-  "mode": "三步及以上",
-  "est_seconds": 50,
+  "mode": "两步",
+  "est_seconds": 40,
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": "集训第1、2天用过"
+  "excluded": null
  },
  {
   "id": "GK2017-DS-Q125",
@@ -573,7 +573,7 @@
   "options_to_check": 1,
   "heaviest_option_mode": "两步",
   "issues": [],
-  "excluded": "资料组GK2017-DS-M3：集训第2天用过的资料材料"
+  "excluded": null
  },
  {
   "id": "GK2017-DS-Q126",
@@ -637,7 +637,7 @@
   "dup_of": null,
   "type": "比较排序",
   "mode": "读",
-  "est_seconds": 45,
+  "est_seconds": 40,
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
@@ -755,7 +755,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": "资料组GK2018-DS-M2：集训第2天用过的资料材料"
+  "excluded": null
  },
  {
   "id": "GK2018-DS-Q117",
@@ -771,7 +771,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": "集训第1、2天用过"
+  "excluded": null
  },
  {
   "id": "GK2018-DS-Q118",
@@ -787,7 +787,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": "集训第1、2天用过"
+  "excluded": null
  },
  {
   "id": "GK2018-DS-Q119",
@@ -805,7 +805,7 @@
   "issues": [
    "四个饼图无图例、无数值，只能按三块扇区的大小比例判断"
   ],
-  "excluded": "资料组GK2018-DS-M2：集训第2天用过的资料材料"
+  "excluded": null
  },
  {
   "id": "GK2018-DS-Q120",
@@ -821,7 +821,7 @@
   "options_to_check": 1,
   "heaviest_option_mode": "两步",
   "issues": [],
-  "excluded": "资料组GK2018-DS-M2：集训第2天用过的资料材料"
+  "excluded": null
  },
  {
   "id": "GK2018-DS-Q121",
@@ -917,7 +917,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": "集训第1、2天用过"
+  "excluded": null
  },
  {
   "id": "GK2018-DS-Q127",
@@ -933,7 +933,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": "资料组GK2018-DS-M4：集训第2天用过的资料材料"
+  "excluded": null
  },
  {
   "id": "GK2018-DS-Q128",
@@ -949,7 +949,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": "集训第1、2天用过"
+  "excluded": null
  },
  {
   "id": "GK2018-DS-Q129",
@@ -965,7 +965,7 @@
   "options_to_check": null,
   "heaviest_option_mode": null,
   "issues": [],
-  "excluded": "资料组GK2018-DS-M4：集训第2天用过的资料材料"
+  "excluded": null
  },
  {
   "id": "GK2018-DS-Q130",
@@ -981,7 +981,7 @@
   "options_to_check": 3,
   "heaviest_option_mode": "一步",
   "issues": [],
-  "excluded": "资料组GK2018-DS-M4：集训第2天用过的资料材料"
+  "excluded": null
  },
  {
   "paper": "GK2016-DS",
@@ -998,7 +998,9 @@
   "region": "全国",
   "material_note": "一句文字约60字＋11行×3列表（全国及棉花产量前十产区的播种面积、单产、总产量）",
   "dup_of": null,
-  "issues": [],
+  "issues": [
+   "表中湖北总产量作36万吨，按播种面积×单产约35.3万吨（原表数据不一致，不影响本组作答）"
+  ],
   "excluded": null
  },
  {
@@ -1077,7 +1079,7 @@
   "dup_of": null,
   "issues": [
    "原卷材料标题行作“回答116~120题”，本卷此组题号为111—115（副省级卷同一组为第116—120题）",
-   "图中2015年粮食产量4.16、2014年4.21，按柱值算2015年增速约−1.2%，图与文字均作−2.3%；2013年按柱值约−6.5%，图作−6.7%；不影响作答"
+   "图中2014、2015年粮食产量4.21、4.16万吨，按柱值算2015年同比约−1.2%，图中增速与文字均作−2.3%（原卷数据不一致）；第114题按柱值或按增速推算增量，形状都对应A，不影响作答"
   ],
   "excluded": null
  },
@@ -1117,7 +1119,7 @@
   "material_note": "纯文字4段约410字（产值分项、利润率、进出口），增速、百分点口径多",
   "dup_of": null,
   "issues": [],
-  "excluded": "集训第2天用过的资料材料"
+  "excluded": null
  },
  {
   "paper": "GK2017-DS",
@@ -1177,7 +1179,7 @@
    "原卷资料组编号作（一）（三）（四）（五），缺（二）；题号111—130连续，四组材料齐全，不缺题",
    "第119题四个饼图无图例、无数值，只能按扇区大小比例判断"
   ],
-  "excluded": "集训第2天用过的资料材料"
+  "excluded": null
  },
  {
   "paper": "GK2018-DS",
@@ -1213,6 +1215,6 @@
   "material_note": "纯文字4段约380字，全国、出口船、重点企业、重点企业出口船四组平行口径",
   "dup_of": null,
   "issues": [],
-  "excluded": "集训第2天用过的资料材料"
+  "excluded": null
  }
 ]
