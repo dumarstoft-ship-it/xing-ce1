@@ -42,7 +42,7 @@ def num_ranges(ns):
     return "、".join(out)
 
 
-def difficulty_lines(p, real, extra=False):
+def difficulty_lines(p, real, extra=False, notes=()):
     """M09起：按解题人的逐题评分（难度对照的标准）写数资难度与估时。"""
     if not real:
         return []
@@ -64,6 +64,7 @@ def difficulty_lines(p, real, extra=False):
         f"- 资料分析：读一眼就能判断{c['读']}道、一步{c['一步']}道、两步{c['两步']}道、三步及以上{c['三步及以上']}道（多步{multi}道）；"
         f"熟练考生连扫读材料约{secs / 60:.1f}分钟。近三年真题多步5—8道、约16.1分钟（见[难度对照](../难度对照/README.md)）。",
         f"- 数学运算：多步{cm['两步'] + cm['三步及以上']}道（两步{cm['两步']}、三步及以上{cm['三步及以上']}），熟练考生约{msecs / 60:.1f}分钟；近三年真题多步6—7道。",
+        *[f"- {x}" for x in notes],     # 编排.json的difficulty_notes：数推、图推、科推、逻辑的难度等（M12起）
         "- 评分人各有松紧（同一组资料，题池归类时另一人评的多步题少几道），只作大致参照。"
         + ("建议限时75分钟。" if extra else "按考场时段计时90分钟。"),
         "",
@@ -85,6 +86,7 @@ def main():
     extra = set(range(1, 16)) <= set(skip)    # 加量套（S01起）：不出第1—15题
     n_sydw = sum(1 for v in (plan.get("sources") or {}).values() if v.startswith("SYDW"))
     n_gdxd = sum(1 for v in (plan.get("sources") or {}).values() if v.startswith("GDXD"))   # 2019、2020年广东选调生考试卷（M11起）
+    n_js = sum(1 for v in (plan.get("sources") or {}).values() if v.startswith("JS"))       # 江苏省考A类卷的数学难题（M12起，用户2026-11-25）
     vf = R / "言语" / f"selection_{p}.json"
     v_sydw = vf.exists() and any(x["id"].startswith("SYDW") for x in json.loads(vf.read_text(encoding="utf-8")).get(p, []))
     qs = [json.loads(l) for l in (d / "题目.jsonl").read_text(encoding="utf-8").splitlines() if l.strip()]
@@ -106,6 +108,7 @@ def main():
                  "第31—90题逐题选自广东省考旧卷"
                  + (f"和2019、2020年广东选调生考试卷（{n_gdxd}题）" if n_gdxd else "")
                  + (f"（旧卷用完的题型取广东事业单位统考题，共{n_sydw}题）" if n_sydw else "")
+                 + (f"，另有{n_js}道数学运算难题取自江苏省考A类卷（用户2026-11-25：广东难题不够可用外地难题）" if n_js else "")
                  + "，都不在用户练过的24天集训第1、2天和习题本图推里；"
                  "各部分题型按2024—2026年真题的分布挑，数量、资料按[难度对照](../难度对照/README.md)的标准控制多步题。"
                  "第16—30题按真题题位编排，先用广东旧卷" + ("和事业编" if v_sydw else "") + "的言语题，旧卷没有的题型用国考、江浙真题；"
@@ -148,7 +151,7 @@ def main():
         *([] if extra else ["- **第1—15题**：每题的正确答案和每个错误选项都对应讲义原句；另由一人先凭知识盲做、再对照讲义和公开原文核查，答案全部一致。"]),
         *[f"- {x}" for x in plan.get("review_notes") or []],
         "",
-        *difficulty_lines(p, real, extra),
+        *difficulty_lines(p, real, extra, plan.get("difficulty_notes") or ()),
         "## 题型",
         "",
         "各部分各类题的多少与2024—2026年广东卷对照见[编排说明](编排说明.md)。与真题范围差一两道的保留（用户原话“一两道之差无妨”）"

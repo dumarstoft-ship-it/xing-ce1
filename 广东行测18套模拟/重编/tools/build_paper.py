@@ -76,6 +76,7 @@ for _d in GD_DIRS:
 
 IMG = re.compile(r"!\[[^\]]*\]\((images/[^)]+)\)")
 FRAC = re.compile(r"(?<![\d.$])(\d+)/(\d+)(?![\d.])")
+SLASH_FRAC_SETS = {"M09", "M10", "S01"}   # 已按斜线分数排版交付的套（第34题），重编时保持原样
 HD_LINKS = re.compile(r"\[代码描摹高清 PNG\]\([^)]*\)\s*·\s*\[SVG\]\([^)]*\)（原图为准）")
 
 
@@ -587,7 +588,7 @@ def build(paper, dry=False):
                 rec["options_mode"] = "in_figure"
                 rec["options"] = {k: [{"type": "text", "text": f"见题图中的 {k} 选项"}] for k in rec["options"]}
             apply_edits(plan, sid, rec, log, n, paper)
-            if 31 <= n <= 35 and not orig:   # 数列里的分数原卷是上下排的，题库多转写成斜线（M12起自动排成分数）
+            if 31 <= n <= 35 and not orig and paper not in SLASH_FRAC_SETS:   # 数列里的分数原卷是上下排的，题库多转写成斜线（M12起自动排成分数）
                 hit = False
                 for blk in rec["stem"] + [x for v in rec["options"].values() for x in v]:
                     if blk["type"] == "text" and FRAC.search(blk["text"]):
@@ -668,7 +669,9 @@ def real_source_desc(plan):
     kinds = [("广东省考旧卷", sum(1 for i in ids if re.match(r"GD\d{4}", i))),
              ("广东省选调生笔试", sum(1 for i in ids if i.startswith("GDXD"))),
              ("广东事业单位统考", sum(1 for i in ids if i.startswith("SYDW"))),
-             ("其他", sum(1 for i in ids if not re.match(r"(GD|SYDW)", i)))]
+             ("江苏省考A类卷", sum(1 for i in ids if re.match(r"JS\d{4}", i))),        # 数学难题（M12起）
+             ("国考地市级卷", sum(1 for i in ids if re.match(r"GK\d{4}", i))),        # 资料组（M13起）
+             ("其他", sum(1 for i in ids if not re.match(r"(GD|SYDW|JS\d{4}|GK\d{4})", i)))]
     return "真题：" + "，".join(f"{k}{c}题" for k, c in kinds if c)
 
 
