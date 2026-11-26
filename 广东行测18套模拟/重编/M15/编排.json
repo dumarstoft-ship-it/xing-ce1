@@ -160,6 +160,34 @@
    "old": "360 种",
    "new": "360种",
    "reason": "同上"
+  },
+  {
+   "source": "GKYY-2021-029",
+   "where": "stem",
+   "old": "眉毛和眼镜",
+   "new": "眉毛和眼睛",
+   "reason": "同音误字"
+  },
+  {
+   "source": "SYDW2025-Q048",
+   "where": "stem",
+   "old": "利益固化，阶层固化",
+   "new": "利益固化、阶层固化",
+   "reason": "并列成分之间应用顿号"
+  },
+  {
+   "source": "SYDW2025-Q048",
+   "where": "stem",
+   "old": "税收，社会保障",
+   "new": "税收、社会保障",
+   "reason": "并列成分之间应用顿号"
+  },
+  {
+   "source": "GDXD2020-ZH-Q058",
+   "where": "stem",
+   "old": "······",
+   "new": "……",
+   "reason": "省略号写成了六个间隔号"
   }
  ],
  "material_edits": [],
