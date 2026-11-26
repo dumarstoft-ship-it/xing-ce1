@@ -224,12 +224,12 @@
   ],
   "note": ""
  },
- "GDXD2019-SW-Q006": {
+ "GDXD2020-SW-Q012": {
   "answer": "B",
   "status": "known",
-  "answer_pdf": "答案解析/2019年广东省选调优秀大学毕业生笔试《思维能力测验》答案及解析.pdf",
+  "answer_pdf": "答案解析/2020年广东选调生和急需紧缺专业公务员招录笔试《思维能力测验》真题答案及解析.pdf",
   "answer_pages": [
-   2
+   3
   ],
   "note": ""
  },
@@ -270,12 +270,12 @@
   ],
   "note": ""
  },
- "GDXD2020-SW-Q053": {
+ "GDXD2020-SW-Q055": {
   "answer": "C",
   "status": "known",
   "answer_pdf": "答案解析/2020年广东选调生和急需紧缺专业公务员招录笔试《思维能力测验》真题答案及解析.pdf",
   "answer_pages": [
-   13
+   14
   ],
   "note": ""
  },
@@ -289,12 +289,21 @@
   ],
   "note": ""
  },
- "GDXD2019-SW-Q021": {
-  "answer": "C",
+ "JS2023-A类-095": {
+  "answer": "D",
   "status": "known",
-  "answer_pdf": "答案解析/2019年广东省选调优秀大学毕业生笔试《思维能力测验》答案及解析.pdf",
+  "answer_pdf": "2023年江苏公务员考试《行测》真题（A类）解析.pdf",
   "answer_pages": [
-   6
+   53
+  ],
+  "note": ""
+ },
+ "GDXD2020-SW-Q037": {
+  "answer": "D",
+  "status": "known",
+  "answer_pdf": "答案解析/2020年广东选调生和急需紧缺专业公务员招录笔试《思维能力测验》真题答案及解析.pdf",
+  "answer_pages": [
+   9
   ],
   "note": ""
  },
@@ -325,21 +334,12 @@
   ],
   "note": ""
  },
- "GDXD2020-SW-Q042": {
-  "answer": "A",
+ "JS2022-A类-102": {
+  "answer": "D",
   "status": "known",
-  "answer_pdf": "答案解析/2020年广东选调生和急需紧缺专业公务员招录笔试《思维能力测验》真题答案及解析.pdf",
+  "answer_pdf": "2022年江苏公务员考试《行测》（A类）及解析.pdf",
   "answer_pages": [
-   10
-  ],
-  "note": ""
- },
- "GDXD2020-SW-Q060": {
-  "answer": "C",
-  "status": "known",
-  "answer_pdf": "答案解析/2020年广东选调生和急需紧缺专业公务员招录笔试《思维能力测验》真题答案及解析.pdf",
-  "answer_pages": [
-   15
+   33
   ],
   "note": ""
  },
