@@ -317,7 +317,18 @@ function pickGroup(pool, size, opts = {}) {
   for (const m in byMod) byMod[m].sort((a, b) => ((isA(b) + (b.src !== "底稿") * 0.8 + Math.random() * 0.9) - (isA(a) + (a.src !== "底稿") * 0.8 + Math.random() * 0.9)));
   const mods = Object.keys(byMod).sort();
   const start = mods.length ? dayDiff("2026-01-01", today) % mods.length : 0;
+  // 真题式的题（新题、真题）每组先占约四成，各模块轮流出
+  const examQuota = Math.min(size, out.length + (opts.examQuota == null ? Math.ceil(size * 0.4) : opts.examQuota));
   let progress = true;
+  while (out.length < examQuota && progress) {
+    progress = false;
+    for (let i = 0; i < mods.length && out.length < examQuota; i++) {
+      const list = byMod[mods[(start + i) % mods.length]];
+      const k = list.findIndex((q) => q.src !== "底稿" && !q.cards.some((c) => cardsUsed.has(c)));
+      if (k >= 0) { const [q] = list.splice(k, 1); if (take(q)) progress = true; }
+    }
+  }
+  progress = true;
   while (out.length < size && progress) {
     progress = false;
     for (let i = 0; i < mods.length && out.length < size; i++) {
