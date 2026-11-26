@@ -223,7 +223,7 @@ function addDays(day, n) { const [y, m, d] = day.split("-").map(Number); return 
 function dayDiff(a, b) { const f = (s) => { const [y, m, d] = s.split("-").map(Number); return Date.UTC(y, m - 1, d); }; return Math.round((f(b) - f(a)) / 86400000); }
 function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
 const isA = (q) => q.cards.some((c) => S.card[c] && S.card[c].priority === "A");
-const kindLabel = (q) => q.src === "底稿" ? "底稿判断" : q.kind === "拓展" ? "拓展题" : "仿真题";
+const kindLabel = (q) => q.src === "底稿" ? "底稿判断" : q.src === "真题" ? "广东真题" : q.kind === "拓展" ? "拓展题" : "仿真题";
 
 // ---------- 进度：云端（db，仅所有者可读写）＋本机缓存 ----------
 function blankProg() { return { v: 1, q: {}, days: {}, settings: { size: 15, why: false }, today: null, updated: "" }; }
@@ -314,7 +314,7 @@ function pickGroup(pool, size, opts = {}) {
   // 新题：A级卡和仿真题优先，各模块轮流出
   const byMod = {};
   for (const q of shuffle(fresh.slice())) (byMod[q.module] = byMod[q.module] || []).push(q);
-  for (const m in byMod) byMod[m].sort((a, b) => ((isA(b) + (b.src === "新增") * 0.8 + Math.random() * 0.9) - (isA(a) + (a.src === "新增") * 0.8 + Math.random() * 0.9)));
+  for (const m in byMod) byMod[m].sort((a, b) => ((isA(b) + (b.src !== "底稿") * 0.8 + Math.random() * 0.9) - (isA(a) + (a.src !== "底稿") * 0.8 + Math.random() * 0.9)));
   const mods = Object.keys(byMod).sort();
   const start = mods.length ? dayDiff("2026-01-01", today) % mods.length : 0;
   let progress = true;
@@ -438,7 +438,7 @@ function viewToday() {
   mods.append(list);
   const c = S.meta.counts;
   const about = h("section", { class: "panel" }, h("h2", { text: "题库" }),
-    h("p", { class: "sub", text: `底稿${c.cards}张概念卡、${c.base}道判断题（自编训练题，不是真题）` + (c.new ? `，另有${c.new}道新出的仿真题和拓展题（仿广东真题的问法，每题另由一人盲做核对）` : "") + "。判断题照答题卡的习惯：正确选A，错误选B。" }));
+    h("p", { class: "sub", text: `底稿${c.cards}张概念卡、${c.base}道判断题（自编训练题，不是真题）` + (c.new ? `，另有${c.new}道新出的仿真题和拓展题（仿广东真题的问法，每题另由一人盲做核对）` : "") + (c.real ? `，还收了${c.real}道广东旧卷的马哲真题` : "") + "。判断题照答题卡的习惯：正确选A，错误选B。" }));
   return [box, mods, about];
 }
 function sizeSelect() {
@@ -481,7 +481,7 @@ function renderRun() {
   const mod = S.meta.modules.find((m) => m.id === q.module);
   card.append(h("div", { class: "qmeta" },
     h("span", { class: "pill", text: `${q.module} ${mod ? mod.title : ""}` }),
-    h("span", { class: "pill" + (q.src === "新增" ? " a" : ""), text: kindLabel(q) }),
+    h("span", { class: "pill" + (q.src === "新增" ? " a" : q.src === "真题" ? " ok" : ""), text: kindLabel(q) + (q.src === "真题" ? " · " + q.basis.split("，")[0] : "") }),
     h("span", { class: "pill", text: q.type + "题" }),
     isA(q) ? h("span", { class: "pill warn", text: "A级辨析" }) : null));
   if (q.lead) card.append(h("p", { class: "lead", text: q.lead }));
@@ -585,7 +585,7 @@ function explain(q) {
       out.append(h("details", { class: "card" }, h("summary", null, h("span", { class: "cid", text: c.id }), h("span", { class: "ct", text: c.title }), h("span", { class: "pill", text: "相关概念卡" })),
         cardBody(c)));
     }
-    out.append(h("p", { class: "note", text: `自编题（${q.kind}），不是官方真题。来源：${refNames(q.refs)}` }));
+    out.append(h("p", { class: "note", text: q.src === "真题" ? "广东省考真题，答案来自答案解析PDF；解析是编辑写的。" : `自编题（${q.kind}），不是官方真题。来源：${refNames(q.refs)}` }));
   }
   return out;
 }
@@ -634,7 +634,7 @@ function viewPractice() {
     return h("div", null, h("h3", { text: title }), row);
   };
   box.append(group("模块", "mods", S.meta.modules.map((m) => [m.id, `${m.id} ${m.title}`])),
-    group("来源", "src", [["底稿判断", "底稿判断"], ["仿真题", "仿真题"], ["拓展题", "拓展题"]]),
+    group("来源", "src", [["底稿判断", "底稿判断"], ["仿真题", "仿真题"], ["拓展题", "拓展题"], ["广东真题", "广东旧卷真题"]]),
     group("题型", "type", [["判断", "判断"], ["单选", "单选"], ["多选", "多选"]]),
     group("卡片级别", "prio", [["A", "A级（优先辨析）"], ["B", "B级（基础确认）"]]));
   const scope = h("div", { class: "filters" });

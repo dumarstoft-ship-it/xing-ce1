@@ -58,17 +58,27 @@ def main():
                               "analysis": q["analysis"], "trap": q.get("trap") or "", "basis": q.get("basis") or "",
                               "refs": q.get("source_refs") or [], "note": k.get("note") or ""})
             n_new += 1
+    # 广东旧卷真题（答案来自答案解析PDF，解析由编辑写）
+    n_real = 0
+    real_f = HERE / "新题" / "真题.json"
+    for q in (json.loads(real_f.read_text(encoding="utf-8")) if real_f.exists() else []):
+        assert set(q["card_ids"]) <= card_ids and q["kind"] == "广东真题", q["id"]
+        questions.append({"id": q["id"], "src": "真题", "kind": q["kind"], "type": q["type"], "module": q["module_id"],
+                          "cards": q["card_ids"], "lead": q.get("lead") or "", "stem": q["stem"], "options": q.get("options") or {},
+                          "answer": q["answer"], "fix": "", "analysis": q["analysis"], "trap": q.get("trap") or "",
+                          "basis": q.get("basis") or "", "refs": q.get("source_refs") or [], "note": ""})
+        n_real += 1
     assert len({q["id"] for q in questions}) == len(questions)
 
     meta = {"title": d["title"], "prepared_on": d["prepared_on"],
             "modules": [{"id": m["id"], "title": m["title"]} for m in d["modules"]],
             "appendices": d["appendices"], "sources": d["sources"],
-            "learning_context": d["learning_context"], "counts": {"cards": len(cards), "base": len(questions) - n_new, "new": n_new}}
+            "learning_context": d["learning_context"], "counts": {"cards": len(cards), "base": len(questions) - n_new - n_real, "new": n_new, "real": n_real}}
     OUT.mkdir(exist_ok=True)
     (OUT / "cards.json").write_text(lines(cards), encoding="utf-8")
     (OUT / "questions.json").write_text(lines(questions), encoding="utf-8")
     (OUT / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    print("cards", len(cards), "questions", len(questions), "new", n_new)
+    print("cards", len(cards), "questions", len(questions), "new", n_new, "real", n_real)
 
 
 if __name__ == "__main__":
