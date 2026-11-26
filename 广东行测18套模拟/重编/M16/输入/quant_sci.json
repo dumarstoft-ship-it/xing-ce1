@@ -465,31 +465,31 @@
   ]
  },
  {
-  "id": "GDXD2019-XC-Q062",
+  "id": "GD2015-XJ-Q070",
   "number": 69,
   "section": "科学推理",
-  "stem": "如图所示，一束太阳光从空气中倾斜射入玻璃体，玻璃体实心无色，a、b、c、d代表四条不同颜色的光线，则它们可能依次是（）。",
+  "stem": "下图是A B两种物质的溶解度曲线，下列说法正确的是：",
   "options": [
    {
     "label": "A",
-    "text": "红光、紫光、蓝光、绿光"
+    "text": "A物质的溶解度大于B物质的溶解度"
    },
    {
     "label": "B",
-    "text": "绿光、红光、蓝光、紫光"
+    "text": "温度越高，则A B两种物质的溶解度越大"
    },
    {
     "label": "C",
-    "text": "紫光、蓝光、绿光、红光"
+    "text": "将t₁℃时A物质的饱和溶液降温，A物质变为不饱和溶"
    },
    {
     "label": "D",
-    "text": "绿光、紫光、红光、蓝光"
+    "text": "将t₂℃时B物质的饱和溶液降温至t₁℃时，没有B物质析出"
    }
   ],
   "figures": [
    {
-    "path": "/home/user/xing-ce1/广东/行测/2013-2021/assets/GDXD2019-XC/GDXD2019-XC-p09-i02.png",
+    "path": "/home/user/xing-ce1/广东/行测/2013-2021/assets/GD2015-XJ/GD2015-XJ-p09-i01.png",
     "role": "question"
    }
   ]
