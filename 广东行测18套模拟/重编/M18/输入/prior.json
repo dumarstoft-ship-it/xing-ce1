@@ -73,12 +73,12 @@
   ],
   "note": ""
  },
- "JS2025-A类-061": {
+ "JS2022-A类-063": {
   "answer": "B",
   "status": "known",
-  "answer_pdf": "2025年江苏省公务员录用考试《行测》题（A类）答案及解析（121后暂缺）.pdf",
+  "answer_pdf": "2022年江苏公务员考试《行测》（A类）及解析.pdf",
   "answer_pages": [
-   30
+   19
   ],
   "note": ""
  },
@@ -91,12 +91,12 @@
   ],
   "note": ""
  },
- "GD2014-XZ-Q065": {
-  "answer": "C",
+ "GDXD2020-SW-Q071": {
+  "answer": "A",
   "status": "known",
-  "answer_pdf": "答案解析/2014年广东省公务员录用考试《行测》题（乡镇）答案及解析.pdf",
+  "answer_pdf": "答案解析/2020年广东选调生和急需紧缺专业公务员招录笔试《思维能力测验》真题答案及解析.pdf",
   "answer_pages": [
-   13
+   18
   ],
   "note": ""
  },
@@ -127,12 +127,12 @@
   ],
   "note": ""
  },
- "GD2020-XJ-Q036": {
-  "answer": "B",
+ "GD2013-3-Q012": {
+  "answer": "C",
   "status": "known",
-  "answer_pdf": "答案解析/2020年0809广东公务员考试《行测》真题（县级以上）参考答案及解析.pdf",
+  "answer_pdf": "答案解析/2013年广东公务员考试《行测》三卷答案及解析.pdf",
   "answer_pages": [
-   10
+   2
   ],
   "note": ""
  },
@@ -163,13 +163,11 @@
   ],
   "note": ""
  },
- "GDXD2019-XC-Q056": {
-  "answer": "B",
-  "status": "known",
-  "answer_pdf": "答案解析/2019年广东省选调优秀大学毕业生笔试《行测》答案及解析.pdf",
-  "answer_pages": [
-   9
-  ],
+ "M18-ORIG-SCI-HEAT": {
+  "answer": "A",
+  "status": "原创（编辑的答案，不是来源答案）",
+  "answer_pdf": null,
+  "answer_pages": null,
   "note": ""
  },
  "M18-ORIG-SCI-CHEM": {
