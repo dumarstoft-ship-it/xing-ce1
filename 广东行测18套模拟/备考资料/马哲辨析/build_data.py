@@ -34,6 +34,16 @@ def main():
                               "polarity": polarity})
     assert len(cards) == d["statistics"]["concept_cards"] and len(questions) == d["statistics"]["true_false_questions"]
 
+    # 底稿待核验（核对人审读底稿后由编辑裁定）：不改底稿答案，只加考场口径说明；答案不唯一的判断题不进自动选题
+    fix_f = HERE / "核对" / "底稿处理.json"
+    fixes = json.loads(fix_f.read_text(encoding="utf-8")) if fix_f.exists() else {}
+    by_card = {c["id"]: c for c in cards}
+    for cid, fx in fixes.items():
+        by_card[cid]["review_note"] = fx["note"]
+        for q in questions:
+            if q["cards"] == [cid] and q["polarity"] in fx.get("hold", []):
+                q["hold"] = fx.get("hold_reason") or fx["note"]
+
     # 核对后采用的新题（盲做与出题人一致，或经裁定修改后采用）
     keep_f = HERE / "核对" / "采用.json"
     keep = json.loads(keep_f.read_text(encoding="utf-8")) if keep_f.exists() else {}

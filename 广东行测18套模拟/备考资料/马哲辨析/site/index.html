@@ -130,6 +130,8 @@ main { max-width: 760px; margin: 0 auto; padding-left: max(16px, env(safe-area-i
 .blk.good .h { color: var(--ok); }
 .blk.trap { border-color: var(--bad); }
 .blk.trap .h { color: var(--bad); }
+.blk.warn { border-color: var(--warn); background: var(--warn-soft); padding: 6px 10px 6px 12px; border-radius: 0 6px 6px 0; }
+.blk.warn .h { color: var(--warn); }
 .blk.fix { border-color: var(--accent); }
 .blk.fix .h { color: var(--accent); }
 .blk .serif { font-family: var(--serif); }
@@ -302,6 +304,7 @@ function cardStatus(cid) {
 
 // ---------- 选题 ----------
 function pickGroup(pool, size, opts = {}) {
+  pool = pool.filter((q) => !q.hold);
   const today = dayStr();
   const P = S.prog.q;
   const used = new Set(), cardsUsed = new Set(), out = [];
@@ -581,6 +584,8 @@ function explain(q) {
   if (runState.why) out.append(h("p", { class: "mine", text: `你写的错因：${runState.why}` }));
   if (q.src === "底稿") {
     const c = S.card[q.cards[0]];
+    if (c.review_note) out.append(blk("warn", "待核验（核对人意见，底稿答案未改）", c.review_note));
+    if (q.hold) out.append(h("p", { class: "flag", text: "这道判断题答案不唯一，已暂停自动出题。" }));
     out.append(blk("good", "正确说法", c.correct_statement, true), blk("trap", "易错说法（不要记成结论）", c.incorrect_statement, true),
       blk("", "为什么", c.explanation), blk("fix", "条件与边界", c.necessary_conditions_and_boundaries),
       blk("", "例子", c.example_or_counterexample + (c.example_status ? `\n（${c.example_status}）` : "")));
@@ -697,6 +702,7 @@ function viewReview() {
 const CF = { mod: "", q: "" };
 function cardBody(c) {
   return h("div", { class: "body" },
+    c.review_note ? blk("warn", "待核验（核对人意见，底稿答案未改）", c.review_note) : null,
     blk("good", "正确说法", c.correct_statement, true),
     blk("trap", "易错说法（不要记成结论）", c.incorrect_statement, true),
     blk("", "为什么", c.explanation),
