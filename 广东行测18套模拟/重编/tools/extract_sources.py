@@ -112,6 +112,14 @@ def main(paper):
     plan = json.loads((R / paper / "编排.json").read_text(encoding="utf-8"))
     src = {int(n): sid for n, sid in plan["sources"].items()}
     B = bank()
+    # 编辑新写的题（M17起科推不够用时；见 重编/<套卷>/原创.json）：题面照原创记录导出，prior里的答案是编辑的答案、不是来源答案
+    of = R / paper / "原创.json"
+    for o in (json.loads(of.read_text(encoding="utf-8")) if of.exists() else []):
+        txt = lambda bl: "".join(b.get("text", "") for b in bl if b.get("type") == "text")
+        B[o["id"]] = ("原创", {"id": o["id"], "section": o["section"], "stem": txt(o["stem"]),
+                              "options": [{"label": k, "text": txt(v)} for k, v in sorted(o["options"].items())],
+                              "figures": [], "answer": {"values": [[o["answer"]]], "status": "原创（编辑的答案，不是来源答案）"},
+                              "source": {}})
     groups = {"quant_sci": [n for n in sorted(src) if n <= 45 or 66 <= n <= 70],
               "fig_logic": [n for n in sorted(src) if 46 <= n <= 65],
               "data": [n for n in sorted(src) if n >= 71]}
