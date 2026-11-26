@@ -209,6 +209,27 @@
    "old": "“阈值”)",
    "new": "“阈值”）",
    "reason": "半角括号改为全角"
+  },
+  {
+   "source": "GD2015-XJ-Q070",
+   "where": "stem",
+   "old": "A B两种物质",
+   "new": "A、B两种物质",
+   "reason": "“A”“B”之间漏顿号"
+  },
+  {
+   "source": "GD2015-XJ-Q070",
+   "where": "B",
+   "old": "A B两种物质",
+   "new": "A、B两种物质",
+   "reason": "同上"
+  },
+  {
+   "source": "GD2015-XJ-Q070",
+   "where": "C",
+   "old": "变为不饱和溶",
+   "new": "变为不饱和溶液",
+   "reason": "漏“液”字"
   }
  ],
  "material_edits": [],
