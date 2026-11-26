@@ -495,48 +495,48 @@
   ],
   "note": ""
  },
- "GK2021-DS-Q116": {
-  "answer": "A",
-  "status": "known",
-  "answer_pdf": "国考/答案解析/2021年国家公务员考试《行测》真题（市地级）参考答案及解析...pdf",
-  "answer_pages": [
-   31
-  ],
-  "note": ""
- },
- "GK2021-DS-Q117": {
-  "answer": "A",
-  "status": "known",
-  "answer_pdf": "国考/答案解析/2021年国家公务员考试《行测》真题（市地级）参考答案及解析...pdf",
-  "answer_pages": [
-   31
-  ],
-  "note": ""
- },
- "GK2021-DS-Q118": {
-  "answer": "C",
-  "status": "known",
-  "answer_pdf": "国考/答案解析/2021年国家公务员考试《行测》真题（市地级）参考答案及解析...pdf",
-  "answer_pages": [
-   31
-  ],
-  "note": ""
- },
- "GK2021-DS-Q119": {
+ "GK2019-DS-Q121": {
   "answer": "B",
   "status": "known",
-  "answer_pdf": "国考/答案解析/2021年国家公务员考试《行测》真题（市地级）参考答案及解析...pdf",
+  "answer_pdf": "国考/答案解析/2019年国家公务员考试行测真题（地市级）答案及解析...pdf",
   "answer_pages": [
    32
   ],
   "note": ""
  },
- "GK2021-DS-Q120": {
+ "GK2019-DS-Q122": {
+  "answer": "C",
+  "status": "known",
+  "answer_pdf": "国考/答案解析/2019年国家公务员考试行测真题（地市级）答案及解析...pdf",
+  "answer_pages": [
+   33
+  ],
+  "note": ""
+ },
+ "GK2019-DS-Q123": {
   "answer": "D",
   "status": "known",
-  "answer_pdf": "国考/答案解析/2021年国家公务员考试《行测》真题（市地级）参考答案及解析...pdf",
+  "answer_pdf": "国考/答案解析/2019年国家公务员考试行测真题（地市级）答案及解析...pdf",
   "answer_pages": [
-   32
+   33
+  ],
+  "note": ""
+ },
+ "GK2019-DS-Q124": {
+  "answer": "B",
+  "status": "known",
+  "answer_pdf": "国考/答案解析/2019年国家公务员考试行测真题（地市级）答案及解析...pdf",
+  "answer_pages": [
+   33
+  ],
+  "note": ""
+ },
+ "GK2019-DS-Q125": {
+  "answer": "A",
+  "status": "known",
+  "answer_pdf": "国考/答案解析/2019年国家公务员考试行测真题（地市级）答案及解析...pdf",
+  "answer_pages": [
+   33
   ],
   "note": ""
  }
