@@ -188,6 +188,27 @@
    "old": "甲乙丙三人",
    "new": "甲、乙、丙三人",
    "reason": "同上"
+  },
+  {
+   "source": "SYDW2024-Q048",
+   "where": "stem",
+   "old": "长远之“势”既要算",
+   "new": "长远之“势”，既要算",
+   "reason": "“势”后缺逗号（题池已记）"
+  },
+  {
+   "source": "JS2020-A类-028",
+   "where": "stem",
+   "old": "值(学术界",
+   "new": "值（学术界",
+   "reason": "半角括号改为全角"
+  },
+  {
+   "source": "JS2020-A类-028",
+   "where": "stem",
+   "old": "“阈值”)",
+   "new": "“阈值”）",
+   "reason": "半角括号改为全角"
   }
  ],
  "material_edits": [],
