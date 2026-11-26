@@ -619,6 +619,14 @@ def build(paper, dry=False):
         meta["edits"] = [x for x in log.items if x["number"] == n]
         meta["content_sha256"] = sha({k: rec[k] for k in ("stem", "options")})
         registry.append(meta)
+    # 改动、补题干按来源编号对应：编号写错时改动会悄悄落空（M17第87题曾因此漏改），M09起的套卷直接报错
+    used = {r.get("source_id") for r in registry}
+    stray = sorted({e["source"] for e in plan.get("edits", [])} - used) + sorted(set(plan.get("stem_fill") or {}) - used) \
+        + sorted({e["material"] for e in plan.get("material_edits", [])} - set(mat_ids))
+    if stray and not dry:
+        if plan.get("sources"):
+            raise SystemExit(f"{paper}：编排.json里这些改动的来源编号不在本套题中：{'、'.join(stray)}")
+        print(f"提示：{paper}编排.json里这些改动的来源编号不在本套题中（换题后留下的旧记录）：{'、'.join(stray)}")
     # 改写后的解析（讲清题眼与易错，见 重编/解析改写/改写说明.md），按套卷与题号覆盖
     for f in sorted((R / "解析改写").glob("out_*.json")):
         for x in jload(f, []):
