@@ -88,6 +88,8 @@ def main():
     n_gdxd = sum(1 for v in (plan.get("sources") or {}).values() if v.startswith("GDXD"))   # 2019、2020年广东选调生考试卷（M11起）
     js_n = [int(n) for n, v in (plan.get("sources") or {}).items() if v.startswith("JS")]   # 江苏省考A类卷的数量难题（M12起，用户2026-11-25）
     js_parts = [f"{c}道{k}" for k, c in (("数推", sum(1 for n in js_n if n <= 35)), ("数学运算", sum(1 for n in js_n if 36 <= n <= 45))) if c]
+    js_logic = sum(1 for n in js_n if 51 <= n <= 65)     # M16起：广东逻辑难题、加强题用完，按统筹用江苏卷补
+    js_fig = sum(1 for n in js_n if 46 <= n <= 50)       # S07起：“模考保留”的图推不够用，按统筹用江苏卷补
     n_gk = sum(1 for v in (plan.get("sources") or {}).values() if v.startswith("GK")) // 5   # 国考地市级卷的资料组（M13起）
     vf = R / "言语" / f"selection_{p}.json"
     v_sydw = vf.exists() and any(x["id"].startswith("SYDW") for x in json.loads(vf.read_text(encoding="utf-8")).get(p, []))
@@ -109,6 +111,7 @@ def main():
                     if n_sydw >= 10 else
                     "第31—90题以广东省考旧卷" + ("和选调生考试卷" if n_gdxd else "") + f"里较易的题为主（2022—2026年广东事业单位统考题已基本用完，本套只用{n_sydw}道），")
                  + (f"资料有{n_gk}组取自国考地市级卷（广东资料组不够，用户2026-11-20定用国考补），" if n_gk else "")
+                 + (f"图推有{js_fig}道取自江苏省考A类卷（广东剩下的图推不够，按统筹补），" if js_fig else "")
                  + "题型照2024—2026年真题分布，难度略低于主套，解析写得简短。建议限时75分钟（主套90分钟里约10分钟用在第1—15题），"
                  "到点没做完就换一支颜色的笔做完。")
     elif real:
@@ -117,6 +120,8 @@ def main():
                  + (f"和2019、2020年广东选调生考试卷（{n_gdxd}题）" if n_gdxd else "")
                  + (f"（旧卷用完的题型取广东事业单位统考题，共{n_sydw}题）" if n_sydw else "")
                  + (f"，另有{'、'.join(js_parts)}难题取自江苏省考A类卷（用户2026-11-25：广东难题不够可用外地难题）" if js_parts else "")
+                 + (f"，逻辑判断有{js_logic}道也取自江苏卷（广东剩下的逻辑难题、加强题不够，按统筹补）" if js_logic else "")
+                 + (f"，图形推理有{js_fig}道取自江苏卷（广东剩下的图推不够，按统筹补）" if js_fig else "")
                  + (f"，资料有{n_gk}组取自国考地市级卷（用户2026-11-20定：广东资料组不够用国考补）" if n_gk else "")
                  + "，都不在用户练过的24天集训第1、2天和习题本图推里；"
                  "各部分题型按2024—2026年真题的分布挑，数量、资料按[难度对照](../难度对照/README.md)的标准控制多步题。"
