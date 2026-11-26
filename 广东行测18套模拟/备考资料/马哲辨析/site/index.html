@@ -797,8 +797,12 @@ function confirmReset(e) {
 // ---------- 启动 ----------
 async function start(hot) {
   try {
-    const [cards, qs, meta] = await Promise.all(["cards.json", "questions.json", "meta.json"].map((f) => fetch(f).then((r) => { if (!r.ok) throw new Error(f); return r.json(); })));
-    S.cards = cards; S.qs = qs; S.meta = meta;
+    const inline = document.getElementById("mz-data");   // 单文件导出版：题库打包在页面里
+    if (inline) { const d = JSON.parse(inline.textContent); S.cards = d.cards; S.qs = d.questions; S.meta = d.meta; }
+    else {
+      const [cards, qs, meta] = await Promise.all(["cards.json", "questions.json", "meta.json"].map((f) => fetch(f).then((r) => { if (!r.ok) throw new Error(f); return r.json(); })));
+      S.cards = cards; S.qs = qs; S.meta = meta;
+    }
   } catch (e) {
     $("#main").replaceChildren(h("div", { class: "panel" }, h("h2", { text: "题库没有载入" }), h("p", { class: "sub", text: "刷新页面再试一次；如果一直这样，告诉Claude。" })));
     return;
