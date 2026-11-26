@@ -216,13 +216,12 @@
   ],
   "note": ""
  },
- "JS2024-A类-090": {
+ "JS2021-A类-085": {
   "answer": "A",
   "status": "known",
-  "answer_pdf": "2024年江苏省公务员录用考试《行测》（A类）答案+解析.pdf",
+  "answer_pdf": "2021年江苏公务员考试《行测》真题（A卷）参考答案及解析.pdf",
   "answer_pages": [
-   28,
-   29
+   20
   ],
   "note": ""
  },
@@ -244,6 +243,15 @@
   ],
   "note": ""
  },
+ "GD2019-XJ-Q046": {
+  "answer": "D",
+  "status": "known",
+  "answer_pdf": "答案解析/2019年广东公务员考试《行测》真题（县级）答案及解析.pdf",
+  "answer_pages": [
+   7
+  ],
+  "note": ""
+ },
  "GD2018-Q059": {
   "answer": "A",
   "status": "known",
@@ -253,21 +261,12 @@
   ],
   "note": ""
  },
- "GD2020-XJ-Q056": {
-  "answer": "D",
+ "GD2014-XJ-Q077": {
+  "answer": "A",
   "status": "known",
-  "answer_pdf": "答案解析/2020年0809广东公务员考试《行测》真题（县级以上）参考答案及解析.pdf",
+  "answer_pdf": "答案解析/2014年广东公务员考试《行测》真题（县级以上卷）答案及解析.pdf",
   "answer_pages": [
-   14
-  ],
-  "note": ""
- },
- "GD2013-3-Q083": {
-  "answer": "B",
-  "status": "known",
-  "answer_pdf": "答案解析/2013年广东公务员考试《行测》三卷答案及解析.pdf",
-  "answer_pages": [
-   10
+   17
   ],
   "note": ""
  },
@@ -286,15 +285,6 @@
   "answer_pdf": "答案解析/2015年广东公务员考试《行测》真题县级卷答案及解析.pdf",
   "answer_pages": [
    8
-  ],
-  "note": ""
- },
- "GD2016-XJ-Q071": {
-  "answer": "A",
-  "status": "known",
-  "answer_pdf": "答案解析/2016年广东公务员考试《行测》真题（县级卷）答案及解析.pdf",
-  "answer_pages": [
-   13
   ],
   "note": ""
  },
@@ -331,6 +321,15 @@
   "answer_pdf": "答案解析/2019年广东省选调优秀大学毕业生笔试《思维能力测验》答案及解析.pdf",
   "answer_pages": [
    13
+  ],
+  "note": ""
+ },
+ "GDXD2019-SW-Q034": {
+  "answer": "B",
+  "status": "known",
+  "answer_pdf": "答案解析/2019年广东省选调优秀大学毕业生笔试《思维能力测验》答案及解析.pdf",
+  "answer_pages": [
+   9
   ],
   "note": ""
  },
