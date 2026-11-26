@@ -188,6 +188,34 @@
    "old": "儒勒•凡尔纳",
    "new": "儒勒·凡尔纳",
    "reason": "外国人名间隔号应为“·”"
+  },
+  {
+   "source": "GD2021-XZ-Q079",
+   "where": "A",
+   "old": "一一",
+   "new": "——",
+   "reason": "连接号误作两个汉字“一”，应为破折号“——”（原卷即如此，四个选项相同）"
+  },
+  {
+   "source": "GD2021-XZ-Q079",
+   "where": "B",
+   "old": "一一",
+   "new": "——",
+   "reason": "同上"
+  },
+  {
+   "source": "GD2021-XZ-Q079",
+   "where": "C",
+   "old": "一一",
+   "new": "——",
+   "reason": "同上"
+  },
+  {
+   "source": "GD2021-XZ-Q079",
+   "where": "D",
+   "old": "一一",
+   "new": "——",
+   "reason": "同上"
   }
  ],
  "material_edits": [],
