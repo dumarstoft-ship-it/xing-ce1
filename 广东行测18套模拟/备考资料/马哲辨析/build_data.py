@@ -18,6 +18,12 @@ def lines(rows):
     return "[\n" + ",\n".join(json.dumps(r, ensure_ascii=False, separators=(",", ":")) for r in rows) + "\n]\n"
 
 
+def split_options(text):
+    """选择题解析里各选项另起一行：句末（。；）后紧跟“X项”时断行。"""
+    import re
+    return re.sub(r"([。；])\s*(?=[A-D]项)", "\\1\n", text)
+
+
 def main():
     d = json.loads(DRAFT.read_text(encoding="utf-8"))
     cards, questions = [], []
@@ -65,7 +71,7 @@ def main():
             questions.append({"id": q["id"], "src": "新增", "kind": q["kind"], "type": q["type"], "module": q["module_id"],
                               "cards": q["card_ids"], "lead": q.get("lead") or "", "stem": q["stem"],
                               "options": q.get("options") or {}, "answer": q["answer"], "fix": q.get("fix") or "",
-                              "analysis": q["analysis"], "trap": q.get("trap") or "", "basis": q.get("basis") or "",
+                              "analysis": split_options(q["analysis"]) if q["type"] != "判断" else q["analysis"], "trap": q.get("trap") or "", "basis": q.get("basis") or "",
                               "refs": q.get("source_refs") or [], "note": k.get("note") or ""})
             n_new += 1
     # 广东旧卷真题（答案来自答案解析PDF，解析由编辑写）

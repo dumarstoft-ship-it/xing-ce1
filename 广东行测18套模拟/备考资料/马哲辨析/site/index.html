@@ -331,6 +331,8 @@ function pickGroup(pool, size, opts = {}) {
       if (k >= 0) { const [q] = list.splice(k, 1); if (take(q)) progress = true; }
     }
   }
+  // 剩下的名额先出底稿题（A级卡优先），新题留给以后几天
+  for (const m in byMod) byMod[m].sort((a, b) => ((b.src === "底稿") - (a.src === "底稿")) || (isA(b) - isA(a)) || (Math.random() - 0.5));
   progress = true;
   while (out.length < size && progress) {
     progress = false;
