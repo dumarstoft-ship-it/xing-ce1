@@ -1,0 +1,611 @@
+[
+ {
+  "id": "GD2015-XZ-Q086",
+  "number": 71,
+  "answer": "D",
+  "category": "资料分析",
+  "subcategory": "比较排序",
+  "basis_quantity": "增长量",
+  "form": "",
+  "analysis": "题眼：求移动电话用户每年“与上年相比的增长量”，选最小的年份，只看移动电话（灰柱）一列。\n推导：2011年10793−9708＝1085；2012年12468−10793＝1675；2013年14706−12468＝2238；2014年14943−14706＝237。2014年最小。故正确答案为D。\n易错：增长量是相邻两年的差，不是当年的数值；2014年的柱子最高，却是增长最少的一年。图中纵轴单位印作“户”，按数值大小应为万户，对比较、增长率、倍数都没有影响。",
+  "verification": "/tmp/claude-0/-home-user-xing-ce1/532e1442-4812-52b3-a392-6d873e7b4a6c/scratchpad/m14s05_data2/s05.py：s05.py：增量2009—2014年为556、757、1085、1675、2238、237（D）。图中数字按原卷裁图核对，与转写一致；纵轴单位印作“户”。",
+  "confidence": "high",
+  "prior_answer": "D",
+  "prior_note": "与来源答案一致（答案解析/2015年广东公务员考试《行测》真题乡镇卷答案及解析.pdf 第12页）。做本题前未见过其答案或解析页：盲解写完（S05/解题/data_blind.json）后才打开prior.json和该页。",
+  "issues": [
+   "图1纵轴单位印作“户”，按数值应为“万户”（图片里的问题不能改，讲解里已提醒）。",
+   "本组为单图，转写与图一致。"
+  ],
+  "replace_recommended": false,
+  "difficulty": "易",
+  "mode": "一步",
+  "est_seconds": 20,
+  "precision": "粗估",
+  "traps": [
+   "其他：增长量不是现期量"
+  ],
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "material_seconds": 25,
+  "material_note": "一张2008—2014年移动、固定电话用户柱形图，所有柱都有数据标注；纵轴单位印作“户”，图中无其他文字。",
+  "rating_note": "相邻两年作差，2014年只有200多，其余都在1000以上，一眼可判。"
+ },
+ {
+  "id": "GD2015-XZ-Q087",
+  "number": 72,
+  "answer": "C",
+  "category": "资料分析",
+  "subcategory": "增长率",
+  "basis_quantity": null,
+  "form": "",
+  "analysis": "题眼：增长率＝(2014年−2008年)÷2008年，基期是2008年的移动电话用户数。\n推导：14943÷8395≈1.78，即增长约78%。故正确答案为C。\n易错：14943÷8395≈1.78是“为2008年的178%”，增长率要减1；若用2013年作基期，得约1.6%。",
+  "verification": "/tmp/claude-0/-home-user-xing-ce1/532e1442-4812-52b3-a392-6d873e7b4a6c/scratchpad/m14s05_data2/s05.py：s05.py：14943/8395−1＝78.0%（C）。",
+  "confidence": "high",
+  "prior_answer": "C",
+  "prior_note": "与来源答案一致（答案解析/2015年广东公务员考试《行测》真题乡镇卷答案及解析.pdf 第12页）。做本题前未见过其答案或解析页：盲解写完（S05/解题/data_blind.json）后才打开prior.json和该页。",
+  "issues": [],
+  "replace_recommended": false,
+  "difficulty": "易",
+  "mode": "一步",
+  "est_seconds": 25,
+  "precision": "粗估",
+  "traps": [
+   "基期年或年份跨度"
+  ],
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "rating_note": "一次除法，58/68/78/88间距大。"
+ },
+ {
+  "id": "GD2015-XZ-Q088",
+  "number": 73,
+  "answer": "D",
+  "category": "资料分析",
+  "subcategory": "倍数",
+  "basis_quantity": null,
+  "form": "",
+  "analysis": "题眼：倍数＝2014年移动电话用户数÷固定电话用户数，同一年相除。\n推导：14943÷2951≈5.06，约5倍。故正确答案为D。\n易错：除反了会得0.2；2013年14706÷3100≈4.7也接近5，要核对是2014年。",
+  "verification": "/tmp/claude-0/-home-user-xing-ce1/532e1442-4812-52b3-a392-6d873e7b4a6c/scratchpad/m14s05_data2/s05.py：s05.py：14943/2951＝5.06（D）。",
+  "confidence": "high",
+  "prior_answer": "D",
+  "prior_note": "与来源答案一致（答案解析/2015年广东公务员考试《行测》真题乡镇卷答案及解析.pdf 第12页）。做本题前未见过其答案或解析页：盲解写完（S05/解题/data_blind.json）后才打开prior.json和该页。",
+  "issues": [],
+  "replace_recommended": false,
+  "difficulty": "易",
+  "mode": "一步",
+  "est_seconds": 15,
+  "precision": "粗估",
+  "traps": [
+   "谁比谁"
+  ],
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "rating_note": "一次除法，估算即可。"
+ },
+ {
+  "id": "GD2015-XZ-Q089",
+  "number": 74,
+  "answer": "C",
+  "category": "资料分析",
+  "subcategory": "比较排序",
+  "basis_quantity": "增长量（电话用户总数）",
+  "form": "",
+  "analysis": "题眼：“电话用户数”指移动与固定之和，要比逐年总数与上年的变化量。\n推导：总数：2008年11968，2009年12319，2010年12877，2012年15605，2013年17806，2014年17894。变化量：2009年+351，2010年+558，2013年17806−15605＝2201，2014年17894−17806＝88。2013年最大（移动电话当年就增加了2238，固定只减少37）。故正确答案为C。\n易错：2014年总数最高、移动与固定的差距也最大，若把“差距”理解成移动与固定之差会选D；本题的“差距”指与上年相比的变化量。图中纵轴单位印作“户”，按数值大小应为万户，对比较、增长率、倍数都没有影响。",
+  "verification": "/tmp/claude-0/-home-user-xing-ce1/532e1442-4812-52b3-a392-6d873e7b4a6c/scratchpad/m14s05_data2/s05.py：s05.py：总数增量2009—2014年为351、558、1063、1665、2201、88（选项中2013年最大，C）。",
+  "confidence": "high",
+  "prior_answer": "C",
+  "prior_note": "与来源答案一致（答案解析/2015年广东公务员考试《行测》真题乡镇卷答案及解析.pdf 第12页）。做本题前未见过其答案或解析页：盲解写完（S05/解题/data_blind.json）后才打开prior.json和该页。",
+  "issues": [
+   {
+    "where": "stem",
+    "old": "电话用户数与上年差距最大的年份",
+    "new": "电话用户总数（移动与固定之和）与上年相比增加最多的年份",
+    "reason": "“电话用户数”没有说明是移动与固定之和，“差距”也容易被读成移动与固定之差；改后含义唯一，答案不变"
+   }
+  ],
+  "replace_recommended": false,
+  "difficulty": "中",
+  "mode": "一步",
+  "est_seconds": 25,
+  "precision": "粗估",
+  "traps": [
+   "对象或范围",
+   "文字陷阱"
+  ],
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "rating_note": "2013年移动电话增量2238已大于其他年份的总增量，固定电话变化很小，直接比较即可。"
+ },
+ {
+  "id": "GD2015-XZ-Q090",
+  "number": 75,
+  "answer": "B",
+  "category": "资料分析",
+  "subcategory": "综合分析判断",
+  "basis_quantity": null,
+  "form": "",
+  "analysis": "题眼：选“不正确”的一项；C、D读图即可，B项要比较两年的减少量，先验C、D、B。\n推导：C项：移动电话用户8395、8951、9708、10793、12468、14706、14943，逐年增加，对；D项：固定电话3573、3368、3169、3147、3137、3100、2951，逐年减少，对；B项：减少量2009年3573−3368＝205，2010年3368−3169＝199，最大的是2009年而不是2010年，B不正确。（A项：移动电话增速2013年2238÷12468≈17.9%最高，对。）故正确答案为B。\n易错：205与199只差6，容易看错；若比的是“减少的比例”，2010年（5.9%）反而略高于2009年（5.7%），要分清“减少量”和“减少率”。图中纵轴单位印作“户”，按数值大小应为万户，对比较、增长率、倍数都没有影响。",
+  "verification": "/tmp/claude-0/-home-user-xing-ce1/532e1442-4812-52b3-a392-6d873e7b4a6c/scratchpad/m14s05_data2/s05.py：s05.py：固定减少量2009—2014年为205、199、22、10、37、149（B不正确）；移动增速6.6%、8.5%、11.2%、15.5%、17.9%、1.6%（A对）；固定减少率2009年5.74%、2010年5.91%。",
+  "confidence": "high",
+  "prior_answer": "B",
+  "prior_note": "与来源答案一致（答案解析/2015年广东公务员考试《行测》真题乡镇卷答案及解析.pdf 第13页）。做本题前未见过其答案或解析页：盲解写完（S05/解题/data_blind.json）后才打开prior.json和该页。",
+  "issues": [],
+  "replace_recommended": false,
+  "difficulty": "中",
+  "mode": "一步",
+  "est_seconds": 35,
+  "precision": "精算",
+  "traps": [
+   "其他：减少量与减少率"
+  ],
+  "options_to_check": 3,
+  "heaviest_option_mode": "一步",
+  "rating_note": "先读C、D（读），再比较B的两个减少量（一步），205与199只差3%。"
+ },
+ {
+  "id": "GK2015-DS-Q116",
+  "number": 76,
+  "answer": "D",
+  "category": "资料分析",
+  "subcategory": "现期量与简单计算",
+  "basis_quantity": null,
+  "form": "",
+  "analysis": "题眼：全省主营业务收入占全国的3.7%，由“部分÷占比”求全国；单位是亿元，选项是万亿元。\n推导：全国≈37864÷3.7%≈1023000（亿元）≈102.3（万亿元）。故正确答案为D。\n易错：漏掉亿元到万亿元的换算会差几个数量级；改用“上年占比3.4%”（3.7%−0.3个百分点）会算出约111万亿，是把现期占比与基期占比弄混。",
+  "verification": "/tmp/claude-0/-home-user-xing-ce1/532e1442-4812-52b3-a392-6d873e7b4a6c/scratchpad/m14s05_data2/s05.py：s05.py：37864÷0.037＝1,023,351亿元＝102.3万亿元（D）。",
+  "confidence": "high",
+  "prior_answer": "D",
+  "prior_note": "与来源答案一致（国考/答案解析/2015年国家公务员考试《行测》真题卷（地市级)答案及解析...pdf 第13页）。做本题前未见过其答案或解析页：盲解写完（S05/解题/data_blind.json）后才打开prior.json和该页。",
+  "issues": [
+   {
+    "where": "material",
+    "old": "3886元",
+    "new": "3886亿元",
+    "reason": "机械行业主营业务收入漏“亿”字（各行业收入单位均为亿元）"
+   },
+   {
+    "where": "material",
+    "old": "主营业收入5138亿元",
+    "new": "主营业务收入5138亿元",
+    "reason": "石化行业漏“务”字，与前后“主营业务收入”一致"
+   },
+   {
+    "where": "material",
+    "old": "汽车工业实现主营业务收入",
+    "new": "汽车行业实现主营业务收入",
+    "reason": "（可选）选项统称“汽车行业”，材料称“汽车工业”，用词统一；该处不影响作答"
+   }
+  ],
+  "replace_recommended": false,
+  "difficulty": "易",
+  "mode": "一步",
+  "est_seconds": 25,
+  "precision": "两位",
+  "traps": [
+   "单位"
+  ],
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "material_seconds": 90,
+  "material_note": "文字6段约850字，主营业务收入、税金、利润及各行业（汽车、食品、钢铁、石化、建材、机械）的数据与增速分散在各段，百分点、占比和同比放缓/减亏等说法较多。",
+  "rating_note": "一次除法加单位换算，97与102相差约5%。"
+ },
+ {
+  "id": "GK2015-DS-Q117",
+  "number": 77,
+  "answer": "A",
+  "category": "资料分析",
+  "subcategory": "增长率",
+  "basis_quantity": null,
+  "form": "",
+  "analysis": "题眼：全国增速＝全省增速−“高出全国”的百分点数；税金、利润各求一次，再作差，单位是百分点。\n推导：全国税金增速＝19.4%−8.4%＝11.0%；全国利润增速＝26.4%−14.2%＝12.2%。税金增速比利润增速低12.2−11.0＝1.2（个百分点）。故正确答案为A。\n易错：直接比全省两个增速（19.4%与26.4%，差7.0）会选C；把“高出的8.4、14.2”当成全国增速会选D附近；增速之差的单位是百分点。",
+  "verification": "/tmp/claude-0/-home-user-xing-ce1/532e1442-4812-52b3-a392-6d873e7b4a6c/scratchpad/m14s05_data2/s05.py：s05.py：全国税金增速19.4−8.4＝11.0%，全国利润增速26.4−14.2＝12.2%，差−1.2个百分点（A）。",
+  "confidence": "high",
+  "prior_answer": "A",
+  "prior_note": "与来源答案一致（国考/答案解析/2015年国家公务员考试《行测》真题卷（地市级)答案及解析...pdf 第13页）。做本题前未见过其答案或解析页：盲解写完（S05/解题/data_blind.json）后才打开prior.json和该页。",
+  "issues": [],
+  "replace_recommended": false,
+  "difficulty": "易",
+  "mode": "两步",
+  "est_seconds": 30,
+  "precision": "粗估",
+  "traps": [
+   "百分点与百分数",
+   "谁比谁"
+  ],
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "rating_note": "两次减法再比较，选项差距大。"
+ },
+ {
+  "id": "GK2015-DS-Q118",
+  "number": 78,
+  "answer": "B",
+  "category": "资料分析",
+  "subcategory": "比较排序",
+  "basis_quantity": "增长率",
+  "form": "",
+  "analysis": "题眼：比的是2013年各行业的“利润增速”，不是主营业务收入增速，也不是利润额。\n推导：读各段：建材51.6%，石化38.1%，机械23.8%，食品34.5%，汽车19.9%，钢铁18.8%。B项建材51.6%＞石化38.1%＞机械23.8%，顺序正确；A项石化与建材颠倒；C项汽车19.9%＜食品34.5%；D项汽车19.9%＞钢铁18.8%，顺序也不对。故正确答案为B。\n易错：把收入增速（建材27.1%、机械26.6%、石化18.8%）当成利润增速会选错；各段文字里收入增速和利润增速相邻，要看清“利润”。",
+  "verification": "/tmp/claude-0/-home-user-xing-ce1/532e1442-4812-52b3-a392-6d873e7b4a6c/scratchpad/m14s05_data2/s05.py：材料各段：利润增速建材51.6、石化38.1、食品34.5、机械23.8、汽车19.9、钢铁18.8（B）。",
+  "confidence": "high",
+  "prior_answer": "B",
+  "prior_note": "与来源答案一致（国考/答案解析/2015年国家公务员考试《行测》真题卷（地市级)答案及解析...pdf 第13页）。做本题前未见过其答案或解析页：盲解写完（S05/解题/data_blind.json）后才打开prior.json和该页。",
+  "issues": [
+   {
+    "where": "C",
+    "old": "汽车行业",
+    "new": "汽车工业",
+    "reason": "（可选）与材料“汽车工业”用词统一"
+   },
+   {
+    "where": "D",
+    "old": "汽车行业",
+    "new": "汽车工业",
+    "reason": "（可选）与材料“汽车工业”用词统一"
+   }
+  ],
+  "replace_recommended": false,
+  "difficulty": "易",
+  "mode": "读",
+  "est_seconds": 25,
+  "precision": "无",
+  "traps": [
+   "对象或范围"
+  ],
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "rating_note": "在各段里找出6个利润增速，直接排序。"
+ },
+ {
+  "id": "GK2015-DS-Q119",
+  "number": 79,
+  "answer": "D",
+  "category": "资料分析",
+  "subcategory": "综合分析判断",
+  "basis_quantity": null,
+  "form": "",
+  "analysis": "题眼：“能直接推出”，是看材料里的数据够不够算出该项，不要求真的算出来；先逐项找数据，D项数据齐全。\n推导：D项：百户重点企业利润＝全省利润2080×27.6%，主营业务收入＝全省收入37864×29.5%，销售利润率＝利润÷收入，数据齐全，可以算出（约5.1%）。A项要全国利润总额，材料只有全国利润增速的间接信息，没有总额；B项没有船舶行业的收入；C项只有橡胶塑料行业利润增长29.1%，没有利润金额。故正确答案为D。\n易错：A项看到“利润高出全国14.2个百分点”就以为能求占比，但那只能求全国增速，求不出全国利润总额；C项只有增速，没有金额，推不出。",
+  "verification": "/tmp/claude-0/-home-user-xing-ce1/532e1442-4812-52b3-a392-6d873e7b4a6c/scratchpad/m14s05_data2/s05.py：材料第一段：利润2080亿元、占比27.6%、主营业务收入37864亿元、占比29.5%，可算百户重点企业销售利润率≈574.1÷11169.9＝5.14%（D）；A、B、C所需的全国利润总额、船舶收入、橡胶塑料利润额材料均未给出。",
+  "confidence": "high",
+  "prior_answer": "D",
+  "prior_note": "与来源答案一致（国考/答案解析/2015年国家公务员考试《行测》真题卷（地市级)答案及解析...pdf 第13页）。做本题前未见过其答案或解析页：盲解写完（S05/解题/data_blind.json）后才打开prior.json和该页。",
+  "issues": [],
+  "replace_recommended": false,
+  "difficulty": "中",
+  "mode": "读",
+  "est_seconds": 40,
+  "precision": "无",
+  "traps": [
+   "推不出"
+  ],
+  "options_to_check": 4,
+  "heaviest_option_mode": "读",
+  "rating_note": "A、B、C依次找数据，材料中没有，D数据齐全；不用计算。"
+ },
+ {
+  "id": "GK2015-DS-Q120",
+  "number": 80,
+  "answer": "C",
+  "category": "资料分析",
+  "subcategory": "综合分析判断",
+  "basis_quantity": null,
+  "form": "",
+  "analysis": "题眼：选“能推出”的一项，A、D（一步）和B（占比与增速比较）先排除，剩C。\n推导：A项：2013年食品收入增速20.8%，“同比放缓9.2个百分点”，2012年增速＝20.8%+9.2%＝30.0%，不是11.6%，错；D项：2013年石油加工业净亏0.2亿元，同比减亏13.6亿元，则2012年亏损0.2+13.6＝13.8亿元，不是13.4亿元，错；B项：2013年汽车税金225.3÷1680≈13.4%，不到15%，且汽车税金增速50%＞全省税金增速19.4%，2012年占比更低，错；C项：2013年建材销售利润率167.2÷2412≈6.9%，2012年利润167.2÷1.516≈110.3亿元，收入2412÷1.271≈1898亿元，利润率≈5.8%，2013年更高，正确。故正确答案为C。\n易错：“放缓”要加回，“减亏”要加回，不要减；B项要用基期占比，不能直接用2013年占比比较。",
+  "verification": "/tmp/claude-0/-home-user-xing-ce1/532e1442-4812-52b3-a392-6d873e7b4a6c/scratchpad/m14s05_data2/s05.py：s05.py：A 20.8+9.2＝30.0%；B 225.3/1680＝13.4%（2012年约10.7%）；C 2013年6.93%、2012年5.81%；D 0.2+13.6＝13.8（C）。",
+  "confidence": "high",
+  "prior_answer": "C",
+  "prior_note": "与来源答案一致（国考/答案解析/2015年国家公务员考试《行测》真题卷（地市级)答案及解析...pdf 第14页）。做本题前未见过其答案或解析页：盲解写完（S05/解题/data_blind.json）后才打开prior.json和该页。",
+  "issues": [
+   {
+    "where": "B",
+    "old": "汽车行业",
+    "new": "汽车工业",
+    "reason": "（可选）与材料“汽车工业”用词统一"
+   }
+  ],
+  "replace_recommended": false,
+  "difficulty": "中",
+  "mode": "两步",
+  "est_seconds": 65,
+  "precision": "两位",
+  "traps": [
+   "基期年或年份跨度",
+   "文字陷阱"
+  ],
+  "options_to_check": 3,
+  "heaviest_option_mode": "两步",
+  "rating_note": "先排除A、D（一步加法）、B（占比与增速比较，两步），余下C，不必验。"
+ },
+ {
+  "id": "GK2016-DS-Q116",
+  "number": 81,
+  "answer": "A",
+  "category": "资料分析",
+  "subcategory": "平均数",
+  "basis_quantity": null,
+  "form": "",
+  "analysis": "题眼：平均每个公共图书馆月均流通人次＝全年总流通人次÷馆数÷12；总流通人次的单位是亿人次（图1左轴没有标单位，由题意和数据大小判断）。\n推导：2014年总流通人次5.30亿人次＝53000万人次，÷3117≈17.0（万人次/馆·年），÷12≈1.4（万）。故正确答案为A。\n易错：亿与万换算错一位会选B或D；漏除12会得17万；图1左轴无单位，要靠题意和图上“亿册次”的右轴判断是亿人次。",
+  "verification": "/tmp/claude-0/-home-user-xing-ce1/532e1442-4812-52b3-a392-6d873e7b4a6c/scratchpad/m14s05_data2/s05.py：s05.py：5.30e8÷3117÷12＝14170人次（A）。图1按原卷裁图核对：左轴无单位、右轴最下刻度印成“4”（应为0）。",
+  "confidence": "high",
+  "prior_answer": "A",
+  "prior_note": "与来源答案一致（国考/答案解析/2016年国家公务员考试《行测》真题卷（地市级）答案及解析...pdf 第17页）。做本题前未见过其答案或解析页：盲解写完（S05/解题/data_blind.json）后才打开prior.json和该页。",
+  "issues": [
+   "图1左轴未标单位，“总流通人次”应为“亿人次”（图片里的问题不能改，讲解里已提醒）；右轴自下而上刻度印成“4、1、2、3、4、5”，最下一格应为0（图片问题）；图2左轴也未标单位（平均每万人建筑面积应为平方米）。",
+   {
+    "where": "material",
+    "old": "年末全国共图书馆从业人员",
+    "new": "年末全国公共图书馆从业人员",
+    "reason": "疑漏“公”字（上文已有“公共图书馆3117个”），该数不影响本组作答"
+   },
+   {
+    "where": "material",
+    "old": "5.6％",
+    "new": "5.6%",
+    "reason": "全文百分号均为半角“%”，此处用了全角“％”，统一写法"
+   }
+  ],
+  "replace_recommended": false,
+  "difficulty": "易",
+  "mode": "两步",
+  "est_seconds": 35,
+  "precision": "粗估",
+  "traps": [
+   "单位"
+  ],
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "material_seconds": 55,
+  "material_note": "两句文字（图书馆个数、从业人员）加两张柱线组合图（流通人次、外借册次；馆均面积、人均藏量）以及一段2014年末各项增速的文字；左轴无单位、右轴刻度有误。",
+  "rating_note": "两次除法加单位换算，选项量级不同。"
+ },
+ {
+  "id": "GK2016-DS-Q117",
+  "number": 82,
+  "answer": "A",
+  "category": "资料分析",
+  "subcategory": "倍数",
+  "basis_quantity": "增长量",
+  "form": "",
+  "analysis": "题眼：问的是电子图书与图书总藏量各自“增长册数”（增长量）之比，增长量＝现期×r÷(1+r)，不是增速之比。\n推导：电子图书增长量＝50674×34.2%÷134.2%≈12917（万册）；图书总藏量增长量＝79092×5.6%÷105.6%≈4194（万册）；倍数≈12917÷4194≈3.1。故正确答案为A。\n易错：直接用现期×增速：50674×34.2%≈17330、79092×5.6%≈4429，比值≈3.9，会误选5；用增速之比34.2÷5.6≈6.1也不对；增长量要先还原基期。",
+  "verification": "/tmp/claude-0/-home-user-xing-ce1/532e1442-4812-52b3-a392-6d873e7b4a6c/scratchpad/m14s05_data2/s05.py：s05.py：12917÷4194＝3.08（A）；现期×增速之比3.91。",
+  "confidence": "high",
+  "prior_answer": "A",
+  "prior_note": "与来源答案一致（国考/答案解析/2016年国家公务员考试《行测》真题卷（地市级）答案及解析...pdf 第17页）。做本题前未见过其答案或解析页：盲解写完（S05/解题/data_blind.json）后才打开prior.json和该页。",
+  "issues": [],
+  "replace_recommended": false,
+  "difficulty": "中",
+  "mode": "三步及以上",
+  "est_seconds": 60,
+  "precision": "粗估",
+  "traps": [
+   "基期年或年份跨度",
+   "对象或范围"
+  ],
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "rating_note": "两个增长量各需“现期÷(1+r)×r”，再相除，共四五步；选项3与5相差较大，估算可用。"
+ },
+ {
+  "id": "GK2016-DS-Q118",
+  "number": 83,
+  "answer": "B",
+  "category": "资料分析",
+  "subcategory": "平均数",
+  "basis_quantity": null,
+  "form": "",
+  "analysis": "题眼：“平均每流通人次产生的外借册次”＝三年外借册次之和÷三年总流通人次之和（先求和再相除）。\n推导：2012～2014年书刊文献外借3.32+4.09+4.67＝12.08（亿册次）；总流通人次4.34+4.92+5.30＝14.56（亿人次）；12.08÷14.56≈0.83，约0.8。故正确答案为B。\n易错：除反会得1.2；图1两轴的单位不同（亿人次与亿册次），数值直接相除即可，但左轴无单位、右轴最下刻度印成“4”，别被图面误导。",
+  "verification": "/tmp/claude-0/-home-user-xing-ce1/532e1442-4812-52b3-a392-6d873e7b4a6c/scratchpad/m14s05_data2/s05.py：s05.py：(3.32+4.09+4.67)÷(4.34+4.92+5.30)＝0.830（B）；逐年比值0.765、0.831、0.881。",
+  "confidence": "high",
+  "prior_answer": "B",
+  "prior_note": "与来源答案一致（国考/答案解析/2016年国家公务员考试《行测》真题卷（地市级）答案及解析...pdf 第17页）。做本题前未见过其答案或解析页：盲解写完（S05/解题/data_blind.json）后才打开prior.json和该页。",
+  "issues": [],
+  "replace_recommended": false,
+  "difficulty": "易",
+  "mode": "两步",
+  "est_seconds": 40,
+  "precision": "粗估",
+  "traps": [
+   "单位",
+   "谁比谁"
+  ],
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "rating_note": "两组各三数相加，再一次除法；每年比值都在0.76—0.88之间，0.8最近。"
+ },
+ {
+  "id": "GK2016-DS-Q119",
+  "number": 84,
+  "answer": "C",
+  "category": "资料分析",
+  "subcategory": "增长率",
+  "basis_quantity": null,
+  "form": "",
+  "analysis": "题眼：“同比增速快于上年”的年份，要算出2007～2014年每年的增速（增量÷上年值），再与前一年比较；增量小、基数大时增速小。\n推导：增速：2007年0.01÷0.38≈2.6%，2008年0.02÷0.39≈5.1%，2009年0.03÷0.41≈7.3%，2010年0.02÷0.44≈4.5%，2011年0.01÷0.46≈2.2%，2012年0.04÷0.47≈8.5%，2013年0.04÷0.51≈7.8%，2014年0.03÷0.55≈5.5%。快于上年的是2008、2009、2012年，共3个。故正确答案为C。\n易错：2008年要和2007年比，漏算2007年会少一个；2013年与2012年增量同为0.04，但基数更大，增速反而更低。",
+  "verification": "/tmp/claude-0/-home-user-xing-ce1/532e1442-4812-52b3-a392-6d873e7b4a6c/scratchpad/m14s05_data2/s05.py：s05.py：增速2007—2014年为2.63%、5.13%、7.32%、4.55%、2.17%、8.51%、7.84%、5.45%；快于上年的年份2008、2009、2012（C）。",
+  "confidence": "high",
+  "prior_answer": "C",
+  "prior_note": "与来源答案一致（国考/答案解析/2016年国家公务员考试《行测》真题卷（地市级）答案及解析...pdf 第17页）。做本题前未见过其答案或解析页：盲解写完（S05/解题/data_blind.json）后才打开prior.json和该页。",
+  "issues": [],
+  "replace_recommended": false,
+  "difficulty": "中",
+  "mode": "三步及以上",
+  "est_seconds": 70,
+  "precision": "两位",
+  "traps": [
+   "基期年或年份跨度"
+  ],
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "rating_note": "要逐年算七八个增速（或用分子大分母小逐年比较）再数个数。"
+ },
+ {
+  "id": "GK2016-DS-Q120",
+  "number": 85,
+  "answer": "C",
+  "category": "资料分析",
+  "subcategory": "综合分析判断",
+  "basis_quantity": null,
+  "form": "",
+  "analysis": "题眼：选“能推出”的一项，先排除A、B、D（各一步），剩下C；注意“十一五”是2006～2010年，阅览室座席的单位是“万个”。\n推导：A项：2006～2010年总流通人次2.52+2.61+2.81+3.22+3.28＝14.44（亿），不到15亿，错；B项：85.55万个÷3117≈274个，不是二十多个，错；D项：平均每万人建筑面积的增量2008年58.7−56.1＝2.6、2011年73.8−67.1＝6.7，2008年较低，但人均藏量增量2008年0.41−0.39＝0.02，高于2011年0.47−0.46＝0.01，不是“均低于”，错；C项：增速最高的是2011年73.8÷67.1−1≈10.0%，其余年份更低，都低于12%，正确。故正确答案为C。\n易错：B项漏掉“万”，会算成27而误选；A项把“十一五”当成2007～2011年；D项要把两个增量都比，只比一个会误判。",
+  "verification": "/tmp/claude-0/-home-user-xing-ce1/532e1442-4812-52b3-a392-6d873e7b4a6c/scratchpad/m14s05_data2/s05.py：s05.py：A 14.44；B 274.5；C 各年增速2.56%、4.63%、8.52%、5.34%、9.99%、5.96%、8.82%、5.76%（均低于12%）；D 面积增量2.6＜6.7、藏量增量0.02＞0.01（C）。",
+  "confidence": "high",
+  "prior_answer": "C",
+  "prior_note": "与来源答案一致（国考/答案解析/2016年国家公务员考试《行测》真题卷（地市级）答案及解析...pdf 第17、18页）。做本题前未见过其答案或解析页：盲解写完（S05/解题/data_blind.json）后才打开prior.json和该页。",
+  "issues": [
+   {
+    "where": "D",
+    "old": "人均公共图书馆建筑面积",
+    "new": "平均每万人公共图书馆建筑面积",
+    "reason": "图中指标名为“平均每万人公共图书馆建筑面积”，选项写成“人均”，用词与图不一致"
+   }
+  ],
+  "replace_recommended": false,
+  "difficulty": "中",
+  "mode": "一步",
+  "est_seconds": 55,
+  "precision": "粗估",
+  "traps": [
+   "单位",
+   "基期年或年份跨度"
+  ],
+  "options_to_check": 3,
+  "heaviest_option_mode": "一步",
+  "rating_note": "A、B、D各一步排除，C不必验。"
+ },
+ {
+  "id": "GK2023-DS-Q111",
+  "number": 86,
+  "answer": "C",
+  "category": "资料分析",
+  "subcategory": "材料理解",
+  "basis_quantity": null,
+  "form": "",
+  "analysis": "题眼：数“四季度机动车依法礼让率高于三季度”的城市个数，逐市比较表中两行。\n推导：A 98.8＞98.0，B 98.8＞96.0，C 98.0＜99.2，D 99.6＞97.3，E 98.3＞96.5，F 98.2＞96.0，G 100.0＞94.8，H 99.3＞98.2；只有C下降，共7个。故正确答案为C。\n易错：看错行（把行人或非机动车的行当成礼让率）；数成8个，漏掉C。",
+  "verification": "/tmp/claude-0/-home-user-xing-ce1/532e1442-4812-52b3-a392-6d873e7b4a6c/scratchpad/m14s05_data2/s05.py：s05.py：逐市比较，四季度高于三季度的城市数＝7（C）。表格按原卷裁图核对，与转写一致。",
+  "confidence": "high",
+  "prior_answer": "C",
+  "prior_note": "与来源答案一致（国考/答案解析/2023年国家公务员录用考试《行测》真题（地市级）（解析）.pdf 第34页）。做本题前未见过其答案或解析页：盲解写完（S05/解题/data_blind.json）后才打开prior.json和该页。",
+  "issues": [
+   "本组为单表，转写与图一致，5题都没有改字。"
+  ],
+  "replace_recommended": false,
+  "difficulty": "易",
+  "mode": "读",
+  "est_seconds": 25,
+  "precision": "无",
+  "traps": [
+   "谁比谁"
+  ],
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "material_seconds": 40,
+  "material_note": "一张5项指标×2个季度×8个城市的守法率表（共80个数，单位%），没有文字，先弄清每项指标占两行。",
+  "rating_note": "八次两数大小比较，不用计算。"
+ },
+ {
+  "id": "GK2023-DS-Q112",
+  "number": 87,
+  "answer": "B",
+  "category": "资料分析",
+  "subcategory": "增长量",
+  "basis_quantity": null,
+  "form": "",
+  "analysis": "题眼：先找三季度“非机动车遵守交通信号灯率”一行的最低值及其城市，再看该城市四季度的数，作差，单位是百分点。\n推导：三季度该行最低的是G市90.9%；G市四季度98.2%，增长98.2−90.9＝7.3（个百分点），超过6个百分点。故正确答案为B。\n易错：看错行（机动车依法礼让率三季度最低的也是G市，但数值是94.8%）；把“百分点”当成“增长率”去除；E市91.8%也很低，别找错最小值。",
+  "verification": "/tmp/claude-0/-home-user-xing-ce1/532e1442-4812-52b3-a392-6d873e7b4a6c/scratchpad/m14s05_data2/s05.py：s05.py：最小值90.9（G市），四季度98.2，差7.3个百分点（B）。",
+  "confidence": "high",
+  "prior_answer": "B",
+  "prior_note": "与来源答案一致（国考/答案解析/2023年国家公务员录用考试《行测》真题（地市级）（解析）.pdf 第34页）。做本题前未见过其答案或解析页：盲解写完（S05/解题/data_blind.json）后才打开prior.json和该页。",
+  "issues": [],
+  "replace_recommended": false,
+  "difficulty": "易",
+  "mode": "一步",
+  "est_seconds": 25,
+  "precision": "粗估",
+  "traps": [
+   "百分点与百分数"
+  ],
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "rating_note": "找最小值，再作一次减法。"
+ },
+ {
+  "id": "GK2023-DS-Q113",
+  "number": 88,
+  "answer": "D",
+  "category": "资料分析",
+  "subcategory": "平均数",
+  "basis_quantity": null,
+  "form": "",
+  "analysis": "题眼：“求各市算术平均值”，则全省值的变化＝八个市变化量的平均，即各市四季度减三季度之和÷8。\n推导：安全带使用率四季度−三季度：A −0.4，B +2.3，C +2.0，D +1.2，E +7.3，F +3.0，G +6.3，H +0.6，合计22.3；平均≈2.79（个百分点），提升2个百分点以上。故正确答案为D。\n易错：A市下降0.4，不能据此判断全省下降；也可分别求两个季度的平均数（96.1%与98.89%）再相减，注意是百分点；E、G两市提升很大，把平均数拉高。",
+  "verification": "/tmp/claude-0/-home-user-xing-ce1/532e1442-4812-52b3-a392-6d873e7b4a6c/scratchpad/m14s05_data2/s05.py：s05.py：三季度平均96.10%，四季度平均98.89%，提升2.79个百分点（D）。",
+  "confidence": "high",
+  "prior_answer": "D",
+  "prior_note": "与来源答案一致（国考/答案解析/2023年国家公务员录用考试《行测》真题（地市级）（解析）.pdf 第35页）。做本题前未见过其答案或解析页：盲解写完（S05/解题/data_blind.json）后才打开prior.json和该页。",
+  "issues": [],
+  "replace_recommended": false,
+  "difficulty": "中",
+  "mode": "三步及以上",
+  "est_seconds": 55,
+  "precision": "粗估",
+  "traps": [
+   "百分点与百分数",
+   "平均数或比值的增长"
+  ],
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "rating_note": "八个差值相加再除以8（或分别求两个平均数再作差），再与2比较。"
+ },
+ {
+  "id": "GK2023-DS-Q114",
+  "number": 89,
+  "answer": "A",
+  "category": "资料分析",
+  "subcategory": "比较排序",
+  "basis_quantity": "增长量",
+  "form": "",
+  "analysis": "题眼：比较B市五项指标四季度比三季度的提高量，取最大；选项B“行人、非机动车”是两项。\n推导：B市：礼让98.8−96.0＝2.8；行人97.7−96.7＝1.0；非机动车98.0−96.7＝1.3；头盔98.4−96.0＝2.4；安全带98.8−96.5＝2.3。礼让提高最多（2.8），行人、非机动车两项平均约1.2。故正确答案为A。\n易错：头盔2.4、安全带2.3与2.8较接近，要算准；把行人、非机动车两项提高量相加（2.3）当成一项，仍不如2.8。",
+  "verification": "/tmp/claude-0/-home-user-xing-ce1/532e1442-4812-52b3-a392-6d873e7b4a6c/scratchpad/m14s05_data2/s05.py：s05.py：B市提高量礼让2.8、行人1.0、非机动车1.3、头盔2.4、安全带2.3（A）；按违规率的降幅比较礼让也最大。",
+  "confidence": "high",
+  "prior_answer": "A",
+  "prior_note": "与来源答案一致（国考/答案解析/2023年国家公务员录用考试《行测》真题（地市级）（解析）.pdf 第35页）。做本题前未见过其答案或解析页：盲解写完（S05/解题/data_blind.json）后才打开prior.json和该页。",
+  "issues": [],
+  "replace_recommended": false,
+  "difficulty": "中",
+  "mode": "两步",
+  "est_seconds": 45,
+  "precision": "两位",
+  "traps": [
+   "百分点与百分数"
+  ],
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "rating_note": "读五组数据各作一次减法再比较；2.8与2.4相差约17%。"
+ },
+ {
+  "id": "GK2023-DS-Q115",
+  "number": 90,
+  "answer": "B",
+  "category": "资料分析",
+  "subcategory": "图形选项",
+  "basis_quantity": null,
+  "form": "",
+  "analysis": "题眼：条形图的特征：安全带最长，行人次之，摩托车头盔与非机动车两条一样长，机动车礼让最短（条形无刻度，只看大小关系）。\n推导：先找“头盔佩戴率＝非机动车遵守信号灯率”的城市：E市98.9与99.3，F市98.8与98.8，G市95.6与98.2，H市99.0与99.4，只有F市相等。再验F市：礼让98.2＜头盔＝非机动车98.8＜行人99.0＜安全带99.1，与图一致。故正确答案为B。\n易错：E市礼让也是最低，但头盔与非机动车不相等；要同时满足“礼让最低、头盔＝非机动车、行人第二、安全带最高”。图中条形没有刻度，不能用长度反推数值。",
+  "verification": "/tmp/claude-0/-home-user-xing-ce1/532e1442-4812-52b3-a392-6d873e7b4a6c/scratchpad/m14s05_data2/s05.py：s05.py：四季度各市五项数据（见输出），仅F市头盔＝非机动车＝98.8且次序为安全带99.1＞行人99.0＞98.8＞礼让98.2（B）。题图（原卷裁图）条形无数值、无刻度。",
+  "confidence": "high",
+  "prior_answer": "B",
+  "prior_note": "与来源答案一致（国考/答案解析/2023年国家公务员录用考试《行测》真题（地市级）（解析）.pdf 第35页）。做本题前未见过其答案或解析页：盲解写完（S05/解题/data_blind.json）后才打开prior.json和该页。",
+  "issues": [
+   "题图条形没有刻度和数值，只能比较大小关系（图片问题，已在讲解里说明）。"
+  ],
+  "replace_recommended": false,
+  "difficulty": "中",
+  "mode": "读",
+  "est_seconds": 40,
+  "precision": "精算",
+  "traps": [
+   "其他：条形图无刻度，只比大小关系"
+  ],
+  "options_to_check": null,
+  "heaviest_option_mode": null,
+  "rating_note": "先扫“头盔＝非机动车”找出F市，再核对次序；F市行人99.0与安全带99.1只差0.1。"
+ }
+]
