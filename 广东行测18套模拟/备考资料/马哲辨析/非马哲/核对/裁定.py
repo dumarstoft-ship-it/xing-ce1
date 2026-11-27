@@ -154,7 +154,7 @@ def main():
     stem_fix = {}
     for f in sorted(HERE.glob("题干补限定_*.json")):
         for r in json.loads(f.read_text(encoding="utf-8")):
-            assert set(r["patch"]) <= {"lead", "stem"}, (f.name, r["id"])
+            assert set(r["patch"]) <= {"lead", "stem", "fix"}, (f.name, r["id"])
             stem_fix[r["id"]] = r
     checks = {}
     for f in sorted(HERE.glob("check_*_F*.json")):
@@ -194,6 +194,9 @@ def main():
         if d.get("why"):
             rec["note"] = d["why"]
         if d.get("patch"):
+            # 错题重练时，错误判断题会用 fix 当题干：改了题干限定就要同步改 fix
+            if q["type"] == "判断" and q["answer"] == "错误" and "stem" in d["patch"] and "fix" not in d["patch"]:
+                print(f"提醒：{i} 改了题干但没改 fix（重练时 fix 会当题干显示），请核对")
             new = apply(q, d["patch"])
             rec["override"] = {k: new[k] for k in new if new[k] != q.get(k)}
             if status == "采用" and new["type"] != "判断":
