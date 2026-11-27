@@ -127,6 +127,25 @@ def main():
             notes[qid] = f"{name}剔除：{why}"
     for qid, (v, why) in (adj.get("delta") or {}).items():
         delta[qid].append((v, f"人工：{why}"))
+    # 校准人读到的估值与现在的不一样时（估值人后来又改了一版）：校准/校准时的估值/<组>.json 留着校准人当时看到的那一版。
+    # 整组的加减分扣掉估值人自己已经调过的平均幅度；校准人单独点到的题，按它当时看到的分数加减。
+    seen_fix = {}
+    snap_dir = HERE / "校准" / "校准时的估值"
+    for sf in sorted(snap_dir.glob("*.json")) if snap_dir.exists() else []:
+        g = sf.stem
+        if ("MZ" if g in ("G1", "G2", "G3", "G4") else "FM") not in calib:      # 对应的校准还没有，不用调
+            continue
+        seen = {r["q"]: r["gain"] for r in json.loads(sf.read_text(encoding="utf-8"))["ranking"]}
+        cur = {q: r["gain"] for q, r in ranked.items() if r["group"] == g}
+        common = [q for q in seen if q in cur]
+        if not common:
+            continue
+        shift = sum(seen[q] - cur[q] for q in common) / len(common)      # 估值人后来平均又降了多少
+        group_delta[g] = group_delta.get(g, 0) + round(shift)
+        for q in common:
+            if q in delta and seen[q] != cur[q] and any(w.startswith(("MZ：", "FM：")) for _, w in delta[q]):
+                seen_fix[q] = seen[q] - cur[q] - round(shift)             # 这道题回到校准人看到的分数上再加减
+        print(f"{g}：估值人在校准人读取后又改了一版（平均{-shift:+.1f}分），整组加减分相应调整 {round(shift):+d}；单题按校准人所见分数处理 {len(seen_fix)} 道")
 
     rows = []
     for qid, r in ranked.items():
@@ -135,7 +154,7 @@ def main():
             continue
         bp = sum(mass.get(c, 0) for c in q["cards"])
         m = mod_of(q)
-        d = group_delta.get(r["group"], 0) + module_delta.get(m, 0) + sum(v for v, _ in delta.get(qid, []))
+        d = group_delta.get(r["group"], 0) + module_delta.get(m, 0) + sum(v for v, _ in delta.get(qid, [])) + seen_fix.get(qid, 0)
         rows.append({"id": qid, "mod": m, "module": q["module"], "cards": q["cards"], "type": q["type"], "kind": q.get("kind") or "",
                      "polarity": q.get("polarity") or "", "gain": r["gain"], "bp": round(bp, 3), "adj": d,
                      "score": round(r["gain"] + BP_WEIGHT * min(BP_CAP, bp) + d, 1), "group": r["group"], "rank": r["rank"],

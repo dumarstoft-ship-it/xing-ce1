@@ -403,44 +403,66 @@ def main():
 
     # ---------- unit_hits / analog_hits ----------
     def hit_table(field):
+        """field='units'：n、weighted、recent_n、years 只算直接命中，弱命中另记在 n_weak、weighted_weak；
+        field='analog_units'：同位命中，没有强弱之分。"""
         tab = collections.OrderedDict()
         for r in uniq:
             for u in r[field]:
-                weak = field == 'units' and u in r.get('weak_units', [])
-                tab.setdefault(u, []).append(collections.OrderedDict(
-                    [('id', r['id']), ('year', r['year']), ('weight', r['weight'])] + ([('weak', weak)] if field == 'units' else [])))
+                h = [('id', r['id']), ('year', r['year']), ('weight', r['weight'])]
+                if field == 'units':
+                    h += [('weak', u in r.get('weak_units', [])), ('currency', r['currency'])]
+                tab.setdefault(u, []).append(collections.OrderedDict(h))
         res = []
         for u, hits in tab.items():
             hits.sort(key=lambda h: (-h['year'], h['id']))
+            strong = [h for h in hits if not h.get('weak')]
+            weak = [h for h in hits if h.get('weak')]
             item = collections.OrderedDict([
                 ('unit', u), ('module', unit_module(u, cat)), ('priority', cat.get(u, {}).get('priority', '')),
                 ('title', cat.get(u, {}).get('title', '')),
-                ('n', len(hits)), ('weighted', r2(sum(h['weight'] for h in hits))),
+                ('n', len(strong)), ('weighted', r2(sum(h['weight'] for h in strong))),
             ])
             if field == 'units':
-                item['n_weak'] = sum(1 for h in hits if h['weak'])
-                item['weighted_strong'] = r2(sum(h['weight'] for h in hits if not h['weak']))
-            item['recent_n'] = sum(1 for h in hits if h['year'] in RECENT)
-            item['years'] = sorted({h['year'] for h in hits})
+                item['n_weak'] = len(weak)
+                item['weighted_weak'] = r2(sum(h['weight'] for h in weak))
+                item['recent_n_weak'] = sum(1 for h in weak if h['year'] in RECENT)
+                item['timely_only'] = bool(strong) and all(h['currency'] != '常青' for h in strong)
+            item['recent_n'] = sum(1 for h in strong if h['year'] in RECENT)
+            item['years'] = sorted({h['year'] for h in strong})
             item['hits'] = hits
             res.append(item)
         res.sort(key=lambda t: (-t['weighted'], -t['recent_n'], t['unit']))
-        for k, item in enumerate(res, 1):
-            item['rank'] = k
         return res
-    unit_hits = hit_table('units')
+    unit_rows = hit_table('units')                              # 有直接命中或弱命中的卡
+    unit_hits = [h for h in unit_rows if h['n']]                # 有直接命中的卡，按直接命中的加权排名
+    weak_only_hits = sorted([h for h in unit_rows if not h['n']], key=lambda t: (-t['weighted_weak'], t['unit']))
     analog_hits = hit_table('analog_units')
+    for tab in (unit_hits, analog_hits):
+        for k, item in enumerate(tab, 1):
+            item['rank'] = k
+    direct_set = {h['unit'] for h in unit_hits}
+    weak_only_set = {h['unit'] for h in weak_only_hits}
+    analog_set = {h['unit'] for h in analog_hits}
+    any_hit_units = direct_set | weak_only_set | analog_set     # 直接、弱、同位，沾到任何一样的卡
     out['unit_hits_summary'] = collections.OrderedDict([
         ('bank_units', len(cat)),
         ('units_direct_hit', len(unit_hits)), ('units_direct_hit_recent', sum(1 for h in unit_hits if h['recent_n'])),
-        ('units_direct_hit_strong', sum(1 for h in unit_hits if h['weighted_strong'] > 0)),
-        ('units_only_weak', [h['unit'] for h in unit_hits if h['weighted_strong'] == 0]),
+        ('units_only_weak', [h['unit'] for h in weak_only_hits]),
+        ('units_weak_hit', sum(1 for h in unit_rows if h['n_weak'])),
         ('units_analog_hit', len(analog_hits)), ('units_analog_hit_recent', sum(1 for h in analog_hits if h['recent_n'])),
-        ('units_any_hit', len({h['unit'] for h in unit_hits} | {h['unit'] for h in analog_hits})),
-        ('hit_pairs', sum(h['n'] for h in unit_hits)), ('weak_pairs', sum(h['n_weak'] for h in unit_hits)),
-        ('note', 'weak=True 的命中是“同一知识点，但题眼不在卡的陈述里”，weighted_strong 不计这些。'),
+        ('units_direct_and_analog', sorted(direct_set & analog_set)),
+        ('units_analog_not_direct', len(analog_set - direct_set)),
+        ('units_any_hit', len(any_hit_units)), ('units_untouched', len(cat) - len(any_hit_units)),
+        ('hit_pairs', sum(h['n'] for h in unit_hits)), ('weak_pairs', sum(h['n_weak'] for h in unit_rows)),
+        ('questions_direct_hit', sum(1 for r in uniq if strong_units(r))),
+        ('questions_only_weak', sum(1 for r in uniq if r['units'] and not strong_units(r))),
+        ('units_timely_only', [h['unit'] for h in unit_hits if h['timely_only']]),
+        ('note', '直接命中不含弱命中。units_only_weak 是只有弱命中的卡；units_analog_not_direct 是有同位命中、没有直接命中的卡（其中可以有弱命中）；'
+                 'units_untouched 是直接命中、弱命中、同位命中都没有的卡。hit_pairs、weak_pairs 是“题—卡”对应的条数。'
+                 'units_timely_only 是直接命中全部来自时效题的卡，按“时效题不会重出”，它们的加权不能读成考过还会考。'),
     ])
     out['unit_hits'] = unit_hits
+    out['weak_only_hits'] = weak_only_hits
     out['analog_hits'] = analog_hits
 
     # ---------- forms ----------
@@ -481,8 +503,7 @@ def main():
     def coverage(sub, weighted):
         cls = collections.OrderedDict((k, []) for k in ['直接命中', '只有弱命中', '只有同位卡', '同领域但题库无对应', '题库外领域'])
         for r in sub:
-            strong = [u for u in r['units'] if u not in r.get('weak_units', [])]
-            if strong:
+            if strong_units(r):
                 k = '直接命中'
             elif r['units']:
                 k = '只有弱命中'
@@ -508,8 +529,9 @@ def main():
         ('2024-2026', coverage(recent, False)),
         ('2022-2023', coverage([r for r in uniq if r['year'] in MID], False)),
         ('all_weighted', coverage(uniq, True)),
-        ('note', '每题只归一类：有直接命中的先归直接命中（全是弱命中的单列）；其余的，D9以后的归题库外领域（其中有同位卡的另记在 outside_with_analog），'
-                 'D1—D8 的有同位卡归“只有同位卡”，没有的归“同领域但题库无对应”。题库是做过近三年真题之后整理的，近三年的直接命中有事后补卡的成分。'),
+        ('note', '每题只归一类：有直接命中（不含弱命中）的先归直接命中；命中的卡全是弱命中的单列为“只有弱命中”，不算覆盖；其余的，D9以后的归题库外领域'
+                 '（其中有同位卡的另记在 outside_with_analog），D1—D8 的有同位卡归“只有同位卡”，没有的归“同领域但题库无对应”。'
+                 '题库是做过近三年真题之后整理的，近三年的直接命中有事后补卡的成分。'),
     ])
 
     # ---------- module_share ----------
@@ -532,34 +554,32 @@ def main():
         mods = M_MODULES if m == '马哲' else [m]
         return sum(bank_units[x] for x in mods), sum(bank_questions[x] for x in mods)
 
-    hit_by_mod = collections.defaultdict(lambda: {'units_hit': 0, 'units_hit_strong': 0, 'weighted': 0.0, 'recent_units_hit': 0})
+    # unit_hits 只含有直接命中的卡，所以下面按模块数出来的都是直接命中，弱命中另列
+    hit_by_mod = collections.defaultdict(lambda: {'units_hit': 0, 'weighted': 0.0, 'recent_units_hit': 0})
     for h in unit_hits:
         d = hit_by_mod[h['module']]
         d['units_hit'] += 1
-        d['units_hit_strong'] += 1 if h['weighted_strong'] > 0 else 0
         d['weighted'] += h['weighted']
         d['recent_units_hit'] += 1 if h['recent_n'] else 0
     ana_by_mod = collections.defaultdict(lambda: {'units_hit': 0, 'weighted': 0.0})
     for h in analog_hits:
         ana_by_mod[h['module']]['units_hit'] += 1
         ana_by_mod[h['module']]['weighted'] += h['weighted']
-    any_hit_units = {h['unit'] for h in unit_hits} | {h['unit'] for h in analog_hits}
 
     def touched(mods):
         return sum(1 for u in any_hit_units if unit_module(u, cat) in mods)
 
-    # 换一个角度：不看题目归在哪个领域，看它直接命中的卡属于哪个模块（一道题命中几张卡就平分）
+    # 换一个角度：不看题目归在哪个领域，看它直接命中的卡属于哪个模块（一道题直接命中几张卡就平分；弱命中不参加）
     hm_recent = collections.Counter()
     hm_all = collections.Counter()
     for r in uniq:
-        if not r['units']:
-            continue
-        for u in r['units']:
+        su = strong_units(r)
+        for u in su:
             mod = unit_module(u, cat)
             mod = '马哲' if mod in M_MODULES else mod
-            hm_all[mod] += r['weight'] / len(r['units'])
+            hm_all[mod] += r['weight'] / len(su)
             if r['year'] in RECENT:
-                hm_recent[mod] += 1.0 / len(r['units'])
+                hm_recent[mod] += 1.0 / len(su)
 
     modules = collections.OrderedDict()
     for m in MODULES + [OUTSIDE]:
@@ -578,8 +598,11 @@ def main():
             item['bank_questions'] = bq
             item['bank_questions_share'] = pct(bq, tot_bank_q)
             item['units_direct_hit'] = sum(hit_by_mod[x]['units_hit'] for x in mods)
+            item['units_direct_hit_share'] = pct(item['units_direct_hit'], bu)
             item['units_direct_hit_recent'] = sum(hit_by_mod[x]['recent_units_hit'] for x in mods)
+            item['units_only_weak'] = [h['unit'] for h in weak_only_hits if h['module'] in mods]
             item['units_analog_hit'] = sum(ana_by_mod[x]['units_hit'] for x in mods)
+            item['units_analog_not_direct'] = sum(1 for h in analog_hits if h['module'] in mods and h['unit'] not in direct_set)
             item['units_any_hit'] = touched(mods)
             item['units_never_hit'] = bu - item['units_any_hit']
             item['never_hit_units'] = [u for u, v in cat.items() if v['module'] in mods and u not in any_hit_units]
@@ -589,38 +612,66 @@ def main():
             item['weight_hitting_cards_share'] = pct(hm_all[m], total_w)
         modules[m] = item
 
-    # 马哲内部：按 unit_hits 里命中的 M 卡分。一道题命中几张 M 卡，就把这道题的权重平分给这几张卡，保证每道题只算一次。
-    frac_all = collections.Counter()      # 任何领域的题命中 M 卡
+    # 马哲内部：只按直接命中的 M 卡分，弱命中不参加分摊。
+    # 一道题直接命中几张 M 卡，就把这道题的权重平分给这几张卡，保证每道题只算一次；命中的 M 卡全是弱命中的题不进分摊，另列。
+    frac_all = collections.Counter()      # 任何领域的题直接命中 M 卡
     frac_d1 = collections.Counter()       # 只算 D1 的题
     frac_recent = collections.Counter()   # 近三年，按题数（不加权）
+    frac_recent_d1 = collections.Counter()
+    mz_recent_ids = collections.OrderedDict()     # 近三年直接命中 M 卡的题 -> 领域
+    mz_recent_weak_only = []                      # 近三年命中的 M 卡全是弱命中的题
     for r in uniq:
-        ms = [u for u in r['units'] if re.match(r'M\d\.', u)]
+        ms = [u for u in strong_units(r) if is_m(u)]
         if not ms:
+            if r['year'] in RECENT and any(is_m(u) for u in r['units']):
+                mz_recent_weak_only.append(r['id'])
             continue
+        if r['year'] in RECENT:
+            mz_recent_ids[r['id']] = r['domain']
         for u in ms:
             frac_all[u[:2]] += r['weight'] / len(ms)
             if r['domain'] == 'D1':
                 frac_d1[u[:2]] += r['weight'] / len(ms)
             if r['year'] in RECENT:
                 frac_recent[u[:2]] += 1.0 / len(ms)
+                if r['domain'] == 'D1':
+                    frac_recent_d1[u[:2]] += 1.0 / len(ms)
     tot_all, tot_d1, tot_rec = sum(frac_all.values()), sum(frac_d1.values()), sum(frac_recent.values())
     inner = collections.OrderedDict()
     for m in M_MODULES:
-        cards = [h for h in unit_hits if h['module'] == m]
+        cards = [h for h in unit_hits if h['module'] == m]          # 有直接命中的卡
+        weak_rows = [h for h in unit_rows if h['module'] == m and h['n_weak']]
         inner[m] = collections.OrderedDict([
             ('name', MODULE_NAME[m]),
             ('bank_units', bank_units[m]), ('bank_questions', bank_questions[m]),
             ('bank_questions_share_of_mazhe', pct(bank_questions[m], sum(bank_questions[x] for x in M_MODULES))),
+            ('bank_priority', dict(sorted(collections.Counter(v['priority'] for v in cat.values() if v['module'] == m).items()))),
             ('units_hit', len(cards)), ('units_hit_recent', sum(1 for h in cards if h['recent_n'])),
             ('hit_weighted_sum', r2(sum(h['weighted'] for h in cards))),
             ('hit_units', [h['unit'] for h in cards]),
-            ('hit_ids', sorted({x['id'] for h in cards for x in h['hits']})),
-            ('recent_hit_ids', sorted({x['id'] for h in cards for x in h['hits'] if x['year'] in RECENT})),
+            ('hit_units_recent', [h['unit'] for h in cards if h['recent_n']]),
+            ('hit_ids', sorted({x['id'] for h in cards for x in h['hits'] if not x['weak']})),
+            ('recent_hit_ids', sorted({x['id'] for h in cards for x in h['hits'] if not x['weak'] and x['year'] in RECENT})),
+            ('units_only_weak', [h['unit'] for h in weak_only_hits if h['module'] == m]),
+            ('weak_hits', ['%s←%s' % (h['unit'], x['id']) for h in weak_rows for x in h['hits'] if x['weak']]),
             ('weight_split', r2(frac_all[m])), ('split_share', pct(frac_all[m], tot_all)),
             ('share_all', round(modules['马哲']['share_all'] * frac_all[m] / tot_all + 1e-9, 1) if tot_all else 0.0),
-            ('d1_only_split_share', pct(frac_d1[m], tot_d1)),
+            ('d1_only_weight_split', r2(frac_d1[m])), ('d1_only_split_share', pct(frac_d1[m], tot_d1)),
             ('recent_split', r2(frac_recent[m])), ('recent_split_share', pct(frac_recent[m], tot_rec)),
+            ('recent_split_d1', r2(frac_recent_d1[m])),
         ])
+
+    # 马哲卡按档次：题库各档多少张，近三年、全部年份直接命中的各多少张
+    mz_bank_pri = collections.Counter(v['priority'] for v in cat.values() if v['module'] in M_MODULES)
+    mz_cards = [h for h in unit_hits if h['module'] in M_MODULES]
+    mz_pri_recent = collections.Counter(h['priority'] for h in mz_cards if h['recent_n'])
+    mz_pri_all = collections.Counter(h['priority'] for h in mz_cards)
+    mazhe_priority = collections.OrderedDict(
+        (p, collections.OrderedDict([
+            ('bank_units', mz_bank_pri[p]),
+            ('hit_recent', mz_pri_recent[p]), ('hit_recent_share', pct(mz_pri_recent[p], mz_bank_pri[p])),
+            ('hit_all', mz_pri_all[p]), ('hit_all_share', pct(mz_pri_all[p], mz_bank_pri[p])),
+        ])) for p in sorted(mz_bank_pri))
     out['module_share'] = collections.OrderedDict([
         ('modules', modules),
         ('bank_total', {'units': tot_bank_units, 'questions': tot_bank_q}),
@@ -633,10 +684,17 @@ def main():
         ('recent_types_by_module', collections.OrderedDict(
             (m, dict(collections.Counter(r['type'] for r in recent if mod_of(r) == m))) for m in MODULES + [OUTSIDE])),
         ('mazhe_inner', inner),
-        ('mazhe_inner_note', 'weight_split：命中 M 卡的每道题把自己的权重平分给它命中的几张 M 卡，再按模块相加（含 D2、D7 里命中 M 卡的题）；'
+        ('mazhe_inner_note', '全部只算直接命中，弱命中不参加分摊（另记在各模块的 units_only_weak、weak_hits）。'
+                             'weight_split：直接命中 M 卡的每道题把自己的权重平分给它直接命中的几张 M 卡，再按模块相加（含 D2、D7 里命中 M 卡的题）；'
                              'split_share 是各模块占这个总数的比例；share_all = 马哲在全部真题中的加权占比 × split_share；'
-                             'd1_only_split_share 只算归在 D1 的题；recent_split 是近三年按题数（不加权）的同样算法。'),
-        ('mazhe_hit_weight_total', r2(tot_all)), ('mazhe_recent_hit_questions', r2(tot_rec)),
+                             'd1_only_split_share 只算归在 D1 的题；recent_split 是近三年按题数（不加权）的同样算法，recent_split_d1 只算其中归在 D1 的题。'),
+        ('mazhe_hit_weight_total', r2(tot_all)), ('mazhe_d1_hit_weight_total', r2(tot_d1)),
+        ('mazhe_recent_hit_questions', r2(tot_rec)),
+        ('mazhe_recent_hit_ids', mz_recent_ids),
+        ('mazhe_recent_hit_by_domain', dict(sorted(collections.Counter(mz_recent_ids.values()).items()))),
+        ('mazhe_recent_weak_only_ids', mz_recent_weak_only),
+        ('mazhe_priority', mazhe_priority),
+        ('mazhe_priority_note', '档次取知识点目录（A、B）。hit_recent 是近三年被直接命中过的卡数，hit_all 是全部年份。档次是做过真题之后定的，有事后成分。'),
     ])
 
     # ---------- currency ----------
