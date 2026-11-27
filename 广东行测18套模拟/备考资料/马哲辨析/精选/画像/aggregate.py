@@ -104,6 +104,27 @@ def pct(part, whole):
     return round(100.0 * part / whole + 1e-9, 1) if whole else 0.0
 
 
+def strong_units(r):
+    """直接命中的卡：units 里不在 weak_units 的。"""
+    weak = r.get('weak_units') or []
+    return [u for u in r['units'] if u not in weak]
+
+
+def weak_units(r):
+    """弱命中的卡（按 units 里的顺序）。"""
+    weak = r.get('weak_units') or []
+    return [u for u in r['units'] if u in weak]
+
+
+def is_m(u):
+    return re.match(r'M\d\.', u) is not None
+
+
+def done_by_user(qid):
+    """题库里收的近三年真题原题，用户已经做过，不再入选。"""
+    return qid[:6] in ('GD2024', 'GD2025', 'GD2026')
+
+
 def unit_module(uid, cat):
     if uid in cat:
         return cat[uid]['module']
@@ -150,6 +171,49 @@ def load_bank_sizes(cat):
     return units, questions, forms, kinds
 
 
+def load_bank_selectable():
+    """题库里哪些题可选。用户做过的近三年真题原题不再入选（按题号前缀认）；标了暂停出题的题另列。
+    每题只算在主知识点上。题库文件缺了就返回空表。"""
+    qs = collections.OrderedDict()
+    unit_qs = collections.OrderedDict()            # 卡 -> 以它为主知识点的题
+    for path in sorted(glob.glob(BANK_GLOB)):
+        for u in json.load(open(path, encoding='utf-8')).get('units', []):
+            unit_qs.setdefault(u['id'], [])
+            for q in u.get('questions', []):
+                if q.get('primary') and q['id'] not in qs:
+                    qs[q['id']] = {'unit': u['id'], 'mazhe': u['module'] in M_MODULES, 'type': q.get('type', ''),
+                                   'kind': q.get('kind', ''), 'hold': bool(q.get('hold'))}
+                    unit_qs[u['id']].append(q['id'])
+    if not qs:
+        return collections.OrderedDict()
+    done = [i for i in qs if done_by_user(i)]
+    hold = [i for i, q in qs.items() if q['hold'] and not done_by_user(i)]
+    can = [i for i in qs if not done_by_user(i)]                 # 去掉做过的真题
+    can2 = [i for i in can if not qs[i]['hold']]                 # 再去掉暂停出题的
+
+    def count(ids):
+        return collections.OrderedDict([
+            ('n', len(ids)), ('mazhe', sum(1 for i in ids if qs[i]['mazhe'])),
+            ('mazhe_multi', sum(1 for i in ids if qs[i]['mazhe'] and qs[i]['type'] == '多选')),
+            ('mazhe_basic_judge', sum(1 for i in ids if qs[i]['mazhe'] and qs[i]['kind'] == '基础判断')),
+        ])
+    return collections.OrderedDict([
+        ('questions', count(list(qs))),
+        ('done_recent_real', collections.OrderedDict([
+            ('n', len(done)), ('ids', sorted(done)), ('types', dict(collections.Counter(qs[i]['type'] for i in done))),
+            ('mazhe', sum(1 for i in done if qs[i]['mazhe']))])),
+        ('hold', collections.OrderedDict([
+            ('n', len(hold)), ('ids', hold), ('units', sorted({qs[i]['unit'] for i in hold})),
+            ('mazhe', sum(1 for i in hold if qs[i]['mazhe']))])),
+        ('selectable', count(can)),
+        ('selectable_excl_hold', count(can2)),
+        ('units_without_question', [u for u, v in unit_qs.items() if not v]),
+        ('units_without_selectable_question', [u for u, v in unit_qs.items() if not set(v) & set(can2)]),
+        ('note', '每题只算在主知识点上。selectable 去掉了用户做过的2024—2026年真题原题；selectable_excl_hold 再去掉标了暂停出题的题（选题脚本同样不取）。'
+                 'units_without_question 是题库里没有以它为主知识点的题的卡；units_without_selectable_question 把只剩暂停出题的卡也算上。'),
+    ])
+
+
 def main():
     rows = json.load(open(MERGED, encoding='utf-8'))
     cat = load_catalog()
@@ -173,6 +237,9 @@ def main():
         ('n_recent', len(recent)),
         ('total_weight', r2(total_w)),
         ('weight_rule', '年份权重：2024—2026年为3，2022—2023年为2，2019—2021年为1，2013—2018年为0.5；选调生卷再乘0.5；重复题记0'),
+        ('hit_rule', '直接命中 = merged.json 里 units 去掉 weak_units 之后的卡（学了这张卡对答这道题有实质帮助）；'
+                     '弱命中 = weak_units（同一知识点，但学了那张卡仍答不出那道题），单独统计，不进直接命中的卡数、题数、加权、分摊和覆盖率；'
+                     '同位命中 = analog_units。本文件里不带 weak 字样的 n、weighted、recent_n、units_hit、units_direct_hit 等都只算直接命中。'),
         ('weight_by_period', collections.OrderedDict(
             (name, {'n': sum(1 for r in uniq if r['year'] in yrs), 'weight': r2(sum(r['weight'] for r in uniq if r['year'] in yrs)),
                     'share': pct(sum(r['weight'] for r in uniq if r['year'] in yrs), total_w)}) for name, yrs in PERIODS)),
