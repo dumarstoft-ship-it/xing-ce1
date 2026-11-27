@@ -10,6 +10,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[2]
 DRAFT = ROOT / "学习资料/政治理论常识/马哲概念辨析训练底稿.json"
+DRAFT_FM = ROOT / "学习资料/政治理论常识/非马哲政治理论与广东常识训练底稿_2026-11-27.json"   # GPT整理的非马哲底稿
 OUT = HERE / "site"
 
 
@@ -86,15 +87,59 @@ def main():
         n_real += 1
     assert len({q["id"] for q in questions}) == len(questions)
 
+    # ---------- 政常（非马哲）：GPT底稿的知识块 ＋ 核对后的新题 ----------
+    fm = json.loads(DRAFT_FM.read_text(encoding="utf-8"))
+    blocks = [{"id": r["id"], "module_id": r["module"], "title": r["title"], "priority": r["priority"],
+               "new": r.get("content_origin") == "new", "correct": r["correct"], "why": r.get("why") or "",
+               "contrasts": r.get("contrasts") or [], "question_design": r.get("question_design") or "",
+               "related_ids": r.get("related_ids") or [], "source_ids": r.get("source_ids") or [],
+               "exam_eligible": r.get("exam_eligible", True)} for r in fm["records"]]
+    block_ids = {b["id"] for b in blocks}
+    fkeep_f = HERE / "非马哲" / "核对" / "采用.json"
+    fkeep = json.loads(fkeep_f.read_text(encoding="utf-8")) if fkeep_f.exists() else {}
+    n_fm = n_fm_pending = 0
+    for f in sorted((HERE / "非马哲" / "新题").glob("F*.json")):
+        for q in json.loads(f.read_text(encoding="utf-8")):
+            k = fkeep.get(q["id"])
+            if not k or k.get("status") not in ("采用", "待审"):
+                continue
+            q = {**q, **(k.get("override") or {})}
+            assert set(q["knowledge_ids"]) <= block_ids, (q["id"], q["knowledge_ids"])
+            t = q["type"]
+            if t == "判断":
+                assert q["answer"] in ("正确", "错误") and not q.get("options"), q["id"]
+                assert q["answer"] == "正确" or q.get("fix"), q["id"]
+            else:
+                nc = sum(1 for o in q["options"] if o["correct"])
+                assert t in ("单选", "多选") and (nc == 1 if t == "单选" else 2 <= nc <= 4) and all(o.get("why") for o in q["options"]), q["id"]
+            review = (k.get("review") or q.get("review") or "") if k.get("status") == "待审" else ""
+            questions.append({"id": q["id"], "bank": "fm", "src": "政常", "kind": "政常新题", "type": t, "form": q.get("form") or "",
+                              "module": q["module"], "cards": q["knowledge_ids"], "lead": q.get("lead") or "", "stem": q["stem"],
+                              "opts": [{"text": o["text"], "correct": bool(o["correct"]), "why": o["why"]} for o in (q.get("options") or [])],
+                              "answer": q.get("answer") if t == "判断" else "", "fix": q.get("fix") or "", "explain": q.get("explain") or "",
+                              "condition": q.get("condition") or "", "refs": q.get("source_ids") or [], "origin": q.get("origin") or "自编",
+                              "review": review})
+            n_fm += 1
+            n_fm_pending += bool(review)
+    assert len({q["id"] for q in questions}) == len(questions)
+
     meta = {"title": d["title"], "prepared_on": d["prepared_on"],
             "modules": [{"id": m["id"], "title": m["title"]} for m in d["modules"]],
             "appendices": d["appendices"], "sources": d["sources"],
-            "learning_context": d["learning_context"], "counts": {"cards": len(cards), "base": len(questions) - n_new - n_real, "new": n_new, "real": n_real}}
+            "learning_context": d["learning_context"],
+            "counts": {"cards": len(cards), "base": len(questions) - n_new - n_real - n_fm, "new": n_new, "real": n_real,
+                       "blocks": len(blocks), "fm": n_fm, "fm_pending": n_fm_pending},
+            "fm_modules": [{"id": m, "title": fm["modules"][m]} for m in fm["module_order"]],
+            "fm_sources": {k: {"title": v.get("title", k), "url": v.get("url", ""), "publication_date": v.get("publication_date", "")}
+                           for k, v in fm["sources"].items()},
+            "fm_profiles": {"new_focus": fm["training_profiles"]["new_focus"]["ids"], "all_core": fm["training_profiles"]["all_core"]["ids"]},
+            "fm_cutoff": fm.get("evidence_cutoff", "")}
     OUT.mkdir(exist_ok=True)
     (OUT / "cards.json").write_text(lines(cards), encoding="utf-8")
     (OUT / "questions.json").write_text(lines(questions), encoding="utf-8")
+    (OUT / "blocks.json").write_text(lines(blocks), encoding="utf-8")
     (OUT / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    print("cards", len(cards), "questions", len(questions), "new", n_new, "real", n_real)
+    print("cards", len(cards), "questions", len(questions), "new", n_new, "real", n_real, "blocks", len(blocks), "fm", n_fm, "fm_pending", n_fm_pending)
 
 
 if __name__ == "__main__":

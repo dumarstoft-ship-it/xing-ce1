@@ -252,6 +252,790 @@
   "cards": 171,
   "base": 342,
   "new": 68,
-  "real": 10
- }
+  "real": 10,
+  "blocks": 133,
+  "fm": 0,
+  "fm_pending": 0
+ },
+ "fm_modules": [
+  {
+   "id": "P3",
+   "title": "政绩观、自我革命与党的建设"
+  },
+  {
+   "id": "P1",
+   "title": "新思想概念组与文化"
+  },
+  {
+   "id": "P2",
+   "title": "发展理论、产业与生态关系"
+  },
+  {
+   "id": "P4",
+   "title": "中央到省的制度、会议与规划"
+  },
+  {
+   "id": "H",
+   "title": "精选党史、著作与改革节点"
+  },
+  {
+   "id": "LAW",
+   "title": "法律结构、法典化与新法"
+  },
+  {
+   "id": "GD",
+   "title": "2026广东重要事项"
+  }
+ ],
+ "fm_sources": {
+  "T20": {
+   "title": "习近平在中国共产党第二十次全国代表大会上的报告",
+   "url": "https://cpc.people.com.cn/GB/64162/448633/",
+   "publication_date": "2022-10-16"
+  },
+  "T6": {
+   "title": "“六个必须坚持”",
+   "url": "https://www.12371.cn/2023/11/28/STUD1701138144532887.shtml",
+   "publication_date": "2023-11-28"
+  },
+  "T2026Z": {
+   "title": "中办通知：在全党开展树立和践行正确政绩观学习教育",
+   "url": "https://www.moe.gov.cn/jyb_xwfb/s6052/moe_838/202602/t20260224_1429152.html",
+   "publication_date": "2026-02-23"
+  },
+  "TZG": {
+   "title": "习近平：树立和践行正确政绩观",
+   "url": "https://www.moe.gov.cn/jyb_xwfb/moe_176/202603/t20260331_1432584.html",
+   "publication_date": "2026-03-31"
+  },
+  "TGONG": {
+   "title": "把握政绩观的“无我”与“有我”",
+   "url": "https://www.qstheory.cn/20260401/027f3dfc342c47259211ff15b1fcdb19/c.html",
+   "publication_date": "2026-04-01"
+  },
+  "TPL5": {
+   "title": "中国共产党第二十届中央委员会第五次全体会议公报",
+   "url": "https://nmca.miit.gov.cn/wzpz/tpxw/art/2026/art_2811c4981dfe4aa8ac909d06c50d496d.html",
+   "publication_date": "2026-10-29"
+  },
+  "TPL5DEC": {
+   "title": "中共中央关于持之以恒推进全面从严治党若干重大问题的决定",
+   "url": "https://www.miit.gov.cn/ztzl/rdzt/xxgcddesjwzqhjs/qhjs/art/2026/art_4d6f71846f1c4a3fa8ce06a8a8a0ef9c.html",
+   "publication_date": null
+  },
+  "TCULT": {
+   "title": "在文化传承发展座谈会上的讲话",
+   "url": "https://dangjian.people.com.cn/n1/2023/0831/c117092-40067895.html",
+   "publication_date": "2023-08-31"
+  },
+  "TPARTY": {
+   "title": "中国共产党章程（2022年修改）",
+   "url": "https://www.miit.gov.cn/xwdt/szyw/art/2022/art_870a5469839a4b5bb65857894642b2a0.html",
+   "publication_date": "2022-10-26"
+  },
+  "TDEV": {
+   "title": "关于习近平经济思想若干重大理论观点的思考",
+   "url": "https://www.ndrc.gov.cn/wsdwhfz/202403/t20240329_1365346_ext.html",
+   "publication_date": "2024-03-29"
+  },
+  "TNEWQ": {
+   "title": "习近平：发展新质生产力是推动高质量发展的内在要求和重要着力点",
+   "url": "https://www.moe.gov.cn/jyb_xwfb/moe_176/202405/t20240531_1133413.html",
+   "publication_date": "2024-05-31"
+  },
+  "TNEW26": {
+   "title": "中共中央 国务院关于发展新质生产力的意见",
+   "url": "https://www.mee.gov.cn/zcwj/zyygwj/202610/t20261014_1182955.shtml",
+   "publication_date": "2026-10-14"
+  },
+  "TEDU": {
+   "title": "党的二十大报告学习辅导百问第44问",
+   "url": "https://www.ndrc.gov.cn/fggz/gbzj/xxyd/202304/t20230428_1355372_ext.html",
+   "publication_date": "2023-04-28"
+  },
+  "T15": {
+   "title": "中华人民共和国国民经济和社会发展第十五个五年规划纲要",
+   "url": "https://www.locpg.gov.cn/20260314/4cab36f71ce14e90957ccd9cebbaf60c/c.html",
+   "publication_date": "2026-03-14"
+  },
+  "TMID": {
+   "title": "制造业中试创新发展实施意见解读",
+   "url": "https://www.miit.gov.cn/jgsj/kjs/jscx/zlpp/art/2024/art_d6b9ba16a7264863bce5ac4ae7b0a89e.html",
+   "publication_date": "2024-01-23"
+  },
+  "TPAT": {
+   "title": "国家发展改革委介绍促进创业投资高质量发展相关情况",
+   "url": "https://www.ndrc.gov.cn/fzggw/wld/lichunlin/zyhd/202406/t20240627_1391337.html",
+   "publication_date": "2024-06-27"
+  },
+  "TMARKET": {
+   "title": "中共中央 国务院关于加快建设全国统一大市场的意见",
+   "url": "https://www.miit.gov.cn/xwdt/szyw/art/2022/art_59c550172b79453fa0aa33bcca1bf97a.html",
+   "publication_date": "2022-04-10"
+  },
+  "TPEOPLEINV": {
+   "title": "深入理解以人民为中心的发展思想",
+   "url": "https://www.ndrc.gov.cn/wsdwhfz/202608/t20260813_1406989_ext.html",
+   "publication_date": "2026-08-13"
+  },
+  "TEDU25": {
+   "title": "开栏的话：强化教育对科技和人才的支撑作用",
+   "url": "https://www.moe.gov.cn/jyb_xwfb/xw_zt/moe_357/2025/2025_zt18/qhjydkjhrcdzy/kldh/202511/t20251118_1420776.html",
+   "publication_date": "2025-11-18"
+  },
+  "TSHOU": {
+   "title": "守正创新是进一步全面深化改革必须坚守的重大原则",
+   "url": "https://www.12371.cn/2024/12/01/ARTI1733018330645473.shtml",
+   "publication_date": "2024-12-01"
+  },
+  "ICONST": {
+   "title": "中华人民共和国宪法（2018年修正文本）",
+   "url": "https://www.samr.gov.cn/jjz/djfg/gjflfg/art/2023/art_3c7e4c52d64a4f849ffb578e7fb167c5.html",
+   "publication_date": "2018-03-11"
+  },
+  "ILOCAL": {
+   "title": "中华人民共和国地方各级人民代表大会和地方各级人民政府组织法（2022年修正）",
+   "url": "https://www.12371.cn/2022/03/12/ARTI1647046378091154.shtml",
+   "publication_date": "2022-03-12"
+  },
+  "ICPPCC": {
+   "title": "中国人民政治协商会议章程（2023年修改）",
+   "url": "https://www.12371.cn/2023/03/18/ARTI1679141082668580.shtml",
+   "publication_date": "2023-03-18"
+  },
+  "ILPARTY": {
+   "title": "中国共产党地方委员会工作条例（2026年修订）",
+   "url": "https://www.12371.cn/2026/11/15/ARTI1794733305031902.shtml",
+   "publication_date": "2026-11-15"
+  },
+  "IPOLLAW": {
+   "title": "中国共产党政法工作条例",
+   "url": "https://www.court.gov.cn/zixun/xiangqing/139871.html",
+   "publication_date": "2019-01-18"
+  },
+  "ICCDI": {
+   "title": "中国共产党纪律检查委员会工作条例",
+   "url": "https://www.ccdi.gov.cn/toutiaon/202201/t20220104_162161.html",
+   "publication_date": "2022-01-04"
+  },
+  "IPLAN": {
+   "title": "中华人民共和国国家发展规划法",
+   "url": "https://qspfw.moe.gov.cn/html/sublaws/20260313/23924.html",
+   "publication_date": "2026-03-12"
+  },
+  "IPLEN1": {
+   "title": "二十届一中全会公报",
+   "url": "https://www.12371.cn/2022/10/23/ARTI1666499465185426.shtml",
+   "publication_date": "2022-10-23"
+  },
+  "IPLEN2": {
+   "title": "二十届二中全会公报",
+   "url": "https://www.miit.gov.cn/xwdt/szyw/art/2023/art_0122da39cf08494eba1a6ebe14652cfa.html",
+   "publication_date": "2023-02-28"
+  },
+  "IPLEN3": {
+   "title": "二十届三中全会公报",
+   "url": "https://www.12371.cn/2024/07/18/ARTI1721291343859528.shtml",
+   "publication_date": "2024-07-18"
+  },
+  "IPLEN4": {
+   "title": "二十届四中全会公报",
+   "url": "https://www.miit.gov.cn/ztzl/rdzt/xxgcddesjszqhjs/qhjs/art/2025/art_9b27567fff9a4fa89a6e18c7c7132daf.html",
+   "publication_date": "2025-10-23"
+  },
+  "IGD4": {
+   "title": "广东省十四届人大四次会议相关报道",
+   "url": "https://www.gdjct.gd.gov.cn/ttxw/content/post_207962.html",
+   "publication_date": "2025-10"
+  },
+  "IGD5": {
+   "title": "广东省十四届人大五次会议批准十五五规划纲要",
+   "url": "https://www.gdtzb.gov.cn/yw/gd/content/mpost_104559.html",
+   "publication_date": "2026-01-29"
+  },
+  "I1310": {
+   "title": "省委十三届三次全会：锚定一个目标、激活三大动力、奋力实现十大新突破",
+   "url": "https://www.sz.gov.cn/cn/xxgk/zfxxgj/zwdt/content/post_10662907.html",
+   "publication_date": "2023-06-20"
+  },
+  "I2029": {
+   "title": "三中全会决定相关学习材料：到2029年完成改革任务",
+   "url": "https://www.12371.cn/2024/07/25/ARTI1721870555875555.shtml",
+   "publication_date": "2024-07-25"
+  },
+  "GCARBON": {
+   "title": "加快构建碳排放双控制度体系工作方案",
+   "url": "https://www.mee.gov.cn/zcwj/gwywj/202408/t20240806_1083433.shtml",
+   "publication_date": "2024-08-06"
+  },
+  "GPEAK26": {
+   "title": "国务院关于印发十五五碳达峰行动方案的通知",
+   "url": "https://www.mee.gov.cn/zcwj/gwywj/202607/t20260714_1161655.shtml",
+   "publication_date": "2026-07-14"
+  },
+  "GWATER": {
+   "title": "关于进一步加强水资源节约集约利用的意见",
+   "url": "https://www.ndrc.gov.cn/xxgk/zcfb/tz/202309/t20230922_1360777.html",
+   "publication_date": "2023-09-22"
+  },
+  "GWATER2": {
+   "title": "水利部发展研究中心：两手发力专题",
+   "url": "https://www.waterinfo.com.cn/zt/lsfl/",
+   "publication_date": null
+  },
+  "GCARBDEF": {
+   "title": "中国应对气候变化的政策与行动白皮书",
+   "url": "https://www.mee.gov.cn/zcwj/gwywj/202110/t20211027_958030.shtml",
+   "publication_date": "2021-10-27"
+  },
+  "G15SUG": {
+   "title": "中共中央关于制定国民经济和社会发展第十五个五年规划的建议",
+   "url": "https://jx.mof.gov.cn/xxgk/zhengcefagui/202512/t20251215_3979166.htm",
+   "publication_date": "2025-12-15"
+  },
+  "HS01": {
+   "title": "中共中央关于党的百年奋斗重大成就和历史经验的决议（2021年）",
+   "url": "https://www.miit.gov.cn/xwdt/szyw/art/2021/art_78a094259245416f951f998cd224d65b.html",
+   "publication_date": "2021-11-16"
+  },
+  "HS02": {
+   "title": "中国共产党一百年大事记（1921年7月—2021年6月）",
+   "url": "https://www.12371.cn/2021/06/28/ARTI1624828749818652.shtml",
+   "publication_date": "2021-06-28"
+  },
+  "HS03": {
+   "title": "中国共产党第一次全国代表大会",
+   "url": "https://www.12371.cn/special/lcddh/ddh1/",
+   "publication_date": null
+  },
+  "HS04": {
+   "title": "中国共产党第二次全国代表大会",
+   "url": "https://www.12371.cn/special/lcddh/ddh2/",
+   "publication_date": null
+  },
+  "HS05": {
+   "title": "中国共产党第三次全国代表大会",
+   "url": "https://www.12371.cn/special/lcddh/ddh3/",
+   "publication_date": null
+  },
+  "HS06": {
+   "title": "中国共产党第四次全国代表大会",
+   "url": "https://www.12371.cn/special/lcddh/ddh4/",
+   "publication_date": null
+  },
+  "HS07": {
+   "title": "党史百问：第一次国共合作的背景和经过是什么",
+   "url": "https://www.12371.cn/2022/03/22/ARTI1647938713142595.shtml",
+   "publication_date": "2022-03-22"
+  },
+  "HS08": {
+   "title": "彭湃（广东英烈网）",
+   "url": "https://service.dva.gd.gov.cn/gdylw/sjjs/202303/f5af5c7a51d14477a62013ced38ca212.shtml",
+   "publication_date": null
+  },
+  "HS09": {
+   "title": "追寻党指挥枪的三个历史节点（国防部）",
+   "url": "https://www.mod.gov.cn/gfbw/gfjy_index/js_214151/4886793.html",
+   "publication_date": null
+  },
+  "HS10": {
+   "title": "多视角下看长征",
+   "url": "https://www.12371.cn/2021/10/19/ARTI1634643519286309.shtml",
+   "publication_date": "2021-10-19"
+  },
+  "HS11": {
+   "title": "中国共产党为公布国共合作宣言（中国国家博物馆）",
+   "url": "https://www.chnmuseum.cn/zp/zpml/gmww/202008/t20200824_247209.shtml",
+   "publication_date": "2020-08-24"
+  },
+  "HS12": {
+   "title": "党史百问：党在过渡时期的总路线和总任务是什么",
+   "url": "https://www.12371.cn/2022/06/27/ARTI1656319819570721.shtml",
+   "publication_date": "2022-06-27"
+  },
+  "HS13": {
+   "title": "毛泽东《论十大关系》",
+   "url": "https://fuwu.12371.cn/2013/08/14/ARTI1376449049161135_all.shtml",
+   "publication_date": "2013-08-14"
+  },
+  "HS14": {
+   "title": "关于正确处理人民内部矛盾的问题",
+   "url": "https://fuwu.12371.cn/2013/08/19/ARTI1376892293655966_2.shtml",
+   "publication_date": "2013-08-19"
+  },
+  "HS15": {
+   "title": "党史百问：党的八大对社会主要矛盾的判断是如何作出的",
+   "url": "https://www.12371.cn/2022/07/04/ARTI1656925330336346.shtml",
+   "publication_date": "2022-07-04"
+  },
+  "HS16": {
+   "title": "关于建国以来党的若干历史问题的决议",
+   "url": "https://www.12371.cn/2021/11/09/ARTI1636454249781129.shtml",
+   "publication_date": "2021-11-09"
+  },
+  "HS17": {
+   "title": "党史百问：如何理解“星星之火，可以燎原”",
+   "url": "https://www.12371.cn/2022/04/06/ARTI1649243129608647.shtml",
+   "publication_date": "2022-04-06"
+  },
+  "HS18": {
+   "title": "杨明伟：毛泽东如何解读《反对本本主义》",
+   "url": "https://www.theorychina.org.cn/c/2020-06-12/1268671.shtml",
+   "publication_date": "2020-06-12"
+  },
+  "HS19": {
+   "title": "毛泽东与理论联系实际（中央党史和文献研究院相关研究）",
+   "url": "https://cpc.people.com.cn/n1/2024/0115/c443712-40158917.html",
+   "publication_date": "2024-01-15"
+  },
+  "HS20": {
+   "title": "“三大法宝”为什么灵验",
+   "url": "https://www.12371.cn/2024/11/25/ARTI1732507261343287.shtml",
+   "publication_date": "2024-11-25"
+  },
+  "HS21": {
+   "title": "《新民主主义论》（中国国家博物馆）",
+   "url": "https://www.chnmuseum.cn/zp/zpml/gmww/202104/t20210406_249564.shtml",
+   "publication_date": "2021-04-06"
+  },
+  "HS22": {
+   "title": "党史百年·天天读：4月24日",
+   "url": "https://www.12371.cn/2021/04/21/ARTI1618988091020144.shtml",
+   "publication_date": "2021-04-21"
+  },
+  "HS23": {
+   "title": "十一届三中全会（1978年12月18—22日）",
+   "url": "https://news.12371.cn/2013/10/25/ARTI1382682889985144.shtml",
+   "publication_date": "2013-10-25"
+  },
+  "HS24": {
+   "title": "百个瞬间说百年：1983，家庭联产承包责任制推向全国",
+   "url": "https://www.xinhuanet.com/politics/2021-10/29/c_1211424568.htm",
+   "publication_date": "2021-10-29"
+  },
+  "HS25": {
+   "title": "新中国峥嵘岁月：创办经济特区",
+   "url": "https://www.12371.cn/2019/10/11/ARTI1570787080461373.shtml",
+   "publication_date": "2019-10-11"
+  },
+  "HS26": {
+   "title": "陈理：中国共产党百年历史上的三个历史决议",
+   "url": "https://www.theorychina.org.cn/c/2022-01-30/1430981.shtml",
+   "publication_date": "2022-01-30"
+  },
+  "HS27": {
+   "title": "中国共产党第十二次全国代表大会",
+   "url": "https://www.12371.cn/special/lcddh/ddh12/",
+   "publication_date": null
+  },
+  "HS28": {
+   "title": "中国共产党一百年大事记（1978年1月—2012年9月）",
+   "url": "https://www.ndrc.gov.cn/fggz/fgjh/djzc/202107/t20210702_1285250.html?state=123",
+   "publication_date": "2021-07-02"
+  },
+  "HS29": {
+   "title": "中国共产党第十三次全国代表大会",
+   "url": "https://www.12371.cn/special/lcddh/ddh13/",
+   "publication_date": null
+  },
+  "HS30": {
+   "title": "百个瞬间说百年：1987，“一个中心、两个基本点”",
+   "url": "https://www.12371.cn/2021/11/05/ARTI1636094622975657.shtml",
+   "publication_date": "2021-11-05"
+  },
+  "HS31": {
+   "title": "中国共产党第十四次全国代表大会",
+   "url": "https://www.12371.cn/special/lcddh/ddh14/",
+   "publication_date": null
+  },
+  "HS32": {
+   "title": "中国共产党十四届三中全会公报",
+   "url": "https://cpc.people.com.cn/GB/64162/64168/64567/65395/4441750.html",
+   "publication_date": null
+  },
+  "HS33": {
+   "title": "中国共产党第十五次全国代表大会",
+   "url": "https://www.12371.cn/special/lcddh/ddh15/",
+   "publication_date": null
+  },
+  "HS34": {
+   "title": "中国共产党第十六次全国代表大会",
+   "url": "https://www.12371.cn/special/lcddh/ddh16/",
+   "publication_date": null
+  },
+  "HS35": {
+   "title": "伟大征程：科学发展观写入党章",
+   "url": "https://www.12371.cn/2026/06/30/ARTI1782784497929753.shtml",
+   "publication_date": "2026-06-30"
+  },
+  "HS36": {
+   "title": "中国共产党第十九次全国代表大会在京闭幕",
+   "url": "https://www.12371.cn/2017/10/24/ARTI1508817293580319.shtml",
+   "publication_date": "2017-10-24"
+  },
+  "HS37": {
+   "title": "一把藤椅见初心",
+   "url": "https://www.xinhuanet.com/politics/2021-05/14/c_1127443969.htm",
+   "publication_date": "2021-05-14"
+  },
+  "HS38": {
+   "title": "红色档案：李大钊的“青春”",
+   "url": "https://www.12371.cn/2021/03/09/VIDE1615245600969762.shtml",
+   "publication_date": "2021-03-09"
+  },
+  "HS39": {
+   "title": "图解新中国历次五年规划（计划）",
+   "url": "https://www.12371.cn/2020/10/27/ARTI1603768111807705.shtml",
+   "publication_date": "2020-10-27"
+  },
+  "HS40": {
+   "title": "国民经济和社会发展五年规划（计划）制定和实施的主要历程、重要作用、宝贵经验与建议",
+   "url": "https://www.ndrc.gov.cn/wsdwhfz/202010/t20201021_1248571.html",
+   "publication_date": "2020-10-21"
+  },
+  "HS41": {
+   "title": "新中国是怎样实施前四个五年计划的（上海党史网）",
+   "url": "https://www.ccphistory.org.cn/shds/shhm/content/45ba39ba-a983-4b1a-9658-8fbce8526b6a.html",
+   "publication_date": null
+  },
+  "HS42": {
+   "title": "二大确定的党的最低纲领和最高纲领是什么",
+   "url": "https://cpc.people.com.cn/GB/64156/64157/4418385.html",
+   "publication_date": null
+  },
+  "HS43": {
+   "title": "中国共产党的历史上一个生死攸关的转折点——遵义会议",
+   "url": "https://ha.mof.gov.cn/zt/djzc/djzl/201505/t20150513_1231209.htm",
+   "publication_date": "2015-05-13"
+  },
+  "HS44": {
+   "title": "中国共产党简史：十三大和社会主义初级阶段",
+   "url": "https://www.sport.gov.cn/n4/n133/n136/c321731/content_9.html",
+   "publication_date": null
+  },
+  "HS45": {
+   "title": "党史百问：中国共产党是如何高高举起抗日民族统一战线旗帜的",
+   "url": "https://www.12371.cn/2022/04/19/ARTI1650359292541863.shtml",
+   "publication_date": "2022-04-19"
+  },
+  "HS47": {
+   "title": "中国共产党的九十年摘录：共产党早期组织的建立及其活动",
+   "url": "https://www.xinhuanet.com/politics/2016-07/21/c_129162021_2.htm",
+   "publication_date": "2016-07-21"
+  },
+  "HS48": {
+   "title": "抗战文物里的故事：争取到抗日战线中来",
+   "url": "https://www.12371.cn/2025/06/11/ARTI1749620024360371.shtml",
+   "publication_date": "2025-06-11"
+  },
+  "LAW-S01": {
+   "title": "中华人民共和国立法法（2023年第二次修正）",
+   "url": "https://hubca.miit.gov.cn/zwgk/zcwj/flfg/art/2023/art_617433c825534c34a1104d67a6254ba2.html",
+   "publication_date": "2023-03-13"
+  },
+  "LAW-S02": {
+   "title": "中华人民共和国民法典",
+   "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_60fb3863b7364b759123a42d1df568ca.html",
+   "publication_date": "2020-05-28"
+  },
+  "LAW-S03": {
+   "title": "中华人民共和国生态环境法典",
+   "url": "https://www.mee.gov.cn/ywgz/fgbz/fl/202603/t20260313_1146496.shtml",
+   "publication_date": "2026-03-12"
+  },
+  "LAW-S04": {
+   "title": "关于深入学习贯彻《中华人民共和国生态环境法典》的通知",
+   "url": "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk03/202604/t20260408_1148465.html",
+   "publication_date": "2026-04-08"
+  },
+  "LAW-S05": {
+   "title": "全国人大常委会法工委宪法室：编纂生态环境法典 推动宪法关于生态文明制度规定全面有效实施",
+   "url": "https://www.mee.gov.cn/home/ztbd/2022/sthjpf/xfxcz/202607/t20260723_1162631.shtml",
+   "publication_date": "2026-07-23"
+  },
+  "LAW-S07": {
+   "title": "中华人民共和国治安管理处罚法（2025年修订）",
+   "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2025/art_8a1c722747214869b28c0ad7a0f8bb7a.html",
+   "publication_date": "2025-06-27"
+  },
+  "LAW-S08": {
+   "title": "中华人民共和国民营经济促进法",
+   "url": "https://www.zyshgzb.gov.cn/n1/2025/0430/c459388-40472032.html",
+   "publication_date": "2025-04-30"
+  },
+  "LAW-S09": {
+   "title": "中华人民共和国法治宣传教育法",
+   "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2026/art_deb49e5cac3a4b24b582f7d8d9ad83d8.html",
+   "publication_date": "2025-09-12"
+  },
+  "LAW-S10": {
+   "title": "全民阅读促进条例（国务院令第823号）",
+   "url": "https://www.mee.gov.cn/zcwj/gwywj/202512/t20251219_1138213.shtml",
+   "publication_date": "2025-12-09"
+  },
+  "LAW-S11": {
+   "title": "中华人民共和国国歌法",
+   "url": "https://www.hmo.gov.cn/2026/08/21/ARTID1HoXzfgwQOKqL1VtN7c260821.shtml",
+   "publication_date": "2017-09-01"
+  },
+  "LAW-S12": {
+   "title": "中华人民共和国爱国主义教育法",
+   "url": "https://nxca.miit.gov.cn/zwgk/zcwj/flfg/art/2024/art_d58b54e1feb745caa3f24159fc77bb99.html",
+   "publication_date": "2023-10-24"
+  },
+  "LAW-S13": {
+   "title": "中华人民共和国社会保险法（2018年修正）",
+   "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_e81d115419b4463ebb59ec46467fb136.html",
+   "publication_date": "2018-12-29"
+  },
+  "LAW-S14": {
+   "title": "中华人民共和国行政处罚法（2021年修订）",
+   "url": "https://www.miit.gov.cn/zwgk/zcwj/flfg/art/2022/art_76d37c09bd594d67b80ec2aa6fababcc.html",
+   "publication_date": "2021-01-22"
+  },
+  "LAW-S15": {
+   "title": "中华人民共和国行政复议法（2023年修订）",
+   "url": "https://hunca.miit.gov.cn/zwgk/zcwj/flfg/art/2024/art_719196b6d7e540dc8adbe8b009933b04.html",
+   "publication_date": "2023-09-01"
+  },
+  "LAW-S16": {
+   "title": "省十四届人大常委会第二十八次会议召开",
+   "url": "https://epaper.nfnews.com/nfdaily/html/202611/26/content_10187335.html",
+   "publication_date": "2026-11-26"
+  },
+  "LAW-E24": {
+   "title": "仓库GD2024-Q015（爱国主义教育法主要内容）",
+   "url": "https://github.com/dumarstoft-ship-it/xing-ce1/blob/main/广东/行测/2022-2026/GD2024.md",
+   "publication_date": "2024"
+  },
+  "LAW-E25": {
+   "title": "仓库GD2025-Q014（职工社保缴费主体）",
+   "url": "https://github.com/dumarstoft-ship-it/xing-ce1/blob/main/广东/行测/2022-2026/GD2025.md",
+   "publication_date": "2025"
+  },
+  "LAW-E26": {
+   "title": "仓库GD2026-Q014（国歌使用场合）",
+   "url": "https://github.com/dumarstoft-ship-it/xing-ce1/blob/main/广东/行测/2022-2026/GD2026.md",
+   "publication_date": "2026"
+  },
+  "GD-S01": {
+   "title": "2026年广东省政府工作报告（全文）",
+   "url": "https://www.gdjct.gd.gov.cn/ttxw/content/post_209009.html",
+   "publication_date": "2026-01-31"
+  },
+  "GD-S02": {
+   "title": "全省高质量发展大会召开：制造业与服务业协同发展",
+   "url": "https://www.gdjct.gd.gov.cn/ttxw/content/post_209238.html",
+   "publication_date": "2026-02-24"
+  },
+  "GD-S03": {
+   "title": "广东省推动制造业与服务业协同融合发展2026年行动方案",
+   "url": "https://www.cnbayarea.org.cn/policy/policyrelease/policies/content/mpost_1322424.html",
+   "publication_date": "2026-03-26"
+  },
+  "GD-S04": {
+   "title": "广东印发全面推进百千万工程实现五年显著变化行动方案",
+   "url": "https://www.spb.gov.cn/gjyzj/c100015/c100016/202605/de79e9e8a7c04ff49e86dd6284be0df8.shtml",
+   "publication_date": "2026-05-15"
+  },
+  "GD-S05": {
+   "title": "广东发布百千万工程实现五年显著变化行动方案",
+   "url": "https://www.qb.gd.gov.cn/qwdt/content/post_1326136.html",
+   "publication_date": "2026-05-08"
+  },
+  "GD-S06": {
+   "title": "广东省人民政府关于印发广东省十五五规划纲要的通知",
+   "url": "https://www.gdjr.gov.cn/gdjr/zwgk/jrzcfg/content/post_42890.html",
+   "publication_date": "2026-04-28"
+  },
+  "GD-S07": {
+   "title": "广东十五五规划纲要新闻发布会实录",
+   "url": "https://www.qb.gd.gov.cn/qwdt/content/post_1328001.html",
+   "publication_date": "2026-05-27"
+  },
+  "GD-S08": {
+   "title": "广东省2026年优化市场化一流营商环境工作方案",
+   "url": "https://www.gzwxb.gov.cn/context/contextId/215071",
+   "publication_date": "2026-02-03"
+  },
+  "GD-S09": {
+   "title": "广东省2026年优化法治化一流营商环境工作方案",
+   "url": "https://www.cnbayarea.org.cn/policy/policyrelease/policies/content/post_1318012.html",
+   "publication_date": "2026-02-04"
+  },
+  "GD-S10": {
+   "title": "广东省2026年优化国际化一流营商环境工作方案",
+   "url": "https://www.gdfao.gd.gov.cn/wsdt/zwdt/content/post_1317957.html",
+   "publication_date": "2026-02-02"
+  },
+  "GD-S11": {
+   "title": "APEC第三十三次领导人非正式会议安排及2026主题",
+   "url": "https://www.sz.gov.cn/cn/xxgk/zfxxgj/zwdt/content/post_12548571.html",
+   "publication_date": "2025-12-15"
+  },
+  "GD-S12": {
+   "title": "中国与亚太经合组织的关系",
+   "url": "https://www.mfa.gov.cn/web//gjhdq_676201/gjhdqzz_681964/lhg_682278/zghgzz_682282/",
+   "publication_date": "2026-11（页面最近更新时间）"
+  },
+  "GD-S13": {
+   "title": "APEC Frequently Asked Questions",
+   "url": "https://www.apec.org/faq",
+   "publication_date": "页面未标明；动态页"
+  },
+  "GD-S14": {
+   "title": "广东省推动海洋经济高质量发展行动方案（2025—2027年）",
+   "url": "https://www.cnbayarea.org.cn/policy/policyrelease/policies/content/post_1317919.html",
+   "publication_date": "2026-01-30"
+  },
+  "GD-S15": {
+   "title": "广东召开2026年全省林业工作会议",
+   "url": "https://www.forestry.gov.cn/lyj/1/dfdt/20260302/659552.html",
+   "publication_date": "2026-03-02"
+  },
+  "GD-S18": {
+   "title": "中共广东省委关于制定广东省十五五规划的建议",
+   "url": "https://www.gdjct.gd.gov.cn/ttxw/content/post_208467.html",
+   "publication_date": "2025-12-08"
+  },
+  "GD-S19": {
+   "title": "2026年全省大湾区办工作会议召开",
+   "url": "https://www.cnbayarea.org.cn/homepage/headline/content/post_1329208.html",
+   "publication_date": "2026-06-06"
+  },
+  "GD-S20": {
+   "title": "亚太经合组织概况",
+   "url": "https://www.mfa.gov.cn/gjhdq_676201/gjhdqzz_681964/lhg_682278/",
+   "publication_date": "动态页"
+  },
+  "GD-S21": {
+   "title": "盐田区百千万工程知识知多少",
+   "url": "https://www.yantian.gov.cn/cn/zwgk/zdlyxxgk/fpgz/zcwj/content/post_11153356.html",
+   "publication_date": "2024-02-21"
+  },
+  "GD-S22": {
+   "title": "国务院关于印发广州南沙深化面向世界的粤港澳全面合作总体方案的通知",
+   "url": "https://www.mee.gov.cn/zcwj/gwywj/202206/t20220614_985544.shtml",
+   "publication_date": "2022-06-14"
+  },
+  "GD-S23": {
+   "title": "中共中央、国务院印发粤港澳大湾区发展规划纲要",
+   "url": "https://www.moe.gov.cn/jyb_xxgk/moe_1777/moe_1778/201902/t20190219_369998.html",
+   "publication_date": "2019-02-19（转载）"
+  }
+ },
+ "fm_profiles": {
+  "new_focus": [
+   "LAW-004",
+   "LAW-011",
+   "LAW-014",
+   "LAW-015",
+   "LAW-016",
+   "LAW-017",
+   "LAW-018",
+   "LAW-019",
+   "LAW-020",
+   "LAW-021",
+   "LAW-022",
+   "LAW-023",
+   "LAW-024",
+   "LAW-028",
+   "LAW-029",
+   "LAW-030",
+   "GD-004",
+   "GD-006",
+   "GD-012",
+   "GD-013",
+   "GD-014",
+   "GD-015",
+   "GD-016",
+   "GD-020"
+  ],
+  "all_core": [
+   "P3-01",
+   "P3-02",
+   "P3-03",
+   "P3-04",
+   "P3-05",
+   "P3-06",
+   "P3-07",
+   "P1-01",
+   "P1-02",
+   "P1-03",
+   "P1-04",
+   "P1-05",
+   "P1-06",
+   "P1-07",
+   "P1-08",
+   "P1-10",
+   "P1-11",
+   "P2-01",
+   "P2-02",
+   "P2-03",
+   "P2-04",
+   "P2-05",
+   "P2-06",
+   "P2-07",
+   "P2-09",
+   "P2-12",
+   "P4-01",
+   "P4-02",
+   "P4-03",
+   "P4-05",
+   "P4-07",
+   "P4-08",
+   "P4-09",
+   "P4-12",
+   "P4-13",
+   "H01",
+   "H03",
+   "H04",
+   "H05",
+   "H08",
+   "H09",
+   "H10",
+   "H12",
+   "H13",
+   "H14",
+   "H15",
+   "H17",
+   "H19",
+   "H20",
+   "H21",
+   "H23",
+   "H25",
+   "H26",
+   "H27",
+   "H28",
+   "H29",
+   "H30",
+   "H32",
+   "LAW-001",
+   "LAW-002",
+   "LAW-003",
+   "LAW-005",
+   "LAW-007",
+   "LAW-008",
+   "LAW-009",
+   "LAW-012",
+   "LAW-014",
+   "LAW-015",
+   "LAW-016",
+   "LAW-017",
+   "LAW-019",
+   "LAW-020",
+   "GD-001",
+   "GD-002",
+   "GD-004",
+   "GD-007",
+   "GD-008",
+   "GD-010",
+   "GD-012",
+   "GD-013",
+   "GD-014",
+   "GD-015",
+   "GD-020"
+  ]
+ },
+ "fm_cutoff": "2026-11-27"
 }
