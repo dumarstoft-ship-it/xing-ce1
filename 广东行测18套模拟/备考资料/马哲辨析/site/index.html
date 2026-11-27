@@ -77,6 +77,13 @@ main { max-width: 760px; margin: 0 auto; padding-left: max(16px, env(safe-area-i
 .today { display: grid; gap: 14px; }
 .today .big { font-family: var(--serif); font-size: 26px; font-weight: 700; line-height: 1.3; font-variant-numeric: tabular-nums; }
 .mix { display: flex; gap: 8px; flex-wrap: wrap; }
+details.more > summary { cursor: pointer; list-style: none; }
+details.more > summary::-webkit-details-marker { display: none; }
+details.more > summary::before { content: "▸ "; color: var(--muted); }
+details.more[open] > summary::before { content: "▾ "; }
+details.more[open] > summary { margin-bottom: 12px; }
+details.more > .panel { border: 0; border-top: 1px solid var(--line); border-radius: 0; padding: 14px 0 0; margin-top: 14px; }
+details.more > .sub { margin-bottom: 8px; }
 .pill { display: inline-flex; align-items: center; gap: 4px; padding: 2px 9px; border-radius: 999px; background: var(--sunk); font-size: 12px; color: var(--muted); white-space: nowrap; }
 .pill.a { background: var(--accent-soft); color: var(--accent); }
 .pill.ok { background: var(--ok-soft); color: var(--ok); }
@@ -249,8 +256,8 @@ const kindLabel = (q) => q.bank === "fm" ? "政常新题" : q.src === "底稿" ?
 const paused = (q) => !!(q.hold || q.review);
 
 // ---------- 进度：云端（db，仅所有者可读写）＋本机缓存 ----------
-const DEFAULT_SETTINGS = { size: 15, size2: 15, why: false, fmB: true, fmC: false };
-function blankProg() { return { v: 1, q: {}, days: {}, settings: { ...DEFAULT_SETTINGS }, today: null, today2: null, updated: "" }; }
+const DEFAULT_SETTINGS = { size: 15, size2: 15, daily: 50, why: false, fmB: true, fmC: false };
+function blankProg() { return { v: 1, q: {}, days: {}, settings: { ...DEFAULT_SETTINGS }, today: null, today2: null, plan: null, updated: "" }; }
 function normalize(p) { p.settings = { ...DEFAULT_SETTINGS, ...(p.settings || {}) }; p.q = p.q || {}; p.days = p.days || {}; return p; }
 function loadLocal() {
   try { const s = localStorage.getItem(LS_KEY); if (s) { const p = JSON.parse(s); if (p && p.v === 1) return normalize(p); } } catch (e) {}
@@ -361,7 +368,7 @@ function pickGroup(pool, size, opts = {}) {
   const fresh = pool.filter((q) => !P[q.id]);
   const reviewCap = opts.reviewCap == null ? Math.ceil(size / 2) : opts.reviewCap;
   for (const q of due) { if (out.length >= reviewCap) break; take(q); }
-  const score = (q) => isA(q) + (q.src !== "底稿") * 0.8 + (q.cards.some((c) => prefer.has(c)) ? 1.5 : 0) + Math.random() * 0.9;
+  const score = (q) => isA(q) + (q.src !== "底稿") * 0.8 + (q.cards.some((c) => prefer.has(c)) ? 1.5 : 0) + (3 - tierOf(q)) * 1.2 + Math.random() * 0.9;
   const byMod = {};
   for (const q of shuffle(fresh.slice())) (byMod[q.module] = byMod[q.module] || []).push(q);
   for (const m in byMod) { const sc = new Map(byMod[m].map((q) => [q, score(q)])); byMod[m].sort((a, b) => sc.get(b) - sc.get(a)); }
@@ -416,6 +423,118 @@ function todayGroup(bank, create) {
   S.prog[key] = { day: today, ids, pos: 0, res: {} };
   touch();
   return S.prog[key];
+}
+// ---------- 每日计划：精选题（核心、备选）按价值顺序学，到期的先复习 ----------
+// 一天的题按这个顺序填满，做不完的自动顺延：
+//   ①上次答错、今天到期 ②只答对过一次、今天到期（第一次间隔复习） ③没做过的核心题
+//   ④答对两次以上、今天到期 ⑤没做过的备选题 ⑥还有空位就补最久没见的
+// 考前两天在①②之后插入“考前回顾”：错过的、只见过一次的、自评讲不清的，最久没见的在前。
+const TIER_NAME = { 1: "核心", 2: "备选", 3: "扩展" };
+const tierOf = (q) => q.t || 3;
+const inPlan = (q) => q.t === 1 || q.t === 2;
+const hasPlan = () => S.qs.some((q) => q.t === 1);
+const dailyOf = () => S.prog.settings.daily || 50;
+const finalDays = () => { const n = dayDiff(dayStr(), EXAM_DAY); return n === 1 || n === 2; };
+function planParts(size, skip) {
+  const today = dayStr(), P = S.prog.q;
+  const all = S.qs.filter((q) => !paused(q) && !(skip && skip.has(q.id)));
+  const out = [], used = new Set(), cardsNew = new Set();
+  const n = { wrong: 0, first: 0, look: 0, new1: 0, later: 0, new2: 0, extra: 0 };
+  const ord = (q) => (q.o == null ? 1e9 : q.o);
+  const byDue = (a, b) => (P[a.id].due < P[b.id].due ? -1 : P[a.id].due > P[b.id].due ? 1 : ord(a) - ord(b));
+  const byLast = (a, b) => (P[a.id].d < P[b.id].d ? -1 : P[a.id].d > P[b.id].d ? 1 : ord(a) - ord(b));
+  const put = (pick, k) => { for (const q of spread(shuffle(pick))) { used.add(q.id); out.push(q); n[k]++; } };
+  const addClass = (list, k, sorter) => { const room = size - out.length; if (room > 0) put(list.filter((q) => !used.has(q.id)).sort(sorter).slice(0, room), k); };
+  const addNew = (tier, k) => {
+    const room = size - out.length, pick = [];
+    if (room <= 0) return;
+    for (const q of all.filter((x) => x.t === tier && !P[x.id]).sort((a, b) => ord(a) - ord(b))) {
+      if (pick.length >= room) break;
+      if (q.cards.some((c) => cardsNew.has(c))) continue;      // 同一个知识点一天只上一道新题
+      q.cards.forEach((c) => cardsNew.add(c)); pick.push(q);
+    }
+    put(pick, k);
+  };
+  const seen = all.filter((q) => P[q.id]);
+  const due = seen.filter((q) => P[q.id].due <= today && (inPlan(q) || !P[q.id].l));   // 计划外的题只追上次答错的
+  addClass(due.filter((q) => !P[q.id].l), "wrong", byDue);
+  addClass(due.filter((q) => P[q.id].l && P[q.id].b <= 1), "first", byDue);
+  if (finalDays()) {
+    const cut = addDays(today, -1);
+    addClass(seen.filter((q) => inPlan(q) && P[q.id].d < cut && (P[q.id].c < P[q.id].n || P[q.id].n === 1 || P[q.id].e === 0)), "look", byLast);
+  }
+  addNew(1, "new1");
+  addClass(due.filter((q) => P[q.id].l && P[q.id].b >= 2), "later", byDue);
+  addNew(2, "new2");
+  addClass(seen.filter((q) => inPlan(q) && P[q.id].d < today), "extra", (a, b) => (P[a.id].l - P[b.id].l) || byLast(a, b));
+  return { list: out, n };
+}
+function planGroup(create) {
+  const today = dayStr(), t = S.prog.plan;
+  if (t && t.day === today) return t;
+  if (!create) return null;
+  const { list, n } = planParts(dailyOf());
+  S.prog.plan = { day: today, ids: list.map((q) => q.id), pos: 0, res: {}, n };
+  touch();
+  return S.prog.plan;
+}
+function resumePlan() {
+  const t = planGroup(false);
+  if (!t) return;
+  S.run = { list: t.ids.map((id) => S.q[id]).filter(Boolean), pos: t.pos, res: t.res, label: "今日计划", tkey: "plan", mode: "" };
+  route();
+}
+function planCounts() {   // 核心、备选各学了多少
+  const P = S.prog.q, c = {};
+  for (const t of [1, 2]) {
+    const qs = S.qs.filter((q) => q.t === t && !paused(q));
+    c[t] = { total: qs.length, seen: qs.filter((q) => P[q.id]).length, twice: qs.filter((q) => P[q.id] && P[q.id].x).length, weak: qs.filter((q) => P[q.id] && !P[q.id].l).length };
+  }
+  return c;
+}
+function mixChips(n) {
+  const rev = n.wrong + n.first + n.look + n.later + n.extra;
+  return h("div", { class: "mix" },
+    rev ? h("span", { class: "pill bad", text: `复习 ${rev}` + (n.wrong ? `（上次答错 ${n.wrong}）` : "") }) : null,
+    n.look ? h("span", { class: "pill warn", text: `考前回顾 ${n.look}` }) : null,
+    n.new1 ? h("span", { class: "pill a", text: `核心新题 ${n.new1}` }) : null,
+    n.new2 ? h("span", { class: "pill", text: `备选新题 ${n.new2}` }) : null);
+}
+function dailySelect() {
+  const sel = h("select", { id: "dailySel", onchange: (e) => { S.prog.settings.daily = Number(e.target.value); touch(); route(); } });
+  for (const k of [20, 30, 40, 50, 60, 80]) sel.append(h("option", { value: String(k), selected: k === dailyOf() }, `${k}题`));
+  return sel;
+}
+function planPanel() {
+  const t = planGroup(false), size = dailyOf(), c = planCounts();
+  const box = h("section", { class: "panel today" });
+  const left = dayDiff(dayStr(), EXAM_DAY);
+  if (t && t.pos >= t.ids.length) {
+    const right = Object.values(t.res).filter(Boolean).length;
+    const more = planParts(20, new Set(t.ids));
+    box.append(h("div", null, h("h2", { text: "今日计划：做完了" }), h("p", { class: "sub", text: `${t.ids.length}题，答对${right}题。答错的明天先出，答对的隔2天、4天再出。` })),
+      h("div", { class: "row" }, more.list.length ? h("button", { class: "btn primary", onclick: () => startRun(more.list, "计划加练") }, `再加${more.list.length}题`) : h("span", { class: "note", text: "计划里今天没有该做的题了。" })));
+  } else if (t) {
+    box.append(h("div", null, h("h2", { text: "今日计划" }), h("p", { class: "sub", text: `已做${t.pos}题，还剩${t.ids.length - t.pos}题。复习排在前面，中途停下也先保住该复习的。` })),
+      h("div", { class: "row" }, h("button", { class: "btn primary", onclick: resumePlan }, "继续")));
+  } else {
+    const prev = planParts(size);
+    box.append(h("div", null, h("h2", { text: "今日计划" }), h("div", { class: "big", text: `${prev.list.length}题` })), mixChips(prev.n),
+      h("div", { class: "row" }, h("button", { class: "btn primary", disabled: !prev.list.length, onclick: () => { planGroup(true); resumePlan(); } }, "开始"),
+        h("label", { class: "note", for: "dailySel" }, "每天题数"), dailySelect()));
+    if (finalDays()) box.append(h("p", { class: "note", text: "考前两天：先过错过的和只见过一次的题，再看新题。" }));
+  }
+  const freshCore = c[1].total - c[1].seen;
+  box.append(h("div", { class: "stats3" },
+    h("div", { class: "stat" }, h("div", { class: "v", text: `${c[1].seen}/${c[1].total}` }), h("div", { class: "k", text: "核心已学" })),
+    h("div", { class: "stat" }, h("div", { class: "v", text: `${c[1].twice + c[2].twice}` }), h("div", { class: "k", text: "隔天又答对" })),
+    h("div", { class: "stat" }, h("div", { class: "v", text: `${c[2].seen}/${c[2].total}` }), h("div", { class: "k", text: "备选已学" }))));
+  if (left > 0 && freshCore > 0) {
+    const need = Math.ceil(freshCore / Math.max(1, left - 2));    // 最后两天留给回顾
+    box.append(h("p", { class: "note", text: `核心还有${freshCore}道没学，考前还有${left}天。按每天${size}题、复习优先的排法，前几天新题多，第三天起复习变多；` +
+      (need > size * 0.6 ? `照现在的量可能学不完核心，建议把每天题数调高一档。` : `照现在的量能学完核心并各复习一到两遍。`) }));
+  }
+  return box;
 }
 function plannedMix(pool, size) {
   const today = dayStr();
@@ -517,7 +636,21 @@ function viewToday() {
     h("p", { class: "sub", text: `马哲：底稿${c.cards}张概念卡、${c.base}道判断题，${c.new}道仿广东真题的新题，${c.real}道广东省考马哲真题（2026年按教材判，没有官方答案）。` +
       `政常：GPT整理的${c.blocks}个知识块，${c.fm}道新题（每题挂知识块编号和来源，答后看每个选项错在哪）` + (c.fm_pending ? `，其中${c.fm_pending}道在待审区不计分` : "") +
       "。所有新题都是自编训练题，不是官方真题；判断题照答题卡习惯，正确涂A、错误涂B。" }));
-  return [todayPanel("mz"), todayPanel("fm"), stats, mods, about];
+  if (!hasPlan()) return [todayPanel("mz"), todayPanel("fm"), stats, mods, about];
+  const extra = h("details", { class: "panel more" }, h("summary", null, h("b", { text: "分科加练（计划之外）" }), h("span", { class: "note", text: " 马哲一组、政常一组、新增考点、错题重练" })),
+    todayPanel("mz"), todayPanel("fm"));
+  return [planPanel(), stats, planWhy(), extra, mods, about].filter(Boolean);
+}
+function planWhy() {   // 精选依据：各模块在近年真题里的分量、留了多少
+  const pl = S.meta.plan;
+  if (!pl) return null;
+  const rows = pl.modules || [];
+  return h("details", { class: "panel more" }, h("summary", null, h("b", { text: `精选依据：${pl.core}道核心、${pl.backup}道备选` }), h("span", { class: "note", text: " 为什么留这些、砍了哪些" })),
+    ...(pl.basis || []).map((t) => h("p", { class: "sub", text: t })),
+    h("div", { class: "tbl" }, h("table", null,
+      h("thead", null, h("tr", null, h("th", { text: "模块" }), h("th", { text: "近三年真题" }), h("th", { text: "核心" }), h("th", { text: "备选" }), h("th", { text: "题库" }))),
+      h("tbody", null, ...rows.map((r) => h("tr", null, h("td", { text: r.name }), h("td", { text: r.share }), h("td", { text: String(r.core) }), h("td", { text: String(r.backup) }), h("td", { text: String(r.total) })))))),
+    pl.note ? h("p", { class: "note", text: pl.note }) : null);
 }
 function sizeSelect(bank) {
   const key = bank === "fm" ? "size2" : "size";
@@ -575,7 +708,8 @@ function renderRun() {
     h("span", { class: "pill", text: `${q.module} ${mod ? mod.title : ""}` }),
     h("span", { class: "pill" + (q.src === "真题" ? " ok" : q.src !== "底稿" ? " a" : ""), text: kindLabel(q) + (q.src === "真题" ? " · " + q.basis.split(/[，。；]/)[0] : q.form ? " · " + q.form : "") }),
     h("span", { class: "pill", text: q.type + "题" }),
-    isA(q) ? h("span", { class: "pill warn", text: q.bank === "fm" ? "A档" : "A级辨析" }) : null));
+    isA(q) ? h("span", { class: "pill warn", text: q.bank === "fm" ? "A档" : "A级辨析" }) : null,
+    inPlan(q) ? h("span", { class: "pill ok", text: TIER_NAME[q.t] }) : null));
   if (q.lead) card.append(h("p", { class: "lead", text: q.lead }));
   const stem = pres && q.type === "判断" ? pres.stem : q.stem;
   card.append(h("p", { class: "stem", text: q.type === "判断" ? stem + "（　）" : stem }));
@@ -778,7 +912,7 @@ document.addEventListener("keydown", (e) => {
 });
 
 // ---------- 练习（自选） ----------
-const F = { bank: new Set(), mods: new Set(), src: new Set(), type: new Set(), prio: new Set(), scope: "all" };
+const F = { bank: new Set(), mods: new Set(), src: new Set(), type: new Set(), prio: new Set(), tier: new Set(), scope: "all" };
 function viewPractice() {
   const box = h("section", { class: "panel" }, h("h2", { text: "自选练习" }), h("p", { class: "sub", text: "不选就是全部。到期复习的题排在前面；待审区的题不出。" }));
   const group = (title, key, items) => {
@@ -792,7 +926,8 @@ function viewPractice() {
     group("模块", "mods", [...S.meta.modules, ...(S.meta.fm_modules || [])].map((m) => [m.id, `${m.id} ${m.title}`])),
     group("来源", "src", [["底稿判断", "马哲底稿判断"], ["仿真题", "马哲仿真题"], ["拓展题", "马哲拓展题"], ["广东真题", "广东真题"], ["政常新题", "政常新题"]]),
     group("题型", "type", [["判断", "判断"], ["单选", "单选"], ["多选", "多选"]]),
-    group("级别", "prio", [["A", "A"], ["B", "B"], ["C", "C（政常默认不出）"]]));
+    group("级别", "prio", [["A", "A"], ["B", "B"], ["C", "C（政常默认不出）"]]),
+    ...(hasPlan() ? [group("精选", "tier", [["1", "核心"], ["2", "备选"], ["3", "扩展（计划外）"]])] : []));
   const scope = h("div", { class: "filters" });
   for (const [v, label] of [["all", "全部"], ["fresh", "没做过的"], ["wrong", "最近一次做错的"]]) {
     scope.append(h("button", { class: "chip", "aria-pressed": String(F.scope === v), onclick: (e) => { F.scope = v; for (const b of scope.children) b.setAttribute("aria-pressed", String(b === e.currentTarget)); updateCount(); } }, label));
@@ -805,7 +940,7 @@ function viewPractice() {
 }
 function filtered() {
   return S.qs.filter((q) => !paused(q) && (!F.bank.size || F.bank.has(bankOf(q))) && (!F.mods.size || F.mods.has(q.module)) && (!F.src.size || F.src.has(kindLabel(q)))
-    && (!F.type.size || F.type.has(q.type)) && (F.prio.size ? F.prio.has(prioOf(q)) : (q.bank !== "fm" || allowPrio(q)))
+    && (!F.type.size || F.type.has(q.type)) && (!F.tier.size || F.tier.has(String(tierOf(q)))) && (F.prio.size ? F.prio.has(prioOf(q)) : (q.bank !== "fm" || allowPrio(q)))
     && (F.scope === "all" || (F.scope === "fresh" ? !S.prog.q[q.id] : S.prog.q[q.id] && !S.prog.q[q.id].l)));
 }
 function updateCount() { const n = filtered().length; const c = $("#fcount"); if (c) c.textContent = `符合条件的题：${n}道`; const b = $("#fstart"); if (b) b.disabled = !n; }

@@ -181,6 +181,23 @@ def main():
             n_fm_pending += bool(review)
     assert len({q["id"] for q in questions}) == len(questions)
 
+    # ---------- 精选：按往年真题画像给知识点估值后排出的做题顺序（核心在前、备选在后），其余是扩展题 ----------
+    plan = None
+    pick_f = HERE / "精选" / "精选.json"
+    if pick_f.exists():
+        pk = json.loads(pick_f.read_text(encoding="utf-8"))
+        by_id = {q["id"]: q for q in questions}
+        order = pk["order"]
+        assert len(set(order)) == len(order) and set(order) <= set(by_id), "精选.json 的题号有重复或不存在"
+        assert 0 < pk["core"] <= len(order)
+        for i, qid in enumerate(order):
+            q = by_id[qid]
+            assert not q.get("hold") and not q.get("review"), ("暂停或待审的题不能进精选", qid)
+            q["o"] = i
+            q["t"] = 1 if i < pk["core"] else 2
+        plan = {"core": pk["core"], "backup": len(order) - pk["core"], "generated": pk.get("generated", ""),
+                "basis": pk.get("basis") or [], "modules": pk.get("modules") or [], "note": pk.get("note") or ""}
+
     meta = {"title": d["title"], "prepared_on": d["prepared_on"],
             "modules": [{"id": m["id"], "title": m["title"]} for m in d["modules"]],
             "appendices": d["appendices"], "sources": d["sources"],
@@ -193,14 +210,14 @@ def main():
             "fm_profiles": {"new_focus": fm["training_profiles"]["new_focus"]["ids"] + k_ids,
                             "all_core": fm["training_profiles"]["all_core"]["ids"] + [b["id"] for b in blocks if b.get("candidate") and b["priority"] == "A"]},
             "fm_cutoff": fm.get("evidence_cutoff", ""),
-            "fm_evidence": evidence}
+            "fm_evidence": evidence, "plan": plan}
     OUT.mkdir(exist_ok=True)
     (OUT / "cards.json").write_text(lines(cards), encoding="utf-8")
     (OUT / "questions.json").write_text(lines(questions), encoding="utf-8")
     (OUT / "blocks.json").write_text(lines(blocks), encoding="utf-8")
     (OUT / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print("cards", len(cards), "questions", len(questions), "new", n_new, "real", n_real, "blocks", len(blocks), "k", len(k_ids),
-          "evidence", len(evidence), "fm", n_fm, "fm_pending", n_fm_pending)
+          "evidence", len(evidence), "fm", n_fm, "fm_pending", n_fm_pending, "plan", (plan["core"], plan["backup"]) if plan else None)
 
 
 if __name__ == "__main__":
