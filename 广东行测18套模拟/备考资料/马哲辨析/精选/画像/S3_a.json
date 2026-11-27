@@ -1,0 +1,1404 @@
+[
+ {
+  "id": "GD2019-XJ-Q071",
+  "domain": "D2",
+  "topic": "两山理念配具体举措（河长制）",
+  "slot": "新思想原话理解",
+  "ask": "正选",
+  "style": "材料或引文配原理",
+  "trap": "两山属生态文明，只有河长制是生态治理举措；其余属扶贫、开放、产权领域",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2019-XJ-Q072",
+  "domain": "D3",
+  "topic": "减税降费的政策作用",
+  "slot": "当年全国两会",
+  "ask": "正选",
+  "style": "概念表述辨析",
+  "trap": "减税降费是财税手段，不直接畅通融资渠道；③把金融领域效果安到财税政策上",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P4-12",
+   "P2-12"
+  ],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2019-XJ-Q073",
+  "domain": "D8",
+  "topic": "大湾区规划纲要中的发展基础",
+  "slot": "大湾区",
+  "ask": "选非",
+  "style": "概念表述辨析",
+  "trap": "纲要写的是“内部发展差距依然较大”（属挑战），被反写成差距小",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "GD-009",
+   "GD-011"
+  ],
+  "in_scope": true,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2019-XJ-Q074",
+  "domain": "D9",
+  "topic": "2019年3月习近平访欧三国",
+  "slot": "领导人外交时事",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "识记",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "GD-014"
+  ],
+  "in_scope": false,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2019-XJ-Q075",
+  "domain": "D5",
+  "topic": "听取审议两高报告体现监督权",
+  "slot": "国家机构职权",
+  "ask": "正选",
+  "style": "材料或引文配原理",
+  "trap": "听取审议工作报告是监督权；决定权指决定重大事项，任免权指选举罢免",
+  "currency": "常青",
+  "units": [
+   "P4-07"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2019-XJ-Q076",
+  "domain": "D3",
+  "topic": "乡村人才振兴举措的识别",
+  "slot": "三农政策表述",
+  "ask": "选非",
+  "style": "材料或引文配原理",
+  "trap": "休闲旅游属产业振兴；其余三项是引才、招募、培训的人才举措（类别错配）",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "GD-007",
+   "GD-008"
+  ],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2019-XJ-Q077",
+  "domain": "D10",
+  "topic": "宏观调控的经济手段与行政手段",
+  "slot": "经济学概念",
+  "ask": "选非",
+  "style": "材料或引文配原理",
+  "trap": "下令关停整改是行政命令；其余靠准备金率、工资标准、税收等经济杠杆",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2019-XJ-Q078",
+  "domain": "D3",
+  "topic": "全面小康最艰巨任务在农村",
+  "slot": "三农政策表述",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "识记",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "GD-007"
+  ],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2019-XJ-Q079",
+  "domain": "D7",
+  "topic": "行政合理性原则（裁量合理）",
+  "slot": "行政法常识",
+  "ask": "正选",
+  "style": "材料或引文配原理",
+  "trap": "题眼是授权范围内选最适当的效果，属裁量合理；职权法定只管有无权限",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2019-XJ-Q080",
+  "domain": "D1",
+  "topic": "规律可以认识和利用",
+  "slot": "马哲材料配原理",
+  "ask": "正选",
+  "style": "材料或引文配原理",
+  "trap": "把握大势是认识规律，抓住时机奋发有为是利用规律；不涉曲折性和实践标准",
+  "currency": "常青",
+  "units": [
+   "M2.21",
+   "M2.24"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2019-XJ-Q081",
+  "domain": "D12",
+  "topic": "地热能与火山喷发",
+  "slot": "天文地理常识",
+  "ask": "正选",
+  "style": "常识识记",
+  "trap": "火山喷发是地球内能释放；台风、山洪、风化的能量主要来自太阳辐射等外力",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2019-XJ-Q082",
+  "domain": "D11",
+  "topic": "赤潮的成因与危害",
+  "slot": "环境能源常识",
+  "ask": "正选",
+  "style": "概念表述辨析",
+  "trap": "错项用绝对化或反向说法：与人类活动关系不大、多数无害、都是红色",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2019-XJ-Q083",
+  "domain": "D11",
+  "topic": "森林涵养水源的功能",
+  "slot": "环境能源常识",
+  "ask": "正选",
+  "style": "古语诗词配观点",
+  "trap": "谚语讲有雨能吞、无雨能吐，是蓄水保水；净化空气、滤尘、降噪与水无关",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2019-XJ-Q084",
+  "domain": "D11",
+  "topic": "水银体温计缩口只升不降",
+  "slot": "物理化学常识",
+  "ask": "正选",
+  "style": "常识识记",
+  "trap": "未甩时示数只升不降：体温低于原读数仍显示原值，高于原读数才上升",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2019-XJ-Q085",
+  "domain": "D8",
+  "topic": "描写岭南风物的诗句（罗浮山）",
+  "slot": "广东省情地理",
+  "ask": "正选",
+  "style": "古语诗词配观点",
+  "trap": "罗浮山在广东惠州；黄鹤楼在武汉，敕勒川在北方草原，庐山在江西（地域）",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2019-XZ-Q061",
+  "domain": "D6",
+  "topic": "五四运动以来三大历史性事件",
+  "slot": "周年纪念节点",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "全面建成小康社会当时还是未完成的目标，不在三大历史性事件之列",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "H11",
+   "H12"
+  ],
+  "in_scope": true,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2019-XZ-Q062",
+  "domain": "D9",
+  "topic": "2019年3月习近平访欧三国",
+  "slot": "领导人外交时事",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "识记",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "GD-014"
+  ],
+  "in_scope": false,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2019-XZ-Q063",
+  "domain": "D5",
+  "topic": "听取审议两高报告体现监督权",
+  "slot": "国家机构职权",
+  "ask": "正选",
+  "style": "材料或引文配原理",
+  "trap": "听取审议工作报告是监督权；决定权指决定重大事项，任免权指选举罢免",
+  "currency": "常青",
+  "units": [
+   "P4-07"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2019-XZ-Q064",
+  "domain": "D3",
+  "topic": "乡村人才振兴举措的识别",
+  "slot": "三农政策表述",
+  "ask": "选非",
+  "style": "材料或引文配原理",
+  "trap": "休闲旅游属产业振兴；其余三项是引才、招募、培训的人才举措（类别错配）",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "GD-007",
+   "GD-008"
+  ],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2019-XZ-Q065",
+  "domain": "D3",
+  "topic": "减税降费的政策作用",
+  "slot": "当年全国两会",
+  "ask": "正选",
+  "style": "概念表述辨析",
+  "trap": "减税降费是财税手段，不直接畅通融资渠道；③把金融领域效果安到财税政策上",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P4-12",
+   "P2-12"
+  ],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2019-XZ-Q066",
+  "domain": "D3",
+  "topic": "两不愁三保障的内容",
+  "slot": "三农政策表述",
+  "ask": "选非",
+  "style": "时政细节识记",
+  "trap": "三保障是义务教育、基本医疗、住房安全；环境优美不在脱贫标准内",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "GD-007",
+   "K-GD-02"
+  ],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2019-XZ-Q067",
+  "domain": "D8",
+  "topic": "大湾区规划纲要中的发展基础",
+  "slot": "大湾区",
+  "ask": "选非",
+  "style": "概念表述辨析",
+  "trap": "纲要写的是“内部发展差距依然较大”（属挑战），被反写成差距小",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "GD-009",
+   "GD-011"
+  ],
+  "in_scope": true,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2019-XZ-Q068",
+  "domain": "D1",
+  "topic": "规律可以认识和利用",
+  "slot": "马哲材料配原理",
+  "ask": "正选",
+  "style": "材料或引文配原理",
+  "trap": "把握大势是认识规律，抓住时机奋发有为是利用规律；不涉曲折性和实践标准",
+  "currency": "常青",
+  "units": [
+   "M2.21",
+   "M2.24"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2019-XZ-Q069",
+  "domain": "D8",
+  "topic": "视察广东：汕头湛江作发展极",
+  "slot": "总书记视察广东",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "粤东是汕头、粤西是湛江；干扰项混入珠三角和粤北城市（地域）",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P4-14",
+   "GD-007"
+  ],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2019-XZ-Q070",
+  "domain": "D3",
+  "topic": "扶贫中扶智举措的识别",
+  "slot": "三农政策表述",
+  "ask": "选非",
+  "style": "材料或引文配原理",
+  "trap": "扶智是教育、技能、文化帮扶；发放农机是物质帮扶（类别错配）",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "GD-007",
+   "GD-008"
+  ],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2019-XZ-Q071",
+  "domain": "D9",
+  "topic": "中国农民丰收节设在秋分",
+  "slot": "新设节日纪念日",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "识记",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "LAW-024",
+   "K-LAW-05"
+  ],
+  "in_scope": false,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2019-XZ-Q072",
+  "domain": "D2",
+  "topic": "共同富裕是社会主义本质要求",
+  "slot": "新思想原话理解",
+  "ask": "正选",
+  "style": "概念表述辨析",
+  "trap": "规范概念是共同富裕，被换成同步、同时、全体富裕等近义说法",
+  "currency": "常青",
+  "units": [
+   "P1-10"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2019-XZ-Q073",
+  "domain": "D2",
+  "topic": "两山理念配具体举措（河长制）",
+  "slot": "新思想原话理解",
+  "ask": "正选",
+  "style": "材料或引文配原理",
+  "trap": "两山属生态文明，只有河长制是生态治理举措；其余属扶贫、开放、产权领域",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2019-XZ-Q074",
+  "domain": "D8",
+  "topic": "描写岭南风物的诗句（罗浮山）",
+  "slot": "广东省情地理",
+  "ask": "正选",
+  "style": "古语诗词配观点",
+  "trap": "罗浮山在广东惠州；黄鹤楼在武汉，敕勒川在北方草原，庐山在江西（地域）",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2019-XZ-Q075",
+  "domain": "D8",
+  "topic": "港珠澳大桥跨越伶仃洋",
+  "slot": "大湾区",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "识记",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "GD-010"
+  ],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2019-XZ-Q076",
+  "domain": "D11",
+  "topic": "森林涵养水源的功能",
+  "slot": "环境能源常识",
+  "ask": "正选",
+  "style": "古语诗词配观点",
+  "trap": "谚语讲有雨能吞、无雨能吐，是蓄水保水；净化空气、滤尘、降噪与水无关",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2019-XZ-Q077",
+  "domain": "D3",
+  "topic": "全面小康最艰巨任务在农村",
+  "slot": "三农政策表述",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "识记",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "GD-007"
+  ],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2019-XZ-Q078",
+  "domain": "D12",
+  "topic": "元宵节诗句（火树银花合）",
+  "slot": "传统历法节俗",
+  "ask": "正选",
+  "style": "古语诗词配观点",
+  "trap": "火树银花写元宵灯会；婵娟写中秋，茱萸写重阳，爆竹写春节（节日错配）",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2019-XZ-Q079",
+  "domain": "D9",
+  "topic": "嫦娥四号着陆月球背面",
+  "slot": "科技成就",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "识记",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2019-XZ-Q080",
+  "domain": "D12",
+  "topic": "地热能与火山喷发",
+  "slot": "天文地理常识",
+  "ask": "正选",
+  "style": "常识识记",
+  "trap": "火山喷发是地球内能释放；台风、山洪、风化的能量主要来自太阳辐射等外力",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2020-XJ-Q011",
+  "domain": "D5",
+  "topic": "党的领导制度居于统领地位",
+  "slot": "上年中央全会文件",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "人大制度是根本政治制度，但统领各项制度的是党的领导制度（定位）",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P3-07",
+   "P4-04"
+  ],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2020-XJ-Q012",
+  "domain": "D2",
+  "topic": "人类卫生健康共同体理念",
+  "slot": "领导人外交时事",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "人类命运共同体是总理念，抗疫中提出的是卫生健康领域的新理念（层级）",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "GD-014"
+  ],
+  "in_scope": true,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2020-XJ-Q013",
+  "domain": "D12",
+  "topic": "永暑礁的位置与概况",
+  "slot": "天文地理常识",
+  "ask": "选非",
+  "style": "概念表述辨析",
+  "trap": "永暑礁属南沙群岛，被换成西沙群岛；题干已说南沙区政府驻永暑礁",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2020-XJ-Q014",
+  "domain": "D7",
+  "topic": "香港国安法规定的四类罪行",
+  "slot": "当年施行新法",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "识记",
+  "currency": "近年新法新政",
+  "units": [],
+  "analog_units": [
+   "LAW-007",
+   "LAW-015"
+  ],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2020-XJ-Q015",
+  "domain": "D9",
+  "topic": "天问一号火星探测",
+  "slot": "科技成就",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "识记",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2020-XJ-Q016",
+  "domain": "D12",
+  "topic": "张骞凿空西域",
+  "slot": "古代文史",
+  "ask": "正选",
+  "style": "常识识记",
+  "trap": "题眼是改变汉朝的地域观念，指张骞通西域；昭君是和亲，鉴真在唐代",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2020-XJ-Q017",
+  "domain": "D8",
+  "topic": "岭南荔枝生长的气候条件",
+  "slot": "广东省情地理",
+  "ask": "正选",
+  "style": "常识识记",
+  "trap": "荔枝喜高温多雨；岭南土壤偏酸不是强碱，日照和温差也不是主因",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2020-XJ-Q018",
+  "domain": "D11",
+  "topic": "生活中的化学与生理常识",
+  "slot": "生活常识",
+  "ask": "正选",
+  "style": "常识识记",
+  "trap": "人体水分约占六七成；隔夜开水亚硝酸盐不显著增加；运动后应补电解质",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2020-XJ-Q019",
+  "domain": "D1",
+  "topic": "矛盾双方在一定条件下相互转化",
+  "slot": "古语配原理",
+  "ask": "正选",
+  "style": "古语诗词配观点",
+  "trap": "化危为机是矛盾转化；水滴石穿、溃于蚁穴讲量变质变，南橘北枳讲条件",
+  "currency": "常青",
+  "units": [
+   "M4.20",
+   "M4.03"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2020-XJ-Q020",
+  "domain": "D10",
+  "topic": "金融政策与财政收费政策的区分",
+  "slot": "经济学概念",
+  "ask": "正选",
+  "style": "材料或引文配原理",
+  "trap": "降收费、缓缴水电、免社保属财政和收费减负；引导银行放贷才是金融政策",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2020-XJ-Q021",
+  "domain": "D3",
+  "topic": "第三次分配的识别",
+  "slot": "上年中央全会文件",
+  "ask": "正选",
+  "style": "材料或引文配原理",
+  "trap": "加班报酬是初次分配，低保是再分配，助学贷款是借贷；慈善救助才是第三次",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P2-11",
+   "P2-12"
+  ],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2020-XJ-Q022",
+  "domain": "D11",
+  "topic": "燃煤排放二氧化硫形成酸雨",
+  "slot": "物理化学常识",
+  "ask": "正选",
+  "style": "常识识记",
+  "trap": "酸雨主因是二氧化硫；二氧化碳不形成酸雨，一氧化碳不致树木成片枯萎",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2020-XJ-Q023",
+  "domain": "D7",
+  "topic": "消费者权利与侵权情形对应",
+  "slot": "经济法社会法常识",
+  "ask": "正选",
+  "style": "法条情境应用",
+  "trap": "明示随机、套餐限定优惠、自用报废车都不算侵权；强制搭售侵犯公平交易权",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2020-XJ-Q024",
+  "domain": "D10",
+  "topic": "经济过热时的紧缩政策组合",
+  "slot": "经济学概念",
+  "ask": "正选",
+  "style": "材料或引文配原理",
+  "trap": "过热要紧缩：财政减支、货币加息；错项把其中一个方向反过来",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2020-XJ-Q025",
+  "domain": "D7",
+  "topic": "民法典整合的民事法律范围",
+  "slot": "当年施行新法",
+  "ask": "选非",
+  "style": "时政细节识记",
+  "trap": "公务员法属行政法，不是民事法律；物权法、婚姻法、侵权责任法均并入",
+  "currency": "近年新法新政",
+  "units": [
+   "LAW-006"
+  ],
+  "analog_units": [
+   "LAW-008",
+   "LAW-007"
+  ],
+  "in_scope": true,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2020-XZ-Q011",
+  "domain": "D1",
+  "topic": "矛盾双方在一定条件下相互转化",
+  "slot": "古语配原理",
+  "ask": "正选",
+  "style": "古语诗词配观点",
+  "trap": "化危为机是矛盾转化；水滴石穿、溃于蚁穴讲量变质变，南橘北枳讲条件",
+  "currency": "常青",
+  "units": [
+   "M4.20",
+   "M4.03"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2020-XZ-Q012",
+  "domain": "D7",
+  "topic": "村委会代行村集体经济组织职能",
+  "slot": "当年施行新法",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "代行主体是村民委员会，不是村长个人、村党支部或村民小组（主体）",
+  "currency": "近年新法新政",
+  "units": [],
+  "analog_units": [
+   "LAW-007",
+   "LAW-011"
+  ],
+  "in_scope": true,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2020-XZ-Q013",
+  "domain": "D3",
+  "topic": "协调发展理念的识别",
+  "slot": "新思想原话理解",
+  "ask": "正选",
+  "style": "材料或引文配原理",
+  "trap": "题眼是不平衡与相对平衡，对应协调；共享讲的是公平正义、成果惠民",
+  "currency": "常青",
+  "units": [
+   "P2-02"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2020-XZ-Q014",
+  "domain": "D10",
+  "topic": "金融政策与财政收费政策的区分",
+  "slot": "经济学概念",
+  "ask": "正选",
+  "style": "材料或引文配原理",
+  "trap": "降收费、缓缴水电、免社保属财政和收费减负；引导银行放贷才是金融政策",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2020-XZ-Q015",
+  "domain": "D5",
+  "topic": "党的领导制度居于统领地位",
+  "slot": "上年中央全会文件",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "人大制度是根本政治制度，但统领各项制度的是党的领导制度（定位）",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P3-07",
+   "P4-04"
+  ],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2020-XZ-Q016",
+  "domain": "D3",
+  "topic": "三农工作的科技支撑措施",
+  "slot": "三农政策表述",
+  "ask": "正选",
+  "style": "材料或引文配原理",
+  "trap": "村规民约属乡村治理，危房改造属住房保障，都不是科技支撑（类别错配）",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "GD-007",
+   "GD-008"
+  ],
+  "in_scope": true,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2020-XZ-Q017",
+  "domain": "D3",
+  "topic": "第三次分配的识别",
+  "slot": "上年中央全会文件",
+  "ask": "正选",
+  "style": "材料或引文配原理",
+  "trap": "加班报酬是初次分配，低保是再分配，助学贷款是借贷；慈善救助才是第三次",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P2-11",
+   "P2-12"
+  ],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2020-XZ-Q018",
+  "domain": "D3",
+  "topic": "产业扶贫举措的识别",
+  "slot": "三农政策表述",
+  "ask": "选非",
+  "style": "材料或引文配原理",
+  "trap": "建卫生站属健康扶贫和公共服务，不是发展产业增收（类别错配）",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "GD-007",
+   "GD-008"
+  ],
+  "in_scope": true,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2020-XZ-Q019",
+  "domain": "D2",
+  "topic": "人类卫生健康共同体理念",
+  "slot": "领导人外交时事",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "人类命运共同体是总理念，抗疫中提出的是卫生健康领域的新理念（层级）",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "GD-014"
+  ],
+  "in_scope": true,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2020-XZ-Q020",
+  "domain": "D12",
+  "topic": "永暑礁的位置与概况",
+  "slot": "天文地理常识",
+  "ask": "选非",
+  "style": "概念表述辨析",
+  "trap": "永暑礁属南沙群岛，被换成西沙群岛；题干已说南沙区政府驻永暑礁",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2020-XZ-Q021",
+  "domain": "D7",
+  "topic": "香港国安法规定的四类罪行",
+  "slot": "当年施行新法",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "识记",
+  "currency": "近年新法新政",
+  "units": [],
+  "analog_units": [
+   "LAW-007",
+   "LAW-015"
+  ],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2020-XZ-Q022",
+  "domain": "D9",
+  "topic": "天问一号火星探测",
+  "slot": "科技成就",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "识记",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2020-XZ-Q023",
+  "domain": "D12",
+  "topic": "体现农耕文化的诗句（悯农）",
+  "slot": "古代文史",
+  "ask": "正选",
+  "style": "古语诗词配观点",
+  "trap": "悯农写耕作与粮食；原上草写草木荣枯，谏鼓谤木讲纳谏，柳暗花明写行路",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2020-XZ-Q024",
+  "domain": "D12",
+  "topic": "张骞凿空西域",
+  "slot": "古代文史",
+  "ask": "正选",
+  "style": "常识识记",
+  "trap": "题眼是改变汉朝的地域观念，指张骞通西域；昭君是和亲，鉴真在唐代",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2020-XZ-Q025",
+  "domain": "D8",
+  "topic": "岭南荔枝生长的气候条件",
+  "slot": "广东省情地理",
+  "ask": "正选",
+  "style": "常识识记",
+  "trap": "荔枝喜高温多雨；岭南土壤偏酸不是强碱，日照和温差也不是主因",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2020-XZ-Q026",
+  "domain": "D11",
+  "topic": "生活中的化学与生理常识",
+  "slot": "生活常识",
+  "ask": "正选",
+  "style": "常识识记",
+  "trap": "人体水分约占六七成；隔夜开水亚硝酸盐不显著增加；运动后应补电解质",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2020-XZ-Q027",
+  "domain": "D11",
+  "topic": "燃煤排放二氧化硫形成酸雨",
+  "slot": "物理化学常识",
+  "ask": "正选",
+  "style": "常识识记",
+  "trap": "酸雨主因是二氧化硫；二氧化碳不形成酸雨，一氧化碳不致树木成片枯萎",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2020-XZ-Q028",
+  "domain": "D7",
+  "topic": "消费者权利与侵权情形对应",
+  "slot": "经济法社会法常识",
+  "ask": "正选",
+  "style": "法条情境应用",
+  "trap": "明示随机、套餐限定优惠、自用报废车都不算侵权；强制搭售侵犯公平交易权",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2020-XZ-Q029",
+  "domain": "D7",
+  "topic": "约定放弃社保的条款无效",
+  "slot": "经济法社会法常识",
+  "ask": "选非",
+  "style": "法条情境应用",
+  "trap": "缴社保是法定强制义务，约定放弃一律无效，另立协议也不能使其生效",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2020-XZ-Q030",
+  "domain": "D10",
+  "topic": "经济过热时的紧缩政策组合",
+  "slot": "经济学概念",
+  "ask": "正选",
+  "style": "材料或引文配原理",
+  "trap": "过热要紧缩：财政减支、货币加息；错项把其中一个方向反过来",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2021-XZ-Q011",
+  "domain": "D6",
+  "topic": "二大纲领、三大法宝、七大等辨析",
+  "slot": "党史会议",
+  "ask": "选非",
+  "style": "概念表述辨析",
+  "trap": "三大法宝是统一战线、武装斗争、党的建设，被换成解放思想、实事求是",
+  "currency": "常青",
+  "units": [
+   "H19",
+   "H04",
+   "H29"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2021-XZ-Q012",
+  "domain": "D3",
+  "topic": "创新在现代化全局中的核心地位",
+  "slot": "上年中央全会文件",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "核心地位对应创新；改革、开放、发展是同一文件里的近邻词",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P2-12",
+   "P2-08"
+  ],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2021-XZ-Q013",
+  "domain": "D6",
+  "topic": "嘉兴南湖与中共一大",
+  "slot": "党史会议",
+  "ask": "正选",
+  "style": "古语诗词配观点",
+  "trap": "南湖画舫、诞生共党指一大在嘉兴南湖闭幕、党成立；不是国共合作或建军",
+  "currency": "常青",
+  "units": [
+   "H03"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2021-XZ-Q014",
+  "domain": "D3",
+  "topic": "十四五建议中的乡村振兴部署",
+  "slot": "上年中央全会文件",
+  "ask": "选非",
+  "style": "材料或引文配原理",
+  "trap": "保障贫困人口基本医疗和住房安全是脱贫攻坚的三保障，不属新阶段部署",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P2-16",
+   "GD-007"
+  ],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2021-XZ-Q015",
+  "domain": "D1",
+  "topic": "正面宣传为主对应抓重点、主流",
+  "slot": "古语配原理",
+  "ask": "正选",
+  "style": "古语诗词配观点",
+  "trap": "为主、主流对应先立其大；独阴独阳讲对立统一，变通讲发展，有法讲规律",
+  "currency": "常青",
+  "units": [
+   "M4.17"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2021-XZ-Q016",
+  "domain": "D5",
+  "topic": "四个机构成立时间排序",
+  "slot": "新设机构",
+  "ask": "正选",
+  "style": "排序配对",
+  "trap": "教育部建国即设，文旅部2018年、驻港国安公署2020年、乡村振兴局2021年",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2021-XZ-Q017",
+  "domain": "D2",
+  "topic": "思政课是立德树人的关键课程",
+  "slot": "新思想原话理解",
+  "ask": "正选",
+  "style": "常识识记",
+  "trap": "识记",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2021-XZ-Q018",
+  "domain": "D6",
+  "topic": "脱贫攻坚表彰人物的识别",
+  "slot": "先进人物表彰",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "钟南山是抗疫人物，焦裕禄是六十年代的县委书记，都不属脱贫攻坚表彰",
+  "currency": "当年时政",
+  "units": [
+   "H31"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2021-XZ-Q019",
+  "domain": "D6",
+  "topic": "抗美援朝战争中的战役",
+  "slot": "周年纪念节点",
+  "ask": "正选",
+  "style": "常识识记",
+  "trap": "辽沈属解放战争，百团大战属抗战，仁川登陆是美军行动且在志愿军入朝前",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2021-XZ-Q020",
+  "domain": "D3",
+  "topic": "十四五建议的促消费举措",
+  "slot": "上年中央全会文件",
+  "ask": "正选",
+  "style": "材料或引文配原理",
+  "trap": "原文是放宽服务消费领域市场准入，①反写成提高门槛、减少供给（方向）",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P2-11",
+   "P2-03"
+  ],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2021-XZ-Q021",
+  "domain": "D2",
+  "topic": "体育强国的基础在于群众体育",
+  "slot": "新思想原话理解",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "基础是群众体育，后文“在3亿人中推广”是线索；竞技体育是近邻干扰",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2021-XZ-Q022",
+  "domain": "D3",
+  "topic": "新发展格局的规范表述",
+  "slot": "上年中央全会文件",
+  "ask": "选非",
+  "style": "概念表述辨析",
+  "trap": "主体是国内大循环，被换成国际大循环（主次颠倒）",
+  "currency": "当年时政",
+  "units": [
+   "P2-03",
+   "P2-01"
+  ],
+  "analog_units": [
+   "P2-12",
+   "P2-05"
+  ],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2021-XZ-Q023",
+  "domain": "D6",
+  "topic": "广东红色历史与中共三大",
+  "slot": "广东党史",
+  "ask": "选非",
+  "style": "概念表述辨析",
+  "trap": "中共三大决定的是第一次国共合作，被换成第二次（次序）",
+  "currency": "常青",
+  "units": [
+   "H05",
+   "H12",
+   "H07"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2021-XZ-Q024",
+  "domain": "D3",
+  "topic": "脱贫攻坚全面胜利的规范表述",
+  "slot": "三农政策表述",
+  "ask": "正选",
+  "style": "概念表述辨析",
+  "trap": "消除的是绝对贫困不是相对贫困；新时代脱贫攻坚序幕在2012年底而非2018年",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "GD-007"
+  ],
+  "in_scope": true,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2021-XZ-Q025",
+  "domain": "D5",
+  "topic": "全国人大职权与国务院职权",
+  "slot": "国家机构职权",
+  "ask": "选非",
+  "style": "概念表述辨析",
+  "trap": "编制和执行计划、预算是国务院职权，全国人大是审查和批准（主体替换）",
+  "currency": "常青",
+  "units": [
+   "P4-07",
+   "LAW-012",
+   "LAW-002"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2021-XZ-Q026",
+  "domain": "D7",
+  "topic": "民法典的调整范围",
+  "slot": "当年施行新法",
+  "ask": "选非",
+  "style": "时政细节识记",
+  "trap": "监管保险业务是行政监管，属保险法；民法典只调整平等主体间的民事关系",
+  "currency": "近年新法新政",
+  "units": [
+   "LAW-006"
+  ],
+  "analog_units": [
+   "LAW-009",
+   "LAW-008"
+  ],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2021-XZ-Q027",
+  "domain": "D7",
+  "topic": "环境保护法所称环境的范围",
+  "slot": "生态环境法常识",
+  "ask": "正选",
+  "style": "常识识记",
+  "trap": "识记",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2021-XZ-Q028",
+  "domain": "D11",
+  "topic": "急救、消防标志、预警等常识",
+  "slot": "生活常识",
+  "ask": "正选",
+  "style": "常识识记",
+  "trap": "煤气中毒先移至通风处；暴雨红色预警才停课；隔夜茶致癌并无依据",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2021-XZ-Q029",
+  "domain": "D12",
+  "topic": "立春民俗与名称的配对",
+  "slot": "传统历法节俗",
+  "ask": "正选",
+  "style": "排序配对",
+  "trap": "鞭打春牛叫打春；踏青、插枝、采绿植三项的名称与内容互相错位",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2021-XZ-Q030",
+  "domain": "D8",
+  "topic": "广东十三五收官的主要成就",
+  "slot": "省政府工作报告",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "识记",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "GD-006",
+   "GD-014"
+  ],
+  "in_scope": true,
+  "my_answer": "D"
+ }
+]

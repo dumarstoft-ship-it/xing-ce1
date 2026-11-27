@@ -1,0 +1,1117 @@
+[
+ {
+  "id": "GD2022-XJ-Q011",
+  "domain": "D2",
+  "topic": "全过程人民民主重大理念",
+  "slot": "新思想原话理解",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "干扰项全链条、全方位、全覆盖是其特点描述，被冒充成理念名称",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P3-04",
+   "P2-12"
+  ],
+  "in_scope": true,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2022-XJ-Q012",
+  "domain": "D6",
+  "topic": "百年决议四个历史时期的主要任务",
+  "slot": "上年中央全会文件",
+  "ask": "正选",
+  "style": "排序配对",
+  "trap": "前三个时期的主要任务被轮换错配，只有新时代的任务对应正确",
+  "currency": "当年时政",
+  "units": [
+   "H01"
+  ],
+  "analog_units": [
+   "P2-12",
+   "P4-04"
+  ],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2022-XJ-Q013",
+  "domain": "D9",
+  "topic": "大国重器与宣传语的功能对应",
+  "slot": "科技成就",
+  "ask": "选非",
+  "style": "排序配对",
+  "trap": "复兴号是高铁，“降落、起飞”不合其功能；要按装备用途判断宣传语",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2022-XJ-Q014",
+  "domain": "D2",
+  "topic": "团结合作、同舟共济的用典",
+  "slot": "古语配观点",
+  "ask": "正选",
+  "style": "古语诗词配观点",
+  "trap": "四句古语主旨不同：以民为镜、众行易趋、居安思危、不言而行",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2022-XJ-Q015",
+  "domain": "D1",
+  "topic": "认识对实践的指导作用",
+  "slot": "马哲材料配原理",
+  "ask": "正选",
+  "style": "材料或引文配原理",
+  "trap": "题眼是“重视理论的作用”，对应认识反作用于实践；干扰项是检验标准、认识本质",
+  "currency": "常青",
+  "units": [
+   "M6.10",
+   "M2.19"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2022-XJ-Q016",
+  "domain": "D3",
+  "topic": "十四五清洁低碳能源体系举措",
+  "slot": "五年规划",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "四项都是纲要原文举措，应全选；易误排“以电代煤”或“沿海核电”",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P2-14",
+   "P2-12"
+  ],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2022-XJ-Q017",
+  "domain": "D3",
+  "topic": "结构性就业矛盾的对策",
+  "slot": "民生社会政策",
+  "ask": "正选",
+  "style": "概念表述辨析",
+  "trap": "四项都是就业举措，只有职业培训直接解决技能与岗位不匹配",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2022-XJ-Q018",
+  "domain": "D3",
+  "topic": "推进农业绿色发展的政策表述",
+  "slot": "三农政策",
+  "ask": "正选",
+  "style": "概念表述辨析",
+  "trap": "“禁牧轮牧休牧”改成全国禁牧，“严控占用耕地”改成放开，“适度规模”改成各种规模",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2022-XJ-Q019",
+  "domain": "D9",
+  "topic": "东方红一号与中国航天日",
+  "slot": "科技成就",
+  "ask": "正选",
+  "style": "常识识记",
+  "trap": "按年代区分：1970年是第一颗人造卫星，神舟、嫦娥都在1999年以后",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2022-XJ-Q020",
+  "domain": "D6",
+  "topic": "第一次国共合作后的革命中心广州",
+  "slot": "广东党史",
+  "ask": "正选",
+  "style": "常识识记",
+  "trap": "识记",
+  "currency": "常青",
+  "units": [
+   "H07",
+   "H05"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2022-XJ-Q021",
+  "domain": "D6",
+  "topic": "毛泽东诗词中描写长征的诗句",
+  "slot": "诗词配党史",
+  "ask": "正选",
+  "style": "古语诗词配观点",
+  "trap": "四句都是毛泽东诗词，分别写长沙、占领南京、反“围剿”、长征",
+  "currency": "常青",
+  "units": [
+   "H11"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2022-XJ-Q022",
+  "domain": "D4",
+  "topic": "干部破格提拔的条件和情形",
+  "slot": "党内法规条文",
+  "ask": "选非",
+  "style": "概念表述辨析",
+  "trap": "“艰苦边远、贫困地区急需引进”被换成“经济发达、高新地区急需引进”",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2022-XJ-Q023",
+  "domain": "D6",
+  "topic": "改革开放以来重大事件时间排序",
+  "slot": "党史事件排序",
+  "ask": "正选",
+  "style": "排序配对",
+  "trap": "关键是入世2001、取消农业税2006、北京奥运2008三者的先后",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2022-XJ-Q024",
+  "domain": "D11",
+  "topic": "广告语中的营养与物理常识",
+  "slot": "物理化学常识",
+  "ask": "正选",
+  "style": "常识识记",
+  "trap": "错项夸大或偷换：矿泉水不能满足全部矿物质需求，果糖也是糖",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2022-XJ-Q025",
+  "domain": "D12",
+  "topic": "咏物诗句与植物的对应",
+  "slot": "古代文史",
+  "ask": "选非",
+  "style": "排序配对",
+  "trap": "“千磨万击还坚劲”出自郑燮《竹石》，咏的是竹，不是梅",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2022-XZ-Q011",
+  "domain": "D2",
+  "topic": "全过程人民民主重大理念",
+  "slot": "新思想原话理解",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "干扰项全链条、全方位、全覆盖是其特点描述，被冒充成理念名称",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P3-04",
+   "P2-12"
+  ],
+  "in_scope": true,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2022-XZ-Q012",
+  "domain": "D5",
+  "topic": "基层群众性自治组织的基础作用",
+  "slot": "基层治理",
+  "ask": "正选",
+  "style": "概念表述辨析",
+  "trap": "作用定位词错配：党组织领导、政府主导、自治组织基础、社会力量协同",
+  "currency": "常青",
+  "units": [
+   "P4-10"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2022-XZ-Q013",
+  "domain": "D6",
+  "topic": "百年决议四个历史时期的主要任务",
+  "slot": "上年中央全会文件",
+  "ask": "正选",
+  "style": "排序配对",
+  "trap": "前三个时期的主要任务被轮换错配，只有新时代的任务对应正确",
+  "currency": "当年时政",
+  "units": [
+   "H01"
+  ],
+  "analog_units": [
+   "P2-12",
+   "P4-04"
+  ],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2022-XZ-Q014",
+  "domain": "D9",
+  "topic": "大国重器与宣传语的功能对应",
+  "slot": "科技成就",
+  "ask": "选非",
+  "style": "排序配对",
+  "trap": "复兴号是高铁，“降落、起飞”不合其功能；要按装备用途判断宣传语",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2022-XZ-Q015",
+  "domain": "D2",
+  "topic": "团结合作、同舟共济的用典",
+  "slot": "古语配观点",
+  "ask": "正选",
+  "style": "古语诗词配观点",
+  "trap": "四句古语主旨不同：以民为镜、众行易趋、居安思危、不言而行",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2022-XZ-Q016",
+  "domain": "D1",
+  "topic": "认识对实践的指导作用",
+  "slot": "马哲材料配原理",
+  "ask": "正选",
+  "style": "材料或引文配原理",
+  "trap": "题眼是“重视理论的作用”，对应认识反作用于实践；干扰项是检验标准、认识本质",
+  "currency": "常青",
+  "units": [
+   "M6.10",
+   "M2.19"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2022-XZ-Q017",
+  "domain": "D7",
+  "topic": "乡村振兴促进法规定的原则",
+  "slot": "当年施行新法",
+  "ask": "选非",
+  "style": "概念表述辨析",
+  "trap": "主体被替换：法律规定坚持农民主体地位，错项写成政府主体地位",
+  "currency": "近年新法新政",
+  "units": [],
+  "analog_units": [
+   "LAW-011",
+   "LAW-019"
+  ],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2022-XZ-Q018",
+  "domain": "D6",
+  "topic": "改革开放以来重大事件时间排序",
+  "slot": "党史事件排序",
+  "ask": "正选",
+  "style": "排序配对",
+  "trap": "关键是入世2001、取消农业税2006、北京奥运2008三者的先后",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2022-XZ-Q019",
+  "domain": "D3",
+  "topic": "十四五清洁低碳能源体系举措",
+  "slot": "五年规划",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "四项都是纲要原文举措，应全选；易误排“以电代煤”或“沿海核电”",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P2-14",
+   "P2-12"
+  ],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2022-XZ-Q020",
+  "domain": "D3",
+  "topic": "减贫成就与两不愁三保障的对应",
+  "slot": "三农政策",
+  "ask": "选非",
+  "style": "排序配对",
+  "trap": "“贫困人口基本医疗有保障”配了面向全民的公共卫生服务体系，对象错位",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "K-GD-02",
+   "GD-007"
+  ],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2022-XZ-Q021",
+  "domain": "D3",
+  "topic": "农村人居环境整治提升的要求",
+  "slot": "三农政策",
+  "ask": "选非",
+  "style": "概念表述辨析",
+  "trap": "责任主体绝对化：方案是探索农户付费制度，错项写成政府全额支付",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "K-GD-10",
+   "GD-007"
+  ],
+  "in_scope": true,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2022-XZ-Q022",
+  "domain": "D6",
+  "topic": "第一次国共合作后的革命中心广州",
+  "slot": "广东党史",
+  "ask": "正选",
+  "style": "常识识记",
+  "trap": "识记",
+  "currency": "常青",
+  "units": [
+   "H07",
+   "H05"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2022-XZ-Q023",
+  "domain": "D9",
+  "topic": "东方红一号与中国航天日",
+  "slot": "科技成就",
+  "ask": "正选",
+  "style": "常识识记",
+  "trap": "按年代区分：1970年是第一颗人造卫星，神舟、嫦娥都在1999年以后",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2022-XZ-Q024",
+  "domain": "D3",
+  "topic": "乡村全面振兴的2050年目标",
+  "slot": "三农政策",
+  "ask": "选非",
+  "style": "时政细节识记",
+  "trap": "生造“农贸兴”，混入“农业强、农村美、农民富”三句固定表述",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2022-XZ-Q025",
+  "domain": "D3",
+  "topic": "推进农业绿色发展的政策表述",
+  "slot": "三农政策",
+  "ask": "正选",
+  "style": "概念表述辨析",
+  "trap": "“禁牧轮牧休牧”改成全国禁牧，“严控占用耕地”改成放开，“适度规模”改成各种规模",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2022-XZ-Q026",
+  "domain": "D11",
+  "topic": "广告语中的营养与物理常识",
+  "slot": "物理化学常识",
+  "ask": "正选",
+  "style": "常识识记",
+  "trap": "错项夸大或偷换：矿泉水不能满足全部矿物质需求，果糖也是糖",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2022-XZ-Q027",
+  "domain": "D4",
+  "topic": "干部破格提拔的条件和情形",
+  "slot": "党内法规条文",
+  "ask": "选非",
+  "style": "概念表述辨析",
+  "trap": "“艰苦边远、贫困地区急需引进”被换成“经济发达、高新地区急需引进”",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2022-XZ-Q028",
+  "domain": "D7",
+  "topic": "损害赔偿属于民事责任",
+  "slot": "民法常识",
+  "ask": "正选",
+  "style": "法条情境应用",
+  "trap": "赔偿损失是民事责任方式；未受行政处罚或刑罚，道德责任不是法律责任",
+  "currency": "常青",
+  "units": [
+   "LAW-014"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2022-XZ-Q029",
+  "domain": "D12",
+  "topic": "古诗句所写季节的排序",
+  "slot": "古代文史",
+  "ask": "正选",
+  "style": "排序配对",
+  "trap": "抓季节意象：杏花杨柳为春，稻花蛙声为夏，西风为秋，鸟绝人灭为冬",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2022-XZ-Q030",
+  "domain": "D12",
+  "topic": "我国三大海峡的南北位置",
+  "slot": "中国地理常识",
+  "ask": "正选",
+  "style": "排序配对",
+  "trap": "识记",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2023-XJ-Q001",
+  "domain": "D2",
+  "topic": "党的领导与中国式现代化的关系",
+  "slot": "新思想原话理解",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "四句都是总书记讲话原文，应全选；易因“决定根本性质”说得重而漏选",
+  "currency": "当年时政",
+  "units": [
+   "P1-10"
+  ],
+  "analog_units": [
+   "P3-07",
+   "P2-12"
+  ],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2023-XJ-Q002",
+  "domain": "D2",
+  "topic": "二十大报告“两大奇迹”表述",
+  "slot": "上年中央全会文件",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "“经济快速发展、社会长期稳定”被换成高速发展、全面小康、脱贫等相近成就",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P2-12",
+   "P4-04"
+  ],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2023-XJ-Q003",
+  "domain": "D3",
+  "topic": "二十大报告完善分配制度的表述",
+  "slot": "上年中央全会文件",
+  "ask": "正选",
+  "style": "概念表述辨析",
+  "trap": "“调节过高收入”改成减少高收入者收入，“规范财富积累机制”改成收紧渠道",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P2-12",
+   "P2-11"
+  ],
+  "in_scope": true,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2023-XJ-Q004",
+  "domain": "D3",
+  "topic": "二十大报告现代化产业体系举措",
+  "slot": "上年中央全会文件",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "把乡村振兴（农业支持保护）和对外开放（西部陆海新通道）的举措混入",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P2-16",
+   "P2-04"
+  ],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2023-XJ-Q005",
+  "domain": "D3",
+  "topic": "新时代十年对外开放成就",
+  "slot": "上年中央全会文件",
+  "ask": "选非",
+  "style": "时政细节识记",
+  "trap": "领域错位：“共建共治共享”是社会治理领域的成就，被放进对外开放",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P2-12",
+   "P2-03"
+  ],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2023-XJ-Q006",
+  "domain": "D2",
+  "topic": "六个必须坚持中的系统观念",
+  "slot": "新思想原话理解",
+  "ask": "正选",
+  "style": "材料或引文配原理",
+  "trap": "引文讲统筹全局局部、当前长远等关系，对应系统观念，不是问题导向等",
+  "currency": "当年时政",
+  "units": [
+   "P1-05",
+   "P1-01"
+  ],
+  "analog_units": [
+   "P2-12",
+   "P2-09"
+  ],
+  "in_scope": true,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2023-XJ-Q007",
+  "domain": "D4",
+  "topic": "严明党纪国法的用典",
+  "slot": "古语配观点",
+  "ask": "正选",
+  "style": "古语诗词配观点",
+  "trap": "四句都是谈作风纪律的用典：善始善终、重小节、风气难返、纪律废弛",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2023-XJ-Q008",
+  "domain": "D9",
+  "topic": "新年贺词提到的科技工程成就",
+  "slot": "科技成就",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "张冠李戴：刘洋未乘神十五，白鹤滩非第一大电站，愚公移山出自《列子》",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2023-XJ-Q009",
+  "domain": "D8",
+  "topic": "2023广东高质量发展大会部署",
+  "slot": "省高质量发展大会",
+  "ask": "选非",
+  "style": "概念表述辨析",
+  "trap": "“着力点放在实体经济上”被换成“放在数字经济上”",
+  "currency": "当年时政",
+  "units": [
+   "P2-04",
+   "GD-007"
+  ],
+  "analog_units": [
+   "GD-001",
+   "GD-002"
+  ],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2023-XJ-Q010",
+  "domain": "D6",
+  "topic": "《长征组歌》诗句对应红军长征",
+  "slot": "诗词配党史",
+  "ask": "正选",
+  "style": "古语诗词配观点",
+  "trap": "“野菜充饥”“革命理想高于天”指向长征过雪山草地，其余事件情境不符",
+  "currency": "常青",
+  "units": [
+   "H11"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2023-XJ-Q011",
+  "domain": "D6",
+  "topic": "最高纲领论述出自《论联合政府》",
+  "slot": "党史著作",
+  "ask": "正选",
+  "style": "常识识记",
+  "trap": "要把“最高纲领”的论述定位到1945年七大政治报告，其余著作年代主题不同",
+  "currency": "常青",
+  "units": [
+   "H20"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2023-XJ-Q012",
+  "domain": "D3",
+  "topic": "实现碳中和的科学手段",
+  "slot": "双碳概念",
+  "ask": "选非",
+  "style": "概念表述辨析",
+  "trap": "把压减需求和生产当作手段；碳中和靠替代、转化、封存，不是限制发展",
+  "currency": "常青",
+  "units": [
+   "P2-13",
+   "P2-14"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2023-XJ-Q013",
+  "domain": "D7",
+  "topic": "立法法规定的立法原则",
+  "slot": "宪法常识",
+  "ask": "选非",
+  "style": "概念表述辨析",
+  "trap": "“体现人民意志”被偷换成“符合社会舆论的观点”",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2023-XJ-Q014",
+  "domain": "D7",
+  "topic": "敏感个人信息的范围",
+  "slot": "当年施行新法",
+  "ask": "选非",
+  "style": "概念表述辨析",
+  "trap": "法条列举生物识别、医疗健康、行踪轨迹等；从业经历只是一般个人信息",
+  "currency": "近年新法新政",
+  "units": [],
+  "analog_units": [
+   "LAW-016",
+   "LAW-015"
+  ],
+  "in_scope": true,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2023-XJ-Q015",
+  "domain": "D12",
+  "topic": "古诗句所写节日节气的季节",
+  "slot": "古代文史",
+  "ask": "正选",
+  "style": "古语诗词配观点",
+  "trap": "由“青阳”“岁阴穷暮”“见月几回圆”“端午”判断立春、除夕、中秋、端午",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2023-XZ-Q011",
+  "domain": "D2",
+  "topic": "党的领导与中国式现代化的关系",
+  "slot": "新思想原话理解",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "四句都是总书记讲话原文，应全选；易因“决定根本性质”说得重而漏选",
+  "currency": "当年时政",
+  "units": [
+   "P1-10"
+  ],
+  "analog_units": [
+   "P3-07",
+   "P2-12"
+  ],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2023-XZ-Q012",
+  "domain": "D2",
+  "topic": "二十大报告“两大奇迹”表述",
+  "slot": "上年中央全会文件",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "“经济快速发展、社会长期稳定”被换成高速发展、全面小康、脱贫等相近成就",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P2-12",
+   "P4-04"
+  ],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2023-XZ-Q013",
+  "domain": "D3",
+  "topic": "二十大报告完善分配制度的表述",
+  "slot": "上年中央全会文件",
+  "ask": "正选",
+  "style": "概念表述辨析",
+  "trap": "“调节过高收入”改成减少高收入者收入，“规范财富积累机制”改成收紧渠道",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P2-12",
+   "P2-11"
+  ],
+  "in_scope": true,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2023-XZ-Q014",
+  "domain": "D3",
+  "topic": "二十大报告现代化产业体系举措",
+  "slot": "上年中央全会文件",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "把乡村振兴（农业支持保护）和对外开放（西部陆海新通道）的举措混入",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P2-16",
+   "P2-04"
+  ],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2023-XZ-Q015",
+  "domain": "D2",
+  "topic": "六个必须坚持中的系统观念",
+  "slot": "新思想原话理解",
+  "ask": "正选",
+  "style": "材料或引文配原理",
+  "trap": "引文讲统筹全局局部、当前长远等关系，对应系统观念，不是问题导向等",
+  "currency": "当年时政",
+  "units": [
+   "P1-05",
+   "P1-01"
+  ],
+  "analog_units": [
+   "P2-12",
+   "P2-09"
+  ],
+  "in_scope": true,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2023-XZ-Q016",
+  "domain": "D4",
+  "topic": "严明党纪国法的用典",
+  "slot": "古语配观点",
+  "ask": "正选",
+  "style": "古语诗词配观点",
+  "trap": "四句都是谈作风纪律的用典：善始善终、重小节、风气难返、纪律废弛",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2023-XZ-Q017",
+  "domain": "D3",
+  "topic": "新时代十年对外开放成就",
+  "slot": "上年中央全会文件",
+  "ask": "选非",
+  "style": "时政细节识记",
+  "trap": "领域错位：“共建共治共享”是社会治理领域的成就，被放进对外开放",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P2-12",
+   "P2-03"
+  ],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2023-XZ-Q018",
+  "domain": "D9",
+  "topic": "新年贺词提到的科技工程成就",
+  "slot": "科技成就",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "张冠李戴：刘洋未乘神十五，白鹤滩非第一大电站，愚公移山出自《列子》",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2023-XZ-Q019",
+  "domain": "D8",
+  "topic": "2023广东高质量发展大会部署",
+  "slot": "省高质量发展大会",
+  "ask": "选非",
+  "style": "概念表述辨析",
+  "trap": "“着力点放在实体经济上”被换成“放在数字经济上”",
+  "currency": "当年时政",
+  "units": [
+   "P2-04",
+   "GD-007"
+  ],
+  "analog_units": [
+   "GD-001",
+   "GD-002"
+  ],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2023-XZ-Q020",
+  "domain": "D8",
+  "topic": "广东“三项工程”就业培训品牌",
+  "slot": "省政府工作报告",
+  "ask": "选非",
+  "style": "时政细节识记",
+  "trap": "生造“广东智造”，混入粤菜师傅、广东技工、南粤家政三项工程",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "K-GD-06",
+   "K-GD-02"
+  ],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2023-XZ-Q021",
+  "domain": "D6",
+  "topic": "《长征组歌》诗句对应红军长征",
+  "slot": "诗词配党史",
+  "ask": "正选",
+  "style": "古语诗词配观点",
+  "trap": "“野菜充饥”“革命理想高于天”指向长征过雪山草地，其余事件情境不符",
+  "currency": "常青",
+  "units": [
+   "H11"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2023-XZ-Q022",
+  "domain": "D6",
+  "topic": "最高纲领论述出自《论联合政府》",
+  "slot": "党史著作",
+  "ask": "正选",
+  "style": "常识识记",
+  "trap": "要把“最高纲领”的论述定位到1945年七大政治报告，其余著作年代主题不同",
+  "currency": "常青",
+  "units": [
+   "H20"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2023-XZ-Q023",
+  "domain": "D6",
+  "topic": "海丰成立第一个县级农会",
+  "slot": "广东党史",
+  "ask": "正选",
+  "style": "常识识记",
+  "trap": "识记",
+  "currency": "常青",
+  "units": [
+   "H07"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2023-XZ-Q024",
+  "domain": "D7",
+  "topic": "土地管理法的耕地保护禁止行为",
+  "slot": "涉农法律",
+  "ask": "正选",
+  "style": "常识识记",
+  "trap": "退耕还牧是法律要求的生态修复方向，不是禁止行为；其余三项均被禁止",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2023-XZ-Q025",
+  "domain": "D7",
+  "topic": "敏感个人信息的范围",
+  "slot": "当年施行新法",
+  "ask": "选非",
+  "style": "概念表述辨析",
+  "trap": "法条列举生物识别、医疗健康、行踪轨迹等；从业经历只是一般个人信息",
+  "currency": "近年新法新政",
+  "units": [],
+  "analog_units": [
+   "LAW-016",
+   "LAW-015"
+  ],
+  "in_scope": true,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2023-XZ-Q026",
+  "domain": "D7",
+  "topic": "乡村振兴促进法的具体规定",
+  "slot": "当年施行新法",
+  "ask": "选非",
+  "style": "概念表述辨析",
+  "trap": "主体被替换：评估由县级以上地方人民政府负责，错项写成县级人大",
+  "currency": "近年新法新政",
+  "units": [],
+  "analog_units": [
+   "K-LAW-02",
+   "K-LAW-05"
+  ],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2023-XZ-Q027",
+  "domain": "D7",
+  "topic": "立法法规定的立法原则",
+  "slot": "宪法常识",
+  "ask": "选非",
+  "style": "概念表述辨析",
+  "trap": "“体现人民意志”被偷换成“符合社会舆论的观点”",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2023-XZ-Q028",
+  "domain": "D3",
+  "topic": "我国社会保障体系的构成与定位",
+  "slot": "民生社会政策",
+  "ask": "选非",
+  "style": "概念表述辨析",
+  "trap": "主次颠倒：基本保障由政府主导，市场和社会力量承担的是补充保障",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2023-XZ-Q029",
+  "domain": "D12",
+  "topic": "古诗句所写节日节气的季节",
+  "slot": "古代文史",
+  "ask": "正选",
+  "style": "古语诗词配观点",
+  "trap": "由“青阳”“岁阴穷暮”“见月几回圆”“端午”判断立春、除夕、中秋、端午",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2023-XZ-Q030",
+  "domain": "D3",
+  "topic": "实现碳中和的科学手段",
+  "slot": "双碳概念",
+  "ask": "选非",
+  "style": "概念表述辨析",
+  "trap": "把压减需求和生产当作手段；碳中和靠替代、转化、封存，不是限制发展",
+  "currency": "常青",
+  "units": [
+   "P2-13",
+   "P2-14"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "C"
+ }
+]

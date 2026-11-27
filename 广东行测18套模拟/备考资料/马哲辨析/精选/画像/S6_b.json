@@ -1,0 +1,753 @@
+[
+ {
+  "id": "GD2024-Q001",
+  "domain": "D2",
+  "topic": "制度最大优势是党的领导",
+  "slot": "新思想原话理解",
+  "ask": "判断",
+  "style": "概念表述辨析",
+  "trap": "原话无替换；常见设错是与“最本质的特征”搭配互换",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "正确"
+ },
+ {
+  "id": "GD2024-Q002",
+  "domain": "D2",
+  "topic": "两个确立的内容与意义",
+  "slot": "新思想原话理解",
+  "ask": "判断",
+  "style": "概念表述辨析",
+  "trap": "六中全会原话无替换；易把“确立”与“维护”的对象混换",
+  "currency": "常青",
+  "units": [
+   "P1-06"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "正确"
+ },
+ {
+  "id": "GD2024-Q003",
+  "domain": "D5",
+  "topic": "十四届全国人大二次会议开幕",
+  "slot": "当年全国两会",
+  "ask": "判断",
+  "style": "时政细节识记",
+  "trap": "届次、会次、日期均属实；此类题常在届次或日期上设错",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P4-02",
+   "P4-06"
+  ],
+  "in_scope": true,
+  "my_answer": "正确"
+ },
+ {
+  "id": "GD2024-Q004",
+  "domain": "D2",
+  "topic": "中华民族共同体认同起决定作用",
+  "slot": "新思想原话理解",
+  "ask": "判断",
+  "style": "概念表述辨析",
+  "trap": "起决定作用的是对共同体的认同，不是种族、血缘、地域、宗教",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "正确"
+ },
+ {
+  "id": "GD2024-Q005",
+  "domain": "D8",
+  "topic": "广东光热水资源丰富",
+  "slot": "广东省情地理",
+  "ask": "判断",
+  "style": "常识识记",
+  "trap": "程度颠倒：光热水资源较丰富的地区被说成相对匮乏",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "错误"
+ },
+ {
+  "id": "GD2024-Q006",
+  "domain": "D2",
+  "topic": "六个必须坚持：胸怀天下",
+  "slot": "新思想原话理解",
+  "ask": "正选",
+  "style": "材料或引文配原理",
+  "trap": "四项同属六个必须坚持，凭“世界眼光、人类共同问题”定位",
+  "currency": "常青",
+  "units": [
+   "P1-01",
+   "P1-03"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2024-Q007",
+  "domain": "D2",
+  "topic": "文化传承创新的古语表达",
+  "slot": "古语配原理",
+  "ask": "正选",
+  "style": "古语诗词配观点",
+  "trap": "C讲承接前人遗产并出新；A讲用字立义，D讲艺术构思",
+  "currency": "常青",
+  "units": [
+   "P1-11"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2024-Q008",
+  "domain": "D6",
+  "topic": "《反对本本主义》与调查研究",
+  "slot": "党史著作",
+  "ask": "正选",
+  "style": "常识识记",
+  "trap": "同为1930年的《星星之火》作干扰，要按论断主旨而非年份区分",
+  "currency": "常青",
+  "units": [
+   "H17"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2024-Q009",
+  "domain": "D8",
+  "topic": "大湾区“一点两地”战略定位",
+  "slot": "大湾区",
+  "ask": "选非",
+  "style": "时政细节识记",
+  "trap": "把总书记对江苏说的“双向开放枢纽”混入大湾区三个定位",
+  "currency": "当年时政",
+  "units": [
+   "GD-009"
+  ],
+  "analog_units": [
+   "GD-009",
+   "GD-010"
+  ],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2024-Q010",
+  "domain": "D8",
+  "topic": "2024省高质量发展大会创新要求",
+  "slot": "省高质量发展大会",
+  "ask": "选非",
+  "style": "时政细节识记",
+  "trap": "主体替换：支持企业做创新主角、资源向企业集聚，被换成高校",
+  "currency": "当年时政",
+  "units": [
+   "P2-07"
+  ],
+  "analog_units": [
+   "GD-001",
+   "GD-002"
+  ],
+  "in_scope": true,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2024-Q011",
+  "domain": "D3",
+  "topic": "二十大报告：完善社会治理体系",
+  "slot": "党代会报告表述",
+  "ask": "正选",
+  "style": "概念表述辨析",
+  "trap": "C把双碳“广泛而深刻的经济社会系统性变革”定性移给社会治理",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P2-12",
+   "P3-07"
+  ],
+  "in_scope": true,
+  "my_answer": "ABD"
+ },
+ {
+  "id": "GD2024-Q012",
+  "domain": "D1",
+  "topic": "矛盾同一性的含义与作用",
+  "slot": "马哲概念多选",
+  "ask": "正选",
+  "style": "概念表述辨析",
+  "trap": "D把斗争性的作用（促成矛盾统一体过渡的决定力量）安给同一性",
+  "currency": "常青",
+  "units": [
+   "M4.03",
+   "M4.05"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "ABC"
+ },
+ {
+  "id": "GD2024-Q013",
+  "domain": "D6",
+  "topic": "英模名句对应人物及所处时期",
+  "slot": "精神谱系",
+  "ask": "正选",
+  "style": "排序配对",
+  "trap": "按事迹年代而非名句年代归期：陈祥榕属新时代，李大钊属建党前后",
+  "currency": "常青",
+  "units": [
+   "H31",
+   "H01"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "BC"
+ },
+ {
+  "id": "GD2024-Q014",
+  "domain": "D1",
+  "topic": "道德起源的三个条件",
+  "slot": "马哲概念多选",
+  "ask": "正选",
+  "style": "概念表述辨析",
+  "trap": "混入唯心的“天赋善性”说；首要前提、客观条件、主观条件不可互换",
+  "currency": "常青",
+  "units": [
+   "M7.32"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "ACD"
+ },
+ {
+  "id": "GD2024-Q015",
+  "domain": "D7",
+  "topic": "爱国主义教育法的教育内容",
+  "slot": "当年施行新法",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "识记",
+  "currency": "近年新法新政",
+  "units": [
+   "LAW-026"
+  ],
+  "analog_units": [
+   "LAW-007",
+   "K-LAW-05"
+  ],
+  "in_scope": true,
+  "my_answer": "ABCD"
+ },
+ {
+  "id": "GD2025-Q001",
+  "domain": "D2",
+  "topic": "“第二个结合”的含义",
+  "slot": "新思想原话理解",
+  "ask": "判断",
+  "style": "概念表述辨析",
+  "trap": "原话无替换；易把第二个结合的对象换成“中国具体实际”",
+  "currency": "常青",
+  "units": [
+   "P1-11",
+   "P1-06"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "正确"
+ },
+ {
+  "id": "GD2025-Q002",
+  "domain": "D3",
+  "topic": "科技创新是新质生产力核心要素",
+  "slot": "新思想原话理解",
+  "ask": "判断",
+  "style": "概念表述辨析",
+  "trap": "总书记原话无替换；易与“核心标志是全要素生产率提升”混淆",
+  "currency": "当年时政",
+  "units": [
+   "P2-05"
+  ],
+  "analog_units": [
+   "P2-05",
+   "P2-06"
+  ],
+  "in_scope": true,
+  "my_answer": "正确"
+ },
+ {
+  "id": "GD2025-Q003",
+  "domain": "D2",
+  "topic": "国家安全与中国式现代化的关系",
+  "slot": "上年中央全会文件",
+  "ask": "判断",
+  "style": "概念表述辨析",
+  "trap": "三中全会《决定》原话；常见设错是调换“X是现代化的Y”定位",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P2-12",
+   "P3-07"
+  ],
+  "in_scope": true,
+  "my_answer": "正确"
+ },
+ {
+  "id": "GD2025-Q004",
+  "domain": "D1",
+  "topic": "马克思主义的显著特征是实践性",
+  "slot": "马哲判断陷阱",
+  "ask": "判断",
+  "style": "概念表述辨析",
+  "trap": "属性错配：区别于其他理论的显著特征是实践性，被换成科学性",
+  "currency": "常青",
+  "units": [
+   "M1.16",
+   "M1.15"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "错误"
+ },
+ {
+  "id": "GD2025-Q005",
+  "domain": "D4",
+  "topic": "好干部标准：信念坚定",
+  "slot": "古语配原理",
+  "ask": "正选",
+  "style": "古语诗词配观点",
+  "trap": "古语讲“志”之所向不可阻挡，对应理想信念，易误选敢于担当",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2025-Q006",
+  "domain": "D2",
+  "topic": "六个必须坚持：自信自立",
+  "slot": "新思想原话理解",
+  "ask": "正选",
+  "style": "材料或引文配原理",
+  "trap": "“发展马克思主义、不封闭僵化”易误选守正创新，题眼是四个自信",
+  "currency": "常青",
+  "units": [
+   "P1-01",
+   "P1-03"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2025-Q007",
+  "domain": "D2",
+  "topic": "思想道德与法律的关系",
+  "slot": "新思想原话理解",
+  "ask": "选非",
+  "style": "概念表述辨析",
+  "trap": "把二者共有的“调节思想行为”功能说成道德独有、法律没有",
+  "currency": "常青",
+  "units": [
+   "M7.34",
+   "M7.35",
+   "M7.18"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2025-Q008",
+  "domain": "D2",
+  "topic": "人民至上的古语表达",
+  "slot": "古语配原理",
+  "ask": "正选",
+  "style": "古语诗词配观点",
+  "trap": "A讲汇聚众力众智也沾群众，B“与天下同利”才是以人民利益为先",
+  "currency": "常青",
+  "units": [
+   "P1-02"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2025-Q009",
+  "domain": "D6",
+  "topic": "党史事件与历史时期对应",
+  "slot": "党史时期定位",
+  "ask": "正选",
+  "style": "常识识记",
+  "trap": "时期错配：三步走定于1987年，属改革开放时期；建党初已同第二国际划界",
+  "currency": "常青",
+  "units": [
+   "H26",
+   "H27",
+   "H02"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "BD"
+ },
+ {
+  "id": "GD2025-Q010",
+  "domain": "D1",
+  "topic": "唯物辩证法的地位、本质与方法",
+  "slot": "马哲概念多选",
+  "ask": "正选",
+  "style": "概念表述辨析",
+  "trap": "C用“不属于”否定分析与综合这一辩证思维方法，其余为教材原话",
+  "currency": "常青",
+  "units": [
+   "M4.01",
+   "M5.17",
+   "M5.18"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "ABD"
+ },
+ {
+  "id": "GD2025-Q011",
+  "domain": "D9",
+  "topic": "2024年科技成就辨误",
+  "slot": "科技成就",
+  "ask": "选非",
+  "style": "时政细节识记",
+  "trap": "身份替换：“梦想”号是大洋钻探船，被说成深海载人潜水器",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2025-Q012",
+  "domain": "D3",
+  "topic": "耐心资本的含义",
+  "slot": "上年中央全会文件",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "名词释义，四项只差投资期限长短；“耐心”对应长期",
+  "currency": "当年时政",
+  "units": [
+   "P2-11"
+  ],
+  "analog_units": [
+   "P2-11",
+   "P2-07"
+  ],
+  "in_scope": true,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2025-Q013",
+  "domain": "D3",
+  "topic": "基本农作物的范围",
+  "slot": "上年中央全会文件",
+  "ask": "选非",
+  "style": "时政细节识记",
+  "trap": "名单外混入：基本农作物指粮棉油糖菜等，苗木不在其列",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P2-16",
+   "GD-004"
+  ],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2025-Q014",
+  "domain": "D7",
+  "topic": "社会保险的缴费主体",
+  "slot": "社会法常识",
+  "ask": "正选",
+  "style": "常识识记",
+  "trap": "五险中仅工伤、生育由单位单方缴费，养老医疗失业职工也要缴",
+  "currency": "常青",
+  "units": [
+   "LAW-027"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2025-Q015",
+  "domain": "D8",
+  "topic": "2025省高质量发展大会产业表述",
+  "slot": "省高质量发展大会",
+  "ask": "正选",
+  "style": "时政细节识记",
+  "trap": "原文填空；干扰项用“先进制造业高地”“新质生产力主阵地”拼接",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "GD-001",
+   "GD-002"
+  ],
+  "in_scope": true,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2026-Q001",
+  "domain": "D8",
+  "topic": "总书记考察广东讲话要求",
+  "slot": "总书记视察广东讲话",
+  "ask": "判断",
+  "style": "时政细节识记",
+  "trap": "2025年11月考察广东讲话原话，无替换",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P4-14",
+   "GD-014"
+  ],
+  "in_scope": true,
+  "my_answer": "正确"
+ },
+ {
+  "id": "GD2026-Q002",
+  "domain": "D3",
+  "topic": "农业农村现代化的定位",
+  "slot": "上年中央全会文件",
+  "ask": "判断",
+  "style": "概念表述辨析",
+  "trap": "四中全会《建议》原话；常见设错是改“全局和成色”等定位词",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P2-12",
+   "P3-07"
+  ],
+  "in_scope": true,
+  "my_answer": "正确"
+ },
+ {
+  "id": "GD2026-Q003",
+  "domain": "D3",
+  "topic": "现代化产业体系的定位",
+  "slot": "上年中央全会文件",
+  "ask": "判断",
+  "style": "概念表述辨析",
+  "trap": "《建议》原话；易与高质量发展、科技自立自强等的定位互换",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P2-12",
+   "P3-07"
+  ],
+  "in_scope": true,
+  "my_answer": "正确"
+ },
+ {
+  "id": "GD2026-Q004",
+  "domain": "D1",
+  "topic": "生产力是社会发展根本动力",
+  "slot": "马哲判断陷阱",
+  "ask": "判断",
+  "style": "概念表述辨析",
+  "trap": "主体替换：原话主语“生产力”被换成“生产关系”",
+  "currency": "常青",
+  "units": [
+   "M7.24",
+   "M7.15"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "错误"
+ },
+ {
+  "id": "GD2026-Q005",
+  "domain": "D2",
+  "topic": "守正与创新的辩证关系",
+  "slot": "新思想原话理解",
+  "ask": "选非",
+  "style": "概念表述辨析",
+  "trap": "关系颠倒：守正是创新的前提和基础，被倒成创新是守正的基础",
+  "currency": "常青",
+  "units": [
+   "P1-04"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2026-Q006",
+  "domain": "D3",
+  "topic": "积极稳妥推进碳达峰碳中和",
+  "slot": "发展战略政策表述",
+  "ask": "正选",
+  "style": "概念表述辨析",
+  "trap": "运动式减碳、一刀切关停、路径由各国协商都错；应自主、先立后破",
+  "currency": "常青",
+  "units": [
+   "P2-14"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2026-Q007",
+  "domain": "D2",
+  "topic": "宪法随经济基础变化而发展",
+  "slot": "古语配原理",
+  "ask": "正选",
+  "style": "古语诗词配观点",
+  "trap": "B讲法随时势而变；C讲法贵执行，A讲公平正直，D讲举用正直之人",
+  "currency": "常青",
+  "units": [
+   "M7.21"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "B"
+ },
+ {
+  "id": "GD2026-Q008",
+  "domain": "D3",
+  "topic": "治水方针与水资源刚性约束",
+  "slot": "发展战略政策表述",
+  "ask": "选非",
+  "style": "概念表述辨析",
+  "trap": "方向颠倒：应以水定需、水是刚性约束，被说成按发展需要找水",
+  "currency": "常青",
+  "units": [
+   "P2-15"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2026-Q009",
+  "domain": "D2",
+  "topic": "实事求是思想路线的理解",
+  "slot": "新思想原话理解",
+  "ask": "正选",
+  "style": "概念表述辨析",
+  "trap": "C把“基础在搞清实事、关键在求是”对调；A把从实际出发换成从本本出发",
+  "currency": "常青",
+  "units": [
+   "M4.21"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "BD"
+ },
+ {
+  "id": "GD2026-Q010",
+  "domain": "D1",
+  "topic": "马克思主义物质范畴",
+  "slot": "马哲概念多选",
+  "ask": "正选",
+  "style": "概念表述辨析",
+  "trap": "B把世界统一于物质说成多种具体物质的集合，混同朴素唯物主义",
+  "currency": "常青",
+  "units": [
+   "M2.03",
+   "M2.05",
+   "M2.01"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "ACD"
+ },
+ {
+  "id": "GD2026-Q011",
+  "domain": "D5",
+  "topic": "五年规划（计划）的沿革",
+  "slot": "五年规划",
+  "ask": "正选",
+  "style": "常识识记",
+  "trap": "时间节点替换：一五始于1953年，十一五改称规划，十四五2025年收官",
+  "currency": "常青",
+  "units": [
+   "H32"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "D"
+ },
+ {
+  "id": "GD2026-Q012",
+  "domain": "D9",
+  "topic": "“十四五”发展成就辨误",
+  "slot": "发展成就盘点",
+  "ask": "选非",
+  "style": "时政细节识记",
+  "trap": "一字之差：规模全球最大的是中等收入群体，被写成高等收入群体",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [],
+  "in_scope": false,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2026-Q013",
+  "domain": "D8",
+  "topic": "大湾区跨江跨海通道",
+  "slot": "大湾区",
+  "ask": "选非",
+  "style": "时政细节识记",
+  "trap": "“首座”张冠李戴：黄茅海通道2024年才通车，虎门大桥1997年已跨珠江口",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "GD-010",
+   "GD-011"
+  ],
+  "in_scope": true,
+  "my_answer": "A"
+ },
+ {
+  "id": "GD2026-Q014",
+  "domain": "D7",
+  "topic": "国歌的奏唱场合与禁止情形",
+  "slot": "宪法常识",
+  "ask": "选非",
+  "style": "法条情境应用",
+  "trap": "法定场合奏唱均合法；用作公共场所背景音乐是法律明令禁止",
+  "currency": "常青",
+  "units": [
+   "LAW-025"
+  ],
+  "analog_units": [],
+  "in_scope": true,
+  "my_answer": "C"
+ },
+ {
+  "id": "GD2026-Q015",
+  "domain": "D3",
+  "topic": "十五五建议的新兴产业名单",
+  "slot": "上年中央全会文件",
+  "ask": "选非",
+  "style": "时政细节识记",
+  "trap": "分类错位：船舶在《建议》中列入传统产业优化提升，不属新兴产业",
+  "currency": "当年时政",
+  "units": [
+   "P2-16",
+   "GD-004"
+  ],
+  "analog_units": [
+   "P2-16",
+   "GD-004"
+  ],
+  "in_scope": true,
+  "my_answer": "A"
+ }
+]
