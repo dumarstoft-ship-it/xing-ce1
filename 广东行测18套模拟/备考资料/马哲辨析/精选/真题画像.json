@@ -7,6 +7,7 @@
   "n_recent": 45,
   "total_weight": 371,
   "weight_rule": "年份权重：2024—2026年为3，2022—2023年为2，2019—2021年为1，2013—2018年为0.5；选调生卷再乘0.5；重复题记0",
+  "hit_rule": "直接命中 = merged.json 里 units 去掉 weak_units 之后的卡（学了这张卡对答这道题有实质帮助）；弱命中 = weak_units（同一知识点，但学了那张卡仍答不出那道题），单独统计，不进直接命中的卡数、题数、加权、分摊和覆盖率；同位命中 = analog_units。本文件里不带 weak 字样的 n、weighted、recent_n、units_hit、units_direct_hit 等都只算直接命中。",
   "weight_by_period": {
    "2013—2018": {
     "n": 110,
@@ -80,13 +81,17 @@
    "share_by_period": "四个时期省考卷各领域的不加权占比，用来看走向",
    "share_groups": "把领域并成几组后的加权占比和近三年占比",
    "recent_papers": "近三年三张卷逐题的题型、领域、命题位、考点和命中的知识点",
-   "slots": "每个统一命题位：出现年份、加权次数、近三年次数、直接命中和同位的知识点",
-   "unit_hits": "被真题直接命中的知识点，按加权次数排序；weak 为弱命中",
+   "slots": "每个统一命题位：出现年份、加权次数、近三年次数；units 是直接命中的知识点，weak_units 是弱命中的，analog_units 是同位的",
+   "unit_hits_summary": "直接命中、只有弱命中、同位命中、没被碰到的知识点各多少个",
+   "unit_hits": "被真题直接命中过的知识点，按直接命中的加权次数排序；同一张卡的弱命中另记在 n_weak、weighted_weak，hits 里 weak=true 的是弱命中；timely_only=true 表示它的直接命中全部来自时效题（当年时政或当年新法）",
+   "weak_only_hits": "只有弱命中、没有直接命中的知识点",
    "analog_hits": "有同位命中的知识点，按加权次数排序",
    "forms": "近三年和2022—2023年的题型×问法×考法分布，以及判断、多选的答案分布",
-   "coverage": "题库对真题的覆盖：直接命中、只有同位卡、无对应、题库外各多少题",
-   "module_share": "题库各模块对应的真题占比、题库规模、命中的卡数；mazhe_inner 是马哲七个模块",
-   "currency": "常青题、当年时政题、新法题在各时期的数量"
+   "coverage": "题库对真题的覆盖：直接命中、只有弱命中、只有同位卡、无对应、题库外各多少题",
+   "module_share": "题库各模块对应的真题占比、题库规模、命中的卡数；mazhe_inner 是马哲七个模块，mazhe_priority 是马哲卡按档次的命中情况",
+   "currency": "常青题、当年时政题、新法题在各时期的数量；2024-2026_timely_ids 是近三年各卷的时效题",
+   "backtest": "回测：只用某张卷之前的真题看这张卷，以前被直接命中过的卡、以前出现过的命题位各延续了多少；以及重复被命中的卡",
+   "bank_selectable": "题库里可选的题数（去掉用户做过的近三年真题原题、暂停出题的题）和没有题可选的卡"
   }
  },
  "by_year_domain": [
@@ -1658,6 +1663,7 @@
      "currency": "常青",
      "units": [],
      "weak_units": [],
+     "strong_units": [],
      "analog_units": []
     },
     {
@@ -1675,6 +1681,9 @@
       "P1-06"
      ],
      "weak_units": [],
+     "strong_units": [
+      "P1-06"
+     ],
      "analog_units": []
     },
     {
@@ -1690,6 +1699,7 @@
      "currency": "当年时政",
      "units": [],
      "weak_units": [],
+     "strong_units": [],
      "analog_units": [
       "P4-02",
       "P4-06"
@@ -1708,6 +1718,7 @@
      "currency": "常青",
      "units": [],
      "weak_units": [],
+     "strong_units": [],
      "analog_units": []
     },
     {
@@ -1723,6 +1734,7 @@
      "currency": "常青",
      "units": [],
      "weak_units": [],
+     "strong_units": [],
      "analog_units": []
     },
     {
@@ -1741,6 +1753,10 @@
       "P1-03"
      ],
      "weak_units": [],
+     "strong_units": [
+      "P1-01",
+      "P1-03"
+     ],
      "analog_units": []
     },
     {
@@ -1757,7 +1773,10 @@
      "units": [
       "P1-11"
      ],
-     "weak_units": [],
+     "weak_units": [
+      "P1-11"
+     ],
+     "strong_units": [],
      "analog_units": []
     },
     {
@@ -1775,6 +1794,9 @@
       "H17"
      ],
      "weak_units": [],
+     "strong_units": [
+      "H17"
+     ],
      "analog_units": []
     },
     {
@@ -1792,6 +1814,9 @@
       "GD-009"
      ],
      "weak_units": [],
+     "strong_units": [
+      "GD-009"
+     ],
      "analog_units": [
       "GD-009",
       "P4-14",
@@ -1813,6 +1838,9 @@
       "P2-07"
      ],
      "weak_units": [],
+     "strong_units": [
+      "P2-07"
+     ],
      "analog_units": [
       "GD-001",
       "GD-002"
@@ -1831,6 +1859,7 @@
      "currency": "当年时政",
      "units": [],
      "weak_units": [],
+     "strong_units": [],
      "analog_units": [
       "P2-12",
       "P3-07"
@@ -1852,6 +1881,10 @@
       "M4.03"
      ],
      "weak_units": [],
+     "strong_units": [
+      "M4.05",
+      "M4.03"
+     ],
      "analog_units": []
     },
     {
@@ -1870,6 +1903,10 @@
       "H01"
      ],
      "weak_units": [],
+     "strong_units": [
+      "H31",
+      "H01"
+     ],
      "analog_units": []
     },
     {
@@ -1887,6 +1924,9 @@
       "M7.32"
      ],
      "weak_units": [],
+     "strong_units": [
+      "M7.32"
+     ],
      "analog_units": []
     },
     {
@@ -1904,6 +1944,9 @@
       "LAW-026"
      ],
      "weak_units": [],
+     "strong_units": [
+      "LAW-026"
+     ],
      "analog_units": [
       "LAW-023",
       "K-LAW-05",
@@ -1977,6 +2020,10 @@
       "P1-06"
      ],
      "weak_units": [],
+     "strong_units": [
+      "P1-11",
+      "P1-06"
+     ],
      "analog_units": []
     },
     {
@@ -1994,6 +2041,9 @@
       "P2-05"
      ],
      "weak_units": [],
+     "strong_units": [
+      "P2-05"
+     ],
      "analog_units": []
     },
     {
@@ -2009,6 +2059,7 @@
      "currency": "当年时政",
      "units": [],
      "weak_units": [],
+     "strong_units": [],
      "analog_units": [
       "P2-12",
       "P3-07"
@@ -2030,6 +2081,10 @@
       "M1.15"
      ],
      "weak_units": [],
+     "strong_units": [
+      "M1.16",
+      "M1.15"
+     ],
      "analog_units": []
     },
     {
@@ -2045,6 +2100,7 @@
      "currency": "常青",
      "units": [],
      "weak_units": [],
+     "strong_units": [],
      "analog_units": []
     },
     {
@@ -2063,6 +2119,10 @@
       "P1-03"
      ],
      "weak_units": [],
+     "strong_units": [
+      "P1-01",
+      "P1-03"
+     ],
      "analog_units": []
     },
     {
@@ -2082,6 +2142,11 @@
       "M7.18"
      ],
      "weak_units": [],
+     "strong_units": [
+      "M7.34",
+      "M7.35",
+      "M7.18"
+     ],
      "analog_units": []
     },
     {
@@ -2098,7 +2163,10 @@
      "units": [
       "P1-02"
      ],
-     "weak_units": [],
+     "weak_units": [
+      "P1-02"
+     ],
+     "strong_units": [],
      "analog_units": []
     },
     {
@@ -2119,6 +2187,12 @@
       "H27"
      ],
      "weak_units": [],
+     "strong_units": [
+      "H01",
+      "H02",
+      "H26",
+      "H27"
+     ],
      "analog_units": []
     },
     {
@@ -2138,6 +2212,11 @@
       "M5.18"
      ],
      "weak_units": [],
+     "strong_units": [
+      "M4.01",
+      "M5.17",
+      "M5.18"
+     ],
      "analog_units": []
     },
     {
@@ -2153,6 +2232,7 @@
      "currency": "当年时政",
      "units": [],
      "weak_units": [],
+     "strong_units": [],
      "analog_units": []
     },
     {
@@ -2170,6 +2250,9 @@
       "P2-11"
      ],
      "weak_units": [],
+     "strong_units": [
+      "P2-11"
+     ],
      "analog_units": [
       "P2-11",
       "P2-16",
@@ -2189,6 +2272,7 @@
      "currency": "当年时政",
      "units": [],
      "weak_units": [],
+     "strong_units": [],
      "analog_units": [
       "P2-16",
       "GD-004"
@@ -2209,6 +2293,9 @@
       "LAW-027"
      ],
      "weak_units": [],
+     "strong_units": [
+      "LAW-027"
+     ],
      "analog_units": []
     },
     {
@@ -2224,6 +2311,7 @@
      "currency": "当年时政",
      "units": [],
      "weak_units": [],
+     "strong_units": [],
      "analog_units": [
       "GD-001",
       "GD-002"
@@ -2292,6 +2380,7 @@
      "currency": "当年时政",
      "units": [],
      "weak_units": [],
+     "strong_units": [],
      "analog_units": [
       "P4-14",
       "GD-014"
@@ -2310,6 +2399,7 @@
      "currency": "当年时政",
      "units": [],
      "weak_units": [],
+     "strong_units": [],
      "analog_units": [
       "P2-12",
       "P3-07"
@@ -2328,6 +2418,7 @@
      "currency": "当年时政",
      "units": [],
      "weak_units": [],
+     "strong_units": [],
      "analog_units": [
       "P2-12",
       "P3-07"
@@ -2349,6 +2440,10 @@
       "M7.15"
      ],
      "weak_units": [],
+     "strong_units": [
+      "M7.24",
+      "M7.15"
+     ],
      "analog_units": []
     },
     {
@@ -2366,6 +2461,9 @@
       "P1-04"
      ],
      "weak_units": [],
+     "strong_units": [
+      "P1-04"
+     ],
      "analog_units": []
     },
     {
@@ -2383,6 +2481,9 @@
       "P2-14"
      ],
      "weak_units": [],
+     "strong_units": [
+      "P2-14"
+     ],
      "analog_units": []
     },
     {
@@ -2399,7 +2500,10 @@
      "units": [
       "M7.21"
      ],
-     "weak_units": [],
+     "weak_units": [
+      "M7.21"
+     ],
+     "strong_units": [],
      "analog_units": []
     },
     {
@@ -2414,9 +2518,14 @@
      "style": "概念表述辨析",
      "currency": "常青",
      "units": [
-      "P2-15"
+      "P2-15",
+      "LAW-011"
      ],
      "weak_units": [],
+     "strong_units": [
+      "P2-15",
+      "LAW-011"
+     ],
      "analog_units": []
     },
     {
@@ -2433,7 +2542,10 @@
      "units": [
       "M4.21"
      ],
-     "weak_units": [],
+     "weak_units": [
+      "M4.21"
+     ],
+     "strong_units": [],
      "analog_units": []
     },
     {
@@ -2450,9 +2562,17 @@
      "units": [
       "M2.03",
       "M2.05",
+      "M2.01",
+      "M7.02"
+     ],
+     "weak_units": [
       "M2.01"
      ],
-     "weak_units": [],
+     "strong_units": [
+      "M2.03",
+      "M2.05",
+      "M7.02"
+     ],
      "analog_units": []
     },
     {
@@ -2470,6 +2590,9 @@
       "H32"
      ],
      "weak_units": [],
+     "strong_units": [
+      "H32"
+     ],
      "analog_units": []
     },
     {
@@ -2485,9 +2608,8 @@
      "currency": "当年时政",
      "units": [],
      "weak_units": [],
-     "analog_units": [
-      "GD-006"
-     ]
+     "strong_units": [],
+     "analog_units": []
     },
     {
      "number": 13,
@@ -2502,6 +2624,7 @@
      "currency": "当年时政",
      "units": [],
      "weak_units": [],
+     "strong_units": [],
      "analog_units": [
       "GD-010"
      ]
@@ -2521,6 +2644,9 @@
       "LAW-025"
      ],
      "weak_units": [],
+     "strong_units": [
+      "LAW-025"
+     ],
      "analog_units": []
     },
     {
@@ -2539,6 +2665,10 @@
       "GD-004"
      ],
      "weak_units": [],
+     "strong_units": [
+      "P2-16",
+      "GD-004"
+     ],
      "analog_units": [
       "P2-16",
       "GD-004"
@@ -2615,6 +2745,7 @@
      "weighted": 3
     }
    },
+   "weak_units": {},
    "analog_units": {},
    "ids": [
     "GD2025-Q004",
@@ -2684,10 +2815,6 @@
     "常青": 5
    },
    "units": {
-    "M2.01": {
-     "n": 1,
-     "weighted": 3
-    },
     "M2.03": {
      "n": 1,
      "weighted": 3
@@ -2716,6 +2843,10 @@
      "n": 1,
      "weighted": 3
     },
+    "M7.02": {
+     "n": 1,
+     "weighted": 3
+    },
     "M7.32": {
      "n": 1,
      "weighted": 3
@@ -2723,6 +2854,12 @@
     "M1.16": {
      "n": 1,
      "weighted": 0.5
+    }
+   },
+   "weak_units": {
+    "M2.01": {
+     "n": 1,
+     "weighted": 3
     }
    },
    "analog_units": {},
@@ -2861,6 +2998,7 @@
      "weighted": 0.5
     }
    },
+   "weak_units": {},
    "analog_units": {},
    "ids": [
     "GD2015-XJ-Q081",
@@ -2998,6 +3136,7 @@
      "weighted": 0.5
     }
    },
+   "weak_units": {},
    "analog_units": {
     "P2-05": {
      "n": 1,
@@ -3109,6 +3248,7 @@
      "weighted": 2
     }
    },
+   "weak_units": {},
    "analog_units": {},
    "ids": [
     "GD2023-XJ-Q006",
@@ -3193,6 +3333,12 @@
     "常青": 8
    },
    "units": {
+    "P2-02": {
+     "n": 1,
+     "weighted": 0.5
+    }
+   },
+   "weak_units": {
     "M7.21": {
      "n": 1,
      "weighted": 3
@@ -3204,10 +3350,6 @@
     "P1-11": {
      "n": 1,
      "weighted": 3
-    },
-    "P2-02": {
-     "n": 1,
-     "weighted": 0.5
     }
    },
    "analog_units": {},
@@ -3271,13 +3413,15 @@
     "常青": 4
    },
    "units": {
-    "M4.21": {
-     "n": 1,
-     "weighted": 3
-    },
     "H26": {
      "n": 1,
      "weighted": 0.5
+    }
+   },
+   "weak_units": {
+    "M4.21": {
+     "n": 1,
+     "weighted": 3
     }
    },
    "analog_units": {},
@@ -3423,15 +3567,7 @@
      "n": 1,
      "weighted": 0.5
     },
-    "H27": {
-     "n": 1,
-     "weighted": 0.5
-    },
     "M7.23": {
-     "n": 1,
-     "weighted": 0.5
-    },
-    "P1-07": {
      "n": 1,
      "weighted": 0.5
     },
@@ -3440,6 +3576,16 @@
      "weighted": 0.5
     },
     "P2-04": {
+     "n": 1,
+     "weighted": 0.5
+    }
+   },
+   "weak_units": {
+    "H27": {
+     "n": 1,
+     "weighted": 0.5
+    },
+    "P1-07": {
      "n": 1,
      "weighted": 0.5
     }
@@ -3623,6 +3769,7 @@
     "常青": 4
    },
    "units": {},
+   "weak_units": {},
    "analog_units": {
     "GD-007": {
      "n": 12,
@@ -3715,6 +3862,7 @@
     "常青": 2
    },
    "units": {},
+   "weak_units": {},
    "analog_units": {
     "GD-012": {
      "n": 2,
@@ -3800,6 +3948,10 @@
      "n": 2,
      "weighted": 5
     },
+    "LAW-011": {
+     "n": 1,
+     "weighted": 3
+    },
     "P2-15": {
      "n": 1,
      "weighted": 3
@@ -3809,6 +3961,7 @@
      "weighted": 2
     }
    },
+   "weak_units": {},
    "analog_units": {},
    "ids": [
     "GD2023-XJ-Q012",
@@ -3869,6 +4022,7 @@
     "当年时政": 3
    },
    "units": {},
+   "weak_units": {},
    "analog_units": {
     "P4-02": {
      "n": 1,
@@ -3957,6 +4111,7 @@
      "weighted": 3
     }
    },
+   "weak_units": {},
    "analog_units": {
     "P2-12": {
      "n": 1,
@@ -4018,6 +4173,7 @@
     "常青": 4
    },
    "units": {},
+   "weak_units": {},
    "analog_units": {},
    "ids": [
     "GD2013-1-Q064",
@@ -4074,8 +4230,14 @@
    },
    "units": {
     "P4-10": {
-     "n": 5,
-     "weighted": 4
+     "n": 4,
+     "weighted": 2
+    }
+   },
+   "weak_units": {
+    "P4-10": {
+     "n": 1,
+     "weighted": 2
     }
    },
    "analog_units": {},
@@ -4155,6 +4317,7 @@
      "weighted": 0.5
     }
    },
+   "weak_units": {},
    "analog_units": {},
    "ids": [
     "GD2014-XZ-Q001",
@@ -4223,6 +4386,7 @@
      "weighted": 1
     }
    },
+   "weak_units": {},
    "analog_units": {},
    "ids": [
     "GD2021-XZ-Q023",
@@ -4288,6 +4452,7 @@
      "weighted": 2
     }
    },
+   "weak_units": {},
    "analog_units": {},
    "ids": [
     "GD2023-XJ-Q011",
@@ -4349,10 +4514,6 @@
     "常青": 7
    },
    "units": {
-    "H11": {
-     "n": 3,
-     "weighted": 4.5
-    },
     "H03": {
      "n": 1,
      "weighted": 1
@@ -4384,6 +4545,16 @@
     "H10": {
      "n": 1,
      "weighted": 0.5
+    },
+    "H11": {
+     "n": 1,
+     "weighted": 0.5
+    }
+   },
+   "weak_units": {
+    "H11": {
+     "n": 2,
+     "weighted": 4
     }
    },
    "analog_units": {
@@ -4493,6 +4664,7 @@
      "weighted": 0.5
     }
    },
+   "weak_units": {},
    "analog_units": {},
    "ids": [
     "GD2014-XJ-Q001",
@@ -4555,13 +4727,19 @@
     "常青": 1
    },
    "units": {
-    "H31": {
-     "n": 2,
-     "weighted": 4
-    },
     "H01": {
      "n": 1,
      "weighted": 3
+    },
+    "H31": {
+     "n": 1,
+     "weighted": 3
+    }
+   },
+   "weak_units": {
+    "H31": {
+     "n": 1,
+     "weighted": 1
     }
    },
    "analog_units": {},
@@ -4653,6 +4831,7 @@
      "weighted": 0.5
     }
    },
+   "weak_units": {},
    "analog_units": {
     "LAW-007": {
      "n": 7,
@@ -4791,6 +4970,7 @@
      "weighted": 0.5
     }
    },
+   "weak_units": {},
    "analog_units": {},
    "ids": [
     "GD2023-XJ-Q013",
@@ -4883,6 +5063,7 @@
      "weighted": 2
     }
    },
+   "weak_units": {},
    "analog_units": {},
    "ids": [
     "GD2014-XZ-Q008",
@@ -4958,15 +5139,17 @@
      "n": 1,
      "weighted": 3
     },
+    "P2-04": {
+     "n": 1,
+     "weighted": 2
+    }
+   },
+   "weak_units": {
     "GD-007": {
      "n": 1,
      "weighted": 2
     },
     "GD-011": {
-     "n": 1,
-     "weighted": 2
-    },
-    "P2-04": {
      "n": 1,
      "weighted": 2
     }
@@ -5038,6 +5221,7 @@
     "当年时政": 4
    },
    "units": {},
+   "weak_units": {},
    "analog_units": {
     "GD-010": {
      "n": 2,
@@ -5112,6 +5296,7 @@
     "常青": 4
    },
    "units": {},
+   "weak_units": {},
    "analog_units": {},
    "ids": [
     "GD2019-XJ-Q085",
@@ -5182,6 +5367,7 @@
      "weighted": 3
     }
    },
+   "weak_units": {},
    "analog_units": {
     "P4-14": {
      "n": 4,
@@ -5258,6 +5444,7 @@
     "当年时政": 2
    },
    "units": {},
+   "weak_units": {},
    "analog_units": {
     "K-GD-06": {
      "n": 3,
@@ -5367,6 +5554,7 @@
     "常青": 1
    },
    "units": {},
+   "weak_units": {},
    "analog_units": {
     "GD-010": {
      "n": 1,
@@ -5431,6 +5619,7 @@
     "当年时政": 4
    },
    "units": {},
+   "weak_units": {},
    "analog_units": {
     "GD-014": {
      "n": 4,
@@ -5503,11 +5692,8 @@
     "当年时政": 3
    },
    "units": {},
+   "weak_units": {},
    "analog_units": {
-    "GD-006": {
-     "n": 1,
-     "weighted": 3
-    },
     "K-LAW-05": {
      "n": 1,
      "weighted": 1
@@ -5577,6 +5763,7 @@
     "常青": 9
    },
    "units": {},
+   "weak_units": {},
    "analog_units": {},
    "ids": [
     "GD2015-XJ-Q078",
@@ -5645,6 +5832,7 @@
     "常青": 20
    },
    "units": {},
+   "weak_units": {},
    "analog_units": {},
    "ids": [
     "GD2014-XJ-Q005",
@@ -5735,6 +5923,7 @@
     "常青": 21
    },
    "units": {},
+   "weak_units": {},
    "analog_units": {},
    "ids": [
     "GD2013-3-Q060",
@@ -5810,6 +5999,7 @@
     "常青": 11
    },
    "units": {},
+   "weak_units": {},
    "analog_units": {},
    "ids": [
     "GD2013-3-Q058",
@@ -5883,6 +6073,7 @@
     "常青": 14
    },
    "units": {},
+   "weak_units": {},
    "analog_units": {},
    "ids": [
     "GD2013-1-Q062",
@@ -5968,6 +6159,7 @@
     "当年时政": 1
    },
    "units": {},
+   "weak_units": {},
    "analog_units": {},
    "ids": [
     "GD2013-3-Q061",
@@ -6042,6 +6234,7 @@
     "常青": 10
    },
    "units": {},
+   "weak_units": {},
    "analog_units": {},
    "ids": [
     "GD2013-1-Q065",
@@ -6059,20 +6252,53 @@
  ],
  "unit_hits_summary": {
   "bank_units": 318,
-  "units_direct_hit": 91,
-  "units_direct_hit_recent": 42,
-  "units_direct_hit_strong": 88,
+  "units_direct_hit": 87,
+  "units_direct_hit_recent": 40,
   "units_only_weak": [
+   "M2.01",
+   "M7.21",
+   "P1-02",
    "GD-007",
    "GD-011",
    "P1-07"
   ],
+  "units_weak_hit": 12,
   "units_analog_hit": 55,
-  "units_analog_hit_recent": 18,
-  "units_any_hit": 132,
-  "hit_pairs": 133,
-  "weak_pairs": 8,
-  "note": "weak=True 的命中是“同一知识点，但题眼不在卡的陈述里”，weighted_strong 不计这些。"
+  "units_analog_hit_recent": 17,
+  "units_direct_and_analog": [
+   "GD-004",
+   "GD-009",
+   "H11",
+   "H12",
+   "LAW-011",
+   "LAW-012",
+   "P2-03",
+   "P2-04",
+   "P2-05",
+   "P2-07",
+   "P2-11",
+   "P2-14",
+   "P2-16"
+  ],
+  "units_analog_not_direct": 42,
+  "units_any_hit": 133,
+  "units_untouched": 185,
+  "hit_pairs": 122,
+  "weak_pairs": 13,
+  "questions_direct_hit": 75,
+  "questions_only_weak": 10,
+  "units_timely_only": [
+   "GD-004",
+   "GD-009",
+   "LAW-026",
+   "P2-07",
+   "P2-11",
+   "P2-16",
+   "LAW-006",
+   "P2-01",
+   "P2-03"
+  ],
+  "note": "直接命中不含弱命中。units_only_weak 是只有弱命中的卡；units_analog_not_direct 是有同位命中、没有直接命中的卡（其中可以有弱命中）；units_untouched 是直接命中、弱命中、同位命中都没有的卡。hit_pairs、weak_pairs 是“题—卡”对应的条数。units_timely_only 是直接命中全部来自时效题的卡，按“时效题不会重出”，它们的加权不能读成考过还会考。"
  },
  "unit_hits": [
   {
@@ -6083,7 +6309,9 @@
    "n": 5,
    "weighted": 9,
    "n_weak": 0,
-   "weighted_strong": 9,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 2,
    "years": [
     2014,
@@ -6097,31 +6325,36 @@
      "id": "GD2025-Q009",
      "year": 2025,
      "weight": 3,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     },
     {
      "id": "GD2024-Q013",
      "year": 2024,
      "weight": 3,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     },
     {
      "id": "GD2022-XJ-Q012",
      "year": 2022,
      "weight": 2,
-     "weak": false
+     "weak": false,
+     "currency": "当年时政"
     },
     {
      "id": "GDXD2020-ZH-Q004",
      "year": 2020,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     },
     {
      "id": "GD2014-XJ-Q001",
      "year": 2014,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
    "rank": 1
@@ -6134,7 +6367,9 @@
    "n": 3,
    "weighted": 8,
    "n_weak": 0,
-   "weighted_strong": 8,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 2,
    "years": [
     2023,
@@ -6146,19 +6381,22 @@
      "id": "GD2025-Q006",
      "year": 2025,
      "weight": 3,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     },
     {
      "id": "GD2024-Q006",
      "year": 2024,
      "weight": 3,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     },
     {
      "id": "GD2023-XJ-Q006",
      "year": 2023,
      "weight": 2,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
    "rank": 2
@@ -6171,7 +6409,9 @@
    "n": 2,
    "weighted": 6,
    "n_weak": 0,
-   "weighted_strong": 6,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 2,
    "years": [
     2024,
@@ -6182,13 +6422,15 @@
      "id": "GD2025-Q006",
      "year": 2025,
      "weight": 3,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     },
     {
      "id": "GD2024-Q006",
      "year": 2024,
      "weight": 3,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
    "rank": 3
@@ -6201,7 +6443,9 @@
    "n": 2,
    "weighted": 6,
    "n_weak": 0,
-   "weighted_strong": 6,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 2,
    "years": [
     2024,
@@ -6212,46 +6456,18 @@
      "id": "GD2025-Q001",
      "year": 2025,
      "weight": 3,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     },
     {
      "id": "GD2024-Q002",
      "year": 2024,
      "weight": 3,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
    "rank": 4
-  },
-  {
-   "unit": "P1-11",
-   "module": "P1",
-   "priority": "A",
-   "title": "两个结合与传统文化的创造性转化、创新性发展",
-   "n": 2,
-   "weighted": 6,
-   "n_weak": 0,
-   "weighted_strong": 6,
-   "recent_n": 2,
-   "years": [
-    2024,
-    2025
-   ],
-   "hits": [
-    {
-     "id": "GD2025-Q001",
-     "year": 2025,
-     "weight": 3,
-     "weak": false
-    },
-    {
-     "id": "GD2024-Q007",
-     "year": 2024,
-     "weight": 3,
-     "weak": false
-    }
-   ],
-   "rank": 5
   },
   {
    "unit": "P2-14",
@@ -6261,7 +6477,9 @@
    "n": 2,
    "weighted": 5,
    "n_weak": 0,
-   "weighted_strong": 5,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 1,
    "years": [
     2023,
@@ -6272,16 +6490,18 @@
      "id": "GD2026-Q006",
      "year": 2026,
      "weight": 3,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     },
     {
      "id": "GD2023-XJ-Q012",
      "year": 2023,
      "weight": 2,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 6
+   "rank": 5
   },
   {
    "unit": "H07",
@@ -6291,7 +6511,9 @@
    "n": 3,
    "weighted": 5,
    "n_weak": 0,
-   "weighted_strong": 5,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2021,
@@ -6303,22 +6525,25 @@
      "id": "GD2023-XZ-Q023",
      "year": 2023,
      "weight": 2,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     },
     {
      "id": "GD2022-XJ-Q020",
      "year": 2022,
      "weight": 2,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     },
     {
      "id": "GD2021-XZ-Q023",
      "year": 2021,
      "weight": 1,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 7
+   "rank": 6
   },
   {
    "unit": "M4.03",
@@ -6328,7 +6553,9 @@
    "n": 3,
    "weighted": 4.5,
    "n_weak": 0,
-   "weighted_strong": 4.5,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 1,
    "years": [
     2020,
@@ -6339,144 +6566,25 @@
      "id": "GD2024-Q012",
      "year": 2024,
      "weight": 3,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     },
     {
      "id": "GD2020-XJ-Q019",
      "year": 2020,
      "weight": 1,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     },
     {
      "id": "GDXD2020-ZH-Q007",
      "year": 2020,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 8
-  },
-  {
-   "unit": "H11",
-   "module": "H",
-   "priority": "B",
-   "title": "长征在做什么：战略转移与两次结束节点",
-   "n": 3,
-   "weighted": 4.5,
-   "n_weak": 2,
-   "weighted_strong": 0.5,
-   "recent_n": 0,
-   "years": [
-    2020,
-    2022,
-    2023
-   ],
-   "hits": [
-    {
-     "id": "GD2023-XJ-Q010",
-     "year": 2023,
-     "weight": 2,
-     "weak": true
-    },
-    {
-     "id": "GD2022-XJ-Q021",
-     "year": 2022,
-     "weight": 2,
-     "weak": true
-    },
-    {
-     "id": "GDXD2020-ZH-Q020",
-     "year": 2020,
-     "weight": 0.5,
-     "weak": false
-    }
-   ],
-   "rank": 9
-  },
-  {
-   "unit": "P4-10",
-   "module": "P4",
-   "priority": "B",
-   "title": "条块关系与基层自治",
-   "n": 6,
-   "weighted": 4.5,
-   "n_weak": 1,
-   "weighted_strong": 2.5,
-   "recent_n": 0,
-   "years": [
-    2013,
-    2014,
-    2022
-   ],
-   "hits": [
-    {
-     "id": "GD2022-XZ-Q012",
-     "year": 2022,
-     "weight": 2,
-     "weak": true
-    },
-    {
-     "id": "GD2014-XZ-Q001",
-     "year": 2014,
-     "weight": 0.5,
-     "weak": false
-    },
-    {
-     "id": "GD2014-XZ-Q007",
-     "year": 2014,
-     "weight": 0.5,
-     "weak": false
-    },
-    {
-     "id": "GD2014-XZ-Q012",
-     "year": 2014,
-     "weight": 0.5,
-     "weak": false
-    },
-    {
-     "id": "GD2014-XZ-Q019",
-     "year": 2014,
-     "weight": 0.5,
-     "weak": false
-    },
-    {
-     "id": "GD2013-1-Q057",
-     "year": 2013,
-     "weight": 0.5,
-     "weak": false
-    }
-   ],
-   "rank": 10
-  },
-  {
-   "unit": "H31",
-   "module": "H",
-   "priority": "B",
-   "title": "人物题先定位事迹时代，不把题词年代当事迹年代",
-   "n": 2,
-   "weighted": 4,
-   "n_weak": 1,
-   "weighted_strong": 3,
-   "recent_n": 1,
-   "years": [
-    2021,
-    2024
-   ],
-   "hits": [
-    {
-     "id": "GD2024-Q013",
-     "year": 2024,
-     "weight": 3,
-     "weak": false
-    },
-    {
-     "id": "GD2021-XZ-Q018",
-     "year": 2021,
-     "weight": 1,
-     "weak": true
-    }
-   ],
-   "rank": 11
+   "rank": 7
   },
   {
    "unit": "H02",
@@ -6486,7 +6594,9 @@
    "n": 2,
    "weighted": 3.5,
    "n_weak": 0,
-   "weighted_strong": 3.5,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 1,
    "years": [
     2020,
@@ -6497,16 +6607,18 @@
      "id": "GD2025-Q009",
      "year": 2025,
      "weight": 3,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     },
     {
      "id": "GDXD2020-ZH-Q004",
      "year": 2020,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 12
+   "rank": 8
   },
   {
    "unit": "H26",
@@ -6516,7 +6628,9 @@
    "n": 2,
    "weighted": 3.5,
    "n_weak": 0,
-   "weighted_strong": 3.5,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 1,
    "years": [
     2013,
@@ -6527,46 +6641,18 @@
      "id": "GD2025-Q009",
      "year": 2025,
      "weight": 3,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     },
     {
      "id": "GD2013-1-Q060",
      "year": 2013,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 13
-  },
-  {
-   "unit": "H27",
-   "module": "H",
-   "priority": "A",
-   "title": "十三大之三：原三步走与当前现代化时间表",
-   "n": 2,
-   "weighted": 3.5,
-   "n_weak": 1,
-   "weighted_strong": 3,
-   "recent_n": 1,
-   "years": [
-    2018,
-    2025
-   ],
-   "hits": [
-    {
-     "id": "GD2025-Q009",
-     "year": 2025,
-     "weight": 3,
-     "weak": false
-    },
-    {
-     "id": "GD2018-Q076",
-     "year": 2018,
-     "weight": 0.5,
-     "weak": true
-    }
-   ],
-   "rank": 14
+   "rank": 9
   },
   {
    "unit": "M1.16",
@@ -6576,7 +6662,9 @@
    "n": 2,
    "weighted": 3.5,
    "n_weak": 0,
-   "weighted_strong": 3.5,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 1,
    "years": [
     2020,
@@ -6587,46 +6675,18 @@
      "id": "GD2025-Q004",
      "year": 2025,
      "weight": 3,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     },
     {
      "id": "GDXD2020-ZH-Q006",
      "year": 2020,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 15
-  },
-  {
-   "unit": "M4.21",
-   "module": "M4",
-   "priority": "B",
-   "title": "三个方法论表述的对应",
-   "n": 2,
-   "weighted": 3.5,
-   "n_weak": 0,
-   "weighted_strong": 3.5,
-   "recent_n": 1,
-   "years": [
-    2015,
-    2026
-   ],
-   "hits": [
-    {
-     "id": "GD2026-Q009",
-     "year": 2026,
-     "weight": 3,
-     "weak": false
-    },
-    {
-     "id": "GD2015-XJ-Q081",
-     "year": 2015,
-     "weight": 0.5,
-     "weak": false
-    }
-   ],
-   "rank": 16
+   "rank": 10
   },
   {
    "unit": "M7.34",
@@ -6636,7 +6696,9 @@
    "n": 2,
    "weighted": 3.5,
    "n_weak": 0,
-   "weighted_strong": 3.5,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 1,
    "years": [
     2019,
@@ -6647,16 +6709,18 @@
      "id": "GD2025-Q007",
      "year": 2025,
      "weight": 3,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     },
     {
      "id": "GDXD2019-XC-Q016",
      "year": 2019,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 17
+   "rank": 11
   },
   {
    "unit": "M7.35",
@@ -6666,7 +6730,9 @@
    "n": 2,
    "weighted": 3.5,
    "n_weak": 0,
-   "weighted_strong": 3.5,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 1,
    "years": [
     2019,
@@ -6677,16 +6743,18 @@
      "id": "GD2025-Q007",
      "year": 2025,
      "weight": 3,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     },
     {
      "id": "GDXD2019-XC-Q016",
      "year": 2019,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 18
+   "rank": 12
   },
   {
    "unit": "GD-004",
@@ -6696,7 +6764,9 @@
    "n": 1,
    "weighted": 3,
    "n_weak": 0,
-   "weighted_strong": 3,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": true,
    "recent_n": 1,
    "years": [
     2026
@@ -6706,10 +6776,11 @@
      "id": "GD2026-Q015",
      "year": 2026,
      "weight": 3,
-     "weak": false
+     "weak": false,
+     "currency": "当年时政"
     }
    ],
-   "rank": 19
+   "rank": 13
   },
   {
    "unit": "GD-009",
@@ -6719,7 +6790,9 @@
    "n": 1,
    "weighted": 3,
    "n_weak": 0,
-   "weighted_strong": 3,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": true,
    "recent_n": 1,
    "years": [
     2024
@@ -6729,10 +6802,11 @@
      "id": "GD2024-Q009",
      "year": 2024,
      "weight": 3,
-     "weak": false
+     "weak": false,
+     "currency": "当年时政"
     }
    ],
-   "rank": 20
+   "rank": 14
   },
   {
    "unit": "H17",
@@ -6742,7 +6816,9 @@
    "n": 1,
    "weighted": 3,
    "n_weak": 0,
-   "weighted_strong": 3,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 1,
    "years": [
     2024
@@ -6752,10 +6828,77 @@
      "id": "GD2024-Q008",
      "year": 2024,
      "weight": 3,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 21
+   "rank": 15
+  },
+  {
+   "unit": "H27",
+   "module": "H",
+   "priority": "A",
+   "title": "十三大之三：原三步走与当前现代化时间表",
+   "n": 1,
+   "weighted": 3,
+   "n_weak": 1,
+   "weighted_weak": 0.5,
+   "recent_n_weak": 0,
+   "timely_only": false,
+   "recent_n": 1,
+   "years": [
+    2025
+   ],
+   "hits": [
+    {
+     "id": "GD2025-Q009",
+     "year": 2025,
+     "weight": 3,
+     "weak": false,
+     "currency": "常青"
+    },
+    {
+     "id": "GD2018-Q076",
+     "year": 2018,
+     "weight": 0.5,
+     "weak": true,
+     "currency": "当年时政"
+    }
+   ],
+   "rank": 16
+  },
+  {
+   "unit": "H31",
+   "module": "H",
+   "priority": "B",
+   "title": "人物题先定位事迹时代，不把题词年代当事迹年代",
+   "n": 1,
+   "weighted": 3,
+   "n_weak": 1,
+   "weighted_weak": 1,
+   "recent_n_weak": 0,
+   "timely_only": false,
+   "recent_n": 1,
+   "years": [
+    2024
+   ],
+   "hits": [
+    {
+     "id": "GD2024-Q013",
+     "year": 2024,
+     "weight": 3,
+     "weak": false,
+     "currency": "常青"
+    },
+    {
+     "id": "GD2021-XZ-Q018",
+     "year": 2021,
+     "weight": 1,
+     "weak": true,
+     "currency": "当年时政"
+    }
+   ],
+   "rank": 17
   },
   {
    "unit": "H32",
@@ -6765,7 +6908,9 @@
    "n": 1,
    "weighted": 3,
    "n_weak": 0,
-   "weighted_strong": 3,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 1,
    "years": [
     2026
@@ -6775,503 +6920,23 @@
      "id": "GD2026-Q011",
      "year": 2026,
      "weight": 3,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 22
+   "rank": 18
   },
   {
-   "unit": "LAW-025",
+   "unit": "LAW-011",
    "module": "LAW",
-   "priority": "C",
-   "title": "国歌：看用途和场合，不只看“爱国动机”",
-   "n": 1,
-   "weighted": 3,
-   "n_weak": 0,
-   "weighted_strong": 3,
-   "recent_n": 1,
-   "years": [
-    2026
-   ],
-   "hits": [
-    {
-     "id": "GD2026-Q014",
-     "year": 2026,
-     "weight": 3,
-     "weak": false
-    }
-   ],
-   "rank": 23
-  },
-  {
-   "unit": "LAW-026",
-   "module": "LAW",
-   "priority": "C",
-   "title": "爱国主义教育内容：历史文化与自然河山均在范围内",
-   "n": 1,
-   "weighted": 3,
-   "n_weak": 0,
-   "weighted_strong": 3,
-   "recent_n": 1,
-   "years": [
-    2024
-   ],
-   "hits": [
-    {
-     "id": "GD2024-Q015",
-     "year": 2024,
-     "weight": 3,
-     "weak": false
-    }
-   ],
-   "rank": 24
-  },
-  {
-   "unit": "LAW-027",
-   "module": "LAW",
-   "priority": "C",
-   "title": "社保缴费主体：工伤、生育由单位缴，职工不缴",
-   "n": 1,
-   "weighted": 3,
-   "n_weak": 0,
-   "weighted_strong": 3,
-   "recent_n": 1,
-   "years": [
-    2025
-   ],
-   "hits": [
-    {
-     "id": "GD2025-Q014",
-     "year": 2025,
-     "weight": 3,
-     "weak": false
-    }
-   ],
-   "rank": 25
-  },
-  {
-   "unit": "M1.15",
-   "module": "M1",
    "priority": "B",
-   "title": "马克思主义的科学性",
+   "title": "生态原则落到行动：预防、系统治理、公众参与、损害担责",
    "n": 1,
    "weighted": 3,
    "n_weak": 0,
-   "weighted_strong": 3,
-   "recent_n": 1,
-   "years": [
-    2025
-   ],
-   "hits": [
-    {
-     "id": "GD2025-Q004",
-     "year": 2025,
-     "weight": 3,
-     "weak": false
-    }
-   ],
-   "rank": 26
-  },
-  {
-   "unit": "M2.01",
-   "module": "M2",
-   "priority": "A",
-   "title": "世界的物质统一性",
-   "n": 1,
-   "weighted": 3,
-   "n_weak": 0,
-   "weighted_strong": 3,
-   "recent_n": 1,
-   "years": [
-    2026
-   ],
-   "hits": [
-    {
-     "id": "GD2026-Q010",
-     "year": 2026,
-     "weight": 3,
-     "weak": false
-    }
-   ],
-   "rank": 27
-  },
-  {
-   "unit": "M2.03",
-   "module": "M2",
-   "priority": "A",
-   "title": "物质范畴与具体形态",
-   "n": 1,
-   "weighted": 3,
-   "n_weak": 0,
-   "weighted_strong": 3,
-   "recent_n": 1,
-   "years": [
-    2026
-   ],
-   "hits": [
-    {
-     "id": "GD2026-Q010",
-     "year": 2026,
-     "weight": 3,
-     "weak": false
-    }
-   ],
-   "rank": 28
-  },
-  {
-   "unit": "M2.05",
-   "module": "M2",
-   "priority": "A",
-   "title": "唯一特性与根本属性",
-   "n": 1,
-   "weighted": 3,
-   "n_weak": 0,
-   "weighted_strong": 3,
-   "recent_n": 1,
-   "years": [
-    2026
-   ],
-   "hits": [
-    {
-     "id": "GD2026-Q010",
-     "year": 2026,
-     "weight": 3,
-     "weak": false
-    }
-   ],
-   "rank": 29
-  },
-  {
-   "unit": "M4.01",
-   "module": "M4",
-   "priority": "A",
-   "title": "辩证法核心与矛盾问题精髓",
-   "n": 1,
-   "weighted": 3,
-   "n_weak": 0,
-   "weighted_strong": 3,
-   "recent_n": 1,
-   "years": [
-    2025
-   ],
-   "hits": [
-    {
-     "id": "GD2025-Q010",
-     "year": 2025,
-     "weight": 3,
-     "weak": false
-    }
-   ],
-   "rank": 30
-  },
-  {
-   "unit": "M4.05",
-   "module": "M4",
-   "priority": "A",
-   "title": "同一斗争与发展动力",
-   "n": 1,
-   "weighted": 3,
-   "n_weak": 0,
-   "weighted_strong": 3,
-   "recent_n": 1,
-   "years": [
-    2024
-   ],
-   "hits": [
-    {
-     "id": "GD2024-Q012",
-     "year": 2024,
-     "weight": 3,
-     "weak": false
-    }
-   ],
-   "rank": 31
-  },
-  {
-   "unit": "M5.17",
-   "module": "M5",
-   "priority": "A",
-   "title": "客观与主观辩证法",
-   "n": 1,
-   "weighted": 3,
-   "n_weak": 0,
-   "weighted_strong": 3,
-   "recent_n": 1,
-   "years": [
-    2025
-   ],
-   "hits": [
-    {
-     "id": "GD2025-Q010",
-     "year": 2025,
-     "weight": 3,
-     "weak": false
-    }
-   ],
-   "rank": 32
-  },
-  {
-   "unit": "M5.18",
-   "module": "M5",
-   "priority": "B",
-   "title": "分析与综合",
-   "n": 1,
-   "weighted": 3,
-   "n_weak": 0,
-   "weighted_strong": 3,
-   "recent_n": 1,
-   "years": [
-    2025
-   ],
-   "hits": [
-    {
-     "id": "GD2025-Q010",
-     "year": 2025,
-     "weight": 3,
-     "weak": false
-    }
-   ],
-   "rank": 33
-  },
-  {
-   "unit": "M7.15",
-   "module": "M7",
-   "priority": "A",
-   "title": "生产力决定与生产关系反作用",
-   "n": 1,
-   "weighted": 3,
-   "n_weak": 0,
-   "weighted_strong": 3,
-   "recent_n": 1,
-   "years": [
-    2026
-   ],
-   "hits": [
-    {
-     "id": "GD2026-Q004",
-     "year": 2026,
-     "weight": 3,
-     "weak": false
-    }
-   ],
-   "rank": 34
-  },
-  {
-   "unit": "M7.18",
-   "module": "M7",
-   "priority": "A",
-   "title": "上层建筑的两类",
-   "n": 1,
-   "weighted": 3,
-   "n_weak": 0,
-   "weighted_strong": 3,
-   "recent_n": 1,
-   "years": [
-    2025
-   ],
-   "hits": [
-    {
-     "id": "GD2025-Q007",
-     "year": 2025,
-     "weight": 3,
-     "weak": false
-    }
-   ],
-   "rank": 35
-  },
-  {
-   "unit": "M7.21",
-   "module": "M7",
-   "priority": "A",
-   "title": "经济基础决定与上层建筑反作用",
-   "n": 1,
-   "weighted": 3,
-   "n_weak": 0,
-   "weighted_strong": 3,
-   "recent_n": 1,
-   "years": [
-    2026
-   ],
-   "hits": [
-    {
-     "id": "GD2026-Q007",
-     "year": 2026,
-     "weight": 3,
-     "weak": false
-    }
-   ],
-   "rank": 36
-  },
-  {
-   "unit": "M7.24",
-   "module": "M7",
-   "priority": "A",
-   "title": "根本动力与最终决定力量",
-   "n": 1,
-   "weighted": 3,
-   "n_weak": 0,
-   "weighted_strong": 3,
-   "recent_n": 1,
-   "years": [
-    2026
-   ],
-   "hits": [
-    {
-     "id": "GD2026-Q004",
-     "year": 2026,
-     "weight": 3,
-     "weak": false
-    }
-   ],
-   "rank": 37
-  },
-  {
-   "unit": "M7.32",
-   "module": "M7",
-   "priority": "A",
-   "title": "道德起源三个定位",
-   "n": 1,
-   "weighted": 3,
-   "n_weak": 0,
-   "weighted_strong": 3,
-   "recent_n": 1,
-   "years": [
-    2024
-   ],
-   "hits": [
-    {
-     "id": "GD2024-Q014",
-     "year": 2024,
-     "weight": 3,
-     "weak": false
-    }
-   ],
-   "rank": 38
-  },
-  {
-   "unit": "P1-02",
-   "module": "P1",
-   "priority": "A",
-   "title": "人民至上：受益者与实践主体不能割裂",
-   "n": 1,
-   "weighted": 3,
-   "n_weak": 0,
-   "weighted_strong": 3,
-   "recent_n": 1,
-   "years": [
-    2025
-   ],
-   "hits": [
-    {
-     "id": "GD2025-Q008",
-     "year": 2025,
-     "weight": 3,
-     "weak": false
-    }
-   ],
-   "rank": 39
-  },
-  {
-   "unit": "P1-04",
-   "module": "P1",
-   "priority": "A",
-   "title": "守正创新：守住根本，不冻结具体做法",
-   "n": 1,
-   "weighted": 3,
-   "n_weak": 0,
-   "weighted_strong": 3,
-   "recent_n": 1,
-   "years": [
-    2026
-   ],
-   "hits": [
-    {
-     "id": "GD2026-Q005",
-     "year": 2026,
-     "weight": 3,
-     "weak": false
-    }
-   ],
-   "rank": 40
-  },
-  {
-   "unit": "P2-05",
-   "module": "P2",
-   "priority": "A",
-   "title": "新质生产力：核心标志不是行业名字新",
-   "n": 1,
-   "weighted": 3,
-   "n_weak": 0,
-   "weighted_strong": 3,
-   "recent_n": 1,
-   "years": [
-    2025
-   ],
-   "hits": [
-    {
-     "id": "GD2025-Q002",
-     "year": 2025,
-     "weight": 3,
-     "weak": false
-    }
-   ],
-   "rank": 41
-  },
-  {
-   "unit": "P2-07",
-   "module": "P2",
-   "priority": "A",
-   "title": "科技创新、产业创新、中试与企业主体地位",
-   "n": 1,
-   "weighted": 3,
-   "n_weak": 0,
-   "weighted_strong": 3,
-   "recent_n": 1,
-   "years": [
-    2024
-   ],
-   "hits": [
-    {
-     "id": "GD2024-Q010",
-     "year": 2024,
-     "weight": 3,
-     "weak": false
-    }
-   ],
-   "rank": 42
-  },
-  {
-   "unit": "P2-11",
-   "module": "P2",
-   "priority": "B",
-   "title": "耐心资本与投资于人",
-   "n": 1,
-   "weighted": 3,
-   "n_weak": 0,
-   "weighted_strong": 3,
-   "recent_n": 1,
-   "years": [
-    2025
-   ],
-   "hits": [
-    {
-     "id": "GD2025-Q012",
-     "year": 2025,
-     "weight": 3,
-     "weak": false
-    }
-   ],
-   "rank": 43
-  },
-  {
-   "unit": "P2-15",
-   "module": "P2",
-   "priority": "B",
-   "title": "治水四水四定与十六字思路",
-   "n": 1,
-   "weighted": 3,
-   "n_weak": 0,
-   "weighted_strong": 3,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 1,
    "years": [
     2026
@@ -7281,10 +6946,564 @@
      "id": "GD2026-Q008",
      "year": 2026,
      "weight": 3,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 44
+   "rank": 19
+  },
+  {
+   "unit": "LAW-025",
+   "module": "LAW",
+   "priority": "C",
+   "title": "国歌：看用途和场合，不只看“爱国动机”",
+   "n": 1,
+   "weighted": 3,
+   "n_weak": 0,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
+   "recent_n": 1,
+   "years": [
+    2026
+   ],
+   "hits": [
+    {
+     "id": "GD2026-Q014",
+     "year": 2026,
+     "weight": 3,
+     "weak": false,
+     "currency": "常青"
+    }
+   ],
+   "rank": 20
+  },
+  {
+   "unit": "LAW-026",
+   "module": "LAW",
+   "priority": "C",
+   "title": "爱国主义教育内容：历史文化与自然河山均在范围内",
+   "n": 1,
+   "weighted": 3,
+   "n_weak": 0,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": true,
+   "recent_n": 1,
+   "years": [
+    2024
+   ],
+   "hits": [
+    {
+     "id": "GD2024-Q015",
+     "year": 2024,
+     "weight": 3,
+     "weak": false,
+     "currency": "近年新法新政"
+    }
+   ],
+   "rank": 21
+  },
+  {
+   "unit": "LAW-027",
+   "module": "LAW",
+   "priority": "C",
+   "title": "社保缴费主体：工伤、生育由单位缴，职工不缴",
+   "n": 1,
+   "weighted": 3,
+   "n_weak": 0,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
+   "recent_n": 1,
+   "years": [
+    2025
+   ],
+   "hits": [
+    {
+     "id": "GD2025-Q014",
+     "year": 2025,
+     "weight": 3,
+     "weak": false,
+     "currency": "常青"
+    }
+   ],
+   "rank": 22
+  },
+  {
+   "unit": "M1.15",
+   "module": "M1",
+   "priority": "B",
+   "title": "马克思主义的科学性",
+   "n": 1,
+   "weighted": 3,
+   "n_weak": 0,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
+   "recent_n": 1,
+   "years": [
+    2025
+   ],
+   "hits": [
+    {
+     "id": "GD2025-Q004",
+     "year": 2025,
+     "weight": 3,
+     "weak": false,
+     "currency": "常青"
+    }
+   ],
+   "rank": 23
+  },
+  {
+   "unit": "M2.03",
+   "module": "M2",
+   "priority": "A",
+   "title": "物质范畴与具体形态",
+   "n": 1,
+   "weighted": 3,
+   "n_weak": 0,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
+   "recent_n": 1,
+   "years": [
+    2026
+   ],
+   "hits": [
+    {
+     "id": "GD2026-Q010",
+     "year": 2026,
+     "weight": 3,
+     "weak": false,
+     "currency": "常青"
+    }
+   ],
+   "rank": 24
+  },
+  {
+   "unit": "M2.05",
+   "module": "M2",
+   "priority": "A",
+   "title": "唯一特性与根本属性",
+   "n": 1,
+   "weighted": 3,
+   "n_weak": 0,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
+   "recent_n": 1,
+   "years": [
+    2026
+   ],
+   "hits": [
+    {
+     "id": "GD2026-Q010",
+     "year": 2026,
+     "weight": 3,
+     "weak": false,
+     "currency": "常青"
+    }
+   ],
+   "rank": 25
+  },
+  {
+   "unit": "M4.01",
+   "module": "M4",
+   "priority": "A",
+   "title": "辩证法核心与矛盾问题精髓",
+   "n": 1,
+   "weighted": 3,
+   "n_weak": 0,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
+   "recent_n": 1,
+   "years": [
+    2025
+   ],
+   "hits": [
+    {
+     "id": "GD2025-Q010",
+     "year": 2025,
+     "weight": 3,
+     "weak": false,
+     "currency": "常青"
+    }
+   ],
+   "rank": 26
+  },
+  {
+   "unit": "M4.05",
+   "module": "M4",
+   "priority": "A",
+   "title": "同一斗争与发展动力",
+   "n": 1,
+   "weighted": 3,
+   "n_weak": 0,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
+   "recent_n": 1,
+   "years": [
+    2024
+   ],
+   "hits": [
+    {
+     "id": "GD2024-Q012",
+     "year": 2024,
+     "weight": 3,
+     "weak": false,
+     "currency": "常青"
+    }
+   ],
+   "rank": 27
+  },
+  {
+   "unit": "M5.17",
+   "module": "M5",
+   "priority": "A",
+   "title": "客观与主观辩证法",
+   "n": 1,
+   "weighted": 3,
+   "n_weak": 0,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
+   "recent_n": 1,
+   "years": [
+    2025
+   ],
+   "hits": [
+    {
+     "id": "GD2025-Q010",
+     "year": 2025,
+     "weight": 3,
+     "weak": false,
+     "currency": "常青"
+    }
+   ],
+   "rank": 28
+  },
+  {
+   "unit": "M5.18",
+   "module": "M5",
+   "priority": "B",
+   "title": "分析与综合",
+   "n": 1,
+   "weighted": 3,
+   "n_weak": 0,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
+   "recent_n": 1,
+   "years": [
+    2025
+   ],
+   "hits": [
+    {
+     "id": "GD2025-Q010",
+     "year": 2025,
+     "weight": 3,
+     "weak": false,
+     "currency": "常青"
+    }
+   ],
+   "rank": 29
+  },
+  {
+   "unit": "M7.02",
+   "module": "M7",
+   "priority": "B",
+   "title": "生产方式与地理人口",
+   "n": 1,
+   "weighted": 3,
+   "n_weak": 0,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
+   "recent_n": 1,
+   "years": [
+    2026
+   ],
+   "hits": [
+    {
+     "id": "GD2026-Q010",
+     "year": 2026,
+     "weight": 3,
+     "weak": false,
+     "currency": "常青"
+    }
+   ],
+   "rank": 30
+  },
+  {
+   "unit": "M7.15",
+   "module": "M7",
+   "priority": "A",
+   "title": "生产力决定与生产关系反作用",
+   "n": 1,
+   "weighted": 3,
+   "n_weak": 0,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
+   "recent_n": 1,
+   "years": [
+    2026
+   ],
+   "hits": [
+    {
+     "id": "GD2026-Q004",
+     "year": 2026,
+     "weight": 3,
+     "weak": false,
+     "currency": "常青"
+    }
+   ],
+   "rank": 31
+  },
+  {
+   "unit": "M7.18",
+   "module": "M7",
+   "priority": "A",
+   "title": "上层建筑的两类",
+   "n": 1,
+   "weighted": 3,
+   "n_weak": 0,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
+   "recent_n": 1,
+   "years": [
+    2025
+   ],
+   "hits": [
+    {
+     "id": "GD2025-Q007",
+     "year": 2025,
+     "weight": 3,
+     "weak": false,
+     "currency": "常青"
+    }
+   ],
+   "rank": 32
+  },
+  {
+   "unit": "M7.24",
+   "module": "M7",
+   "priority": "A",
+   "title": "根本动力与最终决定力量",
+   "n": 1,
+   "weighted": 3,
+   "n_weak": 0,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
+   "recent_n": 1,
+   "years": [
+    2026
+   ],
+   "hits": [
+    {
+     "id": "GD2026-Q004",
+     "year": 2026,
+     "weight": 3,
+     "weak": false,
+     "currency": "常青"
+    }
+   ],
+   "rank": 33
+  },
+  {
+   "unit": "M7.32",
+   "module": "M7",
+   "priority": "A",
+   "title": "道德起源三个定位",
+   "n": 1,
+   "weighted": 3,
+   "n_weak": 0,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
+   "recent_n": 1,
+   "years": [
+    2024
+   ],
+   "hits": [
+    {
+     "id": "GD2024-Q014",
+     "year": 2024,
+     "weight": 3,
+     "weak": false,
+     "currency": "常青"
+    }
+   ],
+   "rank": 34
+  },
+  {
+   "unit": "P1-04",
+   "module": "P1",
+   "priority": "A",
+   "title": "守正创新：守住根本，不冻结具体做法",
+   "n": 1,
+   "weighted": 3,
+   "n_weak": 0,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
+   "recent_n": 1,
+   "years": [
+    2026
+   ],
+   "hits": [
+    {
+     "id": "GD2026-Q005",
+     "year": 2026,
+     "weight": 3,
+     "weak": false,
+     "currency": "常青"
+    }
+   ],
+   "rank": 35
+  },
+  {
+   "unit": "P1-11",
+   "module": "P1",
+   "priority": "A",
+   "title": "两个结合与传统文化的创造性转化、创新性发展",
+   "n": 1,
+   "weighted": 3,
+   "n_weak": 1,
+   "weighted_weak": 3,
+   "recent_n_weak": 1,
+   "timely_only": false,
+   "recent_n": 1,
+   "years": [
+    2025
+   ],
+   "hits": [
+    {
+     "id": "GD2025-Q001",
+     "year": 2025,
+     "weight": 3,
+     "weak": false,
+     "currency": "常青"
+    },
+    {
+     "id": "GD2024-Q007",
+     "year": 2024,
+     "weight": 3,
+     "weak": true,
+     "currency": "常青"
+    }
+   ],
+   "rank": 36
+  },
+  {
+   "unit": "P2-05",
+   "module": "P2",
+   "priority": "A",
+   "title": "新质生产力：核心标志不是行业名字新",
+   "n": 1,
+   "weighted": 3,
+   "n_weak": 0,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
+   "recent_n": 1,
+   "years": [
+    2025
+   ],
+   "hits": [
+    {
+     "id": "GD2025-Q002",
+     "year": 2025,
+     "weight": 3,
+     "weak": false,
+     "currency": "常青"
+    }
+   ],
+   "rank": 37
+  },
+  {
+   "unit": "P2-07",
+   "module": "P2",
+   "priority": "A",
+   "title": "科技创新、产业创新、中试与企业主体地位",
+   "n": 1,
+   "weighted": 3,
+   "n_weak": 0,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": true,
+   "recent_n": 1,
+   "years": [
+    2024
+   ],
+   "hits": [
+    {
+     "id": "GD2024-Q010",
+     "year": 2024,
+     "weight": 3,
+     "weak": false,
+     "currency": "当年时政"
+    }
+   ],
+   "rank": 38
+  },
+  {
+   "unit": "P2-11",
+   "module": "P2",
+   "priority": "B",
+   "title": "耐心资本与投资于人",
+   "n": 1,
+   "weighted": 3,
+   "n_weak": 0,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": true,
+   "recent_n": 1,
+   "years": [
+    2025
+   ],
+   "hits": [
+    {
+     "id": "GD2025-Q012",
+     "year": 2025,
+     "weight": 3,
+     "weak": false,
+     "currency": "当年时政"
+    }
+   ],
+   "rank": 39
+  },
+  {
+   "unit": "P2-15",
+   "module": "P2",
+   "priority": "B",
+   "title": "治水四水四定与十六字思路",
+   "n": 1,
+   "weighted": 3,
+   "n_weak": 0,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
+   "recent_n": 1,
+   "years": [
+    2026
+   ],
+   "hits": [
+    {
+     "id": "GD2026-Q008",
+     "year": 2026,
+     "weight": 3,
+     "weak": false,
+     "currency": "常青"
+    }
+   ],
+   "rank": 40
   },
   {
    "unit": "P2-16",
@@ -7294,7 +7513,9 @@
    "n": 1,
    "weighted": 3,
    "n_weak": 0,
-   "weighted_strong": 3,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": true,
    "recent_n": 1,
    "years": [
     2026
@@ -7304,10 +7525,11 @@
      "id": "GD2026-Q015",
      "year": 2026,
      "weight": 3,
-     "weak": false
+     "weak": false,
+     "currency": "当年时政"
     }
    ],
-   "rank": 45
+   "rank": 41
   },
   {
    "unit": "H05",
@@ -7317,7 +7539,9 @@
    "n": 2,
    "weighted": 3,
    "n_weak": 0,
-   "weighted_strong": 3,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2021,
@@ -7328,16 +7552,18 @@
      "id": "GD2022-XJ-Q020",
      "year": 2022,
      "weight": 2,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     },
     {
      "id": "GD2021-XZ-Q023",
      "year": 2021,
      "weight": 1,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 46
+   "rank": 42
   },
   {
    "unit": "P1-10",
@@ -7347,7 +7573,9 @@
    "n": 2,
    "weighted": 3,
    "n_weak": 0,
-   "weighted_strong": 3,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2019,
@@ -7358,16 +7586,18 @@
      "id": "GD2023-XJ-Q001",
      "year": 2023,
      "weight": 2,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     },
     {
      "id": "GD2019-XZ-Q072",
      "year": 2019,
      "weight": 1,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 47
+   "rank": 43
   },
   {
    "unit": "P2-02",
@@ -7377,7 +7607,9 @@
    "n": 4,
    "weighted": 2.5,
    "n_weak": 0,
-   "weighted_strong": 2.5,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2018,
@@ -7389,28 +7621,32 @@
      "id": "GD2020-XZ-Q013",
      "year": 2020,
      "weight": 1,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     },
     {
      "id": "GDXD2020-ZH-Q002",
      "year": 2020,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     },
     {
      "id": "GDXD2019-XC-Q006",
      "year": 2019,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     },
     {
      "id": "GD2018-Q071",
      "year": 2018,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 48
+   "rank": 44
   },
   {
    "unit": "P2-04",
@@ -7420,7 +7656,9 @@
    "n": 2,
    "weighted": 2.5,
    "n_weak": 0,
-   "weighted_strong": 2.5,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2019,
@@ -7431,16 +7669,18 @@
      "id": "GD2023-XJ-Q009",
      "year": 2023,
      "weight": 2,
-     "weak": false
+     "weak": false,
+     "currency": "当年时政"
     },
     {
      "id": "GDXD2019-XC-Q005",
      "year": 2019,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 49
+   "rank": 45
   },
   {
    "unit": "P4-07",
@@ -7450,7 +7690,9 @@
    "n": 3,
    "weighted": 2.5,
    "n_weak": 0,
-   "weighted_strong": 2.5,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2014,
@@ -7462,68 +7704,87 @@
      "id": "GD2021-XZ-Q025",
      "year": 2021,
      "weight": 1,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     },
     {
      "id": "GD2019-XJ-Q075",
      "year": 2019,
      "weight": 1,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     },
     {
      "id": "GD2014-XZ-Q001",
      "year": 2014,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 50
+   "rank": 46
   },
   {
-   "unit": "GD-007",
-   "module": "GD",
-   "priority": "A",
-   "title": "百千万工程的2026增量：从三年初见成效向五年显著变化推进",
-   "n": 1,
-   "weighted": 2,
-   "n_weak": 1,
-   "weighted_strong": 0,
-   "recent_n": 0,
-   "years": [
-    2023
-   ],
-   "hits": [
-    {
-     "id": "GD2023-XJ-Q009",
-     "year": 2023,
-     "weight": 2,
-     "weak": true
-    }
-   ],
-   "rank": 51
-  },
-  {
-   "unit": "GD-011",
-   "module": "GD",
+   "unit": "P4-10",
+   "module": "P4",
    "priority": "B",
-   "title": "四大合作平台：每个只抓一根主线",
-   "n": 1,
-   "weighted": 2,
+   "title": "条块关系与基层自治",
+   "n": 5,
+   "weighted": 2.5,
    "n_weak": 1,
-   "weighted_strong": 0,
+   "weighted_weak": 2,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
-    2023
+    2013,
+    2014
    ],
    "hits": [
     {
-     "id": "GD2023-XJ-Q009",
-     "year": 2023,
+     "id": "GD2022-XZ-Q012",
+     "year": 2022,
      "weight": 2,
-     "weak": true
+     "weak": true,
+     "currency": "常青"
+    },
+    {
+     "id": "GD2014-XZ-Q001",
+     "year": 2014,
+     "weight": 0.5,
+     "weak": false,
+     "currency": "常青"
+    },
+    {
+     "id": "GD2014-XZ-Q007",
+     "year": 2014,
+     "weight": 0.5,
+     "weak": false,
+     "currency": "常青"
+    },
+    {
+     "id": "GD2014-XZ-Q012",
+     "year": 2014,
+     "weight": 0.5,
+     "weak": false,
+     "currency": "常青"
+    },
+    {
+     "id": "GD2014-XZ-Q019",
+     "year": 2014,
+     "weight": 0.5,
+     "weak": false,
+     "currency": "常青"
+    },
+    {
+     "id": "GD2013-1-Q057",
+     "year": 2013,
+     "weight": 0.5,
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 52
+   "rank": 47
   },
   {
    "unit": "H20",
@@ -7533,7 +7794,9 @@
    "n": 1,
    "weighted": 2,
    "n_weak": 0,
-   "weighted_strong": 2,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2023
@@ -7543,10 +7806,11 @@
      "id": "GD2023-XJ-Q011",
      "year": 2023,
      "weight": 2,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 53
+   "rank": 48
   },
   {
    "unit": "LAW-006",
@@ -7556,7 +7820,9 @@
    "n": 2,
    "weighted": 2,
    "n_weak": 0,
-   "weighted_strong": 2,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": true,
    "recent_n": 0,
    "years": [
     2020,
@@ -7567,16 +7833,18 @@
      "id": "GD2021-XZ-Q026",
      "year": 2021,
      "weight": 1,
-     "weak": false
+     "weak": false,
+     "currency": "近年新法新政"
     },
     {
      "id": "GD2020-XJ-Q025",
      "year": 2020,
      "weight": 1,
-     "weak": false
+     "weak": false,
+     "currency": "近年新法新政"
     }
    ],
-   "rank": 54
+   "rank": 49
   },
   {
    "unit": "LAW-014",
@@ -7586,7 +7854,9 @@
    "n": 1,
    "weighted": 2,
    "n_weak": 0,
-   "weighted_strong": 2,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2022
@@ -7596,10 +7866,11 @@
      "id": "GD2022-XZ-Q028",
      "year": 2022,
      "weight": 2,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 55
+   "rank": 50
   },
   {
    "unit": "M2.19",
@@ -7609,7 +7880,9 @@
    "n": 1,
    "weighted": 2,
    "n_weak": 0,
-   "weighted_strong": 2,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2022
@@ -7619,10 +7892,11 @@
      "id": "GD2022-XJ-Q015",
      "year": 2022,
      "weight": 2,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 56
+   "rank": 51
   },
   {
    "unit": "M6.10",
@@ -7632,7 +7906,9 @@
    "n": 1,
    "weighted": 2,
    "n_weak": 0,
-   "weighted_strong": 2,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2022
@@ -7642,10 +7918,11 @@
      "id": "GD2022-XJ-Q015",
      "year": 2022,
      "weight": 2,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 57
+   "rank": 52
   },
   {
    "unit": "P1-05",
@@ -7655,7 +7932,9 @@
    "n": 1,
    "weighted": 2,
    "n_weak": 0,
-   "weighted_strong": 2,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2023
@@ -7665,10 +7944,11 @@
      "id": "GD2023-XJ-Q006",
      "year": 2023,
      "weight": 2,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 58
+   "rank": 53
   },
   {
    "unit": "P2-13",
@@ -7678,7 +7958,9 @@
    "n": 1,
    "weighted": 2,
    "n_weak": 0,
-   "weighted_strong": 2,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2023
@@ -7688,10 +7970,11 @@
      "id": "GD2023-XJ-Q012",
      "year": 2023,
      "weight": 2,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 59
+   "rank": 54
   },
   {
    "unit": "LAW-002",
@@ -7701,7 +7984,9 @@
    "n": 2,
    "weighted": 1.5,
    "n_weak": 0,
-   "weighted_strong": 1.5,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2020,
@@ -7712,16 +7997,18 @@
      "id": "GD2021-XZ-Q025",
      "year": 2021,
      "weight": 1,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     },
     {
      "id": "GDXD2020-ZH-Q034",
      "year": 2020,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "近年新法新政"
     }
    ],
-   "rank": 60
+   "rank": 55
   },
   {
    "unit": "H03",
@@ -7731,7 +8018,9 @@
    "n": 1,
    "weighted": 1,
    "n_weak": 0,
-   "weighted_strong": 1,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2021
@@ -7741,10 +8030,11 @@
      "id": "GD2021-XZ-Q013",
      "year": 2021,
      "weight": 1,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 61
+   "rank": 56
   },
   {
    "unit": "H04",
@@ -7754,7 +8044,9 @@
    "n": 1,
    "weighted": 1,
    "n_weak": 0,
-   "weighted_strong": 1,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2021
@@ -7764,10 +8056,11 @@
      "id": "GD2021-XZ-Q011",
      "year": 2021,
      "weight": 1,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 62
+   "rank": 57
   },
   {
    "unit": "H12",
@@ -7777,7 +8070,9 @@
    "n": 1,
    "weighted": 1,
    "n_weak": 0,
-   "weighted_strong": 1,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2021
@@ -7787,10 +8082,11 @@
      "id": "GD2021-XZ-Q023",
      "year": 2021,
      "weight": 1,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 63
+   "rank": 58
   },
   {
    "unit": "H15",
@@ -7800,7 +8096,9 @@
    "n": 2,
    "weighted": 1,
    "n_weak": 0,
-   "weighted_strong": 1,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2019,
@@ -7811,16 +8109,18 @@
      "id": "GDXD2020-ZH-Q005",
      "year": 2020,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     },
     {
      "id": "GDXD2019-XC-Q001",
      "year": 2019,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 64
+   "rank": 59
   },
   {
    "unit": "H19",
@@ -7830,7 +8130,9 @@
    "n": 1,
    "weighted": 1,
    "n_weak": 0,
-   "weighted_strong": 1,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2021
@@ -7840,10 +8142,11 @@
      "id": "GD2021-XZ-Q011",
      "year": 2021,
      "weight": 1,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 65
+   "rank": 60
   },
   {
    "unit": "H22",
@@ -7853,7 +8156,9 @@
    "n": 2,
    "weighted": 1,
    "n_weak": 0,
-   "weighted_strong": 1,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2014,
@@ -7864,16 +8169,18 @@
      "id": "GDXD2020-ZH-Q036",
      "year": 2020,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     },
     {
      "id": "GD2014-XJ-Q001",
      "year": 2014,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 66
+   "rank": 61
   },
   {
    "unit": "H25",
@@ -7883,7 +8190,9 @@
    "n": 2,
    "weighted": 1,
    "n_weak": 0,
-   "weighted_strong": 1,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2019,
@@ -7894,16 +8203,18 @@
      "id": "GDXD2020-ZH-Q005",
      "year": 2020,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     },
     {
      "id": "GDXD2019-XC-Q004",
      "year": 2019,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 67
+   "rank": 62
   },
   {
    "unit": "H29",
@@ -7913,7 +8224,9 @@
    "n": 1,
    "weighted": 1,
    "n_weak": 0,
-   "weighted_strong": 1,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2021
@@ -7923,10 +8236,11 @@
      "id": "GD2021-XZ-Q011",
      "year": 2021,
      "weight": 1,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 68
+   "rank": 63
   },
   {
    "unit": "LAW-012",
@@ -7936,7 +8250,9 @@
    "n": 1,
    "weighted": 1,
    "n_weak": 0,
-   "weighted_strong": 1,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2021
@@ -7946,10 +8262,11 @@
      "id": "GD2021-XZ-Q025",
      "year": 2021,
      "weight": 1,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 69
+   "rank": 64
   },
   {
    "unit": "M2.21",
@@ -7959,7 +8276,9 @@
    "n": 1,
    "weighted": 1,
    "n_weak": 0,
-   "weighted_strong": 1,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2019
@@ -7969,10 +8288,11 @@
      "id": "GD2019-XJ-Q080",
      "year": 2019,
      "weight": 1,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 70
+   "rank": 65
   },
   {
    "unit": "M2.24",
@@ -7982,7 +8302,9 @@
    "n": 1,
    "weighted": 1,
    "n_weak": 0,
-   "weighted_strong": 1,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2019
@@ -7992,10 +8314,11 @@
      "id": "GD2019-XJ-Q080",
      "year": 2019,
      "weight": 1,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 71
+   "rank": 66
   },
   {
    "unit": "M4.17",
@@ -8005,7 +8328,9 @@
    "n": 1,
    "weighted": 1,
    "n_weak": 0,
-   "weighted_strong": 1,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2021
@@ -8015,10 +8340,11 @@
      "id": "GD2021-XZ-Q015",
      "year": 2021,
      "weight": 1,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 72
+   "rank": 67
   },
   {
    "unit": "M4.20",
@@ -8028,7 +8354,9 @@
    "n": 1,
    "weighted": 1,
    "n_weak": 0,
-   "weighted_strong": 1,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2020
@@ -8038,10 +8366,11 @@
      "id": "GD2020-XJ-Q019",
      "year": 2020,
      "weight": 1,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 73
+   "rank": 68
   },
   {
    "unit": "P2-01",
@@ -8051,7 +8380,9 @@
    "n": 1,
    "weighted": 1,
    "n_weak": 0,
-   "weighted_strong": 1,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": true,
    "recent_n": 0,
    "years": [
     2021
@@ -8061,10 +8392,11 @@
      "id": "GD2021-XZ-Q022",
      "year": 2021,
      "weight": 1,
-     "weak": false
+     "weak": false,
+     "currency": "当年时政"
     }
    ],
-   "rank": 74
+   "rank": 69
   },
   {
    "unit": "P2-03",
@@ -8074,7 +8406,9 @@
    "n": 1,
    "weighted": 1,
    "n_weak": 0,
-   "weighted_strong": 1,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": true,
    "recent_n": 0,
    "years": [
     2021
@@ -8084,10 +8418,11 @@
      "id": "GD2021-XZ-Q022",
      "year": 2021,
      "weight": 1,
-     "weak": false
+     "weak": false,
+     "currency": "当年时政"
     }
    ],
-   "rank": 75
+   "rank": 70
   },
   {
    "unit": "H08",
@@ -8097,7 +8432,9 @@
    "n": 1,
    "weighted": 0.5,
    "n_weak": 0,
-   "weighted_strong": 0.5,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2020
@@ -8107,10 +8444,11 @@
      "id": "GDXD2020-ZH-Q020",
      "year": 2020,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 76
+   "rank": 71
   },
   {
    "unit": "H10",
@@ -8120,7 +8458,9 @@
    "n": 1,
    "weighted": 0.5,
    "n_weak": 0,
-   "weighted_strong": 0.5,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2020
@@ -8130,10 +8470,51 @@
      "id": "GDXD2020-ZH-Q020",
      "year": 2020,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 77
+   "rank": 72
+  },
+  {
+   "unit": "H11",
+   "module": "H",
+   "priority": "B",
+   "title": "长征在做什么：战略转移与两次结束节点",
+   "n": 1,
+   "weighted": 0.5,
+   "n_weak": 2,
+   "weighted_weak": 4,
+   "recent_n_weak": 0,
+   "timely_only": false,
+   "recent_n": 0,
+   "years": [
+    2020
+   ],
+   "hits": [
+    {
+     "id": "GD2023-XJ-Q010",
+     "year": 2023,
+     "weight": 2,
+     "weak": true,
+     "currency": "常青"
+    },
+    {
+     "id": "GD2022-XJ-Q021",
+     "year": 2022,
+     "weight": 2,
+     "weak": true,
+     "currency": "常青"
+    },
+    {
+     "id": "GDXD2020-ZH-Q020",
+     "year": 2020,
+     "weight": 0.5,
+     "weak": false,
+     "currency": "常青"
+    }
+   ],
+   "rank": 73
   },
   {
    "unit": "H21",
@@ -8143,7 +8524,9 @@
    "n": 1,
    "weighted": 0.5,
    "n_weak": 0,
-   "weighted_strong": 0.5,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2020
@@ -8153,10 +8536,11 @@
      "id": "GDXD2020-ZH-Q036",
      "year": 2020,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 78
+   "rank": 74
   },
   {
    "unit": "H28",
@@ -8166,7 +8550,9 @@
    "n": 1,
    "weighted": 0.5,
    "n_weak": 0,
-   "weighted_strong": 0.5,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2020
@@ -8176,10 +8562,11 @@
      "id": "GDXD2020-ZH-Q036",
      "year": 2020,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 79
+   "rank": 75
   },
   {
    "unit": "M1.12",
@@ -8189,7 +8576,9 @@
    "n": 1,
    "weighted": 0.5,
    "n_weak": 0,
-   "weighted_strong": 0.5,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2019
@@ -8199,10 +8588,11 @@
      "id": "GDXD2019-XC-Q018",
      "year": 2019,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 80
+   "rank": 76
   },
   {
    "unit": "M1.13",
@@ -8212,7 +8602,9 @@
    "n": 1,
    "weighted": 0.5,
    "n_weak": 0,
-   "weighted_strong": 0.5,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2019
@@ -8222,10 +8614,11 @@
      "id": "GDXD2019-XC-Q018",
      "year": 2019,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 81
+   "rank": 77
   },
   {
    "unit": "M2.08",
@@ -8235,7 +8628,9 @@
    "n": 1,
    "weighted": 0.5,
    "n_weak": 0,
-   "weighted_strong": 0.5,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2019
@@ -8245,10 +8640,11 @@
      "id": "GDXD2019-XC-Q017",
      "year": 2019,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 82
+   "rank": 78
   },
   {
    "unit": "M2.10",
@@ -8258,7 +8654,9 @@
    "n": 1,
    "weighted": 0.5,
    "n_weak": 0,
-   "weighted_strong": 0.5,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2019
@@ -8268,10 +8666,11 @@
      "id": "GDXD2019-XC-Q017",
      "year": 2019,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 83
+   "rank": 79
   },
   {
    "unit": "M2.15",
@@ -8281,7 +8680,9 @@
    "n": 1,
    "weighted": 0.5,
    "n_weak": 0,
-   "weighted_strong": 0.5,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2015
@@ -8291,10 +8692,11 @@
      "id": "GD2015-XJ-Q081",
      "year": 2015,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 84
+   "rank": 80
   },
   {
    "unit": "M3.16",
@@ -8304,7 +8706,9 @@
    "n": 1,
    "weighted": 0.5,
    "n_weak": 0,
-   "weighted_strong": 0.5,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2018
@@ -8314,10 +8718,11 @@
      "id": "GD2018-Q073",
      "year": 2018,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 85
+   "rank": 81
   },
   {
    "unit": "M3.18",
@@ -8327,7 +8732,9 @@
    "n": 1,
    "weighted": 0.5,
    "n_weak": 0,
-   "weighted_strong": 0.5,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2018
@@ -8337,10 +8744,11 @@
      "id": "GD2018-Q073",
      "year": 2018,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 86
+   "rank": 82
   },
   {
    "unit": "M3.24",
@@ -8350,7 +8758,9 @@
    "n": 1,
    "weighted": 0.5,
    "n_weak": 0,
-   "weighted_strong": 0.5,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2020
@@ -8360,10 +8770,44 @@
      "id": "GDXD2020-ZH-Q007",
      "year": 2020,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 87
+   "rank": 83
+  },
+  {
+   "unit": "M4.21",
+   "module": "M4",
+   "priority": "B",
+   "title": "三个方法论表述的对应",
+   "n": 1,
+   "weighted": 0.5,
+   "n_weak": 1,
+   "weighted_weak": 3,
+   "recent_n_weak": 1,
+   "timely_only": false,
+   "recent_n": 0,
+   "years": [
+    2015
+   ],
+   "hits": [
+    {
+     "id": "GD2026-Q009",
+     "year": 2026,
+     "weight": 3,
+     "weak": true,
+     "currency": "常青"
+    },
+    {
+     "id": "GD2015-XJ-Q081",
+     "year": 2015,
+     "weight": 0.5,
+     "weak": false,
+     "currency": "常青"
+    }
+   ],
+   "rank": 84
   },
   {
    "unit": "M6.01",
@@ -8373,7 +8817,9 @@
    "n": 1,
    "weighted": 0.5,
    "n_weak": 0,
-   "weighted_strong": 0.5,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2015
@@ -8383,10 +8829,11 @@
      "id": "GD2015-XJ-Q081",
      "year": 2015,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 88
+   "rank": 85
   },
   {
    "unit": "M7.23",
@@ -8396,7 +8843,9 @@
    "n": 1,
    "weighted": 0.5,
    "n_weak": 0,
-   "weighted_strong": 0.5,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2019
@@ -8406,33 +8855,11 @@
      "id": "GDXD2019-XC-Q001",
      "year": 2019,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 89
-  },
-  {
-   "unit": "P1-07",
-   "module": "P1",
-   "priority": "A",
-   "title": "四个意识、四个自信与四个全面不是同一类清单",
-   "n": 1,
-   "weighted": 0.5,
-   "n_weak": 1,
-   "weighted_strong": 0,
-   "recent_n": 0,
-   "years": [
-    2019
-   ],
-   "hits": [
-    {
-     "id": "GDXD2019-XC-Q008",
-     "year": 2019,
-     "weight": 0.5,
-     "weak": true
-    }
-   ],
-   "rank": 90
+   "rank": 86
   },
   {
    "unit": "P1-08",
@@ -8442,7 +8869,9 @@
    "n": 1,
    "weighted": 0.5,
    "n_weak": 0,
-   "weighted_strong": 0.5,
+   "weighted_weak": 0,
+   "recent_n_weak": 0,
+   "timely_only": false,
    "recent_n": 0,
    "years": [
     2019
@@ -8452,10 +8881,151 @@
      "id": "GDXD2019-XC-Q012",
      "year": 2019,
      "weight": 0.5,
-     "weak": false
+     "weak": false,
+     "currency": "常青"
     }
    ],
-   "rank": 91
+   "rank": 87
+  }
+ ],
+ "weak_only_hits": [
+  {
+   "unit": "M2.01",
+   "module": "M2",
+   "priority": "A",
+   "title": "世界的物质统一性",
+   "n": 0,
+   "weighted": 0,
+   "n_weak": 1,
+   "weighted_weak": 3,
+   "recent_n_weak": 1,
+   "timely_only": false,
+   "recent_n": 0,
+   "years": [],
+   "hits": [
+    {
+     "id": "GD2026-Q010",
+     "year": 2026,
+     "weight": 3,
+     "weak": true,
+     "currency": "常青"
+    }
+   ]
+  },
+  {
+   "unit": "M7.21",
+   "module": "M7",
+   "priority": "A",
+   "title": "经济基础决定与上层建筑反作用",
+   "n": 0,
+   "weighted": 0,
+   "n_weak": 1,
+   "weighted_weak": 3,
+   "recent_n_weak": 1,
+   "timely_only": false,
+   "recent_n": 0,
+   "years": [],
+   "hits": [
+    {
+     "id": "GD2026-Q007",
+     "year": 2026,
+     "weight": 3,
+     "weak": true,
+     "currency": "常青"
+    }
+   ]
+  },
+  {
+   "unit": "P1-02",
+   "module": "P1",
+   "priority": "A",
+   "title": "人民至上：受益者与实践主体不能割裂",
+   "n": 0,
+   "weighted": 0,
+   "n_weak": 1,
+   "weighted_weak": 3,
+   "recent_n_weak": 1,
+   "timely_only": false,
+   "recent_n": 0,
+   "years": [],
+   "hits": [
+    {
+     "id": "GD2025-Q008",
+     "year": 2025,
+     "weight": 3,
+     "weak": true,
+     "currency": "常青"
+    }
+   ]
+  },
+  {
+   "unit": "GD-007",
+   "module": "GD",
+   "priority": "A",
+   "title": "百千万工程的2026增量：从三年初见成效向五年显著变化推进",
+   "n": 0,
+   "weighted": 0,
+   "n_weak": 1,
+   "weighted_weak": 2,
+   "recent_n_weak": 0,
+   "timely_only": false,
+   "recent_n": 0,
+   "years": [],
+   "hits": [
+    {
+     "id": "GD2023-XJ-Q009",
+     "year": 2023,
+     "weight": 2,
+     "weak": true,
+     "currency": "当年时政"
+    }
+   ]
+  },
+  {
+   "unit": "GD-011",
+   "module": "GD",
+   "priority": "B",
+   "title": "四大合作平台：每个只抓一根主线",
+   "n": 0,
+   "weighted": 0,
+   "n_weak": 1,
+   "weighted_weak": 2,
+   "recent_n_weak": 0,
+   "timely_only": false,
+   "recent_n": 0,
+   "years": [],
+   "hits": [
+    {
+     "id": "GD2023-XJ-Q009",
+     "year": 2023,
+     "weight": 2,
+     "weak": true,
+     "currency": "当年时政"
+    }
+   ]
+  },
+  {
+   "unit": "P1-07",
+   "module": "P1",
+   "priority": "A",
+   "title": "四个意识、四个自信与四个全面不是同一类清单",
+   "n": 0,
+   "weighted": 0,
+   "n_weak": 1,
+   "weighted_weak": 0.5,
+   "recent_n_weak": 0,
+   "timely_only": false,
+   "recent_n": 0,
+   "years": [],
+   "hits": [
+    {
+     "id": "GDXD2019-XC-Q008",
+     "year": 2019,
+     "weight": 0.5,
+     "weak": true,
+     "currency": "常青"
+    }
+   ]
   }
  ],
  "analog_hits": [
@@ -9251,38 +9821,6 @@
    "rank": 16
   },
   {
-   "unit": "GD-006",
-   "module": "GD",
-   "priority": "C",
-   "title": "年度目标、五年目标和已实现成果要分开",
-   "n": 3,
-   "weighted": 4.5,
-   "recent_n": 1,
-   "years": [
-    2020,
-    2021,
-    2026
-   ],
-   "hits": [
-    {
-     "id": "GD2026-Q012",
-     "year": 2026,
-     "weight": 3
-    },
-    {
-     "id": "GD2021-XZ-Q030",
-     "year": 2021,
-     "weight": 1
-    },
-    {
-     "id": "GDXD2020-ZH-Q014",
-     "year": 2020,
-     "weight": 0.5
-    }
-   ],
-   "rank": 17
-  },
-  {
    "unit": "GD-009",
    "module": "GD",
    "priority": "B",
@@ -9312,7 +9850,7 @@
      "weight": 1
     }
    ],
-   "rank": 18
+   "rank": 17
   },
   {
    "unit": "LAW-023",
@@ -9338,7 +9876,7 @@
      "weight": 0.5
     }
    ],
-   "rank": 19
+   "rank": 18
   },
   {
    "unit": "LAW-015",
@@ -9370,7 +9908,7 @@
      "weight": 0.5
     }
    ],
-   "rank": 20
+   "rank": 19
   },
   {
    "unit": "P2-07",
@@ -9390,7 +9928,7 @@
      "weight": 3
     }
    ],
-   "rank": 21
+   "rank": 20
   },
   {
    "unit": "P4-02",
@@ -9410,7 +9948,7 @@
      "weight": 3
     }
    ],
-   "rank": 22
+   "rank": 21
   },
   {
    "unit": "P4-06",
@@ -9430,7 +9968,7 @@
      "weight": 3
     }
    ],
-   "rank": 23
+   "rank": 22
   },
   {
    "unit": "K-GD-06",
@@ -9461,7 +9999,7 @@
      "weight": 0.5
     }
    ],
-   "rank": 24
+   "rank": 23
   },
   {
    "unit": "LAW-011",
@@ -9487,7 +10025,7 @@
      "weight": 1
     }
    ],
-   "rank": 25
+   "rank": 24
   },
   {
    "unit": "P2-03",
@@ -9513,7 +10051,7 @@
      "weight": 1
     }
    ],
-   "rank": 26
+   "rank": 25
   },
   {
    "unit": "P2-06",
@@ -9545,7 +10083,7 @@
      "weight": 0.5
     }
    ],
-   "rank": 27
+   "rank": 26
   },
   {
    "unit": "LAW-008",
@@ -9576,7 +10114,7 @@
      "weight": 0.5
     }
    ],
-   "rank": 28
+   "rank": 27
   },
   {
    "unit": "LAW-019",
@@ -9602,7 +10140,7 @@
      "weight": 0.5
     }
    ],
-   "rank": 29
+   "rank": 28
   },
   {
    "unit": "P2-04",
@@ -9628,7 +10166,7 @@
      "weight": 0.5
     }
    ],
-   "rank": 30
+   "rank": 29
   },
   {
    "unit": "K-GD-10",
@@ -9648,7 +10186,7 @@
      "weight": 2
     }
    ],
-   "rank": 31
+   "rank": 30
   },
   {
    "unit": "K-LAW-02",
@@ -9668,7 +10206,7 @@
      "weight": 2
     }
    ],
-   "rank": 32
+   "rank": 31
   },
   {
    "unit": "LAW-016",
@@ -9688,7 +10226,7 @@
      "weight": 2
     }
    ],
-   "rank": 33
+   "rank": 32
   },
   {
    "unit": "P2-14",
@@ -9706,6 +10244,32 @@
      "id": "GD2022-XJ-Q016",
      "year": 2022,
      "weight": 2
+    }
+   ],
+   "rank": 33
+  },
+  {
+   "unit": "GD-006",
+   "module": "GD",
+   "priority": "C",
+   "title": "年度目标、五年目标和已实现成果要分开",
+   "n": 2,
+   "weighted": 1.5,
+   "recent_n": 0,
+   "years": [
+    2020,
+    2021
+   ],
+   "hits": [
+    {
+     "id": "GD2021-XZ-Q030",
+     "year": 2021,
+     "weight": 1
+    },
+    {
+     "id": "GDXD2020-ZH-Q014",
+     "year": 2020,
+     "weight": 0.5
     }
    ],
    "rank": 34
@@ -10671,14 +11235,13 @@
  "coverage": {
   "2024-2026": {
    "直接命中": {
-    "n": 30,
-    "share": 66.7,
-    "weight": 90,
-    "weight_share": 66.7,
+    "n": 26,
+    "share": 57.8,
+    "weight": 78,
+    "weight_share": 57.8,
     "ids": [
      "GD2024-Q002",
      "GD2024-Q006",
-     "GD2024-Q007",
      "GD2024-Q008",
      "GD2024-Q009",
      "GD2024-Q010",
@@ -10691,7 +11254,6 @@
      "GD2025-Q004",
      "GD2025-Q006",
      "GD2025-Q007",
-     "GD2025-Q008",
      "GD2025-Q009",
      "GD2025-Q010",
      "GD2025-Q012",
@@ -10699,9 +11261,7 @@
      "GD2026-Q004",
      "GD2026-Q005",
      "GD2026-Q006",
-     "GD2026-Q007",
      "GD2026-Q008",
-     "GD2026-Q009",
      "GD2026-Q010",
      "GD2026-Q011",
      "GD2026-Q014",
@@ -10709,11 +11269,16 @@
     ]
    },
    "只有弱命中": {
-    "n": 0,
-    "share": 0.0,
-    "weight": 0,
-    "weight_share": 0.0,
-    "ids": []
+    "n": 4,
+    "share": 8.9,
+    "weight": 12,
+    "weight_share": 8.9,
+    "ids": [
+     "GD2024-Q007",
+     "GD2025-Q008",
+     "GD2026-Q007",
+     "GD2026-Q009"
+    ]
    },
    "只有同位卡": {
     "n": 9,
@@ -10753,7 +11318,7 @@
      "GD2025-Q011",
      "GD2026-Q012"
     ],
-    "outside_with_analog": 1
+    "outside_with_analog": 0
    }
   },
   "2022-2023": {
@@ -10844,16 +11409,16 @@
   },
   "all_weighted": {
    "直接命中": {
-    "n": 79,
-    "share": 24.5,
-    "weight": 136,
-    "weight_share": 36.7
+    "n": 75,
+    "share": 23.2,
+    "weight": 124,
+    "weight_share": 33.4
    },
    "只有弱命中": {
-    "n": 6,
-    "share": 1.9,
-    "weight": 8,
-    "weight_share": 2.2
+    "n": 10,
+    "share": 3.1,
+    "weight": 20,
+    "weight_share": 5.4
    },
    "只有同位卡": {
     "n": 67,
@@ -10872,10 +11437,10 @@
     "share": 35.9,
     "weight": 84.5,
     "weight_share": 22.8,
-    "outside_with_analog": 7
+    "outside_with_analog": 6
    }
   },
-  "note": "每题只归一类：有直接命中的先归直接命中（全是弱命中的单列）；其余的，D9以后的归题库外领域（其中有同位卡的另记在 outside_with_analog），D1—D8 的有同位卡归“只有同位卡”，没有的归“同领域但题库无对应”。题库是做过近三年真题之后整理的，近三年的直接命中有事后补卡的成分。"
+  "note": "每题只归一类：有直接命中（不含弱命中）的先归直接命中；命中的卡全是弱命中的单列为“只有弱命中”，不算覆盖；其余的，D9以后的归题库外领域（其中有同位卡的另记在 outside_with_analog），D1—D8 的有同位卡归“只有同位卡”，没有的归“同领域但题库无对应”。题库是做过近三年真题之后整理的，近三年的直接命中有事后补卡的成分。"
  },
  "module_share": {
   "modules": {
@@ -10892,11 +11457,17 @@
     "bank_units_share": 53.8,
     "bank_questions": 420,
     "bank_questions_share": 67.2,
-    "units_direct_hit": 34,
-    "units_direct_hit_recent": 18,
+    "units_direct_hit": 33,
+    "units_direct_hit_share": 19.3,
+    "units_direct_hit_recent": 16,
+    "units_only_weak": [
+     "M2.01",
+     "M7.21"
+    ],
     "units_analog_hit": 0,
-    "units_any_hit": 34,
-    "units_never_hit": 137,
+    "units_analog_not_direct": 0,
+    "units_any_hit": 35,
+    "units_never_hit": 136,
     "never_hit_units": [
      "M1.01",
      "M1.02",
@@ -11009,7 +11580,6 @@
      "M6.27",
      "M6.28",
      "M7.01",
-     "M7.02",
      "M7.03",
      "M7.04",
      "M7.05",
@@ -11036,10 +11606,10 @@
      "M7.31",
      "M7.33"
     ],
-    "recent_questions_hitting_cards": 9,
-    "recent_questions_hitting_cards_share": 20.0,
-    "weight_hitting_cards": 35.75,
-    "weight_hitting_cards_share": 9.6
+    "recent_questions_hitting_cards": 7,
+    "recent_questions_hitting_cards_share": 15.6,
+    "weight_hitting_cards": 29.75,
+    "weight_hitting_cards_share": 8.0
    },
    "P1": {
     "name": "新思想概念组与文化",
@@ -11054,9 +11624,15 @@
     "bank_units_share": 4.1,
     "bank_questions": 12,
     "bank_questions_share": 1.9,
-    "units_direct_hit": 10,
-    "units_direct_hit_recent": 6,
+    "units_direct_hit": 8,
+    "units_direct_hit_share": 61.5,
+    "units_direct_hit_recent": 5,
+    "units_only_weak": [
+     "P1-02",
+     "P1-07"
+    ],
     "units_analog_hit": 0,
+    "units_analog_not_direct": 0,
     "units_any_hit": 10,
     "units_never_hit": 3,
     "never_hit_units": [
@@ -11064,10 +11640,10 @@
      "P1-12",
      "P1-13"
     ],
-    "recent_questions_hitting_cards": 7,
-    "recent_questions_hitting_cards_share": 15.6,
-    "weight_hitting_cards": 27,
-    "weight_hitting_cards_share": 7.3
+    "recent_questions_hitting_cards": 5,
+    "recent_questions_hitting_cards_share": 11.1,
+    "weight_hitting_cards": 20.5,
+    "weight_hitting_cards_share": 5.5
    },
    "P2": {
     "name": "发展理论、产业与生态关系",
@@ -11083,16 +11659,19 @@
     "bank_questions": 16,
     "bank_questions_share": 2.6,
     "units_direct_hit": 11,
+    "units_direct_hit_share": 68.8,
     "units_direct_hit_recent": 6,
+    "units_only_weak": [],
     "units_analog_hit": 11,
+    "units_analog_not_direct": 4,
     "units_any_hit": 15,
     "units_never_hit": 1,
     "never_hit_units": [
      "P2-09"
     ],
-    "recent_questions_hitting_cards": 5.5,
-    "recent_questions_hitting_cards_share": 12.2,
-    "weight_hitting_cards": 23.17,
+    "recent_questions_hitting_cards": 5,
+    "recent_questions_hitting_cards_share": 11.1,
+    "weight_hitting_cards": 23,
     "weight_hitting_cards_share": 6.2
    },
    "P3": {
@@ -11109,8 +11688,11 @@
     "bank_questions": 14,
     "bank_questions_share": 2.2,
     "units_direct_hit": 0,
+    "units_direct_hit_share": 0.0,
     "units_direct_hit_recent": 0,
+    "units_only_weak": [],
     "units_analog_hit": 2,
+    "units_analog_not_direct": 2,
     "units_any_hit": 2,
     "units_never_hit": 7,
     "never_hit_units": [
@@ -11141,8 +11723,11 @@
     "bank_questions": 20,
     "bank_questions_share": 3.2,
     "units_direct_hit": 2,
+    "units_direct_hit_share": 14.3,
     "units_direct_hit_recent": 0,
+    "units_only_weak": [],
     "units_analog_hit": 6,
+    "units_analog_not_direct": 6,
     "units_any_hit": 8,
     "units_never_hit": 6,
     "never_hit_units": [
@@ -11155,8 +11740,8 @@
     ],
     "recent_questions_hitting_cards": 0,
     "recent_questions_hitting_cards_share": 0.0,
-    "weight_hitting_cards": 5.83,
-    "weight_hitting_cards_share": 1.6
+    "weight_hitting_cards": 3.83,
+    "weight_hitting_cards_share": 1.0
    },
    "H": {
     "name": "精选党史、著作与改革节点",
@@ -11172,8 +11757,11 @@
     "bank_questions": 32,
     "bank_questions_share": 5.1,
     "units_direct_hit": 23,
+    "units_direct_hit_share": 71.9,
     "units_direct_hit_recent": 7,
+    "units_only_weak": [],
     "units_analog_hit": 2,
+    "units_analog_not_direct": 0,
     "units_any_hit": 23,
     "units_never_hit": 9,
     "never_hit_units": [
@@ -11189,8 +11777,8 @@
     ],
     "recent_questions_hitting_cards": 4,
     "recent_questions_hitting_cards_share": 8.9,
-    "weight_hitting_cards": 32.25,
-    "weight_hitting_cards_share": 8.7
+    "weight_hitting_cards": 26.75,
+    "weight_hitting_cards_share": 7.2
    },
    "LAW": {
     "name": "法律结构、法典化与新法",
@@ -11205,9 +11793,12 @@
     "bank_units_share": 11.3,
     "bank_questions": 63,
     "bank_questions_share": 10.1,
-    "units_direct_hit": 7,
-    "units_direct_hit_recent": 3,
+    "units_direct_hit": 8,
+    "units_direct_hit_share": 22.2,
+    "units_direct_hit_recent": 4,
+    "units_only_weak": [],
     "units_analog_hit": 14,
+    "units_analog_not_direct": 12,
     "units_any_hit": 20,
     "units_never_hit": 16,
     "never_hit_units": [
@@ -11228,10 +11819,10 @@
      "K-LAW-03",
      "K-LAW-06"
     ],
-    "recent_questions_hitting_cards": 3,
-    "recent_questions_hitting_cards_share": 6.7,
-    "weight_hitting_cards": 14.17,
-    "weight_hitting_cards_share": 3.8
+    "recent_questions_hitting_cards": 3.5,
+    "recent_questions_hitting_cards_share": 7.8,
+    "weight_hitting_cards": 15.67,
+    "weight_hitting_cards_share": 4.2
    },
    "GD": {
     "name": "2026广东重要事项",
@@ -11246,9 +11837,15 @@
     "bank_units_share": 8.5,
     "bank_questions": 48,
     "bank_questions_share": 7.7,
-    "units_direct_hit": 4,
+    "units_direct_hit": 2,
+    "units_direct_hit_share": 7.4,
     "units_direct_hit_recent": 2,
+    "units_only_weak": [
+     "GD-007",
+     "GD-011"
+    ],
     "units_analog_hit": 20,
+    "units_analog_not_direct": 18,
     "units_any_hit": 20,
     "units_never_hit": 7,
     "never_hit_units": [
@@ -11262,8 +11859,8 @@
     ],
     "recent_questions_hitting_cards": 1.5,
     "recent_questions_hitting_cards_share": 3.3,
-    "weight_hitting_cards": 5.83,
-    "weight_hitting_cards_share": 1.6
+    "weight_hitting_cards": 4.5,
+    "weight_hitting_cards_share": 1.2
    },
    "题库外": {
     "name": "题库外（D9—D13）",
@@ -11388,6 +11985,10 @@
     "bank_units": 19,
     "bank_questions": 47,
     "bank_questions_share_of_mazhe": 11.2,
+    "bank_priority": {
+     "A": 5,
+     "B": 14
+    },
     "units_hit": 4,
     "units_hit_recent": 2,
     "hit_weighted_sum": 7.5,
@@ -11397,6 +11998,10 @@
      "M1.12",
      "M1.13"
     ],
+    "hit_units_recent": [
+     "M1.16",
+     "M1.15"
+    ],
     "hit_ids": [
      "GD2025-Q004",
      "GDXD2019-XC-Q018",
@@ -11405,23 +12010,30 @@
     "recent_hit_ids": [
      "GD2025-Q004"
     ],
+    "units_only_weak": [],
+    "weak_hits": [],
     "weight_split": 4,
-    "split_share": 11.1,
-    "share_all": 0.8,
+    "split_share": 13.3,
+    "share_all": 0.9,
+    "d1_only_weight_split": 4,
     "d1_only_split_share": 15.4,
     "recent_split": 1,
-    "recent_split_share": 11.1
+    "recent_split_share": 14.3,
+    "recent_split_d1": 1
    },
    "M2": {
     "name": "物质、运动、意识与规律",
     "bank_units": 24,
     "bank_questions": 61,
     "bank_questions_share_of_mazhe": 14.5,
-    "units_hit": 9,
-    "units_hit_recent": 3,
-    "hit_weighted_sum": 14.5,
+    "bank_priority": {
+     "A": 9,
+     "B": 15
+    },
+    "units_hit": 8,
+    "units_hit_recent": 2,
+    "hit_weighted_sum": 11.5,
     "hit_units": [
-     "M2.01",
      "M2.03",
      "M2.05",
      "M2.19",
@@ -11430,6 +12042,10 @@
      "M2.08",
      "M2.10",
      "M2.15"
+    ],
+    "hit_units_recent": [
+     "M2.03",
+     "M2.05"
     ],
     "hit_ids": [
      "GD2015-XJ-Q081",
@@ -11441,18 +12057,30 @@
     "recent_hit_ids": [
      "GD2026-Q010"
     ],
-    "weight_split": 5.67,
-    "split_share": 15.7,
+    "units_only_weak": [
+     "M2.01"
+    ],
+    "weak_hits": [
+     "M2.01←GD2026-Q010"
+    ],
+    "weight_split": 4.67,
+    "split_share": 15.6,
     "share_all": 1.1,
-    "d1_only_split_share": 21.8,
-    "recent_split": 1,
-    "recent_split_share": 11.1
+    "d1_only_weight_split": 4.67,
+    "d1_only_split_share": 17.9,
+    "recent_split": 0.67,
+    "recent_split_share": 9.5,
+    "recent_split_d1": 0.67
    },
    "M3": {
     "name": "联系、发展与辩证否定",
     "bank_units": 24,
     "bank_questions": 54,
     "bank_questions_share_of_mazhe": 12.9,
+    "bank_priority": {
+     "A": 9,
+     "B": 15
+    },
     "units_hit": 3,
     "units_hit_recent": 0,
     "hit_weighted_sum": 1.5,
@@ -11461,33 +12089,47 @@
      "M3.18",
      "M3.24"
     ],
+    "hit_units_recent": [],
     "hit_ids": [
      "GD2018-Q073",
      "GDXD2020-ZH-Q007"
     ],
     "recent_hit_ids": [],
+    "units_only_weak": [],
+    "weak_hits": [],
     "weight_split": 0.75,
-    "split_share": 2.1,
-    "share_all": 0.1,
+    "split_share": 2.5,
+    "share_all": 0.2,
+    "d1_only_weight_split": 0.75,
     "d1_only_split_share": 2.9,
     "recent_split": 0,
-    "recent_split_share": 0.0
+    "recent_split_share": 0.0,
+    "recent_split_d1": 0
    },
    "M4": {
     "name": "矛盾分析",
     "bank_units": 21,
     "bank_questions": 54,
     "bank_questions_share_of_mazhe": 12.9,
+    "bank_priority": {
+     "A": 13,
+     "B": 8
+    },
     "units_hit": 6,
-    "units_hit_recent": 4,
-    "hit_weighted_sum": 16,
+    "units_hit_recent": 3,
+    "hit_weighted_sum": 13,
     "hit_units": [
      "M4.03",
-     "M4.21",
      "M4.01",
      "M4.05",
      "M4.17",
-     "M4.20"
+     "M4.20",
+     "M4.21"
+    ],
+    "hit_units_recent": [
+     "M4.03",
+     "M4.01",
+     "M4.05"
     ],
     "hit_ids": [
      "GD2015-XJ-Q081",
@@ -11495,30 +12137,42 @@
      "GD2021-XZ-Q015",
      "GD2024-Q012",
      "GD2025-Q010",
-     "GD2026-Q009",
      "GDXD2020-ZH-Q007"
     ],
     "recent_hit_ids": [
      "GD2024-Q012",
-     "GD2025-Q010",
-     "GD2026-Q009"
+     "GD2025-Q010"
     ],
-    "weight_split": 9.42,
-    "split_share": 26.2,
-    "share_all": 1.8,
+    "units_only_weak": [],
+    "weak_hits": [
+     "M4.21←GD2026-Q009"
+    ],
+    "weight_split": 6.42,
+    "split_share": 21.4,
+    "share_all": 1.5,
+    "d1_only_weight_split": 6.42,
     "d1_only_split_share": 24.7,
-    "recent_split": 2.33,
-    "recent_split_share": 25.9
+    "recent_split": 1.33,
+    "recent_split_share": 19.0,
+    "recent_split_d1": 1.33
    },
    "M5": {
     "name": "五对范畴与思维方法",
     "bank_units": 20,
     "bank_questions": 47,
     "bank_questions_share_of_mazhe": 11.2,
+    "bank_priority": {
+     "A": 9,
+     "B": 11
+    },
     "units_hit": 2,
     "units_hit_recent": 2,
     "hit_weighted_sum": 6,
     "hit_units": [
+     "M5.17",
+     "M5.18"
+    ],
+    "hit_units_recent": [
      "M5.17",
      "M5.18"
     ],
@@ -11528,18 +12182,26 @@
     "recent_hit_ids": [
      "GD2025-Q010"
     ],
+    "units_only_weak": [],
+    "weak_hits": [],
     "weight_split": 2,
-    "split_share": 5.6,
-    "share_all": 0.4,
+    "split_share": 6.7,
+    "share_all": 0.5,
+    "d1_only_weight_split": 2,
     "d1_only_split_share": 7.7,
     "recent_split": 0.67,
-    "recent_split_share": 7.4
+    "recent_split_share": 9.5,
+    "recent_split_d1": 0.67
    },
    "M6": {
     "name": "实践、认识与真理",
     "bank_units": 28,
     "bank_questions": 70,
     "bank_questions_share_of_mazhe": 16.7,
+    "bank_priority": {
+     "A": 20,
+     "B": 8
+    },
     "units_hit": 2,
     "units_hit_recent": 0,
     "hit_weighted_sum": 2.5,
@@ -11547,41 +12209,59 @@
      "M6.10",
      "M6.01"
     ],
+    "hit_units_recent": [],
     "hit_ids": [
      "GD2015-XJ-Q081",
      "GD2022-XJ-Q015"
     ],
     "recent_hit_ids": [],
+    "units_only_weak": [],
+    "weak_hits": [],
     "weight_split": 1.17,
-    "split_share": 3.2,
-    "share_all": 0.2,
+    "split_share": 3.9,
+    "share_all": 0.3,
+    "d1_only_weight_split": 1.17,
     "d1_only_split_share": 4.5,
     "recent_split": 0,
-    "recent_split_share": 0.0
+    "recent_split_share": 0.0,
+    "recent_split_d1": 0
    },
    "M7": {
     "name": "唯物史观与道德交叉点",
     "bank_units": 35,
     "bank_questions": 87,
     "bank_questions_share_of_mazhe": 20.7,
+    "bank_priority": {
+     "A": 24,
+     "B": 11
+    },
     "units_hit": 8,
     "units_hit_recent": 7,
     "hit_weighted_sum": 22.5,
     "hit_units": [
      "M7.34",
      "M7.35",
+     "M7.02",
      "M7.15",
      "M7.18",
-     "M7.21",
      "M7.24",
      "M7.32",
      "M7.23"
+    ],
+    "hit_units_recent": [
+     "M7.34",
+     "M7.35",
+     "M7.02",
+     "M7.15",
+     "M7.18",
+     "M7.24",
+     "M7.32"
     ],
     "hit_ids": [
      "GD2024-Q014",
      "GD2025-Q007",
      "GD2026-Q004",
-     "GD2026-Q007",
+     "GD2026-Q010",
      "GDXD2019-XC-Q001",
      "GDXD2019-XC-Q016"
     ],
@@ -11589,19 +12269,62 @@
      "GD2024-Q014",
      "GD2025-Q007",
      "GD2026-Q004",
-     "GD2026-Q007"
+     "GD2026-Q010"
     ],
-    "weight_split": 13,
-    "split_share": 36.1,
-    "share_all": 2.5,
-    "d1_only_split_share": 23.1,
-    "recent_split": 4,
-    "recent_split_share": 44.4
+    "units_only_weak": [
+     "M7.21"
+    ],
+    "weak_hits": [
+     "M7.21←GD2026-Q007"
+    ],
+    "weight_split": 11,
+    "split_share": 36.7,
+    "share_all": 2.6,
+    "d1_only_weight_split": 7,
+    "d1_only_split_share": 26.9,
+    "recent_split": 3.33,
+    "recent_split_share": 47.6,
+    "recent_split_d1": 2.33
    }
   },
-  "mazhe_inner_note": "weight_split：命中 M 卡的每道题把自己的权重平分给它命中的几张 M 卡，再按模块相加（含 D2、D7 里命中 M 卡的题）；split_share 是各模块占这个总数的比例；share_all = 马哲在全部真题中的加权占比 × split_share；d1_only_split_share 只算归在 D1 的题；recent_split 是近三年按题数（不加权）的同样算法。",
-  "mazhe_hit_weight_total": 36,
-  "mazhe_recent_hit_questions": 9
+  "mazhe_inner_note": "全部只算直接命中，弱命中不参加分摊（另记在各模块的 units_only_weak、weak_hits）。weight_split：直接命中 M 卡的每道题把自己的权重平分给它直接命中的几张 M 卡，再按模块相加（含 D2、D7 里命中 M 卡的题）；split_share 是各模块占这个总数的比例；share_all = 马哲在全部真题中的加权占比 × split_share；d1_only_split_share 只算归在 D1 的题；recent_split 是近三年按题数（不加权）的同样算法，recent_split_d1 只算其中归在 D1 的题。",
+  "mazhe_hit_weight_total": 30,
+  "mazhe_d1_hit_weight_total": 26,
+  "mazhe_recent_hit_questions": 7,
+  "mazhe_recent_hit_ids": {
+   "GD2024-Q012": "D1",
+   "GD2024-Q014": "D1",
+   "GD2025-Q004": "D1",
+   "GD2025-Q007": "D2",
+   "GD2025-Q010": "D1",
+   "GD2026-Q004": "D1",
+   "GD2026-Q010": "D1"
+  },
+  "mazhe_recent_hit_by_domain": {
+   "D1": 6,
+   "D2": 1
+  },
+  "mazhe_recent_weak_only_ids": [
+   "GD2026-Q007",
+   "GD2026-Q009"
+  ],
+  "mazhe_priority": {
+   "A": {
+    "bank_units": 89,
+    "hit_recent": 12,
+    "hit_recent_share": 13.5,
+    "hit_all": 20,
+    "hit_all_share": 22.5
+   },
+   "B": {
+    "bank_units": 82,
+    "hit_recent": 4,
+    "hit_recent_share": 4.9,
+    "hit_all": 13,
+    "hit_all_share": 15.9
+   }
+  },
+  "mazhe_priority_note": "档次取知识点目录（A、B）。hit_recent 是近三年被直接命中过的卡数，hit_all 是全部年份。档次是做过真题之后定的，有事后成分。"
  },
  "currency": {
   "2024-2026": {
@@ -11697,6 +12420,320 @@
    "D9": {
     "当年时政": 2
    }
+  },
+  "2024-2026_timely_ids": {
+   "2024": [
+    "GD2024-Q003",
+    "GD2024-Q009",
+    "GD2024-Q010",
+    "GD2024-Q011",
+    "GD2024-Q015"
+   ],
+   "2025": [
+    "GD2025-Q003",
+    "GD2025-Q011",
+    "GD2025-Q012",
+    "GD2025-Q013",
+    "GD2025-Q015"
+   ],
+   "2026": [
+    "GD2026-Q001",
+    "GD2026-Q002",
+    "GD2026-Q003",
+    "GD2026-Q012",
+    "GD2026-Q013",
+    "GD2026-Q015"
+   ]
   }
+ },
+ "backtest": {
+  "papers": {
+   "2024": {
+    "n": 15,
+    "cards_hit": 12,
+    "cards_hit_before": [
+     "H01",
+     "M4.03",
+     "P1-01"
+    ],
+    "cards_hit_before_n": 3,
+    "cards_hit_prev3": [
+     "H01",
+     "P1-01"
+    ],
+    "cards_hit_prev3_n": 2,
+    "bank_cards_hit_before": 56,
+    "bank_cards_hit_before_share": 17.6,
+    "slot_seen_prev3_n": 10,
+    "slot_seen_prev1_n": 9,
+    "slots_not_seen_prev3": [
+     "全国两会与政府工作报告",
+     "广东省情地理",
+     "总书记视察广东讲话",
+     "马哲概念选择题"
+    ],
+    "mazhe_modules_prev2": [
+     "M2",
+     "M6"
+    ],
+    "mazhe_questions": [
+     {
+      "id": "GD2024-Q012",
+      "modules": [
+       "M4"
+      ],
+      "modules_not_in_prev2": [
+       "M4"
+      ],
+      "modules_never_before": []
+     },
+     {
+      "id": "GD2024-Q014",
+      "modules": [
+       "M7"
+      ],
+      "modules_not_in_prev2": [
+       "M7"
+      ],
+      "modules_never_before": []
+     }
+    ],
+    "mazhe_questions_on_module_not_in_prev2": [
+     "GD2024-Q012",
+     "GD2024-Q014"
+    ]
+   },
+   "2025": {
+    "n": 15,
+    "cards_hit": 19,
+    "cards_hit_before": [
+     "H01",
+     "H02",
+     "H26",
+     "M1.16",
+     "M7.34",
+     "M7.35",
+     "P1-01",
+     "P1-03",
+     "P1-06"
+    ],
+    "cards_hit_before_n": 9,
+    "cards_hit_prev3": [
+     "H01",
+     "P1-01",
+     "P1-03",
+     "P1-06"
+    ],
+    "cards_hit_prev3_n": 4,
+    "bank_cards_hit_before": 65,
+    "bank_cards_hit_before_share": 20.4,
+    "slot_seen_prev3_n": 14,
+    "slot_seen_prev1_n": 11,
+    "slots_not_seen_prev3": [
+     "马哲判断题"
+    ],
+    "mazhe_modules_prev2": [
+     "M4",
+     "M7"
+    ],
+    "mazhe_questions": [
+     {
+      "id": "GD2025-Q004",
+      "modules": [
+       "M1"
+      ],
+      "modules_not_in_prev2": [
+       "M1"
+      ],
+      "modules_never_before": []
+     },
+     {
+      "id": "GD2025-Q007",
+      "modules": [
+       "M7"
+      ],
+      "modules_not_in_prev2": [],
+      "modules_never_before": []
+     },
+     {
+      "id": "GD2025-Q010",
+      "modules": [
+       "M4",
+       "M5"
+      ],
+      "modules_not_in_prev2": [
+       "M5"
+      ],
+      "modules_never_before": [
+       "M5"
+      ]
+     }
+    ],
+    "mazhe_questions_on_module_not_in_prev2": [
+     "GD2025-Q004",
+     "GD2025-Q010"
+    ]
+   },
+   "2026": {
+    "n": 15,
+    "cards_hit": 13,
+    "cards_hit_before": [
+     "P2-14"
+    ],
+    "cards_hit_before_n": 1,
+    "cards_hit_prev3": [
+     "P2-14"
+    ],
+    "cards_hit_prev3_n": 1,
+    "bank_cards_hit_before": 75,
+    "bank_cards_hit_before_share": 23.6,
+    "slot_seen_prev3_n": 11,
+    "slot_seen_prev1_n": 7,
+    "slots_not_seen_prev3": [
+     "五年规划",
+     "党的路线宗旨",
+     "国内大事与发展成就",
+     "粤港澳大湾区"
+    ],
+    "mazhe_modules_prev2": [
+     "M1",
+     "M4",
+     "M5",
+     "M7"
+    ],
+    "mazhe_questions": [
+     {
+      "id": "GD2026-Q004",
+      "modules": [
+       "M7"
+      ],
+      "modules_not_in_prev2": [],
+      "modules_never_before": []
+     },
+     {
+      "id": "GD2026-Q010",
+      "modules": [
+       "M2",
+       "M7"
+      ],
+      "modules_not_in_prev2": [
+       "M2"
+      ],
+      "modules_never_before": []
+     }
+    ],
+    "mazhe_questions_on_module_not_in_prev2": [
+     "GD2026-Q010"
+    ]
+   }
+  },
+  "total": {
+   "n": 45,
+   "cards_hit": 44,
+   "cards_hit_before_n": 13,
+   "cards_hit_prev3_n": 7,
+   "slot_seen_prev3_n": 35
+  },
+  "cards_hit_in_two_recent_papers": {
+   "H01": [
+    2024,
+    2025
+   ],
+   "P1-01": [
+    2024,
+    2025
+   ],
+   "P1-03": [
+    2024,
+    2025
+   ],
+   "P1-06": [
+    2024,
+    2025
+   ]
+  },
+  "mazhe_cards_hit_in_two_years": {
+   "M1.16": [
+    2020,
+    2025
+   ],
+   "M4.03": [
+    2020,
+    2024
+   ],
+   "M7.34": [
+    2019,
+    2025
+   ],
+   "M7.35": [
+    2019,
+    2025
+   ]
+  },
+  "mazhe_cards_min_gap_years": 4,
+  "note": "全部只算直接命中。每张卷只用它之前的题：cards_hit 是本卷直接命中的卡数，cards_hit_before 是其中此前任何一年被直接命中过的，cards_hit_prev3 是其中此前三年内被直接命中过的；bank_cards_hit_before_share 是那时题库里已被直接命中过的卡占全部卡的比例，可当随机水平看；slot_seen_prev3_n 是本卷15题里命题位在此前三年省考卷出现过的题数。mazhe_questions 列出本卷直接命中马哲卡的题落在哪些模块，modules_not_in_prev2 是前两年的卷没有直接命中过的模块。"
+ },
+ "bank_selectable": {
+  "questions": {
+   "n": 625,
+   "mazhe": 420,
+   "mazhe_multi": 41,
+   "mazhe_basic_judge": 342
+  },
+  "done_recent_real": {
+   "n": 6,
+   "ids": [
+    "GD2024-Q012",
+    "GD2024-Q014",
+    "GD2025-Q004",
+    "GD2025-Q010",
+    "GD2026-Q004",
+    "GD2026-Q010"
+   ],
+   "types": {
+    "判断": 2,
+    "多选": 4
+   },
+   "mazhe": 6
+  },
+  "hold": {
+   "n": 3,
+   "ids": [
+    "Qeb81cc718093",
+    "Qe38e62fbc54c",
+    "Q0afe203ac0dd"
+   ],
+   "units": [
+    "M2.22",
+    "M7.11"
+   ],
+   "mazhe": 3
+  },
+  "selectable": {
+   "n": 619,
+   "mazhe": 414,
+   "mazhe_multi": 37,
+   "mazhe_basic_judge": 342
+  },
+  "selectable_excl_hold": {
+   "n": 616,
+   "mazhe": 411,
+   "mazhe_multi": 37,
+   "mazhe_basic_judge": 339
+  },
+  "units_without_question": [
+   "P1-13",
+   "LAW-025",
+   "LAW-026",
+   "LAW-027"
+  ],
+  "units_without_selectable_question": [
+   "M2.22",
+   "P1-13",
+   "LAW-025",
+   "LAW-026",
+   "LAW-027"
+  ],
+  "note": "每题只算在主知识点上。selectable 去掉了用户做过的2024—2026年真题原题；selectable_excl_hold 再去掉标了暂停出题的题（选题脚本同样不取）。units_without_question 是题库里没有以它为主知识点的题的卡；units_without_selectable_question 把只剩暂停出题的卡也算上。"
  }
 }

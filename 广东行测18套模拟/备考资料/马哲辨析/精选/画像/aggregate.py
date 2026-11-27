@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 """从 merged.json 算出 真题画像.json。
 
-用法：python3 aggregate.py
+用法：python3 aggregate.py [输出文件]
+      不带参数时写 ../真题画像.json；带一个路径时写到那个路径（用来核对重跑结果，不动正式文件）。
 输入：同目录 merged.json（405题的最终归类）；
       ../知识点目录.md（只取知识点的标题、档次和所属模块）；
       ../题库/G*.json（只数各模块有多少知识点、多少道题，缺了也能跑）。
@@ -19,13 +20,14 @@ import glob
 import json
 import os
 import re
+import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 MERGED = os.path.join(HERE, 'merged.json')
 CATALOG = os.path.join(ROOT, '知识点目录.md')
 BANK_GLOB = os.path.join(ROOT, '题库', 'G*.json')
-OUT = os.path.join(ROOT, '真题画像.json')
+OUT = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, '真题画像.json')
 
 DOMAIN_NAME = {
     'D1': '马哲', 'D2': '党的创新理论', 'D3': '发展战略与经济社会政策', 'D4': '党的建设',
@@ -704,12 +706,74 @@ def main():
         cur[name] = collections.OrderedDict([('n', len(sub))] + [(k, {'n': c[k], 'share': pct(c[k], len(sub))}) for k in ['常青', '当年时政', '近年新法新政']])
     c2 = collections.Counter((r['domain'], r['currency']) for r in recent)
     cur['2024-2026_by_domain'] = {d: {k: c2[(d, k)] for k in ['常青', '当年时政', '近年新法新政'] if c2[(d, k)]} for d in DOMAINS if any(c2[(d, k)] for k in ['常青', '当年时政', '近年新法新政'])}
+    cur['2024-2026_timely_ids'] = collections.OrderedDict(
+        (str(y), [r['id'] for r in sorted(recent, key=lambda r: r['number']) if r['year'] == y and r['currency'] != '常青']) for y in RECENT)
     out['currency'] = cur
+
+    # ---------- backtest：只用某张卷之前的真题去看这张卷（全部只算直接命中） ----------
+    def backtest_one(T):
+        hist = [r for r in uniq if r['year'] < T]
+        tgt = sorted([r for r in uniq if r['year'] == T], key=lambda r: r['number'])
+        before = {u for r in hist for u in strong_units(r)}                              # 此前任何一年被直接命中过的卡
+        prev3 = {u for r in hist if r['year'] >= T - 3 for u in strong_units(r)}         # 此前三年内
+        cards = sorted({u for r in tgt for u in strong_units(r)})
+        slots_prev3 = {r['slot'] for r in hist if r['year'] >= T - 3 and r['exam'] == '省考'}
+        slots_prev1 = {r['slot'] for r in hist if r['year'] == T - 1 and r['exam'] == '省考'}
+        mz_prev2 = sorted({u[:2] for r in hist if r['year'] >= T - 2 for u in strong_units(r) if is_m(u)})
+        mz_before = sorted({u[:2] for r in hist for u in strong_units(r) if is_m(u)})
+        mz_qs = []
+        for r in tgt:
+            ms = sorted({u[:2] for u in strong_units(r) if is_m(u)})
+            if ms:
+                mz_qs.append(collections.OrderedDict([
+                    ('id', r['id']), ('modules', ms),
+                    ('modules_not_in_prev2', [m for m in ms if m not in mz_prev2]),
+                    ('modules_never_before', [m for m in ms if m not in mz_before])]))
+        return collections.OrderedDict([
+            ('n', len(tgt)),
+            ('cards_hit', len(cards)),
+            ('cards_hit_before', sorted(set(cards) & before)), ('cards_hit_before_n', len(set(cards) & before)),
+            ('cards_hit_prev3', sorted(set(cards) & prev3)), ('cards_hit_prev3_n', len(set(cards) & prev3)),
+            ('bank_cards_hit_before', len(before)), ('bank_cards_hit_before_share', pct(len(before), len(cat))),
+            ('slot_seen_prev3_n', sum(1 for r in tgt if r['slot'] in slots_prev3)),
+            ('slot_seen_prev1_n', sum(1 for r in tgt if r['slot'] in slots_prev1)),
+            ('slots_not_seen_prev3', sorted({r['slot'] for r in tgt if r['slot'] not in slots_prev3})),
+            ('mazhe_modules_prev2', mz_prev2),
+            ('mazhe_questions', mz_qs),
+            ('mazhe_questions_on_module_not_in_prev2', [q['id'] for q in mz_qs if q['modules_not_in_prev2']]),
+        ])
+    bt = collections.OrderedDict((str(y), backtest_one(y)) for y in RECENT)
+    years_strong = collections.defaultdict(set)      # 卡 -> 被直接命中的年份
+    for r in uniq:
+        for u in strong_units(r):
+            years_strong[u].add(r['year'])
+    two_recent = sorted(u for u, ys in years_strong.items() if len(ys & set(RECENT)) >= 2)
+    mz_multi = collections.OrderedDict((u, sorted(years_strong[u])) for u in sorted(years_strong) if is_m(u) and len(years_strong[u]) >= 2)
+    out['backtest'] = collections.OrderedDict([
+        ('papers', bt),
+        ('total', collections.OrderedDict([
+            ('n', sum(v['n'] for v in bt.values())),
+            ('cards_hit', sum(v['cards_hit'] for v in bt.values())),
+            ('cards_hit_before_n', sum(v['cards_hit_before_n'] for v in bt.values())),
+            ('cards_hit_prev3_n', sum(v['cards_hit_prev3_n'] for v in bt.values())),
+            ('slot_seen_prev3_n', sum(v['slot_seen_prev3_n'] for v in bt.values())),
+        ])),
+        ('cards_hit_in_two_recent_papers', collections.OrderedDict((u, sorted(years_strong[u] & set(RECENT))) for u in two_recent)),
+        ('mazhe_cards_hit_in_two_years', mz_multi),
+        ('mazhe_cards_min_gap_years', min((b - a for ys in mz_multi.values() for a, b in zip(ys, ys[1:])), default=None)),
+        ('note', '全部只算直接命中。每张卷只用它之前的题：cards_hit 是本卷直接命中的卡数，cards_hit_before 是其中此前任何一年被直接命中过的，'
+                 'cards_hit_prev3 是其中此前三年内被直接命中过的；bank_cards_hit_before_share 是那时题库里已被直接命中过的卡占全部卡的比例，可当随机水平看；'
+                 'slot_seen_prev3_n 是本卷15题里命题位在此前三年省考卷出现过的题数。mazhe_questions 列出本卷直接命中马哲卡的题落在哪些模块，'
+                 'modules_not_in_prev2 是前两年的卷没有直接命中过的模块。'),
+    ])
+
+    # ---------- bank_selectable ----------
+    out['bank_selectable'] = load_bank_selectable()
 
     json.dump(out, open(OUT, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     print('写出', OUT)
     print('题数 %d，去重后 %d，近三年 %d，总权重 %s' % (len(rows), len(uniq), len(recent), r2(total_w)))
-    print('命题位 %d 个；直接命中的知识点 %d 个；同位命中的知识点 %d 个' % (len(slots), len(unit_hits), len(analog_hits)))
+    print('命题位 %d 个；直接命中的知识点 %d 个，另有只有弱命中的 %d 个；同位命中的知识点 %d 个' % (len(slots), len(unit_hits), len(weak_only_hits), len(analog_hits)))
 
 
 if __name__ == '__main__':
