@@ -253,13 +253,18 @@ def main():
             ('share_by_period', '四个时期省考卷各领域的不加权占比，用来看走向'),
             ('share_groups', '把领域并成几组后的加权占比和近三年占比'),
             ('recent_papers', '近三年三张卷逐题的题型、领域、命题位、考点和命中的知识点'),
-            ('slots', '每个统一命题位：出现年份、加权次数、近三年次数、直接命中和同位的知识点'),
-            ('unit_hits', '被真题直接命中的知识点，按加权次数排序；weak 为弱命中'),
+            ('slots', '每个统一命题位：出现年份、加权次数、近三年次数；units 是直接命中的知识点，weak_units 是弱命中的，analog_units 是同位的'),
+            ('unit_hits_summary', '直接命中、只有弱命中、同位命中、没被碰到的知识点各多少个'),
+            ('unit_hits', '被真题直接命中过的知识点，按直接命中的加权次数排序；同一张卡的弱命中另记在 n_weak、weighted_weak，hits 里 weak=true 的是弱命中；'
+                          'timely_only=true 表示它的直接命中全部来自时效题（当年时政或当年新法）'),
+            ('weak_only_hits', '只有弱命中、没有直接命中的知识点'),
             ('analog_hits', '有同位命中的知识点，按加权次数排序'),
             ('forms', '近三年和2022—2023年的题型×问法×考法分布，以及判断、多选的答案分布'),
-            ('coverage', '题库对真题的覆盖：直接命中、只有同位卡、无对应、题库外各多少题'),
-            ('module_share', '题库各模块对应的真题占比、题库规模、命中的卡数；mazhe_inner 是马哲七个模块'),
-            ('currency', '常青题、当年时政题、新法题在各时期的数量'),
+            ('coverage', '题库对真题的覆盖：直接命中、只有弱命中、只有同位卡、无对应、题库外各多少题'),
+            ('module_share', '题库各模块对应的真题占比、题库规模、命中的卡数；mazhe_inner 是马哲七个模块，mazhe_priority 是马哲卡按档次的命中情况'),
+            ('currency', '常青题、当年时政题、新法题在各时期的数量；2024-2026_timely_ids 是近三年各卷的时效题'),
+            ('backtest', '回测：只用某张卷之前的真题看这张卷，以前被直接命中过的卡、以前出现过的命题位各延续了多少；以及重复被命中的卡'),
+            ('bank_selectable', '题库里可选的题数（去掉用户做过的近三年真题原题、暂停出题的题）和没有题可选的卡'),
         ])),
     ])
 
@@ -339,7 +344,8 @@ def main():
             ('questions', [collections.OrderedDict([
                 ('number', r['number']), ('id', r['id']), ('type', r['type']), ('section', r.get('section', '')),
                 ('domain', r['domain']), ('slot', r['slot']), ('topic', r['topic']), ('ask', r['ask']), ('style', r['style']),
-                ('currency', r['currency']), ('units', r['units']), ('weak_units', r.get('weak_units', [])), ('analog_units', r['analog_units']),
+                ('currency', r['currency']), ('units', r['units']), ('weak_units', r.get('weak_units', [])),
+                ('strong_units', strong_units(r)), ('analog_units', r['analog_units']),
             ]) for r in qs]),
         ])
     out['recent_papers'] = rp
@@ -356,15 +362,20 @@ def main():
         mq = sorted([r for r in qs if r['year'] in MID], key=lambda r: r['id'])
         au = collections.Counter()
         au_w = collections.Counter()
-        du = collections.Counter()
+        du = collections.Counter()      # 直接命中（不含弱命中）
         du_w = collections.Counter()
+        wu = collections.Counter()      # 弱命中，单列
+        wu_w = collections.Counter()
         for r in qs:
             for u in r['analog_units']:
                 au[u] += 1
                 au_w[u] += r['weight']
-            for u in r['units']:
+            for u in strong_units(r):
                 du[u] += 1
                 du_w[u] += r['weight']
+            for u in weak_units(r):
+                wu[u] += 1
+                wu_w[u] += r['weight']
         dom = collections.Counter(r['domain'] for r in qs)
         slots.append(collections.OrderedDict([
             ('slot', s), ('desc', SLOT_DESC.get(s, '')),
@@ -384,6 +395,7 @@ def main():
             ('recent_types', dict(collections.Counter(r['type'] for r in rq))),
             ('currency', dict(collections.Counter(r['currency'] for r in qs))),
             ('units', collections.OrderedDict((u, {'n': du[u], 'weighted': r2(du_w[u])}) for u, _ in sorted(du_w.items(), key=lambda t: (-t[1], t[0])))),
+            ('weak_units', collections.OrderedDict((u, {'n': wu[u], 'weighted': r2(wu_w[u])}) for u, _ in sorted(wu_w.items(), key=lambda t: (-t[1], t[0])))),
             ('analog_units', collections.OrderedDict((u, {'n': au[u], 'weighted': r2(au_w[u])}) for u, _ in sorted(au_w.items(), key=lambda t: (-t[1], t[0])))),
             ('ids', [r['id'] for r in sorted(qs, key=lambda r: r['id'])]),
         ]))
