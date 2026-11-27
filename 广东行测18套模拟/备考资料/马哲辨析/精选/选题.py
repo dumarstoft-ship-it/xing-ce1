@@ -25,10 +25,11 @@ HERE = Path(__file__).resolve().parent
 GROUPS = ["G1", "G2", "G3", "G4", "G5a", "G5b", "G6", "G7", "G8"]
 BLUEPRINTS = ["B1", "B2", "B3"]
 N_CORE, N_BACKUP = 160, 40
+GENERATED = "2026-11-27"     # 名单生成日期（写进网页的说明里）
 CARD_CAP = 3            # 同一个知识点当“主知识点”（题目挂的第一个）的核心题上限
 ANY_CAP = 5             # 同一个知识点被核心题涉及的次数上限（一道多选会带到四五个知识点）
 BP_WEIGHT, BP_CAP = 20, 0.5
-MODNAME = {"MZ": "马哲", "P1": "新思想概念", "P2": "发展理论与政策", "P3": "党的建设", "P4": "制度、会议与规划", "H": "党史", "LAW": "法律", "GD": "广东"}
+MODNAME = {"MZ": "马哲", "P1": "新思想", "P2": "政策", "P3": "党建", "P4": "制度规划", "H": "党史", "LAW": "法律", "GD": "广东"}   # 网页表格里用的短名
 MOD_ORDER = ["MZ", "P1", "P2", "P3", "P4", "H", "LAW", "GD"]
 
 
@@ -53,7 +54,7 @@ def load():
         for x in d["flags"]:
             flags[x["q"]] = x["issue"]
     mass, must = defaultdict(float), Counter()
-    nb = 0
+    nb, outside = 0, 0.0
     for b in BLUEPRINTS:
         f = HERE / "蓝图" / f"{b}.json"
         if not f.exists():
@@ -62,6 +63,7 @@ def load():
         d = json.loads(f.read_text(encoding="utf-8"))
         nb += 1
         for p in d["positions"]:
+            outside += p["outside"]
             for c in p["cands"]:
                 mass[c["unit"]] += c["p"]
         for u in d["must_units"]:
@@ -77,7 +79,7 @@ def load():
             calib[name] = json.loads(cf.read_text(encoding="utf-8"))
         else:
             missing.append("校准/" + name)
-    return bank, by_id, units, ranked, flags, dict(mass), must, nb, adj, missing, calib
+    return bank, by_id, units, ranked, flags, dict(mass), must, nb, adj, missing, calib, outside / max(nb, 1)
 
 
 def spread(chunk):
@@ -103,7 +105,7 @@ def spread(chunk):
 
 def main():
     write = "--write" in sys.argv
-    bank, by_id, units, ranked, flags, mass, must, nb, adj, missing, calib = load()
+    bank, by_id, units, ranked, flags, mass, must, nb, adj, missing, calib, outside = load()
     if missing:
         print("还缺：", "、".join(missing))
     banned = {q["id"] for q in bank if q.get("hold") or q.get("review") or q["id"][:6] in ("GD2024", "GD2025", "GD2026")}
@@ -224,9 +226,25 @@ def main():
     print("因上限没进核心的高分题：", [(x["id"], x["score"]) for x in rest if x["score"] > core[-1]["score"]][:12])
 
     if write:
-        out = {"generated": adj.get("generated") or "", "order": order, "core": len(core),
-               "basis": adj.get("basis") or [], "note": adj.get("note") or "",
-               "modules": [{"name": MODNAME[m], "share": (adj.get("share") or {}).get(m, ""), "core": cc[m], "backup": bc[m], "total": total[m]} for m in MOD_ORDER]}
+        n70 = sum(1 for x in core if x["score"] >= 70)
+        fm3 = total["P1"] + total["P2"] + total["P3"]
+        basis = adj.get("basis") or [
+            "对照2013—2026年广东卷的405道政治常识题，近三年的三张卷看得最重。近三年每卷15题：马哲2题（多选、判断各1道），新思想3—5题，"
+            "中央全会文件和政策逐年增加（1、3、5题），广东1—3题，法律1题，党史2、1、0题；科技、地理、文史这类常识已经不考。",
+            "三位预测人各自独立预测下一张卷，结论一致：10月二十届五中全会的《决定》（全面从严治党）占2—3题；“六个必须坚持”轮到还没当过答案的问题导向或人民至上；"
+            "马哲最可能轮到近三年没考的认识论（实践、认识、真理）；广东看11月的深圳APEC和2月的省高质量发展大会；法律首选生态环境法典。",
+            f"九位估值人按“考到的可能”和“容易错的程度”给318个知识点和题目打分，两位校准人拉平各组打分的松紧，一位总评人按考试的15个位置查漏。"
+            f"分数够“应当留”的{n70}道全部进核心，其余名额按分数从高到低补足。核心{len(core)}道按分数排序，排在前面的先学。",
+            f"马哲{total['MZ']}道留{cc['MZ']}道核心、{bc['MZ']}道备选：多选和仿真题优先（真题就是这两种出法），基础判断只留定性词容易被换主语的；"
+            "近三年真题原题你已经做过，没有再放。",
+            f"新思想、政策、党建这三块在考试里占一半左右，题库里一共只有{fm3}道，值得留的都留了。",
+            f"按三位预测人的估计，每张卷15题里大约有{outside:.0f}题题库帮不上：三道原话判断摘的是文件原句（题库只收了其中几句）、古语配观点、当年成就、"
+            "总书记视察广东讲话的原话。这部分要靠读原文和《广东时政易错点》的考前速记，不在这份计划里。",
+        ]
+        share = adj.get("share") or {"MZ": "6题", "P1": "13题", "P2": "9题", "P3": "1题", "P4": "2题", "H": "3题", "LAW": "3题", "GD": "6题"}
+        out = {"generated": adj.get("generated") or GENERATED, "order": order, "core": len(core), "basis": basis,
+               "note": adj.get("note") or "没进精选的题没有删，在“练习”里把“精选”选成“扩展（计划外）”就能做。近三年真题另有2题在题库之外（当年成就）。",
+               "modules": [{"name": MODNAME[m], "share": share.get(m, ""), "core": cc[m], "backup": bc[m], "total": total[m]} for m in MOD_ORDER]}
         (HERE / "精选.json").write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
         detail = [{"o": i, "tier": "核心" if i < len(core) else "备选", **{k: x[k] for k in ("id", "module", "cards", "type", "kind", "gain", "bp", "adj", "score", "why")}} for i, x in enumerate(core_o + backup_o)]
         (HERE / "精选清单.json").write_text(json.dumps(detail, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")

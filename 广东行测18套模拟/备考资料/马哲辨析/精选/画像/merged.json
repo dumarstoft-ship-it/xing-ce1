@@ -8898,7 +8898,9 @@
   "units": [
    "P1-11"
   ],
-  "weak_units": [],
+  "weak_units": [
+   "P1-11"
+  ],
   "analog_units": [],
   "in_scope": true,
   "my_answer": "C",
@@ -9316,7 +9318,9 @@
   "units": [
    "P1-02"
   ],
-  "weak_units": [],
+  "weak_units": [
+   "P1-02"
+  ],
   "analog_units": [],
   "in_scope": true,
   "my_answer": "B",
@@ -9679,7 +9683,9 @@
   "units": [
    "M7.21"
   ],
-  "weak_units": [],
+  "weak_units": [
+   "M7.21"
+  ],
   "analog_units": [],
   "in_scope": true,
   "my_answer": "B",
@@ -9702,7 +9708,8 @@
   "trap": "关系颠倒：应以水定城定地定人定产、水是刚性约束，D变成按需找水",
   "currency": "常青",
   "units": [
-   "P2-15"
+   "P2-15",
+   "LAW-011"
   ],
   "weak_units": [],
   "analog_units": [],
@@ -9729,7 +9736,9 @@
   "units": [
    "M4.21"
   ],
-  "weak_units": [],
+  "weak_units": [
+   "M4.21"
+  ],
   "analog_units": [],
   "in_scope": true,
   "my_answer": "BD",
@@ -9754,9 +9763,12 @@
   "units": [
    "M2.03",
    "M2.05",
+   "M2.01",
+   "M7.02"
+  ],
+  "weak_units": [
    "M2.01"
   ],
-  "weak_units": [],
   "analog_units": [],
   "in_scope": true,
   "my_answer": "ACD",
@@ -9805,9 +9817,7 @@
   "currency": "当年时政",
   "units": [],
   "weak_units": [],
-  "analog_units": [
-   "GD-006"
-  ],
+  "analog_units": [],
   "in_scope": false,
   "my_answer": "C",
   "same_as": "",
