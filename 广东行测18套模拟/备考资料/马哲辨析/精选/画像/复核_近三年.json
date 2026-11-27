@@ -1,0 +1,605 @@
+[
+ {
+  "id": "GD2024-Q001",
+  "domain": "D2",
+  "slot": "新思想核心论断判断（最本质特征／最大优势）",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "my_answer": "正确",
+  "note": "“十个明确”第一条原话。题库无此论断的知识点（P1-09只讲十个明确的归类，不含这句）。",
+  "verdict": "与 merged 一致。"
+ },
+ {
+  "id": "GD2024-Q002",
+  "domain": "D2",
+  "slot": "新思想·两个确立",
+  "currency": "常青",
+  "units": [
+   "P1-06"
+  ],
+  "analog_units": [],
+  "my_answer": "正确",
+  "note": "十九届六中全会决议原话；P1-06给出两个确立的两项内容，直接命中。",
+  "verdict": "与 merged 一致。"
+ },
+ {
+  "id": "GD2024-Q003",
+  "domain": "D5",
+  "slot": "当年全国两会届次与开幕日期",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P4-06",
+   "P4-02"
+  ],
+  "my_answer": "正确",
+  "note": "考的是当年两会事实。2026年同位：十四届全国人大四次会议（P4-06写明、P4-02讲读法）。",
+  "verdict": "与 merged 一致。"
+ },
+ {
+  "id": "GD2024-Q004",
+  "domain": "D2",
+  "slot": "新思想·铸牢中华民族共同体意识（理论论断）",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "my_answer": "正确",
+  "note": "把握不大，按判断题原话多为正确作答，与库内答案一致。K-LAW-05（民族团结进步促进法）只是同主题，学了帮不上这题，不计命中。",
+  "verdict": "与 merged 一致。"
+ },
+ {
+  "id": "GD2024-Q005",
+  "domain": "D8",
+  "slot": "广东省情·自然地理",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "my_answer": "错误",
+  "note": "广东光、热、水资源丰富。题库的广东块全是2026年政策，没有省情地理。",
+  "verdict": "与 merged 一致。"
+ },
+ {
+  "id": "GD2024-Q006",
+  "domain": "D2",
+  "slot": "六个必须坚持（原话配条目）",
+  "currency": "常青",
+  "units": [
+   "P1-01",
+   "P1-03"
+  ],
+  "analog_units": [],
+  "my_answer": "D",
+  "note": "二十大报告“胸怀天下”段原话。",
+  "verdict": "与 merged 一致。"
+ },
+ {
+  "id": "GD2024-Q007",
+  "domain": "D2",
+  "slot": "古语配观点（文化传承创新）",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "my_answer": "C",
+  "note": "靠读懂古语作答。P1-11（创造性转化、创新性发展）只是题干背景，学了对选项没有实质帮助。",
+  "verdict": "units 不同：merged 记 P1-11 为直接命中，我未记。复核后建议改 merged：P1-11 记入 weak_units。"
+ },
+ {
+  "id": "GD2024-Q008",
+  "domain": "D6",
+  "slot": "毛泽东著作与标志性论断",
+  "currency": "常青",
+  "units": [
+   "H17"
+  ],
+  "analog_units": [],
+  "my_answer": "B",
+  "note": "H17原文即“没有调查，没有发言权”出自《反对本本主义》；H14（《论十大关系》）可排D，弱相关。",
+  "verdict": "与 merged 一致。"
+ },
+ {
+  "id": "GD2024-Q009",
+  "domain": "D8",
+  "slot": "总书记对广东／大湾区的战略定位（一点两地）",
+  "currency": "近年新法新政",
+  "units": [
+   "GD-009"
+  ],
+  "analog_units": [
+   "P4-14"
+  ],
+  "my_answer": "A",
+  "note": "2023年4月视察广东提出，2026年仍有效，GD-009直接命中。同位（省委落实总书记要求的总部署）：P4-14。",
+  "verdict": "currency（我近年新法新政，merged 当年时政）两可；analog 是 merged 更全。不改。"
+ },
+ {
+  "id": "GD2024-Q010",
+  "domain": "D8",
+  "slot": "当年广东高质量发展大会",
+  "currency": "当年时政",
+  "units": [
+   "P2-07"
+  ],
+  "analog_units": [
+   "GD-001",
+   "GD-002"
+  ],
+  "my_answer": "C",
+  "note": "错项把“支持企业做创新的主角”换成高校；P2-07（企业科技创新主体地位）对识别错项有实质帮助。2026年同位：GD-001、GD-002。",
+  "verdict": "与 merged 一致。"
+ },
+ {
+  "id": "GD2024-Q011",
+  "domain": "D3",
+  "slot": "党代会／中央全会文件的政策表述辨析（社会治理）",
+  "currency": "近年新法新政",
+  "units": [],
+  "analog_units": [
+   "P2-12",
+   "P3-07"
+  ],
+  "my_answer": "ABD",
+  "note": "C是双碳的表述被移植过来。题库无社会治理知识点。2026年同位（最近的中央文件表述）：十五五纲要P2-12、五中全会决定P3-07。",
+  "verdict": "currency 不同：按合并记录第6条应为当年时政，merged 对，我标错。其余一致。"
+ },
+ {
+  "id": "GD2024-Q012",
+  "domain": "D1",
+  "slot": "马哲多选·矛盾同一性与斗争性各自的作用",
+  "currency": "常青",
+  "units": [
+   "M4.05",
+   "M4.03"
+  ],
+  "analog_units": [],
+  "my_answer": "ABC",
+  "note": "D把斗争性的作用安到同一性头上，M4.05下有同一陷阱的仿真题。M4.07（斗争性寓于同一性）对本题帮助不大，未列。",
+  "verdict": "与 merged 一致。"
+ },
+ {
+  "id": "GD2024-Q013",
+  "domain": "D6",
+  "slot": "人物事迹所属历史时期（精神谱系）",
+  "currency": "常青",
+  "units": [
+   "H31",
+   "H01"
+  ],
+  "analog_units": [],
+  "my_answer": "BC",
+  "note": "H31就是按这道题写的（李大钊《青春》1916、焦裕禄、两弹一星）；H01给四个时期的界线。",
+  "verdict": "与 merged 一致。"
+ },
+ {
+  "id": "GD2024-Q014",
+  "domain": "D1",
+  "slot": "马克思主义道德观·道德起源",
+  "currency": "常青",
+  "units": [
+   "M7.32"
+  ],
+  "analog_units": [],
+  "my_answer": "ACD",
+  "note": "三个定位词原样命中。",
+  "verdict": "与 merged 一致。"
+ },
+ {
+  "id": "GD2024-Q015",
+  "domain": "D7",
+  "slot": "当年施行新法的条文列举（爱国主义教育法）",
+  "currency": "近年新法新政",
+  "units": [
+   "LAW-026"
+  ],
+  "analog_units": [
+   "LAW-007",
+   "K-LAW-05"
+  ],
+  "my_answer": "ABCD",
+  "note": "2024年1月1日施行的新法。LAW-026直接命中但无题。2026年同位（当年施行的新法）：生态环境法典LAW-007、民族团结进步促进法K-LAW-05；LAW-015（新治安法）、LAW-023（法治宣传教育法）也在同位。",
+  "verdict": "analog：我限填2个，少列 LAW-023，merged 更全。其余一致。"
+ },
+ {
+  "id": "GD2025-Q001",
+  "domain": "D2",
+  "slot": "新思想·两个结合（习近平文化思想）",
+  "currency": "常青",
+  "units": [
+   "P1-06",
+   "P1-11"
+  ],
+  "analog_units": [],
+  "my_answer": "正确",
+  "note": "第二个结合的定义，两个知识点都写了。",
+  "verdict": "与 merged 一致。"
+ },
+ {
+  "id": "GD2025-Q002",
+  "domain": "D3",
+  "slot": "新质生产力规范表述（定位词）",
+  "currency": "近年新法新政",
+  "units": [
+   "P2-05"
+  ],
+  "analog_units": [
+   "P2-06"
+  ],
+  "my_answer": "正确",
+  "note": "P2-05是新质生产力的定义性表述，同一知识点；但库内只有“核心标志”，没有“核心要素＝科技创新”这一搭配，建议补一句。2026年同位侧重“因地制宜”：P2-06。",
+  "verdict": "currency、analog 不同：定义句长期有效，按口径记常青、不另记同位卡，merged 对，我标错。units 一致。"
+ },
+ {
+  "id": "GD2025-Q003",
+  "domain": "D3",
+  "slot": "中央全会文件固定搭配判断（X是中国式现代化的Y）",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P2-12",
+   "P3-07"
+  ],
+  "my_answer": "正确",
+  "note": "二十届三中全会《决定》原话。归D3是把它当全会文件的政策表述；按内容也可算D2（总体国家安全观）。2026年同位：P2-12、P3-07都是“固定角色不能互换”。",
+  "verdict": "domain 不同（我 D3，merged D2）：两可，merged 按内容归域且全表一致，不改。其余一致。"
+ },
+ {
+  "id": "GD2025-Q004",
+  "domain": "D1",
+  "slot": "马哲判断·马克思主义鲜明特征的定位词",
+  "currency": "常青",
+  "units": [
+   "M1.16",
+   "M1.15"
+  ],
+  "analog_units": [],
+  "my_answer": "错误",
+  "note": "实践性才是区别于其他理论的显著（根本）特征。",
+  "verdict": "与 merged 一致。"
+ },
+ {
+  "id": "GD2025-Q005",
+  "domain": "D4",
+  "slot": "古语配观点（好干部五条标准）",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "my_answer": "D",
+  "note": "题库无好干部标准知识点；靠读懂古语。",
+  "verdict": "与 merged 一致。"
+ },
+ {
+  "id": "GD2025-Q006",
+  "domain": "D2",
+  "slot": "六个必须坚持（原话配条目）",
+  "currency": "常青",
+  "units": [
+   "P1-01",
+   "P1-03"
+  ],
+  "analog_units": [],
+  "my_answer": "C",
+  "note": "二十大报告“自信自立”段原话；主要干扰项是守正创新（P1-04弱相关）。",
+  "verdict": "与 merged 一致。"
+ },
+ {
+  "id": "GD2025-Q007",
+  "domain": "D1",
+  "slot": "道德与法律的关系（思修交叉、上层建筑）",
+  "currency": "常青",
+  "units": [
+   "M7.34",
+   "M7.35",
+   "M7.18"
+  ],
+  "analog_units": [],
+  "my_answer": "C",
+  "note": "M7.34的易错句与本题C项同构。题干引的是法治德治讲话，归D2也说得通；按考的知识（上层建筑、两种规范的关系）归D1。",
+  "verdict": "domain 不同（我 D1，merged D2）：按 domain 表字面 merged 更贴，我撤回。units 一致。"
+ },
+ {
+  "id": "GD2025-Q008",
+  "domain": "D2",
+  "slot": "古语配观点（人民至上）",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "my_answer": "B",
+  "note": "A、B都与人民有关，靠“发展思想—利益共享”和古语理解区分；P1-02对选对帮助有限，不计命中。",
+  "verdict": "units 不同：merged 记 P1-02 为直接命中，我未记。复核后建议改 merged：P1-02 记入 weak_units。"
+ },
+ {
+  "id": "GD2025-Q009",
+  "domain": "D6",
+  "slot": "党史多选·事件与历史时期、会议的对应",
+  "currency": "常青",
+  "units": [
+   "H02",
+   "H27",
+   "H26"
+  ],
+  "analog_units": [],
+  "my_answer": "BD",
+  "note": "四个选项都能在题库找到：A→H02，B→H12/H05/H01，C→H27（并H25），D→H26。限3个，取最关键的三个。",
+  "verdict": "units：我限填3个，少列 H01，merged 四张都对。其余一致。"
+ },
+ {
+  "id": "GD2025-Q010",
+  "domain": "D1",
+  "slot": "马哲多选·唯物辩证法总体认识",
+  "currency": "常青",
+  "units": [
+   "M5.17",
+   "M4.01",
+   "M5.18"
+  ],
+  "analog_units": [],
+  "my_answer": "ABD",
+  "note": "B→M5.17，A→M4.01，C→M5.18（M5.20同组）。D“批判的和革命的”题库没有。",
+  "verdict": "与 merged 一致。"
+ },
+ {
+  "id": "GD2025-Q011",
+  "domain": "D9",
+  "slot": "当年科技成就辨误",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [],
+  "my_answer": "A",
+  "note": "“梦想”号是大洋钻探船。题库外，无同位知识点。",
+  "verdict": "与 merged 一致。"
+ },
+ {
+  "id": "GD2025-Q012",
+  "domain": "D3",
+  "slot": "中央全会文件新名词释义（耐心资本）",
+  "currency": "当年时政",
+  "units": [
+   "P2-11"
+  ],
+  "analog_units": [
+   "P2-07"
+  ],
+  "my_answer": "B",
+  "note": "P2-11直接命中。2026年同位（文件新名词释义）：P2-11里的“投资于人”、P2-07的“中试”。",
+  "verdict": "analog 写法不同（merged 把直接命中卡也记作同位卡并取并集）。不改。"
+ },
+ {
+  "id": "GD2025-Q013",
+  "domain": "D3",
+  "slot": "中央全会文件名词外延（列举归属：基本农作物）",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P2-16",
+   "GD-004"
+  ],
+  "my_answer": "D",
+  "note": "题库无此名词。2026年同位（文件里的名单归属）：P2-16、GD-004。",
+  "verdict": "与 merged 一致。"
+ },
+ {
+  "id": "GD2025-Q014",
+  "domain": "D7",
+  "slot": "社会法常识·社保缴费主体",
+  "currency": "常青",
+  "units": [
+   "LAW-027"
+  ],
+  "analog_units": [],
+  "my_answer": "A",
+  "note": "直接命中。不是时效题，不列同位；2026年同主题新内容有K-LAW-06、K-LAW-04、K-GD-04。",
+  "verdict": "与 merged 一致。"
+ },
+ {
+  "id": "GD2025-Q015",
+  "domain": "D8",
+  "slot": "当年广东高质量发展大会",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "GD-001",
+   "GD-002"
+  ],
+  "my_answer": "C",
+  "note": "2025年大会原话填空。2026年同位：GD-001、GD-002。",
+  "verdict": "与 merged 一致。"
+ },
+ {
+  "id": "GD2026-Q001",
+  "domain": "D8",
+  "slot": "总书记视察广东讲话原话",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P4-14"
+  ],
+  "my_answer": "正确",
+  "note": "2025年11月视察广东讲话原句（仓库讲义p74有原文）。题库无直接知识点；同位取省委“1310”部署P4-14（改革、开放、创新三大动力）。",
+  "verdict": "analog：merged 多 GD-014（2026年深圳APEC），合理，merged 更全。答案已用仓库讲义第74页原文核对为正确。"
+ },
+ {
+  "id": "GD2026-Q002",
+  "domain": "D3",
+  "slot": "中央全会文件固定搭配判断（X关系中国式现代化的Y）",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P2-12",
+   "P3-07"
+  ],
+  "my_answer": "正确",
+  "note": "二十届四中全会《建议》原话。",
+  "verdict": "与 merged 一致。"
+ },
+ {
+  "id": "GD2026-Q003",
+  "domain": "D3",
+  "slot": "中央全会文件固定搭配判断（X是中国式现代化的Y）",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "P2-12",
+   "P3-07"
+  ],
+  "my_answer": "正确",
+  "note": "《建议》原话，2026年广东高质量发展大会也用了这句。GD-005同主题但不含这句，弱相关。",
+  "verdict": "与 merged 一致。"
+ },
+ {
+  "id": "GD2026-Q004",
+  "domain": "D1",
+  "slot": "马哲判断·唯物史观动力论的定位词",
+  "currency": "常青",
+  "units": [
+   "M7.24",
+   "M7.15"
+  ],
+  "analog_units": [],
+  "my_answer": "错误",
+  "note": "原话主语是生产力（讲新质生产力时的论述）。M7.24管“根本动力／最终决定力量”，其下有“终极原因”原文题；M7.15管生产力与生产关系谁决定谁。",
+  "verdict": "与 merged 一致。"
+ },
+ {
+  "id": "GD2026-Q005",
+  "domain": "D2",
+  "slot": "六个必须坚持·守正创新的内涵",
+  "currency": "常青",
+  "units": [
+   "P1-04"
+  ],
+  "analog_units": [],
+  "my_answer": "A",
+  "note": "P1-04原文：守正是创新的前提和基础。",
+  "verdict": "与 merged 一致。"
+ },
+ {
+  "id": "GD2026-Q006",
+  "domain": "D3",
+  "slot": "生态资源类政策表述辨析（双碳）",
+  "currency": "常青",
+  "units": [
+   "P2-14"
+  ],
+  "analog_units": [],
+  "my_answer": "D",
+  "note": "A“运动式减碳”、B“优先关停”由P2-14直接否定；C（自己作主）题库未写。P2-06（先立后破）弱相关。",
+  "verdict": "与 merged 一致。"
+ },
+ {
+  "id": "GD2026-Q007",
+  "domain": "D2",
+  "slot": "古语配观点（法随时变）",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "my_answer": "B",
+  "note": "题干带出“上层建筑适应经济基础”这一马哲概念（M7.21弱相关），但选对靠读懂古语。",
+  "verdict": "units 不同：merged 记 M7.21 为直接命中，我未记。复核后建议改 merged：M7.21 记入 weak_units。"
+ },
+ {
+  "id": "GD2026-Q008",
+  "domain": "D3",
+  "slot": "生态资源类政策表述辨析（水安全／治水思路）",
+  "currency": "常青",
+  "units": [
+   "P2-15",
+   "LAW-011"
+  ],
+  "analog_units": [],
+  "my_answer": "D",
+  "note": "D违背“四水四定”；P2-15下的题有同一错项，LAW-011也写了以水定城定地定人定产。",
+  "verdict": "units 不同：我多 LAW-011。复核后建议改 merged：units 补 LAW-011。"
+ },
+ {
+  "id": "GD2026-Q009",
+  "domain": "D2",
+  "slot": "理论成果·思想路线与实事求是",
+  "currency": "常青",
+  "units": [],
+  "analog_units": [],
+  "my_answer": "BD",
+  "note": "C把“最基础在搞清实事、关键在求是”说反了。题库没有思想路线／实事求是的专门知识点；M4.21只有一句释义，弱相关，不计命中。",
+  "verdict": "units 不同：merged 记 M4.21 为直接命中，我未记。复核后建议改 merged：M4.21 记入 weak_units。"
+ },
+ {
+  "id": "GD2026-Q010",
+  "domain": "D1",
+  "slot": "马哲多选·物质范畴",
+  "currency": "常青",
+  "units": [
+   "M2.05",
+   "M2.03",
+   "M7.02"
+  ],
+  "analog_units": [],
+  "my_answer": "ACD",
+  "note": "A、C→M2.05，B→M2.03（并M1.10），D→M7.02（生产方式是社会发展的决定力量）；M2.01是D项所在的教材小节，但知识点原文帮不上D。",
+  "verdict": "units 不同：我 M7.02，merged M2.01。复核后建议改 merged：units 补 M7.02，M2.01 记入 weak_units。"
+ },
+ {
+  "id": "GD2026-Q011",
+  "domain": "D5",
+  "slot": "五年规划历史沿革",
+  "currency": "常青",
+  "units": [
+   "H32"
+  ],
+  "analog_units": [],
+  "my_answer": "D",
+  "note": "A、B、C三个错项H32全覆盖。由“十五五”编制带出，但考的是不变的史实；2026年变体可问“十五五开局年／规划期”（P4-13）。",
+  "verdict": "与 merged 一致。"
+ },
+ {
+  "id": "GD2026-Q012",
+  "domain": "D9",
+  "slot": "当年成就辨误（“十四五”成就）",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [],
+  "my_answer": "C",
+  "note": "应为规模最大的中等收入群体。题库外，无同位知识点。",
+  "verdict": "analog 不同：merged 记 GD-006，我为空。复核后建议改 merged：删去 GD-006。"
+ },
+ {
+  "id": "GD2026-Q013",
+  "domain": "D8",
+  "slot": "大湾区跨江跨海通道（省情时事）",
+  "currency": "当年时政",
+  "units": [],
+  "analog_units": [
+   "GD-010"
+  ],
+  "my_answer": "A",
+  "note": "珠江口首座跨江大桥是虎门大桥。题库无桥隧事实；同位取大湾区“硬联通”GD-010，只是位置相同，学了帮不上这类事实题。",
+  "verdict": "与 merged 一致。"
+ },
+ {
+  "id": "GD2026-Q014",
+  "domain": "D7",
+  "slot": "国家象征类法律·国歌使用场合",
+  "currency": "常青",
+  "units": [
+   "LAW-025"
+  ],
+  "analog_units": [],
+  "my_answer": "C",
+  "note": "直接命中，但LAW-025无题。",
+  "verdict": "与 merged 一致。"
+ },
+ {
+  "id": "GD2026-Q015",
+  "domain": "D3",
+  "slot": "中央全会文件列举归属（新兴产业名单）",
+  "currency": "当年时政",
+  "units": [
+   "P2-16",
+   "GD-004"
+  ],
+  "analog_units": [
+   "P3-07"
+  ],
+  "my_answer": "A",
+  "note": "P2-16原文即本题（船舶在传统产业）。十五五纲要2026年3月批准，名单在下一张卷仍有效；另一同位是五中全会决定P3-07。",
+  "verdict": "analog 写法不同（merged 重复记直接命中卡，我另记 P3-07）：两可，不改。"
+ }
+]
