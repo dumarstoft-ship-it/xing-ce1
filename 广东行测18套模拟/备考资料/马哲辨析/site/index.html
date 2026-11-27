@@ -344,7 +344,8 @@ const mzPool = () => S.qs.filter((q) => bankOf(q) === "mz");
 function allowPrio(q) { const p = prioOf(q); return p === "A" || (p === "B" && S.prog.settings.fmB) || (p === "C" && S.prog.settings.fmC); }
 const fmPool = () => S.qs.filter((q) => q.bank === "fm" && allowPrio(q));
 const profile = (k) => new Set((S.meta.fm_profiles && S.meta.fm_profiles[k]) || []);
-const newFocusPool = () => { const ids = profile("new_focus"); return fmPool().filter((q) => q.cards.some((c) => ids.has(c))); };
+const hasEvidence = (q) => (q.refs || []).some((r) => /^E-/.test(r));
+const newFocusPool = () => { const ids = profile("new_focus"); return fmPool().filter((q) => hasEvidence(q) || q.cards.some((c) => ids.has(c))); };
 const corePool = () => { const ids = profile("all_core"); return fmPool().filter((q) => q.cards.some((c) => ids.has(c))); };
 
 // ---------- 选题 ----------
@@ -479,7 +480,7 @@ function todayPanel(bank) {
     const nf = newFocusPool(), core = corePool();
     const wrongFm = wrongPool("fm");
     box.append(h("div", { class: "entries" },
-      h("button", { class: "entry", onclick: () => startRun(pickGroup(nf, size, { prefer: profile("new_focus"), reviewCap: size }), "本轮法律与广东新增") }, h("b", { text: "本轮法律与广东新增" }), h("span", { text: `${nf.filter((q) => !paused(q)).length}道 · 先A后B` })),
+      h("button", { class: "entry", onclick: () => startRun(pickGroup(nf, size, { prefer: profile("new_focus"), reviewCap: size }), "本轮新增考点") }, h("b", { text: "本轮新增考点" }), h("span", { text: `${nf.filter((q) => !paused(q)).length}道 · 新法、广东、十五五与党建新文件` })),
       h("button", { class: "entry", onclick: () => startRun(pickGroup(core, size, { reviewCap: size }), "全阶段A档核心") }, h("b", { text: "全阶段A档核心" }), h("span", { text: `${core.filter((q) => !paused(q)).length}道` })),
       h("button", { class: "entry", disabled: !wrongFm.length, onclick: () => startRedo("fm") }, h("b", { text: "错题重练" }), h("span", { text: wrongFm.length ? `${wrongFm.length}道（换选项顺序或换说法）` : "现在没有错题" }))),
       h("div", { class: "row" },
@@ -694,13 +695,15 @@ function explainFm(q, pres, out) {
     else if (q.answer === "错误" && q.fix) out.append(blk("good", "改正后的说法", q.fix, true));
   } else {
     const rows = (pres ? pres.letters.map((L) => [L, q.opts[pres.map[L]]]) : q.opts.map((o, i) => ["ABCDEF"[i], o]));
-    out.append(h("div", { class: "blk" }, h("div", { class: "h", text: "逐项看" }),
+    const neg = q.type === "单选" && /(有误|错误|不正确|不符合|不属于)的(是|一项)|(说法|表述)(有误|错误|不正确)/.test(q.stem);
+    out.append(h("div", { class: "blk" }, h("div", { class: "h", text: neg ? "逐项看（本题选有误的一项：✓表示该选）" : "逐项看" }),
       h("div", { class: "optwhy" }, ...rows.map(([L, o]) => h("div", null, h("b", { class: o.correct ? "y" : "n", text: L + (o.correct ? "✓" : "✗") }), h("span", { text: o.why }))))));
   }
   if (q.explain) out.append(blk("", "要点", q.explain));
   if (q.condition) out.append(blk("fix", "适用条件", q.condition));
   for (const cid of q.cards) { const c = S.card[cid]; if (c) out.append(relatedCard(c)); }
   out.append(h("p", { class: "note" }, `${q.origin || "自编"}，不是官方真题。依据：`, ...fmRefLinks(q.refs)));
+  out.append(...evidenceCards(q.refs));
   return out;
 }
 function relatedCard(c) {
@@ -714,12 +717,39 @@ function fmRefLinks(refs) {
   const src = S.meta.fm_sources || {};
   const out = [];
   (refs || []).forEach((r, i) => {
-    const s = src[r];
+    const s = src[r], e = (S.meta.fm_evidence || {})[r];
     if (i) out.push("；");
+    if (e) { out.push(`${r} ${e.title}（Codex原文证据）`); return; }
     if (s && /^https:\/\//.test(s.url || "")) out.push(h("a", { href: s.url, target: "_blank", rel: "noopener" }, s.title));
     else out.push(s ? s.title : r);
   });
   return out.length ? out : ["—"];
+}
+// 原文证据（Codex核验，2026-11-27）：Markdown 里的 [文字](链接) 变成链接，**加粗**去掉标记
+function mdInline(text) {
+  const out = [], re = /\[([^\]]+)\]\((https:\/\/[^)\s]+)\)/g;
+  let last = 0, m;
+  const plain = (t) => t.replace(/\*\*/g, "");
+  while ((m = re.exec(text))) {
+    if (m.index > last) out.push(plain(text.slice(last, m.index)));
+    out.push(h("a", { href: m[2], target: "_blank", rel: "noopener" }, plain(m[1])));
+    last = re.lastIndex;
+  }
+  if (last < text.length) out.push(plain(text.slice(last)));
+  return out;
+}
+const EV_ROWS = [["date", "文件、机关与日期"], ["quote", "原文与语境"], ["conclusion", "核验结论"], ["explain", "官方解释"], ["contrast", "相邻概念与旧资料"]];
+function evidenceCards(refs) {
+  const ev = S.meta.fm_evidence || {};
+  return (refs || []).filter((r) => ev[r]).map((r) => {
+    const e = ev[r];
+    return h("details", { class: "card" },
+      h("summary", null, h("span", { class: "cid", text: r }), h("span", { class: "ct", text: "原文证据：" + e.title }), h("span", { class: "pill" + (/^可用/.test(e.status) ? " ok" : " warn"), text: /^可用/.test(e.status) ? "可用" : /^限定/.test(e.status) ? "限定使用" : /^待补/.test(e.status) ? "待补依据" : "证据" })),
+      h("div", { class: "body" },
+        e.status && !/^可用$/.test(e.status) ? h("div", { class: "blk warn" }, h("div", { class: "h", text: "使用限定" }), h("p", { text: e.status })) : null,
+        ...EV_ROWS.filter(([k]) => e[k]).map(([k, label]) => h("div", { class: "blk" + (k === "conclusion" ? " good" : k === "contrast" ? " trap" : "") }, h("div", { class: "h", text: label }), h("p", null, ...mdInline(e[k])))),
+        h("p", { class: "note", text: `Codex 调研员核验，截至2026-11-27；全文在仓库“学习资料/政治理论常识/协作核验/原文证据/${e.file}.md”。` })));
+  });
 }
 function nextQ() { if (S.run && S.run.pos <= S.run.list.length) renderRun(); }
 function exitRun() { S.run = null; route(); }
@@ -835,12 +865,14 @@ function cardBody(c) {
 function blockBody(c) {
   const qs = S.qByCard[c.id] || [];
   return h("div", { class: "body" },
-    h("div", { class: "row", style: "gap:6px" }, h("span", { class: "pill " + (c.priority === "A" ? "warn" : ""), text: c.priority + "档" }), c.new ? h("span", { class: "pill a", text: "本轮新增" }) : null, dimsChips(c.id)),
+    h("div", { class: "row", style: "gap:6px" }, h("span", { class: "pill " + (c.priority === "A" ? "warn" : ""), text: c.priority + "档" }), c.new ? h("span", { class: "pill a", text: c.candidate ? "Codex核验新增" : "本轮新增" }) : null, dimsChips(c.id)),
+    c.review_note ? blk("fix", "核验补充（Codex原文证据，底稿原文未改）", c.review_note) : null,
     blk("good", "正确关系（标准答案依据）", (c.correct || []).join("\n"), true),
     c.why ? blk("", "为什么（帮助理解的解释，不当作唯一答案）", c.why) : null,
     ...(c.contrasts || []).map((x) => h("div", { class: "blk trap" }, h("div", { class: "h", text: "易混" }), h("p", { class: "serif", text: "✗ " + x.wrong }), h("p", { text: "错因：" + x.reason }), h("p", { text: "纠正：" + x.correction }))),
     c.question_design ? blk("fix", "出题边界", c.question_design) : null,
     h("p", { class: "note" }, "来源：", ...fmRefLinks(c.source_ids)),
+    ...evidenceCards(c.source_ids),
     h("p", { class: "note", text: `${c.related_ids && c.related_ids.length ? "相关知识块：" + c.related_ids.join("、") + " · " : ""}本块共${qs.length}道题` + (qs.some(paused) ? `（${qs.filter(paused).length}道待审）` : "") }));
 }
 function viewCards() {
@@ -912,7 +944,11 @@ function viewAppendix() {
     h("details", null, h("summary", { class: "note", text: "展开来源表" }),
       h("div", { class: "tbl" }, h("table", null, h("tbody", null, ...fs.map(([id, s]) => h("tr", null, h("td", { text: id }),
         h("td", null, /^https:\/\//.test(s.url || "") ? h("a", { href: s.url, target: "_blank", rel: "noopener" }, s.title) : s.title), h("td", { class: "note", text: s.publication_date || "" }))))))));
-  return [p1, p2, p3, p4, p5];
+  const ev = Object.entries(S.meta.fm_evidence || {});
+  const p6 = ev.length ? h("section", { class: "panel" }, h("h2", { text: `Codex原文证据（${ev.length}）` }),
+    h("p", { class: "sub", text: "调研员按正式文本或发文机关页面核对的条文、日期和原句，核验截至2026-11-27。“限定使用”的证据要连同限定条件一起记。" }),
+    h("div", { class: "cardlist" }, ...ev.map(([id]) => evidenceCards([id])[0]))) : null;
+  return [p1, p2, p3, p4, p5, p6].filter(Boolean);
 }
 
 // ---------- 记录 ----------

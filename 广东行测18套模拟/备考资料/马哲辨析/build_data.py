@@ -11,6 +11,7 @@ HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[2]
 DRAFT = ROOT / "学习资料/政治理论常识/马哲概念辨析训练底稿.json"
 DRAFT_FM = ROOT / "学习资料/政治理论常识/非马哲政治理论与广东常识训练底稿_2026-11-27.json"   # GPT整理的非马哲底稿
+EVIDENCE = ROOT / "学习资料/政治理论常识/协作核验"   # Codex交回的原文证据（E编号）
 OUT = HERE / "site"
 
 
@@ -23,6 +24,39 @@ def split_options(text):
     """选择题解析里各选项另起一行：句末（。；）后紧跟“X项”时断行。"""
     import re
     return re.sub(r"([。；])\s*(?=[A-D]项)", "\\1\n", text)
+
+
+EV_KEYS = (("知识点", "kids"), ("关联知识点", "kids"), ("文件", "date"), ("原文", "quote"), ("事实", "conclusion"),
+           ("官方解释", "explain"), ("相邻", "contrast"), ("命题分析", "design"))
+
+
+def load_evidence():
+    """协作核验/原文证据/*.md 的证据卡 → {E编号: {title, file, status, date, quote, conclusion, explain, contrast}}。
+    使用状态取自 调研结果索引.md；“命题分析”是写给出题人的，不进网页。"""
+    import re
+    if not EVIDENCE.exists():
+        return {}
+    status = {}
+    for line in (EVIDENCE / "调研结果索引.md").read_text(encoding="utf-8").splitlines():
+        m = re.match(r"\|\s*\[(E-[A-Z]+-\d+)\]\([^)]*\)\s*\|(.*?)\|(.*?)\|(.*?)\|\s*$", line)
+        if m:
+            status[m[1]] = m[4].strip()
+    ev = {}
+    for f in sorted((EVIDENCE / "原文证据").glob("*.md")):
+        cur = None
+        for line in f.read_text(encoding="utf-8").splitlines():
+            m = re.match(r"##\s+(E-[A-Z]+-\d+)\s+(.+)", line)
+            if m:
+                cur = ev[m[1]] = {"title": m[2].strip(), "file": f.stem, "status": status.get(m[1], "")}
+                continue
+            m = re.match(r"-\s+\*\*(.+?)\*\*\s*(.*)", line)
+            if cur is not None and m:
+                key = next((k for pre, k in EV_KEYS if m[1].startswith(pre)), None)
+                if key and key != "design":
+                    cur[key] = m[2].strip()
+    missing = set(status) - set(ev)
+    assert not missing, ("索引里有、证据文件里没有：", missing)
+    return ev
 
 
 def main():
@@ -94,9 +128,32 @@ def main():
                "contrasts": r.get("contrasts") or [], "question_design": r.get("question_design") or "",
                "related_ids": r.get("related_ids") or [], "source_ids": r.get("source_ids") or [],
                "exam_eligible": r.get("exam_eligible", True)} for r in fm["records"]]
-    block_ids = {b["id"] for b in blocks}
     fkeep_f = HERE / "非马哲" / "核对" / "采用.json"
     fkeep = json.loads(fkeep_f.read_text(encoding="utf-8")) if fkeep_f.exists() else {}
+    evidence = load_evidence()
+    # 第二批：Codex证据里的候选知识点（K编号），由出题人按证据写成知识块；采用.json 里标“删除”的不收
+    k_ids = []
+    for f in sorted((HERE / "非马哲" / "新题").glob("K_*.json")):
+        for r in json.loads(f.read_text(encoding="utf-8")):
+            k = fkeep.get(r["id"]) or {}
+            if k.get("status") == "删除":
+                continue
+            r = {**r, **(k.get("override") or {})}
+            assert r["id"].startswith("K-") and r["module"] in fm["modules"] and r["priority"] in ("A", "B", "C"), r["id"]
+            assert r["source_ids"] and all(x in evidence or x in fm["sources"] for x in r["source_ids"]), r["id"]
+            blocks.append({"id": r["id"], "module_id": r["module"], "title": r["title"], "priority": r["priority"], "new": True,
+                           "correct": r["correct"], "why": r.get("why") or "", "contrasts": r.get("contrasts") or [],
+                           "question_design": r.get("question_design") or "", "related_ids": r.get("related_ids") or [],
+                           "source_ids": r["source_ids"], "exam_eligible": True, "candidate": True})
+            k_ids.append(r["id"])
+    block_ids = {b["id"] for b in blocks}
+    assert len(block_ids) == len(blocks)
+    # 证据比对后给底稿知识块加的“核验补充”（不改底稿原文）
+    bn_f = HERE / "非马哲" / "核对" / "知识块补充.json"
+    for bid, x in (json.loads(bn_f.read_text(encoding="utf-8")) if bn_f.exists() else {}).items():
+        b = next(b for b in blocks if b["id"] == bid)
+        b["review_note"] = x["note"]
+        b["source_ids"] = b["source_ids"] + [e for e in x.get("evidence", []) if e not in b["source_ids"]]
     n_fm = n_fm_pending = 0
     for f in sorted((HERE / "非马哲" / "新题").glob("F*.json")):
         for q in json.loads(f.read_text(encoding="utf-8")):
@@ -105,6 +162,7 @@ def main():
                 continue
             q = {**q, **(k.get("override") or {})}
             assert set(q["knowledge_ids"]) <= block_ids, (q["id"], q["knowledge_ids"])
+            assert all(x in evidence or x in fm["sources"] for x in q.get("source_ids") or []), (q["id"], q.get("source_ids"))
             t = q["type"]
             if t == "判断":
                 assert q["answer"] in ("正确", "错误") and not q.get("options"), q["id"]
@@ -128,18 +186,21 @@ def main():
             "appendices": d["appendices"], "sources": d["sources"],
             "learning_context": d["learning_context"],
             "counts": {"cards": len(cards), "base": len(questions) - n_new - n_real - n_fm, "new": n_new, "real": n_real,
-                       "blocks": len(blocks), "fm": n_fm, "fm_pending": n_fm_pending},
+                       "blocks": len(blocks), "k_blocks": len(k_ids), "evidence": len(evidence), "fm": n_fm, "fm_pending": n_fm_pending},
             "fm_modules": [{"id": m, "title": fm["modules"][m]} for m in fm["module_order"]],
             "fm_sources": {k: {"title": v.get("title", k), "url": v.get("url", ""), "publication_date": v.get("publication_date", "")}
                            for k, v in fm["sources"].items()},
-            "fm_profiles": {"new_focus": fm["training_profiles"]["new_focus"]["ids"], "all_core": fm["training_profiles"]["all_core"]["ids"]},
-            "fm_cutoff": fm.get("evidence_cutoff", "")}
+            "fm_profiles": {"new_focus": fm["training_profiles"]["new_focus"]["ids"] + k_ids,
+                            "all_core": fm["training_profiles"]["all_core"]["ids"] + [b["id"] for b in blocks if b.get("candidate") and b["priority"] == "A"]},
+            "fm_cutoff": fm.get("evidence_cutoff", ""),
+            "fm_evidence": evidence}
     OUT.mkdir(exist_ok=True)
     (OUT / "cards.json").write_text(lines(cards), encoding="utf-8")
     (OUT / "questions.json").write_text(lines(questions), encoding="utf-8")
     (OUT / "blocks.json").write_text(lines(blocks), encoding="utf-8")
     (OUT / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    print("cards", len(cards), "questions", len(questions), "new", n_new, "real", n_real, "blocks", len(blocks), "fm", n_fm, "fm_pending", n_fm_pending)
+    print("cards", len(cards), "questions", len(questions), "new", n_new, "real", n_real, "blocks", len(blocks), "k", len(k_ids),
+          "evidence", len(evidence), "fm", n_fm, "fm_pending", n_fm_pending)
 
 
 if __name__ == "__main__":
