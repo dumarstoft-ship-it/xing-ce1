@@ -193,6 +193,15 @@ def main():
         if status == "待审":
             rec["review"] = d.get("review") or d.get("why") or ""
         out[i] = rec
+    # K 知识块：核对人审过（K核对_*.json 里有记录、且不是“删除”）或 DECISIONS 里列了的才采用
+    k_checked = {}
+    for f in sorted(HERE.glob("K核对_*.json")):
+        for r in json.loads(f.read_text(encoding="utf-8")):
+            k_checked[r["id"]] = r
+    for k in kblocks:
+        if k in k_checked and k not in DECISIONS:
+            v = k_checked[k].get("verdict", "")
+            out[k] = {"status": "删除" if v == "删除" else "采用", "note": "K块核对：" + v}
     for k, d in DECISIONS.items():
         if k in kblocks:
             rec = {"status": d.get("status", "采用"), "note": d.get("why", "")}

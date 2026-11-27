@@ -131,12 +131,12 @@ def main():
     fkeep_f = HERE / "非马哲" / "核对" / "采用.json"
     fkeep = json.loads(fkeep_f.read_text(encoding="utf-8")) if fkeep_f.exists() else {}
     evidence = load_evidence()
-    # 第二批：Codex证据里的候选知识点（K编号），由出题人按证据写成知识块；采用.json 里标“删除”的不收
+    # 第二批：Codex证据里的候选知识点（K编号），由出题人按证据写成知识块；核对后在 采用.json 里标“采用”的才收
     k_ids = []
     for f in sorted((HERE / "非马哲" / "新题").glob("K_*.json")):
         for r in json.loads(f.read_text(encoding="utf-8")):
             k = fkeep.get(r["id"]) or {}
-            if k.get("status") == "删除":
+            if k.get("status") != "采用":
                 continue
             r = {**r, **(k.get("override") or {})}
             assert r["id"].startswith("K-") and r["module"] in fm["modules"] and r["priority"] in ("A", "B", "C"), r["id"]
