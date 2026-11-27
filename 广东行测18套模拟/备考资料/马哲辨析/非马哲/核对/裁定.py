@@ -119,11 +119,17 @@ def main():
     for f in sorted(NEW.glob("K_*.json")):
         for r in json.loads(f.read_text(encoding="utf-8")):
             kblocks[r["id"]] = r
+    # 题干自足检查（网页作答后才显示条件栏）：检查人给出的导语、设问补限定，叠加在 DECISIONS 之后
+    stem_fix = {}
+    for f in sorted(HERE.glob("题干补限定_*.json")):
+        for r in json.loads(f.read_text(encoding="utf-8")):
+            assert set(r["patch"]) <= {"lead", "stem"}, (f.name, r["id"])
+            stem_fix[r["id"]] = r
     checks = {}
     for f in sorted(HERE.glob("check_*_F*.json")):
         for r in json.loads(f.read_text(encoding="utf-8")):
             checks.setdefault(r["id"], []).append(str(r.get("answer")).strip())
-    unknown = set(DECISIONS) - set(items) - set(kblocks)
+    unknown = (set(DECISIONS) | set(stem_fix)) - set(items) - set(kblocks)
     assert not unknown, ("裁定里有不存在的编号：", unknown)
     out, pending = {}, []
     for i, q in items.items():
@@ -133,7 +139,10 @@ def main():
             continue
         if d is None and any(a != key_of(q) for a in checks[i]):
             raise SystemExit(f"{i}：核对答案{checks[i]}与出题人{key_of(q)}不一致，必须裁定")
-        d = d or {}
+        d = dict(d or {})
+        if i in stem_fix:
+            d["patch"] = {**(d.get("patch") or {}), **stem_fix[i]["patch"]}
+            d["why"] = "；".join(x for x in (d.get("why"), "题干补限定：" + stem_fix[i]["problem"]) if x)
         status = d.get("status", "采用")
         rec = {"status": status}
         if d.get("why"):
