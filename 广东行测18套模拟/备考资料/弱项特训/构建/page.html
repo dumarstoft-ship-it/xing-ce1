@@ -1,0 +1,720 @@
+<title>行测弱项特训</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@500;700&display=swap">
+<style>
+/* 专项练习本：顶栏（倒计时＋分栏），下面一张题卡。题面用宋体，界面用黑体；题图放在白底“试卷纸”上，深色模式也保持原卷黑白。 */
+:root {
+  --bg: #f2f5f4;
+  --surface: #ffffff;
+  --sunk: #e7ecea;
+  --ink: #17211f;
+  --muted: #56645f;
+  --line: #d5ddda;
+  --accent: #1d6b62;
+  --accent-soft: #dff0ec;
+  --ok: #1b7650;
+  --ok-soft: #e1f2ea;
+  --bad: #b03c2c;
+  --bad-soft: #f8e4df;
+  --warn: #8c6210;
+  --warn-soft: #f6ecd6;
+  --paper: #ffffff;
+  --paper-ink: #111111;
+  --serif: "Noto Serif SC", "Songti SC", "STSong", "SimSun", serif;
+  --sans: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --r: 10px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1413; --surface: #161d1b; --sunk: #1e2725; --ink: #e4ebe9; --muted: #98a7a2; --line: #2a3532;
+    --accent: #7fcbbd; --accent-soft: #1a3330; --ok: #5cc596; --ok-soft: #15302a; --bad: #f08b78; --bad-soft: #3a201c;
+    --warn: #ddb057; --warn-soft: #352a14; --paper: #f4f4f1; --paper-ink: #111111; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1413; --surface: #161d1b; --sunk: #1e2725; --ink: #e4ebe9; --muted: #98a7a2; --line: #2a3532;
+  --accent: #7fcbbd; --accent-soft: #1a3330; --ok: #5cc596; --ok-soft: #15302a; --bad: #f08b78; --bad-soft: #3a201c;
+  --warn: #ddb057; --warn-soft: #352a14; --paper: #f4f4f1; --paper-ink: #111111; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 15px; line-height: 1.65; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--surface); }
+button, input, select { font: inherit; color: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+a { color: var(--accent); }
+.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--surface); border-bottom: 1px solid var(--line); }
+.top-in { max-width: 760px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 10px 0; }
+.brand { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.brand h1 { margin: 0; font-family: var(--serif); font-weight: 700; font-size: 20px; letter-spacing: 0.04em; }
+.count { font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.count b { color: var(--accent); font-weight: 700; }
+nav.tabs { display: flex; gap: 2px; margin-top: 8px; overflow-x: auto; scrollbar-width: none; }
+nav.tabs a { flex: 0 0 auto; padding: 8px 9px 9px; text-decoration: none; color: var(--muted); font-size: 14px; border-bottom: 2px solid transparent; white-space: nowrap; }
+nav.tabs a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--accent); font-weight: 500; }
+nav.tabs .n { font-size: 11px; margin-left: 3px; color: var(--bad); font-variant-numeric: tabular-nums; }
+main { max-width: 760px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 18px 48px; display: grid; gap: 16px; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 18px; min-width: 0; }
+.panel h2 { margin: 0 0 4px; font-size: 17px; font-weight: 700; text-wrap: balance; }
+.panel h3 { margin: 14px 0 6px; font-size: 15px; font-weight: 700; }
+.sub { color: var(--muted); font-size: 13px; margin: 0; }
+.row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.btn { border: 1px solid var(--line); background: var(--surface); border-radius: 8px; padding: 8px 14px; }
+.btn:hover { border-color: var(--accent); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--surface); font-weight: 500; }
+.btn.primary:hover { filter: brightness(1.08); }
+.btn.ghost { border-color: transparent; color: var(--muted); padding-inline: 8px; }
+.btn.danger { color: var(--bad); }
+.btn.small { padding: 4px 10px; font-size: 13px; }
+a.btn { display: inline-block; text-decoration: none; color: inherit; }
+.btn[disabled] { opacity: 0.45; cursor: default; }
+.loading { color: var(--muted); padding: 24px 0; text-align: center; }
+.note { font-size: 13px; color: var(--muted); }
+.pill { display: inline-flex; align-items: center; gap: 4px; padding: 2px 9px; border-radius: 999px; background: var(--sunk); font-size: 12px; color: var(--muted); white-space: nowrap; }
+.pill.a { background: var(--accent-soft); color: var(--accent); }
+.pill.ok { background: var(--ok-soft); color: var(--ok); }
+.pill.bad { background: var(--bad-soft); color: var(--bad); }
+.pill.warn { background: var(--warn-soft); color: var(--warn); }
+.stats3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.stat { background: var(--sunk); border-radius: 8px; padding: 10px 12px; min-width: 0; }
+.stat .v { font-size: 20px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.stat .k { font-size: 12px; color: var(--muted); }
+.steps { display: grid; gap: 8px; margin-top: 10px; }
+.step { display: grid; grid-template-columns: 1.6em 1fr auto; gap: 10px; align-items: center; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; }
+.step .no { font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums; }
+.step .t { min-width: 0; }
+.step .t b { display: block; font-weight: 500; }
+.step .t span { font-size: 12px; color: var(--muted); }
+.sets { display: grid; gap: 8px; }
+.set { display: grid; grid-template-columns: 1fr auto; gap: 10px; align-items: center; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; }
+.set .t { min-width: 0; }
+.set .t b { display: block; font-weight: 500; }
+.set .t span { font-size: 12px; color: var(--muted); }
+.bar { height: 5px; border-radius: 3px; background: var(--sunk); overflow: hidden; margin-top: 5px; }
+.bar i { display: block; height: 100%; background: var(--accent); }
+details.card { border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+details.card summary { list-style: none; cursor: pointer; padding: 10px 12px; font-weight: 500; }
+details.card summary::-webkit-details-marker { display: none; }
+details.card summary::before { content: "▸ "; color: var(--muted); }
+details.card[open] summary::before { content: "▾ "; }
+details.card .body { padding: 0 12px 12px; display: grid; gap: 8px; }
+.card .body h4 { margin: 6px 0 0; font-size: 13px; color: var(--accent); }
+.card .body p, .card .body li { margin: 0; font-size: 14px; }
+.card .body ul { margin: 0; padding-left: 1.2em; display: grid; gap: 3px; }
+/* 做题 */
+.runbar { display: flex; align-items: center; gap: 12px; }
+.runbar .prog { flex: 1; height: 6px; background: var(--sunk); border-radius: 3px; overflow: hidden; }
+.runbar .prog i { display: block; height: 100%; background: var(--accent); transition: width .2s; }
+.runbar .pos { font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.qmeta { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
+.qmeta .pill { white-space: normal; }
+.stem { font-family: var(--serif); font-size: 17px; line-height: 1.75; margin: 0 0 12px; }
+.stem.seq { font-size: 22px; letter-spacing: 0.02em; font-variant-numeric: tabular-nums; }
+.figbox { background: var(--paper); color: var(--paper-ink); border-radius: 8px; padding: 10px; border: 1px solid var(--line); margin-bottom: 12px; }
+.figwrap { position: relative; touch-action: manipulation; user-select: none; -webkit-user-select: none; }
+.figwrap img, .figwrap svg { display: block; width: 100%; height: auto; }
+.figwrap .dot { position: absolute; width: 16px; height: 16px; margin: -8px 0 0 -8px; border-radius: 50%; background: rgba(210, 60, 42, .85); border: 2px solid #fff; color: #fff; font: 700 9px/12px var(--sans); text-align: center; pointer-events: auto; }
+.figwrap.marking { cursor: crosshair; }
+.marktools { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; font-size: 13px; color: var(--muted); margin: -4px 0 12px; }
+.genfig { max-width: 340px; margin: 0 auto; }
+.circles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.circles svg { width: 100%; height: auto; display: block; }
+.grids { display: grid; gap: 12px; }
+.grp { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; justify-content: center; padding: 8px; border: 1px solid #c9c9c9; border-radius: 6px; }
+.grp .qm { font: 700 28px var(--serif); width: 60px; text-align: center; }
+.gridopts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.gridopts .gopt { display: grid; justify-items: center; gap: 4px; padding: 8px 4px; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); color: var(--paper-ink); }
+.gridopts .gopt svg { max-width: 100%; height: auto; }
+table.nt { border-collapse: collapse; margin: 0 auto 14px; font-family: var(--serif); font-size: 19px; font-variant-numeric: tabular-nums; }
+table.nt td { border: 1.5px solid var(--ink); padding: 6px 18px; text-align: center; min-width: 3.2em; }
+.opts { display: grid; gap: 8px; }
+.opt { display: grid; grid-template-columns: 1.8em 1fr; gap: 8px; text-align: left; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); font-family: var(--serif); font-size: 16px; line-height: 1.6; width: 100%; }
+.opt .L { font-family: var(--sans); font-weight: 700; color: var(--muted); }
+.opts.letters { grid-template-columns: repeat(4, 1fr); }
+.opts.letters .opt { grid-template-columns: 1fr; text-align: center; font-family: var(--sans); font-weight: 700; font-size: 18px; }
+.opts.nums { grid-template-columns: repeat(2, 1fr); }
+.opt:hover:not([disabled]) { border-color: var(--accent); }
+.opt.right { border-color: var(--ok); background: var(--ok-soft); }
+.opt.wrong { border-color: var(--bad); background: var(--bad-soft); }
+.gopt.right { outline: 3px solid var(--ok); }
+.gopt.wrong { outline: 3px solid var(--bad); }
+.opt[disabled], .gopt[disabled] { cursor: default; }
+.verdict { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; padding: 10px 12px; border-radius: 8px; font-weight: 700; margin-top: 14px; }
+.verdict.ok { background: var(--ok-soft); color: var(--ok); }
+.verdict.bad { background: var(--bad-soft); color: var(--bad); }
+.verdict span { font-weight: 400; color: var(--ink); }
+.reveal { display: grid; gap: 10px; margin-top: 12px; }
+.blk { border-left: 3px solid var(--line); padding: 2px 0 2px 12px; }
+.blk .h { font-size: 12px; color: var(--muted); letter-spacing: 0.06em; }
+.blk p { margin: 2px 0 0; white-space: pre-line; }
+.blk.good { border-color: var(--ok); }
+.blk.good .h { color: var(--ok); }
+.blk.trap { border-color: var(--bad); }
+.blk.trap .h { color: var(--bad); }
+.runfoot { display: flex; justify-content: flex-end; gap: 10px; margin-top: 14px; align-items: center; }
+.kbd { font-size: 12px; color: var(--muted); }
+.grow { flex: 1 1 auto; }
+details.mat { border: 1px solid var(--line); border-radius: 8px; margin-bottom: 12px; }
+details.mat > summary { cursor: pointer; padding: 8px 12px; font-size: 13px; color: var(--muted); }
+details.mat .mb { padding: 0 12px 12px; display: grid; gap: 10px; }
+details.mat p { margin: 0; font-family: var(--serif); font-size: 15px; white-space: pre-line; }
+.tbl { overflow-x: auto; }
+table.dt { border-collapse: collapse; width: 100%; font-size: 13px; font-variant-numeric: tabular-nums; }
+table.dt caption { text-align: left; font-size: 13px; font-weight: 500; padding-bottom: 4px; }
+table.dt th, table.dt td { border: 1px solid var(--line); padding: 4px 8px; text-align: left; }
+table.dt th { background: var(--sunk); font-weight: 500; }
+.wl { display: grid; gap: 8px; }
+.wi { display: grid; grid-template-columns: 1fr auto; gap: 8px; align-items: center; padding: 8px 12px; border: 1px solid var(--line); border-radius: 8px; }
+.wi .t { min-width: 0; font-size: 14px; }
+.wi .t small { display: block; color: var(--muted); font-size: 12px; }
+table.st { border-collapse: collapse; width: 100%; font-size: 14px; }
+table.st th, table.st td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); }
+table.st th { font-size: 12px; color: var(--muted); font-weight: 500; }
+table.st td.num { text-align: right; font-variant-numeric: tabular-nums; }
+.days { display: grid; grid-template-columns: repeat(14, 1fr); gap: 4px; align-items: end; height: 80px; margin-top: 8px; }
+.days div { background: var(--accent); border-radius: 3px 3px 0 0; min-height: 2px; }
+.days div.zero { background: var(--sunk); }
+.daylbl { display: grid; grid-template-columns: repeat(14, 1fr); gap: 4px; font-size: 10px; color: var(--muted); text-align: center; }
+select { border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; background: var(--surface); }
+textarea { width: 100%; min-height: 80px; border: 1px solid var(--line); border-radius: 8px; padding: 9px 12px; background: var(--surface); font: 13px/1.5 ui-monospace, Menlo, Consolas, monospace; color: var(--ink); }
+@media (max-width: 480px) {
+  .panel { padding: 14px; }
+  .stem.seq { font-size: 19px; }
+  table.nt { font-size: 17px; }
+  table.nt td { padding: 5px 12px; }
+  .opts.nums { grid-template-columns: 1fr 1fr; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<header class="top">
+  <div class="top-in">
+    <div class="brand">
+      <h1>行测弱项特训</h1>
+      <div class="count" id="countdown"></div>
+    </div>
+    <nav class="tabs" id="tabs">
+      <a href="#home">首页</a>
+      <a href="#fig">图推</a>
+      <a href="#num">数推</a>
+      <a href="#data">资料</a>
+      <a href="#wrong">错题<span class="n" id="wrongN"></span></a>
+      <a href="#stats">记录</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <div class="panel loading">正在载入题目……</div>
+</main>
+
+<script>
+/*GEN*/
+/*SVG*/
+// ---------- 基础 ----------
+const EXAM_DAY = "2026-12-06";
+const LS_KEY = "xcrx-progress-v1", DEV_KEY = "xcrx-device";
+const S = { data: null, q: {}, prog: null, run: null, cloud: "connecting", cloudNote: "", synced: false, ref: null, saving: false, again: false, setSeen: "" };
+const $ = (sel, el = document) => el.querySelector(sel);
+function h(tag, attrs, ...kids) {
+  const el = document.createElement(tag);
+  if (attrs) for (const [k, v] of Object.entries(attrs)) {
+    if (v === null || v === undefined || v === false) continue;
+    if (k === "class") el.className = v;
+    else if (k === "text") el.textContent = v;
+    else if (k.startsWith("on")) el.addEventListener(k.slice(2), v);
+    else if (k === "html") el.innerHTML = v;      // 只用于本页自己生成的 SVG
+    else el.setAttribute(k, v === true ? "" : v);
+  }
+  for (const c of kids.flat()) { if (c === null || c === undefined || c === false) continue; el.append(c.nodeType ? c : document.createTextNode(String(c))); }
+  return el;
+}
+function dayStr(d = new Date()) { const p = (v) => String(v).padStart(2, "0"); return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`; }
+function addDays(day, n) { const [y, m, d] = day.split("-").map(Number); return dayStr(new Date(y, m - 1, d + n)); }
+function dayDiff(a, b) { const f = (s) => { const [y, m, d] = s.split("-").map(Number); return Date.UTC(y, m - 1, d); }; return Math.round((f(b) - f(a)) / 86400000); }
+const maxStr = (a, b) => ((a || "") > (b || "") ? a : b) || undefined;
+const DEV = (() => { try { let d = localStorage.getItem(DEV_KEY); if (!d) { d = "d" + Math.random().toString(36).slice(2, 9); localStorage.setItem(DEV_KEY, d); } return d; } catch (e) { return "d" + Math.random().toString(36).slice(2, 9); } })();
+
+// ---------- 记录：本机缓存＋云端（db，仅所有者可读写） ----------
+// r[题号] = { n 作答次数, c 答对次数, l 最近一次对错, d 最近作答日, f 首次作答日, wd 最近答错日, k/s 自编题的生成器与种子 }
+// 真题每次都记；自编题只记答错过的（错题本要能原样重出），答对的只进计数。
+// cnt[设备][d][日期] = [题数, 答对]；cnt[设备][g][分类] = [题数, 答对]——各设备只加自己的，合并时取各设备各项的较大值，总数是各设备相加。
+const DEFAULT_SETTINGS = { batch: 20 };
+function blankProg() { return { v: 1, r: {}, cnt: {}, settings: { ...DEFAULT_SETTINGS }, updated: "" }; }
+function normalize(p) { p.r = p.r || {}; p.cnt = p.cnt || {}; p.settings = { ...DEFAULT_SETTINGS, ...(p.settings || {}) }; return p; }
+function loadLocal() { try { const s = localStorage.getItem(LS_KEY); if (s) { const p = JSON.parse(s); if (p && p.v === 1) return normalize(p); } } catch (e) {} return null; }
+function saveLocal() { try { localStorage.setItem(LS_KEY, JSON.stringify(S.prog)); } catch (e) {} }
+function stamp() { const now = new Date().toISOString(), prev = S.prog.updated || ""; if (now > prev) return now; const t = new Date(prev).getTime(); return isNaN(t) ? now : new Date(t + 1).toISOString(); }
+const canon = (v) => JSON.stringify(v, (k, x) => (x && typeof x === "object" && !Array.isArray(x) ? Object.fromEntries(Object.keys(x).sort().map((key) => [key, x[key]])) : x));
+const sameRec = (a, b) => { const ka = Object.keys(a), kb = Object.keys(b); return ka.length === kb.length && ka.every((k) => a[k] === b[k]); };
+function touch() {
+  S.prog.updated = stamp();
+  const sj = canon(S.prog.settings);
+  if (sj !== S.setSeen) { S.setSeen = sj; S.prog.st = S.prog.updated; }
+  saveLocal(); scheduleCloud();
+}
+let cloudTimer = 0, retryTimer = 0, retryWait = 0, lastWrote = "", wroteSame = 0;
+function scheduleCloud() { clearTimeout(cloudTimer); cloudTimer = setTimeout(() => { cloudTimer = 0; pushCloud(); }, 900); }
+function flushCloud() { if (cloudTimer) { clearTimeout(cloudTimer); cloudTimer = 0; pushCloud(); } }
+async function pushCloud() {
+  if (!S.ref || S.cloud === "local" || !S.synced) return;     // 没拿到云端确认过的记录之前不写
+  if (S.saving) { S.again = true; return; }
+  S.saving = true; clearTimeout(retryTimer);
+  try {
+    const cur = await S.ref.get();                             // 写之前先读云端现在的记录并进来
+    if (cur.metadata && cur.metadata.fromCache) throw { code: "unavailable" };
+    const r = cur.exists ? cur.data() : null;
+    if (r && r.v === 1 && mergeProg(JSON.parse(JSON.stringify(r))).took) { normalize(S.prog); saveLocal(); cloudSettled(true); }
+    const body = JSON.parse(JSON.stringify(S.prog)), cb = canon(body);
+    if (!r || cb !== canon(r)) {                               // 内容一样就不写；同一份写了三次还被改回去，就不再顶
+      if (cb !== lastWrote) { lastWrote = cb; wroteSame = 0; }
+      if (!r || wroteSame < 3) { await S.ref.set(body); wroteSame++; }
+    }
+    if (S.cloud === "slow") { S.cloudNote = ""; renderCloudNote(); }
+    S.cloud = "ok"; retryWait = 0;
+  } catch (e) {
+    const code = e && e.code;
+    if (code === "quota_exceeded") { S.cloud = "local"; S.cloudNote = "云端存储已满，记录先存在这台设备上。"; }
+    else if (["invalid_argument", "not_granted", "revoked", "capability_disabled", "capability_removed", "transform_error"].includes(code)) { S.cloud = "local"; S.cloudNote = "只有页面的所有者能把记录存到云端；你的记录存在这台设备的浏览器里。"; }
+    else { retryWait = Math.min(60000, (retryWait || 1000) * 2); retryTimer = setTimeout(pushCloud, retryWait + Math.random() * 1000); }
+    renderCloudNote();
+  } finally { S.saving = false; if (S.again) { S.again = false; pushCloud(); } }
+}
+// 把另一份记录并进本机。同一道题留最近做过的那份（同一天取作答次数多的；同一天两边都做过、有一边答错，照答错算）；
+// 计数各设备取较大值；设置跟最后改它的一边。“清除全部记录”：清除时间较晚的一边算数，另一边清除当天及之前的记录作废。
+function mergeProg(inc) {
+  const ie = inc.epoch || "", me = S.prog.epoch || "";
+  let took = 0, ahead = 0;
+  if (ie !== me) {
+    const hi = ie > me ? ie : me, cut = dayStr(new Date(hi)), old = ie > me ? S.prog : inc;
+    old.r = Object.fromEntries(Object.entries(old.r || {}).filter(([, p]) => (p.d || "") > cut));
+    const nc = {};
+    for (const [dv, C] of Object.entries(old.cnt || {})) { const d = Object.fromEntries(Object.entries((C && C.d) || {}).filter(([k]) => k > cut)); if (Object.keys(d).length) nc[dv] = { d, g: {} }; }
+    old.cnt = nc; old.epoch = hi;
+    if (ie > me) took++; else ahead++;
+  }
+  const mine = S.prog, ir = inc.r || {};
+  const iu = inc.updated || "", mu = mine.updated || "";
+  const newer = (a, b) => (a.d || "") > (b.d || "") || ((a.d || "") === (b.d || "") && (a.n || 0) > (b.n || 0));
+  for (const [id, p] of Object.entries(ir)) {
+    const m = mine.r[id];
+    let u;
+    if (!m || newer(p, m)) u = p;
+    else if (newer(m, p)) u = m;
+    else if (sameRec(p, m)) continue;
+    else u = { ...m, ...p, l: p.l === 0 || m.l === 0 ? 0 : 1, c: Math.min(p.c || 0, m.c || 0) };
+    if (m && (m.d || "") === (p.d || "")) { const wd = maxStr(m.wd, p.wd); if (wd && wd !== u.wd) u = { ...u, wd }; }
+    if (!m || !sameRec(u, m)) { mine.r[id] = u; took++; }
+    if (!sameRec(u, p)) ahead++;
+  }
+  for (const id in mine.r) if (!ir[id]) ahead++;
+  const ic = inc.cnt || {}, big = (x, y) => x[0] > y[0] || (x[0] === y[0] && x[1] > y[1]);
+  for (const [dv, C] of Object.entries(ic)) {
+    if (!C) continue;
+    const M = mine.cnt[dv] || (mine.cnt[dv] = { d: {}, g: {} });
+    M.d = M.d || {}; M.g = M.g || {};
+    for (const part of ["d", "g"]) for (const [k, v] of Object.entries(C[part] || {})) {
+      const mv = M[part][k];
+      if (!mv || big(v, mv)) { M[part][k] = v; took++; } else if (big(mv, v)) ahead++;
+    }
+  }
+  for (const [dv, M] of Object.entries(mine.cnt)) { const C = ic[dv] || {}; for (const part of ["d", "g"]) for (const k in (M[part] || {})) if (!(C[part] || {})[k]) ahead++; }
+  const iset = { ...DEFAULT_SETTINGS, ...(inc.settings || {}) }, ist = inc.st || "", mst = mine.st || "";
+  if (canon(mine.settings) !== canon(iset)) {
+    if (ist > mst || (ist === mst && iu > mu)) { mine.settings = iset; mine.st = ist; S.setSeen = canon(iset); took++; } else ahead++;
+  } else if (ist > mst) { mine.st = ist; took++; } else if (mst > ist) ahead++;
+  if (iu > mu) mine.updated = iu; else if (mu > iu) ahead++;
+  if (me > ie && iu >= mu) { const t = new Date(iu).getTime(); if (!isNaN(t)) mine.updated = new Date(t + 1).toISOString(); }
+  return { took, ahead };
+}
+let waking = 0;
+const syncing = () => (S.cloud === "connecting" && !S.synced) || !!waking;
+function cloudSettled(changed) {
+  renderCloudNote(); updateTabs();
+  if (S.run) return;                     // 做题中不打断；回到列表时再按新记录画
+  const a = document.activeElement;      // 正在输入（粘贴记录文本）时不重画，免得冲掉输入
+  if (a && /TEXTAREA|INPUT/.test(a.tagName)) return;
+  route(true);                           // 原地重画：按钮可用了、记录变了
+}
+async function connectCloud() {
+  const timer = setTimeout(() => { if (S.cloud === "connecting") { S.cloud = "slow"; S.cloudNote = "云端记录暂时连不上，先存在这台设备上，连上后会自动合并。"; cloudSettled(false); } }, 10000);
+  let db = null;
+  try { db = window.claude && window.claude.use ? await window.claude.use("db") : null; } catch (e) { db = null; }
+  if (!db) { clearTimeout(timer); S.cloud = "local"; S.cloudNote = "在这里打开时，记录只存在这台设备的浏览器里。"; cloudSettled(false); return; }
+  try { S.ref = db.doc("progress/main"); } catch (e) { clearTimeout(timer); S.cloud = "local"; cloudSettled(false); return; }
+  S.ref.onSnapshot((snap) => {
+    const fresh = !snap.metadata.fromCache;
+    if (!fresh && !snap.exists) return;
+    if (snap.metadata.hasPendingWrites) return;
+    const first = fresh && !S.synced;
+    if (fresh) { clearTimeout(timer); S.synced = true; if (S.cloud === "connecting" || S.cloud === "slow") { S.cloud = "ok"; S.cloudNote = ""; } }
+    const remote = snap.exists ? snap.data() : null;
+    let took = 0, ahead = S.prog.updated ? 1 : 0;
+    if (remote && remote.v === 1) ({ took, ahead } = mergeProg(JSON.parse(JSON.stringify(remote))));
+    if (took) { normalize(S.prog); saveLocal(); }
+    if (fresh && ahead) scheduleCloud();
+    if (took || first) cloudSettled(took > 0); else renderCloudNote();
+  }, () => { clearTimeout(timer); S.cloud = "local"; S.cloudNote = "云端记录连不上，记录先存在这台设备上。"; cloudSettled(false); });
+}
+function renderCloudNote() { for (const el of document.querySelectorAll(".cloudNote")) { el.textContent = S.cloudNote; el.hidden = !S.cloudNote; } }
+const cloudNoteEl = () => h("p", { class: "note cloudNote", hidden: !S.cloudNote, text: S.cloudNote });
+// 页面睡了一阵再回来：先向云端读一次，读到之前（最多10秒）“开始”先不可点；10秒读不到就放行并提示，后台接着读
+const AWAY = 120000;
+let wakeSeq = 0;
+async function resync() {
+  if (!S.ref || S.cloud === "local" || !S.synced || S.run || waking) return;
+  const my = ++wakeSeq; let open = true;
+  waking = setTimeout(() => { open = false; waking = 0; if (S.cloud === "ok") { S.cloud = "slow"; S.cloudNote = "云端记录暂时连不上，先存在这台设备上，连上后会自动合并。"; } cloudSettled(false); }, 10000);
+  cloudSettled(false);
+  for (let wait = 1000; ; wait = Math.min(wait * 2, 30000)) {
+    try {
+      const cur = await S.ref.get();
+      if (!(cur.metadata && cur.metadata.fromCache)) {
+        const r = cur.exists ? cur.data() : null;
+        let took = 0, ahead = 0;
+        if (r && r.v === 1) ({ took, ahead } = mergeProg(JSON.parse(JSON.stringify(r))));
+        if (took) { normalize(S.prog); saveLocal(); }
+        if (open) { open = false; clearTimeout(waking); waking = 0; }
+        if (S.cloud === "slow" && S.synced) { S.cloud = "ok"; S.cloudNote = ""; }
+        if (ahead) scheduleCloud();
+        cloudSettled(took > 0);
+        return;
+      }
+    } catch (e) {}
+    if (my !== wakeSeq || (!open && S.cloud !== "slow")) return;
+    await new Promise((go) => setTimeout(go, wait));
+    if (my !== wakeSeq || (!open && S.cloud !== "slow")) return;
+  }
+}
+let shownDay = "", lastAlive = Date.now(), hiddenAt = 0;
+function back() {
+  const now = Date.now(), gap = Math.max(now - lastAlive, hiddenAt ? now - hiddenAt : 0);
+  lastAlive = now; hiddenAt = 0;
+  if (S.prog && shownDay && shownDay !== dayStr() && !S.run) route(current() !== "home");
+  if (gap >= AWAY) resync();
+}
+(function beat() { const now = Date.now(); if (!document.hidden && now - lastAlive >= AWAY) back(); else lastAlive = now; setTimeout(beat, 20000); })();
+document.addEventListener("visibilitychange", () => { if (document.hidden) { hiddenAt = Date.now(); flushCloud(); } else back(); });
+window.addEventListener("pagehide", () => { if (!hiddenAt) hiddenAt = Date.now(); flushCloud(); });
+window.addEventListener("pageshow", (e) => { if (e.persisted) back(); });
+window.addEventListener("focus", back);
+
+// ---------- 作答记录 ----------
+const isGen = (id) => id.startsWith("g:");
+function record(q, ok) {
+  const today = dayStr(), id = q.id, old = S.prog.r[id];
+  if (!isGen(id) || !ok || old) {
+    const p = old ? { ...old } : { n: 0, c: 0, f: today };
+    p.n = (p.n || 0) + 1; p.c = (p.c || 0) + (ok ? 1 : 0); p.l = ok ? 1 : 0; p.d = today;
+    if (!ok) p.wd = today;
+    if (isGen(id)) { p.k = q.k; p.s = q.s; }
+    S.prog.r[id] = p;
+  }
+  const C = S.prog.cnt[DEV] || (S.prog.cnt[DEV] = { d: {}, g: {} });
+  C.d = C.d || {}; C.g = C.g || {};
+  const dd = (C.d[today] || [0, 0]).slice(); dd[0]++; dd[1] += ok ? 1 : 0; C.d[today] = dd;
+  const key = isGen(id) ? q.k + "|" + q.tag : "真题|" + q.set;
+  const gg = (C.g[key] || [0, 0]).slice(); gg[0]++; gg[1] += ok ? 1 : 0; C.g[key] = gg;
+  touch();
+}
+const pendingRec = (p) => !!p && !!p.wd && (p.l === 0 || p.wd === p.d);   // 未过关：最近一次答错，或答错的当天才重做对
+function sumCnt(part) { const out = {}; for (const C of Object.values(S.prog.cnt)) for (const [k, v] of Object.entries((C && C[part]) || {})) { const o = out[k] || [0, 0]; o[0] += v[0]; o[1] += v[1]; out[k] = o; } return out; }
+function getQ(id) {
+  if (S.q[id]) return S.q[id];
+  const m = /^g:(\w+):(\d+)$/.exec(id);
+  if (m && GENS[m[1]]) { const q = GENS[m[1]](Number(m[2])); if (q) { q.id = id; q.module = q.type; return q; } }
+  return null;
+}
+function newIds(k, n) {     // 现出题：极少数种子生成不出合格的题，换一个种子
+  const out = [];
+  for (let tries = 0; out.length < n && tries < n * 5; tries++) { const s = (Math.random() * 2147483646 + 1) | 0; if (GENS[k](s)) out.push(`g:${k}:${s}`); }
+  return out;
+}
+function wrongList(filter) {
+  return Object.entries(S.prog.r).filter(([id, p]) => p.wd && (!filter || filter(id, p))).map(([id, p]) => ({ id, p, q: getQ(id) })).filter((x) => x.q)
+    .sort((a, b) => (pendingRec(b.p) - pendingRec(a.p)) || (b.p.wd < a.p.wd ? -1 : 1));
+}
+
+// ---------- 路由与外框 ----------
+const ROUTES = ["home", "fig", "num", "data", "wrong", "stats"];
+function current() { const h0 = location.hash.replace("#", ""); return ROUTES.includes(h0) ? h0 : "home"; }
+function updateTabs() {
+  const r = S.run ? "" : current();
+  for (const a of document.querySelectorAll("#tabs a")) { if (a.getAttribute("href") === "#" + r) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); }
+  if (S.prog) { const n = wrongList((id, p) => pendingRec(p)).length; $("#wrongN").textContent = n ? String(n) : ""; }
+}
+function renderCountdown() {
+  const n = dayDiff(dayStr(), EXAM_DAY);
+  $("#countdown").replaceChildren(n > 0 ? h("span", null, "距12月6日省考还有 ", h("b", { text: String(n) }), " 天") : n === 0 ? h("span", null, "今天省考，加油") : h("span", { text: "省考已结束" }));
+}
+function route(keep) {
+  shownDay = dayStr(); renderCountdown(); updateTabs();
+  if (S.run) { renderRun(); return; }
+  const y = window.scrollY;
+  const view = { home: viewHome, fig: viewModule.bind(null, "图推"), num: viewModule.bind(null, "数推"), data: viewModule.bind(null, "资料"), wrong: viewWrong, stats: viewStats }[current()];
+  $("#main").replaceChildren(...[].concat(view()));
+  window.scrollTo(0, keep === true ? y : 0);
+}
+window.addEventListener("hashchange", () => { if (S.run) S.run = null; route(); });
+document.getElementById("tabs").addEventListener("click", (e) => { const a = e.target.closest("a"); if (a && S.run && a.getAttribute("href") === (location.hash || "#home")) { e.preventDefault(); exitRun(); } });
+
+// ---------- 列表页 ----------
+const setItems = (sid) => S.data.questions.filter((q) => q.set === sid);
+function setProgress(sid) { const qs = setItems(sid); const done = qs.filter((q) => S.prog.r[q.id]).length; const wrong = qs.filter((q) => pendingRec(S.prog.r[q.id])).length; return { total: qs.length, done, wrong }; }
+function startSet(sid, onlyUndone) {
+  const st = S.data.sets.find((x) => x.id === sid);
+  let qs = setItems(sid); if (onlyUndone) { const u = qs.filter((q) => !S.prog.r[q.id]); if (u.length) qs = u; }
+  startRun(qs.map((q) => q.id), st.title);
+}
+function batchSelect() {
+  const sel = h("select", { id: "batchSel", "aria-label": "每次题数", onchange: (e) => { S.prog.settings.batch = Number(e.target.value); touch(); } });
+  for (const n of [10, 20, 30, 50]) sel.append(h("option", { value: String(n), selected: n === S.prog.settings.batch }, `${n}题`));
+  return sel;
+}
+function genAcc(k) { const g = sumCnt("g"); let n = 0, c = 0; for (const [key, v] of Object.entries(g)) if (key.split("|")[0] === k || (k === "mix" && (key.startsWith("rec|") || key.startsWith("tab|")))) { n += v[0]; c += v[1]; } return { n, c }; }
+function methodCard(id, open) {
+  const c = S.data.cards[id]; if (!c) return null;
+  return h("details", { class: "card", open: !!open }, h("summary", { text: "方法要点：" + c.title }),
+    h("div", { class: "body" }, ...c.parts.map((p) => [h("h4", { text: p.h }), p.list ? h("ul", null, ...p.list.map((t) => h("li", { text: t }))) : h("p", { text: p.p })])));
+}
+function setRow(st) {
+  const pr = setProgress(st.id), wait = syncing();
+  return h("div", { class: "set" },
+    h("div", { class: "t" }, h("b", { text: st.title }), h("span", { text: `${pr.total}道 · 做过${pr.done}道` + (pr.wrong ? ` · 未过关${pr.wrong}道` : "") + (st.note ? " · " + st.note : "") }),
+      h("div", { class: "bar" }, h("i", { style: `width:${pr.total ? (pr.done / pr.total * 100).toFixed(1) : 0}%` }))),
+    h("div", { class: "row" }, h("button", { class: "btn primary small", disabled: wait, onclick: () => startSet(st.id, pr.done > 0 && pr.done < pr.total) }, pr.done === 0 ? "开始" : pr.done < pr.total ? "接着做" : "再做一遍")));
+}
+function genRow(g) {
+  const acc = genAcc(g.k), wait = syncing();
+  return h("div", { class: "set" },
+    h("div", { class: "t" }, h("b", { text: g.title }), h("span", { text: g.desc + (acc.n ? ` · 已练${acc.n}题，正确率${Math.round(acc.c / acc.n * 100)}%` : "") })),
+    h("button", { class: "btn primary small", disabled: wait, onclick: () => { const n = S.prog.settings.batch; const ids = g.k === "mix" ? newIds("rec", Math.ceil(n / 2)).concat(newIds("tab", Math.floor(n / 2))).sort(() => Math.random() - 0.5) : newIds(g.k, n); startRun(ids, g.title); } }, "开始"));
+}
+const GEN_ROWS = {
+  "图推": [{ k: "pts", title: "数交点速练（自编）", desc: "每题一幅线条图，数交点；答完图上标出全部交点" }, { k: "ptscl", title: "曲直交点速练（自编）", desc: "只数直线与圆的交点" }, { k: "grid", title: "灰格分区计数（自编）", desc: "两组方格图，按行、按列、按整体数灰格找规律" }],
+  "数推": [{ k: "rec", title: "三项速练·递推（自编）", desc: "每一项由前两项（或前三项）算出" }, { k: "tab", title: "三项速练·数表（自编）", desc: "每行三个数，找行内运算" }, { k: "mix", title: "三项速练·混合（自编）", desc: "递推、数表各一半，打乱" }],
+  "资料": [],
+};
+function viewModule(mod) {
+  const sets = S.data.sets.filter((x) => x.module === mod);
+  const cards = [...new Set(sets.map((x) => x.card).filter(Boolean))];
+  const box = h("section", { class: "panel" }, h("h2", { text: S.data.modules[mod].title }), h("p", { class: "sub", text: S.data.modules[mod].intro }));
+  const cardEls = h("div", { class: "sets", style: "margin-top:12px" }, ...cards.map((c) => methodCard(c)));
+  const real = h("section", { class: "panel" }, h("h2", { text: "真题" }), h("p", { class: "sub", text: "按规律分组。做过的题（专项、模考里出现过的）标“复习”，放在组末。" }), h("div", { class: "sets", style: "margin-top:10px" }, ...sets.map(setRow)));
+  const out = [box, cardEls, real];
+  if (GEN_ROWS[mod].length) out.push(h("section", { class: "panel" }, h("h2", { text: "自编速练" }), h("p", { class: "sub", text: "程序按规律现出题，题量不限，不是真题；答错的自动进错题本，可以原样重做。" }),
+    h("div", { class: "row", style: "margin-top:8px" }, h("label", { class: "note", for: "batchSel" }, "每次题数"), batchSelect()),
+    h("div", { class: "sets", style: "margin-top:10px" }, ...GEN_ROWS[mod].map(genRow))));
+  if (syncing()) out.splice(1, 0, h("p", { class: "note", text: "正在同步云端的做题记录，同步好就能开始（最多等10秒）。" }));
+  return out;
+}
+function viewHome() {
+  const today = dayStr(), D = sumCnt("d"), td = D[today] || [0, 0];
+  const pend = wrongList((id, p) => pendingRec(p)).length;
+  const stats = h("section", { class: "panel" }, h("div", { class: "stats3" },
+    h("div", { class: "stat" }, h("div", { class: "v", text: String(td[0]) }), h("div", { class: "k", text: "今天已做" })),
+    h("div", { class: "stat" }, h("div", { class: "v", text: td[0] ? Math.round(td[1] / td[0] * 100) + "%" : "—" }), h("div", { class: "k", text: "今天正确率" })),
+    h("div", { class: "stat" }, h("div", { class: "v", text: String(pend) }), h("div", { class: "k", text: "错题未过关" }))), cloudNoteEl());
+  const wait = syncing();
+  const steps = S.data.plan.map((st, i) => h("div", { class: "step" }, h("div", { class: "no", text: String(i + 1) }),
+    h("div", { class: "t" }, h("b", { text: st.title }), h("span", { text: st.desc })),
+    h("button", { class: "btn small" + (i === 0 ? " primary" : ""), disabled: wait, onclick: () => { if (st.set) startSet(st.set); else if (st.gen) { const n = st.n || S.prog.settings.batch; const ids = st.gen === "mix" ? newIds("rec", Math.ceil(n / 2)).concat(newIds("tab", Math.floor(n / 2))).sort(() => Math.random() - 0.5) : newIds(st.gen, n); startRun(ids, st.title); } else if (st.go) location.hash = st.go; } }, st.btn || "开始")));
+  const plan = h("section", { class: "panel" }, h("h2", { text: S.data.meta.title }), h("p", { class: "sub", text: S.data.meta.intro }), h("div", { class: "steps" }, ...steps),
+    wait ? h("p", { class: "note", text: "正在同步云端的做题记录，同步好就能开始（最多等10秒）。" }) : null);
+  const mods = h("section", { class: "panel" }, h("h2", { text: "各部分" }), h("div", { class: "sets", style: "margin-top:10px" },
+    ...["图推", "数推", "资料"].map((m) => { const qs = S.data.questions.filter((q) => q.module === m && q.set !== "m10" && !q.review); const done = qs.filter((q) => S.prog.r[q.id]).length;
+      return h("div", { class: "set" }, h("div", { class: "t" }, h("b", { text: S.data.modules[m].title }), h("span", { text: `真题${qs.length}道（不含复习题）· 做过${done}道` }), h("div", { class: "bar" }, h("i", { style: `width:${qs.length ? (done / qs.length * 100).toFixed(1) : 0}%` }))),
+        h("a", { class: "btn small", href: "#" + { 图推: "fig", 数推: "num", 资料: "data" }[m] }, "进入")); })));
+  const about = h("section", { class: "panel" }, h("h2", { text: "题从哪里来" }), ...S.data.meta.about.map((t) => h("p", { class: "sub", style: "margin-top:6px", text: t })));
+  return [plan, stats, mods, about];
+}
+function viewWrong() {
+  const all = wrongList();
+  const pend = all.filter((x) => pendingRec(x.p)), passed = all.filter((x) => !pendingRec(x.p));
+  const box = h("section", { class: "panel" }, h("h2", { text: "错题本" }),
+    h("p", { class: "sub", text: "答错的题都在这里（自编题也原样保存）。答错后要在另一天再答对才算过关；当天重做对了，第二天还会留在“未过关”里再确认一次。" }),
+    h("div", { class: "row", style: "margin-top:10px" },
+      h("button", { class: "btn primary", disabled: !pend.length || syncing(), onclick: () => startRun(pend.map((x) => x.id), "错题重做") }, `重做未过关的（${pend.length}道）`),
+      ...["图推", "数推", "资料"].map((m) => { const n = pend.filter((x) => x.q.module === m).length; return n ? h("button", { class: "btn", onclick: () => startRun(pend.filter((x) => x.q.module === m).map((x) => x.id), m + "错题重做") }, `${m}（${n}）`) : null; })));
+  const item = (x) => h("div", { class: "wi" }, h("div", { class: "t" }, h("span", { text: (x.q.module || "") + " · " + (x.q.tag || "") }), h("small", { text: (x.q.src || "自编") + ` · 答错${x.p.n - x.p.c}次 · 最近答错 ${x.p.wd.slice(5)}` + (pendingRec(x.p) ? "" : " · 已过关") })),
+    h("button", { class: "btn small", onclick: () => startRun([x.id], "错题重做") }, "做"));
+  const list = h("section", { class: "panel" }, h("h3", { text: `未过关（${pend.length}）` }), pend.length ? h("div", { class: "wl" }, ...pend.map(item)) : h("p", { class: "note", text: "现在没有未过关的错题。" }),
+    passed.length ? h("details", { class: "card", style: "margin-top:12px" }, h("summary", { text: `已过关（${passed.length}）` }), h("div", { class: "body" }, h("div", { class: "wl" }, ...passed.map(item)))) : null);
+  return [box, list];
+}
+function viewStats() {
+  const D = sumCnt("d"), G = sumCnt("g"), today = dayStr();
+  const days = []; for (let i = 13; i >= 0; i--) days.push(addDays(today, -i));
+  const mx = Math.max(10, ...days.map((d) => (D[d] || [0])[0]));
+  const box = h("section", { class: "panel" }, h("h2", { text: "练习记录" }), h("p", { class: "sub", text: "近14天每天做题数" }),
+    h("div", { class: "days" }, ...days.map((d) => { const n = (D[d] || [0])[0]; return h("div", { class: n ? "" : "zero", title: `${d}：${n}题`, style: `height:${Math.max(2, n / mx * 100)}%` }); })),
+    h("div", { class: "daylbl" }, ...days.map((d) => h("span", { text: String(Number(d.slice(8))) }))), cloudNoteEl());
+  const rows = Object.entries(G).sort((a, b) => b[1][0] - a[1][0]);
+  const name = (key) => { const [k, t] = key.split("|"); if (k === "真题") { const st = S.data.sets.find((x) => x.id === t); return "真题 · " + (st ? st.title : t); } return ({ rec: "递推", tab: "数表", pts: "数交点", ptscl: "曲直交点", grid: "灰格计数" }[k] || k) + " · " + t; };
+  const tbl = h("section", { class: "panel" }, h("h2", { text: "分类正确率" }), h("p", { class: "sub", text: "自编题按具体运算分开统计，正确率低的就是还没认熟的规律。" }),
+    rows.length ? h("div", { class: "tbl" }, h("table", { class: "st" }, h("thead", null, h("tr", null, h("th", { text: "分类" }), h("th", { text: "题数" }), h("th", { text: "正确率" }))),
+      h("tbody", null, ...rows.map(([k, v]) => h("tr", null, h("td", { text: name(k) }), h("td", { class: "num", text: String(v[0]) }), h("td", { class: "num", text: Math.round(v[1] / v[0] * 100) + "%" })))))) : h("p", { class: "note", text: "还没有记录。" }));
+  const io = h("section", { class: "panel" }, h("h2", { text: "备份与清除" }),
+    h("details", { class: "card" }, h("summary", { text: "复制或粘贴记录文本" }), h("div", { class: "body" },
+      h("p", { class: "note", text: "点“显示记录文本”后全选复制保存；要恢复时把文本粘贴进框里再点“粘贴合并”（按同样的规则合并，不会覆盖较新的记录）。" }),
+      h("div", { class: "row" }, h("button", { class: "btn", onclick: () => { $("#ioText").value = JSON.stringify(S.prog); $("#ioText").select(); } }, "显示记录文本"), h("button", { class: "btn", onclick: importProg }, "粘贴合并")),
+      h("textarea", { id: "ioText", spellcheck: "false" }), h("p", { class: "note", id: "ioMsg" }))),
+    h("div", { class: "row", style: "margin-top:12px" }, h("button", { class: "btn danger", id: "resetBtn", onclick: confirmReset }, "清除全部记录")));
+  return [box, tbl, io];
+}
+function importProg() {
+  const msg = (t) => { const el = $("#ioMsg"); if (el) el.textContent = t; };
+  let inc; try { inc = JSON.parse($("#ioText").value); } catch (e) { msg("读不出：不是有效的记录文本。"); return; }
+  if (!inc || inc.v !== 1 || typeof inc.r !== "object") { msg("读不出：格式不对。"); return; }
+  const { took } = mergeProg(inc); normalize(S.prog); touch(); route(true); msg(`合并完成，采用了${took}处。`);
+}
+function confirmReset(e) {
+  const b = e.currentTarget;
+  if (b.dataset.armed) {
+    const pe = S.prog.epoch || "", ne = new Date().toISOString(), pt = new Date(pe).getTime();
+    S.prog = { ...blankProg(), settings: S.prog.settings, ...(S.prog.st ? { st: S.prog.st } : {}), updated: S.prog.updated || "", epoch: ne > pe || isNaN(pt) ? ne : new Date(pt + 1).toISOString() };
+    touch(); flushCloud(); route(); return;
+  }
+  b.dataset.armed = "1"; b.textContent = "再点一次确认清除（不能恢复）";
+  setTimeout(() => { if (b.isConnected) { delete b.dataset.armed; b.textContent = "清除全部记录"; } }, 5000);
+}
+
+// ---------- 做题 ----------
+let runState = null;   // { picked, revealed, marks }
+function startRun(ids, label, mode) {
+  const list = ids.map(getQ).filter(Boolean);
+  if (!list.length) return;
+  S.run = { list, pos: 0, res: {}, label, mode: mode || "" };
+  route();
+}
+function exitRun() { S.run = null; route(); }
+function optList(q) { if (Array.isArray(q.opts)) return q.opts.map((t, i) => [LET[i], t]); if (q.opts) return LET.filter((L) => q.opts[L] !== undefined).map((L) => [L, q.opts[L]]); return LET.map((L) => [L, ""]); }
+function figureEl(q, showAns) {
+  let inner;
+  if (q.k === "pts" || q.k === "ptscl") inner = h("div", { class: "genfig", html: svgPts(q.fig, showAns) });
+  else if (q.fig && typeof q.fig === "string") inner = h("img", { src: q.fig, alt: "题图", draggable: "false" });
+  else return null;
+  const wrap = h("div", { class: "figwrap" }, inner);
+  const box = h("div", { class: "figbox" }, wrap);
+  if (q.module === "图推" && !showAns) {
+    wrap.classList.add("marking");
+    wrap.addEventListener("click", (e) => {
+      if (runState && runState.revealed) return;
+      if (e.target.classList.contains("dot")) { e.target.remove(); } else {
+        const r = wrap.getBoundingClientRect();
+        wrap.append(h("span", { class: "dot", style: `left:${((e.clientX - r.left) / r.width * 100).toFixed(2)}%;top:${((e.clientY - r.top) / r.height * 100).toFixed(2)}%` }));
+      }
+      const n = wrap.querySelectorAll(".dot").length; const c = $("#markN"); if (c) c.textContent = n ? `已点 ${n} 个` : "可以在图上点一下做标记，再点一下取消";
+    });
+  }
+  return box;
+}
+function gridFig(q) {
+  const cell = 22, F = q.fig;
+  const s = F.stem.map((g) => h("span", { html: svgGrid(g, cell) }));
+  return h("div", { class: "figbox grids" },
+    h("div", { class: "grp" }, s[0], s[1], s[2]), h("div", { class: "grp" }, s[3], s[4], h("span", { class: "qm", text: "？" })));
+}
+function materialEl(m) {
+  if (!m) return null;
+  const blocks = m.blocks.map((b) => {
+    if (b.type === "text") return h("p", { text: b.text });
+    if (b.type === "img") return h("div", { class: "figbox" }, h("img", { src: b.src, alt: b.alt || "材料图", style: "width:100%;height:auto;display:block" }));
+    if (b.type === "table") return h("div", { class: "tbl" }, h("table", { class: "dt" }, b.title ? h("caption", { text: b.title }) : null,
+      b.headers ? h("thead", null, h("tr", null, ...b.headers.map((x) => h("th", { text: x })))) : null, h("tbody", null, ...b.rows.map((r) => h("tr", null, ...r.map((x) => h("td", { text: x })))))), b.notes ? h("p", { class: "note", text: "注：" + b.notes }) : null);
+    return null;
+  });
+  return h("details", { class: "mat", open: true }, h("summary", { text: "资料（点这里收起/展开）" }), h("div", { class: "mb" }, ...blocks));
+}
+function renderRun() {
+  const R = S.run, main = $("#main");
+  if (R.pos >= R.list.length) { main.replaceChildren(runSummary()); window.scrollTo(0, 0); return; }
+  const q = R.list[R.pos];
+  runState = { picked: null, revealed: false };
+  const head = h("div", { class: "runbar" }, h("button", { class: "btn ghost", onclick: exitRun, "aria-label": "退出这一组" }, "退出"),
+    h("div", { class: "prog" }, h("i", { style: `width:${(R.pos / R.list.length * 100).toFixed(1)}%` })), h("span", { class: "pos", text: `${R.pos + 1}/${R.list.length}` }));
+  const card = h("article", { class: "panel", id: "qcard" });
+  const rec = S.prog.r[q.id];
+  card.append(h("div", { class: "qmeta" }, h("span", { class: "pill a", text: q.module + (q.sub ? " · " + q.sub : "") }),
+    h("span", { class: "pill" + (isGen(q.id) ? " warn" : ""), text: isGen(q.id) ? "自编" : q.src }), q.review ? h("span", { class: "pill", text: "复习：以前做过" }) : null,
+    rec && rec.wd ? h("span", { class: "pill bad", text: "错过" }) : null));
+  if (q.material) card.append(materialEl(q.material));
+  if (q.k === "grid") { card.append(h("p", { class: "stem", text: q.stem }), gridFig(q)); }
+  else {
+    if (q.stem) card.append(h("p", { class: "stem" + (q.seq || q.k === "rec" ? " seq" : ""), text: q.stem }));
+    if (q.circles) card.append(h("div", { class: "figbox circles", html: svgCircles(q.circles) }));
+    if (q.rows) card.append(h("table", { class: "nt" }, h("tbody", null, ...q.rows.map((r) => h("tr", null, ...r.map((x) => h("td", { text: x === null ? "（　）" : String(x) })))))));
+    const f = figureEl(q, false); if (f) { card.append(f); if (q.module === "图推") card.append(h("div", { class: "marktools" }, h("span", { id: "markN", text: "可以在图上点一下做标记，再点一下取消" }), h("button", { class: "btn ghost small", onclick: () => { for (const d of document.querySelectorAll("#qcard .dot")) d.remove(); $("#markN").textContent = "可以在图上点一下做标记，再点一下取消"; } }, "清除标记"))); }
+  }
+  card.append(answerArea(q), h("div", { id: "afterArea" }));
+  main.replaceChildren(h("p", { class: "note", text: R.label }), head, card);
+  window.scrollTo(0, 0);
+}
+function answerArea(q) {
+  if (q.k === "grid") return h("div", { class: "gridopts" }, ...q.fig.opts.map((g, i) => h("button", { class: "gopt", "data-v": LET[i], onclick: () => choose(q, LET[i]) }, h("span", { html: svgGrid(g, 20) }), h("b", { text: LET[i] }))));
+  const list = optList(q);
+  const inFig = q.optsInFig || list.every(([, t]) => !t);
+  const numeric = !inFig && list.every(([, t]) => String(t).length <= 8);
+  return h("div", { class: "opts" + (inFig ? " letters" : numeric ? " nums" : "") }, ...list.map(([L, t]) => h("button", { class: "opt", "data-v": L, onclick: () => choose(q, L) },
+    inFig ? L : [h("span", { class: "L", text: L }), h("span", { text: t })])));
+}
+function choose(q, L) {
+  if (!runState || runState.revealed) return;
+  runState.revealed = true;
+  const ok = L === q.answer;
+  record(q, ok);
+  const R = S.run; R.res[q.id] = ok ? 1 : 0; R.pos += 1;
+  for (const b of document.querySelectorAll("#qcard .opt, #qcard .gopt")) {
+    b.disabled = true; const v = b.dataset.v;
+    if (v === q.answer) b.classList.add("right"); else if (v === L) b.classList.add("wrong");
+  }
+  if (q.k === "pts" || q.k === "ptscl") { const old = $("#qcard .figbox"); const marks = old ? old.querySelectorAll(".dot").length : 0; if (old) old.replaceWith(figureEl(q, true)); const mt = $("#qcard .marktools"); if (mt) mt.replaceChildren(h("span", { text: (marks ? `你在图上点了${marks}个；` : "") + "红点是全部" + (q.k === "ptscl" ? "曲直交点" : "交点") + "。" })); }
+  const ans = optList(q).find(([x]) => x === q.answer);
+  const ansText = q.k === "grid" || q.optsInFig || !ans[1] ? q.answer : `${q.answer}（${ans[1]}）`;
+  const e = q.exp || {};
+  const blocks = [e.题眼 ? blk("", "题眼", e.题眼) : null, e.推导 ? blk("good", "推导", e.推导) : null, e.易错 ? blk("trap", "易错", e.易错) : null];
+  $("#afterArea").replaceChildren(h("div", { class: "verdict " + (ok ? "ok" : "bad") }, ok ? "答对了" : "答错了", h("span", { text: `答案：${ansText}` + (ok ? "" : `；你选了：${L}`) })),
+    q.tag ? h("p", { class: "note", style: "margin:8px 0 0" }, "规律：", h("b", { text: q.tag })) : null,
+    h("div", { class: "reveal" }, ...blocks, q.srcNote ? h("p", { class: "note", text: q.srcNote }) : null),
+    h("div", { class: "runfoot" }, h("span", { class: "kbd grow", text: "回车：下一题" }), h("button", { class: "btn primary", id: "nextBtn", onclick: nextQ }, R.pos >= R.list.length ? "看本组结果" : "下一题")));
+  updateTabs();
+  $("#nextBtn").focus({ preventScroll: true });
+}
+function blk(cls, head, text) { return h("div", { class: "blk " + cls }, h("div", { class: "h", text: head }), h("p", { text })); }
+function nextQ() { if (S.run && S.run.pos <= S.run.list.length) renderRun(); }
+function runSummary() {
+  const R = S.run, wrong = R.list.filter((q) => R.res[q.id] === 0), right = R.list.length - wrong.length;
+  const box = h("section", { class: "panel" }, h("h2", { text: `${R.label}：答对${right}/${R.list.length}` }),
+    h("p", { class: "sub", text: wrong.length ? "答错的题已记进错题本，另一天再答对才算过关。也可以现在再做一遍。" : "全对。" }));
+  if (wrong.length) box.append(h("div", { class: "wl", style: "margin-top:10px" }, ...wrong.map((q) => h("div", { class: "wi" }, h("div", { class: "t" }, h("span", { text: q.tag || q.sub }), h("small", { text: isGen(q.id) ? "自编" : q.src }))))));
+  box.append(h("div", { class: "row", style: "margin-top:12px" },
+    wrong.length ? h("button", { class: "btn primary", onclick: () => startRun(wrong.map((q) => q.id), "本组错题再做一遍", "redo") }, `错题再做一遍（${wrong.length}题）`) : null,
+    h("button", { class: "btn", onclick: exitRun }, "返回")));
+  return box;
+}
+document.addEventListener("keydown", (e) => {
+  if (!S.run || !runState || !$("#qcard") || /INPUT|SELECT|TEXTAREA/.test(e.target.tagName) || e.metaKey || e.ctrlKey || e.altKey) return;
+  const q = S.run.list[runState.revealed ? S.run.pos - 1 : S.run.pos]; if (!q) return;
+  if (runState.revealed) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); nextQ(); } return; }
+  const k = e.key.toUpperCase(), idx = "1234".indexOf(k), L = idx >= 0 ? LET[idx] : k;
+  if (LET.includes(L)) { e.preventDefault(); choose(q, L); }
+});
+
+// ---------- 启动 ----------
+async function start() {
+  try {
+    const inline = document.getElementById("xc-data");
+    S.data = inline ? JSON.parse(inline.textContent) : await fetch("data.json").then((r) => { if (!r.ok) throw new Error("data"); return r.json(); });
+  } catch (e) {
+    $("#main").replaceChildren(h("div", { class: "panel" }, h("h2", { text: "题目没有载入" }), h("p", { class: "sub", text: "刷新页面再试一次；如果一直这样，告诉Claude。" })));
+    return;
+  }
+  for (const q of S.data.questions) S.q[q.id] = q;
+  S.prog = loadLocal() || blankProg();
+  S.setSeen = canon(S.prog.settings);
+  route();
+  connectCloud();
+}
+start();
+</script>
