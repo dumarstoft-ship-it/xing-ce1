@@ -1068,7 +1068,7 @@ function renderRun() {
   const card = h("article", { class: "panel", id: "qcard" });
   const rec = S.prog.r[q.id];
   card.append(h("div", { class: "qmeta" }, h("span", { class: "pill a", text: q.module + (q.sub ? " · " + q.sub : "") }),
-    h("span", { class: "pill" + (isGen(q.id) ? " warn" : ""), text: isGen(q.id) ? "自编" : q.src }), q.review ? h("span", { class: "pill", text: "复习：以前做过" }) : null,
+    h("span", { class: "pill" + (isGen(q.id) ? " warn" : ""), text: isGen(q.id) ? "自编" : q.src }), q.review ? h("span", { class: "pill", text: "做过：" + q.review }) : null,
     rec && rec.wd ? h("span", { class: "pill bad", text: "错过" }) : null));
   if (q.material) card.append(materialEl(q.material));
   if (q.k === "grid") { card.append(h("p", { class: "stem", text: q.stem }), gridFig(q)); }

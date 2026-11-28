@@ -50,7 +50,7 @@ def zx_exp(qid):
         if "blind" in f.name: continue
         for x in json.load(open(f, encoding="utf8")):
             if x.get("id") == qid: return split_exp(x["analysis"]), x
-    for f in (REPO / "广东行测18套模拟/重编").glob("M*/解题/*.json"):
+    for f in sorted((REPO / "广东行测18套模拟/重编").glob("[MS]*/解题/*.json")):
         if "blind" in f.name: continue
         try: d = json.load(open(f, encoding="utf8"))
         except Exception: continue
@@ -145,18 +145,85 @@ for qid, tag, rv in [("GD2017-Q038", "黑球、白球各几个", "专项第3天"
     src = {"GD2017-Q038": "2017年广东卷第38题", "GD2018-Q036": "2018年广东卷第36题", "SYDW2024-Q071": "2024年广东事业单位统考第71题", "SYDW2025-Q068": "2025年广东事业单位统考第68题"}[qid]
     add(id=qid, set="fig-grid", module="图推", sub="灰格计数", tag=tag, src=src, review=rv, stem=r["stem"], fig=fig(base / r["figures"][0]["path"], qid), optsInFig=True, answer=r["answer"]["values"][0][0], exp=e)
 
+# ---------- 第二批（2026-11-28 用户说做过的、留给后面卷子的都可以出）：广东旧卷里同类的题，解析用专项、M卷、S卷里写过的 ----------
+SRC_GD = {"GD2020-XJ-Q046": "2020年广东县级卷第46题", "SYDW2025-Q070": "2025年广东事业单位统考第70题", "SYDW2023-Q068": "2023年广东事业单位统考第68题",
+          "GD2013-1-Q072": "2013年广东一卷第72题", "GD2018-Q031": "2018年广东卷第31题", "GD2017-Q040": "2017年广东卷第40题", "GD2016-XJ-Q060": "2016年广东县级卷第60题"}
+for qid, set_, tag, kind, where in [
+        ("GD2020-XJ-Q046", "fig-pts", "交点数依次加1（含曲线）", "also", "S06第47题"),
+        ("SYDW2025-Q070", "fig-pts", "小方块都标在十字交叉点上", "review", "专项第4天"),
+        ("SYDW2023-Q068", "fig-grid", "灰格连成一片、白格分成两块", "also", "M18第48题"),
+        ("GD2013-1-Q072", "fig-grid", "角上恰好1个黑格（分区数）", "also", "M18第46题"),
+        ("GD2018-Q031", "fig-grid", "黑白圈每段个数1、1、2、2、3、3……", "also", "M12第48题"),
+        ("GD2017-Q040", "fig-grid", "黑格点连接还是线连接（分组）", "review", "专项第3天"),
+        ("GD2016-XJ-Q060", "fig-grid", "黑珠、白珠每段几颗", "review", "专项第3天")]:
+    r, base = gd_rec(qid); e, x = zx_exp(qid)
+    stem = r["stem"] if r["stem"] and "见题图" not in r["stem"] else (x.get("stem_fill") or "从所给的四个选项中，选择最合适的一个填入问号处，使之呈现一定的规律性：")
+    kw = dict(id=qid, set=set_, module="图推", sub="数交点" if set_ == "fig-pts" else "灰格计数", tag=tag, src=SRC_GD[qid], stem=stem,
+              fig=fig(base / r["figures"][0]["path"], qid), answer=r["answer"]["values"][0][0], exp=e, o=30)
+    opts = {o["label"]: o["text"] for o in r.get("options") or [] if o.get("text") and o["text"] not in "ABCD"}
+    if len(opts) == 4: kw["opts"] = opts
+    else: kw["optsInFig"] = True
+    if kind == "review": kw["review"] = where
+    else: kw["srcNote"] = f"这道题也编在{where}，做那套卷子时会再见到。"
+    add(**kw)
+
 # ---------- 数推·三项关系 真题 ----------
 r, base = gd_rec("GD2020-XZ-Q035")
 add(id="GD2020-XZ-Q035", set="num-tab", module="数推", sub="数表", tag="每行三数之和成等差", src="2020年广东乡镇卷第35题", stem="", rows=[[4, 5, 7], [8, 8, 16], [12, 9, 27], [16, 10, None]],
     opts={o["label"]: o["text"] for o in r["options"]}, answer="C",
     exp={"题眼": "每行三个数，行内的和、积、平方都凑不出统一的运算（4、5、7用加法差2，8、8、16用加法正好），提示换成“每行三个数相加”。",
          "推导": "每行三数之和：4＋5＋7＝16，8＋8＋16＝32，12＋9＋27＝48，依次加16，第4行之和应为64。所求数＝64－16－10＝38。故选C。",
-         "易错": "只看第3列7、16、27的差9、11，按二级等差推下一差13得40，选项里没有；只用第2行凑“前两数相加”得26，也不在选项里。"})
+         "易错": "只看第3列7、16、27的差9、11，按二级等差推下一差13得40，选项里没有；只用第2行凑“前两数相加”得26，也不在选项里。"}, srcNote="2020年县级卷第30题是同一道题，也编在M12第35题。")
 for qid, set_, tag, src in [("GDXD2019-SW-Q068", "num-rec", "前两项之和", "2019年广东选调第68题"), ("SYDW2025-Q053", "num-rec", "相邻三项：（首＋尾）×2＝中", "2025年广东事业单位统考第53题"), ("GD2014-XZ-Q060", "num-tab", "九宫格：每行左右两数运算得中间数", "2014年广东乡镇卷第60题")]:
     r, base = gd_rec(qid); e, x = zx_exp(qid)
     kw = dict(id=qid, set=set_, module="数推", sub="递推" if set_ == "num-rec" else "数表", tag=tag, src=src, review="专项第4天", opts={o["label"]: o["text"] for o in r["options"]}, answer=r["answer"]["values"][0][0], exp=e)
     if r.get("figures"): kw["fig"] = fig(base / r["figures"][0]["path"], qid); kw["stem"] = "从所给的选项中，选择最合适的一个填入问号处："
     else: kw["stem"] = r["stem"].replace("（    ）", "（　　）"); kw["seq"] = True
+    add(**kw)
+
+# ---------- 第二批数推（2026-11-28）：广东旧卷里留给后面各套、或做过的三项关系题 ----------
+SRC_N = {"GD2014-XZ-Q058": "2014年广东乡镇卷第58题", "GD2019-XJ-Q017": "2019年广东县级卷第17题", "GDXD2019-SW-Q069": "2019年广东选调第69题",
+         "SYDW2025-Q052": "2025年广东事业单位统考第52题", "GD2017-Q019": "2017年广东卷第19题", "GD2020-XZ-Q032": "2020年广东乡镇卷第32题",
+         "GD2016-XJ-Q040": "2016年广东县级卷第40题", "GDXD2019-SW-Q067": "2019年广东选调第67题", "GDXD2020-SW-Q090": "2020年广东选调第90题",
+         "GD2023-XJ-Q030": "2023年广东县级卷第30题", "SYDW2025-Q055": "2025年广东事业单位统考第55题", "GD2022-XZ-Q034": "2022年广东乡镇卷第34题"}
+OWN = {
+ "GD2017-Q019": {"题眼": "数列增长越来越快，后项大约是前项的3倍左右，又时多时少（2×3＝6，6×3＝18＞16），提示递推，拿相邻三项试“前两项之和”的倍数。",
+                 "推导": "6＝(1＋2)×2，16＝(2＋6)×2，44＝(6＋16)×2，120＝(16＋44)×2，即从第三项起，每项等于前两项之和的2倍。所求项＝(44＋120)×2＝328。故选D。",
+                 "易错": "只看相邻两项的倍数（3、2.67、2.75、2.73）会以为是“乘约2.7”，凑不出整数；要把前两项合起来看。"},
+ "GD2020-XZ-Q032": {"题眼": "数列平稳增大，相邻两项之和与后一项很接近（23＋34＝57，后项58），提示“前两项之和＋常数”的递推。",
+                 "推导": "58＝23＋34＋1，93＝34＋58＋1，152＝58＋93＋1，即从第三项起，每项等于前两项之和再加1。所求项＝93＋152＋1＝246。故选C。",
+                 "易错": "算出93＋152＝245后忘了加修正项1；修正项要在每一组都核对一遍。"},
+}
+YICUO = {
+ "GDXD2019-SW-Q069": "只看前一项会被负数和忽大忽小绕晕，递推要同时看前两项；2倍乘的是再前一项，放到前一项上（22×2＋18＝62）选项里没有。",
+ "SYDW2025-Q052": "也可以看成“×2后交替减3、加3”，两种看法答案相同；只凑上一组就选容易错，每一组都要核对。",
+ "GD2016-XJ-Q040": "单看第1行能凑出很多种算法，要拿带负数的第3行验证；第2行第3个数是6.5，它的2倍是13。",
+ "SYDW2025-Q055": "三数之和（19、23）不相等，按列看也没有规律；积相等时用积除以已知的两个数求第三个数。",
+}
+for qid, set_, tag, kind, where in [
+        ("GD2014-XZ-Q058", "num-rec", "前两项之和", "also", "S04第33题"),
+        ("GD2019-XJ-Q017", "num-rec", "前两项之和", "also", "M15第34题"),
+        ("GDXD2019-SW-Q069", "num-rec", "后项＝前一项＋再前一项的2倍", "also", "M11第33题"),
+        ("SYDW2025-Q052", "num-rec", "后项＝前一项＋再前一项的2倍", "review", "S01第33题"),
+        ("GD2017-Q019", "num-rec", "（前两项之和）×2", "review", "24天集训"),
+        ("GD2020-XZ-Q032", "num-rec", "前两项之和＋1", "review", "24天集训"),
+        ("GD2016-XJ-Q040", "num-tab", "第1个数的平方－2×第3个数＝第2个数", "also", "M11第35题"),
+        ("GDXD2019-SW-Q067", "num-tab", "第三格是前两格的平均数", "also", "M13第35题"),
+        ("GDXD2020-SW-Q090", "num-tab", "每行三个数成等差", "also", "M14第35题"),
+        ("GD2023-XJ-Q030", "num-tab", "每列三个数成等差", "review", "M09第35题"),
+        ("SYDW2025-Q055", "num-tab", "每行三数之积相等", "review", "S02第35题"),
+        ("GD2022-XZ-Q034", "num-adv", "作差后：差列前两项之和＝第三项", "review", "M09第33题")]:
+    r, base = gd_rec(qid)
+    e = OWN[qid] if qid in OWN else zx_exp(qid)[0]
+    if "易错" not in e and qid in YICUO: e["易错"] = YICUO[qid]
+    kw = dict(id=qid, set=set_, module="数推", sub={"num-rec": "递推", "num-tab": "数表", "num-adv": "进阶"}[set_], tag=tag, src=SRC_N[qid],
+              opts={o["label"]: o["text"] for o in r["options"]}, answer=r["answer"]["values"][0][0], exp=e, o=30)
+    if r.get("figures"):
+        kw["fig"] = fig(base / r["figures"][0]["path"], qid); kw["stem"] = "从所给的选项中，选择最合适的一个填入问号处："
+    else:
+        kw["stem"] = re.sub(r"\s+", "，", r["stem"].replace("（    ）", "").replace("（）", "").strip(" ，")) + "，（　　）"; kw["seq"] = True
+    if kind == "review": kw["review"] = where
+    else: kw["srcNote"] = f"这道题也编在{where}，做那套卷子时会再见到。"
     add(**kw)
 
 # ---------- 资料·比重 真题（粉笔模考，答案为本页解题人计算） ----------
@@ -183,7 +250,7 @@ for it in zl:
         srcNote="粉笔模考原卷没有附答案，答案和解析由本页解题人逐项计算（精确值：" + it["exact"][:120] + ("…" if len(it["exact"]) > 120 else "") + "）。")
 
 # ---------- 待补：粉笔图推（交点、灰格）和数推（三项）——由 extra.json 并入 ----------
-for extra in [SP / "xc/ss_extra.json", SP / "xc/fig_extra.json"]:
+for extra in [SP / "xc/ss_extra.json", SP / "xc/fig_extra.json", SP / "xc/fig_more.json"]:
     if not extra.exists(): continue
     for it in json.load(open(extra, encoding="utf8")):
         if it.get("figsrc"): it["fig"] = fig(it.pop("figsrc"), it["id"].replace("/", "_"))
