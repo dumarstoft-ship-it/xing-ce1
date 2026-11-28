@@ -11,6 +11,7 @@ function prog(n, day, updated, extra = {}) {
 // 假 db：remote 存在 Node 这边（多台“设备”共用）；delay 毫秒后给第一份确认过的记录；cached 不为空时先立刻给一份缓存副本
 function fakeDb({ delay, cached }) {
   const ref = {
+    async get() { const s = await window.__remoteGet(); const data = s ? JSON.parse(s) : null; return { exists: !!data, data: () => data, metadata: { fromCache: false, hasPendingWrites: false } }; },
     async set(d) { window.__sets = (window.__sets || 0) + 1; await window.__remoteSet(JSON.stringify(d)); setTimeout(() => emit(false), 5); },
     onSnapshot(cb) { ref._cb = cb; if (cached) setTimeout(() => cb({ exists: true, data: () => JSON.parse(cached), metadata: { fromCache: true, hasPendingWrites: false } }), 1); setTimeout(() => emit(false), delay); },
   };
@@ -53,15 +54,17 @@ const check = (label, cond, detail) => { console.log((cond ? '  ✓ ' : '  ✗ '
     reveal(q); nextQ(); return q.id;
   }, ok);
 
-  console.log('1 本机空白，云端有100题，记录2秒后才到；这之前点“开始”、改每天题数');
+  console.log('1 本机空白，云端有100题，记录2秒后才到；同步前不能开始、不能改题数，同步后改每天题数');
   { const store = { remote: JSON.stringify(prog(100, '2026-11-26', '2026-11-26T12:00:00.000Z')), sets: 0 };
     const d = await device(store, { delay: 2000 });
     await d.pg.waitForTimeout(200);
     check('同步前“开始”不可点', await d.pg.isDisabled(startBtn));
     check('同步前有“正在同步”的提示', (await d.pg.textContent('.panel.today')).includes('正在同步'));
-    await d.pg.selectOption('#dailySel', '60');
+    check('同步前“每天题数”不可改', await d.pg.isDisabled('#dailySel'));
     await d.pg.waitForTimeout(1300);
     check('同步前没有写云端', store.sets === 0, `sets=${store.sets}`);
+    await d.pg.waitForTimeout(1200);
+    await d.pg.selectOption('#dailySel', '60');
     await d.pg.waitForTimeout(2500);
     const st = await d.pg.evaluate(() => ({ local: Object.keys(S.prog.q).length, daily: S.prog.settings.daily, synced: S.synced, cloud: S.cloud }));
     check('同步后本机有100题', st.local === 100, JSON.stringify(st));
