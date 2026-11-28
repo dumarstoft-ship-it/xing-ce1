@@ -57,7 +57,7 @@ const H = require('./harness');
         const noRes = head.filter((id) => t.res[id] !== 0 && t.res[id] !== 1); if (noRes.length) out.push(`${key} 已做的题没有结果 ${noRes.length}`);
         const notDone = head.filter((id) => !P[id] || P[id].d !== today); if (notDone.length) out.push(`${key} 算作已做的题今天其实没答过 ${notDone.length}: ${notDone.slice(0, 3)}`);
         if (onToday) { const doneElse = tail.filter((id) => P[id] && P[id].d === today); if (doneElse.length) out.push(`${key} 没轮到的题里有今天已答过的 ${doneElse.length}`); }
-        if (S.run && S.run.tkey === key) { if (S.run.list.map((q) => q.id).join() !== t.ids.join()) out.push(`${key} 做题清单与题组不一致`); if (S.run.pos !== t.pos) out.push(`${key} 做题位置${S.run.pos}≠题组位置${t.pos}`); if (S.run.res !== t.res) out.push(`${key} res 不是同一份`); }
+        if (S.run && S.run.tkey === key) { if (S.run.list.map((q) => q.id).join() !== t.ids.join()) out.push(`${key} 做题清单与题组不一致`); if (S.run.pos !== t.pos) out.push(`${key} 做题位置${S.run.pos}≠题组位置${t.pos}`); { const ks = (o) => Object.keys(o).sort().map((k) => k + ':' + o[k]).join(); if (ks(S.run.res) !== ks(t.res)) out.push(`${key} 做题页的结果与题组的不一致`); } }
       }
       if (onToday && hasPlan()) {
         const p = document.querySelector('.panel.today'), txt = p.innerText.replace(/\s+/g, ' '), t = S.prog.plan && S.prog.plan.day === today ? S.prog.plan : null;

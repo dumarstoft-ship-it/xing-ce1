@@ -44,7 +44,7 @@ const H = require('./harness');
     if (day === '2026-12-06') {
       const btn = await d.pg.$(startBtn); check('考试当天“开始”可点', btn && !(await btn.isDisabled()));
       await btn.click(); await d.pg.waitForSelector('#qcard'); for (;;) { const id = await H.answer(d.pg, true); if (!id) break; } await d.pg.evaluate(() => exitRun());
-      const t = await d.pg.textContent('.panel.today'); check('考试当天做完后没有“再加”，有说明', !/再加\d+题/.test(t) && t.includes('计划里今天没有该做的题了'), t.slice(0, 80));
+      const t = await d.pg.textContent('.panel.today'); check('考试当天做完后没有“再加”，有说明', !/再加\d+题/.test(t) && t.includes('今天不再加题'), t.slice(0, 80));
       check('考试当天倒计时文字', (await d.pg.textContent('#countdown')).includes('今天省考'));
     }
     if (day === '2026-12-07') { check('考试之后倒计时文字', (await d.pg.textContent('#countdown')).includes('省考已结束')); const t = await d.pg.textContent('.panel.today'); check('考试之后面板没有估算文字、没有考前说明', !t.includes('核心还有') && !t.includes('考前两天') && !t.includes('今天考试'), t.slice(-60)); }
