@@ -1,6 +1,6 @@
 # 分数数列真题第二部分：国考（2003、2005、2009年）和粉笔模考第16—33季。
 # 国考用官方答案；粉笔模考原卷没有答案，答案由解题人算出、Python 逐项复核（只收“解出且无歧义”的题）。输出 frac_more.json。
-import json
+import json, re
 from pathlib import Path
 
 SP = Path("/tmp/claude-0/-home-user-xing-ce1/532e1442-4812-52b3-a392-6d873e7b4a6c/scratchpad")
@@ -11,7 +11,7 @@ for l in open(REG, encoding="utf8"):
 
 Q = []
 def item(x, **extra):
-    q = dict(id=x["id"], set="num-frac", module="数推", sub="分数数列", tag=x["rule"], src=x["src"].split("（")[0], stem=x["stem"], seq=True,
+    q = dict(id=x["id"], set="num-frac", module="数推", sub="分数数列", tag=x["rule"], src=re.sub(r"（[^（）]*(PDF|仅)[^（）]*）", "", x["src"]), stem=x["stem"], seq=True,
              opts=x["options"], answer=x["answer"], exp={k: x["exp"][k] for k in ("题眼", "推导", "易错")})
     q.update(extra); Q.append(q)
 
