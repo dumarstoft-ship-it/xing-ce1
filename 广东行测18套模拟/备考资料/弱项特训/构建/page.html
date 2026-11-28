@@ -111,7 +111,12 @@ details.card .body { padding: 0 12px 12px; display: grid; gap: 8px; }
 .qmeta { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
 .qmeta .pill { white-space: normal; }
 .stem { font-family: var(--serif); font-size: 17px; line-height: 1.75; margin: 0 0 12px; }
-.stem.seq { font-size: 22px; letter-spacing: 0.02em; font-variant-numeric: tabular-nums; }
+.stem.seq { font-size: 22px; letter-spacing: 0.02em; font-variant-numeric: tabular-nums; line-height: 2.1; }
+.fr { display: inline-flex; align-items: center; vertical-align: middle; margin: 0 .06em; }
+.fr .fb { display: inline-flex; flex-direction: column; align-items: center; font-size: .8em; line-height: 1.12; }
+.fr .fn { border-bottom: 1.5px solid currentColor; padding: 0 .16em .04em; }
+.fr .fd { padding: .04em .16em 0; }
+.opt .fr .fb { font-size: .88em; }
 .figbox { background: var(--paper); color: var(--paper-ink); border-radius: 8px; padding: 10px; border: 1px solid var(--line); margin-bottom: 12px; }
 .figwrap { position: relative; touch-action: manipulation; user-select: none; -webkit-user-select: none; }
 .figwrap img, .figwrap svg { display: block; width: 100%; height: auto; }
@@ -493,7 +498,7 @@ function genRow(g) {
 }
 const GEN_ROWS = {
   "图推": [{ k: "pts", title: "数交点速练（自编）", desc: "每题一幅线条图，数交点；答完图上标出全部交点" }, { k: "ptscl", title: "曲直交点速练（自编）", desc: "只数直线与圆的交点" }, { k: "grid", title: "灰格分区计数（自编）", desc: "两组方格图，按行、按列、按整体数灰格找规律" }],
-  "数推": [{ k: "rec", title: "三项速练·递推（自编）", desc: "每一项由前两项（或前三项）算出" }, { k: "tab", title: "三项速练·数表（自编）", desc: "每行三个数，找行内运算" }, { k: "mix", title: "三项速练·混合（自编）", desc: "递推、数表各一半，打乱" }],
+  "数推": [{ k: "rec", title: "三项速练·递推（自编）", desc: "每一项由前两项（或前三项）算出" }, { k: "tab", title: "三项速练·数表（自编）", desc: "每行三个数，找行内运算" }, { k: "mix", title: "三项速练·混合（自编）", desc: "递推、数表各一半，打乱" }, { k: "frac", title: "分数速练（自编）", desc: "分数数列：反约分、分子分母分开看、首尾相连、作商" }],
   "资料": [],
 };
 function viewModule(mod) {
@@ -501,7 +506,7 @@ function viewModule(mod) {
   const cards = [...new Set(sets.map((x) => x.card).filter(Boolean))];
   const box = h("section", { class: "panel" }, h("h2", { text: S.data.modules[mod].title }), h("p", { class: "sub", text: S.data.modules[mod].intro }));
   const cardEls = h("div", { class: "sets", style: "margin-top:12px" }, ...cards.map((c) => methodCard(c)));
-  const real = h("section", { class: "panel" }, h("h2", { text: "真题" }), h("p", { class: "sub", text: "按规律分组。做过的题（专项、模考里出现过的）标“复习”，放在组末。" }), h("div", { class: "sets", style: "margin-top:10px" }, ...sets.map(setRow)));
+  const real = h("section", { class: "panel" }, h("h2", { text: "真题" }), h("p", { class: "sub", text: "按规律分组。做过的题标“做过”，放在每组后面。" }), h("div", { class: "sets", style: "margin-top:10px" }, ...sets.map(setRow)));
   const out = [box, cardEls, real];
   if (GEN_ROWS[mod].length) out.push(h("section", { class: "panel" }, h("h2", { text: "自编速练" }), h("p", { class: "sub", text: "程序按规律现出题，题量不限，不是真题；答错的自动进错题本，可以原样重做。" }),
     h("div", { class: "row", style: "margin-top:8px" }, h("label", { class: "note", for: "batchSel" }, "每次题数"), batchSelect()),
@@ -642,7 +647,7 @@ function renderRun() {
   if (q.material) card.append(materialEl(q.material));
   if (q.k === "grid") { card.append(h("p", { class: "stem", text: q.stem }), gridFig(q)); }
   else {
-    if (q.stem) card.append(h("p", { class: "stem" + (q.seq || q.k === "rec" ? " seq" : ""), text: q.stem }));
+    if (q.stem) card.append((q.seq || q.k === "rec" || q.k === "frac") ? h("p", { class: "stem seq" }, ...mathNodes(q.stem)) : h("p", { class: "stem", text: q.stem }));
     if (q.circles) card.append(h("div", { class: "figbox circles", html: svgCircles(q.circles) }));
     if (q.rows) card.append(h("table", { class: "nt" }, h("tbody", null, ...q.rows.map((r) => h("tr", null, ...r.map((x) => h("td", { text: x === null ? "（　）" : String(x) })))))));
     const f = figureEl(q, false); if (f) { card.append(f); if (q.module === "图推") card.append(h("div", { class: "marktools" }, h("span", { id: "markN", text: "可以在图上点一下做标记，再点一下取消" }), h("button", { class: "btn ghost small", onclick: () => { for (const d of document.querySelectorAll("#qcard .dot")) d.remove(); $("#markN").textContent = "可以在图上点一下做标记，再点一下取消"; } }, "清除标记"))); }
@@ -657,7 +662,7 @@ function answerArea(q) {
   const inFig = q.optsInFig || list.every(([, t]) => !t);
   const numeric = !inFig && list.every(([, t]) => String(t).length <= 8);
   return h("div", { class: "opts" + (inFig ? " letters" : numeric ? " nums" : "") }, ...list.map(([L, t]) => h("button", { class: "opt", "data-v": L, onclick: () => choose(q, L) },
-    inFig ? L : [h("span", { class: "L", text: L }), h("span", { text: t })])));
+    inFig ? L : [h("span", { class: "L", text: L }), h("span", null, ...mathNodes(String(t)))])));
 }
 function choose(q, L) {
   if (!runState || runState.revealed) return;
@@ -680,6 +685,16 @@ function choose(q, L) {
     h("div", { class: "runfoot" }, h("span", { class: "kbd grow", text: "回车：下一题" }), h("button", { class: "btn primary", id: "nextBtn", onclick: nextQ }, R.pos >= R.list.length ? "看本组结果" : "下一题")));
   updateTabs();
   $("#nextBtn").focus({ preventScroll: true });
+}
+function mathNodes(s) {        // 把 a/b 排成上下分数（带分数“31又1/2”、负号照常）
+  const out = [], re = /(\d+)\/(\d+)/g; let last = 0, m;
+  while ((m = re.exec(s))) {
+    if (m.index > last) out.push(s.slice(last, m.index));
+    out.push(h("span", { class: "fr", "aria-label": `${m[2]}分之${m[1]}` }, h("span", { class: "fb" }, h("span", { class: "fn", text: m[1] }), h("span", { class: "fd", text: m[2] }))));
+    last = re.lastIndex;
+  }
+  if (last < s.length) out.push(s.slice(last));
+  return out;
 }
 function blk(cls, head, text) { return h("div", { class: "blk " + cls }, h("div", { class: "h", text: head }), h("p", { text })); }
 function nextQ() { if (S.run && S.run.pos <= S.run.list.length) renderRun(); }

@@ -61,32 +61,32 @@ const answerCur = async (pg, right) => pg.evaluate((right) => {
   {
     const d = await device(b, {}); const pg = d.pg;
     const home = await pg.evaluate(() => ({ steps: document.querySelectorAll('.step').length, h2: document.querySelector('main h2').textContent, note: [...document.querySelectorAll('.cloudNote')].map((x) => x.textContent).join(''), chk: window.__chk() }));
-    ok(home.steps === 8 && /M10/.test(home.h2), '首页：标题和8步计划', home);
+    ok(home.steps === 10 && /M10/.test(home.h2), '首页：标题和10步计划', home);
     ok(/只存在这台设备/.test(home.note), '本机模式有提示', home.note);
     await pg.click('.step button'); await pg.waitForSelector('#qcard');
     const res = [];
-    for (let i = 0; i < 5; i++) { const r = await answerCur(pg, i % 2 === 0); res.push(r); await pg.click('#nextBtn'); }
-    ok(res.every((r) => r && /答(对|错)了/.test(r.verdict)), '5道原题都能作答并出结果', res.map((r) => r && r.id));
+    for (let i = 0; i < 8; i++) { const r = await answerCur(pg, i % 2 === 0); res.push(r); await pg.click('#nextBtn'); }
+    ok(res.every((r) => r && /答(对|错)了/.test(r.verdict)), '8道原题都能作答并出结果', res.map((r) => r && r.id));
     ok(res.every((r) => r.blocks.join() === '题眼,推导,易错'), '每题有题眼、推导、易错三段', res.map((r) => r.blocks.join('')));
     ok(res.every((r) => r.chk.length === 0), '作答后版面正常', res.flatMap((r) => r.chk));
     const sum = await pg.evaluate(() => document.querySelector('main').innerText.replace(/\s+/g, ' ').slice(0, 80));
-    ok(/答对3\/5/.test(sum), '小结：答对3/5', sum);
+    ok(/答对4\/8/.test(sum), '小结：答对4/8', sum);
     await pg.click('button:text-is("返回")'); await pg.waitForSelector('.steps');
     const wn = await pg.evaluate(() => document.querySelector('#wrongN').textContent);
-    ok(wn === '2', '分栏“错题”显示2', wn);
+    ok(wn === '4', '分栏“错题”显示4', wn);
     await pg.click('#tabs a[href="#wrong"]'); await pg.waitForTimeout(100);
     const wl = await pg.evaluate(() => ({ items: document.querySelectorAll('.wi').length, btn: document.querySelector('main .btn.primary').textContent }));
-    ok(wl.items === 2 && /2道/.test(wl.btn), '错题本列出2道', wl);
+    ok(wl.items === 4 && /4道/.test(wl.btn), '错题本列出4道', wl);
     await pg.reload(); await pg.waitForSelector('main .panel'); await pg.waitForTimeout(150);
     const after = await pg.evaluate(() => ({ r: Object.keys(S.prog.r).length, wrong: document.querySelector('#wrongN').textContent }));
-    ok(after.r === 5 && after.wrong === '2', '刷新后记录还在', after);
+    ok(after.r === 8 && after.wrong === '4', '刷新后记录还在', after);
     // 第二天重做错题：答对后过关
     await pg.evaluate(() => window.__setNow(new Date('2026-11-29T09:00:00').getTime())); await pg.reload(); await pg.waitForSelector('main .panel');
     await pg.click('#tabs a[href="#wrong"]'); await pg.waitForTimeout(100); await pg.click('main .btn.primary'); await pg.waitForSelector('#qcard');
-    for (let i = 0; i < 2; i++) { await answerCur(pg, true); await pg.click('#nextBtn'); }
+    for (let i = 0; i < 4; i++) { await answerCur(pg, true); await pg.click('#nextBtn'); }
     await pg.click('button:text-is("返回")'); await pg.waitForTimeout(100);
     const passed = await pg.evaluate(() => ({ wrong: document.querySelector('#wrongN').textContent, txt: document.querySelector('main').innerText.replace(/\s+/g, ' ').slice(0, 200) }));
-    ok(passed.wrong === '' && /已过关（2）/.test(passed.txt), '第二天答对后两道都过关', passed);
+    ok(passed.wrong === '' && /已过关（4）/.test(passed.txt), '第二天答对后4道都过关', passed);
     ok(d.errs.length === 0, '无报错', d.errs);
     await d.ctx.close();
   }
@@ -99,7 +99,7 @@ const answerCur = async (pg, right) => pg.evaluate((right) => {
       ok(v.chk.length === 0 && (hash === 'stats' || v.sets > 0), `${name}页正常`, v);
     }
     // 每个真题组做完一遍
-    for (const sid of ['fig-pts', 'fig-grid', 'num-rec', 'num-tab', 'num-adv', 'data-pct']) {
+    for (const sid of ['fig-pts', 'fig-grid', 'num-frac', 'num-rec', 'num-tab', 'num-adv', 'data-pct']) {
       await pg.evaluate((sid) => startSet(sid), sid); await pg.waitForSelector('#qcard');
       const r = []; for (;;) { const x = await answerCur(pg, true); if (!x) break; r.push(x); await pg.click('#nextBtn'); }
       ok(r.length > 0 && r.every((x) => /答对了/.test(x.verdict) && x.chk.length === 0), `真题组 ${sid}：${r.length}道全部能作答、版面正常`, r.filter((x) => x.chk.length).map((x) => x.id + x.chk));
@@ -115,7 +115,7 @@ const answerCur = async (pg, right) => pg.evaluate((right) => {
     ok(mk === 1, '再点一下标记就取消', mk);
     await pg.click('button:text-is("退出")');
     // 自编速练：每种10题
-    for (const k of ['pts', 'ptscl', 'grid', 'rec', 'tab']) {
+    for (const k of ['pts', 'ptscl', 'grid', 'rec', 'tab', 'frac']) {
       await pg.evaluate((k) => startRun(newIds(k, 10), k), k); await pg.waitForSelector('#qcard');
       const r = []; for (let i = 0; i < 10; i++) { const x = await answerCur(pg, i % 3 !== 0); if (!x) break; r.push(x);
         if (k === 'pts' || k === 'ptscl') { const red = await pg.evaluate(() => document.querySelectorAll('#qcard svg circle[fill="#d23c2a"]').length); if (!red) r[r.length - 1].chk.push('答完没有红点'); }
@@ -124,11 +124,11 @@ const answerCur = async (pg, right) => pg.evaluate((right) => {
       await pg.click('button:text-is("返回")');
     }
     const st = await pg.evaluate(() => ({ wrongGen: Object.keys(S.prog.r).filter((id) => id.startsWith('g:')).length, rk: Object.keys(S.prog.r).length, cnt: JSON.stringify(S.prog.cnt).length }));
-    ok(st.wrongGen === 20, '自编题只记答错的（5种×4题）', st);
+    ok(st.wrongGen === 24, '自编题只记答错的（6种×4题）', st);
     await pg.click('#tabs a[href="#wrong"]'); await pg.waitForTimeout(80);
     await pg.evaluate(() => startRun(wrongList((id, p) => id.startsWith('g:') && pendingRec(p)).map((x) => x.id), '重做'));
     const re = await pg.evaluate(() => ({ n: S.run.list.length, same: S.run.list.every((q) => q.id.startsWith('g:') && q.stem !== undefined) }));
-    ok(re.n === 20 && re.same, '自编错题能原样重出', re);
+    ok(re.n === 24 && re.same, '自编错题能原样重出', re);
     await pg.click('button:text-is("退出")');
     await pg.click('#tabs a[href="#stats"]'); await pg.waitForTimeout(80);
     const sv = await pg.evaluate(() => ({ rows: document.querySelectorAll('table.st tbody tr').length, chk: window.__chk() }));

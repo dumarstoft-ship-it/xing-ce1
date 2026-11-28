@@ -19,9 +19,20 @@ def fig(src, name, maxw=1100):
     p = FIG / (name + ".png"); im.save(p, optimize=True)
     return "fig/" + p.name
 
+def tex2txt(t):
+    """解析里的 $\\frac{a}{b}$ 写成 a/b（页面会排成上下分数）"""
+    def fr(m):
+        x, y = m.group(1), m.group(2)
+        x = x if re.fullmatch(r"[0-9.]+", x) else "(" + x + ")"
+        y = y if re.fullmatch(r"[0-9.]+", y) else "(" + y + ")"
+        return x + "/" + y
+    t = re.sub(r"\\frac\{([^{}]+)\}\{([^{}]+)\}", fr, t)
+    t = t.replace("^2", "²").replace("^3", "³").replace("$", "")
+    return t
+
 def split_exp(a):
     """把“题眼：…推导：…易错：…”拆成三段（专项、M卷解析的写法）"""
-    a = a.replace("\r", "")
+    a = tex2txt(a.replace("\r", ""))
     out = {}
     m = re.split(r"(题眼：|推导：|易错：)", a)
     if len(m) > 1:
@@ -97,6 +108,22 @@ for b in mat:
     elif b["type"] == "figure": mblocks.append({"type": "img", "src": fig(REPO / b["path"], "M10-M1", 1000), "alt": "2019年各地区用水量表"})
 add(id="M10-Q73", set="m10", module="资料", sub="比重", tag="定义比率（基期）", src=SRC10.format(73, "2020年广东县级卷资料"), stem=m10stem(q), opts={L: q["options"][L][0]["text"] for L in "ABCD"}, answer=m10ans["73"], exp=m10exp(73), material={"blocks": mblocks})
 
+# ---------- S01 原题（用户2026-11-28：S01第46、47、34题不会） ----------
+S01Q = {json.loads(l)["number"]: json.loads(l) for l in open(REPO / "广东行测18套模拟/S01/题目.jsonl", encoding="utf8")}
+S01A = json.load(open(REPO / "广东行测18套模拟/S01/答案.json", encoding="utf8"))
+for n, sid, mod, sub, tag, src in [(34, "SYDW2022-Q055", "数推", "分数数列", "反约分：分子平方、分母连续", "2022年广东事业单位统考第55题"),
+                                    (46, "SYDW2024-Q074", "图推", "点沿边框移动", "端点沿边框移动（也可数交点6、5、6、5）", "2024年广东事业单位统考第74题"),
+                                    (47, "SYDW2022-Q068", "图推", "数面数线", "面数比线条数多1（2、3、4块用1、2、3条线）", "2022年广东事业单位统考第68题")]:
+    q = S01Q[n]; e, x = zx_exp(sid)
+    e.setdefault("易错", {34: "不还原直接看1、9/5、8/3，分子1、1、9、8显得乱；1要写成4/4、8/3要写成16/6（分子分母同乘2），分子才凑成1、4、9、16，分母3、4、5、6也跟着连上。只推分子、分母照抄最后一项加2，会误选C项25/8。",
+                          46: "三个端点要分开追：两个逆时针各走一格，一个顺时针走一格；只盯一个端点会觉得乱。图4有两个端点重合，只剩一条线，数交点时（6、5、6、5）别把它当成规律被打断。",
+                          47: "C项也是5个区域，只数面会在B、C之间犹豫，再看线条数（C只有3条）或笔画数（C为3笔）就能排除。"}[n])
+    kw = dict(id=f"S01-Q{n}", set="m10", module=mod, sub=sub, tag=tag, src=f"S01第{n}题（{src}）", stem=m10stem(q), answer=S01A[str(n)], exp=e, o=10 + n)
+    fp = m10figpath(q)
+    if fp: kw["fig"] = fig(fp, f"S01-Q{n}"); kw["optsInFig"] = True
+    else: kw["stem"] = m10stem(q).replace("（    ）", "（　　）"); kw["seq"] = True; kw["opts"] = {L: q["options"][L][0]["text"] for L in "ABCD"}
+    add(**kw)
+
 # ---------- 图推·数交点 真题（官方答案） ----------
 GKF = DRILL / "gkfig"
 D03 = REPO / "广东行测24天集训/GPT_复核/第1批/assets/PD-A"
@@ -151,9 +178,6 @@ SRC_GD = {"GD2020-XJ-Q046": "2020年广东县级卷第46题", "SYDW2025-Q070": "
 for qid, set_, tag, kind, where in [
         ("GD2020-XJ-Q046", "fig-pts", "交点数依次加1（含曲线）", "also", "S06第47题"),
         ("SYDW2025-Q070", "fig-pts", "小方块都标在十字交叉点上", "review", "专项第4天"),
-        ("SYDW2023-Q068", "fig-grid", "灰格连成一片、白格分成两块", "also", "M18第48题"),
-        ("GD2013-1-Q072", "fig-grid", "角上恰好1个黑格（分区数）", "also", "M18第46题"),
-        ("GD2018-Q031", "fig-grid", "黑白圈每段个数1、1、2、2、3、3……", "also", "M12第48题"),
         ("GD2017-Q040", "fig-grid", "黑格点连接还是线连接（分组）", "review", "专项第3天"),
         ("GD2016-XJ-Q060", "fig-grid", "黑珠、白珠每段几颗", "review", "专项第3天")]:
     r, base = gd_rec(qid); e, x = zx_exp(qid)
@@ -168,12 +192,8 @@ for qid, set_, tag, kind, where in [
     add(**kw)
 
 # ---------- 数推·三项关系 真题 ----------
-r, base = gd_rec("GD2020-XZ-Q035")
-add(id="GD2020-XZ-Q035", set="num-tab", module="数推", sub="数表", tag="每行三数之和成等差", src="2020年广东乡镇卷第35题", stem="", rows=[[4, 5, 7], [8, 8, 16], [12, 9, 27], [16, 10, None]],
-    opts={o["label"]: o["text"] for o in r["options"]}, answer="C",
-    exp={"题眼": "每行三个数，行内的和、积、平方都凑不出统一的运算（4、5、7用加法差2，8、8、16用加法正好），提示换成“每行三个数相加”。",
-         "推导": "每行三数之和：4＋5＋7＝16，8＋8＋16＝32，12＋9＋27＝48，依次加16，第4行之和应为64。所求数＝64－16－10＝38。故选C。",
-         "易错": "只看第3列7、16、27的差9、11，按二级等差推下一差13得40，选项里没有；只用第2行凑“前两数相加”得26，也不在选项里。"}, srcNote="2020年县级卷第30题是同一道题，也编在M12第35题。")
+# GD2020-XZ-Q035 与M12第35题（2020年县级卷第30题）同题，用户要做完M系列，不放进特训
+
 for qid, set_, tag, src in [("GDXD2019-SW-Q068", "num-rec", "前两项之和", "2019年广东选调第68题"), ("SYDW2025-Q053", "num-rec", "相邻三项：（首＋尾）×2＝中", "2025年广东事业单位统考第53题"), ("GD2014-XZ-Q060", "num-tab", "九宫格：每行左右两数运算得中间数", "2014年广东乡镇卷第60题")]:
     r, base = gd_rec(qid); e, x = zx_exp(qid)
     kw = dict(id=qid, set=set_, module="数推", sub="递推" if set_ == "num-rec" else "数表", tag=tag, src=src, review="专项第4天", opts={o["label"]: o["text"] for o in r["options"]}, answer=r["answer"]["values"][0][0], exp=e)
@@ -202,14 +222,9 @@ YICUO = {
 }
 for qid, set_, tag, kind, where in [
         ("GD2014-XZ-Q058", "num-rec", "前两项之和", "also", "S04第33题"),
-        ("GD2019-XJ-Q017", "num-rec", "前两项之和", "also", "M15第34题"),
-        ("GDXD2019-SW-Q069", "num-rec", "后项＝前一项＋再前一项的2倍", "also", "M11第33题"),
         ("SYDW2025-Q052", "num-rec", "后项＝前一项＋再前一项的2倍", "review", "S01第33题"),
         ("GD2017-Q019", "num-rec", "（前两项之和）×2", "review", "24天集训"),
         ("GD2020-XZ-Q032", "num-rec", "前两项之和＋1", "review", "24天集训"),
-        ("GD2016-XJ-Q040", "num-tab", "第1个数的平方－2×第3个数＝第2个数", "also", "M11第35题"),
-        ("GDXD2019-SW-Q067", "num-tab", "第三格是前两格的平均数", "also", "M13第35题"),
-        ("GDXD2020-SW-Q090", "num-tab", "每行三个数成等差", "also", "M14第35题"),
         ("GD2023-XJ-Q030", "num-tab", "每列三个数成等差", "review", "M09第35题"),
         ("SYDW2025-Q055", "num-tab", "每行三数之积相等", "review", "S02第35题"),
         ("GD2022-XZ-Q034", "num-adv", "作差后：差列前两项之和＝第三项", "review", "M09第33题")]:
@@ -222,6 +237,25 @@ for qid, set_, tag, kind, where in [
         kw["fig"] = fig(base / r["figures"][0]["path"], qid); kw["stem"] = "从所给的选项中，选择最合适的一个填入问号处："
     else:
         kw["stem"] = re.sub(r"\s+", "，", r["stem"].replace("（    ）", "").replace("（）", "").strip(" ，")) + "，（　　）"; kw["seq"] = True
+    if kind == "review": kw["review"] = where
+    else: kw["srcNote"] = f"这道题也编在{where}，做那套卷子时会再见到。"
+    add(**kw)
+
+# ---------- 分数数列（2026-11-28 用户：数推分数加强、多加量） ----------
+for qid, tag, src, kind, where in [
+        ("GD2019-XZ-Q015", "分子等差、分母等比", "2019年广东乡镇卷第15题", "also", "S05第34题"),
+        ("SYDW2024-Q054", "反约分：第n项为n/(n＋6)", "2024年广东事业单位统考第54题", "also", "S03第35题"),
+        ("GD2022-XZ-Q033", "反约分：分子连续、分母等差", "2022年广东乡镇卷第33题", "review", "M09第34题"),
+        ("GD2021-XZ-Q035", "约分后再统一分子：2/2、2/3、2/4……", "2021年广东乡镇卷第35题", "review", "M10第34题"),
+        ("SYDW2023-Q052", "反约分：分子连续，分母n²＋1", "2023年广东事业单位统考第52题", "review", "S02第34题"),
+        ("GD2014-XJ-Q044", "整数、小数化成同分母分数", "2014年广东县级卷第44题", "review", "专项第4天"),
+        ("GD2015-XJ-Q024", "分子分母交叉：后项分母＝前项分母×后项分子", "2015年广东县级卷第24题", "review", "专项第4天"),
+        ("SYDW2026-Q054", "分子、分母各作差成等比", "2026年广东事业单位统考第54题", "review", "专项第4天")]:
+    r, base = gd_rec(qid); e, x = zx_exp(qid)
+    toks = [t for t in re.split(r"[，、\s]+", re.sub(r"（\s*）", " ＿ ", r["stem"]).strip(" 。.")) if t]
+    stem = "，".join("（　　）" if t == "＿" else t for t in toks)
+    kw = dict(id=qid, set="num-frac", module="数推", sub="分数数列", tag=tag, src=src, stem=stem, seq=True,
+              opts={o["label"]: o["text"].strip("，。 ") for o in r["options"]}, answer=r["answer"]["values"][0][0], exp=e, o=30)
     if kind == "review": kw["review"] = where
     else: kw["srcNote"] = f"这道题也编在{where}，做那套卷子时会再见到。"
     add(**kw)
@@ -250,14 +284,14 @@ for it in zl:
         srcNote="粉笔模考原卷没有附答案，答案和解析由本页解题人逐项计算（精确值：" + it["exact"][:120] + ("…" if len(it["exact"]) > 120 else "") + "）。")
 
 # ---------- 待补：粉笔图推（交点、灰格）和数推（三项）——由 extra.json 并入 ----------
-for extra in [SP / "xc/ss_extra.json", SP / "xc/fig_extra.json", SP / "xc/fig_more.json"]:
+for extra in [SP / "xc/ss_extra.json", SP / "xc/fig_extra.json", SP / "xc/fig_more.json", SP / "xc/frac_real.json", SP / "xc/frac_more.json"]:
     if not extra.exists(): continue
     for it in json.load(open(extra, encoding="utf8")):
         if it.get("figsrc"): it["fig"] = fig(it.pop("figsrc"), it["id"].replace("/", "_"))
         Q.append(it)
 
 # 组内排序：新题在前、复习题在后
-order = {"m10": 0, "fig-pts": 1, "fig-grid": 2, "num-rec": 3, "num-tab": 4, "num-adv": 5, "data-pct": 6}
+order = {"m10": 0, "fig-pts": 1, "fig-grid": 2, "num-frac": 3, "num-rec": 4, "num-tab": 5, "num-adv": 6, "data-pct": 7}
 Q.sort(key=lambda q: (order[q["set"]], 1 if q.get("review") else 0, q.get("o", 20)))
 cfg = json.load(open(SP / "xc/config.json", encoding="utf8"))
 data = {**cfg, "questions": Q}

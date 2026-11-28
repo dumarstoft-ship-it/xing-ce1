@@ -406,5 +406,171 @@ function genGrid(seed) {
   }
   return null;
 }
-const GENS = { rec: genRec, tab: genTab, pts: (s) => genPts(s, "all"), ptscl: (s) => genPts(s, "cl"), grid: genGrid };
-if (typeof module !== "undefined") module.exports = { GENS, rng, analyze, REC, TAB, recFits, tabFits };
+// ===== 4. 分数数列 =====
+// 每道题先按模板造出“统一形式”的分子 N、分母 D，再约分后给出（有的项约成整数或更简的分数，练反约分）。
+// 唯一性：所有模板（含作商、作差）都拿给出的项去拟合，凡能解释的都必须指向同一个答案，否则换一道。
+const gcd = (a, b) => { a = Math.abs(a); b = Math.abs(b); while (b) { const t = a % b; a = b; b = t; } return a; };
+const fred = (p, q) => { const g = gcd(p, q) || 1; return [p / g, q / g]; };
+const fstr = (p, q) => { const [a, b] = fred(p, q); return b === 1 ? String(a) : `${a}/${b}`; };
+const feq = (x, y) => x[0] * y[1] === x[1] * y[0];
+const FK = 6;                       // 反约分最多乘到6倍
+const isArith = (arr) => arr.every((v, i) => i < 2 || v - arr[i - 1] === arr[1] - arr[0]);
+function fitSeq(sh, mk) {           // 通用：枚举前两项的倍数，由 mk(N0,D0,N1,D1) 给出整列（含下一项）；返回所有合格预测
+  const out = [], n = sh.length;
+  for (let k0 = 1; k0 <= FK; k0++) for (let k1 = 1; k1 <= FK; k1++) {
+    const seq = mk(k0 * sh[0][0], k0 * sh[0][1], k1 * sh[1][0], k1 * sh[1][1], n);
+    if (!seq) continue;
+    let ok = true;
+    for (let i = 0; i <= n && ok; i++) { const [N, D] = seq[i]; if (!(N > 0 && D > 0 && Number.isInteger(N) && Number.isInteger(D))) ok = false; else if (i < n && !feq([N, D], sh[i])) ok = false; }
+    if (ok) out.push(seq[n]);
+  }
+  return out;
+}
+const FRAC = [
+  { id: "ad", name: "分子、分母各成等差",
+    eye: "分子、分母都在平稳变化，先把各项还原成统一形式，再分开看分子、分母是不是各成等差。",
+    gen(R) { const a = R.int(1, 9), d = R.int(1, 5), one = R() < 0.3, b = one ? 1 : R.int(2, 12), e = one ? 1 : R.int(1, 6); return { N: (i) => a + i * d, D: (i) => b + i * e, par: { a, d, b, e } }; },
+    fit: (sh) => fitSeq(sh, (N0, D0, N1, D1, n) => { const d = N1 - N0, e = D1 - D0; if (d === 0 && e === 0) return null; return Array.from({ length: n + 1 }, (_, i) => [N0 + i * d, D0 + i * e]); }),
+    say: (N, D) => `分子${N.join("、")}，每次加${N[1] - N[0]}；分母${D.join("、")}，每次加${D[1] - D[0]}` },
+  { id: "pow", name: "分子是平方（立方）数，分母等差",
+    eye: "分子里有平方数（1、4、9……）或立方数（1、8、27……），提示把分子凑成连续的平方（立方）数，约过分或是整数的项要反约分。",
+    gen(R) { const m = R() < 0.72 ? 2 : 3, s = m === 2 ? R.int(1, 3) : R.int(1, 2), b = R.int(2, 9), e = R.int(1, 4); return { N: (i) => (s + i) ** m, D: (i) => b + i * e, par: { m, s, b, e } }; },
+    fit(sh) { const out = [], n = sh.length; for (const m of [2, 3]) for (let s = 1; s <= 6; s++) { const N = Array.from({ length: n + 1 }, (_, i) => (s + i) ** m); const D = []; let ok = true; for (let i = 0; i < n; i++) { const v = N[i] * sh[i][1] / sh[i][0]; if (!Number.isInteger(v)) { ok = false; break; } D.push(v); } if (!ok || !isArith(D)) continue; const nd = D[n - 1] + (D[1] - D[0]); if (nd > 0) out.push([N[n], nd]); } return out; },
+    say: (N, D, par) => `分子${N.join("、")}，即${N.map((_, i) => `${par.s + i}${par.m === 2 ? "²" : "³"}`).join("、")}；分母${D.join("、")}，每次加${D[1] - D[0]}` },
+  { id: "powD", name: "分母是平方数（或平方数＋1），分子等差",
+    eye: "分母里有平方数（4、9、16……）或平方数加1（2、5、10、17……），提示把分母凑成平方数列，再看分子。",
+    gen(R) { const s = R.int(1, 4), c = R.pick([0, 1]), a = R.int(1, 6), d = R.int(1, 3); return { N: (i) => a + i * d, D: (i) => (s + i) ** 2 + c, par: { s, c } }; },
+    fit(sh) { const out = [], n = sh.length; for (const c of [-1, 0, 1]) for (let s = 1; s <= 7; s++) { const D = Array.from({ length: n + 1 }, (_, i) => (s + i) ** 2 + c); if (D[0] <= 0) continue; const N = []; let ok = true; for (let i = 0; i < n; i++) { const v = D[i] * sh[i][0] / sh[i][1]; if (!Number.isInteger(v)) { ok = false; break; } N.push(v); } if (!ok || !isArith(N)) continue; const nn = N[n - 1] + (N[1] - N[0]); if (nn > 0) out.push([nn, D[n]]); } return out; },
+    say: (N, D, par) => `分母${D.join("、")}，即${D.map((_, i) => `${par.s + i}²${par.c ? "＋1" : ""}`).join("、")}；分子${N.join("、")}，每次加${N[1] - N[0]}` },
+  { id: "sqc", name: "分母＝分子²＋常数",
+    eye: "分母都比分子的平方多（或少）一点，提示看分子、分母之间的关系：分母＝分子²＋常数。",
+    gen(R) { const a = R.int(1, 4), d = R.int(1, 2), c = R.pick([1, 1, -1, 2]); return { N: (i) => a + i * d, D: (i) => (a + i * d) ** 2 + c, par: { c } }; },
+    fit: (sh) => fitSeq(sh, (N0, D0, N1, D1, n) => { const c = D0 - N0 * N0; if (D1 !== N1 * N1 + c || N1 === N0) return null; const d = N1 - N0; return Array.from({ length: n + 1 }, (_, i) => { const N = N0 + i * d; return [N, N * N + c]; }); }),
+    say: (N, D, par) => `分子${N.join("、")}，每次加${N[1] - N[0]}；分母${D.join("、")}，正好是分子的平方${par.c > 0 ? "加" + par.c : "减" + -par.c}` },
+  { id: "chain", name: "前项分母＝后项分子，分母－分子成等差",
+    eye: "前一项的分母和后一项的分子相同（还原后看），分数首尾相连，提示再看每项分母比分子多几。",
+    gen(R) { const N0 = R.int(1, 5), g0 = R.int(1, 3), h = R.int(1, 2); const N = [N0], D = [N0 + g0]; for (let i = 1; i < 8; i++) { N.push(D[i - 1]); D.push(N[i] + g0 + i * h); } return { N: (i) => N[i], D: (i) => D[i], par: { g0, h } }; },
+    fit(sh) { const out = [], n = sh.length; for (let k0 = 1; k0 <= FK; k0++) { const N = [k0 * sh[0][0]], D = [k0 * sh[0][1]]; let ok = true; for (let i = 1; i < n; i++) { const k = D[i - 1] / sh[i][0]; if (!Number.isInteger(k)) { ok = false; break; } N.push(D[i - 1]); D.push(k * sh[i][1]); } if (!ok) continue; const g = D.map((v, i) => v - N[i]); if (!isArith(g) || g[1] === g[0]) continue; const gn = g[n - 1] + (g[1] - g[0]); out.push([D[n - 1], D[n - 1] + gn]); } return out; },
+    say: (N, D) => { const g = D.map((v, i) => v - N[i]); return `前一项的分母就是后一项的分子；每项分母比分子多${g.join("、")}，每次多加${g[1] - g[0]}`; } },
+  { id: "fibA", name: "后项分子＝前项分母，后项分母＝前项分子＋分母",
+    eye: "前一项的分母就是后一项的分子，后一项的分母又比分子大不少，提示看前一项分子、分母的和。",
+    gen(R) { const N0 = R.int(1, 3), D0 = N0 + R.int(1, 3); const N = [N0], D = [D0]; for (let i = 1; i < 8; i++) { N.push(D[i - 1]); D.push(N[i - 1] + D[i - 1]); } return { N: (i) => N[i], D: (i) => D[i], par: {} }; },
+    fit(sh) { const out = [], n = sh.length; for (let k0 = 1; k0 <= FK; k0++) { const N = [k0 * sh[0][0]], D = [k0 * sh[0][1]]; for (let i = 1; i <= n; i++) { N.push(D[i - 1]); D.push(N[i - 1] + D[i - 1]); } if (sh.every((x, i) => feq([N[i], D[i]], x))) out.push([N[n], D[n]]); } return out; },
+    say: () => "后一项的分子＝前一项的分母，后一项的分母＝前一项的分子＋分母" },
+  { id: "fibB", name: "后项分子＝前项分子＋分母，分母＝新分子＋前项分母",
+    eye: "分子、分母增长都很快，后一项的分子正好等于前一项分子、分母之和，提示分子分母交叉递推。",
+    gen(R) { const N0 = R.int(1, 2), D0 = N0 + R.int(1, 2); const N = [N0], D = [D0]; for (let i = 1; i < 8; i++) { N.push(N[i - 1] + D[i - 1]); D.push(N[i] + D[i - 1]); } return { N: (i) => N[i], D: (i) => D[i], par: {} }; },
+    fit(sh) { const out = [], n = sh.length; for (let k0 = 1; k0 <= FK; k0++) { const N = [k0 * sh[0][0]], D = [k0 * sh[0][1]]; for (let i = 1; i <= n; i++) { N.push(N[i - 1] + D[i - 1]); D.push(N[i] + D[i - 1]); } if (sh.every((x, i) => feq([N[i], D[i]], x))) out.push([N[n], D[n]]); } return out; },
+    say: () => "后一项的分子＝前一项的分子＋分母，后一项的分母＝这个新分子＋前一项的分母" },
+  { id: "geo", name: "分子等比，分母等差（或分母＝分子＋常数）",
+    eye: "分子1、2、4、8（或1、3、9）成倍增长，分母变化平缓，提示分子、分母分开看。",
+    gen(R) { const N0 = R.int(1, 3), r = R.pick([2, 2, 3]), plus = R() < 0.4, b = R.int(2, 9), e = R.int(1, 4), c = R.int(1, 5); return { N: (i) => N0 * r ** i, D: (i) => (plus ? N0 * r ** i + c : b + i * e), par: { r, plus, c } }; },
+    fit: (sh) => fitSeq(sh, (N0, D0, N1, D1, n) => { const r = N1 / N0; if (r !== 2 && r !== 3) return null; const a = Array.from({ length: n + 1 }, (_, i) => [N0 * r ** i, D0 + i * (D1 - D0)]); return a; }).concat(fitSeq(sh, (N0, D0, N1, D1, n) => { const r = N1 / N0, c = D0 - N0; if ((r !== 2 && r !== 3) || D1 - N1 !== c) return null; return Array.from({ length: n + 1 }, (_, i) => [N0 * r ** i, N0 * r ** i + c]); })),
+    say: (N, D, par) => `分子${N.join("、")}，每次乘${par.r}；分母${D.join("、")}，` + (par.plus ? `每项都比分子多${par.c}` : `每次加${D[1] - D[0]}`) },
+  { id: "quot", name: "后项÷前项成等差（作商）",
+    eye: "相邻两项之间的倍数关系明显（有的变大、有的不变），整数、分数混在一起，提示作商：后项÷前项。",
+    gen(R) { const v0 = R.int(1, 9), r0 = R.pick([[1, 3], [1, 2], [2, 3], [1, 1], [3, 2], [2, 1], [4, 3]]), dr = R.pick([[1, 2], [1, 2], [1, 3], [1, 1], [1, 6]]); const V = [[v0, 1]]; let r = r0; for (let i = 1; i < 8; i++) { const p = V[i - 1]; V.push(fred(p[0] * r[0], p[1] * r[1])); r = fred(r[0] * dr[1] + dr[0] * r[1], r[1] * dr[1]); } return { N: (i) => V[i][0], D: (i) => V[i][1], par: { r0, dr } }; },
+    fit(sh) { const n = sh.length; if (n < 4) return []; const r = []; for (let i = 1; i < n; i++) r.push(fred(sh[i][0] * sh[i - 1][1], sh[i][1] * sh[i - 1][0])); const dd = []; for (let i = 1; i < r.length; i++) dd.push(fred(r[i][0] * r[i - 1][1] - r[i - 1][0] * r[i][1], r[i][1] * r[i - 1][1])); if (!dd.every((x) => feq(x, dd[0])) || dd[0][0] === 0) return []; const last = r[r.length - 1], nr = fred(last[0] * dd[0][1] + dd[0][0] * last[1], last[1] * dd[0][1]); if (nr[0] <= 0) return []; return [fred(sh[n - 1][0] * nr[0], sh[n - 1][1] * nr[1])]; },
+    say: null },
+];
+function fitDiff(sh) {               // 防误判：数值本身等差、或一次差成等差，也算一种解释
+  const n = sh.length, sub = (x, y) => fred(x[0] * y[1] - y[0] * x[1], x[1] * y[1]), add = (x, y) => fred(x[0] * y[1] + y[0] * x[1], x[1] * y[1]);
+  const d1 = []; for (let i = 1; i < n; i++) d1.push(sub(sh[i], sh[i - 1]));
+  if (d1.every((x) => feq(x, d1[0]))) return [add(sh[n - 1], d1[0])];
+  const d2 = []; for (let i = 1; i < d1.length; i++) d2.push(sub(d1[i], d1[i - 1]));
+  if (d2.length >= 2 && d2.every((x) => feq(x, d2[0])) && d2[0][0] !== 0) return [add(sh[n - 1], add(d1[d1.length - 1], d2[0]))];
+  return [];
+}
+function fitQuad(sh) {               // 防误判：反约分后分子、分母各是一次或二次数列（二级等差）也算一种解释
+  const out = [], n = sh.length;
+  for (let k0 = 1; k0 <= FK; k0++) for (let k1 = 1; k1 <= FK; k1++) for (let k2 = 1; k2 <= FK; k2++) {
+    const N = [k0 * sh[0][0], k1 * sh[1][0], k2 * sh[2][0]], D = [k0 * sh[0][1], k1 * sh[1][1], k2 * sh[2][1]];
+    for (let i = 3; i <= n; i++) { N.push(3 * N[i - 1] - 3 * N[i - 2] + N[i - 3]); D.push(3 * D[i - 1] - 3 * D[i - 2] + D[i - 3]); }
+    let ok = true;
+    for (let i = 0; i <= n && ok; i++) { if (!(N[i] > 0 && D[i] > 0)) ok = false; else if (i < n && !feq([N[i], D[i]], sh[i])) ok = false; }
+    if (ok) out.push([N[n], D[n]]);
+  }
+  return out;
+}
+const FRAC_W = { ad: 13, pow: 15, powD: 10, sqc: 19, chain: 10, fibA: 3.5, fibB: 4, geo: 18, quot: 22 };
+function genFrac(seed) {
+  const R = rng(seed);
+  const pickT = () => { const tot = FRAC.reduce((s, X) => s + FRAC_W[X.id], 0); let x = R() * tot; for (const X of FRAC) { x -= FRAC_W[X.id]; if (x < 0) return X; } return FRAC[0]; };
+  for (let tries = 0; tries < 300; tries++) {
+    const T = pickT();
+    const g = T.gen(R);
+    const n = T.id === "fibB" ? 4 : T.id === "quot" ? 5 : R.pick([4, 5, 5, 5, 5]);
+    const N = [], D = [];
+    let bad = false;
+    for (let i = 0; i <= n + 1; i++) { const a = g.N(i), b = g.D(i); if (!(a > 0 && b > 0) || a > 600 || b > 600) { bad = true; break; } N.push(a); D.push(b); }
+    if (bad) continue;
+    const sh = N.slice(0, n).map((a, i) => fred(a, D[i]));
+    const ans = fred(N[n], D[n]);
+    if (Math.max(ans[0], ans[1]) > 999) continue;
+    const disp = sh.map(([a, b]) => (b === 1 ? String(a) : `${a}/${b}`));
+    if (new Set(disp).size < n - 1) continue;                                 // 重复项太多
+    if (N.slice(0, n).some((a, i) => gcd(a, D[i]) > FK)) continue;            // 反约分只乘到6倍，像真题
+    const reduced = N.slice(0, n).filter((a, i) => gcd(a, D[i]) > 1).length;
+    if (T.id !== "quot" && T.id !== "fibA" && T.id !== "fibB") { if (reduced > 2) continue; if (reduced === 0 && R() < 0.8) continue; }
+    if (sh.every(([, b]) => b === 1)) continue;                              // 全是整数就不是分数数列了
+    // 唯一性
+    const preds = FRAC.flatMap((X) => X.fit(sh)).concat(fitDiff(sh), n >= 5 ? fitQuad(sh) : []);   // 只给4项时二次拟合自由度太大，容易凑出怪解，不用
+    if (!preds.some((p) => feq(p, ans))) continue;                          // 自己的模板也要能拟合出来
+    if (!preds.every((p) => feq(p, ans))) continue;
+    // 干扰项
+    const step = (arr) => arr[n] - arr[n - 1];
+    const qd = [];                                                           // 作商题的干扰项：重复上一个商、把商当答案
+    if (T.id === "quot") {
+      const rr = (i) => fred(N[i] * D[i - 1], D[i] * N[i - 1]); const r1 = rr(n - 1), r2 = rr(n), dr = g.par.dr, r3 = fred(r2[0] * dr[1] + dr[0] * r2[1], r2[1] * dr[1]);
+      qd.push(fred(N[n - 1] * r1[0], D[n - 1] * r1[1]), r2, fred(N[n - 1] * r3[0], D[n - 1] * r3[1]), fred(N[n - 1] * r2[1] + r2[0] * D[n - 1], D[n - 1] * r2[1]));
+    }
+    const cands = qd.concat([[N[n] + step(N), D[n]], [N[n], D[n] + step(D)], [N[n] - step(N), D[n]], [N[n], D[n] - step(D)], [N[n] + 1, D[n] + 1], [N[n] - 1, D[n] - 1], [N[n + 1], D[n + 1]], [D[n], N[n]], [N[n] + step(N), D[n] + step(D)], [N[n] + 2, D[n]], [N[n], D[n] + 2]]);
+    const opts = [ans];
+    for (const c of (T.id === "quot" ? R.shuffle(qd).concat(R.shuffle(cands.slice(qd.length))) : R.shuffle(cands))) {
+      if (opts.length >= 4) break;
+      if (!(c[0] > 0 && c[1] > 0) || Math.max(c[0], c[1]) > 999) continue;
+      const v = fred(c[0], c[1]);
+      if (v[1] === 1 && ans[1] !== 1 && R() < 0.7) continue;               // 答案是分数时，少给整数干扰项
+      if (opts.some((o) => feq(o, v))) continue;
+      opts.push(v);
+    }
+    if (opts.length < 4) continue;
+    opts.sort((x, y) => x[0] * y[1] - y[0] * x[1]);
+    const optStr = opts.map(([a, b]) => (b === 1 ? String(a) : `${a}/${b}`));
+    const answer = LET[opts.findIndex((o) => feq(o, ans))];
+    // 解析
+    const uni = N.slice(0, n).map((a, i) => `${a}/${D[i]}`);
+    const changed = N.slice(0, n).map((a, i) => (gcd(a, D[i]) > 1 ? `${disp[i]}＝${a}/${D[i]}` : null)).filter(Boolean);
+    const hasInt = sh.some(([, b]) => b === 1);
+    let eye = T.eye, deriv;
+    if (T.id === "quot") {
+      const r = []; for (let i = 1; i <= n; i++) r.push(fred(N[i] * D[i - 1], D[i] * N[i - 1]));
+      const rs = r.map(([a, b]) => (b === 1 ? String(a) : `${a}/${b}`));
+      deriv = `后项÷前项依次为：${rs.slice(0, n - 1).join("、")}，是公差为${fstr(g.par.dr[0], g.par.dr[1])}的等差数列，下一个商是${rs[n - 1]}。\n所求项＝${disp[n - 1]}×${rs[n - 1]}＝${fstr(N[n], D[n])}。故选${answer}。`;
+    } else {
+      const Nn = N.slice(0, n), Dn = D.slice(0, n);
+      deriv = (changed.length ? `先把各项还原成统一形式（${changed.join("，")}）：` : "各项写成分数：") + `${uni.join("，")}。\n${T.say(Nn, Dn, g.par)}。\n所求项为${N[n]}/${D[n]}` + (gcd(N[n], D[n]) > 1 ? `＝${fstr(N[n], D[n])}` : "") + `。故选${answer}。`;
+      if (changed.length || hasInt) eye = (hasInt ? "数列里整数、分数混在一起，整数要先写成分数；" : "有的项是约过分的；") + T.eye;
+    }
+    const trapOpt = (val) => { const i = opts.findIndex((o) => feq(o, val)); return i >= 0 ? LET[i] : null; };
+    const half = trapOpt([N[n] + step(N), D[n]]) || trapOpt([N[n], D[n] + step(D)]) || trapOpt([N[n] - step(N), D[n]]) || trapOpt([N[n], D[n] - step(D)]);
+    const SPEC = {
+      ad: "分子、分母要分开各推一步，再合起来。",
+      pow: `分子是${g.par && g.par.m === 3 ? "立方" : "平方"}数时先写出底数，底数接着加1再${g.par && g.par.m === 3 ? "立方" : "平方"}。`,
+      powD: "分母写成平方数（加1）时先写出底数，底数接着加1。",
+      sqc: "分母要和本项的分子比（分子²＋常数），不是和前一项比。",
+      chain: "分母比分子多的数是逐项递增的，要接着加，不能当成固定差。",
+      fibA: "后一项的分母是“前一项分子＋分母”，先定分子（＝前一项分母），再算分母。",
+      fibB: "先算新分子（前一项分子＋分母），再用“新分子＋前一项分母”算分母，顺序不能乱。",
+      geo: "分子按倍数增长、分母按差增长，两边规律不同，要分开推。" };
+    let trap;
+    if (T.id === "quot") trap = "整数、分数混在一起时，分子分母分开看往往找不到规律；倍数关系明显就作商。商算出来后要乘回去，别把下一个商当成答案" + (trapOpt(fred(N[n] * D[n - 1], D[n] * N[n - 1])) ? `（${trapOpt(fred(N[n] * D[n - 1], D[n] * N[n - 1]))}项就是下一个商）` : "") + "。";
+    else trap = (changed.length ? `不还原直接看约分后的样子（${disp.join("，")}），分子、分母都乱；反约分时乘几，要以“让分子或分母接上规律”为准。` : "") + SPEC[T.id] + (half ? `分子、分母只推对一个，会误选${half}。` : "");
+    if (T.id !== "quot" && gcd(N[n], D[n]) > 1) trap += `所求项${N[n]}/${D[n]}要约成最简分数${fstr(N[n], D[n])}再对选项。`;
+    return { k: "frac", s: seed, v: GEN_VER, type: "数推", sub: "分数数列", tag: T.name,
+      stem: disp.join("，") + "，（　　）", opts: optStr, answer, exp: { 题眼: eye, 推导: deriv, 易错: trap } };
+  }
+  return null;
+}
+const GENS = { rec: genRec, tab: genTab, pts: (s) => genPts(s, "all"), ptscl: (s) => genPts(s, "cl"), grid: genGrid, frac: genFrac };
+if (typeof module !== "undefined") module.exports = { GENS, rng, analyze, REC, TAB, recFits, tabFits, FRAC, fitDiff, fitQuad, fred };
